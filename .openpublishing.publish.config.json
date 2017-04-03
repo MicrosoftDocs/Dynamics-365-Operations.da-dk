@@ -19,7 +19,8 @@
     },
     {
       "docset_name": "d365OpsDevITPro",
-      "build_source_folder": "dev-itpro",      "build_output_subfolder": "d365OpsDevITPro",
+      "build_source_folder": "dev-itpro",
+      "build_output_subfolder": "d365OpsDevITPro",
       "locale": "da-dk",
       "monikers": [],
       "open_to_public_contributors": false,
@@ -78,7 +79,7 @@
     },
     {
       "docset_name": "d365OpsSCM",
-      "build_source_folder": "scm",
+      "build_source_folder": "SCM",
       "build_output_subfolder": "d365OpsSCM",
       "locale": "da-dk",
       "monikers": [],
