@@ -41,14 +41,14 @@ Produkt anbefalinger er aktiveret for følgende scenarier i POS. De er tilgænge
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  På den **transaktion** side:
+2.  På den **transaktion** side:
 
 -   Motoren henstilling foreslår elementer baseret på hele listen over varer i din kurv.
 -   Hvis butikken knytte føjer en kunde til transaktionen, motoren henstilling indeholder personlige anbefalinger ved hjælp af kundens transaktionsoversigt og listen over varer i din kurv.
 
 **Note** til at vise anbefalinger på den **transaktion** side, formidleren skal opdatere skærmlayoutet i Dynamics 365 for operationer. Den **anbefalinger** kontrol skal slippes på den **transaktion** side. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  På den **kundeoplysninger** side:
+3.  På den **kundeoplysninger** side:
     -   Motoren henstilling foreslår elementer baseret på bruger-ID og elementer på kundens ønske liste.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
