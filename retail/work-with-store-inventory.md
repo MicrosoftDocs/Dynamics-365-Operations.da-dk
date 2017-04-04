@@ -33,9 +33,8 @@ Du kan bruge følgende typer dokumenter til at administrere organisationens lage
 
 ## <a name="purchase-orders"></a>Indkøbsordrer
 Indkøbsordrer oprettes på hovedkontoret. Hvis et lagersted for retail er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af moderne POS (MPOS) eller sky POS i Microsoft Dynamics 365 for operationer – Retail. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret, vises de mængder, der er modtaget i butikken i Dynamics 365 for operationer, i de **får nu** på indkøbsordren.
-Flytteordrer
----------------
 
+## <a name="transfer-orders"></a>Flytteordrer
 En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan afsendes fra. I dette tilfælde vises flytteordren i butikken som en plukanmodning i MPOS eller sky POS. Når de antal, der er anmodet om, er blevet plukket, gøres de bindende og sendes til hovedkontoret. På hovedkontoret, vises det antal, der er plukket i butikken i Dynamics 365 for operationer, i den **Lever nu** på overflytningsordren. En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan sendes til. I dette tilfælde vises flytteordren i butikken som en modtagende anmodning i MPOS eller sky POS. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret, vises de mængder, der er modtaget i butikken i Dynamics 365 for operationer, i de **får nu** på overflytningsordren.
 
 ## <a name="stock-counts"></a>Lagerstatus
