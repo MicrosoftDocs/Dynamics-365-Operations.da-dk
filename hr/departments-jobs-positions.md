@@ -56,10 +56,6 @@ Et job er en samling opgaver og ansvarsområder, der kræves af en person, der u
 Du kan oprette jobopgaver, der beskriver de grundlæggende opgaver, der skal udføres af en arbejder i en position for det pågældende job. Samme arbejdsopgave kan føjes til flere job, og stillinger for disse job arver disse opgaver. Der vises eksempler på jobopgaver i følgende tabel.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Stilling</th>

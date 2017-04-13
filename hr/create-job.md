@@ -48,10 +48,10 @@ Du kan bruge jobtyper til at gruppere lignende job i kategorier. Jobtyper er ikk
 ## <a name="job-functions"></a>Jobfunktioner
 Job kryds beskriver overordnede funktionelle kategorier og relatere overordnede opgaver. Jobfunktioner er ikke påkrævede. Du kan bruge jobfunktioner sammen med jobtyper til at filtrere kompensationsstrukturer til specifikke job. Du knytte jobfunktioner og jobtyper til kompensationsplaner ved at oprette berettigelsesregler i den **berettigelsesregler** side. Derefter kan du knytte et sæt niveauer til en lønstruktur, der gælder for den specifikke kombination af en jobtype og jobfunktion, du har defineret gennem en berettigelsesregel. (Disse funktioner kan bruges til både fast løn-strukturer og variable lønstrukturer.) Hvis du planlægger at bruge jobfunktioner, når du konfigurerer berettigelsesregler for kompensationsstyring, skal du dog konfigurere jobfunktioner, før du konfigurerer job. I følgende tabel vises nogle eksempler på jobfunktioner.
 
-| Stilling           | Jobfunktion      |
-|---------------|-------------------|
-| Salgsdirektør | Mellemstore Manager |
-| Bogholder    | Fagfolk     |
+| Stilling           | Jobfunktion         |
+|---------------|----------------------|
+| Salgsdirektør | Mellemstore Manager    |
+| Bogholder    | Fagfolk        |
 
 Du kan vedligeholde jobfunktioner ved hjælp af den **jobfunktioner,** side. På den **jobfunktioner,** skal du angive et id og en kort beskrivelse af jobfunktionen.
 
