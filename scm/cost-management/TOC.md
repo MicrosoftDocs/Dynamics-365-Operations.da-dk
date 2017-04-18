@@ -1,0 +1,43 @@
+# Power BI content pack
+## [Omkostningsstyring content pack](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# Foruddefinerede omkostninger
+## [Costing sheet](costing-sheets.md)
+## [Costing version](costing-versions.md)
+## [Simuler ændringen af kostprisen ved hjælp af en efterkalkulationsversion for planlagte omkostninger](simulate-cost-changes-costing-version-planned-costs.md)
+# Lagerefterkalkulation
+## [Justere kostværdien af den disponible lagerbeholdning](adjust-hand-inventory-cost-values.md)
+## [Cost object](cost-object.md)
+## [Cost entry](cost-entries.md)
+## [Cost group](cost-groups.md)
+## [FIFO med fysisk værdi og afmærkning](fifo-physical-value-marking.md)
+## [Include physical value](include-physical-value.md)
+## [Lagerværdi for objekt](physical-quantity.md)
+## [Inventory close](inventory-close.md)
+## [LIFO-dato med fysisk værdi og mærkning](lifo-date-physical-value-marking.md)
+## [LIFO with physical value and marking](lifo-physical-value-marking.md)
+## [Moving average](moving-average.md)
+## [Fysiske og økonomiske opdatering](physical-financial-updates.md)
+## [Running average cost price](running-average-cost-price.md)
+## [Tracking running average cost per inventory dimension](track-running-average-cost-per-inventory-dimension.md)
+## [Weighted average date](weighted-average-date.md)
+## [Vægtet gennemsnit for med fysisk værdi og afmærkning](weighted-average-physical-value-marking.md)
+# Produktion-efterkalkulation
+## [Styklisteberegningsgruppen](bom-calculation-groups.md)
+## [Almindelige kilder til en afvigelse i produktion](common-sources-of-production-variances.md)
+## [Omkostningsart, der bruges i produktionsruten](cost-categories-used-production-routings.md)
+## [Omkostningsart, der bruges i Produktionsstyring og administration af projektregnskab](cost-categories-used-production-control-project-management-accounting.md)
+## [Production order cost analysis](production-order-cost-analysis.md)
+## [Production order cost estimation](production-order-cost-estimation.md)
+## [Production posting](production-posting.md)
+## [Konfigurere et produkt, der kan produceres eller udtages](manufactured-items-treated-as-purchased-items.md)
+## [Total cost allocation method](methodology-total-cost-allocation.md)
+# Standardomkostning
+## [Styklisteberegninger med standardomkostninger](information-used-bom-calculations-standard-costs.md)
+## [Administrere opdatering af standardomkostninger](manage-standard-cost-updates.md)
+## [Forudsætning for en standardomkostningskonvertering](prerequisites-standard-cost-conversion.md)
+## [Standard cost conversion overview](standard-cost-conversion-overview.md)
+## [Opdatere standardomkostninger i et produktionsmiljø](update-standard-costs-manufacturing-environment.md)
+## [Opdatere standardkostprisen for en ny produceret vare](update-standard-costs-new-manufactured-item.md)
+## [Opdatere standardomkostninger i et ikke-produktionsmiljø](update-standard-costs-non-manufacturing-environment.md)
+
+
