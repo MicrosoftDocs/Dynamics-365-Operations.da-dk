@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankstyring
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruge likviditets- og bankstyring til at vedligeholde den juridiske enheds bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti. 
 
 Disse instrumenter omfatter indbetalingsbilag, checks, veksler og egenveksler. Du kan også afstemme bankkontoudtog og udskrive bankdata i standardrapporter.
@@ -69,4 +72,6 @@ Disse instrumenter omfatter indbetalingsbilag, checks, veksler og egenveksler. D
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenarie: Bruge en debitorbetaling for at udligne flere faktura, der spænder over flere rabatperioder](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

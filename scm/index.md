@@ -55,3 +55,5 @@ Du kan f.eks. læse de seneste opslag om:
 ## <a name="elearning-courses"></a>eLearning-kurser
 Oplysninger om Microsoft Dynamics 365 for Operations uddannelse, finder du i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics uddannelsesportalen</a>. (kræver CustomerSource-konto) 
 
+
+

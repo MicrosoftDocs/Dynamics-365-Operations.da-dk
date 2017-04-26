@@ -41,3 +41,5 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
 
+
+
