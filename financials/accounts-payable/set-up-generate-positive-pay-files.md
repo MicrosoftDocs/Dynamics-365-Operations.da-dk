@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurere og generere filer til positive betalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger. 
 
 Konfigurer en positiv betaling til at generere en elektronisk liste over checks, der er leveret til banken. Når checken derefter skal indløses hos banken, sammenligner banken den med listen over checks. Hvis checken svarer til en check på listen, indløser banken den. Hvis checken ikke stemmer overens med en check på listen, beholder banken den til gennemsyn.
 
 ## <a name="security-for-positive-pay-files"></a>Sikkerhed for filer til positive betalinger
-Filer til positiv betaling kan indeholde følsomme oplysninger om beløbsmodtagere og checkbeløb. Sørg derfor for, at du bruger passende de sikringsforanstaltninger fra det tidspunkt, hvor filerne genereres, indtil de modtages af banken. Filer til positive betalinger overføres til den lokalitet, der er angivet i webbrowseren. Fordi positive løn-filer kan indeholde følsomme oplysninger, er det vigtigt, at kun autoriserede brugere har adgang til at generere og få vist disse oplysninger i Microsoft Dynamics 365 for operationer. Brug følgende tabel til at afgøre, hvilke rettigheder der kræves.
+Filer til positiv betaling kan indeholde følsomme oplysninger om beløbsmodtagere og checkbeløb. Sørg derfor for, at du bruger passende de sikringsforanstaltninger fra det tidspunkt, hvor filerne genereres, indtil de modtages af banken. Filer til positive betalinger overføres til den lokalitet, der er angivet i webbrowseren. Fordi filer til positive betalinger kan indeholde følsomme oplysninger, er det vigtigt, at kun autoriserede brugere har adgang til at generere og få vist disse oplysninger i Microsoft Dynamics 365 for Operations. Brug følgende tabel til at afgøre, hvilke rettigheder der kræves.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Når de checks, der er angivet i en fil til positiv betaling, er betalt, modtage
 
 ## <a name="recall-a-positive-pay-file"></a>Tilbagekald en fil til positive betalinger
 Hvis du vil ændre en fil til positiv betaling, kan du tilbagekalde den. På siden **Filoversigt over positive betalinger** skal du vælge en fil til positive betalinger, der har statussen **Oprettet** og derefter vælge handlingen **Tilbagekald**. For hver check i filen til positiv betaling, nulstilles det felt, der angiver, om checken er inkluderet i en fil til positiv betaling. Derefter kan du oprette en ny fil til positiv betaling, der indeholder den check, der blev tilbagekaldt.
+
+
 
 

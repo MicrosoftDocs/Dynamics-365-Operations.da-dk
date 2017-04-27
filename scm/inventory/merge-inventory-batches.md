@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Flet lagerbatches
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch. 
 
 Når du fletter batches, kan beregninger hjælpe med at optimere karakteristika og batchattributter for det flettede batch. Når du har valgt kildebatchnumrene, kan du gennemgå og ændre det flettede batch, før du bogfører det. Du kan også overføre batchfletningen til en lagerkladde til godkendelse. Lager kan derefter reserveres eller bogføres direkte fra denne lagerkladde. Når du bogfører et flettet batch, reguleres lagerbeholdningen for kildebatches og det flettede batch.
@@ -48,7 +51,7 @@ Ja, der er nogle ting, du skal konfigurere, før du kan bruge batchfletningsvær
 <tbody>
 <tr class="odd">
 <td>Kladdenavne, lager</td>
-<td>Du skal oprette det kladdenavn, der bruges som standard, når du bogfører batchfletninger i lagerkladder. Valgfrit, men anbefalet: Du kan angive, at reservationer skal oprettes automatisk, når batchfletningen overføres til lagerkladden. Ellers er der risiko for, at den disponible lagerbeholdning ændres, når batchfletningsdetaljerne er angivet, og kladden er bogført. Marker for at aktivere automatisk reservation for kladdenavnet, <strong>automatisk</strong> i den <strong><strong>Reservation</strong></strong> felt.</td>
+<td>Du skal oprette det kladdenavn, der bruges som standard, når du bogfører batchfletninger i lagerkladder. Valgfrit, men anbefalet: Du kan angive, at reservationer skal oprettes automatisk, når batchfletningen overføres til lagerkladden. Ellers er der risiko for, at den disponible lagerbeholdning ændres, når batchfletningsdetaljerne er angivet, og kladden er bogført. Vælg <strong>Automatisk</strong> i feltet <strong><strong>Reservation</strong></strong> for at aktivere automatiske reservationer til kladdenavnet.</td>
 </tr>
 <tr class="even">
 <td>Parametre til lager- og lokationsstyring</td>
@@ -134,9 +137,11 @@ Bogføring fungerer på to måder, afhængigt af om du bruger en godkendelsespro
 -   **Overfør til kladde** – Overfør batchfletningsoplysninger til en ny lagerkladde. Hvis du har konfigureret automatisk reservation, reserveres mængderne i kildebatchene. Detaljer om batchfletningen kan ikke ændres. Hvis du vil ændre batchfletningen, skal du slette kladden. Kladden kan bruges som en opgave, som en anden medarbejder skal udføre senere. Reservation af batchantallet på kladdelinjen er sikret. Med denne fordeling kan en kvalitetsplanlæggeren eller en lagerchef oprette opgaver for sine medarbejdere.
 -   **Bogfør batchfletningen** – Bogfør batchfletningen direkte. Denne handling kan kun udføres, når den fysiske fletning er foretaget.
 
-Du kan godkende lagerkladden for batchfletningen fra listesiden **Alle batchfletninger**. Klik på **Journal**&gt;**Post**. Når en kladde er bogført, kan du ikke ændre oplysningerne i det flettede batch. Når du overfører en batchfletning til en lagerkladde, kan du kun ændre oplysningerne, hvis kladden slettes.
+Du kan godkende lagerkladden for batchfletningen fra listesiden **Alle batchfletninger**. Klik på **Kladde** &gt; **Bogfør**. Når en kladde er bogført, kan du ikke ændre oplysningerne i det flettede batch. Når du overfører en batchfletning til en lagerkladde, kan du kun ændre oplysningerne, hvis kladden slettes.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Efter jeg har flettet en catchweight vare, hvorfor kan jeg ikke se oplysningerne om catchweight i lagerkladden?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se oplysningerne om fastvægtvarer i lagerkladden, når jeg har flettet en fastvægtvare?
 Du kan flette batches af fastvægtvarer ligesom alle andre varer. Fastvægtoplysningerne vises dog ikke i lagerkladden. Vi anbefaler, at du kontrollerer fastvægtoplysningerne, før du overfører batchfletningen til lagerkladden.
+
+
 
 

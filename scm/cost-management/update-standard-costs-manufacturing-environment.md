@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Opdatere standardomkostninger i et produktionsmiljø
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder vejledning i at opdatere standardomkostninger i et produktionsmiljø. 
 
 Opdateringer kan afspejle nye varer, omkostningskategorier eller formler til beregning af indirekte omkostninger. De kan også afspejle korrektioner og ændrede omkostninger. Typen af opdatering påvirker, hvilke trin der skal udføres for at opdatere standardomkostninger som vist i følgende tilfælde:
@@ -43,5 +46,7 @@ Opdateringer kan afspejle nye varer, omkostningskategorier eller formler til ber
 -   Beregn omkostninger for en ny produceret vare baseret på den definerede, godkendte og aktive stykliste samt ruteoplysninger.
 
 De kræver alle nøje overvejelser om, hvordan standardomkostningerne skal opdateres.
+
+
 
 

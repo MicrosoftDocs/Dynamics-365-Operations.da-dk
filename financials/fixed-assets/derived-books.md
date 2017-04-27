@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Afledte bøger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over funktionerne til afledte bøger.
 
-Formålet med afledte bøger er at forenkle bogføringen af bog-anlægsaktivposteringer, der er planlagt for regelmæssige intervaller.  Du kan vælge en bog som den primære bog. Dette er normalt den bog, der bruges til regnskabsmæssige afskrivninger. Du kan derefter knytte den til andre bøger, der er konfigureret til at bogføre transaktioner i de samme som den primære bog. Bøger til skattemæssig afskrivning angives ofte som afledte bøger. 
+Formålet med afledte bøger er at forenkle bogføringen af transaktioner for aktivbog, der er planlagt til at finde sted med jævne mellemrum.  Du skal vælge en bog som den primære bog. Dette er normalt den bog, der bruges til regnskabsmæssige afskrivninger. Du kan derefter knytte den til andre bøger, der er konfigureret til at bogføre transaktioner i de samme som den primære bog. Bøger til skattemæssig afskrivning angives ofte som afledte bøger. 
 
 De mest almindelige transaktioner, der angives, så der bogføres til afledte bøger, er anskaffelser, anskaffelsesreguleringer og afhændelser. 
 
@@ -42,6 +45,8 @@ Ved posteringen oprettes der en anskaffelsespostering, som bogføres i aktiv 123
 > [!NOTE]                                                                                                                               
 > Bøger, der er konfigureret, så posteringer bogføres med andre intervaller end dem, der er angivet for den primære bog, skal tilknyttes anlægsaktivet som separate bøger og ikke som afledte bøger.  
 
-Yderligere oplysninger finder du [bogføring med afledte bøger](post-derived-value-models.md).
+Du kan finde flere oplysninger under [Bogføre med afledte bøger](post-derived-value-models.md).
+
+
 
 

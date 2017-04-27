@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integration af budgetplanlægning med andre moduler
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Periodiske processer til at generere budgetplaner
@@ -49,13 +52,13 @@ De grundlæggende elementer i den periodiske proces er ens for alle processer. M
 
 For hver oprettelsesproces findes tre handlinger:
 
--   **Opret en ny budgetplan** opretter en ny plan, der har de attributter, der er valgt i den ** mål ** sektion. Disse attributter behøver ikke at være entydige. De to planer kan derfor have samme navn og andre værdier.
+-   **Opret en ny budgetplan** opretter en ny plan, der har de attributter, der er valgt i sektionen **Mål**. Disse attributter behøver ikke at være entydige. De to planer kan derfor have samme navn og andre værdier.
 -   **Erstat det eksisterende budgetplanscenarie** sletter alle data i målbudgetplanen i det valgte budgetplanscenarie og opretter nye linjer, der bruger de valgte kildedata.
 -   **Opdater det eksisterende budgetplansscenarie, og tilføj nye data** opdaterer eksisterende linjer i den målplan, der matcher kildelinjerne, og tilføjer nye linjer til nye data. Matchprocessen er baseret på finansdatoen, budgetklassen og forskellige andre felter. Når du for eksempel genererer budgetplaner fra prognosepositioner, er stillingsnummeret et vigtigt felt. Alle linjer, der har et stillingsnummer, der svarer til kildestillingsnummeret, erstattes med de nye linjer fra kilden.
 
 ### <a name="source"></a>Kilde
 
-For alle processer på **kilde** under fanen kan du filtrere data ved hjælp af den **Filter** knap. Som standard føjes specifikke felter til filter for hver proces. For eksempel er processen **Generér budgetplan fra finanskonto**, kategorierne **Finanskonto** og **Hovedkonto** tilgængelige og vises på oprettelsessiden. Alle de felter, du føjer til filteret, føjes også til siden sammen med de kriterier, du tilføjer.
+For alle processer kan du under fanen **Kilde** filtrere data ved hjælp af knappen **Filter**. Som standard føjes specifikke felter til filteret for hver proces. For eksempel er processen **Generér budgetplan fra finanskonto**, kategorierne **Finanskonto** og **Hovedkonto** tilgængelige og vises på oprettelsessiden. Alle de felter, du føjer til filteret, føjes også til siden sammen med de kriterier, du tilføjer.
 
 ### <a name="target"></a>Mål
 
@@ -63,7 +66,7 @@ Indstillingen **Historisk** under fanen **mål** gør det muligt at bruge datoer
 
 Feltet **Aggreger total efter** øverst på siden bestemmer også den dato, der bruges. Dette felt laver en total på beløbene og kan også angive ikrafttrædelsesdatoen til den første dag i regnskabsåret eller regnskabsperioden. 
 
-Mange af felterne på fanen **Mål** bliver redigerbare eller skrivebeskyttede, afhængigt af den handling, du vælger. Når du går fra at oprette en ny budgetplan til at opdatere en eksisterende plan, bliver feltet **Navn på budgetplan** utilgængeligt, og de felter, der er relateret til valg af en eksisterende plan, bliver tilgængelige. På begge **mål** tab og ** kilde ** under fanen den **Finans** felt er altid ikke tilgængelig, fordi værdien bestemmes af den valgte budgetplanlægningsproces. 
+Mange af felterne på fanen **Mål** bliver redigerbare eller skrivebeskyttede, afhængigt af den handling, du vælger. Når du går fra at oprette en ny budgetplan til at opdatere en eksisterende plan, bliver feltet **Navn på budgetplan** utilgængeligt, og de felter, der er relateret til valg af en eksisterende plan, bliver tilgængelige. Både under fanen **Mål** og **Kilde** bliver feltet **Finans** altid utilgængeligt, da værdien bestemmes af den valgte budgetplanlægningsproces. 
 
 Feltet **Budgetklasse** gør det muligt at angive budgetplanlinjerne som enten udgiftsposteringer eller indtægtsposteringer. Normalt er indtægtsposteringer krediteringer til en finanskonto og gemmes derfor som negative beløb. Disse posteringer vises typisk også som negative beløb i budgetplanen. Ved at tilføje budgetklassen som et felt i planlayoutet kan du lade omsætning blive vist som positive beløb.
 
@@ -73,7 +76,7 @@ Tre felter indeholder yderligere funktioner: **Faktor**, **Minimum** og **Afrund
 
 Værdien i feltet **Faktor** ganges med kildebeløbet for at angive beløbet i budgetplanen. Du kan derefter foretage justeringer, når du opretter budgetplanlinjer. Du kan f.eks. angive **1,03** for en stigning på 3 procent. Faktoren skal være et positivt tal. 
 
-Feltet **Minimum** gør det muligt at indstille grænsebeløbet for oprettelse af en budgetplanlinje. Hvis kildebeløbet er mindre end dette antal, er budgetplanlinjen ikke oprettet. En værdi på **0,00** gør det muligt for alle beløb, men ikke begrænse linjer til positive beløb. (Ingen værdi begrænser linjer til positive beløb. Negative beløb medtages altid og repræsenterer normalt kreditposter.)
+Feltet **Minimum** gør det muligt at indstille grænsebeløbet for oprettelse af en budgetplanlinje. Hvis kildebeløbet er mindre end dette antal, er budgetplanlinjen ikke oprettet. En værdi på **0,00** tillader alle beløb, men begrænser ikke linjer til positive beløb. (Ingen værdi begrænser linjer til positive beløb. Negative beløb medtages altid og repræsenterer normalt kreditposter).
 
 Feltet **Afrundingsregel** gør det muligt at angive, hvor præcise de budgetplaner, der oprettes, skal være. Du kan afrunde valutabeløb til nærmeste hele 1,00, 10,00, 100,00 og så fremdeles.
 
@@ -86,13 +89,13 @@ I målet er feltet **Budgetklasse** indstillet til enten **Udgift** eller **Indt
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Generér budgetplan fra anlægsaktiver
 
-Processen **Generér budgetplan fra anlægsaktiver** har ingen valgmulighed for aggregering efter periode eller dag. Der er også nogen indstilling til angivelse af planen som historiske. Du kan bruge denne periodiske proces med forventede anlægstransaktioner i din budgetplanlægning.
+Processen **Generér budgetplan fra anlægsaktiver** har ingen valgmulighed for aggregering efter periode eller dag. Der er heller ingen indstilling til angivelse af planen som historisk. Du kan bruge denne periodiske proces til at medtage budgetterede anlægstransaktioner i din budgetplanlægning.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Opret budgetplaner fra budgetpositioner
 
 Processen **Opret budgetplaner fra budgetpositioner** tildeler kildeprognosestillingen til budgetplanlinjen. Du kan få vist positionen ved at tilføje prognosestillingen som en række i budgetplanlayoutet eller ved at bruge forespørgslen **Budgetplanlinjer**. Hvis du ikke ønsker, at prognosestillingen skal knyttes til budgetplanlinjer, skal du angive indstillingen **Medtag stilling på budgetplanlinje** til **Nej**.
 
-Linjerne i budgetplanen samles efter finanskonto og position. Dog kan du udelukke positionsnummer, så linjerne samles pr. finanskonto kun. På fanen **Mål** skal du angive indstillingen **Medtag stilling på budgetplanlinje** til **Nej**.
+Linjerne i budgetplanen samles efter finanskonto og position. Dog kan du udelukke positionsnummer, så linjerne kun samles efter finanskonto. På fanen **Mål** skal du angive indstillingen **Medtag stilling på budgetplanlinje** til **Nej**.
 
 I feltet **Budgetplansscenarie for fuldtid** kan du vælge et scenarie for at medtaget antallet af fuldtidsækvivalenter (fuldtidsmedarbejdere) i budgetplanen. Dette felt er begrænset til scenarier med antal, der findes i layoutet for målbudgetplanen. Hvis du vælger et scenarie med fuldtidsækvivalenter, skal du også vælge en hovedkonto med fuldtidsækvivalenter. Denne konto bruges til at oprette budgetplanlinjer med antal. 
 
@@ -140,5 +143,7 @@ Marker en linje, og klik på knappen **Budgetplanlinjer** for at køre forespør
 Brug knapperne **Forsyningsprognose** og **Behovsprognose** til at køre disse forespørgsler. I begge tilfælde søger forespørgslen efter prognoselinjer, der kunne have oprettet budgetplanlinjerne. 
 
 Yderligere rapporter, der er tilgængelige, omfatter rapporten **Budgetpositioner efter budgetplan**. Denne rapport er især nyttig, når du vil finde ud af, om en position er blevet allokeret korrekt til budgetplaner.
+
+
 
 

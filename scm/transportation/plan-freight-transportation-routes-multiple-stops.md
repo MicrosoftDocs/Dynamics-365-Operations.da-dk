@@ -1,5 +1,5 @@
 ---
-title: "Planlægge fragt transport ruter med flere Stop"
+title: "Planlæg fragttransportruter med flere stop"
 description: "I denne artikel beskrives de forskellige elementer, som du kan bruge til at planlægge transportruter i Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planlægge fragt transport ruter med flere Stop
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planlæg fragttransportruter med flere stop
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives de forskellige elementer, som du kan bruge til at planlægge transportruter i Microsoft Dynamics AX.
 
@@ -48,5 +51,7 @@ En planlagt rute er en foruddefineret ruteplan, der har en tidsplan for afsendel
 
 ## <a name="load-building-workbench"></a>Lastopbygningspanel
 Lastopbygningspanelet bruger kundeadresser og leveringsdatoer fra salgsordrer, og de planlagte ruter, der er tilgængelige, til at foreslå en belastning. Som standard angives værdierne fra ruten i panelet. Du kan dog vælge en "fra"-dato, der er tidligere end "fra"-datoen på ruten. Når der foreslås en belastning, kontrolleres leveringsadresse og leveringsdato for alle åbne salgsordrer. Hvis postnummeret på leveringsadressen svarer til postnummeret for en hub i ruteplanen, og hvis leveringsdatoen ligger inden for det område, der er valgt i kriterierne, foreslås salgsordren til belastningen. Lastskabelonens kapacitet tages også i betragtning. Der foreslås kun én belastning ad gangen. Hvis du har en salgsordre, der ikke er inkluderet, skal du muligvis bruge en anden lastskabelon (for eksempel en lastskabelon til en større lastbil eller container) eller planlægge en ekstra levering.
+
+
 
 

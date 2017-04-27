@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Integration af anlægsaktiver
 
+[!include[banner](../includes/banner.md)]
+
+
 Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
 
 <a name="general-ledger"></a>Finans
@@ -82,7 +85,7 @@ Integrationen aktiveres for hver ordrelinje under fanen **Anlægsaktiver** i ove
 ## <a name="project-management-and-accounting"></a>Projektstyring og regnskab
 Du kan knytte et projekt til et anlægsaktiv, der er berørt af projektet. Du kan også knytte hver fase, opgave eller hvert underprojekt til et andet aktiv. Et aktiv kan være knyttet til hver projektpost. Du kan oprette tilknytningen, når du indtaster et anlægsaktivnummer i feltet **Anlægsaktiver** på siden **Projekter**. Projekttypen skal enten være **Intern** eller **Omkostningsprojekt**. 
 
-Du kan også bruge siden **Projekter** til at få vist detaljer om aktiver, der er knyttet til projekter. Hvis du vil have vist anlægsaktivposten, skal du klikke på aktivets link i oversigtspanelet **Konfiguration** for at åbne siden **Anlægsaktiver**. Klik derefter på **projekter**&gt;**alle projekter** til at få vist de projekter, der er knyttet til anlægsaktivet. 
+Du kan også bruge siden **Projekter** til at få vist detaljer om aktiver, der er knyttet til projekter. Hvis du vil have vist anlægsaktivposten, skal du klikke på aktivets link i oversigtspanelet **Konfiguration** for at åbne siden **Anlægsaktiver**. Klik derefter på **Projekter** &gt; **Alle projekter** for at få vist de projekter, der er knyttet til anlægsaktivet. 
 
 Du knytter som regel anlægsaktiver til projekter, når projekterne er relateret til arbejde, vedligeholdelse eller forbedring af aktivet. Når projektet er fuldført, oprettes der ikke automatisk en opskrivningsregulering for aktivet. Derfor skal du oprette opskrivningsreguleringen manuelt, hvis den kræves. 
 
@@ -90,6 +93,8 @@ Hvis du vil slette en tilknytning mellem et projekt og et aktiv, skal du fjerne 
 
 Du kan også angive et anlægsaktiv, du opretter eller producerer som led i et forkalkuleret projekt. Ved afslutningen af det forkalkulerede projekt kan du automatisk bogføre en anskaffelsespostering for et aktiv.
 
-Yderligere oplysninger finder du [køb af aktiver via indkøb](acquire-assets-procurement.md)
+Du kan finde flere oplysninger under [Anskaffelse af aktiver via indkøb](acquire-assets-procurement.md)
+
+
 
 

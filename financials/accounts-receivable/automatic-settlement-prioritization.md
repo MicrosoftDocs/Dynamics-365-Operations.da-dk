@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk udligning og prioritering
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 
-Du har to muligheder, når du udligner betalinger med fakturaer og andre transaktioner. Du kan manuelt vælge posteringerne, der udlignes, eller Microsoft Dynamics 365 for operationer kan vælge posteringerne automatisk ved hjælp af funktionen til automatisk udligning. Du kan også tilpasse, hvordan automatiske udligninger skal behandles, ved hjælp af indstillingen **Prioriter udligning**. Disse indstillinger er en del af parametrene udligning, der er defineret på den **Accounts receivable parameters** side. Den måde, posteringer automatisk udlignes på, kan variere, afhængigt af den metode, der bruges til automatisk udligning. Følgende metoder er tilgængelige:
+Du har to muligheder, når du udligner betalinger med fakturaer og andre transaktioner. Du kan manuelt vælge posteringerne, der skal udlignes, eller Microsoft Dynamics 365 for Operations kan vælge posteringerne automatisk ved hjælp af funktionen til automatiske udligning. Du kan også tilpasse, hvordan automatiske udligninger skal behandles, ved hjælp af indstillingen **Prioriter udligning**. Disse indstillinger er en del af de udligningsparametre, der er defineret på siden **Debitorparametre**. Den måde, posteringer automatisk udlignes på, kan variere, afhængigt af den metode, der bruges til automatisk udligning. Følgende metoder er tilgængelige:
 
 -   Brugerdefineret udligningsprioritet
 -   Automatisk standardudligning
@@ -45,9 +48,9 @@ Eksemplerne på udligninger senere i denne artikel er baseret på følgende tran
 | Faktura 1     | 15. august   | 100,00 | 2%14, Net 30        | 29. august          |                                                                                                                                                                                               |
 | Faktura 2     | 1. september | 250,00 | 2%14, Net 30        | 15. september       |                                                                                                                                                                                               |
 | Faktura 3     | 15. oktober  | 500,00 | 2% 14/Net 30        | 29. oktober         |                                                                                                                                                                                               |
-| Rentenota | 15. oktober  | 7:00   |                     |                    | Denne rentenota er for faktura 1 og 2. Beløbet beregnes som 2 procent renter på beløb, der er 30 dage efter forfald. F.eks. 0,02 × (100,00 + 250,00) = 7,00. |
+| Rentenota | 15. oktober  | 7:00   |                     |                    | Denne rentenota er for faktura 1 og 2. Beløbet beregnes som 2 procent renter på beløb, der er forfaldet for mindst 30 dage siden. F.eks. 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Userdefined udligningsprioritet
+## <a name="userdefined-settlement-priority"></a>Brugerdefineret udligningsprioritet
 Hvis du angiver **Brug prioritet til automatiske udligninger** til **Ja** på siden **Debitorparametre**, bruges den udligningsprioritet, du definerer på siden **Udligningsprioritet**, når posteringer er markeret til automatisk udligning. Følgende udligningsprioritet er defineret i dette eksempel:
 
 1.  Transaktionstype
@@ -77,6 +80,8 @@ Hvis der ikke er en brugerdefineret udligningsprioritet, markeres posteringer au
 | Faktura 2     | 01-09-2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 15-10-2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Rentenota | 15-10-2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
+
+
 
 
 

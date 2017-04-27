@@ -43,8 +43,8 @@ Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering
 <th><strong>Udlevering</strong></th>
 <th><strong><strong>Version</strong></strong></th>
 <th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>Få mere at vide</strong></strong></th>
+<th><strong><strong>Tilgængelighed</strong></strong></th>
+<th><strong><strong>Sådan får du mere at vide</strong></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -52,12 +52,12 @@ Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering
 <td>Microsoft Dynamics 365 for Operations-platform</td>
 <td>Platformsopdatering 4</td>
 <td>7.0.4425.16160</td>
-<td>Februar 2017</td>
+<td>2017. februar</td>
 <td><ol>
-<li>Gå til den <a href="https://roadmap.dynamics.com/">Dynamics 365 køreplan</a>.</li>
-<li>Vælg den <strong>nyheder</strong> tab.</li>
-<li>I den <strong>programmer</strong> afsnit, Vælg <strong>Dynamics 365 i forbindelse med</strong>.</li>
-<li>I den <strong>områder</strong> afsnit, Vælg <strong>Cloud-Platform</strong>.</li>
+<li>Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 køreplan</a>.</li>
+<li>Vælg fanen <strong>Nyheder</strong>.</li>
+<li>I afsnittet <strong>Programmer</strong> skal du vælge <strong>Dynamics 365 for Operations</strong>.</li>
+<li>I afsnittet <strong>Områder</strong> skal du vælge <strong>Cloudplatform</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">

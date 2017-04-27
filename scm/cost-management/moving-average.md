@@ -68,14 +68,14 @@ Med glidende gennemsnit bestemmes produktets kostpris af købskvitteringen. Hvis
 3.  Opret en salgsordre for en mængde på 1 og en enhedspris på 10,00.
 4.  Opret en købsfaktura for en mængde på 2 og en enhedspris på 12,00.
 
-Differencen i enhedsprisen, 2,00, bogføres på kontoen Prisdifference for glidende gennemsnit, når købsfakturaen bogføres. Årsagen er, at to produkter blev købt til en pris på 20,00. Et af produkterne, der blev solgt til en enhedspris på 10,00. Købsfakturaen blev bogført til en enhedspris på 12,00 med et antal på 2. Enhedsprisen for produktet kan ikke bogføres ved 14,00.
+Differencen i enhedsprisen, 2,00, bogføres på kontoen Prisdifference for glidende gennemsnit, når købsfakturaen bogføres. Årsagen er, at to produkter blev købt til en pris på 20,00. Et af produkterne, der blev solgt til en enhedspris på 10,00. Købsfakturaen blev bogført med en enhedspris på 12,00 med et antal på 2. Enhedsprisen for produktet kan ikke bogføres ved 14,00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Glidende gennemsnit for produkt og lagerregulering
 Hvis du vil justere den glidende gennemsnitlige kostpris for et produkt, tillades lagerreguleringer for dags dato. Du kan ikke tilbagedatere en lagerregulering for at rette den glidende gennemsnitlige kostpris for et produkt. Du kan ikke have omkostningsforløb gennem efterfølgende transaktioner. I dette eksempel er den glidende gennemsnitlige kostpris reguleret for et produkt.
 1.  Vælg det produkt, du vil justere den glidende gennemsnitlige omkostning for.
-    | **Note**                                                                                    |
+    | **Bemærk!**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | Den ** værdiregulering for glidende gennemsnit ** side undersøger det lager, der er tilgængelige for et produkt. |
+    | På siden **Værdiregulering for glidende gennemsnit** undersøges det lager, der er tilgængeligt for et produkt. |
 
     Det valgte produkt havde et bogført antal på 1, en bogført værdi på 12,00, en bogført enhedskostpris på 12,00 og en enhedskostpris på 12,00.
 2.  Opdater feltet **Enhedskostpris** til 16,00. Systemet beregner de resterende felter.
@@ -88,7 +88,7 @@ Hvis du vil justere den glidende gennemsnitlige kostpris for et produkt, tillade
 På siden **Udligninger på bilag** kan du se en regulering på 4,00, der er bogført på kontoen Omkostningsværdiregulering for glidende gennemsnit.
 
 ## <a name="moving-average-with-production"></a>Glidende gennemsnit med produktion
-Glidende gennemsnit understøtter producerede varer. Hvis du planlægger at bruge glidende gennemsnit i et produktionsmiljø, den **Brug anslået kostpris** skyderen i det ** produktionsparametre ** side skal være markerede. Dette betyder, at den kostpris, der er beregnet ved forkalkulationen bruges i stedet for den faktiske kostpris for styklistekalkulation.
+Glidende gennemsnit understøtter producerede varer. Hvis du planlægger at bruge glidende gennemsnit i et produktionsmiljø, skal skyderen **Brug forkalkuleret kostpris** på siden **Produktionsstyringsparametre** være markeret. Dette betyder, at den kostpris, der er beregnet ved forkalkulationen bruges i stedet for den faktiske kostpris for styklistekalkulation.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Glidende gennemsnit med en tilbagedateret transaktion
 Tilbagedaterede transaktioner tildeles den aktuelle kostpris med glidende gennemsnit, og produktets fysiske antal opdateres, men den glidende gennemsnitlige kostpris påvirkes ikke. I dette eksempel på glidende gennemsnit bogføres en tilbagedateret transaktion for et produkt med glidende gennemsnit.

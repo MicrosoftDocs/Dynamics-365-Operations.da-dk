@@ -1,6 +1,6 @@
 ---
-title: "Efterspørgselsudfoldning af en styklisteversion"
-description: I denne artikel beskrives en situation, der involverer udfoldning af styklisten version af styklisten til varedisponering.
+title: Udfoldning af styklisteversion
+description: I denne artikel beskrives en varedisponeringssituation, der involverer udfoldning af en styklisteversion.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Efterspørgselsudfoldning af en styklisteversion
+# <a name="explosion-of-a-bom-version"></a>Udfoldning af styklisteversion
 
-I denne artikel beskrives en situation, der involverer udfoldning af styklisten version af styklisten til varedisponering.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives en varedisponeringssituation, der involverer udfoldning af en styklisteversion.
 
 En efterspørgselsudfoldning af en styklisteversion opretter en efterspørgsel efter de enkelte varer på styklistelinjen på en bestemt lokation og muligvis på et bestemt lagersted. På en lokationsspecifik stykliste kan der defineres et bestemt lagersted defineret for de enkelte styklistelinjer. Og for de enkelte styklistelinjer bestemmer varens dimensionsindstillinger, om lagerstedet er påkrævet. Den resulterende efterspørgsel for de enkelte styklistelinjer bliver derefter startpunktet for en ekstra efterspørgselsudfoldning. Dette behovsplanlægningsscenario omfatter følgende forhold:
 
@@ -41,8 +44,10 @@ I følgende grafik vises, hvordan efterspørgselsudfoldningen for behovsplanlæg
 <a name="see-also"></a>Se også
 --------
 
-[Varedisponering - hvordan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+[Varedisponering – Sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+
+
 
 

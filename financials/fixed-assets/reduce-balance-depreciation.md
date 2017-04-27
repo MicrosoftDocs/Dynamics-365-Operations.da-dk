@@ -1,9 +1,9 @@
 ---
-title: Reducere afskrivning
+title: Reducer saldoafskrivning
 description: Denne artikel indeholder en oversigt over afskrivningsmetoden Saldoafskrivning.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Reducere afskrivning
+# <a name="reduce-balance-depreciation"></a>Reducer saldoafskrivning
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder en oversigt over afskrivningsmetoden Saldoafskrivning.
 
@@ -73,12 +76,14 @@ Når metoden Saldoværdi benyttes, beregnes der 30 % af afskrivningsgrundlaget (
 
 | Periode | Beregning af det årlige afskrivningsbeløb | Den bogførte nettoværdi ved årets afslutning |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | (11,000 - 1,000) \* 30% = 3,000           | (11.000 - 1.000) - 3.000 = 7.000      |
-| År 2 | (7,000 - 1,000) \* 30% = 1,800            | (7.000 - 1.800) = 5.200                |
-| År 3 | (5,200 - 1,000) \* 30% = 1,260            | (5.200 - 1.260) = 3.940               |
+| År 1 | (11.000 - 1.000) \* 30 % = 3.000           | (11.000 - 1.000) - 3.000 = 7.000      |
+| År 2 | (7.000 - 1.000) \* 30 % = 1.800            | (7.000 - 1.800) = 5.200                |
+| År 3 | (5.200 - 1.000) \* 30 % = 1.260            | (5.200 - 1.260) = 3.940               |
 
  
 -
+
+
 
 
 

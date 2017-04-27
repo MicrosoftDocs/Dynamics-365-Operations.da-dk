@@ -49,18 +49,18 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 ### <a name="create-a-report-group"></a>Oprette en rapportgruppe
 
 1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2.  På den **fil** menuen, klik på **ny**&gt;**gruppe rapportdefinition** til at åbne en ny rapportgruppe i Fremviserens vindue. Du kan også klikke på den **rapportgruppe** knap ![rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "rapportgruppe") på værktøjslinjen.
+2.  I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på værktøjslinjen.
 3.  Klik på fanen **Rapportgruppe**. Hvis du vil tilsidesætte oplysningerne om de enkelte rapportdefinitioner til generering af denne rapport, skal du markere afkrydsningsfeltet **Tilsidesæt regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner**. Firmanavnet, detaljeringsniveauet, foreløbig-indstillingen og datooplysninger angives automatisk, men du kan stadig foretage opdateringer.
 4.  Hvis du vil have genereret flere rapporter, der viser rapporteringsvalutaerne, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer**. Derefter kan du åbne flere visninger ved at klikke på knappen **Valuta** i webfremviseren, når du får vist rapporten.
 5.  I feltet **Rapporter i gruppe** skal du klikke på **Tilføj** for at vælge de rapporter, der skal medtages i rapportgruppen. Hvis du vil vælge flere rapporter i dialogboksen **Tilføj**, skal du holde tasten Ctrl nede, mens du markerer rapporter. Når du er færdig med at vælge rapporter, skal du klikke på **OK**.
-6.  Klik på **fil**&gt;**Gem** at gemme den nye rapportgruppe.
+6.  Klik på **Filer** &gt; **Gem** for at gemme den nye rapportgruppe.
 
 ### <a name="modify-a-report-group"></a>Redigere en rapportgruppe
 
 1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2.  Dobbeltklik på den rapportgruppe, der skal redigeres.
 3.  Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
-4.  På den **fil** menuen, klik på **gemme** for at gemme den ændrede rapport-gruppe, skal du også klikke på den **gemme** knap ![gemme](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "gemme") på værktøjslinjen.
+4.  I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Gem") på værktøjslinjen.
 
 **Bemærk:** Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
@@ -68,7 +68,7 @@ Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme ti
 
 1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
 2.  Åbn den rapportgruppe, der skal genereres.
-3.  Klik på den **Opret rapport** knap ![Opret rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Opret rapport") til at generere rapporter.
+3.  Klik på knappen **Opret rapport** ![Opret rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Opret rapport") for at oprette rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
@@ -104,8 +104,8 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <td>Angiv det detaljeringsniveau, som rapporterne indeholder.
 <ul>
 <li><strong>Finansiel</strong>– en oversigtsrapport på højt niveau. Du kan ikke rulle ned til konti og dimensioner, med undtagelse af de konti og dimensioner, der er tilføjet via et rapporteringstræ.</li>
-<li><strong>Finansielle &amp;konto</strong> – en rapport, der indeholder en opsummering og kontooplysninger.</li>
-<li><strong>Økonomisk, konto, &amp;transaktion</strong> – en rapport, der indeholder en opsummering og transaktionsdetaljer.</li>
+<li><strong>Finans og konto</strong> – en rapport, der indeholder en oversigt på højt niveau og kontooplysninger.</li>
+<li><strong>Finans, Konto og Transaktion</strong> – en rapport, der indeholder en oversigt på højt niveau og transaktionsoplysninger.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 <a name="see-also"></a>Se også
 --------
 
-[Finansiel rapportering for Microsoft Dynamics 365 til operationer](financial-reporting-intro.md)
+[Økonomirapportering i Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

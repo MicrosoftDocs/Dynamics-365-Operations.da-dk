@@ -1,6 +1,6 @@
 ---
-title: "Planen for engangsleverandører i den offentlige sektor"
-description: Denne artikel beskriver, hvordan du forbereder at importere og oprette flere engangskreditorer og fakturaer.
+title: "Planlægning af engangsleverandører i den offentlige sektor"
+description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planen for engangsleverandører i den offentlige sektor
+# <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
-Denne artikel beskriver, hvordan du forbereder at importere og oprette flere engangskreditorer og fakturaer. 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
 
 Hvis du planlægger at masseimportere leverandør- og importoplysninger, skal du typisk først oprette en datafil i regnearksformat og gemme den i CSV-format (kommaseparerede værdier).
 
 -   Da der bruges komma til at adskille felterne i en CSV-fil, må du ikke bruge kommaer i teksten i en post. Hvis du f.eks. vil angive firmanavnet "Smith, Jensen og Jensen", skal du indtaste det som **Smith Jensen og Jensen**.
--   Hvis du ikke angiver værdier for felterne på denne side, de nyoprettede kreditorkonti bruge værdier fra profilen engangsleverandør, der refereres til i den **konti Kreditorparametre** side. For eksempel, hvis betalingsmåden er indstillet til **se** for enkeltstående leverandørprofilen på den **konti Kreditorparametre** side, at betalingsmetoden også angives for engangskreditorer, du tilføjer.
+-   Hvis du ikke angiver værdier for felter på denne side, bruger de nyoprettede kreditorkonti værdier fra den engangskreditorprofil, der er henvist til på siden **Kreditorparametre**. Hvis betalingsmetoden f.eks. er angivet til **Bankcheck** for engangskreditorprofilen på siden **Kreditorparametre**, så angives denne betalingsmetode også for de engangskreditorer, som du tilføjer.
 -   Kreditornummerserien **Engangsleverandør** bruges til at tildele engangskreditorkontiene og må ikke være angivet til **Fortløbende** for denne tjeneste. Fakturaer genereres i kladdetilstand. Før du opretter betalingsforslag til betaling, skal du bogføre fakturaerne.
 
 Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver enkelt feltetiket svarer til en kolonneoverskrift i et regneark, og hver række i regnearket indeholder dataene for hver relevant kolonne.
@@ -54,7 +57,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 | By                                           |                                                         |
 | By                                           |                                                         |
 |Federal Tax ID (valgfrit)                       | (Kun USA) 1099-nummer                                 |
-| 1099-nummertype                                    | (Kun USA) Værdier kan være **ukendt**, **Employer Identification Number**, **CPR-nummer**, **individuelle Taxpayer Identification Number**, eller **vedtaget betaler momsidentifikationsnummer**.  **Bemærk:** Hvis nogen federal tax ID er angivet, indstilles feltet **ukendt**.                                               |
+| 1099-nummertype                                    | (Kun USA) Værdierne kan være **Ukendt**, **Employer Identification Number (EIN - US)**, **Social Security Number (SSN - US)**, **Individuelt Taxpayer Identification Number (TIN - US)**, eller **Anvendt Taxpayer Identification Number (TIN - US)**.  **Bemærk:** Hvis der ikke er angivet noget Federal Tax ID, indstilles feltet til **ukendt**.                                               |
 | Bankkonto (valgfrit)                        | Bankkontonavn                                       |
 | Bankkontonummer                            |                                                         |
 | Registreringsnummer (valgfrit)                      |                                                         |
@@ -63,7 +66,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 
 
 
-**Invoice section**
+**Fakturasektion**
 
 | Felt                                                | Oplysninger                                           |
 |------------------------------------------------------|---------------------------------------------------|
@@ -73,7 +76,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 | Fakturadato                                         | Datoformat                                       |
 | Forfaldsdato (valgfrit)                                  | Datoformat                                       |
 | Linjenummer                                          |                                                   |
-|Varenummer (valgfrit)                                | 20 tegn **Bemærk:** Hvis nogen varenummer, skal du angive værdier i den **indkøbskategori** og **indkøbskategorihierarkiet** felter. Hvis ingen indkøbskategori og intet indkøbskategorihierarki er angivet, skal du angive en værdi i feltet **Varenummer**.                    |
+|Varenummer (valgfrit)                                | Grænse på 20 tegn   **Bemærk!** Hvis der ikke er angivet noget varenummer, skal du angive værdier i felterne **Indkøbskategori** og **Indkøbskategorihierarki**. Hvis ingen indkøbskategori og intet indkøbskategorihierarki er angivet, skal du angive en værdi i feltet **Varenummer**.                    |
 | Varenavn (valgfrit)                                 |  Maks. 60 tegn                               |
 | Indkøbskategorihierarki (valgfrit)            |    **Bemærk!** Hvis du angiver en værdi for dette felt, skal feltet **Indkøbskategori** også udfyldes.                                                                         |
 | Indkøbskategori (valgfrit)                      | **Bemærk!** Hvis du angiver en værdi for dette felt, skal feltet **Indkøbskategorihierarki** også udfyldes.                                                                        |
@@ -99,8 +102,10 @@ Når du har konfigureret forudsætninger, du skal bruge, kan du se [Engangslever
 <a name="see-also"></a>Se også
 --------
 
-[One-time vendors in the public sector](one-time-vendors-public-sector.md)
+[Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 
 [Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
+
+
 
 

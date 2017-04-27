@@ -29,20 +29,23 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="calculate-material-consumption"></a>Beregne materialeforbrug
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om forskellige indstillinger, der er relateret til beregning af materialeforbrug. 
 
 Følgende indstillinger, der er knyttet til beregning af materialeforbruge er tilgængelige på fanerne **Opsætning** og **Trinforbrug** på oversigtspanelet **Linjedetaljer** på siden **Stykliste**.
 
 ## <a name="variable-and-constant-consumption"></a>Variabelt eller konstant forbrug
-I den **er**, kan du vælge, om forbruget skal beregnes som et konstant antal eller et variabelt antal. Vælg **konstant** Hvis et fast antal eller mængde er nødvendige for produktionen, uanset antallet, der skal produceres. Vælg **Variabelt**, som er standardindstillingen, hvis den påkrævede materiale i de færdige varer er proportionelt med antallet af færdigvarer, der er produceret.
+I feltet **Forbrug er** kan du vælge, om forbruget skal beregnes som et konstant antal eller et variabelt antal. Vælg **Konstant**, hvis et fast antal eller volumen kræves til produktionen, uanset det producerede antal. Vælg **Variabelt**, som er standardindstillingen, hvis den påkrævede materiale i de færdige varer er proportionelt med antallet af færdigvarer, der er produceret.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Beregne forbrug fra en formel
 I feltet **Formel** kan du oprette forskellige formler til beregning af materialeforbruget. Hvis du bruger standardværdien, **Standard**, beregnes forbruger ikke fra en formel. Følgende formler fungerer sammen med felterne **Højde**, **Bredde**, **Dybde**, **Massefylde** og **Konstant**:
 
--   Højde \*konstant
--   Højde \*bredde \*konstant
--   Højde \*bredde \*dybde \*konstant
--   (Højde \*bredde \*Dybde / Massefylde) \*Konstant
+-   Højde \* Konstant
+-   Højde \* Bredde \* Konstant
+-   Højde \* Bredde \* Dybde \* Konstant
+-   (Højde \* Bredde \* Dybde/Massefylde) \* Konstant
 
 ## <a name="rounding-up-and-multiples"></a>Afrunding og multipla
 Sammen giver felterne **Afrunding** og **Multipla** dig mulighed for at afrunde materialeforbrugsværdien. Du kan for eksempel afrunde værdien i overensstemmelse med den materialehåndteringsenhed, hvori råvaren plukkes til produktion. Følgende indstillinger er tilgængelige i feltet **Afrunding**: **Antal**, **Måling** og **Forbrug**.
@@ -53,7 +56,7 @@ Hvis du vælger **Antal** som afrundingsmekanisme, skal antallet være et multip
 
 ### <a name="measurement"></a>Mål
 
-Typisk ville du vælge **Måling** som afrundingsmekanisme, når råvarer leveres i bestemte dimensioner. For eksempel et stykke metalrør på 2 meter, der kræves for en færdigvare, og metalrøret gemmes i længder på 4,5 meter. I dette tilfælde kan afrundingsmekanismen **Måling** bruges til at beregne, hvor mange metalrør, der kræves for at producere et bestemt antal stykker af den færdige vare. For eksempel det **formel** er angivet til **højde \*konstant**. Den **højde** er angivet til **2** til at angive længden af røret, der kræves for færdige varer. Feltet **Multiplum** angives til **4,5** for at angive, at røret er plukket i længder på 4,5 meter. Her er beregningen:
+Typisk ville du vælge **Måling** som afrundingsmekanisme, når råvarer leveres i bestemte dimensioner. For eksempel et stykke metalrør på 2 meter, der kræves for en færdigvare, og metalrøret gemmes i længder på 4,5 meter. I dette tilfælde kan afrundingsmekanismen **Måling** bruges til at beregne, hvor mange metalrør, der kræves for at producere et bestemt antal stykker af den færdige vare. I dette eksempel er feltet **Formel** indstillet til **Højde \* konstant**. Feltet **Højde** er angivet til **2** for at angive længden af røret, der kræves for færdigvaren. Feltet **Multiplum** angives til **4,5** for at angive, at røret er plukket i længder på 4,5 meter. Her er beregningen:
 
 1.  Antal multipla, der kræves til 10 stk. af færdigvaren: 10 ÷ 2 = 5 styk
 2.  Samlet forbrug: 4,5 × 5 = 22,5 meter metalrør
@@ -78,5 +81,7 @@ Trinforbrug bruges til at beregne konstant forbrug i antalsintervaller. Hvis du 
 | 200,00      | 40,0000  |
 
 Styklistens antal er 1, og produktionsantallet er 110. Formlen for forbruget er Fra serie (antal) = forbrug. Da produktionsmængden er 110, falder den ind i "Fra 100-serien." Antallet er der for 20.
+
+
 
 

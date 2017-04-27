@@ -1,6 +1,6 @@
 ---
 title: "Bogføringsdefinitioner"
-description: "Denne artikel indeholder eksempler på, hvordan der bruges bogføringsdefinitioner for behæftelser for indkøbsordrer og budgetbevillingerne."
+description: "Denne artikel indeholder eksempler på, hvordan bogføringsdefinitioner bruges for behæftelser i indkøbsordrer og budgetdisponeringer."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Definition af bogføringseksempler
+# <a name="posting-definition-examples"></a>Eksempler på bogføringsdefinitioner
 
-Denne artikel indeholder eksempler på, hvordan der bruges bogføringsdefinitioner for behæftelser for indkøbsordrer og budgetbevillingerne.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikel indeholder eksempler på, hvordan bogføringsdefinitioner bruges for behæftelser i indkøbsordrer og budgetdisponeringer.
 
 Inden du læser dette emne, skal du være fortrolig med bogføringsdefinitioner og posteringsbogføringsdefinitioner. Du kan finde flere oplysninger i [Bogføringsdefinitioner](posting-definitions.md). Følgende eksempler kan konfigureres på siden **Bogføringsdefinitioner**. Hvert eksempel indeholder følgende områder:
 
@@ -39,7 +42,7 @@ Inden du læser dette emne, skal du være fortrolig med bogføringsdefinitioner 
 
 Når der er en match mellem kontiene og dimensionsværdierne i ruden **Sammenlign kriterier** for bogføringsdefinitionen og dimensionsværdierne i posteringen, genereres der finansposter med udgangspunkt i ruden **Genererede poster** for bogføringsdefinitionen. 
 > [!NOTE]
-> Knyt en bogføringsdefinition til en bestemt transaktionstype ved brug af **posteringsbogføringsdefinitioner** side. Når du knytter en bogføringsdefinition til en posteringstype og valgt **bruge bogføringsdefinitioner** på den **Økonomiparametre** side, skal alle posteringer af den valgte posteringstype bruge bogføringsdefinitioner.
+> Knyt en bogføringsdefinition til en bestemt posteringstype ved brug af siden **Definitioner af posteringsbogføring**. Efter at du har knyttet en bogføringsdefinition til en posteringstype og valgt **Brug bogføringsdefinitioner** på siden **Finansparametre**, skal alle posteringer med den valgte posteringstype bruge bogføringsdefinitioner.
 
 ## <a name="example-purchase-order-encumbrances"></a>Eksempel: Behæftelser for indkøbsordrer
 Når du aktiverer behandling af behæftelser ved at vælge **Aktivér behæftelse** på siden **Finansparametre**, skal der bruges bogføringsposteringer til registrering af behæftelser i finans for alle konti, der skal hensættes. I de fleste tilfælde hensættes alle udgiftskonti på balancen. 
@@ -69,7 +72,7 @@ Konti og dimensionsværdier hentes enten fra de regnskabsfordelinger, som du ang
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1-OU\_3566-uddannelse | 250,00 |        |         |
+| 606400-OU\_1-OU\_3566-Uddannelse | 250,00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansposter genereret fra bogføringsdefinitionen
 
@@ -77,10 +80,10 @@ Genererede finansposter oprettes til registrering af behæftelserne.
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1-OU\_3566-uddannelse | 250,00 |        |         |
-| 300144-OU\_1-OU\_3566-uddannelse |        | 250,00 |         |
+| 300143-OU\_1-OU\_3566-Uddannelse | 250,00 |        |         |
+| 300144-OU\_1-OU\_3566-Uddannelse |        | 250,00 |         |
 
-I dette eksempel matcher enhver konto, der er del af Kontostruktur – drift kriterierne for bogføringsdefinitionen. Derfor, når 606500-OU\_1-OU\_3566-Uddannelse evalueres, oprettes der genererede poster for de konti, der er defineret i den **oprettet poster** rude for bogføringsdefinitionen.
+I dette eksempel matcher enhver konto, der er del af Kontostruktur – drift kriterierne for bogføringsdefinitionen. Når 606500-OU\_1-OU\_3566-Uddannelse evalueres, oprettes der derfor genererede poster for de konti, der er defineret for bogføringsdefinitionen i ruden **Genererede poster**.
 
 ## <a name="example-budget-appropriations"></a>Eksempel: Budgetdisponeringer
 Når du aktiverer budgetdisponering ved at vælge **Aktivér budgetdisponering** på siden **Finansparametre**, skal bogføringsdefinitionerne bruges til registrering af budgetregisterposter i finans. Når der findes en aktiv budgetstyringskonfiguration, som er aktiveret, kan der bruges bogføringsdefinitioner og posteringsbogføringsdefinitioner som et led i registreringen af poster vedrørende disponering, revision, overførsel, projekt, anlægsaktiv samt udbuds- og efterspørgselsprognoser i finans. 
@@ -110,7 +113,7 @@ Du kan angive konti, dimensionsværdier og beløb for budgetkontoposten på side
 
 | Konto + dimensioner           | Debet | Kredit | Kommentar |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1-OU\_3566-uddannelse |       | 250,00 |         |
+| 606400-OU\_1-OU\_3566-Uddannelse |       | 250,00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansposter genereret fra bogføringsdefinitionen
 
@@ -118,10 +121,12 @@ Genererede finansposter oprettes til registrering af de oprindelige budget i hve
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1-OU\_3566-uddannelse |        | 250,00 |         |
-| 300146-OU\_1-OU\_3566-uddannelse | 250,00 |        |         |
+| 300145-OU\_1-OU\_3566-Uddannelse |        | 250,00 |         |
+| 300146-OU\_1-OU\_3566-Uddannelse | 250,00 |        |         |
 
-I dette eksempel matcher enhver konto, der er del af Kontostruktur – drift kriterierne for bogføringsdefinitionen. Derfor, når 606400-OU\_1-OU\_3566-Uddannelse evalueres, oprettes de genererede finansposter.
+I dette eksempel matcher enhver konto, der er del af Kontostruktur – drift kriterierne for bogføringsdefinitionen. Derfor oprettes de genererede finansposter, når 606400-OU\_1-OU\_3566-Uddannelse evalueres.
+
+
 
 
 

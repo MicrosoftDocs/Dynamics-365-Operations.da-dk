@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budgeting-in-the-public-sector"></a>Budgetlægning i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
 
 <a name="what-are-the-prerequisites-to-setting-up-budgeting-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Budgetlægning i den offentlige sektor?
@@ -54,12 +57,14 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 <a name="see-also"></a>Se også
 --------
 
-[Budgeting](../budgeting/budgeting-overview.md)
+[Budgettering](../budgeting/budgeting-overview.md)
 
 [Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
 
-[Accounts receivable in the public sector](accounts-receivable-public-sector.md)
+[Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
 
-[General ledger in the public sector](general-ledger-public-sector.md)
+[Finans i den offentlige sektor](general-ledger-public-sector.md)
+
+
 
 

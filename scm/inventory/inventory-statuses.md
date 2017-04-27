@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-statuses"></a>Lagerstatusser
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du kan bruge lagerstatus til at kategorisere og holde styr på lageret.
 
 Du kan bruge lagerstatus til at kategorisere lager. Du kan derefter iværksætte foranstaltninger som genopfyldning eller læg-på-lager-arbejde. 
@@ -47,5 +50,7 @@ Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har v
 Når du har oprettet lagerstatusser, kan du angive standardlagerstatus for et sted, vare og lagersted. Du kan også angive en standardstatus for salg, overdragelse og indkøbsordrer. Standardstatus for salgsordrer og udgående overflytningsordre kan ikke have indstillingen **Lagerspærring** angivet til **Ja**. Lagerstatus, der er nedarvet fra standardindstillinger for et websted, lagersted, vare, indkøbsordre, flytteordre eller salgsordre, kan ændres ved hjælp af den mobile enhed, eller på indkøbsordren, salgsordren eller flytteforslagslinjen. 
 
 For at planlægge dækningen for varer, der har status af disponibel lagerbeholdning, skal du vælge indstillingen **Disponer pr. dimension** for en lagerdimension på siden **Lagringsdimensionsgrupper**. Når du åbner guiden **Varedisponering **, vises varer med en disponibel status på siden **Status**. Du kan oprette disponeringsindstillinger for disse varer ved at vælge ID for lagerstatus for de disponible lagerstatusser. Baseret på disponeringsindstillingerne, kan du beregne varebehovene og budgettere udbud og efterspørgsel for tilgængelige varer under varedisponering. Du kan ikke oprette en opsætning af en varedisponering, der har spærret lagerstatus. Du kan også bruge siden **Varedisponering** til at oprette eller redigere disponeringsparametrene for varen.
+
+
 
 

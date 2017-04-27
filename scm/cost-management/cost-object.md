@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Omkostningsobjekter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om omkostningsobjekter og forklarer, hvordan omkostninger og antal akkumuleres. Et omkostningsobjekt er en enhed, hvor omkostninger og antal akkumuleres. En omkostningsobjektenhed kan være et produkt eller produktvarianter som f.eks. varianter af typografier og farver.  
 
 <a name="cost-objects"></a>Omkostningsobjekter
@@ -65,19 +68,21 @@ Tabellen nedenfor viser, hvad der er et omkostningsobjekt, og hvad er et lagerob
     -   Bogført antal
 -   Feltet **Gennemsnitlig enhedskostpris** er et beregnet felt. Værdien beregnes ved at dividere værdien **Værdi** med værdien **Antal**.
 
-**Bemærk:** de ** Medtag fysisk værdi ** parameter har ingen effekt på de foregående beregninger.
+**Bemærk!** Parameteren **Medtag fysisk værdi** har ingen effekt på de foregående beregninger.
 
 <a name="see-also"></a>Se også
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Produktdimensionsgruppe](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Lagringsdimensionsgruppe](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Sporingsdimensionsgruppe](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Hvad er ny eller ændret i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nyheder eller ændringer i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Omkostningsposter](cost-entries.md)
+
+
 
 

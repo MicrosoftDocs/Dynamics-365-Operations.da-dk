@@ -1,6 +1,6 @@
 ---
 title: "Finanskladdehåndtering"
-description: "I denne artikel beskrives funktionerne i Microsoft Dynamics 365 for operationer, der kan hjælpe med at gøre finanskladde behandling lettere og, der kan også hjælper med at sikre, at korrekte data hentes og intern kontrol ikke er skadet."
+description: "I denne artikel beskrives funktionerne i Microsoft Dynamics 365 for Operations, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet og den interne kontrol ikke bliver forringet."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,32 +28,35 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-journal-processing"></a>Finanskladdehåndtering
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives funktionerne i Microsoft Dynamics AX, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet og den interne kontrol ikke bliver forringet.  
 
 Kladdenavne
 
-En af de vigtigste områder til at konfigurere er kladdenavne. Det er en god idé at definere bestemte kladdenavn for hvert formål som interne, periodisering justering og fejlretning. Du kan skræddersy hvert kladdenavn for at gøre indtastning af data til hvert formål, let og sikkert. 
+Et af de vigtigste områder, der skal konfigureres, er kladdenavne. Det er en god idé at definere bestemte kladdenavne til hvert formål, såsom intern, periodiseringsregulering og fejlretning. Du kan skræddersy hvert kladdenavn for at gøre det nemt og sikkert at indtaste data til hvert formål. 
 
 Du kan konfigurere følgende elementer på siden **Kladdenavne**:
 
--   **Arbejdsgangsgodkendelse** – for at øge den interne kontrol skal du definere arbejdsgange, der fastsætter materialitetsgrænser for fremgangsmåder for gennemsyn og godkendelse, baseret på kriterier såsom samlet debetbeløb. Du konfigurerer arbejdsgange for finanskladden på den ** Finans arbejdsprocesser ** side.
+-   **Arbejdsgangsgodkendelse** – for at øge den interne kontrol skal du definere arbejdsgange, der fastsætter materialitetsgrænser for fremgangsmåder for gennemsyn og godkendelse, baseret på kriterier såsom samlet debetbeløb. Du konfigurerer arbejdsgange for finanskladder på siden **Arbejdsgange i Finans**.
 -   **Standardværdier** – vælg standardværdier for modkonti, valuta og økonomiske dimensioner.
 -   **Kladdekontrol** – du kan oprette begrænsninger på regnskabs- og kontotypen samt segmentværdier. 
 
 **Eksempler**
 
-Et kladdenavn kan kun anvendes til reguleringer. I dette tilfælde kan du angive, at kun kontotypen **Finans** er gyldig på tværs af alle regnskaber. [![Kladde kontrol konti af typen](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Et kladdenavn kan kun anvendes til reguleringer. I dette tilfælde kan du angive, at kun kontotypen **Finans** er gyldig på tværs af alle regnskaber. [![Kontotyper for kladdekontrol](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
-Et kladdenavn kan kun bruges til et bestemt segment eller til et interval for hovedkonti. [![Kladden control segment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+Et kladdenavn kan kun bruges til et bestemt segment eller til et interval for hovedkonti. [![Kladdekontrolsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Indstillingen **Automatisk tilbageførsel** er tilgængelig i finanskladder. Du har for eksempel en periodiseringsregulering, hvor det faktiske dokuments endnu ikke er behandlet, som vist i følgende illustration.
 [![Tilbageførsel af finanskladde](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Microsoft Excel-tilføjelsesprogrammet til journaloptegnelsen giver et ekstra niveau af automatisering og gør dataindtastningen lettere. Handlingen **Åbn linjer i Excel ** er tilgængelig på siden **Finanskladde** og **Kladdebilag**. 
+Microsoft Excel-tilføjelsesprogrammet til kladdepostering giver et ekstra niveau af automatisering og gør dataindtastningen lettere. Handlingen **Åbn linjer i Excel** er tilgængelig på siden **Finanskladde** og **Kladdebilag**. 
 
 På siden **Periodiske kladder** kan du oprette gentagelseskladder for at automatisere behandling af finanskladder. 
 
-Du kan bruge bilagsskabeloner til enhver tid. På den **finanskladder** side, den **Gem** og **Vælg bilagsskabelon** handlinger findes på den **kladdebilag** side, under **funktion** for bilagslinjerne.
+Du kan bruge bilagsskabeloner til enhver tid. På siden **Finanskladder** findes handlingerne **Gem** og **Vælg bilagsskabelon** på siden **Kladdebilag** under **Funktioner** for bilagslinjerne.
 
 ## <a name="related-setup"></a>Relateret opsætning
 Følgende opsætning er ikke specifik for finanskladder men hjælper med at sikre, at data indtastes korrekt og nemt.
@@ -78,6 +81,7 @@ Opsætningen af hovedkontoen giver mange muligheder for behandling af finansklad
 
 Regnskabsmæssige strukturer og avancerede regelstrukturer er meget vigtige for at garantere, at de data, der kræves til økonomisk rapportering og sporing af ydeevne er hentet under behandling af finanskladde og enhver dokumentation. Med regnskabsmæssige strukturer og avancerede regelstrukturer kan du skræddersy dataindtastningsoplevelsen. Du kan kun tillade dataindtastning for økonomiske dimensioner, der er relevante i hver situation, og kan også gennemtvinge kravet om, at obligatoriske og korrekte data altid registreres.
 
-Yderligere oplysninger finder du [planlægning: kontoplanen](plan-chart-of-accounts.md). 
+Du kan finde flere oplysninger under [Planlægning: Kontoplan](plan-chart-of-accounts.md). 
+
 
 

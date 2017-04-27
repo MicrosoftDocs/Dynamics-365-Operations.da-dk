@@ -1,5 +1,5 @@
 ---
-title: Oversigt over administration af kvalitet
+title: Oversigt over kvalitetsstyring
 description: "I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Operations til at forbedre produktkvaliteten i forsyningskæden."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Oversigt over administration af kvalitet
+# <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Operations til at forbedre produktkvaliteten i forsyningskæden.
 
@@ -344,7 +347,7 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 </tr>
 <tr class="even">
 <td>Udfald af testvariabel</td>
-<td>Brug denne side til at konfigurere, redigere og få vist de mulige testresultater for en testvariabel, der er knyttet til en kvalitativ test. For hvert udfald angiver du status <strong>Bestået</strong> eller <strong>Mislykket</strong>. Du skal definere en variabel og dens udfald for hver kvalitative test, der er defineret på siden <strong>Test</strong>. (Kvalitative test testtypen er indstillet til <strong>indstilling</strong> på den <strong>test</strong> side.) Brug af <strong>Test grupper</strong> side til at tildele en testvariabel og standardudfald til en individuel kvalitativ test.</td>
+<td>Brug denne side til at konfigurere, redigere og få vist de mulige testresultater for en testvariabel, der er knyttet til en kvalitativ test. For hvert udfald angiver du status <strong>Bestået</strong> eller <strong>Mislykket</strong>. Du skal definere en variabel og dens udfald for hver kvalitative test, der er defineret på siden <strong>Test</strong>. (For kvalitative test er testtypen indstillet til <strong>Indstilling</strong> på siden <strong>Test</strong>). Brug siden <strong>Testgrupper</strong> til at tildele en testvariabel og standardudfaldet til en individuel kvalitativ test.</td>
 <td>En produktionsvirksomhed, der fremstiller småkager, anvender en inspektionstest for det færdige produkt. Denne inspektionstest har adskillige variabler. En af variablerne er smag, og de mulige udfald for denne variabel er god og dårlig. Farve er en anden variabel, og de mulige udfald er mørk, for lys og korrekt. Hvert udfald får tildelt status <strong>Bestået</strong> eller <strong>Mislykket</strong>. Under inspektionstesten til hver variabel, rapporterer den person, der foretager inspektionen, testresultatet ved at vælge et af udfaldene.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 <a name="see-also"></a>Se også
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Processer for kvalitetsstyring](quality-management-processes.md)
 
 [Aktivering af uoverensstemmelsesstyring](enable-nonconformance-management.md)
+
+
 
 

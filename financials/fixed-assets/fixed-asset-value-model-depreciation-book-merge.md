@@ -1,6 +1,6 @@
 ---
 title: "Flette værdimodel for anlægsaktiver og afskrivningsmodel"
-description: "I tidligere versioner var der to værdiansættelse koncepter for anlægsaktiver - værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for operationer 1611 opdager version er værdi model funktioner og funktionalitet for afskrivning bog blevet flettet ind i et enkelt koncept, der er kendt som en bog."
+description: "I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations frigivelse 1611 opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Flette værdimodel for anlægsaktiver og afskrivningsmodel
 
-I tidligere versioner var der to værdiansættelse koncepter for anlægsaktiver - værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for operationer 1611 opdager version er værdi model funktioner og funktionalitet for afskrivning bog blevet flettet ind i et enkelt koncept, der er kendt som en bog.
+[!include[banner](../includes/banner.md)]
 
-Den nye modelfunktionalitet er baseret på tidligere værdimodelfunktionalitet, men indeholder også alle de funktioner, der tidligere blev angivet i afskrivningsmodeller. [![Bogen som en sammenfletning af værdi værdimodellen og afskrivningsmodellen bog funktionalitet](./media/fixed-assets.png)](./media/fixed-assets.png) på grund af fletningen, kan du nu bruge et enkelt sæt af sider, forespørgsler og rapporter for alle anlægsaktiver processer. Tabellerne i dette emne beskriver de tidligere funktioner for afskrivningsmodeller og værdimodeller sammen med den nye funktionalitet til modeller.
+
+I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations frigivelse 1611 opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog.
+
+Den nye modelfunktionalitet er baseret på tidligere værdimodelfunktionalitet, men indeholder også alle de funktioner, der tidligere blev angivet i afskrivningsmodeller. [![Model som sammenfletning af værdimodellens og afskrivningsmodellens funktionalitet](./media/fixed-assets.png)](./media/fixed-assets.png) På grund af denne fletning kan du nu bruge et enkelt sæt af sider, forespørgsler og rapporter for alle anlægsaktivprocesser. Tabellerne i dette emne beskriver de tidligere funktioner for afskrivningsmodeller og værdimodeller sammen med den nye funktionalitet til modeller.
 
 ## <a name="setup"></a>Konfiguration
 Som standard bogfører modellerne til både Finans og reskontro for anlægsaktiv. Modeller har en ny **Bogfør i finans**-indstilling, så du kan deaktivere bogføring til Finans og nøjes med at bogføre til reskontro for anlægsaktiv. Denne funktion minder om den tidligere funktionsmåde for bogføring i afskrivningsmodeller. Opsætningen af kladdenavne har et nyt posteringslag, der hedder Ingen. Dette posteringslag blev tilføjet specifikt for anlægsaktivposteringer. Hvis du vil bogføre posteringer for modeller, der ikke bogføres til Finans, skal du bruge et kladdenavn, hvis posteringslag er angivet til **Ingen**.
@@ -66,5 +69,7 @@ Forespørgsler og rapporter understøtter alle modeller. Rapporter, der ikke fin
 
 ## <a name="upgrade"></a>Opgrader
 Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende transaktioner til den nye modelstruktur. Værdimodeller forbliver, som de er i øjeblikket, som en model, der bogføres i finans. Afskrivningsmodeller flyttes dog til en model, der har **Bogfør i finans**-indstillingen angivet til **Ingen**. Navne på afskrivningskladder flyttes til et finanskladdenavn med posteringslag angivet til **Ingen**.
+
+
 
 

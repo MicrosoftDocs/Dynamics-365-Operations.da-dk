@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="work-breakdown-structures"></a>Arbejdsopgavehierarkier
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Arbejdsopgavehierarki Et arbejdsopgavehierarki (WBS) er en beskrivelse af det arbejde, der udføres for et projekt. Det er et hierarki af opgaver, der repræsenterer projektgruppens kendskab til sammensætning af arbejde og til størrelse, omkostninger og varighed af den enkelte komponent eller opgave. En WBS har tre overordnede formål:
@@ -39,17 +42,17 @@ Detaljeringsgraden i et WBS afhænger af niveauet af nøjagtighed, der kræves i
 
 Projekter inden for brancher som medier og reklame, software og it-infrastruktur har derimod tendens til at være enkeltstående, og produktivitet er i forhold til erfaring og kompetence hos den person, der udfører opgaven. Derfor bruger disse brancher en WBS til at få en tilnærmelse af størrelsen af et projekt, ikke for at spore status for projektet i detaljer. 
 
-Oprettelse af en Arbejdsopdelingsstruktur er en intensiv proces, der normalt sker over en lang periode, og som kræver samarbejde og oplysninger fra en lang række personer. Dette emne beskriver, hvordan du kan bruge WBS-forbedringer i Microsoft Dynamics 365 for operationer til at opfylde dine krav til estimater og sporing.
+Oprettelse af en Arbejdsopdelingsstruktur er en intensiv proces, der normalt sker over en lang periode, og som kræver samarbejde og oplysninger fra en lang række personer. Dette emne beskriver, hvordan du kan bruge WBS-forbedringer i Microsoft Dynamics 365 for Operations til at opfylde dine krav til estimater og sporing.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Forudsætninger for oprettelse af en Arbejdsopdelingsstruktur
 Hvis du vil oprette en WBS, skal du kunne oprette en arbejdsplan og anslå omkostningerne ved arbejde.
 
 ### <a name="prerequisites-for-creating-a-work-schedule"></a>Forudsætninger for oprettelse af en arbejdsplan
 
-For at bruge de fulde planlægningsmuligheder WBS-funktioner, skal du udføre følgende opsætning:
+Hvis du vil bruge de fulde planlægningsfunktionerne i WBS-funktionerne, skal du udføre følgende opsætning:
 
 1.  Oprette en standardkalender og en projektkalender:
-    1.  Klik på **projektstyring og regnskab**&gt;**Setup**&gt;**planlægning**. Angiv en standardkalender i feltet **Standardarbejdskalender**. Det vil være standardarbejdskalenderen for et nyt projekt, der oprettes.
+    1.  Klik på **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Planlægning**. Angiv en standardkalender i feltet **Standardarbejdskalender**. Det vil være standardarbejdskalenderen for et nyt projekt, der oprettes.
     2.  Du kan ændre standardkalenderen for et bestemt projekt. Klik på projektets side med oplysninger, og opdater derefter feltet **Planlægningskalender** i oversigtspanelet **Projektteam og planlægning** ved at vælge en anden kalender.
 
 2.  Konfigurer standardarbejdsdage og arbejdstimer. Den kalender, du angiver som arbejdskalenderen for projektet, vil blive brugt i WBS til at bestemme følgende oplysninger:
@@ -57,13 +60,13 @@ For at bruge de fulde planlægningsmuligheder WBS-funktioner, skal du udføre f�
 -   Arbejdsdage og fridage
 -   Antallet af arbejdstimer i løbet af dagen
 
-Angive de arbejdsdage og arbejdstimer for en kalender eller oprette en ny kalender, skal du klikke på **virksomhedsadministration**&gt;**almindelige**&gt;**kalendere**.
+Når du vil angive arbejdsdage og arbejdstimer for en kalender eller oprette en ny kalender, skal du klikke på **Virksomhedsadministration** &gt; **Fælles** &gt; **Kalendere**.
 
 ### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Forudsætningerne for forkalkulationen af omkostninger ved arbejde
 
 Hvis du vil bruge den fulde funktionalitet til forkalkulation af WBS, skal du konfigurere omkostnings- og salgspriser for arbejdere, kategorier af arbejdskraft, udgifter og gebyrer og varer.
 
--   Hvis du vil konfigurere kost- og salgsprisen for arbejdskraft, udgifter og gebyrkategorier, skal du klikke på **projektstyring og regnskab**&gt;**Setup**&gt;**priser**.
+-   Hvis du vil konfigurere kost- og salgsprisen for arbejdskraft, udgifter og gebyrkategorier, skal du klikke på **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Priser**.
 -   Når du vil konfigurere kost-og salgsprisen for varer, skal du bruge siden **Samhandelsaftaler **for hvert element på listesiden **Frigivne produkter** i Administration af produktoplysninger.
 
 ## <a name="creating-a-wbs"></a>Oprettelse af en WBS
@@ -73,11 +76,11 @@ Oprettelse af en Arbejdsopdelingsstruktur (WBS) omfatter tre aktiviteter:
 2.  **Arbejdsplan** – Anslå den tid, det tager at fuldføre en opgave, angiv afhængigheder for opgaven, og vælg start- og slutdatoer for opgaver.
 3.  **Forkalkulation** – Anslå omkostningerne for hver opgave.
 
-De følgende afsnit beskrives, hvordan funktionerne til WBS-kan hjælpe med hver af disse aktiviteter.
+Følgende afsnit beskriver, hvordan WBS-funktionerne kan hjælpe med hver af disse aktiviteter.
 
 ### <a name="work-decomposition"></a>Arbejdsopdeling
 
-Oprettelse af en opdeling eller en nedbrydning af arbejdet er normalt det første trin i oprettelse af en Arbejdsopdelingsstruktur. WBS-funktionerne understøtter de følgende grundlæggende konstruktioner til opdeling af arbejde eller nedbrydning. 
+Oprettelse af en opdeling eller en nedbrydning af arbejdet er normalt det første trin i oprettelse af en Arbejdsopdelingsstruktur. WBS-funktionaliteten understøtter følgende grundlæggende konstruktioner til opdeling af arbejde eller nedbrydning. 
 
 **Projektets rodopgave** Projektets rodopgave er hovedopgaven for et projekt på øverste niveau. Alle andre projektopgaver oprettes under den. Navnet på rodopgaven angives altid som projektets navn. Indsats, datoer og varighed af rodnoden opsummerer værdierne for opgaverne under rodopgaven. Du kan ikke ændre egenskaberne for rodnoden eller slette den.
 
@@ -94,7 +97,7 @@ I øjeblikket kan du ikke tilpasse WBS-nummereringen.
 **Indryk opgave** Når du indrykker en opgave, bliver den underordnet den opgave, der kommer før den. WBS-nummeret på den nye underordnede opgave beregnes automatisk baseret på WBS-nummeret på den nye overordnede opgave. Den overordnede opgave er nu en hovedopgave eller en containeropgave og derfor bliver en akkumulering af de enkelte opgaver. 
 
 > [!NOTE] 
-> Når du indrykker opgaver i henhold til en opgave, der var en node uden underordnede værdier før operationen led, mister den nyoprettede hovedopgave eget datoer, kræfter og antallet af ressourcer. Der bruges nu en oversigt over værdierne af sin nye konstituerede opgaver. 
+> Når du indrykker opgaver under en opgave, der var en bladnode før indrykningen, mister den nyligt oprettede hovedopgave sine egne dater, indsats og antal ressourcer. Der bruges nu en oversigt over værdierne af sin nye konstituerede opgaver. 
 
 **Ryk opgave ud** Når du rykker en opgave ud, er den ikke længere en konstitueret opgave til sin overordnede opgave. WBS-nummeret på denne opgave genberegnes automatisk for at afspejle opgavens nye niveau i hierarkiet. Indsats, omkostning og datoerne for opgavens tidligere overordnede opgave genberegnes for at udelukke denne opgave. 
 
@@ -102,10 +105,10 @@ I øjeblikket kan du ikke tilpasse WBS-nummereringen.
 
 ### <a name="schedule-estimation"></a>Vurdering af tidsplan
 
-Planlægningsskøn er normalt det andet trin i oprettelse af en Arbejdsopdelingsstruktur. Du skal fuldføre planlægningsskøn som en bedste fremgangsmåde, efter du har oprettet opgaverne. Den **arbejdsopdelingsstruktur** side i Microsoft Dynamics 365 for Operation består af to sektioner. Den øverste rude er beregnet til vurdering af tidsplanen, og den nederste rude indeholder fanen **Forkalkulerede omkostninger og omsætning**, som du kan bruge til forkalkulation. 
+Planlægningsskøn er normalt det andet trin i oprettelse af en Arbejdsopdelingsstruktur. Du skal fuldføre planlægningsskøn som en bedste fremgangsmåde, efter du har oprettet opgaverne. Siden **Arbejdsopgavehierarki** i Microsoft Dynamics 365 for Operations består af to sektioner. Den øverste rude er beregnet til vurdering af tidsplanen, og den nederste rude indeholder fanen **Forkalkulerede omkostninger og omsætning**, som du kan bruge til forkalkulation. 
 **Opgaveafhængigheder** I et WBS kan du oprette foregående relationer mellem opgaver. Når du tildeler en opgave foregående opgaver, kan denne opgave først starte, når alle dens foregående opgaver er afsluttet. Den planlagte startdato for opgaven angives automatisk til den seneste dato for alle dens forgængere. 
 
-**Opgave planlægning i Microsoft Dynamics 365 for operationer** følgende faktorer fastslår, at planlægningen af leaf node opgaver:
+**Opgaveplanlægning i Microsoft Dynamics 365 for Operations** Følgende faktorer bestemmer planlægningen af bladnodeopgaver:
 
 -   Forgængere
 -   Tidsforbrug
@@ -114,24 +117,24 @@ Planlægningsskøn er normalt det andet trin i oprettelse af en Arbejdsopdelings
 
 Startdatoen for en bladnodeopgave, der ikke har foregående opgaver, angives automatisk til startdatoen for projektplanlægningen. Varigheden af en bladnodeopgave beregnes altid som antallet af arbejdsdage mellem dens start- og slutdatoer. 
 
-Planlægning regler *** når automatisk planlægning bistand er aktiveret, gælder følgende regler til opgaveplanlægningen for leaf node opgaver:
+****Planlægningsregler**** Når hjælp til automatisk planlægning er aktiveret, gælder følgende regler for opgaveplanlægningen for bladnodeopgaver:
 
 -   Start- og slutdatoer for en opgave skal være arbejdsdage ifølge projektets planlægningskalender.
 -   Startdatoen for en opgave, der har foregående opgaver, angives automatisk til den seneste slutdato for alle dens forgængere.
 -   Indsats for en opgave beregnes automatisk på følgende måde:
 
-Antal personer × varighed × antal timer i en standard arbejdsdag i projektkalenderen. 
+Antal personer × varighed × antal timer på en almindelig arbejdsdag i projektkalenderen. 
 
-I nogle tilfælde kan du eventuelt afvige fra disse regler. Du kan deaktivere automatisk planlægning for at forhindre Microsoft Dynamics 365 for operationer automatisk opsætning eller rette eventuelle egenskaber af leaf node opgaver. Når du angiver oplysninger om en opgave, der medfører en overtrædelse af eventuelle planlægningsregler, vises et ikon for planlægningsfejl for opgaven. Hvis du ikke vil have vist planlægningsfejl, skal du klikke på **Planlægningsfejl er vist** for at slå funktionen fra. 
+I nogle tilfælde kan du eventuelt afvige fra disse regler. Du kan deaktivere automatisk planlægning for at forhindre Microsoft Dynamics 365 for Operations i automatisk at konfigurere eller rette eventuelle egenskaber for bladnodeopgaver. Når du angiver oplysninger om en opgave, der medfører en overtrædelse af eventuelle planlægningsregler, vises et ikon for planlægningsfejl for opgaven. Hvis du ikke vil have vist planlægningsfejl, skal du klikke på **Planlægningsfejl er vist** for at slå funktionen fra. 
 
 > [!NOTE] 
-> Værdierne for en oversigt eller beholder opgave fortsat beregnes som summen af værdierne af interoperabilitetskomponenten opgaver, uanset om automatiske planlægning bistand er aktiveret eller deaktiveret. 
+> Værdierne for en hoved- eller containeropgave beregnes fortsat som summen af værdierne af de konstituerede opgaver, uanset om hjælp til automatisk planlægning er aktiveret eller deaktiveret. 
 
 **Afhjælpning af planlægningsfejl** Når hjælp til automatisk planlægning er aktiveret, opstår der sandsynligvis ikke planlægningsfejl. Hvis du imidlertid deaktiverer hjælp til automatisk planlægning og derefter aktiverer den igen senere, vises der muligvis ikoner for planlægningsfejl i WBS. 
 
 **Afhjælpning af planlægningsfejl efter opgave** Når du dobbeltklikker på ikonet for planlægningsfejl for en bestemt opgave, viser en dialogboks alle planlægningsfejl for den pågældende opgave. Du kan bestemme, hvilke planlægningsfejl der skal løses for opgaven. 
 
-**Løse alle planlægningsfejl** Hvis du vil have Microsoft Dynamics 365 for handlinger til at rette alle fejl, planlægning i WBS, i handlingsruden, skal du klikke på **rette alle uoverensstemmelser i planlægning**. 
+**Afhjælpning af alle planlægningsfejl** Hvis du vil have Microsoft Dynamics 365 for Operations til at rette alle planlægningsfejl i WBS i handlingsruden, skal du klikke på **Ret alle planlægningsafvigelser**. 
 
 > [!NOTE] 
 > Denne funktion kan medføre betydelige ændringer i WBS. Fejl rettes i følgende rækkefølge:
@@ -145,7 +148,7 @@ I nogle tilfælde kan du eventuelt afvige fra disse regler. Du kan deaktivere au
 Som nævnt tidligere i dette dokument kan du angive forkalkulation for hver bladnodeopgave ved hjælp af fanen **Forkalkulerede omkostninger og omsætning** i den nederste rude på siden **Arbejdsopgavehierarki**. 
 
 > [!NOTE] 
-> Du kan ikke ændre forkalkulation for en oversigt eller beholder opgave. Forkalkulation for en hovedopgave er lig med summen af forkalkulationen af dens bladnodeopgaver. Den forkalkulerede samlede omkostning for hver opgave beregnes som summen af de forkalkulerede omkostningsbeløb for følgende posteringstyper:
+> Du kan ikke ændre forkalkulation for en hoved- eller containeropgave. Forkalkulation for en hovedopgave er lig med summen af forkalkulationen af dens bladnodeopgaver. Den forkalkulerede samlede omkostning for hver opgave beregnes som summen af de forkalkulerede omkostningsbeløb for følgende posteringstyper:
 
 -   Arbejdsløn
 -   Vare eller materiale
@@ -161,12 +164,12 @@ Når du forkalkulere omkostninger til arbejdsløn, materialer og omkostninger fo
 
 **Forkalkulation af udgifter og materialeomkostninger** Under fanen **Forkalkulerede omkostninger og omsætning** kan du også beregne udgifts- og materialeomkostninger for en opgave, hvis du har brug for estimater. 
 
-Kost- og salgsprisen for hver arbejdskraft eller udgift anslå linje er baseret på den opsætning, der er defineret for hver kategori i tabellerne pris på **projektstyring og regnskab**&gt;**Setup**&gt;**priser**. For varer tilføjes kost- og salgspriser som standard fra varen eller handelsaftalen på listen **Frigivne produkter** i Administration af produktoplysninger.
+Kost- og salgsprisen for hver estimatlinje for arbejdskraft eller udgift er baseret på den opsætning, der er defineret for hver kategori i pristabellerne i **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Priser**. For varer tilføjes kost- og salgspriser som standard fra varen eller handelsaftalen på listen **Frigivne produkter** i Administration af produktoplysninger.
 
 ## <a name="tracking-progress-on-the-wbs"></a>Registrering af status for WBS
 Nogle brancher sporer fremdriften for et projekt mod en Arbejdsopdelingsstruktur på et meget detaljeret niveau, mens andre følger op på fremdriften på et højere niveau i WBS. I dette afsnit beskrives, hvordan du kan bruge WBS-sporing til dine projektkrav. 
 
-Microsoft Dynamics 365 for operationer har tre visninger for WBS i et projekt: de planlægnings visning, indsats sporing og omkostningssporing visning.
+Microsoft Dynamics 365 for Operations har tre visninger for WBS i et projekt: visningen Planlægning, visningen Sporing af tidsforbrug og visningen Sporing af omkostninger.
 
 ### <a name="planning-view"></a>Visningen Planlægning
 
@@ -177,7 +180,7 @@ Visningen Planlægning viser planlagte eller oprindelige overslag over oplysning
 Visningen Sporing af tidsforbrug viser sporing af fremdriften for opgaver i WBS. Sammenligner de akkumulerede faktiske timer for en opgave med de planlagte indsatstimer. Følgende formler indeholder værdierne til visningen Sporing af tidsforbrug:
 
 -   Status i procent = faktisk indsats til dato ÷ planlagt indsats for denne opgave
--   Resterende indsats (også kendt som estimat-til-fuldføre \[ETC\]) = planlagt indsats – faktisk indsats til dato
+-   Resterende indsats (også kendt som forventet tid til fuldførelse \[[ETC\]) = planlagt indsats – faktisk indsats til dato
 -   Vurder ved fuldførelse (EAC) = resterende indsats + faktisk arbejde til dato
 -   Forventet indsatsvarians = planlagt indsats – EAC
 
@@ -188,7 +191,7 @@ Visningen Sporing af tidforbrug viser en projektion af indsatsvariansen for opga
 
 **Projektleders genprojektion af indsats** Projektlederen eller en anden person, der overvåger fremdriften af et projekt, må ind imellem revidere de oprindelige overslag for en opgave. Opgaven kan af forskellige årsager flytte, hurtigere eller langsommere end oprindeligt forventet. Området kan f.eks. være blevet reduceret, eller arbejdere har mindre erfaring end oprindeligt planlagt. Projektioner er en projektleders opfattelse af skøn, baseret på den aktuelle status for et projekt. Generelt bør du ikke ændre tallene på grundlinjen, da et projekts grundline repræsenterer et publiceret dokument for projektets tidsplan og forkalkulation, som alle interessenter i projektet har aftalt. 
 
-Der er to måder at projektledere kan ændre indsats på opgaver:
+Der er to måder, at projektledere kan ændre indsats på opgaver:
 
 -   Ret den resterende indsats, der angives automatisk til at opdatere den faktiske resterende indsats i opgaven.
 -   Ret den fremdriftsprocent, der automatisk er angivet til at opdatere den reelle fremdrift i opgaven.
@@ -222,7 +225,7 @@ Visningen Sporing af omkostninger viser en projektion af omkostningsvariansen fo
 **Projektleders genprojektion af omkostninger** Projektledere skal bruge CTC til at revidere den oprindelige forkalkulation for en opgave. Projektlederen kan ændre CTC-værdien til de omkostninger, der kræves for at fuldføre opgaven. Hvis du ændrer CTC-værdien, genberegnes opgavens CTC, EAC og procentdel af omkostninger, der er forbrugt, samt den forventede omkostningsafvigelse for en opgave. EAC, ETC og procentdel af forbrugte omkostninger for hovedopgaver genberegnes også, og deres forventede omkostningsafvigelse opdateres. 
 
 > [!NOTE] 
-> Når du reviderer indsats for en WBS-opgave i indsats sporing Vis opgavens CTC, EAC, forbruges i procentdel af omkostning, og forventede omkostningsafvigelse genberegnes alle i omkostningssporing visning. Dog påvirker omkostningsomkostninger ikke værdierne i visningen Sporing af tidsforbrug, fordi omkostning efter transaktionstype (arbejde, materiale eller udgift) eller projektkategori ikke revideres. 
+> Når du reviderer indsats for en WBS-opgave i visningen Sporing af tidsforbrug, genberegnes opgavens CTC, EAC, procentdel af omkostning, der er forbrugt, og forventede omkostningsafvigelse alle i visningen Omkostningssporing. Dog påvirker omkostningsomkostninger ikke værdierne i visningen Sporing af tidsforbrug, fordi omkostning efter transaktionstype (arbejde, materiale eller udgift) eller projektkategori ikke revideres. 
 
 **Projektionsrevision for omkostninger i hovedopgaver** Du kan revidere omkostninger for hovedopgaver, hvorefter beregningerne udføres automatisk i følgende rækkefølge:
 
@@ -242,18 +245,18 @@ Tidsfasen i diagrammet over optjent værdi vises pr. uge eller pr. måned. I det
 
 **Planlagt værdi** EVM-teorien siger, at grafikken over planlagt værdi repræsenterer den hastighed, hvormed projektgruppe har planlagt at optjene værdi af projektet. 
 
-Microsoft Dynamics 365 for operationer bruger den 0:100 med reglen, når den afbilder planlagt værdi. Ifølge denne regel bogføres værdien af opgaven til opgaven pr. slutdatoen. Ingen værdi bogføres, før opgaven er 100 procent fuldført. 
+Microsoft Dynamics 365 for Operations bruger 0:100-indtægtsreglen, når der laves grafik over planlagt værdi. Ifølge denne regel bogføres værdien af opgaven til opgaven pr. slutdatoen. Ingen værdi bogføres, før opgaven er 100 procent fuldført. 
 
 I Projektstyring og regnskab kan du angive slutdatoen for bladnoder og de planlagte omkostninger for dem. Når grafen for planlagt værdi vises efter uge, opsummeres planlagt værdi pr. uge for alle bladenodeopgaver i projektets varighed. 
 
 **Optjent værdi** EVM-teorien siger, at grafikken over optjent værdi repræsenterer den hastighed, hvormed projektgruppen reelt optjener værdi i projektet. 
 
-Microsoft Dynamics 365 for operationer bruger den 0:100 med reglen, når dets områder for oparbejdet værdi. Ifølge denne regel bogføres værdien af opgaven til opgaven pr. slutdatoen. Ingen værdi bogføres, før opgaven er 100 procent fuldført. 
+Microsoft Dynamics 365 for Operations bruger 0:100-indtægtsreglen, når der laves grafik over optjent værdi. Ifølge denne regel bogføres værdien af opgaven til opgaven pr. slutdatoen. Ingen værdi bogføres, før opgaven er 100 procent fuldført. 
 
 Ved beregning af optjent værdi tages der højde for fremdriftsprocentdelen for hver opgave. Ifølge 0:100-indtægtsreglen tages der kun højde for opgaver, der er fuldført inden for en given periode, ved beregning af optjent værdi pr. afslutningen af den pågældende periode. Oparbejdet værdi for projektet beregnes for alle opgaver, der er fuldført, når diagrammet er oprettet. 
 
 > [!NOTE] 
-> System til sporing af WBS har i øjeblikket ikke datastrukturer til at gemme historiske udvikling procenter på hver opgave. Derfor kan der kun rapporteres optjent værdi pr. det tidspunkt, hvor kuben behandles. Kuben bør behandles regelmæssigt for at opdatere data for den optjente værdi, der er vist i det rollebaserede område. 
+> Systemet til sporing af WBS har i øjeblikket ikke datastrukturer til at gemme historiske fremdriftsprocenter for hver opgave. Derfor kan der kun rapporteres optjent værdi pr. det tidspunkt, hvor kuben behandles. Kuben bør behandles regelmæssigt for at opdatere data for den optjente værdi, der er vist i det rollebaserede område. 
 
 **Faktiske omkostninger** EVM-teorien angiver, at grafikken over de faktiske omkostninger repræsenterer den hastighed, hvormed der bruges penge på projektet. 
 
@@ -313,5 +316,7 @@ Indsats = antal ressourcer × varighed × antal timer på en almindelig arbejdsd
 Du kan rette alle fejl i planlægningen på samme tid ved at klikke på **Ret alle tidsplanfejl**. 
 
 Du kan også rette planlægningsfejl enkeltvis ved at klikke på advarselsikonet for hver opgave.
+
+
 
 

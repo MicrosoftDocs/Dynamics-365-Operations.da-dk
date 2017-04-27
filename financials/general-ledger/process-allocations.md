@@ -1,6 +1,6 @@
 ---
 title: Foretag fordelinger
-description: "Denne artikel indeholder oplysninger om allokering, indstillinger for behandling af dem i Microsoft Dynamics 365 for operationer, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet."
+description: "Denne artikel indeholder oplysninger om allokeringer, indstillinger for behandling af dem i Microsoft Dynamics 365 for Operations, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Foretag fordelinger
 
-Denne artikel indeholder oplysninger om allokering, indstillinger for behandling af dem i Microsoft Dynamics 365 for operationer, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
+Denne artikel indeholder oplysninger om allokeringer, indstillinger for behandling af dem i Microsoft Dynamics 365 for Operations, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet.
 
-Microsoft Dynamics 365 for operationer tilbyder følgende funktioner til at understøtte denne proces:
+Microsoft Dynamics 365 for Operations indeholder følgende funktioner, der understøtter denne proces:
 
--   Manuelt tildele transaktionsbeløb, ved hjælp af handlingen opdelt i regnskabsfordelinger eller ved at anvende standardskabeloner for økonomiske dimensioner for et dokument. Yderligere oplysninger finder du [regnskabsfordelinger.](\accounts-payable\accounting-distributions.md)
+-   Tildel transaktionsbeløb manuelt, ved hjælp af handlingen Opdel i regnskabsfordelinger eller ved at anvende standardskabeloner til økonomiske dimensioner for et dokument. Yderligere oplysninger finder du i afsnittet [Regnskabsfordelinger.](\accounts-payable\accounting-distributions.md)
 -   Fordel automatisk posteringsbeløb baseret på fordelingsbetingelserne, der er defineret for enkelte hovedkonto. Poster på fordelingskonti vil blive genereret for hver kladde, der er baseret på finanskontoen procentdel og destination, hver gang en regnskabspost opfylder de kriterier, der er defineret som kilde for finanskontoen.
 -   Tildel automatisk finanssaldi eller faste beløb, der er baseret på fordelingsregler for Finans. Fordelingsreglerne for finans behandles med jævne mellemrum ved hjælp af fordelingskladder. 
 

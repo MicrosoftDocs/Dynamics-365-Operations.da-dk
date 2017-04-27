@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-financial-hierarchies-in-the-public-sector"></a>Afledte finansielle hierarkier i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor. 
 
 For at opfylde CGAC-krav (Government-wide Accounting Classification) skal organisationer i den offentlige sektor bruge afledte finansielle hierarkier for at indsamle og analysere bogførte posteringsdata for specifikke hovedkontonumre, fulde kontonumre og økonomiske dimensionsværdier. 
@@ -40,11 +43,13 @@ Afledte finansielle hierarkier giver dig en mere fleksibel tilgang i forhold til
 ## <a name="example"></a>Eksempel
 En organisation har et medarbejdersundhedsprogram og et medarbejderuddannelsesprogram. Disse programmer er ikke knyttet til økonomiske dimensioner. Hvis du vil indsamle kontonumre, der er brugt i de bogførte posteringer til disse programmer, kan du gøre følgende:
 
--   **Oprette kategorihierarkier og de afledte finansielle hierarkier:** oprette et kategorihierarki, der hedder "Medarbejder programmer" med en overordnet node, der hedder "Programmer" og to underordnede noder, der hedder "Medarbejder sundhed" og "Medarbejder uddannelse." Tildel den **afledte finansielle hierarki** kategoritype til kategorihierarkiet "Medarbejder programmer". Knyt det afledte finansielle hierarki for "Medarbejderprogrammer" til den juridiske enhed.
+-   **Oprette kategorihierarkier og de afledte finansielle hierarkier:** Opret et kategorihierarki, der hedder "Medarbejderprogrammer", med en overordnet node, der hedder "Programmer", og to underordnede noder, der hedder "Medarbejdersundhed" og "Medarbejderuddannelse". Tildel kategoritypen **Afledt økonomisk hierarki** til kategorihierarkiet "Medarbejderprogrammer". Knyt det afledte finansielle hierarki for "Medarbejderprogrammer" til den juridiske enhed.
 -   **Konfigurere filterregler** Brug siden **Afledte økonomiske hierarkier** til at oprette filterregler for hovedkonti og økonomiske dimensionsværdier, der er knyttet til noderne "Medarbejdersundhed" og "Medarbejderuddannelse" i det afledte finansielle hierarki for "Medarbejderprogrammer". **Tip!** Hvis du vil angive mere end én dimensionsværdi i et filter, skal du bruge et komma uden mellemrum som skilletegn. Angiv for eksempel 100,110 eller Frynsegoder,Forsikring.
 -   **Analysere bogførte transaktionsdata:** I de filtrerede resultater skal du se på kontonumre og kontooplysninger og oplysninger om økonomisk dimension.
 
  
+
+
 
 
 

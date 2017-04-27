@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Lagerkladder
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner. 
 
 Lagerkladder i Microsoft Dynamics 365 for Operations bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
@@ -72,7 +75,7 @@ Produktionsindlagringskladder fungerer som varemodtagelseskladder, men bruges ti
 
 ### <a name="counting"></a>Optælling
 
-Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage justeringer, der er nødvendige for at afstemme forskelle. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Finde oplysninger om, hvordan du definerer optælling af grupper, i [Definer lageroptælling processer (opgave guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage justeringer, der er nødvendige for at afstemme forskelle. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Mærkatoptælling
 
@@ -89,5 +92,7 @@ Der er kun adgang til en kladde for en bruger ad gangen. Hvis flere brugere skal
 
 ## <a name="posting-journal-lines"></a>Bogføre kladdelinjer
 Du kan bogføre kladdelinjer, du opretter til enhver tid, indtil du har låst en vare fra flere transaktioner. De data, du indtaster i en kladde, forbliver i den pågældende kladde, selv hvis du lukker kladden uden at bogføre linjerne.
+
+
 
 

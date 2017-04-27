@@ -33,7 +33,7 @@ Når du opretter en indkøbsordre (IO), angives generelle oplysninger om hele or
 
 Du kan også oprette IO'er ved at kopiere linjer fra et andet PO-dokument eller en salgsordre. Gør du det, kan du ændre fortegnet på lageret, på samme måde som når du ændrer fortegnet på en faktura for at angive kredit.  
 
-Selvom du kan manuelt oprette IO'er, oprettes de mere typisk fra andre processer. Ordrer kan oprettes automatisk på grundlag af andre dokumenter, som rekvisitioner. De kan også oprettes som en del af planlægningsprocessen gennem planlagte POs masteren. Hvis du bruger købsaftaler, POs kan oprettes ved den **aftræksordre for** handling. Der er mere også avancerede metoder til automatisk oprettelse af en indkøbsordre. For eksempel kan ordrer oprettes, når du bruger direkte levering eller interne ordrekæder.
+Selvom du kan manuelt oprette IO'er, oprettes de mere typisk fra andre processer. Ordrer kan oprettes automatisk på grundlag af andre dokumenter, som rekvisitioner. De kan også oprettes som en del af varedisponeringsprocessen via planlagte IO'er. Hvis du bruger købsaftaler, kan IO'er oprettes under handlingen **Aftræksordre**. Der er mere også avancerede metoder til automatisk oprettelse af en indkøbsordre. For eksempel kan ordrer oprettes, når du bruger direkte levering eller interne ordrekæder.
 
 ## <a name="creating-a-purchase-order-header"></a>Oprettelse af et indkøbsordrehoved
 Når du opretter en ny indkøbsordre, åbnes en dialogboks, hvor du kan indtaste de mest almindelige oplysninger til hovedet på indkøbsordren. Når du klikker på **OK** for at lukke dialogboksen, oprettes ordren, og du kan derefter angive yderligere oplysninger i hovedet.  
@@ -84,7 +84,7 @@ Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversigt over indkøbsordrer](purchase-order-overview.md)
 
 [Godkendelse og bekræftelse af indkøbsordre](purchase-order-approval-confirmation.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "Kanban-job planlægning til lean produktion"
+title: Kanban-job til lean manufacturing
 description: "Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job."
 author: YuyuScheller
 manager: AnnBe
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-job planlægning til lean produktion
+# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-job til lean manufacturing
 
 Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job.  
 
 Siden **Tidsplanlæg af kanban-job** giver visuel kontrol over tidsplaner for lean manufacturing-arbejdsceller. Den giver et overblik over alle kanban-job og indeholder flere funktioner til filtrering. Fra denne side kan du flytte til andre sider, der er relateret til kanban-konfiguration og kørsel.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatisk tidsplanlægning af kanban-job
-Planlægning kan udløses automatisk, hvis du angiver den **automatisk planlægning af antal** parameter i kanban-reglen. Hvis du indstiller **automatisk planlægning af antal** til **1**, hver kanban-job er planlagt, straks, når den oprettes. Resultatet er en serie af first pull, first serve-operationer. Hvis du indstiller **Automatisk planlægningsantal** til en værdi, der er mere end 1, grupperes kanban-job, før de er planlagt. Dette koncept gør det muligt for kanban-størrelser at blive reduceret til under de faktiske økonomiske batchstørrelser. Eksempelvis er økonomiske batchstørrelsen for en bestemt vare (eller vare familie) 30. I stedet for at oprette kanbans, der bruger produktantal, 30, kan du konfigurere kanban-reglen, så der er et antal på 10 og en ** automatisk planlægning antal ** værdien af **3**. Selvom automatisk planlægning tidsplanlægger kanban-job for arbejdscellen, når der kun er ikke-planlagte job, er det helt gennemsigtigt for planlæggeren og den tilsynsførende, at to ikke-planlagte job måske afventer udførelse. Planlæggeren eller den tilsynsførende kan derefter tage disse to job i produktion ved manuelt at planlægge dem eller oprette yderligere kanbans.
+Planlægning kan udløses automatisk, hvis du indstiller parameteren **Automatisk planlægningsantal** i kanban-reglen. Hvis du indstiller **Automatisk planlægningsantal** til **1**, planlægges hvert kanban-job straks, når det oprettes. Resultatet er en serie af first pull, first serve-operationer. Hvis du indstiller **Automatisk planlægningsantal** til en værdi, der er mere end 1, grupperes kanban-job, før de er planlagt. Dette koncept gør det muligt for kanban-størrelser at blive reduceret til under de faktiske økonomiske batchstørrelser. F.eks. er den økonomiske batchstørrelse for en bestemt vare (eller varefamilie) 30. I stedet for at oprette kanbans, der bruger produktantallet 30, kan du konfigurere kanban-reglen, så der er et antal på 10 og en værdi for **Automatisk planlægningsantal** på **3**. Selvom automatisk planlægning tidsplanlægger kanban-job for arbejdscellen, når der kun er ikke-planlagte job, er det helt gennemsigtigt for planlæggeren og den tilsynsførende, at to ikke-planlagte job måske afventer udførelse. Planlæggeren eller den tilsynsførende kan derefter tage disse to job i produktion ved manuelt at planlægge dem eller oprette yderligere kanbans.
 
 ## <a name="manual-scheduling"></a>Manuel tidsplanlægning
 For manuel tidsplanlægning introducererede Microsoft Dynamics AX 2012 kanban-planlægningsområdet. Manuel tidsplanlægning kan kombineres med automatisk tidsplanlægning. Med kanban-planlægningsområdet kan du planlægge og fjerne planlægningen af job, flytte dem i rækkefølge eller flytte dem fra periode til periode. Job, der er baseret på en kanban-regel, hvor værdien **Automatisk planlægning** er højere end **0**, kan planlægningen være manuelt fjernet. Disse job kan dog planlægges igen, når den næste automatiske planlægningshændelse indtræffer (når der oprettes en ny kanban). Følgende indstillinger er tilgængelige for manuel tidsplanlægning:
@@ -44,7 +44,7 @@ For manuel tidsplanlægning introducererede Microsoft Dynamics AX 2012 kanban-pl
 -   **Fremad** flytter de valgte planlagte job fremad i rækkefølgen inden for perioden.
 -   **Forrige periode** flytter de valgte planlagte job til starten eller slutningen af den foregående periode.
 -   **Næste periode** flytter de valgte planlagte job til starten eller slutningen af den næste periode.
--   **Planlægger**&gt;**tilbageføre Jobbets status** kan du unschedule et planlagt job.
+-   **Planlæg** &gt; **Gendan jobstatus** giver dig mulighed for at fjerne planlægningen for et planlagt job.
 
 ## <a name="lean-scheduling-groups"></a>Lean planlægningsgrupper
 Hver farve repræsenterer en lean planlægningsgruppe. Lean planlægningsgrupper kan defineres frit, som generiske grupper eller grupper, der tilhører en enkelt arbejdscelle. Varer og dimensioner kan frit tildeles til planlægningsgrupper: For eksempel kan en planlægningsgruppe i malecellen repræsentere en farve for produktet. I arbejde, der drives af specifikke værktøjskrav, kan varerne være grupperede efter krav til værktøj og en arbejdscelle for emballage kan gruppere varer ud fra emballageskabelonen. Brugen af farver til lean planlægningsgrupper er valgfri, men anbefales. Det forbedrer indsigt i status for planen. For eksempel er det meget nemt at se, hvilke farver der produceres på hvilken dag, og du kan se en oversigt over, hvordan dette arbejde kan optimeres.

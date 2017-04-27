@@ -1,6 +1,6 @@
 ---
-title: "Fastlæggelse af styklisteversionen"
-description: "Hvis en vare har en standardordretypen for produktion, finder planlægningssystemet under en efterspørgselsudfoldning en gyldig styklisteversion ud fra lokationen."
+title: Bestemme styklisteversionen
+description: "Hvis en vare har standardordre af typen Produktion, finder planlægningssystemet en gyldig styklisteversion ud fra lokationen under en efterspørgselsudfoldning."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Fastlæggelse af styklisteversionen
+# <a name="determine-the-bom-version"></a>Bestemme styklisteversionen
 
-Hvis en vare har en standardordretypen for produktion, finder planlægningssystemet under en efterspørgselsudfoldning en gyldig styklisteversion ud fra lokationen. 
+[!include[banner](../includes/banner.md)]
+
+
+Hvis en vare har standardordre af typen Produktion, finder planlægningssystemet en gyldig styklisteversion ud fra lokationen under en efterspørgselsudfoldning. 
 
 Lokationsdimensionen kendes altid og er anført i efterspørgselsposteringen. Følgende proces bruges til fastlæggelse af den styklisteversion, der skal anvendes:
 
@@ -38,6 +41,8 @@ Lokationsdimensionen kendes altid og er anført i efterspørgselsposteringen. F�
 -   Hvis der ikke findes en generel stykliste, som kan bruges, standser efterspørgselsudfoldningen her.
 
 En gyldig styklisteversion skal opfylde de krævede kriterier for dato og antal, uanset om den er lokationsspecifik eller generel.
+
+
 
 
 

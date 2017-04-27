@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Konsoliderede batchordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives begrebet konsoliderede batchordrer.
 
 En bulkvare, der fremstilles, betragtes som en overordnet vare, hvorimod en pakket vare er en underordnet vare. Forholdet mellem bulkvaren og den pakkede vares udtrykkes i en konvertering af bulkvare. Denne konvertering af bulkvare er defineret i selve bulkvaren.  
@@ -41,6 +44,8 @@ En konsolideret batchordre kan indeholde enhver kombination af følgende ordrer:
 -   Flere bulkordrer og flere pakkede ordrer
 -   Flere bulkordrer og en enkelt pakket ordre
 -   Kun pakkede ordrer
+
+
 
 
 

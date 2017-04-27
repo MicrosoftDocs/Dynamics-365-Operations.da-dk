@@ -1,6 +1,6 @@
 ---
 title: Startside for kreditor
-description: Dette emne indeholder en oversigt over kreditorer.
+description: Dette emne giver en oversigt over kreditor.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
-Dette emne indeholder en oversigt over kreditorer.
+[!include[banner](../includes/banner.md)]
 
-Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed. Når fakturaer angives eller modtages, kan du gennemse og godkende fakturaerne ved hjælp af en fakturagodkendelseskladde eller **kreditorfaktura** side. Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsprocesser til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.
+
+Dette emne giver en oversigt over kreditor. 
+
+Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed. Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden **Kreditorfaktura**. Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsprocesser til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.
+
+
 
 

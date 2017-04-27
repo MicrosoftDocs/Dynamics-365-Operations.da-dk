@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Fakturasammenholdelse for Kreditor
 
+[!include[banner](../includes/banner.md)]
+
+
 Fakturasammenholdelse for kreditorer er den proces, hvor kreditorfakturaen, indkøbsordren og produktkvitteringen sammenholdes.
 
 Når du sammenholder dokumenter, kaldes forskelle mellem disse dokumenter sammenholdelsesafvigelser. Matchningsafvigelser sammenlignes med de angivne tolerancer. Hvis en matchningafvigelse overskrider toleranceprocenten eller -beløbet, vises ikoner for matchafvigelse på siden Kreditorfaktura og på siden Detaljer om fakturasammenholdelse. 
@@ -48,9 +51,9 @@ Du kan bruge følgende typer fakturasammenholdelse for kreditorer:
 
 Ved tovejs- og trevejs-sammenholdelse sammenlignes prisoplysninger altid med enhedsprisen. Du kan også konfigurere disse sammenholdelsespolitikker, så du kan sammenligne prisoplysninger med den samlede pris.
 -   Sammenholdelse af nettoenhedspris – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettoenhedsprisen for hver linje på fakturaen med den tilsvarende nettoenhedspris på indkøbsordren. Nettoenhedsprisen bestemmes af følgende formel: Nettobeløbet for linjen/antallet på linjen
--   Sammenholdelse af samlede priser – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: (enhedspris \*linjeantal) + linjetillæg - linjerabatter
+-   Sammenholdelse af samlede priser – sammenlign prisoplysninger for tovejs- eller trevejs sammenholdelse ved at sammenligne nettobeløbet (den samlede pris) for hver linje på fakturaen med det tilsvarende nettobeløb på indkøbsordren. Nettobeløbet bestemmes af følgende formel: (Enhedspris \* linjeantal) + linjetillæg - linjerabatter
 
-Beregninger af fakturasammenholdelse udføres som regel automatisk, når du redigerer kreditorfakturaer på siden Kreditorfaktura. Alternativt kan fakturasammenholdelse udføres efter behov. Fakturasammenholdelse on-demand styres for den juridiske enhed af den automatisk opdatere fakturaen hovedstatus til kontienes Kreditorparametre side under fanen faktura validering. Fakturasammenholdelse kan også udføres som del af en fakturavalidering. Du kan få vist resultaterne af fakturasammenholdelse på siden Kreditorfaktura og relaterede fakturasammenholdelsesformularer.
+Beregninger af fakturasammenholdelse udføres som regel automatisk, når du redigerer kreditorfakturaer på siden Kreditorfaktura. Alternativt kan fakturasammenholdelse udføres efter behov. Fakturasammenholdelse ved behov styres for den juridiske enhed af Opdater status for fakturahoved automatisk Til på siden Kreditorparametre under fanen Fakturavalidering. Fakturasammenholdelse kan også udføres som del af en fakturavalidering. Du kan få vist resultaterne af fakturasammenholdelse på siden Kreditorfaktura og relaterede fakturasammenholdelsesformularer.
 
 ## <a name="invoice-totals-matching"></a>Sammenholdelse af fakturatotaler
 Du kan bruge sammenholdelse af fakturatotaler til at sikre, at de samlede fakturabeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelse. Seks totaler sammenholdes siden Fakturatotalers tilsvarende oplysninger, som vist i følgende tabel. Hvis den tilladte tolerance for sammenholdelse af fakturatotaler er 20 %, anses afvigelsesprocenten på 100 for det samlede rabatbeløb for at være en matchningafvigelse.
@@ -165,7 +168,7 @@ Der sammenlignes samme linjebeløb på siden Detaljer om fakturasammenholdelse s
 Trevejs-sammenholdelsespolitik styres for den juridiske enhed af feltet Sammenholdelsespolitik for linjer på siden Kreditorparametre. Afhængigt af det, der er valgt i feltet Tillad overstyring af sammenholdelsespolitik, kan du vælge trevejs-sammenholdelse for en bestemt leverandør, vare eller kombination af vare og leverandør på siden Sammenholdelsespolitik og for en bestemt indkøbsordre på siden Indkøbsordre.
 
 ## <a name="charges-matching"></a>Sammenholdelse af gebyrer
-Du kan bruge sammenholdelse af tillæg til at sikre, at tillægsbeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelsesprocent. De samlede beløb for hver tillægskode, der gælder for fakturaen og indkøbsordren ordren sammenlignes i Sammenlign tillægsværdierne - faktura: side, som vist i følgende tabel. Hvis den tilladte tolerance for tillægskoden er 25 %, anses afvigelsesprocenten på 99.999.999.999,99 for licenstillægskoden for at være en matchningafvigelse.
+Du kan bruge sammenholdelse af tillæg til at sikre, at tillægsbeløb ikke afviger fra forventede beløb med mere end en acceptabel afvigelsesprocent. De samlede beløb for hver tillægskode, der anvendes til fakturaen og indkøbsordren, sammenlignes på siden Sammenlign gebyrværdier – Faktura: som vist i følgende tabel. Hvis den tilladte tolerance for tillægskoden er 25 %, anses afvigelsesprocenten på 99.999.999.999,99 for licenstillægskoden for at være en matchningafvigelse.
 
 > [!NOTE] 
 > En afvigelsesprocent på 99.999.999.999,99 betyder, at det forventede beløb baseret på indkøbsordren er nul, og det faktiske beløb på fakturaen er en positiv værdi. 
@@ -188,7 +191,9 @@ Kreditorfakturaer er ofte baseret på produktkvitteringer, der repræsenterer de
 -   Angive fakturabeløb, der ikke var medtaget på den oprindelige indkøbsordre, så fakturaoplysningerne stemmer overens med den faktura, du har modtaget fra kreditoren. Du kan også sammenligne tillæggene for indkøbsordrer med tillæggene for fakturaer. Hvis det er nødvendigt, kan du føje tillæg til fakturaer og fordele dem til fakturalinjer.
 -   Få vist og godkende uoverensstemmelser mellem nettoenhedsprisen på fakturaen og nettoenhedsprisen på indkøbsordren. Du kan konfigurere pristoleranceprocenter for juridiske enheder, leverandører og varer. Hvis prisen på en kreditorfakturalinje ikke ligger inden for den acceptable pristolerance, kan du gemme fakturaen, indtil den godkendes til bogføring, eller indtil du modtager en korrektion fra kreditoren.
 
-Yderligere oplysninger finder du [tre-vejs sammenholdelsespolitikker](three-way-matching-policies.md).
+Du kan finde flere oplysninger under [Trevejs-sammenholdelsespolitikker](three-way-matching-policies.md).
+
+
 
 
 

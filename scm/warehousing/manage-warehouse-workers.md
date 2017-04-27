@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics AX til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
 Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
@@ -51,6 +54,8 @@ Analyse af den tid, der bruges til at behandle arbejdselementer, kan forbedre la
 
 -   **Arbejde efter bruger** – denne rapport viser arbejdernes produktivitet baseret på de faktiske tider mod forventede tider.
 -   **Arbejde efter arbejdstransaktionstype** – du kan bruge denne rapport til at undersøge ineffektivitet i specifikke lagerstedsprocesser. Du bemærker eksempelvis, at pluk til flytteordrer tager længere tid i denne uge end i tidligere uger. Du kan derefter bruge disse oplysninger til yderligere undersøgelse.
+
+
 
 
 

@@ -52,13 +52,13 @@ Du skal definere lagerets zonegrupper og zoner, lokationsprofiler, lokationstype
 -   **Lokalitetstyper** – en fysisk eller logisk inddeling af lagerstedets lokaliteter. Du kan for eksempel oprette en lokationstype for alle midlertidige lokationer. Faste indstillinger på siden **Parametre til lagerstedsstyring** driver processen med at definere midlertidige lokalitetstyper og den endelige afsendelseslokalitetstype.
 -   **Lokaliteter** – det laveste niveau af lokalitetsoplysninger. Lokaliteter bruges til at spore, hvor den disponible lagerbeholdning er gemt og plukket på et lagersted.
 
-De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan eksempelvis være områder, hvor du kan bruge kun en bestemt type truck, der. Eller hvis din virksomhed har både produktion og færdige varer inden for den samme facilitet, kan du oprette et enkelt lagersted i Dynamics 365 for operationer, men derefter adskiller de to operationer ved at oprette to grupper i zonen. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonen forespørgsler.
+De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan f.eks. være områder, hvor du kun kan bruge en bestemt type gaffeltruck. Eller hvis din virksomhed har både produktion og færdigvarer inden for den samme facilitet, kan du oprette et enkelt lagersted i Dynamics 365 for Operations, men derefter adskille de to operationer ved at oprette to zonegrupper. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonforespørgsler.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Grænser for lokalitetslagring, lokalitetsprofiler og faste plukpladser
 
 Du skal overveje den fysiske udformning af lagerstedet, både til at bestemme lagerkapacitet (grænser for lokalitetslagring og lokalitetsprofiler) og som en del af dit forsøg på at opnå optimale lagerprocesser. 
 
-Placering belægningsgraden grænser hjælper med at sikre, at arbejdet ikke er oprettet for at anmode om, at lageret sættes på en placering, der ikke har den fysiske kapacitet til at have på lager. Eksempelvis hvis nogle steder inden for et lagersted kan holde en palle pr. lokation, kan placering, lagerføre grænser være aktiveret. Den ** antal ** værdi kan indstilles til **1**, og den ** enhed ** værdi kan indstilles til **PL** inden for en bestemt lokation profil gruppering. 
+Grænser for lokationslagring hjælper med til at sikre, at arbejdet ikke oprettes for at anmode om, at lageret skal placeres på en lokalitet, der ikke har den fysiske kapacitet til rumme lageret. Hvis nogle steder inden for et lagersted f.eks. kun kan indeholde én palle pr. lokation, kan grænser for lokationslagring aktiveres. Værdien **Antal** kan indstilles til **1**, og værdien **Enhed** kan indstilles til **PL** inden for en bestemt lokalitetsprofilgruppering. 
 
 Hvis der kræves mere avancerede beregninger til at styre kapacitetsbegrænsninger for lokaliteter, kan lokalitetsprofilindstillingerne bruges. I dette tilfælde betragtes vægt og volumen, når kapacitetsberegninger er færdige. 
 
@@ -66,7 +66,7 @@ For at opnå optimal udgående processer skal du evaluere, om du vil bruge faste
 
 ### <a name="location-setup-wizard"></a>Guiden Konfiguration af lokation
 
-Du kan bruge for hurtigt at oprette placeringer på et lagersted, den ** lokationsopsætning ** guide. Du kan sagtens bevare formatet af lokationsnavne som en del af denne proces.
+Du kan hurtigt at oprette lokaliteter på et lagersted ved at bruge guiden **Konfiguration af lokalitet**. Du kan sagtens bevare formatet af lokationsnavne som en del af denne proces.
 
 ## <a name="warehouse-processes"></a>Lagerstedsprocesser
 Som en del af konfigurationen af lagerstedet er det vigtigt, at du aktiverer lagerstedsprocesser efter virksomhedens behov. De vigtigste komponenter, du skal konfigurere, er bølgeskabeloner, arbejdsskabeloner, arbejdspuljer og lokalitetsvejledninger.
@@ -75,7 +75,7 @@ Som en del af konfigurationen af lagerstedet er det vigtigt, at du aktiverer lag
 
 Bølgeskabeloner hjælper med at sikre den udgående proces "Frigiv til lagersted". Så snart ordrelinjer udgives (enten direkte fra kildedokumenter, via kørselsprocesserne eller via belastninger, der allerede er oprettet), bruges funktionen med bølgeskabelon. 
 
-Du kan oprette tre typer af wave-skabeloner: **levering**, **produktion**, og **Kanban**. Parametre, der bruges til at definere, hvor langt systemet automatisk skal gå i behandling af udgående arbejde. En bølgeskabelon er valgt ud fra bølgeskabelonens rækkefølge og kriterier, der er angivet i skabelonen. Hvis en skabelon er angivet øverst i rækkefølgen, kontrolleres først kriterier i den pågældende skabelon. Hvis kriterierne kan opfyldes, behandles bølgeskabelonen. I modsat fald kontrolleres kriterierne i den næste skabelon osv. Det er derfor en god ide at placere den skabelon, som har de mest specifikke kriterier, i toppen af listen over rækkefølgen af bølgeskabeloner, så den behandles først. Du vil f.eks. behandle alt arbejde for et bestemt luftfartsselskab i dag og midlertidigt udskyde behandlingen af arbejdet for andre luftfartsselskaber. I dette tilfælde skal den bølgeskabelon, der vælger arbejde for luftfartsselskabet, i så fald anføres højere i rækkefølgen end andre skabeloner. Ellers kan arbejde for andre luftfartsselskaber blive behandlet, før arbejdet for luftfartsselskabet er fuldført. 
+Du kan oprette tre typer af bølgeskabeloner: **Forsendelse**, **Produktionsordre** og **Kanban**. Parametre, der bruges til at definere, hvor langt systemet automatisk skal gå i behandling af udgående arbejde. En bølgeskabelon er valgt ud fra bølgeskabelonens rækkefølge og kriterier, der er angivet i skabelonen. Hvis en skabelon er angivet øverst i rækkefølgen, kontrolleres først kriterier i den pågældende skabelon. Hvis kriterierne kan opfyldes, behandles bølgeskabelonen. I modsat fald kontrolleres kriterierne i den næste skabelon osv. Det er derfor en god ide at placere den skabelon, som har de mest specifikke kriterier, i toppen af listen over rækkefølgen af bølgeskabeloner, så den behandles først. Du vil f.eks. behandle alt arbejde for et bestemt luftfartsselskab i dag og midlertidigt udskyde behandlingen af arbejdet for andre luftfartsselskaber. I dette tilfælde skal den bølgeskabelon, der vælger arbejde for luftfartsselskabet, i så fald anføres højere i rækkefølgen end andre skabeloner. Ellers kan arbejde for andre luftfartsselskaber blive behandlet, før arbejdet for luftfartsselskabet er fuldført. 
 
 Du skal angive metoder for bølgeprocessen i de enkelte bølgeskabeloner. De tilgængelige metoder afhænger af typen af bølgeskabelon.
 
@@ -107,6 +107,6 @@ For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknytt
 <a name="see-also"></a>Se også
 --------
 
-[Konfigurere lokationer i et oplag af WMS-aktiveret (opgave guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
 

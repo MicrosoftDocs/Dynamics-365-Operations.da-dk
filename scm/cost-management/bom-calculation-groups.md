@@ -1,5 +1,5 @@
 ---
-title: Styklisten beregninger grupper
+title: Styklisteberegningsgrupper
 description: "Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Styklisten beregninger grupper
+# <a name="bom-calculations-groups"></a>Styklisteberegningsgrupper
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen. 
 
-Der kræves en standardberegningsgruppe på siden **Parametre til lager- og lokationsstyring**, eller der kræves en produktspecifik beregningsgruppe på siden **Frigivne produktdetaljer**. Systemet søger først efter gruppen kalkulationsopsætning den **udgivet produktdetaljer** side. Hvis der ikke findes en beregningsgruppe, ser det ud den **parametre for administration af lager- og lokalitetsstyring** side. Hvis systemet ikke kan finde en beregningsgruppe, får brugeren en fejlmeddelelse under beregningen. En beregningsgruppe indeholder politikker for kostprismodellen, salgsprismodellen og advarselskontrollisten. Beregningsindstillingerne fra beregningsgruppen bruges som standardværdier på siden **Styklistekalkulation** på tidspunktet for styklistekalkulationen.
+Der kræves en standardberegningsgruppe på siden **Parametre til lager- og lokationsstyring**, eller der kræves en produktspecifik beregningsgruppe på siden **Frigivne produktdetaljer**. Systemet søger først efter opsætningen af beregningsgruppen på siden **Frigivne produktdetaljer**. Hvis der ikke findes en beregningsgruppe, søger det på siden **Parametre til lager- og lokationsstyring**. Hvis systemet ikke kan finde en beregningsgruppe, får brugeren en fejlmeddelelse under beregningen. En beregningsgruppe indeholder politikker for kostprismodellen, salgsprismodellen og advarselskontrollisten. Beregningsindstillingerne fra beregningsgruppen bruges som standardværdier på siden **Styklistekalkulation** på tidspunktet for styklistekalkulationen.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Formålet med styklisteberegningsgrupper
 Du kan tildele en styklisteberegningsgruppe til varer af flere årsager:
@@ -72,7 +75,7 @@ I oversigtspanelet **Advarsler** skal du vælge indstillingerne for advarselsmed
 Standardkonfiguration af parametre til lager- og lokationsstyring
 --------------------------------------------------------------
 
-Da der kræves beregningsgrupper for at kunne køre beregninger, skal du oprette en standardberegningsgruppe i lagerstyringsparametrene. Denne opsætning gør det muligt for virksomheder at have en standardomkostningsgruppe og -avancesæt for alle varer. Hvis en bestemt vare har særlige beregningskrav, kan brugeren tildele en anden beregningsgruppe til varen. Typisk kan du angive beregningsgrupper for styklistekomponentvarer i stedet for styklistevarer. Når der vises advarsler, kan der dog anvendes beregningsgrupper. En beregningsgruppe, der er tildelt til varer, tilsidesætter den standardværdi, der er angivet i lagerstyringsparametrene. Du kan definere standardparameteren på **Cost management**&gt;**regnskabsmæssig politikker Lageropsætning**&gt;**parametre**&gt;**lageropgørelse**&gt;**beregningsgruppe**. Ved at oprette en standardkonfigurationsgruppe kan du også konfigurere advarsler i situationer, hvor brugerne bliver advaret under styklistekalkulationsprocessen, hvis de valgte komponenter kan det medføre beregningsfejl.
+Da der kræves beregningsgrupper for at kunne køre beregninger, skal du oprette en standardberegningsgruppe i lagerstyringsparametrene. Denne opsætning gør det muligt for virksomheder at have en standardomkostningsgruppe og -avancesæt for alle varer. Hvis en bestemt vare har særlige beregningskrav, kan brugeren tildele en anden beregningsgruppe til varen. Typisk kan du angive beregningsgrupper for styklistekomponentvarer i stedet for styklistevarer. Når der vises advarsler, kan der dog anvendes beregningsgrupper. En beregningsgruppe, der er tildelt til varer, tilsidesætter den standardværdi, der er angivet i lagerstyringsparametrene. Du kan definere standardparameteren i **Omkostningsstyring** &gt; **Konfiguration af regnskabspolitik for lager** &gt; **Parametre** &gt; **Lagerregnskab** &gt; **Beregningsgruppe**. Ved at oprette en standardkonfigurationsgruppe kan du også konfigurere advarsler i situationer, hvor brugerne bliver advaret under styklistekalkulationsprocessen, hvis de valgte komponenter kan det medføre beregningsfejl.
 Vise advarsler på siden Fuldført
 ------------------------------------------
 
@@ -85,5 +88,7 @@ En styklistekalkulation genererer advarsler. Du kan få vist advarslerne om den 
 -   Identificer, hvornår varen på en styklistelinje har en rentabilitetsprocentdel, der er mindre end ønsket.
 
 Du kan definere flere styklisteberegningsgrupper, afhængigt af dine behov for variationer i advarselsmeddelelser. En styklisteberegningsgruppe, der f.eks. har advarselssituationer om en aktiv stykliste, et komponentantal på 0 (nul) og en komponentkostpris på 0 (nul), kan være tilstrækkeligt. Når du starter en styklisteberegning, kan du tilsidesætte de gældende advarselssituationer, der er knyttet til styklisteberegningsgruppen. Du kan også tilføje eller fjerne advarselsbetingelser. Hvis den aktuelle situation ikke omfatter rutedata, kan du f.eks. fjerne den gældende advarselsbetingelse for en aktiv rute. **Bemærk:** Tid og fremmøde omfatter en **Beregningsgrupper**-side, men siden har ingen relation til styklisteberegningsgrupper. Under Tid og fremmøde kan arbejdere tilknyttes beregningsgrupper, der afspejler grupperingen af arbejdere, der er tilknyttet den samme tilsynsførende eller leder. En tilsynsførende eller leder kan automatisk eller manuelt rette beregningen af registreringer til arbejdere.
+
+
 
 

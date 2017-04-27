@@ -46,7 +46,7 @@ På siden **Masseansættelsesprojekter** skal du vælge projektet "Sommermedarbe
 
 Når du har fundet studerende, der skal ansættes i praktikantstillingerne, indtaster du den enkelte studerendes oplysninger i **Detaljer for stilling** for stillingen, som du vil ansætte dem i. Når du har angivet alle stillingsoplysningerne, skal du vælge stillingen på siden Masseansættelsesprojekter og derefter klikke på **Ansæt**. Der oprettes en stillingspost for hver stilling, og der oprettes og tildeles en arbejderpost til den relevante stilling for hver person, du ansætter.
 
-## <a name="masshire-project-statuses"></a>Masshire projektstatusser
+## <a name="masshire-project-statuses"></a>Status for masseansættelsesprojekt
 Et masseansættelsesprojekt kan have følgende statusser.
 -   Oprettet
 -   Åbnet

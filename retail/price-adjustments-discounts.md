@@ -1,6 +1,6 @@
 ---
 title: Prisjusteringer og rabatter
-description: Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Retail og handel i Microsoft Dynamics 365 for operationer.
+description: Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Retail og handel i Microsoft Dynamics 365 for Operations.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
-Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Retail og handel i Microsoft Dynamics 365 for operationer.
+[!include[banner](includes/banner.md)]
 
-I Dynamics 365 for operationer - Detail, du foretage prisreguleringer i forhold til produkter og kan også definere rabatter, der gælder for en varelinje eller en transaktion ved POS (POS) i salgsordren et call center eller i en online ordre. Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Du kan angive en enkelt startdato og slutdato eller en tilbagevendende periode, en rabatkode og et par ekstra attributter for både prisjusteringer og rabatter. Prisjusteringer og rabatter kan anvendes på produkter, varianter eller kategorier. Hvis mere end én rabat gælder for et produkt, kan en kunde måske modtage enten en af rabatterne eller en kombineret rabat, afhængigt af konfigurationen af rabatten. Dynamics 365 for operationer anvender automatisk rabatten eller kombinationen af rabatter, som giver den bedste pris til kunden. Når du opretter en prisjustering eller rabat, skal du kontrollere, at prisgrupper er knyttet til de korrekte kanaler, kataloger, tilhørsforhold eller loyalitetsprogrammer, som du ønsker, at rabatten skal gælde for. Derudover er det sådan, at hvis du vil oprette rabat-id'et automatisk, kan du oprette nummerserier på siden **Detailparametre**, inden du definerer en ny prisjustering eller rabat. **Bemærk!** Du kan slette en prisjustering eller en rabat. Statistiske oplysninger går imidlertid tabt.
+
+Denne artikel indeholder oplysninger om prisjusteringer og rabatter i Retail og handel i Microsoft Dynamics 365 for Operations.
+
+I Dynamics 365 for Operations - Retail kan du foretage prisreguleringer i forhold til produkter, og du kan også konfigurere rabatter, der gælder for en varelinje eller en transaktion på salgsstedet (POS), i salgsordren for et callcenter eller i en onlineordre. Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Du kan angive en enkelt startdato og slutdato eller en tilbagevendende periode, en rabatkode og et par ekstra attributter for både prisjusteringer og rabatter. Prisjusteringer og rabatter kan anvendes på produkter, varianter eller kategorier. Hvis mere end én rabat gælder for et produkt, kan en kunde måske modtage enten en af rabatterne eller en kombineret rabat, afhængigt af konfigurationen af rabatten. Dynamics 365 for Operations anvender automatisk rabatten eller den kombination af rabatter, som giver den bedste pris til kunden. Når du opretter en prisjustering eller rabat, skal du kontrollere, at prisgrupper er knyttet til de korrekte kanaler, kataloger, tilhørsforhold eller loyalitetsprogrammer, som du ønsker, at rabatten skal gælde for. Derudover er det sådan, at hvis du vil oprette rabat-id'et automatisk, kan du oprette nummerserier på siden **Detailparametre**, inden du definerer en ny prisjustering eller rabat. **Bemærk!** Du kan slette en prisjustering eller en rabat. Statistiske oplysninger går imidlertid tabt.
 
 ### <a name="types-of-discounts"></a>Rabattyper
 
@@ -42,5 +45,7 @@ Der findes fire typer detailrabatter:
 -   **Tærskelrabat** – En rabat, der anvendes, når totalen for transaktionen er mere end et bestemt beløb.
 
 Både prisjusteringer og rabatter kan være knyttet til prisgrupper. Prisgrupper kan derefter tilknyttes kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer.
+
+
 
 

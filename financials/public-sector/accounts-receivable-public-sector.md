@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-in-the-public-sector"></a>Debitorer i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
 
 <a name="how-do-i-set-accounts-receivable-parameters-for-the-public-sector"></a>Hvordan indstiller jeg Debitorparametre for den offentlige sektor?
@@ -43,13 +46,13 @@ De fleste Debitorparametre angives på samme måde, uanset om du er i den offent
     -   Den finanskonto, der er knyttet til projektet, anvendes automatisk på fritekstfakturaen. Vælg indstillingen for at tillade finanskontonummeret at blive redigeret for at tillade brugere at ændre finanskontoen på fritekstfakturaen og i regnskabsfordelinger.
 
 ## <a name="how-do-i-control-the-settlement-order-for-accounts-receivable-transactions"></a>Hvordan styrer jeg udligningsrækkefølgen for debitorposteringer?
-Du kan bruge faktureringsklassifikationer sammen med andre fakturering attributter til at styre den rækkefølge, der er udlignet i din debitorposteringer. Du kan få flere oplysninger i [Udligningsprioritet i den offentlige sektor](settlement-priority-public-sector.md).
+Du kan bruge faktureringsklassifikationer sammen med andre faktureringsattributter til at styre den rækkefølge, der er udlignet i dine debitorposteringer. Du kan få flere oplysninger i [Udligningsprioritet i den offentlige sektor](settlement-priority-public-sector.md).
 
 ## <a name="is-there-an-easy-way-to-review-reimbursement-transactions"></a>Er der en nem måde at gennemgå refusionsposteringer på?
 Du kan bruge faktureringsklassifikationer til at oprette en separat refusionstransaktion for hver faktureringsklassifikation. Når du gør det, grupperes refusionsposteringer efter den entydige bogføringstype for debitorsaldo og faktureringsklassifikation. Du kan få flere oplysninger i [Udligninger i den offentlige sektor](reimbursements-public-sector.md).
 
 ## <a name="where-are-the-trading-partner-codes-that-i-need-for-gfrs-and-facts-i-reporting"></a>Hvor er de handelspartnerkoder, jeg skal bruge til GFRS- og FACTS I-rapportering?
-De handelspartnerkoder, som er nødvendige for GFRS- og FACTS I-rapportering, bliver fastlagt af det amerikanske finans- og skatteministerium. Enhver virksomhed, der følger amerikanske statslige rapporteringsregler for debitorer, bør tilføje handelspartnerkoder til deres debitorkontooplysninger for de organer, som de gør forretninger med. For eksempel hvis kontoret handler med Federal Trade Commission, du vil gå til den **handel partnerkoder** side og oprette handel partnerkode 29. Derefter, på siden kunde detaljer for FTC, skal du skrive 29 i den **handel partnerkode** felt.
+De handelspartnerkoder, som er nødvendige for GFRS- og FACTS I-rapportering, bliver fastlagt af det amerikanske finans- og skatteministerium. Enhver virksomhed, der følger amerikanske statslige rapporteringsregler for debitorer, bør tilføje handelspartnerkoder til deres debitorkontooplysninger for de organer, som de gør forretninger med. For eksempel hvis kontoret handler med Federal Trade Commission, skal du gå til siden **Handelspartnerkoder** og oprette handelspartnerkode 29. Derefter, på siden med kundedetaljer for FTC, skal du skrive 29 i feltet **Handelspartnerkode**.
 
 ### <a name="i-created-default-financial-dimensions-for-a-customer-group-but-one-customer-in-the-group-needs-a-different-value-for-one-of-the-financial-dimensions-whats-the-easiest-way-to-handle-this"></a>Jeg har oprettet økonomiske standarddimensioner for en debitorgruppe, men én kunde i gruppen skal have en anden værdi for en af de økonomiske dimensioner. Hvad er den nemmeste måde at håndtere dette på?
 
@@ -61,6 +64,8 @@ Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til ki
 <a name="see-also"></a>Se også
 --------
 
-[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
+[Debitor](..\accounts-receivable\accounts-receivable.md)
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
 
+[!include[banner](../includes/banner.md)]
+
+
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger. 
 
 <a name="accounting-distributions"></a>Regnskabsfordelinger 
@@ -244,6 +247,8 @@ Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis
 Før du bogfører en kreditorfaktura, kan du få vist den komplette regnskabspost for fakturaen, hvilket omfatter debit og kredit, for at kontrollere, at fakturaen bogføres på de rigtige konti. Denne visning af hele regnskabsenheden kaldes en reskontrokladde. 
 
 Hvis kladdeposteringen for reskontroer er forkert, når du gennemser den før journalisering af kreditorfakturaen, kan du ikke ændre kladdeposteringen for reskontro. I stedet skal du redigere de regnskabsmæssige fordelinger eller posteringsprofilen. De regnskabsmæssige fordelinger bruges til at definere én side af regnskabsenheden, debiteringen eller krediteringen. Den modsvarende kontopost for reskontrokladde oprettes ved hjælp af posteringsprofiler, f.eks fra kreditorkontoen eller skat.
+
+
 
 
 

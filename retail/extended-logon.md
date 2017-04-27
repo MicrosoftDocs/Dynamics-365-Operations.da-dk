@@ -1,5 +1,5 @@
 ---
-title: Konfigurere logon udvidede funktioner for sky POS og MPOS
+title: Konfigurere udvidede logonfunktioner for Cloud POS og MPOS
 description: "Denne wiki dækker dine muligheder for at konfigurere udvidet logon til sky-POS og Retail Modern POS (MPOS)."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Konfigurere logon udvidede funktioner for sky POS og MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Konfigurere udvidede logonfunktioner for Cloud POS og MPOS
 
 Denne wiki dækker dine muligheder for at konfigurere udvidet logon til sky-POS og Retail Modern POS (MPOS).
 
 <a name="setting-up-extended-logon"></a>Konfigurere udvidet logon
 =========================
 
-Du kan finde installationsprogrammet til stregkodemasker på **detail- og commerce**&gt;**kanal setup**&gt;**POS installationsprogrammet**&gt;**profiler for POS**&gt;**funktionalitetsprofiler**. Oversigtspanelet **Funktioner** indeholder følgende indstillinger, der er relateret til udvidet logon.
+Du kan finde opsætningen af stregkodemasker på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Funktionalitetsprofiler**. Oversigtspanelet **Funktioner** indeholder følgende indstillinger, der er relateret til udvidet logon.
 
 ### <a name="staff-bar-code-logon"></a>Logon med medarbejderstregkode
 
@@ -53,7 +53,7 @@ Når indstillingen **Logon med medarbejderkort kræver adgangskode** er aktivere
 <a name="assigning-an-extended-logon"></a>Tildele et udvidet logon
 ===========================
 
-Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, kan du gå til **Extended log på** i POS. Derefter søge efter en arbejder ved at angive hans eller hendes operatør-ID i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK **tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
+Som standard er det kun chefer, der kan tildele udvidet logon til medarbejdere. Hvis du vil tildele udvidet logon, skal du gå til **Udvidet logon** i POS. Søg derefter efter en medarbejder ved at angive hans eller hendes operatør-id i søgefeltet. Vælg medarbejderen, og klik derefter på **Tildel**. På næste side skal det udvidede logon stryges eller scannes for at tildele medarbejderen. Hvis strygningen eller scanning indlæses, bliver knappen **OK** tilgængelig. Klik på **OK** for at gemme det udvidede logon for den medarbejder.
 
 <a name="deleting-an-extended-logon"></a>Slette et udvidet logon
 ==========================

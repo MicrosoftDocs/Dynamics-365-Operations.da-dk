@@ -1,6 +1,6 @@
 ---
 title: "Balance - økonomiske rapporter"
-description: "I denne artikel beskrives standardrapporter til balancen. Her beskrives også de komponenter, der er knyttet til disse rapporter."
+description: "I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Balance - økonomiske rapporter
 
-I denne artikel beskrives standardrapporter til balancen. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
 
 <a name="default-balance-sheet-reports"></a>Standardbalancerapporter
 -----------------------------
@@ -72,10 +75,12 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Økonomirapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis økonomiske rapporter](view-financial-reports.md)
 
-[Dynamics finansiel rapportering Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

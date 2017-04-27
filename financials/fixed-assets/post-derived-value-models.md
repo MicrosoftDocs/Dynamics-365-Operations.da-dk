@@ -1,5 +1,5 @@
 ---
-title: "Bogføre med afledte bøger"
+title: "Bogfør med afledte bøger"
 description: "I denne artikel beskrives det, hvordan afledte bøger bruges."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Bogføre med afledte bøger
+# <a name="post-with-derived-books"></a>Bogfør med afledte bøger
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives det, hvordan afledte bøger bruges.
 
@@ -49,11 +52,13 @@ I følgende oplysninger kan du finde en beskrivelse af, hvordan du definerer ans
 
 Bøgerne kan derefter tilknyttes bestemte anlægsaktiver. 
 
-Når en anskaffelse bogføres som et anlægsaktiv med bogen VM 1, bogføres anskaffelsen ikke kun for VM 1, men også på den afledte bog VM 2. Status for begge bøger for anlægsaktivet opdateres til åben.
+Når en anskaffelse bogføres som et anlægsaktiv med bog VM 1, bogføres anskaffelsen ikke kun for VM 1, men også for den afledte afskrivningsmodel VM 2. Status for begge anlægsaktivbøger opdateres til Åben.
 
 > [!NOTE]                                                                                                         
 > Hvis du ikke bruger afledte afledte bøger, skal du bogføre anskaffelsen af anlægsaktivet for både bogen VM 1 og bogen VM 2.
 
-Yderligere oplysninger finder du [afledt bøger](derived-books.md)
+Du kan finde flere oplysninger under [Afledte bøger](derived-books.md).
+
+
 
 

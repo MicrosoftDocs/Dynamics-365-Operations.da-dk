@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Opdatere standardomkostninger for en ny produceret vare
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en vejledning til opdatering af standardomkostninger for en ny produceret vare. 
 
 I følgende retningslinjer antages det, at du bruger en tilgang med to versioner til at opdatere standardomkostningerne. I denne tilgang indeholder én efterkalkulationsversion de standardomkostninger, der første blev defineret for den frosne periode, og den anden efterkalkulationsversion indeholder de trinvise opdateringer, der vedrører de nye færdigvarer. De trinvise opdateringer angives som omkostningsposter i den anden efterkalkulationsversion, og de aktiveres til sidst. I tilgangen med to versioner skal du definere en anden efterkalkulationsversion. Her er retningslinjerne for, hvordan denne efterkalkulationsversion skal defineres:
@@ -47,6 +50,8 @@ Hvis du vil tilføje nye produktionsvarer i løbet af den frosne periode, skal d
 5.  Brug siden **Opsætning af efterkalkulationsversion** til at skifte blokeringsflag for at tillade aktivering af ventende omkostningsposter i den anden efterkalkulationsversion.
 6.  Brug siden **Aktivér priser** (som du kan åbne fra siden **Vedligeholdelse af efterkalkulationsversion**) til at aktivere alle ventende omkostningsposter i den anden efterkalkulationsversion. Du kan også aktivere de ventende omkostningsposter for individuelle varer ved at klikke på knappen **Aktivér** på siden **Varepris**.
 7.  Du kan bruge siden **Opsætning af efterkalkulationsversion** til at skifte blokeringsflag i den anden efterkalkulationsversion for at undgå yderligere vedligeholdelse af data. Blokeringspolitikkerne vil forhindre, at der indtastes nye ventende omkostninger eller aktiveres ventende omkostninger.
+
+
 
 
 

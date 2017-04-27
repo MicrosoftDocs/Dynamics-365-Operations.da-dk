@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Ordreindtastningsfrister
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om frister for ordreindtastning. En ordreindtastningsfrist er et cut-off-tidspunkt, der bestemmer, om en kundeordre skal behandles (og opfyldes), som om den blev modtaget på den aktuelle dag eller næste dag.
 
 I mange firmaer er det kun salgsordrer, der modtages før et bestemt tidspunkt på dagen, der behandles som modtaget den pågældende dag. Alle ordrer, der modtages efter dette tidspunkt, behandles, som om de modtages den næste arbejdsdag. Dette skæringstidspunkt for ordrer kaldes ordreindtastningsfristen.  
 
-Ordreindtastningsfrister bruges som input for ordretilsagn. Derfor hjælper de dig med at administrere kundernes forventninger til levering af ordren. Kunderne kan for eksempel se, at hvis de afgiver en ordre hos dig inden et bestemt tidspunkt, giver du tilsagn om at levere varerne samme dag. Hvis de går glip af denne frist, kan de forvente levering kun på den næste arbejdsdag. Du kan angive ordreregistreringsfrister, der er baseret på dit lager faciliteter og levering luftfartsselskab tidsplaner.  
+Ordreindtastningsfrister bruges som input for ordretilsagn. Derfor hjælper de dig med at administrere kundernes forventninger til levering af ordren. Kunderne kan for eksempel se, at hvis de afgiver en ordre hos dig inden et bestemt tidspunkt, giver du tilsagn om at levere varerne samme dag. Men hvis de misser denne frist, kan de først forvente levering den næste arbejdsdag. Du kan angive ordreindtastningsfrister baseret på din lagerkapacitet og fragtmandens kalender.  
 
 På siden **Ordreindtastningsfrister** kan du oprette ordreindtastningsfristerne for alle ugens dage. Hvis ordrer modtages efter det angivne tidspunkt, behandles de, som om de modtages den næste dag. Disse tider angives som standard til 23:59 (dvs. ét minut før midnat, inden den pågældende dag er gået). Du kan ændre standardtiderne, så de falder sammen med de faktiske tider for afsendelse eller tilgang.  
 
@@ -43,7 +46,7 @@ Hvis dit firma driver virksomhed fra flere adresser, kan du oprette ordreindtast
 På siden **Aktiver kombinationer af ordreindtastningsfrister** kan du definere kombinationer af steder og ordreindtastningsfristgrupper, der er tilladt.
 
 ## <a name="example-order-entry-deadline"></a>Eksempel: Ordreindtastningsfrist
-Ordreindtastningsfristen på tirsdage er indstillet til 16:00. På en bestemt tirsdag kl. 17:00 forsøger du at indstille den aktuelle dato som afsendelsesdato. (Bemærk, at der ikke er nogen gennemløbstid i dette eksempel). Hvis de **Leveringsdatokontrol** er markeret, modtager du en advarsel, der angiver, at datoen ikke er gyldigt. Denne advarsel vises på siden **Mulige afsendelses- og modtagelsesdatoer**, hvor du kan vælge alternative datoer.
+Ordreindtastningsfristen på tirsdage er indstillet til 16:00. På en bestemt tirsdag kl. 17:00 forsøger du at indstille den aktuelle dato som afsendelsesdato. (Bemærk, at der ikke er nogen gennemløbstid i dette eksempel). Hvis afkrydsningsfeltet **Leveringsdatokontrol** er markeret, modtager du en advarsel, der angiver, at datoen ikke er gyldig. Denne advarsel vises på siden **Mulige afsendelses- og modtagelsesdatoer**, hvor du kan vælge alternative datoer.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Eksempel: Forskellige ordreindtastningsfrister pr. sted
 Dit firma udgøres af to steder. Stederne findes i forskellige tidszoner som vist i følgende tabel.
@@ -55,7 +58,7 @@ Dit firma udgøres af to steder. Stederne findes i forskellige tidszoner som vis
 
 Der er angivet følgende ordreindtastningsfrister for sted A og B.
 
-| Ugedag             | A: bestille ordreregistreringsfristerne (PST) | B: bestille ordreregistreringsfristerne (EST) |
+| Ugedag             | A: Ordreindtastningsfrister (PST) | B: Ordreindtastningsfrister (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Mandag                      | 13:00                          | 14:00                          |
 | Tirsdag                     | 13:00                          | 14:00                          |
@@ -67,7 +70,7 @@ Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST (Mountain, no
 
 I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.
 
-| Gruppe A: PST         | Gruppe A: MST        | Gruppe B: EST           | Gruppe B: MST        |
+| Sted A: PST         | Sted A: MST        | Sted B: EST           | Sted B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 14:00                 | 12:00              |
 
@@ -95,7 +98,7 @@ Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST. Det betyder,
 
 I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.
 
-| Gruppe A: PST         | Gruppe A: MST        | Gruppe B: EST           | Gruppe B: MST        |
+| Sted A: PST         | Sted A: MST        | Sted B: EST           | Sted B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 13:00                 | 11:00              |
 
@@ -104,6 +107,8 @@ I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B om
 <a name="see-also"></a>Se også
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Leveranceplaner](delivery-schedules.md)
+
+
 
 

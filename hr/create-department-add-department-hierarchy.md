@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Oprette en afdeling og knytte den til afdelingshierarkiet
 
+[!include[banner](includes/banner.md)]
+
+
 En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet.
 
-En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til afdelinger. Klik for at oprette en afdeling, **personale**&gt;**afdelinger**&gt;**afdeling**. I følgende tabel beskrives de felter, der er tilgængelige.
+En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til afdelinger. For at oprette en afdeling skal du klikke på **Personale** &gt; **Afdelinger** &gt; **Afdeling**. I følgende tabel forklares de felter, der er tilgængelige.
 
 | Felt               | Beskrivelse                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ En afdeling kan også omfatte en gruppe af bærere. Stillinger kan tildeles til 
 
 Følg disse trin for at føje en afdeling til afdelingshierarkiet.
 
-1.  Klik på **personale**&gt;**afdelinger**&gt;**afdelingshierarkiet**.
+1.  Klik på **Personale** &gt; **Afdelinger** &gt; **Afdelingshierarki**.
 2.  Klik på **Rediger**, og vælg derefter den organisation, som afdelingen skal være under.
 3.  Klik på **Indsæt**, og vælg **Afdeling** på listen.
 4.  På listen over afdelinger, der vises, skal du vælge afdelingen til at føje den til hierarkiet.
-5.  Gem ændringerne. Du modtager en meddelelse, der er oprettet en kladdeversion af hierarkiet.
-6.  Når du er klar, skal du klikke på **Udgiv** i hierarkidesigner. Du kan angive en ikrafttrædelsesdato, der angiver, hvornår hierarkiet bør offentliggøres. Hvis du f.eks. vil tilføje en ny afdeling i starten af næste kalenderår, skal du sætte ikrafttrædelsesdatoen til 1. januar i det nye kalenderår. Ændringer af hierarkiet træder i kraft på denne dato.
+5.  Gem ændringerne. Du modtager en meddelelse om, at der er oprettet en kladdeversion af hierarkiet.
+6.  Når du er klar, skal du klikke på **Udgiv** i hierarkidesigner. Du kan angive en ikrafttrædelsesdato, der angiver, hvornår hierarkiet skal offentliggøres. Hvis du f.eks. vil tilføje en ny afdeling i starten af næste kalenderår, skal du sætte ikrafttrædelsesdatoen til 1. januar i det nye kalenderår. Ændringer af hierarkiet træder i kraft på denne dato.
+
+
 
 
 

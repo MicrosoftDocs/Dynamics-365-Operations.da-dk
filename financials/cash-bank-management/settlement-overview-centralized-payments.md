@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Oversigt over udligning for centraliserede betalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derved fjernes behovet for at angive den samme postering i flere juridiske enheder, og der spares tid, idet processen til betalingsforslag, udligningsprocessen, redigering af åbne posteringer og redigering af lukkede posteringer strømlines for centraliserede betalinger. 
 
 Når en debitor- eller kreditorbetaling angives i en juridisk enhed og udlignes med en faktura, der blev angivet i en andet juridisk enhed, genereres de relevante udligningsposteringer, forfalden til og forfalden fra, automatisk for hver juridisk enhed. Der oprettes en udligningspost for hver kombination af faktura og betaling i posteringen. Her enkelt udligningspost tildeles et nyt bilagsnummer, som er baseret på løbenummerserien, der angives på siden **Debitorparametre** for debitorer og siden **Kreditorparametre** for kreditorer. 
@@ -108,6 +111,8 @@ For kreditorbetalinger bruger posteringerne for forfalden til og forfalden fra i
 
 ## <a name="withholding-tax"></a>A-skat
 Den kreditorkonto, der er tilknyttet fakturaen, bruges til at bestemme, om der skal beregnes A-skat. Hvis der beregnes A-skat, beregnes den i den juridiske enhed, der er tilknyttet fakturaen. Hvis der anvendes forskellige valutaer i de juridiske enheder, bruges valutakursen fra den juridiske enhed, der er tilknyttet fakturaen.
+
+
 
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-in-the-public-sector"></a>Kreditorbetalinger i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics AX. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer. 
 
 <a name="what-are-the-prerequisites-for-setting-up-accounts-payable-in-the-public-sector"></a>Hvad er forudsætningerne for opsætning af Kreditor i den offentlige sektor?
@@ -48,7 +51,7 @@ Når du har konfigureret forudsætningerne, kan det være nødvendigt at konfigu
 
 -   [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md) – Du kan bruge bogføringsdefinitioner til at oprette kladdelinjer for oprindelige posteringer, der opfylder udvalgte kriterier. Du kan f.eks. bruge bogføringsdefinitioner til at oprette flere afstemte finansposter baseret på attributter som f.eks. posteringstyper og konti. 
 > [!NOTE]
-> Dette gælder også for Finans, budgettering og debitor.
+> Dette gælder også for Finans, Budgettering og Debitor.
 
 
 -   [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du i Microsoft Dynamics AX hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor.](plan-one-time-vendors-public-sector.md)
@@ -90,7 +93,7 @@ Du kan fordele betalingen af en faktura på flere bankkonti for flere kreditorer
 
 #### <a name="tip"></a>Tip!
 
-For eksempel findes der en købsordre på 100, og Bank A er standardkreditorbankkontoen. I tabellen for betalingsudbetaling har Bank A 100 procent fordeling. (Hvis der er ingen standard kreditorens bankkonto, tabellen er tom). Du kan ændre fordelingen for Bank A til 30 procent og derefter føje en ny række. Du kan vælge en anden kreditorbank som f.eks Bank B i den nye række, hvorefter fordelingen for den nye række automatisk opdateres til 70 procent.
+For eksempel findes der en købsordre på 100, og Bank A er standardkreditorbankkontoen. I tabellen for betalingsudbetaling har Bank A 100 procent fordeling. (Hvis der ikke er en standardkreditorbankkonto, er tabellen tom). Du kan ændre fordelingen for Bank A til 30 procent og derefter tilføje en ny række. Du kan vælge en anden kreditorbank som f.eks Bank B i den nye række, hvorefter fordelingen for den nye række automatisk opdateres til 70 procent.
 
 ### <a name="how-can-i-create-and-print-cover-and-signature-pages-for-payments-reports"></a>Hvordan kan jeg oprette og udskrive for- og signatursider til betalingsrapporter?
 
@@ -99,6 +102,8 @@ Når du opretter for- og signatursider til en betalingsrapport, kan du angive de
 ### <a name="how-do-i-view-purchase-order-line-amounts"></a>Hvordan får jeg vist linjebeløb for indkøbsordre?
 
 Du kan få vist linjebeløb for en indkøbsordre. Disse beløb omfatter det samlede bestilte beløb, og eventuelle beløb, der er modtaget eller faktureret. Du kan også få vist beløb, der stadig skal faktureres, eller beløb for fakturaer, der afventer. Tip! Du kan f.eks. få vist en indkøbsordrelinje med indkøb, der er bogført på to finanskonti. Den ene finanskonto er beregnet til varer, der er bestilt hos en leverandør af kontormøbler. Den anden finanskonto er beregnet til kontorartikler. Ordreantallet er lig med summen af fakturerede antal, antallet på ventende fakturaer og antal, der ikke er faktureret endnu. Det modtagne antal er den del af ordreantallet, der er modtaget fra kreditor.
+
+
 
 
 

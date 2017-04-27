@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Lineær afskrivning for den resterende levetid
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for den resterende levetid.
 
 Når du opretter en afskrivningsprofil for et anlægsaktiv og vælger **Lineær afskrivning for den resterende levetid** i feltet **Metode** på siden **Afskrivningsprofiler**, er afskrivningen af anlægsaktiver, der er knyttet til afskrivningsprofilen, baseret på den resterende levetid for anlægsaktivet. Afskrivningsbeløbet er generelt det samme i hver afskrivningsperiode. Hvis du vil oprette en afskrivning for den resterende levetid, skal du også foretage valg i feltet **Afskrivningsår** og feltet **Periodefrekvens** på siden **Afskrivningsprofiler**. Hvilke indstillinger , der er tilgængelige i feltet **Periodefrekvens**, varierer, afhængigt af den værdi der er valgt i feltet **Afskrivningsår**.
@@ -36,7 +39,7 @@ Du kan vælge enten **Kalender** eller **Regnskabsår** i feltet **Afskrivnings�
 
 ### <a name="calendar"></a>Kalender
 
-Hvis du vælger **kalender** i den ***afskrivningsår*** felt, et år med 1 gennem d. 31 antages, selvom du har defineret den regnskabskalender forskelligt. Indstillingen **Kalender** opdaterer afskrivningsgrundlaget d. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
+Hvis du vælger **Kalender** i feltet ***Afskrivningsår***, vises der som standard et år fra d. 1. januar til d. 31. december, også selvom du har defineret regnskabsåret anderledes. Indstillingen **Kalender** opdaterer afskrivningsgrundlaget d. 1. januar hvert år. Afskrivningsgrundlaget er typisk den bogførte nettoværdi minus restværdien. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 -   **Årligt** bogfører et beløb d. 31. december.
 -   **Månedligt** bogfører et månedligt beløb sidst i hver kalendermåned.
@@ -48,7 +51,7 @@ Hvis du f.eks. vælger **Årligt**, bogføres den årlige afskrivning kun én ga
 
 ### <a name="fiscal"></a>Regnskabsår
 
-Hvis du vælger **Regnskabsår** i feltet **Afskrivningsår**, bruges den lineære afskrivning for den resterende levetid. Afskrivning beregnes på grundlag af de resterende regnskabsår. For eksempel for regnskabsåret juli 1, 2015, gennem 30 juni 2016 begynder beregningen af afskrivninger den 1. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver regnskabsperiode. Længden på det næste regnskabsår bestemmes af de regnskabsperioder, der er oprettet på siden **Regnskabskalendere**. Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
+Hvis du vælger **Regnskabsår** i feltet **Afskrivningsår**, bruges den lineære afskrivning for den resterende levetid. Afskrivning beregnes på grundlag af de resterende regnskabsår. I forbindelse med regnskabsåret fra d. 1. juli 2015 til og med d. 30. juni 2016 starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver regnskabsperiode. Længden på det næste regnskabsår bestemmes af de regnskabsperioder, der er oprettet på siden **Regnskabskalendere**. Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 -   **Årligt** bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
 -   **Regnskabsperiode **beregner det samlede afskrivningsbeløb for regnskabsåret. Dette beløb er derefter påløbet i regnskabsperioder, der er defineret på siden **Regnskabskalendere** for den regnskabskalender, der er angivet for bogen.
@@ -73,6 +76,8 @@ Afskrivningsbeløbet er det samme hvert år: (Anskaffelsesomkostning – Restvæ
 | År 3 | (7.000-1.000) ÷ 3 = 2.000                   | 5.000                                 |
 | År 4 | (5.000-1.000) ÷ 2 = 2.000                   | 3.000                                 |
 | År 5 | (3.000-1.000) ÷ 1 = 2.000                   | 1.000                                 |
+
+
 
 
 

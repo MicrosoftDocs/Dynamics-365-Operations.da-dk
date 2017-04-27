@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Oversigt over performancestyring
 
+[!include[banner](includes/banner.md)]
+
+
 Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.  
 
 Som følgende diagram viser, er der tre sider, der kan hjælpe dig med at administrere processen:
@@ -34,7 +37,7 @@ Som følgende diagram viser, er der tre sider, der kan hjælpe dig med at admini
 -   Mål
 -   Performance-gennemgang
 
-I følgende diagram vises, hvordan de primære komponenter i performancestyring er relateret til hinanden. [![Oversigt over ydeevne](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+I følgende diagram vises, hvordan de primære komponenter i performancestyring er relateret til hinanden. [![Oversigt over performanceprocessen](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Performancekladde
 Før du afslutter din evaluering, indsamler du som medarbejder ofte oplysninger om aktiviteter eller hændelser, der bidrog til din succes i evalueringsperioden. Performancekladden er det sted, hvor du kan dokumentere disse aktiviteter og hændelser. Du kan desuden oprette fremtidige aktiviteter, der skal udføres for at hjælpe dig med at nå et mål, opfylde kravene i en udviklingsplan eller opfylde en performanceforpligtelse. Performancekladder er ikke er nødvendige for at oprette mål eller performanceevalueringer. 
@@ -132,7 +135,7 @@ Du kan bruge arbejdsgangen Arbejderevaluering til at styre godkendelsen af en ev
 Arbejdsgangen Arbejderevaluering har to elementer:
 
 1.  Godkend evaluering. Tilføj dette element for at styre statusændringen fra **Igangværende** til **Klar til evaluering**. Skift tildelingen til at bruge ledelseshierarkiet, hvor Employee.line-chefniveauet = 1.
-2.  Slutevaluering. Føj dette element for at kontrollere, at status ændres fra **klar til gennemgang** til **endelige gennemgang**. Ændre tildelingen af at bruge ledelseshierarkiet hvor Employee.line manager niveau = 1, hvis du vil manager til at godkende den endelige revision. Skift tildelingen til arbejdsgangsbruger, hvis du ønsker, at medarbejderen skal godkende den. Hvis du ønsker, at både chef og medarbejder skal godkende den, skal du tilføje to trin i arbejdsgangen og foretage den relevante tildeling for hvert enkelt trin i den rækkefølge, du ønsker, at godkendelserne skal følge.
+2.  Slutevaluering. Tilføj dette element for at styre statusændringen fra **Klar til evaluering** til **Slutevaluering**. Rediger tildelingen til at bruge ledelseshierarkiet, hvor Employee.line manager-niveauet = 1, hvis du ønsker, at lederen skal godkende den endelige revision. Skift tildelingen til arbejdsgangsbruger, hvis du ønsker, at medarbejderen skal godkende den. Hvis du ønsker, at både chef og medarbejder skal godkende den, skal du tilføje to trin i arbejdsgangen og foretage den relevante tildeling for hvert enkelt trin i den rækkefølge, du ønsker, at godkendelserne skal følge.
 
 ## <a name="setup"></a>Konfiguration
 Der er tre sider, der kan hjælpe dig med at angive oplysninger, der kræves for at fuldføre performanceprocessen: Siden **Målinger**, siden **Performancekladdens kildetyper** og siden **Evalueringstyper**.
@@ -148,5 +151,7 @@ Performancekladdens kildetyper beskriver, hvor performancekladderne kommer fra. 
 ### <a name="review-types"></a>Evalueringstyper
 
 Performanceevalueringstyper hjælper dig med at styre funktionsmåden for en evaluering. Du kan aktivere eller deaktivere arbejdsgangen for en evaluering. Hvis evalueringen ikke bruger arbejdsgang, kan du definere den standardstatus, der skal bruges, når evalueringen oprettes. Du kan også bestemme, om medarbejderen, chefen eller begge bliver bedt om at godkende evalueringen.
+
+
 
 

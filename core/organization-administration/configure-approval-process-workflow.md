@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen.
 
-Hvis du vil konfigurere en godkendelsesproces i arbejdsgangseditoren, skal du højreklikke på godkendelsesprocessen og derefter klikke på **egenskaber** at åbne den **egenskaber** form.
+Hvis du vil konfigurere en godkendelsesproces i arbejdsgangseditoren, skal du højreklikke på godkendelsesprocessen og derefter klikke på **Egenskaber** for at åbne formularen **Egenskaber**.
 Navngive godkendelsesprocessen
 -------------------------
 
@@ -40,7 +40,7 @@ Udfør følgende trin for at angive et navn til godkendelsesprocessen.
 Du kan konfigurere systemet, så et dokument behandles automatisk, hvis bestemte betingelser er opfyldt. Systemet kan f.eks. godkende udgiftsrapporter med totalbeløb på mindre end 100 kr. Udfør disse trin for at angive, hvornår systemet skal behandle dokumentet automatisk.
 1.  Klik på **Automatiske handlinger** i venstre rude.
 2.  Marker afkrydsningsfeltet **Aktivér automatiske handlinger**.
-3.  Click **Add condition**.
+3.  Klik på **Tilføj betingelse**.
 4.  Angiv en betingelse.
 5.  Angive yderligere betingelser, hvis det er nødvendigt.
 6.  Hvis du vil kontrollere, at de betingelser, du har angivet, er konfigureret korrekt, skal du udføre følgende trin:
@@ -71,7 +71,7 @@ Du kan sende beskeder til personer, når et dokument er godkendt, afvist, delege
     4.  Klik på **Indsæt**.
 
 7.  Klik på **Oversættelser** for at tilføje oversættelser af beskeden. Udfør følgende trin i den form, der vises:
-    1.  Click **Add**.
+    1.  Klik på **Tilføj**.
     2.  På den viste liste skal du vælge det sprog, du vil bruge, når du indtaster teksten.
     3.  Indtast teksten i tekstfeltet **Oversat tekst**.
     4.  Hvis du vil personalisere teksten, kan du indsætte pladsholdere.
@@ -112,11 +112,11 @@ Du kan sende beskeder til personer, når et dokument er godkendt, afvist, delege
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Specifikke Microsoft Dynamics 365 for brugere af operationer</td>
+    <td><strong>Brugere</strong></td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong>: liste indeholder alle Microsoft Dynamics 365 for brugere af operationer. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Microsoft Dynamics 365 for Operations. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

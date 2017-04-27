@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>Oversigt over indkøb og forsyning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over den funktionalitet, der er tilgængelig i modulet Indkøb og forsyning.
 
 Indkøb og forsyning dækker alle trin fra at identificere behov for produkter og tjenester gennem indkøb af produktet, kvittering, fakturering og behandling af betalinger med kreditorer. Indkøbsprocesser kan konfigureres mod specifikke forretningsmæssige behov ved at definere indkøbspolitikker og arbejdsgange.
@@ -37,14 +40,14 @@ Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner*, f
   
 Indkøbsafdelingen identificerer leverandører til påkrævede produkter og tjenester, og dette kan omfatte, at der sendes en *tilbudsanmodning* til flere potentielle leverandører. Det er muligt at dele specifikationerne for det produkt, der anmodes om, og potentielle leverandører kan se disse for at finde ud af, om de kan levere et produkt, der overholder dem. Kreditorer returnerer deres bud, som derefter gennemgås af indkøbsafdelingen, før de vælger den leverandør, de vil købe fra.  
 
-Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til leverandøren som et alternativ til en mere omfattende tilbudsanmodningsproces. Indkøbsforespørgslen kan bruges til at oprette betingelser som f.eks. priser, rabatter og leveringsdato for ordren. Hvis kreditorer er konfigureret til at bruge den **leverandør** portal, * * køb forespørgsel funktioner er deaktiveret. I stedet deles ordren på **kreditorportalenleverandør**, og når der er sendt en *bekræftelsesanmodning*, kan kreditoren sende ordren direkte.  
+Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til leverandøren som et alternativ til en mere omfattende tilbudsanmodningsproces. Indkøbsforespørgslen kan bruges til at oprette betingelser som f.eks. priser, rabatter og leveringsdato for ordren. Hvis kreditorer er konfigureret til at bruge **kreditorportalen**, ** er funktionen til indkøbsforespørgsel deaktiveret. I stedet deles ordren på **kreditorportalenleverandør**, og når der er sendt en *bekræftelsesanmodning*, kan kreditoren sende ordren direkte.  
 
 *Kreditorkataloger* kan bruges til at indsamle oplysninger om det produktudvalg, som kreditorerne kan levere. Kreditorer kan udgive deres eget katalog, så det er nemmere at holde kataloget opdateret. Det er muligt at vedhæfte en *godkendt kreditorliste* til et produkt, og dette kan være en hjælp under valg af kreditorer, når der åbnes nye indkøbsordrer, og forhindre brug af utilsigtede kreditorer.
 
 ## <a name="procurement"></a>Indkøb
 *Indkøbsordrer* kan oprettes på en række forskellige måder, herunder:
 
--   Som et resultat af varedisponering, som har identificeret et behov kræver, der et køb. Denne proces opretter indkøbsordreforslag, og når de er frigivet, oprettes indkøbsordrer.
+-   Som et resultat af varedisponering, som har identificeret et behov, der kræver et køb. Denne proces opretter indkøbsordreforslag, og når de er frigivet, oprettes indkøbsordrer.
 -   Via behandlingen af indkøbsrekvisitioner, der resulterer i indkøb.
 -   Via behandling af købsaftaler, hvor indkøbsordrer oprettes som frigivne ordrer fra aftalerne. Dette bruges normalt, når købsaftaler bruges til at repræsentere rammeordrer.
 -   Manuelt, når den indkøbsordre, der er oprettet, ikke er baseret på et andet dokument.
@@ -53,7 +56,7 @@ Indkøbsordrer, der er konfigureret med *købsgodkendelsesarbejdsgange*, kræver
 
 Købsordrer *bekræftes* for at angive, at der er oprettet en aftale med kreditoren. Indkøbsordren kommer derefter gradvist gennem forskellige statusser, indtil den til sidst bliver faktureret eller annulleret.  
 
-Når du opretter en indkøbsordre, er mange af felterne på forhånd med værdier, der som standard fra oplysningerne om kreditoren i den **leverandører** side. Det betyder, at der er et begrænset antal felter, du skal udfylde på indkøbsordren, selvom du kan vælge at tilsidesætte standardværdierne.
+Når du opretter en indkøbsordre, udfyldes mange af felterne på forhånd med værdier, der kommer fra de oplysninger, der er gemt om kreditoren på siden **Kreditorer**. Det betyder, at der er et begrænset antal felter, du skal udfylde på indkøbsordren, selvom du kan vælge at tilsidesætte standardværdierne.
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
@@ -86,5 +89,7 @@ Fakturerede indkøbsordrer registrerer passivet på kreditorkontoen i kreditorer
 
 ## <a name="vendor-performance"></a>Leverandørperformance
 Ydeevne og gennemgang af indkøb understøttes via *indkøbs- og kreditorapporter,* som indeholder forbrugsanalyse og analyse af kreditorydeevne.
+
+
 
 

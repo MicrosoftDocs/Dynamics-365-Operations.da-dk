@@ -1,5 +1,5 @@
 ---
-title: "Lagerværdier objekt"
+title: "Lagerobjektværdier"
 description: "Denne artikel indeholder oplysninger om beregning af værdierne i et lagerobjekt."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Lagerværdier objekt
+# <a name="inventory-object-values"></a>Lagerobjektværdier
 
 Denne artikel indeholder oplysninger om beregning af værdierne i et lagerobjekt. 
 
-En ny funktion, der hedder ** fysisk antal ** kan du se værdierne for en bestemt inventory-objektet. Et omkostningsobjekt repræsenterer enhedsniveauet, hvor der udføres lagerregnskab. Du kan finde flere oplysninger om omkostningsobjekter i [Omkostningsobjekter](cost-object.md). Klik for at se værdierne i et bestemt lager objekt, **fysisk antal** på den **omkostningsobjekt** side. Her er, hvordan værdien af et objekt på lageret beregnes: Inventory-objektet. Værdi = omkostningsobjekt. Gennemsnitlig kostpris × Inventory-objektet. Antallet i følgende eksempel viser, hvordan beregnes værdier for et objekt af typen lager og et omkostningsobjekt. To hændelser til modtagelse af produktet er registreret for vare A:
+Med en ny funktion, der hedder **Fysisk antal**, kan du se værdierne for et bestemt lagerobjektet. Et omkostningsobjekt repræsenterer enhedsniveauet, hvor der udføres lagerregnskab. Du kan finde flere oplysninger om omkostningsobjekter i [Omkostningsobjekter](cost-object.md). Hvis du vil se værdierne i et bestemt lagerobjekt, skal du klikke på **Fysisk antal** på siden **Omkostningsobjekt**. Her ses det, hvordan værdien af et lagerobjekt beregnes: Lagerobjekt. Værdi = omkostningsobjekt. Gennemsnitlig kostpris × lagerobjekt. Antallet i følgende eksempel viser, hvordan værdier beregnes for et objekt af typen lager og et omkostningsobjekt. To hændelser til modtagelse af produktet er registreret for vare A:
 
--   Produktkvittering 1: antal = 100 pc'er., beløb = $1,000.00, webstedet = 1, lager = 11, Batch nr. = B1
--   Produktkvittering 2: antal = 50 pc'er., beløb = $800.00, webstedet = 1, lager = 11, Batch nr. = B2
+-   Produktkvittering 1: antal = 100 stk., beløb = $1.000,00, websted = 1, lager = 11, batchnummer = B1
+-   Produktkvittering 2: antal = 50 stk., beløb = $800,00, websted = 1, lager = 11, batchnummer = B2
 
 I følgende tabel vises resultatet af beregningen for et omkostningsobjekt. Du kan få vist fakturaen på siden **Omkostningsobjekt**.
 
@@ -130,10 +130,10 @@ I følgende tabel vises resultatet af beregningen for et lagerobjekt. Du kan få
 <a name="see-also"></a>Se også
 --------
 
-[Cost objects](cost-object.md)
+[Omkostningsobjekter](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Omkostningsposter](cost-entries.md)
 
-[Hvad er nye og ændrede i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nyheder og ændringer i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

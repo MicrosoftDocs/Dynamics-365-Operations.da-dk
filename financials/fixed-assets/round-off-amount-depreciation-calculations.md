@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Afrund beløb til afskrivningsberegninger
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog.
 
-Afrunding af afskrivningsbeløb angives for hver profil. Afrunding af afskrivningsbeløb, der bruges i afskrivningsprofil for anlægsaktiver, der viser de fremtidige afskrivninger og værdi af anlægsaktivet og i forslagene til forbrugsafskrivning. Angiv laveste afskrivningsbeløb, der er tilladt i denne bog. 
+Afrunding af afskrivningsbeløb angives for hver bog. Afrunding af afskrivningsbeløb bruges i anlægsaktivets afskrivningsprofil, der viser den fremtidige afskrivning og værdi af anlægsaktivet samt i afskrivningsforslagene. Angiv laveste afskrivningsbeløb, der er tilladt i denne bog. 
 
 Afskrivningsbeløbet i den sidste afskrivningsperiode afrundes ikke, uanset den afrunding der er konfigureret. I slutningen af den sidste afskrivningsperiode skal værdien af anlægsaktivet være 0 (nul) eller scrapværdien, hvis der anvendes scrapværdi.
 
@@ -43,6 +46,8 @@ Afskrivning uden afrunding er beregnet til 2.444,44. Som følgende tabel viser a
 | Afrunding 1,00   | 2.444,00            |
 | Afrunding 10,00  | 2.440,00            |
 | Afrunding 100,00 | 2.400,00            |
+
+
 
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor. 
 
 <a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a>Værd at vide om salg af anlægsaktiver
@@ -40,11 +43,13 @@ Offentlige organisationer kan bruge spild og salgsforslag til at råde over mere
 Offentlige organisationer kræver typisk afstemte poster for den økonomiske dimension, der bruges til at angive midler. Når du overfører anlægsaktiver mellem midler, og middeldimensionen kræver afstemte poster, er felterne Overflyt fra og Overflyt til-konto på siden til aktivoverførsel påkrævet. 
 
 > [!NOTE] 
-> Dette er ikke en egenskab af anlægsaktiver eller midler. Det er derimod en egenskab for den økonomiske dimension. Når du overfører et anlægsaktiv, og økonomiske dimensioner, som er tilknyttet aktivet, kræver afstemte poster, er Overflyt fra og Overflyt til-konto påkrævet. 
+> Dette er ikke en egenskab ved anlægsaktiver eller midler. Det er derimod en egenskab for den økonomiske dimension. Når du overfører et anlægsaktiv, og økonomiske dimensioner, som er tilknyttet aktivet, kræver afstemte poster, er Overflyt fra og Overflyt til-konto påkrævet. 
 
 Overflyt fra og Overflyt til-konti er ikke de konti, hvor anlægsaktivets bogførte nettoværdi er indeholdt. Overflyt fra og Overflyt til-kontiene er derimod de hovedkonti, der bruges til at afstemme poster i økonomiske dimensioner. De bruges kun, når en økonomisk dimension for anlægsaktivet kræver afstemning. Overfør fra-kontoen har en debetpost, og overfør til-kontoen har en kreditpost.
 
 Du kan få flere oplysninger i [Midler i den offentlige sektor](funds-public-sector.md).
+
+
 
 
 

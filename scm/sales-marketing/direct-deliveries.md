@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Direkte leveringer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om direkte leveringer. Direkte leveringer sendes direkte fra leverandøren til kunden.
 
 Direkte leveringer sparer leveringstid og reducerer de omkostninger der er forbundet med at føre lager, fordi du ikke opbevarer varerne på lagerstedet, inden de sendes til kunden.  
@@ -49,5 +52,7 @@ Hvis du prøver at slette en salgsordrelinje, der har leveringstypen **Direkte l
 
 ## <a name="warehouse"></a>Lagersted
 Når du opretter en direkte levering, ankommer de varer, du sælger, aldrig fysisk til dit lager. Du skal dog stadig angive et lager på salgsordrelinjen. På samme måde kan plukkrav angives til varens varemodelgruppe. Men da varerne aldrig fysisk ankommer til lageret, ignoreres disse krav, når salgsordren er en direkte levering.
+
+
 
 

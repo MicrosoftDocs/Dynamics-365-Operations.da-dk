@@ -1,5 +1,5 @@
 ---
-title: Registrere serienumre i salgsprocessen
+title: Registrer serienumre i salgsprocessen
 description: "Denne artikel forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprocessen
+# <a name="register-serial-numbers-in-the-sales-process"></a>Registrer serienumre i salgsprocessen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
 
@@ -65,7 +68,7 @@ Ja, du kan køre en forespørgsel på følgeseddelkladdelinjen eller fakturaklad
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Kan jeg få vist de serienummererede varer, som jeg har på lager?
 Nej, du kan ikke se de serienummererede varer, du har på lager, fordi serienumre ikke registreres for varer, før varerne er solgt.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jeg registrere serienumre for varer med catchweight?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jeg registrere serienumre for fangstvægtvarer?
 Nej, du kan ikke registrere serienumre for fastvægtvarer under salgsprocessen. Hvis et produkt desuden er konfigureret som en fastvægtvare, kan du ikke tildele produktet til en sporingsdimensionsgruppe, der er konfigureret til kun at bruge serienumre under salgsprocessen.
 Kan jeg registrere serienumre på retail POS?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Ja, retail POS beder brugeren om at indtaste et serienummer, når brugeren sælg
 Denne funktion er tilgængelig for alle de roller, der kan vedligeholde salgsfølgesedler og salgsfakturaer. Følgende pligter giver arbejderne mulighed for at rette serienumre og registrere tomme poster for serienumre, der ikke kan læses eller scannes:
 -   Vedligehold korrektion af serienumre
 -   Vedligehold registrering af ulæselige serienumre
+
+
 
 
 

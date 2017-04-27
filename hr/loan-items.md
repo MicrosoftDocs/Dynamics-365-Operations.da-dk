@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Administrere elementer, der er udlånt til arbejdere
 
+[!include[banner](includes/banner.md)]
+
+
 Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere. 
 
 Følgende punkter viser eksempler på emner, som en virksomhed kan udlåne til arbejdere:
@@ -39,7 +42,7 @@ Alle fysiske emner skal have et tilknyttet udlånsemne. Alle udlånsemneposter s
 
 Når et emne udlånes, skal du angive den dato, emnet blev udlånt, samt den planlagte tilbageleveringsdato. Når emnet tilbageleveres, skal du angive den faktiske tilbageleveringsdato.
 
-Medarbejderne kan få vist poster for de varer, der er lånt ud til dem ved hjælp af arbejdsområdet Self service medarbejder. De kan også redigere eksisterende poster eller angive nye udlånsemner, hvis de har modtaget flere fysiske elementer.  Arbejdsprocessen kan konfigureres til at route ændringer i nye eller eksisterende udlånsemner gennem en godkendelsesproces. 
+Medarbejderne kan få vist poster for de varer, der er lånt ud til dem, ved hjælp af medarbejderens selvbetjeningsarbejdsområde. De kan også redigere eksisterende poster eller angive nye udlånsemner, hvis de har modtaget flere fysiske elementer.  Arbejdsprocessen kan konfigureres til at rute ændringer til nye eller eksisterende udlånsemner gennem en godkendelsesproces. 
 
 Ledere kan få vist udlånte emner for deres direkte rapporter. De kan også få tilladelse til at tilføje nye udlån på vegne af deres medarbejdere.
 
@@ -52,6 +55,8 @@ Hvis et emne bliver beskadiget eller mistes, skal du angive en fiktiv tilbagelev
 <a name="see-also"></a>Se også
 --------
 
-[Human resources](index.md)
+[Personale](index.md)
+
+
 
 

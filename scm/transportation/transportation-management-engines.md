@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
+[!include[banner](../includes/banner.md)]
+
+
 Transportstyringsprogrammer definerer den logik, der bruges til at oprette og behandle transportsatser i Transportstyring. 
 
 Et transportstyringsprogram beregner opgaver som f.eks. fragtmandens transportgebyr. Programsystemet gør det muligt at ændre beregningsstrategier ved kørsel baseret på data i Microsoft Dynamics 365 for Operations. Et transportstyringsprogram minder om en plug-in, der er relateret til en bestemt fragtfirmakontrakt.
@@ -58,7 +61,7 @@ Et transportstyringsprogram kræver, at du konfigurerer initialiseringsdataene, 
 I de fleste tilfælde kan du klikke på knappen **Parametre** i konfigurationsformularerne til transportstyringsprogrammet for at konfigurere initialiseringsdataene. **Eksempel på konfiguration af et satsprogram, der refererer til et kørselsprogram** Følgende eksempel viser den konfiguration, der kræves til et satsprogram, der er baseret på .NET-programtypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til et kørselsprogram.
 | Parameter             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-typen, der fortolker satsens grundlæggende tildelingsdata for et bestemt skema. Syntaksen for parameterværdien består af to segmenter, der er afgrænset af en lodret søjle ()|). Det første segment indeholder montagenavnet, der definerer assigner-typen. Det andet segment definerer det fuldt kvalificerede navn på assigner-typen. Dette omfatter typens navneområde. |
+| *RateBaseAssigner*    | .NET-typen, der fortolker satsens grundlæggende tildelingsdata for et bestemt skema. Syntaksen for parameterværdien består af to segmenter, der er afgrænset af en lodret streg (|). Det første segment indeholder montagenavnet, der definerer assigner-typen. Det andet segment definerer det fuldt kvalificerede navn på assigner-typen. Dette omfatter typens navneområde. |
 | *MileageEngineCode*   | Kørselsprogramkode, der identificerer kørselsprogramposten i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | Generisk programkode, der identificerer fordelingsprogrammet i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | **Program til transittid** og **Program til kørte kilometer** | Henter metadataene direkte fra formularen til konfiguration af kørselsprogrammet.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Eksempel på metadata for et satsprogram** Transportstyringsprogrammet kræver identifikation af oprindelsesadressen, stat og land/område for destinationen og start- og slutpunkt for forsendelsen. Når du bruger disse krav, vil metadataene se ud som dataene i tabellen nedenfor. Tabellen indeholder også oplysninger om, hvilken type inputdata er påkrævet.
--   Definere disse oplysninger i **transport management**&gt;**Setup** på den **Bedøm basistypen** side.
+-   Definer disse oplysninger i **Transportstyring** &gt; **Konfiguration** på siden **Satsbasistype**.
 
 | Forløb | Navn                          | Felttype | Datatype | Opslagstype    | Tvungen |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | 3        | Destination – startpostnummer | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 5        | Destinationsland           | Tilknytning | Streng    | Land/område |           |
+
+
 
 
 

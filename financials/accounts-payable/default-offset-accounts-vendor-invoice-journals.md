@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Standardmodkonti for kreditorfakturajournaler og fakturagodkendelseskladder
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Standardmodkonti bruges på følgende sider for kreditorfakturakladder:
@@ -92,6 +95,8 @@ Brug følgende tabel til at afgøre, hvor du bør tildele standardkonti for fakt
 </tr>
 </tbody>
 </table>
+
+
 
 
 

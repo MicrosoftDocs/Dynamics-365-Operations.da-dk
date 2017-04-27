@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Overtrædelser af overvågningspolitik og sager
 
+[!include[banner](../includes/banner.md)]
+
+
 I artiklen beskrives det, hvordan revisionssager genereres ud fra overtrædelser af overvågningspolitikregler. Den indeholder også oplysninger om de forskellige metoder for overvågningspolitikkernes brug af datointerval for dokumentvalg.
 
 <a name="how-audit-cases-are-generated"></a>Sådan genereres revisionssager
@@ -39,10 +42,10 @@ Overvågningspolitikker køres i batchtilstand. Når du kører en overvågningsp
 
 Hver politikregel evaluerer et sæt dokumenter. Politikreglen vælger dokumenter, der ligger i datointervallet for dokumentvalg, og som svarer til de angivne kriterier. En politikregel kan f.eks. vælge udgiftsrapporter, hvor der figurerer måltider, som overstiger 50,00. En anden politikregel kan måske vælge kreditorfakturaer, der skal betales til en bestemt kreditor. For hvert dokument, der er valgt i sættet, genereres der en overtrædelse. Denne overtrædelse registrerer, at et bestemt dokument, f.eks. faktura 12345, ikke overholder politikreglen. 
 
-Flere poster for overtrædelse af overvågning grupperes sammen og knyttes til overvågningssager. Sager til hver overvågningspolitik grupperes som standard efter overvågningspolitikregel. Hvis du foretrækker det, kan du vælge andre kriterier for gruppering ved brug af siden **Kriterier for sagsgruppering**. Du kan eksempelvis gruppere udgift sidehoveder af projekt-ID og leverandør fakturaer efter kreditorkonto. I dette tilfælde alle udgiftshoveder med samme projekt-ID vil blive grupperet under samme sag, og alle kreditorfakturaer med samme kreditorkonto grupperes under samme sag. 
+Flere poster for overtrædelse af overvågning grupperes sammen og knyttes til overvågningssager. Sager til hver overvågningspolitik grupperes som standard efter overvågningspolitikregel. Hvis du foretrækker det, kan du vælge andre kriterier for gruppering ved brug af siden **Kriterier for sagsgruppering**. Du kan f.eks. gruppere udgiftshoveder efter projekt-id og kreditorfakturaer efter kreditorkonto. I dette tilfælde bliver alle overtrædelser af udgiftshoveder, der har samme projekt-id, grupperet under samme sag, og alle kreditorfakturaer, der har samme kreditorkonto, bliver grupperet under samme sag. 
 
 > [!NOTE]
-> Regler for overvågningspolitikker, der er baseret på en **Dupliker** forespørgselstype, grupperes i overtrædelser ikke efter politikreglen eller efter de kriterier, der er angivet på den **sag grupperingskriterierne** side. De grupperes i stedet efter de kriterier, der er indbygget i overvågningspolitikreglen. Hvis en politikregel f.eks. evaluerer udgiftsrapporter for dubletudgifter med samme beløb, forhandler-id og dato, vil alle udgifter, der har samme værdier i disse felter, være én sag. Eventuelle udgifter, der har andre værdier, vil udgøre en særskilt sag.
+> Ved regler for overvågningspolitikker, der er baseret på forespørgselstypen **Dublet**, grupperes overtrædelser ikke efter politikregel eller efter de kriterier, der er angivet på siden **Kriterier for sagsgruppering**. De grupperes i stedet efter de kriterier, der er indbygget i overvågningspolitikreglen. Hvis en politikregel f.eks. evaluerer udgiftsrapporter for dubletudgifter med samme beløb, forhandler-id og dato, vil alle udgifter, der har samme værdier i disse felter, være én sag. Eventuelle udgifter, der har andre værdier, vil udgøre en særskilt sag.
 
 Når revisionssagerne er genereret, håndteres de med brug af typiske processer til sagsstyring.
 
@@ -56,6 +59,8 @@ Her er nogle andre måder, en overvågningspolitik bruger datointervallet for do
 -   I forbindelse med politikregler, der er baseret på forespørgselstypen **Listesøgning**, evaluerer politikken dokumenter til overvågede enheder, som er gyldige på den sidste dag i datointervallet for dokumentvalg.
 
 
-Yderligere oplysninger finder du [regler for overvågningspolitik](audit-policy-rules.md)
+Du kan finde flere oplysninger i [Overvåge politikregler](audit-policy-rules.md)
+
+
 
 

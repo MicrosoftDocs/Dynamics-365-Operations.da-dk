@@ -1,5 +1,5 @@
 ---
-title: "Godkende og bekræfter indkøbsordrer"
+title: "Godkend og bekræft indkøbsordrer"
 description: "I denne artikel beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO&quot;er."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Godkende og bekræfter indkøbsordrer
+# <a name="approve-and-confirm-purchase-orders"></a>Godkend og bekræft indkøbsordrer
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO'er.
 
@@ -73,12 +76,14 @@ Når en ordre er bekræftet, kan du ikke længere slette den. Du kan dog annulle
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversigt over indkøbsordrer](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Oprettelse af indkøbsordre](purchase-order-creation.md)
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Karantæneordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for lager. 
 
 Karantæneordrer kan bruges til at blokere lager. Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager. Lager, der er blevet sat i karantæne, overføres til et karantænelagersted. **Bemærk!** Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.
 
-## <a name="quarantine-onhand-inventory-items"></a>Karantæne onhand lagervarer
+## <a name="quarantine-onhand-inventory-items"></a>Sæt disponible lagervarer i karantæne
 Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling. Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**. Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder. Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Microsoft Dynamics 365 for Operations. Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**. Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
 
 ## <a name="quarantine-order-statuses"></a>Karantæneordrens status
@@ -64,6 +67,8 @@ Du kan kassere lageret som en del af karantæneordreprocessen. Når du behandler
 <a name="see-also"></a>Se også
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Lagerspærring](inventory-blocking.md)
+
+
 
 

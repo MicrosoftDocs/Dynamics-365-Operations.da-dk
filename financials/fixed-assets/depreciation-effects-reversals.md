@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Virkninger af afskrivninger med tilbageførsler
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives mulige konsekvenser af tilbageførsel af en anlægsaktivtransaktion. 
 
 Du kan tilbageføre anlægsaktivposteringer og de transaktioner, der er knyttet til et anlægsaktiv. Du kan også annullere en tilbageført postering. 
@@ -90,6 +93,8 @@ Afskrivningen er undervurderet med 16,95 (983,62 - 966,67).
 <a name="see-also"></a>Se også
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Afskrivning af anlægsaktiv](fixed-asset-depreciation.md)
+
+
 
 

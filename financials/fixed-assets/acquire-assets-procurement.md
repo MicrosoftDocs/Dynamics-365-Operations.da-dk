@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Anskaffelse af aktiver via indkøb
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver.
 
  Følgende metoder er tilgængelige til integration mellem Anlægsaktiver og Kreditor, og du skal bruge samme metode for alle anlægsaktiver:
@@ -49,7 +52,7 @@ Hvis en anskaffelse ikke kan bogføres, kan du enten angive en anskaffelsesposte
 > [!NOTE]                                                                                                                              
 > Hvis Anlægsaktiver er konfigureret til at begrænse bogføring af anskaffelsesposteringer til en bestemt brugergruppe, skal du være medlem af den pågældende brugergruppe for at bogføre anskaffelsesposteringer fra fakturaer.
 
-## <a name="methods-for-automatically-creating-fixed-assets"></a> Metoder til automatisk oprettelse af anlægsaktiver
+## <a name="methods-for-automatically-creating-fixed-assets"></a>Metoder til automatisk oprettelse af anlægsaktiver
 Når du bogfører en produktkvittering, hvor indstillingen Opret et nyt anlægsaktiv er markeret for en linje, oprettes der et nyt anlægsaktiv med statussen Endnu ikke anskaffet. Når du derefter bogfører en kreditorfaktura med et nyt anlægsaktiv, bogføres der en anskaffelsespostering for det nye aktiv, og status ændres til Åben, hvis Anlægsaktiver er konfigureret til at tillade anskaffelser af aktiver fra Kreditor, og du er medlem af en brugergruppe, der kan bogføre anskaffelsesposteringer. 
 
 Hvis indstillingen Nyt anlægsaktiv? ikke er markeret på indkøbslinjen, når du bogfører produktkvitteringen, men det er markeret, når du bogfører kreditorfakturaen, oprettes det nye anlægsaktiv, og det anskaffes med statussen Åben, hvis Anlægsaktiver er konfigureret til at tillade oprettelse og anskaffelse. Der oprettes ikke et ekstra aktiv, når du bogfører en kreditorfaktura, hvis der allerede blev oprettet ét, da du bogførte produktkvitteringen.
@@ -103,6 +106,8 @@ Der findes bl.a. følgende variationer for dette scenario:
 -   Hvis der kun er modtaget en delmængde, oprettes der ikke en anskaffelse af aktiv for den første kreditorfaktura på grund af brugergruppebegrænsninger. Den eneste måde, anskaffelsen kan bogføres på for den anden kreditorfaktura, der afslutter det bestilte antal, er, hvis der allerede er registreret en anskaffelsespostering for den første kreditorfaktura, og du er medlem af en brugergruppe, der kan bogføre anskaffelser.
 
 
-Yderligere oplysninger finder du [faste Aktiver integration](fixed-asset-integration.md).
+Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset-integration.md).
+
+
 
 

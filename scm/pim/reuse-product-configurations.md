@@ -1,5 +1,5 @@
 ---
-title: Genbruge produktkonfigurationer
+title: Genbrug produktkonfigurationer
 description: "Du kan angive, at du vil automatisk vil genbruge en eksisterende konfiguration for et produkt. Når en brugeren har fuldført en konfigurationssession, kontrollerer systemet, om der allerede findes en konfiguration, der svarer til brugerens valg. Hvis der findes en tilsvarende konfiguration, genbruges konfigurations-id, stykliste og rute."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Genbruge produktkonfigurationer
+# <a name="reuse-product-configurations"></a>Genbrug produktkonfigurationer
+
+[!include[banner](../includes/banner.md)]
+
 
 Du kan angive, at du vil automatisk vil genbruge en eksisterende konfiguration for et produkt. Når en brugeren har fuldført en konfigurationssession, kontrollerer systemet, om der allerede findes en konfiguration, der svarer til brugerens valg. Hvis der findes en tilsvarende konfiguration, genbruges konfigurations-id, stykliste og rute.
 
@@ -41,5 +44,7 @@ Hvis du vil aktivere konfigurationer, der kan genbruges, skal du angive følgend
 
 ## <a name="resetting-configuration-reuse"></a>Nulstilling af konfigurationsgenbrug
 Når du nulstiller konfigurationsgenbrug, bruges tidligere oprettede konfigurationer ikke længere. Du kan nulstille konfigurationsgenbrug, hvis styklisten eller ruten er ændret, men ingen relaterede attributter blev ændret. Du nulstiller konfigurationsgenbrug i **Generelt**-oversigtspanelet for komponenten.
+
+
 
 

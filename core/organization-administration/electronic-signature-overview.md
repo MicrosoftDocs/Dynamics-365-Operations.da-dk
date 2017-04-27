@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Oversigt over elektroniske signaturer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel giver et overblik over elektroniske signaturer og beskriver, hvordan de kan bruges i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-an-electronic-signature"></a>Hvad er en elektronisk signatur?
@@ -35,7 +38,7 @@ Denne artikel giver et overblik over elektroniske signaturer og beskriver, hvord
 En elektronisk signatur bekræfter identiteten på en person, som skal starte eller godkende en computerproces. I nogle brancher er en elektronisk signatur lige så juridisk bindende som en håndskrevet signatur. Elektroniske signaturer er et lovmæssigt krav i adskillige regulerede brancher som f.eks. lægemiddelsektoren, fødevareindustrien samt luftfart og forsvar. De er også nødvendigt for at overholde forskrifterne i 21 CFR afsnit 11, der er udstedt af det amerikanske fødevareministerium FDA (Food and Drug Administration) i USA. **Bemærk:** En elektronisk signatur er i sig selv ikke det samme som en digital signatur. En elektronisk signatur er blot en erstatning for en håndskrevet signatur, mens en digital signatur omfatter yderligere sikkerhedsmæssige foranstaltninger. En digital signatur kan bidrage til at identificere, om en anden bruger eller proces har forfalsket dataene. En digital signatur kan også bekræftes, og denne bekræftelse kan ikke gendrives af ejeren af det certifikat, som blev brugt til at signere dataene. Som beskrevet nedenfor har elektroniske signaturer i Microsoft Dynamics 365 for Operations en indbygget funktion til digital signatur.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektroniske signaturer i Microsoft Dynamics 365 for Operations
-I Microsoft Dynamics 365 for Operations kan du bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle processer har indbyggede funktioner til elektronisk signatur. Du kan også oprette tilpassede signaturkrav for enhver databasetabel og ethvert felt. Elektroniske signaturer har en indbygget funktion til digitale signaturer. Alle brugere, som signerer dokumenter, skal have tildelt et gyldigt kryptografisk certifikat. Når et dokument signeres, godkendes den private nøgle, som er tilknyttet det pågældende certifikat. Dynamics 365 for Operations registrerer oplysninger om elektroniske signaturer i en log for at angive et revisionsspor. Hvis du vil oprette elektroniske signaturer, se [opsætning af elektroniske signaturer (opgave guide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+I Microsoft Dynamics 365 for Operations kan du bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle processer har indbyggede funktioner til elektronisk signatur. Du kan også oprette tilpassede signaturkrav for enhver databasetabel og ethvert felt. Elektroniske signaturer har en indbygget funktion til digitale signaturer. Alle brugere, som signerer dokumenter, skal have tildelt et gyldigt kryptografisk certifikat. Når et dokument signeres, godkendes den private nøgle, som er tilknyttet det pågældende certifikat. Dynamics 365 for Operations registrerer oplysninger om elektroniske signaturer i en log for at angive et revisionsspor. Hvis du vil oprette elektroniske signaturer, skal du se under [Opsætning af elektroniske signaturer (Opgaveguide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Brugere, der kræver adgang til elektroniske signaturer
 Tre slags brugere kræver normalt sikkerhedsadgang til elektroniske signaturer: administratorer af elektroniske signaturer, underskrivere og revisorer af elektroniske signaturer.
@@ -78,6 +81,8 @@ Af og til vil du måske gerne have, at en bruger signerer for en anden brugers �
 1.  På siden **Indstillinger** under fanen **Konti** skal du klikke på **Angiv godkender**.
 2.  Vælg id'et for den bruger, som skal signere for en anden brugers ændringer, i feltet **Bruger-id for godkender**.
 3.  Vælg id'et for den bruger, hvis ændringer der skal signeres for, i feltet **Signer for bruger-id**.
+
+
 
 
 

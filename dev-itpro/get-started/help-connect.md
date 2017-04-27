@@ -28,18 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="connect-the-help-system"></a>Forbind hjælpesystemet
 
-Dette emne beskriver komponenterne i Hjælp-systemet til Microsoft Dynamics 365 for operationer. Det giver et overblik over hvordan du tilslutter disse komponenter og en oversigt over, hvordan du opretter brugerdefinerede Hjælp. 
+Dette emne indeholder beskrivelser af komponenter i Hjælp-systemet til Microsoft Dynamics 365 for Operations. Det giver et overblik over, hvordan du forbinder disse komponenter, og en oversigt over, hvordan du opretter brugerdefinerede Hjælp. 
 
 <a name="help-architecture"></a>Hjælp-arkitektur
 -----------------
 
-Følgende illustration viser delene af Dynamics-365 operationer Hjælp-systemet. Hjælpesystemet i produktet trækker artikler fra Dynamics-365 for operationer sted på https://docs.microsoft.com samt opgave hjælpelinjer, der er gemt i Forretningsplanlægningsmodel proces i livscyklus Services (LCS). 
-**Bemærk:** funktionerne, der vises i diagrammet med en stjerne (\*) er planlagt, men er endnu ikke tilgængelige. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+I følgende illustration vises de dele, som Dynamics 365 for Operations Hjælp-systemet består af. Hjælpesystemet i produkter trækker artikler fra Dynamics 365 for Operations-webstedet på https://docs.microsoft.com samt opgaveguides, der er gemt i Forretningsmodeldesigner i Microsoft Dynamics Lifecycle Services (LCS). 
+**Bemærk!** De funktioner, der vises i diagrammet med en stjerne (\*), er planlagt, men er endnu ikke tilgængelige. [![Hjælp-arkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Tilslutning af Hjælp-systemet
-Ved hjælp af den **systemparametre** side, systemadministratorer oprette forbindelse til delene af Hjælp-systemet til en implementering. [![Systemet parameterformen med indstillinger for Hjælp](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) på den **systemparametre** side, skal du følge disse trin:
+## <a name="connecting-the-help-system"></a>Forbindelse til Hjælp-systemet
+På siden **Systemparametre** kan systemadministratorer stykke Hjælp-systemet sammen med henblik på implementering. [![Systemparametre med hjælpeindstillinger](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) På siden **Systemparametre** skal du følge disse trin:
 
-1.  **Vigtigt:** første gang, du åbner den **at** under fanen skal du forbinde levetidsservices. Sørg for at klikke på hyperlinket i formularen, venter på forbindelsen, for at lukke dialogboksen og klik derefter på **OK** at komme til den **systemparametre** side. [![Forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "forbindelse til LCS")](./media/connect-to-lcs-crop.png)
+1.  **Vigtigt!** Første gang du åbner fanen **Hjælp**, skal du oprette forbindelse til Lifecycle Services. Husk at klikke på linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter klikke på **OK** for at få adgang til siden **Systemparametre**.[![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png "Opret forbindelse til LCS")](./media/connect-to-lcs-crop.png)
 2.  Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 3.  Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 4.  Angiv visningsrækkefølgen for BPM-bibliotekerne. Dette bestemmer den rækkefølge, som opgaveregistreringer fra bibliotekerne vises i på ruden **Hjælp**.
@@ -48,23 +48,23 @@ Når du har udført disse trin, kan du åbne ruden **Hjælp** og klikke på fane
 
 ### <a name="showing-translated-task-guides"></a>Visning af oversatte opgaveguider
 
-Oversatte opgave hjælpelinjer blev leveret i maj-2016 APQC samlet, og Kom godt i gang-biblioteket. Når du vil se den lokaliserede hjælp til opgaveguider i Dynamics 365 for Operations, skal du sørge for, at der er forbindelse til maj-biblioteket. Det sprog, der vises en vejledning til opgave i styres for hver bruger af sprogindstillinger under **indstillinger for**&gt;**indstillinger for**. **Bemærk:** Selvom mange opgaveguider er blevet oversat, vises navnene på de oversatte opgaveguider ikke i Dynamics 365 for Operations-klienten lige nu. Kun opgave hjælpelinjer, der blev udgivet i februar 2016 er også tilgængelig i oversættelse i maj biblioteket. Vi udsender et opdateret bibliotek med flere oversættelser.
+Oversatte opgaveguider blev introduceret i APQC Unified-biblioteket maj 2016, og introduktionsbiblioteket. Når du vil se den lokaliserede hjælp til opgaveguider i Dynamics 365 for Operations, skal du sørge for, at der er forbindelse til maj-biblioteket. Det sprog, en opgaveguide vises på, styres for hver bruger af sprogindstillingerne under **Indstillinger** &gt; **Indstillinger**. **Bemærk:** Selvom mange opgaveguider er blevet oversat, vises navnene på de oversatte opgaveguider ikke i Dynamics 365 for Operations-klienten lige nu. Kun de opgaveguider, der blev udgivet i februar 2016, er tilgængelige i oversatte versioner i maj-biblioteket. Vi udsender et opdateret bibliotek med flere oversættelser.
 
 -   Hvis en opgaveguide er blevet oversat, vises teksten i opgaveguiden på det valgte sprog, når du åbner denne opgaveguide.
 -   Hvis en opgaveguide ikke er blevet oversat, er det kun noget af teksten (tekst i kontrolelementerne), der vises på det valgte sprog, når du åbner guiden.
 
 ## <a name="creating-custom-help"></a>Oprettelse af tilpasset hjælp
-Du kan oprette en brugerdefineret hjælp til implementeringen af Dynamics 365 for Operations ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem på et bibliotek i LCS Business Proces. Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Yderligere oplysninger finder du [hvordan du opretter en opgave optagelsen skal bruges som dokumentation eller uddannelse](../user-interface/task-recorder.md).
+Du kan oprette en brugerdefineret hjælp til implementeringen af Dynamics 365 for Operations ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem på et bibliotek i LCS Business Proces. Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Du kan finde flere oplysninger under [Sådan opretter du en opgaveregistrering, der skal bruges som dokumentation eller uddannelse](../user-interface/task-recorder.md).
 
 <a name="see-also"></a>Se også
 --------
 
-[Help overview](help-overview.md)
+[Oversigt over Hjælp](help-overview.md)
 
-[Oversigt over optagelser](../user-interface/task-recorder.md)
+[Oversigt over Arbejdsrutineoptager](../user-interface/task-recorder.md)
 
 [Sådan opretter du en opgaveregistrering, der kan bruges til dokumentation eller undervisning](../user-interface/task-recorder-training-docs.md)
 
-[Oprette nye biblioteker til uddannelse for Dynamics 365 for operationer i levetidsservices ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Oprettelse af nye uddannelsesbiblioteker til Dynamics 365 for Operations i Lifecycle Services ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 

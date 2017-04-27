@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis debitorbetaling og den endelige betaling fuldt ud før rabatdatoen"
+title: "Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen"
 description: Denne artikel indeholder scenarier, der viser, hvordan du registrerer delbetalinger for en kunde og anvender kasserabatter i kasserabatperioden.
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udligne en delvis debitorbetaling og den endelige betaling fuldt ud før rabatdatoen
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder scenarier, der viser, hvordan du registrerer delbetalinger for en kunde og anvender kasserabatter i kasserabatperioden.
 
-Fabrikam sælger varer til debitor 4028. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage. Fakturaer skal betales inden 30 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligning-parametre er placeret på den **Accounts receivable parameters** side.
+Fabrikam sælger varer til debitor 4028. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="customer-invoice"></a>Debitorfaktura
-D. 25 Arnie indtaster og bogfører en faktura på 1.000,00 for debitor 4028. Arnie kan se denne postering på siden** Debitorposteringer**.
+Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4028. Arnie kan se denne postering på siden** Debitorposteringer**.
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -63,14 +66,14 @@ Arnie klikker på fanen **Kasserabat** for at få vist rabatbeløbet.
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Delvis betaling ved hjælp af siden Angiv debitorbetalinger
-Debitor 4028 sender en betaling af 500,00 den 1. Du kan angive denne betaling, Arne ikke klikke **linjer**. I stedet registrerer han betalingen ved at oprette en ny betalingskladde og derefter åbne siden **Angiv debitorbetalinger**. Han indtaster oplysningerne om betaling og markerer den faktura, som han har angivet. Når Arnie skriver **500,00** som beløbet, skriver han også **500,00** i feltet **Beløb til betaling** i gitteret. Da Fabrikam giver mulighed for en kasserabat på delbetalinger, kan han se, at en delvis kasserabat på 5,05 også bliver medtaget. Beregningen af denne rabat er 500,00 ÷ 0,99 × 0,01 = 5,05. (I denne beregning divideres 500,00 med 0,99, fordi der er en rabat på 1 %. Derfor betaler debitoren 99 % af fakturaen. Resultatet multipliceres derefter med rabatprocenten, som er 1 % eller 0,01. Hvis kunden tager den fulde rabat på 10,00, bliver det beløb, der skal afregnes 990,00.) Rabatoplysninger vises i gitteret i bunden af den **angiver debitorbetalinger** side.
+Debitor 4028 sender en betaling på 500,00 den 1. juli. For at angive denne betaling klikker Arnie ikke på **Linjer**. I stedet registrerer han betalingen ved at oprette en ny betalingskladde og derefter åbne siden **Angiv debitorbetalinger**. Han indtaster oplysningerne om betaling og markerer den faktura, som han har angivet. Når Arnie skriver **500,00** som beløbet, skriver han også **500,00** i feltet **Beløb til betaling** i gitteret. Da Fabrikam giver mulighed for en kasserabat på delbetalinger, kan han se, at en delvis kasserabat på 5,05 også bliver medtaget. Beregningen af denne rabat er 500,00 ÷ 0,99 × 0,01 = 5,05. (I denne beregning divideres 500,00 med 0,99, fordi der er en rabat på 1 %. Derfor betaler debitoren 99 % af fakturaen. Resultatet multipliceres derefter med rabatprocenten, som er 1 % eller 0,01. Hvis kunden tager den fulde rabat på 10,00, bliver det beløb, der skal afregnes 990,00). Rabatoplysninger vises i gitteret i bunden af siden **Angiv debitorbetalinger**.
 
 | Kasserabatbeløb, der skal medtages | Medtaget kasserabat | Beløb til betaling |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Delvis betaling ved hjælp af kladdelinjer
-I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises hvor Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Han ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
+I stedet for at åbne siden **Angiv debitorbetalinger** i betalingskladden, kan Arnie klikke på **Linjer** for at angive en betaling. Udbetalingskladden vises, og Arnie kan angive en linje for debitor 4028. Arnie åbner derefter siden **Udlign posteringer**, så han kan markere fakturaen til udligning. Arnie markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **500,00**. Han ser igen, at værdien i feltet **Kasserabatbeløb** er **10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **5,05**. Arnie udligner derfor 505,05 af denne faktura.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -143,6 +146,8 @@ Arnie bogfører denne betalingskladde og gennemgår debitorposteringerne på sid
 | DISC-10010 | Kasserabat    | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 | ARP-10011  | Betaling          | 7/8/2015  |         |                                      | 495,00                                | 0,00    | USD      |
 | DISC-10011 | Kasserabat    | 7/8/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+
+
 
 
 

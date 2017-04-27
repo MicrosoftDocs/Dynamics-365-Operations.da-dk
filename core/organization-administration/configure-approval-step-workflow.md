@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurere et godkendelsestrin i en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 
 Hvis du vil konfigurere et godkendelsestrin i arbejdsgangseditoren, skal du højreklikke på godkendelsestrinnet og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter nedenstående procedurer til at konfigurere egenskaberne for godkendelsestrinnet.
@@ -124,10 +127,10 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
     </tr>
     <tr class="even">
     <td>Bruger</td>
-    <td>Specifikke Microsoft Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal tildeles trinnet, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal tildeles trinnet, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Hvis en bruger ikke håndterer et dokument inden for den tildelte tid, er dokume
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, dokumentet skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, dokumentet skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Hvis en bruger ikke håndterer et dokument inden for den tildelte tid, er dokume
 
 5.  Gentag trin 3 til 4 for hvert bruger, der skal føjes til eskaleringsstien. Du kan ændre brugernes rækkefølge.
 6.  Hvis brugerne i eskaleringsstien ikke reagerer inden for den tildelte tid, håndteres dokumentet automatisk af systemet. Hvis du vil angive den handling, som systemet skal udføre, skal du vælge rækken **Handling** og derefter vælge en handling på fanen **Sluthandling**.
+
+
 
 
 

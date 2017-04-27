@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Indstillinger for beregning af hele beløbet og intervaller for momskoder
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
 
 Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge, hvordan en momskode skal beregnes.
@@ -56,10 +59,10 @@ Momsen beregnes af hele det momspligtige beløb.
 
 | Momspligtigt beløb (pris) | Kalkulation    | Moms |
 |------------------------|----------------|-----------|
-| 35,00                  | 35.00 \* 0.30  | 10,50     |
-| 50,00                  | 50.00 \* 0.30  | 15,00     |
-| 85,00                  | 85.00 \* 0.20  | 17,00     |
-| 305,00                 | 305.00 \* 0.10 | 30,50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50     |
+| 50,00                  | 50,00 \* 0,30  | 15,00     |
+| 85,00                  | 85,00 \* 0,20  | 17,00     |
+| 305,00                 | 305,00 \* 0,10 | 30,50     |
 
 ## <a name="example-interval-method-of-calculation"></a>Eksempel: Beregningsmåde er interval
 På siden Værdier er momssatserne defineret i følgende intervaller:
@@ -75,14 +78,16 @@ Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
 
 | Momspligtigt beløb (pris) | Kalkulation                                                               | Moms |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35.00 \* 0.30                                                             | 10,50     |
-| 50,00                  | 50.00 \* 0.30                                                             | 15,00     |
-| 85,00                  | (50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)                          | 22,00     |
-| 305,00                 | (50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50) | 45,50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50     |
+| 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
+| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
  
 
-Yderligere oplysninger finder du [bestemmelse af afgiftssatser for salg baseret på felterne beregningsgrundlaget og beregning metode](marginal-base-field.md).
+Du kan finde flere oplysninger i [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md).
+
+
 
 
 

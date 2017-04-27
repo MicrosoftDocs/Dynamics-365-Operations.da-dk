@@ -1,6 +1,6 @@
 ---
 title: Regnskab i den offentlige sektor i Frankrig
-description: I denne artikel beskrives de offentlige regnskab i Frankrig.
+description: I denne artikel beskrives regnskaber for den franske offentlige sektor.
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,27 +28,32 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="public-sector-accounting-in-france"></a>Regnskab i den offentlige sektor i Frankrig
 
-I denne artikel beskrives de offentlige regnskab i Frankrig.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives regnskaber for den franske offentlige sektor.
 
 <a name="prerequisites"></a>Forudsætninger
 -------------
 
-De franske offentlige funktioner er tilgængelige, når følgende betingelser er opfyldt:
+Funktioner til den offentlige sektor i Frankrig er tilgængelige, når følgende betingelser er opfyldt:
 
--   Den **offentlige** konfigurationsnøglen og **fransk regulerende** undernøgle, der er valgt.
--   Den **Brug franske offentlige regnskabsregler** indstilling er valgt på den **budgetparametre** side.
--   Standardkoden for land/region er Frankrig.
+-   Konfigurationsnøglen **Offentlig sektor** og undernøglen **Franske myndighedskrav** vælges.
+-   Indstillingen **Brug konteringsreglerne for den franske offentlige sektor** er valgt på siden **Budgetparametre**.
+-   Standardkoden for land/område er Frankrig.
 
-Yderligere installationstrin for bestemte funktioner, der er omfattet af artikel for hver funktion.
+Yderligere konfigurationstrin for bestemte funktioner er omfattet af artiklen for hver funktion.
 
-## <a name="french-public-sector-topics"></a>Franske offentlige emner
--   [Mandats de paiement](emea-fra-mandats-de-paiement.md) direktøren bruger mandat de paiement til at underrette bogholderen, organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og at godkende bogholder til at betale dette beløb.
--   [Kreditorbetaling af faktura indeholder](emea-fra-vendor-invoice-payment-holds-public-sector.md) indeholder de almindelige processer, der er relateret til betaling, for kreditorfakturaer, der øges for franske enheder i den offentlige sektor.
--   [Titres de recette](emea-fra-titres-de-recette-public-sector.md) direktøren bruger titer de recette til at underrette bogholderen, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed og at tillade bogholder til indsamling af dette beløb.
--   [Forpligtelser](emea-fra-commitments-public-sector.md) forpligtelser, der bruges til at reservere budgetterede beløb, så du kan spore udtrykkeligt budgetreservationer for administration og rapportering i hele udgiftscyklussen, en organisation.
--   [Procurement and sourcing](emea-fra-procurement-sourcing-public-sector.md)
-    -   Standardfunktioner, der er relateret til købsaftaler er suppleres for franske enheder i den offentlige sektor.  For eksempel kan du oprette trancher og partier, styre adgangen afdeling, administrere kreditor certificeringer og konfigurere største entreprenører, medkontrahenter og underleverandører. Disse funktioner hjælper dig med at opfylde kravene i de kode des Marchés publikumsgrupper.
-    -   For at opfylde offentlige lovgivningsmæssige krav i Frankrig, kan du muligvis angive forbrugsgrænser til køb i de indkøbskategorier, som er defineret af Clé de Contrôle ordren. A **forbrugsgrænser efter kategori** regel, der bruges sammen med indkøbspolitikker, kan du bruge ikrafttrædelsesdato attributter, forventede udgifter beløb og tærskelbeløb til støtte for obligatorisk udtagning praksis og for at sikre effektiv og effektiv anvendelse af offentlige midler.
+## <a name="french-public-sector-topics"></a>Emner for den franske offentlige sektor
+-   [Mandat de paiement](emea-fra-mandats-de-paiement.md) Direktøren bruger mandat de paiement til at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet.
+-   [Spærringer for kreditorfakturabetaling](emea-fra-vendor-invoice-payment-holds-public-sector.md) De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer, er suppleret for franske enheder i den offentlige sektor.
+-   [Titre de recette](emea-fra-titres-de-recette-public-sector.md) Direktøren bruger titre de recette til at underrette bogholderen om, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed, og til at godkende, at bogholderen opkræver beløbet.
+-   [Forpligtelser](emea-fra-commitments-public-sector.md) Forpligtelser bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen.
+-   [Indkøb og forsyning](emea-fra-procurement-sourcing-public-sector.md)
+    -   De standardfunktioner, der vedrører købsaftaler, suppleres for franske enheder i den offentlige sektor.  For eksempel kan du oprette trancher og partier, styre adgangen til afdelinger, administrere kreditorcertificeringer og konfigurere de største kontrahenter, medkontrahenter og underleverandører. Disse funktioner gør det nemmere at opfylde kravene i Code des Marchés Publics.
+    -   For at opfylde offentlige lovgivningsmæssige krav i Frankrig skal du muligvis angive forbrugsgrænser for køb i de indkøbskategorier, som er defineret af Clé de Contrôle Marché. Med en **Forbrugsgrænser efter kategori**-politikregel, der bruges sammen med indkøbspolitikregler, kan du bruge attributter for ikrafttrædelsesdato, estimerede udgiftsbeløb og tærskelbeløb til at understøtte krævede indkøbspraksis og til at sikre effektiv brug af offentlige midler.
+
+
 
 
 

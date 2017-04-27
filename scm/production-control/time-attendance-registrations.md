@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Registrering af tid og fremmøde
 
+[!include[banner](../includes/banner.md)]
+
+
 Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I denne artikel beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler. 
 
 <a name="registrations"></a>Registreringer
@@ -62,7 +65,7 @@ Efter konfigurationen kan arbejderne angive forskellige former for registreringe
 -   Indirekte aktiviteter, der er ikke-produktive aktiviteter, en arbejder kan deltage i i løbet af arbejdsdagen. Eksempler på disse aktiviteter kan være møder eller rengøring af arbejdsområdet.
 -   Overtid, som kan registreres enten som ekstra timer, flekstid eller overtid.
 
-## <a name="adding-clockout-registrations"></a>Tilføjer clockout registreringer
+## <a name="adding-clockout-registrations"></a>Tilføjelse af udstemplingsregistreringer
 Hvis arbejdere glemmer at stemple ud ved afslutningen af deres arbejdsdag, kan den manglende registrering tilføjes ved at køre et batchjob. Systemet sammenligner komme-tiden og gå-tiden i henhold til den profil, der er knyttet til arbejderen, og indsætter automatisk den manglende gå-registrering, så den stemmer overens med profilens sluttidspunkt. Både komme- og gå-registreringer er afgørende for den efterfølgende beregning og godkendelse af tidsregistreringer, før de kan overføres til lønregnskabet.
 
 ## <a name="calculating-registrations"></a>Beregne registreringer
@@ -113,6 +116,8 @@ Arbejdere med jobopgaver, der ikke kræver øjeblikkelig feedback, som det er ti
 -   Tidsforbrug
 -   Projektgebyrer
 -   Projektvarer
+
+
 
 
 

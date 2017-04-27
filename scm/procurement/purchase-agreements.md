@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Købsaftaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter. 
 
 Købsaftaler kan gælde for en bestemt mængde af et produkt, et bestemt valutabeløb af et produkt eller for et bestemt valutabeløb af produkter i en indkøbskategori. Priserne og rabatterne i købssaftalen gå forud for de priser og rabatter, der er angivet i de eventuelle samhandelsaftaler, der måtte findes.  
@@ -70,7 +73,7 @@ Området **Aftale** viser det samlede antal eller det samlede beløb, som salgsa
 Du kan få adgang til IO-linjerne og de fakturalinjer, der bidrager til opfyldelsesberegningen, ved at vælge handlingen **Relaterede oplysninger** på linjerne eller i hovedet i en købsaftale.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Bekræftelser og versionsoplysninger for købsaftaler
-Når du bekræfter en købsaftale, gemmes den aktuelle version af købsaftalen i en historiktabel. Hvis du ændrer købsaftalen, kan du bekræfte den igen for at gemme en anden version af købsaftalen i historikken. Hvis du ikke bekræfter en købsaftale, kan du stadig bruge den til at oprette POs. Dog er ikke historikoplysninger for købsaftalen gemt. Du kan få vist eller udskrive alle versioner af aftalen. Derefter kan du dele revisioner med din leverandør for at opnå godkendelse.
+Når du bekræfter en købsaftale, gemmes den aktuelle version af købsaftalen i en historiktabel. Hvis du ændrer købsaftalen, kan du bekræfte den igen for at gemme en anden version af købsaftalen i historikken. Hvis du ikke bekræfter en købsaftale, kan den stadig bruges til at oprette IO'er. Historikoplysningerne for købsaftalen bliver dog ikke gemt. Du kan få vist eller udskrive alle versioner af aftalen. Derefter kan du dele revisioner med din leverandør for at opnå godkendelse.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Anvende købsaftaler i bestillingsprocessen
 Når du opretter en indkøbsordre, kan du anvende en købsaftale til den. Oplysninger fra betingelserne for aftalen, såsom betalingsbetingelser, leveringsbetingelser og leveringsadresse, kopieres derefter til hovedet i indkøbsordren. Hvis indkøbsordren indeholder en eller flere ordrelinjer for produkter og kategorier, der er omfattet af aftalen, bruges priser og rabatter fra købsaftalen på disse linjer. Beløbet eller antallet på ordrelinjen bidrager til opfyldelse af forpligtelsen i købsaftalen. Samme indkøbsordre kan indeholde både linjer, der ikke er relateret til en købsaftale, og linjer, der har en forpligtelse til en købsaftale.  
@@ -91,8 +94,10 @@ Du kan kopiere økonomiske dimensioner til dokumentoverskrifter eller til enkelt
 <a name="see-also"></a>Se også
 --------
 
-[Opret en købsaftale (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Opret en ny købsaftale (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Oprette en købsaftræksordre fra en købsaftale (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Opret en købsaftræksordre ud fra en købsaftale (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

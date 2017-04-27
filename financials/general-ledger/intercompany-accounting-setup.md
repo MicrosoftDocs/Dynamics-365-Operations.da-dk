@@ -1,6 +1,6 @@
 ---
-title: "Intern mellemregning opsætning"
-description: "Dette emne forklarer, hvordan du kan konfigurere mellemregning, så du kan bruge IC-kladder til Finans fordelinger og økonomikladder daglige kladder, kreditor fakturajournaler og betalingskladder."
+title: Konfiguration af mellemregning
+description: "I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,25 +25,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="intercompany-accounting-setup"></a>Intern mellemregning opsætning
+# <a name="intercompany-accounting-setup"></a>Konfiguration af mellemregning
 
-Dette emne forklarer, hvordan du kan konfigurere mellemregning, så du kan bruge IC-kladder til Finans fordelinger og økonomikladder daglige kladder, kreditor fakturajournaler og betalingskladder.
+[!include[banner](../includes/banner.md)]
 
-IC-kladder kan oprettes i forskellige scenarier, som for daglige kladder, fakturajournaler kreditor, Finans tildelinger og centraliserede betalinger. Hvis du vil aktivere disse scenarier, skal du konfigurere mellemregning.
+
+I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder.
+
+Interne kladder kan oprettes i forskellige scenarier, f.eks. for kassekladder, kreditorfakturakladder, finansfordelinger og centraliserede betalinger. Hvis du vil aktivere disse scenarier, skal du konfigurere mellemregning.
 
 ## <a name="define-main-accounts"></a>Definere hovedkonti
-Først skal du oprette hovedkontoen for mellemregningen, som skal bruges til regnskabsposterne Forfalden til og forfalden fra. Det er en god ide at bruge entydige hovedkonti for hver virksomhed for at forenkle afstemning og eliminering af interne regnskabsposter. Hvis du bruger en samhandelspartner eller et modstykke dimension til at identificere den interne part, kan du definere dimensionen som en fast dimension på hovedkontoen, der er defineret i mellemregning. Når du har oprettet de hovedkonti, skal du indstille den **Main kontotype** til **balancen** på den **hovedkonti** side.
+Først skal du oprette hovedkontoen for mellemregningen, som skal bruges til regnskabsposterne Forfalden til og forfalden fra. Det er en god ide at bruge entydige hovedkonti for hver virksomhed for at forenkle afstemning og eliminering af interne regnskabsposter. Hvis du bruger en samhandelspartner eller en modpartsdimension til at identificere den interne part, kan du definere denne dimension som en fast dimension i hovedkontoen, der er defineret i mellemregningen. Når du har oprettet hovedkontiene, skal du indstille feltet **Hovedkontotype** til **Balance** på siden **Hovedkonti**.
 
 ## <a name="define-journal-names"></a>Definere kladdenavne
-Derefter skal du angive et kladdenavn. Angiv den **kladdetype** til **daglige** på den **kladdenavne** side. Det er en god ide at bruge et bestemt kladdenavn til mellemregning.
+Derefter skal du angive et kladdenavn. Indstil feltet **Kladdetype** til **Dagligt** på siden **Kladdenavne**. Det er en god ide at bruge et bestemt kladdenavn til mellemregning.
 
-## <a name="define-intercompany-accounting-setup"></a>Definere interne regnskab opsætning
-Den **mellemregning** side bruges til at oprette par af juridiske enheder, der kan udføre med hinanden. Den interne regnskab opsætning er delt, så opsætningen er synlig fra inden for alle juridiske enheder. Når du opretter en ny juridisk enhedspar, sikre, at du er opmærksom på, hvilken juridisk enhed er defineret som det oprindelige firma kontra destinationsregnskabet. Når du angiver IC-transaktioner, bestemmer transaktionen, hvilken juridisk enhed er iværksættelse eller med oprindelse i transaktionen. Eksempelvis er til brug ved mellemregning angivet for USMF (med oprindelse) og USSI (destination). Hvis brugeren er aktiv i USSI og indtaster en IC-transaktion med USMF, bogføres posteringen ikke fordi de mellemregninger er kun defineret for USMF der igangsætter. Hvis enten regnskab stammer kan en transaktion, skal du oprette et andet par juridiske enhed for den gensidige opsætning. 
+## <a name="define-intercompany-accounting-setup"></a>Definere konfiguration af mellemregning
+Siden **Mellemregning** bruges til at oprette de par af juridiske enheder, der kan udføre transaktioner indbyrdes. Konfigurationen af mellemregning deles, så opsætningen er synlig fra alle juridiske enheder. Når du opretter et nyt juridisk enhedspar, skal du være opmærksom på, hvilken juridisk enhed der er defineret som den oprindelige virksomhed kontra modtagervirksomheden. Når du angiver mellemregninger, bestemmer transaktionen, hvilken juridisk enhed der iværksætter transaktionen, eller hvor transaktionen har sin oprindelse. Eksempelvis konfigureres det interne regnskab til USMF (oprindelse) og USSI (destination). Hvis brugeren er aktiv i USSI og indtaster en mellemregning med USMF, bogføres transaktionen ikke, fordi mellemregninger kun defineres, når USMF er oprindelsen. Hvis begge virksomheder kan være oprindelse til en transaktion, skal du oprette endnu et juridisk enhedspar til den reciprokke opsætning. 
 
-Vælg den **debitere konto (skylder)** og **kreditkonto (at)** for både fra, og destinationslagerstedet juridiske enhed. Angive, hvilke **kladdenavn** der skal bruges, når posteringen oprettes i destinationsregnskabet. Kladde til det oprindelige firma allerede er kendt, da den er valgt af brugeren, når du opretter den interne transaktion. 
+Vælg **Debetkonto (forfalden til)** og **Kreditkonto (forfalden fra)** for både den juridiske oprindelses- og destinationsenhed. Angiv, hvilket **Kladdenavn** der skal bruges, når transaktionen oprettes i modtagervirksomheden. Kladden for den oprindelige virksomhed allerede er kendt, da den er valgt af brugeren, når du opretter den interne transaktion. 
 
-Vælg, hvilken juridisk enhed modtager regnskab til supplerende beløb, som kasserabatten eller realiserede gevinster/tab for centraliserede betalinger. 
+Vælg til sidst, hvilken juridisk enhed der modtager regnskabet for supplerende beløb, som kasserabatten eller realiserede gevinster/tab for centraliserede betalinger. 
 
-En gensidig relation kan nemt konfigureres på den **mellemregning** side ved hjælp af den **opretter gensidig relation** knappen, når du har oprettet det første par juridiske enhed. Når parret gensidige oprettes, kopieres oplysningerne for destinationsregnskabet, til det oprindelige regnskab og omvendt. Den kladde, der er defineret for destinationsregnskabet forbliver. De fleste organisationer bruger samme navngivningskonventionen for deres kladdenavne, så kladdenavnet er den samme. Hvis kladdenavnet er forskellige, vises en advarsel på feltet for at fortælle dig, at kladden ikke findes, og du kan vælge en anden kladde.
+En gensidig relation kan nemt konfigureres på siden **Mellemregning** ved hjælp af knappen **Opret reciprok relation**, når du har oprettet det første juridiske enhedspar. Når det gensidige par er oprettet, kopieres oplysningerne for modtagervirksomheden til den oprindelige virksomhed og omvendt. Den kladde, der er defineret for modtagervirksomheden, forbliver. De fleste organisationer bruger samme navngivningskonvention til deres kladdenavne, så kladdenavnet er det samme. Hvis kladdenavnet er anderledes, vises en advarsel i feltet om, at kladden ikke findes, og du kan vælge en anden kladde.
+
+
 
 

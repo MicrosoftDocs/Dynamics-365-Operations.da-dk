@@ -26,55 +26,60 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bills-of-exchange"></a>Oprette veksler
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives trinnene til oprettelse af veksler.
 
 En veksel er en skriftlig eller elektronisk anvisning fra en kunde, der angiver, at en anden part, normalt en bank, skal betale et angivet beløb til firmaet. Når du bruger en veksel som betaling for en salgsordrefaktura eller fritekstfaktura, krediterer du debitorkontoen. Denne kreditering sikres af vekslen, indtil kunden betaler vekslen til banken. Du udligner som regel fakturaen med vekslen på forfaldsdatoen. Når du modtager besked fra banken om, at vekslen er accepteret, kan du lukke vekslen. Du kan udstede en veksel via banken på et af følgende tidspunkter:
 
 -   På forfaldsdatoen. Denne metode kaldes remitter til rykker.
--   Før forfaldsdatoen, typisk på den rabatdato, der er angivet i de betalingsbetingelser, der er konfigureret for kunden. Når du bogfører posteringen, bogføres rabatbeløbet på en udgiftskonto. Det resterende beløb er en gæld til dig, indtil banken modtager betaling fra debitoren. Denne metode kaldes remitter til rabat.
+-   Før forfaldsdatoen og som regel på den rabatdato, der er angivet i de betalingsbetingelser, der er oprettet for kunden. Når du bogfører posteringen, bogføres rabatbeløbet på en udgiftskonto. Det resterende beløb er en gæld til dig, indtil banken modtager betaling fra debitoren. Denne metode kaldes remitter til rabat.
 
 ## <a name="set-up-posting-profiles-for-bills-of-exchange"></a>Angive posteringsprofiler for veksler
-Brug af **debitorposteringsprofiler** side til at konfigurere posteringsprofiler, der kan bruges med veksler, protestere mod veksler, remitteringer til rykker og remitteringer til rabat. I den **samlekonto** skal du vælge det tilfælde sumkontoen vekselbeløb skal bogføres på. Denne konto debiteres eller krediteres afhængigt af veksel transaktion:
--   Veksler debiteres denne konto, når der bogføres en veksel, og den krediteres, når der bogføres en remittering til rabat eller en remittering til rykker.
+Brug siden **Debitor, posteringsprofiler** til at oprette posteringsprofiler, du kan bruge sammen med veksler, til at protestere mod veksler, remitteringer til rykker og remitteringer til rabat: Vælg den samlekonto, du vil bogføre vekselbeløb på, i feltet **Samlekonto**. Denne konto debiteres eller krediteres, afhængigt af typen af vekselposteringen:
+-   I forbindelse med veksler debiteres denne konto, når der bogføres en veksel, og den krediteres, når der bogføres en remittering til rabat eller en remittering til rykker.
 -   I forbindelse med protesterede veksler debiteres denne konto, når der bogføres en protesteret veksel.
 -   I forbindelse med remitteringer til rykker debiteres denne konto, når der bogføres en remittering til rykker.
 -   I forbindelse med remitteringer til rabat debiteres denne konto, når der bogføres en remittering til rabat.
 
-I den **udligne konto** skal du vælge den kontantkonto vekselbeløb skal bogføres på. Denne konto debiteres, når en veksel udlignes. I den **moms forudbetalinger** skal du vælge den samlekonto, du vil bogføre momsbeløb på, når veksler bruges til forudbetalinger. I den **finanskonto til rabatpassiver**, skal du vælge den konto, du vil bogføre rabatbeløbet for remitteringer til rabat til. Denne konto krediteres, når der bogføres en remittering til rabat.
+Vælg den afregningskonto, du vil bogføre vekselbeløb på, i feltet **Afregn konto**. Denne konto debiteres, når en veksel udlignes. Vælg i feltet **Momsforudbetalinger** den samlekonto, du vil bogføre momsbeløb på, når veksler bruges til forudbetalinger. Vælg den konto, som du vil bogføre rabatbeløbet for remitteringer til rabat på, i feltet **Passiver for rabatkonto**. Denne konto krediteres, når der bogføres en remittering til rabat.
 
-## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Angive debitorparametre for veksler
-På den **Accounts receivable parameters** side, standard posteringsprofiler for veksler, der er angivet på den **Finans og moms** tab. Nummerserier, der er defineret på den **nummerserier** tab.
+## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Angiv debitorparametre for veksler
+Standardposteringsprofilerne angives under fanen **Finans og moms** på siden **Debitorparametre**. Nummerserier defineres under fanen **Nummerserier**.
 Angive kladdenavne for veksler
 ------------------------------------------
 
-På den **kladder navne** skal du oprette mindst fem kladdenavne, der skal bruges til veksler. Her er kladdetyper:
--   **Tegning af veksler** – Opret et kladdenavn til Udsted veksel kladden.
--   **Debitorprotest af veksel** – Opret et kladdenavn i kladden til Protest af veksler.
--   **Debitorgenudstedelse af veksel** – Opret et kladdenavn for den genudstedelse af veksler.
--   **Kunden bankremittering** – Opret et kladdenavn til remitteringskladde.
--   **Udligning af veksler** – Opret et kladdenavn i kladden til udligning af veksler.
+Opret mindst fem kladdenavne, der kan bruges til veksler på siden **Kladdenavne**. Her er kladdetyperne:
+-   **Debitorudstedelse af veksel** – Opret et kladdenavn til kladden til udstedelse af veksel.
+-   **Debitorprotest af veksel** – Opret et kladdenavn til kladden til protest af veksel.
+-   **Debitorgenudstedelse af veksel** – Opret et kladdenavn til kladden til genudstedelse af veksel.
+-   **Debitorbankremittering** – Opret et kladdenavn til remitteringskladden.
+-   **Debitorudligning af veksel** – Opret et kladdenavn til kladden til udligning af veksel.
 
-Angiv oplysninger om vekslen på siden kladden bilag for hver veksler de **veksel** under fanen. Når kladdelinjerne vekslen er bogført, kan du se dem på den **veksel journal undersøgelse** side og den **veksler statistik** side.
+Indtast oplysninger om vekslen under fanen **Veksel** på kladdebilagssiden for hver vekselkladde. Når vekselkladdelinjerne er bogført, kan du se dem på siden **Forespørgsel på vekselkladde** og siden **Vekselstatistik**.
 Angive betalingsmåder for veksler
 -----------------------------------------------
 
-På den **betalingsmåder** side, der er angivet mindst én betalingsmåde for veksler. Hvis du gør forretning med mere end én bank, skal du konfigurere en betalingsmåde, der svarer til remitteringsformat, som de enkelte banker kræver for veksler.
+På siden **Betalingsmåder** side skal du angive mindst én betalingsmåde for veksler. Hvis du gør forretninger med mere end én bank, skal du konfigurere en betalingsmåde, der svarer til det remitteringsformat, som hver enkelt bank kræver for veksler.
 Angive betalingsgebyrer for veksler
 -----------------------------------------
 
-Et betalingsgebyr er et tillæg, der er tilknyttet processen til opkrævning af betalinger fra kunder. Flere opsætning af betalingsgebyr linjer kan være tilknyttet de enkelte betalingsgebyrer. Du kan bruge opsætningslinjer til at styre, hvordan standardbeløb for betalingsgebyrer beregnes. Du kan f.eks. oprette opsætningslinjer for betalingsmåder, betalingsspecifikationer, valutaer og tidsperioder. Du kan også oprette opsætningslinjer for en procentdel eller et beløb baseret på dagsintervaller. For eksempel kan du angive en renteprocent, der er baseret på længden af tid, der er forfaldne til betaling. Hvis banken opkræver forskellige gebyrer for forskellige remitteringstyper, f.eks. **samling** eller **rabat**, oprette en separat betaling gebyr linje for hver remitteringstype.
+Et betalingsgebyr er et tillæg, der er tilknyttet processen til opkrævning af betalinger fra kunder. Der kan knyttes flere opsætningslinjer for betalingsgebyrer til hvert betalingsgebyr. Du kan bruge opsætningslinjer til at styre, hvordan standardbeløb for betalingsgebyrer beregnes. Du kan f.eks. oprette opsætningslinjer for betalingsmåder, betalingsspecifikationer, valutaer og tidsperioder. Du kan også oprette opsætningslinjer for en procentdel eller et beløb baseret på dagsintervaller. Du kan f.eks. angive en renteprocent, der er baseret på, hvor længe en betaling har været forfalden til betaling. Hvis banken opkræver forskellige gebyrer for forskellige remitteringstyper, som f.eks. **Inkasso** eller **Rabat**, skal du oprette en separat betalingsgebyrlinje for hver remitteringstype.
 Konfigurere remitteringsgebyrer for bankremitteringsfiler
 ------------------------------------------------
 
-På den **bankkonti** side, du kan konfigurere remitteringsgebyrer, som en bank opkræver for de enkelte remitteringsfiler, der oprettes. Remitteringsgebyrerne bogføres, når remitteringen er bekræftet, og de realiserede gebyrbeløb er kendt. Remitteringsgebyrerne er forskellige fra betalingsgebyrer, som indsamles fra debitorer og knyttet til kladdelinjer.
+På siden **Bankkonti** kan du konfigurere remitteringsgebyrer, der opkræves af en bank for de enkelte remitteringsfiler, der oprettes. Remitteringsgebyrerne bogføres, når remitteringen er bekræftet, og de realiserede gebyrbeløb er kendt. Remitteringsgebyrer er forskellige fra betalingsgebyrer, som indsamles fra debitorer og knyttes til kladdelinjer.
 Angive dokumentlayout for veksler
 ---------------------------------------------
 
-På den **bankkonti** skal du klikke på **angive**, og Angiv det dokumentlayout, der kræves for hver bankkonto, du opretter udskrevne veksler dokumenter til.
+På siden **Bankkonti** skal du klikke på **Bankkonti** og angive det dokumentlayout, der kræves ved de enkelte bankkonti, du opretter udskrevne vekseldokumenter for.
 Angive debitorer for veksler
 --------------------------------------
 
-På den **kunder** side, for hver debitor, der har accepteret at betale med en veksel, kan du oprette en standardbetalingsmåde for veksler på de **betaling standarder** tab.
+På siden **Debitorer** kan du for alle debitorer, der har accepteret at betale med en veksel, angive en standardbetalingsmåde for veksler under fanen **Betalingsstandarder**.
+
+
 
 
 

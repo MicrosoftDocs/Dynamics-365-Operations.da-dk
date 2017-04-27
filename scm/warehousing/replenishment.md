@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Opfyldning
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring
 
 I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring Oplysningerne gælder ikke for lagerstedsløsninger, der findes i Lagerstyring. Der findes tre genopfyldningsstrategier:
@@ -67,6 +70,8 @@ Genopfyldning for lastbehov opsummerer behovet for flere laster og opretter det 
 | Lokationsprofiler       | Lokationsprofiler er nødvendige for at oprette lokationer.                                                                                                                                                                                       |
 | Lokationsvejledninger     | Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra.                                                                                     |
 | Arbejdsskabeloner          | Arbejdsskabeloner af typen **Genopfyldning** kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer.                                                                                           |
+
+
 
 
 

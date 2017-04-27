@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 % saldoafskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
 
 Når du opretter en afskrivningsprofil til et anlægsaktiv og vælger **150% saldoværdi** i feltet **Metode** på siden **Afskrivningsprofiler**, bliver de anlægsaktiver, der er tildelt afskrivningsprofilen, afskrevet med den samme procent i hver afskrivningsperiode. Denne procentdel beregnes på basis af aktivets levetid. Hvis et aktiv f.eks. har en levetid på fem år, beregnes procentdelen som 30 % (150 % ÷ 5). 
@@ -56,7 +59,7 @@ Hvis du vælger **Kalender** som afskrivningsår, er følgende indstillinger til
 
 Hvis du vælger **Regnskabsår** i feltet **Afskrivningsår**, beregnes 150 % saldoafskrivning på grundlag af regnskabsåret for den regnskabskalender, der er angivet for modellen eller den regnskabskalender, der er valgt på siden **Finans**. Regnskabskalendere oprettes på siden **Regnskabskalendere**. 
 
-For eksempel for regnskabsåret d. 1 til 30 begynder beregningen af afskrivninger den 1. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver periode. Længden på det næste regnskabsår bestemmes af konfigurationen af perioderne på siden **Regnskabskalendere**. 
+I forbindelse med regnskabsåret fra d. 1. juli til og med d. 30. juni starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver periode. Længden på det næste regnskabsår bestemmes af konfigurationen af perioderne på siden **Regnskabskalendere**. 
 
 Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
@@ -81,6 +84,8 @@ Metoden med 150 % saldoafskrivning dividerer de 150 % med levetiden i år. Denne
 | År 3 | 4.900 × 30 % = 1.470                           | 5.900 – 1.470 = 4.430  | 4.900 – 1.470 = 3.430                 |
 
 > [!NOTE]
-> Typisk, når det beløb, der beregnes ved hjælp af de 150 % reduktion af afskrivningsmetoden saldoværdi bliver mindre end det beløb, der skal beregnes ved hjælp af den lineære metode, der er en konvertering til lineær afskrivningsmetode for resten af levetiden.
+> Når det beløb, der er beregnet ved hjælp af metoden til 150 % saldoafskrivning bliver mindre end det beløb, der skal beregnes ved hjælp af den lineære metode, er der en konvertering til lineær afskrivningsmetode for resten af levetiden.
+
+
 
 

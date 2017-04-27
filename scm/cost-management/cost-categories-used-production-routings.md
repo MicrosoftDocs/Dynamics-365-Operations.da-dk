@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Omkostningskategorier, der bruges i produktionsruteplanlægning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om omkostningsarter, der anvendes i produktionsmiljøer, og som bruger ruteplanlægning.
 
 Omkostningskategorier gælder for produktionsmiljøer, hvor der anvendes ruteplanlægning. De tildeles til operationsressourcer og ruteoperationer for at definere timeomkostninger og for at segmentere kostbidrag i beregnede omkostninger til en produceret vare. De kostgrupper, der er tildelt til omkostningskategorier, klassificerer bidrag til produktionsomkostninger baseret på operationsressourcerne og aktivitetstypen, f.eks. opsætnings- og procestid. Specificiteten af tildelinger af omkostningsgrupper, gør det muligt at beregne indirekte produktionsomkostninger baseret på ruteplanlægningsoplysninger. 
@@ -51,5 +54,7 @@ Omkostningsposten for en omkostningskategori kan være lokationsspecifik eller f
 En ruteoperation nedarver generelt de omkostningskategorier, der er tilknyttet operationsressourcen eller den overordnede operation. Når der oprettes en produktionsordre, afspejler ruteoperationerne i produktionsruten den valgte ruteversion. Du kan overstyre de omkostningskategorier, der er knyttet til operationerne i produktionsruten. 
 
 Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Hvis det er tilfældet, en der også angives en omkostningsart til produktions- og projektformål. Du skal definere yderligere projektrelaterede oplysninger, når en omkostningskategori er markeret til brug i projekter.
+
+
 
 

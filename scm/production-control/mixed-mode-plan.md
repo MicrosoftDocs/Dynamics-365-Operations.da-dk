@@ -1,6 +1,6 @@
 ---
-title: "Blandet tilstand planlægning - kombinere separate, proces og lean forsyning"
-description: "Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for operationer, der sørger for, at materiale flow følger dine modeller uanset politikken udbud, der er valgt (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer)."
+title: "Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning"
+description: "Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer)."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet tilstand planlægning - kombinere separate, proces og lean forsyning
+# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning
 
-Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for operationer, der sørger for, at materiale flow følger dine modeller uanset politikken udbud, der er valgt (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
 
 Du kan vælge din overordnede strategi for at levere et produkt, uanset produktstrukturen.  
 
@@ -37,7 +40,7 @@ For eksempel kan du få kontrol over kanban i montagen, hvor materialer hentes f
 Granulariteten for de forsyningspolitikker, der bruges til behovsplanlægning, afhænger af den lagringsdimension, der er aktiveret som disponeringsdimensioner. Hvis du vil aktivere behovsplanlægningen til at styre genopfyldning og levering af forskellige typer placeringer (for eksempel ved at adskille produktionsanlægget for forskellige produktionsenheder eller ved at adskille de forskellige typer af materiale og lagre med færdigvarer), anbefaler vi, at du aktiverer Sted og Lagersted som disponeringsdimensioner. Du kan også udelade Lagersted som disponeringsdimension. I dette tilfælde, hvis du bruger avanceret lokationsstyring, styres alle bevægelser på et lagersted af lagerstedsarbejde, hvorimod alle bevægelser på tværs af lagersteder kan kontrolleres ved udbetalingskanbans.
 
 ## <a name="supply-policies"></a>Forsyningspolitikker
-Dynamics 365 for planlægning af operationer blandet tilstand bestemmer, hvordan et produkt er leveret og, baseret på levering, hvordan afledte behov (forbrug af varer fra en stykliste materialer \[Stykliste\]) er udstedt. Baseret på ordretype henter systemet automatisk materialer for at imødekomme behov.  
+Planlægningskontroller for blandet tilstand i Dynamics 365 for Operations styrer, hvordan et produkt er leveret på baggrund af forsyning, hvordan afledte behov (forbrug af varer fra en \[stykliste\]) er udstedt. Baseret på ordretype henter systemet automatisk materialer for at imødekomme behov.  
 
 Forsyningspolitikker kan defineres på niveauet for produktet eller på en granularitet, der understøtter dine krav. Du definerer granulariteten af forsyningspolitikker på siden **Standardindstillinger for ordre **.  
 
@@ -45,9 +48,9 @@ Forsyningspolitikker kan styres af produkt, varedimensioner (konfiguration, farv
 
 Standardordretypen bestemmer, hvilken ordre varedisponering genererer.  
 
-Uanset hvordan forsyningskæden er udformet, understøtter Dynamics 365 i forbindelse med din blanding af leveringspolitikker for. Du kan få produktionsordrer, der er hentet fra kanbans. Du kan også have en batchordre, der kræver et produkt, der leveres af overførsler eller kanbans.  
+Uanset hvordan forsyningskæden er udformet, understøtter Dynamics 365 for Operations din blanding af leveringspolitikker. Du kan få produktionsordrer, der er hentet fra kanbans. Du kan også have en batchordre, der kræver et produkt, der leveres af overførsler eller kanbans.  
 
-Dynamics 365 for operationer sørger for, at materiale flow følger modellen.  
+Dynamics 365 for Operations sørger for, at materialeflowet følger modellen.  
 
 Lageret til plukning af materiale er tildelt dynamisk under kørsel, når forsyningspolitikken er defineret.  
 
@@ -55,14 +58,16 @@ Typisk oprettes kanbans ikke for fremtidige datoer, da en kanban har en kort lev
 
 Den samme logik er til stede ved alle øvrige typer forsyningspolitikker. Derfor er langsigtet planlægning for materialer baseret på den samme logik, som du forventer at køre med de faktiske ordrer, når produktion og forsyning er blevet godkendt.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Politikken crosssupply fordeling materialer – ressourceforbrug på styklister
+## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Krydsforsyningspolitik for materialefordeling – ressourceforbrug på styklister
 Ressourceforbrug er en vigtig funktion. Ressourceforbrug giver et lagersted til plukning materialer mulighed for at blive valgt, baseret på forsyningspolitikken (ordretype) og også letter vedligeholdelsen af stamdata.  
 
 Ressourceforbrug kræver, at det lagersted, der er plukket materialer fra, tildeles baseret på den måde, produktet leveres. Med andre ord, på kørselstidspunktet finder systemet de ressourcer, der skal bruges til produktion. Baseret på disse ressourcer finder systemet derefter pluklagerstedet.  
 
-For arbejde der er uafhængig af en forsyningspolitikken, skal du ikke ændre oplysningerne på styklisten, hvis leveringen er ændret. For ad hoc-ændringer sikrer Dynamics 365 for operationer, at materialer er hentet fra det lagersted, der er rigtige.
+For arbejde der er uafhængig af en forsyningspolitikken, skal du ikke ændre oplysningerne på styklisten, hvis leveringen er ændret. For ad hoc-ændringer sikrer Dynamics 365 for Operations, at materialer er hentet fra det rigtige lagersted.
 
 ## <a name="process-manufacturing--the-production-type"></a>Procesproduktion – produktionstypen
-Fuld fleksibilitet i blandet tilstand anbefaler vi, at du bruger produktionstype styklister for alle produkter. Du kan derefter bruge produktionsordrer, kanbans, overflytningsordrer eller produktionsordrer til forsyning af et produkt. For procesproduktion skal du bruge en produktionstype af **Formel**, **Samprodukt**, **Biprodukt** eller **Planlægningsvare**. Kanbans og produktionsordrer kan ikke bruges til disse produktionstyper.
+For fuld fleksibilitet i blandet tilstand anbefaler vi, at du bruger produktionstypestyklister for alle produkter. Du kan derefter bruge produktionsordrer, kanbans, overførselsordrer eller produktionsordrer til forsyning af et produkt. For procesproduktion skal du bruge en produktionstype af **Formel**, **Samprodukt**, **Biprodukt** eller **Planlægningsvare**. Kanbans og produktionsordrer kan ikke bruges til disse produktionstyper.
+
+
 
 

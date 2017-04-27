@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-accounts-receivable"></a>Luk Debitor
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Følgende tabel indeholder de sider, der understøtter forretningsprocessen for afslutning af Debitor.
 
 > [!NOTE] 
-> Hvis du vil åbne nogle af siderne i tabellen, skal du angive oplysninger eller angive parameterindstillinger.
+> Hvis du vil åbne nogle af de sider, der er i følgende tabel, skal du angive oplysninger eller parameterindstillinger.
 
-**Opgave for forretningsproceskomponenten**                   
+**Opgave for forretningsproceskomponent**                   
 
 Lukke perioder i finansregnskabet
 
@@ -43,21 +46,23 @@ Lukke perioder i finansregnskabet
 |Bekræft salgsordre                   | Opdater salgsordrer.                                                                       |
 |Kursregulering          | Opret posteringer, som opdaterer værdien af åbne debitorposteringer i udenlandsk valuta.                                                                                                                         |
 | Journal                              | Bogfør fakturaer, betalinger og egenveksler.                                             |
-| Kladdebilag                      | -   **Payment journal** – Generate, process, and post payments.
+| Kladdebilag                      | -   **Betalingskladde** – Opret, behandl og bogfør betalinger.
                                          -   **Draw bill of exchange journal** – Post bills of exchange.
                                          -   **Protest bill of exchange journal** – Post protested bills of exchange.
                                          -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
                                          -   **Remittance journal** – Post remittances.
                                          -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Følgesedlen bogføres | Opdater følgesedler for salgsordrer.                                                     | | Bogfør fritekstfaktura | Bogføre fritekstfakturaer.                                                                   | | Bogføring af faktura | Bogføre fakturaer for salgsordrer.                                                            | | Bogføring af plukliste | Opdater pluklister for salgsordrer.                                                      |
+| Bogføring af følgeseddel                  | Opdater følgesedler for salgsordrer.                                                     | | Bogfør fritekstfaktura               | Bogfør fritekstfakturaer.                                                                   | | Bogføring af faktura                      | Bogfør fakturaer for salgsordrer.                                                            | | Bogføring af plukliste                 | Opdater pluklister for salgsordrer.                                                      |
 
-**Opgave for forretningsproceskomponenten**   
+**Opgave for forretningsproceskomponent**   
 
 Oprette og indsende EU-listesystemet
 
 | Sidenavn                            | Anvendelse                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |EU-listesystem                         | Indberet EU-salg til skattemyndighederne til momsopgørelse.                                                                                                                           |
+
+
 
 
 

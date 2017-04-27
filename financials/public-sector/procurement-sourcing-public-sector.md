@@ -45,11 +45,11 @@ Du skal muligvis konfigurere følgende indkøbs- og forsyningsfunktioner for off
 -    [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md) Opret koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces.
 
 > [!NOTE]
-> Dette gælder også for kreditor.
+> Dette gælder også for Kreditor.
 
 -   [Regnskab i den offentlige sektor i Frankrig](/localizations/eurore/public-sector-accounting-france.md) 
 
-For virksomheder, franske, kan yderligere trin være nødvendige for den offentlige sektor.
+For franske organisationer kan yderligere trin være nødvendige for den offentlige sektor.
 
 I de følgende afsnit beskrives de indkøbs- og forsyningsfunktioner, der er tilgængelige for den offentlige sektor.
 
@@ -82,7 +82,7 @@ Vælg indstillingen **Aktiviteter**.
 Vælg indstillingen **Kræv direkte fakturering**. 
 
 ## <a name="can-i-view-purchase-order-line-amounts"></a>Kan jeg få vist linjebeløb for indkøbsordre?
-Ja. Linjeantal for en indkøbsordre, kan ses, herunder det aktuelle ordreantal og eventuelle antal, der er modtaget eller faktureret. Du kan også få vist antal, der endnu ikke er faktureret, eller antal for fakturaer, der afventer.
+Ja. Du kan få vist linjeantal for en indkøbsordre, herunder det aktuelle ordreantal og eventuelle antal, der er modtaget eller faktureret. Du kan også få vist antal, der endnu ikke er faktureret, eller antal for fakturaer, der afventer.
 
 ### <a name="tip"></a>Tip!
 
@@ -135,6 +135,6 @@ Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført 
 
  
 
-Yderligere oplysninger finder du [indkøb og forsyning](/dynamics365/operations/scm/procurement/procurement-sourcing-overview) og [af kreditorer i den offentlige sektor](accounts-payable-public-sector.md).
+Du kan finde yderligere oplysninger i [Kreditorbetalinger i den offentlige sektor](/dynamics365/operations/scm/procurement/procurement-sourcing-overview) og [Indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).
 
 

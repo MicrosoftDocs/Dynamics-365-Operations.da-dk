@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions"></a>Regnskabsfordelinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem. Regnskabsfordelinger bruges til at allokere pengebeløb til et kildedokument til bestemte finanskonti. 
 
 Regnskabsfordelinger er en funktion i hele programmet, der bruges og udvides med hvert kildedokument, som en indkøbsordre, kreditorfaktura, udgiftsrapport og fritekstfaktura. Som standard genereres der en regnskabsfordeling for hver kildedokumentlinje og pengebeløb og er betinget aktiveret til redigering. 
 
 > [!Note] 
-> Nogle dokumenter understøtter også hovedet dokument-pengebeløb, som gebyrer for ordrer og fakturaer. 
+> Nogle dokumenter understøtter også pengebeløb i dokumenthovedet, f.eks. gebyrer for ordrer og fakturaer. 
 
 Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger til behandling af regnskabsfordelinger:
 
@@ -42,17 +45,19 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
     -   Fordelingsbeløbene er baseret på begrebet valuta for dokumentet. Denne valuta er typisk transaktionsvalutaen. Beløb i regnskabs- og rapporteringsvalutaen genereres som en del af regnskab for reskontro.
     -   Fordelingerne viser regnskabsdatoen og regnskabshændelse. Regnskabshændelsen er typisk indstillet til **Ingen**, indtil dokumentet er bogført/journaliseret. På dette tidspunkt bliver regnskabshændelsen **Oprindelig**. Når fordelingerne er bogført, kan du ikke redigere fordelingerne.
     -   **Opdel**-knappen kan være aktiveret for overordnede fordelinger. **Opdel** genererer nye regnskabsfordelinger, og opdelingen kan være baseret på procentdel, beløb eller antal.
-    -   Knappen ** Fordel ligeligt** kan bruges i kombination med **Opdel** for automatisk at fordele beløbet ligeligt på tværs af alle fordelinger.
+    -   Knappen **Fordel ligeligt** kan bruges i kombination med **Opdel** for automatisk at fordele beløbet ligeligt på tværs af alle fordelinger.
     -   Knappen **Nulstil** kan aktiveres for overordnede fordelinger, når der findes mere end én fordeling. **Nulstil** vender manuel ændring af fordelingen ved at slette alle eksisterende fordelinger og oprette standardfordelingerne igen.
-    -   Alle underordnede fordelinger, f.eks. rabat, gebyr og moms, følger altid den overordnede fordeling. Du kan se overordnet/underordnet-relation til **Reference**&gt;**overordnede oplysninger**.
+    -   Alle underordnede fordelinger, f.eks. rabat, gebyr og moms, følger altid den overordnede fordeling. Du kan få vist den overordnede/underordnede relation til **Reference** &gt; **Overordnede oplysninger**.
     -   Hovedkontoen og den økonomiske dimension kan også være redigerbar for børn.
     -   De økonomiske dimensioner på regnskabsfordelinger følger et standardmønster, som dokument kan udvide. Yderligere oplysninger finder du under relaterede artikler.
-    -   Afvigelsesfordelinger kan genereres i matchende situationer, f.eks. som en matching mellem en kreditorfaktura og en købsordre. Du kan få vist de tilsvarende forbindelser mellem regnskabsfordelingen på **Reference**&gt;**dokumentoplysninger**.
-    -   **Korrekt**-knappen vises og er aktiveret for dokumenter, der understøtter rettelser. **Korrekte** opretter nye fordelinger. Fordelinger der først skal oprettes, som tilbagefører de oprindelige fordelinger. Disse distributioner kan ikke ændres. Næste, nye korrekte regnskabsfordelinger oprettes. Disse fordelinger kan ændres, hvis de oprindelige fordelinger kunne ændres.
-    -   Knappen ** projektoplysninger** er aktiveret som en udvidelse, når en linje er knyttet til et projekt. Projektregnskabsfordelinger giver dig mulighed for at redigere detaljer som finansieringskilde og linjeegenskab.
-    -   Du kan få vist den aktuelle status til regnskab i **Reference**. Status er i hele dokumentet, og angiver, om dokumentet er i gang eller afsluttet.
--   ** Se fordelinger ** – få vist regnskabsfordelinger for alle linjer og pengemæssige beløb på dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
+    -   Afvigelsesfordelinger kan genereres i matchende situationer, f.eks. som en matching mellem en kreditorfaktura og en købsordre. Du kan få vist de tilsvarende forbindelser mellem regnskabsfordelingen i **Reference** &gt; **Dokumentoplysninger**.
+    -   **Korrekt**-knappen vises og er aktiveret for dokumenter, der understøtter rettelser. **Korrekt** opretter nye fordelinger. Først oprettes fordelinger, som tilbagefører de oprindelige fordelinger. Disse fordelinger kan ikke ændres. Derefter oprettes nye korrekte regnskabsfordelinger. Disse fordelinger kan ændres, hvis de oprindelige fordelinger kunne ændres.
+    -   Knappen **Projektoplysninger** er aktiveret som en udvidelse, når en linje er knyttet til et projekt. Projektregnskabsfordelinger giver dig mulighed for at redigere detaljer som finansieringskilde og linjeegenskab.
+    -   Du kan se den aktuelle regnskabsstatus i **Reference**. Status er for hele dokumentet, og angiver, om dokumentet er i gang eller afsluttet.
+-   ** Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjerne og pengebeløbene i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
 
 
-Yderligere oplysninger finder du [regnskabsfordelinger og kladdeposteringer for reskontro til fri tekst fakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
+
+
 

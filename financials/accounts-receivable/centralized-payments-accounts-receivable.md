@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserede debitorbetalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Desuden sparer organisationen tid, fordi processer for betalingsforslag, udligninger og redigering af åbne og lukkede transaktioner for centraliserede betalinger er strømlinet. 
 
-I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne oplysninger om fakturaer, der skal betales. Betalinger for alle juridiske driftsenheder modtages af én juridisk enhed, som kaldes betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der modtager transaktionerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabattransaktioner, der vedrører en centraliseret betaling, håndteres. 
+I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne oplysninger om fakturaer, der skal betales. Betalinger for alle juridiske driftsenheder modtages af én juridisk enhed, der omtales som betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der modtager transaktionerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabattransaktioner, der vedrører en centraliseret betaling, håndteres. 
 
 I følgende eksempler vises, hvordan bogføring håndteres i forskellige scenarier. Følgende konfiguration antages for alle disse eksempler:
 
@@ -66,14 +69,14 @@ Fabrikam modtager en betaling på 600,00 til Fabrikam-debitorkonto 4000, Northwi
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                         | Debetbeløb | Kreditbeløb |
 |---------------------------------|--------------|---------------|
 | Debitor (Fabrikam)  | 600,00       |               |
 | Forfalden til Fabrikam East (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                             | Debetbeløb | Kreditbeløb |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ Fabrikam modtager en betaling på 600,00 til Fabrikam-debitorkonto 4000, Northwi
 | Debitor (Fabrikam East) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Eksempel 2: Debitorbetaling af faktura fra en anden juridisk enhed med kasserabat
-Fabrikam modtager en betaling på 580,00 til Fabrikam-debitor 4000, Northwind Traders. Fabrikam East har en åben faktura for debitor 4000. Der er en kontantrabat på 20,00 for fakturaen. Betalingen udlignes med de åbne fakturaer fra Fabrikam East. Kasserabatten bogføres på fakturaens juridiske enhed, Fabrikam East.
+Fabrikam modtager en betaling på 580,00 til Fabrikam-debitor 4000, Northwind Traders. Fabrikam East har en åben faktura for kreditor 4000. Der er en kontantrabat på 20,00 for fakturaen. Betalingen udlignes med de åbne fakturaer fra Fabrikam East. Kasserabatten bogføres på fakturaens juridiske enhed, Fabrikam East.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura bogføres i Fabrikam East for Fabrikam East-debitor 4000
 
@@ -99,14 +102,14 @@ Fabrikam modtager en betaling på 580,00 til Fabrikam-debitor 4000, Northwind Tr
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                         | Debetbeløb | Kreditbeløb |
 |---------------------------------|--------------|---------------|
 | Debitor (Fabrikam)  | 580,00       |               |
 | Forfalden til Fabrikam East (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                             | Debetbeløb | Kreditbeløb |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam modtager en betaling på 600,00 euro til Fabrikam-debitor 4000, Northwi
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                         | Debetbeløb            | Kreditbeløb           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam modtager en betaling på 600,00 euro til Fabrikam-debitor 4000, Northwi
 | Forfalden til Fabrikam East (Fabrikam) | 0,00 EUR / 12,90 USD    |                         |
 | Realiseret gevinst (Fabrikam)        |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                             | Debetbeløb            | Kreditbeløb           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam bogfører en betaling for Fabrikam-debitor 4000, Northwind Traders, for
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                         | Debetbeløb            | Kreditbeløb           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam bogfører en betaling for Fabrikam-debitor 4000, Northwind Traders, for
 | Forfalden til Fabrikam East (Fabrikam) | 0,00 EUR / 13,46 USD    |                         |
 | Realiseret gevinst (Fabrikam)        |                         | 0,00 EUR / 13,46 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                             | Debetbeløb            | Kreditbeløb           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam bogfører en betaling for Fabrikam-debitor 4000, Northwind Traders, for
 | Debitor (Fabrikam East) |                         | 12,00 EUR / 14,47 USD   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Eksempel 5: Debitorkreditnota med primær betaling
-Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Betalingen udlignes med en åben faktura for Fabrikam West-debitoren 10000 og en åben kreditnota for Fabrikam East-debitoren 4000. Betalingen vælges som primær betaling i den **udligne posteringer** side.
+Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Betalingen udlignes med en åben faktura for Fabrikam West-debitoren 10000 og en åben kreditnota for Fabrikam East-debitoren 4000. Betalingen vælges som primær betaling på siden **Udlign transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura bogføres i Fabrikam West for debitor 10000
 
@@ -224,7 +227,7 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam)    | 100,00       |               |
 | Forfalden til Fabrikam West (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                             | Debetbeløb | Kreditbeløb |
 |-------------------------------------|--------------|---------------|
 | Debitor (Fabrikam East) | 25,00        |               |
 | Forfalden til Fabrikam (Fabrikam East)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bogføring**
 
 | Konto                             | Debetbeløb | Kreditbeløb |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Eksempel 6: Debitorkreditnota uden primær betaling
-Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Betalingen udlignes med en åben faktura for Fabrikam West-debitoren 10000 og en åben kreditnota for Fabrikam East-debitoren 4000. Betalingen ikke er markeret som primær betaling i den **udligne posteringer** side.
+Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Betalingen udlignes med en åben faktura for Fabrikam West-debitoren 10000 og en åben kreditnota for Fabrikam East-debitoren 4000. Betalingen vælges ikke som primær betaling på siden **Udlign transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura bogføres i Fabrikam West for debitor 10000
 
@@ -273,21 +276,21 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                         | Debetbeløb | Kreditbeløb |
 |---------------------------------|--------------|---------------|
 | Debitor (Fabrikam)  | 75,00        |               |
 | Forfalden til Fabrikam West (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                              | Debetbeløb | Kreditbeløb |
 |--------------------------------------|--------------|---------------|
 | Debitor (Fabrikam East)  | 25,00        |               |
 | Forfalden til Fabrikam West (Fabrikam East) |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bogføring**
 
 | Konto                                | Debetbeløb | Kreditbeløb |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West)    |              | 75,00         |
 | Forfalden fra Fabrikam East (Fabrikam West) | 25,00        |               |
 | Debitor (Fabrikam West)    |              | 25,00         |
+
+
 
 
 

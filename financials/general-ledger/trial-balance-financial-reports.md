@@ -1,6 +1,6 @@
 ---
 title: "Råbalance - økonomiske rapporter"
-description: "I denne artikel beskrives standardrapporter til saldi på prøveversionen. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så den passer til virksomhedens behov."
+description: "I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Råbalance - økonomiske rapporter
 
-I denne artikel beskrives standardrapporter til saldi på prøveversionen. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så den passer til virksomhedens behov. 
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov. 
 
 <a name="default-trial-balance-reports"></a>Standardråbalancerapporter
 -----------------------------
@@ -100,10 +103,12 @@ Hver råbalancerapport bruger en anden kolonnedefinition. Disse kolonnedefinitio
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Økonomirapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis økonomiske rapporter](view-financial-reports.md)
 
-[Dynamics finansiel rapportering Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

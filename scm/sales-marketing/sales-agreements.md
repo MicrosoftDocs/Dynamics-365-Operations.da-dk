@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Salgsaftaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
 
 En salgsaftale er en kontrakt, der forpligter kunden til at købe produkter til et bestemt beløb eller en bestemt mængde over tid, mod at få særlige priser, særlige rabatter og andre særlige betingelser, f.eks. særlige betalings- og leveringsbetingelser. Priserne og rabatterne i salgsaftalen tilsidesætter de priser og rabatter, der er angivet i de eventuelle samhandelsaftaler, der findes.  
@@ -36,7 +39,7 @@ En salgsaftales gyldighedsperiode defineres af felterne **Ikrafttrædelsesdato**
 
 Du kan oprette en salgsordre direkte ud fra en salgsaftale ved hjælp af handlingen **Frigiv ordre**. Du kan også vælge en gyldig salgsaftale, når du tager imod ordrer (se afsnittet den "Anvende salgsaftaler i bestillingsprocessen" i denne artikel).  
 
-**Bemærk:** i tidligere versioner, salgsaftaler blev benævnt rammesalgsordrer.
+**Bemærk!** I tidligere versioner blev salgsaftaler kaldt rammesalgsordrer.
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en salgsaftale udtrykker et tilsagn om at sælge noget. Generelt er der to kategorier af tilsagn:
@@ -98,16 +101,18 @@ Hvis du har oprettet (frigivet) en salgsordre i henhold til en salgsaftale, kan 
 | Antal                                                          | Hvis du angiver et antal, der overstiger det antal, der er angivet på salgsaftalelinjen, og afkrydsningsfeltet **Maks. gennemtvinges** er markeret, åbnes der en dialogboks, hvor du bliver bedt om at gemme det ændrede antal. Klik på **Ja** for at fjerne linket til salgsaftalelinjen og genberegne prisen. Klik på **Nej** for at fjerne linket til salgsaftalelinjen uden at genberegne prisen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare, der er bestilt fra en salgsaftale
-Når en kunde returnerer en vare, der blev bestilt fra en salgsaftale, kan Microsoft Dynamics 365 for operationer automatisk finde og opdatere de relaterede salgsaftale bestræbelser på at afspejle ændringen i antal eller beløb. Ved at oprette en returordre, der er baseret på den oprindelige salgsordre, der er knyttet til en salgsaftale, oprettes der en relation mellem en salgsaftaleforpligtelsen, salgsordrelinjen og returordrefakturaen.  
+Når en kunde returnerer et produkt, der er bestilt fra en salgsaftale, kan Microsoft Dynamics 365 for Operations automatisk finde og opdatere den relaterede salgsaftaleforpligtelse for at afspejle ændringen i antal eller beløb. Ved at oprette en returordre, der er baseret på den oprindelige salgsordre, der er knyttet til en salgsaftale, oprettes der en relation mellem en salgsaftaleforpligtelsen, salgsordrelinjen og returordrefakturaen.  
 
 Hvis du ikke vil modregne antallet af returnerede varer fra salgsaftaleforpligtelsen, kan du bruge kontrolelementet **Fjern link** på siden **Returner ordre** til at fjerne tilknytningen mellem returvareordren og salgsaftaleforpligtelsen. Hvis du skal genoprette tilknytningen senere, skal du klikke på **Opret link**.  
 
 **Bemærk!** En returordre kan kun knyttes til én salgsaftale. Hvis en kunde returnerer flere produkter, der er bestilt fra flere salgsaftaler, skal du oprette en ny returordre for hvert produkt og oprette en tilknytning til den relevante salgsaftale.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Søge efter salgsaftaler automatisk
-I nogle situationer, hvor salgsordrer oprettes indirekte, som når du opretter en kreditnota eller interne salgsordrer, kan du styre om Microsoft Dynamics 365 for operationer søger automatisk efter relevante salgsaftaler.
+I nogle situationer, hvor salgsordrer oprettes indirekte, som når du opretter en kreditnota eller interne salgsordrer, kan du styre, om Microsoft Dynamics 365 for Operations automatisk skal søge efter relevante salgsaftaler.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Økonomiske dimensioner for salgsaftaler
 Du kan kopiere økonomiske dimensioner enten til dokumentoverskrifter eller til enkelte linjer i en salgsaftale. Du kan til enhver tid ændre dimensionerne på en aftaleoverskrift eller en aftalelinje. I så fald kopieres dimensionerne automatisk til aftræksoverskriften eller aftrækslinjerne i aftræksordrer.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Faktorafskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over faktorafskrivningsmetoden.
 
 Faktorer er de procentsatser, der bruges til afskrivning på aktiver. Når du opretter en afskrivningsprofil for anlægsaktiver og vælger **Faktor** i feltet **Metode** på siden **Afskrivningsprofiler**, kan du oprette progressiv, degressiv eller lineær afskrivning:
@@ -39,7 +42,7 @@ Faktorer er de procentsatser, der bruges til afskrivning på aktiver. Når du op
 Reglerne og eksemplerne, der følger nedenfor angiver, hvordan du kan oprette faktorer til de forskellige afskrivningstyper. 
 
 > [!NOTE] 
-> Når du vælger **faktor** i den **metode** felt, den **faktor** felt og **Interval** vises.
+> Når du vælger **Faktor** i feltet **Metode**, vises felterne **Faktor** og **Interval**.
 
 ## <a name="progressive-depreciation"></a>Progressiv afskrivning
 Værdien i feltet **Faktor** er større end **50**.
@@ -75,5 +78,7 @@ Anskaffelsesprisen er 100.000, faktoren er 20, levetiden er 10 år, og afskrivni
 
 ## <a name="straight-line-depreciation"></a>Lineær afskrivning
 Værdien i feltet **Faktor** er lig med **50**. I dette tilfælde er afskrivningen den samme i hver periode, og derfor skal du overveje konsekvensen af de værdier, du har angivet i andre felter, som beskrevet i [Lineær afskrivning for levetiden](straight-line-service-life-depreciation.md).
+
+
 
 

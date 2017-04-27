@@ -1,6 +1,6 @@
 ---
 title: Kredit og rykkere i Debitor
-description: "Konti rykkere i debitormodulet oplysninger styres i en central visning ved hjælp af Microsoft Dynamics-365 for operationer samlinger side. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
+description: "Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og rykkere i Debitor
 
-Konti rykkere i debitormodulet oplysninger styres i en central visning ved hjælp af Microsoft Dynamics-365 for operationer samlinger side. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
+[!include[banner](../includes/banner.md)]
+
+
+Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
 
 Før du begynder at oprette eller arbejde med rykkere, skal du kende følgende begreber:
 -   Aldersfordelte øjebliksbillede for debitorer indeholder saldooplysninger på et bestemt tidspunkt
@@ -55,9 +58,9 @@ Der oprettes en detaljeret post for det aldersfordelte øjebliksbillede for hver
 Kundepuljer er forespørgsler, der definerer en gruppe kundeposter, der kan vises og administreres for rykkere eller aldersfordelte processer. Brug kundepuljer til at filtrere oplysningerne på listesiderne Aldersfordelte saldi, Rykkeraktiviteter og Rykkersager. Du kan også bruge kundepuljer til at filtrere de debitorkonti, der inkluderes ved oprettelsen af aldersfordelte øjebliksbilleder.
 
 ## <a name="collections-agents"></a>Inkassoagenter
-Microsoft Dynamics 365 for handlinger brugere kan få vist alle kundeoplysninger på listesiderne som standard. Du kan bruge poster for inkassator til at bestemme de kundepuljer, der er tilgængelige til filtrering af oplysninger på listesiderne med rykkere og på siden Rykkere. 
+Microsoft Dynamics 365 for Operations-brugere kan som standard få vist alle kundeoplysninger på listesiderne med rykkere. Du kan bruge poster for inkassator til at bestemme de kundepuljer, der er tilgængelige til filtrering af oplysninger på listesiderne med rykkere og på siden Rykkere. 
 
-En inkassator er en person, der arbejder sammen med kunderne om at sikre, at betalinger opkræves rettidigt. I Microsoft Dynamics 365 for operationer inkassatorer arbejdere, der er tildelt til brugere på siden bruger installationsprogrammet.
+En inkassator er en person, der arbejder sammen med kunderne om at sikre, at betalinger opkræves rettidigt. I Microsoft Dynamics 365 for Operations er inkassoagenter arbejdere, der er tildelt til brugere på siden Brugerkonfiguration.
 
 ## <a name="collections-list-pages"></a> Listesider for rykkere 
 Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
@@ -67,7 +70,7 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 
 > [!NOTE]
 > Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Oplysninger vises kun for debitorer, som der allerede er oprettet et aldersfordelt øjebliksbillede for. De poster, der vises på listesiden, kan yderligere filtreres på følgende måde:
-<li>En Microsoft Dynamics-365 for operationer bruger har som standard adgang til alle kunder, der har et aldersfordelt øjebliksbillede.</li>
+<li>En Microsoft Dynamics 365 for Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
 <li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
 <li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>
 
@@ -75,7 +78,7 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 ## <a name="collections-page"></a> Siden Rykkere
 Brug siden Rykkere til at få vist, administrere og handle på rykkeroplysninger, -aktiviteter og -sager for en debitor. 
 
-Den øverste rude vises sager for den valgte debitor. Den midterste rude vises posteringer for kunden. Den nederste rude viser aktiviteter for kunden. Du kan oprette rykkersager til sporing af rykkeroplysninger for en eller flere posteringer eller aktiviteter. Oplysningerne i de øverste og nederste ruder kan filtreres efter sag. 
+Den øverste rude viser sager for den valgte kunde. Den midterste rude viser posteringer for den valgte kunde. Den nederste rude viser aktiviteter for kunden. Du kan oprette rykkersager til sporing af rykkeroplysninger for en eller flere posteringer eller aktiviteter. Oplysningerne i de øverste og nederste ruder kan filtreres efter sag. 
 
 Faktaboksene viser aldersfordelte saldi og oplysninger om kreditmaksimum for den valgte debitor. Disse oplysninger gemmes i det aldersfordelte øjebliksbillede. Du kan om nødvendigt opdatere det aldersfordelte øjebliksbillede med aktuelle oplysninger. 
 
@@ -86,7 +89,7 @@ Du kan frafalde, genindføre eller tilbageføre hele rentenotaer eller gebyrer o
 
 Disse reguleringer påvirker kun rentenotaer og de renter og gebyrer, som de omfatter. Brug trinnene i afsnittet "Oprette afskrivningsposteringer med ét trin" til at afskrive alle de tillæg, som en debitor skylder.
 
-## <a name="create-writeoff-transactions"></a>Oprette posteringer til writeoff
+## <a name="create-writeoff-transactions"></a>Oprette afskrivningsposteringer
 Du kan afskrive tab på debitorer ved at klikke på Afskriv i formularen Rykkere og på listesiderne Aldersfordelte saldi, Debitorer og Åbne debitorfakturaer. 
 
 Når du afskriver posteringer for en debitor, markeres alle posteringer for debitoren automatisk til udligning. Det beløb, er afskrives, afhænger af nettobeløbet for de markerede posteringer. Afskrivningsposteringen oprettes i en finanskladde og kan indeholde op til tre typer kladdelinjer.
@@ -100,6 +103,8 @@ Behandle NSF-betalinger (Non-sufficient Funds – USA)
 --------------------------------------------
 
 Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere. Når du klikker på denne knap, annulleres betalingen. Hvis der gælder et NSF-gebyr for debitoren, oprettes der en gebyrpostering i en betalingskladde. Gebyrbeløbet baseres på indstillingerne for automatiske gebyrer. De automatiske gebyrer, der gælder for NSF-betalinger, specificeres med udgangspunkt i den gebyrgruppe, der er valgt på siden Bankkonti for den pågældende bankkonto.
+
+
 
 
 

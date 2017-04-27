@@ -1,5 +1,5 @@
 ---
-title: Udligne en delvis debitorbetaling, der har flere rabatperioder
+title: Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 description: "Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er flere rabatperioder."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Udligne en delvis debitorbetaling, der har flere rabatperioder
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er flere rabatperioder.
 
-Fabrikam tilbyder kunden 4031 to kasserabatperioder. Kunden modtager en kasserabat på 2 %, hvis fakturaen er betalt inden fem dage og en kasserabat på 1 %, hvis fakturaen betales inden 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligning-parametre er placeret på den **Accounts receivable parameters** side.
+Fabrikam tilbyder kunden 4031 to kasserabatperioder. Kunden modtager en kasserabat på 2 %, hvis fakturaen er betalt inden fem dage og en kasserabat på 1 %, hvis fakturaen betales inden 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice"></a>Faktura
-D. 25 Arnie indtaster og bogfører en faktura på 1.000,00 for debitor 4031. Når han gennemgår kasserabatter for denne faktura, ser Arnie debitor 4031 modtager en rabat på 20.00, hvis fakturaen betales inden den 30. Hvis fakturaen er betalt af juli 9, modtager kunden en rabat på 10,00.
+Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4031. Da han gennemgår kasserabatter for denne faktura, ser Arnie, at debitor 4031 modtager en rabat på 20,00, hvis fakturaen betales inden den 30. juni. Hvis fakturaen er betalt den 9. juli, modtager kunden en rabat på 10,00.
 
 | Kasserabatdato | Kasserabatbeløb | Beløb i transaktionsvaluta |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Fakturasaldoen er nu 0,00. Arnie kan se oplysningerne på siden **Debitorposteri
 | DISC-10030 |  Kasserabat   | 28-6-2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Betaling         | 7/8/2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | DISC-1031  |  Kasserabat   | 7/8/2015  |         |                                      | 7:00                                  | 0,00    | USD      |
+
+
 
 
 

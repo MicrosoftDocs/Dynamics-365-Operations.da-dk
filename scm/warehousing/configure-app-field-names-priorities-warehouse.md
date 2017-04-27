@@ -1,6 +1,6 @@
 ---
-title: Konfigurere app feltnavne i Logistik app
-description: Dette emne beskriver, hvordan du definere og konfigurere lagerstedet app feltnavne og prioriteter i Dynamics 365 for operationer.
+title: Konfigurere appfeltnavne i lagerstedsappen
+description: I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 for Operations.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere app feltnavne i Logistik app
+# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere appfeltnavne i lagerstedsappen
 
-Dette emne beskriver, hvordan du definere og konfigurere lagerstedet app feltnavne og prioriteter i Dynamics 365 for operationer. 
+[!include[banner](../includes/banner.md)]
 
-**Bemærk:** dette emne gælder for funktionerne i Logistik. Det gælder ikke for funktioner i Lagerstyring. Dynamics 365 for operationer - lager er et program, du kan bruge til at udføre opgaver på lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i programmet, samt konfigurere den prioritet, der skal tildeles feltnavnene. Dette emne forklarer, hvordan du definerer og konfigurerer disse lagersted app feltnavne og prioriteter, og hvordan de bruges i Dynamics 365 for operationer - lager. Yderligere oplysninger om at konfigurere forbindelsen til Dynamics 365 for operationer - oplagring, henvise til selvstudiet [installere og konfigurere Dynamics 365 for operationer - opbevaring](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurere lagerstedet app feltnavne
+I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Dynamics 365 for Operations. 
+
+**Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Dynamics 365 for Operations - Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Dynamics 365 for Operations - Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Dynamics 365 for Operations - Lagersted i selvstudiet [Installere og konfigurere Dynamics 365 for Operations - Lagersted](install-configure-warehousing-app.md).
+
+<a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
 ===================================
 
-Når du bruger Dynamics 365 for operationer - opbevaring på din mobilenhed, kan du konfigurere hvordan metadata skal vises på enheden på den **lagersted app feltnavne** side. Marker i et nyt regnskab i Dynamics 365 for operationer, **Opret standardopsætning** til at oprette alle de feltnavne, der skal bruges på lagerstedet mobilenhed arbejdsprocesser, og derefter tildele en foretrukken tilstand for input og Inputtype til dem. Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.
+Når du bruger Dynamics 365 for Operations - Lagersted på din mobilenhed, kan du konfigurere, hvordan metadata skal vises på din enhed på siden **Feltnavne for lagerstedsapp**. I et nyt regnskab i Dynamics 365 for Operations skal du vælge **Opret standardopsætning** for at oprette alle de feltnavne, der skal bruges i arbejdsprocesser på mobilenheden til lagerstedet, og derefter tildele dem en foretrukken inputtilstand og inputtype. Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ Når du bruger Dynamics 365 for operationer - opbevaring på din mobilenhed, kan
 <tbody>
 <tr class="odd">
 <td>Foretrukket inputtilstand</td>
-<td>Denne indstilling angiver, om en scanning felt eller en manuel indtastning inputfelt skal vises for det markerede feltnavn. Dette er nyttigt at skelne felterne afhængigt af, hvis der bruges stregkoder til feltet. <strong>Bemærk:</strong> For feltnavnene med foretrukne inputtilstanden er angivet til <strong>Scanning</strong>, kan du angive oplysningerne manuelt, hvis stregkoden er ikke kan læses eller er beskadiget.</td>
+<td>Denne indstilling angiver, om et scanningsfelt eller et inputfelt til manuel indtastning skal vises for det valgte feltnavn. Det er nyttigt at skelne mellem felterne ud fra, om der bruges stregkoder til feltet. <strong>Bemærk:</strong> For feltnavne, hvor den foretrukne inputtilstand er indstillet til <strong>Scanning</strong>, kan du angive oplysningerne manuelt, hvis stregkoden er ikke kan læses eller er beskadiget.</td>
 </tr>
 <tr class="even">
 <td>Inputtype</td>
-<td>Denne indstilling definerer, hvilke input-typen, der skal bruges til navnet på det valgte felt. Der er fire muligheder:
+<td>Denne indstilling definerer, hvilke inputtype der skal bruges til navnet på det valgte felt. Der er fire valgmuligheder:
 <ul>
-<li><strong>Valg af</strong> - indeholder en liste over indstillinger at vælge imellem. Feltnavne med denne indstilling kan ikke redigeres.</li>
-<li><strong>Dato</strong> - feltnavne, der er angivet som dato viser et datoformat med etiketten. Dette hjælper med at lagermedarbejdere, se, i hvilket format du skal indtaste datoen. Feltnavne med denne indstilling kan ikke redigeres.</li>
-<li><strong>Alpha</strong> - Hvis markeret, tastaturet enhed der skal bruges ved manuelt at indtaste oplysninger i programmet. Tastatur-oplevelse kan ændres afhængigt af, hvilken enhed der bruges.</li>
-<li><strong>Numeriske</strong> - til feltnavne, Brug numeriske kun input, kan du vælge denne indstilling for at få vist et brugerdefineret numerisk tastatur med inputfelt i stedet for tastaturet for enheden.</li>
+<li><strong>Valg</strong> - Indeholder en liste over indstillinger at vælge imellem. Feltnavne med denne indstilling kan ikke redigeres.</li>
+<li><strong>Dato</strong> - Feltnavne, der er angivet som dato, viser et datoformat i etiketten. Dette hjælper lagermedarbejdere med at se, hvilket format datoen skal indtastes i. Feltnavne med denne indstilling kan ikke redigeres.</li>
+<li><strong>Alfa</strong> - Hvis denne indstilling er valg, bruges tastaturet, når du indtaster oplysninger i programmet manuelt. Tastaturoplevelsen kan ændres, afhængigt af hvilken enhed der bruges.</li>
+<li><strong>Numerisk</strong> - Til feltnavne, der kun bruger numerisk input, kan du vælge denne indstilling for at få vist et brugerdefineret numerisk tastatur med inputfelt i stedet for tastaturet på enheden.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurere lagerstedet app feltet Prioritet
+<a name="configure-warehouse-app-field-priority"></a>Konfigurere feltprioritet for lagerstedsapp
 ======================================
 
-På den **lagersted app feltet Prioritet** side, kan du placere feltnavnene i forskellige prioriterede grupper. Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden vigtigste opgave når lagermedarbejderne udføre opgaver ved hjælp af programmet. Hvis du klikker på **Opret standardopsætning**, der skal oprettes et standardsæt af prioriterede grupper. Det er muligt at oprette så mange prioriterede grupper efter behov, men kun tre prioriterede grupper vil blive vist på siden opgave. Når Dynamics 365 for operationer sender metadataene til programmet, det tildeler hvert felt en relative prioritet afhængigt af dets prioritet gruppe og programmet viser de første tre højt prioriterede grupper, der er indeholdt i metadata på siden opgave. Resten af standardsidelayoutet metadata vises på en side med sekundære oplysninger. Følgende tabel viser et eksempel på fem prioriterede grupper.
+På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forskellige prioriterede grupper. Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden for hovedopgaven, når lagermedarbejderne udfører opgaver ved hjælp af programmet. Hvis du klikker på **Opret standardopsætning**, oprettes et standardsæt af prioriterede grupper. Det er muligt at oprette så mange prioriterede grupper som ønsket, men kun tre prioriterede grupper vil blive vist på opgavesiden. Når Dynamics 365 for Operations sender metadata til programmet, tildeler det hvert felt en relativ prioritet afhængigt af dets prioriterede gruppe, og appen viser de tre første højt prioriterede grupper, der er indeholdt i metadataene på opgavesiden. Resten af overløbsmetadataene vises på en side med sekundære oplysninger. Følgende tabel viser et eksempel på fem prioriterede grupper.
 
 <table>
 <colgroup>
@@ -123,25 +126,27 @@ På den **lagersted app feltet Prioritet** side, kan du placere feltnavnene i fo
 </tbody>
 </table>
 
-For eksempel når en lagermedarbejder udfører en opgave på en mobilenhed, hvis de metadata, der vises i programmet består af følgende felter:
+For eksempel når en lagermedarbejder udfører en opgave på en mobilenhed, hvis de metadata, der bliver vist i appen, består af følgende felter:
 
 -   Post
 -   Mængde
 -   Måleenhed
 -   Varebeskrivelse
--   Størrelse og placering
+-   Størrelse og sted
 
-Baseret på den lagersted app feltet prioritet, der er angivet i ovenstående tabel, vises følgende 3 rækker af oplysninger, der på siden opgaver:
+Baseret på den feltprioritet i lagerstedsappen, der er angivet i ovenstående tabel, vises følgende 3 rækker af oplysninger på opgavesiden:
 
--   Række 1: Vare, antal, enhed
--   Række 2: Beskrivelse
--   Række 3: størrelse
+-   Række 1: Vare, Antal, Måleenhed
+-   Række 2: Beskrivelse af varen
+-   Række 3: Størrelse
 
-De resterende metadata, placering, vises ikke på siden opgave, men der vises på en side med oplysninger. Hvis du vil vide mere og se eksempler på brugergrænsefladen, henvise til blogindlægget [annoncerer Dynamics 365 for operationer - opbevaring](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises på en side med oplysninger. Hvis du vil vide mere og se eksempler på brugergrænsefladen, kan du se i blogindlægget [Præsentation af Dynamics 365 for Operations - Lagersted](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 <a name="see-also"></a>Se også
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for operationer – opbevaring](install-configure-warehousing-app.md)
+[Installere og konfigurere Microsoft Dynamics 365 for Operations – Lagersted](install-configure-warehousing-app.md)
+
+
 
 

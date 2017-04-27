@@ -1,5 +1,5 @@
 ---
-title: udokumenterede
+title: udokumenteret
 description: "En aktionsmeddelelse er et systemgenereret forslag om ændring af en eksisterende planlagt eller autoriseret ordre."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="undocumented"></a>udokumenterede
+# <a name="undocumented"></a>udokumenteret
 
 En aktionsmeddelelse er et systemgenereret forslag om ændring af en eksisterende planlagt eller autoriseret ordre.
 

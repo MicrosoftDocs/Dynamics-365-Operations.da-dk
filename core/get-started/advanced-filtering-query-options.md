@@ -1,5 +1,5 @@
 ---
-title: "Syntaksen for avanceret filtrering og forespørgsler"
+title: "Syntaks for avanceret filtrering og forespørgsler"
 description: "I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren &quot;matches&quot; i dialogboksen Avanceret filtrering/sortering."
 author: jasongre
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Syntaksen for avanceret filtrering og forespørgsler
+# <a name="advanced-filtering-and-query-syntax"></a>Syntaks for avanceret filtrering og forespørgsler
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren "matches" i dialogboksen Avanceret filtrering/sortering.
 
@@ -52,79 +55,79 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <td><em>værdi</em></td>
 <td>Lig med den værdi, der er angivet</td>
 <td>Skriv værdien, der skal findes.</td>
-<td><strong>Jensen</strong> finder &quot;Smith&quot;.</td>
+<td><strong>Sørensen</strong> finder &quot;Sørensen&quot;.</td>
 </tr>
 <tr class="even">
-<td>! <em>værdi</em> (udråbstegnet)</td>
+<td>!<em>værdi</em> (udråbstegn)</td>
 <td>Ikke lig med den værdi, der er angivet</td>
 <td>Skriv et udråbstegn og den værdi, der skal udelades.</td>
-<td><strong>! Jensen</strong> finder alle værdier undtagen &quot;Smith&quot;.</td>
+<td><strong>!Sørensen</strong> finder alle værdier undtagen &quot;Sørensen&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>fra-værdi</em>..<em>til-værdi</em> (dobbelt punktum)</td>
 <td>Mellem de to angivne værdier, der er adskilt af dobbelt punktum</td>
 <td>Skriv fra-værdien, derefter to punktummer og til sidst til-værdien.</td>
-<td><strong>1..10</strong> finder alle værdier fra 1 til 10. Men i et strengfelt, <strong>A.. C</strong> finder alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der er helt identisk med &quot;C&quot;. For eksempel denne forespørgsel kan ikke finde &quot;Ca&quot;. At finde alle værdier fra &quot;A*&quot; gennem &quot;C*&quot;, type <strong>A.. D</strong>.</td>
+<td><strong>1..10</strong> finder alle værdier fra 1 til og med 10. I strengfeltet <strong>A..C</strong> findes alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der svarer præcist til &quot;C&quot;. I dette eksempel finder denne forespørgsel f.eks. ikke &quot;Ca&quot;. Hvis du vil finde alle værdier fra &quot;A*&quot; til og med &quot;C*&quot;, skal du skrive <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>værdi</em> (dobbelt punktum)</td>
 <td>Mindre end eller lig med den værdi, der er angivet.</td>
 <td>Skriv to punktummer og derefter værdien.</td>
-<td><strong>.. 1000</strong> finder alle tal, der er mindre end eller lig med 1000, som &quot;100&quot;, &quot;999.95&quot;, og &quot;1.000&quot;.</td>
+<td><strong>..1000</strong> finder eventuelle tal, der er mindre end eller lig med 1000, f.eks. &quot;100&quot;, &quot;999,95&quot; og &quot;1.000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>værdi</em>.. (dobbelt punktum)</td>
 <td>Større end eller lig med den værdi, der er angivet.</td>
 <td>Skriv værdien og de to punktummer.</td>
-<td><strong>1000..</strong> Finder alle tal, der er større end eller lig med 1000, som &quot;1.000&quot;, &quot;1,000.01&quot;, og &quot;1000000&quot;.</td>
+<td><strong>1000..</strong> finder eventuelle tal, der er større end eller lig med 1000, f.eks. &quot;1.000&quot;, &quot;1.000,01&quot; og &quot;1.000.000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>værdien</em> (større end-tegn)</td>
+<td>&gt;<em>værdi</em> (større end-tegn)</td>
 <td>Større end den værdi, der er angivet</td>
 <td>Skriv et større end-tegn (<strong>&gt;</strong>) og derefter værdien.</td>
-<td><strong>&gt;1000</strong> finder alle tal, der er større end 1000, som &quot;1000.01&quot;, &quot;20.000&quot;, og &quot;1000000&quot;.</td>
+<td><strong>&gt;1000</strong> finder eventuelle tal, der er større end 1000, f.eks. &quot;1000,01&quot;, &quot;20.000&quot; og &quot;1.000.000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>værdien</em> (mindre end)</td>
+<td>&lt;<em>værdi</em> (mindre end-tegn)</td>
 <td>Mindre end den værdi, der er angivet</td>
-<td>Skriv et mindre end-tegnet (<strong>&lt;</strong>) og derefter værdien.</td>
-<td><strong>&lt;1000</strong> finder alle tal, der er mindre end 1000, som &quot;999.99&quot;, &quot;1&quot;, og &quot;-200&quot;.</td>
+<td>Skriv et mindre end-tegn (<strong>&lt;</strong>) og derefter værdien.</td>
+<td><strong>&lt;1000</strong> finder eventuelle tal, der er mindre end 1000, f.eks. &quot;999,99&quot;, &quot;1&quot; og &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>værdien</em>* (stjerne)</td>
+<td><em>værdi</em>* (stjerne)</td>
 <td>Starter med den værdi, der er angivet</td>
 <td>Skriv startværdien og derefter en stjerne (<strong>*</strong>).</td>
-<td><strong>S *</strong> søger efter en streng, der begynder med &quot;S&quot;, som &quot;Stockholm&quot;, &quot;Sydney&quot;, og &quot;San Francisco&quot;.</td>
+<td><strong>S*</strong> finder enhver strenge, der starter med &quot;S&quot;, f.eks. &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>værdi</em> (stjerne)</td>
 <td>Slutter med den værdi, der er angivet.</td>
 <td>Skriv en stjerne og derefter slutværdien.</td>
-<td><strong>* Øst</strong> søger efter en streng, der slutter med &quot;Øst&quot;, som &quot;nordøstlige&quot; og &quot;sydøstasiatiske&quot;.</td>
+<td><strong>*øst</strong> finder alle strenge, der slutter med &quot;øst&quot;, f.eks. &quot;Nordøst&quot; og &quot;Sydøst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>værdien</em>* (stjerne)</td>
+<td>*<em>værdi</em>* (stjerne)</td>
 <td>Indeholder den værdi, der er angivet</td>
 <td>Skriv en stjerne, derefter en værdi og så en stjerne igen.</td>
-<td><strong>*te*</strong> søger efter en streng, der indeholder &quot;te&quot;, som &quot;nordøstlige&quot; og &quot;sydøstasiatiske&quot;.</td>
+<td><strong>**rd**</strong> finder alle strenge, der indeholder &quot;rd&quot;, f.eks. &quot;Nordøst&quot; og &quot;Nordvest&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (spørgsmålstegn)</td>
 <td>Et eller flere ukendte tegn</td>
 <td>Skriv et spørgsmålstegn det sted i værdien, hvor det ukendte tegn er placeret.</td>
-<td><strong>SM? te</strong> finder &quot;Smith&quot; og &quot;Pedersen&quot;.</td>
+<td><strong>Pe?ersen</strong> finder &quot;Petersen&quot; og &quot;Pedersen&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>værdi</em>,<em>værdi</em> (komma)</td>
 <td>Svarer til de værdier, der er adskilt af kommaer</td>
 <td>Skriv alle kriterierne, og adskil dem med kommaer.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> finder nøjagtigt &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> finder nøjagtigt &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finder nøjagtigt &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-sætning</span>) (SQL-sætning i parenteser)</td>
 <td>Svarende til en defineret forespørgsel</td>
 <td>Skriv en forespørgsel som en SQL-sætning mellem parenteser.</td>
-<td><strong><span class="code">(datakilde. Feltnavn! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td> </td>
@@ -137,7 +140,7 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <td>Svarer til værdien eller intervallet af værdier, der er angivet af parametrene i metoden <strong>SysQueryRangeUtil</strong></td>
 <td>Skriv en <strong>SysQueryRangeUtil</strong>-metode, der har parametre, som angiver værdien eller et interval af værdier.</td>
 <td><ol>
-<li>Klik på <strong>tilgodehavender</strong>&gt;<strong>fakturaer</strong>&gt;<strong>åbne debitorfakturaer</strong>.</li>
+<li>Klik på <strong>Debitor</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åbne debitorfakturaer</strong>.</li>
 <li>Tryk på Ctrl + Skift + F3 for at åbne siden <strong>Forespørgsel</strong>.</li>
 <li>Klik på <strong>Tilføj</strong> under fanen <strong>Interval</strong>.</li>
 <li>Vælg <strong>Åbne debitorposteringer</strong> i feltet <strong>Tabel</strong>.</li>
@@ -228,6 +231,8 @@ Se tabellen i næste afsnit for at få flere oplysninger om datometoden <strong>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

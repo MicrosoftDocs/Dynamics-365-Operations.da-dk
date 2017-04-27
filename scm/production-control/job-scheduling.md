@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Finplanlægning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om jobplanlægning, som er en mere detaljeret form for planlægning end grovplanlægning. Du kan bruge finplanlægning til at planlægge individuelle job eller værkstedsordrer og til at styre produktionsmiljøet.
 
 Du kan bruge finplanlægning til at planlægge individuelle job eller værkstedsordrer og til at styre produktionsmiljøet. Finplanlægning opbryder hver enkelt operation i individuelle opgaver eller job. Disse job tildeles derefter til de operationsressourcer, der skal udføre dem. Du kan også bruge finplanlægning til at synkronisere alle job, der refereres til af det valgte job. Du kan angive startdato og -klokkeslæt eller slutdato og -klokkeslæt for jobbet og derefter udføre planlægning. Den tid, du angiver, kan være starttidspunktet eller sluttidspunktet, afhængigt af planlægningsvejen. Denne funktion er f.eks. nyttigt, når et job kun kan køres på én maskine ad gangen, eller hvis du vil optimere det job, der køres for hver ressource.
@@ -73,5 +76,7 @@ Ressourcer tildeles til job via finplanlægning. Du kan definere den maksimale k
 
 ## <a name="resource-efficiency"></a>Ressourceeffektivitet
 Under finplanlægning tages der højde for de effektivitetsprocenter, der er angivet for ressourcerne. Effektivitetsprocenter afkorter eller forlænger den tid, der er reserveret for ressourcen. Det betyder derfor, at gennemløbstiden også bliver længere eller kortere. Følgende formel bruges til beregningen: Planlægningstid = Tid × 100 ÷ Effektivitetsprocent *Tiden*, der bruges i formlen, omfatter både procestid og opstillingstid.
+
+
 
 

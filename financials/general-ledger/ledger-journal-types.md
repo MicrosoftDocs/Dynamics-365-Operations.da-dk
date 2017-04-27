@@ -1,6 +1,6 @@
 ---
 title: Finanskladdetyper
-description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden kladden navne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for operationer."
+description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Finanskladdetyper
 
-I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden kladden navne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for operationer.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Operations.
 
 | Kladdetype                      | Formål                                                                                                                                                                                                                                                                                                                                                     | Angive posteringer på denne side                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Br
 | Kreditorbankremittering            | Opret en egenvekselremitteringsfil, der kan sendes til virksomhedens bank.                                                                                                                                                                                                                                                                      | Remitteringskladde                                             |
 | Kreditorbetaling               | Opret kreditorbetalingsposter.                                                                                                                                                                                                                                                                                                                    | Betalingskladde                                                |
 | Kreditorudstedelse af egenveksel       | Tegn egenveksler til leverandøren som en metode til betaling. For at bruge denne kladdetype skal du fjerne indstillingen **Opret og bogfør automatisk udstedelseskladde ved bogføring af fakturaer** på siden **Betalingsmåder - kreditorer**.                                                                                                                                          | Kladde for udstedelse af egenveksel                                   |
-| Kreditor Fakturapulje kontering | Opret kreditorfakturaposteringer, der endnu ikke er bogført til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Kreditorfakturapulje ekskl. bogføringsdetaljer                  |
+| Kreditorfakturapulje ekskl. kontering | Opret kreditorfakturaposteringer, der endnu ikke er bogført til en midlertidig ankomstkonto.                                                                                                                                                                                                                                                             | Kreditorfakturapulje ekskl. bogføringsdetaljer                  |
 | Kreditorfakturapulje               | Opret kreditorfakturapuljetransaktioner.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Kreditorfaktura, registrering          | Bogfør kreditorfakturaer, der er i en kladde.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Kreditorgenudstedelse af egenveksel     | Genudsted en egenveksel, der tidligere er blevet accepteret af organisationens bank.                                                                                                                                                                                                                                                                      | kladde for genudstedelse af egenveksel                                 |
 | Kreditorudligning af egenveksel     | Opret kreditortransaktioner til udligning af egenveksel.                                                                                                                                                                                                                                                                                                          | Kladde for udligning af egenveksel                                 |
+
+
 
 
 

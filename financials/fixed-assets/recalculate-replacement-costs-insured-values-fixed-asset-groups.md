@@ -1,5 +1,5 @@
 ---
-title: "Genberegne genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper"
+title: "Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper"
 description: "Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Genberegne genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
 
@@ -38,18 +41,18 @@ Hvis du vil genberegne genanskaffelsesprisen og den forsikrede værdi af anlægs
 
 Når du bruger formularen Opdater genanskaffelsespriser og forsikrede værdier til at genberegne genanskaffelsesprisen og den forsikrede værdi for aktiverne, anvendes følgende formler:
 
--   \[(Anlægsaktivgruppens genanskaffelsesprisfaktor / 100) + 1\]\* anlægsaktivets eksisterende genanskaffelsespris
--   \[(Anlægsaktivgruppens forsikrede værdifaktor / 100) + 1\]\* anlægsaktivets eksisterende forsikrede værdi
+-   \[(Anlægsaktivgruppens genanskaffelsesprisfaktor/100) + 1\] \* Anlægsaktivets eksisterende genanskaffelsespris
+-   \[(Anlægsaktivgruppens forsikrede værdifaktor/100) + 1\] \* Anlægsaktivets eksisterende forsikrede værdi
 
 > [!NOTE] 
 > Når du bruger formularen Opdater genanskaffelsespriser og forsikrede værdier opdateres både genanskaffelsesprisen og den forsikrede værdi for de valgte aktiver. Du kan ikke angive, at der kun skal opdateres én værdi. Hvis du vil lade én værdi forblive den samme, mens den anden værdi opdateres, skal du skrive 0 (nul) som faktoren i formularen Anlægsaktivgruppen . En nulfaktor eller en tom faktor medfører, at beregningen springes over i den periodiske opdatering. Den bogførte værdi og den bogførte nettoværdi for anlægsaktiver påvirkes ikke af den periodiske opdatering. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a>Sådan bruges en dato til at vælge, hvilke varer der skal opdateres
-Opdateringsprocessen opdaterer som standard de valgte aktiver, der ikke har været opdateret på den aktuelle dag, men som kan være blevet opdateret de foregående dage. For eksempel &lt;dags dato betyder "før i dag." Du kan ændre datoen i erstatning og forsikrede værdier opdateringsformen ved at klikke på knappen Vælg. De datokriterier, du angiver, sammenlignes med datoen for den sidste periodiske opdatering for aktivet (feltet Sidste opdatering af periodiseret værdi/omkostning i formularen Anlægsaktiver). Hver gang det lykkes dig at opdatere genanskaffelsesprisen eller den forsikrede værdi for et anlægsaktiv, opdateres feltet Sidste opdatering af periodiseret værdi/omkostning automatisk med den aktuelle dato. 
+Opdateringsprocessen opdaterer som standard de valgte aktiver, der ikke har været opdateret på den aktuelle dag, men som kan være blevet opdateret de foregående dage. For eksempel betyder &lt; dags dato "før i dag". Du kan ændre datoen i formularen Opdater genanskaffelsespriser og forsikrede værdier ved at klikke på knappen Vælg. De datokriterier, du angiver, sammenlignes med datoen for den sidste periodiske opdatering for aktivet (feltet Sidste opdatering af periodiseret værdi/omkostning i formularen Anlægsaktiver). Hver gang det lykkes dig at opdatere genanskaffelsesprisen eller den forsikrede værdi for et anlægsaktiv, opdateres feltet Sidste opdatering af periodiseret værdi/omkostning automatisk med den aktuelle dato. 
 
 Eksempel 
 
-Du opdaterede genanskaffelsesprisen for køretøjer, kontormøbler og bygningsgrupper med 5 procent i går, og nu overvejer du, om disse aktiver skal opdateres nøjagtigt. Hvis du vil udelade disse aktiver, når du opdaterer alle andre anlægsaktiver i dag, skal du angive en dato i sidst periodiske værdi/omkostning Opdater felt, der ligger før i går (&lt; gårsdagens dato), fordi den sidste opdatering for køretøjer, kontormøbler og bygninger grupper, der er opstået uden for det datoområde, du har angivet.
+Du opdaterede genanskaffelsesprisen for køretøjer, kontormøbler og bygningsgrupper med 5 procent i går, og nu overvejer du, om disse aktiver skal opdateres nøjagtigt. Hvis du vil udelade disse aktiver, når du opdaterer alle andre anlægsaktiver i dag, skal du angive en dato i feltet Sidste opdatering af periodiseret værdi/omkostning, der ligger før i går (&lt; i går), da den seneste periodiske opdatering for køretøjer, kontormøbler og bygninger er sket uden for det datoområde, du har angivet.
 
 ## <a name="cumulative-effect-of-each-update"></a>Akkumuleret effekt af de enkelte opdateringer
 Hver opdatering har en akkumuleret effekt. Du skal derfor planlægge din opdateringer omhyggeligt. Hvis du f.eks. øger alle aktiver med 3 % tirsdag og derefter øger kontormøbler med 4 % fredag, skal du være sikker på, at din hensigt er at foretage en stigning for kontormøbler på 7,12 %.
@@ -72,6 +75,8 @@ Næste dag får du besked fra chefen om, at værdien på computere er formindske
 
 > [!NOTE]  
 > Du kan ikke tilbageføre faktoren -10 ved at angive en positiv faktor på 10 (eller en faktor på 2, som er differencen mellem -10 og -8), da beløbene ikke beregnes som forventet. 
+
+
 
 
 

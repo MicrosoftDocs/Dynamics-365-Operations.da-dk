@@ -1,6 +1,6 @@
 ---
 title: Udligningsprioritet i den offentlige sektor
-description: "Du kan manuelt vælge posteringer til udligning i Microsoft Dynamics 365 for operationer, eller du kan bruge funktionen automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning."
+description: "I Microsoft Dynamics 365 for Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 
-Du kan manuelt vælge posteringer til udligning i Microsoft Dynamics 365 for operationer, eller du kan bruge funktionen automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
+[!include[banner](../includes/banner.md)]
+
+
+I Microsoft Dynamics 365 for Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
 
 <a name="how-to-set-the-general-ledger-parameters-and-accounts-receivable-parameters-for-settlement-priority"></a>Sådan indstilles parametrene Finans og Debitor for udligningsprioritet
 ---------------------------------------------------------------------------------------------------
@@ -37,7 +40,7 @@ Du kan manuelt vælge posteringer til udligning i Microsoft Dynamics 365 for ope
 Hvis du vil bruge faktureringsklassifikationer til at kontrollere udligningsprioriteter, skal du angive både parameteren moms i appen Finans og udligningsparametre i appen Debitor. 
 
 > [!NOTE]
-> Din faktureringsklassifikationer bør helt oprettet og aktiveret, før du kan angive disse parametre. Så snart du aktiverer faktureringsklassifikationer, bliver faktureringsklassifikation et obligatorisk felt på fritekstfakturaen. 
+> Dine faktureringsklassifikationer bør være helt oprettet og aktiveret, før du angiver disse parametre. Så snart du aktiverer faktureringsklassifikationer, bliver faktureringsklassifikation et obligatorisk felt på fritekstfakturaen. 
 
 Du kan få flere oplysninger om faktureringsklassifikationer, herunder hvordan du kan aktivere dem, i [Faktureringsklassifikationer og faktureringskoder i den offentlige sektor](billing-classifications-billing-codes-public-sector.md).
 
@@ -69,6 +72,8 @@ Under udligningsprocessen kommer udligningsattributter i betragtning først, der
 -   Når du har føjet faktureringskoder til en faktureringsklassifikation, skal du bruge knapperne **Op** og **Ned** på oversigtspanelet **Faktureringskoder** til at arrangere faktureringskoder i prioriteringsrækkefølge. (Dette er kun nødvendigt, hvis du planlægger at bruge **Faktureringskode** som din fakturalinjeprioritet).
 -   Når du har oprettet alle de faktureringsklassifikationer for organisationen, kan du bruge knapperne **Op** og **Ned** øverst på siden **Faktureringsklassifikationer** til at arrangere faktureringsklassifikationer i prioriteringsrækkefølge.
 -   Når du har aktiveret attributten **Fakturering** på siden **Udligningsprioritet**, skal du bruge knapperne **Op** og **Ned** øverst på siden til at arrangere de aktive udligningsattributter i prioriteringsrækkefølge.
+
+
 
 
 

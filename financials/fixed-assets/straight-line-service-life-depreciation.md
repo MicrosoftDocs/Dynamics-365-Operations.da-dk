@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Lineær afskrivning for levetiden
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
 
 Når du opretter en afskrivningsprofil for anlægsaktiver og vælger Lineær afskrivning over servicelevetiden i feltet Metode på siden Afskrivningsprofiler, baseres afskrivningen af aktiver med denne tilknyttede afskrivningsprofil, på baggrund af den samlede levetid for anlægsaktivet. Det vil normalt sige med det samme afskrivningsbeløb for hver afskrivningsperiode. 
@@ -100,7 +103,9 @@ Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og be
 | År 5 | 14.000 / 5 = 2.800                        | 4.600 - 2.800 = 1.800                 |
 | År 6 | Resterende 800\*                           | 1.800 – 800 = 1.000                   |
 
-\*Da restbeløbet er mindre end afskrivningsbeløbet, tages kun restbeløbet minus restværdien.
+\*Da restbeløbet er mindre end afskrivningsbeløbet, er det kun restbeløbet minus restværdien der angives.
+
+
 
 
 

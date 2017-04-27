@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
 
 Produktkvittering er registreringen af, at der er modtaget bestilte produkter, så indkøbsordrelinjerne (IO) derefter kan behandles med henblik på fakturering. I nogle tilfælde gennemgår produkter forudregistrering, hvor yderligere oplysninger fra leverandøren registreres, før produkterne modtages. Når produkterne ankommer, skal de først er markeret som **Registreret**. Produkterne skal derefter muligvis igennem flere processer, som kvalitetsstyring, før de endelig markeres som **Modtaget**.
@@ -52,19 +55,21 @@ Du kan vælge flere ordrer og udføre modtagelse på alle disse ordrer sammen. D
 
 IO'er kan oprettes fra en salgsordre, hvor indstillingen **Direkte levering** er valgt. Når du bruger direkte levering, ankommer produkterne aldrig til lageret, men leveres direkte fra leverandøren til kunden. I sådanne tilfælde registreres modtagelsen normalt direkte på indkøbsordren. Modtagelsen kan ske automatisk som f.eks. via EDI-integration (Electronic Data Interchange) med leverandøren. Alternativt, hvis indkøbsordren er en intern indkøbsordre, automatiserer Microsoft Dynamics 365 for Operations modtagelsen på den interne salgsordre, når forsendelsen sker. Når du bruger direkte levering, figurerer produkter stadig som lager, selvom de ikke fysisk ankommer til lageret. Derfor, når produktkvitteringen registreres på indkøbsordren, opdateres salgsordren automatisk med en følgeseddel, så den overordnede ændring til lageret er 0 (nul). Du bør ikke kræve forudregistrering i scenarier for direkte levering. Hvis du bruger lagersteder, der er aktiveret for lagerstedsstyring, kan du omgå kravet om nummerpladeregistrering ved at angive et virtuelt lagersted i stedet. Du kan angive dette lagersted i feltet **Lagersted til direkte levering** på produktet. 
 
-Når produktkvitteringen, er blevet behandlet på Indkøbsordren, PO-status er angivet til **modtaget** til at angive, at fakturaen kan behandles for ordren. Du kan få vist oplysninger om produkter, der allerede er modtaget, ved hjælp af siden **Produktkvitteringskladder**.  
+Når produktkvitteringen er blevet behandlet på indkøbsordren, indstilles indkøbsordrestatus til **Modtaget** for at angive, at fakturaen kan behandles for ordren. Du kan få vist oplysninger om produkter, der allerede er modtaget, ved hjælp af siden **Produktkvitteringskladder**.  
 
 Du kan få adgang til denne side fra handlingsgruppen **Tilgang** på siden **Indkøbsordre**. Oplysningerne i kladderne indeholder detaljer om antal, datoer og dimensioner.
 
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Oversigt over indkøbsordrer](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Oprettelse af indkøbsordre](purchase-order-creation.md)
 
 [Godkendelse og bekræftelse af indkøbsordre](purchase-order-approval-confirmation.md)
 
 [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

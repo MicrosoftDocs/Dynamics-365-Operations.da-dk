@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Forbrugsafskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivningsmetoden Forbrug.
 
 Hvis du konfigurerer en afskrivningsprofil for anlægsaktiver og vælger **Forbrug** i feltet **Metode** på siden **Afskrivningsprofiler**, tildeles anlægsaktiver til denne afskrivningsprofilen baseret på deres brug. Du behøver ikke at definere procenter og intervaller på siden **Afskrivningsprofiler**. Når du har oprettet en afskrivningsprofil, der bruger metoden Forbrug, kan du angive metoden på forskellige måder.
@@ -64,5 +67,7 @@ Der er defineret følgende faktorer for forbrugsafskrivning pr. 31. januar:
 -   Det forkalkulerede antal for anlægsaktivet er 2.000.
 
 Afskrivningsforslaget den 31. januar er som følger: Anslået mængde × Procent × Enhedsafskrivning 2.000 × 0,10 × 1,5 = 300
+
+
 
 

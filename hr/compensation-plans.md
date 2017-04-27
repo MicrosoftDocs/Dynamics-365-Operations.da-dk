@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Kompensationsplaner
 
+[!include[banner](includes/banner.md)]
+
+
 Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
 
 ### <a name="introduction"></a>Introduktion
 
-Kompensationsstyring bruges til at kontrollere leveringen af grundløn og bonusser. En medarbejders faste grundløn og meritstigninger styres via fast løn-strukturer. Betalingen af incitamentsløn som f.eks. bonusudbetalinger, præstationsbonusser, aktieoptioner og tildelte aktier samt engangsbonusser styres ved hjælp af variable lønstrukturer. 
+Kompensationsstyring bruges til at styre fordelingen af grundløn og bonusser. En medarbejders faste grundløn og kvalifikationstillæg styres gennem faste lønstrukturer. Betalingen af incitamentsløn som f.eks. bonusudbetalinger, præstationsbonusser, aktieoptioner og tildelte aktier samt engangsbonusser styres ved hjælp af variable lønstrukturer. 
 
 Medarbejdere kan knyttes til en eller flere strukturer af begge typer. En medarbejder skal opfylde følgende krav for at være berettiget til registrering i en lønstruktur:
 -   Medarbejderen skal have en aktiv stillingstildeling.
@@ -54,7 +57,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 <td>Fast løn-handlinger opfylder to formål:
 <ul>
 <li>Handlinger kan angive den type oplysninger, der skal registreres, når en medarbejders kompensation ændres. For eksempel kan du kræve, at årsagen til en ændring, f.eks en kampagne eller en sænkning, registreres.</li>
-<li>Handlinger kan sikre, at en beregning, der anvendes ved behandling af fast løn-strukturer.  Handlinger af typen egenkapital vil for eksempel sammenligne lønnen medarbejdere til minimum referencepunktet for niveauet på medarbejderens og sikre, at medarbejderen får betales mindst minimum.</li>
+<li>Handlinger kan sikre, at der anvendes en beregning, når faste lønstrukturer behandles.  Handlinger af typen Egenkapital sammenligner for eksempel medarbejderlønnen med minimumreferencepunktet for niveauet af medarbejderens og sikrer, at medarbejderen bliver betalt mindst minimum.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 </tr>
 <tr class="even">
 <td>Lønfrekvenser</td>
-<td>Lønfrekvenser bruges til at definere den periode, hvor godtgørelser, der er angivet.  For eksempel lønsats løn frekvens kan du forstå, hvis kompensationsbeløb er angivet som en årlig gage kontra en time. Lønfrekvenser bruges også til at konfigurere omregningsfaktorer til omregning af kompensationsbeløb fra pr. måned, uge, to uger og time til en årlig lønfrekvens.</td>
+<td>Lønfrekvenser bruges til at definere den periode, godtgørelsen er angivet for.  For eksempel hjælper lønfrekvensen dig med at forstå, om kompensationsbeløbet er angivet som en årslån eller en timeløn. Lønfrekvenser bruges også til at konfigurere omregningsfaktorer til konvertering af kompensationsbeløb fra pr. måned, uge, 14 dage og time til en årlig lønfrekvens.</td>
 </tr>
 <tr class="odd">
 <td>Kompensationsområder</td>
@@ -107,7 +110,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 </tr>
 <tr class="even">
 <td>Kompensationsgitre</td>
-<td>Kompensationsgitre indeholde kompensationsstrukturen.  Kompensationsgitre kan bruges af en eller flere kompensationsplaner.</td>
+<td>Kompensationsgitre indeholder kompensationsstrukturen.  Kompensationsgitre kan bruges af en eller flere kompensationsplaner.</td>
 </tr>
 <tr class="odd">
 <td>Performance-planer</td>
@@ -126,9 +129,11 @@ En proceshændelse beregner lønoplysninger for en bestemt periode for alle meda
 <a name="compensation-events"></a>Kompensationshændelser
 -------------------
 
-Hver gang en proceshændelse afvikles, oprettes der en kompensationshændelse.  Kompensationshændelser indeholder resultaterne af kompensationsprocessen for hver medarbejder, der er inkluderet i denne proceshændelsen.  Når beregningerne er korrekte, kan du indlæse kompensationshændelse for at opdatere kompensationsposter for medarbejdere, der berøres af proceshændelsen.
+Hver gang en proceshændelse afvikles, oprettes der en kompensationshændelse.  Kompensationshændelser indeholder resultaterne af kompensationsprocessen for hver medarbejder, der er inkluderet i denne proceshændelse.  Når disse beregninger er korrekte, kan du indlæse kompensationshændelsen for at opdatere lønposterne for de medarbejdere, der er berørt af proceshændelsen.
 
 ## <a name="recommendations"></a>Anbefalinger
 Når du har kørt en proceshændelse, kan du anbefale justeringer i en medarbejders meritforøgelse eller bonusbeløb baseret på de beregnede retningslinjer for proceshændelsen. For at angive anbefalinger for medarbejdere skal du aktivere anbefalinger, når du opretter lønstrukturer, eller når du konfigurerer proceshændelsen.
+
+
 
 

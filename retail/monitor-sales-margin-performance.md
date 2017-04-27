@@ -1,6 +1,6 @@
 ---
 title: "Overvåg salgs- og avanceudvikling"
-description: "Du kan overvåge salgs- og margen ydeevne i realtid ved hjælp af Microsoft Dynamics 365 for operationer."
+description: "Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Overvåg salgs- og avanceudvikling
 
-Du kan overvåge salgs- og margen ydeevne i realtid ved hjælp af Microsoft Dynamics 365 for operationer.
+[!include[banner](includes/banner.md)]
 
-Som en del af Dynamics 365 for operationer, kan brugerne overvåge salgs- og margen ydeevne i realtid på tværs af forskellige niveauer i organisationshierarkiet for følgende dimensioner:
+
+Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dynamics 365 for Operations.
+
+I Dynamics 365 for Operations, kan brugerne overvåge salgs- og avanceudvikling i realtid på tværs af forskellige niveauer i organisationshierarkiet for følgende dimensioner:
 
 -   Produkter
 -   Kategorier
@@ -42,8 +45,10 @@ Som en del af Dynamics 365 for operationer, kan brugerne overvåge salgs- og mar
 
 Desuden kan brugerne med to entydige rapporter, der udnytter strukturering af hierarkiske gitre, overvåge salgs- og avanceudvikling ved at udføre detailudledning fra den øverste kategorinode til individuelle bladnoder i kategorien i kategorihierarkiet for standarddetailproduktet. Brugere kan også udføre detailudledning fra den øverste driftsenhed til en enkelt kanal i organisationshierarkiet, der er defineret som standardorganisationshierarkiet i forbindelse med detailrapporteringshierarkiet. Du kan åbne rapporterne fra en af følgende lokaliteter:
 
--   **Administration af Retail store** arbejdsområde Dynamics 365 for operationer &gt;**detail- og commerce**&gt;**kanaler**&gt;**Retail store management**&gt;**rapporter**
--   **Kategori-og** arbejdsområde Dynamics 365 for operationer &gt;**detail- og commerce**&gt;**produkter og kategorier**&gt;**Retail store management**&gt;**rapporter**
--   **Prissætning og rabat management** arbejdsområde Dynamics 365 for operationer &gt;**detail- og commerce**&gt;**priser og rabatter**&gt;**Retail store management**&gt;**rapporter**
--   **Forespørgsler og rapporter** afsnit Dynamics 365 for operationer &gt;**detail- og commerce**&gt;**forespørgsler og rapporter**&gt;**salgsrapporter**
+-   **Detailbutiksstyring**-arbejdsområdet i Dynamics 365 for Operations &gt; **Detail og handel** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+-   **Kategori og produktstyring**-arbejdsområdet i Dynamics 365 for Operations &gt; **Detail og handel** &gt; **Produkt og kategorier** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+-   **Styring af prissætning og rabatter**-arbejdsområdet i Dynamics 365 for Operations &gt; **Detail og handel** &gt; **Priser og rabatter** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+-   **Forespørgsler og rapporter**-sektionen i Dynamics 365 for Operations &gt; **Detail og handel** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
+
+
 

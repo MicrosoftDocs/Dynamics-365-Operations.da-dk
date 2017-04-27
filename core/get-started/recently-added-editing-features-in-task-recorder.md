@@ -1,6 +1,6 @@
 ---
-title: "Tilføjet for nylig redigeringsfunktioner i Arbejdsrutineoptager"
-description: "Hvis du bruge Arbejdsrutineoptager til at oprette hjælpelinjer til opgaven, kan du redigere dine filer mere effektivt med de funktioner, der er beskrevet i denne wiki."
+title: "Redigeringsfunktioner tilføjet for nylig i Arbejdsrutineoptager"
+description: Hvis du bruger Arbejdsrutineoptager til at oprette opgaveguider, kan du redigere dine filer mere effektivt med de funktioner, der er beskrevet i denne wiki.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,58 +25,58 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recently-added-editing-features-in-task-recorder"></a>Tilføjet for nylig redigeringsfunktioner i Arbejdsrutineoptager
+# <a name="recently-added-editing-features-in-task-recorder"></a>Redigeringsfunktioner tilføjet for nylig i Arbejdsrutineoptager
 
-Hvis du bruge Arbejdsrutineoptager til at oprette hjælpelinjer til opgaven, kan du redigere dine filer mere effektivt med de funktioner, der er beskrevet i denne wiki.
+Hvis du bruger Arbejdsrutineoptager til at oprette opgaveguider, kan du redigere dine filer mere effektivt med de funktioner, der er beskrevet i denne wiki.
 
-Disse funktioner er tilgængelige på den **indstillinger &gt;Arbejdsrutineoptager &gt;Rediger optagelse** i menuen.
+Disse funktioner er tilgængelige i menuen **indstillinger &gt; Arbejdsrutineoptager &gt; Rediger optagelse**.
 
--   Indsæt trin uden indtalingen hele filen.
--   Flyt trin under en underordnet opgave uden indtalingen hele filen.
--   Skjul registrering navn og beskrivelse.
+-   Indsæt trin uden at optage hele filen igen.
+-   Flyt trin under en underordnet opgave uden optage hele filen igen.
+-   Skjul felterne med registreringens navn og beskrivelse.
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Indsæt trin uden rerecording hele filen
-Du kan nu tilføje et trin overalt i en opgave-guide uden afspiller eller optager hele filen igen.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Indsæt trin uden at optage hele filen igen.
+Du kan nu tilføje et trin overalt i en opgaveguide uden at afspille eller optage hele filen igen.
 
-1.  Vælg det trin, hvor du ønsker nye trinnet skal indsættes. Kontroller, at trinnet er fremhævet.
+1.  Vælg det trin, hvor du ønsker, at det nye trin skal indsættes efter. Kontrollér, at trinnet er fremhævet.
 
-Arbejdsrutineoptager indsætte et trin skal, du have den rigtige side, der er åbne. Den rigtige side er siden, hvor det nye trin forekommer. Arbejdsrutineoptager har en mekanisme, der bestemmer, hvad den aktive side er, og vil deaktivere funktionen, hvis den korrekte side ikke er åbent. 
+For at Arbejdsrutineoptager kan indsætte et trin, skal du have den rigtige side åben. Den rigtige side er den side, hvor det nye trin forekommer på. Arbejdsrutineoptager har en mekanisme, der bestemmer, hvad den aktive side er, og den vil deaktivere funktionen, hvis den korrekte side ikke er åbent. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-Når du er på den rigtige side **Indsæt trin** bliver tilgængelige.
+Når du er på den rigtige side bliver **Indsæt trin** tilgængelig.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
 2. Klik på **Indsæt trin**.
 
-Når du klikker på **Indsæt trin**, Arbejdsrutineoptager skifter til post-tilstand. Eventuelle foranstaltninger truffet i Brugergrænsefladen, nu registreres og tilføjes i stedet som trin.
+Når du klikker på **Indsæt trin**, skifter Arbejdsrutineoptager til registreringstilstand. Alle handlinger, der foretages i brugergrænsefladen, registreres nu og tilføjes på stedet som trin.
 
-3. Klik på **holder**.
+3. Klik på **Stop**.
 
-Du kan gentage processen, at tilføje så mange trin eller flytte så mange underordnede opgaver efter behov (se nedenfor for at underopgaver).
+Du kan gentage processen og tilføje så mange trin eller flytte så mange underordnede opgaver som nødvendigt (se nedenfor om underopgaver).
 
-4. Når du er færdig redigering opgave programguiden, skal du klikke på **færdig med at redigere**, og vælg derefter en af indstillingerne for at gemme eller udgive opgave-vejledning.
+4. Når du er færdig med at redigere opgaveguiden, skal du klikke på **Redigeringen blev afsluttet** og derefter vælge en af indstillingerne for at gemme eller udgive opgaveguiden.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Flyt trin under en underopgave uden rerecording hele filen
-Du kan flytte trin under en underordnet opgave uden afspiller eller optager hele filen igen. Du kan også flytte trinnet underopgave eller slutningen underopgavens trin, hvis du vil gruppere en eksisterende blok af trin.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Flyt trin under en underordnet opgave uden at registrere hele filen igen
+Du kan flytte trin under en underordnet opgave uden at registrere hele filen igen. Du kan også flytte underopgavetrinnet eller afslutte underopgavetrinnet, hvis du vil gruppere en eksisterende blok af trin.
 
-1.  Vælg det trin eller underopgave trin, du vil flytte. Sørg for, at trinnet er fremhævet.
+1.  Vælg det trin eller det underopgavetrin, du vil flytte. Kontrollér, at trinnet er fremhævet.
 2.  Klik på ellipsen, og klik derefter på **Flyt trin efter**.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Vælg det trin eller underopgave trin, du vil flytte eller underopgave trin trin efter. Arbejdsrutineoptager, flyttes trinnet.
+3. Vælg det trin eller underopgavetrin, du vil flytte trinnet eller underopgavetrinnet efter. Arbejdsrutineoptager flytter trinnet.
 
-4. Flyt trin end underopgave, markere den, klik på ellipsen, klikke på **Flyt trin efter**, og vælg derefter det trin, hvorefter du vil ende underopgavens trin til at være.
+4. Hvis du vil flytte det sidste underopgavetrin, skal du markere det, klikke på ellipsen, klikke på **Flyt trin efter** og derefter vælge det trin, hvorefter du ønsker, at det sidste underopgavetrin skal være.
 
-Det første trin i guiden opgave skal ligge inden for en underordnet opgave skal du oprette en underordnet opgave trin som andet trin, og derefter flytte det første trin i den. Du kan tilføje eller flytte så mange trin eller underordnede opgaver efter behov.
+Hvis du ønsker, at det første trin i opgaveguiden skal ligge inden for en underopgave, skal du oprette et underopgavetrin som andet trin, og derefter flytte det første trin ind i det. Du kan tilføje eller flytte så mange trin eller underopgaver, som det er nødvendigt.
 
-5. Når du er færdig redigering opgave programguiden, skal du klikke på **færdig med at redigere**, og vælg derefter en af indstillingerne for at gemme eller udgive opgave-vejledning.
+5. Når du er færdig med at redigere opgaveguiden, skal du klikke på **Redigeringen blev afsluttet** og derefter vælge en af indstillingerne for at gemme eller udgive opgaveguiden.
 
-## <a name="collapse-recording-name-and-description"></a>Skjul optagelse navn og beskrivelse
-Du kan udvide og skjule de **optagelse navn** og **optagelse beskrivelse** felter. Når disse felter er skjult, er yderligere trin være synlig i Arbejdsrutineoptager redigere rude. 
+## <a name="collapse-recording-name-and-description"></a>Skjul registreringens navn og beskrivelse.
+Du kan udvide og skjule felterne **Registreringsnavn** og **Beskrivelse af registrering**. Når disse felter er skjult, vil flere trin være synlige i redigeringsruden i Arbejdsrutineoptager. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Du kan udvide og skjule de **optagelse navn** og **optagelse beskrivelse** felte
 
 [Oprette dokumentation eller undervisning ved hjælp af opgaveregistreringer](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Hurtig reference til opgave-optager](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Hurtig reference til Arbejdsrutineoptager](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

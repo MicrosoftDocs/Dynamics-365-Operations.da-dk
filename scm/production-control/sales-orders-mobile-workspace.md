@@ -1,6 +1,6 @@
 ---
-title: "Salgsordrer mobile arbejdsområde for Microsoft Dynamics 365 for operationer app"
-description: "Med arbejdsområdet salgsordrer mobil du kan holde dig ajour på salgsordrer hvor som helst og hvor som helst."
+title: "Arbejdsområde til mobile enheder til salgsordrer til Microsoft Dynamics 365 for Operations-app"
+description: "Med arbejdsområdet til mobile enheder til salgsordrer kan du kan holde dig ajour på salgsordrer hvor som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Salgsordrer mobile arbejdsområde for Microsoft Dynamics 365 for operationer app
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Arbejdsområde til mobile enheder til salgsordrer til Microsoft Dynamics 365 for Operations-app
 
-Med arbejdsområdet salgsordrer mobil du kan holde dig ajour på salgsordrer hvor som helst og hvor som helst. 
+Med arbejdsområdet til mobile enheder til salgsordrer kan du kan holde dig ajour på salgsordrer hvor som helst og hvor som helst. 
 
 <a name="prerequisites"></a>Forudsætninger
 -------------
 
 | Forudsætning                                                         | Betegnelse                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Læs om Microsoft Dynamics-365 for operationer mobilplatform | [Dynamics 365 for operationer mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 til operationer                                          | Sørg for, at du bruger et miljø, hvor Microsoft Dynamics 365 for operationer version 1611 opdager og Microsoft Dynamics for operationer platform update 3 (November 2016). |
-| Hotfix KB 3215650                                                    | Installere hotfixet, hvis du vil aktivere de arbejdsområder, der findes i Microsoft Dynamics 365 for operationer.                                                                       |
-| Mobile enhed, der har den Dynamics 365 for operationer app installeret | Hent den Dynamics 365 for operationer app fra din mobile app butik.                                                                                                      |
+| Læs om Microsoft Dynamics 365 for Operations-mobilplatformen | [Dynamics 365 for Operations-mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Sørg for, at du bruger et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og Microsoft Dynamics for Operations platformsopdatering 3 (november 2016). |
+| Hotfix KB 3215650                                                    | Installer hotfixet, hvis du vil aktivere de arbejdsområder, der findes i Microsoft Dynamics 365 for Operations.                                                                       |
+| Mobileenhed, hvor Dynamics 365 for Operations-appen er installeret | Hent og installer Dynamics 365 for Operations-appen fra din mobilapp-butik.                                                                                                      |
 
 ## <a name="overview"></a>Overblik
-Denne mobile workspace har adgang til Dynamics-365 for operationer program og kan du få vist detaljerede oplysninger om de enkelte salgsordrer som ordrestatus, oplysninger om kontaktpersoner og rækkefølge taker kontaktoplysninger. Arbejdsområdet mobile giver en hurtig visning af salgsordrerne. Du kan få vist salgsordrer pr. kunde, eller få vist alle salgsordrer, eller få vist oplysninger om en bestemt salgsordre. Mobile arbejdsområdet indeholder to visninger for at hjælpe dig med at analysere salgsordrer i dybden.
+Dette arbejdsområde til mobile enheder har adgang til Dynamics-365 for Operations-programmet, og du kan få vist detaljerede oplysninger om de enkelte salgsordrer, f.eks. ordrestatus, kundekontaktoplysninger og kontaktoplysning om ordretager. Arbejdsområdet til mobile enheder giver en øjeblikkelig visning af salgsordrerne. Du kan få vist salgsordrer pr. kunde, eller få vist alle salgsordrer, eller få vist oplysninger om en bestemt salgsordre. Arbejdsområdet til mobile enheder indeholder to visninger, der hjælper dig med at analysere salgsordrer i dybden.
 
-### <a name="view-all-sales-orders"></a>Få vist alle salgsordrer
+### <a name="view-all-sales-orders"></a>Vis alle salgsordrer
 
 Denne visning viser alle salgsordrer.
 
--   Brug en af følgende filtre til at vælge de ordrer, du vil have vist.
+-   Brug ét af følgende filtre til at vælge de salgsordrer, du vil have vist.
     -   Søg efter salgsordre
-    -   Søg efter debitorkonto
-    -   Søge efter Kundenavn
-    -   Søge efter status
-    -   Søge efter status for udgivelse
-    -   Søg efter oprettelsesdato og tid
+    -   Søg efter kundekonto
+    -   Søg efter kundenavn
+    -   Søg efter status
+    -   Søg efter status for frigivelse
+    -   Søg efter dato og klokkeslæt for oprettelse
 
 <!-- -->
 
--   Når du vælger de salgsordrer, kan du få vist detaljerne om bestemte ordrer. Specifikt, kan du se:
+-   Når du har valgt salgsordrerne, kan du få vist detaljerede oplysninger om bestemte ordrer. Specifikt, kan du se:
     -   Oplysninger om kundens navn og adresse
-    -   Anden salgsordre datoer, som ønsket afsendelsesdato og bekræftet afsendelsesdato.
-    -   Ordre taker kontaktoplysninger
-    -   Oplysninger om kontaktpersoner
+    -   Andre salgsordredatoer, f.eks. ønsket afsendelsesdato og bekræftet afsendelsesdato
+    -   Ordretagers kontaktoplysninger
+    -   Kundekontaktoplysninger
     -   Ordrelinjer
-    -   Forsendelser, der viser, hvordan og hvornår en salgsordre, der er leveret
+    -   Forsendelser, der viser, hvordan og hvornår en salgsordre er blevet leveret
 
-### <a name="view-orders-for-a-customer-"></a>Få vist ordrer for en kunde ** **
+### <a name="view-orders-for-a-customer-"></a>Vis ordrer for en kunde** **
 
-Denne visning viser en liste over salgsordrer pr. kunde.
+Denne visning angiver salgsordrer pr. kunde.
 
--   Brug en af følgende filtre til at se ordrer for en kunde.
+-   Brug et af følgende filtre til at se ordrer for en kunde.
     -   Søg efter navn
-    -   Søge efter firma
+    -   Søg efter konto
 
 <!-- -->
 
 -   Når du vælger en kunde, kan du se:
-    -   Kundenavn og gruppe
-    -   Oplysninger om kontaktpersoner
-    -   Salgsordrer for kunden og oplysninger om de salgsordrer:
+    -   Kundenavn og -gruppe
+    -   Kundekontaktoplysninger
+    -   Salgsordrer for kunden og oplysninger om salgsordrerne:
         -   Oplysninger om kundens navn og adresse
-        -   Anden salgsordre datoer
-        -   Ordre taker kontaktoplysninger
-        -   Oplysninger om kontaktpersoner
+        -   Andre salgsordredatoer
+        -   Ordretagers kontaktoplysninger
+        -   Kundekontaktoplysninger
         -   Ordrelinjer
-        -   Forsendelser, der viser, hvordan og hvornår en salgsordre, der er leveret
+        -   Forsendelser, der viser, hvordan og hvornår en salgsordre er blevet leveret
 
 ## <a name="get-started"></a>Introduktion
-Følg disse trin for at komme i gang ved hjælp af salgsordrer mobile arbejdsområdet på din mobilenhed.
+Følg disse trin for at komme i gang med at bruge arbejdsområdet til mobile enheder til salgsordrer på din mobilenhed.
 
-1.  Din mobile app store, Hent og Installer Microsoft Dynamics-365 for operationer app.
-2.  Du kan starte programmet på din enhed.
-3.  Angiv URL-adressen for din Dynamics 365.
-4.  Angiv firma til at logge på. F.eks. **USMF**.
-5.  Første gang du logger på, bliver du bedt om brugernavn og adgangskode til din Microsoft Dynamics-365 for operationer konto. Angiv dine legitimationsoplysninger. Når du logger på, kan du se de arbejdsområder, der er tilgængelige for din virksomhed.
+1.  På din mobilapp-store skal du hente og installere Microsoft Dynamics 365 for Operations-appen.
+2.  Start appen på din enhed.
+3.  Angiv URL-adressen til din Dynamics 365.
+4.  Angiv det firma, du vil logge på. Du kan f.eks. skrive **USMF**.
+5.  Første gang du logger på, bliver du bedt om brugernavn og adgangskode til din Microsoft Dynamics 365 for Operations-konto. Angiv dine legitimationsoplysninger. Når du har logget på, kan du se de arbejdsområder, der er tilgængelige for din virksomhed.
 
-For at få vist arbejdsområder på din mobile app, skal du først udgive de ønskede arbejdsområder til Dynamics-365 for operationer app.
+For at få vist arbejdsområder på din mobilapp skal du først publicere de ønskede arbejdsområder til Dynamics 365 for Operations-appen.
 
-1.  Start Dynamics 365 for operationer.
-2.  Gå til **systemadministration**&gt;**Setup**&gt;**systemparametre**.
-3.  Vælg **Manage mobile app**.
-4.  Vælg arbejdsområdet til at udgive til mobil platform.
-5.  Vælg **udgive arbejdsområde**.
-6.  Opdater din enhed for at se de udgivne arbejdsområder.
+1.  Start Dynamics 365 for Operations.
+2.  Gå til **Systemadministration** &gt; **Opsætning** &gt; **systemparametre**.
+3.  Vælg **Administrer mobilapp**.
+4.  Vælg arbejdsområdet for at publicere til mobilplatformen.
+5.  Vælg **Publicer arbejdsområde**.
+6.  Opdater din enhed for at se de publicerede arbejdsområder.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>Få vist oplysninger om salgsordrer for en kunde
-1.  På din mobilenhed, skal du vælge den **salgsordrer** arbejdsområde.
-2.  Vælg **se ordrer for en kunde**.
-3.  Brug ** konto ** eller ** kundenavn ** oplysninger til at finde den ønskede kunde.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Vis oplysninger om salgsordrer for en kunde
+1.  På din mobilenhed skal du vælge arbejdsområdet **Salgsordrer**.
+2.  Vælg **Vis ordrer for en kunde**.
+3.  Brug oplysningerne **Konto** eller **Kundenavn** til at finde den ønskede kunde.
 4.  Vælg kunden.
-5.  Vælg **kontaktoplysninger for** eller **salgsordrer**.
-6.  Hvis **salgsordrer** er valgt, vises en liste over salgsordrer for debitoren skal være.
-7.  Vælg **salgsordre**.
-8.  Her kan du få vist oplysninger om salgsordrelinjer, leverancer, oplysninger om kontaktpersoner og rækkefølge taker kontaktoplysninger.
+5.  Vælg **Kontaktoplysninger** eller **Salgsordrer**.
+6.  Hvis **Salgsordrer** er valgt, vises der en liste over salgsordrer for kunden.
+7.  Vælg **Salgsordre**.
+8.  Her kan du få vist oplysninger om salgsordrelinjer, leverancer, kundekontaktoplysninger og kontaktoplysninger for ordretager.
 
 
 

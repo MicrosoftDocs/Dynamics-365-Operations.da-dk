@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-blocking"></a>Lagerspærring
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Microsoft Dynamics AX. Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.
 
 Du kan blokere lagervarer på følgende måder:
@@ -53,17 +56,19 @@ I følgende eksempel genereres, der en kvalitetsordre, når der bogføres en fø
 | En kvalitetstilknytning angiver, at der ved bogføring af en følgeseddel for en indkøbsordre, skal genereres en kvalitetsordre. Vareprøveopsætningen for kvalitetsordren angiver, at 10 % af antallet på indkøbsordrelinjen skal inspiceres. Hvis indstillingen **Fuld spærring** derudover er markeret i vareprøveopsætningen, skal det fulde antal på indkøbsordrelinjen blokeres under inspektionen, uanset hvilket antal der sendes til inspektion. | Følgesedlen er bogført. | Der genereres en kvalitetsordre. 10 % af indkøbsordreantallet for varen sendes til inspektion. Det fulde antal på indkøbsordrelinjen blokeres. |
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>Blokering af varer ved at bruge blokering af lagerstatus
-Du kan angive, hvilke lager-statusser blokerende status ved hjælp af den **lagerblokering** parameter på den **lager status** side.  Du kan ikke bruge lagerstatusser som spærringsstatusser for produktionsordrer, salgsordrer, flytteordrer, udgående posteringer eller projektintegrationer. Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med statussen **Ødelagt**, og varedisponering køres på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
+Du kan angive, hvilke lagerstatusser, der er spærringsstatusser ved hjælp af parameteren **Lagerblokering** på siden **Lagerstatusser**. Du kan ikke bruge lagerstatusser som spærringsstatusser for produktionsordrer, salgsordrer, flytteordrer, udgående posteringer eller projektintegrationer. Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med statussen **Ødelagt**, og varedisponering køres på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk.
 
 
 
 <a name="see-also"></a>Se også
 --------
 
-[Oprette og vedligeholde en lagerblokering (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Opret og vedligehold en lagerblokering (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
-[Quality management processes](quality-management-processes.md)
+[Processer for kvalitetsstyring](quality-management-processes.md)
 
-[Kontrollere kvaliteten af varer (opgave guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Kontrollere kvaliteten af varer (opgaveguide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

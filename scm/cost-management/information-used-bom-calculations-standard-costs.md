@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bom-calculations-with-standard-costs"></a>Styklisteberegninger med standardomkostninger
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Der bruges blandt andet følgende oplysninger om købsvaren i en standardstyklistekalkulation:
@@ -78,6 +81,8 @@ Der bruges blandt andet følgende oplysninger om efterkalkulationsversioner ved 
 -   Indholdet af efterkalkulationen skal indeholde omkostninger – Indholdet skal indeholde omkostninger. Det kan vælges, at det kan indeholde salgspriser med henblik på beregning af vejledende salgspriser for producerede varer.
 
 Flere informationskilder kan angives, når du starter en styklistekalkulation. Dette omfatter webstedet, beregningsdatoen og efterkalkulationsversionen.
+
+
 
 
 

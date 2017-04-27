@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen"
+title: "Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen"
 description: "I denne artikel beskrives virkningen af afregning af betalinger til fakturaer for debitorer. Scenariet fokuserer på effekterne på reskontroen, ikke på Finans."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives virkningen af afregning af betalinger til fakturaer for debitorer. Scenariet fokuserer på effekterne på reskontroen, ikke på Finans.
 
-Fabrikam sælger varer til debitor 4027. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage. Fakturaer skal betales inden 30 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligning-parametre er placeret på den **Accounts receivable parameters** side.
+Fabrikam sælger varer til debitor 4027. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice"></a>Faktura
-D. 25 Arnie indtaster og bogfører en faktura på 1.000,00 for debitor 4027. Arne kan få vist denne faktura ved hjælp af den **transaktioner** knappen på den **kunder** side.
+Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4027. Arne kan få vist denne faktura ved hjælp af knappen **Transaktioner** på siden **Debitorer**.
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Den 2. juli gennemfører debitor 4027 en delbetaling på 297,00 for fakturaen. B
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Markeret | Almindelig            | FTI 10020 | 4027    | 25-6-2015 | 25-7-2015 | 10020   | 1.000,00                             | USD      | 297,00           |
 
-Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Hvis du ikke ændrer værdien **Beløb, der skal udlignes** til 297,00, vil værdierne **Kasserabatbeløb**, der vises, variere. Dog 3,00 vil blive taget som kasserabatten når betalingen bogføres, fordi justerer automatisk udligning af ** udligningsbeløbet ** værdi for dig.
+Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Hvis du ikke ændrer værdien **Beløb, der skal udlignes** til 297,00, vil værdierne **Kasserabatbeløb**, der vises, variere. 3,00 vil dog blive medtaget som kasserabatten, når betalingen bogføres, fordi udligningen automatisk justerer værdien **Beløb, der skal udlignes** for dig.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Arnie ændrer værdien i feltet **Anvend kasserabat** tilbage til **Normal**, da
 | ARP-10020  |                  | 01-07-2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | DISC-10020 |                  | 01-07-2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 11-07-2015 |         |                                      | 700,00                                | 0,00    | USD      |
+
+
 
 
 

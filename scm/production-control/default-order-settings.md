@@ -1,5 +1,5 @@
 ---
-title: Standardordreindstillingerne for dimensioner og produktvarianter
+title: Standardordreindstillinger for dimensioner og produktvarianter
 description: "Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Standardordreindstillinger bruges, når du opretter indkøbsordrer, salgsordrer, flytteordrer, lagerkladder og ved varedisponering til at generere ordreforslag. Standardindstillinger for ordre kan være varespecifikke, lokationsspecifikke, specifikke for produktvariant eller produktdimensionsbestemte."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillingerne for dimensioner og produktvarianter
+# <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardordreindstillinger for dimensioner og produktvarianter
+
+[!include[banner](../includes/banner.md)]
+
 
 Standardindstillinger for ordre definerer lokationen og lagerstedet, hvor varerne skal leveres fra eller oplagres, minimum-, maksimum-, flere og standardmængder, der skal bruges til handel eller lagerstyring, leveringstider, stopflaget og metoden for ordretilsagn. Standardordreindstillinger bruges, når du opretter indkøbsordrer, salgsordrer, flytteordrer, lagerkladder og ved varedisponering til at generere ordreforslag. Standardindstillinger for ordre kan være varespecifikke, lokationsspecifikke, specifikke for produktvariant eller produktdimensionsbestemte.
 
-Du kan definere standardindstillinger af ordre på siden **Standardindstillinger for ordre**. Du kan åbne denne side ved at gå til **administration af produktoplysninger**&gt;**produkter**&gt;**frigivne produkter**&gt; Vælg et frigivet produkt &gt;på den **Plan** eller *** Administrer lager *** handlingsruden &gt;**bestilling**&gt;**standardindstillinger for ordre**.
+Du kan definere standardindstillinger af ordre på siden **Standardindstillinger for ordre**. Hvis du vil åbne denne side, skal du gå til **Administration af produktoplysninger** &gt; **Produkter** &gt; **Frigivne produkter** &gt; vælge et frigivet produkt &gt; i handlingsruden **Plan** eller ****Styr lager**** &gt; **Ordreindstillinger** &gt; **Standardindstillinger for ordre**.
 
 ## <a name="default-order-settings"></a>Standardindstillinger for ordre
 Der findes tre typer standardordreindstillinger for køb, salg og lager. Standardordreindstillingerne for køb bruges, når du opretter:
@@ -70,13 +73,13 @@ Lagerordres standardindstillinger gælder også, når du opretter:
 -   Produktionsordreforslag
 
 ## <a name="full-definition-of-a-released-product"></a>Fuld definition af et frigivet produkt
-Når du opretter en postering, skal du angive den fulde definition af et frigivet produkt på linjen før Dynamics 365 for operationer, der forsøger at identificere standardordreindstillingerne. Fuld definitionen af frigivet produkt betyder varenummeret og alle de aktive produktdimensioner, konfiguration, størrelse, typografi og farve er angivet for posteringen. For eksempel hvis du manuelt opretter en indkøbsordrelinje for en frigiet produktvariant, skal du angive alle nødvendige produktdimensioner, før lokation, lagersted, mængder og gennemløbstid vises som standard på ordrelinjen. 
+Når du opretter en postering, skal du angive den fulde definition af et frigivet produkt på linjen, før Dynamics 365 for Operations forsøger at identificere standardordreindstillingerne. Fuld definitionen af frigivet produkt betyder, at varenummeret og alle de aktive produktdimensioner, f.eks. konfiguration, størrelse, typografi og farve, er angivet på posteringen. For eksempel hvis du manuelt opretter en indkøbsordrelinje for en frigiet produktvariant, skal du angive alle nødvendige produktdimensioner, før lokation, lagersted, mængder og gennemløbstid vises som standard på ordrelinjen. 
 
-Ikke alle standardparametre til ordreindstillinger anvendes ved oprettelse af ordre- eller kladdelinjer. Mængder og leveringstider kun vises som standard, når det er relevant. Eksempelvis ved optælling en kladdelinje, vises lokation og lagersted som standard, når linjen er oprettet. Naturligvis ingen mængde benyttes som standard eller kontrol af flere minimumindstillinger udføres og ved oprettelse af linjen eller kladden bogføres. 
+Ikke alle standardparametre til ordreindstillinger anvendes ved oprettelse af ordre- eller kladdelinjer. Antal og leveringstider vises kun som standard, når det er relevant. Eksempelvis ved optælling en kladdelinje vises lokation og lagersted som standard, når linjen er oprettet. Naturligvis bliver ingen antalstandard eller kontrol af flere eller minimum udført ved oprettelse af linjen eller bogføring af kladden. 
 
-Systemet forsøger altid at finde en standardlokation og et lagersted, når der oprettes en ordre eller kladdelinje. Lokation vises ikke altid som standard fra ordreindstillinger. For eksempel når du opretter en salgsordre eller en indkøbsordre, bruges lokationen fra ordrehovedet automatisk på ordrelinjerne. Når du opretter en styklistelinje, bruges websted i Produktionsstyklistens hoved. Når webstedet er bestemt, der skal bruges til at finde et websted lokationsspecifikke ordreindstillinger, der kan bruges som standard for lagerstedet. 
+Systemet forsøger altid at finde en standardlokation og et lagersted, når der oprettes en ordre eller kladdelinje. Lokation vises ikke altid som standard fra ordreindstillinger. For eksempel når du opretter en salgsordre eller en indkøbsordre, bruges lokationen fra ordrehovedet automatisk på ordrelinjerne. Når du opretter en styklistelinje, bruges lokationen i styklistens hoved. Når lokationen er bestemt, bruges den til at finde lokationsspecifikke ordreindstillinger, der kan bruges som standard for lagerstedet. 
 
-Standardordretypen, køb og lager Leveringstiderne kan tilsidesættes af disponeringsregler for varen på den **Varedisponering** side. Selvom standardordreindstillingerne ikke tillader en skelnen mellem produktion og overflytningstid, kan disponeringsreglerne for varen til den. Men opsætningen af varedisponering bruges kun af MPR, når du opretter planlagte produktions- og planlagte flytteordrer og vil ikke gælde, når du manuelt opretter produktions- og flytteordrer. 
+Standardordretypen, købet og lagerleveringstiderne kan tilsidesættes af disponeringsregler for varen på siden **Varedisponering**. Selvom standardordreindstillingerne ikke tillader en skelnen mellem produktion og overflytningstid, kan disponeringsreglerne for varen tillade den. Men opsætningen af varedisponering bruges kun af MPR, når du opretter planlagte produktions- og planlagte flytteordrer og vil ikke gælde, når du manuelt opretter produktions- og flytteordrer. 
 
 ## <a name="default-order-settings-rules"></a>Standardregler for ordreindstillinger
 Du kan definere generelle standardindstillinger for ordre og et vilkårligt antal standardregler for ordreindstilling, der kun gælder på visse betingelser, såsom lokation eller en bestemt produktdimension eller kombination af produktdimensioner. Du kan ikke definere lagerstedsspecifikke ordreindstillinger.
@@ -87,13 +90,13 @@ Standardregler for ordreindstillinger har rang. Jo højere rang, desto vigtigere
 
 ### <a name="default-order-settings-for-released-products"></a>Standardordreindstillinger for frigivne produkter
 
-Du kan definere generelle ordreindstillinger eller lokationsspecifikke ordreindstillinger for specifikke frigivne produkter. Generelle ordreindstillinger har altid rang nul. Hvis du opretter nye salgs-, købs- og lagerordreindstillinger samlet på samme tid, anbefaler vi, at du bruger **Detaljevisning** på siden **Standardindstillinger for ordre **. Hvis du vil skifte til detaljeret visning, skal du gå til den **indstillinger** handlingsruden &gt;**siden Indstillinger for**&gt;**ændre visning**&gt;**detaljevisning**.
+Du kan definere generelle ordreindstillinger eller lokationsspecifikke ordreindstillinger for specifikke frigivne produkter. Generelle ordreindstillinger har altid rang nul. Hvis du opretter nye salgs-, købs- og lagerordreindstillinger samlet på samme tid, anbefaler vi, at du bruger **Detaljevisning** på siden **Standardindstillinger for ordre**. Hvis du vil skifte til detaljeret visning, skal du gå til **Indstillinger**-handlingsruden &gt; **Sideindstillinger** &gt; **Skift visning** &gt; **Detaljevisning**.
 
 ### <a name="site-specific-order-settings"></a>Stedspecifikke ordreindstillinger
 
-Du kan oprette lokationsspecifikke ordreindstillinger ved at klikke på **Ny**. I **detaljevisning**, udfylde på webstedet i den **indstillinger, der gælder for**&gt;**websted** felt. I **Gittervisning** skal du udfylde lokationen i **Lokation**-kolonnen. Den nye regel får automatisk en ny rangværdi, der er højere end nul. Du kan oprette så mange lokationsspecifikke regler, du vil, og du kan tildele alle reglerne samme rang for at modellere, at de er lige vigtige. 
+Du kan oprette lokationsspecifikke ordreindstillinger ved at klikke på **Ny**. I **Detaljevisning** skal du udfylde lokationen i **Indstillinger gældende for** &gt; feltet **Lokation**. I **Gittervisning** skal du udfylde lokationen i **Lokation**-kolonnen. Den nye regel får automatisk en ny rangværdi, der er højere end nul. Du kan oprette så mange lokationsspecifikke regler, du vil, og du kan tildele alle reglerne samme rang for at modellere, at de er lige vigtige. 
 
-Hvis du er i **Detaljevisning**, kan du ikke få overblik over de regler, der er oprettet for varen. Skift knappen **Vis/skjul liste** for at se oversigtsoplysninger. Når der oprettes en ordrelinje af enhver type, og den har noget websted, der er angivet, søger Dynamics 365 for operationer for en regel med ikke-angivet websted. Dette kan hjælpe med at bestemme et standardwebsted på ordrelinjen. Denne lokation bruges derefter til at søge efter en lokationsspecifik regel, hvor et standardlagersted kan være angivet. Dette lagersted anvendes på ordrelinjen.
+Hvis du er i **Detaljevisning**, kan du ikke få overblik over de regler, der er oprettet for varen. Skift knappen **Vis/skjul liste** for at se oversigtsoplysninger. Når der oprettes en ordrelinje af enhver type, og den ikke har nogen lokation angivet, søger Dynamics 365 for Operations efter en regel uden angivet lokation. Dette kan hjælpe med at bestemme standardlokationen på ordrelinjen. Denne lokation bruges derefter til at søge efter en lokationsspecifik regel, hvor et standardlagersted kan være angivet. Dette lagersted anvendes på ordrelinjen.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Specifikke ordreindstillinger for produktdimension
 
@@ -104,7 +107,7 @@ Se på følgende produkteksempel.
 |                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
 | **Produktnavn**                                    | Fotoelektrisk sensor                    |
-| **Item number**                                     | XW56                                    |
+| **Varenummer**                                     | XW56                                    |
 | **Konfiguration** (bruges til at modellere lystypen) | C1-Synligt rødt lys, C2-Infrarødt lys |
 | **Skabelon** (bruges til at modellere teknisk revision)  | R1, R2, R3                              |
 
@@ -140,15 +143,15 @@ Se på følgende standardregler for ordreindstilling.
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systemet kører gennem regelsættet to gange for at fastslå lokation og lagersted. Når der oprettes en indkøbsordrelinje for konfiguration af C1, typografi R2, bestemmes webstedet baseret på reglen med rang 10. Derefter søger systemet efter en regel for websted 2 for at bestemme et lagersted. Reglen 20 er fundet, og fordi den har en højere rang, bliver lagerstedet på købsordrelinjen 22, og ikke 21. 
+Systemet kører gennem regelsættet to gange for at fastslå lokation og lagersted. Når der oprettes en indkøbsordrelinje for konfiguration C1, typografi R2, bestemmes lokationen baseret på reglen med rang 10. Derefter søger systemet efter en regel for lokation 2 for at bestemme et lagersted. Reglen 20 er fundet, og fordi den har en højere rang, bliver lagerstedet på købsordrelinjen 22, og ikke 21. 
 
 Som en generel retningslinje får specifikke regler og regler for dimensioner, der er vigtigere end andre dimensioner, højere rang, mens mere generiske regler får lavere rang. 
 
 Reglen med rang nul fungerer som et sikkerhedsnet. Hvis ingen andre regler findes, bruges standardindstillinger for ordre fra regel nul. 
 
-Da rangnummeret er så vigtigt, har **Standardindstillinger for ordre-**handlingsruden funktioner til at flytte en regel op eller ned og til at omnummerere reglerne, så de altid er i trin på 10. 
+Da rangnummeret er så vigtigt, har **Standardindstillinger for ordre**-handlingsruden funktioner til at flytte en regel op eller ned og til at omnummerere reglerne, så de altid er i trin på 10. 
 
-Antallet af regler, der er oprettet for et frigivet produkt, kan være mange. For at få en bedre ide om, hvad hver enkelt regel tilsidesætter, og hvorfor det er nødvendigt, anbefales du at bruge **Gittervisning** på siden** Standardindstillinger for ordre**. Du kan aktivere gittervisning ved at gå til den **indstillinger** handlingsruden &gt;**siden Indstillinger for**&gt;**ændre visning**&gt;**gittervisning**. Antallet af kolonner, der vises i gitteret, kan være ret afgørende, især i forbindelse med salgs- og lagerfaner. Hvis du vil begrænse antallet kolonner, der vises i gitteret, grupper af kolonner kan skjules eller vises ved hjælp af knapperne på den **standardindstillinger for ordre**&gt;**kolonne vises** i menuen.
+Antallet af regler, der er oprettet for et frigivet produkt, kan være mange. For at få en bedre ide om, hvad hver enkelt regel tilsidesætter, og hvorfor det er nødvendigt, anbefales du at bruge **Gittervisning** på siden **Standardindstillinger for ordre**. Du kan aktivere gittervisning ved at gå til **Indstillinger**-handlingsruden &gt; **Sideindstillinger** &gt; **Skift visning** &gt; **Gittervisning**. Antallet af kolonner, der vises i gitteret, kan være ret afgørende, især i forbindelse med salgs- og lagerfaner. Hvis du vil begrænse antallet kolonner, der vises i gitteret, kan grupper af kolonner skjules eller vises ved hjælp af knapperne i menuen **Standardindstillinger for ordre** &gt; **Kolonnevisning**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifikke ordreindstillinger for frigiven produktvariant
 
@@ -165,5 +168,7 @@ Hvis regelsystemet for standardordreindstillinger er for tungt, er der mulighed 
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Rang har i dette tilfælde ingen virkelig betydning, så du kan vælge at skjule den. Denne løsning giver potentielt et vedligeholdelsesproblem. Dog kan du overveje at bruge denne opsætning, hvis du skal integrere med Product Lifecycle Management-systemer (PLM).
+
+
 
 

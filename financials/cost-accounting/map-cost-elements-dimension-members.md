@@ -1,5 +1,5 @@
 ---
-title: "Tilknyttes et fælles sæt af medlemmer af dimensionen dimensionsmedlemmer til forskellige element"
+title: "Knytte forskellige dimensionsmedlemmer for omkostningselementer til et fælles sæt dimensionsmedlemmer"
 description: "Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Tilknyttes et fælles sæt af medlemmer af dimensionen dimensionsmedlemmer til forskellige element
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte forskellige dimensionsmedlemmer for omkostningselementer til et fælles sæt dimensionsmedlemmer
 
 Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål.
 
@@ -38,10 +38,10 @@ Følgende eksempel viser, hvordan du, som omkostningscontroller, kan oprette en 
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Importerede dimensionsmedlemmer for omkostningselement fra amerikanske kontoplaner | Importerede dimensionsmedlemmer for omkostningselement fra franske kontoplaner | Tilknytning af amerikanske og franske dimensionsmedlemmer for omkostningselement til et fælles sæt |
 | 5001: salg                                                           | 5001: salg og marketing                                               | 5000: salg og marketing                                             |
-| 5030: annoncer                                                     | 6390: køb på lager\*                                                    | 7000: rengøringsudgifter                                                 |
+| 5030: annoncer                                                     | 6390: lagerkøb\*                                                    | 7000: rengøringsudgifter                                                 |
 | 7001: rengøringsudgifter                                               | 7001: rejseudgifter                                                      | 7001: rejseudgifter                                                   |
 
-\*Dimensionsmedlemmet materiel køb franske omkostninger element ikke er tilknyttet.
+\* Det franske dimensionsmedlem for omkostningselement er ikke tilknyttet.
 
 ## <a name="currency-conversion"></a>Valutaomregning
 De forskellige kontoplaner, som du bruger, kan konfigureres til at bruge forskellige valutaer. I dette tilfælde skal du angive en valutaomregning, så omkostningsdata der behandles ved hjælp af den rigtige valuta, som er defineret i omkostningsregnskabet for Finans, hvor dimensionsmedlemmer for omkostningselement anvendes. I ovenstående eksempel bruges amerikanske dollar (USD) i omkostningsregnskabet for Finans, så du skal oprette en valutaomregning fra USD til euro (EUR) for at behandle transaktioner for det tilknyttede omkostningselement dimensionsmedlemmer.

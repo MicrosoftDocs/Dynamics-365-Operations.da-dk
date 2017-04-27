@@ -1,6 +1,6 @@
 ---
 title: "Få vist og evaluere resultaterne af et spørgeskema"
-description: "Dette emne forklarer, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt."
+description: "I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Få vist og evaluere resultaterne af et spørgeskema
 
-Dette emne forklarer, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
+I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
 
 Når svarpersonerne har udfyldt et spørgeskema, kan du få vist og evaluere spørgeskemaresultaterne på følgende måder:
 

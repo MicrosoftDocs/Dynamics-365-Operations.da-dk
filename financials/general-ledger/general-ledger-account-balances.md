@@ -1,6 +1,6 @@
 ---
 title: Kontosaldi i Finans
-description: "Denne artikel beskriver to måder at få vist generelle finanskontosaldi - listeside råbalance og finansielle rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt."
+description: "I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldi i Finans
 
-Denne artikel beskriver to måder at få vist generelle finanskontosaldi - listeside råbalance og finansielle rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.
 
 Der er en række måder, som brugerne kan få vist saldi i Finans på. Nogle af de mest almindelige muligheder er:
 
@@ -46,6 +49,8 @@ Når en bruger ændrer parametrene, opdateres saldiene. Brugeren kan også vælg
 
 Brugere kan foretage detailudledning fra saldi for at få vist de transaktioner, der indgår i saldoen.    
 
-Yderligere oplysninger finder du [få vist finansrapporter](view-financial-reports.md).
+Du kan finde flere oplysninger i [Vis økonomirapporter](view-financial-reports.md).
+
+
 
 

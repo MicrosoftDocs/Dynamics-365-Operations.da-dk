@@ -26,16 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Økonomiske dimensioner og hovedkonti på et højre mod venstre-sprog
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives nogle af de implementeringsbeslutninger, der skal overvejes, når du bruger et højre mod venstre-sprog i Microsoft Dynamics 365 for Operations, og du skal oprette økonomiske dimensioner og hovedkonti.
 
 Økonomiske dimensioner og hovedkonti er centrale komponenter i planlægningsfasen for en implementering. Når økonomiske dimensioner og hovedkonti oprettes i systemet, bruges de på siderne **Konfigurer kontostrukturer**, **Avancerede regelstrukturer** og **Konfiguration af økonomisk dimension til integrering af programmer**. Den rækkefølge, der er defineret på siderne, bruges til dataindtastning og forbrug i systemet. Nogle steder i systemet vises de økonomiske dimensioner og hovedkonti i separate felter. Men på andre steder, såsom kladder, økonomiske dimensioner og hovedkonti, vises de som en enkelt streng.
 
 ### <a name="best-practices-for-setting-up-financial-dimensions-and-main-accounts-in-a-right-to-left-system"></a>Bedste fremgangsmåder til at oprette økonomiske dimensioner og hovedkonti i et højre mod venstre-system
 
--   Når du vælger afgrænsningstegn til kontoplaner, kan du vælge en af indstillingerne for dobbelt afgrænser: dobbelt bindestreg (-), dobbeltstreg (|) eller dobbelt punktum (.) eller dobbelt understregning (\_\_).
+-   Når du vælger afgrænsningstegn til kontoplaner, kan du vælge en af indstillingerne for dobbelt afgrænser: dobbelt bindestreg (--), dobbeltstreg (||) eller dobbelt punktum (..) eller dobbelt et understregningstegn (\_\_).
 -   Når du opretter en økonomisk dimension og hovedkontoværdier, skal du kun bruge tal og tegn fra højre mod venstre-sprog.
 -   Undgå at bruge den valgte kontoplans afgrænser i den økonomiske dimension og hovedkontoværdier.
 
 Ved at følge disse anbefalinger kan du bedre sikre ensartet repræsentation af den brugerdefinerede rækkefølge i hele systemet.
+
+
 
 

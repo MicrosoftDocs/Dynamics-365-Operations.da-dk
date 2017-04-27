@@ -1,6 +1,6 @@
 ---
-title: Oversigt over budgettet
-description: "Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring i Microsoft Dynamics 365 for handlinger, så du kan administrere finansielle midler."
+title: Oversigt over budgetstyring
+description: "Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring i Microsoft Dynamics 365 for Operations, så du kan administrere finansielle midler."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,16 +24,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Oversigt over budgettet
+# <a name="budget-control-overview"></a>Oversigt over budgetstyring
 
-Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring i Microsoft Dynamics 365 for handlinger, så du kan administrere finansielle midler.
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring i Microsoft Dynamics 365 for Operations, så du kan administrere finansielle midler.
 
 <a name="overview"></a>Overblik
 --------
 
-Budgetstyring i Microsoft Dynamics 365 for operationer understøtter administration af virksomhedens finansielle midler gennem kontoplanen, arbejdsprocesser, brugergrupper, kildedokumenterne og kladderne, konfigurerbare beregningen af tilgængelige midler, budgetcyklusser og tærskler. Med kontrol på plads kan en organisation planlægge, måle, styre og forudse sine finansielle ressourcer i hele regnskabsåret. 
+Budgetstyring i Microsoft Dynamics 365 for Operations understøtter administration af en organisations økonomiske ressourcer via kontoplanen, arbejdsgange, brugergrupper, kildedokumenter og kladder, konfigurerbar beregning af budgetmidler, budgetcyklusser og tærskler. Med kontrol på plads kan en organisation planlægge, måle, styre og forudse sine finansielle ressourcer i hele regnskabsåret. 
 
-Når budgetter er blevet godkendt i Dynamics 365 for operationer, kan du bruge budgetplaner til at generere budgetregisterposter for at registrere udgifter budgettet for en organisation. Du kan også oprette eller importere poster i budgetregisteret fra et tredjeparts program i stedet for ved hjælp af budget planlægning funktioner. 
+Når budgetter er blevet godkendt i Dynamics 365 for Operations, kan du bruge budgetplaner til at generere budgetregisterposter for at registrere udgiftsbudgettet for en organisation. Du kan også oprette eller importere poster i budgetregisteret fra et tredjepartsprogram i stedet for ved hjælp af budgetplanlægningens funktioner. 
 
 Udgifter kan registreres ved hjælp af hovedkonti og økonomiske dimensioner. Du kan konfigurere styring af de samlede udgifter til at opfylde organisationens politikker og behov ved at gruppere kombinationer af økonomiske dimensioner og hovedkonti. 
 
@@ -41,22 +44,22 @@ I følgende diagram vises budgetstyringens plads i faserne for en typisk budgetc
 
 [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Du kan konfigurere budgetstyring afhængigt af flere faktorer:
+Du kan konfigurere budgetstyring ud fra flere faktorer:
 
 -   **Økonomiske dimensioner** – Hvilke økonomiske dimensioner skal bruges til rapportering af budget og faktiske oplysninger, og hvilke økonomiske dimensioner kræves der for at styre budgettet? Er der visse kombinationer af dimensioner eller hovedkonti, der kræver særlig opmærksomhed? Er der for eksempel et krav om at spore budget i forhold til faktiske værdier efter bærer og program? Kræver rejseudgifter særlig opmærksomhed?
 -   **Tid** – Hvilken tidsramme (regnskabsperiode, regnskabsperiode til dato osv.) vil blive anvendt til at vurdere tilgængelige budgetmidler?
--   **Kildedokumenter** – hvilke kildedokumenter der skal evalueres for budgetstyring? Skal dokumenter evalueres pr. linje eller pr. dokument?
+-   **Kildedokumenter** – Hvilke kildedokumenter skal evalueres for budgetstyring? Skal dokumenterne evalueres pr. linje eller pr. dokument?
 -   **Budgetmidler ved beregning** – Bør dokumenter som indkøbsrekvisitioner (budgetreservation) og indkøbsordrer (behæftelser) tages i betragtning ved beregningen af tilgængelige midler? Skal dokumenter i en kladdetilstand medtages i beregningen?
 -   **Tilsidesætte rettighed** – Hvem har tilladelse til at overskride det disponible budget?
 
-Budgetstyring er fuldt integreret med Dynamics 365 for operationer. Derfor kan du evaluere det disponible budget for både planlagte køb og faktiske køb. Budgetforespørgsler og -rapporter er tilgængelige. Derfor kan brugeren efter behov vurdere budgettet i hele budgetcyklussen og derefter foretage nødvendige justeringer i form af budgetrevisioner eller overflytninger. En budgetadministrator kan også eksportere budgettet og faktiske oplysninger til Microsoft Excel for bedre at kunne analysere og beregne prognose efter behov.
+Budgetstyring er fuldt integreret med Dynamics 365 for Operations. Derfor kan du evaluere det disponible budget for både planlagte køb og faktiske køb. Budgetforespørgsler og -rapporter er tilgængelige. Derfor kan brugeren efter behov vurdere budgettet i hele budgetcyklussen og derefter foretage nødvendige justeringer i form af budgetrevisioner eller overflytninger. En budgetadministrator kan også eksportere budgettet og faktiske oplysninger til Microsoft Excel for bedre at kunne analysere og beregne prognose efter behov.
 
 ## <a name="configuring-budget-control"></a>Konfigurere budgetstyring
 ### <a name="budget-cycle-time-span"></a>Tidsperiode for budgetcyklus
 
 Når grundlæggende budgettering er konfigureret, kan du definere tid eller start- og slutperioderne for budgettering og budgetstyring på siden **Tidsperiode for budgetcyklus**. Budgetcyklusser svarer ofte til regnskabskalendere, men det kan spænde over flere regnskabsår.
 
-De næste trin i konfigurationen er fuldført på de forskellige faner på den **konfiguration af budgetstyring** side.
+De næste trin i konfigurationen er fuldført på de forskellige faner på siden **Konfiguration af budgetstyring**.
 
 ### <a name="define-parameters"></a>Definer parametre
 
@@ -77,7 +80,7 @@ Dernæst kan du under fanen **Rettigheder til budgetoverskridelse** angive bruge
 Dernæst kan du under fanen **Disponible budgetmidler** definere den formel, der bruges til at beregne de disponible budgetmidler. Alt efter, hvor konservativt en organisation administrerer sine finansielle midler eller under hensyntagen til forordninger eller branchemæssige krav, kan beregningen omfatte kladde- eller ikke-bogførte dokumenter. 
 
 > [!NOTE] 
-> Hvis beregningen er blevet ændret i en budgetcyklus, påvirker ændringerne ikke dokumenter, som allerede er bestået budgetkontrol for kontrol og, som blev bogført eller fuldført.
+> Hvis denne beregning ændres i løbet af en budgetcyklus, påvirker det ikke dokumenter, der tidligere er godkendt under budgetstyring og bogført eller udført.
 
 ### <a name="documents-and-journals"></a>Dokumenter og journaler
 
@@ -96,7 +99,7 @@ Dernæst kan du under fanen **Tildel budgetmodeller** tildele budgetmodeller for
 Dernæst skal du under fanen **Definer budgetstyringsregler** oprette specifikke regler baseret på budgetstyringsaktiverede økonomiske dimensioner. Hvis der for eksempel er fokus på udgifterne eller udgiftsintervallet for en afdeling, kan du bruge indstillingerne under denne fane til at definere og evaluere disse udgifter. Du kan definere forskellige tærskler for hver budgetstyringsregel. 
 
 > [!Important]
-> Budgetstyring skal aktiveres for en hovedkonto, der af den **drift**, **udgift**, **omsætning, balancen, ansvar, egenkapital** eller **aktiv** type. Hvis denne fane indeholder en regel, der har tomme kriterier, bliver budgetstyring aktiveret for **alle **kombinationer af økonomiske dimensioner, der omfatter hovedkonti af disse typer. Det er derfor vigtigt at oprette budgetstyringsregler, der kun definerer områder for kombinationer af økonomiske dimensioner, hvor det er vigtigt at aktivere budgetstyring.  
+> Budgetstyring aktiveres for alle hovedkonti af typen **Drift**, **Udgift**, **Indtægter, Balance, Passiv, Egenkapital** eller **Aktiv**. Hvis denne fane indeholder en regel, der har tomme kriterier, bliver budgetstyring aktiveret for **alle **kombinationer af økonomiske dimensioner, der omfatter hovedkonti af disse typer. Det er derfor vigtigt at oprette budgetstyringsregler, der kun definerer områder for kombinationer af økonomiske dimensioner, hvor det er vigtigt at aktivere budgetstyring.  
 
 ### <a name="select-main-accounts"></a>Vælg hovedkonti
 
@@ -114,15 +117,17 @@ Hvis advarsler om budgetstyring skal undertrykkes for brugergrupper, kan du angi
 
 Når budgetstyring er konfigureret, kan du slå den til og aktivere den under fanen **Aktivér budgetstyring**. Kladdeversionen træder derefter i kraft.
 > [!Important]
-> Når budgetstyring er slået til og aktive, og transaktioner bogføres, bør det ikke være slået fra midt år. Hvis budgetstyring deaktiveres, registreres aktiviteter ikke til budgetstyring, og der udføres ikke længere budgetkontrol. Derfor afspejler dokumenter, der allerede er bogført, muligvis ikke eftergivelse af beløb eller saldi i forespørgsler og rapporter, der er relateret til budgetstyring. Disse omfatter statistik for budgetstyring for enhver downstream eller tilpasning af bilag og kladder. 
+> Når budgetstyring er aktiveret, og transaktioner er bogført, bør den ikke deaktiveres midt på året. Hvis budgetstyring deaktiveres, registreres aktiviteter ikke til budgetstyring, og der udføres ikke længere budgetkontrol. Derfor afspejler dokumenter, der allerede er bogført, muligvis ikke eftergivelse af beløb eller saldi i forespørgsler og rapporter, der er relateret til budgetstyring. Disse omfatter statistik for budgetstyring for enhver downstream eller tilpasning af bilag og kladder. 
 
 Bemærk også, at transaktioner, herunder budgetregisterposter, der er bogført før budgetstyring aktiveres, ikke medtages i budgetstyring. Derfor anbefales det kun at aktivere budgetstyring i begyndelsen af en ny budgetcyklus. Sørg for, at budgetregisterposter, der indeholder startbudgetsaldi for budgetstyring, kun får opdateret budgetsaldi, når budgetstyring er aktiveret. Et åbent dokument (f.eks. en indkøbsordre) vil blive kontrolleret for disponible budgetmidler og får en budgetreservation til budgetstyring, når brugeren manuelt udløser budgetstyringskontrol i dokumentet.
 
 ## <a name="using-budget-control"></a>Brug af budgetstyring
 Når budgetstyring er slået til, får brugerne budgetstyringsadvarsels- og -fejlmeddelelser i bilag og kladder, der er konfigureret til budgetstyring. Husk, at du kan konfigurere budgetstyring, så brugerne advares, når de overstiger budgetmidler, men kan stadig fortsætte med at bekræfte eller bogføre transaktionen. Brugerne kan få vist detaljer om mislykket budgetkontrol på siden **Fejl og advarsler i budgetstyring**.   
 
-Fra denne side, brugere kan dykke ind i den **statistik for budgetstyring ved periode** side for at få vist budgetoplysninger for tilgængelighed og reservationer for en dimensionskombination valgte budget kontrol. Brugere kan også analysere ned i siden **Statistik for budgetstyring **for at få vist tilgængeligheden af budgettet for alle kombinationer af økonomiske dimensioner, der bruges i budgetstyring. 
+Fra denne side kan brugerne analysere ned i siden **Statistik for budgetstyring fordelt på periode** for at få vist oplysninger om budgettilgængelighed og reservationer for en valgt dimensionskombination i budgetstyring. Brugere kan også analysere ned i siden **Statistik for budgetstyring **for at få vist tilgængeligheden af budgettet for alle kombinationer af økonomiske dimensioner, der bruges i budgetstyring. 
 
 Hvis budgetstyring er aktiveret for indkøbsordrer, kan budgetadministratoren bruge arbejdsområdet **Finansbudgetter og budgetter** til at gennemse køen af alle ikke-bekræftede indkøbsordrer med budgetkontroladvarsler og -fejl. Hvis budgetadministratoren har tilladelser til budgetoverskridelse, kan han eller hun bekræfte indkøbsordre direkte i arbejdsområdet.    
+
+
 
 

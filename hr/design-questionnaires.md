@@ -1,6 +1,6 @@
 ---
 title: "Designe et spørgeskema"
-description: "I dette emne beskrives fremgangsmåden for oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform."
+description: "I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Designe et spørgeskema
 
-I dette emne beskrives fremgangsmåden for oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
+I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
 
 Et omhyggelig udformet spørgeskemaet kan være med til at øge kvaliteten af de oplysninger, du indsamler. Via et omhyggeligt design kan du vælge de relevante indstillinger på det relevante tidspunkt for et spørgeskema. Følgende punkter kan hjælpe dig med at planlægge et effektivt spørgeskema:
 
@@ -87,12 +87,12 @@ Parametre for spørgeskemaer er valgfri. Du kan vælge ikke at bruge dem, afhæn
 
 Spørgeskemaparametre definerer anonymitet, nummerseriekoder og referencetyper for et spørgeskema. Når en organisation udsender et spørgeskema, kan muligheden for at give svarpersonerne mulighed at være anonyme være noget, der skal tages i betragtning. 
 
-Nummerseriekoderne bruges til at organisere spørgsmål og svar. Baseret på disse koder til nummerserier, tildeles værdier automatisk til varer. 
+Nummerseriekoderne bruges til at organisere spørgsmål og svar. Baseret på disse nummerseriekoder tildeles værdier automatisk til disse elementer. 
 
 Du bør definere alle parametre, før du begynder at oprette dataene. Du kan til enhver tid ændre parameterindstillinger for spørgeskemaer.
 
 ## <a name="questionnaire-components"></a>Spørgeskemakomponenter
-Spørgeskemaer omfatter tre hovedelementer: svarsamlinger, der indeholder svar for flere valg spørgsmål, spørgsmål og selve spørgeskemaet. Du kan også gruppere spørgsmål i et spørgeskema til resultatgrupper. Med resultatgrupper kan du kategorisere spørgsmål og få yderligere analyse af spørgeskemaet. 
+Spørgeskemaer omfatter tre hovedelementer: svarsamlinger, der indeholder svar på spørgsmål med flere svarmuligheder, spørgsmål og selve spørgeskemaet. Du kan eventuelt også gruppere spørgsmål i et spørgeskema i resultatgrupper. Med resultatgrupper kan du kategorisere spørgsmål og få yderligere analyse af spørgeskemaet. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -235,6 +235,6 @@ Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Sva
 
 [Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
 
-[Få vist og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
 
 

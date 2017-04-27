@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurere en arbejdsgang for linjeelement
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
 
 Hvis du vil konfigurere et element i en arbejdsgang for linjeelementer i arbejdsgangseditoren, skal du højreklikke på elementet og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter nedenstående procedure til at konfigurere egenskaberne for et element i en arbejdsgang for linjeelementer.
 
-## <a name="name-the-lineitem-workflow-element"></a>Navnet arbejdsgangselement lineitem
+## <a name="name-the-lineitem-workflow-element"></a>Navngive et element i en arbejdsgang for linjeelementer
 Udfør følgende trin for at angive et navn på et element i en arbejdsgang for linjeelementer.
 
 1.  Klik på **Grundlæggende indstillinger** i venstre rude.
@@ -50,6 +53,8 @@ Udfør følgende trin for at angive, om samme arbejdsgang bruges til at behandle
     6.  Hvis du vil kontrollere, om det sæt betingelser, du har angivet, er konfigureret korrekt, skal du klikke på **Test**. På siden **Test betingelse for arbejdsgang** i området **Valider betingelse** skal du vælge en post og derefter klikke på **Test**. Systemet evaluerer den valgte post for at afgøre, om den opfylder de betingelser, du har defineret. Klik på **OK** eller **Annuller** for at vende tilbage til siden **Egenskaber**.
 
     Under fanen **Arbejdsgang** skal du vælge den arbejdsgang, der skal bruges til at behandle de linjeelementer, der opfylder et sæt betingelser, du har defineret.
+
+
 
 
 

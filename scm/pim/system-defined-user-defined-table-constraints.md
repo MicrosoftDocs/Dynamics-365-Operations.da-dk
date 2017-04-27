@@ -1,6 +1,6 @@
 ---
 title: "Systemdefinerede og brugerdefinerede tabelbegrænsninger"
-description: "I denne artikel beskrives de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel - brugerdefinerede og systemdefinerede. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier."
+description: "I denne artikel forklares de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel – brugerdefineret og systemdefineret. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerede og brugerdefinerede tabelbegrænsninger
 
-I denne artikel beskrives de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel - brugerdefinerede og systemdefinerede. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel forklares de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel – brugerdefineret og systemdefineret. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier.
 
 Tabelbegrænsninger repræsenterer matrixer af kombinationerne af attributter, der er tilladt for komponenter i en produktkonfigurationsmodel. Hver række i tabellen definerer et sæt mulige værdier. Der findes to typer begrænsninger i en produktkonfigurationsmodel:
 
@@ -57,11 +60,13 @@ En systemdefineret tabelbegrænsning opretter en dynamisk tilknytning mellem en 
 
 Når du opretter en systemdefineret tabelbegrænsning, skal du vælge en tabel, eventuelt definere den forespørgsel, der skal bruges, og derefter knytte attributtyper til felterne i den valgte tabel. Felttyperne svar svare til attributtyperne.  
 
-Før en tabelbegrænsning kan træde i kraft på en model til produktkonfiguration, skal tabelbegrænsningen medtages i en begrænsning på en af modellens komponenter. Fremgangsmåden er at oprette en ny begrænsning, Vælg betingelsestypen for tabellen, og vælg derefter definitionen af tabelbegrænsning skal bruges. Endelig skal alle felter i tabelbegrænsningen knyttes til attributterne i produktkonfigurationsmodellen.
+Før en tabelbegrænsning kan træde i kraft på en model til produktkonfiguration, skal tabelbegrænsningen medtages i en begrænsning på en af modellens komponenter. Fremgangsmåden er at oprette en ny begrænsning, vælge typen af tabelbegrænsning og derefter vælge den tabelbegrænsningsdefinition, der skal bruges. Endelig skal alle felter i tabelbegrænsningen knyttes til attributterne i produktkonfigurationsmodellen.
 
 <a name="see-also"></a>Se også
 --------
 
 [Nøglebegreber i produktkonfigurationsmodeller](product-configuration-models.md)
+
+
 
 

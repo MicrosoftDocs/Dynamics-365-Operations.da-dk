@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="packing-materials-and-fees"></a>Emballage og gebyrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Emballagegebyrer betales med bestemte intervaller til et genbrugsfirma. Der betales et beløb pr. vægtenhed for hvert materiale, som en pakkeenhed består af. Emballagegebyrer beregnes og rapporteres, men der bogføres ingen finansposteringer, da gebyrerne ikke anses som afgifter, der skal betales til en myndighed.
 
 Der beregnes emballagevægt og -gebyrer for salgsordrelinjer og for indkøbsordrelinjer.
@@ -52,7 +55,7 @@ Når du opretter en salgsordrelinje, kontrolleres det, om der er angivet pakkeen
 ## <a name="packing-units-on-purchase-order-lines"></a>Pakkeenheder på indkøbsordrelinjer
 Emballageposteringer for en indkøbsordrelinje oprettes ikke af systemet. Du opretter transaktioner for fakturerede indkøbsordrelinjer manuelt på siden **Emballageposteringer**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Angive kundelicensnumrene packagingmaterialfee
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Definer kundelicensnumre for emballagegebyr
 Hvis kunderne betaler emballagegebyret, skal du angive kundelicensnumre for emballagegebyr på siden **Kunder**. Når en kunde er tildelt et licensnummer, beregnes emballagegebyrer automatisk, når salgsordrer faktureres. Når ordren er faktureret, fjernes markeringen i afkrydsningsfeltet **Beregn gebyr** på siden **Emballageposteringer**, da du ikke behøver at beregne og udskrive en rapport. Du kan udskrive emballagevægten på fakturaen og underrette kunderne om, at de kommer til at betale gebyrerne. 
 
 Hvis firmaet betaler emballagegebyrerne, skal du ikke angive kundelicensnumrene. Når ordren er faktureret, markeres afkrydsningsfeltet **Beregn gebyr** på siden **Emballageposteringer**. Det angiver, at gebyrer beregnes, når der oprettes en rapport. Du kan udskrive vægtangivelserne på fakturaen og angive, at firmaet betaler gebyrerne.
@@ -60,6 +63,8 @@ Hvis firmaet betaler emballagegebyrerne, skal du ikke angive kundelicensnumrene.
 ## <a name="print-packaging-material-weights-on-invoices"></a>Udskrive emballagevægt på fakturaer
 Du kan udskrive emballagevægten på fakturaen og angive, hvem der skal betale emballagegebyrerne. I rapporten opsummeres vægten efter emballagekoder.
  
+
+
 
 
 

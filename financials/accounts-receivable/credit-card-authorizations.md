@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Opsætning, godkendelse og opsamling af kreditkort
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics AX. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Opsætning af kreditkortbetalingstjeneste
@@ -55,7 +58,7 @@ Du kan kræve at få oplyst kortets verifikationsværdi, der også kaldes kortet
 
 ### <a name="address-verification"></a>Bekræftelse af adresse
 
-Kontrol af adresseoplysninger sendes altid til betalingsudbyderen. Du kan bestemme, hvor mange oplysninger der kræves for en transaktion kan accepteres. Skal du kontakte din udbyder til at bestemme, om den accepterer disse oplysninger. Her er indstillingerne for bekræftelse af adresse:
+Kontrol af adresseoplysninger sendes altid til betalingsudbyderen. Du kan vælge, hvor mange oplysninger der er nødvendige for, at en postering kan accepteres. Sørg for at tjekke med din udbyder for at finde ud af, om de kan acceptere disse oplysninger. Her er indstillingerne for bekræftelse af adresse:
 -   **Acceptér altid postering** – Accepterer posteringen, uanset resultaterne af adressekontrollen.
 -   **Kontoindehaver** – Sammenlign kortholderens navn på posteringen med oplysningerne fra kreditkortudstederen.
 -   **Faktureringsadresse** – Sammenlign kortindehaverens navn og faktureringsadressen for posteringen med kreditkortudstederens oplysninger.
@@ -68,10 +71,12 @@ For hver kreditkorttype, der understøttes, kan du angive niveauet af dataunders
 -   **Niveau 3** – Overfører alle oplysninger fra niveau 2 samt ordrelinjeoplysninger.
 
 ## <a name="partial-payments"></a>Delvise betalinger
-Hvis du leverer en del af en ordre, registreres beløbet til den delvise ordre, og tilladelsen, som gælder beløbet for hele ordren, lukkes. En ny bevilling sendes derefter til det resterende beløb i den rækkefølge, som ikke endnu er leveret.
+Hvis du leverer en del af en ordre, registreres beløbet til den delvise ordre, og tilladelsen, som gælder beløbet for hele ordren, lukkes. En ny godkendelse overføres derefter til det resterende beløb for den del af ordren, der ikke er leveret.
 
 ## <a name="voiding-an-authorization"></a>Annullere en godkendelse 
 Du kan ændre betalingsmåden for at annullere en kreditkortgodkendelse, til en anden metode, der ikke har en type af kreditkort.
+
+
 
 
 

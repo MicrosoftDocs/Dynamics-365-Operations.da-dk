@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Reduktionsnøgler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Eksempel 1: Budgetreduktionsprincip for Procent - reduktionsnøgle
@@ -58,7 +61,7 @@ Hvis du kører hovedplanlægning pr. 1. januar, forbruges efterspørgselsprognos
 | April                | 750                       |
 | Maj-december | 1.000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Eksempel 2: Transaktioner reduktionsnøgle forecast Reduktionsprincip
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Eksempel 2: Posteringer – reduktionsnøgle for budgetreduktionsprincip
 Dette eksempel viser, hvordan de faktiske ordrer, der forekommer i de perioder, der er defineret i reduktionsnøglen, reducerer efterspørgselsprognosebehovet.
 
 -   Vælg **Posteringer - reduktionsnøgle** i feltet **Reduktionsprincip** på siden **Behovsplaner**.
@@ -82,7 +85,7 @@ Hvis du bruger samme efterspørgselsprognose på 1.000 enheder pr. måned anvend
 | April                | 881                       |
 | Maj-december | 1.000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Transaktioner dynamiske periode forecast Reduktionsprincip
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Posteringer – reduktionsprincip for dynamisk budgetperiode
 I de fleste tilfælde konfigureres systemer, så posteringer reducerer efterspørgselsprognose inden for specifikke budgetperioder: uger, måneder og så videre. Disse perioder er defineret i reduktionsnøglen. Men tiden mellem to linjer i behovsprognosen kan også *omfatte* en periode.
 
 1.  Opret en behovsprognose for følgende datoer og antal.
@@ -129,6 +132,8 @@ Her er en oversigt over reduktionen **Posteringer - dynamisk periode**:
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Behovsplaner](master-plans.md)
+
+
 
 

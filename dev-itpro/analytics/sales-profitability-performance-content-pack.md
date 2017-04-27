@@ -1,6 +1,6 @@
 ---
-title: "Salg og rentabilitet ydeevne strøm BI-indhold"
-description: "Dette emne beskriver, hvad der skal medtages i Dynamics-365 for operationer – salg og rentabilitet ydeevne indhold pack til Microsoft Power BI. Det forklarer, hvordan du kan få adgang til rapporter, der er inkluderet i pakken med indhold og indeholder oplysninger om datamodel og enheder, der bruges til at oprette indhold pack."
+title: Salgs- og rentabilitetsperformance, Power BI-indhold
+description: "Dette emne beskriver, hvad der er indeholdt i Dynamics-365 for Operations – indholdspakke til salgs- og rentabilitetsperformance til Microsoft Power BI. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,84 +24,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Salg og rentabilitet ydeevne strøm BI-indhold
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Salgs- og rentabilitetsperformance, Power BI-indhold
 
-Dette emne beskriver, hvad der skal medtages i Dynamics-365 for operationer – salg og rentabilitet ydeevne indhold pack til Microsoft Power BI. Det forklarer, hvordan du kan få adgang til rapporter, der er inkluderet i pakken med indhold og indeholder oplysninger om datamodel og enheder, der bruges til at oprette indhold pack.
+Dette emne beskriver, hvad der er indeholdt i Dynamics-365 for Operations – indholdspakke til salgs- og rentabilitetsperformance til Microsoft Power BI. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 
 <a name="overview"></a>Overblik
 --------
 
-Dette indhold pack blev oprettet til salgschefer overvåge nøglemål for omsætning, bruttoavance og overskudsgrader salg. Det bruger salg transaktionsdata fra Dynamics 365 for operationer og indeholder både en samlet oversigt over hele firmaet salgstal og en opdeling af salg til kunder og produkter. Ved at fremhæve ændringer i væksten i omsætning og overskud over tid, kan rapporter bruges til beskeder ledere om positive og negative tendenser for individuelle kunder og produkter. Kategori og regionale ledere kan finde det nyttigt at have diagrammer, der sammenligner indtjeningen af forskellige produktkategorier og debitorgrupper til hinanden til at udpege laggards og førende virksomheder. En omfattende rapport, der afbilder individuel kundes omsætning i forhold til fortjeneste tilbyder kontoadministratorer data sikkerhedskopieres grundlag for at attune deres salg og marketing indsats til hver enkelt kundes respektive profil. Salg og rentabilitet ydeevne indhold pack kan salgschefer til at analysere salgsresultater ved:
+Denne indholdspakke blev oprettet til salgschefer overvågning af salgsmetrikker for omsætning, bruttoavance og overskudsgrader. Programmet bruger salgstransaktionsdata fra Microsoft Dynamics 365 for Operations og indeholder både en samlet oversigt over alle firmaets salgstal og en opdeling af salgsperformance for kunder og produkter. Ved at fremhæve ændringer i væksten i omsætning og overskud over tid, kan rapporter bruges til at gøre ledere opmærksom på positive og negative tendenser for individuelle kunder og produkter. Kategori- og områdeledere kan finde det nyttigt at have diagrammer, der sammenligner omsætning og rentabilitet for forskellige produktkategorier og kundegrupper med hinanden til at udpege tabere og vindere. En omfattende rapport, der afbilder de enkelte kunders omsætning i forhold til overskudsgraden giver account managers et databaseret grundlag for at tilpasse deres salgs- og marketingindsats til hver enkelt kundes respektive profil. Indholdspakken til salgs- og rentabilitetsperformance giver salgschefer mulighed for at analysere salgsperformance efter:
 
--   Omsætning, år til dato (efter debitorgruppe og individuelle kunder, salg kategorier og individuelle produkter og lande)
--   Ændring af omsætning, år-over-år (efter kunde regioner og salg kategorier)
+-   Omsætning, år til dato (efter kundegruppe og individuelle kunder, salgskategorier og individuelle produkter og geografiske områder)
+-   Omsætningsændring, år for år (efter kunderegioner og salgskategorier)
 
-Rentabiliteten kan analyseres ved:
+Rentabiliteten kan analyseres efter:
 
--   Bruttoavance og fortjenstmargen (efter debitorgrupper og produktkategorier til salg)
--   Bruttoavance ændring år-over-år
--   Kunden rentabilitet (efter omsætning i forhold til dækningsbidraget)
+-   Bruttoavance og overskudsgrad (efter kundegrupper og produktsalgskategorier)
+-   Bruttoavanceændring, år for år
+-   Kunderentabilitet (efter omsætning i forhold til bruttoavance)
 
-## <a name="accessing-the-content-pack"></a>Adgang til indhold pack
-Salg og rentabilitet ydeevne strøm BI indhold pack er udgivet på aktivsiden gennemførelse i livscyklus Services (LCS) og kan åbnes fra Dynamics 365 for operationer. Finde flere oplysninger om, hvordan du får adgang til og start strøm BI rapporter [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Adgang til indholdspakken
+Indholdspakken til salgs- og rentabilitetsperformance til Power BI er udgivet som et implementeringsaktiv i Lifecycle Services (LCS) og kan åbnes fra Microsoft Dynamics 365 for Operations. Du kan finde yderligere oplysninger om adgang til og start af Power BI-rapporter i [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-included-in-the-content-pack"></a>Målestok, der er inkluderet i pakken med indhold
-Indhold pack indeholder en rapport, der består af et sæt af metrisk visualized som diagrammer, fliser og tabeller. Følgende tabel indeholder en oversigt over visualisations i indhold pack.
+## <a name="metrics-included-in-the-content-pack"></a>Metrikker, der er inkluderet i indholdspakken
+Indholdspakken indeholder en rapport, der består af et sæt metrikker, der er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdspakken.
 
 |                        |                                            |                                                         |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Rapportside**        | **Charts**                                 | **Fliser**                                               |
-| Omsætning pr. kunde    | Bedste 10 kunder efter omsætning                | Samlet omsætning                                           |
-|                        | Samlede indtægt efter kundegruppe            | YOY stigning i omsætningen                                      |
-|                        | Gennemsnitlig kunde indtægt efter kundegruppe | Bruttoavance                                            |
+| **Rapportside**        | **Diagrammer**                                 | **Felter**                                               |
+| Omsætning efter kunde    | Top 10-kunder efter omsætning                | Samlet omsætning                                           |
+|                        | Samlet omsætning efter kundegruppe            | Stigning år for år i omsætning                                      |
+|                        | Gennemsnitlig kundeomsætning efter kundegruppe | Bruttoavance                                            |
 |                        | Omsætning og bruttoavance efter kundegruppe   |                                                         |
-| Omsætning efter produkt     | Omsætning og bruttoavance efter salgskategori   | Samlede \#af produkter                                    |
-|                        | Top 10 produkter efter omsætning                 | Det samlede antal aktive produkter og procent af total |
-|                        | Samlet omsætning efter salgskategori            | Antallet af produkter, der redegør for 80 % omsætning           |
-| Omsætning pr. periode\*    | Omsætning pr. måned                           | YOY stigning i omsætningen                                      |
-|                        | Efterfølgende omsætning afvigelse, YOY             | YOY omsætning vækst %                                    |
-|                        | Afvigelse salg efter kunde, område    |                                                         |
-| Omsætning pr. lokation    | Omsætning efter by                      |                                                         |
-|                        | YOY omsætning vækst %                       |                                                         |
-|                        | Omsætning efter område                    |                                                         |
-| Kunden rentabilitet | Bruttoavance kontra omsætning pr. kunde   | Bruttofortjeneste, dækningsbidrag, YOY stigning i omsætningen          |
+| Omsætning efter produkt     | Omsætning og bruttoavance efter salgskategori   | Antal produkter i alt                                    |
+|                        | Top 10-produkter efter omsætning                 | Antal aktive produkter i alt og procentdel af antal produkter i alt |
+|                        | Omsætning i alt efter salgskategori            | Antal produkter, der udgør for 80 % af omsætningen           |
+| Omsætning pr. periode\*    | Omsætning pr. måned                           | Stigning år for år i omsætning                                      |
+|                        | Efterfølgende omsætningsafvigelse år for år             | Stigning i % år for år i omsætning                                    |
+|                        | Afvigelse i salg i alt efter kundeområde    |                                                         |
+| Omsætning efter lokalitet    | Omsætning efter by                      |                                                         |
+|                        | Stigning i % år for år i omsætning                       |                                                         |
+|                        | Omsætning pr. område                    |                                                         |
+| Kunderentabilitet | Bruttoavance i forhold til omsætning, efter kunde   | Bruttofortjeneste, dækningsbidrag, stigning i omsætningen år for år          |
 | Rentabilitetsanalyse | Omsætning og bruttoavance pr. måned          |                                                         |
-|                        | Top 15 kunder efter dækningsbidrag           |                                                         |
-|                        | Bruttoavance pr. måned, YOY                 |                                                         |
+|                        | Top 15-kunder efter bruttoavance           |                                                         |
+|                        | Bruttoavance pr. måned, år for år                 |                                                         |
 
-\*Omsætning dette og sidste år og vækst efter salgskategori.
+\* Omsætning dette og sidste år, og vækst efter salgskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Dynamics 365 for operationer data bruges til at udfylde rapporten i salg og rentabilitet ydeevne indhold pack. Dette er repræsenteret som samlede målinger, der er nødvendige i butikken enhed, som er en Microsoft SQL-database, der er optimeret til analytics. Læs mere om det i bloggen [Power BI integration med enhed butik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De samlede mål i dette indhold pack er et undersæt af de samlede mål, der var tilgængelige i kuben salg i Dynamics AX 2012 og AX 2012 R3. For at forberede kubens samlede mål i butikken enhed skal du foretage dem installerbare. Se proceduren kan finde flere oplysninger om, hvordan du forbereder samlede mål til enhed, der er gemt i bloggen [Power BI integration med enhed butik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Følgende nøgle samlede målinger af objektet faktura linjer bruges som grundlag for indhold pack.
+Dynamics 365 for Operations-data bruges til at udfylde rapporterne i indholdspakken til salgs- og rentabilitetsperformance. Disse repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Læs mere om det i bloggen [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De samlede målinger i denne indholdspakke er et undersæt af de samlede målinger, der var tilgængelige i salgskuben i Dynamics AX 2012 og AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Følgende samlede nøglemålinger for enheden Fakturalinjer bruges som grundlag for indholdspakken.
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entity**    | **Samlede nøgletal**               | **Datakilden til Dynamics 365 til operationer** | **Field**                                    | **Description**                          |
+| **Enhed**    | **Samlede nøglemålinger**               | **Datakilde til Dynamics 365 for Operations** | **Felt**                                    | **Beskrivelse**                          |
 | Fakturalinjer | Indtægter                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløb i regnskabsvaluta            |
-|               | Vareforbrug                           | InventTrans                                     | SUM (CostAmountPosted + CostAmountAdjustment) | Kostbeløb + justering                 |
-|               | Kommissionen Linjebeløb – regnskabsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsbeløbet i regnskabsvaluta |
+|               | Vareforbrug                           | InventTrans                                     | SUM (CostAmountPosted + CostAmountAdjustment) | Omkostningsbeløb + regulering                 |
+|               | Provisionslinjebeløb – regnskabsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsbeløb i regnskabsvaluta |
 
-Følgende tabel viser de vigtigste samlede målinger af objektet faktura linjer, der bruges til at oprette flere beregnede målpunkter i indhold pack dataset.
+Nedenstående tabel viser de samlede nøglemålinger af enheden Fakturalinjer, der bruges til at oprette flere beregnede målepunkter i indholdspakkens datasæt.
 
 |                   |                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Measure**       | **Beregnet som**                                                                                |
-| Bruttoavance      | SUM (omsætning) – VAREFORBRUG – Kommissionen – moms (inkluderet i debitorfakturalinjebeløb)          |
-| Bruttoavance      | SUM (bruttofortjeneste / (omsætning - moms (inkluderet i debitorfakturalinjebeløb)))             |
-| Omsætning sidste år | Omsætning sidste år = BEREGN (SUM ('Fakturalinjer'\[indtægter\]), SAMEPERIODLASTYEAR (datoer\[dato\]) |
+| **Målepunkt**       | **Beregnet som**                                                                                |
+| Bruttoavance      | SUM(Omsætning – vareforbrug – provision – moms (inkluderet i debitorfakturalinjebeløb))          |
+| Bruttoavance      | SUM(Bruttoavance/(Omsætning - moms (inkluderet i debitorfakturalinjebeløb)))             |
+| Omsætning sidste år | Omsætning sidste år = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
 
-Følgende vigtige dimensioner i den **salg kube** er brugt som filtre til at vise de samlede mål for at opnå større granularitet og større analytiske indsigt.
+Følgende nøgledimensioner i **Salgskuben** bruges som filtre til at skabe udsnit af de samlede målinger for at opnå større granularitet og give dybere analytisk indsigt.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
-| **Entity**       | **Eksempler på attributter**                           |
-| Kunder        | Debitorgrupper, kunde regioner, adresse, branche |
-| Produkter         | Produktnummer, produktnavn, grupper for elementnavn       |
-| Salgskategorier | Salgskategorien navne                                 |
-| Juridiske enheder   | Navn på juridisk enhed                                   |
+| **Enhed**       | **Eksempler på attributter**                           |
+| Kunder        | Debitorgrupper, kundeområder, adresse, branche |
+| Produkter         | Produktnummer, produktnavn, varegruppenavn       |
+| Salgskategorier | Navne på salgskategorier                                 |
+| Juridiske enheder   | Navne på juridisk enhed                                   |
 | Datoer            | Datoer                                                |
 
-Indhold pack viser data for det indeværende kalenderår som standard, men du kan åbne filtre rapportsektion og ændre Datofilter. Du kan også ændre filteret virksomhed.
+Indholdspakken viser som standard data for det indeværende kalenderår, men du kan åbne afsnittet Rapportfiltre og ændre datofilteret. Du kan også ændre firmafilteret.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:

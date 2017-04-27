@@ -1,9 +1,9 @@
 ---
-title: "Oprette anlægsaktiver"
+title: "Konfigurer anlægsaktiver"
 description: "Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-fixed-assets"></a>Oprette anlægsaktiver
+# <a name="set-up-fixed-assets"></a>Konfigurer anlægsaktiver
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver.
 
@@ -43,9 +46,9 @@ Anlægsaktiver tildeles en gruppe, når de oprettes. Som standard tildeles de b�
 Afskrivningsprofiler skal oprettes først. I afskrivningsprofilen kan du konfigurere, hvordan værdien af et aktiv afskrives over tid. Du skal angive metoden for afskrivning, afskrivningsår (kalenderår eller regnskabsår) og hyppigheden af afskrivning.
 
 ## <a name="books"></a>Bøger
-Når du har konfigureret afskrivningsprofiler, skal du oprette de krævede bøger for dine aktiver. Hver bog sporer en uafhængig økonomisk livscyklus for et aktiv. Bøger kan konfigureres til at bogføre tilknyttede transaktioner i finans. Denne konfiguration er standardindstillingen, fordi den bruges typisk til virksomhedens regnskabsaflæggelse. Bøger, der ikke bogføres i Finans bogføres kun til anlæg for reskontro for og bruges typisk til momsrapporteringen.
+Når du har konfigureret afskrivningsprofiler, skal du oprette de krævede bøger for dine aktiver. Hver bog sporer en uafhængig økonomisk livscyklus for et aktiv. Bøger kan konfigureres til at bogføre tilknyttede transaktioner i finans. Denne konfiguration er standardindstillingen, fordi den typisk bruges til virksomhedens regnskabsaflæggelse. Bøger, der ikke bogføres i finans, bogføres kun til anlægsaktivers reskontro og bruges typisk til momsrapporteringen.
 
-En primære afskrivningsprofil er tilknyttet hver bog. Bøger har også en alternativ eller skifteafskrivningsprofil, hvis denne profiltype er relevant. For at medtage anlægskartoteket automatisk i afskrivningskørsel skal du aktivere Beregn afskrivning-indstillingen. Hvis denne indstilling ikke er markeret for et aktiv, springer afskrivningsforslaget aktivet.
+En primære afskrivningsprofil er tilknyttet hver bog. Bøger har også en alternativ eller skifteafskrivningsprofil, hvis denne profiltype er relevant. For at medtage anlægskartoteket automatisk i afskrivningskørsel skal du aktivere Beregn afskrivning-indstillingen. Hvis denne indstilling ikke er markeret for et aktiv, springer afskrivningsforslaget aktivet over.
 
 Du kan også oprette afledte bøger. De angivne afledte transaktioner bogføres som en nøjagtig kopi af den primære transaktion mod de afledte bøger. Derfor er afledte transaktioner normalt angivet til anskaffelser og kassation, ikke til afskrivningstransaktioner.
 
@@ -62,14 +65,16 @@ Du kan også definere særlige afskrivninger eller straksafskrivning for en best
 ## <a name="fixed-asset-parameters"></a>Anlægsaktivernes parametre
 Det sidste trin er at opdatere parametrene for anlægsaktiver.
 
-Feltet Grænse for kapitalisering bestemmer de aktiver, der afskrives. Hvis en linje er valgt som et anlægsaktiv, men det ikke længere opfylder den angivne grænse for kapitalisering, et anlægsaktiv stadig oprettes eller opdateres, men indstillingen Beregn afskrivning er angivet til Nej. Derfor afskrives aktivet ikke automatisk som en del af forslagene til forbrugsafskrivning.
+Feltet Grænse for kapitalisering bestemmer de aktiver, der afskrives. Hvis en indkøbslinje er valgt som et anlægsaktiv, men det ikke længere opfylder den angivne grænse for kapitalisering, bliver et anlægsaktiv stadig oprettet eller opdateret, men Beregn afskrivning-indstillingen er angivet til Nej. Derfor afskrives aktivet ikke automatisk som en del af afskrivningsforslagene.
 
 Indstillingen Opret automatisk afskrivningsreguleringsbeløb med afhændelse er vigtig. Når du angiver denne indstilling til Ja, bliver afskrivning af anlægsaktivet automatisk reguleret, baseret på indstillingerne for afskrivning ved aktivkassation. Med en anden indstilling kan du fratrække kasserabatter fra dit anskaffelsesbeløb, når du anskaffer anlægsaktiver ved hjælp af en kreditorfaktura.
 
-I oversigtspanelet Indkøbsordrer kan du konfigurere, hvordan aktiver skal oprettes som en del af indkøbsprocessen. Den første mulighed er Tillad aktivanskaffelse fra Indkøb. Hvis du angiver denne indstilling til Ja, foregår aktivanskaffelse, når fakturaen bogføres. Hvis du angiver denne indstilling til Nej, kan du godt placere et anlægsaktiv på en indkøbsordre (IO) og en faktura, men bogføres ikke anskaffelsen. Bogføring skal foretages i et separat trin fra anlægsaktivkladden. Opret aktivet under produktkvittering eller faktura bogføringsindstillingen kan du oprette et nyt anlæg "i en fart" under bogføring, så det ikke behøver at være sat op som et anlægsaktiv før transaktionen. Den sidste indstilling, Kontrollér, om der oprettes anlægsaktiver under indtastning på linjen, gælder kun for indkøbsrekvisitioner.
+I oversigtspanelet Indkøbsordrer kan du konfigurere, hvordan aktiver skal oprettes som en del af indkøbsprocessen. Den første mulighed er Tillad aktivanskaffelse fra Indkøb. Hvis du angiver denne indstilling til Ja, foregår aktivanskaffelse, når fakturaen bogføres. Hvis du angiver denne indstilling til Nej, kan du stadig placere et anlægsaktiv på en indkøbsordre (IO) og en faktura, men anskaffelsen bogføres ikke. Bogføring skal foretages i et separat trin fra anlægsaktivkladden. Med indstillingen Opret aktiv under bogføring af produktkvittering eller faktura kan du oprette et nyt aktiv "i en fart" under bogføring, så det ikke behøver at være sat op som et anlægsaktiv før transaktionen. Den sidste indstilling, Kontrollér, om der oprettes anlægsaktiver under indtastning på linjen, gælder kun for indkøbsrekvisitioner.
 
 Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anlægsaktiv eller specifikke anlægsaktivtransaktioner.
 
 Endelig kan du under fanen Nummerserier definere nummerserier for anlægsaktiver. Nummerserien for anlægsaktiver kan tilsidesættes af nummerserien for anlægsaktivgruppen, hvis den er angivet.
+
+
 
 

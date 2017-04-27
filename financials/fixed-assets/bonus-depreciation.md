@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Straksafskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over funktionerne til bonusafskrivning.
 
 Du kan bruge straksafskrivning til ekstra- eller straksafskrivning det første år, et anlægsaktiv er taget i anvendelse og afskrives. Straksafskrivning skal foretages før eventuelle andre afskrivningsberegninger. Det er derfor bedst at bruge straksafskrivning med bøger, hvor bogføring til Finans-funktionalitet er deaktiveret. Du kan bruge indstillingen **Slet transaktioner, der ikke er bogført i Finans** til at slette historiske transaktioner for bøger, der ikke bogføres i finansmodulet. Du kan derefter tilpasse straksafskrivning senere i aktivets levetid ved at slette afskrivningstransaktioner, der tidligere er bogført. 
@@ -61,5 +64,7 @@ Når straksafskrivningen beregnes ved hjælp af forslagsprocessen, oprettes der 
 Du kan oprette et ubegrænset antal straksafskrivningsposter. Når du har tildelt aktivgruppebogen disse poster, anvendes de i aktivbogen. 
 
 Straksafskrivningen angives som enten en procentsats eller et fast beløb. Når du bogfører afskrivningsforslag, bogføres transaktionerne for straksafskrivningen i bogen som andre transaktioner end afskrivningstransaktionerne.
+
+
 
 

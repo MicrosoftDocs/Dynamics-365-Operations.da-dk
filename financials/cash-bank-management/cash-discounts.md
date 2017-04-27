@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cash-discounts"></a>Kasserabatter
 
+[!include[banner](../includes/banner.md)]
+
+
 Kasserabatter konfigureres og deles for kreditor og debitor.  Den tilgængelige kasserabat kan defineres på debitorfakturaen eller kreditorfakturaen og benyttes, hvis fakturaen betales inden kasserabatdatoen. 
 
 <a name="cash-discounts"></a>Kasserabatter
@@ -61,8 +64,8 @@ Din juridiske enheds regnskabsvaluta i EUR og de følgende valutakurser, der er 
 -   1. februar = 110
 -   1. marts = 80
 
-En faktura på 1000 USD med kasserabatbetingelserne for 20D2% bogføres den 15. februar. Beløbet i regnskabsvalutaen for fakturaen er 1100 EUR. Der foretages en betaling på 980 USD for fakturaen den 1. marts. Kasserabatbeløbet er 20 USD. Regnskabsvalutabeløbet for betalingen er 784 EUR. Beløbet i regnskabsvalutaen for kasserabatten beregnes ved hjælp af valutakursen fra og med marts 1:20 \*80 / 100 = 16 EUR.
-| **Note**                                                                                                                                                                                                                             |
+En faktura på 1000 USD med kasserabatbetingelserne for 20D2% bogføres den 15. februar. Beløbet i regnskabsvalutaen for fakturaen er 1100 EUR. Der foretages en betaling på 980 USD for fakturaen den 1. marts. Kasserabatbeløbet er 20 USD. Regnskabsvalutabeløbet for betalingen er 784 EUR. Regnskabsvalutabeløbet for kasserabatten beregnes ved hjælp af valutakursen for 1. marts: 20 \* 80/100 = 16 EUR.
+| **Bemærk!**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis indstillingen Beregn kasserabatter for delvise betalinger er valgt på siden Debitorparametre eller siden Kreditorparametre, bruges den valutakurs, der er gældende på datoen for hver delvise betaling. |
 
@@ -70,5 +73,7 @@ En faktura på 1000 USD med kasserabatbetingelserne for 20D2% bogføres den 15. 
 =
 
  
+
+
 
 

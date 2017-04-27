@@ -1,6 +1,6 @@
 ---
 title: "Detailtid og fremmøde"
-description: "Dette emne beskriver de scenarier, der understøttes til administration af tid og fremmøde i Microsoft Dynamics 365 for operationer – Retail."
+description: "Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Operations - Retail."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Detailtid og fremmøde
 
-Dette emne beskriver de scenarier, der understøttes til administration af tid og fremmøde i Microsoft Dynamics 365 for operationer – Retail. 
+[!include[banner](includes/banner.md)]
 
-<a name="manage-worker-setup-and-scheduling"></a>Administrere arbejder opsætning og planlægning
+
+Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Operations - Retail. 
+
+<a name="manage-worker-setup-and-scheduling"></a>Administrer arbejderopsætning og -planlægning
 ----------------------------------
 
 ### <a name="initial-configuration"></a>Indledende konfiguration
@@ -45,8 +48,8 @@ Få oplysninger om konfigurationstrinnene under <https://technet.microsoft.com/e
 
 ### <a name="retail-specific-configuration"></a>Detailspecifik konfiguration
 
--   Aktivér en funktionalitetsprofil til ur, for arbejdere, som du vil aktivere tidsregistreringer for. Klik på **POS-funktionalitetsprofiler**&gt;**funktion**&gt;**POS tid registreringer**&gt;**aktivere tidsregistreringer**.
--   Konfigurer POS-tilladelser for at aktivere tilladelsen Vis tidsursangivelser. Denne tilladelse lader en bruger at se tidsur-registreringer for andre arbejdere i butikken og fra alle de butikker, som brugeren er knyttet til, via adressekartoteket). Det kan være, at du vil aktivere denne tilladelse for en chefrolle, men ikke for en kasseassistentrolle. Klik på **POS-rettighedsgrupper**&gt;**se urposter**.
+-   Aktivér en funktionalitetsprofil til ur, for arbejdere, som du vil aktivere tidsregistreringer for. Klik på **POS-funktionalitetsprofiler** &gt; **Funktioner** &gt; **POS-tidsregistreringer** &gt; **Aktivér tidsregistreringer**.
+-   Konfigurer POS-tilladelser for at aktivere tilladelsen Vis tidsursangivelser. Denne tilladelse lader en bruger at se tidsur-registreringer for andre arbejdere i butikken og fra alle de butikker, som brugeren er knyttet til, via adressekartoteket). Det kan være, at du vil aktivere denne tilladelse for en chefrolle, men ikke for en kasseassistentrolle. Klik på **POS-rettighedsgrupper** &gt; **Vis tidsursangivelser**.
 
 ## <a name="register-time"></a>Registrer tid
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Tidsregistreringer for kassereren og andre
@@ -106,9 +109,9 @@ Få oplysninger om konfigurationstrinnene under <https://technet.microsoft.com/e
 <!-- -->
 
 -   Forskellige tidszoner:
-    -   Hvis du får vist tid fra et andet sted (for kasseassistentens logbog eller ved hjælp af **Vis tidsursangivelser** i et chefscenarie), og den placering er i en anden tidszone, konverteres de tidsregistreringer, som du kan se, til din lokale tidszone. For eksempel er en leder for to butikker, i Arizona og den anden i Nevada. En kasserer registrerer en mødetid klokken 9:00 I Arizona. På dette tidspunkt er tiden 8.00 om morgenen i Nevada. Hvis du derfor er i Nevada-butikken og ser på tidsregistreringsposter, er tidsregistreringen markeret som 08:00 om morgenen.
+    -   Hvis du får vist tid fra et andet sted (for kasseassistentens logbog eller ved hjælp af **Vis tidsursangivelser** i et chefscenarie), og den placering er i en anden tidszone, konverteres de tidsregistreringer, som du kan se, til din lokale tidszone. Du er f.eks. leder for to butikker, en i Arizona og den anden i Nevada. En kasserer registrerer en mødetid klokken 9:00 i Arizona. På dette tidspunkt er tiden 8.00 om morgenen i Nevada. Hvis du derfor er i Nevada-butikken og ser på tidsregistreringsposter, er tidsregistreringen markeret som 08:00 om morgenen.
 
-## <a name="view-worker-time-registrations"></a>Få vist arbejderregistreringer tid
+## <a name="view-worker-time-registrations"></a>Få vist tidsregistrering for arbejder
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Få vist tidsregistrering for arbejdere, og filtrer efter butik eller aktivitetstype
 
 Om POS:
@@ -117,8 +120,8 @@ Om POS:
 -   Du kan se tidsursregistreringsaktiviteter fra alle arbejdere, der er tildelt til de samme butikker, du er tilknyttet.
 -   Du kan bruge aktivitetstypen og butiksfiltre til at filtrere tidsregistreringer.
 
-## <a name="process-and-manage-time-registrations"></a>Behandle og administrere tidsregistreringer
-En Dynamics 365 for operationer – Retail bruger følger arbejdsgangen til at beregne, godkende og overføre tidsregistreringer til løn.
+## <a name="process-and-manage-time-registrations"></a>Behandl og administrer tidsregistreringer
+En Dynamics 365 for Operations - Retail-bruger følger arbejdsgangen for at beregne, godkende og overføre tidsregistreringer til løn.
 
 ### <a name="primary-operations"></a>Primære handlinger
 
@@ -132,5 +135,7 @@ En Dynamics 365 for operationer – Retail bruger følger arbejdsgangen til at b
 -   Registrere fravær
 
 Få flere oplysninger om, hvordan du behandler tids- og fremmøderegistreringer, under <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

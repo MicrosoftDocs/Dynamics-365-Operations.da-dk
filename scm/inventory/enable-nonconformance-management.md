@@ -1,5 +1,5 @@
 ---
-title: Administration af uoverensstemmelse
+title: Administration af uoverensstemmelser
 description: "I denne artikel beskrives den grundlæggende konfiguration, der kræves for at kunne bruge uoverensstemmelser. Der kræves yderligere konfigurationer, hvis du vil bruge kvalitetsordrer."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="nonconformance-management"></a>Administration af uoverensstemmelse
+# <a name="nonconformance-management"></a>Administration af uoverensstemmelser
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives den grundlæggende konfiguration, der kræves for at kunne bruge uoverensstemmelser. Der kræves yderligere konfigurationer, hvis du vil bruge kvalitetsordrer. 
 
@@ -34,7 +37,7 @@ Følg disse trin for at aktivere uoverensstemmelsesstyring:
 1.  Angiv de parametre for lager- og lagerstedsstyring, der vedrører uoverensstemmelser:
     -   Angiv indstillingen **Brug kvalitetsstyring** til **Ja**.
     -   Brug feltet **Timepris** til at angive en timepris for arbejde i den lokale valuta. Timeprisen bruges til at beregne omkostningerne for operationer, der vedrører en uoverensstemmelse. Timeprisen og de beregnede omkostninger er referenceoplysninger for en uoverensstemmelse. De agerer ikke sammen med andre funktioner.
-    -   Brug af **kvalitetsstyring** under fanen på den **rapportopsætning** siden for at definere typen dokument der skal udskrives. Du kan udskrive en uoverensstemmelsesrapport, et uoverensstemmelsesmærkat og en rettelsesrapport. Du kan definere mere end én post for at udskrive forskellige dokumenttyper i en rapport eller for at udskrive interne og eksterne bemærkninger. Det kan være nyttigt at bruge siden **Dokumenttype** til at definere en entydig dokumenttype for uoverensstemmelser og en entydig dokumenttype for rettelser. Det kan f.eks. være, at du vil skrive noter om en uoverensstemmelse ved hjælp af den entydige dokumenttype for uoverensstemmelser. I dette tilfælde skal du identificere den entydige dokumenttype i rapportindstillingerne.
+    -   Brug fanen **Kvalitetsstyring** på siden **Rapportopsætning** til at definere den dokumenttype, der skal udskrives. Du kan udskrive en uoverensstemmelsesrapport, et uoverensstemmelsesmærkat eller en rettelsesrapport. Du kan definere mere end én post for at udskrive forskellige dokumenttyper i en rapport eller for at udskrive interne og eksterne bemærkninger. Det kan være nyttigt at bruge siden **Dokumenttype** til at definere en entydig dokumenttype for uoverensstemmelser og en entydig dokumenttype for rettelser. Det kan f.eks. være, at du vil skrive noter om en uoverensstemmelse ved hjælp af den entydige dokumenttype for uoverensstemmelser. I dette tilfælde skal du identificere den entydige dokumenttype i rapportindstillingerne.
     -   Aktivér nummerserier for uoverensstemmelse og korrektionsreferencer.
 
 2.  Aktivér brugergodkendelse af uoverensstemmelser. Brug feltet **Navn** på siden **Brugere** til at tildele en medarbejder til hver bruger, der skal godkende en uoverensstemmelse. Systemet bruger de medarbejdere, der ændrer status for en uoverensstemmelse til at registrere historikken for uoverensstemmelsen. Brugere kan ikke godkende en uoverensstemmelse, medmindre de er blevet tildelt et medarbejder-id.
@@ -47,10 +50,12 @@ Følg disse trin for at aktivere uoverensstemmelsesstyring:
 <a name="see-also"></a>Se også
 --------
 
-[Oprette og behandle en uoverensstemmelse (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Oprette og behandle en uoverensstemmelse (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Processer for kvalitetsstyring](quality-management-processes.md)
 
-[Konfigurere forudsætninger for uoverensstemmelse management (opgave guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Konfigurere forudsætninger for uoverensstemmelsesstyring (opgaveguide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

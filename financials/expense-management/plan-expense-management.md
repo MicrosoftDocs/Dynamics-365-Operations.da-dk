@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Konfigurer udgiftsstyring
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen, før du konfigurerer Udgiftsstyring i Microsoft Dynamics AX. Du kan gemme oplysninger om betalingsmetoderne, rejserekvisitioner, udgiftsrapporter og politikker, bl.a. i området Udgiftsstyring. 
 
 Da mange af de beslutninger, du foretager, når du planlægger din konfiguration for udgiftsstyring, er baseret på organisationens hierarki og økonomiske struktur, skal du referere til planlægningsdokumenterne for de pågældende områder.
@@ -133,6 +136,8 @@ Du kan oprette udgiftsrapportpolitikker, så din virksomhed kan spare tid og pen
 -   Hvornår udløber politikken?
 -   Hvad er politikreglen?
 -   Hvad er resultatet af politikreglen?
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskabskalendere, regnskabsår og perioder
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives regnskabskalendere, regnskabsår og -perioder, og hvordan du kan udnytte dem til juridiske enheder, anlægsaktiver og budgettering.
 
 Regnskabskalendere danner rammen om en organisations økonomiske aktivitet. Hver regnskabskalender omfatter et eller flere regnskabsår, og hvert regnskabsår omfatter flere perioder. Regnskabskalendere kan være baseret på kalenderåret, fra 1. januar til 31. december, eller på vilkårlige andre datoer, som du vælger. Nogle organisationer kan f.eks. vælge en regnskabskalender, der begynder den 1. juli i et år og slutter den 30. juni det følgende år. 
@@ -58,6 +61,8 @@ Budgetcyklusser angiver, hvor længe et budget anvendes. Budgetcyklusser kan omf
 
 ## <a name="maintain-periods-for-your-organization"></a>Vedligeholde perioder for organisationen
 Du kan bruge siden Finanskalender til at få vist detaljer i regnskabskalenderen og de regnskabsår og -perioder, som bruges af organisationen. Du kan også ændre status for perioderne og vælge, hvilke brugere der kan bogføre regnskabstransaktioner i perioder. I starten af en ny periode kan det f.eks. være, at en gruppe brugere skal kunne afslutte bogføring af finansposteringer i forrige periode, mens andre grupper kun arbejder i den nye periode.
+
+
 
 
 

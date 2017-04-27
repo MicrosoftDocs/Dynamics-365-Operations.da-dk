@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit"></a>Remburser
 
+[!include[banner](../includes/banner.md)]
+
+
 Remburser er bankdokumenter, der ofte bruges ved køb og salg af varer på tværs af internationale grænser. 
 
 Remburser bruges i internationale transaktioner til at sikre betalinger. En remburs er en aftale, der udfærdiges af en bank, hvor banken accepterer at sikre betaling på vegne af køberen, hvis vilkårene i aftalen mellem køberen og sælgeren overholdes. Bemærk, at en remburs også kaldes et akkreditiv. 
@@ -41,5 +44,7 @@ I en importremburs er den juridiske enhed køberen eller ansøgeren til remburse
 Rembursen indeholder en beskrivelse af varerne, evt. nødvendige dokumenter, afsendelsesdatoen og udløbsdatoen, efter hvilken betaling ikke vil blive foretaget. Den udstedende bank opkræver et depositum for rembursen. 
 
 En remburs kan enten være genkaldelig eller uigenkaldelig. Typen af en remburs kan være overdragelig, uoverdragelig eller revolverende. En remburs er typisk en uigenkaldelig og bekræftet aftale om, at betaling vil blive foretaget til en bestemt beneficiant ved fremsendelse af fuldstændig og korrekt forsendelsesdokumentation.
+
+
 
 

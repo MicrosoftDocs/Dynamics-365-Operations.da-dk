@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Politikker for lagerstedsarbejde
 
+[!include[banner](../includes/banner.md)]
+
+
 Der introduceres en ny arbejdspolitik for lagerstedet i Microsoft Dynamics AX 7.0.1 (maj 2016-opdatering). Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion.
 
-Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion. Du kan angive arbejdspolitikken ved hjælp af en kombination af **arbejdsordretyper**, en **lagerlokation** og et **produkt**. Produkt L0101 rapporteres som afsluttet, til outputplacering 001. De færdige varer forbruges senere i en anden produktionsordre på outputplacering 001. I dette tilfælde kan du oprette en politik for arbejde for at forhindre, at der oprettes, når du rapporterer produkt L0101 færdig til outputplacering 001 arbejde for færdigvarer læg-på-lager. Arbejdspolitikken er en enkelt enhed, der kan beskrives med følgende oplysninger:
+Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion. Du kan angive arbejdspolitikken ved hjælp af en kombination af **arbejdsordretyper**, en **lagerlokation** og et **produkt**. Produkt L0101 rapporteres f.eks. som afsluttet til outputlokalitet 001. Den færdige vare forbruges senere i en anden produktionsordre på outputlokalitet 001. I dette tilfælde kan du oprette en arbejdspolitik for at forhindre, at der oprettes arbejde for færdige varer, når du rapporterer produkt L0101 færdig til outputlokalitet 001. Arbejdspolitikken er en enkelt enhed, der kan beskrives med følgende oplysninger:
 
 -   **Navn på arbejdspolitik **(den entydige identifikator for arbejdspolitikken)
 -   **Arbejdsordretyper **og** Metode til oprettelse af arbejde**
@@ -55,7 +58,7 @@ Du kan vælge et produkt, der vedrører arbejdspolitikken. Du kan anvende arbejd
 ## <a name="example"></a>Eksempel
 I følgende eksempel er der to produktionsordrer, PRD-001 og PRD-00*2*. Produktionsordre PRD-001 er en handling, der hedder **Assembly**, hvor produktet SC1 færdigmeldes på lokation O1. Produktionsordre PRD-002 er en handling, der hedder **Painting** og forbruger produkt SC1 fra lokation O1. Produktionsordren PRD-002 forbruger også råvare RM1 fra lokation O1. RM1 gemmes i lagerlokation BULK-001 og vil blive plukket til lokation O1 af lagerstedets arbejde til råvareplukning. Plukkearbejdet genereres, når produktionen PRD-002 frigives. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Politikker for lagerstedsarbejde](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Når du skal konfigurere lagerstedets arbejdspolitik for dette scenario, skal du overveje følgende oplysninger:
 
@@ -66,12 +69,12 @@ Her er et eksempel på den politik for arbejde, du har angivet, ud fra disse ove
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Nej, der er lagt på lager 01'                    |-Færdige varer lægges på lager<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Navn på arbejdspolitik**<br>                 |**Arbejdsordretyper**<br>                               |
+| Læg ikke på lager 01     `                    |- Færdige varer, læg på lager<br>                           |
+|                                         |**Lokationer**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Produkter** <br>                                      |
+|                                         |- SC1                                                  |
 
 Følgende procedurer indeholder trinvise instruktioner om, hvordan du konfigurerer arbejdspolitikken for lagersted i dette scenario. En eksempelopsætning, der viser, hvordan du færdigmelder en produktionsordre til en lokation, der ikke er id-kontrolleret, beskrives også.
 
@@ -244,5 +247,7 @@ TRIN (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

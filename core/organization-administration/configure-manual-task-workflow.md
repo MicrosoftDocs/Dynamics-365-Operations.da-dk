@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurere en manuel opgave i en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for en manuel opgave.
 
 Hvis du vil konfigurere en manuel opgave i arbejdsgangseditoren, skal du højreklikke på opgaven og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter følgende procedurer for at konfigurere egenskaberne for den manuelle opgave.
@@ -124,10 +127,10 @@ Udfør følgende trin for at angive, hvem den manuelle opgave skal tildeles til.
     </tr>
     <tr class="even">
     <td>Bruger</td>
-    <td>Specifikke Microsoft Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal tildeles opgaven, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal tildeles opgaven, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Udfør følgende trin for at angive, hvem den manuelle opgave skal tildeles til.
     <li>På listen <strong>Køtype</strong> skal du vælge <strong>Betingede workflowopgavekøer</strong>.</li>
     <li>På listen <strong>Kønavn</strong> skal du vælge <strong>Betinget kø</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Bemærk:</strong> bruges denne indstilling for kun et par arbejdsprocesser såsom sagsstyring.</td>
+    </ol>
+    <strong>Bemærk!</strong> Denne indstilling bruges kun til nogle få arbejdsgange såsom Sagsstyring.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Hvis en bruger ikke færdiggør den manuelle opgave inden for den tildelte tid, 
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, som opgaven skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, som opgaven skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Hvis en bruger ikke færdiggør den manuelle opgave inden for den tildelte tid, 
 6.  Hvis brugerne i eskaleringsstien ikke færdiggør opgaven inden for den tildelte tid, håndteres opgaven af systemet. Hvis du vil angive den handling, som systemet skal udføre, skal du vælge rækken **Handling** og derefter vælge en handling på fanen **Sluthandling**.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Angive, hvornår systemet automatisk skal behandle opgaven
-Du kan konfigurere systemet, så en manuel opgave håndteres, hvis bestemte betingelser er opfyldt. En opgave kræver f.eks., at et medlem af udgiftsrapportafdelingen gennemgår de kvitteringer, der fremlægges sammen med en udgiftsrapport. I henhold til firmapolitikken udføres denne opgave, hvis det samlede beløb for udgiften er større end USD 100. I dette scenario kan du konfigurere systemet til automatisk at markere opgaven som **komplet**, når det samlede beløb er mindre end 100. Udfør disse trin for at angive, hvornår systemet skal håndtere den manuelle opgave.
+Du kan konfigurere systemet, så en manuel opgave håndteres, hvis bestemte betingelser er opfyldt. En opgave kræver f.eks., at et medlem af udgiftsrapportafdelingen gennemgår de kvitteringer, der fremlægges sammen med en udgiftsrapport. Ifølge firmaets politik skal denne opgave udføres, hvis det samlede beløb i udgiftsrapporten overstiger USD 100. I dette scenarie kan du konfigurere systemet, så opgaven automatisk markeres som **Fuldført**, når det samlede beløb er mindre end 100. Udfør disse trin for at angive, hvornår systemet skal håndtere den manuelle opgave.
 
 1.  Klik på **Automatiske handlinger** i venstre rude.
 2.  Marker afkrydsningsfeltet **Aktivér automatiske handlinger**.
@@ -308,10 +311,10 @@ Du kan sende beskeder til personer, når en manuel opgave er delegeret videre, e
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Udfør følgende trin, hvis den manuelle opgave skal fuldføres inden en bestemt
 1.  Klik på **Avancerede indstillinger** i venstre rude.
 2.  Markér afkrydsningsfeltet **Angiv en tidsgrænse for arbejdsgangselementet**
 3.  Angiv, hvornår opgaven skal være fuldført, i feltet **Varighed**. Vælg en af følgende indstillinger:
-    -   **Timer** – Angiv antallet timer, som opgaven skal udføres i. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
-    -   **Dage** – Angiv antallet dage, som opgaven skal udføres i. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
+    -   **Timer** – Angiv det antal timer, som opgaven skal fuldføres på. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
+    -   **Dage** – Angiv det antal dage, som opgaven skal fuldføres på. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
     -   **Uger** – Angiv det antal uger, inden for hvilke opgaven skal være fuldført.
     -   **Måneder** – Vælg den dag og uge, hvor opgaven senest skal være fuldført. Det kan f.eks. være, at opgaven skal være fuldført f.eks. senest fredag i den tredje uge i måneden.
     -   **År** – Vælg den dag, uge og måned, hvor opgaven senest skal være fuldført. Det kan f.eks. være, at opgaven skal være fuldført senest fredag i den tredje uge i december.
@@ -343,6 +346,8 @@ Når den manuelle opgave tildeles en bruger, skal vedkommende håndtere opgaven.
 5.  Markér afkrydsningsfeltet **Deleger**, hvis brugeren skal kunne tildele denne opgave til en anden bruger.
 6.  Markér afkrydsningsfeltet **Tildel igen**, hvis brugeren skal kunne tildele denne opgave til en anden bruger i workflowopgavekøen.
 7.  Markér afkrydsningsfeltet **Frigiv**, hvis brugeren skal kunne tildele denne opgave til workflowopgavekøen. Derefter kan en anden bruger fuldføre opgaven.
+
+
 
 
 

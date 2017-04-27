@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Indkøbsordrer til et projekt
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de forskellige metoder, du kan bruge til at oprette indkøbsordrer for et projekt. Den metode, du bruger, afhænger af formålet med indkøbsordren, og hvornår de købte varer forbruges og debiteres et projekt.
 
-Du kan bruge flere metoder til at oprette indkøbsordrer for et projekt i Microsoft Dynamics 365 for operationer. Den metode, du bruger, afhænger af formålet med indkøbsordren, hvornår de købte varer forbruges og hvornår de købte varer debiteres et projekt.
+Du kan i Microsoft Dynamics 365 for Operations bruge flere metoder til at oprette indkøbsordrer for et projekt. Den metode, du bruger, afhænger af formålet med indkøbsordren, hvornår de købte varer forbruges og hvornår de købte varer debiteres et projekt.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Metoder til oprettelse af en indkøbsordre
 
@@ -72,5 +75,7 @@ Du kan bruge en af forskellige metoder til at oprette en indkøbsordre i Projekt
 
 > [!NOTE] 
 > Når du opdaterer kreditorfakturaen eller følgesedlen, bliver du bedt om at opdatere følgesedlen for varebehovet.
+
+
 
 

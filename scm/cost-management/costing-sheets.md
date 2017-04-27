@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Kostprisark
 
+[!include[banner](../includes/banner.md)]
+
+
 Opsætning af efterkalkulationsarket omfatter to målsætninger. Som den første målsætning skal du definere formatet for visning af omkostninger for solgte varer for en produceret vare eller en produktionsordre. Den formaterede visning kaldes et kostprisark. Som den anden målsætning skal du definere udgangspunktet for beregning af indirekte omkostninger. Opsætningen af efterkalkulationsarket bygger på kostprisgruppens funktion for visning af oplysninger og formlerne til beregning af indirekte omkostninger. De to mål for opsætning af efterkalkulationsark er beskrevet i denne artikel. 
 
 Et efterkalkulationsark er den formaterede visning af oplysninger om omkostninger for solgte varer for en produceret vare eller en produktionsordre. Når du opretter et efterkalkulationsark, kan du definere formatet for oplysningerne og også definere grundlaget for beregning af indirekte omkostninger. Opsætningen af efterkalkulationsarket bygger på kostprisgruppens funktioner for visning af oplysninger og for de formler, der bruges til beregning af indirekte omkostninger. Her er flere oplysninger om de to målsætninger for opsætningen af efterkalkulationsarket:
@@ -43,6 +46,8 @@ De to blokeringspolitikker for en efterkalkulationsversion bestemmer, om afvente
 Når du har defineret formatet for efterkalkulationsarket og beregninger for indirekte omkostninger, skal du udføre en særskilt handling for at validere og gemme oplysningerne. Efterkalkulationsarket repræsenterer et format for hele virksomheden, så der opnås en ensartet visning af oplysningerne om omkostningerne for solgte varer. 
 
 Efterkalkulationsarket vises som en del af siden **Beregn varens kostpris**. Efterkalkulationsarket kan vises for en produceret vares beregnede omkostningspost på siden **Varepris** eller for en ordrespecifik beregningspost på siden **Resultater af styklistekalkulation**. Det vises også som del af siden **Prisberegning** for en produktionsordre.
+
+
 
 
 

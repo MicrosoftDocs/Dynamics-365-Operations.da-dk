@@ -1,5 +1,5 @@
 ---
-title: "Indstillinger for anlægsaktivet transaktion"
+title: "Indstillinger for anlægsaktivtransaktioner"
 description: "I denne artikel beskrives de forskellige tilgængelige metoder til oprettelse af anlægsaktivtransaktioner."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Indstillinger for anlægsaktivet transaktion
+# <a name="fixed-asset-transaction-options"></a>Indstillinger for anlægsaktivtransaktioner
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives de forskellige tilgængelige metoder til oprettelse af anlægsaktivtransaktioner.
 
@@ -36,7 +39,7 @@ Du kan oprette anlægsaktiver til integration med Kreditor, Debitor, Indkøb og 
 Du kan angive transaktioner for anlægsaktiver på siden Kladdebilag. Denne side kan åbnes fra siden Fakturajournal. Du kan også åbne siden Kladdebilag fra siden Fakturagodkendelseskladde. Vælg Anlægsaktiv i feltet Modkontotype. Vælg derefter et anlægsaktivnummer i feltet Modkonto. Angiv værdier i felterne Transaktionstype og Kartotek under fanen Anlægsaktiver.
 
 ## <a name="accounts-receivable"></a>Debitor
-Du kan angive transaktioner for anlægsaktiver i siden fritekst-faktura.  Vælg et linjeelement i siden fritekst-faktura i gitteret faktura linjer. Klik på oversigtspanelet Linjedetaljer. Angiv anlægsaktivnummeret og kartoteket for kassationsposteringen. I fritekstfakturaer er posteringstypen for anlægsaktiver altid Kassation – salg.
+Du kan angive transaktioner for anlægsaktiver på siden Fritekstfaktura.  Vælg et linjeelement i gitteret Fakturalinjer på siden Fritekstfaktura. Klik på oversigtspanelet Linjedetaljer. Angiv anlægsaktivnummeret og kartoteket for kassationsposteringen. I fritekstfakturaer er posteringstypen for anlægsaktiver altid Kassation – salg.
 
 ## <a name="procurement-and-sourcing"></a>Indkøb og forsyning
 Du kan angive transaktioner for anlægsaktiver på siden Indkøbsordre. Angiv de nødvendige oplysninger for at oprette en indkøbsordre, og klik derefter på OK. Klik på oversigtspanelet Linjedetaljer på siden Indkøbsordre. Angiv derefter oplysninger om anlægsaktivet under fanen Anlægsaktiver. 
@@ -65,6 +68,8 @@ Alle posteringstyper for anlægsaktiver kan bogføres på siden Finanskladde. Du
 
 
 
-Yderligere oplysninger finder du [faste Aktiver integration](fixed-asset-integration.md).
+Du kan finde flere oplysninger under [Integration af anlægsaktiver](fixed-asset-integration.md).
+
+
 
 

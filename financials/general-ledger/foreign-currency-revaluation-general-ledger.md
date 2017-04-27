@@ -1,6 +1,6 @@
 ---
 title: "Værdiregulering af udenlandsk valuta for Finans"
-description: "Dette emne indeholder en oversigt over følgende til finansmodulet udenlandsk valuta værdiregulering proces - installation, kører processen beregning for processen, og hvordan du kan tilbageføre værdireguleringsposteringerne, hvis det er nødvendigt."
+description: "Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
-Dette emne indeholder en oversigt over følgende til finansmodulet udenlandsk valuta værdiregulering proces - installation, kører processen beregning for processen, og hvordan du kan tilbageføre værdireguleringsposteringerne, hvis det er nødvendigt. 
+[!include[banner](../includes/banner.md)]
+
+
+Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt. 
 
 I en periodeafslutning kræver regnskabsmæssige konventioner finanskontosaldi i fremmede valutaer, der reguleres ved hjælp af forskellige valutakurstyper (aktuelle, historiske, gennemsnit, osv.). For eksempel kræver en regnskabskonvention, at aktiver og passiver værdiansættes på ny ved den aktuelle valutakurs, anlægsaktiver ved den historiske valutakurs og driftskonti på det månedlige gennemsnit. Værdiregulering af udenlandsk valuta i Finans kan bruges til at regulere balancen og resultatopgørelseskonti. 
 
 > [!NOTE]
-> Værdiregulering af udenlandsk valuta er også tilgængelige i modulet Debitor (AR) og kreditor (AP). Hvis du bruger disse moduler, bør de udestående transaktioner, der reguleres ved hjælp af værdireguleringen af udenlandsk valuta i disse moduler. Værdiregulering af udenlandsk valuta i Debitor og Kreditor opretter en regnskabspost i Finans for at afspejle urealiseret gevinst eller tab og sikre, at reskontroer og Finans kan afstemmes. Da værdireguleringen af udenlandsk valuta i Debitor og Kreditor opretter regnskabsposter i Finans, skal debitor- og kreditorhovedkonti udelukkes fra finansmodulets værdiregulering af udenlandsk valuta. 
+> Værdiregulering af udenlandsk valuta er også tilgængelig i Debitor- og Kreditor-modulerne. Hvis du bruger disse moduler, bør de udestående transaktioner reguleres ved hjælp af værdireguleringen af udenlandsk valuta i disse moduler. Værdiregulering af udenlandsk valuta i Debitor og Kreditor opretter en regnskabspost i Finans for at afspejle urealiseret gevinst eller tab og sikre, at reskontroer og Finans kan afstemmes. Da værdireguleringen af udenlandsk valuta i Debitor og Kreditor opretter regnskabsposter i Finans, skal debitor- og kreditorhovedkonti udelukkes fra finansmodulets værdiregulering af udenlandsk valuta. 
 
-Når du kører processen til værdiregulering, reguleres saldoen i hver hovedkonto, der er bogført i udenlandsk valuta. De transaktioner for ikke-realiseret gevinst eller tab, der oprettes under værdireguleringsprocessen, er genereret af systemet. To posteringer kan oprettes, én for regnskabsvalutaen og en anden for rapporteringsvaluta, hvis det er relevant. Hver regnskabsposten bogføres Urealiseret gevinst eller tab, og den hovedkonto, der værdireguleres.
+Når du kører processen til værdiregulering, reguleres saldoen i hver hovedkonto, der er bogført i udenlandsk valuta. De transaktioner for ikke-realiseret gevinst eller tab, der oprettes under værdireguleringsprocessen, er genereret af systemet. To posteringer kan oprettes, én for regnskabsvalutaen og en anden for rapporteringsvalutaen, hvis det er relevant. Hver regnskabspost bogføres i ikke-realiseret gevinst eller tab og den hovedkonto, der værdireguleres.
 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargøre kørsel af værdiregulering af udenlandsk valuta
 Før du kan køre processen til værdiregulering, kræves følgende konfiguration.
@@ -57,29 +60,29 @@ Siden **Værdiregulering af udenlandsk valuta** viser en oversigt over hver vær
 
 Værdierne af **Fra dato** og **Til dato** definerer datointervallet for beregningen af saldoen for udenlandsk valuta, der reguleres. Når du værdiregulerer driftskonti, værdireguleres summen af alle de transaktioner, der forekommer i datointervallet. Når du værdiregulerer statuskonti, ignoreres Fra dato. I stedet bestemmes den saldo, der skal reguleres, ved at gå fra begyndelsen af regnskabsåret til Til dato. 
 
-Den **dato rate** kan bruges til at angive den dato, som valutakursen som standard skal angives. For eksempel kan du regulere saldi mellem dato interval i januar 1 til 31, men du kan bruge den valutakurs, der er defineret for den 1. 
+**Kursdato** kan bruges til at angive den dato, som valutakursen som standard skal angives for. For eksempel kan du regulere saldi mellem datointervallet 1. til 31. januar, men bruge den valutakurs, der er defineret for den 1. februar. 
 
-Vælg, hvilke hovedkonti der skal reguleres: Alle, Balance eller Drift. Kun hovedkonti markeret til værdiregulering (på konto-hovedside) reguleres. Hvis du yderligere vil begrænse de hovedkonti, bruge posterne **med** at definere en række hovedkonti eller enkelte hovedkonti. 
+Vælg, hvilke hovedkonti der skal reguleres: Alle, Balance eller Drift. Kun hovedkonti markeret til værdiregulering (på siden Hovedkonto) reguleres. Hvis du yderligere vil begrænse hovedkonti, skal du bruge fanen **Poster, der skal indgå** til at definere en række hovedkonti eller enkelte hovedkonti. 
 
-Af værdireguleringsprocessen kan køres for en eller flere juridiske enheder. Opslaget viser kun de juridiske enheder, som du har adgang til. Vælg de juridiske enheder, som du vil køre processen til værdiregulering. 
+Værdireguleringsprocessen kan køres for en eller flere juridiske enheder. Opslaget viser kun de juridiske enheder, som du har adgang til. Vælg de juridiske enheder, hvor du vil køre processen til værdiregulering. 
 
-Reguleringen kan køres i en eller flere udenlandske valutaer. Opslaget omfatter alle de valutaer, der er bogført inden for datointervallet relevante for typen hovedkonto (balancen eller resultatopgørelsen) for de juridiske enheder, der er valgt til at regulere. Regnskabsvalutaen medtages på listen, men reguleres intet, hvis der vælges regnskabsvalutaen. 
+Reguleringen kan køres i en eller flere udenlandske valutaer. Opslaget omfatter alle de valutaer, der er bogført inden for datointervallet, der er relevant for typen af hovedkonto (Balancen eller Drift), for de juridiske enheder, der er valgt til værdiregulering. Regnskabsvalutaen medtages på listen, men intet reguleres, hvis regnskabsvalutaen er valgt. 
 
-Angiv **eksempel før bogføring** til **Ja** Hvis du vil have vist resultatet af værdireguleringen af Finans. Eksemplet i almindelighed Finans er forskellig fra simuleringen i P.A. og AP værdireguleringen af udenlandsk valuta. Simuleringen i AR og AP er en rapport, men Finans er et eksempel, der kan bogføres, uden at skulle køre værdireguleringsprocessen igen. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
+Indstil **Forhåndsvisning før bogføring*** til **Ja**, hvis du vil have vist resultatet af værdireguleringen af Finans. Forhåndsvisningen i Finans er forskellig fra simuleringen i værdireguleringen af udenlandsk valuta i Debitor og Kreditor, hvor simuleringen er en rapport, men Finans har en forhåndsvisning, der kan bogføres uden at køre værdireguleringsprocessen igen.. Resultaterne af forhåndsvisningen kan eksporteres til Microsoft Excel for at bevare en oversigt over, hvordan beløbene er beregnet. Du kan ikke bruge batchbehandling, hvis du vil have en forhåndsvisning af resultaterne af reguleringen. I forhåndsvisningen har brugeren mulighed for at bogføre resultaterne af alle de juridiske enheder med knappen **Bogfør**. Hvis der er et problem med resultaterne for en juridisk enhed, har brugeren også mulighed for at bogføre et undersæt af de juridiske enheder ved hjælp af knappen **Vælg juridiske enheder, som skal bogføres**. 
 
-Når processen til værdiregulering af udenlandsk valuta er fuldført, oprettes der en post for at registrere historikken for hver kørsel.  Der oprettes en separat post for hver juridisk enhed og posteringslag.
+Når processen til værdiregulering af udenlandsk valuta er fuldført, oprettes der en post for at registrere historikken for hver kørsel.  Der oprettes en separat post for hver juridiske enhed og posteringslag.
 
 ## <a name="calculate-unrealized-gainloss"></a>Beregne ikke-realiseret gevinst/tab
-Ikke-realiseret gevinst/tab-posteringer oprettes forskelligt mellem Finans-værdiregulering og værdireguleringsprocessen for Debitor og Kreditor. I Debitor og Kreditor er den tidligere regulering tilbageført helt (forudsat, at transaktionen ikke er udlignet endnu), og der oprettes en ny postering af værdiregulering for ikke-realiseret gevinst eller tab baseret på den nye valutakurs. Dette skyldes, at vi regulerer hver enkelt transaktion i Debitor og Kreditor. I Finans tilbageføres tidligere værdireguleringen ikke. I stedet oprettes en postering for deltaet mellem saldoen på hovedkontoen, herunder eventuelle tidligere værdiregulering af beløb og den nye værdi, der er baseret på valutakursen for den dato sats. 
+Ikke-realiseret gevinst/tab-posteringer oprettes forskelligt mellem Finans-værdiregulering og værdireguleringsprocessen for Debitor og Kreditor. I Debitor og Kreditor er den tidligere regulering tilbageført helt (forudsat, at transaktionen ikke er udlignet endnu), og der oprettes en ny postering af værdiregulering for ikke-realiseret gevinst eller tab baseret på den nye valutakurs. Dette skyldes, at vi regulerer hver enkelt transaktion i Debitor og Kreditor. I Finans tilbageføres den tidligere værdiregulering ikke. I stedet oprettes en postering for deltaet mellem saldoen på hovedkontoen, herunder eventuelle tidligere værdireguleringsbeløb, og den nye værdi, der er baseret på valutakursen for Kursdato. 
 
-**Eksempel** findes følgende saldi for hovedkonto 110110.
+**Eksempel** Der findes følgende saldi for hovedkontoen 110110.
 
 |            |                    |                        |                       |
 |------------|--------------------|------------------------|-----------------------|
 | **Dato**   | **Finanskonto** | **Transaktionsbeløb** | **Regnskabsbeløb** |
 | 20. januar | 110110 (Kontant)      | 500 EUR (Debet)        | 1000 USD (Debet)      |
 
-Hovedkontoen værdireguleres på den 31.  Urealiseret gevinst eller tab beregnes på følgende måde.
+Hovedkontoen værdireguleres den 31 januar.  Ikke-realiseret gevinst eller tab beregnes på følgende måde.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -94,7 +97,7 @@ Der oprettes følgende regnskabspost.
 | 31. januar | 110110 (Kontant)            |           | 166.67     |
 | 31. januar | 801400 (Ikke-realiseret tab) | 166.67    |            |
 
-Ingen nye posteringer, der bogføres for februar måned.  Hovedkontoen værdireguleres på den 28.
+Ingen nye posteringer, der bogføres for februar måned.  Hovedkontoen værdireguleres den 28. februar.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -112,6 +115,8 @@ Der oprettes følgende regnskabspost.
 ## <a name="reverse-foreign-currency-revaluation"></a>Tilbageføre værdiregulering af udenlandsk valuta
 Hvis du vil tilbageføre værdireguleringstransaktionen, skal du vælge knappen **Tilbagefør postering** på siden **Værdiregulering af udenlandsk valuta**. Der oprettes en ny historisk post for værdiregulering af udenlandsk valuta for at bevare det historiske revisionsspor for, hvornår reguleringen opstod eller blev tilbageført. 
 
-Du kan fortryde resultaterne af værdiregulering af datorækkefølgen, men du skal muligvis også tilbageføre en mere aktuel værdiregulering for at sikre, at de korrekte saldi for hver hovedkonto, der er regulerede. Tilbageførsler kan opstå forældet rækkefølge, fordi der er ingen måde at styre, hvilke hovedkonti revalueres og hyppigheden af hvor de er reguleret. For eksempel kan en organisation vælge at regulere deres kontanter hovedkonti på kvartalsvist grundlag, men alle andre hovedkonti hver måned.
+Du kan tilbageføre resultaterne af forældet værdiregulering, men du skal muligvis også tilbageføre en mere aktuel værdiregulering for at sikre korrekte saldi for hver hovedkonto, der er reguleret. Tilbageførsler kan opstå forældet, fordi der er ingen måde at styre, hvilke hovedkonti der revalueres og hvor ofte. For eksempel kan en organisation vælge at regulere deres kontanthovedkonti på kvartalsvist grundlag, men alle andre hovedkonti hver måned.
+
+
 
 

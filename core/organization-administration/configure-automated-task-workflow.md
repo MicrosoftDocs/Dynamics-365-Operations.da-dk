@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurere en automatiseret opgave i en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for en automatiseret opgave.
 
 Hvis du vil konfigurere en automatiseret opgave i arbejdsgangseditoren, skal du højreklikke på opgaven og derefter klikke på **Egenskaber** for at åbne siden **Egenskaber**. Brug derefter følgende procedurer for at konfigurere egenskaberne for den automatiserede opgave.
@@ -92,16 +95,18 @@ Du kan sende beskeder til personer, når en automatiseret opgave er afviklet ell
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Microsoft Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Gentag trin 3 til 7 for hver af de hændelser, du har valgt i trin 2.
+8.  Gentag trin 3 til 7 for hvert af de hændelser, du har valgt i trin 2.
+
+
 
 
 

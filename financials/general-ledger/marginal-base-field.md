@@ -1,5 +1,5 @@
 ---
-title: "Momssatser, der er baseret på beregningsgrundlaget og beregningsmetoder"
+title: "Momssatser baseret på beregningsgrundlaget og beregningsmåderne"
 description: "Denne artikel beskriver, hvordan værdierne i felterne Beregningsgrundlag og Beregningsmetode bestemmer momssatserne for salgs- og købstransaktioner."
 author: twheeloc
 manager: AnnBe
@@ -26,13 +26,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Momssatser, der er baseret på beregningsgrundlaget og beregningsmetoder
+# <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Momssatser baseret på beregningsgrundlaget og beregningsmåderne
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver, hvordan værdierne i felterne Beregningsgrundlag og Beregningsmetode bestemmer momssatserne for salgs- og købstransaktioner.
 
 Beregningsgrundlaget for oversigtspanelet Beregning på siden Momskoder bestemmer, hvilke beløb der bruges til at plukke passende momssatser fra satserne på siden Momskodeværdier. Beløbstype i feltet Beregningsgrundlag i kombination med metoden i feltet Beregning bestemmer logikken, der skal bruges til at finde de korrekte momssatser for en transaktion. 
 
-Forskellige kombinationer af værdier i disse felter resulterer i meget forskellige momsberegninger, som det fremgår af følgende eksempler. I eksemplerne bruges de værdier for momsinterval, der er defineret for hver momskode på siden Momskodeværdier. Du kan åbne denne side ved at klikke på momskode &gt;værdier på siden moms koder.
+Forskellige kombinationer af værdier i disse felter resulterer i meget forskellige momsberegninger, som det fremgår af følgende eksempler. I eksemplerne bruges de værdier for momsinterval, der er defineret for hver momskode på siden Momskodeværdier. Du kan åbne denne side ved at klikke på Momskode &gt; Værdier på siden Momskoder.
 
 > [!Important]                                                                                                                  
 > Hvis beregningsgrundlaget for en eller flere af dine momskoder er baseret på linjebeløb eller -enheder, skal værdien i feltet Beregningsmåde på siden Finansparametre indstilles til Linje. |
@@ -53,9 +56,9 @@ Momssatserne er defineret i følgende intervaller.
 > [!NOTE]                                                                                                             
 > Den øvre grænse på nul (0) i det sidste interval betyder, at alle beløb, der er højere end 100, er medtaget i intervallet.
 
-Beregningsgrundlaget: **nettobeløbet pr. linje** 
+Beregningsgrundlag: **Nettobeløb pr. linje** 
 
-Beregningsmetode: **Interval** 
+Beregningsmåde: **Interval** 
 
 Du køber 8 lamper, der hver koster 25,00. 
 
@@ -69,7 +72,7 @@ Samlet fakturabeløb = 200,00 + 35,00 = 235,00
 
 **Variation** 
 
-Hvis fakturaen har to linjer med fire varer på hver linje, er nettobeløbet på hver linje er 100,00, og momsen beregnes på følgende måde: 
+Hvis fakturaen har to linjer og fire varer på hver linje, er nettobeløbet på hver linje 100,00, og momsen beregnes på følgende måde: 
 
 Momslinje 1 = 50 x 30 % + 50 x 20 % = 15 + 10 = 25,00 
 
@@ -92,9 +95,9 @@ Momssatserne er defineret i følgende intervaller.
 | 50-100           | 20 %      |
 | 100 - 0 (&gt; 100) | 10 %      |
 
-Beregningsgrundlaget: **nettobeløb pr. enhed** 
+Beregningsgrundlag: **Nettobeløb pr. enhed** 
 
-Beregningsmetode: **hele beløbet** 
+Beregningsmåde: **Hele beløbet** 
 
 Du køber 8 lamper, der hver koster 25,00. 
 
@@ -116,9 +119,9 @@ Momssatserne er defineret i følgende intervaller.
 | 50-100          | 20 %      |
 | 100 -0 (&gt; 100) | 10 %      |
 
-Beregningsgrundlaget: **nettobeløbet for fakturasaldoen** 
+Beregningsgrundlag: **Nettobeløb på fakturasaldo** 
 
-Beregningsmetode: **Interval** en salgsfaktura med 2 linjer med 4 lamper på de enkelte linjer til 25,00 pr.. Fakturasaldoens nettobeløb er 4 x 25,00 + 4 x 25,00 = 200,00. Momsen beregnes på følgende måde: Samlet moms = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Samlet fakturabeløb = 200,00 + 35,00 = 235,00
+Beregningsmåde: **Interval** En salgsfaktura har 2 linjer med 4 lamper på hver linje til 25,00 pr. stk. Fakturasaldoens nettobeløb er 4 x 25,00 + 4 x 25,00 = 200,00. Momsen beregnes på følgende måde: Samlet moms = 50 x 0,30 + 50 x 0,20 + 100 x 0,10 = 15 + 10 + 10 = 35,00 Samlet fakturabeløb = 200,00 + 35,00 = 235,00
 
 ## <a name="gross-amount-per-line"></a> Bruttobeløb pr. linje
 
@@ -137,11 +140,11 @@ Momssatserne er defineret i følgende intervaller.
 | 50-100           | 20 %      |
 | 100 - 0 (&gt; 100) | 10 %      |
 
-Beregningsgrundlag: **Bruttobeløb pr. linje** Beregningsmåde: **Interval** Der er desuden en anden momskode, der beregnes for en særlig afgift på 5,00 på hver lampe. Afgiften lægges til nettobeløbet før momsberegningen. Du køber 8 lamper, der hver koster 25,00. Nettobeløbet for fakturalinjen er 200,00. Bruttobeløbet for fakturalinjen er 8 x 25,00 + 8 x 5,00 = 240,00. Momsen beregnes på følgende måde: Samlet moms = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39.00 samlet afgift = 5,00 x 8 = 40,00 beløb = 200,00 + 39.00 + 40,00 = 279.00
+Beregningsgrundlag: **Bruttobeløb pr. linje** Beregningsmåde: **Interval** Der er desuden en anden momskode, der beregnes for en særlig afgift på 5,00 på hver lampe. Afgiften lægges til nettobeløbet før momsberegningen. Du køber 8 lamper, der hver koster 25,00. Nettobeløbet for fakturalinjen er 200,00. Bruttobeløbet for fakturalinjen er 8 x 25,00 + 8 x 5,00 = 240,00. Momsen beregnes på følgende måde: Samlet moms = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 20 + 14 = 39,00 Samlet afgift = 5,00 x 8 = 40,00 Samlet fakturabeløb = 200,00 + 39,00 + 40,00 = 279,00
 
 **Variation** 
 
-Hvis fakturaen oprettes ved hjælp af 2 fakturalinjer med 4 varer på hver linje, er nettobeløbet pr. fakturalinje 100,00. Bruttobeløb (inklusive afgift på 4 x 5,00) pr. fakturalinje er 120,00, og momsen beregnes på følgende måde: Moms for fakturalinje 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Moms for fakturalinje 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Samlet moms = 27,00 + 27,00 = 54,00 Samlet afgift = 5,00 x 8 = 40,00 Samlet fakturabeløb = 200,00 + 54,00 + 40,00 = 294,00
+Hvis fakturaen oprettes ved hjælp af 2 fakturalinjer med 4 varer på hver linje, er nettobeløbet pr. fakturalinje 100. Bruttobeløb (inklusive afgift på 4 x 5,00) pr. fakturalinje er 120,00, og momsen beregnes på følgende måde: Moms for fakturalinje 1 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Moms for fakturalinje 2 = 50 x 0,30 + 50 x 0,20 + 20 x 0,10 = 15 + 10 + 2 = 27,00 Samlet moms = 27,00 + 27,00 = 54,00 Samlet afgift = 5,00 x 8 = 40,00 Samlet fakturabeløb = 200,00 + 54,00 + 40,00 = 294,00
 
 ## <a name="gross-amount-per-unit"></a> Bruttobeløb pr. enhed
 
@@ -166,7 +169,7 @@ Beregningsgrundlag: **Bruttobeløb pr. enhed** Der er en særlig afgift på 5,00
 
 Vælg denne indstilling for at bestemme momssatser ud fra den samlede værdi af fakturaen, inkl. andre afgifter.
 > [!NOTE]
-> Du kan kun have én momskode med dette valg i en momsgruppe i feltet Beregningsgrundlag
+> I en momsgruppe kan du kun have én momskode med dette valg i feltet Beregningsgrundlag
 
 ### <a name="example"></a>Eksempel
 
@@ -178,9 +181,11 @@ Momssatserne er defineret i følgende intervaller.
 | 50-100           | 20 %      |
 | 100 - 0 (&gt; 100) | 10 %      |
 
-Beregningsgrundlaget: **faktura i alt inkl. andre momsbeløb** beregningsmetode: **Interval**   
+Beregningsgrundlag: **Fakturatotal inkl. andre momsbeløb** Beregningsmåde: **Interval**   
 Der er en særlig afgift på hver lampe på 5,00. Afgiften lægges til nettobeløbet før momsberegningen. Du køber 8 lamper, der hver koster 25,00. Nettobeløbet for fakturaen er 200,00. Bruttobeløbet for fakturaen er 200,00 + (8 x 5,00) = 240,00. Momsen beregnes på følgende måde: Samlet moms = 50 x 0,30 + 50 x 0,20 + 140 x 0,10 = 15 + 10 + 14 = 39,00 Samlet afgift = 5,00 x 8 = 40,00 Samlet fakturabeløb = 200,00 + 39,00 + 40,00 = 279,00
 
-Yderligere oplysninger finder du [hele beløbet og Interval beregningsindstillinger for momskoder](whole-amount-interval-options-sales-tax-codes.md) og [momsberegningsmetoderne i feltet grundlag](sales-tax-calculation-methods-origin-field.md).
+Du kan finde flere oplysninger under [Indstillinger for beregning af hele beløbet og intervaller for momskoder](whole-amount-interval-options-sales-tax-codes.md) og [Momsberegningsmetoderne i feltet Grundlag](sales-tax-calculation-methods-origin-field.md)
+
+
 
 

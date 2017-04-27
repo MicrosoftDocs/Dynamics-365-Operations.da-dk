@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Prissimulering
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om prissimuleringen for tilbud. Prissimuleringen hjælper dig med at vurdere effekten af fradrag på den fremtidige salgspris under tilbudsprocessen, før du giver tilsagn om en bestemt pris.
 
 En prissimulering til et tilbud viser et nyt samlet beløb på basis af en foreslået ny pris. En prissimulering kan også vise et nyt beløb for en bestemt linje, der er oprettet i et eksisterende tilbud. Du kan angive en prissimulering og anvende den senere. Du kan også bruge det oprindelige tilbud – uden en prissimulering – og ændre mere, efterhånden som du arbejder dig gennem salgsprocessen med kunden.  
@@ -50,7 +53,7 @@ Det er vigtigt at være omhyggelig, når du kører prissimuleringer på tilbud m
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer af rabatter i samhandelsaftaler
 
-Samhandelsaftaler i Microsoft Dynamics 365 for operationer kan have fire forskellige prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
+Samhandelsaftaler i Microsoft Dynamics 365 for Operations kan have fire typer prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
 
 -   **Salgspris** – Der kan angives separate varesalgspriser. Når tilbudslinjerne oprettes, søger programmet efter den rigtige salgspris for en vare og overføre den til tilbudslinjerne. En samhandelsaftale, der har denne slags rabat, påvirker derfor ikke prissimuleringen. Den salgspris, der bruges i tilbudslinjen, afspejler samhandelsaftalen.
 -   **Linjerabat** – Der angives særlige rabatter for varer, afhængigt af ordreantallet. Linjebeløb reduceres typisk med linjerabatten, før der køres en prissimulering. En samhandelsaftale, der har denne slags rabat, påvirker derfor prissimuleringen.
@@ -79,7 +82,7 @@ I følgende tabel vises tilbudslinjerne.
 | Salgsværdi i USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Kostværdi i USD          | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Dækningsbidrag i USD | 318,20 – 184,96                      | 133,24   |
-| Dækningsgrad         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87 %   |
+| Dækningsgrad         | (\[318,20 – 184,96\] ÷ 318,20) × 100 | 41,87 %   |
 
 Du kører en prissimulering og yder en samlet rabat på 15 procent på hele tilbuddet eller tilbudshovedet. I følgende tabel vises de nye samlede beløb for tilbuddet efter kørsel af prissimuleringen.
 
@@ -89,11 +92,11 @@ Du kører en prissimulering og yder en samlet rabat på 15 procent på hele tilb
 | Oprindelig salgsværdi i USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
 | Oprindelig kostværdi i USD                                | (10 × 9,52) + (12 × 7,48)                 | 184,96   |
 | Oprindeligt dækningsbidrag i USD                       | 318,20 – 184,96                           | 133,24   |
-| Oprindelig dækningsgrad                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87 %   |
+| Oprindelig dækningsgrad                               | (\[318,20 – (10 × 9,52)\] ÷ 318,20) × 100 | 41,87 %   |
 | Prissimulering med 15 % samlet rabat i USD | (15 × 318,2) ÷ 100                        | 47,73    |
 | Ny salgsværdi i USD                               | 318,20 – 47,73                            | 270,47   |
 | Nyt dækningsbidrag i USD                       | 270,47 – 184,96                           | 85,51    |
-| Ny dækningsgrad                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
+| Ny dækningsgrad                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61 %   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Prissimulering for enkelte linjeelementer
 
@@ -113,12 +116,12 @@ I følgende tabel vises tilbudslinjerne.
 | Kostværdi i USD for BR-14          | 12 × 7,48                            | 89,76    |
 | Dækningsbidrag i USD for BR-12 | 153,20 – 95,20                       | 58,00    |
 | Dækningsbidrag i USD for BR-14 | 165,00 – 89,76                       | 75,24    |
-| Dækningsgrad i USD for BR-12  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 37,86    |
-| Dækningsgrad i USD for BR-14  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 45,60    |
+| Dækningsgrad i USD for BR-12  | \[(153,20 – 95,20) ÷ 153,20\] × 100  | 37,86    |
+| Dækningsgrad i USD for BR-14  | \[(165,00 – 89,76) ÷ 165,00\] × 100  | 45,60    |
 | Samlet salgsværdi i USD             | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Samlet kostværdi i USD              | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Samlet dækningsbidrag i USD     | 318,20 – 184,96                      | 133,24   |
-| Samlet dækningsgrad             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87 %   |
+| Samlet dækningsgrad             | \[(318,20 – 184,96) ÷ 318,20\] × 100 | 41,87 %   |
 
 Du kører en prissimulering og yder en samlet rabat på 10 procent på BR-12-enheder. I følgende tabel vises de nye samlede beløb for tilbuddet efter kørsel af prissimuleringen for det enkelte linjeelement.
 
@@ -133,13 +136,15 @@ Du kører en prissimulering og yder en samlet rabat på 10 procent på BR-12-enh
 | Kostværdi i USD for BR-14                       | 12 × 7,48                               | 89,76    |
 | Nyt dækningsbidrag i USD for BR-12          | 137,88 – 95,20                          | 42,68    |
 | Dækningsbidrag i USD for BR-14              | 165,00 – 89,76                          | 75,24    |
-| Ny dækningsgrad i USD for BR-12           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 30,95    |
-| Dækningsgrad i USD for BR-14               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 45,60    |
-| Ny samlet salgsværdi i USD                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 302,88   |
+| Ny dækningsgrad i USD for BR-12           | \[(137,88 – 95,20) ÷ 137,88\] × 100     | 30,95    |
+| Dækningsgrad i USD for BR-14               | \[(165,00 – 89,76) ÷ 165,00\] × 100     | 45,60    |
+| Ny samlet salgsværdi i USD                      | \[(10 × 15,32) – 15,32\] + (12 × 13,75) | 302,88   |
 | Samlet kostværdi i USD                           | (10 × 9,52) + (12 × 7,48)               | 184,96   |
 | Nyt samlet dækningsbidrag i USD              | 302,88 – 184,96                         | 117,92   |
-| Ny samlet dækningsgrad                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93 %   |
+| Ny samlet dækningsgrad                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93 %   |
 
 Prissimuleringen påvirker kun den linje, den anvendes på, og reducerer det samlede beløb for den linje.
+
+
 
 

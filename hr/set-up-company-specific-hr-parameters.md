@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Oprette firmaspecifikke parametre for personale
 
+[!include[banner](includes/banner.md)]
+
+
 Indstillingerne for nogle parametre for personale (HR) deles på tværs af firmaer, mens indstillingerne for andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre for personale.
 
 To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Personaleparametre**. På siden **Personaleparametre** er indstillingerne fordelt på seks faner:
@@ -42,9 +45,9 @@ Hver fane indeholder oplysninger, der vedrører en enkelt virksomhed. Indstillin
 
 Indstillingerne på fanen **Rekruttering** definerer de dokumenttyper, der bruges til korrespondance, der automatisk sendes til ansøgere og det rekrutteringsprojekt, der bruges til uopfordrede ansøgninger (ansøgninger, der ikke er til et bestemt rekrutteringsprojekt). Den periode, der er defineret for det aldersfordelte rekrutteringsprojekt bestemmer rekrutteringsprojekter, der er medtaget i feltet **Aldersfordelte projekter** i arbejdsområdet **Rekrutteringsstyring**. Den periode, der er defineret for advarsel om deadline for ansøgning bruges til at få vist rekrutteringsprojekter, der nærmer sig deres ansøgningsfrist i feltet den **Deadline for ansøgning nærmer sig** i arbejdsområdet **Rekruttering**. 
 
-Indstillingerne på den **løn** fane definerer, om brugere skal bekræfte, at de vil gemme oplysninger om en fast eller variabel lønstruktur. Hvis du vælger den **Aktiver Gem validering** afkrydsningsfelt, helst brugere om at lukke en kompensation-relaterede side, vises en meddelelse, der spørger, om de vil gemme posten. Nogle sider i kompensationsstyring lade ikke brugere slette oplysninger. Når brugeren får besked på at bekræfte, om oplysningerne skal gemmes, kan det hjælpe med at begrænse mængden af oplysninger, der gemmes, men ikke senere kan slettes. Hvis afkrydsningsfeltet **Aktiver validering ved lagring** ikke er markeret, gemmes poster altid med det samme, eventuelt før brugeren er klar. Hvis du bruger performancestyring, giver fanen **Kompensation** dig også mulighed for at vælge en rangeringsmodel, der skal bruges i stedet for den model, der er tildelt til kompensationsstrukturerne, når performance vurderes. 
+Indstillingerne under fanen **Kompensation** definerer, om brugere skal bekræfte, at de vil gemme oplysninger om en fast eller variabel lønstruktur. Hvis du vælger afkrydsningsfeltet **Aktivér validering ved lagring**, får brugerne vist en meddelelse, hver gang de lukker en kompensationsrelateret side, hvor de bliver spurgt, om de vil gemme posten. Nogle sider inden for kompensationsstyring giver ikke brugerne mulighed for at slette information. Når brugeren får besked på at bekræfte, om oplysningerne skal gemmes, kan det hjælpe med at begrænse mængden af oplysninger, der gemmes, men ikke senere kan slettes. Hvis afkrydsningsfeltet **Aktiver validering ved lagring** ikke er markeret, gemmes poster altid med det samme, eventuelt før brugeren er klar. Hvis du bruger performancestyring, giver fanen **Kompensation** dig også mulighed for at vælge en rangeringsmodel, der skal bruges i stedet for den model, der er tildelt til kompensationsstrukturerne, når performance vurderes. 
 
-Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder, kan du bruge den **nummerserier** listeside (Klik på **virksomhedsadministration**&gt;**nummerserier**&gt;**nummerserier**). 
+Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder skal du bruge listesiden **Nummerserier** (klik på **Organisationsadministration** &gt; **Nummerserier** &gt; **Nummerserier**). 
 
 Indstillingerne på fanen **FMLA** definerer, hvor mange timer en medarbejder skal arbejde for at være berettiget til FMLA-ydelser, længde af beskæftigelse, der kræves for berettigelse og beskæftigelsens startdato, der bruges til at bestemme længden af beskæftigelse. Indstillingerne også definere antallet af FMLA-timer, som medarbejderne har ret til, og FMLA-orlovskalender, der bruges til at beregne, hvor mange FMLA-timer medarbejdere har brugt. Fanen **FMLA** er kun tilgængelig for virksomheder i USA. 
 
@@ -54,5 +57,7 @@ Indstillingerne på fanen **FMLA** definerer, hvor mange timer en medarbejder sk
 --------
 
 [Konfigurer parametre for personale på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
+
+
 
 

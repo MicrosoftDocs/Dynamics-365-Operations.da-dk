@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-overview"></a>Budgetplanlægningsoversigt
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og konfigurere budgetplanlægningsprocesser.
 
 <a name="overview-of-budget-planning"></a>Oversigt over budgetplanlægning
@@ -34,7 +37,7 @@ I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan
 
 Du udfører budgetplanlægning, når du forberede budgetterne, som en organisation skal implementere. En organisation kan konfigurere budgetplanlægning og derefter oprette budgetplanlægningsprocesser for at opfylde sine politikker, procedurer og krav til budgetudarbejdelse. 
 
-Når du forstår de begreber og terminologi, der bruges i Microsoft Dynamics 365 for operationer, vil det være lettere at implementere budgetplanlægning i organisationen.
+Når du forstår de begreber og terminologi, der bruges i Microsoft Dynamics 365 for Operations, bliver det nemmere at implementere budgetplanlægning i organisationen.
 
 ### <a name="key-terms"></a>Vigtige termer
 
@@ -44,7 +47,7 @@ Når du forstår de begreber og terminologi, der bruges i Microsoft Dynamics 365
 -   **Budgetplanlægningsstadier** – Budgetplanlægningsfaser definerer de trin, som en budgetplan følger fra start til endelig godkendelse. Budgetplanlægningsstadier er arrangeret i arbejdsgange i budgetplanlægningen.
 -   **Budgetplanlægningsarbejdsgange** – Budgetplanlægningsarbejdsgange består af og definere stadier i budgetplanlægningen. Arbejdsgange i budgetplanlægningen er knyttet til arbejdsgange i budgettering. Arbejdsgange i budgetteringen er automatiserede og manuelle processer, der flytter budgetplaner gennem budgetplanlægningsstadier.
 
-[![Budget planlægning terminologi](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budgetplanlægningsterminologi](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="common-tasks"></a>Almindelige opgaver
 
@@ -55,7 +58,7 @@ Du kan bruge budgetplanlægning til at udføre følgende opgaver:
 -   Send automatisk budgetplanerne sammen med regneark, berettigelsesdokumenter og andre vedhæftede filer til gennemsyn og godkendelse.
 -   Konsolider flere budgetplaner fra et lavere niveau af organisationen i én overordnet budgetplan på et højere niveau i organisationen. Du kan også udarbejde én budgetplan på et højere niveau i organisationen, og allokere budgetestimaterne til lavere niveauer i organisationen.
 
-Budgetplanlægning er integreret med andre Microsoft Dynamics 365 for operationer moduler. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Da budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
+Budgetplanlægning er integreret med andre moduler i Microsoft Dynamics 365 for Operations. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Da budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
 
 ## <a name="configuring-budget-planning"></a>Konfigurere budgetplanlægning
 Siden **Budgetplanlægningskonfiguration** indeholder de fleste af de indstillinger, du har brug for at konfigurere budgetplanlægning. I følgende afsnit beskrives nogle vigtige faktorer, der skal overvejes, når du konfigurerer budgetplanlægning. Når du har fuldført konfigurationen, skal du konfigurere budgetplanlægningsprocesser.
@@ -64,11 +67,11 @@ Siden **Budgetplanlægningskonfiguration** indeholder de fleste af de indstillin
 
 Et valgfrit, men anbefalet første trin er at oprette et skema, der viser din organisations procedure til udarbejdelse af et budget. Du kan bruge en hvilken som helst metode, du vil, til at oprette dette skema. Følgende illustration viser et generisk eksempel, hvor der oprettes separate arbejdsgange i budgetplanlægningen til forskellige niveauer af organisationen. Stadier er defineret i hver arbejdsproces, og bestemte scenarier er tildelt til hvert stadie til at indeholde budgetdata. Opgaver udføres for at flytte data fra ét stadie til det næste. Beløb kan f.eks. tildeles eller samles til forskellige konti, godkendelser eller andre undersøgelser. I dette eksempel angiver kursiveret tekst et scenarie, der ikke kan redigeres i løbet af stadiet, eller data, der er historiske eller er blevet godkendt i et tidligere stadie og derfor ikke bør ændres. 
 
-[![Budget planlægning generiske skema](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Generisk skema for budgetplanlægning](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-I følgende eksempel på hovedkvarteret beregner et skøn over de indledende oprindelige budgetbeløb og distribuerer dem til salgsafdelingerne. Salgsafdelingerne beregner og sender derefter deres budget tilbage til hovedkontoret, hvor budgetadministratoren samler og justerer budgettet. Endelig sender budgetadministratoren regulerede budgetbeløb til regnskabsdirektøren til gennemsyn, endelige justeringer og godkendelse. 
+I det følgende eksempel beregner virksomhedens hovedkvarter startbudgettets oprindelige beløb og distribuerer dem til salgsafdelingerne. Salgsafdelingerne beregner og sender derefter deres budget tilbage til hovedkontoret, hvor budgetadministratoren samler og justerer budgettet. Endelig sender budgetadministratoren regulerede budgetbeløb til regnskabsdirektøren til gennemsyn, endelige justeringer og godkendelse. 
 
-[![Budget planlægning skema-eksempel](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Eksempel på skema til budgetplanlægning](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ###  <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarkiet til budgetplanlægning
 
@@ -84,17 +87,17 @@ Budgetplanlægning kan følge en af de to sikkerhedsmodeller for at definere bru
 
 Arbejdsgange i budgetplanlægning bruges sammen med budgetteringsarbejdsgange til at styre oprettelse og udvikling af budgetplaner.
 
-Arbejdsgangen for en budgetplanlægning består af et bestemt sæt stadier, som en budgetplan bevæger sig igennem. Hver arbejdsgang i budgetplanlægningen er knyttet til en budgetteringsarbejdsgang. Arbejdsgange i Budgettering er en af de typer arbejdsgange, der bruges i Microsoft Dynamics 365 for operationer. Budgetteringsarbejdsgangen dirigerer budgetplanerne sammen med regneark, berettigelser og vedhæftede filer gennem organisationen til gennemgang og godkendelse. 
+Arbejdsgangen for en budgetplanlægning består af et bestemt sæt stadier, som en budgetplan bevæger sig igennem. Hver arbejdsgang i budgetplanlægningen er knyttet til en budgetteringsarbejdsgang. Budgetteringsarbejdsgange er en af de typer arbejdsgange, der bruges i hele Microsoft Dynamics 365 for Operations. Budgetteringsarbejdsgangen dirigerer budgetplanerne sammen med regneark, berettigelser og vedhæftede filer gennem organisationen til gennemgang og godkendelse. 
 
 Du opretter budgetplanlægningens arbejdsgang i sektionen **Arbejdsgangsstadier** på siden **Budgetplanlægningskonfiguration**. Der kan du vælge de stadier og den budgetteringsarbejdsgang, der skal bruges, og også konfigurere yderligere indstillinger. 
 
 Det er en god idé at oprette en budgetplanlægningsarbejdsgang for hvert niveau i et budgetteringshierarki. Derefter kan du tildele en budgetteringsarbejdsgang, der indeholder elementer, som svarer til stadierne i arbejdsgangen i budgetplanlægningen. I eksemplet på skemaet, der blev vist tidligere i denne artikel, ville der blive oprettet én arbejdsgang i budgetplanlægningen for salgsafdelingerne og en anden ville være oprettet for hovedkontoret. En arbejdsgang i budgettering flytter budgetplaner gennem stadierne. 
 
-Du opretter en arbejdsgang i Budgettering for budgetplanlægning på siden **Arbejdsgange i Budgettering**. Processen, der ligner processen til oprettelse af andre arbejdsprocesser i Microsoft Dynamics 365 for operationer. Følgende illustration viser et eksempel på en arbejdsgang i hovedkvarteret. 
+Du opretter en arbejdsgang i Budgettering for budgetplanlægning på siden **Arbejdsgange i Budgettering**. Fremgangsmåden minder om processen til oprettelse af andre arbejdsgange i Microsoft Dynamics 365 for Operations. Følgende illustration viser et eksempel på en arbejdsgang i hovedkvarteret. 
 
-[![Arbejdsgang til budgettering ifm.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budgetteringsarbejdsgang for budgetplanlægning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-Arbejdsgangen indeholder elementer for allokering til salgsafdelingerne og sammenlægning af deres henvendelser, gennemsyn af Budgetadministratoren, godkendelse af Økonomichefen og fase overgange mellem hvert trin. 
+Arbejdsgangen indeholder elementer til allokering til salgsafdelingerne og sammenlægning af deres afsendelser, gennemgang af budgetadministrator, godkendelse af regnskabsdirektøren og stadieovergange mellem hvert stadie. 
 
 Du tildeler budgetteringsarbejdsgangen til hver arbejdsgang i budgetplanlægningen i sektionen **Arbejdsgangsstadier** på siden **Budgetplanlægningskonfiguration**.
 
@@ -112,8 +115,8 @@ I budgetplanlægning kan du allokere beløb eller mængder på budgetplanlinjer 
 
 Fordelingsplaner fordeler automatisk budgetplanlinjer under behandling af arbejdsgangen. Du kan udføre fordelinger ved hjælp en af følgende fordelingsmetoder på listen **Fordelingsmetode**:
 
--   **Fordel hen over perioder** – Du bruger en periodefordelingsnøgle til at fordele budgetplanlinjer fra kildescenariets budgetplan hen over perioder i destinationsscenariet. **Bemærk:** før du kan fordele på tværs af perioder, skal du oprette periodefordelingsnøgler på den *** periodefordelingsnøgler kategorier *** side.
--   **Fordel på dimensioner** – Budgetplanlinjerne fordeles fra kildescenariet for budgetplanen på tværs af de økonomiske dimensioner i destinationsscenariet. **Bemærk:** før du kan fordele til dimensioner, skal du konfigurere fordelingsbetingelser for budget på den *** Budget tildeling vilkår *** side.
+-   **Fordel hen over perioder** – Du bruger en periodefordelingsnøgle til at fordele budgetplanlinjer fra kildescenariets budgetplan hen over perioder i destinationsscenariet. **Bemærk!** Før du kan fordele på tværs af perioder, skal du oprette periodefordelingsnøgler på siden ****Periodefordelingskategorier****.
+-   **Fordel på dimensioner** – Budgetplanlinjerne fordeles fra kildescenariet for budgetplanen på tværs af de økonomiske dimensioner i destinationsscenariet. **Bemærk!** Før du kan fordele til dimensioner, skal du konfigurere budgetfordelingsbetingelser på siden ****Budgetfordelingsbetingelser****.
 -   **Aggreger** – Budgetplanlinjer aggregeres fra kildescenariets budgetplan i de tilknyttede budgetplaner til destinationsscenariet i den overordnede budgetplan.
 -   **Fordel** – Budgetplanlinjer distribueres fra kildescenariets budgetplan i den overordnede budgetplan for destinationsscenariet i de tilknyttede budgetplaner.
 -   **Brug finansfordelingsregler** – Budgetplanlinjerne fordeles fra kildescenariets budgetplanlæg til destinationsscenariet på basis af den valgte finansfordelingsregel.
@@ -123,15 +126,15 @@ Fordelingsplaner fordeler automatisk budgetplanlinjer under behandling af arbejd
 
 Stadiefordelinger bruges til automatisk at fordele budgetplanlinjer under behandling af arbejdsgangen. Når der bruges stadiefordelinger, kan budgetplanlinjer oprettes og ændres i destinationsscenariet uden indgriben fra klargøreren af budgetplanen eller revieweren.
 
-Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet i budgetplanlægningen til fordelingstidsplanen. Budgetplanlægningsarbejdsgangen skal være knyttet til en arbejdsgang i budgettering, der bruger den *** budgetplanlægning fase fordeling *** automatiseret arbejdsprocesopgave. Når arbejdsgangen når det angivne stadie, sker fordelingen automatisk. Denne automatiserede opgave kan bruges til at oprette budgetplanlinjer i et nyt scenario. 
+Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet i budgetplanlægningen til fordelingstidsplanen. Arbejdsgangen i budgetplanlægningen skal være tilknyttet en arbejdsgang i Budgettering, der bruger ****Trinfordeling for budgetplanlægning**** automatiseret arbejdsgangsopgave. Når arbejdsgangen når det angivne stadie, sker fordelingen automatisk. Denne automatiserede opgave kan bruges til at oprette budgetplanlinjer i et nyt scenario. 
 
 I eksempelskemaet, der vises tidligere i denne artikel, foretages en fordeling for at overføre beløb fra en budgetplan og scenarier i hovedkvarterets oprindelige stadie til en anden budgetplan og scenarier i salgsafdelingens estimatstadie. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 
-[![Fordeling](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Stadiefordeling](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
-Desuden i skemaet eksempel sker en sammenlægning fra budgetplaner og scenarier i salgsafdelingen fase sendt til en overordnet plan i fasen HQ opdateringspakke. Følgende illustration viser det relevante afsnit i eksempelskemaet.
+Desuden udføres en aggregering i eksempelskemaet fra budgetplaner og scenarier i salgsafdelingens stadie Sendt til en overordnet plan i stadiet med hovedkvarterets aggregering. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Aggregering](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioriteter
 
@@ -149,9 +152,9 @@ Ud over kolonner til budgetbeløb kan du definere kolonner til projektet, foresl
 
 Til eksempelskemaet kan du oprette kolonner til PY-salg, kontrakter og prognosescenarier (i følgende illustration vises det relevante afsnit i skemaet). Du kan derefter opbryde en eller flere af disse scenarier i separate kolonner for hvert kvartal af regnskabsåret, så lederen af salgsafdelingen præcist kan angive budgetterede beløb for hver periode.
 
-[![Columns](./media/columns.png)](./media/columns.png) 
+[![Kolonner](./media/columns.png)](./media/columns.png) 
 
-Du kan også angive om hvert element med layout (kolonne) kan redigeres, og om den er tilgængelig i en regnearksskabelon, der er oprettet for dette layout. Til eksempelskemaet kan budgetkolonner redigeres i det layout, der bruges til stadiet Estimat, hvorimod kolonnerne PY-salg og kontrakter er skrivebeskyttet.
+Du kan også angive, om hvert layoutelement (kolonne) kan redigeres, og om det er tilgængeligt i en regnearksskabelon, der er oprettet for dette layout. Til eksempelskemaet kan budgetkolonner redigeres i det layout, der bruges til stadiet Estimat, hvorimod kolonnerne PY-salg og kontrakter er skrivebeskyttet.
 
 ### <a name="templates"></a>Skabeloner
 
@@ -160,7 +163,7 @@ I sektionen **Layout** på siden **Budgetplanlægningskonfiguration** kan du ogs
 Du kan oprette, få vist eller sende en skabelon til hvert layout. Når der oprettes en skabelon, er layoutet låst og kan ikke redigeres. Denne låsning hjælper med at sikre, at skabelonformatet svarer stil layoutet for budgetplanen og indeholder de samme data. Når der oprettes en skabelon, kan den vises og redigeres. Du kan for eksempel føje diagrammer til skabelonen eller tilpasse udseendet.
 
 > [!NOTE] 
-> Skabelonen skal gemmes på en placering, som brugeren har adgang til, så de kan overføres til layoutet, efter redigering er fuldført. På den måde bruges skabelonen sammen med budgetplaner, der bruger layoutet.
+> Skabelonen skal gemmes på en placering, som brugeren har adgang til, så de kan overføres til layoutet, efter at redigering er fuldført. På den måde bruges skabelonen sammen med budgetplaner, der bruger layoutet.
 
 ### <a name="descriptions"></a>Beskrivelser
 
@@ -184,6 +187,8 @@ I menuen **Handlinger** kan du også oprette en ny proces ved at kopiere en eksi
 
 En anden nyttig kommando i menuen **Handlinger** er **Vis budgetprocesstatus**. Denne kommando viser grafisk budgetplanerne i en proces sammen med relevante data, f.eks. planernes arbejdsgangsstatus, oversigt efter beløb og efter enhed og navigation med et enkelt klik til selve budgetplanerne.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Status for budgetplanlægningsproces](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
 
 

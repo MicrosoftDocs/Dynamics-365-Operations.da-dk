@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Politikker for frynsegodeberettigelse
 
-Dette emne indeholder oplysninger om gode politikker for støtteberettigelse, som hjælper du definere, hvem der er berettiget til særlige frynsegoder.
+[!include[banner](includes/banner.md)]
+
+
+Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.
 
 Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige for hvilke medarbejdere. I følgende tabel vises eksempler på fordele, som du kan gøre tilgængelige for bestemte medarbejdere.
 
@@ -38,7 +41,7 @@ Når du opretter fordele, kan du beslutte, hvilke fordele der er tilgængelige f
 | Mobiltelefon     | Salgsmedarbejdere, ledere         |
 | Parkeringskort   | Ledere                      |
 
-Følgende komponenter i bruges til at oprette politikker for støtteberettigelse:
+Følgende komponenter bruges til at oprette politikker for frynsegodeberettigelse:
 
 -   Typer politikregler
 -   Politikker for frynsegodeberettigelse
@@ -51,5 +54,7 @@ Du kan definere omfanget af reglen i politikken. For eksempel, hvis du opretter 
 --------
 
 [Definition og administration af et frynsegodeprogram](manage-benefit-program.md)
+
+
 
 

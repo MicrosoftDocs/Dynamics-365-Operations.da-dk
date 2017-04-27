@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Afskrivning af anlægsaktiv
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivning af anlægsaktiver.
 
 Afskrivning er en periodisk transaktion, der normalt reducerer anlægsaktivets værdi i balancen og faktureres som en udgift på driftskontoen (resultatopgørelsen). Derfor bruges en hovedkonto normalt til kreditering af den periodiske afskrivning i balancen. En modkonto er en konto på driftskontodelen af kontoplanen.
@@ -51,6 +54,8 @@ Hver bog har en kalender, der bruges ved afskrivning af anlægsaktiver. Hvis du 
 
 Du kan oprette delte kalendere ved hjælp af siden **Regnskabskalendere** i Finans.
 
-Yderligere oplysninger finder du [afskrivningsmetoder og -principper](depreciation-methods-conventions.md).
+Du kan finde flere oplysninger under [Afskrivningsmetoder og -principper](depreciation-methods-conventions.md).
+
+
 
 

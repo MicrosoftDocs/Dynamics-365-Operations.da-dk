@@ -1,6 +1,6 @@
 ---
 title: Startside for organisationsadministration
-description: "Dette emne peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 til handlinger i din organisation."
+description: "Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Operations i din organisation."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,56 +26,61 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organization-administration-home-page"></a>Startside for organisationsadministration
 
-Dette emne peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 til handlinger i din organisation.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Operations i din organisation.
 
 <a name="number-sequences"></a>Nummerserier
 ----------------
 
--   [Number sequence overview](number-sequence-overview.md)
--   [Definer nummerserier ved hjælp af en guide](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (opgave guide)
--   [Definer nummerserier på individuel basis](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (opgave guide)
+-   [Oversigt over nummerserier](number-sequence-overview.md)
+-   [Opret nummerserier vha. en guide](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (opgaveguide)
+-   [Opret nummerserier på individuel basis](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (opgaveguide)
 
 ## <a name="address-books"></a>Adressekartoteker
--   [Address books](qa-address-books.md)
--   [Oversigt: Globale adressekartotek](overview-global-address-book.md)
--   [Planlægning af konfigurationen af det globale adressekartotek og ekstra adressekartotek](plan-configuration-global-address-book-additional-address-books.md)
+-   [Adressekartoteker](qa-address-books.md)
+-   [Oversigt: globalt adressekartotek](overview-global-address-book.md)
+-   [Planlægning af konfigurationen af det globale adressekartotek og et yderligere adressekartotek](plan-configuration-global-address-book-additional-address-books.md)
 
 ## <a name="workflow"></a>Arbejdsgang
--   [Overview of the workflow system](overview-workflow-system.md)
--   [Workflow system architecture](workflow-system-architecture.md)
--   [Workflow elements](workflow-elements.md)
--   [Workflow actions](workflow-actions.md)
--   [Create a workflow](create-workflow.md)
--   [Configure the properties of a workflow](configure-workflow-properties.md)
--   [Configure a manual task](configure-manual-task-workflow.md)
--   [Configure an automated task](configure-automated-task-workflow.md)
--   [Configure an approval process](configure-approval-process-workflow.md)
+-   [Oversigt over arbejdsgangssystemet](overview-workflow-system.md)
+-   [Arkitektur for arbejdsgangssystem](workflow-system-architecture.md)
+-   [Arbejdsgangselementer](workflow-elements.md)
+-   [Arbejdsgangshandlinger](workflow-actions.md)
+-   [Opret en arbejdsgang](create-workflow.md)
+-   [Konfigurer egenskaberne for en arbejdsgang](configure-workflow-properties.md)
+-   [Konfigurer en manuel opgave](configure-manual-task-workflow.md)
+-   [Konfigurer en automatiseret opgave](configure-automated-task-workflow.md)
+-   [Konfigurer en godkendelsesproces](configure-approval-process-workflow.md)
 -   [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md)
 -   [Konfigurere en manuel beslutning](configure-manual-decision-workflow.md)
 -   [Konfigurere en betinget beslutning](configure-conditional-decision-workflow.md)
 -   [Konfigurere en parallel aktivitet](configure-parallel-activity-workflow.md)
--   [Configure a parallel branch](configure-parallel-branch-workflow.md)
--   [Konfigurere et element i en arbejdsgang for-](configure-line-item-workflow.md)
+-   [Konfigurer en parallel gren](configure-parallel-branch-workflow.md)
+-   [Konfigurer et element i en arbejdsgang for linjeelementer](configure-line-item-workflow.md)
 
 ## <a name="case-management"></a>Sagsstyring
--   [Planlægning: Sagsopsætning](plan-case-management.md)
--   [Sagsstyring eksempler](cases.md)
+-   [Planlægning: sagsopsætning](plan-case-management.md)
+-   [Eksempler på sagsstyring](cases.md)
 
 ## <a name="electronic-signatures"></a>Elektroniske signaturer
--   [Electronic signature overview](electronic-signature-overview.md)
--   [Opsætning af elektroniske signaturer](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (opgave guide)
+-   [Oversigt over elektroniske signaturer](electronic-signature-overview.md)
+-   [Konfigurer elektroniske signaturer](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (opgaveguide)
 
 ## <a name="organizations"></a>Organisationer
--   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
--   [Plan the organizational hierarchy](plan-organizational-hierarchy.md)
--   [Oprette en driftsenhed](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (opgave guide)
--   [Opret et organisationshierarki](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (opgave guide)
--   [Oprette en juridisk enhed](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (opgave guide)
+-   [Organisationer og organisationshierarkier](organizations-organizational-hierarchies.md)
+-   [Planlæg organisationshierarkiet](plan-organizational-hierarchy.md)
+-   [Opret en driftsenhed](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (opgaveguide)
+-   [Opret et organisationshierarki](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (opgaveguide)
+-   [Opret en juridisk enhed](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (opgaveguide)
 
 ## <a name="general-administration"></a>Generel administration
--   [Ændre banner eller logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (opgave guide)
--   [About date/time data and time zones](date-time-zones.md)
--   [Record templates](record-templates.md)
+-   [Rediger banneret eller logoet](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (opgaveguide)
+-   [Om dato/tidsdata og tidzoner](date-time-zones.md)
+-   [Postskabeloner](record-templates.md)
+
+
 
 
 

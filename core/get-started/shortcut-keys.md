@@ -1,6 +1,6 @@
 ---
 title: Tastaturgenveje
-description: "Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for operationer."
+description: "Følgende tastaturgenveje kan anvendes overalt i Microsoft Dynamics 365 for Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
-Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for operationer. 
+[!include[banner](../includes/banner.md)]
+
+
+Følgende tastaturgenveje kan anvendes overalt i Microsoft Dynamics 365 for Operations. 
 
 **Bemærk!** De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
@@ -40,7 +43,7 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Flytte til næste/forrige punkt i en menu            | Pil ned/pil op            |
 | Lukke en fane i handlingsruden eller en menu          | Esc                              |
 | Simulere højreklik                            | Skift+F10                        |
-| Åbn den Dynamics 365 for operationer genvejsmenuen | Ctrl+F10                         |
+| Åbn genvejsmenuen i Dynamics 365 for Operations | Ctrl+F10                         |
 | Køre standardknappen i en form/dialogboks       | Alt+Enter                        |
 | Klikke på en knap eller et felt                            | Enter eller mellemrum                   |
 | Vise opdaterede oplysninger for et antalsfelt         | Alt+pil op                     |
@@ -64,7 +67,7 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Åbne faktaboksruden (eller flytte fokus til faktaboksruden, hvis den allerede er åben) | Ctrl+F2                                   |
 | Lukke faktaboksruden (med fokus i faktaboksruden)                         | Esc                                       |
 | Flytte til næste/forrige faktaboks (med fokus i faktaboksruden)              | Alt+Skift+pil ned/ Alt+Skift+pil op |
-| Flytte til den &lt;n&gt;te faktaboks (med fokus i faktaboksruden)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flyt til &lt;n&gt;. faktaboks (med fokus i faktaboksruden)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Udvide en faktaboks (med fokus på overskriften i faktaboksen)                             | Mellemrum eller Enter                            |
 | Skjule den aktuelle faktaboks                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Flytte til næste/forrige felt                     | Tabulator/Skift+tabulator                              |
 | Flytte til næste/forrige tabulator                       | Alt+Skift+højre pil/Alt+Skift+venstre pil |
 | Flytte til næste/forrige oversigtspanel                   | Alt+Skift+pil ned/ Alt+Skift+pil op    |
-| Flytte til den &lt;n&gt;te oversigtspanelet                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flytte til den &lt;n&gt;te tab                         | Alt + Skift +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flyt til &lt;n&gt;. oversigtspanel                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flyt til &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Udvide et oversigtspanel (med fokus på overskriften i oversigtspanelet) | Mellemrum eller Enter                               |
 | Skjule det aktuelle oversigtspanel                        | Alt+0                                        |
 | Skifte til gittervisning                                 | Ctrl+Skift+G                                 |
@@ -152,7 +155,7 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Åbne opslag, kombinationsboks, datovælger, dialogboks           | Alt+pil ned                |
 | Lukke opslag, kombinationsboks, datovælger, dialogboks          | Esc                           |
 | Flytte fokus til et opslag (når opslaget er allerede åbnet) | Alt+pil ned                |
-| Åbne kontrolelementets udvidet forhåndsvisning                        | Alt+pil op                  |
+| Åbn kontrolelementets udvidede forhåndsvisning                        | Alt+pil op                  |
 | Markere tekst i det aktuelle felt                           | Ctrl+A                        |
 | Åbne/forlade tekstområdet i et HTML-editorobjekt.        | Alt+pil ned/Alt+pil op |
 
@@ -174,18 +177,18 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Gå til dashboard                                                       | Alt+Skift+Home  |
 | Gå til navigationslinjen                                                  | Alt+Skift+F1    |
 | Gå til navigationsruden                                                 | Alt+F1          |
-| Foretrukne/un-favorite en formular (med fokus på en formular i navigationsruden) | Skift + F         |
+| Markér en formular som favorit/ikke-favorit (med fokus på en formular i navigationsruden) | Skift+F         |
 | Gå til firmavælger                                                  | Ctrl+Skift+O    |
 | Gå til navigationssøgning                                                   | Ctrl+/ eller Alt+G |
-| Åbn Hjælp-ruden                                                        | CTRL +?          |
-| Åbn trace parser                                                     | Alt + Skift + T     |
+| Åbn Hjælp-vinduet                                                        | Ctrl+?          |
+| Åbn sporingsparseren                                                     | Alt+Shift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Genveje til segmenterede poster
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **For at gøre det**                                                                                                          | **Tryk på**                        |
 | Åbne rullelisten (når rullelisten er lukket)                                                             | Alt+pil ned                   |
 | Flytte fokus til inputfeltet for det aktuelle segment på rullelisten (når rullelisten allerede er åben) | Alt+pil ned                   |
 | Lukke på rullelisten                                                                                                | Alt+pil op                     |
@@ -199,5 +202,7 @@ Der gælder følgende tastaturgenveje på tværs af Microsoft Dynamics 365 for o
 | Flytte til toppen/bunden af opslaget                                                                                    | Home/End                       |
 
  
+
+
 
 

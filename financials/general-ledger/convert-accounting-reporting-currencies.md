@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Omregne regnskabs- eller rapporteringsvalutaer
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Et firma, der skal ændre sin regnskabsvaluta eller rapporteringsvaluta, har to muligheder. Den første mulighed er at oprette en ny virksomhed og starte forfra. Den anden mulighed er at køre processen til omregning af regnskabs- og rapporteringvaluta. Dette er en meget langvarig proces, der ændrer alle transaktioner i systemet. Før du kan køre processen, kræves der yderligere konfiguration.
@@ -72,6 +75,8 @@ Efter valutaomregningen skal du generere alle afstemningsrapporter igen for at s
 -   Hvis omregning af finansregnskabsvalutaen medfører afrundingsdifferencer, bogføres disse differencer ikke ved hjælp af det bilag, hvor afrundingsdifferencen er opstået. Differencer bogføres i stedet ved hjælp af det registrerede bilag for omregningsposteringer. Efter omregningen inkluderer alle rapporter, der kontrollerer bilag og dato, derfor disse afrundingsdifferencer. Denne funktionsmåde er korrekt og kan ignoreres.
 -   Hvis debitor- og kreditorafstemningsrapporterne viser et differencebeløb på totallinjen, og der ikke var et differencebeløb før omregningen, skal dette differencebeløb bogføres. Kontoen er samlekontoen for debitorer og kreditorer. Modkontoen er finanskontoen for omregningsunderskud eller omregningsoverskud.
 
-Når alle finansposteringskladder er slettet, kan du journalisere finansposteringerne. Klik på **Finans**&gt;**periodisk**&gt;**kladder**&gt;**Journalbogføring**. Du kan værdiregulere beløb i udenlandsk valuta efter valutaomregningen, hvis værdireguleringen er påkrævet. Du kan værdiregulere beløb i udenlandsk valuta ved at vælge **Standard** i feltet **Metode** for værdireguleringen.
+Når alle finansposteringskladder er slettet, kan du journalisere finansposteringerne. Klik på **Finans** &gt; **Periodisk** &gt; **Kladder** &gt; **Journalisering**. Du kan værdiregulere beløb i udenlandsk valuta efter valutaomregningen, hvis værdireguleringen er påkrævet. Du kan værdiregulere beløb i udenlandsk valuta ved at vælge **Standard** i feltet **Metode** for værdireguleringen.
+
+
 
 

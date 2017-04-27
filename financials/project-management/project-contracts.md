@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Projektkontrakter
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Operations.
 
 Den type projekt, du opretter til en projektkontrakt, afgør, hvilken metode der bruges til fakturering af projektdebitorere. Du kan ændre en projektkontrakt og det relaterede projekt, men du kan ikke ændre projekttypen. 
@@ -80,7 +83,7 @@ Følgende tabel indeholder scenarier til administration af finansieringsfordelin
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Scenarie</strong></td>
 <td><strong>Finansieringskilde </strong></td>
 <td><strong>Fordelingsprocent </strong></td>
 <td><strong>Fordelingsprioritet </strong></td>
@@ -192,7 +195,7 @@ I følgende tabel undersøges dette scenario yderligere.
 <tbody>
 <tr class="odd">
 <td><strong>Fokusering </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Detaljer</strong></td>
 </tr>
 <tr class="even">
 <td>Finansieringsregler</td>
@@ -220,17 +223,17 @@ I følgende tabel undersøges dette scenario yderligere.
 </tr>
 <tr class="odd">
 <td>Postering 2</td>
-<td><strong>Posteringens beløb:</strong> 5,000.00<strong>Funding:</strong> posteringen betales efter alle tre regler. <strong>Regel 1</strong><ph id="t1">
-</ph><ul>
+<td><strong>Transaktionsbeløb:</strong> 5.000,00<strong>Finansiering:</strong> Transaktionen betales i henhold til alle tre regler.<strong>Regel 1</strong>
+<ul>
 <li>Finansieringskilde 2: 450.00</li>
 <li>Finansieringskilde 3: 450.00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Regel 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Regel 2</strong>
+<ul>
 <li>Finansieringskilde 3: 250,00 (= 750,00 – 50,00 – 450,00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Regel 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Regel 3</strong>
+<ul>
 <li>Finansieringskilde 1: 3.850,00 (= 5.000,00 – 450,00 – 450,00 – 250,00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ Når du konfigurerer projektkontrakten, accepterer du at fakturere kunden hver m
 -   Du opretter en debitorfaktura ved udgangen af hver kalendermåned under projektperioden.
 
 I løbet af den første måned registrerer konsulenterne 800 timer i alt på projektet. Udgifterne for kontorartikler i forbindelse med projektet er 20.000 kr. I slutningen af måneden skal du derfor oprette en faktura på 1.220.000, som beregnes som 800 timer ved 1500 i timen plus 20.000 til kontorartikler.
+
+
 
 

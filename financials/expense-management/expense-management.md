@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Udgiftsstyring
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planlægning af udgiftsstyring](plan-expense-management.md) Yderligere oplysninger vil blive tilføjet senere. Prøv igen senere.
+
+
 
 

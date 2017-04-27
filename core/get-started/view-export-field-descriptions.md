@@ -36,9 +36,9 @@ Ikke alle sider har feltbeskrivelser. Vi vil kun levere beskrivelser for de mest
 Hvis du har adgang til Dynamics 365 for Operations-udviklingsmiljøet, kan du tilføje nye feltbeskrivelser og tilpasse eksisterende beskrivelser. For eksempel kan du føje virksomhedsspecifikke oplysninger til en feltbeskrivelse. Du kan finde flere oplysninger under [Tilpasse hjælp til felter](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se feltbeskrivelser i brugergrænsefladen
-Du kan se feltbeskrivelser ved at holde musen over et felt. Hvis ingen beskrivelse er tilgængelig, kan du se navnet på feltet, når du peger på feltet. (Bemærk: version 7.0.0 feltbeskrivelser kan vises kun på de **i feltet Beskrivelse** side.) I følgende illustration vises feltet Beskrivelse, der vises, når du peger på den **Lås varer under optælling** felt. 
+Du kan se feltbeskrivelser ved at holde musen over et felt. Hvis ingen beskrivelse er tilgængelig, kan du se navnet på feltet, når du peger på feltet. (Bemærk: version 7.0.0 kan feltbeskrivelser kun vises på siden **Beskrivelse af felter**). I nedenstående illustration vises den feltbeskrivelse, der vises, når du placerer markøren over feltet **Lås varer under optælling**. 
 
-[![Eksempel på et felt beskrivelse](./media/field-description.png)](./media/field-description.png)
+[![Eksempel på feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruge siden Feltbeskrivelser til at få vist og eksportere hjælp
 På siden **Feltbeskrivelser** kan du få vist og eksportere feltbeskrivelser. Du kan se de tilgængelige beskrivelser én side ad gangen.
@@ -73,7 +73,7 @@ Der er flere måder at søge efter en side i feltet **Vælg en side**. Ofte skal
     -   Hvis der er mere end ét nøjagtigt match, vises der ingen beskrivelser. Du skal åbne rullelisten og vælge den ønskede side.
     -   Hvis det navn, du har skrevet, er en del af navnet på en anden side, kan du se beskrivelserne for din side. Men hvis du åbner rullelisten, ser du flere sider, der indeholder navnet.
 
-For eksempel ingen beskrivelser vises, når du skriver **optælling** i den *** Vælg side *** felt. Du åbner rullelisten og ser, at der både er to sider, der har navnet **Optælling**, og flere andre sider med ordet "Optælling" i navnet. Hvis du vælger den side, der har AOT-navnet **InventJournalCount**, vises feltbeskrivelserne til denne side. Hvis du åbner rullelisten igen, kan du nu se, at listen indeholder alle de sider, der har "InventJournalCount" nu som en del af deres AOT-navn.
+Der vises f.eks. ingen beskrivelser, når du skriver **Optælling** i feltet ****Vælg en side****. Du åbner rullelisten og ser, at der både er to sider, der har navnet **Optælling**, og flere andre sider med ordet "Optælling" i navnet. Hvis du vælger den side, der har AOT-navnet **InventJournalCount**, vises feltbeskrivelserne til denne side. Hvis du åbner rullelisten igen, kan du nu se, at listen indeholder alle de sider, der har "InventJournalCount" nu som en del af deres AOT-navn.
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Dette afsnit indeholder oplysninger, der kan hjælpe dig med at foretage fejlfinding af problemer, der evt. kan opstå, når du bruger feltbeskrivelser.

@@ -1,6 +1,6 @@
 ---
-title: "Efterspørgsel, prognoser oversigt"
-description: "Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. Den forbedrede Efterspørgselsprognosebehov reduktion regler er den ideelle løsning til masse tilpasning."
+title: Oversigt over behovsprognose
+description: "Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="demand-forecasting-overview"></a>Efterspørgsel, prognoser oversigt
+# <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
-Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. Den forbedrede Efterspørgselsprognosebehov reduktion regler er den ideelle løsning til masse tilpasning.
+[!include[banner](../includes/banner.md)]
 
-For at generere prognosegrundlaget overføres en oversigt over historiske transaktioner til en Microsoft Azure Machine Learning-tjeneste, der er placeret på Azure. Da denne tjeneste ikke er delt mellem brugere, kan den nemt tilpasses til branchespecifikke behov. Du kan bruge Dynamics 365 for operationer til at visualisere budgettet, justere budgettet og få vist nøgletal (KPI'er) om budgetterede nøjagtighed.
+
+Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning.
+
+For at generere prognosegrundlaget overføres en oversigt over historiske transaktioner til en Microsoft Azure Machine Learning-tjeneste, der er placeret på Azure. Da denne tjeneste ikke er delt mellem brugere, kan den nemt tilpasses til branchespecifikke behov. Du kan bruge Dynamics 365 for Operations til at visualisere prognosen, justere prognosen og få vist nøgletal (KPI'er) om prognosenøjagtigheden.
 
 ## <a name="key-features-of-demand-forecasting"></a>Nøglefunktioner i behovsprognoser
 Her er nogle af de vigtigste funktioner i behovsprognoser:
@@ -45,43 +48,45 @@ Her er nogle af de vigtigste funktioner i behovsprognoser:
 ## <a name="major-themes-in-demand-forecasting"></a>Overordnede temaer i behovsprognoser
 Tre overordnede temaer er implementeret i behovsprognoser:
 
--   **Modularitet** – behovsprognoser er modulære og lette at konfigurere. Du kan slå funktionen til og fra ved at ændre configuration key til **handel**&gt;**lagerbudgettet**&gt;**efterspørgsel prognoser**.
--   **Genbrug af stakken Microsoft** – Microsoft lanceret Machine Learning platform i februar 2015. Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt oprette fremtidsanalyser forsøg, som efterspørgsel skøn eksperimenter ved hjælp af algoritmer R eller Python programmeringssprog og en enkel træk-og-slip grænseflade.
-    -   Du kan hente den Dynamics 365 for operationer efterspørgsel, prognoser forsøg, ændre dem for at opfylde virksomhedens behov, udgive dem som en webtjeneste på Azure og bruge dem til at generere efterspørgselsprognoser. Forsøg kan downloades, hvis du har købt en Dynamics 365 operationer abonnement til en produktionsplanlægger som enterprise-niveau bruger.
-    -   Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Der er automatisk integreret Dynamics-365 for operationer efterspørgsel, prognoser Eksperimenter med Dynamics 365 for operationer, kunder og partnere skal håndtere integrationen af forsøg, de henter fra den [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Derfor forsøg fra den [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/) ikke er så ligetil bruges som Dynamics-365 for operationer efterspørgsel, prognoser forsøg. Du skal ændre koden for forsøg, så de bruger Dynamics-365 for operationer programmeringsgrænseflade (API).
+-   **Modularitet** – behovsprognoser er modulære og lette at konfigurere. Du kan slå funktionen til og fra ved at ændre konfigurationsnøglen under **Handel** &gt; **Lagerbudget** &gt; **Behovsprognoser**.
+-   **Genbrug af Microsoft-stakken** – Microsoft lancerede Machine Learning platformen i februar 2015. Med Machine Learning, som nu er en del af Microsoft Cortana Analytics Suite, kan du hurtigt og nemt lave forsøg med fremtidsanalyser, f.eks. forsøg med behovsestimeringer, ved at bruge algoritmerne R eller Python-programmeringssprogene og en enkel grænseflade med træk og slip.
+    -   Du kan hente forsøg med behovsprognoser i Dynamics 365 for Operations, ændre dem, så de svarer til dine forretningsmæssige behov, udgive dem som en webtjeneste på Azure og bruge dem til at generere behovsprognoser. Forsøgene kan downloades, hvis du har købt et abonnement på Dynamics 365 for Operations til en produktionsplanlægger som bruger på enterprise-niveau.
+    -   Du kan hente alle aktuelt tilgængelige forsøg med fremtidsanalyse af behov fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Hvor forsøg med prognoser i Dynamics 365 for Operations automatisk er integreret i Dynamics 365 for Operations, skal kunder og partnere kunne håndtere integrationen af de forsøg, de henter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Forsøg fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) er derfor ikke ligetil at bruge som forsøg med behovsprognoser i Dynamics 365 for Operations. Du skal ændre koden for forsøg, så de bruger Dynamics 365 for Operations' API (application programming interface).
     -   Du kan oprette dine egne forsøg i Microsoft Azure Machine Learning Studio, udgive dem som tjenester på Azure og bruge dem til at generere behovsprognoser.
     -   Hvis du ikke har brug for høj ydeevne, eller hvis du ikke kræver, at en stor mængde data skal behandles, kan du bruge det gratis Machine Learning-niveau. Vi anbefaler, at du altid starter fra dette niveau, især under implementerings- og testfaserne. Hvis du kræver højere ydeevne og ekstra lagerplads, kan du bruge Machine Learning-standardniveauet. Dette niveau kræver et Azure-abonnement og indebærer ekstra omkostninger. Få oplysninger om priser på Machine Learning under <http://aka.ms/machine-learning-price-info>.
--   **Budgetteret reduktion når som helst decoupling** – efterspørgsel, prognoser i Dynamics 365 for builds af operationer på denne funktion, hvor du kan forudsige både afhængige og uafhængige behov når som helst decoupling.
+-   **Prognosereduktion ved ethvert afkoblingspunkt** – behovsprognoser i Dynamics 365 for Operations bygger på denne funktion, hvor du kan forudsige både afhængigt og uafhængigt behov ved et hvilket som helst afkoblingspunkt.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grundlæggende arbejdsgang ved behovsprognoser
 Det følgende diagram viser den grundlæggende arbejdsgang ved behovsprognoser. 
 
-[![efterspørgsel diagram for forudsigelse Introduktion](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![Introduktion til behovsprognoser](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Efterspørgselsprognosebehov generation starter i Dynamics 365 for operationer. Historiske transaktionsdata fra Dynamics-365 for operationer transaktionsdatabasen indsamles og udfylder en midlertidig tabel. Denne midlertidige tabel indføres senere en Machine Learning-tjeneste. Udfører minimal tilpasning, kan du slutte forskellige datakilder i den midlertidige tabel. Datakilder kan omfatte Microsoft Excel-filer, filer med kommaseparerede værdier (CSV) og data fra Microsoft Dynamics AX 2009 og Microsoft Dynamics AX 2012. Du kan derfor oprette efterspørgselsprognoser, anser historiske data, som er spredt mellem flere systemer. Masterdata som f.eks. varenavne og måleenhederne skal være de samme på tværs af de forskellige datakilder.
+Generering af behovsprognose starter i Dynamics 365 for Operations. Historiske transaktionsdata fra Dynamics 365 for Operations-transaktionsdatabasen indsamles og udfylder en midlertidig tabel. Denne midlertidige tabel indføres senere en Machine Learning-tjeneste. Ved at foretage minimal tilpasning kan du slutte forskellige datakilder i den midlertidige tabel. Datakilder kan omfatte Microsoft Excel-filer, filer med kommaseparerede værdier (CSV) og data fra Microsoft Dynamics AX 2009 og Microsoft Dynamics AX 2012. Du kan derfor generere behovsprognoser, der tager højde for historiske data, som er spredt mellem flere systemer. Masterdata som f.eks. varenavne og måleenhederne skal være de samme på tværs af de forskellige datakilder.
 
-Hvis du bruger Dynamics-365 for operationer efterspørgsel, prognoser Machine Learning forsøg, de ser ud til den bedste tilpasning mellem fem gang serie forudsigelse metoder til at beregne en oprindelig prognose. Parametre til metoderne forudsigelse administreres i Dynamics 365 for operationer. 
+Hvis du bruger forsøg med behovsprognoser i Dynamics 365 for Operations med Machine Learning, prøver de at finde det bedste match mellem fem tidsserieprognosemetoder for at beregne et prognosegrundlag. Parametre for disse prognosemetoder administreres i Dynamics 365 for Operations. 
 
-Budgetterne, historiske data og de ændringer, der er foretaget efterspørgselsprognoser i tidligere gentagelser er derefter tilgængelige i Dynamics 365 for operationer. 
+Prognoserne, de historiske data og de ændringer, der er foretaget i behovsprognoserne i tidligere gentagelser, er derefter tilgængelige i Dynamics 365 for Operations. 
 
-Du kan bruge Dynamics 365 for operationer til at visualisere og ændre de oprindelige overslag. Manuelle justeringer skal godkendes, før prognoserne kan bruges til planlægning.
+Du kan bruge Dynamics 365 for Operations til at visualisere og ændre prognosegrundlaget. Manuelle justeringer skal godkendes, før prognoserne kan bruges til planlægning.
 
 ## <a name="limitations"></a>Begrænsninger
-Behov budgettering i Dynamics 365 for operationer er et værktøj, der hjælper kunderne i fremstillingsindustrien oprette forudsigelse processer. Det tilbyder den grundlæggende funktionalitet af en efterspørgsel, prognoser løsning og er udviklet, så den nemt kan udvides. Behov for budgettering, ikke kan være bedst egnet til kunder inden for brancher som Detail, varer, opbevaring, transport eller andre professionelle services.
+Behovsprognoser i Dynamics 365 for Operations er et værktøj, der hjælper kunderne i fremstillingsindustrien med at generere prognoseprocesser. Det tilbyder den grundlæggende funktionalitet i en løsning til behovsprognoser og er designet, så den nemt kan udvides. Behovsprognoser er måske ikke den bedste valgmulighed for kunder inden for brancher som detailhandel, grossister, lagersteder, transport eller andre professionelle tjenester.
 
 <a name="see-also"></a>Se også
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Konfigurere behovsprognoser](demand-forecasting-setup.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generere et statistisk budgetgrundlag](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Godkende den justerede prognose](authorize-adjusted-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Overvågning af prognosenøjagtighed](monitor-forecast-accuracy.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Fjerne afvigende fra historiktransaktionsdata, når du beregner en efterspørgselsprognose](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

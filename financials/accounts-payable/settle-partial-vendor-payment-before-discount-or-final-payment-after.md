@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis kreditorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen"
+title: "Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen"
 description: "Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden."
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udligne en delvis kreditorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden.
 
-Fabrikam køber varer fra leverandør 3057. Fabrikam modtager en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage. Fakturaer skal betales inden 30 dage. Leverandøren giver desuden Fabrikam kasserabatter på delbetalinger. Udligning-parametre er placeret på den **konti Kreditorparametre** side.
+Fabrikam køber varer fra leverandør 3057. Fabrikam modtager en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Leverandøren giver desuden Fabrikam kasserabatter på delbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice-on-june-25"></a>Fakturer d. 25. juni
-D. 25. April indtaster og bogfører en faktura på 1.000,00 for kreditor 3057. April kan se denne transaktion på siden **Kreditorposteringer**.
+Den 25. juni angiver og bogfører April en faktura på 1.000,00 til kreditor 3057. April kan se denne transaktion på siden **Kreditorposteringer**.
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo   | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Fak-10020 | Faktura          | 25-6-2015 | 10020   |                                      | 1.000,00                              | -1.000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Delvis betaling d. 2. juli
-D. 2. juli vil April udligne 300,00 af denne faktura. Betalingen er rabatberettiget, fordi Fabrikam får rabatter på delbetalinger. Derfor betaler April 297,00 og 3,00 i rabat. Hun opretter en betalingskladde og indtaster en linje for kreditor 3057. Hun åbner den **udligne posteringer** side, så hun kan markere fakturaen til udligning.
+D. 2. juli vil April udligne 300,00 af denne faktura. Betalingen er rabatberettiget, fordi Fabrikam får rabatter på delbetalinger. Derfor betaler April 297,00 og 3,00 i rabat. Hun opretter en betalingskladde og indtaster en linje for kreditor 3057. Hun åbner derefter siden **Udlign posteringer**, så hun kan markere fakturaen til udligning.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -91,7 +94,7 @@ Derefter bogfører April fakturaen. Når hun åbner siden **Kreditorposteringer*
 | APP-10021  | Betaling          | 15-7-2015 |         | 700,00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Resterende betaling d. 15. juli, brug kasserabat = Altid
-Hvis kreditoren giver April rabat selvom hun betaler efter rabatdatoen, hun kan ændre værdien i den **bruge kasserabatten** til **altid**. Den **beregne kasserabatter for delbetalinger** indstilling tilsidesættes, og den rabat. Betalingsbeløbet er 693,00, og rabatten er de resterende 7,00.
+Hvis kreditoren giver April rabat, selvom hun betaler efter rabatdatoen, kan hun ændre værdien i feltet **Anvend kasserabat** til **Altid**. Indstillingen **Beregn kasserabatter for delvise betalinger** tilsidesættes, og rabatten fradrages. Betalingsbeløbet er 693,00, og rabatten er de resterende 7,00.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -116,6 +119,8 @@ Derefter bogfører April fakturaen. Når hun åbner siden **Kreditorposteringer*
 | DISC-10020 | Kasserabat    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | APP-10021  | Betaling          | 15-7-2015 |         | 693,00                               |                                       | 0,00    | USD      |
 | DISC-10021 | Kasserabat    | 15-7-2015 |         | 7:00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

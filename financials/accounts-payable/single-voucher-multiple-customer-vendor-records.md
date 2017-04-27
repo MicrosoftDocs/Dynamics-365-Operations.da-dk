@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere debitor- eller kreditorposter
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Operations, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling. 
 
 Nogle almindelige eksempler på, hvor ét bilag bruges til flere debitorer eller kreditorer, omfatter saldooverførsler mellem debitorer og modregning mellem debitorer og kreditorer i samme organisation. 
@@ -91,7 +94,7 @@ Hvis brugeren er utilfreds med den kasserabat, der fordeles på tværs af alle u
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Bilag** | **Kontotype** | **Konto**  | **Beskrivelse** | **Debet** | **Kredit** | **Offset type** | **Offset account** |
+| **Bilag** | **Kontotype** | **Konto**  | **Beskrivelse** | **Debet** | **Kredit** | **Modtype** | **Modkonto** |
 | GNJL001     | Leverandør           | 1001         | INV1            |           | 100,00     | Finans          | &lt;tom&gt;      |
 | GNJL001     | Finans           | 606300-001-- | INV1            |   50,00   |            | Finans          | &lt;tom&gt;      |
 | GNJL001     | Finans           | 606300-002-- | INV1            |   50,00   |            | Finans          | &lt;tom&gt;      |
@@ -248,5 +251,7 @@ For at undgå uønskede problemer med fremtidige udligninger for denne transakti
 | 002         | Leverandør           | 1001        |                 |  75,00    |            | Finans          | 999999---          |
 
  
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Leverandøren brugersikkerhed"
-description: "Denne artikel beskriver, hvordan du konfigurerer sikkerhed for eksterne leverandører, der bruger leverandørportalen. Disse oplysninger gælder kun for februar-2016 &amp;maj 2016 versioner af Dynamics AX."
+title: "Brugersikkerhed på leverandørportal"
+description: "Denne artikel beskriver, hvordan du konfigurerer sikkerhed for eksterne leverandører, der bruger leverandørportalen. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-portal-user-security"></a>Leverandøren brugersikkerhed
+# <a name="vendor-portal-user-security"></a>Brugersikkerhed på leverandørportal
 
-Denne artikel beskriver, hvordan du konfigurerer sikkerhed for eksterne leverandører, der bruger leverandørportalen. Disse oplysninger gælder kun for februar-2016 &amp;maj 2016 versioner af Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Kreditor portal-funktionalitet er blevet erstattet af udvidede kreditor samarbejdsfunktioner i Dynamics 365 operationer version 1611 opdager. Finde flere oplysninger om opsætning af sikkerhed for leverandør samarbejde [angive og vedligeholde leverandør samarbejde](set-up-maintain-vendor-collaboration.md). Kreditorportalen viser et begrænset sæt oplysninger om indkøbsordrer (PO'er) til eksterne kreditorer. Det er vigtigt, at du har konfigureret brugertilladelserne for kreditorportalen i Microsoft Dynamics AX korrekt, så kreditorerne ikke utilsigtet har adgang til yderligere oplysninger i din Dynamics AX-installation. **Vigtigt!** I modsætning til andre brugere bør eksterne kreditorer ikke have rollen **Systembruger**. Rollen **Systembruger** giver adgang til et sæt rettigheder, der ikke er egnet til eksterne brugere.
+
+Denne artikel beskriver, hvordan du konfigurerer sikkerhed for eksterne leverandører, der bruger leverandørportalen. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016.
+
+Kreditorportal-funktionaliteten er blevet erstattet af udvidede kreditorsamarbejdsfunktioner i Dynamics 365 for Operations version 1611. Du kan finde flere oplysninger om opsætning af sikkerhed for leverandørsamarbejde under [Konfigurere og vedligeholde kreditorsamarbejde](set-up-maintain-vendor-collaboration.md). Kreditorportalen viser et begrænset sæt oplysninger om indkøbsordrer (PO'er) til eksterne kreditorer. Det er vigtigt, at du har konfigureret brugertilladelserne for kreditorportalen i Microsoft Dynamics AX korrekt, så kreditorerne ikke utilsigtet har adgang til yderligere oplysninger i din Dynamics AX-installation. **Vigtigt!** I modsætning til andre brugere bør eksterne kreditorer ikke have rollen **Systembruger**. Rollen **Systembruger** giver adgang til et sæt rettigheder, der ikke er egnet til eksterne brugere.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>Konfigurere en bruger til kreditorportalen
 Før du opretter en brugerkonto til en person, der bruger kreditorportalen, skal du konfigurere kreditoren til at tillade samarbejde på kreditorportalen. Brug feltet **Indkøbsordresamarbejde** under fanen **Generelt** på siden **Kreditorer**. Eksterne kreditorer, der bruger kreditorportalen, skal have følgende opsætning:
@@ -44,6 +47,8 @@ Hvis den samme person skal have adgang til kreditorportalen for flere kreditorko
 <a name="see-also"></a>Se også
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Kreditorsamarbejde](collaborate-vendors-vendor-portal.md)
+
+
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Arbejdsgangshandlinger
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de handlinger, som hver deltager i godkendelsen af en arbejdsproces kan foretage.
 
-En arbejdsgang kan involvere flere persongrupper: igangsætteren, opgavemodtagere, beslutningstagere og godkendere. I arbejdsgangen for følgende udgiftsrapport er Søren igangsætter, medlemmerne af køen er opgavemodtagere, John er opgavemodtager og Henrik, Mette og Dorthe er godkendere.   [![Arbejdsgang for\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) i følgende afsnit forklares de arbejdsganghandlinger, hver gruppe kan udføre.
+En arbejdsgang kan involvere flere persongrupper: igangsætteren, opgavemodtagere, beslutningstagere og godkendere. I arbejdsgangen for følgende udgiftsrapport er Søren igangsætter, medlemmerne af køen er opgavemodtagere, John er opgavemodtager og Henrik, Mette og Dorthe er godkendere.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) Følgende afsnit indeholder beskrivelser af de arbejdsgangshandlinger, som hver gruppe kan udføre.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Handlinger, som igangsætteren kan udføre
 Igangsætteren starter en arbejdsgangsforekomst ved at sende et dokument til behandling. Når Søren f.eks. vil sende sin udgiftsrapport, skal han klikke på knappen **Send** på siden **Udgiftsrapport**.
@@ -63,7 +66,7 @@ Et medlem af en workflowopgavekø kan undertiden acceptere en opgave, men dereft
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Handlinger, som en beslutningstager kan udføre
 Når et dokument tildeles en beslutningstager, er det ofte fordi, der er et spørgsmål, som beslutningstageren skal besvare. Svaret på spørgsmålet er typisk **Ja** eller **Nej**, **Sand** eller **Falsk**. Hvis beslutningstageren ikke vælger et af disse svar, kan han eller hun uddelegere beslutningen.
 
-### <a name="choice-1-or-choice-2"></a>\[Valg 1\] eller \[valg 2\]
+### <a name="choice-1-or-choice-2"></a>\[[Valg 1]\] eller \[[Valg 2]\]
 
 En beslutningstager skal besvare et spørgsmål, der har relation til dokumentet. Svaret på spørgsmålet er typisk **Ja** eller **Nej**, **Sand** eller **Falsk**. Det svar, beslutningstageren vælger, bestemmer, hvilken gren i arbejdsgangen der bliver brugt til behandling af dokumentet. For eksempel er Sørens udgiftsrapport tildelt til John. John skal beslutte, om oplysningerne i dokumentet kræver et opkald til Sørens chef. Hvis John beslutter, at et opkald er nødvendigt, tildeles udgiftsrapporten til Agnete, som derefter skal ringe til Sørens chef. Hvis John beslutter, at et opkald ikke er nødvendigt, tildeles udgiftsrapporten til Henrik til godkendelse.
 
@@ -89,5 +92,7 @@ Når en godkender delegerer et dokument, tildeles dokumentet til en anden bruger
 ### <a name="request-change"></a>Anmod om ændring
 
 Når en godkender anmoder om en ændring i et dokument, sendes dokumentet tilbage til igangsætteren. For eksempel har Søren sendt en udgiftsrapport på kr. 12.000, og dette dokument er tildelt til Mette. Hvis Mette anmoder om en ændring, sendes dokumentet tilbage til Søren. Søren kan sende udgiftsrapporten igen. Han kan udføre de ønskede ændringer først, eller han kan sende den oprindelige version af udgiftsrapporten igen. Hvis Søren sender udgiftsrapporten igen, sendes den til Henrik til godkendelse, fordi Henrik er den første godkender i godkendelsesprocessen.
+
+
 
 

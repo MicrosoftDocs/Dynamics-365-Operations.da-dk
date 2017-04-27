@@ -1,5 +1,5 @@
 ---
-title: Reservere samme parti for en salgsordre
+title: Reserver den samme batch til en salgsordre
 description: I denne artikel beskrives det, hvordan du konfigurerer et produkt til at tillade reservation af lager i forhold til et enkelt batch af lageret.
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservere samme parti for en salgsordre
+# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reserver den samme batch til en salgsordre
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives det, hvordan du konfigurerer et produkt til at tillade reservation af lager i forhold til et enkelt batch af lageret.
 
@@ -42,6 +45,8 @@ Når du reserverer lager til et produkt på en salgsordrelinje, der er konfigure
 -   Dispositionskoden for batchen har **Spær reservation** for salg angivet til **Blokeret**.
 -   Batchen er udløbet på baggrund af udløbsdatoen og eventuelle salgbare dage for debitor. Varen kan stadig reserveres, hvis varemodelgruppen for varen er angivet til FEFO-datokontrolleret, og hvis sidste holdbarhedsdato er angivet under Kriterier for plukning.
 -   Batchen har ikke tilstrækkelige hyldelevetidsdage tilbage baseret på udløbsdatoen og sidste holdbarhedsdato samt eventuelle salgbare dage for debitor.
+
+
 
 
 

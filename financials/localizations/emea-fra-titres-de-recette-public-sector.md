@@ -1,6 +1,6 @@
 ---
 title: Titres de recette i den offentlige sektor i Frankrig
-description: "Titer de recette bruges af direktøren for at underrette bogholderen, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed og at tillade, at bogholderen til at indbetale beløbet. Direktøren eller bogholderen kan uddelegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver med direktøren eller bogholderen. Titeren vedligeholder stram separation, der skal bruges mellem direktøren operationelle rolle og rollen regnskab for bogholderen."
+description: "Titre de recette bruges af direktøren for at underrette bogholderen om, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed, og til at godkende, at bogholderen indbetaler beløbet. Direktøren eller bogholderen kan delegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver hos direktøren eller bogholderen. Titre opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,43 +29,48 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="titres-de-recette-in-the-public-sector-in-france"></a>Titres de recette i den offentlige sektor i Frankrig
 
-Titer de recette bruges af direktøren for at underrette bogholderen, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed og at tillade, at bogholderen til at indbetale beløbet. Direktøren eller bogholderen kan uddelegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver med direktøren eller bogholderen. Titeren vedligeholder stram separation, der skal bruges mellem direktøren operationelle rolle og rollen regnskab for bogholderen.
+[!include[banner](../includes/banner.md)]
 
-I Microsoft Dynamics 365 for operationer, er hver titer tildelt en enkelt fritekstfakturalinje. Dette garanterer, at hver titer vedrører kun én debitor, og indeholder kun én konto i budgettet. En gruppe af relaterede titres sammen med alle dokumentation er tildelt en bordereau de titer for afsendelse til bogholderen.
+
+Titre de recette bruges af direktøren for at underrette bogholderen om, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed, og til at godkende, at bogholderen indbetaler beløbet. Direktøren eller bogholderen kan delegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver hos direktøren eller bogholderen. Titre opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.
+
+I Microsoft Dynamics 365 for Operations er hver titre tildelt en enkelt fritekstfakturalinje. Dette garanterer, at hver titre kun vedrører én debitor og indeholder kun én konto i budgettet. En gruppe af relaterede titres sammen med al understøttende dokumentation tildeles til en bordereau de titre for afsendelse til bogholderen.
 
 ## <a name="directors-tasks"></a>Direktørens opgaver
-Fra den **Vedligehold titres de recette** siden direktør kan udføre følgende opgaver:
+Fra siden **Vedligehold titres de recette** kan direktøren udføre følgende opgaver:
 
--   **Tildele en titer de recette fakturalinjer.** Du kan finde de fakturalinjer, der endnu ikke er tildelt til en titer, kan du filtrere de hentede linjer af den **titer** kolonne.
--   **Tillade fakturalinjer, der er tildelt titres samling.** Dette kan også gøres fra den **titer de recette** tab på siden fritekst-faktura.
--   **Tildele en bordereau de titer titeren.** Du kan finde de fakturalinjer, der endnu ikke er tildelt til en bordereau de titer, kan du filtrere de hentede linjer af den **Bordereau de titer** kolonne.
+-   **Tildele fakturalinjer til et titre de recette.** Du kan finde de fakturalinjer, der endnu ikke er tildelt til et titre, ved at filtrere de hentede linjer efter kolonnen **Titre**.
+-   **Godkende opkrævning af fakturalinjer, der er tildelt til titres.** Dette kan også gøres fra fanen **Titre de recette** på fritekstfakturasiden.
+-   **Tildele titres to a bordereau de titre.** Du kan finde de fakturalinjer, der endnu ikke er tildelt til et Bordereau de titre, ved at filtrere de hentede linjer efter kolonnen **Bordereau de titre**.
 
-For at sende titres til bogholder for indbetalingen, indsamler direktøren udskrevne titeren og deres relateret dokumentation under en borderau de titer.
+Hvis du vil sende titres til bogholderen til indbetaling, indsamler direktøren de udskrevne titres og relateret dokumentation under en borderau de titre.
 
--   Udskrive titeren tildelt en bordereau fra den **poster der skal medtages** oversigtspanelet på den **titer de recette rapport** side.
--   Udskrive bordereau fra den **poster der skal medtages** oversigtspanelet på den **Bordereau de titer rapport** side.
+-   Udskriv titres, der er tildelt til en bordereau, fra oversigtspanelet **Poster, der skal indgå** på siden **Titre de recette rapport**.
+-   Udskriv bordereau fra oversigtspanelet **Poster, der skal indgå** på siden **Bordereau de titre rapport**.
 
-## <a name="accountants-tasks"></a>Revisorens opgaver
-Fra den **Vedligehold titres de recette** side eller fra den **titer de recette** tab på fritekst faktura siden bogholderen kan acceptere, afvise eller holde titeren. Når en titer afvises, direktør status ændres til ikke gennemset, og titer og bordereau de titer-numre er fjernet.
+## <a name="accountants-tasks"></a>Bogholderens opgaver
+Fra siden **Vedligehold titres de recette** eller fra fanen **Titre de recette** på fritekstfakturasiden kan bogholderen acceptere, afvise eller spærre titeren. Når et titre er blevet afvist, ændres direktørstatus til Ikke gennemset, og titre- og bordereau de titre-numre fjernes.
 
-## <a name="using-the-database-inquiry-page"></a>Ved hjælp af siden database-forespørgsel
-Sådan åbnes siden database forespørgsel på den **Vedligehold titres de recette** skal du angive, hvilke datoer, du vil vælge fakturaer fra. Klik derefter på **hente linjer**. Dette åbner siden database forespørgsel, hvor du kan angive kriterier for de fakturalinjer, der skal hentes. Når du lukker formen, hentes alle de fakturalinjer, der opfylder de kriterier, der er valgt i gitteret. Linjer fra de fakturaer, der er ved at blive redigeret, vil ikke kunne hentes. **Tip**: bruger følgende kriterier på siden database-forespørgsel til at hente linjerne.
+## <a name="using-the-database-inquiry-page"></a>Brug af databaseforespørgselssiden
+Du kan åbne databaseforespørgselssiden på siden **Vedligehold titres de recette** ved at angive, hvilke datoer du vil vælge fakturaer fra. Klik derefter på **Hent linjer**. Dette åbner databaseforespørgselssiden, hvor du kan angive kriterierne for de fakturalinjer, du vil hente. Når du lukker formularen, hentes alle fakturalinjer, der opfylder de kriterier, der er valgt, til gitteret. Linjer fra fakturaer, der er ved at blive redigeret, kan ikke hentes. **Tip**! Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
 -   Fakturalinjer, der ikke er gennemset af direktøren.
     | Tabellen | Afledt tabel | Felt                         | Afgrænsning       |
     |-------|---------------|-------------------------------|----------------|
-    | Titre | Titre         | Status for direktørgodkendelse | "Ikke gennemgået" |
+    | Titre | Titre         | Status for direktørgodkendelse | "Ikke gennemset" |
 
--   Fakturalinjer fra titres, der er godkendt til samling af direktøren, men endnu ikke godkendt af bogholderen.
+-   Fakturalinjer fra titres, der er godkendt til opkrævning af direktøren, men endnu ikke godkendt af bogholderen.
     | Tabellen | Afledt tabel | Felt                         | Afgrænsning       |
     |-------|---------------|-------------------------------|----------------|
-    | Titre | Titre         | Status for direktørgodkendelse | "Tilladelse"   |
-    | Titre | Titre         | Bogholders acceptstatus  | "Ikke gennemgået" |
+    | Titre | Titre         | Status for direktørgodkendelse | "Godkendt"   |
+    | Titre | Titre         | Bogholders acceptstatus  | "Ikke gennemset" |
 
--   Fakturalinjer fra titres, der afvises af bogholderen.
+-   Fakturalinjer fra titres, der er afvist af bogholderen.
     | Tabellen | Afledt tabel | Felt                        | Afgrænsning   |
     |-------|---------------|------------------------------|------------|
     | Titre | Titre         | Bogholders acceptstatus | "Afvist" |
+
+
 
 
 

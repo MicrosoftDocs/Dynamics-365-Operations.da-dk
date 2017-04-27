@@ -1,5 +1,5 @@
 ---
-title: "Opsætning af kurser"
+title: Konfigurere uddannelseskurser
 description: Personaleadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Opsætning af kurser
+# <a name="set-up-training-courses"></a>Konfigurere uddannelseskurser
+
+[!include[banner](includes/banner.md)]
+
 
 Personaleadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 
@@ -85,7 +88,7 @@ For hvert kursus kan udføre følgende opgaver.
 -   Anbefal hoteller til kursusdeltagere
 -   Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening
 
-  >**Bemærk** du kan slette et kursus kun, hvis ingen er registreret til den. 
+  >**Bemærk!** Du kan kun slette et kursus, hvis ingen har tilmeldt sig kurset. 
     
 ## <a name="course-statuses"></a>Kursusstatusser
 I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan udføre, når kurset har en bestemt status.
@@ -132,7 +135,9 @@ Kursusdeltagere er arbejdere, jobansøgere eller kontaktpersoner, der deltager i
 <a name="workflow"></a>Arbejdsgang
 --------
 
-Medarbejdere, der registreres til et kursus gennem den **medarbejder self service** side kan have deres registrering dirigeres gennem arbejdsgangen til godkendelse.  En arbejdsproces kan tildeles til et kursus i den **generelle** oversigtspanelet på den **kurser** side.
+Medarbejdere, der tilmelder sig et kursus på siden **Medarbejderselvbetjening**, kan få deres tilmelding dirigeret gennem godkendelsesarbejdsgangen.  En arbejdsgang kan tildeles til et kursus i oversigtspanelet **Generelt** på siden **Kurser**.
+
+
 
 
 

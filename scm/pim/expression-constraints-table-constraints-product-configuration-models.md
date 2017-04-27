@@ -40,7 +40,7 @@ Tabelbegrænsninger viser kombinationerne af de værdi, der er tilladt for attri
 
 ### <a name="example-of-a-table-constraint"></a>Eksempel på tabelbegrænsning
 
-Dette eksempel viser, hvordan du kan begrænse konfigurationen af en højttaler til bestemte kabinetfinishes og fronter. I den første tabel vises de kabinetfinishes og fronter, der normalt er tilgængelige til konfiguration. Værdierne, der er defineret for den ** kabinet finish ** og **foran rist** attributtyperne.
+Dette eksempel viser, hvordan du kan begrænse konfigurationen af en højttaler til bestemte kabinetfinishes og fronter. I den første tabel vises de kabinetfinishes og fronter, der normalt er tilgængelige til konfiguration. Værdierne er defineret for attributtyperne **Kabinetfinish** og **Frontgitter**.
 
 | Attributtype | Værdier                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ I næste tabel vises de kombinationer, der er defineret af tabel begrænsningen 
 
 Du kan oprette systemdefinerede og brugerdefinerede tabelbegrænsninger. Du kan finde flere oplysninger under [Systemdefinerede og brugerdefinerede tabelbegrænsninger](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvad syntaks, der skal bruges til at skrive begrænsninger?
-Du skal bruge OML-syntaksen, når du skriver begrænsninger. Systemet bruger Microsoft Solver Foundation begrænsning Problemløser til at løse begrænsningerne.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Hvilken syntaks skal der bruges til at skrive begrænsninger?
+Du skal bruge OML-syntaksen, når du skriver begrænsninger. Systemet bruger Microsoft Solver Foundation-begrænsningsløseren til at løse begrænsningerne.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Skal jeg bruge tabelbegrænsninger eller udtryksbegrænsninger?
 Du kan enten bruge udtryksbegrænsninger eller tabelbegrænsninger, afhængigt af hvordan du foretrækker at konfigurere begrænsninger. Du udformer en tabelbegrænsning som en matrix, hvorimod en udtryksbegrænsning er en enkelt sætning. Når du konfigurerer et produkt, betyder det ikke noget, hvilken slags begrænsning der bruges. I følgende eksempel kan du se, hvordan de to metoder adskiller sig fra hinanden.  
@@ -110,32 +110,32 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 <td>Dette er tilfældet, hvis den første betingelse er falsk, den anden betingelse er sand, eller begge dele.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operator:</strong> indebærer [x! = 0, y &gt;= 0]</li>
-<li><strong>Notationen infix:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infix-anmærkning:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Og</td>
 <td>Dette gælder kun, hvis alle betingelser er opfyldt. Hvis antallet af betingelser er 0 (nul), returneres <strong>True</strong>.</td>
-<td>Og [argumenter] infix: en &amp;b &amp; ... &amp;z</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator:</strong> og [x == 2, y &lt;= 2]</li>
-<li><strong>Notationen infix:</strong> x == 2 &amp;y &lt;= 2</li>
+<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infix-anmærkning:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Eller</td>
 <td>Dette er tilfældet, hvis en betingelse er sand. Hvis antallet af betingelser er 0 (nul), returneres <strong>False</strong>.</td>
-<td>Eller [argumenter] infix: en | b | ... | z</td>
+<td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator:</strong> eller [x == 2, y &lt;= 2]</li>
-<li><strong>Notationen infix:</strong> x == 2 | y &lt;= 2</li>
+<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infix-anmærkning:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plus</td>
 <td>Dette opsummerer dens betingelser. Hvis antallet af betingelser er 0 (nul), returneres <strong>0</strong>.</td>
-<td>Infix plus [argumenter]: en + b +... + z</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operator:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infix-anmærkning:</strong> x + y + 2 == z</li>
@@ -159,7 +159,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 <tr class="odd">
 <td>Tider</td>
 <td>Herefter tages produktet af dens betingelser. Hvis antallet af betingelser er 0 (nul), returneres <strong>1</strong>.</td>
-<td>Infix gange [argumenter]: et * b *... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operator:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infix-anmærkning:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </tr>
 <tr class="even">
 <td>Strøm</td>
-<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Med andre ord, det er højre-Association). Derfor <strong>Power [a, b, c]</strong> svarer til <strong>Power [a, Power [b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
-<td>Strøm [argumenter], infix: en ^ b ^... ^ z</td>
+<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Power[a, b, c]</strong> til <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
 <li><strong>Infix-anmærkning:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 <td>Dette giver den logiske inverse af tilstanden. Det skal have præcis én betingelse.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operator:</strong> ikke [x] &amp;ikke [y == 3]</li>
+<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infix-anmærkning:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ Eksemplerne i næste tabel viser, hvordan du skriver en infix-anmærkning.
 | Notationen infix    | Betegnelse                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Tilføjelse                                                                                      |
-| X \*y \*z       | Multiplikation                                                                                |
+| x \* y \* z       | Multiplikation                                                                                |
 | x - y             | Binær subtraktion oversættes på samme måde som binær addition, hvor der er et negativt sekund. |
 | x ^ y ^ z         | Eksponentiering, der har en højre-association                                                   |
 | !x                | Boolesk ikke                                                                                   |
@@ -212,14 +212,14 @@ Eksemplerne i næste tabel viser, hvordan du skriver en infix-anmærkning.
 | x & y & z         | Boolesk og                                                                                   |
 | x == y == z       | Lig med                                                                                      |
 | x != y != z       | Bestemt                                                                                      |
-| X &lt;y &lt;z   | Mindre end                                                                                     |
-| X &gt;y &gt;z   | Større end                                                                                  |
-| X &lt;= y &lt;= z | Mindre end eller lig med                                                                         |
-| X &gt;= y &gt;= z | Større end eller lig med                                                                      |
+| x &lt; y &lt; z   | Mindre end                                                                                     |
+| x &gt; y &gt; z   | Større end                                                                                  |
+| x &lt;= y &lt;= z | Mindre end eller lig med                                                                         |
+| x &gt;= y &gt;= z | Større end eller lig med                                                                      |
 | (x)               | Parentes tilsidesætter standardprioritering.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres mine udtryksbegrænsninger ikke korrekt?
-Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel. Her er en liste over reserverede nøgleord, som du kan bruge:
+Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel. Her er en liste over de reserverede nøgleord, som du kan bruge:
 
 -   Loft
 -   Element
@@ -245,8 +245,8 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 <a name="see-also"></a>Se også
 --------
 
-[Oprette en udtryksbegrænsning (opgave guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Oprette en udtryksbegrænsning (Opgaveguide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Føje en beregning til en model til produktkonfiguration (opgave guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Føje en beregning til en produktkonfigurationsmodel (Opgaveguide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

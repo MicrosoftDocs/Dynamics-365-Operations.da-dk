@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Manuel afskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over den manulle afskrivningsmetode.
 
 Når du opretter en afskrivningsprofil for anlægsaktiver og vælger **Manuel** i feltet **Metode** på siden **Afskrivningsprofiler**, bestemmes den afskrivning, der tildeles afskrivningsprofilen for anlægsaktiver, af den procentdel, du har angivet for hvert interval i kalenderåret. De intervaller, som du angiver procentdele for, bogføres i overensstemmelse med den værdi, du vælger i feltet **Periodefrekvens** i oversigtspanelet **Generelt** på siden **Afskrivningsprofiler**. Her er de værdier, du kan vælge imellem:
@@ -63,13 +66,15 @@ Hvis du vælger **Månedligt** i feltet **Periodefrekvens**, opretter du 12 manu
 | Januar  | (11.000 - 1.000) × 10 % = 1.000 |
 | Februar | (11.000 - 1.000) × 50 % = 5.000 |
 
-Hvis du vælger **halvårlig** i den *** periode frekvens ** felt ** du oprette to manuelle planlagte intervaller. I følgende tabel vises afskrivningsbeløbene for disse to intervaller.
+Hvis du vælger **Halvårlig** i feltet ****Periodefrekvens****, opretter du to manuelle planlagte intervaller. I følgende tabel vises afskrivningsbeløbene for disse to intervaller.
 
 | Interval    | Afskrivningsbeløb            |
 |-------------|--------------------------------|
 | 30. juni     | (11.000 - 1.000) × 10 % = 1.000 |
 | 31. december | (11.000 - 1.000) × 50 % = 5.000 |
 
-Samlet procentdel for alle intervaller behøver ikke at være 100. Men du modtager en meddelelse, hvis værdien i den **kumulative procent** på den **anlægsafskrivning profil planer** side er ikke **100**.
+Den samlede procentdel for alle intervaller behøver ikke være 100. Men du modtager en meddelelse, hvis værdien i feltet **Akkumuleret procent** på siden **Planer for anlægsaktivets afskrivningsprofil** ikke er **100**.
+
+
 
 

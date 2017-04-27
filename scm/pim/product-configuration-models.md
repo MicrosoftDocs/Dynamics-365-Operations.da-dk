@@ -1,6 +1,6 @@
 ---
-title: Produkt oversigt over konfiguration af modeller
-description: Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
+title: Oversigt over produktkonfigurationsmodeller
+description: Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Produkt oversigt over konfiguration af modeller
+# <a name="product-configuration-models-overview"></a>Oversigt over produktkonfigurationsmodeller
 
-Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
+Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
 
 Produktkonfigurationsmodeller oprettes for at repræsentere en generisk produktstruktur. Når du har oprettet en produktkonfigurationsmodel, kan du konfigurere en distinkt produktvariant med en entydig stykliste (BOM) og en entydig rute. Produktkonfigurationsmodeller bruger både deklarative begrænsninger og afgørende beregninger til at håndtere relationer og begrænsninger mellem forskellige produktvarianter. Du kan konfigurere varer på salgsordrer, salgstilbud, indkøbsordrer og produktionsordrer. Følgende tabel indeholder en beskrivelse af de begrænsningsbaserede termer og begreber.
 <table>
@@ -69,16 +69,16 @@ Du kan også angive en betingelse for attributter. Hvis betingelsen er opfyldt, 
 <li><strong>Tekst</strong> med eller uden en fast liste</li>
 <li><strong>Boolesk</strong></li>
 </ul>
-Hvis attributtypen er <strong>Boolesk</strong>, <strong>Heltal</strong> med et interval eller <strong>Tekst</strong> med en fast liste, er værdisættet tilgængeligt, når en produktkonfigurationsmodel er sat op. <strong>Bemærk:</strong> produkt konfiguration Problemløser genkender kun følgende attributtyper: <strong>Boolean</strong>, <strong>tekst</strong> med en fast liste, og <strong>heltal</strong> med et område. Derfor er det udelukkende disse attributtyper, der kan bruges i udtryksbegrænsninger og betingelser.</td>
+Hvis attributtypen er <strong>Boolesk</strong>, <strong>Heltal</strong> med et interval eller <strong>Tekst</strong> med en fast liste, er værdisættet tilgængeligt, når en produktkonfigurationsmodel er sat op. <strong>Bemærk!</strong> Produktkonfigurationsproblemløseren genkender kun følgende attributtyper: <strong>Boolesk</strong>, <strong>Tekst</strong> med en fast liste og <strong>Heltal</strong> med et område. Derfor er det udelukkende disse attributtyper, der kan bruges i udtryksbegrænsninger og betingelser.</td>
 </tr>
 <tr class="even">
 <td>Begrænsninger</td>
 <td>Begrænsninger beskriver begrænsninger i produktmodelkonfigurationen. Begrænsninger bruges til at sikre, at der kun vælges gyldige værdier, når et produkt konfigureres. Begrænsninger kan enten være udtryksbegrænsninger eller tabelbegrænsninger:
 <ul>
 <li>Udtryksbegrænsninger kan kun anvendes til den komponent, som de er knyttet til. Udtryksbegrænsninger for en komponent kan dog henvise til attributter for komponentens underkomponenter. Produktkonfigurationsproblemløseren bruges til at løse begrænsningerne, og du bruge problemløsersyntaksen, når du skriver begrænsningerne. Få yderligere oplysninger om wiki-linket om udtryksbegrænsninger og tabelbegrænsninger.</li>
-<li>Tabelbegrænsninger skal defineres, før de kan anvendes til en komponent i en produktkonfigurationsmodel. Tabelbegrænsninger kan være enten brugerdefinerede eller systemdefinerede. En begrænsning for en brugerdefineret tabel er en matrixtype, der kan bruges til at beskrive sæt af kombinationer af de attributværdier, der er defineret af attributtyper. Hvis der f.eks. produceres højttalere, indeholder matricen for en brugerdefineret tabelbegrænsning muligvis kolonner for højttalerfinish og gitter.</li>
+<li>Tabelbegrænsninger skal defineres, før de kan anvendes til en komponent i en produktkonfigurationsmodel. Tabelbegrænsninger kan enten være brugerdefinerede eller systemdefinerede. En begrænsning for en brugerdefineret tabel er en matrixtype, der kan bruges til at beskrive sæt af kombinationer af de attributværdier, der er defineret af attributtyper. Hvis der f.eks. produceres højttalere, indeholder matricen for en brugerdefineret tabelbegrænsning muligvis kolonner for højttalerfinish og gitter.</li>
 </ul>
-<strong>Eksempel</strong> Højttalere fås med fire finishes: sort, egetræ, rosentræ og hvid. Højttalerne kan have en af tre front gitre: sort, Metal eller hvid. Sort finish er tilgængelig for alle gitre, men de andre overfladematerialer er begrænset til bestemte gitre. Følgende tabel viser et eksempel på de oplysninger, der vises under fanen <strong>Tilladte kombinationer</strong> på siden <strong>Rediger tabelbegrænsning</strong>.
+<strong>Eksempel</strong> Højttalere fås med fire finishes: sort, egetræ, rosentræ og hvid. Højttalerne kan have et af tre frontgitre: sort, metal eller hvid. Sort finish er tilgængelig for alle gitre, men de andre overfladematerialer er begrænset til bestemte gitre. Følgende tabel viser et eksempel på de oplysninger, der vises under fanen <strong>Tilladte kombinationer</strong> på siden <strong>Rediger tabelbegrænsning</strong>.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Hvis attributtypen er <strong>Boolesk</strong>, <strong>Heltal</strong> med et i
 </tr>
 </tbody>
 </table>
-En systemdefineret tabelbegrænsning repræsenterer en tilknytning mellem en attribut af typen og et felt i en Dynamics 365 for operationer tabel. En systemdefineret tabelbegrænsning sammenkæder dynamisk attributtypen til feltet. Linket kan attribut i en model til produktkonfiguration skal afspejle data i feltet i Dynamics-365 for operationer tabel.</td>
+En systemdefineret tabelbegrænsning repræsenterer en tilknytning mellem en attributtype og et felt i en Dynamics 365 for Operations-tabel. En systemdefineret tabelbegrænsning sammenkæder dynamisk attributtypen med feltet. Via linket kan attributten i en produktkonfigurationsmodel afspejle data i feltet i Dynamics 365 for Operations-tabellen.</td>
 </tr>
 <tr class="odd">
 <td>Beregninger</td>
-<td>Beregninger udgør et supplement til begrænsninger. Du kan bruge en beregning til at udføre aritmetiske operationer på attributterne for den <strong>Decimal</strong> og <strong>heltal</strong> typer eller logiske operationer, der vedrører attributter for den <strong>tekst</strong> med en fast liste og <strong>Boolean</strong> typer. En beregning har en målattribut, der skal indeholde resultatet af beregningsudtrykket. Beregningsudtrykket opbygges ved hjælp af udtrykseditoren.</td>
+<td>Beregninger udgør et supplement til begrænsninger. Du kan bruge en beregning til at udføre aritmetiske operationer på attributterne for typen <strong>Decimal</strong> og typen <strong>Heltal</strong> eller logiske operationer, der vedrører attributter for typen <strong>Tekst</strong> med en fast liste og typen <strong>Boolesk</strong>. En beregning har en målattribut, der skal indeholde resultatet af beregningsudtrykket. Beregningsudtrykket opbygges ved hjælp af udtrykseditoren.</td>
 </tr>
 <tr class="even">
 <td>Underkomponenter</td>

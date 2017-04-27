@@ -1,5 +1,5 @@
 ---
-title: Oversigt over lean produktion
+title: Oversigt over lean manufacturing
 description: Denne artikel indeholder en oversigt over og en beskrivelse af lean manufacturing-funktioner i Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Oversigt over lean produktion
+# <a name="lean-manufacturing-overview"></a>Oversigt over lean manufacturing
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder en oversigt over og en beskrivelse af lean manufacturing-funktioner i Microsoft Dynamics AX.
 
@@ -49,7 +52,7 @@ For at oprette et lean manufacturing-grundlag skal produktions- og logistikproce
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a>Bruge kanbans til at signalere efterspørgselskrav
 Et pull-system producerer kun varer, når der er behov for varerne. Denne praksis reducerer leveringstider og overskydende lager. Du kan bruge kanbans til at planlægge, registrere og behandle krav, der er baseret på produktionsflow. Hvis du vil oprette en ramme med kanban, skal du oprette kanban-regler, der definerer oprettelsen af kanbans, og hvordan kravene er opfyldt. Du kan oprette to typer af kanban-regler. Produktionsregler opretter kanban-procesjob, og udtrækning af kanban-regler opretter kanban-overførselsjob. Du kan indstille følgende genopfyldningsstrategier:
--   **Fastmængde-kanban**-regler er relateret til en fast mængde materialehåndteringsenheder, hvilket betyder, at mængden af aktive kanbans er konstant. Når alle produkter fra en Kanban, der forbruges og materialehåndteringsenheder manuelt er blevet tømt, oprettes der en ny kanban af samme type. Når du opretter regler for fastmængde-kanban, kan du beregne de optimale kanban-mængder og de produktmængder, der anvendes. Beregningen tager højde for prognose, faktisk efterspørgsel fra åbne ordrer, leveringstid for genbestilte varer og historiske krav.
+-   **Fastmængde-kanban**-regler er relateret til en fast mængde materialehåndteringsenheder, hvilket betyder, at mængden af aktive kanbans er konstant. Når alle produkter fra en Kanban er forbrugt, og materialehåndteringsenhederne manuelt er blevet tømt, oprettes der en ny kanban af samme type. Når du opretter regler for fastmængde-kanban, kan du beregne de optimale kanban-mængder og de produktmængder, der anvendes. Beregningen tager højde for prognose, faktisk efterspørgsel fra åbne ordrer, leveringstid for genbestilte varer og historiske krav.
 -   **Planlagte** kanban-regler opfylder de krav, der beregnes af varedisponeringen. Varedisponering genereres planlagte kanbans, der kan autoriseres til kanbans.
 -   Regler for **hændelses**-kanbans genopfylder de krav, der stammer fra salgsordrelinjer, styklistelinjer, kanban-linjer eller indstillinger for minimumslager. Når hændelses-kanbans genereres, bliver de udlignet i forhold til kildeforudsætningerne.
 
@@ -76,6 +79,8 @@ Kanban-job er fuldt integreret med de aktuelle processer for lagerposteringer i 
 Desuden understøtter lean manufacturing indkøb og faktureringsprocesser for tjenester, der henvises til af underleverandørens aktiviteter.
 -   Du kan tildele købslinjer for aftalen og tjenester til underleverandørens aktiviteter.
 -   Du kan oprette periodiske indkøbsordrer og modtagelsesadvisering for at understøtte køb og fakturering af tjenester.
+
+
 
 
 

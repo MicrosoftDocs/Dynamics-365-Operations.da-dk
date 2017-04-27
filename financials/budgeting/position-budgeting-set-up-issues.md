@@ -1,5 +1,5 @@
 ---
-title: Placer budgettering fejlfinding
+title: Fejlfinding af stillingsbudgettering
 description: "Denne artikel giver svar på spørgsmål, som du kan have, når du konfigurerer stillingsbudgettering. Emnet omhandler ofte stillede spørgsmål om, hvordan man opretter budgetomkostningselementer, kompensationsgrupper og kompensationsgitre."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="position-budgeting-troubleshooting"></a>Placer budgettering fejlfinding
+# <a name="position-budgeting-troubleshooting"></a>Fejlfinding af stillingsbudgettering
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel giver svar på spørgsmål, som du kan have, når du konfigurerer stillingsbudgettering. Emnet omhandler ofte stillede spørgsmål om, hvordan man opretter budgetomkostningselementer, kompensationsgrupper og kompensationsgitre. 
 
@@ -58,6 +61,8 @@ Datoerne på omkostningselementlinjen for den budgetterede stilling skal være i
 -   Datoen for aktivering og ophør for stillingen.
 -   Datoerne for aktivering og udløb for budgetomkostningselementet.
 -   Start- og slutdatoer for budgetcyklussen, der er tilknyttet budgetplanlægningsprocessen til den budgetterede stilling.
+
+
 
 
 

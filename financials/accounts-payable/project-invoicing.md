@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Projektfakturering
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over projektfakturering for tids- og materialeprojekter og fastprisprojekter. Det omfatter oplysninger om fakturaforslag (foreløbig fakturaer), fakturastyring, acontofakturering, kreditorfakturering og kreditnotaer.
 
 Projekttypen bestemmer, hvilken faktureringsproces der anvendes. Det er kun de to eksterne projekttyper, Tid og materialer og Fast pris, der kan faktureres. Tids- og materialeprojekter og fastprisprojekter er altid knyttet til en projektkontrakt.
@@ -103,7 +106,7 @@ Du kan f.eks. konfigurere følgende faktureringsplan:
 Når milepælsbetalingerne er klar til at blive faktureret, skal du anvende proceduren til fakturering af acontobeløb.
 
 ## <a name="vendor-invoicing"></a>Kreditorfakturering
-Når du bestiller en vare fra en leverandør og tildeler varen til et projekt, bestemmer den linjeegenskab, du vælger for indkøbsordrelinjen til den pågældende vare, om den indkøbte vare faktureres til en kunde. Hvis du indstiller standard linjeegenskaber, vises de for varen på købsordrelinjen (linjedetaljer &gt;projekt &gt;Line property). Der er to måder at ændre linjeegenskaben på:
+Når du bestiller en vare fra en leverandør og tildeler varen til et projekt, bestemmer den linjeegenskab, du vælger for indkøbsordrelinjen til den pågældende vare, om den indkøbte vare faktureres til en kunde. Hvis du konfigurerer standardegenskaberne for linjer, vises de for varen på indkøbsordrelinjen (Linjeoplysninger &gt; Projekt &gt; Linjeegenskab). Der er to måder at ændre linjeegenskaben på:
 
 -   Fakturere projektets debitor for varen: Angiv linjeegenskaben for varen til en fakturerbar værdi på indkøbsordren, og fakturer derefter kunden ved hjælp af den korrekte projektfaktureringsmetode.
 -   Ikke fakturere projektets debitor for varen: Vælg ikke linjeegenskaben **Fakturerbar** på indkøbsordrelinjen for varen. Du kan derefter fakturere indkøbsordren, uden at du behøver foretage dig yderligere.
@@ -118,5 +121,7 @@ Det samme dokument kan medtage posteringer, der er valgt til kreditering, kredit
 Hvis du vil kreditere et kreditnotabeløb, skal du først vælge det fakturabeløb, der skal krediteres, og derefter oprette en kreditnota. Du opretter en kreditnota ved at følge den samme procedure som ved oprettelse af en debitorfaktura. 
 
 Du kan oprette en faktura, der har et negativt beløb, som bliver en faktura, der klassificeres som en kreditnota. Hvis du vil oprette og udskrive en kreditnota, skal du vælge de transaktioner, der tidligere er bogført for en debitorfaktura, og derefter redigere transaktionerne. Medmindre den primære adresse på en juridisk enhed er i Tyskland, er titlen på fakturaen "Rettelsesfaktura".
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Indstillinger for grovplanlægning
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives indstillingerne for grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 
 Grovplanlægning beregner følgende oplysninger for en produktionsordre:
@@ -128,6 +131,8 @@ Du kan gemme de aktuelle værdier som standardværdier. Der er to valgmuligheder
 <a name="see-also"></a>Se også
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Grovplanlægning](operations-scheduling.md)
+
+
 
 

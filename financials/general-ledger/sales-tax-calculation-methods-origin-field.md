@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Momsberegningsmetoderne i feltet Grundlag
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives indstillingerne i feltet Grundlag på siden Momskoder, og hvordan momsen beregnes ud fra den valgte indstilling for en momskode.
 
 For hver momskode, du opretter på siden Momskoder, skal du vælge den beregningsmåde, der skal anvendes for momsgrundlagsbeløbet i feltet Grundlag.
@@ -124,5 +127,7 @@ Dokument/kladde er angivet til Beløb inkl. moms = Nej Beløb på transaktionsli
 [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md)
 
 [Indstillinger for beregning af hele beløbet og intervaller for momskoder](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

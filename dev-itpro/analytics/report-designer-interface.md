@@ -49,7 +49,7 @@ Menuen **Filer** er tilgængelig for alle brugere og omfatter følgende kommando
 | Gem som                           | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition under et nyt navn.                                                                            |
 | Egenskaber                        | Åbn dialogboksen **Egenskaber**, hvor du kan ændre navnet på og beskrivelsen af en rapport.                                                                                                   |
 | Generér                          | Generer den aktuelle rapport Denne kommando er tilgængelig fra en rapportdefinition.                                                                                                                 |
-| Vis rapport                       | Åbn den seneste version af den genererede rapport i Dynamics 365 for operationer. Denne kommando er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport.                                 |
+| Vis rapport                       | Åbn den seneste version af den genererede rapport i Dynamics 365 for Operations. Denne kommando er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport.                                 |
 | Seneste rapportdefinitioner         | Vis en liste over rapporter, der for nylig er oprettet eller ændret. Du kan derefter vælge en rapport på listen.                                                                                    |
 | Seneste rækkedefinitioner            | Vis en liste over rækkedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en rækkedefinition på listen.                                                                    |
 | Seneste kolonnedefinitioner         | Vis en liste over kolonnedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en kolonnedefinition på listen.                                                              |
@@ -80,7 +80,7 @@ Menuen **Rediger** er tilgængelig for brugere, der har rollen **Designer** elle
 | Indsæt kolonne                          | Indsæt en tom kolonne i kolonnedefinitionen. Denne kommando er tilgængelig fra en kolonnedefinition.                                                                                                             |
 | Slet kolonne                          | Slet den markerede kolonne i kolonnedefinitionen. Denne kommando er tilgængelig fra en kolonnedefinition.                                                                                                         |
 | Indsæt rapporteringsenheder fra dimensioner | Åbn dialogboksen **Indsæt rapporteringsenheder fra dimensioner**, hvor du kan vælge de dimensionsværdier, der skal medtages i rapporteringstrædefinitionen. Denne kommando er tilgængelig fra en rapporteringstrædefinition. |
-| Importer hierarki for dimensionsopsætning         | Åbn dialogboksen **Hierarki for dimensionsopsætning**, hvor du kan importere et hierarki for dimensionsopsætning fra de økonomiske data. Denne kommando er tilgængelig fra en rapportering træ-definition for en... \financial-dimensions\dimension-based system.  |
+| Importer hierarki for dimensionsopsætning         | Åbn dialogboksen **Hierarki for dimensionsopsætning**, hvor du kan importere et hierarki for dimensionsopsætning fra de økonomiske data. Denne kommando er tilgængelig fra en rapporteringstrædefinition for et ..\financial-dimensions\dimensionsbaseret system.  |
 | Indsæt rapporteringsenhed                  | Indsæt en tom række i definitionen af rapporteringstræet. Denne kommando er tilgængelig fra en rapporteringstrædefinition.                                                                                                |
 | Slet rapporteringsenhed                  | Slet den markerede række for rapporteringsenhed fra definitionen af rapporteringstræ. Denne kommando er tilgængelig fra en rapporteringstrædefinition.                                                                             |
 
@@ -159,7 +159,7 @@ Menuen **Hjælp** er tilgængelig for alle brugere og omfatter følgende kommand
 
 | Kommando | Betegnelse                                                  |
 |---------|--------------------------------------------------------------|
-| Hjælp    | Åbn den Dynamics 365 for operationer Hjælp wiki-siden til finansiel rapportering. |
+| Hjælp    | Åbn Dynamics 365 for Operations Hjælp wiki-siden for økonomirapportering. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Knapper på værktøjslinjen i Report Designer
@@ -171,23 +171,23 @@ Standardværktøjslinjen giver hurtig adgang til fil- og redigeringskommandoer. 
 
 | Knap                                                                                                                                                                                   | Beskrivelse                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![New button](./media/rowc130389.png)](./media/rowc130389.png)                              | Opret en ny (tom) rapportdefinition, rækkedefinition, kolonnedefinition eller rapporteringstrædefinition.                                                                               |
+| [![Knappen Ny](./media/rowc130389.png)](./media/rowc130389.png)                              | Opret en ny (tom) rapportdefinition, rækkedefinition, kolonnedefinition eller rapporteringstrædefinition.                                                                               |
 | [![Knappen Åbn](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Åbn en eksisterende rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition.                                                                                   |
-| [![Gem knappen](./media/savec130389.png)](./media/savec130389.png)                           | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition.                                                                                   |
-| [![Knappen Kopier](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopiér det valgte tekst til Udklipsholder.                                                                                                                                               |
+| [![Knappen Gem](./media/savec130389.png)](./media/savec130389.png)                           | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition.                                                                                   |
+| [![Knappen Kopiér](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopiér det valgte tekst til Udklipsholder.                                                                                                                                               |
 | [![Knappen Klip](./media/cutc130389.png)](./media/cutc130389.png)                              | Slet den markerede tekst, og kopiér den til Udklipsholder.                                                                                                                                |
-| [![Knappen sæt ind](./media/pastec130389.png)](./media/pastec130389.png)                        | Indsætte tekst fra Udklipsholder.                                                                                                                                                    |
-| [![Fortryd knap](./media/undoc130389.png)](./media/undoc130389.png)                           | Fortryd den sidste handling.                                                                                                                                                                  |
-| [![Annuller Fortryd knap](./media/redoc130389.png)](./media/redoc130389.png)                           | Annuller den sidste fortrudte handling.                                                                                                                                                          |
+| [![Knappen Sæt ind](./media/pastec130389.png)](./media/pastec130389.png)                        | Indsætte tekst fra Udklipsholder.                                                                                                                                                    |
+| [![Knappen Fortryd](./media/undoc130389.png)](./media/undoc130389.png)                           | Fortryd den sidste handling.                                                                                                                                                                  |
+| [![Knappen Annuller Fortryd](./media/redoc130389.png)](./media/redoc130389.png)                           | Annuller den sidste fortrudte handling.                                                                                                                                                          |
 | [![Knappen Søg](./media/findc130389.png)](./media/findc130389.png)                           | Åbn dialogboksen **Søg og erstat**, hvor du kan søge efter og erstatte tekst i det aktive vindue.                                                                                  |
-| [![Indsæt række knap](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Indsæt en tom række i rækkedefinitionen eller en tom kolonneoverskrift i kolonnedefinitionen. Denne knap er tilgængelig fra en rækkedefinition eller kolonnedefinition.                    |
-| [![Indsæt kolonne knap](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Indsæt en tom kolonne i kolonnedefinitionen. Denne knap er tilgængelig fra en kolonnedefinition.                                                                                  |
-| [![Låseknappen](./media/lockc130389.png)](./media/lockc130389.png)                           | Anvend en adgangskode til den aktuelle byggesten. Denne knap er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**.                                                 |
-| [![Række hyperlinkknap](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Åbn dialogboksen **Links til række**, hvor du kan angive kilder til datalinks i rækkedefinitioner og rapporteringstrædefinitioner. Denne knap er tilgængelig fra en rækkedefinition. |
-| [![Fremme knap](./media/promotec130389.png)](./media/promotec130389.png)                  | Hæv en enhed for rapporteringtrædefinitionen. Når du vælger en underordnet enhed og derefter klikker på **Hæv**, flyttes den underordnede enhed til det samme niveau som den overordnede enhed.                |
-| [![Sænk knap](./media/demotec130389.png)](./media/demotec130389.png)                     | Sænk en enhed for rapporteringtrædefinitionen. Når du vælger en enhed og derefter klikker på **Sænk**, underordnes enheden den enhed, der står foran den.                               |
+| [![Knappen Indsæt række](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Indsæt en tom række i rækkedefinitionen eller en tom kolonneoverskrift i kolonnedefinitionen. Denne knap er tilgængelig fra en rækkedefinition eller kolonnedefinition.                    |
+| [![Knappen Indsæt kolonne](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Indsæt en tom kolonne i kolonnedefinitionen. Denne knap er tilgængelig fra en kolonnedefinition.                                                                                  |
+| [![Knappen Lås](./media/lockc130389.png)](./media/lockc130389.png)                           | Anvend en adgangskode til den aktuelle byggesten. Denne knap er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**.                                                 |
+| [![Knappen Link med række](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Åbn dialogboksen **Links til række**, hvor du kan angive kilder til datalinks i rækkedefinitioner og rapporteringstrædefinitioner. Denne knap er tilgængelig fra en rækkedefinition. |
+| [![Knappen Hæv](./media/promotec130389.png)](./media/promotec130389.png)                  | Hæv en enhed for rapporteringtrædefinitionen. Når du vælger en underordnet enhed og derefter klikker på **Hæv**, flyttes den underordnede enhed til det samme niveau som den overordnede enhed.                |
+| [![Knappen Sænk](./media/demotec130389.png)](./media/demotec130389.png)                     | Sænk en enhed for rapporteringtrædefinitionen. Når du vælger en enhed og derefter klikker på **Sænk**, underordnes enheden den enhed, der står foran den.                               |
 | [![Knappen Udvid](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Udvid alle enheder i rapporteringstrædefinitionen på niveauet for den valgte enhed.                                                                                                   |
-| [![Skjul knap](./media/collapsec130389.png)](./media/collapsec130389.png)               | Skjul rapporteringstræet.                                                                                                                                                           |
+| [![Knappen Skjul](./media/collapsec130389.png)](./media/collapsec130389.png)               | Skjul rapporteringstræet.                                                                                                                                                           |
 | [![Knappen Hjælp](./media/helpc130389.png)](./media/helpc130389.png)                           | Åbn Hjælp.                                                                                                                                                                             |
 
 ### <a name="formatting-toolbar"></a>Formateringsværktøjslinje
@@ -196,16 +196,16 @@ Formateringsværktøjslinjen giver nem adgang til formateringskommandoer. Denne 
 
 | Knap                                                                                                                                                                                                   | Beskrivelse                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Skrifttypen stil knap](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Anvend den valgte typografi på den aktuelle tekst.      |
-| [![Skrifttype-knap](./media/fonttype.png)](./media/fonttype.png)                                                 | Anvend den valgte typografi på den aktuelle tekst.              |
-| [![Skrifttype, størrelse, knap](./media/fontsize.png)](./media/fontsize.png)                                            | Anvend den valgte skriftstørrelse (i punkter) på den aktuelle tekst. |
-| [![Knappen fed](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gør den aktuelle tekst fed.                             |
-| [![Knappen kursiv](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursiver den aktuelle tekst.                           |
-| [![Understrege knap](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Understreg den aktuelle tekst.                             |
-| [![Formindsk indrykning knap](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Formindsk indrykning for den aktuelle tekst.                |
+| [![Knappen Typografi](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Anvend den valgte typografi på den aktuelle tekst.      |
+| [![Knappen Skrifttype](./media/fonttype.png)](./media/fonttype.png)                                                 | Anvend den valgte typografi på den aktuelle tekst.              |
+| [![Knappen Skriftstørrelse](./media/fontsize.png)](./media/fontsize.png)                                            | Anvend den valgte skriftstørrelse (i punkter) på den aktuelle tekst. |
+| [![Knappen Fed](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gør den aktuelle tekst fed.                             |
+| [![Knappen Kursiv](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Kursiver den aktuelle tekst.                           |
+| [![Knappen Understreg](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Understreg den aktuelle tekst.                             |
+| [![Knappen Formindsk indrykning](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Formindsk indrykning for den aktuelle tekst.                |
 | [![Knappen Forøg indrykning](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Forøg indrykning for den aktuelle tekst.                |
-| [![Baggrund farve knap](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Rediger baggrundsfarven for den aktuelle celle.        |
-| [![Skrifttype farve knap](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Rediger farven for den aktuelle tekst.                   |
+| [![Knappen Baggrundsfarve](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Rediger baggrundsfarven for den aktuelle celle.        |
+| [![Knappen Skriftfarve](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Rediger farven for den aktuelle tekst.                   |
 
 ### <a name="report-designer-toolbar"></a>Værktøjslinjen i Report Designer
 
@@ -213,12 +213,12 @@ Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigeri
 
 | Knap                                                                                                                                                                                          | Beskrivelse                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![Knappen til definition af rapport](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis den rapportdefinition, der er angivet i menuen **Vindue**.                                                                                                            |
-| [![Knap til definition af række](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis den rækkedefinition, der er tilknyttet den aktive rapportdefinition.                                                                                                    |
-| [![Knap til definition af kolonne](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis den kolonnedefinition, der er tilknyttet den aktive rapportdefinition.                                                                                                 |
-| [![Rapportering af træet definition knap](./media/treec130389.png)](./media/treec130389.png)             | Vis den rapporteringstrædefinition, der er tilknyttet den aktive rapportdefinition.                                                                                         |
-| [![Rapport-Fremviser-knap](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportfremviser, og vis den seneste version af den genererede rapport. Denne knap er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport. |
-| [![Generér rapport knap](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generer en rapport fra den aktive rapportdefinition. Denne knap er tilgængelig fra en rapportdefinition.                                                                      |
+| [![Knappen Rapportdefinition](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis den rapportdefinition, der er angivet i menuen **Vindue**.                                                                                                            |
+| [![Knappen Rækkedefinition](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis den rækkedefinition, der er tilknyttet den aktive rapportdefinition.                                                                                                    |
+| [![Knappen kolonnedefinition](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis den kolonnedefinition, der er tilknyttet den aktive rapportdefinition.                                                                                                 |
+| [![Knappen Rapporteringstrædefinition](./media/treec130389.png)](./media/treec130389.png)             | Vis den rapporteringstrædefinition, der er tilknyttet den aktive rapportdefinition.                                                                                         |
+| [![Knappen Rapportfremviser](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportfremviser, og vis den seneste version af den genererede rapport. Denne knap er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport. |
+| [![Knappen Generer rapport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generer en rapport fra den aktive rapportdefinition. Denne knap er tilgængelig fra en rapportdefinition.                                                                      |
 
 
 
@@ -227,6 +227,6 @@ Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigeri
 
 [Økonomirapportering for Microsoft Dynamics ERP](financial-reporting-intro.md)
 
-[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
+[Generér en økonomisk rapport](\financials\general-ledger\generate-financial-report.md)
 
 

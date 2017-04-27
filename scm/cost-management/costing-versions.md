@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Efterkalkulationsversioner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om efterkalkulationsversioner, hvordan du vedligeholder dem, og de typer data, som du kan medtage i dem. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger.
 
 En efterkalkulationsversion kan have et eller flere formål, afhængigt af de data der findes i efterkalkulationsversionen. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger. En efterkalkulationsversion kan indeholde standardkostprisposter eller planlagte kostprisposter, der er baseret på den efterkalkulationstype, som er tildelt til efterkalkulationsversionen.
@@ -63,5 +66,7 @@ Hovedårsagen til aktivering af købsprisdata er at definere købsprisposter for
 For at aktivere indhold om købspris skal du først definere en styklistekalkulationsgruppe, der indeholder en kostprismodel for varens købspris, og derefter knytte en styklistekalkulationsgruppe til købte varer. Du skal derefter bruge en kostprismodel for styklistekalkulationsgruppen, når du udfører styklistekalkulationer, der bruger planlagte omkostninger, for at beregne salgsprisen for producerede varer. 
 
 Købsprisposterne for varer bruges også kun som referenceoplysninger. Ved at ændre status for en vares købsprispost fra **Venter** til **Aktiv** kan du opdatere varens basiskøbspris. Basiskøbsprisen er dog ikke lokationsspecifik, og den kan tilsidesættes manuelt. Varens basiskøbspris bruges som standardkøbspris på indkøbsordrer.
+
+
 
 

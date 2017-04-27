@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16212
 ms.assetid: c9d1b9df-82e8-4b3a-a13c-166df8b9718e
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-call-center-catalog"></a>Oprette et callcenter-katalog
 
+[!include[banner](includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over processen til oprettelse af et katalog for et callcenter. 
 
-I et call center kan du bruge produktkataloger til at identificere de produkter, du vil tilbyde kunderne. Call centre bruger typisk trykte kataloger. Udformning og produktion af et trykt katalog håndteres uden for Microsoft Dynamics 365 for operationer. Du kan oprette og gemme en digital form af et katalog i detail- og handel i Dynamics 365 for operationer ved hjælp af de forms, der bruges til at konfigurere retail online kataloger. Før du kan oprette et katalog, skal du konfigurere produktsortimenter og tildele sortimenterne til et call center. Derefter føjer du produkter til kataloget ved at vælge produkter fra disse sortimenter. Når der er føjet produkter til kataloget, og kataloget er fuldført, skal du validere kataloget for at kontrollere dataene. Derefter skal du sende kataloget til gennemsyn og godkendelse. Når kataloget er godkendt, kan det udgives. Når der er oprettet et call center-katalog, kan du tage et øjebliksbillede af katalogdataene på det tidspunkt, hvor kataloget udgives. Den funktion til øjebliksbillede giver dig adgang til en bestemt version af kataloget, selvom kataloget senere bliver ændret og opdateret. Call center-kataloger kan også konfigureres til at medtage følgende valgfri funktioner.
+I et call center kan du bruge produktkataloger til at identificere de produkter, du vil tilbyde kunderne. Call centre bruger typisk trykte kataloger. Udformning og produktion af et trykt katalog håndteres uden for Microsoft Dynamics 365 for Operations. Du kan dog oprette og gemme en digital udgave af et katalog i Detail og handel i Dynamics 365 for Operations ved hjælp af de samme formularer, som du bruger til at konfigurere detailkataloger. Før du kan oprette et katalog, skal du konfigurere produktsortimenter og tildele sortimenterne til et call center. Derefter føjer du produkter til kataloget ved at vælge produkter fra disse sortimenter. Når der er føjet produkter til kataloget, og kataloget er fuldført, skal du validere kataloget for at kontrollere dataene. Derefter skal du sende kataloget til gennemsyn og godkendelse. Når kataloget er godkendt, kan det udgives. Når der er oprettet et call center-katalog, kan du tage et øjebliksbillede af katalogdataene på det tidspunkt, hvor kataloget udgives. Den funktion til øjebliksbillede giver dig adgang til en bestemt version af kataloget, selvom kataloget senere bliver ændret og opdateret. Call center-kataloger kan også konfigureres til at medtage følgende valgfri funktioner.
 
 -   **Kildekoder** – Koder, der bruges til at spore kunderespons på bestemte katalogudsendelser.
 -   **Gratis produkter** – Produkter, der indgår i en kundes ordre uden merpris. Disse produkter føjes automatisk til ordren, når kildekoden til kataloget er angivet i orden.
@@ -62,11 +65,13 @@ Når et katalog er godkendt, kan du sende det til gennemsyn og godkendelse. Et k
 ## <a name="optional-add-source-codes-free-products-and-scripts"></a>Valgfrit: Tilføj kildekoder, gratis produkter og scripts
 Du kan også føje følgende elementer til et call center-katalog. Disse elementer er valgfrie.
 
--   **Kildekoder** kan bruges af firmaer, der fremstiller trykte kataloger til at spore kunderesponsen på bestemte kataloger. Kildespor udskrives ofte på bagsiden af et katalog og angives i den salgsordre, når en kunde foretager et køb. Hvis du vil tilføje et kildespor i kataloget, skal du først oprette en målgruppe. Målet markedet er normalt knyttet til en adresseliste ejede eller lejede.
+-   **Kildekoder** kan bruges af firmaer, der fremstiller trykte kataloger til at spore kunderesponsen på bestemte kataloger. Kildespor udskrives ofte på bagsiden af et katalog og er angivet på salgsordren, når en kunde foretager et køb. Hvis du vil tilføje en kildekode i kataloget, skal du først oprette en målgruppe. Målmarkedet er normalt knyttet til en ejet eller lejet adresseliste.
 -   **Gratis produkter** er salgsfremmende varer, der følger gratis med kundens ordre, når der henvises til kataloget.
 -   **Scripts** kan hjælpe arbejderen med at interagere med kunder inden for rammerne for et katalog eller et produkt i et katalog.
 
 ## <a name="publish-the-catalog"></a>Udgive kataloget
 Ved at udgive et katalog for et call center kan du færdiggøre produktoplysningerne i kataloget. Publikationen angiver også, at kataloget er klar til flere handlinger, du vil udføre. Du kan f.eks. oprette et trykt katalog. Du kan udgive dine kataloger manuelt, eller du kan bruge en batchproces til udgivelse på baggrund af en tidsplan. Før du kan udgive et katalog, skal kataloget være valideret og godkendt. Hvis du vil ændre kataloget, når det er udgivet, kan du trække det tilbage og derefter udgive det igen.
+
+
 
 

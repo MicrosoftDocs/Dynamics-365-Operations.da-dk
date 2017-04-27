@@ -1,6 +1,6 @@
 ---
-title: Konfigurere globale adressekartoteker
-description: "I denne artikel beskrives de overvejelser og beslutninger, du skal foretage under planlægningen, før du kan oprette og konfigurere det globale adressekartotek og eventuelle yderligere adressekartoteker i Microsoft Dynamics 365 for operationer. Nogle af afgørelser kræver, at du bekræfter de beslutninger, der er foretaget på andre områder for produktet, f.eks. organisationshierarkiet."
+title: "Konfigurer globale adressebøger"
+description: "I denne artikel beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen, før du opsætter og konfigurerer det globale adressekartotek og eventuelle supplerende adressekartoteker i Microsoft Dynamics 365 for Operations. Nogle af afgørelser kræver, at du bekræfter de beslutninger, der er foretaget på andre områder for produktet, f.eks. organisationshierarkiet."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Konfigurere globale adressekartoteker
+# <a name="configure-global-address-books"></a>Konfigurer globale adressebøger
 
-I denne artikel beskrives de overvejelser og beslutninger, du skal foretage under planlægningen, før du kan oprette og konfigurere det globale adressekartotek og eventuelle yderligere adressekartoteker i Microsoft Dynamics 365 for operationer. Nogle af afgørelser kræver, at du bekræfter de beslutninger, der er foretaget på andre områder for produktet, f.eks. organisationshierarkiet.
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen, før du opsætter og konfigurerer det globale adressekartotek og eventuelle supplerende adressekartoteker i Microsoft Dynamics 365 for Operations. Nogle af afgørelser kræver, at du bekræfter de beslutninger, der er foretaget på andre områder for produktet, f.eks. organisationshierarkiet.
 
 <a name="global-address-book"></a>Globalt adressekartotek
 -------------------
@@ -61,6 +64,8 @@ Når du opretter det globale adressekartotek, kan du oprette yderligere adressek
 Du kan når som helst oprette adressekartoteker, og du kan også indstille sikkerhedsparametre for adressekartotekerne, hvis du vil. Det er ikke nødvendigt at indstille sikkerhedsrettigheder for et adressekartotek, men hvis du ikke gør det, kan alle arbejdere i organisationen se alle partposter i det pågældende adressekartotek. Du kan indstille sikkerhedsrettigheder til partposter via adressekartoteker: Sikkerhedsrettigheder er baseret på teams. Denne fremgangsmåde garanterer, at det kun er de arbejdere, der er tildelt et team, der har adgang til et adressekartotek, der kan se partposterne i dette adressekartotek. Du skal vælge de teams, der har adgang til hver enkelt adressekartotek. For hvert adressekartotek kan du indstille sikkerhedsrettigheder, som tillader eller afviser adgang til bestemte teams. Hvis du giver teamrettigheder til et adressekartotek, kan alle medlemmer af teamet se posterne i adressekartoteket. Hvis du ikke giver teamadgang til et adressekartotek, kan medlemmerne i teamet ikke se adressekartoteket eller indholdet deraf. **Beslutning:**
 
 -   Hvilke teams skal have adgang til hvert nye adressekartotek, du opretter?
+
+
 
 
 

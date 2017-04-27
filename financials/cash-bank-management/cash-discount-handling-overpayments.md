@@ -1,5 +1,5 @@
 ---
-title: "Håndtering af kasserabat for overbetalinger"
+title: "Håndtering af kasserabat i forbindelse med overbetalinger"
 description: "Denne artikel indeholder scenarier, der viser, hvordan en betaling skal håndteres, når kunden skal have en kasserabat, men har betalt for meget."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Håndtering af kasserabat for overbetalinger
+# <a name="handling-cash-discounts-for-overpayments"></a>Håndtering af kasserabat i forbindelse med overbetalinger
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder scenarier, der viser, hvordan en betaling skal håndteres, når kunden skal have en kasserabat, men har betalt for meget. 
 
@@ -133,6 +136,8 @@ Kasserabatbeløbet reduceres fra 10,50 til 10,00. Betalingen og fakturaen anses 
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Kasserabatten (feltet **Hovedkonto til debitorrabatter** på siden **Kasserabatter**) | 10,50        |               |
 | Debitor                                                                              |              | 10,50         |
+
+
 
 
 

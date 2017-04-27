@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbejde med eksterne leverandører
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
 
 Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 for Operations. Det gør det muligt for kreditorer at arbejde med oplysninger om købsordrer, fakturaer og konsignationslager. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre. Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen for kreditorsamarbejde, i [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
@@ -64,11 +67,11 @@ Hvis du vil dele prisoplysninger såsom enhedspris, rabatter og gebyrer via brug
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbejde med indkøbsordrer, når du bruger kreditorsamarbejde
 ### <a name="sending-a-po-to-the-vendor"></a>Afsendelse af en indkøbsordre til kreditoren
 
-Indkøbsordrer fremstilles i Dynamics 365 for Operations. Når Indkøbsordren har statussen **godkendt**, du sender til leverandøren ved hjælp af den ** sender bekræftelse ** handling på den **indkøbsordre** side. Indkøbsordrens status ændres til **Til eksternt gennemsyn**. Når indkøbsordren er blevet sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i kreditorsamarbejdets grænseflade, hvor de kan acceptere, afvise eller foreslå ændringer til ordren. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
+Indkøbsordrer fremstilles i Dynamics 365 for Operations. Når IO'en har statussen **Godkendt**, sender du den til kreditoren ved hjælp af handlingen **Send til bekræftelse** på siden **Indkøbsordre**. Indkøbsordrens status ændres til **Til eksternt gennemsyn**. Når indkøbsordren er blevet sendt, kan kreditoren se den på siden **Indkøbsordrer til gennemsyn** i kreditorsamarbejdets grænseflade, hvor de kan acceptere, afvise eller foreslå ændringer til ordren. Leverandøren kan også tilføje kommentarer for at kommunikere oplysninger, f.eks. ændringer af IO'en. Hvis du vil henlede kreditorens opmærksomhed på den nye IO, kan du også bruge udskriftsstyringssystemet til at sende IO'en via e-mail.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekræftelse og accept af indkøbsordre hos kreditoren
 
-Når en kreditor har accepteret en indkøbsordre, kan indkøbsordren bekræftes automatisk, eller det kan være nødvendigt at bekræfte den manuelt. Dette afhænger af, om den ** kreditor aktivering ** er indstillet til **aktive (PO er bekræftet automatisk)** for leverandøren eller til **aktive (PO er ikke bekræftet automatisk)**.  
+Når en kreditor har accepteret en indkøbsordre, kan indkøbsordren bekræftes automatisk, eller det kan være nødvendigt at bekræfte den manuelt. Dette afhænger af, om feltet **Aktivering af kreditor** er angivet til **Aktiv (IO bekræftes automatisk)** for kreditoren eller til **Aktiv (IO bekræftes ikke automatisk)**.  
 
 I nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af hvordan kreditoren reagerer, når du sender dem en indkøbsordre, der skal bekræftes.
 
@@ -102,12 +105,12 @@ I nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af
 <li>Udskifte en vare.</li>
 </ul>
 Oplysninger om pris og gebyrer kan ikke ændres af kreditoren. Forslag til ændringer af disse kan foretages ved hjælp af noter.</td>
-<td>Svaret kreditor er registreret som <strong>accepteres med ændringer</strong>, <strong></strong>og status for Indkøbsordren forbliver <strong>ekstern revision</strong>.</td>
+<td>Kreditorens svar registreres som <strong>Accepteret med ændringer</strong>, <strong></strong> og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-Du kan bruge den **indkøbsordre****forberedelse** arbejdsområde til at overvåge hvilken kreditoren har reageret på POs. Arbejdsområdet indeholder to lister, der indeholder ordrer med status **ekstern revision**:
+Du kan bruge **Indkøbsordre** arbejdsområdet **Forberedelse** til at overvåge, hvilke IO'er kreditoren har reageret på. Arbejdsområdet indeholder to lister, der indeholder indkøbsordrer med status **Til eksternt gennemsyn**:
 
 -   Til eksternt gennemsyn kræver handling.
 -   Til eksternt gennemsyn, der venter på svar fra kreditor.
@@ -125,7 +128,7 @@ Når du annullerer en indkøbsordre, ændres statussen til **Godkendt**. Du skal
 Du kan føje vedhæftede filer, f.eks. billeder og noter, til indkøbsordren ved hjælp af dokumentstyringssystemet. De vedhæftede filer, der er tilføjet med begrænsning af typen **Ekstern**, vil være synlig for kreditoren, når du sender indkøbsordren til dem.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Købsordres statusser og versioner
-I dette afsnit beskrives de forskellige statusser, som en indkøbsordre kan have op til det tidspunkt, når den er bekræftet, og hvornår nye versioner af indkøbsordren gøres tilgængelige for kreditoren. Der er forskelle i, afhængigt af om du bruger ændringsstyring for indkøbsordrer. 
+I dette afsnit beskrives de forskellige statusser, som en indkøbsordre kan have op til det tidspunkt, når den er bekræftet, og hvornår nye versioner af indkøbsordren gøres tilgængelige for kreditoren. Der er forskelle heri, afhængigt af om du bruger ændringsstyring for indkøbsordrer. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versioner og statusser, hvis du ikke bruger ændringsstyring
 
@@ -168,6 +171,8 @@ Hvis du bruger konsignationslager, kan kreditorer bruge kreditorsamarbejde til a
 -   **Indkøbsordrer, der forbruger konsignationslager** - Indkøbsordrer for konsignationslager genereres, når ejerskabet af lageret ændres fra kreditoren til din virksomhed. En produktkvittering bogføres på samme tid. Disse konsignationindkøbsordrer vises kun på siden **Indkøbsordrer, der forbruger konsignationslager**. De er ikke inkluderet på siden **Alle bekræftede indkøbsordrer** i modulet **Kreditorsamarbejde**.
 -   **Produkter, der er modtaget fra konsignationslager** - Denne side viser en liste over alle de transaktioner, hvor ejerskabet af produkter er blevet overført fra kreditoren til din virksomhed. Kreditorer kan bruge disse oplysninger til at fakturere kunden.
 -   **Disponibelt konsignationslager** - Denne side viser kreditorejede disponible konsignationslager, der er modtaget på dit lagersted.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer
 
+[!include[banner](../includes/banner.md)]
+
+
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan indtægt, skat eller afgifter redegøres for på en fritekstfaktura. Alle beløb, der skal tages redegøres for, når fritekstfakturaen journaliseres, har en eller flere regnskabsfordelinger.
 
 <a name="accounting-distributions"></a>Regnskabsfordelinger
@@ -35,7 +38,7 @@ Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres f
 
 Du kan bruge følgende knapper på siden Fritekstfaktura til at få vist og eventuelt ændre regnskabsfordelingerne for hvert beløb på fritekstfakturaen.
 
--   **Fordel beløb**– få vist og rediger regnskabsfordelinger for en enkelt linje og underordnede linjer, som skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
+-   **Distribuer beløb** – Vis og ret de regnskabsmæssige fordelinger for en enkelt linje og evt. underordnede linjer, f.eks. skatter eller afgifter. Du kan også få vist og redigere regnskabsfordelinger for den underordnede linje direkte fra siden Momstransaktioner eller siden Gebyrposter.
     -   Ret overskriftsbeløb i fritekstfakturaer, f.eks. afgifter eller valutaafrundingsbeløb.
     -   Ret linjebeløb i fritekstfaktura.
 -   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjer i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
@@ -132,5 +135,7 @@ Regnskabsfordelinger for skat kan ikke oprettes, før der er beregnet skat. Hvis
 
 ## <a name="subledger-journals-for-free-text-invoices"></a>Reskontrokladder til fritekstfakturaer
 Før du bogfører en fritekstfaktura, kan du få vist den komplette regnskabsenhed for fakturaen, hvilket omfatter debiteringer og krediteringer til kontrol af, at fakturaen bogføres på de rigtige konti. Denne visning af hele regnskabsenheden kaldes en reskontrokladde. Hvis kladdeposteringen for reskontro er forkert, når du gennemser den før journalisering af fritekstfakturaen, kan du ikke ændre kladdeposteringen for reskontroen. I stedet skal du redigere de regnskabsmæssige fordelinger eller posteringsprofilen. De regnskabsmæssige fordelinger bruges til at definere én side af regnskabsenheden, debiteringen eller krediteringen. Den modsvarende kontopost for reskontrokladde oprettes ud fra posteringsprofiler, f.eks fra debitorkontoen eller afgiften.
+
+
 
 

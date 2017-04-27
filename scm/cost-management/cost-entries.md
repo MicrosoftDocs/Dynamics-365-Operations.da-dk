@@ -40,7 +40,7 @@ Der er registreret en overførselsjournalhændelse. Hændelsen overfører et eks
 
 ### <a name="example-2-cost-entries-are-created"></a>Eksempel 2: Der er oprettet omkostningsposter
 
-Der er registreret en overførselsjournalhændelse. Hændelsen overfører ét eksemplar af vare A fra webstedet 1 til 2-webstedet. Lagerdimensionen for lokationen betragtes som en del af omkostningsobjektet. Hændelsen opretter derfor to lagerposteringer og to omkostningsposter.
+Der er registreret en overførselsjournalhændelse. Hændelsen overfører ét eksemplar af vare A fra websted 1 til websted 2. Lagerdimensionen for lokationen betragtes som en del af omkostningsobjektet. Hændelsen opretter derfor to lagerposteringer og to omkostningsposter.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Eksempel 3: Der oprettes én omkostningspost
 
@@ -59,11 +59,11 @@ På den nye side **Omkostningsposter** kan du få vist og styre registreringer a
 | 00002   | 20-01-2015 | Indkøbsordre | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31-01-2015 | Tilpasning     | 100001 | 0000101 |               |               |          | 15,00   |
 
-Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dokumentdato. **Bemærk:** omkostningsposter er kun tilgængelige for [omkostningsobjekter](cost-object.md) eller frigivne produkter.
+Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dokumentdato. **Bemærk!** Omkostningsposter er kun tilgængelige for [omkostningsobjekter](cost-object.md) eller frigivne produkter.
 
 <a name="see-also"></a>Se også
 --------
 
-[Cost objects](cost-object.md)
+[Omkostningsobjekter](cost-object.md)
 
 

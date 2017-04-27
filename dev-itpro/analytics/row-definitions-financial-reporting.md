@@ -45,7 +45,7 @@ En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver
 En rækkedefinition kan indeholde op til 20.000 rækker med økonomiske dimensioner og kan indeholde følgende oplysninger:
 
 -   Beskrivende tekst i form af afsnitsoverskrifter, linjer og mellemrum, der har en forklarende funktion i rapporten, f.eks. **Kontanter** eller **Samlet omsætning**.
--   Links til økonomiske data, der kan indeholde dimensionsværdier i Microsoft Dynamics 365 for operationer **Bemærk:** du kan oprette en rækkedefinition til at hente data fra de økonomiske dimensioner-systemet hver gang der genereres en rapport.
+-   Links til økonomiske data, der kan indeholde dimensionsværdier i Microsoft Dynamics 365 for Operations **Bemærk!** Du kan oprette en rækkedefinition til at hente data fra systemet med de økonomiske dimensioner, hver gang der genereres en rapport.
 -   Rækketotaler og formler, der er baseret på de tilknyttede økonomiske data
 
 Hver række i en rækkedefinition indeholder normalt en af følgende typer oplysninger:
@@ -64,7 +64,7 @@ En dimension er et skæringspunkt for data og værdier. Du kan gruppere data og 
 
 | Indstilling                | Beskrivelse                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimension             | Det mønster, der identificerer den dimension, der skal føjes til rækkedefinitionen. Dette mønster indeholder et &-tegn (&) eller nummertegn (\#) for hver enkelt stilling i dimensioner. Generelt skal du bruge alle plustegn for hovedkontodimensionen og alle nummertegn til andre dimensioner. |
+| Dimension             | Det mønster, der identificerer den dimension, der skal føjes til rækkedefinitionen. Dette mønster indeholder et (&) eller et nummertegn (\#) for hver enkelt position i dimensionerne. Generelt skal du bruge alle plustegn for hovedkontodimensionen og alle nummertegn til andre dimensioner. |
 | Start på dimensionsområde | Den første værdi for den dimension, der skal føjes til rækkedefinitionen.                                                                                                                                                                                                                 |
 | Slut på dimensionsområde   | Den sidste værdi for den dimension, der skal føjes til rækkedefinitionen.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Udfør følgende trin for at føje dimensioner til en rækkedefinition.
 1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2.  I menuen **Rediger** skal du klikke på **Indsæt rækker fra dimensioner**.
 3.  I dialogboksen **Indsæt rækker fra dimensioner **i rækken **Dimensioner** skal du markere cellen for den dimension, der skal overføres til rækkedefinitionen, og derefter klikke på **Alle &&&**.
-4.  For at begrænse rækkedefinitionen til et bestemt område af dimensionsværdier skal du angive startdimensionsværdien i cellen **Start på dimensionsområde **og derefter angive slutdimensionsværdien i cellen **Slut på dimensionsområde**. Hvis du vil medtage alle værdier for den valgte dimension, skal du lade disse celler være tomme. **Bemærk:** jokertegn (\* eller?) områder i dimension ikke returnerer alle resultater, du vil, afhængigt af hvordan databasen ERP samler data.
+4.  For at begrænse rækkedefinitionen til et bestemt område af dimensionsværdier skal du angive startdimensionsværdien i cellen **Start på dimensionsområde **og derefter angive slutdimensionsværdien i cellen **Slut på dimensionsområde**. Hvis du vil medtage alle værdier for den valgte dimension, skal du lade disse celler være tomme. **Bemærk!** Jokertegn (\* eller ?) i dimensionsområder returnerer muligvis ikke alle de ønskede resultater, afhængigt af hvordan ERP-databasen indsamler data.
 5.  I feltet **Startrækkekode** skal du angive rækkekoden for den første dimensionsværdi, der skal føjes til rækkedefinitionen.
-6.  I feltet **Forøg hver række med** skal du angive afstanden mellem på hinanden følgende rækkekoder. Hvis den første række kode er 100, og den stigende værdi er 30, har de første nye rækker, koder, 100, 130, 160, 190 og 220. Brug en intervalværdi indeholder tilstrækkelig plads til at indsætte nye formater og formel rækker.
+6.  I feltet **Forøg hver række med** skal du angive afstanden mellem på hinanden følgende rækkekoder. Hvis den første rækkekode er 100, og den stigende værdi er 30, har de første nye rækker koderne 100, 130, 160, 190 og 220. Brug en forøgelsesværdi, der indeholder tilstrækkelig plads til at indsætte nye formater og formelrækker.
 7.  Klik på **OK**. Der tilføjes én linje for hver af de valgte dimensionsværdier i rækkedefinitionen.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a>Justere afrunding i en rækkedefinition
@@ -146,7 +146,7 @@ Den formatering, der er angivet i rækkedefinitionen, tilsidesætter den formate
 
 1.  Åbn den rækkedefinition, der skal ændres, i Report Designer.
 2.  Marker de celler, der skal formateres. Du kan markere flere celler ved at holde Ctrl-tasten nede, mens du markerer cellen.
-3.  Klik på værktøjslinjeknappen for det format, du vil anvende. For eksempel for at indrykke en række, Marker rækken, og klik derefter på **Forøg indrykning**![Forøg indrykning](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Forøg indrykning") på værktøjslinjen.
+3.  Klik på værktøjslinjeknappen for det format, du vil anvende. Hvis du for eksempel vil indrykke en række, skal du markere rækken og derefter klikke på **Forøg indrykning** ![Forøg indrykning](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Forøg indrykning") på værktøjslinjen.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner, mens du designer rapporter
 
@@ -173,6 +173,6 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 <a name="see-also"></a>Se også
 --------
 
-[Finansiel rapportering for Microsoft Dynamics 365 til operationer](financial-reporting-intro.md)
+[Økonomirapportering i Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

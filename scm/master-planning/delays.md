@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Forsinkelser
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om forsinkede datoer i varedisponering. En forsinket dato er en realistisk forfaldsdato, som en transaktion får, hvis den tidligste dato for udførelse, som Varedisponering beregner, er senere end den ønskede dato.
 
 Varedisponering kan beregne den tidligste dato for udførelse af en transaktion, der er baseret på leveringstider, tilgængelighed af materiale, disponibel kapacitet og forskellige planlægningsparametre. 
@@ -41,11 +44,13 @@ Du kan konfigurere, hvordan forsinkelser beregnes for en disponeringsgruppe. Du 
 
 På siden **Varedisponeringsparametre** kan du angive starttidspunktet for beregningen af forsinkelser. Hvis en ordre opfyldes efter dette tidspunkt, lægges der en forsinkelse på én dag til ordrens forsinkede dato. 
 
-**Bemærk:** i tidligere versioner kaldtes beregnede forsinkelser *terminssætninger*, den forsinkede dato var kendt som den *terminsdato*, og en forsinket transaktion kaldtes *en postering, der senere sæt*.
+**Bemærk!** I tidligere versioner blev beregnede forsinkelser kaldt *terminssætninger*, den forsinkede dato blev kaldt *terminsdato*, og en forsinket transaktion blev kaldt *en transaktion angivet i fremtiden*.
 
 <a name="see-also"></a>Se også
 --------
 
 [Disponeringsindstillinger](coverage-settings.md)
+
+
 
 

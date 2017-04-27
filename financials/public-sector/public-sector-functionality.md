@@ -33,25 +33,25 @@ Microsoft Dynamics 365 for Operations har forretningsprocesser, som er fælles f
 
 Brug følgende funktion til den offentlige sektor for at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentlige myndigheder. De berørte forretningsprocesser omfatter:
 
--   Fondens regnskab, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og Finans.
+-   Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.
 -   Foreløbige budgetter, fordelinger og forpligtelser.
--   Faktureringskoder, faktureringsklassifikationer, handel partnerkoder og brugerdefinerede felter til fri tekst fakturaer.
--   Finans behandling af årsafslutningen, som omfatter behæftelser og forpligtelser på indkøbsordrer.
--   Elektroniske betalinger til kreditorer, signatur sider for rapporter, betaling og fakturaindbetaling indeholder.
+-   Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.
+-   Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.
+-   Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.
 
  Du kan finde flere oplysninger under følgende emner:
 
 -   [Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)
--   [Gæld i den offentlige sektor](accounts-payable-public-sector.md)
--   [Tilgodehavender i den offentlige sektor](accounts-receivable-public-sector.md)
--   [Budgettering i den offentlige sektor](budgeting-public-sector.md)
--   [Anlæg i den offentlige sektor](fixed-asset-public-sector.md)
--   [Franske regulerende funktioner](/localizations/europe/public-sector-accounting-france.md)\*
--   [Finansbogholderiet i den offentlige sektor](general-ledger-public-sector.md)
+-   [Kreditorer i den offentlige sektor](accounts-payable-public-sector.md)
+-   [Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
+-   [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
+-   [Anlægsaktiver i den offentlige sektor](fixed-asset-public-sector.md)
+-   [Franske lovmæssige funktioner](/localizations/europe/public-sector-accounting-france.md)\*
+-   [Finans i den offentlige sektor](general-ledger-public-sector.md)
 -   [Indkøb og forsyning i den offentlige sektor](procurement-sourcing-public-sector.md)
 -   [Sikkerhedsroller i den offentlige sektor](security-roles-public-sector.md)
 
-\*Gælder kun, hvis organisationen er i Frankrig.
+\* Gælder kun, hvis organisationen er i Frankrig.
 
 ## <a name="why-do-i-need-the-public-sector-configuration-key"></a>Hvorfor skal jeg bruge konfigurationsnøglen for offentlig sektor?
 Den **offentlige sektors** konfigurationsnøgle aktiverer sider og kontrolelementer, som supplerer kerneapps. Du kan aktivere eller deaktivere denne nøgle på siden **Licenskonfiguration**.
@@ -61,9 +61,9 @@ Følgende tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er
 
 |            |                                                                                                                                                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detail** | **Description**                                                                                                                                                                                                     |
+| **Detalje** | **Beskrivelse**                                                                                                                                                                                                     |
 | Overordnet nøgle | Ingen                                                                                                                                                                                                                |
-| Underordnede nøgler | **Avanceret post** konfigurationsnøglen (AdvancedLedgerEntry) **Public sector 1099G** configuration key til (Tax1099G) **offentlig sektor 1099S** konfigurationsnøglen (Tax1099S) **fransk regulerende** configuration key til |
+| Underordnede nøgler | **Avanceret finanspost**-konfigurationsnøgle (AdvancedLedgerEntry) **Offentlig sektor 1099G**-konfigurationsnøgle (Tax1099G) **Offentlig sektor 1099S**-konfigurationsnøgle (Tax1099S) **Franske myndighedskrav**-konfigurationsnøgle |
 
 
 <a name="see-also"></a>Se også

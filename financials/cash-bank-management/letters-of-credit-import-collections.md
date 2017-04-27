@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Remburser og importinkassoer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser.
 
 <a name="letters-of-credit"></a>Remburser
 -----------------
 
-Remburser, der bruges til internationale transaktioner og hjælper med at sikre, at betalinger skal foretages. En remburs er en aftale, der er udstedt af en bank, hvor banken accepterer at sikre betaling på vegne af en køber, forudsat at betingelserne i aftalen mellem køber og sælger er opfyldt. En remburs kaldes også en remburs (DC).
+Remburser bruges i internationale transaktioner og er med til at garantere sikre betalinger. En remburs er en aftale, der udfærdiges af en bank, hvor banken accepterer at garantere betaling på vegne af en køber forudsat, at vilkårene i aftalen mellem køberen og sælgeren overholdes. En remburs også kaldes et akkreditiv.
 
 I en importremburs er den juridiske enhed køberen eller ansøgeren til rembursen. I en eksportremburs er den juridiske enhed sælgeren eller beneficianten af rembursen. Følgende parter er involveret i en remburs:
 
@@ -50,5 +53,7 @@ En remburs kan enten være **genkaldelig** eller **uigenkaldelig**. Typen af en 
 En importinkasso er en aftale mellem banken og eksportøren (sælger), hvor banken accepterer at levere forsendelsesdokumentationen til den internationale importør (køber). Banken forventes at levere forsendelsesdokumentationen ved modtagelse af betaling for de sendte varer i form af kontanter eller ved modtagelse af en underskrevet veksel til dækning af betalingen. 
 
 En importinkasso er med til at garantere, at sælger betales, når køberen afhenter forsendelsesdokumenterne for at tage imod levering af de importerede varer.
+
+
 
 

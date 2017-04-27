@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-sepa-direct-debit-mandate"></a>Konfigurere SEPA-bemyndigelse til direkte debitering.
 
+[!include[banner](../includes/banner.md)]
 
 
-En direkte SEPA-debitering (fælles eurobetalingsområde (SEPA)) gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at debitoren er tildelt en signeret bemyndigelse til kreditor. Den bemyndigelse, som debitor underskriver, giver kreditoren tilladelse til at opkræve en betaling og beder kundens bank om at betale opkrævningen. Dette emne er organiseret til at vise processen til oprettelse af SEPA direkte debitering mandater.
+
+
+En direkte SEPA-debitering (fælles eurobetalingsområde (SEPA)) gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at debitoren er tildelt en signeret bemyndigelse til kreditor. Den bemyndigelse, som debitor underskriver, giver kreditoren tilladelse til at opkræve en betaling og beder kundens bank om at betale opkrævningen. Dette emne er organiseret til at vise processen til oprettelse af SEPA-bemyndigelser til direkte debitering.
 
 ## <a name="prerequisites"></a>Forudsætninger
 Følgende tabel viser de forudsætninger, der skal være på plads, før du starter.
@@ -37,15 +40,17 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/område | Den primære adresse for den juridiske enhed skal være i de følgende lande: Østrig, Belgien, Tyskland, Spanien, Frankrig, Italien eller Nederlandene. |
 
-1. Oprette en nummerserie til direkte debitering mandater hvert direkte debitering mandat skal have et entydigt nummer. Brug siden **Nummerserier** til at oprette en nummerserie for bemyndigelser til direkte debitering. Du skal bruge denne identifikator til at tildele nummerserien til systemet til bemyndigelser til direkte debitering på siden **Debitorparametre**.
+1. Opret en nummerserie til bemyndigelser til direkte debitering. Hver bemyndigelse til direkte debitering skal have et entydigt nummer. Brug siden **Nummerserier** til at oprette en nummerserie for bemyndigelser til direkte debitering. Du skal bruge denne identifikator til at tildele nummerserien til systemet til bemyndigelser til direkte debitering på siden **Debitorparametre**.
 
-2. Angive debitorparametre for direkte debitering mandater brugen af **Accounts receivable parameters** side til at konfigurere parametre for direkte debitering mandater. Til at angive parametrene, på den **direkte debitering** fanen, ændre standardparametrene, som du har brug for. Derefter på den **nummerserier** fanen, opdatere den **direkte debet mandat ID** med den nummerserie, du har angivet tidligere.
+2. Angiv debitorparametre for bemyndigelser til direkte debitering: Brug siden **Debitorparametre** til at konfigurere parametre for bemyndigelser til direkte debitering. For at angive parametrene under fanen **Direct Debit** skal du ændre standardparametrene efter behov. Under fanen **Nummerserier** skal du derefter opdatere feltet **Id for bemyndigelse til Direct Debit** med den nummerserie, du har angivet tidligere.
 
-3. Oprette en betalingsmåde for direkte debitering sikrer, at du skal konfigurere en betalingsmåde for direkte debitering mandater. Du kan bruge denne betalingsmåde til at forespørge om fakturaer, der skal genereres direkte debetbetalinger for. Brug siden **Betalingsmetode** til at konfigurere betalingsmetoden. Hvis du vil konfigurere en betalingsmetode for bemyndigelse af direkte debitering, skal du følge følgende fremgangsmåde for en betalingsmetode:
+3. Konfigurer en betalingsmåde for bemyndigelser til direkte debitering. Du skal angive en betalingsmåde for bemyndigelser til direkte debitering. Du kan bruge denne betalingsmåde til at forespørge om fakturaer, der skal genereres direkte debetbetalinger for. Brug siden **Betalingsmetode** til at konfigurere betalingsmetoden. Hvis du vil konfigurere en betalingsmetode for bemyndigelse af direkte debitering, skal du følge følgende fremgangsmåde for en betalingsmetode:
 
 -   I feltet **Betalingstype** skal du vælge **Elektronisk betaling**.
--   Valgfrit: Hvis du forventer, at alle dine kunder skal have flere bemyndiger, i den **periode** vælge **faktura**. Der oprettes en separat betaling for hver faktura, og hver betaling vil bruge det mandat, der er angivet på fakturaen.
+-   Valgfrit: Hvis du forventer, at hver af dine kunder skal have flere bemyndigelser, skal du i feltet **Periode** vælge **Faktura**. Der oprettes en separat betaling for hver faktura, og hver betaling bruger den bemyndigelse, der er angivet for fakturaen.
 -   Vælg indstillingen **Kræv bemyndigelse** for at oprette betalinger ved hjælp af bemyndigelser til direkte debitering. Indstillingen **Kræv bemyndigelse** er kun tilgængelig, hvis du vælger **Elektronisk betaling** i feltet **Betalingstype**.
 
-Se også [direkte debitering oversigt](sepa-direct-debit-overview.md) 
+Se også [Oversigt over direkte debitering](sepa-direct-debit-overview.md) 
+
+
 

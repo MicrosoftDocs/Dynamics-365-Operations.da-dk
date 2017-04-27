@@ -1,5 +1,5 @@
 ---
-title: "Produktionen ordre standarder i produktionsudførelse"
+title: "Produktionsordrestandarder i produktionsudførelse"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Produktionen ordre standarder i produktionsudførelse
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Produktionsordrestandarder i produktionsudførelse
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Skal du nøje overveje alle indstillinger på den **produktion ordre standarder** siden før arbejderne begynder at foretage registreringer på produktionsjob. Hvis dit firma bruger funktionerne for flere lokationer, kan du oprette forskellige standarder for produktionsordrer for hvert websted. Ordrestandarden for integration med Produktionsstyring er angivet under følgende faner på siden **Produktionsordrestandarder**:
+
+Overvej nøje alle indstillinger på siden **Produktionsordrestandarder**, før arbejdere går i gang med at foretage registreringer på produktionsjob. Hvis dit firma bruger funktionalitet med flere steder, skal du måske konfigurere forskellige standarder for produktionsordrer for hvert sted. Ordrestandarden for integration med Produktionsstyring er angivet under følgende faner på siden **Produktionsordrestandarder**:
 
 -   **Generelt** – Generelle ordrestandarder for produktionsjob i produktionsudførelse.
 -   **Start** – Ordrestandarder, der bruges, når produktionsjob eller operationer er startet.
@@ -68,6 +71,8 @@ Materialeforbrug under færdigmeldingsprocessen for en produktionsordre styres a
 -   **Varetrækprincip** – Når en produktionsordre færdigmeldes, forbruges mængder af materialer i overensstemmelse med varetrækprincippet, der konfigureres på produktionsstyklistelinjerne. Kun styklistelinjerne, hvor varetrækprincippet er indstillet til **Slut**, forbruges.
 -   **Altid** – Mængder af materialer, der er proportionel med den mængde, der færdigmeldes, vil altid blive brugt.
 -   **Aldrig** – Mængder af materialer vil aldrig blive brugt.
+
+
 
 
 

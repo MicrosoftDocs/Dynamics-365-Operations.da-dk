@@ -1,6 +1,6 @@
 ---
-title: Samarbejde med kreditorer ved at bruge kreditorportalen
-description: "I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Disse oplysninger gælder kun for februar-2016 &amp;maj 2016 versioner af Dynamics AX."
+title: "Samarbejde med kreditorer ved hjælp af kreditorportalen"
+description: "I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved at bruge kreditorportalen
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbejde med kreditorer ved hjælp af kreditorportalen
 
-I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Disse oplysninger gælder kun for februar-2016 &amp;maj 2016 versioner af Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016. Kreditor portal-funktionalitet er blevet erstattet af udvidede kreditor samarbejdsfunktioner i Dynamics 365 operationer version 1611 opdager. Finde flere oplysninger om den nye leverandør samarbejdsfunktioner [brug af leverandør samarbejde sammen med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
+
+I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016.
+
+Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016. Kreditorportal-funktionaliteten er blevet erstattet af udvidede kreditorsamarbejdsfunktioner i Dynamics 365 for Operations version 1611. Du kan finde flere oplysninger om den nye kreditorsamarbejdsfunktion under [Brug af leverandørsamarbejde til at arbejde med eksterne leverandører](vendor-collaboration-work-external-vendors.md).  
 
 Kreditorportalen henvender sig til leverandører, der ikke har EDI-integration (electronic data interchange) med Microsoft Dynamics AX til udveksling af indkøbsordreoplysninger (IO). Portalen giver indkøbsagenter mulighed for at sende en IO til kreditoren og modtage et Bekræftet- eller Afvist-svar direkte i Dynamics AX.  
 
@@ -66,9 +69,9 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 | Du kan sende den nye version af indkøbsordren til kreditorportalen. | En ny version registreres på kreditorportalen, og status ændres til **Til eksternt gennemsyn**. |
 | Kreditoren godkender den nye version af IO'en.           | Statussen ændres til **Bekræftet**.                                                                |
 
-Klik for at se de versioner af Indkøbsordren, der er sendt til leverandøren og leverandørens svar, **kladder**&gt;**anmodninger om bekræftelse af** fra Indkøbsordren.  
+Hvis du vil se de versioner af indkøbsordren, der er sendt til kreditoren, og kreditorens svar, skal du klikke på **Kladder** &gt; **Anmodninger om bekræftelse** fra indkøbsordren.  
 
-Ordrer, der er sendt til kreditoren for et svar, og som har statussen **Til eksternt gennemsyn**, vises enten på listen **Indkøbsordrer, der er sendt til kreditorportal, afventer svar** eller listen **Indkøbsordrer, der er sendt til kreditorportal, kræver handling på svar**. Når du ændrer en ordre, der er sendt til kreditoren, så status ændres tilbage til **Godkendt**, vises ordren ikke længere på disse lister. Klik for at se, om der tidligere har været et svar til ordren fra leverandøren, **kladder**&gt;**anmodninger om bekræftelse af**.  
+Ordrer, der er sendt til kreditoren for et svar, og som har statussen **Til eksternt gennemsyn**, vises enten på listen **Indkøbsordrer, der er sendt til kreditorportal, afventer svar** eller listen **Indkøbsordrer, der er sendt til kreditorportal, kræver handling på svar**. Når du ændrer en ordre, der er sendt til kreditoren, så status ændres tilbage til **Godkendt**, vises ordren ikke længere på disse lister. Hvis du vil se, om der tidligere har været et svar til ordren fra leverandøren, skal du klikke på **Kladder** &gt; **Anmodninger om bekræftelse**.  
 
 Kreditorer behøver ikke at bekræfte indkøbsordren på kreditorportalen. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du bekræfte ordren manuelt i Dynamics AX. I dette tilfælde modtager du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser på kreditorportalen som en åben bekræftet ordre, som ikke har nogen svar. Desuden har kreditoren ikke længere mulighed for at bekræfte eller afvise indkøbsordren.  
 
@@ -97,5 +100,7 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 [Konfiguration af sikkerhed for brugere af kreditorsamarbejde](configure-security-vendor-portal-users.md)
 
 [Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

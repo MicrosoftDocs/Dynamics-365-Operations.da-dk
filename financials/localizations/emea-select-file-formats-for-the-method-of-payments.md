@@ -1,6 +1,6 @@
 ---
 title: "Filformater for betalingsmåder"
-description: "Dette emne beskriver de to metoder til hentning af filformater, som du kan bruge til en betalingsmåder."
+description: "Dette emne beskriver de to metoder til hentning af filformater, som du kan bruge til betalingsmåder."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,29 +27,34 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Filformater for betalingsmåder
 
-Dette emne beskriver de to metoder til hentning af filformater, som du kan bruge til en betalingsmåder.
+[!include[banner](../includes/banner.md)]
 
-Der er to metoder, du kan bruge til at få filformater til brug med metoder for betaling, elektronisk indberetning (ER)-filformater eller filformater X ++. Når du konfigurerer en betalingsmåde for en debitor eller kreditor, du angiver, hvilke filformater og standarder, der skal bruges til betalinger, og hvordan betalinger vil blive behandlet. Du kan vælge mellem følgende typer af formater:
+
+Dette emne beskriver de to metoder til hentning af filformater, som du kan bruge til betalingsmåder.
+
+Der er to metoder, som du kan bruge til at få filformater, der kan bruges til betalingsmetoder, filformater til elektronisk indberetning (ER) eller X++-filformater. Når du konfigurerer en betalingsmåde for en debitor eller kreditor, angiver du, hvilke filformater og standarder, der skal bruges til betalinger, og hvordan betalinger bliver behandlet. Du kan vælge mellem følgende typer af formater:
 
 -   Eksporter
 -   Importer
 -   Returner
 -   Remittering
 
-### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: Elektronisk indberetning-filformater
+### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: Filformater til elektronisk rapportering
 
-Filformater, der er baseret på ER konfigurationer, skal du importere konfigurationerne fra livscyklus Services (LCS). Yderligere oplysninger finder du [hente elektronisk indberetning konfigurationer fra levetidsservices](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du importerer rapportering konfigurationer for de filformater, bliver de importerede formater kan vælges på den **betalingsmåder** side. Processen til import og vælge filformater for Europa minder om proceduren for Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+Ved filformater, der er baseret på ER-konfigurationer, skal du importere konfigurationerne fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Når du har importeret rapporteringskonfigurationer for de pågældende filformater, kan de importerede formater vælges på siden **Betalingsmåder**. Processen til import og valg af filformater for Europa minder om proceduren for Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
 
-### <a name="method-2-x-file-formats"></a>Metode 2: X ++-filformater
+### <a name="method-2-x-file-formats"></a>Metode 2: X++-filformater
 
-For at vælge de filformater, der er baseret på X ++-kode, skal du benytte følgende fremgangsmåde.
+For at vælge filformater, der er baseret på X++-kode, skal du benytte følgende fremgangsmåde.
 
-1.  Gå til den **betalingsmåder** side.
-2.  På den **filformater** oversigtspanelet, skal du klikke på **Setup**.
-3.  Vælg fanen, der svarer til formatet filtype.
-4.  Vælg et filformat fra den **findes** og flytte den til den **valgte** liste med kontrolelementet pil.
-5.  Luk den **-filformater for betalingsmåder** side.
-6.  På den **-filformater** skal vælge filformatet, der bruges til betalingsmåden i feltet relevante fil format. De generelle indstillinger for elektronisk indberetning skal indstilles til **ingen** for X ++-filformater.
+1.  Gå til siden **Betalingsmåder**.
+2.  I **Filformater** oversigtspanelet skal du klikke på **Opsætning**.
+3.  Vælg den fane, der svarer til filformattypen.
+4.  Vælg et filformat på listen **Tilgængelige**, og flyt det til listen **Valgte** med pilkontrolelementet.
+5.  Luk siden **Filformater for betalingsmåder**.
+6.  Vælg det filformat i oversigtspanelet **Filformater**, der skal bruges til betalingsmåden fra det relevante filformatfelt. De generelle indstillinger for elektronisk rapportering skal indstilles til **Ingen** for X++-filformater.
+
+
 
 
 

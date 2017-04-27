@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Forkalkulation af produktionsordre
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om produktionsforkalkulation. Forkalkulation af produktion giver dig oplysninger om de budgetterede omkostninger til materiale- og kapacitetsforbrug til fremstilling af en vare i det planlagte produktionsordreantal. 
 
 Når du opretter en produktionsordre, skal du forkalkulere produktionsomkostningerne. Formålet er at beregne vare- og ruteforbruget i produktionsprocessen, fordi disse forkalkulationer danner grundlaget for efterfølgende planlægnings- og produktionsprocesser.
@@ -59,6 +62,8 @@ En forkalkulation giver dig også følgende oplysninger:
 -   Sammenligninger med omkostningsoplysninger fra tidligere produktioner
 -   Budgetterings- og prognoseoplysninger
 -   Forkalkulationer af den produktionsstørrelse, der kræves for at opretholde en bestemt omkostning.
+
+
 
 
 

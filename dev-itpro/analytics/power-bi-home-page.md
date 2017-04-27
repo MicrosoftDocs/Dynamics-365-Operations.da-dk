@@ -1,6 +1,6 @@
 ---
-title: Power BI-startside
-description: "Dette emne indeholder ressourcer til at hjælpe dig med at bruge strøm BI med Dynamics 365 for operationer."
+title: Startside for Power BI
+description: "Dette emne indeholder ressourcer til at hjælpe dig med at bruge Power BI sammen med Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,51 +24,56 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="power-bi-home-page"></a>Power BI-startside
+# <a name="power-bi-home-page"></a>Startside for Power BI
 
-Dette emne indeholder ressourcer til at hjælpe dig med at bruge strøm BI med Dynamics 365 for operationer.
+[!include[banner](../includes/banner.md)]
 
-<a name="power-bi-content-for-dynamics-365-for-operations"></a>Power BI indhold til Dynamics 365 til operationer
+
+Dette emne indeholder ressourcer til at hjælpe dig med at bruge Power BI sammen med Dynamics 365 for Operations.
+
+<a name="power-bi-content-for-dynamics-365-for-operations"></a>Power BI-indhold til Dynamics 365 for Operations
 ------------------------------------------------
 
-| **Feature area**                  | **Power BI indhold**                          | **Hvor du kan finde Power-BI indhold**                                                                                                                                                                                         | **Lær mere**                                                                                                                                                               |
+| **Funktionsområde**                  | **Power BI-indhold**                          | **Hvor du kan finde Power-BI indhold**                                                                                                                                                                                         | **Få mere at vide**                                                                                                                                                               |
 |-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Økonomistyring              | Finansielle resultater                         | Microsoft Dynamics livscyklus Services (LCS) (denne version af indhold pack understøtter Dynamics 365 for operationer version 1611 opdager.) PowerBI.com (denne version af indhold pack understøtter Microsoft Dynamics 365 for operationer 7.0 og 7.0.1). | [Økonomisk ydeevne strøm BI-indhold](financial-performance-power-bi-content-pack.md)                                               |
-|                                   | Styring af kredit- og samlinger             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Styring af menneskelig kapital          | Rekruttering af rapporter                            | LCS                                                                                                                                                                                                                            | [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md)                                                       |
-|                                   | Medarbejderens kompetencer og udvikling rapporter | LCS                                                                                                                                                                                                                            | [Medarbejderens kompetencer og udvikling strøm BI indhold](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
-|                                   | Organisatorisk oplæring rapporter               | LCS                                                                                                                                                                                                                            | [Organisatorisk oplæring strøm BI-indhold](organizational-training-analysis-power-bi-content-pack.md)                             |
-|                                   | Arbejdsstyrken målestok                             | LCS                                                                                                                                                                                                                            | [Arbejdsstyrken Metrics strøm BI indhold](workforce-analysis-power-bi-content-pack.md)                                                 |
-|                                   | Løn og frynsegoder rapporter             | LCS                                                                                                                                                                                                                            | [Løn og frynsegoder strøm BI indhold](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
-| Projektstyring og regnskab | Praksis manager                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Detail og handel               | Retail channel-ydelse                    | PowerBI.com                                                                                                                                                                                                                    | [Retail Channel ydeevne strøm BI indhold](retail-channel-performance-dashboard-power-bi-data.md)                 |
-| Supply Chain Management           | Omkostningsstyring                               | PowerBI.com                                                                                                                                                                                                                    |  [Cost management Power BI indhold](cost-management-content-pack.md)                                                          |
-|                                   | Salg og rentabilitet ydeevne           | LCS                                                                                                                                                                                                                            | [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)          |
-|                                   | Køb analyse af forbrug                       | LCS                                                                                                                                                                                                                            | [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md)                                                 |
-|                                   | Analyse af omkostningsregnskab                      | LCS                                                                                                                                                                                                                            | [Omkostningsregnskab analyse strøm BI-indhold](cost-accounting-analysis-content-pack.md)                                         |
-|                                   | Lagersted, ydeevne                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-|                                   | Produktion-ydeevne                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Økonomistyring              | Økonomisk performance                         | Microsoft Dynamics Lifecycle Services (LCS) (Denne version af indholdspakken understøtter Dynamics 365 for Operations version 1611). PowerBI.com (Denne version af indholdspakken understøtter Dynamics 365 for Operations 7.0 og 7.0.1). | [Driftsregnskab, Power BI-indhold](financial-performance-power-bi-content-pack.md)                                               |
+|                                   | Styring af kredit og inkasso             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Styring af menneskelig kapital          | Rekrutteringsrapporter                            | LCS                                                                                                                                                                                                                            | [Power BI-indhold til rekruttering](recruiting-analysis-power-bi-content-pack.md)                                                       |
+|                                   | Medarbejderkompetencer og udviklingsrapporter | LCS                                                                                                                                                                                                                            | [Power BI-indhold til medarbejderkompetencer og udvikling](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
+|                                   | Rapporter til organisatorisk uddannelse               | LCS                                                                                                                                                                                                                            | [Power BI-indhold til organisatorisk uddannelse](organizational-training-analysis-power-bi-content-pack.md)                             |
+|                                   | Arbejdsstyrkemetrikker                             | LCS                                                                                                                                                                                                                            | [Power BI-indhold til arbejdskraftmetrikker](workforce-analysis-power-bi-content-pack.md)                                                 |
+|                                   | Rapporter om kompensation og frynsegoder             | LCS                                                                                                                                                                                                                            | [Power BI-indhold til kompensation og frynsegoder](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
+| Projektstyring og regnskab | Praksischef                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+| Detail og handel               | Detailkanalperformance                    | PowerBI.com                                                                                                                                                                                                                    | [Detailkanalydelse, Power BI-indhold](retail-channel-performance-dashboard-power-bi-data.md)                 |
+| Supply Chain Management           | Omkostningsstyring                               | PowerBI.com                                                                                                                                                                                                                    |  [Power BI-indhold til omkostningsstyring](cost-management-content-pack.md)                                                          |
+|                                   | Salgs- og rentabilitetsperformance           | LCS                                                                                                                                                                                                                            | [Salg og rentabilitetsydeevne, Power BI-indhold](sales-profitability-performance-content-pack.md)          |
+|                                   | Købsforbrugsanalyse                       | LCS                                                                                                                                                                                                                            | [Power BI-indhold til købsforbrugsanalyse](purchase-content-pack-for-power-bi.md)                                                 |
+|                                   | Omkostningsregnskabsanalyse                      | LCS                                                                                                                                                                                                                            | [Power BI-indhold til omkostningsregnskabsanalyse](cost-accounting-analysis-content-pack.md)                                         |
+|                                   | Lagerstedsperformance                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+|                                   | Produktionsperformance                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
 
-## <a name="access-power-bi-content-from-lcs"></a>Få adgang til strøm BI indhold fra LCS
-Finde oplysninger om, hvordan du henter strøm BI-indhold, og Tilslut den til organisationens data [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
+## <a name="access-power-bi-content-from-lcs"></a>Få adgang Power BI-indhold fra LCS
+Du kan finde flere oplysninger om, hvordan du henter Power BI-indhold og forbinder det med din organisations data i [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
 
-## <a name="access-power-bi-content-from-powerbicom"></a>Få adgang til strøm BI indhold fra PowerBI.com
+## <a name="access-power-bi-content-from-powerbicom"></a>Få adgang Power BI-indhold fra PowerBI.com
 1.  Log på [PowerBI.com](https://www.powerbi.com/).
-2.  Klik på **få Data**.
-3.  I den **Services** skal du klikke på **får**.
-4.  Vælg den pakke, indhold, og klik derefter på **får**.
-5.  Angiv URL-adressen på din Dynamics 365 for handlingsmiljø. URL-adressen skal være i formatet **https://&lt;YourAOSTenant&gt;. cloudax.dynamics.com**. Click **Next**.
-6.  Vælg **oAuth2** som godkendelsesmetode, og klik derefter på **logge på**.
-7.  Når du bliver bedt om det, kan du angive en Microsoft Office 365-konto, der har tilladelse til at få adgang til din Dynamics 365 for handlingsmiljø.
-8.  Når du har logget på, begynder importprocessen automatisk. Når importen er fuldført, vises de rapporter, der er inkluderet i pakken med indhold i navigationsruden. Vælg en rapport til at få vist dine importerede data.
+2.  Klik på **Hent data**.
+3.  I feltet **Tjenester** skal du klikke på **Hent**.
+4.  Markér den ønskede indholdspakke, og klik derefter på **Hent**.
+5.  Angiv URL-adressen på dit Dynamics 365 for Operations-miljø. URL-adressen skal være i formatet **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klik på **Næste**.
+6.  Vælg **oAuth2** som godkendelsesmetode, og klik derefter på **Log på**.
+7.  Når du bliver bedt om det, skal du angive en Microsoft Office 365-konto, der har tilladelse til at få adgang til dit Dynamics 365 for Operations-miljø.
+8.  Når du har logget på, begynder importprocessen automatisk. Når importen er fuldført, vises de rapporter, der er inkluderet i indholdspakken i navigationsruden. Vælg en rapport til at få vist dine importerede data.
 
-## <a name="learn-more-about-the-power-bi-integration"></a>Yderligere oplysninger om strømstyring BI-integration
--   [Power BI integration](power-bi-integration.md)
--   [Oversigt over strøm BI integration med store enhed](power-bi-integration-entity-store.md)
--   [Redigere og distribuere strøm BI rapporter med store enhed](author-distribute-power-bi-reports.md)
--   [PIN strøm BI rapporterer til arbejdsområder](pin-power-bi-reports.md)
--   [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md)
+## <a name="learn-more-about-the-power-bi-integration"></a>Få mere at vide om Power BI-integrationen
+-   [Power BI-integration](power-bi-integration.md)
+-   [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md)
+-   [Rediger og distribuer Power BI-rapporter med enhedslager](author-distribute-power-bi-reports.md)
+-   [Fastgør Power BI-rapporterer til arbejdsområder](pin-power-bi-reports.md)
+-   [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md)
 -   [Brug en konfiguration af elektronisk rapportering til at give Power BI data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
 
 
 

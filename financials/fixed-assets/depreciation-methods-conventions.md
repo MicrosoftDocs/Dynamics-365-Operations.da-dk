@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Afskrivningsmetoder og -principper
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics AX.
 
 Du kan vælge mellem forskellige afskrivningsmetoder og -principper. Formålet med metoderne er at fordele den værdi af et anlægsaktiv, der kan afskrives, på flere regnskabsperioder. Den værdi af et anlægsaktiv, der kan afskrives, er anskaffelsesprisen minus en eventuel scrapværdi. 
@@ -66,19 +69,19 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 <a name="see-also"></a>Se også
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Afskrivning af anlægsaktiv](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Lineær afskrivning for levetiden](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Saldoafskrivning](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Manuel afskrivning](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Faktorafskrivning](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Forbrugsafskrivning](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Lineær afskrivning for den resterende levetid](straight-line-life-remaining-depreciation.md)
 
 [125 % saldoafskrivning](125-percent-reducing-balance-depreciation.md)
 
@@ -87,5 +90,6 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 [175 % saldoafskrivning](175-percent-reducing-balance-depreciation.md)
 
 [200 % saldoafskrivning](200-percent-reducing-balance-depreciation.md)
+
 
 

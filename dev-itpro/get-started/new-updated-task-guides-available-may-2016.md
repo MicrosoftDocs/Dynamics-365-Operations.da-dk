@@ -1,6 +1,6 @@
 ---
-title: "Nye eller opdaterede opgave hjælpelinjer (maj 2016)"
-description: "I denne artikel beskrives den nye eller opdaterede opgave hjælpelinjer, der er udgivet til Microsoft (kan 2016 - alle sprog) APQC Unified bibliotek til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek."
+title: Nye eller opdaterede opgaveguider (maj 2016)
+description: I denne artikel beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (maj 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nye eller opdaterede opgave hjælpelinjer (maj 2016)
+# <a name="new-or-updated-task-guides-may-2016"></a>Nye eller opdaterede opgaveguider (maj 2016)
 
-I denne artikel beskrives den nye eller opdaterede opgave hjælpelinjer, der er udgivet til Microsoft (kan 2016 - alle sprog) APQC Unified bibliotek til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek. 
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Opgave leder i den (maj 2016 - alle sprog) APQC Unified bibliotek til Microsoft Dynamics AX
+
+I denne artikel beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (maj 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek. 
+
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016 - alle sprog)
 ------------------------------------------------------------------------------------------------
 
-(Maj 2016) APQC Unified bibliotek indeholder guider, der er beregnet til brug for hjælp til Microsoft Dynamics AX kan 2016 opdatere opgaven og Microsoft Dynamics AX februar 2016 slip. Lokaliserede versioner af opgave-retningslinjer, der blev udgivet i (februar 2016) APQC Unified bibliotek er tilgængelige i dette bibliotek. Finde flere oplysninger om, hvordan man tilsluttes en opgave guide bibliotek Hjælp-systemet, [komme i gang med Hjælp](help-overview.md). **Bemærk:** en stjerne (**\***) ved siden af en Business process model (BPM) linje angiver, at guiden opgave til denne forretningsproces blev oprettet for Dynamics AX kan opdatere 2016 og understøttes ikke i tidligere versioner af Microsoft Dynamics AX.
+APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til brug i hjælpen til maj 2016-opdateringen til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md). **Bemærk:** En stjerne (**\***) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics AX 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
@@ -65,7 +68,7 @@ I denne artikel beskrives den nye eller opdaterede opgave hjælpelinjer, der er 
 | Designe en ER-konfiguration til generering af rapporter i OPENXML-format         | Globalt         |
 | Generere elektroniske dokumenter for betalinger ved hjælp af en formatkonfiguration | Globalt         |
 | Importere ER-konfiguration fra Lifecycle Services                          | Globalt         |
-| **\***ER Select service provider                                           | Globalt         |
+| **\***Vælg ER-serviceudbyder                                           | Globalt         |
 | Opgradere dit ER-format ved at bruge en ny basisversion af formatet      | Globalt         |
 | Overføre ER-konfiguration til Lifecycle Services                          | Globalt         |
 
@@ -126,7 +129,7 @@ I denne artikel beskrives den nye eller opdaterede opgave hjælpelinjer, der er 
 | BPM-linje                                                 | Land/område |
 |----------------------------------------------------------|----------------|
 | Opret et nyt produkt                                     | Globalt         |
-| Opret... \financial-dimensions\dimension-based konfigurationer                    | Globalt         |
+| Opret ..\financial-dimensions\dimension-based konfigurationer                    | Globalt         |
 | Oprette foruddefinerede produktvarianter                       | Globalt         |
 | Opret udvælgelseskriterier for salgspris                    | Globalt         |
 | Angiv ordrer for produkter, der kan konfigureres                   | Globalt         |
@@ -176,22 +179,24 @@ I denne artikel beskrives den nye eller opdaterede opgave hjælpelinjer, der er 
 | BPM-linje                                                            | Land/område |
 |---------------------------------------------------------------------|----------------|
 | Konfigurere bølgebehandling                                           | Globalt         |
-| **\***Færdigmelding til et sikkert sted – nummerplade | Globalt         |
+| **\***Færdigmelde til en lokation uden id-kontrol | Globalt         |
 | Oprette en proces for minimum- eller maksimumgenopfyldning                              | Globalt         |
 | Konfigurere containere                                             | Globalt         |
 | Konfigurere manuel emballering                                               | Globalt         |
 | Konfigurere transportbegrænsninger for en vare                       | Globalt         |
-| **\***Set up warehouse work policies                                | Globalt         |
+| **\***Konfigurere politikker for lagerstedsarbejde                                | Globalt         |
 
 
 
 <a name="see-also"></a>Se også
 --------
 
-[Ny opgave leder (februar 2016)](new-task-guides-available-february-2016.md)
+[Nye opgaveguider (februar 2016)](new-task-guides-available-february-2016.md)
 
-[Nye eller opdaterede opgave leder (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Nye eller opdaterede opgaveguider (august 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Nye eller opdaterede opgave leder (November 2016)](new-task-guides-november-2016.md)
+[Nye eller opdaterede opgaveguider (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

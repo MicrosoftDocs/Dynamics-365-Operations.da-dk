@@ -43,11 +43,11 @@ Arbejdsområde for kreditorsamarbejdsfakturering
 Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
 ### <a name="tabular-lists"></a>Tabellister
 
-I sektionen **Tabellister **er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste Tabelliste er mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
+I sektionen **Tabellister **er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
 Alle kreditorfakturaer (listeside)
 -----------------------------
 
-Du kan få vist alle bogførte og ikke bogførte kreditorfakturaer på de **samarbejde kreditorfakturaer** listeside. Du kan bruge denne listeside til at få vist betalingsstatus af fakturaer. Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.
+Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**. Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne. Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.
 Oprettelse af en ny faktura ud fra en indkøbsordre
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kredito
 
 
 
-Yderligere oplysninger finder du [samarbejde med kreditorer ved at bruge kreditorportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

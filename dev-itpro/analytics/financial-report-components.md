@@ -101,7 +101,7 @@ Du kan gemme en eksisterende komponentgruppe under et nyt navn. Derefter kan du 
 
 ### <a name="export-a-building-block-group"></a>Eksportere en komponentgruppe
 
-Du kan eksportere en dokumentkomponent af typen gruppe eller en bestemt rapport byggesten i en dokumentkomponent af typen gruppe. Du kan bruge den eksporterede dokumentkomponent af typen gruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem dokumentkomponent grupper eller Dynamics 365 for operationer installationer. Report designer indeholder typografierne, der refereres til, og dimensionsopsætninger, sammen med gruppen dokumentkomponent.
+Du kan eksportere en dokumentkomponentgruppe eller bestemte rapportkomponenter i en dokumentkomponentgruppe. Du kan bruge den eksporterede dokumentkomponentgruppe som sikkerhedskopi. Du kan også kopiere de eksporterede data mellem komponentgrupper eller Dynamics 365 for Operations-installationer. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
 2.  I dialogboksen **Komponentgrupper** skal du vælge den komponentgruppe, der skal eksporteres, og derefter klikke på **Eksportér**.
 3.  I dialogboksen **Eksportér** skal du vælge de rapportdefinitioner, der skal eksporteres:

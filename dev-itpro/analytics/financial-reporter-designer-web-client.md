@@ -1,5 +1,5 @@
 ---
-title: Management Reporter - designer og webklient
+title: Management Reporter - designeren og webklienten
 description: 
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter - designer og webklient
+# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter - designeren og webklienten
+
+[!include[banner](../includes/banner.md)]
+
+
+
 
 
 

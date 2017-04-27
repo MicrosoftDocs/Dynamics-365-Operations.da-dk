@@ -1,6 +1,6 @@
 ---
-title: "Omkostningsregnskab analyse strøm BI-indhold"
-description: "Dette emne beskriver, hvad der skal medtages i omkostningsregnskabet analysen strøm BI-indhold. Det forklares, hvordan du få adgang til strøm BI-rapporter og indeholder oplysninger om datamodel og enheder, der blev brugt til at oprette indholdet."
+title: Power BI-indhold til omkostningsregnskabsanalyse
+description: "I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabet. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
@@ -24,90 +24,90 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Omkostningsregnskab analyse strøm BI-indhold
+# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
-Dette emne beskriver, hvad der skal medtages i omkostningsregnskabet analysen strøm BI-indhold. Det forklares, hvordan du få adgang til strøm BI-rapporter og indeholder oplysninger om datamodel og enheder, der blev brugt til at oprette indholdet.
+I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsregnskabet. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 <a name="overview"></a>Overblik
 --------
 
-Den **omkostningsregnskab analyse** Microsoft Power BI-indhold er beregnet til omkostninger domænecontrollere eller andre, der er ansvarlig for udførelse af omkostningsstyringen for en organisation. Den indeholder vigtige mål, som omkostningen, omfanget og omkostningssats ved faktiske omkostninger budgetomkostninger og fleksible budgetomkostninger. Det bruger transaktionsdata fra omkostningsregnskab i Microsoft Dynamics 365 for operationer og giver en samlet oversigt over omkostninger for hele organisationen i en rapporteringsvaluta. Ledere kan filtrere dataene ved omkostningsobjekter til at udføre omkostningsstyring af deres organisatoriske enheder, selv om organisationen kan have flere juridiske enheder. Da den **omkostningsregnskab analyse** Power BI indhold fremhæver afvigelser mellem de faktiske omkostninger og budgetterede omkostninger ledere kan blive informeret om positive og negative tendenser for deres operationelle enheder. Ledere kan finde frem til den omkostninger element hierarkier eller individuelle omkostningselementer få detaljeret indsigt i hvordan omkostningsafvigelser er opstået, og derefter handle effektivt. Den **omkostningsregnskab analyse** Power BI indhold Lad revisorer omkostninger analysere, hvordan kostprisen flyder gennem omkostningsobjekter i hele organisationen. Yderligere oplysninger om omkostningsregnskabet finder du [omkostningsregnskab hjemmeside](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Ved at definere sikkerhed på brugerniveau i omkostningsregnskabet, og at kombinere den med på strøm BI rækkeniveau sikkerhed, kan du tildele alle omkostninger objektejere adgang til den **omkostningsregnskab analyse** Power BI-indhold. Alle data i de visuelle effekter, derefter filtreres baseret på det adgangsniveau, der styres i omkostningsregnskab. Hvis du vil vide mere om sikkerhed på brugerniveau og rækkeniveau sikkerhed, se [angive sikkerhed for omkostningsregnskab indhold for strøm BI](setup-security-cost-accounting-content-pack.md).
+Microsoft Power BI-indholdet til **Omkostningsregnskabsanalyse** er beregnet til omkostningscontrollere eller andre, der er ansvarlig for udførelse af en organisations omkostningsstyring. Det indeholder oversigt over målepunkter som omkostning, størrelsesorden og omkostningssats ved faktisk omkostning, budgetomkostninger og fleksible budgetomkostninger. Det bruger transaktionsdata fra omkostningsregnskab i Microsoft Dynamics 365 for Operations og giver en samlet oversigt over omkostninger for hele organisationen i én rapporteringsvaluta. Ledere kan filtrere dataene efter omkostningsobjekter for at udføre omkostningsstyring af deres organisatoriske enheder, selv om organisationen kan have flere juridiske enheder. Da Power BI indhold til **Omkostningsregnskabsanalyse** fremhæver afvigelser mellem de faktiske omkostninger og budgetterede omkostninger, kan ledere blive informeret om positive og negative tendenser for deres driftsenheder. Lederne kan foretage detailudledning i omkostningselementhierarkierne eller individuelle omkostningselementer for at få detaljeret indsigt i, hvordan omkostningsafvigelser er opstået, og derefter handle effektivt på det. Med Power BI-indholdet til **Omkostningsregnskabsanalyse** kan bogholdere analysere, hvordan omkostninger flyder gennem omkostningsobjekter i hele organisationen. Du kan finde flere oplysninger om omkostningsregnskabet i [Startside for omkostningsregnskab](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Ved at definere sikkerhed på brugerniveau i omkostningsregnskabet og kombinere det med sikkerhed på rækkeniveau i Power BI kan du tildele alle omkostningsobjektejere adgang til Power BI-indholdet til **Omkostningsregnskabsanalyse**. Alle data i visualiseringerne filtreres derefter baseret på det adgangsniveau, der styres i omkostningsregnskabet. Hvis du vil vide mere om sikkerhed på henholdsvis adgangsniveau og rækkeniveau, kan du se under [Konfigurere sikkerhed for indhold i omkostningsregnskab til Power BI](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til strøm BI-indhold
-Du kan finde det **omkostningsregnskab analyse** Power BI indhold i biblioteket delte aktiver i Microsoft Dynamics livscyklus Services (LCS). Finde flere oplysninger om, hvordan du henter indholdet og forbinde den til din Dynamics 365 for operationer data [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). **Bemærk:** KB4011327 ** ** er en forudsætning for den **omkostningsregnskab analyse** Power BI-indhold.  Når du logger på levetidsservices, kan du få adgang til KB her: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+Du kan finde Power Bi-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du henter indholdet og forbinder det med dine Microsoft Dynamics-365 for Operations-data, under [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). **Bemærk!** KB4011327** ** er en forudsætning for Power BI-indholdet til **Omkostningsregnskabsanalyse**.  Når du logger på Lifecycle Services, kan du få adgang til KB her: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mål, som er inkluderet i indholdet strøm BI
-Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, som er visualized som diagrammer, fliser og tabeller. Følgende tabel indeholder en oversigt over de visuelle effekter i den **omkostningsregnskab analyse** Power BI-indhold.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
+Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Omkostningsregnskabsanalyse**.
 
 | Rapportside                      | Diagram                                                                                                                         | Felt                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Omkostningsstyring efter regnskabsperiode    | Faktiske omkostninger og budgetomkostninger ved omkostninger element hierarkiniveau                                                                   | Faktiske omkostninger vs budgetomkostninger                    |
-|                                  | Budget afvigelse af omkostninger element hierarkiniveau                                                                               | Faktiske omkostninger sats vs budgetomkostninger hastighed          |
-|                                  | Top 10 Budget afvigelse i procent af omkostningselement                                                                          | Omfanget af faktiske størrelse i forhold til Budget          |
-| Omkostningsstyring pr. år til dato     | Faktiske omkostninger og budgetomkostninger pr. kalenderår periode                                                                           | Faktiske omkostninger vs budgetomkostninger                    |
-|                                  | Budget afvigelse pr. kalenderår periode                                                                                       | Faktiske omkostninger sats vs budgetomkostninger hastighed          |
-|                                  | Top 10 Budget afvigelse i procent af omkostningselement                                                                          | Omfanget af faktiske størrelse i forhold til Budget          |
-| Omkostningssats af regnskabsår         | Faktiske omkostningssats af omkostninger-funktionalitet                                                                                             | Faktiske omkostninger sats vs budgetomkostninger hastighed          |
-|                                  | Faktiske omkostningssats Budget omkostningsafvigelse sats, budgetomkostninger procentsats og Budget omkostningssats efter omkostninger element hierarkiniveau | Omfanget af faktiske størrelse i forhold til Budget          |
-|                                  | Budget afvigelse af omkostninger element hierarkiniveau                                                                               |                                               |
-|                                  | Top 10 Budget afvigelse i procent af omkostningselement                                                                          |                                               |
-| Fleksibelt budget efter regnskabsperiode | Faktiske omkostninger og budgetomkostninger fleksible budgetomkostninger ved omkostninger element hierarkiniveau                                             | Omfanget af faktiske størrelse i forhold til Budget          |
-|                                  | Varians for budget og fleksibelt budget afvigelse af omkostninger element hierarkiniveau                                                  | Faktiske omkostninger i forhold til fleksible budgetomkostninger           |
-|                                  | Faktiske omkostninger og budgetomkostninger fleksible omkostninger ved kostet funktionsmåde og kostet element hierarkiniveau                                  | Faktiske omkostninger sats vs fleksibelt budget omkostningssats |
-| Omkostninger erklæring fra regnskabsperioden  | Faktiske omkostninger ved omkostninger element hierarkiniveau og omkostninger objekt medlem dimensionsnavn                                             |                                               |
-|                                  | Faktiske omkostninger ved omkostninger objekt dimension-medlemsnavn og omkostninger element medlem dimensionsnavn                                       |                                               |
+| Omkostningsstyring efter regnskabsperiode    | Faktisk omkostning og budgetomkostning efter niveau i omkostningselementhierarki                                                                   | Faktisk omkostning vs. budget                    |
+|                                  | Budgetafvigelse af niveau i omkostningselementhierarki                                                                               | Faktisk omkostningssats vs. budgetomkostningssats          |
+|                                  | 10 bedste budgetafvigelser i procent efter omkostningselement                                                                          | Faktisk størrelsesorden vs. størrelsesorden af budget          |
+| Omkostningsstyring pr. år til dato     | Faktisk omkostning og budgetomkostning pr. kalenderårperiode                                                                           | Faktisk omkostning vs. budget                    |
+|                                  | Budgetafvigelse pr. kalenderårperiode                                                                                       | Faktisk omkostningssats vs. budgetomkostningssats          |
+|                                  | 10 bedste budgetafvigelser i procent efter omkostningselement                                                                          | Faktisk størrelsesorden vs. størrelsesorden af budget          |
+| Omkostningssats pr. regnskabsår         | Faktisk omkostningssats efter omkostningsfunktionalitet                                                                                             | Faktisk omkostningssats vs. budgetomkostningssats          |
+|                                  | Faktisk omkostningssats, budgetomkostningssatsafvigelse, budgetomkostningssatsprocent og budgetomkostningssats efter niveau i omkostningselementhierarki | Faktisk størrelsesorden vs. størrelsesorden af budget          |
+|                                  | Budgetafvigelse af niveau i omkostningselementhierarki                                                                               |                                               |
+|                                  | 10 bedste budgetafvigelser i procent efter omkostningselement                                                                          |                                               |
+| Fleksibelt budget efter regnskabsperiode | Faktisk omkostning, budgetomkostning og fleksibel budgetomkostning efter niveau i omkostningselementhierarki                                             | Faktisk størrelsesorden vs. størrelsesorden af budget          |
+|                                  | Budgetafvigelse og fleksibel budgetafvigelse efter niveau i omkostningselementhierarki                                                  | Faktisk omkostning vs. fleksibel budgetomkostning           |
+|                                  | Faktisk omkostning, budgetomkostning og fleksibel omkostning efter funktionalitet af omkostning og niveau i omkostningselementhierarki                                  | Faktisk omkostningssats vs. fleksibel budgetomkostningssats |
+| Omkostningsfordeling efter regnskabsperiode  | Faktisk omkostning efter niveau i omkostningselementhierarki og navn på dimensionsmedlem for omkostningsobjekt                                             |                                               |
+|                                  | Faktisk omkostning efter navn på dimensionsmedlem for omkostningsobjekt                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Dynamics 365 for operationer data bruges til at udfylde siderne af rapporten den **omkostningsregnskab analyse** Power BI-indhold. Disse data er repræsenteret som samlede målinger, der er nødvendige i butikken enhed, som er en Microsoft SQL-database, der er optimeret til analytics. Yderligere oplysninger finder du [oversigt over strøm BI integration med store enhed](power-bi-integration-entity-store.md). Følgende nøgle samlede målinger bruges som grundlag for indholdet.
+Dynamics 365 for Operations-data bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsregnskabsanalyse**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 
-| Enhed                  | Samlede Kontrolmålepunkt | Datakilden til Dynamics 365 til operationer | Felt     | Betegnelse                                   |
+| Enhed                  | Samlede nøglemålinger | Datakilde til Dynamics 365 for Operations | Felt     | Betegnelse                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Omkostningsregnskab poster | SUM(Amount)               | CAMDATAAggregatedCostEntry                  | Beløb    | Beløbet i omkostningsregnskabet Finans |
-| Statistiske poster     | SUM(Magnitude)            | CAMDATAAggregatedStatisctialEntry           | Størrelsesorden |                                               |
+| Posteringer i omkostningsregnskab | SUM(Beløb)               | CAMDATAAggregatedCostEntry                  | Beløb    | Beløb i omkostningsregnskabets finanspostvaluta |
+| Statistiske poster     | SUM(Størrelsesorden)            | CAMDATAAggregatedStatisctialEntry           | Størrelsesorden |                                               |
 
-Følgende tabel viser, hvor vigtige målinger af samlede bruges til at oprette flere beregnede målpunkter i det indhold dataset.
+Følgende tabel viser, hvor de samlede nøglemålinger bruges til at oprette flere beregnede målepunkter i indholdets datasæt.
 
-| Målepunkt                                       | Beregning af foranstaltningen                                                                                          |
+| Målepunkt                                       | Sådan beregnes målepunktet                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Faktisk omkostning                                   | BEREGN ('omkostningsregnskab poster'\[foranstaltning\], 'Transaktion versioner'\[ISSOURCEVERSIONBUDGET\_værdi\] = 0)            |
-| Budgetterede omkostninger                                   | BEREGN ('omkostningsregnskab poster'\[foranstaltning\], 'Transaktion versioner'\[ISSOURCEVERSIONBUDGET\_værdi\] = 1)            |
-| Budgetomkostninger afvigelse                          | \[Budgettere omkostninger\] - \[faktiske omkostninger\]                                                                                      |
-| Budget afvigelse i procent                    | Hvis (\[budgetomkostninger\] = 0, blank(), \[Budget afvigelse\] / \[budgetomkostning\])                                                |
-| Faktiske omfang                              | BEREGN ('Statistiske poster'\[FullMagnitude\], 'Transaktion versioner'\[ISSOURCEVERSIONBUDGET\_værdi\] = 0)          |
-| Omfanget af budget                              | BEREGN (\[FullMagnitude\], 'Transaktion versioner'\[ISSOURCEVERSIONBUDGET\_værdi\] = 1)                               |
-| Statistiske budget afvigelse                   | \[Omfanget af budget\] - \[faktiske størrelse\]                                                                            |
-| Statistiske budget afvigelse i procent        | IF (\[Budget omfanget\] = 0, blank(), \[statistiske budget afvigelse\] / \[Budget omfanget\])                          |
-| Faktisk omkostningssats                              | IF (\[faktiske omfang\] = 0, BLANK(), \[faktiske omkostninger\] / \[faktiske omfang\])                                          |
-| Budgetomkostningssats                              | IF (\[Budget omfanget\] = 0, BLANK(), \[budgetomkostninger\] / \[Budget omfanget\])                                          |
-| Budgetomkostninger sats afvigelse                     | \[Budget omkostningssats\] - \[faktiske omkostningssats\]                                                                            |
-| Budgetomkostninger sats afvigelsesprocenten          | IF (\[budgetomkostninger\] = 0, blank(), \[Budget sats omkostningsafvigelse\] / \[Budget omkostningssats\])                                 |
-| Fast budgetomkostninger                             | BEREGN (\[budgetomkostning\], 'Omkostninger accounting poster'\[COSTBEHAVIOR\] = 1)                                              |
-| Variable budgetomkostninger                          | BEREGN (\[budgetomkostning\], 'Omkostninger accounting poster'\[COSTBEHAVIOR\] = 2)                                              |
-| Fast fleksible budgetomkostninger                    | \[Fast budgetomkostninger\]                                                                                                  |
-| Variable fleksible budgetomkostninger                 | IF (\[Budget omfanget\] = 0, BLANK(), (\[Variable budgetomkostninger\] / \[Budget omfanget\]) \*\[faktiske omfang\])       |
-| Fleksible budgetomkostninger.                          | \[Faste omkostninger for fleksibelt budget\] + \[Variable fleksible budgetomkostninger\]                                                     |
-| Fleksibelt budget afvigelse                      | \[Fleksible budgetomkostninger\] - \[faktiske omkostninger\]                                                                             |
-| Fleksibelt budget afvigelse i procent           | IF (\[fleksible budgetomkostninger\] = 0, BLANK(), \[fleksibelt budget afvigelse\] / \[fleksible budgetomkostninger\])                     |
-| Fleksible budgetomkostninger hastighed                     | IF (\[faktiske omfang\] = 0, BLANK(), \[fleksible budgetomkostninger\] / \[faktiske omfang\])                                 |
-| Fleksible budgetomkostninger sats afvigelse            | \[Fleksibelt budget omkostningssats\] - \[faktiske omkostningssats\]                                                                   |
-| Fleksibelt budget sats procentvise omkostningsafvigelse | IF (\[fleksibelt budget omkostningssats\] = 0, BLANK(), \[fleksibelt budget sats omkostningsafvigelse\] / \[fleksibelt budget omkostningssats\]) |
+| Faktisk omkostning                                   | CALCULATE('Posteringer i omkostningsregnskab'\[Målepunkt\], 'Versioner af transaktion'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
+| Budgetterede omkostninger                                   | CALCULATE('Posteringer i omkostningsregnskab'\[Målepunkt\], 'Versioner af transaktion'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
+| Budgetomkostningsafvigelse                          | \[Budgetterede omkostninger\] - \[Faktisk omkostning\]                                                                                      |
+| Bugetafvigelsesprocent                    | IF(\[Budgetterede omkostninger\] = 0, blank(), \[Budgetafvigelse\] / \[Budgetterede omkostninger\])                                                |
+| Faktisk størrelsesorden                              | CALCULATE('Statistiske poster'\[FullMagnitude\], 'Versioner af transaktion'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)          |
+| Størrelsesorden af budget                              | CALCULATE(\[FullMagnitude\], 'Versioner af transaktion'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)                               |
+| Statistisk budgetafvigelse                   | \[Størrelsesorden af budget\] - \[Faktisk størrelsesorden\]                                                                            |
+| Statistisk bugetafvigelsesprocent        | IF(\[Størrelsesorden af budget\] = 0, blank(), \[Statistisk budgetafvigelse\] / \[Størrelsesorden af budget\])                          |
+| Faktisk omkostningssats                              | IF(\[Faktisk størrelsesorden\] = 0, BLANK(), \[Faktisk omkostning\] / \[Faktisk størrelsesorden\])                                          |
+| Budgetomkostningssats                              | IF(\[Størrelsesorden af budget\] = 0, BLANK(), \[Budgetterede omkostninger\] / \[Størrelsesorden af budget\])                                          |
+| Afvigelse i budgetomkostningssats                     | \[Budgetomkostningssats\] - \[Faktisk omkostningssats\]                                                                            |
+| Budgetomkostningssats i procent          | IF(\[Budgetterede omkostninger\] = 0, blank(), \[Afvigelse i budgetomkostningssats\] / \[Budgetomkostningssats\])                                 |
+| Anlægsaktivomkostning                             | CALCULATE(\[Budgetterede omkostninger\], 'Posteringer i omkostningsregnskab'\[COSTBEHAVIOR\] = 1)                                              |
+| Variabel budgetomkostning                          | CALCULATE(\[Budgetterede omkostninger\], 'Posteringer i omkostningsregnskab'\[COSTBEHAVIOR\] = 2)                                              |
+| Fast fleksibel budgetomkostning                    | \[Anlægsaktivomkostning\]                                                                                                  |
+| Variabel fleksibel budgetomkostning                 | IF(\[Størrelsesorden af budget\] = 0, BLANK(), (\[Variable budgetomkostninger\] / \[Størrelsesorden af budget\]) \* \[Faktisk størrelsesorden\])       |
+| Fleksibel budgetomkostning                          | \[Fast fleksibel budgetomkostning\] + \[Variabel fleksibel budgetomkostning\]                                                     |
+| Fleksibel budgetafvigelse                      | \[Fleksibel budgetomkostning\] - \[Faktisk omkostning\]                                                                             |
+| Fleksibel bugetafvigelsesprocent           | IF(\[Fleksibel budgetomkostning\] = 0, BLANK(), \[Fleksibel budgetafvigelse\] / \[Fleksibel budgetomkostning\])                     |
+| Fleksibel budgetomkostningssats                     | IF(\[Faktisk størrelsesorden\] = 0, BLANK(), \[Fleksibel budgetomkostning\] / \[Faktisk størrelsesorden\])                                 |
+| Fleksibel afvigelse i budgetomkostningssats            | \[Fleksibel budgetomkostningssats\] - \[Faktisk omkostningssats\]                                                                   |
+| Fleksibel budgetomkostningssats i procent | IF(\[Fleksibel budgetomkostningssats\] = 0, BLANK(), \[Fleksibel afvigelse i budgetomkostningssats\] / \[Fleksibel budgetomkostningssats\]) |
 
-Følgende vigtige dimensioner bruges som filtre i udsnit af de samlede mål for at opnå større granularitet og giver større analytiske indsigt.
+Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger for at opnå større granularitet og give dybere analytisk indsigt.
 
 | Enhed                             | Eksempler på attributter                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Finansposter for omkostningsregnskab            | Finanspost for omkostningsregnskab                                                                                               |
 | Omkostningskontrolenheder                 | Navn på omkostningskontrolenhed                                                                                               |
-| Dimensioner for omkostningselement            | Omkostninger elementer dimension navn, omkostninger element dimension medlemsnavn, omkostninger dimension medlem elementbeskrivelse          |
-| Dimensioner for omkostningsobjekt             | Omkostningsobjekt dimensionsnavnet, omkostninger objekt dimension medlemsnavn, omkostninger objekt dimension medlem beskrivelse              |
-| Statistiske dimensioner             | Statistiske dimensionsnavnet, statistiske dimension medlemsnavn, statistiske dimensionsbeskrivelsen medlem              |
-| Dimensionshierarkier omkostningsobjekt  | Cost objektet dimensionsnavnet hierarki, Cost objektet dimension hierarkiniveau, omkostninger objekt hierarki dimensionstræ    |
-| Dimensionshierarkier omkostninger element | Omkostninger dimension hierarki elementnavn, omkostningskladde element dimension hierarkiniveau, omkostninger element dimension hierarkitræ |
-| Statistiske dimensionshierarkier  | Statistiske dimensionsnavnet for hierarkiet, statistiske dimension hierarkiniveau, statistiske dimension hierarkitræ    |
+| Dimensioner for omkostningselement            | Navn på dimension for omkostningselementer, navn på dimensionsmedlem af omkostningselement, beskrivelse af dimensionsmedlem af omkostningselement          |
+| Dimensioner for omkostningsobjekt             | Navn på dimension for omkostningsobjekt, navn på dimensionsmedlem af omkostningsobjekt, beskrivelse af dimensionsmedlem af omkostningsobjekt              |
+| Statistiske dimensioner             | Navn på statistisk dimension, navn på statistisk dimensionsmedlem, beskrivelse af statistisk dimensionsmedlem              |
+| Dimensionshierarkier for omkostningsobjekt  | Navn på dimensionshierarki for omkostningsobjekt, niveau i dimensionshierarki for omkostningsobjekt, dimensionshierarkitræ for omkostningsobjekt    |
+| Dimensionshierarkier for omkostningselement | Navn på dimensionshierarki for omkostningselement, niveau i dimensionshierarki for omkostningselement, dimensionshierarkitræ for omkostningselement |
+| Statistiske dimensionshierarkier  | Navn på statistisk dimensionshierarki, niveau i statistisk dimensionshierarki, statistisk dimensionshierarkitræ    |
 | Versioner af transaktion               | Versionsnavn                                                                                                         |
-| Regnskabskalendere                   | Kalenderen er kalender-beskrivelse                                                                                       |
+| Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
 | Regnskabsår                       | Kalenderår                                                                                                        |
-| Regnskabsperioder                     | Periode af kalenderåret                                                                                                 |
+| Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
@@ -116,6 +116,6 @@ Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI
 -   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
--   [Opsætning af sikkerhed for omkostningsregnskab indhold for strøm BI](setup-security-cost-accounting-content-pack.md)
+-   [Konfigurere sikkerhed for omkostningsregnskabsindhold til Power BI](setup-security-cost-accounting-content-pack.md)
 
 

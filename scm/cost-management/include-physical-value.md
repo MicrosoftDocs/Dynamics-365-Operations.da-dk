@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="include-physical-value"></a>Medtag fysisk værdi
 
+[!include[banner](../includes/banner.md)]
+
+
 Du skal bruge afkrydsningsfeltet Medtag fysisk værdi i oversigtspanelet Lagermodel på siden Varemodelgrupper til at angive, om fysisk opdaterede transaktioner medtages, når varens løbende gennemsnitlige kostpris beregnes.
 
 Afkrydsningsfeltet **Medtag fysisk værdi** har følgende værdier.
@@ -49,5 +52,7 @@ Afkrydsningsfeltet har lidt forskellige effekter, afhængigt af hvilken lagermod
 -   En indkøbsordre på et antal på 3 og en kostpris på kr. 12,00, der er fakturaopdateret
 
 I dette tilfælde er den løbende gennemsnitlige kostpris kr. 11,20, da både de fysisk og økonomisk opdaterede transaktioner bruges til at beregne kostprisen. **Eksempel 2** Du har ikke markeret afkrydsningsfeltet **Medtag fysisk værdi**, og kostprisen i vareopsætningen er kr. 10,00. Du modtager en indkøbsordre på et antal på 20 og en kostpris på kr. 12,00, der er følgeseddelopdateret. Når en salgsordre bogføres, bogføres kostbeløbet på kr. 10,00, da den løbende gennemsnitlige kostpris ikke inkluderer fysisk bogførte transaktioner. **Bemærk!** Til sammenligning: Hvis du markerer afkrydsningsfeltet **Medtag fysisk værdi** for denne vare, når en salgsordre bogføres, er det bogførte kostbeløb kr. 12,00.
+
+
 
 

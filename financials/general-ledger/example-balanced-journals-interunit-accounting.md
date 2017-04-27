@@ -1,5 +1,5 @@
 ---
-title: Afbalanceret kladder til internt regnskab
+title: Afstemte kladder for regnskab mellem enheder
 description: "Denne artikel viser, hvordan en kladde automatisk afstemmes, når en udlignende økonomisk dimension er valgt på siden Finans."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Afbalanceret kladder til internt regnskab
+# <a name="balanced-journals-for-interunit-accounting"></a>Afstemte kladder for regnskab mellem enheder
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel viser, hvordan en kladde automatisk afstemmes, når en udlignende økonomisk dimension er valgt på siden Finans. 
 
@@ -47,8 +50,10 @@ Følgende regnskabsposter oprettes derfor automatisk, så denne kladde afstemmes
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Internt debet) – MSP – OU\_256 | 100,00 DR |
-| (Internt kredit) – NY – OU\_249 | 100,00 CR |
+| (Internt mellem enheder - debet) – MSP – OU\_256 | 100,00 DR |
+| (Internt mellem enheder - kredit) – NY – OU\_249 | 100,00 CR |
+
+
 
 
 

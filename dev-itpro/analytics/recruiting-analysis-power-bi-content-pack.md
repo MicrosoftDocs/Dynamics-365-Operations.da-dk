@@ -1,6 +1,6 @@
 ---
-title: "Rekruttering strøm BI-indhold"
-description: "Dette emne beskriver de Dynamics 365 for operationer - rekruttering strøm BI-indhold. Det forklarer, hvordan du kan få adgang til rapporter, der er inkluderet i pakken med indhold og indeholder oplysninger om datamodel og enheder, der blev brugt til at opbygge indhold pack."
+title: Power BI-indhold til rekruttering
+description: "Dette emne beskriver Dynamics 365 for Operations – Power BI-indhold til rekruttering. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Rekruttering strøm BI-indhold
+# <a name="recruiting-power-bi-content"></a>Power BI-indhold til rekruttering
 
-Dette emne beskriver de Dynamics 365 for operationer - rekruttering strøm BI-indhold. Det forklarer, hvordan du kan få adgang til rapporter, der er inkluderet i pakken med indhold og indeholder oplysninger om datamodel og enheder, der blev brugt til at opbygge indhold pack.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Adgang til indhold pack
+
+Dette emne beskriver Dynamics 365 for Operations – Power BI-indhold til rekruttering. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+
+<a name="accessing-the-content-pack"></a>Adgang til indholdspakken
 --------------------------
 
-Du kan finde det indhold pack rekruttering i biblioteket delte aktiver i Microsoft Dynamics livscyklus Services (LCS). Finde flere oplysninger om, hvordan du henter indhold pack og forbinde den til din Microsoft Dynamics-365 for operationer data [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
+Du kan finde indholdspakken til rekruttering i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du henter indholdspakken og forbinder den med dine Microsoft Dynamics-365 for Operations-data, under [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter, der er inkluderet i pakken med indhold
-Når du har forbundet indhold pack til din Dynamics 365 til data af handlinger, Vis rapporter af virksomhedens data. Hvis du aldrig har brugt Microsoft Power BI før, kan du lære mere om det på den [automatiseret Learning side for strøm BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). De rapporter, der er inkluderet i pakken med indhold har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter, der er inkluderet i indholdspakken
+Når du har knyttet indholdspakken til dine data i Dynamics 365 for Operations, viser rapporterne din organisations data. Hvis du aldrig har brugt Microsoft Power BI før, kan du finde oplysninger om det under [Guidet indføring i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). De rapporter, der er inkluderet i indholdspakken, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
 
 | Rapport                       | Indhold                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Analyse af ansøgeren           | Ansøgere efter job, ansøgeren kilder, ansøgere ved placering og det samlede antal ansøgere           |
-| Ansøgeren Status             | Ansøgere efter type og status og status for ansøger                                                    |
-| Ansøgeren demografi       | Ansøgere efter alder og køn og ansøgere efter uddannelsesniveau og status                             |
-| Rekruttering analyse          | Netto leje forholdet, gennemsnitlig dage til at ansætte procentdel af dårlige ansættelser og rekruttering omkostninger                    |
-| Ansættelse projektanalyse | Antallet af rekrutteringsprojekter, åbninger af rekrutteringsprojektet, og ansøgere efter rekrutteringsprojekt |
+| Ansøgeranalyse           | Ansøgere efter job, ansøgningskilder, ansøgere efter lokalitet og det samlede antal ansøgere           |
+| Ansøgerstatus             | Ansøgere efter type og status og ansøgerstatus                                                    |
+| Ansøgerdemografi       | Ansøgere efter alder og køn og ansøgere efter uddannelsesniveau og status                             |
+| Rekrutteringsanalyse          | Nettoansættelsesforhold, gennemsnitlig antal dage til ansættelse, procentdel af dårlige ansættelser og rekrutteringsomkostninger                    |
+| Analyse af rekrutteringsprojekt | Antallet af rekrutteringsprojekter, åbninger efter rekrutteringsprojekt og ansøgere efter rekrutteringsprojekt |
 
-Du kan filtrere de diagrammer og fliser på disse rapporter og pin diagrammer og fliser til dashboardet. Finde flere oplysninger om filter og pinkode i Power BI [oprette og konfigurere en Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Dynamics 365 for operationer data bruges til at udfylde rapporter i rekruttering indhold pack. Følgende tabel viser enheder, indhold pack er baseret på.
+Dynamics 365 for Operations-data bruges til at udfylde rapporterne i indholdspakken til rekruttering. Følgende tabel viser de enheder, som indholdspakken er baseret på.
 
-| Enhed                          | Indhold                                                         | Relationer til andre objekter                                                                                                                                                                                                                 |
+| Enhed                          | Indhold                                                         | Relationer med andre enheder                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rekruttering\_ansøger           | Ansøgere, ansatte ansøgere, forholdet mellem net leje og omkostninger          | Rekruttering\_ApplicantName rekruttering\_virksomhed rekrutterer\_CalendarOffset Recuriting\_dato rekruttering\_GeographicLocation rekruttering\_demografi rekruttering\_Job rekruttering\_Media rekruttering\_RecruitmentProject                                |
-| Rekruttering\_ApplicantName       | Ansøgerens fornavn, Efternavn og fulde navn                   | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_CalendarOffset      | Kalender forskydninger på udsnittet rapporter                                | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_virksomhed             | Virksomheder til at filtrere rapporter                                   | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_dato                | Dage, uger, måneder og år                                   | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_demografi        | Fødselsdato, køn, etnisk oprindelse og civilstand         | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_EmployedApplicant   | Ansøgeren, ydeevne, startdato og ansøgeren type           | Rekruttering\_virksomhed rekrutterer\_CalendarOffset rekruttering\_dato rekruttering\_rekruttering GeographicLocation\_ApplicantName rekruttering\_beskæftigelse rekruttering\_ydeevne rekruttering\_Job rekruttering\_Media rekruttering\_RecruitmentProject          |
-| Rekruttering\_beskæftigelse          | Startdato, slutdato og datoen for overgang                        | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_GeographicLocation  | By, landsdel, postal code, og stat eller provins                 | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_sag                 | Funktion, type og titel                                        | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_medier               | Kilden til ansøgere                                             | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_ydeevne         | Klassifikation, beskrivelse og rangeringsmodel                            | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_RecruitmentProject  | Beskrivelse af projektet, projektstatus og åbninger                | Rekruttering\_ansøgeren rekruttering\_rekruttering EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekruttering\_TerminatedApplicant | Afsluttet ansøgere, årsag, ydeevne og Fratrædelsesdato | Rekruttering\_firma rekruttering\_CalendarOffset rekruttering\_dato rekruttering\_GeographicLocation rekruttering\_ydeevne rekruttering\_demografi rekruttering\_beskæftigelse rekruttering\_Media rekruttering\_rekruttering RecruitmentProject\_ApplicantName |
+| Recruiting\_Applicant           | Ansøgere, ansatte ansøgere, nettoansættelsesforhold og omkostninger          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | Ansøgers fornavn, efternavn og fulde navn                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | Kalenderforskydninger for at opdele rapporter                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | Virksomheder, som rapporter kan filtreres efter                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | Dage, uger, måneder og år                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | Fødselsdato, køn, etnisk oprindelse og civilstand         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | Ansøger, performance, startdato og ansøgertype           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | Startdato, slutdato og overførselsdato                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | By, landsdel, postkode og stat eller provins                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | Funktion, type og titel                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | Kilde for ansøgere                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | Klassifikation, beskrivelse og klassifikationsmodel                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | Projektbeskrivelse, projektstatus og åbninger                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | Afsluttede ansøgere, årsag, performance og fratrædelsesdato | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-Disse enheder blev brugt til at oprette beregnede målpunkter. Disse beregnes foranstaltninger bruges derefter til at beregne nøgletal (KPI'er) og rapporter, der bruges i indhold pack. Hvis du vil medtage yderligere beregninger på rapporter og dashboard, kan du hente og redigere filen Recruiting.pbix fra Remburser. Denne fil er den standard datamodel, der blev brugt til at oprette indhold pack. Når du har foretaget ændringer, kan du oprette en organisatorisk indhold pack og dashboard, der indeholder de oplysninger, du har tilføjet.
+Disse enheder blev brugt til at oprette beregnede målinger. Disse beregnede mål bruges derefter til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdspakken. Hvis du vil medtage yderligere beregninger på rapporter og dashboard, kan du hente og redigere filen Recruiting.pbix fra LCS. Denne fil er den standarddatamodel, der blev brugt til at oprette indholdspakken. Når du har foretaget ændringerne, kan du oprette en indholdspakke og et dashboard for organisationen, som indeholder de oplysninger, du har tilføjet.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
@@ -75,6 +78,8 @@ Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI
 -   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Tilføjelse af Power BI-felter til arbejdsområder](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

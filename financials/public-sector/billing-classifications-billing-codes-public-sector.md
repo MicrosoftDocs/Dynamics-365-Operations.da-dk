@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer. 
 
 <a name="billing-classifications"></a>Faktureringsklassifikationer
@@ -84,6 +87,8 @@ Når faktureringskoder skal opdateres, skal du ikke oprette nye faktureringskode
 
 ## <a name="can-i-assign-the-same-billing-code-to-more-than-one-billing-classification"></a>Er det muligt at tildele den samme faktureringskode til mere end én faktureringsklassifikation?
 Nej, men der er en måde at få de resultater, du skal bruge, alligevel. Lad os antage, at din organisation bruger en separat faktureringsklassifikation for hver afdeling. Tre af afdelingerne skal have en faktureringskode til licensaftaler. Du kan ikke tildele en enkelt faktureringskode for "Licensaftale" til tre faktureringsklassifikationer, men du kan oprette et sæt af tre identiske faktureringskoder og tildele én til hver afdeling.
+
+
 
 
 

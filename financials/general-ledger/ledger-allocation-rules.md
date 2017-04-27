@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-allocation-rules"></a>Finansfordelingsregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder generelle oplysninger om finansfordelingsregler. Den beskriver de forskellige komponenter i disse fordelingsregler og de fordelingsmetoder, som kan bruges til dem.
 
 Finansfordelingsregler bruges til automatisk at beregne og generere fordelingskladder og kontoposter for fordeling af finanssaldi eller faste beløb. Fordelingsmetoderne kan være variable eller faste. Følgende fordelingsmetoder kan bruges til finansfordelingsregler:
@@ -42,10 +45,12 @@ Hvis Bases bruges som fordelingsmetoden til en fordelingsregel, skal du også de
 Hver fordelingsregel består af fire komponenter: generel, kilde, destination og modregning. Der kræves en ekstra komponent, finansfordelingsbasisregler, hvis Basis bruges som fordelingsmetode. Hver af disse komponenter udgør en central del af de informationer, der skal bruges for at behandle fordelinger.
 
 -   **Generelt** – Denne komponent er det sted, hvor brugeren angiver muligheder, f.eks. fordelingsmetode, indstillinger for regler for intern handel, og om reglen er aktiv eller ej.
--   **Kilde** – Denne komponent er det sted, hvor brugeren angiver kildedataene til fordelingen. Fordelingen kan baseres på finanssaldi (**datakilde** = **Finans**) eller faste beløb (**datakilde** = **faste værdier**). Når **Datakilde** er angivet til **Finans**, skal der være defineret filterkriterier for finansfordelingsregel (f.eks. til reklameudgifter).
+-   **Kilde** – Denne komponent er det sted, hvor brugeren angiver kildedataene til fordelingen. Fordelingen kan baseres på finanssaldi (**Datakilde** = **Finans**) eller faste beløb (**Datakilde** = **Faste værdi**). Når **Datakilde** er angivet til **Finans**, skal der være defineret filterkriterier for finansfordelingsregel (f.eks. til reklameudgifter).
 -   **Destination** – Denne komponent definerer, hvordan resultatet af fordelingsberegningen skal distribueres og gøres rede for. Der kan f.eks. være én destinationslinje for hver afdeling.
 -   **Modregn** – Denne komponent definerer, hvordan hovedkonti og dimensioner skal bestemmes for de forskudte poster, som er afstemt på destinationsposterne. Brugerdefinerede indstillinger anvendes typisk i stedet for de konti og dimensioner, der er baseret på kilden. Når **Datakilde** er angivet til **Faste værdier**, kan **Kilde** ikke bruges som en indstilling.
 -   **Finansfordelingsbasisregler** – Disse regler anvender deres filterkriterier til at bestemme, hvilke finanssaldi der skal bruges til fordeling (f.eks. omsætning pr. afdeling). De enkelte fordelingsbasisregler kan bruges til flere fordelingsregler.
+
+
 
 
 

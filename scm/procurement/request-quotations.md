@@ -1,5 +1,5 @@
 ---
-title: Anmodningen om tilbud (tilbudsanmodninger)
+title: Tilbudsanmodninger
 description: "Denne artikel har en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Anmodningen om tilbud (tilbudsanmodninger)
+# <a name="request-for-quotations-rfqs"></a>Tilbudsanmodninger
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel har en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen.
 
@@ -37,9 +40,9 @@ Anmodningsprocessen for tilbudsanmodning omfatter følgende opgaver:
 
 I følgende illustration vises en oversigt over processen for anmodninger om tilbud.  
 
-[![Anmodningen om tilbudsproces](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Proces for tilbudsanmodning](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Du kan oprette en tilbudsanmodning ud fra ordreforslag, ud fra en indkøbsrekvisition eller ud fra en manuel indtastning. Den tilbudsanmodning, du opretter, kaldes en tilbudsanmodningssag, og det er det grundlæggende dokument, som du bruger til at udstede en tilbudsanmodning til de enkelte leverandører. Når du forbereder tilbudsanmodningssagen og føje leverandører, skal du klikke på **sende** kladden oprettes på tilbudsanmodningssagen og en Tilbudsanmodning for hver leverandør, du har sendt Tilbudsanmodningen til. Du kan konfigurere indstillinger for udskriftsstyring for handlingen Send for at udskrive en rapport for hver kreditor til et arkiv, eller sende en rapport til e-mail-adresse for hver kreditor. Tilbudsanmodningskladden til hver leverandør kan desuden bruges til at generere en rapport, som du kan sende eller gensende til en kreditor senere. Du kan også konfigurere handlingen Send for at oprette et svarark, som kreditoren kan udfylde.  
+Du kan oprette en tilbudsanmodning ud fra ordreforslag, ud fra en indkøbsrekvisition eller ud fra en manuel indtastning. Den tilbudsanmodning, du opretter, kaldes en tilbudsanmodningssag, og det er det grundlæggende dokument, som du bruger til at udstede en tilbudsanmodning til de enkelte leverandører. Når du forbereder tilbudsanmodningssagen og tilføjer leverandører, skal du klikke på **Send** på tilbudsanmodningssagen, så genereres den en tilbudsanmodningskladde for hver leverandør, du har sendt tilbudsanmodningen til. Du kan konfigurere indstillinger for udskriftsstyring for handlingen Send til enten at udskrive en rapport for hver kreditor til et arkiv, eller til at sende en rapport til hver kreditors mailadresse. Tilbudsanmodningskladden til hver leverandør kan desuden bruges til at generere en rapport, som du kan sende eller gensende til en kreditor senere. Du kan også konfigurere handlingen Send for at oprette et svarark, som kreditoren kan udfylde.  
 
 Hvis du skal ændre en tilbudsanmodning, når du har sendt den, kan du sende tilbudsanmodningen til leverandører, når du er færdig.  
 
@@ -49,7 +52,7 @@ Hvis en anden gentagelse af et svar kræves for en bestemt kreditor, skal du kli
 
 Hvis du har føjet scorekriterier til din tilbudsanmodningssag, har svaret på tilbudsanmodningen et scorepanel, hvor du kan angive scorer. De samlede scorer vises, når du sammenligner svarene på siden **Sammenlign svar**, hvor du også kan sammenligne andre svardata, f.eks. linjepris og leveringsdato og den samlede pris.  
 
-Når du har besluttet dig for et bud eller et delvist bud, kan du acceptere dem og afvise resten. Acceptkladder, afvisningskladder og tilsvarende rapporter genereres. Disse vil blive udskrevet, arkiveres og sendt i overensstemmelse med dine indstillinger for udskriftsstyring. Når du accepterer et tilbud eller bestemte linjer i et tilbud, en aftale eller køb indkøbsordre genereres, eller en indkøbsrekvisition opdateres, afhængigt af typen Tilbudsanmodningen køb. Du kan oprette en samhandelsaftale, der senere kan bruges til alle svarene, uanset om du har accepteret eller afvist dem.  
+Når du har besluttet dig for et bud eller et delvist bud, kan du acceptere dem og afvise resten. Acceptkladder, afvisningskladder og tilsvarende rapporter genereres. Disse udskrives, arkiveres og sendes i overensstemmelse med dine indstillinger for udskriftsstyring. Når du accepterer et bud eller bestemte linjer i et bud, oprettes der enten en købsaftale eller indkøbsordre, eller en indkøbsrekvisition opdateres, afhængigt af typen af tilbudsanmodning. Du kan oprette en samhandelsaftale, der senere kan bruges til alle svarene, uanset om du har accepteret eller afvist dem.  
 
 Status for tilbudsanmodningen vises i tilbudsanmodningens overskrift og afhænger af status for tilbudsanmodningens linjer. Status angiver, i hvilket omfang du har behandlet tilbudsanmodningen. Hver tilbudsanmodning har to statusværdier: laveste og højeste. Den laveste status er det mindst fremskredne stadie for en linje i tilbudsanmodningen, mens den højeste status er det mest fremskredne stadie for en linje i tilbudsanmodningen. Hvis f.eks. den mindst fremskredne fase i en tilbudsanmodning gælder en linje, der er blevet oprettet, er **Oprettet** den laveste status for tilbudsanmodningen. Hvis f.eks. den mest fremskredne fase i en tilbudsanmodning gælder en linje, der er blevet sendt til kreditorer, er **Sendt** den højeste status for tilbudsanmodningen. Status opdateres automatisk, mens tilbudsanmodningen behandles.  
 
@@ -58,9 +61,9 @@ Du kan få vist den laveste og højeste status for en tilbudsanmodnings hoved p�
 Her er sekvensen af statusser for behandling af tilbudsanmodninger:
 
 1.  **Oprettet**
-2.  **Sent**
-3.  **Received**
-4.  **Accepteret**/**annulleret**/**afvist**
+2.  **Afsendt**
+3.  **Modtaget**
+4.  **Accepteret**/**Annulleret**/**Afvist**
 
 Statusserne beskrives mere detaljeret i andre afsnit senere i denne artikel.
 
@@ -72,7 +75,7 @@ Før du kan oprette en tilbudsanmodningssag, skal du konfigurere oplysninger om 
 -   Leveringsoplysninger og betalingsbetingelser.
 -   Felter, der skal medtages i svaret på tilbudsanmodningen
 
-Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag. Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration kan du aktivere feltlåsning. Når feltlåsning er aktiveret, skal en indkøber, der ønsker at ændre en tilbudsanmodning, først klikke på **Opret** i sektionen **Ændring** under fanen **Tilbud**. Når Tilbudsanmodningen er blevet opdateret med ændringer, professionelle indkøb skal fuldføre processen ved at klikke på **Færdiggør**. ** ** de færdiggør handling genererer en e-mail, der underretter kreditorerne om ændrede Tilbudsanmodningen. Du kan vælge skabelonen til den mailmeddelelse, der sendes til kreditorer, på siden **Indkøbs- og forsyningsparametre**. Når der oprettes en skabelon, kan den indeholde følgende erstatningstokens:
+Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag. Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration kan du aktivere feltlåsning. Når feltlåsning er aktiveret, skal en indkøber, der ønsker at ændre en tilbudsanmodning, først klikke på **Opret** i sektionen **Ændring** under fanen **Tilbud**. Når tilbudsanmodningen er blevet opdateret med ændringen, skal indkøberen fuldføre processen ved at klikke på **Færdiggør**.** ** Handlingen Færdiggør genererer en mail, der underretter kreditorerne om den ændrede tilbudsanmodning. Du kan vælge skabelonen til den mailmeddelelse, der sendes til kreditorer, på siden **Indkøbs- og forsyningsparametre**. Når der oprettes en skabelon, kan den indeholde følgende erstatningstokens:
 
 -   %Årsag til returnering af bud%
 -   %Årsag til ændring%
@@ -124,7 +127,7 @@ Følgende tabel viser, hvordan status for tilbudsanmodningen ændres, når du op
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**                         | **Laveste hovedstatus for tilbudsanmodning** | **Højeste hovedstatus for tilbudsanmodning**                   | **Laveste linjestatus for tilbudsanmodning** | **Højeste linjestatus for tilbudsanmodning** |
 | Opret sidehoved og linje for Tilbudsanmodning.    | Oprettet                      | Oprettet                                         | Oprettet                    | Oprettet                     |
 | Sende tilbudsanmodningen til en bestemt kreditor. | Sendt                         | Sendt                                            | Sendt                       | Sendt                        |
 | Tilføj en anden kreditor.                | Oprettet                      | Sendt (tilbudsanmodningen er kun sendt til én kreditor). | Oprettet                    | Sendt                        |
@@ -146,7 +149,7 @@ Hvis der er knyttet et spørgeskema til tilbudsanmodningssagen, skal du manuelt 
 
 Hvis du skal angive alternative linjer, og tilbudsanmodningssagen tillader dette, skal du klikke på **Tilføj linje** på oversigtspanelet **Købstilbudslinjer **. Angiv derefter oplysninger om produktet, f.eks. vareantal eller indkøbskategori, antal, pris og rabat.  
 
-Hvis du har skrevet et svar, men det kræver et nyt tilbud fra leverandøren, kan du sende Tilbudsanmodningen. Der oprettes en ny kladde og en rapport, som du kan bruge til at anmode om ændringer fra leverandøren.  
+Hvis du har skrevet et svar, men det kræver et nyt tilbud fra leverandøren, kan du sende tilbudsanmodningen igen. Der oprettes en ny kladde og en rapport, som du kan bruge til at anmode om ændringer fra leverandøren.  
 
 Du kan se en oversigt over alle tilbudsanmodninger og statusser for deres svar på siden **Opfølgning på tilbudsanmodning**.  
 
@@ -154,7 +157,7 @@ I følgende tabel vises, hvordan status for tilbudsanmodningen ændres, efterhå
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**                                     | **Laveste tilbudsstatus** | **Højeste tilbudsstatus** | **Laveste hovedstatus for tilbudsanmodning** | **Højeste hovedstatus for tilbudsanmodning** | **Laveste linjestatus for tilbudsanmodning** | **Højeste linjestatus for tilbudsanmodning** |
 | Registrer én kreditors tilbud, og gem det.        | Sendt                  | Modtaget               | Sendt                         | Modtaget                      | Sendt                       | Modtaget                    |
 | Registrer den anden kreditors tilbud, og gem det. | Modtaget              | Modtaget               | Modtaget                     | Modtaget                      | Modtaget                   | Modtaget                    |
 
@@ -183,9 +186,11 @@ I følgende tabel vises, hvordan status for tilbudsanmodningen ændres, efterhå
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Handling**              | **Laveste tilbudsstatus** | **Højeste tilbudsstatus** | **Laveste hovedstatus for tilbudsanmodning** | **Højeste hovedstatus for tilbudsanmodning** | **Laveste linjestatus for tilbudsanmodning** | **Højeste linjestatus for tilbudsanmodning** |
 | Acceptér et af tilbuddene. | Modtaget              | Accepteret               | Modtaget                     | Accepteret                      | Modtaget                   | Accepteret                    |
 | Afvis de andre bud.  | Afvist              | Accepteret               | Afvist                     | Accepteret                      | Afvist                   | Accepteret                    |
+
+
 
 
 

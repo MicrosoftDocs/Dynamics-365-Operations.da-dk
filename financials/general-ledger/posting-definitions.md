@@ -59,5 +59,5 @@ Der er følgende begrænsninger, når du opretter sammenkædninger i bogførings
 -   Du kan tildele en bogføringsdefinition til alle posteringstyper, men posteringstypen skal være i samme modul som bogføringsdefinitionen. Brug siden **Definitioner af posteringsbogføring** for at se, hvilket modul en transaktionstype er i.
 
 
-Yderligere oplysninger finder du [bogføring definitioner eksempler](/general-ledger/example-posting-definitions.md). 
+Yderligere oplysninger finder du i afsnittet [Eksempler på posteringsdefinitioner](/general-ledger/example-posting-definitions.md). 
 

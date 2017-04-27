@@ -1,5 +1,5 @@
 ---
-title: "Opsætning af mobile enheder for lagerstedet arbejde"
+title: Konfigurere mobilenheder til lagerstedsarbejde
 description: "Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Opsætning af mobile enheder for lagerstedet arbejde
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
 Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 
@@ -35,7 +35,7 @@ Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejd
 -   Oprette arbejde, der udføres via en anden proces. Hvis der f.eks. modtages en vare for en indkøbsordre, kan det oprette læg på lager-arbejde for en anden arbejder.
 -   Udfør arbejde, der er oprettet af en anden proces (eksisterende arbejde), som læg på lager-arbejde, der blev oprettet, da der blev modtaget en vare for en indkøbsordre.
 
-Sådan oprettes et menupunkt for en aktivitet eller en undersøgelse, den **tilstand** til **indirekte**. En liste over **Aktivitetskode** indstillinger og derefter bliver tilgængelige, så du kan vælge typen forespørgsel eller aktivitet, der er menupunktet for. Sådan oprettes et menupunkt for at generere lagersted arbejde, den **tilstand** til **arbejde**. En liste over **arbejde oprettelsen** indstillinger og derefter bliver tilgængelig. Hvis du vil oprette et menupunkt for at behandle eksisterende lagerstedsarbejde, skal du angive feltet **Tilstand** til **Arbejde** og derefter angive indstillingen **Brug eksisterende arbejde** til **Ja**. **Bemærk:** yderligere felter der er tilgængelige for elementer i menuen, afhængigt af den tilstand, du vælger til menuen element, og om dette menupunkt bruges til at udføre hidtil. Oplysninger om ekstra feltvalgene, i afsnittet "Yderligere menuindstillinger for vare" senere i denne artikel.
+Når du vil oprettes et menupunkt for en aktivitet eller en undersøgelse, skal du indstille feltet **Tilstand** til **Indirekte**. En liste over **Aktivitetskode** indstillinger og bliver derefter tilgængelig, så du kan vælge typen af forespørgsel eller aktivitet, som menupunktet er til. Når du vil oprette et menupunkt for at generere lagerstedsarbejde, skal du indstille feltet **Tilstand** til **Arbejde**. En liste over **Arbejdsoprettelsesproces** indstillinger og bliver derefter tilgængelig. Hvis du vil oprette et menupunkt for at behandle eksisterende lagerstedsarbejde, skal du angive feltet **Tilstand** til **Arbejde** og derefter angive indstillingen **Brug eksisterende arbejde** til **Ja**. **Bemærk!** Flere felter kan være tilgængelige for menupunktet, afhængigt af den tilstand, du vælger for menupunktet, og om menupunktet bruges til at udføre eksisterende arbejde. Du kan finde oplysninger om valg af yderligere felter i afsnittet "Yderligere indstillinger for menupunkter" i denne artikel.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menupunkter for aktiviteter og forespørgsler
 Hvis feltet **Tilstand** for et menupunkt er angivet til **Indirekte**, kan du oprette et menupunkt, der udfører en generel aktivitet eller forespørgsel, der ikke skaber arbejde. Af eksempler kan nævnes udskrivning af id-nummer og forespørgsler om varerne på en lokalitet. I følgende tabel vises de indstillinger, der er tilgængelige.
@@ -190,7 +190,7 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurer menupunkter til behandling af eksisterende arbejde
-Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde**, og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige på den **generelle** tab. Du kan kontrollere adgangen til menupunktet ved at tildele en eller flere klasser af arbejde på den **arbejde klasse** i oversigtspanelet. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige.
+Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde**, og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige under fanen **Generelt**. Du kan kontrollere adgangen til menupunktet ved at tildele en eller flere arbejdsklasser i **Arbejdsklasse** oversigtspanelet. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige.
 
 <table>
 
@@ -210,7 +210,7 @@ Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive 
 </tr>
 <tr class="even">
 <td>Systembaseret</td>
-<td>Microsoft Dynamics 365 for operationer, bestemmer typen arbejde, der er tildelt en arbejder, og den rækkefølge, som arbejderen udfører arbejde i. Når du vælger denne indstilling, kan du klikke på <strong>styret System arbejde</strong> i handlingsruden for at åbne den <strong>System styrede sorteringsrækkefølge</strong> side, hvor du kan angive sorteringskriterier for arbejdet. Sorteringskriteriet styre den rækkefølge, som arbejderen udfører arbejde i. Du kan tilføje så mange kriterier, som du har brug for.</td>
+<td>Microsoft Dynamics 365 for Operations bestemmer, hvilken type arbejde der tildeles en arbejder, og den rækkefølge, som arbejderen skal udføre arbejdet i. Når du vælger denne indstilling, kan du klikke på <strong>Systembaseret arbejde</strong> i handlingsruden for at åbne siden <strong>Systembaseret sorteringsrækkefølge</strong>, hvor du kan angive sorteringskriterier for arbejdet. Sorteringskriteriet styrer den rækkefølge, som arbejderen skal udføre arbejdet i. Du kan tilføje så mange kriterier, som du behøver.</td>
 </tr>
 <tr class="odd">
 <td>Brugerbaseret</td>
@@ -230,7 +230,7 @@ Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive 
 </tr>
 <tr class="even">
 <td>Valideret brugerstyret</td>
-<td>Medarbejderen vælger det arbejde, der udføres, når arbejdet er knyttet til en større enhed som en last eller forsendelse. Arbejderen bestemmer den rækkefølge, som varerne er plukket i. Hvis du vælger denne indstilling, skal følgende felter angives:
+<td>Medarbejderen vælger det arbejde, der udføres, når arbejdet er knyttet til en større enhed som en last eller forsendelse. Arbejderen bestemmer den rækkefølge, som varerne plukkes i. Hvis du vælger denne indstilling, skal følgende felter angives:
 <ul>
 <li><strong>Valideret brugerstyret felt</strong> – Vælg det felt, som arbejderen scanner for at gruppere arbejdet.</li>
 <li><strong>Valideret brugerstyret label</strong> – Angiv den tekst, der informerer arbejderen om, hvad der skal scannes, når plukkearbejde er grupperet af systemet.</li>
@@ -271,7 +271,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="even">
 <td>Forankring</td>
-<td>Vælg denne indstilling for at give arbejdere mulighed for at angive en lokalitet, der tilsidesætter den foreslåede midlertidige lokalitet eller lastlokaliteten. Alt det resterende læg på lager-arbejde ledes hen til den nye lokalitet. Denne indstilling er f.eks. nyttig, når en arbejder, der skal lægge varer på lager for ordre nr. 1 på en midlertidig lokalitet ved Dock 1, ikke kan, fordi en tidligere last ikke er fjernet fra lokalitet. I stedet for venter 1 Dock midlertidige placering bliver tilgængelig, kan arbejderen beslutter at bruge den midlertidige placering til direkte afsendelse 2. I dette tilfælde tilsidesætter arbejderen den foreslåede midlertidige placering. Placeringslokaliteten for alle resterende varer for arbejdsordren opdateres derefter til den midlertidige lokalitet på Dock 2. Hvis du vælger denne indstilling, skal du angive feltet <strong>Foretag forankring efter</strong>.</td>
+<td>Vælg denne indstilling for at give arbejdere mulighed for at angive en lokalitet, der tilsidesætter den foreslåede midlertidige lokalitet eller lastlokaliteten. Alt det resterende læg på lager-arbejde ledes hen til den nye lokalitet. Denne indstilling er f.eks. nyttig, når en arbejder, der skal lægge varer på lager for ordre nr. 1 på en midlertidig lokalitet ved Dock 1, ikke kan, fordi en tidligere last ikke er fjernet fra lokalitet. I stedet for at vente på, at den midlertidige placering for Dock 1 bliver tilgængelig, kan arbejderen beslutte at bruge den midlertidige placering for Dock 2. I givet fald tilsidesætter arbejderen den foreslåede midlertidige placering. Placeringslokaliteten for alle resterende varer for arbejdsordren opdateres derefter til den midlertidige lokalitet på Dock 2. Hvis du vælger denne indstilling, skal du angive feltet <strong>Foretag forankring efter</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Foretag forankring efter</td>
@@ -380,7 +380,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="odd">
 <td>Kode for arbejdsskabelon</td>
-<td>Vælg den arbejdsskabelon, der skal oprette arbejdet for en proces. For eksempel, hvis du modtager en vare til en indkøbsordre, genereres læg-på-lager-arbejdet baseret på skabelonen arbejde. Hvis du ikke vælger en skabelon til arbejde, tildeler Microsoft Dynamics 365 i forbindelse med en skabelon, der er baseret på forespørgselskriterier. Yderligere oplysninger om arbejdsskabeloner finder du under <a href="control-warehouse-location-directives.md">Styre lagerarbejde med arbejdsskabeloner og lokalitetsdirektiver</a>.</td>
+<td>Vælg den arbejdsskabelon, der skal oprette arbejdet for en proces. Hvis du f.eks. modtager en vare for en indkøbsordre, oprettes læg på lager-arbejdet baseret på arbejdsskabelonen. Hvis du ikke vælger en arbejdsskabelon, tildeler Microsoft Dynamics 365 for Operations en skabelon baseret på forespørgselskriterier. Yderligere oplysninger om arbejdsskabeloner finder du under <a href="control-warehouse-location-directives.md">Styre lagerarbejde med arbejdsskabeloner og lokalitetsdirektiver</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ I følgende tabel beskrives de forskellige arbejdstyper, som du kan bruge sammen
 
 [Skærmindstillinger for lagerstedets mobilenhed](change-warehouse-mobile-device-displays.md)
 
-[Oprette et menupunkt til mobil enhed til at udføre arbejde af typen indkøbsordre (opgave guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre (opgaveguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Oprette et menupunkt til mobil enhed til registrering af modtagne varer (opgave guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Konfigurere et menupunkt på en mobilenhed til at registrere modtagne varer (opgaveguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

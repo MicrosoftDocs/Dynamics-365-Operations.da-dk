@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
 
 <a name="what-general-ledger-parameters-should-be-set-for-funds"></a>Hvilke Finans-parametre skal angives for midler?
@@ -37,7 +40,7 @@ Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og
 Hvis du vil vide mere om de Finans-parametre, der er nødvendige for midler, skal du se under [Finans i den offentlige sektor](general-ledger-public-sector.md).
 
 ## <a name="what-fund-classes-and-fund-types-do-i-need-to-set-up"></a>Hvilke middelklasser og -typer skal jeg angive?
-GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder.  De almindeligt anerkendte Regnskabsprincipper identificerer otte fonden-typer, der er kategoriseret under fonden tre klasser:
+GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder.  GAAP identificerer otte middeltyper, der er kategoriseret i de tre middelklasser:
 
 -   Offentlige midler
     -   Generelle midler
@@ -51,11 +54,11 @@ GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepte
     -   Forvaltningsmidler
     -   Agenturmidler
 
-De tre GAAP fond klasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for operationer. 
+De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for Operations. 
 
 Middeltyper defineres i henhold til organisationens behov. I de fleste tilfælde skal du angive de otte typer af GAAP-midler. Middeltyperne grupperer midler til detaljeret finansiel opfølgning og rapportering. Mange midler kan indgå i en enkelt overordnet rapport, men de enkelte midler forbliver en særskilt finansiel og regnskabsmæssig enhed med sin egen finans, resultatopgørelse og egne balancerapporter. 
 
-Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for operationer bruges fonden tal som dimensionsværdier i finansiel kontonumre hvor en dimension er knyttet til en fond. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.
+Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.
 
 ### <a name="example"></a>Eksempel
 
@@ -77,7 +80,7 @@ Følgende tabel viser disse midler grupperet efter klasse og middeltype.
 
 |                |                        |                 |                                  |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Finansieringskildeklasse ** | **Finansieringskildetype **          | **Fund number** | **Fund name**                    |
+| **Finansieringskildeklasse** | **Finansieringskildetype**          | **Finansieringskildenummer** | **Navn på finansieringskilde**                    |
 | Offentlig   | Generelt middel           | 1103            | Generelt middel                     |
 |                | Særlige indtægtsmidler  | 1343            | School of Technology             |
 |                |                        | 1372            | Informationsteknologi           |
@@ -91,11 +94,13 @@ Følgende tabel viser disse midler grupperet efter klasse og middeltype.
 |                |                        | 3914            | Domstolsansatte                  |
 
 ## <a name="how-are-financial-dimensions-used-with-funds"></a>Hvordan bruges økonomiske dimensioner med midler?
-Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for operationer bruges fonden tal som dimensionsværdier i finansiel kontonumre hvor en dimension er knyttet til en fond. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel. 
+Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel. 
 
 Offentlige organisationer kræver normalt afstemte poster for økonomiske dimensioner, der er relateret til midler. Når en økonomisk dimension eller en kombination af dimensioner er markeret til at kræve afstemte poster, vil systemet ikke bogføre en transaktion, hvor debet ikke svarer til kredit for den økonomiske dimension.
 
 ## <a name="how-do-i-set-a-fund-balance-to-carry-over-to-the-new-year"></a>Hvordan indstiller jeg en middelsaldo, som skal overføres til det nye år?
 Hvis du vil vide mere om årsafslutningen for midler, skal du se under [Årsafslutningen i den offentlige sektor](year-end-processing-public-sector.md).
+
+
 
 

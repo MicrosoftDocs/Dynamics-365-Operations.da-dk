@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
+[!include[banner](../includes/banner.md)]
 
 
-En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Kladdeposteringer for reskontro er ikke tilgængelige for en debitorfaktura for en salgsordre. 
+
+
+En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. 
 
 En **fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordrelinjer, der omfatter finanskonti, fritekstbeskrivelser og et salgsbeløb, som du selv angiver. Du kan ikke angive et varenummer på en faktura af denne type. Du skal angive de relevante oplysninger om moms. Der er angivet en hovedkonto for salget på hver fakturalinje, som du kan fordele på flere forskellige finanskonti ved at klikke på **Distribuer beløb** på siden **Fritekstfaktura**. Derudover bogføres debitorsaldoen på samlekontoen fra den posteringsprofil, der bruges til fritekstfakturaen.
 
@@ -55,7 +58,7 @@ Se salgsordrernes status på listesiden **Alle salgsordrer**.
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidere salgsordrer eller følgesedler til bogføring
 Brug denne fremgangsmåde, når en eller flere salgsordrer, der er klar til at blive faktureret, og du vil konsolidere dem i én faktura. 
 
-Du kan vælge flere fakturaer på listesiden **Salgsordre** og derefter bruge **Generer fakturaer** for at sammenflette dem. På den **bogføring af faktura** side, kan du ændre den **samleordren** indstilling til at opsummere ved ordrenummer (Hvis der er flere følgesedler for en enkelt salgsordre) eller efter fakturakonto (hvor der er flere salgsordrer for en enkelt faktura). Brug af **Arranger** for at konsolidere salgsordrer til enkelt fakturaer, der er baseret på den **samleordren** indstillinger.
+Du kan vælge flere fakturaer på listesiden **Salgsordre** og derefter bruge **Generer fakturaer** for at sammenflette dem. På siden **Bogføring af faktura** kan du ændre indstillingen **Samleordre** til at opsummere ved ordrenummer (hvor der er flere følgesedler for en enkelt salgsordre) eller efter fakturakonto (hvor der er flere salgsordrer for en enkelt faktura). Brug knappen **Arranger** for at konsolidere salgsordrer til enkelte fakturaer, der er baseret på indstillingen **Samleordre**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Yderligere indstillinger, der ændrer funktionsmåden for bogføring
 Følgende felter ændrer funktionaliteten af bogføringsprocessen.
@@ -123,8 +126,8 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 <td>Kontrollér kreditmaks.</td>
 <td>Vælg de oplysninger, der skal analyseres, når der udføres en kontrol af kreditmaksimum.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Ingen</strong> – Der er ingen krav i forbindelse med kontrol af kreditmaksimum.</li>
+<li><strong>Saldo</strong> - Kreditmaksimum kontrolleres i forhold til debitorsaldoen.</li>
 <li><strong>Saldo + følgeseddel eller produktkvittering</strong> – Kreditmaksimum kontrolleres i forhold til debitorsaldoen og leverancer.</li>
 <li><strong>Saldo+Alt</strong> – Kreditmaks. kontrolleres i forhold til debitorsaldoen, leverancer og åbne ordrer.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurere debitorer og kredit og rykkere
 
+[!include[banner](../includes/banner.md)]
+
+
 Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgående betalinger fra debitorer.
 
 Du kan definere debitorgrupper, debitorer, posteringsprofiler, forskellige betalingsmuligheder, rentenotaer, rykkere, provision, parametre vedrørende debitorer tillæg, leveringer og destinationer, veksler og andre typer debitoroplysninger og kredit- og rykkeroplysninger.
 I følgende tabel vises de sider, der understøtter konfiguration og vedligeholdelse af debitor og kredit og rykkere. Tabelposterne er organiseret efter opgave og derefter alfabetisk efter sidenavn.
 
-| ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Note")**Note**          |
+| ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Bemærk")**Bemærk**          |
 |--------------------------------------------------------------------------------------------------|
 | Til nogle sider i nedenstående tabel kræves oplysninger eller parameterindstillinger, for at du kan navigere til dem. |
 
@@ -98,14 +101,16 @@ I følgende tabel vises de sider, der understøtter konfiguration og vedligehold
 |                                                      | Kundekontakter og e-mailindstillinger | Opsætning af kontakter til kunder med deres e-mailadresser. Disse adresser vises på siden Rykkere og bruges til at oprette e-mails, der sendes til kunderne. Konfigurer også en standard rykkerkontaktperson for hver debitor, der vises øverst på siden Rykkere. |
 |                                                      | Kundepuljer                       | Konfigurer kundepuljer, som er forespørgsler, der definerer en gruppe debitorkonti, som kan vises og administreres for rykkere eller forældelsesprocesser.                                                                                                                           |
 |                                                      | Debitorposteringsprofil             | Angiv de profiler, der styrer, hvordan debitorposter bogføres til Finans.                                                                                                                                                                                      |
-|                                                      | Kundeårsagskoder                | Angive årsager kundekoder.                                                                                                                                                                                                                                                    |
-|                                                      | Kunden afskrivning årsagskoder      | Opret debitor afskrivning årsager koder, der skal bruges til afskrivningsposteringer.                                                                                                                                                                                             |
+|                                                      | Kundeårsagskoder                | Konfigurere kundeårsagskoder.                                                                                                                                                                                                                                                    |
+|                                                      | Årsagskoder for debitorafskrivning      | Opret debitorafskrivning, der skal bruges til afskrivningsposteringer.                                                                                                                                                                                             |
 |                                                      | Formularopsætning                           | Definer parametre til formularbemærkning ved tilbud, bekræftelser, pluklister, følgesedler, debitorfakturaer, fritekstfakturaer og rentenotaer.                                                                                                                               |
 |                                                      | Interesser                             | Konfigurer og administrer rentekoder.                                                                                                                                                                                                                                                 |
 |                                                      | NSF-oplysninger.                     | Konfigurer NSF-oplysninger på den bankkonto, der skal bruges, når en betaling er markeret som en NSF-transaktion på siden Rykkere.                                                                                                                                              |
 |                                                      | Oplysninger om salgsperson              | Angiv e-mailadressen for sælgere. Disse adresser vises på siden Rykkere, og du kan bruge dem til at sende e-mail til en sælger fra den pågældende side.                                                                                                                |
 
  
-Yderligere oplysninger finder du [kredits i debitor](collections-credit-accounts-receivable.md).
+Du kan finde flere oplysninger under [Kredit og inkasso i debitorparametre](collections-credit-accounts-receivable.md).
+
+
 
 

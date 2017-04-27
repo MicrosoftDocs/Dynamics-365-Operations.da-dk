@@ -1,6 +1,6 @@
 ---
 title: Oprette og administrere attributter
-description: Denne artikel beskriver attributterne i Microsoft Dynamics 365 for operationer. Med attributter kan du beskrive et produkt og dets egenskaber via brugerdefinerede felter.
+description: I denne artikel beskrives attributter i Microsoft Dynamics 365 for Operations. Med attributter kan du beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-and-manage-attributes"></a>Oprette og administrere attributter
 
-Denne artikel beskriver attributterne i Microsoft Dynamics 365 for operationer. Med attributter kan du beskrive et produkt og dets egenskaber via brugerdefinerede felter.
+I denne artikel beskrives attributter i Microsoft Dynamics 365 for Operations. Med attributter kan du beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 
 Med attributter kan du beskrive et produkt og dets egenskaber via brugerdefinerede felter. Du kan f.eks. angive produktets hukommelsesstørrelse og harddiskkapacitet og angive, om produktet er Energy star-kompatibel. Attributter kan være tilknyttet forskellige detailenheder, såsom produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver deres attributter og standardværdier for de attributter, når de er tilknyttet produktkategorier eller detailkanaler. Standardværdierne kan tilsidesættes på niveauet for hvert enkelt produkt i detailniveauet eller i et detailkataloget.
 
@@ -130,49 +130,49 @@ Garanti på projektionsrør
 
 **12**
 
-\#Projektion rør
+\# på projektionsrør
 
 **1**-**5**
 
 **3**
 
 ## <a name="attribute-type"></a>Attributtype
-  [![attributter fast kopi](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) attributter er baseret på attributtyper. Attributtyper identificerer den type data, der kan angives for en bestemt attribut. På nuværende tidspunkt understøtter Microsoft Dynamics 365 for operationer følgende attributtyper:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attributter er baseret på attributtyper. Attributtyper identificerer den type data, der kan angives for en bestemt attribut. Microsoft Dynamics 365 for Operations understøtter i øjeblikket følgende attributtyper:
 
 -   **Valuta** – Denne attributtype understøtter valutaværdier. Den kan være afgrænset (dvs. den kan understøtte et interval), eller den kan være åben.
 -   **DateTime** – Denne attributtype understøtter dato- og klokkeslætsværdier. Den kan være afgrænset (dvs. den kan understøtte et interval), eller den kan være åben.
 -   **Decimal** – Denne attributtype understøtter numeriske værdier, der indeholder decimalpladser. Den understøtter også måleenheder. Den kan være afgrænset (dvs. den kan understøtte et interval), eller den kan være åben.
 -   **Heltal** – Denne attributtype understøtter numeriske værdier. Den understøtter også måleenheder. Den kan være afgrænset (dvs. den kan understøtte et interval), eller den kan være åben.
 -   **Tekst** – Denne attributtype understøtter tekstværdier. Den understøtter også et foruddefineret sæt af mulige værdier (fasttekst).
--   **Boolesk** – denne attributtype understøtter binære værdier (**true**/**false**).
+-   **Boolesk** – Denne attributtype understøtter binære værdier (**sandt**/**falsk**).
 -   **Reference**.
 
 ## <a name="attribute"></a>Egenskab
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) ud over navn, fulde navn, beskrivelse og Hjælp-tekst, en eller flere af følgende typer oplysninger kan hentes til en attribut:
+  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) Ud over navn, brugervenligt navn, beskrivelse og hjælpetekst kan en eller flere af følgende type oplysninger hentes for en attribut:
 
 -   Standardværdi
 -   Attribut-metadata, f.eks metadata, der angiver, om attributten kan søges, raffineres eller sorteres
 
 ## <a name="attribute-group"></a>Egenskabsgruppe
-  [![createandmanageattribute 10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) efter attributter, der er defineret, kan de grupperes i attributgrupper. Attributgrupper indeholder grupperinger af individuelle attributter og kan tildeles detailkategorier eller detailkanaler.
+  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Når attributter er blevet defineret, kan de grupperes i attributgrupper. Attributgrupper indeholder grupperinger af individuelle attributter og kan tildeles detailkategorier eller detailkanaler.
 
 ## <a name="assigning-attribute-groups-to-retail-categories"></a>Tildele attributgrupper til detailkategorier
-  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) en eller flere attributgrupper kan knyttes til kategorinoder i detailkategorihierarki for produktet. Når produkter er kategoriseret, arver produkterne de attributter, der indgår i attributgrupper.
+  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) En eller flere attributgrupper kan knyttes til kategorinoder i detailproduktets kategorihierarki. Når produkter er kategoriseret, arver produkterne de attributter, der indgår i attributgrupper.
 
 ## <a name="assigning-attribute-groups-to-retail-stores"></a>Tildele attributgrupper til detailbutikker
-  [![createandmanageattribute-13-1024 x 576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) en eller flere attributgrupper kan tilknyttes én eller flere detailbutikker i detailhierarkiet butikker. Når produkter er forbedret for specifikke detailbutikker, arver produkterne de attributter, der indgår i attributgrupper.
+  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) En eller flere attributgrupper kan knyttes til en eller flere detailbutikker i hierarkiet for detailbutikker. Når produkter er forbedret for specifikke detailbutikker, arver produkterne de attributter, der indgår i attributgrupper.
 
 ## <a name="overriding-attribute-values"></a>Tilsidesætte attributværdier
 ### <a name="at-the-product-level"></a>På produktniveau
 
-  [![createandmanageattribute-14-1024 x 576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) standardværdier for attributterne kan tilsidesættes på niveauet for produktet (det vil sige, for de enkelte produkter).
+  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Standardværdierne for attributter kan tilsidesættes på produktniveau (dvs. for individuelle produkter).
 
 ### <a name="in-a-retail-catalog"></a>I et detailkatalog
 
-  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) standardværdier for attributterne kan tilsidesættes for enkelte produkter i bestemte kataloger, der er målrettet til bestemte detailkanaler.
+  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Standardværdierne for attributter kan tilsidesættes for individuelle produkter i specifikke kataloger, der er målrettet specifikke detailkanaler.
 
 ### <a name="at-the-retail-channel-level"></a>På detailkanalniveau
 
-  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) standardværdier for attributterne kan tilsidesættes for enkelte produkter i bestemte kataloger, der er målrettet til bestemte detailkanaler.
+  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardværdierne for attributter kan tilsidesættes for individuelle produkter i specifikke kataloger, der er målrettet specifikke detailkanaler.
 
 

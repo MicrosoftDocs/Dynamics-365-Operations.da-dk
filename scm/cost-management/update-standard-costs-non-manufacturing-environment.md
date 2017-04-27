@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Opdatere standardomkostninger i et ikke-produktionsmiljø
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder vejledning i at opdatere standardomkostninger i et ikke-produktionsmiljø.
 
 I følgende retningslinjer antages det, at du bruger en tilgang med to versioner til at opdatere standardomkostning. I denne tilgang indeholder den ene efterkalkulationsversion de standardomkostninger, der oprindeligt blev defineret for den frosne periode, og den anden efterkalkulationsversion indeholder de trinvise opdateringer. De enkelte opdateringer angives som en omkostningspost i den anden efterkalkulationsversion, og den aktiveres til sidst. Der kan også bruges en tilgang med én version, hvor der gøres brug af det sæt standardomkostninger, der oprindeligt blev defineret. I tilgangen med to versioner skal du definere en anden efterkalkulationsversion. Her er retningslinjerne for, hvordan denne efterkalkulationsversion skal defineres:
@@ -46,6 +49,8 @@ Hvis du vil rette, justere eller opdatere standardomkostningerne for nye varer, 
 4.  Brug siden **Vedligeholdelse af efterkalkulationsversion** til at skifte blokeringsflag for at tillade aktivering af ventende omkostningsposter i den anden efterkalkulationsversion.
 5.  Brug siden **Aktivér priser** (som du kan åbne fra siden **Vedligeholdelse af efterkalkulationsversion**) til at aktivere alle ventende vareomkostningsposter, der er omfattet af den anden efterkalkulationsversion. Du kan også aktivere de ventende omkostningsposter for individuelle varer ved at klikke på knappen **Aktivér afventende pris(er)** på siden **Varepris**.
 6.  Du kan undgå yderligere vedligeholdelse af data ved at bruge siden **Opsætning af efterkalkulationsversion** til at skifte blokeringsflag i den anden efterkalkulationsversion. Blokeringspolitikkerne vil forhindre, at der angives nye ventende omkostninger eller aktiveres ventende omkostninger.
+
+
 
 
 

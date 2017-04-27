@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis kreditorbetaling og den endelige betaling fuldt ud før rabatdatoen"
+title: "Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen"
 description: "Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udligne en delvis kreditorbetaling og den endelige betaling fuldt ud før rabatdatoen
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat.
 
-Fabrikam køber varer fra leverandør 3064. Leverandøren giver Fabrikam en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage. Fakturaer skal betales inden 30 dage. Leverandøren giver desuden Fabrikam kasserabatter på delbetalinger. Udligning-parametre er placeret på den **konti Kreditorparametre** side. Den 25. juni skriver April en faktura på 1.000,00 til kreditor 3064.
+Fabrikam køber varer fra leverandør 3064. Leverandøren giver Fabrikam en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Leverandøren giver desuden Fabrikam kasserabatter på delbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**. Den 25. juni skriver April en faktura på 1.000,00 til kreditor 3064.
 
 ## <a name="vendor-invoice-on-june-25"></a>Kreditorfaktura den 25. juni
-D. 25. April indtaster og bogfører en faktura på 1.000,00 for kreditor 3064. April kan se denne transaktion på siden **Kreditorposteringer**.
+Den 25. juni angiver og bogfører April en faktura på 1.000,00 til kreditor 3064. April kan se denne transaktion på siden **Kreditorposteringer**.
 
 | Bilag   | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April klikker på fanen **Kasserabat** for at få vist rabatbeløbet.
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Delvis betaling den 1. juli ved hjælp af siden Udlign posteringer
-April kan oprette en betalingskladde for denne betaling ved at åbne siden **Betalingskladde** under Kreditor. Hun opretter en ny kladde og indtaster en linje for kreditor 3064. Hun åbner den **udligne posteringer** side, så hun kan markere fakturaen til udligning. April markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **-500,00**. Hun ser, at værdien i feltet **Kasserabatbeløb** er **-10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **-5,05**. April udligner derfor -505,05 af denne faktura.
+April kan oprette en betalingskladde for denne betaling ved at åbne siden **Betalingskladde** under Kreditor. Hun opretter en ny kladde og indtaster en linje for kreditor 3064. Hun åbner derefter siden **Udlign posteringer**, så hun kan markere fakturaen til udligning. April markerer fakturaen og ændrer værdien i feltet **Beløb, der skal udlignes** til **-500,00**. Hun ser, at værdien i feltet **Kasserabatbeløb** er **-10,00** for hele fakturaen, og at værdien i feltet **Kasserabatbeløb, der skal medtages** er **-5,05**. April udligner derfor -505,05 af denne faktura.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**.
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -5,00     |
 
-April lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 495,00 i kladden, og April bogfører derefter kladden. April kan gennemgå kreditorposteringer i den **kreditorposteringer** side. Hun ser, at fakturaen har en saldo på-500,00. Hun ser også en betaling på 495,00 og en kasserabat på 5,00.
+April lukker siden **Udlign posteringer**. Der oprettes en betalingslinje for 495,00 i kladden, og April bogfører derefter kladden. April kan gennemse kreditorposteringerne på siden **Kreditorposteringer**. Hun ser, at fakturaen har en saldo på -500,00. Hun ser også en betaling på 495,00 og en kasserabat på 5,00.
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April bogfører betalingskladden og gennemgår kreditorposteringerne på siden *
 | DISC-10010 | Kasserabat    | 7/1/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10011  | Betaling          | 7/8/2015  |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10011 | Kasserabat    | 7/8/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

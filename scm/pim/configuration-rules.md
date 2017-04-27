@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configuration-rules"></a>Variantregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder generelle oplysninger om variantregler. Variantregler definerer relationer mellem elementer i en stykliste i styklisten for produkter, der bruger teknologien Dimensionsbaseret konfiguration.
 
 Variantregler er tilgængelige, når du definerer modeller for dimensionsbaseret konfiguration. Variantregler anvendes til enten at gennemtvinge eller forbyde specifikke varekombinationer på en stykliste. Når en stykliste er blevet oprettet, og de pågældende varer er blevet tildelt til deres respektive variantgrupper, kan der defineres en eller flere variantregler. Hvis to varer hører sammen, bruges operatoren **Vælg** til at sikre medtagelse. Hvis to varer gensidigt udelukker hinanden, bruges operatoren **Fravælg** til at sikre udelukkelse.  
@@ -42,5 +45,7 @@ Eksisterende varianter påvirkes ikke af efterfølgende ændringer af variantreg
 --------
 
 [Dimensionsbaseret produktkonfiguration](dimension-based-product-configuration.md)
+
+
 
 

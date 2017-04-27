@@ -1,6 +1,6 @@
 ---
-title: "Få vist og design finansielle rapporter"
-description: "Denne artikel indeholder øvelser, der forklarer dig visning og oprettelse af regnskabsrapporter for Microsoft Dynamics 365 for operationer. Regnskabsaflæggelse består af en visuel oplevelse i Dynamics 365 for operationer og et enkelt klik-når rapportdesigner, kan du oprette og redigere økonomiske rapporter."
+title: "Vise og designe økonomirapporter"
+description: "Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations. Økonomirapportering består af en visuel oplevelse i Dynamics 365 for Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Få vist og design finansielle rapporter
+# <a name="view-and-design-financial-reports"></a>Vise og designe økonomirapporter
 
-Denne artikel indeholder øvelser, der forklarer dig visning og oprettelse af regnskabsrapporter for Microsoft Dynamics 365 for operationer. Regnskabsaflæggelse består af en visuel oplevelse i Dynamics 365 for operationer og et enkelt klik-når rapportdesigner, kan du oprette og redigere økonomiske rapporter.  
+[!include[banner](../includes/banner.md)]
+
+
+Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations. Økonomirapportering består af en visuel oplevelse i Dynamics 365 for Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Øvelse 1: Oprette og udforske en økonomisk standardrapport
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ I denne øvelse skal du generere og udforske en eksisterende standardrapport. De
 3.  Gem konfigurationen af dimensionen. Dernæst skal vi generere en rapport og udforske data i rapporten.
 4.  Gå til **Økonomirapporter** under **Forespørgsler og rapporter** i Finans.
 5.  Vælg rækken for rapporten med navnet **Finansdetaljer – standard.**
-6.  Vælg **Rediger.** Bemærk: Du bliver bedt om at hente Klik-når Rapportdesigner og logge på. Du kan bruge dine legitimationsoplysninger til at logge på.
+6.  Vælg **Rediger.** Bemærk! Du bliver bedt om at hente Report Designer og logge på. Du kan bruge dine legitimationsoplysninger til at logge på.
 7.  Ret basisåret til 2012, og vælg **Generer**. Når der oprettes en rapport fra Report Designer, åbnes den i en ny fane i browseren. Du kan enten udforske rapporten under den nye browserfane, eller gå til den oprindelige browserfane og derefter åbne rapporten derfra ved at vælge den på listen **Økonomirapporter**.
 8.  I den åbnede rapport skal du vælge t af beløbene for at dykke ned i kontodetaljerne for rapporten.
 9.  Én gang i kontooplysninger skal du vælge en konto med data og **dykke til rapportens transaktionsniveau**. Du kan se de egenskaber (attributter), der er inkluderet i denne rapports design, på rapportens posteringsniveau. Afhængigt af posteringen og konto, vise nogle eller alle attributterne muligvis.
@@ -55,7 +58,7 @@ I denne øvelse skal du generere og udforske en eksisterende standardrapport. De
 13. Vælg **Rapportindstillinger**.
 14. Vælg **Tilføj et dimensionsfilter** , og vælg **Virksomhedsenhed**.
 15. Skriv 001 i feltet, og vælg **OK**. Rapporten viser nu kun data for 001 virksomhedsenheden. Dette er en personlig visning af rapporten og er ikke tilgængelig for andre.
-16. Luk den filtrerede rapport. Finansielle rapporter kan vises i en hvilken som helst valuta, der er blevet føjet til Dynamics 365 for operationer.
+16. Luk den filtrerede rapport. Økonomirapporter kan vises i en hvilken som helst valuta, der er føjet til Dynamics 365 for Operations.
 17. Vælg **Valuta**, og vælg derefter **EUR.** Rapporten vises nu i euro. Alle valutakoder og valutasymboler, der er med i rapportdesignet, vises nu i den valuta, der er anvendt. Hvis intet valutasymbol er defineret for en valuta, vises valutasymbolet ikke.
 18. Luk rapporten **Finansdetaljer**.
 19. Luk **Report Designer**.
@@ -66,7 +69,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du opdaterer b
 1.  Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
 2.  Vælg rækken for rapporten med navnet **Råbalanceoversigt – standard.**
 3.  Vælg **Rediger**. **Oversigt over råbalance – standard** åbnes i Report Designer.
-4.  Vælg **Filer**, derefter **Gem som**, og navngiv rapporten Detaljeret råbalance med attributter. Bemærk: Hver gang der oprettes en ny rapport i report designer regnskabsrapporter listen opdateres i Dynamics 365 for operationer.
+4.  Vælg **Filer**, derefter **Gem som**, og navngiv rapporten Detaljeret råbalance med attributter. Bemærk! Hver gang en ny rapport i Report Designer, opdateres listen over økonomirapporter i Dynamics 365 for Operations.
 5.  Fra rapportdefinition skal du vælge ikonet for rækkedefinitionen for at åbne **Råbalance – standardrækkedefinition**.
 6.  Gem rækkedefinitionen, som **Detaljeret råbalance med attributter**
 7.  Placer markøren på række 50, Vælg **Rediger**, derefter **Indsæt rækker fra dimensioner**. Med Indsæt rækker fra dimensioner kan du vælge, hvilke dimensioner du vil have i din rækkedefinition. I denne øvelse skal vi til at bygge rækkedefinitionen ved hjælp af hovedkonto.
@@ -96,7 +99,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du opdaterer b
 25. Luk rapporten **Detaljeret råbalance med attributter**.
 26. Luk **Report Designer**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Opgave 3: Opret en flerdimensional rapport ved hjælp af et træ, rapportering
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Øvelse 3: Opret en flerdimensional rapport ved hjælp af et rapporteringstræ
 I denne øvelse skal du redigere en eksisterende standardrapport. Du opretter et rapporteringstræ og føjer til en rapportdefinition for producere en bærer/Divisional-resultatopgørelse. Når opdateringerne er fuldført, skal du generere bærer/Divisional-resultatopgørelse og udforske rapporten ved hjælp af rapporteringstræet. Vi starter fra listen over økonomiske rapporter.
 
 1.  Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
@@ -138,7 +141,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du vil tilføj
 1.  Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
 2.  Vælg rækken for rapporten med navnet **Balancen og resultatopgørelsen side om side – standard**
 3.  Vælg **Rediger**. **Balancen og resultatopgørelsen side om side – standard** åbnes i Report Desinger.
-4.  Vælg **fil**&gt;**Gem som** og Giv rapporten navnet **konsolideret balance og resultatopgørelse ved siden af hinanden**.
+4.  Vælg **Filer** &gt; **Gem som** og giv rapporten navnet **Konsolideret balance og resultatopgørelse side om side**.
 5.  Ret basisåret til 2012.
 6.  Klik på rullelisten Træ og vælg **Organisationshierarkier**.
 7.  Klik på rullelisten Træ, og vælg **Contoso Holdings**.
@@ -151,7 +154,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du vil tilføj
 14. Luk **Konsolideret balance og resultatopgørelse side om side**.
 15. Luk **Report Designer**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Opgave 5: Oprette en sidebyside afdelings rapport
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Øvelse 5: Opret en side om side-afdelingsrapport
 I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resultatopgørelse side om side. Du skal bruge en eksisterende rækkedefinition, men du kan oprette en ny rapportdefinition, og en ny kolonnedefinition, der bruger dimensionsfiltre. Vi starter fra listen over økonomiske rapporter.
 
 1.  Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
@@ -179,8 +182,10 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 18. **Gem** dine ændringer og **generer**. Når rapporten færdiggøres, oprettes og åbnes, kan du gennemse rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Regnskabsaflæggelse](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1">
-</ph>[få vist finansrapporter](\financials\general-ledger\view-financial-reports.md)<ph id="t2">
-</ph>[Blog Dynamics finansiel rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Økonomirapportering](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Vis økonomirapporter](\financials\general-ledger\view-financial-reports.md) 
+[Bloggen Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

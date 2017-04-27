@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Angive rentesatser for en rentekode
 
+[!include[banner](../includes/banner.md)]
+
+
 Rentekoder omfatter indstillinger, der bestemmer, hvornår der opkræves rente, og hvordan det beregnes på forfaldne konti.
 
 Du kan oprette en enkelt rentekode og anvende den på flere debitorposteringsprofiler, faktureringskoder eller på bestemte fakturalinjer. Når oplysningerne om rentekoden ændres, implementeres ændringerne automatisk i forbindelse med nye transaktioner for alle funktioner, der bruger koden. Du kan oprette to typer af satser for hver rentekode:
@@ -44,17 +47,17 @@ Du kan oprette rentesatser, der beregner en angivet procentdel.
 
 -   Rentebeløb, der gælder for alle valutaer.
 -   Valgfri rentebeløbsgrænser kan angives.
--   **Procentdel** er markeret ** ** i det **beregning af renter, der er baseret på** på den **oprette rentekoder** side.
+-   **Procentdel** vælges på** **feltet **Beregn renten på baggrund af** på siden **Konfigurer rentekoder**.
 
-For at oprette en rentekode, der opkræver rente på 5 procent for hver anden måned, hvor fakturabetalingen overskrider posteringens forfaldsdato, du skal skrive 2 i den **beregne renter hvert** og vælg **måned**.
+Hvis du f.eks. vil oprette en rentekode, der opkræver 5 procent rente for hver to måneder, hvor fakturabetalingen overskrider posteringens forfaldsdato, skal du skrive 2 i feltet **Beregn rente hver** og vælge **Måned**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Rentesatser baseret på beløb
 Du kan oprette rentesatser, der beregner et bestemt beløb pr. valuta.
 -   Der angives et rentebeløb for hver valuta i rentekoden.
 -   Valgfri rentebeløbsgrænser kan angives.
--   ** Beløb ** er valgt i den **beregning af renter, der er baseret på** på den **oprette rentekoder** side.
+-   **Beløb** vælges i feltet **Beregn rente på baggrund af** på siden **Konfigurer rentekoder**.
 
-For at oprette en rentekode, der opkræver rente af 25,00 for hver 20 dage, hvor fakturabetalingen overskrider posteringens forfaldsdato, ville du indtaster 20 i den **beregne renter hvert**, og vælg **dag**.
+Hvis du f.eks. vil oprette en rentekode, der opkræver en rente på 25,00 for hver 20 dage, hvor fakturabetalingen overskrider posteringens forfaldsdato, skal du skrive 20 i feltet **Beregn rente hver** og vælge **Dag**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Rentesatser baseret på intervaller
 Du kan oprette rentesatser, der varierer afhængigt af det forfaldne beløb, antallet dage, betalingen er forsinket, eller antallet af måneder, betalingen er forsinket.
@@ -67,13 +70,13 @@ Du har oprettet en rentekode, der opkræver rente én gang for hver tre måneder
 | **Feltnavn**                  | **Feltværdi** |
 |---------------------------------|-----------------|
 | **Rentekode**               | 3M%ByAmt        |
-| **Beregn rente hver**    | 3/måned         |
+| **Beregn rente hver**    | 3/Måned         |
 | **Rente efter interval**           | Beløb          |
 | **Beregn renten på baggrund af** | Procentdel      |
 
 Du angiver intervaloplysninger på følgende måde.
 
-| **From value** | **Interest value** |
+| **Fra værdi** | **Renteværdi** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Du har oprettet en rentekode, der opkræver rente én gang for hver 15 dage, hvo
 
 Du angiver intervaloplysninger på følgende måde.
 
-| **From value** | **Interest value** |
+| **Fra værdi** | **Renteværdi** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | september                 |
@@ -109,13 +112,13 @@ Du har oprettet en rentekode, der opkræver rente én gang for hver måned, hvor
 | **Feltnavn**                  | **Feltværdi** |
 |---------------------------------|-----------------|
 | **Rentekode**               | 1M%ByMth        |
-| **Beregn rente hver**    | 1/måned         |
+| **Beregn rente hver**    | 1/Måned         |
 | **Rente efter interval**           | Måneder          |
 | **Beregn renten på baggrund af** | Procentdel      |
 
 Du angiver intervaloplysninger på følgende måde.
 
-| **From value** | **Interest value** |
+| **Fra værdi** | **Renteværdi** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Du angiver intervaloplysninger på følgende måde.
 Rentekoder er for gældende dato. Hvis du vil ændre renten, kan du oprette en **ny version**, der er gældende for en fremtidig dato.
 
 For at få vist forskellige versioner kan du bruge menupunktet **Pr. dato** til at vælge skæringsdatoen. Du kan også vælge **Vis alle poster** for at få vist alle rentekoderne på siden.
+
+
 
 

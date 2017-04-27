@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-guarantee"></a>Garantier
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om garantier. I en garanti accepterer en bank at betale et bestemt pengebeløb til en person, hvis en af bankens kunder misligholder en betaling eller en forpligtelse til den pågældende person. 
 
 En garanti er en aftale med en bank (kautionisten) om at betale et angivet beløb til en anden person (beneficianten), hvis en banks kunde (hovedparten) misligholder en betaling eller en forpligtelse over for beneficianten. Garantier kan ikke overdrages. De gælder kun for den beneficiant, der er nævnt i aftalen. Hovedparten kan anmode om en forøgelse eller reducering af værdien af en garanti med forbehold for betingelserne i aftalen. 
@@ -55,6 +58,8 @@ Nedenstående tabel indeholder beskrivelser af de handlinger, du kan for en gara
 | Forlæng              | Når du leverer garantien til beneficianten, kan du forlænge gyldighedsperioden, hvis det er nødvendigt. |
 | Annullér              | Når det formål, der var grundlag for anmodningen om garantien, ikke længere gælder, annulleres aftalen.                  |
 | Udfør afvikling           | Når beneficianten overdrager garantien til banken, udbetales garantien.                      |
+
+
 
 
 

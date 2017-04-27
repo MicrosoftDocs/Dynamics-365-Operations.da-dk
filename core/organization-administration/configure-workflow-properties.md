@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Konfigurere egenskaberne for en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en arbejdsgang.
 
 Du kan konfigurere egenskaberne for en arbejdsgang ved at åbne arbejdsgangen i arbejdsgangseditoren. Klik på lærredet i arbejdsgangseditoren, og klik derefter på **Egenskaber** for at åbne siden **Egenskaber**. Du kan derefter bruge følgende procedurer til at konfigurere forskellige egenskaber for arbejdsgangen.
@@ -147,10 +150,10 @@ Når et dokument sendes til behandling, oprettes en arbejdsgangsforekomst. Du ka
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>På fanen <strong>Modtager</strong> skal du klikke på <strong>Bruger</strong>.</li>
-    <li>På den <strong>bruger</strong> fane, den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Under fanen <strong>Bruger</strong> på listen <strong>Tilgængelige brugere</strong> vises alle Dynamics 365 for Operations-brugere. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Hvis du vil angive kommentarer om de ændringer, du har foretaget i arbejdsgange
 2.  I feltet **Angiv kommentarer om arbejdsgangen** skal du angive dine kommentarer.
 3.  Gennemse kommentarer. Når du har tilføjet kommentarer, kan du ikke ændre dem.
 4.  Klik på **Tilføj** til at tilføje dine kommentarer til området **Kommentarhistorik**.
+
+
 
 
 

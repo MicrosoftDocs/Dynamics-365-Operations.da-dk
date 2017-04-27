@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Almindelige kilder til produktionsafvigelser
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives forskellige kilder, der er typiske for de enkelte typer afvigelser i produktion. 
 
 Her er nogle typiske kilder til en afvigelse i **partistørrelse**:
@@ -57,6 +60,8 @@ Her er nogle typiske kilder til en afvigelse i **produktionserstatning**:
 -   Manuel tilføjelse af en operation til produktionsruten og rapportering af operationen som Forbrugt.
 -   Valg af en anden styklisteversion ved oprettelse af produktionsordren, eller hvis styklisteversionen er forskellig fra den, der bruges i standardomkostningsberegningen.
 -   Valg af en anden ruteversion ved oprettelse af produktionsordren, eller hvis ruteversionen er forskellig fra den, der bruges i standardomkostningsberegningen.
+
+
 
 
 

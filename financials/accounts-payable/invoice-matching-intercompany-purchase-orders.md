@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturasammenholdelse og interne indkøbsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres.
 
 I eksemplerne under dette emne benyttes følgende opsætning for intern handel:
@@ -35,8 +38,8 @@ I eksemplerne under dette emne benyttes følgende opsætning for intern handel:
 -   Fabrikam Sales er den juridiske salgsenhed.
 -   Debitor 4020 findes i Fabrikam Sales.
 -   Kreditor 3024 findes i Fabrikam Purchase.
--   Interne oplysninger er angivet for kreditor 3024 i Fabrikam Purchase. Fabrikam Sales er angivet som kundens virksomhed og kunde 4020 er angivet som den debitorkonto, der svarer til den juridiske enhed i Fabrikam Purchase.
--   Interne oplysninger er angivet for debitor 4020 i Fabrikam Sales. Fabrikam Purchase er angivet som leverandørfirmaet, og kreditor 3024 er angivet som den kreditorkonto, der svarer til den juridiske enhed i Fabrikam Sales.
+-   I Fabrikam Purchase er der angivet interne oplysninger for kreditor 3024. Fabrikam Sales er angivet som kundefirmaet, og kunde 4020 er angivet som den debitorkonto, der svarer til den juridiske Fabrikam Purchase-enhed.
+-   I Fabrikam Sales er der angivet interne oplysninger for kreditor 4020. Fabrikam Purchase er angivet som kreditorfirmaet, og kreditor 3024 er angivet som den kreditorkonto, der svarer til den juridiske Fabrikam Sales-enhed.
 
 I eksemplerne bruges følgende opsætning for kreditorfakturasammenholdelse for Fabrikam Purchase:
 -   På siden Kreditorparametre er indstillingen Aktivér validering af fakturasammenholdelse markeret.
@@ -45,7 +48,7 @@ I eksemplerne bruges følgende opsætning for kreditorfakturasammenholdelse for 
 
 ## <a name="example-price-matching-and-intercompany-trade"></a>Eksempel: Prissammenholdelse og intern handel
 Nettobeløbene for den interne kreditorfaktura og den interne debitorfaktura skal være ens. Dette krav tilsidesætter de eventuelle godkendelser af fakturasammenholdelse eller pristoleranceprocenter, der måtte gælde. Benyt f.eks. følgende fremgangsmåde.
-1.  Opret salgsordre SO888 for debitor 4020 i Fabrikam Purchase. Den interne indkøbsordre, oprettes der automatisk ICPO222 for kreditor 3024 i Fabrikam Purchase, og salgsordre ICSO888 oprettes automatisk i Fabrikam Sales.
+1.  Opret salgsordre SO888 for debitor 4020 i Fabrikam Purchase. Den interne indkøbsordre ICP0222 oprettes automatisk for kreditor 3024 i Fabrikam Purchase , og salgsordre ICS0888 oprettes automatisk i Fabrikam Sales.
 2.  Registrer i Fabrikam Sales, at varerne er modtaget, og bogfør en følgeseddel. Statussen for ICS0888 skifter til Leveret. Statussen for ICP0222 skifter til Modtaget.
 3.  Udfør en fakturaopdatering af ICS0888 i Fabrikam Sales. Enhedsprisen er 0,45, og 100 varer opdateres.
 4.  Opret en faktura til ICP0222 i Fabrikam Purchase. Du kommer utilsigtet til at ændre nettoprisen fra 45,00 til 54,00. Der vises et ikon, som angiver, at prisen overstiger den tilladte pristolerance på 2 procent.
@@ -60,10 +63,12 @@ I dette eksempel bruges følgende yderligere opsætning af kreditorfakturasammen
 -   Det disponible antal for vare B-R14 er 0 (nul).
 
 Benyt f.eks. følgende fremgangsmåde.
-1.  Opret salgsordre SO999 for debitor 4020 i Fabrikam Purchase. Ordren indeholder ét linjeelement: 100 batterier (vare B-R14) til en salgspris på 1,00 pr. styk. Den interne indkøbsordre ICP0222 oprettes automatisk i Fabrikam Purchase for kreditor 3024, og salgsordre ICS0888 oprettes automatisk i Fabrikam Sales.
+1.  Opret salgsordre SO999 for debitor 4020 i Fabrikam Purchase. Ordren indeholder et linjeelement: 100 batterier (vare B-R14) til en enhedspris på 1,00 pr. styk. Den interne indkøbsordre ICP0222 oprettes automatisk i Fabrikam Purchase for kreditor 3024, og salgsordre ICS0888 oprettes automatisk i Fabrikam Sales.
 2.  Udfør en fakturaopdatering af ICSO999 in Fabrikam Sales. Bogføringen er ikke lykkedes, fordi varen ikke er på lager og endnu ikke er blevet modtaget. Derfor kan de finansielle oplysninger ikke opdateres.
 3.  Registrer, at varerne er modtaget, og bogfør en følgeseddel for ICS0999 i Fabrikam Sales. Der bogføres automatisk en produktkvittering for ICPO333 i Fabrikam Purchase. Det modtagne antal for vare B-R14 skifter til 100 i Fabrikam Purchase.
 4.  Udfør en fakturaopdatering af ICSO999 in Fabrikam Sales. Bogføringen er korrekt udført i begge juridiske enheder. Det indkøbte antal af vare B-R14 skifter til 100 i Fabrikam Purchase.
+
+
 
 
 

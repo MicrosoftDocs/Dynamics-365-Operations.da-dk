@@ -1,5 +1,5 @@
 ---
-title: Opret en statistisk oprindelige budget
+title: Generere et statistisk budgetgrundlag
 description: Denne artikel indeholder oplysninger om de parametre og filtre, der bruges i beregningen af behovsprognoser.
 author: YuyuScheller
 manager: AnnBe
@@ -26,32 +26,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="generate-a-statistical-baseline-forecast"></a>Opret en statistisk oprindelige budget
+# <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om de parametre og filtre, der bruges i beregningen af behovsprognoser. 
 
 Når du opretter en budgetplan, skal du først angive de parametre og filtre, der bruges i beregningen. Du kan f.eks. oprette budgetplan, der estimerer behovet for en bestemt virksomhed baseret på transaktionsdata fra sidste år, for den kommende måned og for en udvalgt gruppe af varer. 
 
-Du kan oprette en efterspørgselsprognose ved at gå til **Master planning &gt;budgettering &gt;efterspørgsel prognoser &gt;Generer statistiske oprindelig budgetteret**. 
+Hvis du vil generere en behovsprognose, skal du gå til **Overordnet planlægning &gt; Prognose &gt; Behovsprognose &gt; Generér statistisk budgetgrundlag**. 
 
 Prognosefilsættet kan vælges på tidspunktet for prognosegenereringen. De tilgængelige værdier er: Dag, Uge og Måned. 
 
 Det antal filsæt, for hvilket der skal genereres en prognose, indstilles i feltet **Prognosehorisont**. 
 
-Når prognosestrategien er indstillet til **Kopiér over historisk efterspørgsel**, ignoreres slutningen af den historiske horisont. Kopieres automatisk antallet filsæt, der er angivet i den **prognose horisonten** til forecastbehov, startende fra den dato, der er angivet i den **fra dato** felt under **historiske vandret**. Ved at kopiere historisk behov fra en bestemt dato frem kan produktionsplanlæggere lægge planen for næste kvartal på to måder:
+Når prognosestrategien er indstillet til **Kopiér over historisk efterspørgsel**, ignoreres slutningen af den historiske horisont. Systemet kopierer antallet af filsæt, der er angivet i feltet **Prognosehorisont**, til prognosebehovet, hvor der startes fra den dato, der er indstillet i feltet **Fra dato** under **Historisk horisont**. Ved at kopiere historisk behov fra en bestemt dato frem kan produktionsplanlæggere lægge planen for næste kvartal på to måder:
 
 -   Ved at kopiere behovet fra samme kvartal sidste år.
 -   Ved at kopiere behovet fra forrige kvartal.
 
 For at undgå forvirring i produktionsplanerne kan et bestemt antal prognosefilsæt fryses. Dette antal er angivet i feltet **Låsningstidshorisont**. På siden **Justeret behovsprognose** er cellerne for de frosne filsæt deaktiveret for at give en visuel indikation af, at disse værdier ikke bør ændres. 
 
-Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger Microsoft Dynamics 365 for operationer efterspørgsel, prognoser service, er der fire måder, som du kan udfylde de huller, der mangler. Du kan vælge den metode, du vil ved at angive manglende\_værdi\_erstatning parameter på den **efterspørgsel, prognoser parametre** side. 
+Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger den tjeneste til behovsprognoser i Microsoft Dynamics 365 for Operations, er der fire måder, hvorpå du kan udfylde hullerne. Du kan vælge den ønskede metode ved at indstille parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametre til behovsprognoser**. 
 
-Den **oprindelige budget startdato for** - **fra dato** har felt er angivet til starten af en budgetteret filsæt, for eksempel i USA, en søndag, hvis forudsigelse bucket er uge. Systemet justerer automatisk den **oprindelige budget startdato for** - **fra dato** felt skal matche starten af en budgetteret filsæt. 
+Feltet **Startdato for prognosegrundlag** - **Fra-dato** skal være indstillet til begyndelsen på filsættet, f.eks. i USA, en søndag, hvis prognosefilsættet er ugen. Systemet justerer automatisk feltet **Startdato for prognosegrundlag** - **Fra-dato**, så den matcher begyndelsen på prognosefilsættet. 
 
-Den **oprindelige budget startdato for** - **fra dato** felt kan du vælge en dato i tidligere. Med andre ord er det muligt at generere en behovsprognose i fortiden. Dette er nyttigt, fordi brugerne får mulighed for at justere parametrene i prognosetjenesten, så den statistiske prognose, der er genereret i fortiden, svarer til det faktiske historiske behov. Brugere kan derefter fortsætte med at bruge disse parameterindstillingerne til at generere et statistisk prognosegrundlag for fremtiden. 
+Feltet **Startdato for prognosegrundlag** - **Fra-dato** kan indstilles til en dato i fortiden. Med andre ord er det muligt at generere en behovsprognose i fortiden. Dette er nyttigt, fordi brugerne får mulighed for at justere parametrene i prognosetjenesten, så den statistiske prognose, der er genereret i fortiden, svarer til det faktiske historiske behov. Brugere kan derefter fortsætte med at bruge disse parameterindstillingerne til at generere et statistisk prognosegrundlag for fremtiden. 
 
-Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget **. Manuelle justeringer gemmes på godkendelsestidspunktet. Derfor, hvis en bruger foretager manuelle justeringer i budgettet, men ikke godkende budgettet tilbage til Dynamics 365 for operationer, ændringerne går tabt. Yderligere oplysninger om manuelle justeringer, og hvordan de fungerer, se [godkendelse af den korrigerede budget](authorize-adjusted-forecast.md). 
+Manuelle justeringer, der er foretaget i tidligere gentagelser af behovsprognoser, kan automatisk anvendes på den grundlagsprognose, hvis afkrydsningsfeltet **Overfør manuelle justeringer til behovsprognosen**. Hvis afkrydsningsfeltet er markeret, føjes de manuelle justeringer ikke til grundlagsprognosen – men de slettes ikke. Manuelle justeringer, der er foretaget på prognose, kan kun slettes, når prognosen importeres. Det gøres ved at fjerne markeringen af **Importér de manuelle justeringer, der er foretaget af behovsprognosegrundlaget**. Manuelle justeringer gemmes på godkendelsestidspunktet. Hvis en bruger derfor foretager manuelle justeringer i prognosen, men ikke godkender prognosen tilbage til Dynamics 365 for Operations, går ændringerne tabt. Få flere oplysninger om manuelle justeringer, og hvordan de fungerer, under [Godkendelse af den justerede prognose](authorize-adjusted-forecast.md). 
 
 Behovsprognosegenerering kan have et navn og kommentarer, så brugerne kan identificere den prognose, der er blevet genereret. Disse værdier er synlige i oversigten over prognosegenereringen på siden **Genereringshistorik for statistisk budgetgrundlag**. 
 
@@ -59,15 +62,17 @@ Den interne planlægningsgruppe i firmaet, varefordelingsnøgler og andre filtre
 
 **Tip**: Nogle gange kan brugere modtager fejl under generering af en behovsprognose, eller prognosegenerering færdiggøres uden sessionslogfil. Dette kan ske på grund af overskydende data i den forespørgsel, der tidligere blev brugt til oprettelse af prognose. Du kan løse dette problem ved at klikke på **Vælg** for at åbne siden **Forespørgsel**, klik på **Nulstil** og derefter generere grundlagsprognosen igen. 
 
-Hvis budgettet ikke er oprettet for en stor række elementer, men, for eksempel for en vare eller en varefordelingsnøgle ad gangen og derefter for at opnå bedre ydeevne, skal du vælge den **bruger anmodning om svar tilstand** afkrydsningsfeltet under den **Master planlægning - Setup - Demand forecasting** - **efterspørgsel, prognoser parametre - Azure Machine Learning** under fanen.
+Hvis prognosen ikke er oprettet for en lang række varer, men for eksempel for én vare eller én varefordelingsnøgle ad gangen, kan du opnå bedre ydeevne ved derefter at vælge afkrydsningsfeltet **Brug svartilstand for anmodning** under fanen **Overordnet planlægning – Opsætning – Behovsprognose** - **Parametre til behovsprognoser – Azure Machine Learning**.
 
 <a name="see-also"></a>Se også
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Konfigurere behovsprognoser](demand-forecasting-setup.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Godkende den justerede prognose](authorize-adjusted-forecast.md)
+
+
 
 

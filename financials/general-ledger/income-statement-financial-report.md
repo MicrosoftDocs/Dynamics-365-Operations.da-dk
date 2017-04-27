@@ -1,6 +1,6 @@
 ---
 title: "Regnskabsrapport over resultatopgørelse"
-description: "I denne artikel beskrives standardrapporten resultatopgørelse. Her beskrives også de komponenter, der er knyttet til denne rapport."
+description: "I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Regnskabsrapport over resultatopgørelse
 
-I denne artikel beskrives standardrapporten resultatopgørelse. Her beskrives også de komponenter, der er knyttet til denne rapport. 
+[!include[banner](../includes/banner.md)]
+
+
+I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport. 
 
 <a name="default-income-statement-report"></a>Standardrapport over resultatopgørelse
 -------------------------------
@@ -61,10 +64,12 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 <a name="see-also"></a>Se også
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Økonomirapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Vis økonomiske rapporter](view-financial-reports.md)
 
-[Dynamics finansiel rapportering Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis kreditorbetaling med rabatter på kreditnotaer i kreditor"
+title: "Udlign en delvis kreditorbetaling med rabatter på kreditorkreditnotaer"
 description: "Denne artikel fører dig gennem et scenario, hvor en kreditnota udlignes med en faktura."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Udligne en delvis kreditorbetaling med rabatter på kreditnotaer i kreditor
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Udlign en delvis kreditorbetaling med rabatter på kreditorkreditnotaer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel fører dig gennem et scenario, hvor en kreditnota udlignes med en faktura.
 
 Fabrikams kreditorer giver kasserabatter på kreditnotaer. Kreditor 3050 giver Fabrikam en kasserabat på 1 procent, hvis en faktura betales i løbet af 14 dage.
 
 ## <a name="invoice-and-credit-memo"></a>Faktura og kreditnota
-April opretter en faktura på 1.000,00 for kreditor 3050 d. 29. Hun opretter en kreditnota for 200,00 d. 2. Fra siden **Leverandører** åbner April siden **Udlign transaktioner**. Hun kan bruge siden **Udlign transaktioner** til at markere både kreditnotaen og den faktura, der skal udlignes. Der beregnes en rabat på 2,00 på kreditnotaen. Derfor er den samlede værdi af kreditnotaen reduceret til 198,00.
+Den 29. juni opretter April en faktura på 1.000,00 til kreditor 3050. Den 2. juli opretter hun en kreditnota på 200,00. Fra siden **Leverandører** åbner April siden **Udlign transaktioner**. Hun kan bruge siden **Udlign transaktioner** til at markere både kreditnotaen og den faktura, der skal udlignes. Der beregnes en rabat på 2,00 på kreditnotaen. Derfor er den samlede værdi af kreditnotaen reduceret til 198,00.
 
 | Foretag afmærkning                     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ April kan gennemgå kreditorposteringer på siden **Kreditorposteringer** ved at
 | Fak-10071  |                  | 2-7-2015  | CR10071 | 200,00                               |                                       | 0,00    | USD      |
 | DISC-10071 |  Kasserabat   | 2-7-2015  |         | 2,00                                 |                                       | 0,00    | USD      |
 | DISC-10071 |  Kasserabat   | 2-7-2015  |         |                                      | 2,00                                  | 0,00    | USD      |
+
+
 
 
 

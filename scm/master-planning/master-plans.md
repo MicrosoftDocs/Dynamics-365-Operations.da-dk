@@ -1,6 +1,6 @@
 ---
 title: Behovsplaner
-description: "Du kan bruge forskellige behovsplaner til understøtter firmaets daglige arbejdsrutiner, simulere forskellige planlægningsstrategier, som du vil overvåge og implementere en firmapolitik, som en politik om intern performance eller kunde tilfredshed."
+description: "Brug forskellige behovsplaner, der understøtter firmaets daglige arbejdsrutiner, simulere forskellige planlægningsstrategier, som du vil overvåge, og implementer en firmapolitik, der f.eks. vedrører intern performance eller kundetilfredshed."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Behovsplaner
 
-Du kan bruge forskellige behovsplaner til understøtter firmaets daglige arbejdsrutiner, simulere forskellige planlægningsstrategier, som du vil overvåge og implementere en firmapolitik, som en politik om intern performance eller kunde tilfredshed. 
+[!include[banner](../includes/banner.md)]
+
+
+Brug forskellige behovsplaner, der understøtter firmaets daglige arbejdsrutiner, simulere forskellige planlægningsstrategier, som du vil overvåge, og implementer en firmapolitik, der f.eks. vedrører intern performance eller kundetilfredshed. 
 
 Du kan konfigurere behovsplaner på siden **Behovsplaner**.
 
@@ -50,8 +53,10 @@ Du kan også angive, at den dynamiske startplan skal opdateres med den nye behov
 
 [Disponeringsindstillinger](coverage-settings.md)
 
-[Adskille taktiske og udløsende planlægning for behovsplanlægning](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Adskille taktisk og operativ planlægning for behovsplanlægning](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Overordnet planlægning: Brug en statisk og dynamisk behovsplan eller én plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Varedisponering: Bruge en statisk og dynamisk behovsplan eller bruge én plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

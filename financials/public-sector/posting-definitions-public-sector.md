@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
 
 I denne artikel beskrives bogføringsdefinitionernes tilgængelige funktioner for den offentlige sektor. Før du læser dette emne, skal du være fortrolig med bogføringsdefinitioner.
@@ -44,7 +47,7 @@ Du kan konfigurere eksemplerne i denne artikel på siden **Bogføringsdefinition
 Når der er en match mellem kontiene og dimensionsværdierne i ruden **Søgekriterier** for bogføringsdefinitionen og kontiene og dimensionsværdierne i posteringen, genereres der finansposter. Disse poster er baseret på de **oprettede poster** for bogføringsdefinitionen. 
 
 > [!NOTE]
-> Knyt en bogføringsdefinition til en bestemt transaktionstype ved brug af **posteringsbogføringsdefinitioner** side. Efter at du har knyttet en bogføringsdefinition til en posteringstype og valgt **Brug bogføringsdefinitioner** på siden **Finansparametre**, skal alle posteringer med den valgte posteringstype bruge bogføringsdefinitioner.
+> Knyt en bogføringsdefinition til en bestemt posteringstype ved brug af siden **Definitioner af posteringsbogføring**. Efter at du har knyttet en bogføringsdefinition til en posteringstype og valgt **Brug bogføringsdefinitioner** på siden **Finansparametre**, skal alle posteringer med den valgte posteringstype bruge bogføringsdefinitioner.
 
 ## <a name="example-budget-appropriations"></a>Eksempel: Budgetdisponeringer
 For organisationerne inden for den offentlige sektor registreres oprindelige budgetsaldi som enten disponeringer til udgifter eller som forventet omsætning. De oprindelige budgetsaldi bruges til at spore de budgetsaldi, der er til rådighed, og sammenholde dem med udgifter og de faktiske indtægter, der indgår.
@@ -55,7 +58,7 @@ Der oprettes en bogføringsdefinition som et led i registreringen af budgetregis
 |-------------------|------------------------|----------|
 | Udgift           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-1"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 1
 
@@ -70,7 +73,7 @@ Der oprettes en bogføringsdefinition som et led i registreringen af budgetregis
 |-------------------|------------------------|----------|
 | Indtægter           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-2"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 2
 
@@ -85,7 +88,7 @@ Du kan angive konti, dimensionsværdier og beløb til budgetkontoposten på side
 
 | Konto + dimensioner               | Debet | Kredit | Kommentar |
 |------------------------------------|-------|--------|---------|
-| 101-606400-OU\_1-OU\_3566-uddannelse |       | 250,00 |         |
+| 101-606400-OU\_1-OU\_3566-Training |       | 250,00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Finansposter genereret fra bogføringsdefinitionen
 
@@ -96,13 +99,13 @@ Genererede finansposter oprettes til registrering af de oprindelige budget i hve
 | 101-36300            |        | 250,00 |         |
 | 101-36350            | 250,00 |        |         |
 
-I dette eksempel matcher middeldimensionen og kontodelen af udgiftskontostrukturen kriterierne for bogføringsdefinitionen. Derfor, når 101-606400-OU\_1-OU\_3566-Uddannelse evalueres, oprettes de genererede finansposter.
+I dette eksempel matcher middeldimensionen og kontodelen af udgiftskontostrukturen kriterierne for bogføringsdefinitionen. Derfor oprettes de genererede finansposter, når 101-606400-OU\_1-OU\_3566-Training evalueres.
 
 ## <a name="examples-pooled-cash-settlements"></a>Eksempler: Samlede kontantudligninger
 Et samlet kontantregnskab består af beløb, der indskydes af individuelle midler på en kombineret finanskonto. Dette forbedrer styring af og opsyn med likvide aktiver og fremmer effektiv administration af overskydende midler. Disse beløb kan administreres ved hjælp af kasserermidler. Derfor skal det passende proportionale beløb af de samlede kontant- og investeringssaldi rapporteres for hver enkelt middel, der deltager i puljen. For at garantere dette skal der føjes relevante forfalden til- og forfalden fra-poster til de udligninger, der overfører beløb fra ét middel til et andet for at udføre udligningen. 
 
 > [!NOTE] 
-> Ingen fejlmeddelelse vises, hvis der ikke er angivet en bogføringsdefinition for udligninger eller søgekriterier i bogføringsdefinitionen ikke er tilgængelige. Installationer, der ikke bruger samlede kontantudligninger, eller som ikke kræver modposteringer på udligningsbilag, behøver ikke at konfigurere bogføringsdefinitioner for udligninger, når bogføringsdefinitioner er aktiveret for andre posteringer. 
+> Der vises ingen fejlmeddelelse, hvis der ikke er angivet en bogføringsdefinition for udligninger, eller hvis ikke der findes et søgekriterie i bogføringsdefinitionen. Installationer, der ikke bruger samlede kontantudligninger, eller som ikke kræver modposteringer på udligningsbilag, behøver ikke at konfigurere bogføringsdefinitioner for udligninger, når bogføringsdefinitioner er aktiveret for andre posteringer. 
 
 Når det gælder kreditorudligninger, anvendes kreditorbetalinger i et eller flere midler til at registrere de relevante middelegenkapitalstransaktioner i kasserermidler. Når det gælder debitorudligninger, skal debitorkreditten fra betalinger i kasserermidlerne bruges til at udligne tilgodehavender i et eller flere midler. Posteringsposter på kreditorsaldo eller debitorsaldo på de transaktioner, der udlignes, tilbageføres automatisk. Brug af bogføringsdefinitioner til udligning er valgfrit. Bogføringsdefinitionerne anvendes på tidspunktet for udligningen for at generere flere finansposteringer for forfalden til- og forfalden fra-poster for at afstemme udligningsbilaget efter middel. 
 
@@ -115,7 +118,7 @@ Du kan bruge bogføringsdefinitioner til følgende udligningsposteringstyper:
 Du kan konfigurere bogføringsdefinitioner for kreditorbetalingskladder, egenveksler og debitorbetalingskladder på siden **Bogføringsdefinitioner** i feltet **Modul** og ved at vælge **Bank**. Derefter kan du på siden **Definitioner af posteringsbogføring** på fanen **Bank** vælge de relevante transaktionstyper, der skal knyttes til posteringsdefinitionerne.
 
 > [!NOTE] 
-> En enkelt bogføringsdefinition, kan Hvis det er bredt defineret, bruges til de fleste leverandør og scenarier med udligning af debitor. Den enkelte bogføringsdefinition skal stadig være tilknyttet betalingskladder for både kreditor og debitor på fanen **Bank**. 
+> En enkelt bogføringsdefinition, hvis den er defineret bredt, bruges til de fleste scenarier med kreditor- og debitorudligning. Den enkelte bogføringsdefinition skal stadig være tilknyttet betalingskladder for både kreditor og debitor på fanen **Bank**. 
 
 Du kan angive en anden bogføringsdefinition for en bestemt bank og betalingsmåde for kreditor- og debitorbetalingskladder. 
 
@@ -140,7 +143,7 @@ Du kan angive en enkelt forfalden til-konto i kassererens midler for alle midler
 |-------------------|----------------------------------------|----------|
 | Restværdi           | 999 – Angiv en søgepostering med højere prioritet for kassererens midler, så der ikke genereres modposteringer for dette middel. | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="settlement-posting-definition--generated-entries-for-match-criteria"></a>Udligningsbogføringsdefinition – genererede poster for søgekriterier
 
@@ -154,7 +157,7 @@ Du kan angive en enkelt forfalden til-konto i kassererens midler for alle midler
 |-------------------|---------------------------------------------------------------------------------------------|----------|
 | Restværdi           | Brug en global søgepostering med lavere prioritet for at oprette modposteringer for alle andre midler. | 10       |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="settlement-posting-definition--generated-entries-for-match-criteria"></a>Udligningsbogføringsdefinition – genererede poster for søgekriterier
 
@@ -173,7 +176,7 @@ Du kan angive en anden forfalden til-konto i kassererens midler for hvert enkelt
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------|----------|
 | Restværdi           | 101 – Hvis der bruges en middelværdi og en tom hovedkonto, gælder søgekriteriet for både tilgodehavender fra kunder og skyldige beløb til kreditorer. | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="settlement-posting-definition--generated-entries-for-match-criteria"></a>Udligningsbogføringsdefinition – genererede poster for søgekriterier
 
@@ -271,7 +274,7 @@ Ud over eksemplet tidligere i dette afsnit kan bogføringsdefinitioner til udlig
 -   Afskrivninger på debitor
 -   Udligninger af fritekstdebitorfakturaer ved kontantbetaling ved levering (kontantbetaling)
 
-Afskrivninger på debitor kan bruge bogføringsdefinitioner, der er defineret til udligning. Kladdebilaget Finans kredit kan der oprettes, når saldi bogføres af fonden. Både finans- og debitorkontotypeposter på kladdelinjerne evalueres mod bogføringsdefinitionen for udligningen. Begge bruger den bogføringsdefinition, der er tilknyttet posteringstypen på fanen **Tilgodehavender** på siden **Definitioner af posteringsbogføring**. Afhængigt af hvordan afskrivning skal udføres, kan bogføringsdefinitionen til udligning kræve flere søgekriterier. 
+Afskrivninger på debitor kan bruge bogføringsdefinitioner, der er defineret til udligning. Derfor kan der oprettes finanskreditkladder, når saldi bogføres af fonden. Både finans- og debitorkontotypeposter på kladdelinjerne evalueres mod bogføringsdefinitionen for udligningen. Begge bruger den bogføringsdefinition, der er tilknyttet posteringstypen på fanen **Tilgodehavender** på siden **Definitioner af posteringsbogføring**. Afhængigt af hvordan afskrivning skal udføres, kan bogføringsdefinitionen til udligning kræve flere søgekriterier. 
 
 Når bogføringsdefinitionen for afskrivning er konfigureret til afskrivning af saldi til godtgørelse for tvivlsomme tilgodehavender i forhold til aktivkontoen, kan bogføringsdefinitionen for udligning også bruges til afskrivninger, forudsat at søgekriteriet allerede er konfigureret til balancekonti, der har en maske for hovedkontoen. (Få yderligere oplysninger ved at se tidligere eksempler, f.eks. afsnittet "Udligningsbogføringsdefinition – søgekriterier"). 
 
@@ -283,16 +286,16 @@ Hvis bogføringsdefinitionen til afskrivning er konfigureret til at tilbageføre
 |-------------------|---------------------------------------------------------------------------|----------|
 | Indtægter           | 101 – Hvis du bruger en middelværdi og en tom hovedkonto, er kriterierne gældende for alle finansposter. | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria"></a>Bogføringsdefinition – genererede poster for søgekriterier
 
 | Kontostruktur | Genereret kontonummer                                                           | Genereret debet/kredit |
 |-------------------|------------------------------------------------------------------------------------|------------------------|
 | Saldo           | 101 - 10110 (Konto for egenkapital i midlet 101)                                           | Balancere              |
-| Samme              | 999 - 37101 (kassererens midler – fondens egenkapitalkonto for fonden 101. En enkelt konto kan bruges i stedet for enkelte fond egenkapitalkonti.) | Samme                   |
+| Samme              | 999 - 37101 (Kasserers midler – egenkapitalkonto til midler 101. En enkelt konto kan anvendes i stedet for individuelle middelegenkapitalkonti). | Samme                   |
 
-## <a name="accounts-receivable-writeoff-example"></a>Konti tilgodehavender writeoff eksempel
+## <a name="accounts-receivable-writeoff-example"></a>Eksempel på debitorafskrivning
 ### <a name="accounts-receivable-invoice-voucher"></a>Fakturabilag for Debitor
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar             |
@@ -343,7 +346,7 @@ I posteringsdefinitionen skal du derefter angive følgende søgekriterier og gen
 |-------------------|-----------------------------------------------------------------|------------------------|
 | Restværdi           | 999 – Dette søgekriterie bruges kun til tilgodehavender i kassererens midler (999). Der kræves kun to genererede poster for dette søgekriterie, fordi forfalden til- og forfalden fra-poster ikke er tilgængelige for kassererens midler. | 1                      |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-1"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 1
 
@@ -358,7 +361,7 @@ I posteringsdefinitionen skal du derefter angive følgende søgekriterier og gen
 |-------------------|-----------------------------------------------------------------------|----------|
 | Restværdi           | 101 – Når det gælder søgekriterier, der ikke er i kassererens midler, kræves der fire sæt genererede poster. To poster tilbagefører debitorsaldoposteringstypeposter på kreditnota og faktura, og to yderligere poster genererer de nødvendige forfald til- og forfald fra-poster. | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-2"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 2
 
@@ -367,9 +370,9 @@ I posteringsdefinitionen skal du derefter angive følgende søgekriterier og gen
 | Saldo           | 999 - 11530 (Debiter debitorsaldoposteringstypeposten på den kreditornota, der udstedes).  | Balancere              |
 | Samme              | 999 – (Krediter tilgodehavende i 101-midlet).                         | Samme                   |
 | Saldo           | 101 - 10110 (Konto for egenkapital i midlet 101)                           | Balancere              |
-| Samme              | 999 - 37101 (kassererens midler – fondens egenkapitalkonto for fonden 101. En enkelt konto kan bruges i stedet for enkelte fond egenkapitalkonti.) | Samme                   |
+| Samme              | 999 - 37101 (Kasserers midler – egenkapitalkonto til midler 101. En enkelt konto kan anvendes i stedet for individuelle middelegenkapitalkonti). | Samme                   |
 
-## <a name="accounts-receivable-cashondelivery-cash-payment-settlement-example"></a>Konti eksempel til udligning af debitor cashondelivery (kontant)
+## <a name="accounts-receivable-cashondelivery-cash-payment-settlement-example"></a>Eksempel på debitorafstemning ved kontantbetaling ved levering (kontantbetaling)
 ### <a name="accounts-receivable-invoice-voucher"></a>Fakturabilag for Debitor
 
 | Konto + dimensioner | Debet  | Kredit | Kommentar                          |
@@ -411,7 +414,7 @@ Følgende tabel viser, hvordan de endelige finanskonti påvirkes.
 ## <a name="example-advanced-ledger-entries"></a>Eksempel: avancerede finansposter
 Når du opretter avancerede finansposter, skal du vælge en standardbogføringsdefinition. Derefter kan du for hver avanceret finanspostlinje enten bruge standardbogføringsdefinitionen eller vælge en anden. Bogføringsdefinitionerne genererer regnskabsfordelinger og kladdeposteringer for reskontro, der opretter, ændrer eller tilbagefører finansposterne og opdaterer finanskontiene. Du kan indstille hver bogføringsdefinition for appen Finans. Men du behøver ikke at tilknytte bogføringsdefinitionen med en transaktionstype, som du gør for andre bogføringsdefinitioner. I stedet vælger du bogføringsdefinitionen i den avancerede finanspost. 
 
-I dette scenario kan fakturere kreditor AP\_0949 fejlagtigt blev bogført til kapital forbedring-fund 300-12300-51002 i stedet for generelle fond 100-39810-51001. Følgende eksempel viser, hvordan en avanceret finanspost kan bruge en bogføringsdefinition til at debitere kapitalforbedringsmidlet og kreditere det generelle middel.
+I dette scenarie blev kreditorfakturaen AP\_0949 fejlagtigt bogført til kapitalforbedringsmidlet 300-12300-51002 i stedet for til det generelle middel 100-39810-51001. Følgende eksempel viser, hvordan en avanceret finanspost kan bruge en bogføringsdefinition til at debitere kapitalforbedringsmidlet og kreditere det generelle middel.
 
 ### <a name="posting-definition--match-criteria--row-1"></a>Bogføringsdefinition – søgekriterier – række 1
 
@@ -419,7 +422,7 @@ I dette scenario kan fakturere kreditor AP\_0949 fejlagtigt blev bogført til ka
 |-------------------|------------------------|----------|
 | Restværdi           | 300- -                 | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-1"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 1
 
@@ -435,7 +438,7 @@ I dette scenario kan fakturere kreditor AP\_0949 fejlagtigt blev bogført til ka
 |-------------------|------------------------|----------|
 | Restværdi           | 100 - -                | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-2"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 2
 
@@ -467,7 +470,7 @@ I dette scenario kan fakturere kreditor AP\_0949 fejlagtigt blev bogført til ka
 Organisationer bruger bogføringsdefinitioner i forbindelse med ultimo ved årsafslutningen af finanskonti. Bogføringsdefinitioner kan bruges til afslutning af konti til pengebalancer eller overførsel af årets resultat på basis af den klasseattribut, der er angivet for midlerne (dimensionen), kombineret med kontoens afslutningstypeattribut. Det er et krav, at der bruges bogføringsdefinitioner ved afslutning af finanskonti og til overførsel af saldi til primoperioden i det nye regnskabsår. 
 
 > [!NOTE]
-> Hvis du vil bruge bogføringsdefinitioner til ultimo- og åbne, skal du udføre følgende opgaver i installationsprogrammet:
+> For at bruge bogføringsdefinitioner til ultimo og primo ved årsafslutning skal du udføre følgende opsætningsopgaver:
 
 -   På siden **Økonomiparametre** i afsnittet **Finans** på oversigtspanelet **Årsafslutning** skal du vælge indstillingen **Opret ultimoposteringer ved overførsel**.
 -   På siden **Hovedkonti - kontoplan: %1** skal du oprette en konto til lukning.
@@ -482,7 +485,7 @@ Følgende eksempler på bogføringsdefinitioner viser ultimo for midler for offe
 |-------------------|------------------------|----------|
 | Udgift           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="governmental-funds--posting-definition--generated-entries-for-match-criteria--row-1"></a>Midler fra offentlige myndigheder – bogføringsdefinition – genererede poster for søgekriterier – række 1
 
@@ -496,7 +499,7 @@ Følgende eksempler på bogføringsdefinitioner viser ultimo for midler for offe
 |-------------------|------------------------|----------|
 | Udgift           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="governmental-funds--posting-definition--generated-entries-for-match-criteria--row-2"></a>Midler fra offentlige myndigheder – bogføringsdefinition – genererede poster for søgekriterier – række 2
 
@@ -510,7 +513,7 @@ Følgende eksempler på bogføringsdefinitioner viser ultimo for midler for offe
 |-------------------|------------------------|----------|
 | Indtægter           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="governmental-funds--posting-definition--generated-entries-for-match-criteria--row-3"></a>Midler fra offentlige myndigheder – bogføringsdefinition – genererede poster for søgekriterier – række 3
 
@@ -549,7 +552,7 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 |-------------------|------------------------|----------|
 | Restværdi           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="proprietary-funds--posting-definition--generated-entries-for-match-criteria--row-1"></a>Beskyttede midler – bogføringsdefinition – genererede poster for søgekriterier – række 1
 
@@ -563,7 +566,7 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 |-------------------|------------------------|----------|
 | Udgift           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="proprietary-funds--posting-definition--generated-entries-for-match-criteria--row-2"></a>Beskyttede midler – bogføringsdefinition – genererede poster for søgekriterier – række 2
 
@@ -577,7 +580,7 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 |-------------------|------------------------|----------|
 | Indtægter           | - - -                  | 1        |
 
-\*En tom værdi i den **Overensstemmelseskontonummer** betyder, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+\*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
 
 #### <a name="proprietary-funds--posting-definition--generated-entries-for-match-criteria--row-3"></a>Beskyttede midler – bogføringsdefinition – genererede poster for søgekriterier – række 3
 
@@ -611,14 +614,16 @@ Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst
 <a name="see-also"></a>Se også
 --------
 
-[Accounts payable](../accounts-payable/accounts-payable.md)
+[Kreditor](../accounts-payable/accounts-payable.md)
 
 [Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
 
-[Accounts receivable in the public sector](accounts-receivable-public-sector.md)
+[Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
 
 [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
 
-[General ledger in the public sector](general-ledger-public-sector.md)
+[Finans i den offentlige sektor](general-ledger-public-sector.md)
+
+
 
 

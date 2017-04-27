@@ -1,5 +1,5 @@
 ---
-title: Opdatere bank journal sammensat enhed
+title: Opdater den sammensatte enhed Bankkladde
 description: "Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Opdatere bank journal sammensat enhed
+# <a name="update-the-bank-journal-composite-entity"></a>Opdater den sammensatte enhed Bankkladde
+
+[!include[banner](../includes/banner.md)]
+
 
 Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
 
 Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
 
 1.  Kompilerer og synkroniserer følgende sammensatte bankkladdeobjekter, objekter, og midlertidige tabeller:
-    -   Sammensat objekt\\BankJournalEntity
+    -   Sammensat enhed\\BankJournalEntity
     -   Enhed\\BankJournalHeaderEntity
     -   Enhed\\BankJournalLineEntity
     -   Tabel\\BankJournalHeaderStaging
     -   Tabel\\BankJournalLineStaging
 
-2.  Styring af\\dataprojekter
+2.  Datastyring\\dataprojekter
     -   Vis typen **Banktransaktion **på **Kildedata-**layout.
         -   Kildedataformat = XML-element
         -   Enhedsnavn = Bankkladde
@@ -49,6 +52,8 @@ Brug følgende trin til at føje det ekstra felt BankTransactionType til den sam
             -   Kontrollér, at bankposteringstypen er knyttet fra Kilde til Midlertidig.
 
 3.  Importér det nye udtog.
+
+
 
 
 

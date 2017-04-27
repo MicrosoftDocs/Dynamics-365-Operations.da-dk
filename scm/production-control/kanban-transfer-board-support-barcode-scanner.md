@@ -1,5 +1,5 @@
 ---
-title: "Kanban-området overførsel understøtter til stregkode scannere"
+title: "Kanban-området for overførsel understøtter stregkodescannere"
 description: "Kanban-områdetet understøtter scannerinput fra en widget stregkodescanner til at vælge, starte, udfylde og tømme et kanban-job."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-området overførsel understøtter til stregkode scannere
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-området for overførsel understøtter stregkodescannere
+
+[!include[banner](../includes/banner.md)]
+
 
 Kanban-områdetet understøtter scannerinput fra en widget stregkodescanner til at vælge, starte, udfylde og tømme et kanban-job.
 
@@ -46,13 +49,13 @@ På oversigtspanelet **Scanner registrering** kan du vælge den registreringstil
 <a name="registration-mode-select"></a>Valg af registreringstilstand
 ------------------------
 
-Når du bruger en stregkodelæser til at vælge et job, visningstilstanden for kanban-kort ændringer. I denne tilstand gælder følgende betingelser:
+Når du bruger en stregkodelæser til at vælge et job, ændres visningstilstanden for kanban-området. I denne tilstand gælder følgende betingelser:
 
 -   Der vises kun det scannede kanban-job.
 -   Detaljerne om det valgte job vises i oversigtspanelet **Detaljer**.
 -   I oversigtspanelet **Meddelelser** vises der kun meddelelser for det valgte job.
 -   Du kan ændre status for jobbet ved hjælp af funktioner, der er tilgængelige i handlingsruden. I kanban-overførselsområdet vises der fortsat kun et enkelt job i denne periode.
--   Du kan opdatere oplysningerne på listen over job manuelt ved at klikke på **Opdater** (Skift + F5) i handlingsruden. Når du har opdateret oplysningerne, vises de komplette resultater for jobfilteret igen.
+-   Du kan opdatere oplysningerne på listen over job manuelt ved at klikke på **Opdater** (Skift+F5) i handlingsruden. Når du har opdateret oplysningerne, vises de komplette resultater for jobfilteret igen.
 
 ## <a name="job-status-and-possible-actions"></a>Jobstatus og mulige handlinger
 Status for det valgte job og status for udlignede job for hændelseskanbans bestemmer, om du kan behandle jobbet yderligere. I følgende tabel vises oplysninger om disse statusser og opgaver:
@@ -185,6 +188,8 @@ Status for det valgte job og status for udlignede job for hændelseskanbans best
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -54,12 +54,12 @@ Du kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre fi
 ## <a name="why-should-i-use-posting-definitions"></a>Hvorfor bruge bogføringsdefinitioner?
 Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til kildetransaktioner, der opfylder de valgte kriterier – f.eks. til at generere flere, afstemte finansposter baseret på attributter, som f.eks. transaktionstyper og konti. Bogføringsdefinitioner indeholder detaljeret kontrol med Finans-opdateringer, der er oprettet af kildedokumenter, i modsætning til almindeligt anvendte opdateringer af posteringsprofiler. Bogføringsdefinitioner til Finans er påkrævede, hvis du bruger avancerede finansposter. Bogføringsdefinitioner bruges i forbindelse med ultimobehandling af finanskonti. Bogføringsdefinitioner kan bruges til afslutning af konti til pengebalancer eller overførsel af årets resultat på basis af middelklassen og kontoens afslutningstype. Det er et krav, at der bruges bogføringsdefinitioner ved afslutning af finanskonti og til overførsel af saldi til primoperioden i det nye regnskabsår. Hvis du vil vide mere, kan du se under [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
 
-## <a name="how-do-i-collect-and-analyze-data-to-meet-the-common-governmentwide-accounting-classification-cgac-requirements"></a>Hvordan indsamle og analysere data for at opfylde kravene til almindelige Governmentwide Accounting klassifikation (CGAC)?
+## <a name="how-do-i-collect-and-analyze-data-to-meet-the-common-governmentwide-accounting-classification-cgac-requirements"></a>Hvordan indsamler og analyserer jeg data for at opfylde CGAC-krav (Governmentwide Accounting Classification)?
 Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data for bogførte transaktioner for bestemte tal i hovedkonto, fuld kontonumre og økonomiske dimensionsværdier. Du kan finde flere oplysninger under [Afledte finansielle hierarkier i den offentlige sektor](derived-financial-hierarchies-public-sector.md).
 
 <a name="see-also"></a>Se også
 --------
 
-[General ledger](/general-ledger/general-ledger.md)
+[Finans](/general-ledger/general-ledger.md)
 
 

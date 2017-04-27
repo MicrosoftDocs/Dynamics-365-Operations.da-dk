@@ -1,6 +1,6 @@
 ---
 title: Fremdaterede checks
-description: "Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for operationer. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato."
+description: "Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for Operations. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Fremdaterede checks
 
-Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for operationer. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for operationer understøtter fuldt ud cyklussen for fremdaterede checks i både debitor og kreditor, som vist i følgende tabel.
+
+Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for Operations. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato.
+
+Microsoft Dynamics 365 for Operations understøtter hele administrationscyklussen for fremdaterede checks i både Debitor og Kreditor som vist i følgende tabel.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ Microsoft Dynamics 365 for operationer understøtter fuldt ud cyklussen for frem
 </tr>
 <tr class="even">
 <td>Registrere og bogføre en fremdateret check for en kreditor</td>
-<td>Registrer detaljerne omkring en fremdateret check, før du udsteder til en kreditor. Når betalingen bogføres, genkendes kreditorens gæld, men bankkontoen ikke endnu er kredit. I stedet bruges en clearingkonto til dette formål.</td>
+<td>Registrer detaljerne omkring en fremdateret check, før du udsteder til en kreditor. Når betalingen bogføres, genkendes kreditorens gæld, men bankkontoen er endnu ikke kredit. I stedet bruges en clearingkonto til dette formål.</td>
 </tr>
 <tr class="odd">
 <td>Registrere og bogføre en fremdateret check til en debitor</td>
-<td>Registrer oplysninger om en fremdateret check, du har modtaget fra en debitor. Når betalingen bogføres, kunden debitor er kredit, men bankkontoen ikke endnu debitering. I stedet bruges en clearingkonto til dette formål.</td>
+<td>Registrer oplysninger om en fremdateret check, du har modtaget fra en debitor. Når betalingen bogføres, er debitoren kredit, men bankkontoen er endnu ikke debet. I stedet bruges en clearingkonto til dette formål.</td>
 </tr>
 <tr class="even">
-<td>Registrere og bogføre en fremdateret erstatningscheck for en debitor eller kreditor</td>
+<td>Registrer og bogfør en fremdateret erstatningscheck for en debitor eller kreditor.</td>
 <td>
 Hvis din oprindelige check til en kreditor eller fra en debitor går tabt eller beskadiges, kan du udstede en fremdateret erstatningscheck til. Når du registrerer checkoplysningerne, skal du angive en reference til den oprindelige check og angive, at den nye check er en erstatning for den oprindelige. Du kan også bogføre erstatningschecken.</td>
 </tr>
@@ -69,17 +72,19 @@ Hvis din oprindelige check til en kreditor eller fra en debitor går tabt eller 
 </tr>
 <tr class="odd">
 <td>Annullere en fremdateret check for en kreditor</td>
-<td>Du kan annullere en bogført, fremdateret check i disse situationer:-checken returneres af banken.
--Kontrollen er anvendt på en forkert faktura.
--En kontantbetaling foretages dækning af checkbeløbet.
+<td>Du kan annullere en bogført, fremdateret check i disse situationer: - Checken returneres af banken.
+– Checken anvendes til en forkert faktura.
+– Der modtages et kontantbeløb til dækning af checkbeløbet.
 </td>
 </tr>
 <tr class="even">
-<td>Standse betalingen for en fremdateret check</td>
-<td>Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren. Du kan kun standse betalingen checks, der ikke har fjernet.</td>
+<td>Stands betaling af en fremdateret check.</td>
+<td>Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren. Du kan kun standse betalingen, hvis checken ikke allerede er clearet.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Varedisponering for lokations- og lagerdisponering, lagersted er obligatorisk
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives det, hvordan en vare med lokation og lagersted som disponeringsdimensioner bliver planlagt. Lagerstedsdimensionen er obligatorisk.
 
 Dette behovsplanlægningsscenario omfatter følgende forhold:
@@ -38,10 +41,10 @@ Dette behovsplanlægningsscenario omfatter følgende forhold:
 -   Dimensionerne for lokation og lagersted er angivet til disponering. Andre dimensioner angives måske også ved behovsplanlægning. Men de påvirkes ikke af funktionen til flere lokationer.
 
 I følgende grafik vises, hvordan varedisponering forløber. De parametre, der henvises til i grafikken, og deres placering er følgende:
--   The warehouse is set to **Manual**. Klik på **Lagerstyring &gt;Setup &gt;Lageropdeling &gt;lagre**. I **Overordnet planlægning** oversigtspanelet finder du feltet **Manuel**.
--   Der er defineret varedisponering for varen. Klik på **administration af produktoplysninger &gt;produkter&gt; frigivne produkter**. Vælg varen, og derefter i handlingsruden på den **Plan**, og klik på **Varedisponering**.
--   Der er angivet påfyldningsrelationer for lagerstedet. Klik på **Lagerstyring &gt;Setup &gt;Lageropdeling &gt;lagre**. Se feltgruppen **Hovedlagersted** i oversigtspanelet **Overordnet planlægning**.
--   Standardordretypen er indstillet til Produktion, Indkøbsordre eller Kanban. Klik på **administration af produktoplysninger &gt;produkter&gt; frigivne produkter**. Vælg varen, og derefter i handlingsruden på den **Plan**, og klik på **standardindstillinger for ordre**. I formen **Standardindstillinger for ordre** kan du se **Standardordretype**.
+-   Lagerstedet er angivet til **Manuel**. Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**. I **Overordnet planlægning** oversigtspanelet finder du feltet **Manuel**.
+-   Der er defineret varedisponering for varen. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Varedisponering**.
+-   Der er angivet påfyldningsrelationer for lagerstedet. Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**. Se feltgruppen **Hovedlagersted** i oversigtspanelet **Overordnet planlægning**.
+-   Standardordretypen er indstillet til Produktion, Indkøbsordre eller Kanban. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Standardindstillinger for ordre**. I formen **Standardindstillinger for ordre** kan du se **Standardordretype**.
 
 ![Efterspørgselslokalitet og lagerdisponering, lagersted er obligatorisk](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousemandatory.jpg)
 
@@ -50,7 +53,7 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 <a name="see-also"></a>Se også
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
 
 [Overordnet planlægning – lokalitetsdisponering, lagersted er obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
 
@@ -59,5 +62,7 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 [Overordnet planlægning – lokations- og lagerdisponering, lagersted er ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
 [Overordnet planlægning – sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+
+
 
 

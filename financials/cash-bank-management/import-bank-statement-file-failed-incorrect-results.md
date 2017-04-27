@@ -1,6 +1,6 @@
 ---
-title: Bankens kontoudtog fil import fejlfinding
-description: "Det er vigtigt, at bankkontoudtogsfilen fra banken, svarer til det layout, der understøtter Microsoft Dynamics 365 for operationer. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne."
+title: Fejlfinding af filimport af bankkontoudtog
+description: "Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Operations understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Bankens kontoudtog fil import fejlfinding
+# <a name="bank-statement-file-import-troubleshooting"></a>Fejlfinding af filimport af bankkontoudtog
 
-Det er vigtigt, at bankkontoudtogsfilen fra banken, svarer til det layout, der understøtter Microsoft Dynamics 365 for operationer. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
+[!include[banner](../includes/banner.md)]
+
+
+Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Operations understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
 
 <a name="what-is-the-error"></a>Hvad er fejlen?
 ------------------
@@ -34,16 +37,16 @@ Det er vigtigt, at bankkontoudtogsfilen fra banken, svarer til det layout, der u
 Når du forsøger at importere en bankkontoudtogsfil, skal du gå til jobhistorikken for Datastyring og se udførelsesoplysningerne for at finde fejlen. Fejlen gør det lettere at udpege kontoudtoget, balancen eller kontoudtogslinjen. Det er dog ikke sandsynligt, at du får tilstrækkelige oplysninger til at identificere det felt eller element, der er årsag til problemet.
 
 ## <a name="what-are-the-differences"></a>Hvad er forskellene?
-Sammenlign bank fil Layoutdefinitionen til Microsoft Dynamics 365 operationer import definition, og Bemærk eventuelle forskelle i de felter og elementer. Sammenlign bankkontoudtogsfilen relaterede prøven Dynamics 365 for fil operationer. Eventuelle forskelle skal være let at se, i ISO20022-filerne.
+Sammenlign layoutdefinitionen for bankfiler med Microsoft Dynamics 365 for Operations-importdefinitionen, og bemærk eventuelle forskelle i felter og elementer. Sammenlign bankkontoudtogsfilen med den relaterede Dynamics 365 for Operations-eksempelfil. I ISO20022-filerne bør eventuelle forskelle være lette at se.
 
 ## <a name="transformations"></a>Transformationer
 Ændringen foretages typisk i en af tre transformationer. Hver transformation er skrevet for en bestemt standard.
 
 | Ressourcenavn                                         | Filnavn                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_til\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_til\_afstemning\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_til\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>Fejlfinding af transformationer
 ### <a name="adjust-the-bai2-and-mt940-files"></a>Justere BAI2- og MT940-filerne
@@ -68,7 +71,7 @@ Få flere oplysninger under <https://msdn.microsoft.com/en-us/library/ms255605.a
 5.  Angiv input til lokationen for bankkontoudtogsfilen.
 6.  Definer en lokation og et filnavn til outputtet.
 7.  Angiv de nødvendige pausepunkter.
-8.  Klik på menuen **XML**&gt;**starte fejlfinding af XSLT-**.
+8.  Åbn menuen, og klik på **XML** &gt; **Start fejlfinding af XSLT**.
 
 ### <a name="format-the-xslt-output"></a>Formatér XLST-outputtet
 
@@ -76,7 +79,7 @@ Når transformationen er i gang, oprettes der en outputfil, som du kan se i Visu
 
 ### <a name="adjust-the-transformation"></a>Justere transformationen
 
-Juster transformationen for at få det relevante felt eller element i bankkontoudtogsfilen. Derefter knytte dette felt eller element til den relevante Dynamics 365 for operationer element.
+Juster transformationen for at få det relevante felt eller element i bankkontoudtogsfilen. Derefter skal du knytte feltet eller elementet til det relevante Dynamics 365 for Operations-element.
 
 ### <a name="debitcredit-indicator"></a>Indikator for debet/kredit
 
@@ -87,7 +90,7 @@ Nogle gange kan debiteringer importeres som kreditter, og kreditter kan importer
 -   MT940XML-til-Reconcilation.xslt GetCreditDebitIndicator-skabelon
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Eksempler på bankkontoudtogsformater og tekniske layout
-Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfiler til avanceret bankafstemning og tre relaterede eksempelfiler på bankkontoudtog. Du kan hente filer for eksempel og tekniske layout her: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfiler til avanceret bankafstemning og tre relaterede eksempelfiler på bankkontoudtog. Du kan hente filer eksempelfilerne og tekniske layout her: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 
 | Teknisk layoutdefinition                             | Eksempelfil med bankkontoudtog          |
@@ -95,6 +98,8 @@ Følgende tabel viser eksempler på de tekniske layoutdefinitioner for importfil
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
+
 
 
 

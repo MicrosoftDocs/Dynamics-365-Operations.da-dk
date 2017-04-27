@@ -1,6 +1,6 @@
 ---
 title: Produktdimensioner
-description: "Der er fire produktdimensioner - farve, konfiguration, størrelse og typografi. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres."
+description: "Der er fire produktdimensioner – farve, konfiguration, størrelse og type. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Produktdimensioner
 
-Der er fire produktdimensioner - farve, konfiguration, størrelse og typografi. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.
+[!include[banner](../includes/banner.md)]
+
+
+Der er fire produktdimensioner – farve, konfiguration, størrelse og type. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.
 
 Produktdimensioner er egenskaber, der identificerer en produktvariant. Du kan bruge kombinationer af produktdimensioner til at definere produktvarianter. Du skal definere mindst én produktdimension for en produktmaster for at oprette en produktvariant.
 Produktvarianter
 ----------------
 
-Produktvarianter kaldes også varer. En vare er et fysisk produkt, som ikke er det samme som en tjeneste. Du kan også definere en produktmaster med tjenestetypen. Ved hjælp af typen af service kan du angive produktvarianter, der omfatter tjenester. For eksempel kan du angive en produktmaster for konsulentbistand og produktvarianter for arbejde, der udføres af erfarne konsulenter og yngre konsulenter.
+Produktvarianter kaldes også varer. En vare er et fysisk produkt, som ikke er det samme som en tjeneste. Det er også muligt at definere en produktmaster af typen Tjeneste. Ved hjælp af typen af service kan du angive produktvarianter, der omfatter tjenester. For eksempel kan du angive en produktmaster for konsulentbistand og produktvarianter for arbejde, der udføres af erfarne konsulenter og yngre konsulenter.
 
 ## <a name="product-dimensions"></a>Produktdimensioner
-Følgende produktdimensioner for, der er tilgængelige: konfiguration, farve, størrelse og typografi. En produktvariant kan genereres baseret på dimensionsværdierne for produktet.
+Følgende produktdimensioner er tilgængelige: konfiguration, farve, størrelse og type. En produktvariant kan genereres på basis af produktdimensionsværdierne.
 
-Produkt dimensioner værdier, f.eks. størrelse, farve og typografi kan oprettes på den **størrelse**, **farve** og **stil** sider, som kan åbnes fra følgende placeringer: **administration af produktoplysninger**&gt;**Setup**&gt;**Dimension og variant grupper**&gt;**farver/størrelser/typografier**. Produktets dimensionsværdier for dimensionen Konfiguration oprettes typisk ved hjælp af enten Variantstyring eller Dimensionsbaseret konfiguration. Produktdimensioner kan også oprettes og vedligeholdes på siden **Produktdimensioner**, der kan åbnes fra følgende steder:
--   Klik på **administration af produktoplysninger**&gt;**produkter**&gt;**produktmastere**. På den **handlingsruden**, skal du klikke på **produktdimensioner**.
--   Klik på **administration af produktoplysninger**&gt;**produkter**&gt;**alle produkter og produktmastere**. Vælg en produktmaster. På den **handlingsruden**, skal du klikke på **produktdimensioner**.
--   Klik på **administration af produktoplysninger**&gt;**frigivne produkter**. Vælg en produktmaster. På den **handlingsruden**, skal du klikke på **produkt**. Klik på **Produktdimensioner** i gruppen **Produktmaster**.
+Produktets dimensionsværdier, f.eks størrelse, farve og typografi, kan oprettes på siderne **Størrelse**, **Farve** og **Type**, som kan åbnes fra følgende placeringer: **Administration af produktoplysninger** &gt; **Konfiguration** &gt; **Dimensions- og variantgrupper** &gt; **Størrelser/Farver/Typer**. Produktets dimensionsværdier for dimensionen Konfiguration oprettes typisk ved hjælp af enten Variantstyring eller Dimensionsbaseret konfiguration. Produktdimensioner kan også oprettes og vedligeholdes på siden **Produktdimensioner**, der kan åbnes fra følgende steder:
+-   Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Produktmastere**. Klik på **Produktdimensioner** i **handlingsruden**.
+-   Klik på **Administration af produktoplysninger** &gt; **Produkter** &gt; **Alle produkter og produktmastere**. Vælg en produktmaster. Klik på **Produktdimensioner** i **handlingsruden**.
+-   Klik på **Administration af produktoplysninger** &gt; **Frigivne produkter**. Vælg en produktmaster. Klik på **Produkt** i **handlingsruden**. Klik på **Produktdimensioner** i gruppen **Produktmaster**.
 
 Antallet af varianter, der kan oprettes for en vare, er begrænset af antallet af mulige kombinationer af produktdimensioner.
 | **Tip!**                                                                                                                                              |
@@ -64,6 +67,8 @@ Et firma sælger denimbukser. Til varen cowboybukser bruges produktdimensionerne
 | Brun | L    |
 | Brun | XL   |
 | Brun | XXL  |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: BI &amp;rapportering hjemmeside
-description: "I dette emne beskrives BI &amp;rapporteret ressourcer, der er tilgængelige i Microsoft Dynamics 365 for operationer."
+title: Startside for BI og rapportering
+description: "Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;rapportering hjemmeside
+# <a name="bi-amp-reporting-home-page"></a>Startside for BI og rapportering
 
-I dette emne beskrives BI &amp;rapporteret ressourcer, der er tilgængelige i Microsoft Dynamics 365 for operationer.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Operations. 
 
 <a name="working-with-aggregate-data"></a>Arbejde med aggregerede data
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Analyser](analytics.md)
 -   [Aggregatmodeller i realtid i hukommelsen erstatter SSAS-kuber](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modellering og ved hjælp af samlede Data](model-aggregate-data.md)
--   [Overflytte en opgraderet Dynamics AX 2012 R3 salgskube butikken enhed](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Modellering og brug af aggregerede data](model-aggregate-data.md)
+-   [Overføre en opgraderet Dynamics AX 2012 R3-salgskube til enhedslageret](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Self service rapportering
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Selvbetjeningsrapportering
+-   [Power BI-integration](power-bi-integration.md)
 -   [Konfiguration af Power BI til arbejdsområder](configure-power-bi-integration.md)
 -   [Oprette en Power BI rapport ved hjælp af Microsoft Dynamics 365 for Operations-data](create-powerbi-report-data.md)
 -   [Oprette en Power BI rapport og et dashboard](create-powerbi-report-dashboard.md)
--   [Retail Channel ydeevne strøm BI indhold](retail-channel-performance-dashboard-power-bi-data.md)
--   [Økonomisk ydeevne strøm BI-indhold](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Detailkanalydelse, Power BI-indhold](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Driftsregnskab, Power BI-indhold](financial-performance-power-bi-content-pack.md)
+-   [Salg og rentabilitetsydeevne, Power BI-indhold](sales-profitability-performance-content-pack.md)
 -   [Brug en konfiguration af elektronisk rapportering til at give Power BI data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Opbygning af integrerede analytiske oplevelser i Dynamics 365 for Operations-klienten
@@ -95,6 +98,8 @@ I dette emne beskrives BI &amp;rapporteret ressourcer, der er tilgængelige i Mi
 -   [Bruge ER-dokumentstyringsfiler i formatoutput (del 5: Ændre og køre format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (Opgaveguide)
 -   [Generere ER-elektroniske dokumenter for betalinger ved hjælp af en formatkonfiguration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Opgaveguide)
 -   [Opgradere dit ER-format ved at bruge en ny basisversion af formatet](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Opgaveguide)
+
+
 
 
 

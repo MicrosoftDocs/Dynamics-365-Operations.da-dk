@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 
-I dette emne beskrives de årsafslutningsfunktioner, som er tilgængelige for den offentlige sektor. Ved udgangen af regnskabsåret skal du generere ultimoposter og forberede alle konti til det næste regnskabsår.  Offentlige klienter har følgende funktioner:
+I dette emne beskrives de årsafslutningsfunktioner, som er tilgængelige for den offentlige sektor. Ved udgangen af regnskabsåret skal du generere ultimoposter og forberede alle konti til det næste regnskabsår.  Kunder i den offentlige sektor har følgende muligheder:
 
 -   Vælg konti efter midler for ultimo ved årsafslutning.
 -   Luk midler til forskellige konti. For eksempel kan du lukke nominelle konti, der er knyttet til statslige midler til pengebalancer. Du kan også lukke nominelle konti, der er forbundet med egne midler til overførte resultater.
@@ -56,5 +59,7 @@ Du skal vælge en lukketype for hver konto i din kontoplan. Lukketypen bestemmer
 -   **Ikke relevant** – Kontoen medtages ikke i årsafslutningsprocessen.
 
 Bogføringsdefinitioner styrer de regnskaber, der forekommer på ultimoposterne, og de hjælper også oprette primoposterne for det nye år. Hvis du vil vide mere, kan du se under [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
+
+
 
 

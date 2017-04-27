@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Tilbageføre en kreditorbetaling
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor. 
 
-Når en kreditorbetaling er bogført, kan det ske, at betalingen skal tilbageføres. Tilbageførsel er ikke det samme som at slette, annullere eller afvise en betaling. Du kan kun slette en betaling, hvis status er **Oprettet**. Denne status angiver, at betalingen er blevet oprettet, men endnu ikke er blevet genereret. Altid denne begrænsning gælder, uanset betalingsmåden. Du kan annullere ikke-bogførte checks, når de er blevet genereret, men før de er blevet bogført. Hvis den genererede betaling foretages som en elektronisk fund transfer (EFT), kan du afvise betalingen, før den bogføres. Hvis du vil afvise en betaling, kan du ændre den **betalingsstatus** værdi. En betaling, der er blevet nedlagt eller afvist kan gendannes efter den **betalingsstatus** værdien ændres tilbage til **ingen**. 
+Når en kreditorbetaling er bogført, kan det ske, at betalingen skal tilbageføres. Tilbageførsel er ikke det samme som at slette, annullere eller afvise en betaling. Du kan kun slette en betaling, hvis status er **Oprettet**. Denne status angiver, at betalingen er blevet oprettet, men endnu ikke er blevet genereret. Denne begrænsning gælder altid, uanset betalingsmåden. Du kan annullere ikke-bogførte checks, når de er blevet genereret, men før de er blevet bogført. Hvis den genererede betaling foretages som en elektronisk pengeoverførsel (EFT), kan du afvise betalingen, før den bogføres. Hvis du vil afvise en betaling, kan du ændre værdien **Betalingsstatus**. En betaling, der er blevet nedlagt eller afvist, kan gendannes, når værdien **Betalingsstatus** er ændret tilbage **Ingen**. 
 
-Når en betaling er blevet bogført, bruges tilbageførsler. Betalinger, der foretages elektronisk, kan ikke tilbageføres, når de er blevet bogført. I stedet skal der oprettes en ny postering for betalingen til få ansvar tilbage på kreditors konto. Der er to metoder til tilbageførsel af bogførte checks. I den ene metode bogføres tilbageførsler straks, når du klikker på **Annullering af checks** på siden **Check**. Den anden metode indebærer, at når du klikker på **Annullering af checks** på siden **Check**, sendes tilbageførslen først til kladden til annullering af check i Kontant- og bankstyring, hvor en evaluator derefter kan bogføre eller afvise tilbageførslen. 
+Når en betaling er blevet bogført, bruges tilbageførsler. Betalinger, der foretages elektronisk, kan ikke tilbageføres, når de er blevet bogført. I stedet skal der oprettes en ny transaktion for betalingsbeløbet for at få passivet tilbage på kreditorens konto. Der er to metoder til tilbageførsel af bogførte checks. I den ene metode bogføres tilbageførsler straks, når du klikker på **Annullering af checks** på siden **Check**. Den anden metode indebærer, at når du klikker på **Annullering af checks** på siden **Check**, sendes tilbageførslen først til kladden til annullering af check i Kontant- og bankstyring, hvor en evaluator derefter kan bogføre eller afvise tilbageførslen. 
 
 Hvis du vil have mere at vide om, hvilken metode der bruges i din organisation, skal du åbne siden **Kontant- og bankstyringsparametre**. Hvis indstillingen **Brug evalueringsprocessen til annullering af checks** er angivet til **Ja**, sendes tilbageførsler til tilbageførselskladden til gennemsyn. I følgende tabel beskrives, hvordan metoderne til tilbageførsel af checks er forskellige.
 
@@ -57,7 +60,7 @@ Hvis du er en bruger, der skal evaluere tilbageførsler, kan du enten godkende o
 -   Hvis du vil afvise tilbageførslen, skal du slette checktilbageførselskladden.
 
 > [!NOTE]
-> Hvis du sletter kladden, tilbageførslen er fjernet fra systemet, men den oprindelige check forbliver på den **Kontrollér** side. Checkens status er ikke længere **Afventer annullering**.
+> Hvis du sletter kladden, fjernes tilbageførslen fra systemet, men den oprindelige check bevares på siden **Check**. Checkens status er ikke længere **Afventer annullering**.
 
 ## <a name="results-of-posting-a-reversal"></a>Resultater af at bogføre en tilbageførsel
 Når du bogfører en checktilbageførsel, sker følgende:
@@ -78,6 +81,8 @@ Hvis den tilbageførte check blev udstedt til en debitorrefusion, vil følgende 
 
 -   Der bogføres en postering for betalingstilbageførslen mod debitorkontoen, og udligningen mellem den oprindelige betaling og det dokument, som betalingen oprindeligt blev udlignet mod, tilbageføres (der oprettes en negativ betaling).
 -   Der knyttes en betalingstilbageførsel til den oprindelige betaling. Feltet **Sidste udligningsbilag** på siden **Kundetransaktioner** for den oprindelige debitorbetaling opdateres, så det afspejler bilagsnummeret for den tilbageførte postering.
+
+
 
 
 

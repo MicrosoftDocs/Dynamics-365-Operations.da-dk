@@ -1,5 +1,5 @@
 ---
-title: "Rapporten færdigmelding af styklister"
+title: "Færdigmeld styklister"
 description: "Denne artikel indeholder oplysninger om færdigmelding af styklister."
 author: YuyuScheller
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-boms-as-finished"></a>Rapporten færdigmelding af styklister
+# <a name="report-boms-as-finished"></a>Færdigmeld styklister
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om færdigmelding af styklister.
 
-Siderne **Færdigmeld** og **Maks. færdigmelding** bruges til at færdigmelde styklister. Processen for færdigmelding af en stykliste er begrebsmæssigt det samme som processen for færdigmelding af en produktionsordre. Denne proces kan f.eks. bruges i enkle samlings- og pakningsprocesser, hvor de mere avancerede funktioner i produktionsordrer ikke er nødvendige. På siden **Færdigmelding** kan du færdigmelde flere styklister i en batch. Den **Maks. Færdigmeld** på siden kan du rapportere kun én Stykliste ad gangen. Den **færdigmelde** side er tilgængelig fra et menupunkt i Lagerstyring, og begge sider er tilgængelige som en menu elementer på den **frigivne produkter** side.
+Siderne **Færdigmeld** og **Maks. færdigmelding** bruges til at færdigmelde styklister. Processen for færdigmelding af en stykliste er begrebsmæssigt det samme som processen for færdigmelding af en produktionsordre. Denne proces kan f.eks. bruges i enkle samlings- og pakningsprocesser, hvor de mere avancerede funktioner i produktionsordrer ikke er nødvendige. På siden **Færdigmelding** kan du færdigmelde flere styklister i en batch. På siden **Maks. færdigmelding** kan du kun rapportere én stykliste ad gangen. Siden **Færdigmelding** er tilgængelig fra et menupunkt i Lagerstyring, og begge sider er tilgængelige som menuelementer på siden **Frigivne produkter**.
 
 ## <a name="report-as-finished-page"></a>Siden Færdigmelding
 Hvis du åbner siden **Færdigmeld **fra en frigivet produktside, foreslår siden, at du færdigmelder standardlagerets standardantal. Den aktive styklisteversion vises som standard, men du kan ændre styklisteversionen, hvis der er andre godkendte versioner. På siden kan du også slette poster og oprette nye poster for frigivne produkter, der skal færdigmeldes. Hvis du vil bruge en forespørgsel til at vælge produkter, skal du klikke på menupunktet **Marker**. Du kan manuelt bekræfte færdigmelding for de valgte produkter ved at klikke på **OK**. Du kan også konfigurere processen som en batchjobkørsel. Når færdigmeldingsprocessen er bekræftet, genererer systemet en styklistekladde, hvor bogføring på lager behandles. Denne kladde består af et linjeelement for det færdige produkt og et linjeelement for hver styklistelinje. Du kan styre, om kladden skal bogføres automatisk, eller om den skal være åben for yderligere justeringer.
 
-## <a name="max-report-as-finished-page"></a>Maks. Rapporten som færdige side
+## <a name="max-report-as-finished-page"></a>Maks. Siden Færdigmelding
 På siden **Maks. færdigmelding** angiver hver styklistelinje antal produktelementer, der kan færdigmeldes. Denne beregning er baseret på den fysisk tilgængelige disponible lagerbeholdning for hvert materialelinje. I følgende eksempel bruger ét element af varenummer FG to elementer af råvaren RM10 og ét element af råvare RM20. Da der kun er 10 elementer af RM10 på lager, er det maksimale antal FG, der kan færdigmeldes, fem elementer. Denne værdi vises i feltet **Maks. færdigmelding**.
 
 | Niveau | Varenummer | Antal | Beholdninger | Maks. Færdigmelding |
@@ -68,7 +71,7 @@ Følgende tabeller viser, hvordan indstillingen i feltet **Udfoldning** påvirke
 | 0     | FG          | 3        |
 | 1     | COMP        | -3       |
 
-Som ovenstående tabel viser, kun varenummeret COMP betragtes som trukket i kladden. Varenummeret RM, som er en del af COMP, nedbrydes ikke til kladdelinjen, og de to stykker på lager af COMP tages i betragtning ikke. **Udfoldning: altid**
+Som ovenstående tabel viser, betragtes kun varenummeret COMP som trukket i kladden. Varenummeret RM, som er en del af COMP, nedbrydes ikke til kladdelinjen, og de to stykker på lager af COMP tages ikke i betragtning. **Udfoldning: altid**
 
 | Niveau | Varenummer | Antal |
 |-------|-------------|----------|
@@ -84,5 +87,7 @@ I dette tilfælde udfoldes varenummer COMP som råvarer, varenummer RM. De to el
 | 1     | RM          | -1       |
 
 I dette tilfælde indgår de to elementer på lager i varenummer COMP. Men fordi der kræves tre elementer af varenummer FG, kræves ét element af varenummer RM også for at udgøre det ekstra element i COMP.
+
+
 
 

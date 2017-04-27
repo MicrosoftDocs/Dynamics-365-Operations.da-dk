@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 
+[!include[banner](../includes/banner.md)]
+
+
 Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Operations. I dette emne beskrives afstemningsprocessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoudtog
@@ -74,7 +77,7 @@ Der er tre måder at sammenholde eller afstemme transaktioner på bankkontoudtog
 -   Sammenhold transaktioner med en tilbageførselstransaktion for bankkontoudtoget.
 -   Markér transaktioner som **Ny**, så de kan bogføres senere som en banktransaktion i Dynamics 365 for Operations.
 
-For manuelt at matche transaktioner, vælge posteringerne i den **Bank transaktioner i** gitter, markere de tilsvarende transaktioner i den **operationer bankposteringer** gitter, og klik derefter på **svarer til**. De valgte posteringer flyttes fra de øverste gitre for ikke-sammenholdte transaktioner til de lavere gitre for sammenholdte posteringer. Desuden opdateres de samlede sammenholdte og ikke-sammenholdte beløb. Du kan have én-til-én, mange-til-en og mange-til-mange-transaktionssammenholdelser. Sammenholdelser skal følge reglerne for tilladte datodifferencer og tilknytning af transaktionstype. Disse regler angives på siden **Kontant- og bankstyringsparametre**.
+Du sammenholder transaktioner manuelt ved at vælge transaktionerne i gitteret **Bankkontoudtogstransaktioner**, markere de tilsvarende transaktioner i gitteret **Operations-bankposteringer** og derefter klikke på **Afstem**. De valgte posteringer flyttes fra de øverste gitre for ikke-sammenholdte transaktioner til de lavere gitre for sammenholdte posteringer. Desuden opdateres de samlede sammenholdte og ikke-sammenholdte beløb. Du kan have én-til-én, mange-til-en og mange-til-mange-transaktionssammenholdelser. Sammenholdelser skal følge reglerne for tilladte datodifferencer og tilknytning af transaktionstype. Disse regler angives på siden **Kontant- og bankstyringsparametre**.
 
 Der kan forekomme øredifferencer i din afstemning. Du kan sammenholde en enkelt bankkontoudtogstransaktion med en enkelt Operations-banktransaktion, som har øredifferencer, hvis øredifferencerne er inden for det tolerancebeløb, der er defineret af feltet **Tilladt øredifference** på bankkontoen. Beløbet vises i feltet **Korrektionsbeløb** på den matchede Operations-banktransaktion. Når bankafstemningen er markeret som afstemt, bliver korrektioner automatisk bogført ved hjælp af den hovedkonto, der er defineret i den tilknyttede banktransaktionstype. Korrektioner understøttes ikke for dokumenttyperne **Bankcheck** og **Depositum**. 
 
@@ -90,5 +93,7 @@ Når alle kontoudtogslinjer er blevet behandlet, skal du markere bankafstemnings
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Bogføre nye transaktioner, der er knyttet til afstemningen
 Bankkontoudtogstransaktioner, du har markeret som **Ny** på afstemningsarbejdsarket, bogføres på siden **Bankkontoudtog**. På siden **Bankkontoudtog** skal du vælge kontoudtogs-id'et for at få vist oplysninger på kontoudtoget. I menuen **Regnskab** kan du bruge indstillingerne **Få vist fordelinger** og **Vis regnskab** til at få vist detaljerne bag de nye transaktioner, og de tilknyttede poster. Vælg indstillingen **Bogfør** for at bogføre de bankkontoudtogslinjer, der er markeret som **Ny**, i finansmodulet. Det er vigtigt at bemærke, at der kun kan udføres bogføring én gang pr. bankkontoudtog.
+
+
 
 

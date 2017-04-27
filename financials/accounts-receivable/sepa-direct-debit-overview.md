@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sepa-direct-debit-overview"></a>Oversigt over direkte debitering (SEPA)
 
+[!include[banner](../includes/banner.md)]
+
+
 Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er formålet med SEPA direkte debiteringer?
+<a name="what-is-the-goal-of-sepa-direct-debits"></a>Hvad er målet for direkte SEPA-debiteringer?
 ---------------------------------------
 
-En SEPA direkte debitering gør det muligt for en kreditor til at indsamle midler fra en debitors bankkonto, forudsat at en signeret mandat har fået tildelt af kunden for kreditor. Kunden signerer en bemyndigelse, som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen. 
+En direkte SEPA-debitering gør det muligt for en kreditor at indsamle midler fra en debitors bankkonto, forudsat at der er tildelt en signeret bemyndigelse af kunden til kreditor. Kunden signerer en bemyndigelse, som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen. 
 
 Direkte SEPA-debiteringer opretter – for første gang – et betalingsinstrument, der kan bruges til både nationale og europæiske direkte debiteringer over de 32 SEPA-lande/-områder. 
 
@@ -60,7 +63,7 @@ SEPA B2B-ordningen til direkte debitering gælder for business-to-business-trans
 Ja. Du kan bruge COR1-skemaet til SEPA direkte debiteringsmandater i Østrig, Belgien, Tyskland, Frankrig, Italien, Spanien og Nederlandene. Skemaet indeholder en kortere periode i anmeldelsen for samlingen direkte debitering for kreditor.
 
 ## <a name="what-are-international-bank-account-numbers-iban-and-bank-identifier-codes-bic"></a>Hvad er IBAN-numre (International Bank Account Number) og BIC-koder (Bank Identifier Code)?
-IBAN-numre og BIC-koder bruges til at identificere alle konti i de 32 SEPA-lande/områder. Angiv BI i feltet SWIFT-kode og IBAN-NUMMER i feltet IBAN. Begge felter findes i oversigtspanelet Ekstra id under fanen Bankkonto på siden Bankkonti. Dette gælder for både kreditorens bankkonto og kundens bankkonto.
+IBAN-numre og BIC-koder bruges til at identificere alle konti i de 32 SEPA-lande/områder. Angiv BIC i feltet SWIFT-kode og IBAN-nummer i feltet IBAN. Begge felter findes i oversigtspanelet Ekstra id under fanen Bankkonto på siden Bankkonti. Dette gælder for både kreditorens bankkonto og kundens bankkonto.
 
 ## <a name="where-do-i-enter-creditor-identifiers-direct-debit-ids"></a>Hvor kan jeg indtaste kreditoridentifikatorer (id'er til direkte debitering)?
 Hver kreditor er i SEPA identificeret med en entydig kreditoridentifikator. Denne identifikator giver kunden og kundens bank mulighed for at filtrere hver direkte debitering og derefter behandle eller afvise den direkte debitering efter kundens anvisninger. Kreditorerne skal anmode om denne identifikator via deres bank. Angiv dette id i feltet Direct Debit-id for bankkontoen for den juridiske enhed.
@@ -69,7 +72,7 @@ Hver kreditor er i SEPA identificeret med en entydig kreditoridentifikator. Denn
 Kunden signerer en bemyndigelse, som autoriserer kreditoren til at opkræve en betaling og beder kundens bank om at betale opkrævningen. Kunden kan udstede bemyndigelsen i papirformat eller elektronisk. Som standard udløber bemyndigelsen 36 måneder efter den sidste initiering af den direkte debitering.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Hvor skal jeg angive filformatet til den direkte SEPA-debitering (ISO 20022)?
-SEPA's dataformater er baseret på meddelelsesstandarderne i ISO 20022. Du vil kontrollere generiske elektronisk rapportering afkrydsningsfeltet og vælge formatet SEPA direkte debitering som en eksport format-konfiguration, når du konfigurerer konti tilgodehavender betalingsmåder. Denne betalingsmåde bruges, når du opretter en betalingsfil i en debitorbetalingskladde.
+SEPA's dataformater er baseret på meddelelsesstandarderne i ISO 20022. Du skal markere afkrydsningsfeltet Generiske elektronisk rapportering og vælge formatet SEPA direkte debet som en formatkonfiguration til eksport, når du konfigurerer betalingsmåden Kreditor. Denne betalingsmåde bruges, når du opretter en betalingsfil i en debitorbetalingskladde.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>I hvilke filformater kan jeg oprette betalingsfiler til SEPA direkte debitering?
 Du kan oprette elektroniske betalingsfiler for direkte SEPA-debiteringer i følgende formater:
@@ -78,6 +81,8 @@ Du kan oprette elektroniske betalingsfiler for direkte SEPA-debiteringer i følg
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Hvordan fungerer refusion og returneringer i direkte SEPA-debiteringer?
 I henhold til begge SEPA-ordninger til direkte debitering har kunderne visse refusionsrettigheder . Kunden er berettiget til at tilbagekalde autoriserede transaktioner i en periode på otte uger efter forfaldsdato – uden at skulle give en årsag. Perioden er udvidet til 13 måneder efter forfaldsdatoen ved uautoriserede transaktioner. Tilbageførsler af betalinger, der er foretaget, udføres manuelt ved hjælp af knappen Annuller betaling på siden Kundetransaktioner.
+
+
 
 
 

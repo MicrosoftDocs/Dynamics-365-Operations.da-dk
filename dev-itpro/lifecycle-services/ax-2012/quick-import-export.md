@@ -1,5 +1,5 @@
 ---
-title: "Brug Hurtig indlæsning/udlæsning"
+title: Brug Hurtig import/eksport
 description: "Formålet med Hurtig import/eksport er at give dig mulighed for import og eksport i færre trin."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kør Test Data overførsel værktøj (beta) til Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kør Værktøj til testdataoverførsel (beta) til Dynamics AX (AX 2012)
+
+[!include[banner](../../includes/banner.md)]
+
 
 Formålet med Hurtig import/eksport er at give dig mulighed for import og eksport i færre trin.
 
@@ -36,5 +39,7 @@ Vi har tilføjet funktionen Hurtig import/eksport for at lade brugerne importere
 -   Du behøver ikke at oprette en behandlingsgruppe for at bruge Hurtig import/eksport. Der oprettes automatisk en af systemet under udførelse af import- eller eksportjobbet. Du kan også vælge at bevare historikken for de data, der importeres af Hurtig import/eksport.
 
   Bemærk, at Hurtig import/eksport antager, at du er fortrolig med DIXF-begreberne.
+
+
 
 

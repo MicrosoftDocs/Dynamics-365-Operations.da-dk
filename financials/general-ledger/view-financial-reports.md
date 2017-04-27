@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Vis økonomiske rapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics AX. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
 <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
@@ -48,7 +51,7 @@ Du kan ændre rapportdato, anvende attribut- og dimensionsfiltre eller ændre bu
 
 -   Hvis du vil ændre basisperioden og basisår i en rapport, skal du vælge basisperiode og et basisår og derefter klikke på **OK**.
 -   Du kan anvende attributfiltre til en rapport ved at vælge **Tilføj et attributfilter**. Vælg attributten, skriv attributværdien, og klik derefter på **OK**. Hvis du f.eks. vælger attributten **Kontokategori**, skal du angive **SALG** som attributværdi. Hvis du vil fjerne et attributfilter, skal du klikke på **Ryd**.
--   Hvis du vil anvende dimensionsfiltre til en rapport, skal du vælge **tilføjer et dimensionsfilter**. Vælg dimensionen, og derefter enten skrive dimension-ID'ET eller vælge dimensionen på listen. Hvis du vil fjerne et dimensionsfilter, skal du klikke på **Ryd**.
+-   Du kan anvende dimensionsfiltre på en rapport ved at vælge **Tilføj et attributfilter**. Vælg dimensionen, og derefter enten skriv dimension-ID'et, eller vælg dimensionen på listen. Hvis du vil fjerne et dimensionsfilter, skal du klikke på **Ryd**.
 -   Hvis du vil ændre scenariet i en rapport af typen **Faktisk vs. budget**, Vælg et nyt scenario, og klik derefter på **OK**. Hvis det valgte scenarie er for et andet år, skal du sørge for at basisåret. Hvis det aktuelle scenario f.eks. er for FY2015, og du vælger et nyt scenario, der er for FY2016, skal du ændre basisåret til **2016**.
 
 Når du klikker på **OK**, anvendes alle de indstillinger, du har valgt til rapporten. Hvis du beslutter, at du ikke vil anvende de valgte indstillinger, skal du klikke på **Annuller**.
@@ -66,7 +69,7 @@ En økonomisk rapport kan vises når som helst vises i enhver valuta. For at få
 En økonomisk rapport kan indeholde detaljelinjerne og oversigtslinjer. Detaljelinjer er linjer, der indeholder hovedkontiene eller dimensionerne. Oversigts linjer er linjer til beskrivelse, total og beregning. For at få vist oversigtslinjerne i en rapport skal du klikke på **Vis** og derefter klikke på **Kun oversigtslinjer**. Rapporten er skjult og viser kun oversigtslinjerne. Klik for at se detaljelinjerne sammen med oversigtslinjerne, Klik på **Vis**, og klik derefter på **Kun oversigtslinjer** igen.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Åbne en økonomisk rapport fra forrige måned
-Du kan få vist rapporter for den aktuelle måned eller foregående måneder uden at generere rapporten. Hvis du vil åbne rapporten for den foregående måned, skal du klikke på **vist**, og klik derefter på **forrige rapporter**. Der vises en liste over de seneste måneder, som rapporten er genereret for. Udvid måneden, som rapporten skal vises for, vælg datoen, og klik derefter på **OK**. Rapportgen for den forrige måned vises. Hvis du vil vende tilbage til den aktuelle måneds rapport, skal du klikke på **Annuller**.
+Du kan få vist rapporter for den aktuelle måned eller foregående måneder uden at generere rapporten. Hvis du vil åbne rapporten for den foregående måned, skal du klikke på **Vis** og derefter klikke på **Forrige rapporter**. Der vises en liste over de tidligere måneder, som rapporten er genereret for. Udvid måneden, som rapporten skal vises for, vælg datoen, og klik derefter på **OK**. Rapportgen for den forrige måned vises. Hvis du vil vende tilbage til den aktuelle måneds rapport, skal du klikke på **Annuller**.
 
 ## <a name="print-a-financial-report"></a>Udskrive en økonomisk rapport
 Hvis du vil udskrive en økonomisk rapport i handlingsruden, skal du klikke på **Udskriv**, og derefter følge en eller flere af disse trin for at angive udskriftsindstillingerne:
@@ -85,5 +88,7 @@ Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke p�
 --------
 
 [Økonomirapportering for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

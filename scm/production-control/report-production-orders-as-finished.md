@@ -1,6 +1,6 @@
 ---
 title: "Færdigmelde produktionsordrer"
-description: "Færdigmeldingen er et trin i produktionen. På dette stadium er en færdigvare rapporteret og flyttes fra produktionsordren til lageret."
+description: "Færdigmelding er et produktionsstadie. På dette stadie færdigmeldes et produkt og flyttes fra produktionsordren til lageret."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="report-production-orders-as-finished"></a>Færdigmelde produktionsordrer
 
-Færdigmeldingen er et trin i produktionen. På dette stadium er en færdigvare rapporteret og flyttes fra produktionsordren til lageret.
+[!include[banner](../includes/banner.md)]
+
+
+Færdigmelding er et produktionsstadie. På dette stadie færdigmeldes et produkt og flyttes fra produktionsordren til lageret.
 
 Når en mængde af de færdige varer færdigmeldes på en produktionsordre, opdateres den som disponibel i lagret. Delmængder af den oprindeligt planlagte ordremængde kan færdigmeldes. Det er også muligt at indberette fejlmængder med en tilknyttet årsag til fejlen, når mængder færdigmeldes. Når produktionsordren når fasen Færdigmeldt, angives det, at ingen yderligere mængder færdigmeldes på produktionsordren.
 Følgende egenskaber er også knyttet til processen **Færdigmelding**:
@@ -44,5 +47,7 @@ Mængden, der er rapporteret til outputplaceringen. Lagerstedsarbejde genereres 
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Konfigurer en produktionsordre, der skal færdigmeldes
 Du kan konfigurere en produktionsordres status til **Færdigmelding** gennem den almindelige funktion til opdatering af produktionsordrer, gennem rute- eller jobkortkladder eller ved hjælp af kladden **Færdigmelding**. Du kan også opdatere fasen til **Færdigmelding** via siderne jobkortterminal og jobkortenhed, når du rapporterer på det sidste job i produktionsordren. Endelig kan du aktivere indstillingen **Færdigmelding** som en proces for lagerstedets håndholdte enhedsløsning.  
+
+
 
 

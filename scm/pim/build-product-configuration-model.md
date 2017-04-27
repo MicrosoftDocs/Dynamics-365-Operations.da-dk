@@ -1,5 +1,5 @@
 ---
-title: Oprette en model til produktkonfiguration
+title: Bygge en produktkonfigurationsmodel
 description: "Nødvendigheden af at konfigurere produkter for at opfylde særlige krav er ved at blive reglen frem for undtagelsen i både business-to-business og business-forbruger-relationer."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="build-a-product-configuration-model"></a>Oprette en model til produktkonfiguration
+# <a name="build-a-product-configuration-model"></a>Bygge en produktkonfigurationsmodel
+
+[!include[banner](../includes/banner.md)]
+
 
 Nødvendigheden af at konfigurere produkter for at opfylde særlige krav er ved at blive reglen frem for undtagelsen i både business-to-business og business-forbruger-relationer.
 
@@ -34,7 +37,7 @@ En producent, der understøtter konfigurer til ordre-scenarier, har mulighed for
 
 En vellykket flytning fra en fremstil til lager-konfiguration til en konfigurer til ordre-konfiguration kræver omhyggelig analyse af produktstrukturerne, identifikation af produktfamilier og komponentisering. Hvis du vil reducere antallet af dele og minimere antallet af varer, der er i gang, er det vigtigt, at du forstår produktgrænsefladerne, og at du designer til genanvendelighed.  
 
-Der er flere modelleringsprincipper for produktkonfiguration, såsom regelbaseret, dimensionsbaseret og begrænsningsbaseret modellering. Undersøgelser viser, at den begrænsningsbaserede metode kan reducere antallet af kildetekstlinjer i modeller med omkring 50 % sammenlignet med andre modelleringsprincipper. Denne metode kan derfor reducere de samlede ejeromkostninger. Ved at flytte fra en regelbaseret model, der er baseret på X ++-kode til en begrænsningsbaseret model, kræve du ikke længere en udviklingslicens for at bevare produktmodeller.
+Der er flere modelleringsprincipper for produktkonfiguration, såsom regelbaseret, dimensionsbaseret og begrænsningsbaseret modellering. Undersøgelser viser, at den begrænsningsbaserede metode kan reducere antallet af kildetekstlinjer i modeller med omkring 50 % sammenlignet med andre modelleringsprincipper. Denne metode kan derfor reducere de samlede ejeromkostninger. Ved at flytte fra en regelbaseret model, der er baseret på X ++-kode til en begrænsningsbaseret model, har du ikke længere brug for en udviklingslicens for at vedligeholde produktmodeller.
 
 ## <a name="product-configuration"></a>Produktkonfiguration
 Industrialiseringen har ført til gode resultater i fremstillingen af funktionsrige produkter af høj kvalitet til rimelige priser. Stordriftsfordele har gjort det muligt for de fleste mennesker i den industrialiserede del af verden til at købe biler, fjernsyn, husholdningsapparater og andre varer, som de fleste af os betragter som en nødvendig del af vores hverdag.  
@@ -68,7 +71,7 @@ Tabelbegrænsninger kan være brugerdefinerede eller systemdefinerede.
 
 En brugerdefineret tabelbegrænsning bygges af brugeren. Brugeren vælger en kombination af attributtyper, som repræsenterer kolonnerne i tabellen og indtaster derefter værdierne fra domænerne for de valgte attributtyper for at danne rækkerne i tabelbegrænsningen.  
 
-En systemdefineret tabelbegrænsning defineres ved at vælge hvilke Microsoft Dynamics 365 for operationer tabel skal bruges som en reference og derefter vælge felter fra tabellen fra kolonnerne i begrænsningen. Rækker af tabelbegrænsningen er rækkerne i Dynamics-365 for operationer tabel, der findes på konfigurationstidspunktet.  
+En systemdefineret tabelbegrænsning defineres ved at vælge, hvilken Microsoft Dynamics 365 for Operations-tabel der skal bruges som reference og derefter vælge felter fra denne tabel for at danne kolonnerne i begrænsningen. Rækker af tabelbegrænsningen er rækkerne i Dynamics 365 for Operations-tabellen, der findes på konfigurationstidspunktet.  
 
 En tabelbegrænsning indgår i en produktkonfigurationsmodel ved at referere til tabelbegrænsningsdefinitionen og knytte de relevante attributter i modellen til kolonnerne i tabelbegrænsningen.
 
@@ -103,7 +106,7 @@ Endelig kan validering gøres til en komplet produktkonfigurationsmodel for at k
 
 ### <a name="testing"></a>Test
 
-Test af en model ligner kører en faktisk konfigurationssession. Brugeren kan gennemgå konfigurationssiderne, og Kontroller, at modelstrukturen understøtter konfigurationsprocessen. Brugeren kan kontrollere, at værdierne for attributternes er korrekte, og at attributbeskrivelserne hjælper brugeren til at vælge de korrekte værdier. Endeligt, når en testsession er afsluttet, forsøger systemet at oprette styklisten og ruten, der svarer til de valgte attributværdier, og viser en fejlmeddelelse, hvis noget går galt.
+Test af en model er næsten som at køre en faktisk konfigurationssession. Brugeren kan gennemgå konfigurationssiderne, og kontrollere, at modelstrukturen understøtter konfigurationsprocessen. Brugeren kan kontrollere, at værdierne for attributternes er korrekte, og at attributbeskrivelserne hjælper brugeren til at vælge de korrekte værdier. Endeligt, når en testsession er afsluttet, forsøger systemet at oprette styklisten og ruten, der svarer til de valgte attributværdier, og viser en fejlmeddelelse, hvis noget går galt.
 
 ### <a name="the-configuration-page"></a>Konfigurationssiden
 
@@ -129,17 +132,17 @@ Hvis produktet skal sælges i forskellige lande/områder, kan der oprettes overs
 Det seneste og vigtigste trin i afslutningsprocessen er at oprette en version af produktkonfigurationsmodellen. Versionen repræsenterer relationen mellem produktmasteren, der kan vælges til konfiguration på en ordre- eller tilbudslinje og produktkonfigurationsmodellen. En version skal være godkendt og aktiveret, før den kan bruges i en konfigurationssession.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Udvide en produktkonfigurationsmodel gennem API
-En dedikeret API (application programming interface) er blevet implementeret, så partnere og andre, der har en udviklingslicens kan udvide mulighederne i en produktkonfigurationsmodel. Hovedformålet er at etablere en mekanisme, der nu partnere og kunder, der bruger eksisterende Product Builder overflytte den kode, der er integreret i Product Builder-modeller til API'EN. På denne måde kan de overføre deres modeller fra Product Builder til en produktkonfiguration. Men nye partnere og kunder kan også drage fordel af at bruge API til at udvide nye produktkonfigurationsmodeller.
+En dedikeret API (application programming interface) er blevet implementeret, så partnere og andre, der har en udviklingslicens kan udvide mulighederne i en produktkonfigurationsmodel. Hovedformålet er at etablere en mekanisme, der gør det muligt for partnere og kunder, der bruger den eksisterende Product Builder til at overføre den kode, der er integreret i Product Builder-modeller til API'en. På denne måde kan de overføre deres modeller fra Product Builder til en produktkonfiguration. Men nye partnere og kunder kan også drage fordel af at bruge API til at udvide nye produktkonfigurationsmodeller.
 
 ### <a name="pcadaptor-class"></a>PCAdaptor-klasse
 
-API er implementeret ved hjælp af en række **PCAdaptor**-klasser, der viser datastrukturen i produktkonfigurationsmodeller. En forekomst af den **PCAdaptor** klasse skal oprettes for hver model, vil blive udvidet. Når konfigurationen er fuldført, systemet kontrollerer, om en forekomst af denne klasse og kører den, hvis den findes.  
+API er implementeret ved hjælp af en række **PCAdaptor**-klasser, der viser datastrukturen i produktkonfigurationsmodeller. En forekomst af **PCAdaptor** klassen skal oprettes for hver model, der skal udvides. Når en konfiguration er fuldført, kontrollerer systemet, om der findes en forekomst af denne klasse og kører den, hvis den findes.  
 
 Følgende flowdiagram viser processen.  
 
 [![Rutediagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Produkt konfiguration API-rutediagram
+API-rutediagram til produktkonfiguration
 
 ## <a name="product-configuration"></a>Produktkonfiguration
 Produktkonfiguration kan udføres fra følgende steder:
@@ -155,5 +158,7 @@ Formålet med konfigurationen er at oprette en bestemt variant af det produkt, d
 ### <a name="multiple-sites-and-intercompany"></a>Flere steder og internt
 
 Hvis konfigurationen skal udføres på et sted eller endda et firma, der afviger fra det sted eller den virksomhed, hvor produktionen skal foregå, oprettes og placeres styklisten og ruten på stedet for leverandøren i leverandørvirksomheden. Produktvarianten vil blive frigivet i alle virksomheder, der er med i forsyningskæden.
+
+
 
 

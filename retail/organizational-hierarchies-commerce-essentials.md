@@ -1,6 +1,6 @@
 ---
-title: Organisationer og organisationshierarkier (Commerce essentials)
-description: "Commerce essentials har tre typer interne organisationer, som du kan definere for at hjælpe en organisation, der udfører en forretningsproces eller nå et mål."
+title: Organisationer og organisationshierarkier (Oprindelsesdata til handel)
+description: "Oprindelsesdata til handel har tre typer interne organisationer, som du kan definere for at hjælpe en organisation med at udføre en forretningsproces eller nå et mål."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisationer og organisationshierarkier (Commerce essentials)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisationer og organisationshierarkier (Oprindelsesdata til handel)
 
-Commerce essentials har tre typer interne organisationer, som du kan definere for at hjælpe en organisation, der udfører en forretningsproces eller nå et mål. 
+[!include[banner](includes/banner.md)]
+
+
+Oprindelsesdata til handel har tre typer interne organisationer, som du kan definere for at hjælpe en organisation med at udføre en forretningsproces eller nå et mål. 
 
 En organisation er en gruppe af personer, der arbejder sammen for at udføre en forretningsproces eller for at nå et mål. Et organisationshierarki repræsenterer relationerne mellem de virksomhedsenheder, som din organisation består af.
 
@@ -68,6 +71,8 @@ I følgende tabel beskrives de scenarier for Oprindelsesdata til handel, hvor du
 | Administrere detailgenopfyldning                                                    | Gruppér butikker for at genopfylde lagerbeholdningen baseret på reglerne for genopfyldning.                                                                                                                                                                                                                                          | Detailgenopfyldning |
 | Rapportere data til butikker                                                         | Gruppér butikker til rapportering.                                                                                                                                                                                                                                                                                | Detailrapportering     |
 | Bogføre lager, beregne opgørelser eller bogføre opgørelser for en gruppe af butikker | Opret en gruppe af butikker, der kan tildeles til et batchjob. Når du definerer et batchjob til bogføring af lager, beregning af opgørelser eller bogføring af opgørelser, kan du angive, hvilke hierarki jobbet gælder for. Når butikker føjes til eller fjernes fra hierarkiet, behøver du ikke ændre batchjobbet. | Retail POS-postering   |
+
+
 
 
 

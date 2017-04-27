@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Frafalde, genindføre eller tilbageføre rentegebyrer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du kan frafalde, genindføre og tilbageføre gebyrer for renter og gebyrer.
 
 Du kan bruge knapperne under fanen **Indsaml** på listesiden **Alle debitorer** for at frafalde, tilbageføre eller genindføre gebyrer:
@@ -89,5 +92,7 @@ Du kan tilbageføre renteposteringer ved hjælp af knappen **Posteringsrente** p
 Du kan få vist den detaljerede historik over reguleringer, der er foretaget af rentenotaer, f.eks. den bruger, der har angivet reguleringen, reguleringstypen, beløbet og hvornår reguleringen blev indtastet. Det kan f.eks. være, at du vil have vist tidligere reguleringer, der er angivet for en rentenota, før du opretter en ny rentenota. 
 
 Du kan tilbageføre renteposteringer ved hjælp af knappen **Oversigt **på siden **Indsaml** på siden **Debitor**.
+
+
 
 

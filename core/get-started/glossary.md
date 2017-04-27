@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for operationer ordliste
+title: Ordliste til Dynamics 365 for Operations
 description: Ordlisten til Microsoft Dynamics 365 for Operations definerer de vigtigste begreber og koncepter i Dynamics 365 for Operations-produktet.
 author: tonyafehr
 manager: AnnBe
@@ -25,13 +25,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for operationer ordliste
+# <a name="dynamics-365-for-operations-glossary"></a>Ordliste til Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Ordlisten til Microsoft Dynamics 365 for Operations definerer de vigtigste begreber og koncepter i Dynamics 365 for Operations-produktet. 
 
 ### <a name="a"></a>**A**
 
-###### <a name="accounting-journal"></a>**accounting journal**
+###### <a name="accounting-journal"></a>**regnskabskladde**
 
 En kladde, der bruges til at registrere de økonomiske konsekvenser af regnskabshændelser i et regnskabssystem.
 
@@ -73,7 +76,7 @@ Det antal dage i en tidsperiode, der bruges til at rapportere om en forfalden de
 
 En opgørelse over en organisations økonomiske situation med angivelse af aktiver, passiver og egenkapital på en specifik dato.
 
-###### <a name="balance-sheet-account"></a>**balance sheet account**
+###### <a name="balance-sheet-account"></a>**statuskonto**
 
 En konto, der beskriver ændringerne i den værdi, der angives på en balance.
 
@@ -89,7 +92,7 @@ En produktattribut for et procesbatch eller et overførselsbatch.
 
 Den anbefalede dato for opnåelse af den optimale kvalitet eller egenskab for et produkt.
 
-###### <a name="best-before-period"></a>**best before period**
+###### <a name="best-before-period"></a>**sidste holdbarhedsperiode**
 
 Den tidsperiode, hvor den optimale kvalitet eller egenskab for et produkt kan opnås.
 
@@ -109,23 +112,23 @@ Den handling, der består i at sætte et dokument eller produkt på hold.
 
 En praksis, der består i kun at godkende udgifter, når der kan reserveres budgetmidler til opfyldelse af fremtidige betalingsforpligtelser.
 
-###### <a name="budget-control-dimension"></a>**budget control dimension**
+###### <a name="budget-control-dimension"></a>**budgetstyringsdimension**
 
 En kombination af værdierne for de aktive økonomiske dimensioner, der bruges til at fordele budgetmidler, der skal betales til planlagte aktiviteter.
 
-###### <a name="budget-control-rule"></a>**budget control rule**
+###### <a name="budget-control-rule"></a>**budgetstyringsregel**
 
 Kodningen af en forretningsbeslutning for at kontrollere bogførte og faktiske udgifter i forhold til de tilgængelige budgetmidler, der er tildelt detaljerede eller opsummerede aktiviteter, der er defineret af kombinationer af gyldige værdier for budgetstyringsdimensionen.
 
-###### <a name="budget-cycle-time-span"></a>**budget cycle time span**
+###### <a name="budget-cycle-time-span"></a>**tidsperiode for budgetcyklus**
 
 En tidsperiode, der er angivet som et antal perioder i regnskabskalenderen. Budgetperioden kan være forskellig fra regnskabsperioden.
 
-###### <a name="budget-group"></a>**budget group**
+###### <a name="budget-group"></a>**budgetgruppe**
 
 Et sæt økonomiske dimensionsværdier i et budgetdimensionshierarki, der bruges til at beregne de samlede budgetmidler, som fordeles til overordnede økonomiske dimensionsværdier ved at opsummere de budgetmidler, der er tildelt underordnende økonomiske dimensionsværdier.
 
-###### <a name="budget-model"></a>**budget model**
+###### <a name="budget-model"></a>**budgetmodel**
 
 En planlægningsstruktur, der bruges til at planlægge fordelinger af budgetmidler og udgifter.
 
@@ -147,7 +150,7 @@ En halvautomatisk driftsenhed, der er skabt for at nå strategiske forretningsm�
 
 Den maksimale mængde planlagt arbejde, som en ressource kan udføre på et påkrævet kapacitetsniveau.
 
-###### <a name="capacity-planning"></a>**capacity planning**
+###### <a name="capacity-planning"></a>**kapacitetsplanlægning**
 
 En procedure til bestemmelse af de krav til ressourcekapaciteten, der lever op til den fremtidige efterspørgsel efter output inden for specifikke tidsperioder.
 
@@ -191,11 +194,11 @@ En vare, der produceres sammen med en anden vare.
 
 En driftsenhed, hvis ledere er ansvarlige for de budgetterede og faktisk udgifter.
 
-###### <a name="cost-of-goods-sold"></a>**cost of goods sold**
+###### <a name="cost-of-goods-sold"></a>**vareforbrug**
 
 En regnskabskategori, der bruges til at opsummere de økonomiske konsekvenser af fremstillingen af produkter og lagerføringen.
 
-###### <a name="cost-variance"></a>**cost variance**
+###### <a name="cost-variance"></a>**omkostningsafvigelse**
 
 Forskellen mellem en forventet omkostning og en faktisk omkostning.
 
@@ -249,7 +252,7 @@ Det køretøj, der bruges til installation på UAT (User Acceptance Test) og i p
 
 Et Visual Studio-værktøj, som du brugte til at oprette, opdatere og kontrollere dine modelelementer.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. konfiguration af \financial-dimensions\dimension-based**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
 
 En konfigurationsteknologi, der bruges til at oprette produktvarianter ved at vælge værdier for produktdimensioner.
 
@@ -261,7 +264,7 @@ Et entydigt identificerbart produkt.
 
 En metode, der bruges til at sætte en operationsproces på hold, mens de bestilte varer er i gang med en kvalitetssikringsproces.
 
-###### <a name="document-management-system"></a>**document management system**
+###### <a name="document-management-system"></a>**dokumentstyringssystem**
 
 En programtjeneste til lagring og håndtering af en organisations dokumenter.
 
@@ -293,7 +296,7 @@ Tilpasning af et program ved at tilføje funktioner til eksisterende kode.
 
 En klassificering af økonomiske data, som oprettes ud fra parterne, lokaliteterne, produkterne og aktiviteterne i en organisation og bruges til administrationsrapportering.
 
-###### <a name="financial-dimension-value"></a>**financial dimension value**
+###### <a name="financial-dimension-value"></a>**økonomisk dimensionsværdi**
 
 Et dataelement inden for domænet for en økonomisk dimension.
 
@@ -353,7 +356,7 @@ En praksis, der består i at sammenholde kreditorfakturapriser og produktantal m
 
 En produktfamilieinddeling, der bruges til hovedplanlægning og efterspørgselsprognose.
 
-###### <a name="item-relation"></a>**item relation**
+###### <a name="item-relation"></a>**varerelation**
 
 En reference til varefordelingsgruppen eller varen og dens produktdimensioner i en kanban-regel.
 
@@ -375,7 +378,7 @@ En proces eller overførselsaktivitet i et produktionsflow, der udløses af et k
 
 Tilbagetrækningen af produktkomponenter fra lageret for at færdiggøre kanban-produktionsjob.
 
-###### <a name="kanban-product-quantity"></a>**kanban product quantity**
+###### <a name="kanban-product-quantity"></a>**kanban-produktmængde**
 
 Den varebehovsmængde, der udføres for et kanban, der er baseret på en kanban-regel.
 
@@ -499,9 +502,9 @@ En del af et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
-De størrelse, farve eller konfiguration produktattributter, der bruges til... konfiguration af \financial-dimensions\dimension-based.
+Størrelsen af, farven på eller konfigurationen for de produktattributter, der bruges til ..\financial-dimensions\dimension-based configuration.
 
-###### <a name="product-family"></a>**product family**
+###### <a name="product-family"></a>**produktfamilie**
 
 En entydig inddeling af varer, tjenester eller rettigheder, der enten er en del af den samme produktion eller de samme leveringsaktiviteter eller udbydes til de samme markedssegmenter. I Dynamics 365 for Operations repræsenteres inddelingen ved hjælp af en budgetfordelingsnøgle.
 
@@ -509,23 +512,23 @@ En entydig inddeling af varer, tjenester eller rettigheder, der enten er en del 
 
 En standardrepræsentation eller en funktionel repræsentation af et produkt, som danner basis for konfiguration af produktvarianter.
 
-###### <a name="product-receipt"></a>**product receipt**
+###### <a name="product-receipt"></a>**produktkvittering**
 
 Et kildedokument, der dokumenterer modtagelsen af bestilte produkter, modtagelsen af returnerede produkter eller modtagelsen af produkter, der er modtaget som vareparti.
 
-###### <a name="product-variant"></a>**product variant**
+###### <a name="product-variant"></a>**produktvariant**
 
 En konfiguration af en produktmaster.
 
-###### <a name="production-flow"></a>**production flow**
+###### <a name="production-flow"></a>**produktionsflow**
 
 En produktionsproces, der er designet til at bruge Lean-principper.
 
-###### <a name="production-flow-model"></a>**production flow model**
+###### <a name="production-flow-model"></a>**produktionsflowmodel**
 
 En repræsentation af produktionskapaciteten for en gruppe arbejdsceller i en produktionsflowproces.
 
-###### <a name="production-order"></a>**production order**
+###### <a name="production-order"></a>**produktionsordre**
 
 Et kildedokument, der dokumenterer kravene til fremstillingen af varer for at opfylde behovet.
 
@@ -599,7 +602,7 @@ Et produkt, hvis distribution er begrænset eller reduceret af en offentlig mynd
 
 Et kildedokument, der dokumenterer en aftale mellem to eller flere parter baseret på en aftale om, at en sælgende part giver tilsagn om at sælge en bestemt mængde eller værdi af produktet over en tidsperiode mod at få fordelagtige priser og rabatter.
 
-###### <a name="sales-agreement-policy"></a>**sales agreement policy**
+###### <a name="sales-agreement-policy"></a>**salgsaftalepolitik**
 
 En politik, der giver parter tilladelse til at ændre salgsaftalebetingelser.
 
@@ -615,7 +618,7 @@ Et kildedokument, der dokumenterer et tilbud om at levere en produktmængde til 
 
 Et defineret sæt af programadgangsrettigheder. Den sikkerhedsrolle, en bruger er tildelt, bestemmer, hvilke opgaver brugeren kan udføre, og hvilke dele af brugergrænsefladen brugeren kan se. Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til systemet.
 
-###### <a name="segregation-of-duties"></a>**segregation of duties**
+###### <a name="segregation-of-duties"></a>**opdeling af opgaver**
 
 Et designprincip, der bruges til at reducere risikoen for snyd, uregelmæssigheder og fejl, der adskiller registreringen, verificeringen, godkendelsen, retten til aktiver og de periodiske vurderingspligter for personer, der deltager i, dokumenterer eller registrerer de økonomiske konsekvenser af økonomiske transaktioner.
 
@@ -697,7 +700,7 @@ En driftsenhed, der kontrollerer en eller flere produktionsflow.
 
 En metode til modellering af produktmastere og søgning efter produktvariantkonfigurationer.
 
-###### <a name="vat-value-added-tax"></a>**MOMS (moms)**
+###### <a name="vat-value-added-tax"></a>**Moms**
 
 En moms på produkter ved hver produktionsfase baseret på den moms, der gælder for den pågældende fase.
 
@@ -705,7 +708,7 @@ En moms på produkter ved hver produktionsfase baseret på den moms, der gælder
 
 En oversigt over produkttilbud, der er tilgængelig til køb fra en kreditor.
 
-###### <a name="vendor-invoice"></a>**vendor invoice**
+###### <a name="vendor-invoice"></a>**kreditorfaktura**
 
 Et kildedokument, der dokumenterer en kreditorbetalingsanmodning. En kreditorfaktura kan referere til en eller flere indkøbsordrer. Når kreditorfakturaen er godkendt, kan der foretages en betaling til kreditoren.
 
@@ -722,5 +725,7 @@ En person, der antager rollen som en medarbejder eller en kontrahent og betales 
 ###### <a name="workspace"></a>**arbejdsområde**
 
 En side, der indeholder en oversigt over en af de aktiviteter, der udføres af brugeren. Siden bruger felter, lister og diagrammer til at vise igangværende arbejde og relaterede data fra flere kilder, og siden viser hyppige opgaver, der er relateret til disse data. Felter, der er vist i oversigtssektionen i arbejdsområdet, vises også i den relaterede sektion i dashboardet.
+
+
 
 

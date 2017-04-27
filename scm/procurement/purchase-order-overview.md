@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Oversigt over indkøbsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO'er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår.
 
 En købsordre (IO) er et dokument, der repræsenterer en aftale med en leverandør om at købe varer eller tjenesteydelser. Dokumentet hjælper også med at holde styr på de produktkvitteringer, der foretages på ordren, og senere bogføring af kreditorfakturaer, som leverandøren fakturerer på ordren.  
 
-Siden **Indkøbsordrer** indeholder en oversigt over de ordrer, der er tilgængelige, og kan du redigere disse ordrer. Når du åbner en indkøbsordre, kan du vælge visningen **Hoved**, der indeholder oplysninger, der kun angives én gang for hver indkøbsordre, som f.eks. kreditor. Du kan også vælge visningen **Linjer**, hvor du kan redigere ordrelinjer. Du vil typisk skifte mellem disse to visninger, som du redigerer POs. Tillæg ikke står direkte på den **indkøbsordrer,**, men de er tilgængelige via menuer i ordrehovedet og på linjerne.  
+Siden **Indkøbsordrer** indeholder en oversigt over de ordrer, der er tilgængelige, og kan du redigere disse ordrer. Når du åbner en indkøbsordre, kan du vælge visningen **Hoved**, der indeholder oplysninger, der kun angives én gang for hver indkøbsordre, som f.eks. kreditor. Du kan også vælge visningen **Linjer**, hvor du kan redigere ordrelinjer. Du vil typisk skifte mellem disse to visninger, som du redigerer IO'er. Ændringer vises ikke direkte siden **Indkøbsordrer,**, men de er tilgængelige via menuer i ordrehovedet og på ordrelinjerne.  
 
 Der er mange rapporter, hvor du kan se oplysninger om IO'er, produktkvitteringer og kreditorfakturaer. Disse rapporter findes i modulerne **Indkøb og forsyning** og **Kreditor**.  
 
-I arbejdsområderne **Klargøring af indkøbsordrer** og **Indkøbsordre, modtagelse og opfølgning** kan du få vist en liste over IO'er i de forskellige statusser, som de er kommet til. De indeholder også en oversigt over de handlinger, der skal træffes. Arbejdsområdet **Klargøring af indkøbsordrer** er fokuseret på IO-oprettelse og -gennemsyn, behandling af ordren via godkendelse og bekræftelse med leverandøren. Den **købe ordretilgang og opfølgning** arbejdsområde er fokuseret på behandling af modtagelsen af varer eller tjenester mod POs. Det indeholder lister, der giver indsigt i tilgange, der er forfaldne, eller der vil snart være forfalden til levering af leverandøren. Disse arbejdsområder bruges ikke til at udføre de tilhørende tilgangsaktiviteter, der udføres på lagerstedet. Disse aktiviteter udføres ved hjælp af siderne i modulerne **Lagerstyring** og **Lokationsstyring**. Behandling af kreditorfakturaer skal udføres ved hjælp af arbejdsområdet **Kreditorfakturapostering**, og betalinger skal ske ved hjælp af arbejdsområdet **Kreditorbetalinger**.  
+I arbejdsområderne **Klargøring af indkøbsordrer** og **Indkøbsordre, modtagelse og opfølgning** kan du få vist en liste over IO'er i de forskellige statusser, som de er kommet til. De indeholder også en oversigt over de handlinger, der skal træffes. Arbejdsområdet **Klargøring af indkøbsordrer** er fokuseret på IO-oprettelse og -gennemsyn, behandling af ordren via godkendelse og bekræftelse med leverandøren. Arbejdsområdet **Indkøbsordre, modtagelse og opfølgning** er fokuseret på behandling af modtagelsen af varer eller tjenester i forhold til IO'er. Det indeholder lister, der giver indsigt i tilgange, der er forfaldne, eller der vil snart være forfaldne til levering fra leverandøren. Disse arbejdsområder bruges ikke til at udføre de tilhørende tilgangsaktiviteter, der udføres på lagerstedet. Disse aktiviteter udføres ved hjælp af siderne i modulerne **Lagerstyring** og **Lokationsstyring**. Behandling af kreditorfakturaer skal udføres ved hjælp af arbejdsområdet **Kreditorfakturapostering**, og betalinger skal ske ved hjælp af arbejdsområdet **Kreditorbetalinger**.  
 
 Følgende artikler indeholder en oversigt over de forskellige faser, som en IO gennemgår:
 
@@ -45,7 +48,7 @@ Følgende artikler indeholder en oversigt over de forskellige faser, som en IO g
 -   [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Indkøbsordretyper
-Der findes tre typer POs. Når du opretter en Indkøbsordre, skal du angive typen. Du kan oprette en standardordretype for nye ordrer på siden **Indkøbs- og forsyningsparametre**.
+Der er tre typer IO'er. Når du opretter en IO, skal du angive typen. Du kan oprette en standardordretype for nye ordrer på siden **Indkøbs- og forsyningsparametre**.
 
 | IO-type        | Beskrivelse                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 <a name="see-also"></a>Se også
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Oprettelse af indkøbsordre](purchase-order-creation.md)
 
 [Godkendelse og bekræftelse af indkøbsordre](purchase-order-approval-confirmation.md)
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

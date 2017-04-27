@@ -1,6 +1,6 @@
 ---
-title: Plan for offentlige funktioner
-description: "I denne artikel foreslås de første trin i opsætningen af offentlige funktioner i Microsoft Dynamics 365 for operationer."
+title: "Planlæg funktioner til den offentlige sektor"
+description: "I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations."
 author: rschloma
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-for-public-sector-functionality"></a>Plan for offentlige funktioner
+# <a name="plan-for-public-sector-functionality"></a>Planlæg funktioner til den offentlige sektor
 
-I denne artikel foreslås de første trin i opsætningen af offentlige funktioner i Microsoft Dynamics 365 for operationer.
+I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations.
 
 <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 -----------------------
 
-Før du begynder at justere indstillingerne og angive dine data, bør du overveje, hvilke Microsoft Dynamics 365 for operationer moduler, skal du konfigurere til din offentlige organisation. Offentlige funktioner er integreret med følgende Microsoft Dynamics 365 for operationer moduler og Microsoft-produkter.
+Før du begynder at justere indstillingerne og angive dine data, bør du overveje, hvilke Microsoft Dynamics 365 for Operations-moduler du skal konfigurere til din offentlige organisation. Funktioner til den offentlige sektor er integreret med følgende Microsoft Dynamics 365 for Operations-moduler og Microsoft-produkter.
 
 ### <a name="accounts-payable"></a>Kreditor
 
@@ -49,7 +49,7 @@ Budgetanalyse Budgetanalyse for reviderede budgetter Budgetanalyse for faktiske 
 
 ### <a name="french-regulatory-options"></a>Indstillinger for franske myndighedskrav
 
-**Bemærk** kan finde oplysninger om indstillinger for franske regulerende [offentlige regnskab i Frankrig](/localizations/europe/public-sector-accounting-france.md). Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:
+**Bemærk!** Du kan finde oplysninger om indstillinger for franske myndighedskrav i [Kontering for den offentlige sektor i Frankrig](/localizations/europe/public-sector-accounting-france.md). Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:
 
 -   Konfigurationsnøglen **Offentlig sektor** er valgt.
 -   Konfigurationsundernøglen **Franske myndighedskrav** er valgt.
@@ -70,6 +70,6 @@ Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer
 <a name="see-also"></a>Se også
 --------
 
-[Offentlige funktioner](public-sector-functionality.md)
+[Funktioner til den offentlige sektor](public-sector-functionality.md)
 
 

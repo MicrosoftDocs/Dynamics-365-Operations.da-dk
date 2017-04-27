@@ -46,12 +46,12 @@ Ud over de økonomiske rapporter, kan du bruge følgende finansrapporter til at 
 
 -   **Dimensionsopgørelse** – Denne rapport viser transaktioner efter dag og konto, og der er også mulighed for at få vist transaktioner efter dimension og periode.
 -   **Finansposteringsliste** – Denne rapport viser transaktioner i transaktions-, regnskabs- og rapporteringsvaluta for et regnskab.
--   **Udskriv kladde** – i denne rapport vises resultatet af en bogført kladde. Du kan køre rapporten efter kladdebatchnummer eller kladdetypen eller tilføje flere felter.
+-   **Udskrift af kladden** – i denne rapport vises resultatet af en bogført kladde. Du kan køre rapporten efter kladdebatchnummer eller kladdetypen eller tilføje flere felter.
 -   **Bogførte posteringer efter kladde** – Denne rapport viser de transaktioner, der er bogført i en kladde grupperet efter bilag.
 -   **Posteringsliste pr. dato** – Denne rapport viser alle posteringer efter dato sammen med kladdenummer, bilag og finanskonto. Den viser også transaktionerne i transaktions-, regnskabs- og rapporteringsvalutaer.
 -   **Transaktionsoprindelse** – Denne transaktionsrapport viser kontoen efter kladde og efter transaktions-, regnskabs- og rapporteringsvaluta. Den viser også hver linje i kladden, der blev brugt som en forskydning.
 
 
-Yderligere oplysninger finder du [finanspostbalancer](general-ledger-account-balances.md), [regnskabsmæssige kilde explorer](\financials\accounts-payable\accounting-source-explorer) og [finansiel rapportering](financial-reporting-getting-started.md)
+Yderligere oplysninger finder du i afsnittet [Finanssaldi](general-ledger-account-balances.md) [Sporing af regnskabskilde](\financials\accounts-payable\accounting-source-explorer) og [Økonomisk rapportering](financial-reporting-getting-started.md)
 
 

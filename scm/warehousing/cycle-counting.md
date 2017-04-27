@@ -102,7 +102,7 @@ Der er to måder at planlægge tilbagevendende oprettelse af cyklusoptællingsar
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Oprette cyklusoptællingsarbejde baseret på tærskelparametre for varer
 
-Cyklusoptællingsarbejde kan oprettes, når antallet af varer falder under en bestemt tærskelværdi på en lokalitet. For eksempel, er der 60 elementer på en placering, der har en grænse på 40 til lageroptælling. Under en salgsordrepostering 25 varerne plukkes fra placeringen og lagt på en midlertidig placering. Da antallet af nye elementer på 35 er mindre end tærskelantallet, oprettes cyklusoptællingsarbejdet automatisk for lokationen.
+Cyklusoptællingsarbejde kan oprettes, når antallet af varer falder under en bestemt tærskelværdi på en lokalitet. For eksempel er der 60 varer på en lokalitet, der har en grænse på 40 for cyklusoptælling. Under en salgsordrepostering plukkes 25 varer fra lokaliteten og lægges på en midlertidig lokalitet. Da antallet af nye elementer på 35 er mindre end tærskelantallet, oprettes cyklusoptællingsarbejdet automatisk for lokationen.
 
 ### <a name="schedule-cycle-counting-work"></a>Planlægge cyklusoptællingsarbejde
 
@@ -129,7 +129,7 @@ Følgende er et eksempel på, hvordan du kan udføre spotcyklusoptælling ved hj
 ## <a name="resolve-cycle-counting-differences"></a>Løse cyklusoptællingsforskelle
 En cyklusoptællingsforskel opstår i følgende situationer, hvis indstillingen **Er en cyklusoptællingssupervisor** er **Nej** for et arbejdsbruger-id:
 
--   Værdien for optællingen er ikke inden for de afvigelsesgrænser, der er angivet i feltet **Grænse for maks. procent** eller feltet **Grænse for maks. antal** på siden **Arbejdsbrugere**. For eksempel det disponible lagerantal på en placering er 50, og afvigelsesgrænse til brugerens arbejde er 10. Hvis arbejde brugeren indtaster en værdi, der ikke er mellem 40 og 60, opstår der en forskel.
+-   Værdien for optællingen er ikke inden for de afvigelsesgrænser, der er angivet i feltet **Grænse for maks. procent** eller feltet **Grænse for maks. antal** på siden **Arbejdsbrugere**. For eksempel er det disponible lagerantal på en lokalitet 50, og afvigelsesgrænsen for arbejdsbrugeren er 10. Hvis arbejdsbrugeren indtaster en værdi, der ikke er mellem 40 og 60, opstår der en forskel.
 -   Værdien for optællingen adskiller sig fra det disponible lagerantal, og der er ingen angivne afvigelsesgrænser.
 
 Du kan justere forskelle i den optalte værdi og derefter acceptere den optællingsværdien på siden **Ventende gennemsyn af cyklusoptælling**. Du kan kontrollere det ændrede vareantal på siden **Disponibel efter lokalitet**. Værdien for optællingen afvises, hvis forskellen ikke kan godkendes.

@@ -29,20 +29,23 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="preliminary-budgets-and-apportionments-in-the-public-sector"></a>Foreløbige budgetter og fordelinger i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget. 
 
 I de følgende afsnit i dette emne beskrives de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor.  Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md).
 
--   Opsætning af budgettering og budgetstyring for fordelinger - du kan definere en eller flere budgetkoder for fordeling budgettet skrive og konfigurerer budgetstyring for fordelinger.
--   Opsætning af budgettering og budgetstyring for et foreløbigt budget - du kan definere budgetkoder for den foreløbige budget og konfigurerer budgetstyring for foreløbige budgetter.
--   Oprettelse, visning og tilbageførsel af et foreløbigt budget - du kan oprette poster til foreløbigt budget, samt oprette oprindelige budgetposter.
+-   Opsætning af budgettering og budgetstyring for fordelinger – Du kan definere en eller flere budgetkoder for fordelingsbudgettypen og konfigurere budgetstyring for fordelinger.
+-   Opsætning af budgettering og budgetstyring for et foreløbigt budget – Du kan definere en eller flere budgetkoder for den foreløbige budgettype og konfigurere budgetstyring for foreløbige budgetter.
+-   Oprettelse, visning og tilbageførsel af et foreløbigt budget – Du kan oprette poster til foreløbigt budget samt oprette oprindelige budgetposter.
 
 
 ## <a name="set-up-budgeting-and-budget-control-for-apportionments"></a>Konfigurere budgettering og budgetstyring for fordelinger
 Fordelinger er den del af det oprindelige budget, der er godkendt til forbrug. En organisation i den offentlige sektor kan f.eks. have et oprindeligt budget på $ 1.000.000, men kun have tilladelse til at bruge $ 150.000 i første kvartal af regnskabsåret. Du kunne registrere en oprindelig budgetregisterpost for $ 1.000.000 for regnskabsåret. Derefter kunne du registrere en fordelingsbudgetregisterpost på $ 150.000 for de første tre måneder af året. Kun de $ 150.000, der blev fordelt, vil så kunne bruges i løbet af første kvartal. 
 
 > [!NOTE] 
-> Du kan ikke analysere mere end det oprindelige budgetbeløb for de økonomiske dimensionsværdier. 
+> Du kan ikke fordele mere end det oprindelige budgetbeløb for de økonomiske dimensionsværdier. 
 
 Når du har konfigureret grundlæggende budgettering og budgetstyring, kan du bruge følgende til at føje oplysninger om fordelinger til grundlæggende budgettering og budgetstyring.
 
@@ -59,11 +62,11 @@ Siden **Konfiguration af budgetstyring** indeholder indstillinger for arbejde me
 I afsnittet **Disponible budgetmidler** når du vælger indstillingen **Brug kun fordelt beløb **, bliver de andre indstillinger under **Beløb, der skal summeres** utilgængelige. Desuden indeholder beregningen af disponible budgetmidler kun fordelte beløb i beløbene, der skal summeres. Normalt vil du medtage faktiske udgifter, budgetreservationer for behæftelser, budgetreservationer for ubekræftede behæftelser og budgetreservationer for budgetreservationer i beløbene, som skal fratrækkes. 
 
 > [!NOTE] 
-> Når **Brug kun fordelt beløb** er valgt, det oprindelige budget, overførsel og revisioner er stadig spores, men bruges ikke i beregningen. 
+> Når **Brug kun fordelt beløb** er valgt, spores det oprindelige budget, overførsler og revisioner stadig, men de bruges ikke i beregningen. 
 
 Bemærk, at i afsnittet **Dokumenter og journaler** når du vælger **Indkøbsrekvisitioner**, er indstillingerne for indkøbsordrer og kreditorfakturaer valgt automatisk. 
 
-Når du har defineret budgetregisterposter for grundlæggende budgettering og konfigureret budgetstyring for fordelinger, kan du oprette budgetregisterposter for det oprindelige budget og fordelingsbudgettyper. Yderligere oplysninger finder du i "Hvordan jeg oprette og få vist et foreløbigt budget?" Senere i dette emne.
+Når du har defineret budgetregisterposter for grundlæggende budgettering og konfigureret budgetstyring for fordelinger, kan du oprette budgetregisterposter for det oprindelige budget og fordelingsbudgettyper. Du kan finde flere oplysninger under "Hvordan opretter jeg og få vist et foreløbigt budget?" senere i dette emne.
 
 ### <a name="tips"></a>Tip!
 
@@ -101,7 +104,7 @@ Brug budgetkoder for den foreløbige budgettype, når du angiver budgetregisterp
 Siden **Konfiguration af budgetstyring** indeholder indstillingerne for arbejde med foreløbige budgetter. I afsnittet **Disponible budgetmidler** skal du vælge indstillingen **Foreløbigt budget**. Bemærk, at du evt. skal klikke på **Opret udkast** for at fortsætte. 
 
 > [!NOTE]
-> Hvis foreløbige budgetter er medtaget i beregningen af de tilgængelige budgetmidler, er det vigtigt at tilbageføre de foreløbige budgetregisterposter, når de oprindelige budgetregisterposter registreres i budgetsaldiene. Hvis budgetregisterposter med foreløbige budgetkoder ikke tilbageføres, tilføjes både det foreløbige budget og de oprindelige budgettyper, som vil angive den disponible saldo for højt. Yderligere oplysninger finder du under "Hvordan jeg Tilbagefør et foreløbigt budget?" Senere i denne artikel. Bemærk, at i afsnittet **Dokumenter og journaler** når du vælger indstillingen **Indkøbsrekvisitioner**, er indstillingerne for indkøbsordrer og kreditorfakturaer valgt automatisk.
+> Hvis foreløbige budgetter er medtaget i beregningen af de tilgængelige budgetmidler, er det vigtigt at tilbageføre de foreløbige budgetregisterposter, når de oprindelige budgetregisterposter registreres i budgetsaldiene. Hvis budgetregisterposter med foreløbige budgetkoder ikke tilbageføres, tilføjes både det foreløbige budget og de oprindelige budgettyper, som vil angive den disponible saldo for højt. Du kan finde flere oplysninger under "Hvordan tilbagefører jeg et foreløbigt budget?" senere i denne artikel. Bemærk, at i afsnittet **Dokumenter og journaler** når du vælger indstillingen **Indkøbsrekvisitioner**, er indstillingerne for indkøbsordrer og kreditorfakturaer valgt automatisk.
 
 
 ## <a name="create-view-and-reverse-a-preliminary-budget"></a>Opret, få vist og tilbagefør et foreløbigt budget
@@ -120,8 +123,10 @@ For at få vist yderligere oplysninger om foreløbige budgetter skal du vælge f
 
 ### <a name="how-do-i-reverse-a-preliminary-budget"></a>Hvordan tilbagefører jeg et foreløbigt budget?
 
-Når du opretter en oprindelig budgetpost og bruger budgetmodellen og dimensionsværdierne, der indeholder foreløbige budgetbeløb, kan de foreløbige budgetbeløb tilbageføres. Eksempelvis kan du angive et foreløbigt budget mængde $2,500 på finanskonto 50000. Senere, hvis du angiver en oprindelige budgetbeløb på $10,000 på finanskonto 50000, ville de indledende budgetbeløb på $2,500 tilbageføres. Finanskontoen 50000 ville have et budgetbeløb på $ 10.000. 
+Når du opretter en oprindelig budgetpost og bruger budgetmodellen og dimensionsværdierne, der indeholder foreløbige budgetbeløb, kan de foreløbige budgetbeløb tilbageføres. Du kan f.eks. angive et foreløbigt budgetbeløb på $2.500 på finanskonto 50000. Hvis du senere angiver en oprindelige budgetbeløb på $10.000 på finanskonto 50000, tilbageføres det foreløbige budgetbeløb på $2.500. Finanskontoen 50000 ville have et budgetbeløb på $ 10.000. 
 
 Du kan få vist budgetregisterposter til det oprindelige budget ved at vælge budgetkontoposten i oversigtspanelet **Budgetkontoposter** på siden **Budgetregisterpost**. Klik på menulinjen på **Relaterede oplysninger**, og klik derefter på **Budgetregisterposter**.
+
+
 
 

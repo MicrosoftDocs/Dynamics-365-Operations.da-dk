@@ -1,6 +1,6 @@
 ---
-title: Hybrid kundeordrer
-description: "En hybrid kundeordre er en enkelt ordre, der indeholder produkter, der kan udføres på lageret af kunden, samt produkter, der skal afhentes eller sendes senere."
+title: Hybride kundeordrer
+description: "En hybrid kundeordre er en enkelt ordre, der indeholder produkter, der kan sælges ud af butikken af kunden, samt produkter, der skal afhentes eller sendes senere."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrid kundeordrer
+# <a name="hybrid-customer-orders"></a>Hybride kundeordrer
 
-En hybrid kundeordre er en enkelt ordre, der indeholder produkter, der kan udføres på lageret af kunden, samt produkter, der skal afhentes eller sendes senere.
+[!include[banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for operationer - løssalg, kan du vælge enten udførelsen af alle produkter eller udføre udvalgte produkter for en kunde. Produktet linjer, der er markeret som udfører automatisk faktureres efter ordren er oprettet, på samme måde dette er det samme for en ordre, der skal være plukket op efter ordren er oprettet. Det skyldige beløb på hybrid ordrer bestemmes ved at tilføje depositum procenten på pluk og skibet produktsortiment med det fulde beløb for udførelsen af linjer. For hybride ordrer skifter systemet mellem kundens ordre tilstanden og kontant og afhentet på følgende måde:
 
--   Hvis alle produkter i vognen er angivet til **foretager levering**, ordren skal håndteres som en postering af typen kontant og afhentet.
--   Hvis nogle af eller alle linjer i vognen er indstillet til enten **pluk** eller **leverer levering**, ordren skal behandles som en debitorpostering ordre.
+En hybrid kundeordre er en enkelt ordre, der indeholder produkter, der kan sælges ud af butikken af kunden, samt produkter, der skal afhentes eller sendes senere.
 
-Hvis der er valgt en Indkøbsvogn linje og **pluk markerede**, **skib, der er valgt**, eller **udfører valgte** er markeret, angives kun den specifikke Indkøbsvogn linje med denne leveringsmetode. I så fald fortsat downstream strømmen af handlingen som sædvanligt. Men hvis **pluk, der er valgt**, **skib, der er valgt**, eller **udføre valgte** er markeret uden en Indkøbsvogn linje der er valgt, en ny side åbnes, vises alle linjerne for indkøbskurv. På dette skærmbillede kan du vælge flere linjer på en gang til at angive leveringsmetode. Når du bruger denne metode til at markere linjer, tilsidesættes alle tidligere leveringsmetode, der er knyttet til linjen.
+I Microsoft Dynamics 365 for Operations - Retail kan du vælge enten at udføre alle produkter eller udføre udvalgte produkter for en kunde. De produktlinjer, der er markeret til udførelse, faktureres automatisk, efter at ordren er oprettet. På samme måde er dette det samme for en ordre, der skal afhentes, efter at ordren er oprettet. Det skyldige beløb på hybrid ordrer bestemmes ved at tilføje indbetalingsprocenten på plukning og forsendelsesproduktlinjer med det fulde beløb for udførelseslinjerne. For hybride ordrer skifter systemet mellem kundeordretilstanden og cash og carry-tilstand på følgende måde:
+
+-   Hvis alle produkter i indkøbskurven er indstillet til **Udfør levering**, håndteres ordren som en postering af typen cash og carry.
+-   Hvis nogle af eller alle linjer i kurven er indstillet til enten **Pluk** eller **Send levering**, skal ordren behandles som en debitorordretransaktion.
+
+Hvis der er valgt en indkøbskurvlinje og **Pluk markerede**, **Afsendelse valgt** eller **Udfør valgte** er markeret, angives kun den specifikke indkøbskurvlinje med denne leveringsmetode. I så fald fortsætter downstreamflowet af handlingen som sædvanligt. Men hvis **Pluk markerede**, **Afsendelse valgt** eller **Udfør valgte** er valgt, uden at der er valgt en indkøbskurvlinje, åbnes en ny side, der viser alle indkøbskurvlinjerne. På dette skærmbillede kan du vælge flere linjer på en gang for at angive leveringsmetoden. Når du bruger denne metode til at markere linjer, tilsidesættes alle tidligere leveringsmetoder, der er knyttet til linjen.
 
 <a name="see-also"></a>Se også
 --------
 
-[Oversigt over ordrer til kunden](customer-orders-overview.md)
+[Oversigt over kundeordrer](customer-orders-overview.md)
+
+
 
 

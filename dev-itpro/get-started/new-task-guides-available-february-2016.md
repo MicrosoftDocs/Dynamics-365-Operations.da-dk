@@ -1,6 +1,6 @@
 ---
-title: "Ny opgave hjælpelinjer (februar 2016)"
-description: "Denne wiki viser de opgave hjælpelinjer, der er udgivet til Microsoft BPM-biblioteker fra og med februar 2016.  De biblioteker, der er udgivet omfatter (februar 2016) APQC Unified bibliotek til Microsoft Dynamics 365 for operationer og (februar 2016) Introduktion."
+title: Nye opgaveguider (februar 2016)
+description: Denne wiki viser de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.  De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-bibliotek til Microsoft Dynamics 365 for Operations og (februar 2016) Introduktion.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Ny opgave hjælpelinjer (februar 2016)
+# <a name="new-task-guides-february-2016"></a>Nye opgaveguider (februar 2016)
 
-Denne wiki viser de opgave hjælpelinjer, der er udgivet til Microsoft BPM-biblioteker fra og med februar 2016.  De biblioteker, der er udgivet omfatter (februar 2016) APQC Unified bibliotek til Microsoft Dynamics 365 for operationer og (februar 2016) Introduktion.
+Denne wiki viser de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.  De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-bibliotek til Microsoft Dynamics 365 for Operations og (februar 2016) Introduktion.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Opgaven hjælpelinjer i (februar 2016) APQC Unified bibliotek til Microsoft Dynamics 365 til operationer
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics 365 for Operations (februar 2016)
 ---------------------------------------------------------------------------------
 
-(Februar 2016) APQC Unified bibliotek indeholder opgave hjælpelinjer, der er beregnet til brug for hjælp til Dynamics-365 for operationer 7.0.0 overgang. Hvis du har brug for lokaliserede versioner af disse vejledninger til opgaven, de er tilgængelige i (maj 2016) APQC Unified bibliotek til Microsoft Dynamics 365 for operationer. Finde flere oplysninger om, hvordan man tilsluttes en opgave guide bibliotek Hjælp-systemet, [komme i gang med Hjælp](help-overview.md).
+APQC Unified-bibliotek (februar 2016) indeholder de opgaveguider, der er beregnet til brug i Hjælp i Dynamics 365 for Operations 7.0.0-frigivelsen. Hvis du har brug for lokaliserede versioner af disse opgaveguider, er de tilgængelige i APQC Unified-biblioteket til Microsoft Dynamics 365 for Operations (maj 2016). Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditor
 
@@ -531,7 +531,7 @@ Denne wiki viser de opgave hjælpelinjer, der er udgivet til Microsoft BPM-bibli
 | Føje en beregning til en produktkonfigurationsmodel    | Globalt             |
 | Godkend en produktkonfigurationsmodel                 | Globalt             |
 | Udføre grundlæggende opsætning af en frigivet produktmaster | Globalt             |
-| Oprette en... \financial-dimensions\dimension-based produktmaster               | Globalt             |
+| Opret en ..\financial-dimensions\dimension-based produktmaster               | Globalt             |
 | Oprette et hierarki for produktklassifikation          | Globalt             |
 | Pårette en produktkonfigurationsmodel                  | Globalt             |
 | Oprette en produktmaster                               | Globalt             |
@@ -544,7 +544,7 @@ Denne wiki viser de opgave hjælpelinjer, der er udgivet til Microsoft BPM-bibli
 | Vedligehold stykliste for en produktkonfigurationsmodel        | Globalt             |
 | Vedligehold rute for en produktmodel                    | Globalt             |
 | Administrer frigivne produkter                              | Globalt             |
-| Frigiv en... \financial-dimensions\dimension-based produktmaster              | Globalt             |
+| Frigiv en ..\financial-dimensions\dimension-based produktmaster              | Globalt             |
 | Overfør data for produktmodeller                      | Globalt             |
 
  
@@ -718,10 +718,10 @@ Denne wiki viser de opgave hjælpelinjer, der er udgivet til Microsoft BPM-bibli
 <a name="see-also"></a>Se også
 --------
 
-[Nye eller opdaterede opgave leder (maj 2016)](new-updated-task-guides-available-may-2016.md)
+[Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nye eller opdaterede opgave leder (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Nye eller opdaterede opgaveguider (august 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Nye eller opdaterede opgave leder (November 2016)](new-task-guides-november-2016.md)
+[Nye eller opdaterede opgaveguider (november 2016)](new-task-guides-november-2016.md)
 
 

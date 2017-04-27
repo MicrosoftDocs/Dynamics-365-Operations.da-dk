@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuel beslutning i en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en manuel beslutning.
 
 Hvis du vil konfigurere en manuel beslutning i arbejdsgangseditoren, skal du højreklikke på den manuelle beslutning og derefter klikke på **Egenskaber** for at åbne formularen **Egenskaber**. Brug derefter nedenstående procedure for at konfigurere egenskaberne for den manuelle beslutning.
@@ -95,8 +98,8 @@ Du kan sende beskeder til personer, når en beslutning er truffet, delegeret vid
 
 1.  Klik på **Beskeder** i ruden til venstre.
 2.  Markér afkrydsningsfeltet ud for de hændelser, som beskederne udsendes i forbindelse med.
-    -   **\[Valg 1\]** – den tildelte bruger har valgt **\[valg 1\]**.
-    -   **\[Valg 2\]** – den tildelte bruger har valgt **\[valg 2\]**.
+    -   **\[Valg 1\]** – Den bruger, der er tildelt beskeden, har valgt **\[Valg 1\]**.
+    -   **\[Valg 2\]** – Den bruger, der er tildelt beskeden, har valgt **\[Valg 2\]**.
     -   **Deleger** – Den bruger, der er tildelt beslutningen, har tildelt den til en anden bruger.
     -   **Eskaler** – Den bruger, der har fået tildelt beslutningen, har ikke truffet beslutningen inden for den tildelte tid.
 
@@ -148,10 +151,10 @@ Du kan sende beskeder til personer, når en beslutning er truffet, delegeret vid
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Microsoft Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Microsoft Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Udfør følgende trin for at angive, hvem en manuel beslutning skal tildeles til
     </tr>
     <tr class="even">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, der skal tildeles beslutningen, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, der skal tildeles beslutningen, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Udfør følgende trin for at angive, hvem en manuel beslutning skal tildeles til
     <li>På listen <strong>Køtype</strong> skal du vælge <strong>Betingede workflowopgavekøer</strong>.</li>
     <li>På listen <strong>Kønavn</strong> skal du vælge <strong>Betinget kø</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Bemærk:</strong> bruges denne indstilling for kun et par arbejdsprocesser såsom sagsstyring.</td>
+    </ol>
+    <strong>Bemærk!</strong> Denne indstilling bruges kun til nogle få arbejdsgange såsom Sagsstyring.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Hvis en bruger ikke træffer beslutningen inden for den tildelte tid, er beslutn
     |----------|----------------------------|
     | 1        | Knyt til: Anna           |
     | 2        | Knyt til: Erik            |
-    | 3        | Sidste handling: \[valg 1\] |
+    | 3        | Sluthandling: \[Valg 1\] |
 
-    I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, vælger systemet **\[valg 1\]** som beslutning.
+    I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Erik ikke træffer beslutningen inden for den tildelte tid, vælges **\[[Valg 1\]** automatisk som beslutning.
 3.  Klik på **Tilføj eskalering** for at føje en bruger til eskaleringsstien. Vælg en af indstillingerne i følgende tabel, og udfør derefter de ekstra trin for den pågældende indstilling, før du går videre til trin 4.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Hvis en bruger ikke træffer beslutningen inden for den tildelte tid, er beslutn
     </tr>
     <tr class="odd">
     <td>Bruger</td>
-    <td>Specifikke Dynamics 365 for brugere af operationer</td>
+    <td>Bestemte Dynamics 365 for Operations-brugere</td>
     <td><ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Den <strong>tilgængelige brugere</strong> liste indeholder alle Dynamics 365 for brugere af operationer. Vælg de brugere, beslutningen skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Dynamics 365 for Operations. Vælg de brugere, beslutningen skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Udfør følgende trin, hvis beslutningen skal træffes inden en bestemt tidsgræ
     -   **År** – Vælg den dag, uge og måned, hvor beslutningen senest skal være truffet. Det kan være, at beslutningen f.eks. skal være truffet senest fredag i den tredje uge i december.
 
 4.  Hvis tidsfristen overskrides, træffes beslutningen automatisk af systemet. Vælg den indstilling, som systemet skal vælge, på listen **Handling**.
+
+
 
 
 

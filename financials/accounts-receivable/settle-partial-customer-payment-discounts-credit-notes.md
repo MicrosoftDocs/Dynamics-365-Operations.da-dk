@@ -1,5 +1,5 @@
 ---
-title: "Udligne en delvis debitorbetaling med rabatter på kreditnotaer"
+title: "Udlign en delvis debitorbetaling med rabatter på kreditnotaer"
 description: "Denne artikel fører dig gennem et scenarie, hvor en kasserabat er anvendt på en kreditnota, når den oprindelige faktura også havde en kasserabat."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Udligne en delvis debitorbetaling med rabatter på kreditnotaer
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Udlign en delvis debitorbetaling med rabatter på kreditnotaer
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel fører dig gennem et scenarie, hvor en kasserabat er anvendt på en kreditnota, når den oprindelige faktura også havde en kasserabat. 
 
-Fabrikam gør det muligt at anvende kasserabatter på delvise betalinger samt på kreditnotaer. En kasserabat kan anvendes på en kreditnota, når der udstedes en kreditnota for en faktura, som kunden fik en kasserabat på. I stedet for at oprette en kreditnota for det fulde beløb, kan du kreditere kundens saldo for et beløb, der udelukker den kasserabatprocent, kunden har fået. Udligning-parametre er placeret på den **Accounts receivable parameters** side.
+Fabrikam gør det muligt at anvende kasserabatter på delvise betalinger samt på kreditnotaer. En kasserabat kan anvendes på en kreditnota, når der udstedes en kreditnota for en faktura, som kunden fik en kasserabat på. I stedet for at oprette en kreditnota for det fulde beløb, kan du kreditere kundens saldo for et beløb, der udelukker den kasserabatprocent, kunden har fået. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura og kreditnota
 Debitor 4035 har en faktura på 1.000,00 og en kreditnota på 100,00. Hvert dokument har en rabat på 1 procent, hvis der betales inden 14 dage. Arnie kan se disse oplysninger på siden** Debitorposteringer**.
@@ -59,5 +62,7 @@ Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 | Kasserabatbeløb, der skal medtages | -1,00     |
 
 Udligningen er på 100,00 og indeholder en betaling på 99,00 og en rabat på 1,00.
+
+
 
 

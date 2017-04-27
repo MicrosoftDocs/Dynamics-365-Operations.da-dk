@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
 
 <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
@@ -126,7 +129,7 @@ Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun defin
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Tabelbegrænsninger**
 
 For de posteringer, der har den valgte posteringsprofil, skal du angive, om posterne skal udlignes automatisk, om der skal beregnes rente og udsendes rykkere. Du kan også vælge den konto, der skal bruges, når poster med den valgte posteringsprofil lukkes.
 
@@ -138,6 +141,8 @@ Angiv følgende værdier for at definere en posteringsprofil:
 | **Renter**          | Vælg denne, hvis der skal beregnes rente på udestående saldi for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke beregnet rente for disse debitorer.                                           |
 | **Rykker** | Vælg denne, hvis der skal genereres rykkere for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke genereret rykkere for disse debitorer.                                                 |
 | **Luk**             | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                                                           |
+
+
 
 
 

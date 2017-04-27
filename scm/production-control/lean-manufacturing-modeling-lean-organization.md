@@ -1,5 +1,5 @@
 ---
-title: Udformning af en lean-organisation
+title: Modellering af en lean organisation
 description: Artiklen indeholder oplysninger om de vigtigste begreber inden for modellering af lean organisation.
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="modeling-a-lean-organization"></a>Udformning af en lean-organisation
+# <a name="modeling-a-lean-organization"></a>Modellering af en lean organisation
 
 Artiklen indeholder oplysninger om de vigtigste begreber inden for modellering af lean organisation. 
 
@@ -35,7 +35,7 @@ Et lean manufacturing-scenarie er typisk mere end en samling af ikke-relaterede 
 ## <a name="production-flows-in-lean-manufacturing"></a>Produktionsflows i lean manufacturing
 I produktionsscenarier baseret på produktionsordrer udstedes materiale til en bestemt produktionsordre. Under en sekvens af handlinger, der er baseret på en stykliste og ruter, oprettes produkter og modtages slutteligt på den angivne lokalitet. Procestiden for produktionsordrer varierer i intervaller fra få minutter til uger. Alle relaterede omkostninger, materialer og arbejde akkumuleres på produktionsordren. For at reducere leveringstider og overskydende lager mellem ressourcer, der er forårsaget af batchproduktion, introducerer lean manufacturing kanban-opfyldning og supermarkeder i produktion og genopfyldning af lagersted. Dette bringer normalt uorden i produktionen af delvist uafhængige kanban-cyklusser. Genopfyldning af en kanban for et halvfærdigt produkt udløses ikke længere af en ordre til et færdigt produkt. Hvis du vil genoprette en produktions- og omkostningskontekst for de forskellige kanban-scenarier, der foreslås i Microsoft Dynamics AX, introduceres de aktivitetsbaserede produktionsflows som grundstenen i lean manufacturing. Alle kanban-regler refererer til denne prædefinerede struktur. Den aktivitetsbaserede model understøtter opsætningen af flere scenarier end i tidligere versioner af Lean produktion til Dynamics AX. Men denne model tilføjer ikke kompleksitet for medarbejdere i produktionen, fordi alle scenarier bruger den samme aktivitetsbaserede brugergrænseflade.
 
-## <a name="semifinished-products-nonbom-levels"></a>Halvfærdige produkter (nonBOM niveau)
+## <a name="semifinished-products-nonbom-levels"></a>Halvfabrikata (nonBOM-niveauer)
 Lean Manufacturing for Dynamics AX integrerer kanban for produkter på lager og halvfabrikata i en enkelt ramme, hvilket derfor sikrer en ensartet brugeroplevelse for alle sager. På grund af denne arkitektur skal flere styklisteniveauer ikke længere indføres for at aktivere kanbans til anvendelse på halvfabrikata. Denne arkitektur er også med til at reducere lagertransaktioner til et minimum.
 
 ## <a name="products-and-material-in-work-in-progress"></a>Produkter og materialer i igangværende arbejde
@@ -51,6 +51,6 @@ Periodisk konsolidering af omkostningerne for et produktionsflow retter den rela
 For bedre at understøtte løbende forbedring, implementeres produktionsflow i tidseffektive versioner. Derfor kan en eksisterende version af produktionsflowet samt alle relaterede kanban-regler kopieres til en fremtidig version af produktionsflowet. Desuden kan produktionsflowets fremtidige tilstand modelleres, før det er godkendt og aktiveret for produktionen. Eksisterende kanbans fra gamle produktionsflowversioner er automatisk relateret til den nye version for at sikre et problemfrit materialeforbrug på overførselsdatoen og senere.
 
 ## <a name="simplicity"></a>Enkelhed
-Til gennemførelse af Lean produktion til Dynamics AX vælger vi en produktion flow og aktivitet fremgangsmåde, der gør det muligt for produktion af simple og komplekse scenarier skal modelleres i en enkelt skalerbar arkitektur. Se nærmere på begrebet aktivitet afslører en ny enkelhed til brugere, som kræver det: produktion og logistik arbejdere. Ved at rapportere mod aktivitetsbaseret job i stedet for lagerposteringer, overfører en ensartet brugergrænseflade for alle lean manufacturing-varianter forretningskompleksiteten fra brugergrænsefladen til, hvor den hører til: produktionsflowet som grundstenen i lean manufacturing.
+For implementeringen af Lean Manufacturing til Microsoft Dynamics AX skal du vælge et produktionsflow og den aktivitetstilgang, der muliggør modellering af enkle og komplekse scenarier i en enkelt skalerbar arkitektur. Et nærmere kig på aktivitetskonceptet afslører en ny enkelhed for de brugere, der har brug for det: produktions- og logistikarbejdere. Ved at rapportere mod aktivitetsbaseret job i stedet for lagerposteringer, overfører en ensartet brugergrænseflade for alle lean manufacturing-varianter forretningskompleksiteten fra brugergrænsefladen til, hvor den hører til: produktionsflowet som grundstenen i lean manufacturing.
 
 

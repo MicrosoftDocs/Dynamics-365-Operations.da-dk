@@ -1,6 +1,6 @@
 ---
-title: Nye eller opdaterede opgave leder (November 2016)
-description: "I dette emne beskrives de nye eller opdaterede opgave hjælpelinjer, der er udgivet til Microsoft (November 2016 - alle sprog) APQC Unified bibliotek til Microsoft Dynamics 365 for operationer. Der blev ikke udgivet noget nyt introduktionsbibliotek."
+title: Nye eller opdaterede opgaveguider (november 2016)
+description: I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (november 2016 - alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Nye eller opdaterede opgave leder (November 2016)
+# <a name="new-or-updated-task-guides-november-2016"></a>Nye eller opdaterede opgaveguider (november 2016)
 
-I dette emne beskrives de nye eller opdaterede opgave hjælpelinjer, der er udgivet til Microsoft (November 2016 - alle sprog) APQC Unified bibliotek til Microsoft Dynamics 365 for operationer. Der blev ikke udgivet noget nyt introduktionsbibliotek.
+[!include[banner](../includes/banner.md)]
 
-Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpelinjer, der er beregnet til brug for hjælp til Microsoft Dynamics 365 for operationer, Microsoft Dynamics 365 for operationer platformsopdatering 3, Microsoft Dynamics AX-Platform update 2, Dynamics AX maj 2016 update og Microsoft Dynamics AX februar 2016 frigive. Yderligere oplysninger om disse udgivelser, se [Hvad er nye eller ændrede](whats-new-changed.md). Lokaliserede versioner af opgave-vejledninger er tilgængelige i dette bibliotek. Finde flere oplysninger om, hvordan man tilsluttes en opgave guide bibliotek Hjælp-systemet, [komme i gang med Hjælp](help-overview.md). **Bemærk:** en stjerne (**\***) ved siden af en Business process model (BPM) linje angiver, at opgave-vejledning til denne forretningsproces blev oprettet for Dynamics 365 for operationer November 2016 opdatere og ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
+
+I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (november 2016 - alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
+
+APQC Unified-biblioteket (november 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations platformsopdatering 3, Microsoft Dynamics AX-platformopdatering 2, Dynamics AX-opdateringen fra maj 2016 og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan find flere oplysninger om disse frigivelser i [Nyheder eller ændringer](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md). **Bemærk:** En stjerne (**\***) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics 365 for Operations fra november 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Kreditor
 
 | BPM-linje                                                                                           | Land/område |
 |----------------------------------------------------------------------------------------------------|----------------|
-| Vigtigste fakturadata i AP-system ved hjælp af godkendelseskladden                                               | Globalt         |
-| Vigtigste fakturadata i AP-system ved hjælp af kreditorfaktura (Enter og bogføre en kreditorfaktura med tilsvarende) | Globalt         |
+| Vigtigste fakturadata i kreditorsystem, der bruger godkendelseskladde                                               | Globalt         |
+| Vigtigste fakturadata i kreditorsystem, der bruger kreditorfaktura (angiv og bogfør en kreditorfaktura med sammenholdelse) | Globalt         |
 | Vigtigste fakturadata til kreditorsystem ved hjælp af fakturakladde                                              | Globalt         |
 | Vigtigste fakturadata til kreditorsystem ved hjælp af fakturapulje                                                 | Globalt         |
-| Registrere modtagelsen af kreditorfakturaen og sammenligne dem med modtagne antal                           | Globalt         |
+| Registrere modtagelsen af kreditorfakturaer og sammenligne dem med modtaget antal                           | Globalt         |
 | Konfigurere validering af fakturasammenholdelse for kreditor                                                | Globalt         |
 | Konfigurer politikker for kreditorfakturaer                                                                    | Globalt         |
 
@@ -49,7 +52,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | BPM-linje                                                                           | Land/område |
 |------------------------------------------------------------------------------------|----------------|
 | Tildel en skabelon til tilbagevendende fritekstfakturaer til en debitor                        | Globalt         |
-| Beregne rente og oprette og udskrive og bogføre rentenotaer (proces rente) | Globalt         |
+| Beregne rente og oprette og udskrive og bogføre rentenotaer (behandle rente) | Globalt         |
 | Oprette et rykkerforløb                                                | Globalt         |
 | Opret en bemyndigelse til direkte debitering for en kunde                                       | Globalt         |
 | Opret en fritekstfaktura                                                         | Globalt         |
@@ -59,7 +62,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Oprette salgsordrefakturaer                                                        | Globalt         |
 | Opret og bogfør tilbagevendende fritekstfakturaer                                     | Globalt         |
 | Behandl rykkere                                                         | Globalt         |
-| Gennemgå oplysninger om websteder                                                      | Globalt         |
+| Gennemgå oplysninger om rykkere                                                      | Globalt         |
 | Konfigurere og oprette oplysninger om debitorforældelse                          | Globalt         |
 
 ### 
@@ -77,11 +80,11 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 | BPM-linje                    | Land/område |
 |-----------------------------|----------------|
-| Ændre layoutet budget plan | Globalt         |
+| Redigere et layout til budgetplan | Globalt         |
 
 ### 
 
-### <a name="cash-management"></a>Likviditetsstyring
+### <a name="cash-management"></a>Likvide midler
 
 | BPM-linje                                                             | Land/område |
 |----------------------------------------------------------------------|----------------|
@@ -104,7 +107,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Oprette fremdaterede checks                                              | Globalt         |
 | Udligne en fremdateret check for en kreditor                                | Globalt         |
 | Udligne en fremdateret check fra en debitor                             | Globalt         |
-| Oversigt over betalinger                                             | Globalt         |
+| Oversigt over kreditorbetalinger                                             | Globalt         |
 
 ### 
 
@@ -137,45 +140,45 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 | BPM-linje                                                                                                                             | Land/område                    |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Tilføj BAS rapportere bokse og generere Australien Business aktivitet Statement (BAS)                                                    | Australien og New Zealand         |
+| Tilføje BAS-rapportfelter og generere australsk BAS (Business Activity Statement)                                                    | Australien og New Zealand         |
 | Konfigurer årsagskoder til australsk BAS                                                                                                | Australien og New Zealand         |
-| **\***Chinese voucher continuity check                                                                                               | Kina                             |
-| **\***KN-00010 Kina hierarki i kontoplanen                                                                                  | Kina                             |
-| **\***KN-00016 bruger handling log af Kina arbejde regel                                                                              | Kina                             |
-| **\***Golden tax integration export setup                                                                                            | Kina                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | Kina                             |
-| **\***Post vouchers from the general journal                                                                                         | Kina                             |
-| **\***Set up basic tax integration profile for China                                                                                 | Kina                             |
-| **\***Set up Chinese vouchers                                                                                                        | Kina                             |
+| **\***Kontinuitetskontrol af kinesiske bilag                                                                                               | Kina                             |
+| **\***CN-00010 Hierarki i kontoplan for Kina                                                                                  | Kina                             |
+| **\***CN-00016 Logføre brugerhandling efter kinesisk arbejdsregel                                                                              | Kina                             |
+| **\***Konfiguration af eksport af Golden Tax-integration                                                                                            | Kina                             |
+| **\***Bogføre bilag fra andre moduler, f.eks. salgsfakturaer                                                                          | Kina                             |
+| **\***Bogføre bilag fra finanskladden                                                                                         | Kina                             |
+| **\***Oprette grundlæggende momsintegrationsprofil for Kina                                                                                 | Kina                             |
+| **\***Konfigurere kinesiske bilag                                                                                                        | Kina                             |
 | Oprette og bogføre en debitorfaktura for en kunde i den offentlige sektor                                                                      | Danmark                           |
 | Oprette og bogføre en fritekstfaktura for en kunde i den offentlige sektor                                                                     | Danmark                           |
 | Oprette og bogføre en projektfaktura for en kunde i den offentlige sektor                                                                       | Danmark                           |
-| DK-00007 FIK 752 girokort slip/bogføre en fritekstfaktura med et indbetalingskort                                               | Danmark                           |
-| DK-00007 FIK 752 girokort slip/bogføre en projektfaktura med et indbetalingskort                                                 | Danmark                           |
+| DK-00007 FIK 752 giroindbetalingskort/bogføre en fritekstfaktura med et indbetalingskort                                               | Danmark                           |
+| DK-00007 FIK 752 giroindbetalingskort/bogføre en projektfaktura med et indbetalingskort                                                 | Danmark                           |
 | Importere OIOUBL elektroniske faktureringskonfigurationer                                                                                    | Danmark                           |
 | Konfigurere debitorkonti til elektronisk OIOUBL-fakturering                                                                             | Danmark                           |
 | Konfigurere elektronisk OIOUBL-fakturering                                                                                                   | Danmark                           |
 | Konfigurer indbetalingskortformat                                                                                                           | Danmark                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Østeuropa                    |
+| **\***EEU 00047 Forskud til medarbejder                                                                                          | Østeuropa                    |
 | Opret og eksportér kreditorbetalinger ved hjælp af et ISO20022-betalingsformat                                                                      | Europa                            |
 | Oprette betalinger for kunder, der har bemyndigelser til direkte debitering                                                                          | Europa                            |
-| **\***EE 00015 betaling referenceværktøj generation                                                                                     | Europa                            |
+| **\***EE-00015 Værktøj til generering af betalingsreference                                                                                     | Europa                            |
 | EUR-00002 Generere en EU Intrastat-opgørelse                                                                                       | Europa                            |
-| **\***EUR-00002 Angiv et Læs adresse for en transaktion inden for Fællesskabet                                                          | Europa                            |
+| **\***EUR-00002 Angive en fragtadresse for en transaktion inden for fællesskabet                                                          | Europa                            |
 | EUR-00002 Overføre transaktioner til Intrastat                                                                                     | Europa                            |
 | EUR-00011 Generere EU-listesystemrapporten                                                                                          | Europa                            |
 | EUR-00011 Konfigurere rapportering for EU-listesystemet                                                                                             | Europa                            |
 | EUR-00012 Udstede et EU-posteringscertifikat                                                                                              | Europa                            |
 | EUR-00012 Modtage et EU-indførselscertifikat                                                                                            | Europa                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Europa                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Europa                            |
-| **\***EUR 00015 opsætning af moms-ID                                                                                                        | Europa                            |
-| **\***Beregning af omkostningssats HU 00001 Exchange                                                                                             | Europa                            |
+| **\***EUR-00015 Parts søgning ved hjælp af moms-id                                                                                            | Europa                            |
+| **\***EUR-00015 Registrering af kreditors moms-id                                                                                        | Europa                            |
+| **\***EUR 00015 Konfigurere moms-id                                                                                                        | Europa                            |
+| **\***HU-00001 Valutakursberegning                                                                                             | Europa                            |
 | Importér konfiguration af ISO20022-overførsel                                                                                        | Europa                            |
 | Importér konfiguration af ISO20022 direkte debitering                                                                                           | Europa                            |
-| **\***LT-00003 overførselsdokumentets for transport af varer inden for virksomheden/Opret et dokument til overførsel til en intern lageroverførsel   | Europa                            |
-| **\***LT-00003 overførselsdokumentets for transport af varer inden for virksomheden/Konfigurer overførselsdokumenter for transport af varer i en virksomhed | Europa                            |
-| **\***Nej-00002 debitorbetaling baseret på betalings-ID                                                                                  | Europa                            |
+| **\***LT-00003 Overførselsdokument for transport af varer inden for virksomheden/Oprette et overførselsdokument til en intern lageroverførsel   | Europa                            |
+| **\***LT-00003 Overførselsdokument for transport af varer inden for virksomheden/Konfigurere overførselsdokumenterne for transport af varer inden for en virksomhed | Europa                            |
+| **\***NO-00002 Debitorbetaling baseret på betalings-id'et                                                                                  | Europa                            |
 | Konfigurere firmaets bankkonti til ISO20022-overførsler                                                                           | Europa                            |
 | Konfigurere firmaets bankkonti til ISO20022 direkte debet                                                                              | Europa                            |
 | Konfigurere kunder og kundebankkonti til ISO20022 direkte debet                                                               | Europa                            |
@@ -183,10 +186,10 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Opret en betalingsmetode til ISO20022 Direct Debit                                                                                   | Europa                            |
 | Opsætning af kreditorer og kreditorbankkonti til ISO20022-overførsler                                                                | Europa                            |
 | Fastlæg debitorbetalingsmåder                                                                                                | Frankrig                            |
-| debitor-og FR-00002                                                                                                 | Frankrig                            |
+| FR-00002 Debitor- og kreditorkonto                                                                                                 | Frankrig                            |
 | FR-00003 NAF-koder og Siret-numre                                                                                                 | Frankrig                            |
 | FR-00004 Godkend og bogfør udstedelse af veksel                                                                                      | Frankrig                            |
-| FR-00004 franske veksler og egenveksler                                                                               | Frankrig                            |
+| FR-00004 Franske veksler og egenveksler                                                                               | Frankrig                            |
 | FR-00004 Bogfør kladde til udstedelse af protesteret veksel                                                                                  | Frankrig                            |
 | FR-00004 Bogfør kladden til genudstedelse af veksel                                                                                       | Frankrig                            |
 | FR-00004 Opsætning af betalingsmåde                                                                                                     | Frankrig                            |
@@ -200,7 +203,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurere beregninger)                                                      | Tyskland                           |
 | ER Konfigurere format for at udføre optælling og sammenlægning (del 3: Brug beregninger til at udføre outputtet)                                         | Tyskland                           |
 | ER Konfigurere format for at udføre optælling og sammenlægning (del 4: Kørselsformat)                                                                  | Tyskland                           |
-| ER oprette en udbyder af konfiguration og markere den som aktiv                                                                             | Tyskland                           |
+| ER Oprette en konfigurationsudbyder og markere den som aktiv                                                                             | Tyskland                           |
 | Designe en ER-konfiguration til generering af rapporter i Microsoft WORD-format (november 2016)                                            | Tyskland                           |
 | Designe ER-domænespecifik datamodel (november 2016)                                                                                 | Tyskland                           |
 | Importere ER-konfiguration fra Lifecycle Services                                                                                    | Tyskland                           |
@@ -218,28 +221,28 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | ER Brug vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 2: Kørselsformat)                               | Tyskland                           |
 | Generere tysk revisionsfil                                                                                                           | Tyskland                           |
 | Importér tysk konfiguration af overvågningsfil                                                                                               | Tyskland                           |
-| **\***Rapport til afstemning af moms af EUR 00018                                                                                            | Island                           |
-| IS-00006 leverandør fakturerer erklæring/oprette en kreditorkonto og vedhæfte fakturaopgørelsen                                       | Island                           |
-| IS-00006 leverandør fakturerer erklæring/oprette en fakturadeklaration for kreditorer                                                        | Island                           |
-| IS-00006 leverandør erklæring eller opdatere kreditorfakturadeklarationer og generere rapporten                                       | Island                           |
-| Vedligehold kontoplan konti/Konfigurer obligatorisk betalingsreferencer                                                                       | Island                           |
+| **\***EUR-00018 Momsafstemningsrapport                                                                                            | Island                           |
+| IS-00006 Kreditorfakturadeklaration/Oprette en kreditorkonto og vedhæfte fakturaopgørelsen                                       | Island                           |
+| IS-00006 Kreditorfakturadeklaration/Oprette en fakturaopgørelse for kreditorer                                                        | Island                           |
+| IS-00006 Kreditorfakturadeklaration/Opdatere kreditorfakturaopgørelser og generere rapporten                                       | Island                           |
+| Vedligehold kontoplan/Konfigurere obligatoriske betalingsreferencer                                                                       | Island                           |
 | Anskaffe et anlægsaktiv med aktivafviklingsforpligtelser                                                                              | Japan                             |
-| Anskaffede anlægsaktiver, krav til bonussen regering                                                                                 | Japan                             |
+| Erhverve anlægsaktiver og gøre krav på det offentlige tilskud                                                                                 | Japan                             |
 | Regulering af estimat for forpligtelse til afvikling for anlægsaktiver                                                                               | Japan                             |
-| Allokere befordre mængden af fælles anlæg og goodwill til kontanter, generering af enheder                                                   | Japan                             |
+| Allokere overførselsbeløbet for delte aktiv og goodwill til kontantgenereringsenheder                                                   | Japan                             |
 | Ændring af afskrivningsmetode for ét aktiv i aktivets levetid                                                                   | Japan                             |
 | Ændring af afskrivningsmetode for ét aktiv i bogen levetid                                                                        | Japan                             |
 | Konfigurere parametre til hurtigere afskrivning og posteringsprofiler                                                                   | Japan                             |
 | CN-00004 Fordeling af afskrivning af anlægsaktiver (JP-)                                                                                   | Japan                             |
 | Konfigurere en afskrivningsprofil og en posteringsprofil for yderligere afskrivning                                                   | Japan                             |
-| Konfigurere en afskrivningsprofil og en posteringsprofil til særlig afskrivning                                                      | Japan                             |
+| Konfigurere en afskrivningsprofil og en posteringsprofil for særlig afskrivning                                                      | Japan                             |
 | Konfigurere konsoliderede fakturaparametre og opsætning af kreditor                                                             | Japan                             |
 | Konfigurere hovedkontiene for bogføring af forpligtelse til afvikling af aktiver og markedsrabatsatser                                            | Japan                             |
 | Opret et anlægsaktiv med yderligere afskrivning                                                                                    | Japan                             |
 | Oprette et anlægsaktiv med særlig afskrivningsprofil                                                                               | Japan                             |
 | Opret fremskyndet afskrivningsprofil og tildele den til bog                                                                        | Japan                             |
 | Oprette et dokument til stigende afskrivning og angive brugerdata                                                                     | Japan                             |
-| Oprette og tildele en gruppe med udstyr                                                                                                 | Japan                             |
+| Oprette og tildele en gruppe af udstyr                                                                                                 | Japan                             |
 | Oprette og tildele reduktionsposteringsdokument                                                                                           | Japan                             |
 | Oprette og bekræfte en konsolideret faktura til kreditor                                                                                     | Japan                             |
 | Oprette og bekræfte anerkendelsestest                                                                                                  | Japan                             |
@@ -259,8 +262,8 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Forespørgsler om posteringer relateret til forpligtelse til afvikling af aktiv                                                                    | Japan                             |
 | Forespørgsel om fradragsberettigede udgifter                                                                                                       | Japan                             |
 | JP-00005 Indlagring i T-kontoformular (Japan)                                                                                     | Japan                             |
-| JP-00011 konsolideret faktura - AR - opretter og bekræfter en konsolideret faktura til kunde                                              | Japan                             |
-| JP-00027-formular 26 til afskrivningsberettigede momsopgørelse                                                                                     | Japan                             |
+| JP-00011 Konsolideret faktura - Debitor - Oprette og bekræfte en konsolideret faktura til debitor                                              | Japan                             |
+| JP-00027 Formular 26 til afskrivningsberettiget momsopgørelse                                                                                     | Japan                             |
 | Vedligehold anlægsaktivers masterdatafiler for fradragsberettigede udgifter                                                                       | Japan                             |
 | Vedligehold forringelsesindikatorer på enkelte anlægsaktiver                                                                                  | Japan                             |
 | Betale en kreditorpostering ved at påtegne debitorveksel                                                                    | Japan                             |
@@ -300,12 +303,12 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | MX-00010 Forespørge på og udskrive en elektronisk faktura                                                                                     | Mexico                            |
 | MX-00010 Bogføre en fritekstfaktura                                                                                                    | Mexico                            |
 | MX-00010 Indstille parametre for en elektronisk faktura                                                                                    | Mexico                            |
-| MX-00020: Produktion Mexicanske elektroniske Finans regnskabsmæssige rapport version 1.1                                                            | Mexico                            |
+| MX-00020: Producere mexicansk elektronisk finansregnskabsrapport version 1.1                                                            | Mexico                            |
 | MX-00020 Konfigurere kontoplanen for en juridisk enhed i Mexico                                                                   | Mexico                            |
 | MX-00020 – Angive RFC-registrerings-id for mexicanske bankkonti                                                                 | Mexico                            |
 | NL-00003 Semansys XBRL-integration                                                                                                   | Nederlandene                       |
 | NL-00010 Elektroniske momsopgørelser (EVAT)                                                                                          | Nederlandene                       |
-| MY-00003 Administrer kunde debetnotaen og kreditnota for GST                                                                          | Singapore, Malaysia og Thailand |
+| MY-00003 Administrere kundedebetnota- og kreditnota for GST                                                                          | Singapore, Malaysia og Thailand |
 | MY-00004 Administrere kreditordebetnota- og kreditnota for GST                                                                            | Singapore, Malaysia og Thailand |
 | MY-00005 Udskrive GST-momsfakturaer                                                                                                      | Singapore, Malaysia og Thailand |
 | MY-00006 01 konfigurere GST-fritagelseserklæringer                                                                                                | Singapore, Malaysia og Thailand |
@@ -340,7 +343,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Skift aktivgruppe                                        | Globalt         |
 | Ændre afskrivningsprincipper for flere anlægsaktiver | Globalt         |
 | Opret et anlægsaktiv                                      | Globalt         |
-| Opret og køb af aktiver fra kreditor           | Globalt         |
+| Oprette og anskaffe aktiver fra kreditor           | Globalt         |
 | Opret afskrivningsforslag                              | Globalt         |
 | Sælge et anlægsaktiv vha. en fritekstfaktura        | Globalt         |
 | Angive en tilføjelse til et anlægsaktiv                        | Globalt         |
@@ -362,7 +365,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | BPM-linje                                       | Land/område |
 |------------------------------------------------|----------------|
 | Afslut regnskabsår                          | Globalt         |
-| Oprette en journaloptegnelse, ved hjælp af en skabelon        | Globalt         |
+| Oprette en kladdepostering ved hjælp af en skabelon        | Globalt         |
 | Oprette en hovedkonto                          | Globalt         |
 | Oprette kontostrukturer                      | Globalt         |
 | Oprette periodiseringsskemaer                         | Globalt         |
@@ -371,7 +374,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Oprette posteringer til periodisering af finans             | Globalt         |
 | Definer økonomiske dimensioner                    | Globalt         |
 | Journaliser bogførte kladdeposteringer              | Globalt         |
-| Vedligehold skabeloner til økonomisk dimension         | Globalt         |
+| Vedligeholde skabeloner for økonomiske dimensioner         | Globalt         |
 | Masseafslutning på regnskabsperiode                    | Globalt         |
 | Håndter kladdeposteringer                        | Globalt         |
 | Behandle finansfordelingskladde              | Globalt         |
@@ -387,9 +390,9 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 | BPM-linje                                                                       | Land/område |
 |--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Globalt         |
-| **\***Create a consignment replenishment order                                 | Globalt         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Globalt         |
+| **\***Ændre ejerskabet af konsignationslager baseret på produktionsbehov | Globalt         |
+| **\***Oprette en genopfyldningsordre til konsignation                                 | Globalt         |
+| **\***Overvåge konsignationslager ved hjælp af leverandørsamarbejde                 | Globalt         |
 
 ### 
 
@@ -412,13 +415,13 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 ### 
 
-### <a name="performance-management"></a>Performance management
+### <a name="performance-management"></a>Performancestyring
 
 | BPM-linje                                                         | Land/område |
 |------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Globalt         |
-| **\***Create a goal                                              | Globalt         |
-| **\***Create a performance review                                | Globalt         |
+| **\***Føj til din performancekladde, og send ros til en person | Globalt         |
+| **\***Oprette et mål                                              | Globalt         |
+| **\***Opret en performancegennemgang                                | Globalt         |
 
 ### 
 
@@ -442,9 +445,9 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Føje et billede til et produkt                                               | Globalt         |
 | Klassificere et produkt ved hjælp af kategorihierarkier                           | Globalt         |
 | Opret en stregkode til et produkt                                         | Globalt         |
-| \*Oprette et antal produktnomenklatur for foruddefinerede produktvarianter | Globalt         |
-| \*Oprette et antal produktnomenklatur for konfigurerede produktvarianter | Globalt         |
-| \*Definere standardordreindstillingerne for en vare                            | Globalt         |
+| \* Opret en nomenklatur for produktnumre for foruddefinerede produktvarianter | Globalt         |
+| \* Opret en nomenklatur for produktnumre for konfigurerede produktvarianter | Globalt         |
+| \* Definer standardordreindstillinger for en vare                            | Globalt         |
 | Opret en salgsordre til et projekt, der kan konfigureres                         | Globalt         |
 | Opret udvælgelseskriterier for salgspris                                   | Globalt         |
 | Angiv en GTIN-kode for et produkt                                       | Globalt         |
@@ -468,7 +471,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | BPM-linje                                                                      | Land/område |
 |-------------------------------------------------------------------------------|----------------|
 | Tilføje en certificeringstype til en leverandør til den offentlige sektor                        | Globalt         |
-| Styre adgangen til købsaftaler offentlige sektor                      | Globalt         |
+| Styre adgangen til købsaftaler fra den offentlige sektor                      | Globalt         |
 | Oprette en faktureringsklassifikation                                               | Globalt         |
 | Oprette en faktureringskode                                                         | Globalt         |
 | Oprette en forpligtelse til at reservere budgetmidler til den offentlige sektor                 | Globalt         |
@@ -480,7 +483,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Oprette en avanceret finanspost i den offentlige sektor                          | Globalt         |
 | Oprette et oprindeligt budget og derefter tilbageføre foreløbige budgetposter         | Globalt         |
 | Oprette og tildele en handelspartnerkode i den offentlige sektor                 | Globalt         |
-| Oprette cover og signatur sider for betalinger rapporter for den offentlige sektor   | Globalt         |
+| Oprette for- og signatursider til betalingsrapporter for den offentlige sektor   | Globalt         |
 | Importér og opret flere engangskreditorer og -fakturaer i den offentlige sektor | Globalt         |
 | Konfigurere et afledte finansielt hierarki i den offentlige sektor                     | Globalt         |
 | Konfigurere midler i den offentlige sektor                                            | Globalt         |
@@ -493,17 +496,17 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | BPM-linje                                                         | Land/område |
 |------------------------------------------------------------------|----------------|
 | Konfigurere en arbejder                                               | Globalt         |
-| **\***Configure machine learning-powered product recommendations | Globalt         |
+| **\***Konfigurere produktanbefalingerne, der er baseret på maskinel læring | Globalt         |
 | Konfigurere funktionalitetsprofilen for en sælger   | Globalt         |
-| **\***Create a POS visual profile (November 2016)                | Globalt         |
+| **\***Oprette en visuel POS-profil (november 2016)                | Globalt         |
 | Oprette og tilknytte kasseapparater                                   | Globalt         |
 | Opret callcenterordrer                                        | Globalt         |
 | Oprette samhandelsaftaler ved hjælp af en kategoriprissætningsregel            | Globalt         |
 | Oprette, beregne og bogføre en opgørelse for en butik              | Globalt         |
 | Definere en tilknytning og tildele en rabat                      | Globalt         |
-| Definer og administrer POS-rettighedsgrupper                          | Globalt         |
-| Definere kontinuitet tidsplan                                       | Globalt         |
-| **\***Definere retail kanalkommunikation (CDX)                 | Globalt         |
+| Definere og administrere POS-rettighedsgrupper                          | Globalt         |
+| Definere kontinuitetsplan                                       | Globalt         |
+| **\***Definer detailkanalkommunikation (CDX)                 | Globalt         |
 | Reguleringer af fordelskundebelønninger                                      | Globalt         |
 | Administrer sortimenter                                               | Globalt         |
 | Momstildeling og -ændring                                | Globalt         |
@@ -526,7 +529,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | Opfyld salgsaftaler                   | Globalt         |
 | Generere og behandle kunderabatter      | Globalt         |
 | Slå relevante priser og rabatter op    | Globalt         |
-| Administrer ventepositioner salgsordre                   | Globalt         |
+| Administrere salgsordrer på hold                   | Globalt         |
 | Opret flere salgstilbud               | Globalt         |
 | Behandl rabatter til betaling                | Globalt         |
 | Registrere salgsprovision                 | Globalt         |
@@ -554,7 +557,7 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 ### 
 
-### <a name="supply-relationship-management"></a>Levere Relationsstyring
+### <a name="supply-relationship-management"></a>Administration af leverandørrelationer
 
 | BPM-linje                                                           | Land/område |
 |--------------------------------------------------------------------|----------------|
@@ -575,14 +578,14 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 | BPM-linje                                                                    | Land/område |
 |-----------------------------------------------------------------------------|----------------|
 | Oprette en lokationsprofil                                                   | Globalt         |
-| **\***Create a mobile device menu item for license plate consolidation      | Globalt         |
+| **\***Oprette et menupunkt på en mobilenhed til konsolidering af nummerplade      | Globalt         |
 | Afstemme fragtbrev manuelt                                                  | Globalt         |
 | Registrer chaufførers ind- og udtjekning af en aftale                   | Globalt         |
-| Oprette et menupunkt til mobil enhed til at udføre arbejde af typen indkøbsordre | Globalt         |
+| Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre | Globalt         |
 | Oprette en aftale for en belastning                                            | Globalt         |
 | Konfigurere et transporttilbud                                              | Globalt         |
 | Konfigurere automatisk afstemning af fragt                                     | Globalt         |
-| **\***Set up short picking item reallocation                                | Globalt         |
+| **\***Konfigurere vareomfordeling for kort plukning                                | Globalt         |
 
 
 
@@ -593,6 +596,8 @@ Den (November 2016--alle sprog) APQC Unified bibliotek indeholder opgave hjælpe
 
 [Nye eller opdaterede tilgængelige opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Nye eller opdaterede tilgængelige opgaveguider (august 2016)](new-updated-task-guides-available-august-2016.md)
+
+
 
 

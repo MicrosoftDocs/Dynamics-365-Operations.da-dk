@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Oversigt over indkøbsrekvisition
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have.
 
 Afhængigt af hvordan organisationen er opbygget, kan du oprette indkøbsrekvisitioner for produkter, som organisationen forbruger. En indkøbsrekvisitionen er et internt dokument, der giver indkøbsafdelingen tilladelse til at købe vare eller tjenesteydelser.  
@@ -48,7 +51,7 @@ Du kan konfigurere indkøbsrekvisitionens arbejdsgangsproces, så indkøbsrekvis
 
 Diagrammet nedenfor viser de statusser, som en indkøbsrekvisition og en indkøbsrekvisitionslinje tildeles, efterhånden som de bevæger sig igennem gennemsynsprocessen.  
 
-[![Purchase requisition header and line statuses](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statusser for indkøbsrekvisitionshoved og -linje](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelationer for indkøbsrekvisitionshoved og -linje
 
@@ -77,7 +80,7 @@ Den overordnede status for indkøbsrekvisitionen bestemmes af status for indkøb
 <td>Hvis arbejdsgangen er konfigureret til at dirigere indkøbsrekvisitionslinjerne til gennemsyn hos enkelte personer, kan hver enkelt linje have en status som <strong>Til gennemsyn</strong> eller <strong>Afvist</strong>. Indkøbsrekvisitionens status opdateres, når gennemsynsprocessen er gennemført for alle indkøbsrekvisitionslinjer, og der ikke er flere gennemsynstrin tilbage for indkøbsrekvisitionen.
 <ul>
 <li><strong>Til gennemsyn</strong> – Indkøbsrekvisitionslinjerne er sendt til gennemsyn. Når arbejdsgangsprocessen er fuldført for en indkøbsrekvisitionslinje, er dens status fortsat <strong>Til gennemsyn</strong>, indtil alle resterende indkøbsrekvisitionslinjer er gennemset.</li>
-<li><strong>Afvist</strong> – en indkøbsrekvisitionslinje er afvist. Indkøbsrekvisitionslinjer, der er afvist kan redigeres og sendes igen.</li>
+<li><strong>Afvist</strong> – En indkøbsrekvisitionslinje er blevet afvist. Afviste indkøbsrekvisitionslinjer kan ændres og sendes til godkendelse igen.</li>
 </ul>
 Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, starter gennemsynsprocessen for alle linjer i indkøbsrekvisitionen, som stadig er til gennemsyn, forfra. <strong>Bemærk:</strong> Du kan trække en indkøbsrekvisition tilbage, selvom den allerede er sendt. Når du trækker en indkøbsrekvisition tilbage, tilbagekaldes alle andre indkøbsrekvisitionslinjer samtidig. Indkøbsrekvisitionslinjer, der er trukket tilbage, kan slettes.</td>
 </tr>
@@ -133,7 +136,7 @@ Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, star
 Du kan fordele omkostningerne for et produkt i en indkøbsrekvisition på flere finanskonti. Hvis organisationen bruger dimensioner, f.eks. bærere eller afdelinger, kan du fordele omkostningen for et produkt til dimensioner for finanskonti.
 
 ## <a name="requisition-purposes"></a>Rekvisitionsformål
-Rekvisitionsformål gør processen med at opfylde rekvisitionsbehov mere fleksibel. Når du opretter en rekvisition, kan du tildele den ét af to formål: forbrug eller genopfyldning. Afhængigt af formålet med rekvisitionen og opsætningen af din organisation, kan rekvisitionsbehov opfyldes af en indkøbsordre, flytteordre, produktionsordre eller kanban.  
+Rekvisitionsformål gør processen med at opfylde rekvisitionsbehov mere fleksibel. Når du opretter en rekvisition, kan du tildele den ét af to formål: forbrug eller genopfyldning. Afhængigt af rekvisitionsformålet og opsætningen af din organisation, kan rekvisitionsbehov opfyldes af en indkøbsordre, en flytteordre, en produktionsordre eller kanban.  
 
 I indkøbspolitikker kan du styre de tilgængelige indkøbsrekvisitionsformål, når der oprettes en rekvisition til organisationen.
 
@@ -152,7 +155,7 @@ Hvis du vil bruge indkøbsrekvisitioner med formålet genopfyldning, skal du kon
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Indkøbsrekvisitioner og anmodninger om tilbud
 I nogle tilfælde skal du starte en tilbudsanmodningsproces (RFQ) for at identificere kreditoren og prisen for produkter, der er anmodet om i en indkøbsrekvisition. En tilbudsanmodning kan oprettes, når indkøbsrekvisitionen er til gennemsyn. Når du accepterer et tilbud, overføres oplysninger om kreditor, pris og så videre til rekvisitionen.  
 
-Du kan sætte en indkøbsrekvisition på hold ved at vælge den **på hold** afkrydsningsfeltet under den **oplysninger om indkøbsrekvisition** side. Behandling af indkøbsrekvisitionen kan fortsætte, når du fjerne spærringen ved at fjerne markeringen i afkrydsningsfeltet.  
+Du kan sætte en indkøbsrekvisition på hold ved at vælge afkrydsningsfeltet **På hold** på siden **Oplysninger om indkøbsrekvisition**. Behandling af indkøbsrekvisitionen kan kun fortsætte, når du fjerner spærringen ved at fjerne markeringen i afkrydsningsfeltet.  
 
 **Bemærk:** I e-indkøb giver tilbudsanmodningen for indkøbsrekvisitionen eventuelt leverandører mulighed for at tilføje alternative linjer. I dette tilfælde afspejler din indkøbsrekvisition godkendte alternativer.
 
@@ -178,7 +181,7 @@ Du kan oprette en indkøbsordre for indkøbsrekvisitionslinjer, der ikke er bere
 
 Processen til efterspørgselskonsolidering starter, når en indkøbsrekvisition godkendes i en arbejdsgang, og hvis budgetstyring er konfigurer for din organisation, når budgetreservationerne og forudgående behæftelser er blevet registreret. Det følgende diagram viser procesforløbet for efterspørgselskonsolidering.  
 
-[![Procesflow til efterspørgselskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Procesforløb for efterspørgselskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 
@@ -192,8 +195,10 @@ Følg disse trin for at konsolidere godkendte indkøbsrekvisitionslinjer:
 <a name="see-also"></a>Se også
 --------
 
-[Oprette en rekvisition til forbrug (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Opret en rekvisition til forbrug (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Krav til produktionsopsætning
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om opsætningskrav, før du kan arbejde med Produktionsstyring. 
 
 Produktionsstyring er integreret med funktioner i andre moduler. Denne integration giver dig mulighed for at ændre produktionsordrer og sikre, at de automatisk opdateres i alle andre relaterede processer og beregninger i systemet. Følgende opsætningsprocesser er angivet i den rækkefølge, du skal udføre dem i.
@@ -52,7 +55,7 @@ Før du bruger Produktionsstyring, skal du åbne Virksomhedsadministration og op
 4.  **Ressourcer** – Opret operationsressourcer for at definere de forskellige ressourcer, der skal bruges til at fuldføre produktionsprocessen og til at planlægge med henblik på kapacitet.
 
 ## <a name="required-production-parameters-setup"></a>Nødvendig opsætning af produktionsparametre
-**Produktionsparametre** – Angiv grundlæggende produktionsparametre at definere, hvordan systemet skal håndtere og behandle produktionsordrer. Angive, hvordan produktionsordrer oprettes, forkalkuleres, planlægges og forbruges. Du kan også vælge, hvilken form for feedback du ønsker, og hvordan omkostningsregnskabet skal udføres.
+**Produktionsstyringsparametre** – Konfigurer grundlæggende produktionsparametre for at definere, hvordan systemet skal håndtere og behandle produktionsordrer. Angive, hvordan produktionsordrer oprettes, forkalkuleres, planlægges og forbruges. Du kan også vælge, hvilken form for feedback du ønsker, og hvordan omkostningsregnskabet skal udføres.
 
 ## <a name="required-journal-name-identification"></a>Nødvendigt id for kladdenavn
 **Produktionskladdenavne** – Angiv de produktionskladdenavne, der bruges til at registrere og bogføre posteringer.
@@ -76,6 +79,8 @@ Hvis du arbejder med ruter, skal der defineres operationer for hver produktionsr
 1.  **Produktionsgrupper** – Opret produktionsgrupper for at angive relationer mellem produktionsordren og finanskontiene. Finanskontiene bruges til at bogføre eller gruppere ordrer til rapportering.
 2.  **Produktionspuljer** – Opret produktionspuljer for at gruppere produktionsordrer til behandling af presserende produktionsordrer og for at slette og bogføre grupper af ordrer.
 3.  **Egenskaber** – Definer egenskaber til at oprette specielle attributter, som du kan tildele ressourcer for at styre produktionsrækkefølgen. Disse attributter er forbundet til arbejdstidsskabelonen.
+
+
 
 
 

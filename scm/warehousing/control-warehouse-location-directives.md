@@ -1,5 +1,5 @@
 ---
-title: "Styre lager arbejde ved hjælp af skabeloner til arbejde og placering direktiver"
+title: Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
 description: "I denne artikel beskrives, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Styre lager arbejde ved hjælp af skabeloner til arbejde og placering direktiver
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Styre lagerarbejde ved at bruge arbejdsskabeloner og lokalitetsdirektiver
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives, hvordan du bruger arbejdsskabeloner og lokationsvejledninger til at bestemme, hvordan og hvor der udføres arbejde på lageret.
 
@@ -40,7 +43,7 @@ Indstillingerne i arbejdshoveddefinitionen kan bruges til at bestemme, hvornår 
 
 Arbejdslinjerne repræsenterer de fysiske opgaver, der kræves for at behandle arbejdet. For en udgående lagerproces kan der for eksempel være en arbejdslinje til plukning af varer inden for lagerstedet og en anden linje til placering af varerne i et stadieinddelt område. Der kan derefter være en ekstra linje til plukning af varer fra det stadieinddelte område og en anden linje til placering af varerne på en lastbil som en del af læsseprocessen. Du kan angive en *direktivkode *på arbejdsskabelonlinjerne. Et direktivkode er knyttet til et placeringsdirektiv og sikrer derfor, at lagerstedsarbejdet behandles på den korrekte placering på lagerstedet. 
 
-Du kan oprette en forespørgsel til at styre, hvornår en bestemt arbejdsskabelon bruges. Du kan for eksempel angive en begrænsning, så en bestemt skabelon kun kan bruges til arbejde på et bestemt lagersted. Du kan også have flere skabeloner, der bruges til at oprette arbejde til behandling af udgående salgsordrer, afhængigt af den salgsoprindelsen. Systemet bruger den **sekvensnummer** til at bestemme den rækkefølge, som vurderes tilgængeligt arbejde-skabeloner i. Derfor, hvis du har en meget specifik forespørgsel efter en bestemt arbejde-skabelon, du skal give det en lave sekvensnummer. Denne forespørgsel vil derefter blive evalueret før andre, mere generelle forespørgsler. 
+Du kan oprette en forespørgsel til at styre, hvornår en bestemt arbejdsskabelon bruges. Du kan for eksempel angive en begrænsning, så en bestemt skabelon kun kan bruges til arbejde på et bestemt lagersted. Du kan også have flere skabeloner, der bruges til at oprette arbejde til behandling af udgående salgsordrer, afhængigt af den salgsoprindelsen. Systemet bruger feltet **Løbenummer** til at bestemme den rækkefølge, som de tilgængelige arbejdsskabeloner vurderes i. Derfor, hvis du har en meget specifik forespørgsel til en bestemt arbejdsskabelon, skal du give den et lavt løbenummer. Denne forespørgsel vil derefter blive evalueret før andre, mere generelle forespørgsler. 
 
 For at stoppe eller afbryde en arbejdsproces kan du bruge indstillingen **Stop arbejde** på arbejdslinjen. I så fald bliver den arbejder, der udfører arbejdet, ikke bedt om at udføre det næste arbejdslinjetrin. For at gå videre til næste trin skal den arbejder eller en anden arbejder vælge arbejdet igen. Du kan også adskille opgaverne i et stykke arbejde ved hjælp af et andet *arbejdsklasse-id* på arbejdsskabelonlinjerne.
 
@@ -53,12 +56,14 @@ Når det gælder arbejdsskabeloner, kan du konfigurere en forespørgsel for at f
 
 Linjerne i lokationsvejledninger angiver yderligere restriktioner for anvendelsen af søgeregler for lokationer. Du kan angive et minimumantal og et maksimumantal, som vejledningen skal gælde for, og du kan angive, at vejledningen skal gælde for en bestemt lagerenhed. Hvis måleenheden f.eks. er paller, kan elementerne i paller lægges på en bestemt lokalitet. Du kan også angive, om antallet kan opdeles på tværs af flere lokationer. Ligesom lokationsvejledningens overskrift har hver lokationsvejledningslinje et løbenummer, der bestemmer den rækkefølge, linjerne vurderes i. 
 
-Lokationsvejledninger har et ekstra niveau af detaljer: *lokationsvejledningshandlinger*. Du kan definere flere handlinger i lokationsvejledning for hver linje. Igen, et sekvensnummer, der bruges til at bestemme den rækkefølge, handlingerne, der vurderes i. På dette niveau, kan du oprette en forespørgsel til at definere, hvordan du finder den bedste placering på lageret. Du kan også bruge foruddefinerede indstillinger for **Strategi **for at finde en optimal placering.
+Lokationsvejledninger har et ekstra niveau af detaljer: *lokationsvejledningshandlinger*. Du kan definere flere handlinger i lokationsvejledning for hver linje. Igen, et løbenummer bruges til at bestemme den rækkefølge, handlingerne vurderes i. På dette niveau kan du oprette en forespørgsel for at definere, hvordan du finder det bedste sted på lageret. Du kan også bruge foruddefinerede indstillinger for **Strategi **for at finde en optimal placering.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Eksempel på brug af lokationsvejledninger
 
 I dette eksempel ser vi på en indkøbsordreproces, hvor lokationsvejledningen skal finde ledig kapacitet inden for et lagersted for lagervarer, der netop er registreret på i modtagelsesområdet. Vi vil først prøve at finde ledige kapacitet inden for lageret ved at konsolidere med eksisterende disponibel lagerbeholdning. Hvis konsolideringen ikke er muligt, skal vi finde en tom lokation. 
 
 I dette scenarie skal vi definere to handlinger i lokationsvejledningen. Den første handling i rækken skal bruge strategien **Konsolider**, og den anden skal bruge strategien **Tom lokation uden indgående arbejde**. Medmindre vi definerer en tredje handling for at håndtere et overløbsscenarie, er der to mulige udfald, når der ikke er mere kapacitet på lagerstedet. Arbejde kan oprettes, selvom ingen lokationer er defineret, eller processen til oprettelse af arbejde kan mislykkes. Resultatet bestemmes af opsætningen på siden **Fejl i lokationsvejledning**, hvor du kan beslutte, om du vil vælge indstillingen **Stop arbejdet ved fejl i lokationsvejledning** for hver arbejdsordretype.
+
+
 
 

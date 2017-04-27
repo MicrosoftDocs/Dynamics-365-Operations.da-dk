@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Arbejdsgangselementer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives de forskellige elementer, der indgår i en arbejdsgang.
 
 En arbejdsgang består af elementer. Følgende afsnit indeholder beskrivelser af hver type element.
@@ -55,14 +58,14 @@ En *godkendelsesproces* er en proces, der består af separate trin. På hvert en
 -   Anmode om en ændring af dokumentet.
 -   Tildele dokumentet til en anden bruger til godkendelse.
 
-## <a name="lineitem-workflow-elements"></a>Lineitem elementer i arbejdsgang
-En arbejdsgang kan oprettes for at behandle enten dokumenter eller linjeelementerne i et dokument. Du har f.eks. oprettet en godkendelsesarbejdsgang for timesedler. (Vi vil henvise til denne arbejdsproces som de *dokumentarbejdsgang*.) Du kan tilføje en *linjeelement arbejdsprocessen* element til denne dokumentarbejdsgang. Når elementet i linjeelementet køres, sendes hvert linjeelement i dokumentet til behandling. Det kan være, at du vil have alle linjeelementer behandlet af samme arbejdsgang for linjeelement, eller at du vil måske have hvert enkelt linjeelement behandlet af en særskilt arbejdsgang for linjeelement. Antag, at en medarbejder har sendt en timeseddel, der ligner nedenstående figur. ![Arbejdsgang med linjeelementer](./media/workflow_lineitemworkflow.gif) I dette scenario kan du muligvis oprette følgende arbejdsgange for linjeelementer:
+## <a name="lineitem-workflow-elements"></a>Elementer i arbejdsgang for linjeelement
+En arbejdsgang kan oprettes for at behandle enten dokumenter eller linjeelementerne i et dokument. Du har f.eks. oprettet en godkendelsesarbejdsgang for timesedler. (Vi vil henvise til denne arbejdsproces som *dokumentarbejdsgangen*). Du kan tilføje en *arbejdsgang for linjeelement* til denne dokumentarbejdsgang. Når elementet i linjeelementet køres, sendes hvert linjeelement i dokumentet til behandling. Det kan være, at du vil have alle linjeelementer behandlet af samme arbejdsgang for linjeelement, eller at du vil måske have hvert enkelt linjeelement behandlet af en særskilt arbejdsgang for linjeelement. Antag, at en medarbejder har sendt en timeseddel, der ligner nedenstående figur. ![Arbejdsgang med linjeelementer](./media/workflow_lineitemworkflow.gif) I dette scenario kan du muligvis oprette følgende arbejdsgange for linjeelementer:
 
 -   **Arbejdsgang for linjeelement 1** – denne arbejdsgang bruges til at behandle linjeelementer, hvor projekt-id er 1111.
 -   **Arbejdsgang for linjeelement 2** – denne arbejdsgang bruges til at behandle linjeelementer, hvor projekt-id er 2222.
 -   **Arbejdsgang for linjeelement 3** – denne arbejdsgang bruges til at behandle linjeelementer, hvor projekt-id er 3333.
 
-## <a name="flowcontrol-elements"></a>Flowcontrol elementer
+## <a name="flowcontrol-elements"></a>Flowstyringselementer
 Følgende elementer sætter dig i stand til at designe arbejdsgange, der har alternative forgreninger eller grene, der kører samtidigt.
 
 ### <a name="manual-decision"></a>Manuel beslutning
@@ -80,5 +83,7 @@ En *parallel aktivitet* er et arbejdsgangselement, der omfatter to eller flere a
 ### <a name="subworkflow"></a>Underarbejdsgang
 
 En *underarbejdsgang* er en arbejdsgang, der køres inden for rammerne af en anden arbejdsgang.
+
+
 
 

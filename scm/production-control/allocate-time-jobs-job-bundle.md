@@ -1,5 +1,5 @@
 ---
-title: Tildeles tid til job i et jobbundt
+title: Fordele tid til job i et jobbundt
 description: "Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Tildeles tid til job i et jobbundt
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fordele tid til job i et jobbundt
+
+[!include[banner](../includes/banner.md)]
+
 
 Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste.
 
@@ -107,5 +110,7 @@ Overvej de tre job, der udføres af en arbejder, der har en timeløn på DKK 12,
 | Job 3 | (3,33 ÷ 5) × DKK 12,00                 | DKK 8,00                | 5 timer        | DKK 40,00         |
 
 Den korrigerede omkostning pr. time og jobtiden posteres i produktionskladden. **Bemærk:** Hvis du vælger indstillingen **Omkostningsart** på fanen **Generelt** på siden **Produktionsordrestandarder**, overføres den faktiske tid for hvert job til en produktionskladde, hvor omkostningerne er anvendt til omkostningsarten for det aktuelle job.
+
+
 
 

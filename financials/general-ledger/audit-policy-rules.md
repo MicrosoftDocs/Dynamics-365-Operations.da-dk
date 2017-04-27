@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-rules"></a>Overvåge politikregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruge overvågningspolitikker til at sikre, at udgiftsrapporter, kreditorfakturaer og indkøbsordrer overholder de politikregler, du opretter. Alle de regler, der er knyttet til en overvågningspolitik, køres i batchtilstand i henhold til en tidsplan, du angiver.  Hver politikregel er en forekomst af en politikregeltype. Kun én politikregel ad gangen kan være aktiv for hver politikregeltype. 
 
 <a name="queries-and-query-types"></a>Forespørgsler og forespørgselstyper
@@ -97,5 +100,7 @@ Alle politikreglerne for en bestemt overvågningspolitik deler samme batchparame
 --------
 
 [Overtrædelser af overvågningspolitik og sager](audit-policy-violations-cases.md)
+
+
 
 

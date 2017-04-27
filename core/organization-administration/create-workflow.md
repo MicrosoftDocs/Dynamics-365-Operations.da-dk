@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Oprette en arbejdsgang
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emner beskriver, hvordan du opretter en arbejdsgang.
 
 <a name="open-the-workflow-editor"></a>Åbne arbejdsgangseditoren
 ------------------------
 
-Microsoft Dynamics 365 for operationer moduler, du arbejder i, bestemmer typerne arbejdsgange, du kan oprette. Udfør følgende trin for at vælge den type arbejdsgang, der skal oprettes, og for at åbne arbejdsgangseditoren.
+Det Microsoft Dynamics 365 for Operations-modul, du arbejder i, bestemmer typerne af arbejdsgange, du kan oprette. Udfør følgende trin for at vælge den type arbejdsgang, der skal oprettes, og for at åbne arbejdsgangseditoren.
 
 1.  Åbn det modul, som du vil oprette en ny arbejdsgang for. For eksempel hvis du vil oprette en arbejdsgang for indkøbsrekvisitioner, skal du klikke på **Indkøb og forsyning**.
-2.  Klik på **Setup**&gt;**\[Modulnavn\] arbejdsprocesser**.
+2.  Klik på **Konfigurer** &gt; **\[Arbejdsgange\] for modulnavn**.
 3.  Klik på **Ny** i handlingsruden på listesiden.
 4.  På siden **Opret arbejdsgang** skal du vælge typen af arbejdsgang, du vil oprette, og derefter klikke på **Opret arbejdsgang**. Arbejdsgangseditoren vises. Brug nu følgende procedurer til at designe arbejdsgangen.
 
@@ -75,6 +78,8 @@ Udfør følgende trin, når du er klar til at gemme og aktivere arbejdsgangen.
 3.  Hvis alle fejl og advarsler er løst, vises siden **Aktivér arbejdsgang**. Vælg en af følgende indstillinger:
     -   Hvis du vil aktivere denne version af arbejdsgangen, skal du klikke på **Aktivér den nye version**. Når en arbejdsgang er aktiv, kan brugerne sende dokumenter til behandling og godkendelse i arbejdsgangen.
     -   Hvis du ikke vil aktivere denne version, skal du klikke på **Aktivér ikke den nye version**. Du kan aktivere arbejdsgangen senere.
+
+
 
 
 

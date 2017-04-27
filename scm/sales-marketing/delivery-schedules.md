@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delivery-schedules"></a>Leveranceplaner
 
+[!include[banner](../includes/banner.md)]
+
+
 Leveranceplaner giver dig mulighed for at spore antallet, når du bruger flere leverancer til en enkelt salgsordre, et salgstilbud eller en indkøbsordre.
 
-Brug en leveranceplan, når det samlede antal på en linje, ordre- eller tilbudslinjer skal leveres i flere leverancer. Individuelle leverancer er repræsenteret af leveringslinjer. To eller flere leverancelinjer udgør én leveranceplan. Leverancelinjerne kan have forskellige leveringsdatoer, antal, leveringsmåder og lagringsdimensioner, som f.eks. sted og lagersted.  
+Brug en leveranceplan bruges, når det samlede antal i en ordre eller et tilbud skal leveres i flere leverancer. Individuelle leverancer repræsenteres af leveringslinjer. To eller flere leverancelinjer udgør én leveranceplan. Leverancelinjerne kan have forskellige leveringsdatoer, antal, leveringsmåder og lagringsdimensioner, som f.eks. sted og lagersted.  
 
 **Eksempel på en leveranceplan**
 
@@ -42,7 +45,7 @@ Brug en leveranceplan, når det samlede antal på en linje, ordre- eller tilbuds
 
 I dette scenario anmoder kunden om en leverance på 600 stole i batch på 100 stole over en periode på seks måneder. Du kan holde styr på leveringskravene ved at oprette en leveranceplan. Du kan oprette seks forskellige leverancelinjer på siden med leveranceplanen. Hver leverancelinje indeholder 100 stole og angiver leveringsdatoen for disse 100 stole. I dette tilfælde modregnes hver linje på den første i måneden i seks på hinanden efterfølgende måneder.  
 
-Når du opretter en leveranceplan, ændres typen af den oprindelige ordrelinje automatisk til **Ordrelinje med flere leveringer**. En linje af denne type kaldes en kommerciel linje og er markeret ved et ikon. Leveringslinjen er markeret ved et andet ikon. Hvis du ændrer et antal på en leverancelinje, opdateres kommercielle linjen til det samlede antal leveranceplanen. Hvis en samhandelsaftale, der er defineret en ordrens samlede rabat, sørger leveranceplanen, at din ordre bliver berettiget til slutrabatten, selv når ordren er opdelt i adskilte leverancer.  
+Når du opretter en leveranceplan, ændres typen af den oprindelige ordrelinje automatisk til **Ordrelinje med flere leveringer**. En linje af denne type kaldes en kommerciel linje og er markeret ved et ikon. Leveringslinjen er markeret ved et andet ikon. Hvis du ændrer et antal på en leverancelinje, opdateres den kommercielle linje til det samlede antal i leveranceplanen. Hvis der i en samhandelsaftale er defineret en slutrabat for ordren, sørger leveranceplanen for, at din ordre bliver berettiget til slutrabatten, selv når ordren opdeles i adskilte leverancer.  
 
 Ordrer, der har en leveranceplan, behandles i forhold til leverancelinjerne. Behandling omfatter bogføringen af følgesedler, produktkvitteringer og fakturering.  
 
@@ -53,5 +56,7 @@ Dokumentudskrifter af ordrer og tilbud, der har en leveranceplan, viser kun leve
 -   Gennemser listesider og rapporter
 
 Når du bekræfter salgstilbud, viser de oprettede salgsordrer hele leveranceplanen, også selvom ordrelinjerne har flere leverancer. Hele leveranceplanen vises derudover på alle større sider, som f.eks. salgsordrer, salgstilbud og indkøbsordrer.
+
+
 
 

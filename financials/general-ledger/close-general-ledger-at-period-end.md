@@ -1,6 +1,6 @@
 ---
 title: Lukke Finans ved periodeafslutning
-description: "Dette emne beskriver de opgaver, der udføres typisk, når du udfører en lukke periode til Finans."
+description: "I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Lukke Finans ved periodeafslutning
 
-Dette emne beskriver de opgaver, der udføres typisk, når du udfører en lukke periode til Finans. 
+[!include[banner](../includes/banner.md)]
 
-I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukningsprocesser forberede systemet på en ny periode. For at forberede systemet til et nyt år, skal du køre processen år end tæt. Hver organisation har forskellige processer og trin, der udføres i slutningen af en periode. Her er nogle valgfrie trin for slutter:
+
+I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans. 
+
+I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukningsprocesser forberede systemet på en ny periode. Når du skal forberede systemet på et nyt år, skal du køre årsafslutningsprocessen. Hver organisation har forskellige processer og trin, der udføres ved periodens udløb. Her er nogle valgfrie trin for periodeudløb:
 
 -   Udfør alle opgaverne for alle andre moduler, som f.eks. Debitor, Kreditor og Lager.
 -   Kontroller, at alle kladder bogføres.
@@ -39,9 +42,11 @@ I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukning
 -   Journaliser posteringer, og gennemse rapporten **Finanskladde**.
 -   Konsolider ved hjælp af et koncernselskab eller økonomisk rapportering.
 -   Generér regnskaber for periodeafslutningen ved hjælp af Økonomirapportering.
--   Angiv finansperioder til **På hold**, så der sker yderligere bogføring. Du kan også begrænse en periode til en bestemt brugergruppe, mens der pågår aktiviteter i periodeafslutningen, for at have bedre kontrol. Det er ikke en god ide at indstille perioder til **permanent lukket**, fordi du ikke kan genåbne en periode, der er blevet lukket.
+-   Angiv finansperioder til **På hold**, så der sker yderligere bogføring. Du kan også begrænse en periode til en bestemt brugergruppe, mens der pågår aktiviteter i periodeafslutningen, for at have bedre kontrol. Det er ikke en god ide at indstille perioder til **Permanent lukket**, fordi du ikke kan genåbne en periode, der er blevet lukket.
 
-Den finansielle periode Luk arbejdsområde kan bruges til at organisere og holde styr på de opgaver, der kræves til forskellige Periodeslutning processer. Henviser til den [økonomiske periode Luk arbejdsområde](financial-period-close-workspace.md) og [årets slutning tæt](Year-end-close.md) emner for at få yderligere oplysninger. 
+Den arbejdsområdet Afslutning på regnskabsperiode kan bruges til at organisere og spore de opgaver, der kræves til forskellige periodeafslutningsprocesser. Du kan finde flere oplysninger i emnerne [Arbejdsområde til afslutning på regnskabsperiode](financial-period-close-workspace.md) og [Årsafslutning](Year-end-close.md). 
+
+
 
 
 

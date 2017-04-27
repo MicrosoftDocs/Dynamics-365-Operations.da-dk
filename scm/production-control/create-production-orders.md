@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-production-orders"></a>Opret produktionsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 Når der oprettes en produktionsordre, oprettes en anmodning om at starte produktionen af en vare. Produktionsordren indeholder oplysninger om, hvad der skal produceres, det antal, der skal produceres, og den planlagte slutdato. Den indeholder også oplysninger om, hvilke materialer der skal bruges, og hvilken proces der skal følges for at producere varen.
 
 En produktionsordre gennemgår trin i produktionslevetiden. Når en ordre oprettes, får den statusangivelsen **Oprettet**. Når en ordre er afsluttet, får den statusangivelsen **Afsluttet**. En parameterindstilling i hver fase gør det muligt for en bruger at konfigurere de enkelte trin. Indstillingen kan konfigureres til en enkelt bruger eller til alle brugere.
@@ -40,6 +43,8 @@ En produktionsordre kan oprettes i følgende situationer:
 -   Oprettes af varedisponeringsudførelse baseret på materialebehov.
 -   Oprettes direkte fra en salgsordrelinje, eller når en produktionsordre på højere niveau oprettes og forkalkuleres (sporet forsyning).
 -   Oprettes manuelt.
+
+
 
 
 

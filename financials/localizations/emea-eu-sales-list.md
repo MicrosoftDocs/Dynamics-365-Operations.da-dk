@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 
 <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
@@ -64,11 +67,11 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 <tbody>
 <tr class="odd">
 <td><strong>Opsætning:</strong> Juridisk enhed</td>
-<td>Den primære adresse for den juridiske skal enhed være i et EU-medlemsland. På den <strong>juridiske enheder</strong> side (Klik på <strong>virksomhedsadministration</strong>&gt;<strong>virksomheder</strong>&gt;<strong>juridiske enheder</strong>), Vælg din juridiske enhed. I oversigtspanelet <strong>Adresser</strong> skal du oprette en adresse, vælge et land/område og andre adressekomponenterne og markere adressen som <strong>Primær</strong>. I oversigtspanelet <strong>Momsregistrering</strong> skal du i feltet <strong>SE-nummer</strong> angive firmaets SE-nummer.</td>
+<td>Den primære adresse for den juridiske skal enhed være i et EU-medlemsland. På siden <strong>Juridiske enheder</strong> (klik på <strong>Virksomhedsadministration</strong> &gt; <strong>Organisationer</strong> &gt; <strong>Juridiske enheder</strong>) skal du vælge din juridiske enhed. I oversigtspanelet <strong>Adresser</strong> skal du oprette en adresse, vælge et land/område og andre adressekomponenterne og markere adressen som <strong>Primær</strong>. I oversigtspanelet <strong>Momsregistrering</strong> skal du i feltet <strong>SE-nummer</strong> angive firmaets SE-nummer.</td>
 </tr>
 <tr class="even">
 <td><strong>Opsætning:</strong> Identifikationsparametre for SE-nummer</td>
-<td>Konfigurere moms undtaget identifikationsparametre på den <strong>land parametre</strong> side (Klik på <strong>skat</strong>&gt;<strong>Setup</strong>&gt;<strong>moms</strong>&gt;<strong>land parametre</strong>). For hvert land/område, hvor du har modparter, skal du oprette en post på siden og angive følgende oplysninger:
+<td>Konfigurer identifikationsparametre for SE-nummer på siden <strong>Lande/områdeparametre</strong> (klik på <strong>Moms</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Moms</strong> &gt; <strong>Lande/områdeparametre</strong>). For hvert land/område, hvor du har modparter, skal du oprette en post på siden og angive følgende oplysninger:
 <ul>
 <li><strong>Land/område</strong> – Vælg et land/område, der skal knyttes til en SE-nummeridentifikation.</li>
 <li><strong>Moms</strong> – Angiv SE-nummeridentifikationen (dvs. SE-nummerets nummerpræfiks) for det valgte land/område.</li>
@@ -77,7 +80,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 </tr>
 <tr class="odd">
 <td><strong>Opsætning: </strong>SE-numre</td>
-<td>Oprette se-numre til dine modparter på den <strong>se-numre</strong> side (Klik på <strong>skat</strong>&gt;<strong>Setup</strong>&gt;<strong>moms</strong>&gt;<strong>se-numre</strong>). Opret en post på siden for hvert SE-nummer, og angiv følgende oplysninger:
+<td>Opret SE-numre for dine modparter på siden <strong>SE-numre</strong> (klik på <strong>Moms</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Moms</strong> &gt; <strong>SE-numre</strong>). Opret en post på siden for hvert SE-nummer, og angiv følgende oplysninger:
 <ul>
 <li><strong>Land/område </strong>– Vælg landet/området for momsregistrering af modparten.</li>
 <li><strong>SE-nummer</strong> – Angiv modpartens SE-nummer.</li>
@@ -86,11 +89,11 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 </tr>
 <tr class="even">
 <td><strong>Opsætning: </strong>Momsregistrering af modparter</td>
-<td>Konfigurer registrering momsoplysninger for dine modparter på enten den <strong>alle kunder</strong> side (Klik på <strong>salg og marketing</strong>&gt;<strong>kunder</strong>&gt;<strong>alle kunder</strong>, vælge en kundepost, og klik derefter på <strong>indstillinger</strong>&gt;<strong>ændre visning</strong>&gt;<strong>detaljevisning</strong>) eller <strong>kreditorer</strong> side (Klik på <strong>indkøb og forsyning</strong>&gt;<strong>kreditorer</strong>&gt;<strong>leverandører</strong>, Vælg en kreditorpost, og klik derefter på <strong>indstillinger</strong>&gt;<strong>ændre visning</strong>&gt;<strong>detaljevisning</strong>). I oversigtspanelet <strong>Faktura og levering</strong> i feltet <strong>SE-nummer</strong> skal du vælge SE-nummer.</td>
+<td>Konfigurer momsregistreringsoplysninger for dine modparter enten på siden <strong>Alle debitorer</strong> (klik på <strong>Salg og marketing</strong> &gt; <strong>Debitorer</strong> &gt; <strong>Alle debitorer</strong>, vælg en kundepost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>) eller på siden <strong>Kreditorer</strong> (klik på <strong>Indkøb og forsyning</strong> &gt; <strong>Kreditorer</strong> &gt; <strong>Kreditorer</strong>, vælg en kreditorpost, og klik derefter på <strong>Indstillinger</strong> &gt; <strong>Skift visning</strong> &gt; <strong>Detaljeret visning</strong>). I oversigtspanelet <strong>Faktura og levering</strong> i feltet <strong>SE-nummer</strong> skal du vælge SE-nummer.</td>
 </tr>
 <tr class="odd">
 <td><strong>Opsætning: </strong>Moms</td>
-<td>Konfigurer momskoderne, der skal medtages på den <strong>EU-listesystemet</strong> rapport om den <strong>momskoder</strong> side (Klik på <strong>skat</strong>&gt;<strong>indirekte skatter</strong>&gt;<strong>moms</strong>&gt;<strong>momskoder</strong>). I oversigtspanelet <strong>Rapportopsætning</strong> skal du fjerne markeringen i afkrydsningsfeltet <strong>Udelukket </strong>for hver momskode, der skal medtages i rapporten. Definere parametre for moms for varer i den <strong>vare momsgrupper</strong> side (Klik på <strong>skat</strong>&gt;<strong>indirekte skatter</strong>&gt;<strong>moms</strong>&gt;<strong>vare momsgrupper</strong>). Vælg en værdi i feltet <strong>Rapporteringstype</strong> for hver varemomsgruppe. Den værdi, du vælger, bestemmer den ESL-beløbskolonne, som linjebeløbet skal medtages i.
+<td>Konfigurer momskoderne, der skal medtages i rapporten <strong>EU-listesystemet</strong> på siden <strong>Momskoder</strong> (klik på <strong>Moms</strong> &gt; <strong>Indirekte skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>). I oversigtspanelet <strong>Rapportopsætning</strong> skal du fjerne markeringen i afkrydsningsfeltet <strong>Udelukket </strong>for hver momskode, der skal medtages i rapporten. Konfigurer momsparametre for varer på siden <strong>Varemomsgrupper</strong> (klik på <strong>Moms</strong> &gt; <strong>Indirekte skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Varemomsgrupper</strong>). Vælg en værdi i feltet <strong>Rapporteringstype</strong> for hver varemomsgruppe. Den værdi, du vælger, bestemmer den ESL-beløbskolonne, som linjebeløbet skal medtages i.
 <ul>
 <li><strong>Tom</strong> – Linjebeløbet medtages i kolonnen <strong>Værdi for ikke-tildelt</strong>.</li>
 <li><strong>Vare</strong> – Linjebeløbet medtages i kolonnen <strong>Værdi for varer</strong> .</li>
@@ -104,7 +107,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 </tr>
 <tr class="odd">
 <td><strong>Opsætning: </strong>Generelle parametre</td>
-<td>Opsætning af ESL rapportering parametre på den <strong>Udenrigshandelsparametre</strong> side (Klik på <strong>skat</strong>&gt;<strong>installation</strong>&gt;<strong>Udenrigshandel</strong>&gt;<strong>Udenrigshandelsparametre</strong>). Angiv følgende parametre:
+<td>Konfigurer ESL-rapporteringsparametre på siden <strong>Udenrigshandelsparametre</strong> (klik på <strong>Moms</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Udenrigshandel</strong> &gt; <strong>Udenrigshandelsparametre</strong>). Angiv følgende parametre:
 <ul>
 <li>Fanen <strong>EU-listesystem</strong>:
 <ul>
@@ -147,7 +150,7 @@ Transaktioner af følgende typer kan anses for handel inden for Fællesskabet:
 -   Projektfakturaer
 -   Kreditorfakturaer
 
-En transaktion anses en transaktion inden for fællesskabet, hvis leveringsadressen for transaktionen er i en medlemsstat i EU. For disse lande/områder bør der være en post på fanen **Lande/områdeparametre** på siden **Udenrigshandelsparametre**, og værdien **Lande-/områdetype** skal indstilles til **EU**. Handel inden for fællesskabet er markeret i feltet **Listekode**. Du kan også bruge dette felt til at adskille generelle handler inden for fælleskabet fra trekantshandelstransaktioner. Du kan indsamle oplysninger om handel inden for Fællesskabet på den **EU-listesystemet** side (Klik på **skat**&gt;**erklæringer**&gt;**Udenrigshandel**&gt;**EU-listesystemet**) ved hjælp af den **overførsel af** funktion. Denne funktion giver mulighed for at medtage transaktioner, der har beløb af forskellige rapporteringstyper (dvs., varer eller tjenesteydelser) i henhold til de varemomsgrupper, der er angivet på transaktionslinjer. Du kan også anvende andre filtre til at definere de transaktioner, der skal medtages. Funktionen **Overførsel** opretter en post på siden **EU-listesystemet** for hver transaktion inden for fællesskabet, der er inkluderet, og angiver en modparts kontonummer, et land/område, et SE-nummer, et fakturanummer og dato og det samlede beløb af linjer pr. rapporteringstype. Den kopierer også værdien **Listekode** fra transaktionen. Du kan manuelt ændre listekoden for en transaktion på siden **EU-listesystemet**. Funktionen **Overførsel** opretter poster, hvor værdien **Rapporteringsstatus** er angivet til **Medtaget**. Du kan kontrollere de oplysninger, der er indsamlet på siden **EU-listesystemet **ved hjælp af funktionen **Valider**.
+En transaktion anses en transaktion inden for fællesskabet, hvis leveringsadressen for transaktionen er i en medlemsstat i EU. For disse lande/områder bør der være en post på fanen **Lande/områdeparametre** på siden **Udenrigshandelsparametre**, og værdien **Lande-/områdetype** skal indstilles til **EU**. Handel inden for fællesskabet er markeret i feltet **Listekode**. Du kan også bruge dette felt til at adskille generelle handler inden for fælleskabet fra trekantshandelstransaktioner. Du kan indsamle oplysninger om handel inden for fællesskabet på siden **EU-listesystemet** (klik på **Moms** &gt; **Erklæringer** &gt; **Udenrigshandel** &gt; **EU-listesystemet**) ved hjælp af funktionen **Overførsel**. Denne funktion giver mulighed for at medtage transaktioner, der har beløb af forskellige rapporteringstyper (dvs., varer eller tjenesteydelser) i henhold til de varemomsgrupper, der er angivet på transaktionslinjer. Du kan også anvende andre filtre til at definere de transaktioner, der skal medtages. Funktionen **Overførsel** opretter en post på siden **EU-listesystemet** for hver transaktion inden for fællesskabet, der er inkluderet, og angiver en modparts kontonummer, et land/område, et SE-nummer, et fakturanummer og dato og det samlede beløb af linjer pr. rapporteringstype. Den kopierer også værdien **Listekode** fra transaktionen. Du kan manuelt ændre listekoden for en transaktion på siden **EU-listesystemet**. Funktionen **Overførsel** opretter poster, hvor værdien **Rapporteringsstatus** er angivet til **Medtaget**. Du kan kontrollere de oplysninger, der er indsamlet på siden **EU-listesystemet **ved hjælp af funktionen **Valider**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generere EU-listesystemet-rapporten
 
@@ -156,5 +159,7 @@ Du kan generere en **EU-listesystemet**-rapport ved hjælp af funktionen **Rappo
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Lukke EU-listesystemets rapporteringsperiode
 
 Når du har fuldført rapporteringsprocessen for en bestemt periode (f.eks. når skattemyndighederne har accepteret **EU-listesystemet** -rapporten), kan du markere ESL-poster, der er medtaget i rapporten for perioden, ved at angive **Rapporteringsstatus**-værdien til **Lukket**. Du kan angive denne status ved at bruge funktionen **Marker som lukket **på siden **EU-listesystemet **. Hvis du tilbagefører lukningen af perioden, kan du markere ESL-poster ved at angive **Rapporteringsstatus**-værdien til **Medtaget**. Disse poster kan derefter medtages i en **EU-listesystemet**-rapport igen. Du kan angive denne status ved at bruge funktionen **Marker som** **medtages **på siden **EU-listesystemet**.
+
+
 
 

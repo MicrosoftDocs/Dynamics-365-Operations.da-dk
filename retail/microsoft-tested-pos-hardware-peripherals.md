@@ -1,5 +1,5 @@
 ---
-title: POS hardwareenheder
+title: Eksterne POS-hardwareenheder
 description: "Retail Modern POS og Cloud POS kan udnytte en lang række POS-hardwareenheder med flere grænseflader og installationsindstillinger for at få en detailhandlers forskellige forretningsscenarier."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POS hardwareenheder
+# <a name="pos-hardware-peripherals"></a>Eksterne POS-hardwareenheder
+
+[!include[banner](includes/banner.md)]
+
 
 Retail Modern POS og Cloud POS kan udnytte en lang række POS-hardwareenheder med flere grænseflader og installationsindstillinger for at få en detailhandlers forskellige forretningsscenarier. 
 
@@ -63,6 +66,8 @@ Følgende liste indeholder enhedsmodeller i hver klasse, der er blevet testet in
 
 -   Barcode – Honeywell 1900, HP LS2208
 -   MSR – Magtek PN - 21073075
+
+
 
 
 

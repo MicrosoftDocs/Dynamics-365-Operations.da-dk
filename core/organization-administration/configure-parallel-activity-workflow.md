@@ -32,7 +32,7 @@ En parallel aktivitet består af grene i en arbejdsgang, der kører samtidigt.
 
 ## <a name="name-a-parallel-activity"></a>Navnet på en parallel aktivitet
 Udfør følgende trin for at angive et navn på den parallelle aktivitet.
-1.  Højreklik på den parallelle aktivitet, og klik derefter på **egenskaber** at åbne den **egenskaber** form.
+1.  Højreklik på den parallelle aktivitet, og klik derefter på **Egenskaber** for at åbne formen **Egenskaber**.
 2.  Klik på **Grundlæggende indstillinger** i venstre rude.
 3.  Angiv et entydigt navn på den parallelle aktivitet i feltet **Nanv**.
 4.  Klik på **Luk**.

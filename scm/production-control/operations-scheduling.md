@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling"></a>Grovplanlægning
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne indeholder en beskrivelse af grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 
 Du kan planlægge produktion på driftsniveau og jobniveau. Modsat finplanlægning udfolder grovplanlægning ikke operationerne til produktionsruten i job. Hvis du vil medtage flere detaljer i planlægningen, f.eks oplysninger om den aktuelle kapacitet, kan du køre finplanlægning efter grovplanlægning. Du kan også nøjes med at køre finplanlægning. Finplanlægning bruges typisk til at planlægge individuelle job i produktionen til en aktuel eller kortsigtet tidsramme.
@@ -76,5 +79,7 @@ Hvis du arbejder med materialebegrænsning, afhænger planlægningen også af ti
 --------
 
 [Indstillinger for grovplanlægning](operation-scheduling-options.md)
+
+
 
 

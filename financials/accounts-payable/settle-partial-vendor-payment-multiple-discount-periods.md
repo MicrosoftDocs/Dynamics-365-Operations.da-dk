@@ -1,5 +1,5 @@
 ---
-title: Udligne en delvis kreditorbetaling, der har flere rabatperioder
+title: Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
 description: "Denne artikel gennemgår et scenarie, hvor der foretages flere delbetalinger for en kreditor, der tilbyder flere kasserabatter."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Udligne en delvis kreditorbetaling, der har flere rabatperioder
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel gennemgår et scenarie, hvor der foretages flere delbetalinger for en kreditor, der tilbyder flere kasserabatter. 
 
 Kreditor 3054 tilbyder Fabrikam en kasserabat på 2 %, hvis en faktura betales inden for fem dage, og en kasserabat på 1 %, hvis fakturaen betales inden for 14 dage.
 
 ## <a name="invoice"></a>Faktura
-April opretter en faktura på 1.000,00 for Kreditor 3054 d. 28. April kan se denne transaktion på siden **Kreditorposteringer**.
+Den 28. juni opretter April en faktura på 1.000,00 til kreditor 3054. April kan se denne transaktion på siden **Kreditorposteringer**.
 
 | Bilag   | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ Følgende datoer og beløb for kasserabatten er tilgængelige for denne faktura.
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="payment-on-july-2"></a>Betaling d. 2. juli
-D. 2 vil April betale 300,00 mod denne faktura. Hun opretter en engangs betaling ved hjælp af den **betalingskladde** side i modulet Kreditor. Hun tilføjer en linje for Kreditor 3054 og indtaster et beløb til betaling på **300,00**. April åbner derefter siden **Udlign posteringer**, så hun kan markere den faktura, der skal udlignes. Hun opdaterer værdien i feltet **Beløb, der skal udlignes** til **300,00** og bemærker, at værdien i feltet **Kasserabatbeløb, der skal medtages** er ændret til **6,12**. Da denne betaling sker i første rabatperiode, anvendes der en rabat på 2 procent.
+D. 2. juli vil April betale 300,00 af denne faktura. Hun opretter en engangsbetaling ved hjælp af siden **Betalingskladde** i Kreditor. Hun tilføjer en linje for Kreditor 3054 og indtaster et beløb til betaling på **300,00**. April åbner derefter siden **Udlign posteringer**, så hun kan markere den faktura, der skal udlignes. Hun opdaterer værdien i feltet **Beløb, der skal udlignes** til **300,00** og bemærker, at værdien i feltet **Kasserabatbeløb, der skal medtages** er ændret til **6,12**. Da denne betaling sker i første rabatperiode, anvendes der en rabat på 2 procent.
 
 | Foretag afmærkning | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ Den 20. juli opretter April en endelig betaling på 200,00. Der medtages ingen k
 | APP-10061  | 12-7-2015 |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10061 | 12-7-2015 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 7/20/2015 |         | 200,00                               |                                       | 0,00    | USD      |
+
+
 
 
 

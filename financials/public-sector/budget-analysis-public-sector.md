@@ -29,11 +29,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
 
 I dette emne beskrives de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
 
-Før du læser dette emne, skal du også læse [budgettering i den offentlige sektor.](budgeting-public-sector.md). 
+Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor.](budgeting-public-sector.md). 
 
 Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
 
@@ -46,7 +49,7 @@ Du kan også bruge siden **Budgetanalyse** til at vælge en økonomisk dimension
 -   Økonomiske dimensioner
 
 > [!NOTE] 
-> Du kan oprette økonomiske dimensioner på den **økonomiske dimensioner** side. Du kan angive datointervallet for transaktioner, der er medtaget, på siden **Datointervaller** i Finans.
+> På siden **Økonomiske dimensioner** kan du oprette de økonomiske dimensioner. Du kan angive datointervallet for transaktioner, der er medtaget, på siden **Datointervaller** i Finans.
 
 ## <a name="what-transaction-details-are-available-on-the-budget-analysis-page"></a>Hvilke transaktionsdetaljer er tilgængelige på siden Budgetanalyse?
 Du kan vælge et element i gitteret og rulle ned for at se detaljer om følgende transaktioner:
@@ -75,7 +78,7 @@ Følgende tabel beskriver forskellene mellem disse sider.
 | Medtager kun data fra udgiftskonti.                                                                               | Medtager data fra både indtægts- og udgiftskonti.                                       |
 
 > [!NOTE] 
-> Brug, hvis du vil tilgængelig eller resterende budgetbeløb til at medtage posteringer i udkastet til den **statistik for budgetstyring** side. Siden **Budgetanalyse** viser kun bogførte posteringer.
+> Hvis du ønsker, at de tilgængelige eller resterende budgetbeløb skal medtage kladdeposteringer, skal du bruge siden **Statistik for budgetstyring**. Siden **Budgetanalyse** viser kun bogførte posteringer.
 
 ## <a name="can-i-export-the-budget-analysis-results-to-microsoft-excel"></a>Kan jeg eksportere budgetanalyseresultaterne til Microsoft Excel?
 Ja, du kan eksportere resultaterne af budgetanalysen. På siden **Budgetanalyse** skal du trykke på Ctrl + Skift + E.
@@ -102,6 +105,8 @@ Hvis gitrene er tomme på siden **Budgetanalyse**, kan du prøve følgende handl
 
 ## <a name="how-do-i-see-updated-numbers-in-the-columns-when-i-change-the-dimension-set-dates-posting-layers-and-other-settings"></a>Hvordan kan jeg se opdaterede tal i kolonnerne, når jeg ændrer dimensionssæt, datoer, posteringslag og andre indstillinger?
 Når du har ændret indstillingerne øverst på siden, skal du klikke på **Opdater totaler** for at se resultaterne af din forespørgsel.
+
+
 
 
 

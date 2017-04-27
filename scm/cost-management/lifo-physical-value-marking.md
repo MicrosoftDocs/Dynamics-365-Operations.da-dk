@@ -55,7 +55,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk op
 -   Lagertransaktioner vises som lodrette pile.
 -   Lagertilgange vises som lodrette pile over tidslinjen.
 -   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen angives i formatet Quantity@Unitpris.
+-   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unit pris.
 -   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 -   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 -   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
@@ -64,7 +64,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk op
 -   Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="lifo-with-the-include-physical-value-option"></a>LIFO med indstillingen Medtag fysisk værdi
-Hvis de **Medtag fysisk værdi** er markeret for en vare på den **serviceartikelgrupper model** side, bruger systemet både fysiske og økonomiske tilgangsposteringer til beregning af den løbende gennemsnitskostpris. Hvis det er relevant, udfører systemet også justeringer i den fysisk opdaterede afgangstransaktion. Når afkrydsningsfeltet **Medtag fysisk værdi** ikke er markeret, vil lagerlukning med lagermodellen LIFO kun gennemføre udligninger af økonomisk opdaterede posteringer. I følgende illustration vises disse posteringer:
+Hvis afkrydsningsfeltet **Medtag fysisk værdi** er markeret for en vare på siden **Varemodelgrupper**, bruger systemet både fysiske og økonomiske tilgangsposteringer til beregning af den løbende gennemsnitskostpris. Hvis det er relevant, udfører systemet også justeringer i den fysisk opdaterede afgangstransaktion. Når afkrydsningsfeltet **Medtag fysisk værdi** ikke er markeret, vil lagerlukning med lagermodellen LIFO kun gennemføre udligninger af økonomisk opdaterede posteringer. I følgende illustration vises disse posteringer:
 
 -   1a. Fysisk lagertilgang for et antal på 1 til en kostpris a kr. 10,00 pr. stk.
 -   1b. Økonomisk lagertilgang for et antal på 1 til en kostpris a kr. 10,00 pr. stk.
@@ -78,12 +78,12 @@ Hvis de **Medtag fysisk værdi** er markeret for en vare på den **serviceartike
 -   6a. Fysisk lagerafgang for et antal på 1 til en kostpris a kr. 21,25 pr. stk.
 -   7. Lagerlukningen udføres. På baggrund af LIFO-metoden reguleres eller udlignes den seneste afgangspostering mod den senest opdaterede tilgang.
 
-Posteringen i 6a reguleres i forhold til tilgangspostering i 4b. Systemet udligner ikke disse posteringer, fordi modtagelsen er opdateret fysisk, men ikke økonomisk. Der bogføres i stedet kun en regulering på kr. 8,75 for den fysiske afgangspostering. Posteringen i 5b reguleres i forhold til fysisk tilgangspostering i 3a. Disse posteringer udlignes ikke, da de begge ikke opdateres økonomisk. Der sker i stedet kun en regulering på kr. - 3,75 for denne afgangspostering. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 20,00. Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. ![LIFO med Medtag fysisk værdi](./media/lifowithincludephysicalvalue.gif) **Nøgle til diagrammet**
+Posteringen i 6a reguleres i forhold til tilgangspostering i 4b. Systemet udligner ikke disse posteringer, da tilgangen kun opdateres fysisk, men ikke økonomisk. Der bogføres i stedet kun en regulering på kr. 8,75 for den fysiske afgangspostering. Posteringen i 5b reguleres i forhold til fysisk tilgangspostering i 3a. Disse posteringer udlignes ikke, da de begge ikke opdateres økonomisk. Der sker i stedet kun en regulering på kr. - 3,75 for denne afgangspostering. Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og fysisk opdaterede transaktioner på kr. 20,00. Følgende illustration viser effekten af LIFO-lagermodellen på denne række posteringer, når indstillingen **Medtag fysisk værdi** bruges. ![LIFO med Medtag fysisk værdi](./media/lifowithincludephysicalvalue.gif) **Nøgle til diagrammet**
 
 -   Lagertransaktioner vises som lodrette pile.
 -   Lagertilgange vises som lodrette pile over tidslinjen.
 -   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen angives i formatet Quantity@Unitpris.
+-   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unit pris.
 -   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 -   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 -   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
@@ -92,7 +92,7 @@ Posteringen i 6a reguleres i forhold til tilgangspostering i 4b. Systemet udlign
 -   Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="lifo-with-marking"></a>LIFO med afmærkning
-Afmærkning er en proces, hvor du kan tilknytte – eller afmærke – en afgangspostering til en tilgangspostering. Afmærkning kan ske enten før eller efter, at en postering er bogført. Du kan bruge afmærkning, når du vil være sikker på den nøjagtige kostpris for lageret, når posteringen bogføres eller når lagerlukningen udføres. Antag f.eks., at kundeserviceafdelingen har modtaget en hasteordre fra en vigtig kunde. Da denne ordre er en hasteordre, skal du betale mere for denne vare for at kunne imødekomme kundens efterspørgsel. Du skal være sikker på, at kostprisen på denne lagervare afspejles i dækningsbidraget eller i vareforbruget for denne salgsordrefaktura. Når indkøbsordren bogføres, modtages lagervarerne til et kostpris på kr. 120,00. Hvis dette salgsordredokument afmærkes til indkøbsordren, før følgesedlen eller fakturaen bogføres, vil vareforbruget være kr. 120,00 og ikke den aktuelle løbende gennemsnitskostpris for varen. Hvis følgesedlen eller fakturaen for salgsordren bogføres, før afmærkningen finder sted, bogføres vareforbruget til den løbende gennemsnitskostpris. Før lagerlukningen udføres, kan disse to transaktioner afmærkes til hinanden. Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. Du kan gøre dette fra en salgsordrelinje på siden **Oplysninger om salgsordre**. Du kan få vist de åbne tilgangsposteringer på siden **Afmærkning**. Du kan også afmærke en afgangspostering til en tilgang, efter posteringen bogføres. Du kan matche eller afmærke en afgangspostering for en åben tilgangspostering for en lagerført vare fra en bogført lagerreguleringskladde. I følgende illustration vises disse posteringer:
+Afmærkning er en proces, som giver dig mulighed for at tilknytte – eller afmærke – en afgangspostering til en tilgangspostering. Afmærkning kan ske enten før eller efter, at en postering er bogført. Du kan bruge afmærkning, når du vil være sikker på den nøjagtige kostpris for lageret, når posteringen bogføres eller når lagerlukningen udføres. Antag f.eks., at kundeserviceafdelingen har modtaget en hasteordre fra en vigtig kunde. Da denne ordre er en hasteordre, skal du betale mere for denne vare for at kunne imødekomme kundens efterspørgsel. Du skal være sikker på, at kostprisen på denne lagervare afspejles i dækningsbidraget eller i vareforbruget for denne salgsordrefaktura. Når indkøbsordren bogføres, modtages lagervarerne til et kostpris på kr. 120,00. Hvis dette salgsordredokument afmærkes til indkøbsordren, før følgesedlen eller fakturaen bogføres, vil vareforbruget være kr. 120,00 og ikke den aktuelle løbende gennemsnitskostpris for varen. Hvis følgesedlen eller fakturaen for salgsordren bogføres, før afmærkningen finder sted, bogføres vareforbruget til den løbende gennemsnitskostpris. Før lagerlukningen udføres, kan disse to transaktioner afmærkes til hinanden. Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. Du kan gøre dette fra en salgsordrelinje på siden **Oplysninger om salgsordre**. Du kan få vist de åbne tilgangsposteringer på siden **Afmærkning**. Du kan også afmærke en afgangspostering til en tilgang, efter posteringen bogføres. Du kan matche eller afmærke en afgangspostering for en åben tilgangspostering for en lagerført vare fra en bogført lagerreguleringskladde. I følgende illustration vises disse posteringer:
 
 -   1a. Fysisk lagertilgang for et antal på 1 til en kostpris a kr. 10,00 pr. stk.
 -   1b. Økonomisk lagertilgang for et antal på 1 til en kostpris a kr. 10,00 pr. stk.
@@ -111,7 +111,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 -   Lagertransaktioner vises som lodrette pile.
 -   Lagertilgange vises som lodrette pile over tidslinjen.
 -   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen angives i formatet Quantity@Unitpris.
+-   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unit pris.
 -   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 -   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 -   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.

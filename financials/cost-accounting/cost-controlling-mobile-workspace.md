@@ -1,6 +1,6 @@
 ---
-title: "Omkostning styrende mobile arbejdsområde for Microsoft Dynamics 365 for operationer app"
-description: "Med omkostningerne kan styring af mobile arbejdsområde, omkostninger center ledere se center omkostningspræstationer når som helst og hvor som helst."
+title: "Arbejdsområde til omkostningsstyring på mobilenheder i Microsoft Dynamics 365 for Operations-app"
+description: "Med arbejdsområdet til omkostningsstyring på mobilenheder kan ledere af bærere se bærerydeevnen når som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-01-12 16 - 53 - 04
@@ -24,88 +24,88 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-controlling-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Omkostning styrende mobile arbejdsområde for Microsoft Dynamics 365 for operationer app
+# <a name="cost-controlling-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Arbejdsområde til omkostningsstyring på mobilenheder i Microsoft Dynamics 365 for Operations-app
 
-Med omkostningerne kan styring af mobile arbejdsområde, omkostninger center ledere se center omkostningspræstationer når som helst og hvor som helst. 
+Med arbejdsområdet til omkostningsstyring på mobilenheder kan ledere af bærere se bærerydeevnen når som helst og hvor som helst. 
 
 <a name="prerequisites"></a>Forudsætninger
 -------------
 
 | Forudsætning                                                         | Betegnelse                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Læs om Microsoft Dynamics-365 for operationer mobilplatform | [Dynamics 365 for operationer mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 til operationer                                          | Sørg for, at du bruger et miljø, hvor Microsoft Dynamics 365 for operationer version 1611 opdager og Microsoft Dynamics for operationer platform update 3 (November 2016). |
-| Hotfix KB 3215650                                                    | Installere hotfixet, hvis du vil aktivere de arbejdsområder, der findes i Microsoft Dynamics 365 for operationer.                                                                       |
-| Mobile enhed, der har den Dynamics 365 for operationer app installeret | Hent den Dynamics 365 for operationer app fra din mobile app butik.                                                                                                      |
+| Læs om Microsoft Dynamics 365 for Operations-mobilplatformen | [Dynamics 365 for Operations-mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Sørg for, at du bruger et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og opdatering 3 til Microsoft Dynamics for Operations platformen (november 2016). |
+| Hotfix KB 3215650                                                    | Installer hotfixet, hvis du vil aktivere de arbejdsområder, der findes i Microsoft Dynamics 365 for Operations.                                                                       |
+| Mobileenhed, hvor Dynamics 365 for Operations-appen er installeret | Hent og installer Dynamics 365 for Operations-appen fra din mobilapp-butik.                                                                                                      |
 
 ## <a name="introduction"></a>Introduktion
-De omkostninger, der styrer mobile arbejdsområde giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan finde frem til status for individuelle kostelementer.
+Arbejdsområdet til omkostningsstyring på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer.
 
 ### <a name="example"></a>Eksempel
 
-En medarbejder modtager en invitation til en international konference. Organisationen har til dækning af rejseudgifter. Medarbejderen spørger hans Manager, hvis han kan deltage i konferencen. Manager åbnes hurtigt omkostningerne styring af mobile arbejdsområde på sin mobiltelefon til at se, om han har budget for medarbejderen til at deltage i konferencen.
+En medarbejder modtager en invitation til en international konference. Organisationen skal dække alle rejseudgifter. Medarbejderen spørger sin chef, om han må deltage i konferencen. Chefen åbnes hurtigt arbejdsområde til omkostningsstyring på sin mobiltelefon for at se, om han har budget til, at medarbejderen kan deltage i konferencen.
 
 ### <a name="data-security"></a>Datasikkerhed
 
-Dataene i de omkostninger, der styrer arbejdsområde er sikret med brugerlegitimationsoplysninger. En omkostning center manager er kun tilladt at se data for eget bærer. Sikkerheden på access er administreret i modulet Omkostningsregnskab. Omkostninger revisorer definere omkostningen styre konfiguration af mobile arbejdsområde i modulet Omkostningsregnskab. Når arbejdsområdet er udgivet på Microsoft Dynamics 365 for operationer app, er tilgængelige i Dynamics-365 for operationer mobile app. Dette sikrer, at alle omkostninger center ledere i organisationen se data i samme format.
+Dataene i arbejdsområdet til omkostningsstyring er sikret med brugerlegitimationsoplysninger. En bærerleder kan kun se data for egen bærer. Sikkerheden på adgangsniveau administreres i modulet Omkostningsregnskab. Bogholdere definerer konfiguration af arbejdsområdet til omkostningsstyring i modulet Omkostningsregnskab. Når arbejdsområdet er publiceret på Microsoft Dynamics 365 for Operations-appen, er det tilgængeligt i Dynamics 365 for Operations-mobilappen. Dette sikrer, at alle bærerledere i organisationen får vist data i samme format.
 
 ### <a name="actions-views-and-links"></a>Handlinger, visninger og links
 
-De omkostninger, der styrer mobile arbejdsområde for Dynamics 365 for operationer app giver følgende handlinger, visninger og links:
+Arbejdsområdet til omkostningsstyring på mobilenheder til Dynamics 365 for Operations-appen indeholder følgende handlinger, visninger og links:
 
 -   Handlinger 
-    -   Vælg **konfigurationer** til at vælge et layout.
-    -   Vælg **omkostningsobjekter** til at plukke omkostningssteder, som du vil filtrere data. **Bemærk:** listen vises i henhold til den adgang, der er givet i modulet Omkostningsregnskab.
+    -   Vælg **Konfigurationer** for at vælge et layout.
+    -   Vælg **Omkostningsobjekter** for at plukke de bærere, som du vil filtrere data. **Bemærk!** Listen vises i henhold til den adgang, der er givet i modulet Omkostningsregnskab.
 
 <!-- -->
 
--   Baseret på, hvad der er valgt **handlinger** og hvad er konfigureret i modulet Omkostningsregnskab, kan du se følgende oplysninger i kortene. Bemærk, at beløbet vises i samme format: faktisk, Budget, afvigelsen og afvigelsen %. 
-    -   Faktisk vs. Budget (aktuelle periode)
-    -   Faktisk vs. budget for opdateret (aktuelle periode)
-    -   Faktisk vs. Budget (forrige periode)
-    -   Faktisk vs. budget for opdateret (forrige periode)
-    -   Faktisk vs. Budget (år til dato)
-    -   Faktisk vs. budget for opdateret (år til dato)
+-   Baseret på, hvad der er valgt **Handlinger**, og hvad er konfigureret i modulet Omkostningsregnskab, kan du se følgende oplysninger i kortene. Bemærk, at beløbet vises i samme format: Faktisk, Budget, Afvigelse og Afvigelse i %. 
+    -   Faktisk vs. budget (aktuel periode)
+    -   Faktisk vs. revideret budget (aktuel periode)
+    -   Faktisk vs. budget (forrige periode)
+    -   Faktisk vs. revideret budget (forrige periode)
+    -   Faktisk vs. budget (år til dato)
+    -   Faktisk vs. revideret budget (år til dato)
 
 <!-- -->
 
 -   Links
-    -   Detaljer for den aktuelle periode.
+    -   Detaljer for aktuel periode.
     -   Detaljer for forrige periode.
     -   Detaljer for år til dato.
 
-Når du vælger et af links, vises et kort pr. omkostningselement. Beløbet i feltet kort vises i følgende format: faktisk, Budget, Budget afvigelse, Afvigelsespct Budget, opdateret budget, opdateret budget afvigelse og opdateret budget afvigelse i %.  [![styring af omkostninger](./media/cost-controlling.png)](./media/cost-controlling.png)
+Når du vælger et link, vises et kort pr. omkostningselement. Beløbet i feltet Kort vises i følgende format: faktisk, budget, budgetafvigelse, budgetafvigelse i %, revideret budget, revideret budgetafvigelse og revideret budgetafvigelse i %.  [![cost-controlling](./media/cost-controlling.png)](./media/cost-controlling.png)
 
 ## <a name="get-started"></a>Introduktion
-Følg disse trin for at komme i gang ved hjælp af omkostningen kontrol mobil-app'en på din mobilenhed.
+Følg disse trin for at komme i gang med at bruge din mobilenheds arbejdsområde til omkostningsstyring.
 
-1.  Din mobile app store, Hent og Installer Microsoft Dynamics-365 for operationer app.
-2.  Du kan starte programmet på din enhed.
-3.  Angiv URL-adressen for din Dynamics 365.
-4.  Angiv firma til at logge på. F.eks. **USMF**.
-5.  Første gang du logger på, bliver du bedt om brugernavn og adgangskode til din Microsoft Dynamics-365 for operationer konto. Angiv dine legitimationsoplysninger. Når du logger på, kan du se de arbejdsområder, der er tilgængelige for din virksomhed.
+1.  I din mobilappbutik skal du hente og installere Microsoft Dynamics 365 for Operations-appen.
+2.  Start appen på din enhed.
+3.  Angiv URL-adressen til din Dynamics 365.
+4.  Angiv det firma, du vil logge på. Du kan f.eks. skrive **USMF**.
+5.  Første gang du logger på, bliver du bedt om brugernavn og adgangskode til din Microsoft Dynamics 365 for Operations-konto. Angiv dine legitimationsoplysninger. Når du har logget på, kan du se de arbejdsområder, der er tilgængelige for din virksomhed.
 
-For at få vist arbejdsområder på din mobile app, skal du først udgive de ønskede arbejdsområder til Dynamics-365 for operationer app.
+For at få vist arbejdsområder på din mobilapp skal du først publicere de ønskede arbejdsområder til Dynamics 365 for Operations-appen.
 
-1.  Start Dynamics 365 for operationer.
-2.  Gå til **systemadministration**&gt;**Setup**&gt;**systemparametre**.
-3.  Vælg **Manage mobile app**.
-4.  Vælg arbejdsområdet ** omkostninger styre ** til at udgive til mobil platform.
-5.  Vælg **udgive arbejdsområde**.
-6.  Opdater din enhed for at se de udgivne arbejdsområder.
+1.  Start Dynamics 365 for Operations.
+2.  Gå til **Systemadministration** &gt; **Opsætning** &gt; **systemparametre**.
+3.  Vælg **Administrer mobilapp**.
+4.  Vælg arbejdsområdet **Omkostningsstyring** for at publicere til mobilplatformen.
+5.  Vælg **Publicer arbejdsområde**.
+6.  Opdater din enhed for at se de publicerede arbejdsområder.
 
-## <a name="view-the-performance-of-your-cost-center"></a>Få vist ydeevnen for dit bærer
-1.  På din mobilenhed, skal du vælge den **omkostninger, styring af** arbejdsområde.
-2.  Vælg **omkostninger, styring af objektet**.
-3.  Klik på **handlinger**.
-4.  Klik på **Select configuration** til at vælge en omkostning, styre layout.
-5.  Click **Done**.
-6.  Klik på **handlinger**.
-7.  Klik på **Vælg omkostningsobjekt** til at vælge de omkostningssteder, som du har fået adgang.
-8.  Click **Done**.
-9.  Få vist den generelle ydeevne af din bærer.
-10. Klik på **detaljer for den aktuelle periode**.
-11. Få vist ydeevnen for individuelle kostelementer.
+## <a name="view-the-performance-of-your-cost-center"></a>Få vist ydeevnen for din bærer
+1.  På din mobilenhed skal du vælge arbejdsområdet **Omkostningsstyring**.
+2.  Vælg **Styring af omkostningsobjekt**.
+3.  Klik på **Handlinger**.
+4.  Klik på **Vælg variant** for at vælge et omkostningsstyringslayout.
+5.  Klik på **Udført**.
+6.  Klik på **Handlinger**.
+7.  Klik på **Vælg omkostningsobjekt** for at vælge de bærere, som du har fået adgang til.
+8.  Klik på **Udført**.
+9.  Se den samlede ydeevne for din bærer.
+10. Klik på **Detaljer for aktuel periode**.
+11. Se ydeevnen for individuelle omkostningselementer.
 12. Du kan også søge efter bestemte omkostningselementer.
 
 

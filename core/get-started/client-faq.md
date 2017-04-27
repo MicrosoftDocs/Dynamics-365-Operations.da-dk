@@ -1,6 +1,6 @@
 ---
-title: "Dynamics 365 for operationer klienten ofte stillede spørgsmål"
-description: "Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics-365 for klient operationer."
+title: "Ofte stillede spørgsmål om Dynamics 365 for Operations-klient"
+description: "Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Operations-klienten."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,33 +24,38 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-client-faq"></a>Dynamics 365 for operationer klienten ofte stillede spørgsmål
+# <a name="dynamics-365-for-operations-client-faq"></a>Ofte stillede spørgsmål om Dynamics 365 for Operations-klient
 
-Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics-365 for klient operationer.
+[!include[banner](../includes/banner.md)]
 
-<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>Hvorfor ikke symboler indlæses, når jeg bruger Dynamics 365 for operationer?
+
+Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Operations-klienten.
+
+<a name="why-arent-symbols-loaded-when-i-use-dynamics-365-for-operations"></a>Hvorfor indlæses symboler ikke, når jeg bruger Dynamics 365 for Operations?
 -----------------------------------------------------------------
 
 Sikkerhedsindstillingerne i din browser kan forhindre, at symbolerne indlæses korrekt. Hvis du vil løse dette problem, kan du prøve følgende trin:
 
--   Hvis du oplever dette problem i Internet Explorer, skal du klikke på **Tools**, og klik derefter på **Internet-indstillinger**.  I dialogboksen Internetindstillinger på den **beskyttelse af personlige oplysninger**, og klik på **Brugerdefineret niveau**, og Kontroller, at den **skrifttype download** indstilling er valgt.
--   Ellers skal du muligvis føje Dynamics-365 for operationer websted til listen over websteder, du har tillid til.
+-   Hvis du oplever dette problem i Internet Explorer, skal du klikke på **Funktioner**, og klik derefter på **Internetindstillinger**.  I dialogboksen Internetindstillinger under fanen **Beskyttelse af personlige oplysninger** skal du klikke på **Brugerdefineret niveau** og kontrollere, at indstillingen **Overførsel af skrifttyper** er markeret.
+-   Ellers skal du muligvis føje Dynamics 365 for Operations-webstedet til listen over websteder, du har tillid til.
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Jeg savner båndet fra Dynamics AX 2012. Kan jeg beholde handlingsruden faner åbne hele tiden?
-Vi planlægger at implementere denne funktion snart. Brugerne vil derefter kunne vælge at beholde fanerne på Handlingsruder åben hele tiden. Ellers skjules fanerne, når de ikke bruges, for at give mere skærmplads til siden.
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Jeg savner båndet fra Dynamics AX 2012. Kan jeg lade faner i handlingsruden være åbne hele tiden?
+Vi planlægger at implementere denne funktion snart. Brugerne vil herefter kunne vælge at beholde fanerne i Handlingsruder åbne hele tiden. Ellers skjules fanerne, når de ikke bruges, for at give mere skærmplads til siden.
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Hvorfor kan jeg nogle gange se forskellige genvejsmenuer når jeg rightclick?
-Hvis du højreklikker på et redigerbart felt (eller hvis tekst er markeret), vises genvejsmenuen i browseren. Denne menu giver dig adgang til kommandoerne **Klip**, **Kopiér** og **Sæt ind** kommandoer. Vi kan ikke integrere disse kommandoer i Dynamics-365 for operationer genvejsmenuer, fordi af sikkerhedsmæssige årsager ikke browsere giver os mulighed for automatisk at få adgang til Udklipsholder.
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Hvorfor kan jeg nogle gange se forskellige genvejsmenuer når jeg højreklikker?
+Hvis du højreklikker på et redigerbart felt (eller hvis tekst er markeret), vises genvejsmenuen i browseren. Denne menu giver dig adgang til kommandoerne **Klip**, **Kopiér** og **Sæt ind** kommandoer. Vi kan ikke integrere disse kommandoer i genvejsmenuer i Dynamics 365 for Operations af sikkerhedsmæssige årsager, da browsere ikke giver os mulighed for automatisk at få adgang til systemets Udklipsholder.
 
-Hvis du højreklikker på en feltetiket eller værdien af et skrivebeskyttet kontrolelement, får du vist Dynamics-365 for operationer genvejsmenuen.
+Hvis du højreklikker på en feltetiket eller værdien af et skrivebeskyttet kontrolelement, vises genvejsmenuen Dynamics 365 for Operations.
 
-Nemmere Tastaturadgang, planlægger vi at implementere en tastaturgenvej i fremtiden, som skal åbne Dynamics-365 for operationer genvejsmenuen.
+For at gøre tastaturadgang nemmere, planlægger vi at implementere en tastaturgenvej i fremtiden, som vil åbne genvejsmenuen til Dynamics 365 for Operations.
 
-## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Hvor er funktionen Vis detaljer i Dynamics 365 for operationer?
+## <a name="where-is-the-view-details-functionality-in-dynamics-365-for-operations"></a>Hvor er funktionen Vis detaljer i Dynamics 365 for Operations?
 Indstillingen **Vis detaljer** er tilgængelig på flere måder:
 
 -   Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink. Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.
--   **Få vist oplysninger om** er også en indstilling på Dynamics 365 for operationer genvejsmenuer. Yderligere oplysninger om, hvornår Dynamics 365 for operationer genvejsmenuer vises, når du højreklikker på, finder du i det forrige afsnit.
+-   **Vis detaljer** er også en indstilling i genvejsmenuer i Dynamics 365 for Operations. Du kan finde flere oplysninger om, hvornår genvejsmenuer i Dynamics 365 for Operations vises, når du højreklikker, i det forrige afsnit.
+
+
 
 
 

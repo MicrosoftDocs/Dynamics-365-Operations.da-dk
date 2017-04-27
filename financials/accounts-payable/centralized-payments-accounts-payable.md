@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserede kreditorbetalinger
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Derudover kan organisationen spare tid, fordi betalingsprocessen er strømlinet.
@@ -66,14 +69,14 @@ Fabrikam East har en åben faktura for kreditorkonto 100, Fourth Coffee. Fabrika
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
 | Forfalden fra Fabrikam East (Fabrikam) | 600,00       |               |
 | Kreditor (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                          | Debetbeløb | Kreditbeløb |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der er en ko
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
 | Forfalden fra Fabrikam East (Fabrikam) | 580,00       |               |
 | Kreditor (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                          | Debetbeløb | Kreditbeløb |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Fabrikam reg
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb            | Kreditbeløb           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Fabrikam reg
 | Realiseret tab (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
 | Forfalden fra Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                          | Debetbeløb            | Kreditbeløb           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der gælder 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb            | Kreditbeløb           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der gælder 
 | Realiseret tab (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
 | Forfalden fra Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                          | Debetbeløb            | Kreditbeløb           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der gælder 
 | Kontantrabat (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Eksempel 5: Kreditorkreditnota med primær betaling
-Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen vælges som primær betaling i den **udligne posteringer** side.
+Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen vælges som primær betaling på siden **Udlign transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bogføres på Fabrikam West for kreditor 3004
 
@@ -224,7 +227,7 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 | Forfalden fra Fabrikam West (Fabrikam) | 100,00       |               |
 | Kreditor (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
 | Forfalden fra Fabrikam (Fabrikam East) | 25,00        |               |
 | Kreditor (Fabrikam East)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bogføring**
 
 | Konto                          | Debetbeløb | Kreditbeløb |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 | Forfalden til Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Eksempel 6: Kreditorkreditnota uden primær betaling
-Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen ikke er markeret som primær betaling i den **udligne posteringer** side.
+Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen vælges ikke som primær betaling på siden **Udlign transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bogføres på Fabrikam West for kreditor 3004
 
@@ -273,21 +276,21 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
 
-**Fabrikam posting**
+**Fabrikam-bogføring**
 
 | Konto                           | Debetbeløb | Kreditbeløb |
 |-----------------------------------|--------------|---------------|
 | Forfalden fra Fabrikam West (Fabrikam) | 75,00        |               |
 | Kreditor (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam East-bogføring**
 
 | Konto                                | Debetbeløb | Kreditbeløb |
 |----------------------------------------|--------------|---------------|
 | Forfalden fra Fabrikam West (Fabrikam East) | 25,00        |               |
 | Kreditor (Fabrikam East)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bogføring**
 
 | Konto                              | Debetbeløb | Kreditbeløb |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Beta
 | Forfalden til Fabrikam (Fabrikam West)      |              | 75,00         |
 | Kreditor (Fabrikam West)     | 25,00        |               |
 | Forfalden til Fabrikam East (Fabrikam West) |              | 25,00         |
+
+
 
 
 

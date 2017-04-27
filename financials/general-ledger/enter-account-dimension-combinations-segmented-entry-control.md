@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angiv kombinationer af konto og dimension (segmenteret postkontrolelement)
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
 
-Brugere angive kombinationer af konto og dimension på forskellige sider som sider til finanskladder, budgettering og bogføringsdefinitioner. Gyldige kombinationer af konto og dimension afhænger af de kontostrukturer, der er tildelt finans og de avancerede regler, der er tildelt kontostrukturerne. Når brugerne angiver en kombination, kan de enten manuelt indtaste værdierne eller drage fordel af en omfattende, opslag-oplevelse. Når du angiver feltet, kan du begynde at skrive og søger værdien og beskrivelse. For eksempel hvis du skriver 180 søger en værdi, der begynder med denne kombination. Eller du kan skrive kontanter og søger en værdi, som er en beskrivelse, der begynder med kontanter. Du kan også bruge jokertegn, f.eks. \*kontant eller \*180 til at søge, hvis værdien eller beskrivelsen indeholder søgekriterierne. 
+Brugere angiver kombinationer af konto og dimension på forskellige sider, f.eks. sider til finanskladder, budgettering og bogføringsdefinitioner. Gyldige kombinationer af konto og dimension afhænger af de kontostrukturer, der er tildelt finans og de avancerede regler, der er tildelt kontostrukturerne. Når brugerne indtaster en kombination, kan de enten manuelt indtaste værdierne eller drage fordel af omfattende opslagsmuligheder. Når du angiver feltet, kan du begynde at skrive, og derefter søger det efter værdien og beskrivelsen. For eksempel hvis du skriver 180 søger det efter enhver værdi, der begynder med denne talkombination. Eller du kan skrive kontanter, hvorefter det søger efter enhver værdi, som har en beskrivelse, der begynder med kontanter. Du kan også bruge jokertegn, f.eks. \*kontant eller \*180 til at søge, hvis værdien eller beskrivelsen indeholder søgekriterierne. 
 
 I følgende tabel beskriver de tastaturgenveje, der kan bruges, når opslaget er lukket.
 
@@ -108,5 +111,7 @@ I følgende tabel beskriver de tastaturgenveje, der kan bruges, når opslaget er
 </table>
 
  
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Operations-ressourcer
 
+[!include[banner](../includes/banner.md)]
+
+
 Operationsressourcer udfører aktiviteterne i et projekt eller en produktionsproces. De kan være af forskellige typer og kan have forskellige egenskaber. 
 
 <a name="operations-resources"></a>Operations-ressourcer
@@ -36,7 +39,7 @@ Operationsressourcer udfører aktiviteterne i et projekt eller en produktionspro
 Ved operationsressourcer forstås maskiner, værktøjer, arbejdere, faciliteter, fysiske områder eller leverandører, der udfører aktiviteterne i et projekt eller en produktionsproces. De kan være af forskellige typer og kan have forskellige egenskaber.
 
 -   **Leverandør** – En ekstern ressource, der udfører projektaktiviteter eller produktionsoperationer. Et eksempel er en underleverandør. Ved at knytte leverandørressourcer til en leverandørkonto kan du generere køb for underleverandører på baggrund af styklistelinjerne eller produktionslinjerne.
--   **Personale** – En projekt- eller produktionsarbejder, der udfører en aktivitet, enten alene eller ved at betjene et værktøj eller en maskine. Hvis du bruger funktionen personale, kan du knytte menneskelige ressourcer til en arbejder. Planlægningsprogrammet kan derefter tildele ressourcerne baseret på de kompetencer, der er defineret for den tilsvarende arbejder.
+-   **Personale** – En projekt- eller produktionsarbejder, der udfører en aktivitet, enten alene eller ved at betjene et værktøj eller en maskine. Hvis du bruger funktionen Personale, kan du knytte personale til en arbejder. Planlægningsprogrammet kan derefter tildele ressourcerne baseret på de kompetencer, der er defineret for den tilsvarende arbejder.
 -   **Maskine** – En maskine eller andet produktionsudstyr, der skal bruges i produktionen.
 -   **Værktøj** – Et instrument eller en enhed, der normalt bruges sammen med en anden ressource til at udføre en aktivitet i et projekt eller i produktionen.
 -   **Lokalitet** – En fysisk lokalitet af en bestemt størrelse, der kræves for at udføre en aktivitet. Et eksempel er et samlingsområde.
@@ -80,5 +83,7 @@ Når en ressourcegruppe bruges som en lean arbejdscelle, er kapaciteten for arbe
 
 ## <a name="costing-resources"></a>Efterkalkulerede ressourcer
 Når du definerer en aktivitet som en ruteoperation eller timebudget for et projekt, kan du angive kravene til en bestemt operationsressource eller ressourcegruppe. Men du kan også angive krav til en operationsressource af en bestemt type eller en operationsressource, der har en bestemt funktion eller kompetence. Derfor sker den faktiske ressourcetildeling først, når aktiviteten planlægges, og kapaciteten reserveres. På en ruteoperation kan du derfor angive, at forkalkulation og styklisteberegning skal baseres på en bestemt operationsressource. Denne operationsressource omtales som efterkalkuleret ressource. Du kan også overføre omkostningsarter og operationstider fra den efterkalkulerede ressource til aktiviteten. Når operationen planlægges, bruges forkalkulation og styklisteberegning ved hjælp af den operationsressource, der faktisk er blevet planlagt.
+
+
 
 

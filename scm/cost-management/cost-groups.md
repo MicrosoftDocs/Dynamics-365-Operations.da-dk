@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Kostprisgrupper
 
+[!include[banner](../includes/banner.md)]
+
+
 Kostgrupper udgør grundlaget for segmentering og analyse af kostbidraget i en færdigvares beregnede omkostninger, såsom kostbidrag til materialer, arbejdsløn og indirekte omkostninger. Der anvendes flere synonymer for kostgruppesegmentering i produktionsmiljøer, f.eks. kostprisopdeling eller klassificering af omkostninger. 
 
 Der anvendes flere synonymer for kostgruppesegmentering i produktionsmiljøer, f.eks. kostprisopdeling eller klassificering af omkostninger. Segmentering af kostgrupper kan tjene flere formål. Her er nogle eksempler:
@@ -48,6 +51,8 @@ En kostprisgruppe kan tildeles en kostprisgruppetype og en funktionsmåde til fl
 
 -   **Kostprisgruppetype** − De enkelte kostprisgrupper skal tildeles en kostprisgruppetype for at angive, at kostprisgruppen vedrører direkte materialer, direkte fremstilling eller direkte outsourcing eller for at angive den som indirekte eller udefineret. En kostprisgruppe, der er angivet som direkte materialer, kan tildeles til varer. En kostprisgruppe for direkte fremstilling kan tildeles til omkostningskategorier. En direkte outsourcingkostprisgruppe kan tildeles produkttypen tjeneste, så du kan som klassificere omkostninger, der er knyttet til tjenestekøbet til aktiviteter i forbindelse med underleverandørarbejde. En indirekte kostprisgruppe kan tildeles til indirekte omkostninger for tillæg eller satser. En kostprisgruppe, der er angivet som udefineret, kan tildeles til varer, omkostningskategorier eller indirekte omkostninger. Tildelingen af en kostprisgruppetype tjener flere formål. For det første begrænser det muligheden for at tildele en kostgruppe og få vist en liste over gældende kostgrupper. For det andet tilbyder den supplerende segmentering med henblik på rapportering. For det tredje kan den bruges til at tildele finanskonti til varianter.
 -   **Adfærd** − De enkelte kostgrupper kan evt. tildeles en adfærd for at angive, at kostgruppen vedrører faste omkostninger eller variable omkostninger. Hvis en kostgruppe har en null-værdi for adfærd, behandles den som en variabel omkostning. Tildelingen af en adfærd har kun betydning i forbindelse med rapportering. Omkostninger kan f.eks. vises med segmentering af faste og variable omkostninger på kostprisarket og på siden **Omkostningstotaler pr. kostgruppe**. Hvis du tildeler hver enkelt kostgruppe en procentdel af et avancesæt, foreslår styklisteberegningen en salgspris på basis af en fremgangsmåde, hvor kostprisen lægges sammen med avancen.
+
+
 
 
 

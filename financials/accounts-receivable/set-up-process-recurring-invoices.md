@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Oprette og behandle tilbagevendende fakturaer
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du opretter og behandler tilbagevendende fakturaer. Du kan bruge tilbagevendende fakturaer, hvis du skal fakturere kunder for samme beløb med jævne mellemrum.
 
 <a name="create-a-recurring-free-text-invoice-template"></a>Oprette en skabelon til en tilbagevendende fritekstfaktura
@@ -61,5 +64,7 @@ Udskriv tilbagevendende fritekstfakturaer
 ----------------------------------
 
 Når tilbagevendende fakturaer bogføres, kan du udskrive fakturaer fra listesiden med fritekstfakturaer. Du kan udskrive de fakturaer, der er valgt, eller du kan vælge et interval af fakturaer, der skal udskrives.
+
+
 
 

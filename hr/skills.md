@@ -39,18 +39,18 @@ Eksempler på færdigheder, du kan spore, omfatter følgende:
 Før du kan tildele en færdighed til en person eller et job, oprette en kompetencesøgning eller oprette en kompetenceprofil, skal du angive oplysninger om færdigheder på siden **Færdigheder**. Du kan vælge en færdighedstype og en rangeringsmodel for hver færdighed.
 
 ## <a name="rating-models"></a>Klassifikationsmodeller
-Rangeringsmodeller er en hjælp til at evaluere en persons faktiske færdighedsniveau, det niveau de skal tilsigte, eller det færdighedsniveau, der kræves til et job. Du kan angive op til ti niveauer til en rangeringsmodel.  Hvert niveau i en rangeringsmodel, der er tildelt en faktor.  Faktorværdien vil blive brugt til at normalisere resultater af færdigheder, der bruger forskellige rangeringsmodeller.  Faktoren, der skal være et tal mellem 0-9 og hvert niveau skal have en entydig faktor.  Niveauer med højere faktorværdier vægter mere i rangeringsmodellen.
+Rangeringsmodeller er en hjælp til at evaluere en persons faktiske færdighedsniveau, det niveau de skal tilsigte, eller det færdighedsniveau, der kræves til et job. Du kan angive op til ti niveauer til en rangeringsmodel.  Hvert niveau i en klassifikationsmodel er tildelt en faktor.  Faktorværdien bruges til at normalisere resultaterne af færdigheder, der bruger forskellige klassifikationsmodeller.  Faktoren skal være et tal mellem 0-9, og hvert niveau skal have en entydig faktor.  Niveauer med højere faktorværdier vægter mere i rangeringsmodellen.
 
 ## <a name="specify-job-skills"></a>Angive jobfærdigheder
-Når du angiver oplysninger om en sag, kan du angive de kvalifikationer, der skal have en person til at udføre det arbejde, der kræves for jobbet.  Desuden kan du angive det ønskede niveau for hver færdighed samt vigtighedsniveau af færdigheden. Forskellige job kan have forskellige krav til vigtighedsniveau for den samme færdighed.
+Når du indtaster oplysninger om et job, kan du angive de færdigheder, en person skal have for at kunne udføre det arbejde, der kræves til jobbet.  Desuden kan du angive det ønskede niveau for hver færdighed samt vigtighedsniveauet for færdigheden. Forskellige job kan have forskellige krav til vigtighedsniveau for den samme færdighed.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Angiv færdigheder for arbejdere, ansøgere eller kontakter
 Du kan angive målfærdigheder eller reelle færdigheder for arbejdere, ansøgere eller kontakter. En målfærdighed er en færdighed, som en person har til hensigt at opnå. En reel færdighed er en færdighed, som en person har i øjeblikket.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a> Konfigurere kompetencesøgning og profiler for kompetencesøgning
-Du kan oprette en kompetencesøgning for at finde en medarbejder, ansøger eller kontaktperson, der er kvalificeret til at udføre en bestemt type opgave. Kompetencesøgning søgninger udseende på tværs af kvalifikationer, uddannelse, certifikater, tillidsposter og projektet oplever og en resultater, der svarer til de kriterier, der er angivet.  For eksempel kan det være nyttigt at vide, hvilke arbejdere i organisationen oparbejdet deres CPA.
+Du kan oprette en kompetencesøgning for at finde en medarbejder, ansøger eller kontaktperson, der er kvalificeret til at udføre en bestemt type opgave. Kompetencesøgninger søger på tværs af kvalifikationer, uddannelse, certifikater, tillidsposter og projekterfaring og returnerer et resultat, der svarer til de kriterier, der er angivet.  Det kan f.eks. være nyttigt at vide, hvilke arbejdere i organisationen, der har oparbejdet deres CPA.
 
-Kompetencesøgning profiler kan du finde aktuelle medarbejdere eller ansøgere med kvalifikationer, der svarer direkte til virksomhedens behov.  For eksempel kan du oprette en kompetencesøgning-profil til en ledig stilling i organisationen. Ved at oprette en profil for et bestemt job og kopiere færdigheder, uddannelse og certifikater fra dette job til profilen kan du hurtigt søge efter arbejdere, ansøgere og kontakter, der opfylder et eller flere af de kriterier, der er angivet i profilen, og se en liste over de ansøgere, hvis kvalifikationer bedst svarer de færdigheder, der kræves for jobbet.
+Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere eller ansøgere med kvalifikationer, der svarer direkte til virksomhedens behov.  Du kan f.eks. oprette en kompetencesøgningsprofil til en ledig stilling i organisationen. Ved at oprette en profil for et bestemt job og kopiere færdigheder, uddannelse og certifikater fra dette job til profilen kan du hurtigt søge efter arbejdere, ansøgere og kontakter, der opfylder et eller flere af de kriterier, der er angivet i profilen, og se en liste over de ansøgere, hvis kvalifikationer bedst svarer de færdigheder, der kræves for jobbet.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbej
 <a name="see-also"></a>Se også
 --------
 
-[Human resources](index.md)
+[Personale](index.md)
 
 

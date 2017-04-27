@@ -29,12 +29,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
 
-Alle brugere skal tildeles mindst én sikkerhedsrolle skal have adgang til Microsoft Dynamics 365 for operationer. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
+Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til Microsoft Dynamics 365 for Operations. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
 
 ## <a name="what-are-the-prerequisites-for-assigning-security-roles-in-the-public-sector"></a>Hvad er forudsætningerne for tildeling af sikkerhedsroller i den offentlige sektor?
-Brugerne skal findes i Microsoft Dynamics 365 for operationer, før du kan tildele dem roller. Selvom du bruger automatisk rolletildeling, føjes ikke automatisk brugerne selv til Microsoft Dynamics 365 for operationer.
+Brugerne skal findes i Microsoft Dynamics 365 for Operations, før du kan tildele dem roller. Selvom du bruger automatisk rolletildeling, føjes brugerne selv ikke automatisk til Microsoft Dynamics 365 for Operations.
 
 ## <a name="which-roles-do-i-have-to-assign"></a>Hvilke roller skal jeg tildele?
 Når brugerne er i systemet, er der to roller, som du muligvis skal konfigurere for offentlige organisationer:
@@ -44,7 +47,7 @@ Når brugerne er i systemet, er der to roller, som du muligvis skal konfigurere 
 
 ### <a name="what-is-the-project-manager---public-sector-role"></a>Hvad er Projektleder – Offentlig sektor-rollen?
 
-Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel rollen foruden rollen **Projektleder** for at give projektledere adgang til projektstyringsfunktioner. Denne sikkerhedsrolle er som standard tildelt følgende opgaver i Microsoft Dynamics 365 for operationer.
+Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel rollen foruden rollen **Projektleder** for at give projektledere adgang til projektstyringsfunktioner. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Microsoft Dynamics 365 for Operations.
 
 | Navn på arbejdsopgave                                                         | Arbejdsopgaves AOT-navn                           | Beskrivelse af programadgangsrettighed                                                                |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------|
@@ -52,7 +55,7 @@ Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentli
 
 ### <a name="what-is-the-purchasing-agent---public-sector-role"></a>Hvad er Indkøbsagent - den offentlige sektor-rollen?
 
-Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel denne rolle foruden rollen **Indkøbsassistent** for at give indkøbsassistenter adgang til købsfunktionalitet. Denne sikkerhedsrolle er som standard tildelt følgende opgaver i Microsoft Dynamics 365 for operationer.
+Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel denne rolle foruden rollen **Indkøbsassistent** for at give indkøbsassistenter adgang til købsfunktionalitet. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Microsoft Dynamics 365 for Operations.
 
 | Navn på arbejdsopgave                                                       | Arbejdsopgaves AOT-navn                            | Beskrivelse af programadgangsrettighed                                                                                        |
 |-----------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -98,6 +101,8 @@ Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere
 <a name="see-also"></a>Se også
 --------
 
-[Role-based security](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+[Rollebaseret sikkerhed](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+
+
 
 

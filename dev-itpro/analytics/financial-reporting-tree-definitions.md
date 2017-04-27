@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
 
 Økonomirapportering understøtter fleksibel rapportering, så du kan nemt foretage ændringer, i takt med at din virksomhedsstruktur ændres. Rapporter bygges på forskellige komponenter eller dokumentkomponenter. En af disse komponenter er en definition af et rapporteringstræ. En rapporteringstrædefinition hjælper med at definere strukturen og hierarkiet i din organisation. Det er en krydsdimensionale hierarkisk struktur, der er baseret på de størrelsesmæssige relationer i dine økonomiske data. Den giver oplysninger på rapporteringsenhedsniveau og på oversigtsniveau for alle enheder i træet. Rapporteringstrædefinitioner kan kombineres med kolonnedefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer. Der bruges en rapporteringsenhed for hver boks i et organisationsdiagram. En rapporteringsenhed kan være en enkelt afdeling fra de økonomiske data, eller det kan være en oversigtsenhed på et højere niveau, der kombinerer oplysninger fra andre rapporteringsenheder. For en rapportdefinition, der omfatter et rapporteringstræ, oprettes der én rapport for hver rapporteringsenhed og for oversigtsniveauet. Alle disse rapporter bruger de række- og kolonnedefinitioner, der er angivet i rapportdefinitionen, medmindre rapportdefinitionen angiver, at rapporteringstræet fra rækkedefinitionen skal bruges. Række- og kolonnedefinitioner er vigtige komponenter i udformningen af og funktionaliteten for økonomiske rapporter. Rapporteringstræer øger styrken af komponenter og understøtter fleksibel rapportering i takt med, at virksomhedsstrukturen ændres. Økonomiske rapporter, der ikke er baseret på et rapporteringstræ, anvender kun nogle af funktionerne i økonomirapportering. Du kan bruge flere rapporteringstrædefinitioner sammen med de samme række- og kolonnedefinitioner for at få vist organisationens data på forskellige måder.
@@ -49,7 +52,7 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 
 | Kolonne i rapporteringstræ | Betegnelse|
 |---|---|
-| Regnskab               | Firmanavnet på rapporteringsenheden. Den **@ANY** -værdi, som tildeles typisk kun oversigt over niveau, gør det muligt for træet rapportering skal bruges til alle regnskaber. Alle underordnede grene har fået tildelt en virksomhed.|
+| Regnskab               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, der normalt kun tildeles på oversigtsniveau, gør det muligt at anvende rapporteringstræet for alle virksomheder. Alle underordnede grene har fået tildelt en virksomhed.|
 | Enhedsbetegnelse             | Den kode, der identificerer denne rapporteringsenhed i det grafiske rapporteringstræ. Sørg for at oprette et entydigt kodesystem, der er konsistent, og som vil være let for brugerne at forstå. |
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen.|
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret.|
@@ -58,15 +61,15 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 | Eksternt link         | Det link til række, der skal bruges til denne rapporteringsenhed. Der er defineret link til rækker for rækkedefinitionen for at identificere den rapport, der skal være link til.|
 | Ekstern fil         | Filstien til økonomirapporteringsregnearket, der skal hentes data fra.|
 | Sideindstillinger          | Denne kolonne angiver, om detaljerne for den rapporteringsenheden tilsidesættes, når rapporten vises eller udskrives.|
-| Opløsning %              | Procentdelen af rapporteringsenheden, der skal allokeres til den overordnede enhed. Den procentdel, du angiver i denne kolonne, gælder for hver række i rækkedefinitionen, før værdien i rækken føjes til den overordnede rapport. Hvis en underordnet enhed for eksempel skal være fordelt ligeligt mellem to afdelinger, skal beløbene i hver række ganges med 50 procent, før værdien føjes til afdelingsrapporten. En rapporteringsenhed kan ikke have to overordnede enheder. Hvis du vil tildele beløbene fra en rapporteringsenhed til to overordnede enheder, skal du oprette en anden rapporteringsenhed, der har samme dimension, for at få vist yderligere 50 procent. Angiv hele procentsatser uden et decimaltegn. For eksempel repræsenterer **25** 25 procent allokering til den overordnede enhed. Hvis du medtager et decimaltegn (**0,25**), fordeles 0,25 procent til den overordnede enhed. Hvis du vil bruge en procentdel, der er mindre end 1 procent, bruger den **tillade opdateringspakke &lt;1%** indstilling i rapportdefinitionen. Denne indstilling er på fanen **Flere indstillinger** i dialogboksen **Rapportindstillinger**. Denne dialogboks er tilgængelig via knappen **Andre** under fanen **Indstillinger** i rapportdefinitionen. |
+| Opløsning %              | Procentdelen af rapporteringsenheden, der skal allokeres til den overordnede enhed. Den procentdel, du angiver i denne kolonne, gælder for hver række i rækkedefinitionen, før værdien i rækken føjes til den overordnede rapport. Hvis en underordnet enhed for eksempel skal være fordelt ligeligt mellem to afdelinger, skal beløbene i hver række ganges med 50 procent, før værdien føjes til afdelingsrapporten. En rapporteringsenhed kan ikke have to overordnede enheder. Hvis du vil tildele beløbene fra en rapporteringsenhed til to overordnede enheder, skal du oprette en anden rapporteringsenhed, der har samme dimension, for at få vist yderligere 50 procent. Angiv hele procentsatser uden et decimaltegn. For eksempel repræsenterer **25** 25 procent allokering til den overordnede enhed. Hvis du medtager et decimaltegn (**0,25**), fordeles 0,25 procent til den overordnede enhed. Hvis du vil bruge en procentdel, der er mindre end 1 procent, skal du anvende indstillingen **Tillad opløftning på &lt;1 %** i rapportdefinitionen. Denne indstilling er på fanen **Flere indstillinger** i dialogboksen **Rapportindstillinger**. Denne dialogboks er tilgængelig via knappen **Andre** under fanen **Indstillinger** i rapportdefinitionen. |
 | Sikkerhed for enhed         | Begrænsninger for de brugere og grupper, der har adgang til oplysninger for rapporteringsenheden.|
 | Supplerende tekst       | Tekst, der medtages i rapporten.|
 
 Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
 
 1.  Åbn Report Designer.
-2.  Klik på **fil**&gt;**nye**&gt;**Reporting Definition træ**.
-3.  Klik på **Rediger**&gt;**indsætte rapportering enheder fra dimensioner**.
+2.  Klik på **Filer** &gt; **Ny** &gt; **Rapporteringstrædefinition**.
+3.  Klik på **Rediger** &gt; **Indsæt rapporteringsenheder fra dimensioner**.
 4.  I dialogboksen **Indsæt rapporteringsenheder fra dimensioner** skal du markere afkrydsningsfeltet for alle de dimensioner, der skal medtages i rapporteringstræet. Dialogboksen **Indsæt rapporteringsenheder fra dimensioner** indeholder følgende afsnit.
 
     | Sektion                          | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -85,7 +88,7 @@ Hvis du vil oprette et rapporteringstræ, skal du følge disse trin.
 
 9.  Gentag trin 7 til 8 for hver dimension i området **Segmenthierarki og -intervaller**.
 10. Når du er færdig med at definere, hvordan dine rapporteringsenheder skal hentes til det nye rapporteringstræ, skal du klikke på **OK**.
-11. Klik på **fil**&gt;**Gem** at gemme træet rapportering. Angiv et entydigt navn og en entydig beskrivelse for rapporteringstræet, og klik derefter på **OK**.
+11. Klik på **Filer** &gt; **Gem** for at gemme rapporteringstræet. Angiv et entydigt navn og en entydig beskrivelse for rapporteringstræet, og klik derefter på **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Åbne en eksisterende rapporteringstrædefinition
 
@@ -121,7 +124,7 @@ Du kan omarrangere den organisatoriske struktur i en rapporteringstrædefinition
 1.  Åbn den rapporteringstrædefinition, der skal ændres, i Report Designer.
 2.  Vælg en rapporteringsenhed i den grafiske visning af rapporteringstrædefinitionen.
 3.  Træk enheden til en ny placering. Du kan også højreklikke på enheden og derefter vælge **Hæv rapporteringsenhed** eller **Sænk rapporteringsenhed.**
-4.  Klik på **fil**&gt;**Gem** til at gemme dine ændringer.
+4.  Klik på **Filer** &gt; **Gem** for at gemme ændringerne.
 
 ### <a name="add-text-about-a-reporting-unit"></a>Tilføje tekst om en rapporteringsenhed
 
@@ -189,7 +192,7 @@ I følgende diagram har rapporteringstræet en organisationsstruktur, der er opd
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Indsæt rapporteringsenheder fra Dimensioner
 
-Følgende illustration viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra Dimensioner**. I dette eksempel returnerer resultaterne kombinationen af virksomhedsenheder, bærere og afdelinger. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) resulterende rapportering træ definitionen er sorteret efter afdeling, og derefter efter omkostningssted og derefter efter afdeling. Dimensionen for den femte rapporterende enhed er **afdeling = \[001\], bærer =\[\], afdeling = \[022\]**, og identificerer en rapporterende enhed for konti, der er specifikke for business enhed 001 og afdeling 022. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+Følgende illustration viser et eksempel på dialogboksen **Indsæt rapporteringsenheder fra Dimensioner**. I dette eksempel returnerer resultaterne kombinationen af virksomhedsenheder, bærere og afdelinger. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) Den resulterende rapporteringstrædefinition er sorteret efter virksomhedsenhed og derefter efter bærer og derefter efter afdeling. Dimensionen for den femte rapporteringsenhed er **Virksomhedsenhed = \[001\] Bærer =\[\], Afdeling = \[022\]**, og den identificerer en rapporteringsenhed for konti, der er specifikke for virksomhedsenhed 001 og afdeling 022. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på dataakkumulering
 
@@ -205,6 +208,8 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 
 # <a name="see-also"></a>Se også
 
-[Financial reporting](financial-reporting-intro.md)
+[Økonomirapportering](financial-reporting-intro.md)
+
+
 
 

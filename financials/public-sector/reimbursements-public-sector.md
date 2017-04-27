@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
+[!include[banner](../includes/banner.md)]
+
+
 I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
 
 <a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
@@ -60,6 +63,8 @@ Nr. Refusioner behandles ikke for en kunde, der har ventende udligninger, der ik
 
 ## <a name="can-i-reverse-reimbursement-settlements"></a>Kan jeg fortryde refusionsudligninger?
 Nej, ikke direkte. Du kan dog bruge finanskladdeposter til at oprette posteringer, der ville medføre tilbageførsel af finansposterne.
+
+
 
 
 

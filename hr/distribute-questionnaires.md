@@ -1,6 +1,6 @@
 ---
 title: "Distribuere og udfylde et spørgeskema"
-description: "Dette emne forklarer, hvordan fordeler de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller sammenslutning af personer, der skal udfylde dem."
+description: "I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Distribuere og udfylde et spørgeskema
 
-Dette emne forklarer, hvordan fordeler de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller sammenslutning af personer, der skal udfylde dem. 
+I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
 
 Der er flere måder at distribuere et spørgeskema på:
 
@@ -38,7 +38,7 @@ Der er flere måder at distribuere et spørgeskema på:
 -   Opret tidsplan. Spørgeskemaet kan derefter være tilgængeligt for flere personer.
 
 ## <a name="marking-a-questionnaire-as-active"></a>Markering af et spørgeskema som aktivt
-Ved at angive den **aktive** til **Ja** på den **spørgeskemaer** side, du gøre spørgeskemaet tilgængeligt for alle medarbejdere til at fuldføre. Svarpersoner kan udfylde spørgeskemaet flere gange. Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året. Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.
+Ved at indstille feltet **Aktiv** til **Ja** på siden **Spørgeskemaer** kan du gøre spørgeskemaet tilgængeligt, så alle medarbejdere kan udfylde det. Svarpersoner kan udfylde spørgeskemaet flere gange. Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året. Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.
 
 ## <a name="questionnaire-groups"></a>Spørgeskemagrupper
 Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et spørgeskema skal distribueres til. 
@@ -48,7 +48,7 @@ Du kan oprette spørgeskemagrupper fra følgende sider:
 -   **Spørgeskemagrupper **– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema. Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.
 -   **Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.
 
-At tildele en spørgeskemagruppe et spørgeskema i de **spørgeskemaer** skal du klikke på **brugerrettigheder**. Når spørgeskemaet er gemt som aktiv, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet. Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe af personer, før du vender til en større gruppe, eller hvis du vil fokusere på et spørgeskema til en meget specifik målgruppe.
+Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**. Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet. Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.
 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte besvarelser i et spørgeskema
 Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for. 
@@ -82,24 +82,24 @@ Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskem
 
 Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema. 
 
-Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for operationer. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
+Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Operations. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
 
 Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til. Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.
 
 ### <a name="questionnaire-schedules"></a>Spørgeskemaplaner
 
-Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelser for en gruppe af brugere, på baggrund af en referencetype. Oprette en tidsplan på den **spørgeskemaplaner** side. Vælg den planlægning til at kategorisere tidsplanen, og vælg den referencetype, der skal bruges til at forespørge system for bestemte brugere også. For eksempel, hvis du angiver referencetypen til tabellen kurser, kan du vælge et bestemt kursus i den **Reference** felt. 
+Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelsessessioner for en gruppe af brugere, på baggrund af en referencetype. Opret en tidsplan på siden **Spørgeskemaplaner**. Vælg planlægningsgruppen for at kategorisere tidsplanen, og vælg også den referencetype, der skal bruges til at forespørge i systemet efter bestemte brugere. For eksempel hvis du indstiller referencetypen til tabellen Kurser, kan du vælge et bestemt kursus i feltet **Reference**. 
 
-Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier. For eksempel angive instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren. Når du er færdig med at indtaste oplysninger om de opsætning, genererer systemet planlagte besvarelser for de brugere, der er medtaget i forespørgslen. 
+Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier. For eksempel angiv instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren. Når du er færdig med at indtaste oplysninger om opsætningen, genererer systemet planlagte besvarelsessessioner for de brugere, der er medtaget i forespørgslen. 
 
 Klik på **Planlagte besvarelser** for at få vist besvarelser for planen. Du kan derefter manuelt oprette yderligere planlagte besvarelser eller slette planlagte besvarelser, der ikke er besvaret. 
 
-Klik på **funktion**&gt;**Start** gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelser. Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne. Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.
+Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelsessessioner. Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne. Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.
 
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem
 Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem. 
 
-**Bemærk:** svarpersoner skal være brugere i Microsoft Dynamics 365 for operationer til at udfylde et spørgeskema.
+**Bemærk!** Svarpersoner skal være brugere i Microsoft Dynamics 365 for Operations for at fuldføre et spørgeskema.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Besked til svarpersoner om en planlagt besvarelse
 
@@ -107,7 +107,7 @@ Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.e
 
 ### <a name="notifying-respondents-about-a-scheduling"></a>Besked til svarpersoner om en planlægning
 
-Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**. Når planen er startet, skal du klikke på **funktion**&gt;**sende e-mail** til at generere og sende e-mailen til svarpersoner. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
+Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**. Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
 
 **Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
 
@@ -119,7 +119,7 @@ Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt der
 ## <a name="completing-questionnaires"></a>Besvare spørgeskemaer
 Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner. Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:
 
--   Klik på i navigationsruden, **spørgeskemaer**&gt;**fordel**&gt;**udfylde et spørgeskema,**.
+-   Klik i navigationsruden på **Spørgeskemaer** &gt; **Distribuer** &gt; **Besvar et spørgeskema**.
 -   Klik på **Spørgeskemaer, der skal udfyldes** i Medarbejderselvbetjening.
 
 Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.
@@ -131,6 +131,6 @@ Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper
 
 [Brug af spørgeskemaer](questionnaires.md)
 
-[Få vist og evaluere resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
 
 

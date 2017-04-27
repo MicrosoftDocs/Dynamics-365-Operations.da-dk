@@ -86,5 +86,5 @@ Indstillingen **Økonomirapportering** er løsningen. Organisationshierarkier, d
 Ved at bruge indstillingen **Eksportér virksomhedssaldi** til at eksportere fra én forekomst og derefter bruge indstillingen **Konsolider med import** i den anden forekomst, kan du konsolidere dataene.
 
 
-Yderligere oplysninger finder du i [revalution af valuta i et konsolideret regnskab](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Du kan finde flere oplysninger under [Værdiregulering i et konsolideret regnskab](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

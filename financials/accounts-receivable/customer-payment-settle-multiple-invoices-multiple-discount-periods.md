@@ -28,16 +28,19 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i dennes artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
 
-Fabrikam sælger varer til debitor 4032. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Settement-parametre er placeret på den **Accounts receivable parameters** side.
+Fabrikam sælger varer til debitor 4032. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoices"></a>Fakturaer
 Debitor 4032 har tre fakturaer på i alt 3,000.00:
 
--   Faktura FTI-10040 på 1.000,00, blev indtastet d. 15. Denne faktura er berettiget til en kasserabat på 1 procent, hvis der betales inden 14 dage.
--   Faktura FTI-10041 på 1.000,00, blev indtastet d. 25. Denne faktura er berettiget til en kasserabat på 1 procent, hvis der betales inden 14 dage.
--   Faktura FTI-10042 på 1.000,00, blev indtastet d. 25. Denne faktura er berettiget til en kasserabat på 2 procent, hvis den betales i fem dage og en rabat på 1 procent, hvis der betales inden 14 dage.
+-   Faktura FTI-10040 på 1.000,00 blev bogført d. 15. maj. Denne faktura er berettiget til en kasserabat på 1 %, hvis den betales inden 14 dage.
+-   Faktura FTI-10041 på 1.000,00 blev bogført d. 25. juni. Denne faktura er berettiget til en kasserabat på 1 %, hvis den betales inden 14 dage.
+-   Faktura FTI-10042 på 1.000,00 blev bogført d. 25. juni. Denne faktura er berettiget til en kasserabat på 2 %, hvis den betales inden fem dage, og en rabat på 1 %, hvis den betales inden 14 dage.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Udligne alle fakturaer d. 29 juni
 Hvis Arnie opretter en betalingskladde for at udligne fakturaerne helt den 29. juni, er betalingen 2.970,00. Summen af alle rabatbeløb er 30,00. Arnie opretter en betaling for debitor 4032 og åbner derefter siden **Udlign posteringer**. På siden **Udlign posteringer** markerer Arnie alle tre fakturalinjer til udligning:
@@ -76,7 +79,7 @@ Debitor 4032 kan betale et delbeløb, f.eks. halvdelen af hver faktura. Arnie op
 | Valgt                 | Almindelig            | FTI 10041 | 4032    | 25-6-2015 | 25-7-2015 | 10041   | 1.000,00                             |                                       | USD      | 495,00           |
 | Markeret og fremhævet | Almindelig            | FTI 10042 | 4032    | 25-6-2015 | 25-7-2015 | 10042   | 1.000,00                             |                                       | USD      | 490,00           |
 
-Arnie kan også manuelt angive beløb til betaling af 1.485,00, før han åbner den **udligne posteringer** side. Hvis Arnie manuelt indtaster betalingsbeløbet og markerer derefter alle tre transaktioner, men han ikke justere værdien i den **udligningsbeløbet** felt for hver transaktion, modtager han følgende meddelelse, når han lukker siden:
+Arnie kan også manuelt angive betalingsbeløb på 1.485,00, før han åbner siden **Udlign posteringer**. Hvis han manuelt indtaster betalingsbeløbet og derefter markerer alle tre posteringer, men ikke justerer værdien i feltet **Beløb, der skal udlignes** for hver postering, modtager han følgende meddelelse, når han lukker siden:
 
 > Totalbeløbet af markerede transaktioner er forskelligt fra kladdebeløbet. Vil du ændre kladdebeløbet?
 
@@ -95,6 +98,8 @@ Arnie kan se oplysningerne på siden **Debitorposteringer**.
 | FTI 10042  | Faktura          | 25-6-2015 | 10042   | 1.000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Betaling          | 29-6-2015 |         |                                      | 1.485,00                              | 0,00     | USD      |
 | DISC-10040 | Kasserabat    | 29-6-2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

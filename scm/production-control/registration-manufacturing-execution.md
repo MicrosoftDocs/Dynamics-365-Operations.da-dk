@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Registrering for produktionsudførelse
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne beskriver vigtige begreber og udtryk, som du skal kunne forstå for at konfigurere og bruge produktionsudførelse. 
 
 Produktionsudførelse er primært beregnet til brug i produktionsfirmaer. Arbejderne kan registrere tids- og vareforbrug på produktionsjob på siden **Jobregistrering**. Alle registreringer godkendes og overføres senere til de relevante moduler. Fortløbende godkendelse og overførsel af registreringer giver lederne mulighed for let at spore faktiske omkostninger på produktionsordrer.
@@ -51,12 +54,14 @@ Arbejderne kan foretage forskellige former for registreringer i produktionsudfø
 -   **Registrere på produktionsjob** – Arbejdere kan foretage registreringer, som f.eks. start af et job og rapporteringstilbagemelding for et job, i produktionsjob, der vises i joboversigten. Arbejdere kan starte flere job samtidig. Det betegnes samling af job i bundter.
 -   **Registrere på lager** – Arbejdere kan foretage registreringer af materialer, der bruges i produktionshallen, men som ikke er direkte relateret til produktionsjob. Det kan f.eks. være smørelse, olier og andre materialer, der bruges til at holde gang i maskineriet. Registrering foretages i en lagerkladde.
 -   **Registrere på projekter** (tilgængelig til tid og fremmøde) – Arbejdere kan foretage registreringer, som start og afslutning af arbejde på projekter eller projektaktiviteter, der vises i deres jobliste.
--   **Registrere projektgebyrer og projektvarer** (findes til tid og fremmøde) – arbejdere, kan registrere gebyrer (udgifter), der er tilknyttet et projekt i en projektgebyrkladde, f.eks. kørsel og bro afgift. Arbejdere kan også registrere vareforbrug på projekter. Dette afsluttes i en projektvarekladde.
+-   **Registrer projektgebyrer og projektvarer** (tilgængelig til tid og fremmøde) – Arbejdere kan registrere gebyrer (udgifter), der er tilknyttet et projekt i en projektgebyrkladde, f.eks kilometertal og broafgift. Arbejdere kan også registrere vareforbrug på projekter. Dette afsluttes i en projektvarekladde.
 -   **Registrere som assistent for en anden arbejder** – Hvis to eller flere arbejdere skal samarbejde om et produktionsjob eller projekt, kan en arbejder registrere sig som assistent på en maskine eller til en anden arbejder, der derefter fungerer som pilot. Hvis det er nødvendigt, kan piloten vælge en anden arbejder som pilot.
 -   **Registrere fravær** (tilgængelig til tid og fremmøde) – Arbejdere kan registrere tid på forskellige fraværskoder, der er oprettet. Det er muligt at angive fravær, hvis en arbejder møder for sent, er nødt til at være fraværende i dagens løb eller går tidligere end angivet i den normale arbejdstidsprofil.
 -   **Registrere pauser** (tilgængelig til tid og fremmøde) – I løbet af arbejdsdagen kan arbejdere registrere, at de forlader deres arbejdsstation for at tage en pause. Der kan oprettes flere pausetyper. Når en arbejder vender tilbage og logger på igen, registrerer systemet, at arbejderen er tilbage, og pauseregistreringen ophører.
 -   **Registrere indirekte aktiviteter** (tilgængelig til tid og fremmøde) – Indirekte aktiviteter er ikke-produktive aktiviteter, som arbejdere kan være beskæftiget med i dagens løb. Det kan f.eks. være et afdelingsmøde, et gruppemøde eller et vedligeholdelsesjob i produktionshallen. Arbejderne kan foretage registreringer af indirekte aktiviteter, der er konfigureret.
 -   **Registrere overtid** (tilgængelig til tid og fremmøde) – Arbejdere, der er blevet bedt om at arbejde længere, kan vælge, om de vil registrere de ekstra timer som flekstid eller overtid.
+
+
 
 
 

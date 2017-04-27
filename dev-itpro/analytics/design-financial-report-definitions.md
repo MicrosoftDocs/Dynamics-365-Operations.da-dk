@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Denne artikel indeholder oplysninger om rapportdefinitioner. En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport. En rapportdefinition indeholder også indstillinger til tilpasning af en rapport. 
 
-En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport. En rapportdefinition indeholder også indstillinger og indstillinger, du kan bruge til at tilpasse en rapport. Når du har defineret rækkedefinitioner og kolonnedefinitioner, skal du kombinere dem i en rapportdefinition. På dette tidspunkt definerer du også andre aspekter af definitionerne, som detaljeniveauet og rapportdatoen. Du kan derefter gemme og generere en rapport. Økonomirapportering har følgende detaljeniveauer:
+En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport. En rapportdefinition indeholder også flere muligheder og indstillinger, som du kan bruge til at tilpasse en rapport. Når du har defineret rækkedefinitioner og kolonnedefinitioner, skal du kombinere dem i en rapportdefinition. På dette tidspunkt definerer du også andre aspekter af definitionerne, som detaljeniveauet og rapportdatoen. Du kan derefter gemme og generere en rapport. Økonomirapportering har følgende detaljeniveauer:
 
 -   Finansiel
 -   Finans og Konto
@@ -89,6 +89,6 @@ Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysni
 <a name="see-also"></a>Se også
 --------
 
-[Finansiel rapportering for Microsoft Dynamics 365 til operationer](financial-reporting-intro.md)
+[Økonomirapportering i Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

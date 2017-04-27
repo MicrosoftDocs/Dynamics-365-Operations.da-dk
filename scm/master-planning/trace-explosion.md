@@ -1,5 +1,5 @@
 ---
-title: Bruge sporing for eksplosion
+title: Brug af sporing for udfoldning
 description: "Denne artikel beskriver, hvordan du kan bruge sporing til at undersøge årsagerne bag resultatet af en ordreudfoldning."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Bruge sporing for eksplosion
+# <a name="use-tracing-for-explosion"></a>Brug af sporing for udfoldning
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver, hvordan du kan bruge sporing til at undersøge årsagerne bag resultatet af en ordreudfoldning.
 
@@ -43,6 +46,8 @@ Du kan få vist detaljer om terminer og handlinger til en valgt ordre. På siden
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Behovsplaner](master-plans.md)
+
+
 
 

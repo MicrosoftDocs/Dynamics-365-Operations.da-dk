@@ -1,5 +1,5 @@
 ---
-title: "Organisere dine medarbejdere, ved hjælp af afdelinger, job og stillinger"
+title: "Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger"
 description: "Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer."
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere, ved hjælp af afdelinger, job og stillinger
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger
+
+[!include[banner](includes/banner.md)]
+
 
 Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer. 
 
 Følgende eksempel bruges til at illustrere de begreber, der er beskrevet i dette emne.
 
-|**Afdeling**|**Position**|**Job**|
+|**Afdeling**|**Stilling**|**Stilling**|
 |---|---|---|
 |**Salg**|Salgschef (øst)|Salgsdirektør|
 |**Salg**|Salgschef (vest)|Salgsdirektør|
 |**Salg**|Salgschef (centralt)|Salgsdirektør|
-|**Accounting**|Regnskabsansvarlig|Regnskabschef|
-|**Accounting**|Regnskab-A|Bogholder|
-|**Human resources**|Personalechef (øst)|Personalechef|
-|**Human resources**|Personalechef (vest)|Personalechef|
-|**Human resources**|Personalechef (centralt)|Personalechef|
+|**Regnskab**|Regnskabsansvarlig|Regnskabschef|
+|**Regnskab**|Regnskab-A|Bogholder|
+|**Personale**|Personalechef (øst)|Personalechef|
+|**Personale**|Personalechef (vest)|Personalechef|
+|**Personale**|Personalechef (centralt)|Personalechef|
 
  
  <a name="departments"></a>Afdelinger
@@ -79,7 +82,7 @@ Du kan oprette jobopgaver, der beskriver de grundlæggende opgaver, der skal udf
 
 ### <a name="job-functions"></a>Jobfunktioner
 
-Jobfunktioner er som arbejdsopgaver. En jobfunktion beskriver en eller flere opgaver, pligter eller ansvarsområder, der er tildelt til et job. Jobfunktioner kan tildeles job og bruges til at konfigurere og implementere berettigelsesregler for lønstrukturer. I følgende tabel vises eksempler på jobfunktioner.
+Jobfunktioner er som arbejdsopgaver. En jobfunktion beskriver en eller flere opgaver, pligter eller ansvarsområder, der er tildelt til et job. Jobfunktioner kan tildeles job og bruges til at konfigurere og implementere berettigelsesregler for lønstrukturer. Der vises eksempler på jobfunktioner i følgende tabel.
 
 | Stilling           | Jobfunktion                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Brug ansvarsområder til at angive arbejdsroller, processer, og produkter, som e
 <a name="positions"></a>Stillinger
 ----------
 
-Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En stilling er en individuel forekomst af et job. For eksempel er stillingen, "Salgschef (øst)," blot én af de stillinger, der er tilknyttet jobbet, "Salgschef". Stillinger, der findes i en afdeling og tildeles til arbejdere.
+Stillinger er et vigtigt element i et organisationshierarkis lavere niveau. En stilling er en individuel forekomst af et job. For eksempel er stillingen "Salgschef (øst)" blot én af de stillinger, der er tilknyttet jobbet "Salgschef". Stillinger findes i en afdeling og tildeles til arbejdere.
 ### <a name="position-creation-and-maintenance"></a>Oprette og vedligeholde stillinger
 
 -   Du kan få vist en oversigt over stillingsrelaterede systemændringer på en listeside.
@@ -161,6 +164,8 @@ For nogle poster kan du angive fremtidige ændringer i posten. Følgende oplysni
 </table>
 
 Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når han rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Opsætning af stregkodemasker"
-description: "Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkode masker på stregkoder."
+description: Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkodemasker til stregkoder.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
@@ -27,57 +27,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bar-code-masks"></a>Opsætning af stregkodemasker
 
-Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkode masker på stregkoder.
+[!include[banner](includes/banner.md)]
+
+
+Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkodemasker til stregkoder.
 
 <a name="set-up-bar-code-mask-characters"></a>Opsætning af stregkodemasketegn
 -------------------------------
 
-Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere stregkoder, der er scannet til salgsstedet (POS). Masker består af tegn, der fungerer som pladsholdere, som angiver formatet for stregkoder, der oprettes. Hvis du vil konfigurere en stregkodemaske, skal du konfigurere stregkodemasketegn. Gå til **detail- og commerce**&gt;**Lagerstyring**&gt;**stregkoder og etiketter**&gt;**maskere tegn**. Klik på **ny** til at oprette stregkodemasketegn. Masketegn kan oprettes for at angive følgende data i stregkoden.
+Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere stregkoder, der er scannet ind i POS-enheden. Masker består af tegn, der fungerer som pladsholdere, som angiver formatet for de stregkoder, der oprettes. Hvis du vil konfigurere en stregkodemaske, skal du konfigurere stregkodemasketegn. Gå til **Detail og handel** &gt; **Lagerstyring** &gt; **Stregkoder og labels** &gt; **Stregkodeopsætning**. Klik på **Ny** for at oprette stregkodemasketegn. Masketegn kan oprettes for at angive følgende stregkodedata.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Field**            | **Description**                                                                                                 |
-| **Product**          | Pladsholder for produkt-ID.                                                                                     |
-| **Any number**       | Bruges til at angive et tal, der er hårdt kodet i stregkoder.                                                  |
-| **Check digit**      | Betyder, at formatet stregkode i en stregkodemaske bruger et kontrolciffer for at bekræfte gyldigheden af en stregkode. |
-| **Size digit**       | Angiver størrelse på en stregkode, der er oprettet for en produktvariant, der omfatter størrelse.                                 |
-| **Color digit**      | Angiver farven på en stregkode, der er oprettet for en produktvariant, som omfatter farve.                               |
-| **Style digit**      | Angiver formatet i en stregkode, der er oprettet for en produktvariant, der indeholder en typografi.                             |
-| **EAN license code** | Pladsholder for EAN-licensen er udstedt for EAN-licenskoder.                                                       |
-| **Pris**            | Angiver pris pris integrerede stregkoder.                                                                   |
-| **Quantity**         | Angiver antallet i antal tilfældige vægt integreret stregkoder.                                                |
-| **Employee**         | Angiver stregkode målgruppe for medarbejder id-nummer, der bruges til at logge på stregkode POS.                                  |
-| **Customer**         | Angiver ID'ET kundesegment.                                                                                  |
-| **Indtastning af data**       | *Endnu ikke implementeret.*                                                                                          |
-| **Discount code**    | Angiver en rabatkode til en stregkode, der bruges til at tilføje en rabat til et punkt af salgstransaktion             |
-| **Gavekort**        | Angiver en gavekortnummer, når de udsteder eller betale med gavekort.                                               |
-| **Loyalty card**     | Tilføjer en fordelskunde i transaktionen, og kan bruges ved betaling af loyalitet.                             |
+| **Felt**            | **Beskrivelse**                                                                                                 |
+| **Produkt**          | Pladsholder for produkt-id.                                                                                     |
+| **Vilkårligt tal**       | Bruges til at angive et tal, der er hard-coded i stregkoder.                                                  |
+| **Kontrolciffer**      | Angiver, at stregkodeformatet i en stregkodemaske bruger et kontrolciffer for at bekræfte gyldigheden af en stregkode. |
+| **Størrelse - ciffer**       | Angiver størrelse i en stregkode, der er oprettet for en produktvariant, der omfatter størrelse.                                 |
+| **Farve - ciffer**      | Angiver farve i en stregkode, der er oprettet for en produktvariant, der omfatter farve.                               |
+| **Type - ciffer**      | Angiver type i en stregkode, der er oprettet for en produktvariant, der omfatter type.                             |
+| **EAN-licenskode** | Pladsholder for EAN-licensen er udstedt for EAN-licenskoder.                                                       |
+| **Pris**            | Angiver pris for stregkoder med integreret pris.                                                                   |
+| **Antal**         | Angiver antal i stregkoder med integreret antal/tilfældig vægt.                                                |
+| **Medarbejder**         | Angiver stregkodesegment for medarbejder id-nummer, der bruges til at logge på med stregkode på POS-enheden.                                  |
+| **Kunde**         | Angiver kunde-id-segment.                                                                                  |
+| **Datapost**       | *Ikke implementeret endnu.*                                                                                          |
+| **Rabatkode**    | Angiver en rabatkode til en stregkode, der bruges til at tilføje en rabat til en POS-transaktion             |
+| **Gavekort**        | Angiver en gavekortnummer, når der udstedes eller betales med gavekort.                                               |
+| **Fordelskundekort**     | Tilføjer en fordelskunde i transaktionen, og kan bruges ved betaling af loyalitet.                             |
 
-## <a name="define-bar-code-masks"></a>Definere stregkodemasker
-Når stregkodemasketegn er angivet for de nødvendige stregkodemasker, gå til **detail- og commerce**&gt;**Lagerstyring**&gt;**stregkoder og etiketter**&gt;**opsætning af maske i stregkode**. På denne side kan du definere stregkodemasker, der bruger de tidligere angivne tegn. Disse stregkode masker, der skal bruges ved oprettelse af stregkoder og vil også hjælpe med at identificere stregkoder, der er scannet ved POS.
+## <a name="define-bar-code-masks"></a>Definer stregkodemasker
+Når stregkodemasketegn er angivet for de nødvendige stregkodemasker, skal du gå til **Detail og handel** &gt; **Lagerstyring** &gt; **Stregkoder og labels**&gt;**Opsætning af stregkodemaske**. På denne side kan du definere stregkodemasker, der bruger de tidligere angivne tegn. Disse stregkodemasker, der skal bruges ved oprettelse af stregkoder og vil også hjælpe med til at identificere stregkoder, der er scannet ved POS-enheden.
 
-1.  Klik på **ny** til at oprette en ny stregkodemasken.
-2.  Angiv værdier i den **maske-ID** og **beskrivelse** felter, og vælg derefter en stregkodemasketypen i **Type** felt.
-3.  I den **generelle** skal du vælge en værdi i den **standard stregkode** felt og derefter angive præfikset stregkode, hvis den er påkrævet.
-4.  I den **stregkode maske målgruppe** skal du føje stregkode segmenter, der skal bruges i stregkoden skal oprettes.
+1.  Klik på **Ny** for at oprette en ny stregkodemaske.
+2.  Angiv værdier i felterne **Maske-id** og **Beskrivelse**, og vælg derefter en stregkodemasketypen i feltet **Type**.
+3.  I afsnittet **Generelt** skal du vælge en værdi i feltet **Stregkodestandard** og derefter angive præfikset stregkode, hvis det er påkrævet.
+4.  I afsnittet **Stregkodemaskesegment** skal du tilføje stregkodesegmenter, der skal bruges i den stregkode, der skal oprettes.
 
-Som et eksempel, hvis du vil oprette en stregkodemaske med maske-ID 'Produkt', gøre du følgende:
+Hvis du f.eks. vil oprette en stregkodemaske med maske-id'et 'Produkt', skal du gøre følgende:
 
-1.  Opret en ny stregkodemaske og vælg typen 'Produkt'.
-2.  Vælg en stregkode som standard, for eksempel 'kode 39'.
-3.  Angiv et præfiks, der skal bruges til nemt at identificere stregkoden. For eksempel '22.'
-4.  Tilføje en maske målgruppe. «Produkt» maske målgruppen vil være markeret.
-5.  Give en længde for målgruppen produkt, for eksempel '10'. Længden skal svare til længden af et produkt-ID, der normalt bruges i butikken. Masken, der vises som et eksempel på den **generelle** afsnit **maske**.
+1.  Opret en ny stregkodemaske, og vælg typen 'Produkt'.
+2.  Vælg en stregkodestandard, f.eks. 'Code 39'.
+3.  Angiv et præfiks, der skal bruges til nemt at identificere stregkoden. F.eks. '22'.
+4.  Tilføj et maskesegment. Maskesegmentet 'Produkt' vælges.
+5.  Angiv en længde for produktsegmentet, f.eks. '10'. Længden skal svare til længden af et produkt-ID, der normalt bruges i butikken. Masken vises som et eksempel i afsnittet **Generelt** under **Maske**.
 
-## <a name="assign-bar-code-masks-to-bar-codes"></a>Tildele stregkoder stregkodemasker
-Stregkodemasker skal tildeles stregkoder, før de kan bruges. Fortsætter det foregående eksempel, at stregkodemasken tildeles en stregkode, skal du gøre følgende:
+## <a name="assign-bar-code-masks-to-bar-codes"></a>Tildel stregkodemasker til stregkoder
+Stregkodemasker skal tildeles stregkoder, før de kan bruges. Hvis vi fortsætter med det foregående eksempel, skal du gøre følgende for at tildele stregkodemasken til en stregkode:
 
-1.  Gå til **virksomhedsadministration**&gt;**Setup**&gt;**stregkoder**. Klik på **ny** til at oprette en ny stregkode.
-2.  Angiv værdier i den **stregkode****setup** og ** opsætning ** felter.
-3.  I den **generelle** i sektionen på **stregkodetype** skal du vælge 'Kode 39'. I den **maske****ID** skal du vælge 'Produkt' masken har oprettet tidligere.
-4.  Under **størrelse**, Angiv '12'.
-5.  Click **Save**.
+1.  Gå til **Virksomhedsadministration** &gt; **Opsætning** &gt; **Stregkoder**. Klik på **Ny** for at oprette en ny stregkode.
+2.  Angiv værdier i felterne **Stregkode** **Opsætning** og **Opsætning**.
+3.  I afsnittet **Generelt** i feltet **Stregkodetype** skal du vælge 'Kode 39'. I feltet **Maske-****id** skal du vælge masken 'Produkt', der er oprettet tidligere.
+4.  Under **Størrelse** skal du angive '12'.
+5.  Klik på **Gem**.
 
-Stregkodemasken kan nu bruges til at oprette stregkoder for produkter. Ovenfor er eksempler på, hvordan du opretter stregkodemasker for produkter, men de også illustrere, hvordan du opretter stregkodemasker for alle typer andre understøttede stregkode. Stregkodemasker, former og længder bør justeres til brug i dit miljø.
+Stregkodemasken kan nu bruges til at oprette stregkoder for produkter. Ovenstående trin er eksempler på, hvordan du opretter stregkodemasker for produkter, men de illustrerer også, hvordan du opretter stregkodemasker for alle andre typer understøttede stregkoder. Stregkodemasker, typer og længder bør justeres til brug i dit specifikke miljø.
+
+
 
 

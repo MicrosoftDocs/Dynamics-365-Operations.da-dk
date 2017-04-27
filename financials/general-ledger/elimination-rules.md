@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Elimineringsregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Dette emne indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
 
-Der kræves elimineringsposteringer, når en juridisk enhed for et moderselskab har forretninger med en eller flere juridiske enheder for datterselskaber og bruger konsolideret regnskabsaflæggelse. Konsoliderede regnskaber må kun indeholde transaktioner, der opstår mellem den konsoliderede organisation og de andre enheder uden for de pågældende organisationer. Derfor skal transaktioner mellem juridiske enheder, der er en del af den samme organisation være fjernet, eller elimineres fra regnskabet, så de ikke vises i finansielle rapporter. Der er flere måder at rapportere om elimineringer på:
+Der kræves elimineringsposteringer, når en juridisk enhed for et moderselskab har forretninger med en eller flere juridiske enheder for datterselskaber og bruger konsolideret regnskabsaflæggelse. Konsoliderede regnskaber må kun indeholde transaktioner, der opstår mellem den konsoliderede organisation og de andre enheder uden for de pågældende organisationer. Derfor skal transaktioner mellem de juridiske enheder, der er del af samme organisation, være fjernet, eller elimineret, fra Finans, så de ikke vises i regnskabsrapporter. Der er flere måder at rapportere om elimineringer på:
 
 -   En elimineringsregel kan oprettes og behandles i et konsoliderings- eller elimineringsregnskab.
 -   Regnskabsaflæggelse kan bruges til at vise elimineringskonti og -dimensioner for en bestemt række eller kolonne.
@@ -129,27 +132,29 @@ Din juridiske enhed, juridisk enhed A, sælger dimser til en anden juridisk enhe
 Alle disse transaktioner skaber interne transaktioner, der bogføres på skyldig til- og skyldig fra-konti. Derudover kan disse transaktioner omfatte avance- eller tabsbeløb, når beløbet for det interne salg ikke er lig med kostprisen for solgte varer
 
 ## <a name="set-up-elimination-rules"></a>Konfigurere elimineringsregler
-Når du opretter elimineringsregler i Dynamics 365 for operationer, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på bortskaffelse. De fleste kunder navngive den, samhandelspartnere Partner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, derefter skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
+Når du opretter elimineringsregler i Dynamics 365 for Operations, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på eliminering. De fleste kunder navngiver den Samhandelspartner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
 
-Opsætningen for elimineringer, der findes i området Opsætning i modulet konsolideringer. Når du angiver en beskrivelse af reglen, skal du vælge det regnskab, som elimineringskladden bogføres til. Dette skal være et firma, der har **brug til økonomisk eliminering** valgt i opsætningen af juridisk enhed. 
+Opsætningen for elimineringer findes i området Opsætning i modulet Konsolideringer. Når du angiver en beskrivelse af reglen, skal du vælge det regnskab, som elimineringskladden skal bogføres til. Det skal være et regnskab, hvor **Brug til økonomisk eliminering** er valgt i opsætningen af den juridiske enhed. 
 
-Du kan angive en dato, hvor elimineringsreglen træder i kraft, og når det er udløbet, hvis det er nødvendigt. Du skal angive **aktive** til **Ja** Hvis det skal være tilgængelige i forslagsprocessen eliminering. Vælg et kladdenavn, der er en slags **eliminering**.
+Du kan angive en dato, hvor elimineringsreglen træder i kraft, og også hvor den udløber, hvis det er nødvendigt. Du skal indstille **Aktiv** til **Ja**, hvis den skal være tilgængelig i elimineringsforslagsprocessen. Vælg et kladdenavn, der har en **Eliminering**-type.
 
-Når du har defineret de grundlæggende elementer, du kan definere de faktiske behandling af regler ved at klikke på **linjer**. Der er to muligheder for elimineringer, afhjælper bevægelse beløbet eller definere et fast beløb. 
+Når du har defineret de grundlæggende elementer, du kan definere de faktiske behandlingsregler ved at klikke på **Linjer**. Der er to elimineringsmuligheder, eliminering af nettoændringsbeløbet eller definition af et fast beløb. 
 
-Vælg kildekontoen. Du kan bruge en stjerne (\*) som jokertegn. For eksempel 1\* ville vælge alle konti, der starter med 1, som en datakilde til fordelingen. 
+Vælg kildekontoen. Du kan bruge en stjerne (\*) som jokertegn. For eksemplet vil 1\* vælge alle konti, der starter med 1, som en datakilde til tildelingen. 
 
-Når du har valgt dine kildekonti, den **konto specifikation** bestemmer konto fra det destinationsregnskab, der bruges. Vælg **kilde** Hvis du vil bruge den samme primære konto, der er defineret i den **kilde** konto. Hvis du vælger **brugerdefinerede**, og derefter skal du angive en destinationskonto. 
+Når du har valgt dine kildekonti, bestemmer **Specifikation af regnskab** den konto fra destinationsregnskabet, der bruges. Vælg **Kilde**, hvis du vil bruge den samme hovedkonto, der er defineret i **Kilde**-kontoen. Hvis du vælger **Brugerdefineret**, skal du angive en destinationskonto. 
 
-Specifikation af dimension fungerer på samme måde. Hvis du vælger **kilde**, bruges de samme dimensioner i modtagervirksomheden som kilderegnskab. Hvis du vælger **brugerdefinerede**, skal du angive dimensionerne i modtagervirksomheden ved at klikke på den **destinationsdimensioner** menupunkt. 
+Dimensionsspecifikationen fungerer på samme måde. Hvis du vælger **Kilde**, bruges de samme dimensioner i modtagervirksomheden som i kilderegnskabet. Hvis du vælger **Brugerdefineret**, skal du angive dimensionerne i modtagervirksomheden ved at klikke på menupunktet **Destinationsdimensioner**. 
 
-Vælg kildedimensioner og de økonomiske dimensioner og værdier, der bruges som kilde til fjernelse.
+Vælg de kildedimensioner og de økonomiske dimensioner og værdier, der bruges som kilde til elimineringen.
 
 ## <a name="process-elimination-transactions"></a>Anvend elimineringsposter
-Der er to måder til at behandle elimineringsposteringer under processen konsolideres online eller ved at oprette en elimineringskladden og kører processen til fjernelse. Dette afsnit fokuserer på oprettelsen af kladden og kører elimineringsprocessen. 
+Der er to måder at behandle elimineringsposteringer på: under onlinekonsolideringsprocessen eller ved at oprette en elimineringskladde og køre elimineringsprocessen. I dette afsnit fokuseres på oprettelsen af kladden og kørsel af elimineringsprocessen. 
 
-Vælg i en virksomhed, der er defineret som et elimineringsregnskab, **elimineringskladden** i modulet konsolideringer. Når du har valgt kladdenavnet, skal du klikke på **linjer**. Du kan køre forslaget ved at vælge den **forslag** i menuen og derefter vælge **elimineringsforslag**.
+Vælg **Elimineringskladde** i modulet Konsolideringer i en virksomhed, der er defineret som et elimineringsregnskab. Når du har valgt navnet på kladden, skal du klikke på **Linjer**. Du kan køre forslaget ved at vælge menuen **Forslag** og derefter vælge **Elimineringsforslag**.
 
-Vælg det regnskab, der er kilden til de konsoliderede data, og vælg derefter den regel, du vil behandle. Angiv en startdato for at starte søgningen efter eliminering beløb og en slutdato for at søge slutdato for eliminering beløb. Den **bogføringsdato GL** felt er den dato, der bruges til bogføring af kladde i Finans. Når du klikker på **OK**, kan du gennemse beløbene og bogføre kladden.
+Vælg det regnskab, der er kilden til de konsoliderede data, og vælg derefter den regel, du vil behandle. Angiv en startdato for at starte søgningen efter elimineringsbeløb og en slutdato, hvor søgningen efter elimineringsbeløb skal afsluttes. Feltet **Finansposteringsdato** er den dato, der bruges til bogføring af kladden i finans. Når du klikker på **OK**, kan du gennemse beløbene og bogføre kladden.
+
+
 
 

@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16161
 ms.assetid: 646d560c-f856-4701-b4ca-44e357ef09b8
 ms.search.region: Global
@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="online-store-overview"></a>Oversigt over Onlinebutik
+
+[!include[banner](includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Operations.
 
@@ -50,5 +53,7 @@ Før du opretter en onlinebutik, skal du definere det navigationshierarki for de
 
 ## <a name="organization-hierarchies"></a>Organisationshierarkier
 Organisationshierarkier bruges til at strukturere detailkanaler. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Når du opretter onlinebutikker, kan du føje dem til et organisationshierarki. Butikkerne deler derefter de data, der bruges til udvalg, genbestilling og rapportering. Når du opretter et organisationshierarki, tildeler du et formål til det. Formålet angiver, hvordan hierarkiet bruges i en forretningsstruktur. Opret et organisationshierarki for butiksdriften, og brug hierarkiet til udvalg, genbestilling og rapportering. Alternativt kan du oprette et separat organisationshierarki til hvert formål. Du kan også oprette flere hierarkier med samme formål og tildele særskilte kanaler til hver af disse. Hvis du vil udgive detailproduktkataloger i onlinebutikken, bør du som minimum føje onlinebutikken til et organisationshierarki for sortimenter. Produkterne i et katalog udvælges fra de sortimenter, der er tildelt onlinebutikken. Når kataloget er udgivet, sammenligner udgivelsesprocessen ikrafttrædelsesdatoerne for det sortiment, der er tildelt onlinebutikken, med produkterne i kataloget, for at bestemme, hvilke produkter der skal være tilgængelige i onlinebutikken.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Refundere kunder
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du kan oprette refusionsposteringer for en gruppe af debitorer. Hvis en kunde har en kreditsaldo, kan du refundere kunden beløbet svarende til saldoen. 
 
 Følgende tabel viser de forudsætninger, der skal være på plads, før du starter.
@@ -47,6 +50,8 @@ Når du opretter refusionsposteringer, oprettes der en kreditorfaktura for belø
     Kreditbeløbene overføres til kundernes kreditorkonti og behandles som almindelige betalinger. Hvis en kunde ikke har en kreditorkonto, oprettes der automatisk en engangskreditorkonto for kunden.
 3.  Til at få vist de refusionsposter, der er oprettet, kan du bruge siden **Refusion**.
 4.  I Kreditor skal du oprette en betaling for kreditorfakturaer, der er oprettet af refusionsprocessen.
+
+
 
 
 

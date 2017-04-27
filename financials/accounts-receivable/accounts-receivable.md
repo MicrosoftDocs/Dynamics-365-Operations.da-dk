@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
-Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger.
+[!include[banner](../includes/banner.md)]
+
+
+Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger. 
 
 Du kan oprette debitorfakturaer baseret på salgsordrer eller følgesedler. Du kan også angive fritekstfakturaer, der ikke er knyttet til salgsordrer. Du kan modtage betalinger ved at bruge flere forskellige betalingsmåder. De omfatter veksler, kontanter, checks, kreditkort og elektronisk betaling. Hvis din virksomhed indeholder flere juridiske enheder, kan du benytte centraliserede betalinger til at registrere betalinger i én juridisk enhed på vegne af andre juridiske enheder.
+
+
 
 
 

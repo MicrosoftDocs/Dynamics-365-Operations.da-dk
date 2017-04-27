@@ -1,6 +1,6 @@
 ---
 title: "Oprette dokumentation eller undervisning ved hjælp af opgaveregistreringer"
-description: "Dette emne forklarer, hvilke Arbejdsrutineoptager og hjælpelinjer opgave er, hvordan du opretter opgaven optagelser, og hvordan du tilpasser Microsoft opgave leder og inkludere dem i din hjælp."
+description: "Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,19 +27,22 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Oprette dokumentation eller undervisning ved hjælp af opgaveregistreringer
-Dette emne forklarer, hvilke Arbejdsrutineoptager og hjælpelinjer opgave er, hvordan du opretter opgaven optagelser, og hvordan du tilpasser Microsoft opgave leder og inkludere dem i din hjælp.
+
+[!include[banner](../includes/banner.md)]
+
+Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
 
 <a name="learn-about-task-recorder"></a>Få mere at vide om Arbejdsrutineoptager
 -------------------------
 
-Arbejdsrutineoptager er en Microsoft Dynamics-365 for Operations-værktøjet, som du kan bruge til at registrere de handlinger, du tager i produktets brugergrænseflade (UI). Når du bruger Arbejdsrutineoptager – registreres alle de hændelser, du udfører i Brugergrænsefladen, på serveren, herunder tilføjelse af værdier, ændring af indstillinger og fjernelse af data. De trin, du optager, bliver samlet kaldes en *opgaveregistrering*. Opgaveregistreringer kan bruges på mange måder:
+Arbejdsrutineoptager er et værktøj i Microsoft Dynamics 365 for Operations, du kan bruge til at registrere de handlinger, du udfører i produktets brugergrænseflade (UI). Når du bruger Arbejdsrutineoptager – registreres alle de hændelser, du udfører i Brugergrænsefladen, på serveren, herunder tilføjelse af værdier, ændring af indstillinger og fjernelse af data. De trin, du optager, bliver samlet kaldes en *opgaveregistrering*. Opgaveregistreringer kan bruges på mange måder:
 
--   **Opgaveregistreringer kan afspilles som opgaveguide.** Der er en integrerende del af Dynamics-365 for at hjælpe operationer oplevelse opgave vejledninger. Vejledning til en opgave er en kontrolleret, automatiseret, interaktiv oplevelse gennem trinnene til en forretningsproces. Brugeren bliver instrueret i at fuldføre hvert trin ved hjælp af en pop op-meddelelse (eller "boble"), som vil være animeret på tværs af brugergrænsefladen og pege på det element i brugergrænsefladen, som brugeren skal arbejde med. "bubble" indeholder også oplysninger om, hvordan du arbejder med elementet, som "Klik her" eller "Angiv en værdi i dette felt". Vejledning til en opgave kører mod brugerens aktuelle datasæt, og de data, der er angivet, gemmes i brugerens miljø.
--   **Opgave optagelser kan vises som en trinvis fremgangsmåde i Hjælp-ruden.** Du kan bruge Hjælp-ruden for at søge efter og få vist opgaven optagelser. Du kan få adgang til Hjælp-ruden ved at klikke på den **?** Ikonet i den øverste navigationslinje, eller du kan bruge den genvejstastekombination, **Ctrl + Skift +?**. Du kan læse trinene i en opgave, der optager i Hjælp-ruden, eller du kan vælge for at afspille optagelsen som en opgave, så den tager dig gennem Brugergrænsefladen.
--   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek (Business Process Modeler) i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgave-optagelser, der er gemt i et bibliotek med BPM kan vises i Dynamics 365 til handlinger som hjælp.
+-   **Opgaveregistreringer kan afspilles som opgaveguide.** Opgaveguider er en integreret del af Hjælp-oplevelsen i Dynamics 365 for Operations. En opgaveguide er en kontrolleret, automatiseret og interaktiv oplevelse, der fører dig gennem trinene i en forretningsproces. Brugeren bliver instrueret i at fuldføre hvert trin ved hjælp af en pop op-meddelelse (eller "boble"), som vil være animeret på tværs af brugergrænsefladen og pege på det element i brugergrænsefladen, som brugeren skal arbejde med. "Boblen" indeholder også oplysninger om, hvordan du arbejder med elementet, f.eks. "Klik her" eller "Angiv en værdi i dette felt". En opgaveguide kører i forhold til brugerens aktuelle datasæt, og de data, der er angivet, gemmes i brugerens miljø.
+-   **Opgaveregistreringer kan vises som en trinvis fremgangsmåde i Hjælp-ruden.** Du kan bruge Hjælp-ruden til at søge efter og få vist opgaveregistreringer. Du kan få adgang til Hjælp-ruden ved at klikke på ikonet **?**. i den øverste navigationslinje, eller du kan bruge genvejstastekombinationen **Ctrl + Skift +?**. Du kan læse trinene i en opgaveregistrering i Hjælp-ruden, eller du kan vælge at afspille optagelsen som en opgaveguide, så du bliver guidet gennem brugergrænsefladen.
+-   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek (Business Process Modeler) i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgaveregistreringer, der er gemt i et BPM-bibliotek, kan vises i Dynamics 365 for Operations som Hjælp.
 -   **Opgaveregistreringer kan gemmes som Word-dokumenter.** På den måde kan du nemt oprette kursusguider, der kan udskrives.
 
-Du kan oprette dine egne optagelser af opgaven, spille opgave optagelser fra Microsoft eller ændre Microsoft opgave optagelser for at afspejle din konfiguration. Du kan finde flere oplysninger om Arbejdsrutineoptager, i [Arbejdsrutineoptager i Dynamics 365 i forbindelse med](task-recorder.md).
+Du kan oprette dine egne opgaveregistreringer, afspille opgaveregistreringer fra Microsoft eller ændre opgaveregistreringer fra Microsoft, så de afspejler din konfiguration. Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager i Dynamics 365 for Operations](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Planlægge din opgaveregistrering
 Husk følgende oplysninger på, uanset om du skal oprette en ny opgave eller basere din registrering på en Microsoft-opgaveregistrering.
@@ -55,11 +58,11 @@ Husk følgende oplysninger på, uanset om du skal oprette en ny opgave eller bas
 **Skriv din beskrivelse og anmærkninger i forvejen**
 
 -   I begyndelsen af hver opgaveregistrering er der et beskrivelsesfelt, hvor du kan angive en introduktion til registreringen. Det er en god ide at skrive og gemme beskrivelsen på forhånd i et separat dokument, så du kan kopiere og indsætte den i opgaveregistreringen, mens du optager. På den måde kan du bruge tid på at finpudse teksten, når du ikke er i gang med at registrere. Klipning og indsætning af tekst betyder, at registreringsprocessen går hurtigere og problemfrit.
--   For hvert trin i en opgaveregistrering kan du oprette anmærkninger. Anmærkninger vises under afspilning af en opgaveguide i "boblen" som noter over eller under teksten i trinnet. Når den vises som tekst i ruden hjælp, vises anmærkninger som tekst indbygget i trin. Som med beskrivelsen er det en god ide at skrive og gemme dine anmærkninger i et separat dokument. Når du optager opgaveregistreringen, kan du klippe og indsætte anmærkningerne fra dette dokument.
+-   For hvert trin i en opgaveregistrering kan du oprette anmærkninger. Anmærkninger vises under afspilning af en opgaveguide i "boblen" som noter over eller under teksten i trinnet. Når anmærkninger vises som tekst i ruden Hjælp, vises de som tekst, der er integreret i trinnet. Som med beskrivelsen er det en god ide at skrive og gemme dine anmærkninger i et separat dokument. Når du optager opgaveregistreringen, kan du klippe og indsætte anmærkningerne fra dette dokument.
 
 **Forstå de forskellige typer af anmærkninger** Alle anmærkninger er valgfrie. Tilføj dem kun, når de giver brugeren nyttige oplysninger.
 
--   **Afsnit**: en titel anmærkning vises før teksten trin, der optager en opgave automatisk genererer. Anmærkningen titel vises i programguiden opgave over automatisk genererede teksten. Brug denne type anmærkning til at forklare, hvorfor brugeren udfører trinnet eller til at give ekstra kontekst.
+-   **Bemærk!** Der vises en anmærkning til titlen før den trintekst, som Arbejdsrutineoptager genererer automatisk. Anmærkningen til titlen vises i opgaveguiden over den automatisk genererede tekst. Brug denne type anmærkning til at forklare, hvorfor brugeren udfører trinnet eller til at give ekstra kontekst.
 
 Dette er redigeringsruden, som du ser, når du tilføjer en anmærkning, mens du opretter din registrering. Angiv en titelanmærkning i feltet **Titel**. 
 
@@ -75,11 +78,11 @@ Dette er redigeringsruden, som du ser, når du tilføjer en anmærkning, mens du
 
 [![screen3](./media/screen3.png)](./media/screen3.png) 
 
-Dette er, hvordan noter anmærkningen ser ud i "boble" i opgave-vejledning.
+Sådan ser noteanmærkningen ud i "boblen" i opgaveguiden.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Oplysninger om trin**: disse anmærkninger, der oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted på en formular &lt;**Arbejdsrutineoptager**&lt; ** Tilføj info trin. ** Info trin vises som en nummererede trin på sted, du indsætter, selvom intet blev registreret i Brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når en info-trin er knyttet til et kontrolelement, bliver opgaven guide "boble" peger på kontrolelementet, når opgave-vejledning, der afspilles. I Hjælp-ruden vises en info trin anmærkning som et nummererede trin med teksten, du har angivet. Brug info trin til at forberede brugeren til de næste trin til at beskrive de skridt, der skal udføres uden for Dynamics 365 for operationer eller til at henvise til andre optagelser (selvom du kan oprette hyperinks i anmærkningerne.).
+-   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin. **Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles. I Hjælp-ruden vises en infotrinanmærkning som et nummererede trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for Dynamics 365 for Operations, eller at henvise til andre registreringer (selvom du ikke kan oprette links i anmærkningerne).
 
 **Fastlægge, hvor lang registreringen skal være**
 
@@ -89,15 +92,15 @@ Dette er, hvordan noter anmærkningen ser ud i "boble" i opgave-vejledning.
 -   Hvis processen omfatter flere opgaver, som personen sandsynligvis udfører på én gang, kan du holde opgaverne i én registrering, for eksempel "Konfigurer og tildel funktionalitetsprofiler".
 -   Hvis det er noget, som en person gør én gang (f.eks. konfiguration) og derefter en anden opgave, som vedkommende kan udføre umiddelbart efter, men som også kan udføres flere gange, kan du bryde dem op i to opgaveregistreringer.
 
-**Beslutte, hvor i Brugergrænsefladen til at starte en optagelse** siden, du arbejder på, når du begynder at optage en optagelse opgave påvirker hvilken side, vises guiden opgave for. Hvis du vil registrere din opgave skal vises i ruden hjælp, når en bruger klikker på Hjælp på siden Finans parametre, skal du starte optagelsen på siden Finans parametre. **Gemme optagelser som .axtr-filer** Når du er færdig med at oprette eller redigere en opgaveregistrering, får du vist flere muligheder for, hvordan du vil downloade eller gemme registreringen. Du kan hente filen som en opgaveregistreringspakke (.axtr), hente den som en råfil med registreringer (.xml), hente den som et Word-dokument eller gemme filen i et LCS-bibliotek. Det er en god ide altid at gemme din opgaveregistrering som en pakkefil med opgaveregistrering (.axtr). Dette vil gøre det nemmere at vedligeholde filen, hvis procedurer eller anmærkninger skal ændres senere. Hvis du vil hente filen som et Word-dokument, kan du også gemme den som en pakkefile med opgaveregistrering.
+**Beslut, hvor i brugergrænsefladen en registrering starter** Siden, du arbejder på, når du begynder at registrere en opgaveregistrering påvirker, hvilken side opgaveguiden vises for. Hvis du f.eks. ønsker, at din opgaveregistrering skal vises i Hjælp-ruden, når en bruger klikker på Hjælp på siden Finansparametre, skal du starte registreringen på siden Finansparametre. **Gemme optagelser som .axtr-filer** Når du er færdig med at oprette eller redigere en opgaveregistrering, får du vist flere muligheder for, hvordan du vil downloade eller gemme registreringen. Du kan hente filen som en opgaveregistreringspakke (.axtr), hente den som en råfil med registreringer (.xml), hente den som et Word-dokument eller gemme filen i et LCS-bibliotek. Det er en god ide altid at gemme din opgaveregistrering som en pakkefil med opgaveregistrering (.axtr). Dette vil gøre det nemmere at vedligeholde filen, hvis procedurer eller anmærkninger skal ændres senere. Hvis du vil hente filen som et Word-dokument, kan du også gemme den som en pakkefile med opgaveregistrering.
 
 ## <a name="create-your-task-recording"></a>Oprette din opgaveregistrering
-Se detaljerede gennemgå trinnene i [hvordan du opretter en opgave optagelse](task-recorder.md).
+Du kan finde en detaljeret gennemgang i [Sådan opretter du en opgaveregistrering](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse Microsofts opgaveregistreringer
-Du kan hente og redigere Microsofts opgave optagelser for at bruge dem til dine egne Hjælp-dokumentationen eller undervisningsmaterialer. Følg nedenstående trin, når du vil hente en Microsoft-opgaveregistrering:
+Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til din egen Hjælp-dokumentation eller dit eget undervisningsmateriale. Følg nedenstående trin, når du vil hente en Microsoft-opgaveregistrering:
 
-1.  Dynamics 365 for operationer, Åbn Arbejdsrutineoptager. Arbejdsrutineoptager findes i menuen **Indstillinger**.
+1.  Åbn Arbejdsrutineoptager i Dynamics 365 for Operations. Arbejdsrutineoptager findes i menuen **Indstillinger**.
 2.  Klik i ruden Arbejdsrutineoptager på **Vedligehold en registrering.**
 3.  Under **Hvor er registreringen?** skal du klikke på **Det er et LCS-bibliotek**.
 4.  Klik på **Vælg LCS-biblioteket**.
@@ -105,26 +108,28 @@ Du kan hente og redigere Microsofts opgave optagelser for at bruge dem til dine 
 6.  I træet skal du vælge den biblioteksnode for forretningsproces, som opgaveregistreringen er tilknyttet.
 7.  Klik på **OK**.
 8.  Klik på **Start**.
-9.  På dette tidspunkt trin til optagelse, ændre eventuelle trin, efterhånden til at indspille den igen. **Bemærk**: Hvis du kun vil ændre teksten i en optagelse, kan du åbne registrering i **Rediger en optagelse anmærkninger** tilstand, og derefter gemme den.
+9.  På dette tidspunkt skal du gå igennem registreringen trin for trin og ændre eventuelle trin, efterhånden som du registrerer dem igen. **Bemærk!** Hvis du kun vil ændre teksten i en registrering, kan du åbne registreringen i tilstanden **Rediger en registrerings anmærkninger**, og derefter gemme den.
 10. Når registreringen er afspillet helt, skal du klikke på **Stop** på værktøjslinjen Arbejdsrutineoptager øverst på skærmen.
 11. Vælg, hvordan du vil gemme Arbejdsrutineoptager.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Medtage optagelserne opgave i Hjælp-ruden
-For at få vist din egen brugerdefinerede opgave-optagelser i ruden hjælp, så de kan afspilles som opgave hjælpelinjer eller vises som tekst, skal du gemme optagelserne opgaven til din egen BPM-bibliotek og derefter opdatere din Hjælp-systemparametre til at pege på biblioteket BPM. Yderligere oplysninger finder du [forbinder Hjælp-systemet.](../get-started/help-connect.md)
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Medtag dine opgaveregistreringer i Hjælp-ruden
+For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Du kan finde flere oplysninger i [Tilslut hjælpesystemet.](../get-started/help-connect.md)
 
 <a name="see-also"></a>Se også
 --------
 
-[I forbindelse med Dynamics 365 hjælp](..\get-started\help-overview.md)
+[Dynamics 365 for Operations Hjælp](..\get-started\help-overview.md)
 
 [Tilslut hjælp](..\get-started\help-connect.md)
 
-[Arbejdsrutineoptager i Dynamics 365 til operationer](task-recorder.md)
+[Arbejdsrutineoptager i Dynamics 365 for Operations](task-recorder.md)
 
-[Tilføjet for nylig opgave optager funktioner](\core\get-started\recently-added-editing-features-in-task-recorder)
+[Funktioner tilføjet for nylig i Arbejdsrutineoptager](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Oprette nye biblioteker til uddannelse til Dynamics AX i levetidsservices ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Oprettelse af nye uddannelsesbiblioteker til Dynamics AX i Lifecycle Services ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Oprette avancerede emner i Hjælp med Arbejdsrutineoptager (eksternt link)](https://mbspartner.microsoft.com/AX/Videos/970)
+[Opret avancerede emner i Hjælp med Arbejdsrutineoptager (eksternt link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
 
 

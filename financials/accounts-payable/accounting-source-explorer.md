@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-source-explorer"></a>Sporing af regnskabskilde
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om Sporing af regnskabskilde, som du kan bruge til detaljeret analyse af kildeoplysninger bag regnskabsposter i finansmodulet.
 
-Sporing af regnskabskilde er en ny side, der viser kildeoplysninger. Du kan bruge regnskabsmæssige kilde explorer enten som et separat værktøj eller til at analysere detaljerne bag regnskabsposter i finansmodulet. Du kan eksempelvis bruge regnskabsmæssige kilde explorer til at få de mest detaljerede kildeoplysninger til en balance i revisionssporet saldo eller til en bilagspostering. Du kan derefter bruge funktionen Eksportér til Microsoft Excel til at inddele oplysningerne i Microsoft Excel yderligere (for eksempel i en pivottabel eller i en pivottabelrapport).
+Sporing af regnskabskilde er en ny side, der viser kildeoplysninger. Du kan bruge Sporing af regnskabskilde enten som et separat værktøj eller til at analysere detaljerne bag regnskabsposter i finansmodulet. Du kan eksempelvis bruge Sporing af regnskabskilde til at få de mest detaljerede kildeoplysninger til en saldo i råbalancen eller til en bilagspostering. Du kan derefter bruge funktionen Eksportér til Microsoft Excel til at inddele oplysningerne i Microsoft Excel yderligere (for eksempel i en pivottabel eller i en pivottabelrapport).
 
 Sporing af regnskabskilde viser altid det samme samlede beløb pr. finanskonto som Finans viser (for eksempel i råbalancen). Som med råbalancen kan du få vist segmenter i separate kolonner. Du skal blot vælge det relevante sæt økonomiske dimensioner. 
 
 Du kan bruge parametre til at definere et datointerval for analysen. Denne funktionalitet minder også om funktionerne i råbalance.
 
-Explorer Viser yderligere oplysninger, der er baseret på regnskabsfordelinger for alle dokumenter, der bruger kilde dokument framework, regnskabsmæssige kilde og eventuelt projekt regnskabsfordelinger. Disse oplysninger omfatter typen af pengebeløb, projekt, aktivitet, kategori og linjeegenskaben. Her er nogle eksempler på den analyse, du kan foretage:
+Sporing af regnskabskilde viser yderligere oplysninger, der er baseret på regnskabsfordelinger, og eventuelt projektregnskabsfordelinger for alle dokumenter, der bruger kildedokumentstrukturen. Disse oplysninger omfatter typen af pengebeløb-, projekt-, aktivitets-, kategori- og linjeegenskaben. Her er nogle eksempler på den analyse, du kan foretage:
 
 -   Afvigelser mellem indkøbsordrer og kreditorfakturaer, da hver afvigelse er repræsenteret af typen pengebeløb, som f.eks. gebyrafvigelse
 -   Fakturerbare og ikke-fakturerbare timer og udgifter pr. projekt, virksomhedsenhed og hovedkonto
@@ -46,5 +49,7 @@ Til kildedokumenter, der anvender begrebet reference-id'er til kildedokumenter, 
 -   Rabatter pr. leverandør, produkt, afdeling
 
 For disse dokumenter kan du også navigere til det faktiske kildedokument fra Sporing af regnskabskilde.
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Vedligehold ordreforslag
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om, hvordan du administrerer planlagte ordrer. Den beskriver, hvordan du kan opdatere status for planlagte ordrer, autorisere dem og filtrere for planlagte ordre, der har samme status som en valgte planlagt ordre.
 
 Du kan administrere ordreforslag fra arbejdsområdet **Varedisponering**, listen **Ordreforslag** eller listerne **Produktionsordreforslag**, **Planlagte indkøbsordrer** og **Planlagt overførsel**. Du kan bruge feltet **Status ** til at registrere status. Følgende værdier bruges:
@@ -48,6 +51,8 @@ Når et ordreforslag er autoriseret, flyttes det til ordresektionen i det releva
 <a name="see-also"></a>Se også
 --------
 
-[Master plans](master-plans.md)
+[Behovsplaner](master-plans.md)
+
+
 
 

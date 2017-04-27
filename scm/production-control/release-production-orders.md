@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="release-production-orders"></a>Frigive produktionsordrer
 
+[!include[banner](../includes/banner.md)]
+
+
 En frigivet produktionsordre er en ordre, der er godkendt til produktion. Udtrykket Frigivet bruges til at beskrive en tilstand i produktionsordrens levetid, hvor produktionsordren er tilgængelig til udførelse på produktionen og lagerprocesser. 
 
 <a name="characteristics-of-the-released-state"></a>Egenskaber for tilstanden Frigivet
@@ -42,7 +45,7 @@ Tilstanden **Frigivet** er en af tilstandene i produktionsordrens levetid. Produ
 -   I forbindelse med materialer, der er fysisk reserveret, genereres lagerarbejde til at plukke materialer til produktionsordren.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Frigive job til produktionen
-Når en produktionsordre er blevet frigivet, er produktionsjob, der vedrører ordren, synlige og klar til registrering. Erhvervsdrivende kan foretage jobregistreringer, Start, Stop og afslutning på enten den **Job card terminal** side eller **Job card-enhed** side. Den registrerede tid og antal overføres automatisk fra registreringssider til produktionskladder for at holde styr på den forbrugte tid og antal.
+Når en produktionsordre er blevet frigivet, er produktionsjob, der vedrører ordren, synlige og klar til registrering. Operatørerne kan foretage jobregistreringer, f.eks. Start, Stop og Færdiggørelse på enten siden **Jobkortsterminal** eller siden **Jobkortenhed**. Den registrerede tid og det registrerede antal overføres automatisk fra registreringssiderne til produktionskladder for at holde styr på den forbrugte tid og det forbrugte antal.
 
 ## <a name="route-cards"></a>Rutekort
 Et rutekort giver en oversigt over oplysninger, der stammer fra opsætninger af rute og operation og fra metoder til grovplanlægning og finplanlægning.
@@ -54,11 +57,13 @@ Et jobkort viser hvert job for en handling i detaljer og omfatter opsætning, pr
 Et jobkort viser de enkelte jobnumre for en bestemt handling. Der vises et job på hver side. De job, der findes på et jobkort, og deres forventede tidspunkter stammer fra opsætningsoplysninger om rute og drift. Fra et jobkort kan du åbne siden **Produktionskladdelinjer**, **jobkort**. De personer, der kører operationsressourcer, kan give tilbagemeldinger om produktionsprocessen. Der er felter, hvor du kan angive forbrugsstatistikker og oplysninger som f.eks antallet af fejl.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Lagersted for pluk af råvarer
-Arbejde til pluk af råvarer genereres under frigivelse. Arbejde oprettes kun for den mængde materialer, der er fysisk reserveret for produktionsordren, før ordren er frigivet. Der kræves følgende opsætning til at generere lagersted arbejde til råvarer pluk:
+Arbejde til pluk af råvarer genereres under frigivelse. Arbejde oprettes kun for den mængde materialer, der var fysisk reserveret til produktionsordren, før ordren blev frigivet. Der kræves følgende opsætning for at generere lagerstedsarbejde til råvarepluk:
 
 -   En bestemmelse for placering for pluk af råvarer, som bestemmer, hvilken lagerlokalitet materialerne skal plukkes i
 -   En bølgeskabelon for råvarer, hvor politikkerne for udførelse af lagerarbejde konfigureres
 -   En indlagringslokation for produktion, der bestemmer, hvor materialer lægges på lager
+
+
 
 
 

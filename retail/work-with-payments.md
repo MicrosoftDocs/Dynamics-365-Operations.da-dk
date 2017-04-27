@@ -1,5 +1,5 @@
 ---
-title: Betalingsformer, der findes i et callcenter
+title: Betalingsmetoder i et callcenter
 description: I dette emne beskrives de forskellige betalingsformer, du kan bruge i et callcenter i Detail og handel.
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Betalingsformer, der findes i et callcenter
+# <a name="payment-methods-in-a-call-center"></a>Betalingsmetoder i et callcenter
+
+[!include[banner](includes/banner.md)]
+
 
 I dette emne beskrives de forskellige betalingsformer, du kan bruge i et callcenter i Detail og handel.
 
@@ -43,6 +46,8 @@ Hvis du sender en kreditkortbetaling fra siden **Salgsordrer** og modtager en me
 
 -   Check på hold gør det muligt for medarbejdere i økonomiafdelingen at behandle ordrer, der er blevet sat på hold, fordi en check blev brugt som betalingsmetode, og grænsebeløbet for checken på hold blev overskredet. På hold kan frigives manuelt, eller det udløber automatisk i slutningen af den periode, der er konfigureret.
 -   Du kan angive grænser, over hvilke refusioner, der udstedes via checks og kreditkort, skal godkendes manuelt. En refusion, der overstiger grænsebeløbet, føjes til godkendelseskøen. Når du godkender refusionen, kan retursalgsordren faktureres.
+
+
 
 
 

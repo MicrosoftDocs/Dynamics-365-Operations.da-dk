@@ -1,6 +1,6 @@
 ---
-title: Her starter du
-description: "Start her til indbyggede hurtigt og lære Microsoft Dynamics 365 for operationer brugergrænseflade."
+title: "Sådan kommer du i gang"
+description: "Start her for hurtigt at lære brugergrænsefladen i Microsoft Dynamics 365 for Operations at kende."
 eauthor: sericks007
 manager: AnnBe
 ms.date: 2015-12-11 15 - 19 - 40
@@ -26,44 +26,44 @@ ms.lasthandoff: 03/30/2017
 
 ---
 
-# <a name="where-to-start"></a>Her starter du
+# <a name="where-to-start"></a>Sådan kommer du i gang
 
-Start her til indbyggede hurtigt og lære Microsoft Dynamics 365 for operationer brugergrænseflade.
+Start her for hurtigt at lære brugergrænsefladen i Microsoft Dynamics 365 for Operations at kende.
 
-## <a name="onboarding"></a>Onboarding af
-Følgende ressourcer indeholder en oversigt over, hvordan du arbejder med din partner for at få onboarded til Dynamics 365 for operationer og hvordan du bruger Dynamics 365 for operationer levetidsservices. 
+## <a name="onboarding"></a>Onboarding
+Følgende ressourcer indeholder en oversigt over, hvordan du arbejder med din partner for at komme i gang med Dynamics 365 for Operations, og hvordan du bruger Lifecycle Services til Dynamics 365 for Operations. 
 
-- [Microsoft FastTrack Dynamics 365 oversigt](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
-- [Livscyklus Services (LCS) til Microsoft Dynamics 365 for operationer kunder](../lifecycle-services/lcs-works-lcs.md) 
-- [Hvordan kunder der har købt Microsoft Dynamics 365 for drift via en udbyder af Cloud kan få den lokale version af Dynamics 365 for operationer 2012](../deployment/csp-download-customersource.md)
+- [Oversigt over Microsoft FastTrack til Dynamics 365](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
+- [Registrer dig til et abonnement](../dev-tools/sign-up-preview-subscription.md) 
+- [Lifecycle Services (LCS) til Microsoft Dynamics 365 for Operations-kunder](../lifecycle-services/lcs-works-lcs.md) 
+- [Hvordan kunder, der har købt Microsoft Dynamics 365 for Operations via en udbyder af cloudtjenester, kan få en version af Dynamics 365 for Operations 2012 til det lokale miljø](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Brugergrænseflade
-Følgende ressourcer indeholder oplysninger om Dynamics-365 for operationer brugeroplevelse. 
--   [Hvad er nyt i Dynamics-365 for operationer brugeroplevelse (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+Følgende ressourcer indeholder oplysninger om Dynamics 365 for Operations-brugeroplevelsen. 
+-   [Nyheder i Dynamics 365 for Operations-brugeroplevelsen (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Tilpasse brugeroplevelsen](/dynamics365/operations/get-started/personalize-user-experience)
 -   [Konfiguration og filtrering af arbejdsområder](/dynamics365/operations/get-started/configure-filter-workspaces)
--   [Navigation search](/dynamics365/operations/get-started/navigation-search)
+-   [Navigationssøgning](/dynamics365/operations/get-started/navigation-search)
 -   [Handlingssøgning](/dynamics365/operations/get-started/action-search)
--   [Keyboard shortcuts](/dynamics365/operations/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/operations/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/dynamics365/operations/get-started/advanced-filtering-query-options)
--   [Dynamics 365 for operationer klienten ofte stillede spørgsmål](/dynamics365/operations/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Tastaturgenveje](/dynamics365/operations/get-started/shortcut-keys)
+-   [Vise sider side om side ved hjælp af ikonet Åbn i et nyt vindue](/dynamics365/operations/get-started/display-pages-side-by-side)
+-   [Indstillinger for avanceret filtrering og forespørgsler](/dynamics365/operations/get-started/advanced-filtering-query-options)
+-   [Ofte stillede spørgsmål om Dynamics 365 for Operations-klient](/dynamics365/operations/get-started/client-faq)
+-   [Rediger banneret eller logoet (opgaveguide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## <a name="help-system"></a>Hjælp-system
 Følgende emner indeholder en oversigt over hjælpesystemet og forklaringer til, hvordan feltbeskrivelser vises.
 
--   [Getting started with Help](help-overview.md)
--   [Connect the Help system](help-connect.md)
+-   [Komme i gang med Hjælp](help-overview.md)
+-   [Forbind hjælpesystemet](help-connect.md)
 -   [Sådan kan du få vist og eksportere feltbeskrivelser](/dynamics365/operations/get-started/view-export-field-descriptions)
--   [I forbindelse med Dynamics 365 Hjælp (fakta)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+-   [Dynamics 365 for Operations-hjælpesystemet (dataark)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-### <a name="task-recordings-and-task-guides"></a>Opgave optagelser og hjælpelinjer for opgave
+### <a name="task-recordings-and-task-guides"></a>Opgaveregistreringer og opgavevejledninger
 
-Arbejdsrutineoptager er en Dynamics 365 for Operations-værktøjet, som du kan bruge til at registrere de handlinger, du udfører i brugergrænsefladen (UI). Når du opretter en *opgaveoptagelse*, registreres alle hændelser, som udføres på serveren, mens du udfører dem i brugergrænsefladen. Disse hændelser omfatter tilføjelse af værdier, ændring af indstillinger og fjernelse af data. En *opgaveguide* er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinnene i en opgaveregistrering. Du kan åbne (eller *afspille*) en opgaveguide fra hjælpesystemet.
+Arbejdsrutineoptager er et værktøj i Dynamics 365 for Operations, du kan bruge til at registrere de handlinger, du udfører i brugergrænsefladen (UI). Når du opretter en *opgaveoptagelse*, registreres alle hændelser, som udføres på serveren, mens du udfører dem i brugergrænsefladen. Disse hændelser omfatter tilføjelse af værdier, ændring af indstillinger og fjernelse af data. En *opgaveguide* er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinnene i en opgaveregistrering. Du kan åbne (eller *afspille*) en opgaveguide fra hjælpesystemet.
 -   [Tilslutning til hjælpesystemet](help-connect.md)
--   [Arbejdsrutineoptager i Dynamics 365 til operationer](../user-interface/task-recorder.md)
+-   [Arbejdsrutineoptager i Dynamics 365 for Operations](../user-interface/task-recorder.md)
 -   [Oprette dokumentation eller undervisning ved hjælp af opgaveregistreringer](../user-interface/task-recorder.md)
 -   [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md)
 
@@ -71,12 +71,12 @@ Arbejdsrutineoptager er en Dynamics 365 for Operations-værktøjet, som du kan b
 <a name="see-also"></a>Se også
 --------
 
-[Oprette nye biblioteker til uddannelse for Dynamics 365 for operationer i levetidsservices ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Oprettelse af nye uddannelsesbiblioteker til Dynamics 365 for Operations i Lifecycle Services ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Ny opgave leder (februar 2016)](new-task-guides-available-february-2016.md)
+[Nye opgaveguider (februar 2016)](new-task-guides-available-february-2016.md)
 
-[Nye eller opdaterede opgave leder (maj 2016)](new-updated-task-guides-available-may-2016.md)
+[Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Nye eller opdaterede opgave leder (November 2016)](new-task-guides-november-2016.md)
+[Nye eller opdaterede opgaveguider (november 2016)](new-task-guides-november-2016.md)
 
 

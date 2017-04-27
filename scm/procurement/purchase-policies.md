@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Indkøbspolitikker
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om indkøbspolitikker. En indkøbspolitik er en samling af regler, der styrer rekvisitionsprocessen. Indkøbspolitikker er en hjælp for indkøbsadministratorer, der skal implementere indkøbsstrategier, da de udgør en politikstruktur, der tilpasses organisationens strategiske indkøbsbehov.
 
 En indkøbspolitik består af et sæt af politikregler. Når du definerer en politikregel, skal du først vælge en regeltype. Du skal derefter oprette en regel for regeltypen ved at definere indstillingerne, startdatoen og slutdatoen for reglen.  
@@ -41,13 +44,13 @@ Afhængigt af, hvordan du konfigurerer indkøbspolitikkerne, kan flere regler p�
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Eksempel 1: Simpel konfiguration af indkøbspolitik
 
-Små og mindre komplicerede organisationer kan konfigurere indkøbspolitikker efter juridisk enhed, og kan bruge organisationshierarkiet virksomheder.  
+Organisationer, der er små og mindre komplicerede, kan konfigurere indkøbspolitikker efter juridisk enhed og kan kun bruge organisationshierarkiet Firmaer.  
 
 Fabrikam, der er en lille virksomhed, har kun en beskeden afvigelse i indkøbsbehovet i hele organisationen. Indkøbsregler varierer kun mellem organisationens juridiske enheder. Medarbejdere hos Fabrikam Canada og medarbejdere hos Fabrikam USA køber f.eks. varer og tjenesteydelser fra forskellige kataloger og hos forskellige kreditorer. Fabrikam konfigurerer derfor sine indkøbspolitikker på niveauet for juridiske enheder.  
 
-Fabrikam opretter to indkøbspolitikker. Politik A gælder for den amerikanske juridiske enhed 1111. Politik B gælder for den canadiske juridiske enhed 2222. Når en medarbejder i den juridiske enhed 1111 opretter en indkøbsrekvisition, afledes politikreglerne af politik A. For eksempel er det produktkatalog, som medarbejderen kan se angivet i Katalogpolitikreglen for politik A.  
+Fabrikam opretter to indkøbspolitikker. Politik A gælder for den amerikanske juridiske enhed 1111. Politik B gælder for den canadiske juridiske enhed 2222. Når en medarbejder i den juridiske enhed 1111 opretter en indkøbsrekvisition, afledes politikreglerne af politik A. For eksempel er det produktkatalog, som medarbejderen kan se, angivet i katalogpolitikreglen for politik A.  
 
-Når en medarbejder i juridiske enhed 2222 opretter en indkøbsrekvisition, afledes politikreglerne af politik B.  
+Når en medarbejder i juridisk enhed 2222 opretter en indkøbsrekvisition, afledes politikreglerne af politik B.  
 
 **Bemærk:** Hvis en medarbejder hos juridisk enhed 1111 køber en vare på vegne af en medarbejder hos juridisk enhed 2222, anvendes de politikregler, der er angivet for juridisk enhed 2222, dvs. politik B.
 
@@ -117,7 +120,7 @@ Kontrolreglen for genopfyldning er en valgfri regel, der definerer felterne på 
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Regel for oprettelse af indkøbsordrer og konsolidering af efterspørgsel
 
-Køb ordre behov til oprettelse og konsolideringsreglen definerer politikreglerne, der skal bruges, når en indkøbsordre genereres ud fra en godkendt indkøbsrekvisition. Når du opretter regler af denne type, kan du angive indstillinger under forskellige faner:
+Reglen for oprettelse af indkøbsordre og efterspørgselskonsolidering definerer de politikregler, der skal bruges, når der oprettes en indkøbsordre ud fra en godkendt indkøbsrekvisition. Når du opretter regler af denne type, kan du angive indstillinger under forskellige faner:
 
 -   På fanen **Opdeling af indkøbsordre** kan du definere kriterier for, hvornår indkøbsrekvisitionslinjer skal opdeles i separate indkøbsordrer.
 -   På fanen **Pris-/rabatoverførsel** kan du definere, hvornår prisaftalen genberegnes,, når købsordren er oprettet:
@@ -126,7 +129,7 @@ Køb ordre behov til oprettelse og konsolideringsreglen definerer politikreglern
 
     Du kan også give anmoderen lov til at ændre metoden for overførsel af pris- og rabatoplysninger for individuelle indkøbsrekvisitionslinjer, uanset den regel der er defineret for pris-/rabatoverførsel. Markér indstillingen **Tillad manuel tilsidesættelse pr. indkøbsrekvisitionslinje**, hvis du vil aktivere denne funktion.
 -   På fanen **Overførsel af varebeskrivelse** kan du overføre varebeskrivelsen fra rekvisitionen, når den stammer fra en tilbudsanmodning.
--   På fanen **Pristolerance** kan du definere regler for at dirigere godkendte indkøbsrekvisitioner tilbage gennem evalueringsprocessen, når prisen på en indkøbskatalogvare stiger. Angiv det maksimale beløb som nettobeløbet på et linjeelement i en indkøbsrekvisition kan stige mellem det tidspunkt, hvor indkøbsrekvisitionen godkendes, og det tidspunkt, hvor indkøbsrekvisitionen oprettes. Nettobeløbet beregnes ved hjælp af følgende formel: (\[× antal (enhedspris – rabat) ÷ prisenhed\] + indkøbstillæg) × (100-rabat %) ÷ 100 indkøbsrekvisitionslinjer, der overstiger den pristolerance, som du har angivet er tilbageholdt for manuel behandling. De regler, som du konfigurerer under fanen **Fejlbehandling**, bestemmer, hvordan indkøbsrekvisitionslinjerne behandles.
+-   På fanen **Pristolerance** kan du definere regler for at dirigere godkendte indkøbsrekvisitioner tilbage gennem evalueringsprocessen, når prisen på en indkøbskatalogvare stiger. Angiv det maksimale beløb som nettobeløbet på et linjeelement i en indkøbsrekvisition kan stige mellem det tidspunkt, hvor indkøbsrekvisitionen godkendes, og det tidspunkt, hvor indkøbsrekvisitionen oprettes. Nettobeløbet beregnes ved hjælp af følgende formel: (\[Mængde × (enhedspris – rabat) ÷ prisenhed\] + indkøbstillæg) × (100 – rabatprocent) ÷ 100 indkøbsrekvisitionslinjer, der overstiger den pristolerance, som du har angivet er tilbageholdt for manuel behandling. De regler, som du konfigurerer under fanen **Fejlbehandling**, bestemmer, hvordan indkøbsrekvisitionslinjerne behandles.
 -   På fanen **Fejlbehandling** kan du konfigurere den behandlingsregel, der gælder for en indkøbsrekvisition, hvis den ikke godkendes under oprettelsen af indkøbsordren pga. en kreditorfejl eller en pristolerancefejl. Vælg en af følgende indstillinger:
     -   **Ingen handling** – Indkøbsrekvisitionslinjer forbliver på siden **Frigiv godkendte indkøbsrekvisitioner**. Statussen for indkøbsrekvisitionslinjerne forbliver **Godkendt**. Fejlene skal dog afklares, før der kan genereres en indkøbsordre for indkøbsrekvisitionslinjerne.
     -   **Annuller indkøbsrekvisitionslinjen** – Indkøbsrekvisitionslinjerne annulleres. Anmoderen kan oprette en ny indkøbsrekvisition for de annullerede linjer, hvis vedkommende stadig ønsker at anmode om linjeelementerne.
@@ -141,6 +144,8 @@ Køb ordre behov til oprettelse og konsolideringsreglen definerer politikreglern
     -   **Tillad ikke efterspørgselskonsolidering** – Ingen godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. Denne indstilling vælges som standard og gælder kun for de indkøbsrekvisitionslinjer, der kræver manuel behandling til oprettelse af indkøbsordrer.
     -   **Tillad altid efterspørgselskonsolidering** – Alle godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. **Bemærk:** Hvis du vælger indstillingen **Tillad altid efterspørgselskonsolidering** på fanen **Efterspørgselskonsolidering**, men du vælger indstillingen **Opret automatisk indkøbsordrer** på fanen **Manuel oprettelse af indkøbsordre**, holdes alle indkøbsrekvisitioner til manuel behandling.
     -   **Tillad efterspørgselskonsolidering på disse betingelser** – Definer de kriterier, der bestemmer om godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. Du kan angive kriterierne efter indkøbskategori og leverandør for hver type indkøbsrekvisitionslinje. Hvis du vælger **Tillad efterspørgselskonsolidering på disse betingelser**, kan du angive kriterierne efter indkøbskategori og kreditor for hver type indkøbsrekvisitionslinje. Når du vælger en indkøbskategori, vælges også evt. underkategorier, der er defineret til den pågældende indkøbskategori. Hvis du vælger indstillingen **Alle** for en bestemt linjetype, er alle indkøbsrekvisitionslinjer for den pågældende linjetype tilgængelige til efterspørgselskonsolidering.
+
+
 
 
 

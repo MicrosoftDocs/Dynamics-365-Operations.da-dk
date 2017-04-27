@@ -1,5 +1,5 @@
 ---
-title: "Tilbageføre produktionsordrestatus"
+title: "Tilbagefør produktionsordrens status"
 description: "I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Tilbageføre produktionsordrestatus
+# <a name="reverse-the-production-order-status"></a>Tilbagefør produktionsordrens status
+
+[!include[banner](../includes/banner.md)]
+
 
 I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer. 
 
@@ -49,5 +52,7 @@ Når du tilbagefører status for en produktionsordre fra **Frigivet** til **Plan
 
 ## <a name="from-started-to-released"></a>Fra Startet til Frigivet
 Når du tilbagefører status for en produktionsordre fra **Startet** til **Frigivet**, tilbageføres alle varer, der er færdigmeldt. Hvis der er plukket materiale, eller hvis der er foretaget indgående eller udgående leveringer til produktion, tilbageføres disse indstillinger. Feltet **Reststatus** på styklistelinjerne i produktionsordren ændres fra **Afsluttet** til **Materialeforbrug**. Hvis der er registreret tid, eller hvis mængder er færdigmeldt for operationerne i produktionsruten, føres disse indstillinger tilbage. Feltet **Reststatus** på ændres fra **Afsluttet** til **Ruteforbrug** på produktionsruten. Indstillingerne for alle varer, der er bogført som igangværende eller igangværende arbejder, tilbageføres. På siden **Detaljer om produktionsordrer** nulstilles felter, der indeholder et antal, som er startet eller færdigmeldt. Datoerne for disse transaktioner nulstilles også.
+
+
 
 

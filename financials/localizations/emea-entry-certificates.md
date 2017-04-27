@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>EU-postcertifikater
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om postcertifikater i den Europæiske Union (EU).
 
 Du kan udføre følgende opgaver for et EU-posteringscertifikat:
@@ -76,7 +79,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Oprettelse, registrering og overførsel af et EU-indførselscertifikat
-Du kan oprette et EU-posteringscertifikat automatisk eller manuelt. Et certifikat til EU-posten oprettes og udskrives automatisk, når du bogfører en følgeseddel eller faktura for en debitor ved hjælp af den **følgesedlen bogføres** side eller **bogføring af faktura** side. Du kan manuelt oprette eller udskrive et certifikat til EU-post for en debitorfaktura, bruges den **fakturajournal** side. Derudover kan du bruge siden **Postcertifikatkladde** til at angive oplysninger om et EU-indførselscertifikat, der er udstedt af en tredjepart.
+Du kan oprette et EU-posteringscertifikat automatisk eller manuelt. Et EU-posteringscertifikat oprettes og udskrives automatisk, når du bogfører en følgeseddel eller en faktura for en kunde ved hjælp af siden **Bogføring af følgeseddel** eller **Bogføring af faktura**. Hvis du manuelt vil oprette eller udskrive et EU-indførselscertifikat til en debitorfaktura igen, skal du bruge siden **Fakturajournal**. Derudover kan du bruge siden **Postcertifikatkladde** til at angive oplysninger om et EU-indførselscertifikat, der er udstedt af en tredjepart.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Oprette et EU-indførselscertifikat automatisk eller manuelt
 
@@ -121,6 +124,8 @@ Hvis du ikke har adgang til de sider, der bruges til at fuldføre denne opgave, 
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -32,7 +32,7 @@ Denne artikel indeholder retningslinjer for brug af samlet omkostningstildeling.
 
 Samlet omkostningstildeling (TCA) er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen. Denne metode er dynamisk. Omkostningen beregnes som et vægtet gennemsnit mellem de mængder, der er færdigmeldt for formelvaren og samprodukterne. Når TCA anvendes, behøver du ikke at gennemgå omkostningstildelinger for hver batchordre. Hvis TCA ikke bruges, bruger formelberegningen eksisterende funktionalitet.
 
-## <a name="using-tca-for-coproducts"></a>Ved hjælp af TCA for coproducts
+## <a name="using-tca-for-coproducts"></a>Bruge TCA til samprodukter
 Her er nogle af retningslinjerne for brug af TCA for samprodukter:
 
 -   Hvis du indstiller skyderen **Samlet omkostningstildeling** til **Ja** for en formelversion, skal samprodukter have en kostpris, der er større end 0 (nul). Værdien kan hentes fra den aktive omkostningsversion for det samme sted eller til det første websted for en formel, der ikke er lokationsspecifik. Denne betingelse valideres, når formlen er godkendt.
@@ -46,7 +46,7 @@ Her er nogle af retningslinjerne for brug af TCA for samprodukter:
 -   Når en batchordre oprettes manuelt, eller en planlagt batchordre autoriseres, kopieres værdien af skyderen **Samlet omkostningstildeling** for formelversionen til batchordren. Du kan dog ændre denne indstilling på batchordren. Hvis skyderen **Samlet omkostningstildeling** er indstillet til **Nej** for formelversionen og derefter ændres til **Ja** for batchordren, ændres metoden til omkostningstildeling for hver linje, der var angivet til **Manuel** til **TCA**. En omkostningstildeling på **Ingen** ændres ikke. Hvis skyderen **Samlet omkostningstildeling** er indstillet til **Ja** for formelversionen og derefter ændres til **Nej** for batchordren, ændres metoden til omkostningstildeling for hvert samprodukt af typen **Produktion** til **Manuel**. En anslået procentdel af omkostningstildelingen er uændret.
 -   Siden **Omkostningstildeling for samprodukt** viser den beregnede procentdel af den samlede omkostningstildeling. Du kan åbne denne side fra siden **Batchordre**. Disse oplysninger er nyttige, når de produkter og mængder, der er rapporteret, adskiller sig fra de planlagte eller igangsatte mængder på batchordren. Når omkostningen er fuldført, vises disse nye procentvise allokeringer fra TCA på siden **Omkostningstildeling for samprodukt**.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Beregning af byrde for biprodukter
+## <a name="calculating-the-burden-for-byproducts"></a>Beregning af byrden for biprodukter
 Feltet **Omkostningstildeling for biprodukt** på siden **Samprodukter** er et optællerfelt, der bruges kun til biprodukter. For samprodukter er værdien af dette felt er altid **Ingen**. Dette felt bestemmer, hvordan kostbeløbet for biproduktlinjen føjes til de samlede produktionsomkostninger for biproduktlinjer. Følgende valgmuligheder er tilgængelige:
 
 -   **Ingen** – Der lægges ikke noget beløb til de samlede produktionsomkostninger for denne biproduktlinje.

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Oversigt over avanceret bankafstemning
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives forløbet for den avancerede bankafstemningsproces. Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne.
 
 Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De importerede bankkontoudtog kan derefter afstemmes automatisk fra inden for bankposteringer. Her er trinene i arbejdsgangen til avanceret bankafstemning.
@@ -38,13 +41,15 @@ Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De impo
     -   Funktionaliteten kan udvides til et vilkårligt format.
 
 2.  Opret en nummerserie, der skal bruges til avanceret bankafstemning, og definer sammenholdningsregler for bankafstemning.
-    -   En tilsvarende afstemningsregel er et sæt af kriterier, der bruges til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for operationer bank posteringslinjer under afstemningen. Du kan oprette mere end en tilsvarende regel til at automatisere og optimere dine afstemningen afhængigt af din forretningspraksis.
+    -   En sammenholdningsregel for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for Operations-banktransaktionslinjer under afstemningsprocessen. Du kan oprette mere end én sammenholdningsregel for at automatisere og optimere dine afstemningsprocesser, afhængigt af din forretningspraksis.
 
-3.  Afstemme bankkontoudtog med Dynamics 365 for operationer bankposteringer.
+3.  Afstem bankkontoudtog med bankposteringer i Dynamics 365 for Operations.
     -   Udfør automatisk sammenholdning og oprettelse af kladder til afstemning.
-    -   Får du vist bankkontoudtog og Dynamics 365 for operationer bankposteringer ved siden af hinanden.
-    -   Automatisk bogføre Dynamics 365 for bankposteringer for operationer, hvis de vises på bankens kontoudtog, men vises ikke i Dynamics 365 for operationer.
+    -   Få vist bankkontoudtog og bankposteringer i Dynamics 365 for Operations side om side.
+    -   Bogføre automatisk Dynamics 365 for Operations-banktransaktioner, hvis de vises på bankens kontoudtog, men ikke i Dynamics 365 for Operations.
     -   Generere en afstemningsopgørelse.
+
+
 
 
 

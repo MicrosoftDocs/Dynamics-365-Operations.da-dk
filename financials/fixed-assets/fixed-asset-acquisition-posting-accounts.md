@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-acquisition-posting-accounts"></a>Bogføringskonti for anskaffelse af anlægsaktiver
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du konfigurerer finansbogføringskonti til anskaffelse af anlægsaktiver.
 
 Konti, der bruges til at bogføre anskaffelser af anlægsaktiver kan variere afhængigt af den metode, der bruges til at anskaffe aktivet. På siden Posteringsprofiler for anlægsaktiver under fanen Finans skal du vælge Anskaffelse og Anskaffelsesregulering for at konfigurere konti til anlægsaktiver, der skal bogføres i Finans. 
@@ -40,6 +43,8 @@ Når Fakturajournal eller Indkøbsordrer i Kreditor bruges til anskaffelse af an
 
 For anskaffelser, der bogføres vha. kladden Lager til anlægsaktiver i Finans, købes anlægsaktivet ikke fra eksterne kilder, men overføres fra firmaets eget lager. Derfor er modkontoen en lagerafgangskonto for lagervaren i Lagerstyring.
 
-Yderligere oplysninger finder du [køb af aktiver via indkøb](acquire-assets-procurement.md).
+Du kan finde flere oplysninger under [Anskaffelse af aktiver via indkøb](acquire-assets-procurement.md).
+
+
 
 

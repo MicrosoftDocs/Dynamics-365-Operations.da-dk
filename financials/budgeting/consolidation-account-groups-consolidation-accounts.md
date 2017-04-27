@@ -1,6 +1,6 @@
 ---
-title: Koncernkontogrupper og yderligere af konsolideringskonti
-description: Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af konsolideringskonti, og forklarer, hvordan de bruges i Microsoft Dynamics 365 for operationer.
+title: Koncernkontogrupper og yderligere koncernkonti
+description: Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Koncernkontogrupper og yderligere af konsolideringskonti
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Koncernkontogrupper og yderligere koncernkonti
 
-Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af konsolideringskonti, og forklarer, hvordan de bruges i Microsoft Dynamics 365 for operationer.
+[!include[banner](../includes/banner.md)]
+
+
+Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 for Operations.
 
 <a name="consolidation-account-groups"></a>Koncernkontogrupper
 ----------------------------
 
-Koncernkontogrupper kan du oprette grupper af firmaer, du vil bruge til at konsolidere data. Oftest en koncernkontogruppe repræsenterer en lovpligtig kontoplan eller knytter konti til en gruppe, der er defineret af virksomhedens hovedkvarter. Du kan finde konsolidering kontogrupper i den **Setup** område af den **konsolideringer** modul. Når du tilføjer en ny gruppe, kan du angive en entydig identifier for kontogruppen og et navn.
+Med koncernkontogrupper kan du oprette grupper af konti, du vil bruge til at konsolidere data. Oftest repræsenterer en koncernkontogruppe en lovpligtig kontoplan eller knytter konti til en gruppe, der er defineret af virksomhedens hovedkontor. Du kan finde koncernkontogrupper i **Opsætning**-området af modulet **Konsolideringer**. Når du tilføjer en ny gruppe, angiver du en entydig identifikator for kontogruppen og et navn.
 
 ## <a name="additional-consolidation-accounts"></a>Flere koncernkonti
-Af flere konsolideringskonti, kan du tildele en konto fra en eksisterende kontoplan til en koncernkontogruppe. Du kan derefter angive en konsolidering kontoværdi og et navn. 
+Med flere koncernkonti kan du tildele en konto fra en eksisterende kontoplan til en koncernkontogruppe. Du kan derefter angive en værdi og et navn til koncernkontoen. 
 
-Du kan finde yderligere konsolideringskonti i den **Setup** område i den **konsolideringer** modul. Når du opretter en ny konto til konsolidering, skal du angive følgende oplysninger:
+Du kan finde flere koncernkonti i **Opsætning**-området af modulet **Konsolideringer**. Når du opretter en ny koncernkonto, skal du angive følgende oplysninger:
 
--   **Hovedkonto** – dette felt er et opslag, der viser alle de hovedkonti, der er baseret på kontoplanen, som du valgte på siden. Når du vælger en konto, angives navnet automatisk i den **Main kontonavn** felt.
--   **Koncernkontogruppen** – Brug dette felt til at angive for at tildele kontoen til gruppen. Hvis du samler på to forskellige måder, skal du føje den samme konto til alle fire koncernkontogrupper.
--   **Koncernkonto** – Angiv værdien af koncernkontoen. Denne værdi behøver ikke være en konto fra en kontoplan. Det kan være enhver værdi, som du har brug for.
--   **Konsolidering kontonavn** – Angiv navnet på den konto, som du vil have det vist i forespørgsler og rapporter.
--   **SAT niveau** – dette felt bruges til at rapportere kontoudtog til de mexicanske myndigheder. 
+-   **Hovedkonto** – Dette felt er et opslag, der viser alle de hovedkonti, der er baseret på de kontoplaner, som du valgte på siden. Når du vælger en konto, angives navnet automatisk i feltet **Hovedkontonavn**.
+-   **Koncernkontogruppe** – Brug dette felt til at angive den gruppe, kontoen skal tildeles til. Hvis du konsoliderer på to forskellige måder, skal du føje den samme konto til alle fire koncernkontogrupper.
+-   **Koncernkonto** – Angiv værdien af koncernkontoen. Denne værdi behøver ikke være fra en kontoplan. Det kan være enhver værdi, som du har brug for.
+-   **Navn på koncernkonto** – Angiv navnet på kontoen, som det skal vises i forespørgsler og rapporter.
+-   **SAT niveau** – Dette felt bruges til at rapportere kontoudtog til de mexicanske myndigheder. 
 
-Når du er færdig med at oprette dine koncernkontogrupper og yderligere af konsolideringskonti, kan du markere gruppen i processen konsolideres online.
+Når du har oprettet dine koncernkontogrupper og ekstra koncernkonti, kan du vælge gruppen under onlinekonsolideringsprocessen.
+
+
 
 
 

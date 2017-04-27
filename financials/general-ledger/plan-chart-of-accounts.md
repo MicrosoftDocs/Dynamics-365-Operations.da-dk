@@ -1,5 +1,5 @@
 ---
-title: "Planlægge din kontoplan"
+title: "Planlæg din kontoplan"
 description: "Denne artikel indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen for organisationen."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Planlægge din kontoplan
+# <a name="plan-your-chart-of-accounts"></a>Planlæg din kontoplan
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen for organisationen.
 
@@ -34,7 +37,7 @@ Du kan oprette en kontoplan, når du vil registrere og vedligeholde økonomiske 
 
 Kontoplanen er en struktureret oversigt over en juridisk enheds finanskonti. Oversigten bruges til at udarbejde økonomiske rapporter til myndigheder og til ejerne. Kontiene er grupperet efter kontotype og derefter yderligere opsummeret i større kategorier. På det mest generelle niveau er kontiene grupperet som indtægter og udgifter (driftskonti) og aktiver og passiver (statuskonti). 
 
-En kontoplan kan deles og bruges af alle de juridiske enheder i en organisation. Den kontoplan, som bruges af en juridisk enhed, der er defineret på den **Finans** side. 
+En kontoplan kan deles og bruges af alle de juridiske enheder i en organisation. Kontoplanen, der bruges af en juridisk enhed, defineres på siden **Finans**. 
 
 Her er nogle af de faktorer, du bør overveje, når du planlægger strukturen af kontoplanen for din organisation:
 
@@ -48,10 +51,12 @@ Det er en god ide at knytte hovedkontiene til hovedkontokategorier, så du kan d
 
 Brug siden **Konfigurer kontostrukturer** til at oprette kontostrukturer. Kontostrukturer definerer gyldige kombinationer. Kombinationerne udgør, sammen med hovedkontiene, en kontoplan. 
 
-**Legal entity overrides** 
+**Tilsidesættelser af juridisk enhed** 
 
-Ikke alle hovedkonti, der gælder for alle juridiske enheder, og nogle kun kan være relevant for en bestemt tidsperiode. I dette scenarie kan sektionen Tilsidesættelser af juridisk enhed bruges til at identificere, hvilke regnskaber hovedkontoen bør suspenderes for, hvem der er ejer, og hvor lang tid dimensionen er aktiv. Tilsidesættelser på det delte niveau må ikke være mere restriktive end tilsidesættelser på niveauet for den juridiske enhed.
+Ikke alle hovedkonti er gyldige for alle juridiske enheder, og nogle er muligvis kun relevante for en bestemt tidsperiode. I dette scenarie kan sektionen Tilsidesættelser af juridisk enhed bruges til at identificere, hvilke regnskaber hovedkontoen bør suspenderes for, hvem der er ejer, og hvor lang tid dimensionen er aktiv. Tilsidesættelser på det delte niveau må ikke være mere restriktive end tilsidesættelser på niveauet for den juridiske enhed.
 
-Yderligere oplysninger finder du [økonomiske dimensioner](financial-dimensions.md).
+Du kan finde flere oplysninger under [Økonomiske dimensioner](financial-dimensions.md).
+
+
 
 

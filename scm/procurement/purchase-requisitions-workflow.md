@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
+[!include[banner](../includes/banner.md)]
+
+
 I arbejdsgangsprocessen flyttes indkøbsrekvisitionen gennem evalueringsprocessen fra den første status Kladde til statussen Godkendt. Når en indkøbsrekvisition sendes til gennemsyn, starter arbejdsgangsprocessen. Når en indkøbsrekvisition er godkendt, kan der oprettes en indkøbsordre for indkøbsrekvisitionslinjerne, som sendes til leverandøren til ordreopfyldning.
 
 Før en indkøbsrekvisition kan sendes til gennemsyn, skal du konfigurere en arbejdsgang. Arbejdsgangsprocessen kan omfatte et eller flere gennemsynstrin i vilkårlig rækkefølge. Arbejdsgangsprocessen kan også konfigureres til at springe gennemsynsopgaver over, så indkøbsrekvisitionen automatisk godkendes. Du kan konfigurere, at arbejdsgangen skal omdirigere indkøbsrekvisitionen som et enkelt dokument, eller du kan omdirigere individuelle indkøbsrekvisitionslinjer til de rette validatorer. Du kan også oprette et scenario, hvor indkøbsrekvisitionen leveres som et enkelt dokument til nogle validatorer, og udvalgte indkøbsrekvisitionslinjer leveres til andre validatorer.  
@@ -106,12 +109,14 @@ Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces
 <a name="see-also"></a>Se også
 --------
 
-[Oprette en rekvisition til forbrug (opgave guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Opret en rekvisition til forbrug (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Indkøbs- og forsyningsarbejdsgange](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Oversigt over indkøbsrekvisitioner](purchase-requisitions-overview.md)
+
+
 
 

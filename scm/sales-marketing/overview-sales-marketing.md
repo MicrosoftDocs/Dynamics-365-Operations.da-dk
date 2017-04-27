@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Salg og marketing
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg.
 
 <a name="marketing"></a>Marketing
 ---------
 
-Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Marketingprocessen](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du bruger marketingkampagner og -aktiviteter til at finde og opbygge relationer med potentielle kunder, så indledende interaktioner kan udvikle til salgsrelationer. I følgende procesflow vises forretningsprocesserne for marketing. [![Forretningsproces for marketing](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relationer
 
@@ -39,7 +42,7 @@ I modulet Salg og marketing kan de første interaktioner, du har med potentielle
 
 ### <a name="campaigns"></a>Kampagner
 
-En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. Du kan oprette flere typer kampagner som telemarketing, post- og e-mail-kampagner, til at maksimere dine potentielle kunder i Microsoft Dynamics 365 for operationer. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
+En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. Du kan oprette flere typer kampagner som f.eks. telemarketing-, post- og mailkampagner, for at maksimere dit kundepotentiale i Microsoft Dynamics 365 for Operations. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
 
 ## <a name="sales"></a>Salg
 Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg](./media/sales01.jpg)](./media/sales01.jpg)
@@ -50,7 +53,7 @@ Du kan oprette salgstilbud for at give kunder et tilbud om varer eller ydelser, 
 
 ### <a name="up-sellcross-sell"></a>Mersalg/tillægssalg
 
-Mersalg og krydssalg er teknikker til salg af produkter, når der registreres en ordre for en kunde. Ved mersalg foreslås et andet produkt i stedet for det aktuelle produkt. Ved krydssalg foreslås et produkt i tillæg til det aktuelle produkt. Når du konfigurerer produktlister, kan du oprette særlige regler for at angive, hvornår et produkt bør foreslået som et krydssælge eller sælge et produkt.
+Mersalg og krydssalg er teknikker til salg af produkter, når der registreres en ordre for en kunde. Ved mersalg foreslås et andet produkt i stedet for det aktuelle produkt. Ved krydssalg foreslås et produkt i tillæg til det aktuelle produkt. Når du konfigurerer produktlister, kan du oprette særlige regler for at angive, hvornår et produkt skal foreslås som et krydssalgs- eller mersalgsprodukt.
 
 ### <a name="sales-orders"></a>Salgsordrer
 
@@ -117,5 +120,7 @@ En fritekstfaktura er en faktura, der ikke er tilknyttet en salgsordre. Den inde
 #### <a name="pro-forma-invoice"></a>Proformafaktura
 
 En proformafaktura er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en proformafaktura til enten en debitorfaktura eller en fritekstfaktura.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: Oversigt over arbejdsproces
-description: I denne artikel beskrives arbejdsgangssystemet i Microsoft Dynamics 365 for operationer.
+title: Oversigt over arbejdsgangssystem
+description: I dette emne beskrives arbejdsgangsystemet i Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Oversigt over arbejdsproces
+# <a name="workflow-system-overview"></a>Oversigt over arbejdsgangssystem
 
-I denne artikel beskrives arbejdsgangssystemet i Microsoft Dynamics 365 for operationer.
+[!include[banner](../includes/banner.md)]
+
+
+I dette emne beskrives arbejdsgangsystemet i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Hvad er en arbejdsgang?
 -----------------
@@ -34,7 +37,7 @@ I denne artikel beskrives arbejdsgangssystemet i Microsoft Dynamics 365 for oper
 Udtrykket *arbejdsgang* kan defineres på to måder: som et system og som en forretningsproces.
 ### <a name="workflow-is-a-system"></a>Arbejdsgang er et system
 
-Arbejdsgang er et system, der er installeret med Dynamics 365 for operationer, og som kører på AOS (Applikationsobjektserver). Arbejdsgangssystemet indeholder funktioner, som du kan bruge til oprette individuelle arbejdsgange eller forretningsprocesser.
+Arbejdsgang er et system, der er installeret på Dynamics 365 for Operations, og som kører i AOS (applikationsobjektserveren). Arbejdsgangssystemet indeholder funktioner, som du kan bruge til oprette individuelle arbejdsgange eller forretningsprocesser.
 
 ### <a name="workflow-is-a-business-process"></a>Arbejdsgang er en forretningsproces
 
@@ -46,6 +49,7 @@ Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 -   **Ensartede processer** – Du kan definere, hvordan bestemte dokumenter, f.eks. indkøbsrekvisitioner og udgiftsrapporter, behandles. Ved at bruge arbejdsgangssystemet kan du sikre, at dokumenter behandles og godkendes på en ensartet og effektiv måde.
 -   **Synliggørelse af processer** – Du kan spore status, historik og performanceværdier for arbejdsgangsforekomster. Dette hjælper dig med at bestemme, om der skal foretages ændringer i arbejdsgangen for at forbedre effektiviteten.
 -   **Centraliseret arbejdsliste** – Brugerne kan få vist en centraliseret arbejdsliste, der viser opgaverne i arbejdsgangen og de godkendelser, der er knyttet til dem.
+
 
 
 

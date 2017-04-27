@@ -1,5 +1,5 @@
 ---
-title: En kasserabat uden for perioden kasserabat
+title: Brug en kasserabat uden for kasserabatperioden
 description: Denne artikel indeholder to scenarier, der viser, hvordan en kasserabat kan anvendes, selvom betalingen sker uden for kasserabatperioden.
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>En kasserabat uden for perioden kasserabat
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Brug en kasserabat uden for kasserabatperioden
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder to scenarier, der viser, hvordan en kasserabat kan anvendes, selvom betalingen sker uden for kasserabatperioden.
 
-April opretter en faktura på 2.000,00 til kreditor 3052 d. 28. Fakturaen har en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage.
+Den 28. juni opretter April en faktura på 2.000,00 til kreditor 3052. Fakturaen har en kasserabat på 1 procent, hvis fakturaen betales inden 14 dage.
 
 ## <a name="use-cash-discount-option--always"></a>Brug kasserabatindstilling = Altid
 April opretter en betaling den 1. juli, som er efter rabatdatoen. April åbner siden **Udlign posteringer** for at få vist de posteringer, der kan udlignes. 
 
-April markerer fakturaen til betaling. Der anvendes ingen kasserabat, da betalingen sker efter rabatdatoen. Leverandøren har dog givet April godkendelse til at tage kasserabatten alligevel. Derfor April ændrer værdien i den **bruge kasserabatten** til **altid**.
+April markerer fakturaen til betaling. Der anvendes ingen kasserabat, da betalingen sker efter rabatdatoen. Leverandøren har dog givet April godkendelse til at fratrække kasserabatten alligevel. Derfor April ændrer værdien i feltet **Anvend kasserabat** til **Altid**.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Kasserabatdato | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Rabatoplysninger vises nederst på siden **Udlign åbne posteringer**. Værdien 
 | Anvend kasserabat            | Almindelig    |
 | Medtaget kasserabat          | 0,00      |
 | Kasserabatbeløb, der skal medtages | -5,05     |
+
+
 
 
 

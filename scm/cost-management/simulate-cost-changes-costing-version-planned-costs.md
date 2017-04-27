@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsversion for planlagte omkostninger
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel forklarer, hvordan du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for producerede varer med en separat efterkalkulationsversion for planlagte omkostninger.
 
 Du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for en produceret vare med en separat efterkalkulationsversion for planlagte omkostninger. Brug denne separate efterkalkulationsversion til at angive ventende omkostningsposter, der afspejler trinvise omkostningsændringer, og til at beregne omkostningens indflydelse på producerede varer. Fordi reserveprincippet for aktive omkostninger bruges i beregningerne af styklister, er det kun trinvise ændringer i omkostningen, som skal angives.
@@ -54,5 +57,7 @@ I følgende scenarier vises, hvordan den simulerede efterkalkulationsversion bru
 -   Simuler ændringen af kostprisen i en formel til beregning af indirekte omkostninger. Ændringen af omkostningen kan f.eks. afspejle en forventet stigning eller et forventet fald i produktionsomkostningerne. Hvis du vil angive ændringen i en formel til beregning af indirekte omkostninger, skal du bruge siden **Opsætning af efterkalkulationsark** til at angive en ventende omkostningspost i efterkalkulationsversionen til simuleringen og til at validere og gemme ændringen.
 
 Når du har angivet de simulerede omkostningsændringer, skal du beregne omkostningerne for producerede varer, der påvirkes af omkostningsændringerne. Brug siden **Beregning** til den simulerede efterkalkulationsversion, og identificer de valgte producerede varer, der påvirkes af omkostningsændringerne. Beregningen af styklister gælder for alle producerede varer, medmindre du vælger specifikke varer. Du kan også anvende indstillingen til beregning af styklister til opdateringer af indgår-i. Se poster med varens kostpris i den simulerede efterkalkulationsversion for at analysere, hvordan de simulerede ændringer i kostprisen påvirker kostpriserne på de valgte producerede varer. Brug siden **Varepris** og siden **Beregn vareomkostninger** til at se og analysere omkostningerne.
+
+
 
 

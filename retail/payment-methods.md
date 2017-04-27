@@ -1,6 +1,6 @@
 ---
 title: Betalingsmetoder
-description: "Hver betalingstype, der accepterer en detailhandler, der skal være konfigureret i Retail og handel i Microsoft Dynamics 365 for operationer, når systemet er konfigureret. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem.."
+description: "De enkelte betalingstyper, som en detailhandler accepterer, skal konfigureres i Detail og handel i Microsoft Dynamics 365 for Operations, når systemet konfigureres. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem.."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: MargoC
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="payment-methods"></a>Betalingsmetoder
 
-Hver betalingstype, der accepterer en detailhandler, der skal være konfigureret i Retail og handel i Microsoft Dynamics 365 for operationer, når systemet er konfigureret. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem..
+[!include[banner](includes/banner.md)]
 
-Detailhandlende kan acceptere forskellige former for betalinger for de produkter og tjenester, de sælger. Selvom kontant er den mest almindelige form for betaling, kan detailhandlende også modtage betaling i form af checks, kort, kuponer osv. Hver betalingstype, der accepterer formidleren skal være konfigureret i Dynamics 365 for operationer - Retail, når systemet er sat op. På følgende liste beskrives hver betalingstype, der kan konfigureres i Dynamics 365 for operationer – Retail:
+
+De enkelte betalingstyper, som en detailhandler accepterer, skal konfigureres i Detail og handel i Microsoft Dynamics 365 for Operations, når systemet konfigureres. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem..
+
+Detailhandlende kan acceptere forskellige former for betalinger for de produkter og tjenester, de sælger. Selvom kontant er den mest almindelige form for betaling, kan detailhandlende også modtage betaling i form af checks, kort, kuponer osv. De enkelte betalingstyper, som detailhandleren accepterer, skal konfigureres i Dynamics 365 for Operations - Retail, når systemet konfigureres. På følgende liste beskrives de enkelte betalingstyper, der kan konfigureres i Dynamics 365 for Operations - Retail:
 
 -   **Kontant** - Penge i en valutas fysiske form, dvs. sedler og mønter. Denne valuta kan enten være firmaets valuta eller butikkens lokale valuta.
 -   **Check** – Et omsætningspapir, der angiver betaling af et bestemt beløb i en bestemt valuta, og at det skal trækkes hos en bestemt bank. En check er som regel enten gyldig på ubestemt tid eller i seks måneder efter udstedelsesdatoen, medmindre en anden gyldighedsperiode er angivet. Denne periode varierer, afhængigt af den bank hvorfra checken trækkes. Der findes forskellige typer check, f.eks. ordrecheck, bankcheck, ihændehavercheck og crossede check. Du kan konfigurere checks som betalingsmetode for de enkelte butikker. Checks kan accepteres i den valuta, der enten er defineret på regnskabsniveau eller butiksniveau. Du skal konfigurere checks som betalingsmetode, før du kan acceptere en check som betaling i en butik.
@@ -44,9 +47,11 @@ Detailhandlende kan acceptere forskellige former for betalinger for de produkter
 Hvis du vil konfigurere betalingsmetoder i Detail og handel, skal du udføre følgende opgaver.
 
 1.  Konfigurer betalingsmåder for en organisation. Opret de betalingsmetoder, der accepteres af hele organisationen.
-2.  Oprette globale korttyper og kortnumre. Hvis der accepteres kredit- eller debetkort, skal du oprette en betalingsmetode for kort og derefter oprette globale korttyper og kortnumre.
-3.  Oprette betalingsmetode til butik. Tilknyt betalingsmetoder til hver butik, og angiv derefter de butiksspecifikke indstillinger for hver betalingsform.
-4.  Opsætning af kortbetalingsmetoder for butikker. For alle kortbetalingsmetoder, butikken accepterer, at fuldføre opsætning af kortet.
+2.  Oprettelse af korttyper og kortnumre i hele organisationen. Hvis der skal accepteres kredit- eller debetkort, skal du oprette én betalingsmetode for kort og derefter oprette korttyper og kortnumre, der gælder for hele organisationen.
+3.  Konfigurer betalingsmetode for butikken. Tilknyt betalingsmetoder til de enkelte butikker, og angiv derefter butiksspecifikke indstillinger for de enkelte betalingsmetoder.
+4.  Konfigurer betalingsmetoder for butikker. For alle kortbetalingsmetoder, som butikken accepterer, skal du udføre kortopsætningen.
+
+
 
 
 

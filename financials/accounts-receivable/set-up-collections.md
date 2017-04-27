@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurere kredit og inkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
 
 <a name="set-up-aging-period-definitions"></a>Konfigurer definitioner af forældelsesperioder
@@ -46,7 +49,7 @@ Hvis der er flere medarbejdere i virksomheder, der udfører rykkerarbejde, kan d
 ## <a name="set-up-a-collections-case-category"></a>Oprette en rykkersagskategori
 Hvis du vil bruge sager til at organisere rykkerarbejdet, kan du oprette en sagskategori med kategoritypen **Rykkere**. Denne konfiguration er kun nødvendig, hvis du vil bruge sagsfunktionen på siden **Rykkere**.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Oprette kladdenavne (udligning, writeoff og NSF)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Opret kladdenavne (udligning, afskrivning og NSF)
 Opret de kladdenavne, der anvendes, når posteringer behandles på siden **Rykkere**. Denne behandling omfatter afstemning af en postering, afskrivning af en postering eller behandling af en NSF-betaling, dvs. en betaling med ikke tilstrækkelige midler.
 
 | Beskrivelse | Kladdetype     |
@@ -55,7 +58,7 @@ Opret de kladdenavne, der anvendes, når posteringer behandles på siden **Rykke
 | Afskrivning   | Dagligt            |
 | NSF (Not sufficeint Funds - US)         | Debitorbetaling |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Oprette en årsagskode til transaktioner writeoff
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Opret en årsagskode for afskrivningstransaktioner
 Konfigurer den standardårsagskode, der skal bruges, når posteringer afskrives på siden **Rykkere**. Du kan ændre koden under afskrivningsprocessen.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Oprette en mappe til vedhæftede filer til e-mails, og oprette e-mail-skabeloner
@@ -67,7 +70,7 @@ Angiv debitorparametre, der vises under fanen **Rykkere**.
 ## <a name="optional-set-up-collections-agents"></a>Valgfri: Oprette inkassoagenter
 Hvis der er flere medarbejdere i virksomheder, der udfører rykkerarbejde, kan du oprette inkassoagenter. En inkassator er en arbejder, der er oprettet som bruger på siden **Brugerrelationer**. Du kan tildele kundepuljer (kundeforespørgsler) til inkassoagenter, for at de bedre kan organisere deres arbejde. Inkassatorerne føjes til teamet, der er valgt på siden **Debitorparametre**. Hvis der ikke er markeret et team på siden, oprettes der automatisk et nyt team med navnet **Rykkere**, og inkassatorerne føjes til dette team.
 
-## <a name="set-up-a-writeoff-account"></a>Opret en konto på writeoff
+## <a name="set-up-a-writeoff-account"></a>Opret en afskrivningskonto
 Opret den afskrivningskonto, der bruges til afskrivningsposten i finansmodulet, når en transaktion afskrives. Denne konto gemmes i debitorposteringsprofilen.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Oprette NSF-oplysninger for bankkonti
@@ -82,11 +85,13 @@ Opret e-mailadresser for kundekontakter, hvis du vil sende e-mails til disse kon
 I oversigtspanelet **Kredit og inkasso** for en kunde skal du i feltet **Kontaktperson ved rykker** vælge den person i kundens virksomhed, der arbejder sammen med din inkassoagent. Denne person bruges som standardkontakt på siden **Rykkere** og e-mails sendes til ham eller hende. 
 
 > [!NOTE] 
-> Hvis en rykkerkontaktperson ikke er angivet for en kunde, bruges den primære kontaktperson for debitoren. Hvis en primær kontakt ikke er angivet, sendes mails til den første adresse, der vises på siden **Kontakter**.
+> Hvis en rykkerkontaktperson ikke er angivet for en kunde, bruges den primære kontaktperson for kunden. Hvis en primær kontakt ikke er angivet, sendes mails til den første adresse, der vises på siden **Kontakter**.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Angive e-mail-indstillinger for sælgere
 Opret e-mailadresser for sælgere, hvis du vil sende e-mails til disse sælgere på siden **Rykkere**. Opret en e-mail-adresse til hver sælger i hver provisionssalgsgruppe. Den sælger, hvor afkrydsningsfeltet **Kontakt** er markeret, er den standardsælger, der får tilsendt e-mails. 
 
 Hvis der ikke er angivet en sælger, bruges kundens primære sælger. Hvis der ikke er angivet en primær sælger, sendes e-mails til den første sælger, der vises på siden.
+
+
 
 

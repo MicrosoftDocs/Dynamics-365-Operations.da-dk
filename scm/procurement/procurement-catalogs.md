@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Indkøbskataloger
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives på et højt niveau, hvor indkøbsmedarbejderne kan konfigurere og vedligeholde indkøbskataloger. Indkøbskataloger definerer de varer og tjenesteydelser, som virksomhedens medarbejdere kan bestille til intern brug.
 
 I Køb kan indkøbsmedarbejderne oprette og vedligeholde kataloger over varer og tjenesteydelser, der kan købes, til intern brug i en organisation. Når der er oprettet kataloger, kan virksomhedens medarbejdere oprette indkøbsrekvisitioner, der kan bestilles fra dem. Katalogerne kan bruges til at gennemtvinge indkøbspolitikker, så medarbejderne kun kan bestille de varer og tjenester, der er tilladt for deres juridiske indkøbsenhed. Når du opretter et indkøbskatalog, skal du overveje følgende opgaver:
 
 -   Konfigurer dit indkøbskategorihierarki, før du opretter kataloget.
--   Bestem, hvilke produkter dine medarbejdere skal kunne bestille. Du kan vise eller skjule bestemte produkter i en knude i kataloget, eller du kan vise eller skjule alle produkter i en knude.
+-   Bestem, hvilke produkter dine medarbejdere skal kunne bestille. Du kan vise eller skjule bestemte produkter i en katalognode, eller du kan vise eller skjule alle produkter i en node.
 -   Bestem, hvor mange indkøbskataloger der er brug for. Den katalogpolitikregel, som du konfigurerer for den juridiske enhed og den driftsenhed, som medarbejderen er tilknyttet, bestemmer, om medarbejderen kan få adgang til et indkøbskatalog eller ej.
 
 Flere faktorer bestemmer, hvilke produkter medarbejdere kan bestille, og hvilke indkøbskategorier de kan bruge, når de opretter indkøbsrekvisitioner:
@@ -52,7 +55,7 @@ Tabellen nedenfor beskriver de opgaver, der skal fuldføres, før en indkøbsmed
 ## <a name="setting-up-a-catalog"></a>Oprette et katalog
 Når forudsætningerne er opfyldt, kan du oprette kataloger. Du kan enten oprette et enkelt katalog, der bruges i hele organisationen, eller flere kataloger, som de forskellige afdelinger i organisationen bruger. Hvis du opretter et enkelt katalog til hele organisationen, styres adgang til kataloget af dine indkøbspolitikregler.  
 
-Kataloget definerer, hvilke produkter der er tilgængelige, når der oprettes indkøbsrekvisitionslinjer, men du kan bruge kategoriadgangspolitikregler til at anvende yderligere begrænsninger. Da noderne i et katalog er indkøbskategorier, kan de tilsidesættes af en kategoriadgangspolitikregel I dette tilfælde skal er produkterne i denne kategori ikke tilgængelige for medarbejdere, der skal bruges i indkøbsrekvisitioner. Du kan definere adgangspolitikregler under den **indkøbspolitikker** side. Følgende tabel beskriver de opgaver, der skal udføres, før du kan oprette et katalog.
+Kataloget definerer, hvilke produkter der er tilgængelige, når der oprettes indkøbsrekvisitionslinjer, men du kan bruge kategoriadgangspolitikregler til at anvende yderligere begrænsninger. Da noderne i et katalog er indkøbskategorier, kan de tilsidesættes af en kategoriadgangspolitikregel I dette tilfælde er produkterne i denne kategori ikke tilgængelige for medarbejdere til brug i rekvisitioner. Du kan definere adgangspolitikregler på siden **Indkøbspolitikker**. Følgende tabel beskriver de opgaver, der skal udføres, før du kan oprette et katalog.
 
 | Opgave                                                   | Rolle             | Beskrivelse                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Opdateringer publiceres enten automatisk eller manuelt, afhængigt af de indstil
 <a name="see-also"></a>Se også
 --------
 
-[Opret et indkøbskategorihierarki (opgave guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Konfigurer et indkøbskategorihierarki (opgaveguide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

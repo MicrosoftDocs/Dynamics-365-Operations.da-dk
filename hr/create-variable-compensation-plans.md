@@ -1,6 +1,6 @@
 ---
 title: Oprette variable kompensationsstrukturer
-description: "Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. Dette emne beskriver de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og melde en medarbejder til en variabel lønstruktur."
+description: "Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. I dette emne beskrives de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-variable-compensation-plans"></a>Oprette variable kompensationsstrukturer
 
+[!include[banner](includes/banner.md)]
+
+
 Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
 
 Beregning af beløb i variabel kompensation for dine medarbejdere kan være baseret på flere faktorer, f.eks. medarbejderens præstation, medarbejderens kompensationsniveau og afdelingens ydeevne.
@@ -39,22 +42,22 @@ Beregning af beløb i variabel kompensation for dine medarbejdere kan være base
 
 ### <a name="describe-vesting-rules"></a>Beskrive fordelingsregler
 
-Virksomheder kan selv vælge, om de vil konfigurere **fordelingsregler**. Fordelingsregler beskriver, hvordan den variable bonus skal fordeles over tid. En fordelingsregel kan for eksempel angive, at medarbejderen får 25 % af sin samlede bonus hvert år for de næste fire år. Fordelingsregler er kun til orientering.
+Virksomheder kan selv vælge, om de vil konfigurere **fordelingsregler**. Fordelingsregler beskriver, hvordan den variable bonus skal fordeles over tid. En fordelingsregel kan for eksempel angive, at medarbejderen får 25 % af sin samlede bonus hvert år i de næste fire år. Fordelingsregler er kun til orientering.
 
 ## <a name="variable-compensation-plans"></a>Variabel løn-strukturer
-Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardværdier for beregningen af variabel kompensation for tilmeldte medarbejdere. Når du opretter en variabel lønstruktur, skal du angive variable kompensationstype. Variable kompensationstype bestemmer, om systemet beregner et valutabeløb eller et antal enheder som tildeling. Du skal også angive beregningsmetoden:
+Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardværdier for beregningen af variabel kompensation for tilmeldte medarbejdere. Når du opretter en variabel lønstruktur, skal du angive den variable kompensationstype. Den variable kompensationstype bestemmer, om systemet beregner bonussen som et valutabeløb eller et antal enheder. Du skal også angive beregningsmetoden:
 
--   **Tidspunkt** – beregning af den variable bonus er baseret på den faste løn, medarbejderen havde på en bestemt dato. Denne dato angives under proceshændelsen, når nye kompensationsbeløb behandles.
--   **Sammensat** – Et bonusbeløb beregnes for hver entydig fast løn-lønsats, som medarbejderen havde mellem cyklussens startdato og cyklussens slutdato på proceshændelsen. Derefter tilsættes satserne sammen for at bestemme den endelige bonus. For eksempel under cyklussen overføres en medarbejder til en anden placering, der havde en anden lønsats. I dette tilfælde reguleres den variable bonus for det tidsrum, hvor medarbejderen havde hver enkelt lønsats.
+-   **Tidspunkt** – Beregningen af den variable bonus er baseret på den faste løn, medarbejderen havde på en bestemt dato. Denne dato angives i proceshændelsen, når nye kompensationsbeløb behandles.
+-   **Sammensat** – Et bonusbeløb beregnes for hver entydig fast løn-lønsats, som medarbejderen havde mellem cyklussens startdato og cyklussens slutdato på proceshændelsen. Derefter lægges satserne sammen for at bestemme den endelige bonus. For eksempel blev en medarbejder under cyklussen overført til en anden placering, der havde en anden lønsats. I dette tilfælde reguleres den variable bonus for det tidsrum, hvor medarbejderen havde hver enkelt lønsats.
 
 Størrelsen af den variable bonus kan være baseret på enten en procentdel af medarbejderens almindelige grundlæggende indtjening eller et angivet antal enheder.
 
--   Vælg indstillingen **Procent af basis** for at indtaste en standardprocent, og angiv, om grundlaget skal være medarbejderens faste lønsats eller kontrolpunktet for medarbejderens kompensationsniveau. Kompensationsniveau er angivet på medarbejderens job. En af referencepunkterne i kompensationsstrukturen kan angives som referencepunktet på den faste kompensationsplan. Systemet bruger kompensationsniveau fra medarbejderens job og oprette krydshenvisninger til det med det referencepunkt, der er angivet på medarbejderens faste lønstruktur finde kontrol punkt beløbet til medarbejderens kompensationsniveau. Control point beløb kan derefter bruges i stedet for medarbejderens faste lønsats som grundlag for tildeling.
--   Vælg indstillingen** Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til hans eller hendes fast løn-struktur (eksempelvis 500 enheder 1 USD). Kontrolelementet ansættelsesdato kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontant-baseret plan ved hjælp af antallet enheder, denne indstilling skal være låst til **Ja**, og enhedsværdien er **1,0000**.
+-   Vælg indstillingen **Procent af basis** for at indtaste en standardprocent, og angiv, om grundlaget skal være medarbejderens faste lønsats eller kontrolpunktet for medarbejderens kompensationsniveau. Kompensationsniveauet er angivet på medarbejderens job. Et af referencepunkterne i kompensationsstrukturen kan angives som referencepunktet på den faste kompensationsplan. Systemet bruger kompensationsniveauet fra medarbejderens job og opretter krydshenvisninger til det med det referencepunkt, der er angivet på medarbejderens faste lønstruktur for at finde referencepunktbeløbet for medarbejderens kompensationsniveau. Referencepunkbeløbet kan derefter bruges i stedet for medarbejderens faste lønsats som grundlag for bonussen.
+-   Vælg indstillingen** Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til hans eller hendes fast løn-struktur (eksempelvis 500 enheder af 1 USD). Kontrolelementet for en til en-relationen kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontantbaseret plan ved hjælp af antallet enheder, er denne indstilling automatisk låst til **Ja**, og enhedsværdien er **1.0000**.
 
-Den **ansættelsesreglen** indstilling kan du angive, om alle medarbejdere skal have den samme stigning, uanset den dato, de blev hyret (**ansættelsesreglen** = **ingen**), eller om medarbejderne skal modtage en procentdel af den bonus, som er baseret på længden af deres ansættelse i cyklussen (**ansættelsesreglen** = **procent**). 
+Med indstillingen **Ansættelsesregel** kan du angive, om alle medarbejdere skal have den samme stigning uanset datoen for deres ansættelse (**Ansættelsesregel** = **Ingen**), eller om medarbejderne skal modtage en procentdel af bonussen, der er baseret på længden af deres ansættelse i løbet af cyklussen (**Ansættelsesregel** = **Procent**). 
 
-**Regulering** kan du justere en medarbejders bonus baseret på ydeevnen af medarbejderens afdeling. Performanceværdier kan indstilles for hver afdeling på den **afdelinger** side, under **relaterede formularer**&gt;**løn**&gt;**ydeevne**. Den bonus, som medarbejdere i den pågældende afdeling modtager, afhænger af værdien af den **procent for opnåelsen af målet** felt, der angiver den afdeling ydeevne:
+**Regulering** giver dig mulighed for at justere en medarbejders bonus baseret på ydeevnen (performance) af medarbejderens afdeling. Performanceværdier kan indstilles for hver afdeling på siden **Afdelinger** under **Relaterede formularer** &gt; **Kompensation** &gt; **Ydeevne**. Den bonus, som medarbejdere i den pågældende afdeling modtager, afhænger af værdien i feltet **Opnået procent af mål**, der angiver afdelingens ydeevne:
 
 -   Hvis afdelingens ydeevne er 100 procent, medtages bonussen for medarbejderen i den pågældende afdeling med den procentdel, der er angivet i feltet** Udbetaling ved 100 %**.
 -   Hvis afdelingens ydeevne er mere end 100 procent, tilføjer systemet den procentdel, der er angivet i feltet **Pr. 1 % over målsætningen** til den procentdel, der er angivet i feltet **Udbetaling ved 100 %**, indtil den værdi, der er angivet i feltet **Højst tilladte udbetaling**, er nået.
@@ -62,11 +65,11 @@ Den **ansættelsesreglen** indstilling kan du angive, om alle medarbejdere skal 
 
 Du kan angive** toleranceniveauer** for grænseværdier i procent, så der vises en advarsel, hvis reguleringen medfører, at procentdelen er uden for procentdelen for grænseværdien. 
 
-Som standard søger systemet efter den afdeling, der er angivet på medarbejderens stilling. Men prisen for nogle medarbejdere kan afhænge af ydeevnen for flere afdelinger. De forskellige afdelinger og procentdelen af den bonus, der tildeles udførelsen af hver afdeling kan i så fald angives, for medarbejderens tilmelding til variabel kompensation. Du kan finde flere oplysninger i afsnittet "tilmelding til variabel kompensation", der følger efter. 
+Som standard søger systemet efter den afdeling, der er angivet for medarbejderens stilling. Men prisen for nogle medarbejdere kan afhænge af ydeevnen for flere afdelinger. I dette tilfælde kan de forskellige afdelinger og procentdelen af den bonus, der tildeles ydeevnen for hver afdeling, angives ved medarbejderens tilmelding til variabel kompensation. Du kan finde flere oplysninger i afsnittet "Tilmelding til variabel kompensation", der følger nedenfor. 
 
 Regulering bruges kun, hvis **Præstationsløn** er markeret, når kompensationsprocessen køres. 
 
-Den **niveauer, tilsidesætter** under fanen kan du tilsidesætte bonussen standardprocenten eller antal enheder, der er baseret på kompensationsniveau for medarbejderen. Hvis **Aktiver tilsidesætter for niveauer** er angivet til **Ja** for medarbejdere, der er tilmeldt variable lønstrukturen, tager systemet niveau fra en medarbejders job, og derefter søger efter den i niveauer tilsidesætter tabel til at bestemme den procentdel eller det antal enheder for det pågældende niveau. Hvis niveauet ikke blev fundet i niveauet tilsidesætter tabel, standardprocenten eller antallet af enheder fra den **generelle** fane anvendes. Procent og antal enheder kan også tilsidesættes i medarbejderens tilmelding i variable lønstrukturen.
+Under fanen **Niveautilsidesættelser** kan du tilsidesætte bonussens standardprocent eller antal enheder, der er baseret på kompensationsniveauet for medarbejderen. Hvis **Aktiver tilsidesætter for niveauer** er indstillet til **Ja** for medarbejdere, der er tilmeldt den variable lønstruktur, henter systemet niveauet fra en medarbejders job og søger derefter efter det i tabellen med niveautilsidesættelser for at bestemme procentdelen eller antallet af enheder for det pågældende niveau. Hvis niveauet ikke findes i tabellen med niveautilsidesættelser, bruges standardprocenten eller antallet af enheder fra fanen **Generelt**. Procent og antal enheder kan også tilsidesættes ved medarbejderens tilmelding til den variable lønstruktur.
 
 ## <a name="variable-compensation-enrollment"></a>Tilmelding til variabel kompensation
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Bestem, hvem der er berettiget til planen
@@ -80,7 +83,7 @@ Når du er klar til at tilmelde medarbejdere i en variabel lønstruktur, er det 
     -   Felterne **Funktion** og **Jobtype** under fanen **Jobklassificering**
     -   Feltet **Niveau** under fanen **Kompensation**
 -   På siden **Stillinger**: Felterne **Afdeling** og **Kompensationsområde**.
--   På den **medarbejdere** side: oplysninger om fagforeninger, som er knyttet til medarbejderen under **personlige oplysninger**&gt;**fagforeninger** på den *** arbejder *** fane
+-   På siden **Medarbejdere**: Oplysningerne om fagforeninger, der er tilknyttet medarbejderen under fanen **Personlige oplysninger** &gt; **Fagforeninger** under fanen ****Arbejder****
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Aktivér tilmelding for den variable lønstruktur
 
@@ -88,19 +91,21 @@ På siden **Variable lønstrukturer** skal du angive indstillingen **Aktivér ti
 
 ### <a name="enroll-the-employee"></a>Tilmelde medarbejderen.
 
-Du kan nu tilmelde medarbejder til den variabel lønstruktur. Hvis du vil registrere en medarbejder, skal du gå til siden **Medarbejdere** og vælge medarbejderen. Klik på ruden handling **løn**&gt;**tilmelding til variabel plan**. 
+Du kan nu tilmelde medarbejder til den variabel lønstruktur. Hvis du vil registrere en medarbejder, skal du gå til siden **Medarbejdere** og vælge medarbejderen. I Handlingsrude skal du derefter klikke på **Kompensation** &gt; **Tilmelding til variabel plan**. 
 
-**Bemærk!** **Tilmelding** skal være indstillet til **Ja** for den variable lønstruktur. Den **Plan** viser kun de planer, som medarbejderen er berettiget til, baseret på de regler for støtteberettigelse, der er konfigureret for disse planer. Hvis en berettigelsesregel ikke er angivet for en plan, vil ingen medarbejdere være berettiget til denne plan. 
+**Bemærk!** **Tilmelding** skal være indstillet til **Ja** for den variable lønstruktur. Feltet **Plan** viser kun de strukturer, som medarbejderen er berettiget til baseret på de berettigelsesregler, der er konfigureret for disse strukturer. Hvis der ikke er konfigureret en berettigelsesregel for en struktur, vil ingen medarbejdere være berettiget til denne struktur. 
 
-Sørg for, at den **ikrafttrædelsesdato** er angivet korrekt. Hvis variable lønstrukturen bruger den **sammensat** beregningsmetoden ikrafttrædelsesdatoen for tilmelding kan betragtes under beregning af medarbejderens bonus. 
+Sørg for, at feltet **Ikrafttrædelsesdato** er indstillet korrekt. Hvis den variable lønstruktur bruger beregningsmetoden **Sammensat**, kan ikrafttrædelsesdatoen for tilmelding blive vurderet under beregning af medarbejderens bonus. 
 
-Du kan bruge den **tilsidesætter** tab for at tilsidesætte bestemte værdier for medarbejderen. For eksempel hvis **ansættelsesreglen** er indstillet til **procent** på planen, og en anden ansættelsesdato, der skal bruges under beregning af medarbejderens leje procent, kan du angive ansættelsesdatoen den **ansætte dato** felt. Du kan også tilsidesætte enten den **bonusprocent** værdi eller den **antal enheder** værdi for en bestemt medarbejder, afhængigt af indstillingerne for planen. Disse værdier vil stadig indregnes ved ansættelsesreglen præstationsfaktorer og andre indstillinger på planen. 
+Du kan bruge fanen **Tilsidesættelser** til at tilsidesætte bestemte værdier for medarbejderen. For eksempel hvis **Ansættelsesregel** er indstillet til **Procent** for planen, og der skal bruges en anden ansættelsesdato under beregning af medarbejderens ansættelsesprocent, kan du angive ansættelsesdatoen i feltet **Dato for ansættelsesregel**. Du kan også tilsidesætte enten værdien **Bonusprocentdel** eller værdien **Antal enheder** for en bestemt medarbejder, afhængigt af indstillingerne for planen. Disse værdier vil stadig blive indregnet af ansættelsesreglen, præstationsfaktorer og andre indstillinger for planen. 
 
-**Tilsidesættelser af organisatoriske** bruges til at basere en medarbejders bonus på ydeevnen for en eller flere afdelinger. Den procentdel, der er fordelt på tværs af afdelinger skal give 100 %. Medarbejderens enkelte medarbejders præstation tages også i betragtning. Disse indstillinger bruges kun, hvis **præstationsløn** er markeret, når der køres kompensationsprocessen.
+**Organisationsmæssige overstyringer** bruges til at basere en medarbejders bonus på ydeevnen for en eller flere afdelinger. Den procentdel, der er fordelt på tværs af afdelinger, skal give 100 %. Den enkelte medarbejders præstation tages også i betragtning. Disse indstillinger bruges kun, hvis **Præstationsløn** er markeret, når kompensationsprocessen køres.
 
 <a name="see-also"></a>Se også
 --------
 
 [Kompensationsplaner](compensation-plans.md)
+
+
 
 

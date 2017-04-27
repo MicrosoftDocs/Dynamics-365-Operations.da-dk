@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Momsoversigt
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
 
 <a name="overview"></a>Overblik
 --------
 
-Moms-framework understøtter mange typer af indirekte skatter, moms, moms (moms), moms af varer og ydelser (GST), stykbaseret gebyrer og skat. Moms beregnes og dokumenteret under Køb og salg transaktioner. Med jævne mellemrum, skal de rapporteres og betales til momsmyndighederne. 
+Momsstrukturen understøtter mange typer af indirekte skatter, som f.eks. moms, moms af varer og ydelser (GST), stykbaseret gebyrer og indeholdt skat. Disse skatter beregnes og dokumenteres under indkøbs- og salgstransaktioner. Med jævne mellemrum skal de rapporteres og betales til skattemyndighederne. 
 
 I følgende diagram vises enheder på opsætning af skat, og hvordan de er relateret.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-En momskode skal defineres for hver en virksomhed skal redegøre for momsen. En momskode gemmer afgiftssatser og reglerne for beregning af moms. 
+For hver type moms, en virksomhed skal redegøre for, skal der defineres en momskode. En momskode gemmer afgiftssatser og reglerne for beregning af moms. 
 
 Hver momskode skal være knyttet til en momsafregningsperiode. Momsafregningsperioder definerer de intervaller, hvorved moms skal rapporteres og betales til momsmyndighederne. Hver momsafregningsperiode skal være knyttet til en momsmyndighed. En momsmyndighed repræsenterer den enhed, som moms rapporteres og betales til. Den definerer også momsrapportens layout. Skattemyndighederne kan være relateret til kreditorkonti. 
 
@@ -69,17 +72,17 @@ For hver transaktion (salgs-/indkøbsdokumentlinjer, kladder osv.) skal du angiv
 For hver transaktion kan du slå den beregnede moms op ved at åbne siden **Momspostering**. Du kan søge efter moms for en dokumentlinje eller hele dokumentet. Du kan justere den beregnede moms for visse dokumenter (f.eks kreditorfakturaen og finanskladder), hvis det oprindelige dokument viser beløb, der afviger.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Udligning og rapportering af moms
-Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for operationer har en funktionalitet, kan du afregne moms for intervallet, og forskydning saldi til afregningskontoen skat, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på de **udligner og bogføre moms** side. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
+Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for Operations indeholder funktioner, så du kan afregne moms for intervallet og forskyde saldi til momsafregningskontoen, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på siden **Afregn og bogfør moms**. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
 
 Når momsen er blevet betalt, bør saldoen på momsafregningskontoen opvejes mod bankkontoen. Hvis den momsmyndighed, der er angivet i momsafregningsperioden, er relateret til en kreditorkonto, bogføres momssaldoen som en åben kreditorfaktura og kan tages med i det regelmæssige betalingsforslag.
 
 ## <a name="conditional-sales-tax"></a>Betinget moms
 Betinget moms er en moms, der betales proportionalt med det faktiske beløb, der betales på en faktura. Derimod beregnes standardmoms på faktureringstidspunktet. Betinget moms skal betales til skattemyndighederne, når betalingen bogføres, ikke når fakturaen bogføres. Når fakturaen bogføres, skal posteringen registreres i momsrapporten. Dog skal posteringen udelades fra momsafregningsrapporten. 
 
-Hvis du markerer afkrydsningsfeltet betinget moms i formen Finans, kan moms trækkes, indtil du har betalt fakturaen. Dette er et lovkrav i nogle lande.
+Hvis du markerer afkrydsningsfeltet Betinget moms i formularen Finansparametre, kan der ikke fratrækkes moms, før du har betalt fakturaen. Dette er et lovkrav i nogle lande.
 
 > [!NOTE]
-> Når du markerer afkrydsningsfeltet betinget moms, skal du konfigurere momskoder og momsgrupper, og også oprette finanskonteringsgrupper, til understøttelse af funktionaliteten. |
+> Når du markerer afkrydsningsfeltet Betinget moms, skal du konfigurere momskoder og momsgrupper samt oprette finanskonteringsgrupper til understøttelse af funktionaliteten. |
 
 ###  <a name="example"></a>Eksempel
 
@@ -90,5 +93,7 @@ Du afregner moms hver måned. Den 15. juni opretter du en debitorfaktura på EUR
 Normalt skal du afregne og betale 2.500 til skattemyndighederne, når fakturaen bogføres i juni, selvom du ikke har modtaget betalingen fra debitor. 
 
 Hvis du imidlertid bruger en betinget moms, afregner du med skattemyndighederne, når du modtager betalingen fra debitor den 30. juli.
+
+
 
 
