@@ -1,62 +1,62 @@
-# [Human resources home page](index.md)
+# [Personalestartside](index.md)
 # Udarbejde personalestrategi
-## [Organiser dit personale ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
-## [Definere komponenter for job](create-job.md)
-## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
-## [Oprette firmaspecifikke parametre for personale](set-up-company-specific-hr-parameters.md)
-## [Konfigurer parametre for personale på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
-## [Bruge arbejdsprocesser til at administrere medarbejderoplysninger](workflow-manage-employee-information.md)
+## [Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
+## [Konfigurere jobkomponenter](create-job.md)
+## [Oprette en afdeling og knytte den til afdelingshierarkiet](create-department-add-department-hierarchy.md)
+## [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
+## [Oprette personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
+## [Bruge arbejdsproces til at administrere medarbejderoplysninger](workflow-manage-employee-information.md)
 # Rekruttere, ansætte og motivere medarbejdere
-## [Manage a recruiting process](manage-recruiting-process.md)
-## [Mass hire projects](mass-hire-projects.md)
+## [Administrere en rekrutteringsproces](manage-recruiting-process.md)
+## [Masseansættelsesprojekter](mass-hire-projects.md)
 ## [Kompensationsplaner](compensation-plans.md)
-## [Opret faste lønstrukturer](create-fixed-compensation-plans.md)
-## [Oprette variable kompensationsstrukturer](create-variable-compensation-plans.md)
-# Udvikl og undervis medarbejdere
-## [Performance management overview](performance-management-overview.md)
-## [Align workforce skills with business needs](skills.md)
+## [Oprette planer for fast kompensation](create-fixed-compensation-plans.md)
+## [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
+# Udvikle og undervise medarbejdere
+## [Oversigt over performancestyring](performance-management-overview.md)
+## [Justere arbejdsstyrkens færdigheder med forretningsbehov](skills.md)
 ## [Konfigurere kurser](courses.md)
 # Oprette og vedligeholde frynsegoder
-## [Administrere et program til frynsegoder](manage-benefit-program.md)
-## [Benefit eligibility policies](benefit-eligibility-policies.md)
-## [Manage items lent to workers](loan-items.md)
+## [Administrere et frynsegodeprogram](manage-benefit-program.md)
+## [Politikker for frynsegodeberettigelse](benefit-eligibility-policies.md)
+## [Administrere udstyr, der er udlånt til arbejdere](loan-items.md)
 # Indsamle oplysninger ved hjælp af spørgeskemaer
-## [Questionnaires](questionnaires.md)
-## [Design a questionnaire](design-questionnaires.md)
-## [Distribute and complete a questionnaire](distribute-questionnaires.md)
+## [Spørgeskemaer](questionnaires.md)
+## [Designe et spørgeskema](design-questionnaires.md)
+## [Distribuere og udfylde et spørgeskema](distribute-questionnaires.md)
 ## [Evaluere resultaterne af et spørgeskema](evaluate-questionnaire-results.md)
-# Funktioner for USA
+# Funktioner i USA
 ## Sikkerhed på arbejdspladsen og overholdelse
-### [I-9 ansættelse kontrol](localizations/noam-usa-form-i-9-verification.md)
-### [I overensstemmelse med ADA](localizations/noam-usa-comply-ada.md)
-## [Payroll](localizations/noam-usa-payroll.md)
-### Opsætning af løn
-#### [Definer løn for medarbejdere](localizations/noam-usa-worker-position-payroll-tasks.md)
-#### [Konfigurere cyklusser til arbejde og arbejde perioder](localizations/noam-usa-work-cycle-work-period-tasks.md)
-#### [Konfigurere periodisering frynsegodeplaner](localizations/noam-usa-benefit-accrual-plan-tasks.md)
-#### [Set up benefits](localizations/noam-usa-benefit-set-up-tasks.md)
+### [Formen I-9-ansættelsesbekræftelse](localizations/noam-usa-form-i-9-verification.md)
+### [Overholde ADA](localizations/noam-usa-comply-ada.md)
+## [Løn](localizations/noam-usa-payroll.md)
+### Lønopsætning
+#### [Konfigurere løn for medarbejdere](localizations/noam-usa-worker-position-payroll-tasks.md)
+#### [Konfigurere arbejdscyklusser og arbejdsperioder](localizations/noam-usa-work-cycle-work-period-tasks.md)
+#### [Konfigurere planer for periodisering af frynsegoder](localizations/noam-usa-benefit-accrual-plan-tasks.md)
+#### [Konfigurere frynsegoder](localizations/noam-usa-benefit-set-up-tasks.md)
 ### Frekvenser og cyklusser
-### [Betale cyklus og betale periode opgaver](localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md)
-### [Beregning og frekvens lønopgaver](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
-### [Arbejdsplan og lade opgaver](localizations/noam-usa-work-schedule-leave-tasks.md)
-### Koder og moms
-#### [Opnåelse af kode og indtægt kode gruppere opgaver](localizations/noam-usa-earning-code-group-tasks.md)
-#### [Se oplysninger opgaver](localizations/noam-usa-tax-information-tasks.md)
-### Udlæg, moms, afgifter og løntillæg løn
-#### [Opsætning af udlæg og afgifter](localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md)
-#### [Tilmelde arbejdere til garnishment og moms afgifter](localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md)
-#### [Konfigurere tillæg overskud](localizations/noam-usa-premium-earning-setup-tasks.md)
-#### [Udlæg, moms, afgifter og administrationsgebyrer ofte stillede spørgsmål](localizations/noam-usa-garnishment-tax-levy-administrative-fees.md)
-### Behandling af lønopgaver
-#### [Generate earnings](localizations/noam-usa-earnings-generation-process.md)
-#### [Problem arbejder betalinger](localizations/noam-usa-issue-worker-payments.md)
+### [Opgaver for betalingscyklus og lønperiode](localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md)
+### [Opgaver for lønberegning og -frekvens](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
+### [Opgaver for arbejdsplan og orlov](localizations/noam-usa-work-schedule-leave-tasks.md)
+### Koder og skatter
+#### [Opgaver for lønkode og lønkodegruppe](localizations/noam-usa-earning-code-group-tasks.md)
+#### [Opgaver for skatteoplysninger](localizations/noam-usa-tax-information-tasks.md)
+### Udlæg i udestående fordringer, afgifter og løntillæg løn
+#### [Konfigurere udlæg og afgifter](localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md)
+#### [Tilmelde arbejdere til udlæg i udestående fordringer og afgifter](localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+#### [Konfigurere løntillæg ](localizations/noam-usa-premium-earning-setup-tasks.md)
+#### [Ofte stillede spørgsmål til udlæg i udestående fordringer, afgifter og administrationsgebyrer](localizations/noam-usa-garnishment-tax-levy-administrative-fees.md)
+### Opgaver for lønbehandling
+#### [Generere løn](localizations/noam-usa-earnings-generation-process.md)
+#### [Udstede betalinger til medarbejdere](localizations/noam-usa-issue-worker-payments.md)
 #### [Bogføre løn og generere kreditorfakturaer](localizations/noam-usa-post-payroll-generate-vendor-invoices.md)
-#### [Betale opgørelser og generere betalinger, ofte stillede spørgsmål](localizations/noam-usa-pay-statements-payment-generation-process.md)
+#### [Ofte stillede spørgsmål til betalingsopgørelser og generering af betalinger](localizations/noam-usa-pay-statements-payment-generation-process.md)
 ### Fuldføre betalingsprocessen
-#### [Udfør behandling af eksisterende lønbetalinger](localizations/noam-usa-existing-payroll-payments.md)
-#### [Behandle eksisterende overskud](localizations/noam-usa-existing-earnings.md)
-#### [Processen løn opgørelser](localizations/noam-usa-pay-statements.md)
+#### [Behandle eksisterende lønbetalinger](localizations/noam-usa-existing-payroll-payments.md)
+#### [Behandle eksisterende løn](localizations/noam-usa-existing-earnings.md)
+#### [Behandle lønopgørelser](localizations/noam-usa-pay-statements.md)
 ### Vedligeholdelse og rapportering
-#### [Løndata opdateres ofte stillede spørgsmål](localizations/noam-usa-payroll-data-updates.md)
+#### [Ofte stillede spørgsmål til opdateringer af løndata](localizations/noam-usa-payroll-data-updates.md)
 #### [Generere lønrapporter](localizations/noam-usa-generate-payroll-reports.md)
 

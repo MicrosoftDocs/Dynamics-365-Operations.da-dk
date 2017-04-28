@@ -1,6 +1,6 @@
 ---
 title: Personale
-description: "Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og tilbageholdelse af medarbejdere, administration af frynsegoder, uddannelse, effektivitetsundersøgelser og ændringsstyring."
+description: "Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,16 +25,16 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Velkommen til personale
+# <a name="welcome-to-human-resources"></a>Velkommen til Personale
 
 [!include[banner](includes/banner.md)]
 
-Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og tilbageholdelse af medarbejdere, administration af frynsegoder, uddannelse, effektivitetsundersøgelser og ændringsstyring.
+Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
 
-Du kan bruge Personale til at udføre følgende opgaver:
+Du kan udføre disse opgaver vha. Personale:
 
 > + Administrere organisationsstrukturer.
-> + Vedligeholde omfattende arbejderoplysninger fra ansættelse til tilbagetrækning.
+> + Vedligeholde omfattende arbejderoplysninger fra ansættelse til fratrædelse.
 > + Definere og administrere frynsegodeplaner, ansætte arbejdere, tildele afhængig disponering og tilknytte beneficianter.
 > + Etablere og overvåge fraværsregler.
 > + Implementere og spore profilbaseret tidsstyring og generere betalingsoplysninger, der skal eksporteres til et lønsystem.
@@ -43,59 +43,59 @@ Du kan bruge Personale til at udføre følgende opgaver:
 > + Oprette, afholde og analysere undervisningskurser, herunder agendaer, sessioner og spor.
 > + Rekruttere arbejdere og spore ansøgere.
 
-<a name="develop-a-human-resources-strategy"></a>Udvikle en strategi for personale
+<a name="develop-a-human-resources-strategy"></a>Udarbejde en personalestrategi
 ---------------------------------------------------------
 
-Når du arbejder med menneskelige ressourcer, skal du beslutte, hvordan at strukturere organisationen, ved hjælp af elementer som afdelinger, job og stillinger. Disse er blandt de tilegne sig en grundlæggende elementer, der skal konfigureres i Personale. Enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
+Når du arbejder med Personale, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som f.eks. afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, der skal konfigureres i Personale. Enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
 
--   [Organiser dit personale ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
--   [Oprette firmaspecifikke parametre for personale](set-up-company-specific-hr-parameters.md)
--   [Konfigurer parametre for personale på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
+-   [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
+-   [Oprette personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekruttere, ansætte og motivere medarbejdere
 
-Rekrutteringsprojekter styrer indholdet, der bruges i reklamer for ledige stillinger, og kan hjælpe dig med at administrere programmer vedrørende jobmuligheder. Du kan bruge dem til at spore svar på jobopslag for et bestemt rekrutteringsprojekt eller bestemte ansøgere og opdatere status for ledige stillinger. Du kan også ansætte enkelte ansøgere eller administrere "masseansættelsesprojekter", som letter ansættelsen af flere medarbejdere, for eksempel til sæsonbestemte forretningsbehov.
+Rekrutteringsprojekter styrer indholdet, der bruges i annoncer for ledige stillinger, og kan hjælpe dig med at administrere ansøgninger til ledige stillinger. Du kan bruge dem til at spore svar på jobopslag for et bestemt rekrutteringsprojekt eller bestemte ansøgere og opdatere status for ledige stillinger. Du kan også ansætte enkelte ansøgere eller administrere "masseansættelsesprojekter", som letter ansættelsen af flere medarbejdere, for eksempel til sæsonbestemte forretningsbehov.
 
--   [Manage a recruiting process](manage-recruiting-process.md)
--   [Mass hire projects](mass-hire-projects.md) 
+-   [Administrere en rekrutteringsproces](manage-recruiting-process.md)
+-   [Masseansættelsesprojekter](mass-hire-projects.md) 
 
-Når du har ansat personale, kan du oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som virksomheden udlåner til sine medarbejdere. Du kan oprette faste og variable lønstrukturer samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
+Når du har ansat personale, kan du oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
 
 -   [Kompensationsplaner](compensation-plans.md)
--   [Opret faste lønstrukturer](create-fixed-compensation-plans.md)
--   [Oprette variable kompensationsstrukturer](create-variable-compensation-plans.md)
+-   [Oprette planer for fast kompensation](create-fixed-compensation-plans.md)
+-   [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
 
-## <a name="develop-and-train-employees"></a>Udvikl og undervis medarbejdere
+## <a name="develop-and-train-employees"></a>Udvikle og undervise medarbejdere
 
-For at hjælpe medarbejderne med at nå deres karriere mål, mens leverer vigtige skal du kan angive mål, oprette effektivitet og spore feedback til at hjælpe medarbejderne med at udvikle de nødvendige færdigheder, du kan også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du kan tildele en instruktør til et kursus, eller registrere nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontaktpersoner.
+For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde vigtige forretningsbehov kan du definere mål, oprette performanceevalueringer og spore feedback. For at hjælpe medarbejderne med at udvikle de nødvendige færdigheder kan du også oprette instruktører, kursustyper, kurser, kursusbeskrivelser, agendaer, spor og sessioner, før du tildeler et kursus en instruktør eller tilmelder nogen til et kursus. Instruktører skal allerede eksistere som arbejdere, ansøgere eller kontakter.
 
 -   [Performancestyring](performance-management-overview.md)
--   [Juster arbejdsstyrke færdigheder og behov](skills.md)
--   [Administer training through courses](courses.md)
+-   [Justere arbejdsstyrkens færdigheder og forretningsbehov](skills.md)
+-   [Administrere uddannelse gennem kurser](courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Oprette og vedligeholde frynsegoder
 
-Ud over at kompensere medarbejderne med lønninger og bonusordninger, kan du udvikle frynsegodeprogrammer som f.eks. sygesikring og pensionsordninger. Du kan også administrere frynsegoder som f.eks. låneprogrammer, hvor virksomheden udlåner elementer som computere eller telefoner til sine medarbejdere.
+Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvikle frynsegodeprogrammer som f.eks. sygesikring og pensionsordninger. Du kan også administrere frynsegoder som f.eks. låneprogrammer, hvor virksomheden udlåner udstyr som f.eks. computere eller telefoner til sine medarbejdere.
 
 -   [Administrere et frynsegodeprogram](manage-benefit-program.md)
--   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Politikker for frynsegodeberettigelse](benefit-eligibility-policies.md)
+-   [Administrere udstyr, der er udlånt til arbejdere](loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
-Microsoft Dynamics AX kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe organisationen med at optimere færdighederne for sit personale.
+Microsoft Dynamics AX kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe din organisation med at optimere færdighederne hos sit personale.
 
--   [I-9 ansættelse kontrol](localizations/noam-usa-form-i-9-verification.md)
--   [I overensstemmelse med loven om amerikanere med handicap](localizations/noam-usa-comply-ada.md)
+-   [Formen I-9-ansættelsesbekræftelse](localizations/noam-usa-form-i-9-verification.md)
+-   [Overholde den amerikanske lov om handicap](localizations/noam-usa-comply-ada.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Indsamle oplysninger ved hjælp af spørgeskemaer
 
 Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der bruges til forskellige formål. Med spørgeskemafunktionen kan du designe og oprette spørgeskemaer. Når et spørgeskema er klar, skal du distribuere det bredt eller til en bestemt gruppe svarpersoner, som skal udfylde det. Når svarpersonerne har leveret deres svar, kan du gennemse og analysere resultaterne.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Spørgeskemaer](questionnaires.md)
+-   [Designe et spørgeskema](design-questionnaires.md)
+-   [Distribuere og udfylde et spørgeskema](distribute-questionnaires.md)
+-   [Se og evaluere resultaterne af et spørgeskema](evaluate-questionnaire-results.md)
 
 
 

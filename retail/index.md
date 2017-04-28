@@ -1,6 +1,6 @@
 ---
-title: Retail-startside
-description: "Startside til Dynamics 365 for operationer – Retail"
+title: Startside for detail
+description: "Startside Dynamics 365 for Operations – Retail"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,71 +25,71 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="retail-home-page"></a>Retail-startside
+# <a name="retail-home-page"></a>Startside for detail
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 for operationer – Retail leverer en omfattende indkøbsoplevelse med en problemfri og skelne omni-channel-løsning, der er moderne, mobile og globale. Til slut egenskaber, fra moderne punkt af salg (POS) softwareløsninger, store operationer, merchandising, e-handel, callcenter, marketing og kundeservice, til at levere kæde, regnskaber og mere, kan installeres på den måde, der giver mest mening for din virksomhed.
+Dynamics 365 for Operations – Retail giver en komplet indkøbsoplevelse med en problemfri og differentieret Omni-kanalløsning, der er moderne, mobil og global. Altdækkende funktioner, lige fra moderne POS-softwareløsninger, butiksdrift, merchandising, e-handel, callcenter, marketing og kundeservice til forsyningskæde, regnskaber med mere, der kan installeres på den måde, der giver mest mening for din virksomhed.
 
-Denne side, der peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Operations - detailvare mere effektivt. Vælg en funktion til yderligere oplysninger om det i ruden til venstre. 
+Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Operations - Retail mere effektivt. Vælg et funktionsområde, du vil vide mere om, i venstre rude. 
 
-## <a name="set-up-retail-channels"></a>Opsætning af detailkanaler
-Når du konfigurerer oplevelsen Retail, skal du beslutte, hvordan til at definere og konfigurere det fysiske lager (kaldet *detailbutik* i Dynamics 365 for Operations) og butikshandlinger online. 
+## <a name="set-up-retail-channels"></a>Konfigurere detaikanaler
+Når du konfigurerer detailoplevelsen, skal du beslutte, hvordan du vil definere og konfigurere det fysiske lager (kaldet *detailbutik* i Dynamics 365 for Operations) og driften af onlinebutikken. 
 
-Hver enkelt detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS løsninger, indtægtskonti, udgiftskonti og medarbejdere. Når du opretter din forhandler, kan du knytte de produkter, du ønsker skal føres i butikken. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
+Hver enkelt detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-løsninger, indtægtskonti, udgiftskonti og medarbejdere. Når du har oprettet din detailbutik, kan du tildele de produkter, som skal føres i butikken. Du skal også tildele butikken medarbejdere, kasseapparater og kunder. Endelig kan du føje den nye butik til et organisationshierarki.
 
-Når du opretter din onlinebutik, skal du angive komponenter som sortimenter, attributter, betalingsmetoder og metoder til levering. Du kan også definere priser, kampagner, rabatter og leveringsbetingelser, der er specifikke for onlinebutikken.
+Når du opretter din onlinebutik, skal du konfigurere komponenter som f.eks. sortimenter, attributter, betalingsmetoder og leveringsmetoder. Du kan også definere priser, kampagner, rabatter og leveringsbetingelser, der er specifikke for onlinebutikken.
 
 -   [Definere detailkanaler](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+-   [Oversigt over Onlinebutik](online-stores.md)
 
 ## <a name="set-up-a-call-center"></a>Konfigurere et callcenter
-Du kan angive et callcenter som en type detailkanal. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. For at hjælpe medarbejderne til at registrere ordrer og håndtere kundeservice i hele ordreopfyldning ordreprocessen, kan du angive hvilke en salgsordre indeholder, hvordan priser skal kontrolleres og hvilke data om kunder, produkter og priser kan få adgang til. For hver callcenter kan du også angive brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder.
+Du kan konfigurere et callcenter som en type detailkanal. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. For at hjælpe medarbejderne med at registrere ordrer og håndtere kundeservice i hele ordreopfyldningsprocessen kan du angive, hvad en salgsordre skal indeholde, hvordan priser skal kontrolleres, og hvilke data om kunder, produkter og priser, der er adgang til. For hvert callcenter kan du også angive brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+-   [Callcenter-funktionalitet](call-center-functionality.md)
+-   [Oprette callcenter-kataloger](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definer dine POS og ressourcer til MPOS løsninger
-Retail moderne POS MPOS er en POS-app til pc'er, tablets og telefoner. Sælgerne kan behandle salgstransaktioner, der bestiller kunden, og udføre daglige operationer og Lagerstyring mobile enheder, der er et vilkårligt sted i butikken, samt på PC-baserede kasseapparater. Sky POS er en browserbaseret POS. 
+## <a name="define-your-pos-and-mpos-solutions"></a>Definere dine POS- og MPOS-løsninger
+Retail Modern POS (MPOS) er en POS-app til pc'er, tablets og telefoner. Sælgerne kan behandle salgstransaktioner, kundeordrer og udføre den daglige drift og lagerstyring med mobilenheder overalt i butikken samt på pc-baserede kasseapparater. Sky-POS er et browserbaseret POS. 
 
-Der er flere komponenter, du vil konfigurere til at definere forholdet mellem en butik, POS-kasseapparater eller kanaler i lageret, og retail eksterne enheder, som dem, der registrerer eller kanaler kan bruge til at behandle transaktioner. Du kan også definere egenskaberne for en specifik forekomst af kassen, herunder opsætning af retail eksterne enheder, der skal bruges på kasseapparatet, butikken, der er tilknyttet kasseapparatet og den visuelle oplevelse for den bruger, der logger på, registreres eller hardwareprofil.
+Der er flere komponenter, du skal konfigurere for at definere relationen mellem en butik, POS-kasseapparater eller kanaler i butikken og eksterne detailenheder, som disse kasseapparater eller kanaler bruger til at behandle transaktioner. Du kan også definere egenskaberne for en specifik forekomst af POS, herunder hardwareprofilen eller konfigurationen af eksterne detailenheder, der skal bruges ved kasseapparatet og dets tilknyttede butik samt den visuelle oplevelse for den bruger, der logger på dette kasseapparat.
 
--   [Definere og vedligeholde kanal-klienter, kasseapparater og hardware-stationer](define-maintain-channel-clients-registers-hw-stations.md)
--   [Konfigurere og installere ressourcer til MPOS](retail-modern-pos-device-activation.md)
--   [Offline POS-funktionalitetsprofilen.](pos-offline-functionality.md)
+-   [Definere og vedligeholde kanalklienter, kasseapparater og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md)
+-   [Konfigurere og installere MPOS](retail-modern-pos-device-activation.md)
+-   [POS-offlinefunktionalitet](pos-offline-functionality.md)
 
-## <a name="set-up-a-customer-loyalty-program"></a>Oprette et kundeloyalitetsprogram
-Du kan konfigurere loyalitetsprogrammet, så kunderne optjener point ud fra bestemte kriterier, og point, der kan beregnes på forskellige måder. Loyalitetsprogrammet kan være simpel eller kompleks, og anvendes på tværs af juridiske enheder i forhandlerne.
--   [Konfigurere et kundeloyalitetsprogram](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Konfigurere fordelskundeprogram
+Du kan konfigurere dit fordelskundeprogram, så kunderne optjener point ud fra bestemte kriterier, og point kan beregnes på forskellige måder. Dit fordelskundeprogram kan være simpelt eller komplekst og anvendes på tværs af juridiske enheder i enhver detailkanal.
+-   [Konfigurere fordelskundeprogram](set-up-customer-loyalty-program.md)
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Opsætning af rabatter og prisjusteringer
-Du kan foretage prisreguleringer i forhold til produkter, og du kan også konfigurere rabatter, der anvendes på et linjeelement eller en transaktion på POS, til et salg, call center eller i en ordre, der er online. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Fastslå den optimale kombination af overlappende rabatter](optimal-combination-overlapping-discounts.md)
+## <a name="set-up-discounts-and-price-adjustments"></a>Konfigurere rabatter og prisjusteringer
+Du kan foretage prisjusteringer af produkter, og du kan også konfigurere rabatter, der anvendes på et linjeelement eller en transaktion på POS, i et callcenters salgsordre eller i en onlineordre. 
+-   [Prisjusteringer og rabatter](price-adjustments-discounts.md)
+-   [Definere kanalspecifikke rabatter](define-channel-specific-discounts.md)
+-   [Bestemme den optimale kombination af overlappende rabatter](optimal-combination-overlapping-discounts.md)
 
-## <a name="set-up-retail-products"></a>Konfigurer detailprodukter
-Før du kan tilbyde produkter til salg i dine detailkanaler, skal du oprette og konfigurere produkterne i Dynamics 365 for operationer. Du kan oprette produkterne, definerer produktegenskaber og -attributter og tildele produkterne til detailkategorien. For at gøre produkterne tilgængelige for detailkanaler og føje dem til et aktivt udvalg, skal du derefter frigive produkterne til juridiske enheder, som de er tilgængelige.
--   [Set up retail products](set-up-retail-products.md)
+## <a name="set-up-retail-products"></a>Konfigurere detailprodukter
+Før du kan sætte produkter til salg i dine detailkanaler, skal du oprette og konfigurere produkterne i Dynamics 365 for Operations. Du kan oprette produkterne, definere produktegenskaber og -attributter og tildele produkterne detailkategorier. Hvis du vil gøre produkterne tilgængelige for dine detailkanaler og føje dem til et aktivt udvalg, skal du frigive produkterne til de juridiske enheder, som de er tilgængelige i.
+-   [Konfigurere detailprodukter](set-up-retail-products.md)
 
-## <a name="monitor-and-analyze-performance"></a>Overvåge og analysere ydeevne
-Ved hjælp af dine Dynamics 365 for Operations-data, kan du analysere store ydeevne, debitor- og rentabilitet, salgstendenser med mere.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+## <a name="monitor-and-analyze-performance"></a>Overvåge og analysere performance
+Ved hjælp af dine Dynamics 365 for Operations-data kan du analysere butikkens performance, kunde- og produktrentabilitet, salgstendenser med mere.
+-   [Vurdere kunde- og produktrentabilitet](assess-customer-product-profitability.md)
+-   [Analysere butikperformance](store-performance-information.md)
 
-## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere Retail miljøer
-Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du har til opgave implementering og vedligeholdelse af systemet, se udvikleren og system administrator indhold, der er specifikke for Retail, samt det mere generelle indhold til Microsoft Dynamics 365 for operationer. 
--   [Dynamics 365 for Operations - Retail til IT-medarbejdere og udviklere](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for operationer for udviklere og IT-medarbejdere](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere detailmiljøer
+Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du har til opgave at implementere og vedligeholde systemet, skal du se på udviklerens og systemadministratorens indhold, der er specifikt for Detail, samt det mere generelle indhold til Microsoft Dynamics 365 for Operations. 
+-   [Dynamics 365 for Operations - Retail til it-medarbejdere og udviklere](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations til udviklere og it-medarbejdere](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-### <a name="whats-new-and-in-development"></a>Nye og udvikling
-Gå til den <a href="https://roadmap.dynamics.com/">Dynamics 365 oversigt</a> at se, hvilke nye funktioner er blevet frigivet, og hvad nye funktioner, der er under udvikling. 
+### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
+Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
 
 ### <a name="blogs"></a>Blogs
-Du kan finde meninger, nyheder og andre oplysninger om Microsoft Dynamics 365 for Operations - detail og andre løsninger på de <a href="https://community.dynamics.com/b/msftdynamicsblog">blog i Microsoft Dynamics 365</a>.
+Du kan finde meninger, nyheder og andre oplysninger om Microsoft Dynamics 365 for Operations - Retail og andre løsninger i <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365-bloggen</a>.
 
-Der er mange emner om Retail på den <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX produkt team blog</a>. Nogle af disse meddelelser, der er skrevet til den tidligere version af Dynamics 365 for operationer, men stadig anvende de samme koncepter, og procedurerne, der ligner hinanden i den aktuelle version.
+Der er mange emner om Detail i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX-produktteambloggen</a>. Nogle af disse opslag er skrevet til den tidligere version af Dynamics 365 for Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
 
-Den <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics operationer Partner Community Blog</a> indeholder Microsoft Dynamics-partnere med en enkelt ressource for at lære om nye og identifikation af tendenser i MB operationer.
+<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> giver Microsoft Dynamics-partnere en samlet ressource med oplysninger om nye og populære tendenser i MBS Operations.
 

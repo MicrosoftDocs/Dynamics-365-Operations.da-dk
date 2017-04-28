@@ -31,15 +31,15 @@ ms.lasthandoff: 04/12/2017
 Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Operations. 
 
 Vælg et funktionsområde, du vil vide mere om.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+- [Kreditor](accounts-payable\accounts-payable.md) 
+- [Debitor](accounts-receivable\accounts-receivable.md) 
+- [Kontant- og bankstyring](cash-bank-management\cash-bank-management.md)
+- [Omkostningsregnskab](cost-accounting\cost-accounting-home-page.md)
+- [Anlægsaktiver](fixed-assets\fixed-assets.md)
+- [Finans](general-ledger\general-ledger.md) 
+- [Projektstyring](project-management\overview-project-management-accounting.md)
+- [Offentlig sektor](public-sector\public-sector-functionality.md) 
+- [Budgettering](budgeting\budgeting-overview.md) 
 
 
 
