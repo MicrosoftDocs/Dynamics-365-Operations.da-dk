@@ -68,3 +68,16 @@
 ## [Oversigt over oprindelsesdata til handel](commerce-essentials.md)
 ## [Organisationer og organisationshierarkier (Oprindelsesdata til handel)](organizational-hierarchies-commerce-essentials.md)
 # [Indhold til it-medarbejdere og -udviklere](dev-itpro/TOC.md)
+
+# [Finans](/dynamics365/operations/financials/index)
+
+# [Personale](/dynamics365/operations/human-resources/index)
+
+# [Supply Chain Management](/dynamics365/operations/supply-chain/index)
+
+# [Udvikler og administrator](/dynamics365/operations/dev-itpro/index)
+
+# Andre ressourcer
+## [Ordliste til Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Nyheder eller ændringer](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

@@ -17,31 +17,42 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: b77b61089c359127a7404437c29ef63a01416779
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4a3ecb4cb643d63333666f8d5d49760caacc4e58
+ms.openlocfilehash: e14d0836ee16db4fba9ef49df9a49564aa4c0402
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisering og lovpligtige funktioner
 
-Microsoft Dynamics 365 for Operations indeholder funktionaliteten for nogle lande-/områdespecifikke regler og processer. Denne funktion er aktiveret på basis af den primære adresse for den aktive juridiske enhed. Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande-/områdepecifikke funktioner. 
+[!include[banner](../includes/banner.md)]
 
-## <a name="developer-and-isv-information"></a>Udvikler- og ISV-oplysninger
-Følgende ressourcer indeholder oplysninger, der kan hjælpe udviklere og uafhængige softwareleverandører (ISV'er), der opretter lande-/ områdespecifikke tilpasninger.
+
+Microsoft Dynamics 365 for Operations indeholder funktioner for de lande/områder, der er beskrevet i [vejledningen til produkttilgængelighed](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Denne funktion er aktiveret på basis af den primære adresse for den aktive juridiske enhed. 
+
+Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande-/områdepecifikke funktioner. 
+
+## <a name="developing-localized-solutions"></a>Udvikling af oversatte løsninger
+Følgende ressourcer indeholder vejledning og oplysninger, der kan hjælpe udviklere og ISV'er, der opretter lande-/områdespecifikke tilpasninger eller opretter en løsning til et land, som Microsoft ikke understøtter.
 -   [Separate lokaliseringsmodeller](separate-localization-models.md)
 -   [Anvende lande/-områdekontekst](apply-country-context.md)
 -   [Lovpligtige certificeringer](regulatory-certifications.md)
 -   [Klassificere lokaliseringsfunktioner](classify-localization-features.md)
 -   [Landekoder - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates"></a>Lokaliseringsopdateringer
+## <a name="localization-updates-and-communication"></a>Lokaliseringsopdateringer og kommunikation
 Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfunktioner. 
--   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### <a name="localization-updates"></a>Lokaliseringsopdateringer
+-   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (opdateres ugentligt)
+-   [LCS-problemsøgning](../lifecycle-services/issue-search-lcs.md) (opdateres dagligt)
+
+### <a name="communication-and-alerts"></a>Kommunikation og påmindelser
 -   [Lovpligtig kontrol og kommunikation om opdateringer](regulatory-watch-communication.md)
--   [Informere Microsoft om lovpligtige lande-/områdevarslinger og spore status for lovmæssige funktioner](submit-localization-alerts.md)
+-   [Informere Microsoft om lovpligtige lande-/områdepåmindelser og spore status for lovmæssige funktioner](submit-localization-alerts.md)
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
@@ -51,7 +62,15 @@ Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater fo
 -   [Udvide listen over elektroniske rapporteringsfunktioner](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Destinationer for elektronisk rapportering](../analytics/electronic-reporting-destinations.md)
 -   [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Konfigurere elektronisk rapportering med Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Konfigurere elektronisk rapportering for at trække data ind i Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+## <a name="task-guides"></a>Opgaveguider
+Opgaveguider er tilgængelige i produkthjælperuden, og de indeholder en guidet gennemgang af vigtige forretningsprocesser. Du kan åbne en opgaveguide for at læse trinnene i en forretningsproces, eller du kan afspille en opgaveguide for at gennemgå en forretningsproces og indtaste data.
+
+Du kan finde opgaveguider ved at navigere til en side i Microsoft Dynamics 365 for Operations og klikke på Hjælp. Opgaveguider, der bruger siden, vises i hjælperuden. Du kan også bruge hjælperuden til at søge efter opgaveguiders titel.
+
+Du kan finde flere oplysninger i [Opgaveguider](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
 
 ## <a name="countryregion-specific-help-topics"></a>Lande-/områdespecifikke emner i Hjælp
 I følgende afsnit vises ressourcer efter land/område.
@@ -62,17 +81,17 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Business Activity Statement ](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Afskrivning af aktiver med lav værdi](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### <a name="austria"></a>Østrig
 
+-   [Halvårlig afskrivning](/dynamics365/operations/financials/localizations/emea-aut-half-year-depreciation)
 -   [Emballagegebyrer](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
 -   [Momsopgørelse](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgien
 
 -   [CODA-bankkontoudtog](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
+-   [Intervat-momsopgørelse](/dynamics365/operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM-rapportopsætning](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### <a name="brazil"></a>Brasilien
 
@@ -93,7 +112,6 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Momsbetalinger](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Moms](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### <a name="china"></a>Kina
 -   [Sammenligning af styklister](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Kinesiske bilag](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -105,12 +123,14 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Bogføre lagerhovedkonti efter lokation](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Vise debet- og kreditbeløb for finanskonti](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
-
 ### <a name="the-czech-republic"></a>Tjekkiet
+
+-   [Kasserabat på kreditnota](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Afskrivningsafrunding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--       [Halvårlig afskrivning på kassation af anlægsaktiver i Tjekkiet](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Midlertidigt stop af afskrivning (helligdage)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Afskrivningsmetoder for anlægsaktiver i Tjekkiet](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [Halvårlig afskrivning på kassation af anlægsaktiver i Tjekkiet](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Midlertidigt stop af afskrivning (helligdage)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Afskrivningsmetoder for anlægsaktiver i Tjekkiet](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Bogføre præanskaffelsen af et anlægsaktiv](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Momsopgørelse for Tjekkiet](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Splitperioder i periodiske kladder](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -127,6 +147,7 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Redigere faktura id'er på salgsordrer](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [EU-indførselscertifikater](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [Rapportering til EU-listesystemet](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Kursreguleringer](/dynamics365/operations/financials/localizations/emea-exchange-rate-adjustments)
 -   [Filformater for betalingsmåder](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 -   [Kassation af anlægsaktiver for Estland og Litauen](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
@@ -143,11 +164,9 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Konfigurere underskrivere til trykte formularer](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Splitperioder i periodiske kladder](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Opdatere, hvordan beløb vises på rapporter og dokumenter](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
+-   [Valutakurser for moms](/dynamics365/operations/financials/localizations/emea-vat-exchange-rate)
 -   [Momsrapportering for Europa](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [Se posteringer på udligning](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### <a name="france"></a>Frankrig
 -   [Kronologiske faktura- og bilagsnumre](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -164,15 +183,16 @@ I følgende afsnit vises ressourcer efter land/område.
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Kreditorfakturabetaling på hold](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
 
-
 ### <a name="germany"></a>Tyskland
 -   [Afskrivning af yderligere anskaffelser](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
 -   [Tysk revisionsfil (GDPdU/GoBD)](/dynamics365/operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [Tysk journallisterapport](/dynamics365/operations/financials/localizations/emea-deu-journal-list-report)
--   [Udskrive en separat label til kreditnotaer, der kommer fra salg (Opgaveguide)](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Udskrive en separat label til kreditnotaer, der kommer fra salg](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
 ### <a name="hungary"></a>Ungarn
 
+-   [Afskrivningsmetoder for anlægsaktiver](/dynamics365/operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods)    
+-   [Flytte et anlægsaktiv til lager](/dynamics365/operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Prisbillige anlægsaktiver](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
 ### <a name="italy"></a>Italien
@@ -184,6 +204,7 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Bekræftelse af følgeseddeldato på fakturaer for Italien](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italienske momsregnskaber](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Opdelt betaling af fakturaer, der er udstedt til den offentlige administration](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+-   [A-skat](/dynamics365/operations/financials/localizations/emea-ita-withholding tax)
 
 ### <a name="japan"></a>Japan
 
@@ -240,6 +261,9 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Nummerering af salgsfakturadubletter](/dynamics365/operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
 -   [Afskrivning af anlægsaktiver](/dynamics365/operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Kassation af anlægsaktiver](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
+-   [Emballage, der kan returneres](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
+-   [Momsrapporter](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
+-   [Standardrevisionsfil (SAF)](/dynamics365/operations/financials/localizations/emea-pol-standard-audit-file-saf)
 -   [Omsætnings- og saldoopgørelse](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### <a name="saudi-arabia"></a>Saudi-Arabien
@@ -252,15 +276,16 @@ I følgende afsnit vises ressourcer efter land/område.
 
 ### <a name="spain"></a>Spanien
 
-
--   [Spanske vekselindstillinger](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
+-   [Spanske vekselindstillinger](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [Kasserabat anvendes i fakturaparameteren](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Bruge regnskabsdata fra fakturakontoen](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Betinget moms](/dynamics365/operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Værdireguleringsgrupper for anlægsaktiver](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
+-   [Fællesskabsmoms](/dynamics365/operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Engangskunder](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Spanske indstillinger for egenveksel](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Salgs- og købscyklusser](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Specialposter og primoark](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
+-   [Bruge regnskabsdata fra fakturakontoen](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 
 ### <a name="sweden"></a>Sverige
 
@@ -286,4 +311,7 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [1099-rapportering ved årsafslutning](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Løn](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Offentlig sektor](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
+
+
 

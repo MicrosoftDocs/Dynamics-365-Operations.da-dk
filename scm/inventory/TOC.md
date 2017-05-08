@@ -1,5 +1,6 @@
-# Opret lageropbygning
+# Oprette lageropbygning
 # Indgående proces
+## [Modtagelsesoversigt](arrival-overview.md)
 # Udgående proces
 # Konfigurere lagersporing
 ## [Lagerkladder](inventory-journals.md)
@@ -11,6 +12,7 @@
 ## [Konsignation](consignment.md)
 ## [Konfigurere konsignation](set-up-consignment.md)
 # Kvalitetsstyring
+## [Disponibelt lager i mobilarbejdsområde](inventory-on-hand-mobile-workspace.md)
 ## [Aktivere kvalitetsstyring](enable-quality-management.md)
 ## [Lagerblokering](inventory-blocking.md)
 ## [Håndtering af uoverensstemmelse](enable-nonconformance-management.md)
@@ -19,3 +21,4 @@
 # Spore vare og batch
 ## [Flette lagerbatch](merge-inventory-batches.md)
 ## [Spore vare og råmateriale](trace-items-raw-materials-inventory-production-sales.md)
+
