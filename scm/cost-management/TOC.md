@@ -22,10 +22,14 @@
 ## [Dato for vægtet gennemsnit](weighted-average-date.md)
 ## [Vægtet gennemsnit med fysisk værdi og afmærkning](weighted-average-physical-value-marking.md)
 # Efterkalkulation af produktion
+## [Amortisere konstante omkostninger for en produceret vare](amortize-constant-costs-manufactured-item.md)
+## [Efterkalkuleret varetræk](backflush-costing.md)
+## [Beregninger af styklister](bom-calculations.md)
 ## [Styklisteberegningsgruppe](bom-calculation-groups.md)
 ## [Almindelige kilder til produktionsafvigelse](common-sources-of-production-variances.md)
 ## [Omkostningsart, der bruges i produktionsrute](cost-categories-used-production-routings.md)
 ## [Omkostningsart, der bruges i Produktionsstyring og i Projektstyring og regnskab](cost-categories-used-production-control-project-management-accounting.md)
+## [Vise gebyrer for en produceret vare](charges-manufactured-item.md)
 ## [Omkostningsanalyse for produktionsordre](production-order-cost-analysis.md)
 ## [Forkalkulation af produktionsordre](production-order-cost-estimation.md)
 ## [Produktionsbogføring](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Opdatere standardomkostning i et produktionsmiljø](update-standard-costs-manufacturing-environment.md)
 ## [Opdatere standardomkostning for en ny produceret vare](update-standard-costs-new-manufactured-item.md)
 ## [Opdatere standardomkostning i et ikke-produktionsmiljø](update-standard-costs-non-manufacturing-environment.md)
+
 
 

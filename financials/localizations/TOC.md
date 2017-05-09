@@ -39,9 +39,10 @@
 
 # Europa
 ## [Forskudshavere](emea-advance-holders.md)
-## [Redigere faktura id'er på salgsordrer](emea-edit-invoice-id-sales-orders.md)
+## [Redigere faktura-id'er på salgsordrer](emea-edit-invoice-id-sales-orders.md)
 ## [EU-indførselscertifikater](emea-entry-certificates.md)
 ## [Rapportering til EU-listesystemet](emea-eu-sales-list.md)
+## [Kursreguleringer](emea-exchange-rate-adjustments.md)
 ## [Filformater for betalingsmåder](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Kassation af anlægsaktiver for Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [Oversigt over SEPA-kreditoverførsel](../accounts-payable/sepa-credit-transfer.md)
 ## [Oversigt over SEPA Direct Debit](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Konfigurere underskrivere til trykte formularer](emea-set-up-signers-for-printing-forms.md)
-## [Splitperioder i periodiske kladder](emea-create-post-periodic-journals.md)
-## [Opdatere, hvordan beløb vises på rapporter og dokumenter](emea-amount-printing-forms.md)
-## [Momsrapportering](emea-vat-reporting.md)
+## [Valutakurser for moms](emea-vat-exchange-rate.md)
 ## [Se posteringer på udligning](emea-transactions-settlement-form.md)
 ## Østrig
+### [Halvårlig afskrivning](emea-aut-half-year-depreciation.md)
 ### [Emballagegebyrer](emea-aut-packing-material-fee-calculation.md)
 ### [Momsopgørelse](emea-aut-vat-statement-details.md)
 ## Belgien
 ### [CODA-bankkontoudtog](emea-bel-coda-bank-statement-import.md)
+### [Intervat-momsopgørelse](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-rapportopsætning](emea-bel-prodcom-report.md)
 
 ## Tjekkiet
+### [Kasserabat på kreditnota](emea-cze-credit-note-cash-discount.md)
 ### [Afskrivningsafrunding](emea-cze-depreciation-rounding.md)
 ### [Midlertidigt stop af afskrivning](emea-cze-depreciation-suspension-holidays.md)
 ### [Afskrivning af anlægsaktiver](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Kladdelisterapport](emea-deu-journal-list-report.md)
 ### [Udskrive en separat label til kreditnotaer, der kommer fra salg](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungarn
+### [Afskrivningsmetoder for anlægsaktiver](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Prisbillige anlægsaktiver](emea-hun-low-cost-fixed-assets.md)
+### [Flytte et anlægsaktiv til lager](emea-hun-fixed-asset-to-inventory.md)
 ## Italien
 ### [Detaljer om momsopgørelser](emea-ita-vat-statements-details.md)
 ### [Sortlistningsrapport](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Bekræftelse af følgeseddeldato på fakturaer](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Momsregnskaber](emea-ita-fiscal-books.md)
 ### [Opdelt betaling af fakturaer, der er udstedt til den offentlige administration](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [A-skat](emea-ita-withholding tax.md)
 ## Letland
 ### [Regnskab for anlægsaktiver](emea-lva-fixed-assets-accounting.md)
 ### [Sporing af ændret anlægsaktivlokation](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Nummerering af salgsfakturadubletter](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Afskrivning af anlægsaktiv](emea-pol-fixed-assets-depreciation.md)
 ### [Udvidelse af kassationsfunktionalitet for anlægsaktiv](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Emballage, der kan returneres](emea-pol-returnable-packages.md)
+### [Momsrapporter](emea-pol-sales-tax-reports.md)
+### [Standardrevisionsfil (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [Omsætningssaldoopgørelse](emea-pol-turnover-balances-statement.md)
 ## Spanien
-### [Vekselindstillinger](emea-esp-bill-of-exchange-options.md)
 ### [Anvende kasserabatter på fakturaen](emea-esp-cash-discount-applied-invoice.md)
+### [Vekselindstillinger](emea-esp-bill-of-exchange-options.md)
+### [Betinget moms](emea-esp-conditional-sales-tax.md)
 ### [Fakturakonto for regnskabsdata](emea-esp-fiscal-data-invoice-account.md)
 ### [Værdiregulering af anlægsaktivgruppe](emea-esp-fixed-asset-group-revaluation.md)
+### [Fællesskabsmoms](emea-esp-intra-community-vat.md)
 ### [Engangskunder](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Indstillinger for egenveksel](emea-esp-promissory-note-options.md)
 ### [Salgs- og købscyklusser](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Nordamerika
 ## [Årets 1099-rapportering i USA](noam-usa-year-end-1099-reporting.md)
+

@@ -1,6 +1,6 @@
 ---
 title: "Startside for anlægsaktiver"
-description: "Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller en organisation."
+description: "Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: cdcf247f33a35ebae4af4ff22c10083642e9f97a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 9d2c591b4a3f30ac9a3a842161ee7aa0e6c1db35
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -30,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller en organisation. 
+Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation. 
 
-Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere aktiverne ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen. Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem. Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område. Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver. Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.
+Du kan definere og angive anskaffelsesoplysninger vedrørende anlægsaktiver og derefter håndtere dem ved at afskrive dem og angive en grænse for kapitalisering, som fastlægger afskrivningen. Du kan beregne reguleringer af anlægsaktiverne, og du kan afhænde dem. Når du bruger finansmodulet sammen med Anlægsaktiver, kan du få vist den nuværende værdi af alle anlægsaktiver. Den måde, som anlægsaktiver håndteres på, skal opfylde både internationale regnskabsstandarder og regnskabslovgivningen i hvert land/område. Kravene kan omfatte regler for registrering af anskaffelses- og kassationsposteringer, afskrivning, levetider, opskrivninger og nedskrivninger af anlægsaktiver. Funktionerne for anlægsaktiver omfatter mange af disse standarder og regler.
 
 
 

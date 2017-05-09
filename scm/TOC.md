@@ -56,6 +56,7 @@
 ### [Stykliste og formel](production-control/bill-of-material-bom.md)
 ### [Funktioner i styklistedesigneren](production-control/bom-designer-functionality.md)
 ### [Produktdimension](pim/product-dimensions.md)
+### [Standardordreindstillinger for dimensioner og produktvarianter](production-control/default-order-settings.md)
 ### [Nomenklatur for produktnummer](pim/product-variant-identification-nomenclature.md)
 ### [Ofte stillede spørgsmål til produktrelateret oversættelse](pim/translations-product-related-information.md)
 ### [Registrere serienummer i salgsprocessen](sales-marketing/register-serial-numbers-sales-process.md)
@@ -70,49 +71,77 @@
 ### [Oprette en konfigurationsmodel](pim/set-up-maintain-product-configuration-model.md)
 ### [Systemdefineret og brugerdefineret tabelbegrænsning](pim/system-defined-user-defined-table-constraints.md)
 # Produktionsstyring
-## Produktionsproces    
-### [Aktivitetsbaseret underleverandørarbejde](production-control/activity-based-subcontracting.md)
-### [Batchattributter](production-control/batch-attributes.md)
-### [Styklister og formler](production-control/bill-of-material-bom.md)
-### [Funktioner i styklistedesigneren](production-control/bom-designer-functionality.md)
-### [Konsoliderede batchordrer](production-control/consolidated-batch-orders.md)
-### [Administrere underleverandørarbejde i produktion](production-control/manage-subcontract-work-production.md)
-### [Planlægning i blandet tilstand: kombinere diskret, proces- og lean-forsyning](production-control/mixed-mode-plan.md)
-### [Produktionsproces](production-control/production-process-overview.md)
-### [Krav til produktionsopsætning](production-control/production-set-up-requirements.md)
-### [Ruter og operationer](production-control/routes-operations.md)
-## Produktionsordrer
-### [Oprette produktionsordrer](production-control/create-production-orders.md)
-### [Standardordreindstillinger for dimensioner og produktvarianter](production-control/default-order-settings.md)
-### [Frigive produktionsordrer](production-control/release-production-orders.md)
-### [Tilbageføre produktionsordrestatus](production-control/reverse-production-order-status.md)
-### [Færdigmelde styklister](production-control/report-boms-as-finished.md)
-### [Færdigmelde produktionsordrer](production-control/report-production-orders-as-finished.md)
-## Lean produktion 
-### [Kanban-området for overførsel understøtter stregkodescannere](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Tidsplanlægning af kanban-job for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+## [Oversigt over produktionsproces](production-control/production-process-overview.md)
+## [Planlægning i blandet tilstand: kombinere diskret, proces- og lean-forsyning](production-control/mixed-mode-plan.md)
+## [Administrere underleverandørarbejde i produktion](production-control/manage-subcontract-work-production.md)
+## Separat fremstilling
+### Vedligeholde masterdata til produktion
+#### [Krav til produktionsopsætning](production-control/production-set-up-requirements.md)
+#### [Styklister og formler](production-control/bill-of-material-bom.md)
+#### [Funktioner i styklistedesigneren](production-control/bom-designer-functionality.md)
+#### [Beregninger af styklister](cost-management/bom-calculations.md)
+#### [Operationsressourcer](production-control/operations-resources.md)
+#### [Ressourceegenskaber](production-control/resource-capabilities.md)
+#### [Ruter og operationer](production-control/routes-operations.md)
+#### [Produktionsordrestandarder i produktionsudførelse](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Politikker for lagerstedsarbejde](warehousing/warehouse-work-policies.md)
+### Planlægge produktionsoperationer
+#### [Grovplanlægning](production-control/operations-scheduling.md)
+#### [Finplanlægning](production-control/job-scheduling.md)
+#### [Indstillinger for grovplanlægning](production-control/operation-scheduling-options.md)
+### Udføre produktionsjob
+#### [Oprette produktionsordrer](production-control/create-production-orders.md)
+#### [Frigive produktionsordrer](production-control/release-production-orders.md)
+#### [Tilbageføre produktionsordrestatus](production-control/reverse-production-order-status.md)
+#### [Færdigmelde produktionsordrer](production-control/report-production-orders-as-finished.md)
+#### [Færdigmelde styklister](production-control/report-boms-as-finished.md)
+#### [Materialeerstatning i produktion](production-control/substitute-items-bom-lines.md)
+#### [Registrering for produktionsudførelse](production-control/registration-manufacturing-execution.md)
+#### [Produktionstilbagemelding](production-control/production-feedback.md)
+#### [Registrering af tid og fremmøde](production-control/time-attendance-registrations.md)
+### Administrere regnskaber i produktion
+#### [Fordele tid til job i et jobbundt](production-control/allocate-time-jobs-job-bundle.md)
+#### [Beregne materialeforbrug](production-control/consumption.md)
+#### [Produktionsbogføring](cost-management/production-posting.md)
+## Lean manufacturing 
 ### [Oversigt over lean manufacturing](production-control/lean-manufacturing-overview.md)
-### [Modellere en lean organisation](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Planlægge operationer og job
-### [Fordele tid til job i et jobbundt](production-control/allocate-time-jobs-job-bundle.md)
-### [Finplanlægning](production-control/job-scheduling.md)
-### [Indstillinger for grovplanlægning](production-control/operation-scheduling-options.md)
-### [Grovplanlægning](production-control/operations-scheduling.md)
-## Ressourcer
-### [Operationsressourcer](production-control/operations-resources.md)
-### [Ressourceegenskaber](production-control/resource-capabilities.md)
-### [Registrering af tid og fremmøde](production-control/time-attendance-registrations.md)
-## Produktionsudførelse
-### [Materialeerstatning i produktion](production-control/substitute-items-bom-lines.md)
-### [Beregne materialeforbrug](production-control/consumption.md)
-### [Produktionstilbagemelding](production-control/production-feedback.md)
-### [Produktionsordrestandarder i produktionsudførelse](production-control/production-order-defaults-manufacturing-execution.md)
-### [Produktionsbogføring](cost-management/production-posting.md)
-### [Registrering for produktionsudførelse](production-control/registration-manufacturing-execution.md)
+### [Aktivitetsbaseret underleverandørarbejde](production-control/activity-based-subcontracting.md)
+### Vedligeholde masterdata til produktion
+#### [Modellere en lean organisation](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Operationsressourcer](production-control/operations-resources.md)
+### Planlægge kanban-job
+#### [Tidsplanlægning af kanban-job for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Finplanlægning](production-control/job-scheduling.md)
+### Udføre kanban-job
+#### [Kanban-området for overførsel understøtter stregkodescannere](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Produktionstilbagemelding](production-control/production-feedback.md)
+## Procesproduktion
+### Vedligeholde masterdata til produktion
+#### [Styklister og formler](production-control/bill-of-material-bom.md)
+#### [Operationsressourcer](production-control/operations-resources.md)
+#### [Ressourceegenskaber](production-control/resource-capabilities.md)
+#### [Batchattributter](production-control/batch-attributes.md)
+#### [Produktionsordrestandarder i produktionsudførelse](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Krav til produktionsopsætning](production-control/production-set-up-requirements.md)
+### Planlægge produktionsoperationer
+#### [Grovplanlægning](production-control/operations-scheduling.md)
+#### [Indstillinger for grovplanlægning](production-control/operation-scheduling-options.md)
+#### [Finplanlægning](production-control/job-scheduling.md)
+### Udføre produktionsjob
+#### [Konsoliderede batchordrer](production-control/consolidated-batch-orders.md)
+#### [Materialeerstatning i produktion](production-control/substitute-items-bom-lines.md)
+#### [Registrering for produktionsudførelse](production-control/registration-manufacturing-execution.md)
+#### [Produktionstilbagemelding](production-control/production-feedback.md)
+#### [Registrering af tid og fremmøde](production-control/time-attendance-registrations.md) 
+### Administrere regnskaber i produktion
+#### [Fordele tid til job i et jobbundt](production-control/allocate-time-jobs-job-bundle.md)
+#### [Beregne materialeforbrug](production-control/consumption.md)
+#### [Produktionsbogføring](cost-management/production-posting.md)
 # Salg og marketing
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Salgsordrer
 ### [Ordretilsagn](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Leveringsalternativer](sales-marketing/delivery-alternatives.md)
 ### [Ordreindtastningsfrister](sales-marketing/order-entry-deadlines.md)
 ### [Direkte leveringer](sales-marketing/direct-deliveries.md)
 ### [Leveranceplaner](sales-marketing/delivery-schedules.md)
@@ -138,6 +167,7 @@
 ### [Konfigurere layout](warehousing/warehouse-configuration.md)
 ### [Politikker for lagerstedsarbejde](warehousing/warehouse-work-policies.md)
 ### [Måleenhed og lagerføringspolitikker](warehousing/unit-measure-stocking-policies.md)
+### [Power BI-indhold til lagersted](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Pluk og pakning
 ### [Emballage og gebyrer](warehousing/pack-materials-packing-material-fees.md)
 ## Lageroptælling
@@ -151,7 +181,21 @@
 ## Genopfyldning
 ### [Genopfyldning](warehousing/replenishment.md)
 ## Mobilenheder
+### [Installere og konfigurere lagerstedsapp ](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurere feltnavne i lagerstedsapp](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Konfigurere mobilenheder til lagerstedsarbejde](warehousing/configure-mobile-devices-warehouse.md)
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Skærmindstillinger for lagerstedets mobilenhed](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Finans](/dynamics365/operations/financials/index)
+
+# [Personale](/dynamics365/operations/human-resources/index)
+
+# [Detail](/dynamics365/operations/retail/index)
+
+# [Udvikler og administrator](/dynamics365/operations/dev-itpro/index)
+
+# Andre ressourcer
+## [Ordliste til Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Nyheder eller ændringer](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+

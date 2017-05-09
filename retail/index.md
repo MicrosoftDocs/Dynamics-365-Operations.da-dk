@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail giver en komplet indkøbsoplevelse med en
 Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Operations - Retail mere effektivt. Vælg et funktionsområde, du vil vide mere om, i venstre rude. 
 
 ## <a name="set-up-retail-channels"></a>Konfigurere detaikanaler
-Når du konfigurerer detailoplevelsen, skal du beslutte, hvordan du vil definere og konfigurere det fysiske lager (kaldet *detailbutik* i Dynamics 365 for Operations) og driften af onlinebutikken. 
+Når du konfigurerer detailoplevelsen, skal du beslutte, hvordan du vil definere og konfigurere dine butikker - fysisk butik, onlinebutik og callcenter. 
 
-Hver enkelt detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-løsninger, indtægtskonti, udgiftskonti og medarbejdere. Når du har oprettet din detailbutik, kan du tildele de produkter, som skal føres i butikken. Du skal også tildele butikken medarbejdere, kasseapparater og kunder. Endelig kan du føje den nye butik til et organisationshierarki.
-
-Når du opretter din onlinebutik, skal du konfigurere komponenter som f.eks. sortimenter, attributter, betalingsmetoder og leveringsmetoder. Du kan også definere priser, kampagner, rabatter og leveringsbetingelser, der er specifikke for onlinebutikken.
+Hver enkelt detailbutik kan have sine egne betalingsmetoder, leveringsmetoder, prisgrupper, indtægts-/udgiftskonti, kasseapparater og medarbejdere. Når du har oprettet din detailbutik, kan du oprette et udvalg af produkter, som skal føres i butikken. Du kan også definere butiksspecifikke priser og rabatter, der gælder for produkter, der er sælges i butikken.
 
 -   [Definere detailkanaler](define-maintain-retail-channels.md)
 -   [Oversigt over Onlinebutik](online-stores.md)
@@ -49,10 +48,10 @@ Du kan konfigurere et callcenter som en type detailkanal. I et callcenter tager 
 -   [Callcenter-funktionalitet](call-center-functionality.md)
 -   [Oprette callcenter-kataloger](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definere dine POS- og MPOS-løsninger
-Retail Modern POS (MPOS) er en POS-app til pc'er, tablets og telefoner. Sælgerne kan behandle salgstransaktioner, kundeordrer og udføre den daglige drift og lagerstyring med mobilenheder overalt i butikken samt på pc-baserede kasseapparater. Sky-POS er et browserbaseret POS. 
+## <a name="define-your-pos-solutions"></a>Definere dine POS-løsninger
+Retail Modern POS (MPOS) er en POS-app til pc'er, tablets og telefoner. Sælgerne kan behandle salgstransaktioner og kundeordrer, udføre kundeaktiviteter og foretage den daglige drift og lagerstyring med mobilenheder overalt i butikken samt på pc-baserede kasseapparater. Cloud POS er en browserbaseret POS, der kan startes på enhver standardbrowser. 
 
-Der er flere komponenter, du skal konfigurere for at definere relationen mellem en butik, POS-kasseapparater eller kanaler i butikken og eksterne detailenheder, som disse kasseapparater eller kanaler bruger til at behandle transaktioner. Du kan også definere egenskaberne for en specifik forekomst af POS, herunder hardwareprofilen eller konfigurationen af eksterne detailenheder, der skal bruges ved kasseapparatet og dets tilknyttede butik samt den visuelle oplevelse for den bruger, der logger på dette kasseapparat.
+Der er flere komponenter, du skal konfigurere for at definere relationer mellem en butik, POS-kasseapparater i butikken og eksterne detailenheder, som disse kasseapparater bruger til at behandle transaktioner. Du kan også definere egenskaberne for en specifik forekomst af POS, herunder hardwareprofilen eller konfigurationen af eksterne detailenheder, der skal bruges ved kasseapparatet og dets tilknyttede butik samt den visuelle oplevelse for den bruger, der logger på dette kasseapparat, og de funktioner, som er aktiveret i kasseapparatet. Du kan også definere, om kasseapparatet kan fungere i en afbrudt eller offline-tilstand.
 
 -   [Definere og vedligeholde kanalklienter, kasseapparater og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Konfigurere og installere MPOS](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Du kan finde meninger, nyheder og andre oplysninger om Microsoft Dynamics 365 fo
 Der er mange emner om Detail i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX-produktteambloggen</a>. Nogle af disse opslag er skrevet til den tidligere version af Dynamics 365 for Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> giver Microsoft Dynamics-partnere en samlet ressource med oplysninger om nye og populære tendenser i MBS Operations.
+
+
 

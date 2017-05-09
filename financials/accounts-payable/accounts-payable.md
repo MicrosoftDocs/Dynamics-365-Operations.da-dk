@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: c0febeaf790fd9d2281f0e98089eb557ca1f7cec
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 8bdfc9b29da86460e8f47760cf8afc051ea923fb
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Dette emne giver en oversigt over kreditor. 
 
-Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed. Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden **Kreditorfaktura**. Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsprocesser til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.
+Du kan angive kreditorfakturaer manuelt eller modtage dem elektronisk via en dataenhed. Når fakturaerne er blevet indtastet eller modtaget, kan du gennemse og godkende dem vha. en fakturagodkendelseskladde eller siden **Kreditorfaktura**. Du kan bruge fakturasammenholdelse, kreditorfakturapolitikker og arbejdsprocesser til at automatisere gennemsynsprocessen, så fakturaer, der overholder visse krav, automatisk bliver godkendt, og de resterende fakturaer markeres til gennemsyn af en autoriseret bruger.
 
 
 
