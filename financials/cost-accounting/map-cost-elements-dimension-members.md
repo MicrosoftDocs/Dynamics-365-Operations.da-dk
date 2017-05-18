@@ -1,9 +1,9 @@
 ---
-title: "Knytte forskellige dimensionsmedlemmer for omkostningselementer til et fælles sæt dimensionsmedlemmer"
+title: "Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer"
 description: "Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 45 - 07
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a1e9817b6ee596ad516531d7597a2a39e115749c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 24794f371e1914f8466cd9a7407fd263e94b00aa
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte forskellige dimensionsmedlemmer for omkostningselementer til et fælles sæt dimensionsmedlemmer
+# <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
+
+[!include[banner](../includes/banner.md)]
+
 
 Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål.
 
@@ -48,5 +52,7 @@ De forskellige kontoplaner, som du bruger, kan konfigureres til at bruge forskel
 
 ## <a name="update-mappings-at-any-time"></a>Opdatere tilknytninger efter behov
 Du kan opdatere tilknytningsdefinitionerne af en dimension med omkostningselement når som helst. Da tilknytningerne ikke er datorelaterede, anvendes ændringer, næste gang du behandler omkostningsposteringer eller kører omkostningsberegninger.
+
+
 
 

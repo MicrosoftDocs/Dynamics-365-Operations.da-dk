@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Eksempler på nummerserier
 I følgende eksempler vises det, hvordan segmenter bruges til oprettelse af nummerserieformater. Eksemplerne viser nærmere bestemt virkningerne af at bruge områdesegmenter.
 ### <a name="expense-report-numbers"></a>Udgiftsrapportnumre
 
-I det følgende eksempel konfigureres der udgiftsrapportnumre for den juridiske enhed med navnet **CS**. **Område: **Rejser og udgifter **Reference: **Udgiftsrapportnummer **Område: **Juridisk enhed **Juridisk enhed: **CS
+I det følgende eksempel konfigureres der udgiftsrapportnumre for den juridiske enhed med navnet **CS**. **Område:** Rejser og udgifter **Reference:** Udgiftsrapportnummer **Område:** Juridisk enhed **Juridisk enhed:** CS
 | Segmenter  | Segmenttype | Værdi     |
 |-----------|--------------|-----------|
 | Segment 1 | Juridisk enhed | CS        |
@@ -49,7 +50,7 @@ I det følgende eksempel konfigureres der udgiftsrapportnumre for den juridiske 
 
 ### <a name="sales-order-numbers"></a>Salgsordrenumre
 
-I følgende eksempel konfigureres der salgsordrenumre for firma-id'et **CEU**. **Område: **Salg **Reference: **Salgsordre **Område: **Firma **Firma: **CEU
+I følgende eksempel konfigureres der salgsordrenumre for firma-id'et **CEU**. **Område:** Salg **Reference:** Salgsordre **Område:** Firma **Firma:** CEU
 | Segmenter  | Segmenttype | Værdi    |
 |-----------|--------------|----------|
 | Segment 1 | Konstant     | SO-      |
@@ -59,7 +60,7 @@ I følgende eksempel konfigureres der salgsordrenumre for firma-id'et **CEU**. *
 
 ### <a name="purchase-requisition-numbers"></a>Indkøbsrekvisitionsnumre
 
-I det følgende eksempel gælder indkøbsrekvisitionsnumre for hele organisationen. **Område: **Køb **Reference: **Indkøbsrekvisition **Område: **Delt
+I det følgende eksempel gælder indkøbsrekvisitionsnumre for hele organisationen. **Område:** Køb **Reference:** Indkøbsrekvisition **Område:** Delt
 | Segmenter  | Segmenttype | Værdi    |
 |-----------|--------------|----------|
 | Segment 1 | Konstant     | Rek      |

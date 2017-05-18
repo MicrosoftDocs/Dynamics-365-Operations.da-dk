@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ Ordretilsagn beregner tidligste afsendelses- og modtagelsesdatoer og er baseret 
 
 -   **Salgsleveringstid** – Salgsleveringstid er tiden mellem oprettelse af salgsordren og forsendelse af varerne. Beregningen af leveringsdatoen er baseret på antal dage og tager ikke hensyn til varernes tilgængelighed, kendte behov eller planlagte leveringer.
 -   **DTT (disponibel til tilsagn)** – DTT er antallet af en vare, der er tilgængelig og kan være lovet til en kunde på en bestemt dato. DTT-beregningen omfatter leveringstider, der ikke er bindende, planlagte tilgange og afgange.
--   **DTT + Afgangsmargen **– Afsendelsesdatoen er den samme som DTT-datoen plus varens afgangsmargen. Afgangsmargenen er den tid, der kræves for at klargøre varerne til afsendelse.
--   **LE (leveringsevne) **– Tilgængelighed beregnes via udfoldning.
+-   **DTT + Afgangsmargen**– Afsendelsesdatoen er den samme som DTT-datoen plus varens afgangsmargen. Afgangsmargenen er den tid, der kræves for at klargøre varerne til afsendelse.
+-   **LE (leveringsevne)**– Tilgængelighed beregnes via udfoldning.
 
 ## <a name="atp-calculations"></a>DTT-beregninger
 DTT-antallet beregnes ved hjælp af metoden "kumulativ fremtidig DTT". Den største fordel ved denne metode til beregning af DTT er, at det kan håndtere de tilfælde, hvor summen af afgange mellem tilgange er mere end sidste tilgang (for eksempel når et antal fra en tidligere tilgang skal bruges til at imødekomme et behov). Metoden til beregning af "kumulativ fremtidig DTT" omfatter alle afgange, indtil det kumulative antal, der skal modtages, overstiger det kumulative antal af afgange. Derfor evaluerer DTT-beregningsmetoden, om nogle af antallet fra en tidligere periode kan bruges i en senere periode.  

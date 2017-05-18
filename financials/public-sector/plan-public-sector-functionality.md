@@ -3,7 +3,7 @@ title: "Planlæg funktioner til den offentlige sektor"
 description: "I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations."
 author: rschloma
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4afe88012b28b74e25c30befb261b5ea2f633ce9
-ms.openlocfilehash: 337e988b474a27ddbc68358fbe879d0230d887ce
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbbc33ceab6a448a0d98c5145e3055d0d830aed6
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="plan-for-public-sector-functionality"></a>Planlæg funktioner til den offentlige sektor
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations.
 
@@ -49,7 +53,7 @@ Budgetanalyse Budgetanalyse for reviderede budgetter Budgetanalyse for faktiske 
 
 ### <a name="french-regulatory-options"></a>Indstillinger for franske myndighedskrav
 
-**Bemærk!** Du kan finde oplysninger om indstillinger for franske myndighedskrav i [Kontering for den offentlige sektor i Frankrig](/localizations/europe/public-sector-accounting-france.md). Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:
+**Bemærk!** Du kan finde oplysninger om indstillinger for franske myndighedskrav i [Kontering for den offentlige sektor i Frankrig](../localizations/emea-fra-public-sector-accounting.md). Følgende sider er kun tilgængelige, hvis følgende betingelser er opfyldt:
 
 -   Konfigurationsnøglen **Offentlig sektor** er valgt.
 -   Konfigurationsundernøglen **Franske myndighedskrav** er valgt.
@@ -71,5 +75,7 @@ Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer
 --------
 
 [Funktioner til den offentlige sektor](public-sector-functionality.md)
+
+
 
 

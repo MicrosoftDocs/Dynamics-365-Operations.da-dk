@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: d57b00de54a0966f94b98885c9ffbf02a1838c90
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -74,7 +75,7 @@ Du skal angive en emnelinje og instruktioner til brugere, som har fået den manu
     6.  Klik på **Luk**.
 
 ## <a name="specify-the-possible-outcomes-of-a-decision"></a>Angive mulige udfald af en beslutning
-Når et dokument tildeles en beslutningstager, får beslutningstageren typisk stillet et spørgsmål. Svaret på spørgsmålet er normalt **Ja **eller **Nej**, **Sand** eller **Falsk**. Udfør følgende trin for at angive det mulige udfald af den manuelle beslutning.
+Når et dokument tildeles en beslutningstager, får beslutningstageren typisk stillet et spørgsmål. Svaret på spørgsmålet er normalt **Ja**eller **Nej**, **Sand** eller **Falsk**. Udfør følgende trin for at angive det mulige udfald af den manuelle beslutning.
 
 1.  Klik på **Grundlæggende indstillinger** i venstre rude.
 2.  Indtast navnet på udfaldet eller indstillingen på fanen **Udfald** i feltet **Udfald 1**.

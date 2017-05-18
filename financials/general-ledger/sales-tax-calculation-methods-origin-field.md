@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Momsmyndighederne har pålagt en vare specielle afgifter. Afgiftsbeløbene føje
 -   MOMS = 25 % ved hjælp af beregningsmetoden Procent af bruttobeløb
 
 Hvis nettobeløbet er 10,00, er AFGIFT 1 1,00 (10,00 x 10 %) og AFGIFT 2 = 2,00 (10,00 x 20 %). Beløbene vil være som følger: Bruttobeløb: Nettobeløb + AFGIFT 1-beløb + AFGIFT 2-beløb (10,00 + 1,00 + 2,00) = 13,00 MOMS = 13,00 x 25 % = 3,25 samlede AFGIFTER og MOMS: 1,00 + 2,00 + 3,25 = 6,25 samlet beløb: 10,00 + 6,25 = 16,25
-| **Bemærk! **                                                                                                                                                                                                                 |
+| **Bemærk!**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kun én skattekode til Grundlag = Procentdel af bruttobeløb kan bruges til en transaktion. Hvis der bestemmes mere end én momskode for en transaktion, vises der en fejl om, at der ikke kan beregnes moms. |
 
@@ -68,7 +69,7 @@ Anvend følgende momskoder:
 -   MOMS = 25 % ved hjælp af metoden Procent af bruttobeløb
 
 Nettobeløb: 10,00 AFGIFT 1: 10,00 x 10 % = 1,00 AFGIFT 2: 1,00 x 20 % = 0,20 Bruttobeløb: 10,00 + 1,00 + 0,20 = 11,20 MOMS: 11,20 x 25 % = 2,80 Samlet AFGIFT og MOMS: 1,00 + 0,20 + 2,80 = 4,00 Samlet beløb: 10,00 + 4,00 = 14,00
-| **Bemærk! **                                                                                                                                                                                                                    |
+| **Bemærk!**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Moms på moms-beregninger på flere niveauer er ikke mulig. En moms kan ikke beregnes ud fra en moms, der allerede er beregnet ud fra en anden moms. Flere moms på moms-koder på et enkelt niveau kan beregnes for en transaktion. |
 
@@ -77,7 +78,7 @@ Når du vælger Beløb pr. enhed i feltet Grundlag, beregnes momsen som et fast 
 ### <a name="example"></a>Eksempel
 
 Momskode er sat op som: kr. 1,20 pr. enhed = kasse på salgsfakturalinje 25 kasser med en vare solgt Moms beregnes som 25 x 1,20 = 30,00
-| **Bemærk! **                                                                                                                                                                                                 |
+| **Bemærk!**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis transaktionen angives i en anden enhed end den enhed, der er angivet for momskoden, omregnes den automatisk på grundlag af de enhedsomregninger, der er angivet på siden Enhedsomregninger. |
 

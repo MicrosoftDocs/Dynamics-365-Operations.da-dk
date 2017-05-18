@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ ER-programmet har følgende funktioner:
 ## <a name="concepts"></a>Begreber
 ### <a name="components"></a>Komponenter
 
-ER understøtter to komponenttyper: **Datamodel **og **Format**.
+ER understøtter to komponenttyper: **Datamodel**og **Format**.
 
 #### <a name="data-model-components"></a>Datamodelkomponenter
 
@@ -95,7 +96,7 @@ Versionering understøttes for ER-komponenter. Følgende arbejdsgang findes til 
 -   Den oprindelige version, der blev oprettet, er markeret som en **KLADDE** version. Denne version kan redigeres og er tilgængelig for testkørsler.
 -   **KLADDE** versionen kan konverteres til en **FULDFØRT** version. Denne version kan bruges i lokale rapporteringsprocesser.
 -   Versionen **FULDFØRT** kan konverteres til en **DELT** version. Denne version udgives på LCS og kan bruges i globale rapportingsprocesser.
--   Versionen **DELT **kan konverteres til en **ANNULLERET** version. Denne version kan derefter slettes.
+-   Versionen **DELT**kan konverteres til en **ANNULLERET** version. Denne version kan derefter slettes.
 
 Versioner, der har status som enten** FULDFØRT** eller **DELT**, er tilgængelige for anden dataudveksling. Der kan udføres følgende handlinger på en komponent, der har disse statusser:
 
@@ -120,7 +121,7 @@ ER-udbyderen er den partsidentifikator, der bruges til at angive forfatteren (ej
 
 #### <a name="repository"></a>Lager
 
-Et ER-lager indeholder ER-konfigurationer. Følgende typer ER lagre understøttes i øjeblikket: **Operations-ressourcer** og **LCS-projekt**. Et** Operations-ressourcelager** giver adgang til listen over de konfigurationer, der frigives som en del af Dynamics 365 for Operations-løsningen fra Microsoft som ER-konfigurationsudbyder. Disse konfigurationer kan importeres til den aktuelle forekomst af Dynamics 365 for Operations og bruges til elektronisk indberetning. De kan også bruges til flere yderligere sprogversioner eller tilpasninger. Et **LCS-projektlager **giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle Dynamics 365 for Operations-forekomst til et bestemt **LCS-projektlager**. Du kan også importere konfigurationer fra et bestemt **LCS-projektlager** til den aktuelle Dynamics 365 for Operations-forekomst. Påkrævede **LCS-projektlagre** kan registreres individuelt for hver konfigurationsudbyder for den aktuelle forekomst af Dynamics 365 for Operations. Hvert lager kan dedikeres til en bestemt konfigurationsudbyder.
+Et ER-lager indeholder ER-konfigurationer. Følgende typer ER lagre understøttes i øjeblikket: **Operations-ressourcer** og **LCS-projekt**. Et** Operations-ressourcelager** giver adgang til listen over de konfigurationer, der frigives som en del af Dynamics 365 for Operations-løsningen fra Microsoft som ER-konfigurationsudbyder. Disse konfigurationer kan importeres til den aktuelle forekomst af Dynamics 365 for Operations og bruges til elektronisk indberetning. De kan også bruges til flere yderligere sprogversioner eller tilpasninger. Et **LCS-projektlager**giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle Dynamics 365 for Operations-forekomst til et bestemt **LCS-projektlager**. Du kan også importere konfigurationer fra et bestemt **LCS-projektlager** til den aktuelle Dynamics 365 for Operations-forekomst. Påkrævede **LCS-projektlagre** kan registreres individuelt for hver konfigurationsudbyder for den aktuelle forekomst af Dynamics 365 for Operations. Hvert lager kan dedikeres til en bestemt konfigurationsudbyder.
 
 ## <a name="supported-scenarios"></a>Understøttede scenarier
 ### <a name="building-a-data-model"></a>Opbygning af en datamodel
@@ -154,7 +155,7 @@ ER-formatdesigner kan bruges til at oprette en bestemt elektronisk dokument i OP
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Lagring af en designet formatkomponent i en formatkonfiguration
 
-ER kan gemme en designet format sammen med de konfigurerede datatilknytninger som en formatkonfiguration for den aktuelle forekomst af Dynamics 365 for Operations. Ovenstående illustration viser et eksempel på denne type formatkonfiguration (**BACS (UK)**, som er underordnet i forhold til **Betalingsmodel **-konfigurationen). For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Design ER-domænespecifikt format** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
+ER kan gemme en designet format sammen med de konfigurerede datatilknytninger som en formatkonfiguration for den aktuelle forekomst af Dynamics 365 for Operations. Ovenstående illustration viser et eksempel på denne type formatkonfiguration (**BACS (UK)**, som er underordnet i forhold til **Betalingsmodel**-konfigurationen). For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Design ER-domænespecifikt format** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="configuring-dynamics-365-for-operations-to-start-to-use-a-created-format-internally"></a>Konfiguration af Dynamics 365 for Operations for at begynde at bruge et oprettet format internt
 
@@ -169,11 +170,11 @@ For at blive fortrolig med detaljerne i dette scenarie skal du afspille **ER Bru
 ## <a name="handling-er-components"></a>Håndtering af ER-komponenter
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Udgive en ER-komponent i LCS for at tilbyde den eksternt (lokalisering)
 
-Ejeren af en komponent (model eller format), der er oprettet, kan bruge ER til udgivelse af den færdige version af en ER-komponenten til LCS. Et lager af typen **LCS-projekt **for den aktuelle ER-konfigurationsudbyder er nødvendigt. Når statussen for den færdige version af en komponent er ændret fra **FULDFØRT** til **DELT**, udgives denne version LCS. Når en komponent er udgivet til LCS, bliver ejeren af denne komponent en udbyder af tjenesten til at understøtte komponenten. Hvis formatkomponenten f.eks. er designet til at generere et elektronisk dokument, der er juridisk påkrævet (f.eks. i henhold til et lokaliseringsscenarie), antages det, at formatet fortsat er kompatibelt med lovgivningsmæssige ændringer, og at udbyderen vil udsende nye versioner af komponenten, hver gang der kommer nye lovgivningsmæssige krav. For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Overføre ER-konfiguration til Lifecycle Services** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
+Ejeren af en komponent (model eller format), der er oprettet, kan bruge ER til udgivelse af den færdige version af en ER-komponenten til LCS. Et lager af typen **LCS-projekt**for den aktuelle ER-konfigurationsudbyder er nødvendigt. Når statussen for den færdige version af en komponent er ændret fra **FULDFØRT** til **DELT**, udgives denne version LCS. Når en komponent er udgivet til LCS, bliver ejeren af denne komponent en udbyder af tjenesten til at understøtte komponenten. Hvis formatkomponenten f.eks. er designet til at generere et elektronisk dokument, der er juridisk påkrævet (f.eks. i henhold til et lokaliseringsscenarie), antages det, at formatet fortsat er kompatibelt med lovgivningsmæssige ændringer, og at udbyderen vil udsende nye versioner af komponenten, hver gang der kommer nye lovgivningsmæssige krav. For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Overføre ER-konfiguration til Lifecycle Services** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importere ER-komponent fra LCS for at bruge det internt
 
-Med ER kan du importere ER komponenter fra LCS til den aktuelle forekomst af Dynamics 365 for Operations. Et lager af typen **LCS-projekt **er påkrævet. Når en ER-komponent er blevet importeret fra LCS til den aktuelle forekomst af Dynamics 365 for Operations, bliver ejeren af forekomsten forbrugeren af tjenesten, som leveres af ejeren (forfatteren) af den importerede komponent. Hvis en formatkomponent f.eks. er designet til at generere et bestemt elektronisk dokument fra Dynamics 365 for Operations i et land/områdespecifikt format (lokaliseringsscenarie), antages det, at forbrugeren af tjenesten kan få de opdateringer, der udføres af dette format, for at holde det kompatibelt med lovmæssige krav. For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **ER-import af en konfiguration fra Lifecycle Services** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
+Med ER kan du importere ER komponenter fra LCS til den aktuelle forekomst af Dynamics 365 for Operations. Et lager af typen **LCS-projekt**er påkrævet. Når en ER-komponent er blevet importeret fra LCS til den aktuelle forekomst af Dynamics 365 for Operations, bliver ejeren af forekomsten forbrugeren af tjenesten, som leveres af ejeren (forfatteren) af den importerede komponent. Hvis en formatkomponent f.eks. er designet til at generere et bestemt elektronisk dokument fra Dynamics 365 for Operations i et land/områdespecifikt format (lokaliseringsscenarie), antages det, at forbrugeren af tjenesten kan få de opdateringer, der udføres af dette format, for at holde det kompatibelt med lovmæssige krav. For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **ER-import af en konfiguration fra Lifecycle Services** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Opbygge et format ved at vælge et andet format som udgangspunkt (tilpasning)
 

@@ -3,7 +3,7 @@ title: "Cyklusoptælling"
 description: "I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Cyklusoptælling
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring.
 
@@ -39,7 +43,6 @@ Følgende illustration viser cyklusoptællingsprocessen. ![Procesforløb for cyk
 
 ## <a name="cycle-counting-prerequisites"></a>Forudsætninger for cyklusoptælling
 Følgende tabel viser de forudsætninger, der skal være på plads, før du kan begynde at bruge cyklusoptælling.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du kan 
 <li>Gruppering af cyklusoptælling</li>
 <li>Spotcyklusoptælling</li>
 </ul>
-Du kan finde flere oplysninger under <a href="configure-mobile-devices-warehouse">Konfigurere mobilenheder til lagerstedsarbejde</a>.</li>
+</li>
 <li>Konfigurer en menu til mobilenheden.</li>
 <li>Opret en brugerkonto til arbejde, og tildel en mobilenhedsmenu til arbejdsbruger-id'et.</li>
 </ul></td>
@@ -133,6 +136,9 @@ En cyklusoptællingsforskel opstår i følgende situationer, hvis indstillingen 
 -   Værdien for optællingen adskiller sig fra det disponible lagerantal, og der er ingen angivne afvigelsesgrænser.
 
 Du kan justere forskelle i den optalte værdi og derefter acceptere den optællingsværdien på siden **Ventende gennemsyn af cyklusoptælling**. Du kan kontrollere det ændrede vareantal på siden **Disponibel efter lokalitet**. Værdien for optællingen afvises, hvis forskellen ikke kan godkendes.
+
+# <a name="see-also"></a>Se også
+[Konfigurer mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)
 
 
 

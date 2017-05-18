@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 25703ea2bde70c5c2d3de9f2dc9d3d1d889e4ac9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aae20fa2b899ab51bad5aeb54e21a7c9cbadb9be
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="design-a-questionnaire"></a>Designe et spørgeskema
+
+[!include[banner](includes/banner.md)]
+
 
 I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
 
@@ -109,7 +113,7 @@ Svarsamlinger og svar er komponenter, der udgør hovedafsnittet med oplysninger,
 
 En svarsamling kan bruges til mere end ét spørgsmål i det samme spørgeskema og kan også bruges i mere end ét spørgeskema. 
 
-**Bemærk!** Hvis du redigerer svartekst i svargrupper, der allerede er brugt i udfyldte spørgeskemaer, kan det blive vanskeligt at evaluere data, og resultaterne af spørgeskemaet er muligvis ikke længere gyldige. Hvis du skal ændre en svarsamling, kan du overveje at oprette en ny svargruppe i stedet for at ændre en eksisterende. Du kan ikke slette svargrupper, der er knyttet til et spørgsmål eller svar, eller som er besvaret.
+>**Bemærk!** Hvis du redigerer svartekst i svargrupper, der allerede er brugt i udfyldte spørgeskemaer, kan det blive vanskeligt at evaluere data, og resultaterne af spørgeskemaet er muligvis ikke længere gyldige. Hvis du skal ændre en svarsamling, kan du overveje at oprette en ny svargruppe i stedet for at ændre en eksisterende. Du kan ikke slette svargrupper, der er knyttet til et spørgsmål eller svar, eller som er besvaret.
 
 ### <a name="questions"></a>Spørgsmål
 
@@ -117,12 +121,13 @@ Et spørgeskema skal indeholde spørgsmål. Spørgsmål kan enten være åbne el
 
 -   Svar på spørgsmål med åbne svarmuligheder kontrolleres ikke, og svarpersonerne kan skrive deres svar.
 -   Lukkede spørgsmål kræver en liste over foruddefinerede svarindstillinger, og spørgsmålene kan struktureres, så en svarperson kan vælge flere svarmuligheder. Spørgsmål skal være designet til at indhente specifikke oplysninger fra en svarperson og skal være kædet sammen med en svarsamling, der indeholder indstillinger for svar for hvert lukket spørgsmål. 
-     -  **Bemærk!** Før du kan definere lukkede spørgsmål, skal du oprette svarsamlinger og svar.
+    >**Bemærk!** Før du kan definere lukkede spørgsmål, skal du oprette svarsamlinger og svar.
 
 Spørgsmål kan arrangeres i et hierarki med betingede spørgsmål, så sekundære spørgsmål afhænger af det svar, som svarpersonen vælger til det forrige spørgsmål. Du kan skrive spørgsmålene først og så arrangere dem i et hierarki senere.
 
 ## <a name="setting-up-questionnaires"></a>Oprette spørgeskemaer
-**Bemærk!** Før du kan oprette et spørgeskema, skal du angive svar, spørgsmål og forudsætninger. 
+>**Bemærk!**
+>  Før du kan oprette et spørgeskema, skal du angive svar, spørgsmål og forudsætninger. 
 
 Til hvert spørgeskema kan du angive følgende oplysninger:
 
@@ -158,7 +163,7 @@ Du kan udføre følgende opgaver på siden **Spørgeskemaer**:
 -   Slette og tilføje spørgsmål.
 -   Foretage ændringer i resultatgrupperne og sekvensnummeret. 
 
-**Advarsel!** Vær forsigtig, når du ændrer de spørgeskemaer der allerede er udfyldt. Ændringer kan reducere statistiknøjagtigheden, hvilket kan resultere i et dårligt grundlag for evalueringen. Overvej at oprette et nyt spørgsmål i stedet for at ændre et spørgsmål, som allerede er besvaret.
+>**Advarsel!** Vær forsigtig, når du ændrer de spørgeskemaer der allerede er udfyldt. Ændringer kan reducere statistiknøjagtigheden, hvilket kan resultere i et dårligt grundlag for evalueringen. Overvej at oprette et nyt spørgsmål i stedet for at ændre et spørgsmål, som allerede er besvaret.
 
 Du kan ikke slette følgende typer spørgsmål i et spørgeskema:
 
@@ -176,7 +181,8 @@ En resultatgruppe bruges til at beregne point og kategorisere resultaterne af et
 -   Opret statistik for hver resultatgruppe, som kan hjælpe dig med at analysere resultaterne.
 -   Udskrive en rapport, der viser resultaterne for hver resultatgruppe og også valgfri point/tekster, der er baseret på point, som er optjent i hver resultatgruppe.
 
-**Bemærk!** Inden du kan konfigurere resultatgrupper, skal du fuldføre følgende opgaver:
+> **Bemærk!**
+>  Inden du kan konfigurere resultatgrupper, skal du fuldføre følgende opgaver:
 
 -   Konfigurere lukkede spørgsmål. Til et lukket spørgsmål skal inputtypen på siden **Spørgsmål** være **Afkrydsningsfelt**, **Alternativknap** eller **Kombinationsboks**.
 -   Definer point for svar i svargrupperne, der tildeles hvert spørgsmål.
@@ -186,7 +192,8 @@ For at føje spørgsmål til et spørgeskema ved hjælp af resultatgrupper skal 
 
 Du kan angive flere resultatgrupper for at evaluere point, som en svarperson optjener i hver kategori. Når et spørgeskema er fuldført, kan du få vist de point, der er opnået for hver resultatgruppe. 
 
-**Tip!** For at evaluere et spørgeskema ved at bruge point men ikke separate kategorier kan du føje alle spørgsmål til en enkelt resultatgruppe. 
+> **Tip!**
+>  For at evaluere et spørgeskema ved at bruge point men ikke separate kategorier kan du føje alle spørgsmål til en enkelt resultatgruppe. 
 
 For hver resultatgruppe kan du også oprette en eller flere pointbaserede meddelelser, som svarpersoner modtager, efter de har udfyldt et spørgeskema. Den tekst, der vises, kan variere alt efter det resultat, som en svarperson opnår i en resultatgruppe. For at bruge pointbaserede meddelelser skal du definere pointintervaller og en beskrivelse af hvert interval. Når en svarperson opnår et resultat i et bestemt interval, er teksten til det pågældende interval medtaget i resultatrapporten. 
 
@@ -212,13 +219,15 @@ Følgende tabel viser de pointbaserede meddelelser, som du definerer for resulta
 
 Du kan angive pointintervaller og tekster til hver resultatgruppe i et spørgeskema. Tekster, der svarer til hver svarpersons score, vises for hver resultatgruppe. 
 
-**Bemærk!** Du kan ændre intervaller og tekster. Hvis et spørgeskema er udfyldt, kan ændringer dog forårsage uoverensstemmelser mellem gamle og nye resultatrapporter.
+> **Bemærk!**
+>  Du kan ændre intervaller og tekster. Hvis et spørgeskema er udfyldt, kan ændringer dog forårsage uoverensstemmelser mellem gamle og nye resultatrapporter.
 
 ### <a name="conditional-question-hierarchies"></a>Hierarkier med betingede spørgsmål
 
 Hierarkier med betingede spørgsmål er valgfrie, når du konfigurerer et spørgeskema. 
 
-**Bemærk!** Før du kan konfigurere et hierarki med betingede spørgsmål, skal du knytte spørgsmål, der har tildelte svargrupper, til spørgeskemaet. 
+> **Bemærk!**
+>  Før du kan konfigurere et hierarki med betingede spørgsmål, skal du knytte spørgsmål, der har tildelte svargrupper, til spørgeskemaet. 
 
 Hvis du vil bruge betingede spørgsmål til at oprette et spørgsmålshierarki i et spørgeskema, kan du lade rækkefølgen, som spørgsmålene vises i, være afhængig af det svar, som en svarperson vælger for hvert spørgsmål. Hvis du baserer spørgsmålenes rækkefølge på en svarpersons svar, kan du ændre spørgeskemaet, efterhånden som efter svarpersonen færdiggør det.
 
@@ -236,5 +245,7 @@ Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Sva
 [Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
 
 [Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+
+
 
 

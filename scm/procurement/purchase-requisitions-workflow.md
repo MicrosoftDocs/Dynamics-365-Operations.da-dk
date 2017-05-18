@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c5986dbce88a1cb704dddfc2afbcf2ac8c4b0dd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2a39054e5736c1162634cf9b1dd3f7e0c0c4ec16
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -104,7 +105,7 @@ Du behøver ikke definere konfigurationer til en udgiftsvalidator. Du kan i sted
 
 Du kan konfigurere udgiftsvalidatorer på siden **Udgiftsvalidatorer for indkøbsrekvisitioner**. Opret en konfigurationen til en udgiftsvalidator, og angiv værdier for hver af de juridiske enheder i din organisation. For indkøbsrekvisitioner, der er knyttet til et projekt, kan du angive den rolle, der er ansvarlig for validering af rekvisitionerne: projektleder, projektcontroller eller projektsalgsleder. Udgifter sendes til den bruger, der er tildelt den angivne rolle. Du kan også sende udgiften til ejeren af den økonomiske dimension ved at markere indstillingen for den relevante økonomiske dimension under fanen **Organisationsfordelinger**.  
 
-Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til** Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
+Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til**Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
 
 <a name="see-also"></a>Se også
 --------

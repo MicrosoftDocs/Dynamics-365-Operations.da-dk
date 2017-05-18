@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 5660e5c8e3329564fc4262b5ad4f2547347bbb1a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 32b401a6faa381c77845347db6aa5e89db5e38c3
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,8 +36,8 @@ Der introduceres en ny arbejdspolitik for lagerstedet i Microsoft Dynamics AX 7.
 
 Denne arbejdspolitik kontrollerer, om lagerstedets arbejde er oprettet for lagerprocesser i produktion. Du kan angive arbejdspolitikken ved hjælp af en kombination af **arbejdsordretyper**, en **lagerlokation** og et **produkt**. Produkt L0101 rapporteres f.eks. som afsluttet til outputlokalitet 001. Den færdige vare forbruges senere i en anden produktionsordre på outputlokalitet 001. I dette tilfælde kan du oprette en arbejdspolitik for at forhindre, at der oprettes arbejde for færdige varer, når du rapporterer produkt L0101 færdig til outputlokalitet 001. Arbejdspolitikken er en enkelt enhed, der kan beskrives med følgende oplysninger:
 
--   **Navn på arbejdspolitik **(den entydige identifikator for arbejdspolitikken)
--   **Arbejdsordretyper **og** Metode til oprettelse af arbejde**
+-   **Navn på arbejdspolitik**(den entydige identifikator for arbejdspolitikken)
+-   **Arbejdsordretyper**og**Metode til oprettelse af arbejde**
 -   **Lagerlokationer**
 -   **Produkter**
 

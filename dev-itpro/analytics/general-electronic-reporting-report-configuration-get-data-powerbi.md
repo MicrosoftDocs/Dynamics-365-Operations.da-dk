@@ -1,9 +1,9 @@
 ---
-title: Konfigurere elektronisk rapportering til at levere Power BI-data fra Dynamics 365 for Operations
+title: "Konfigurere elektronisk rapportering for at trække data ind i Power BI"
 description: "Dette emne forklarer, hvordan du kan bruge din konfiguration af elektronisk rapportering(ER) til at arrangere overførslen af data fra din forekomst af Dynamics 365 for Operations til Power BI-tjenester. I dette emne bruges som eksempel Intrastat-posteringer som virksomhedens data, der skal overføres. Power BI-kortvisualiseringen bruger disse Intrastat-posteringsdata til at præsentere en visning til analyse af virksomhedens import-/eksportaktiviteter i Power BI-rapporten."
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13 - 22 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ed0192c44b6d7e88120c64e539ebb0ac3b379831
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4bbc77eb1edfe0c109434ce4d26228ed031f48bc
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="set-up-electronic-reporting-to-provide-power-bi-with-data-from-dynamics-365-for-operations"></a>Konfigurere elektronisk rapportering til at levere Power BI-data fra Dynamics 365 for Operations
+# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering for at trække data ind i Power BI
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne forklarer, hvordan du kan bruge din konfiguration af elektronisk rapportering(ER) til at arrangere overførslen af data fra din forekomst af Dynamics 365 for Operations til Power BI-tjenester. I dette emne bruges som eksempel Intrastat-posteringer som virksomhedens data, der skal overføres. Power BI-kortvisualiseringen bruger disse Intrastat-posteringsdata til at præsentere en visning til analyse af virksomhedens import-/eksportaktiviteter i Power BI-rapporten.
 
@@ -61,7 +65,7 @@ Før du kan følge eksemplet i dette emne, skal du have følgende adgang:
 3.  I arbejdsområdet **Elektronisk rapportering** skal du aktivere den provider, der kræves, ved at klikke på **Angiv som aktiv**. Yderligere oplysninger finder du ved at afspille opgaveguiden **Vælg ER-serviceudbyder**.
 
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Bruge en ER-datamodel som datakilde
-Du skal have en ER-datamodel som kilde til forretningsdata, der bruges i Power BI-rapporter. Denne datamodel overføres fra ER konfigurationslageret. Yderligere oplysninger finder du under [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md) eller ved at afspille opgaveguiden **Importere ER-konfiguration fra Lifecycle Services**. Vælg **Intrastat **som den datamodel, der vil blive overført fra det valgte ER-konfigurationslager. (I dette eksempel bruges version 1 af modellen). Du kan derefter få adgang til **Intrastat** ER model-konfigurationen på siden **Konfigurationer**. [![Siden Konfigurationer](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+Du skal have en ER-datamodel som kilde til forretningsdata, der bruges i Power BI-rapporter. Denne datamodel overføres fra ER konfigurationslageret. Yderligere oplysninger finder du under [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md) eller ved at afspille opgaveguiden **Importere ER-konfiguration fra Lifecycle Services**. Vælg **Intrastat** som den datamodel, der vil blive overført fra det valgte ER-konfigurationslager. (I dette eksempel bruges version 1 af modellen). Du kan derefter få adgang til **Intrastat** ER model-konfigurationen på siden **Konfigurationer**. [![Siden Konfigurationer](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Designe en ER-formatkonfiguration
 Du skal oprette en ny ER-formatkonfiguration, der bruger **Intrastat**-datamodellen som kilde til forretningsdata. Denne formatkonfiguration skal generere outputresultater som elektroniske dokumenter i OpenXML-format (Excel-fil). Yderligere oplysninger finder du ved at afspille opgaveguiden **Oprette en ER-konfiguration til rapporter i OPENXML-format**. Navngiv den nye konfiguration af **import-/eksportaktiviteter** som vist i følgende illustration. Brug Excel-filen med [ER-data - import- og eksportoplysninger](https://go.microsoft.com/fwlink/?linkid=845208) som en skabelon, når du designer ER-formatet. (Afspil opgaveguiden for at få oplysninger om, hvordan du importerer en formatskabelon). [![Konfiguration af import-/eksportaktiviteter](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) For at ændre formatkonfigurationen **Import-/eksportaktiviteter** skal du følge disse trin.
@@ -119,5 +123,7 @@ Konfigurer integrationen mellem Dynamics 365 for Operations og Power BI. Yderlig
 [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
 
 [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+
+
 
 

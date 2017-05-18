@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -209,7 +210,7 @@ I følgende fremgangsmåde beskrives, hvordan et projektteam oprettes.
 1.  Vælg et projekt på listesiden **Alle projekter**, og klik derefter på **Rediger**.
 2.  Under fanen **Projektteam og planlægning** i feltet **Planlæg slutdato** skal du angive startdato for tidsplanen plus en måned. For eksempel hvis tidsplanens startdato er 24. juni 2017 (24/06/2017), skal du angive **24/07/2017**.
 3.  Klik på **Tilføj**.
-4.  I ruden **Føj roller til projektet** i feltet **Rolle **skal du vælge **Seniorprojektleder**.
+4.  I ruden **Føj roller til projektet** i feltet **Rolle**skal du vælge **Seniorprojektleder**.
 5.  Klik på **Påkrævede kompetencer**.
 6.  På siden **Vælg egenskaber** er de karakteristika, som du tidligere har angivet for seniorprojektlederrollen markeret som standard. Klik på **OK**.
 7.  På siden **Føj roller til projekt** i feltet **Antal ressourcer** skal du angive **1**.

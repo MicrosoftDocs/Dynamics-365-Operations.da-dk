@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
-ms.openlocfilehash: 31dda85ff2e4a4e5380401b031b2dd74acff394b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4fd6e61e88ca3ca3fa63308dead1258c0263e5aa
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Justere arbejdsstyrkens færdigheder med virksomhedens behov
+
+[!include[banner](includes/banner.md)]
+
 
 Du kan spore færdigheder, som arbejdere, ansøgere eller kontakter har eller bør have for at udfylde deres roller effektivt. Du kan også angive de færdigheder, der kræves til et bestemt job.
 
@@ -52,24 +56,12 @@ Du kan oprette en kompetencesøgning for at finde en medarbejder, ansøger eller
 
 Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere eller ansøgere med kvalifikationer, der svarer direkte til virksomhedens behov.  Du kan f.eks. oprette en kompetencesøgningsprofil til en ledig stilling i organisationen. Ved at oprette en profil for et bestemt job og kopiere færdigheder, uddannelse og certifikater fra dette job til profilen kan du hurtigt søge efter arbejdere, ansøgere og kontakter, der opfylder et eller flere af de kriterier, der er angivet i profilen, og se en liste over de ansøgere, hvis kvalifikationer bedst svarer de færdigheder, der kræves for jobbet.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Bemærk! </strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Det er kun arbejdere, ansøgere og kontaktpersoner, som du har valgt til at indgå i kompetencesøgninger, der kan vises på en resultatliste for kompetencesøgning eller indgå i en kompetenceprofil. Hvis du vil medtage en medarbejder, ansøger eller kontakt i kompetencesøgninger, skal du angive <strong>Medtag i kompetencetilknytning</strong> til Ja på de følgende sider:
-<ul>
-<li>Arbejdstråd</li>
-<li>Medarbejder</li>
-<li>Ansøger</li>
-<li>Kontaktpersoner</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>**Bemærk** Det er kun arbejdere, ansøgere og kontaktpersoner, som du har valgt til at indgå i kompetencesøgninger, der kan vises på en resultatliste for kompetencesøgning eller indgå i en kompetenceprofil. Hvis du vil medtage en medarbejder, ansøger eller kontakt i kompetencesøgninger, skal du angive **Medtag i kompetencetilknytning** til Ja på de følgende sider:
+
+> + Arbejdstråd
+> + Medarbejder
+> + Ansøger
+> + Kontaktpersoner
 
 ## <a name="skill-gap-analysis-and-skill-profile-analysis"></a>Analyse af kompetencekløft og kompetenceprofilanalyse
 Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbejders, ansøgers eller kontakts færdigheder pr. en bestemt dato. Oprette en analyse af kompetencekløft for at sammenligne en persons færdigheder med de færdigheder, der kræves til et bestemt job.  
@@ -80,5 +72,7 @@ Du kan oprette en kompetenceprofilanalyse for at få vist en liste over en arbej
 --------
 
 [Personale](index.md)
+
+
 
 

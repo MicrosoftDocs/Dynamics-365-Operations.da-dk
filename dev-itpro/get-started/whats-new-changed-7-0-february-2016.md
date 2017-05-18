@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016.
 
@@ -331,8 +335,8 @@ Denne funktion fungerer uafhængigt af andre efterkalkulationsmetoder, der er kn
 <tr class="even">
 <td>Få adgang til automatiseret hjælp (opgaveguider) og emner ved at klikke på **Hjælp**.</td>
 <td>Hjælpesystemet i AX 2012 leder til HTML-emner, der er gemt på en lokal webserver. Kunder og partnere kan oprette deres egen Hjælp.</td>
-<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). Hjælp-systemet viser også emner fra Microsoft-wiki. Yderligere oplysninger finder du i afsnittet [Dynamics AX Hjælp - Introduktion](help-overview.md) og [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md).</td>
-<td>Opgaveguider indeholder en automatiseret, interaktive oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan downloade og tilpasse opgavehjælpelinjer, som Microsoft leverer. Wikien giver en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen. Derfor hjælper den med at sikre, at du har adgang til de seneste tekniske oplysninger.</td>
+<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). Hjælp-systemet viser også emner fra webstedet Microsoft Docs. Yderligere oplysninger finder du i afsnittet [Dynamics AX Hjælp - Introduktion](help-overview.md) og [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Opgaveguider indeholder en automatiseret, interaktive oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan downloade og tilpasse opgavehjælpelinjer, som Microsoft leverer. Emnet giver en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen. Derfor hjælper den med at sikre, at du har adgang til de seneste tekniske oplysninger.</td>
 </tr>
 </tbody>
 </table>
@@ -1076,5 +1080,7 @@ Der er ikke blevet tilføjet nye funktioner.
 [Nyheder eller ændret](whats-new-changed.md)
 
 [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md)
+
+
 
 

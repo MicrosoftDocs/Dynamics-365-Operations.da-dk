@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 44d51807cd6bb64ae2c4bef58d8a445417ffa3a9
-ms.openlocfilehash: 815282422a6d7b8eef7d0628cf10b715449e1d1d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,10 +53,10 @@ Hvis du betaler en kreditor fra én juridisk enhed, og du vil vælge fakturaer t
 Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal posteringsprofil-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed til fakturaen at konfigurere en posteringsprofil i de enkelte fakturaers juridiske enheder, der svarer til de posteringsprofiler, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Kreditorposteringsprofiler** kan du derefter oprette en ny posteringsprofil eller redigere en eksisterende posteringsprofil. De indstillinger, du angiver for posteringsprofilen i fakturaens juridiske enhed, behøver ikke at stemme overens med opsætningen af posteringsprofilen i betalingens juridiske enhed.
 
 ## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Konfigurere betalingsmåder for centraliserede betalinger
-Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal betalingsmåde-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed af fakturaen at konfigurere en betalingsmåde, der svarer til de betalingsmåder, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Betalingsmåder **kan du derefter oprette en ny betalingsmåde eller redigere en eksisterende betalingsmåde. De indstillinger, du angiver for betalingsmåden i fakturaens juridiske enhed, behøver ikke at stemme overens med den måde, betalingsmåden er konfigureret på i betalingens juridiske enhed.
+Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal betalingsmåde-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed af fakturaen at konfigurere en betalingsmåde, der svarer til de betalingsmåder, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Betalingsmåder**kan du derefter oprette en ny betalingsmåde eller redigere en eksisterende betalingsmåde. De indstillinger, du angiver for betalingsmåden i fakturaens juridiske enhed, behøver ikke at stemme overens med den måde, betalingsmåden er konfigureret på i betalingens juridiske enhed.
 
 ## <a name="set-up-default-descriptions"></a>Konfigurere standardbeskrivelser
-Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskrivelsen medtages i skyldig til- og skyldig fra-posteringer i løbet af udligningsprocessen på tværs af virksomheder. På siden **Standardbeskrivelser** kan du oprette nye beskrivelser til både **Intern kundeudligning **og **Intern kreditorudligning** ved at vælge et sprog og derefter indtaste teksten.
+Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskrivelsen medtages i skyldig til- og skyldig fra-posteringer i løbet af udligningsprocessen på tværs af virksomheder. På siden **Standardbeskrivelser** kan du oprette nye beskrivelser til både **Intern kundeudligning**og **Intern kreditorudligning** ved at vælge et sprog og derefter indtaste teksten.
 
 
 

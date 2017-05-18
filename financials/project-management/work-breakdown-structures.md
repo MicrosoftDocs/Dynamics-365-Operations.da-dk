@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 1666691ec122e65128b74056817a0c40551f49b5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c85c90feb7f314db6b47f64402f8b9455ed53d9d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Når du vil angive arbejdsdage og arbejdstimer for en kalender eller oprette en 
 Hvis du vil bruge den fulde funktionalitet til forkalkulation af WBS, skal du konfigurere omkostnings- og salgspriser for arbejdere, kategorier af arbejdskraft, udgifter og gebyrer og varer.
 
 -   Hvis du vil konfigurere kost- og salgsprisen for arbejdskraft, udgifter og gebyrkategorier, skal du klikke på **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Priser**.
--   Når du vil konfigurere kost-og salgsprisen for varer, skal du bruge siden **Samhandelsaftaler **for hvert element på listesiden **Frigivne produkter** i Administration af produktoplysninger.
+-   Når du vil konfigurere kost-og salgsprisen for varer, skal du bruge siden **Samhandelsaftaler**for hvert element på listesiden **Frigivne produkter** i Administration af produktoplysninger.
 
 ## <a name="creating-a-wbs"></a>Oprettelse af en WBS
 Oprettelse af en Arbejdsopdelingsstruktur (WBS) omfatter tre aktiviteter:

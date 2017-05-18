@@ -99,13 +99,13 @@ Den tidsperiode, hvor den optimale kvalitet eller egenskab for et produkt kan op
 
 ###### <a name="bill-of-exchange"></a>**veksel**
 
-Et kildedokument, der dokumenterer en ubetinget anmodning til en tredjepart om at betale en anden part på forlangende.
+Et kildedokument, der dokumenterer en ubetinget anmodning til en tredjepart om at betale en andenpart på forlangende.
 
 ###### <a name="bill-of-materials"></a>**stykliste**
 
 En liste over de produkter og antal, der skal bruges til at fremstille ét produkt.
 
-###### <a name="blocking"></a>**blokering**
+###### <a name="blocking"></a>**spærring, blokering**
 
 Den handling, der består i at sætte et dokument eller produkt på hold.
 
@@ -137,7 +137,7 @@ En planlægningsstruktur, der bruges til at planlægge fordelinger af budgetmidl
 
 Angivelsen for en formelvare i en produktleveringsaktivitet.
 
-###### <a name="bundle"></a>**bundt**
+###### <a name="bundle"></a>**bundte**
 
 Kombinationen af et antal produkter, der er til salg som én enhed.
 
@@ -145,7 +145,7 @@ Kombinationen af et antal produkter, der er til salg som én enhed.
 
 En halvautomatisk driftsenhed, der er skabt for at nå strategiske forretningsmålsætninger.
 
-### <a name="c"></a>**C**
+### <a name="c"></a>**K**
 
 ###### <a name="capacity-load"></a>**kapacitetsbelastning**
 
@@ -171,7 +171,7 @@ En salgsvares eller lagervares faktiske eller nominelle vægt.
 
 En liste over hovedkonti.
 
-###### <a name="cogs-cost-of-goods-sold"></a>**vareforbrug**
+###### <a name="cogs-cost-of-goods-sold"></a>**COGS (cost of goods sold)**
 
 En regnskabskategori, der bruges til at opsummere de økonomiske konsekvenser af fremstillingen af produkter og lagerføringen.
 
@@ -207,9 +207,9 @@ Forskellen mellem en forventet omkostning og en faktisk omkostning.
 
 Den proces, der består i at beregne, tildele og fordele omkostningerne for de økonomiske ressourcer, der anskaffes, produceres eller leveres af en organisation.
 
-###### <a name="ctp-capable-to-promise"></a>**LE (leveringsevne)**
+###### <a name="ctp-capable-to-promise"></a>**CTP (capable-to-promise)**
 
-Den andel af produktoutputtet fra tilgængelige operationsressourcer og det tilgængelige inputprodukt, der er påkrævet for at opfylde et bestemt kundebehov.
+Den andel af produktoutputet fra tilgængelige driftsressourcer og det tilgængelige inputprodukt, der er påkrævet for at opfylde et bestemt kundebehov.
 
 ###### <a name="currency-code"></a>**valutakode**
 
@@ -229,21 +229,21 @@ Den typiske startside i Dynamics 365 for Operations. I dashboardet kan brugere s
 
 En informationsstruktur, der repræsenterer de data, der er karakteristiske for et objekt.
 
-###### <a name="delegate"></a>**delegeret**
+###### <a name="delegate"></a>**stedfortræder**
 
-En delegeret er en type, der repræsenterer referencer til metoder med en bestemt parameterliste og returtype.
+En stedfortræder er en type, der repræsenterer henvisninger til metoder med en bestemt parameterliste og returtype.
 
 ###### <a name="delivery-note"></a>**følgeseddel**
 
 Et forretningsdokument, der dokumenterer leveringen af produkter fra én part til en anden.
 
-###### <a name="demand-forecast"></a>**behovsprognose**
+###### <a name="demand-forecast"></a>**efterspørgselsprognose**
 
-En forudsigelse af et fremtidigt produktbehov.
+En forudsigelse af en fremtidig produktefterspørgsel.
 
-###### <a name="demand-forecasting"></a>**beregne behovsprognose**
+###### <a name="demand-forecasting"></a>**behovsprognoser**
 
-En forretningsproces, der beregner fremtidig efterspørgsel og opretter behovsprognoser baseret på historiske transaktionsdata.
+En forretningsproces, der beregner fremtidige efterspørgsel og opretter efterspørgselsprognoser baseret på historiske transaktionsdata.
 
 ###### <a name="deployable-package"></a>**installerbar pakke**
 
@@ -253,7 +253,7 @@ Det køretøj, der bruges til installation på UAT (User Acceptance Test) og i p
 
 Et Visual Studio-værktøj, som du brugte til at oprette, opdatere og kontrollere dine modelelementer.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimensionsbaseret konfiguration**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\financial-dimensions\dimension-based configuration**
 
 En konfigurationsteknologi, der bruges til at oprette produktvarianter ved at vælge værdier for produktdimensioner.
 
@@ -271,11 +271,11 @@ En programtjeneste til lagring og håndtering af en organisations dokumenter.
 
 ###### <a name="duty"></a>**pligt**
 
-Et sæt programadgangsrettigheder, der er påkrævet for, at en bruger kan opfylde sine pligter, i sikkerhedsmodellen.
+Et sæt programadgangsrettigheder, der er påkrævet for at en bruger kan opfylde sine pligter, i sikkerhedsmodellen.
 
 ### <a name="e"></a>**E**
 
-###### <a name="eft-electronic-funds-transfer"></a>**EFT (elektronisk pengeoverførsel)**
+###### <a name="eft-electronic-funds-transfer"></a>**EFT (electronic funds transfer)**
 
 Et netværksbaseret system til overførsel af penge fra én bankkonto til en anden.
 
@@ -285,11 +285,11 @@ En hændelse lader en klasse eller et objekt meddele andre klasser eller objekte
 
 ###### <a name="epe-every-product-every"></a>**EPE (Every Product Every)**
 
-Et lean koncept, der bruges til at etablere en regelmæssigt gentaget produktionscyklus.
+Et lean-koncept, der bruges til at etablere en regelmæssigt gentaget produktionscyklus.
 
 ###### <a name="extension"></a>**udvidelse**
 
-Tilpasning af et program ved at tilføje funktioner i eksisterende kode.
+Tilpasning af et program ved at tilføje funktioner til eksisterende kode.
 
 ### <a name="f"></a>**F**
 
@@ -307,7 +307,7 @@ En rapport, der dokumenterer en organisations økonomiske oplysninger og økonom
 
 ###### <a name="fixed-cost"></a>**fast omkostning**
 
-En omkostning, der ikke varierer med ændringer i leveret produktmængde og -output.
+En omkostning, der ikke varierer med ændringer i den/det leverede produktmængde og -output.
 
 ###### <a name="fixed-currency"></a>**fast valuta**
 
@@ -315,7 +315,7 @@ En valuta, der har en fast valutakurs i forhold til en anden valuta.
 
 ###### <a name="fixed-quantity-kanban"></a>**fastmængde-kanban**
 
-En kanban-type, der bruges, når det kanban-antal, der kan tilknyttes en kanban-regel, er konstant.
+En kanban-type, der bruges, når det kanban-antal, der kan tilknyttes en kanban-regel er konstant.
 
 ###### <a name="flexible-authentication"></a>**fleksibel godkendelse**
 
@@ -339,13 +339,13 @@ Et dokument, der bruges ofte af offentlige myndigheder til at afsætte eller ør
 
 Den tidsperiode, der går efter en angiven dato, og hvor en forpligtelse kan indfries uden sanktion.
 
-###### <a name="gst-goods-and-services-tax"></a>**GST (moms på varer og ydelser)**
+###### <a name="gst-goods-and-services-tax"></a>**GST (goods and services tax)**
 
 En moms, der opkræves i nogle lande/områder.
 
 ### <a name="i"></a>**I**
 
-###### <a name="intercompany"></a>**intern**
+###### <a name="intercompany"></a>**intern handel**
 
 Forekommer mellem eller er relateret til to eller flere juridiske enheder, der er en del af den samme organisation, der konsoliderer kontiene for alle de juridiske enheder.
 
@@ -369,11 +369,11 @@ Et signal, der kommunikerer et krav til en produktantal.
 
 ###### <a name="kanban-flow"></a>**kanban-proces**
 
-Definerer sekvensen af aktiviteter, der udføres for kanbans, som er oprettet for en kanban-regel.
+Definerer sekvensen af aktiviteter, der udføres for kanbans, der er oprettet for en kanban-regel.
 
 ###### <a name="kanban-job"></a>**kanban-job**
 
-En proces eller overførselsaktivitet i et produktionsflow, der udløses af en kanban.
+En proces eller overførselsaktivitet i et produktionsflow, der udløses af et kanban.
 
 ###### <a name="kanban-job-consumption"></a>**kanbanforbrug**
 
@@ -381,7 +381,7 @@ Tilbagetrækningen af produktkomponenter fra lageret for at færdiggøre kanban-
 
 ###### <a name="kanban-product-quantity"></a>**kanban-produktmængde**
 
-Den varebehovsmængde, der udføres for en kanban, der er baseret på en kanban-regel.
+Den varebehovsmængde, der udføres for et kanban, der er baseret på en kanban-regel.
 
 ###### <a name="kanban-rule"></a>**kanban-regel**
 
@@ -389,9 +389,9 @@ En regel i et lean produktionssystem, der realiserer politikkerne for materialep
 
 ### <a name="l"></a>**L**
 
-###### <a name="lean-manufacturing"></a>**lean manufacturing**
+###### <a name="lean-manufacturing"></a>**lean produktion**
 
-En filosofi, hvori fremstillingsprocesserne fremmer produktionsflow og forretningsaktiviteter.
+En filosofi, hvori fremstillingsprocesserne fremmer produktionsflow og forretningsaktiviteter ud fra lean-princippet.
 
 ###### <a name="lean-schedule-group"></a>**lean planlægningsgruppe**
 
@@ -413,7 +413,7 @@ En parts mulighed for at bruge omsætningsaktiver til betaling af omsætningsfor
 
 ###### <a name="manufacturing-overhead-based-on-material"></a>**indirekte omkostninger ved produktion baseret på materiale**
 
-De indirekte produktionsomkostninger er udtrykt som formler til beregning af indirekte omkostninger for en tillægsprocent. En kostprisgruppe, der er tildelt materialekomponenter, fungerer som udgangspunkt for en beregningsformel. Beregningsformler kan defineres for de enkelte produkter eller for varegrupper, der er tildelt produkter, hvilket øger fleksibiliteten, når der beregnes indirekte produktionsomkostninger, der er baseret på materiale.
+De indirekte produktionsomkostninger er udtrykt som formler til beregning af indirekte omkostninger for en tillægsprocent. En kostprisgruppe, der er tildelt til materialekomponenter, fungerer som udgangspunkt for en beregningsformel. Beregningsformler kan defineres for de enkelte produkter eller for varegrupper, der er tildelt til produkter, hvilket øger fleksibiliteten, når der beregnes indirekte produktionsomkostninger, der er baseret på materiale.
 
 ###### <a name="master-scheduling"></a>**behovsplanlægning**
 
@@ -429,7 +429,7 @@ En model er en gruppe elementer (kildefiler og metadata), der udgør en software
 
 ### <a name="n"></a>**N**
 
-###### <a name="nbv-net-book-value"></a>**BNV (bogført nettoværdi)**
+###### <a name="nbv-net-book-value"></a>**NBV (net book value)**
 
 Værdien af et anlægsaktiv, der er beregnet som forskellen mellem den oprindelige omkostning for anlægsaktivet minus dets akkumulerede afskrivninger.
 
@@ -471,7 +471,7 @@ Den proces, der består i sporing af antallet af en påkrævet vare til dens kil
 
 ###### <a name="pegging-event"></a>**udligningshændelse**
 
-En ressourceflow-hændelse, der signalerer behovet for et produkt.
+En ressourceflowhændelse, der signalerer behovet for et produkt.
 
 ###### <a name="phantom-item"></a>**fantomvare**
 
@@ -491,7 +491,7 @@ Den person, der opretter et kildedokument for at starte en anmodning om økonomi
 
 ###### <a name="privilege"></a>**rettighed**
 
-En eller flere tilladelser, som en bruger skal have for at udføre en opgave.
+En eller flere tilladelser, som en bruger skal bruge for at udføre en opgave.
 
 ###### <a name="procurement-catalog"></a>**indkøbskatalog**
 
@@ -503,7 +503,7 @@ En del af et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
-Størrelsen af, farven på eller konfigurationen for de produktattributter, der bruges til ..\financial-dimensions\dimensionsbaseret konfiguration.
+Størrelsen af, farven på eller konfigurationen for de produktattributter, der bruges til ..\financial-dimensions\dimension-based configuration.
 
 ###### <a name="product-family"></a>**produktfamilie**
 
@@ -535,7 +535,7 @@ Et kildedokument, der dokumenterer kravene til fremstillingen af varer for at op
 
 ###### <a name="production-schedule"></a>**produktionsplan**
 
-En tidsplan, der bruges til at producere en specifik vare og et specifikt vareantal på en specifik tid og med specifikke menneskelige og driftsmæssige ressourcer.
+En plan, de bruges til at producere en specifik vare og et specifikt vareantal på en specifik tid og med specifikke menneskelige og driftsmæssige ressourcer.
 
 ###### <a name="prospect"></a>**kundeemne**
 
@@ -545,7 +545,7 @@ En deltager, der har en eksisterende og potentiel mulighed for at yde en tjenest
 
 En politik, der giver parter tilladelse til at ændre indkøbsaftalebetingelser.
 
-###### <a name="purchase-order-policy"></a>**indkøbsordrepolitik**
+###### <a name="purchase-order-policy"></a>**politik for oprettelse af indkøbsordre**
 
 En politik, der giver parter tilladelse til at ændre indkøbsordrebetingelser og kontrollere ordrebehandlingen.
 
@@ -555,11 +555,11 @@ Et kildedokument, der dokumenterer et tilbud om at købe en produktmængde til e
 
 ###### <a name="purchase-requisition"></a>**indkøbsrekvisition**
 
-Et kildedokument, der dokumenterer produktanmodninger, så de kan sendes til evaluering og bruges til at godkende indkøb foretaget af en indkøbsorganisation.
+Et kildedokument, der dokumenterer produktanmodninger, så de kan sendes til evaluering, og bruges til at godkende indkøb foretaget af en indkøbsorganisation.
 
 ### <a name="q"></a>**Q**
 
-###### <a name="quantity-variance"></a>**antalsafvigelse**
+###### <a name="quantity-variance"></a>**afvigelse i antal**
 
 Forskellen mellem et bestilt produktantal og et modtaget produktantal, når der ikke forventes flere modtagelser.
 
@@ -577,15 +577,15 @@ En praksis, der består i at justere to eller flere konti eller regnskaber, så 
 
 En metode, der bruges til at øge eller reducere kravene til prognoser ved behov under varedisponering baseret på brugerdefinerede procentdele, der anvendes i bestemte perioder.
 
-###### <a name="register"></a>**register**
+###### <a name="register"></a>**registrere**
 
-En post, der bruges til at registrere de driftsmæssige, juridiske og økonomiske konsekvenser af ressourceflow-hændelser i et regnskabssystem.
+Et register, der bruges til at registrere de driftsmæssige, juridiske og økonomiske konsekvenser af ressourceflowshændelser i et regnskabssystem.
 
 ###### <a name="regulated-product"></a>**reguleret produkt**
 
 Et produkt, der er reguleret af en offentlig myndighed og kræver overholdelses- og overvågningsrapportering.
 
-###### <a name="rfq-request-for-quotation"></a>**tilbudsanmodning**
+###### <a name="rfq-request-for-quotation"></a>**Tilbudsanmodning**
 
 Et kildedokument, der dokumenterer en invitation til at byde på leveringen af en produktmængde til en angivet pris og på en angivet dato.
 
@@ -597,7 +597,7 @@ Den person, der anmoder om de økonomiske ressourcer.
 
 Et produkt, hvis distribution er begrænset eller reduceret af en offentlig myndighed.
 
-### <a name="s"></a>**S**
+### <a name="s"></a>**L**
 
 ###### <a name="sales-agreement"></a>**salgsaftale**
 
@@ -607,7 +607,7 @@ Et kildedokument, der dokumenterer en aftale mellem to eller flere parter basere
 
 En politik, der giver parter tilladelse til at ændre salgsaftalebetingelser.
 
-###### <a name="sales-order-policy"></a>**salgsordrepolitik**
+###### <a name="sales-order-policy"></a>**politik for salgstilbud**
 
 En politik, der giver parter tilladelse til at ændre salgsordrebetingelser og kontrollere ordrebehandlingen og betalingsprocesser.
 
@@ -629,7 +629,7 @@ Den rækkefølge, som job behandles i, eller operationer udføres i, på en prod
 
 ###### <a name="shared-asset"></a>**delt aktiv**
 
-Et aktiv, der bruges af mere end én pengegenererende enhed (PGE). Et eksempel er et distributionscenter, der bruges til opbevaring af varer, før de transporteres til forskellige markeder, der deler det samme distributionscenter.
+Et aktiv, der bruges af mere end én pengegenererende enhed (CGU). Et eksempel er et distributionscenter, der bruges til opbevaring af varer, før de transporteres til forskellige markeder, der deler det samme distributionscenter.
 
 ###### <a name="single-use-kanban"></a>**enkeltkortkanban**
 
@@ -661,13 +661,13 @@ En økonomisk dimension, der er tilknyttet en tabel eller visning i databasen og
 
 Den tid, det tager at producere én enhed af et produkt.
 
-###### <a name="task-guide"></a>**opgaveguide**
+###### <a name="task-guide"></a>**Opgaveguide**
 
-En kontrolleret og styret oplevelse gennem trinnene i en opgaveregistrering. En opgaveguide fører brugeren gennem den oplevelse, der blev registreret. Alle virkemåder i forhold til sikkerhed, data og programmer er de samme, når en opgaveguide fuldføres, som når opgaveguiden ikke bruges. Opgaveguiden bruger samme funktioner som arbejdsrutineoptageren til at finde ud af, om en bruger har fuldført det tilsigtede trin, så den kan bede brugeren om at udføre næste trin i optagelsen.
+En kontrolleret og styret oplevelse gennem trinnene i en opgaveoptagelse. En opgaveguide fører brugeren gennem den oplevelse, der blev registreret. Alle virkemåder i forhold til sikkerhed, data og programmer er de samme, når en opgaveguide fuldføres, som når opgaveguiden ikke bruges. Opgaveguiden bruger samme funktioner som arbejdsrutineoptager til at finde ud, om en bruger har afsluttet det tilsigtede trin, så den kan bede brugeren om at tage næste skridt i optagelsen.
 
 ###### <a name="task-recorder"></a>**Arbejdsrutineoptager**
 
-Et værktøj, der er forhåndsinstalleret i Dynamics 365 for Operations. Under optagelser registrerer den alle de hændelser, som brugeren indtaster i Dynamics 365 for Operations-brugergrænsefladen, der udføres på serveren – herunder tilføjede værdier, ændrede indstillinger, fjernede data osv.
+Et værktøj, der er forhåndsinstalleret i Dynamics 365 for Operations. Ved registrering registrerer den alle de hændelser, som brugeren indtaster i Dynamics 365 for Operations-brugergrænsefladen, der udføres mod serveren – herunder tilføjede værdier, ændrede indstillinger, fjernede data osv.
 
 ###### <a name="task-recording"></a>**Opgaveregistrering**
 
@@ -675,11 +675,11 @@ En fil, der indeholder de handlinger og anmærkninger, der registreres, når Arb
 
 ###### <a name="three-way-matching-policy"></a>**trevejs-sammenholdelsespolitik**
 
-En politik til sammenholdelse, der kræver priser fra en eller flere kreditorfakturaer for at kunne sammenholde med priserne fra en eller flere indkøbsordrer, og kræver et eller flere debitorfakturaantal for at sammenholde det med et eller flere produktkvitteringsantal.
+En politik til sammenholdelse, der kræver priser fra en eller flere kreditorfakturaer for at kunne sammenholde med priserne fra en eller flere indkøbsordrer, og kræver en eller flere debitorfakturaantal for at sammenholde det med en eller flere produktkvitteringsantal.
 
 ###### <a name="transfer-batch"></a>**overførselsbatch**
 
-Det antal af en eller flere varer, der overføres eller kan overføres.
+Det antal på en eller flere varer, der overføres eller kan overføres.
 
 ###### <a name="two-way-matching-policy"></a>**tovejs-sammenholdelsespolitik**
 
@@ -701,13 +701,13 @@ En driftsenhed, der kontrollerer en eller flere produktionsflow.
 
 En metode til modellering af produktmastere og søgning efter produktvariantkonfigurationer.
 
-###### <a name="vat-value-added-tax"></a>**moms**
+###### <a name="vat-value-added-tax"></a>**Moms**
 
 En moms på produkter ved hver produktionsfase baseret på den moms, der gælder for den pågældende fase.
 
 ###### <a name="vendor-catalog"></a>**kreditorkatalog**
 
-En oversigt over produkttilbud, der er tilgængelige ved køb hos en kreditor.
+En oversigt over produkttilbud, der er tilgængelig til køb fra en kreditor.
 
 ###### <a name="vendor-invoice"></a>**kreditorfaktura**
 
@@ -717,15 +717,15 @@ Et kildedokument, der dokumenterer en kreditorbetalingsanmodning. En kreditorfak
 
 ###### <a name="work-cell"></a>**arbejdscelle**
 
-En ressourcegruppe, der er en del af en produktionsflowaktivitet.
+En ressourcegruppe, der er den del af en produktionsflowaktivitet.
 
 ###### <a name="worker"></a>**arbejder**
 
-En person, der antager rollen som medarbejder eller kontrahent og betales som modydelse for tjenester.
+En person, der antager rollen som en medarbejder eller en kontrahent og betales som modydelse for tjenester.
 
 ###### <a name="workspace"></a>**arbejdsområde**
 
-En side, der indeholder en oversigt over en af de aktiviteter, som udføres af brugeren. Siden bruger felter, lister og diagrammer til at vise igangværende arbejde og relaterede data fra flere kilder, og siden viser hyppige opgaver, der er relateret til disse data. Felter, der er vist i oversigtssektionen i arbejdsområdet, vises også i den relaterede sektion i dashboardet.
+En side, der indeholder en oversigt over en af de aktiviteter, der udføres af brugeren. Siden bruger felter, lister og diagrammer til at vise igangværende arbejde og relaterede data fra flere kilder, og siden viser hyppige opgaver, der er relateret til disse data. Felter, der er vist i oversigtssektionen i arbejdsområdet, vises også i den relaterede sektion i dashboardet.
 
 
 

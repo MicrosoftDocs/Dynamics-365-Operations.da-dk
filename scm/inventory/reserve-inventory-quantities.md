@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7361b2e04376284238c8c9b1f91d03d18b121d24
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e414d5a5f946ff67befdf824cbf994a99dfe3eb6
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Der er følgende årsager til en reservation af lager:
 Lageret kan reserveres automatisk, når der oprettes en ny ordrelinje, eller lageret kan reserveres manuelt for de enkelte ordrer. Det er også muligt at reservere lager på forskellige stadier i en produktionsproces. Kun produkter på lager kan reserveres. Serviceydelser kan ikke reserveres, fordi der ikke er nogen disponibel lagerbeholdning. Både disponibel lagerbeholdning og bestilt, men endnu ikke modtaget lager, kan reserveres. Hvis der reserveres et større antal, end der findes i den disponible lagerbeholdning, får du vist en meddelelse om, at det ikke er muligt at reservere et så stort antal. Du kan derefter enten reservere antallet alligevel, eller du kan ændre det bestilte antal. Antallet kan enten reserveres eller ændres. Hvis der reserveres flere varer end det disponible antal, dækkes mankoen ind, næste gang der er disponible varer til levering.
 
 ## <a name="inventory-reservation-policies"></a>Politikker for lagerreservation
-Politikker for lagerreservation angives på siden **Varemodelgrupper, **siden **Parametre til lager- og lokationsstyring** og siden **Produktionsparametre**.
+Politikker for lagerreservation angives på siden **Varemodelgrupper,**siden **Parametre til lager- og lokationsstyring** og siden **Produktionsparametre**.
 ### <a name="policies-on-the-item-model-groups-page"></a>Politikker på siden Varemodelgrupper
 
 Afsnittet **Lagerpolitikker** indeholder følgende reservationspolitikker.

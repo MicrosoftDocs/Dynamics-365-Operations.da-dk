@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 444ffcc8a14650085e24d0ea0d7f725e9d324d69
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f3d34f9ee0c9db97e79b8577d006b198f9a5cb29
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,8 +42,8 @@ Du kan søge efter dublerede poster direkte fra listesiden **Globalt adressekart
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Kan jeg tilføje eller slette flere partposter fra et adressekartotek?
 Ja, du kan tilføje flere partposter til et adressekartotek og også fjerne flere partposter.
 
--   Hvis du vil tilføje flere partposter til et adressekartotek, skal du på listesiden **Globalt adressekartotek **vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part **i gruppen **Vedligehold **klikke på **Tildel parter**. Vælg de adressekartoteker, du vil tilføje de valgte partposter i, og klik derefter på **OK**. Alle de valgte partposter føjes til de adressekartoteker, du har valgt.
--   Hvis du vil fjerne flere partposter fra et adressekartotek, skal du på listesiden **Globalt adressekartotek **vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part **i gruppen **Vedligehold **klikke på **Fjern parter**. Vælg de adressekartoteker, du vil fjerne parter fra, og klik derefter på **OK**. Alle de valgte partposter fjernes fra de adressekartoteker, du har valgt.
+-   Hvis du vil tilføje flere partposter til et adressekartotek, skal du på listesiden **Globalt adressekartotek**vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part**i gruppen **Vedligehold**klikke på **Tildel parter**. Vælg de adressekartoteker, du vil tilføje de valgte partposter i, og klik derefter på **OK**. Alle de valgte partposter føjes til de adressekartoteker, du har valgt.
+-   Hvis du vil fjerne flere partposter fra et adressekartotek, skal du på listesiden **Globalt adressekartotek**vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part**i gruppen **Vedligehold**klikke på **Fjern parter**. Vælg de adressekartoteker, du vil fjerne parter fra, og klik derefter på **OK**. Alle de valgte partposter fjernes fra de adressekartoteker, du har valgt.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Kan jeg ændre parttypen for en post, eller er det nødvendigt at slette den gamle post og oprette en ny?
 Nogle gange skal du muligvis ændre parttypen for en post fra person til organisation eller fra organisation til person. Nancy er f.eks. medlem af salgsteamet for Fabrikam, Storbritannien. På en handelsmesse i London møder hun seks nye kundeemner. Nancy opretter en partpost for kundeemne for hver enkelt kundeemne. Når Nancy gemmer posterne, bliver hver enkelt post også oprette i det globale adressekartotek. Fabrikam har angivet standardparttypen til organisation, men to af de nye kundeemner bør have en post af typen person. Når Nancy vender tilbage fra handelsmessen, skal hun derfor ændre parttypen for to kundeemneposter. Hvis du vil ændre en partpost fra én parttype til en anden, skal du først oprette en ny partpost med den korrekte type i det globale adressekartotek. Du kan derefter knytte den gamle partpost med denne nye post. Når du har foretaget den nye parttilknytning, skal du slette den oprindelige partpost, der har den forkerte posttype.

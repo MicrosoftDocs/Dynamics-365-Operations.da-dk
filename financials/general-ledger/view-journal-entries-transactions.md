@@ -3,7 +3,7 @@ title: "Få vist kladdeposteringer og transaktioner"
 description: "I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner."
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: a6848ea9c05536ac18a038b1864c9ccb9408964c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 021a74811212f65977407b8454086b0e7b703a2f
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Få vist kladdeposteringer og transaktioner
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner. 
 
@@ -52,6 +56,11 @@ Ud over de økonomiske rapporter, kan du bruge følgende finansrapporter til at 
 -   **Transaktionsoprindelse** – Denne transaktionsrapport viser kontoen efter kladde og efter transaktions-, regnskabs- og rapporteringsvaluta. Den viser også hver linje i kladden, der blev brugt som en forskydning.
 
 
-Yderligere oplysninger finder du i afsnittet [Finanssaldi](general-ledger-account-balances.md) [Sporing af regnskabskilde](\financials\accounts-payable\accounting-source-explorer) og [Økonomisk rapportering](financial-reporting-getting-started.md)
+##<a name="see-also"></a>Se også
+- [Kontosaldi i Finans](general-ledger-account-balances.md) 
+- [Sporing af regnskabskilde](..\accounts-payable\accounting-source-explorer.md)
+- [Økonomirapportering](financial-reporting-getting-started.md)
+
+
 
 

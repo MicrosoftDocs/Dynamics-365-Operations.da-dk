@@ -1,7 +1,7 @@
 ---
 title: "Vise og designe økonomirapporter"
-description: "Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations. Økonomirapportering består af en visuel oplevelse i Dynamics 365 for Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter."
-author: twheeloc
+description: "Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -165,7 +166,7 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 6.  Dobbeltklik på feltet **Dimensionsfilter**.
 7.  I vinduet **Dimension** skal du dobbeltklikke på kolonnen **Afdeling**.
 8.  I området med enkeltvist eller interval i dialogboksen skal du klikke på **ellipsen** for feltet **Fra** for at få vist en liste over afdelinger.
-9.  Vælg afdeling **022**, **Salg og marketing**, og klik derefter på ** OK**.
+9.  Vælg afdeling **022**, **Salg og marketing**, og klik derefter på **OK**.
 10. Gentag trin 5 til 8 for afdelingerne 23-25.
 11. I rækken **Overskrift 2** til hver FD-kolonne skal du skrive følgende afdelingsbeskrivelser:
     -   Kolonne B - Salgs- og marketing
@@ -176,14 +177,14 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 12. Gem kolonnedefinitionen som afdelinger ved siden af hinanden. Da vi bruger en eksisterende rækkedefinition, kan rapportdefinitionen nu ændres, så den nyoprettede kolonnedefinitionen og eksisterende rækkedefinition kan bruges.
 13. I menuen **Vindue** skal du vælge **Ny rapportdefinition** for at åbne rapportdefinitionen.
 14. Vælg **Resultatopgørelse – standard** som rækkedefinition og **Afdelinger ved siden af hinanden** som kolonnedefinition.
-15. Gem rapportdefinitionen som ** Afdelingsresultatopgørelse side om side**.
+15. Gem rapportdefinitionen som **Afdelingsresultatopgørelse side om side**.
 16. Ret basisåret til **2012**.
 17. Ret detaljeringsniveauet til **Finans, Konto og Transaktion**.
 18. **Gem** dine ændringer og **generer**. Når rapporten færdiggøres, oprettes og åbnes, kan du gennemse rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Økonomirapportering](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Vis økonomirapporter](\financials\general-ledger\view-financial-reports.md) 
+[Økonomirapportering](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Vis økonomirapporter](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Bloggen Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 8af663b47117759ed3b2e2ed8eee85ae4df100d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f80d5d49cae3107390a605e9605d8af65bf2342d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Brug af Excel-tilføjelsesprogrammet
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. For at åbne enhedsdataene kan du enten starte fra Microsoft Excel eller Microsoft Dynamics 365 for Operations.
 
@@ -44,13 +48,14 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 2.  I Office Store kan du søge på nøgleordet "Dynamics" og klikke på **Tilføj** ud for **Microsoft Dynamics Office-tilføjelsesprogram** (Excel-tilføjelsesprogrammet).
 3.  Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du klikke på **Har tillid til dette tilføjelsesprogram** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4.  Klik på **Tilføj serveroplysninger** for at åbne ruden **Indstillinger**.
-5.  Kopiér browser-URL-adressen fra din destinationsforekomst af Dynamics 365 for Operations, indsæt den i feltet **Serverens URL-adresse** og slet derefter slette alt efter værtsnavnet (slet f.eks. **/?cmp=usmf&mi=CustTableListPage**). Den deraf følgende URL-adresse skal blot indeholde værtsnavnet (f.eks. **https://xxx.dynamics.com**).
+5.  Kopiér browser-URL-adressen fra din destinationsforekomst af Dynamics 365 for Operations, indsæt den i feltet **Serverens URL-adresse**, og slet derefter alt efter værtsnavnet. Den resulterende URL-adresse skal have blot værtsnavnet.
+Hvis URL-adressen f.eks. er https://xxx.dynamics.com/?cmp=usmf&amp;mi = CustTableListPage, skal du slette alt undtagen **https://xxx.dynamics.com**.
 6.  Klik på **OK**, og klik derefter på **Ja** for at bekræfte ændringen. Excel-tilføjelsesprogrammet genstarter og indlæser metadata. Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde yderligere oplysninger i "Knappen Indlæs applets vises" i afsnittet "Fejlfinding" i dette emne.
 7.  Klik på **Design**. Excel-tilføjelsesprogrammet henter enhedsmetadata.
 8.  Klik på **Tilføj tabel**. Der vises en liste over enheder. Enhederne er angivet i formatet "Navn – label".
 9.  Vælg en enhed på listen, f.eks. **Kunde - kunder**, og klik derefter på **Næste**.
 10. Hvis du vil føje et felt fra listen **Tilgængelige felter** til listen **Valgte felter**, skal du klikke på feltet, og derefter klikke på **Tilføj**. Du kan også dobbeltklikke på feltet.
-11. Når du har tilføjet de ønskede felter til listen **Valgte felter**, skal du sørge for, at markøren er placeret på det rigtige sted i regnearket (f.eks. celle A1) og derefter klikke på **Udført**. Klik derefter på **Udført** for at lukke designeren.
+11. Når du har tilføjet felterne til listen **Valgte felter**, skal du sørge for, at markøren er placeret på det rigtige sted i regnearket (f.eks. celle A1) og derefter klikke på **Udført**. Klik derefter på **Udført** for at lukke designeren.
 12. Klik på **Opdater** for at trække i et sæt data ind.
 
 ## <a name="view-and-update-entity-data-in-excel"></a>Få vist og opdater enhedsdata i Excel
@@ -59,14 +64,17 @@ Når Excel-tilføjelsesprogrammet har indlæst enhedsdata i projektmappen, kan d
 ## <a name="edit-entity-data-in-excel"></a>Rediger enhedsdata i Excel
 Du kan ændre enhedsdata efter behov, og derefter udgive dem tilbage igen ved at klikke på **Udgiv** i Excel-tilføjelsesprogrammet. Hvis du vil redigere en post, skal du markere en celle i regnearket og derefter ændre celleværdien. Hvis du vil tilføje en ny post, skal du benytte en af følgende fremgangsmåder:
 
--   Klik et vilkårligt sted i regnearket, og klik derefter på **Ny** i Excel-tilføjelsesprogrammet.
--   Klik på den sidste række i regnearket, og tryk derefter på tabulatortasten, indtil markøren flyttes ud af den sidste kolonne i rækken, og der oprettes en ny række.
--   Klik i rækken umiddelbart under regnearket, og begynd at angive data i en celle. Når du flytter fokus fra cellen, udvides regnearket for at medtage den nye række.
+-   Klik et vilkårligt sted i datakildetabellen, og klik derefter på **Ny** i Excel-tilføjelsesprogrammet.
+-   Klik på den sidste række i datakildetabellen, og tryk derefter på tabulatortasten, indtil markøren flyttes ud af den sidste kolonne i rækken, og der oprettes en ny række.
+-   Klik i rækken umiddelbart under datakildetabellen, og begynd at angive data i en celle. Når du flytter fokus fra cellen, udvides tabellen for at medtage den nye række.
+-   Ved feltbindinger i overskriftsposter skal du klikke på et af felterne, og derefter klikke på **Ny** i Excel-tilføjelsesprogrammet.
 
+Bemærk, at der kun kan oprettes en ny post, hvis alle de nøglefelter og obligatoriske felter er bundet i regnearket, eller hvis standardværdier blev udfyldt ved hjælp af filterbetingelsen.
 Hvis du vil slette en post, skal du benytte en af følgende fremgangsmåder:
 
 -   Højreklik på rækkenummeret ud for den række i regnearket, der skal slettes, og klik derefter på **Slet**.
 -   Højreklik i regnearksrækken, der skal slettes, og klik derefter på **Slet** &gt; **Tabelrækker**.
+Hvis datakilder er blevet tilføjet som relaterede, publiceres overskriften før linjerne. Hvis der er afhængigheder mellem andre datakilder, kan det være nødvendigt at ændre standardpubliceringsrækkefølgen. Hvis du vil ændre publiceringsrækkefølgen, skal du i Excel-tilføjelsesprogrammet klikke på knappen **Indstillinger** (tandhjulsymbolet). Klik derefter på **Konfigurer publiceringsrækkefølge** i oversigtspanelet **Data Connector**.
 
 ## <a name="add-or-remove-columns"></a>Tilføj eller fjern kolonner
 Du kan bruge designeren til at justere de kolonner, der automatisk er føjet til regnearket.
@@ -77,9 +85,10 @@ Du kan bruge designeren til at justere de kolonner, der automatisk er føjet til
 4.  Tilpas listen i listen **Valgte felter** efter behov:
     -   Hvis du vil føje et felt fra listen **Tilgængelige felter** til listen **Valgte felter**, skal du klikke på feltet, og derefter klikke på **Tilføj**. Du kan også dobbeltklikke på feltet.
     -   Hvis du vil fjerne et felt fra listen **Valgte felter**, skal du klikke på feltet og derefter klikke på **Fjern**. Du kan også dobbeltklikke på feltet.
-    -   Hvis du vil ændre rækkefølgen af felter, skal du klikke på feltet på listen **Valgte felter** og derefter klikke på **Op** eller **Ned**.
+    -   Hvis du vil ændre rækkefølgen af felter, skal du klikke på feltet på listen **Valgte felter**, klikke på et felt og derefter klikke på **Op** eller **Ned**.
 
-5.  Anvend dine ændringer på datakilden ved at klikke på **Opdater**. Klik derefter på **Udført** for at lukke designeren. Hvis du har tilføjet et felt (kolonne), skal du klikke på **Opdater** for at trække et sæt opdaterede data ind.
+5. Du anvender dine ændringer af datakilden ved at klikke på **Opdater**. Klik derefter på **Udført** for at lukke designeren. 
+6. Hvis du har tilføjet et felt (kolonne), skal du klikke på **Opdater** for at trække et sæt opdaterede data ind.
 
 ## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Fejlfinding
 Der er nogle få problemer, der kan løses gennem nogle nemme trin.
@@ -87,6 +96,8 @@ Der er nogle få problemer, der kan løses gennem nogle nemme trin.
 -   **Knappen Indlæs applets vises.** Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, når du er logget på, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du klikke på det, logge af og derefter logge på igen.
 -   **Du få vist meddelelsen "Forbudt".** Hvis du får vist meddelelsen "Forbudt", mens Excel-tilføjelsesprogrammet indlæser metadata, har den konto, der er logget på Microsoft Excel-tilføjelsesprogrammet ikke tilladelse til at bruge den målsatte tjeneste, forekomst eller database. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du klikke på det, logge af og derefter logge på igen.
 -   **En tom webside vises i Excel.** Hvis der åbnes en tom webside under logon-processen, kræver kontoen AD FS, men den version af Excel, der kører tilføjelsesprogrammet, er ikke ny nok til at indlæse logon-dialogboksen. Du kan løse dette problem ved at opdatere den version af Excel, du bruger. For at opdatere versionen af Excel, når du er i en virksomhed, der er på den udskudte kanal, kan du bruge [Office Udrulningsværktøj](https://technet.microsoft.com/library/jj219422.aspx) til [at flytte fra den udskudte kanal til den aktuelle kanal](https://technet.microsoft.com/library/mt455210.aspx).
+
+
 
 
 

@@ -3,7 +3,7 @@ title: Glidende gennemsnit
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15 - 16 - 47
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,41 +19,38 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: e75016694e63dbc26f8d4c4ae73204966ca28dcf
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: da743efaf03b7a087d797cedb9bb6f4e3d4510ca
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="moving-average"></a>Glidende gennemsnit
 
+[!include[banner](../includes/banner.md)]
 
 
 Følgende er forudsætningerne for at bruge glidende gennemsnitskostpriser som en kalkulationsmetode.
-1.  På siden **Varemodelgrupper** skal du konfigurere en varemodelgruppe, hvor Glidende gennemsnit er valgt i feltet **Lagermodel**.
-    | **Bemærk! **                                                                                                                                |
-    |-----------------------------------------------------------------------------------------------------------------------------------------|
-    | Når Glidende gennemsnit er valgt, er felterne **Bogfør fysisk varelager** og **Bogfør økonomisk varelager** som standard også markeret. |
+1.  På siden **Varemodelgrupper** skal du konfigurere en varemodelgruppe, hvor Glidende gennemsnit er valgt i feltet **Lagermodel**. **Bemærk!** Når Glidende gennemsnit er valgt, er felterne **Bogfør fysisk varelager** og **Bogfør økonomisk varelager** som standard også markeret. 
 
 2.  På siden **Bogføring** skal du tildele konti til kontiene **Prisdifference for glidende gennemsnit** og **Omkostningsværdiregulering for glidende gennemsnit** under fanen **Lager**. Du kan bruge kontoen **Prisdifference for glidende gennemsnit**, når omkostningen skal være forholdsmæssigt udgiftsført. Dette sker på grund af en difference i omkostningen mellem en købskvittering og købsfakturaen og på grund af en difference mellem det oprindelige lagerantal og den aktuelle beholdning. Brug kontoen **Omkostningsværdiregulering for glidende gennemsnit**, når du vil justere den glidende gennemsnitskostpris for et produkt til en ny enhedspris.
-3.  På siden **Frigivne produkter** skal du tildele varemodelgruppen med glidende gennemsnit til produktet.
-
-| **Bemærk! **                                                                                                                                                     |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lukning af lageret lukker kun regnskabsperioden. Den påvirker ikke produkter, som har et glidende gennemsnit, der er tildelt som en varemodelgruppe. |
+3.  På siden **Frigivne produkter** skal du tildele varemodelgruppen med glidende gennemsnit til produktet. **Bemærk!** Lukning af lageret lukker kun regnskabsperioden. Den påvirker ikke produkter, som har et glidende gennemsnit, der er tildelt som en varemodelgruppe.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Konvertér til kalkulationsmetoden med glidende gennemsnit
-Produkter kan konverteres til at bruge lagervurderingsmetoden med glidende gennemsnit. Denne type konvertering sker normalt i slutningen af året, når den sidste måned i det indeværende år er lukket. Det gøres ved hjælp af produktets aktuelle model for efterkalkulation. Du kan ændre din kalkulationsmetode for lageret fra en kalkulationsmetode, der er baseret på en gennemsnitlig kostpris eller standardomkostning til en metode, der er baseret på et glidende gennemsnit. Hvis du ændrer din kalkulationsmetode fra en standard kalkulationsmetode til en metode med glidende gennemsnit, skal du udføre følgende opgaver:
+Produkter kan konverteres til at bruge lagervurderingsmetoden med glidende gennemsnit. Denne type konvertering sker normalt i slutningen af året, når den sidste måned i det indeværende år er lukket. Det gøres ved hjælp af produktets aktuelle model for efterkalkulation. Du kan ændre din kalkulationsmetode for lageret fra en kalkulationsmetode, der er baseret på en gennemsnitlig kostpris eller standardomkostning til en metode, der er baseret på et glidende gennemsnit. 
+
+Hvis du ændrer din kalkulationsmetode fra en standard kalkulationsmetode til en metode med glidende gennemsnit, skal du udføre følgende opgaver:
+
 1.  Foretag justeringer for at få lagerantal og -værdier til 0 (nul).
 2.  Når lagerværdien og antallet er 0 (nul), skal du ændre varemodelgruppen til glidende gennemsnit.
 3.  Foretag justeringer for at få lagerantallet og -værdierne tilbage til lageret.
 
 Du kan ikke ændre din kalkuleringsmetode for lageret fra en metode med glidende gennemsnit til en først ind-først ud-metode (FIFO), sidst ind-først ud-metode (LIFO) eller en metode med vægtet gennemsnit.
-| **Bemærk! **                                                                      |
-|-------------------------------------------------------------------------------|
-| Konvertering fra standardomkostning til glidende vægtet gennemsnit er en manuel proces. |
+
+**Bemærk!** Konvertering fra standardomkostning til glidende vægtet gennemsnit er en manuel proces.
 
 Følgende eksempler illustrerer effekten af at bruge kalkulationsmetoden med glidende gennemsnit. Der findes fire konfigurationer:
 -   Indkøbsordre og forholdsmæssigt udgiftsført omkostningsdifference.
@@ -62,7 +59,10 @@ Følgende eksempler illustrerer effekten af at bruge kalkulationsmetoden med gli
 -   Glidende gennemsnit med en tilbagedateret transaktion
 
 ## <a name="purchase-order-and-proportionally-expensed-cost-difference"></a>Indkøbsordre og forholdsmæssigt udgiftsført omkostningsdifference.
-Med glidende gennemsnit bestemmes produktets kostpris af købskvitteringen. Hvis der er en difference i omkostningen mellem købskvitteringen og købsfakturaen, når købsfakturaen bogføres, reguleres differencen i forhold til de aktuelle produkter, der er på lager og eventuelle resterende beløb udgiftsføres. I dette eksempel oprettes og modtages en indkøbsordre ved en omkostning, og købsfakturaen bogføres med en anden omkostning.
+Med glidende gennemsnit bestemmes produktets kostpris af købskvitteringen. Hvis der er en difference i omkostningen mellem købskvitteringen og købsfakturaen, når købsfakturaen bogføres, reguleres differencen i forhold til de aktuelle produkter, der er på lager og eventuelle resterende beløb udgiftsføres. 
+
+I dette eksempel oprettes og modtages en indkøbsordre ved en omkostning, og købsfakturaen bogføres med en anden omkostning.
+
 1.  Opret en købsordre for en mængde på 2 og en salgspris på 10,00.
 2.  Opret en købskvittering for produktet.
 3.  Opret en salgsordre for en mængde på 1 og en enhedspris på 10,00.
@@ -71,19 +71,15 @@ Med glidende gennemsnit bestemmes produktets kostpris af købskvitteringen. Hvis
 Differencen i enhedsprisen, 2,00, bogføres på kontoen Prisdifference for glidende gennemsnit, når købsfakturaen bogføres. Årsagen er, at to produkter blev købt til en pris på 20,00. Et af produkterne, der blev solgt til en enhedspris på 10,00. Købsfakturaen blev bogført med en enhedspris på 12,00 med et antal på 2. Enhedsprisen for produktet kan ikke bogføres ved 14,00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Glidende gennemsnit for produkt og lagerregulering
-Hvis du vil justere den glidende gennemsnitlige kostpris for et produkt, tillades lagerreguleringer for dags dato. Du kan ikke tilbagedatere en lagerregulering for at rette den glidende gennemsnitlige kostpris for et produkt. Du kan ikke have omkostningsforløb gennem efterfølgende transaktioner. I dette eksempel er den glidende gennemsnitlige kostpris reguleret for et produkt.
-1.  Vælg det produkt, du vil justere den glidende gennemsnitlige omkostning for.
-    | **Bemærk!**                                                                                    |
-    |---------------------------------------------------------------------------------------------|
-    | På siden **Værdiregulering for glidende gennemsnit** undersøges det lager, der er tilgængeligt for et produkt. |
+Hvis du vil justere den glidende gennemsnitlige kostpris for et produkt, tillades lagerreguleringer for dags dato. Du kan ikke tilbagedatere en lagerregulering for at rette den glidende gennemsnitlige kostpris for et produkt. Du kan ikke have omkostningsforløb gennem efterfølgende transaktioner. 
 
-    Det valgte produkt havde et bogført antal på 1, en bogført værdi på 12,00, en bogført enhedskostpris på 12,00 og en enhedskostpris på 12,00.
+I dette eksempel er den glidende gennemsnitlige kostpris reguleret for et produkt.
+
+1.  Vælg det produkt, du vil justere den glidende gennemsnitlige omkostning for. **Bemærk!** På siden **Værdiregulering for glidende gennemsnit** undersøges det lager, der er tilgængeligt for et produkt. Det valgte produkt havde et bogført antal på 1, en bogført værdi på 12,00, en bogført enhedskostpris på 12,00 og en enhedskostpris på 12,00.
 2.  Opdater feltet **Enhedskostpris** til 16,00. Systemet beregner de resterende felter.
 3.  Reguleringen er bogført.
 
-| **Bemærk! **                                                        |
-|-----------------------------------------------------------------|
-| Du kan kun justere den glidende gennemsnitlige kostpris for dags dato. |
+**Bemærk!** Du kan kun justere den glidende gennemsnitlige kostpris for dags dato.
 
 På siden **Udligninger på bilag** kan du se en regulering på 4,00, der er bogført på kontoen Omkostningsværdiregulering for glidende gennemsnit.
 
@@ -92,11 +88,11 @@ Glidende gennemsnit understøtter producerede varer. Hvis du planlægger at brug
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Glidende gennemsnit med en tilbagedateret transaktion
 Tilbagedaterede transaktioner tildeles den aktuelle kostpris med glidende gennemsnit, og produktets fysiske antal opdateres, men den glidende gennemsnitlige kostpris påvirkes ikke. I dette eksempel på glidende gennemsnit bogføres en tilbagedateret transaktion for et produkt med glidende gennemsnit.
+
 1.  Opret en lagerregulering for et produkt med glidende gennemsnit til et antal på 1 og en omkostning på 20,00.
 2.  Lagertransaktionsoversigten for produktet ligner følgende:
     -   En lagertransaktion på 1, en omkostning på 16,00, bogføringsdatoen 15. januar og transaktionsdatoen 15. januar.
     -   En lagerjustering på 1, en omkostning på 20,00, bogføringsdatoen 1. januar og transaktionsdatoen 15. januar.
-
 3.  Bogfør reguleringen.
 
 På siden **Lagertransaktioner** kan du se, at 4,00 udgiftsføres som det aktuelle glidende gennemsnit for produktet, er 16,00. Du kan tilbagedatere en bogføring, men differencen i omkostningen udgiftsføres, så den glidende gennemsnitlige kostpris påvirkes ikke.
@@ -112,13 +108,11 @@ I dette eksempel på et glidende gennemsnit udskrives lagerværdirapporten for a
 | 5. oktober        | 5. oktober    | Salgsordre                | -1       | -10,00 | 13,00             |
 | 7. oktober        | 7. oktober    | Indkøbsfaktura           |          | 2,00   | 14,00             |
 | 8. oktober        | 8. oktober    | Værdiregulering med glidende gennemsnit |          | 4,00   | 16,00             |
-|                  | 31. oktober   | I alt                      | 2        | 32,00  | 16,00             |
+|                  | 31. oktober   | Samlet                      | 2        | 32,00  | 16,00             |
 
- 
+ **Bemærk!** Du kan ikke afstemme finansmodulet med lager ved hjælp af indstillingen **Sortering af transaktionsklokkeslæt**. Rapporten skal udskrives ved hjælp af indstillingen **Bogføringsdato**.
 
-| **Bemærk! **                                                                                                                                                                  |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Du kan ikke afstemme finansmodulet med lager ved hjælp af indstillingen **Sortering af transaktionsklokkeslæt**. Rapporten skal udskrives ved hjælp af indstillingen **Bogføringsdato**. |
+
 
 
 

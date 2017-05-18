@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: b8ad4aa1653d090b46a7e35e9e710324df2edfe5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 109f8e008b9865188c1c2cae3855884739d9d57d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Når du konsoliderer data fra én regnskabsvalutaen til en anden, skal du stadig
 |---------------|-------------|------------|---------------|
 | EUR           | USD         | 10/1/2015  | 200           |
 | EUR           | USD         | 11/1/2015  | 150           |
-| EUR           | USD         | 12/1/2012  | 1000           |
+| EUR           | USD         | 12/1/2012  | 100           |
 
 ## <a name="perform-the-consolidation-for-october-2015"></a>Udføre konsolidering for oktober 2015
 ### <a name="balances-in-the-consolidation-company"></a>Saldiene i det konsoliderede regnskab

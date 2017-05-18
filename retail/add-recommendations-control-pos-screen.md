@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 2377b1639a3c95fe6bba4754c4069cc12043e3d3
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 590a009fa4afaf8020b9905020266c4b7293d228
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 2.  I menuen til venstre skal du trække og slippe kontrolelementet med anbefalinger til mellem området med transaktionslinjedetaljer og knapmatricen nederst i midten af transaktionsskærmbilledet. Rediger størrelsen på kontrolelementet, så det passer i det pågældende område.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 3.  Klik på **X** for at lukke og afslutte layoutdesigneren.
 4.  I Dynamics 365 for Operations skal du gå til **Detail og handel** &gt; **Retail it** &gt; **Distributionsplaner**.
-5.  Vælg **1090 Registers** på listen.
+5.  Vælg **1090, kasseapparater** på listen.
 6.  Klik på **Kør nu**.
 
 #### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Sådan tilføjes fanen Anbefalinger i gitteret nederst i højre side af skærmen
@@ -70,7 +71,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 8.  Klik på **OK**. Den nye fane vises i knapmatricen.
 9.  Klik på **X** for at lukke og afslutte layoutdesigneren.
 10. I Dynamics 365 for Operations skal du gå til **Detail og handel** &gt; **Retail it** &gt; **Distributionsplaner**.
-11. Vælg **1090 Registers** på listen.
+11. Vælg **1090, kasseapparater** på listen.
 12. Klik på **Kør nu**.
 
 

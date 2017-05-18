@@ -3,7 +3,7 @@ title: Systemkrav
 description: Dette emne viser systemkravene til den aktuelle version af Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: 9220c093d3f6d6700127c93651db4083be300311
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="system-requirements"></a>Systemkrav
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne viser systemkravene til den aktuelle version af Microsoft Dynamics 365 for Operations.
 
@@ -43,6 +47,8 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 -   Hvis du vil hente billeder, der er genereret ud fra Arbejdsrutineoptager og inkludere dem i Microsoft Word-dokumenter, skal du have en Chrome-udvidelse installeret. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Arbejdsgangseditoren startes som et ClickOnce-program. Kun Microsoft Edge og Internet Explorer (på en understøttet version af Microsoft Windows) understøtter ClickOnce-programmer. ClickOnce-programmet til arbejdsgangseditoren kræver et kompatibelt 64-bit-operativsystem.
 -   Report Designer til finansiel rapportering startes som et ClickOnce-program. Det kræver et kompatibelt 64-bit-operativsystem. Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at hente Report Designer-klienten. Hvis du bruger Chrome i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen også er aktiveret til incognito-tilstand.
+-   Hvis du vil se PDF-filer, anbefaler vi, at du bruger moderne browsere, som Microsoft Edge (seneste offentligt tilgængelige version) i Windows 10 eller Google Chrome (seneste offentligt tilgængelige version) i Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-tabletten.
+
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Understøttede webbrowsere for Retail Cloud POS
 
@@ -117,11 +123,13 @@ Computeren skal opfylde alle systemkrav til installation og brug af følgende el
 -   Mindst 10 GB ledig plads (kanaldatabasen kan kræve en stor mængde plads.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Krav til udvikling på lokale virtuelle maskiner
-Du kan finde oplysninger om kravene til udvikling på lokale virtuelle maskiner (VM'er), [VM, der kører i det lokale miljø](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+Du kan finde oplysninger om kravene til udvikling på lokale virtuelle maskiner (VM'er), [VM, der kører i det lokale miljø](../dev-tools/access-instances.md).
 
 <a name="see-also"></a>Se også
 --------
 
 [Få en evalueringskopi af Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
+
 
 

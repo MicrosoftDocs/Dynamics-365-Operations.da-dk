@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Det indtjeningsomkostningselement, der er valgt i løngruppen, bruges, når du o
 
 For at få den mest nøjagtige budgetplanlægning kan du oprette prognosepositioner ved at bruge oplysninger fra eksisterende stillinger i Microsoft Dynamics 365 for Operations, uanset om stillingen i øjeblikket er besat eller ubesat. 
 
-Funktionen **Tilføj eksisterende stillinger** viser alle stillinger for en organisation. Ved at angive datoen ** Pr. dato** kan du ændre listen over stillinger, så den indeholder de stillinger, der fandtes på en dato i fortiden, eller mere almindeligt i fremtiden (for eksempel start på næste budgetcyklus). Vælg en budgetplanlægningsproces og et budgetplanscenarie, vælg stillinger på listen, og klik derefter på **OK** for at oprette prognosestillinger for de valgte stillinger. Bemærk, at du kun kan oprette en prognosestilling for hver eksisterende stilling i en budgetplanlægningsproces og et scenarie. Du kan dog oprette flere versioner ved at tildele forskellige budgetplanscenarier. 
+Funktionen **Tilføj eksisterende stillinger** viser alle stillinger for en organisation. Ved at angive datoen **Pr. dato** kan du ændre listen over stillinger, så den indeholder de stillinger, der fandtes på en dato i fortiden, eller mere almindeligt i fremtiden (for eksempel start på næste budgetcyklus). Vælg en budgetplanlægningsproces og et budgetplanscenarie, vælg stillinger på listen, og klik derefter på **OK** for at oprette prognosestillinger for de valgte stillinger. Bemærk, at du kun kan oprette en prognosestilling for hver eksisterende stilling i en budgetplanlægningsproces og et scenarie. Du kan dog oprette flere versioner ved at tildele forskellige budgetplanscenarier. 
 
 Hvis budgetomkostningselementer er tildelt til stillingen i Personale, tildeles disse budgetomkostningselementer også til prognosestillingen, og standardbeløbene bruges. Feltet **Tildelt arbejder** på prognosestilling er angivet til navnet på den arbejder, der er tilknyttet stillingen, hvis en arbejder er tildelt. Dette felt er et simpelt tekstfelt. Der oprettes ikke noget direkte link. 
 

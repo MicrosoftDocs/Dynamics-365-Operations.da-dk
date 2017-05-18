@@ -3,7 +3,7 @@ title: Forpligtelser i den offentlige sektor i Frankrig
 description: "Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen."
 author: rschloma
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,19 +19,23 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 57bb3c122339b89c96f89faff1d741fa8aa2df2f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f41640dbede6ee371c6742c78cc948c138abb5f8
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 
+[!include[banner](../includes/banner.md)]
+
+
 Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen. 
 
-Når forpligtelser bruges som en del af budgetteringsprocessen, er hver købsaftale, indkøbsordre og en kreditorfaktura knyttet til mindst én forpligtelse. Forpligtelsen eftergives, når midlerne er frigivet fra købsaftalen, og indkøbsordren er bekræftet. Når en faktura ikke henviser til en indkøbsordre eller købsaftale, eftergives den forpligtelse, der er tilknyttet fakturaen, når fakturaen bogføres. En forpligtelse kan desuden angive en leverandør. Når der er angivet en leverandør, skal en indkøbsordre, købsaftale eller kreditorfaktura, der henviser til forpligtelsen, have samme leverandør. Forpligtelser er gyldige fra den dato, de blev oprettet, til slutningen af regnskabsåret, eller indtil de lukkes. Forpligtelser kan ikke overføres fra ét regnskabsår til næste. Du kan finde flere oplysninger under [Lukke forpligtelser](#close) i dette emne. 
+Når forpligtelser bruges som en del af budgetteringsprocessen, er hver købsaftale, indkøbsordre og en kreditorfaktura knyttet til mindst én forpligtelse. Forpligtelsen eftergives, når midlerne er frigivet fra købsaftalen, og indkøbsordren er bekræftet. Når en faktura ikke henviser til en indkøbsordre eller købsaftale, eftergives den forpligtelse, der er tilknyttet fakturaen, når fakturaen bogføres. En forpligtelse kan desuden angive en leverandør. Når der er angivet en leverandør, skal en indkøbsordre, købsaftale eller kreditorfaktura, der henviser til forpligtelsen, have samme leverandør. Forpligtelser er gyldige fra den dato, de blev oprettet, til slutningen af regnskabsåret, eller indtil de lukkes. Forpligtelser kan ikke overføres fra ét regnskabsår til næste.  
 >[!NOTE]
 >Feltet **Tilsagnstype** på siden **Købsaftale** er ikke relateret til forpligtelsesdokumentet. Dette felt angiver kun, om købsaftalen er baseret på en værdi eller et antal.
 
@@ -77,5 +81,7 @@ Forpligtelser skal lukkes manuelt.
 --------
 
 [Regnskab i den offentlige sektor i Frankrig](emea-fra-public-sector-accounting.md)
+
+
 
 

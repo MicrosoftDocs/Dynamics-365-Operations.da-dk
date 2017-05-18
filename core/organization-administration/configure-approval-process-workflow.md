@@ -3,7 +3,7 @@ title: Konfigurere en godkendelsesproces i en arbejdsgang
 description: "Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkendelsesproces i en arbejdsgang
+
+[!include[banner](../includes/banner.md)]
+
 
 Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen.
 
@@ -132,7 +136,7 @@ Det kan være en god ide at udpege en endelig godkender for scenarier, hvor godk
 
 ## <a name="set-a-time-limit"></a>Angive en tidsgrænse
 Udfør følgende trin, hvis godkendelsesprocessen skal fuldføres inden en bestemt tidsgrænse.
-| **Bemærk! **                                                                                                                                                |
+| **Bemærk!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De indstillinger, du vælger under udførelsen af disse trin, tilsidesætter de indstillinger, du har valgt i områderne **Tildeling** og **Eskalering** for hvert godkendelsestrin. |
 
@@ -155,13 +159,15 @@ Når en bruger tildeles et dokument, som skal godkendes, skal han eller hun beha
 4.  Markér afkrydsningsfeltet **Anmod om ændring**, hvis brugeren kan anmode om ændringer af dokumentet.
 5.  Marker afkrydsningsfeltet **Deleger**, hvis brugeren kan tildele dokumentet til en anden bruger til godkendelse.
 
-**Bemærk**: Afkrydsningsfeltet **Aktivér handlinger fra opgavelisten i Enterprise Portal ** frarådes.
+**Bemærk**: Afkrydsningsfeltet **Aktivér handlinger fra opgavelisten i Enterprise Portal** frarådes.
 
 ## <a name="configure-the-approval-steps"></a> Konfigurere godkendelsestrinene
 En godkendelsesproces består af godkendelsestrin. Fuldfør følgende procedure for at tilføje trin til godkendelsesprocessen og konfigurere trinene.
 1.  Dobbeltklik på godkendelsesprocessen i arbejdsgangseditoren. I arbejdsgangseditoren vises trinene i godkendelsesprocessen.
 2.  Du kan tilføje et godkendelsestrin ved at trække trinnet fra området **Arbejdsgangselementer** til lærredet.
-3.  Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurere et godkendelsestrin](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md).
+
+
 
 
 

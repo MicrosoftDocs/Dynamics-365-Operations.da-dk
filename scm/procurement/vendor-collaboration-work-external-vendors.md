@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d585ae0716a4bd9c3531e8639cd7c6b3cab780ac
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c8947f9335b3a2de83ab00bad1043ee14d35f2c8
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -57,8 +58,8 @@ De generelle indstillinger for kreditorsamarbejde i Dynamics 365 for Operations 
 
 Før du kan oprette brugerkonti til en ekstern kreditor, skal du konfigurere en kreditorkonto for at tillade dem at bruge kreditorsamarbejde. For at gøre dette skal du angive feltet **Aktivering af samarbejde** til aktivt under fanen **Generelt** på siden **Kreditorer**. Der er to indstillinger, du kan vælge:
 
--   **Aktiv (IO bekræftes automatisk) **- Indkøbsordrer bekræftes automatisk, når kreditoren accepterer dem uden ændringer.
--   **Aktiv (IO bekræftes ikke automatisk) **- Indkøbsordrer skal bekræftes manuelt af din organisation, når kreditoren har godkendt dem.
+-   **Aktiv (IO bekræftes automatisk)**- Indkøbsordrer bekræftes automatisk, når kreditoren accepterer dem uden ændringer.
+-   **Aktiv (IO bekræftes ikke automatisk)**- Indkøbsordrer skal bekræftes manuelt af din organisation, når kreditoren har godkendt dem.
 
 ### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Beslut, om kreditoren skal se oplysninger om pris.
 
@@ -142,7 +143,7 @@ I nedenstående tabel vises et eksempel på ændringerne i status og version, so
 | Kreditoren sender et **Accepteret med ændringer**-svar.                  | Status er stadig **Til eksternt gennemsyn**.                                                                                                                  |
 | Du kan foretage nogle ændringer, som kreditoren har anmodet om.                  | Statussen ændres til **Godkendt**.                                                                                                                        |
 | Du kan sende den nye version af indkøbsordren til kreditoren.                        | En ny version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**.                                      |
-| Kreditoren accepterer den nye version af indkøbsordren.                            | Status er stadig **Til eksternt gennemsyn, **medmindre kreditorkontoen er konfigureret til automatisk at angive indkøbsordren til tilstanden **Bekræftet**, når de accepterer. |
+| Kreditoren accepterer den nye version af indkøbsordren.                            | Status er stadig **Til eksternt gennemsyn,**medmindre kreditorkontoen er konfigureret til automatisk at angive indkøbsordren til tilstanden **Bekræftet**, når de accepterer. |
 
 Kreditorer behøver ikke at bekræfte indkøbsordren i grænsefladen for kreditorsamarbejde. De kan også sende en e-mail eller kommunikere deres accept af en IO via andre kanaler. Derefter kan du bekræfte ordren manuelt i Dynamics 365 for Operations. I dette tilfælde modtager du en advarsel om, at ordren er blevet bekræftet, selv om der intet svar er fra kreditoren. Indkøbsordren vises derefter i oversigten over bekræftelser som en åben bekræftet ordre, som ikke har nogen svar. Kreditoren har ikke længere mulighed for at bekræfte eller afvise indkøbsordren.  
 

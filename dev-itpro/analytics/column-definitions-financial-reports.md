@@ -1,16 +1,16 @@
 ---
 title: "Kolonnedefinitioner i økonomirapporter"
 description: "Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter.
 
@@ -150,7 +154,7 @@ Du kan bruge dialogboksen**Kolonneoverskrift** til at tilføje, redigere og slet
 
 1.  Åbn den kolonnedefinition, der skal ændres, i Report Designer.
 2.  Marker en celle i overskriftsrækken.
-3.  I menuen **Rediger** skal du klikke på **Indsæt række**. Den nye række indsættes over den række, du valgte i trin 2. **Bemærk! **Hvis du har fire eller flere rækker i rapporthoveder i en rapport, hvor hovederne overlapper, når rapporten udlæses til et Excel-regneark. Hvis du vil vise alle overskrifter i rapporten, skal du øge den øverste margen i rapportdefinitionen.
+3.  I menuen **Rediger** skal du klikke på **Indsæt række**. Den nye række indsættes over den række, du valgte i trin 2. **Bemærk!**Hvis du har fire eller flere rækker i rapporthoveder i en rapport, hvor hovederne overlapper, når rapporten udlæses til et Excel-regneark. Hvis du vil vise alle overskrifter i rapporten, skal du øge den øverste margen i rapportdefinitionen.
 
 ### <a name="delete-a-column-header-row"></a>Slette en kolonneoverskriftsrække
 
@@ -320,9 +324,9 @@ Cellen **Udskriftsstyring** kan indeholde koder, der justerer visnings- eller ud
 4.  Vælg en indstilling i feltet **Betingede udskriftsindstillinger**. **(Ingen)** er som standard valgt. Du kan kun vælge én betinget udskriftskode ad gangen.
 5.  Klik på **OK**.
 
-**Tip!** du kan også angive udskriftskoderne direkte i cellen **Udskriftsstyring**. Adskil flere udskriftsstyringskoder med et komma.
+> [!TIP]
+> Du kan også angive udskriftskoderne direkte i cellen **Udskriftsstyring**. Adskil flere udskriftsstyringskoder med et komma.
 
-### 
 
 ## <a name="column-types"></a>Kolonnetyper
 Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med værdien i rækken **Kolonnetype** i kolonnedefinitionen. Hver kolonnedefinition skal indeholde mindst én beskrivelseskolonne (**DESC**) og én beløbskolonne (**FD**, **WKS** eller **CALC**). **Bemærk:** kolonnetypekoderne gælder ikke for alle regnskabssystemer. Hvis du vælger en type, der ikke er gyldig for dit regnskabssystem, er denne kolonne tom i rapporten.
@@ -507,7 +511,8 @@ En rapport med flere valutaer kan vise beløb i den naturlige (lokale) valuta, d
 -   **Visning af valuta** – Angiv typen af valuta (fysisk, funktionel eller rapportering), som posteringerne vises i. Denne funktion kaldes undertiden valutaomregning. Valutaomregning er muligheden for at rapportere finansbeløb i en valuta, der ikke nødvendigvis er firmaets funktionelle valuta for firmaet eller den valuta, som transaktionen blev angivet i.
 -   **Valutafilter** – Angiv et valutafilter. Det er kun transaktioner, der er angivet i den valgte valuta, der vises i rapporten.
 
-**Bemærk:** for at oprette rapporter, der benytter flere forskellige valutaer, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer** på fanen **Rapport** i rapportdefinitionen. Benyt nedenstående fremgangsmåde for at bestemme en virksomheds funktionelle valuta.
+> [!NOTE]
+> For at oprette rapporter, der benytter flere forskellige valutaer, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer** under fanen **Rapport** i rapportdefinitionen. Benyt nedenstående fremgangsmåde for at bestemme en virksomheds funktionelle valuta.
 
 1.  Klik på **Firmaer** i menuen **Firma** i Report Designer.
 2.  I dialogboksen **Firmaer** skal du vælge et firma og derefter klikke på **Vis**.
@@ -519,7 +524,8 @@ En rapport med flere valutaer kan vise beløb i den naturlige (lokale) valuta, d
 2.  Dobbeltklik på cellen **Visning af valuta** i den relevante **FD**-kolonne, og vælg derefter indstillingen for visning af valutaoplysninger: **Naturlig/oprindelig valuta**, **Funktionel valuta fra firmaoplysninger** eller rapporteringsvalutaen.
 3.  Dobbeltklik på cellen **Valutafilter** i den relevante **FD**-kolonne, og vælg derefter den relevante valutakode på listen. Det er kun transaktioner, der er angivet i denne valuta, der vises i rapporten.
 
-**Bemærk:** De indstillinger, der er beskrevet her, kan variere afhængigt af ERP-systemet. Du kan finde flere oplysninger i [dokumentationen til Microsoft ERP-systemet](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> De indstillinger, der er beskrevet her, kan variere afhængigt af ERP-systemet. Du kan finde flere oplysninger i [dokumentationen til Microsoft ERP-systemet](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Eksempel på cellerne Visning af valuta og Valutafilter
 
@@ -584,5 +590,7 @@ Du kan dividere beløbet i en kolonne med et angivet antal perioder. Formlen **B
 [Rækkedefinitioner i økonomirapportering](row-definitions-financial-reporting.md)
 
 [Avancerede formateringsindstillinger i økonomirapportering](advanced-formatting-options-financial-reporting.md)
+
+
 
 

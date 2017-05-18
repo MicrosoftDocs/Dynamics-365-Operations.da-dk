@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Alle tilpasninger af enhver type, som en bruger foretager i Dynamics 365 for Ope
 ## <a name="systemwide-options-for-the-current-user"></a>Systemindstillinger for den aktuelle bruger
 I navigationspanelet finder du et tandhjulsbillede, der kaldes menuknappen **Indstillinger**. Når du åbner menuen **Indstillinger**, vises en række valgmuligheder. Hvis du vælger **Indstillinger**, åbnes brugersiden **Indstillinger**. Der findes du fire indstillingsfaner: **Visuel**, **Indstillinger**, **Firma** og **Arbejdsgang**.
 
--   **Visuel: **Bruges til at vælge et farvetema og standardstørrelsen på elementer på siderne.
+-   **Visuel:**Bruges til at vælge et farvetema og standardstørrelsen på elementer på siderne.
 -   **Indstillinger:** Her kan du angive standarder, for hver gang du åbner Dynamics 365 for Operations, herunder firma, første side og standardtilstand for visning/redigering (der bestemmer, om en side er låst til visning eller åben til redigering, hver gang du åbner den). Du kan også finde sprog, tidszone og dato, klokkeslæt samt formatindstillinger for tal. Slutteligt indeholder denne side en række forskellige indstillinger, der varierer fra version til version.
--   **Firma: **Bruges til at angive dit bruger-id og andre firmarelaterede indstillinger.
--   **Arbejdsgang: **Dette er stedet, hvor du kan vælge indstillinger, der er relateret til arbejdsgangen.
+-   **Firma:**Bruges til at angive dit bruger-id og andre firmarelaterede indstillinger.
+-   **Arbejdsgang:**Dette er stedet, hvor du kan vælge indstillinger, der er relateret til arbejdsgangen.
 
 ## <a name="implicit-personalizations"></a>Implicitte tilpasninger
 Implicitte tilpasninger er de tilpasninger, som du udfører ved blot at interagere med visse kontrolelementer, som husker deres aktuelle tilstand for synlighed. 

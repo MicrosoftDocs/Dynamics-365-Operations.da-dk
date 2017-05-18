@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -553,7 +554,7 @@ I henhold til de aktuelle sikkerhedsstandarder, skal følgende indstillinger bru
 -   Kun TLS (Transport Layer Security) version 1.2 (eller den aktuelle højeste version) skal aktiveres og anvendes. **Bemærk:** Som standard er SSL og alle version af TLS, undtagen TLS 1.2, deaktiveret. Hvis du vil redigere eller aktivere disse værdier, skal du følge disse trin:
     1.  Tryk på Windows-logotasten + R for at åbne et **Kør**-vindue.
     2.  I feltet **Åbn** skal du skrive **Regedit** og derefter klikke på **OK**.
-    3.  Hvis meddelelsesboksen **User Account Control** vises, skal du klikke på **Ja**.
+    3.  Hvis meddelelsesboksen **Kontrol af brugerkonti** vises, skal du klikke på **Ja**.
     4.  I vinduet **Registreringseditor** skal du gå til **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Følgende taster er indsat automatisk for kun at tillade TLS 1.2:
         -   TLS 1.2Server:Enabled=1
         -   TLS 1.2Server:DisabledByDefault=0

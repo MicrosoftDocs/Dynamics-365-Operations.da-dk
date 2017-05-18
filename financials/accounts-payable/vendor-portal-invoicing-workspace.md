@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 822e621f22f8af63b2a827dcc50a6b0ac68d3e21
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7aebcdf0578d931d326420b42e2b220407049bc6
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
 
@@ -43,7 +47,7 @@ Arbejdsområde for kreditorsamarbejdsfakturering
 Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
 ### <a name="tabular-lists"></a>Tabellister
 
-I sektionen **Tabellister **er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
+I sektionen **Tabellister**er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
 Alle kreditorfakturaer (listeside)
 -----------------------------
 
@@ -55,6 +59,8 @@ Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kredito
 
 
 
-Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 09c7fce1fa83d6a8d6391db667b7260d2a199390
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: bca8431e88ea73060c75774ae55611f95016e9a1
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -88,7 +89,7 @@ Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat ell
 4.  Vælg **Opret et nyt skift**.
 5.  Vælg **Angiv startbeløb**.
 6.  Angiv startbeløbet for alle kasseapparater i den butik, som er en del af det delte skift, og klik derefter på **Gem**.
-    -   For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation **for at aktivere hardwarestationen.
+    -   For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation**for at aktivere hardwarestationen.
     -   For at føje en pengeskuffe til et bestemt kasseapparat, skal du bruge handlingen **Åbn kasseskuffe**.
     -   Fortsæt indtil alle kasseapparater i det delte skift har deres del af startbeløbet.
 

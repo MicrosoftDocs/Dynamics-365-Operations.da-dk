@@ -3,7 +3,7 @@ title: "Frarådede funktioner"
 description: "Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet fra Dynamics 365 for Operations. Det indeholder også funktioner, som blev frarådet i Dynamics AX 7.0 udgivelser."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Frarådede funktioner
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet fra Dynamics 365 for Operations. Det indeholder også funktioner, som blev frarådet i Dynamics AX 7.0 udgivelser.
 
@@ -472,7 +476,17 @@ Datapartitioner giver en logisk adskillelse af dataene i Microsoft Dynamics AX-d
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Årsagen til fjernelsen       | Dynamics AX-klientoplevelsen er blevet ændret for at forbedre brugervenligheden på tværs af flere platforme og enheder.                      |
 | Erstattet af en anden funktion? | Den nye webklient er baseret på skrivebordsformularens metadata- og programmeringsmodel, der er blevet ændret for at give plads til en omfattende webplatform. |
-| Påvirkede moduler             | Alle                                                                                                                                    |
+| Påvirkede moduler             | Alt                                                                                                                                    |
+
+### <a name="direct-database-connection"></a>Direkte databaseforbindelse
+
+I Dynamics AX 2012 R3 kunne Retail Modern POS forbindes direkte med kanaldatabasen på lignende måde som Enterprise POS. Dette var ud over den almindelige kommunikationsmetode for Retail Modern POS-kommunikation via Retail Server.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Årsagen til fjernelsen       | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Dynamics 365 for Operations medfører denne funktion nu flere problemer, end den løser. |
+| Erstattet af en anden funktion? | Nr. Kun standard Retail Server-kommunikation understøttes nu.    |
+| Påvirkede moduler             | Kanaldatabase/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>Nederlandsk SWIFT MT940
 
@@ -661,8 +675,18 @@ Med denne funktion kan du ændre navnet på en af de tre standardproduktdimensio
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Årsagen til fjernelsen       | Den aktuelle version af Dynamics AX understøtter ikke ændringer af etiketter på kørselstidspunktet. |
-| Erstattet af en anden funktion? | Nej                                                                            |
+| Erstattet af en anden funktion? | Nr.                                                                            |
 | Påvirkede moduler             | Administration af produktoplysninger                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Retail Server-forbindelse ved hjælp af HTTP
+
+I Dynamics AX 2012 R3 kunne Retail Server fungere ved hjælp af HTTP-kommunikation (ikke-sikret). Dette var ud over standardkommunikationen via HTTPS.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Årsagen til fjernelsen       | På grund af nye sikkerhedskrav understøttes nu kun sikret kommunikation ved hjælp af TLS 1.2 (eller nyere, afhængigt af tilgængelighed). Det selvbetjente installationsprogram konfigurerer automatisk computeren til denne kommunikation. |
+| Erstattet af en anden funktion? | Nr. Kun standard HTTPS-kommunikation understøttes nu.                                                                           |
+| Påvirkede moduler             | Detailserver                                                |
 
 ### <a name="role-center-pages"></a>Sider for rollebaserede områder
 
@@ -784,6 +808,8 @@ Lønoplysninger personale
 | Årsagen til fjernelsen       | Denne funktion er blevet erstattet af en anden funktion.                                    |
 | Erstattet af en anden funktion? | Management Reporter (med navnet **Økonomirapportering** i den aktuelle version af Dynamics AX) |
 | Påvirkede moduler             | Finans                                                                              |
+
+
 
 
 
