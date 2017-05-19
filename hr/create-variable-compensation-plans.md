@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Beregning af beløb i variabel kompensation for dine medarbejdere kan være base
 ## <a name="variable-compensation-components"></a>Komponenter i variabel kompensation
 ### <a name="create-compensation-types"></a>Oprette kompensationstyper
 
-**Variable kompensationstyper **er en nødvendig komponent. Variable kompensationstyper giver dig mulighed for at de former for variabel kompensation, som organisationen giver. Desuden kan du angive, om kompensationen er i rede penge eller i en ikke-pengemæssige form, f.eks. aktier.
+**Variable kompensationstyper**er en nødvendig komponent. Variable kompensationstyper giver dig mulighed for at de former for variabel kompensation, som organisationen giver. Desuden kan du angive, om kompensationen er i rede penge eller i en ikke-pengemæssige form, f.eks. aktier.
 
 ### <a name="describe-vesting-rules"></a>Beskrive fordelingsregler
 
@@ -53,17 +54,17 @@ Den **variable lønstruktur** indeholder regler, beregningsmetoder og standardv�
 Størrelsen af den variable bonus kan være baseret på enten en procentdel af medarbejderens almindelige grundlæggende indtjening eller et angivet antal enheder.
 
 -   Vælg indstillingen **Procent af basis** for at indtaste en standardprocent, og angiv, om grundlaget skal være medarbejderens faste lønsats eller kontrolpunktet for medarbejderens kompensationsniveau. Kompensationsniveauet er angivet på medarbejderens job. Et af referencepunkterne i kompensationsstrukturen kan angives som referencepunktet på den faste kompensationsplan. Systemet bruger kompensationsniveauet fra medarbejderens job og opretter krydshenvisninger til det med det referencepunkt, der er angivet på medarbejderens faste lønstruktur for at finde referencepunktbeløbet for medarbejderens kompensationsniveau. Referencepunkbeløbet kan derefter bruges i stedet for medarbejderens faste lønsats som grundlag for bonussen.
--   Vælg indstillingen** Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til hans eller hendes fast løn-struktur (eksempelvis 500 enheder af 1 USD). Kontrolelementet for en til en-relationen kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontantbaseret plan ved hjælp af antallet enheder, er denne indstilling automatisk låst til **Ja**, og enhedsværdien er **1.0000**.
+-   Vælg indstillingen**Antal enheder** for at angive et standardantal enheder, værdien af hver enkelt enhed og valutaen for enhedsværdien, hvis kompensationsplanen gælder for en ikke-kontant bonus (eksempelvis 200 aktieenheder, som værdiansættes til 40 USD) eller kun antallet af enheder, hvis kompensationsplanen er for en kontantbonus. For en kontantbonus modtager medarbejderen det angivne antal enheder af den valuta, der bruges til hans eller hendes fast løn-struktur (eksempelvis 500 enheder af 1 USD). Kontrolelementet for en til en-relationen kan bruges til at angive, om der er en direkte én til én-tilknytning mellem antallet af enheder og enhedsværdien. Når du opretter en variabel lønstruktur for en kontantbaseret plan ved hjælp af antallet enheder, er denne indstilling automatisk låst til **Ja**, og enhedsværdien er **1.0000**.
 
 Med indstillingen **Ansættelsesregel** kan du angive, om alle medarbejdere skal have den samme stigning uanset datoen for deres ansættelse (**Ansættelsesregel** = **Ingen**), eller om medarbejderne skal modtage en procentdel af bonussen, der er baseret på længden af deres ansættelse i løbet af cyklussen (**Ansættelsesregel** = **Procent**). 
 
 **Regulering** giver dig mulighed for at justere en medarbejders bonus baseret på ydeevnen (performance) af medarbejderens afdeling. Performanceværdier kan indstilles for hver afdeling på siden **Afdelinger** under **Relaterede formularer** &gt; **Kompensation** &gt; **Ydeevne**. Den bonus, som medarbejdere i den pågældende afdeling modtager, afhænger af værdien i feltet **Opnået procent af mål**, der angiver afdelingens ydeevne:
 
--   Hvis afdelingens ydeevne er 100 procent, medtages bonussen for medarbejderen i den pågældende afdeling med den procentdel, der er angivet i feltet** Udbetaling ved 100 %**.
+-   Hvis afdelingens ydeevne er 100 procent, medtages bonussen for medarbejderen i den pågældende afdeling med den procentdel, der er angivet i feltet**Udbetaling ved 100 %**.
 -   Hvis afdelingens ydeevne er mere end 100 procent, tilføjer systemet den procentdel, der er angivet i feltet **Pr. 1 % over målsætningen** til den procentdel, der er angivet i feltet **Udbetaling ved 100 %**, indtil den værdi, der er angivet i feltet **Højst tilladte udbetaling**, er nået.
 -   Hvis afdelingens ydeevne er mere end 100 procent, trækker systemet den procentdel fra, der er angivet i feltet **Pr. 1 % under målsætningen** fra den procentdel, der er angivet i feltet **Udbetaling ved 100 %**, indtil den værdi, der er angivet i feltet **Lavest tilladte udbetaling**, er nået.
 
-Du kan angive** toleranceniveauer** for grænseværdier i procent, så der vises en advarsel, hvis reguleringen medfører, at procentdelen er uden for procentdelen for grænseværdien. 
+Du kan angive**toleranceniveauer** for grænseværdier i procent, så der vises en advarsel, hvis reguleringen medfører, at procentdelen er uden for procentdelen for grænseværdien. 
 
 Som standard søger systemet efter den afdeling, der er angivet for medarbejderens stilling. Men prisen for nogle medarbejdere kan afhænge af ydeevnen for flere afdelinger. I dette tilfælde kan de forskellige afdelinger og procentdelen af den bonus, der tildeles ydeevnen for hver afdeling, angives ved medarbejderens tilmelding til variabel kompensation. Du kan finde flere oplysninger i afsnittet "Tilmelding til variabel kompensation", der følger nedenfor. 
 

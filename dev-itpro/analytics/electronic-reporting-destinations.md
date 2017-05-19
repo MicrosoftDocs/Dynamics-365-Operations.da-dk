@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ Forskellige typer destinationer understøttes. Du kan deaktivere eller aktivere 
 
 ### <a name="email-destination"></a>Maildestination
 
-Indstil **Aktiveret **til **Ja** for at sende en outputfil via mail. Når denne indstilling er aktiveret, kan du angive e-mailmodtagere og redigere e-mailens emne og brødtekst. Du kan konfigurere konstanttekster til e-mailens emne og brødtekst, eller du kan bruge ER formler til dynamisk at oprette e-mailtekster. Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan udføres på samme måde, som funktionen Udskriftsstyring i Dynamics 365 for Operations udfører den. Du kan også oversætte en e-mailadresse ved hjælp af en direkte reference til ER-konfigurationen via en formel.
+Indstil **Aktiveret**til **Ja** for at sende en outputfil via mail. Når denne indstilling er aktiveret, kan du angive e-mailmodtagere og redigere e-mailens emne og brødtekst. Du kan konfigurere konstanttekster til e-mailens emne og brødtekst, eller du kan bruge ER formler til dynamisk at oprette e-mailtekster. Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan udføres på samme måde, som funktionen Udskriftsstyring i Dynamics 365 for Operations udfører den. Du kan også oversætte en e-mailadresse ved hjælp af en direkte reference til ER-konfigurationen via en formel.
 
 ### <a name="email-address-types"></a>E-mailadressetyper
 
@@ -92,7 +93,7 @@ Brug denne e-mailtype, hvis den konfiguration, du bruger, har en node i datakild
 
 ### <a name="archive-destination"></a>Arkivdestination
 
-Du kan bruge denne indstilling til at sende output til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Indstil **Aktiveret** til **Ja **for at sende output til en destination, der er defineret af den valgte dokumenttype. Kun dokumenttyper, hvor gruppen er indstillet til **Fil**, kan vælges. Du definerer dokumenttyper i **Virksomhedsadministration** &gt; **Dokumentstyring** &gt; **Dokumenttyper**. Konfigurationen for ER-destinationer svarer til konfigurationen for dokumentstyringssystemet.
+Du kan bruge denne indstilling til at sende output til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Indstil **Aktiveret** til **Ja**for at sende output til en destination, der er defineret af den valgte dokumenttype. Kun dokumenttyper, hvor gruppen er indstillet til **Fil**, kan vælges. Du definerer dokumenttyper i **Virksomhedsadministration** &gt; **Dokumentstyring** &gt; **Dokumenttyper**. Konfigurationen for ER-destinationer svarer til konfigurationen for dokumentstyringssystemet.
 
 [![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 

@@ -3,7 +3,7 @@ title: Metode til samlet omkostningstildeling
 description: Denne artikel indeholder retningslinjer for brug af samlet omkostningstildeling. Samlet omkostningstildeling er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Metode til samlet omkostningstildeling
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder retningslinjer for brug af samlet omkostningstildeling. Samlet omkostningstildeling er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen.
 
@@ -36,6 +40,11 @@ Samlet omkostningstildeling (TCA) er en metode til beregning af omkostningerne m
 Her er nogle af retningslinjerne for brug af TCA for samprodukter:
 
 -   Hvis du indstiller skyderen **Samlet omkostningstildeling** til **Ja** for en formelversion, skal samprodukter have en kostpris, der er større end 0 (nul). Værdien kan hentes fra den aktive omkostningsversion for det samme sted eller til det første websted for en formel, der ikke er lokationsspecifik. Denne betingelse valideres, når formlen er godkendt.
+
+    -   Du behøver ikke at angive omkostningsfordelingsprocenter for samprodukter manuelt. I stedet opretter systemet automatisk omkostningsfordelingsprocenten som gennemsnittet af de aktive kostpriser for samprodukter. 
+    -   Du behøver ikke at angive standardkostpris for ikke-standardiserede omkostningselementer, der er samprodukter. Der findes to typer efterkalkulationsversioner i systemet: standardkostpris og planlagt omkostning 
+    -   Hvis en vare ikke vurderes af metoden til evaluering af standardomkostninger, anbefales det, at du bruger en aktiv kostpris i versionen med planlagte omkostninger. Denne pris bruges til forkalkulation, f.eks., styklistekalkulation, forkalkulation af produktionsomkostninger og reserveprincipprisen i lagervurderingsprocessen. 
+
 -   Hvis du indstiller skyderen **Samlet omkostningstildeling** til **Ja** for formelversionen og følgende betingelser er opfyldt, er metoden til omkostningstildeling **TCA**, og procentdelen af omkostningstildeling er uændret:
     -   Du har tilføjet samprodukter.
     -   Du har brugt en anden metode til omkostningstildeling for samprodukterne.
@@ -53,6 +62,8 @@ Feltet **Omkostningstildeling for biprodukt** på siden **Samprodukter** er et o
 -   **Procent** – Kostbeløbet beregnes som en procentdel af de samlede omkostninger til råmaterialer, der forbruges i produktionen. Den procentsats, der bruges til beregning, angives i feltet.
 -   **Pr. serie** – Kostbeløbet beregnes som et beløb pr. standardbatchstørrelse af produktionsordren. Dette beløb er uafhængig af den mængde, der er rapporteret i produktionen. Det beløb, der bruges til beregningen, angives i feltet.
 -   **Pr. antal** – Kostbeløbet beregnes som et beløb pr. rapporterede antal af formelvaren i produktionen. Det beløb, der bruges til beregningen, angives i feltet.
+
+
 
 
 

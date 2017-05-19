@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: ac8d6c064ca826cc1c2fed07578ca9ce0c66ef66
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 335a0d7ca466028e8b157cb4e04df7d0f4880e73
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -158,11 +159,11 @@ Alle datakilder for den aktuelle ER-komponent (en model eller et format), der er
 
 #### <a name="path"></a>Sti
 
-Når et udtryk refererer til en struktureret datakilde, kan du bruge definitionen af stien til at vælge et bestemt primitivt element i datakilden. Tegnet en prik (.) bruges til at adskille de enkelte elementer i en struktureret datakilde. For eksempel indeholder den aktuelle ER-datamodel datakilden **InvoiceTransactions**, der returnerer listen med poster. Poststrukturen** InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, der returnerer numeriske værdier. Et udtryk til at beregne det fakturerede beløb kan defor være udformet således: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
+Når et udtryk refererer til en struktureret datakilde, kan du bruge definitionen af stien til at vælge et bestemt primitivt element i datakilden. Tegnet en prik (.) bruges til at adskille de enkelte elementer i en struktureret datakilde. For eksempel indeholder den aktuelle ER-datamodel datakilden **InvoiceTransactions**, der returnerer listen med poster. Poststrukturen **InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, der returnerer numeriske værdier. Et udtryk til at beregne det fakturerede beløb kan defor være udformet således: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
 
 #### <a name="functions"></a>Funktioner
 
-Det næste afsnit beskriver de funktioner, der kan bruges i ER-udtryk. Alle datakilder i udtrykskonteksten (aktuel ER-datamodel eller ER-format) samt konstanter kan bruges som parametre til opkaldsfunktioner i henhold til listen over opkaldsfunktionsargumenter. For eksempel indeholder den aktuelle ER-datamodel datakilden **InvoiceTransactions**, der returnerer listen med poster. Poststrukturen** InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, der returnerer numeriske værdier. Et udtryk til at beregne det fakturerede beløb kan derfor være udformet således ved at bruge den indbyggede ER-afrundingsfunktion: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
+Det næste afsnit beskriver de funktioner, der kan bruges i ER-udtryk. Alle datakilder i udtrykskonteksten (aktuel ER-datamodel eller ER-format) samt konstanter kan bruges som parametre til opkaldsfunktioner i henhold til listen over opkaldsfunktionsargumenter. For eksempel indeholder den aktuelle ER-datamodel datakilden **InvoiceTransactions**, der returnerer listen med poster. Poststrukturen **InvoiceTransactions** indeholder felterne **AmountDebit** og **AmountCredit**, der returnerer numeriske værdier. Et udtryk til at beregne det fakturerede beløb kan derfor være udformet således ved at bruge den indbyggede ER-afrundingsfunktion: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**
 
 ## <a name="supported-functions"></a>Understøttede funktioner
 I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at designe ER-datamodeller og ER-rapporter. Denne liste over funktioner er ikke fast og kan udvides af udviklere. Du kan se listen over funktioner, du kan bruge, i ruden med funktioner i ER-formeldesigneren.
@@ -257,12 +258,12 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <tr class="odd">
 <td>ORDERBY (liste [udtryk 1, udtryk, 2, ...])</td>
 <td>Returner den angivne liste sorteret efter de angivne argumenter, der kan defineres som udtryk.</td>
-<td>Når <strong>Vendor </strong>er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong> ORDERBY (Vendors, Vendors.'name()')</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
+<td>Når <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (liste)</td>
 <td>Returner den angivne liste i omvendt rækkefølge.</td>
-<td>Når <strong>Vendor </strong>er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returnere en liste over kreditorer, der er sorteret efter navn i faldende rækkefølge.</td>
+<td>Når <strong>Vendor</strong>er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returnere en liste over kreditorer, der er sorteret efter navn i faldende rækkefølge.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (liste, betingelse)</td>
@@ -397,7 +398,7 @@ Felterne Label og Beskrivelse returnerer på kørselstidspunktet værdier basere
 
 | Funktion             | Beskrivelse                                                                                                                                                                                                                                     | Eksempel                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| NULLCONTAINER (liste) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post. **Bemærk: **Denne funktion er forældet. Brug **EMPTYRECORD** i stedet.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
+| NULLCONTAINER (liste) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post. **Bemærk:**Denne funktion er forældet. Brug **EMPTYRECORD** i stedet.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
 | EMPTYRECORD (post) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post. **Bemærk:** En **null**-post er en post, hvor alle felter har en tom værdi (**0** \[nul\] for tal, en tom streng for strenge osv). | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen.   |
 
 ### <a name="text-functions"></a>Tekstfunktioner
@@ -527,7 +528,7 @@ Se opgaveguiden **Bruge ER-data af formatoutput til optælling og sammenlægning
 
 SUMIFS (nøglestreng for sammenlægning, kriterieinterval 1-streng, kriterieværdi 1-streng \[,kriterieinterval 2-streng, kriterieværdi 2-streng, …\])
 
-Returnerer summen af værdierne i noder (med navn, der er defineret som en nøgle) af XML, som er blevet indsamlet under denne kørsel af format, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer nul værdi, når flaget **Detaljer om indsamlingsoutput **for de aktuelle filer er slået fra.
+Returnerer summen af værdierne i noder (med navn, der er defineret som en nøgle) af XML, som er blevet indsamlet under denne kørsel af format, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer nul værdi, når flaget **Detaljer om indsamlingsoutput**for de aktuelle filer er slået fra.
 
 SUMIF (nøglestreng for sammenlægning, kriterieintervalstreng, kriterieværdistreng)
 
@@ -543,7 +544,7 @@ Returnerer antal XML-noder, som er blevet indsamlet under denne kørsel af forma
 
 COLLECTEDLIST (kriterieinterval 1-streng, kriterieværdi 1-streng \[, kriterieinterval 2-streng, kriterieværdi 2-streng, ...\])
 
-Returnerer en liste over værdier af XML-noder, som er blevet indsamlet under denne kørsel af format, og som opfylder de angivne betingelser (interval og værdi). Returnerer en tom liste, når flaget **Detaljer om indsamlingsoutput **for de aktuelle filer er slået fra.
+Returnerer en liste over værdier af XML-noder, som er blevet indsamlet under denne kørsel af format, og som opfylder de angivne betingelser (interval og værdi). Returnerer en tom liste, når flaget **Detaljer om indsamlingsoutput**for de aktuelle filer er slået fra.
 
 ### <a name="other-business-domainspecific-functions"></a>Andre (forretningsdomænespecifikke) funktioner
 
@@ -553,7 +554,7 @@ Returnerer en liste over værdier af XML-noder, som er blevet indsamlet under de
 | ROUNDAMOUNT (tal, decimaler, afrundingsregel)                                       | Afrund det angivne beløb i henhold til den angivne afrundingsregel og det angivne antal decimaler. **Bemærk:** Afrundingsreglen skal angives som en værdi af Dynamics 365 for Operations **RoundOffType**-fasttekst.                          | Hvis **model.RoundOff**-parameter er indstillet til ****Downward****, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.78**. Hvis **model.RoundOff**-parameter er indstillet til enten **Normal** eller **Oprunding**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.79**. |
 | CURCredRef (cifre)                                                              | Returner en kreditors reference, baseret på cifrene i det angivne fakturanummer.                                                                                                                                                                                  | **CURCredRef ("VEND-200002")** returnerer **"2200002"**.                                                                                                                                                                                                                                                         |
 | MOD\_97 (cifre)                                                                 | Returner en kreditors reference som et MOD97-udtryk, baseret på cifrene i det angivne fakturanummer.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** returnerer **"20000285"**.                                                                                                                                                                                                                                                           |
-| ISOCredRef (cifre)                                                              | Returner en ISO-kreditors reference, baseret på cifrene og bogstaverne i det angivne fakturanummer. **Bemærk: **For at eliminere symboler fra alfabeter, der ikke er ISO-kompatible, skal inputparameteren oversættes, før den videresendes til denne funktion. | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
+| ISOCredRef (cifre)                                                              | Returner en ISO-kreditors reference, baseret på cifrene og bogstaverne i det angivne fakturanummer. **Bemærk:**For at eliminere symboler fra alfabeter, der ikke er ISO-kompatible, skal inputparameteren oversættes, før den videresendes til denne funktion. | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
 | CN\_GBT\_AdditionalDimensionID (streng, tal)                                  | Hent yderligere økonomisk dimensions-id Dimensioner er repræsenteret i denne streng som id'er, der er adskilt af kommaer. Tal definerer nummerseriekode til den ønskede dimension i denne streng.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) returnerer “CC”                                                                                                                                                                                                                                      |
 | GetCurrentCompany ()                                                             | Returnerer koden for den aktuelt registrerede virksomhed.                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                               |
 | CH\_BANK\_MOD\_10 (cifre)                                                       | Returnerer en kreditors reference som et MOD10-udtryk, der er baseret på cifrene i det angivne fakturanummer.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") returnerer 3                                                                                                                                                                                                                                                                   |

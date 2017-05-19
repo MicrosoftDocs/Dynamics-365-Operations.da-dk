@@ -19,10 +19,11 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 7466ea907b269eed308b980e558ed387e0d343bc
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d325ec023914a4202c31faa73b5cf45d3eb511f3
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,13 +55,13 @@ Du kan også bruge siden **Budgetanalyse** til at vælge en økonomisk dimension
 ## <a name="what-transaction-details-are-available-on-the-budget-analysis-page"></a>Hvilke transaktionsdetaljer er tilgængelige på siden Budgetanalyse?
 Du kan vælge et element i gitteret og rulle ned for at se detaljer om følgende transaktioner:
 
--   **Revideret budgetbeløb **(summen af oprindeligt budget, revision, overførsel og overførte beløb)
+-   **Revideret budgetbeløb**(summen af oprindeligt budget, revision, overførsel og overførte beløb)
 -   **Faktiske udgifter** (summen af de debiteringer og krediteringer, der blev bogført i forhold til de økonomiske dimensionsværdier)
 -   **Behæftelser** og **Budgetreservationer** (herunder oprindelige og eftergivelse af posteringer)
 
 ### <a name="tips"></a>Tip!
 
--   Du kan få vist de reviderede budgetregisterposter for budgetanalyseforespørgslen ved at klikke på **Opdateret budget **i handlingsruden. Budgettyperne for de reviderede budgetregisterposter omfatter det oprindelige budget, overførsel, flytning og revision. Disse beløb kommer fra tabellerne med budgetregisterposterne.
+-   Du kan få vist de reviderede budgetregisterposter for budgetanalyseforespørgslen ved at klikke på **Opdateret budget**i handlingsruden. Budgettyperne for de reviderede budgetregisterposter omfatter det oprindelige budget, overførsel, flytning og revision. Disse beløb kommer fra tabellerne med budgetregisterposterne.
 -   Du kan få vist de faktiske udgifter for budgetanalyseforespørgslen ved at klikke på **Faktisk**. Siden har indflydelse på den oprindelige dokumentside, f.eks. en avanceret finanspost. Disse beløb kommer fra tabellerne med finanskontoposterne.
 -   Du kan få vist behæftelser og refererede transaktioner for budgetanalyseforespørgslen ved at klikke på **Behæftelse**. Siden har indflydelse på indkøbsordren for den valgte postering. Disse beløb kommer fra tabellerne til budgetkildesporing.
 -   Du kan få vist budgetreservationer og refererede transaktioner for budgetanalyseforespørgslen ved at klikke på **Budgetreservation**. Siden har indflydelse på indkøbsrekvisitionen for den valgte postering. Disse beløb kommer fra tabellerne til budgetkildesporing.
@@ -72,7 +73,7 @@ Følgende tabel beskriver forskellene mellem disse sider.
 
 |                                                                                                                         |                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Siden Statistik for budgetstyring **                                                                                      | **Siden Budgetanalyse **                                                                    |
+| **Siden Statistik for budgetstyring**                                                                                      | **Siden Budgetanalyse**                                                                    |
 | Viser budgetsaldiene for en budgetcyklus og en budgetmodel for én enkelt økonomisk dimensionsværdi eller budgetgruppe. | Viser de samlede budgetbeløb for flere økonomiske dimensionsværdier på samme tid. |
 | Medtager data fra både bekræftede og ubekræftede behæftelser.                                                         | Medtager kun data fra bekræftede behæftelser.                                             |
 | Medtager kun data fra udgiftskonti.                                                                               | Medtager data fra både indtægts- og udgiftskonti.                                       |

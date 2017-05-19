@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 04e0c066511c1fedf33784944441326201fc2df8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4caef8eb4d11ad5d2ba1ce0e23d869c0b26b5466
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -99,7 +100,7 @@ Dernæst kan du under fanen **Tildel budgetmodeller** tildele budgetmodeller for
 Dernæst skal du under fanen **Definer budgetstyringsregler** oprette specifikke regler baseret på budgetstyringsaktiverede økonomiske dimensioner. Hvis der for eksempel er fokus på udgifterne eller udgiftsintervallet for en afdeling, kan du bruge indstillingerne under denne fane til at definere og evaluere disse udgifter. Du kan definere forskellige tærskler for hver budgetstyringsregel. 
 
 > [!Important]
-> Budgetstyring aktiveres for alle hovedkonti af typen **Drift**, **Udgift**, **Indtægter, Balance, Passiv, Egenkapital** eller **Aktiv**. Hvis denne fane indeholder en regel, der har tomme kriterier, bliver budgetstyring aktiveret for **alle **kombinationer af økonomiske dimensioner, der omfatter hovedkonti af disse typer. Det er derfor vigtigt at oprette budgetstyringsregler, der kun definerer områder for kombinationer af økonomiske dimensioner, hvor det er vigtigt at aktivere budgetstyring.  
+> Budgetstyring aktiveres for alle hovedkonti af typen **Drift**, **Udgift**, **Indtægter, Balance, Passiv, Egenkapital** eller **Aktiv**. Hvis denne fane indeholder en regel, der har tomme kriterier, bliver budgetstyring aktiveret for **alle**kombinationer af økonomiske dimensioner, der omfatter hovedkonti af disse typer. Det er derfor vigtigt at oprette budgetstyringsregler, der kun definerer områder for kombinationer af økonomiske dimensioner, hvor det er vigtigt at aktivere budgetstyring.  
 
 ### <a name="select-main-accounts"></a>Vælg hovedkonti
 
@@ -124,7 +125,7 @@ Bemærk også, at transaktioner, herunder budgetregisterposter, der er bogført 
 ## <a name="using-budget-control"></a>Brug af budgetstyring
 Når budgetstyring er slået til, får brugerne budgetstyringsadvarsels- og -fejlmeddelelser i bilag og kladder, der er konfigureret til budgetstyring. Husk, at du kan konfigurere budgetstyring, så brugerne advares, når de overstiger budgetmidler, men kan stadig fortsætte med at bekræfte eller bogføre transaktionen. Brugerne kan få vist detaljer om mislykket budgetkontrol på siden **Fejl og advarsler i budgetstyring**.   
 
-Fra denne side kan brugerne analysere ned i siden **Statistik for budgetstyring fordelt på periode** for at få vist oplysninger om budgettilgængelighed og reservationer for en valgt dimensionskombination i budgetstyring. Brugere kan også analysere ned i siden **Statistik for budgetstyring **for at få vist tilgængeligheden af budgettet for alle kombinationer af økonomiske dimensioner, der bruges i budgetstyring. 
+Fra denne side kan brugerne analysere ned i siden **Statistik for budgetstyring fordelt på periode** for at få vist oplysninger om budgettilgængelighed og reservationer for en valgt dimensionskombination i budgetstyring. Brugere kan også analysere ned i siden **Statistik for budgetstyring**for at få vist tilgængeligheden af budgettet for alle kombinationer af økonomiske dimensioner, der bruges i budgetstyring. 
 
 Hvis budgetstyring er aktiveret for indkøbsordrer, kan budgetadministratoren bruge arbejdsområdet **Finansbudgetter og budgetter** til at gennemse køen af alle ikke-bekræftede indkøbsordrer med budgetkontroladvarsler og -fejl. Hvis budgetadministratoren har tilladelser til budgetoverskridelse, kan han eller hun bekræfte indkøbsordre direkte i arbejdsområdet.    
 

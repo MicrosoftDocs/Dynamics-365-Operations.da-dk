@@ -3,7 +3,7 @@ title: "Bogføringsdefinitioner"
 description: "Denne artikel indeholder oplysninger om bogføringsdefinitioner, og hvordan du definerer og kæder dem sammen. Til understøttede bogføringstyper og -dokumenter kan du bruge bogføringsdefinitioner i stedet for posteringsprofiler til at klassificere hovedkonti og økonomiske dimensioner på regnskabsposter."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,26 +18,30 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f4d7fdd8cfa7a540fce219f6ae4792e57dfbe44
-ms.openlocfilehash: 357ae498e84ef27e46142c7dcc0f90ecb0ee9f1c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aea0a5c078e4fb3a47cce3a7b427b56bf7a9bcf5
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="posting-definitions"></a>Bogføringsdefinitioner
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne artikel indeholder oplysninger om bogføringsdefinitioner, og hvordan du definerer og kæder dem sammen. Til understøttede bogføringstyper og -dokumenter kan du bruge bogføringsdefinitioner i stedet for posteringsprofiler til at klassificere hovedkonti og økonomiske dimensioner på regnskabsposter.
 
 Til understøttede bogføringstyper og -dokumenter kan du bruge bogføringsdefinitioner i stedet for posteringsprofiler til at klassificere hovedkonti og økonomiske dimensioner på regnskabsposter. Du kan se de understøttede dokumenter og bogføringstyper på siden **Definitioner af posteringsbogføring**. 
 
-Hvis du vil bruge bogføringsdefinitioner, skal du vælge indstillingen** Brug bogføringsdefinitioner** på siden **Finansparametre**. Selv når du bruger bogføringsdefinitioner, skal du stadig definere posteringsprofiler for de oprindelige poster og de ikke-understøttede bogføringsprofiler og -dokumenter. 
+Hvis du vil bruge bogføringsdefinitioner, skal du vælge indstillingen**Brug bogføringsdefinitioner** på siden **Finansparametre**. Selv når du bruger bogføringsdefinitioner, skal du stadig definere posteringsprofiler for de oprindelige poster og de ikke-understøttede bogføringsprofiler og -dokumenter. 
 
 Du skal bruge bogføringsdefinitioner for at kunne aktivere indeholder bogføring af behæftelser for indkøbsordrer og bogføring af budgetreservationer for indkøbsrekvisitioner.
 
 ## <a name="defining-posting-definitions"></a>Definition af bogføringsdefinitioner
-Brug siden** Bogføringsdefinitioner** til at angive søgekriterier og definere de poster, der skal genereres, når der opstår et match. Søgekriterierne evalueres som regnskabsfordelinger for de oprindelige poster. 
+Brug siden**Bogføringsdefinitioner** til at angive søgekriterier og definere de poster, der skal genereres, når der opstår et match. Søgekriterierne evalueres som regnskabsfordelinger for de oprindelige poster. 
 
 På siden **Bogføringsdefinitioner** kan du også tildele prioritetsnumre til posteringslinjer for at styre den rækkefølge, linjerne evalueres i. De linjer, der har det laveste prioritetsnummer, evalueres først. For eksempel evalueres alle linjer, der har prioritet 1, og derefter linjer, der har en prioritet 2, osv. Når der er overensstemmelse, ignoreres de andre søgekriterier. Desuden er det kun de kriterier i gruppen, der matcher den oprindelige transaktion, der opretter genererede poster. 
 
@@ -59,5 +63,7 @@ Der er følgende begrænsninger, når du opretter sammenkædninger i bogførings
 -   Du kan tildele en bogføringsdefinition til alle posteringstyper, men posteringstypen skal være i samme modul som bogføringsdefinitionen. Brug siden **Definitioner af posteringsbogføring** for at se, hvilket modul en transaktionstype er i.
 
 
-Yderligere oplysninger finder du i afsnittet [Eksempler på posteringsdefinitioner](/general-ledger/example-posting-definitions.md). 
+Yderligere oplysninger finder du i afsnittet [Eksempler på posteringsdefinitioner](example-posting-definitions.md). 
+
+
 

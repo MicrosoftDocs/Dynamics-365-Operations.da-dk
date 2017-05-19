@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 81b5c9056001b26c33b2b42a95711ff5b50243e6
-ms.openlocfilehash: 4bd934091c80ab9a4d244499d2bce2c4646c3e99
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 769680aff8c018bc042ffce98ee50a9760a65fcf
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -126,7 +127,7 @@ Du kan vedhæfte et dokument til en evaluering i afsnittet **Vedhæftede filer**
 Du kan bruge arbejdsgangen Arbejderevaluering til at styre godkendelsen af en evaluering. Du kan også vælge at springe over den automatiserede arbejdsgang og manuelt ændre status for evalueringen, det giver dig mulighed for at oprette enklere dokumenter, f.eks. et en til en-møde uden at skulle bruge arbejdsgangsprocessen. Adgang til en evaluering styres af status for evalueringen.
 
 1.  Når evalueringen oprettes, skal den angives til status **Ikke startet**. Evalueringen kan redigeres af alle.
-2.  Når medarbejderen trykker på knappen **Start evaluering**, angives evalueringen til status** Igangværende**. Medarbejderen begynder derefter at tilføje indhold. Chefen kan på dette tidspunkt ikke længere se gennemse dokumentet.
+2.  Når medarbejderen trykker på knappen **Start evaluering**, angives evalueringen til status**Igangværende**. Medarbejderen begynder derefter at tilføje indhold. Chefen kan på dette tidspunkt ikke længere se gennemse dokumentet.
 3.  Medarbejderen, ændres status til **Klar til evaluering**.
 4.  Chefen kan tilføje kommentarer og vurderinger. På dette tidspunkt er det kun chefen, der kan se evalueringen.
 5.  Chefen ændres status til **Endelig evaluering**, så både chefen og medarbejderen kan se evalueringen og diskutere den. Du kan angive i parametrene, hvorvidt evalueringen kan redigeres på nuværende tidspunkt. Dette trin er også valgfrit, hvis chefen blot ønsker at dele evalueringen med medarbejderen og markere den som **Fuldført**, når de er færdige.

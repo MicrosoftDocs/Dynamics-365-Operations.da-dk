@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8b13d734c22203618183b8855f99da8e51114f76
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5c21260315a08ecb31ae180d2d905a8606de2e88
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -61,13 +62,13 @@ Den nye efterkalkulationsversion er knyttet til konverteringsposten, som efterka
 Kostprisoplysninger i den tilknyttede efterkalkulationsversion kan kun vedligeholdes fra siden **Standardomkostningskonverteringer**. Du kan ikke bruge siden **Opsætning af efterkalkulationsversion** eller siden **Vedligeholdelse af efterkalkulationsversion** til at beregne omkostninger for efterkalkulationsversionen under konverteringen. Du kan dog bruge disse sider til at vedligeholde den tilknyttede efterkalkulationsversion, når du har udført konverteringen.
 
 ## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Identificer de varer, der skal konverteres til standardomkostninger
-Brug siden** Standardomkostningskonverteringer** til at identificere de enkelte varer, der skal konverteres til standardomkostninger. Du kan tilføje flere varer ved hjælp af siden **Føj varer til standardomkostningskonverteringen**. Generelt skal du medtage alle færdigvarer i en enkelt konverteringspost for bedre at sikre, at omkostningerne beregnes korrekt.
+Brug siden**Standardomkostningskonverteringer** til at identificere de enkelte varer, der skal konverteres til standardomkostninger. Du kan tilføje flere varer ved hjælp af siden **Føj varer til standardomkostningskonverteringen**. Generelt skal du medtage alle færdigvarer i en enkelt konverteringspost for bedre at sikre, at omkostningerne beregnes korrekt.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Angiv eller beregn den ventende standardomkostning for hver vare, der konverteres
 Du kan bruge siden **Varepris** til at angive vendende standardomkostninger i den tilknyttede efterkalkulationsversion for indkøbte varer og overførte farer. Omkostningsposter er lokationsspecifikke, og en vares ventende omkostninger skal angives for hvert sted. Du kan bruge siden **Varepris** til at beregne ventende standardomkostninger for færdigvarer. De ventende omkostninger for en færdigvare skal beregnes for hver produktionslokation, medmindre lokationen repræsenterer en overførselslokation. I så fald skal de ventende omkostninger angives manuelt. Nogle varer kan have produktdimensioner for farve, størrelse eller variant. På siden **Standardomkostningskonverteringer** viser afkrydsningsfeltet **Brug kostpris efter variant** standardomkostningen for hver kombination af produktdimensioner. Hvis afkrydsningsfeltet ikke er markeret, skal du kun angive en ventende omkostning for varen.
 
 ## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Kontrollér og løs eventuelle problemer med de varer, der konverteres
-Brug rapporten** Kontroller af standardomkostningskonvertering** til at identificere problemer med de varer, der konverteres. Hvis der ikke er nogen problemer med en vare, ændres varens status i konverteringsposten til **Kontrolleret**. Hvis der er problemer med en vare, skal du løse dem og derefter køre rapporten igen, indtil varens status er ændret til **Kontrolleret**. Hvis du ikke kan løse problemerne med en vare i rette tid, kan du vælge at slette varen fra konverteringsposten og derefter konvertere varen på et senere tidspunkt.
+Brug rapporten**Kontroller af standardomkostningskonvertering** til at identificere problemer med de varer, der konverteres. Hvis der ikke er nogen problemer med en vare, ændres varens status i konverteringsposten til **Kontrolleret**. Hvis der er problemer med en vare, skal du løse dem og derefter køre rapporten igen, indtil varens status er ændret til **Kontrolleret**. Hvis du ikke kan løse problemerne med en vare i rette tid, kan du vælge at slette varen fra konverteringsposten og derefter konvertere varen på et senere tidspunkt.
 
 ## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Indstil statussen for konverteringsposten til Færdig.
 Når konverteringspostens status ændres til **Færdig**, udfører systemet en endelig kontrol, inden en standardomkostningskonvertering køres. Status ændres kun til **Færdig**, hvis følgende betingelser er opfyldt:

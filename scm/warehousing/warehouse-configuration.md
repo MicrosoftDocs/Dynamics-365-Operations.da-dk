@@ -3,7 +3,7 @@ title: Konfiguration af lagersted
 description: I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfiguration af lagersted
 
+[!include[banner](../includes/banner.md)]
+
+
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 
-**Bemærk!** Denne artikel gælder for funktioner i modulet** Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet** Lagerstyring**.
+**Bemærk!** Denne artikel gælder for funktioner i modulet**Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet**Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
 Lokationsstyringssystemet i Microsoft Dynamics 365 for Operations giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagereffektivitet.
@@ -75,7 +79,12 @@ Som en del af konfigurationen af lagerstedet er det vigtigt, at du aktiverer lag
 
 Bølgeskabeloner hjælper med at sikre den udgående proces "Frigiv til lagersted". Så snart ordrelinjer udgives (enten direkte fra kildedokumenter, via kørselsprocesserne eller via belastninger, der allerede er oprettet), bruges funktionen med bølgeskabelon. 
 
-Du kan oprette tre typer af bølgeskabeloner: **Forsendelse**, **Produktionsordre** og **Kanban**. Parametre, der bruges til at definere, hvor langt systemet automatisk skal gå i behandling af udgående arbejde. En bølgeskabelon er valgt ud fra bølgeskabelonens rækkefølge og kriterier, der er angivet i skabelonen. Hvis en skabelon er angivet øverst i rækkefølgen, kontrolleres først kriterier i den pågældende skabelon. Hvis kriterierne kan opfyldes, behandles bølgeskabelonen. I modsat fald kontrolleres kriterierne i den næste skabelon osv. Det er derfor en god ide at placere den skabelon, som har de mest specifikke kriterier, i toppen af listen over rækkefølgen af bølgeskabeloner, så den behandles først. Du vil f.eks. behandle alt arbejde for et bestemt luftfartsselskab i dag og midlertidigt udskyde behandlingen af arbejdet for andre luftfartsselskaber. I dette tilfælde skal den bølgeskabelon, der vælger arbejde for luftfartsselskabet, i så fald anføres højere i rækkefølgen end andre skabeloner. Ellers kan arbejde for andre luftfartsselskaber blive behandlet, før arbejdet for luftfartsselskabet er fuldført. 
+Du kan oprette tre typer bølgeskabeloner: 
+-   **Forsendelse**
+-   **Produktionsordre**
+-   **Kanban** 
+
+Parametre, der bruges til at definere, hvor langt systemet automatisk skal gå i behandling af udgående arbejde. En bølgeskabelon er valgt ud fra bølgeskabelonens rækkefølge og kriterier, der er angivet i skabelonen. Hvis en skabelon er angivet øverst i rækkefølgen, kontrolleres først kriterier i den pågældende skabelon. Hvis kriterierne kan opfyldes, behandles bølgeskabelonen. I modsat fald kontrolleres kriterierne i den næste skabelon osv. Det er derfor en god ide at placere den skabelon, som har de mest specifikke kriterier, i toppen af listen over rækkefølgen af bølgeskabeloner, så den behandles først. Du vil f.eks. behandle alt arbejde for et bestemt luftfartsselskab i dag og midlertidigt udskyde behandlingen af arbejdet for andre luftfartsselskaber. I dette tilfælde skal den bølgeskabelon, der vælger arbejde for luftfartsselskabet, i så fald anføres højere i rækkefølgen end andre skabeloner. Ellers kan arbejde for andre luftfartsselskaber blive behandlet, før arbejdet for luftfartsselskabet er fuldført. 
 
 Du skal angive metoder for bølgeprocessen i de enkelte bølgeskabeloner. De tilgængelige metoder afhænger af typen af bølgeskabelon.
 
@@ -107,6 +116,8 @@ For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknytt
 <a name="see-also"></a>Se også
 --------
 
-[Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

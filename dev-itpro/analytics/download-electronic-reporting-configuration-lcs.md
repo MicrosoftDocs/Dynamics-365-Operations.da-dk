@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 I dette emne beskrives det, hvordan du henter konfigurationer af elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -43,9 +47,10 @@ Dette selvstudium fører dig gennem processen med at hente den nyeste version af
     1.  Klik på **Tilføj** for at tilføje et nyt lager.
     2.  Vælg **LCS** som lagertype.
     3.  Klik på **Opret lager**.
-    4.  Angiv et navn og en beskrivelse til lageret.
-    5.  Klik på **OK** at bekræfte den nye lagerpost.
-    6.  I gitteret skal du vælge det nye lager for **LCS**-typen.
+    4. Hvis du bliver spurgt, skal du følge godkendelsesinstruktionerne.
+    5.  Angiv et navn og en beskrivelse til lageret.
+    6.  Klik på **OK** at bekræfte den nye lagerpost.
+    7.  I gitteret skal du vælge det nye lager for **LCS**-typen.
 
 6.  Klik på **Åbn** for at få vist listen over ER-konfigurationer for det valgte lager. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  I konfigurationstræet i venstre rude skal du vælge de ER-konfigurationer, du har brug for.
@@ -58,5 +63,7 @@ Dette selvstudium fører dig gennem processen med at hente den nyeste version af
 --------
 
 [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+
+
 
 

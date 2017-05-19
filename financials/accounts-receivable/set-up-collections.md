@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
 Konfigurer en definition af forældelsesperioder. En definition af forældelsesperioder definerer de kolonner, der vises på listesiderne **Aldersfordelte saldi**, **Rykkeraktiviteter** og **Rykkersager**. Den definerer også de perioder, der vises på siden **Rykkere**. Hvis der er oprettet en kundepulje, bruges definitionen på forældelsesperioder derfra. Hvis der ikke er oprettet nogen kundepuljer, bruges den standarddefinition af forældelsesperiode, der er angivet på siden **Debitorparametre**. Hvis der ikke er angivet en standarddefinition af forældelsesperiode, bruges den første definition af forældelsesperiode på siden **Definitioner af forældelsesperioder**.
 
 ## <a name="create-an-aging-snapshot"></a>Oprette et aldersfordelt øjebliksbillede
-Opret poster for aldersfordelt øjebliksbillede for alle kunder eller for kunderne i kundepuljen. Oplysningerne om aldersfordelt øjebliksbillede vises på listesiden** Aldersfordelte saldi** og på siden **Rykkere**. Du skal oprette et aldersfordelt øjebliksbillede, før du kan bruge listesiden. Listesiden indeholder kun oplysninger om kunder, der allerede er oprettet et aldersfordelt øjebliksbillede for.
+Opret poster for aldersfordelt øjebliksbillede for alle kunder eller for kunderne i kundepuljen. Oplysningerne om aldersfordelt øjebliksbillede vises på listesiden**Aldersfordelte saldi** og på siden **Rykkere**. Du skal oprette et aldersfordelt øjebliksbillede, før du kan bruge listesiden. Listesiden indeholder kun oplysninger om kunder, der allerede er oprettet et aldersfordelt øjebliksbillede for.
 
 ## <a name="optional-set-up-customer-pools"></a>Valgfri: Oprette kundepuljer
 Du kan oprette kundepuljer, der repræsenterer grupper af kunder. Du kan bruge kundepuljer som filtre for de kundeoplysninger, der vises på **Rykkere**-listesiderne, på siden **Rykkere** eller ved oprettelse af aldersfordelte øjebliksbilleder.

@@ -3,7 +3,7 @@ title: Omkostningsposter
 description: "Denne artikel indeholder oplysninger om omkostningsposter, og hvornår de er oprettet. En omkostningspost er en post, der registrerer antallet og omkostningen for en given hændelse."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Omkostningsposter
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder oplysninger om omkostningsposter, og hvornår de er oprettet. En omkostningspost er en post, der registrerer antallet og omkostningen for en given hændelse.
 
@@ -53,17 +57,22 @@ På den nye side **Omkostningsposter** kan du få vist og styre registreringer a
 -   Et par dage efter, at fakturahændelsen er registreret, stiger omkostningen til 11,00 USD. Det samlede beløb er derfor 1.100 USD. Der oprettes endnu et bilag for at tage højde for forskellen på 100 USD.
 -   Et par dage senere registreres et tillæg på 15,00 USD til dækning af transportomkostningerne på indkøbsordren.
 
-| Bilag | Dato       | Reference      | Nummer | Parti-id  | Referenceparti | Returparti-id | Antal | Beløb  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01-01-2015 | Indkøbsordre | 100001 | 0000101 |               |               | 100,00   | 1000.00 |
-| 00002   | 20-01-2015 | Indkøbsordre | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31-01-2015 | Tilpasning     | 100001 | 0000101 |               |               |          | 15,00   |
+| Bilag | Dato       | Reference      | Tal | Parti-id  | Mængde | Beløb  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01-01-2015 | Indkøbsordre | 100001 | 0000101 | 100,00   | 1000.00 |
+| 00002   | 20-01-2015 | Indkøbsordre | 100001 | 0000101 |          | 100,00  |
+| 00003   | 31-01-2015 | Tilpasning     | 100001 | 0000101 |          | 15,00   |
 
-Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dokumentdato. **Bemærk!** Omkostningsposter er kun tilgængelige for [omkostningsobjekter](cost-object.md) eller frigivne produkter.
+Siden **Omkostningsposter** gør det muligt at filtrere efter dokument-id og dokumentdato. 
+
+> [!NOTE]
+> Omkostningsposter er kun tilgængelige for [omkostningsobjekter](cost-object.md) eller frigivne produkter.
 
 <a name="see-also"></a>Se også
 --------
 
 [Omkostningsobjekter](cost-object.md)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 9b690b80f148e7ccecba19850bd78c81216d8658
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3b424d34a1469ac37e96927dea5627f5f2fed8ee
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Hvis du f.eks. vælger **Årligt**, bogføres den årlige afskrivning kun én ga
 Hvis du vælger **Regnskabsår** i feltet **Afskrivningsår**, bruges den lineære afskrivning for den resterende levetid. Afskrivning beregnes på grundlag af de resterende regnskabsår. I forbindelse med regnskabsåret fra d. 1. juli 2015 til og med d. 30. juni 2016 starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver regnskabsperiode. Længden på det næste regnskabsår bestemmes af de regnskabsperioder, der er oprettet på siden **Regnskabskalendere**. Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 -   **Årligt** bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
--   **Regnskabsperiode **beregner det samlede afskrivningsbeløb for regnskabsåret. Dette beløb er derefter påløbet i regnskabsperioder, der er defineret på siden **Regnskabskalendere** for den regnskabskalender, der er angivet for bogen.
+-   **Regnskabsperiode**beregner det samlede afskrivningsbeløb for regnskabsåret. Dette beløb er derefter påløbet i regnskabsperioder, der er defineret på siden **Regnskabskalendere** for den regnskabskalender, der er angivet for bogen.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel på lineær afskrivning af et uændret anlægsaktiv
 Et anlægsaktivet har følgende karakteristika.

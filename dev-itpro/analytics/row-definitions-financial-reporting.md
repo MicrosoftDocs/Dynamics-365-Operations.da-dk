@@ -1,16 +1,16 @@
 ---
 title: "Rækkedefinitioner i Designer til økonomirapporter"
 description: "En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport. En rækkedefinition kan kombineres med kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Rækkedefinitioner i Designer til økonomirapporter
+
+[!include[banner](../includes/banner.md)]
+
 
 En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport. En rækkedefinition kan kombineres med kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer.
 
@@ -72,8 +76,8 @@ Udfør følgende trin for at føje dimensioner til en rækkedefinition.
 
 1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2.  I menuen **Rediger** skal du klikke på **Indsæt rækker fra dimensioner**.
-3.  I dialogboksen **Indsæt rækker fra dimensioner **i rækken **Dimensioner** skal du markere cellen for den dimension, der skal overføres til rækkedefinitionen, og derefter klikke på **Alle &&&**.
-4.  For at begrænse rækkedefinitionen til et bestemt område af dimensionsværdier skal du angive startdimensionsværdien i cellen **Start på dimensionsområde **og derefter angive slutdimensionsværdien i cellen **Slut på dimensionsområde**. Hvis du vil medtage alle værdier for den valgte dimension, skal du lade disse celler være tomme. **Bemærk!** Jokertegn (\* eller ?) i dimensionsområder returnerer muligvis ikke alle de ønskede resultater, afhængigt af hvordan ERP-databasen indsamler data.
+3.  I dialogboksen **Indsæt rækker fra dimensioner**i rækken **Dimensioner** skal du markere cellen for den dimension, der skal overføres til rækkedefinitionen, og derefter klikke på **Alle &&&**.
+4.  For at begrænse rækkedefinitionen til et bestemt område af dimensionsværdier skal du angive startdimensionsværdien i cellen **Start på dimensionsområde**og derefter angive slutdimensionsværdien i cellen **Slut på dimensionsområde**. Hvis du vil medtage alle værdier for den valgte dimension, skal du lade disse celler være tomme. **Bemærk!** Jokertegn (\* eller ?) i dimensionsområder returnerer muligvis ikke alle de ønskede resultater, afhængigt af hvordan ERP-databasen indsamler data.
 5.  I feltet **Startrækkekode** skal du angive rækkekoden for den første dimensionsværdi, der skal føjes til rækkedefinitionen.
 6.  I feltet **Forøg hver række med** skal du angive afstanden mellem på hinanden følgende rækkekoder. Hvis den første rækkekode er 100, og den stigende værdi er 30, har de første nye rækker koderne 100, 130, 160, 190 og 220. Brug en forøgelsesværdi, der indeholder tilstrækkelig plads til at indsætte nye formater og formelrækker.
 7.  Klik på **OK**. Der tilføjes én linje for hver af de valgte dimensionsværdier i rækkedefinitionen.
@@ -97,9 +101,9 @@ Hvis du vil justere afrunding i en balance, skal du følge disse trin.
     -   **Række for samlede passiver og egenkapital** – rækkekoden for den række i balancen, der indeholder de samlede passiver og egenkapital.
     -   **Reguleringsbeløbsgrænse** – et positivt heltal, der angiver grænsen for automatiske reguleringer. Dette beløb sammenlignes med den absolutte værdi af den faktiske afrundingsdifference.
 
-    **Bemærk: **Disse rækkekoder skal være knyttet til de økonomiske data. Med andre ord skal rækken have en dimensionsværdi i cellen **Link til økonomiske dimensioner**. Henvis **ikke** en beskrivelsesrække (**DESC**), beregnet række (**CALC**) eller sammenlagt (**TOT**) række.
+    **Bemærk:**Disse rækkekoder skal være knyttet til de økonomiske data. Med andre ord skal rækken have en dimensionsværdi i cellen **Link til økonomiske dimensioner**. Henvis **ikke** en beskrivelsesrække (**DESC**), beregnet række (**CALC**) eller sammenlagt (**TOT**) række.
 
-Beløbene i din balance er nu afstemt, hvis afrunding er slået til. **Bemærk: **Reguleringsgrænsen anvendes baseret på indstillingen **Afrundingspræcision**, der er angivet til rapportdefinitionen. Hvis du for eksempel vælger at afrunde rapporten til tusinder og angiver **2** i feltet **Reguleringsbeløbsgrænse**, vises en advarselsmeddelelse, når værdien i feltet **Række til regulering af afrunding** øges eller reduceres med mere end $2.000.
+Beløbene i din balance er nu afstemt, hvis afrunding er slået til. **Bemærk:**Reguleringsgrænsen anvendes baseret på indstillingen **Afrundingspræcision**, der er angivet til rapportdefinitionen. Hvis du for eksempel vælger at afrunde rapporten til tusinder og angiver **2** i feltet **Reguleringsbeløbsgrænse**, vises en advarselsmeddelelse, når værdien i feltet **Række til regulering af afrunding** øges eller reduceres med mere end $2.000.
 
 ## <a name="format-row-and-column-text"></a>Formatere række og kolonnetekst
 Du kan tilpasse udseendet af dine rapporter ved at ændre skrifttyper og formatere tekst. I følgende afsnit beskrives, hvordan du kan formatere udseendet af rækker og kolonner i rapporter.
@@ -173,6 +177,8 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 <a name="see-also"></a>Se også
 --------
 
-[Økonomirapportering i Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Økonomirapportering](financial-reporting-intro.md)
+
+
 
 

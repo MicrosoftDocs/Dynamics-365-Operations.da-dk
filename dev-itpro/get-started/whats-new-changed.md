@@ -3,33 +3,37 @@ title: "Nyheder eller ændringer"
 description: "Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Core
+ms.search.scope: Operations, Core
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0d954043c461975a70f9e0ab867f30cadd9800b5
-ms.openlocfilehash: 2896a11f79d5cbb00137a439e0a2c8caaee705a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed"></a>Nyheder eller ændringer
 
+[!include[banner](../includes/banner.md)]
+
+
 Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Operations.
 
-Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering til den seneste Dynamics 365 for Operations-opdatering](/migration-upgrade/upgrade-latest-update.md).
+Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering til den seneste Dynamics 365 for Operations-opdatering](../migration-upgrade/upgrade-latest-update.md).
 <table>
 <colgroup>
 <col width="20%" />
@@ -40,9 +44,9 @@ Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Udlevering</strong></th>
+<th><strong>Udgivelse</strong></th>
 <th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
+<th><strong><strong>Buildnummer</strong></strong></th>
 <th><strong><strong>Tilgængelighed</strong></strong></th>
 <th><strong><strong>Sådan får du mere at vide</strong></strong></th>
 </tr>
@@ -50,15 +54,24 @@ Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations-platform</td>
+<td>Platformsopdatering 6</td>
+<td> 7.0.4509.16180</td>
+<td>2017. april</td>
+<td><a href="whats-new-platform-update-6.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 6 (april 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations-platform</td>
+<td>Platformsopdatering 5</td>
+<td> 7.0.4475.16165</td>
+<td>2017. marts</td>
+<td><a href="whats-new-platform-update-5.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 5 (marts 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations-platform</td>
 <td>Platformsopdatering 4</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>2017. februar</td>
-<td><ol>
-<li>Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 køreplan</a>.</li>
-<li>Vælg fanen <strong>Nyheder</strong>.</li>
-<li>I afsnittet <strong>Programmer</strong> skal du vælge <strong>Dynamics 365 for Operations</strong>.</li>
-<li>I afsnittet <strong>Områder</strong> skal du vælge <strong>Cloudplatform</strong>.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 4 (februar 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -111,6 +124,8 @@ Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -19,10 +19,11 @@ ms.search.industry: Distribution
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: ec2907129e68f39e6e5f56f0617b7599598312d2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: de1d8bc2fa1080e549cb8c33657ad0f373644d38
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Konfigurationen af den sporingsdimensionsgruppe, der tildelt til produktet, best
 Du kan oprette delfakturaer og følgesedler for salgsordrer og kun registrere serienumrene for de varer, som fakturaerne og følgesedlerne omfatter. Hvis du vil oprette en delfaktura, og du har mere end én følgeseddel for salgsordren, kan du medtage serienumre fra mere end én følgeseddel. Men der kan kun være én følgeseddel, hvor alle serienumre ikke medtages. Hvis du har tre følgesedler, og hver følgeseddel indeholder to serienummererede varer, kan du ikke oprette en delfaktura for en vare på hver enkelt følgeseddel.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Hvad skal jeg gøre, når et serienummer ikke kan læses?
-Hvis et serienummer ikke kan læse eller scannes, kan du oprette en tom linje for varen ved at klikke på **Kan ikke læses **på siden **Serienumre **. Hvis serienummeret bliver tilgængeligt senere, kan du opdatere fakturaen eller følgesedlen. Yderligere oplysninger finder du i næste afsnit, "Kan jeg rette eller ændre de serienumre, jeg har registreret for en salgsordre?"
+Hvis et serienummer ikke kan læse eller scannes, kan du oprette en tom linje for varen ved at klikke på **Kan ikke læses**på siden **Serienumre**. Hvis serienummeret bliver tilgængeligt senere, kan du opdatere fakturaen eller følgesedlen. Yderligere oplysninger finder du i næste afsnit, "Kan jeg rette eller ændre de serienumre, jeg har registreret for en salgsordre?"
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jeg rette eller ændre de serienumre, jeg har registreret for en salgsordre?
 Ja, du kan rette serienumre, hvis følgende betingelser er opfyldt:

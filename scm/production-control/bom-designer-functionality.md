@@ -3,7 +3,7 @@ title: Funktioner i styklistedesigneren
 description: "I denne artikel beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funktioner i styklistedesigneren
+
+[!include[banner](../includes/banner.md)]
+
 
 I denne artikel beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet.
 
@@ -95,7 +99,7 @@ Det filter, der anvendes til styklisten og ruten vises i overskriften i styklist
 Når du bruger styklistedesigneren til at gennemgå eller redigere styklister, der består af et eller flere niveauer af fantomstyklister, strækker den rute, som typisk er knyttet til topvaren, sig over hele styklistehierarkiet. For at forenkle oversigten kan du låse ruten på øverste niveau i visningen ved at klikke på **Vis** &gt; **Lås rute**. For at låse op for ruten skal du klikke på **Vis** &gt; **Lås rute op**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Tilføje og redigere styklister og styklistelinjer
-Brug funktionerne **Styklistelinjer** eller **Stykliste** til at redigere styklistelinjer eller styklister. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
+Brug funktionerne **Styklistelinjer**eller **Stykliste** til at redigere styklistelinjer eller styklister. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
 
 | Funktion                            | Betegnelse                                                                                               | Nodetype og betingelser                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Klik på **Opsætning** for at tilpasse de oplysninger, der vises i styklistedes
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Stykliste         | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. Styklistedesigneren viser de valgte kriterier nederst under begge faner. |
 | Rute       | Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne.                                                                                    |
+
+
 
 
 

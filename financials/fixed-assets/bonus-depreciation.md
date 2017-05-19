@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: ca22ae7ba0f30085ad453e7b2c16418dba4dbbe9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0fe9b45ea3e98c517ff686afdaec56e7f020c341
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ I USA er det i øjeblikket sådan, at visse anlægsaktiver gælder som Section 1
 Følgende straksafskrivninger er tilknyttet en aktivbog:
 
 -   **Section 179:** 1.000,00, Prioritet 1
--   **Liberty Zone:** 30 procent, Prioritet 2
+-   **Fritagelseszone:** 30 procent, Prioritet 2
 
 Omkostningerne ved anskaffelsen af anlægsaktivet er 5.000,00. Når straksafskrivningen beregnes, vil beløbet for den første straksafskrivning være 1.000,00 for Section 179-afskrivningen. 
 

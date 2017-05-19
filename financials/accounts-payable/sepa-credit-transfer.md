@@ -3,7 +3,7 @@ title: "Oversigt over SEPA-pengeoverførsel"
 description: "Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>Oversigt over SEPA-pengeoverførsel
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel.
 
@@ -55,7 +59,7 @@ Betalingsformatet for kreditoverførsel i de europæiske lande implementeres ved
 Du bør altid gå til den delte aktivbiblioteket på Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**. Næste afsnit, "Hvad skal jeg bruge for at komme i gang?", indeholder et link til det emne, der forklarer, hvordan du opretter en LCS-lager for at se tilgængelige konfigurationer og importere markerede konfigurationer.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hvad skal jeg bruge for at komme i gang?
--   Før du kan oprette kreditoverførselsfiler, skal mindst én aktiv konfiguration af kreditoverførsel importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Før du kan oprette kreditoverførselsfiler, skal mindst én aktiv konfiguration af kreditoverførsel importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   Når du konfigurerer betalingsmetoder for kreditor, skal du markere afkrydsningsfeltet **Generiske elektronisk rapportering** og vælge det relevante kreditoverførselsformat (f.eks. **ISO 20022-kreditoverførsel (AT)**) som en formatkonfiguration til eksport.
 -   Du skal også angive den juridiske enhed og bankkontooplysninger i Dynamics 365 for Operations.
 -   Bankkontonumre, IBAN og undertiden SWIFT-koder (BIC) eller andre id'er, der er nødvendige for at oprette gyldige betalinger ved kreditoverførsel. Derfor, du skal angive dem for kreditorbankkontoen og bankkontoen for den organisation, der anmoder om overførslen.
@@ -121,5 +125,7 @@ IBAN-numre og BIC-koder bruges til at identificere alle konti i mange lande/omr�
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hvordan kan jeg sende en betalingsfil til banken?
 Når du genererer betalinger, bliver betalingsfilen genereret, og du bliver bedt om at gemme den på en tilgængelig placering fra din webbrowser. Næste trin er at sende XML-filen til din bank. Denne proces varierer fra bank til bank. Følg vejledningen fra din bank til at sende filer til banken til behandling.
+
+
 
 

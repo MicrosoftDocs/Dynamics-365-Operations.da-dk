@@ -1,9 +1,9 @@
 ---
 title: "Nulstil økonomirapporterings-datacenteret efter gendannelse af en database"
 description: "Dette emne beskriver, hvordan du nulstiller økonomirapporterings-datacenteret efter gendannelse af en Microsoft Dynamics 365 for Operations-database."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Nulstil økonomirapporterings-datacenteret efter gendannelse af en database
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne beskriver, hvordan du nulstiller økonomirapporterings-datacenteret efter gendannelse af en Microsoft Dynamics 365 for Operations-database. 
 
@@ -43,7 +47,11 @@ Først skal du eksportere de rapportdesigns, der er placeret i Report Designer, 
 5.  Angiv et filnavn, og vælg et sikkert sted, hvor du vil gemme de eksporterede rapportdefinitioner.
 6.  Klik på **Gem**.
 
-Filen kan kopieres eller overføres til et sikkert sted, så den kan importeres til et andet miljø på et senere tidspunkt. Du kan finde oplysninger om brug af en Microsoft Azure-lagerkonto i [Overfør data med AzCopy-kommandolinjeværktøjet](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Bemærk!** Microsoft leverer ikke en lagerkonto som en del af din Dynamics 365 for Operations-aftale. Du skal købe en lagerkonto eller bruge en lagerkonto fra et separat Azure-abonnement. **Vigtigt:** Være opmærksom på funktionen af D-drevet på virtuelle Azure-maskiner. Opbevar ikke dine eksporterede komponentgrupper her permanent. Du kan finde flere oplysninger om midlertidige drev i [Om de midlertidige drev på virtuelle Windows Azure-maskiner](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Filen kan kopieres eller overføres til et sikkert sted, så den kan importeres til et andet miljø på et senere tidspunkt. Du kan finde oplysninger om brug af en Microsoft Azure-lagerkonto i [Overfør data med AzCopy-kommandolinjeværktøjet](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft leverer ikke en lagerkonto som en del af din Dynamics 365 for Operations-aftale. Du skal købe en lagerkonto eller bruge en lagerkonto fra et separat Azure-abonnement. 
+> [!WARNING]
+> Vær opmærksom på funktionen af D-drevet på virtuelle Azure-maskiner. Opbevar ikke dine eksporterede komponentgrupper her permanent. Du kan finde flere oplysninger om midlertidige drev i [Om de midlertidige drev på virtuelle Windows Azure-maskiner](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Stop tjenester
 Brug Fjernskrivebord til at oprette forbindelse til alle computere i miljøet, og stop følgende tjenester i Windows ved hjælp af services.msc:
@@ -96,7 +104,9 @@ Brug services.msc til at genstarte de tjenester, som du tidligere har stoppet:
 Importer dine rapportdesigns fra Report Designer ved hjælp af den fil, der oprettes under eksporten:
 
 1.  I Report Designer skal du gå til **Regnskab** &gt; **Komponentgruppe**.
-2.  Vælg den komponentgruppe, der skal eksporterer, og klik på **Eksporter**. **Bemærk:** I Dynamics 365 for Operations understøttes kun én komponentgruppe, **Standard**.
+2.  Vælg den komponentgruppe, der skal eksporterer, og klik på **Eksporter**. 
+    > [!NOTE]
+    > I Dynamics 365 for Operations understøttes kun én komponentgruppe, **Standard**.
 3.  Vælg komponenten **Standard**, og klik på **Importer**.
 4.  Vælg den fil, der indeholder de eksporterede rapportdefinitioner, og klik på **Åbn**.
 5.  I dialogboksen Importér skal du vælge de rapportdefinitioner, der skal importeres:
@@ -104,6 +114,8 @@ Importer dine rapportdesigns fra Report Designer ved hjælp af den fil, der opre
     -   Hvis du vil importere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du markere de rapporter, rækker, kolonner, træer eller dimensionsopsætninger, der skal importeres.
 
 6.  Klik på **Importer**.
+
+
 
 
 

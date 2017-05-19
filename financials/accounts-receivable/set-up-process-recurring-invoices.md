@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 2f14e9227ef56f428d18999aa7b52254580cdfa4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d37531eb746324c6ddb9ca363f2bde1dfd84a197
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Når skabelonen er oprettet, skal du tildele skabelonen til de kunder, som du vi
 En kunde kan have flere skabeloner, der har forskellige frekvenser.
 
 ## <a name="generate-the-recurring-invoices"></a>Oprette de tilbagevendende fakturaer
-På siden **Tilbagevendende fakturaer **er der en opgave, der behandler skabeloner til tilbagevendende fakturaer. Du angiver fakturadatoen og skabelonen, som fakturaerne skal oprettes ud fra. Fakturaer oprettes og tildeles et enkelt gentagelses-id for hver gruppe fakturaer, der er behandlet.
+På siden **Tilbagevendende fakturaer**er der en opgave, der behandler skabeloner til tilbagevendende fakturaer. Du angiver fakturadatoen og skabelonen, som fakturaerne skal oprettes ud fra. Fakturaer oprettes og tildeles et enkelt gentagelses-id for hver gruppe fakturaer, der er behandlet.
 Bogføre tilbagevendende fritekstfakturaer
 ---------------------------------
 

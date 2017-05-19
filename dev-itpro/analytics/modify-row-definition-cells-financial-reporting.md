@@ -1,16 +1,16 @@
 ---
 title: "Ændre rækkedefinitionsceller"
 description: "Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 16 - 09 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: b61364c9055e5c5a63592c7f05551d0c145924b9
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82a0b8c52a816a7fc608e90866bd564392f9c8d4
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger. 
 
@@ -38,7 +42,9 @@ I rækkedefinitioner angiver tal eller etiketter i cellen **Rækkekode** hver li
 
 Der kræves en rækkekode for alle rækker. Du kan blande numeriske, alfanumeriske og ikke-angivne (tomme) rækkekoder i en rækkedefinition. Rækkekoden kan være et positivt heltal (under 100.000.000) eller en beskrivende etiket, der identificerer den pågældende række. En beskrivende etiket skal følge disse regler:
 
--   etiketten skal begynde med et bogstav (a til z eller A til Z) og kan være enhver kombination af tal og bogstaver op til 16 tegn. **Bemærk:** en etiket kan indeholde understregningstegn (\_), men ingen andre specialtegn er tilladt.
+-   etiketten skal begynde med et bogstav (a til z eller A til Z) og kan være enhver kombination af tal og bogstaver op til 16 tegn. 
+    > [!NOTE]
+    > En etiket kan indeholde understregningstegn (\_), men ingen andre specialtegn er tilladt.
 -   Etiketten kan ikke bruge nogen af følgende reserverede ord: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO eller RPO.
 
 Følgende eksempler er gyldige rækkekoder:
@@ -56,10 +62,14 @@ Følgende eksempler er gyldige rækkekoder:
 
 1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2.  I menuen **Rediger** skal du klikke på **Nummerer rækker igen**.
-3.  I dialogboksen **Nummerer rækker igen** skal du angive nye værdier for den første rækkekode og rækkekodeforøgelsen. Du kan nulstille de numeriske rækkekoder til værdier med samme mellemrum. I rapportdesigneren nummereres dog kun rækkekoder, der begynder med tal (eksempelvis 130 eller 246). Rækkekoder, der begynder med bogstaver (for eksempel INCOME\_93 eller TP0693) nummereres ikke igen. **Bemærk:** når du nummererer rækkekoder igen, opdaterer rapportdesigneren automatisk referencerne **TOT** og **CAL**. Hvis en **TOT**-række for eksempel refererer til et område, der starter med rækkekoden 100, og du nummererer rækker igen, startende med 90, ændres **TOT**-referencen fra 100 til 90.
+3.  I dialogboksen **Nummerer rækker igen** skal du angive nye værdier for den første rækkekode og rækkekodeforøgelsen. Du kan nulstille de numeriske rækkekoder til værdier med samme mellemrum. I rapportdesigneren nummereres dog kun rækkekoder, der begynder med tal (eksempelvis 130 eller 246). Rækkekoder, der begynder med bogstaver (for eksempel INCOME\_93 eller TP0693) nummereres ikke igen. 
+> [!NOTE]
+> Når du nummererer rækkekoder igen, opdaterer rapportdesigneren automatisk referencerne **TOT** og **CAL**. Hvis en **TOT**-række for eksempel refererer til et område, der starter med rækkekoden 100, og du nummererer rækker igen, startende med 90, ændres **TOT**-referencen fra 100 til 90.
 
 ## <a name="add-a-description"></a>Tilføje en beskrivelse
-Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i rækken i rapporten, f.eks. "Omsætning" eller "Nettoindkomst". Teksten i cellen **Beskrivelse** vises i rapporten, nøjagtigt som du angiver dem i rækkedefinitionen. **Bemærk:** bredden af beskrivelseskolonnen i rapporten er angivet i kolonnedefinitionen. Hvis teksten i kolonnen **Beskrivelse** i rækkedefinitionen er lang, skal du kontrollere bredden af **DESC**-kolonnen. Når du bruger dialogboksen **Indsæt rækker fra**, er værdierne i kolonnen **Beskrivelse** segmentværdierne eller dimensionsværdierne fra de økonomiske data. Du kan indsætte rækker for at tilføje beskrivende tekst, såsom en sektionsoverskrift eller en sektionstotal, og tilføje formatering, f.eks en linje før en rækketotal. Hvis rapporten indeholder et rapporteringstræ, kan du medtage den ekstra tekst, der er defineret for rapporteringsenhederne i rapporteringstræet. Du kan også begrænse den ekstra tekst til en bestemt rapporteringsenhed.
+Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i rækken i rapporten, f.eks. "Omsætning" eller "Nettoindkomst". Teksten i cellen **Beskrivelse** vises i rapporten, nøjagtigt som du angiver dem i rækkedefinitionen. 
+> [!NOTE]
+> Bredden af beskrivelseskolonnen i rapporten er angivet i kolonnedefinitionen. Hvis teksten i kolonnen **Beskrivelse** i rækkedefinitionen er lang, skal du kontrollere bredden af **DESC**-kolonnen. Når du bruger dialogboksen **Indsæt rækker fra**, er værdierne i kolonnen **Beskrivelse** segmentværdierne eller dimensionsværdierne fra de økonomiske data. Du kan indsætte rækker for at tilføje beskrivende tekst, såsom en sektionsoverskrift eller en sektionstotal, og tilføje formatering, f.eks en linje før en rækketotal. Hvis rapporten indeholder et rapporteringstræ, kan du medtage den ekstra tekst, der er defineret for rapporteringsenhederne i rapporteringstræet. Du kan også begrænse den ekstra tekst til en bestemt rapporteringsenhed.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Tilføj beskrivelsen for en linje i en rapport
 
@@ -81,7 +91,9 @@ Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i ræ
 4.  I feltet **Vælg rapporteringsenhed til begrænsning** skal du udvide eller skjule rapporteringstræet og derefter vælge en rapporteringsenhed.
 
 ## <a name="add-a-format-code"></a>Tilføje en formatkode
-Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hensyn til indholdet i rækken. Hvis cellen **Formatkode** er tom, fortolkes rækken som en række med detaljerede økonomiske data. **Bemærk:** Hvis en rapport indeholder formateringsrækker uden beløb, der vedrører beløbsrækker, der er undertrykt (for eksempel på grund af nul-saldi), kan du bruge kolonnen **Relaterede formler/rækker/enheder** for at forhindre, at der udskrives titel- og formatrækker.
+Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hensyn til indholdet i rækken. Hvis cellen **Formatkode** er tom, fortolkes rækken som en række med detaljerede økonomiske data. 
+> [!NOTE]
+> Hvis en rapport indeholder formateringsrækker uden beløb, der vedrører beløbsrækker, der er undertrykt (for eksempel på grund af nul-saldi), kan du bruge kolonnen **Relaterede formler/rækker/enheder** for at forhindre, at der udskrives titel- og formatrækker.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Tilføje en formatkode til en rapportrække
 
@@ -140,7 +152,9 @@ Når du opretter en formel for rækketotal, skal du bruge rækkekoder til at ang
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Relater en formatrække til en beløbsrække
 
-I kolonnen **Formatkode** i en rækkedefinition, anvender formatkoderne **DES**, **LFT**, **RGT**, **CEN**, **---** og **===** formatering på rækker uden beløb. For at forhindre, at denne formatering udskrives, når de relaterede beløbsrækker undertrykkes (eksempelvis fordi beløbsrækkerne indeholder nulværdier eller ingen periodeaktivitet), skal du relatere formatrækkerne til de tilsvarende beløbsrækker. Denne funktion er nyttig, når du vil forhindre, at sidehoveder eller formatering, der er relateret til subtotaler, bliver udskrevet, når der ingen detaljer er at udskrive for perioden. **Bemærk:** Du kan også forhindre, at de detaljerede beløbsrækker udskrives ved at fjerne muligheden for at få vist rækker uden beløb. Denne indstilling findes på fanen **Indstillinger** i rapportdefinitionen. Som standard undertrykkes transaktionsdetaljekonti, der har en saldo på nul eller ingen periodeaktivitet, i rapporter. For at få vist disse transaktionsdetaljekonti, skal du markere afkrydsningsfeltet **Vis rækker uden et beløb** på fanen **Indstillinger** i rapportdefinitionen.
+I kolonnen **Formatkode** i en rækkedefinition, anvender formatkoderne **DES**, **LFT**, **RGT**, **CEN**, **---** og **===** formatering på rækker uden beløb. For at forhindre, at denne formatering udskrives, når de relaterede beløbsrækker undertrykkes (eksempelvis fordi beløbsrækkerne indeholder nulværdier eller ingen periodeaktivitet), skal du relatere formatrækkerne til de tilsvarende beløbsrækker. Denne funktion er nyttig, når du vil forhindre, at sidehoveder eller formatering, der er relateret til subtotaler, bliver udskrevet, når der ingen detaljer er at udskrive for perioden. 
+    > [!NOTE]
+    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Relater en formatrække til en beløbsrække
 
@@ -196,7 +210,9 @@ Sorteringskoder sorterer konti eller værdier, sorterer en faktisk eller budgeta
 1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
 2.  Dobbeltklik på cellen **Formatkode**, og vælg derefter en sorteringskode.
 3.  I cellen **Relaterede formler/rækker/enheder** skal du angive intervallet for rækkekoder, der skal sorteres. For at angive et interval, skal du angive den første rækkekode, et kolon (:) og derefter den sidste rækkekode. Du kan f.eks. indtaste **160:490** for at angive, at intervallet er række 160 til og med række 490.
-4.  I cellen **Kolonnebegrænsning** skal du angive bogstavet for den rapportkolonne, der skal bruges til sortering. **Bemærk:** Medtag kun beløbsrækker i en sorteringsberegning.
+4.  I cellen **Kolonnebegrænsning** skal du angive bogstavet for den rapportkolonne, der skal bruges til sortering. 
+    > [!NOTE]
+    > Medtag kun beløbsrækker i en sorteringsberegning.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Eksempler på stigende og faldende kolonneværdier
 
@@ -220,255 +236,24 @@ I følgende eksempel sorteres værdierne i kolonne D i rapporten i stigende ræk
 
 Her er et eksempel på den rapport, der genereres.
 
-**Analyse af afvigelse (sorteret efter afvigelse)**
+|||||||||
+|---|---|---|---|---|---|---|
+|**Analyse af afvigelse (sorteret efter afvigelse)**|||||||
 
-**Beijing- og Atlanta-områder**
+|**Beijing- og Atlanta-områder**|||||||
 
-**For de syv måneder, der slutter den 31. juli 2013**
+|**For de syv måneder, der slutter den 31. juli 2013**|||||||
 
-**Juli**
+||**juli**|**ÅTD**|||||
 
-**År til dato**
+||**Faktiske**|**Budget**|**Afvigelse**|**Faktiske**|**Budget**|**Afvigelse**|
 
-**Faktisk**
+|**Sorteret efter månedlig afvigelse i stigende rækkefølge**|||||||
 
-**Budget**
+|VAREFORBRUG|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
-**Afvigelse**
-
-**Faktisk**
-
-**Budget**
-
-**Afvigelse**
-
-**Sorteret efter månedlig afvigelse i stigende rækkefølge**
-
-vareforbrug
-
-873.872
-
-236.144
-
-(637.728)
-
-4.864.274
-
-1.590.315
-
-(3.273.959)
-
-Lønninger
-
-97.624
-
-65.573
-
-(32.051)
-
-653.884
-
-441.664
-
-(212.220)
-
-Salgsrabatter
-
-36.383
-
-24.152
-
-(12.231)
-
-241.562
-
-162.670
-
-(78.892)
-
-Salgsreturneringer
-
-10.917
-
-7.246
-
-(3.671)
-
-62.809
-
-48.803
-
-(14.006)
-
-Renteudgifter
-
-12.052
-
-9.019
-
-(3.033)
-
-80.444
-
-60.748
-
-(19.696)
-
-Kontorudgifter
-
-5.023
-
-3.291
-
-(1.732)
-
-33.420
-
-22.098
-
-(11.322)
-
-Rejseudgifter
-
-7.656
-
-7.641
-
-(15)
-
-51.062
-
-51.469
-
-407
-
-Salg
-
-1.240.119
-
-410.389
-
-829.730
-
-7.139.288
-
-2.764.549
-
-4.374.739
-
-**Sorteret efter absolut afvigelse år til dato i faldende rækkefølge**
-
-Salg
-
-1.240.119
-
-410.389
-
-829.730
-
-7.139.288
-
-2.764.549
-
-4.374.739
-
-Rejseudgifter
-
-7.656
-
-7.641
-
-(15)
-
-51.062
-
-51.469
-
-407
-
-Kontorudgifter
-
-5.023
-
-3.291
-
-(1.732)
-
-33.420
-
-22.098
-
-(11.322)
-
-Salgsreturneringer
-
-10.917
-
-7.246
-
-(3.671)
-
-62.809
-
-48.803
-
-(14.006)
-
-Renteudgifter
-
-12.052
-
-9.019
-
-(3.033)
-
-80.444
-
-60.748
-
-(19.696)
-
-Salgsrabatter
-
-36.383
-
-24.152
-
-(12.231)
-
-241.562
-
-162.670
-
-(78.892)
-
-Lønninger
-
-97.624
-
-65.573
-
-(32.051)
-
-653.884
-
-441.664
-
-(212.220)
-
-vareforbrug
-
-873.872
-
-236.144
-
-(637.728)
-
-4.864.274
-
-1.590.315
-
-(3.273.959)
+|Lønninger|97.624|65.573|(32.051)|653.884|441.664|(212.220)| |Salgsrabatter|36.383|24.152|(12.231)|241. 562|162.670|(78.892)| |Returvarer|10.917|7.246|(3.671)|62.809|48.803|(14.006)| |Lejeudgift|12.052|9.019|(3.033)|80.444|60.748|(19.696)| |Kontorudgifter|5.023|3.291|(1.732)|33.420|22.098|(11.322)| |Rejseudgifter|7. 656|7.641|(15)|51.062|51.469|407| |Salg|1.240.119|410.389|829.730|7.139.288|2.764.549|4.374.739| |**Sorteret efter år til dato absolutte afvigelse i faldende rækkefølge**|||||||
+|Salg|1.240.119|410.389|829.730|7.139.288|2.764.549|4.374.739| |Rejseudgifter|7.656|7.641|(15)|51.062|51.469|407| |Kontorudgifter|5.023|3.291|(1.732)|33.420|22.098|(11.322)| |Returvarer|10.917|7.246|(3.671)|62.809|48.803|(14.006)| |Lejeudgift|12.052|9.019|(3.033)|80.444|60.748|(19.696)| |Salgsrabatter|36.383|24.152|(12.231)|241.562|162.670|(78.892)| |Lønninger|97.624|65.573|(32.051)|653.884|441.664|(212.220)| |VAREFORBRUG|873.872|236.144|(637.728)|4.864.274|1.590.315|(3.273.959)|
 
 ## <a name="specify-a-format-override-cell"></a>Angiv en celle af typen Tilsidesæt format
 Cellen **Tilsidesæt format** angiver den formatering, der anvendes til rækken, når rapporten udskrives. Denne formatering tilsidesætter den formatering, der er angivet i kolonnedefinitionen og rapportdefinitionen. Som standard er den formatering, der er angivet i disse definitioner, valuta. Hvis en række i rapporten angiver antallet af aktiver, såsom antallet af bygninger, og en anden række angiver pengeværdien af disse aktiver, kan du tilsidesætte valutaformateringen og angive numerisk formatering for den række, der angiver antallet af bygninger. Du angiver disse oplysninger i dialogboksen **Tilsidesæt format**. De tilgængelige indstillinger afhænger af den formatkategori, du vælger. Området **Prøve** i dialogboksen viser eksempelformater. Følgende formatkategorier er tilgængelige:
@@ -492,7 +277,9 @@ Formatering af valuta gælder for et regnskabsbeløb og inkluderer valutasymbole
 -   **Valutasymbol** – valutasymbolet for rapporten. Værdien tilsidesætter indstillingen **Internationale indstillinger** for firmaoplysningerne.
 -   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
 -   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. **Bemærk:** hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+-   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+    > [!NOTE]
+    >  Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="numeric-formatting"></a>Formatering af tal
 
@@ -500,7 +287,9 @@ Formatering af tal gælder for alle beløb og inkluderer ikke et valutasymbol. F
 
 -   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
 -   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. **Bemærk:** hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+-   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+    > [!NOTE]
+    >  Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="percentage-formatting"></a>Formatering af procenter
 
@@ -508,14 +297,18 @@ Formatering af procenter indeholder procenttegnet (%). Følgende valgmuligheder 
 
 -   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
 -   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. **Bemærk:** hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+-   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+    > [!NOTE]
+    >  Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="custom-formatting"></a>Brugerdefineret formatering
 
 Brug kategorien for brugerdefineret formatering til at oprette et brugerdefineret tilsidesættelse af format. Følgende valgmuligheder er tilgængelige:
 
 -   **Type** – det brugerdefinerede format.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. **Bemærk:** hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+-   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+    > [!NOTE]
+    >  Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 Typen bør angive den positive værdi og derefter den negative værdi. Normalt angiver du et lignende format, som differentierer positive og negative værdier. Hvis du for eksempel vil angive, at både positive og negative værdier har to decimaler, men negative værdier vises i parenteser, skal du angive **0,00;(0,00)**. Følgende tabel viser brugerdefinerede formater, du kan bruge til at styre formatet af dine værdier. Alle eksempler er baseret på værdien 1234,56.
 
@@ -570,14 +363,18 @@ Når du vælger en bestemt konto, kombinerer rapportdesigneren normalt kontoen o
 
 ### <a name="book-code-modifiers"></a>Bogkodemodifikatorer
 
-Du kan begrænse en række til en eksisterende kode. Kolonnedefinitionen skal indeholde mindst én **FD**-kolonne, der indeholder en bogkode. **Bemærk:** bogkodebegrænsningen for en række tilsidesætter bogkodebegrænsningerne i kolonnedefinitionen for den pågældende række.
+Du kan begrænse en række til en eksisterende kode. Kolonnedefinitionen skal indeholde mindst én **FD**-kolonne, der indeholder en bogkode. 
+> [!NOTE]
+> Bogkodebegrænsningen for en række tilsidesætter bogkodebegrænsningerne i kolonnedefinitionen for den pågældende række.
 
 ### <a name="account-and-transaction-attributes"></a>Konto- og transaktionsattributter
 
 Nogle regnskabssystemer understøtter kontoattributter og transaktionsattributter i regnskaberne. Disse attributter fungerer som virtuelle kontosegmenter og kan indeholde yderligere oplysninger om kontoen eller transaktionen. Disse ekstra oplysninger kan være konto-id'er, batch-id'er, postnumre eller andre attributter. Hvis regnskabssystemet understøtter attributter, kan du bruge kontoattributter eller transaktionsattributter som rækkemodifikatorer i rækkedefinitionen. Du kan finde oplysninger om, hvordan du tilsidesætter rækkeoplysninger, i afsnittet "Tilsidesætte en kolonnedefinition" tidligere i denne artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angive et hyperlink til cellen Økonomiske dimensioner
-Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier, men du kan angive celler i et regneark i Microsoft Excel i stedet for eller sammen med segmentværdier eller dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**. **Bemærk:** Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
+Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier, men du kan angive celler i et regneark i Microsoft Excel i stedet for eller sammen med segmentværdier eller dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**. 
+> [!NOTE]
+> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
 
 | Linktype, der er valgt       | Beskrivelsen af kolonnen Link ændres til dette |
 |----------------------------------|----------------------------------------------------|
@@ -606,21 +403,27 @@ Som standard udskriver rapportdesigneren ikke rækker, der ikke har en tilsvaren
 3.  Gå til menuen **Filer**, og klik på **Gem** for at gemme ændringerne.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Bruge jokertegn og intervaller i en rækkedefinition
-Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\***, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som **60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet. **Bemærk:** du bør undgå at bruge jokertegn for start- og slutkonti i intervaller. Hvis du bruger jokertegn i den første konto eller den sidste konto, får du måske uventede resultater.
+Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\***, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som **60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet. 
+> [!NOTE]
+> Du bør undgå at bruge jokertegn for start- og slutkonti i intervaller. Hvis du bruger jokertegn i den første konto eller den sidste konto, får du måske uventede resultater.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Enkeltsegment- eller enkeltdimensionsområder
 
-Du kan angive en række segmentværdier eller dimensionsværdier. Fordelen ved at angive et interval er, at du ikke behøver at opdatere rækkedefinitionen, hver gang der tilføjes en ny segmentværdi eller dimensionsværdi til de økonomiske data. Intervallet **+ konto = \[6100:6900\]** henter for eksempel værdierne fra konto 6100 til og med 6900 i rækkebeløbet. Når et interval indeholder et jokertegn (?), evaluerer rapportdesigneren ikke intervallet tegn for tegn. I stedet bestemmes den lave og høje ende af intervallet, og derefter medtages slutværdierne og alle værdier mellem dem. **Bemærk:** Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
+Du kan angive en række segmentværdier eller dimensionsværdier. Fordelen ved at angive et interval er, at du ikke behøver at opdatere rækkedefinitionen, hver gang der tilføjes en ny segmentværdi eller dimensionsværdi til de økonomiske data. Intervallet **+ konto = \[6100:6900\]** henter for eksempel værdierne fra konto 6100 til og med 6900 i rækkebeløbet. Når et interval indeholder et jokertegn (?), evaluerer rapportdesigneren ikke intervallet tegn for tegn. I stedet bestemmes den lave og høje ende af intervallet, og derefter medtages slutværdierne og alle værdier mellem dem. 
+> [!NOTE]
+> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Intervaller med flere segmenter eller flere dimensioner
 
-Når du angiver et interval ved hjælp af kombinationer af flere dimensionsværdier, foretages intervalsammenligningen på basis af ..\financial-dimensions\dimension-by-dimension. Intervalsammenligningen kan ikke udføres tegn for tegn eller på basis af et delvist segment. Intervallet **+ konto = \[5000:6000\], afdeling = \[1000:2000\], bærer = \[00\]** omfatter for eksempel kun de konti, der svarer til hvert enkelt segment. I dette scenarie skal den første dimension være i intervallet fra 5000 til 6000, den anden dimension skal være i intervallet fra 1000 til 2000, og den sidste dimension skal være 00. For eksempel er **+ konto =\[5100\], afdeling =\[1100\], bærer =\[01\]** ikke medtaget i rapporten, da det sidste segment er uden for det angivne interval. Hvis en segmentværdi indeholder mellemrum, skal du sætte værdien i kantede parenteser (\[ \]). Følgende værdier er gyldige for et segment på fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsværdier skal omsluttes af kantede parenteser (\[ \]), og rapportdesigneren tilføjer disse parenteser for dig. Når et interval med flere segmenter eller flere dimensioner indeholder jokertegn (? eller \*) bestemmes den lave og høje ende af intervallet med flere segmenter eller flere dimensioner, og derefter medtages slutværdierne og alle værdier imellem dem. Hvis du har et stort interval, såsom hele rækken af konti fra 40000 til og med 99999, skal du angive en gyldig startkonto og slutkonto, hvis det er muligt. **Bemærk:** Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
+Når du angiver et interval ved hjælp af kombinationer af flere dimensionsværdier, foretages intervalsammenligningen på basis af ..\financial-dimensions\dimension-by-dimension. Intervalsammenligningen kan ikke udføres tegn for tegn eller på basis af et delvist segment. Intervallet **+ konto = \[5000:6000\], afdeling = \[1000:2000\], bærer = \[00\]** omfatter for eksempel kun de konti, der svarer til hvert enkelt segment. I dette scenarie skal den første dimension være i intervallet fra 5000 til 6000, den anden dimension skal være i intervallet fra 1000 til 2000, og den sidste dimension skal være 00. For eksempel er **+ konto =\[5100\], afdeling =\[1100\], bærer =\[01\]** ikke medtaget i rapporten, da det sidste segment er uden for det angivne interval. Hvis en segmentværdi indeholder mellemrum, skal du sætte værdien i kantede parenteser (\[ \]). Følgende værdier er gyldige for et segment på fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsværdier skal omsluttes af kantede parenteser (\[ \]), og rapportdesigneren tilføjer disse parenteser for dig. Når et interval med flere segmenter eller flere dimensioner indeholder jokertegn (? eller \*) bestemmes den lave og høje ende af intervallet med flere segmenter eller flere dimensioner, og derefter medtages slutværdierne og alle værdier imellem dem. Hvis du har et stort interval, såsom hele rækken af konti fra 40000 til og med 99999, skal du angive en gyldig startkonto og slutkonto, hvis det er muligt. 
+> [!NOTE]
+> Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Du kan kun tilføje et plustegn (&), når du automatisk opretter rækkedefinitioner ved hjælp af dialogboksen **Indsæt rækker fra dimensioner**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Tilføje eller trække fra andre konti i en rækkedefinition
 Hvis du vil tilføje eller fratrække pengebeløbene på en konto fra pengebeløbene på en anden konto, kan du bruge plustegnet (+) og minustegnet (-) i cellen **Link til økonomiske dimensioner**. Følgende tabel viser gyldige formater for links til addition og subtraktion til økonomiske data.
 
-| Handling                                                                               | Brug dette format:                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Handling  | Brug dette format:  |
+|------------|-----------------|
 | Tilføj to fuldt kvalificerede konti.                                                       | + Division = \[000\], konto = \[1205\], afdeling = \[00\] + Division = \[100\], konto = \[1205\], afdeling = \[00\] |
 | Tilføj to segmentværdier.                                                                 | + Konto = \[1205\] + konto = \[1210\]                                                                           |
 | Tilføj segmentværdier, der indeholder jokertegn.                                    | + Konto = \[120? + konto = \[11??\]                                                                             |
@@ -634,7 +437,9 @@ Hvis du vil tilføje eller fratrække pengebeløbene på en konto fra pengebelø
 | Træk et interval af segmentværdier fra.                                                     | - Konto = \[1200:1205\]                                                                                       |
 | Træk et interval af segmentværdier, der indeholder jokertegn, fra.                    | - Konto = \[120?:130?\]                                                                                       |
 
-Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimensioner** til at anvende den korrekte formatering på dine hyperlinks til økonomiske data. Alle værdierne kan indeholde jokertegn (? eller \*). Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }. **Bemærk:** for at trække værdier fra, skal du sætte parenteser omkring værdierne. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer rapportdesigneren i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
+Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimensioner** til at anvende den korrekte formatering på dine hyperlinks til økonomiske data. Alle værdierne kan indeholde jokertegn (? eller \*). Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }. 
+> [!NOTE]
+> For at trække værdier fra, skal du sætte parenteser omkring værdierne. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer rapportdesigneren i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Lægge konti til eller trække konti fra andre konti
 
@@ -648,7 +453,8 @@ Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimen
 
 4.  Gentag trin 2-3 for at tilføje flere handlinger.
 
-**Bemærk:** operatoren gælder for alle dimensioner i rækken.
+> [!NOTE]
+> Operatoren gælder for alle dimensioner i rækken.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>Beskrivelse af dialogboksen Dimensioner
 I følgende tabel beskrives felterne i dialogboksen **Dimensioner**.
@@ -656,7 +462,7 @@ I følgende tabel beskrives felterne i dialogboksen **Dimensioner**.
 | Vare                | Beskrivelse                                                                                                                                                                                                                                                                                             |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enkelt dimension eller interval | I feltet **Fra** skal du angive navnet på en konto eller klikke på knappen **Gennemse** ![Gennemse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Gennemse") for at søge efter kontoen. Hvis du vil vælge et interval, skal du søge efter en værdi i feltet **Til**.                                             |
-| Dimensionsværdisæt | Angiv navnet på dimensionsværdisættet i feltet **Navn**. Hvis du vil oprette, redigere, kopiere eller slette e sæt, skal du klikke på **Administrer dimensionsværdisæt**. Feltet ****Formel udfyldes med formlen fra cellen **Link til økonomiske dimensioner** for dette dimensionsværdisæt i rækkedefinitionen. |
+| Dimensionsværdisæt | Angiv navnet på dimensionsværdisættet i feltet **Navn**. Hvis du vil oprette, redigere, kopiere eller slette e sæt, skal du klikke på **Administrer dimensionsværdisæt**. Feltet **Formel** udfyldes med formlen fra cellen **Link til økonomiske dimensioner** for dette dimensionsværdisæt i rækkedefinitionen. |
 | Samlekonti   | I feltet **Navn** skal du indtaste eller søge efter en dimension af samlekonti. Feltet **Formel** udfyldes med formlen i cellen **Link til økonomiske dimensioner** for denne samlekonto i rapportdefinitionen.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Tilføje dimensionsværdisæt i en rækkedefinition
@@ -680,7 +486,9 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 2.  Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3.  I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
 4.  Vælg det dimensionsværdisæt, der skal opdateres, på listen, og klik derefter på **Rediger**.
-5.  I dialogboksen **Rediger** skal du redigere de formelværdier, der skal medtages i sættet. **Bemærk:** Hvis du tilføjer nye konti eller dimensioner, skal du sørge for at redigere de eksisterende dimensionsværdisæt, så ændringerne implementeres.
+5.  I dialogboksen **Rediger** skal du redigere de formelværdier, der skal medtages i sættet. 
+    > [!NOTE]
+    >  Hvis du tilføjer nye konti eller dimensioner, skal du sørge for at redigere de eksisterende dimensionsværdisæt, så ændringerne implementeres.
 6.  Dobbeltklik på cellen, og vælg den relevante operator, **Fra** konto og **Til** konto.
 7.  Klik på **OK** for at lukke dialogboksen **Rediger** og gemme ændringerne.
 
@@ -703,6 +511,8 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 <a name="see-also"></a>Se også
 --------
 
-[Økonomirapportering i Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Økonomirapportering](financial-reporting-intro.md)
+
+
 
 

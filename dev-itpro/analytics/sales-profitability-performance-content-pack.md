@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Salgs- og rentabilitetsperformance, Power BI-indhold
+
+[!include[banner](../includes/banner.md)]
+
 
 Dette emne beskriver, hvad der er indeholdt i Dynamics-365 for Operations – indholdspakke til salgs- og rentabilitetsperformance til Microsoft Power BI. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 
@@ -44,6 +48,7 @@ Rentabiliteten kan analyseres efter:
 
 ## <a name="accessing-the-content-pack"></a>Adgang til indholdspakken
 Indholdspakken til salgs- og rentabilitetsperformance til Power BI er udgivet som et implementeringsaktiv i Lifecycle Services (LCS) og kan åbnes fra Microsoft Dynamics 365 for Operations. Du kan finde yderligere oplysninger om adgang til og start af Power BI-rapporter i [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
+**Bemærk:** KB 4011327 er en forudsætning for dette Power BI-indhold. Når du logger på Lifecycle Services, kan du få adgang til KB her: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Metrikker, der er inkluderet i indholdspakken
 Indholdspakken indeholder en rapport, der består af et sæt metrikker, der er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdspakken.
@@ -55,7 +60,7 @@ Indholdspakken indeholder en rapport, der består af et sæt metrikker, der er v
 |                        | Samlet omsætning efter kundegruppe            | Stigning år for år i omsætning                                      |
 |                        | Gennemsnitlig kundeomsætning efter kundegruppe | Bruttoavance                                            |
 |                        | Omsætning og bruttoavance efter kundegruppe   |                                                         |
-| Omsætning efter produkt     | Omsætning og bruttoavance efter salgskategori   | Antal produkter i alt                                    |
+| Omsætning efter produkt     | Omsætning og bruttoavance efter salgskategori   | I alt \# produkter                                    |
 |                        | Top 10-produkter efter omsætning                 | Antal aktive produkter i alt og procentdel af antal produkter i alt |
 |                        | Omsætning i alt efter salgskategori            | Antal produkter, der udgør for 80 % af omsætningen           |
 | Omsætning pr. periode\*    | Omsætning pr. måned                           | Stigning år for år i omsætning                                      |
@@ -110,6 +115,8 @@ Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI
 -   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
+
+
 
 
 

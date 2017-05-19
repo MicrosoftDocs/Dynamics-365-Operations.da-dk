@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Arbejdere skal registrere den tid, de bruger på arbejdet, samt deres fremmøde,
 -   Arbejdere, der skal registrere tid og fremmøde regelmæssigt, f.eks. hver dag, hver uge eller hver 14. dag.
 -   Ledende medarbejdere, ledere og lønningsmedarbejdere, der beregner, godkender og overfører arbejderregistreringer med henblik på yderligere behandling.
 
-| **Bemærk! **                                                                                                                                                                                                                                                    |
+| **Bemærk!**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis du kører Tid og fremmøde sammen med Produktionsudførelse, registreres alle registreringer for projekter, projektaktiviteter, indirekte aktiviteter, fraværskoder, overtid og flekstid, og de bruges til at beregne løn i begge moduler. |
 
@@ -53,7 +54,7 @@ Efter konfigurationen kan arbejderne angive forskellige former for registreringe
 -   Tids- og vareforbrug på produktionsjob.
 -   Tid brugt på en maskine i produktionen, hvis maskinen er defineret som en ressource.
 
-| **Bemærk! **                                                                                                                                                                                                                      |
+| **Bemærk!**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | En arbejder tildeles automatisk de tidsregistreringer, der er oprettet for en bestemt maskine i produktionen, hvis medarbejderen vælger at arbejde som assistent for maskinen, når han eller hun starter produktionsjobbet. |
 
@@ -82,7 +83,7 @@ På samme måde som du tildeler en beregningsgruppe til en tidsregistreringsarbe
 -   Tilføje manuelle tillæg.
 -   Angive yderligere oplysninger om registrering af fravær.
 
-| **Bemærk! **                                                                                                                                                                             |
+| **Bemærk!**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis der er beregnet overtid for bestemte arbejdere, kan overtiden tildeles bestemte job i løbet af dagen. Det er relevant, hvis jobomkostningerne er beregnet på basis af arbejderløn. |
 
@@ -102,7 +103,7 @@ Når registreringerne er godkendt, kan du overføre dem til et periodisk lønjob
 ## <a name="reversing-transferred-registrations"></a>Tilbageføre overførte registreringer
 Tilbageførsel af posteringer – annullering af dem – kan ske indtil det tidspunkt, hvor lønperiodens lønoverførsel køres. Det betyder, at løndata er overført til en ekstern fil. Ved tilbageførsel tilbagetrækkes alle registreringer, og eventuelle transaktioner, der er bogført på produktionsordrer eller projekter, modregnes og neutraliseres.
 
-| **Bemærk! **                                                 |
+| **Bemærk!**                                                 |
 |----------------------------------------------------------|
 | Den eksterne fil kan importeres til et lønsystem. |
 

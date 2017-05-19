@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 33851ff7c9ee2c50544589ade0191798a13706e7
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c7ab943d368c82e7d6c586ec5105210a928e2d31
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -68,7 +69,7 @@ Derefter bogfører April fakturaen. Fakturaen har nu en saldo på 700,00. April 
 | DISC-10020 | Kasserabat    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--normal"></a>Resterende betaling d. 15. juli, brug kasserabat = Normal
-April betaler resten af fakturaen den 15. juli, som er efter rabatperioden. På siden **Udlign åbne posteringer** vises ingen rabatbeløb i feltet **Forkalkuleret kasserabat **, og værdien i feltet **Kasserabatbeløb** er **0,00**. Når April betaler de resterende 700,00, ydes der ingen yderligere rabat.
+April betaler resten af fakturaen den 15. juli, som er efter rabatperioden. På siden **Udlign åbne posteringer** vises ingen rabatbeløb i feltet **Forkalkuleret kasserabat**, og værdien i feltet **Kasserabatbeløb** er **0,00**. Når April betaler de resterende 700,00, ydes der ingen yderligere rabat.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

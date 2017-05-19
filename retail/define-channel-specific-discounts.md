@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -19,15 +19,19 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: b2f59db59ea49925c3bb5e1d75beee95191220d0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 6e52ba4bdb8e879959ff886010092914332e6e12
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="define-channel-specific-discounts"></a>Definere kanalspecifikke rabatter
+
+[!include[banner](includes/banner.md)]
+
 
 Detailhandlere angiver ofte forskellige rabatter i forskellige kanaler. Dette emne gennemgår de begreber, du skal kende for at oprette en rabat til en bestemt kanal. 
 
@@ -39,14 +43,15 @@ Detailhandlere tilbyder ofte forskellige rabatter i forskellige kanaler. Dette e
 Detail og handel i Microsoft Dynamics 365 for Operations bruger prisgrupper til at definere kanal-specifikke rabatter. Prisgrupper kan tildeles til en eller flere af følgende enheder: kanaler, kataloger, tilhørsforhold og fordelskundeprogrammer. I denne artikel beskrives kanaler, men de samme begreber gælder for katalograbatter, tilhørsforhold med rabatter og fordelskunderabatter.
 
 ## <a name="price-groups"></a>Prisgrupper
-\[caption id="attachment\_256084" align="alignnone" width="640"\][![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png) Prisgruppelinks til Retail\[/caption\]
+
+[![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Ovenstående diagram viser forholdet mellem enheder, der kan være på en transaktion (kanal, katalog, tilhørsforhold, debitor, fordelskundekort), og de forskellige rabattyper, der kan konfigureres. Alle transaktionerne finder sted i en kanal, så kanalen vil garanteret være til stede i en transaktion. De resterende enheder er valgfri. På de enkelte masterdatasider er der et link til en relateret prisgruppeside, hvor du kan få vist og tilføje prisgrupper efter behov. En prisgruppe anvendes til at relatere fire forskellige typer enheder til rabatter, prisjusteringer og samhandelsaftaler. Vi anbefaler, at du planlægger en strategi for, hvordan du navngiver dine prisgrupper for at holde dem organiseret. En mulighed ville være at bruge et bogstav eller talpræfiks eller -suffiks til at skelne mellem de forskellige typer. For eksempel 1-xxxxx for kanalprisgrupper og 2-xxxxx for katalogprisgrupper. Der er fire undersøgelsessider med fokus på hver af de detailenheder, der kan have rabatter tilknyttet.
 
--   **Detailkanalsprisgrupper **–Denne side viser en liste over kanaler og rabatter, der er kædet sammen for hver prisgruppe.
--   **Katalogprisgrupper **–Denne side viser en liste over kataloger og rabatter, der er kædet sammen for hver prisgruppe.
--   **Prisgrupper for fordelskunder **–Denne side viser en liste over fordelskundeprogrammer og rabatter, der er kædet sammen for hver prisgruppe.
--   **Prisgrupper for tilhørsforhold **–Denne side viser en liste over tilhørsforhold og rabatter, der er kædet sammen for hver prisgruppe.
+-   **Detailkanalsprisgrupper**–Denne side viser en liste over kanaler og rabatter, der er kædet sammen for hver prisgruppe.
+-   **Katalogprisgrupper**–Denne side viser en liste over kataloger og rabatter, der er kædet sammen for hver prisgruppe.
+-   **Prisgrupper for fordelskunder**–Denne side viser en liste over fordelskundeprogrammer og rabatter, der er kædet sammen for hver prisgruppe.
+-   **Prisgrupper for tilhørsforhold**–Denne side viser en liste over tilhørsforhold og rabatter, der er kædet sammen for hver prisgruppe.
 
 ## <a name="example-channel-discount-set-up"></a>Rabatopsætning for eksempelkanal
 Følgende eksempel illustrerer de opgaver, der er involveret i oprettelse af en kanalrabat.
@@ -63,5 +68,7 @@ Følgende eksempel illustrerer de opgaver, der er involveret i oprettelse af en 
 --------
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)
+
+
 
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Få vist og evaluere resultaterne af et spørgeskema
+
+[!include[banner](includes/banner.md)]
+
 
 I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
 
@@ -56,7 +60,8 @@ Fra siden **Svar** kan du se oplysninger om svar, opnåede point, svarpersonens 
 -   **Svarrapport** – denne rapport viser de svar, som svarpersonen valgte for hver enkelt spørgsmål i spørgeskemaet.
 -   **Forkerte svar** – denne rapport indeholder oplysninger, der er relateret til de forkerte svar, som svarpersonen valgte.
 
-**Bemærk!** Rapporten **Resultater** er kun tilgængelig, hvis du bruger resultatgrupper på spørgeskemaet, og hvis du har valgt **Resultatside** på siden **Spørgeskemaer**. Rapporten **Smart** og rapporten **Forkerte svar** er kun tilgængelige, hvis du har valgt **Svarrapport** på siden **Spørgeskemaer**.
+> **Bemærk**
+>   Rapporten **Resultater** er kun tilgængelig, hvis du bruger resultatgrupper på spørgeskemaet, og hvis du har valgt **Resultatside** på siden **Spørgeskemaer**. Rapporten **Smart** og rapporten **Forkerte svar** er kun tilgængelige, hvis du har valgt **Svarrapport** på siden **Spørgeskemaer**.
 
 ## <a name="questionnaire-statistics"></a>Spørgeskemastatistik
 Du kan bruge spørgeskemastatistik til at analysere resultaterne af et udfyldt spørgeskema baseret på beregninger, som du definerer. Når du skal definere beregninger, skal du udføre følgende opgaver:
@@ -79,5 +84,7 @@ De indstillinger, du definerer, gemmes og kan bruges til at genberegne resultate
 [Brug af spørgeskemaer](questionnaires.md)
 
 [Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
+
+
 
 

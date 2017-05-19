@@ -3,7 +3,7 @@ title: Konfigurere mobilenheder til lagerstedsarbejde
 description: "Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 
@@ -315,7 +319,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="even">
 <td>Vis lagerstatus</td>
-<td>Markér denne indstilling for at få vist status for varer på lager. Du kan finde flere oplysninger under <a href="/inventory/inventory-statuses.md">Fordele ved at bruge lagerstatus</a>. Denne indstilling er tilgængelig for alle menupunkter, der bruger eksisterende arbejde, undtagen cyklusoptælling.</td>
+<td>Markér denne indstilling for at få vist status for varer på lager. Denne indstilling er tilgængelig for alle menupunkter, der bruger eksisterende arbejde, undtagen cyklusoptælling.</td>
 </tr>
 <tr class="odd">
 <td>Vis oversigt over plukskærm</td>
@@ -412,5 +416,7 @@ I følgende tabel beskrives de forskellige arbejdstyper, som du kan bruge sammen
 [Konfigurere et menupunkt på en mobilenhed til at udføre arbejde af typen indkøbsordre (opgaveguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [Konfigurere et menupunkt på en mobilenhed til at registrere modtagne varer (opgaveguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Fordele ved at bruge lagerstatus](../inventory/inventory-statuses.md)
+
 
 

@@ -3,7 +3,7 @@ title: "Indkøb og forsyning i den offentlige sektor"
 description: "Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning. Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 3462604d18acaabf54d69edfb7e35e8638c74f10
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 78a1f6c5e0c8e45ba084abfb4c3c3a17d7313a00
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="procurement-and-sourcing-in-the-public-sector"></a>Indkøb og forsyning i den offentlige sektor
+
+[!include[banner](../includes/banner.md)]
+
 
 Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning. Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb.
 
@@ -47,7 +51,7 @@ Du skal muligvis konfigurere følgende indkøbs- og forsyningsfunktioner for off
 > [!NOTE]
 > Dette gælder også for Kreditor.
 
--   [Regnskab i den offentlige sektor i Frankrig](/localizations/eurore/public-sector-accounting-france.md) 
+-   [Regnskab i den offentlige sektor i Frankrig](../localizations/emea-fra-public-sector-accounting.md) 
 
 For franske organisationer kan yderligere trin være nødvendige for den offentlige sektor.
 
@@ -135,6 +139,8 @@ Lad os sige, at du får vist en indkøbsordrelinje med indkøb, der er bogført 
 
  
 
-Du kan finde yderligere oplysninger i [Kreditorbetalinger i den offentlige sektor](/dynamics365/operations/scm/procurement/procurement-sourcing-overview) og [Indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).
+Du kan finde yderligere oplysninger i [Kreditorbetalinger i den offentlige sektor](/dynamics365/operations/supply-chain/procurement/procurement-sourcing-overview) og [Indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).
+
+
 
 

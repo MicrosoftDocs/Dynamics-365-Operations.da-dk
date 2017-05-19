@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2225707329c67a30d9234bef5282d49834ea042a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dad6d4ec3788ae73386d582433a8585602e1290e
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -65,7 +66,7 @@ Det antages, at 0,5 meter af røret er kasseret for hver fem stykker af rør, de
 
 ### <a name="consumption"></a>Forbrug
 
-Du vælger typisk** Forbrug** som afrundingsmekanisme, når råvaren skal plukkes i hele mængder af en bestemt materialehåndteringsenhed for produktet. 2 quarts maling anvendes f.eks. til at producere et stykke af en færdigvare, og malingen er plukket i bøtter a 25 quarts. I dette tilfælde kan afrundingsmekanismen **Forbrug** bruges til at afrunde forbrug af bøtter a 25 quarts til hele tal. Her er beregningen for den mængde af maling, der er påkrævet, hvis der skal produceres 180 stk. færdige varer:
+Du vælger typisk**Forbrug** som afrundingsmekanisme, når råvaren skal plukkes i hele mængder af en bestemt materialehåndteringsenhed for produktet. 2 quarts maling anvendes f.eks. til at producere et stykke af en færdigvare, og malingen er plukket i bøtter a 25 quarts. I dette tilfælde kan afrundingsmekanismen **Forbrug** bruges til at afrunde forbrug af bøtter a 25 quarts til hele tal. Her er beregningen for den mængde af maling, der er påkrævet, hvis der skal produceres 180 stk. færdige varer:
 
 1.  Maling, der skal bruges, uden spild: 180 × 2 = 360 quarts
 2.  Antal bøtter: 360 ÷ 25 = 14.4, der afrundes til 15

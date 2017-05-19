@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Udgiftsstyring er tæt integreret med den finansielle forvaltning af organisatio
 
 ### <a name="per-diems"></a>Diæter
 
-Du skal definere medarbejderen pr. diæt, som organisationen stiller til rådighed. Da diæter normalt bruges til at dække udgifter som måltider, logi og andre omkostninger, kan du oprette regler for diætgodtgørelser, som organisationen tilbyder. Diætsatser kan baseres på tidspunktet på året, rejselokationen eller begge. Når du definerer en diætregel, kan du angive, at du vil tilbageholde en procentdel af en diætsats, hvis en arbejder modtager ekstra måltider eller tjenester. Du kan også definere diætsatsniveauer for at angive et minimum- og maksimumantal timer, en diætsats kan gælde for en arbejders rejse. **Beslutninger: **
+Du skal definere medarbejderen pr. diæt, som organisationen stiller til rådighed. Da diæter normalt bruges til at dække udgifter som måltider, logi og andre omkostninger, kan du oprette regler for diætgodtgørelser, som organisationen tilbyder. Diætsatser kan baseres på tidspunktet på året, rejselokationen eller begge. Når du definerer en diætregel, kan du angive, at du vil tilbageholde en procentdel af en diætsats, hvis en arbejder modtager ekstra måltider eller tjenester. Du kan også definere diætsatsniveauer for at angive et minimum- og maksimumantal timer, en diætsats kan gælde for en arbejders rejse. **Beslutninger:**
 
 -   Standarddiætregler for første og sidste dag:
     -   Hvad er det mindste antal timer, en medarbejder kan gøre krav på for en dag og stadig få en diæt?
@@ -124,10 +125,10 @@ For udgiftsrelateret moms skal du bestemme, hvad der er inkluderet eller aktiver
 -   Indgår der moms i udgiftsbeløbet?
 -   Skal momsopkrævning være aktiveret på udgifter?
 
-Bemærk, at hvis du under planlægningen af finansmodulet har besluttet at anvende amerikansk moms og bruge momsregler, hvilket gøres ved at skifte feltet ** Anvend reglerne for moms** til Ja, kan du ikke aktivere momsopkrævning på udgifter.
+Bemærk, at hvis du under planlægningen af finansmodulet har besluttet at anvende amerikansk moms og bruge momsregler, hvilket gøres ved at skifte feltet **Anvend reglerne for moms** til Ja, kan du ikke aktivere momsopkrævning på udgifter.
 
 ## <a name="policies"></a>Politikker
-Du kan oprette udgiftsrapportpolitikker, så din virksomhed kan spare tid og penge, når medarbejderne pådrager dig udgifter på deres vegne. Politikkerne sikrer, at medarbejderne holder sig inden for budgettet, angiver alle nødvendige oplysninger og kun bruger penge efter behov. Du skal træffe følgende beslutninger for hver udgiftsrapportpolitik og hver udgiftsrapportgodkendelsespolitik, du opretter. **Beslutninger: **
+Du kan oprette udgiftsrapportpolitikker, så din virksomhed kan spare tid og penge, når medarbejderne pådrager dig udgifter på deres vegne. Politikkerne sikrer, at medarbejderne holder sig inden for budgettet, angiver alle nødvendige oplysninger og kun bruger penge efter behov. Du skal træffe følgende beslutninger for hver udgiftsrapportpolitik og hver udgiftsrapportgodkendelsespolitik, du opretter. **Beslutninger:**
 
 -   Hvad er navnet på politikken?
 -   Hvad er udgiftspolitikken til?

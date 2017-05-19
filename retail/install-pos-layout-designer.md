@@ -18,25 +18,29 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: b33cbf67c00b6baea4393e82d19300085781af29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e60994f5c4fa38fc2be17b4021e2def904c87b7f
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Installere layoutdesigneren til Retail POS
 
+[!include[banner](includes/banner.md)]
+
+
 Du kan bruge ét-klik-designer til at designe forskellige Retail Modern POS (MPOS) og Cloud POS-layout, i enten liggende eller stående tilstand, til butikker, kasseapparater, kasserer og ledere.
 
 Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af pengeskuffelayoutet. Et layout styrer placeringen af forskellige objekter. Af eksempler kan nævnes det samlede layout, layout for varegitter, kundelayout og betalingslayout samt layoutet for forskellige menuknapper. Layout omfatter også det overordnede udseende af den salgsgrænseflade, som arbejderne kan se.
 
-## <a name="install-the-oneclick-designer"></a>Installere ét klik-designer
+## <a name="install-the-one-click-designer"></a>Installere enkelt klik-designer
 1.  Brug menuen øverst til venstre i Microsoft Dynamics 365 for Operations til at navigere til **Detail** **og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Skærmlayout**.
 2.  Vælg et layout, der har programtypen **Modern POS til Windows** eller **Cloud POS**, og klik derefter på **Layoutdesigner**.
 3.  Klik på **Åbn** på meddelelseslinjen nederst i vinduet Internet Explorer for at starte ét klik-designeren. (Meddelelseslinjen vises muligvis et andet sted i andre browsere).
-4.  I **Programkørsel - Sikkerhedsadvarsel**-meddelelsen, der vises, skal du klikke på **Kør **for at installere Retail designerværten. Statusindikatoren viser forløbet af installationen.
+4.  I **Programkørsel - Sikkerhedsadvarsel**-meddelelsen, der vises, skal du klikke på **Kør**for at installere Retail designerværten. Statusindikatoren viser forløbet af installationen.
 5.  Når installationen er fuldført, skal du angive dit brugernavn og din adgangskode til Microsoft Dynamics 365 for Operations på siden **Log på** og derefter klikke på **Log på** for at starte designeren.
 6.  Når dine legitimationsoplysninger er valideret, og designeren starter, kan du designe dit eget layout eller redigere det eksisterende layout. [![Layout i ét klik-designeren](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
@@ -52,5 +56,7 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
 --------
 
 [Konfigurere, downloade, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md)
+
+
 
 

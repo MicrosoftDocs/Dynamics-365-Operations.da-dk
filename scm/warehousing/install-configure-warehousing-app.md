@@ -3,7 +3,7 @@ title: Installere og konfigurere Microsoft Dynamics 365 for Operations &#8211; L
 description: "I dette emne beskrives, hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Operations – Lagersted."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Installere og konfigurere Microsoft Dynamics 365 for Operations &#8211; Lagersted
+
+[!include[banner](../includes/banner.md)]
+
 
 I dette emne beskrives, hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Operations – Lagersted.
 
@@ -67,7 +71,7 @@ For at aktivere appen til at kommunikere med en bestemt Dynamics 365 for Operati
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Oprette og konfigurere en brugerkonto i Dynamics 365 til Operations
 For at aktivere Dynamics 365 for Operations til at bruge din AD Azure-applikation, skal du fuldføre følgende konfiguration:
 
-1.  Opret en ny brugerkonto i Azure Active Directory til Dynamics 365 for Operations-lejeren. Formålet med denne brugerkonto er at få adgang til bestemte brugerdefinerede tjenester i lagerstedsappen, som vises i Dynamics 365 for Operations. Når du har fuldført dette trin, har du WMDP-brugerlegitimationsoplysninger, som består af en WMDP e-mailadresse og en WMDP-adgangskode. Du kan finde oplysninger om de grundlæggende trin til at føje brugere til Azure AD og Dynamics 365 for Operations i dette selvstudium: [Tilmelding til et Microsoft Dynamics 365 Operations-abonnement](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Opret en ny brugerkonto i Azure Active Directory til Dynamics 365 for Operations-lejeren. Formålet med denne brugerkonto er at få adgang til bestemte brugerdefinerede tjenester i lagerstedsappen, som vises i Dynamics 365 for Operations. Når du har fuldført dette trin, har du WMDP-brugerlegitimationsoplysninger, som består af en WMDP e-mailadresse og en WMDP-adgangskode. Du kan finde oplysninger om de grundlæggende trin til at føje brugere til Azure AD og Dynamics 365 for Operations i dette selvstudium: [Tilmelding til et Microsoft Dynamics 365 Operations-abonnement](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Opret en Dynamics 365 for Operations-bruger, der svarer til lagerstedsappens brugerlegitimationsoplysninger.
     1.  I Dynamics 365 for Operations skal du gå til **Systemadministration** &gt; **Generelt** &gt; **Brugere**.
     2.  Opret en ny bruger.
@@ -98,6 +102,8 @@ I tilfælde af en mistet eller beskadiget enhed skal du fjerne adgangen til Dyna
 6.  Klik på fanen **Konfigurer**, rul ned, og sørg for, at **Klient-ID** for applikationen er det samme som i trin 2 i dette afsnit.
 7.  Klik på knappen **Slet** på kommandolinjen.
 8.  Klik på **Ja** i bekræftelsesmeddelelsen.
+
+
 
 
 

@@ -19,10 +19,11 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 0e11c27fe8cfd9d99009a6e556d5dcf7ffb023fa
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 65da71f135a0d85b9517a132da6a898e04a04ffd
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -59,7 +60,7 @@ Brug budgetkoder for fordelingsbudgettypen, når du angiver budgetregisterposter
 
 Siden **Konfiguration af budgetstyring** indeholder indstillinger for arbejde med fordelinger. 
 
-I afsnittet **Disponible budgetmidler** når du vælger indstillingen **Brug kun fordelt beløb **, bliver de andre indstillinger under **Beløb, der skal summeres** utilgængelige. Desuden indeholder beregningen af disponible budgetmidler kun fordelte beløb i beløbene, der skal summeres. Normalt vil du medtage faktiske udgifter, budgetreservationer for behæftelser, budgetreservationer for ubekræftede behæftelser og budgetreservationer for budgetreservationer i beløbene, som skal fratrækkes. 
+I afsnittet **Disponible budgetmidler** når du vælger indstillingen **Brug kun fordelt beløb**, bliver de andre indstillinger under **Beløb, der skal summeres** utilgængelige. Desuden indeholder beregningen af disponible budgetmidler kun fordelte beløb i beløbene, der skal summeres. Normalt vil du medtage faktiske udgifter, budgetreservationer for behæftelser, budgetreservationer for ubekræftede behæftelser og budgetreservationer for budgetreservationer i beløbene, som skal fratrækkes. 
 
 > [!NOTE] 
 > Når **Brug kun fordelt beløb** er valgt, spores det oprindelige budget, overførsler og revisioner stadig, men de bruges ikke i beregningen. 

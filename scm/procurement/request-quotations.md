@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -147,7 +148,7 @@ Når du sender en tilbudsanmodning, oprettes der automatisk et svarark. Når du 
 
 Hvis der er knyttet et spørgeskema til tilbudsanmodningssagen, skal du manuelt angive svarene på spørgsmålene i svararket.  
 
-Hvis du skal angive alternative linjer, og tilbudsanmodningssagen tillader dette, skal du klikke på **Tilføj linje** på oversigtspanelet **Købstilbudslinjer **. Angiv derefter oplysninger om produktet, f.eks. vareantal eller indkøbskategori, antal, pris og rabat.  
+Hvis du skal angive alternative linjer, og tilbudsanmodningssagen tillader dette, skal du klikke på **Tilføj linje** på oversigtspanelet **Købstilbudslinjer**. Angiv derefter oplysninger om produktet, f.eks. vareantal eller indkøbskategori, antal, pris og rabat.  
 
 Hvis du har skrevet et svar, men det kræver et nyt tilbud fra leverandøren, kan du sende tilbudsanmodningen igen. Der oprettes en ny kladde og en rapport, som du kan bruge til at anmode om ændringer fra leverandøren.  
 

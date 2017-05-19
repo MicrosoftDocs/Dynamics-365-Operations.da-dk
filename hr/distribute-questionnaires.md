@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: da-dk
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Distribuere og udfylde et spørgeskema
+
+[!include[banner](includes/banner.md)]
+
 
 I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
 
@@ -45,7 +49,7 @@ Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et s
 
 Du kan oprette spørgeskemagrupper fra følgende sider:
 
--   **Spørgeskemagrupper **– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema. Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.
+-   **Spørgeskemagrupper**– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema. Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.
 -   **Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.
 
 Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**. Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet. Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.
@@ -53,7 +57,8 @@ Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte besvarelser i et spørgeskema
 Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for. 
 
-**Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
+> **Bemærk!**
+>  Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
 
 På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder. Listen på siden viser alle planlagte spørgeskemaer. 
 
@@ -99,7 +104,8 @@ Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem
 Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem. 
 
-**Bemærk!** Svarpersoner skal være brugere i Microsoft Dynamics 365 for Operations for at fuldføre et spørgeskema.
+> **Bemærk!**
+>  Svarpersoner skal være brugere i Microsoft Dynamics 365 for Operations for at fuldføre et spørgeskema.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Besked til svarpersoner om en planlagt besvarelse
 
@@ -109,12 +115,14 @@ Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.e
 
 Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**. Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
 
-**Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
+> **Bemærk!**
+>  Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Afslutning af et planlagt spørgeskema
 Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser. Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan. 
 
-**Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
+> **Bemærk!**
+>  Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Besvare spørgeskemaer
 Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner. Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:
@@ -132,5 +140,7 @@ Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper
 [Brug af spørgeskemaer](questionnaires.md)
 
 [Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+
+
 
 
