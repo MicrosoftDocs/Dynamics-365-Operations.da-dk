@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: a62b56bd2ac0a7484471190c5f342a1db335ab07
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Udfør følgende trin for at angive, hvem den manuelle opgave skal tildeles til.
     <td>Brugere i et bestemt organisationshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil tildele opgaven til.</li>
-    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som opgaven kan tildeles. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter:
-    <ol>
+    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som opgaven kan tildeles. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
     <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
     <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
     </ol></li>
-    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet opgaven skal tildeles:
-    <ul>
+    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet opgaven skal tildeles: <ul>
     <li><strong>Tildel til alle hentede brugere</strong> – Opgaven tildeles alle brugere i intervallet.</li>
     <li><strong>Tildel kun til den sidst hentede bruger</strong> – Opgaven tildeles kun til den sidste bruger i intervallet.</li>
     <li><strong>Udeluk brugere med følgende betingelse</strong> – Opgaven tildeles ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>
@@ -139,13 +137,11 @@ Udfør følgende trin for at angive, hvem den manuelle opgave skal tildeles til.
     <td>En workflowopgavekø</td>
     <td><ol>
     <li>Når du har valgt <strong>Kø</strong>, skal du klikke på fanen <strong>Købaseret</strong>.</li>
-    <li>Udfør følgende trin for at tildele opgaven til en bestemt kø:
-    <ol>
+    <li>Udfør følgende trin for at tildele opgaven til en bestemt kø: <ol>
     <li>På listen <strong>Køtype</strong> skal du vælge <strong>Workflowopgavekøer</strong>.</li>
     <li>Vælg køen på listen <strong>Kønavn</strong>.</li>
     </ol></li>
-    <li>Hvis en bestemt betingelse skal være afgørende for, hvilken kø opgaven tildeles, skal du udføre følgende trin:
-    <ol>
+    <li>Hvis en bestemt betingelse skal være afgørende for, hvilken kø opgaven tildeles, skal du udføre følgende trin: <ol>
     <li>På listen <strong>Køtype</strong> skal du vælge <strong>Betingede workflowopgavekøer</strong>.</li>
     <li>På listen <strong>Kønavn</strong> skal du vælge <strong>Betinget kø</strong>.</li>
     </ol></li>
@@ -196,13 +192,11 @@ Hvis en bruger ikke færdiggør den manuelle opgave inden for den tildelte tid, 
     <td>Brugere i et bestemt organisationshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil eskalere opgaven til.</li>
-    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som opgaven kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter:
-    <ol>
+    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som opgaven kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
     <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
     <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
     </ol></li>
-    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet opgaven skal eskaleres til:
-    <ul>
+    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet opgaven skal eskaleres til: <ul>
     <li><strong>Tildel til alle hentede brugere</strong> – Opgaven eskaleres til alle brugere i intervallet.</li>
     <li><strong>Tildel kun til den sidst hentede bruger</strong> – Opgaven eskaleres kun til den sidste bruger i intervallet.</li>
     <li><strong>Udeluk brugere med følgende betingelse</strong> – Opgaven eskaleres ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>

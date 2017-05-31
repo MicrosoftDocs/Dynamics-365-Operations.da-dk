@@ -1,11 +1,12 @@
 # [Omkostningsstyring](cost-management/TOC.md)
 # [Lagerstyring](inventory/TOC.md)
 # Varedisponering
-## Oprette behovsprognose
+## Opret behovsprognose
 ### [Oversigt over behovsprognose](master-planning/introduction-demand-forecasting.md)
-### [Konfigurere en behovsprognose](master-planning/demand-forecasting-setup.md)
-### [Generere et statistisk budgetgrundlag](master-planning/generate-statistical-baseline-forecast.md)
-### [Foretage manuel justering af budgetgrundlaget](master-planning/manual-adjustments-baseline-forecast.md)
+### [Konfigurer en behovsprognose](master-planning/demand-forecasting-setup.md)
+### [Importér historiske data til behovsprognoser](master-planning/import-historical-data.md)
+### [Generer et statistisk budgetgrundlag](master-planning/generate-statistical-baseline-forecast.md)
+### [Foretag manuel regulering af budgetgrundlaget](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Autorisere en justeret prognose](master-planning/authorize-adjusted-forecast.md)
 ### [Overvåge prognosenøjagtighed](master-planning/monitor-forecast-accuracy.md)
 ### [Fjerne afvigelser fra historiske transaktionsdata](master-planning/remove-historical-outliers-calculating-demand-forecast.md)

@@ -3,10 +3,10 @@ title: "Arbejdsområde til omkostningsstyring på mobilenheder"
 description: "Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på mobilenheder, som kan anvendes på Microsoft Dynamics 365 for Operations-mobilappen. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31a9650774b2ddb70827ffa210154ca10c761236
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 09383c24b0dd2ad61a836f6c8dc97f4389915772
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -36,11 +36,15 @@ Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på 
 <a name="overview-of-the-cost-controlling-mobile-workspace"></a>Oversigt over arbejdsområde til omkostningsstyring på mobilenheder
 -------------------------------------------------
 
-Arbejdsområdet til **Omkostningsstyring** på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer. En medarbejder modtager f.eks. en invitation til en international konference, men organisationen skal dække alle rejseudgifter. Medarbejderen spørger sin chef, om han må deltage i konferencen. Chefen åbner arbejdsområdet til **Omkostningsstyring** på sin mobiltelefon for at se, om hun har budget til, at medarbejderen kan deltage i konferencen.
+Arbejdsområdet til **Omkostningsstyring** på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer. 
+
+En medarbejder modtager f.eks. en invitation til en international konference, men organisationen skal dække alle rejseudgifter. Medarbejderen spørger sin chef, om han må deltage i konferencen. Chefen åbner arbejdsområdet til **Omkostningsstyring** på sin mobiltelefon for at se, om hun har budget til, at medarbejderen kan deltage i konferencen.
 
 ### <a name="data-security"></a>Datasikkerhed
 
-Dataene i arbejdsområdet til **Omkostningsstyring** er sikret via brugerlegitimationsoplysninger. Ledere af bærere kan kun se data for deres egen bærer. Sikkerheden på adgangsniveau administreres i modulet **Omkostningsregnskab**. Bogholdere definerer konfiguration af arbejdsområdet til **Omkostningsstyring** i modulet **Omkostningsregnskab**. Når arbejdsområdet er publiceret på Microsoft Dynamics 365 for Operations-mobilappen, er det tilgængeligt i appen. Derfor kan alle bærerledere i organisationen se data i samme format.
+Dataene i arbejdsområdet til **Omkostningsstyring** er sikret via brugerlegitimationsoplysninger. Ledere af bærere kan kun se data for deres egen bærer. Sikkerheden på adgangsniveau administreres i modulet **Omkostningsregnskab**. 
+
+Bogholdere definerer konfiguration af arbejdsområdet til **Omkostningsstyring** i modulet **Omkostningsregnskab**. Når arbejdsområdet er publiceret på Microsoft Dynamics 365 for Operations-mobilappen, er det tilgængeligt i appen. Derfor kan alle bærerledere i organisationen se data i samme format.
 
 ### <a name="actions-views-and-links"></a>Handlinger, visninger og links
 
@@ -87,7 +91,7 @@ Før du kan bruge arbejdsområdet **Omkostningsstyring** på mobilenheder, skal 
 <tr class="odd">
 <td>Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere skal være implementeret.</td>
 <td>Systemadministrator</td>
-<td>Hvis Dynamics 365 for Operations ikke allerede er installeret i organisationen, kan systemadministratoren se under <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Installere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis Dynamics 365 for Operations ikke allerede er installeret i organisationen, kan systemadministratoren se under <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Installere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 skal være implementeret.</td>
@@ -95,9 +99,9 @@ Før du kan bruge arbejdsområdet **Omkostningsstyring** på mobilenheder, skal 
 <td>KB 4013633 (en X ++ opdatering eller et metadatahotfix) indeholder fire arbejdsområder til mobilenheder til supply chain management. For at implementere KB 4013633 skal systemadministratoren benytte følgende fremgangsmåde:
 <ol>
 <li>Hent KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installere metadatahotfixet</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Anvend den installerbare pakke</a> på dit Microsoft Dynamics 365 for Operations-system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installere metadatahotfixet</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anvend den installerbare pakke</a> på dit Microsoft Dynamics 365 for Operations-system.</li>
 </ol></td>
 </tr>
 <tr class="odd">

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
-ms.openlocfilehash: f08434b4c818460009644e77da1b37ba86cc1d54
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 181ad9a7ab4e83ce9eb34312e93b1ebdeb2e04eb
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/27/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,10 +38,14 @@ Dynamics 365 for Operations indeholder et hjælpesystem, der er baseret på to h
 -   Et dokumentationswebsted
 -   Opgaveguider
 
-Du kan få adgang til både artikler og opgaveguider fra ruden Hjælp i Dynamics 365 for Operations som vist på følgende skærmbillede. [![Ruden Hjælp](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) I denne artikel beskrives hjælpesystemet, og hvordan du kan oprette brugerdefineret dokumentation og undervisningsressourcer til din virksomhed.
+Du kan få adgang til både artikler og opgaveguider fra ruden Hjælp i Dynamics 365 for Operations som vist på følgende skærmbillede.
+
+![Hjælp-rude](./media/help-pane-ops-task-guides-1024x741.png)
+
+I denne artikel beskrives hjælpesystemet, og hvordan du kan oprette brugerdefineret dokumentation og undervisningsressourcer til din virksomhed.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjælp til docs.microsoft.com
-Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations) er den primære kilde til produktdokumentation til Dynamics 365 for Operations. Webstedet indeholder følgende funktioner:
+Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) er den primære kilde til produktdokumentation til Dynamics 365 for Operations. Webstedet indeholder følgende funktioner:
 
 -   **Adgang til det mest opdaterede indhold** – Webstedet giver os en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen på. Derfor hjælper den med at sikre, at du har adgang til de seneste tekniske oplysninger.
 -   **Indhold, der er skrevet af eksperter** – Webstedet giver et mere omfattende sæt af produktdokumentation, der kan forbedres af community-medlemmer både inden for og uden for Microsoft.
@@ -50,13 +54,48 @@ Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynam
 
 Vi har flyttet alt indhold fra vores tidligere Hjælp-wiki til dokumenter. Vi er meget begejstrede for vores nye websted og håber, at du også bliver glad for det.
 
-### <a name="when-can-we-use-it"></a>Hvornår kan vi bruge den?
+### <a name="searching-on-docsmicrosoftcom"></a>Søger på docs.microsoft.com
+Vi modtager mange spørgsmål om, hvordan du søger efter vores indhold. Hvis du starter fra en side om Dynamics 365 for Operations på vores websted, sørger vi for, at din søgning fokuseres på indhold til Dynamics 365 for Operations. Du kan fjerne dette fokus ved at klikke på X ud for Operations i søgefeltet. 
+![Søg i ordrer](./media/search-scope.png)
 
-Du kan læse indhold på webstedet lige nu – det er helt offentligt og søgbart og kræver ikke logon. Du kan bruge dine foretrukne søgemaskiner til at finde indhold. Du kan kommentere artikler på webstedet, hvis du vil, ved at logge på.
+Du kan også finde indholdet med en søgemaskine. For at få de bedste resultater anbefaler vi, at du bruger en webstedssøgning, f.eks. site:docs.microsoft.com "søgeord"  
+![Webstedssøgning](./media/site-search.png)
+
+![Resultater af webstedssøgning](./media/site-search-results.png)
+
+
+### <a name="how-can-i-contribute"></a>Hvordan kan jeg bidrage? 
+
+Send en kommentar til os! 
+
+1 Klik på **Kommentarer** for at komme til kommentarerne i bunden af siden.
+
+![Bemærkninger](./media/comments.png)
+
+2 Begynd at skrive dine kommentarer, og klik derefter på **Send kommentar**.
+
+![Send kommentar](./media/before-signin.png)
+
+3 Vælg den type konto, du vil logge på med:  
+Klik på et af ikonerne til venstre for at knytte dette websted til en eksisterende konto, f.eks. en Twitter-, Facebook- eller Microsoft-konto. 
+
+Eller 
+
+Angiv en mailadresse og en ny adgangskode til at oprette en ny konto til webstedet til højre. 
+
+![Indstillinger for logon](./media/signin-options.png)
 
 
 ## <a name="task-guides"></a>Opgaveguider
-En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden Hjælp. Når du først klikker på en opgaveguide, viser ruden Hjælp de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider. [![Opgaveguides læsevisning](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) For at starte den automatiserede, interaktive oplevelse skal du klikke på **Start opgaveguiden** i bunden af ruden Hjælp. En sort markør åbnes og angiver den handling, du skal udføre. Følg vejledningen, der vises i brugergrænsefladen, og indtast data som anvist. [![Opgaveguidens trinvise instruktion](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Vigtigt!** De data, du indtaster, når du afspiller en opgaveguide, er ægte. Hvis du er i et produktionsmiljø, indsættes dataene i det firma, du aktuelt bruger.
+En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden Hjælp. Når du først klikker på en opgaveguide, viser ruden Hjælp de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider. 
+
+![Opgaveguidens læsevisning](./media/task-guide-ops-1024x742.png)
+
+For at starte den automatiserede, interaktive oplevelse skal du klikke på **Start opgaveguiden** i bunden af ruden Hjælp. En sort markør åbnes og angiver den handling, du skal udføre. Følg vejledningen, der vises i brugergrænsefladen, og indtast data som anvist. 
+![Opgaveguidens trinvise instruktion](./media/task-guide-step-1-ops.png)
+
+> [!IMPORTANT] 
+> Vigtigt: De data, du indtaster, når du afspiller en opgaveguide, er ægte. Hvis du er i et produktionsmiljø, indsættes dataene i det firma, du aktuelt bruger.
 
 ### <a name="it-all-begins-with-task-recorder"></a>Det hele begynder med Arbejdsrutineoptager
 
@@ -72,7 +111,9 @@ Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager i
 Du kan oprette dine egne opgaveregistreringer, eller du kan hente og tilpasse opgaveregistreringer, som Microsoft leverer. Du kan derfor oprette en tilpasset Hjælp for din organisation, der afspejler din implementering af Dynamics 365 for Operations. Hvis du vil have vist en opgaveregistrering i ruden Hjælp i Dynamics 365 for Operations og afspille den som en opgaveguide, skal du gemme registreringen i et BPM-bibliotek i LCS. Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan finde flere oplysninger under [Brug af opgaveregistreringer til at oprette dokumentation eller uddannelse](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Hjælp i produkterne
-For at få adgang til indhold i Hjælp i Dynamics 365 for Operations skal du enten klikke på ikonet **Hjælp** (**?**) og derefter vælge Hjælp eller trykke på Ctrl + Skift +?. I begge tilfælde åbnes ruden Hjælp. Fra ruden Hjælp kan du få adgang til artikler eller opgaveguider. [![Hjælp-rude](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+For at få adgang til indhold i Hjælp i Dynamics 365 for Operations skal du enten klikke på ikonet **Hjælp** (**?**) og derefter vælge Hjælp eller trykke på Ctrl + Skift +?. I begge tilfælde åbnes ruden Hjælp. Fra ruden Hjælp kan du få adgang til artikler eller opgaveguider. 
+
+![Hjælp-rude](./media/help-pane-wiki-1024x684.png)
 
 ### <a name="accessing-articles-from-the-help-pane"></a>Adgang til artikler fra ruden Hjælp
 
@@ -80,19 +121,24 @@ Fra ruden Hjælp kan du få adgang til artikler, der gælder for Dynamics 365 fo
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Adgang til opgaveguider fra ruden Hjælp
 
-Før du kan få adgang til opgaveguider fra ruden **Hjælp**, skal en systemadministrator gå til siden Systemparametre i Dynamics 365 for Operations og konfigurere nogle indstillinger. **Bemærkninger:**
+Før du kan få adgang til opgaveguider fra ruden **Hjælp**, skal en systemadministrator gå til siden Systemparametre i Dynamics 365 for Operations og konfigurere nogle indstillinger. 
 
--   Hvis du vil konfigurere hjælp, skal du være logget på med en konto i den samme lejer som den lejer, hvor Dynamics 365 for Operations er installeret.
--   Det er ikke muligt at oprette forbindelse til et LCS-bibliotek fra en forekomst af Dynamics 365 for Operations, der kører på en lokal virtuel harddisk (VHD).
+> [!NOTE]
+> -   Hvis du vil konfigurere hjælp, skal du være logget på med en konto i den samme lejer som den lejer, hvor Dynamics 365 for Operations er installeret.
+> -   Det er ikke muligt at oprette forbindelse til et LCS-bibliotek fra en forekomst af Dynamics 365 for Operations, der kører på en lokal virtuel harddisk (VHD).
 
-[![Systemparametre med hjælpeindstillinger](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) På siden **Systemparametre** skal du følge disse trin:
+![Formularen Systemparametre med hjælpeindstillinger](./media/system-parameters_ops-1024x437.png)
 
-1.  **Vigtigt:**Første gang du åbner fanen Hjælp, skal du oprette forbindelse til Lifecycle Services. Husk at klikke på linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter klikke på OK for at få adgang til parameterformen.[![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+På siden **Systemparametre** skal du følge disse trin:
+
+1.  **Vigtigt:**Første gang du åbner fanen Hjælp, skal du oprette forbindelse til Lifecycle Services. Husk at klikke på linket i midten af formularen, vente på forbindelsen, lukke dialogboksen og derefter klikke på OK for at få adgang til parameterformularen.
+![Opret forbindelse til LCS](./media/connect-to-lcs-crop-1024x365.png)
 2.  Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 3.  Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 4.  Angiv visningsrækkefølgen for BPM-bibliotekerne. Dette bestemmer den rækkefølge, som opgaveregistreringer fra bibliotekerne vises i på ruden Hjælp.
 
-Når en systemadministrator har udført disse trin, kan du åbne ruden Hjælp og klikke på fanen **Opgaveguider**. Nu kan du se opgaveguiderne, der gælder for den aktuelle side i Dynamics 365 for Operations. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen. Når du klikker på en opgaveguide i ruden Hjælp, viser ruden Hjælp de trinvise instruktioner, og du kan afspille opgaveguiden. [![Opgaveguidens læsevisning](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+Når en systemadministrator har udført disse trin, kan du åbne ruden Hjælp og klikke på fanen **Opgaveguider**. Nu kan du se opgaveguiderne, der gælder for den aktuelle side i Dynamics 365 for Operations. Hvis der ikke findes opgaveguider, kan du angive nøgleord for at indsnævre søgningen. Når du klikker på en opgaveguide i ruden Hjælp, viser ruden Hjælp de trinvise instruktioner, og du kan afspille opgaveguiden. 
+![Opgaveguidens læsevisning](./media/task-guide-ops-1024x742.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Hvor er de oversatte opgaveguider?
 
