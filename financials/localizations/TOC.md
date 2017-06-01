@@ -67,6 +67,7 @@
 ### [CODA-bankkontoudtog](emea-bel-coda-bank-statement-import.md)
 ### [Intervat-momsopgørelse](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM-rapportopsætning](emea-bel-prodcom-report.md)
+### [Bankafstemningsrapporter](emea-bel-reconciliation-reports.md)
 
 ## Tjekkiet
 ### [Kasserabat på kreditnota](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Midlertidigt stop af afskrivning](emea-cze-depreciation-suspension-holidays.md)
 ### [Afskrivning af anlægsaktiver](emea-cze-fixed-assets-depreciation.md)
 ### [Halvårlig afskrivning](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Momsrapportering ](emea-cze-intra-community-vat-transactions.md)
 ### [Momsopgørelse](emea-cze-vat-statement-details.md)
 ## Estland
 ### [Momsopgørelse](emea-est-vat-statement-details.md)

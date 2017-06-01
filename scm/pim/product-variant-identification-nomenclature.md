@@ -1,40 +1,38 @@
 ---
-title: Nomenklatur for produktnummer
-description: "Dette emne beskriver, hvordan du kan konfigurere en produktnummernomenklatur til at erstatte det faste format [Produktmasternummer – Konfiguration – Størrelse – Farve – Type], med et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og afgrænsere i tekst efter eget valg. Du kan også oprette en nomenklatur for at identificere konfigurationer, der er oprettet af begrænsningsbaseret produktkonfiguration. Disse nomenklaturer kan indeholde attributter efter eget valg."
-author: YuyuScheller
+title: Nomenklatur for produktvariantnumre og -navne
+description: "Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format. Den nye nomenklatur har et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og tekstafgrænsningstegn efter eget valg. Du kan også oprette en nomenklatur for produktnavne. Endelig kan du også oprette en nomenklatur til at identificere konfigurationer, der er oprettet af den begrænsningsbaserede produktkonfigurator. Disse nomenklaturer kan indeholde attributter efter eget valg."
+author: roxanadiaconu
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 audience: Application User
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 ms.custom: 220104
-ms.assetid: 31c9efb4-b5f6-4af3-b884-8f1e128469bd
+ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: roxanad
+ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: deda2b7986333e0d865aa87e6b34b6acdc8f6a6d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 0e19b18a2900a0b42dc9a1a984b9c884ca0c17cc
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
-# <a name="product-number-nomenclature"></a>Nomenklatur for produktnummer
+# <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nomenklatur for produktvariantnumre og -navne
 
-[!include[banner](../includes/banner.md)]
+Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format. Den nye nomenklatur har et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og tekstafgrænsningstegn efter eget valg. Du kan også oprette en nomenklatur for produktnavne. Endelig kan du også oprette en nomenklatur til at identificere konfigurationer, der er oprettet af den begrænsningsbaserede produktkonfigurator. Disse nomenklaturer kan indeholde attributter efter eget valg.
 
-
-Dette emne beskriver, hvordan du kan konfigurere en produktnummernomenklatur til at erstatte det faste format [Produktmasternummer – Konfiguration – Størrelse – Farve – Type], med et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og afgrænsere i tekst efter eget valg. Du kan også oprette en nomenklatur for at identificere konfigurationer, der er oprettet af begrænsningsbaseret produktkonfiguration. Disse nomenklaturer kan indeholde attributter efter eget valg.
-
-Med den nye nomenklatur fpr produktvariantnummer kan du medtage segmenter i dine produktvariant-id'er. Disse segmenter kan indeholde produktmasternummer, produktdimensioner, nummerserier, tekstkonstanter og attributter. Med denne funktion kan du hurtigt finde en bestemt produktvariant, når du opretter en salgsordre for indkøbsordre.
+De nye nomenklaturer for produktvariantnumre og produktvariantnavne giver dig mulighed for at medtage segmenter i id'erne for produktvarianter. Disse segmenter kan indeholde produktmasternummer og -navn, produktdimensions-id'er og -navne, nummerserier, tekstkonstanter og attributter. Med denne funktion kan du hurtigt finde en bestemt produktvariant, når du opretter en salgsordre eller en indkøbsordre. Du opretter nomenklaturer til både produktvariantnumre og produktvariantnavne ved hjælp af siden **Produktnomenklatur**. Klik på **Administration af produktoplysninger** &gt; **Konfiguration** for at åbne denne side.
 
 ## <a name="nomenclature-of-predefined-product-variants"></a>Nomenklatur for foruddefinerede produktvarianter
 Der oprettes produktvarianter for produktmastere efter en af de tre konfigurationsteknologier:
@@ -43,69 +41,70 @@ Der oprettes produktvarianter for produktmastere efter en af de tre konfiguratio
 -   Begrænsningsbaseret
 -   Dimensionsbaseret
 
-Hver produktvariant har et nummer, og med nomenklaturen for produktvariantidentifikation kan du vælge de segmenter, der skal medtages i hvert produktvariantnummer. Du kan vælge følgende segmenter på siden **Produktnomenklatur**.
+Hver produktvariant har et nummer og et navn, og nomenklaturerne for produktvariantidentifikation giver dig mulighed for at vælge de segmenter, der skal medtages i hvert produktvariantnummer eller -navn. Du kan vælge følgende segmenter på siden **Produktnomenklatur**:
 
 -   Produktmasternummer
+-   Produktmasternavn
 -   Nummerserieværdi
 -   Tekstkonstant
 -   Produktdimensioner
-    -   Variantkonfiguration
-    -   Farve
-    -   Størrelse
-    -   Skabelon
+    -   Konfigurations-id eller -navn
+    -   Farve-id eller -navn
+    -   Størrelses-id eller -navn
+    -   Type-id eller -navn
 
-Når en nomenklatur for produktvariantidentifikation er defineret, kan den være knyttet til en produktdimensionsgruppe. Alle de produktmastere, der refererer til denne produktdimensionsgruppe, vil derfor blive tildelt produktvariantnumre efter nomenklaturen. Det er også muligt at tildele nomenklatur for produktvariantidentifikation direkte til en produktmaster, i hvilket tilfælde de produktvarianter, der tilhører denne master, tildeles produktvariantnumre efter nomenklaturen.
+Når du har defineret en nomenklatur for produktvariantidentifikationsnummer, kan du knytte den til en produktdimensionsgruppe. Alle de produktmastere, der refererer til denne produktdimensionsgruppe, vil derfor blive tildelt produktvariantnumre efter nomenklaturen. Men nomenklaturer for produktvariantnavn kan dog ikke knyttes til produktdimensionsgrupper. Du kan også tildele en nomenklatur for produktvariantidentifikation direkte til en produktmaster. I dette tilfælde tildeles de produktvarianter, der hører til produktmasteren, produktvariantnumre og -navne i overensstemmelse med nomenklaturerne.
 
 ### <a name="example"></a>Eksempel
 
-En T-shirt (TS1234) er produceret i 3 forskellige størrelser (S, M, L), 4 forskellige farver (rød, grøn, blå, gul) og 2 typer (Polo, V), der giver i alt 24 mulige produktvarianter. En nomenklatur for produktvariantidentifikation er oprettet med følgende segmenter:
+En T-shirt (TS1234), der produceres i tre størrelser (S, M, L), fire farver (rød, grøn, blå, gul) og to typer (Polo, V). Derfor er der 24 mulige produktvarianter (= 3 × 4 × 2). Du opretter en nomenklatur for produktvariantnumre, der har følgende segmenter:
 
 1.  Produktmasternummer
-2.  Tekstkonstant: '-'
+2.  Tekstkonstant: "-"
 3.  Farve
-4.  Tekstkonstant: '-'
+4.  Tekstkonstant: "-"
 5.  Størrelse
-6.  Tekstkonstant: '-'
-7.  Skabelon
+6.  Tekstkonstant: "-"
+7.  Type
 
-Produktvariantnummeret for Rød, Small, Polo vil være: TS1234-Rød-Small-Polo.
+I dette tilfælde vil produktvariantnummeret for en rød, small, polo T-shirt være TS1234-Rød-Small-Polo.
 
 ## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatur for begrænsningsbaserede konfigurationer
-En dedikeret nomenklatur kan bygges for konfigurationsproduktdimensionen for begrænsningsbaserede konfigurationer. Du kan vælge følgende segmenter på siden **Produktnomenklatur**.
+Til begrænsningsbaserede konfigurationer kan du oprette en dedikeret nomenklatur til konfigurationsproduktdimensionen. Du kan vælge følgende segmenter på siden **Produktnomenklatur**:
 
 -   Nummerserieværdi
 -   Tekstkonstant
--   Attributværdi 
+-   Attributværdi
 
-Hver komponent i en produktkonfigurationsmodel kan have sin egen konfigurationsnomenklatur. Kun de attributter, der tilhører komponenten, kan anvendes. Attributter fra underkomponenter eller brugerkrav er ikke tilgængelige.
+Hver komponent i en produktkonfigurationsmodel kan have sin egen konfigurationsnomenklatur. Kun de attributter, der tilhører komponenten, kan anvendes. Attributter fra underkomponenter eller brugerkrav kan ikke anvendes.
 
 ### <a name="example"></a>Eksempel
 
-En produktkonfigurationsmodel har en rodkomponent med to attributter.
+En produktkonfigurationsmodel har en rodkomponent, der har to attributter:
 
 -   Materiale (plast, træ, stål)
 -   Længde (10... 100)
 
-En konfigurationsnomenklatur er defineret ved hjælp af følgende segmenter:
+Du opretter en konfigurationsnomenklatur, der har følgende segmenter:
 
 1.  Attributværdi: Materiale
-2.  Tekstkonstant: 'AAA'
+2.  Tekstkonstant: "AAA"
 3.  Attributværdi: Længde
 
-Konfigurations-id for træmateriale med en længde på 78 får følgende konfigurations-id: TræAAA78.
+I dette tilfælde vil konfigurations-id'et for træmateriale, der har en længde på 78, være WoodAAA78.
 
 ## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatur for dimensionsbaserede konfigurationer
-En dedikeret nomenklatur kan bygges for konfigurationsproduktdimensionen for dimensionsbaserede konfigurationer. Du kan vælge følgende segmenter på siden **Produktnomenklatur**.
+Til dimensionsbaserede konfigurationer kan du oprette en dedikeret nomenklatur til konfigurationsproduktdimensionen. Du kan vælge følgende segmenter på siden **Produktnomenklatur**:
 
 -   Nummerserieværdi
 -   Tekstkonstant
 -   Vare i konfigurationsgruppe
 
-En konfigurationsnomenklatur kan defineres for en stykliste.
+Du kan definere en konfigurationsnomenklatur for en stykliste.
 
 ### <a name="example"></a>Eksempel
 
-En stykliste har 4 styklistelinjer, der er opdelt i 2 variantgrupper.
+En stykliste indeholder fire styklistelinjer, der er opdelt i to konfigurationsgrupper:
 
 -   Styklistelinje: M0007, Standardkabinet
     -   Variantgruppe: Kabinet
@@ -116,89 +115,87 @@ En stykliste har 4 styklistelinjer, der er opdelt i 2 variantgrupper.
 -   Styklistelinje: M0022, Forgitter af metal
     -   Variantgruppe: Forgitter
 
-En konfigurationsnomenklatur er defineret ved hjælp af følgende segmenter:
+Du opretter en konfigurationsnomenklatur, der har følgende segmenter:
 
 1.  Variantgruppe: Kabinet
-2.  Tekstkonstant: '&'
+2.  Tekstkonstant: "&"
 3.  Variantgruppe: Forgitter
 
-Konfigurations-id for et standardkabinet med forgitter af stof bliver: M0007&M0021.
+I dette tilfælde vil konfigurations-id'et for et standardkabinet, der har frontgitter af stof, være M0007&M0021.
 
-## <a name="nomenclature-of-a-combination-of-product-variants-and-configurations"></a>Nomenklaturen for en kombination af konfigurationer og produktvarianter
-Når du bruger enten begrænsningsbaseret eller dimensionsbaseret konfigurationsteknologi til at konfigurere produktvarianter for en produktmaster, kan produktvarianterne-får produktvariantnumre, der omfatter nomenklaturen fra konfigurationsdimensionen. Hvis du vil konfigurere varianter, skal du følge disse trin:
+## <a name="nomenclature-for-a-combination-of-product-variants-and-configurations"></a>Nomenklaturen for en kombination af produktvarianter og -konfigurationer
+Når du bruger enten begrænsningsbaseret eller dimensionsbaseret konfigurationsteknologi til at konfigurere produktvarianter for en produktmaster, kan produktvariantnumrene for produktvarianterne omfatte nomenklaturen fra konfigurationsdimensionen. Hvis du vil konfigurere varianter, skal du følge disse trin.
 
 1.  Definer en nomenklatur for produktvariantnummer, som indeholder konfigurationsdimensionen på siden **Produktnomenklatur**.
-2.  Tildel en produktdimensionsgruppe med konfigurationsdimensionen denne nomenklatur.
-3.  Definer en konfigurationsnomenklatur for komponenter eller styklister, der skal bruges til at konfigurere produktvarianter.
+2.  Tildel nomenklaturen til en produktdimensionsgruppe, der har konfigurationsdimensionen.
+3.  Definer en konfigurationsnomenklatur for komponenter eller styklister, der skal bruges til at konfigurere produktvarianterne.
+
+Du kan også oprette en nomenklaturer for produktvariantnavne. Produktvariantnavnene kan konfigureres til at indeholde konfigurations-id'et eller -navnet.
 
 ### <a name="example-for-constraint-based-configurations"></a>Eksempel på begrænsningsbaserede konfigurationer
 
-I dette eksempel kan du bruge en nomenklatur for produktvariantnummer, der består af følgende segmenter:
+I dette eksempel bruger du bruge en nomenklatur for produktvariantnummer, der består af følgende segmenter:
 
 1.  Produktmasternummer
-2.  Tekstkonstant '\_'
+2.  Tekstkonstant "\_"
 3.  Variantkonfiguration
 
-Konfigurationsnomenklaturen kan bestå af følgende segmenter:
+Konfigurationsnomenklaturen består af følgende segmenter:
 
 1.  Attributværdi: Materiale
-2.  Tekstkonstant: 'AAA'
+2.  Tekstkonstant: "AAA"
 3.  Attributværdi: Længde
 
 Du kan angive følgende værdier for segmenter:
 
--   Produktmasternummer = M0099
--   Materiale = Plast
--   Længde = 12
+-   Produktmasternummer = **M0099**
+-   Materiale = **Plast**
+-   Længde = **12**
 
-Produktvariantnummeret bliver: M0099\_PlastAAA12.
+I dette tilfælde er produktvariantnummeret M0099\_PlastAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Eksempel på dimensionsbaserede konfigurationer
 
-I dette eksempel kan du bruge en nomenklatur for produktvariantnummer, der består af følgende segmenter:
+I dette eksempel bruger du bruge en nomenklatur for produktvariantnummer, der består af følgende segmenter:
 
 1.  Produktmasternummer
-2.  Tekstkonstant '//'
+2.  Tekstkonstant "//"
 3.  Variantkonfiguration
 
-Konfigurationsnomenklaturen kan bestå af følgende segmenter:
+Konfigurationsnomenklaturen består af følgende segmenter:
 
 1.  Variantgruppe: Kabinet
-2.  Tekstkonstant: '&'
+2.  Tekstkonstant: "&"
 3.  Variantgruppe: Forgitter
 
 Du kan angive følgende værdier for segmenter:
 
--   Produktmasternummer = D0123
--   Kabinet = M0008
--   Frontgitter = M0022
+-   Produktmasternummer = **D0123**
+-   Kabinet = **M0008**
+-   Frontgitter = **M0022**
 
-Produktvariantnummeret bliver: D0123//M0008&M0022.
+I dette tilfælde er produktvariantnummeret D0123//M0008&M0022.
 
 ## <a name="numbering-conflicts"></a>Nummerkonflikter
-Det er muligt at konfigurere en nomenklatur for produktvariantnummer, der ikke resulterer i unikke produktvariantnumre. Eksempelvis kan dette ske, hvis en aktiv produktdimension ikke er inkluderet i nomenklaturen for en produktmaster, der bruger foruddefineret variantkonfigurationsteknologi. Konflikter håndteres forskelligt for de forskellige konfigurationsteknologier.
+I nogle tilfælde resulterer en nomenklatur for produktvariantnummer, som du konfigurerer, muligvis ikke i entydige produktvariantnumre. F.eks. er produktvariantnumrene ikke entydige, hvis én aktiv produktdimension ikke er inkluderet i nomenklaturen for en produktmaster, der bruger foruddefineret variantkonfigurationsteknologi. Hvordan du håndterer konflikter varierer, afhængigt af konfigurationsteknologien.
 
 ### <a name="predefined-variants"></a>Foruddefinerede varianter
 
-Der opstår en fejl, hvis du forsøger manuelt eller automatisk at generere produktvarianter, hvor en eller flere afsluttes med samme produktvariantnummer. For at undgå dette skal du bruge alle aktive produktdimensioner i produktdimensionsgruppen eller medtage en nummerserie for at sikre, at produktvariantnumrene er entydige.
+Der opstår en fejl, hvis du forsøger manuelt eller automatisk at generere produktvarianter, hvor en eller flere produktvarianter ender med at have det samme produktvariantnummer. Hvis du vil undgå denne situation, skal du bruge alle aktive produktdimensioner i produktdimensionsgruppen. Du kan også inkludere en nummerserie for at sikre, at produktvariantnumrene er entydige.
 
 ### <a name="constraint-based-configurations"></a>Begrænsningsbaserede konfigurationer
 
-Afhængigt af nomenklaturen vil systemet forsøge at skal tildele en konfiguration et ikke-entydigt produktvariantnummer. I dette tilfælde bruges nummerserien for konfigurationsdimensionen som produktvariantnummer i stedet. Hvis dette sker, får du en advarsel. For at undgå dette skal du medtage nok attributter i nomenklaturen for at sikre entydighed, og sørg for, at indstillingen **Genbrug** er slået til for komponenten.
+Afhængigt af nomenklaturen vil systemet muligvis forsøge at tildele en konfiguration et ikke-entydigt produktvariantnummer. I dette tilfælde bruger systemet i stedet for nummerserien for konfigurationsdimensionen som produktvariantnummer, og du får vist advarsel. Hvis du vil undgå dette scenarie, skal du medtage tilstrækkelig mange attributter i nomenklaturen til at sikre entydige produktvariantnumre. Du skal også kontrollere, at indstillingen **Genbrug** er slået til for komponenten.
 
 ### <a name="dimension-based-configurations"></a>Dimensionsbaserede konfigurationer
 
-Konfigurationsprocessen omfatter et trin, hvor systemet foreslår en konfigurationsværdi i overensstemmelse med nomenklaturen. I dette trin kan du manuelt ændre konfigurationsværdien. Når du gemmer konfigurationen, undersøges det, om konfigurationsværdien er entydig. Hvis dette ikke er tilfældet, vises en fejl. Du skal angive en unik konfigurationsværdi for at gemme konfigurationen.
-
-
+Under ét trin af konfigurationsprocessen, foreslår systemet en konfigurationsværdi i overensstemmelse med nomenklaturen. I dette trin kan du manuelt ændre konfigurationsværdien. Når du gemmer konfigurationen, undersøges det, om konfigurationsværdien er entydig. Hvis den indtastede værdi ikke er entydig, får du vist en fejlmeddelelse. Du skal angive en unik konfigurationsværdi for at kunne gemme konfigurationen.
 
 <a name="see-also"></a>Se også
 --------
 
-[Opret en nomenklatur for produktnumre for foruddefinerede produktvarianter (opgaveguide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Opret en nomenklatur for produktnumre for foruddefinerede produktvarianter](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Opret en nomenklatur for produktnumre for konfigurerede produktvarianter (opgaveguide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
-
-
+[Opret en nomenklatur for produktnumre for konfigurerede produktvarianter](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
 
 

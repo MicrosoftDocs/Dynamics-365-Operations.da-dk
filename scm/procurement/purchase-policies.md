@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Når en medarbejder i juridisk enhed 2222 opretter en indkøbsrekvisition, afled
 
 I det foregående eksempel blev alle indkøbsregler defineret i et enkelt organisationshierarki, i dette tilfælde organisationshierarkiet Firmaer. En kompliceret organisation kan dog definere politikker for flere organisationshierarkier.  
 
+
 Contoso er et stort firma, der kræver komplicerede indkøbsregler til styring af rekvisitionsprocessen. Contoso har defineret regler for to forskellige organisationshierarkier: Afdeling og Global indkøbsstyring.  
 
 Politik 123 er defineret for organisationshierarkiet Afdeling for salgsafdelingen Salg UK. I politik 123 angiver reglen Styring af indkøbsrekvisitioner, at begrænsninger i minimale ordremængder skal overholdes. I denne regel er indstillingen **Gennemtving minimumbegrænsninger for ordreantal** valgt.  
@@ -93,6 +94,9 @@ Kategoripolitikreglen definerer, hvordan brugerne kan vælge kreditorer for hver
 ### <a name="re-approval-rule-for-purchase-orders"></a>Gengodkendelsesregel for indkøbsordrer
 
 Reglen for gengodkendelse er en valgfri regel, der definerer kriterierne for at kræve gengodkendelse, hvis der foretages ændringer i en indkøbsordre. De valgte felter evalueres i arbejdsgangen for indkøbsordrer, hvis betingelsen "Kræver gengodkendelse af indkøbsordre" konfigureres i arbejdsgangen.
+
+> [!NOTE]
+> Regnskabsfordelingen nulstilles altid, når en godkendt købsordre med ændringsstyring aktiveret ændres. Så du skal være opmærksom på, om du vil undgå en fornyet godkendelse af en indkøbsordre, når visse felter ændres, feltet Regnskabsfordeling må IKKE medtages som et valgt felt til fornyet godkendelse. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Regler for tilbudsanmodning ved indkøbsrekvisition
 

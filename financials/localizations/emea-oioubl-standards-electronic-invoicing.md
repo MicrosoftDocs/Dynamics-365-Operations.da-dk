@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3023747a4349153ce0b25b56dce5593bce741f1a
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ab36ba1248ba797cbedbc76c6abdc5d089d91103
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/25/2017
 
 Dette emne forklarer, hvilket niveau af dækning vi har til elektronisk fakturering i Microsoft Dynamics 365 for Operations i det europæiske område. 
 
-[Europa-Kommissionen](http://ec.europa.eu/finance/payments/einvoicing/index_en.htm) beskriver elektronisk rapporteringsnetværk med følgende ord: "Elektronisk fakturering – e-fakturering – er elektronisk overførsel af faktureringsoplysninger (fakturering og betaling) mellem forretningspartnere (leverandøren og køberen). Det er en vigtig del af en effektiv økonomiforsyningskæde, og det sammenkæder de interne processer i virksomheder med betalingssystemer." Implementering og indførelse overalt i EU af elektronisk fakturering er reguleret [Rådets direktiv 2010/45/EU](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), hvilket har indflydelse på alle EU-medlemsstater. Virksomheder, der gerne vil have fordel af elektronisk fakturering, skal sende salgsordrefakturaer, fritekstfakturaer, projektfakturaer, kreditnotaer for salgsordre og kreditnotaer for projektfakturaer som .XML-filer til offentlige myndigheder eller andre handelspartnere, der bemyndiger anvendelse af elektronisk fakturering. Disse .XML-filer skal opfylde bestemte standarder. Landespecifikke krav og deres gennemførelse kan variere på tværs af EU-medlemsstaterne, men ofte bruger de Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) i forskellige versioner med tilpasninger samt [PEPPOL](http://www.peppol.eu/peppol_elements/einvoicing)-specifikationer og adgangspunkter til validering og transport. Den primære fordel ved UBL er, at forretningsdokumenter kan standardiseres til forskellige formål. Da UBL er en fleksibel, international standard, der understøtter mange forretningsmæssige krav, kan disse forretningsdokumenter udveksles på tværs af nationale grænser.
+[Europa-Kommissionen](http://ec.europa.eu/finance/payments/einvoicing/index_en.htm) beskriver elektronisk rapporteringsnetværk med følgende ord: "Elektronisk fakturering – e-fakturering – er elektronisk overførsel af faktureringsoplysninger (fakturering og betaling) mellem forretningspartnere (leverandøren og køberen). Det er en vigtig del af en effektiv økonomiforsyningskæde, og det sammenkæder de interne processer i virksomheder med betalingssystemer." Implementering og indførelse overalt i EU af elektronisk fakturering er reguleret [Rådets direktiv 2010/45/EU](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), hvilket har indflydelse på alle EU-medlemsstater. Virksomheder, der gerne vil have fordel af elektronisk fakturering, skal sende salgsordrefakturaer, fritekstfakturaer, projektfakturaer, kreditnotaer for salgsordre og kreditnotaer for projektfakturaer som .XML-filer til offentlige myndigheder eller andre handelspartnere, der bemyndiger anvendelse af elektronisk fakturering. Disse .XML-filer skal opfylde bestemte standarder. Landespecifikke krav og deres gennemførelse kan variere på tværs af EU-medlemsstaterne, men ofte bruger de Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) i forskellige versioner med tilpasninger samt [PEPPOL](http://www.peppol.eu)-specifikationer og adgangspunkter til validering og transport. Den primære fordel ved UBL er, at forretningsdokumenter kan standardiseres til forskellige formål. Da UBL er en fleksibel, international standard, der understøtter mange forretningsmæssige krav, kan disse forretningsdokumenter udveksles på tværs af nationale grænser.
 
 <a name="what-electronic-invoice-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Hvilke formater for elektroniske fakturaer understøttes i øjeblikket i Dynamics 365 for Operations?
 ---------------------------------------------------------------------------------------

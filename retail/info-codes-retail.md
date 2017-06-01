@@ -1,15 +1,15 @@
 ---
 title: Infokoder
 description: Denne artikel indeholder en oversigt over oplysninger om infokoder, infokodegrupper, og hvordan de bruges.
-author: RobinARH
+author: mumani
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
@@ -19,10 +19,10 @@ ms.author: sijoshi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
-ms.openlocfilehash: aaf02ce5bf3af94dea12344c9bfc5c8e9be7abb9
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,13 +47,12 @@ I Dynamics 365 for Operations - Retail kan du oprette grupper af infokoder. Info
 -   Sammenkæd infokoder med andre infokoder eller infokodegrupper for at indsamle oplysninger om et produkt eller en postering uden at skulle definere en separat infokode eller sammenkædet infokode for hvert scenarie.
 
 ## <a name="info-code-examples"></a>Eksempler på infokoder
-**Eksempel 1: Genbrug infokoder** Du kan sammenkæde infokæder på en måde, så hvis én infokode udløses, udløses en anden infokode omgående derefter. Når du f.eks. sælger bestemte produkter, foretrækker du, at ekspedienten tilbyder kunden at købe batterier eller en produktgaranti. For andre produkter vil du gerne have, at ekspedienten spørger kunden, om han/hun vil købe batterier, og indhenter kundens postnummer. Hvis du opretter sammenkædede infokoder for disse scenarier, skal du konfigurere alle variationer af infokoden, så kassereren bliver bedt om at spørge efter de rigtige oplysninger. Hvis du bruger infokodegrupper, kan almindelige infokoder, som f.eks. at spørge efter batterier, konfigureres én gang og derefter genbruges i flere infokodegrupper. Du kan også bruge prioritering i infokodegrupperne for at identificere rækkefølgen, hvori anmodningerne vises. **Eksempel 2: Sammenkæd infokoder med infokodegrupper** Når du sælger bestemte produkter, f.eks. mobilenheder, vil det altid være i din interesse at indsamle bestemte oplysninger såsom telefonnummer, mobiludstyrs-id (MEID) og serienummer. Det vil dog også være i din interesse at indsamle forskellige oplysninger til en tablet i forhold til en mobiltelefon. Du kan oprette en infokodegruppe, der omfatter anmodninger om telefonnummer, MEID og serienummeret, og derefter sammenkæde infokodegruppen med en individuel infokode. Når den produktspecifikke infokode udløses, kan infokodegruppen udløses derefter, så du kan indsamle generelle data uden at skulle definere flere sæt af sammenkædede infokoder for hver enhed.
+**Eksempel 1: Genbrug infokoder** Du kan sammenkæde infokæder på en måde, så hvis én infokode udløses, udløses en anden infokode omgående derefter. Når du f.eks. sælger bestemte produkter, foretrækker du, at ekspedienten tilbyder kunden at købe batterier eller en produktgaranti. For andre produkter vil du gerne have, at ekspedienten spørger kunden, om han/hun vil købe batterier, og indhenter kundens postnummer. Hvis du opretter sammenkædede infokoder for disse scenarier, skal du konfigurere alle variationer af infokoden, så kassereren bliver bedt om at spørge efter de rigtige oplysninger. Hvis du bruger infokodegrupper, kan almindelige infokoder, som f.eks. at spørge efter batterier, konfigureres én gang og derefter genbruges i flere infokodegrupper. Du kan også bruge prioritering i infokodegrupperne for at identificere rækkefølgen, hvori anmodningerne vises.
+
+
+**Eksempel 2: Sammenkæd infokoder med infokodegrupper** Når du sælger bestemte produkter, f.eks. mobilenheder, vil det altid være i din interesse at indsamle bestemte oplysninger såsom telefonnummer, mobiludstyrs-id (MEID) og serienummer. Det vil dog også være i din interesse at indsamle forskellige oplysninger til en tablet i forhold til en mobiltelefon. Du kan oprette en infokodegruppe, der omfatter anmodninger om telefonnummer, MEID og serienummeret, og derefter sammenkæde infokodegruppen med en individuel infokode. Når den produktspecifikke infokode udløses, kan infokodegruppen udløses derefter, så du kan indsamle generelle data uden at skulle definere flere sæt af sammenkædede infokoder for hver enhed.
 
  
--
-
-
-
 
 
 

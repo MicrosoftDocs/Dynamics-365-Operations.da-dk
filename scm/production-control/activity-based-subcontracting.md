@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 4d8ebe2c0a8b4fe08fa7f63ba310c1d9203c1150
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -90,7 +90,7 @@ For procesaktiviteter skal du konfigurere en standardtjeneste til overførselsak
 ## <a name="service-quantity-calculation"></a>Beregning af ydelsesmængde
 Hele indkøbsprocessen er baseret på en varereference for en tjeneste. Varereferencen måles i en måleenhed for en tjeneste. Tjenester måles normalt i antal tjenester (enheder) eller i tid. Hvis du vil beregne ydelsesmængden baseret på den registrerede afslutning af kanban-job, kan du bruge følgende metoder:
 
--   **Beregning, der er baseret på antallet af job** – Ét kanban-job er lig med *n* enheder af tjenesten, uanset det produktantal der leveres. Ét job svarer til én materialehåndteringsenhed i lean manufacturing. Denne beregningsmetode gælder for alle tjenester, der har en fast pris pr. håndteringsenhed. Denne metode anvendes derfor normalt til overførselsaktiviteter. Den kan dog ligeledes anvendelse på aktiviteter, der behandler hele materialehåndteringsenheder.
+-   **Beregning, der er baseret på antallet af job** – Ét kanban-job er lig med *n* enheder i tjeneste, uanset det produktantal der leveres. Ét job svarer til én materialehåndteringsenhed i lean manufacturing. Denne beregningsmetode gælder for alle tjenester, der har en fast pris pr. håndteringsenhed. Denne metode anvendes derfor normalt til overførselsaktiviteter. Den kan dog ligeledes anvendelse på aktiviteter, der behandler hele materialehåndteringsenheder.
 -   **Beregning, der er baseret på produktantallet** – Ydelsesmængden beregnes i forhold til det produktantal, der er planlagt/leveret. Ved beregning af det leverede produktantal kan fejlantal enten medtages eller ej. Denne beregningsmetode gælder for alle de tilfælde, hvor serviceprisen pr. enhed af det forarbejdede produkt er aftalt.
 -   **Beregning, der er baseret på aktivitetstiden** – De teoretiske aktivitetstider beregnes baseret på behandlingstiden for aktiviteten, samlet behandlet antal og gennemløbsforhold for det forarbejdede produkt. Denne beregningsmetode gælder for tjenester, der betales pr. time og har en tidsmæssig afvigelse pr. forarbejdet produkt.
 

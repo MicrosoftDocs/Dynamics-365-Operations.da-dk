@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med v
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Få vist økonomiske data eller data fra et Excel-regneark, når du bruger en kolonne af typen <strong>Link til økonomiske dimensioner</strong> eller <strong>Link til regneark</strong> i rækkedefinitionen. Når du vælger kolonnetypen <strong>FD</strong> er der automatisk angivet standardindstillinger for følgende rækker:
-    <ul>
+    <td>Få vist økonomiske data eller data fra et Excel-regneark, når du bruger en kolonne af typen <strong>Link til økonomiske dimensioner</strong> eller <strong>Link til regneark</strong> i rækkedefinitionen. Når du vælger kolonnetypen <strong>FD</strong> er der automatisk angivet standardindstillinger for følgende rækker: <ul>
     <li><strong>Bogkode/attributkategori:</strong> ACTUAL</li>
     <li><strong>Bogkode/attributkategori:</strong> ACTUAL</li>
     <li><strong>Regnskabsår:</strong> BASE</li>
@@ -359,7 +358,7 @@ Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med v
     <li><strong>Perioder, der er omfattet:</strong> PERIODIC</li>
     <li><strong>Kolonnebredde:</strong> 14</li>
     </ul>
-    Du kan ændre disse standardindstillinger.</td>
+Du kan ændre disse standardindstillinger.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -379,7 +378,7 @@ Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med v
     </tr>
     <tr class="even">
     <td>FILL</td>
-    <td>Udfyld cellen med et tegn, som er omgivet af enkelt anførselstegn. Hvis du ikke indtaster et tegn, er kolonnen tom. Hvis du for eksempel til udfylde en kolonne med en ellipse (...), skal du angive <strong>FILL</strong> <strong>'.'</strong>.</td>
+    <td>Udfyld cellen med et tegn, som er omgivet af enkelt anførselstegn. Hvis du ikke indtaster et tegn, er kolonnen tom. Hvis du for eksempel vil udfylde en kolonne med en ellipse (...), skal du angive <strong>FILL</strong> <strong>'.'</strong></td>
     </tr>
     <tr class="odd">
     <td>PAGE</td>
@@ -387,12 +386,11 @@ Typen af oplysninger, som hver kolonne i en rapport indeholder, er angivet med v
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Få vist data, der er hentet fra et Excel-regneark. Når du vælger kolonnetypen <strong>WKS</strong> er der automatisk angivet standardindstillinger for følgende rækker:
-    <ul>
+    <td>Få vist data, der er hentet fra et Excel-regneark. Når du vælger kolonnetypen <strong>WKS</strong> er der automatisk angivet standardindstillinger for følgende rækker: <ul>
     <li><strong>Regnskabsår:</strong> PERIODIC</li>
     <li><strong>Periode:</strong> BASE</li>
     </ul>
-    Du kan ændre disse standardindstillinger.</td>
+Du kan ændre disse standardindstillinger.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

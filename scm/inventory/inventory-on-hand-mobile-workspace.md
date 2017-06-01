@@ -3,10 +3,10 @@ title: "Disponibelt lager i arbejdsområde til mobilenheder"
 description: "Dette emne indeholder oplysninger om arbejdsområdet Disponibelt lager på mobilenheder, som kan anvendes på Microsoft Dynamics 365 for Operations-mobilappen. I dette arbejdsområde på mobilenheder kan du få indblik i reserveret og tilgængelig lagerplads, når som helst og hvor som helst på mobilenheden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e703ae80800b993ebca1c7bee455af1be41c7d5f
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,15 +37,21 @@ Dette emne indeholder oplysninger om arbejdsområdet Disponibelt lager på mobil
 <a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Oversigt over arbejdsområdet Disponibelt lager på mobilenhed
 --------------------------------------------------
 
-Virksomheder har typisk flere forsendelser og flere tilgange på lageret hver dag. Disse bevægelser ændrer konstant status for den disponible lagerbeholdning. I arbejdsområdet **Disponibelt lager** på mobilenheder kan du se status for den disponible interne lagerbeholdning, så du kan få den nyeste indsigt i lagerdata på mobilenheder efter eget valg. Uanset om du arbejder på lageret, i indkøb, salg, produktion eller administration eller har andre roller, kan du få adgang til dataene for lagerbeholdningen når som helst og hvor som helst. Arbejdsområdet på mobilenheder giver en øjeblikkelig visning af den disponible lagerstatus på tværs af faciliteter. Her kan du få vist den disponible lagerbeholdning på tværs af faciliteter, aktuelle materialereservationer og ikke-reserveret disponibel lagerbeholdning. Du kan også angive varenumre for at forespørge på disponibel lagerbeholdning og udføre en søgning, der er filtreret efter disponible varer eller varianter. Arbejdsområdet til mobilenheder indeholder især disse funktioner:
+Virksomheder har typisk flere forsendelser og flere tilgange på lageret hver dag. Disse bevægelser ændrer konstant status for den disponible lagerbeholdning. I arbejdsområdet **Disponibelt lager** på mobilenheder kan du se status for den disponible interne lagerbeholdning, så du kan få den nyeste indsigt i lagerdata på mobilenheder efter eget valg. Uanset om du arbejder på lageret, i indkøb, salg, produktion eller administration eller har andre roller, kan du få adgang til dataene for lagerbeholdningen når som helst og hvor som helst. 
+
+Arbejdsområdet på mobilenheder giver en øjeblikkelig visning af den disponible lagerstatus på tværs af faciliteter. Her kan du få vist den disponible lagerbeholdning på tværs af faciliteter, aktuelle materialereservationer og ikke-reserveret disponibel lagerbeholdning. Du kan også angive varenumre for at forespørge på disponibel lagerbeholdning og udføre en søgning, der er filtreret efter disponible varer eller varianter. 
+
+Arbejdsområdet til mobilenheder indeholder især disse funktioner:
 
 -   Du kan søge efter produktnummer eller produktnavn for at finde produkter, som du vil se den disponible lagerbeholdningsstatus for.
+
 -   Du kan få vist følgende oplysninger for de valgte produkter:
     -   Disponibelt lager pr. sted
     -   Disponibel lagerbeholdning pr. lagersted
     -   Disponibel lagerbeholdning pr. lokalitet
     -   Disponibel lagerbeholdning pr. batch (for batchstyrede produkter)
     -   Disponibel lagerbeholdning pr. lagerstatus
+    
 -   Disponibel produktlagerbeholdning vises på følgende måder:
     -   Efter fysisk lager (denne visning repræsenterer det samlede antal).
     -   Efter fysisk reserveret (denne visning repræsenterer det reserverede antal).
@@ -71,7 +77,7 @@ Før du kan bruge arbejdsområdet **Disponibelt lager** på mobilenheder, skal s
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere skal være implementeret.</td>
 <td>Systemadministrator</td>
-<td>Hvis Dynamics 365 for Operations ikke allerede er installeret i organisationen, kan systemadministratoren se under <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Installere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
+<td>Hvis Dynamics 365 for Operations ikke allerede er installeret i organisationen, kan systemadministratoren se under <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Installere et Microsoft Dynamics 365 for Operations-demomiljø</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 skal være implementeret.</td>
@@ -79,9 +85,9 @@ Før du kan bruge arbejdsområdet **Disponibelt lager** på mobilenheder, skal s
 <td>KB 4013633 (en X ++ opdatering eller et metadatahotfix) indeholder fire arbejdsområder til mobilenheder til supply chain management. For at implementere KB 4013633 skal systemadministratoren benytte følgende fremgangsmåde:
 <ol>
 <li>Hent KB 4013633 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Installere metadatahotfixet</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Anvend den installerbare pakke</a> på dit Microsoft Dynamics 365 for Operations-system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installere metadatahotfixet</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Anvend den installerbare pakke</a> på dit Microsoft Dynamics 365 for Operations-system.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -114,7 +120,7 @@ Hent og installer Microsoft Dynamics 365 for Operations-mobilappen i din mobilap
 
 ## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Få vist oversigten over disponibel lagerbeholdning for et produkt ved hjælp af arbejdsområdet Disponibelt lager på mobilenheder
 1.  På din mobilenhed skal du vælge arbejdsområdet **Disponibel lagerbeholdning**.
-2.  Vælg **Kontrollér disponibel lagerbeholdning for en vare**. Der vises en liste over de produkter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Der findes flere oplysninger for udviklere under [Dynamics 365 for Operations-mobilplatform](http://ax.help.dynamics.com/en/wiki/mobile-development-handbook/).
+2.  Vælg **Kontrollér disponibel lagerbeholdning for en vare**. Der vises en liste over de produkter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Der findes flere oplysninger for udviklere under [Dynamics 365 for Operations-mobilplatform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 3.  Hvis din vare ikke er på listen, skal du vælge **Søg efter flere** for foretage en onlinesøgning i Dynamics 365 for Operations. Søg efter produktnummer, eller skift til en søgning efter produktnavn.
 4.  Vælg et produkt. Hvis varen har et billede, vises billedet.
 5.  Vælg en af følgende indstillinger for at få vist status for den disponible lagerbeholdning:

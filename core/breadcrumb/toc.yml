@@ -18,6 +18,7 @@
     - name: Detail
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: Forsyningskæde 
+    - name: Forsyningskæde
+ 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index

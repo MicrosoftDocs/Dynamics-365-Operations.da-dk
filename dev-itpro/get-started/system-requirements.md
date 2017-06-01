@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Webprogrammet til Microsoft Dynamics 365 for Operations kan køre i en af følge
 -   Google Chrome (nyeste offentligt tilgængelige version) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-tablet
 -   Apple Safari (nyeste offentligt tilgængelige version) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) 10.12 (Sierra) eller Apple iPad
 
-Gå til producentens websted for at finde den nyeste version af hver webbrowser. **Bemærkninger:**
+Gå til producentens websted for at finde den nyeste version af hver webbrowser. 
+
+**Bemærkninger:**
 
 -   Hvis du vil hente billeder, der er genereret ud fra Arbejdsrutineoptager og inkludere dem i Microsoft Word-dokumenter, skal du have en Chrome-udvidelse installeret. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Arbejdsgangseditoren startes som et ClickOnce-program. Kun Microsoft Edge og Internet Explorer (på en understøttet version af Microsoft Windows) understøtter ClickOnce-programmer. ClickOnce-programmet til arbejdsgangseditoren kræver et kompatibelt 64-bit-operativsystem.
@@ -59,10 +61,12 @@ Retail Cloud POS til Dynamics 365 for Operations kan køre i en af følgende web
 -   Chrome (seneste offentligt tilgængelige version) på Windows 10, Windows 8.1 eller Windows 7
 
 ## <a name="network-requirements"></a>Netværkskrav
--   Dynamics 365 for Operations er designet til netværk med ventetid på mindre end 150 millisekunder (ms). Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Operations. Vi anbefaler, at du tester netværksventetiden på <http://www.azurespeed.com>.
+-   Dynamics 365 for Operations er designet til netværk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Operations. Vi anbefaler, at du tester netværksventetiden på <http://www.azurespeed.com>.
 -   Kravene til båndbredde for Dynamics 365 for Operations afhænger af dit scenarie. De fleste typiske scenarier kræver en båndbredde på mere end 50 kilobyte pr. sekund (KBps). Men til scenarier, der har store datakrav, f.eks. arbejdsområder eller scenarier, der involverer omfattende tilpasning, anbefales mere båndbredde.
 
-Generelt er Dynamics 365 for Operations optimeret til internettet. Antallet af rundture fra en browserklient til Azure-datacenteret er meget lille, og alle data komprimeres. **Advarsel:** Du må ikke beregne kravene til båndbredde fra en klientlokalitet ved at multiplicere antallet af brugere med minimumskravene til båndbredde. Den samtidig brug af en given lokalitet er meget vanskeligt at beregne. Til kunder, der er bekymret over kravene til båndbredde, kan du bruge en prøveversion af Dynamics 365 for Operations.
+Generelt er Dynamics 365 for Operations optimeret til internettet. Antallet af rundture fra en browserklient til Azure-datacenteret er meget lille, og alle data komprimeres. 
+
+**Advarsel:** Du må ikke beregne kravene til båndbredde fra en klientlokalitet ved at multiplicere antallet af brugere med minimumskravene til båndbredde. Den samtidig brug af en given lokalitet er meget vanskeligt at beregne. Til kunder, der er bekymret over kravene til båndbredde, kan du bruge en prøveversion af Dynamics 365 for Operations.
 
 ## <a name="net-framework-requirements"></a>.NET Framework-krav
 Dynamics 365 for Operations kræver .NET Framework version 4.6.2 til alle ClickOnce-programmer, f.eks. ruteplanlægningsagenten for dokumenter. Se installationsvejledning i [Installation af. NET Framework-](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
     <td>Brugere i et bestemt organisationshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil tildele trinnet til.</li>
-    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som trinnet kan tildeles til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter:
-    <ol>
+    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som trinnet kan tildeles til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
     <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
     <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
     </ol></li>
-    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet trinnet skal tildeles:
-    <ul>
+    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet trinnet skal tildeles: <ul>
     <li><strong>Tildel til alle hentede brugere</strong> – Trinnet tildeles alle brugere i intervallet.</li>
     <li><strong>Tildel kun til den sidst hentede bruger</strong> – Trinnet tildeles kun til den sidste bruger i intervallet.</li>
     <li><strong>Udeluk brugere med følgende betingelse</strong> – Trinnet tildeles ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>
@@ -211,13 +209,11 @@ Hvis en bruger ikke håndterer et dokument inden for den tildelte tid, er dokume
     <td>Brugere i et bestemt organisationshierarki</td>
     <td><ol>
     <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil eskalere dokumentet til.</li>
-    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som dokumentet kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter:
-    <ol>
+    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som dokumentet kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
     <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
     <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
     </ol></li>
-    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet dokumentet skal eskaleres til:
-    <ul>
+    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet dokumentet skal eskaleres til: <ul>
     <li><strong>Tildel til alle hentede brugere</strong> – Dokumentet eskaleres til alle brugere i intervallet.</li>
     <li><strong>Tildel kun til den sidst hentede bruger</strong> – Dokumentet eskaleres kun til den sidste bruger i intervallet.</li>
     <li><strong>Udeluk brugere med følgende betingelse</strong> – Dokumentet eskaleres ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ef434747c075a32887035fa1d3c0e6fecd4e0a0d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -68,7 +68,7 @@ Følgende tastaturgenveje kan anvendes overalt i Microsoft Dynamics 365 for Oper
 | Åbne faktaboksruden (eller flytte fokus til faktaboksruden, hvis den allerede er åben) | Ctrl+F2                                   |
 | Lukke faktaboksruden (med fokus i faktaboksruden)                         | Esc                                       |
 | Flytte til næste/forrige faktaboks (med fokus i faktaboksruden)              | Alt+Skift+pil ned/ Alt+Skift+pil op |
-| Flyt til &lt;n&gt;. faktaboks (med fokus i faktaboksruden)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flyt til den &lt;n&gt;. faktaboks (med fokus i ruden Faktaboks)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Udvide en faktaboks (med fokus på overskriften i faktaboksen)                             | Mellemrum eller Enter                            |
 | Skjule den aktuelle faktaboks                                                    | Alt+0                                     |
 
@@ -115,8 +115,8 @@ Følgende tastaturgenveje kan anvendes overalt i Microsoft Dynamics 365 for Oper
 | Flytte til næste/forrige felt                     | Tabulator/Skift+tabulator                              |
 | Flytte til næste/forrige tabulator                       | Alt+Skift+højre pil/Alt+Skift+venstre pil |
 | Flytte til næste/forrige oversigtspanel                   | Alt+Skift+pil ned/ Alt+Skift+pil op    |
-| Flyt til &lt;n&gt;. oversigtspanel                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flyt til &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flyt til det &lt;n&gt;. oversigtspanel                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flyt til den &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Udvide et oversigtspanel (med fokus på overskriften i oversigtspanelet) | Mellemrum eller Enter                               |
 | Skjule det aktuelle oversigtspanel                        | Alt+0                                        |
 | Skifte til gittervisning                                 | Ctrl+Skift+G                                 |

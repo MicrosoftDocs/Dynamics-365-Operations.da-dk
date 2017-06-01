@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Beregning af faste omkostninger kører politikker for omkostningsregnskab i den 
 -   Regnskabsår
 -   Regnskabsperiode
 
-Beregning af faste omkostninger køres uafhængigt af versionen. Derfor kan du beregne Budget-versionen før den faktiske version. Beregning af faste omkostninger består af fire trin, som vist i følgende illustration. I hvert trin oprettes der et kladdehoved med poster. Dette kladdehoved indeholder inddataene for hvert trin i beregningen. Politikker og regler anvendes på hver kladdelinje, og der oprettes omkostningsposter som output. Derfor kan dataene altid spores. [![Beregning af fast omkostning](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Beregning af faste omkostninger køres uafhængigt af versionen. Derfor kan du beregne Budget-versionen før den faktiske version. Beregning af faste omkostninger består af fire trin, som vist i følgende illustration. I hvert trin oprettes der et kladdehoved med poster. Dette kladdehoved indeholder inddataene for hvert trin i beregningen. Politikker og regler anvendes på hver kladdelinje, og der oprettes omkostningsposter som output. Derfor kan dataene altid spores. 
+[![Beregning af fast omkostning](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og fordele den faste omkostning for elektricitet
 I et finansregnskab registreres nogle omkostninger, f.eks. elektricitet, som et engangsbeløb. Derfor er der ikke angivet detaljeret ledelsesmæssig indsigt for omkostningsregnskab. I omkostningsregnskabet skal omkostningerne gennemløbe de organisatoriske enheder for at give korrekte ledelsesmæssig viden på tværs af alle afdelinger og niveauer. Denne proces skal være baseret på enten en præcis registrering af forbruget eller en rimelig vurdering. En omkostning for elektricitet kan bogføres i finans som vist i følgende tabel.
@@ -622,7 +623,7 @@ Detaljerede oplysninger om politik for satser for faste omkostninger finder du i
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Trin 4: Behandle beregningen af omkostningstildelingen
 
-Fordeling bruges til at fordele saldoen for et omkostningsobjekt til andre omkostningsobjekter ved at anvende et fordelingsgrundlag. Microsoft Dynamics 365 for Operations understøtter den gensidige fordelingsmetode. I den gensidig fordelingsmetode anerkendes de gensidige tjenester, som ekstra omkostningsobjekter udveksler, fuldt ud. Systemet bestemmer automatisk den rigtige rækkefølge, som tildelingerne skal udføre i. Saldoen for et omkostningsobjekt tildeles af et enkelt fordelingsgrundlag. Tildelinger på tværs af omkostningsobjektdimensioner og deres respektive medlemmer understøttes. Fordelingsrækkefølgen styres af omkostningskontrolenheden. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Fordeling bruges til at fordele saldoen for et omkostningsobjekt til andre omkostningsobjekter ved at anvende et fordelingsgrundlag. Microsoft Dynamics 365 for Operations understøtter den gensidige fordelingsmetode. I den gensidig fordelingsmetode anerkendes de gensidige tjenester, som ekstra omkostningsobjekter udveksler, fuldt ud. Systemet bestemmer automatisk den rigtige rækkefølge, som tildelingerne skal udføre i. Saldoen for et omkostningsobjekt tildeles af et enkelt fordelingsgrundlag. Tildelinger på tværs af omkostningsobjektdimensioner og deres respektive medlemmer understøttes. Fordelingsrækkefølgen styres af omkostningskontrolenheden. [![Reciprok metode](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definere omkostningstildelingen
 
