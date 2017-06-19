@@ -21,4 +21,5 @@
 # Spore vare og batch
 ## [Flette lagerbatch](merge-inventory-batches.md)
 ## [Spore vare og råmateriale](trace-items-raw-materials-inventory-production-sales.md)
+## [Registrere serienummer i salgsprocessen](../sales-marketing/register-serial-numbers-sales-process.md)
 

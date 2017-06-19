@@ -1,5 +1,5 @@
 # Power BI-indholdspakke
-## [Indholdspakke til omkostningsstyring](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Indholdspakke til omkostningsstyring](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Foruddefineret omkostning
 ## [Kostprisark](costing-sheets.md)
 ## [Efterkalkulationsversion](costing-versions.md)

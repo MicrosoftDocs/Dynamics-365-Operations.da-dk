@@ -17,6 +17,7 @@
 # Modern Point of Sale (MPOS) og Cloud POS
 ## Hardware og ydre enheder
 ### [Oversigt over ydre detailenheder](retail-peripherals-overview.md)
+### [Ekstern Retail-simulatorenhed](retail-peripheral-simulator.md)
 ### [Microsoft-testede ydre POS-hardwareenheder](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definere og vedligeholde kanalklienter, kasseapparater og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md)
 ## Skærmlayout
@@ -42,6 +43,7 @@
 ## Kvitteringer
 ### [Konfigurere kvitteringsskabeloner](receipt-templates-printing.md) 
 ### [Sende mailkvitteringer fra MPOS](email-receipts.md)
+## [Arbejdsrutineoptager og Hjælp til POS](task-recorder-retail-pos.md)
 # Overvågning og analyse
 ## [Overvåge salgs- og avanceudvikling](monitor-sales-margin-performance.md)
 ## [Analysere salgstendenser og -mønstre](analyze-sales-trends-patterns.md)
@@ -53,6 +55,7 @@
 ## [Prisjusteringer og rabatter](price-adjustments-discounts.md)
 ## [Bestemme den optimale kombination af overlappende rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definere kanalspecifikke rabatter](define-channel-specific-discounts.md)
+## [Oprette kuponer for detailsalg](retail-coupons.md)
 # Produkter og merchandising
 ## [Detailhierarkier](retail-hierarchies.md)
 ## [Oprette og administrere attributter](create-manage-attributes.md)
@@ -60,8 +63,9 @@
 ## [Konfigurere stregkoder](set-up-bar-codes.md)
 ## [Konfigurere stregkodemasker](set-up-bar-code-masks.md)
 ## [Konfigurere udvalg](set-up-assortments.md)
+## [Sælge og returnere produkter uden for et sortiment](sell-return-outside-assortments.md)
 # Loyalitet
-## [Konfigurere fordelskundeprogram](set-up-customer-loyalty-program.md)
+## [Konfigurere et fordelskundeprogram](set-up-customer-loyalty-program.md)
 # Lager
 ## [Administrere butikslager](work-with-store-inventory.md)
 # Oprindelsesdata til handel
@@ -69,15 +73,15 @@
 ## [Organisationer og organisationshierarkier (Oprindelsesdata til handel)](organizational-hierarchies-commerce-essentials.md)
 # [Indhold til it-medarbejdere og -udviklere](dev-itpro/TOC.md)
 
-# [Finans](/dynamics365/operations/financials/index)
+# [Finans](/dynamics365/unified-operations/financials/index)
 
-# [Personale](/dynamics365/operations/human-resources/index)
+# [Personale](/dynamics365/unified-operations/talent/index)
 
-# [Supply Chain Management](/dynamics365/operations/supply-chain/index)
+# [Supply Chain Management](/dynamics365/unified-operations/supply-chain/index)
 
-# [Udvikler og administrator](/dynamics365/operations/dev-itpro/index)
+# [Udvikler og administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Andre ressourcer
-## [Ordliste til Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Nyheder eller ændringer](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Ordliste til Dynamics 365 for Retail](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Nyheder eller ændringer](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 
