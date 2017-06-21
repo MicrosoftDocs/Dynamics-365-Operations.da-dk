@@ -3,7 +3,7 @@ title: 125 % saldoafskrivning
 description: Denne artikel indeholder en oversigt over afskrivningsmetoden 125 % saldoafskrivning.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

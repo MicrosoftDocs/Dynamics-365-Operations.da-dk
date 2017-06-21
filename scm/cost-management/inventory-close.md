@@ -3,7 +3,7 @@ title: Lager, luk
 description: "Som en del af processen til at udligne afgangsposteringerne med tilgangsposteringer, kan du også vælge at have Finans opdateret for at afspejle de justeringer, der er foretaget."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

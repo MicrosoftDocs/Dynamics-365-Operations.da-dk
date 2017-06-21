@@ -3,7 +3,7 @@ title: Oversigt over konsolidering og eliminering
 description: "Denne artikel indeholder generelle oplysninger om konsoliderings- og elimineringsprocessen. Den indeholder svar på nogle ofte stillede spørgsmål."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

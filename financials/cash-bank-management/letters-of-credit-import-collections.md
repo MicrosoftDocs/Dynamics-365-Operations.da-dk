@@ -3,7 +3,7 @@ title: Remburser og importinkassoer
 description: "Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)"
 description: "Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

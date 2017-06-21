@@ -3,12 +3,13 @@ title: Spor provisioner i POS ved brug af salgsgrupper
 description: "Det er almindelig detailpraksis at spore salg efter den salgsmedarbejder, der har arbejdet med kunden – ydet assistance, mersalg, krydssalg og behandlet transaktionen."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations, Core
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa

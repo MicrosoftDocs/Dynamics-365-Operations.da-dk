@@ -3,7 +3,7 @@ title: Kontosaldi i Finans
 description: "I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

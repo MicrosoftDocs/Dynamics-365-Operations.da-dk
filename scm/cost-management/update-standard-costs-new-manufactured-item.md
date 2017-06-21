@@ -3,7 +3,7 @@ title: Opdatere standardomkostninger for en ny produceret vare
 description: Denne artikel indeholder en vejledning til opdatering af standardomkostninger for en ny produceret vare.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

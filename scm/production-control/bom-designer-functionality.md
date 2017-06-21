@@ -3,7 +3,7 @@ title: Funktioner i styklistedesigneren
 description: "I denne artikel beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

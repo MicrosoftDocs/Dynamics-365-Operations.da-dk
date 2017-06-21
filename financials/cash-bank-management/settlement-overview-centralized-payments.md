@@ -3,7 +3,7 @@ title: Oversigt over udligning for centraliserede betalinger
 description: "Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derved fjernes behovet for at angive den samme postering i flere juridiske enheder, og der spares tid, idet processen til betalingsforslag, udligningsprocessen, redigering af åbne posteringer og redigering af lukkede posteringer strømlines for centraliserede betalinger."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

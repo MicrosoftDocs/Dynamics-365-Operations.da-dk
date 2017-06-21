@@ -3,7 +3,7 @@ title: "Løbende gennemsnitskostpris"
 description: "Under processen til lagerlukning udlignes afgangsposteringer i forhold til tilgangsposteringer på baggrund af den metode til lagerværdi, der er valgt i varens varemodelgruppe. Men inden lagerlukningen køres, beregner systemet en løbende gennemsnitskostpris, der typisk bruges, når afgangsposteringer bogføres."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

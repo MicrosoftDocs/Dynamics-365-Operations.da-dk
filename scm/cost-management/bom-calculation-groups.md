@@ -3,7 +3,7 @@ title: Styklisteberegningsgrupper
 description: "Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

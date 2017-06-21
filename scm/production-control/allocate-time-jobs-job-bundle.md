@@ -3,7 +3,7 @@ title: Fordele tid til job i et jobbundt
 description: "Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

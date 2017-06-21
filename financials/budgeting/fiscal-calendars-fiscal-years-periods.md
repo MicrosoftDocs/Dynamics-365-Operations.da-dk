@@ -3,7 +3,7 @@ title: "Regnskabskalendere, regnskabsår og perioder"
 description: "I denne artikel beskrives regnskabskalendere, regnskabsår og -perioder, og hvordan du kan udnytte dem til juridiske enheder, anlægsaktiver og budgettering."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

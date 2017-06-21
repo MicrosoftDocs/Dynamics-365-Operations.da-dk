@@ -3,7 +3,7 @@ title: "Omkostningskategorier, der bruges i produktionsruteplanlægning"
 description: "Denne artikel indeholder oplysninger om omkostningsarter, der anvendes i produktionsmiljøer, og som bruger ruteplanlægning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

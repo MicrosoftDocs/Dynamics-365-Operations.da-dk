@@ -3,7 +3,7 @@ title: Konfigurere debitorer og kredit og rykkere
 description: "Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgående betalinger fra debitorer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

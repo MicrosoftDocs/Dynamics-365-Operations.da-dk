@@ -3,7 +3,7 @@ title: Konfiguration af mellemregning
 description: "I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

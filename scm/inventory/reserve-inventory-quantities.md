@@ -3,7 +3,7 @@ title: Reservere lagerantal
 description: "I dette emne beskrives de forskellige indstillinger, der er tilgængelige for lagerreservation."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: EU-posteringscertifikater
 description: "Denne artikel indeholder oplysninger om postcertifikater i den Europæiske Union (EU)."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

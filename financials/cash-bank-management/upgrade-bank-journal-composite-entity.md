@@ -3,7 +3,7 @@ title: Opdater den sammensatte enhed Bankkladde
 description: "Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

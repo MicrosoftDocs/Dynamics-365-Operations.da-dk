@@ -3,7 +3,7 @@ title: Fejlfinding af stillingsbudgettering
 description: "Denne artikel giver svar på spørgsmål, som du kan have, når du konfigurerer stillingsbudgettering. Emnet omhandler ofte stillede spørgsmål om, hvordan man opretter budgetomkostningselementer, kompensationsgrupper og kompensationsgitre."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

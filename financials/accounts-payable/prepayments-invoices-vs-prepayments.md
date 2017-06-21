@@ -3,7 +3,7 @@ title: Forudbetalingsfakturaer vs. forudbetalinger
 description: "Denne artikel beskriver de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger) og stiller også kontrasterne op mellem dem. I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

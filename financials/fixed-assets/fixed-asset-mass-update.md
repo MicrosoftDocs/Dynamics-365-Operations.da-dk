@@ -3,7 +3,7 @@ title: "Masseopdatere anlægsaktiver"
 description: "Hvis du bruger modeller, kan du ændre afskrivningsprincipperne for grupper af aktiver, der indgår i samme model."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Tilbudsanmodninger
 description: "Denne artikel har en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

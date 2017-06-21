@@ -3,7 +3,7 @@ title: Opret en fragtseddel
 description: "I dette emne beskrives det, hvordan du opretter en fragtseddel, når du bruger lagerstyringsprocesser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

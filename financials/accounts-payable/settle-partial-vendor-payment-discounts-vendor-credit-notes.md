@@ -3,7 +3,7 @@ title: "Udlign en delvis kreditorbetaling med rabatter på kreditorkreditnotaer"
 description: "Denne artikel fører dig gennem et scenario, hvor en kreditnota udlignes med en faktura."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

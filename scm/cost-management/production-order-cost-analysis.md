@@ -3,7 +3,7 @@ title: Omkostningsanalyse for produktionsordre
 description: "Denne artikel indeholder oplysninger om den omkostningsanalyse, du kan udføre for afsluttede og aktuelle produktionsordrer. Du kan analysere de forkalkulerede omkostninger og faktiske omkostninger ved hjælp af siden Prisberegning og efterkalkulationsrapporten. Du kan se oplysninger om de forventede og faktiske omkostninger (og antal) for de enkelte indgående varer, ruteoperationer og indirekte omkostninger."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

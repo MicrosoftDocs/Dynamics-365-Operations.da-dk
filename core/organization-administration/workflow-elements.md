@@ -3,7 +3,7 @@ title: Arbejdsgangselementer
 description: "I denne artikel beskrives de forskellige elementer, der indgår i en arbejdsgang."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

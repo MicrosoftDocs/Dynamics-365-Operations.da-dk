@@ -3,7 +3,7 @@ title: Efterkalkulationsversioner
 description: "Denne artikel indeholder oplysninger om efterkalkulationsversioner, hvordan du vedligeholder dem, og de typer data, som du kan medtage i dem. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Startside for kreditor
 description: Dette emne giver en oversigt over kreditor.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

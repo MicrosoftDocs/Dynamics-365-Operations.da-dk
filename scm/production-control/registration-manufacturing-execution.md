@@ -3,7 +3,7 @@ title: "Registrering for produktionsudførelse"
 description: "Dette emne beskriver vigtige begreber og udtryk, som du skal kunne forstå for at konfigurere og bruge produktionsudførelse."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

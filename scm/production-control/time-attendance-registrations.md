@@ -3,7 +3,7 @@ title: "Registrering af tid og fremmøde"
 description: "Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I denne artikel beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

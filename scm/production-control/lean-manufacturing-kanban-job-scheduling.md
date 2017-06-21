@@ -3,7 +3,7 @@ title: Kanban-job til lean manufacturing
 description: "Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

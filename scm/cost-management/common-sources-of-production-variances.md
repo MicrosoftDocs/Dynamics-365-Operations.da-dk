@@ -3,7 +3,7 @@ title: Almindelige kilder til produktionsafvigelser
 description: I denne artikel beskrives forskellige kilder, der er typiske for de enkelte typer afvigelser i produktion.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

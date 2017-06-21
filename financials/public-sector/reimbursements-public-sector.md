@@ -3,7 +3,7 @@ title: Refusioner i den offentlige sektor
 description: "I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Kostprisgrupper
 description: "Kostgrupper udgør grundlaget for segmentering og analyse af kostbidraget i en færdigvares beregnede omkostninger, såsom kostbidrag til materialer, arbejdsløn og indirekte omkostninger. Der anvendes flere synonymer for kostgruppesegmentering i produktionsmiljøer, f.eks. kostprisopdeling eller klassificering af omkostninger."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

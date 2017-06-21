@@ -3,7 +3,7 @@ title: Styklister og formler
 description: "Denne artikel indeholder oplysninger om styklister og formler, som er en central del af definitionen af produkter og produktvarianter. Styklister og formler angiver de nødvendige materialer eller ingredienser for et bestemt produkt. Formler angiver også samprodukter og biprodukter, der modtages i forbindelse med den specifikke produktion."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

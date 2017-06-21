@@ -3,7 +3,7 @@ title: Oversigt over periodiseringer
 description: I denne artikel beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

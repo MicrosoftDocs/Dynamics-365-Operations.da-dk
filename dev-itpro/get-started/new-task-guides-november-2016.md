@@ -3,7 +3,7 @@ title: Nye eller opdaterede opgaveguider (november 2016)
 description: I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (november 2016 - alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

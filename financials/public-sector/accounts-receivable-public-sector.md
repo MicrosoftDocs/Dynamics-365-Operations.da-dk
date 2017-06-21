@@ -3,7 +3,7 @@ title: Debitorer i den offentlige sektor
 description: "I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
