@@ -3,7 +3,7 @@ title: Processer for kvalitetsstyring
 description: "Denne artikel indeholder oplysninger om kvalitetsstyringsprocessen for ikke-standardiserede produkter. Det beskriver, hvordan du kan bruge funktioner til kvalitetskontrol, definere og vedligeholde uoverensstemmelser og håndtere rettelser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

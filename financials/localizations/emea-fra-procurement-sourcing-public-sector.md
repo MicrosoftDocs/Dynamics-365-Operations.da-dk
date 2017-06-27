@@ -3,7 +3,7 @@ title: "Indkøb og forsyning i den offentlige sektor i Frankrig"
 description: "I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,6 @@ audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 19891
-ms.assetid: 3d3c89eb-5d6b-4d79-879b-ad6bf4bade35
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter

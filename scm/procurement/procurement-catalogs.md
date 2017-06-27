@@ -3,7 +3,7 @@ title: "Indkøbskataloger"
 description: "I denne artikel beskrives på et højt niveau, hvor indkøbsmedarbejderne kan konfigurere og vedligeholde indkøbskataloger. Indkøbskataloger definerer de varer og tjenesteydelser, som virksomhedens medarbejdere kan bestille til intern brug."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tilbageføre en kreditorbetaling"
 description: "I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

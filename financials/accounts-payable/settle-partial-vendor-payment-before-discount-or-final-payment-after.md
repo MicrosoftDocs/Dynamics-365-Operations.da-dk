@@ -3,7 +3,7 @@ title: "Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betal
 description: "Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

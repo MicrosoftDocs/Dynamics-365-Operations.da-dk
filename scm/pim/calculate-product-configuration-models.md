@@ -3,7 +3,7 @@ title: "Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodell
 description: "I denne artikel beskrives beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

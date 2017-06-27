@@ -3,7 +3,7 @@ title: Beregne materialeforbrug
 description: Denne artikel indeholder oplysninger om forskellige indstillinger, der er relateret til beregning af materialeforbrug.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

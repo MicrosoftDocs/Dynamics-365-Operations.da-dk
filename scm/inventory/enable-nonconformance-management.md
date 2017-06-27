@@ -3,7 +3,7 @@ title: Administration af uoverensstemmelser
 description: "I denne artikel beskrives den grundlæggende konfiguration, der kræves for at kunne bruge uoverensstemmelser. Der kræves yderligere konfigurationer, hvis du vil bruge kvalitetsordrer."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

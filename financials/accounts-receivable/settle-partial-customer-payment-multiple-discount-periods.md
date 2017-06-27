@@ -3,7 +3,7 @@ title: Udlign en delvis debitorbetaling, der omfatter flere rabatperioder
 description: "Denne artikel viser, hvordan delvise debitorbetalinger udlignes, når der er flere rabatperioder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

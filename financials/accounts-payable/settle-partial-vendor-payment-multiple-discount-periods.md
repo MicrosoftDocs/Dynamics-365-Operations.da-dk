@@ -3,7 +3,7 @@ title: Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
 description: "Denne artikel gennemgår et scenarie, hvor der foretages flere delbetalinger for en kreditor, der tilbyder flere kasserabatter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Finplanlægning"
 description: "Denne artikel indeholder oplysninger om jobplanlægning, som er en mere detaljeret form for planlægning end grovplanlægning. Du kan bruge finplanlægning til at planlægge individuelle job eller værkstedsordrer og til at styre produktionsmiljøet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Konfigurere en betinget beslutning i en arbejdsgang
 description: "Brug følgende procedure for at konfigurere egenskaberne for den betingede beslutning."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

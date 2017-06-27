@@ -3,7 +3,7 @@ title: "Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsakti
 description: "Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

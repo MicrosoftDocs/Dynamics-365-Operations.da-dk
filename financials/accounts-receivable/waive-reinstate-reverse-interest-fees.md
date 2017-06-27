@@ -3,7 +3,7 @@ title: "Frafalde, genindføre eller tilbageføre rentegebyrer"
 description: "I denne artikel beskrives det, hvordan du kan frafalde, genindføre og tilbageføre gebyrer for renter og gebyrer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Udlign en delvis debitorbetaling, og udlign den endelige betaling fuldt 
 description: Denne artikel indeholder scenarier, der viser, hvordan du registrerer delbetalinger for en kunde og anvender kasserabatter i kasserabatperioden.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

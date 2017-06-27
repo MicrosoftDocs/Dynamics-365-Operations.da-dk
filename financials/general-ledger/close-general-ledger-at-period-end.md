@@ -3,7 +3,7 @@ title: Lukke Finans ved periodeafslutning
 description: "I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

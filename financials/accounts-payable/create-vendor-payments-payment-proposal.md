@@ -3,7 +3,7 @@ title: "Oprette kreditorbetalinger ved hjælp af et betalingsforslag"
 description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

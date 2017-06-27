@@ -3,7 +3,7 @@ title: "Bogføringsdefinitioner i den offentlige sektor"
 description: "Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,6 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 27271
-ms.assetid: f6e0a75c-fb84-4b86-9ea1-8fd4fcf01c13
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter

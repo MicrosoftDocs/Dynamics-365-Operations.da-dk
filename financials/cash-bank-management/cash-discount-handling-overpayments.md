@@ -3,7 +3,7 @@ title: "Håndtering af kasserabat i forbindelse med overbetalinger"
 description: "Denne artikel indeholder scenarier, der viser, hvordan en betaling skal håndteres, når kunden skal have en kasserabat, men har betalt for meget."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

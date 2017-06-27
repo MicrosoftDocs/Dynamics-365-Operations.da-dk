@@ -3,7 +3,7 @@ title: "Ofte stillede spørgsmål til produktvariantoversættelser"
 description: "Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

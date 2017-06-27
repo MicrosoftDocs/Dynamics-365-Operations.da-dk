@@ -3,7 +3,7 @@ title: "Indkøbspolitikker"
 description: "Denne artikel indeholder oplysninger om indkøbspolitikker. En indkøbspolitik er en samling af regler, der styrer rekvisitionsprocessen. Indkøbspolitikker er en hjælp for indkøbsadministratorer, der skal implementere indkøbsstrategier, da de udgør en politikstruktur, der tilpasses organisationens strategiske indkøbsbehov."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

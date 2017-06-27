@@ -3,7 +3,7 @@ title: "Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsver
 description: "Denne artikel forklarer, hvordan du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for producerede varer med en separat efterkalkulationsversion for planlagte omkostninger."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

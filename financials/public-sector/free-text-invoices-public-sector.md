@@ -3,7 +3,7 @@ title: Fritekstfakturaer i den offentlige sektor
 description: "I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

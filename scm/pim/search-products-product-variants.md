@@ -3,7 +3,7 @@ title: "Søge efter produkter og produktvarianter under ordreindtastning"
 description: "Brug feltet <strong>Varenummer </strong>til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

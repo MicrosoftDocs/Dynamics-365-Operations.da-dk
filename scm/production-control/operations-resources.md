@@ -3,7 +3,7 @@ title: Operations-ressourcer
 description: "Operationsressourcer udfører aktiviteterne i et projekt eller en produktionsproces. De kan være af forskellige typer og kan have forskellige egenskaber."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

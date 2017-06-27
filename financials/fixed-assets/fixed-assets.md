@@ -3,7 +3,7 @@ title: "Startside for anlægsaktiver"
 description: "Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

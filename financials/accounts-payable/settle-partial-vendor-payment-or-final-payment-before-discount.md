@@ -3,7 +3,7 @@ title: "Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt
 description: "Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

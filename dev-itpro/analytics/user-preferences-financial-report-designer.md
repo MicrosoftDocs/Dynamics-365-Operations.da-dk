@@ -3,7 +3,7 @@ title: "Brugerindstillinger i Designer til økonomirapporter"
 description: "I denne artikel forklares, hvordan du angiver brugerindstillinger for at tilpasse din brugerindgriben i Designer til økonomirapporter og styrer den indledende logonoplevelse. Du kan også styre, hvordan individuelle rapporter, rapportbiblioteket og standardfilplaceringen vises."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

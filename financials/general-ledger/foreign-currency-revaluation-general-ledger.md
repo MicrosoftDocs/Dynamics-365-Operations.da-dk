@@ -3,7 +3,7 @@ title: "Værdiregulering af udenlandsk valuta for Finans"
 description: "Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Afrund beløb til afskrivningsberegninger"
 description: "I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

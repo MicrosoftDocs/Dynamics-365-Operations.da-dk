@@ -3,7 +3,7 @@ title: "Forudsætninger for en standardomkostningskonvertering"
 description: "Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

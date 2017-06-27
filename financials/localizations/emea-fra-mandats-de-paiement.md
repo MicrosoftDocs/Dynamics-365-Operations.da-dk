@@ -3,7 +3,7 @@ title: Mandats de paiement i den offentlige sektor i Frankrig
 description: "Mandat de paiement bruges af direktøren for at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet. Mandatet opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -12,7 +12,6 @@ audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 27231
-ms.assetid: e63d4d9d-27d4-42c9-ad87-66040b8680db
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter

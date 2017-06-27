@@ -3,7 +3,7 @@ title: "Avanceret bankafstemning MT940-import – opgraderingstrin for sammensat
 description: "Et løbenummer skal føjes til bankkontoudtogets importenhed for at understøtte formatet MT940."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

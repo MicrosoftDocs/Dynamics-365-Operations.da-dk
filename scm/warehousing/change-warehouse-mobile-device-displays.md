@@ -3,7 +3,7 @@ title: "Skærmindstillinger for lagerstedets mobilenhed"
 description: "I denne artikel beskrives det, hvordan du konfigurerer udseendet på en mobilenheds skærm og knytter tastaturgenvejstaster til kontrolelementer, f.eks. knapper."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

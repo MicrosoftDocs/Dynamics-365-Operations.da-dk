@@ -3,7 +3,7 @@ title: "Konfigurere produkter, som kan være produceret eller indkøbt"
 description: "Produkterne kan købes på forskellige måder: De kan produceres (fremstilles) eller fremskaffes (købes). Denne artikel beskriver nogle typiske punkter, du skal overveje, når du konfigurerer produkter til understøttelse af multiforsyning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Forpligtelser i den offentlige sektor i Frankrig
 description: "Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,6 @@ audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 19531
-ms.assetid: dbdb051c-9240-4f00-9a60-122c5f2e62ea
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter

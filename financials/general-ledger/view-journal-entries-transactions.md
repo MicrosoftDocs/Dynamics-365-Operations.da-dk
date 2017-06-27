@@ -3,7 +3,7 @@ title: "Få vist kladdeposteringer og transaktioner"
 description: "I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

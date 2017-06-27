@@ -3,7 +3,7 @@ title: "Generér en økonomisk rapport"
 description: "Dette emne indeholder oplysninger om generering af en økonomisk rapport."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

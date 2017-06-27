@@ -1,9 +1,9 @@
 ---
 title: Kreditoraftaler med betal ved betaling
-description: "I denne artikel forklares betingelserne for &quot;betal ved betaling&quot; (PWP) for leverandøraftaler. PWP-betingelserne lader dig tilbageholde betaling til en kreditor helt eller delvist, indtil debitoren i projektet betaler dig. Denne artikel indeholder også et virkeligt eksempel for at vise, hvordan du kan bruge PWP-betingelserne til et projekt."
+description: "I denne artikel forklares betingelserne for \"betal ved betaling\" (PWP) for leverandøraftaler. PWP-betingelserne lader dig tilbageholde betaling til en kreditor helt eller delvist, indtil debitoren i projektet betaler dig. Denne artikel indeholder også et virkeligt eksempel for at vise, hvordan du kan bruge PWP-betingelserne til et projekt."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

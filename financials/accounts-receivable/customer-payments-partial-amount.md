@@ -3,7 +3,7 @@ title: "Debitorbetalinger af et delvist beløb"
 description: "Kunder vil nogle gange indbetale et beløb, der er mindre end beløbet på en faktura. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

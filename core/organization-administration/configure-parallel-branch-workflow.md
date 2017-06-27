@@ -3,7 +3,7 @@ title: Konfigurere en parallel gren i en arbejdsgang
 description: "Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel gren."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

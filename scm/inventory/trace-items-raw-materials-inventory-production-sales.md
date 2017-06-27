@@ -3,7 +3,7 @@ title: "Sporing af varer og råvarer i lager, produktion og salg"
 description: "Dette emne beskriver, hvordan du kan bruge varesporing til at identificere, hvor varer eller råvarer er blevet brugt, i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

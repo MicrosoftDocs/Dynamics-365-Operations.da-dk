@@ -3,7 +3,7 @@ title: "Grovplanlægning"
 description: "Dette emne indeholder en beskrivelse af grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

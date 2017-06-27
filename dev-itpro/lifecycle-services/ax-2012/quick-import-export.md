@@ -3,11 +3,11 @@ title: Brug Hurtig import/eksport
 description: "Formålet med Hurtig import/eksport er at give dig mulighed for import og eksport i færre trin."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012
-ms.service: Dynamics365Operations
-ms.technology: 
+ms.service: 
+ms.technology: ax-2012
 audience: Application User
 ms.search.scope: AX 2012 R3 CU8
 ms.custom: 89041

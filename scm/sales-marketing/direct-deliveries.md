@@ -3,7 +3,7 @@ title: Direkte leveringer
 description: "Denne artikel indeholder oplysninger om direkte leveringer. Direkte leveringer sendes direkte fra leverandøren til kunden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

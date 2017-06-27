@@ -3,7 +3,7 @@ title: "LIFO-dato med fysisk værdi og mærkning"
 description: "LIFO (Last In, First Out) er en lagermodel, hvor de seneste (nyeste) tilgange udstedes først. Afgange fra lageret udlignes mod de seneste tilgange på lageret baseret på datoen for lagerposteringen. Hvis der ikke er nogen tilgang før afgangen i forbindelse med LIFO-dato, udlignes afgangen mod en hvilken som helst tilgang efter afgangsdatoen. Flere afgange på samme dato kan udlignes i rækkefølgen seneste afgang, seneste modtagelse."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
