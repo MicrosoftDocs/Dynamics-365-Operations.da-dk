@@ -1,9 +1,9 @@
 ---
-title: Introduktion til Dynamics 365 for Operations
-description: "Microsoft Dynamics 365 for Operations er Microsofts erhvervsprogram til virksomheder. På denne side kan du få mere at vide om og komme i gang med at bruge produktet."
+title: Introduktion til Dynamics 365 for Finance and Operations
+description: "Microsoft Dynamics 365 for Finance and Operations er Microsofts erhvervsprogram til virksomheder. På denne side kan du få mere at vide om og komme i gang med at bruge produktet."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,77 +17,107 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86f8625019c25257d8d07701b17707c8ca48c9df
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 8703b3bc5642e6dbe9dd399ced5af6da25f9b226
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
-# <a name="introduction-to-dynamics-365-for-operations"></a>Introduktion til Dynamics 365 for Operations
+# <a name="introduction-to-dynamics-365-finance-and-operations"></a>Introduktion til Dynamics 365 for Finance and Operations
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Operations er Microsofts erhvervsprogram til virksomheder. Det gør det muligt hurtigt at træffe bedre beslutninger via en intelligent brugergrænseflade, der giver adgang til indsigt og data i realtid. Virksomheder kan transformere og forny sig ved at levere gennemprøvet forretningslogik, der gør det muligt at designe deres virksomhedsprocesser hurtigere. Det giver virksomheder fleksibilitet til at vokse i deres eget tempo og handle næsten hvor som helst, når som helst, så de kan skalere deres aktiviteter globalt efter forretningsbehov. 
+Microsoft Dynamics 365 for Finance and Operations er Microsofts erhvervsprogram til virksomheder. Det gør det muligt hurtigt at træffe bedre beslutninger via en intelligent brugergrænseflade, der giver adgang til indsigt og data i realtid. Virksomheder kan transformere og forny sig ved at levere gennemprøvet forretningslogik, der gør det muligt at designe deres virksomhedsprocesser hurtigere. Det giver virksomheder fleksibilitet til at vokse i deres eget tempo og handle næsten hvor som helst, når som helst, så de kan skalere deres aktiviteter globalt efter forretningsbehov. 
 
-Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 365 for Operations til at virke i virksomheden.    
+Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 365 for Finance and Operations til at virke i virksomheden. Den er forbundet med dokumentation for de relaterede produkter i Unified Operations-pakken, Dynamics 365 for Retail og Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="get-started/onboarding-home.md">Onboarding af din organisation</a></p>
-<p>Finans</p>
-<ul><li><a href="financials/accounts-payable/accounts-payable.md">Kreditor</a></li>
-<li><a href="financials/accounts-receivable/accounts-receivable.md">Debitor</a></li>
-<li><a href="financials/budgeting/budgeting-overview.md">Budgettering</a></li>
-<li><a href="financials/cash-bank-management/cash-bank-management.md">Kontant- og bankstyring</a></li>
-<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Omkostningsregnskab</a></li>
-<li><a href="financials/fixed-assets/fixed-assets.md">Anlægsaktiver</a></li>
-<li><a href="financials/general-ledger/general-ledger.md">Finans</a></li>
-<li><a href="financials/project-management/overview-project-management-accounting.md">Projektstyring</a></li>
-<li><a href="financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></li></ul>
-<p><a href="dev-itpro/lcs-solutions/country-region.md">Internationale funktioner</a></p>
-<p>Personale</p>
-   <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">Personalestrategi</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Rekruttér, ansæt og motivér</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Uddannelse af medarbejdere</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Frynsegoder</a></li>
-  <li><a href="human-resources/questionnaires.md">Spørgeskema</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">Amerikanske funktioner</a></li>
-</ul></td>
-  <td>
-  <p>Detail</p>
+<td><h3>Finans</h3>
+<p>Overholdelse</p>
+<p>Økonomistyring</p>
+<ul><li><a href="../financials/accounts-payable/accounts-payable">Kreditor</a></li>
+<li><a href="../financials/accounts-receivable/accounts-receivable">Debitor</a></li>
+<li><a href="../financials/budgeting/budgeting-overview">Budgettering</a></li>
+<li><a href="../financials/cash-bank-management/cash-bank-management">Kontant- og bankstyring</a></li>
+<li><a href="../financials/cost-accounting/cost-accounting-home-page">Driftsregnskab</a></li>
+<li><a href="../financials/fixed-assets/fixed-assets">Anlægsaktiver</a></li>
+<li><a href="../financials/general-ledger/general-ledger">Finans</a></li>
+
+<li><a href="../financials/public-sector/public-sector-functionality">Offentlig sektor</a></li>
+<li><a href="../dev-itpro/lcs-solutions/country-region">Regionale lovpligtige funktioner</a></li></ul>
+<p><a href="../financials/project-management/overview-project-management-accounting">Projektstyring</a></p>
+<H3>Personale</h3>
   <ul>
-<li><a href="retail/call-center-functionality.md">Callcenter</a></li>
-  <li><a href="retail/define-maintain-retail-channels.md">Konfiguration og styring af kanal</a></li>
-  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS og sky-POS</a></li>
-  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Detailudvikler og -administration </a></li></ul>
-  <p>Supply Chain Management</p>
+<li><a href="hr/manage-recruiting-process">Rekruttering</a></li>
+<li><a href="hr/localizations/noam-usa-payroll">Amerikanske lønopgaver</a></li>
+</ul>
+<h3>Supply Chain Management</h3>
+<p><a href="../supply-chain/cost-management/costing-sheets">Omkostningsstyring</a></p>
+<p><a href="../supply-chain/inventory/inventory-locations">Lagerstyring</a></p>
+<p>Logistik</p>
+<ul><li><a href="../supply-chain/transportation/transportation-management-overview">Transportstyring</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">Lokationsstyring</a></li></ul></li>
+<p><a href="../supply-chain/master-planning/master-plans">Planlægning</a></p>
+  <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Administration af produktoplysninger</a></p>
+  <p><a href="../supply-chain/production-control/create-production-orders">Produktionsstyring</a></p>
+<p>Ordrestyring</p>
+  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Indkøb og forsyning</a></li>
+  <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Salg og marketing</a></li></ul>
+</td>
+<td>
+<h3>Unified Operations-platform</h3>
+<p>Intelligence</p>
+<ul><li><a href="../dev-itpro/analytics/analytics">Analyser</a></li>
+ <li><a href="../dev-itpro/analytics/document-reporting-services">Forretningsdokumenter</a></li>
+<li><a href="../dev-itpro/analytics/financial-reporting-intro">Økonomirapportering</a></li>
+<li><a href="../dev-itpro/analytics/general-electronic-reporting">Lovpligtig rapportering</a></li></ul>
+
+<p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilplatform</a></p>
+
+ <p>Funktioner til udviklere</p>
 <ul>
-<li><a href="supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></li>
-  <li><a href="supply-chain/inventory/inventory-locations.md">Lagerstyring</a></li>
-  <li><a href="supply-chain/master-planning/master-plans.md">Varedisponering</a></li>
-  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Indkøb og forsyning</a></li>
-  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Administration af produktoplysninger</a></li>
-  <li><a href="supply-chain/production-control/create-production-orders">Produktionsstyring</a></li>
-  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Salg og marketing</a></li>
-  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportstyring</a></li>
-  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Lokationsstyring</a></li></ul>
-  <p>Funktioner til udviklere og administratorer</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analyser</a></li>
-  <li><a href="dev-itpro/data-entities/data-entities.md">Dataenheder</a></li>
-  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobilapps</a></li>
-  <li><a href="dev-itpro/office-integration/office-integration.md">Office-integration</a></li>
-  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
-  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Udviklerværktøjer</a></li></ul></td>
+<li><a href="../dev-itpro/continuous-delivery-home-page">Fortløbende levering</a></li>
+<li><a href="../dev-itpro/get-started/demo-data">Demodata</a></li>
+<li><a href="../dev-itpro/dev-tools/developer-home-page">Udviklerværktøjer</a></li>
+<li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Udvidelsesmuligheder</a></li>
+<li><p>Integration</p>
+<ul><li><a href="../dev-itpro/data-entities/data-entities">Dataenheder</a></li>
+<li><a href="../dev-itpro/office-integration/office-integration">Office-integration</a></li></ul></li></ul>
+
+<p>Administrator-funktion<p>
+<ul>
+<li><a href="../get-started/onboarding-home">Onboarding af din organisation</a></li>
+<li><a href="../dev-itpro/deploy-demo-environment">Installation og vedligeholdelse</a></li>
+<li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Opgradering</a></li>
+<li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Datastyring</a></li>
+<li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
+<li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organisationsadministration</a></li>
+<li><a href="../dev-itpro/sysadmin/system-administration-home-page">Systemadministration</a></li>
+<ul>
+</td>
+<td>
+<h3>Dynamics 365 for Talent</h3>
+<p><a href="../talent/manage-benefit-program">Frynsegoder</a></p>
+<p><a href="../talent/performance-management-overview">Medarbejderudvikling og -uddannelse</a></p>
+<p><a href="../talent/questionnaires">Spørgeskema</a></p>
+
+<h3>Dynamics 365 for Retail</h3>
+<p><a href="../retail/call-center-functionality">Callcenter</p>
+<p><a href="../retail/define-maintain-retail-channels">Konfiguration og styring af kanal</p>
+<p><a href="../retail/retail-peripherals-overview">MPOS og Cloud POS</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Detailudvikler og -administration</p>
+
+</td>
 </tr>
+
 </tbody>
 </table>
-
-
 

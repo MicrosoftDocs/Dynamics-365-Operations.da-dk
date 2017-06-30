@@ -1,15 +1,15 @@
 ---
 title: Startside for BI og rapportering
-description: "Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Operations."
+description: "Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Operations. 
+Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations. 
 
 <a name="working-with-aggregate-data"></a>Arbejde med aggregerede data
 ---------------------------
@@ -43,14 +43,14 @@ Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsof
 ## <a name="self-service-reporting"></a>Selvbetjeningsrapportering
 -   [Power BI-integration](power-bi-integration.md)
 -   [Konfiguration af Power BI-integration til arbejdsområder](configure-power-bi-integration.md)
--   [Oprette en Power BI rapport ved hjælp af Microsoft Dynamics 365 for Operations-data](create-powerbi-report-data.md)
+-   [Oprette en Power BI rapport ved hjælp af Microsoft Dynamics 365 for Finance and Operations-data](create-powerbi-report-data.md)
 -   [Oprette en Power BI-rapport og et dashboard](create-powerbi-report-dashboard.md)
 -   [Detailkanalperformance i Power BI-indhold](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Driftsregnskab i Power BI-indhold](financial-performance-power-bi-content-pack.md)
 -   [Salgs- og rentabilitetsperformance i Power BI-indhold](sales-profitability-performance-content-pack.md)
--   [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Opbygning af integrerede analytiske oplevelser i Dynamics 365 for Operations-klienten
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Opbygning af integrerede analytiske oplevelser i Finance and Operations-klienten
 -   [Integreret business intelligence](analytics.md#embedded-business-intelligence)
 -   [KPI-modellering og -tilpasning](analytics.md#kpi-modeling-and-customization)
 -   [Tilføjelse af BI i arbejdsområder](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsof
 
 ## <a name="document-reporting-and-printing"></a>Rapportering og udskrivning af dokumenter
 -   [Oversigt over dokumentrapporteringstjenester](document-reporting-services.md)
--   [Udskrivning i Dynamics 365 for Operations-programmer](print-documents.md)
+-   [Udskrivning i Finance and Operations-programmer](print-documents.md)
 -   [Installere dokumentets ruteplanlægningsagent til aktivering af netværksprinterenheder](install-document-routing-agent.md)
 -   [Køre agenten for ruteplanlægning af dokumenter som en Windows-tjeneste](run-document-routing-agent-as-windows-service.md)
 -   [Oprettelse af næste generations rapporteringsløsninger](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ Dette emne viser BI- og rapporteringsressourcer, der er tilgængelige i Microsof
 -   [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 -   [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
 -   [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Oprette en ER-konfigurationsudbyder og markere den som aktiv](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (Opgaveguide)
 -   [Designe ER-domænespecifik datamodel](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (Opgaveguide)
 -   [Definere ER-modeltilknytning og vælge datakilder](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (Opgaveguide)
