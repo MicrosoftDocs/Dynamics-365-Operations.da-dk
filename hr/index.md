@@ -1,12 +1,12 @@
 ---
-title: Personale
-description: "Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
+title: Microsoft Dynamics 365 for Talent
+description: "Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Velkommen til Personale
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Velkommen til Microsoft Dynamics 365 for Talent
 
 [!include[banner](includes/banner.md)]
 
-Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
+Microsoft Dynamics 365 for Talent strømliner mange rutinemæssige og registreringskrævende opgaver og automatiserer en række processer, der er relateret til arbejdskraften i din organisation. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, performanceevalueringer og styring af ændringer. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
 
-Du kan udføre disse opgaver vha. Personale:
+Dynamics 365 for Talent er tæt forbundet med Personale i Dynamics 365 for Finance and Operations, Enterprise Edition. Den samme funktionalitet kan forekomme i begge produkter. Derfor er produktnavnet i emner, der primært vedrører Personale, Dynamics 365 for Finance and Operations, Enterprise Edition. I de emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+
+Du kan udføre disse opgaver vha. Talent:
 
 > + Administrere organisationsstrukturer.
 > + Vedligeholde omfattende arbejderoplysninger fra ansættelse til fratrædelse.
@@ -42,25 +44,19 @@ Du kan udføre disse opgaver vha. Personale:
 > + Administrere arbejderkompetencer.
 > + Gennemgå performance og implementere arbejdermål.
 > + Oprette, afholde og analysere undervisningskurser, herunder agendaer, sessioner og spor.
-> + Rekruttere arbejdere og spore ansøgere.
 
-<a name="develop-a-human-resources-strategy"></a>Udarbejde en personalestrategi
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Udvikle en strategi til administration af dit personale
 ---------------------------------------------------------
 
-Når du arbejder med Personale, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som f.eks. afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, der skal konfigureres i Personale. Enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
+Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, at du skal konfigurer. De enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
 
 -   [Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
 -   [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
 -   [Oprette personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Rekruttere, ansætte og motivere medarbejdere
+## <a name="retain-and-motivate-employees"></a>Belønne og motivere medarbejdere
 
-Rekrutteringsprojekter styrer indholdet, der bruges i annoncer for ledige stillinger, og kan hjælpe dig med at administrere ansøgninger til ledige stillinger. Du kan bruge dem til at spore svar på jobopslag for et bestemt rekrutteringsprojekt eller bestemte ansøgere og opdatere status for ledige stillinger. Du kan også ansætte enkelte ansøgere eller administrere "masseansættelsesprojekter", som letter ansættelsen af flere medarbejdere, for eksempel til sæsonbestemte forretningsbehov.
-
--   [Administrere en rekrutteringsproces](manage-recruiting-process.md)
--   [Masseansættelsesprojekter](mass-hire-projects.md) 
-
-Når du har ansat personale, kan du oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
+Du kan oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
 
 -   [Kompensationsplaner](compensation-plans.md)
 -   [Oprette planer for fast kompensation](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvi
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
-Microsoft Dynamics AX kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe din organisation med at optimere færdighederne hos sit personale.
+Talent kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe din organisation med at optimere færdighederne hos sit personale.
 
--   [Formen I-9-ansættelsesbekræftelse](localizations/noam-usa-form-i-9-verification.md)
--   [Overholde den amerikanske lov om handicap](localizations/noam-usa-comply-ada.md)
+-   [Formen I-9-ansættelsesbekræftelse](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Overholde den amerikanske lov om handicap](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Indsamle oplysninger ved hjælp af spørgeskemaer
 
@@ -97,7 +93,4 @@ Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der b
 -   [Designe et spørgeskema](design-questionnaires.md)
 -   [Distribuere og udfylde et spørgeskema](distribute-questionnaires.md)
 -   [Se og evaluere resultaterne af et spørgeskema](evaluate-questionnaire-results.md)
-
-
-
 
