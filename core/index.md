@@ -40,7 +40,7 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finans</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Overholdelse</a></p>
 <p>Økonomistyring</p>
 <ul style="list-style-type:none">

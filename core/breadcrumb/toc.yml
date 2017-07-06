@@ -15,7 +15,7 @@
     - name: Udvikler og administrator
       tocHref: /dynamics365/unified-operations/dev-itpro/
       topicHref: /dynamics365/unified-operations/dev-itpro/index
-    - name: Finans
+    - name: Financials
       tocHref: /dynamics365/unified-operations/financials/
       topicHref: /dynamics365/unified-operations/financials/index
     - name: Forsyningskæde
@@ -25,6 +25,6 @@
   - name: Talent
     tocHref: /dynamics365/unified-operations/talent/
     topicHref: /dynamics365/unified-operations/talent/index
-  - name: Detail
+  - name: Retail
     tocHref: /dynamics365/unified-operations/retail/
     topicHref: /dynamics365/unified-operations/retail/index
