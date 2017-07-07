@@ -3,14 +3,14 @@ title: "Produktkvittering sammenlignet med indkøbsordrer"
 description: I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d1b063344d4191facf2ddace5f5c9d592fb0942
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
@@ -54,7 +56,7 @@ Du kan oprette indkøbsordrelinjer, hvor indstillingen **Nyt anlægsaktiv** er a
 
 Du kan vælge flere ordrer og udføre modtagelse på alle disse ordrer sammen. Denne fremgangsmåde bruges ikke ofte, men kan du bruge den, hvis en leverandør har konsolideret leverancer til dig i en enkelt belastning. Under produktkvitteringen for køb er der en funktion til at foretage samleopdateringer. Med samleopdateringer kan du bogføre en enkelt følgeseddel fra leverandøren til mere end én indkøbsordre.  
 
-IO'er kan oprettes fra en salgsordre, hvor indstillingen **Direkte levering** er valgt. Når du bruger direkte levering, ankommer produkterne aldrig til lageret, men leveres direkte fra leverandøren til kunden. I sådanne tilfælde registreres modtagelsen normalt direkte på indkøbsordren. Modtagelsen kan ske automatisk som f.eks. via EDI-integration (Electronic Data Interchange) med leverandøren. Alternativt, hvis indkøbsordren er en intern indkøbsordre, automatiserer Microsoft Dynamics 365 for Operations modtagelsen på den interne salgsordre, når forsendelsen sker. Når du bruger direkte levering, figurerer produkter stadig som lager, selvom de ikke fysisk ankommer til lageret. Derfor, når produktkvitteringen registreres på indkøbsordren, opdateres salgsordren automatisk med en følgeseddel, så den overordnede ændring til lageret er 0 (nul). Du bør ikke kræve forudregistrering i scenarier for direkte levering. Hvis du bruger lagersteder, der er aktiveret for lagerstedsstyring, kan du omgå kravet om nummerpladeregistrering ved at angive et virtuelt lagersted i stedet. Du kan angive dette lagersted i feltet **Lagersted til direkte levering** på produktet. 
+IO'er kan oprettes fra en salgsordre, hvor indstillingen **Direkte levering** er valgt. Når du bruger direkte levering, ankommer produkterne aldrig til lageret, men leveres direkte fra leverandøren til kunden. I sådanne tilfælde registreres modtagelsen normalt direkte på indkøbsordren. Modtagelsen kan ske automatisk som f.eks. via EDI-integration (Electronic Data Interchange) med leverandøren. Alternativt, hvis indkøbsordren er en intern indkøbsordre, automatiserer Microsoft Dynamics 365 for Finance and Operations modtagelsen på den interne salgsordre, når forsendelsen sker. Når du bruger direkte levering, figurerer produkter stadig som lager, selvom de ikke fysisk ankommer til lageret. Derfor, når produktkvitteringen registreres på indkøbsordren, opdateres salgsordren automatisk med en følgeseddel, så den overordnede ændring til lageret er 0 (nul). Du bør ikke kræve forudregistrering i scenarier for direkte levering. Hvis du bruger lagersteder, der er aktiveret for lagerstedsstyring, kan du omgå kravet om nummerpladeregistrering ved at angive et virtuelt lagersted i stedet. Du kan angive dette lagersted i feltet **Lagersted til direkte levering** på produktet. 
 
 Når produktkvitteringen er blevet behandlet på indkøbsordren, indstilles indkøbsordrestatus til **Modtaget** for at angive, at fakturaen kan behandles for ordren. Du kan få vist oplysninger om produkter, der allerede er modtaget, ved hjælp af siden **Produktkvitteringskladder**.  
 
@@ -69,7 +71,7 @@ Du kan få adgang til denne side fra handlingsgruppen **Tilgang** på siden **In
 
 [Godkendelse og bekræftelse af indkøbsordre](purchase-order-approval-confirmation.md)
 
-[Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Oversigt over kreditorfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

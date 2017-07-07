@@ -1,15 +1,15 @@
 ---
 title: "Power BI-indhold til købsforbrugsanalyse"
-description: "Dette emne beskriver, hvad der er inkluderet i købet af indholdspakken til købsforbrugsanalyse til Microsoft Power BI. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
-author: YuyuScheller
+description: "I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet."
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265434
 ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ad0ee95113d05710cccc1a5e9d215b38244c2047
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: daba17aed7e6cc475a16d6100c5c99ee747ca048
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -29,23 +29,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indholdet til **Købsforbrugsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 
-Dette emne beskriver, hvad der er inkluderet i købet af indholdspakken til købsforbrugsanalyse til Microsoft Power BI. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdspakken, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
+## <a name="overview"></a>Overblik
 
-<a name="overview"></a>Overblik
---------
-
-Indholdspakken til købsforbrugsanalyse til Microsoft Power BI blev oprettet til indkøbschefer og chefer, der er ansvarlige for budgetter. Den er udviklet til at hjælpe dem med at holde øje med købsforbruget. Programmet bruger købstransaktionsdata fra Microsoft Dynamics 365 for Operations og indeholder både en samlet oversigt over alle firmaets købstal og en opdeling af købsforbrug pr. leverandør og vare. Rapporter fremhæve ændringer i købsforbruget over tid. Derfor kan de bruges til at give ledere besked om positive og negative forbrugstendenser for individuelle leverandører og produkter. Diagrammer viser købsforbruget til forskellige indkøbskategorier og kreditorgrupper. Kategori- og områdeledere kan have nytte af at bruge disse diagrammer til at identificere ændringer i forbrugsmønsteret. Indholdspakken giver indkøbschefer og ledere, der er ansvarlige for budgetter, mulighed for at analysere købsforbrug på følgende måder:
+Power BI-indholdet til **Købsforbrugsanalyse** er udviklet til at hjælpe indkøbschefer og ledere, der er ansvarlige for budgetter, med at holde øje med udgifter til køb. Chefer kan analysere indkøbsudgifter på følgende måder:
 
 -   Køb år til dato (efter kreditorgruppe og individuelle kreditorer, indkøbskategori og individuelle produkter og leverandørlokalitet)
 -   Ændring af køb år for-år (efter leverandørgruppe og indkøbskategori)
 
-## <a name="accessing-the-content-pack"></a>Adgang til indholdspakken
-Indholdspakken til analyse af købsforbrug er udgivet som et implementeringsaktiv i Microsoft Dynamics Lifecycle Services (LCS) og kan åbnes fra Microsoft Dynamics 365 for Operations. Du kan finde yderligere oplysninger om adgang til og åbning af Power BI-rapporter i [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md).
-Bemærk: KB 4011327 er en forudsætning for dette Power BI-indhold. Når du logger på Lifecycle Services, kan du få adgang til KB her: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+Indholdet bruger købstransaktionsdata og indeholder både en samlet oversigt over alle firmaets købstal og en opdeling af købsforbrug pr. leverandør og vare. Rapporter fremhæve ændringer i købsforbruget over tid. Derfor kan rapporterne bruges til at give ledere besked om positive og negative forbrugstendenser for individuelle leverandører og produkter. Desuden viser diagrammer købsforbruget til forskellige indkøbskategorier og kreditorgrupper. Derfor kan kategori- og områdeledere bruge diagrammerne til at identificere ændringer i forbrugsmønsteret.
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Metrikker, der er inkluderet i indholdspakken
-Indholdspakken til købsforbrugsanalyse indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdspakken.
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+Hvis du bruger opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 vises Power BI-indholdet til **Købsforbrugsanalyse** på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** > **Forespørgsler og rapporter** > **Performanceanalyse for indkøb** > **Købs- og forbrugsanalyse**). 
+
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
+Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne.
 
 <table>
 <colgroup>
@@ -133,14 +132,26 @@ Indholdspakken til købsforbrugsanalyse indeholder en rapport, der består af et
 
 \* Køb dette og sidste år, og vækst efter indkøbskategori
 
+## <a name="extending-the-power-bi-content"></a>Udvidelse af Power BI-indhold
+Når du bruger de indholdspakker, der er tilgængelige i Microsoft Dynamics Lifecycle Services (LCS), kan du levere fremragende analyser til personer, der ikke logger på Microsoft Dynamics 365. Du kan redigere disse indholdspakker, så de omfatter andre rapporter eller grafik, og derefter udgive indholdspakkerne på din Power BI.com-lejer med henblik på analyse. 
+
+Du kan finde Power BI-indholdet til **Købsforbrugsanalyse** i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
+
+Sørg for at downloade **Købsforbrugsanalyse**-indhold, der gælder for den version af Dynamics 365, du bruger.
+
+> [!NOTE]
+> Hvis du bruger Microsoft Dynamics 365 for Operations version 1611, er KB 4011327 en forudsætning for dette Power BI-indhold. Når du logger på LCS, kan du få adgang til KB på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
 ## <a name="data-model-and-entities"></a>Datamodel og enheder
-Dynamics 365 for Operations-data bruges til rapporten i indholdspakken til købsforbrugsanalyse. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Du kan finde flere oplysninger om enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De samlede målinger i denne indholdspakke er et undersæt af de samlede målinger, der var tilgængelige i indkøbskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Følgende samlede nøglemålinger er tilgængelige direkte fra enheden Fakturalinjer og bruges som grundlag for indholdspakken.
+Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Købsforbrugsanalyse**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
-| Enhed        | Samlede nøglemålinger | Datakilde til Dynamics 365 for Operations | Felt              | Betegnelse                           |
-|---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
-| Fakturalinjer | Køb                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Beløb i regnskabsvaluta |
+De samlede målinger i dette indhold er et undersæt af de samlede målinger, der var tilgængelige i indkøbskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). Følgende samlede nøglemålinger er tilgængelige direkte fra enheden Fakturalinjer og bruges som grundlag for indholdet.
 
-Følgende tabel viser de vigtigste målinger, der beregnes i indholdspakken fra enheden Fakturalinjer.
+| Enhed        | Samlede nøglemålinger | Datakilde                                 | Felt              | Betegnelse                            |
+|---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
+| Fakturalinjer | Køb                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Beløbet i regnskabsvalutaen. |
+
+Følgende tabel viser de vigtigste målinger i indholdet, der beregnes fra enheden Fakturalinjer.
 
 | Målepunkt               | Kalkulation                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
@@ -148,7 +159,7 @@ Følgende tabel viser de vigtigste målinger, der beregnes i indholdspakken fra 
 | Køb sidste år    | Køb sidste år = CALCULATE(SUM('Invoice lines'\[Purchase\]), SAMEPERIODLASTYEAR(Dates\[Date\])) |
 | Indkøbsvækst år for år   | Indkøbsvækst år for år = \[Purchase current year\] – \[Purchase last year\]                            |
 
-Følgende nøgledimensioner i indholdspakken bruges som filtre til at skabe udsnit af de samlede målinger, så du kan få større granularitet og dybere analytisk indsigt.
+Følgende nøgledimensioner i indholdet bruges som filtre til at skabe udsnit af de samlede målinger, så du kan få større granularitet og dybere analytisk indsigt.
 
 | Enhed                 | Eksempler på attributter                                |
 |------------------------|-------------------------------------------------------|
@@ -158,17 +169,5 @@ Følgende nøgledimensioner i indholdspakken bruges som filtre til at skabe udsn
 | Juridiske enheder         | Navn på juridisk enhed                                     |
 | Datoer                  | Datoer, årsforskydning                                    |
 
-Som standard viser indholdspakken data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
-
--   [Dataenheder](..\data-entities\data-entities.md)
--   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
-
-
-
-
+Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
 

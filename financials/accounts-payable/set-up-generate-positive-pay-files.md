@@ -3,13 +3,13 @@ title: Konfigurere og generere filer til positive betalinger
 description: I denne artikel beskrives, hvordan du opretter positive betalinger og genererer filer til positive betalinger.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f82ed69aaaf4d3345ef4e74a338124465dcf2358
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fc4269fc8bf8319a2a2f4e3769f0ffb31d5ef79d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,7 +35,7 @@ I denne artikel beskrives, hvordan du opretter positive betalinger og genererer 
 Konfigurer en positiv betaling til at generere en elektronisk liste over checks, der er leveret til banken. Når checken derefter skal indløses hos banken, sammenligner banken den med listen over checks. Hvis checken svarer til en check på listen, indløser banken den. Hvis checken ikke stemmer overens med en check på listen, beholder banken den til gennemsyn.
 
 ## <a name="security-for-positive-pay-files"></a>Sikkerhed for filer til positive betalinger
-Filer til positiv betaling kan indeholde følsomme oplysninger om beløbsmodtagere og checkbeløb. Sørg derfor for, at du bruger passende de sikringsforanstaltninger fra det tidspunkt, hvor filerne genereres, indtil de modtages af banken. Filer til positive betalinger overføres til den lokalitet, der er angivet i webbrowseren. Fordi filer til positive betalinger kan indeholde følsomme oplysninger, er det vigtigt, at kun autoriserede brugere har adgang til at generere og få vist disse oplysninger i Microsoft Dynamics 365 for Operations. Brug følgende tabel til at afgøre, hvilke rettigheder der kræves.
+Filer til positiv betaling kan indeholde følsomme oplysninger om beløbsmodtagere og checkbeløb. Sørg derfor for, at du bruger passende de sikringsforanstaltninger fra det tidspunkt, hvor filerne genereres, indtil de modtages af banken. Filer til positive betalinger overføres til den lokalitet, der er angivet i webbrowseren. Fordi filer til positive betalinger kan indeholde følsomme oplysninger, er det vigtigt, at kun autoriserede brugere har adgang til at generere og se disse oplysninger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Brug følgende tabel til at afgøre, hvilke rettigheder der kræves.
 
 <table>
 <colgroup>

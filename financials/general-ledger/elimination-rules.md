@@ -3,7 +3,7 @@ title: Elimineringsregler
 description: Dette emne indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ab1d8fb5bfc9413652d222e701c44b3b91a4c842
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -133,7 +133,7 @@ Din juridiske enhed, juridisk enhed A, sælger dimser til en anden juridisk enhe
 Alle disse transaktioner skaber interne transaktioner, der bogføres på skyldig til- og skyldig fra-konti. Derudover kan disse transaktioner omfatte avance- eller tabsbeløb, når beløbet for det interne salg ikke er lig med kostprisen for solgte varer
 
 ## <a name="set-up-elimination-rules"></a>Konfigurere elimineringsregler
-Når du opretter elimineringsregler i Dynamics 365 for Operations, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på eliminering. De fleste kunder navngiver den Samhandelspartner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
+Når du opretter elimineringsregler i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på eliminering. De fleste kunder navngiver den Samhandelspartner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
 
 Opsætningen for elimineringer findes i området Opsætning i modulet Konsolideringer. Når du angiver en beskrivelse af reglen, skal du vælge det regnskab, som elimineringskladden skal bogføres til. Det skal være et regnskab, hvor **Brug til økonomisk eliminering** er valgt i opsætningen af den juridiske enhed. 
 

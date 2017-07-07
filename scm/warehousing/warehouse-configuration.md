@@ -3,14 +3,14 @@ title: Konfiguration af lagersted
 description: I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11554
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08c086767303f6f52e085f8f56b5d09f1e46878f
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 17608d373fbedd20efe0b525ec141989a50a40a2
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,10 +33,10 @@ ms.lasthandoff: 05/25/2017
 
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 
-**Bemærk!** Denne artikel gælder for funktioner i modulet**Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet**Lagerstyring**.
+**Bemærk!** Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
-Lokationsstyringssystemet i Microsoft Dynamics 365 for Operations giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagereffektivitet.
+Administrationssystemet for lagersted i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition giver dig fleksible muligheder for at definere dit lagersteds layout efter skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
 
 -   Du kan oprette opbevaringssteder med høj prioritet og lav prioritet til optimal placering af varer.
 -   Du kan opdele lageret i områder, der passer til forskellige opbevaringsbehov, som temperaturkrav eller forskellige omsætningssatser for varer.
@@ -44,7 +44,7 @@ Lokationsstyringssystemet i Microsoft Dynamics 365 for Operations giver dig flek
 -   Du kan gruppere lokationer ved hjælp af indstillingerne for begrænsning af fysisk kapacitet.
 -   Du kan styre, hvordan varer opbevares og plukkes, baseret på regler, der er defineret af forespørgslen.
 
-Hvis du vil bruge lokationsstyring i Microsoft Dynamics 365 for Operations, skal du oprette et lagersted og aktivere det til styring af mere avancerede eller specialiserede lageraktiviteter. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
+Hvis du vil bruge styring af lagersted i Finance and Operations, skal du oprette et lagersted og aktivere det til styring af mere avancerede eller specialiserede lageraktiviteter. På siden **Lagersteder** skal du vælge indstillingen **Brug lagerstedsstyringsprocesser**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonegrupper, zoner, lokationstyper og lokationer
 
@@ -56,7 +56,7 @@ Du skal definere lagerets zonegrupper og zoner, lokationsprofiler, lokationstype
 -   **Lokalitetstyper** – en fysisk eller logisk inddeling af lagerstedets lokaliteter. Du kan for eksempel oprette en lokationstype for alle midlertidige lokationer. Faste indstillinger på siden **Parametre til lagerstedsstyring** driver processen med at definere midlertidige lokalitetstyper og den endelige afsendelseslokalitetstype.
 -   **Lokaliteter** – det laveste niveau af lokalitetsoplysninger. Lokaliteter bruges til at spore, hvor den disponible lagerbeholdning er gemt og plukket på et lagersted.
 
-De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan f.eks. være områder, hvor du kun kan bruge en bestemt type gaffeltruck. Eller hvis din virksomhed har både produktion og færdigvarer inden for den samme facilitet, kan du oprette et enkelt lagersted i Dynamics 365 for Operations, men derefter adskille de to operationer ved at oprette to zonegrupper. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonforespørgsler.
+De enheder, du opretter for at definere din lageropbygning, bruges i forespørgsler, der er angivet i arbejdsskabeloner til at drive arbejdsordrer på lageret. Når du definerer zonerne, lokalitetstyperne osv., skal du overveje, hvordan forskellige områder på lagerstedet bruges til forskellige processer. Derudover skal du overveje faktorer som de fysiske karakteristika for et bestemt område. Der kan f.eks. være områder, hvor du kun kan bruge en bestemt type gaffeltruck. Eller hvis din virksomhed har både produktion og færdigvarer inden for den samme facilitet, kan du oprette et enkelt lagersted i Finance and Operations, men derefter adskille de to operationer ved at oprette to zonegrupper. Giv dine enheder beskrivende navne, så det er nemt at identificere dem, når du bruger dem i skabelonforespørgsler.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Grænser for lokalitetslagring, lokalitetsprofiler og faste plukpladser
 

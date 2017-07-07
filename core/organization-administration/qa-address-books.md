@@ -3,7 +3,7 @@ title: Adressekartoteker
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 568000b37fa067dfd34b4ee0642e4ba6cbe3aa54
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7b3bed2bec4b109c6e3b557b8c3651f15f25169c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -42,8 +42,8 @@ Du kan søge efter dublerede poster direkte fra listesiden **Globalt adressekart
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Kan jeg tilføje eller slette flere partposter fra et adressekartotek?
 Ja, du kan tilføje flere partposter til et adressekartotek og også fjerne flere partposter.
 
--   Hvis du vil tilføje flere partposter til et adressekartotek, skal du på listesiden **Globalt adressekartotek**vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part**i gruppen **Vedligehold**klikke på **Tildel parter**. Vælg de adressekartoteker, du vil tilføje de valgte partposter i, og klik derefter på **OK**. Alle de valgte partposter føjes til de adressekartoteker, du har valgt.
--   Hvis du vil fjerne flere partposter fra et adressekartotek, skal du på listesiden **Globalt adressekartotek**vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part**i gruppen **Vedligehold**klikke på **Fjern parter**. Vælg de adressekartoteker, du vil fjerne parter fra, og klik derefter på **OK**. Alle de valgte partposter fjernes fra de adressekartoteker, du har valgt.
+-   Hvis du vil tilføje flere partposter til et adressekartotek, skal du på listesiden **Globalt adressekartotek** vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part** i gruppen **Vedligehold** klikke på **Tildel parter**. Vælg de adressekartoteker, du vil tilføje de valgte partposter i, og klik derefter på **OK**. Alle de valgte partposter føjes til de adressekartoteker, du har valgt.
+-   Hvis du vil fjerne flere partposter fra et adressekartotek, skal du på listesiden **Globalt adressekartotek** vælge parterne på listen. Derefter skal du på handlingspanelet på fanen **Part** i gruppen **Vedligehold** klikke på **Fjern parter**. Vælg de adressekartoteker, du vil fjerne parter fra, og klik derefter på **OK**. Alle de valgte partposter fjernes fra de adressekartoteker, du har valgt.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Kan jeg ændre parttypen for en post, eller er det nødvendigt at slette den gamle post og oprette en ny?
 Nogle gange skal du muligvis ændre parttypen for en post fra person til organisation eller fra organisation til person. Nancy er f.eks. medlem af salgsteamet for Fabrikam, Storbritannien. På en handelsmesse i London møder hun seks nye kundeemner. Nancy opretter en partpost for kundeemne for hver enkelt kundeemne. Når Nancy gemmer posterne, bliver hver enkelt post også oprette i det globale adressekartotek. Fabrikam har angivet standardparttypen til organisation, men to af de nye kundeemner bør have en post af typen person. Når Nancy vender tilbage fra handelsmessen, skal hun derfor ændre parttypen for to kundeemneposter. Hvis du vil ændre en partpost fra én parttype til en anden, skal du først oprette en ny partpost med den korrekte type i det globale adressekartotek. Du kan derefter knytte den gamle partpost med denne nye post. Når du har foretaget den nye parttilknytning, skal du slette den oprindelige partpost, der har den forkerte posttype.
@@ -67,7 +67,7 @@ I det globale adressekartotek eller på den relevante enhedsside kan du angive p
 -   **Oprettelse af en partpost, hvis du kender enhedstypen** – Hvis du kender enhedstypen for parten, kan du oprette en post på den relevante side for den pågældende type. Du kan f.eks. oprette en post for en kunde på siden **Kunde**. Når du opretter og gemmer en post ved hjælp af den relevante enhedsside, oprettes posten automatisk i det globale adressekartotek.
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversætte adresseoplysninger for partposter?
-Du kan konfigurere oversættelser af adresseoplysninger, så oplysningerne vises på dit eget sprog (systemsprog) i Microsoft Dynamics 365 for Operations, men på et andet sprog i dokumenter, f.eks salgsordrer. Du kan angive oversættelser af lande-/områdenavne, adresseformål og navnerækkefølge. Dit systemsprog er f.eks. dansk, og du opretter en salgsordre for en kunde i Frankrig. I dette tilfælde kan du se kundeposten på dansk i programmet, men få vist adresseoplysningerne på fransk i den udskrevne salgsordre. Når du konfigurerer oversættelser, skal du indtaste en oversættelse for hver vare på listen. De varer, du ikke angiver en oversættelse for, vises på systemsproget. Dit systemsprog er f.eks. dansk, og du sender et dokument til en kunde i Spanien. Hvis du ikke har angivet spanske (ESP) oversættelser af adresseoplysningerne, vises disse oplysninger på dansk både i dit program og på det udskrevne materiale.
+Du kan konfigurere oversættelser af adresseoplysninger, så oplysningerne vises på dit eget sprog (systemsprog) i Microsoft Dynamics 365 for Finance and Operations, men på et andet sprog i dokumenter, f.eks salgsordrer. Du kan angive oversættelser af lande-/områdenavne, adresseformål og navnerækkefølge. Dit systemsprog er f.eks. dansk, og du opretter en salgsordre for en kunde i Frankrig. I dette tilfælde kan du se kundeposten på dansk i programmet, men få vist adresseoplysningerne på fransk i den udskrevne salgsordre. Når du konfigurerer oversættelser, skal du indtaste en oversættelse for hver vare på listen. De varer, du ikke angiver en oversættelse for, vises på systemsproget. Dit systemsprog er f.eks. dansk, og du sender et dokument til en kunde i Spanien. Hvis du ikke har angivet spanske (ESP) oversættelser af adresseoplysningerne, vises disse oplysninger på dansk både i dit program og på det udskrevne materiale.
 
 
 

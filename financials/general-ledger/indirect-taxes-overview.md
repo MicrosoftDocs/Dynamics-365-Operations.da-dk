@@ -3,7 +3,7 @@ title: Momsoversigt
 description: Denne artikel indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,6 +30,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="sales-tax-overview"></a>Momsoversigt
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Denne artikel indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
@@ -73,7 +75,7 @@ For hver transaktion (salgs-/indkøbsdokumentlinjer, kladder osv.) skal du angiv
 For hver transaktion kan du slå den beregnede moms op ved at åbne siden **Momspostering**. Du kan søge efter moms for en dokumentlinje eller hele dokumentet. Du kan justere den beregnede moms for visse dokumenter (f.eks kreditorfakturaen og finanskladder), hvis det oprindelige dokument viser beløb, der afviger.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Udligning og rapportering af moms
-Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for Operations indeholder funktioner, så du kan afregne moms for intervallet og forskyde saldi til momsafregningskontoen, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på siden **Afregn og bogfør moms**. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
+Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition indeholder funktioner, så du kan afregne moms for intervallet og forskyde saldi til momsafregningskontoen, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på siden **Afregn og bogfør moms**. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
 
 Når momsen er blevet betalt, bør saldoen på momsafregningskontoen opvejes mod bankkontoen. Hvis den momsmyndighed, der er angivet i momsafregningsperioden, er relateret til en kreditorkonto, bogføres momssaldoen som en åben kreditorfaktura og kan tages med i det regelmæssige betalingsforslag.
 

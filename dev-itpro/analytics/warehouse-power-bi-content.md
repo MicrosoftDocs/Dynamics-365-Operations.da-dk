@@ -1,16 +1,16 @@
 ---
 title: Power BI-indhold til lagerstedsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til lagerstedsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
-author: YuyuScheller
+author: Mirzaab
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cba8d990c18f2db414d837118a54edfa09cba486
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3daa69a1f042c2eb525e7e26eb0fe29253fe9e90
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,24 +30,20 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
+I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Lagerstedperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 
+## <a name="overview"></a>Overblik
 
-I dette emne beskrives, hvad der er omfattet af Power BI-indhold til lagerstedsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
+Power BI-indhold til **Lagerstedperformance** er oprettet, så lagerstedschefer og driftsledere kan overvåge indgående og udgående nøgletal og nøgletal for lager. Det bruger styring af lagersted, produktdata og andre transaktionsdata fra dit system og giver både en samlet oversigt over lagerstedperformance og en opdeling for kreditorer, produktgrupper og produkter og websted og lagersteder. 
 
-<a name="overview"></a>Overblik
-========
+Lagerchefer kan bruge Power BI-indhold til **Lagerstedsperformance** til at måle følgende tre områder:
 
-Microsoft Power BI-indhold til **Lagerstedsperformance** er oprettet, så lagerstedschefer og driftsledere kan overvåge indgående og udgående nøgletal og nøgletal for lager. Det bruger lokationsstyring, produktdata og andre transaktionsdata fra Microsoft Dynamics 365 for Operations og giver både en samlet oversigt over lagerstedsperformance og en opdeling for kreditorer, produktgrupper og produkter og websted og lagersteder. Lagerchefer kan bruge Power BI-indhold til **Lagerstedsperformance** til at måle følgende tre områder:
+-   **Indgående performance**: Måler, hvor godt en leverandør fungerer i forhold til kundekrav (med andre ord måles leveringsperformance) og måler læg på lager-performance, så du kan identificere problemer, der involverer arbejdere eller varer i en periode. Det er vigtigt, at du ved, om leverandører leverer til tiden, tidligt eller for sent, så du kan bestemme, hvordan leverandørers performance påvirker den overordnede læg-på-lager-performance. En leverandør, der leverer uden for de datoer, der er aftalt, kan give ekstra belastning for lageret på grund af uventet arbejde og kan øge den gennemsnitlige tid til at lægge på lager.
+-   **Leveringsperformance**: Måler, om lageret leverer alle varer og til tiden til kunder (med andre ord måle udgående leveringsperformance), så du kan identificere eventuelle problemer, der vedrører produkter, lokationer eller lagersteder eller dedikerede kunder. Hvis du bliver opmærksom på, at du leverer for sent til bestemte områder eller byer, skal du muligvis fokusere mere på transport eller kontoadministration.
+-   **Lagernøjagtighed på lokation**: Lagernøjagtighed er vigtig intern business intelligence (BI) for et lagersted. Det er meget vigtigt, at du bestemmer, hvor præcise dine optællinger er generelt. Men det er også vigtigt at fastlægge, hvor nøjagtig din opbevaring af varer er på de rette steder, og at du fremhæver data vedr. uoverensstemmelser, så du kan finde bedre placeringer til varer eller starte en samlet optælling af bestemte varer. (I øjeblikket leveres den nye varebaserede funktionalitet til optælling som et hotfix). Hvis du bruger dette Power BI-indhold til at bestemme korrektheden af dataene for den disponible lagerbeholdning pr. lokation, kan du også identificere tyveri i dine butikker. Du kan også bestemme, om der er disponible mængder på andre lokaliteter, der afviger fra ERP-dataene (enterprise resource planning). Disse lokaliteter kan være for store, eller de kan være umulige at tælle. Det kan også være, at den fysiske placering er uhensigtsmæssig, så det er svært at holde en enkelt type vare synkroniseret med disponible data.
 
--   **Indgående performance**: Måle, hvor godt en leverandør fungerer i forhold til en kunde (med andre ord måle leveringsperformance) og måle læg på lager-performance, så du kan identificere problemer, der involverer arbejdere eller varer i en periode. Det er vigtigt, at du ved, om leverandører leverer til tiden, tidligt eller for sent, så du kan bestemme, hvordan leverandørers performance påvirker den overordnede læg-på-lager-performance. En leverandør, der leverer uden for de datoer, der blev aftalt, kan give ekstra belastning for lageret på grund af uventet arbejde og kan øge den gennemsnitlige tid til at lægge på lager.
--   **Leveringsperformance**: Måle, om lageret leverer alle varer og til tiden til kunder (med andre ord måle udgående leveringsperformance), så du kan identificere eventuelle problemer, der vedrører produkter, lokationer eller lagersteder eller dedikerede kunder. Hvis du bliver opmærksom på, at du leverer for sent til bestemte områder eller byer, skal du muligvis fokusere mere på transport eller kontoadministration.
--   **Lagernøjagtighed på lokation**: Lagernøjagtighed er vigtig intern business intelligence (BI) for lagersted. Det er meget vigtigt, at du bestemmer, hvor præcise dine optællinger er generelt. Men det er også vigtigt at fastlægge, hvor nøjagtig din opbevaring af varer er på de rette steder, og at du fremhæver data vedr. uoverensstemmelser, så du kan finde bedre placeringer til varer eller starte en samlet optælling af bestemte varer. (I øjeblikket leveres den nye varebaserede funktionalitet til optælling som et hotfix). Hvis du bruger dette Power BI-indhold til at bestemme korrektheden af dataene for den disponible lagerbeholdning pr. lokation, kan du også identificere tyveri i dine butikker. Du kan også bestemme, om der er disponible mængder på andre lokaliteter, der afviger fra ERP-dataene (enterprise resource planning). Disse lokaliteter kan være for store, eller de kan være umulige at tælle. Det kan også være, at den fysiske placering er uhensigtsmæssig, så det er svært at holde en enkelt type vare synkroniseret med disponible data.
-
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Du kan finde Power Bi-indholdet til **Lagerstedsperformance** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Systemadministratorer kan hente indholdet og forbinde det med dine Microsoft Dynamics-365 for Operations-data ved at følge vejledningen i [Power BI indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). 
-
-**Bemærk:** **KB 4011327** er en forudsætning for dette Power BI-indhold. Når du logger på Lifecycle Services, kan du få adgang til KB her: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+## <a name="accessing-the-power-bi-content-pack"></a>Adgang til Power BI-indholdspakke
+Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017-opdatering vises **Lagerstedperformance** Power BI-indhold på siden **Lagerstedperformance** (**Lokationsstyring** > **Forespørgsler og rapporter** > **Performanceanalyse for lagersted** > **Lagerstedperformance**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Power BI indholdet til **Lagerstedsperformance** omfatter en rapport. Denne rapport består af en række målinger, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Lagerstedsperformance**.
@@ -68,9 +64,9 @@ Power BI indholdet til **Lagerstedsperformance** omfatter en rapport. Denne rapp
 | Lagernøjagtighed på lokation | Afvigelseshyppighed                         | Den samlede afvigelseshyppighed som en procentdel af alle linjer, der tælles for en given periode.                                                                                                                                                                                                                                                                                                                    |
 | Lagernøjagtighed på lokation | Antal uden afvigelse                | Det antal linjer, der behandles uden afvigelser, ud af det samlede antal af optællingsarbejdslinjer, der behandles.                                                                                                                                                                                                                                                                                  |
 | Lagernøjagtighed på lokation | Varer optalt over tid                  | De procentdel af varer, der optælles med og uden afvigelse over tid.                                                                                                                                                                                                                                                                                                                                |
-| Lagernøjagtighed på lokation | Afvigelse i vareantal større end % | En tabelvisning af optællingslinjer med afvigelser, der overskrider den angivne procentdel. Tabellen indeholder oplysninger om lokaliteter, varer, gennemsnitlig afvigelse, samlede optællingsarbejdslinjer, der er optalt, antallet af optællingslinjer med afvigelser for lokationen, gennemsnitligt optalt antal, forventet samlet antal, der skal optælles, og det faktiske vareantal, der er optalt. |
+| Lagernøjagtighed på lokation | Afvigelse i vareantal større end % | En tabelvisning af optællingslinjer med afvigelser, der overskrider den angivne procentdel. Tabellen indeholder oplysninger om lokationer, varer, gennemsnitlig afvigelse, samlet antal optællingsarbejdslinjer, der er optalt, antal optællingslinjer med afvigelser for lokationen, gennemsnitligt optalt antal, forventet samlet antal, der skal optælles, og det faktiske vareantal, der er optalt. |
 | Lagernøjagtighed på lokation | Vareantal pr. arbejder                     | Arbejderes optællingsperformance. Performance udtrykkes som en procentdel af optællingsarbejdslinjer, der har og ikke har afvigelser.                                                                                                                                                                                                                                                                    |
-| Lagernøjagtighed på lokation | Vareantal pr. sted/lagersted           | Optællingsperformance efter antallet af behandlede optællingsarbejdslinjer pr. sted eller lagersted, der omfatter og udelader uoverensstemmelser.                                                                                                                                                                                                                                                                                |
+| Lagernøjagtighed på lokation | Vareantal pr. sted/lagersted           | Optællingsperformance efter antallet af behandlede optællingsarbejdslinjer pr. sted eller lagersted, der ikke har uoverensstemmelser.                                                                                                                                                                                                                                                                                |
 | Lagernøjagtighed på lokation | Afvigelseshyppighed pr. produkt              | Afvigelseshyppighed for optællingsperformance. Satsen udtrykkes som en procentdel af behandlede optællingsarbejdslinjer pr. vare eller varegruppe.                                                                                                                                                                                                                                                                    |
 | Leveringsperformance        | Linjer, der er leveret                            | Det samlede antal forsendelseslinjer, der er leveret i en given periode.                                                                                                                                                                                                                                                                                                                                        |
 | Leveringsperformance        | For tidlig                                    | Procentdelen af leverancelinjer, der leveres tidligt.                                                                                                                                                                                                                                                                                                                                                        |
@@ -81,9 +77,18 @@ Power BI indholdet til **Lagerstedsperformance** omfatter en rapport. Denne rapp
 | Leveringsperformance        | Afsendt efter biprodukt                       | Den procentdel, der er leveret tidligt, til tiden eller for sent efter vare eller varegruppe.                                                                                                                                                                                                                                                                                                                                   |
 | Leveringsperformance        | Afsendt efter kunder                      | Den procentdel, der er leveret tidligt, til tiden eller for sent efter kunde eller kundegruppe.                                                                                                                                                                                                                                                                                                                           |
 | Leveringsperformance        | Afsendt pr. websted/lagersted              | Den procentdel, der er leveret tidligt, til tiden eller for sent pr. sted eller lagersted.                                                                                                                                                                                                                                                                                                                                    |
+## <a name="extending-the-power-bi-content"></a>Udvidelse af Power BI-indhold
+Når du bruger de indholdspakker, der er tilgængelige i Microsoft Dynamics Lifecycle Services (LCS), kan du levere fremragende analyser til personer, der ikke logger på Microsoft Dynamics 365. Du kan redigere disse indholdspakker, så de omfatter andre rapporter eller grafik, og derefter udgive indholdspakkerne på din Power BI.com-lejer med henblik på analyse. 
+
+Du kan finde Power BI-indhold for **Lagerstedperformance** i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
+
+Sørg for at downloade **Lagerstedperformance**-indhold, der gælder for den version af Dynamics 365, du bruger.
+
+> [!NOTE]
+> Hvis du bruger Microsoft Dynamics 365 for Operations version 1611, er KB 4011327 en forudsætning for dette Power BI-indhold. Når du logger på LCS, kan du få adgang til KB på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Om datamodellen og beregninger
-Dynamics 365 for Operations-data bruges til at udfylde rapporten i Power BI-indhold til **Lagerstedsperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). 
+Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Lagerstedperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). 
 
 Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 
@@ -117,17 +122,4 @@ Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 | Leveringsperformance        | Afsendt efter biprodukt                       | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel).                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Leveringsperformance        | Afsendt efter kunder                      | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel).                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Leveringsperformance        | Afsendt pr. websted/lagersted              | CustPackingSlipOnTimeStatus           | Tidligt, til tiden og for sent (se beskrivelserne tidligere i denne tabel).                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-## <a name="additional-resources"></a>Yderligere ressourcer
-Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
-
--   [Dataenheder](../data-entities/data-entities.md)
--   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
-
-
-
-
-
 

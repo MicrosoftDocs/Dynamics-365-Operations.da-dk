@@ -1,16 +1,16 @@
 ---
-title: Stillingsprognose
-description: 
+title: Budgetteret stilling
+description: "Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgifterne til en organisation. Stillingsprognoser gør det muligt at planlægge disse udgifter og inkludere dem i planlægningen af budgetter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
@@ -18,18 +18,17 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 03645693c5101c48ef9d35bdbe14debef1e69fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="position-forecasting"></a>Stillingsprognose
+# <a name="position-forecasting"></a>Budgetteret stilling
 
 [!include[banner](../includes/banner.md)]
-
 
 
 
@@ -97,7 +96,7 @@ Det indtjeningsomkostningselement, der er valgt i løngruppen, bruges, når du o
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Oprette prognosestillinger for eksisterende stillinger
 
-For at få den mest nøjagtige budgetplanlægning kan du oprette prognosepositioner ved at bruge oplysninger fra eksisterende stillinger i Microsoft Dynamics 365 for Operations, uanset om stillingen i øjeblikket er besat eller ubesat. 
+For at få den mest nøjagtige budgetplanlægning kan du oprette prognosepositioner ved at bruge oplysninger fra eksisterende stillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uanset om stillingen i øjeblikket er besat eller ubesat. 
 
 Funktionen **Tilføj eksisterende stillinger** viser alle stillinger for en organisation. Ved at angive datoen **Pr. dato** kan du ændre listen over stillinger, så den indeholder de stillinger, der fandtes på en dato i fortiden, eller mere almindeligt i fremtiden (for eksempel start på næste budgetcyklus). Vælg en budgetplanlægningsproces og et budgetplanscenarie, vælg stillinger på listen, og klik derefter på **OK** for at oprette prognosestillinger for de valgte stillinger. Bemærk, at du kun kan oprette en prognosestilling for hver eksisterende stilling i en budgetplanlægningsproces og et scenarie. Du kan dog oprette flere versioner ved at tildele forskellige budgetplanscenarier. 
 

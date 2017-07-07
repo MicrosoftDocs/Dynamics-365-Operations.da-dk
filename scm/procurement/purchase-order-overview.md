@@ -1,16 +1,16 @@
 ---
 title: "Oversigt over indkøbsordrer"
-description: "Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO&quot;er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår."
+description: "Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO'er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 88fa3fb97621e0f4a226a45b36809e824c807420
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="purchase-order-overview"></a>Oversigt over indkøbsordrer
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO'er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår.
@@ -46,7 +48,7 @@ Følgende artikler indeholder en oversigt over de forskellige faser, som en IO g
 -   [Oprettelse af indkøbsordre](purchase-order-creation.md)
 -   [Godkendelse og bekræftelse af indkøbsordre](purchase-order-approval-confirmation.md)
 -   [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
--   [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Oversigt over kreditorfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Indkøbsordretyper
 Der er tre typer IO'er. Når du opretter en IO, skal du angive typen. Du kan oprette en standardordretype for nye ordrer på siden **Indkøbs- og forsyningsparametre**.
@@ -90,7 +92,7 @@ Feltet **Godkendelsesstatus** bruges, når en IO gennemgår en gennemsynsproces 
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
-[Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Oversigt over kreditorfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

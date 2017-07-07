@@ -1,6 +1,6 @@
 ---
-title: Oprette centraliserede betalinger
-description: 
+title: Konfigurere centraliserede betalinger
+description: "Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen."
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
@@ -18,19 +18,17 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
+ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
+ms.openlocfilehash: 0b33e37699fb9b81ad1803f670a4dedbce6a9c29
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
 
-# <a name="set-up-centralized-payments"></a>Oprette centraliserede betalinger
+# <a name="set-up-centralized-payments"></a>Konfigurere centraliserede betalinger
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen. Før du går i gang, skal du gennemføre følgende opsætning:
@@ -53,10 +51,10 @@ Hvis du betaler en kreditor fra én juridisk enhed, og du vil vælge fakturaer t
 Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal posteringsprofil-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed til fakturaen at konfigurere en posteringsprofil i de enkelte fakturaers juridiske enheder, der svarer til de posteringsprofiler, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Kreditorposteringsprofiler** kan du derefter oprette en ny posteringsprofil eller redigere en eksisterende posteringsprofil. De indstillinger, du angiver for posteringsprofilen i fakturaens juridiske enhed, behøver ikke at stemme overens med opsætningen af posteringsprofilen i betalingens juridiske enhed.
 
 ## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Konfigurere betalingsmåder for centraliserede betalinger
-Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal betalingsmåde-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed af fakturaen at konfigurere en betalingsmåde, der svarer til de betalingsmåder, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Betalingsmåder**kan du derefter oprette en ny betalingsmåde eller redigere en eksisterende betalingsmåde. De indstillinger, du angiver for betalingsmåden i fakturaens juridiske enhed, behøver ikke at stemme overens med den måde, betalingsmåden er konfigureret på i betalingens juridiske enhed.
+Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andre juridiske enheder, skal betalingsmåde-id'erne være de samme i begge juridiske enheder. Du kan sikre, at betalingerne oprettes korrekt, ved i hver juridisk enhed af fakturaen at konfigurere en betalingsmåde, der svarer til de betalingsmåder, der bruges i betalingens juridiske enhed. Skift til den første juridiske enhed for fakturaen. På siden **Betalingsmåder** kan du derefter oprette en ny betalingsmåde eller redigere en eksisterende betalingsmåde. De indstillinger, du angiver for betalingsmåden i fakturaens juridiske enhed, behøver ikke at stemme overens med den måde, betalingsmåden er konfigureret på i betalingens juridiske enhed.
 
 ## <a name="set-up-default-descriptions"></a>Konfigurere standardbeskrivelser
-Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskrivelsen medtages i skyldig til- og skyldig fra-posteringer i løbet af udligningsprocessen på tværs af virksomheder. På siden **Standardbeskrivelser** kan du oprette nye beskrivelser til både **Intern kundeudligning**og **Intern kreditorudligning** ved at vælge et sprog og derefter indtaste teksten.
+Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskrivelsen medtages i skyldig til- og skyldig fra-posteringer i løbet af udligningsprocessen på tværs af virksomheder. På siden **Standardbeskrivelser** kan du oprette nye beskrivelser til både **Intern kundeudligning** og **Intern kreditorudligning** ved at vælge et sprog og derefter indtaste teksten.
 
 
 

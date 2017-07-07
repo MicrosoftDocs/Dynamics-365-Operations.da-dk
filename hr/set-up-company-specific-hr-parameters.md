@@ -3,25 +3,26 @@ title: Oprette firmaspecifikke parametre for personale
 description: "Indstillingerne for nogle parametre for personale (HR) deles på tværs af firmaer, mens indstillingerne for andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre for personale."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRMParameters
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: rschloma
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1a3560013271fc1b83bdb931aef2153b1d07317
+ms.sourcegitcommit: f83bc127f7bf3cdceb39a79c1e69f4f7e96f6462
+ms.openlocfilehash: ef84ad6e90e7c58ea921930e23b67228d393bc7e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/19/2017
 
 
 ---
@@ -35,8 +36,8 @@ Indstillingerne for nogle parametre for personale (HR) deles på tværs af firma
 
 To sider bruges til at angive personaleparametre. For parametre, der deles på tværs af firmaer, skal du bruge siden **Delte parametre for personale**. For parametre, der er specifikke for virksomheden (med andre ord gælder indstillingerne for en enkelt virksomhed), skal du bruge siden **Personaleparametre**. På siden **Personaleparametre** er indstillingerne fordelt på seks faner:
 
--   Generel
--   Rekruttering
+-   Almindelig
+-   Rekruttering - dette er ikke inkluderet i Dynamics 365 for Talent
 -   Kompensation
 -   Nummerserier
 -   Family and Medical Leave Act (FMLA)
@@ -48,7 +49,11 @@ Indstillingerne på fanen **Rekruttering** definerer de dokumenttyper, der bruge
 
 Indstillingerne under fanen **Kompensation** definerer, om brugere skal bekræfte, at de vil gemme oplysninger om en fast eller variabel lønstruktur. Hvis du vælger afkrydsningsfeltet **Aktivér validering ved lagring**, får brugerne vist en meddelelse, hver gang de lukker en kompensationsrelateret side, hvor de bliver spurgt, om de vil gemme posten. Nogle sider inden for kompensationsstyring giver ikke brugerne mulighed for at slette information. Når brugeren får besked på at bekræfte, om oplysningerne skal gemmes, kan det hjælpe med at begrænse mængden af oplysninger, der gemmes, men ikke senere kan slettes. Hvis afkrydsningsfeltet **Aktiver validering ved lagring** ikke er markeret, gemmes poster altid med det samme, eventuelt før brugeren er klar. Hvis du bruger performancestyring, giver fanen **Kompensation** dig også mulighed for at vælge en rangeringsmodel, der skal bruges i stedet for den model, der er tildelt til kompensationsstrukturerne, når performance vurderes. 
 
-Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder skal du bruge listesiden **Nummerserier** (klik på **Organisationsadministration** &gt; **Nummerserier** &gt; **Nummerserier**). 
+### <a name="previously-released-functionality"></a>Tidligere frigiven funktionalitet
+Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder skal du bruge listesiden **Nummerserier** (klik på **Organisationsadministration** &gt; **Nummerserier** &gt; **Nummerserier**).
+
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Hvis du bruger Dynamics 365 for Talent
+Indstillingerne på fanen **Nummerserie** bestemmer de serier, der skal bruges til automatisk tildeling af id'er til elementer i personalemodulet, f.eks. ansøgninger, fraværsregistreringer, kompensationsprocesresultater, sagsnumre, kurser og kursusagendaer. Hvis du vil vedligeholde nummerseriereferencer og -koder. skal du bruge listesiden **Nummerserier** (klik på **Systemadministration** &gt; **fanen Links** &gt; **Nummerserier** &gt; **Nummerserier**). 
 
 Indstillingerne på fanen **FMLA** definerer, hvor mange timer en medarbejder skal arbejde for at være berettiget til FMLA-ydelser, længde af beskæftigelse, der kræves for berettigelse og beskæftigelsens startdato, der bruges til at bestemme længden af beskæftigelse. Indstillingerne også definere antallet af FMLA-timer, som medarbejderne har ret til, og FMLA-orlovskalender, der bruges til at beregne, hvor mange FMLA-timer medarbejdere har brugt. Fanen **FMLA** er kun tilgængelig for virksomheder i USA. 
 

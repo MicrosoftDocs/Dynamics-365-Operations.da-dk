@@ -1,36 +1,36 @@
 ---
-title: "Økonomirapportering i Dynamics 365 for Operations"
-description: "Med Økonomirapportering til Dynamics 365 for Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter."
+title: "Økonomirapportering til Finance and Operations"
+description: "Med Økonomirapportering til Finance and Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Økonomirapportering i Dynamics 365 for Operations
+# <a name="financial-reporting-for-finance-and-operations"></a>Økonomirapportering til Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 
-Med Økonomirapportering til Dynamics 365 for Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter.
+Med Økonomirapportering til Finance and Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter.
 
 Økonomirapportering omfatter understøttelse af dimension. Derfor er kontosegmenter eller dimensioner umiddelbart tilgængelige. Der kræves ingen yderligere værktøjer eller konfigurationstrin.
 

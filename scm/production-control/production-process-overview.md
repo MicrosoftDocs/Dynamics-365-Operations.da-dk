@@ -3,7 +3,7 @@ title: Oversigt over produktionsprocessen
 description: Denne artikel indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -39,15 +39,15 @@ Produktionen af produkter, en proces, der også kaldes produktionslivscyklus, f�
 
 Modulet **Produktionsstyring** er knyttet til andre moduler, som **Administration af produktoplysninger**, **Lagerstyring**, **Finans**, **Lagerstedsstyring**, **Projektregnskab** og **Virksomhedsadministration**. Denne integration understøtter det informationsflow, der er nødvendigt for at fuldføre produktionen af en færdig vare.  
 
-Produktionsprocessen er typisk påvirket af omkostningsregnskabet og metoderne til lagerets værdiansættelse, der er valgt for en bestemt produktionsproces. Dynamics 365 for Operations understøtter både faktiske omkostninger (first in, first out \[FIFO\]; last in, first out \[LIFO\], glidende gennemsnit, periodisk vægtet gennemsnit) og metoder for standardomkostninger. Lean manufacturing er implementeret på basis af princippet for efterkalkuleret varetræk.  
+Produktionsprocessen er typisk påvirket af omkostningsregnskabet og metoderne til lagerets værdiansættelse, der er valgt for en bestemt produktionsproces. Finance and Operations understøtter både faktiske omkostninger (first in, first out \[FIFO\]; last in, first out \[LIFO\], glidende gennemsnit, periodisk vægtet gennemsnit) og metoder for standardomkostninger. Lean manufacturing er implementeret på basis af princippet for efterkalkuleret varetræk.  
 
 Valget af metoderne for måling af kostværdi definerer også kravene til rapportering af materiale- og ressourceforbrug i produktionsprocessen. Normalt kræver metoder for faktiske omkostninger nøjagtig rapportering på jobniveau, mens metoder for periodisk efterkalkulation tillader mindre detaljeret rapportering af materiale- og ressourceforbrug.
 
 ## <a name="mixed-mode-manufacturing"></a>Produktion i blandet tilstand
-Forskellige produkter og produktionstopologier kræver anvendelse af forskellige ordretyper. Dynamics 365 for Operations kan anvende de forskellige typer i blandet tilstand. Med andre ord kan alle ordretyper forekomme i løbet af start-til-slut-processen for produktionen af en færdigvare.
+Forskellige produkter og produktionstopologier kræver anvendelse af forskellige ordretyper. Finance and Operations kan anvende de forskellige typer i blandet tilstand. Med andre ord kan alle ordretyper forekomme i løbet af start-til-slut-processen for produktionen af en færdigvare.
 
 -   **Produktionsordre** – Dette er den klassiske ordretype produktion af et bestemt produkt eller en produktvariant i et bestemt antal på en bestemt dato. Produktionsordrer er baseret på styklister og ruter.
--   **Batchordre** – Denne ordretype bruges til forarbejdningsindustrien og diskrete processer, hvor produktionskonverteringen er baseret på en formel, eller hvor samprodukter og biprodukter kan være slutprodukter enten ud over eller i stedet for det primære produkt. Batchordrer bruger styklister og ruter som **formel**type.
+-   **Batchordre** – Denne ordretype bruges til forarbejdningsindustrien og diskrete processer, hvor produktionskonverteringen er baseret på en formel, eller hvor samprodukter og biprodukter kan være slutprodukter enten ud over eller i stedet for det primære produkt. Batchordrer bruger styklister og ruter som **formel** type.
 -   **Kanban** – Kanban bruges til at signalere tilbagevendende lean manufacturing-processer, der er baseret på produktionsflow, kanbanregler og styklister.
 -   **Projekt** – Et produktionsprojekt kombinerer produkter og tjenester med en bestemt tidsplan og et budget. Produktionsdelen i et projekt kan leveres via en af de andre typer.
 

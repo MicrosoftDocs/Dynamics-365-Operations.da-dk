@@ -1,16 +1,16 @@
 ---
-title: "Arbejdsområde til kreditorsamarbejde på mobilenheder i Microsoft Dynamics 365 for Operations-app"
-description: "Med arbejdsområdet til kreditorsamarbejde på mobilenheder kan dine kreditorer være ajour med indkøbsordrer, der er blevet sendt til dem til godkendelse og få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner."
-author: YuyuScheller
+title: "Mobilarbejdsområde for kreditorsamarbejde"
+description: "Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner."
+author: mkirknel
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
@@ -18,130 +18,143 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e19fee87dae6e5d425f36dac0db4ea89534a8510
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 20e4c77bc47bffc3474559e3b9933b87e947e178
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Arbejdsområde til kreditorsamarbejde på mobilenheder i Microsoft Dynamics 365 for Operations-app
+# <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
 [!include[banner](../includes/banner.md)]
 
+Dette emne indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 
-Med arbejdsområdet til kreditorsamarbejde på mobilenheder kan dine kreditorer være ajour med indkøbsordrer, der er blevet sendt til dem til godkendelse og få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
+Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations-mobilappen.
 
-<a name="prerequisites"></a>Forudsætninger
--------------
+## <a name="overview"></a>Overblik 
+Arbejdsområdet **Kreditorsamarbejde** på mobilenheder holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og reagere på dem i webklienten til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+
+>[!NOTE]
+> Det mobile arbejdsområde bør anvendes som et supplement til webgrænsefladen til kreditorsamarbejde, men ikke som en erstatning. 
+
+Med arbejdsområdet **Kreditorsamarbejde** på mobilenheder kan dine kreditorer få vist nye indkøbsordrer, der er sendt til dem til godkendelse. Det viser indkøbsordreoplysninger, f.eks. produkter, antal og ønskede leveringsdatoer. Prisoplysninger er også tilgængelige, afhængigt af konfigurationen af hver kreditor. 
+
+Når en bruger logger på som kreditor, kan brugeren se, hvilke indkøbsordrer der er besvaret, og hvilke indkøbsordrer der stadig afventer kundehandling. En indkøbsordre kan f.eks. afvente kundehandling, fordi leverandøren har foreslået en anden leveringsdato, men kunden har endnu ikke accepteret denne dato. Leverandøren kan også se en liste over indkøbsordrer, der er bekræftet, men som endnu ikke er leveret. 
+
+Hvis leverandøren vil reagere på en indkøbsordre, er vedkommende nødt til at bruge webgrænsefladen til kreditorsamarbejde, der findes i webklienten. Det kan leverandøren også få flere oplysninger om ordren, f.eks. vedhæftede dokumenter, leveringsadresse pr. linje og gebyrer, der er knyttet til leverandøren. 
+
+Med en speciel sikkerhedsrolle kan leverandøren få vist de kontaktpersoner, der er registreret for en kreditorkonto. Med den samme sikkerhedsrolle kan kreditoren få vist status for alle brugeranmodninger, der er sendt. 
+
+Webgrænsefladen for kreditorsamarbejde i webklienten skal bruges til at oprette nye kontakter og sende nye brugeranmodninger. 
+
+Arbejdsområdet **Kreditorsamarbejde** til mobilenheder giver en leverandør mulighed for at udføre disse opgaver:
+
+-   Få vist nye indkøbsordrer, der er sendt til kreditoren.
+-   Få vist indkøbsordrer, som kreditoren har besvaret, og som afventer kundehandling.
+-   Få vist indkøbsordrer, der er bekræftet, og som ikke er blevet fuldt modtaget.
+-   Få vist kontaktpersonens oplysninger, der er registreret for kreditorkontoen. (Denne opgave kræver en ekstra sikkerhedsrolle).
+-   Få vist oplysninger om en brugeranmodning, der er afsendt af kreditoren, og følge status for anmodningen. (Denne opgave kræver en ekstra sikkerhedsrolle).
+
+## <a name="prerequisites"></a>Forudsætninger
+Forudsætningerne varierer alt efter, hvilken version af Microsoft Dynamics 365 der er installeret i din organisation.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Forudsætninger, hvis du bruger opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 
+Hvis opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Kreditorsamarbejde** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
+Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Forudsætning</th>
+<th>Rolle</th>
 <th>Betegnelse</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Læs om Microsoft Dynamics 365 for Operations-mobilplatformen</td>
-<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Dynamics 365 for Operations-mobilplatform</a></td>
+<td>KB 3216943 skal implementeres, hvis du bruger platformsopdatering 3.</td>
+<td>Systemadministrator</td>
+<td>KB 3216943 er en binær opdatering, der skal bruges, hvis du bruger platformsopdatering 3. For at implementere denne KB skal systemadministratoren gøre følgende.
+<ol>
+<li>Hent KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Installer den binære opdatering, der leveres som en pakke, der kan installeres. Du kan finde oplysninger om, hvordan du anvender en pakke, der kan installeres, i <a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Anvende en installerbar pakke</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 for Operations</td>
-<td>Sørg for, at du bruger et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og opdatering 3 til Microsoft Dynamics for Operations platformen (november 2016).</td>
+<td>KB 4013633 skal være implementeret.</td>
+<td>Systemadministrator</td>
+<td>KB 4013633 er et X ++ opdatering eller metadatahotfix, der indeholder arbejdsområdet <strong>Disponibelt lager</strong> til mobilenheder. For at implementere KB 4013633 skal systemadministratoren gøre følgende.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Hent metadata-hotfixet fra LCS</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installere metadatahotfixet</a>.</li><li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Anvend den installerbare pakke</a></li>
+</ol></td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000">Mobileenhed, hvor Dynamics 365 for Operations-appen er installeret</span></td>
-<td><span style="color: #000000">Hent og installer Dynamics 365 for Operations-appen fra din mobilapp-butik.</span></td>
+<td>Mobilarbejdsområdet <strong>Kreditorsamarbejde</strong> skal være publiceret.</td><td>Systemadministrator</td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicere et arbejdsområde til mobilenheder</a>.</td>
 </tr>
 <tr class="even">
-<td>Hotfix KB 4013633</td>
-<td>Installer hotfixet, hvis du vil aktivere de arbejdsområder, der findes i Dynamics 365 for Operations.</td>
-</tr>
-<tr class="odd">
-<td><span style="color: #ff0000"><span style="color: #000000">Hotfix KB 3216943</span> </span></td>
-<td>Installere hotfixet, hvis du vil aktivere arbejdsområdet til kreditorsamarbejde på mobilenheder.</td>
-</tr>
-<tr class="even">
-<td>Kreditorbrugeren skal have adgang til webgrænsefladen for kreditorsamarbejde i Dynamics 365 for Operations og konfigurere en kreditorsamarbejdsbruger.</td>
-<td>Følg de trin, der er beskrevet i følgende emner til at oprette og arbejde med webgrænsefladen til kreditorsamarbejde.
+<td>Kreditorbrugeren skal have adgang til webgrænsefladen for kreditorsamarbejde i webklienten og skal konfigurere en bruger til kreditorsamarbejd.</td><td>Indkøbsmedarbejdere og systemadministratoren</td>
+<td>Følg trinnene i følgende emner for at oprette og arbejde med webgrænsefladen til kreditorsamarbejde.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Brug kreditorsamarbejde til at arbejde sammen med eksterne kreditorer</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Administrere brugere af kreditorsamarbejde</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Konfigurere og vedligeholde kreditorsamarbejde</a></li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Brug kreditorsamarbejde til at arbejde sammen med kunder i Dynamics 365 for Operations</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Brug kreditorsamarbejde til at arbejde sammen med kunder i Finance and Operations</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="overview"></a>Overblik
-Arbejdsområdet til kreditorsamarbejde på mobilenheder holder kreditorerne underrettet om nye indkøbsordrer, så de kan se og reagere på indkøbsordrer i Dynamics-365 for Operations-webklienten. 
+## <a name="download-and-install-the-mobile-app"></a>Downloade og installere mobilappen
 
-**Bemærk!** Det mobile arbejdsområde bør anvendes som et supplement til webgrænsefladen til kreditorsamarbejde, men ikke som en erstatning. 
+Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
-Med arbejdsområdet til kreditorsamarbejde på mobilenheder kan dine kreditorer få vist nye indkøbsordrer, der er sendt til godkendelse. Det viser indkøbsordreoplysninger, f.eks. produkter, antal og ønskede leveringsdatoer. Prisoplysninger er tilgængelige, afhængigt af konfigurationen for hver kreditor. 
+-   [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Til iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-Når en bruger logger på som en kreditor, kan de se hvilke indkøbsordrer er blevet besvaret, eller hvilke indkøbsordrer der stadig afventer kundehandling. Kreditoren kan have foreslået en anden dato for levering, der endnu ikke er aftalt med kunden, så indkøbsordren afventer kundehandling. Kreditoren kan også se en liste over indkøbsordrer, der er bekræftet, men som endnu ikke er leveret. 
+## <a name="sign-in-to-the-mobile-app"></a>Log på mobilappen
+1.  Start appen på din mobilenhed.
+2.  Angiv URL-adressen til din Microsoft Dynamics 365.
+4.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
+5.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
-Hvis kreditoren vil besvare en indkøbsordre, er vedkommende nødt til at bruge webgrænsefladen til kreditorsamarbejde, der findes i Dynamics-365 for Operations-webklienten. Dette er også der, hvor kreditoren kan få flere oplysninger om ordren, f.eks. vedhæftede dokumenter, leveringsadresse pr. linje og gebyrer, der er knyttet til kreditoren. 
+    [![Træk for at opdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-Med en speciel sikkerhedsrolle, kan kreditoren få vist hvilke kontaktpersoner, der er registreret for en kreditorkonto. Med den samme sikkerhedsrolle kan kreditoren få vist status for alle brugeranmodninger, der er sendt. 
+## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Brug mobilarbejdsområdet for kreditorsamarbejde
+Når du vælger **Kreditorsamarbejde**-arbejdsområdet, kan du se følgende indstillinger.
 
-Oprettelse af nye kontaktpersoner og afsendelse af nye brugeranmodninger, skal det ske i grænsefladen til kreditorsamarbejde, der findes i Dynamics-365 for Operations-webklienten. 
+![Mobilarbejdsområde for kreditorsamarbejde](./media/vendor-collaboration-mobile-app.png)
 
-Med det mobile arbejdsområde kan kreditoren:
+**Kreditorsamarbejde**-arbejdsområdet indeholder følgende sider.
 
--   Få vist nye indkøbsordrer, der er sendt til kreditoren.
--   Få vist indkøbsordrer, som kreditoren har besvaret, og som afventer kundehandling.
--   Få vist indkøbsordrer, der er bekræftet, og som ikke er blevet fuldt modtaget.
--   Få vist oplysninger om kontaktperson, der er registreret for kreditorkontoen (kræver en ekstra sikkerhedsrolle).
--   Få vist oplysninger og følge status for en brugeranmodning afsendt af kreditoren (kræver en ekstra sikkerhedsrolle).
+### <a name="contacts"></a>Kontaktpersoner
+På siden **Kontakter** kan du se alle de kontakter, der er angivet for kreditorkontoen. Den viser kontaktpersonens navn, primære mailadresse og brugeralias, hvis kontaktpersonen har et alias. Siden viser også, om kontaktpersonens brugerkonto er aktiv. Når du vælger en kontakt, får du vist kontaktoplysninger, f.eks. de juridiske enheder, som personen er kontakt for. Du kan også se kontaktoplysninger som telefonnummer eller en alternativ mailadresse.
 
-## <a name="get-started"></a>Introduktion
-Sådan kommer du i gang på din mobilenhed:
+### <a name="user-requests"></a>Brugeranmodninger
+På siden **Brugeranmodninger** kan du se alle brugeranmodninger, som du har sendt via webgrænsefladen til leverandørsamarbejde. Du kan også følge status for disse anmodninger. Når du vælger en brugeranmodning, kan du se, hvad der blev anmodet om, tilføje eller deaktivere en bruger, ændre sikkerhed og se, hvilke sikkerhedsroller der blev anmodet om for brugeren.
 
-1.  På din mobilapp-store skal du hente og installere Microsoft Dynamics 365 for Operations-appen.
-2.  Start appen på din enhed.
-3.  Angiv URL-adressen til din Dynamics 365.
-4.  Angiv det firma, du vil logge på. Du kan f.eks. skrive **USMF**.
-5.  Første gang du logger på, bliver du bedt om brugernavn og adgangskode til din Microsoft Dynamics 365 for Operations-konto.
+### <a name="purchase-orders-ready-for-review"></a>Indkøbsordrer klar til gennemsyn
+På siden **Indkøbsordrer, der er klar til gennemsyn** kan du se alle de indkøbsordrer, der er sendt af kunden, men endnu ikke er reageret på. Du kan se udvalgte oplysninger om ordren, f.eks. hvilke produkter, der er anmodet om, og hvornår de skal leveres. Prisoplysninger er også tilgængelige, afhængigt af konfigurationen af kreditoren.
 
-Når du logger på appen, vises der ingen arbejdsområder. For at få vist arbejdsområder på din mobilapp skal du først publicere de ønskede arbejdsområder til Dynamics 365 for Operations-appen. Du skal bruge systemadministrationsrettighed til at udgive arbejdsområdet.
+Du kan også se, om indkøbsordren indeholder noter og vedhæftede filer. Hvis du vil åbne noter og vedhæftede filer, skal du bruge webgrænsefladen til kreditorsamarbejde i webklienten. Vælg **Indkøbsordrelinje** for at få vist alle linjer sammen med detaljer. For hver linje vises en indikator, om der er noter eller vedhæftede filer, eller om leveringsadressen er forskellig fra den, der vises i hovedet.
 
-1.  Start Dynamics 365 for Operations.
-2.  Gå til **Systemadministration** &gt; **Opsætning** &gt; **systemparametre**.
-3.  Vælg **Administrer mobilapp**.
-4.  Vælg arbejdsområdet **Kreditorsamarbejde** for at publicere til mobilplatformen.
-5.  Vælg **Publicer arbejdsområde**.
-6.  Opdater din enhed for at se de publicerede arbejdsområder.
-7.  Vælg arbejdsområdet **Kreditorsamarbejde**. Du får vist følgende side.
+For at reagere på indkøbsordren skal du bruge webgrænsefladen til kreditorsamarbejde i webklienten.
 
-    [![mobilapp til kreditorsamarbejde](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+### <a name="awaiting-customer-action"></a>Afventer kundehandling
+Siden **Afventer kundehandling** giver dig mulighed for at søge efter de indkøbsordrer, som du eller en anden person i virksomheden, der også har adgang til kreditorsamarbejde, har reageret på. Indkøbsordrer er kun synlige på denne liste, hvis kunden skal udføre en af følgende handlinger på indkøbsordren:
 
-## <a name="contacts"></a>Kontaktpersoner
-På siden **Kontakter** kan du se alle de kontakter, der er angivet for kreditorkontoen. Det viser kontaktpersonens navn, primære mail og brugeralias, hvis det er tilgængelig. Det viser også, om kontaktpersonens brugerkonto er aktiv. Når du markerer en kontakt, kan du se kontaktoplysninger, f.eks. de juridiske enheder, personen er kontaktperson for og kontaktoplysninger, f.eks. telefonnummer eller en anden mailadresse.
+-   Hvis indkøbsordren blev afvist, skal kunden enten opdatere eller annullere den oprindelige ordre og sende den igen. Når indkøbsordren sendes igen, vises den ikke længere på siden **Afventer kundehandling**.
+-   Hvis indkøbsordren blev accepteret med ændringer, skal kunden enten opdatere den oprindelige ordre og sende den igen til gennemsyn eller opdatere den i overensstemmelse med de anmodede ændringer og straks bekræfte den. I begge tilfælde vises indkøbsordren ikke længere på siden **Afventer kundehandling**.
+-   Hvis indkøbsordren blev accepteret, men stadig vises på siden **Afventer kundehandling**, er indkøbsordren ikke automatisk blevet bekræftet, da den blev accepteret. Den venter på, at en indkøber skal ændre status til **Bekræftet**. Indkøbsordren betragtes normalt som en aftale mellem debitor og kreditor, så snart kreditoren accepterer ordren. Derfor er en opdatering af **Bekræftet**-status normalt kun en formalitet.
 
-## <a name="user-requests"></a>Brugeranmodninger
-På siden **Brugeranmodninger** kan du se alle brugeranmodninger, som du har sendt via webgrænsefladen til leverandørsamarbejde, og følge status. Når du vælger en brugeranmodning, kan du se, hvad der blev anmodet om, tilføje eller deaktivere en bruger, ændre sikkerhed og se, hvilke sikkerhedsroller der blev anmodet om for brugeren.
-
-## <a name="purchase-orders-ready-for-review"></a>Indkøbsordrer klar til gennemsyn
-På siden **Indkøbsordrer, der er klar til gennemsyn** kan du se alle de indkøbsordrer, der er sendt af kunden og ikke er besvaret. Du kan se udvalgte oplysninger om ordren, f.eks. hvilke produkter, der er anmodet om, og hvornår de skal leveres. Prisoplysninger er kun tilgængelige, hvis det er konfigureret for kreditoren. Du kan se, om indkøbsordren indeholder noter og vedhæftede filer. For at åbne vedhæftede filer, skal du bruge kreditorsamarbejde i webklienten. Vælg **Indkøbsordrelinje** for at få vist alle linjer med detaljer. Bemærk, at for hver linje viser en indikator, om der er noter eller vedhæftede filer, eller om der er en leveringsadresse, som er forskellig fra, hvad der vises i hovedet. For at besvare indkøbsordren, skal du bruge webklienten til kreditorsamarbejde.
-
-## <a name="awaiting-customer-action"></a>Afventer kundehandling
-Siden **Afventer kundehandling** giver dig mulighed for at søge efter de indkøbsordrer, som du eller en person i virksomheden, der også har adgang til kreditorsamarbejde, har reageret på. Indkøbsordrer er kun synlige på denne liste, hvis kunden har brug at udføre en af følgende handlinger på indkøbsordren.
-
--   Hvis indkøbsordren blev afvist, skal kunden enten skal opdatere den sendte ordre og sende igen, eller annullere ordren og sende den igen. Når indkøbsordren sendes igen, forsvinder den fra siden **Afventer kundehandling**.
--   Hvis indkøbsordren blev accepteret med ændringer, skal kunden opdatere den oprindelige ordre og sende den til gennemsyn igen, eller opdatere den i overensstemmelse med ændringerne, og straks bekræfte den. I begge tilfælde forsvinder indkøbsordren fra siden **Afventer kundehandling**.
--   Hvis indkøbsordren blev accepteret og vises på siden **Afventer kundehandling**, er det, fordi indkøbsordren ikke automatisk blev bekræftet, da den blev accepteret. Den venter på, at en indkøber skal ændre rækkefølgen til Bekræftet. Indkøbsordren betragtes normalt som en aftale mellem debitor og kreditor, så snart kreditoren accepterer ordren. Flytning af indkøbsordren til tilstanden Bekræftet, vil være en formalitet.
-
-Når indkøbsordren vælges, vises yderligere oplysninger om svaret. Du kan se linjedetaljerne og besvare hver linje. I linjen status vises, hvilke af følgende svar der er givet.
+Når du vælger en indkøbsordre, vises yderligere oplysninger om svaret. Du kan se linjedetaljerne og besvare hver linje. På statuslinjen vises, hvilke af følgende svar der er givet:
 
 -   Accepteret
 -   Afvist
@@ -149,12 +162,14 @@ Når indkøbsordren vælges, vises yderligere oplysninger om svaret. Du kan se l
 -   Erstattet/erstatning
 -   Opdel i tidsplan/tidsplanslinje
 
-Bemærk, at en indikator viser **Levering**= Ja/nej, som bruges til at angive, at linjerne ikke er blevet leveret. Dette kan skyldes, at linjen blev afvist eller erstattes, hvor de oprindelige linjer ikke forventes at blive leveret, eller at en linje er blevet opdelt i flere tidsplanlinjer, og den oprindelige linje ikke forventes at blive leveret som anmodet i den modtagne ordre. Eventuelle ændringer til ordrelinjesvaret vises, med undtagelse af de overførte noter og vedhæftede filer, som du kan se ved hjælp af webgrænsefladen til kreditorsamarbejde.
+Bemærk, at feltet **Leverer** er indstillet til enten **Ja** eller **Nej** for at angive, om linjerne skal afleveres. En linje kan ikke leveres af følgende årsager:
 
-## <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
-Når indkøbsordren er bekræftet af kunden, hvilket betyder, at købsordren ændres til tilstanden Bekræftet, vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres af kunden.
+- Linjen er afvist.
+- En erstatning blev foretaget, og den oprindelige linje forventes ikke leveret som anmodet i den modtagne ordre.
+- Linjen er opdelt i flere planlægningslinjer, og den oprindelige linje forventes ikke leveret som anmodet i den modtagne ordre.
 
+Eventuelle ændringer, der er foretaget i svaret til ordrelinjen, vises. Dog vises overførte noter og vedhæftede filer ikke. Hvis du se noter og vedhæftede filer, skal du bruge webgrænsefladen til kreditorsamarbejde i webklienten.
 
-
-
+### <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
+Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for købsordren er ændret til **Bekræftet**), vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres som modtaget af kunden.
 

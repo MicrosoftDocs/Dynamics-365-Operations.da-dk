@@ -1,27 +1,29 @@
 ---
 title: Oversigt over Onlinebutik
-description: Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Operations.
+description: Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Retail.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16161
 ms.assetid: 646d560c-f856-4701-b4ca-44e357ef09b8
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 784444258a324eeefb5b96ae518ef4123ac219d4
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 28ab301dc3aede6b23fb5d87fcb179916e0296e4
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Operations.
+Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Retail.
 
-Detail og handel i Dynamics 365 for Operations understøtter flere detailkanaler. Disse detailkanaler omfatter onlinebutikker, call centre og detailbutikker (også kaldet fysiske butikker). Onlinebutikker giver en detailhandler synlighed på internettet, så kunderne også kan købe produkter fra detailhandlerens onlinebutik ud over fra detailhandlerens fysiske butik. Hvis kunder køber produkter fra onlinebutikken, kan produkterne leveres til dem, eller kunden kan afhente dem i den lokale detailbutik. Du kan oprette en onlinebutik i Dynamics 365 for Operations-klienten. Denne onlinebutik udgives derefter til en tredjeparts onlinebutik, der er integreret i Dynamics 365 for Operations. Onlinebutikken fra tredjepart fungerer som butiksrude (brugergrænseflade) for onlinebutikken og giver dig et udvalg af funktioner til kundestyring og funktioner på brugergrænsefladen. Der findes flere integrationer af denne type til Dynamics 365 for Operations. De egenskaber, du definerer for onlinebutikken i, styrer funktionsmåden i onlinebutikken. Du kan f.eks. definere navigationskategorihierarkiet i Dynamics 365 for Operations og tildele onlinebutikken det. Når du udgiver onlinebutikken i en onlinebutik fra tredjepart, vises navigationskategorihierarkiet i onlineversionen af butikken. Handlende bruger derefter navigationskategorihierarkiet til at browse i onlinebutikken og søge efter produkter. Hvis du vil oprette en onlinebutik, skal du konfigurere de komponenter, der gør det muligt at behandle transaktioner for butikken. Du skal f.eks. tilføje udvalg, anvende attributter og konfigurere betalingsmetoder og forsendelsesmetoder. Du kan også definere priser, kampagner, rabatter, samhandelsaftaler og leveringsbetingelser, der er specifikke for onlinebutikken. Når du har udgivet onlinebutikken i onlinebutikken fra tredjepart, kan du oprette detailproduktkataloger for onlinebutikken. Produkterne i kataloget bliver vist i onlinebutikken. Når en kunde køber produkter fra onlinebutikken, opdateres det tilgængelige lager og synkroniseres i klienten. Desuden oprettes der salgsordrer for købene, og de sendes til klienten med henblik på ordreopfyldning og behandling.
+Dynamics 365 for Retail understøtter flere detailkanaler. Disse detailkanaler omfatter onlinebutikker, call centre og detailbutikker (også kaldet fysiske butikker). Onlinebutikker giver en detailhandler synlighed på internettet, så kunderne også kan købe produkter fra detailhandlerens onlinebutik ud over fra detailhandlerens fysiske butik. Hvis kunder køber produkter fra onlinebutikken, kan produkterne leveres til dem, eller kunden kan afhente dem i den lokale detailbutik. Du kan oprette en onlinebutik i Dynamics 365 for Retail-klienten. Denne onlinebutik udgives derefter til en tredjeparts onlinebutik, der er integreret i Dynamics 365 for Retail. Onlinebutikken fra tredjepart fungerer som butiksrude (brugergrænseflade) for onlinebutikken og giver dig et udvalg af funktioner til kundestyring og funktioner på brugergrænsefladen. Der findes flere integrationer af denne type til Dynamics 365 for Retail. De egenskaber, du definerer for onlinebutikken i, styrer funktionsmåden i onlinebutikken. Du kan f.eks. definere navigationskategorihierarkiet i Dynamics 365 for Retail og tildele onlinebutikken det. Når du udgiver onlinebutikken i en onlinebutik fra tredjepart, vises navigationskategorihierarkiet i onlineversionen af butikken. Handlende bruger derefter navigationskategorihierarkiet til at browse i onlinebutikken og søge efter produkter. Hvis du vil oprette en onlinebutik, skal du konfigurere de komponenter, der gør det muligt at behandle transaktioner for butikken. Du skal f.eks. tilføje udvalg, anvende attributter og konfigurere betalingsmetoder og forsendelsesmetoder. Du kan også definere priser, kampagner, rabatter, samhandelsaftaler og leveringsbetingelser, der er specifikke for onlinebutikken. Når du har udgivet onlinebutikken i onlinebutikken fra tredjepart, kan du oprette detailproduktkataloger for onlinebutikken. Produkterne i kataloget bliver vist i onlinebutikken. Når en kunde køber produkter fra onlinebutikken, opdateres det tilgængelige lager og synkroniseres i klienten. Desuden oprettes der salgsordrer for købene, og de sendes til klienten med henblik på ordreopfyldning og behandling.
 
 ## <a name="set-up-an-online-store"></a>Konfigurere en onlinebutik
 Hvis du vil konfigurere en onlinebutik, skal du fuldføre følgende opgaver.

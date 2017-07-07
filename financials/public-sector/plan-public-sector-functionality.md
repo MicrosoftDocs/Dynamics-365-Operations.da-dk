@@ -1,16 +1,16 @@
 ---
 title: "Planlæg funktioner til den offentlige sektor"
-description: "I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations."
+description: "I denne artikel angives de første trin til opsætning af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19851
 ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
 ms.search.region: Global
@@ -19,25 +19,25 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f0bb7b332602530cfca073f60b25ae7dd5664344
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ec202de96ac9397f3d9b24be7dc75731fad79816
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="plan-for-public-sector-functionality"></a>Planlæg funktioner til den offentlige sektor
+# <a name="plan-for-public-sector-functionality"></a>Planlægge funktioner til den offentlige sektor
 
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Operations.
+I denne artikel angives de første trin til opsætning af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 -----------------------
 
-Før du begynder at justere indstillingerne og angive dine data, bør du overveje, hvilke Microsoft Dynamics 365 for Operations-moduler du skal konfigurere til din offentlige organisation. Funktioner til den offentlige sektor er integreret med følgende Microsoft Dynamics 365 for Operations-moduler og Microsoft-produkter.
+Før du begynder at justere indstillingerne og angive dine data, bør du overveje, hvilke Finance and Operations-moduler du skal konfigurere til din offentlige organisation. Funktioner til den offentlige sektor er integreret med følgende Finance and Operations-moduler og Microsoft-produkter.
 
 ### <a name="accounts-payable"></a>Kreditor
 

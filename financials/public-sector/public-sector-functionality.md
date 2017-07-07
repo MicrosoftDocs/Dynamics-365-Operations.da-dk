@@ -1,9 +1,9 @@
 ---
 title: Startside for offentlig sektor
-description: "Microsoft Dynamics 365 for Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor."
+description: "Microsoft Dynamics 365 for Finance and Operations, Enterprise edition har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8eb456935a2ccbc837a9cd6c875d19e87c48ae85
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7a12c9678e60ab10d4693f1d9d20b77e31b7d84b
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor. 
+Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor. 
 
 Brug følgende funktion til den offentlige sektor for at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentlige myndigheder. De berørte forretningsprocesser omfatter: 
 

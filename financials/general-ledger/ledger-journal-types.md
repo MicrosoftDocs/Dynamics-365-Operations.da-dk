@@ -1,16 +1,16 @@
 ---
 title: Finanskladdetyper
-description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Operations."
+description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 842eee6446b1f942add37b14d3ad161bec96d22c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Operations.
+I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 | Kladdetype                      | Formål                                                                                                                                                                                                                                                                                                                                                     | Angive posteringer på denne side                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | Tildeling                        | Opret fordelingsposter i en fordelingskladde. Før du kan oprette en fordelingskladde, skal du oprette en fordelingsregel på siden **Finansfordelingsregel**.                                                                                                                                                                           | Udfør fordelingsanmodning                                     |
-| Godkendelse                          | Bogfør kreditorfakturaer, der er godkendt, på de relevante finanskonti.                                                                                                                                                                                                                                                                            |  Godkendelseskladde                                       |
+| Godkendelse                          | Bogfør kreditorfakturaer, der er godkendt, på de relevante finanskonti.                                                                                                                                                                                                                                                                            | Godkendelseskladde                                       |
 | Tilbageførsel af bankcheck               | Tilbagefør en bogført check. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af checks** på siden **Likviditets- og bankstyringsparametre**.                                                                                                                                                                                       | Tilbageførsel af checks, Annullering af checks                              |
 | Annullering af bankindbetalingsbildrag    | Annuller et indbetalingsbilag. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af indbetalingsbilag** på siden **Likviditets- og bankstyringsparametre**.                                                                                                                                                                       | Annulleringer af betalinger af indbetalingsbilag                             |
 | Budget                            | Behandl budgetbevillinger. For at bruge denne kladdetype skal du vælge indstillingen **Aktivér budgetdisponering** på siden **Økonomiparametre**. Budgetkladdeposterne omfatter oplysninger, der er baseret på de finanskonti, der er defineret på siden **Bogføringsdefinitioner**.                                                        |                                                                |
@@ -50,7 +50,7 @@ I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Br
 | Dagligt                             | Opret daglige posteringer i en finanskladde.                                                                                                                                                                                                                                                                                                             | Finanskladde                                                |
 | Eliminering                       | Opret elimineringsposter i en elimineringskladde. For at bruge denne kladdetype skal du vælge indstillingerne **Brug til økonomisk eliminering** og **Brug til økonomisk konsolidering** på siden **Juridiske enheder**. Før du kan bruge denne kladdetype skal du oprette en finanselimineringsregel på siden **Elimineringsregel i Finans**. | Eliminering                                                    |
 | Anlægsaktivbudget                | Opret poster i budgetregisteret for anlægsaktiver.                                                                                                                                                                                                                                                                                                                 | Anlægsaktivbudget                                             |
-| Godkendelseskladde                     | Registrer grundlæggende oplysninger om kreditorfakturaer.                                                                                                                                                                                                                                                                                                           | Godkendelseskladde                                                  |
+| Godkendelseskladde                  | Registrer grundlæggende oplysninger om kreditorfakturaer.                                                                                                                                                                                                                                                                                                           | Godkendelseskladde                                               |
 | Lønudbetaling              | Udsted betalinger, der er baseret på lønafdelingens lønsedler. Du kan ikke angive transaktioner manuelt i denne kladde. Du skal generere lønsedler og derefter sende disse lønsedler til betaling.                                                                                                                                                              |                                                                |
 | Periodisk                          | Opret posteringer i den periodiske kladde.                                                                                                                                                                                                                                                                                                      | Periodiske kladder                                              |
 | Bogføring af anlægsaktiver                 | Bogfør anlægsaktivposter.                                                                                                                                                                                                                                                                                                                              | Anlægsaktiver                                                   |

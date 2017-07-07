@@ -1,15 +1,15 @@
 ---
 title: Oversigt over nummerserier
-description: "Nummerserier i Microsoft Dynamics 365 for Operations bruges til generering af læselige, entydige id&quot;er for masterdataposter og transaktionsposter, der kræver id&quot;er. En masterdatapost eller transaktionspost, der kræver et id, kaldes en <em>reference</em>."
+description: "Nummerserier i Microsoft Dynamics 365 for Finance and Operations bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er. En masterdatapost eller transaktionspost, der kræver et id, kaldes en <em>reference</em>."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a2dcbbbd0b67c171d5a26bbf2053d159f7367cc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Nummerserier i Microsoft Dynamics 365 for Operations bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er. En masterdatapost eller transaktionspost, der kræver et id, kaldes en <em>reference</em>.
+Nummerserier i Microsoft Dynamics 365 for Finance and Operations bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er. En masterdatapost eller transaktionspost, der kræver et id, kaldes en <em>reference</em>.
 
-Før du kan oprette nye poster for en reference i Microsoft Dynamics 365 for Operations, skal du konfigurere en nummerserie og knytte den til referencen. Det anbefales, at du bruger de sider, der findes i **Virksomhedsadministration**, til at konfigurere nummerserier. Hvis der kræves modulspecifikke indstillinger, kan du bruge parametersiden i et modul til at angive nummerserier for referencen i det pågældende modul. I **Debitor** og **Kreditor** kan du f.eks. konfigurere nummerseriegrupper, hvis du vil tildele specifikke nummerserier til specifikke debitorer eller kreditorer. Når du konfigurerer en nummerserie, skal du angive et område, som definerer, hvilken organisation der bruger nummerserien. Området kan være **Delt**, **Firma**, **Juridisk enhed** eller **Driftsenhed**. Områderne **Juridisk enhed** og **Firma** kan også kombineres med **Regnskabskalenderperiode**, så der oprettes endnu mere specifikke nummerserier. Nummerserieformater består af segmenter. Nummerserier med et andet område end **Delt** kan indeholde segmenter, der svarer til området. En nummerserie med området **Juridisk enhed** kan f.eks. indeholde et segment for en juridisk enhed. Hvis du medtager et områdesegment i nummerserieformatet, kan du identificere området for en specifik post ved at se på postens nummer. Udover segmenter, der svarer til områder, kan nummerserieformater indeholde segmenter af typen **Konstant** og **Alfanumerisk**. Et **Konstant** segment indeholder et sæt af bogstaver, tal eller tegn, der ikke ændres. Et **Alfanumerisk** segment indeholder et sæt af bogstaver eller tal, hvis værdi øges, hver gang der bruges et tal. Brug et taltegn (\#) for at angive stigende tal, og tegnet & for stigende bogstaver. Formatet \#\#\#\#\#\_2017 giver f.eks. serien 00001\_2017, 00002\_2017 osv.
+Før du kan oprette nye poster for en reference i Microsoft Dynamics 365 for Finance and Operations, skal du konfigurere en nummerserie og knytte den til referencen. Det anbefales, at du bruger de sider, der findes i **Virksomhedsadministration**, til at konfigurere nummerserier. Hvis der kræves modulspecifikke indstillinger, kan du bruge parametersiden i et modul til at angive nummerserier for referencen i det pågældende modul. I **Debitor** og **Kreditor** kan du f.eks. konfigurere nummerseriegrupper, hvis du vil tildele specifikke nummerserier til specifikke debitorer eller kreditorer. Når du konfigurerer en nummerserie, skal du angive et område, som definerer, hvilken organisation der bruger nummerserien. Området kan være **Delt**, **Firma**, **Juridisk enhed** eller **Driftsenhed**. Områderne **Juridisk enhed** og **Firma** kan også kombineres med **Regnskabskalenderperiode**, så der oprettes endnu mere specifikke nummerserier. Nummerserieformater består af segmenter. Nummerserier med et andet område end **Delt** kan indeholde segmenter, der svarer til området. En nummerserie med området **Juridisk enhed** kan f.eks. indeholde et segment for en juridisk enhed. Hvis du medtager et områdesegment i nummerserieformatet, kan du identificere området for en specifik post ved at se på postens nummer. Udover segmenter, der svarer til områder, kan nummerserieformater indeholde segmenter af typen **Konstant** og **Alfanumerisk**. Et **Konstant** segment indeholder et sæt af bogstaver, tal eller tegn, der ikke ændres. Et **Alfanumerisk** segment indeholder et sæt af bogstaver eller tal, hvis værdi øges, hver gang der bruges et tal. Brug et taltegn (\#) for at angive stigende tal, og tegnet & for stigende bogstaver. Formatet \#\#\#\#\#\_2017 giver f.eks. serien 00001\_2017, 00002\_2017 osv.
 Eksempler på nummerserier
 ------------------------
 

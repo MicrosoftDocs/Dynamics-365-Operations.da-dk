@@ -3,25 +3,27 @@ title: Definere og vedligeholde kanalklienter, kasseapparater og hardwarestation
 description: "Dette emne dækker, hvordan du forbinder enheder med din Retail POS."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 800e5c139b54541a179a336c8247eaa6017201d8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 5c5a6cc45ad65c7581dbfb9a4441fdddbbc19242
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -40,11 +42,11 @@ Der bruges flere komponenter til at definere relationer mellem en butik, POS-kas
 
 ### <a name="pos-registers"></a>Kasseapparater
 
-Navigation: Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kassen.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kassen.
 
 ### <a name="devices"></a>Enheder
 
-Navigation: Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan være af to typer: **Retail Modern POS** (MPOS) eller **Retail Cloud POS** (sky-POS).
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan være af to typer: **Retail Modern POS** (MPOS) eller **Retail Cloud POS** (sky-POS).
 
 #### <a name="mpos"></a>MPOS
 
@@ -52,7 +54,7 @@ MPOS er et POS-klientprogram, der installeres på Windows 8.1 eller et nyere pc-
 
 #### <a name="cloud-pos"></a>Cloud POS
 
-Cloud POS er en browserbaseret POS. Da det kan køre i browseren, kræver ikke Cloud POS ikke Windows 8.1 eller et nyere pc-baseret operativsystem. Hvis **Retail Cloud POS**-programtypen er knyttet til en bestemt enhed i administrationen (back-office), kan denne enhed bruges via webbrowseren, og der er ikke behov for at hente eller installere en pakke. Cloud POS kræver en hardware-station, der bruger hardware ud over kreditkortlæser-baseret stregkodescanning til tastaturet.
+Cloud POS er en browserbaseret POS. Da det kan køre i browseren, kræver ikke Cloud POS ikke Windows 8.1 eller et nyere pc-baseret operativsystem. Hvis **Retail Cloud POS**-programtypen er knyttet til en bestemt enhed i Retail Headquarters, kan denne enhed bruges via webbrowseren, og der er ikke behov for at hente eller installere en pakke. Cloud POS kræver en hardware-station, der bruger hardware ud over kreditkortlæser-baseret stregkodescanning til tastaturet.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
@@ -60,23 +62,23 @@ Navigation: Klik på **Handel** &gt; **Konfiguration af kanal** &gt; **POS-opsæ
 
 ### <a name="hardware-station"></a>Hardwarestation
 
-Navigation: Klik på **Detail og handel** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. En hardwarestation er en forekomst af forretningslogik, der driver POS-enheder. En hardwarestation installeres automatisk sammen med MPOS. Hardwarestationen kan også installeres som en enkeltstående komponent og derefter åbnes af MPOS eller Cloud POS via en webtjeneste. Hardwarestationen skal defineres på kanalniveau.
+Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. En hardwarestation er en forekomst af forretningslogik, der driver POS-enheder. En hardwarestation installeres automatisk sammen med MPOS. Hardwarestationen kan også installeres som en enkeltstående komponent og derefter åbnes af MPOS eller Cloud POS via en webtjeneste. Hardwarestationen skal defineres på kanalniveau.
 
 ### <a name="hardware-station-profile"></a>Hardwarestations profil
 
-Navigation: Klik på **Handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestationens profiler**. Selvom selve hardwarestationen angives på kanalniveau, og angivelsen indeholder forekomstspecifikke oplysninger som f.eks. URL-adressen for hardwarestationen, indeholder hardwarestationsprofilen oplysninger, der kan være statiske eller delte på tværs af flere hardwarestationer. De statiske oplysninger omfatter den port, der skal bruges, hardwarestationspakken og hardwareprofilen. De statiske oplysninger omfatter også en beskrivelse af typen af hardwarestation, der skal installeres, som f.eks. **Til kassen**eller **Returneringer**, afhængigt af hvilken hardware der kræves for hver specifik hardwarestation.
+Navigation: Klik på **Handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestationens profiler**. Selvom selve hardwarestationen angives på kanalniveau, og angivelsen indeholder forekomstspecifikke oplysninger som f.eks. URL-adressen for hardwarestationen, indeholder hardwarestationsprofilen oplysninger, der kan være statiske eller delte på tværs af flere hardwarestationer. De statiske oplysninger omfatter den port, der skal bruges, hardwarestationspakken og hardwareprofilen. De statiske oplysninger omfatter også en beskrivelse af typen af hardwarestation, der skal installeres, som f.eks. **Til kassen** eller **Returneringer**, afhængigt af hvilken hardware der kræves for hver specifik hardwarestation.
 
 ## <a name="scenarios"></a>Scenarier
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med forbundne eksterne enheder
 
 [![Traditionelt, fast POS](./media/traditional-300x279.png)](./media/traditional.png) 
 
-For at forbinde MPOS til POS-enheder i et traditionelt, fast POS-scenario skal du først navigere til selve kasseapparatet og tildele en hardwareprofil til det. Du kan finde POS-kasseapparater i **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Når du har tildelt hardwareprofilen, skal du synkronisere ændringer til kanaldatabasen ved hjælp af distributionsplanen "Kasseapparater". Du kan finde distributionsplanerne på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**. Opret derefter en "lokal" hardwarestation på kanalen. Klik på **Detail og handel** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**, og vælg en butik. Derefter skal du i oversigtspanelet **Hardwarestationer** klikke på **Tilføj** for at tilføje en hardwarestation. Indtast en beskrivelse, angiv **localhost** som værtsnavn, og synkroniser derefter ændringerne til kanalen ved hjælp af distributionsplanen "Kanalkonfiguration". Du kan finde distributionsplanerne på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**. Brug til sidst i MPOS handlingen **Vælg hardwarestation** for at vælge hardwarestationen **localhost**. Indstil hardwarestationen til **Aktiv**. Den hardwareprofil, der bruges i dette scenario, skal komme fra selve POS-kasseapparatet. En hardwarestationprofil er ikke påkrævet i dette scenario. **Bemærk:** Nogle hardwareprofilændringer som f.eks. ændringer af pengeskuffer kræver, at et nyt skift åbnes, når ændringerne er blevet synkroniseret til kanalen. **Bemærk:** Cloud POS skal bruge den enkeltstående hardwarestation til at kommunikere med eksterne detailenheder.
+For at forbinde MPOS til POS-enheder i et traditionelt, fast POS-scenario skal du først navigere til selve kasseapparatet og tildele en hardwareprofil til det. Du kan finde POS-kasseapparater i **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Når du har tildelt hardwareprofilen, skal du synkronisere ændringer til kanaldatabasen ved hjælp af distributionsplanen "Kasseapparater". Du kan finde distributionsplanerne på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**. Opret derefter en "lokal" hardwarestation på kanalen. Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**, og vælg en butik. Derefter skal du i oversigtspanelet **Hardwarestationer** klikke på **Tilføj** for at tilføje en hardwarestation. Indtast en beskrivelse, angiv **localhost** som værtsnavn, og synkroniser derefter ændringerne til kanalen ved hjælp af distributionsplanen "Kanalkonfiguration". Du kan finde distributionsplanerne på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**. Brug til sidst i MPOS handlingen **Vælg hardwarestation** for at vælge hardwarestationen **localhost**. Indstil hardwarestationen til **Aktiv**. Den hardwareprofil, der bruges i dette scenario, skal komme fra selve POS-kasseapparatet. En hardwarestationprofil er ikke påkrævet i dette scenario. **Bemærk:** Nogle hardwareprofilændringer som f.eks. ændringer af pengeskuffer kræver, at et nyt skift åbnes, når ændringerne er blevet synkroniseret til kanalen. **Bemærk:** Cloud POS skal bruge den enkeltstående hardwarestation til at kommunikere med eksterne detailenheder.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en enkeltstående hardwarestation
 [![Delte eksterne enheder](./media/shared-300x254.png)](./media/shared.png)
 
-I dette scenario deles en enkeltstående hardwarestation af MPOS- og Cloud POS-klienter. Dette scenario kræver, at du opretter en hardwarestationprofil for at angive den overførselspakke, port og hardwareprofil, der bruger hardwarestationen. Du kan finde hardwarestationsprofilen på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestations profiler**. Når du har oprettet hardwarestationsprofilen, skal du navigere til den specifikke detailkanal (**Detail og handel** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**) og tilføje en ny hardwarestation. Knyt den nye hardwarestation til hardwarestationsprofilen, der tidligere blev oprettet. Derefter skal du angive en beskrivelse, så kassereren kan identificere hardwarestationen. I feltet **Værtsnavn** skal du angive URL-adressen på værtscomputeren i følgende format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Erstat **&lt;MachineName:Port&gt;** med det faktiske computernavn på hardwarestationen og porten, der er angivet i hardwarestationsprofilen). For en enkeltstående hardwarestation skal du også angive terminal-id'et for den elektroniske pengeoverførsel (EFT). Denne værdi identificerer den elektronisk pengeoverførselsterminal, der er forbundet med hardwarestationen, når betalingsconnectoren kommunikerer med betalingsudbyderen. Naviger derefter fra den faktiske hardwarestationscomputer til kanalen, og vælg hardwarestationen. Klik derefter på **Hent**, og installer hardwarestationen. Brug derefter fra MPOS eller Cloud POS handlingen **Vælg hardwarestation** for at vælge den hardwarestation, der tidligere blev installeret. Vælg **Par** for at oprette en sikker forbindelse mellem POS'et og hardware-stationen. Dette trin skal udføres én gang for hver kombination af en POS og en hardwarestation. Når hardwarestationen er parret, skal du bruge den samme handling til at aktivere hardwarestationen, mens den bruges. I dette scenarie skal hardwareprofilen tildeles hardwarestationsprofilen i stedet for til selve kasseapparatet. Hvis en hardwarestation af en eller anden grund ikke har en direkte tilknyttet hardwareprofil, bruges den hardwareprofil, der er tildelt til kasseapparatet
+I dette scenario deles en enkeltstående hardwarestation af MPOS- og Cloud POS-klienter. Dette scenario kræver, at du opretter en hardwarestationprofil for at angive den overførselspakke, port og hardwareprofil, der bruger hardwarestationen. Du kan finde hardwarestationsprofilen på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwarestations profiler**. Når du har oprettet hardwarestationsprofilen, skal du navigere til den specifikke detailkanal (**Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**) og tilføje en ny hardwarestation. Knyt den nye hardwarestation til hardwarestationsprofilen, der tidligere blev oprettet. Derefter skal du angive en beskrivelse, så kassereren kan identificere hardwarestationen. I feltet **Værtsnavn** skal du angive URL-adressen på værtscomputeren i følgende format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Erstat **&lt;MachineName:Port&gt;** med det faktiske computernavn på hardwarestationen og porten, der er angivet i hardwarestationsprofilen). For en enkeltstående hardwarestation skal du også angive terminal-id'et for den elektroniske pengeoverførsel (EFT). Denne værdi identificerer den elektronisk pengeoverførselsterminal, der er forbundet med hardwarestationen, når betalingsconnectoren kommunikerer med betalingsudbyderen. Naviger derefter fra den faktiske hardwarestationscomputer til kanalen, og vælg hardwarestationen. Klik derefter på **Hent**, og installer hardwarestationen. Brug derefter fra MPOS eller Cloud POS handlingen **Vælg hardwarestation** for at vælge den hardwarestation, der tidligere blev installeret. Vælg **Par** for at oprette en sikker forbindelse mellem POS'et og hardware-stationen. Dette trin skal udføres én gang for hver kombination af en POS og en hardwarestation. Når hardwarestationen er parret, skal du bruge den samme handling til at aktivere hardwarestationen, mens den bruges. I dette scenarie skal hardwareprofilen tildeles hardwarestationsprofilen i stedet for til selve kasseapparatet. Hvis en hardwarestation af en eller anden grund ikke har en direkte tilknyttet hardwareprofil, bruges den hardwareprofil, der er tildelt til kasseapparatet
 
 ## <a name="client-maintenance"></a>Vedligeholdelse af klient
 ### <a name="registers"></a>Kasseapparater
@@ -85,7 +87,7 @@ POS-kasseapparater styres primært via selve kasseapparaterne, men også via de 
 
 ### <a name="pos-profiles"></a>POS-profiler
 
-Du kan finde POS-profiler i **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler**. Det er nyttigt at administrere mange aspekter af et kasseapparat via profiler, fordi profilerne kan deles af mange kasseapparater. Profiler kan knyttes til enten et enkelt kasseapparat eller, hvis en profil er gældende for hele butikken, til detailbutikken. I følgende afsnit beskrives POS-profilerne, og hvordan de bruges.
+Du kan finde POS-profiler i **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler**. Det er nyttigt at administrere mange aspekter af et kasseapparat via profiler, fordi profilerne kan deles af mange kasseapparater. Profiler kan knyttes til enten et enkelt kasseapparat eller, hvis en profil er gældende for hele butikken, til detailbutikken. I følgende afsnit beskrives POS-profilerne, og hvordan de bruges.
 
 #### <a name="offline-profile"></a>Offlineprofil
 
@@ -151,14 +153,14 @@ Enheder er beskrevet tidligere i denne artikel. De bruges til at administrere ak
 
 -   **Afventer** – Enheden er klar til at blive aktiveret.
 -   **Aktiveret** – Enheden er aktiveret.
--   **Deaktiveret** – Enheden er blevet deaktiveret, enten af administrationen eller via POS.
+-   **Deaktiveret** – Enheden er blevet deaktiveret, enten i Retail Headquarters eller via POS.
 -   **Deaktiveret** – Enheden er blevet deaktiveret.
 
 Yderligere oplysninger i forbindelse med aktivering omfatter den medarbejder, der ændrede aktiveringsstatussen for enheden, et tidsstempel for aktiveringen og om konfigurationen af enheden er blevet valideret.
 
 ### <a name="client-data-synchronization"></a>Synkronisering af klientdata
 
-Alle ændringer af POS-klienten med undtagelse af ændringer af enhedens aktiveringsstatus skal synkroniseres, for at kanaldatabasen kan træde i kraft. For at synkronisere ændringer med kanaldatabasen skal du gå til **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan** og køre den krævede distributionsplan. For klientændringer skal du køre distributionplanerne "Kasseapparater" og "Kanalkonfiguration".
+Alle ændringer af POS-klienten med undtagelse af ændringer af enhedens aktiveringsstatus skal synkroniseres, for at kanaldatabasen kan træde i kraft. For at synkronisere ændringer med kanaldatabasen skal du gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplan** og køre den krævede distributionsplan. For klientændringer skal du køre distributionplanerne "Kasseapparater" og "Kanalkonfiguration".
 
 
 

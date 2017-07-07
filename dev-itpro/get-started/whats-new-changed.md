@@ -1,9 +1,9 @@
 ---
 title: "Nyheder eller ændringer"
-description: "Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Operations."
+description: "Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 55a3252aa2d84ac5af68a1a6eebeaa909d95b33b
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,12 +30,13 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Operations.
+Hvis du vil vide, hvordan du opgraderer til den nyeste version, skal du se [Proces for opgradering til den seneste opdatering](../migration-upgrade/upgrade-latest-update.md).
 
-Hvis du vil opgradere til den nyeste version, skal du se [Proces for opgradering til den seneste Dynamics 365 for Operations-opdatering](../migration-upgrade/upgrade-latest-update.md).
+## <a name="application-releases"></a>Programversioner
 
-Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er udgivet for nylig, kan du se [Arbejdsområder til mobilenheder, der er udgivet for nylig til Dynamics 365 for Operations-mobilappen](../mobile-apps/mobile-workspaces-released.md) og [Power BI-indhold, der er frigivet for nylig til Dynamics 365 for Operations](../analytics/power-bi-content-released.md)
+Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er udgivet for nylig, kan du se [Arbejdsområder til mobilenheder, der er udgivet for nylig til Dynamics 365 for Finance and Operations-mobilappen](../mobile-apps/mobile-workspaces-released.md) og [Power BI-indhold, der er frigivet for nylig til Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
 
 <table>
 <colgroup>
@@ -47,85 +48,37 @@ Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er u
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Version</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build-nummer</strong></strong></th>
-<th><strong><strong>Tilgængelighed</strong></strong></th>
-<th><strong><strong>Sådan får du mere at vide</strong></strong></th>
+<th>Udlevering</th>
+<th>Version</th>
+<th>Build-nummer</th>
+<th>Tilgængelighed</th>
+<th>Få mere at vide</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Microsoft Dynamics 365 for Operations-platform</td>
-<td>Platformsopdatering 7</td>
-<td> 7.0.4542.16189</td>
-<td>2017. maj</td>
-<td><a href="whats-new-platform-update-7.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 7 (maj 2017)</a></td>
-</tr><tr class="odd">
-<td>Microsoft Dynamics 365 for Operations-platform</td>
-<td>Platformsopdatering 6</td>
-<td> 7.0.4509.16180</td>
-<td>2017. april</td>
-<td><a href="whats-new-platform-update-6.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 6 (april 2017)</a></td>
-</tr>
-<tr class="odd">
-<td>Microsoft Dynamics 365 for Operations-platform</td>
-<td>Platformsopdatering 5</td>
-<td> 7.0.4475.16165</td>
-<td>2017. marts</td>
-<td><a href="whats-new-platform-update-5.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 5 (marts 2017)</a></td>
-</tr>
-<tr class="odd">
-<td>Microsoft Dynamics 365 for Operations-platform</td>
-<td>Platformsopdatering 4</td>
-<td> 7.0.4425.16161</td>
-<td>2017. februar</td>
-<td><a href="whats-new-platform-update-4.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 4 (februar 2017)</a></td>
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Opdatering fra juli 2017</td>
+<td>X</td>
+<td>2017. juni</td>
+<td><a href="whats-new-application-July-2017-update.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, opdatering fra juli 2017</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
 <td>1611</td>
-<td> 7.1.1541.3036</td>
+<td>7.1.1541.3036</td>
 <td>November 2016</td>
 <td><a href="whats-new-dynamics-365-operations-1611.md">Nyheder eller ændringer i Dynamics 365 for Operations-version 1611 (november 2016)</a></td>
 </tr>
-<tr class="odd">
-<td>Microsoft Dynamics 365 for Operations-platform</td>
-<td>Platformsopdatering 3</td>
-<td> 7.0.4307.16141</td>
-<td>November 2016</td>
-<td><a href="whats-new-platform-update-3.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 3 (november 2016)</a></td>
-</tr>
 <tr class="even">
-<td>Microsoft Dynamics AX-platform</td>
-<td>Platformsopdatering 2</td>
-<td>7.0.4230.16130</td>
-<td>2016. august</td>
-<td><a href="whats-new-platform-update-2.md">Nyheder eller ændringer i Dynamics AX-platformsopdatering 2 (august 2016)</a></td>
-</tr>
-<tr class="odd">
-<td>Microsoft Dynamics AX-platform</td>
-<td>Platformsopdatering 1</td>
-<td>7.0.4127.16103</td>
-<td>2016. maj</td>
-<td><a href="whats-new-changed-platform-version-7-1-may-2016.md">Nyheder eller ændringer i Dynamics AX-platformsopdatering 1 (maj 2016)</a></td>
-</tr>
-<tr class="even">
-<td>Microsoft Dynamics AX-program</td>
+<td>Microsoft Dynamics AX</td>
 <td>7.0.1</td>
 <td>7.0.1265.23014</td>
 <td>2016. maj</td>
 <td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)</a></td>
 </tr>
-<tr class="odd">
-<td>Microsoft Dynamics AX-platform</td>
-<td>7.0</td>
-<td>7.0.4030.16079</td>
-<td>2016. februar</td>
-<td><a href="whats-new-changed-7-0-february-2016.md">Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)</a></td>
-</tr>
 <tr class="even">
-<td>Microsoft Dynamics AX-program</td>
+<td>Microsoft Dynamics AX</td>
 <td>7.0</td>
 <td>7.0.1265.3015</td>
 <td>2016. februar</td>
@@ -134,8 +87,89 @@ Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er u
 </tbody>
 </table>
 
+## <a name="platform-releases"></a>Platformsversioner
 
-
-
-
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Udlevering</th>
+<th>Version</th>
+<th>Build-nummer</th>
+<th>Tilgængelighed</th>
+<th>Få mere at vide</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platformsopdatering 8</td>
+<td>X</td>
+<td>2017. juni</td>
+<td><a href="whats-new-platform-update-8.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, platformsopdatering 8 (juni 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations</td>
+<td>Platformsopdatering 7</td>
+<td>7.0.4542.16189</td>
+<td>2017. maj</td>
+<td><a href="whats-new-platform-update-7.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 7 (maj 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Dynamics 365 for Operations</td>
+<td>Platformsopdatering 6</td>
+<td>7.0.4509.16180</td>
+<td>2017. april</td>
+<td><a href="whats-new-platform-update-6.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 6 (april 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Dynamics 365 for Operations</td>
+<td>Platformsopdatering 5</td>
+<td>7.0.4475.16165</td>
+<td>2017. marts</td>
+<td><a href="whats-new-platform-update-5.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 5 (marts 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Dynamics 365 for Operations</td>
+<td>Platformsopdatering 4</td>
+<td>7.0.4425.16161</td>
+<td>2017. februar</td>
+<td><a href="whats-new-platform-update-4.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 4 (februar 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Dynamics 365 for Operations</td>
+<td>Platformsopdatering 3</td>
+<td>7.0.4307.16141</td>
+<td>November 2016</td>
+<td><a href="whats-new-platform-update-3.md">Nyheder eller ændringer i Dynamics 365 for Operations-platformsopdatering 3 (november 2016)</a></td>
+</tr>
+<tr class="even">
+<td>Microsoft Dynamics AX</td>
+<td>Platformsopdatering 2</td>
+<td>7.0.4230.16130</td>
+<td>2016. august</td>
+<td><a href="whats-new-platform-update-2.md">Nyheder eller ændringer i Dynamics AX-platformsopdatering 2 (august 2016)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics AX</td>
+<td>Platformsopdatering 1</td>
+<td>7.0.4127.16103</td>
+<td>2016. maj</td>
+<td><a href="whats-new-changed-platform-version-7-1-may-2016.md">Nyheder eller ændringer i Dynamics AX-platformsopdatering 1 (maj 2016)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics AX</td>
+<td>7.0</td>
+<td>7.0.4030.16079</td>
+<td>2016. februar</td>
+<td><a href="whats-new-changed-7-0-february-2016.md">Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)</a></td>
+</tr>
+</tbody>
+</table>
 

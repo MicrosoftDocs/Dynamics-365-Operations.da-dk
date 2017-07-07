@@ -1,9 +1,9 @@
 ---
 title: "Frarådede funktioner"
-description: "Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet fra Dynamics 365 for Operations. Det indeholder også funktioner, som blev frarådet i Dynamics AX 7.0 udgivelser."
+description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,8 +29,40 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 
-Dette emne beskriver funktioner, der er blevet fjernet eller er planlagt til at blive fjernet fra Dynamics 365 for Operations. Det indeholder også funktioner, som blev frarådet i Dynamics AX 7.0 udgivelser.
+## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funktioner, der frarådes i opdateringen til Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017
+
+### <a name="warehouse-mobile-devices-portal"></a>Warehouse Mobile Devices Portal
+
+Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er beregnet til selvstændig installation i det lokale miljø. Denne komponent understøttes ikke længere i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. En oprindelig app, der forbedrer brugeroplevelsen, har erstattet WMDP-funktionaliteten. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Årsagen til fjernelsen**       | Identiske funktioner.                        |
+| **Erstattet af en anden funktion?** | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger under [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lagersted](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Påvirkede moduler**             | Lokationsstyring, transportstyring |
+
+### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Avanceret sammenholdningsregel for bankafstemning til manuel sammenholdning
+
+Den sammenholdningsregel, der blev brugt til at vælge og markere et bankdokument, da dokumenter blev sammenholdt manuelt i afstemningsarbejdsarket.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Årsagen til fjernelsen**       | Begrænset brug.                                                                         |
+| **Erstattet af en anden funktion?** | Nr. Kolonnefiltreringsfunktioner skal bruges til at finde dokumenter til afstemning. |
+| **Påvirkede moduler**             | Kontant- og bankstyring                                                               |
+
+### <a name="windows-8-tablet-app"></a>App til Windows 8-tablet
+
+Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godkendelse.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Årsagen til fjernelsen**       | Finance and Operations er kompatibel med tablets. Der er ikke længere brug for tabletappen. |
+| **Erstattet af en anden funktion?** | Nr.                                                                                      |
+| **Påvirkede moduler**             | Udgiftsstyring                                                                       |
+
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funktioner, der er blevet frarådet i Dynamics 365 for Operations 1611 med platformsopdatering 3
 ---------------------------------------------------------------------------------------------
@@ -301,7 +333,7 @@ En arbejdsgang til styring af oprettelse af medarbejdermål er et af flere arbej
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Årsagen til fjernelsen       | Performancestyring er blevet ændret fuldstændigt i Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                        |
+| Årsagen til fjernelsen       | Performancestyring er blevet ændret fuldstændigt i Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | Erstattet af en anden funktion? | Den nyudviklede funktion til performancestyring giver bedre kontrol over indholdet af mål, de mål, der bruges til at spore forløbet, og den vedhæftede fil med yderligere dokumentation. Mål kan gemmes som skabeloner og genbruges derefter. Denne funktion kan hjælpe dig med at konfigurere yderligere mål for medarbejderne hurtigere. |
 | Påvirkede moduler             | Styring af menneskelig kapital                                                                                                                                                                                                                                                                                                               |
 
@@ -484,7 +516,7 @@ I Dynamics AX 2012 R3 kunne Retail Modern POS forbindes direkte med kanaldatabas
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Årsagen til fjernelsen       | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Dynamics 365 for Operations medfører denne funktion nu flere problemer, end den løser. |
+| Årsagen til fjernelsen       | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Dynamics 365 for Finance and Operations medfører denne funktion nu flere problemer, end den løser. |
 | Erstattet af en anden funktion? | Nr. Kun standard Retail Server-kommunikation understøttes nu.    |
 | Påvirkede moduler             | Kanaldatabase/Retail Modern POS                                    |
 
@@ -808,9 +840,5 @@ Lønoplysninger personale
 | Årsagen til fjernelsen       | Denne funktion er blevet erstattet af en anden funktion.                                    |
 | Erstattet af en anden funktion? | Management Reporter (med navnet **Økonomirapportering** i den aktuelle version af Dynamics AX) |
 | Påvirkede moduler             | Finans                                                                              |
-
-
-
-
 
 

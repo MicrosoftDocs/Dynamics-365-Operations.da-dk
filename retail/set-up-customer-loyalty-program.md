@@ -1,27 +1,29 @@
 ---
 title: Opret et fordelskundeprogram
-description: "Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Operations kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal."
+description: "Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Retail kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Operations kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal.
+Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Retail kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal.
 
 <a name="loyalty-features"></a>Fordelskundefunktioner
 ----------------
@@ -45,7 +47,7 @@ Du kan konfigurere fordelskundeprogrammet, så det inkluderer følgende indstill
 -   Juster manuelt fordelskundekort, eller overfør fordelsbelønningssaldoen fra ét kort til et andet for at tilpasse den til og belønne en kunde.
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurere loyalitetsprogrammer
-Du skal oprette flere komponenter for at aktivere funktionen for fordelskunder i Dynamics 365 for Operations - Retail. I følgende diagram illustreres fordelskundekomponenter, og hvordan de er relateret til hinanden. ![Procesforløb for opsætning af kundefordel](./media/loyaltyprocess.gif)
+Du skal oprette flere komponenter for at aktivere funktionen for fordelskunder i Dynamics 365 for Retail. I følgende diagram illustreres fordelskundekomponenter, og hvordan de er relateret til hinanden. ![Procesforløb for opsætning af kundefordel](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Fordelskundekomponenter
 I følgende tabel beskrives de enkelte komponenter, og hvor de er anvendt i opsætningen af fordelskunder.
@@ -68,7 +70,7 @@ I følgende tabel beskrives de processer, der skal køres, for at sende konfigur
 
 | Procesnavn                         | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                    | Sidens navn                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (oplysninger om fordelskunder)           | Kør denne proces for at sende konfigurationsdata for fordelskunder fra Dynamics 365 for Operations til detailbutikkerne. Det er en god ide at planlægge denne proces til at køre ofte, så fordelskundedata overføres til alle butikker.                                                                                                                                                                                               | Distributionsplan                |
+| 1050 (oplysninger om fordelskunder)           | Kør denne proces for at sende data om fordelskunder fra Dynamics 365 for Retail til detailbutikkerne. Det er en god ide at planlægge denne proces til at køre ofte, så fordelskundedata overføres til alle butikker.                                                                                                                                                                                               | Distributionsplan                |
 | Udfør behandling af fordelskundeprogrammer              | Kør denne proces for at knytte fordelskundeplaner til de detailkanaler, der er tildelt fordelskundeplanen. Denne proces kan planlægges til at køre som en batchproces. Hvis du ændrer konfigurationsdataene for fordelskundeplaner, f.eks. fordelskundeprogrammer eller fordelskundebelønningspoint, skal du køre denne proces.                                                                                               | Udfør behandling af fordelskundeprogrammer              |
 | Udfør behandling af offline fordelskundetransaktioner | Kør denne proces for at opdatere fordelskundekort, så de medtager posteringer, der er behandlet offline. Denne proces gælder kun, hvis afkrydsningsfeltet **Optjen offline** er markeret på siden **Delte parametre for detail**, så der kan optjenes belønninger offline.                                                                                                                                               | Udfør behandling af offline fordelskundetransaktioner |
 | Opdater fordelskundeniveauer            | Kør denne proces for at vurdere kundens optjeningsaktivitet i forhold til niveaureglerne for et fordelskundeprogram og for at opdatere status for kundens niveau. Denne proces skal kun bruges, hvis du ændrer niveaureglerne i fordelskundeprogrammer, og de opdaterede regler skal anvendes med tilbagevirkende kraft for fordelskundekort, der allerede er udstedt. Denne proces kan køres som en batchproces eller for de enkelte kort. | Opdater fordelskundeniveauer            |

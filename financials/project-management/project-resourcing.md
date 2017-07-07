@@ -3,14 +3,14 @@ title: Projektressourcer
 description: Dette emne indeholder oplysninger om projektressourcer.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Dette emne indeholder oplysninger om projektressourcer.
 
-En udfordring for projektledere og ressourceledere under projektets planlægningsstadie er ressourceallokering, hvor de skal bestemme og reservere den rigtige ressource til at arbejde på et projekt. I Microsoft Dynamics 365 for Operations kan du med ressourcefunktioner for projekter definere roller, der behandles som midlertidige ressourcer, der kan reserveres til en bestemt opgave eller en del af en opgave. Med denne ressourcetype kan projektledere og ressourceledere udføre følgende opgaver:
+En udfordring for projektledere og ressourceledere under projektets planlægningsstadie er ressourceallokering, hvor de skal bestemme og reservere den rigtige ressource til at arbejde på et projekt. I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan du med ressourcefunktioner for projekter definere roller, der behandles som midlertidige ressourcer, der kan reserveres til en bestemt opgave eller en del af en opgave. Med denne ressourcetype kan projektledere og ressourceledere udføre følgende opgaver:
 
 -   Definere en rolle, der har de nødvendige kompetencer til at gøre det nemt at tilpasse ressourcerne.
 -   Brug roller til at definere en indledende opgavetidsplan, der er baseret på reserverede ressourcer.
@@ -65,10 +65,10 @@ Når du opretter en arbejder som en intern ressource, skal du fuldføre opsætni
 
 **I firmaet, der udlåner:**
 
-1.  I Dynamics 365 for Operations skal du kontrollere, at firmaet, der låner, er markeret, og derefter skal du fuldføre ovenstående procedure, "Konfigurer en arbejder som en projektgrupperessource".
-2.  Gå til **Finans ** &gt; **Opsætning af bogføring** &gt; **Mellemregning**. Klik på **Ny**.
+1.  I Finance and Operations skal du kontrollere, at firmaet, der låner, er markeret, og derefter skal du fuldføre ovenstående procedure, "Konfigurer en arbejder som en projektgrupperessource".
+2.  Gå til **Finans** &gt; **Opsætning af bogføring** &gt; **Mellemregning**. Klik på **Ny**.
 3.  I feltet **Id for juridisk enhed** skal du firmaet, der udlåner. Udfyld de resterende felter efter behov, og klik derefter på **Gem**.
-4.  Gå til **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Priser** &gt; **Intern afregningspris**.** **
+4.  Gå til **Projektstyring og regnskab**&gt; **Opsætning** &gt; **Priser&gt; **Intern afregningspris**.** **
 5.  På formularen **Intern afregningspris** skal du klikke på **Ny**, og i feltet **Udlånt til (juridisk enhed)** skal du vælge det relevante firma.
 6.  Hvis du kun vil låne firmaet, der låner, den ressource, du oprettede i starten af dette afsnit i feltet **Ressource** skal du vælge navnet på den ressource, du har oprettet. Hvis du vil gøre alle ressourcer i firmaet tilgængelige for firmaet, der låner, skal du lade feltet **Ressource** stå tomt.
 7.  Gå til **Projektstyring og regnskab** &gt; **Opsætning** &gt; **Parametre for projektstyring og regnskab** og under fanen **Intern** skal du angive feltet **Aktivér intern ressourceplanlægning og timesedler** til **Ja**.
@@ -123,7 +123,7 @@ Hvis du vil konfigurere kompetencer for en medarbejder, kan du bruge **Arbejdere
 6.  I ruden **Resterende projekter** skal du vælge et projekt og derefter klikke på pilen for at føje det til ruden **Valgte projekter**.
 7.  Luk siden.
 
-Hvis det er nødvendigt, kan du også tildele kategorier til en ressource. Kategoritypen er enten Omkostning eller Indtægter. Dette bestemmes af din organisation. Hvis der ikke er nogen tildelte kategorier for ressourcen, leder Dynamics 365 for Operations efter standardkategorien på timepriser for omkostninger og indtægter.
+Hvis det er nødvendigt, kan du også tildele kategorier til en ressource. Kategoritypen er enten Omkostning eller Indtægter. Dette bestemmes af din organisation. Hvis der ikke er nogen tildelte kategorier for ressourcen, leder Finance and Operations efter standardkategorien på timepriser for omkostninger og indtægter.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Konfigurere projektressource- og rollekarakteristika
 
@@ -190,7 +190,7 @@ Alle omkostninger, salg og overførselspriser kan indstilles for roller.
 5.  I kolonnen **Prissætning** skal du angive en pris for den valgte ressourcerolle.
 
 ## <a name="form-a-project-team"></a>Opret et projektteam
-Hvis en projektleder vil bruge de roller, der er tidligere angivet i et projekt, skal han eller hun knytte rollerne til projektet. Flere roller kan tildeles til et projekt, og Dynamics 365 for Operations navngiver automatisk disse roller under reservationen for at forhindre forvirring. Hvis projektlederen f.eks. kræver tre softwareteknikere, oprettes der automatisk tre softwareteknikerroller, der navngives softwaretekniker 1, softwaretekniker 2 og softwaretekniker 3. Hvis rollekarakteristika tidligere var defineret for rollen, anvendes de som et filter under søgninger efter en ressource. Du kan tilføje yderligere karakteristika efter behov for at indsnævre søgningen yderligere. 
+Hvis en projektleder vil bruge de roller, der er tidligere angivet i et projekt, skal han eller hun knytte rollerne til projektet. Flere roller kan tildeles til et projekt, og Finance and Operations navngiver automatisk disse roller under reservationen for at forhindre forvirring. Hvis projektlederen f.eks. kræver tre softwareteknikere, oprettes der automatisk tre softwareteknikerroller, der navngives softwaretekniker 1, softwaretekniker 2 og softwaretekniker 3. Hvis rollekarakteristika tidligere var defineret for rollen, anvendes de som et filter under søgninger efter en ressource. Du kan tilføje yderligere karakteristika efter behov for at indsnævre søgningen yderligere. 
 
 Visningsindstillinger kan også tilpasses for at give et bedre overblik over ressourcetilgængelighed. Er der indstillinger, som kan vise tilgængelighed pr. time, dag, uge, måned, kvartal og år. Der er også en indstilling, som kan vise tilgængelig og resterende kapacitet for ressourcer. Denne indstilling er nyttig til tidsstyring, når du skal vurdere ledig tid til aktiviteter eller ressourcetilgængelighed. 
 
@@ -210,7 +210,7 @@ I følgende fremgangsmåde beskrives, hvordan et projektteam oprettes.
 1.  Vælg et projekt på listesiden **Alle projekter**, og klik derefter på **Rediger**.
 2.  Under fanen **Projektteam og planlægning** i feltet **Planlæg slutdato** skal du angive startdato for tidsplanen plus en måned. For eksempel hvis tidsplanens startdato er 24. juni 2017 (24/06/2017), skal du angive **24/07/2017**.
 3.  Klik på **Tilføj**.
-4.  I ruden **Føj roller til projektet** i feltet **Rolle**skal du vælge **Seniorprojektleder**.
+4.  I ruden **Føj roller til projektet** i feltet **Rolle** skal du vælge **Seniorprojektleder**.
 5.  Klik på **Påkrævede kompetencer**.
 6.  På siden **Vælg egenskaber** er de karakteristika, som du tidligere har angivet for seniorprojektlederrollen markeret som standard. Klik på **OK**.
 7.  På siden **Føj roller til projekt** i feltet **Antal ressourcer** skal du angive **1**.
@@ -277,7 +277,7 @@ Yderligere indstillinger er tilføjet i WBS for at forbedre brugen af ressourcef
 </tr>
 <tr class="even">
 <td>Generér team automatisk</td>
-<td>Tilføj automatisk planlagte ressourcer ved hjælp af roller, der er knyttet til en opgave. Dynamics 365 for Operations foreslår automatisk planlagte ressourcer ved hjælp af beslutningsanalyse med flere kriterier, som er baseret på roller. Når roller og tidsforbrug (timer) er angivet for opgaverne i et WBS, og strukturen er blevet frigivet, skal du klikke på <strong>Generér team automatisk</strong>. Det nødvendige antal planlagte ressourcer føjes til WBS og fanen <strong>Projekt og teamplanlægning</strong>.</td>
+<td>Tilføj automatisk planlagte ressourcer ved hjælp af roller, der er knyttet til en opgave. Finance and Operations foreslår automatisk planlagte ressourcer ved hjælp af beslutningsanalyse med flere kriterier, som er baseret på roller. Når roller og tidsforbrug (timer) er angivet for opgaverne i et WBS, og strukturen er blevet frigivet, skal du klikke på <strong>Generér team automatisk</strong>. Det nødvendige antal planlagte ressourcer føjes til WBS og fanen <strong>Projekt og teamplanlægning</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Ressource (rulleliste)</td>

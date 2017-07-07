@@ -3,13 +3,13 @@ title: Salgsreturneringer
 description: "Dette emne indeholder oplysninger om processen for returordrer. Det indeholder oplysninger om returneringer fra kunder og deres virkning på efterkalkulation og disponible lagerantal."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdec28ba1fe3650f59520cb42a71497c54a7d93e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 
 Dette emne indeholder oplysninger om processen for returordrer. Det indeholder oplysninger om returneringer fra kunder og deres virkning på efterkalkulation og disponible lagerantal.
 
-Kunder kan returnere varer af forskellige årsager. En vare kan f.eks. være defekt, eller den opfylder ikke kundens forventninger. Returvareprocessen starter, når en kunde afgiver en anmodning om at returnere en vare. Når kundens anmodning er modtaget, oprettes en returordre i Microsoft Dynamics 365 for Operations.
+Kunder kan returnere varer af forskellige årsager. En vare kan f.eks. være defekt, eller den opfylder ikke kundens forventninger. Returvareprocessen starter, når en kunde afgiver en anmodning om at returnere en vare. Når kundens anmodning er modtaget, oprettes en returordre i Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="return-order-process"></a>Returordreproces
 I følgende illustration vises en oversigt over returvareprocessen.  
@@ -264,7 +264,7 @@ Dette scenario omfatter to firmaer i samme organisation, som vist i følgende il
 
 [![Enkel intern returnering](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i den købende virksomhed, eller der oprettes en kundereturordre i den sælgende virksomhed. Dynamics 365 for Operations opretter den tilsvarende ordre i et andet firma og sørger for, at hoved- og linjeoplysningerne på returordren til leverandøren afspejler indstillingerne for kundereturordren. Den returordre, der er oprettet, kan enten inkludere eller udelade referencen (**Find salgsordre**) til en eksisterende debitorfaktura. Følgesedler og fakturaer i de to ordrer kan behandles individuelt. Du behøver f.eks. ikke at oprette en følgeseddel for returordren til leverandøren, før du genererer følgesedlen til kundereturordren.
+Ordrekæden kan etableres, når der oprettes en returordre til leverandøren i den købende virksomhed, eller der oprettes en kundereturordre i den sælgende virksomhed. Finance and Operations opretter den tilsvarende ordre i et andet firma og sørger for, at hoved- og linjeoplysningerne på returordren til leverandøren afspejler indstillingerne for kundereturordren. Den returordre, der er oprettet, kan enten inkludere eller udelade referencen (**Find salgsordre**) til en eksisterende debitorfaktura. Følgesedler og fakturaer i de to ordrer kan behandles individuelt. Du behøver f.eks. ikke at oprette en følgeseddel for returordren til leverandøren, før du genererer følgesedlen til kundereturordren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Returneringer af direkte leveringer mellem tre parter
 

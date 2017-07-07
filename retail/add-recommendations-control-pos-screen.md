@@ -1,27 +1,28 @@
 ---
 title: "Føje et kontrolelement med anbefalinger til transaktionssiden på en POS-enhed"
-description: "I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Operations."
+description: "I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: db17231a27c85193dd95dfe32575f598e00873b1
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 1cb80decf8ef0f182feec5d4cbe76b37b106dcd2
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -31,12 +32,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Operations.
+I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Retail.
 
-Du kan få vist produktanbefalinger på POS-enheden, når du bruger Microsoft Dynamics 365 for Operations. *Anbefalinger* er varer, som kunden muligvis er interesseret i baseret på deres købshistorik, varer i deres ønskeseddel og varer, som andre kunder har købt online og i fysiske butikker. For at få vist produktanbefalinger skal du føje et kontrolelement til transaktionsskærmen ved hjælp af skærmlayoutdesigneren.
+Du kan få vist produktanbefalinger på POS-enheden, når du bruger Microsoft Dynamics 365 for Retail. *Anbefalinger* er varer, som kunden muligvis er interesseret i baseret på deres købshistorik, varer i deres ønskeseddel og varer, som andre kunder har købt online og i fysiske butikker. For at få vist produktanbefalinger skal du føje et kontrolelement til transaktionsskærmen ved hjælp af skærmlayoutdesigneren.
 
 ## <a name="open-layout-designer"></a>Åbn layoutdesigner
-1.  Gå til **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Skærmlayout**.
+1.  Gå til **Retail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Skærmlayout**.
 2.  Brug Quick Filter til at finde det skærmbillede, du vil føje kontrolelementet til. Filtrer for eksempel på feltet **Skærmlayout-id** ved hjælp af værdien 'F2CP16:9M'.
 3.  Find og vælg den ønskede post på listen. Vælg for eksempel 'Navn: F2CP16:9M skærmlayout-ID: F2CP16:9M'.
 4.  Klik på **Layoutdesigner**.
@@ -55,7 +56,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 1.  Reducer højden af området med detaljer for transaktionslinjer, så det har samme højde som kundepanelet til venstre.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  I menuen til venstre skal du trække og slippe kontrolelementet med anbefalinger til mellem området med transaktionslinjedetaljer og knapmatricen nederst i midten af transaktionsskærmbilledet. Rediger størrelsen på kontrolelementet, så det passer i det pågældende område.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 3.  Klik på **X** for at lukke og afslutte layoutdesigneren.
-4.  I Dynamics 365 for Operations skal du gå til **Detail og handel** &gt; **Retail it** &gt; **Distributionsplaner**.
+4.  I Dynamics 365 for Retail skal du gå til **Retail** &gt; **Retail it** &gt; **Distributionsplaner**.
 5.  Vælg **1090, kasseapparater** på listen.
 6.  Klik på **Kør nu**.
 
@@ -70,7 +71,7 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 7.  Vælg det billede, der skal vises på fanen, i feltet **Billede**.
 8.  Klik på **OK**. Den nye fane vises i knapmatricen.
 9.  Klik på **X** for at lukke og afslutte layoutdesigneren.
-10. I Dynamics 365 for Operations skal du gå til **Detail og handel** &gt; **Retail it** &gt; **Distributionsplaner**.
+10. I Dynamics 365 for Retail skal du gå til **Retail** &gt; **Retail it** &gt; **Distributionsplaner**.
 11. Vælg **1090, kasseapparater** på listen.
 12. Klik på **Kør nu**.
 

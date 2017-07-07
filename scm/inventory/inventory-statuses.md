@@ -3,14 +3,14 @@ title: Lagerstatusser
 description: "I denne artikel beskrives det, hvordan du kan bruge lagerstatus til at kategorisere og holde styr på lageret."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -44,7 +44,7 @@ Her er nogle eksempler på måder, du kan bruge lagerstatusser på:
 
 En lagerstatus er en af dimensionerne i lagringsdimensionsgruppen. Lagerstatusser kan kategoriseres som disponible eller ikke-gængelige, og du kan bruge parameteren **Lagerspærring** til at spærre varer, der har en ikke-tilgængelig lagerstatus. Varer, der har status spærret, betragtes som fysiske lagervarer, og de kan ikke bruges i en produktionsordre, salgsordre, overflytningsordre eller udgående transaktion. 
 
-Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder **Klar**, en ikke-tilgængelig status, som hedder **Beskadiget** og en spærret status, som hedder **Spærret**. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til **Beskadiget**på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til **Spærret**. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Microsoft Dynamics 365 for Operations bruge lokationsvejledninger og arbejdsskabeloner til at vise oplysninger om en passende lokation eller en række lokationer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen **Reservation** på siden **Lagertransaktioner**. 
+Du kan bruge lagerstedsvarer, der enten har disponibel eller ikke-disponibel lagerstatus for indgående arbejde. For eksempel skal du oprette en disponibel status, som hedder **Klar**, en ikke-tilgængelig status, som hedder **Beskadiget** og en spærret status, som hedder **Spærret**. Når du opretter en indkøbsordre for modtagne eller returnerede varer, og hvis nogle af varerne er beskadiget eller ødelagt, kan du ændre lagerstatus for varerne til **Beskadiget** på indkøbsordrelinjen. Når disse varer modtages, angives status automatisk til **Spærret**. Hvis du scanner de beskadigede varer ved hjælp af en mobilenhed, kan Microsoft Dynamics 365 for Finance and Operations bruge lokationsvejledninger og arbejdsskabeloner til at vise oplysninger om en passende lokation eller en række lokationer, hvor du kan de lægge disse varer på lager. For returnerede varer oprettes afgangstypen **Reservation** på siden **Lagertransaktioner**. 
 
 Brug varer, der har lagerstatus disponibel, til udgående arbejde. Hvis du har varer med status **Ødelagt**, og der køres varedisponering på disse varer, anses varerne for manglende, og lageret genopfyldes automatisk. 
 

@@ -3,14 +3,14 @@ title: "Aktivitetsbaseret underleverandørarbejde"
 description: "I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 
-I Microsoft Dynamics 365 for Operations, der er to metoder til underleverandørarbejde: produktionsordrer og lean produktion. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
+I Microsoft Dynamics 365 for Finance and Operations, der er to metoder til underleverandørarbejde: produktionsordrer og lean produktion. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflows, der vedrører underleverandører
 Det grundlæggende princip i et produktionsflow ændres ikke, når aktiviteter gives i underentreprise. Materiale flyder stadig mellem lokaliteter, procesaktiviteter konverterer materiale til produkter og overførselsaktiviteter flytter materiale eller produkter fra ét sted til et andet. Du kan modellere steder og arbejdsceller som kreditoradministreret ved at tildele kreditorkontoen til et lagersted eller en ressource i en ressourcegruppe.  
@@ -104,7 +104,7 @@ Folk betragter ofte transport som ikke-produktivt og mener, at det ikke tilføje
 
 Med aktivitetsbaseret underleverandørarbejde i lean manufacturing kan du integrere fragtmænd og transportleverandører, der flytter materialer og produkter mellem et produktionsflows lokationer. Ved at modellere en overførselsaktivitet kan du tildele en fragtmand eller en leverandør. Overførselsaktiviteterne/jobbet er baseret på en aftale om service og køb, og du kan oprette indkøbsordrer og modtagelsesadviseringer baseret på de faktiske overførselsjob. Denne funktionalitet er den samme som funktionaliteten for procesaktiviteter udført af underleverandør.  
 
-Derfor understøtter Dynamics 365 for Operations nu styklisteberegning, der omfatter transportydelser, oprettelse af relaterede indkøbsordrer, integreret registrering af modtagelser og integration af transportomkostninger i efterkalkulation af produktionsflow.
+Derfor understøtter Finance and Operations nu styklisteberegning, der omfatter transportydelser, oprettelse af relaterede indkøbsordrer, integreret registrering af modtagelser og integration af transportomkostninger i efterkalkulation af produktionsflow.
 
 
 

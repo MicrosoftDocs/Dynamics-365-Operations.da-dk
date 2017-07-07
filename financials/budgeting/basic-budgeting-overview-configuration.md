@@ -1,15 +1,15 @@
 ---
 title: Budgetteringsoversigt
-description: "Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Operations, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Dynamics 365 for Operations eller indlæse dem fra et tredjepartsprogram."
+description: "Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations, Enterprise edition eller indlæse dem fra et tredjepartsprogram."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
@@ -17,27 +17,27 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a4f9c99b8d74e20fbadc6cd9617451cfbfc06ba4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budgeting-overview"></a>Budgetteringsoversigt
+# <a name="budgeting-overview"></a>Budgetteringsoversigt 
 
 [!include[banner](../includes/banner.md)]
 
 
-Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Operations, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Dynamics 365 for Operations eller indlæse dem fra et tredjepartsprogram.
+Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.
 
 <a name="overview"></a>Overblik
 --------
 
 Det godkendte budget for en juridisk enhed bevares i et dokument, der er kendt som en *Budgetregisterpost*. Linjerne i et budgetregisterpostdokument kaldes *budgetkonto*-poster og indeholder oplysninger om økonomiske dimensioner, datoer og beløb for det godkendte budget. Budgetregisterpostdokumentet integreres med grundlæggende økonomiske rapporter og forespørgselssider, hvor faktiske finansbeløb sammenlignes med budgetbeløb. 
 
-Der er flere metoder til at oprette budgetregisterposter i Microsoft Dynamics 365 for Operations:
+Der er flere metoder til at oprette budgetregisterposter i Finance and Operations:
 
 -   Du kan manuelt angive dokumentoplysninger på siden **Budgetregisterposter**.
 -   Brug Microsoft Excel-skabelon, som du kan åbne ved at klikke på knappen **Åbn i Excel** på siden **Budgetregisterposter**.
@@ -77,7 +77,7 @@ Budgetadministratoren kan gennemgå den aktuelle tilstand for et budget i arbejd
 > [!NOTE] 
 > Feltet **Afdelingsleder** på siden **Organisationsenheder** afgør, hvilke ledere der understøtter bestemte økonomiske dimensionskombinationer. Klik på **Se mere** nederst på fanen for at åbne forespørgselssiden **Budget vs. faktiske tal** for at få yderligere oplysninger om budgetbeløb versus faktiske beløb. 
 
-Forespørgselssiden **Faktisk vs. budget** giver dig mulighed for at dykke ned i detaljer om budget versus faktiske beløb. Vælg en linje på forespørgselssiden, og klik derefter på **Periodesaldi,** for at se budgettet og faktiske beløb, der er spredt over regnskabsperioder. Siden **Budgetkontoposter** indeholder detaljeadgang til detaljerne i budgetbeløbet i budgetregisterposter. Siden **Finanskladdeposter**åbner de finansposteringer, der er inkluderet i det beregnede **faktiske** beløb. 
+Forespørgselssiden **Faktisk vs. budget** giver dig mulighed for at dykke ned i detaljer om budget versus faktiske beløb. Vælg en linje på forespørgselssiden, og klik derefter på **Periodesaldi,** for at se budgettet og faktiske beløb, der er spredt over regnskabsperioder. Siden **Budgetkontoposter** indeholder detaljeadgang til detaljerne i budgetbeløbet i budgetregisterposter. Siden **Finanskladdeposter** åbner de finansposteringer, der er inkluderet i det beregnede **faktiske** beløb. 
 
 En virksomhed, der bruger budgetplanlægningsfunktionen kan oprette og bruge *budgetprognoser *i arbejdsområdet **Finansbudgetter og budgetter**.
 

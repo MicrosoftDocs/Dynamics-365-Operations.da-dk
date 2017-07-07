@@ -3,7 +3,7 @@ title: Ruter og operationer
 description: "Dette emne indeholder en beskrivelse af ruter og operationer. En rute definerer processen til fremstilling af et produkt eller en produktvariant. Den beskriver hvert trin (operation) i produktionsprocessen, og den rækkefølge, som disse trin skal udføres i. For hvert trin definerer ruten også de krævede operationsressourcer, den krævede opstillingstid og operationstid, og hvordan omkostningerne skal beregnes."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3abc4e6f648ecc10105346ce181d8bc752d95f17
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -37,7 +37,7 @@ Dette emne indeholder en beskrivelse af ruter og operationer. En rute definerer 
 <a name="overview"></a>Overblik
 --------
 
-En rute beskriver rækkefølgen af operationer, der kræves for at producere et produkt eller en produktvariant. For hver operation definerer ruten også de operationsressourcer, der skal bruges, den tid, der kræves for at opsætte og udføre operationen, og hvordan omkostningerne skal beregnes. Du kan bruge den samme rute til at producere flere produkter, eller du kan definere en entydig rute for hvert produkt eller produktvariant. Du kan også have flere ruter til samme produkt. I dette tilfælde varierer den rute, der bruges, afhængigt af faktorer som det antal, der skal produceres. Definitionen af en rute i Microsoft Dynamics 365 for Operations består af fire separate elementer, der tilsammen beskriver produktionsprocessen:
+En rute beskriver rækkefølgen af operationer, der kræves for at producere et produkt eller en produktvariant. For hver operation definerer ruten også de operationsressourcer, der skal bruges, den tid, der kræves for at opsætte og udføre operationen, og hvordan omkostningerne skal beregnes. Du kan bruge den samme rute til at producere flere produkter, eller du kan definere en entydig rute for hvert produkt eller produktvariant. Du kan også have flere ruter til samme produkt. I dette tilfælde varierer den rute, der bruges, afhængigt af faktorer som det antal, der skal produceres. Definitionen af en rute i Microsoft Dynamics 365 for Finance and Operations består af fire separate elementer, der tilsammen beskriver produktionsprocessen:
 
 -   **Rute** – En rute, der definerer strukturen i produktionsprocessen. Med andre ord, definerer den rækkefølgen af operationer.
 -   **Operation** – En operation identificerer et navngivet trin i en rute, f.eks. **Montage**. Den samme operation kan forekomme i flere ruter og kan have forskellige operationsnumre.
@@ -45,7 +45,7 @@ En rute beskriver rækkefølgen af operationer, der kræves for at producere et 
 -   **Ruteversion** – En ruteversion, der definerer den rute, der bruges til at producere et produkt eller en produktvariant. Ruteversioner giver mulighed for, at ruter kan genbruges på tværs af produkter eller ændres med tiden. De kan også aktivere forskellige ruter til at blive brugt til at fremstille det samme produkt. I dette tilfælde afhænger den rute, der bruges, af faktorer som lokalitet eller det antal, der skal produceres.
 
 ## <a name="routes"></a>Ruter
-En rute beskriver rækkefølgen af operationer, der bruges for at producere et produkt eller en produktvariant. Hver operation er tildelt et operationsnummer og en efterfølgende operation. Rækkefølgen af operationer udgør et rutenetværk, der kan repræsenteres af et styret diagram, der har et eller flere startpunkter og et enkelt slutpunkt. I Dynamics 365 for Operations adskiller ruter sig på grundlag af typen af struktur. De to typer ruter er simple ruter og rutenetværk. I produktionsstyringsparametrene kan du angive, om kun simple ruter kan bruges, eller om der kan bruges mere komplekse rutenetværk.
+En rute beskriver rækkefølgen af operationer, der bruges for at producere et produkt eller en produktvariant. Hver operation er tildelt et operationsnummer og en efterfølgende operation. Rækkefølgen af operationer udgør et rutenetværk, der kan repræsenteres af et styret diagram, der har et eller flere startpunkter og et enkelt slutpunkt. I Dynamics 365 for Finance and Operations adskiller ruter sig på grundlag af typen af struktur. De to typer ruter er simple ruter og rutenetværk. I produktionsstyringsparametrene kan du angive, om kun simple ruter kan bruges, eller om der kan bruges mere komplekse rutenetværk.
 
 ### <a name="simple-routes"></a>Simple ruter
 
@@ -53,7 +53,7 @@ En simpel rute er sekventiel, og der er kun et udgangspunkt for ruten.
 
 [![Simpel rute](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer Dynamics 365 for Operations automatisk operationsnumrene (10, 20, 30 og så videre), når du definerer ruten.
+Hvis du kun aktiverer simple ruter i produktionsstyringsparametrene, genererer Finance and Operations automatisk operationsnumrene (10, 20, 30 og så videre), når du definerer ruten.
 
 ### <a name="route-networks"></a>Rutenetværk
 
@@ -85,10 +85,10 @@ En rute skal være godkendt, før den kan bruges i planlægnings- eller fremstil
 
 Hver rute kan være godkendt eller ikke-godkendt separat. Bemærk imidlertid, at hvis en rute ikke er godkendt, er alle relaterede ruteversioner heller ikke godkendt. I produktionsstyringsparametrene kan du angive, om ruter kan være ikke-godkendt, og om godkendte ruter kan ændres.  
 
-Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Hvis du skal holde en log, der registrerer, hvem der godkender hver rute, kan du kræve elektroniske signaturer til rutegodkendelsen. Brugerne er så nødt til at bekræfte deres identitet ved hjælp af en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
 ## <a name="operations"></a>Drift
-En operation er trin i produktionsprocessen. I Dynamics 365 for Operations har hver operation et id og en enkel beskrivelse. Følgende tabeller viser typiske eksempler på operationer fra en maskinfabrik.
+En operation er trin i produktionsprocessen. I Dynamics 365 for Finance and Operations har hver operation et id og en enkel beskrivelse. Følgende tabeller viser typiske eksempler på operationer fra en maskinfabrik.
 
 | Handling  | Betegnelse        |
 |------------|--------------------|
@@ -128,7 +128,7 @@ Operationsrelationer giver dig masser af fleksibilitet, når du definerer dine r
 
 ### <a name="modifying-product-specific-routes"></a>Ændring af produktspecifikke ruter
 
-Når du åbner siden **Rute** fra siden **Oplysninger om frigivne produkter**, vises de ruteversioner, der er knyttet til det valgte frigivne produkt. I denne sammenhæng viser Dynamics 365 for Operations for hver operation operationsegenskaberne fra den operationsrelation, der passer bedst til ruteversionen. Bemærk, at listen over operationer omfatter egenskaberne **Varekode** og **Rutekode** fra operationsrelationen. Derfor kan du bestemme, hvilken operationsrelationen der vises.  
+Når du åbner siden **Rute** fra siden **Oplysninger om frigivne produkter**, vises de ruteversioner, der er knyttet til det valgte frigivne produkt. I denne sammenhæng viser Dynamics 365 for Finance and Operations for hver operation operationsegenskaberne fra den operationsrelation, der passer bedst til ruteversionen. Bemærk, at listen over operationer omfatter egenskaberne **Varekode** og **Rutekode** fra operationsrelationen. Derfor kan du bestemme, hvilken operationsrelationen der vises.  
 
 På siden **Rute** side, kan du kan ændre operationsegenskaberne for operationen, f.eks. operationstiden eller omkostningskategorierne. Dine ændringer gemmes på den operationsrelation, der er specifik for ruten og det frigivne produkt, der refereres til i den aktuelle ruteversion. Hvis den operationsrelation, der er vist, ikke er specifik for ruten og det frigivne produkt, før dine ændringer er gemt, opretter systemet en kopi af operationsrelationen. Denne kopi *er* specifik for ruten og det frigivne produkt. Derfor påvirker dine ændringer ikke andre ruter eller frigivne produkter. For at kontrollere hvilken operationsrelation, der ændres på siden **Rute**, skal du se på felterne **Varekode** og **Rutekode**.  
 
@@ -150,9 +150,9 @@ Hvis din virksomhed bruger standardoperationer, og de operationelle parametre er
 
 ### <a name="applying-operation-relations"></a>Anvendelse af operationsrelationer
 
-I nogle tilfælde skal Dynamics 365 for Operations finde operationelle egenskaber for en operation. Når der f.eks. oprettes en indkøbsordre, skal de operationelle egenskaber for hver operation kopieres fra operationsrelationerne til produktionsruten. I sådanne situationer søger Dynamics 365 for Operations de relevante operationsrelationer fra den mest specifikke kombination til den mindst specifikke kombination.  
+I nogle tilfælde skal Dynamics 365 for Finance and Operations finde operationelle egenskaber for en operation. Når der f.eks. oprettes en indkøbsordre, skal de operationelle egenskaber for hver operation kopieres fra operationsrelationerne til produktionsruten. I sådanne situationer søger Finance and Operations de relevante operationsrelationer fra den mest specifikke kombination til den mindst specifikke kombination.  
 
-Når Dynamics 365 for Operations søger efter den mest relevante operationsrelation for et frigivet produkt, foretrækkes en operationsrelation, der svarer til vare-id'et for det udgivne produkt, i forhold til en operationsrelation, der svarer til varegruppe-id'et. Til gengæld foretrækkes en operationsrelation, der svarer til varegruppe-id'et, i forhold til standardoperationsrelationen. Søgningen sker i følgende rækkefølge:
+Når Dynamics 365 for Finance and Operations søger efter den mest relevante operationsrelation for et frigivet produkt, foretrækkes en operationsrelation, der svarer til vare-id'et for det udgivne produkt, i forhold til en operationsrelation, der svarer til varegruppe-id'et. Til gengæld foretrækkes en operationsrelation, der svarer til varegruppe-id'et, i forhold til standardoperationsrelationen. Søgningen sker i følgende rækkefølge:
 
 1.  **Varekode**=**tabel** og **varerelation**=&lt;vare-id&gt;
 2.  **Varekode**=**gruppe** og **varerelation**=&lt;varegruppe-id&gt;
@@ -188,7 +188,7 @@ Når du aktiverer en ruteversion, angiver du den som den standardruteversion, va
 
 ### <a name="electronic-signatures"></a>Elektroniske signaturer
 
-Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Hvis du skal holde en log, der registrerer, hvem der godkender og aktiverer hver ruteversion, kan du kræve elektroniske signaturer til disse opgaver. Brugere, der kan godkende og aktivere ruteversioner, skal bekræfte deres identitet ved hjælp af en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
 ### <a name="product-change-that-uses-case-management"></a>Produktændring, der bruger sagsstyring
 
@@ -199,7 +199,7 @@ Afhængigt af virksomhedens behov, kan du muligvis reducere det arbejde, der kr�
 
 ### <a name="making-routes-independent-of-resources"></a>Gør ruter uafhængige af ressourcer
 
-I mange systemer skal operationsressourcen eller den ressourcegruppe, som skal udføre en operation, angives i ruten. I Dynamics 365 for Operations kan du definere en række krav, som en operationsressource skal opfylde for at være gældende for operationen. Derfor behøver den specifikke operationsressource eller ressourcegruppe, der skal bruges, ikke at blive fastlagt, før operationen faktisk er planlagt. Denne funktion er især nyttig, når du har mange arbejdere eller maskiner, der kan udføre den samme operation.  
+I mange systemer skal operationsressourcen eller den ressourcegruppe, som skal udføre en operation, angives i ruten. I Dynamics 365 for Finance and Operations kan du definere en række krav, som en operationsressource skal opfylde for at være gældende for operationen. Derfor behøver den specifikke operationsressource eller ressourcegruppe, der skal bruges, ikke at blive fastlagt, før operationen faktisk er planlagt. Denne funktion er især nyttig, når du har mange arbejdere eller maskiner, der kan udføre den samme operation.  
 
 Du angiver f.eks., at en operation kræver en operationsressource af typen **Maskine**, der har en **Udstansningskapacitet** på 20 tons. Planlægningsprogrammet vil derefter løse disse krav til en bestemt operationsressource eller ressourcegruppe, når operationen er planlagt. Fordi du blot kan angive disse krav i stedet for at binde operationen til en bestemt maskine, har du meget mere fleksibilitet. Desuden er vedligeholdelse lettere, når ressourcer flyttes, eller der tilføjes nye ressourcer.  
 
@@ -240,7 +240,7 @@ Hvis du ikke angiver en operationsressource eller ressourcegruppe som en del af 
 
 [Ressourceegenskaber](resource-capabilities.md)
 
-[Oversigt over elektroniske signaturer](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Oversigt over elektroniske signaturer](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)
 
 
 

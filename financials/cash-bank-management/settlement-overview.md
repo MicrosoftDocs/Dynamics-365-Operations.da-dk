@@ -3,7 +3,7 @@ title: Udligningsoversigt
 description: "Denne artikel indeholder generelle oplysninger om udligningsprocessen. Den beskriver de typer transaktioner, der kan udlignes, hvornår og hvordan transaktioner kan udlignes og resultaterne af udligningsprocessen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6ff44d517eb64d6472802ad057b680f4d2c7c1d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: ab12ef4127daf57fb0816ae1585876b50d1e81ed
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -43,7 +43,7 @@ Udligning i Kreditor og Debitor kan forekomme mellem de posteringstyper, der på
 Posteringer kan udlignes ved tidspunktet for betaling. Når du f.eks. foretager en betaling til en kreditor, vælger du typisk de fakturaer, der skal betales. Når du vælger fakturaer, markerer du dem til udligning mod betalingen. Når debitormedarbejdere registrerer en kundebetaling, kan de markere de relevante fakturaer til udligning baseret på de oplysninger, der er inkluderet i debitorens betaling. Siden **Udlign transaktioner** bruges til at markere transaktioner til udligning. Denne side kan åbnes fra enhver ikke-bogført faktura eller betaling. Når transaktionen bogføres, bogføres udligningen også. Posteringer kan også udlignes, efter de er bogført. Du kan angive og bogføre en debitorbetaling uden at udligne den med en faktura. Du skal måske lige undersøge, at betalingen udlignes med den korrekte faktura. Siden **Udlign transaktioner** kan åbnes fra siden **Alle kunder** eller **Alle leverandører** eller fra siden **Transaktioner** for en debitor eller kreditor. Du kan også tilbageføre bogførte forudbetalinger for en faktura ved at markere betalingen for udligning med en købsordre eller salgsordre. I dette tilfælde har betalingen fortsat en åben saldo, men den kan ikke udlignes mod en anden faktura. Betalingen udlignes automatisk mod den faktura, der oprettes ud fra indkøbsordren eller salgsordren.
 
 ## <a name="how-to-settle-transactions"></a>Hvordan posteringer skal udlignes
-Posteringer kan udlignes manuelt, automatisk eller via en kombination af de to metoder. Valget af udligningsmetode afhænger af forretningsprocesser, som derefter kan implementeres i hele opsætningen af udligning i Kreditorparametre og Debitorparametre. Du kan oprette kreditorbetalinger og direkte debitorbetalinger for kunder ved hjælp af et betalingsforslag, som bruges til at vælge fakturaer, der skal betales. Betalingsforslaget startes manuelt, men Microsoft Dynamics 365 for Operations markerer derefter automatisk de valgte fakturaer til udligning, når betalingerne oprettes. Hvis betalingerne oprettes manuelt, kan du bruge siden **Udlign transaktioner** til at vælge fakturaer til udligning. Du kan manuelt vælge fakturaerne, eller du kan bruge indstillingen **Markér efter prioritet**, så fakturaer automatisk markeres til udligning. Indstillingen **Markér efter prioritet** er kun tilgængelig for Debitor. Hvis du vil aktivere denne indstilling, skal du bruge siden **Udligningsprioritet** i Debitorparametre. Hvis en betalingsmedarbejder indtaster en betaling, men ikke udligner betalingen, før han eller hun bogfører den, kan betalingen udlignes automatisk. Du kan aktivere automatisk udligning i debitorparametre og kreditorparametre. Når du bruger automatisk udligning, kan du bruge den foruddefinerede udligningsrækkefølge, eller du kan definere dine egen prioritetsrækkefølge for udligning i debitorparametre. Denne funktionalitet er kun tilgængelig for Debitor.
+Posteringer kan udlignes manuelt, automatisk eller via en kombination af de to metoder. Valget af udligningsmetode afhænger af forretningsprocesser, som derefter kan implementeres i hele opsætningen af udligning i Kreditorparametre og Debitorparametre. Du kan oprette kreditorbetalinger og direkte debitorbetalinger for kunder ved hjælp af et betalingsforslag, som bruges til at vælge fakturaer, der skal betales. Betalingsforslaget startes manuelt, men Microsoft Dynamics 365 for Finance and Operations markerer derefter automatisk de valgte fakturaer til udligning, når betalingerne oprettes. Hvis betalingerne oprettes manuelt, kan du bruge siden **Udlign transaktioner** til at vælge fakturaer til udligning. Du kan manuelt vælge fakturaerne, eller du kan bruge indstillingen **Markér efter prioritet**, så fakturaer automatisk markeres til udligning. Indstillingen **Markér efter prioritet** er kun tilgængelig for Debitor. Hvis du vil aktivere denne indstilling, skal du bruge siden **Udligningsprioritet** i Debitorparametre. Hvis en betalingsmedarbejder indtaster en betaling, men ikke udligner betalingen, før han eller hun bogfører den, kan betalingen udlignes automatisk. Du kan aktivere automatisk udligning i debitorparametre og kreditorparametre. Når du bruger automatisk udligning, kan du bruge den foruddefinerede udligningsrækkefølge, eller du kan definere dine egen prioritetsrækkefølge for udligning i debitorparametre. Denne funktionalitet er kun tilgængelig for Debitor.
 
 ## <a name="results-of-settlement"></a>Resultater af udligning
 Når posteringer udlignes, øges eller mindskes den udestående saldo for hver postering. I et typisk scenarie, hvor en faktura og betaling udlignes, opdateres status og saldoen for hver transaktion efter følgende regler:

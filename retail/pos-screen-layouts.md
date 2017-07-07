@@ -1,39 +1,40 @@
 ---
 title: "Konfigurer skærmlayouts til POS"
-description: "Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Operations – Retail POS-oplevelser."
+description: "Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7dee20166ea89b56523e3ef38e66de53d6e4a621
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 9f7f46c1bae5bac6eefa0b8c70b079cab76aa8b6
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="configure-screen-layouts-for-pos"></a>Konfigurer skærmlayouts til POS
+# <a name="configure-screen-layouts-for-pos"></a>Konfigurere skærmlayout til POS
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Operations – Retail POS-oplevelser.
+Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser.
 
-Brugergrænsefladen i Microsoft Dynamics 365 for Operations – Retail POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og/eller brugere.
+Brugergrænsefladen i Microsoft Dynamics 365 for Retail POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og/eller brugere.
 
 ## <a name="visual-profile"></a>Visuel profil
 Visuelle profiler tildeles til kasseapparater og bruges til at angive de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema, farver og billeder. 
@@ -46,7 +47,7 @@ Visuelle profiler tildeles til kasseapparater og bruges til at angive de visuell
 
 **Markeringsfarve** – Markeringsfarven bruges overalt på POS-enheden til at adskille eller fremhæve visse visuelle elementer, f.eks.felter, kommandoknapper eller hyperlinks. Disse elementer kræver typisk handling.
 
-**Overskriftsfarve** – Overskriftsfarven gør det muligt for brugeren at konfigurere farven i sidehovedet til at imødekomme detailhandlerens behov for branding. Denne funktion er kun tilgængelig i Dynamics 365 for Operations version 1611.
+**Overskriftsfarve** – Overskriftsfarven gør det muligt for brugeren at konfigurere farven i sidehovedet til at imødekomme detailhandlerens behov for branding. Denne funktion er kun tilgængelig i Dynamics 365 for Retail version 1611.
 
 **Logonbaggrunde** – Brugere kan angive et baggrundsbillede til logonskærmen. Filstørrelsen for baggrundsbilleder bør være så lille som muligt, da lagring og indlæsning af store filer kan have indflydelse på programmets funktionsmåde og ydeevne.
 
@@ -67,7 +68,7 @@ Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Bruge
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 
-Denne funktion gælder kun for Dynamics 365 for Operations version 1611. Da skærmlayouts i mange tilfælde kan bruges på tværs af flere skærmstørrelser og -opløsninger, kan brugere konfigurere deres layout og indhold til hver. POS-programmet vælger automatisk den nærmeste layoutstørrelse til enheden på starttidspunktet. Et skærmlayout kan også indeholde konfigurationer for både fuldstændige og kompakte enheder. Denne konfiguration giver en bruger mulighed for at blive knyttet til et enkelt skærmlayout, der fungerer på tværs af forskellige størrelser og formfaktorer i butikken. 
+Denne funktion gælder kun for Dynamics 365 for Retail version 1611. Da skærmlayouts i mange tilfælde kan bruges på tværs af flere skærmstørrelser og -opløsninger, kan brugere konfigurere deres layout og indhold til hver. POS-programmet vælger automatisk den nærmeste layoutstørrelse til enheden på starttidspunktet. Et skærmlayout kan også indeholde konfigurationer for både fuldstændige og kompakte enheder. Denne konfiguration giver en bruger mulighed for at blive knyttet til et enkelt skærmlayout, der fungerer på tværs af forskellige størrelser og formfaktorer i butikken. 
 
 **Moderne POS – Fuld** – Fulde layouts er typisk bedst til større skærme som pc-skærme eller tablets. Brugerne kan vælge, hvilke elementer i brugergrænsefladen der skal medtages, bestemme deres størrelse og placering, og konfigurere deres detaljerede egenskaber. Fulde layouts understøtter både stående og liggende konfigurationer. 
 
@@ -77,11 +78,11 @@ Denne funktion gælder kun for Dynamics 365 for Operations version 1611. Da skæ
 
 Hver layoutstørrelse inden for et skærmlayout skal konfigureres ved hjælp af skærmlayoutdesigneren. Designeren giver brugerne mulighed for at angive og konfigurere elementer i brugergrænsefladen på transaktionsskærmbilledet. Skærmlayoutdesigneren bruger ClickOnce til at hente, installere og starte den nyeste version af programmet, hver gang brugeren åbner den. Sørg for at kontrollere browserkravene ved brug af ClickOnce, til nogle browsere, f.eks. Chrome, kræves udvidelser. 
 
-**Numerisk tastatur** – Det numeriske tastatur er det vigtigste brugerinput i transaktionsskærmbilledet på POS-enheden. Det kan konfigureres til at vise hele tastaturet på skærmen, hvilket er ideelt til touchskærme, eller kun inputfeltet, som kan bruges sammen med et fysisk tastatur. Indstillingerne for numerisk tastatur er kun tilgængelige i det fulde layout. I Dynamics 365 for Operations version 1611 har kompakte layouts altid det fulde numeriske tastatur tilgængeligt fra transaktionsskærmbilledet.
+**Numerisk tastatur** – Det numeriske tastatur er det vigtigste brugerinput i transaktionsskærmbilledet på POS-enheden. Det kan konfigureres til at vise hele tastaturet på skærmen, hvilket er ideelt til touchskærme, eller kun inputfeltet, som kan bruges sammen med et fysisk tastatur. Indstillingerne for numerisk tastatur er kun tilgængelige i det fulde layout. I Dynamics 365 for Retail version 1611 har kompakte layouts altid det fulde numeriske tastatur tilgængeligt fra transaktionsskærmbilledet.
 
-**Panelet Totaler** – Panelet totaler kan konfigureres med én eller to kolonner til at vise felter, f.eks. linjeantal, rabatbeløb, gebyrer, subtotal og moms. I Dynamics 365 for Operations version 1611 understøtter kompakte layouts kun en enkelt totalkolonne. 
+**Panelet Totaler** – Panelet totaler kan konfigureres med én eller to kolonner til at vise felter, f.eks. linjeantal, rabatbeløb, gebyrer, subtotal og moms. I Dynamics 365 for Retail version 1611 understøtter kompakte layouts kun en enkelt totalkolonne. 
 
-**Kvittering** – Kvitteringspanelet indeholder salgslinjerne, betalingslinjerne og leveringsoplysningerne for de produkter og tjenester, der er behandlet i POS-enheden. Brugerne kan angive kolonner, bredder og placering. I kompakte layouts i Dynamics 365 for Operations version 1611 kan du også konfigurere yderligere oplysninger, der vises i rækken under hovedlinjen. 
+**Kvittering** – Kvitteringspanelet indeholder salgslinjerne, betalingslinjerne og leveringsoplysningerne for de produkter og tjenester, der er behandlet i POS-enheden. Brugerne kan angive kolonner, bredder og placering. I kompakte layouts i Dynamics 365 for Retail version 1611 kan du også konfigurere yderligere oplysninger, der vises i rækken under hovedlinjen. 
 
 **Kundekort** – Kundekortet viser oplysninger om den kunde, der i øjeblikket er knyttet til transaktionen. Kundekortet kan konfigureres til at skjule eller få vist yderligere oplysninger. 
 
@@ -89,7 +90,7 @@ Hver layoutstørrelse inden for et skærmlayout skal konfigureres ved hjælp af 
 
 **Billede** – Billedkontrolelementet kan bruges til at vise butikslogoet eller et andet branding-billede på transaktionsskærmbilledet. Billedkontrolelementet er kun tilgængeligt for fulde layouts. 
 
-**Anbefalede produkter** – Hvis det er konfigureret for miljøet, viser kontrolelementet for anbefalede produkter produktforslag baseret på maskinel indlæring. Kontrolelementet for anbefalede produkter er kun tilgængeligt for fulde layouts i Dynamics 365 for Operations version 1611. **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, der giver brugerne mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
+**Anbefalede produkter** – Hvis det er konfigureret for miljøet, viser kontrolelementet for anbefalede produkter produktforslag baseret på maskinel indlæring. Kontrolelementet for anbefalede produkter er kun tilgængeligt for fulde layouts i Dynamics 365 for Retail version 1611. **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, der giver brugerne mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
 
 <a name="see-also"></a>Se også
 --------

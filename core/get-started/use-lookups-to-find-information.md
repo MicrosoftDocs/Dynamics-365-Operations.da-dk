@@ -1,15 +1,15 @@
 ---
 title: Brug opslag til at finde oplysninger
-description: "I Microsoft Dynamics 365 for Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet."
+description: "I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I Microsoft Dynamics 365 for Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.  
+I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.  
 
 <a name="responsive-lookups"></a>Responsive opslag
 ------------------
 
-I tidligere versioner af Dynamics 365 for Operations skulle en bruger foretage en eksplicit handling for at åbne rullemenuen, når der blev kommunikeret med et opslagskontrolelement. Dette skete måske ved at skrive en stjerne (\*) i kontrolelementet for at filtrere opslaget baseret på den aktuelle værdi af kontrolelementet, ved at klikke på rullelisten eller ved hjælp af genvejstasten **Alt**+**pil ned**. Opslagskontrolelementer er blevet ændret på følgende måder for bedre at passe med webpraksis:
+I tidligere versioner af Finance and Operations skulle en bruger foretage en eksplicit handling for at åbne rullemenuen, når der blev kommunikeret med et opslagskontrolelement. Dette skete måske ved at skrive en stjerne (\*) i kontrolelementet for at filtrere opslaget baseret på den aktuelle værdi af kontrolelementet, ved at klikke på rullelisten eller ved hjælp af genvejstasten **Alt**+**pil ned**. Opslagskontrolelementer er blevet ændret på følgende måder for bedre at passe med webpraksis:
 
 -   Opslagsrullemenuer åbnes nu automatisk efter en lille pause i indtastningen, og rullelisteindholdet filtreres på basis af værdien af opslagskontrolelementet.
     -   Bemærk, at den gamle funktionsmåde med automatisk åbning af rullemenuen, når du har skrevet en stjerne (\*), er blevet frarådet.
@@ -58,7 +58,7 @@ Selvom fokus er stadig i opslagskontrolelementet, kan du også bruge tasterne **
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Indtastning af mere end id'er
-Når de indtaster data, er det naturligt for brugerne at forsøge at identificere et objekt, som en debitor eller kreditor, ved hjælp navnet i stedet for en identifikator, der repræsenterer objektet. I den aktuelle version af Dynamics 365 for Operations tillader mange (men ikke alle) opslag nu kontekstafhængig dataindtastning. Denne effektive funktion tillader brugeren at skrive id'et eller det tilsvarende navn i opslagskontrolelementet. 
+Når de indtaster data, er det naturligt for brugerne at forsøge at identificere et objekt, som en debitor eller kreditor, ved hjælp navnet i stedet for en identifikator, der repræsenterer objektet. I den aktuelle version af Finance and Operations tillader mange (men ikke alle) opslag nu kontekstafhængig dataindtastning. Denne effektive funktion tillader brugeren at skrive id'et eller det tilsvarende navn i opslagskontrolelementet. 
 
 Tænk f.eks. på feltet **Debitorkonto**, når du opretter en salgsordre. Dette felt viser **konto-id'et** for kunden, men brugerne foretrækker normalt at angive et **kontonavn** i stedet for et **konto-id** for dette felt, når de opretter en salgsordre, f.eks. "Forest Wholesales" i stedet for "US-003".
 

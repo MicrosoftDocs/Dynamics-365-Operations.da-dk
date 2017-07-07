@@ -3,14 +3,14 @@ title: Terminologi for omkostningsregnskab
 description: "Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet.
 
 **Driftsregnskab**
 
-I omkostningsregnskabet kan du indsamle data fra forskellige kilder, f.eks. finans, underfinanskonti, budgetter og statistiske oplysninger. Du kan derefter analysere, opsummere og evaluere omkostningsdata, så ledelsen kan tage de bedst mulige beslutninger om prisopdateringer, budgetter, omkostningsstyring og så videre. De kildedata, der bruges til omkostningsanalyse, behandles uafhængigt af hinanden i omkostningsregnskab. Opdateringer i omkostningsregnskabet påvirker derfor ikke kildedataene. Når du indsamler omkostningsdata fra forskellige kilder, og især når du importerer hovedkontiene fra finansmodulet i Microsoft Dynamics 365 for Operations som omkostningselementer, er der dog dataredundans, fordi de samme data findes i både finansmodulet og omkostningsregnskabet. Denne redundans er påkrævet, fordi du bruger økonomistyring til ekstern rapportering og omkostningsregnskab til intern afrapportering.
+I omkostningsregnskabet kan du indsamle data fra forskellige kilder, f.eks. finans, underfinanskonti, budgetter og statistiske oplysninger. Du kan derefter analysere, opsummere og evaluere omkostningsdata, så ledelsen kan tage de bedst mulige beslutninger om prisopdateringer, budgetter, omkostningsstyring og så videre. De kildedata, der bruges til omkostningsanalyse, behandles uafhængigt af hinanden i omkostningsregnskab. Opdateringer i omkostningsregnskabet påvirker derfor ikke kildedataene. Når du indsamler omkostningsdata fra forskellige kilder, og især når du importerer hovedkontiene fra finansmodulet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som omkostningselementer, er der dog dataredundans, fordi de samme data findes i både finansmodulet og omkostningsregnskabet. Denne redundans er påkrævet, fordi du bruger økonomistyring til ekstern rapportering og omkostningsregnskab til intern afrapportering.
 
 **Finanspost for omkostningsregnskab**
 

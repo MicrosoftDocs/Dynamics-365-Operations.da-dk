@@ -1,15 +1,15 @@
 ---
 title: Enkelt bilag med flere debitor- eller kreditorposter
-description: "Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Operations, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling."
+description: "Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, så derfor fraråder vi denne metode til regnskaber grundet den regnskabsmæssige virkning af udligningsbehandling."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b1038ea950141f0e7d4678cac9edd3b0bd5beb6f
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Operations, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling. 
+Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, så derfor fraråder vi denne metode til regnskaber grundet den regnskabsmæssige virkning af udligningsbehandling. 
 
 Nogle almindelige eksempler på, hvor ét bilag bruges til flere debitorer eller kreditorer, omfatter saldooverførsler mellem debitorer og modregning mellem debitorer og kreditorer i samme organisation. 
 
@@ -162,7 +162,7 @@ Nu, når INV2 er betalt, bliver følgende post oprettet. Bemærk, at valutakurst
 | 14000056    | 200110-001- | Kreditorsaldo     |                                          | -2,00                                   |
 
 ## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Ét bilag for saldooverførsler og modregningsscenarier
-To almindelige scenarier, der anvender et bilag, der indeholder flere debitorer eller kreditorer, omfatter saldooverførsler fra en debitor/kreditor til en anden debitor/kreditor og modregnings af en debitor og kreditor, der er den samme organisation. Følgende to eksempler illustrerer den foretrukne metode til at angive disse scenarier i Dynamics 365 for Operations, som et alternativ til at angive dem i ét bilag. 
+To almindelige scenarier, der anvender et bilag, der indeholder flere debitorer eller kreditorer, omfatter saldooverførsler fra en debitor/kreditor til en anden debitor/kreditor og modregnings af en debitor og kreditor, der er den samme organisation. Følgende to eksempler illustrerer den foretrukne metode til at angive disse scenarier i Finance and Operations som et alternativ til at angive dem i ét bilag. 
 
 A *saldooverførsel* er et bilag med flere debitorer, der er angivet med henblik på overførsel af saldoen fra en debitor til en anden debitor (samme for kreditorer). Denne situation kan opstå, når ansvaret for betaling af fakturaen skifter til en anden part, f.eks. et underordnet firma, der flytter ansvaret for et moderselskab. 
 
@@ -176,7 +176,7 @@ For at illustrere dette forudsættes følgende salg til kunden ACME. Følgende r
 | 401100-002-023-    | Indtægter          |           | 100        |
 | 130100-002-        | Debitorsaldo | 100       |            |
 
-Derefter skal brugeren overføre den forfaldne saldo fra ACME til forsikringsselskabet i ét bilag i debitorbetalingskladden. Forsikringsselskabet i Dynamics 365 for Operations er konfigureret som kundeforsikring.
+Derefter skal brugeren overføre den forfaldne saldo fra ACME til forsikringsselskabet i ét bilag i debitorbetalingskladden. Forsikringsselskabet i Finance and Operations er konfigureret som kundeforsikring.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|

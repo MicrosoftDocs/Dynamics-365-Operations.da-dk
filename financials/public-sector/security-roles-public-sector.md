@@ -3,7 +3,7 @@ title: Sikkerhedsroller i den offentlige sektor
 description: "I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: UserRequestListPage
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c47486fa12a985797373c9d0e3b766fd69157366
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7ab18fef7d2373fcc682ecacf83a981f067fae99
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -35,10 +35,10 @@ ms.lasthandoff: 05/25/2017
 
 I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
 
-Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til Microsoft Dynamics 365 for Operations. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
+Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
 
 ## <a name="what-are-the-prerequisites-for-assigning-security-roles-in-the-public-sector"></a>Hvad er forudsætningerne for tildeling af sikkerhedsroller i den offentlige sektor?
-Brugerne skal findes i Microsoft Dynamics 365 for Operations, før du kan tildele dem roller. Selvom du bruger automatisk rolletildeling, føjes brugerne selv ikke automatisk til Microsoft Dynamics 365 for Operations.
+Brugerne skal findes i Finance and Operations, før du kan tildele dem roller. Selvom du bruger automatisk rolletildeling, føjes brugerne selv ikke automatisk til Finance and Operations.
 
 ## <a name="which-roles-do-i-have-to-assign"></a>Hvilke roller skal jeg tildele?
 Når brugerne er i systemet, er der to roller, som du muligvis skal konfigurere for offentlige organisationer:
@@ -48,7 +48,7 @@ Når brugerne er i systemet, er der to roller, som du muligvis skal konfigurere 
 
 ### <a name="what-is-the-project-manager---public-sector-role"></a>Hvad er Projektleder – Offentlig sektor-rollen?
 
-Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel rollen foruden rollen **Projektleder** for at give projektledere adgang til projektstyringsfunktioner. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Microsoft Dynamics 365 for Operations.
+Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel rollen foruden rollen **Projektleder** for at give projektledere adgang til projektstyringsfunktioner. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Finance and Operations.
 
 | Navn på arbejdsopgave                                                         | Arbejdsopgaves AOT-navn                           | Beskrivelse af programadgangsrettighed                                                                |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ Sikkerhedsrollen **Projektleder – Offentlig sektor** understøtter de offentli
 
 ### <a name="what-is-the-purchasing-agent---public-sector-role"></a>Hvad er Indkøbsagent - den offentlige sektor-rollen?
 
-Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel denne rolle foruden rollen **Indkøbsassistent** for at give indkøbsassistenter adgang til købsfunktionalitet. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Microsoft Dynamics 365 for Operations.
+Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offentlige sektor-udvidelser til projektstyring. Tildel denne rolle foruden rollen **Indkøbsassistent** for at give indkøbsassistenter adgang til købsfunktionalitet. Denne sikkerhedsrolle tildeles som standard følgende opgaver i Finance and Operations.
 
 | Navn på arbejdsopgave                                                       | Arbejdsopgaves AOT-navn                            | Beskrivelse af programadgangsrettighed                                                                                        |
 |-----------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -102,7 +102,7 @@ Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere
 <a name="see-also"></a>Se også
 --------
 
-[Rollebaseret sikkerhed](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+[Rollebaseret sikkerhed](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security)
 
 
 

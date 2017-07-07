@@ -3,7 +3,7 @@ title: "Grænseflade til Report Designer"
 description: I denne artikel forklares, hvordan du navigerer gennem Report Designer, og hvordan du bruger de forskellige indstillinger til at opfylde dine specifikke krav.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -53,7 +53,7 @@ Menuen **Filer** er tilgængelig for alle brugere og omfatter følgende kommando
 | Gem som                           | Gem den aktuelle rækkedefinition, kolonnedefinition, rapporteringstrædefinition eller rapportdefinition under et nyt navn.                                                                            |
 | Egenskaber                        | Åbn dialogboksen **Egenskaber**, hvor du kan ændre navnet på og beskrivelsen af en rapport.                                                                                                   |
 | Generér                          | Generer den aktuelle rapport Denne kommando er tilgængelig fra en rapportdefinition.                                                                                                                 |
-| Vis rapport                       | Åbn den seneste version af den genererede rapport i Dynamics 365 for Operations. Denne kommando er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport.                                 |
+| Vis rapport                       | Åbn den seneste version af den genererede rapport i Finance and Operations. Denne kommando er tilgængelig fra en rapportdefinition, hvis du har oprettet mindst én rapport.                                 |
 | Seneste rapportdefinitioner         | Vis en liste over rapporter, der for nylig er oprettet eller ændret. Du kan derefter vælge en rapport på listen.                                                                                    |
 | Seneste rækkedefinitioner            | Vis en liste over rækkedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en rækkedefinition på listen.                                                                    |
 | Seneste kolonnedefinitioner         | Vis en liste over kolonnedefinitioner, der for nylig er oprettet eller ændret. Du kan derefter vælge en kolonnedefinition på listen.                                                              |
@@ -163,7 +163,7 @@ Menuen **Hjælp** er tilgængelig for alle brugere og omfatter følgende kommand
 
 | Kommando | Betegnelse                                                  |
 |---------|--------------------------------------------------------------|
-| Hjælp    | Åbn Dynamics 365 for Operations siden med Hjælp-emnet for økonomirapportering. |
+| Hjælp    | Åbn Finance and Operations-siden med Hjælp-emnet om økonomirapportering. |
 |         |                                                              |
 
 ## <a name="report-designer-toolbar-buttons"></a>Knapper på værktøjslinjen i Report Designer

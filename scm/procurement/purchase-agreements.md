@@ -3,14 +3,14 @@ title: "Købsaftaler"
 description: "Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c100bd34725c67710d0f473a001c73705600ba79
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 4266ba2b19c3bd31a10301dd2290cd4b4fa53bdb
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -80,7 +80,7 @@ Når du bekræfter en købsaftale, gemmes den aktuelle version af købsaftalen i
 Når du opretter en indkøbsordre, kan du anvende en købsaftale til den. Oplysninger fra betingelserne for aftalen, såsom betalingsbetingelser, leveringsbetingelser og leveringsadresse, kopieres derefter til hovedet i indkøbsordren. Hvis indkøbsordren indeholder en eller flere ordrelinjer for produkter og kategorier, der er omfattet af aftalen, bruges priser og rabatter fra købsaftalen på disse linjer. Beløbet eller antallet på ordrelinjen bidrager til opfyldelse af forpligtelsen i købsaftalen. Samme indkøbsordre kan indeholde både linjer, der ikke er relateret til en købsaftale, og linjer, der har en forpligtelse til en købsaftale.  
 
 Du kan kun vælge en købsaftale, når du opretter en indkøbsordre. Du kan ikke vælge en købsaftale, når indkøbsordren er blevet oprettet.  
-I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Microsoft Dynamics 365 for Operations automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
+I nogle situationer, hvor indkøbsordrer oprettes indirekte, kan du styre, om Finance and Operations automatisk skal søge efter relevante købsaftaler. Du kan f.eks. gøre dette, hvis du automatisk justerer planlagte indkøbsordrer eller opretter købsordrer, der er baseret på salgsordrer.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Købsaftaler og samhandel internt i firmaet
 Der kan oprettes interne handelsforhold mellem kreditorkonti og debitorkonto, som er i forskellige juridiske enheder. Når der oprettes en salgsordre eller indkøbsordre for en af parterne, oprettes en intern ordretilknytning. I ordretilknytningen oprettes salgsordren og indkøbsordren i de relevante juridiske enheder.  

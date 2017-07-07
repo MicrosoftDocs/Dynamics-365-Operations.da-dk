@@ -3,26 +3,27 @@ title: Infokoder
 description: Denne artikel indeholder en oversigt over oplysninger om infokoder, infokodegrupper, og hvordan de bruges.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -41,8 +42,8 @@ Infokoder giver mulighed for at registrere data ved et kasseapparat (POS). Du ka
 -   Sælge et produkt som almindeligt salg, et salg med rabat eller et gratis produkt.
 -   Bede kassereren om at angive en værdi eller vælge fra en liste med underkoder, når kasseapparatets pengeskuffe åbnes, uden at der sælges noget.
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>Infokodegruppe i Detail og handel
-I Dynamics 365 for Operations - Retail kan du oprette grupper af infokoder. Infokodegrupper giver fleksibilitet ved at give dig mulighed for at definere færre infokoder og derefter bruge dem på en mere alsidig måde. Du kan bruge infokodegrupper på følgende måder:
+## <a name="info-codes-group"></a>Infokodegruppe
+I Dynamics 365 for Retail kan du oprette grupper af infokoder. Infokodegrupper giver fleksibilitet ved at give dig mulighed for at definere færre infokoder og derefter bruge dem på en mere alsidig måde. Du kan bruge infokodegrupper på følgende måder:
 -   Definere færre infokoder og nemt bruge dem igen. Infokoder, der er inkluderet i infokodegrupper, har ingen foruddefinerede afhængigheder i forhold til andre infokoder. Du kan medtage den samme infokode i flere infokodegrupper og derefter bruge prioritering for at vise de samme infokoder i en rækkefølge, der giver mening i en given situation.
 -   Sammenkæd infokoder med andre infokoder eller infokodegrupper for at indsamle oplysninger om et produkt eller en postering uden at skulle definere en separat infokode eller sammenkædet infokode for hvert scenarie.
 

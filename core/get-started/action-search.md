@@ -1,15 +1,16 @@
 ---
 title: "Handlingssøgning"
-description: "I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Operations. Med handlingssøgning kan du finde og køre handlinger på en side."
+description: "I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,14 +31,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
+I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
 
 <a name="introduction"></a>Introduktion
 ------------
 
-Siderne i Microsoft Dynamics 365 for Operations viser primært kommandoer i handlingsruder, både standardhandlingsruden, som vises øverst på en side, og værktøjslinjerne, der vises i forskellige afsnit af siden. I tidligere versioner kan du med en nøgletipfunktion hurtigt få adgang til en knap i en handlingsrude ved at trykke på Alt-tasten og derefter en række bogstaver. 
+Siderne i Microsoft Dynamics 365 for Finance and Operations viser primært kommandoer i handlingsruder, både standardhandlingsruden, som vises øverst på en side, og værktøjslinjerne, der vises i forskellige afsnit af siden. I tidligere versioner kan du med en nøgletipfunktion hurtigt få adgang til en knap i en handlingsrude ved at trykke på Alt-tasten og derefter en række bogstaver. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den aktuelle version af Dynamics 365 for Operations er nøgletip dog ikke længere tilgængelige, men er blevet erstattet af handlingssøgningsfunktionen. Med denne nye funktion kan du hurtigt søge efter og køre en knap fra alle synlige handlingsruder.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den aktuelle version af Finance and Operations er nøgletip dog ikke længere tilgængelige, men er blevet erstattet af handlingssøgningsfunktionen. Med denne nye funktion kan du hurtigt søge efter og køre en knap fra alle synlige handlingsruder.
 
 ## <a name="using-action-search"></a>Brug af handlingssøgning
 Hvis du vil bruge handlingssøgefunktionen, skal du følge disse trin.
@@ -53,7 +54,7 @@ Når knappen er kørt, returneres fokus til din sidste position på siden, så d
 Du kan også starte handlingssøgning ved at trykke på Ctrl+/ eller Alt+Q. Tryk på tastaturgenvejen igen for at returnere fokus til din sidste position på siden.
 
 ## <a name="understanding-the-results-list"></a>Om listen over resultater
-Ofte skal du i Dynamics 365 for Operations kende både placeringen af en knap og dens sammenhæng for fuldt ud at forstå formålet med denne knap. Derfor vises yderligere oplysninger for hvert element på listen over resultater for at hjælpe dig med at forstå, præcis hvilke knapper der vises på listen. Især vises knappens "sti". Stien kan indeholde etiketter til de følgende elementer i brugergrænsefladen, alt efter hvad der er relevant:
+Ofte skal du i Finance and Operations kende både placeringen af en knap og dens sammenhæng for fuldt ud at forstå formålet med denne knap. Derfor vises yderligere oplysninger for hvert element på listen over resultater for at hjælpe dig med at forstå, præcis hvilke knapper der vises på listen. Især vises knappens "sti". Stien kan indeholde etiketter til de følgende elementer i brugergrænsefladen, alt efter hvad der er relevant:
 
 -   Fanen Handlingsrude
 -   Knapgruppe
@@ -70,7 +71,7 @@ I det forrige eksempel viste handlingssøgning resultater fra standardhandlingsr
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøgning vs. navigationsøgning
-Hvor handlingssøgning har til formål at finde og udføre handlinger på en side, er der en separat søgemekanisme til at søge efter og navigere til sider i Dynamics 365 for Operations. Du kan få flere oplysninger om denne funktion i artiklen [Navigationssøgning](navigation-search.md).
+Hvor handlingssøgning har til formål at finde og udføre handlinger på en side, er der en separat søgemekanisme til at søge efter og navigere til sider i Finance and Operations. Du kan få flere oplysninger om denne funktion i artiklen [Navigationssøgning](navigation-search.md).
 
 
 

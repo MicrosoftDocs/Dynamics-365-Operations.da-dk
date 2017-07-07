@@ -3,14 +3,14 @@ title: "Oversigt over indkøbsrekvisition"
 description: "Denne artikel beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -40,7 +40,7 @@ Når en indkøbsrekvisition er godkendt, kan den bruges til at generere en indk�
 ## <a name="creating-purchase-requisitions"></a>Oprette indkøbsrekvisitioner
 Du kan oprette en indkøbsrekvisition på siden **Mine indkøbsrekvisitioner** og vælge de varer og tjenester, som du har brug for. Du kan vælge varer fra et indkøbskatalog, din organisation har oprettet, eller du kan anmode om varer, som ikke findes i et katalog, ved at vælge en indkøbskategori og indtast produktoplysningerne.  
 
-Før du kan sende en indkøbsrekvisition til gennemsyn, skal der konfigureres en arbejdsgang i Microsoft Dynamics 365 for Operations. Du bruger en arbejdsgang til at bevæge en indkøbsrekvisition gennem gennemsynsprocessen fra den første status som **Kladde** til den endelige status som **Godkendt**.
+Før du kan sende en indkøbsrekvisition til gennemsyn, skal der konfigureres en arbejdsgang i Microsoft Dynamics 365 for Finance and Operations. Du bruger en arbejdsgang til at bevæge en indkøbsrekvisition gennem gennemsynsprocessen fra den første status som **Kladde** til den endelige status som **Godkendt**.
 
 ### <a name="purchase-requisition-statuses"></a>Status for indkøbsrekvisition
 
@@ -143,7 +143,7 @@ I indkøbspolitikker kan du styre de tilgængelige indkøbsrekvisitionsformål, 
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisitioner med formålet forbrug
 
-En rekvisition, der har formålet forbrug, repræsenterer et behov for varer eller tjenester, der skal bruges internt i organisationen. Det behov, der er oprettet af denne type rekvisitionen, opfyldes altid af en indkøbsordre. Hvis Microsoft Dynamics 365 for Operations er konfigureret til at oprette indkøbsordrer automatisk, oprettes der indkøbsordrer, når indkøbsrekvisitionen er godkendt.
+En rekvisition, der har formålet forbrug, repræsenterer et behov for varer eller tjenester, der skal bruges internt i organisationen. Det behov, der er oprettet af denne type rekvisitionen, opfyldes altid af en indkøbsordre. Hvis Microsoft Dynamics 365 for Finance and Operations er konfigureret til at oprette indkøbsordrer automatisk, oprettes der indkøbsordrer, når indkøbsrekvisitionen er godkendt.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisitioner med formålet genopfyldning
 

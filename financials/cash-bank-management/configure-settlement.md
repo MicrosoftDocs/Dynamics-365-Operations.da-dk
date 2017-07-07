@@ -3,7 +3,7 @@ title: Konfigurere udligning
 description: "Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I denne artikel beskrives de parametre, der bruges til udligning for både Kreditor og Debitor."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/25/2017
 
 Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I denne artikel beskrives de parametre, der bruges til udligning for både Kreditor og Debitor. 
 
-Følgende parametre påvirker den måde, udligninger behandles på i Microsoft Dynamics 365 for Operations. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
+Følgende parametre påvirker den måde, udligninger behandles på i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
 
 -   **Automatisk udligning** – Angiv denne indstilling til **Ja**, hvis en transaktion automatisk skal udlignes mod andre åbne poster, når den bogføres. Hvis denne indstilling er angivet til **Nej**, kan brugerne manuelt kan udligne posteringer, når de angiver betalinger eller senere ved hjælp af siden **Udligne transaktioner**.
 -   **Håndtering af kasserabat** – Angiv, hvordan et [kasserabat håndteres, når en faktura er overbetalt](cash-discount-handling-overpayments.md). Kasserabatten for en overbetaling kan reduceres, den kan blive behandlet som en forskel, eller den kan forblive på kontoen for debitoren eller kreditoren.
