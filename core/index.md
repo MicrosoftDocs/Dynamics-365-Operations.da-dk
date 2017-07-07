@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
-ms.openlocfilehash: 8703b3bc5642e6dbe9dd399ced5af6da25f9b226
+ms.sourcegitcommit: bb0700ad317fa8faf5dc83ea523dd151f0f4a811
+ms.openlocfilehash: 713178e79000e4358104038295452db0ba025195
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -40,22 +40,22 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finans</h3>
-<p>Overholdelse</p>
+<td><h3>Financials</h3>
+<p><a href="../financials/general-ledger/audit-policy-rules">Overholdelse</a></p>
 <p>Økonomistyring</p>
-<ul><li><a href="../financials/accounts-payable/accounts-payable">Kreditor</a></li>
+<ul style="list-style-type:none">
+<li><a href="../financials/accounts-payable/accounts-payable">Kreditor</a></li>
 <li><a href="../financials/accounts-receivable/accounts-receivable">Debitor</a></li>
 <li><a href="../financials/budgeting/budgeting-overview">Budgettering</a></li>
 <li><a href="../financials/cash-bank-management/cash-bank-management">Kontant- og bankstyring</a></li>
 <li><a href="../financials/cost-accounting/cost-accounting-home-page">Driftsregnskab</a></li>
 <li><a href="../financials/fixed-assets/fixed-assets">Anlægsaktiver</a></li>
 <li><a href="../financials/general-ledger/general-ledger">Finans</a></li>
-
 <li><a href="../financials/public-sector/public-sector-functionality">Offentlig sektor</a></li>
 <li><a href="../dev-itpro/lcs-solutions/country-region">Regionale lovpligtige funktioner</a></li></ul>
 <p><a href="../financials/project-management/overview-project-management-accounting">Projektstyring</a></p>
 <H3>Personale</h3>
-  <ul>
+  <ul style="list-style-type:none">
 <li><a href="hr/manage-recruiting-process">Rekruttering</a></li>
 <li><a href="hr/localizations/noam-usa-payroll">Amerikanske lønopgaver</a></li>
 </ul>
@@ -63,19 +63,19 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 <p><a href="../supply-chain/cost-management/costing-sheets">Omkostningsstyring</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Lagerstyring</a></p>
 <p>Logistik</p>
-<ul><li><a href="../supply-chain/transportation/transportation-management-overview">Transportstyring</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">Lokationsstyring</a></li></ul></li>
+<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">Transportstyring</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">Lokationsstyring</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planlægning</a></p>
   <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Administration af produktoplysninger</a></p>
   <p><a href="../supply-chain/production-control/create-production-orders">Produktionsstyring</a></p>
 <p>Ordrestyring</p>
-  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Indkøb og forsyning</a></li>
+  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Indkøb og forsyning</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Salg og marketing</a></li></ul>
 </td>
 <td>
 <h3>Unified Operations-platform</h3>
 <p>Intelligence</p>
-<ul><li><a href="../dev-itpro/analytics/analytics">Analyser</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">Analyser</a></li>
  <li><a href="../dev-itpro/analytics/document-reporting-services">Forretningsdokumenter</a></li>
 <li><a href="../dev-itpro/analytics/financial-reporting-intro">Økonomirapportering</a></li>
 <li><a href="../dev-itpro/analytics/general-electronic-reporting">Lovpligtig rapportering</a></li></ul>
@@ -83,33 +83,34 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 <p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilplatform</a></p>
 
  <p>Funktioner til udviklere</p>
-<ul>
-<li><a href="../dev-itpro/continuous-delivery-home-page">Fortløbende levering</a></li>
+<ul style="list-style-type:none">
+<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Fortløbende levering</a></li>
 <li><a href="../dev-itpro/get-started/demo-data">Demodata</a></li>
 <li><a href="../dev-itpro/dev-tools/developer-home-page">Udviklerværktøjer</a></li>
 <li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Udvidelsesmuligheder</a></li>
 <li><p>Integration</p>
-<ul><li><a href="../dev-itpro/data-entities/data-entities">Dataenheder</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">Dataenheder</a></li>
 <li><a href="../dev-itpro/office-integration/office-integration">Office-integration</a></li></ul></li></ul>
 
 <p>Administrator-funktion<p>
-<ul>
-<li><a href="../get-started/onboarding-home">Onboarding af din organisation</a></li>
-<li><a href="../dev-itpro/deploy-demo-environment">Installation og vedligeholdelse</a></li>
+<ul style="list-style-type:none">
+<li><a href="../fin-and-ops/get-started/onboarding-home">Onboarding af din organisation</a></li>
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">Installation og vedligeholdelse</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Opgradering</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Datastyring</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organisationsadministration</a></li>
 <li><a href="../dev-itpro/sysadmin/system-administration-home-page">Systemadministration</a></li>
-<ul>
+</ul>
 </td>
 <td>
-<h3>Dynamics 365 for Talent</h3>
+<h3>Relaterede produkter</h3>
+<h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">Frynsegoder</a></p>
 <p><a href="../talent/performance-management-overview">Medarbejderudvikling og -uddannelse</a></p>
 <p><a href="../talent/questionnaires">Spørgeskema</a></p>
 
-<h3>Dynamics 365 for Retail</h3>
+<h4>Dynamics 365 for Retail</h4>
 <p><a href="../retail/call-center-functionality">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels">Konfiguration og styring af kanal</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS og Cloud POS</p>

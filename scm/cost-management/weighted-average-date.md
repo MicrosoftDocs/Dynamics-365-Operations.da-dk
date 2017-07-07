@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Gennemsnitskostdatoen er en lagermodel, der er baseret på princippet om vægtet gennemsnit. For princippet om vægtet princip værdisættes afgange fra lageret til gennemsnitsværdien for de varer, der modtages på lageret hver enkelt dag i lagerlukningsperioden. Når du kører en lagerlukning ved brug af vægtet gennemsnitsdato, udlignes alle daglige tilgange mod en virtuel afgang. Denne virtuelle afgang indeholder den samlede modtagne mængde og værdi for denne dag. Denne virtuelle afgang har en tilsvarende virtuel tilgang, som tilgangene udlignes mod. På denne måde opnår alle afgange derfor samme gennemsnitskostpris. Den virtuelle afgang og virtuelle tilgang kan betragtes som en virtuel overførsel, som kaldes *lagerlukningsoverførsel efter vægtet gennemsnit*. 

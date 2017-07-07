@@ -6,22 +6,21 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
-ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: 25a9885a31871a19285cdd30987e3d1caa99bc04
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -54,15 +53,20 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 -   [Lovpligtig kontrol og kommunikation om opdateringer](regulatory-watch-communication.md)
 -   [Informere Microsoft om lovpligtige lande-/områdepåmindelser og spore status for lovmæssige funktioner](submit-localization-alerts.md)
 
+### <a name="dynamics-365-roadmap"></a>Dynamics 365 oversigt
+[Dynamics 365 oversigten](https://roadmap.dynamics.com/) giver et øjebliksbillede af, hvad vi arbejder på. Du kan bruge denne oversigt til at finde ud af, hvad der gøres almindeligt tilgængeligt, og hvad er under udvikling. Alle datoer og funktioner, der er under udvikling, er foreløbige, er baseret på aktuelle forventninger og kan ændres uden forudgående varsel.
+
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
-Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
+Med det elektroniske rapporteringsværktøj (ER) kan du konfigurere formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
 -   [Oversigt over elektronisk rapportering](../analytics/general-electronic-reporting.md)
 -   [Administrere livscyklus for konfiguration af elektronisk rapportering](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
 -   [Oprette en konfiguration af elektronisk rapportering](../analytics/electronic-reporting-configuration.md)
 -   [Udvide listen over elektroniske rapporteringsfunktioner](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Destinationer for elektronisk rapportering](../analytics/electronic-reporting-destinations.md)
 -   [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Importér konfigurationer for elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Konfigurere elektronisk rapportering for at trække data ind i Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Opgaveguider
 Opgaveguider er tilgængelige i produkthjælperuden, og de indeholder en guidet gennemgang af vigtige forretningsprocesser. Du kan åbne en opgaveguide for at læse trinnene i en forretningsproces, eller du kan afspille en opgaveguide for at gennemgå en forretningsproces og indtaste data.
@@ -83,9 +87,10 @@ I følgende afsnit vises ressourcer efter land/område.
 
 ### <a name="austria"></a>Østrig
 
--   [Halvårlig afskrivning](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
--   [Emballagegebyrer](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
--   [Momsopgørelse](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Halvårlig afskrivning](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
+- [Emballagegebyrer](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
+- [Indkøbsafgifter](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
+- [Momsopgørelse](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgien
 
@@ -130,7 +135,6 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Halvårlig afskrivning på kassation af anlægsaktiver i Tjekkiet](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Midlertidigt stop af afskrivning (helligdage)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [Afskrivningsmetoder for anlægsaktiver i Tjekkiet](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
-
 -   [Bogføre præanskaffelsen af et anlægsaktiv](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Momsopgørelse for Tjekkiet](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Momsrapportering ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -144,30 +148,39 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Kassation af anlægsaktiver](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### <a name="europe"></a>Europa
--   [Forskudshavere](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
--   [Redigere faktura id'er på salgsordrer](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
--   [EU-indførselscertifikater](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
--   [Rapportering til EU-listesystemet](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
--   [Kursreguleringer](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
--   [Filformater for betalingsmåder](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
--   [Kassation af anlægsaktiver for Estland og Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
--   [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
--   [Nummerering af faktura og følgeseddel for Letland og Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Deadlines for fakturaudstedelse](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
--   [OIOUBL-standarder](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
--   [Rapport om indbetalingskort](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
--   [Kontantbeholdning](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
--   [Bogføre præanskaffelsen af et anlægsaktiv](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Postnumre](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
--   [Registrerings-id'er](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
--   [Oversigt over SEPA-kreditoverførsel](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
--   [Oversigt over SEPA Direct Debit](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
--   [Konfigurere underskrivere til trykte formularer](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [Splitperioder i periodiske kladder](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Opdatere, hvordan beløb vises på rapporter og dokumenter](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
--   [Valutakurser for moms](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
--   [Momsrapportering for Europa](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
--   [Se posteringer på udligning](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Forskudshavere](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
+- [Forskudshavertransaktioner](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
+- [Avanceret fakturering](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
+- [Bankafstemning](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
+- [Korrigerende fakturering](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
+- [Oprette og bogføre periodiske kladder](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
+- [Redigere faktura-id'er på salgsordrer](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+- [EU-indførselscertifikater](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
+- [Rapportering til EU-listesystemet](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
+- [Kursreguleringer](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
+- [Filformater for betalingsmåder](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
+- [Kassation af anlægsaktiver for Estland og Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
+- [Lagerkladderapporter](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
+- [Nummerering af faktura og følgeseddel for Letland og Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+- [Deadlines for fakturaudstedelse](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+- [OIOUBL-standarder](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+- [Rapport om indbetalingskort](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
+- [Kontantbeholdning](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [Bogføre præanskaffelsen af et anlægsaktiv](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+- [Postnumre](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
+- [Registrerings-id'er](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
+- [Modtagermoms](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
+- [Oversigt over SEPA-kreditoverførsel](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
+- [Oversigt over SEPA Direct Debit](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
+- [Konfigurere debitor- og kreditorkompensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [Konfigurere underskrivere til trykte formularer](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Momsvejledninger](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
+- [Opdatere, hvordan beløb vises på rapporter og dokumenter](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
+- [Valutakurser for moms](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
+- [Momsregistrere posteringer for Østeuropa](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
+- [Momsrapportering](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
+- [Se posteringer på udligning](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
 
 ### <a name="france"></a>Frankrig
 -   [Kronologiske faktura- og bilagsnumre](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -180,6 +193,7 @@ I følgende afsnit vises ressourcer efter land/område.
 #### <a name="public-sector"></a>Offentlig sektor
    -   [Forpligtelser i den offentlige sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
    -   [Mandats de paiement i den offentlige sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
+   -   [Indkøb og forsyning](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
    -   [Regnskab for offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Kreditorfakturabetaling på hold](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
@@ -205,22 +219,21 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Bekræftelse af følgeseddeldato på fakturaer for Italien](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italienske momsregnskaber](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [Opdelt betaling af fakturaer, der er udstedt til den offentlige administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [A-skat](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [A-skat](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### <a name="japan"></a>Japan
 
--   [Bankens betalingsgebyrer, der dækkes af kreditorer](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--   [Konsoliderede fakturaer](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
-
-#### <a name="fixed-assets"></a>Anlægsaktiver
-   -  [Fordelingsregler for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
-   -  [Afskrivningsmetode med ligelig fordeling](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
-   -  [Afskrivning af anlægsaktiv](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-   -  [Administration af værdiforringelse af anlægsaktiv på pengegenererende enhed](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
-   -  [Konfigurere forpligtelse til afvikling af aktiver for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
-   -  [Konfigurere reduktionsposteringer for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--   [Betale en kreditor ved at påtegne en veksel](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--   [Fortløbende beregning af A-skat](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Bankens betalingsgebyrer, der dækkes af kreditorer](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
+-  [Konsoliderede fakturaer](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
+-  [Fordelingsregler for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
+-  [Afskrivningsmetode med ligelig fordeling](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
+-  [Afskrivning af anlægsaktiv](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+-  [Administration af værdiforringelse af anlægsaktiv på pengegenererende enhed](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
+-  [Importere postnumre](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
+-  [Konfigurere forpligtelse til afvikling af aktiver for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
+-  [Konfigurere reduktionsposteringer for anlægsaktiver](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
+-  [Betale en kreditor ved at påtegne en veksel](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
+-  [Fortløbende beregning af A-skat](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
 ### <a name="latvia"></a>Letland
 
@@ -254,6 +267,7 @@ I følgende afsnit vises ressourcer efter land/område.
 ### <a name="norway"></a>Norge
 
 -   [Nets-importformat](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
+-   [Momsopgørelse](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
 
 ### <a name="poland"></a>Polen
 
@@ -291,6 +305,7 @@ I følgende afsnit vises ressourcer efter land/område.
 ### <a name="sweden"></a>Sverige
 
 -   [Importere betalingsformater for Sverige](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
+-   [Kasseapparater for Sverige](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
 
 ### <a name="switzerland"></a>Schweiz
 
