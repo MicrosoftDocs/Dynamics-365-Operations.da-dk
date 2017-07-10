@@ -3,13 +3,13 @@ title: "Bedste fremgangsmåder til import af bilag ved hjælp af enheden Finansk
 description: "Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a1740f322972b1c37f23a0422fdcb4435253710
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b9a5c03584635908067bb7b623deba76f4ba3e18
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -51,16 +51,16 @@ De følgende afsnit beskriver virkningen af disse indstillinger og forklarer ogs
 ### <a name="journal-batch-number"></a>Kladdebatchnummer
 
 -   Indstillingen **Angivet på basis af-behandling** på enheden Finanskladde påvirker ikke den måde, kladdebatchnumre genereres på.
--   Hvis feltet **Kladdebatchnummer** er indstillet til **Auto-genereret**, oprettes der et nyt kladdebatchnummer for hver linje, der importeres. Denne funktionsmåde anbefales ikke. Indstillingen **Auto-genereret** findes i importprojektet under **Vis tilknytning**under fanen **Tilknytning af oplysninger**.
+-   Hvis feltet **Kladdebatchnummer** er indstillet til **Auto-genereret**, oprettes der et nyt kladdebatchnummer for hver linje, der importeres. Denne funktionsmåde anbefales ikke. Indstillingen **Auto-genereret** findes i importprojektet under **Vis tilknytning** under fanen **Tilknytning af oplysninger**.
 -   Hvis feltet **Kladdebatchnummer** ikke er indstillet til **Auto-genereret**, oprettes kladdebatchnummeret på følgende måde:
-    -   Hvis det kladdebatchnummer, der er defineret i den importerede fil, svarer til en eksisterende, ikke-bogført kassekladde i Microsoft Dynamics 365 for Operations, importeres alle linjer, der har et tilsvarende kladdebatchnummer, til den eksisterende kladde. Linjerne importeres aldrig til et bogført kladdebatchnummer. I stedet oprettes et nyt nummer.
-    -   Hvis det kladdebatchnummer, der er defineret i den importerede fil, ikke svarer til en eksisterende, ikke-bogført kassekladde i Dynamics 365 for Operations, grupperes alle linjer, der har det samme kladdebatchnummer, i en ny kladde. For eksempel importeres alle linjer, der har kladdebatchnummer 1, til en ny kladde, og alle linjer, der har kladdebatchnummer 2, importeres til en anden ny kladde. Kladdebatchnummeret oprettes ved hjælp af den nummerserie, der er defineret i finansparametrene.
+    -   Hvis det kladdebatchnummer, der er defineret i den importerede fil, svarer til en eksisterende, ikke-bogført kassekladde, importeres alle linjer, der har et tilsvarende kladdebatchnummer, til den eksisterende kladde. Linjerne importeres aldrig til et bogført kladdebatchnummer. I stedet oprettes et nyt nummer.
+    -   Hvis det kladdebatchnummer, der er defineret i den importerede fil, ikke svarer til en eksisterende, ikke-bogført kassekladde, grupperes alle linjer, der har det samme kladdebatchnummer, i en ny kladde. For eksempel importeres alle linjer, der har kladdebatchnummer 1, til en ny kladde, og alle linjer, der har kladdebatchnummer 2, importeres til en anden ny kladde. Kladdebatchnummeret oprettes ved hjælp af den nummerserie, der er defineret i finansparametrene.
 
 ### <a name="voucher-number"></a>Bilagsnummer
 
--   Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre i Dynamics 365 for Operations, er der et hotfix i frigivelsen fra februar 2016. Hotfix-nummer er 3170316 og kan hentes fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download hotfixes fra Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
-    -   Hvis du vil aktivere denne funktion, skal du på det kladdenavn, der bruges til import i Dynamics 365 for Operations, indstille **Nummertildeling under bogføring** til **Ja**.
-    -   Et bilagsnummer skal stadig defineres i den importerede fil. Men dette nummer er midlertidigt og overskrives af Dynamics 365 for Operations-bilagsnummeret, når kladden bogføres. Du skal sikre dig, at linjerne i kladden er grupperet korrekt efter midlertidigt bilagsnummer. Under bogføring findes der f.eks. tre linjer, der har det midlertidige bilagsnummer 1. Det midlertidige bilagsnummer for alle tre linjer overskrives med det næste nummer i nummerserien. Hvis disse tre linjer ikke er en afstemt indgang, bogføres bilaget ikke. Hvis linjer, der har det midlertidige bilagsnummer 2, overskrives dette nummer derefter med det næste bilagsnummer i nummerserien, og så videre.
+-   Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre, er der et hotfix i frigivelsen fra februar 2016. Hotfix-nummer er 3170316 og kan hentes fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download hotfixes fra Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+    -   Hvis du vil aktivere denne funktion, skal du på det kladdenavn, der bruges til import, indstille **Nummertildeling under bogføring** til **Ja**.
+    -   Et bilagsnummer skal stadig defineres i den importerede fil. Men dette nummer er midlertidigt og overskrives af bilagsnummeret, når kladden bogføres. Du skal sikre dig, at linjerne i kladden er grupperet korrekt efter midlertidigt bilagsnummer. Under bogføring findes der f.eks. tre linjer, der har det midlertidige bilagsnummer 1. Det midlertidige bilagsnummer for alle tre linjer overskrives med det næste nummer i nummerserien. Hvis disse tre linjer ikke er en afstemt indgang, bogføres bilaget ikke. Hvis linjer, der har det midlertidige bilagsnummer 2, overskrives dette nummer derefter med det næste bilagsnummer i nummerserien, og så videre.
 
 <!-- -->
 

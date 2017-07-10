@@ -3,7 +3,7 @@ title: "Budgetplanlægningsskabeloner til Excel"
 description: I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -50,7 +50,7 @@ Excel-skabelonen indeholder alle elementerne fra dokumentlayoutet til budgetplan
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> For at undgå potentielle problemer med visning og redigering af budgetplandata ved hjælp af Excel skal den samme bruger være logget på både Dynamics 365 for Operations og Microsoft Dynamics Office-tilføjelsesprogrammet Dataconnector.
+> For at undgå potentielle problemer med visning og redigering af budgetplandata ved hjælp af Excel skal den samme bruger være logget på både Microsoft Dynamics 365 for Finance and Operations, Enterprise edition og Microsoft Dynamics Office-tilføjelsesprogrammet Dataconnector.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Tilføje et sidehoved til skabelon til budgetplandokument
 Hvis du vil tilføje sidehovedoplysninger, skal du vælge den øverste række i Excel-filen og indsætte tomme rækker. Klik på **Design** i **Dataconnector** for at tilføje sidehovedfelter i Excel-filen.
@@ -79,11 +79,11 @@ Den markerede feltgruppe viser de kolonner, der er tilgængelige i skabelonen. K
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til Dynamics 365 for Operations, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet. En tabel, der er bundet til Finance and Operations, får typisk navnet "AXTable1". For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Gentag disse trin for at indsætte kolonnen **Regulering**. Brug formlen = AxTable1\[Total request\]\*$I$ 1 for denne kolonne. Dette vil tage værdien i celle I1 og multiplicere værdierne i kolonnen **Anmodet i alt** for at beregne reguleringsbeløb.
 
-Gem og luk Excel-filen. Gå tilbage til Dynamics 365 for Operations og klik i **Layout** på **Skabelon &gt; Overfør** for at overføre den gemte Excel-skabelon, der skal bruges til budgetplanen. 
+Gem og luk Excel-filen. Gå tilbage til Finance and Operations og klik i **Layout** på **Skabelon &gt; Overfør** for at overføre den gemte Excel-skabelon, der skal bruges til budgetplanen. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 

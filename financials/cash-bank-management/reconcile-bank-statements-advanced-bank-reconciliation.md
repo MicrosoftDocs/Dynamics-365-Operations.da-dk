@@ -1,15 +1,15 @@
 ---
 title: "Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning"
-description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Operations. I dette emne beskrives afstemningsprocessen.
+description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I dette emne beskrives afstemningsprocessen.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81368294164ca4ca1915d73f8f5622e61f5d1fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Operations. I dette emne beskrives afstemningsprocessen.  
+Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I dette emne beskrives afstemningsprocessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoudtog
 -----------------------------------
@@ -44,7 +44,7 @@ Du kan overføre et bankkontoudtog, der indeholder oplysninger om enten en enkel
 
 Hvis nogen kontoudtog i den elektroniske fil ikke kan knyttes til en bankkonto ved hjælp af id-felterne, kan de ikke importeres. Dog kan andre kontoudtog i filen stadig importeres. Brugeren modtager derefter en meddelelse om, at import af bankkontoudtog lykkedes for bestemte bankkonti. Bemærk, at den bruger, der importerer bankkontoudtogsfilen, skal have adgang til en juridisk enhed for at importere kontoudtog for den juridiske enheds bankkonti. 
 
-Du kan også bruge en zip-fil til at overføre flere kontoudtogsfiler til Microsoft Dynamics 365 for Operations i en enkelt proces. For at importere flere bankkontofiler for flere konti kan du kombinere alle bankkontofiler i én zip-fil. I dialogboksen **Importér bankkontoudtog** skal du vælge **Ja** i indstillingen **Importér kontoudtog for flere bankkonti i alle juridiske enheder**. Klik på **Gennemse** for at vælge den zip-fil, der indeholder bankkontofilerne, og klik derefter på **Overfør**. Importen vil genkende zip-filen og overføre hvert kontoudtog, som indgår i den, uanset den juridiske enhed for bankkontoen. 
+Du kan også bruge en zip-fil til at overføre flere kontoudtogsfiler til Microsoft Dynamics 365 for Finance and Operations i en enkelt proces. For at importere flere bankkontofiler for flere konti kan du kombinere alle bankkontofiler i én zip-fil. I dialogboksen **Importér bankkontoudtog** skal du vælge **Ja** i indstillingen **Importér kontoudtog for flere bankkonti i alle juridiske enheder**. Klik på **Gennemse** for at vælge den zip-fil, der indeholder bankkontofilerne, og klik derefter på **Overfør**. Importen vil genkende zip-filen og overføre hvert kontoudtog, som indgår i den, uanset den juridiske enhed for bankkontoen. 
 
 Indstillingen **Afstem efter import** er tilgængelig. Når denne indstilling er indstillet til **Ja**, validerer systemet automatisk bankkontoudtoget, opretter en ny bankafstemning og et regneark og kører Standard for sammenholdningsregelsæt, når kontoudtoget er blevet overført. Denne funktion automatiserer processen indtil det punkt, hvor posteringerne skal afstemmes manuelt.
 
@@ -76,7 +76,7 @@ Der er tre måder at sammenholde eller afstemme transaktioner på bankkontoudtog
 
 -   Sammenhold transaktionerne med bankposteringer i Operations.
 -   Sammenhold transaktioner med en tilbageførselstransaktion for bankkontoudtoget.
--   Markér transaktioner som **Ny**, så de kan bogføres senere som en banktransaktion i Dynamics 365 for Operations.
+-   Markér transaktioner som **Ny**, så de kan bogføres senere som en banktransaktion i Finance and Operations.
 
 Du sammenholder transaktioner manuelt ved at vælge transaktionerne i gitteret **Bankkontoudtogstransaktioner**, markere de tilsvarende transaktioner i gitteret **Operations-bankposteringer** og derefter klikke på **Afstem**. De valgte posteringer flyttes fra de øverste gitre for ikke-sammenholdte transaktioner til de lavere gitre for sammenholdte posteringer. Desuden opdateres de samlede sammenholdte og ikke-sammenholdte beløb. Du kan have én-til-én, mange-til-en og mange-til-mange-transaktionssammenholdelser. Sammenholdelser skal følge reglerne for tilladte datodifferencer og tilknytning af transaktionstype. Disse regler angives på siden **Kontant- og bankstyringsparametre**.
 
@@ -86,7 +86,7 @@ Tilbageførsel af bankkontoudtogtransaktioner sammenholdes ved hjælp af afstemn
 
 Tilbageførte Operations-banktransaktioner skal afstemmes ved hjælp af siden **Operations-banktransaktioner**. Du kan afstemme to Operations-banktransaktioner sammen, hvis dokumenterne har den samme bankkonto, dokumenttype og betalingsreference, og hvis de har modbeløb. Du kan også afstemme en enkelt annulleret check for at forhindre, at disse transaktioner vises på afstemningsarbejdsarket. 
 
-Hvis der er nye bankinitierede transaktioner, f.eks renter, afgifter og gebyrer, som endnu ikke findes i Dynamics 365 for Operations, kan du føje dem til en kladde, der er tilknyttet den valgte afstemning af bankkontoudtoget. Vælg en bankkontoudtogstransaktion i gitteret **Bankkontoudtogstransaktioner** for ikke-sammenholdte transaktioner, og klik derefter på **Markér som ny**. Status for transaktionen indstilles til **Ny**, og transaktionen flyttes til gitteret **Bankkontoudtogstransaktioner** for sammenholdte posteringer. Du skal bogføre posteringer, der er markeret som **Ny** senere fra siden **Bankkontoudtog**. 
+Hvis der er nye bankinitierede transaktioner, f.eks renter, afgifter og gebyrer, som endnu ikke findes i Finance and Operations, kan du føje dem til en kladde, der er tilknyttet den valgte afstemning af bankkontoudtoget. Vælg en bankkontoudtogstransaktion i gitteret **Bankkontoudtogstransaktioner** for ikke-sammenholdte transaktioner, og klik derefter på **Markér som ny**. Status for transaktionen indstilles til **Ny**, og transaktionen flyttes til gitteret **Bankkontoudtogstransaktioner** for sammenholdte posteringer. Du skal bogføre posteringer, der er markeret som **Ny** senere fra siden **Bankkontoudtog**. 
 
 Du kan fjerne sammenholdelse af transaktioner, der er sammenholdt ukorrekt. Vælg den sammenholdte bankkontoudtogstransaktion, og klik derefter på **Fjern sammenholdning**. Alle tilknyttede transaktioner flyttes tilbage til de øverste gitre for ikke-sammenholdte transaktioner, og de samlede sammenholdte og ikke-sammenholdte beløb opdateres. 
 

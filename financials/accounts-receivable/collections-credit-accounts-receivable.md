@@ -1,9 +1,9 @@
 ---
 title: Kredit og rykkere i Debitor
-description: "Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
+description: "Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74f671a35fa1dbeeb120fe968b1bcc09868f57d5
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
+Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Finance and Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
 
 Før du begynder at oprette eller arbejde med rykkere, skal du kende følgende begreber:
 -   Aldersfordelte øjebliksbillede for debitorer indeholder saldooplysninger på et bestemt tidspunkt
@@ -59,9 +59,9 @@ Der oprettes en detaljeret post for det aldersfordelte øjebliksbillede for hver
 Kundepuljer er forespørgsler, der definerer en gruppe kundeposter, der kan vises og administreres for rykkere eller aldersfordelte processer. Brug kundepuljer til at filtrere oplysningerne på listesiderne Aldersfordelte saldi, Rykkeraktiviteter og Rykkersager. Du kan også bruge kundepuljer til at filtrere de debitorkonti, der inkluderes ved oprettelsen af aldersfordelte øjebliksbilleder.
 
 ## <a name="collections-agents"></a>Inkassoagenter
-Microsoft Dynamics 365 for Operations-brugere kan som standard få vist alle kundeoplysninger på listesiderne med rykkere. Du kan bruge poster for inkassator til at bestemme de kundepuljer, der er tilgængelige til filtrering af oplysninger på listesiderne med rykkere og på siden Rykkere. 
+Microsoft Dynamics 365 for Finance and Operations-brugere kan som standard få vist alle kundeoplysninger på listesiderne med rykkere. Du kan bruge poster for inkassator til at bestemme de kundepuljer, der er tilgængelige til filtrering af oplysninger på listesiderne med rykkere og på siden Rykkere. 
 
-En inkassator er en person, der arbejder sammen med kunderne om at sikre, at betalinger opkræves rettidigt. I Microsoft Dynamics 365 for Operations er inkassoagenter arbejdere, der er tildelt til brugere på siden Brugerkonfiguration.
+En inkassator er en person, der arbejder sammen med kunderne om at sikre, at betalinger opkræves rettidigt. I Finance and Operations er inkassoagenter arbejdere, der er tildelt til brugere på siden Brugerkonfiguration.
 
 ## <a name="collections-list-pages"></a> Listesider for rykkere 
 Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
@@ -71,7 +71,7 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 
 > [!NOTE]
 > Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Oplysninger vises kun for debitorer, som der allerede er oprettet et aldersfordelt øjebliksbillede for. De poster, der vises på listesiden, kan yderligere filtreres på følgende måde:
-<li>En Microsoft Dynamics 365 for Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
+<li>En Finance and Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
 <li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
 <li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>
 

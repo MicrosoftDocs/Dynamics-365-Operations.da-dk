@@ -1,16 +1,16 @@
 ---
 title: "Administrere underleverandørarbejde i produktionen"
-description: "I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør."
+description: "I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Finance and Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 582807f9f416d3e6e73226dfd2e22af2d6331acd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
+I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Finance and Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 
 I [produktionsprocesser](production-process-overview.md) kan arbejdet udføres af ressourcer, der ejes eller administreres af leverandører. Leverandørressourcer bruges typisk til at udjævne periodiske ekstra behov, der overgår den tilgængelige kapacitet for en virksomheds egne ressourcer. Leverandøren kan muligvis også tilbyde særlige [ressourceegenskaber](resource-capabilities.md)eller ressourcer til en lavere pris.  
 
@@ -42,7 +42,7 @@ Når der bruges underleverandørarbejde eller -aktiviteter, påvirker de alle fa
 
 For interne ressourcer tildeles typisk en fast omkostningssats for en periode. Derimod er omkostningerne for underleverandørressourcer baseret på købsprisen for den relaterede service. Servicen defineres som et andet produkt og bruges til at udføre udtagnings- og indkøbsprocesserne for en given underleverandøroperation.  
 
-Der er i øjeblikket ingen eksplicit definition af halvfabrikata i Microsoft Dynamics 365 for Operations. For en produktionsordre, der kræver mere end én operation for at omdanne råvarer til en færdigvare, bogføres færdigvaren først tilbage på lageret i den sidste operation. De halvfabrikata, der er et resultat af de tidligere operationer, figurerer i igangværende forarbejdning (IGVF), men de bogføres eller spores ikke på lageret. Selvom du kan opdele ruter og styklister i flere mindre enheder, øger denne metode antallet af produkter, styklister og ruter, der skal administreres.  
+Der er i øjeblikket ingen eksplicit definition af halvfabrikata i Microsoft Dynamics 365 for Finance and Operations. For en produktionsordre, der kræver mere end én operation for at omdanne råvarer til en færdigvare, bogføres færdigvaren først tilbage på lageret i den sidste operation. De halvfabrikata, der er et resultat af de tidligere operationer, figurerer i igangværende forarbejdning (IGVF), men de bogføres eller spores ikke på lageret. Selvom du kan opdele ruter og styklister i flere mindre enheder, øger denne metode antallet af produkter, styklister og ruter, der skal administreres.  
 
 Der er to metoder til modellering af underleverandørarbejde til produktionsoperationer. Disse metoder adskiller sig fra hinanden på den måde, som processen med underleverandørarbejde kan modelleres på, den måde, halvfabrikata repræsenteres i processen, og den måde, omkostningsstyring administreres på.
 

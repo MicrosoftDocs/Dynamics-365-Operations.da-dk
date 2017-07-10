@@ -3,14 +3,14 @@ title: "Cyklusoptælling"
 description: "I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4446dfec1fa8eabb45e14b3f2ff685b3b1d68e2c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ebc7789d7b0be5db4a0faf4309bc3640f51956c6
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerst
 Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible varer i lagerbeholdningen. Cyklusoptællingsprocessen kan beskrives i tre trin:
 
 1.  **Oprette cyklusoptællingsarbejde** – cyklusoptællingsarbejde kan oprettes automatisk baseret på tærskelparametre for varer eller ved hjælp af en plan til cyklusoptælling. Du kan også oprette cyklusoptællingsarbejde manuelt ved hjælp af parametrene for vare eller lagersted på siden **Cyklusoptællingsarbejde efter vare** eller siden **Cyklusoptællingsarbejde efter lokalitet**.
-2.  **Udfør behandling af cyklusoptællingen** – Når cyklusoptællingsarbejdet er oprettet, udfører du cyklusoptællingsarbejde ved optælling af varer på et lagersted og derefter bruge en mobilenhed til at angive resultatet i Microsoft Dynamics 365 for Operations. Du kan også tælle varer på et lagersted uden at oprette cyklusoptællingsarbejde. Denne proces kaldes *spotcyklusoptælling*.
+2.  **Udfør behandling af cyklusoptællingen** – Når cyklusoptællingsarbejdet er oprettet, udfører du cyklusoptællingsarbejde ved optælling af varer på et lagersted og derefter bruge en mobilenhed til at angive resultatet i Microsoft Dynamics 365 for Finance and Operations. Du kan også tælle varer på et lagersted uden at oprette cyklusoptællingsarbejde. Denne proces kaldes *spotcyklusoptælling*.
 3.  **Løs forskelle i værdien for cyklusoptællingen** – efter en cyklusoptælling vil varer, der har forskelle i den optalte værdi, have arbejdsstatussen **Afventer gennemsyn** på siden **Alt arbejde**. Du kan løse disse forskelle på siden **Ventende gennemsyn af cyklusoptællingsarbejde**.
 
 Følgende illustration viser cyklusoptællingsprocessen. ![Procesforløb for cyklusoptælling](./media/performcyclecountinginawarehouselocation.jpg)
@@ -115,10 +115,10 @@ Du kan lægge cyklusoptællingsplaner for at oprette cyklusoptællingsarbejde st
 For at oprette en cyklusoptællingsarbejde manuelt kan du bruge siden **Cyklusoptællingsarbejde efter vare** eller **Cyklusoptællingsarbejde efter lokation**. Du kan angive det maks. antal cyklusoptællinger, der skal oprettes. For eksempel hvis lagerchefen angiver en værdi på **5**, oprettes der cyklusoptællingsarbejde for fem steder, selvom varen findes på 10 lokaliteter. Du kan også vælge et arbejdsgruppe-id, som de oprettede id'er for cyklusoptællingsarbejdet skal tildeles til. Når et arbejdspulje-id er behandlet for cyklusoptælling, behandles id'er for cyklusoptællingsarbejde, der er tildelt til arbejdspuljen, som en gruppe.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Udføre en cyklusoptælling ved hjælp af en mobilenhed
-Der er flere metoder til behandling af cyklusoptællingsarbejde ved hjælp af Dynamics 365 for Operations på en mobilenhed:
+Der er flere metoder til behandling af cyklusoptællingsarbejde ved hjælp af Finance and Operations på en mobilenhed:
 
 -   **Brugerbaseret** – Arbejderen kan angive et id for cyklusoptællingsarbejde, der har statussen **Åben**.
--   **Systembaseret** – Dynamics 365 for Operations tildeler et id for cyklusoptællingsarbejde til arbejderen.
+-   **Systembaseret** – Finance and Operations tildeler et id for cyklusoptællingsarbejde til arbejderen.
 -   **Gruppering af cyklusoptælling** – Arbejderen kan gruppere id'er for cyklusoptællingsarbejde, der er specifikke for en bestemt lokation, zone eller arbejdspulje.
 -   **Spotcyklusoptælling** – Valgfrit: Arbejderen kan tælle elementerne på en lagerlokation til enhver tid uden at oprette cyklusoptællingsarbejde. For at udføre spotcyklusoptælling på en lokation angiver arbejderen lokalitets-id'et.
 

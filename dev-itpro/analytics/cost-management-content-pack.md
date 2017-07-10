@@ -3,13 +3,13 @@ title: Power BI-indhold til omkostningsstyring
 description: "I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9449e42224d5dfb1bc1f0368a041c45afc334a2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -52,7 +52,7 @@ Microsoft Power BI-indhold til **Omkostningsstyring** er beregnet til lagerregns
 Den primære datakilde for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabel administreres af datasættes cachestruktur. Tabellen opdateres med 24 timers mellemrum som standard, men du kan aktivere manuelle opdateringer i datacachekonfigurationen. Du kan derefter foretage en manuel opdatering i **Omkostningsstyring** eller **Omkostningsanalyse** arbejdsområdet. Efter kørslen af opdateringen af CostStatementCache skal du opdatere OData-forbindelsen på Power BI.com for at få vist opdaterede data på webstedet. Afvigelsesmålingerne (indkøb, produktion) i dette Power BI-indhold gælder kun for varer, der er vurderet med lagermetoden for standardomkostninger. Produktionsafvigelsen beregnes som forskellen mellem aktive omkostninger og realiserede omkostninger. Produktionsafvigelsen beregnes, når produktionsordren har status **Afsluttet**. Du kan finde flere oplysninger om typer af produktionsafvigelse, og hvordan hver type beregnes, under [Om analyse af afvigelser for en afsluttet produktionsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Power BI-indholdet til **Omkostningsstyring** er tilgængeligt fra PowerBI.com. Du kan finde flere oplysninger om, hvordan du forbinder og indlæser dine Microsoft Dynamics 365 for Operations-data, under [Adgang til Power BI-indhold fra PowerBI.com](power-bi-home-page.md).
+Power BI-indholdet til **Omkostningsstyring** er tilgængeligt fra PowerBI.com. Du kan finde flere oplysninger om, hvordan du forbinder og indlæser dine Microsoft Dynamics 365 for Finance and Operations-data, under [Adgang til Power BI-indhold fra PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Omkostningsstyring**.
@@ -84,9 +84,9 @@ Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, so
 | |Produktionsafvigelser pr. navn på sted og kategorinavn på niveau 3 | |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Dynamics 365 for Operations-data bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). Følgende samlede nøglemålinger bruges som grundlag for indholdet.
+Finance and Operations-data bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 
-| Enhed            | Samlede nøglemålinger | Datakilde til Dynamics 365 for Operations | Felt             | Betegnelse                       |
+| Enhed            | Samlede nøglemålinger | Datakilde til Finance and Operations | Felt             | Betegnelse                       |
 |-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
 | Fordelingsposter | Netto ændring                | CostAggregatedCostStatementEntryEntity      | sum (\[Beløb\])   | Beløb i regnskabsvalutaen |
 | Fordelingsposter | Nettoændring, antal       | CostAggregatedCostStatementEntryEntity      | sum(\[Antal\]) |                                   |

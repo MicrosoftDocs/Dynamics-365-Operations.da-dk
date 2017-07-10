@@ -3,14 +3,14 @@ title: "Opret indkøbsordrer"
 description: "I denne artikel beskrives den proces og de indstillinger, der gælder, når du opretter en indkøbsordre manuelt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -29,6 +29,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 I denne artikel beskrives den proces og de indstillinger, der gælder, når du opretter en indkøbsordre manuelt.
@@ -70,7 +72,7 @@ Nogle gange kan du opdele det antal, du har bestilt, så forskellige dele af det
 Gebyrer kan føjes automatisk til indkøbsordrelinjer, hvis der er oprettet automatiske gebyrer for kreditoren eller kreditorgebyrgruppen og for varen eller varegebyrgruppen. Dog mere typisk tilføjes gebyrer manuelt på ordrelinjeniveau. Når du vil tilføje et gebyr, skal du åbne siden **Vedligehold gebyrer** ved hjælp af handlingen **Vedligehold gebyrer** i menuen **Finans** i visningen **Linjer**. Fordelen ved at tilføje gebyrer direkte på ordrelinjeniveau er, at gebyret kan tildeles som en lageromkostning. Du kan konfigurere gebyrkoder til kontoproduktomkostninger ved at bruge debetindstillingen **Vare**. Disse typer af gebyrer, der skal fordeles fra indkøbsordrehovedets linjer, før ordren kan bekræftes. For eksempel kan du fordele gebyrer, der er baseret på antallet på hver linje. Gebyrkategorien påvirker også, hvordan gebyrer efterkalkuleres. For eksempel angiver faste gebyrer et fast beløb, og procentbaserede gebyrer beregnes som en procentdel af nettobeløbet for ordrelinjen. IO'er kan tildeles til en belastning, og belastningen kan indeholde et overslag over de forventede udgifter til transportomkostningerne. Du kan tildele denne udgift fra belastningen tilbage til IO-linjerne.
 
 ## <a name="purchase-order-actions"></a>Indkøbsordrehandlinger
-Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](/dynamics365/operations/get-started/action-search) til at finde det relevante menupunkt.  
+Når du har føjet hovedet og linjerne til indkøbsordren, skal du ofte udføre yderligere trin, før ordren er klar til at blive bekræftet. Da der findes så mange muligheder, kan det være nyttigt at bruge [Handlingssøgning](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) til at finde det relevante menupunkt.  
 
 Du kan konfigurere produkter i ordren, så de får supplerende varer. Supplerende varer er varer, der skal eller kan købes sammen med andre produkter. Supplerende produkter kan tilføjes gratis, som ledsageprodukter, eller du vil muligvis kunne afgøre, om du vil føje til ordren eller ej. Når hver ordrelinje er tilføjet, kan du gennemse de supplerende varer. Dog vil det nok være mere praktisk at gennemgå og tilføje relevante supplerende varer til alle ordrelinjer ved hjælp af siden **Supplerende varer**, som du kan åbne fra handlingsruden.  
 
@@ -94,7 +96,7 @@ Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du
 
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
-[Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Oversigt over kreditorfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

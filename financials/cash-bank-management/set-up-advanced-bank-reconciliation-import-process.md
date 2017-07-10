@@ -1,16 +1,16 @@
 ---
 title: Konfigurere importprocessen for avanceret bankafstemning
-description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken.
+description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fda4dca4339c09757477b04166b17d5f92f46a7c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
+Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
 
-Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Microsoft Dynamics 365 for Operations understøtter tre standardformater for bankkontoudtog: ISO20022, MT940 og BAI2.
+Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Finance and Operations understøtter tre standardformater for bankkontoudtog: ISO20022, MT940 og BAI2.
 
 ## <a name="sample-files"></a>Eksempelfiler
-For alle tre formater skal du have filer, der oversætter det elektroniske bankkontoudtog fra det oprindelige format til et format, der kan bruges af Dynamics 365 for Operations. Du kan finde de nødvendige ressourcefiler under noden **Ressourcer** i Application Explorer i Microsoft Visual Studio. Når du har fundet filerne, skal du kopiere dem til en enkelt kendt placering, så du nemmere kan overføre dem under konfigurationsprocessen.
+For alle tre formater skal du have filer, der oversætter det elektroniske bankkontoudtog fra det oprindelige format til et format, der kan bruges af Finance and Operations. Du kan finde de nødvendige ressourcefiler under noden **Ressourcer** i Application Explorer i Microsoft Visual Studio. Når du har fundet filerne, skal du kopiere dem til en enkelt kendt placering, så du nemmere kan overføre dem under konfigurationsprocessen.
 
 | Ressourcenavn                                           | Filnavn                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -65,13 +65,13 @@ Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for ISO20
 1.  Gå til **Arbejdsområder** &gt; **Datastyring**.
 2.  Klik på **Importer**.
 3.  Angiv et navn for formatet, f.eks. **ISO20022**.
-4.  Indstil feltet **Kildedataformat**til **XML-element**.
+4.  Indstil feltet **Kildedataformat** til **XML-element**.
 5.  Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.
 6.  Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.
 7.  Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.
 8.  Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder. På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.
 9.  Klik på **Ny** under fanen **Transformationer**.
-10. For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **ISO20022XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Dynamics 365 for Operations transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **ISO20022XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Klik på **Ny**.
 12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
 13. Klik på **Anvend transformeringer**.
@@ -90,7 +90,7 @@ Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsfor
 1.  Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.
 2.  Vælg bankkontoen, og åbn for at få vist detaljerne.
 3.  På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.
-4.  Indstil feltet **Kontoudtogsformat**til det format, du oprettede tidligere, f.eks. **ISO20022**.
+4.  Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **ISO20022**.
 
 ## <a name="set-up-the-import-of-mt940-bank-statements"></a>Konfigurere importen af MT940-bankkontoudtog
 Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for MT940-bankkontoudtog ved hjælp af dataenhedsstrukturen.
@@ -106,7 +106,7 @@ Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for MT940
 9.  Klik på **Ny** under fanen **Transformationer**.
 10. For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **MT940TXT-to-MT940XML.xslt**, du gemte tidligere.
 11. Klik på **Ny**.
-12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **MT940XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Dynamics 365 for Operations transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **MT940XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Klik på **Ny**.
 14. For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
 15. Klik på **Anvend transformeringer**.
@@ -142,7 +142,7 @@ Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for BAI2-
 9.  Klik på **Ny** under fanen **Transformationer**.
 10. For løbenummer skal du klikke på **Overfør fil** og vælge filen **BAI2CSV-to-BAI2XML.xslt**, du gemte tidligere.
 11. Klik på **Ny**.
-12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BAI2XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Dynamics 365 for Operations transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, og du muligvis skal opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BAI2XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, og du muligvis skal opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Klik på **Ny**.
 14. For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
 15. Klik på **Anvend transformeringer**.

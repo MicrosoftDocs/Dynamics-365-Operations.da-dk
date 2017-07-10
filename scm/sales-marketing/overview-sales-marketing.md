@@ -3,13 +3,13 @@ title: Salg og marketing
 description: "Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 25ea6e64453b22d664dd65a1f1bb18e3a1997bc5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: dddcc764bb11540b8207350c463d1adb2533e1c0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ I modulet Salg og marketing kan de første interaktioner, du har med potentielle
 
 ### <a name="campaigns"></a>Kampagner
 
-En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. Du kan oprette flere typer kampagner som f.eks. telemarketing-, post- og mailkampagner, for at maksimere dit kundepotentiale i Microsoft Dynamics 365 for Operations. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
+En kampagne henvender sig til kontaktpersoner for kundeemner, potentielle kunder, salgsmuligheder og kunder, der er blevet valgt til at deltage i kampagnen. Du kan oprette flere typer kampagner som f.eks. telemarketing-, post- og mailkampagner, for at maksimere dit kundepotentiale i Microsoft Dynamics 365 for Finance and Operations. Efterhånden som din kampagnen skrider frem, og du får positive tilbagemeldinger, kan du begynde salgsprocessen med de modtagere, der har reageret positivt på kampagnen.
 
 ## <a name="sales"></a>Salg
 Du kan bruge salgsfunktionen til at oprette tilbud og foretage mersalg og krydssalg til nye og eksisterende kunder, oprette salgsordrer og oprette salgsfakturaer til kunder. I følgende procesflow vises forretningsprocesserne for salg. [![Forretningsproces for salg](./media/sales01.jpg)](./media/sales01.jpg)

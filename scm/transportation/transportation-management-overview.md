@@ -1,15 +1,15 @@
 ---
 title: Oversigt over transportstyring
-description: Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Operations.
+description: Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Finance and Operations.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 796bf42f103bd6d14e872138d07e4a911ddcab1a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Operations.
+Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Finance and Operations.
 
-Med Transportstyring kan du administrere virksomhedens transport og identifikation af kreditor- og routingløsninger for indgående og udgående ordrer. For eksempel kan du identificere den hurtigste rute eller den billigste sats for en forsendelse. Nedenstående tabel indeholder beskrivelser af hovedscenarierne for brug af transportstyring i Microsoft Dynamics 365 for Operations.
+Med Transportstyring kan du administrere virksomhedens transport og identifikation af kreditor- og routingløsninger for indgående og udgående ordrer. For eksempel kan du identificere den hurtigste rute eller den billigste sats for en forsendelse. Nedenstående tabel indeholder beskrivelser af hovedscenarierne for brug af transportstyring i Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>
@@ -68,23 +68,23 @@ Med Transportstyring kan du administrere virksomhedens transport og identifikati
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Planlægning af transport i Dynamics 365 for Operations
+## <a name="planning-transportation-in-finance-and-operations"></a>Planlægning af transport i Finance and Operations
 I transportstyring kan transportplanlægning baseres på ordrer eller på de forsendelser, der oprettes på grundlag af disse ordrer. Forsendelserne findes altid på et eller andet tidspunkt, men er ikke påkrævet for transportplanlægning. Flytteordrer er en del af det udgående scenario og kan planlægges sammen med salgsordrer. 
 
 ![Indlæs tegning](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Indgående transport
-Når du bestiller varer fra en leverandør, og varerne skal leveres til dit lagersted, kan du selv arrangere transport af varerne, hvis du ønsker det. Du kan bruge Dynamics 365 for Operations til at planlægge transport og modtagelse af den indgående last. Følgende illustration viser forretningsprocessen for planlægning af transport for en indgående belastning. 
+Når du bestiller varer fra en leverandør, og varerne skal leveres til dit lagersted, kan du selv arrangere transport af varerne, hvis du ønsker det. Du kan bruge Finance and Operations til at planlægge transport og modtagelse af den indgående last. Følgende illustration viser forretningsprocessen for planlægning af transport for en indgående belastning. 
 
 ![Forretningsprocesflow for transport af indgående laster](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Udgående transport
-Du kan planlægge og behandle en udgående belastning for at levere bestemte varer fra et firmas lager til en kunde. Du kan bruge Dynamics 365 for Operations til at planlægge transport og forsendelse af en udgående last. Følgende illustration viser forretningsprocessen for planlægning og behandling af udgående belastninger for levering. 
+Du kan planlægge og behandle en udgående belastning for at levere bestemte varer fra et firmas lager til en kunde. Du kan bruge Finance and Operations til at planlægge transport og levering af den udgående last. Følgende illustration viser forretningsprocessen for planlægning og behandling af udgående belastninger for levering. 
 
 ![Planlægning og behandling af udgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Lastopbygning
-Dynamics 365 for Operations indeholder en lastopbygningsstrategi, der hedder Volumenbaseret lastopbygningsstrategi. Denne strategi gør det muligt for dig at bruge de maksimumværdier, der er angivet for højde og vægt i lastskabelonen, eller du kan tilsidesætte indstillingerne ved at angive nye værdier. Hvis du vil bruge denne strategi, skal du vælge den i feltet **Lastopbygningsstrategi** i oversigtspanelet **Opsætning** på siden **Lastopbygningspanel**. Du kan desuden tilføje dine egne lastopbygningsstrategier ved at oprette en ny klasse i AOT (Application Object Tree).
+Finance and Operations indeholder en lastopbygningsstrategi, der hedder Volumenbaseret lastopbygningsstrategi. Denne strategi gør det muligt for dig at bruge de maksimumværdier, der er angivet for højde og vægt i lastskabelonen, eller du kan tilsidesætte indstillingerne ved at angive nye værdier. Hvis du vil bruge denne strategi, skal du vælge den i feltet **Lastopbygningsstrategi** i oversigtspanelet **Opsætning** på siden **Lastopbygningspanel**. Du kan desuden tilføje dine egne lastopbygningsstrategier ved at oprette en ny klasse i AOT (Application Object Tree).
 
 
 

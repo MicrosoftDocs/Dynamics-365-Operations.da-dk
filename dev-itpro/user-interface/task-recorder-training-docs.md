@@ -3,7 +3,7 @@ title: "Oprette dokumentation eller undervisning ved hjælp af opgaveregistrerin
 description: "Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
@@ -31,19 +31,22 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
+Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider til Unified Operations-produkter og inkluderer dem i din Hjælp.
+
+> [!IMPORTANT]
+> Du kan ikke oprette brugerdefinerede opgaveguider til Dynamics 365 for Talent. Hjælpesystemet til Talent er automatisk tilknyttet opgavevejledninger til produktet. 
 
 <a name="learn-about-task-recorder"></a>Få mere at vide om Arbejdsrutineoptager
 -------------------------
 
-Arbejdsrutineoptager er et værktøj i Microsoft Dynamics 365 for Operations, du kan bruge til at registrere de handlinger, du udfører i produktets brugergrænseflade (UI). Når du bruger Arbejdsrutineoptager – registreres alle de hændelser, du udfører i Brugergrænsefladen, på serveren, herunder tilføjelse af værdier, ændring af indstillinger og fjernelse af data. De trin, du optager, bliver samlet kaldes en *opgaveregistrering*. Opgaveregistreringer kan bruges på mange måder:
+Arbejdsrutineoptager er et værktøj, du kan bruge til at registrere de handlinger, du udfører i produktets brugergrænseflade. Når du bruger Arbejdsrutineoptager – registreres alle de hændelser, du udfører i Brugergrænsefladen, på serveren, herunder tilføjelse af værdier, ændring af indstillinger og fjernelse af data. De trin, du optager, bliver samlet kaldes en *opgaveregistrering*. Opgaveregistreringer kan bruges på mange måder:
 
--   **Opgaveregistreringer kan afspilles som opgaveguide.** Opgaveguider er en integreret del af Hjælp-oplevelsen i Dynamics 365 for Operations. En opgaveguide er en kontrolleret, automatiseret og interaktiv oplevelse, der fører dig gennem trinene i en forretningsproces. Brugeren bliver instrueret i at fuldføre hvert trin ved hjælp af en pop op-meddelelse (eller "boble"), som vil være animeret på tværs af brugergrænsefladen og pege på det element i brugergrænsefladen, som brugeren skal arbejde med. "Boblen" indeholder også oplysninger om, hvordan du arbejder med elementet, f.eks. "Klik her" eller "Angiv en værdi i dette felt". En opgaveguide kører i forhold til brugerens aktuelle datasæt, og de data, der er angivet, gemmes i brugerens miljø.
+-   **Opgaveregistreringer kan afspilles som opgaveguide.** Opgaveguider er en integreret del af Hjælp-oplevelsen. En opgaveguide er en kontrolleret, automatiseret og interaktiv oplevelse, der fører dig gennem trinene i en forretningsproces. Brugeren bliver instrueret i at fuldføre hvert trin ved hjælp af en pop op-meddelelse (eller "boble"), som vil være animeret på tværs af brugergrænsefladen og pege på det element i brugergrænsefladen, som brugeren skal arbejde med. "Boblen" indeholder også oplysninger om, hvordan du arbejder med elementet, f.eks. "Klik her" eller "Angiv en værdi i dette felt". En opgaveguide kører i forhold til brugerens aktuelle datasæt, og de data, der er angivet, gemmes i brugerens miljø.
 -   **Opgaveregistreringer kan vises som en trinvis fremgangsmåde i Hjælp-ruden.** Du kan bruge Hjælp-ruden til at søge efter og få vist opgaveregistreringer. Du kan få adgang til Hjælp-ruden ved at klikke på ikonet **?**. i den øverste navigationslinje, eller du kan bruge genvejstastekombinationen **Ctrl + Skift +?**. Du kan læse trinene i en opgaveregistrering i Hjælp-ruden, eller du kan vælge at afspille optagelsen som en opgaveguide, så du bliver guidet gennem brugergrænsefladen.
--   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek (Business Process Modeler) i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgaveregistreringer, der er gemt i et BPM-bibliotek, kan vises i Dynamics 365 for Operations som Hjælp.
+-   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek (Business Process Modeler) i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgaveregistreringer, der er gemt i et BPM-bibliotek, kan vises i Hjælp.
 -   **Opgaveregistreringer kan gemmes som Word-dokumenter.** På den måde kan du nemt oprette kursusguider, der kan udskrives.
 
-Du kan oprette dine egne opgaveregistreringer, afspille opgaveregistreringer fra Microsoft eller ændre opgaveregistreringer fra Microsoft, så de afspejler din konfiguration. Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager i Dynamics 365 for Operations](task-recorder.md).
+Du kan oprette dine egne opgaveregistreringer, afspille opgaveregistreringer fra Microsoft eller ændre opgaveregistreringer fra Microsoft, så de afspejler din konfiguration. Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Planlægge din opgaveregistrering
 Husk følgende oplysninger på, uanset om du skal oprette en ny opgave eller basere din registrering på en Microsoft-opgaveregistrering.
@@ -83,7 +86,7 @@ Sådan ser noteanmærkningen ud i "boblen" i opgaveguiden.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin. **Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles. I Hjælp-ruden vises en infotrinanmærkning som et nummererede trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for Dynamics 365 for Operations, eller at henvise til andre registreringer (selvom du ikke kan oprette links i anmærkningerne).
+-   **Infotrin**: Disse anmærkninger oprettes ved at højreklikke på et kontrolelement eller et vilkårligt sted i en formular &lt; **Arbejdsrutineoptager** &lt; **Tilføj infotrin. **Infotrin vises som et nummereret trin på sted, hvor du indsætter det, selvom intet blev registreret i brugergrænsefladen. Du kan tilføje et infotrin på formularniveau eller et infotrin, der er knyttet til et kontrolelement. Når et infotrin er knyttet til en formular, vises opgaveguidens "boble" et sted i formularen uden markør, når opgaveguiden afspilles. Når et infotrin er knyttet til et kontrolelement, peger opgaveguidens "boble" på kontrolelementet, når opgaveguiden afspilles. I Hjælp-ruden vises en infotrinanmærkning som et nummererede trin med den tekst, du har angivet. Brug infotrin til at forberede brugeren til de næste trin, til at beskrive de skridt, der skal udføres uden for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, eller at henvise til andre registreringer (selvom du ikke kan oprette links i anmærkningerne).
 
 **Fastlægge, hvor lang registreringen skal være**
 
@@ -101,7 +104,7 @@ Du kan finde en detaljeret gennemgang i [Sådan opretter du en opgaveregistrerin
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiere og tilpasse Microsofts opgaveregistreringer
 Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til din egen Hjælp-dokumentation eller dit eget undervisningsmateriale. Følg nedenstående trin, når du vil hente en Microsoft-opgaveregistrering:
 
-1.  Åbn Arbejdsrutineoptager i Dynamics 365 for Operations. Arbejdsrutineoptager findes i menuen **Indstillinger**.
+1.  Åbn Arbejdsrutineoptager. Arbejdsrutineoptager findes i menuen **Indstillinger**.
 2.  Klik i ruden Arbejdsrutineoptager på **Vedligehold en registrering.**
 3.  Under **Hvor er registreringen?** skal du klikke på **Det er et LCS-bibliotek**.
 4.  Klik på **Vælg LCS-biblioteket**.
@@ -119,18 +122,13 @@ For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, 
 <a name="see-also"></a>Se også
 --------
 
-[Dynamics 365 for Operations Hjælp](..\get-started\help-overview.md)
+[Oversigt over Hjælp](..\get-started\help-overview.md)
 
-[Tilslut hjælp](..\get-started\help-connect.md)
+[Forbinde Hjælp](..\get-started\help-connect.md)
 
-[Arbejdsrutineoptager i Dynamics 365 for Operations](task-recorder.md)
+[Arbejdsrutineoptager](task-recorder.md)
 
 [Funktioner tilføjet for nylig i Arbejdsrutineoptager](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Oprettelse af nye uddannelsesbiblioteker til Dynamics AX i Lifecycle Services ved hjælp af Arbejdsrutineoptager (eksternt link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Opret avancerede emner i Hjælp med Arbejdsrutineoptager (eksternt link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 

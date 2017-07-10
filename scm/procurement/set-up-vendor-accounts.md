@@ -3,7 +3,7 @@ title: Konfigurer kreditorkonti
 description: "I dette emne beskrives, hvilke typer oplysninger du skal angive, når du opretter en ny kreditorkonto."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bee95a2f3d9727e9123aa0abcf41325e6cac1efd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -62,13 +62,13 @@ Du kan gemme kontakter for en kreditor. Disse kontakter kan derefter bruges på 
 
 Hvis du vil føje kontakter til en kreditor, skal du åbne siden **Alle kreditorer**, fanen **Kreditor** i gruppen **Opsætning** og klikke på **Kontakter** &gt; **Tilføj kontakter**.  
 
-Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Microsoft Dynamics 365 for Operations, og redigere oplysningerne, som du har brug for.  
+Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Microsoft Dynamics 365 for Finance and Operations, og redigere oplysningerne, som du har brug for.  
 
 **Bemærk:** Tilføjelse af en kontakt for en kreditor er ikke det samme som at tilføje kontaktoplysninger for den pågældende kreditor. Selvom du kan tilføje generelle kontaktoplysninger for en kreditor, kan du også have flere bestemte personer, der er kontakter i den pågældende virksomhed, og som alle har deres egne kontaktoplysninger.  
 
 Du kan ikke slette en kontaktpersonpost, hvis der refereres til kontakten i et dokument. I stedet kan du deaktivere kontakten.  
 
-Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft Office 365. Du skal dog først konfigurere synkronisering mellem Dynamics 365 for Operations og Office 365 både i Microsoft Exchange Server-synkronisering og i installationsvejledningen for Microsoft Outlook.
+Du kan føje kreditorkontakter til dine personlige kontakter i Microsoft Office 365. Du skal dog først konfigurere synkronisering mellem Finance and Operations og Office 365 både i Microsoft Exchange Server-synkronisering og i installationsguiden til Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditorer i forskellige juridiske enheder
 Hvis en kreditor kun er registreret for én juridisk enhed i organisationen, og andre juridiske enheder skal registrere den samme kreditor, kan du bruge siden **Føj kreditor til en anden juridisk enhed** for at konfigurere kreditoren til at kunne gøre forretninger med en anden juridisk enhed. Du skal vælge en kreditorgruppe, valuta og hold-status for kreditoren i den valgte juridiske enhed.  

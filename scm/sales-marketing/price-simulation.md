@@ -3,7 +3,7 @@ title: Prissimulering
 description: "Denne artikel indeholder oplysninger om prissimuleringen for tilbud. Prissimuleringen hjælper dig med at vurdere effekten af fradrag på den fremtidige salgspris under tilbudsprocessen, før du giver tilsagn om en bestemt pris."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -54,7 +54,7 @@ Det er vigtigt at være omhyggelig, når du kører prissimuleringer på tilbud m
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer af rabatter i samhandelsaftaler
 
-Samhandelsaftaler i Microsoft Dynamics 365 for Operations kan have fire typer prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
+Samhandelsaftaler i Microsoft Dynamics 365 for Finance and Operations kan have fire typer prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
 
 -   **Salgspris** – Der kan angives separate varesalgspriser. Når tilbudslinjerne oprettes, søger programmet efter den rigtige salgspris for en vare og overføre den til tilbudslinjerne. En samhandelsaftale, der har denne slags rabat, påvirker derfor ikke prissimuleringen. Den salgspris, der bruges i tilbudslinjen, afspejler samhandelsaftalen.
 -   **Linjerabat** – Der angives særlige rabatter for varer, afhængigt af ordreantallet. Linjebeløb reduceres typisk med linjerabatten, før der køres en prissimulering. En samhandelsaftale, der har denne slags rabat, påvirker derfor prissimuleringen.

@@ -3,14 +3,14 @@ title: "Samarbejde med kreditorer ved hjælp af kreditorportalen"
 description: "I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne leverandører under processen til bekræftelse af indkøbsordrer. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef47cd32d78ea28496c014ed4537008159a05691
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a8284e5a79e00def964b41f5c20bbb7377bf36be
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
@@ -100,7 +100,7 @@ I følgende tabel vises et eksempel på ændringerne i status og version, som en
 
 [Konfiguration af sikkerhed for brugere af kreditorsamarbejde](configure-security-vendor-portal-users.md)
 
-[Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+[Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
 
 
 

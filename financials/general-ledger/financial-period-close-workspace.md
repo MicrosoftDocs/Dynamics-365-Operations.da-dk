@@ -3,7 +3,7 @@ title: "Arbejdsområde til afslutning på regnskabsperiode"
 description: "Denne artikel indeholder en oversigt over arbejdsområdet Afslutning på regnskabsperiode og den tilknyttede konfiguration."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -65,7 +65,7 @@ Indstillingen **Opgave fuldført** skal vælges manuelt, efter at opgaven er ful
 Du kan få vist alle aktuelle og forrige periode afslutningsopgaver fra listesiden **Alle opgaver til afslutning på regnskabsperiode**. Denne listeside er bedst egnet til historisk analyse af afslutningsprocessen, fordi den indeholder oplysninger om den planlagte forfaldsdato, den faktiske slutdato og den person, der har fuldført opgaven. Du kan let eksportere oplysningerne på denne listeside til Microsoft Excel til rapporterings- og overvågningsformål.
 
 ## <a name="financial-period-close-configuration-page"></a>Siden Konfiguration af afslutning på regnskabsperiode
-Før du kan bruge arbejdsområdet **Afslutning på regnskabsperiode**, skal du konfigurere processen i Microsoft Dynamics 365 for Operations ved hjælp af siden **Konfiguration af afslutning på regnskabsperiode**. (Klik på **Finans** &gt; **Luk periode** &gt; **Konfiguration af afslutning på regnskabsperiode**).
+Før du kan bruge arbejdsområdet **Afslutning på regnskabsperiode**, skal du konfigurere processen i Microsoft Dynamics 365 for Finance and Operations ved hjælp af siden **Konfiguration af afslutning på regnskabsperiode**. (Klik på **Finans** &gt; **Luk periode** &gt; **Konfiguration af afslutning på regnskabsperiode**).
 
 ### <a name="resources"></a>Ressourcer
 
@@ -90,7 +90,7 @@ Du kan bruge en skabelon for afslutning af finans til at definere alle opgaver, 
 
 Du kan tildele en opgave i skabelonen til en eller flere virksomheder, hvor opgaven gælder. Hvis en anden person er tildelt til at udføre dette arbejde i hvert enkelt virksomhed, kan det være nyttigt at oprette flere opgaver til den samme arbejdsindsats. Oprette én opgave for hver virksomhed 
 
-Menupunktet **Opgavelink** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. n afsluttende opgave, der kører processen til valutaregulering for Kreditor, kan f.eks. knyttes til den tilhørende side med **Kursregulering** i Microsoft Dynamics 365 for Operations. Du kan også foretage sammenkædning til en ekstern URL-adresse. 
+Menupunktet **Opgavelink** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. n afsluttende opgave, der kører processen til valutaregulering for Kreditor, kan f.eks. knyttes til den tilhørende side med **Kursregulering** i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan også foretage sammenkædning til en ekstern URL-adresse. 
 
 > [Tip!] Hvis du vil sammenkæde en bestemt Management Reporter-rapport med en opgave til afslutning på regnskabsperiode, kan du bruge URL-adressen til rapporten. For at få adgang til URL-adressen til rapporten skal du åbne rapporten i rapportdesigneren og derefter klikke på **Filer** &gt; **Vis rapport** for at åbne rapporten i en webbrowser. Du kan derefter kopiere URL-adressen på browserens adresselinje og indsætte den i **URL-adressen** til feltet **Opgavelink**. 
 

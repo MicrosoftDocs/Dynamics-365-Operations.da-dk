@@ -1,16 +1,16 @@
 ---
 title: "Vise og designe økonomirapporter"
-description: "Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations."
+description: "Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Finance and Operations."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Operations. Økonomirapportering består af en visuel oplevelse i Dynamics 365 for Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter.  
+Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Finance and Operations. Økonomirapportering består af en visuel oplevelse i Finance and Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Øvelse 1: Oprette og udforske en økonomisk standardrapport
 -----------------------------------------------------------
@@ -59,7 +59,7 @@ I denne øvelse skal du generere og udforske en eksisterende standardrapport. De
 13. Vælg **Rapportindstillinger**.
 14. Vælg **Tilføj et dimensionsfilter** , og vælg **Virksomhedsenhed**.
 15. Skriv 001 i feltet, og vælg **OK**. Rapporten viser nu kun data for 001 virksomhedsenheden. Dette er en personlig visning af rapporten og er ikke tilgængelig for andre.
-16. Luk den filtrerede rapport. Økonomirapporter kan vises i en hvilken som helst valuta, der er føjet til Dynamics 365 for Operations.
+16. Luk den filtrerede rapport. Økonomirapporter kan vises i en hvilken som helst valuta, der er føjet til Finance and Operations.
 17. Vælg **Valuta**, og vælg derefter **EUR.** Rapporten vises nu i euro. Alle valutakoder og valutasymboler, der er med i rapportdesignet, vises nu i den valuta, der er anvendt. Hvis intet valutasymbol er defineret for en valuta, vises valutasymbolet ikke.
 18. Luk rapporten **Finansdetaljer**.
 19. Luk **Report Designer**.
@@ -70,7 +70,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du opdaterer b
 1.  Gå til **Økonomirapporter** under Forespørgsler og rapporter i Finans.
 2.  Vælg rækken for rapporten med navnet **Råbalanceoversigt – standard.**
 3.  Vælg **Rediger**. **Oversigt over råbalance – standard** åbnes i Report Designer.
-4.  Vælg **Filer**, derefter **Gem som**, og navngiv rapporten Detaljeret råbalance med attributter. Bemærk! Hver gang en ny rapport i Report Designer, opdateres listen over økonomirapporter i Dynamics 365 for Operations.
+4.  Vælg **Filer**, derefter **Gem som**, og navngiv rapporten Detaljeret råbalance med attributter. Bemærk! Hver gang en ny rapport i Report Designer, opdateres listen over økonomirapporter i Finance and Operations.
 5.  Fra rapportdefinition skal du vælge ikonet for rækkedefinitionen for at åbne **Råbalance – standardrækkedefinition**.
 6.  Gem rækkedefinitionen, som **Detaljeret råbalance med attributter**
 7.  Placer markøren på række 50, Vælg **Rediger**, derefter **Indsæt rækker fra dimensioner**. Med Indsæt rækker fra dimensioner kan du vælge, hvilke dimensioner du vil have i din rækkedefinition. I denne øvelse skal vi til at bygge rækkedefinitionen ved hjælp af hovedkonto.
@@ -81,7 +81,7 @@ I denne øvelse skal du redigere en eksisterende standardrapport. Du opdaterer b
 12. Vælg i kolonne C, **TOTt** på rullelisten.
 13. Type **50:11080** i kolonne D.
 14. **Gem** rækkedefinitionen. Rækkedefinitionen indeholder nu alle konti samt en totalrække til at føje alle konti sammen. Dernæst opdaterer vi kolonnedefinitionen for at medtage ekstra kontoattributter.
-15. Fra rapportdefinitionen **Detaljeret råbalance med attributter** skal du markere kolonnedefinitionsikonet for at åbne kolonnedefinitionen  **Råbalanceoversigt – standard**.
+15. Fra rapportdefinitionen **Detaljeret råbalance med attributter** skal du markere kolonnedefinitionsikonet for at åbne kolonnedefinitionen **Råbalanceoversigt – standard**.
 16. Gem kolonnedefinitionen, som **Detaljeret råbalance med attributter**. Kolonnedefinitionen indeholder kolonner af økonomiske data, en kolonne med beskrivelse og beregningskolonner. Vi vil føje attributkolonner til kolonnedefinitionen for at give yderligere detaljer om kontiene.
 17. Følgende attributter skal føjes til kolonnedefinitionen:
     -   Kladdenummer
@@ -183,8 +183,8 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 18. **Gem** dine ændringer og **generer**. Når rapporten færdiggøres, oprettes og åbnes, kan du gennemse rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Økonomirapportering](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Vis økonomirapporter](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Økonomirapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Vis økonomirapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Bloggen Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

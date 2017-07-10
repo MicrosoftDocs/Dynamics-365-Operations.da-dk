@@ -1,39 +1,39 @@
 ---
-title: Projektprognoser og budgetter
+title: Projektprognoser og -budgetter
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7d0e9bebe67f6e028faf1237fa4fb392004a1204
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 835a92a8f95c7d75b02f5991cc2528c6a209540a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-forecasts-and-budgets"></a>Projektprognoser og budgetter
+# <a name="project-forecasts-and-budgets"></a>Projektprognoser og -budgetter
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-Microsoft Dynamics 365 for Operations indeholder to metoder til at administrere og styre dine projekter: projektprognoser og projektbudgetter. 
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition indeholder to metoder til at administrere og styre dine projekter: projektprognoser og projektbudgetter. 
 
 Brug projektprognoser, hvis organisationen har et operationelt perspektiv, og hvis den fokuserer på indtægter og omkostninger, der er udledt af specifikke transaktioner. Brug projektbudgettering, hvis organisationen fokuserer mere på økonomiske beløb. 
 

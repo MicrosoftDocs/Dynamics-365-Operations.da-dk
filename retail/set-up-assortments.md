@@ -1,37 +1,39 @@
 ---
 title: "Opsætning af sortimenter"
-description: I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 for Operations - Retail.
+description: I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ffa60ad4890a783c05bbde09aa00189fb30bd706
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3647d88baa544bf0fa8c7f9d752c712dc69a70d7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-assortments"></a>Opsætning af sortimenter
+# <a name="set-up-assortments"></a>Konfigurere udvalg
 
 [!include[banner](includes/banner.md)]
 
 
-I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 for Operations - Retail.
+I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 for Retail.
 
 Et sortiment er en samling af relaterede produkter, som du tildeler til en detailkanal, f.eks. en fysisk butik eller en onlinebutik. Du kan bruge udvalgt til at identificere de produkter, der er tilgængelige i hver butik. Et udvalg kan omfatte varekategorier. Alle de produkter, der er tildelt en bestemt kategori, er derfor inkluderet i sortimentet. Et udvalg kan også omfatte specifikke produkter og bestemte varianter af produkter. Ved at oprette et udvalg kan du tildele tusindvis af produkter til dine detailkanaler på det samme tidspunkt i enhver kombination, som din butikker kræver. Du kan oprette så mange produktudvalg, som du har brug for. Hvert produkt kan medtages i et eller flere udvalg, og hvert udvalg kan tildeles til en eller flere detailkanaler. Du kan f.eks. definere et sortiment der omfatter et grundlæggende sæt af produkter. Alle butikker modtager dette sortiment. Du kan derefter definere et andet sortiment, der kun indeholder stort sportsudstyr. Kun dine større butikker modtager dette sortiment. Følgende diagram viser, hvordan produkter kan tildeles til sortimenter, og hvordan disse sortimenter kan tildeles til detailkanaler. ![Produktsortimentrelationer](./media/assortments_relationship.gif)
 
@@ -42,8 +44,8 @@ Før du kan oprette et udvalg og tildele det til en detailkanal, skal du udføre
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurer en detailkanal.          | Detailkanaler repræsenterer en fysisk butik, en onlinebutik eller en onlinemarkedsplads. Du skal oprette mindst én detailkanal og konfigurere indstillingerne for butikken. Udvalg tildeles butikker for at identificere de produkter, der føres i en bestemt butik.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Opret et organisationshierarki. | Når du har oprettet detailkanaler til organisationen, skal du konfigurere et detailorganisationshierarkiet, der repræsenterer organisationsstrukturen i detailkanalerne. Et organisationshierarki kan bruges til udvalg, genbestilling og rapportering. Ved at føje dine detailkanaler til et organisationshierarki kan du tildele udvalg til grupper af butikker. I stedet for at tildele udvalg individuelt til hver butik kan du tildele udvalgene til organisationsnoden på højeste niveau. Hver gang der derefter føjes en ny detailkanal føjes til organisationsnoden på højeste niveau, arver denne detailkanal automatisk eventuelle udvalg, som blev tildelt til organisationsnoden på højeste niveau. Du kan kun tildele sortimenter til detailkanaler, der indgår i et organisationshierarki, der er tildelt formålet **Detailsortiment**. |
-| Definer produkter.                  | Før du kan føje produkter til et sortiment, skal du tilføje dem i Microsoft Dynamics AX. Du kan manuelt tilføje produkter, eller du kan importere dem fra en leverandør. Når du føjer produkter, skal du frigive dem til en juridisk enhed. Det er kun produkter, der er frigivet til en juridisk enhed, som kan gøres tilgængelige for detailkanaler. Produkter, der endnu ikke er frigivet til en juridisk enhed, kan føjes til et sortiment, og sortimentet kan godkendes. Det er dog først, når produkterne er frigivet til en juridisk enhed, at de kan gøres tilgængelige for detailkanalerne.                                                                                                                                                                                                                                                                                     |
-| Konfigurer et kategorihierarki.      | Når du opretter dine detailprodukter, kan du gruppere og kategorisere dem ved hjælp af funktionen til kategorihierarkier i Microsoft Dynamics 365 for Operations. Du kan oprette ét kernehierarki for at gruppere og kategorisere alle de produkter, du distribuerer via dine detailkanaler. Du kan også oprette separate, supplerende kategorihierarkier for at gruppere eller kategorisere produkterne til særlige formål, såsom kampagner eller udvalg. Ved hjælp af kategorihierarkier kan du tildele alle produkter i en bestemt kategori til et sortiment. Produkter, der føjes til den kategori, der er inkluderet i udvalget, medtages automatisk i det pågældende udvalg. Næste gang detailsortimentsplanlægger køres derefter, bliver disse produkter tilgængelige for de detailkanaler, som udvalget er tildelt.                                            |
+| Definer produkter.                  | Før du kan føje produkter til et sortiment, skal du tilføje dem i Microsoft Dynamics 365 for Retail. Du kan manuelt tilføje produkter, eller du kan importere dem fra en leverandør. Når du føjer produkter, skal du frigive dem til en juridisk enhed. Det er kun produkter, der er frigivet til en juridisk enhed, som kan gøres tilgængelige for detailkanaler. Produkter, der endnu ikke er frigivet til en juridisk enhed, kan føjes til et sortiment, og sortimentet kan godkendes. Det er dog først, når produkterne er frigivet til en juridisk enhed, at de kan gøres tilgængelige for detailkanalerne.                                                                                                                                                                                                                                                                                     |
+| Konfigurer et kategorihierarki.      | Når du opretter dine detailprodukter, kan du gruppere og kategorisere dem ved hjælp af funktionen til kategorihierarkier. Du kan oprette ét kernehierarki for at gruppere og kategorisere alle de produkter, du distribuerer via dine detailkanaler. Du kan også oprette separate, supplerende kategorihierarkier for at gruppere eller kategorisere produkterne til særlige formål, såsom kampagner eller udvalg. Ved hjælp af kategorihierarkier kan du tildele alle produkter i en bestemt kategori til et sortiment. Produkter, der føjes til den kategori, der er inkluderet i udvalget, medtages automatisk i det pågældende udvalg. Næste gang detailsortimentsplanlægger køres derefter, bliver disse produkter tilgængelige for de detailkanaler, som udvalget er tildelt.                                            |
 
 ## <a name="setting-up-an-assortment"></a>Konfigurere et sortiment
 Når du har fuldført forudsætningerne, kan du oprette et udvalg og tildele den til dine detailkanaler. Hvis du vil konfigurere et sortiment, skal du fuldføre følgende opgaver.

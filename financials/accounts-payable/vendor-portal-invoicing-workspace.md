@@ -3,13 +3,14 @@ title: "Arbejdsområde for kreditorsamarbejdsfakturering"
 description: "Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,10 +18,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 
 Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
 
-**Kreditorsamarbejdsfakturaer**-arbejdsområde kan bruges til at få vist oplysninger om fakturaen og sende fakturaer til Microsoft Dynamics 365 for Operations ved hjælp af arbejdsgangfunktioner.
+**Kreditorsamarbejdsfakturaer**-arbejdsområdet kan bruges til at få vist oplysninger om kreditorfakturaen og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ved hjælp af arbejdsgangfunktioner.
 Arbejdsområde for kreditorsamarbejdsfakturering
 ----------------------------------------
 
@@ -40,14 +41,14 @@ Arbejdsområde for kreditorsamarbejdsfakturering
 
 **Oversigt**-fliserne giver en oversigt over fakturaer for den valgte kreditor. Du kan få vist fakturaer efter deres tilstand.
 -   Udkast til fakturaer er ikke sendt til arbejdsgang.
--   Sendte, ikke godkendte fakturaer er de fakturaer, som kreditoren har sendt, men de er ikke blevet bogført i Dynamics 365 for Operations.
--   Godkendte, ikke betalte fakturaer er de fakturaer, som er blevet bogført i Dynamics 365 for Operations, men de er ikke betalt fuldt ud.
--   Betalte fakturaer er dem, der er blevet betalt fuldt ud i Dynamics 365 for Operations.
+-   Sendte, ikke godkendte fakturaer er de fakturaer, som kreditoren har sendt, men de er ikke blevet bogført i Finance and Operations.
+-   Godkendte, ikke betalte fakturaer er de fakturaer, som er blevet bogført i Finance and Operations, men de er ikke betalt fuldt ud.
+-   Betalte fakturaer er dem, der er blevet betalt fuldt ud i Finance and Operations.
 
 Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
 ### <a name="tabular-lists"></a>Tabellister
 
-I sektionen **Tabellister**er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
+I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
 Alle kreditorfakturaer (listeside)
 -----------------------------
 
@@ -59,7 +60,7 @@ Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kredito
 
 
 
-Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Fejlfinding af filimport af bankkontoudtog
-description: "Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Operations understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne."
+description: "Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Finance and Operations, Enterprise edition understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e2029a03cf6b46ee206417076c64a269080119ed
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Operations understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
+Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Finance and Operations, Enterprise edition understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.
 
 <a name="what-is-the-error"></a>Hvad er fejlen?
 ------------------
@@ -38,7 +38,7 @@ Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Mi
 Når du forsøger at importere en bankkontoudtogsfil, skal du gå til jobhistorikken for Datastyring og se udførelsesoplysningerne for at finde fejlen. Fejlen gør det lettere at udpege kontoudtoget, balancen eller kontoudtogslinjen. Det er dog ikke sandsynligt, at du får tilstrækkelige oplysninger til at identificere det felt eller element, der er årsag til problemet.
 
 ## <a name="what-are-the-differences"></a>Hvad er forskellene?
-Sammenlign layoutdefinitionen for bankfiler med Microsoft Dynamics 365 for Operations-importdefinitionen, og bemærk eventuelle forskelle i felter og elementer. Sammenlign bankkontoudtogsfilen med den relaterede Dynamics 365 for Operations-eksempelfil. I ISO20022-filerne bør eventuelle forskelle være lette at se.
+Sammenlign layoutdefinitionen for bankfiler med Finance and Operations-importdefinitionen, og bemærk eventuelle forskelle i felter og elementer. Sammenlign bankkontoudtogsfilen med den relaterede Finance and Operations-eksempelfil. I ISO20022-filerne bør eventuelle forskelle være lette at se.
 
 ## <a name="transformations"></a>Transformationer
 Ændringen foretages typisk i en af tre transformationer. Hver transformation er skrevet for en bestemt standard.
@@ -80,7 +80,7 @@ Når transformationen er i gang, oprettes der en outputfil, som du kan se i Visu
 
 ### <a name="adjust-the-transformation"></a>Justere transformationen
 
-Juster transformationen for at få det relevante felt eller element i bankkontoudtogsfilen. Derefter skal du knytte feltet eller elementet til det relevante Dynamics 365 for Operations-element.
+Juster transformationen for at få det relevante felt eller element i bankkontoudtogsfilen. Derefter skal du knytte feltet eller elementet til det relevante Finance and Operations-element.
 
 ### <a name="debitcredit-indicator"></a>Indikator for debet/kredit
 

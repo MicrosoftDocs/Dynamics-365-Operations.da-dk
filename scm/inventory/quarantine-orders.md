@@ -3,14 +3,14 @@ title: "Karantæneordrer"
 description: "I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for lager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 63d8c5827a95693a903428322367a4eec61f17d8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ec3d54e8e08850cd81891e7058b2b787e08b0fb9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,7 +36,7 @@ I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for la
 Karantæneordrer kan bruges til at blokere lager. Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager. Lager, der er blevet sat i karantæne, overføres til et karantænelagersted. **Bemærk!** Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.
 
 ## <a name="quarantine-onhand-inventory-items"></a>Sæt disponible lagervarer i karantæne
-Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling. Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**. Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder. Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Microsoft Dynamics 365 for Operations. Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**. Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
+Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling. Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**. Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder. Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Microsoft Dynamics 365 for Finance and Operations. Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**. Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
 
 ## <a name="quarantine-order-statuses"></a>Karantæneordrens status
 Karantæneordrer kan have følgende statusværdier:

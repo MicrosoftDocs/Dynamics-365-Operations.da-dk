@@ -1,28 +1,29 @@
 ---
 title: Callcenter-funktionalitet
-description: Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Operations.
+description: Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 40d7c1a95f33c189639c12279a8e3a286f0c6761
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: befbf43a0af8016895e570f5d8cf3a51983692f2
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -32,9 +33,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Operations.
+Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Retail.
 
-Detail og handel i Microsoft Dynamics AX understøtter callcentre som en slags detailkanal. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Callcenterfunktioner omfatter funktioner, der er beregnet til at gøre det nemmere at tage telefonordre og håndtere kundeservice i hele ordreopfyldelsesprocesen. Eksempelvis kan call center-medarbejdere angive oplysninger om debitorbetalinger direkte til salgsordren og kan se en detaljeret oversigt over gebyrer og betalinger, før de kan sende ordren. Arbejdere har også mulighed for at styre prisen og få adgang til forskellige data om debitorer, produkter og priser fra siden **Salgsordre**. Desuden har callcentre har forbedret funktionalitet til sporing af debitorers historik og ordrestatus. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. Du kan også bruge siden **Callcenter** til at aktivere eller deaktivere følgende grupper af funktioner, der er unikke for callcentre:
+Dynamics 365 for Retail understøtter også callcentre som en slags detailkanal. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Callcenterfunktioner omfatter funktioner, der er beregnet til at gøre det nemmere at tage telefonordre og håndtere kundeservice i hele ordreopfyldelsesprocesen. Eksempelvis kan call center-medarbejdere angive oplysninger om debitorbetalinger direkte til salgsordren og kan se en detaljeret oversigt over gebyrer og betalinger, før de kan sende ordren. Arbejdere har også mulighed for at styre prisen og få adgang til forskellige data om debitorer, produkter og priser fra siden **Salgsordre**. Desuden har callcentre har forbedret funktionalitet til sporing af debitorers historik og ordrestatus. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. Du kan også bruge siden **Callcenter** til at aktivere eller deaktivere følgende grupper af funktioner, der er unikke for callcentre:
 
 -   **Ordrefuldførelse** – Denne gruppe omfatter funktioner, der er knyttet til betalinger og færdiggørelse på siden **Salgsordre**.
 -   **Dirigeret salg** – Denne gruppe indeholder funktioner, der er relateret til kildekoder, scripts og kataloganmodninger.

@@ -16,12 +16,12 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5e5043d5951015fc14d29989ef4cab20a8b24f3b
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 1a5f2cd60e09b67cee4bab211bba4e07e9ef181f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -36,14 +36,16 @@ Denne artikel beskriver de typer af dokumenter, du kan bruge til at administrere
 Du kan bruge følgende typer dokumenter til at administrere organisationens lager.
 
 ## <a name="purchase-orders"></a>Indkøbsordrer
-Indkøbsordrer oprettes på hovedkontoret. Hvis et detaillagersted er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af Modern POS (MPOS) eller Cloud POS i Microsoft Dynamics 365 for Operations - Retail. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret vises det antal, der er modtaget i butikken, i Dynamics 365 for Operations, i feltet **Modtag nu** på indkøbsordren.
+Indkøbsordrer oprettes på hovedkontoret. Hvis et detaillagersted er medtaget i indkøbsordrehovedet, kan ordren modtages i butikken ved hjælp af Modern POS (MPOS) eller Cloud POS i Microsoft Dynamics 365 for Retail. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret vises det antal, der er modtaget i butikken, i Dynamics 365 for Retail, i feltet **Modtag nu** på indkøbsordren.
 
 ## <a name="transfer-orders"></a>Flytteordrer
-En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan afsendes fra. I dette tilfælde vises flytteordren i butikken som en plukanmodning i MPOS eller Cloud POS. Når de antal, der er anmodet om, er blevet plukket, gøres de bindende og sendes til hovedkontoret. På hovedkontoret vises det antal, der er plukket i butikken, i Dynamics 365 for Operations, i feltet **Afsend nu** i flytteordren. En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan sendes til. I dette tilfælde vises flytteordren i butikken som en tilgangsanmodning i MPOS eller Cloud POS. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret vises det antal, der er modtaget i butikken, i Dynamics 365 for Operations, i feltet **Modtag nu** på flytteordreordren.
+En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan afsendes fra. I dette tilfælde vises flytteordren i butikken som en plukanmodning i MPOS eller Cloud POS. Når de antal, der er anmodet om, er blevet plukket, gøres de bindende og sendes til hovedkontoret. På hovedkontoret vises det antal, der er plukket i butikken, i Dynamics 365 for Retail, i feltet **Afsend nu** i flytteordren. En flytteordre kan angive, at en bestemt butik er en lokalitet, som varerne kan sendes til. I dette tilfælde vises flytteordren i butikken som en tilgangsanmodning i MPOS eller Cloud POS. Når antallet, der er modtaget i butikken, er angivet, kan det gemmes lokalt og ændres yderligere. Alternativt kan antallet bindes og sendes til hovedkontoret. På hovedkontoret vises det antal, der er modtaget i butikken, i Dynamics 365 for Retail, i feltet **Modtag nu** på flytteordren.
 
 ## <a name="stock-counts"></a>Lagerstatus
 Status kan enten være planlagt eller ikke-planlagt. Planlagte statusopgørelser startes i hovedkontoret, der angiver, hvilke varer der skal optælles. Hovedkontoret opretter et optællingsdokument, som kan modtages i butikken, hvor antallet af den disponible beholdning angives i MPOS eller Cloud POS. Ikke-planlagte statusoptællinger startes i en butik, og antal i den disponible lagerbeholdning opdateres i enten i MPOS eller Cloud POS. I modsætning til planlagt status har ikke-planlagt status ikke en foruddefineret liste over varer. Når en status af en af typerne er fuldført, gøres den bindende og sendes til hovedkontoret. På hovedkontoret valideres antallet og bogføres.
 
+## <a name="inventory-lookup"></a>Lagersøgning
+Det aktuelle antal disponible produkter for flere butikker og lagersteder kan ses på siden Lagersøgning. Udover den aktuelle disponible beholdning kan det fremtidige disponible tilsagn (DTT) vises for hver enkelt butik. Det gør du ved at vælge den butik, du vil have vist DTT for, og derefter klikke på **Vis butikkens tilgængelighed**.
 
 
 

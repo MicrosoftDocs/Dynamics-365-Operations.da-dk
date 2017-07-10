@@ -3,7 +3,7 @@ title: Oversigt over avanceret bankafstemning
 description: "I denne artikel beskrives forløbet for den avancerede bankafstemningsproces. Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: deba55d5e1e376f3f4063f372bfe853fcaf20498
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -42,12 +42,12 @@ Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De impo
     -   Funktionaliteten kan udvides til et vilkårligt format.
 
 2.  Opret en nummerserie, der skal bruges til avanceret bankafstemning, og definer sammenholdningsregler for bankafstemning.
-    -   En sammenholdningsregel for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for Operations-banktransaktionslinjer under afstemningsprocessen. Du kan oprette mere end én sammenholdningsregel for at automatisere og optimere dine afstemningsprocesser, afhængigt af din forretningspraksis.
+    -   En sammenholdningsregel for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-banktransaktionslinjer under afstemningsprocessen. Du kan oprette mere end én sammenholdningsregel for at automatisere og optimere dine afstemningsprocesser, afhængigt af din forretningspraksis.
 
-3.  Afstem bankkontoudtog med bankposteringer i Dynamics 365 for Operations.
+3.  Afstem bankkontoudtog med bankposteringer i Finance and Operations.
     -   Udfør automatisk sammenholdning og oprettelse af kladder til afstemning.
-    -   Få vist bankkontoudtog og bankposteringer i Dynamics 365 for Operations side om side.
-    -   Bogføre automatisk Dynamics 365 for Operations-banktransaktioner, hvis de vises på bankens kontoudtog, men ikke i Dynamics 365 for Operations.
+    -   Få vist bankkontoudtog og bankposteringer i Finance and Operations side om side.
+    -   Bogføre automatisk Finance and Operations-banktransaktioner, hvis de vises på bankens kontoudtog, men ikke i Finance and Operations.
     -   Generere en afstemningsopgørelse.
 
 

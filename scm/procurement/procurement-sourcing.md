@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3a95ce92fe40f7e1c52bba554b82bd73d627c6b4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -57,11 +57,11 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 -   [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md)
 -   [Konfigurere og vedligeholde kreditorsamarbejde](set-up-maintain-vendor-collaboration.md)
--   [Demoscript for indgående konsignationslager til Microsoft Dynamics 365 for Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvidbog)
+-   [Demoscript for indgående konsignationslager til Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(hvidbog)
 -   [Overvåge konsignationslager ved hjælp af leverandørsamarbejde](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [Samarbejde med leverandører ved at bruge leverandørportalen](collaborate-vendors-vendor-portal.md) (kun Dynamics 365 for Operations-versioner fra februar 2016 og maj 2016)
--   [Konfiguration af sikkerhed for brugere af leverandørportal](configure-security-vendor-portal-users.md) (kun Dynamics 365 for Operations-versioner fra februar 2016 og maj 2016)
--   [Arbejdsområde til kreditorsamarbejde på mobilenheder i Microsoft Dynamics 365 for Operations-app](vendor-collaboration-mobile-workspace.md)
+-   [Samarbejde med leverandører ved at bruge leverandørportalen](collaborate-vendors-vendor-portal.md) (kun Dynamics AX-versioner fra februar 2016 og maj 2016)
+-   [Konfiguration af sikkerhed for brugere af leverandørportal](configure-security-vendor-portal-users.md) (kun Finance and Operations-versioner fra februar 2016 og maj 2016)
+-   [Arbejdsområde til kreditorsamarbejde på mobilenheder i Microsoft Dynamics 365 for Finance and Operations-app](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Produktstyring af indkøb
 -   [Indkøbskataloger](procurement-catalogs.md)
@@ -92,8 +92,8 @@ Indkøb og forsyning dækker alle trin fra identifikationen af et behov for prod
 
 ## <a name="product-receipt-and-invoicing"></a>Modtagelse og fakturering af produkter
 -   [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
--   [Oversigt over kreditorfakturaer](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [Kreditorposteringsprofiler](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Oversigt over kreditorfakturaer](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [Kreditorposteringsprofiler](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Indkøbs- og forsyningsarbejdsgange
 -   [Oversigt over indkøb og forsyning](procurement-sourcing-overview.md)

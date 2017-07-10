@@ -3,24 +3,24 @@ title: Projektstyring og regnskab
 description: "Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a6235f36af6dfb2f4164405d384f13a7c1cde06
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -37,7 +37,7 @@ Et projekt er en gruppe af aktiviteter, der er udviklet til at yde en service, f
 ## <a name="projects-across-industries"></a>Projekter på tværs af brancher
 Projektstyring og regnskabsfunktioner kan bruges i flere brancher som vist i følgende illustration. [![Projekter på tværs af brancher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-I et callcenter kan en billet bruges til at beskrive det sæt handlinger, der er nødvendige for at løse et opkald. Konsulentfirmaer, f.eks. organisationer med ledelsesmæssig eller teknisk rådgivning eller reklamebureauer, ser deres aktiviteter som projekter. I marketing repræsenterer en kampagne en samling af arbejde, der skal leveres. I projektbaseret produktion vedrører en produktionsordre forskelligt arbejde, der skal udføres for at producere nogle færdige varer. Uanset navnet, der bruges til dem, omfatter disse projekter, ressourcer, planer og omkostninger, og projektstyringen og regnskabsfunktionaliteten i Microsoft Dynamics 365 for Operations kan hjælpe med planlægning, udførelse og analyse af disse projekter.
+I et callcenter kan en billet bruges til at beskrive det sæt handlinger, der er nødvendige for at løse et opkald. Konsulentfirmaer, f.eks. organisationer med ledelsesmæssig eller teknisk rådgivning eller reklamebureauer, ser deres aktiviteter som projekter. I marketing repræsenterer en kampagne en samling af arbejde, der skal leveres. I projektbaseret produktion vedrører en produktionsordre forskelligt arbejde, der skal udføres for at producere nogle færdige varer. Uanset navnet, der bruges til dem, omfatter disse projekter, ressourcer, planer og omkostninger, og projektstyringen og regnskabsfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan hjælpe med planlægning, udførelse og analyse af disse projekter.
 
 ## <a name="project-phases"></a>Projektfaser
 Selvom følgende procesforløb er rettet mod eksterne projekter eller et projekt, der er fuldført for en eller flere kunder, gælder funktionen også for interne projekter, der udelukkende er omkostningsbaseret. 
@@ -75,11 +75,11 @@ Du kan finde flere oplysninger i [Arbejdsopgavehierarkier](work-breakdown-struct
 
 ### <a name="create-project-forecasts-and-budgets"></a>Oprette projektprognoser og budgetter
 
-Du kan bruge prognosebaseret budgettering, hvis organisationen har et operationelt perspektiv og fokuserer på de indtægter og omkostninger, der er udledt af specifikke transaktioner. Du kan imidlertid bruge budgettering, hvis organisationen fokuserer mere på økonomiske beløb. Hver metode har sine fordele. Yderligere oplysninger finder du [Projektprognoser og budgetter](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Du kan bruge prognosebaseret budgettering, hvis organisationen har et operationelt perspektiv og fokuserer på de indtægter og omkostninger, der er udledt af specifikke transaktioner. Du kan imidlertid bruge budgettering, hvis organisationen fokuserer mere på økonomiske beløb. Hver metode har sine fordele. Yderligere oplysninger finder du [Projektprognoser og budgetter](project-forecasts-budgets.md).
 
 ### <a name="create-projects"></a>Opret projekter
 
-Du kan oprette seks typer projekter i Microsoft Dynamics 365 for Operations. Hver enkelt projekttype er angivet forskelligt med hensyn til omkostninger og indtægtsføring. Den projekttype, du vælger, afhænger af formålet med projektet. I følgende tabel beskrives den typiske brug af de enkelte projekttyper.
+Du kan oprette seks typer projekter i Microsoft Finance and Operations. Hver enkelt projekttype er angivet forskelligt med hensyn til omkostninger og indtægtsføring. Den projekttype, du vælger, afhænger af formålet med projektet. I følgende tabel beskrives den typiske brug af de enkelte projekttyper.
 
                                                                                                                                                                          |
 | Projekttype      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -118,7 +118,7 @@ Du kan finde flere oplysninger i [Arbejdsopgavehierarkier](work-breakdown-struct
 
 Der er to måder at administrere og styre dine projekter på: projektprognoser og projektbudgetter. Du kan bruge prognosebaseret budgettering, hvis organisationen har et operationelt perspektiv og fokuserer på de indtægter og omkostninger, der er udledt af specifikke transaktioner. Du kan imidlertid bruge budgettering, hvis organisationen fokuserer mere på økonomiske beløb.
 
-Yderligere oplysninger finder du [Projektprognoser og budgetter](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+Yderligere oplysninger finder du [Projektprognoser og budgetter](project-forecasts-budgets.md).
 
 ### <a name="create-production-orders"></a>Oprette produktionsordrer
 
@@ -210,7 +210,7 @@ Yderligere oplysninger om, hvordan du kan behandle projektfakturaer finder du i 
 
 ### <a name="calculate-the-cost-to-complete-a-project"></a>Beregne omkostninger for at færdiggøre et projekt
 
-Når du opretter et estimat, kan du vælge den metode, der bruges til at beregne omkostninger til at færdiggøre projektet. Du vælger en metode i feltet **Metode for færdiggørelsesomkostninger**på siden **Opret estimat**. Den metode, du vælger, anvendes separat for hver omkostningslinje i forkalkulationen. Mens en linje har statussen **Oprettet**, kan du ændre den metode, der er anvendt på siden **Omkostningsestimat**. 
+Når du opretter et estimat, kan du vælge den metode, der bruges til at beregne omkostninger til at færdiggøre projektet. Du vælger en metode i feltet **Metode for færdiggørelsesomkostninger** på siden **Opret estimat**. Den metode, du vælger, anvendes separat for hver omkostningslinje i forkalkulationen. Mens en linje har statussen **Oprettet**, kan du ændre den metode, der er anvendt på siden **Omkostningsestimat**. 
 
 I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldføre et projekt.
 
@@ -228,7 +228,7 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <tbody>
 <tr class="odd">
 <td>Samlet omkostning – faktisk</td>
-<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat </strong>er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne til færdiggørelse af projektet. Typisk spores status for omkostninger ikke baseret på eksempelvis antallet af hotelophold og måltider, der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Microsoft Dynamics 365 for Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
+<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne til færdiggørelse af projektet. Typisk spores status for omkostninger ikke baseret på eksempelvis antallet af hotelophold og måltider, der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
 </tr>
 <tr class="even">
 <td>Samlet budget – faktisk</td>
@@ -238,7 +238,7 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <li>Sammenlign budgetposteringer med de faktiske posteringer.</li>
 <li>Vedligehold, mindsk eller øg overslagene for den næste periode.</li>
 </ol>
-Microsoft Dynamics 365 for Operations reducerer ikke automatisk de budgetterede skøn. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at oprette stamdata til sammenligning, når projektet er fuldført. 
+Finance and Operations reducerer ikke automatisk de budgetterede skøn. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at oprette stamdata til sammenligning, når projektet er fuldført. 
 > [!NOTE] Når du vælger denne metode, skal du bruge mindst to budgetmodeller. Én model bør indeholde det oprindelige budget. For den anden model skal du kopiere budgetposteringerne fra en anden model. Denne metode er kun gyldig for fastpris- og investeringsprojekter.</td>
 > </tr>
 <tr class="odd">
@@ -316,7 +316,7 @@ Baseret på disse indstillinger følger her kostbetalingsdatoen for hver posteri
 
 Kostbetalingsdatoen beregnes ikke på basis af bufferdage. Når et projekt er afsluttet, når alle efterkalkulationer og faktureringer er fuldført, bogføres både omkostninger og salg til driftskonti. 
 
-Når alle salgs- og leverandørfakturaer er fuldført, kan du få vist relationen mellem felter på siden **Pengestrøm**og felter på siden **Projektopgørelser**.
+Når alle salgs- og leverandørfakturaer er fuldført, kan du få vist relationen mellem felter på siden **Pengestrøm** og felter på siden **Projektopgørelser**.
 
 | Pengestrømsside | Siden projektopgørelse. |
 |----------------|-------------------------|
@@ -333,14 +333,14 @@ Du kan overvåge de omkostninger, som organisationen har under et projekt, på s
 
 #### <a name="viewing-the-remaining-budgeted-amounts"></a>Få vist de resterende budgetterede beløb
 
-Hvis **Resterende budget**er valgt som metode til omkostningskontrol på siden **Parametre for projektstyring og regnskab**, beregner siden **Omkostningsstyring** de omkostninger, der ikke er bogført som faktisk eller markeres som bindende. Specielt mængderne under fanen **Generelt** i den nederste rude på siden **Omkostningsstyring**beregnes på følgende måder:
+Hvis **Resterende budget** er valgt som metode til omkostningskontrol på siden **Parametre for projektstyring og regnskab**, beregner siden **Omkostningsstyring** de omkostninger, der ikke er bogført som faktisk eller markeres som bindende. Specielt mængderne under fanen **Generelt** i den nederste rude på siden **Omkostningsstyring** beregnes på følgende måder:
 
 -   **Faktisk omkostning** – Det samlede beløb, der er blevet brugt på projektet for den valgte omkostningslinje. Det faktiske kostbeløb beregnes på siden **Finansopdateringer**.
 -   **Bindende omkostning** – Den yderligere udgiftsmængde, som den juridiske enhed bundet sig til at betale. De specifikke bindende omkostningsbeløb beregnes på siden **Bindende omkostning**.
 -   **Resterende budget** – Mængden af det oprindelige budgetterede beløb, der stadig er tilgængeligt for den valgte omkostningslinje. Det resterende budgetbeløb, der er beregnet på siden **Vis Finans**.
 -   **Samlede omkostninger** – Summen af faktiske omkostninger, bindende omkostninger og de resterende budgetbeløb.
 
-På siden **Omkostningsstyring**under fanen **Afvigelse**kan du få vist en sammenligning mellem den samlede forventede omkostning og det oprindelige budget. Denne sammenligning viser forskelle mellem disse beløb. Derfor kan du se, hvor dataene ikke stemmer overens. Afvigelsesbeløbene beregnes på følgende måder:
+På siden **Omkostningsstyring** under fanen **Afvigelse** kan du få vist en sammenligning mellem den samlede forventede omkostning og det oprindelige budget. Denne sammenligning viser forskelle mellem disse beløb. Derfor kan du se, hvor dataene ikke stemmer overens. Afvigelsesbeløbene beregnes på følgende måder:
 
 -   **Oprindeligt budget** – Det beløb, der oprindeligt blev budgetteret for den markerede omkostningslinje. Det oprindelige budgetbeløb, der er beregnet på siden **Vis Finans**.
 -   **Samlede omkostninger** – Summen af faktiske omkostninger, bindende omkostninger og resterende budget som vist under fanen **Generelt**.
@@ -357,7 +357,7 @@ Hvis **Samlet budget** er valgt som metode til omkostningskontrol på siden **Pa
 -   **Bindende omkostning** – Det samlede beløb, der er blevet bundet for den valgte omkostningslinje.
 -   **Afvigelse** – Forskellen mellem summen af faktiske og bindende omkostninger og de samlede omkostninger. Afvigelsen viser, om der skal specificeres flere omkostninger for det samlede budget.
 
-På siden **Omkostningsstyring** under fanen **Afvigelse**kan du få vist forskellen mellem det samlede budget og det oprindelige budget ved at se følgende felter:
+På siden **Omkostningsstyring** under fanen **Afvigelse** kan du få vist forskellen mellem det samlede budget og det oprindelige budget ved at se følgende felter:
 
 -   **Oprindeligt budget**– Det beløb, der oprindeligt blev budgetteret for omkostningslinjen. Det oprindelige budget, der er beregnet på siden **Vis Finans**.
 -   **Budgetterede omkostninger i alt** – De samlede omkostninger, der oprindeligt blev budgetteret for omkostningslinjen. Budgetterede omkostninger i alt beregnes på siden **Vis Finans**.
@@ -394,7 +394,7 @@ Når du beregner udnyttelsesgraden for en arbejder, kan du bruge normtimer eller
 
 ### <a name="review-project-statements"></a>Gennemse projektopgørelser
 
-Du kan oprette en projektopgørelse for at få vist et hurtigt øjebliksbillede af status for et projekt. Når du kører en projektopgørelse, kan du angive de kriterier, der skal bruges til at beregne projektopgørelsen ved at foretage valg under fanen **Generelt**på siden **Projektopgørelser**. Du kan vælge at medtage eller udelade følgende oplysninger:
+Du kan oprette en projektopgørelse for at få vist et hurtigt øjebliksbillede af status for et projekt. Når du kører en projektopgørelse, kan du angive de kriterier, der skal bruges til at beregne projektopgørelsen ved at foretage valg under fanen **Generelt** på siden **Projektopgørelser**. Du kan vælge at medtage eller udelade følgende oplysninger:
 
 -   Projekttyper
 -   Transaktionstyper

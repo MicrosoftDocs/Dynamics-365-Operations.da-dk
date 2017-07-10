@@ -1,9 +1,9 @@
 ---
 title: "Budgetplanlægning"
-description: "Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Operations-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel"
+description: "Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,12 +31,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Operations-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel 
+Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel 
 
 <a name="prerequisites"></a>Forudsætninger 
 ------------------
 
-I dette selvstudium skal du have adgang til Dynamics 365 for Operations-miljøet med demodata til Contoso og være klargjort som administrator på forekomsten. Brug ikke privat browsertilstand til denne øvelse – log ud fra en anden konto i browseren, hvis det er nødvendigt, og log på med legitimationsoplysninger for administrator til Dynamics 365 for Operations. Når du logger på Microsoft Dynamics 365 for Operations, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Derved oprettes en vedvarende cookie, som Excel-appen aktuelt skal bruge. Hvis du logger på Microsoft Dynamics 365 for Operations ved hjælp af en anden webbrowser end Internet Explorer, bliver du derefter bedt om at logge på i Excel-appen. Når du klikker på "Log på" i Excel-appen, åbnes et pop op-vindue i Internet Explorer, og når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Hvis der ikke ser ud til at ske noget, når du klikker på "Log på" i Excel-appen, skal du rydde cachen med IE-cookies.
+I dette selvstudium skal du have adgang til Finance and Operations-miljøet med demodata til Contoso og være klargjort som administrator på forekomsten. Brug ikke privat browsertilstand til denne øvelse – log ud fra en anden konto i browseren, hvis det er nødvendigt, og log på med legitimationsoplysninger for administrator til Finance and Operations. Når du logger på Finance and Operations, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Derved oprettes en vedvarende cookie, som Excel-appen aktuelt skal bruge. Hvis du logger på Finance and Operations ved hjælp af en anden webbrowser end Internet Explorer, bliver du derefter bedt om at logge på i Excel-appen. Når du klikker på "Log på" i Excel-appen, åbnes et pop op-vindue i Internet Explorer, og når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Hvis der ikke ser ud til at ske noget, når du klikker på "Log på" i Excel-appen, skal du rydde cachen med IE-cookies.
 
 ## <a name="scenario-overview"></a>**Oversigt over scenarie**
 Lene arbejder som økonomichef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer sig, skal hun arbejde på at konfigurere virksomhedens budget for det kommende år. Forberedelse af budgettet ser ud som følger:
@@ -148,9 +148,9 @@ Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bru
 
 [![Autofyld](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Gå tilbage til Dynamics 365 for Operations, og opdater siden. Publicerede værdier vises i Dynamics 365 for Operations. 
+4.7. Gå tilbage til Finance and Operations, og opdater siden. Publicerede værdier vises i Finance and Operations. 
 
-[![Opdater](./media/screenshot23.png)](./media/screenshot23.png)
+[![Opdatér](./media/screenshot23.png)](./media/screenshot23.png)
 
 ## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan
 Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når brugeren åbner budgetplansdokumentet. Det er også muligt at skifte layout for budgetplandokumentet for at få vist samme data med forskellige vinkler. Da Lene nu har fået defineret kolonner, der skal bruges sammen med vores budgetplansdokumentet, skal hun oprette et dokumentlayout for budgetplanen, der skal ligne Excel-tabellen, som hun bruger til at oprette budgetdata (se afsnittet Oversigt over scenarie i denne øvelse) 
@@ -233,7 +233,7 @@ De faktiske beløb for tidligere år vil blive kopieret til budgettet for indev�
 
 [![Publicer](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Vend tilbage til budgetplansdokumentet i Dynamics 365 for Operations. Klik på Arbejdsgang &gt; Send for automatisk at godkende dokumentet
+9.3. Vend tilbage til budgetplansdokumentet i Finance and Operations. Klik på Arbejdsgang &gt; Send for automatisk at godkende dokumentet
 
 [![Automatisk godkendt](./media/screenshot37.png)](./media/screenshot37.png) 
 

@@ -1,39 +1,41 @@
 ---
 title: Konfigurer indstillinger for ordrebehandling
-description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Operations - Retail.
+description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Konfigurer indstillinger for ordrebehandling
+# <a name="set-up-order-processing-options"></a>Konfigurere indstillinger for ordrebehandling
 
 [!include[banner](includes/banner.md)]
 
 
-Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Operations - Retail. 
+Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Retail. 
 
-Detail og handel i Dynamics 365 for Operations understøtter flere detailkanaler, f.eks. onlinebutikker, fysiske butikker og callcentre. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Dette emne beskriver, hvordan du opretter et callcenter og konfigurerer indstillingerne for callcenteret. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. **Vigtigt:** Når den aktuelle Dynamics AX-bruger opretter salgsordrer, skal brugeren tildeles til callcentret som callcenterbruger, før callcenterarbejdsgangen kan bruges. Du kan bruge siden **Callcenter** til at aktivere eller deaktivere grupper af funktioner, der er unikke for callcentre. Følgende grupper af funktioner kan aktiveres:
+Retail understøtter flere detailkanaler, f.eks. onlinebutikker, fysiske butikker og callcentre. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Dette emne beskriver, hvordan du opretter et callcenter og konfigurerer indstillingerne for callcenteret. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. **Vigtigt:** Når en bruger opretter salgsordrer, skal brugeren tildeles til callcentret som callcenterbruger, før callcenterarbejdsgangen kan bruges. Du kan bruge siden **Callcenter** til at aktivere eller deaktivere grupper af funktioner, der er unikke for callcentre. Følgende grupper af funktioner kan aktiveres:
 
 -   **Ordrefuldførelse** – Denne gruppe omfatter funktioner, der er knyttet til betalinger og færdiggørelse på siden **Salgsordre**.
 -   **Dirigeret salg** – Denne gruppe indeholder funktioner, der er relateret til kildekoder, scripts og kataloganmodninger.

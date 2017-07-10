@@ -1,15 +1,15 @@
 ---
 title: "Periodisering af projektomkostninger på købsleverancer"
-description: "Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 for Operations."
+description: "Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 for Operations. 
+Dette emne beskriver, hvordan periodiserede projektomkostninger fra købsleverancer kan spores i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Fakturaer for et projekt ankommer ofte senere end varerne og tjenesterne er leveret, og det kan have betydelig indvirkning på projektets nøgletal (KPI'er). Det er vigtigt at være i stand til at spore disse transaktioner i både finansielle rapporter og projektrapporter.
 
@@ -38,7 +38,7 @@ Følgende eksempelscenarie illustrerer dette.
 
 Contoso Consulting har startet et nyt projekt med skyinstallation. Der oprettes en indkøbsordre til køb af en computer til projektet. Computeren koster $1500, og installationsservices koster $150. Leverandøren har leveret og installeret på computeren, men fakturaen er endnu ikke har nået frem til Contoso Consulting. Projektlederen vil gerne se periodiserede projektomkostninger på $1650, før fakturaen er leveret. Denne omkostning skal også afspejles i virksomhedens regnskab ved månedsafslutningen. 
 
-De påløbne omkostninger skal registreres både på økonomisk niveau og projektniveau til rapporteringsformål. I Dynamics 365 for Operations kan den økonomiske opdatering af produktkvitteringen spores for kategorierne vare og indkøb. 
+De påløbne omkostninger skal registreres både på økonomisk niveau og projektniveau til rapporteringsformål. I Finance and Operations kan den økonomiske opdatering af produktkvitteringen spores for kategorierne vare og indkøb. 
 
 For varer skal du på siden **Kreditorparametre** vælge indstillingen **Bogfør produktkvittering i finans**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +73,7 @@ Det er muligt at knytte indkøbskategorier til projektkategorier på siden **Ind
 
 **Trin 3:** Opret en kladdekreditorfaktura. 
 
-I Dynamics 365 for Operations påvirker bogføring af en produktkvittering ikke projektoplysninger. Som en løsning kan du generere en kladdekreditorfaktura lige efter bogføringen af købskvitteringen. Gå til siden **indkøbsordre** &gt; **fanen Faktura** &gt; **Generer** &gt; **Faktura**. Dette opretter et ventende fakturadokument, der opdaterer projektoplysningerne. 
+I Finance and Operations påvirker bogføring af en produktkvittering ikke projektoplysninger. Som en løsning kan du generere en kladdekreditorfaktura lige efter bogføringen af købskvitteringen. Gå til siden **indkøbsordre** &gt; **fanen Faktura** &gt; **Generer** &gt; **Faktura**. Dette opretter et ventende fakturadokument, der opdaterer projektoplysningerne. 
 
 Oprettelse af en kladdekreditorfaktura genererer ventende projektposteringer. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

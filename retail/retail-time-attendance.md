@@ -1,27 +1,29 @@
 ---
 title: "Detailtid og fremmøde"
-description: "Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Operations - Retail."
+description: "Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Retail."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 021f0ce8ee73ede482b2b74fce93f61a886288fc
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b458d1938f49a2f33f7dd3ce3062880f0d4d7bfc
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -31,7 +33,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Operations - Retail. 
+Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Retail. 
 
 <a name="manage-worker-setup-and-scheduling"></a>Administrer arbejderopsætning og -planlægning
 ----------------------------------
@@ -122,7 +124,7 @@ Om POS:
 -   Du kan bruge aktivitetstypen og butiksfiltre til at filtrere tidsregistreringer.
 
 ## <a name="process-and-manage-time-registrations"></a>Behandl og administrer tidsregistreringer
-En Dynamics 365 for Operations - Retail-bruger følger arbejdsgangen for at beregne, godkende og overføre tidsregistreringer til løn.
+En Dynamics 365 for Retail-bruger følger arbejdsgangen for at beregne, godkende og overføre tidsregistreringer til løn.
 
 ### <a name="primary-operations"></a>Primære handlinger
 

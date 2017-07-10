@@ -3,13 +3,13 @@ title: Oversigt over positive betalinger
 description: "Denne artikel indeholder oplysninger om positiv betaling, som bruges til at generere en elektronisk liste over checks, der kan indløses i en bank."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88463
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a9f3f2a5c456b4ec515b912bb7470b549684a5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7c60a7f9444913c5475d08f959944d463cfcbab0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -42,7 +42,7 @@ Filer til positiv betaling oprettes ved hjælp af dataenheder. Før du genererer
 
 For hver bankkonto, du vil generere oplysninger om positiv betaling for, skal du tildele formatet for positiv betaling. Når du har genereret betalinger, kan du oprette en fil til positiv betaling for en enkelt juridisk enhed og en enkelt bankkonto. Du kan også samtidig generere filer til positiv betaling for flere juridiske enheder og bankkonti. 
 
-Når de checks, der er angivet i en fil til positiv betaling, er betalt, modtager du et bekræftelsesnummer fra din bank. Du kan derefter bekræfte filen til positiv betaling i Microsoft Dynamics 365 for Operations. 
+Når de checks, der er angivet i en fil til positiv betaling, er betalt, modtager du et bekræftelsesnummer fra din bank. Du kan derefter bekræfte filen til positiv betaling i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Hvis du vil ændre en fil til positiv betaling, kan du tilbagekalde den. For hver check i filen til positiv betaling, nulstilles derefter det felt, der angiver, om checken er inkluderet i en fil til positiv betaling.
 

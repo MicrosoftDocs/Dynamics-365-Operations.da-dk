@@ -1,27 +1,27 @@
 ---
 title: Oversigt over eksterne detailenheder
 description: "I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 268444
-ms.assetid: 2ea93e43-8019-49a0-a7f8-325565ebc52d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f7c47c3dc22b2f3c2ea08085326be08011eca4e
+ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
+ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -33,16 +33,15 @@ ms.lasthandoff: 05/25/2017
 
 I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
 
-<a name="concepts"></a>Begreber
---------
+## <a name="concepts"></a>Begreber
 
 ### <a name="pos-registers"></a>Kasseapparater
 
-Navigation: Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.
 
 ### <a name="devices"></a>Enheder
 
-Navigation: Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -66,11 +65,11 @@ Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktion
 
 ### <a name="hardware-station"></a>Hardwarestation
 
-Navigation: Klik på **Detail og handel** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmet til Windows. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der opnås adgang via et netværk.
+Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmet til Windows. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der opnås adgang via et netværk.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
-Navigation: Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**. Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation. Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.
+Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardware-profiler**. Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation. Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.
 
 ## <a name="devices-classes"></a>Enhedsklasser
 Eksterne POS-enheder er typisk opdelt i klasser. Dette afsnit beskriver og giver et overblik over de enheder, der understøttes af Modern POS.
@@ -118,12 +117,12 @@ Understøttelse af betalingsenheder er implementeret via betalingsconnectoren. B
 ## <a name="supported-interfaces"></a>Understøttede grænseflader
 ### <a name="opos"></a>OPOS
 
-For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft Dynamics 365 for Operations - Retail, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes i Microsoft Dynamics 365 for Operations - Retail. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
+For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft Dynamics 365 for Retail, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes i Microsoft Dynamics 365 for Retail. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
 
--   **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'erne bruges til at teste POS-komponenten af Microsoft Dynamics 365 for Operations - Retail. Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Operations - Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
+-   **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'erne bruges til at teste POS-komponenten af Microsoft Dynamics 365 for Retail. Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
 -   **Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden. Typisk leveres serviceobjektet til en enhed af enhedsproducenten. I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted. Et nyere serviceobjekt kan f.eks. være tilgængeligt. Se dokumentationen til hardwaren for at finde adressen på producentens websted.
 
-[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. **Bemærk:** OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Operations - Retail skal først understøtte den pågældende enhedstype eller -klasse gennem OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
+[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. **Bemærk:** OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller -klasse gennem OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
 
 ### <a name="windows"></a>Windows
 
@@ -133,7 +132,7 @@ Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en ten
 -   Enheder, der er tilsluttet via printeren ("sammenkoblet") fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
 -   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i detailhandlen, f.eks. papirafskæring eller bilagsudskrivning.
 
-Hvis OPOS-kontrolelementer er tilgængelige for den Windows-printer, du bruger, skulle printeren stadig fungere korrekt med Microsoft Dynamics 365 for Operations - Retail.
+Hvis OPOS-kontrolelementer er tilgængelige for den Windows-printer, du bruger, skulle printeren stadig fungere korrekt med Microsoft Dynamics 365 for Retail.
 
 ### <a name="universal-windows-platform"></a>Universel Windows-platform
 
@@ -323,7 +322,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <td>OPOS</td>
 </tr>
 <tr class="odd">
-<td>Betalingsterminal </td>
+<td>Betalingsterminal</td>
 <td><ul>
 <li>Understøttelse af brugerdefineret enhed</li>
 <li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
@@ -407,7 +406,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <td>OPOS</td>
 </tr>
 <tr class="even">
-<td>Betalingsterminal </td>
+<td>Betalingsterminal</td>
 <td><ul>
 <li>Understøttelse af brugerdefineret enhed</li>
 <li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
@@ -463,7 +462,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Betalingsterminal </td>
+<td>Betalingsterminal</td>
 <td><ul>
 <li>Understøttelse af brugerdefineret enhed</li>
 <li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
@@ -473,7 +472,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </table>
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration til understøttede scenarier
-Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md). **Bemærk:** I Microsoft Dynamics 365 for Operations version 1611 bruges hardwarestationsprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
+Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md). **Bemærk:** I Microsoft Dynamics 365 for Retail version 1611 bruges hardwarestationsprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)
 
@@ -482,7 +481,7 @@ Denne konfiguration er den mest typiske konfiguration for traditionelle, faste P
 1.  Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.
 2.  Tilknyt hardwareprofilen til POS-kasseapparatet.
 3.  Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges. En beskrivelse er valgfri. **Bemærk:** Du behøver ikke at angive andre egenskaber for hardwarestationen. Alle andre nødvendige oplysninger, f.eks. hardwareprofilen, kommer fra selve kasseapparatet.
-4.  Klik på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**.
+4.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Installer og aktivér Modern POS til Windows.
@@ -501,7 +500,7 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardware
     -   **Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes. Dette id leveres af kreditkortprocessoren.
     -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
 
-4.  Klik på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**.
+4.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Installer hardwarestationen. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
@@ -524,12 +523,12 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
     -   **Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre.
     -   **Beskrivelse** – Tekst, der hjælper med til at identificere hardwarestationen, f.eks. **Returneringer** eller **Foran i butikken**.
     -   **Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.
-    -   **Hardwareprofil** – For delte hardwarestationer skal hver hardwarestation have en hardwareprofil. Hardwareprofiler kan deles mellem hardwarestationer, men de skal være knyttet til hver hardwarestation. Vi anbefaler desuden, at du bruger delte skift, når flere enheder bruger den samme delte hardwarestation. Hvis du vil konfigurere et delt skift, skal du klikke på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**. For hver delt hardwareprofil skal du vælge pengeskuffen og angive indstillingen **Skuffe til delt skift** til **Ja**.
+    -   **Hardwareprofil** – For delte hardwarestationer skal hver hardwarestation have en hardwareprofil. Hardwareprofiler kan deles mellem hardwarestationer, men de skal være knyttet til hver hardwarestation. Vi anbefaler desuden, at du bruger delte skift, når flere enheder bruger den samme delte hardwarestation. Hvis du vil konfigurere et delt skift, skal du klikke på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**. For hver delt hardwareprofil skal du vælge pengeskuffen og angive indstillingen **Skuffe til delt skift** til **Ja**.
     -   **Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes. Dette id leveres af kreditkortprocessoren.
     -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
 
 4.  Gentag trinene 2 og 3 for hver yderligere hardwarestation, der skal bruges i butikken.
-5.  Klik på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**.
+5.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 6.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 7.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
 8.  Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
@@ -542,7 +541,7 @@ Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwares
 14. Vælg den hardwarestation, der skal bruges, og klik derefter på **Par**.
 15. Gentag trin 14 for hver hardwarestation, som Modern POS bruger.
 16. Når alle de påkrævede hardwarestationer er parret, skal du klikke på **Luk**.
-17. Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv. **Bemærk:** Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
+17. Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv. **Bemærk:** Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
 
 ## <a name="extensibility"></a>Udvidelsesmuligheder
 Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestationen i [Udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md).
@@ -575,7 +574,7 @@ I henhold til de aktuelle sikkerhedsstandarder, skal følgende indstillinger bru
 **Bemærk:** Det er meget vigtigt, at du gennemgår sikkerhedsretningslinjer for IIS og PCI-kravene (Payment Card Industry).
 
 ## <a name="peripheral-simulator"></a>Ekstern simulator
-Du kan finde oplysninger under [Simulator for eksterne detailenheder](retail-peripheral-simulator.md).
+Du kan finde oplysninger under [Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsofttested-peripheral-devices"></a>Microsoft-testede eksterne enheder
 ### <a name="ipc-built-in-hardware-station"></a>IPC-hardwarestation (indbygget)
@@ -609,7 +608,7 @@ De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation,
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
 
-#### <a name="payment-terminal"></a>Betalingsterminal 
+#### <a name="payment-terminal"></a>Betalingsterminal
 
 | Producent | Model | Interface | Bemærkninger                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -682,7 +681,7 @@ De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hard
 |--------------|--------|-----------|-------------------------------------------------|
 | VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
 
-#### <a name="payment-terminal"></a>Betalingsterminal 
+#### <a name="payment-terminal"></a>Betalingsterminal
 
 | Producent | Model | Interface | Bemærkninger                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -740,7 +739,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 | Star         | TSP100   | OPOS      | Kræver TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | Drevet via USB               |
 
-#### <a name="payment-terminal"></a>Betalingsterminal 
+#### <a name="payment-terminal"></a>Betalingsterminal
 
 | Producent | Model | Interface | Bemærkninger                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -785,7 +784,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 -   Hvis den eksterne detailenhed deles med flere POS-enheder, skal du kontrollere, at den tilhører en af følgende kategorier:
     -   Pengeskuffe
     -   Printer til modtagelse
-    -   Betalingsterminal 
+    -   Betalingsterminal
 
     Hvis den eksterne enhed ikke tilhører en af disse kategorier, er hardwarestationen ikke beregnet til at aktivere den eksterne enhed til at blive delt mellem flere POS-enheder.
 -   Nogle gange kan enhedsdrivere forårsage, at de fælles kontrolobjekter (CCO'er) holder op med at fungere korrekt. Hvis en enhed er blevet installeret for nylig, men den ikke fungerer korrekt, eller du bemærker andre problemer, kan du ofte løse problemet ved at geninstallere CCO'erne. Du kan hente CCO'erne på <http://monroecs.com/oposccos_current.htm>.
@@ -806,7 +805,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 <a name="see-also"></a>Se også
 --------
 
-[Simulator for eksterne detailenheder](retail-peripheral-simulator.md)
+[Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md)
 
 
 

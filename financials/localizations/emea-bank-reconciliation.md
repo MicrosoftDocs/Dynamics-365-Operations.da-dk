@@ -3,7 +3,7 @@ title: Oversigt over bankkontoudtog og betalingsafstemning for EU
 description: "Dette emne indeholder en oversigt over de funktioner, du kan bruge til at afstemme betalingsoplysninger fra banker i formater, der bruges af europæiske lande."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c59bec4493612f7cd62ca3ed9583e400ccda32c6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 5e4f3fdce97cf05a8f54873cd8d80364b1505bd3
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,21 +33,21 @@ ms.lasthandoff: 05/25/2017
 
 Dette emne indeholder en oversigt over de funktioner, du kan bruge til at afstemme betalingsoplysninger fra banker i formater, der bruges af europæiske lande.
 
-Du kan importere posteringer fra banker i Microsoft Dynamics 365 for Operations og udligner dem mod eksisterende poster. I Europa kan du gøre dette i følgende scenarier:
+Du kan importere posteringer fra banker i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition og udligner dem mod eksisterende poster. I Europa kan du gøre dette i følgende scenarier:
 
 -   Ved import af bankkontoudtog
 -   Ved import af betalinger
 -   Ved import af returfiler.
 
 ## <a name="bank-statements"></a>Bankkontoudtog
-Et *bankkontoudtog* eller *kontoudtog* er en oversigt over de finansielle transaktioner, der er sket i en given periode på en bankkonto, som indehaves af en virksomhed hos et pengeinstitut. Du kan importere et bankkontoudtog i Dynamics 365 for Operations. Det er vigtigt at udligne importerede posteringer med eksisterende posteringer samt kontrollere start- og slutsaldi på bankkontiene. Følgende liste indeholder de understøttede formater i Europa.
+Et *bankkontoudtog* eller *kontoudtog* er en oversigt over de finansielle transaktioner, der er sket i en given periode på en bankkonto, som indehaves af en virksomhed hos et pengeinstitut. Du kan importere et bankkontoudtog i Finance and Operations. Det er vigtigt at udligne importerede posteringer med eksisterende posteringer samt kontrollere start- og slutsaldi på bankkontiene. Følgende liste indeholder de understøttede formater i Europa.
 
 -   Europæiske filformater til avanceret bankafstemning. Du kan finde flere oplysninger under [Oversigt over avancerede bankafstemninger](../cash-bank-management/advanced-bank-reconciliation-overview.md).
 -   Filformat for ISO 20022 camt.053-bankkontomeddelelse
 -   Filformat for CODA-bankontoudtog. Du kan finde flere oplysninger under [CODA-bankkontoudtog](emea-bel-coda-bank-statement-import.md).
 
 ## <a name="customer-and-vendor-payments-import-and-return-messages"></a>Import- og returmeddelelser for debitor- og kreditorbetalinger
-Ud over et bankkontoudtog kan banker levere bestemte meddelelser, der indeholder oplysninger om debitor- og kreditorbetalinger, som kan importeres i Dynamics 365 for Operations og afstemmes med debitor-og kreditortransaktioner. Når en virksomhed skal modtage oplysninger om posteringer af indgående debitorbetalinger fra banken, kan importformaterne bruges. For virksomheder, der bruger direkte debitering og pengeoverførsel, kan returmeddelelser modtages til opdatering af status for betalinger, der blev eksporteret tidligere. Forskellen mellem importformater og returformater er, at formålet med returneringer primært er at opdatere allerede oprettede betalingskladdelinjer (de kan være oprettet, da direkte debitering eller kreditoverførsler blev startet) i stedet for at oprette nye linjer. Nogle komplekse importformater kan også omfatte returscenarier. Følgende eksempel viser, hvordan denne fordeling bør implementeres.
+Ud over et bankkontoudtog kan banker levere bestemte meddelelser, der indeholder oplysninger om debitor- og kreditorbetalinger, som kan importeres i Finance and Operations og afstemmes med debitor-og kreditortransaktioner. Når en virksomhed skal modtage oplysninger om posteringer af indgående debitorbetalinger fra banken, kan importformaterne bruges. For virksomheder, der bruger direkte debitering og pengeoverførsel, kan returmeddelelser modtages til opdatering af status for betalinger, der blev eksporteret tidligere. Forskellen mellem importformater og returformater er, at formålet med returneringer primært er at opdatere allerede oprettede betalingskladdelinjer (de kan være oprettet, da direkte debitering eller kreditoverførsler blev startet) i stedet for at oprette nye linjer. Nogle komplekse importformater kan også omfatte returscenarier. Følgende eksempel viser, hvordan denne fordeling bør implementeres.
 
 ##### <a name="import-formats"></a>Importformater
 

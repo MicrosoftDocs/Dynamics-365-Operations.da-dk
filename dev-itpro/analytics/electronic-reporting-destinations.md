@@ -3,14 +3,14 @@ title: Destinationer for elektronisk rapportering
 description: "Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5fb008420f82abd7983ee26854f84330705c0c01
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fb2aeee1f38823e7ea96071f773e8448d65ba8ff
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -36,9 +36,9 @@ Du kan konfigurere en destination til hver formatkonfiguration for elektronisk r
 Konfigurationer af formater for elektronisk rapportering (ER) består normalt af mindst én output-komponent: en fil. Normalt indeholder konfigurationer flere filoutputkomponenter af forskellige typer (for eksempel XML, TXT eller XLSX), der er grupperet i enten en enkelt mappe eller flere mapper. Med styring af ER-destination kan du forudkonfigurere, hvad sker der, når hver komponent køres. Når en konfiguration køres, åbnes som standard en dialogboks, hvor brugeren kan gemme eller åbne filen. Samme funktionsmåde bruges også, når du importerer en ER-konfiguration og ikke konfigurerer særlige destinationer for den. Når der oprettes en destination for en vigtig outputkomponent, tilsidesætter denne destination standardindstillingen, og mappen eller filen sendes på grundlag af destinationens indstillinger.
 
 ## <a name="availability-and-general-prerequisites"></a>Tilgængelighed og generelle forudsætninger
-Funktionerne for ER-destinationer findes ikke i Microsoft Dynamics 365 for Operations 7.0-frigivelsen (februar 2016). Derfor skal du installere Microsoft Dynamics 365 for Operations (november 2016 versionen) for at kunne bruge alle de funktioner, der er beskrevet i dette emne. Du kan også vælge at installere en af følgende forudsætninger. Du skal dog være opmærksom på, at disse alternativer giver en mere begrænset ER destinationsoplevelse.
+Funktionerne for ER-destinationer findes ikke i Microsoft Dynamics AX 7.0 (februar 2016). Derfor skal du installere Microsoft Dynamics 365 for Operations version 1611 (november 2016) for at kunne bruge alle de funktioner, der er beskrevet i dette emne. Du kan også vælge at installere en af følgende forudsætninger. Du skal dog være opmærksom på, at disse alternativer giver en mere begrænset ER destinationsoplevelse.
 
--   Microsoft Dynamics 365 for Operations-programversion 7.0.1 (maj 2016)
+-   Microsoft Dynamics AX-programversion 7.0.1 (maj 2016)
 -   ER destinationsstyring [programhotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 Du kan konfigurere destinationer kun for ER-konfigurationer, der er importeret, og for de formater, der er tilgængelige på siden **Konfigurationer for elektronisk rapportering**.
@@ -61,7 +61,7 @@ Forskellige typer destinationer understøttes. Du kan deaktivere eller aktivere 
 
 ### <a name="email-destination"></a>Maildestination
 
-Indstil **Aktiveret**til **Ja** for at sende en outputfil via mail. Når denne indstilling er aktiveret, kan du angive e-mailmodtagere og redigere e-mailens emne og brødtekst. Du kan konfigurere konstanttekster til e-mailens emne og brødtekst, eller du kan bruge ER formler til dynamisk at oprette e-mailtekster. Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan udføres på samme måde, som funktionen Udskriftsstyring i Dynamics 365 for Operations udfører den. Du kan også oversætte en e-mailadresse ved hjælp af en direkte reference til ER-konfigurationen via en formel.
+Indstil **Aktiveret** til **Ja** for at sende en outputfil via mail. Når denne indstilling er aktiveret, kan du angive e-mailmodtagere og redigere e-mailens emne og brødtekst. Du kan konfigurere konstanttekster til e-mailens emne og brødtekst, eller du kan bruge ER formler til dynamisk at oprette e-mailtekster. Du kan konfigurere e-mailadresser for ER på to måder. Konfigurationen kan udføres på samme måde, som funktionen Udskriftsstyring i Finance and Operations udfører den. Du kan også oversætte en e-mailadresse ved hjælp af en direkte reference til ER-konfigurationen via en formel.
 
 ### <a name="email-address-types"></a>E-mailadressetyper
 
@@ -89,15 +89,15 @@ Brug denne e-mailtype, hvis den konfiguration, du bruger, har en node i datakild
 
 [![Tildeling af en mailadresses datakilde til en maildestination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
 
-**Bemærk:** En SMTP-server (Simple Mail Transfer Protocol) skal konfigureres og være tilgængelig. Du kan angive din SMTP-server i Dynamics 365 for Operations i **Systemadministration** &gt; **Konfiguration** &gt; **Mail** &gt; **E-mail-parametre**.
+**Bemærk:** En SMTP-server (Simple Mail Transfer Protocol) skal konfigureres og være tilgængelig. Du kan angive din SMTP-server i Finance and Operations i **Systemadministration** &gt; **Konfiguration** &gt; **Mail** &gt; **E-mail-parametre**.
 
 ### <a name="archive-destination"></a>Arkivdestination
 
-Du kan bruge denne indstilling til at sende output til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Indstil **Aktiveret** til **Ja**for at sende output til en destination, der er defineret af den valgte dokumenttype. Kun dokumenttyper, hvor gruppen er indstillet til **Fil**, kan vælges. Du definerer dokumenttyper i **Virksomhedsadministration** &gt; **Dokumentstyring** &gt; **Dokumenttyper**. Konfigurationen for ER-destinationer svarer til konfigurationen for dokumentstyringssystemet.
+Du kan bruge denne indstilling til at sende output til en Microsoft SharePoint-mappe eller Microsoft Azure Storage. Indstil **Aktiveret** til **Ja** for at sende output til en destination, der er defineret af den valgte dokumenttype. Kun dokumenttyper, hvor gruppen er indstillet til **Fil**, kan vælges. Du definerer dokumenttyper i **Virksomhedsadministration** &gt; **Dokumentstyring** &gt; **Dokumenttyper**. Konfigurationen for ER-destinationer svarer til konfigurationen for dokumentstyringssystemet.
 
 [![Siden Dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 
-Lokaliteten bestemmer, hvor filen gemmes. Når destinationen **Arkiv** er aktiveret, kan resultaterne af konfigurationskørslen gemmes i jobarkivet. Du kan få vist resultaterne i **Virksomhedsadministration** &gt; **elektronisk rapportering** &gt; **Elektronisk rapportering af arkiverede job**. **Bemærk!** Du kan vælge en dokumenttype til jobarkivet i Dynamics 365 for Operations i **Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering** &gt; **Parametre til elektronisk rapportering**.
+Lokaliteten bestemmer, hvor filen gemmes. Når destinationen **Arkiv** er aktiveret, kan resultaterne af konfigurationskørslen gemmes i jobarkivet. Du kan få vist resultaterne i **Virksomhedsadministration** &gt; **elektronisk rapportering** &gt; **Elektronisk rapportering af arkiverede job**. **Bemærk!** Du kan vælge en dokumenttype til jobarkivet i Finance and Operations i **Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Elektronisk rapportering** &gt; **Parametre til elektronisk rapportering**.
 
 #### <a name="sharepoint"></a>SharePoint
 
@@ -119,7 +119,7 @@ Hvis du indstiller **Aktiveret** til **Ja**, oprettes der et eksempel på output
 
 ### <a name="power-bi-destination"></a>Power BI-destination
 
-Indstil **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arrangere overførslen af data fra din forekomst af Microsoft Dynamics 365 for Operations til Power BI-tjenester. De overførte filer gemmes på en forekomst af Microsoft SharePoint Server, der skal konfigureres til dette formål. Du kan finde flere oplysninger under [Brug en konfiguration af elektronisk rapportering til at give Power BI data fra Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Tip:** Hvis du vil tilsidesætte standardindstillingen (dvs dialogboksen for en konfiguration), kan du oprette en reference til destinationen og en fildestination for den vigtigste outputkomponent og derefter deaktivere alle destinationer.
+Indstil **Aktiveret** til **Ja** for at bruge din ER-konfiguration til at arrangere overførslen af data fra din forekomst af Finance and Operations til Microsoft Power BI-tjenester. De overførte filer gemmes på en forekomst af Microsoft SharePoint Server, der skal konfigureres til dette formål. Du kan finde flere oplysninger under [Bruge en konfiguration af elektronisk rapportering til at levere Power BI-data fra Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Tip:** Hvis du vil tilsidesætte standardindstillingen (dvs dialogboksen for en konfiguration), kan du oprette en reference til destinationen og en fildestination for den vigtigste outputkomponent og derefter deaktivere alle destinationer.
 
 ## <a name="security-considerations"></a>Sikkerhedsovervejelser
 To typer rettigheder og opgaver bruges til ER-destinationer. Én type styrer muligheden for at opretholde de samlede destinationer, der er konfigureret for en juridisk enhed (dvs. den styrer adgang til siden **Destinationer for elektronisk rapportering**). Den anden type styrer muligheden for at en programbruger på kørselstidspunktet kan tilsidesætte de destinationsindstillinger, der er konfigureret af en ER udvikler eller funktionel konsulent i elektronisk rapportering.
@@ -144,7 +144,7 @@ Nej. Standard Azure Blob-lageret, der er defineret og anvendes til dokumentstyri
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Hvad er formålet med fildestinationen i indstillingerne for destinationen? Hvad gør denne indstilling?
 
-**Fil**destinationen bruges til at styre en dialogboks. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises en Gem- eller Åbn-dialogboks, når der oprettes en outputfil.
+**Fil**-destinationen bruges til at styre en dialogboks. Hvis du aktiverer denne destination, eller hvis ingen destination er defineret for en konfiguration, vises en Gem- eller Åbn-dialogboks, når der oprettes en outputfil.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Kan du give et eksempel på den formel, der refererer til en kreditorkonto, som jeg kan sende mail til?
 

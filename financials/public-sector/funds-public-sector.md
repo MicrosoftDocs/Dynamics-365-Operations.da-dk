@@ -3,7 +3,7 @@ title: Midler i den offentlige sektor
 description: "Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ecf97c1d826556e0902539c3f65571269017da11
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 21d610c169878b156aeefe1d20bd6ea183deae79
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -55,11 +55,11 @@ GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepte
     -   Forvaltningsmidler
     -   Agenturmidler
 
-De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for Operations. 
+De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Middeltyper defineres i henhold til organisationens behov. I de fleste tilfælde skal du angive de otte typer af GAAP-midler. Middeltyperne grupperer midler til detaljeret finansiel opfølgning og rapportering. Mange midler kan indgå i en enkelt overordnet rapport, men de enkelte midler forbliver en særskilt finansiel og regnskabsmæssig enhed med sin egen finans, resultatopgørelse og egne balancerapporter. 
 
-Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.
+Hvert enkelt middel skal have et entydigt middelnummer. I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.
 
 ### <a name="example"></a>Eksempel
 
@@ -95,7 +95,7 @@ Følgende tabel viser disse midler grupperet efter klasse og middeltype.
 |                |                        | 3914            | Domstolsansatte                  |
 
 ## <a name="how-are-financial-dimensions-used-with-funds"></a>Hvordan bruges økonomiske dimensioner med midler?
-Hvert enkelt middel skal have et entydigt middelnummer. I Dynamics 365 for Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel. 
+Hvert enkelt middel skal have et entydigt middelnummer. I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel. 
 
 Offentlige organisationer kræver normalt afstemte poster for økonomiske dimensioner, der er relateret til midler. Når en økonomisk dimension eller en kombination af dimensioner er markeret til at kræve afstemte poster, vil systemet ikke bogføre en transaktion, hvor debet ikke svarer til kredit for den økonomiske dimension.
 

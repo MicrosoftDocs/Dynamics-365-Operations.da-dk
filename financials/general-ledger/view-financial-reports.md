@@ -1,27 +1,27 @@
 ---
 title: "Vis økonomiske rapporter"
-description: "I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics AX. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder."
-author: RobinARH
+description: "I denne artikel beskrives det, hvordan du kan se og undersøge økonomiske rapporter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder."
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
-ms.author: aolson
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b02dbc0181c08611674cdf571075c20d78cebdc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 102031174417a33b12c32f6b8185556b8c4701e5
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics AX. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+I denne artikel beskrives det, hvordan du kan se og undersøge økonomiske rapporter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
 <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 ----------------------------
@@ -64,7 +64,7 @@ Du kan opdatere en økonomisk rapport, så den viser de nyeste data for den peri
 Når du opdaterer en økonomisk rapport, kan du publicere den. Andre personer i organisationen vil derefter kunne se den. Hvis du vil publicere en rapport i handlingsruden, skal du klikke på **Publicer**.
 
 ## <a name="display-a-financial-report-in-a-different-currency"></a>Få vist en økonomisk rapport i en anden valuta
-En økonomisk rapport kan vises når som helst vises i enhver valuta. For at få vist en rapport i en anden valuta i handlingsruden skal du klikke på **Valuta** og derefter vælge en valuta. Rapporten er oversat til denne valuta, og resultaterne vises. Alle valutakoder eller -symboler, der er inkluderet som en del af rapportdesignet, opdateres for at afspejle den nye valuta. De valutaer, der vises på listen, er rapporteringsvalutaer, der er konfigureret i Microsoft Dynamics AX.
+En økonomisk rapport kan vises når som helst vises i enhver valuta. For at få vist en rapport i en anden valuta i handlingsruden skal du klikke på **Valuta** og derefter vælge en valuta. Rapporten er oversat til denne valuta, og resultaterne vises. Alle valutakoder eller -symboler, der er inkluderet som en del af rapportdesignet, opdateres for at afspejle den nye valuta. De valutaer, der vises på listen, er rapporteringsvalutaer, der er konfigureret i Finance and Operations.
 
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Få vist en opsummeret oversigt over den økonomiske rapport
 En økonomisk rapport kan indeholde detaljelinjerne og oversigtslinjer. Detaljelinjer er linjer, der indeholder hovedkontiene eller dimensionerne. Oversigts linjer er linjer til beskrivelse, total og beregning. For at få vist oversigtslinjerne i en rapport skal du klikke på **Vis** og derefter klikke på **Kun oversigtslinjer**. Rapporten er skjult og viser kun oversigtslinjerne. Klik for at se detaljelinjerne sammen med oversigtslinjerne, Klik på **Vis**, og klik derefter på **Kun oversigtslinjer** igen.
@@ -88,7 +88,8 @@ Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke p�
 <a name="see-also"></a>Se også
 --------
 
-[Økonomirapportering for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Økonomirapportering for Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 
 

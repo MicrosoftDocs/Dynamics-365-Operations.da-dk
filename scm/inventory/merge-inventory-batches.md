@@ -3,14 +3,14 @@ title: Flet lagerbatches
 description: Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -91,7 +91,7 @@ Nej, du kan kun flette batches, der har det samme sted og de samme lagringsdimen
 Nej, du kan kun flette det fulde antal partier. Batchfletfunktionen er beregnet som en lagerfunktion, og ikke en produktionsfunktion.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Hvad hvis batchene har forskellige batchattributværdier?
-Når du vælger kildebatches, der skal kombineres i det flettede batch, vil Microsoft Dynamics 365 for Operations kontrollere, om alle batches har karakteristika eller attributværdier. Når en attributværdi er den samme, foreslås der en værdi for det flettede batch. Du kan ændre denne værdi. Attributværdier, der ikke er de samme, udfyldes ikke for det flettede batch, og du kan angive disse værdier manuelt. Hvis batchattributtypen for attributværdien er et heltal eller en brøk, og værdierne er ikke de samme for alle kildebatches, beregnes værdien ved hjælp af en beregning af vægtet gennemsnit. De beregnede værdier rundes op eller ned til det nærmeste interval. Hvis værdien er tom for et kildebatch, medtages batchet og dets mængde ikke i beregningen. **Eksempel** Følgende eksempel viser en vægtet gennemsnitsberegning for et flettet batch. To af kildebatchene har en tom værdi for en batchattributtype, der er et heltal. Følgende attribut tildeles kildebatchene.
+Når du vælger kildebatches, der skal kombineres i flettede batches, vil Finance and Operations kontrollere, om alle batches har karakteristika eller attributværdier. Når en attributværdi er den samme, foreslås der en værdi for det flettede batch. Du kan ændre denne værdi. Attributværdier, der ikke er de samme, udfyldes ikke for det flettede batch, og du kan angive disse værdier manuelt. Hvis batchattributtypen for attributværdien er et heltal eller en brøk, og værdierne er ikke de samme for alle kildebatches, beregnes værdien ved hjælp af en beregning af vægtet gennemsnit. De beregnede værdier rundes op eller ned til det nærmeste interval. Hvis værdien er tom for et kildebatch, medtages batchet og dets mængde ikke i beregningen. **Eksempel** Følgende eksempel viser en vægtet gennemsnitsberegning for et flettet batch. To af kildebatchene har en tom værdi for en batchattributtype, der er et heltal. Følgende attribut tildeles kildebatchene.
 
 | Egenskab | Minimum | Multiplum | Maksimum |
 |-----------|---------|-----------|---------|

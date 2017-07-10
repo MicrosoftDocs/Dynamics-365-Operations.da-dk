@@ -1,6 +1,6 @@
 ---
 title: "Navigationssøgning"
-description: "I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Operations."
+description: "I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Finance and Operations."
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25991
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: df804f79d6639c118e3e0534a21423f207ceb2c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 431165d541c9a3b63100a93108ee770df8e88aa8
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Operations.
+I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Finance and Operations.
 
-Dynamics 365 for Operations giver funktionalitet til en lang række brancher og vertikaler. Programmet indeholder en række områder og sider, der kan hjælpe dig med at udføre forskellige opgaver. Du kan hurtigt finde de sider, som du skal bruge til at udføre opgaverne, med brug af funktionen til navigationssøgning. 
+Finance and Operations giver funktionalitet til en lang række brancher og vertikaler. Programmet indeholder en række områder og sider, der kan hjælpe dig med at udføre forskellige opgaver. Du kan hurtigt finde de sider, som du skal bruge til at udføre opgaverne, med brug af funktionen til navigationssøgning. 
 
 Hvis du vil bruge denne funktion, skal du klikke på ikonet **Søg** for at få vist feltet **Søg**. Du kan derefter skrive et eller flere ord i feltet. Systemet søger øjeblikkeligt efter relevante sider i programmet, der svarer til de ord, du har angivet. Du kan for eksempel skrive "kreditorfaktura" som input, så viser systemet resultaterne, der stemmer overens med indtastningen. 
 

@@ -3,13 +3,13 @@ title: "Berettigelsesdokumenter til budgetplanlægning"
 description: "Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, som kan forklare, hvorfor det er nødvendigt med et specifikt budget."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6178addb9226912feb1974793525ab4ba9441193
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -46,7 +46,7 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 
 1.  Klik på **Design** i Microsoft Dynamics Office-tilføjelsesprogrammet, når du har logget.
 2.  Til headeroplysninger skal du bruge knappen **Tilføj felter**.
-3.  Vælg BudgetPlanJustification for enhedsdatakilden, og klik på **Næste**. **Bemærk:** Denne enhed er påkrævet for alle berettigelsesdokumenter. Andre enheder kan bruges, men overførslen tilbage til Microsoft Dynamics 365 for Operations mislykkes, hvis denne enhed ikke medtages.
+3.  Vælg BudgetPlanJustification for enhedsdatakilden, og klik på **Næste**. **Bemærk:** Denne enhed er påkrævet for alle berettigelsesdokumenter. Andre enheder kan bruges, men overførslen tilbage til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mislykkes, hvis denne enhed ikke medtages.
 4.  Tilføj BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter og DocumentNumber-etiketter og værdier i Word-dokumentet. **Bemærk:** Du kan bruge dine egne etiketter i stedet for standardetiketterne, hvis det er nødvendigt.
 5.  Klik på **Udført** for at fuldføre headersektionen.
 6.  Du kan angive detaljer for budgetplanbeløb på linjeniveau ved at klikke på **Tilføj tabel**.
@@ -57,7 +57,7 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Konfigurere budgetplanlægningsprocessen til at bruge berettigelsesskabelonen
 
-1.  Gå i Microsoft Dynamics 365 for Operations til **Budgettering** &gt; **Opsætning** &gt; **Budgetplanlægning** &gt; **Skabeloner for berettigelsesdokumenter**.
+1.  Gå i Finance and Operations til **Budgettering** &gt; **Opsætning** &gt; **Budgetplanlægning** &gt; **Skabeloner for berettigelsesdokumenter**.
 2.  Klik på **Ny**, og gå til det nyoprettede Microsoft Word-dokument.
 3.  Angiv et visningsnavn og en beskrivelse til skabelonen. Klik på **OK**.
 4.  Gå til **Budgettering** &gt; **Opsætning** &gt; **Budgetplanlægning** &gt; **Budgetplanlægningsproces**.****
@@ -66,7 +66,7 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 
 ##### <a name="edit-and-save-personalized-justification-documents"></a>Redigere og gemme personligt tilpassede berettigelsesdokumenter
 
-1.  Opret en ny budgetplan i Dynamics 365 for Operations, eller åbn en eksisterende budgetplan.
+1.  Opret en ny budgetplan i Finance and Operations, eller åbn en eksisterende budgetplan.
 2.  Vælg **Opret ny berettigelse** i rullemenuen **Berettigelse**.
 3.  Når du har angivet detaljerne, skal du vælge at overføre det personligt tilpassede dokument fra **Berettigelse**-rullemenuen.
 

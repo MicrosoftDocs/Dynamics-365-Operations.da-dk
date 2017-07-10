@@ -1,15 +1,15 @@
 ---
 title: "Overvåge prognosenøjagtighed"
-description: "I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne."
+description: "I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Finance and Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
@@ -18,10 +18,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 580b45263b45e6ef730b0fac32575fcdd9c358b6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 56d3f0312e684ab076f9116ac6638bcd67b52e58
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,14 +31,14 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne.
+I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Finance and Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne.
 
-Dynamics 365 for Operations beregner følgende typer prognosenøjagtighed:
+Finance and Operations beregner følgende typer prognosenøjagtighed:
 
 -   Historiske prognosenøjagtighed ved at sammenligne den historiske prognose, som Varedisponering bruger, med den historiske efterspørgsel. For at få vist værdierne (både de absolutte værdier og procentvise værdier) for historisk prognosenøjagtighed skal du klikke på **Vis nøjagtighed** på siden **Detaljer om behovsprognose**.
 -   Den anslåede nøjagtighed af den prognosemodel, der bruges til at generere forudsigelserne. Du kan få vist en procentangivelse for nøjagtighed under **Modeldetaljer – MAPE** på siden **Detaljer om behovsanalyse**. 
 
-**Bemærk!** Hvis du bruger Dynamics 365 for Operations-tjenesten til behovsprognose med Microsoft Azure Machine Learning, baseres beregningen af nøjagtigheden af den interne model på testdatasæt. Hvis du vil angive størrelsen på testdatasættet, skal du indstille parameteren **TEST\_SET\_SIZE\_PERCENT** på siden **Parametre til behovsprognoser**. Hvis du f.eks. indstiller værdien til **20**, bruges de sidste 20 procent af de historiske data til at beregne nøjagtigheden af den interne model.
+**Bemærk!** Hvis du bruger Finance and Operations-tjenesten til behovsprognose med Microsoft Azure Machine Learning, baseres beregningen af nøjagtigheden af den interne model på testdatasæt. Hvis du vil angive størrelsen på testdatasættet, skal du indstille parameteren **TEST\_SET\_SIZE\_PERCENT** på siden **Parametre til behovsprognoser**. Hvis du f.eks. indstiller værdien til **20**, bruges de sidste 20 procent af de historiske data til at beregne nøjagtigheden af den interne model.
 
 
 <a name="see-also"></a>Se også

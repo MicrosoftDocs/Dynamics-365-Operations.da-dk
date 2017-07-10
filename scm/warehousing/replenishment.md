@@ -1,16 +1,16 @@
 ---
 title: Opfyldning
-description: "I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring"
+description: "I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
@@ -19,11 +19,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 83111c4d2b41f6e2fba41d550f153174d72d4710
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: c3bbf35b98416cbc3feca2b0d01015a79cdb2659
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 06/13/2017
 
 ---
 
@@ -32,9 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring
-
-I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring Oplysningerne gælder ikke for lagerstedsløsninger, der findes i Lagerstyring. Der findes tre genopfyldningsstrategier:
+I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring. Oplysningerne gælder ikke for lagerstedsløsninger, der findes i Lagerstyring. Der findes følgende genopfyldningsstrategier:
 
 -   **Genopfyldning baseret på bølgebehov** – Denne strategi opretter genopfyldningsarbejde for udgående ordrer eller laster, hvis lageret ikke er tilgængeligt, når bølgen opretter arbejde. Genopfyldningsarbejde kan f.eks. oprettes, hvis det antal, der er nødvendigt for en salgsordre, ikke er tilgængeligt, når en bølge behandles.
 -   **Min./maks. genopfyldning** – Genopfyldning baseret på minimale og maksimale mængder – denne strategi bruger minimum og maksimum for grænser for lagring for at afgøre, hvornår lokationerne skal genopfyldes. Kriterierne for vare og lokalitet definerer det lager, der evalueres for genopfyldning. Min/Max er genopfyldningsskabeloner den primære mekanisme til opretholdelse af optimale niveauer i plukpladser. Du kan bruge genopfyldning af behov som supplement mellem Min/Maks genopfyldning cyklusser for at sikre, at der er tilstrækkelig direkte pluklagerbeholdning tilgængelig til at opfylde bølgebehovet.
@@ -43,23 +40,27 @@ I denne artikel beskrives de genopfyldningsstrategier, der er tilgængelige for 
 Alle tre strategier opretter genopfyldningsarbejde baseret på en genopfyldningsskabelon.
 
 ## <a name="wave-demand-replenishment"></a>Genopfyldning baseret på bølgebehov
-Genopfyldning baseret på bølgebehov opretter genopfyldningsarbejde baseret på behov, hvis den mængde, der kræves til udgående ordrer eller laster, ikke er tilgængelig, når en bølge opretter arbejdet. Genopfyldningsskabelonen indeholder oplysninger om varekriterier, måleenhed, behovsforøgelse og lokation. 
+
+Genopfyldning baseret på bølgebehov opretter genopfyldningsarbejde baseret på behov, hvis den mængde, der kræves til produktionsordrer, kanbans, udgående ordrer eller laster, ikke er tilgængelig, når en bølge opretter arbejdet. Genopfyldningsskabelonen indeholder oplysninger om varekriterier, måleenhed, behovsforøgelse og lokation. 
 
 Lokationsvejledninger bruges til at bestemme, hvilken lokation der skal genopfyldes. Du sammenkæder disse lokationsvejledninger med genopfyldningsskabelonen ved hjælp af feltet **Vejledningskode**. Hvis feltet **Vejledningskode** ikke er indstillet, bruges forespørgsler til at bestemme, hvilken lokationsvejledning der skal bruges. Bemærk, at hvis en vejledningskode ikke er angivet i genopfyldningsskabelonen, og lokationsvejledningen har en vejledningskode, bliver lokationsvejledningen ignoreret, selvom forespørgslen i lokationsvejledningen er korrekt. Pluklokationsvejledninger bruges til at bestemme, hvor du kan få lagervarer til genopfyldningen. 
 
-Ud over at oprette en skabelon skal du angive nogle genopfyldningsindstillinger i bølgeskabelonen. Bølgeskabelonen skal indeholde et bølgetrin for genopfyldning, der kun køres, hvis fordelingen af en vare mislykkes. Genopfyldningsbølgetrinnet bruger en bølgetrinskode til at bestemme, hvilken genopfyldningsskabelon der skal bruges. Ud over at have et bølgetrin for genopfyldning du skal kontrollere, at **genbestille** er valgt i sektionen **Metoder** i bølgeskabelonen. 
+Ud over at oprette en skabelon skal du angive nogle genopfyldningsindstillinger i bølgeskabelonen. Bølgeskabelonen skal indeholde et bølgetrin for genopfyldning, der kun køres, hvis fordelingen af en vare mislykkes. Genopfyldningsbølgetrinnet bruger en bølgetrinskode til at bestemme, hvilken genopfyldningsskabelon der skal bruges. Ud over at have et bølgetrin for genopfyldning du skal kontrollere, at **Genopfyld** er valgt i sektionen **Metoder** i bølgeskabelonen. 
 
 Siden **Genopfyldningsskabelon** indeholder afkrydsningsfeltet **Tillad bølgebehov at bruge ikke-reserverede antal**. Du skal markere dette afkrydsningsfelt, hvis du vil tillade, at genopfyldningsbehov kan trække ikkereserverede mængder fra arbejde, der er oprettet ud fra den valgte genopfyldningsskabelon. For at gøre det muligt for genopfyldningsskabeloner at bruge denne logik skal du markere dette afkrydsningsfelt for hver eksisterende genopfyldningsskabelon. Når der udløses genopfyldningsbehov på lagerstedet, trækkes behovet fra eksisterende genopfyldningsarbejde, der har ikkereserverede mængder, hvis arbejdet stammer fra genopfyldningsskabeloner, hvor afkrydsningsfeltet **Tillad bølgebehov at bruge ikke-reserverede antal** er markeret.
+
+
+Genopfyldning ved behov understøttes for salgsordrer, flytteordrer, produktionsordrer og kanbans. 
 
 ## <a name="minmax-replenishment"></a>Min./maks. genopfyldning
 I Min/Maks genopfyldning genopfyldes lagerbeholdningen, så det ligger mellem den angivne minimum- og maksimumgrænse. Processen udføres typisk én gang hver dag for at sikre, at alle plukpladser er fyldt til det maksimale niveau, før plukningen starter. 
 
-Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer Microsoft Dynamics 365 for Operations, om der kræves genopfyldning i den rækkefølge, som linjerne er organiseret i. 
+Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer Finance and Operations, om der kræves genopfyldning i den rækkefølge, som linjerne er organiseret i. 
 
-Bemærk, at Min./maks genopfyldningsstrategien ikke kan genopfylde en tom lokation, medmindre lokationen er angivet som fast lokation for varen. Hvis den lokation, der skal genopfyldes, ikke er en fast lokation, kan Dynamics 365 for Operations ikke fastslå, hvilken vare der skal genopfyldes. En vis minimumbeholdning er derfor påkrævet, før der foretages genopfyldning.
+Bemærk, at Min./maks genopfyldningsstrategien ikke kan genopfylde en tom lokation, medmindre lokationen er angivet som fast lokation for varen. Hvis den lokation, der skal genopfyldes, ikke er en fast lokation, er det ikke muligt at fastslå, hvilken vare der skal genopfyldes. En vis minimumbeholdning er derfor påkrævet, før der foretages genopfyldning.
 
 ## <a name="load-demand-replenishment"></a>Genopfyldning for lastbehov
-Genopfyldning for lastbehov opsummerer behovet for flere laster og opretter det genopfyldningsarbejde, der er nødvendigt for lagerbeholdningen på de relevante plukpladser. Genopfyldning for lastbehov ligner på mange måder Genopfyldning baseret på bølgebehov. Den væsentligste forskel er, hvordan og hvornår Genopfyldning for lastbehov og Genopfyldning baseret på bølgebehov kører. Ligesom Min./maks. genopfyldning køres Genopfyldning for lastbehov ved hjælp af et batchjob. Når du vil konfigurere batchjobbet skal du på siden **Genopfyldning for lastbehov** vælge den genopfyldningsskabelonen, der skal bruges, og indstille en filterforespørgsel til at angive, hvilke laster der bruges til at bestemme behovet. Forespørgslen om lokation angiver de lokationer, som enhver tilgængelig mængde trækkes fra for at opfylde det samlede lastebehov.
+Genopfyldning for lastbehov opsummerer behovet for flere laster og opretter det genopfyldningsarbejde, der er nødvendigt for lagerbeholdningen på de relevante plukpladser. Genopfyldning for lastbehov ligner på mange måder Genopfyldning baseret på bølgebehov. Den væsentligste forskel er, hvordan og hvornår Genopfyldning for lastbehov og Genopfyldning baseret på bølgebehov kører. Ligesom Min./maks. genopfyldning køres Genopfyldning for lastbehov ved hjælp af et batchjob. Når du vil konfigurere batchjobbet skal du på siden **Genopfyldning for lastbehov** vælge den genopfyldningsskabelonen, du vil bruge, og indstille en filterforespørgsel til at angive, hvilke laster der bruges til at bestemme behovet. Forespørgslen om lokation angiver de lokationer, som enhver tilgængelig mængde trækkes fra for at opfylde det samlede lastebehov.
 
 ## <a name="replenishment-prerequisites"></a>Forudsætninger for genopfyldning
 | Forudsætning            | Beskrivelse                                                                                                                                                                                                                                        |
@@ -71,9 +72,4 @@ Genopfyldning for lastbehov opsummerer behovet for flere laster og opretter det 
 | Lokationsprofiler       | Lokationsprofiler er nødvendige for at oprette lokationer.                                                                                                                                                                                       |
 | Lokationsvejledninger     | Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra.                                                                                     |
 | Arbejdsskabeloner          | Arbejdsskabeloner af typen **Genopfyldning** kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer.                                                                                           |
-
-
-
-
-
 

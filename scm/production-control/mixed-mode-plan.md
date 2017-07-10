@@ -1,16 +1,16 @@
 ---
 title: "Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning"
-description: "Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer)."
+description: "Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer)."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 686d61f476fbdf95348cacfd93b1e18d51e79732
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9dbbe540c919d27bafcc10614f308e5b6ba313f1
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
+Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
 
 Du kan vælge din overordnede strategi for at levere et produkt, uanset produktstrukturen.  
 
@@ -41,7 +41,7 @@ For eksempel kan du få kontrol over kanban i montagen, hvor materialer hentes f
 Granulariteten for de forsyningspolitikker, der bruges til behovsplanlægning, afhænger af den lagringsdimension, der er aktiveret som disponeringsdimensioner. Hvis du vil aktivere behovsplanlægningen til at styre genopfyldning og levering af forskellige typer placeringer (for eksempel ved at adskille produktionsanlægget for forskellige produktionsenheder eller ved at adskille de forskellige typer af materiale og lagre med færdigvarer), anbefaler vi, at du aktiverer Sted og Lagersted som disponeringsdimensioner. Du kan også udelade Lagersted som disponeringsdimension. I dette tilfælde, hvis du bruger avanceret lokationsstyring, styres alle bevægelser på et lagersted af lagerstedsarbejde, hvorimod alle bevægelser på tværs af lagersteder kan kontrolleres ved udbetalingskanbans.
 
 ## <a name="supply-policies"></a>Forsyningspolitikker
-Planlægningskontroller for blandet tilstand i Dynamics 365 for Operations styrer, hvordan et produkt er leveret på baggrund af forsyning, hvordan afledte behov (forbrug af varer fra en \[stykliste\]) er udstedt. Baseret på ordretype henter systemet automatisk materialer for at imødekomme behov.  
+Planlægningskontroller for blandet tilstand i Finance and Operations styrer, hvordan et produkt er leveret på baggrund af forsyning, hvordan afledte behov (forbrug af varer fra en \[stykliste\]) er udstedt. Baseret på ordretype henter systemet automatisk materialer for at imødekomme behov.  
 
 Forsyningspolitikker kan defineres på niveauet for produktet eller på en granularitet, der understøtter dine krav. Du definerer granulariteten af forsyningspolitikker på siden **Standardindstillinger for ordre**.  
 
@@ -49,9 +49,9 @@ Forsyningspolitikker kan styres af produkt, varedimensioner (konfiguration, farv
 
 Standardordretypen bestemmer, hvilken ordre varedisponering genererer.  
 
-Uanset hvordan forsyningskæden er udformet, understøtter Dynamics 365 for Operations din blanding af leveringspolitikker. Du kan få produktionsordrer, der er hentet fra kanbans. Du kan også have en batchordre, der kræver et produkt, der leveres af overførsler eller kanbans.  
+Uanset hvordan forsyningskæden er udformet, understøtter Finance and Operations din blanding af leveringspolitikker. Du kan få produktionsordrer, der er hentet fra kanbans. Du kan også have en batchordre, der kræver et produkt, der leveres af overførsler eller kanbans.  
 
-Dynamics 365 for Operations sørger for, at materialeflowet følger modellen.  
+Finance and Operations sørger for, at materialeflowet følger modellen.  
 
 Lageret til plukning af materiale er tildelt dynamisk under kørsel, når forsyningspolitikken er defineret.  
 
@@ -64,7 +64,7 @@ Ressourceforbrug er en vigtig funktion. Ressourceforbrug giver et lagersted til 
 
 Ressourceforbrug kræver, at det lagersted, der er plukket materialer fra, tildeles baseret på den måde, produktet leveres. Med andre ord, på kørselstidspunktet finder systemet de ressourcer, der skal bruges til produktion. Baseret på disse ressourcer finder systemet derefter pluklagerstedet.  
 
-For arbejde der er uafhængig af en forsyningspolitikken, skal du ikke ændre oplysningerne på styklisten, hvis leveringen er ændret. For ad hoc-ændringer sikrer Dynamics 365 for Operations, at materialer er hentet fra det rigtige lagersted.
+For arbejde der er uafhængig af en forsyningspolitikken, skal du ikke ændre oplysningerne på styklisten, hvis leveringen er ændret. For ad hoc-ændringer sikrer Finance and Operations, at materialer er hentet fra det rigtige lagersted.
 
 ## <a name="process-manufacturing--the-production-type"></a>Procesproduktion – produktionstypen
 For fuld fleksibilitet i blandet tilstand anbefaler vi, at du bruger produktionstypestyklister for alle produkter. Du kan derefter bruge produktionsordrer, kanbans, overførselsordrer eller produktionsordrer til forsyning af et produkt. For procesproduktion skal du bruge en produktionstype af **Formel**, **Samprodukt**, **Biprodukt** eller **Planlægningsvare**. Kanbans og produktionsordrer kan ikke bruges til disse produktionstyper.

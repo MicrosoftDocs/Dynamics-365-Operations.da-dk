@@ -1,16 +1,16 @@
 ---
 title: Styre lagerarbejdere
-description: "I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics AX til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder."
+description: "I denne artikel beskrives, hvordan du kan bruge Dynamics 365 Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics AX til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
+I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics 365 for Finance and Operations, Enterprise edition til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
 Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
 

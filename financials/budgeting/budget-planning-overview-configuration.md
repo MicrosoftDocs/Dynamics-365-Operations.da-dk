@@ -3,14 +3,14 @@ title: "Budgetplanlægningsoversigt"
 description: "I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og konfigurere budgetplanlægningsprocesser."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -38,7 +38,7 @@ I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan
 
 Du udfører budgetplanlægning, når du forberede budgetterne, som en organisation skal implementere. En organisation kan konfigurere budgetplanlægning og derefter oprette budgetplanlægningsprocesser for at opfylde sine politikker, procedurer og krav til budgetudarbejdelse. 
 
-Når du forstår de begreber og terminologi, der bruges i Microsoft Dynamics 365 for Operations, bliver det nemmere at implementere budgetplanlægning i organisationen.
+Når du forstår de begreber og terminologi, der bruges i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bliver det nemmere at implementere budgetplanlægning i organisationen.
 
 ### <a name="key-terms"></a>Vigtige termer
 
@@ -59,7 +59,7 @@ Du kan bruge budgetplanlægning til at udføre følgende opgaver:
 -   Send automatisk budgetplanerne sammen med regneark, berettigelsesdokumenter og andre vedhæftede filer til gennemsyn og godkendelse.
 -   Konsolider flere budgetplaner fra et lavere niveau af organisationen i én overordnet budgetplan på et højere niveau i organisationen. Du kan også udarbejde én budgetplan på et højere niveau i organisationen, og allokere budgetestimaterne til lavere niveauer i organisationen.
 
-Budgetplanlægning er integreret med andre moduler i Microsoft Dynamics 365 for Operations. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Da budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
+Budgetplanlægning er integreret med andre moduler i Microsoft Dynamics 365 for Finance and Operations. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Da budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
 
 ## <a name="configuring-budget-planning"></a>Konfigurere budgetplanlægning
 Siden **Budgetplanlægningskonfiguration** indeholder de fleste af de indstillinger, du har brug for at konfigurere budgetplanlægning. I følgende afsnit beskrives nogle vigtige faktorer, der skal overvejes, når du konfigurerer budgetplanlægning. Når du har fuldført konfigurationen, skal du konfigurere budgetplanlægningsprocesser.
@@ -78,7 +78,7 @@ I det følgende eksempel beregner virksomhedens hovedkvarter startbudgettets opr
 
 På siden **Organisationshierarki** kan du angive et organisationshierarki som et budgetplanlægningshierarki til hver budgetplanlægningsproces. Budgetplanlægningshierarkiet behøver ikke at matche det standardorganisationshierarki, der bruges til andre formål. Da dette hierarki bruges til at samle og distribuere data, vil du måske have en anden struktur. I eksemplet på skemaet er salgsafdelingerne under et hovedkvarterniveau, der omfatter budget-og økonomiafdelinger. Denne struktur er sandsynligvis forskellig fra den struktur, der bruges til at styre operationer for salgsafdelingerne. Kun et organisationshierarki kan tildeles til hver budgetplanlægningsproces. 
 
-Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+Du kan finde flere oplysninger i [Organisationer og organisationshierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
 ### <a name="user-security"></a>Brugersikkerhed
 
@@ -88,13 +88,13 @@ Budgetplanlægning kan følge en af de to sikkerhedsmodeller for at definere bru
 
 Arbejdsgange i budgetplanlægning bruges sammen med budgetteringsarbejdsgange til at styre oprettelse og udvikling af budgetplaner.
 
-Arbejdsgangen for en budgetplanlægning består af et bestemt sæt stadier, som en budgetplan bevæger sig igennem. Hver arbejdsgang i budgetplanlægningen er knyttet til en budgetteringsarbejdsgang. Budgetteringsarbejdsgange er en af de typer arbejdsgange, der bruges i hele Microsoft Dynamics 365 for Operations. Budgetteringsarbejdsgangen dirigerer budgetplanerne sammen med regneark, berettigelser og vedhæftede filer gennem organisationen til gennemgang og godkendelse. 
+Arbejdsgangen for en budgetplanlægning består af et bestemt sæt stadier, som en budgetplan bevæger sig igennem. Hver arbejdsgang i budgetplanlægningen er knyttet til en budgetteringsarbejdsgang. Budgetteringsarbejdsgange er en af de typer arbejdsgange, der bruges i hele Finance and Operations. Budgetteringsarbejdsgangen dirigerer budgetplanerne sammen med regneark, berettigelser og vedhæftede filer gennem organisationen til gennemgang og godkendelse. 
 
 Du opretter budgetplanlægningens arbejdsgang i sektionen **Arbejdsgangsstadier** på siden **Budgetplanlægningskonfiguration**. Der kan du vælge de stadier og den budgetteringsarbejdsgang, der skal bruges, og også konfigurere yderligere indstillinger. 
 
 Det er en god idé at oprette en budgetplanlægningsarbejdsgang for hvert niveau i et budgetteringshierarki. Derefter kan du tildele en budgetteringsarbejdsgang, der indeholder elementer, som svarer til stadierne i arbejdsgangen i budgetplanlægningen. I eksemplet på skemaet, der blev vist tidligere i denne artikel, ville der blive oprettet én arbejdsgang i budgetplanlægningen for salgsafdelingerne og en anden ville være oprettet for hovedkontoret. En arbejdsgang i budgettering flytter budgetplaner gennem stadierne. 
 
-Du opretter en arbejdsgang i Budgettering for budgetplanlægning på siden **Arbejdsgange i Budgettering**. Fremgangsmåden minder om processen til oprettelse af andre arbejdsgange i Microsoft Dynamics 365 for Operations. Følgende illustration viser et eksempel på en arbejdsgang i hovedkvarteret. 
+Du opretter en arbejdsgang i Budgettering for budgetplanlægning på siden **Arbejdsgange i Budgettering**. Fremgangsmåden minder om processen til oprettelse af andre arbejdsgange i Finance and Operations. Følgende illustration viser et eksempel på en arbejdsgang i hovedkvarteret. 
 
 [![Budgetteringsarbejdsgang for budgetplanlægning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 

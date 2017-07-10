@@ -3,14 +3,14 @@ title: "Få vist og eksportere feltbeskrivelser"
 description: "I denne artikel beskrives, hvordan du får vist feltbeskrivelser, og hvordan du bruger siden Felt beskrivelser til at eksportere beskrivelser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cd84c03baa4f7a9d38e380c37ed2020ee3387954
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -33,14 +33,14 @@ ms.lasthandoff: 05/25/2017
 
 I denne artikel beskrives, hvordan du får vist feltbeskrivelser, og hvordan du bruger siden Felt beskrivelser til at eksportere beskrivelser.
 
-Microsoft Dynamics 365 for Operations indeholder feltbeskrivelser for nogle af de mere komplekse felter. Disse beskrivelser vises, når du peger på et felt. Du kan også se og eksportere beskrivelser på siden **Feltbeskrivelser**. 
+Microsoft Dynamics 365 for Finance and Operations indeholder feltbeskrivelser for nogle af de mere komplekse felter. Disse beskrivelser vises, når du peger på et felt. Du kan også se og eksportere beskrivelser på siden **Feltbeskrivelser**. 
 
 Ikke alle sider har feltbeskrivelser. Vi vil kun levere beskrivelser for de mest komplekse felter og ikke for felter, hvis funktion er indlysende. Derfor har nogle sider ikke nogen feltbeskrivelser, nogle sider har kun få beskrivelser, og nogle af de mere komplekse sider, som f.eks. mange af parametersiderne, har mange beskrivelser. 
 
-Hvis du har adgang til Dynamics 365 for Operations-udviklingsmiljøet, kan du tilføje nye feltbeskrivelser og tilpasse eksisterende beskrivelser. For eksempel kan du føje virksomhedsspecifikke oplysninger til en feltbeskrivelse. Du kan finde flere oplysninger under [Tilpasse hjælp til felter](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+Hvis du har adgang til Finance and Operations-udviklingsmiljøet, kan du tilføje nye feltbeskrivelser og tilpasse eksisterende beskrivelser. For eksempel kan du føje virksomhedsspecifikke oplysninger til en feltbeskrivelse. Du kan finde flere oplysninger under [Tilpasse hjælp til felter](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se feltbeskrivelser i brugergrænsefladen
-Du kan se feltbeskrivelser ved at holde musen over et felt. Hvis ingen beskrivelse er tilgængelig, kan du se navnet på feltet, når du peger på feltet. (Bemærk: version 7.0.0 kan feltbeskrivelser kun vises på siden **Beskrivelse af felter**). I nedenstående illustration vises den feltbeskrivelse, der vises, når du placerer markøren over feltet **Lås varer under optælling**. 
+Du kan se feltbeskrivelser ved at holde musen over et felt. Hvis ingen beskrivelse er tilgængelig, kan du se navnet på feltet, når du peger på feltet. (Bemærk: I Dynamics AX 7.0 (februar 2016) kan feltbeskrivelser kun vises på siden **Beskrivelse af felter**). I nedenstående illustration vises den feltbeskrivelse, der vises, når du placerer markøren over feltet **Lås varer under optælling**. 
 
 [![Eksempel på feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
 
@@ -101,7 +101,7 @@ Du kan finde oplysninger om de forskellige måder, du kan finde sider på, i afs
 <a name="see-also"></a>Se også
 --------
 
-[Tilpasse hjælp til felter](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Tilpasse hjælp til felter](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
 
 
 

@@ -3,7 +3,7 @@ title: Intrastat
 description: "Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5dea47c92c3891ce86b470119ea3bad8252c08d1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6d1141d597e95b0d5cabf77c0248697d256b102a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -40,7 +40,7 @@ I følgende afsnit beskrives den samlede strøm af oplysninger, der bruges til I
 
 ### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Angiv en transaktion, der krydser grænsen til et andet EU-land
 
-En debitorfaktura, fritekstfaktura, indkøbsordrefaktura, projektfaktura, følgeseddel for kunden og leverandørens produktkvittering eller overflytningsordre overføres til Intrastat-kladden, hvis landetypen for destination (på udførsel) eller forsendelse (på indførsel) er **EU**. Denne funktion blev udvidet til Microsoft Dynamics 365 for Operations version 1611 og gør det muligt at angive fragtadresser for en transaktion inden for Fællesskabet. Hvis en fragtadresse afviger fra en leverandørs virksomhedsadresse (eller kundes virksomhedsadresse for returordre), bruges Intrastat-rapporteringen med disse oplysninger. Når du opretter en salgsordre, fritekstfaktura, indkøbsordre, kreditorfaktura, projektfaktura eller overflytningsordre, har nogle felter, der er relateret til udenrigshandel, standardværdier i dokumentets sidehoved eller på linjen. Standardkoden for transaktionen er taget fra det tilsvarende felt på siden **Udenrigshandelsparametre**. Standarden for varekode, oprindelsesland/-område og oprindelsesstat tages fra varen. Du kan ændre standardværdierne, og du kan også udfylde andre udenlandske handelsrelaterede oplysninger: den statistiske procedure, transportmåde og havn.
+En debitorfaktura, fritekstfaktura, indkøbsordrefaktura, projektfaktura, følgeseddel for kunden og leverandørens produktkvittering eller overflytningsordre overføres til Intrastat-kladden, hvis landetypen for destination (på udførsel) eller forsendelse (på indførsel) er **EU**. Denne funktion blev udvidet til Microsoft Dynamics 365 for Operations (1611) og gør det muligt at angive fragtadresser for en transaktion inden for Fællesskabet. Hvis en fragtadresse afviger fra en leverandørs virksomhedsadresse (eller kundes virksomhedsadresse for returordre), bruges Intrastat-rapporteringen med disse oplysninger. Når du opretter en salgsordre, fritekstfaktura, indkøbsordre, kreditorfaktura, projektfaktura eller overflytningsordre, har nogle felter, der er relateret til udenrigshandel, standardværdier i dokumentets sidehoved eller på linjen. Standardkoden for transaktionen er taget fra det tilsvarende felt på siden **Udenrigshandelsparametre**. Standarden for varekode, oprindelsesland/-område og oprindelsesstat tages fra varen. Du kan ændre standardværdierne, og du kan også udfylde andre udenlandske handelsrelaterede oplysninger: den statistiske procedure, transportmåde og havn.
 
 ### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Brug denne Intrastat-kladde til at generere oplysninger om handel mellem lande/områder i EU.
 

@@ -3,7 +3,7 @@ title: "Kolonnedefinitioner i økonomirapporter"
 description: "Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -131,7 +131,7 @@ Du kan tilføje, redigere og slette de overskrifter, der vises øverst i kolonne
 
 ### <a name="create-and-manage-column-headers"></a>Oprette og administrere kolonneoverskrifter
 
-Du kan bruge dialogboksen**Kolonneoverskrift** til at tilføje, redigere og slette de overskrifter, der vises øverst i kolonnerne i en rapport. I følgende tabel beskrives felterne i dialogboksen **Kolonneoverskrift**.
+Du kan bruge dialogboksen **Kolonneoverskrift** til at tilføje, redigere og slette de overskrifter, der vises øverst i kolonnerne i en rapport. I følgende tabel beskrives felterne i dialogboksen **Kolonneoverskrift**.
 
 | Felt                 | Beskrivelse                                                                                                                                                                                                                                                                                                              |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -154,7 +154,7 @@ Du kan bruge dialogboksen**Kolonneoverskrift** til at tilføje, redigere og slet
 
 1.  Åbn den kolonnedefinition, der skal ændres, i Report Designer.
 2.  Marker en celle i overskriftsrækken.
-3.  I menuen **Rediger** skal du klikke på **Indsæt række**. Den nye række indsættes over den række, du valgte i trin 2. **Bemærk!**Hvis du har fire eller flere rækker i rapporthoveder i en rapport, hvor hovederne overlapper, når rapporten udlæses til et Excel-regneark. Hvis du vil vise alle overskrifter i rapporten, skal du øge den øverste margen i rapportdefinitionen.
+3.  I menuen **Rediger** skal du klikke på **Indsæt række**. Den nye række indsættes over den række, du valgte i trin 2. **Bemærk!** Hvis du har fire eller flere rækker i rapporthoveder i en rapport, hvor hovederne overlapper, når rapporten udlæses til et Excel-regneark. Hvis du vil vise alle overskrifter i rapporten, skal du øge den øverste margen i rapportdefinitionen.
 
 ### <a name="delete-a-column-header-row"></a>Slette en kolonneoverskriftsrække
 
@@ -164,7 +164,7 @@ Du kan bruge dialogboksen**Kolonneoverskrift** til at tilføje, redigere og slet
 
 ### <a name="create-an-automatically-generated-header"></a>Opret en automatisk genereret overskrift
 
-Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC**, **FD** og **WKS**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår oversætter **@CalMonthLong** for eksempel måned **7** til **juli**. Hvis navnet på måneden skal skrives med store bogstaver (for eksempel **JULI**), skal autotekstkoden skrives med store bogstaver i feltet **Kolonneoverskriftstekst**. Du kan f.eks. skrive **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel følgende sidehovedtekst: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**. **Bemærk!** Formatet for noget af teksten, f.eks. den lange dato, afhænger af dine internationale indstillinger på Dynamics 365 for Operations-serveren. Hvis du vil ændre disse indstillinger, skal du klikke på knappen **Start**, klikke på **Kontrolpanel** og derefter klikke på **Område og sprog**. I følgende tabel vises de tilgængelige indstillinger for autotekst til kolonneoverskrifter.
+Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC**, **FD** og **WKS**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår oversætter **@CalMonthLong** for eksempel måned **7** til **juli**. Hvis navnet på måneden skal skrives med store bogstaver (for eksempel **JULI**), skal autotekstkoden skrives med store bogstaver i feltet **Kolonneoverskriftstekst**. Du kan f.eks. skrive **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel følgende sidehovedtekst: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**. **Bemærk!** Formatet for noget af teksten, f.eks. den lange dato, afhænger af dine internationale indstillinger på Finance and Operations-serveren. Hvis du vil ændre disse indstillinger, skal du klikke på knappen **Start**, klikke på **Kontrolpanel** og derefter klikke på **Område og sprog**. I følgende tabel vises de tilgængelige indstillinger for autotekst til kolonneoverskrifter.
 
 | Indstilling og kode for autotekst                | Betegnelse                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -488,7 +488,7 @@ Følgende eksempel viser en del af en beskrivelse af kolonne, der har en kontoat
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Filteret Dimension i en kolonnedefinition
 
-Et dimensionsfilter bruges til at begrænse **FD**-kolonnen til bestemte dimensionsværdier. Filteret kan indeholde en enkelt dimension, et interval af dimensioner eller en gruppe af dimensioner. Filteret kan også indeholde dimensionsværdisæt. Eftersom dimensionsværdier kan variere, behøver et ..\økonomiske dimensioner\dimensionsbaseret system ikke at overholde en bestemt længde. Filteret anvendes, uanset om rapporten indeholder et rapporteringstræ. Du kan bruge jokertegn (\* eller ?) i en hvilken som helst placering. Når du angiver flere konti, skal du indsætte et komma mellem konti som vist i følgende eksempel: +konto = \[1200\], + konto = \[1100\], afdeling = \[01?\] Hvis du vil modtage alle afdelinger for en bestemt konto, kan du udelukke dimensionen Afdeling fra dimensionsfilteret. De to følgende dimensionsfiltre håndteres for eksempel på samme måde:
+Et dimensionsfilter bruges til at begrænse **FD**-kolonnen til bestemte dimensionsværdier. Filteret kan indeholde en enkelt dimension, et interval af dimensioner eller en gruppe af dimensioner. Filteret kan også indeholde dimensionsværdisæt. Eftersom dimensionsværdier kan variere, behøver et ..\økonomiske dimensioner\dimensionsbaseret system ikke at overholde en bestemt længde. Filteret anvendes, uanset om rapporten indeholder et rapporteringstræ. Du kan bruge jokertegn (\* eller ?) i en hvilken som helst placering. Når du angiver flere konti, skal du indsætte et komma mellem firmaer, som i følgende eksempel: +konto=\[1200\], +konto=\[1100\], afdeling=\[01?\] For at modtage alle afdelinger for en bestemt konto du kan udelukke afdelingsdimensionen fra dimensionsfilteret. De to følgende dimensionsfiltre håndteres for eksempel på samme måde:
 
 -   +Konto = \[1100\], Afdeling
 -   +Konto = \[1100\]

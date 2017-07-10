@@ -3,25 +3,27 @@ title: Styring af skift og kasseapparater
 description: "I denne artikel beskrives, hvordan du konfigurerer og bruger de to typer detail-POS-skift – delt og separat. Delte skift kan bruges af flere brugere på flere steder, hvorimod separate skift kun kan bruges af én arbejder ad gangen."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e49d7d931b0796e4d62065793e7e79745c816682
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -42,15 +44,15 @@ Separate skift bruges i et traditionelt, fast POS-scenarie, hvor kontanter afste
 
 Et separat skift angives på kasseapparatniveau. I denne fremgangsmåde beskrives, hvordan du konfigurerer et separat skift for et POS-kasseapparat.
 
-1.  Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
+1.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
 2.  Vælg hardwareprofilen, der skal bruges til det separate skift.
 3.  I oversigtspanelet **Kasseskuffe** skal du kontrollere, at indstillingen **Skuffe til delt skift** er indstillet til **Nej**.
 4.  Klik på **Gem**.
-5.  Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
+5.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
 6.  Vælg det kasseapparat, der kræver et separat skift, og klik derefter på **Rediger**.
 7.  I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.
 8.  Klik på **Gem**.
-9.  Klik på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**.
+9.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 10. Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.
 
 ### <a name="use-a-stand-alone-shift"></a>Bruge et separat skift
@@ -70,15 +72,15 @@ Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat ell
 
 ### <a name="set-up-a-shared-shift"></a>Konfigurere et delt skift
 
-1.  Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
+1.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
 2.  Vælg hardwareprofilen, der skal bruges til det delte skift.
 3.  I oversigtspanelet **Kasseskuffe** skal du vælge indstillingen **Ja** for **Skuffe til delt skift**.
 4.  Klik på **Gem**.
-5.  Klik på **Detail og handel** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
+5.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
 6.  Vælg det kasseapparat, der kræver et delt skift, og klik derefter på **Rediger**.
 7.  I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.
 8.  Klik på **Gem**.
-9.  Klik på **Detail og handel** &gt; **Detail-it** &gt; **Distributionsplan**.
+9.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
 10. Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.
 
 ### <a name="use-a-shared-shift"></a>Bruge et delt skift
@@ -89,7 +91,7 @@ Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat ell
 4.  Vælg **Opret et nyt skift**.
 5.  Vælg **Angiv startbeløb**.
 6.  Angiv startbeløbet for alle kasseapparater i den butik, som er en del af det delte skift, og klik derefter på **Gem**.
-    -   For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation**for at aktivere hardwarestationen.
+    -   For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation** for at aktivere hardwarestationen.
     -   For at føje en pengeskuffe til et bestemt kasseapparat, skal du bruge handlingen **Åbn kasseskuffe**.
     -   Fortsæt indtil alle kasseapparater i det delte skift har deres del af startbeløbet.
 

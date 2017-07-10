@@ -1,28 +1,28 @@
 ---
 title: Definere og vedligeholde detailkanaler
-description: "Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Operations. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik."
+description: "Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c3de01350eafcccad8c49ac32eb2509a3d2975b6
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3f0b566963574569cb40b72550e2337c9ba8a2ce
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,12 +32,12 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Operations. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
+Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
 
-Detail og handel i Dynamics 365 for Operations understøtter flere detailkanaler, f.eks. onlinebutikker, callcentre og fysiske butikker. Inden for detail og handels kaldes en fysisk butik en detailbutik. Hver detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer for en detailbutik, før du opretter den. Når du har oprettet detailbutikken, kan du tildele de produkter, som skal føres i denne butik. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
+Dynamics 365 for Retail understøtter flere detailkanaler, f.eks. onlinebutikker, callcentre og fysiske butikker. En fysisk butik kaldes en detailbutik. Hver detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer for en detailbutik, før du opretter den. Når du har oprettet detailbutikken, kan du tildele de produkter, som skal føres i denne butik. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
 
 ## <a name="setting-up-retail-stores"></a>Konfigurere detailbutikker
-Før du kan konfigurere en detailbutik i Dynamics 365 for Operations, skal du udføre nogle nødvendige opgaver. Du kan derefter oprette detailbutikken og tilføje oplysninger.
+Før du kan konfigurere en detailbutik i Dynamics 365 for Retail, skal du udføre nogle nødvendige opgaver. Du kan derefter oprette detailbutikken og tilføje oplysninger.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -53,7 +53,7 @@ Du skal fuldføre følgende opgaver, før du kan konfigurere en detailbutik:
 8.  Konfigurer detailprodukter. Som en del af denne opgave skal du oprette detailprodukthierarkier, produktvarianter og produktudvalg.
 9.  Konfigurer produktprisgrupper.
 10. Konfigurer detailproduktpriser. Som en del af denne opgave skal du også konfigurere prisjusteringer, rabatter og rabatperioder.
-11. Opsætning af medarbejdere. **Bemærk!** Du skal også tildele relevante tilladelser til arbejdstagerne, så de kan logge på og udføre opgaver ved hjælp af Dynamics 365 for Operations for Retail POS-systemet.
+11. Opsætning af medarbejdere. **Bemærk!** Du skal også tildele relevante tilladelser til arbejdstagerne, så de kan logge på og udføre opgaver ved hjælp af Dynamics 365 for Retail POS-systemet.
 12. Konfigurer de Retail POS-profiler, som du vil tildele til butikken. Denne opgave omfatter mange andre opgaver, f.eks. opsætning af registre, konfiguration af offlineprofiler samt opsætning af kvitteringsformater og -profiler.
 
 Gennemse alle de opgaver, der er inkluderet i forudsætningen, og udfør kun de opgaver, der gælder for dig.
@@ -80,7 +80,7 @@ Når du har angivet oplysningerne om detailbutikken, skal du udføre disse opgav
 6.  Kør jobbene for at sende lagringsdataene til Retail POS.
 
 ## <a name="organization-hierarchies"></a>Organisationshierarkier
-Retail bruger organisationshierarkier i Microsoft Dynamics AX til at strukturere detailkanaler. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Når du opretter butikker, kan du føje dem til et organisationshierarki. Butikkerne deler derefter data, der bruges til udvalg, genbestilling og rapportering.
+Retail bruger organisationshierarkier til at strukturere detailkanaler. Organisationshierarkier repræsenterer relationerne mellem de organisationer, som dit firma består af. Når du opretter butikker, kan du føje dem til et organisationshierarki. Butikkerne deler derefter data, der bruges til udvalg, genbestilling og rapportering.
 
 
 

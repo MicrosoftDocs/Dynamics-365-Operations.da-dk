@@ -3,15 +3,15 @@ title: Trevejs-sammenholdelsespolitik
 description: "Denne artikel indeholder eksempler på trevejs-sammenholdelse."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -66,7 +66,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 1.  Claus, en arbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Han angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
 2.  Pernille, kreditorkoordinator hos Fabrikam, indtaster og kontrollerer den faktura, der er sendt af Contoso. Hun kontrollerer følgende oplysninger:
     -   For varer, der kræver trevejs-sammenholdelse, svarer antallet på fakturalinjen til det antal, der blev modtaget. Det modtagne antal angives på den produktkvittering, der sammenholdes med fakturaen.
-    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 for Operations. Dette omfatter følgende typer prissammenholdelse:
+    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Dette omfatter følgende typer prissammenholdelse:
         -   Sammenholdelse af nettoenhedspriser – Nettoenhedsprisen på fakturalinjen svarer til nettoenhedsprisen på indkøbsordrelinjen, dvs. den er inden for den tilladte toleranceprocent. I dette eksempel er tolerancen for nettoenhedsprisen +8 %.
         -   Sammenholdelse af pristotaler – Nettobeløbet på fakturalinjen svarer til nettobeløbet på indkøbsordrelinjen, dvs. den er inden for tilladt toleranceprocent, beløb eller tilladt procent og beløb. I dette eksempel er tolerancen for sammenholdelse af pristotaler +15 %.
 
@@ -79,7 +79,7 @@ Papirfakturaen fra Contoso indeholder følgende oplysninger.
 | Skat                         |          |            | 0,00       |
 | Samlet                       |          |            | 44.500,00  |
 
-Fakturalinjen indeholder følgende oplysninger i Microsoft Dynamics 365 for Operations.
+Fakturalinjen indeholder følgende oplysninger i Finance and Operations.
 
 | varenummer                 | Antal | Enhedspris | Linjenettobeløb | Sammenholdelsespolitik    | Antal afstemte produktkvitteringer | Prisafstemning | Pristotalafstemning |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -115,7 +115,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 1.  Varerne ankommer. Claus, en arbejder i modtagelsesafdelingen i Fabrikams division i Malaysia, afbrydes og bogfører ikke produktkvitteringen med det samme.
 2.  Pernille, kreditorkoordinator hos Fabrikam, indtaster og kontrollerer den faktura, der er sendt af Contoso. Hun kontrollerer følgende oplysninger:
     -   For varer, der kræver trevejs-sammenholdelse, svarer antallet på fakturalinjen til det antal, der blev modtaget. Det modtagne antal angives på den produktkvittering, der sammenholdes med fakturaen.
-    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 for Operations. Dette omfatter følgende typer prissammenholdelse:
+    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Finance and Operations. Dette omfatter følgende typer prissammenholdelse:
         -   Sammenholdelse af nettoenhedspriser – Nettoenhedsprisen på fakturalinjen svarer til nettoenhedsprisen på indkøbsordrelinjen, dvs. den er inden for den tilladte toleranceprocent. I dette eksempel er tolerancen for nettoenhedsprisen +2 %.
         -   Sammenholdelse af pristotaler – Nettobeløbet på fakturalinjen svarer til nettobeløbet på indkøbsordrelinjen, dvs. den er inden for tilladt toleranceprocent, beløb eller tilladt procent og beløb. I dette eksempel er tolerancen for sammenholdelse af pristotaler +10 %.
 
@@ -128,7 +128,7 @@ Papirfakturaen fra Contoso indeholder følgende oplysninger.
 | USB-drev             | 200      | 10,05      | 2.010,00   |
 | Faktura i alt         |          |            | 7.092,00   |
 
-Fakturalinjen indeholder følgende oplysninger i Microsoft Dynamics 365 for Operations.
+Fakturalinjen indeholder følgende oplysninger i Finance and Operations.
 
 | varenummer           | Antal | Enhedspris | Linjenettobeløb | Sammenholdelsespolitik    | Antal afstemte produktkvitteringer | Prisafstemning | Pristotalafstemning |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

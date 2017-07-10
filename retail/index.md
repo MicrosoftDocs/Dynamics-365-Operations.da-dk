@@ -80,8 +80,8 @@ I Retail kan butikschefer oprette og udgive arbejdsskift og planer for medarbejd
 
 Butiksmedarbejderne kan se skiftehold og tildelte tidsplaner sammen med instruktioner til skifteholdene, og de kan se, hvilke kolleger, der er tildelt skifteholdene. De kan også sende anmodninger om fravær, anmodninger om bytning af skiftehold og tilbud om at tage skiftehold.
 
-## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere detailmiljøer
-Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du er ansvarlig for at implementere og vedligeholde systemet, skal du se på det indhold til udvikleren og systemadministratoren, der er specifikt for Detail, samt det mere generelle indhold.
+## <a name="customize-and-administer-retail-environments"></a>Tilpasse og administrere Retail-miljøer
+Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du er ansvarlig for at implementere og vedligeholde systemet, skal du se på det indhold til udvikleren og systemadministratoren, der er specifikt for Retail, samt det mere generelle indhold.
 
 - [Dynamics 365 for Retail til it-medarbejdere og udviklere](dev-itpro/dev-retail-home-page.md)
 - [Microsoft Dynamics 365 for Retail til udviklere og it-medarbejdere](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)

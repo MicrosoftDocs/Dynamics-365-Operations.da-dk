@@ -1,9 +1,9 @@
 ---
-title: Registrerings-id&quot;er
-description: "Dette emne indeholder oplysninger om opsætning og brug af registrerings-id&quot;er."
+title: Registrerings-id'er
+description: "Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fc4a56eceb75673b7a044bd8392f8d0cc675e869
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -57,10 +57,12 @@ Registreringskategori er landets/områdets registrerings-identifikator, der er g
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i et bestemt land/område.|
 | Begrænset til         | Den type begrænsning, der gælder for momsregistreringstypen: Ingen, Person, Organisation.|
-| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den komplette liste over understøttede i AX7.1-kategorier findes nedenfor. |
+| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den komplette oversigt over understøttede kategorier i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition findes nedenfor. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angiv registrering-id'er for poster i globalt adressekartotek
-Det globale adressekartotek (GAB) i Microsoft Dynamics 365 for Operations indeholder konsoliderede adresseoplysninger for debitorer, kreditorer, kontaktpersoner, forretningsforbindelser og juridiske enheder. Du kan finde flere oplysninger under [Oversigt over globalt adressekartotek](/dynamics365/operations/organization-administration/overview-global-address-book). De partposter, der er gemt i det globale adressekartotek, kan indeholde en eller flere adresseposter. Disse adresser bruges til forskellige formål, f.eks. fakturering eller levering. Du kan konfigurere registrerings-id'er for adresseoplysninger for debitorer, kreditorer, arbejdstagere og juridiske enheder. Find den partspost (juridisk enhed, kreditor, debitor, arbejder), som du vil angive registrerings-id, og klik derefter på **Registrerings-id'er** i formularer, der er relateret til part, juridisk enhed, kreditor, debitor, arbejder for at åbne siden **Administrer adresser**. Under fanen **Momsregistrering** skal du klikke på **Tilføj** og angiv følgende oplysninger om registrerings-id'et.
+
+Det globale adressekartotek (GAB) i Microsoft Finance and Operations indeholder konsoliderede adresseoplysninger for debitorer, kreditorer, kontaktpersoner, forretningsforbindelser og juridiske enheder. Du kan finde flere oplysninger under [Oversigt over globalt adressekartotek](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). De partposter, der er gemt i det globale adressekartotek, kan indeholde en eller flere adresseposter. Disse adresser bruges til forskellige formål, f.eks. fakturering eller levering. Du kan konfigurere registrerings-id'er for adresseoplysninger for debitorer, kreditorer, arbejdstagere og juridiske enheder. Find den partspost (juridisk enhed, kreditor, debitor, arbejder), som du vil angive registrerings-id, og klik derefter på **Registrerings-id'er** i formularer, der er relateret til part, juridisk enhed, kreditor, debitor, arbejder for at åbne siden **Administrer adresser**. Under fanen **Momsregistrering** skal du klikke på **Tilføj** og angiv følgende oplysninger om registrerings-id'et.
+
 
 |Felt                |Betegnelse                                                |
 |---------------------|-----------------------------------------------------------|
@@ -80,23 +82,23 @@ Det globale adressekartotek (GAB) i Microsoft Dynamics 365 for Operations indeho
 Søgning efter partposter, der er baseret på et registrerings-ID, er tilgængelig i formularer, der er relateret til part, juridisk enhed, kreditor, debitor og arbejder. Klik på indstillingen **Søgning efter registrerings-id** for at åbne siden **Søgekriterier for registrerings-id**. Angiv søgekriterier, og klik på **Find**. Systemet viser de valgte poster fra det globale adressekartotek og partpostens tilknyttede typer.
 
 ## <a name="supported-registration-categories"></a>Understøttede registreringskategorier
-Følgende tabel indeholder de understøttede registreringstyper i Dynamics 365 for Operations. Hvis du er fortrolig med Microsoft Dynamics AX 2012-felter til registrering af id'er, knytter denne tabel også disse felter til registreringskategorier i Dynamics-365 for Operations.
+Følgende tabel indeholder de understøttede registreringstyper i Finance and Operations. Hvis du er fortrolig med Microsoft Dynamics AX 2012-felter til registrering af id'er, knytter denne tabel også disse felter til registreringskategorier i Finance and Operations.
 
-| Registreringskategori i Dynamics 365 for Operations         |Land/område  | Dynamics AX 2012 udtryk/felt|
+| Registreringskategori i Finance and Operations         |Land/område  | Dynamics AX 2012 udtryk/felt|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| Moms-id                                                        | Alle lande i Den Europæiske Union (EU)|  SE-nummer (lovgivningsmæssig type MOMS-ID i AX2012 R3)|
-| Virksomheds-id (COID)                                          | Belgien Tjekkiet Estland Ungarn Letland Litauen Polen Schweiz | Virksomhedsnummer (EnterpriseNumber) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Virksomhedskode (EnterpriseCode) Registreringsnummer (RegNum\_W) UID (lovgivningsmæssig type UID i AX2012 R3) |
+| Moms-id                                                        | Alle lande i Den Europæiske Union (EU)|  SE-nummer (lovgivningsmæssig type MOMS-ID i AX 2012 R3)|
+| Virksomheds-id (COID)                                          | Belgien Tjekkiet Estland Ungarn Letland Litauen Polen Schweiz | Virksomhedsnummer (EnterpriseNumber) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Virksomhedskode (EnterpriseCode) Registreringsnummer (RegNum\_W) UID (lovgivningsmæssig type UID i AX 2012 R3) |
 | Afdelings-id                                                     | Belgien            | Afdelingsnummer (BranchNumber)|
 | Spisová značka (registreringsnummer, udstedende organ, afsnit) | Tjekkiet     | Registreringsnummer (CommercialRegisterInsetNumber) Opbevaret på handelsregister (CommercialRegister) Sektion for handelsregister(CommercialRegisterSection)|
 | Toldmyndighedens debitor-id                                           | Finland | Tolddebitornummer (CustomsCustomerNumber\_FI)|
-| INN                                                           | Den Russiske Føderation| INN (lovgivningsmæssig type INN i AX2012 R3)|
-| RRC                                                           | Den Russiske Føderation| RRC (lovgivningsmæssig type RRC i AX2012 R3)|
-| OKDP                                                          | Den Russiske Føderation| OKDP (lovgivningsmæssig type OKDP i AX2012 R3)|
-| OKPO                                                          | Den Russiske Føderation| OKPO (lovgivningsmæssig type OKPO i AX2012 R3)|
-| RCOAD                                                         | Den Russiske Føderation| RCOAD (lovgivningsmæssig type RCOAD i AX2012 R3)|
-| OGRN                                                          | Den Russiske Føderation| OGRN (lovgivningsmæssig type OGRN i AX2012 R3) |
-| SNILS                                                         | Den Russiske Føderation| SNILS (lovgivningsmæssig type SNILS i AX2012 R3)|
-| CIFTS                                                         | Den Russiske Føderation| CIFTS (lovgivningsmæssig type CIFTS i AX2012 R3)|
+| INN                                                           | Den Russiske Føderation| INN (lovgivningsmæssig type INN i AX 2012 R3)|
+| RRC                                                           | Den Russiske Føderation| RRC (lovgivningsmæssig type RRC i AX 2012 R3)|
+| OKDP                                                          | Den Russiske Føderation| OKDP (lovgivningsmæssig type OKDP i AX 2012 R3)|
+| OKPO                                                          | Den Russiske Føderation| OKPO (lovgivningsmæssig type OKPO i AX 2012 R3)|
+| RCOAD                                                         | Den Russiske Føderation| RCOAD (lovgivningsmæssig type RCOAD i AX 2012 R3)|
+| OGRN                                                          | Den Russiske Føderation| OGRN (lovgivningsmæssig type OGRN i AX 2012 R3) |
+| SNILS                                                         | Den Russiske Føderation| SNILS (lovgivningsmæssig type SNILS i AX 2012 R3)|
+| CIFTS                                                         | Den Russiske Føderation| CIFTS (lovgivningsmæssig type CIFTS i AX 2012 R3)|
 
 Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder nødvendige forudsætninger, i følgende opgaveregistreringer for moms-ID i Lifecycle Services (LCS):
 

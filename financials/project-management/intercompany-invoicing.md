@@ -1,26 +1,26 @@
 ---
 title: Intern fakturering
-description: Denne artikel indeholder oplysninger og eksempler om intern fakturering for projekter i Microsoft Dynamics 365 for Operations.
+description: Denne artikel indeholder oplysninger og eksempler om intern fakturering for projekter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 65c20479af9d2184bd7f3b92f4c0718553425502
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger og eksempler om intern fakturering for projekter i Microsoft Dynamics 365 for Operations.
+Denne artikel indeholder oplysninger og eksempler om intern fakturering for projekter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Din organisation kan have flere divisioner, datterselskaber og andre juridiske enheder, der overfører produkter og tjenester til hinanden i forbindelse med projekter. Den juridiske enhed, der leverer servicer eller produkter, kaldes den *juridiske udlånsenhed*, og den juridiske enhed, der modtager servicen eller produktet, kaldes den *juridiske låneenhed*. 
 
@@ -53,7 +53,7 @@ Målet er at gøre omkostningsstyring, indtægtsføring, skatter og afregningspr
     -   **Dækningsgrad** – Det tal, du angiver i feltet **Prissætning**, er den dækningsgrad, der er udtrykt som en procentdel af salgsprisen.
 
 ## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Eksempel 1: Konfigurere parametre for intern fakturering
-I dette eksempel er USSI er en juridisk udlånsenhed, og dens ressourcer rapporterer tid i forhold til den juridiske låneenhed, FRSI, der ejer kontrakten med slutkunden. Timer og udgifter, som USSI-medarbejdere rapporter, kan indgå i projektfakturaen, som FRSI genererer. Desuden er der en tredje kilde til posteringer, der kan stammer fra den juridiske udlånsenhed (i dette eksempel USSI), når den leverer delte leverandørservices til datterselskaber (f.eks. FRSI) og derefter overfører disse omkostninger til projekter inden for disse datterselskaber. Alle tilsvarende fakturadokumenter og momsberegninger udføres af Dynamics 365 for Operations. 
+I dette eksempel er USSI er en juridisk udlånsenhed, og dens ressourcer rapporterer tid i forhold til den juridiske låneenhed, FRSI, der ejer kontrakten med slutkunden. Timer og udgifter, som USSI-medarbejdere rapporter, kan indgå i projektfakturaen, som FRSI genererer. Desuden er der en tredje kilde til posteringer, der kan stammer fra den juridiske udlånsenhed (i dette eksempel USSI), når den leverer delte leverandørservices til datterselskaber (f.eks. FRSI) og derefter overfører disse omkostninger til projekter inden for disse datterselskaber. Alle tilsvarende fakturadokumenter og momsberegninger udføres af Finance and Operations. 
 
 I dette eksempel skal FRSI være en debitor i den juridiske enhed for USSI, og USSI skal være kreditor i den juridiske FRSI-enhed. Du kan derefter oprette en intern relation mellem de to juridiske enheder. Følgende procedure viser, hvordan du konfigurerer parametre, så begge juridiske enheder kan deltage i intern fakturering.
 

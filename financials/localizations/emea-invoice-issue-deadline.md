@@ -3,7 +3,7 @@ title: Deadline for fakturaudstedelse
 description: "Denne artikel forklarer, hvordan du konfigurerer parametre for at beregne forfaldsdatoerne for udstedelse af debitorfakturaer og kreditorfakturaer i Den Europæiske Union (EU)."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 77a498e0d3081cdac39dfe4261b7e8be7b7af9e6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3fdd9f21964ae6d0c12225feebb6d73e852dc50e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -55,7 +55,7 @@ Brug siden **Konfigurer beregning af forfaldsdato for fakturaudstedelse** til at
 Du kan også konfigurere datokontrolparametre for at sikre, at debitorfakturaer og kreditnotaer for debitorposteringer genereres inden for det angivne tidsrum, når leveringen har fundet sted. Du kan finde disse parametre i området **Datokontrol for faktura** på siden **Debitorparametre**.
 
 ## <a name="example"></a>Eksempel
-Når du vil konfigurere Microsoft Dynamics 365 for Operations til at beregne forfaldsdatoer for fakturaudstedelse for Intrastat-EU-forsendelser den 15. i måneden efter leveringen, skal du oprette en datointervalkode og en beregningsregel, der har følgende indstillinger:
+Når du vil konfigurere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition til at beregne forfaldsdatoer for fakturaudstedelse for Intrastat-EU-forsendelser den 15. i måneden efter leveringen, skal du oprette en datointervalkode og en beregningsregel, der har følgende indstillinger:
 
 ### <a name="date-interval-code"></a>Datointervalkode
 

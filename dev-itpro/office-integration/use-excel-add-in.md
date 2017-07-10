@@ -1,9 +1,9 @@
 ---
 title: "Brug af Excel-tilføjelsesprogrammet"
-description: "Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. For at åbne enhedsdataene kan du enten starte fra Microsoft Excel eller Microsoft Dynamics 365 for Operations."
+description: "Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c391fb70d837db9c0f167b392291fc1c5cc2bb53
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f55e1e89d0e48819962c169a56f0f27dc0d792b4
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -30,16 +30,16 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. For at åbne enhedsdataene kan du enten starte fra Microsoft Excel eller Microsoft Dynamics 365 for Operations.
+Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. For at åbne enhedsdataene kan du enten starte fra Microsoft Excel eller Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Ved at åbne enhedsdata i Microsoft Excel, kan du hurtigt og let få vist og redigere dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. Dette tilføjelsesprogram kræver Microsoft Excel 2016. **Bemærk!** Hvis din Microsoft Azure Active Directory (AD Azure)-lejer er konfigureret til at bruge Active Directory Federation Services (AD FS), skal du kontrollere, at opdateringen fra maj 2016 er anvendt, så Excel-tilføjelsesprogrammet kan logge dig korrekt på.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Åbn objektdata i Excel, når du starter fra Dynamics 365 for Operations
-1.  Klik på **Åbn i Microsoft Office** på en side i Microsoft Dynamics 365 for Operations. Hvis roddatakilden (tabel) for siden er den samme som roddatakilden for alle enheder, genereres standardindstillingerne **Åbn i Excel** for siden. **Åbn i Excel**-indstillinger kan findes på ofte brugte sider, f.eks. **Alle leverandører** og **Alle kunder**.
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Åbn objektdata i Excel, når du starter fra Dynamics 365 for Finance and Operations
+1.  Klik på **Åbn i Microsoft Office** på en side i Microsoft Dynamics 365 for Finance and Operations. Hvis roddatakilden (tabel) for siden er den samme som roddatakilden for alle enheder, genereres standardindstillingerne **Åbn i Excel** for siden. **Åbn i Excel**-indstillinger kan findes på ofte brugte sider, f.eks. **Alle leverandører** og **Alle kunder**.
 2.  Klik på en **Åbn i Excel**-indstilling, og åbn den projektmappe, der er genereret. Denne projektmappe har binding-oplysningerne for enheden, en pointer til dit miljø og en pointer til Excel-tilføjelsesprogrammet.
 3.  I Excel skal du klikke på **Aktivér redigering** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4.  Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du klikke på **Har tillid til dette tilføjelsesprogram**.
-5.  Hvis du bliver bedt om at logge på, skal du klikke på **Log på**, og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Dynamics 365 for Operations. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra Internet Explorer og logger dig automatisk på, hvis det er muligt. Derfor skal du kontrollere brugernavnet i øverste højre hjørne af Excel-tilføjelsesprogrammet.
+5.  Hvis du bliver bedt om at logge på, skal du klikke på **Log på** og derefter logge på ved hjælp af de samme legitimationsoplysninger, du brugte til at logge på Dynamics 365 for Finance and Operations. Excel-tilføjelsesprogrammet bruger en tidligere logon-kontekst fra Internet Explorer og logger dig automatisk på, hvis det er muligt. Derfor skal du kontrollere brugernavnet i øverste højre hjørne af Excel-tilføjelsesprogrammet.
 
 Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har valgt. Bemærk, at der ikke er nogen data i projektmappen, før Excel-tilføjelsesprogrammet læser dem ind.
 
@@ -48,7 +48,7 @@ Excel-tilføjelsesprogrammet læser automatisk dataene for den enhed, du har val
 2.  I Office Store kan du søge på nøgleordet "Dynamics" og klikke på **Tilføj** ud for **Microsoft Dynamics Office-tilføjelsesprogram** (Excel-tilføjelsesprogrammet).
 3.  Hvis du kører Excel-tilføjelsesprogrammet for første gang, skal du klikke på **Har tillid til dette tilføjelsesprogram** for at aktivere Excel-tilføjelsesprogrammet til at køre. Excel-tilføjelsesprogrammet kører i ruden til højre i Excel-vinduet.
 4.  Klik på **Tilføj serveroplysninger** for at åbne ruden **Indstillinger**.
-5.  Kopiér browser-URL-adressen fra din destinationsforekomst af Dynamics 365 for Operations, indsæt den i feltet **Serverens URL-adresse**, og slet derefter alt efter værtsnavnet. Den resulterende URL-adresse skal have blot værtsnavnet.
+5.  Kopiér browser-URL-adressen fra din destinationsforekomst af Dynamics 365 for Finance and Operations, indsæt den i feltet **Serverens URL-adresse**, og slet derefter alt efter værtsnavnet. Den resulterende URL-adresse skal have blot værtsnavnet.
 Hvis URL-adressen f.eks. er https://xxx.dynamics.com/?cmp=usmf&amp;mi = CustTableListPage, skal du slette alt undtagen **https://xxx.dynamics.com**.
 6.  Klik på **OK**, og klik derefter på **Ja** for at bekræfte ændringen. Excel-tilføjelsesprogrammet genstarter og indlæser metadata. Knappen **Design** er nu tilgængelig. Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan finde yderligere oplysninger i "Knappen Indlæs applets vises" i afsnittet "Fejlfinding" i dette emne.
 7.  Klik på **Design**. Excel-tilføjelsesprogrammet henter enhedsmetadata.

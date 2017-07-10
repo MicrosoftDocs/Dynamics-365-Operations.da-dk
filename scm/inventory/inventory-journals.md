@@ -3,14 +3,14 @@ title: Lagerkladder
 description: "I denne artikel beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d947b184fd61af3b997182f0a39a8c13c58d6a5a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -30,10 +30,12 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[retail name](../includes/retail-name.md)]
+
 
 I denne artikel beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner. 
 
-Lagerkladder i Microsoft Dynamics 365 for Operations bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
+Lagerkladder i Microsoft Dynamics 365 for Finance and Operations bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
 
 ## <a name="types-of-inventory-journals"></a>Typer af lagerkladder
 Du kan vælge mellem følgende lagerkladdetyper:
@@ -68,7 +70,7 @@ Når du færdigmelder en stykliste, kan du oprette en styklistekladde. Du kan bo
 
 ### <a name="item-arrival"></a>Varemodtagelse
 
-Du kan bruge varemodtagelseskladden til at registrere modtagelsen af varer (f.eks, fra indkøbsordrer). En varemodtagelseskladde kan oprettes som en del af modtagelsesstyring fra siden **Modtagelsesoversigt**, eller du kan manuelt oprette en kladdepostering fra siden **Varemodtagelse**. Hvis du aktiverer kladdenavnet for varemodtagelse for at kontrollere for plukpladser, søger Dynamics 365 for Operations efter et sted til modtagede varer, og hvis der er plads, genereres der automatisk lokationsdestinationer til indgående varer.
+Du kan bruge varemodtagelseskladden til at registrere modtagelsen af varer (f.eks, fra indkøbsordrer). En varemodtagelseskladde kan oprettes som en del af modtagelsesstyring fra siden **Modtagelsesoversigt**, eller du kan manuelt oprette en kladdepostering fra siden **Varemodtagelse**. Hvis du aktiverer kladdenavnet for varemodtagelse for at kontrollere for plukpladser, søger Finance and Operations efter et sted til modtagede varer, og hvis der er plads, genereres der automatisk lokationsdestinationer til indgående varer.
 
 ### <a name="production-input"></a>Produktionsindlagring
 

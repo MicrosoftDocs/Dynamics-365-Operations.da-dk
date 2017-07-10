@@ -1,16 +1,16 @@
 ---
 title: Oversigt over kvalitetsstyring
-description: "I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Operations til at forbedre produktkvaliteten i forsyningskæden."
+description: "I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations til at forbedre produktkvaliteten i forsyningskæden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
@@ -32,13 +32,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Operations til at forbedre produktkvaliteten i forsyningskæden.
+I denne artikel beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations til at forbedre produktkvaliteten i forsyningskæden.
 
-Kvalitetsstyring kan hjælpe dig med at administrere behandlingstid, når du håndterer ikke-standardiserede produkter, uanset deres oprindelsessted. Fordi diagnosticeringstyper er knyttet til rapportering af korrektion, kan Microsoft Dynamics 365 for Operations planlægge opgaver for at løse problemer og forhindre dem i fremtiden.
+Kvalitetsstyring kan hjælpe dig med at administrere behandlingstid, når du håndterer ikke-standardiserede produkter, uanset deres oprindelsessted. Fordi diagnosticeringstyper er knyttet til rapportering af korrektion, kan Microsoft Dynamics 365 for Finance and Operations planlægge opgaver for at løse problemer og forhindre dem i fremtiden.
 
 Ud over funktionalitet til administration af uoverensstemmelse omfatter kvalitetsstyring funktionalitet til sporing af problemer efter problemtype (også interne problemer) og til identificering af løsninger som kortsigtede eller langsigtede. Statistik over nøgletal (KPI'er) giver indsigt i historikken for tidligere problemer med uoverensstemmelse, og de løsninger, der blev anvendt til at rette dem. Du kan bruge historikdata til at gennemgå effektiviteten af tidligere kvalitetsmål og fastlægge passende foranstaltninger, der skal bruges i fremtiden.
 
-Når du opretter en kvalitetstilknytning, kan Microsoft Dynamics 365 for Operations oprette kvalitetsordrer til forskellige forretningsprocesser, hændelser og betingelser. Kvalitetstilknytningen kan dække en bestemt vare, en bestemt gruppe varer eller alle varer.
+Når du opretter en kvalitetstilknytning, kan Finance and Operations oprette kvalitetsordrer til forskellige forretningsprocesser, hændelser og betingelser. Kvalitetstilknytningen kan dække en bestemt vare, en bestemt gruppe varer eller alle varer.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Eksempler på brug af kvalitetsstyring
 Kvalitetsstyring er fleksibel og kan gennemføres på forskellige måder for at opfylde kravene på bestemte niveauer i forsyningskædeoperationer. Eksemplerne nedenfor viser mulige anvendelser af disse funktioner:

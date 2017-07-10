@@ -114,7 +114,7 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 <p><a href="../retail/call-center-functionality">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels">Konfiguration og styring af kanal</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS og Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Detailudvikler og -administration</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Retail-udvikling og -administration</p>
 
 </td>
 </tr>

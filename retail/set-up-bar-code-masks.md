@@ -3,25 +3,27 @@ title: "Opsætning af stregkodemasker"
 description: Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkodemasker til stregkoder.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7b71cbe75f2d7e8f20201e8fa50df8ea1021c4de
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 958cac2e85ae7fa514f6f26cbb6178d8fdec9783
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
@@ -36,7 +38,7 @@ Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemaske
 <a name="set-up-bar-code-mask-characters"></a>Opsætning af stregkodemasketegn
 -------------------------------
 
-Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere stregkoder, der er scannet ind i POS-enheden. Masker består af tegn, der fungerer som pladsholdere, som angiver formatet for de stregkoder, der oprettes. Hvis du vil konfigurere en stregkodemaske, skal du konfigurere stregkodemasketegn. Gå til **Detail og handel** &gt; **Lagerstyring** &gt; **Stregkoder og labels** &gt; **Stregkodeopsætning**. Klik på **Ny** for at oprette stregkodemasketegn. Masketegn kan oprettes for at angive følgende stregkodedata.
+Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere stregkoder, der er scannet ind i POS-enheden. Masker består af tegn, der fungerer som pladsholdere, som angiver formatet for de stregkoder, der oprettes. Hvis du vil konfigurere en stregkodemaske, skal du konfigurere stregkodemasketegn. Gå til **Detail** &gt; **Lagerstyring** &gt; **Stregkoder og labels** &gt; **Masketegn**. Klik på **Ny** for at oprette stregkodemasketegn. Masketegn kan oprettes for at angive følgende stregkodedata.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -53,12 +55,13 @@ Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere 
 | **Medarbejder**         | Angiver stregkodesegment for medarbejder id-nummer, der bruges til at logge på med stregkode på POS-enheden.                                  |
 | **Kunde**         | Angiver kunde-id-segment.                                                                                  |
 | **Datapost**       | *Ikke implementeret endnu.*                                                                                          |
-| **Rabatkode**    | Angiver en rabatkode til en stregkode, der bruges til at tilføje en rabat til en POS-transaktion             |
+| **Rabatkode**    | *Afskrives* pr. Dynamics 365 for Retail 2017-forårsversion. Tidligere. Angiver en rabatkode til en stregkode, der bruges til at føje en rabat til en POS-transaktion.                                                                   |
+| **Kuponkode**      | Angiver kuponkode for en stregkode, der bruges til at føje rabat til en detailordre. Dette har erstattet rabatkoden.     |
 | **Gavekort**        | Angiver en gavekortnummer, når der udstedes eller betales med gavekort.                                               |
 | **Fordelskundekort**     | Tilføjer en fordelskunde i transaktionen, og kan bruges ved betaling af loyalitet.                             |
 
 ## <a name="define-bar-code-masks"></a>Definer stregkodemasker
-Når stregkodemasketegn er angivet for de nødvendige stregkodemasker, skal du gå til **Detail og handel** &gt; **Lagerstyring** &gt; **Stregkoder og labels**&gt;**Opsætning af stregkodemaske**. På denne side kan du definere stregkodemasker, der bruger de tidligere angivne tegn. Disse stregkodemasker, der skal bruges ved oprettelse af stregkoder og vil også hjælpe med til at identificere stregkoder, der er scannet ved POS-enheden.
+Når stregkodemasketegn er angivet for de nødvendige stregkodemasker, skal du gå til **Detail** &gt; **Lagerstyring** &gt; **Stregkoder og labels** &gt; **Opsætning af stregkodemaske**. På denne side kan du definere stregkodemasker, der bruger de tidligere angivne tegn. Disse stregkodemasker, der skal bruges ved oprettelse af stregkoder og vil også hjælpe med til at identificere stregkoder, der er scannet ved POS-enheden.
 
 1.  Klik på **Ny** for at oprette en ny stregkodemaske.
 2.  Angiv værdier i felterne **Maske-id** og **Beskrivelse**, og vælg derefter en stregkodemasketypen i feltet **Type**.
