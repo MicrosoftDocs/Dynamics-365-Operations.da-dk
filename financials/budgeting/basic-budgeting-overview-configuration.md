@@ -58,7 +58,7 @@ Definer en *budgetmodel*, der svarer til alle eller nogle af budgetterne. Du kan
 > [!NOTE] 
 > Hvis du bruger budgetstyring, kan du kun knytte én budgetmodel til en specifik tidsperiode for budgetcyklus. 
 
-Opret *budgetkoder *, der identificerer typen af budgetposteringer, der skal bogføres og alle relaterede arbejdsgange. Budgetkoder kan understøtte følgende budgettyper:
+Opret *budgetkoder*, der identificerer typen af budgetposteringer, der skal bogføres og alle relaterede arbejdsgange. Budgetkoder kan understøtte følgende budgettyper:
 
 -   Oprindeligt budget
 -   Flytning
@@ -79,7 +79,7 @@ Budgetadministratoren kan gennemgå den aktuelle tilstand for et budget i arbejd
 
 Forespørgselssiden **Faktisk vs. budget** giver dig mulighed for at dykke ned i detaljer om budget versus faktiske beløb. Vælg en linje på forespørgselssiden, og klik derefter på **Periodesaldi,** for at se budgettet og faktiske beløb, der er spredt over regnskabsperioder. Siden **Budgetkontoposter** indeholder detaljeadgang til detaljerne i budgetbeløbet i budgetregisterposter. Siden **Finanskladdeposter** åbner de finansposteringer, der er inkluderet i det beregnede **faktiske** beløb. 
 
-En virksomhed, der bruger budgetplanlægningsfunktionen kan oprette og bruge *budgetprognoser *i arbejdsområdet **Finansbudgetter og budgetter**.
+En virksomhed, der bruger budgetplanlægningsfunktionen kan oprette og bruge *budgetprognoser* i arbejdsområdet **Finansbudgetter og budgetter**.
 
 
 
