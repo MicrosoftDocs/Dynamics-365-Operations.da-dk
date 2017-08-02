@@ -24,9 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-<a id="cost-accounting-home-page" class="xliff"></a>
-
-# Startside for omkostningsregnskab
+# <a name="cost-accounting-home-page"></a>Startside for omkostningsregnskab
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,9 +47,7 @@ Med modulet Omkostningsregnskab kan du gøre følgende:
 -   Oprette opgørelser, kan ses i arbejdsområdet.
 -   Oprette rapporter ved hjælp af Excel.
 
-<a id="get-started" class="xliff"></a>
-
-## Introduktion
+## <a name="get-started"></a>Introduktion
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -68,16 +64,12 @@ For at forstå, hvordan du kan bruge Omkostningsregnskab i dit daglige arbejde, 
 -   [Dimensioner for omkostningsobjekt](cost-objects.md)
 -   [Oprette omkostningsobjekter](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (opgaveguide)
 
-<a id="cost-control-mobile-workspace" class="xliff"></a>
-
-## Arbejdsområde til omkostningsstyring på mobilenheder
+## <a name="cost-control-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 Med arbejdsområdet til omkostningsstyring på mobilenheder kan ledere af bærere se bærerydeevnen når som helst og hvor som helst.
 
 -   [Arbejdsområde til omkostningsstyring på mobilenheder](cost-controlling-mobile-workspace.md)
 
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
-
-## Power BI-indhold til omkostningsregnskabsanalyse
+## <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 Microsoft Power BI-indholdet til omkostningsregnskabsanalysen er beregnet til omkostningscontrollere eller andre, der er ansvarlig for udførelse af en organisations omkostningsstyring. Det indeholder oversigt over målepunkter som omkostning, størrelsesorden og omkostningssats ved faktisk omkostning, budgetomkostninger og fleksible budgetomkostninger. Det bruger transaktionsdata fra modulet Omkostningsregnskab i Finance and Operations og giver en samlet oversigt over omkostninger for hele organisationen i én rapporteringsvaluta. Ledere kan filtrere dataene efter omkostningsobjekter for at udføre omkostningsstyring af deres organisatoriske enheder, selv om organisationen kan have flere juridiske enheder.
 
 -   [Power BI-indhold til omkostningsregnskabsanalyse](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
