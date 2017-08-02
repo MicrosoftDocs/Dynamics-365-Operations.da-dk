@@ -1,28 +1,28 @@
 ---
 title: Startside for Supply Chain Management
 description: "Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Finance and Operations - Supply Chain Management mere effektivt."
-author: yuyus
+author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 4044c66833e914b1f0f2d552d827013bd48dc2db
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,22 +36,49 @@ Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamic
 Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
 
 ## <a name="core-concepts-and-tasks"></a>Grundlæggende begreber og opgaver
-*  Vælg et funktionsområde, du vil vide mere om, i venstre rude. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Behandle indgående ASN'er i Lokationsstyring</a> (video) 
 
+Vælg et funktionsområde, du vil vide mere om.
+
+- [Driftsregnskab](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+- [Omkostningsstyring](cost-management\costing-sheets.md)  
+- [Lagerstyring](inventory\consignment.md)
+- [Varedisponering](master-planning\introduction-demand-forecasting.md)
+- [Indkøb og forsyning](procurement\procurement-sourcing-overview.md)
+- [Administration af produktoplysninger](pim\product-information.md)
+- [Produktionsstyring](production-control\production-process-overview.md)
+- [Salg og marketing](sales-marketing\overview-sales-marketing.md)
+- [Transportstyring](transportation\transportation-management-overview.md)
+- [Lokationssstyring](warehousing\warehouse-configuration.md)
+
+## <a name="videos"></a>Videoer
+
+### <a name="get-started"></a>Introduktion  
+
+Disse korte videoer hjælper dig i gang med de nye funktioner, der findes i Opdatering fra juli 2017 til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+
+-  [Introduktion til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
+-  [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
+-  [Brug Excel til omkostningsanalyse](https://youtu.be/-HKHYdClvx8)
+
+### <a name="tech-talk"></a>Tale om teknik 
+-  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
+-  <a href="https://youtu.be/7v8BPmEs9Dg">Varedisponering - tips og tricks til forbedring af ydeevnen</a>
+-  <a href="https://youtu.be/RLXybx20B5o">Hjælp! MPS er langsom!</a>
+-  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Håndter indgående ASN'er i Lokationsstyring</a> 
+-  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få mest muligt ud af dit lokationsstyringssystem</a>
+-  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avanceret R3 lokationsstyring - Indgående behandling og min./maks. genopfyldning</a>
+-  <a href="https://youtu.be/Og0gLlVp7jA">Avanceret R3 lokationsstyring - En almindelig dag, Indgående behandling og min./maks. genopfyldning</a>
+-  <a href="https://youtu.be/5w1MngVchBA">Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3</a>
+-  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avanceret lokationsstyring - En almindelig dag med procesproduktion</a>
+-  <a href="https://youtu.be/y1jrd3A_k70">Underleverandørhandlinger og aktiviteter i produktion</a>
 
 ## <a name="blogs"></a>Blogs
-Der er mange emner om produktion og styring af forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>. De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version. 
-
-Du kan f.eks. læse de seneste opslag om: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Annoncering af Finance and Operations – Lagersted</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Forbedret funktionalitet af følgeseddel (Dynamics 365 for Operations 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Cross-docking fra produktionsordrer til flytteordrer</a>
+Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>. De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version. 
 
 ## <a name="white-papers"></a>Hvidbøger
-* Hvidbogen <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Finance and Operations - Sådan kommer du i gang med Omkostningsregnskab</a> indeholder de grundlæggende trin for at konfigurere Microsoft Dynamics 365 for Finance and Operations – Omkostningsregnskab til analyse af faktiske omkostninger. Den indeholder også en række procedurer, som du kan udføre i den rækkefølge, de vises i.
-* Hvidbogen <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Finance and Operations - Lean Manufacturing: Leveringsevne og planlægning af kanban-job</a> beskriver detaljerne for planlægning af kanban-job og præsenterer princippet for optagelse af salgsordrer, der bruger metoden for leveringsevne (LE) til leveringsdatokontrol. Den forklarer også, hvordan LE kan kombineres med hændelses-kanbans til modellering af montage til ordre- eller fremstil efter ordre-scenarier.
-* Hvidbogen <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Finance and Operations - Styklistekalkulation ved hjælp efterkalkulationsark</a> beskriver, hvordan du konfigurerer et efterkalkulationsark, der omfatter materiale og produktion, og hvordan konfigurationen påvirker resultaterne af styklistekalkulation. Du kan øve dig i appendikset og bruge den viden, du har opnået ved at læse dette dokument, til at foretage analyse af styklistekalkulation.
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af omkostningsskema</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurser
 Oplysninger om kurser i Microsoft Dynamics 365 for Finance and Operations finder du i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-uddannelsesportalen</a>. (kræver CustomerSource-konto) 

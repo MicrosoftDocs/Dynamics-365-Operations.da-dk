@@ -1,37 +1,35 @@
 ---
-title: Ordliste til Dynamics 365 for Operations
-description: Ordlisten til Microsoft Dynamics 365 for Operations definerer de vigtigste begreber og koncepter i Dynamics 365 for Operations-produktet.
+title: Ordliste for Finance and Operations
+description: Denne ordliste til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition definerer centrale udtryk og begreber.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Ordliste til Dynamics 365 for Operations
+# <a name="finance-and-operations-glossary"></a>Ordliste for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-
-Ordlisten til Microsoft Dynamics 365 for Operations definerer de vigtigste begreber og koncepter i Dynamics 365 for Operations-produktet. 
+Denne ordliste til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition definerer centrale udtryk og begreber. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Et elektronisk pengeoverførselssystem i USA, der giver mulighed for at overfør
 
 Det målte antal, der indgår i eller udgår fra en aktivitet.
 
-###### <a name="address-verification-service"></a>**adressebekræftelsestjeneste (AVS)**
+###### <a name="address-verification"></a>**bekræftelse af adresse**
 
 Den tjeneste, der udbydes af en kreditkortbehandler og kontrollerer, at den faktureringsadresse, der angives af en kortindehaver, svarer til de oplysninger, der er registreret hos den udstedende bank.
-
-###### <a name="adjusted-unit-price"></a>**reguleret enhedspris**
-
-Den beregnede enhedspris baseret på den attributbaserede prissætning og den faktiske styrke, der er modtaget.
-
-###### <a name="advanced-pricing"></a>**avanceret prissætning**
-
-Logik, der bruges til at beregne købsprisen for en styrkevare.
 
 ###### <a name="aging"></a>**aldersfordelt**
 
@@ -101,17 +91,16 @@ Den tidsperiode, hvor den optimale kvalitet eller egenskab for et produkt kan op
 
 Et kildedokument, der dokumenterer en ubetinget anmodning til en tredjepart om at betale en anden part på forlangende.
 
-###### <a name="bill-of-materials"></a>**stykliste**
-
-En liste over de produkter og antal, der skal bruges til at fremstille ét produkt.
-
 ###### <a name="blocking"></a>**blokering**
 
 Den handling, der består i at sætte et dokument eller produkt på hold.
 
+###### <a name="bom-bill-of-materials"></a>**Styklister**
+
+En liste over de produkter og antal, der skal bruges til at fremstille ét produkt.
 ###### <a name="budget-control"></a>**budgetstyring**
 
-En praksis, der består i kun at godkende udgifter, når der kan reserveres budgetmidler til opfyldelse af fremtidige betalingsforpligtelser.
+En praksis, der består i kun at godkende udgifter, hvor budgetmidler kan reserveres til opfyldelse af fremtidige betalingsforpligtelser.
 
 ###### <a name="budget-control-dimension"></a>**budgetstyringsdimension**
 
@@ -175,14 +164,6 @@ En liste over hovedkonti.
 
 En regnskabskategori, der bruges til at opsummere de økonomiske konsekvenser af fremstillingen af produkter og lagerføringen.
 
-###### <a name="commodity-pricing"></a>**vareprissætning**
-
-En prissætningsstrategi til opdatering af prisen på salgsvarer, der fremstilles af varer, der er underlagt hyppige prisændringer.
-
-###### <a name="consolidated-order"></a>**konsolideret ordre**
-
-Et kildedokument, der dokumenterer mere end én referenceordre.
-
 ###### <a name="contractor"></a>**kontrahent**
 
 En rolle, der indtages af en person, som er en del af en kontrahent/arbejdsgiver-relation hos en juridisk enhed.
@@ -194,10 +175,6 @@ En vare, der produceres sammen med en anden vare.
 ###### <a name="cost-center"></a>**bærer**
 
 En driftsenhed, hvis ledere er ansvarlige for de budgetterede og faktisk udgifter.
-
-###### <a name="cost-of-goods-sold"></a>**vareforbrug**
-
-En regnskabskategori, der bruges til at opsummere de økonomiske konsekvenser af fremstillingen af produkter og lagerføringen.
 
 ###### <a name="cost-variance"></a>**omkostningsafvigelse**
 
@@ -223,7 +200,7 @@ Den tid, det tager at udføre en aktivitet.
 
 ###### <a name="dashboard"></a>**dashboard**
 
-Den typiske startside i Dynamics 365 for Operations. I dashboardet kan brugere se en sektion for hvert arbejdsområde, de har adgang til. Hver sektion viser felter fra oversigtssektionerne i det relaterede arbejdsområde. Dashboardet består af et navn og sektioner med felter.
+Den typiske startside i Finance and Operations. På dashboardet kan brugere se en sektion for hvert arbejdsområde, de har adgang til. Hver sektion viser felter fra oversigtssektionerne i det relaterede arbejdsområde. Dashboardet består af et navn og sektioner med felter.
 
 ###### <a name="data-entity"></a>**dataenhed**
 
@@ -260,10 +237,6 @@ En konfigurationsteknologi, der bruges til at oprette produktvarianter ved at v�
 ###### <a name="distinct-product"></a>**specifikt produkt**
 
 Et entydigt identificerbart produkt.
-
-###### <a name="document-blocking"></a>**dokumentblokering**
-
-En metode, der bruges til at sætte en operationsproces på hold, mens de bestilte varer er i gang med en kvalitetssikringsproces.
 
 ###### <a name="document-management-system"></a>**dokumentstyringssystem**
 
@@ -315,11 +288,7 @@ En valuta, der har en fast valutakurs i forhold til en anden valuta.
 
 ###### <a name="fixed-quantity-kanban"></a>**fastmængde-kanban**
 
-En kanban-type, der bruges, når det kanban-antal, der kan tilknyttes en kanban-regel, er konstant.
-
-###### <a name="flexible-authentication"></a>**fleksibel godkendelse**
-
-En godkendelsesproces, hvor brugerne i en række forskellige id-styringssystemer kan godkendes.
+En kanban-type, der bruges, når det kanban-antal, der kan tildeles en kanban-regel, er konstant.
 
 ###### <a name="formula"></a>**formel**
 
@@ -379,10 +348,6 @@ En proces eller overførselsaktivitet i et produktionsflow, der udløses af en k
 
 Tilbagetrækningen af produktkomponenter fra lageret for at færdiggøre kanban-produktionsjob.
 
-###### <a name="kanban-product-quantity"></a>**kanban-produktmængde**
-
-Den varebehovsmængde, der udføres for en kanban, der er baseret på en kanban-regel.
-
 ###### <a name="kanban-rule"></a>**kanban-regel**
 
 En regel i et lean manufacturing-system, der realiserer politikkerne for materialeplanlægning og genopfyldning ved at bestemme, hvordan proces- og overførselsaktiviteterne koordineres i produktionsflow.
@@ -410,10 +375,6 @@ En alfanumerisk nøgle, der giver en part rettigheder til at bruge software elle
 En parts mulighed for at bruge omsætningsaktiver til betaling af omsætningsforpligtelser.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**indirekte omkostninger ved produktion baseret på materiale**
-
-De indirekte produktionsomkostninger er udtrykt som formler til beregning af indirekte omkostninger for en tillægsprocent. En kostprisgruppe, der er tildelt materialekomponenter, fungerer som udgangspunkt for en beregningsformel. Beregningsformler kan defineres for de enkelte produkter eller for varegrupper, der er tildelt produkter, hvilket øger fleksibiliteten, når der beregnes indirekte produktionsomkostninger, der er baseret på materiale.
 
 ###### <a name="master-scheduling"></a>**behovsplanlægning**
 
@@ -459,10 +420,6 @@ En pakke er en kompilerbar og installerbar enhed for en eller flere modeller.
 
 ###### <a name="party"></a>**part**
 
-En enhed, der påtager sig en juridisk bindende rolle ved indgåelse af kontraktlige relationer.
-
-###### <a name="party"></a>**part**
-
 En person eller organisation, der deltager i økonomiske aktiviteter.
 
 ###### <a name="pegging"></a>**udligning**
@@ -471,11 +428,7 @@ Den proces, der består i sporing af antallet af en påkrævet vare til dens kil
 
 ###### <a name="pegging-event"></a>**udligningshændelse**
 
-En ressourceflow-hændelse, der signalerer behovet for et produkt.
-
-###### <a name="phantom-item"></a>**fantomvare**
-
-En vare, der fremstilles, men ikke er på lager.
+En ressourceflowhændelse, der signalerer behovet for et produkt.
 
 ###### <a name="planned-intercompany-demand"></a>**planlagt intern efterspørgsel**
 
@@ -489,17 +442,9 @@ At registrere den pengemæssige værdi af en økonomisk hændelse på en specifi
 
 Den person, der opretter et kildedokument for at starte en anmodning om økonomiske ressourcer.
 
-###### <a name="privilege"></a>**rettighed**
-
-En eller flere tilladelser, som en bruger skal have for at udføre en opgave.
-
 ###### <a name="procurement-catalog"></a>**indkøbskatalog**
 
 En oversigt over produkttilbud, der er inddelt efter indkøbskategori. Et indkøbskatalog bruges til at anmode om produkter til intern brug af en organisation.
-
-###### <a name="product-component"></a>**produktkomponent**
-
-En del af et produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
@@ -507,7 +452,7 @@ Størrelsen af, farven på eller konfigurationen for de produktattributter, der 
 
 ###### <a name="product-family"></a>**produktfamilie**
 
-En entydig inddeling af varer, tjenester eller rettigheder, der enten er en del af den samme produktion eller de samme leveringsaktiviteter eller udbydes til de samme markedssegmenter. I Dynamics 365 for Operations repræsenteres inddelingen ved hjælp af en budgetfordelingsnøgle.
+En entydig inddeling af varer, tjenester eller rettigheder, der enten er en del af den samme produktion eller de samme leveringsaktiviteter eller udbydes til de samme markedssegmenter. I Finance and Operations repræsenteres inddelingen ved hjælp af en budgetfordelingsnøgle.
 
 ###### <a name="product-master"></a>**produktmaster**
 
@@ -581,11 +526,7 @@ En metode, der bruges til at øge eller reducere kravene til prognoser ved behov
 
 En post, der bruges til at registrere de driftsmæssige, juridiske og økonomiske konsekvenser af ressourceflow-hændelser i et regnskabssystem.
 
-###### <a name="regulated-product"></a>**reguleret produkt**
-
-Et produkt, der er reguleret af en offentlig myndighed og kræver overholdelses- og overvågningsrapportering.
-
-###### <a name="rfq-request-for-quotation"></a>**tilbudsanmodning**
+###### <a name="rfq-request-for-quotation"></a>**Tilbudsanmodning**
 
 Et kildedokument, der dokumenterer en invitation til at byde på leveringen af en produktmængde til en angivet pris og på en angivet dato.
 
@@ -593,9 +534,6 @@ Et kildedokument, der dokumenterer en invitation til at byde på leveringen af e
 
 Den person, der anmoder om de økonomiske ressourcer.
 
-###### <a name="restricted-product"></a>**begrænset produkt**
-
-Et produkt, hvis distribution er begrænset eller reduceret af en offentlig myndighed.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Det produktantal, der er dokumenteret på en kildedokumentlinje og genererer et 
 
 Et skøn over fremtidige behov, der oprettes ved at anvende en prognosealgoritme på historiske posteringsdata.
 
-###### <a name="supermarket"></a>**supermarked**
-
-En JIT-lagerlokation, der har begrænset kapacitet og bruges til at samle materialer i batch nær et forbrugspunkt.
-
-###### <a name="system-defined-financial-dimension-type"></a>**systemdefineret økonomisk dimensionstype**
-
-En økonomisk dimension, der er tilknyttet en tabel eller visning i databasen og repræsenterer en enhedstype og har værdier i domænet for en attribut for den pågældende enhedstype.
 
 ### <a name="t"></a>**T**
 
@@ -663,15 +594,15 @@ Den tid, det tager at producere én enhed af et produkt.
 
 ###### <a name="task-guide"></a>**opgaveguide**
 
-En kontrolleret og styret oplevelse gennem trinnene i en opgaveregistrering. En opgaveguide fører brugeren gennem den oplevelse, der blev registreret. Alle virkemåder i forhold til sikkerhed, data og programmer er de samme, når en opgaveguide fuldføres, som når opgaveguiden ikke bruges. Opgaveguiden bruger samme funktioner som arbejdsrutineoptageren til at finde ud af, om en bruger har fuldført det tilsigtede trin, så den kan bede brugeren om at udføre næste trin i optagelsen.
+En kontrolleret og styret oplevelse gennem trinnene i en opgaveregistrering. En opgaveguide fører brugeren gennem den oplevelse, der blev registreret. Alle virkemåder i forhold til sikkerhed, data og programmer er de samme, når en opgaveguide fuldføres, som når opgaveguiden ikke bruges. Opgaveguiden bruger samme funktioner som arbejdsrutineoptageren til at finde ud af, om en bruger har fuldført det tilsigtede trin, så denne kan bede brugeren om at udføre næste trin i optagelsen.
 
 ###### <a name="task-recorder"></a>**Arbejdsrutineoptager**
 
-Et værktøj, der er forhåndsinstalleret i Dynamics 365 for Operations. Under optagelser registrerer den alle de hændelser, som brugeren indtaster i Dynamics 365 for Operations-brugergrænsefladen, der udføres på serveren – herunder tilføjede værdier, ændrede indstillinger, fjernede data osv.
+Et værktøj, der er forhåndsinstalleret i Finance and Operations. Under optagelser registrerer den alle de hændelser, som brugeren indtaster på brugergrænsefladen i Finance and Operations, der udføres på serveren – herunder tilføjede værdier, ændrede indstillinger, fjernede data osv.
 
 ###### <a name="task-recording"></a>**Opgaveregistrering**
 
-En fil, der indeholder de handlinger og anmærkninger, der registreres, når Arbejdsrutineoptager køres i Microsoft Dynamics 365 for Operations.
+En fil, der indeholder de handlinger og anmærkninger, der registreres, når Arbejdsrutineoptager køres i Finance and Operations.
 
 ###### <a name="three-way-matching-policy"></a>**trevejs-sammenholdelsespolitik**
 
@@ -684,12 +615,6 @@ Det antal af en eller flere varer, der overføres eller kan overføres.
 ###### <a name="two-way-matching-policy"></a>**tovejs-sammenholdelsespolitik**
 
 En sammenholdelsespolitik, der kræver priser fra en eller flere kreditorfakturaer for at kunne sammenholde med priserne fra en eller flere indkøbsordrer.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**brugerdefineret økonomisk dimensionstype**
-
-En økonomisk dimension, der er tilknyttet en brugerdefineret liste med værdier.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ En person, der antager rollen som medarbejder eller kontrahent og betales som mo
 ###### <a name="workspace"></a>**arbejdsområde**
 
 En side, der indeholder en oversigt over en af de aktiviteter, som udføres af brugeren. Siden bruger felter, lister og diagrammer til at vise igangværende arbejde og relaterede data fra flere kilder, og siden viser hyppige opgaver, der er relateret til disse data. Felter, der er vist i oversigtssektionen i arbejdsområdet, vises også i den relaterede sektion i dashboardet.
-
-
-
 
