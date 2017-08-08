@@ -1,6 +1,6 @@
 ---
 title: Tilbudsanmodninger
-description: "Denne artikel har en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen."
+description: "Dette artikel indeholder en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel har en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen.
+Dette artikel indeholder en oversigt over tilbudsanmodninger, som organisationer udsteder, når de skal købe varer eller tjenesteydelser, og de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer. Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen.
 
 Anmodningsprocessen for tilbudsanmodning omfatter følgende opgaver:
 
--   Oprettelse og afsendelse af en tilbudsanmodning til en eller flere leverandører
--   Modtagelse og registrering af svar på tilbudsanmodning (bud)
--   Overførsel af accepterede bud på en indkøbsordre, købsaftale eller indkøbsrekvisition
+-   Oprettelse og afsendelse af en tilbudsanmodning til en eller flere leverandører.
+-   Modtagelse og registrering af svar på tilbudsanmodning (bud).
+-   Overførsel af accepterede bud på en indkøbsordre, købsaftale eller indkøbsrekvisition.
 
 I følgende illustration vises en oversigt over processen for anmodninger om tilbud.  
 
@@ -66,17 +66,17 @@ Her er sekvensen af statusser for behandling af tilbudsanmodninger:
 3.  **Modtaget**
 4.  **Accepteret**/**Annulleret**/**Afvist**
 
-Statusserne beskrives mere detaljeret i andre afsnit senere i denne artikel.
+Statusserne beskrives mere detaljeret i andre afsnit senere i dette emne.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurere funktioner for tilbudsanmodning
 Før du kan oprette en tilbudsanmodningssag, skal du konfigurere oplysninger om tilbudsanmodningen på siden **Indkøbs- og forsyningsparametre**. Når du opretter en tilbudsanmodningssag, kan du angive standardværdier, der kopieres til tilbudsanmodningen. Du kan angive følgende standardværdier:
 
--   Indkøbstypen af nye tilbudsanmodninger: **Indkøbsordre** eller **Købsaftale**
--   Indstillinger for udløbsdato og -klokkeslæt
+-   Indkøbstypen af nye tilbudsanmodninger: **Indkøbsordre** eller **Købsaftale**.
+-   Indstillinger for udløbsdato og -klokkeslæt.
 -   Leveringsoplysninger og betalingsbetingelser.
--   Felter, der skal medtages i svaret på tilbudsanmodningen
+-   Felter, der skal medtages i svaret på tilbudsanmodningen.
 
-Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag. Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration kan du aktivere feltlåsning. Når feltlåsning er aktiveret, skal en indkøber, der ønsker at ændre en tilbudsanmodning, først klikke på **Opret** i sektionen **Ændring** under fanen **Tilbud**. Når tilbudsanmodningen er blevet opdateret med ændringen, skal indkøberen fuldføre processen ved at klikke på **Færdiggør**.** ** Handlingen Færdiggør genererer en mail, der underretter kreditorerne om den ændrede tilbudsanmodning. Du kan vælge skabelonen til den mailmeddelelse, der sendes til kreditorer, på siden **Indkøbs- og forsyningsparametre**. Når der oprettes en skabelon, kan den indeholde følgende erstatningstokens:
+Du kan tilsidesætte disse værdier for en bestemt tilbudsanmodningssag. Du skal også konfigurere ændringsprocessen. Som en del af denne konfiguration kan du aktivere feltlåsning. Når feltlåsning er aktiveret, skal en indkøber, der ønsker at ændre en tilbudsanmodning, først klikke på **Opret** i sektionen **Ændring** under fanen **Tilbud**. Når tilbudsanmodningen er blevet opdateret med ændringen, skal indkøberen fuldføre processen ved at klikke på **Færdiggør**. Handlingen **Færdiggør** genererer en e-mail, der giver besked til leverandørerne om den ændrede tilbudsanmodning. Du kan vælge skabelonen til den mailmeddelelse, der sendes til kreditorer, på siden **Indkøbs- og forsyningsparametre**. Når der oprettes en skabelon, kan den indeholde følgende erstatningstokens:
 
 -   %Årsag til returnering af bud%
 -   %Årsag til ændring%
@@ -87,7 +87,10 @@ De angivne tokens %Årsag til returnering af bud% og %Årsag til ændring% ersta
 
 Hvis du vil bruge årsagskoder på en tilbudsanmodning til at angive, hvorfor et tilbud blev afvist eller godkendt, skal du oprette årsagskoder på siden **Leverandørårsager**.  
 
-Du kan konfigurere udseendet af dine udskrevne eller gemte dokumenter med tilbudsanmodninger på siden **Formularopsætning** i Indkøb og forsyning.  
+Du kan konfigurere udseendet af dine udskrevne eller gemte dokumenter med tilbudsanmodninger på siden **Formularopsætning** i Indkøb og forsyning. 
+
+**Bemærk:** For en konfigurationen til offentlige institutioner, kræver ændringer af en tilbudsanmodning, der er allerede blevet sendt, at ændringsprocessen anvendes. Når tilbudsanmodningen er sendt, låses felterne, og derfor skal du klikke på **Opret**, når du vil bruge ændringsprocessen som beskrevet ovenfor, for at foretage ændringer af tilbudsanmodningen.
+Dette styres af feltlåsningsparameteren **Lås tilbudsanmodninger, når de er sendt** i **Indkøbs- og forsyningsparametre**. Denne parameter er indstillet til **Ja** og for en konfiguration til den offentlige sektor er dette en standardværdi, der ikke kan ændres. Det betyder, at mens ændringsprocessen kan håndteres manuelt i en offentlig sektor-konfiguration, er processen til håndtering af ændringer ved at låse felterne, når tilbudsanmodningen er sendt, obligatorisk for den offentlige sektor.
 
 Når du opretter en tilbudsanmodning til en indkøbsordre og føjer en lagervare til tilbudsanmodningen, oprettes der en lagerpostering med tilgangsstatussen **Tilbudskvittering**. Kun linjer i tilbudsanmodninger med denne status kommer i betragtning når du bruger en masterplan til beregning af forsyninger. Hvis du ønsker, at behovsplanen skal omfatte tilbudsanmodningslinjer som en forventet tilgang, skal du konfigurere denne funktionsmåde i opsætningen af varedisponering.  
 
@@ -137,7 +140,7 @@ Følgende tabel viser, hvordan status for tilbudsanmodningen ændres, når du op
 **Bemærk!** Du kan føje flere leverandører til en tilbudsanmodning efter behov, og laveste og højeste status ændres til at afspejle de nye leverandører. Hvis du f.eks. har modtaget tilbud fra alle kreditorerne, og du har accepteret mindst én linje i et tilbud, vil laveste status for tilbudsanmodningens header være **Afvist**, og højeste status vil være **Accepteret**. Hvis du tilføjer en ny kreditor, vil den laveste status på en linje nu være **Oprettet**. Derefter ændrer den laveste status i tilbudsanmodnings hoved til **Oprettet**, mens den højeste status forbliver **Accepteret**.
 
 ## <a name="amending-an-rfq"></a>Ændring af en tilbudsanmodning
-Nogle gange skal du ændre en tilbudsanmodning, når du har sendt den. Dette kan f.eks. ske, fordi leveringsdatoerne er ændret, eller du ønsker yderligere produkter eller forskellige mængder af produkter. Du kan konfigurere ændringsprocessen, så den er mere restriktiv eller mindre restriktiv.  
+Nogle gange skal du ændre en tilbudsanmodning, når du har sendt den. Dette kan f.eks. ske, hvis leveringsdatoerne er ændret, eller du ønsker yderligere produkter eller forskellige mængder af produkter. Du kan konfigurere ændringsprocessen, så den er mere restriktiv eller mindre restriktiv.  
 
 Hvis du bruger den mere restriktive ændringsproces, skal du klikke på **Opret** på tilbudsanmodningssagen for at starte en ændring, før du kan redigere felterne på tilbudsanmodningssagen. Når du har foretaget dine ændringer, skal du klikke på **Færdiggør**. Derefter føres du gennem processen for tilføjelse af oplysninger i den mail, der sendes for at give leverandørerne besked om ændringen. Den opdaterede tilbudsanmodningsrapport, som indeholder en ændringsnote, knyttes automatisk til meddelelsen.  
 
@@ -181,7 +184,7 @@ Når du accepterer et tilbudsanmodningssvar af typen **Indkøbsrekvisition**, op
 
 I svaret kan du tilføje en årsagskode for at forklare, hvorfor du har accepteret eller afvist et bud.  
 
-Du kan acceptere nogle af linjerne i et bud og afvise andre. Du kan også acceptere linjer fra forskellige leverandører. Bare vær opmærksom på, at hvis du accepterer nogle linjer, vil du blive bedt om at afvise alle andre linjer. Så hvis du vil acceptere andre linjer, skal du klikke på **Annuller**, når du bliver spurgt om det.  
+Du kan acceptere nogle af linjerne i et bud og afvise andre. Du kan også acceptere linjer fra forskellige leverandører. Vær opmærksom på, at hvis du accepterer nogle linjer, vil du blive bedt om at afvise alle andre linjer. Så hvis du vil acceptere andre linjer, skal du klikke på **Annuller**, når du bliver spurgt om det.  
 
 I følgende tabel vises, hvordan status for tilbudsanmodningen ændres, efterhånden som du accepterer eller afviser bud fra kreditorer.
 

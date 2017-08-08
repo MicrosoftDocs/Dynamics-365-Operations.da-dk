@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Du kan placere en kreditor i venteposition for forskellige posteringstyper. Føl
 -   **Aldrig** – Kreditoren bliver aldrig sat på hold på grund af inaktivitet.
 
 Når du sætter en kreditor på hold, kan du også angive en årsag og en dato, hvor ventepositionen ophører. Hvis du ikke angiver en slutdato, opretholdes ventepositionen på ubestemt tid.
+
+Du kan ændre på hold-opdateringsstatus til **Alle** for alle kreditorer baseret på de valgte kriterier på siden **Deaktivering af kreditor** og tildele en årsag til, hvorfor kreditoren er sat på hold.
+
+Følgende kriterier bruges til at medtage kreditorer, der har været inaktive i en periode, medtage eller udelade kreditorer, der er medarbejdere, og udelade kreditorer, der er underlagt en aktiveringsfrist før næste spærring.
+
+- Baseret på antallet af dage, du angiver i feltet **Inaktivitetsperiode** på siden **Deaktivering af kreditor**, beregner programmet den seneste dato, hvor kreditoren kan udføre enhver aktivitet, der betragtes som inaktiv. Det vil sige den aktuelle dato minus det antal dage, du angiver. Hvis der findes en eller flere fakturaer for kreditoren, hvor datoen ligger senere end den beregnede seneste dato, kreditoren udelades fra inaktiveringen. Dette valideres også, hvis kreditoren har betalinger efter denne dato, åbne indkøbsrekvisitioner, åbne indkøbsordrer, anmodninger om tilbud eller svar.
+- Antallet af dage i feltet **Aktiveringsfrist før næste spærring** bruges til at beregne datoen for den sidste aktiveringsfrist. Det vil sige den aktuelle dato minus de dage, du angiver. Dette gælder kun for kreditorer, der tidligere er blevet deaktiveret. I tilfælde af en tidligere inaktivering, kontrollerer programmet historikken for andre forekomster af inaktivering for kreditoren og kontrollerer, om den seneste inaktivering fandt sted, før den datoen for sidste aktiveringsfrist. Hvis det er tilfældet, medtages kreditoren i inaktiveringsprocessen.
+- Parameteren **Medtag medarbejdere** refererer til kreditorer, der er knyttet til en medarbejder. Du kan angive, om du vil medtage disse medarbejdere.
+
+Denne proces altid vil udelukke de kreditorer, hvor værdien i feltet **Leverandørspærring** er **Aldrig**.
+
+Kreditorer, der godkendes i valideringerne, placeres i venteposition, og værdien i feltet **Leverandørspærring** ændres til **Alle** og **Årsag** til, hvad du har valgt. Der oprettes en post i on hold-oversigten for kreditoren.
 
 ## <a name="vendor-invoice-account"></a>Kreditorfakturakonto
 Hvis mere end én kreditor har samme faktureringsadresse, eller hvis eb kreditor faktureres gennem en tredjepart, kan du angive en faktureringskonto i kreditorregistreringen. Fakturakontoen er den konto, som fakturabeløbet krediteres, når du opretter en kreditorfaktura fra en indkøbsordre. Hvis du ikke angiver en fakturakonto i kreditorregistreringen, bruges kreditorkontoen som fakturakonto.

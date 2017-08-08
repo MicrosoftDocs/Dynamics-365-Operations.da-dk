@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/25/2017
 
 ---
 
@@ -35,28 +35,30 @@ Dette emne beskriver det Microsoft Power BI-indhold, der er tilgængeligt, og he
 Hvis du bruger opdateringen til Microsoft Dynamics 365 for Finans and Operations, Enterprise edition fra juli 2017 er følgende Power BI-indhold tilgængeligt:
 
 - [Power BI-indhold for frynsegoder](benefits-power-bi.md)
-- [Power BI-indhold for oversigt over kontanter](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Power BI-indhold for oversigt over kontanter](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Power BI-indhold for regnskabsdirektørens oversigt](CFO-power-bi.md)
 - [Power BI-indhold for kompensation](compensation-power-bi.md)
 - [Power BI-indhold til analyse af omkostningsregnskab*](cost-accounting-analysis-content-pack.md) 
-- [Power BI-indhold til styring af kredit og inkasso](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Power BI-indhold til styring af kredit og inkasso](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Power BI-indhold til medarbejderudvikling](employee-development-PBI.md) 
 - [Power BI-indhold til driftsregnskab*](financial-performance-power-bi-content-pack.md)
-- [Power BI-indhold til styring af anlægsaktiver](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Power BI-indhold til styring af anlægsaktiver](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [Power BI-indhold til Læring](learning-power-bi.md)
 - [Power BI-indhold til Praksischef](practice-manager-power-bi.md)
 - [Power BI-indhold til Produktionsperformance](production-performance-power-bi.md)
 - [Power BI-indhold til købsforbrugsanalyse](purchase-content-pack-for-power-bi.md) 
 - [Power BI-indhold til rekruttering](recruiting-analysis-power-bi-content-pack.md) 
 - [Salgs- og rentabilitetsperformance i Power BI-indhold](sales-profitability-performance-content-pack.md)
-- [Power BI-indhold til Kreditorbetalinger](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Power BI-indhold til Kreditorbetalinger](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [Power BI-indhold til lagerstedsperformance](warehouse-power-bi-content.md)
 - [Power BI-indhold til arbejdskraftmetrikker](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>Adgang til indholdet
 
 #### <a name="embedded-content"></a>Integreret indhold
-Med undtagelse af det indhold, der er markeret med en stjerne (\*), er alt indhold i den foregående liste integreret i programmet. Hvis du vil vide mere om, hvor du kan få vist Power BI-indholdet, skal du klikke på linkene.
+Med undtagelse af det indhold, der er markeret med en stjerne (\*), er alt indhold i den foregående liste integreret i programmet. Hvis du vil vide mere om, hvor du kan få vist Power BI-indholdet, skal du klikke på linkene ovenfor.
+
+For at få vist data i Power BI-rapporterne skal du opdatere enhedslageret. Du kan finde flere oplysninger i afsnittet *Opdatering af enhedslager* i [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
 #### <a name="files-available-in-lifecycle-services"></a>Filer, der er tilgængelige i Lifecycle Services
 Dette Power Bi-indhold er tilgængeligt i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indholdspakken og forbinder den med dine data, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -66,7 +68,7 @@ Hvis du bruger Microsoft Dynamics 365 for Operations version 1611 er følgende P
 
 - [Power BI-indhold til kompensation og frynsegoder](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Power BI-indhold til analyse af omkostningsregnskab](cost-accounting-analysis-content-pack.md) 
-- [Power BI-indhold til styring af kredit og inkasso](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Power BI-indhold til styring af kredit og inkasso](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Power BI-indhold til medarbejderkompetencer og udvikling](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Driftsregnskab i Power BI-indhold](financial-performance-power-bi-content-pack.md)
 - [Power BI-indhold til organisatorisk uddannelse](organizational-training-analysis-power-bi-content-pack.md) 

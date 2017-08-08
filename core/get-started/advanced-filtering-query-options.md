@@ -1,28 +1,28 @@
 ---
 title: "Syntaks for avanceret filtrering og forespørgsler"
-description: "I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren &quot;matches&quot; i dialogboksen Avanceret filtrering/sortering."
+description: "I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren \"matches\" i dialogboksen Avanceret filtrering/sortering."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysQueryForm
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48b2049c3f5025d7e8d3fc7e944aa9360786d18a
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 616366009ce7bf7135704e980becc331617cf5af
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -68,7 +68,7 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <td><em>fra-værdi</em>..<em>til-værdi</em> (dobbelt punktum)</td>
 <td>Mellem de to angivne værdier, der er adskilt af dobbelt punktum</td>
 <td>Skriv fra-værdien, derefter to punktummer og til sidst til-værdien.</td>
-<td><strong>1..10</strong> finder alle værdier fra 1 til og med 10. I strengfeltet <strong>A..C</strong> findes alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der svarer præcist til &quot;C&quot;. I dette eksempel finder denne forespørgsel f.eks. ikke &quot;Ca&quot;. Hvis du vil finde alle værdier fra &quot;A*&quot; til og med &quot;C*&quot;, skal du skrive <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> finder alle værdier fra 1 til og med 10. I strengfeltet <strong>A..C</strong> findes imidlertid alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der svarer præcist til &quot;C&quot;. Denne forespørgsel finder f.eks. ikke &quot;Ca&quot;. Hvis du vil finde alle værdier fra &quot;A*&quot; til og med &quot;C*&quot;, skal du skrive <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>værdi</em> (dobbelt punktum)</td>
@@ -122,7 +122,7 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <td><em>værdi</em>,<em>værdi</em> (komma)</td>
 <td>Svarer til de værdier, der er adskilt af kommaer</td>
 <td>Skriv alle kriterierne, og adskil dem med kommaer.</td>
-<td><strong>A, D, F, G</strong> finder nøjagtigt &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finder nøjagtigt &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> finder nøjagtigt &quot;A&quot;, &quot;D&quot;, &quot;F&quot; og &quot;G&quot;. <strong>10, 20, 30, 100</strong> finder nøjagtigt &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-sætning</span>) (SQL-sætning i parenteser)</td>
@@ -173,7 +173,7 @@ Se tabellen i næste afsnit for at få flere oplysninger om datometoden <strong>
 <td>Dag (_relativeDays=0)</td>
 <td>Find en dato i forhold til sessionsdatoen. Positive værdier angiver fremtidige datoer, og negative værdier angiver tidligere datoer.</td>
 <td><ul>
-<li><strong>I morgen </strong> – Skriv <strong>(Day(1))</strong>.</li>
+<li><strong>I morgen</strong> – Skriv <strong>(Day(1))</strong>.</li>
 <li><strong>I dag</strong> – Skriv <strong>(Day(0))</strong>.</li>
 <li><strong>I går</strong> – Skriv <strong>(Day(-1))</strong>.</li>
 </ul></td>

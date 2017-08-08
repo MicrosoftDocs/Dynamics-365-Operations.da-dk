@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ Dette emne indeholder en oversigt over overførselsindstillinger for produkt- og
 Under en opgradering til Finance and Operations blokeres produkter, hvis de er knyttet til en lagringsdimensionsgruppe, der har indstillinger, som ikke opfylder kravene til lagringsdimensionsgruppen i Finance and Operations. Efter opgraderingen kan du dog bruge et sæt af overførselsindstillinger i processen **Ændre lagringsdimensionsgruppen for varer** for at fjerne blokeringen af produkter, der blev blokeret under opgraderingen. Du kan derefter behandle transaktioner for disse produkter. Nogle af varerne kan allerede være tilknyttet lagringsdimensionsgrupper, hvor lokations-, lagersteds- og lokationslagerdimensioner er aktive og fysisk registrerede. I så fald kan du bruge processen **Ændre lagringsdimensionsgruppen for varer** til at aktivere varerne, der skal bruges i lokationsstyringsprocesser. Denne funktion er nyttig, hvis du vil bruge lokationsstyringsfunktionen for eksisterende varer.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Opgradering til Finance and Operations, når AX 2012 R3 WMSII bruges.
-Finance and Operations understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge det nye **Lokationsstyring**-modul. Du kan finde flere oplysninger under [Startside for lokationsstyring](https://ax.help.dynamics.com/en/wiki/warehouse-management/). I tidligere versioner kunne lagerdimensionerne Lokation og Palle-id vælges for økonomisk lager. Men som en del af opgraderingsprocessen kan lagerdimensionen Palle-id ikke længere aktiveres for økonomisk lager. Alle produkter, der er knyttet til en lagringsdimensionsgruppe, der bruger lagerdimensionen Palle-id, vil blive blokeret og ikke blive behandlet.
+Finance and Operations understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge det nye **Lokationsstyring**-modul. I tidligere versioner kunne lagerdimensionerne Lokation og Palle-id vælges for økonomisk lager. Men som en del af opgraderingsprocessen kan lagerdimensionen Palle-id ikke længere aktiveres for økonomisk lager. Alle produkter, der er knyttet til en lagringsdimensionsgruppe, der bruger lagerdimensionen Palle-id, vil blive blokeret og ikke blive behandlet.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Aktivering af varer i Finance and Operations
 
@@ -70,7 +70,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 1.  Opret mindst én ny lokationsprofil.
 2.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Aktivér opsætning af lagersted**.
 3.  På siden **Aktivér opsætning af lagersted** skal du tilføje de lagersteder, der skal aktiveres. Du kan udføre dette trin enten direkte på siden eller ved hjælp af Microsoft Office-integration.
-4.  Tildel alle lokationer en lokationsprofil. Du kan nemt udføre dette trin ved hjælp af Microsoft Office-integration direkte fra siden. Du kan eksportere og importere dataene, eller du kan bruge behandling af dataenhed i [Datastyring](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Tildel alle lokationer en lokationsprofil. Du kan nemt udføre dette trin ved hjælp af Microsoft Office-integration direkte fra siden. Du kan eksportere og importere dataene, eller du kan bruge behandling af dataenhed i [Datastyring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 6.  Få behandlet ændringerne.
 
@@ -81,7 +81,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 3.  På siden **Reservationshierarki** skal du definere et nyt hierarki til reservation i henhold til varens lagrings- og sporingsdimensionsgrupper.
 4.  Opret en eller flere enhedsseriegrupper, der omfatter mindst samme enheder, der bruges til varens lagerenheder.
 5.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Ændre lagringsdimensionsgruppen for varer**.
-6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 8.  Få behandlet ændringerne. En opdatering af alle lagerdimensionerne kan tage et stykke tid. Du kan overvåge status ved hjælp af batchjobopgaverne.
 
