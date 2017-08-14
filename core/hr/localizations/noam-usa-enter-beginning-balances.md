@@ -10,25 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: kherr
-ms.search.validFrom: 2017-07-01
+ms.search.validFrom: 2017-07-01T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 911a51e2498800e7ee7b1562b66c56967eef0505
-ms.openlocfilehash: e6213d2e01445b78c6d8f98fc6a55f7c551231b5
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d9e3018eb7b6c20cfd5e23a10d15e230009196de
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Angive primosaldi for løn
 
-[!include[banner](../../includes/banner.md)]]
+[!include[banner](../../includes/banner.md)]
 
 Emnet beskriver trinnene til angivelse af primosaldi for lønkoder, fradrag, frynsegoder og moms. Disse oplysninger er vigtig for partnere, som vil overflytte eller overføre data til en ny lønimplementering fra et andet system. Som indledning til at angive primolønsaldi skal vi kontrollere følgende oplysninger:
 
@@ -47,9 +46,6 @@ Emnet beskriver trinnene til angivelse af primosaldi for lønkoder, fradrag, fry
 Når du skal angive primosaldi, skal du overveje, hvor detaljerede dataene skal være. De fleste virksomheder angive et enkelt, konsolideret år-til-dato-beløb. Hvis der kræves mere detaljerede oplysninger, kan saldi dog angives kvartalsvis. Angivelse af det detaljeringsniveau, der er nødvendigt, bestemmer også, hvor mange manuelle betalingsopgørelser der skal oprettes for hver arbejder. Der er kun brug for én manuel opgørelse for hver medarbejder for et enkelt år-til-dato-beløb. Brug år-til-dato-beløb fra den endelige betalingsopgørelse fra det tidligere system som det beløb, der skal angives i det nye lønsystem, for at bruge dette.
 
 Følgende eksempel viser, hvordan du kan angive medarbejderens primolønsaldi, herunder lønkoder, frynsegoder/fradrag og skat. I et eksempel fra den virkelige verden har du et linjeelement for hver lønkode, hvert frynsegodefradrag, frynsegodebidrag, medarbejderskat og selskabsskat, hvor det angivne beløb er år-til-dato-beløbet. Brug listen over koder og beløb, og følg trinene for at oprette en manuel løn- og betalingsopgørelse. Deaktiver regnskab for at overføre primosaldi i forbindelse med lønbehandling.  Du skal deaktivere regnskab, fordi du ikke vil bogføre primosaldoen for denne betalingsopgørelse til finanskontiene. Det blev foretaget i det oprindelige system og overføres til det nye system, når du definerer startsaldi i Finans.
-
-> [!NOTE] 
-> Hvis du vil bruge den samme fremgangsmåde nedenfor, kan du bruge Demo-data. Demo-dataene kan hentes på PartnerSource
 
 ### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Sådan konfigurerer du lønkoder, der skal bruges på primolønsaldi
 Når du angiver primosaldi for løn, skal du kontrollere, at de lønkoder, du vil bruge, er konfigureret, så indstillingen "Tillad redigering af satser på lønopgørelsen" er aktiveret. På denne måde kan du manuelt indtaste beløbet fra det oprindelige system. 
@@ -101,7 +97,7 @@ Linje 3: Fanen **Post på lønopgørelse**
 | Manuelt          | (markeret)   |
 
 > [!NOTE]
-> Det er vigtigt, at afkrydsningsfeltet for manuel indstilling under fanen **Linjedetaljer** er markeret for hver lønopgørelseslinje, når der skal angives primolønsaldi for hver arbejder.
+> Det er vigtigt, at indstille skyderen **Manuel** til **Ja** under fanen **Linjedetaljer** for hver lønopgørelseslinje, når der skal angives primolønsaldi for hver arbejder.
 
 3. I ruden **Handling** skal du klikke på **Frigiv lønopgørelse** USA-FED-ER-FICA.
 
@@ -111,15 +107,15 @@ Linje 3: Fanen **Post på lønopgørelse**
 |--------------------|-----------|
 | Betalingsdato       | 6/30/2017 |
 | Betalingskørselstype   | Manuelt    |
-| Deaktiver regnskab | (markeret)  |
+| Deaktiver regnskab |   Ja     |
 
 > [!NOTE] 
 > Dette er kun tilgængeligt, når betalingskørselstypen er manuel, og når brugeren vil deaktivere regnskab for lønkørslen.
 
 Klik på **OK**, og luk **Infolog**.
 
-#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Hvorfor skal afkrydsningsfeltet Deaktiver regnskab være aktiveret, når der genereres betalingsopgørelser?
-Dette forhindrer, at nogen linjer i betalingsopgørelsen fordeles og bogføres i Finans. Primobetalingssaldoen skal ikke bogføres, fordi værdierne allerede findes i Finans fra det oprindelige system. Denne indlæsning af saldi bruges kun til rapportering og begrænsning.
+#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Hvorfor skal skyderen Deaktiver regnskab være indstillet til Ja, når der genereres betalingsopgørelser?
+Indstilling af skyderen til **Ja** forhindrer, at linjer i betalingsopgørelsen fordeles til Finans. Finansbeløb blev opdateret tidligere, da kontosaldi fra det oprindelige system blev angivet. Når du angiver primosaldi for løn, kan du generere rapporter, der indeholder oplysninger fra tidligere år, samt til at identificere grænser med tanke på frynsegoder og til skattemæssige formål.   
 
 ### <a name="c-create-pay-statements-for-employees"></a>C. Oprette betalingsopgørelser for medarbejdere
 Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrollere, at opgørelserne præcist afspejler lønoplysninger. Du skal også manuelt opdatere oplysningerne om frynsegoder og skat, så de svarer til værdierne i det oprindelige lønsystem. Når du har kontrolleret, at beløbene fra oprindelige lønsystem svarer til beløbene på de aktuelle betalingsopgørelser, skal du færdiggøre betalingsopgørelserne.
@@ -140,17 +136,7 @@ Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrolle
 | Beløb til sikring af afhængige | Deltag | 2500.00          |
 | Vision | SupSp                  | 500,00           |
 
-5. Angiv følgende under fanen **Frynsegodefradrag**: 
-
-| Felt                           | Værdi            |
-|---------------------------------|------------------|
-| Frynsegode                         | Fradragsbeløb |
-| 401K | Deltag              | 3000.00          |
-| Tandlægeforsikring | SubSp                  | 495,00           |
-| Beløb til sikring af afhængige | Deltag | 2500.00          |
-| Vision | SupSp                  | 500,00           |
-
-6. Angiv følgende under fanen **Frynsegodebidrag**:
+5. Angiv følgende under fanen **Frynsegodebidrag**:
 
 | Felt              | Værdi               |
 |--------------------|---------------------|
@@ -159,7 +145,7 @@ Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrolle
 | Tandlægeforsikring | SubSp     | 495,00              |
 | Vision | SubSp     | 500,00              |
 
-7. Angiv følgende under fanen **Skattefradrag**:
+6. Angiv følgende under fanen **Skattefradrag**:
 
 | Felt           | Værdi            |
 |-----------------|------------------|
@@ -167,9 +153,9 @@ Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrolle
 | USA-FED-ER-FICA | 1600.00          |
 | USA-FED-ER-MEDI | 825.75           |
 
-8. Angiv følgende under fanen **Skattebidrag**:
+7. Angiv følgende under fanen **Skattebidrag**:
 
-9. Klik på **Beregn**.
+8. Klik på **Beregn**.
 > [!IMPORTANT] 
 > Kontroller, at de samlede beløb på betalingsopgørelsen svarer til år til dato i det oprindelige system for arbejderen. Du kan eventuelt vente med afslutningen i næste trin for at foretage en overordnet validering af alle samlede betalingsopgørelser. Efter valideringen skal du gennemse alle betalingsopgørelser og færdiggøre dem.
 
@@ -182,5 +168,5 @@ Det er muligt at tilbageføre posteringer og angive dem igen. Hvis du vil tilbag
 
 2. Klik på **Ja**, når meddelelsen "Når du tilbagefører denne betalingsopgørelse, oprettes en tilbageførselsbetalingsopgørelse til modregning af betalingsopgørelsen. Ingen af betalingsopgørelserne kan redigeres. Vil du tilbageføre denne betalingsopgørelse?" vises. 
 
-Når du har tilbageført betalingsopgørelsen, kan du generere en ny betalingsopgørelse for arbejderen ud fra den lønopgørelse, du oprettede i proceduren "Oprette lønopgørelser og betalingsopgørelser, der har primosaldi" tidligere i dette emne. Sørg for at rette forkerte linjer på lønopgørelsen, før du genererer den nye betalingsopgørelse, og gentag derefter proceduren "Opdatere betalingsopgørelser, der har primosaldi for frynsegoder og skatter" i dette emne.
+Når du tilbagefører betalingsopgørelsen, kan du generere en ny betalingsopgørelse for arbejderen ud fra den lønopgørelse, du har oprettet tidligere. Sørg for at rette forkerte linjer på lønopgørelsen, før du genererer den nye betalingsopgørelse, og derefter genererer nye betalingsopgørelser med de korrekte beløb. 
 

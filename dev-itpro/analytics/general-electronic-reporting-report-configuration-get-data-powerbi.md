@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -103,7 +103,7 @@ Klik på knappen **Indstillinger** til den nye destinationspost. I **Indstilling
 På siden **Konfigurationer** (**Virksomhedsadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**) skal du i konfigurationstræet vælge den **Import-/eksportaktiviteter**-konfiguration, du oprettede tidligere. Skift status for version 1.1 fra **Udkast** til **Komplet** for at gøre dette format tilgængeligt til brug. [![Siden Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Vælg den komplette version af **Import-/-eksportaktiviteter**-konfigurationen, og klik derefter på **Kør**. Bemærk, at der anvendes den destination, der er konfigureret til outputresultatet, som genereres i Excel-format. Angiv indstillingen **Batchbehandling** til **Ja** for at køre denne rapport i fuldautomatisk tilstand. Klik på **Gentages** for at planlægge den krævede gentagelse af denne batchkørsel. Gentagelsen definerer, hvor ofte de opdaterede data overføres fra Finance and Operations til Power BI. [![Dialogboksen Parametre til elektronisk rapport](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Når den er konfigureret, kan du finde ER-kørselsrapporten på siden **Batchjob** (**Systemadministration &gt; Forespørgsler &gt; Batchjob**). [![Siden Batchjob](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Når dette job køres for første gang, oprettes der en ny Excel-fil med det navn, der er konfigureret i den valgte SharePoint-mappe. Hver gang jobbet køres, opretter destinationen en ny version af denne Excel-fil. [![Ny version af Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Oprette et Power BI-datasæt ved hjælp af outputresultatet i ER-formatet
-Log på Power BI, og åbn en eksisterende Power BI-gruppe (arbejdsområde), eller opret en ny gruppe. Enten klik på **Tilføj** under **Filer** i sektionen **Importér eller opret forbindelse til data**, eller klik på plustegnet (**+**) ud for **Datasæt** i venstre rude. [![Oprettelse af et datasæt](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Vælg indstillingen **SharePoint - Teamwebsteder**, og angiv derefter stien til den SharePoint Server, du vil bruge (**https://ax7partner.spoppe.com** i vores eksempel). Gå derefter til mappen **/Delte dokumenter/GER data/PowerBI**, og vælg den Excel-fil, du har oprettet som kilde for data til det nye Power BI-datasæt. [![Valg af Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klik på **Tilknyt**, og klik derefter på **Importér**. Der oprettes et nyt datasæt, der er baseret på den valgte Excel-fil. Datasættet kan også føjes automatisk til det nyoprettede dashboard. [![Datasæt på dashboardet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurer opdateringsskemaet for dette datasæt for at tvinge en periodisk opdatering. Periodiske opdateringer gør det muligt at bruge nye forretningsdata, der kommer fra Finance and Operations, via periodisk kørsel af ER-rapporten gennem nye versioner af den Excel-fil, der oprettes på SharePoint-serveren.
+Log på Power BI, og åbn en eksisterende Power BI-gruppe (arbejdsområde), eller opret en ny gruppe. Enten klik på **Tilføj** under **Filer** i sektionen **Importér eller opret forbindelse til data**, eller klik på plustegnet (**+**) ud for **Datasæt** i venstre rude. [![Oprettelse af et datasæt](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Vælg indstillingen **SharePoint - Teamwebsteder**, og angiv derefter stien til den SharePoint Server, du vil bruge (**https://ax7partner.litware.com** i vores eksempel). Gå derefter til mappen **/Delte dokumenter/GER data/PowerBI**, og vælg den Excel-fil, du har oprettet som kilde for data til det nye Power BI-datasæt. [![Valg af Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klik på **Tilknyt**, og klik derefter på **Importér**. Der oprettes et nyt datasæt, der er baseret på den valgte Excel-fil. Datasættet kan også føjes automatisk til det nyoprettede dashboard. [![Datasæt på dashboardet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurer opdateringsskemaet for dette datasæt for at tvinge en periodisk opdatering. Periodiske opdateringer gør det muligt at bruge nye forretningsdata, der kommer fra Finance and Operations, via periodisk kørsel af ER-rapporten gennem nye versioner af den Excel-fil, der oprettes på SharePoint-serveren.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Oprette en Power BI-rapport ved hjælp af det nye datasæt
 Hvis du vil oprette en ny Power BI-rapport, skal du klikke på det **Import- og eksportoplysninger** Power BI-datasæt, du har oprettet. Konfigurer derefter den visuelle effekt. Du kan for eksempel vælge **Kartogram** som visualisering og konfigurere den som følger:

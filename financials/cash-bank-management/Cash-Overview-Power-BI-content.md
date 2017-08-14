@@ -3,21 +3,23 @@ title: Power BI-indhold for oversigt over kontanter
 description: "Dette emne beskriver Power BI-indhold for oversigt over kontanter. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet."
 author: saraschi2
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 06/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e969c2033463d565ce782c7dc8cfc4b458349289
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 367fe61492648ee3ee629a8121e664dfaa0c6c99
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,6 +36,10 @@ Power BI-indholdet for **Oversigt over kontanter** blev oprettet for personer, d
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
 Hvis du bruger Opdateringen til Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017, vises rapporterer fra Power BI-indholdet **Oversigt over kontanter** i arbejdsområderne **Oversigt over kontanter** og **Bankstyring**.
+
+For at få vist rapporter over likviditetsbudgettering med data skal du først køre budgetteringsberegningsprocessen ved hjælp af funktionen **Beregn likviditetsbudgetter** fra området Likviditets- og bankstyring.  Dette skal udføres for hvert regnskab, der er medtaget i budgettet.  På siden **Enhedslager** skal du derefter opdatere den samlede LedgerCovLiquidityMeasurement-måling.  
+
+Til demonstrationsformål kan du tilføje demodata for likviditetsbudgettering ved hjælp af siden **Generér data** fra modulet Demodata.  Dette script indsætter data i likviditetsbudgetteringstabeller for hurtig angivelse af oplysninger, der er nødvendige i rapporter.  Dette modul er kun tilgængeligt, hvis demodatapakkemodellen er installeret i miljøet. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet til **Oversigt over kontanter**.

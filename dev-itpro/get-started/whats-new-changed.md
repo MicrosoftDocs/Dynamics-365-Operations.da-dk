@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: a65de22d01d15510c3f2cb792b86e6a88260bed9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2044bd5a3c858fb099fa7f612ede9963acc51efb
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,9 +34,10 @@ Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner
 
 Hvis du vil vide, hvordan du opgraderer til den nyeste version, skal du se [Proces for opgradering til den seneste opdatering](../migration-upgrade/upgrade-latest-update.md).
 
-## <a name="application-releases"></a>Programversioner
+> [!NOTE]
+> Dynamics 365 for Operations (on-premises) er under omdøbning. Der henvises til Dynamics 365 for Operations (on-premises) i kommunikations- og licenseringsvejledninger. Det produktnavn, du ser, når du installerer produktet, er Dynamics 365 for Finance and Operations, Enterprise edition. Begge disse navne refererer til samme produkt.
 
-Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er udgivet for nylig, kan du se [Arbejdsområder til mobilenheder, der er udgivet for nylig til Dynamics 365 for Finance and Operations-mobilappen](../mobile-apps/mobile-workspaces-released.md) og [Power BI-indhold, der er frigivet for nylig til Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
+## <a name="application-releases"></a>Programversioner
 
 <table>
 <colgroup>
@@ -57,9 +58,9 @@ Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er u
 </thead>
 <tbody>
 <tr class="even">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Opdatering fra juli 2017</td>
-<td>X</td>
+<td>7.2.11792.56024</td>
 <td>2017. juni</td>
 <td><a href="whats-new-application-July-2017-update.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, opdatering fra juli 2017</a></td>
 </tr>
@@ -108,9 +109,9 @@ Hvis du vil vide mere om de mobile arbejdsområder og Power BI-indhold, der er u
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Platformsopdatering 8</td>
-<td>X</td>
+<td>7.0.4565.16212</td>
 <td>2017. juni</td>
 <td><a href="whats-new-platform-update-8.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, platformsopdatering 8 (juni 2017)</a></td>
 </tr>

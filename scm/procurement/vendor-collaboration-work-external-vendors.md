@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-in
 
 Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
-Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
@@ -196,12 +196,16 @@ Hvis ændringsstyring er aktiveret for indkøbsordrer, gennemgår indkøbsordren
 
 I følgende tabel vises et eksempel på ændringerne i status og version, som en indkøbsordre kan gennemgå, når ændringsstyring er slået til. Versionen registreres, når indkøbsordren er godkendt, og ikke når indkøbsordren sendes til kreditoren eller bekræftes.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Handling**                                                                                                    | **Status og version**                                                                                                                                                                                                                                                                                                                                                                      |
-| Den første version af indkøbsordren oprettes i Finance and Operations.                                      | Status er **Kladde**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Indkøbsordren sendes til godkendelsesprocessen. (Godkendelsesprocessen er en intern proces, som leverandøren ikke er involveret i). | Status ændres fra **Udkast** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke er afvist under godkendelsesprocessen. Den godkendte indkøbsordre registreres som en version.                                                                                                                                                                                                                     | | Indløbsordren sendes til kreditoren                                                                       | Versionen registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**.                                                                                                                                                                                                                                                                       | | Du kan foretage ændringer, som kreditoren har anmodet om, enten manuelt eller ved hjælp af handlingen på svaret til opdatering af indkøbsordren.                                                       | Statussen ændres tilbage til **Udkast**.                                                                                                                                                                                                                                                                                                                                                    | | Indkøbsordren sendes igen til godkendelsesprocessen.                                                            | Status ændres fra **Udkast** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Systemet kan også konfigureres, så specifikke feltændringer ikke kræver fornyet godkendelse. I dette tilfælde ændres status først til **Kladde** og derefter opdateres automatisk til **Godkendt**. Den godkendte indkøbsordre registreres som en ny version. | | Du kan sende den nye version af indkøbsordren til kreditoren.                                                             | Den nye version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**.                                                                                                                                                                                                                                                                   | | Kreditoren godkender den nye version af indkøbsordren.                                                                | Statussen ændres til **Bekræftet**. Det sker enten automatisk, eller når du modtager svar fra kreditoren og derefter bekræfter indkøbsordren.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Handling**                                                               | **Status og version**                                                                                                                                       |
+| Den første version af indkøbsordren oprettes i Finance and Operations.      | Status er **Kladde**.  |
+| Indkøbsordren sendes til godkendelsesprocessen. (Godkendelsesprocessen er en intern proces, som kreditoren ikke er involveret i).                                                           | Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Den godkendte indkøbsordre registreres som en version.           | 
+| Indløbsordren sendes til kreditoren.                                                            | Versionen registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**.      |
+| Du kan foretage ændringer, som kreditoren har anmodet om, enten manuelt eller ved hjælp af handlingen på svaret til opdatering af indkøbsordren.                                                            | Statussen ændres tilbage til **Kladde**.     |
+|Indkøbsordren sendes igen til godkendelsesprocessen.                                                |  Status ændres fra **Kladde** til **Til gennemsyn** til **Godkendelse**, hvis indkøbsordren ikke afvises under godkendelsesprocessen. Systemet kan også konfigureres, så specifikke feltændringer ikke kræver fornyet godkendelse. I dette tilfælde ændres status først til **Kladde** og derefter opdateres automatisk til **Godkendt**. Den godkendte indkøbsordre registreres som en ny version.                                         |
+|Du kan sende den nye version af indkøbsordren til kreditoren.                                                |  Den nye version registreres i grænsefladen for kreditorsamarbejde, og status ændres til **Til eksternt gennemsyn**.                                         |
+|Kreditoren godkender den nye version af IO'en.                                                |  Statussen ændres til **Bekræftet**. Det sker enten automatisk, eller når du modtager svar fra kreditoren og derefter bekræfter indkøbsordren. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Dele oplysninger om konsignationslager
 Hvis du bruger konsignationslager, kan kreditorer bruge kreditorsamarbejde til at få vist oplysninger på de følgende sider:

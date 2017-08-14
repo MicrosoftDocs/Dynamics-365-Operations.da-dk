@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,7 +39,7 @@ Denne artikel giver et overblik over elektroniske signaturer og beskriver, hvord
 En elektronisk signatur bekræfter identiteten på en person, som skal starte eller godkende en computerproces. I nogle brancher er en elektronisk signatur lige så juridisk bindende som en håndskrevet signatur. Elektroniske signaturer er et lovmæssigt krav i adskillige regulerede brancher som f.eks. lægemiddelsektoren, fødevareindustrien samt luftfart og forsvar. De er også nødvendigt for at overholde forskrifterne i 21 CFR afsnit 11, der er udstedt af det amerikanske fødevareministerium FDA (Food and Drug Administration) i USA. **Bemærk:** En elektronisk signatur er i sig selv ikke det samme som en digital signatur. En elektronisk signatur er blot en erstatning for en håndskrevet signatur, mens en digital signatur omfatter yderligere sikkerhedsmæssige foranstaltninger. En digital signatur kan bidrage til at identificere, om en anden bruger eller proces har forfalsket dataene. En digital signatur kan også bekræftes, og denne bekræftelse kan ikke gendrives af ejeren af det certifikat, som blev brugt til at signere dataene. Som beskrevet nedenfor har elektroniske signaturer i Microsoft Dynamics 365 for Finance and Operations en indbygget funktion til digital signatur.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniske signaturer i Microsoft Dynamics 365 for Finance and Operations
-I Finance and Operations kan du bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle processer har indbyggede funktioner til elektronisk signatur. Du kan også oprette tilpassede signaturkrav for enhver databasetabel og ethvert felt. Elektroniske signaturer har en indbygget funktion til digitale signaturer. Alle brugere, som signerer dokumenter, skal have tildelt et gyldigt kryptografisk certifikat. Når et dokument signeres, godkendes den private nøgle, som er tilknyttet det pågældende certifikat. Finance and Operations registrerer oplysninger om elektroniske signaturer i en log for at angive et revisionsspor. Hvis du vil oprette elektroniske signaturer, skal du se under [Opsætning af elektroniske signaturer (Opgaveguide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+I Finance and Operations kan du bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle processer har indbyggede funktioner til elektronisk signatur. Du kan også oprette tilpassede signaturkrav for enhver databasetabel og ethvert felt. Elektroniske signaturer har en indbygget funktion til digitale signaturer. Alle brugere, som signerer dokumenter, skal have tildelt et gyldigt kryptografisk certifikat. Når et dokument signeres, godkendes den private nøgle, som er tilknyttet det pågældende certifikat. Finance and Operations registrerer oplysninger om elektroniske signaturer i en log for at angive et revisionsspor. Hvis du vil oprette elektroniske signaturer, skal du se under [Opsætning af elektroniske signaturer (Opgaveguide)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Brugere, der kræver adgang til elektroniske signaturer
 Tre slags brugere kræver normalt sikkerhedsadgang til elektroniske signaturer: administratorer af elektroniske signaturer, underskrivere og revisorer af elektroniske signaturer.

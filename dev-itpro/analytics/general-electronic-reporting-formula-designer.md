@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -196,8 +196,8 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 | SESSIONNOW ()                              | Returnerer aktuel Dynamics 365 for Finance and Operations-sessionsdato og -klokkeslæt som en dato- og klokkeslætsværdi.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (dato, format)                  | Returnerer strengværdi af dato ved brug af det angivne format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returnerer den aktuelle Dynamics 365 for Finance and Operations-sessionsdato, 24-12-2015, som "**24-12-2015**" i overensstemmelse med det angivne brugerdefinerede format.                                                                                                                      |
 | DATEFORMAT (dato, format, kultur)         | Konverter den angivne datoværdi til en streng i det angivne format og den angivne [kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Oplysninger om understøttede formater finder du under [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) og [brugerdefineret](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerer den aktuelle Finance and Operations-sessionsdato, 24-12-2015, som **"24.12.2015"**, i henhold til den valgte tyske kultur.                                                                                                                       |
-| DAYOFYEAR (dato)              | Returnerer heltalsrepræsentationen af antallet af dage mellem 1. januar og den angivne dato.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returnerer **61**.
-**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returnerer **1**.                                                                                                                       |
+| DAYOFYEAR (dato)              | Returnerer heltalsrepræsentationen af antallet af dage mellem 1. januar og den angivne dato.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returnerer **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returnerer **1**. 
+                                                                                                                      |
 
 **Datakonverteringsfunktioner**
 
@@ -236,7 +236,14 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <li>Batches som almindelige lister (<strong>Værdi-</strong>komponent)</li>
 <li>Det aktuelle batchnummer (<strong>Batchnummer-</strong>komponent)</li>
 </ul></td>
-<td>I følgende eksempel bliver <strong>Linjer</strong>-datakilde oprettet som en postliste med tre poster, der er opdelt i batches, der hver især indeholder op til to poster. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Her er det designede formatlayout, hvor bindinger til <strong>Linjer</strong>-datakilden er oprettet for at generere output i XML-format, som præsenterer enkelte noder for hver batch og posterne i den. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Følgende er resultatet af at køre det designede format. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>I følgende eksempel bliver <strong>Linjer</strong>-datakilde oprettet som en postliste med tre poster, der er opdelt i batches, der hver især indeholder op til to poster. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Her er det designede formatlayout, hvor bindinger til <strong>Linjer</strong>-datakilden er oprettet for at generere output i XML-format, som præsenterer enkelte noder for hver batch og posterne i den. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Følgende er resultatet af at køre det designede format. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (post 1 [, post 2,...])</td>
@@ -300,7 +307,14 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <li>Angivne listeposter som almindelige lister (<strong>Værdi-</strong>komponent)</li>
 <li>Det aktuelle postindeks (<strong>Tal-</strong>komponent)</li>
 </ul></td>
-<td>I følgende eksempel er <strong>Enumerated</strong>-datakilden oprettet som en fasttekstliste over kreditorposter fra <strong>Vendors</strong>-datakilden, der henviser til <strong>VendTable</strong>-tabellen. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a>Her er formatet, hvor der oprettes databindinger for at generere output i XML-format, som præsenterer enkelte kreditorer som fasttekstnoder. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Dette er resultatet af at køre det designede format. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>I følgende eksempel er <strong>Enumerated</strong>-datakilden oprettet som en fasttekstliste over kreditorposter fra <strong>Vendors</strong>-datakilden, der henviser til <strong>VendTable</strong>-tabellen. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Her er formatet, hvor der oprettes databindinger for at generere output i XML-format, som præsenterer enkelte kreditorer som fasttekstnoder. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Dette er resultatet af at køre det designede format. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (liste)</td>
@@ -322,13 +336,24 @@ Den oprettede liste består af poster med følgende felter:
 <li>Betegnelse</li>
 </ul>
 Felterne Label og Beskrivelse returnerer på kørselstidspunktet værdier baseret på formatets sprogindstillinger.</td>
-<td>Følgende eksempel viser den fasttekst, der er introduceret i en datamodel. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Følgende eksempel viser:
+<td>Følgende eksempel viser den fasttekst, der er introduceret i en datamodel. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Følgende eksempel viser:
 <ul>
 <li>Modelfasttekst, der er indsat i en rapport som en datakilde.</li>
 <li>ER-udtryk, der er designet til at bruge modelfasttekst som parameter for denne funktion.</li>
 <li>Datakilde til postlistetype, der er indsat i en rapport ved hjælp af det oprettede ER-udtryk.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> Følgende eksempel viser de ER-formatelementer, der er bundet til datakilden af post listetypen, som blev oprettet ved hjælp af funktionen LISTOFFIELDS.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Dette er resultatet af kørslen designformatet.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Bemærk!</strong> Oversat tekst til labels og beskrivelser er udfyldt til ER-formatoutput i overensstemmelse med de sprogindstillinger, der er konfigureret til overordnede FILE- og FOLDER-formatelementer.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Følgende eksempel viser de ER-formatelementer, der er bundet til datakilden af postlistetypen, der blev oprettet ved hjælp af funktionen LISTOFFIELDS.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Dette er resultatet af kørslen af det designede format.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Bemærk!</strong> Oversat tekst til etiketter og beskrivelser udfyldes til ER formatoutput i overensstemmelse med de sprogindstillinger, der er konfigureret til de overordnede FILE- og FOLDER-formatelementer.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (liste, feltnavn, afgrænser)</td>
@@ -338,7 +363,18 @@ Felterne Label og Beskrivelse returnerer på kørselstidspunktet værdier basere
 <tr class="even">
 <td>SPLITLISTBYLIMIT (liste, grænseværdi. grænsekilde)</td>
 <td>Opdeler den angivne liste i en ny liste over underordnede lister og returnerer resultatet i indholdet af listen over poster. Parameteren for grænseværdi angiver værdien af grænsen for at opdele den oprindelige liste. Parameteren for grænsekilde angiver det trin, hvor den samlede sum forøges. Grænsen anvendes ikke på et enkelt element på listen, når grænsekilden overskrider den angivne grænse.</td>
-<td>Følgende eksempel viser formatet, der bruger datakilder. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>Dette er resultatformatudførelsen, der præsenterer den flade liste med varer.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>I følgende eksempel vises det samme format, der blev reguleret for at vise listen over varer i batches, når et enkelt batch skal indeholde varer med den samlede vægt, der ikke bør overstige grænsen på 9.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>Dette er resultatet af kørslen af det regulerede format. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Bemærk!</strong> Grænsen anvendes ikke på det sidste element på den oprindelse liste, da værdien (11) af grænsekilden (vægt) overskrider den angivne grænse (9). Brug enten funktionen <strong>WHERE</strong> eller <strong>Aktiveret</strong>-udtrykket for det tilsvarende formatelement for at ignorere (springe over) underordnede lister under oprettelsen af rapporten (om nødvendigt).</td>
+<td>Følgende eksempel viser formatet, der bruger datakilder. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+Dette er kørslen af det resultatformat, der viser den faste liste over varegoder.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+I følgende eksempel vises det samme format, der blev reguleret for at vise listen over varegoder i batches, når et enkelt batch skal indeholde goder med den samlede vægt, der ikke må overstige en grænse 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Dette er resultatet af den tilpassede kørsel af det designede format. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Bemærk!</strong> Grænsen anvendes ikke på den sidste vare på den oprindelseslisten, da værdien (11) af grænsekilden (vægt) overskrider den angivne grænse (9). Brug enten funktionen <strong>WHERE</strong> eller <strong>Aktiveret</strong>-udtrykket for det tilsvarende formatelement for at ignorere (springe over) underordnede lister under oprettelsen af rapporten (om nødvendigt).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (liste, betingelse)</td>
@@ -511,7 +547,10 @@ Felterne Label og Beskrivelse returnerer på kørselstidspunktet værdier basere
 <tr class="even">
 <td>FORMAT (streng 1, streng 2[, streng 3, ...])</td>
 <td>Returner den angivne streng, som er formateret ved at erstatte alle forekomster af <strong>%N</strong> med det <em>n</em>te argument. Argumenterne er strenge. Hvis et argument ikke er angivet for en parameter, bliver parameteren returneret som <strong>&quot;%N&quot;</strong> i strengen. For værdier af den <strong>reelle</strong> type er strengkonverteringen begrænset til to decimaler.</td>
-<td>I dette eksempel på <strong>PaymentModel</strong>-datakilden returneres listen over kundeposter via <strong>Customer</strong>-komponenten og behandlingens datoværdi via <strong>ProcessingDate</strong>-feltet. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> Datakilden <strong>PaymentModel</strong> i ER-format er designet til at generere en elektronisk fil til de valgte debitorer og er valgt som en datakilde og styrer procesforløbet. En undtagelse opstår for slutbrugerne, når en bestemt debitor er spærret for den dato, når rapporten behandles. Den formel, der er udviklet til denne type behandlingskontrol, kan bruge følgende ressourcer:
+<td>I dette eksempel på <strong>PaymentModel</strong>-datakilden returneres listen over kundeposter via <strong>Customer</strong>-komponenten og behandlingens datoværdi via <strong>ProcessingDate</strong>-feltet. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+Datakilden <strong>PaymentModel</strong> i ER-format er designet til at generere en elektronisk fil til de valgte debitorer og er valgt som en datakilde og styrer procesforløbet. En undtagelse opstår for slutbrugerne, når en bestemt debitor er spærret for den dato, når rapporten behandles. Den formel, der er udviklet til denne type behandlingskontrol, kan bruge følgende ressourcer:
 <ul>
 <li>Finance and Operations-label SYS70894, som har følgende tekst:
 <ul>
@@ -549,7 +588,8 @@ Her er den formel, der kan udvikles: FORMAT (CONCATENATE (@&quot;SYS70894&quot;,
 <td>TRIM (streng)</td>
 <td>Returnerer den givne tekst efter afkortning af foranstillede og efterstillede mellemrum og fjerner flere mellemrum mellem ord. </td>
 <td><strong>TRIM ("Teksteksempel")</strong> returnerer <strong>"Teksteksempel".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (kildesti til fasttekstdata, labeltekst til fasttekstværdi)</td>
 <td>Returnerer en værdi for en bestemt kilde til fasttekstdata efter angivet tekst i denne fasttekstlabel.</td>
 <td>Følgende eksempel viser fastteksten ReportDirection introduceret i en datamodel. Bemærk, at der er defineret etiketter for optællingsværdier.

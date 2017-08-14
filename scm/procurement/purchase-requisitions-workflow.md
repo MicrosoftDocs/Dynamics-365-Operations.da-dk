@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d28e92fa853d155bc62932625e0e714cdf4edcc
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 95d1d3a34728aab38f77635ae68bea16b08f6587
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -105,12 +105,12 @@ Du behøver ikke definere konfigurationer til en udgiftsvalidator. Du kan i sted
 
 Du kan konfigurere udgiftsvalidatorer på siden **Udgiftsvalidatorer for indkøbsrekvisitioner**. Opret en konfigurationen til en udgiftsvalidator, og angiv værdier for hver af de juridiske enheder i din organisation. For indkøbsrekvisitioner, der er knyttet til et projekt, kan du angive den rolle, der er ansvarlig for validering af rekvisitionerne: projektleder, projektcontroller eller projektsalgsleder. Udgifter sendes til den bruger, der er tildelt den angivne rolle. Du kan også sende udgiften til ejeren af den økonomiske dimension ved at markere indstillingen for den relevante økonomiske dimension under fanen **Organisationsfordelinger**.  
 
-Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til**Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
+Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til **Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
 
 <a name="see-also"></a>Se også
 --------
 
-[Opret en rekvisition til forbrug (opgaveguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Opret en rekvisition til forbrug (opgaveguide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
 
 [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

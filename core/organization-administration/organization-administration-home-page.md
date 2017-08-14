@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 84243a91d8b76873cd33651bbdff900b14d9c76e
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,8 +36,8 @@ Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dyna
 ----------------
 
 -   [Oversigt over nummerserier](number-sequence-overview.md)
--   [Opret nummerserier vha. en guide](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (opgaveguide)
--   [Opret nummerserier på individuel basis](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (opgaveguide)
+-   [Opret nummerserier vha. en guide](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (opgaveguide)
+-   [Opret nummerserier på individuel basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (opgaveguide)
 
 ## <a name="address-books"></a>Adressekartoteker
 -   [Adressekartoteker](qa-address-books.md)
@@ -67,17 +67,17 @@ Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dyna
 
 ## <a name="electronic-signatures"></a>Elektroniske signaturer
 -   [Oversigt over elektroniske signaturer](electronic-signature-overview.md)
--   [Konfigurer elektroniske signaturer](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (opgaveguide)
+-   [Konfigurer elektroniske signaturer](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (opgaveguide)
 
 ## <a name="organizations"></a>Organisationer
 -   [Organisationer og organisationshierarkier](organizations-organizational-hierarchies.md)
 -   [Planlæg organisationshierarkiet](plan-organizational-hierarchy.md)
--   [Opret en driftsenhed](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (opgaveguide)
--   [Opret et organisationshierarki](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (opgaveguide)
--   [Opret en juridisk enhed](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (opgaveguide)
+-   [Opret en driftsenhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (opgaveguide)
+-   [Opret et organisationshierarki](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (opgaveguide)
+-   [Opret en juridisk enhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (opgaveguide)
 
 ## <a name="general-administration"></a>Generel administration
--   [Rediger banneret eller logoet](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (opgaveguide)
+-   [Rediger banneret eller logoet](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (opgaveguide)
 -   [Om dato/tidsdata og tidzoner](date-time-zones.md)
 -   [Postskabeloner](record-templates.md)
 

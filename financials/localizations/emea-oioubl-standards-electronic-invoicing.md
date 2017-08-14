@@ -1,51 +1,82 @@
 ---
-title: OIOUBL-standarder til elektronisk fakturering
-description: "Dette emne forklarer, hvilket niveau af dækning vi har til elektronisk fakturering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i det europæiske område."
-author: ShylaThompson
+title: "Understøttede standarder til elektronisk fakturering i Europa"
+description: "I dette emne beskrives det dækningsniveau, der findes for elektronisk fakturering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i det europæiske område."
+author: mrolecki
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: AX 7.0.1, Operations, Core
 ms.custom: 10274
-ms.search.region: Austria, Denmark, Italy, Norway, Spain
-ms.search.industry: Public sector
+ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
+ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e86177dc4e129fe62826fec71c4773f329a66d0a
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.dyn365.ops.version: AX 7.0.1
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: c944fd20273623ce3f7d03a24546addbe987084e
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="oioubl-standards-for-electronic-invoicing"></a>OIOUBL-standarder til elektronisk fakturering
+# <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Understøttede standarder til elektronisk fakturering i Europa
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvilket niveau af dækning vi har til elektronisk fakturering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i det europæiske område. 
+I dette emne beskrives det dækningsniveau, der findes for elektronisk fakturering for Europa. 
 
-[Europa-Kommissionen](http://ec.europa.eu/finance/payments/einvoicing/index_en.htm) beskriver elektronisk rapporteringsnetværk med følgende ord: "Elektronisk fakturering – e-fakturering – er elektronisk overførsel af faktureringsoplysninger (fakturering og betaling) mellem forretningspartnere (leverandøren og køberen). Det er en vigtig del af en effektiv økonomiforsyningskæde, og det sammenkæder de interne processer i virksomheder med betalingssystemer." Implementering og indførelse overalt i EU af elektronisk fakturering er reguleret [Rådets direktiv 2010/45/EU](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), hvilket har indflydelse på alle EU-medlemsstater. Virksomheder, der gerne vil have fordel af elektronisk fakturering, skal sende salgsordrefakturaer, fritekstfakturaer, projektfakturaer, kreditnotaer for salgsordre og kreditnotaer for projektfakturaer som .XML-filer til offentlige myndigheder eller andre handelspartnere, der bemyndiger anvendelse af elektronisk fakturering. Disse .XML-filer skal opfylde bestemte standarder. Landespecifikke krav og deres gennemførelse kan variere på tværs af EU-medlemsstaterne, men ofte bruger de Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) i forskellige versioner med tilpasninger samt [PEPPOL](http://www.peppol.eu)-specifikationer og adgangspunkter til validering og transport. Den primære fordel ved UBL er, at forretningsdokumenter kan standardiseres til forskellige formål. Da UBL er en fleksibel, international standard, der understøtter mange forretningsmæssige krav, kan disse forretningsdokumenter udveksles på tværs af nationale grænser.
+Implementering og indførelse overalt i EU af elektronisk fakturering er reguleret [Rådets direktiv 2010/45/EU](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), hvilket har indflydelse på alle EU-medlemsstater. Virksomheder, der gerne vil have fordel af elektronisk fakturering, skal sende salgsordrefakturaer, fritekstfakturaer, projektfakturaer, kreditnotaer for salgsordre og kreditnotaer for projektfakturaer som .XML-filer til offentlige myndigheder eller andre handelspartnere, der bemyndiger anvendelse af elektronisk fakturering. Disse .XML-filer skal opfylde bestemte standarder. Landespecifikke krav og deres gennemførelse kan variere på tværs af EU-medlemsstaterne, men ofte bruger de Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) i forskellige versioner med tilpasninger samt [PEPPOL](http://www.peppol.eu)-specifikationer og adgangspunkter til validering og transport. Den primære fordel ved UBL er, at forretningsdokumenter kan standardiseres til forskellige formål. Da UBL er en fleksibel, international standard, der understøtter mange forretningsmæssige krav, kan disse forretningsdokumenter udveksles på tværs af nationale grænser.
 
-<a name="what-electronic-invoice-formats-are-currently-supported-in-finance-and-operations"></a>Hvilke formater for elektroniske fakturaer understøttes i øjeblikket i Finance and Operations?
----------------------------------------------------------------------------------------
+## <a name="what-electronic-invoice-formats-are-currently-available-in-finance-and-operations"></a>Hvilke formater for elektroniske fakturaer er i øjeblikket tilgængelige i Finance and Operations?
 
+Der findes følgende landespecifikke formater for elektroniske fakturaer:
 
-Dynamics 365 for Operations (1611) tilbyder gennemførelse af elektronisk fakturering baseret på [elektronisk indberetning](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). Der er en **Debitorfakturamodel**-datamodel, og der er oprettet en række landespecifikke konfigurationer for elektroniske indberetningsformater for Østrig, Danmark, Italien, Norge og Spanien:
--   OIOUBL salgs- og projektfaktura (AT, DK, NO)
--   OIOUBL salgs- og projektkreditnota (AT, DK, NO)
--   Salgs- og projektfaktura (ES)
--   Salgs- og projektfaktura (IT)
+-   OIOUBL-v.2.02 for Danmark
+-   EHF v.2.0.8 for Norge
+-   PEPPOL BIS v.2 for Østrig, Frankrig og Belgien
+-   UBL-OHNL 1.9 for Nederlandene
+-   FacturaE v.3.2.1 for Spanien
+-   FatturaPA v.1.2 for Italien
 
-De elektroniske fakturaer og kreditnotaer, som du genererer, omfatter nødvendige oplysninger som et europæisk varenummer (EAN) og oplysninger om kontakt, dimensionskontonummer og adresse til kunden. I Finance and Operations anvendes valideringsregler, når der genereres fakturaer, så du kan kontrollere, at de korrekte oplysninger er angivet. Sættet af nødvendige oplysninger kan variere fra land til land. Da både kravene og de understøttede lande og formater kan blive ændret, bør du altid gå til det delte aktivbibliotek i Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**.
+Elektronisk fakturering er baseret på [elektronisk indberetning](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). Der er en **Debitorfakturamodel**-datamodel, og der er oprettet en række landespecifikke konfigurationer for elektroniske indberetningsformater for Østrig (AT), Danmark (DK), Italien (IT), Norge (NO), Spanien (ES), Frankrig (FR), Belgien (BE) Nederlandene (NL).
 
+-   OIOUBL salgsfaktura - for AT, DK og NO
+-   OIOUBL salgskreditnota - for AT, DK og NO
+-   OIOUBL projektfaktura - for AT, DK og NO
+-   OIOUBL projektkreditnota - for AT, DK og NO
+-   UBL-salgsfaktura FR
+-   UBL-salgskreditnota FR
+-   UBL-projektfaktura FR
+-   UBL-projektkreditnota FR
+-   UBL-salgsfaktura BE
+-   UBL-salgskreditnota BE
+-   UBL-projektfaktura BE
+-   UBL-projektkreditnota BE
+-   UBL-salgsfaktura NL
+-   UBL-salgskreditnota NL
+-   UBL-projektfaktura NL
+-   UBL-projektkreditnota NL 
+-   Salgsfaktura (ES)
+-   Salgsfaktura (IT)
+-   Projektfaktura (ES)
+-   Projektfaktura (IT)
 
+De elektroniske fakturaer og kreditnotaer, som du genererer, omfatter nødvendige oplysninger som et europæisk varenummer (EAN) og oplysninger om kontakt, dimensionskontonummer og adresse til kunden. Der anvendes valideringsregler, når der genereres fakturaer, så du kan kontrollere, at de korrekte oplysninger er angivet. Sættet af nødvendige oplysninger kan variere fra land til land. Da både kravene og de understøttede lande og formater kan blive ændret, bør du altid gå til det delte aktivbibliotek i Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**.
+
+## <a name="additional-information"></a>Yderligere oplysninger
+Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides) i ruden Hjælp:
+
+ - Konfigurere elektronisk OIOUBL-fakturering
+ - Importere OIOUBL elektroniske faktureringskonfigurationer
+ - Konfigurere debitorkonti til elektronisk OIOUBL-fakturering
+
+> [!NOTE] 
+> Selvom disse opgaveguider er oprettet specifikt til det danske e-fakturaformat *OIOUBL*, gælder de også for andre understøttede lande, med mindre afvigelser.
 

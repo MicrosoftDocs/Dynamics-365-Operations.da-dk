@@ -3,26 +3,26 @@ title: "Oprette kreditorbetalinger ved hjælp af et betalingsforslag"
 description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -40,7 +40,7 @@ Forespørgslen om betalingsforslag indeholder forskellige faner, der hver især 
 ## <a name="parameters"></a>Parametre
 -   **Vælg fakturaer efter** – Fakturaer inden for det datointerval, der er angivet i felterne **Fra dato** og **Til dato**, kan vælges efter forfaldsdato, kasserabatdato eller begge dele. Hvis du bruger kasserabatdatoen, søger systemet først efter fakturaer, der har en kasserabatdato mellem Fra dato og Til dato. Systemet afgør derefter, om fakturaen er berettiget til kasserabatten, ved hjælp af sessionsdatoen for at sikre, at kasserabatdatoen ikke er overskredet.
 -   **Fra dato** og **Til dato** – Fakturaer, der har en forfaldsdato eller kasserabatdato inden for dette datointerval er udvalgt til betaling.
--   **Betalingsdato** – Hvis der er defineret en dato, oprettes alle betalinger på denne dato. Feltet **Dato for minimumsbetaling** ignoreres.
+-   **Betalingsdato** – Bruges kun, når feltet **Periode** for betalingsmetoden er indstillet til **Samlet**. Hvis der er defineret en dato, oprettes alle betalinger på denne dato. Feltet **Dato for minimumsbetaling** ignoreres.
 -   **Dato for minimumsbetaling** – Angiv dato for minimumsbetaling. Felterne **Fra dato** og **Til dato** angiver f.eks. et interval fra 1. september til 10. september, og den dato for minimumsbetaling er 5. september. I dette tilfælde har alle fakturaer, der har en forfaldsdato fra den 1. til 5. september, en betalingsdato for 5. september. Alle fakturaer, der har en forfaldsdato fra 5. september til 10. september, har dog en betalingsdato, der er lig med forfaldsdatoen for hver faktura.
 -   **Beløbsgrænse** – Angiv det maksimale samlede beløb for alle betalinger.
 -   **Opret betalinger uden projektfaktura** – Hvis du har sat indstillingen til **Ja**, oprettes betalinger straks på siden **Kreditorbetalinger**. Siden **Betalingsforslag** vil blive sprunget over. Betalinger vil derfor blive oprettet hurtigere. Betalinger kan stadig ændres på siden **Kreditorbetalinger**. Alternativt kan du returnere til siden **Betalingsforslag** ved hjælp af knappen **Rediger fakturaer for valgt betaling**.

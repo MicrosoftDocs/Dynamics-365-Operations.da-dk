@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -78,7 +78,7 @@ Produktionsindlagringskladder fungerer som varemodtagelseskladder, men bruges ti
 
 ### <a name="counting"></a>Optælling
 
-Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage justeringer, der er nødvendige for at afstemme forskelle. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage justeringer, der er nødvendige for at afstemme forskelle. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
 
 ### <a name="tag-counting"></a>Mærkatoptælling
 

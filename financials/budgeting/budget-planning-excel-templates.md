@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan 
 I dette emne kan du se, hvordan du opretter Excel-skabeloner, der skal bruges med budgetplaner ved hjælp af standarddemodatasæt og logon som administratorbruger. Du kan finde flere oplysninger om budgetplanlægning under [Budgetplanlægningsoversigt.](budget-planning-overview-configuration.md) Du kan også følge selvstudiet [Budgetplanlægning 101](budget-plan.md) for at lære grundlæggende principper for modulkonfiguration og -brug.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Automatisk generere et regneark ved hjælp af dokumentlayout til budgetplan
-Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. Hvert layout kan have en tilknyttet skabelon til et budgetplandokument for at få vist og redigere budgetplandata i et Excel-regneark. I dette emne vil der blive genereret en skabelon til et budgetplandokument ved hjælp af en eksisterende layoutkonfiguration. Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). Klik på **Ny** for at oprette et nyt budgetplandokument. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. Hvert layout kan have en tilknyttet skabelon til et budgetplandokument for at få vist og redigere budgetplandata i et Excel-regneark. I dette emne vil der blive genereret en skabelon til et budgetplandokument ved hjælp af en eksisterende layoutkonfiguration. 
+
+Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). Klik på **Ny** for at oprette et nyt budgetplandokument. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Brug indstillingen på linjen **Tilføj** for at tilføje linjer. Klik på **Layout** for at få vist konfigurationen af dokumentlayout til budgetplan. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan gennemgå layoutkonfigurationen og justere den efter behov. Gå til **Skabelon** &gt; **Generer** for at oprette en Excel-fil for dette layout. Når skabelonen er oprettet, kan du gå til **Skabelon** &gt; **Vis** for at åbne og gennemse skabelonen til budgetplandokumentet. Du kan gemme Excel-filen til den lokale harddisk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Du kan gennemgå layoutkonfigurationen og justere den efter behov. Gå til **Skabelon** &gt; **Generer** for at oprette en Excel-fil for dette layout. Når skabelonen er oprettet, kan du gå til **Skabelon** &gt; **Vis** for at åbne og gennemse skabelonen til budgetplandokumentet. Du kan gemme Excel-filen til den lokale harddisk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Dokumentlayout til budgetplaner kan ikke redigeres, når der er knyttet en Excel-skabelon til det. Hvis du vil ændre layoutet, skal du slette den tilknyttede Excel-skabelonfil og oprette den igen. Dette er påkrævet for at holde felterne i layoutet og regnearket synkroniseret. 

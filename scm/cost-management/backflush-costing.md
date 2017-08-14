@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing. 
 
-Med efterkalkulation af lean manufacturing kan produktionsflowet bruge metoden til omkostningsakkumulering, også kaldet efterkalkuleret varetræk. I metoden til efterkalkuleret varetræk akkumuleres de direkte materialer, der forbruges, i produktionsflowets omkostningskonto for igangværende arbejde (IGVF). Lagermodelgruppen for standardkostprisen anvendes. De produkter, der modtages fra produktionsflowet, trækkes fra IGVF til deres standardkostpris. Den væsentligste forskel mellem efterkalkuleret varetræk og standardkostprisen er, at for efterkalkuleret varetræk beregnes afvigelser ikke pr. kanban eller færdigt produkt. I stedet beregnes afvigelser pr. produktionsflow over en periode. Denne metode medfører et virkeligt lean koncept til rapportering af materialeforbrug. Dedikerede plukkede mængder materiale rapporteres ikke til en kanban- eller produktionsordre. I stedet klargøres komplette batches eller materialehåndteringsenheder til produktionsflowet. Når batches eller materialehåndteringsenheder registreres som tomme, bliver de angivet som forbrugt. Avanceret forbrug kan bruges, afhængigt af [konfigurationen af produktionsflowet](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Før avanceret forbrug kan anvendes, skal organisationer tillade sig at lade materiale forsvinde i produktionsflowets IGVF. Det periodiske efterkalkulerede varetræk bestemmer den faktiske værdi af IGVF til slutningen af perioden. Denne afgørelse er baseret på kanban-materialehåndteringsenhederne og kanban-jobbets status. Afvigelser mellem de gældende værdier og de faktiske værdier for IGVF pr. kostprisgruppe og vare efterkalkuleres og vises som afvigelser.
+Med efterkalkulation af lean manufacturing kan produktionsflowet bruge metoden til omkostningsakkumulering, også kaldet efterkalkuleret varetræk. I metoden til efterkalkuleret varetræk akkumuleres de direkte materialer, der forbruges, i produktionsflowets omkostningskonto for igangværende arbejde (IGVF). Lagermodelgruppen for standardkostprisen anvendes. De produkter, der modtages fra produktionsflowet, trækkes fra IGVF til deres standardkostpris. Den væsentligste forskel mellem efterkalkuleret varetræk og standardkostprisen er, at for efterkalkuleret varetræk beregnes afvigelser ikke pr. kanban eller færdigt produkt. I stedet beregnes afvigelser pr. produktionsflow over en periode. Denne metode medfører et virkeligt lean koncept til rapportering af materialeforbrug. Dedikerede plukkede mængder materiale rapporteres ikke til en kanban- eller produktionsordre. I stedet klargøres komplette batches eller materialehåndteringsenheder til produktionsflowet. Når batches eller materialehåndteringsenheder registreres som tomme, bliver de angivet som forbrugt. Avanceret forbrug kan bruges, afhængigt af [konfigurationen af produktionsflowet](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Før avanceret forbrug kan anvendes, skal organisationer tillade sig at lade materiale forsvinde i produktionsflowets IGVF. Det periodiske efterkalkulerede varetræk bestemmer den faktiske værdi af IGVF til slutningen af perioden. Denne afgørelse er baseret på kanban-materialehåndteringsenhederne og kanban-jobbets status. Afvigelser mellem de gældende værdier og de faktiske værdier for IGVF pr. kostprisgruppe og vare efterkalkuleres og vises som afvigelser.
 
 ## <a name="configuring-backflush-costing"></a>Konfiguration af efterkalkuleret varetræk
 Du kan aktivere efterkalkulation ved at foretage følgende opsætning:
