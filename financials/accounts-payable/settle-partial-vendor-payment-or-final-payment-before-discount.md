@@ -1,9 +1,9 @@
 ---
 title: "Udlign en delvis kreditorbetaling, og udlign den endelige betaling fuldt ud før rabatdatoen"
 description: "Denne artikel gennemgår et scenario, hvor der foretages delbetalinger for en kreditorfaktura og der gives en kasserabat."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14431
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 6cfc342121e0c5919784911275234fc99c85ede8
 ms.contentlocale: da-dk
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
