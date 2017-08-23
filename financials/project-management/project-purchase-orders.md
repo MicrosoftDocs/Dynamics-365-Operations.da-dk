@@ -3,7 +3,7 @@ title: "Indkøbsordrer til et projekt"
 description: "I denne artikel beskrives de forskellige metoder, du kan bruge til at oprette indkøbsordrer for et projekt. Den metode, du bruger, afhænger af formålet med indkøbsordren, og hvornår de købte varer forbruges og debiteres et projekt."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 83972
 ms.assetid: 247e4d72-610b-4fa5-9873-601ed0f4b2d6
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9715d33598c0749ff1ad2523f2fa8834987998ed
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: d55c999ed1f506a2d9487c8cc94bf0e9cce3bed1
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -77,6 +77,6 @@ Du kan bruge en af forskellige metoder til at oprette en indkøbsordre i Projekt
 > [!NOTE] 
 > Når du opdaterer kreditorfakturaen eller følgesedlen, bliver du bedt om at opdatere følgesedlen for varebehovet.
 
-
+Yderligere oplysninger finder du i [Modtage varer på indkøbsordre ud fra varebehov](tasks/receive-items-purchase-order-item-requirement.md).
 
 

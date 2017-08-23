@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 2.  Vælg **Tidsregistrering**. Kalenderdatoerne for den aktuelle uge vises.
 3.  Vælg **Handlinger** &gt; **Ny registrering** for en valgt dato.
 4.  Angiv antallet af timer, der skal registreres.
-5.  Vælg projektet for tidsregistreringen. Der vises en liste over de projekter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Vælg projektet for tidsregistreringen. Der vises en liste over de projekter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Vælg **Søg**, hvis projektet ikke er på listen. Søg på navn, eller skift for at søge på projektnavn eller kunde.
-7.  Vælg en kategori. Der vises en liste over de kategorier, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Vælg en kategori. Der vises en liste over de kategorier, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Vælg **Søg**, hvis kategorien ikke er på listen. Søg på kategori, eller skift for at søge på kategorinavn.
-9.  Vælg en aktivitet. Der vises en liste over de aktiviteter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Vælg en aktivitet. Der vises en liste over de aktiviteter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Du kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Vælg **Søg**, hvis aktiviteten ikke er på listen. Søg på aktivitetsnummer, eller skift for at søge på formål.
 
 11. Vælg linjeegenskaben.

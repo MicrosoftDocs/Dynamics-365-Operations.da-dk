@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Hurtigt angive udgifter ved hjælp af arbejdsområdet Udgiftsstyring på mobilenheder
 1. På din mobilenhed skal du åbne arbejdsområdet **Udgiftsstyring**.
 2. Vælg **Hurtig angivelse af udgifter**.
-3. Vælg udgiftsarten. Der vises en liste over de udgiftsarter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis kategorien ikke er på listen. Søg på udgiftsart, eller skift for at søge på udgiftstypen.
+3. Vælg udgiftsarten. Der vises en liste over de udgiftsarter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis kategorien ikke er på listen. Søg på udgiftsart, eller skift for at søge på udgiftstypen.
 4. Angiv posteringsdatoen for udgiften.
 5. Valgfrit: Angiv forhandleren for udgiften.
 6. Angiv beløbet for udgiften.
-7. Vælg valutaen for udgiften. Der vises en liste over de valutakoder, der er indlæst i din app til offlinebrug. 400 valutaer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis valutaen ikke er på listen. Søg på valuta, eller skift for at søge på navn.
+7. Vælg valutaen for udgiften. Der vises en liste over de valutakoder, der er indlæst i din app til offlinebrug. 400 valutaer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis valutaen ikke er på listen. Søg på valuta, eller skift for at søge på navn.
 8. Vælg **Tag foto** eller **Vælg billede**.
 9. Udfør ét af følgende trin:
 
@@ -166,11 +166,11 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 7. Vælg en eller flere udgifter på listen.
 8. Vælg **Udført**.
 9. Vælg **Ny udgift** for at tilføje en ny udgift til udgiftsrapporten.
-10. Vælg udgiftsarten. Der vises en liste over de udgiftsarter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis kategorien ikke er på listen. Søg på udgiftsart, eller skift for at søge på udgiftstypen.
+10. Vælg udgiftsarten. Der vises en liste over de udgiftsarter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis kategorien ikke er på listen. Søg på udgiftsart, eller skift for at søge på udgiftstypen.
 11. Valgfrit: Angiv forhandleren for udgiften.
 12. Angiv posteringsdatoen for udgiften.
 13. Angiv beløbet for udgiften.
-14. Vælg valutaen for udgiften. Der vises en liste over de valutakoder, der er indlæst i din app til offlinebrug. 400 valutaer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis valutaen ikke er på listen. Søg på valuta, eller skift for at søge på navn.
+14. Vælg valutaen for udgiften. Der vises en liste over de valutakoder, der er indlæst i din app til offlinebrug. 400 valutaer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis valutaen ikke er på listen. Søg på valuta, eller skift for at søge på navn.
 15. Vælg **Udført**.
 16. Du kan tilføje flere oplysninger om udgiften ved at vælge **Tilføj flere oplysninger**. Hvilke felter der er tilgængelige afhænger af konfigurationen af udgiftsstyringen i dit firma.
 17. Hvis virksomhedens politik kræver en kvittering for udgiften, skal du vælge **Kvitteringer** og derefter følge disse trin:
@@ -216,12 +216,12 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
         - Hvis du har valgt **Tidligere gæster**, skal du gøre følgende:
 
-            1. Vælg en eller flere tidligere gæster på listen. Du kan se en liste over tidligere gæster, som du har tilføjet i tidligere udgiftsrapporter, der er indlæst i din app til brug offline. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis den tidligere gæst ikke er på listen. Søg på navn, eller skift for at søge på organisation, land eller titel.
+            1. Vælg en eller flere tidligere gæster på listen. Du kan se en liste over tidligere gæster, som du har tilføjet i tidligere udgiftsrapporter, der er indlæst i din app til brug offline. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis den tidligere gæst ikke er på listen. Søg på navn, eller skift for at søge på organisation, land eller titel.
             2. Vælg **Udført**.
 
         - Hvis du har valgt **Kolleger**, skal du gøre følgende:
 
-            1. Vælg en eller flere kolleger på listen. Der vises en liste over de kolleger, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis kollegaen ikke er på listen. Søg på navn, eller skift for at søge på virksomhed eller titel.
+            1. Vælg en eller flere kolleger på listen. Der vises en liste over de kolleger, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis kollegaen ikke er på listen. Søg på navn, eller skift for at søge på virksomhed eller titel.
             2. Vælg **Udført**.
 
     3. Vælg knappen **Tilbage** for at vende tilbage til udgiftsdetaljerne.
@@ -230,7 +230,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
     1. Vælg den første dato, der skal specificeres.
     2. Vælg **Tilføj specifikation**.
-    3. Vælg underkategorien for specifikationen af udgiften. Der vises en liste over de underkategorier af udgifter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Vælg **Søg** for at søge online, hvis underkategorien ikke er på listen. Søg på navnet på udgiftsunderkategorien.
+    3. Vælg underkategorien for specifikationen af udgiften. Der vises en liste over de underkategorier af udgifter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Vælg **Søg** for at søge online, hvis underkategorien ikke er på listen. Søg på navnet på udgiftsunderkategorien.
     4. Angiv transaktionsbeløbet for specifikationen.
     5. Rediger transaktionsdatoen, hvis det er påkrævet.
     6. Vælg **Udført**.

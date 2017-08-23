@@ -3,7 +3,7 @@ title: "Økonomiske dimensioner"
 description: "I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
-ms.openlocfilehash: e82d53b3f6b4c8d3e2363f26576331e1d03434d9
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: b5615a6d9003554593981ce65be0283a249a7d93
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -84,4 +83,9 @@ Af hensyn til vedligeholdelsen af dataenes referenceintegritet kan økonomiske d
 - Er den økonomiske dimension konfigureret som en standarddimension?
 
 Hvis et af kriterierne er opfyldt, kan du ikke slette den økonomiske dimension.
+
+
+Du kan finde flere oplysninger under følgende emner:
+- [Definere økonomiske dimensioner](tasks/define-financial-dimensions.md)
+- [Vedligeholde standardskabeloner for økonomiske dimensioner](tasks/maintain-financial-dimension-default-templates.md)
 

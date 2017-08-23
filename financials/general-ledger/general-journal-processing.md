@@ -3,7 +3,7 @@ title: "Finanskladdehåndtering"
 description: "I denne artikel beskrives funktionerne i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet og den interne kontrol ikke bliver forringet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ Opsætningen af hovedkontoen giver mange muligheder for behandling af finansklad
 
 Regnskabsmæssige strukturer og avancerede regelstrukturer er meget vigtige for at garantere, at de data, der kræves til økonomisk rapportering og sporing af ydeevne er hentet under behandling af finanskladde og enhver dokumentation. Med regnskabsmæssige strukturer og avancerede regelstrukturer kan du skræddersy dataindtastningsoplevelsen. Du kan kun tillade dataindtastning for økonomiske dimensioner, der er relevante i hver situation, og kan også gennemtvinge kravet om, at obligatoriske og korrekte data altid registreres.
 
-Du kan finde flere oplysninger under [Planlægning: Kontoplan](plan-chart-of-accounts.md). 
-
+Du kan finde flere oplysninger under følgende emner:
+- [Planlægning: Kontoplan](plan-chart-of-accounts.md). 
+- [Oprette avancerede regler for kladder](tasks/create-advanced-rules-journals.md)
+- [Oprette en kladdepost ved hjælp af en skabelon](tasks/create-journal-entry-template.md)
+- [Oprette og kontrollere kladder](tasks/create-validate-journals.md)
+- [Bogføre periodiske kladder](tasks/post-periodic-journals.md)
+- [Behandle finansfordelingskladde](tasks/process-ledger-allocation-journal.md)
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Kredit og rykkere i Debitor
 description: "Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Du kan frafalde, genindføre eller tilbageføre hele rentenotaer eller gebyrer o
 
 Disse reguleringer påvirker kun rentenotaer og de renter og gebyrer, som de omfatter. Brug trinnene i afsnittet "Oprette afskrivningsposteringer med ét trin" til at afskrive alle de tillæg, som en debitor skylder.
 
+Yderligere oplysninger finder du under [Oprette en rentekode med et interval](tasks/create-interest-code-range.md) og [Behandle renter](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Oprette afskrivningsposteringer
 Du kan afskrive tab på debitorer ved at klikke på Afskriv i formularen Rykkere og på listesiderne Aldersfordelte saldi, Debitorer og Åbne debitorfakturaer. 
 
@@ -100,7 +101,10 @@ Når du afskriver posteringer for en debitor, markeres alle posteringer for debi
 -   Den tredje kladdelinjetype indeholder oplysninger om finansafskrivninger for moms. Denne kladdelinje oprettes kun, til/fra-tasten Separat moms er markeret på siden Debitorparametre. Hvis de markerede posteringer indeholder flere kombinationer af konto for udgående moms, dimension og momskode, oprettes der en separat kladdelinje for hver enkelt kombination.
 
 Afskrivningsposteringen oprettes i posteringsvalutaen.
-Behandle NSF-betalinger (Non-sufficient Funds – USA)  
+
+Yderligere oplysninger finder du under [Oprette en afskrivningskladde for en debitor](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Behandle NSF-betalinger (Non-sufficient Funds – USA)  
 --------------------------------------------
 
 Du kan behandle NSF-betalinger ved at klikke på NFS-betaling på siden Rykkere. Når du klikker på denne knap, annulleres betalingen. Hvis der gælder et NSF-gebyr for debitoren, oprettes der en gebyrpostering i en betalingskladde. Gebyrbeløbet baseres på indstillingerne for automatiske gebyrer. De automatiske gebyrer, der gælder for NSF-betalinger, specificeres med udgangspunkt i den gebyrgruppe, der er valgt på siden Bankkonti for den pågældende bankkonto.

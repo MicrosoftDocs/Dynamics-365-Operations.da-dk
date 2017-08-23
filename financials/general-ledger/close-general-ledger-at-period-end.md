@@ -3,7 +3,7 @@ title: Lukke Finans ved periodeafslutning
 description: "I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81d687cc16ef43442c8c1c166cc6f0d8b171e28f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,8 +45,13 @@ I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukning
 -   Generér regnskaber for periodeafslutningen ved hjælp af Økonomirapportering.
 -   Angiv finansperioder til **På hold**, så der sker yderligere bogføring. Du kan også begrænse en periode til en bestemt brugergruppe, mens der pågår aktiviteter i periodeafslutningen, for at have bedre kontrol. Det er ikke en god ide at indstille perioder til **Permanent lukket**, fordi du ikke kan genåbne en periode, der er blevet lukket.
 
-Den arbejdsområdet Afslutning på regnskabsperiode kan bruges til at organisere og spore de opgaver, der kræves til forskellige periodeafslutningsprocesser. Du kan finde flere oplysninger i emnerne [Arbejdsområde til afslutning på regnskabsperiode](financial-period-close-workspace.md) og [Årsafslutning](Year-end-close.md). 
+Den arbejdsområdet Afslutning på regnskabsperiode kan bruges til at organisere og spore de opgaver, der kræves til forskellige periodeafslutningsprocesser. 
 
+
+Du kan finde flere oplysninger i følgende emner:
+- [Arbejdsområde til afslutning på regnskabsperiode](financial-period-close-workspace.md) 
+- [Årsafslutning](Year-end-close.md)  
+- [Masseafslutning af regnskabsperiode](tasks/mass-financial-period-close.md)
 
 
 

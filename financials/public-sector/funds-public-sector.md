@@ -3,7 +3,7 @@ title: Midler i den offentlige sektor
 description: "Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,12 +19,11 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 21d610c169878b156aeefe1d20bd6ea183deae79
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9ed256e3ad412969f70687b17d4c98091b68643d
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -101,6 +100,14 @@ Offentlige organisationer kræver normalt afstemte poster for økonomiske dimens
 
 ## <a name="how-do-i-set-a-fund-balance-to-carry-over-to-the-new-year"></a>Hvordan indstiller jeg en middelsaldo, som skal overføres til det nye år?
 Hvis du vil vide mere om årsafslutningen for midler, skal du se under [Årsafslutningen i den offentlige sektor](year-end-processing-public-sector.md).
+
+
+Du kan finde flere oplysninger under følgende emner:
+
+[Oprettelse af en middeltype](tasks/create-fund-type-public-sector.md)
+
+[Konfigurere et middel](tasks/set-up-fund-public-sector.md)
+
 
 
 

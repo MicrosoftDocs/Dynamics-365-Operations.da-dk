@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du nulstiller økonomirapporterings-datacenteret efter gendannelse af en Microsoft Dynamics 365 for Finance and Operations-database. 
+Dette emne beskriver, hvordan du nulstiller økonomirapporterings-datacenteret efter gendannelse af en Microsoft Dynamics 365 for Finance and Operations-database.
 
-Der findes flere situationer, hvor du muligvis er nødt til at gendanne Dynamics 365 for Finance and Operations-databasen fra en sikkerhedskopi eller kopierer databasen fra et andet miljø. Når dette sker, skal du også følge de relevante trin for at sikre, at økonomirapporterings-datacenteret bruger den gendannede Dynamics 365 for Finance and Operations-database korrekt. Hvis du har spørgsmål til nulstilling af økonomirapporterings-datacenteret af andre årsager end gendannelse af en Dynamics 365 for Finance and Operations-database, kan du finde yderligere oplysninger i [Nulstilling af Management Reporter-datacenteret](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Bemærk, at trinene i processen understøttes for Dynamics 365 for Operations maj 2016 udgaven (App build 7.0.1265.23014 og økonomirapportering build 7.0.10000.4) og nyere versioner. Hvis du har en tidligere udgave af Dynamics 365 for Finance and Operations, skal du kontakte vores supportteam for at få hjælp.
+Hvis du på et tidspunkt vil gendanne din Finance and Operations-database fra en sikkerhedskopi eller kopiere databasen fra et andet miljø, skal du følge trinnene i dette emne for at sikre, at datacenteret for økonomirapportering bruger den gendannede Finance and Operations-database korrekt. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Trinene i processen understøttes for Dynamics 365 for Operations maj 2016 udgaven (App build 7.0.1265.23014 og økonomirapportering build 7.0.10000.4) og nyere versioner. Hvis du har en tidligere udgave af Dynamics 365 for Finance and Operations, skal du kontakte vores supportteam for at få hjælp.
 
 ## <a name="export-report-definitions"></a>Eksporter rapportdefinitioner
 Først skal du eksportere de rapportdesigns, der er placeret i Report Designer, ved hjælp af følgende trin:
 
 1.  I Report Designer skal du gå til **Regnskab** &gt; **Komponentgruppe**.
-2.  Vælg den komponentgruppe, der skal eksporterer, og klik på **Eksporter**. **Bemærk:** I Dynamics 365 for Finance and Operations understøttes kun én komponentgruppe, **Standard**.
+2.  Vælg den komponentgruppe, der skal eksporterer, og klik på **Eksporter**. 
+    > [!Note] 
+    > Bemærk: I Finance and Operations understøttes kun én komponentgruppe, **Standard**.
 3.  Vælg de rapportdefinitioner, der skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinitioner og de tilhørende komponenter, skal du klikke på **Marker alt**.
     -   Hvis du vil eksportere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du klikke på den relevante fane og derefter vælge de elementer, der skal eksporteres. Tryk på og hold Ctrl-tasten nede for at vælge flere elementer på en fane. Når du vælger rapporter, der skal eksporteres, markeres de tilknyttede rækker, kolonner, træer og dimensionssæt.
@@ -63,9 +68,9 @@ Brug Fjernskrivebord til at oprette forbindelse til alle computere i miljøet, o
 Disse tjenester har åbne forbindelser til Dynamics 365 for Finance and Operations-databasen.
 
 ## <a name="reset"></a>Nulstil
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Find den nyeste DataUpgrade.zip-pakke
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Find og hent den nyeste MinorVersionDataUpgrade.zip-pakke
 
-Find den nyeste DataUpgrade.zip-pakke ved hjælp af vejledningen i [Hent scriptet DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Vejledningen beskriver, hvordan du finder den korrekte version af dataopgraderingspakken til dit miljø.
+Find den nyeste MinorVersionDataUpgrade.zip-pakke ved hjælp af vejledningen i [Hent den nyeste installerbare dataopgraderingspakke](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). Vejledningen beskriver, hvordan du finder og henter den korrekte version af dataopgraderingspakken. Der kræves ikke en opgradering for at hent pakken MinorVersionDataUpgrade.zip. Du behøver kun at udføre trinnene i afsnittet "Hent den nyeste installerbare dataopgraderingspakke" uden at udføre nogen af de øvrige trin i artiklen for at hente en kopi af MinorVersionDataUpgrade.zip-pakken.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Udfør scripts mod Finance and Operations-databasen
 
@@ -105,8 +110,10 @@ Importer dine rapportdesigns fra Report Designer ved hjælp af den fil, der opre
 
 1.  I Report Designer skal du gå til **Regnskab** &gt; **Komponentgruppe**.
 2.  Vælg den komponentgruppe, der skal eksporterer, og klik på **Eksporter**. 
+
     > [!NOTE]
     > Bemærk: I Finance and Operations understøttes kun én komponentgruppe, **Standard**.
+    
 3.  Vælg komponenten **Standard**, og klik på **Importer**.
 4.  Vælg den fil, der indeholder de eksporterede rapportdefinitioner, og klik på **Åbn**.
 5.  I dialogboksen Importér skal du vælge de rapportdefinitioner, der skal importeres:

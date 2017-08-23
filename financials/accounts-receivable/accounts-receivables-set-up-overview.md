@@ -1,9 +1,9 @@
 ---
 title: Konfigurere debitorer og kredit og rykkere
 description: "Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgående betalinger fra debitorer."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ I følgende tabel vises de sider, der understøtter konfiguration og vedligehold
 |                                                      | Valutaer                           | Opret og få vist de valutaer, som bruges i din organisation.                                                                                                                                                                                                                       |
 |                                                      | Valutakurser              | Opret og vedligehold de relevante valutakurser mellem regnskabsvalutaen og andre valutaer.                                                                                                                                                                              |
 |                                                      | Mellemregning              | Opret en liste over konti, som den aktuelle juridiske enhed kan bogføre på. Du skal oprette debet- og kreditkonti samt oprette den kladde, der modtager posteringerne i den anden juridiske enhed.                                                                             |
-|                                                      | Betalingsmåder – Debitor        | Opret og vedligehold oplysninger om betalingsmåder for debitorer.                                                                                                                                                                                                           |
+|                                                      | Betalingsmåder – Debitor        | Opret og vedligehold oplysninger om betalingsmåder for debitorer. Du kan finde flere oplysninger under [Fastlægge betalingsmåde for debitor](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organisationshierarkier             | Opret et organisationshierarki til centraliserede betalinger.                                                                                                                                                                                                                        |
 |                                                      | Formål med organisationshierarkier      | Angiv et formål til centraliserede betalinger.                                                                                                                                                                                                                                       |
 |                                                      | Betalingsdage                         | Definer de betalingsdage, der bruges til at beregne forfaldsdatoerne for betalinger fra debitorer eller til kreditorer.                                                                                                                                                |
-|                                                      | Betalingsgebyr                          | Opret og vedligehold betalingsgebyrer, der vedrører debitorer, f.eks. gebyrer for veksler.                                                                                                                                                                               |
-|                                                      | Opsætning af betalingsgebyr                    | Definer betalingsgebyrer for forskellige kombinationer af banker, betalingsmåder, remitteringstyper, betalingsspecifikationer, valutaer og datointervaller.                                                                                                                              |
+|                                                      | Betalingsgebyr                          | Opret og vedligehold betalingsgebyrer, der vedrører debitorer, f.eks. gebyrer for veksler.                                                                                                                                                                         |
+|                                                      | Opsætning af betalingsgebyr                    | Definer betalingsgebyrer for forskellige kombinationer af banker, betalingsmåder, remitteringstyper, betalingsspecifikationer, valutaer og datointervaller.  Du kan finde flere oplysninger under [Fastlægge gebyrer for debitorbetaling](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Betalingsplaner                    | Opret betalingsplaner, som kan bruges til at planlægge betalinger i rater fra kunder og til leverandører.                                                                                                                                                                       |
 |                                                      | Betalingsspecifikation                | Opret og få vist betalingsspecifikationskoder for den betalingsmetode, du har valgt på siden Betalingsmåder. Du kan definere betalingsspecifikationskoder i overensstemmelse med den aftale, du har med den bank, der er angivet for den valgte betalingsmåde.                    |
 |                                                      | Posteringstekst                     | Opret posteringstekster til automatisk bogføring til Finans. Du kan konfigurere posteringstekster på forskellige sprog.                                                                                                                                                           |
@@ -83,7 +82,7 @@ I følgende tabel vises de sider, der understøtter konfiguration og vedligehold
 |                                                      | Betalingsmåder – Debitor        | Opret og vedligehold oplysninger om betalingsmåder for debitorer.                                                                                                                                                                                                           |
 |                                                      | Underskrift                            | Tilføj, rediger eller fjern signaturbilledfiler, f.eks. .bmp-, .jpg- eller .gif-filer. Signaturbilledfilerne udskrives på checks som officielle og gyldige underskrifter for juridiske enheder.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurere debitorstatistik           | Definitioner af forældelsesperioder             | Konfigurer og administrer brugerdefinerede definitioner af forældelsesperioder, som bruges til at analysere forfaldsforløb for debitor- og kreditorkonti baseret på den dato, du angiver.                                                                                                         |
+| Konfigurere debitorstatistik           | Definitioner af forældelsesperioder             | Konfigurer og administrer brugerdefinerede definitioner af forældelsesperioder, som bruges til at analysere forfaldsforløb for debitor- og kreditorkonti baseret på den dato, du angiver. Yderligere oplysninger finder du i [Opsætte og generere aldersfordelte oplysninger om debitorer](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Handelsstatistik                  | Konfigurer forespørgsler vedrørende handelsstatistik, som kan bidrage til analysen af organisationens performance.                                                                                                                                                                              |
 |                                                      | Handelsstatistikdata             | Få vist data i gitterformat for en valgt handelsstatistik.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |

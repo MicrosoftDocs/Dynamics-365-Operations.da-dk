@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bd61cd2a5fa7705f3f9152323281e6f4ca520dc1
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 64446efd518390ee2a7204e2c977fa4174581808
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -46,6 +45,13 @@ Rembursen indeholder en beskrivelse af varerne, evt. nødvendige dokumenter, afs
 
 En remburs kan enten være genkaldelig eller uigenkaldelig. Typen af en remburs kan være overdragelig, uoverdragelig eller revolverende. En remburs er typisk en uigenkaldelig og bekræftet aftale om, at betaling vil blive foretaget til en bestemt beneficiant ved fremsendelse af fuldstændig og korrekt forsendelsesdokumentation.
 
+Du kan finde flere oplysninger under følgende emner:
+
+[Importere en remburs](tasks/import-letter-credit.md)
+
+[Eksportere en remburs](tasks/export-letter-credit.md)
+
+[Oprette en bankfacilitet for en remburs](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

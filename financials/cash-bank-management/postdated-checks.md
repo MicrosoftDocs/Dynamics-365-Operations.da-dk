@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations understøtter hele administrat
 </tr>
 <tr class="even">
 <td>Registrere og bogføre en fremdateret check for en kreditor</td>
-<td>Registrer detaljerne omkring en fremdateret check, før du udsteder til en kreditor. Når betalingen bogføres, genkendes kreditorens gæld, men bankkontoen er endnu ikke kredit. I stedet bruges en clearingkonto til dette formål.</td>
+<td>Registrer detaljerne omkring en fremdateret check, før du udsteder til en kreditor. Når betalingen bogføres, genkendes kreditorens gæld, men bankkontoen er endnu ikke kredit. I stedet bruges en clearingkonto til dette formål. </td>
 </tr>
 <tr class="odd">
 <td>Registrere og bogføre en fremdateret check til en debitor</td>
@@ -87,6 +86,17 @@ Hvis din oprindelige check til en kreditor eller fra en debitor går tabt eller 
 
 
 
+Du kan finde flere oplysninger under følgende emner:
+
+[Oprette fremdaterede checks](tasks/set-up-postdated-checks.md)
+
+[Registrere og bogføre en fremdateret check for en debitor](tasks/register-post-postdated-check-customer.md)
+
+[Udligne en fremdateret check fra en debitor](tasks/settle-postdated-check-customer.md)
+
+[Registrere og bogføre en fremdateret check for en kreditor](tasks/register-post-postdated-check-vendor.md) 
+
+[Udligne en fremdateret check for en kreditor](tasks/settle-postdated-check-vendor.md)
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Konfigurere kredit og inkasso
 description: I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4d3682c486e80afd03ec5805575357f4e87781f2
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 76937aacbc1925603766299168ec2d4090bd161b
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
 Konfigurer en definition af forældelsesperioder. En definition af forældelsesperioder definerer de kolonner, der vises på listesiderne **Aldersfordelte saldi**, **Rykkeraktiviteter** og **Rykkersager**. Den definerer også de perioder, der vises på siden **Rykkere**. Hvis der er oprettet en kundepulje, bruges definitionen på forældelsesperioder derfra. Hvis der ikke er oprettet nogen kundepuljer, bruges den standarddefinition af forældelsesperiode, der er angivet på siden **Debitorparametre**. Hvis der ikke er angivet en standarddefinition af forældelsesperiode, bruges den første definition af forældelsesperiode på siden **Definitioner af forældelsesperioder**.
 
 ## <a name="create-an-aging-snapshot"></a>Oprette et aldersfordelt øjebliksbillede
-Opret poster for aldersfordelt øjebliksbillede for alle kunder eller for kunderne i kundepuljen. Oplysningerne om aldersfordelt øjebliksbillede vises på listesiden**Aldersfordelte saldi** og på siden **Rykkere**. Du skal oprette et aldersfordelt øjebliksbillede, før du kan bruge listesiden. Listesiden indeholder kun oplysninger om kunder, der allerede er oprettet et aldersfordelt øjebliksbillede for.
+Opret poster for aldersfordelt øjebliksbillede for alle kunder eller for kunderne i kundepuljen. Oplysningerne om aldersfordelt øjebliksbillede vises på listesiden **Aldersfordelte saldi** og på siden **Rykkere**. Du skal oprette et aldersfordelt øjebliksbillede, før du kan bruge listesiden. Listesiden indeholder kun oplysninger om kunder, der allerede er oprettet et aldersfordelt øjebliksbillede for.
 
 ## <a name="optional-set-up-customer-pools"></a>Valgfri: Oprette kundepuljer
 Du kan oprette kundepuljer, der repræsenterer grupper af kunder. Du kan bruge kundepuljer som filtre for de kundeoplysninger, der vises på **Rykkere**-listesiderne, på siden **Rykkere** eller ved oprettelse af aldersfordelte øjebliksbilleder.
@@ -94,5 +94,12 @@ Opret e-mailadresser for sælgere, hvis du vil sende e-mails til disse sælgere 
 Hvis der ikke er angivet en sælger, bruges kundens primære sælger. Hvis der ikke er angivet en primær sælger, sendes e-mails til den første sælger, der vises på siden.
 
 
+Du kan finde flere oplysninger under følgende emner:
+
+ - [Oprette et rykkerforløb](tasks/create-collection-letter-sequence.md)
+ 
+ - [Behandle rykkere](tasks/process-collection-letters.md)
+ 
+ - [Gennemse oplysninger om rykkere](tasks/review-collections-information.md)
 
 

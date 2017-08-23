@@ -3,7 +3,7 @@ title: "Budgetlægning i den offentlige sektor"
 description: "Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner."
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,12 +19,11 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f98df2facf777e51950deff36db9740c5bee79e4
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 435af77c5861f454ff06877a64f71f5974a76326
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -62,9 +61,13 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 [Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
 
-[Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
+[Debitor i den offentlige sektor](accounts-receivable-public-sector.md)
 
 [Finans i den offentlige sektor](general-ledger-public-sector.md)
+
+[Oprette et foreløbigt budget](tasks/create-preliminary-budget-public-sector.md)
+
+[Oprette et oprindeligt budget og tilbageføre foreløbige budgetposter](tasks/create-original-budget.md)
 
 
 

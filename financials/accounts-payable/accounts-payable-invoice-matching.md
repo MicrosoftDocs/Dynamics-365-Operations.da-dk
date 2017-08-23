@@ -3,7 +3,7 @@ title: Fakturasammenholdelse for Kreditor
 description: "Fakturasammenholdelse for kreditorer er den proces, hvor kreditorfakturaen, indkøbsordren og produktkvitteringen sammenholdes."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ Kreditorfakturaer er ofte baseret på produktkvitteringer, der repræsenterer de
 -   Angive fakturabeløb, der ikke var medtaget på den oprindelige indkøbsordre, så fakturaoplysningerne stemmer overens med den faktura, du har modtaget fra kreditoren. Du kan også sammenligne tillæggene for indkøbsordrer med tillæggene for fakturaer. Hvis det er nødvendigt, kan du føje tillæg til fakturaer og fordele dem til fakturalinjer.
 -   Få vist og godkende uoverensstemmelser mellem nettoenhedsprisen på fakturaen og nettoenhedsprisen på indkøbsordren. Du kan konfigurere pristoleranceprocenter for juridiske enheder, leverandører og varer. Hvis prisen på en kreditorfakturalinje ikke ligger inden for den acceptable pristolerance, kan du gemme fakturaen, indtil den godkendes til bogføring, eller indtil du modtager en korrektion fra kreditoren.
 
-Du kan finde flere oplysninger under [Trevejs-sammenholdelsespolitikker](three-way-matching-policies.md).
+Yderligere oplysninger finder du i [Trevejs-sammenholdelsespolitikker](three-way-matching-policies.md) og [Konfigurere validering af sammenholdelse af kreditorfakturaer](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

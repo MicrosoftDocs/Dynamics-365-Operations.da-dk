@@ -1,9 +1,9 @@
 ---
 title: Tilpasse brugeroplevelsen
-description: I denne artikel forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
+description: I dette emne forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
+I dette emne forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 
 Der findes mange typer tilpasninger i Microsoft Dynamics 365 for Finance and Operations. Nogle tilpasninger er valg, du foretager på en liste over indstillinger på en konfigurationsside. Nogle tilpasninger er implicitte, f.eks. holder Finance and Operations styr på bredden af kolonnerne i gitteret, hvis du vil justere dem, og tilstanden udvidet/minimeret for oversigtspaneler. Andre tilpasninger er eksplicitte. Når det gælder eksplicitte tilpasninger, aktiverer du en interaktiv tilpasningstilstand og ændrer udseendet af en side ved direkte at styre den måde, hvorpå elementer vises eller fungerer på siden. 
 
 Alle tilpasninger af enhver type, som en bruger foretager i Finance and Operations, gælder kun for den bruger, uanset det firma, brugeren interagerer med. Ændringer, som en bruger foretager på en side, påvirker ikke andre brugere i systemet.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systemindstillinger for den aktuelle bruger
-I navigationspanelet finder du et tandhjulsbillede, der kaldes menuknappen **Indstillinger**. Når du åbner menuen **Indstillinger**, vises en række valgmuligheder. Hvis du vælger **Indstillinger**, åbnes brugersiden **Indstillinger**. Der findes du fire indstillingsfaner: **Visuel**, **Indstillinger**, **Firma** og **Arbejdsgang**.
+I navigationspanelet finder du et tandhjulsbillede, der kaldes menuknappen **Indstillinger**. Når du åbner menuen **Indstillinger**, vises en række valgmuligheder. Hvis du vælger **Indstillinger**, åbnes brugersiden **Indstillinger**. Der kan finde fire faner med forskellige muligheder: 
 
--   **Visuel:** Bruges til at vælge et farvetema og standardstørrelsen på elementer på siderne.
--   **Indstillinger:** Her kan du angive standarder, for hver gang du åbner Finance and Operations, herunder firma, første side og standardtilstand for visning/redigering (der bestemmer, om en side er låst til visning eller åben til redigering, hver gang du åbner den). Du kan også finde sprog, tidszone og dato, klokkeslæt samt formatindstillinger for tal. Slutteligt indeholder denne side en række forskellige indstillinger, der varierer fra version til version.
--   **Firma:** Bruges til at angive dit bruger-id og andre firmarelaterede indstillinger.
--   **Arbejdsgang:** Dette er stedet, hvor du kan vælge indstillinger, der er relateret til arbejdsgangen.
+-   **Visuel** - Bruges til at vælge et farvetema og standardstørrelsen på elementer på siderne.
+-   **Indstillinger** - Her kan du angive standarder, for hver gang du åbner Finance and Operations, herunder firma, første side og standardtilstand for visning/redigering (der bestemmer, om en side er låst til visning eller åben til redigering, hver gang du åbner den). Du kan også finde sprog, tidszone og dato, klokkeslæt samt formatindstillinger for tal. Slutteligt indeholder denne side en række forskellige indstillinger, der varierer fra version til version.
+-   **Firma** - Bruges til at angive dit bruger-id og andre firmarelaterede indstillinger.
+-   **Arbejdsgang** - Dette er stedet, hvor du kan vælge indstillinger, der er relateret til arbejdsgangen.
 
 ## <a name="implicit-personalizations"></a>Implicitte tilpasninger
 Implicitte tilpasninger er de tilpasninger, som du udfører ved blot at interagere med visse kontrolelementer, som husker deres aktuelle tilstand for synlighed. 
 
-**Gitterkolonner:** Du kan justere bredden på en kolonne på en liste ved at markere størrelseslinjen til venstre eller højre for kolonneoverskriften og skubbe den mod venstre eller højre til den ønskede bredde. Finance and Operations gemmer den bredde, du ville have, og viser denne kolonne med den bredde, hver gang du åbner siden med den liste. 
+**Gitterkolonner** - Du kan justere bredden på en kolonne på en liste ved at markere størrelseslinjen til venstre eller højre for kolonneoverskriften og skubbe den mod venstre eller højre til den ønskede bredde. Finance and Operations gemmer den bredde, du ville have, og viser denne kolonne med den bredde, hver gang du åbner siden med den liste. 
 
-**Oversigtspaneler:** Nogle sider har udvidelige sektioner, der kaldes oversigtspaneler. Finance and Operations gemmer, hvilke oversigtspaneler du har udvidet, og hvilke oversigtspaneler du har skjult. Hver gang du vender tilbage til siden, bliver disse oversigtspaneler udvidet eller skjult baseret på sidste gang, du har brugte dem. I denne artikel gennemgår vi, hvordan du ændrer rækkefølgen af sektionerne i oversigtspanelet. I nogle tilfælde kan du ved at skjule et oversigtspanel forbedre ydeevnen, fordi Finance and Operations ikke behøver at hente oplysningerne for dette oversigtspanel, før oversigtspanelet er udvidet. 
+**Oversigtspaneler** - Nogle sider har udvidelige sektioner, der kaldes oversigtspaneler. Finance and Operations gemmer, hvilke oversigtspaneler du har udvidet, og hvilke oversigtspaneler du har skjult. Hver gang du vender tilbage til siden, bliver disse oversigtspaneler udvidet eller skjult baseret på sidste gang, du har brugte dem. I denne artikel gennemgår vi, hvordan du ændrer rækkefølgen af sektionerne i oversigtspanelet. I nogle tilfælde kan du ved at skjule et oversigtspanel forbedre ydeevnen, fordi Finance and Operations ikke behøver at hente oplysningerne for dette oversigtspanel, før oversigtspanelet er udvidet. 
 
-**Faktabokse:** Nogle sider har en sektion, der kaldes en rude med faktaboks. Denne rude indeholder skrivebeskyttede oplysninger, der er relateret til sidens aktuelle emne. Hver sektion i ruden Faktaboks kaldes en Faktaboks. Du kan udvide eller skjule en faktaboks, og Finance and Operations gemmer dine indstillinger. I nogle tilfælde kan du ved at skjule en faktaboks forbedre ydeevnen, fordi Finance and Operations ikke behøver at hente oplysningerne for denne faktaboks, før faktaboksen er udvidet.
+**Faktabokse** - Nogle sider har en sektion, der kaldes en rude med faktaboks. Denne rude indeholder skrivebeskyttede oplysninger, der er relateret til sidens aktuelle emne. Hver sektion i ruden Faktaboks kaldes en Faktaboks. Du kan udvide eller skjule en faktaboks, og Finance and Operations gemmer dine indstillinger. I nogle tilfælde kan du ved at skjule en faktaboks forbedre ydeevnen, fordi Finance and Operations ikke behøver at hente oplysningerne for denne faktaboks, før faktaboksen er udvidet.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Eksplicitte tilpasninger ved hjælp af værktøjslinjen Brugertilpasning
 Hver enkelt person og hvert enkelt firma har sit eget syn på, hvilke data der er vigtigst for dem, hvilke data der ikke er nødvendige for den måde, de driver deres forretning på. Muligheden for at tilpasse den måde, dine oplysninger er arrangeret på, interageret med eller endda skjult, er helt afgørende for at kunne gøre Finance and Operations til en personlig og produktiv oplevelse. 
@@ -107,15 +107,20 @@ Nogle arbejdsområder indeholder optællingsfelter (felter med tal på dem), som
 Dashboardet er ofte den første side, du ser, når du åbner Finance and Operations. Du kan tilpasse dashboardet for at omdøbe dit arbejdsområdes navigationsfelter, for kun at vise de felter, du gerne vil se, for at omdøbe felterne eller for at arrangere felterne i den rækkefølge, du foretrækker at se dem i. Hvis du vil tilpasse dashboardet, skal du vælge et felt og højreklikke på det for at åbne en genvejsmenu. Vælg **Tilpas** i genvejsmenuen. Hvis det valgte felter er, som du gerne vil skjule eller omdøbe eller overspringe, kan du foretage denne ændring direkte i det egenskabsvindue, der vises. Hvis du vil arrangere felterne, skal du vælge **Tilpas denne formular** i vinduet Egenskaber for at åbne værktøjslinjen Brugertilpasning. Du kan derefter bruge værktøjet Flyt til at arrangere felterne.
 
 ## <a name="administration-of-personalization"></a>Administration af brugertilpasning
-Når du har tilpasset en side, kan du dele dine tilpasninger med andre brugere. Du skal blot eksportere den tilpassede side. Derefter kan du bede de andre brugere gå til den tilpassede side og importere den tilpasningsfil, du har oprettet.
+Når du har tilpasset en side, kan du dele dine tilpasninger med andre brugere ved at eksportere den tilpassede side. Derefter kan du bede de andre brugere gå til den tilpassede side og importere den tilpasningsfil, du har oprettet.
 
-Brugere, der har administratorrettigheder, kan også administrere tilpasninger for andre brugere på siden **Brugertilpasning**. Denne side indeholder fire faner: **System**, **Brugere**, **Importér** og **Slet**.
+Brugere, der har administratorrettigheder, kan også administrere tilpasninger for andre brugere på siden **Brugertilpasning**. Denne side indeholder fire faner: 
 
 - **System:** Du kan midlertidigt deaktivere eller slå alle tilpasninger i systemet fra. Når du gør det, sletter du ikke tilpasninger. I stedet skal du nulstille alle sider til standardtilstanden. Hvis du senere aktiverer tilpasningen igen, anvendes alle tilpasninger igen på hver enkelt brugers sider. Du kan også slette alle tilpasninger for alle brugere. Bemærk, at når du sletter brugertilpasninger, er der ingen mulighed for automatisk at aktivere brugertilpasninger igen fra systemet. Før du udfører dette trin, skal du derfor kontrollere, at du har eksporteret alle brugertilpasninger, som du eventuelt vil importere senere.
 - **Brugere** – Du kan angive, om den enkelte bruger kan foretage implicit tilpasning eller eksplicit tilpasning. Du kan også angive, om hver bruger kan foretage implicitte eller eksplicitte tilpasninger på en bestemt side. Endelig kan du importere, eksportere eller slette en brugertilpasning for hver bruger.
 - **Importér** – Du kan importere en tilpasning for en eller flere brugere. Du kan bruge denne fane, når du har oprettet en tilpasning på en side eller et arbejdsområde og derefter har eksporteret denne brugertilpasning som en tilpasningsfil. For at importere tilpasningsfilen og knytte den til en eller flere brugere skal du vælge individuelle brugere på listen over alle brugere eller filtrere efter en bestemt rolle og derefter vælge brugerne i denne rolle. Når du har valgt de brugere, der skal bruge din tilpasning, skal du klikke på **Importér** og vælge tilpasningsfilen. Tilpasningen valideres og anvendes på alle de markerede brugere, næste gang de åbner den valgte side.
 - **Slet** – Du kan slette tilpasninger af sider eller arbejdsområder for en eller flere brugere. Først skal du markere den side eller det arbejdsområde, hvor tilpasningerne skal slettes. Derefter skal du vælge de individuelle brugere på listen over alle brugere eller filtrere efter en bestemt rolle og derefter vælge brugere i denne rolle. Når du har valgt både en side eller et arbejdsområde og brugere, skal du klikke på **Slet**. Alle tilpasninger, som de markerede brugere har anvendt på den valgte side eller det valgte arbejdsområde, slettes. Denne handling kan ikke fortrydes. Hvis der er en gemt tilpasning på siden eller i arbejdsområdet, kan denne tilpasning dog importeres igen.
 
+## <a name="personalization-of-inventory-dimensions"></a>Tilpasning af lagerdimensioner
 
+Når du tilpasser opsætningen af lagerdimensioner på en side, skal du overveje de indstillinger, der er oprettet ved hjælp af indstillingen **Vis dimension**. F.eks. hvis du benytter tilpasning for at skjule en kolonne for batchnummer-lagerdimensionen, og kolonnen vises, næste gang siden åbnes, kan det skyldes, at indstillingerne for dimensionsvisning styrer, hvilke lagerdimensionskolonner der vises. 
 
+Indstillingerne for dimensionsvisning gælder på tværs af alle sider, og disse indstillinger tilsidesætter den tilpassede opsætning af lagerdimensionsfelter på individuelle sider. 
+
+I eksemplet med batchnummer-lagerdimensionen, skal denne dimension fjernes som en del af indstillingen **Vis dimensioner** for tabellen, hvis denne kolonne ikke skal vises. Denne ændring vil desuden gælde ikke kun for en bestemt side, men på tværs af alle sider.
 

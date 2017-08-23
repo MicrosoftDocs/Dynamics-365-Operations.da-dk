@@ -1,9 +1,9 @@
 ---
 title: "Budgetplanlægningsskabeloner til Excel"
 description: I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: da-dk
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ I dette emne kan du se, hvordan du opretter Excel-skabeloner, der skal bruges me
 
 Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. Hvert layout kan have en tilknyttet skabelon til et budgetplandokument for at få vist og redigere budgetplandata i et Excel-regneark. I dette emne vil der blive genereret en skabelon til et budgetplandokument ved hjælp af en eksisterende layoutkonfiguration. 
 
-Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). Klik på **Ny** for at oprette et nyt budgetplandokument. 
+1. Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). 
+2. Klik på **Ny** for at oprette et nyt budgetplandokument. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Brug indstillingen på linjen **Tilføj** for at tilføje linjer. Klik på **Layout** for at få vist konfigurationen af dokumentlayout til budgetplan. 
+3. Brug indstillingen på linjen **Tilføj** for at tilføje linjer. Klik på **Layout** for at få vist konfigurationen af dokumentlayout til budgetplan. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Budgetplantilføjelse](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan gennemgå layoutkonfigurationen og justere den efter behov. Gå til **Skabelon** &gt; **Generer** for at oprette en Excel-fil for dette layout. Når skabelonen er oprettet, kan du gå til **Skabelon** &gt; **Vis** for at åbne og gennemse skabelonen til budgetplandokumentet. Du kan gemme Excel-filen til den lokale harddisk. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Du kan gennemgå layoutkonfigurationen og justere den efter behov. 
+1. Gå til **Skabelon** &gt; **Generer** for at oprette en Excel-fil for dette layout. 
+2. Når skabelonen er oprettet, kan du gå til **Skabelon** &gt; **Vis** for at åbne og gennemse skabelonen til budgetplandokumentet. Du kan gemme Excel-filen til den lokale harddisk. 
+
+[![Gem som](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Dokumentlayout til budgetplaner kan ikke redigeres, når der er knyttet en Excel-skabelon til det. Hvis du vil ændre layoutet, skal du slette den tilknyttede Excel-skabelonfil og oprette den igen. Dette er påkrævet for at holde felterne i layoutet og regnearket synkroniseret. 
 
 Excel-skabelonen indeholder alle elementerne fra dokumentlayoutet til budgetplanen, hvor kolonnen **Tilgængelig i regneark** er indstillet til Sand. Overlappende elementer er ikke tilladt i Excel-skabelonen. For eksempel hvis layoutet indeholder kolonner med anmodningen Første kvartal, anmodningen Andet kvartal, anmodningen Tredje kvartal og anmodningen Fjerde kvartal, og en kolonne med alle anmodninger, der repræsenterer summen af alle 4 kvartalsvise kolonner, er kun de kvartalsvise kolonner eller kolonnen med alle anmodninger tilgængelig og kan bruges i Excel-skabelonen. Excel-filen kan ikke opdatere overlappende kolonner under opdateringen, fordi dataene i tabellen bliver forældede og upræcise.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Eksempel](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > For at undgå potentielle problemer med visning og redigering af budgetplandata ved hjælp af Excel skal den samme bruger være logget på både Microsoft Dynamics 365 for Finance and Operations, Enterprise edition og Microsoft Dynamics Office-tilføjelsesprogrammet Dataconnector.
