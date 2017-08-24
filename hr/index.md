@@ -15,14 +15,13 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: ed80e59579c2356cc3c1e0f13b33026284867a2c
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -54,12 +53,15 @@ Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organi
 -   [Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
 -   [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
 -   [Oprette personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
+-   [Ofte stillede spørgsmål til personalehandlinger](personnel-actions-faq.md)
+-   [Oversigt over orlov og fravær](leave-absence-overview.md)
 
-## <a name="retain-and-motivate-employees"></a>Belønne og motivere medarbejdere
+## <a name="retain-and-motivate-employees"></a>Fastholde og motivere medarbejdere
 
 Du kan oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne plan.
 
 -   [Kompensationsplaner](compensation-plans.md)
+-   [Proceskompensation](process-compensation.md)
 -   [Oprette planer for fast kompensation](create-fixed-compensation-plans.md)
 -   [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
 

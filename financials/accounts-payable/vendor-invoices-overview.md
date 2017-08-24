@@ -1,9 +1,9 @@
 ---
 title: Oversigt over kreditorfakturaer
 description: "Denne artikel indeholder generelle oplysninger om kreditorfakturaer. Kreditorfakturaer er anmodninger om betaling for produkter og tjenester, der er modtaget. Kreditorfakturaer kan repræsentere en regning for løbende ydelser, eller de kan være baseret på indkøbsordrer for specifikke varer og tjenester."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 16ff8ebb0e620f45c4d290ee5076d5505abf3436
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 4c27b5a8ab1a7aeab31b48937dcaf4a86d798689
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -52,7 +51,7 @@ Den følgende diskussion indeholder flere oplysninger om, hvordan du kan bruge s
 ## <a name="understanding-invoice-line-quantities"></a>Sådan skal du forstå fakturalinjeantal
 Når du åbner en kreditorfaktura fra en relateret indkøbsordre, oprettes der fakturalinjer fra indkøbsordren. Mængderne tages som standard fra antallet på produktkvitteringen. Du kan dog bruge en eller flere af følgende standardfunktionsmåder:
 
--   **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Standardværdien i feltet **Antal** stammer fra feltet **Modtag nu-**antal på indkøbsordren.
+-   **Modtagelse nu-antal** – Brug denne indstilling til delleverancer. Standardværdien i feltet **Antal** stammer fra feltet **Modtag nu-** antal på indkøbsordren.
 -   **Bestilt antal** – Brug denne indstilling til fuldførte forsendelser. Standardværdien i feltet **Antal** stammer fra feltet **Bestilt** antal på indkøbsordren.
 -   **Registreret antal** – Brug denne indstilling, hvis varen kræver registrering, som angivet på siden **Varemodelgrupper**. Standardværdien i feltet **Antal** er det fysisk opdaterede antal, der er registreret.
 -   **Antal produktkvitteringer** – Brug denne indstilling, hvis der allerede er modtaget en produktkvittering for ordren. Standardværdien i feltet **Antal** stammer fra det samlede antal tilgængelige produktkvitteringer.
@@ -75,11 +74,23 @@ Når du bogfører fakturaen, opdateres antallet for **Fakturarestmængde** for d
 
 Denne indstilling antager, at der er bogført mindst én produktkvittering for indkøbsordren. Kreditorfakturaen er baseret på disse produktkvitteringer og afspejler antallene i dem. De økonomiske oplysninger til fakturaen er baseret på de oplysninger, der angives, når du bogfører fakturaen.
 
+Du kan finde flere oplysninger under [Registrere kreditorfaktura og sammenligne med modtaget antal](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+
 ## <a name="working-with-multiple-invoices"></a>Arbejde med flere fakturaer
 
 Du kan arbejde med flere fakturaer samtidig og bogføre dem alle på én gang. Hvis du skal oprette flere fakturaer, skal du bruge siden **Afventende kreditorfakturaer**. Hvis du skal bogføre og udskrive flere kreditorfakturaer, skal du bruge siden fakturagodkendelseskladde. Hvis du bruger fakturagodkendelseskladden, skal mindst én produktkvittering bogføres for indkøbsordren, og der skal bogføres en faktura for indkøbsordren i en indgangsbog. De økonomiske oplysninger for fakturaen stammer fra den faktura, der blev bogført i indgangsbogen.
 
 
+Du kan få flere oplysninger på:
 
+ - [Konfigurere politikker for kreditorfakturaer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
+
+ - [Indtaste fakturadata under kreditorer ved hjælp af en kreditorfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+ 
+ - [Indtaste fakturadata under kreditorer ved hjælp af en godkendelseskladde](tasks/key-invoice-data-into-ap-system-approval-journal.md)
+  
+ - [Indtaste fakturadata i kreditorsystemet ved hjælp af en fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
+ 
+ - [Registrere en kreditorfaktura i fakturakladden](tasks/record-vendor-invoice-invoice-journal.md)
 
 

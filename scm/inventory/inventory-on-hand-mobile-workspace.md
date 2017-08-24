@@ -18,12 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
-ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 6e062ffa459b7d008fc5d24f27538f8df04d7e82
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -116,7 +115,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 1.  På din mobilenhed skal du vælge arbejdsområdet **Disponibel lagerbeholdning**.
 
-2.  Vælg **Kontrollér disponibel lagerbeholdning for en vare**. Der vises en liste over de produkter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+2.  Vælg **Kontrollér disponibel lagerbeholdning for en vare**. Der vises en liste over de produkter, der er indlæst i din app til offlinebrug. 50 varer er indlæst som standard, men en udvikler kan ændre dette tal. Udviklere kan finde flere oplysninger under [Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 3.  Vælg **Søg efter flere**, hvis varen ikke er på listen. Søg efter produktnummer, eller skift til en søgning efter produktnavn.
 
 4.  Vælg et produkt. Hvis varen har et billede, vises billedet.

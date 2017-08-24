@@ -1,9 +1,9 @@
 ---
 title: Oprette en debitorfaktura
 description: 
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
-ms.author: mfalkner
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fd89921a97782c4d09807a730ab077809304159f
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 249b1f331d6889d3b9ed2ace2e5db21d7a5d3e46
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,11 +30,20 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-
-
-En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. 
+En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. Du kan finde flere oplysninger i [Oprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
 
 En **fritekstfaktura** er ikke knyttet til en salgsordre. Den indeholder ordrelinjer, der omfatter finanskonti, fritekstbeskrivelser og et salgsbeløb, som du selv angiver. Du kan ikke angive et varenummer på en faktura af denne type. Du skal angive de relevante oplysninger om moms. Der er angivet en hovedkonto for salget på hver fakturalinje, som du kan fordele på flere forskellige finanskonti ved at klikke på **Distribuer beløb** på siden **Fritekstfaktura**. Derudover bogføres debitorsaldoen på samlekontoen fra den posteringsprofil, der bruges til fritekstfakturaen.
+
+Du kan få flere oplysninger på:
+
+[Oprette en fritekstfaktura](tasks/create-free-text-invoice.md)
+
+[Oprette en fritekstskabelon](tasks/create-free-text-invoice-template.md)
+
+[Tildele en skabelon til fritekstfakturaer til en debitor](tasks/assign-free-text-invoice-template-customer.md)
+
+[Generere og bogføre tilbagevendende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
+
 
 En **proformafaktura** er en faktura, der udarbejdes som et estimat over det faktiske fakturabeløb, før fakturaen bogføres. Du kan udskrive en proformafaktura for en debitorfaktura for en salgsordre eller for en fritekstfaktura.
 

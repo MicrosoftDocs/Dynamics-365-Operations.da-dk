@@ -1,9 +1,9 @@
 ---
 title: Konfigurere kreditorer
 description: "I denne artikel beskrives de sider, som du kan bruge til at konfigurere grundlæggende og valgfri funktioner for Kreditor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Der beskrives også de installationstrin, du skal fuldføre, før du begynder at konfigurere Kreditor."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Inden du kan konfigurere kreditorer, skal du fuldføre følgende konfiguration:
 ## <a name="setup-pages-for-accounts-payable"></a>Opsætning af sider for kreditor
 
 Du kan bruge følgende sider til at konfigurere de grundlæggende funktioner i Kreditor for hver juridisk enhed. De viste sider vises i den rækkefølge, som det anbefales at konfigurere dem i. Du kan gøre konfigureringsprocessen nemmere ved at oprette skabeloner fra de første poster, du opretter. I en skabelon bliver der typisk indtastet værdier i mange felter for at afspejle de egenskaber, som organisationen ønsker at anvende for en bestemt type kreditor.
-1.  På siden Betalingsbetingelser skal du definere de betalingsbetingelser, du knytter til salgsordrer, indkøbsordrer, debitorer og kreditorer, og som bestemmer forfaldsdatoer for fakturaer.
+1.  På siden Betalingsbetingelser skal du definere de betalingsbetingelser, du knytter til salgsordrer, indkøbsordrer, debitorer og kreditorer, og som bestemmer forfaldsdatoer for fakturaer. Du kan finde flere oplysninger under [Definere kreditorbetalingsgebyrer](tasks/define-vendor-payment-fees.md).
 2.  På siden Betalingsmåder – kreditorer skal du oprette og vedligeholde oplysninger om, hvordan organisationen betaler sine kreditorer.
 3.  På siden Kreditorgruppe skal du oprette og vedligeholde grupper af kreditorer, der deler vigtige parametre for bogføring, udligning og betaling, rapportering og budgettering.
 4.  På siden Kreditorposteringsprofiler skal du definere, hvordan kreditorposter bogføres i finansmodulet.

@@ -1,9 +1,9 @@
 ---
 title: Mobilfakturagodkendelser
 description: Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder i Dynamics 365 for Finance and Operations via en brugssag om godkendelser af kreditorfakturaer til mobilenheder.
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,14 +14,14 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
-ms.author: sunilg
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -37,7 +37,7 @@ Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations, E
 
 | Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og Microsoft Dynamics for Operations platformsopdatering 3 (november 2016)                   |
 | Installer hotfix-KB 3204341.                                                                              | Arbejdsrutineoptager kan fejlagtigt optage to Luk-kommandoer til rullelistedialogbokse. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering) |
 | Installer hotfix-KB 3207800.                                                                              | Dette hotfix gør det muligt at se vedhæftede filer på mobilklienten. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering).           |
@@ -176,7 +176,7 @@ Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge si
 1.  I URL-adressen til Finance and Operations skal du erstatte navnet på menupunktet med **VendMobileInvoiceHeaderDetails** for at åbne formen
 2.  Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
 3.  Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
-4.  Vælg siden **Mine kreditorfakturaer **, som du oprettede tidligere, og klik derefter på **Rediger**.
+4.  Vælg siden **Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger**.
 5.  Under fanen **Felter** skal du klikke på kolonneoverskriften **Gitter**.
 6.  Klik på **Egenskaber** &gt; **Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
 7.  Angiv en sidetitel, f.eks. **Fakturadetaljer** og en beskrivelse som **Vis fakturahoved og linjedetaljer**.

@@ -3,7 +3,7 @@ title: Konfigurere en manuel opgave i en arbejdsgang
 description: I dette emne forklares det, hvordan du konfigurerer egenskaberne for en manuel opgave.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Hvis en bruger ikke færdiggør den manuelle opgave inden for den tildelte tid, 
 
 1.  Klik på **Eskalering** i venstre rude.
 2.  Markér afkrydsningsfeltet **Brug eskaleringssti** for at oprette en eskaleringssti. De brugere, der er angivet i eskaleringsstien, tildeles automatisk opgaven. Følgende tabel repræsenterer f.eks. en eskaleringssti.
+
     | Forløb | Eskaleringssti      |
     |----------|----------------------|
     | 1        | Knyt til: Anna     |
@@ -318,7 +319,9 @@ Du kan sende beskeder til personer, når en manuel opgave er delegeret videre, e
 8.  Gentag trin 3 til 7 for hver af de hændelser, du har valgt i trin 2.
 
 ## <a name="set-a-time-limit"></a>Angive en tidsgrænse
-Udfør følgende trin, hvis den manuelle opgave skal fuldføres inden en bestemt tidsgrænse. **Bemærk!** De indstillinger, du vælger i denne procedure, overskriver de indstillinger, du har valgt i områderne **Tildeling** og **Eskalering** på siden.
+Udfør følgende trin, hvis den manuelle opgave skal fuldføres inden en bestemt tidsgrænse. 
+
+**Bemærk!** De indstillinger, du vælger i denne procedure, overskriver de indstillinger, du har valgt i områderne **Tildeling** og **Eskalering** på siden.
 
 1.  Klik på **Avancerede indstillinger** i venstre rude.
 2.  Markér afkrydsningsfeltet **Angiv en tidsgrænse for arbejdsgangselementet**

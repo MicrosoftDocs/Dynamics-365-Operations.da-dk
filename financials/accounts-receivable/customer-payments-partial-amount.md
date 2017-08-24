@@ -1,9 +1,9 @@
 ---
 title: "Debitorbetalinger af et delvist beløb"
 description: "Kunder vil nogle gange indbetale et beløb, der er mindre end beløbet på en faktura. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -52,14 +51,14 @@ Du tilbyder f.eks. en kasserabat på 2 %, hvis fakturaen betales inden for 10 da
 ## <a name="credit-notes-with-discounts"></a>Kreditnotaer med rabat
 Hvis kunder returnerer nogle af varerne på en faktura, kan du eventuelt udstede en kreditnota. Hvis en kasserabat blev medtaget på den oprindelige faktura, bør kreditnotaen til kunden være netto for kasserabatten, kunden fik. Hvis indstillingen **Beregn kasserabatter for kreditnotaer** er angivet til **Ja** på siden **Debitorparametre**, beregnes rabatten automatisk for kreditnotaen. 
 
-Du tilbød f.eks. betalingsbetingelser, der specificerer en rabat på 2 %, hvis fakturaen betales inden for 10 dage efter, at den er udstedt. En faktura på 100,00 er bogført, og kunden fik en kasserabat. Hvis kunden returnerer varerne, og du udsteder en kreditnota, kan du indtaste kreditnotaen på -100.00. Når du ser en kreditnota på siden **Udlign åbne posteringer**, vises**98,00** i feltet **Beløb, der skal udlignes**, og **-2.00** vises i feltet **Kasserabatbeløb**. Rabatbeløbet bogføres på en kasserabatkonto.
+Du tilbød f.eks. betalingsbetingelser, der specificerer en rabat på 2 %, hvis fakturaen betales inden for 10 dage efter, at den er udstedt. En faktura på 100,00 er bogført, og kunden fik en kasserabat. Hvis kunden returnerer varerne, og du udsteder en kreditnota, kan du indtaste kreditnotaen på -100.00. Når du ser en kreditnota på siden **Udlign åbne posteringer**, vises **98,00** i feltet **Beløb, der skal udlignes**, og **-2.00** vises i feltet **Kasserabatbeløb**. Rabatbeløbet bogføres på en kasserabatkonto.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Overbetaling/underbetalingsbeløb
-Når kunderne foretager en betaling, kan der være et meget lille beløb, der skal stadig udlignes. Du fakturerer f.eks. kunden for 1.000,00, og kunden betaler 999,90. Hvis det resterende beløb er mindre end det beløb, der er angiver for over- eller underbetalinger på siden**Debitorparametre**, bogføres differencen automatisk på en overbetalings/underbetalingsfinanskonto.
+Når kunderne foretager en betaling, kan der være et meget lille beløb, der skal stadig udlignes. Du fakturerer f.eks. kunden for 1.000,00, og kunden betaler 999,90. Hvis det resterende beløb er mindre end det beløb, der er angiver for over- eller underbetalinger på siden **Debitorparametre**, bogføres differencen automatisk på en overbetalings/underbetalingsfinanskonto.
 
 ## <a name="full-settlement"></a>Fuld udligning
 Kunder kan foretage en delvis betaling, hvor det resterende beløb ikke betales, men er større end det underbetalingsbeløb,, der er angivet på siden **konto Kreditorparametre**. Hvis du vil markere fakturaen som fuldt udlignet, kan du bruge indstillingen **Fuld udligning** på siden **Udlign transaktioner**. (Du kan aktivere funktionen Fuld udligning ved hjælp af en konfigurationsnøgle.) En faktura er f.eks. bogført en faktura på 1.000,00, og kunden foretager en betaling på 990,00. Du har aftalt, at kunden ikke skal betale de resterende 10,00. Når du har markeret fakturaen til udligning, du kan også markere **Fuld udligning**. Fakturaen vil derefter blive betragtet som fuldt udlignet. Differencen på 10,00 bogføres på en kasserabatkonto som et ekstra kasserabatbeløb.
 
 
-
+Du kan finde flere oplysninger i [Deponere debitorbetalinger](tasks/deposit-customer-payments.md).
 

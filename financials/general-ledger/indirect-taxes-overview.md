@@ -3,7 +3,7 @@ title: Momsoversigt
 description: Denne artikel indeholder en oversigt over momssystemet. Det forklarer elementerne i moms, og hvordan de fungerer sammen.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ I følgende diagram vises enheder på opsætning af skat, og hvordan de er relat
 
 For hver type moms, en virksomhed skal redegøre for, skal der defineres en momskode. En momskode gemmer afgiftssatser og reglerne for beregning af moms. 
 
-Hver momskode skal være knyttet til en momsafregningsperiode. Momsafregningsperioder definerer de intervaller, hvorved moms skal rapporteres og betales til momsmyndighederne. Hver momsafregningsperiode skal være knyttet til en momsmyndighed. En momsmyndighed repræsenterer den enhed, som moms rapporteres og betales til. Den definerer også momsrapportens layout. Skattemyndighederne kan være relateret til kreditorkonti. 
+Hver momskode skal være knyttet til en momsafregningsperiode. Momsafregningsperioder definerer de intervaller, hvorved moms skal rapporteres og betales til momsmyndighederne. Hver momsafregningsperiode skal være knyttet til en momsmyndighed. En momsmyndighed repræsenterer den enhed, som moms rapporteres og betales til. Den definerer også momsrapportens layout. Skattemyndighederne kan være relateret til kreditorkonti. Du kan finde flere oplysninger i [Konfigurere momsafregningsperioder](tasks/set-up-sales-tax-settlement-periods.md).
 
 Hver momskode skal også være knyttet til en finanskonteringsgruppe. En finanskonteringsgruppe angiver de hovedkonti, som beløb for momskoderne bogføres til. 
 
@@ -60,13 +59,13 @@ I følgende tabel beskrives enheder og sekvensen for opsætningen af skat.
 | Opsætningsopgave                                                  | Krævet/Valgfri og beskrivelse                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opret hovedkonti.                                           | Påkrævet. Før du kan konfigurere momsfunktionen, skal de hovedkonti, firmaet bruger til at betale og registrere skatter, være oprettet.                                                                                                                                                                             |
-| Oprette finanskonteringsgrupper til moms.                     | Påkrævet. Finanskonteringsgrupperne definerer hovedkontiene for registrering og betaling af moms.                                                                                                                                                                                                                            |
-| Opret momsmyndigheder.                                   | Påkrævet. Momsmyndighederne er de enheder, som moms skal rapporteres og betales til.                                                                                                                                                                                                                                   |
+| Oprette finanskonteringsgrupper til moms.                     | Påkrævet. Finanskonteringsgrupperne definerer hovedkontiene for registrering og betaling af moms.   Du kan finde flere oplysninger i [Oprette finanskonteringsgrupper til moms](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Opret momsmyndigheder.                                   | Påkrævet. Momsmyndighederne er de enheder, som moms skal rapporteres og betales til.    Du kan finde flere oplysninger i [Opsætte momsmyndigheder](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Opret momsafregningsperioder.                            | Påkrævet. Momsafregningsperioder indeholder oplysninger om, hvornår og hvor ofte momsen skal rapporteres og betales. De er relateret til en momsmyndighed.                                                                                                                                                       |
-| Konfigurer momsrapporteringskoder.                               | Valgfrit. Momsrapporteringskoder kan tildeles til momskoder til rapportbeløbene for flere momskoder i én momsrapporteringskode.                                                                                                                                                                 |
-| Opret momskoder.                                         | Påkrævet. Momskoder indeholder afgiftssatserne og reglerne for beregning af hver type moms. Momskoder er relateret til en momsudligningsperiode og en finanskonteringsgruppe.                                                                                                                                        |
+| Konfigurer momsrapporteringskoder.                               | Valgfrit. Momsrapporteringskoder kan tildeles til momskoder til rapportbeløbene for flere momskoder i én momsrapporteringskode. Du kan finde flere oplysninger i [Konfigurere momsrapporteringskoder](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Opret momskoder.                                         | Påkrævet. Momskoder indeholder afgiftssatserne og reglerne for beregning af hver type moms. Momskoder er relateret til en momsudligningsperiode og en finanskonteringsgruppe. Du kan finde flere oplysninger i [Konfigurere momskoder](tasks/set-up-sales-tax-codes.md).                                |
 | Konfigurer momsgrupper.                                        | Påkrævet. Momsgrupper indeholder en liste over de salgskoder, der gælder for parten (debitor eller kreditor) for en transaktion. For en bestemt transaktion vil skæringspunktet mellem momskoden i momsgruppen og varemomsgruppen fastlægge de momskoder, der skal anvendes i den pågældende transaktion.                  |
-| Konfigurer varemomsgrupper.                                   | Påkrævet. Varemomsgrupper indeholder en liste over de salgskoder, der gælder for ressourcen (produkt, service osv.) af en transaktion. For en bestemt transaktion vil skæringspunktet mellem momskoden i momsgruppen og varemomsgruppen fastlægge de momskoder, der skal anvendes i den pågældende transaktion. |
+| Konfigurer varemomsgrupper.                                   | Påkrævet. Varemomsgrupper indeholder en liste over de salgskoder, der gælder for ressourcen (produkt, service osv.) af en transaktion. For en bestemt transaktion vil skæringspunktet mellem momskoden i momsgruppen og varemomsgruppen fastlægge de momskoder, der skal anvendes i den pågældende transaktion. Du kan finde flere oplysninger under [Konfigurere momsgrupper og varemomsgrupper](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Konfigurer parametre for moms på siderne med programparametre. | Påkrævet. Forskellige områder som Finans, debitor og kreditor skal angive parametre for korrekt beregning af de indirekte skatter. Selvom de fleste af disse parametre har standardværdier, skal de ændres for at tilpasses hver enkelt virksomheds krav.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Moms på transaktioner
@@ -98,5 +97,5 @@ Normalt skal du afregne og betale 2.500 til skattemyndighederne, når fakturaen 
 Hvis du imidlertid bruger en betinget moms, afregner du med skattemyndighederne, når du modtager betalingen fra debitor den 30. juli.
 
 
-
+Du kan finde flere oplysninger i [Konfigurere A-skat](tasks/set-up-withholding-tax.md).
 

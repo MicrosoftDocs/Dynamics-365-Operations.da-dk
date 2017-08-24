@@ -3,7 +3,7 @@ title: Kreditorbetalinger i den offentlige sektor
 description: "I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,12 +19,11 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 855eb8777b50fb610b90c37a10e37062a3c4bdfe
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 291b89bfa4d2845d55abc8ab1503c94f94cc108b
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -105,7 +104,17 @@ Når du opretter for- og signatursider til en betalingsrapport, kan du angive de
 Du kan få vist linjebeløb for en indkøbsordre. Disse beløb omfatter det samlede bestilte beløb, og eventuelle beløb, der er modtaget eller faktureret. Du kan også få vist beløb, der stadig skal faktureres, eller beløb for fakturaer, der afventer. Tip! Du kan f.eks. få vist en indkøbsordrelinje med indkøb, der er bogført på to finanskonti. Den ene finanskonto er beregnet til varer, der er bestilt hos en leverandør af kontormøbler. Den anden finanskonto er beregnet til kontorartikler. Ordreantallet er lig med summen af fakturerede antal, antallet på ventende fakturaer og antal, der ikke er faktureret endnu. Det modtagne antal er den del af ordreantallet, der er modtaget fra kreditor.
 
 
+Du kan finde flere oplysninger under følgende emner:
 
+[[Tilføje en certificeringstype til en leverandør](tasks/add-certification-type-vendor-public-sector.md)
 
+[Styre adgangen til købsaftaler](tasks/control-access-purchase-agreements-public-sector.md)
 
+[Opret en engangskreditor og -faktura](tasks/create-one-time-vendor-invoice-public-sector.md)
+
+[Oprette en kreditorcertificeringstype](tasks/create-vendor-certification-type-public-sector.md)
+
+[Importere og oprette flere engangskreditorer og fakturaer](tasks/import-multiple-one-time-vendors.md)
+
+[Konfigurer købsaftaleklassifikationer](tasks/set-up-purchase-agreement-classifications-public-sector.md)
 

@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -32,9 +32,9 @@ ms.lasthandoff: 07/27/2017
 Denne artikel indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation. 
 
 > [!NOTE] 
-> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Enterprise edition, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til ét produkt, kan gælde for den samme funktionalitet i et relateret produkt.
+> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Enterprise edition, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
-Hjælp-systemet er fælles for alle Unified Operations-produkter:
+Hjælp-systemet er fælles for følgende produkter:
 - Dynamics 365 for Finance and Operations, Enterprise edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -51,7 +51,7 @@ Du kan få adgang til både emner i Hjælp og opgaveguider fra ruden hjælp i de
 I dette emne beskrives hjælpesystemet, og hvordan du kan oprette brugerdefineret dokumentation og undervisningsressourcer til din virksomhed.
 
 > [!IMPORTANT]
-> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbejder aktuelt på at aktivere denne funktion i en senere version. Opgaveguiderne i oplevelsen Introduktion i Talent forbliver tilgængelig og dækker de grundlæggende funktioner. Automatiseret hjælp er også tilgængelig på webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) for både Retail og Talent.
+> Fanen **Opgaveguider** er i øjeblikket ikke tilgængelig i Microsoft Dynamics 365 for Talent og Microsoft Dynamics 365 for Retail. Vi arbejder aktuelt på at aktivere denne funktion i en senere version. Opgaveguiderne i oplevelsen Introduktion i Talent forbliver tilgængelig og dækker de grundlæggende funktioner. Automatiseret hjælp er også tilgængelig på webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index) for både Retail og Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjælp til docs.microsoft.com
 
@@ -73,7 +73,7 @@ Du kan også finde indholdet med en søgemaskine. For at få de bedste resultate
 
 ![Resultater af webstedssøgning](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-indholdsfortegnelsen for Unified operationer
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-indholdsfortegnelsen
 Alle produkter deler en enkelt indholdsfortegnelse på webstedet Docs, så kunderne kan se, hvilken sammenhæng det pågældende emne indgår i. Det gør det også muligt at bruge Filter-kontrolelementet til at søge efter emner.
 
 ### <a name="how-can-i-contribute"></a>Hvordan kan jeg bidrage? 
@@ -101,7 +101,7 @@ Angiv en mailadresse og en ny adgangskode til at oprette en ny konto til websted
 ## <a name="task-guides"></a>Opgaveguider
 En opgaveguide er en kontrolleret, automatiseret, interaktiv oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan åbne (afspille) en opgaveguide fra ruden Hjælp. Når du først klikker på en opgaveguide, viser ruden Hjælp de trinvise instruktioner til opgaven. Der er nu lokaliserede opgaveguider. 
 
-V leverer forskellige sæt opgaveguide for hvert Unified Operations-produkt. I afsnittet Adgang til opgaveguider fra ruden Hjælp beskrives, hvordan du finder de korrekte opgaveguider til produktet. 
+Vi leverer forskellige sæt af opgaveguider til hvert produkt, som f.eks. Dynamics 365 for Retail, Dynamics 365 for Finance and Operations eller Dynamics 365 for Talent. I afsnittet Adgang til opgaveguider fra ruden Hjælp beskrives, hvordan du finder de korrekte opgaveguider til produktet. 
 
 ![Opgaveguidens læsevisning](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Oversatte opgaveguider udgives i biblioteker med "Alle sprog" i titlen. Når du 
 -   Hvis en opgaveguide ikke er blevet oversat, er det kun noget af teksten (tekst i kontrolelementerne), der vises på det valgte sprog, når du åbner guiden.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-Følgende tabel viser en liste over websteder, der leverer indhold til Unified Operations. Vores indholdswebsteder er organiseret til at understøtte kundens livscyklus. Hver fase er understøttet af en række forskellige websteder. Websteder, der har en stjerne (\*) ud for navnet, kræver, at du logger på med en konto, der er tilknyttet en serviceplan.
+Følgende tabel viser vores websteder. Vores indholdswebsteder er organiseret til at understøtte kundens livscyklus. Hver fase er understøttet af en række forskellige websteder. Websteder, der har en stjerne (\*) ud for navnet, kræver, at du logger på med en konto, der er tilknyttet en serviceplan.
 
 | Sted                                                                     | Betegnelse                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

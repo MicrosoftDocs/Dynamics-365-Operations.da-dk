@@ -1,9 +1,9 @@
 ---
-title: "Tilgængeligt Power BI-indhold"
+title: Power BI-indhold
 description: "Dette emne beskriver det Power BI-indhold, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om det."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,17 +15,17 @@ ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
+ms.sourcegitcommit: 0574c8c1164ef54095135bd9b3f2a946320f8996
+ms.openlocfilehash: f6401406981abc3252b7247510e80f12f2c4510d
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
-# <a name="power-bi-content-available"></a>Tilgængeligt Power BI-indhold
+# <a name="power-bi-content"></a>Power BI-indhold
 [!include[banner](../includes/banner.md)]
 
 
@@ -34,6 +34,7 @@ Dette emne beskriver det Microsoft Power BI-indhold, der er tilgængeligt, og he
 ## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Opdatering fra juli 2017 til Power BI-indhold til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 Hvis du bruger opdateringen til Microsoft Dynamics 365 for Finans and Operations, Enterprise edition fra juli 2017 er følgende Power BI-indhold tilgængeligt:
 
+- [Power BI-indhold til Faktisk vs. budget](ledger-budgets-power-bi.md)
 - [Power BI-indhold for frynsegoder](benefits-power-bi.md)
 - [Power BI-indhold for oversigt over kontanter](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Power BI-indhold for regnskabsdirektørens oversigt](CFO-power-bi.md)

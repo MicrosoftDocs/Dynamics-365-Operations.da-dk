@@ -1,0 +1,60 @@
+--- 
+title: Tilmelde og fjerne frynsegoder fra arbejdere
+description: "Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller flere frynsegoder, og hvordan flere arbejdere kan være tilmeldt et frynsegode."
+author: kherr75
+manager: AnnBe
+ms.date: 02/12/2016
+ms.topic: business-process
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.reviewer: rschloma
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: kherr
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
+ms.openlocfilehash: 146d62fef0da482d141276ddd2c73c43e7d29e46
+ms.contentlocale: da-dk
+ms.lasthandoff: 07/28/2017
+
+---
+# <a name="enroll-and-remove-benefits-from-workers"></a>Tilmelde og fjerne frynsegoder fra arbejdere
+
+[!include[task guide banner](../../includes/task-guide-banner.md)]
+
+Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller flere frynsegoder, og hvordan flere arbejdere kan være tilmeldt et frynsegode. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+
+
+## <a name="enroll-a-single-worker-in-benefits"></a>Tilmelde en enkelt arbejder til frynsegoder
+1. Gå til Personale > Arbejdere > Medarbejdere
+2. Find og vælg den ønskede post på listen.
+3. Klik på Frynsegoder.
+4. Klik på Ny.
+5. Indtast eller vælg en værdi i feltet Frynsegode.
+6. Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.
+7. Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.
+8. Udvid sektionen Beneficianter, hvis modtagerne skal føjes til frynsegodet. Du kan også tilføje afhængige fra denne side, hvis de er relevante for frynsegodet.
+9. Du kan også redigere oplysningerne for en frynsegodetilmelding eller slette en tilmelding på denne side. Når du har udført ændringerne tilmeldingen til frynsegodet, skal du lukke siden.
+
+## <a name="enroll-multiple-workers-in-a-benefit"></a>Tilmelde flere arbejdere til et frynsegode
+1. Luk siden.
+2. Gå til Personale > Arbejdere > Medarbejdere
+3. Markér den valgte række på listen.
+4. Find og vælg den ønskede post på listen.
+5. Find og vælg den ønskede post på listen.
+6. Klik på Tilmeld i frynsegoder.
+7. Indtast eller vælg en værdi i feltet Frynsegode.
+8. Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.
+9. Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.
+10. Klik på Tilmeld.
+11. Luk siden.
+12. Gå til Personale > Frynsegoder > Tilmelding > Resultater af tilmelding til frynsegoder
+13. Find den post med frynsegoderesultater, du søger efter.
+14. Klik op linket i den valgte række på listen.
+15. På denne side kan du få vist de medarbejdere, som er tilmeldt frynsegodet, samt alle medarbejdere, der ikke er tilmeldt.
+
+

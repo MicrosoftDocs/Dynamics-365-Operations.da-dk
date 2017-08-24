@@ -1,35 +1,33 @@
 ---
 title: Omregne regnskabs- eller rapporteringsvalutaer
 description: 
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 728af2fff6317c17e47d48ea07dbeb57068fbf3f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: c738207f3088da151ec2317ce2b445f83278ec79
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Omregne regnskabs- eller rapporteringsvalutaer
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Et firma, der skal ændre sin regnskabsvaluta eller rapporteringsvaluta, har to muligheder. Den første mulighed er at oprette en ny virksomhed og starte forfra. Den anden mulighed er at køre processen til omregning af regnskabs- og rapporteringvaluta. Dette er en meget langvarig proces, der ændrer alle transaktioner i systemet. Før du kan køre processen, kræves der yderligere konfiguration.
@@ -77,6 +75,6 @@ Efter valutaomregningen skal du generere alle afstemningsrapporter igen for at s
 
 Når alle finansposteringskladder er slettet, kan du journalisere finansposteringerne. Klik på **Finans** &gt; **Periodisk** &gt; **Kladder** &gt; **Journalisering**. Du kan værdiregulere beløb i udenlandsk valuta efter valutaomregningen, hvis værdireguleringen er påkrævet. Du kan værdiregulere beløb i udenlandsk valuta ved at vælge **Standard** i feltet **Metode** for værdireguleringen.
 
-
+Yderligere oplysninger finder du i [Journaliser bogførte kladdeposteringer](tasks/journalize-posted-journal-entries.md).
 
 

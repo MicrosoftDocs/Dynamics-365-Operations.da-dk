@@ -3,7 +3,7 @@ title: Momsafregninger og afrundingsregler
 description: "I denne artikel forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ Følgende tabel viser, hvordan et beløb på 98.765,43 afrundes ved hjælp af hv
 > [!NOTE]                                                                                  
 > Hvis du vælger Egen fordel, er afrundingen altid til fordel for den juridiske enhed. 
 
-Du kan finde flere oplysninger under [Momsoversigt](indirect-taxes-overview.md). 
-
+Du kan finde flere oplysninger under følgende emner:
+- [Momsoversigt](indirect-taxes-overview.md)
+- [Oprette en momsbetaling](tasks/create-sales-tax-payment.md)
+- [Oprette momsposteringer i dokumenter](tasks/create-sales-tax-transactions-documents.md)
+- [Vise bogførte momsposteringer](tasks/view-posted-sales-tax-transactions.md)
 
 
 
