@@ -1,7 +1,7 @@
 ---
 title: "Årsafslutning"
 description: "Dette emne beskriver den krævede konfiguration og trinnene for at køre årsafslutningsprocessen i Finans."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

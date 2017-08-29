@@ -1,7 +1,7 @@
 ---
 title: "Værdiregulering af udenlandsk valuta for kreditor og debitor"
 description: "Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: da-dk
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

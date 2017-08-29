@@ -1,7 +1,7 @@
 ---
 title: "Opsætning af sortimenter"
 description: I denne artikel beskrives det, hvad et sortiment er, og det forklares, hvordan du konfigurerer sortimenter i Microsoft Dynamics 365 for Retail.
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 3647d88baa544bf0fa8c7f9d752c712dc69a70d7
 ms.contentlocale: da-dk
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurere udligning
 description: "Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I denne artikel beskrives de parametre, der bruges til udligning for både Kreditor og Debitor."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: da-dk
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

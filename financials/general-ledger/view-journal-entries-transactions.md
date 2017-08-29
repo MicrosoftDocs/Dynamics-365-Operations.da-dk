@@ -1,7 +1,7 @@
 ---
 title: "Få vist kladdeposteringer og transaktioner"
 description: "I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "Råbalance - økonomiske rapporter"
 description: "I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov."
-author: twheeloc
+author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
 ms.contentlocale: da-dk
 ms.lasthandoff: 06/13/2017
-
 
 ---
 
