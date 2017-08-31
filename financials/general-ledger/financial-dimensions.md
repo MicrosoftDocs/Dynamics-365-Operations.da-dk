@@ -1,7 +1,7 @@
 ---
 title: "Økonomiske dimensioner"
 description: "I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

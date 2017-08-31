@@ -1,7 +1,7 @@
 ---
 title: Oversigt over periodiseringer
 description: I denne artikel beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

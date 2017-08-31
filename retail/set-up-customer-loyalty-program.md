@@ -1,7 +1,7 @@
 ---
 title: Opret et fordelskundeprogram
 description: "Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Retail kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: da-dk
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

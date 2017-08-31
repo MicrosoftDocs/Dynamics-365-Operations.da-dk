@@ -1,7 +1,7 @@
 ---
 title: Analysere butikperformance
 description: "Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Microsoft Dynamics 365 for Retail-data."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 37baac8d3160b95f75dd11197fc60060450c0680
 ms.contentlocale: da-dk
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

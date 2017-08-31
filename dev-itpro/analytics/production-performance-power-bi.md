@@ -1,7 +1,7 @@
 ---
 title: Power BI-indhold til produktionsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

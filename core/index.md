@@ -13,13 +13,13 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/27/2017
 
 Microsoft Dynamics 365 for Finance and Operations er Microsofts erhvervsprogram til virksomheder. Det gør det muligt hurtigt at træffe bedre beslutninger via en intelligent brugergrænseflade, der giver adgang til indsigt og data i realtid. Virksomheder kan transformere og forny sig ved at levere gennemprøvet forretningslogik, der gør det muligt at designe deres virksomhedsprocesser hurtigere. Det giver virksomheder fleksibilitet til at vokse i deres eget tempo og handle næsten hvor som helst, når som helst, så de kan skalere deres aktiviteter globalt efter forretningsbehov. 
 
-Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 365 for Finance and Operations til at virke i virksomheden. Den er forbundet med dokumentation for de relaterede produkter i Unified Operations-pakken, Dynamics 365 for Retail og Dynamics 365 for Talent. 
+Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 365 for Finance and Operations til at virke i virksomheden. Den er forbundet med dokumentation for de relaterede produkter: Dynamics 365 for Retail og Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Denne brugervejledning kan hjælpe dig med at lære, hvordan du får Dynamics 36
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Økonomirapportering</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Lovpligtig rapportering</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilplatform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobilplatform</a></h3>
 
 <h3>Funktioner til udviklere</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Startside for udviklere</a></p>

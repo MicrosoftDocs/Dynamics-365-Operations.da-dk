@@ -1,7 +1,7 @@
 ---
 title: Konfigurere centraliserede betalinger
 description: "Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
