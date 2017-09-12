@@ -1,4 +1,4 @@
---- 
+---
 title: Oprette og behandle en overensstemmelse
 description: "Brug denne procedure til at udføre uoverensstemmelsesstyring baseret på en eksisterende kvalitetsordre."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Brug denne procedure til at udføre uoverensstemmelsesstyring baseret på en eksisterende kvalitetsordre. Du kan køre denne registrering i demofirmaet USMF, og du kan bruge de foreslåede værdier. Denne procedure udføres typisk af en kvalitetsmedarbejder.  Som en forudsætning skal du køre opgaveregistreringen "Inspicer kvaliteten af varer". For at behandle godkendelse af en uoverensstemmelse skal den bruger, der kører opgavregistreringen, have en "Navn"-værdi tildelt på siden Brugere. For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne. 
+Brug denne procedure til at udføre uoverensstemmelsesstyring baseret på en eksisterende kvalitetsordre. Du kan køre denne registrering i demofirmaet USMF, og du kan bruge de foreslåede værdier. Denne procedure udføres typisk af en kvalitetsmedarbejder.  Som en forudsætning skal du køre opgaveregistreringen "Inspicer kvaliteten af varer". For at behandle godkendelse af en uoverensstemmelse skal den bruger, der kører opgavregistreringen, have en "Navn"-værdi tildelt på siden Brugere. For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne.
 
 
 ## <a name="select-a-quality-order"></a>Vælg en kvalitetsordre
@@ -78,5 +78,4 @@ Brug denne procedure til at udføre uoverensstemmelsesstyring baseret på en eks
 3. Klik på Ja.
 4. Luk siden.
 5. Luk siden.
-
 

@@ -1,7 +1,7 @@
 ---
 title: Modtagelsesoversigt
 description: "Dette emne indeholder oplysninger om funktionen Modtagelsesoversigt. Siden Modtagelsesoversigt er en del af denne funktion og indeholder en oversigt over alle varer, der forventes at ankomme som indgående varer."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Dette emne indeholder oplysninger om funktionen Modtagelsesoversigt. Siden Modta
 Siden **Modtagelsesoversigt** indeholder en oversigt over alle forventede indgående varer. Den viser også modtagelser, der kan initialiseres baseret på oversigten. I dette emne beskrives tilgangsprocessen.
 
 ## <a name="business-scenario"></a>Forretningsscenario
-Overvej følgende scenario i de indgående processer. 
+Overvej følgende scenario i de indgående processer.
 
-[![Forretningsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Forretningsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Claus, en medarbejder i modtagelsen, vil gerne vide, hvad der skal modtages på den aktuelle dag. På siden **Modtagelsesoversigt** kan Claus få et overblik over aktuelle opgaver og et overslag over antal, omfang, vægt, forskellige ordretyper og osv. Senere ankommer en levering i et af modtagelsesområderne, og Claus modtager en liste over leveringen. Claus kan udføre følgende opgaver på siden **Modtagelsesoversigt**:
 
@@ -69,7 +69,7 @@ I dette eksempel er feltet **Navn for profil for oversigt over modtagelse** i ov
 
 Hvis du automatisk vil oprette modtagelseskladder fra siden **Modtagelsesoversigt**, skal du definere relevante oplysninger i feltgruppen **Kladde** i oversigtspanelet **Modtagelsesindstillinger**.
 
--   Du skal angive et kladdenavn for at oprette en kladde. 
+-   Du skal angive et kladdenavn for at oprette en kladde.
 
 [![Angivelse af et kladdenavn](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Når alle varer er registreret, kan lagerchefen eller indkøbschefen opdaterer v
 
 ## <a name="summary"></a>Resume
 Siden **Modtagelsesoversigt** kan hjælpe lagerchefen og lagermedarbejdere med at få et overblik over det forventede arbejde, der skal udføres som en del af en indgående proces. Siden kan også bruges til at starte varemodtagelsesprocessen for at sikre, at varerne spores ved den første registrering på lagerstedet.
-
-
-
 

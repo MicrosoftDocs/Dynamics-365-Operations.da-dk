@@ -1,7 +1,7 @@
 ---
 title: Flet lagerbatches
 description: Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch.
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch. 
+Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch.
 
 Når du fletter batches, kan beregninger hjælpe med at optimere karakteristika og batchattributter for det flettede batch. Når du har valgt kildebatchnumrene, kan du gennemgå og ændre det flettede batch, før du bogfører det. Du kan også overføre batchfletningen til en lagerkladde til godkendelse. Lager kan derefter reserveres eller bogføres direkte fra denne lagerkladde. Når du bogfører et flettet batch, reguleres lagerbeholdningen for kildebatches og det flettede batch.
 
@@ -142,7 +142,4 @@ Du kan godkende lagerkladden for batchfletningen fra listesiden **Alle batchflet
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se oplysningerne om fastvægtvarer i lagerkladden, når jeg har flettet en fastvægtvare?
 Du kan flette batches af fastvægtvarer ligesom alle andre varer. Fastvægtoplysningerne vises dog ikke i lagerkladden. Vi anbefaler, at du kontrollerer fastvægtoplysningerne, før du overfører batchfletningen til lagerkladden.
-
-
-
 

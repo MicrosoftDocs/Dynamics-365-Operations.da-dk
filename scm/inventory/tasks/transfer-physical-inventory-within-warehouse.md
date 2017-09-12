@@ -1,4 +1,4 @@
---- 
+---
 title: "Overføre fysisk lager på lagersted"
 description: "Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde med henblik på at registrere flytning af en vare fra én lokalitet på et lagersted til en anden."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Denne procedure fører dig gennem processen med at oprette og bogføre en lagero
 1. Klik på lager.
 2. Klik på Transaktioner.
     * Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.  
-
 

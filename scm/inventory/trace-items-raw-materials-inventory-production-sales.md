@@ -1,7 +1,7 @@
 ---
 title: "Sporing af varer og råvarer i lager, produktion og salg"
 description: "Dette emne beskriver, hvordan du kan bruge varesporing til at identificere, hvor varer eller råvarer er blevet brugt, i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du kan bruge varesporing til at identificere, hvor varer eller råvarer er blevet brugt, i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser. 
+Dette emne beskriver, hvordan du kan bruge varesporing til at identificere, hvor varer eller råvarer er blevet brugt, i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser.
 
 Varesporingsfunktionalitet er tilgængelig på siden **Varesporing**. I følgende afsnit beskrives, hvordan du kan bruge varesporing, og hvilke muligheder og begrænsninger der er.
 
@@ -142,7 +142,4 @@ Du kan generere rapporten **Afsendt til kunder** for at identificere mængden af
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore samprodukter og biprodukter?
 Du kan spore samprodukter, men du kan ikke spore et biprodukt, da der typisk ikke tildeles sporingsdimensioner til biprodukter. Når du sporer en vare, omfatter sporingsdetaljerne alle relaterede samprodukter. En node, der indeholder et samprodukt, har ordet "samprodukter" med i detaljerne. Du kan også få vist detaljer om et samprodukt ved at vælge noden i sporingsdetaljerne og derefter klikke på oversigtspanelet **Produktion**.
-
-
-
 

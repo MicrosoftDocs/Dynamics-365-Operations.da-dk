@@ -1,4 +1,4 @@
---- 
+---
 title: Inspicere varers kvalitet
 description: Denne procedure viser, hvordan du behandler en kvalitetsordre.
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ Denne procedure viser, hvordan du behandler en kvalitetsordre. Du kan køre denn
 4. Klik på Vælg.
 5. Klik på OK.
 6. Luk siden.
-
 

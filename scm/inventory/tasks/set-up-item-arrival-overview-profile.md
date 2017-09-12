@@ -1,7 +1,7 @@
---- 
+---
 title: Konfigurere en oversigtsprofil for varemodtagelse
 description: "Denne opgave fokuserer på oprettelse af en profil for modtagelsesoversigt."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Denne opgave fokuserer på oprettelse af en profil for modtagelsesoversigt. Prof
     * Vælg kvitteringslinjer fra flytteordrer.  
 17. Klik på Gem.
 18. Luk siden.
-
 

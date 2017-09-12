@@ -1,4 +1,4 @@
---- 
+---
 title: Konfigurere kvalitetsordrer
 description: "Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring, hvor indgående lager skal undersøges umiddelbart efter modtagelsesregistrering."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring,
 15. Find og vælg den ønskede post på listen.
 16. Klik på Gem.
 17. Luk siden.
-
 

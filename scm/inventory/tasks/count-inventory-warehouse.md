@@ -1,4 +1,4 @@
---- 
+---
 title: "Optælle lager på et lagersted"
 description: "Denne procedure fører dig gennem processen med at oprette og bogføre en lageroptællingskladde for at optælle en bestemt vare på en lokalitet på lageret."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ Denne procedure fører dig gennem processen med at oprette og bogføre en lagero
 1. Klik på lager.
 2. Klik på Transaktioner.
     * Her kan du se alle relaterede posteringer, der oprettes, når du bogfører din lageroptællingskladde.   
-
 

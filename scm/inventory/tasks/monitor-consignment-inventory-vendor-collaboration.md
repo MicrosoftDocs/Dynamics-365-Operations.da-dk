@@ -1,4 +1,4 @@
---- 
+---
 title: "Overvåge konsignationslager ved hjælp af kreditorsamarbejde"
 description: "Denne fremgangsmåde viser, hvordan du kan bruge leverandørsamarbejde til at få vist oplysninger om lagerbeholdning for det produkt, som du har i konsignation hos en kunde."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -41,5 +41,4 @@ Denne fremgangsmåde viser, hvordan du kan bruge leverandørsamarbejde til at f�
 ## <a name="view-on-hand-inventory"></a>Få vist disponibel lagerbeholdning
 1. Gå til Kreditorsamarbejde > Konsignationslager > Disponibelt konsignationslager.
     * Siden Disponibelt konsignationslager viser det lager, du ejer på kundens lagersted. Du kan se yderligere dimensioner, såsom lokation og lagersted, ved at klikke på fanen Vis dimensioner.   
-
 

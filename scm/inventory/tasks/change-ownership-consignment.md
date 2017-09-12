@@ -1,4 +1,4 @@
---- 
+---
 title: "Ændre ejerskabet til konsignationslager ud fra produktionsbehov"
 description: "Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fra leverandøren til din juridiske enhed, når der er behov for lageret i produktionen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fr
     * Når kladden er bogført, frigives det lager, der ejes af leverandøren, ved hjælp af henvisningen "Ændring af ejerskab". Lagerbeholdningen modtages derefter som disponibel ved hjælp af den lagertransaktion, der opdateres på produktkvitteringen for indkøbsordre. Bemærk, at det kun er transaktioner, der vedrører den bogførte kladde, der oprettes. Der oprettes ingen forventede lagertransaktioner.  
 2. Klik på OK.
 3. Luk siden.
-
 

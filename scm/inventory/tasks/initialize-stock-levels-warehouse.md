@@ -1,4 +1,4 @@
---- 
+---
 title: "Initialisere lagerbeholdninger på lagerstedet"
 description: "Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret manuelt ved hjælp af en lagerbevægelseskladden."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret 
 24. Klik på OK.
 25. Luk siden.
 26. Luk siden.
-
 

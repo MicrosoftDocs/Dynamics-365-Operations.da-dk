@@ -1,4 +1,4 @@
---- 
+---
 title: "Kontrollere tilgængelighed af lagerbeholdning"
 description: "Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponibel lagerbeholdning for et bestemt varenummer."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponi
 4. Klik på Visningsdimensioner.
 5. Klik på OK.
 6. Luk siden.
-
 

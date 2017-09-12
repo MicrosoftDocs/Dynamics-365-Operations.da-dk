@@ -1,4 +1,4 @@
---- 
+---
 title: "Definere lageroptællingsprocesser"
 description: "Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptæll
 7. Vælg en optællingsgruppe på listen.
     * Her kan du vælge en bestemt optællingsgruppe, der skal gælde for varen på den bestemte lagersted, du har valgt. Når optællingen udføres på det pågældende lagersted, tilsidesætter denne optællingspolitik den generelle optællingspolitik for varen.  
 8. Klik på Gem.
-
 

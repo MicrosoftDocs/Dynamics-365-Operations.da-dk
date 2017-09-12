@@ -1,7 +1,7 @@
 ---
 title: Lagerlokationer
 description: "Lagerlokationer bruges sammen med grundlæggende lagersted (WMS I) til at bestemme, hvor varerne opbevares, og hvor varerne plukkes fra i et WMS I-lagersted."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -40,7 +40,6 @@ Betegnelsen lokalitet henviser til det sted, som varer opbevares på og trækkes
 
 For hver lokation kan der også angives det sted, hvor varen indsættes. Som standard er de ens. Varer indsættes og trækkes normalt fra den samme side af en lokation, men ikke altid. Varer, der opbevares i lagerreoler med rullebaner, indsættes fra én gang og trækkes fra en anden. Hovedindlagringsstedet angives i form af et lokationsnavn, der normalt bestemmes ved dets koordinater: lager, gang, reol, hylde og beholder. Dette navn eller id kan angives manuelt eller genereres på basis af lokationens koordinater – f.eks. 01-02-03-4, som står for gang 1, reol 2, hylde 3, beholder 4 på siden Lagerlokationer.
 Lokationsegenskaber
--------------------
 
 Lokationen har følgende koordinater:
 -   Størrelse (højde, bredde, dybde og derved rumfang)
@@ -54,12 +53,12 @@ Håndteringen af pluklinjer kan optimeres, hvis der anvendes sorteringskoder, de
 
 ## <a name="blocked-locations"></a>Spærrede lokationer
 Det kan ske, at du vil angive en lokation som spærret i en vis periode, f.eks. fordi der skal udføres reparationer. Det kan også ske, at det kun er nødvendigt at spærre for indlagrings- eller udlagringsstedet.
-Træstruktur
---------------
+
+## <a name="tree-structure"></a>Træstruktur
 
 Du kan få vist lagerlayoutet i en træstruktur baseret på koordinaterne for lagerlokationer i et visningsformat på siden Lagerlokationer.
-Vedligehold lagerlokationer via lagerstedsformen
----------------------------------------------------
+
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a>Vedligehold lagerlokationer via lagerstedsformen
 
 Det er muligt at kopiere lokationer fra ét lagersted til et andet og oprette steder via en guide. Inden du kører guiden, skal du kontrollere, at du har defineret standardlokalitetsnavnene på siden Lagersted.
 
@@ -69,7 +68,4 @@ Det er muligt at kopiere lokationer fra ét lagersted til et andet og oprette st
 --------
 
 [Oprette en ny lageropbygning (opgaveguide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
 

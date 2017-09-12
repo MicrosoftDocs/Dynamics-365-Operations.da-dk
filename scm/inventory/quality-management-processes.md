@@ -1,7 +1,7 @@
 ---
 title: Processer for kvalitetsstyring
 description: "Denne artikel indeholder oplysninger om kvalitetsstyringsprocessen for ikke-standardiserede produkter. Det beskriver, hvordan du kan bruge funktioner til kvalitetskontrol, definere og vedligeholde uoverensstemmelser og håndtere rettelser."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -56,7 +56,7 @@ Produkttest kaldes som regel kvalitetskontrol og bruger kvalitetsordrer. Når du
 -   Registrer testresultaterne i en kvalitetsordre, valider testresultaterne i forhold til det acceptable kvalitetsniveau, og udskriv et analysecertifikat, der viser testresultaterne.
 
 ## <a name="nonconformance"></a>Uoverensstemmelse
-En uoverensstemmelse beskriver en vare med et kvalitetsproblem. Med processen for uoverensstemmelse kan du oprette en uoverensstemmende ordre, der beskriver en mængde uoverensstemmende materiale med hensyn til problemkilde, problemtype og posteringsnoter. Du kan definere en klassificering af problemtyper for at gøre analyse af uoverensstemmende materiale nemmere. Du kan også udskrive et uoverensstemmelsesmærkat og en uoverensstemmelsesrapport, der skal vejlede i dispositionen af uoverensstemmende materiale. Mærket og rapporten kan f.eks. angive en betingelse for **Ubrugelig** eller **Begrænset brug**. 
+En uoverensstemmelse beskriver en vare med et kvalitetsproblem. Med processen for uoverensstemmelse kan du oprette en uoverensstemmende ordre, der beskriver en mængde uoverensstemmende materiale med hensyn til problemkilde, problemtype og posteringsnoter. Du kan definere en klassificering af problemtyper for at gøre analyse af uoverensstemmende materiale nemmere. Du kan også udskrive et uoverensstemmelsesmærkat og en uoverensstemmelsesrapport, der skal vejlede i dispositionen af uoverensstemmende materiale. Mærket og rapporten kan f.eks. angive en betingelse for **Ubrugelig** eller **Begrænset brug**.
 
 Følgende tabel viser seks standard uoverensstemmelsestyper og beskriver de oplysninger, der skal registreres for hver type.
 
@@ -69,23 +69,23 @@ Følgende tabel viser seks standard uoverensstemmelsestyper og beskriver de oply
 | Intern              | Kvalitetsordrenummeret eller et partinummer for en kvalitetsordrepostering. Uoverensstemmelsen kan f.eks. vedrøre test, der er blevet udført som del af en kvalitetsordre, eller foranlediget af en medarbejders bekymring for produktkvaliteten.     |
 | Produktion af samprodukter | En uoverensstemmelse i samprodukt i forbindelse med produktionsordren, der er relateret til batchproduktionsordrer.                                                                                                                                                    |
 
-Uoverensstemmelser er knyttet til en problemtype. Problemtyper, der er defineret på siden **Problemtyper**, hvor du angiver, hvilke problemtyper der kan knyttes til hver enkelt uoverensstemmelsestype. Problemtyperne for uoverensstemmelse for typen **Serviceanmodning** kan f.eks. afspejle en klassifikation af kundeklager, mens problemtyperne for uoverensstemmelse af typen **Intern** kan repræsentere en klassifikation af defektkoder. 
+Uoverensstemmelser er knyttet til en problemtype. Problemtyper, der er defineret på siden **Problemtyper**, hvor du angiver, hvilke problemtyper der kan knyttes til hver enkelt uoverensstemmelsestype. Problemtyperne for uoverensstemmelse for typen **Serviceanmodning** kan f.eks. afspejle en klassifikation af kundeklager, mens problemtyperne for uoverensstemmelse af typen **Intern** kan repræsentere en klassifikation af defektkoder.
 
-Når du opretter en ny uoverensstemmelse, vælger du overensstemmelsestypen og problemtypen. Status for første godkendelse er **Ny**, der repræsenterer en anmodning om handling. Det næste trin er at ændre godkendelsesstatussen til **Godkendt** eller **Afvist** for at angive, at du vil eller ikke vil udføre en handling for uoverensstemmelsen. Du kan også lukke uoverensstemmelsen (ved at vælge et særskilt afkrydsningsfelt) for at angive, at du er færdig med den, eller du kan genåbne en uoverensstemmelse for at angive, at der kræves yderligere handlinger. 
+Når du opretter en ny uoverensstemmelse, vælger du overensstemmelsestypen og problemtypen. Status for første godkendelse er **Ny**, der repræsenterer en anmodning om handling. Det næste trin er at ændre godkendelsesstatussen til **Godkendt** eller **Afvist** for at angive, at du vil eller ikke vil udføre en handling for uoverensstemmelsen. Du kan også lukke uoverensstemmelsen (ved at vælge et særskilt afkrydsningsfelt) for at angive, at du er færdig med den, eller du kan genåbne en uoverensstemmelse for at angive, at der kræves yderligere handlinger.
 
-Du kan skrive bemærkninger til en uoverensstemmelse ved at vedhæfte et dokument. Det er en god idé at definere en entydig dokumenttype for uoverensstemmelser ved hjælp af siden **Dokumenttype**. Du kan derefter bruge siden **Rapportopsætning** til at definere, om der skal udskrives kommentarer til denne dokumenttype på uoverensstemmelsesrapporten og uoverensstemmelsesmærkatet. Uoverensstemmelsesrapporten og uoverensstemmelsesmærkatet kan hjælpe med materialedisponering. Du kan generere rapporter og mærkater selektivt på basis af udvælgelseskriterier, der er knyttet til en uoverensstemmelse. Disse kriterier omfatter uoverensstemmelsesnummer, vare, debitor, kreditor og status. 
+Du kan skrive bemærkninger til en uoverensstemmelse ved at vedhæfte et dokument. Det er en god idé at definere en entydig dokumenttype for uoverensstemmelser ved hjælp af siden **Dokumenttype**. Du kan derefter bruge siden **Rapportopsætning** til at definere, om der skal udskrives kommentarer til denne dokumenttype på uoverensstemmelsesrapporten og uoverensstemmelsesmærkatet. Uoverensstemmelsesrapporten og uoverensstemmelsesmærkatet kan hjælpe med materialedisponering. Du kan generere rapporter og mærkater selektivt på basis af udvælgelseskriterier, der er knyttet til en uoverensstemmelse. Disse kriterier omfatter uoverensstemmelsesnummer, vare, debitor, kreditor og status.
 
 Rapportopsætning viser tallet for uoverensstemmelsen, vare og problemtype. Afhængigt af politikken for rapportens opsætning kan rapporten vise relaterede noter om uoverensstemmelsen. Mærkatet for uoverensstemmelsen viser også lignende oplysninger og indeholder også karantænezone og type (som f.eks. **Begrænset brug** eller **Ubrugelig**), som du har tildelt til uoverensstemmelsen som en vejledning til dispositionen af de defekte materialer.
 
 ## <a name="approved-nonconformance"></a>Godkendt uoverensstemmelse
-Du kan vælge at angive en eller flere relaterede handlinger for en godkendt uoverensstemmelse. En relateret operation er det arbejde, der skal udføres, og indeholder en liste over kvalitetsoperationer, som du har defineret og beskrivende tekst om årsagen til, at arbejdet skal udføres. Når du definerer en operation, kan du vælge at angive de tillæg, varer og timeseddelbaserede arbejdstimer, der kræves for at udføre arbejdet. De beregnede omkostninger vises for den relaterede operation, og de samlede beregnede omkostninger vises for uoverensstemmelsen. De beregnede omkostninger og de underliggende detaljer (om varer, arbejdsløn og tillæg) udgør referenceoplysninger, som kun skal bruges i funktionen til kvalitetsstyring. 
+Du kan vælge at angive en eller flere relaterede handlinger for en godkendt uoverensstemmelse. En relateret operation er det arbejde, der skal udføres, og indeholder en liste over kvalitetsoperationer, som du har defineret og beskrivende tekst om årsagen til, at arbejdet skal udføres. Når du definerer en operation, kan du vælge at angive de tillæg, varer og timeseddelbaserede arbejdstimer, der kræves for at udføre arbejdet. De beregnede omkostninger vises for den relaterede operation, og de samlede beregnede omkostninger vises for uoverensstemmelsen. De beregnede omkostninger og de underliggende detaljer (om varer, arbejdsløn og tillæg) udgør referenceoplysninger, som kun skal bruges i funktionen til kvalitetsstyring.
 
-Du kan vælge at oprette en kvalitetsordre på basis af en uoverensstemmelse ved først at foretage en forespørgsel på kvalitetsordrer og derefter oprette den nye kvalitetsordre. En kvalitetsordre kan f.eks. identificere behovet for et teste eller (genteste) det defekte materiale. Den nyoprettede kvalitetsordre viser tilknytningen til den oprindelige uoverensstemmelse. 
+Du kan vælge at oprette en kvalitetsordre på basis af en uoverensstemmelse ved først at foretage en forespørgsel på kvalitetsordrer og derefter oprette den nye kvalitetsordre. En kvalitetsordre kan f.eks. identificere behovet for et teste eller (genteste) det defekte materiale. Den nyoprettede kvalitetsordre viser tilknytningen til den oprindelige uoverensstemmelse.
 
 Du kan vælge at knytte en uoverensstemmelse til en anden og oprette en ny uoverensstemmelse på grundlag af en eksisterende. Tilknytningen kan f.eks. afspejle forbindelsen mellem kvalitetsproblemer.
 
 ## <a name="correction-handling"></a>Korrektionshåndtering
-Med siden **Rettelser** kan du oprette en liste over uoverensstemmelser, der skal rettes. Hver korrektionsvare er knyttet til den diagnosticeringstype, der forårsagede problemet til at blive opdaget. Siden **Rettelser** indeholder også oplysninger om, hvem der skal udføre en korrigerende handling, og hvornår. Du kan beskrive detaljer om problemet og de afhjælpende foranstaltninger, der kræves, ved at vedhæfte et dokument til korrektionen. Når uoverensstemmelsen er løst eller rettet, skal du "lukke" korrektionsvaren ved at vælge indstillingen **Fuldført**. Du kan også angive, at løsningen er en kortsigtet løsning. 
+Med siden **Rettelser** kan du oprette en liste over uoverensstemmelser, der skal rettes. Hver korrektionsvare er knyttet til den diagnosticeringstype, der forårsagede problemet til at blive opdaget. Siden **Rettelser** indeholder også oplysninger om, hvem der skal udføre en korrigerende handling, og hvornår. Du kan beskrive detaljer om problemet og de afhjælpende foranstaltninger, der kræves, ved at vedhæfte et dokument til korrektionen. Når uoverensstemmelsen er løst eller rettet, skal du "lukke" korrektionsvaren ved at vælge indstillingen **Fuldført**. Du kan også angive, at løsningen er en kortsigtet løsning.
 
 Det er en god idé at definere en entydig dokumenttype for rettelser ved hjælp af siden **Dokumenttype**. Du kan derefter bruge siden **Rapportopsætning** til at definere, om der skal udskrives kommentarer til denne dokumenttype på rettelsesrapporten. En udskrevet rettelsesrapport viser oplysninger om uoverensstemmelsen og de relaterede uoverensstemmelsesbemærkninger. Rapporten indeholder også oplysninger om rettelser, som f.eks. diagnosticeringstypen og de relaterede rettelsesbemærkninger.
 
@@ -103,7 +103,4 @@ Det er en god idé at definere en entydig dokumenttype for rettelser ved hjælp 
 [Opret kvalitetsordrer (opgaveguide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders)
 
 [Kontrollere kvaliteten af varer (opgaveguide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
 

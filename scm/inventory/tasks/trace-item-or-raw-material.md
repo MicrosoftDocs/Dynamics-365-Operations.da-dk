@@ -1,4 +1,4 @@
---- 
+---
 title: "Spore en vare eller råmateriale"
 description: "Denne procedure viser, hvordan du bruger varesporing til at identificere, hvor varer eller råvarer er blevet brugt eller bruges."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Denne procedure viser, hvordan du bruger varesporing til at identificere, hvor v
 8. Klik på Sporing i handlingsruden.
 9. Klik på Afsendte salgsordrer.
 10. Luk siden.
-
 

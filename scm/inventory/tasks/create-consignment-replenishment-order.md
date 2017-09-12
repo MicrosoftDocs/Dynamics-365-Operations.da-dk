@@ -1,4 +1,4 @@
---- 
+---
 title: Opret en genopfyldningsordre til konsignation
 description: "Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsignation, hvor du kan spore den forventede levering fra en leverandør til dit konsignationslager."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsign
 ## <a name="receive-items"></a>Modtag varer
 1. Klik på Produktkvittering.
 2. Skriv en værdi i feltet Ekstern produktkvittering.
-3. Skriv et tal i feltet Antal, der er lavere end det tal, der vises. 
+3. Skriv et tal i feltet Antal, der er lavere end det tal, der vises.
 4. Klik på OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontroller lagerbeholdningen
@@ -70,5 +70,4 @@ Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsign
     * De varer, der er modtaget som konsignationslager, der ejes af leverandøren, er disponible. Det resterende antal på genopfyldningsordren til konsignation vises i feltet Bestilt i alt.  
 4. Luk siden.
 5. Klik på Luk.
-
 

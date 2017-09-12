@@ -1,4 +1,4 @@
---- 
+---
 title: "Regulere lagerbeholdninger på lagerstedet (grundlæggende lagerstyring)"
 description: "Denne fremgangsmåde fører dig gennem processen med at oprette og bogføre en lagerreguleringsjournal for at justere lagerbeholdningerne af varer på lageret."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Denne fremgangsmåde fører dig gennem processen med at oprette og bogføre en l
 4. Klik på OK.
 5. Luk formularen.
 6. Luk siden.
-
 

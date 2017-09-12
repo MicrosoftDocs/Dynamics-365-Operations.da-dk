@@ -1,4 +1,4 @@
---- 
+---
 title: Oprette en ny lageropbygning
 description: "Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et 
 7. Slå udvidelsen af sektionen Lokationsnavne til/fra.
     * Indstillingerne i denne sektion definerer standardformatet for navne på lokaliteter. I vores eksempel medtager vi gangnummer, reolnummer og hyldenummer.  
 8. Du kan angive indstillingen Medtag gang til Ja.
-9. Du kan angive indstillingen Medtag reol til Ja. 
+9. Du kan angive indstillingen Medtag reol til Ja.
 10. Angiv en værdi for reolen i feltet Format.
     * For eksempel: -##  
 11. Du kan angive indstillingen Medtag hylde til Ja.
@@ -74,5 +74,4 @@ Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et 
 14. Klik på Finish.
 15. Luk siden.
 16. Opdater siden.
-
 
