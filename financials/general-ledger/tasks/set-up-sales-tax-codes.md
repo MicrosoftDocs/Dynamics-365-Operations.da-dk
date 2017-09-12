@@ -16,40 +16,40 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9d55964a8d29d84198a90634e4337db115fe686d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8f1eea5e257ccb8f2e7fe900e2c8c68bdd5148f
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-sales-tax-codes"></a>Konfigurer momskoder
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="65806-103">Konfigurer momskoder</span><span class="sxs-lookup"><span data-stu-id="65806-103">Set up sales tax codes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Momskoder oprettes til enhver indirekte moms eller afgift, som den juridiske enhed er forpligtet til at beregne, opkræve og betale til momsmyndighederne.
+<span data-ttu-id="65806-104">Momskoder oprettes til enhver indirekte moms eller afgift, som den juridiske enhed er forpligtet til at beregne, opkræve og betale til momsmyndighederne.</span><span class="sxs-lookup"><span data-stu-id="65806-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-Denne opgave bruger demofirmaet USMF.
+<span data-ttu-id="65806-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="65806-105">This task uses the USMF demo company.</span></span>
 
 
 
-1. Gå til Moms > Indirekte skatter > Moms > Momskoder.
-2. Klik på Ny.
-3. Skrive en værdi i feltet Momskode.
-4. Skriv en værdi i feltet Navn.
-5. Vælg en afregningsperiode for at angive, hvilken momsmyndighed og i hvilke intervaller denne moms skal rapporteres og betales.
-6. Klik op linket i den valgte række på listen.
-7. Vælg en finanskonteringsgruppe for at angive de hovedkonti, der skal bogføres moms til Finans på.
-8. Find og vælg den ønskede post på listen.
-9. Klik op linket i den valgte række på listen.
-10. Udvid oversigtspanelet Beregning.
-    * Oversigtspanelet Beregning har flere felter, der styrer, hvordan momsbeløb beregnes.  
-11. Klik på Momskode i handlingsruden.
-12. Klik på Værdier.
-13. Markér den valgte række på listen.
-14. Angiv værdien for denne momskode.
-    * I oversigtspanelet beregning i feltet grundlag, hvis beløb pr. enhed er markeret, skal værdien ganges med antallet på transaktionen, der skal beregnes sales tax-beløbet.  Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.     
-15. Klik på Gem.
-16. Luk siden.
-17. Klik på Gem.
+1. <span data-ttu-id="65806-106">Gå til Moms > Indirekte skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="65806-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="65806-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="65806-107">Click New.</span></span>
+3. <span data-ttu-id="65806-108">Skrive en værdi i feltet Momskode.</span><span class="sxs-lookup"><span data-stu-id="65806-108">In the Sales tax code field, type a value.</span></span>
+4. <span data-ttu-id="65806-109">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="65806-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="65806-110">Vælg en afregningsperiode for at angive, hvilken momsmyndighed og i hvilke intervaller denne moms skal rapporteres og betales.</span><span class="sxs-lookup"><span data-stu-id="65806-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="65806-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="65806-111">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="65806-112">Vælg en finanskonteringsgruppe for at angive de hovedkonti, der skal bogføres moms til Finans på.</span><span class="sxs-lookup"><span data-stu-id="65806-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
+8. <span data-ttu-id="65806-113">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="65806-113">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="65806-114">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="65806-114">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="65806-115">Udvid oversigtspanelet Beregning.</span><span class="sxs-lookup"><span data-stu-id="65806-115">Expand the Calculation FastTab.</span></span>
+    * <span data-ttu-id="65806-116">Oversigtspanelet Beregning har flere felter, der styrer, hvordan momsbeløb beregnes.</span><span class="sxs-lookup"><span data-stu-id="65806-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
+11. <span data-ttu-id="65806-117">Klik på Momskode i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="65806-117">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="65806-118">Klik på Værdier.</span><span class="sxs-lookup"><span data-stu-id="65806-118">Click Values.</span></span>
+13. <span data-ttu-id="65806-119">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="65806-119">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="65806-120">Angiv værdien for denne momskode.</span><span class="sxs-lookup"><span data-stu-id="65806-120">Enter the value for this tax code.</span></span>
+    * <span data-ttu-id="65806-121">I oversigtspanelet beregning i feltet grundlag, hvis beløb pr. enhed er markeret, skal værdien ganges med antallet på transaktionen, der skal beregnes sales tax-beløbet.</span><span class="sxs-lookup"><span data-stu-id="65806-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="65806-122">Hvis momskoden ikke er en enhed baseret skat, er værdien en procentdel, der er anvendt på oprindelsen for denne momskode til beregning af sales tax-beløbet.</span><span class="sxs-lookup"><span data-stu-id="65806-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+15. <span data-ttu-id="65806-123">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="65806-123">Click Save.</span></span>
+16. <span data-ttu-id="65806-124">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="65806-124">Close the page.</span></span>
+17. <span data-ttu-id="65806-125">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="65806-125">Click Save.</span></span>
 
 

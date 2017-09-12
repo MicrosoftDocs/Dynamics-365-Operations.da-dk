@@ -16,30 +16,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: da6b4c54e4c43efc0901c3c9686425d2de546039
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6a4cb15bdfc89081e0dc9d1161670eddc412281d
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="maintain-financial-dimension-default-templates"></a>Vedligehold standardskabeloner for økonomiske dimensioner
+# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="97086-103">Vedligehold standardskabeloner for økonomiske dimensioner</span><span class="sxs-lookup"><span data-stu-id="97086-103">Maintain financial dimension default templates</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du konfigurerer standardskabeloner for økonomiske dimensioner. Skabelonerne kan bruges til hurtigt at distribuere beløb på kildedokumenterne.
+<span data-ttu-id="97086-104">Denne procedure viser, hvordan du konfigurerer standardskabeloner for økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="97086-104">This procedure shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="97086-105">Skabelonerne kan bruges til hurtigt at distribuere beløb på kildedokumenterne.</span><span class="sxs-lookup"><span data-stu-id="97086-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
 
-1. Gå til Finans > Diagram over konti > Dimensioner > Standardskabeloner for økonomiske dimensioner.
-2. Klik på Ny.
-3. Angiv et skabelon-id i feltet Skabelon-id.
-4. Angiv procentdelen for de første dimensionsværdier.
-5. Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.
-6. Klik på Tilføj.
-7. Angiv en anden procentdel for de næste dimensionsværdier.
-    * I dette eksempel skal du angive en procentdel, så du stadig har tildelt mindre end 100 %.  
-8. Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.
-9. Klik på Tilføj.
-10. Angiv en anden procent, hvilket bevirker, at den samlede procentdel bliver lig med 100 %.
-11. Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.
-12. Klik på Gem.
+1. <span data-ttu-id="97086-106">Gå til Finans > Diagram over konti > Dimensioner > Standardskabeloner for økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="97086-106">Go to General ledger > Chart of accounts > Dimensions > Financial dimension default templates.</span></span>
+2. <span data-ttu-id="97086-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="97086-107">Click New.</span></span>
+3. <span data-ttu-id="97086-108">Angiv et skabelon-id i feltet Skabelon-id.</span><span class="sxs-lookup"><span data-stu-id="97086-108">In the Template ID field, enter a Template ID..</span></span>
+4. <span data-ttu-id="97086-109">Angiv procentdelen for de første dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="97086-109">Enter the percentage for the first dimension values.</span></span>
+5. <span data-ttu-id="97086-110">Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.</span><span class="sxs-lookup"><span data-stu-id="97086-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
+6. <span data-ttu-id="97086-111">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="97086-111">Click Add.</span></span>
+7. <span data-ttu-id="97086-112">Angiv en anden procentdel for de næste dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="97086-112">Enter another percent for the next dimension values.</span></span>
+    * <span data-ttu-id="97086-113">I dette eksempel skal du angive en procentdel, så du stadig har tildelt mindre end 100 %.</span><span class="sxs-lookup"><span data-stu-id="97086-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span>  
+8. <span data-ttu-id="97086-114">Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.</span><span class="sxs-lookup"><span data-stu-id="97086-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
+9. <span data-ttu-id="97086-115">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="97086-115">Click Add.</span></span>
+10. <span data-ttu-id="97086-116">Angiv en anden procent, hvilket bevirker, at den samlede procentdel bliver lig med 100 %.</span><span class="sxs-lookup"><span data-stu-id="97086-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
+11. <span data-ttu-id="97086-117">Angiv de økonomiske dimensionsværdier, der svarer til den angivne procentdel.</span><span class="sxs-lookup"><span data-stu-id="97086-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
+12. <span data-ttu-id="97086-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="97086-118">Click Save.</span></span>
 
 

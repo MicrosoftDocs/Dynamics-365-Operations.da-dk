@@ -16,26 +16,26 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 965268383871fd84fc73dd418aada537292b2b2a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ba8562f01ef440dd98db242550ee0e60db7acfc5
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-cost-accounting-ledger"></a>Oprette en finanspost for driftsregnskab
+# <a name="create-a-cost-accounting-ledger"></a><span data-ttu-id="9e749-103">Oprette en finanspost for driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="9e749-103">Create a cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-En finanspost for omkostningsregnskab repræsenterer den overordnede rapporteringsenhed. Den er defineret af en dimension for omkostningselement, statistisk dimension, regnskabskalender og valuta. Det er en uafhængig af begrebet juridiske enheder. En juridisk enhed og data, der kan knyttes til mange finansposter i omkostningsregnskab. Denne registrering bruger USP2-demodatafirmaet.
+<span data-ttu-id="9e749-104">En finanspost for omkostningsregnskab repræsenterer den overordnede rapporteringsenhed.</span><span class="sxs-lookup"><span data-stu-id="9e749-104">A cost accounting ledger represents the overall reporting unit.</span></span> <span data-ttu-id="9e749-105">Den er defineret af en dimension for omkostningselement, statistisk dimension, regnskabskalender og valuta.</span><span class="sxs-lookup"><span data-stu-id="9e749-105">It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency.</span></span> <span data-ttu-id="9e749-106">Det er en uafhængig af begrebet juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="9e749-106">It is agnostic to the concept of legal entities.</span></span> <span data-ttu-id="9e749-107">En juridisk enhed og data, der kan knyttes til mange finansposter i omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="9e749-107">A legal entity and its data can be associated with many cost accounting ledgers.</span></span> <span data-ttu-id="9e749-108">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="9e749-108">This recording uses the USP2 demo data company.</span></span>
 
-1. Gå til Omkostningsregnskab > Opsætning Finans > Finansposter for omkostningsregnskab.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Indtast eller vælg en værdi i feltet Dimension for omkostningselement.
-5. Indtast eller vælg en værdi i feltet Regnskabskalender.
-6. Skriv eller vælg en værdi i feltet Regnskabsvaluta.
-7. Indtast eller vælg en værdi i feltet Valutakurstype.
-8. Indtast eller vælg en værdi i feltet Statistisk dimension.
-9. Klik på Gem.
+1. <span data-ttu-id="9e749-109">Gå til Omkostningsregnskab > Opsætning Finans > Finansposter for omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="9e749-109">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="9e749-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9e749-110">Click New.</span></span>
+3. <span data-ttu-id="9e749-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9e749-111">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="9e749-112">Indtast eller vælg en værdi i feltet Dimension for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="9e749-112">In the Cost element dimension field, enter or select a value.</span></span>
+5. <span data-ttu-id="9e749-113">Indtast eller vælg en værdi i feltet Regnskabskalender.</span><span class="sxs-lookup"><span data-stu-id="9e749-113">In the Fiscal calendar field, enter or select a value.</span></span>
+6. <span data-ttu-id="9e749-114">Skriv eller vælg en værdi i feltet Regnskabsvaluta.</span><span class="sxs-lookup"><span data-stu-id="9e749-114">In the Accounting currency field, enter or select a value.</span></span>
+7. <span data-ttu-id="9e749-115">Indtast eller vælg en værdi i feltet Valutakurstype.</span><span class="sxs-lookup"><span data-stu-id="9e749-115">In the Exchange rate type field, enter or select a value.</span></span>
+8. <span data-ttu-id="9e749-116">Indtast eller vælg en værdi i feltet Statistisk dimension.</span><span class="sxs-lookup"><span data-stu-id="9e749-116">In the Statistical dimension field, enter or select a value.</span></span>
+9. <span data-ttu-id="9e749-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9e749-117">Click Save.</span></span>
 
 

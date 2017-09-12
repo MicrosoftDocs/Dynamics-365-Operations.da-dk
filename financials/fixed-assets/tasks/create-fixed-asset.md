@@ -16,29 +16,29 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93408ec16cd8d27c45a77d1012a746d4de59d574
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 352d8700df234f80381c4778c5f90b4b6f1a2297
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-fixed-asset"></a>Opret et anlægsaktiv
+# <a name="create-a-fixed-asset"></a><span data-ttu-id="3bd37-103">Opret et anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="3bd37-103">Create a fixed asset</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgaveguide anvender demofirmaet USMF.  Det opretter et nyt anlægsaktiv ved hjælp af listesiden Anlægsaktiv.
+<span data-ttu-id="3bd37-104">Denne opgaveguide anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="3bd37-104">This task guide uses the USMF demo company.</span></span>  <span data-ttu-id="3bd37-105">Det opretter et nyt anlægsaktiv ved hjælp af listesiden Anlægsaktiv.</span><span class="sxs-lookup"><span data-stu-id="3bd37-105">It will create a new fixed asset using the Fixed asset list page.</span></span>
 
-1. Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.
-2. Klik på Ny.
-3. Skriv eller vælg en værdi i feltet Anlægsaktivgruppe.
-    * Nummer bruges som standard, hvis du har aktiveret funktionen til autonummerering af anlægsaktiver i Anlægsaktivparametre og Anlægsaktivgruppe.  Hvis ikke skal du angive et entydigt nummer, der identificerer anlægsaktivet.  
-4. Skriv en værdi i feltet Navn.
-    * Angiv yderligere oplysninger, som din virksomhed skal bruge til dette anlægsaktiv.  
-5. Klik på Bøger.
-6. Angiv en dato i feltet Anskaffelsesdato.
-7. Angiv et nummer i feltet Anskaffelsesdato.
-    * Angiv yderligere oplysninger, som din virksomhed skal bruge til denne bog.  
-    * Angiv yderligere oplysninger, som din virksomhed skal bruge til resterende bøger.  
-8. Luk siden.
+1. <span data-ttu-id="3bd37-106">Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="3bd37-106">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="3bd37-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="3bd37-107">Click New.</span></span>
+3. <span data-ttu-id="3bd37-108">Skriv eller vælg en værdi i feltet Anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd37-108">In the Fixed asset group field, enter or select a value.</span></span>
+    * <span data-ttu-id="3bd37-109">Nummer bruges som standard, hvis du har aktiveret funktionen til autonummerering af anlægsaktiver i Anlægsaktivparametre og Anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd37-109">The Number will default if you have enabled Autonumber fixed assets functionality in the Fixed assets parameters and the Fixed asset group.</span></span>  <span data-ttu-id="3bd37-110">Hvis ikke skal du angive et entydigt nummer, der identificerer anlægsaktivet.</span><span class="sxs-lookup"><span data-stu-id="3bd37-110">If not, you must enter a unique number to identify the fixed asset.</span></span>  
+4. <span data-ttu-id="3bd37-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3bd37-111">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="3bd37-112">Angiv yderligere oplysninger, som din virksomhed skal bruge til dette anlægsaktiv.</span><span class="sxs-lookup"><span data-stu-id="3bd37-112">Enter the additional information that your business needs for this asset.</span></span>  
+5. <span data-ttu-id="3bd37-113">Klik på Bøger.</span><span class="sxs-lookup"><span data-stu-id="3bd37-113">Click Books.</span></span>
+6. <span data-ttu-id="3bd37-114">Angiv en dato i feltet Anskaffelsesdato.</span><span class="sxs-lookup"><span data-stu-id="3bd37-114">In the Acquisition date field, enter a date.</span></span>
+7. <span data-ttu-id="3bd37-115">Angiv et nummer i feltet Anskaffelsesdato.</span><span class="sxs-lookup"><span data-stu-id="3bd37-115">In the Acquisition price field, enter a number.</span></span>
+    * <span data-ttu-id="3bd37-116">Angiv yderligere oplysninger, som din virksomhed skal bruge til denne bog.</span><span class="sxs-lookup"><span data-stu-id="3bd37-116">Enter the additional information that your business needs for this book.</span></span>  
+    * <span data-ttu-id="3bd37-117">Angiv yderligere oplysninger, som din virksomhed skal bruge til resterende bøger.</span><span class="sxs-lookup"><span data-stu-id="3bd37-117">Enter the additional information that your business needs for the remaining books.</span></span>  
+8. <span data-ttu-id="3bd37-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3bd37-118">Close the page.</span></span>
 
 

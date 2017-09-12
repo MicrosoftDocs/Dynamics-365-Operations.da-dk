@@ -16,7 +16,7 @@ ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: b2b1b99fd4c7c439ad89440827ad78173d371855
@@ -26,242 +26,242 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Distribuere og udfylde et spørgeskema
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="029a9-103">Distribuere og udfylde et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-103">Distribute and complete a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
+<span data-ttu-id="029a9-104">I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.</span><span class="sxs-lookup"><span data-stu-id="029a9-104">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Der er flere måder at distribuere et spørgeskema på:
+<span data-ttu-id="029a9-105">Der er flere måder at distribuere et spørgeskema på:</span><span class="sxs-lookup"><span data-stu-id="029a9-105">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markér spørgeskemaet som aktivt. Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.
--   Tildel rettigheder til en spørgeskemagruppe. Spørgeskemaet er derefter tilgængeligt for alle medlemmer af den valgte gruppe.
--   Opret planlagte besvarelser. Spørgeskemaet er derefter kun tilgængeligt for én bestemt person.
--   Opret tidsplan. Spørgeskemaet kan derefter være tilgængeligt for flere personer.
+-   <span data-ttu-id="029a9-106">Markér spørgeskemaet som aktivt.</span><span class="sxs-lookup"><span data-stu-id="029a9-106">Mark the questionnaire as active.</span></span> <span data-ttu-id="029a9-107">Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.</span><span class="sxs-lookup"><span data-stu-id="029a9-107">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="029a9-108">Tildel rettigheder til en spørgeskemagruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-108">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="029a9-109">Spørgeskemaet er derefter tilgængeligt for alle medlemmer af den valgte gruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-109">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="029a9-110">Opret planlagte besvarelser.</span><span class="sxs-lookup"><span data-stu-id="029a9-110">Create planned answer sessions.</span></span> <span data-ttu-id="029a9-111">Spørgeskemaet er derefter kun tilgængeligt for én bestemt person.</span><span class="sxs-lookup"><span data-stu-id="029a9-111">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="029a9-112">Opret tidsplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-112">Create a schedule.</span></span> <span data-ttu-id="029a9-113">Spørgeskemaet kan derefter være tilgængeligt for flere personer.</span><span class="sxs-lookup"><span data-stu-id="029a9-113">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markering af et spørgeskema som aktivt
-Ved at indstille feltet **Aktiv** til **Ja** på siden **Spørgeskemaer** kan du gøre spørgeskemaet tilgængeligt, så alle medarbejdere kan udfylde det. Svarpersoner kan udfylde spørgeskemaet flere gange. Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året. Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="029a9-114">Markering af et spørgeskema som aktivt</span><span class="sxs-lookup"><span data-stu-id="029a9-114">Marking a questionnaire as active</span></span>
+<span data-ttu-id="029a9-115">Ved at indstille feltet **Aktiv** til **Ja** på siden **Spørgeskemaer** kan du gøre spørgeskemaet tilgængeligt, så alle medarbejdere kan udfylde det.</span><span class="sxs-lookup"><span data-stu-id="029a9-115">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="029a9-116">Svarpersoner kan udfylde spørgeskemaet flere gange.</span><span class="sxs-lookup"><span data-stu-id="029a9-116">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="029a9-117">Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året.</span><span class="sxs-lookup"><span data-stu-id="029a9-117">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="029a9-118">Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-118">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Spørgeskemagrupper
-Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et spørgeskema skal distribueres til. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="029a9-119">Spørgeskemagrupper</span><span class="sxs-lookup"><span data-stu-id="029a9-119">Questionnaire groups</span></span>
+<span data-ttu-id="029a9-120">Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et spørgeskema skal distribueres til.</span><span class="sxs-lookup"><span data-stu-id="029a9-120">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Du kan oprette spørgeskemagrupper fra følgende sider:
+<span data-ttu-id="029a9-121">Du kan oprette spørgeskemagrupper fra følgende sider:</span><span class="sxs-lookup"><span data-stu-id="029a9-121">You can create questionnaire groups from the following pages:</span></span>
 
--   **Spørgeskemagrupper**– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema. Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.
--   **Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.
+-   <span data-ttu-id="029a9-122">**Spørgeskemagrupper**– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-122">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="029a9-123">Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-123">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="029a9-124">**Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.</span><span class="sxs-lookup"><span data-stu-id="029a9-124">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**. Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet. Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.
+<span data-ttu-id="029a9-125">Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**.</span><span class="sxs-lookup"><span data-stu-id="029a9-125">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="029a9-126">Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-126">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="029a9-127">Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-127">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte besvarelser i et spørgeskema
-Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="029a9-128">Planlagte besvarelser i et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-128">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="029a9-129">Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for.</span><span class="sxs-lookup"><span data-stu-id="029a9-129">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-> **Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
+> <span data-ttu-id="029a9-130">**Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-130">**Note** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder. Listen på siden viser alle planlagte spørgeskemaer. 
+<span data-ttu-id="029a9-131">På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder.</span><span class="sxs-lookup"><span data-stu-id="029a9-131">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="029a9-132">Listen på siden viser alle planlagte spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="029a9-132">The list on the page displays all planned questionnaires.</span></span> 
 
-Planlagte besvarelser bruges også i formen **Spørgeskemaplaner**, hvor du kan planlægge spørgeskemaer for flere personer:
+<span data-ttu-id="029a9-133">Planlagte besvarelser bruges også i formen **Spørgeskemaplaner**, hvor du kan planlægge spørgeskemaer for flere personer:</span><span class="sxs-lookup"><span data-stu-id="029a9-133">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Medarbejdere
--   Kursusdeltagere
--   Organisationsenheder
+-   <span data-ttu-id="029a9-134">Medarbejdere</span><span class="sxs-lookup"><span data-stu-id="029a9-134">Employees</span></span>
+-   <span data-ttu-id="029a9-135">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="029a9-135">Course participants</span></span>
+-   <span data-ttu-id="029a9-136">Organisationsenheder</span><span class="sxs-lookup"><span data-stu-id="029a9-136">Organizational units</span></span>
 
-Hver person kan kun besvare spørgeskemaet én gang.
+<span data-ttu-id="029a9-137">Hver person kan kun besvare spørgeskemaet én gang.</span><span class="sxs-lookup"><span data-stu-id="029a9-137">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planlægning af et spørgeskema
-Du kan vælge, om du vil planlægge et spørgeskema til flere svarpersoner.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="029a9-138">Planlægning af et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-138">Scheduling a questionnaire</span></span>
+<span data-ttu-id="029a9-139">Du kan vælge, om du vil planlægge et spørgeskema til flere svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-139">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planlægningstyper
+### <a name="planning-types"></a><span data-ttu-id="029a9-140">Planlægningstyper</span><span class="sxs-lookup"><span data-stu-id="029a9-140">Planning types</span></span>
 
-Planlægningstyper er nødvendige, hvis du vil arrangere planlagte besvarelser for flere svarpersoner. Planlægningstyper bruges klassificering af tidsplaner for spørgeskemaer. Du kan f.eks. planlægge spørgeskemaer til følgende formål:
+<span data-ttu-id="029a9-141">Planlægningstyper er nødvendige, hvis du vil arrangere planlagte besvarelser for flere svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-141">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="029a9-142">Planlægningstyper bruges klassificering af tidsplaner for spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="029a9-142">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="029a9-143">Du kan f.eks. planlægge spørgeskemaer til følgende formål:</span><span class="sxs-lookup"><span data-stu-id="029a9-143">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Evaluering
--   Undersøgelse
--   Test
+-   <span data-ttu-id="029a9-144">Evaluering</span><span class="sxs-lookup"><span data-stu-id="029a9-144">Evaluation</span></span>
+-   <span data-ttu-id="029a9-145">Undersøgelse</span><span class="sxs-lookup"><span data-stu-id="029a9-145">Survey</span></span>
+-   <span data-ttu-id="029a9-146">Test</span><span class="sxs-lookup"><span data-stu-id="029a9-146">Testing</span></span>
 
-Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskemaplaner**.
+<span data-ttu-id="029a9-147">Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskemaplaner**.</span><span class="sxs-lookup"><span data-stu-id="029a9-147">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referencetyper for spørgeskema
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="029a9-148">Referencetyper for spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-148">Reference types for questionnaire</span></span>
 
-Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema. 
+<span data-ttu-id="029a9-149">Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-149">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Finance and Operations. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
+<span data-ttu-id="029a9-150">Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-150">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="029a9-151">Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="029a9-151">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="029a9-152">Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-152">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til. Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.
+<span data-ttu-id="029a9-153">Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til.</span><span class="sxs-lookup"><span data-stu-id="029a9-153">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="029a9-154">Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="029a9-154">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Spørgeskemaplaner
+### <a name="questionnaire-schedules"></a><span data-ttu-id="029a9-155">Spørgeskemaplaner</span><span class="sxs-lookup"><span data-stu-id="029a9-155">Questionnaire schedules</span></span>
 
-Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelsessessioner for en gruppe af brugere, på baggrund af en referencetype. Opret en tidsplan på siden **Spørgeskemaplaner**. Vælg planlægningsgruppen for at kategorisere tidsplanen, og vælg også den referencetype, der skal bruges til at forespørge i systemet efter bestemte brugere. For eksempel hvis du indstiller referencetypen til tabellen Kurser, kan du vælge et bestemt kursus i feltet **Reference**. 
+<span data-ttu-id="029a9-156">Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelsessessioner for en gruppe af brugere, på baggrund af en referencetype.</span><span class="sxs-lookup"><span data-stu-id="029a9-156">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="029a9-157">Opret en tidsplan på siden **Spørgeskemaplaner**.</span><span class="sxs-lookup"><span data-stu-id="029a9-157">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="029a9-158">Vælg planlægningsgruppen for at kategorisere tidsplanen, og vælg også den referencetype, der skal bruges til at forespørge i systemet efter bestemte brugere.</span><span class="sxs-lookup"><span data-stu-id="029a9-158">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="029a9-159">For eksempel hvis du indstiller referencetypen til tabellen Kurser, kan du vælge et bestemt kursus i feltet **Reference**.</span><span class="sxs-lookup"><span data-stu-id="029a9-159">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier. For eksempel angiv instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren. Når du er færdig med at indtaste oplysninger om opsætningen, genererer systemet planlagte besvarelsessessioner for de brugere, der er medtaget i forespørgslen. 
+<span data-ttu-id="029a9-160">Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier.</span><span class="sxs-lookup"><span data-stu-id="029a9-160">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="029a9-161">For eksempel angiv instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren.</span><span class="sxs-lookup"><span data-stu-id="029a9-161">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="029a9-162">Når du er færdig med at indtaste oplysninger om opsætningen, genererer systemet planlagte besvarelsessessioner for de brugere, der er medtaget i forespørgslen.</span><span class="sxs-lookup"><span data-stu-id="029a9-162">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klik på **Planlagte besvarelser** for at få vist besvarelser for planen. Du kan derefter manuelt oprette yderligere planlagte besvarelser eller slette planlagte besvarelser, der ikke er besvaret. 
+<span data-ttu-id="029a9-163">Klik på **Planlagte besvarelser** for at få vist besvarelser for planen.</span><span class="sxs-lookup"><span data-stu-id="029a9-163">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="029a9-164">Du kan derefter manuelt oprette yderligere planlagte besvarelser eller slette planlagte besvarelser, der ikke er besvaret.</span><span class="sxs-lookup"><span data-stu-id="029a9-164">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelsessessioner. Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne. Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.
+<span data-ttu-id="029a9-165">Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelsessessioner.</span><span class="sxs-lookup"><span data-stu-id="029a9-165">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="029a9-166">Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne.</span><span class="sxs-lookup"><span data-stu-id="029a9-166">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="029a9-167">Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-167">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem
-Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="029a9-168">Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem</span><span class="sxs-lookup"><span data-stu-id="029a9-168">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="029a9-169">Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem.</span><span class="sxs-lookup"><span data-stu-id="029a9-169">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Besked til svarpersoner om en planlagt besvarelse
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="029a9-170">Besked til svarpersoner om en planlagt besvarelse</span><span class="sxs-lookup"><span data-stu-id="029a9-170">Notifying respondents about a planned answer session</span></span>
 
-Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.eks. via telefon eller e-mail.
+<span data-ttu-id="029a9-171">Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.eks. via telefon eller e-mail.</span><span class="sxs-lookup"><span data-stu-id="029a9-171">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Besked til svarpersoner om en planlægning
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="029a9-172">Besked til svarpersoner om en planlægning</span><span class="sxs-lookup"><span data-stu-id="029a9-172">Notifying respondents about a scheduling</span></span>
 
-Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**. Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
+<span data-ttu-id="029a9-173">Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-173">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="029a9-174">Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="029a9-174">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="029a9-175">Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-175">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="029a9-176">Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-176">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-> **Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
+> <span data-ttu-id="029a9-177">**Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.</span><span class="sxs-lookup"><span data-stu-id="029a9-177">**Note** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Afslutning af et planlagt spørgeskema
-Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser. Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="029a9-178">Afslutning af et planlagt spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-178">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="029a9-179">Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser.</span><span class="sxs-lookup"><span data-stu-id="029a9-179">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="029a9-180">Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-180">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-> **Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
+> <span data-ttu-id="029a9-181">**Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**.</span><span class="sxs-lookup"><span data-stu-id="029a9-181">**Note** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="029a9-182">Derefter kan du slette tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="029a9-182">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Besvare spørgeskemaer
-Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner. Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:
+## <a name="completing-questionnaires"></a><span data-ttu-id="029a9-183">Besvare spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-183">Completing questionnaires</span></span>
+<span data-ttu-id="029a9-184">Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-184">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="029a9-185">Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:</span><span class="sxs-lookup"><span data-stu-id="029a9-185">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Klik i navigationsruden på **Spørgeskemaer** &gt; **Distribuer** &gt; **Besvar et spørgeskema**.
--   Klik på **Spørgeskemaer, der skal udfyldes** i Medarbejderselvbetjening.
+-   <span data-ttu-id="029a9-186">Klik i navigationsruden på **Spørgeskemaer** &gt; **Distribuer** &gt; **Besvar et spørgeskema**.</span><span class="sxs-lookup"><span data-stu-id="029a9-186">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="029a9-187">Klik på **Spørgeskemaer, der skal udfyldes** i Medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="029a9-187">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.
+<span data-ttu-id="029a9-188">Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.</span><span class="sxs-lookup"><span data-stu-id="029a9-188">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="029a9-189">Se også</span><span class="sxs-lookup"><span data-stu-id="029a9-189">See also</span></span>
 --------
 
-[Udforme spørgeskemaer](design-questionnaires.md)
+[<span data-ttu-id="029a9-190">Udforme spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-190">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Brug af spørgeskemaer](questionnaires.md)
+[<span data-ttu-id="029a9-191">Brug af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-191">Using questionnaires</span></span>](questionnaires.md)
 
-[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[<span data-ttu-id="029a9-192">Visning og evaluering af resultaterne af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-192">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 
 <a name=""></a>=======
 ---
-# <a name="required-metadata"></a>nødvendige metadata
+# <a name="required-metadata"></a><span data-ttu-id="029a9-193">nødvendige metadata</span><span class="sxs-lookup"><span data-stu-id="029a9-193">required metadata</span></span>
 
-titel: Beskrivelse af distribution og udfyldning af spørgeskemaer: I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. forfatter: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology: 
+<span data-ttu-id="029a9-194">titel: Beskrivelse af distribution og udfyldning af spørgeskemaer: I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.</span><span class="sxs-lookup"><span data-stu-id="029a9-194">title: Distribute and complete a questionnaire description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> <span data-ttu-id="029a9-195">forfatter: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span><span class="sxs-lookup"><span data-stu-id="029a9-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span></span> 
 
-# <a name="optional-metadata"></a>valgfrie metadata
+# <a name="optional-metadata"></a><span data-ttu-id="029a9-196">valgfrie metadata</span><span class="sxs-lookup"><span data-stu-id="029a9-196">optional metadata</span></span>
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
-# <a name="robots"></a>ROBOTTER: 
-målgruppe: programbrugeren
-# <a name="msdevlang"></a>ms.devlang: 
-ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# <a name="mstgtpltfrm"></a>ms.tgt_pltfrm: 
-ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global
-# <a name="mssearchindustry"></a>ms.search.industry: 
-ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent opdatering fra juli 2017
+<span data-ttu-id="029a9-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span><span class="sxs-lookup"><span data-stu-id="029a9-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span></span>
+# <a name="robots"></a><span data-ttu-id="029a9-198">ROBOTTER:</span><span class="sxs-lookup"><span data-stu-id="029a9-198">ROBOTS:</span></span> 
+<span data-ttu-id="029a9-199">målgruppe: programbrugeren</span><span class="sxs-lookup"><span data-stu-id="029a9-199">audience: Application User</span></span>
+# <a name="msdevlang"></a><span data-ttu-id="029a9-200">ms.devlang:</span><span class="sxs-lookup"><span data-stu-id="029a9-200">ms.devlang:</span></span> 
+<span data-ttu-id="029a9-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span><span class="sxs-lookup"><span data-stu-id="029a9-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span></span>
+# <a name="mstgtpltfrm"></a><span data-ttu-id="029a9-202">ms.tgt_pltfrm:</span><span class="sxs-lookup"><span data-stu-id="029a9-202">ms.tgt_pltfrm:</span></span> 
+<span data-ttu-id="029a9-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span><span class="sxs-lookup"><span data-stu-id="029a9-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span></span>
+# <a name="mssearchindustry"></a><span data-ttu-id="029a9-204">ms.search.industry:</span><span class="sxs-lookup"><span data-stu-id="029a9-204">ms.search.industry:</span></span> 
+<span data-ttu-id="029a9-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent opdatering fra juli 2017</span><span class="sxs-lookup"><span data-stu-id="029a9-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span></span>
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Distribuere og udfylde et spørgeskema
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="029a9-206">Distribuere og udfylde et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-206">Distribute and complete a questionnaire</span></span>
 
-I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem. 
+<span data-ttu-id="029a9-207">I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.</span><span class="sxs-lookup"><span data-stu-id="029a9-207">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Der er flere måder at distribuere et spørgeskema på:
+<span data-ttu-id="029a9-208">Der er flere måder at distribuere et spørgeskema på:</span><span class="sxs-lookup"><span data-stu-id="029a9-208">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markér spørgeskemaet som aktivt. Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.
--   Tildel rettigheder til en spørgeskemagruppe. Spørgeskemaet er derefter tilgængeligt for alle medlemmer af den valgte gruppe.
--   Opret planlagte besvarelser. Spørgeskemaet er derefter kun tilgængeligt for én bestemt person.
--   Opret tidsplan. Spørgeskemaet kan derefter være tilgængeligt for flere personer.
+-   <span data-ttu-id="029a9-209">Markér spørgeskemaet som aktivt.</span><span class="sxs-lookup"><span data-stu-id="029a9-209">Mark the questionnaire as active.</span></span> <span data-ttu-id="029a9-210">Spørgeskemaet er derefter tilgængeligt for alle medarbejdere, medmindre der er oprettet en spørgeskemagruppe for at begrænse adgangen til det.</span><span class="sxs-lookup"><span data-stu-id="029a9-210">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="029a9-211">Tildel rettigheder til en spørgeskemagruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-211">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="029a9-212">Spørgeskemaet er derefter tilgængeligt for alle medlemmer af den valgte gruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-212">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="029a9-213">Opret planlagte besvarelser.</span><span class="sxs-lookup"><span data-stu-id="029a9-213">Create planned answer sessions.</span></span> <span data-ttu-id="029a9-214">Spørgeskemaet er derefter kun tilgængeligt for én bestemt person.</span><span class="sxs-lookup"><span data-stu-id="029a9-214">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="029a9-215">Opret tidsplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-215">Create a schedule.</span></span> <span data-ttu-id="029a9-216">Spørgeskemaet kan derefter være tilgængeligt for flere personer.</span><span class="sxs-lookup"><span data-stu-id="029a9-216">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markering af et spørgeskema som aktivt
-Ved at indstille feltet **Aktiv** til **Ja** på siden **Spørgeskemaer** kan du gøre spørgeskemaet tilgængeligt, så alle medarbejdere kan udfylde det. Svarpersoner kan udfylde spørgeskemaet flere gange. Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året. Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="029a9-217">Markering af et spørgeskema som aktivt</span><span class="sxs-lookup"><span data-stu-id="029a9-217">Marking a questionnaire as active</span></span>
+<span data-ttu-id="029a9-218">Ved at indstille feltet **Aktiv** til **Ja** på siden **Spørgeskemaer** kan du gøre spørgeskemaet tilgængeligt, så alle medarbejdere kan udfylde det.</span><span class="sxs-lookup"><span data-stu-id="029a9-218">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="029a9-219">Svarpersoner kan udfylde spørgeskemaet flere gange.</span><span class="sxs-lookup"><span data-stu-id="029a9-219">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="029a9-220">Denne funktion er nyttig, hvis du vil indsamle løbende feedback hele året.</span><span class="sxs-lookup"><span data-stu-id="029a9-220">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="029a9-221">Du kan for eksempel oprette et spørgeskema, som medarbejdere bruger til at give feedback om tjenesten frokost i cafeteriaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-221">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Spørgeskemagrupper
-Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et spørgeskema skal distribueres til. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="029a9-222">Spørgeskemagrupper</span><span class="sxs-lookup"><span data-stu-id="029a9-222">Questionnaire groups</span></span>
+<span data-ttu-id="029a9-223">Du kan oprette spørgeskemagrupper og derefter medtage de svarpersoner, som et spørgeskema skal distribueres til.</span><span class="sxs-lookup"><span data-stu-id="029a9-223">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Du kan oprette spørgeskemagrupper fra følgende sider:
+<span data-ttu-id="029a9-224">Du kan oprette spørgeskemagrupper fra følgende sider:</span><span class="sxs-lookup"><span data-stu-id="029a9-224">You can create questionnaire groups from the following pages:</span></span>
 
--   **Spørgeskemagrupper**– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema. Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.
--   **Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.
+-   <span data-ttu-id="029a9-225">**Spørgeskemagrupper**– Kun personer i en spørgeskemagruppe kan udfylde et valgt spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-225">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="029a9-226">Hvis din målgruppe f.eks. er underleverandører, kan du oprette en spørgeskemagruppe, der er specifik for disse svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-226">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="029a9-227">**Medlemmer af spørgeskemagruppe** – Du kan føje personer til spørgeskemagruppen.</span><span class="sxs-lookup"><span data-stu-id="029a9-227">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**. Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet. Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.
+<span data-ttu-id="029a9-228">Hvis du vil tildele en spørgeskemagruppe til et spørgeskema skal du klikke på **Brugerrettigheder** på siden **Spørgeskemaer**.</span><span class="sxs-lookup"><span data-stu-id="029a9-228">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="029a9-229">Når spørgeskemaet er gemt som aktivt, kan medlemmerne af spørgeskemagruppen udfylde spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-229">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="029a9-230">Denne funktion er nyttig, hvis du vil teste et spørgeskema på en udvalgt gruppe personer, før du ruller det ud til en større gruppe, eller hvis du vil målrette et spørgeskema mod en meget specifik målgruppe.</span><span class="sxs-lookup"><span data-stu-id="029a9-230">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planlagte besvarelser i et spørgeskema
-Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="029a9-231">Planlagte besvarelser i et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-231">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="029a9-232">Planlagte besvarelser er spørgeskemaer, som du har designet og valgt svarpersoner for.</span><span class="sxs-lookup"><span data-stu-id="029a9-232">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-**Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema. 
+<span data-ttu-id="029a9-233">**Bemærk!** Før du kan oprette planlagte besvarelser, skal du designe et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-233">**Note:** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder. Listen på siden viser alle planlagte spørgeskemaer. 
+<span data-ttu-id="029a9-234">På siden **Planlagte besvarelser** kan du oprette en planlagt besvarelse for en bestemt medarbejder.</span><span class="sxs-lookup"><span data-stu-id="029a9-234">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="029a9-235">Listen på siden viser alle planlagte spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="029a9-235">The list on the page displays all planned questionnaires.</span></span> 
 
-Planlagte besvarelser bruges også i formen **Spørgeskemaplaner**, hvor du kan planlægge spørgeskemaer for flere personer:
+<span data-ttu-id="029a9-236">Planlagte besvarelser bruges også i formen **Spørgeskemaplaner**, hvor du kan planlægge spørgeskemaer for flere personer:</span><span class="sxs-lookup"><span data-stu-id="029a9-236">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Medarbejdere
--   Kursusdeltagere
--   Organisationsenheder
+-   <span data-ttu-id="029a9-237">Medarbejdere</span><span class="sxs-lookup"><span data-stu-id="029a9-237">Employees</span></span>
+-   <span data-ttu-id="029a9-238">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="029a9-238">Course participants</span></span>
+-   <span data-ttu-id="029a9-239">Organisationsenheder</span><span class="sxs-lookup"><span data-stu-id="029a9-239">Organizational units</span></span>
 
-Hver person kan kun besvare spørgeskemaet én gang.
+<span data-ttu-id="029a9-240">Hver person kan kun besvare spørgeskemaet én gang.</span><span class="sxs-lookup"><span data-stu-id="029a9-240">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planlægning af et spørgeskema
-Du kan vælge, om du vil planlægge et spørgeskema til flere svarpersoner.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="029a9-241">Planlægning af et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-241">Scheduling a questionnaire</span></span>
+<span data-ttu-id="029a9-242">Du kan vælge, om du vil planlægge et spørgeskema til flere svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-242">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planlægningstyper
+### <a name="planning-types"></a><span data-ttu-id="029a9-243">Planlægningstyper</span><span class="sxs-lookup"><span data-stu-id="029a9-243">Planning types</span></span>
 
-Planlægningstyper er nødvendige, hvis du vil arrangere planlagte besvarelser for flere svarpersoner. Planlægningstyper bruges klassificering af tidsplaner for spørgeskemaer. Du kan f.eks. planlægge spørgeskemaer til følgende formål:
+<span data-ttu-id="029a9-244">Planlægningstyper er nødvendige, hvis du vil arrangere planlagte besvarelser for flere svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-244">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="029a9-245">Planlægningstyper bruges klassificering af tidsplaner for spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="029a9-245">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="029a9-246">Du kan f.eks. planlægge spørgeskemaer til følgende formål:</span><span class="sxs-lookup"><span data-stu-id="029a9-246">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Evaluering
--   Undersøgelse
--   Test
+-   <span data-ttu-id="029a9-247">Evaluering</span><span class="sxs-lookup"><span data-stu-id="029a9-247">Evaluation</span></span>
+-   <span data-ttu-id="029a9-248">Undersøgelse</span><span class="sxs-lookup"><span data-stu-id="029a9-248">Survey</span></span>
+-   <span data-ttu-id="029a9-249">Test</span><span class="sxs-lookup"><span data-stu-id="029a9-249">Testing</span></span>
 
-Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskemaplaner**.
+<span data-ttu-id="029a9-250">Du kan angive planlægningstyper for en spørgeskemaplan på siden **Spørgeskemaplaner**.</span><span class="sxs-lookup"><span data-stu-id="029a9-250">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referencetyper for spørgeskema
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="029a9-251">Referencetyper for spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-251">Reference types for questionnaire</span></span>
 
-Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema. 
+<span data-ttu-id="029a9-252">Du kan bruge referencetyper til at angive kriterier de svarpersoner, du eventuelt vælger, når du planlægger et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-252">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema. Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet. 
+<span data-ttu-id="029a9-253">Brug siden **Referencetyper** til at angive referencetyper for et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-253">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="029a9-254">Hver referencetype svarer til en tabel i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="029a9-254">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="029a9-255">Når du opretter spørgeskemaplaner, kan du angive individuelle poster i tabellen eller et interval af poster, der skal være tilknyttet spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-255">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til. Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.
+<span data-ttu-id="029a9-256">Hvis du f.eks. vælger tabellen Kurser, kan du bestemme, hvilket kursus spørgeskemaet er beregnet til.</span><span class="sxs-lookup"><span data-stu-id="029a9-256">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="029a9-257">Når du opretter en referencetype til tabellen Kurser, bliver nogle felter og knapper på siden **Kurser** tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="029a9-257">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Spørgeskemaplaner
+### <a name="questionnaire-schedules"></a><span data-ttu-id="029a9-258">Spørgeskemaplaner</span><span class="sxs-lookup"><span data-stu-id="029a9-258">Questionnaire schedules</span></span>
 
-Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelsessessioner for en gruppe af brugere, på baggrund af en referencetype. Opret en tidsplan på siden **Spørgeskemaplaner**. Vælg planlægningsgruppen for at kategorisere tidsplanen, og vælg også den referencetype, der skal bruges til at forespørge i systemet efter bestemte brugere. For eksempel hvis du indstiller referencetypen til tabellen Kurser, kan du vælge et bestemt kursus i feltet **Reference**. 
+<span data-ttu-id="029a9-259">Du kan bruge spørgeskemaplaner til at generere flere planlagte besvarelsessessioner for en gruppe af brugere, på baggrund af en referencetype.</span><span class="sxs-lookup"><span data-stu-id="029a9-259">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="029a9-260">Opret en tidsplan på siden **Spørgeskemaplaner**.</span><span class="sxs-lookup"><span data-stu-id="029a9-260">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="029a9-261">Vælg planlægningsgruppen for at kategorisere tidsplanen, og vælg også den referencetype, der skal bruges til at forespørge i systemet efter bestemte brugere.</span><span class="sxs-lookup"><span data-stu-id="029a9-261">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="029a9-262">For eksempel hvis du indstiller referencetypen til tabellen Kurser, kan du vælge et bestemt kursus i feltet **Reference**.</span><span class="sxs-lookup"><span data-stu-id="029a9-262">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier. For eksempel angiv instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren. Når du er færdig med at indtaste oplysninger om opsætningen, genererer systemet planlagte besvarelsessessioner for de brugere, der er medtaget i forespørgslen. 
+<span data-ttu-id="029a9-263">Klik på **Oplysninger om opsætning** for at vælge spørgeskemaet og andre kriterier.</span><span class="sxs-lookup"><span data-stu-id="029a9-263">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="029a9-264">For eksempel angiv instruktørens navn som et kriterium, hvis spørgeskemaet er en vurdering af instruktøren.</span><span class="sxs-lookup"><span data-stu-id="029a9-264">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="029a9-265">Når du er færdig med at indtaste oplysninger om opsætningen, genererer systemet planlagte besvarelsessessioner for de brugere, der er medtaget i forespørgslen.</span><span class="sxs-lookup"><span data-stu-id="029a9-265">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klik på **Planlagte besvarelser** for at få vist besvarelser for planen. Du kan derefter manuelt oprette yderligere planlagte besvarelser eller slette planlagte besvarelser, der ikke er besvaret. 
+<span data-ttu-id="029a9-266">Klik på **Planlagte besvarelser** for at få vist besvarelser for planen.</span><span class="sxs-lookup"><span data-stu-id="029a9-266">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="029a9-267">Du kan derefter manuelt oprette yderligere planlagte besvarelser eller slette planlagte besvarelser, der ikke er besvaret.</span><span class="sxs-lookup"><span data-stu-id="029a9-267">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelsessessioner. Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne. Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.
+<span data-ttu-id="029a9-268">Klik på **Funktioner** &gt; **Start** for at gøre spørgeskemaet tilgængeligt for brugerne i relaterede planlagte besvarelsessessioner.</span><span class="sxs-lookup"><span data-stu-id="029a9-268">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="029a9-269">Klik på **Svar** for at få vist de fuldførte besvarelser af spørgeskemaerne.</span><span class="sxs-lookup"><span data-stu-id="029a9-269">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="029a9-270">Du kan også kopiere indstillingerne for spørgeskemaplanen, planlagte besvarelser og svar på en ny spørgeskemaplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-270">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem
-Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="029a9-271">Besked til svarpersoner om spørgeskemaer, der er tilgængelige for dem</span><span class="sxs-lookup"><span data-stu-id="029a9-271">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="029a9-272">Når du distribuerer et spørgeskema, skal du give svarpersonerne besked om, at spørgeskemaerne er tilgængelige for dem.</span><span class="sxs-lookup"><span data-stu-id="029a9-272">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-**Bemærk!** Svarpersoner skal være brugere i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition for at fuldføre et spørgeskema.
+<span data-ttu-id="029a9-273">**Bemærk!** Svarpersoner skal være brugere i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition for at fuldføre et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="029a9-273">**Note:** Respondents must be users in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition to complete a questionnaire.</span></span>
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Besked til svarpersoner om en planlagt besvarelse
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="029a9-274">Besked til svarpersoner om en planlagt besvarelse</span><span class="sxs-lookup"><span data-stu-id="029a9-274">Notifying respondents about a planned answer session</span></span>
 
-Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.eks. via telefon eller e-mail.
+<span data-ttu-id="029a9-275">Hvis du bruger en planlagt besvarelse, skal du give personen besked direkte, f.eks. via telefon eller e-mail.</span><span class="sxs-lookup"><span data-stu-id="029a9-275">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Besked til svarpersoner om en planlægning
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="029a9-276">Besked til svarpersoner om en planlægning</span><span class="sxs-lookup"><span data-stu-id="029a9-276">Notifying respondents about a scheduling</span></span>
 
-Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet. Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**. Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner. Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet. 
+<span data-ttu-id="029a9-277">Brug siden **Spørgeskemaplaner** til at forberede og sende en e-mail til alle svarpersoner, der er tilknyttet spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-277">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="029a9-278">Indtast e-mailteksten under fanen **E-mail for medarbejderselvbetjening**.</span><span class="sxs-lookup"><span data-stu-id="029a9-278">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="029a9-279">Når tidsplanen er startet, skal du klikke på **Funktioner** &gt; **Send e-mail** for at generere og sende e-mailen til svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-279">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="029a9-280">Svarpersonerne kan derefter logge på webstedet og udfylde spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="029a9-280">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-**Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.
+<span data-ttu-id="029a9-281">**Bemærk!** Før du kan bruge e-mailfunktionen, skal din it-administrator angive e-mailindstillingerne på siden **E-mailparametre**.</span><span class="sxs-lookup"><span data-stu-id="029a9-281">**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Afslutning af et planlagt spørgeskema
-Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser. Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="029a9-282">Afslutning af et planlagt spørgeskema</span><span class="sxs-lookup"><span data-stu-id="029a9-282">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="029a9-283">Du kan afslutte et planlagt spørgeskema, når alle svarpersoner har udfyldt deres tildelte besvarelser.</span><span class="sxs-lookup"><span data-stu-id="029a9-283">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="029a9-284">Når et planlagt spørgeskema er afsluttet, kan du ikke kopiere indstillingerne til en ny tidsplan.</span><span class="sxs-lookup"><span data-stu-id="029a9-284">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-**Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**. Derefter kan du slette tidsplanen.
+<span data-ttu-id="029a9-285">**Bemærk!** Hvis en eller flere svarpersoner ikke har fuldført spørgeskemaet, men du stadig vil afslutte planlægningen, skal du først slette disse svarpersoner fra listen på siden **Planlagte besvarelser**.</span><span class="sxs-lookup"><span data-stu-id="029a9-285">**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="029a9-286">Derefter kan du slette tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="029a9-286">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Besvare spørgeskemaer
-Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner. Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:
+## <a name="completing-questionnaires"></a><span data-ttu-id="029a9-287">Besvare spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-287">Completing questionnaires</span></span>
+<span data-ttu-id="029a9-288">Når du har designet og distribueret et spørgeskema, kan spørgeskemaet udfyldes af udvalgte svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="029a9-288">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="029a9-289">Du kan udfylde de spørgeskemaer, der er tilgængelige for dig, fra to steder:</span><span class="sxs-lookup"><span data-stu-id="029a9-289">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   Klik i navigationsruden på **Spørgeskemaer** &gt; **Distribuer** &gt; **Besvar et spørgeskema**.
--   Klik på **Spørgeskemaer, der skal udfyldes** i Medarbejderselvbetjening.
+-   <span data-ttu-id="029a9-290">Klik i navigationsruden på **Spørgeskemaer** &gt; **Distribuer** &gt; **Besvar et spørgeskema**.</span><span class="sxs-lookup"><span data-stu-id="029a9-290">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="029a9-291">Klik på **Spørgeskemaer, der skal udfyldes** i Medarbejderselvbetjening.</span><span class="sxs-lookup"><span data-stu-id="029a9-291">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.
+<span data-ttu-id="029a9-292">Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper eller for alle brugere på et netværk.</span><span class="sxs-lookup"><span data-stu-id="029a9-292">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="029a9-293">Se også</span><span class="sxs-lookup"><span data-stu-id="029a9-293">See also</span></span>
 --------
 
-[Udforme spørgeskemaer](design-questionnaires.md)
+[<span data-ttu-id="029a9-294">Udforme spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-294">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Brug af spørgeskemaer](questionnaires.md)
+[<span data-ttu-id="029a9-295">Brug af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-295">Using questionnaires</span></span>](questionnaires.md)
 
-[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[<span data-ttu-id="029a9-296">Visning og evaluering af resultaterne af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="029a9-296">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
-master
+<span data-ttu-id="029a9-297">master</span><span class="sxs-lookup"><span data-stu-id="029a9-297">master</span></span>
 

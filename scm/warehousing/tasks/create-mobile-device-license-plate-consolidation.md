@@ -17,23 +17,23 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 1b399a4fdb38958dac886cf69909418b5df246b7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7b8d20561ff092bd64c17c5d9335e9f54a1d191b
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>Oprette et menupunkt for mobilenhedens nummerpladekonsolidering
+# <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a><span data-ttu-id="6513f-103">Oprette et menupunkt for mobilenhedens nummerpladekonsolidering</span><span class="sxs-lookup"><span data-stu-id="6513f-103">Create a mobile device menu item for license plate consolidation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter et menupunkt til din mobilenhed for arbejdet med id-konsolidering. Det gør det muligt for lagermedarbejderne at konsolidere varer for ét id med varer for et andet id inden for samme lokalitet. De kan for eksempel bruge det, hvis efterfølgende midlertidige trin er ens på begge arbejdsordrer, så arbejdet kun skal udføres én gang for de varer, der er flettet. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne opgave udføres normalt af en lagerchef. Denne procedure er til en funktion, der blev tilføjet i Dynamics 365 for Operations, version 1611.
+<span data-ttu-id="6513f-104">Denne procedure viser, hvordan du opretter et menupunkt til din mobilenhed for arbejdet med id-konsolidering.</span><span class="sxs-lookup"><span data-stu-id="6513f-104">This procedure shows you how to create a mobile device menu item for license plate consolidation work.</span></span> <span data-ttu-id="6513f-105">Det gør det muligt for lagermedarbejderne at konsolidere varer for ét id med varer for et andet id inden for samme lokalitet.</span><span class="sxs-lookup"><span data-stu-id="6513f-105">This enables warehouse workers to consolidate items on one license plate with items on another license place within the same location.</span></span> <span data-ttu-id="6513f-106">De kan for eksempel bruge det, hvis efterfølgende midlertidige trin er ens på begge arbejdsordrer, så arbejdet kun skal udføres én gang for de varer, der er flettet.</span><span class="sxs-lookup"><span data-stu-id="6513f-106">For example, they might use this if subsequent staging steps were the same on both work orders, so that the work only needs to be performed once for the merged items.</span></span> <span data-ttu-id="6513f-107">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="6513f-107">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="6513f-108">Denne opgave udføres normalt af en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="6513f-108">The task would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="6513f-109">Denne procedure er til en funktion, der blev tilføjet i Dynamics 365 for Operations, version 1611.</span><span class="sxs-lookup"><span data-stu-id="6513f-109">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
-1. Gå til Lagerstedsstyring > Opsætning > Mobilenhed > Menupunkter i mobilenhed.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Menupunktnavn.
-4. Skriv en værdi i feltet Titel.
-5. Vælg "Indirekte" i feltet Tilstand.
-6. Vælg 'Konsolider id'er' i feltet Aktivitetskode.
+1. <span data-ttu-id="6513f-110">Gå til Lagerstedsstyring > Opsætning > Mobilenhed > Menupunkter i mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="6513f-110">Go to Warehouse management > Setup > Mobile device > Mobile device menu items.</span></span>
+2. <span data-ttu-id="6513f-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="6513f-111">Click New.</span></span>
+3. <span data-ttu-id="6513f-112">Skriv en værdi i feltet Menupunktnavn.</span><span class="sxs-lookup"><span data-stu-id="6513f-112">In the Menu item name field, type a value.</span></span>
+4. <span data-ttu-id="6513f-113">Skriv en værdi i feltet Titel.</span><span class="sxs-lookup"><span data-stu-id="6513f-113">In the Title field, type a value.</span></span>
+5. <span data-ttu-id="6513f-114">Vælg "Indirekte" i feltet Tilstand.</span><span class="sxs-lookup"><span data-stu-id="6513f-114">In the Mode field, select 'Indirect'.</span></span>
+6. <span data-ttu-id="6513f-115">Vælg 'Konsolider id'er' i feltet Aktivitetskode.</span><span class="sxs-lookup"><span data-stu-id="6513f-115">In the Activity code field, select 'Consolidate license plates'.</span></span>
 
 

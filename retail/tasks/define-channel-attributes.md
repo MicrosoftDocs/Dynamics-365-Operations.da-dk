@@ -17,58 +17,58 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ff397d850cb40112bf1c862e230b577e6f8a4a99
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1c5a9bdd0e9eb77308030fb7bea2fa6e438019f1
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-channel-attributes"></a>Definere kanalattributter
+# <a name="define-channel-attributes"></a><span data-ttu-id="88a17-103">Definere kanalattributter</span><span class="sxs-lookup"><span data-stu-id="88a17-103">Define channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Gør kanalen bedre ved at tilføje kanal- og produktattributter. Du skal føje kanalen til organisationens standardhierarki, før du kan definere attributterne.
+<span data-ttu-id="88a17-104">Gør kanalen bedre ved at tilføje kanal- og produktattributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-104">Enrich the channel by adding channel and product attributes.</span></span> <span data-ttu-id="88a17-105">Du skal føje kanalen til organisationens standardhierarki, før du kan definere attributterne.</span><span class="sxs-lookup"><span data-stu-id="88a17-105">You must add the channel to the organization default hierarchy before you can define the attributes.</span></span>
 
 
-## <a name="define-channel-product-attribute"></a>Definer kanalproduktattribut.
-1. Gå til Detail og handel > Konfiguration af kanal > Kanalkategorier og produktattributter.
-2. Vælg "Contoso Retail\Fashion\Houston" i træet.
-3. Klik på Rediger.
-4. Indtast eller vælg en værdi i feltet Kategorihierarki.
-    * Navigationshierarkiet vil blive brugt til at navigere produktet i dine kanaler.  
-5. Udvid sektionen Attributgruppe.
-6. Klik på Tilføj.
-    * Attributgruppen bliver vist i produktoplysningerne og vil også hjælpe, når du bruger produktfilteret.  
-7. Indtast eller vælg en værdi i feltet Navn.
-8. Klik på Vis attributter.
-9. Udvid sektionen Attributter.
-10. Klik på Tilføj.
-11. Markér den valgte række på listen.
-12. Klik på AddBtn.
-13. Klik på OK.
-14. Klik på Gem.
-15. Luk siden.
-16. Udvid afsnittet Produkter.
-17. Klik på Tilføj.
-18. Markér den valgte række på listen.
-19. Klik på Tilføj.
-    * Du kan tilføje flere produkter på denne måde.  
-20. Klik på OK.
-21. Klik på Attributter.
-22. Udvid sektionen Kanalmedier.
-23. Klik på Rediger.
-24. Vælg en indstilling i feltet Kanal.
-25. Markér afkrydsningsfeltet Standard.
-26. Klik på OK.
-27. Udvid sektionen Kanalproduktattributter.
-28. Skriv en værdi i feltet Brand.
-    * På samme måde kan du angive andre attributter.  
-29. Klik på Gem.
-30. Luk siden.
-31. Klik på Gem.
-32. Klik på Publicer kanalopdateringer.
-    * Efter publiceringen er dataene klar til synkronisering med kanaltabellerne. Hvis du ikke publicerede, bliver de ændrede data ikke synkroniserer med kanal-tabellerne.  
-33. Klik på OK.
-34. Klik på Gem.
+## <a name="define-channel-product-attribute"></a><span data-ttu-id="88a17-106">Definer kanalproduktattribut.</span><span class="sxs-lookup"><span data-stu-id="88a17-106">Define channel product attribute.</span></span>
+1. <span data-ttu-id="88a17-107">Gå til Detail og handel > Konfiguration af kanal > Kanalkategorier og produktattributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-107">Go to Retail and commerce > Channel setup > Channel categories and product attributes.</span></span>
+2. <span data-ttu-id="88a17-108">Vælg "Contoso Retail\Fashion\Houston" i træet.</span><span class="sxs-lookup"><span data-stu-id="88a17-108">In the tree, select 'Contoso Retail\Fashion\Houston'.</span></span>
+3. <span data-ttu-id="88a17-109">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="88a17-109">Click Edit.</span></span>
+4. <span data-ttu-id="88a17-110">Indtast eller vælg en værdi i feltet Kategorihierarki.</span><span class="sxs-lookup"><span data-stu-id="88a17-110">In the Category hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="88a17-111">Navigationshierarkiet vil blive brugt til at navigere produktet i dine kanaler.</span><span class="sxs-lookup"><span data-stu-id="88a17-111">The navigation hierarchy will be used for navigating the product inside your channels.</span></span>  
+5. <span data-ttu-id="88a17-112">Udvid sektionen Attributgruppe.</span><span class="sxs-lookup"><span data-stu-id="88a17-112">Expand the Attribute group section.</span></span>
+6. <span data-ttu-id="88a17-113">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="88a17-113">Click Add.</span></span>
+    * <span data-ttu-id="88a17-114">Attributgruppen bliver vist i produktoplysningerne og vil også hjælpe, når du bruger produktfilteret.</span><span class="sxs-lookup"><span data-stu-id="88a17-114">The attribute group will be shown in the product details and also will help when using the product filter.</span></span>  
+7. <span data-ttu-id="88a17-115">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="88a17-115">In the Name field, enter or select a value.</span></span>
+8. <span data-ttu-id="88a17-116">Klik på Vis attributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-116">Click View attributes.</span></span>
+9. <span data-ttu-id="88a17-117">Udvid sektionen Attributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-117">Expand the Attributes section.</span></span>
+10. <span data-ttu-id="88a17-118">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="88a17-118">Click Add.</span></span>
+11. <span data-ttu-id="88a17-119">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="88a17-119">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="88a17-120">Klik på AddBtn.</span><span class="sxs-lookup"><span data-stu-id="88a17-120">Click AddBtn.</span></span>
+13. <span data-ttu-id="88a17-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="88a17-121">Click OK.</span></span>
+14. <span data-ttu-id="88a17-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="88a17-122">Click Save.</span></span>
+15. <span data-ttu-id="88a17-123">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="88a17-123">Close the page.</span></span>
+16. <span data-ttu-id="88a17-124">Udvid afsnittet Produkter.</span><span class="sxs-lookup"><span data-stu-id="88a17-124">Expand the Products section.</span></span>
+17. <span data-ttu-id="88a17-125">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="88a17-125">Click Add.</span></span>
+18. <span data-ttu-id="88a17-126">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="88a17-126">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="88a17-127">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="88a17-127">Click Add.</span></span>
+    * <span data-ttu-id="88a17-128">Du kan tilføje flere produkter på denne måde.</span><span class="sxs-lookup"><span data-stu-id="88a17-128">Similarly you can add multiple products.</span></span>  
+20. <span data-ttu-id="88a17-129">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="88a17-129">Click OK.</span></span>
+21. <span data-ttu-id="88a17-130">Klik på Attributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-130">Click Attributes.</span></span>
+22. <span data-ttu-id="88a17-131">Udvid sektionen Kanalmedier.</span><span class="sxs-lookup"><span data-stu-id="88a17-131">Expand the Channel media section.</span></span>
+23. <span data-ttu-id="88a17-132">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="88a17-132">Click Edit.</span></span>
+24. <span data-ttu-id="88a17-133">Vælg en indstilling i feltet Kanal.</span><span class="sxs-lookup"><span data-stu-id="88a17-133">In the Channel field, select an option.</span></span>
+25. <span data-ttu-id="88a17-134">Markér afkrydsningsfeltet Standard.</span><span class="sxs-lookup"><span data-stu-id="88a17-134">Select the Default check box.</span></span>
+26. <span data-ttu-id="88a17-135">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="88a17-135">Click OK.</span></span>
+27. <span data-ttu-id="88a17-136">Udvid sektionen Kanalproduktattributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-136">Expand the Channel product attributes section.</span></span>
+28. <span data-ttu-id="88a17-137">Skriv en værdi i feltet Brand.</span><span class="sxs-lookup"><span data-stu-id="88a17-137">In the Brand field, type a value.</span></span>
+    * <span data-ttu-id="88a17-138">På samme måde kan du angive andre attributter.</span><span class="sxs-lookup"><span data-stu-id="88a17-138">Similarly you can set the other attributes.</span></span>  
+29. <span data-ttu-id="88a17-139">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="88a17-139">Click Save.</span></span>
+30. <span data-ttu-id="88a17-140">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="88a17-140">Close the page.</span></span>
+31. <span data-ttu-id="88a17-141">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="88a17-141">Click Save.</span></span>
+32. <span data-ttu-id="88a17-142">Klik på Publicer kanalopdateringer.</span><span class="sxs-lookup"><span data-stu-id="88a17-142">Click Publish channel updates.</span></span>
+    * <span data-ttu-id="88a17-143">Efter publiceringen er dataene klar til synkronisering med kanaltabellerne.</span><span class="sxs-lookup"><span data-stu-id="88a17-143">After publish the data will be ready for sync with the channel tables.</span></span> <span data-ttu-id="88a17-144">Hvis du ikke publicerede, bliver de ændrede data ikke synkroniserer med kanal-tabellerne.</span><span class="sxs-lookup"><span data-stu-id="88a17-144">If you didn't publish the modified data will not be synced with the channel tables.</span></span>  
+33. <span data-ttu-id="88a17-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="88a17-145">Click OK.</span></span>
+34. <span data-ttu-id="88a17-146">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="88a17-146">Click Save.</span></span>
 
 

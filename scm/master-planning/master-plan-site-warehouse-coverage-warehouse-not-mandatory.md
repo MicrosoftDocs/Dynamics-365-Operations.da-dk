@@ -20,31 +20,31 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ec5150abd297a7c00ac180db581adb30bef65b3f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9c7b13a7a018ce584c877fed6212abc3c2913903
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Varedisponering for lokations- og lagerdisponering, lagersted er ikke obligatorisk
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a><span data-ttu-id="c5912-104">Varedisponering for lokations- og lagerdisponering, lagersted er ikke obligatorisk</span><span class="sxs-lookup"><span data-stu-id="c5912-104">Master planning for site and warehouse coverage, warehouse not mandatory</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives det, hvordan en vare med lokation og lagersted som disponeringsdimensioner bliver planlagt. Lagerstedsdimensionen er ikke obligatorisk.
+<span data-ttu-id="c5912-105">I dette emne beskrives det, hvordan en vare med lokation og lagersted som disponeringsdimensioner bliver planlagt.</span><span class="sxs-lookup"><span data-stu-id="c5912-105">This topic describes how an item that has site and warehouse as coverage dimensions is planned.</span></span> <span data-ttu-id="c5912-106">Lagerstedsdimensionen er ikke obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="c5912-106">The warehouse dimension is not mandatory.</span></span>
 
-Dette behovsplanlægningsscenario omfatter følgende forhold:
+<span data-ttu-id="c5912-107">Dette behovsplanlægningsscenario omfatter følgende forhold:</span><span class="sxs-lookup"><span data-stu-id="c5912-107">This master planning scenario involves the following conditions:</span></span>
 
--   Lokationsdimensionen er angivet til obligatorisk og skal angives på behovsposteringen. Denne indstilling kan ikke redigeres.
--   Lagerstedsdimensionen er ikke angivet til obligatorisk. Lagerstedet er måske kendt, men bruges ikke i beregningen i varedisponeringen.
--   Lokations- og lagerstedsdimensioner angives ved behovsplanlægning. Andre dimensioner angives måske også ved behovsplanlægning. Men de påvirkes ikke af funktionen til flere lokationer.
+-   <span data-ttu-id="c5912-108">Lokationsdimensionen er angivet til obligatorisk og skal angives på behovsposteringen.</span><span class="sxs-lookup"><span data-stu-id="c5912-108">The site dimension is set to mandatory and must be entered on the demand transaction.</span></span> <span data-ttu-id="c5912-109">Denne indstilling kan ikke redigeres.</span><span class="sxs-lookup"><span data-stu-id="c5912-109">This setting can't be modified.</span></span>
+-   <span data-ttu-id="c5912-110">Lagerstedsdimensionen er ikke angivet til obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="c5912-110">The warehouse dimension is not set to mandatory.</span></span> <span data-ttu-id="c5912-111">Lagerstedet er måske kendt, men bruges ikke i beregningen i varedisponeringen.</span><span class="sxs-lookup"><span data-stu-id="c5912-111">The warehouse may be known, but it is not used in the master planning calculation.</span></span>
+-   <span data-ttu-id="c5912-112">Lokations- og lagerstedsdimensioner angives ved behovsplanlægning.</span><span class="sxs-lookup"><span data-stu-id="c5912-112">The site and warehouse dimensions are set for coverage planning.</span></span> <span data-ttu-id="c5912-113">Andre dimensioner angives måske også ved behovsplanlægning.</span><span class="sxs-lookup"><span data-stu-id="c5912-113">Other dimensions may be set for coverage planning also.</span></span> <span data-ttu-id="c5912-114">Men de påvirkes ikke af funktionen til flere lokationer.</span><span class="sxs-lookup"><span data-stu-id="c5912-114">However, they are not affected by the multisite functionality.</span></span>
 
-I følgende grafik vises, hvordan varedisponering forløber. De parametre, der henvises til i grafikken, og deres placering er følgende:
--   Lagerstedet er angivet til Manuel. Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**. I **Overordnet planlægning** oversigtspanelet finder du feltet **Manuel**.
--   Der er defineret varedisponering for varen. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Varedisponering**.
--   Der er angivet påfyldningsrelationer for lagerstedet. Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**. Se feltgruppen **Hovedlagersted** i oversigtspanelet **Overordnet planlægning**.
--   Standardordretypen er indstillet til Produktion, Indkøbsordre eller Kanban. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Standardindstillinger for ordre**. I formen **Standardindstillinger for ordre** kan du se **Standardordretype**.
+<span data-ttu-id="c5912-115">I følgende grafik vises, hvordan varedisponering forløber.</span><span class="sxs-lookup"><span data-stu-id="c5912-115">The following graphic illustrates how master planning proceeds.</span></span> <span data-ttu-id="c5912-116">De parametre, der henvises til i grafikken, og deres placering er følgende:</span><span class="sxs-lookup"><span data-stu-id="c5912-116">The parameters that are referred to in the graphic, and their locations, are as follows:</span></span>
+-   <span data-ttu-id="c5912-117">Lagerstedet er angivet til Manuel.</span><span class="sxs-lookup"><span data-stu-id="c5912-117">The warehouse is set to Manual.</span></span> <span data-ttu-id="c5912-118">Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**.</span><span class="sxs-lookup"><span data-stu-id="c5912-118">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="c5912-119">I **Overordnet planlægning** oversigtspanelet finder du feltet **Manuel**.</span><span class="sxs-lookup"><span data-stu-id="c5912-119">On the **Master planning** FastTab, see the **Manual** field.</span></span>
+-   <span data-ttu-id="c5912-120">Der er defineret varedisponering for varen.</span><span class="sxs-lookup"><span data-stu-id="c5912-120">Item coverage is defined for the item.</span></span> <span data-ttu-id="c5912-121">Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="c5912-121">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="c5912-122">Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Varedisponering**.</span><span class="sxs-lookup"><span data-stu-id="c5912-122">Select the item, and then, on the Action pane, on the **Plan** tab, click **Item coverage**.</span></span>
+-   <span data-ttu-id="c5912-123">Der er angivet påfyldningsrelationer for lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="c5912-123">Refill relations are defined for the warehouse.</span></span> <span data-ttu-id="c5912-124">Klik på **Lagerstyring &gt; Opsætning &gt; Lageropdeling &gt; Lagersteder**.</span><span class="sxs-lookup"><span data-stu-id="c5912-124">Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**.</span></span> <span data-ttu-id="c5912-125">Se feltgruppen **Hovedlagersted** i oversigtspanelet **Overordnet planlægning**.</span><span class="sxs-lookup"><span data-stu-id="c5912-125">On the **Master planning** FastTab, see the **Main warehouse** field group.</span></span>
+-   <span data-ttu-id="c5912-126">Standardordretypen er indstillet til Produktion, Indkøbsordre eller Kanban.</span><span class="sxs-lookup"><span data-stu-id="c5912-126">The default order type is set to Production, Purchase order, or Kanban.</span></span> <span data-ttu-id="c5912-127">Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="c5912-127">Click **Product information management &gt; Products&gt; Released products**.</span></span> <span data-ttu-id="c5912-128">Vælg varen, og derefter skal du i Handlingsrude under fanen **Plan** klikke på **Standardindstillinger for ordre**.</span><span class="sxs-lookup"><span data-stu-id="c5912-128">Select the item, and then, on the Action pane, on the **Plan** tab, click **Default order settings**.</span></span> <span data-ttu-id="c5912-129">I formen **Standardindstillinger for ordre** kan du se **Standardordretype**.</span><span class="sxs-lookup"><span data-stu-id="c5912-129">In the **Default order settings** form, see the **Default order type**.</span></span>
 
 ![Efterspørgsel efter lokalitet og lagersted, lagersted er ikke obligatorisk](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
@@ -53,18 +53,18 @@ I følgende grafik vises, hvordan varedisponering forløber. De parametre, der h
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="c5912-131">Se også</span><span class="sxs-lookup"><span data-stu-id="c5912-131">See also</span></span>
 --------
 
-[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+[<span data-ttu-id="c5912-132">Varedisponering og funktionen til flere lokationer</span><span class="sxs-lookup"><span data-stu-id="c5912-132">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
-[Overordnet planlægning – lokations- og lagerdisponering, lagersted er obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="c5912-133">Overordnet planlægning – lokations- og lagerdisponering, lagersted er obligatorisk</span><span class="sxs-lookup"><span data-stu-id="c5912-133">Master planning - site and warehouse coverage, warehouse mandatory</span></span>](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Overordnet planlægning – lokalitetsdisponering, lagersted er obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
+[<span data-ttu-id="c5912-134">Overordnet planlægning – lokalitetsdisponering, lagersted er obligatorisk</span><span class="sxs-lookup"><span data-stu-id="c5912-134">Master planning - site coverage, warehouse mandatory</span></span>](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Overordnet planlægning – lokalitetsdisponering, lagersted er ikke obligatorisk](master-plan-site-coverage-warehouse-not-mandatory.md)
+[<span data-ttu-id="c5912-135">Overordnet planlægning – lokalitetsdisponering, lagersted er ikke obligatorisk</span><span class="sxs-lookup"><span data-stu-id="c5912-135">Master planning - site coverage, warehouse not mandatory</span></span>](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Overordnet planlægning – sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+[<span data-ttu-id="c5912-136">Overordnet planlægning – sådan bestemmes styklisteversionen</span><span class="sxs-lookup"><span data-stu-id="c5912-136">Master planning - How the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
 
 

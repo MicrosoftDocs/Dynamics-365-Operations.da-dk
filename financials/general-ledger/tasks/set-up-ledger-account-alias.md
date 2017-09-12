@@ -16,28 +16,28 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 43031eaf737c75dec28a9d7c5c002c93911289c5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 134d7249abe7c97ee0e9604a86de4f1c98c0e9e1
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-ledger-account-alias"></a>Konfigurere et finanskontoalias
+# <a name="set-up-a-ledger-account-alias"></a><span data-ttu-id="705e2-103">Konfigurere et finanskontoalias</span><span class="sxs-lookup"><span data-stu-id="705e2-103">Set up a ledger account alias</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer. Denne procedure bruger demodatafirmaet USMF.
+<span data-ttu-id="705e2-104">I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer.</span><span class="sxs-lookup"><span data-stu-id="705e2-104">This procedure shows how to create an account alias that provides a shortcut for entering an account number.</span></span> <span data-ttu-id="705e2-105">Denne procedure bruger demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="705e2-105">This procedure users demo data company USMF.</span></span>
 
-1. Gå til Finans > Kontoplan > Konti > Finanskontoalias.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Finanskontoalias.
-4. I feltet Kontostruktur skal du vælge den struktur, som kontoen og dimensionerne tilhører.
-5. Klik på rullelisten i feltet Firma for at åbne opslaget.
-6. Søg på listen, og vælg det regnskab, som aliaset gælder for.
-7. Klik op linket i den valgte række på listen.
-8. Angiv kontoen og dimensionerne i feltet Angivelse af finanskontoalias.
-    * Den kontoen og dimensionerne udfyldes, når du bruger genvejen.  
-9. I feltet Startfokusering skal du vælge den dimension, der har fokus, når aliaset bruges.
-    * Når du har indtastet genvejen, og kontoen og dimensionerne er udfyldt, flyttes markøren eller fokus til feltet Startfokusering.  
+1. <span data-ttu-id="705e2-106">Gå til Finans > Kontoplan > Konti > Finanskontoalias.</span><span class="sxs-lookup"><span data-stu-id="705e2-106">Go to General ledger > Chart of accounts > Accounts > Ledger account alias.</span></span>
+2. <span data-ttu-id="705e2-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="705e2-107">Click New.</span></span>
+3. <span data-ttu-id="705e2-108">Skriv en værdi i feltet Finanskontoalias.</span><span class="sxs-lookup"><span data-stu-id="705e2-108">In the Ledger account alias field, type a value.</span></span>
+4. <span data-ttu-id="705e2-109">I feltet Kontostruktur skal du vælge den struktur, som kontoen og dimensionerne tilhører.</span><span class="sxs-lookup"><span data-stu-id="705e2-109">In the Account structure field, select the structure the account and dimensions belong to.</span></span>
+5. <span data-ttu-id="705e2-110">Klik på rullelisten i feltet Firma for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="705e2-110">In the Company field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="705e2-111">Søg på listen, og vælg det regnskab, som aliaset gælder for.</span><span class="sxs-lookup"><span data-stu-id="705e2-111">In the list, find and select the company that the alias applies to.</span></span>
+7. <span data-ttu-id="705e2-112">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="705e2-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="705e2-113">Angiv kontoen og dimensionerne i feltet Angivelse af finanskontoalias.</span><span class="sxs-lookup"><span data-stu-id="705e2-113">In the Ledger account alias definition field, specify the account and dimensions.</span></span>
+    * <span data-ttu-id="705e2-114">Den kontoen og dimensionerne udfyldes, når du bruger genvejen.</span><span class="sxs-lookup"><span data-stu-id="705e2-114">The account and dimensions will be populated when using the shortcut.</span></span>  
+9. <span data-ttu-id="705e2-115">I feltet Startfokusering skal du vælge den dimension, der har fokus, når aliaset bruges.</span><span class="sxs-lookup"><span data-stu-id="705e2-115">In the Initial focus field, select the dimension that will have focus when the alias is used.</span></span>
+    * <span data-ttu-id="705e2-116">Når du har indtastet genvejen, og kontoen og dimensionerne er udfyldt, flyttes markøren eller fokus til feltet Startfokusering.</span><span class="sxs-lookup"><span data-stu-id="705e2-116">After you type the shortcut, and the account and dimensions are populated, the Initial focus field is where the cursor or focus will move to.</span></span>  
 
 

@@ -17,28 +17,28 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c52a2f226b079b404eab53e01b3025647633d04
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 62f3f71cc5e47f0fb027211a911e61673ca2e375
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a>Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen
+# <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a><span data-ttu-id="27b16-103">Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen</span><span class="sxs-lookup"><span data-stu-id="27b16-103">Prepare a process kanban job when materials are available for the work cell</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materialerne ikke er tilgængelige for arbejdscellen. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til maskinoperatøren.
+<span data-ttu-id="27b16-104">Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materialerne ikke er tilgængelige for arbejdscellen.</span><span class="sxs-lookup"><span data-stu-id="27b16-104">This task focuses on preparing a process kanban job when all materials are available for the work cell.</span></span> <span data-ttu-id="27b16-105">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="27b16-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="27b16-106">Denne opgave er beregnet til maskinoperatøren.</span><span class="sxs-lookup"><span data-stu-id="27b16-106">This task is intended for the machine operator.</span></span>
 
-1. Gå til Kanban-område til procesjob.
-2. Klik på rullelisten i feltet Arbejdscelle for at åbne opslaget.
-3. Klik op linket i den valgte række på listen.
-    * Vælg arbejdscelle 1250, og klik på OK.  
-4. Markér række 4 på listen.
-    * I det rene demofirma er Kanban 000329 i række 4 det første job, der ikke er fuldført endnu.  
-5. Slå udvidelsen af sektionen Plukliste til/fra.
-    * Kontrollér, at forsyningsstatus er tilgængelig for alle varer på pluklisten.  
-    * Hvis flere job er markeret, viser pluklisten summen af alle varer, der er nødvendige for de valgte job.  
-6. Klik på Klargør.
-    * Klargøringsprocessen er nu fuldført. Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.  
+1. <span data-ttu-id="27b16-107">Gå til Kanban-område til procesjob.</span><span class="sxs-lookup"><span data-stu-id="27b16-107">Go to Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="27b16-108">Klik på rullelisten i feltet Arbejdscelle for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="27b16-108">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="27b16-109">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="27b16-109">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="27b16-110">Vælg arbejdscelle 1250, og klik på OK.</span><span class="sxs-lookup"><span data-stu-id="27b16-110">Select work cell 1250 and click OK.</span></span>  
+4. <span data-ttu-id="27b16-111">Markér række 4 på listen.</span><span class="sxs-lookup"><span data-stu-id="27b16-111">In the list, select row 4.</span></span>
+    * <span data-ttu-id="27b16-112">I det rene demofirma er Kanban 000329 i række 4 det første job, der ikke er fuldført endnu.</span><span class="sxs-lookup"><span data-stu-id="27b16-112">In the clean demo company, Kanban 000329 in row 4 is the first job that is not completed yet.</span></span>  
+5. <span data-ttu-id="27b16-113">Slå udvidelsen af sektionen Plukliste til/fra.</span><span class="sxs-lookup"><span data-stu-id="27b16-113">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="27b16-114">Kontrollér, at forsyningsstatus er tilgængelig for alle varer på pluklisten.</span><span class="sxs-lookup"><span data-stu-id="27b16-114">Verify that the supply status is available for all items in the picking list.</span></span>  
+    * <span data-ttu-id="27b16-115">Hvis flere job er markeret, viser pluklisten summen af alle varer, der er nødvendige for de valgte job.</span><span class="sxs-lookup"><span data-stu-id="27b16-115">If multiple jobs are selected, the picking list will show the sum of all items needed for the selected jobs.</span></span>  
+6. <span data-ttu-id="27b16-116">Klik på Klargør.</span><span class="sxs-lookup"><span data-stu-id="27b16-116">Click Prepare.</span></span>
+    * <span data-ttu-id="27b16-117">Klargøringsprocessen er nu fuldført.</span><span class="sxs-lookup"><span data-stu-id="27b16-117">The preparation process is now completed.</span></span> <span data-ttu-id="27b16-118">Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.</span><span class="sxs-lookup"><span data-stu-id="27b16-118">The selected check box for all rows in the picking list indicates that the supply status is picked.</span></span>  
 
 

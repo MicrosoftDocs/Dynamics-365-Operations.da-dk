@@ -17,44 +17,44 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2f85c124957d2f47355544442ad8085e8b3719a1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2705008908699bda9479eb54a4827c71f402b603
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-a-hardware-station"></a>Oprette og tilknytte en hardwarestation
+# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="8d76f-103">Oprette og tilknytte en hardwarestation</span><span class="sxs-lookup"><span data-stu-id="8d76f-103">Create and associate a hardware station</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne procedure gennemgår oprettelse af en ny hardwarestation. En ny hardwareprofil oprettes og bruges til at tilføje nye hardwarestationer til en foruddefineret butik (kanal). Denne procedure bruger USRT-firmaets demodata.
+<span data-ttu-id="8d76f-104">Denne procedure gennemgår oprettelse af en ny hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="8d76f-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="8d76f-105">En ny hardwareprofil oprettes og bruges til at tilføje nye hardwarestationer til en foruddefineret butik (kanal).</span><span class="sxs-lookup"><span data-stu-id="8d76f-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="8d76f-106">Denne procedure bruger USRT-firmaets demodata.</span><span class="sxs-lookup"><span data-stu-id="8d76f-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. Gå til Oprindelsesdata til handel > Kanaler >.. > .. > .. > Hardwarestations profiler.
-2. Klik på Ny.
-3. Skriv "TestHWProfile" i feltet Hardwarestation-id.
-4. Skriv en værdi i feltet Navn.
-5. Angiv et tal i feltet Portnummer.
-6. Klik på rullelisten i feltet Hardwareprofil for at åbne opslaget.
-7. Find og vælg den ønskede post på listen.
-8. Klik op linket i den valgte række på listen.
-9. Klik på rullelisten i feltet Pakkens navn for at åbne opslaget.
-10. Klik op linket i den valgte række på listen.
-    * Dette er den standardpakke, der følger med et nyt miljø. Versionsnummeret kan variere.  
-11. Klik på Gem.
-12. Luk siden.
-13. Gå til Detail og handel > Kanaler > Alle detailbutikker.
-14. Markér række 17 på listen.
-    * Hvis du bruger USRT-demodatafirmaet, er dette Houston-butikken.  
-15. Klik op linket i den valgte række på listen.
-16. Slå udvidelsen af sektionen Hardwarestationer til/fra.
-17. Klik på Tilføj.
-18. Markér den valgte række på listen.
-19. Klik på rullelisten i feltet Profil-id for at åbne opslaget.
-20. Find og vælg den ønskede post på listen.
-    * Det skal være den nye hardwarestationsprofil, du oprettede i de forrige trin.  
-21. Klik op linket i den valgte række på listen.
-22. Indtast en værdi i feltet Værtsnavn.
-23. Indtast en værdi i feltet Terminal-id for elektronisk pengeoverførsel.
-24. Klik på Gem.
+1. <span data-ttu-id="8d76f-107">Gå til Oprindelsesdata til handel > Kanaler >..</span><span class="sxs-lookup"><span data-stu-id="8d76f-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="8d76f-108">> ..</span><span class="sxs-lookup"><span data-stu-id="8d76f-108">> ..</span></span> <span data-ttu-id="8d76f-109">> ..</span><span class="sxs-lookup"><span data-stu-id="8d76f-109">> ..</span></span> <span data-ttu-id="8d76f-110">> Hardwarestations profiler.</span><span class="sxs-lookup"><span data-stu-id="8d76f-110">> Hardware station profiles.</span></span>
+2. <span data-ttu-id="8d76f-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8d76f-111">Click New.</span></span>
+3. <span data-ttu-id="8d76f-112">Skriv "TestHWProfile" i feltet Hardwarestation-id.</span><span class="sxs-lookup"><span data-stu-id="8d76f-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
+4. <span data-ttu-id="8d76f-113">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8d76f-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="8d76f-114">Angiv et tal i feltet Portnummer.</span><span class="sxs-lookup"><span data-stu-id="8d76f-114">In the Port number field, enter a number.</span></span>
+6. <span data-ttu-id="8d76f-115">Klik på rullelisten i feltet Hardwareprofil for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8d76f-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="8d76f-116">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="8d76f-117">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="8d76f-118">Klik på rullelisten i feltet Pakkens navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8d76f-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="8d76f-119">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-119">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="8d76f-120">Dette er den standardpakke, der følger med et nyt miljø.</span><span class="sxs-lookup"><span data-stu-id="8d76f-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="8d76f-121">Versionsnummeret kan variere.</span><span class="sxs-lookup"><span data-stu-id="8d76f-121">The version number may vary.</span></span>  
+11. <span data-ttu-id="8d76f-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8d76f-122">Click Save.</span></span>
+12. <span data-ttu-id="8d76f-123">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8d76f-123">Close the page.</span></span>
+13. <span data-ttu-id="8d76f-124">Gå til Detail og handel > Kanaler > Alle detailbutikker.</span><span class="sxs-lookup"><span data-stu-id="8d76f-124">Go to Retail and commerce > Channels > All retail stores.</span></span>
+14. <span data-ttu-id="8d76f-125">Markér række 17 på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-125">In the list, select row 17.</span></span>
+    * <span data-ttu-id="8d76f-126">Hvis du bruger USRT-demodatafirmaet, er dette Houston-butikken.</span><span class="sxs-lookup"><span data-stu-id="8d76f-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
+15. <span data-ttu-id="8d76f-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-127">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="8d76f-128">Slå udvidelsen af sektionen Hardwarestationer til/fra.</span><span class="sxs-lookup"><span data-stu-id="8d76f-128">Toggle the expansion of the Hardware stations section.</span></span>
+17. <span data-ttu-id="8d76f-129">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="8d76f-129">Click Add.</span></span>
+18. <span data-ttu-id="8d76f-130">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-130">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="8d76f-131">Klik på rullelisten i feltet Profil-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="8d76f-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="8d76f-132">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-132">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8d76f-133">Det skal være den nye hardwarestationsprofil, du oprettede i de forrige trin.</span><span class="sxs-lookup"><span data-stu-id="8d76f-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
+21. <span data-ttu-id="8d76f-134">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="8d76f-134">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="8d76f-135">Indtast en værdi i feltet Værtsnavn.</span><span class="sxs-lookup"><span data-stu-id="8d76f-135">In the Host name field, type a value.</span></span>
+23. <span data-ttu-id="8d76f-136">Indtast en værdi i feltet Terminal-id for elektronisk pengeoverførsel.</span><span class="sxs-lookup"><span data-stu-id="8d76f-136">In the EFT terminal ID field, type a value.</span></span>
+24. <span data-ttu-id="8d76f-137">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8d76f-137">Click Save.</span></span>
 
 

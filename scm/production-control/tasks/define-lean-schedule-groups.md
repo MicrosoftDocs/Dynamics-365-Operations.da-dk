@@ -17,42 +17,42 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 75d8b6614fd3b36d87bcb95b0b753b611a101f62
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a5bc20c0a9e2396365caebeb3751d2090e4575a4
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-lean-schedule-groups"></a>Definere lean planlægningsgrupper
+# <a name="define-lean-schedule-groups"></a><span data-ttu-id="92a2f-103">Definere lean planlægningsgrupper</span><span class="sxs-lookup"><span data-stu-id="92a2f-103">Define lean schedule groups</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Lean planlægningsgrupper defineres for at gruppere og adskille produkter i kanban-planlægning. Grupperingen kan foretages som standardtilknytning pr. firma eller som specifik for en arbejdscelle. Hver gruppe har en tildelt farvekode for visuel angivelse i kanban-planlægningens listpage. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+<span data-ttu-id="92a2f-104">Lean planlægningsgrupper defineres for at gruppere og adskille produkter i kanban-planlægning.</span><span class="sxs-lookup"><span data-stu-id="92a2f-104">Lean schedule groups are defined to group and distinguish products in kanban scheduling.</span></span> <span data-ttu-id="92a2f-105">Grupperingen kan foretages som standardtilknytning pr. firma eller som specifik for en arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="92a2f-105">The grouping can be done as generic association per company or specific to a work cell.</span></span> <span data-ttu-id="92a2f-106">Hver gruppe har en tildelt farvekode for visuel angivelse i kanban-planlægningens listpage.</span><span class="sxs-lookup"><span data-stu-id="92a2f-106">Each group has a color code assigned for visual indication in the kanban scheduling listpage.</span></span> <span data-ttu-id="92a2f-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="92a2f-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="define-lean-scheduling-group"></a>Definere lean planlægningsgruppe
-1. Gå til Administration af produktoplysninger > Lean produktion > Lean planlægningsgrupper.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Planlægningsgruppe.
-    * En planlægningsgruppe kan defineres som en global gruppe eller specifik for en arbejdscelle. I dette enkle eksempel definerer vi en global gruppe og lader arbejdscellen være tom. Indstillingerne for denne gruppe gælder for arbejdsceller, der ikke har bestemte planlægningsgrupper.  
-4. Vælg en farve i farvevalget.
-    * Farverne bruges til at fremhæve job på listesiden for kanban-tidsplanen eller kanban-procesområdet.  
-5. Markér den valgte række på listen.
-6. Klik op linket i den valgte række på listen.
+## <a name="define-lean-scheduling-group"></a><span data-ttu-id="92a2f-108">Definere lean planlægningsgruppe</span><span class="sxs-lookup"><span data-stu-id="92a2f-108">Define lean scheduling group</span></span>
+1. <span data-ttu-id="92a2f-109">Gå til Administration af produktoplysninger > Lean produktion > Lean planlægningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="92a2f-109">Go to Product information management > Lean manufacturing > Lean schedule groups.</span></span>
+2. <span data-ttu-id="92a2f-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="92a2f-110">Click New.</span></span>
+3. <span data-ttu-id="92a2f-111">Indtast en værdi i feltet Planlægningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="92a2f-111">In the Schedule group field, type a value.</span></span>
+    * <span data-ttu-id="92a2f-112">En planlægningsgruppe kan defineres som en global gruppe eller specifik for en arbejdscelle.</span><span class="sxs-lookup"><span data-stu-id="92a2f-112">A schedule group can be defined as global group or specific to a work cell.</span></span> <span data-ttu-id="92a2f-113">I dette enkle eksempel definerer vi en global gruppe og lader arbejdscellen være tom.</span><span class="sxs-lookup"><span data-stu-id="92a2f-113">In this simple example, we define a global group, and the work cell is kept empty.</span></span> <span data-ttu-id="92a2f-114">Indstillingerne for denne gruppe gælder for arbejdsceller, der ikke har bestemte planlægningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="92a2f-114">The settings of this group apply to all work cells that do not have specific schedule groups.</span></span>  
+4. <span data-ttu-id="92a2f-115">Vælg en farve i farvevalget.</span><span class="sxs-lookup"><span data-stu-id="92a2f-115">Select a color from the color selection.</span></span>
+    * <span data-ttu-id="92a2f-116">Farverne bruges til at fremhæve job på listesiden for kanban-tidsplanen eller kanban-procesområdet.</span><span class="sxs-lookup"><span data-stu-id="92a2f-116">The colors are used to highlight the jobs on the kanban schedule list page or the kanban process board.</span></span>  
+5. <span data-ttu-id="92a2f-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="92a2f-117">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="92a2f-118">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="92a2f-118">In the list, click the link in the selected row.</span></span>
 
-## <a name="associate-product"></a>Tilknytte produkt
-1. Tilknytte et bestemt produkt
-    * Der er to måder at knytte produkter til lean planlægningsgrupper: enten som et bestemt produkt (varerelationstype = vare) eller som en del af en varefordelingsnøgle (varerelationstype = gruppe).    
-2. Vælg Vare i feltet Varerelationstype
-3. Indtast en værdi i feltet Varenummer.
-4. Angiv et tal i feltet Gennemløbsforhold.
-    * Standardgennemløbsforholdet er 1, hvilket betyder, at de relaterede produkter forbruger nøjagtigt den kapacitet, der er angivet i procesaktiviteterne for produktionsflowene. Gennemløbsforhold > 1 definerer et højere ressourceforbrug, Gennemløbsforhold < 1 definerer et lavere ressourceforbrug. Forholdet bruges i omkostningsberegningen og i beregningen af kanban-jobforbruget.  
+## <a name="associate-product"></a><span data-ttu-id="92a2f-119">Tilknytte produkt</span><span class="sxs-lookup"><span data-stu-id="92a2f-119">Associate product</span></span>
+1. <span data-ttu-id="92a2f-120">Tilknytte et bestemt produkt</span><span class="sxs-lookup"><span data-stu-id="92a2f-120">Associate a specific product</span></span>
+    * <span data-ttu-id="92a2f-121">Der er to måder at knytte produkter til lean planlægningsgrupper: enten som et bestemt produkt (varerelationstype = vare) eller som en del af en varefordelingsnøgle (varerelationstype = gruppe).</span><span class="sxs-lookup"><span data-stu-id="92a2f-121">There are two ways to associate products to lean schedule groups, either as a specific product (Item relation type = Item) or as part of an item allocation key (item relation type = group).</span></span>    
+2. <span data-ttu-id="92a2f-122">Vælg Vare i feltet Varerelationstype</span><span class="sxs-lookup"><span data-stu-id="92a2f-122">In the Item relation type field, select Item</span></span>
+3. <span data-ttu-id="92a2f-123">Indtast en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="92a2f-123">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="92a2f-124">Angiv et tal i feltet Gennemløbsforhold.</span><span class="sxs-lookup"><span data-stu-id="92a2f-124">In the Throughput ratio field, enter a number.</span></span>
+    * <span data-ttu-id="92a2f-125">Standardgennemløbsforholdet er 1, hvilket betyder, at de relaterede produkter forbruger nøjagtigt den kapacitet, der er angivet i procesaktiviteterne for produktionsflowene.</span><span class="sxs-lookup"><span data-stu-id="92a2f-125">The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows.</span></span> <span data-ttu-id="92a2f-126">Gennemløbsforhold > 1 definerer et højere ressourceforbrug, Gennemløbsforhold < 1 definerer et lavere ressourceforbrug.</span><span class="sxs-lookup"><span data-stu-id="92a2f-126">Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption.</span></span> <span data-ttu-id="92a2f-127">Forholdet bruges i omkostningsberegningen og i beregningen af kanban-jobforbruget.</span><span class="sxs-lookup"><span data-stu-id="92a2f-127">The ratio is used in the cost calculation and in the calculation of the kanban job consumption.</span></span>  
 
-## <a name="associate-item-allocation-key"></a>Tilknytte varefordelingsnøgle
-1. Tilknytte en varefordelingsnøgle
-    * Føj en tilknytning til en varefordelingsnøgle ved hjælp af varerelationstypen Gruppe.   Bemærk, at denne proces skal du en budgetvarefordelingsnøgle, der er defineret i dataene.  
-2. Vælg Gruppe i feltet Varerelationstype
-3. Klik på rullelisten i feltet Varefordelingsnøgle for at åbne opslaget.
-4. Klik op linket i den valgte række på listen.
+## <a name="associate-item-allocation-key"></a><span data-ttu-id="92a2f-128">Tilknytte varefordelingsnøgle</span><span class="sxs-lookup"><span data-stu-id="92a2f-128">Associate item allocation key</span></span>
+1. <span data-ttu-id="92a2f-129">Tilknytte en varefordelingsnøgle</span><span class="sxs-lookup"><span data-stu-id="92a2f-129">Associate an item allocation key</span></span>
+    * <span data-ttu-id="92a2f-130">Føj en tilknytning til en varefordelingsnøgle ved hjælp af varerelationstypen Gruppe.</span><span class="sxs-lookup"><span data-stu-id="92a2f-130">Add an association to an item allocation key by using the Item relation type Group.</span></span>   <span data-ttu-id="92a2f-131">Bemærk, at denne proces skal du en budgetvarefordelingsnøgle, der er defineret i dataene.</span><span class="sxs-lookup"><span data-stu-id="92a2f-131">Note that for this process, you need a forecast item alllocation key defined in your data.</span></span>  
+2. <span data-ttu-id="92a2f-132">Vælg Gruppe i feltet Varerelationstype</span><span class="sxs-lookup"><span data-stu-id="92a2f-132">In the Item relation type field, select Group</span></span>
+3. <span data-ttu-id="92a2f-133">Klik på rullelisten i feltet Varefordelingsnøgle for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="92a2f-133">In the Item allocation key field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="92a2f-134">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="92a2f-134">In the list, click the link in the selected row.</span></span>
 
 

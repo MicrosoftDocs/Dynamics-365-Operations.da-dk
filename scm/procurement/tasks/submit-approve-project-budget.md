@@ -17,43 +17,43 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f438b149bed29936b39653825199c0e3cb73a85e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a867e07eb4c9a753c10d5c1fc6fc03c4cacad08e
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="submit-and-approve-project-budgets"></a>Sende og godkende projektbudgetter
+# <a name="submit-and-approve-project-budgets"></a><span data-ttu-id="ef196-103">Sende og godkende projektbudgetter</span><span class="sxs-lookup"><span data-stu-id="ef196-103">Submit and approve project budgets</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter og indsender et budget for et projekt. 
+<span data-ttu-id="ef196-104">Denne procedure viser, hvordan du opretter og indsender et budget for et projekt.</span><span class="sxs-lookup"><span data-stu-id="ef196-104">This procedure shows you how to create and submit the budget for a project.</span></span> 
 
-Når du opretter et projektbudget, kan du angive estimerede indtægter og omkostninger for et projekt og derefter bruge det til at styre de faktiske projekttransaktioner. I projektbudgettering skal alle de oprindelige budgetter og revisioner sendes til projektarbejdsgangen til godkendelse. Med arbejdsgangen får du øget kontrol over processen, og der oprettes en post for ændringshistorikken.
+<span data-ttu-id="ef196-105">Når du opretter et projektbudget, kan du angive estimerede indtægter og omkostninger for et projekt og derefter bruge det til at styre de faktiske projekttransaktioner.</span><span class="sxs-lookup"><span data-stu-id="ef196-105">When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions.</span></span> <span data-ttu-id="ef196-106">I projektbudgettering skal alle de oprindelige budgetter og revisioner sendes til projektarbejdsgangen til godkendelse.</span><span class="sxs-lookup"><span data-stu-id="ef196-106">In project budgeting, all original budgets and revisions must be sent to project workflow for approval.</span></span> <span data-ttu-id="ef196-107">Med arbejdsgangen får du øget kontrol over processen, og der oprettes en post for ændringshistorikken.</span><span class="sxs-lookup"><span data-stu-id="ef196-107">Workflow gives you increased control over the process and creates a change history record.</span></span>
 
-Denne opgave blev oprettet ved hjælp af USSI-datasættet.
+<span data-ttu-id="ef196-108">Denne opgave blev oprettet ved hjælp af USSI-datasættet.</span><span class="sxs-lookup"><span data-stu-id="ef196-108">This task was created using the USSI data set.</span></span>
 
-1. Gå til Projektstyring og regnskab > Projekter > Alle projekter.
-2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
-4. Klik på Plan i handlingsruden.
-5. Klik på Projektbudget.
-6. Skriv en værdi i feltet Beskrivelse.
-7. Udvid sektionen Omkostning.
-8. Klik på Ny.
-9. Vælg en indstilling i feltet Transaktionstype.
-10. Indtast eller vælg en værdi i feltet Kategori.
-11. Angiv et tal i feltet Oprindeligt budget.
-12. Udvid sektionen Indtægter.
-13. Klik på Ny.
-14. Markér den valgte række på listen.
-15. Vælg en indstilling i feltet Transaktionstype.
-16. Indtast eller vælg en værdi i feltet Kategori.
-17. Angiv et tal i feltet Oprindeligt budget.
-18. Klik på Gem.
-19. Klik på Arbejdsgang.
-20. Klik på Send.
-21. Skriv en værdi i feltet Kommentar.
-22. Klik på Send.
+1. <span data-ttu-id="ef196-109">Gå til Projektstyring og regnskab > Projekter > Alle projekter.</span><span class="sxs-lookup"><span data-stu-id="ef196-109">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="ef196-110">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ef196-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ef196-111">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ef196-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="ef196-112">Klik på Plan i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ef196-112">On the Action Pane, click Plan.</span></span>
+5. <span data-ttu-id="ef196-113">Klik på Projektbudget.</span><span class="sxs-lookup"><span data-stu-id="ef196-113">Click Project budget.</span></span>
+6. <span data-ttu-id="ef196-114">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="ef196-114">In the Description field, type a value.</span></span>
+7. <span data-ttu-id="ef196-115">Udvid sektionen Omkostning.</span><span class="sxs-lookup"><span data-stu-id="ef196-115">Expand the Cost section</span></span>
+8. <span data-ttu-id="ef196-116">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ef196-116">Click New.</span></span>
+9. <span data-ttu-id="ef196-117">Vælg en indstilling i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="ef196-117">In the Transaction type field, select an option.</span></span>
+10. <span data-ttu-id="ef196-118">Indtast eller vælg en værdi i feltet Kategori.</span><span class="sxs-lookup"><span data-stu-id="ef196-118">In the Category field, enter or select a value.</span></span>
+11. <span data-ttu-id="ef196-119">Angiv et tal i feltet Oprindeligt budget.</span><span class="sxs-lookup"><span data-stu-id="ef196-119">In the Original budget field, enter a number.</span></span>
+12. <span data-ttu-id="ef196-120">Udvid sektionen Indtægter.</span><span class="sxs-lookup"><span data-stu-id="ef196-120">Expand the Revenues section.</span></span>
+13. <span data-ttu-id="ef196-121">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ef196-121">Click New.</span></span>
+14. <span data-ttu-id="ef196-122">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ef196-122">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="ef196-123">Vælg en indstilling i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="ef196-123">In the Transaction type field, select an option.</span></span>
+16. <span data-ttu-id="ef196-124">Indtast eller vælg en værdi i feltet Kategori.</span><span class="sxs-lookup"><span data-stu-id="ef196-124">In the Category field, enter or select a value.</span></span>
+17. <span data-ttu-id="ef196-125">Angiv et tal i feltet Oprindeligt budget.</span><span class="sxs-lookup"><span data-stu-id="ef196-125">In the Original budget field, enter a number.</span></span>
+18. <span data-ttu-id="ef196-126">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ef196-126">Click Save.</span></span>
+19. <span data-ttu-id="ef196-127">Klik på Arbejdsgang.</span><span class="sxs-lookup"><span data-stu-id="ef196-127">Click Workflow.</span></span>
+20. <span data-ttu-id="ef196-128">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="ef196-128">Click Submit.</span></span>
+21. <span data-ttu-id="ef196-129">Skriv en værdi i feltet Kommentar.</span><span class="sxs-lookup"><span data-stu-id="ef196-129">In the Comment field, type a value.</span></span>
+22. <span data-ttu-id="ef196-130">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="ef196-130">Click Submit.</span></span>
 
 

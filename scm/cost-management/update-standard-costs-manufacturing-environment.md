@@ -17,36 +17,36 @@ ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74ad59504d6bbea0c604e0f0b83e74c915e84019
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7a5340baad38864388abcfab3235cf459887cba9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="update-standard-costs-in-a-manufacturing-environment"></a>Opdatere standardomkostninger i et produktionsmiljø
+# <a name="update-standard-costs-in-a-manufacturing-environment"></a><span data-ttu-id="89723-103">Opdatere standardomkostninger i et produktionsmiljø</span><span class="sxs-lookup"><span data-stu-id="89723-103">Update standard costs in a manufacturing environment</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder vejledning i at opdatere standardomkostninger i et produktionsmiljø. 
+<span data-ttu-id="89723-104">Denne artikel indeholder vejledning i at opdatere standardomkostninger i et produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="89723-104">This article provides guidance about how to update standard costs in a manufacturing environment.</span></span> 
 
-Opdateringer kan afspejle nye varer, omkostningskategorier eller formler til beregning af indirekte omkostninger. De kan også afspejle korrektioner og ændrede omkostninger. Typen af opdatering påvirker, hvilke trin der skal udføres for at opdatere standardomkostninger som vist i følgende tilfælde:
+<span data-ttu-id="89723-105">Opdateringer kan afspejle nye varer, omkostningskategorier eller formler til beregning af indirekte omkostninger.</span><span class="sxs-lookup"><span data-stu-id="89723-105">Updates can reflect new items, cost categories, or indirect cost calculation formulas.</span></span> <span data-ttu-id="89723-106">De kan også afspejle korrektioner og ændrede omkostninger.</span><span class="sxs-lookup"><span data-stu-id="89723-106">They can also reflect corrections and cost changes.</span></span> <span data-ttu-id="89723-107">Typen af opdatering påvirker, hvilke trin der skal udføres for at opdatere standardomkostninger som vist i følgende tilfælde:</span><span class="sxs-lookup"><span data-stu-id="89723-107">The type of update affects the steps that you must complete to update standard costs, as illustrated in the following cases:</span></span>
 
--   Angiv de forventede ændringer af standardomkostninger for købte varer, og ret derefter status for varens omkostningsposter til **Aktiv** på den relevante dato. Du skal dog ikke efterkalkulere omkostningerne for producerede varer, der bruger de købte varer.
--   Angiv standardomkostninger for en ny købt vare, men du skal ikke efterkalkulere omkostningerne for producerede varer med en styklisteversion, der indeholder nye købte varer som en komponent.
--   Korriger eller rediger omkostningerne for en købt vare, eller rediger den omkostningsgruppe, der er tildelt en købt vare, og beregn derefter omkostningen for alle producerede varer med en styklisteversion, der indeholder den købte vare som en komponent.
--   Rediger omkostningerne for en omkostningsart, og beregn omkostningerne for alle producerede varer med en ruteversion, der indeholder ruteoperationer, som bruger omkostningsarten.
--   Ret de omkostningskategorier, der er knyttet til ruteoperationer, eller den omkostningsgruppe, der er tildelt omkostningskategorierne. Beregn derefter omkostningerne for alle producerede varer med en ruteversion, der indeholder ruteoperationer, som bruger omkostningsarten.
--   Rediger en beregningsformel for indirekte omkostninger, og beregn omkostningerne for alle producerede varer, der påvirkes af ændringen.
--   Rediger eller tilføj en produktionslokation for en produceret vare, og beregn varens produktionsomkostninger for lokationen.
--   Beregn eller genberegn omkostningerne for en produceret vare, og genberegn omkostningerne for alle producerede varer med en styklisteversion, der indeholder den producerede vare som en komponent.
--   Beregn omkostninger for en ny produceret vare baseret på den definerede, godkendte og aktive stykliste samt ruteoplysninger.
+-   <span data-ttu-id="89723-108">Angiv de forventede ændringer af standardomkostninger for købte varer, og ret derefter status for varens omkostningsposter til **Aktiv** på den relevante dato.</span><span class="sxs-lookup"><span data-stu-id="89723-108">Enter expected standard cost changes for purchased items, and then change the status of the item cost records to **Active** on the appropriate date.</span></span> <span data-ttu-id="89723-109">Du skal dog ikke efterkalkulere omkostningerne for producerede varer, der bruger de købte varer.</span><span class="sxs-lookup"><span data-stu-id="89723-109">However, don't recalculate the costs of manufactured items that use the purchased items.</span></span>
+-   <span data-ttu-id="89723-110">Angiv standardomkostninger for en ny købt vare, men du skal ikke efterkalkulere omkostningerne for producerede varer med en styklisteversion, der indeholder nye købte varer som en komponent.</span><span class="sxs-lookup"><span data-stu-id="89723-110">Enter standard costs for a new purchased item, but don't recalculate the costs of manufactured items that have a bill of materials (BOM) version that contains the new purchased item as a component.</span></span>
+-   <span data-ttu-id="89723-111">Korriger eller rediger omkostningerne for en købt vare, eller rediger den omkostningsgruppe, der er tildelt en købt vare, og beregn derefter omkostningen for alle producerede varer med en styklisteversion, der indeholder den købte vare som en komponent.</span><span class="sxs-lookup"><span data-stu-id="89723-111">Correct or change the cost of a purchased item, or change the cost group that is assigned to a purchased item, and calculate the cost for all manufactured items that have a BOM version that contains the purchased item as a component.</span></span>
+-   <span data-ttu-id="89723-112">Rediger omkostningerne for en omkostningsart, og beregn omkostningerne for alle producerede varer med en ruteversion, der indeholder ruteoperationer, som bruger omkostningsarten.</span><span class="sxs-lookup"><span data-stu-id="89723-112">Change the cost for a cost category, and calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="89723-113">Ret de omkostningskategorier, der er knyttet til ruteoperationer, eller den omkostningsgruppe, der er tildelt omkostningskategorierne.</span><span class="sxs-lookup"><span data-stu-id="89723-113">Change the cost categories that are assigned to routing operations or the cost group that is assigned to cost categories.</span></span> <span data-ttu-id="89723-114">Beregn derefter omkostningerne for alle producerede varer med en ruteversion, der indeholder ruteoperationer, som bruger omkostningsarten.</span><span class="sxs-lookup"><span data-stu-id="89723-114">Then calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="89723-115">Rediger en beregningsformel for indirekte omkostninger, og beregn omkostningerne for alle producerede varer, der påvirkes af ændringen.</span><span class="sxs-lookup"><span data-stu-id="89723-115">Change an indirect cost calculation formula, and calculate the cost for all manufactured items that are affected by the change.</span></span>
+-   <span data-ttu-id="89723-116">Rediger eller tilføj en produktionslokation for en produceret vare, og beregn varens produktionsomkostninger for lokationen.</span><span class="sxs-lookup"><span data-stu-id="89723-116">Change or add a manufacturing site for a manufactured item, and calculate the item's manufactured cost for the site.</span></span>
+-   <span data-ttu-id="89723-117">Beregn eller genberegn omkostningerne for en produceret vare, og genberegn omkostningerne for alle producerede varer med en styklisteversion, der indeholder den producerede vare som en komponent.</span><span class="sxs-lookup"><span data-stu-id="89723-117">Calculate, or recalculate, the cost for a manufactured item, and recalculate the cost for all manufactured items that have a BOM version that contains the manufactured item as a component.</span></span>
+-   <span data-ttu-id="89723-118">Beregn omkostninger for en ny produceret vare baseret på den definerede, godkendte og aktive stykliste samt ruteoplysninger.</span><span class="sxs-lookup"><span data-stu-id="89723-118">Calculate costs for a new manufactured item, based on its defined, approved, and active BOM and route information.</span></span>
 
-De kræver alle nøje overvejelser om, hvordan standardomkostningerne skal opdateres.
+<span data-ttu-id="89723-119">De kræver alle nøje overvejelser om, hvordan standardomkostningerne skal opdateres.</span><span class="sxs-lookup"><span data-stu-id="89723-119">Each case requires careful consideration about how to update standard costs.</span></span>
 
 
 

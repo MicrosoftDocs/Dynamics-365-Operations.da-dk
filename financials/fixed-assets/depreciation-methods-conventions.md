@@ -19,78 +19,78 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 8b0361edb0f2dc7484fb9046ce4793fe9397e3d1
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d802933f29b3e08704480035925b2fbf6743e996
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="depreciation-methods-and-conventions"></a>Afskrivningsmetoder og -principper
+# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="9a50b-103">Afskrivningsmetoder og -principper</span><span class="sxs-lookup"><span data-stu-id="9a50b-103">Depreciation methods and conventions</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+<span data-ttu-id="9a50b-104">Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="9a50b-104">This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span>
 
-Du kan vælge mellem forskellige afskrivningsmetoder og -principper. Formålet med metoderne er at fordele den værdi af et anlægsaktiv, der kan afskrives, på flere regnskabsperioder. Den værdi af et anlægsaktiv, der kan afskrives, er anskaffelsesprisen minus en eventuel scrapværdi. 
+<span data-ttu-id="9a50b-105">Du kan vælge mellem forskellige afskrivningsmetoder og -principper.</span><span class="sxs-lookup"><span data-stu-id="9a50b-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="9a50b-106">Formålet med metoderne er at fordele den værdi af et anlægsaktiv, der kan afskrives, på flere regnskabsperioder.</span><span class="sxs-lookup"><span data-stu-id="9a50b-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="9a50b-107">Den værdi af et anlægsaktiv, der kan afskrives, er anskaffelsesprisen minus en eventuel scrapværdi.</span><span class="sxs-lookup"><span data-stu-id="9a50b-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
 
-Hvis du bruger afskrivningsprincipper, og du ændrer den seneste startdato for afskrivning på et aktiv, så der springes nogle afskrivninger over, kan afskrivningen for det sidste år blive større eller mindre end forventet. Afskrivningen reguleres med det antal afskrivningsperioder, der påvirkes af ændringen af den seneste startdato for afskrivning.
+<span data-ttu-id="9a50b-108">Hvis du bruger afskrivningsprincipper, og du ændrer den seneste startdato for afskrivning på et aktiv, så der springes nogle afskrivninger over, kan afskrivningen for det sidste år blive større eller mindre end forventet.</span><span class="sxs-lookup"><span data-stu-id="9a50b-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="9a50b-109">Afskrivningen reguleres med det antal afskrivningsperioder, der påvirkes af ændringen af den seneste startdato for afskrivning.</span><span class="sxs-lookup"><span data-stu-id="9a50b-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
 
-Hvis du f.eks. bruger afskrivningsprincippet Halvår over tre år, afskrives der normalt over 3½ år. Hvis du ændrer den seneste startdato for afskrivning i løbet af de 3½ år, flytter det sidste afskrivningsår uden for det antal perioder, der påvirkes. Hvis du flytter datoen tre måneder, er der ni måneder, hvor der kan afskrives i det sidste år, hvor det normalt ellers ville være seks måneder.
+<span data-ttu-id="9a50b-110">Hvis du f.eks. bruger afskrivningsprincippet Halvår over tre år, afskrives der normalt over 3½ år.</span><span class="sxs-lookup"><span data-stu-id="9a50b-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="9a50b-111">Hvis du ændrer den seneste startdato for afskrivning i løbet af de 3½ år, flytter det sidste afskrivningsår uden for det antal perioder, der påvirkes.</span><span class="sxs-lookup"><span data-stu-id="9a50b-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="9a50b-112">Hvis du flytter datoen tre måneder, er der ni måneder, hvor der kan afskrives i det sidste år, hvor det normalt ellers ville være seks måneder.</span><span class="sxs-lookup"><span data-stu-id="9a50b-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
 
-Du kan vælge mellem følgende afskrivningsprincipper.
+<span data-ttu-id="9a50b-113">Du kan vælge mellem følgende afskrivningsprincipper.</span><span class="sxs-lookup"><span data-stu-id="9a50b-113">You can select from the following depreciation conventions.</span></span>
 
 
--   Halvår
--   Hel måned
--   Midt i kvartal
--   Midt i måned (d. 1. i måneden)
--   Midt i måned (d. 15. i måneden)
--   Halvår (årsstart)
--   Halvår (næste år)
+-   <span data-ttu-id="9a50b-114">Halvår</span><span class="sxs-lookup"><span data-stu-id="9a50b-114">Half year</span></span>
+-   <span data-ttu-id="9a50b-115">Hel måned</span><span class="sxs-lookup"><span data-stu-id="9a50b-115">Full month</span></span>
+-   <span data-ttu-id="9a50b-116">Midt i kvartal</span><span class="sxs-lookup"><span data-stu-id="9a50b-116">Mid quarter</span></span>
+-   <span data-ttu-id="9a50b-117">Midt i måned (d. 1. i måneden)</span><span class="sxs-lookup"><span data-stu-id="9a50b-117">Mid month (1st of month)</span></span>
+-   <span data-ttu-id="9a50b-118">Midt i måned (d. 15. i måneden)</span><span class="sxs-lookup"><span data-stu-id="9a50b-118">Mid month (15th of month)</span></span>
+-   <span data-ttu-id="9a50b-119">Halvår (årsstart)</span><span class="sxs-lookup"><span data-stu-id="9a50b-119">Half year (start of year)</span></span>
+-   <span data-ttu-id="9a50b-120">Halvår (næste år)</span><span class="sxs-lookup"><span data-stu-id="9a50b-120">Half year (next year)</span></span>
 
-Du kan vælge mellem følgende afskrivningsmetoder.
--   Lineær afskrivning over servicelevetiden
--   Saldoværdi
--   Manuelt
--   Faktor
--   Forbrug
--   Lineær afskrivning for den resterende levetid
--   200 % saldoværdi
--   175 % saldoværdi
--   150 % saldoværdi
--   125 % saldoværdi
+<span data-ttu-id="9a50b-121">Du kan vælge mellem følgende afskrivningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="9a50b-121">You can select from the following depreciation methods.</span></span>
+-   <span data-ttu-id="9a50b-122">Lineær afskrivning over servicelevetiden</span><span class="sxs-lookup"><span data-stu-id="9a50b-122">Straight line service life</span></span>
+-   <span data-ttu-id="9a50b-123">Saldoværdi</span><span class="sxs-lookup"><span data-stu-id="9a50b-123">Reducing balance</span></span>
+-   <span data-ttu-id="9a50b-124">Manuelt</span><span class="sxs-lookup"><span data-stu-id="9a50b-124">Manual</span></span>
+-   <span data-ttu-id="9a50b-125">Faktor</span><span class="sxs-lookup"><span data-stu-id="9a50b-125">Factor</span></span>
+-   <span data-ttu-id="9a50b-126">Forbrug</span><span class="sxs-lookup"><span data-stu-id="9a50b-126">Consumption</span></span>
+-   <span data-ttu-id="9a50b-127">Lineær afskrivning for den resterende levetid</span><span class="sxs-lookup"><span data-stu-id="9a50b-127">Straight line life remaining</span></span>
+-   <span data-ttu-id="9a50b-128">200 % saldoværdi</span><span class="sxs-lookup"><span data-stu-id="9a50b-128">200% reducing balance</span></span>
+-   <span data-ttu-id="9a50b-129">175 % saldoværdi</span><span class="sxs-lookup"><span data-stu-id="9a50b-129">175% reducing balance</span></span>
+-   <span data-ttu-id="9a50b-130">150 % saldoværdi</span><span class="sxs-lookup"><span data-stu-id="9a50b-130">150% reducing balance</span></span>
+-   <span data-ttu-id="9a50b-131">125 % saldoværdi</span><span class="sxs-lookup"><span data-stu-id="9a50b-131">125% reducing balance</span></span>
 
  
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="9a50b-132">Se også</span><span class="sxs-lookup"><span data-stu-id="9a50b-132">See also</span></span>
 --------
 
-[Afskrivning af anlægsaktiv](fixed-asset-depreciation.md)
+[<span data-ttu-id="9a50b-133">Afskrivning af anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="9a50b-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
 
-[Lineær afskrivning for levetiden](Straight-line-service-life-depreciation.md)
+[<span data-ttu-id="9a50b-134">Lineær afskrivning for levetiden</span><span class="sxs-lookup"><span data-stu-id="9a50b-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
 
-[Saldoafskrivning](reduce-balance-depreciation.md)
+[<span data-ttu-id="9a50b-135">Saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-135">Reducing balance depreciation</span></span>](reduce-balance-depreciation.md)
 
-[Manuel afskrivning](manual-depreciation.md)
+[<span data-ttu-id="9a50b-136">Manuel afskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-136">Manual depreciation</span></span>](manual-depreciation.md)
 
-[Faktorafskrivning](factor-depreciation.md)
+[<span data-ttu-id="9a50b-137">Faktorafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-137">Factor depreciation</span></span>](factor-depreciation.md)
 
-[Forbrugsafskrivning](consumption-depreciation.md)
+[<span data-ttu-id="9a50b-138">Forbrugsafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-138">Consumption depreciation</span></span>](consumption-depreciation.md)
 
-[Lineær afskrivning for den resterende levetid](straight-line-life-remaining-depreciation.md)
+[<span data-ttu-id="9a50b-139">Lineær afskrivning for den resterende levetid</span><span class="sxs-lookup"><span data-stu-id="9a50b-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
 
-[125 % saldoafskrivning](125-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="9a50b-140">125 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
 
-[150 % saldoafskrivning](150-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="9a50b-141">150 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
 
-[175 % saldoafskrivning](175-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="9a50b-142">175 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
 
-[200 % saldoafskrivning](200-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="9a50b-143">200 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="9a50b-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
 
 
 

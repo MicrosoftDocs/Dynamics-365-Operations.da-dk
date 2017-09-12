@@ -16,24 +16,24 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0ecc0d3ca4ab38603db1b03eb63a263b14a81ea6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b39b0f0acf0a0fcdc472ba0bbfc3b15451c7a274
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-a-users-preferred-time-zone"></a>Indstille brugerens foretrukne tidszone
+# <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="23acc-103">Indstille brugerens foretrukne tidszone</span><span class="sxs-lookup"><span data-stu-id="23acc-103">Set a user's preferred time zone</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende procedure forklarer, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
+<span data-ttu-id="23acc-104">Følgende procedure forklarer, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.</span><span class="sxs-lookup"><span data-stu-id="23acc-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 
-1. Gå til Systemadministration > Brugere > Brugere.
-2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
-4. Klik på Brugerindstillinger.
-5. Klik på fanen Præferencer.
-6. Vælg en indstilling i feltet Tidszone.
-7. Klik på Gem.
+1. <span data-ttu-id="23acc-105">Gå til Systemadministration > Brugere > Brugere.</span><span class="sxs-lookup"><span data-stu-id="23acc-105">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="23acc-106">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="23acc-106">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="23acc-107">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="23acc-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="23acc-108">Klik på Brugerindstillinger.</span><span class="sxs-lookup"><span data-stu-id="23acc-108">Click User options.</span></span>
+5. <span data-ttu-id="23acc-109">Klik på fanen Præferencer.</span><span class="sxs-lookup"><span data-stu-id="23acc-109">Click the Preferences tab.</span></span>
+6. <span data-ttu-id="23acc-110">Vælg en indstilling i feltet Tidszone.</span><span class="sxs-lookup"><span data-stu-id="23acc-110">In the Time zone field, select an option.</span></span>
+7. <span data-ttu-id="23acc-111">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="23acc-111">Click Save.</span></span>
 
 

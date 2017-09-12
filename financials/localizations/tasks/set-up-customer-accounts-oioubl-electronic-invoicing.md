@@ -16,37 +16,37 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cc0cf043e37690c2d8e349f5c27e062726e83445
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f35d69827a17b48494af7eb2f41efbff538f2d5f
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-customer-accounts-for-oioubl-electronic-invoicing-denmark"></a>Konfigurere debitorkonti til elektronisk OIOUBL-fakturering (Danmark)
+# <a name="set-up-customer-accounts-for-oioubl-electronic-invoicing-denmark"></a><span data-ttu-id="66409-103">Konfigurere debitorkonti til elektronisk OIOUBL-fakturering (Danmark)</span><span class="sxs-lookup"><span data-stu-id="66409-103">Set up customer accounts for OIOUBL electronic invoicing (Denmark)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgave gennemgår, hvordan du konfigurerer en debitorkonto for elektronisk OIOUBL fakturering. 
+<span data-ttu-id="66409-104">Denne opgave gennemgår, hvordan du konfigurerer en debitorkonto for elektronisk OIOUBL fakturering.</span><span class="sxs-lookup"><span data-stu-id="66409-104">This task walks you through how to set up a customer account for OIOUBL electronic invoicing.</span></span> 
 
 
 
-Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.
+<span data-ttu-id="66409-105">Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.</span><span class="sxs-lookup"><span data-stu-id="66409-105">This task was created using the demo data company USMF with the country/region of legal entity primary address updated to be Denmark.</span></span>
 
 
 
-Det er den tredje af seks procedurer, der viser processen til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer. Denne opgave bruger eksemplet med OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.
+<span data-ttu-id="66409-106">Det er den tredje af seks procedurer, der viser processen til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="66409-106">This is the third procedure, out of six, that demonstrates the process of generating e-invoices using electronic reporting configurations.</span></span> <span data-ttu-id="66409-107">Denne opgave bruger eksemplet med OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.</span><span class="sxs-lookup"><span data-stu-id="66409-107">This task uses the OIOUBL e-invoice example which is common for Denmark, Austria, and Norway.</span></span>
 
-1. Gå til Debitor > Kunder > Alle kunder.
-2. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Konto med værdien "US-023".
-3. Klik på Rediger.
-4. Klik op linket i den valgte række på listen.
+1. <span data-ttu-id="66409-108">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="66409-108">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="66409-109">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="66409-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="66409-110">Filtrer f.eks. efter feltet Konto med værdien "US-023".</span><span class="sxs-lookup"><span data-stu-id="66409-110">For example, filter on the Account field with a value of 'US-023'.</span></span>
+3. <span data-ttu-id="66409-111">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="66409-111">Click Edit.</span></span>
+4. <span data-ttu-id="66409-112">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="66409-112">In the list, click the link in the selected row.</span></span>
 
-## <a name="enable-a-customer-account-for-oioubl-electronic-invoicing"></a>Aktivere en debitorkonto til elektronisk OIOUBL-fakturering
-1. Udvid sektionen Faktura og levering.
-2. Indtast eller vælg en værdi i feltet SE-nummer.
-3. Vælg Ja i feltet eFaktura.
-4. Skriv en værdi i feltet EAN. For eksempel "5798000362147".
+## <a name="enable-a-customer-account-for-oioubl-electronic-invoicing"></a><span data-ttu-id="66409-113">Aktivere en debitorkonto til elektronisk OIOUBL-fakturering</span><span class="sxs-lookup"><span data-stu-id="66409-113">Enable a customer account for OIOUBL electronic invoicing</span></span>
+1. <span data-ttu-id="66409-114">Udvid sektionen Faktura og levering.</span><span class="sxs-lookup"><span data-stu-id="66409-114">Expand the Invoice and delivery section.</span></span>
+2. <span data-ttu-id="66409-115">Indtast eller vælg en værdi i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="66409-115">In the Tax exempt number field, enter or select a value.</span></span>
+3. <span data-ttu-id="66409-116">Vælg Ja i feltet eFaktura.</span><span class="sxs-lookup"><span data-stu-id="66409-116">Select Yes in the eInvoice field.</span></span>
+4. <span data-ttu-id="66409-117">Skriv en værdi i feltet EAN.</span><span class="sxs-lookup"><span data-stu-id="66409-117">In the EAN field, type a value.</span></span> <span data-ttu-id="66409-118">For eksempel "5798000362147".</span><span class="sxs-lookup"><span data-stu-id="66409-118">For example '5798000362147'..</span></span>
 
-## <a name="set-up-contact-information-for-a-customer"></a>Konfigurer kontaktoplysninger for en kunde
+## <a name="set-up-contact-information-for-a-customer"></a><span data-ttu-id="66409-119">Konfigurer kontaktoplysninger for en kunde</span><span class="sxs-lookup"><span data-stu-id="66409-119">Set up contact information for a customer</span></span>
 
 

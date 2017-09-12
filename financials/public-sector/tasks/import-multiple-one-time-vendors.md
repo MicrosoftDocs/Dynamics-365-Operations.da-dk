@@ -17,26 +17,26 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: eba32df87c96cb7eeae2766dfdd2efd08a9a5ec2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 223943cd6e3f355ecef09e8b12952c4402ce1864
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="import-and-create-multiple-one-time-vendors-and-invoices-in-the-public-sector"></a>Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
+# <a name="import-and-create-multiple-one-time-vendors-and-invoices-in-the-public-sector"></a><span data-ttu-id="a0c11-103">Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a0c11-103">Import and create multiple one-time vendors and invoices in the public sector</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du oprette en faktura for en ny kreditor, som du ikke har nogen regelmæssige relationer med, samtidig med at du opretter en post for kreditoren. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
+<span data-ttu-id="a0c11-104">Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du oprette en faktura for en ny kreditor, som du ikke har nogen regelmæssige relationer med, samtidig med at du opretter en post for kreditoren.</span><span class="sxs-lookup"><span data-stu-id="a0c11-104">When approval or a contract in the form of a purchase order is not required, you can create an invoice for a new vendor with whom you have no regular relationship, at the same time as creating a record for the vendor.</span></span> <span data-ttu-id="a0c11-105">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="a0c11-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. Gå til Kreditor > Periodiske opgaver > Importer engangskreditorer og fakturaer.
-2. Søg efter og vælg den csv-fil, der indeholder leverandøroplysninger.
-3. Klik på rullelisten i feltet Kontostruktur for at åbne opslaget.
-4. Find og vælg den ønskede post på listen.
-5. Klik på OK.
-    * Kreditor- og fakturaoplysningerne er importeret. Hvis der er fejl, bliver der udskrevet en rapport, og du skal rette alle de angivne poster i importfilen og derefter importere filen igen.  
-6. Gå til Kreditor > Periodiske opgaver > Behandl engangskreditorer og fakturaer.
-    * Der søges efter dublerede kreditornavne eller Federal Tax Id.  Vigtigt! Hvis du vælger ikke at behandle dublerede kreditorer, behandles de relaterede fakturaer heller ikke. Du kan manuelt oprette en faktura ved hjælp af oplysningerne i CSV-filen.    
-7. Klik på OK.
+1. <span data-ttu-id="a0c11-106">Gå til Kreditor > Periodiske opgaver > Importer engangskreditorer og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="a0c11-106">Go to Accounts payable > Periodic tasks > Import one-time vendors and invoices.</span></span>
+2. <span data-ttu-id="a0c11-107">Søg efter og vælg den csv-fil, der indeholder leverandøroplysninger.</span><span class="sxs-lookup"><span data-stu-id="a0c11-107">Browse for and select the CSV file that contains vendor information.</span></span>
+3. <span data-ttu-id="a0c11-108">Klik på rullelisten i feltet Kontostruktur for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="a0c11-108">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="a0c11-109">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a0c11-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="a0c11-110">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a0c11-110">Click OK.</span></span>
+    * <span data-ttu-id="a0c11-111">Kreditor- og fakturaoplysningerne er importeret.</span><span class="sxs-lookup"><span data-stu-id="a0c11-111">The vendor and invoice information is imported.</span></span> <span data-ttu-id="a0c11-112">Hvis der er fejl, bliver der udskrevet en rapport, og du skal rette alle de angivne poster i importfilen og derefter importere filen igen.</span><span class="sxs-lookup"><span data-stu-id="a0c11-112">If there are errors, a report will be printed, and you should correct any listed entries in the import file and then reimport the file.</span></span>  
+6. <span data-ttu-id="a0c11-113">Gå til Kreditor > Periodiske opgaver > Behandl engangskreditorer og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="a0c11-113">Go to Accounts payable > Periodic tasks > Process one-time vendors and invoices.</span></span>
+    * <span data-ttu-id="a0c11-114">Der søges efter dublerede kreditornavne eller Federal Tax Id.</span><span class="sxs-lookup"><span data-stu-id="a0c11-114">Duplicate vendor names or Federal tax IDs will be looked for.</span></span>  <span data-ttu-id="a0c11-115">Vigtigt! Hvis du vælger ikke at behandle dublerede kreditorer, behandles de relaterede fakturaer heller ikke.</span><span class="sxs-lookup"><span data-stu-id="a0c11-115">Important: If you choose not to process duplicate vendors, the related invoices won’t be processed either.</span></span> <span data-ttu-id="a0c11-116">Du kan manuelt oprette en faktura ved hjælp af oplysningerne i CSV-filen.</span><span class="sxs-lookup"><span data-stu-id="a0c11-116">You can manually create an invoice by using the information in the CSV file.</span></span>    
+7. <span data-ttu-id="a0c11-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a0c11-117">Click OK.</span></span>
 
 

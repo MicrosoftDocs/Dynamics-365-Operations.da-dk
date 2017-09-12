@@ -16,83 +16,83 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 72a055f15defc28db4917a680ae3a1f46c5e5b8b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f593c59660abcf5b0d5771ddd9daced6ec5fbfb4
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-organization-report-hierarchy"></a>Oprette et organisationsrapporthierarki
+# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="c6507-103">Oprette et organisationsrapporthierarki</span><span class="sxs-lookup"><span data-stu-id="c6507-103">Create an organization report hierarchy</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan bruge denne procedure til at oprette et rapporthierarki til organisationsrapportering. Formålet med denne registrering er at føre dig gennem dimensionshierarkiet, så du kan fortsætte, indtil rapporteringsstrukturen for hele organisationen er oprettet. Denne registrering bruger USP2-demodatafirmaet.
+<span data-ttu-id="c6507-104">Du kan bruge denne procedure til at oprette et rapporthierarki til organisationsrapportering.</span><span class="sxs-lookup"><span data-stu-id="c6507-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="c6507-105">Formålet med denne registrering er at føre dig gennem dimensionshierarkiet, så du kan fortsætte, indtil rapporteringsstrukturen for hele organisationen er oprettet.</span><span class="sxs-lookup"><span data-stu-id="c6507-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="c6507-106">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="c6507-106">This recording uses the USP2 demo data company.</span></span>
 
-1. Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.
-2. Klik på Ny.
-3. Vælg 'Klassifikationshierarki for dimension' i feltet HierarchyTypeComboBox.
-    * Vælg Klassifikationshierarki for dimension. Klassifikationshierarki for dimension-typen bruges til at definere regler og til rapporteringsformål. Den understøtter alle dimensioner, f.eks. omkostningsobjekter, omkostningselementer og statistiske dimensioner.  
-4. Klik på Opret.
-5. Skriv 'Organisation USP2' i feltet Dimensionshierarki.
-6. Indtast eller vælg en værdi i feltet Dimension.
-    * Vælg Bærere.  
-7. Klik på Gem.
-8. Klik på Vis hierarki.
-9. Klik på Ny.
-10. Skriv 'Administrerende direktør' i feltet Nodenavn.
-11. Klik på Gem.
-12. Klik på Ny.
-13. Skriv 'Administrerende direktør' i feltet Nodenavn.
-14. Klik på Gem.
-15. Klik på Ny.
-16. Skriv 'Region Øst' i feltet Nodenavn.
-17. Klik på Gem.
-18. Klik på Ny.
-19. Markér den valgte række på listen.
-20. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * Vælg det dimensionsmedlem, der svarer til noden.  
-21. Klik på Gem.
-22. Vælg 'Organisation USP2\Administrerende direktør\Bærere for administrerende direktør' i træet.
-23. Klik på Ny.
-24. Skriv 'Region Vest' i feltet Nodenavn.
-25. Klik på Gem.
-26. Klik på Ny.
-27. Markér den valgte række på listen.
-28. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * Vælg det dimensionsmedlem, der svarer til noden.  
-29. Klik på Gem.
-30. Vælg 'Organisation USP2\Administrerende direktør' i træet.
-31. Klik på Ny.
-32. Skriv 'Bærere for administrerende direktør' i feltet Nodenavn.
-33. Klik på Gem.
-34. Klik på Ny.
-35. Skriv 'Marketingkampa' i feltet Nodenavn.
-36. Skriv 'Marketingkampagne' i feltet Nodenavn.
-37. Klik på Gem.
-38. Klik på Ny.
-39. Markér den valgte række på listen.
-40. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * Vælg det dimensionsmedlem, der svarer til noden.  
-41. Klik på Gem.
-42. Vælg 'Organisation USP2\Administrerende direktør\Bærere for administrerende direktør' i træet.
-43. Klik på Ny.
-44. Skriv 'Messer' i feltet Nodenavn.
-45. Klik på Gem.
-46. Klik på Ny.
-47. Markér den valgte række på listen.
-48. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * Vælg det dimensionsmedlem, der svarer til noden.  
-49. Klik på Gem.
-50. Vælg 'Organisation USP2\Administrerende direktør' i træet.
-51. Skriv 'Bærere for administrerende direktør' i feltet Nodenavn.
-52. Klik på Gem.
-53. Klik på Ny.
-54. Skriv 'Call centre' i feltet Nodenavn.
-55. Klik på Gem.
-56. Klik på Ny.
-57. Markér den valgte række på listen.
-58. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * Vælg det dimensionsmedlem, der svarer til noden.  
-59. Klik på Gem.
+1. <span data-ttu-id="c6507-107">Gå til Omkostningsregnskab > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="c6507-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="c6507-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-108">Click New.</span></span>
+3. <span data-ttu-id="c6507-109">Vælg 'Klassifikationshierarki for dimension' i feltet HierarchyTypeComboBox.</span><span class="sxs-lookup"><span data-stu-id="c6507-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
+    * <span data-ttu-id="c6507-110">Vælg Klassifikationshierarki for dimension.</span><span class="sxs-lookup"><span data-stu-id="c6507-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="c6507-111">Klassifikationshierarki for dimension-typen bruges til at definere regler og til rapporteringsformål.</span><span class="sxs-lookup"><span data-stu-id="c6507-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="c6507-112">Den understøtter alle dimensioner, f.eks. omkostningsobjekter, omkostningselementer og statistiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="c6507-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
+4. <span data-ttu-id="c6507-113">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="c6507-113">Click Create.</span></span>
+5. <span data-ttu-id="c6507-114">Skriv 'Organisation USP2' i feltet Dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="c6507-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
+6. <span data-ttu-id="c6507-115">Indtast eller vælg en værdi i feltet Dimension.</span><span class="sxs-lookup"><span data-stu-id="c6507-115">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-116">Vælg Bærere.</span><span class="sxs-lookup"><span data-stu-id="c6507-116">Select Cost centers.</span></span>  
+7. <span data-ttu-id="c6507-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-117">Click Save.</span></span>
+8. <span data-ttu-id="c6507-118">Klik på Vis hierarki.</span><span class="sxs-lookup"><span data-stu-id="c6507-118">Click View hierarchy.</span></span>
+9. <span data-ttu-id="c6507-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-119">Click New.</span></span>
+10. <span data-ttu-id="c6507-120">Skriv 'Administrerende direktør' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-120">In the Node name field, type 'CEO'.</span></span>
+11. <span data-ttu-id="c6507-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-121">Click Save.</span></span>
+12. <span data-ttu-id="c6507-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-122">Click New.</span></span>
+13. <span data-ttu-id="c6507-123">Skriv 'Administrerende direktør' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-123">In the Node name field, type 'CEO cost centers'.</span></span>
+14. <span data-ttu-id="c6507-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-124">Click Save.</span></span>
+15. <span data-ttu-id="c6507-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-125">Click New.</span></span>
+16. <span data-ttu-id="c6507-126">Skriv 'Region Øst' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-126">In the Node name field, type 'Region East'.</span></span>
+17. <span data-ttu-id="c6507-127">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-127">Click Save.</span></span>
+18. <span data-ttu-id="c6507-128">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-128">Click New.</span></span>
+19. <span data-ttu-id="c6507-129">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c6507-129">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="c6507-130">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="c6507-130">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-131">Vælg det dimensionsmedlem, der svarer til noden.</span><span class="sxs-lookup"><span data-stu-id="c6507-131">Select the dimension member that corresponds to the node.</span></span>  
+21. <span data-ttu-id="c6507-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-132">Click Save.</span></span>
+22. <span data-ttu-id="c6507-133">Vælg 'Organisation USP2\Administrerende direktør\Bærere for administrerende direktør' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6507-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
+23. <span data-ttu-id="c6507-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-134">Click New.</span></span>
+24. <span data-ttu-id="c6507-135">Skriv 'Region Vest' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-135">In the Node name field, type 'Region West'.</span></span>
+25. <span data-ttu-id="c6507-136">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-136">Click Save.</span></span>
+26. <span data-ttu-id="c6507-137">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-137">Click New.</span></span>
+27. <span data-ttu-id="c6507-138">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c6507-138">In the list, mark the selected row.</span></span>
+28. <span data-ttu-id="c6507-139">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="c6507-139">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-140">Vælg det dimensionsmedlem, der svarer til noden.</span><span class="sxs-lookup"><span data-stu-id="c6507-140">Select the dimension member that corresponds to the node.</span></span>  
+29. <span data-ttu-id="c6507-141">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-141">Click Save.</span></span>
+30. <span data-ttu-id="c6507-142">Vælg 'Organisation USP2\Administrerende direktør' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6507-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
+31. <span data-ttu-id="c6507-143">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-143">Click New.</span></span>
+32. <span data-ttu-id="c6507-144">Skriv 'Bærere for administrerende direktør' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-144">In the Node name field, type 'CFO cost centers'.</span></span>
+33. <span data-ttu-id="c6507-145">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-145">Click Save.</span></span>
+34. <span data-ttu-id="c6507-146">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-146">Click New.</span></span>
+35. <span data-ttu-id="c6507-147">Skriv 'Marketingkampa' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-147">In the Node name field, type 'Marketing campa'.</span></span>
+36. <span data-ttu-id="c6507-148">Skriv 'Marketingkampagne' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-148">In the Node name field, type 'Marketing campaign'.</span></span>
+37. <span data-ttu-id="c6507-149">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-149">Click Save.</span></span>
+38. <span data-ttu-id="c6507-150">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-150">Click New.</span></span>
+39. <span data-ttu-id="c6507-151">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c6507-151">In the list, mark the selected row.</span></span>
+40. <span data-ttu-id="c6507-152">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="c6507-152">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-153">Vælg det dimensionsmedlem, der svarer til noden.</span><span class="sxs-lookup"><span data-stu-id="c6507-153">Select the dimension member that corresponds to the node.</span></span>  
+41. <span data-ttu-id="c6507-154">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-154">Click Save.</span></span>
+42. <span data-ttu-id="c6507-155">Vælg 'Organisation USP2\Administrerende direktør\Bærere for administrerende direktør' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6507-155">In the tree, select 'Oganization USP2\CEO\CFO cost centers'.</span></span>
+43. <span data-ttu-id="c6507-156">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-156">Click New.</span></span>
+44. <span data-ttu-id="c6507-157">Skriv 'Messer' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-157">In the Node name field, type 'Trade shows'.</span></span>
+45. <span data-ttu-id="c6507-158">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-158">Click Save.</span></span>
+46. <span data-ttu-id="c6507-159">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-159">Click New.</span></span>
+47. <span data-ttu-id="c6507-160">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c6507-160">In the list, mark the selected row.</span></span>
+48. <span data-ttu-id="c6507-161">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="c6507-161">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-162">Vælg det dimensionsmedlem, der svarer til noden.</span><span class="sxs-lookup"><span data-stu-id="c6507-162">Select the dimension member that corresponds to the node.</span></span>  
+49. <span data-ttu-id="c6507-163">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-163">Click Save.</span></span>
+50. <span data-ttu-id="c6507-164">Vælg 'Organisation USP2\Administrerende direktør' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6507-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
+51. <span data-ttu-id="c6507-165">Skriv 'Bærere for administrerende direktør' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-165">In the Node name field, type 'CIO cost centers'.</span></span>
+52. <span data-ttu-id="c6507-166">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-166">Click Save.</span></span>
+53. <span data-ttu-id="c6507-167">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-167">Click New.</span></span>
+54. <span data-ttu-id="c6507-168">Skriv 'Call centre' i feltet Nodenavn.</span><span class="sxs-lookup"><span data-stu-id="c6507-168">In the Node name field, type 'Call centers'.</span></span>
+55. <span data-ttu-id="c6507-169">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-169">Click Save.</span></span>
+56. <span data-ttu-id="c6507-170">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c6507-170">Click New.</span></span>
+57. <span data-ttu-id="c6507-171">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="c6507-171">In the list, mark the selected row.</span></span>
+58. <span data-ttu-id="c6507-172">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="c6507-172">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="c6507-173">Vælg det dimensionsmedlem, der svarer til noden.</span><span class="sxs-lookup"><span data-stu-id="c6507-173">Select the dimension member that corresponds to the node.</span></span>  
+59. <span data-ttu-id="c6507-174">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c6507-174">Click Save.</span></span>
 
 

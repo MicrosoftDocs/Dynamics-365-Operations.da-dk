@@ -20,40 +20,40 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b42f0515823bd42ec260aa1d175855a923162b62
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fb11a470d98a9742749daaac3244a5bb0d3a689c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="coverage-settings"></a>Disponeringsindstillinger
+# <a name="coverage-settings"></a><span data-ttu-id="87aac-103">Disponeringsindstillinger</span><span class="sxs-lookup"><span data-stu-id="87aac-103">Coverage settings</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov. 
+<span data-ttu-id="87aac-104">Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov.</span><span class="sxs-lookup"><span data-stu-id="87aac-104">Master scheduling uses coverage settings to calculate item requirements.</span></span> 
 
-Du kan angive disponeringsindstillinger på flere måder:
+<span data-ttu-id="87aac-105">Du kan angive disponeringsindstillinger på flere måder:</span><span class="sxs-lookup"><span data-stu-id="87aac-105">You can specify coverage settings in several ways:</span></span>
 
--   Angiv disponeringsindstillinger for en disponeringsgruppe. Du kan oprette en disponeringsgruppe, der indeholder alle produkter, der er knyttet til disponeringsgruppen. Klik på **Varedisponering &gt; Konfiguration &gt; Disponering &gt; Disponeringsgrupper** for at oprette en disponeringsgruppe. Du kan sammenkæde en disponeringsgruppe til et produkt. Hvis sammenkædningen er specifik for et websted, et lagersted eller en produktdimension, skal du bruge feltet **Disponeringsgruppe** på siden **Varedisponering**. Hvis sammenkædningen er generisk, uanset produktdimensionerne, skal du bruge **Disponeringsgruppe** på oversigtspanelet **Plan** på siden **Produktdetaljer**. Hvis du ikke knytter en disponeringsgruppe til et produkt, bruger den overordnede planlægning som standard den **standarddisponeringsgruppe**, der er angivet på siden **Varedisponeringsparametre**.
+-   <span data-ttu-id="87aac-106">Angiv disponeringsindstillinger for en disponeringsgruppe.</span><span class="sxs-lookup"><span data-stu-id="87aac-106">Specify coverage settings for a coverage group.</span></span> <span data-ttu-id="87aac-107">Du kan oprette en disponeringsgruppe, der indeholder alle produkter, der er knyttet til disponeringsgruppen.</span><span class="sxs-lookup"><span data-stu-id="87aac-107">You can create a coverage group that contains settings for all products that are linked to the coverage group.</span></span> <span data-ttu-id="87aac-108">Klik på **Varedisponering &gt; Konfiguration &gt; Disponering &gt; Disponeringsgrupper** for at oprette en disponeringsgruppe.</span><span class="sxs-lookup"><span data-stu-id="87aac-108">Click **Master planning &gt; Setup &gt; Coverage &gt; Coverage groups** to create a coverage group.</span></span> <span data-ttu-id="87aac-109">Du kan sammenkæde en disponeringsgruppe til et produkt.</span><span class="sxs-lookup"><span data-stu-id="87aac-109">You can link a coverage group to a product.</span></span> <span data-ttu-id="87aac-110">Hvis sammenkædningen er specifik for et websted, et lagersted eller en produktdimension, skal du bruge feltet **Disponeringsgruppe** på siden **Varedisponering**.</span><span class="sxs-lookup"><span data-stu-id="87aac-110">If the link is specific to a site, warehouse, or product dimension, use the **Coverage group** field on the **Item coverage** page.</span></span> <span data-ttu-id="87aac-111">Hvis sammenkædningen er generisk, uanset produktdimensionerne, skal du bruge **Disponeringsgruppe** på oversigtspanelet **Plan** på siden **Produktdetaljer**.</span><span class="sxs-lookup"><span data-stu-id="87aac-111">If the link is generic, regardless of the product dimensions, use the **Coverage group** on the **Plan** FastTab on the **Product details** page.</span></span> <span data-ttu-id="87aac-112">Hvis du ikke knytter en disponeringsgruppe til et produkt, bruger den overordnede planlægning som standard den **standarddisponeringsgruppe**, der er angivet på siden **Varedisponeringsparametre**.</span><span class="sxs-lookup"><span data-stu-id="87aac-112">If you do not link a coverage group to a product, master planning uses the **General coverage group** that is specified on the **Master planning parameters** page as the default.</span></span>
 
--   Angiv disponeringsindstillinger for et produkt. Du kan oprette disponeringsindstillinger for et bestemt produkt. Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**. Vælg produktet, og klik på **Varedisponering** i gruppen **Disponering** under fanen **Plan** i **handlingsruden** for at åbne siden **Varedisponering**. Hvis produktet allerede er knyttet til en dispositionsgruppe, kan du tilsidesætte indstillingerne for dispositionsgruppen ved hjælp af feltet **Tilsidesæt**. Disponeringsindstillinger på siden **Varedisponering** har fortrinsret over indstillingerne på siden **Dækningsgruppe**.
-
-<!-- -->
-
--   Angiv disponeringsindstillinger for et produkt ved hjælp af en guide. Guiden giver dig en trinvis vejledning i at konfigurere de primære dispositionsparametre for varer. På siden **Varedisponering** skal du klikke på **Guide** at åbne **Varedisponeringsguide**.
+-   <span data-ttu-id="87aac-113">Angiv disponeringsindstillinger for et produkt.</span><span class="sxs-lookup"><span data-stu-id="87aac-113">Specify coverage settings for a product.</span></span> <span data-ttu-id="87aac-114">Du kan oprette disponeringsindstillinger for et bestemt produkt.</span><span class="sxs-lookup"><span data-stu-id="87aac-114">You can create coverage settings for a specific product.</span></span> <span data-ttu-id="87aac-115">Klik på **Administration af produktoplysninger &gt; Produkter &gt; Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="87aac-115">Click **Product information management &gt; Products &gt; Released products**.</span></span> <span data-ttu-id="87aac-116">Vælg produktet, og klik på **Varedisponering** i gruppen **Disponering** under fanen **Plan** i **handlingsruden** for at åbne siden **Varedisponering**.</span><span class="sxs-lookup"><span data-stu-id="87aac-116">Select the product, on the **Action Pane**, on the **Plan** tab, in the **Coverage group**, click **Item coverage** to open the **Item coverage** page.</span></span> <span data-ttu-id="87aac-117">Hvis produktet allerede er knyttet til en dispositionsgruppe, kan du tilsidesætte indstillingerne for dispositionsgruppen ved hjælp af feltet **Tilsidesæt**.</span><span class="sxs-lookup"><span data-stu-id="87aac-117">If the product is already linked to a coverage group, you can override the coverage group settings by using the **Override** field.</span></span> <span data-ttu-id="87aac-118">Disponeringsindstillinger på siden **Varedisponering** har fortrinsret over indstillingerne på siden **Dækningsgruppe**.</span><span class="sxs-lookup"><span data-stu-id="87aac-118">The coverage settings on the **Item coverage** page take precedence over the settings on the **Coverage group** page.</span></span>
 
 <!-- -->
 
--   Angiv disponeringsindstillinger for en dimensionsgruppe. Klik på **Administration af produktoplysninger &gt; Almindelige &gt; Frigivne produkter**. Klik på linket **Lagringsdimensionsgruppe** i gruppen **Administration** under fanen **Generelt** på siden **Frigivne produktdetaljer**. Vælg **Lagringsdimensionsgruppe** i feltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi, skal have feltet **Disponer pr. dimension** markeret.
+-   <span data-ttu-id="87aac-119">Angiv disponeringsindstillinger for et produkt ved hjælp af en guide.</span><span class="sxs-lookup"><span data-stu-id="87aac-119">Specify coverage settings for a product by using a wizard.</span></span> <span data-ttu-id="87aac-120">Guiden giver dig en trinvis vejledning i at konfigurere de primære dispositionsparametre for varer.</span><span class="sxs-lookup"><span data-stu-id="87aac-120">The wizard is a step-by-step guide to help you set up the primary item coverage parameters.</span></span> <span data-ttu-id="87aac-121">På siden **Varedisponering** skal du klikke på **Guide** at åbne **Varedisponeringsguide**.</span><span class="sxs-lookup"><span data-stu-id="87aac-121">On the **Item coverage** page, click **Wizard** to open the **Item Coverage Wizard**.</span></span>
+
+<!-- -->
+
+-   <span data-ttu-id="87aac-122">Angiv disponeringsindstillinger for en dimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="87aac-122">Specify coverage settings for a dimension group.</span></span> <span data-ttu-id="87aac-123">Klik på **Administration af produktoplysninger &gt; Almindelige &gt; Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="87aac-123">Click **Product information management &gt; Common &gt; Released products**.</span></span> <span data-ttu-id="87aac-124">Klik på linket **Lagringsdimensionsgruppe** i gruppen **Administration** under fanen **Generelt** på siden **Frigivne produktdetaljer**.</span><span class="sxs-lookup"><span data-stu-id="87aac-124">On the **Released product detail **page, on the **General** tab, in the **Administration** group, click the **Storage dimension group** link.</span></span> <span data-ttu-id="87aac-125">Vælg **Lagringsdimensionsgruppe** i feltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen.</span><span class="sxs-lookup"><span data-stu-id="87aac-125">On the **Storage dimension group** page, select the **Coverage plan by dimension** field to create the coverage settings for a dimension in the storage dimension group.</span></span> <span data-ttu-id="87aac-126">Alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi, skal have feltet **Disponer pr. dimension** markeret.</span><span class="sxs-lookup"><span data-stu-id="87aac-126">All product dimensions, such as configuration, color, size, style, must have the **Coverage plan by dimension** field selected.</span></span>
 
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="87aac-127">Se også</span><span class="sxs-lookup"><span data-stu-id="87aac-127">See also</span></span>
 --------
 
-[Behovsplaner](master-plans.md)
+[<span data-ttu-id="87aac-128">Behovsplaner</span><span class="sxs-lookup"><span data-stu-id="87aac-128">Master plans</span></span>](master-plans.md)
 
 
 

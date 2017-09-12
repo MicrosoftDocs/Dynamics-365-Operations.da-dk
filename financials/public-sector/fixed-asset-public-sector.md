@@ -20,35 +20,35 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7002a2df4f2c49eb9f7b49eb79927c4738f98c39
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 6c8cd94315617be741622e3561e863327f201429
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
+# <a name="fixed-assets-in-the-public-sector"></a><span data-ttu-id="50834-103">Anlægsaktiver i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="50834-103">Fixed assets in the public sector</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor. 
+<span data-ttu-id="50834-104">I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="50834-104">This article describes the fixed assets functionality that is available for public sector.</span></span> 
 
-<a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a>Værd at vide om salg af anlægsaktiver
+<a name="what-do-i-need-to-know-about-disposing-of-fixed-assets"></a><span data-ttu-id="50834-105">Værd at vide om salg af anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="50834-105">What do I need to know about disposing of fixed assets?</span></span>
 -------------------------------------------------------
 
-Offentlige organisationer kan bruge spild og salgsforslag til at råde over mere end et enkelt anlægsaktiv ad gangen.
+<span data-ttu-id="50834-106">Offentlige organisationer kan bruge spild og salgsforslag til at råde over mere end et enkelt anlægsaktiv ad gangen.</span><span class="sxs-lookup"><span data-stu-id="50834-106">Public sector organizations can use scrap and sales proposals to dispose of more than one fixed asset at a time.</span></span>
 
-## <a name="why-do-i-have-to-enter-transfer-from-and-transfer-to-accounts-when-i-transfer-fixed-assets-between-funds"></a>Hvorfor er det nødvendigt at angive Overflyt fra og Overflyt til konti, når jeg overfører anlægsaktiver mellem midler?
-Offentlige organisationer kræver typisk afstemte poster for den økonomiske dimension, der bruges til at angive midler. Når du overfører anlægsaktiver mellem midler, og middeldimensionen kræver afstemte poster, er felterne Overflyt fra og Overflyt til-konto på siden til aktivoverførsel påkrævet. 
+## <a name="why-do-i-have-to-enter-transfer-from-and-transfer-to-accounts-when-i-transfer-fixed-assets-between-funds"></a><span data-ttu-id="50834-107">Hvorfor er det nødvendigt at angive Overflyt fra og Overflyt til konti, når jeg overfører anlægsaktiver mellem midler?</span><span class="sxs-lookup"><span data-stu-id="50834-107">Why do I have to enter transfer-from and transfer-to accounts when I transfer fixed assets between funds?</span></span>
+<span data-ttu-id="50834-108">Offentlige organisationer kræver typisk afstemte poster for den økonomiske dimension, der bruges til at angive midler.</span><span class="sxs-lookup"><span data-stu-id="50834-108">Public sector organizations typically require balanced entries for the financial dimension used to designate funds.</span></span> <span data-ttu-id="50834-109">Når du overfører anlægsaktiver mellem midler, og middeldimensionen kræver afstemte poster, er felterne Overflyt fra og Overflyt til-konto på siden til aktivoverførsel påkrævet.</span><span class="sxs-lookup"><span data-stu-id="50834-109">When you transfer fixed assets between funds, if the fund dimension requires balanced entries, the transfer-from and transfer-to account fields on the asset transfer page are required.</span></span> 
 
 > [!NOTE] 
-> Dette er ikke en egenskab ved anlægsaktiver eller midler. Det er derimod en egenskab for den økonomiske dimension. Når du overfører et anlægsaktiv, og økonomiske dimensioner, som er tilknyttet aktivet, kræver afstemte poster, er Overflyt fra og Overflyt til-konto påkrævet. 
+> <span data-ttu-id="50834-110">Dette er ikke en egenskab ved anlægsaktiver eller midler.</span><span class="sxs-lookup"><span data-stu-id="50834-110">This is not a property of fixed assets or of funds.</span></span> <span data-ttu-id="50834-111">Det er derimod en egenskab for den økonomiske dimension.</span><span class="sxs-lookup"><span data-stu-id="50834-111">Rather, it’s a property of the financial dimension.</span></span> <span data-ttu-id="50834-112">Når du overfører et anlægsaktiv, og økonomiske dimensioner, som er tilknyttet aktivet, kræver afstemte poster, er Overflyt fra og Overflyt til-konto påkrævet.</span><span class="sxs-lookup"><span data-stu-id="50834-112">When you transfer a fixed asset, if any financial dimension associated with the asset requires balanced entries, the transfer-from and transfer-to accounts are required.</span></span> 
 
-Overflyt fra og Overflyt til-konti er ikke de konti, hvor anlægsaktivets bogførte nettoværdi er indeholdt. Overflyt fra og Overflyt til-kontiene er derimod de hovedkonti, der bruges til at afstemme poster i økonomiske dimensioner. De bruges kun, når en økonomisk dimension for anlægsaktivet kræver afstemning. Overfør fra-kontoen har en debetpost, og overfør til-kontoen har en kreditpost.
+<span data-ttu-id="50834-113">Overflyt fra og Overflyt til-konti er ikke de konti, hvor anlægsaktivets bogførte nettoværdi er indeholdt.</span><span class="sxs-lookup"><span data-stu-id="50834-113">The transfer-from and transfer-to accounts are not the accounts in which the fixed asset’s net book value is held.</span></span> <span data-ttu-id="50834-114">Overflyt fra og Overflyt til-kontiene er derimod de hovedkonti, der bruges til at afstemme poster i økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="50834-114">Rather, the transfer-from and transfer-to accounts are the main accounts used to balance entries in financial dimensions.</span></span> <span data-ttu-id="50834-115">De bruges kun, når en økonomisk dimension for anlægsaktivet kræver afstemning.</span><span class="sxs-lookup"><span data-stu-id="50834-115">They are used only when a financial dimension for the fixed asset requires balancing.</span></span> <span data-ttu-id="50834-116">Overfør fra-kontoen har en debetpost, og overfør til-kontoen har en kreditpost.</span><span class="sxs-lookup"><span data-stu-id="50834-116">The transfer-from account will have a debit entry, and the transfer-to account will have a credit entry.</span></span>
 
-Du kan få flere oplysninger i [Midler i den offentlige sektor](funds-public-sector.md).
+<span data-ttu-id="50834-117">Du kan få flere oplysninger i [Midler i den offentlige sektor](funds-public-sector.md).</span><span class="sxs-lookup"><span data-stu-id="50834-117">For details, see [Funds in the public sector](funds-public-sector.md).</span></span>
 
 
 

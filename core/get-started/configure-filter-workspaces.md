@@ -15,56 +15,56 @@ ms.custom: 17491
 ms.assetid: 541e6012-4680-4684-8494-e9b5ca4684ee
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acbab3c833c109576f1e1e26fefeee770a29aeaf
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 754cd81a4550318de7003d847fafb2bcc7414b32
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-and-filter-workspaces"></a>Konfigurere og filtrere arbejdsområder
+# <a name="configure-and-filter-workspaces"></a><span data-ttu-id="e404c-103">Konfigurere og filtrere arbejdsområder</span><span class="sxs-lookup"><span data-stu-id="e404c-103">Configure and filter workspaces</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over, hvordan du konfigurerer og filtrerer arbejdsområder.
+<span data-ttu-id="e404c-104">Denne artikel indeholder en oversigt over, hvordan du konfigurerer og filtrerer arbejdsområder.</span><span class="sxs-lookup"><span data-stu-id="e404c-104">This article provides an overview about how to configure and filter workspaces.</span></span>
 
-<a name="configuring-a-workspace"></a>Konfigurere et arbejdsområde
+<a name="configuring-a-workspace"></a><span data-ttu-id="e404c-105">Konfigurere et arbejdsområde</span><span class="sxs-lookup"><span data-stu-id="e404c-105">Configuring a workspace</span></span>
 -----------------------
 
-Du kan ændre udseendet og funktionaliteten af nogle arbejdsområder ved at opdatere indstillinger, der gælder i hele arbejdsområdet. Når et arbejdsområde kan konfigureres, omfatter handlingsruden en knap, der beder dig om at klikke på den for at foretage konfigurationsændringer. For eksempel hedder knappen i den følgende illustration **Konfigurer mit arbejdsområde**. 
+<span data-ttu-id="e404c-106">Du kan ændre udseendet og funktionaliteten af nogle arbejdsområder ved at opdatere indstillinger, der gælder i hele arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-106">You can change the appearance and behavior of some workspaces by updating settings that apply to the whole workspace.</span></span> <span data-ttu-id="e404c-107">Når et arbejdsområde kan konfigureres, omfatter handlingsruden en knap, der beder dig om at klikke på den for at foretage konfigurationsændringer.</span><span class="sxs-lookup"><span data-stu-id="e404c-107">When a workspace can be configured, the Action Pane includes a button that instructs you to click it to make configuration changes.</span></span> <span data-ttu-id="e404c-108">For eksempel hedder knappen i den følgende illustration **Konfigurer mit arbejdsområde**.</span><span class="sxs-lookup"><span data-stu-id="e404c-108">For example, in the following illustration, the button is named **Configure my workspace**.</span></span> 
 
-[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)   
+<span data-ttu-id="e404c-109">[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="e404c-109">[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)</span></span>   
 
-Når du klikker på knappen, åbnes en dialogboks, hvor du kan ændre de foruddefinerede indstillinger for arbejdsområdet. De specifikke indstillinger, der vises i denne dialogboks, varierer i forhold til hvert arbejdsområde og afhænger af bestemte kontrolelementer og forretningsdata, der er tilgængelige i arbejdsområdet. 
+<span data-ttu-id="e404c-110">Når du klikker på knappen, åbnes en dialogboks, hvor du kan ændre de foruddefinerede indstillinger for arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-110">When you click the button, a dialog appears, where you can modify the predefined settings for the workspace.</span></span> <span data-ttu-id="e404c-111">De specifikke indstillinger, der vises i denne dialogboks, varierer i forhold til hvert arbejdsområde og afhænger af bestemte kontrolelementer og forretningsdata, der er tilgængelige i arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-111">The specific settings that you see in this dialog vary by workspace, and depend on the specific controls and business data that are available in the workspace.</span></span> 
 
-[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+<span data-ttu-id="e404c-112">[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span><span class="sxs-lookup"><span data-stu-id="e404c-112">[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)</span></span>
 
-## <a name="filtering-a-workspace"></a>Filtrering af et arbejdsområde
-I mange arbejdsområder kan du filtrere indhold, der vises i dem. De kontrolelementer, der findes, kan måske filtrere indholdet i arbejdsområdet eller kun indholdet i en bestemt del af arbejdsområdet. Filtre i arbejdsområder kan være opslag, kombinationsfelter, fritekstfelter eller andre kontrolelementer. Hver type filter har dog de samme virkninger som beskrevet i følgende afsnit.
+## <a name="filtering-a-workspace"></a><span data-ttu-id="e404c-113">Filtrering af et arbejdsområde</span><span class="sxs-lookup"><span data-stu-id="e404c-113">Filtering a workspace</span></span>
+<span data-ttu-id="e404c-114">I mange arbejdsområder kan du filtrere indhold, der vises i dem.</span><span class="sxs-lookup"><span data-stu-id="e404c-114">Many workspaces let you filter the content that appears in them.</span></span> <span data-ttu-id="e404c-115">De kontrolelementer, der findes, kan måske filtrere indholdet i arbejdsområdet eller kun indholdet i en bestemt del af arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-115">The controls that are available might let you filter all the content in the workspace or only the content in a specific section of the workspace.</span></span> <span data-ttu-id="e404c-116">Filtre i arbejdsområder kan være opslag, kombinationsfelter, fritekstfelter eller andre kontrolelementer.</span><span class="sxs-lookup"><span data-stu-id="e404c-116">The filters on workspaces can be lookups, combo boxes, free-form text fields, or other types of controls.</span></span> <span data-ttu-id="e404c-117">Hver type filter har dog de samme virkninger som beskrevet i følgende afsnit.</span><span class="sxs-lookup"><span data-stu-id="e404c-117">However, every type of filter has the same effects, as described in the following sections.</span></span>
 
-### <a name="workspace-wide-filters"></a>Filtre til hele arbejdsområdet
+### <a name="workspace-wide-filters"></a><span data-ttu-id="e404c-118">Filtre til hele arbejdsområdet</span><span class="sxs-lookup"><span data-stu-id="e404c-118">Workspace-wide filters</span></span>
 
-Du kan filtrere hele arbejdsområdet ved hjælp af et filter til hele arbejdsområdet. Filter til hele arbejdsområdet vil være i det øverste venstre hjørne i arbejdsområdet. Hvis du vælger en bestemt værdi i rullemenuen i filteret, medfører det, at indholdet af arbejdsområdet filtreres på basis af dette valg. 
+<span data-ttu-id="e404c-119">Du kan filtrere hele arbejdsområdet ved hjælp af et filter til hele arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-119">You can filter the whole workspace by using a workspace-wide filter.</span></span> <span data-ttu-id="e404c-120">Filter til hele arbejdsområdet vil være i det øverste venstre hjørne i arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="e404c-120">A workspace-wide filter appears in the upper-left corner of the workspace.</span></span> <span data-ttu-id="e404c-121">Hvis du vælger en bestemt værdi i rullemenuen i filteret, medfører det, at indholdet af arbejdsområdet filtreres på basis af dette valg.</span><span class="sxs-lookup"><span data-stu-id="e404c-121">When you select a specific value in the drop-down list, the contents of the workspace are filtered based on that selection.</span></span> 
 
-[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png) 
+<span data-ttu-id="e404c-122">[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)</span><span class="sxs-lookup"><span data-stu-id="e404c-122">[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)</span></span> 
 
-Når du klikker for at åbne filteret, vises der forskellige indstillinger. 
+<span data-ttu-id="e404c-123">Når du klikker for at åbne filteret, vises der forskellige indstillinger.</span><span class="sxs-lookup"><span data-stu-id="e404c-123">When you click to open the filter, you're presented with several options.</span></span> 
 
-[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png) 
+<span data-ttu-id="e404c-124">[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span><span class="sxs-lookup"><span data-stu-id="e404c-124">[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)</span></span> 
 
-Vælg en indstilling for at filtrere arbejdsområdet baseret på denne indstilling.
+<span data-ttu-id="e404c-125">Vælg en indstilling for at filtrere arbejdsområdet baseret på denne indstilling.</span><span class="sxs-lookup"><span data-stu-id="e404c-125">Select an option to filter the workspace based on that option.</span></span>
 
-### <a name="workspace-section-filters"></a>Filtre i arbejdsområdets sektion
+### <a name="workspace-section-filters"></a><span data-ttu-id="e404c-126">Filtre i arbejdsområdets sektion</span><span class="sxs-lookup"><span data-stu-id="e404c-126">Workspace section filters</span></span>
 
-Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat. På følgende illustration er filteret (feltet med teksten "Filter") et eksempel på et filter med fritekst. 
+<span data-ttu-id="e404c-127">Hvis enkelte dele af arbejdsområdet har filtre, kan du filtrere hver sektion separat.</span><span class="sxs-lookup"><span data-stu-id="e404c-127">If individual sections of the workspace have filters, you can filter each section separately.</span></span> <span data-ttu-id="e404c-128">På følgende illustration er filteret (feltet med teksten "Filter") et eksempel på et filter med fritekst.</span><span class="sxs-lookup"><span data-stu-id="e404c-128">In the following illustration, the filter (the field that contains the text "Filter") is an example of a free-form text field filter.</span></span> 
 
-[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png) 
+<span data-ttu-id="e404c-129">[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span><span class="sxs-lookup"><span data-stu-id="e404c-129">[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)</span></span> 
 
-Som med et filter til hele arbejdsområdet kan du vælge eller angive en værdi i feltet for at filtrere indholdet af sektionen.
+<span data-ttu-id="e404c-130">Som med et filter til hele arbejdsområdet kan du vælge eller angive en værdi i feltet for at filtrere indholdet af sektionen.</span><span class="sxs-lookup"><span data-stu-id="e404c-130">As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.</span></span>
 
 
 

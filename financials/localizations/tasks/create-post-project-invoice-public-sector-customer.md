@@ -16,79 +16,79 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 50ab79878a25e3347df690815dd2bfd9b36c1715
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2119d4686e192896abb745a584e5f8ecc1521867
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-post-a-project-invoice-for-a-public-sector-customer-denmark"></a>Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor (Danmark)
+# <a name="create-and-post-a-project-invoice-for-a-public-sector-customer-denmark"></a><span data-ttu-id="c50a0-103">Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor (Danmark)</span><span class="sxs-lookup"><span data-stu-id="c50a0-103">Create and post a project invoice for a public sector customer (Denmark)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgave hjælper dig med at oprette og bogføre en projektfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering. 
+<span data-ttu-id="c50a0-104">Denne opgave hjælper dig med at oprette og bogføre en projektfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.</span><span class="sxs-lookup"><span data-stu-id="c50a0-104">This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing.</span></span> 
 
 
 
-Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.
+<span data-ttu-id="c50a0-105">Denne opgave blev oprettet ved hjælp af demodatafirmaet USMF med landet/området i den juridiske enheds primære adresse opdateret til Danmark.</span><span class="sxs-lookup"><span data-stu-id="c50a0-105">This task was created using the demo data company USMF with the country/region of legal entity primary address updated to Denmark.</span></span>
 
 
 
-Det er den sjette af seks procedurer, der viser den afsluttende proces til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer. Den er baseret på OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge. Du kan finde mindre forskelle for andre landespecifikke e-fakturaimplementeringer, som spansk eller italiensk, i tilgængelige WIKI-artikler.
+<span data-ttu-id="c50a0-106">Det er den sjette af seks procedurer, der viser den afsluttende proces til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="c50a0-106">This is the sixth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations.</span></span> <span data-ttu-id="c50a0-107">Den er baseret på OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.</span><span class="sxs-lookup"><span data-stu-id="c50a0-107">It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway.</span></span> <span data-ttu-id="c50a0-108">Du kan finde mindre forskelle for andre landespecifikke e-fakturaimplementeringer, som spansk eller italiensk, i tilgængelige WIKI-artikler.</span><span class="sxs-lookup"><span data-stu-id="c50a0-108">In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.</span></span>
 
 
 
-Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Importere elektroniske rapporteringskonfigurationer for elektronisk OIOUBL-fakturering', 'Konfigurere elektronisk OIOUBL-fakturering' og 'Konfigurere en debitorkonto til elektronisk OIOUBL-fakturering'.
+<span data-ttu-id="c50a0-109">Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Importere elektroniske rapporteringskonfigurationer for elektronisk OIOUBL-fakturering', 'Konfigurere elektronisk OIOUBL-fakturering' og 'Konfigurere en debitorkonto til elektronisk OIOUBL-fakturering'.</span><span class="sxs-lookup"><span data-stu-id="c50a0-109">Before you can complete this procedure, you must complete the following procedures: ‘Import OIOUBL electronic invoicing electronic reporting configurations’, ‘Set up OIOUBL electronic invoicing’ and ‘Set up a customer account for OIOUBL electronic invoicing’.</span></span>
 
 
-## <a name="update-a-project-contract"></a>Opdater en projektkontrakt
-1. Gå til Projektstyring og regnskab > Projekter > Projektkontrakter.
-2. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Projektkontrakt-id med værdien "000057".
-    * Vælg en projektkontrakt, der har en debitorfinansieringskilde, der er aktiveret til elektronisk fakturering.  
-3. Åbn detaljer for en projektkontrakt.
-4. Udvid sektionen Finansieringskilder.
-5. Klik på Detaljer.
-6. Udvid afsnittet Andet.
-7. Skriv en værdi i feltet Debitorrekvisition.
-8. Skriv en værdi i feltet Kundereference.
-9. Indtast eller vælg en værdi i feltet Kontakt-id.
-10. Klik på Gem.
+## <a name="update-a-project-contract"></a><span data-ttu-id="c50a0-110">Opdater en projektkontrakt</span><span class="sxs-lookup"><span data-stu-id="c50a0-110">Update a project contract</span></span>
+1. <span data-ttu-id="c50a0-111">Gå til Projektstyring og regnskab > Projekter > Projektkontrakter.</span><span class="sxs-lookup"><span data-stu-id="c50a0-111">Go to Project management and accounting > Projects > Project contracts.</span></span>
+2. <span data-ttu-id="c50a0-112">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="c50a0-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="c50a0-113">Filtrer f.eks. efter feltet Projektkontrakt-id med værdien "000057".</span><span class="sxs-lookup"><span data-stu-id="c50a0-113">For example, filter on the Project contract ID field with a value of '000057'.</span></span>
+    * <span data-ttu-id="c50a0-114">Vælg en projektkontrakt, der har en debitorfinansieringskilde, der er aktiveret til elektronisk fakturering.</span><span class="sxs-lookup"><span data-stu-id="c50a0-114">Select a project contract that has a customer funding source that is enabled for electronic invoicing.</span></span>  
+3. <span data-ttu-id="c50a0-115">Åbn detaljer for en projektkontrakt.</span><span class="sxs-lookup"><span data-stu-id="c50a0-115">Open details for a project contract.</span></span>
+4. <span data-ttu-id="c50a0-116">Udvid sektionen Finansieringskilder.</span><span class="sxs-lookup"><span data-stu-id="c50a0-116">Expand the Funding sources section.</span></span>
+5. <span data-ttu-id="c50a0-117">Klik på Detaljer.</span><span class="sxs-lookup"><span data-stu-id="c50a0-117">Click Details.</span></span>
+6. <span data-ttu-id="c50a0-118">Udvid afsnittet Andet.</span><span class="sxs-lookup"><span data-stu-id="c50a0-118">Expand the Other section.</span></span>
+7. <span data-ttu-id="c50a0-119">Skriv en værdi i feltet Debitorrekvisition.</span><span class="sxs-lookup"><span data-stu-id="c50a0-119">In the Customer requisition field, type a value.</span></span>
+8. <span data-ttu-id="c50a0-120">Skriv en værdi i feltet Kundereference.</span><span class="sxs-lookup"><span data-stu-id="c50a0-120">In the Customer reference field, type a value.</span></span>
+9. <span data-ttu-id="c50a0-121">Indtast eller vælg en værdi i feltet Kontakt-id.</span><span class="sxs-lookup"><span data-stu-id="c50a0-121">In the Contact ID field, enter or select a value.</span></span>
+10. <span data-ttu-id="c50a0-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="c50a0-122">Click Save.</span></span>
 
-## <a name="create-a-project-transaction"></a>Opret en projekttransaktion
-1. Gå til Projektstyring og regnskab > Vareopgaver > Varebehov.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Projekt-id.
-    * Som et eksempel kan du bruge projekt-id '000057'.  
-4. Indtast eller vælg en værdi i feltet Varenummer.
-    * Som et eksempel kan du bruge varenummer 'D0001'.  
-5. Klik på Administrer i handlingsruden.
-6. Klik på Bogføring.
-7. Klik på følgeseddel.
-8. Udvid sektionen Parametre.
-9. Vælg "Alle" i feltet Antal.
-10. Klik på OK.
-11. Klik på OK.
+## <a name="create-a-project-transaction"></a><span data-ttu-id="c50a0-123">Opret en projekttransaktion</span><span class="sxs-lookup"><span data-stu-id="c50a0-123">Create a project transaction</span></span>
+1. <span data-ttu-id="c50a0-124">Gå til Projektstyring og regnskab > Vareopgaver > Varebehov.</span><span class="sxs-lookup"><span data-stu-id="c50a0-124">Go to Project management and accounting > Item tasks > Item requirements.</span></span>
+2. <span data-ttu-id="c50a0-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c50a0-125">Click New.</span></span>
+3. <span data-ttu-id="c50a0-126">Indtast eller vælg en værdi i feltet Projekt-id.</span><span class="sxs-lookup"><span data-stu-id="c50a0-126">In the Project ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="c50a0-127">Som et eksempel kan du bruge projekt-id '000057'.</span><span class="sxs-lookup"><span data-stu-id="c50a0-127">As an example, you may use '000057' project ID.</span></span>  
+4. <span data-ttu-id="c50a0-128">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="c50a0-128">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="c50a0-129">Som et eksempel kan du bruge varenummer 'D0001'.</span><span class="sxs-lookup"><span data-stu-id="c50a0-129">As an example, you may use 'D0001' item number.</span></span>  
+5. <span data-ttu-id="c50a0-130">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="c50a0-130">On the Action Pane, click Manage.</span></span>
+6. <span data-ttu-id="c50a0-131">Klik på Bogføring.</span><span class="sxs-lookup"><span data-stu-id="c50a0-131">Click Posting.</span></span>
+7. <span data-ttu-id="c50a0-132">Klik på følgeseddel.</span><span class="sxs-lookup"><span data-stu-id="c50a0-132">Click Packing slip.</span></span>
+8. <span data-ttu-id="c50a0-133">Udvid sektionen Parametre.</span><span class="sxs-lookup"><span data-stu-id="c50a0-133">Expand the Parameters section.</span></span>
+9. <span data-ttu-id="c50a0-134">Vælg "Alle" i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="c50a0-134">In the Quantity field, select 'All'.</span></span>
+10. <span data-ttu-id="c50a0-135">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c50a0-135">Click OK.</span></span>
+11. <span data-ttu-id="c50a0-136">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c50a0-136">Click OK.</span></span>
 
-## <a name="create-a-proposal-and-post-an-invoice"></a>Oprette et forslag og bogføre en faktura 
-1. Gå til Projektstyring og regnskab > Projektfakturaer > Projektfakturaforslag.
-2. Klik på Ny.
-3. Klik på Fakturaforslag.
-4. Indtast eller vælg en værdi i feltet Projekt.
-5. Klik på OK.
-6. Klik på Bogfør.
-7. Klik på OK.
-8. Klik på OK.
+## <a name="create-a-proposal-and-post-an-invoice"></a><span data-ttu-id="c50a0-137">Oprette et forslag og bogføre en faktura</span><span class="sxs-lookup"><span data-stu-id="c50a0-137">Create a proposal and post an invoice</span></span> 
+1. <span data-ttu-id="c50a0-138">Gå til Projektstyring og regnskab > Projektfakturaer > Projektfakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="c50a0-138">Go to Project management and accounting > Project invoices > Project invoice proposals.</span></span>
+2. <span data-ttu-id="c50a0-139">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c50a0-139">Click New.</span></span>
+3. <span data-ttu-id="c50a0-140">Klik på Fakturaforslag.</span><span class="sxs-lookup"><span data-stu-id="c50a0-140">Click Invoice proposal.</span></span>
+4. <span data-ttu-id="c50a0-141">Indtast eller vælg en værdi i feltet Projekt.</span><span class="sxs-lookup"><span data-stu-id="c50a0-141">In the Project field, enter or select a value.</span></span>
+5. <span data-ttu-id="c50a0-142">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c50a0-142">Click OK.</span></span>
+6. <span data-ttu-id="c50a0-143">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="c50a0-143">Click Post.</span></span>
+7. <span data-ttu-id="c50a0-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c50a0-144">Click OK.</span></span>
+8. <span data-ttu-id="c50a0-145">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c50a0-145">Click OK.</span></span>
 
-## <a name="generate-an-oioubl-project-invoice"></a>Oprette en OIOUBL projektfaktura
-1. Gå til Projektstyring og regnskab > Projektfakturaer > Projektfakturaer.
-2. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Projektkontrakt-id med værdien "000057".
-3. Klik på Projektfaktura i handlingsruden.
-4. Klik på Send.
-5. Klik på Oprindelig.
+## <a name="generate-an-oioubl-project-invoice"></a><span data-ttu-id="c50a0-146">Oprette en OIOUBL projektfaktura</span><span class="sxs-lookup"><span data-stu-id="c50a0-146">Generate an OIOUBL project invoice</span></span>
+1. <span data-ttu-id="c50a0-147">Gå til Projektstyring og regnskab > Projektfakturaer > Projektfakturaer.</span><span class="sxs-lookup"><span data-stu-id="c50a0-147">Go to Project management and accounting > Project invoices > Project invoices.</span></span>
+2. <span data-ttu-id="c50a0-148">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="c50a0-148">Use the Quick Filter to find records.</span></span> <span data-ttu-id="c50a0-149">Filtrer f.eks. efter feltet Projektkontrakt-id med værdien "000057".</span><span class="sxs-lookup"><span data-stu-id="c50a0-149">For example, filter on the Project contract ID field with a value of '000057'.</span></span>
+3. <span data-ttu-id="c50a0-150">Klik på Projektfaktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="c50a0-150">On the Action Pane, click Project invoice.</span></span>
+4. <span data-ttu-id="c50a0-151">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="c50a0-151">Click Send.</span></span>
+5. <span data-ttu-id="c50a0-152">Klik på Oprindelig.</span><span class="sxs-lookup"><span data-stu-id="c50a0-152">Click Original.</span></span>
 
-## <a name="view-an-oioubl-electronic-invoice"></a>Se en elektronisk OIOUBL faktura
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Elektroniske rapporteringsjob.
-2. Klik på Vis filer.
-3. Klik på Åbn.
+## <a name="view-an-oioubl-electronic-invoice"></a><span data-ttu-id="c50a0-153">Se en elektronisk OIOUBL faktura</span><span class="sxs-lookup"><span data-stu-id="c50a0-153">View an OIOUBL electronic invoice</span></span>
+1. <span data-ttu-id="c50a0-154">Gå til Virksomhedsadministration > Elektronisk rapportering > Elektroniske rapporteringsjob.</span><span class="sxs-lookup"><span data-stu-id="c50a0-154">Go to Organization administration > Electronic reporting > Electronic reporting jobs.</span></span>
+2. <span data-ttu-id="c50a0-155">Klik på Vis filer.</span><span class="sxs-lookup"><span data-stu-id="c50a0-155">Click Show files.</span></span>
+3. <span data-ttu-id="c50a0-156">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="c50a0-156">Click Open.</span></span>
 
 

@@ -16,48 +16,48 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 88927a220246d11e48b210eb5648d7e7c2a7cef8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1187448393e4905ed5f2dfe826ec843fdcf0cb67
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurere destinationer for elektronisk rapportering (ER)
+# <a name="configure-destinations-for-electronic-reporting-er"></a><span data-ttu-id="d16a7-103">Konfigurere destinationer for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="d16a7-103">Configure destinations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du konfigurerer og bruger forskellige destinationer for outputkomponenter for elektronisk rapportering (ER), f.eks. en mappe eller en fil. Det demodatafirma, der bruges til at oprette denne procedure, er DEMF. Tyskland er landet\området for den juridiske enheds primære adresse, men du kan også bruge enhver juridisk enhed til denne procedure. 
+<span data-ttu-id="d16a7-104">Denne procedure viser, hvordan du konfigurerer og bruger forskellige destinationer for outputkomponenter for elektronisk rapportering (ER), f.eks. en mappe eller en fil.</span><span class="sxs-lookup"><span data-stu-id="d16a7-104">This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.</span></span> <span data-ttu-id="d16a7-105">Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.</span><span class="sxs-lookup"><span data-stu-id="d16a7-105">The demo data company used to create this procedure is DEMF.</span></span> <span data-ttu-id="d16a7-106">Tyskland er landet\området for den juridiske enheds primære adresse, men du kan også bruge enhver juridisk enhed til denne procedure.</span><span class="sxs-lookup"><span data-stu-id="d16a7-106">Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure.</span></span> 
 
-Det format, der bruges i dette eksempel, er ISO20022-kreditoverførsel, men du kan bruge ethvert format, du allerede har importeret. Bemærk, at denne procedure er et eksempel på en destination af en enkelt fil og en enkelt destination. Flere oplysninger om styring af destinationer for elektronisk rapportering findes i Dynamics 365 for Finance and Operations Hjælp.
+<span data-ttu-id="d16a7-107">Det format, der bruges i dette eksempel, er ISO20022-kreditoverførsel, men du kan bruge ethvert format, du allerede har importeret.</span><span class="sxs-lookup"><span data-stu-id="d16a7-107">The format used in this example is ISO20022 Credit transfer, but you can use any format that you have already imported.</span></span> <span data-ttu-id="d16a7-108">Bemærk, at denne procedure er et eksempel på en destination af en enkelt fil og en enkelt destination.</span><span class="sxs-lookup"><span data-stu-id="d16a7-108">Note, this procedure is an example of a single file and a single destination setup.</span></span> <span data-ttu-id="d16a7-109">Flere oplysninger om styring af destinationer for elektronisk rapportering findes i Dynamics 365 for Finance and Operations Hjælp.</span><span class="sxs-lookup"><span data-stu-id="d16a7-109">More information about Electronic reporting destination management can be found in the Dynamics 365 for Finance and Operations Help.</span></span>
 
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Destination for elektronisk rapportering.
-2. Klik på ny for at oprette et nyt sæt destinationer for et format.
-3. Vælg et format, som du vil konfigurere destinationer for, i feltet Reference.
-    * Hvis der ikke er en værdi at vælge, betyder det, at du ikke har importeret nogen konfiguration for elektronisk rapporteringsformat. Du skal importere en formatkonfiguration, før du konfigurerer destinationer.  
-4. Klik på Ny for at oprette en ny fildestination.
-    * Bemærk, at du kan oprette én fildestination for hver outputkomponent af samme format som f.eks. en mappe eller en fil. Du kan aktivere og deaktivere destinationer separat i indstillingerne.  
-5. Angiv et brugervenligt navn til outputkomponenten i feltet navn.
-    * Vi anbefaler, at du bruger meningsfulde navne såsom "Betalingsfil" eller "Kontrolrapport". Disse navne vises til brugerne ved konfigurationskørsel sammen med indstillingerne for destinationen.  
-6. Vælg en fil eller mappe, der er specifik for formatet, i feltet Filnavn.
-7. Klik på Indstillinger.
-8. Vælg Ja i feltet Aktiveret.
-    * Med afkrydsningsfeltet Aktiveret på hver fane kan du aktivere og deaktivere hver destination separat. I dette eksempel kan du aktivere afsendelse af en outputfil til en postmodtager, når filen er genereret.  
-9. Klik på Rediger for at konfigurere mailmodtagere.
-10. Klik på Tilføj.
-11. Klik på Mail for udskriftsstyring.
-12. Vælg en indstilling i feltet Mailkildetype.
-    * Du kan vælge forskellige mailkildetyper, f.eks. en kunde eller en leverandør. Dette definerer den argumenttype, der returneres af formlen Kildekonto for mail. I formlen Kildekonto for mail, der er beskrevet i et trin nedenfor, kan du tilknytte en mailkilde. Vælg Kreditor, hvis formlen skal returnere en kreditorkonto. Brug Kreditor, hvis du benytter konfigurationseksemplet for ISO 20022-kreditoverførsel.  
-13. Klik på knappen Bind mailkilde.
-14. Angiv en dokumentspecifik reference til en partstype, du har valgt tidligere, i formlen.
-    * I stedet for at skrive kan du finde en datakildenode, der repræsenterer partskontoen, og klikke på knappen Tilføj datakilde for at opdatere formlen. Hvis du f.eks. bruger konfigurationen ISO 20022 SEPA-kreditoverførsel, er den node, der repræsenterer en kreditorkonto, '$PaymentsForCoveringLetter'. Creditor.Identification.SourceID. Ellers skal du indtaste en strengværdi som f.eks. "DE-001" for at gemme en formel.  
-15. Klik på Gem.
-16. Luk siden.
-17. Klik på Rediger for at konfigurere kontaktoplysninger for parten.
-18. Vælg Ja i feltet Primær kontakt.
-    * Du kan bruge forskellige indstillinger til at angive, hvilke kontakttype hos parten der skal bruges som en mailadresse for denne destination. Vi bruger en primær kontakt i dette eksempel.  
-19. Klik på OK.
-20. Klik på OK.
-21. Skriv en værdi i feltet Emne.
-22. Klik på OK.
+1. <span data-ttu-id="d16a7-110">Gå til Virksomhedsadministration > Elektronisk rapportering > Destination for elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="d16a7-110">Go to Organization administration > Electronic reporting > Electronic reporting destination.</span></span>
+2. <span data-ttu-id="d16a7-111">Klik på ny for at oprette et nyt sæt destinationer for et format.</span><span class="sxs-lookup"><span data-stu-id="d16a7-111">Click New to create a new set of destinations for a format.</span></span>
+3. <span data-ttu-id="d16a7-112">Vælg et format, som du vil konfigurere destinationer for, i feltet Reference.</span><span class="sxs-lookup"><span data-stu-id="d16a7-112">In the Reference field, select a format for which you want to configure destinations.</span></span>
+    * <span data-ttu-id="d16a7-113">Hvis der ikke er en værdi at vælge, betyder det, at du ikke har importeret nogen konfiguration for elektronisk rapporteringsformat.</span><span class="sxs-lookup"><span data-stu-id="d16a7-113">If you don't have a value to select, it means that you have not imported any Electronic reporting format configurations.</span></span> <span data-ttu-id="d16a7-114">Du skal importere en formatkonfiguration, før du konfigurerer destinationer.</span><span class="sxs-lookup"><span data-stu-id="d16a7-114">You must import a format configuration before setting up destinations.</span></span>  
+4. <span data-ttu-id="d16a7-115">Klik på Ny for at oprette en ny fildestination.</span><span class="sxs-lookup"><span data-stu-id="d16a7-115">Click New to create a new file destination.</span></span>
+    * <span data-ttu-id="d16a7-116">Bemærk, at du kan oprette én fildestination for hver outputkomponent af samme format som f.eks. en mappe eller en fil.</span><span class="sxs-lookup"><span data-stu-id="d16a7-116">Note, you can create one file destination for each output component of the same format, such as a folder or a file.</span></span> <span data-ttu-id="d16a7-117">Du kan aktivere og deaktivere destinationer separat i indstillingerne.</span><span class="sxs-lookup"><span data-stu-id="d16a7-117">You will be able to enable and disable destinations separately in the settings.</span></span>  
+5. <span data-ttu-id="d16a7-118">Angiv et brugervenligt navn til outputkomponenten i feltet navn.</span><span class="sxs-lookup"><span data-stu-id="d16a7-118">In the Name field, enter the user-friendly name of output component.</span></span>
+    * <span data-ttu-id="d16a7-119">Vi anbefaler, at du bruger meningsfulde navne såsom "Betalingsfil" eller "Kontrolrapport".</span><span class="sxs-lookup"><span data-stu-id="d16a7-119">We recommend that you use meaningful names, such as "Payment file" or "Control report".</span></span> <span data-ttu-id="d16a7-120">Disse navne vises til brugerne ved konfigurationskørsel sammen med indstillingerne for destinationen.</span><span class="sxs-lookup"><span data-stu-id="d16a7-120">These names will be presented to users at configuration runtime along with the destination settings.</span></span>  
+6. <span data-ttu-id="d16a7-121">Vælg en fil eller mappe, der er specifik for formatet, i feltet Filnavn.</span><span class="sxs-lookup"><span data-stu-id="d16a7-121">In the File name, select a file or folder that is specific to the format.</span></span>
+7. <span data-ttu-id="d16a7-122">Klik på Indstillinger.</span><span class="sxs-lookup"><span data-stu-id="d16a7-122">Click Settings.</span></span>
+8. <span data-ttu-id="d16a7-123">Vælg Ja i feltet Aktiveret.</span><span class="sxs-lookup"><span data-stu-id="d16a7-123">Select Yes in the Enabled field.</span></span>
+    * <span data-ttu-id="d16a7-124">Med afkrydsningsfeltet Aktiveret på hver fane kan du aktivere og deaktivere hver destination separat.</span><span class="sxs-lookup"><span data-stu-id="d16a7-124">The Enabled check box on each tab enables and disables each destination separately.</span></span> <span data-ttu-id="d16a7-125">I dette eksempel kan du aktivere afsendelse af en outputfil til en postmodtager, når filen er genereret.</span><span class="sxs-lookup"><span data-stu-id="d16a7-125">In this example, you'll enable sending an output file to a mail recipient when the file is generated.</span></span>  
+9. <span data-ttu-id="d16a7-126">Klik på Rediger for at konfigurere mailmodtagere.</span><span class="sxs-lookup"><span data-stu-id="d16a7-126">Click Edit, to set up email recipients.</span></span>
+10. <span data-ttu-id="d16a7-127">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="d16a7-127">Click Add.</span></span>
+11. <span data-ttu-id="d16a7-128">Klik på Mail for udskriftsstyring.</span><span class="sxs-lookup"><span data-stu-id="d16a7-128">Click Print Management email.</span></span>
+12. <span data-ttu-id="d16a7-129">Vælg en indstilling i feltet Mailkildetype.</span><span class="sxs-lookup"><span data-stu-id="d16a7-129">In the Email source  field, select an option.</span></span>
+    * <span data-ttu-id="d16a7-130">Du kan vælge forskellige mailkildetyper, f.eks. en kunde eller en leverandør.</span><span class="sxs-lookup"><span data-stu-id="d16a7-130">You can select different email source types, such as a customer or a vendor type.</span></span> <span data-ttu-id="d16a7-131">Dette definerer den argumenttype, der returneres af formlen Kildekonto for mail.</span><span class="sxs-lookup"><span data-stu-id="d16a7-131">This defines the type of argument that will be returned by the Email source account formula.</span></span> <span data-ttu-id="d16a7-132">I formlen Kildekonto for mail, der er beskrevet i et trin nedenfor, kan du tilknytte en mailkilde.</span><span class="sxs-lookup"><span data-stu-id="d16a7-132">The Email source account formula, described in a following step, is the place where you bind an email source.</span></span> <span data-ttu-id="d16a7-133">Vælg Kreditor, hvis formlen skal returnere en kreditorkonto.</span><span class="sxs-lookup"><span data-stu-id="d16a7-133">Select Vendor if your formula will return a vendor account.</span></span> <span data-ttu-id="d16a7-134">Brug Kreditor, hvis du benytter konfigurationseksemplet for ISO 20022-kreditoverførsel.</span><span class="sxs-lookup"><span data-stu-id="d16a7-134">Use Vendor if you are using the ISO 20022 Credit Transfer configuration example.</span></span>  
+13. <span data-ttu-id="d16a7-135">Klik på knappen Bind mailkilde.</span><span class="sxs-lookup"><span data-stu-id="d16a7-135">Click Email source bind button.</span></span>
+14. <span data-ttu-id="d16a7-136">Angiv en dokumentspecifik reference til en partstype, du har valgt tidligere, i formlen.</span><span class="sxs-lookup"><span data-stu-id="d16a7-136">In the Formula, enter a document-specific reference to a party type that you selected earlier.</span></span>
+    * <span data-ttu-id="d16a7-137">I stedet for at skrive kan du finde en datakildenode, der repræsenterer partskontoen, og klikke på knappen Tilføj datakilde for at opdatere formlen.</span><span class="sxs-lookup"><span data-stu-id="d16a7-137">Instead of typing, you can find a data source node that represents the party account, and click the Add data source button to update the formula.</span></span> <span data-ttu-id="d16a7-138">Hvis du f.eks. bruger konfigurationen ISO 20022 SEPA-kreditoverførsel, er den node, der repræsenterer en kreditorkonto, '$PaymentsForCoveringLetter'. Creditor.Identification.SourceID.</span><span class="sxs-lookup"><span data-stu-id="d16a7-138">For example, if you use the ISO 20022 Credit Transfer configuration, the node representing a vendor account is '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span></span> <span data-ttu-id="d16a7-139">Ellers skal du indtaste en strengværdi som f.eks. "DE-001" for at gemme en formel.</span><span class="sxs-lookup"><span data-stu-id="d16a7-139">Otherwise, enter any string value, such as "DE-001", to save a formula.</span></span>  
+15. <span data-ttu-id="d16a7-140">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d16a7-140">Click Save.</span></span>
+16. <span data-ttu-id="d16a7-141">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d16a7-141">Close the page.</span></span>
+17. <span data-ttu-id="d16a7-142">Klik på Rediger for at konfigurere kontaktoplysninger for parten.</span><span class="sxs-lookup"><span data-stu-id="d16a7-142">Click Edit to configure contact details for the party.</span></span>
+18. <span data-ttu-id="d16a7-143">Vælg Ja i feltet Primær kontakt.</span><span class="sxs-lookup"><span data-stu-id="d16a7-143">Select Yes in the Primary contact field.</span></span>
+    * <span data-ttu-id="d16a7-144">Du kan bruge forskellige indstillinger til at angive, hvilke kontakttype hos parten der skal bruges som en mailadresse for denne destination.</span><span class="sxs-lookup"><span data-stu-id="d16a7-144">You may use different options to indicate what contact type of the party should be used as an email address for this destination.</span></span> <span data-ttu-id="d16a7-145">Vi bruger en primær kontakt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="d16a7-145">We use primary contact in this example.</span></span>  
+19. <span data-ttu-id="d16a7-146">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d16a7-146">Click OK.</span></span>
+20. <span data-ttu-id="d16a7-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d16a7-147">Click OK.</span></span>
+21. <span data-ttu-id="d16a7-148">Skriv en værdi i feltet Emne.</span><span class="sxs-lookup"><span data-stu-id="d16a7-148">In the Subject field, type a value.</span></span>
+22. <span data-ttu-id="d16a7-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d16a7-149">Click OK.</span></span>
 
 

@@ -16,36 +16,36 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7af954eaae76a327313a80cb3014d837267ccf4d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-bonus-depreciation"></a>Oprette straksafskrivning
+# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="800cf-103">Oprette straksafskrivning</span><span class="sxs-lookup"><span data-stu-id="800cf-103">Set up bonus depreciation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter en særlig afskrivning og knytter den til et anlægskartotek. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+<span data-ttu-id="800cf-104">Denne procedure viser, hvordan du opretter en særlig afskrivning og knytter den til et anlægskartotek.</span><span class="sxs-lookup"><span data-stu-id="800cf-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="800cf-105">Den bruger rollen Revisor og demodata for den juridiske enhed USMF.</span><span class="sxs-lookup"><span data-stu-id="800cf-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="create-a-special-depreciation-allowance"></a>Opret en særlig afskrivning
-1. Gå til Anlægsaktiver > Opsætning > Særlig afskrivning.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Særlig afskrivning.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Angiv et tal i feltet Procent.
-    * Hvis der ikke er angivet en procentdel, skal du angive et beløb.  
+## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="800cf-106">Opret en særlig afskrivning</span><span class="sxs-lookup"><span data-stu-id="800cf-106">Create a special depreciation allowance</span></span>
+1. <span data-ttu-id="800cf-107">Gå til Anlægsaktiver > Opsætning > Særlig afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
+2. <span data-ttu-id="800cf-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="800cf-108">Click New.</span></span>
+3. <span data-ttu-id="800cf-109">Skriv en værdi i feltet Særlig afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-109">In the Special depreciation allowance field, type a value.</span></span>
+4. <span data-ttu-id="800cf-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="800cf-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="800cf-111">Angiv et tal i feltet Procent.</span><span class="sxs-lookup"><span data-stu-id="800cf-111">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="800cf-112">Hvis der ikke er angivet en procentdel, skal du angive et beløb.</span><span class="sxs-lookup"><span data-stu-id="800cf-112">If a percentage was not indicated, set an amount.</span></span>  
 
-## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a>Knyt en særlig afskrivning til en bog for anlægsaktivgruppe
-1. Gå til Anlægsaktiver > Opsætning > Anlægsaktivgrupper.
-2. Vælg på listen den anlægsaktivgruppe, der er tilknyttet den særlige afskrivning.
-3. Klik på Bøger.
-4. Vælg på listen den bog, der er tilknyttet den særlige afskrivning.
-5. Klik på Særlig afskrivning.
-6. Klik på Ny.
-7. Skriv eller vælg en værdi i feltet Særlig afskrivning.
-    * Procentdel eller Beløb hentes som standard fra konfigurationen af særlig afskrivning.  
-8. Angiv et tal i feltet Prioritet.
+## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="800cf-113">Knyt en særlig afskrivning til en bog for anlægsaktivgruppe</span><span class="sxs-lookup"><span data-stu-id="800cf-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
+1. <span data-ttu-id="800cf-114">Gå til Anlægsaktiver > Opsætning > Anlægsaktivgrupper.</span><span class="sxs-lookup"><span data-stu-id="800cf-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="800cf-115">Vælg på listen den anlægsaktivgruppe, der er tilknyttet den særlige afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
+3. <span data-ttu-id="800cf-116">Klik på Bøger.</span><span class="sxs-lookup"><span data-stu-id="800cf-116">Click Books.</span></span>
+4. <span data-ttu-id="800cf-117">Vælg på listen den bog, der er tilknyttet den særlige afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
+5. <span data-ttu-id="800cf-118">Klik på Særlig afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-118">Click Special depreciation allowance.</span></span>
+6. <span data-ttu-id="800cf-119">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="800cf-119">Click New.</span></span>
+7. <span data-ttu-id="800cf-120">Skriv eller vælg en værdi i feltet Særlig afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-120">In the Special depreciation allowance field, enter or select a value.</span></span>
+    * <span data-ttu-id="800cf-121">Procentdel eller Beløb hentes som standard fra konfigurationen af særlig afskrivning.</span><span class="sxs-lookup"><span data-stu-id="800cf-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
+8. <span data-ttu-id="800cf-122">Angiv et tal i feltet Prioritet.</span><span class="sxs-lookup"><span data-stu-id="800cf-122">In the Priority field, enter a number.</span></span>
 
 

@@ -16,41 +16,41 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0bb995a95529be4d69fd9e82a2bb1fe473feb7f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 85b6d502f8dea32602d2fd5edc223a9660b863ad
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Vise et relateret internt bilag fra en kladde
+# <a name="view-a-related-intercompany-voucher-from-a-journal"></a><span data-ttu-id="d1cd0-103">Vise et relateret internt bilag fra en kladde</span><span class="sxs-lookup"><span data-stu-id="d1cd0-103">View a related intercompany voucher from a journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Vinduet med relaterede bilag viser bilaget fra modkontoen, når du bogfører en intern transaktion fra finanskladden.
+<span data-ttu-id="d1cd0-104">Vinduet med relaterede bilag viser bilaget fra modkontoen, når du bogfører en intern transaktion fra finanskladden.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a>Bogføre en intern kladde
-1. Gå til Finanskladder.
-2. Klik på Ny.
-3. Markér den valgte række på listen.
-4. Angiv eller vælg navnet på den interne kladde i feltet Navn.
-5. Klik på Linjer.
-6. Markér den valgte række på listen.
-7. I feltet Konto skal du specificere de ønskede værdier.
-8. Indtast eller vælg en værdi i feltet Beskrivelse.
-9. Skriv en værdi i feltet Beskrivelse.
-10. Luk siden.
-11. Angiv et tal i feltet Debet.
-12. Angiv eller vælg modkontoen i feltet Modkonto.
-13. Indtast eller vælg en værdi i feltet Modkonto.
-14. Luk siden.
-15. I feltet Modkonto skal du specificere de ønskede værdier.
-16. Klik på Bogfør.
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="d1cd0-105">Bogføre en intern kladde</span><span class="sxs-lookup"><span data-stu-id="d1cd0-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="d1cd0-106">Gå til Finanskladder.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-106">Go to General journals.</span></span>
+2. <span data-ttu-id="d1cd0-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-107">Click New.</span></span>
+3. <span data-ttu-id="d1cd0-108">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="d1cd0-109">Angiv eller vælg navnet på den interne kladde i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="d1cd0-110">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-110">Click Lines.</span></span>
+6. <span data-ttu-id="d1cd0-111">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="d1cd0-112">I feltet Konto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="d1cd0-113">Indtast eller vælg en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="d1cd0-114">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="d1cd0-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-115">Close the page.</span></span>
+11. <span data-ttu-id="d1cd0-116">Angiv et tal i feltet Debet.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="d1cd0-117">Angiv eller vælg modkontoen i feltet Modkonto.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="d1cd0-118">Indtast eller vælg en værdi i feltet Modkonto.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="d1cd0-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-119">Close the page.</span></span>
+15. <span data-ttu-id="d1cd0-120">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="d1cd0-121">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a>Få vist relateret internt bilag
-1. Klik på Bilag.
-2. Klik på Relaterede bilag.
-3. Markér den valgte række på listen.
-4. Klik på Bilag.
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="d1cd0-122">Få vist relateret internt bilag</span><span class="sxs-lookup"><span data-stu-id="d1cd0-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="d1cd0-123">Klik på Bilag.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-123">Click Voucher.</span></span>
+2. <span data-ttu-id="d1cd0-124">Klik på Relaterede bilag.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="d1cd0-125">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="d1cd0-126">Klik på Bilag.</span><span class="sxs-lookup"><span data-stu-id="d1cd0-126">Click Voucher.</span></span>
 
 

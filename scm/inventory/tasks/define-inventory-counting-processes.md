@@ -1,4 +1,4 @@
---- 
+---
 title: "Definere lageroptællingsprocesser"
 description: "Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,72 +17,71 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 62c60faafd9ad96ce636a08102bc8652f9fff870
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="define-inventory-counting-processes"></a>Definere lageroptællingsprocesser
+# <a name="define-inventory-counting-processes"></a><span data-ttu-id="fe63c-103">Definere lageroptællingsprocesser</span><span class="sxs-lookup"><span data-stu-id="fe63c-103">Define inventory counting processes</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde. Den viser også, hvordan du aktiverer optællingspolitikker på et lagersted og vareniveau. Disse opgaver udføres normalt af en tilsynsførende på lagerstedet. Det er en forudsætning, at der er nogle eksisterende, frigivne produkter og lagersteder. Hvis du bruger et demodatafirma, kan du køre denne procedure i USMF-firmaet med en hvilken som helst lagervare.
+<span data-ttu-id="fe63c-104">Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde.</span><span class="sxs-lookup"><span data-stu-id="fe63c-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="fe63c-105">Den viser også, hvordan du aktiverer optællingspolitikker på et lagersted og vareniveau.</span><span class="sxs-lookup"><span data-stu-id="fe63c-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="fe63c-106">Disse opgaver udføres normalt af en tilsynsførende på lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="fe63c-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="fe63c-107">Det er en forudsætning, at der er nogle eksisterende, frigivne produkter og lagersteder.</span><span class="sxs-lookup"><span data-stu-id="fe63c-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="fe63c-108">Hvis du bruger et demodatafirma, kan du køre denne procedure i USMF-firmaet med en hvilken som helst lagervare.</span><span class="sxs-lookup"><span data-stu-id="fe63c-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 
 
-## <a name="create-a-counting-group"></a>Oprette en optællingsgruppe.
-1. Gå til Lagerstyring > Opsætning > Lageropdeling > Optællingsgrupper.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Optællingsgruppe.
-4. Skriv en værdi i feltet Navn.
-5. Vælg en indstilling i feltet Optællingskode.
-    * Manuel – Medtager linjer, hver gang du kører jobbet. Du bestemmer altså optællingsintervallet for optællingsgruppen.  Periode – Medtager linjer for perioden i optællingskladden, når periodeintervallet er udløbet.   Nul på lager – Hvis disponibel lagerbeholdning når nul (0), genereres der linjer i optællingskladden, når jobbet køres. Hvis disponibel lagerbeholdning når 0 efter en optælling, genereres der først linjer, næste gang du starter optællingen.   Minimum – Der indsættes linjer i optællingskladden, hvis den disponible lagerbeholdning er lig med eller mindre end det angivne minimum.  
-    * Valgfri: Hvis du har angivet Periode i feltet Optællingskode, skal du skrive periodeintervallet i feltet Optællingsperiode. Intervalenheden er dage.  
-    * Når du kører jobbet til oprettelse af nye linjer i optællingskladden, oprettes der nye linjer med det interval, der er angivet i dette felt, uanset hvor ofte du kører det samme job. F.eks. hvis optællingsperioden er indstillet til 7, og kladdelinjer blev sidst genereret for en optælling den 1. januar, er der ikke gået syv dage, hvis et andet job startes på den 5. januar, og derfor genereres der ingen linjer i kladden for dette tidsinterval. Hvis du starter jobbet igen den 8. januar, oprettes der linjer for perioden i optællingskladden, da der er gået 7 dage.  
-6. Klik på Gem.
+## <a name="create-a-counting-group"></a><span data-ttu-id="fe63c-109">Oprette en optællingsgruppe.</span><span class="sxs-lookup"><span data-stu-id="fe63c-109">Create a counting group</span></span>
+1. <span data-ttu-id="fe63c-110">Gå til Lagerstyring > Opsætning > Lageropdeling > Optællingsgrupper.</span><span class="sxs-lookup"><span data-stu-id="fe63c-110">Go to Inventory management > Setup > Inventory > Counting groups.</span></span>
+2. <span data-ttu-id="fe63c-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe63c-111">Click New.</span></span>
+3. <span data-ttu-id="fe63c-112">Indtast en værdi i feltet Optællingsgruppe.</span><span class="sxs-lookup"><span data-stu-id="fe63c-112">In the Counting group field, type a value.</span></span>
+4. <span data-ttu-id="fe63c-113">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="fe63c-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="fe63c-114">Vælg en indstilling i feltet Optællingskode.</span><span class="sxs-lookup"><span data-stu-id="fe63c-114">In the Counting code field, select an option.</span></span>
+    * <span data-ttu-id="fe63c-115">Manuel – Medtager linjer, hver gang du kører jobbet.</span><span class="sxs-lookup"><span data-stu-id="fe63c-115">Manual – Includes lines every time you run the job.</span></span> <span data-ttu-id="fe63c-116">Du bestemmer altså optællingsintervallet for optællingsgruppen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-116">In other words, you decide the counting interval for the counting group.</span></span>  <span data-ttu-id="fe63c-117">Periode – Medtager linjer for perioden i optællingskladden, når periodeintervallet er udløbet.</span><span class="sxs-lookup"><span data-stu-id="fe63c-117">Period – Includes lines for the period in the counting journal when the period interval has expired.</span></span>   <span data-ttu-id="fe63c-118">Nul på lager – Hvis disponibel lagerbeholdning når nul (0), genereres der linjer i optællingskladden, når jobbet køres.</span><span class="sxs-lookup"><span data-stu-id="fe63c-118">Zero in stock – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run.</span></span> <span data-ttu-id="fe63c-119">Hvis disponibel lagerbeholdning når 0 efter en optælling, genereres der først linjer, næste gang du starter optællingen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-119">If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.</span></span>   <span data-ttu-id="fe63c-120">Minimum – Der indsættes linjer i optællingskladden, hvis den disponible lagerbeholdning er lig med eller mindre end det angivne minimum.</span><span class="sxs-lookup"><span data-stu-id="fe63c-120">Minimum – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.</span></span>  
+    * <span data-ttu-id="fe63c-121">Valgfri: Hvis du har angivet Periode i feltet Optællingskode, skal du skrive periodeintervallet i feltet Optællingsperiode.</span><span class="sxs-lookup"><span data-stu-id="fe63c-121">Optional: If you have specified Period in the Counting code field, you must type the interval for the period in the Counting period field.</span></span> <span data-ttu-id="fe63c-122">Intervalenheden er dage.</span><span class="sxs-lookup"><span data-stu-id="fe63c-122">The unit for intervals is days.</span></span>  
+    * <span data-ttu-id="fe63c-123">Når du kører jobbet til oprettelse af nye linjer i optællingskladden, oprettes der nye linjer med det interval, der er angivet i dette felt, uanset hvor ofte du kører det samme job.</span><span class="sxs-lookup"><span data-stu-id="fe63c-123">When you run the job for creating new lines in the counting journal, new lines are created at the interval specified in this field, regardless of how often you run the same job.</span></span> <span data-ttu-id="fe63c-124">F.eks. hvis optællingsperioden er indstillet til 7, og kladdelinjer blev sidst genereret for en optælling den 1. januar, er der ikke gået syv dage, hvis et andet job startes på den 5. januar, og derfor genereres der ingen linjer i kladden for dette tidsinterval.</span><span class="sxs-lookup"><span data-stu-id="fe63c-124">For example, if Counting period is set to 7, and journal lines were last generated for a count on January 1, if another job is started on January 5, seven days have not passed and so no lines are generated in the journal for that period interval.</span></span> <span data-ttu-id="fe63c-125">Hvis du starter jobbet igen den 8. januar, oprettes der linjer for perioden i optællingskladden, da der er gået 7 dage.</span><span class="sxs-lookup"><span data-stu-id="fe63c-125">If you start the job again on January 8, lines are generated for the period in the counting journal, because 7 days have passed.</span></span>  
+6. <span data-ttu-id="fe63c-126">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="fe63c-126">Click Save.</span></span>
 
-## <a name="create-a-counting-journal-name"></a>Oprette et navn på optællingskladde
-1. Gå til Lagerstyring > Opsætning > Kladdenavne > Lager.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Vælg "Optælling" i feltet Kladdetype.
-    * Valgfrit: Du kan vælge et andet id for bilagsserie, hvis du ønsker en bestemt nummerserie for bilags-id'er, der genereres, når du opretter optællingskladder. Bilagsserier oprettes på siden Nummerserier.  
-6. Vælg en indstilling i feltet Detaljeringsniveau.
-    * Dette er det detaljeniveau, der anvendes, når kladden bogføres.  
-    * Valgfrit: Du kan ændre værdien i feltet Reservation. Dette er den metode, der bruges til at reservere varer under optælling.   
-    * Manuel – Varerne reserveres manuelt i formen Reservation.   Automatisk – Ordreantallet reserveres fra en vares tilgængelige disponible lagerbeholdning.   Udfoldning – Reservationen er en del af varedisponeringen for transaktionen.  
-7. Klik på Gem.
+## <a name="create-a-counting-journal-name"></a><span data-ttu-id="fe63c-127">Oprette et navn på optællingskladde</span><span class="sxs-lookup"><span data-stu-id="fe63c-127">Create a counting journal name</span></span>
+1. <span data-ttu-id="fe63c-128">Gå til Lagerstyring > Opsætning > Kladdenavne > Lager.</span><span class="sxs-lookup"><span data-stu-id="fe63c-128">Go to Inventory management > Setup > Journal names > Inventory.</span></span>
+2. <span data-ttu-id="fe63c-129">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe63c-129">Click New.</span></span>
+3. <span data-ttu-id="fe63c-130">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="fe63c-130">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="fe63c-131">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="fe63c-131">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="fe63c-132">Vælg "Optælling" i feltet Kladdetype.</span><span class="sxs-lookup"><span data-stu-id="fe63c-132">In the Journal type field, select 'Counting'.</span></span>
+    * <span data-ttu-id="fe63c-133">Valgfrit: Du kan vælge et andet id for bilagsserie, hvis du ønsker en bestemt nummerserie for bilags-id'er, der genereres, når du opretter optællingskladder.</span><span class="sxs-lookup"><span data-stu-id="fe63c-133">Optional: you can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals.</span></span> <span data-ttu-id="fe63c-134">Bilagsserier oprettes på siden Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="fe63c-134">Voucher series are created in the Number sequences page.</span></span>  
+6. <span data-ttu-id="fe63c-135">Vælg en indstilling i feltet Detaljeringsniveau.</span><span class="sxs-lookup"><span data-stu-id="fe63c-135">In the Detail level field, select an option.</span></span>
+    * <span data-ttu-id="fe63c-136">Dette er det detaljeniveau, der anvendes, når kladden bogføres.</span><span class="sxs-lookup"><span data-stu-id="fe63c-136">This is the level of detail that is applied when the journal is posted.</span></span>  
+    * <span data-ttu-id="fe63c-137">Valgfrit: Du kan ændre værdien i feltet Reservation.</span><span class="sxs-lookup"><span data-stu-id="fe63c-137">Optional: you can change the value in the Reservation field.</span></span> <span data-ttu-id="fe63c-138">Dette er den metode, der bruges til at reservere varer under optælling.</span><span class="sxs-lookup"><span data-stu-id="fe63c-138">This is the method used to reserve items during counting.</span></span>   
+    * <span data-ttu-id="fe63c-139">Manuel – Varerne reserveres manuelt i formen Reservation.</span><span class="sxs-lookup"><span data-stu-id="fe63c-139">Manual – The items are reserved manually in the Reservation form.</span></span>   <span data-ttu-id="fe63c-140">Automatisk – Ordreantallet reserveres fra en vares tilgængelige disponible lagerbeholdning.</span><span class="sxs-lookup"><span data-stu-id="fe63c-140">Automatic – The order quantity is reserved from the available, on-hand inventory for the item.</span></span>   <span data-ttu-id="fe63c-141">Udfoldning – Reservationen er en del af varedisponeringen for transaktionen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-141">Explosion – The reservation is part of the master planning of the transaction.</span></span>  
+7. <span data-ttu-id="fe63c-142">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="fe63c-142">Click Save.</span></span>
 
-## <a name="set-standard-counting-journal-name"></a>Angive standardnavn for optællingskladde
-1. Gå til lagerstyring > Opsætning > Parametre til lager- og lagerstedsstyring.
-2. Klik på fanen Kladder.
-3. Klik på rullelisten i feltet Optælling for at åbne opslaget.
-4. Vælg kladde, som du oprettede tidligere.
-    * Denne kladde vil så være standardkladdenavnet for lagerkladder af typen Tælling.  
-5. Klik på fanen Generelt.
-    * Valgfrit: Vælg denne indstilling for at låse en vare under optællingsprocessen for at forhindre opdateringer af følgesedler, pluklister eller pluklisteregistreringer.  
+## <a name="set-standard-counting-journal-name"></a><span data-ttu-id="fe63c-143">Angive standardnavn for optællingskladde</span><span class="sxs-lookup"><span data-stu-id="fe63c-143">Set standard counting journal name</span></span>
+1. <span data-ttu-id="fe63c-144">Gå til lagerstyring > Opsætning > Parametre til lager- og lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="fe63c-144">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="fe63c-145">Klik på fanen Kladder.</span><span class="sxs-lookup"><span data-stu-id="fe63c-145">Click the Journals tab.</span></span>
+3. <span data-ttu-id="fe63c-146">Klik på rullelisten i feltet Optælling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="fe63c-146">In the Counting field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="fe63c-147">Vælg kladde, som du oprettede tidligere.</span><span class="sxs-lookup"><span data-stu-id="fe63c-147">Select the journal you previously created.</span></span>
+    * <span data-ttu-id="fe63c-148">Denne kladde vil så være standardkladdenavnet for lagerkladder af typen Tælling.</span><span class="sxs-lookup"><span data-stu-id="fe63c-148">This journal will then be the default journal name for inventory journals of the Counting type.</span></span>  
+5. <span data-ttu-id="fe63c-149">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="fe63c-149">Click the General tab.</span></span>
+    * <span data-ttu-id="fe63c-150">Valgfrit: Vælg denne indstilling for at låse en vare under optællingsprocessen for at forhindre opdateringer af følgesedler, pluklister eller pluklisteregistreringer.</span><span class="sxs-lookup"><span data-stu-id="fe63c-150">Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.</span></span>  
 
-## <a name="set-the-counting-policy-for-an-item"></a>Konfigurere optællingspolitik for en vare
-1. Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.
-2. Klik i listen på linket for varenummeret for det produkt, du vil angive optællingspolitikker for.
-    * Bemærk, at du skal vælge en vare, der spores på lageret. Et ikke-lagerført produkt kan ikke optælles. Hvis du bruger USMF-demodata, kan du vælge vare A0001.  
-3. Klik på Rediger.
-4. Slå udvidelsen af sektionen Styr lager til/fra.
-5. Klik på rullelisten i feltet Optællingsgruppe for at åbne opslaget.
-6. Klik på optællingsgruppen du tidligere har oprettet, på listen.
-    * Dette produkt vil nu blive medtaget, når der oprettes kladdelinjer til lageroptælling ved hjælp af denne optællingsgruppe.  
-7. Klik på Gem.
+## <a name="set-the-counting-policy-for-an-item"></a><span data-ttu-id="fe63c-151">Konfigurere optællingspolitik for en vare</span><span class="sxs-lookup"><span data-stu-id="fe63c-151">Set the counting policy for an item</span></span>
+1. <span data-ttu-id="fe63c-152">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="fe63c-152">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="fe63c-153">Klik i listen på linket for varenummeret for det produkt, du vil angive optællingspolitikker for.</span><span class="sxs-lookup"><span data-stu-id="fe63c-153">In the list, click on the link for the Item number of the product that you want to set counting policies on.</span></span>
+    * <span data-ttu-id="fe63c-154">Bemærk, at du skal vælge en vare, der spores på lageret.</span><span class="sxs-lookup"><span data-stu-id="fe63c-154">Note that you need to select an item that is inventory tracked.</span></span> <span data-ttu-id="fe63c-155">Et ikke-lagerført produkt kan ikke optælles.</span><span class="sxs-lookup"><span data-stu-id="fe63c-155">A non-stocked product can't be counted.</span></span> <span data-ttu-id="fe63c-156">Hvis du bruger USMF-demodata, kan du vælge vare A0001.</span><span class="sxs-lookup"><span data-stu-id="fe63c-156">If you are using USMF demo data you can select item A0001.</span></span>  
+3. <span data-ttu-id="fe63c-157">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="fe63c-157">Click Edit.</span></span>
+4. <span data-ttu-id="fe63c-158">Slå udvidelsen af sektionen Styr lager til/fra.</span><span class="sxs-lookup"><span data-stu-id="fe63c-158">Toggle the expansion of the Manage inventory section.</span></span>
+5. <span data-ttu-id="fe63c-159">Klik på rullelisten i feltet Optællingsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="fe63c-159">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="fe63c-160">Klik på optællingsgruppen du tidligere har oprettet, på listen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-160">In the list, click on the counting group you previously created.</span></span>
+    * <span data-ttu-id="fe63c-161">Dette produkt vil nu blive medtaget, når der oprettes kladdelinjer til lageroptælling ved hjælp af denne optællingsgruppe.</span><span class="sxs-lookup"><span data-stu-id="fe63c-161">This product will now be included when inventory counting journal lines are created using this counting group.</span></span>  
+7. <span data-ttu-id="fe63c-162">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="fe63c-162">Click Save.</span></span>
 
-## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a>Angive optællingspolitikken for en vare på et bestemt lagersted
-1. Klik på Styr lager i handlingsruden.
-2. Klik på Varelagersteder.
-3. Klik på Ny.
-4. Klik på rullelisten i feltet Lagersted for at åbne opslaget.
-5. Vælg på listen det lagersted, du vil konfigurere specifikke optællingspolitikker for.
-6. Klik på rullelisten i feltet Optællingsgruppe for at åbne opslaget.
-7. Vælg en optællingsgruppe på listen.
-    * Her kan du vælge en bestemt optællingsgruppe, der skal gælde for varen på den bestemte lagersted, du har valgt. Når optællingen udføres på det pågældende lagersted, tilsidesætter denne optællingspolitik den generelle optællingspolitik for varen.  
-8. Klik på Gem.
-
+## <a name="set-the-counting-policy-for-an-item-in-a-specific-warehouse"></a><span data-ttu-id="fe63c-163">Angive optællingspolitikken for en vare på et bestemt lagersted</span><span class="sxs-lookup"><span data-stu-id="fe63c-163">Set the counting policy for an item in a specific warehouse</span></span>
+1. <span data-ttu-id="fe63c-164">Klik på Styr lager i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="fe63c-164">On the Action Pane, click Manage inventory.</span></span>
+2. <span data-ttu-id="fe63c-165">Klik på Varelagersteder.</span><span class="sxs-lookup"><span data-stu-id="fe63c-165">Click Warehouse items.</span></span>
+3. <span data-ttu-id="fe63c-166">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe63c-166">Click New.</span></span>
+4. <span data-ttu-id="fe63c-167">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="fe63c-167">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="fe63c-168">Vælg på listen det lagersted, du vil konfigurere specifikke optællingspolitikker for.</span><span class="sxs-lookup"><span data-stu-id="fe63c-168">In the list, select the warehouse you want set up specific counting policies for.</span></span>
+6. <span data-ttu-id="fe63c-169">Klik på rullelisten i feltet Optællingsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="fe63c-169">In the Counting group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="fe63c-170">Vælg en optællingsgruppe på listen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-170">In the list, select a counting group</span></span>
+    * <span data-ttu-id="fe63c-171">Her kan du vælge en bestemt optællingsgruppe, der skal gælde for varen på den bestemte lagersted, du har valgt.</span><span class="sxs-lookup"><span data-stu-id="fe63c-171">Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected.</span></span> <span data-ttu-id="fe63c-172">Når optællingen udføres på det pågældende lagersted, tilsidesætter denne optællingspolitik den generelle optællingspolitik for varen.</span><span class="sxs-lookup"><span data-stu-id="fe63c-172">When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.</span></span>  
+8. <span data-ttu-id="fe63c-173">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="fe63c-173">Click Save.</span></span>
 

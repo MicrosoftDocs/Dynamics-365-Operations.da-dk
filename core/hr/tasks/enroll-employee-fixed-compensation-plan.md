@@ -16,28 +16,28 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 0f4756b45e750fabf0f88b10db417819380603c1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 88630311a4326508fa69a8938fa216f1a45ba089
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Melde en medarbejder til en fast lønplan
+# <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a><span data-ttu-id="75992-103">Melde en medarbejder til en fast lønplan</span><span class="sxs-lookup"><span data-stu-id="75992-103">Enroll an employee in a fixed compensation plan</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn. Denne procedure forudsætter, at en fast lønplan er blevet oprettet og er aktiv, og at der er angivet berettigelsesregler for planen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder proceduren ved at gå til Personale > Arbejdere > Medarbejdere > Kompensation > Fast plan
+<span data-ttu-id="75992-104">Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn.</span><span class="sxs-lookup"><span data-stu-id="75992-104">The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay.</span></span> <span data-ttu-id="75992-105">Denne procedure forudsætter, at en fast lønplan er blevet oprettet og er aktiv, og at der er angivet berettigelsesregler for planen.</span><span class="sxs-lookup"><span data-stu-id="75992-105">This procedure assumes that a fixed plan has been created and is active, and that eligibility rules have been set for the plan.</span></span> <span data-ttu-id="75992-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="75992-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="75992-107">Du begynder proceduren ved at gå til Personale > Arbejdere > Medarbejdere > Kompensation > Fast plan</span><span class="sxs-lookup"><span data-stu-id="75992-107">To begin the procedure, go to Human resources > Workers > Employees > Compensation > Fixed plan</span></span>
 
-1. Klik på Ny.
-2. Vælg en Fast løn-handling af typen Ansæt/genansæt for at beskrive ændringen af medarbejderens kompensation i feltet Handling.
-3. Klik op linket i den valgte række på listen.
-4. Klik på rullelisten i feltet Stilling for at åbne opslaget.
-5. Klik op linket i den valgte række på listen.
-    * Det niveau, der vises, er fra jobbets kompensationsniveau for stillingen. Niveauet skal være angivet på jobbet, før kompensation kan tildeles medarbejderen.  
-6. Vælg Fast løn-struktur for medarbejderen i feltet Plan. Opslaget Plan er filtreret til kun at vise de planer, som medarbejderen er berettiget til, baseret på Berettigelsesregler.
-7. Find og vælg den ønskede post på listen.
-    * Ikrafttrædelses- og udløbsdatoer for kompensation er standard fra start- og slutdatoer for tildeling af arbejderens stilling. Du kan justere disse datoer efter behov.  
-    * Hvis Fast lønplan er en trinplan, skal du vælge det trin, der indeholder den korrekte lønsats for medarbejderen. Hvis Fast lønplan er en omfangs- eller klasseplan, skal du angive lønsatsen for medarbejderen. Lønsatsen valideres mod toleranceindstillingerne for planen og minimale og maksimale referencepunkter for jobbets kompensationsniveau.  
-8. Klik på OK.
+1. <span data-ttu-id="75992-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="75992-108">Click New.</span></span>
+2. <span data-ttu-id="75992-109">Vælg en Fast løn-handling af typen Ansæt/genansæt for at beskrive ændringen af medarbejderens kompensation i feltet Handling.</span><span class="sxs-lookup"><span data-stu-id="75992-109">In the Action field, select a Fixed compensation action of type Hire/Rehire to describe the change in the employee's compensation.</span></span>
+3. <span data-ttu-id="75992-110">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="75992-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="75992-111">Klik på rullelisten i feltet Stilling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="75992-111">In the Position field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="75992-112">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="75992-112">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="75992-113">Det niveau, der vises, er fra jobbets kompensationsniveau for stillingen.</span><span class="sxs-lookup"><span data-stu-id="75992-113">The level that's displayed is from the Compensation Level of the Job on the Position.</span></span> <span data-ttu-id="75992-114">Niveauet skal være angivet på jobbet, før kompensation kan tildeles medarbejderen.</span><span class="sxs-lookup"><span data-stu-id="75992-114">The level must be set on the Job before compensation can be assigned to the employee.</span></span>  
+6. <span data-ttu-id="75992-115">Vælg Fast løn-struktur for medarbejderen i feltet Plan.</span><span class="sxs-lookup"><span data-stu-id="75992-115">In the Plan field, select the fixed compensation plan for the employee.</span></span> <span data-ttu-id="75992-116">Opslaget Plan er filtreret til kun at vise de planer, som medarbejderen er berettiget til, baseret på Berettigelsesregler.</span><span class="sxs-lookup"><span data-stu-id="75992-116">The Plan lookup is filtered to show only the plans that the employee is eligible for based on the Eligibility rules.</span></span>
+7. <span data-ttu-id="75992-117">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="75992-117">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="75992-118">Ikrafttrædelses- og udløbsdatoer for kompensation er standard fra start- og slutdatoer for tildeling af arbejderens stilling.</span><span class="sxs-lookup"><span data-stu-id="75992-118">The Effective and Expiration dates for the compensation default from the start and end dates for the worker's position assignment.</span></span> <span data-ttu-id="75992-119">Du kan justere disse datoer efter behov.</span><span class="sxs-lookup"><span data-stu-id="75992-119">You can adjust these dates as needed.</span></span>  
+    * <span data-ttu-id="75992-120">Hvis Fast lønplan er en trinplan, skal du vælge det trin, der indeholder den korrekte lønsats for medarbejderen.</span><span class="sxs-lookup"><span data-stu-id="75992-120">If the Fixed compensation plan is a step plan, select the step containing the correct pay rate for the employee.</span></span> <span data-ttu-id="75992-121">Hvis Fast lønplan er en omfangs- eller klasseplan, skal du angive lønsatsen for medarbejderen.</span><span class="sxs-lookup"><span data-stu-id="75992-121">If the fixed compensation plan is a grade or a band plan, enter the pay rate for the employee.</span></span> <span data-ttu-id="75992-122">Lønsatsen valideres mod toleranceindstillingerne for planen og minimale og maksimale referencepunkter for jobbets kompensationsniveau.</span><span class="sxs-lookup"><span data-stu-id="75992-122">The pay rate will be validated against the tolerance settings for the plan, and the minimum and maximum reference points for the job's compensation level.</span></span>  
+8. <span data-ttu-id="75992-123">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="75992-123">Click OK.</span></span>
 
 

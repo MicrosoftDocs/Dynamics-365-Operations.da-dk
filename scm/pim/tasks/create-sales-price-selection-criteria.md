@@ -16,41 +16,41 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 633628e6250baa74df544e814ce6e9656a2f0b06
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ce805b0bf43c931ebca13720d43754c18094fc85
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-sales-price-selection-criteria"></a>Oprette kriterier for valg af salgspris
+# <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="cec75-103">Oprette kriterier for valg af salgspris</span><span class="sxs-lookup"><span data-stu-id="cec75-103">Create sales price selection criteria</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til attributbaserede salgsprismodeller. Denne procedure kræver, at der er mindst én tilgængelig salgspris. I dette eksempel bruges prismodellen for salgsprismodellen for højttalerløsningen i demodatafirmaet USMF. Normalt bruger en produktchef denne procedure.
+<span data-ttu-id="cec75-104">Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til attributbaserede salgsprismodeller.</span><span class="sxs-lookup"><span data-stu-id="cec75-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="cec75-105">Denne procedure kræver, at der er mindst én tilgængelig salgspris.</span><span class="sxs-lookup"><span data-stu-id="cec75-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="cec75-106">I dette eksempel bruges prismodellen for salgsprismodellen for højttalerløsningen i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="cec75-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="cec75-107">Normalt bruger en produktchef denne procedure.</span><span class="sxs-lookup"><span data-stu-id="cec75-107">Typically, a product manager uses this procedure.</span></span>
 
 
-## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Tilføj et nyt kriterium for en eksisterende salgsprismodel
-1. Klik på Definition af produktvariantmodel.
-2. Klik på Produktkonfigurationsmodeller.
-3. På listen skal du vælge rækken for produktmodellen for højttalerløsningen, men ikke klikke på linket for modelnavnet.
-4. Klik på Model i handlingsruden.
-5. Klik på Prismodelkriterier.
-6. Klik på Ny.
-7. Skriv "Kundegruppe 10" i feltet Navn.
-    * Navnet på prismodelkriteriet bruges til at identificere de underliggende udvælgelseskriterier.  
-8. Indtast eller vælg en værdi i feltet Prismodel.
-9. I feltet Ordretype skal du vælge "Salgsordre".
-    * Ordretypen bestemmer de databasefelter, der er tilgængelige for valgforespørgslen.  
-10. Indtast en dato i feltet Gyldig fra.
-11. Angiv en dato i feltet Udløber senest.
-12. Klik på Gem.
+## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a><span data-ttu-id="cec75-108">Tilføj et nyt kriterium for en eksisterende salgsprismodel</span><span class="sxs-lookup"><span data-stu-id="cec75-108">Add a new criterion for an existing sales price model</span></span>
+1. <span data-ttu-id="cec75-109">Klik på Definition af produktvariantmodel.</span><span class="sxs-lookup"><span data-stu-id="cec75-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="cec75-110">Klik på Produktkonfigurationsmodeller.</span><span class="sxs-lookup"><span data-stu-id="cec75-110">Click Product configuration models.</span></span>
+3. <span data-ttu-id="cec75-111">På listen skal du vælge rækken for produktmodellen for højttalerløsningen, men ikke klikke på linket for modelnavnet.</span><span class="sxs-lookup"><span data-stu-id="cec75-111">In the list, select the row for the Speaker solution product model, but don’t click the link for the model name.</span></span>
+4. <span data-ttu-id="cec75-112">Klik på Model i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cec75-112">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="cec75-113">Klik på Prismodelkriterier.</span><span class="sxs-lookup"><span data-stu-id="cec75-113">Click Price model criteria.</span></span>
+6. <span data-ttu-id="cec75-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="cec75-114">Click New.</span></span>
+7. <span data-ttu-id="cec75-115">Skriv "Kundegruppe 10" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="cec75-115">In the Name field, type ‘Customer group 10’.</span></span>
+    * <span data-ttu-id="cec75-116">Navnet på prismodelkriteriet bruges til at identificere de underliggende udvælgelseskriterier.</span><span class="sxs-lookup"><span data-stu-id="cec75-116">The name of the price model criterion is used to help identify the underlying selection criteria.</span></span>  
+8. <span data-ttu-id="cec75-117">Indtast eller vælg en værdi i feltet Prismodel.</span><span class="sxs-lookup"><span data-stu-id="cec75-117">In the Price model field, enter or select a value.</span></span>
+9. <span data-ttu-id="cec75-118">I feltet Ordretype skal du vælge "Salgsordre".</span><span class="sxs-lookup"><span data-stu-id="cec75-118">In the Order type field, select Sales order.</span></span>
+    * <span data-ttu-id="cec75-119">Ordretypen bestemmer de databasefelter, der er tilgængelige for valgforespørgslen.</span><span class="sxs-lookup"><span data-stu-id="cec75-119">The order type determines the database fields that will be available for the selection query.</span></span>  
+10. <span data-ttu-id="cec75-120">Indtast en dato i feltet Gyldig fra.</span><span class="sxs-lookup"><span data-stu-id="cec75-120">In the Valid from field, enter a date.</span></span>
+11. <span data-ttu-id="cec75-121">Angiv en dato i feltet Udløber senest.</span><span class="sxs-lookup"><span data-stu-id="cec75-121">In the Expire by field, enter a date.</span></span>
+12. <span data-ttu-id="cec75-122">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="cec75-122">Click Save.</span></span>
 
-## <a name="create-the-query-for-the-selection-criteria"></a>Opret forespørgslen for udvælgelseskriterierne
-1. Klik på Rediger.
-2. Vælg Kunder i feltet Tabel. 
-3. Vælg Kundegruppe i feltet Felt.
-    * I dette eksempel bruger vi en specifik kundegruppe til udvælgelseskriterierne.  
-4. Vælg Kundegruppe 10 i feltet Kriterier. 
-5. Klik på OK.
+## <a name="create-the-query-for-the-selection-criteria"></a><span data-ttu-id="cec75-123">Opret forespørgslen for udvælgelseskriterierne</span><span class="sxs-lookup"><span data-stu-id="cec75-123">Create the query for the selection criteria</span></span>
+1. <span data-ttu-id="cec75-124">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cec75-124">Click Edit.</span></span>
+2. <span data-ttu-id="cec75-125">Vælg Kunder i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="cec75-125">In the Table field, select Customers.</span></span> 
+3. <span data-ttu-id="cec75-126">Vælg Kundegruppe i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="cec75-126">In the Field field, select Customer group.</span></span>
+    * <span data-ttu-id="cec75-127">I dette eksempel bruger vi en specifik kundegruppe til udvælgelseskriterierne.</span><span class="sxs-lookup"><span data-stu-id="cec75-127">In this example, we will use a specific customer group for the selection criteria.</span></span>  
+4. <span data-ttu-id="cec75-128">Vælg Kundegruppe 10 i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="cec75-128">In the Criteria field, select Customer group 10.</span></span> 
+5. <span data-ttu-id="cec75-129">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cec75-129">Click OK.</span></span>
 
 

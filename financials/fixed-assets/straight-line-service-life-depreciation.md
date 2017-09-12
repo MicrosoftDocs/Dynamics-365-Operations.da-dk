@@ -16,95 +16,95 @@ ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ff3d87f610489608f0bebadd9bb4c9c5c727992
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2b8c078841ca2e4bd994bbfbbe2abb130a4cf6fa
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="straight-line-service-life-depreciation"></a>Lineær afskrivning for levetiden
+# <a name="straight-line-service-life-depreciation"></a><span data-ttu-id="ec8f5-103">Lineær afskrivning for levetiden</span><span class="sxs-lookup"><span data-stu-id="ec8f5-103">Straight line service life depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.
+<span data-ttu-id="ec8f5-104">Denne artikel indeholder en oversigt over afskrivningsmetoden Lineær afskrivning for levetiden.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-104">This article gives an overview of the Straight line service life method of depreciation.</span></span>
 
-Når du opretter en afskrivningsprofil for anlægsaktiver og vælger Lineær afskrivning over servicelevetiden i feltet Metode på siden Afskrivningsprofiler, baseres afskrivningen af aktiver med denne tilknyttede afskrivningsprofil, på baggrund af den samlede levetid for anlægsaktivet. Det vil normalt sige med det samme afskrivningsbeløb for hver afskrivningsperiode. 
+<span data-ttu-id="ec8f5-105">Når du opretter en afskrivningsprofil for anlægsaktiver og vælger Lineær afskrivning over servicelevetiden i feltet Metode på siden Afskrivningsprofiler, baseres afskrivningen af aktiver med denne tilknyttede afskrivningsprofil, på baggrund af den samlede levetid for anlægsaktivet.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-105">When you set up a fixed asset depreciation profile and select Straight line service life in the Method field in the Depreciation profiles page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset.</span></span> <span data-ttu-id="ec8f5-106">Det vil normalt sige med det samme afskrivningsbeløb for hver afskrivningsperiode.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-106">This generally is the same depreciation amount in each depreciation period.</span></span> 
 
-Den eneste forskel, der er på det afskrivningsbeløb, der beregnes for den lineær afskrivningsmetode for den resterende levetid og lineær afskrivningsmetode for levetiden, er ved postering af en regulering for anlægsaktivet. 
+<span data-ttu-id="ec8f5-107">Den eneste forskel, der er på det afskrivningsbeløb, der beregnes for den lineær afskrivningsmetode for den resterende levetid og lineær afskrivningsmetode for levetiden, er ved postering af en regulering for anlægsaktivet.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-107">The difference in the depreciation amount that is calculated between straight line service life remaining and straight line service life is when there is an adjustment posted to the asset.</span></span> 
 
-Hvis du vil oprette en lineær afskrivning for servicelevetiden, skal du også foretage valg i felterne Afskrivningsår og Periodefrekvens på siden Afskrivningsprofiler.
+<span data-ttu-id="ec8f5-108">Hvis du vil oprette en lineær afskrivning for servicelevetiden, skal du også foretage valg i felterne Afskrivningsår og Periodefrekvens på siden Afskrivningsprofiler.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-108">To set up straight line service life depreciation, you must also select options in the Depreciation year and Period frequency fields in the Depreciation profiles page.</span></span>
 
-## <a name="select-a-depreciation-year"></a>Vælge et afskrivningsår
-Du kan vælge enten Kalender eller Regnskabsår i feltet Afskrivningsår på siden Afskrivningsprofiler. Dit valg bestemmer, hvad der kan vælges i feltet Periodefrekvens. Standardindstillingen er Kalender.
+## <a name="select-a-depreciation-year"></a><span data-ttu-id="ec8f5-109">Vælge et afskrivningsår</span><span class="sxs-lookup"><span data-stu-id="ec8f5-109">Select a depreciation year</span></span>
+<span data-ttu-id="ec8f5-110">Du kan vælge enten Kalender eller Regnskabsår i feltet Afskrivningsår på siden Afskrivningsprofiler.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-110">You can select either Calendar or Fiscal in the Depreciation year field in the Depreciation profiles page.</span></span> <span data-ttu-id="ec8f5-111">Dit valg bestemmer, hvad der kan vælges i feltet Periodefrekvens.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-111">The selection defines the options that are available in the Period frequency field.</span></span> <span data-ttu-id="ec8f5-112">Standardindstillingen er Kalender.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-112">The default option is Calendar.</span></span>
 
-### <a name="calendar"></a>Kalender
+### <a name="calendar"></a><span data-ttu-id="ec8f5-113">Kalender</span><span class="sxs-lookup"><span data-stu-id="ec8f5-113">Calendar</span></span>
 
-Hvis du vælger Kalender, vises der som standard et år fra d. 1. januar til d. 31. december, også selvom du har defineret regnskabsåret anderledes. 
+<span data-ttu-id="ec8f5-114">Hvis du vælger Kalender, vises der som standard et år fra d. 1. januar til d. 31. december, også selvom du har defineret regnskabsåret anderledes.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-114">If you select Calendar, a year of January 1 to December 31 is assumed, even if you have defined the fiscal calendar differently.</span></span> 
 
-Indstillingen Kalender opdaterer afskrivningsgrundlaget (typisk bogført nettoværdi minus scrapværdi) d. 1. januar hvert år. I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen. 
+<span data-ttu-id="ec8f5-115">Indstillingen Kalender opdaterer afskrivningsgrundlaget (typisk bogført nettoværdi minus scrapværdi) d. 1. januar hvert år.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-115">The Calendar option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year.</span></span> <span data-ttu-id="ec8f5-116">I eksemplerne senere i dette emne er afskrivningsgrundlaget tælleren i det første udtryk i beregningen i beregningskolonnen.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-116">In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column.</span></span> 
 
-Hvis du vælger Kalender, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens, der definerer datoer og beløb for periodiseringen af afskrivningsposteringerne i hele kalenderåret.
--   Årligt bogfører et beløb d. 31. december.
--   Ved Månedligt bogføres et månedligt beløb sidst i hver kalendermåned.
--   Ved Kvartalsvis bogføres et kvartalsmæssigt beløb sidst i hvert kalenderkvartal (d. 31. marts, d. 30. juni, d. 30. september og d. 31. december).
--   Halvårlig bogføres et halvårligt beløb sidst i hvert kalenderhalvår (d. 30. juni og d. 31. december).
--   Ved Dagligt bogføres afskrivningsbeløbet for afskrivningsmetoden dagligt ved hjælp af en postering for hver dag.
+<span data-ttu-id="ec8f5-117">Hvis du vælger Kalender, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens, der definerer datoer og beløb for periodiseringen af afskrivningsposteringerne i hele kalenderåret.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-117">If you select Calendar, the following options are available in the Period frequency field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:</span></span>
+-   <span data-ttu-id="ec8f5-118">Årligt bogfører et beløb d. 31. december.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-118">Yearly posts an amount on December 31.</span></span>
+-   <span data-ttu-id="ec8f5-119">Ved Månedligt bogføres et månedligt beløb sidst i hver kalendermåned.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-119">Monthly posts a monthly amount at the end of each calendar month.</span></span>
+-   <span data-ttu-id="ec8f5-120">Ved Kvartalsvis bogføres et kvartalsmæssigt beløb sidst i hvert kalenderkvartal (d. 31. marts, d. 30. juni, d. 30. september og d. 31. december).</span><span class="sxs-lookup"><span data-stu-id="ec8f5-120">Quarterly posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).</span></span>
+-   <span data-ttu-id="ec8f5-121">Halvårlig bogføres et halvårligt beløb sidst i hvert kalenderhalvår (d. 30. juni og d. 31. december).</span><span class="sxs-lookup"><span data-stu-id="ec8f5-121">Half-Yearly posts a half-yearly amount at the end of each calendar half year (June 30 and December 31).</span></span>
+-   <span data-ttu-id="ec8f5-122">Ved Dagligt bogføres afskrivningsbeløbet for afskrivningsmetoden dagligt ved hjælp af en postering for hver dag.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-122">Daily posts the depreciation amount for the daily depreciation method using one transaction for each day.</span></span>
 
-Hvis du f.eks. vælger Årligt, bogføres den årlige afskrivning kun én gang, nemlig d. 31. december hvert år. Hvis du vælger Månedligt, bogføres den månedlige afskrivning hver måned med 1/12 af det årlige afskrivningsbeløb.
+<span data-ttu-id="ec8f5-123">Hvis du f.eks. vælger Årligt, bogføres den årlige afskrivning kun én gang, nemlig d. 31. december hvert år.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-123">For example, if you select Yearly, the yearly depreciation is posted only one time, on December 31 of each year.</span></span> <span data-ttu-id="ec8f5-124">Hvis du vælger Månedligt, bogføres den månedlige afskrivning hver måned med 1/12 af det årlige afskrivningsbeløb.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-124">If you select Monthly, the monthly depreciation is posted each month as 1/12 of the yearly depreciation amount.</span></span>
 
-### <a name="fiscal"></a>Regnskabsår
+### <a name="fiscal"></a><span data-ttu-id="ec8f5-125">Regnskabsår</span><span class="sxs-lookup"><span data-stu-id="ec8f5-125">Fiscal</span></span>
 
-Hvis du vælger Regnskabsår i feltet Afskrivningsår, bruges den lineære afskrivningsmetode. Den beregnes efter regnskabsår, som defineret af den regnskabskalender, der er angivet for bogen, eller efter den regnskabskalender, der er valgt på siden Finans. Regnskabskalendere oprettes på siden Regnskabskalendere.
+<span data-ttu-id="ec8f5-126">Hvis du vælger Regnskabsår i feltet Afskrivningsår, bruges den lineære afskrivningsmetode.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-126">If you select Fiscal in the Depreciation year field, the straight line service life depreciation is used.</span></span> <span data-ttu-id="ec8f5-127">Den beregnes efter regnskabsår, som defineret af den regnskabskalender, der er angivet for bogen, eller efter den regnskabskalender, der er valgt på siden Finans.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-127">It is calculated based on the fiscal year, which is defined by the fiscal calendar that is specified for the book, or by the fiscal calendar that is selected in the Ledger page.</span></span> <span data-ttu-id="ec8f5-128">Regnskabskalendere oprettes på siden Regnskabskalendere.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-128">Fiscal calendars are set up in the Fiscal calendars page.</span></span>
 
-I forbindelse med regnskabsåret fra d. 1. juli til og med d. 30. juni starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres automatisk for hver regnskabsperiode. Længden på regnskabsåret er baseret på de regnskabsperioder, du angiver, når du opretter et nyt regnskabsår i formen Regnskabskalendere. 
+<span data-ttu-id="ec8f5-129">I forbindelse med regnskabsåret fra d. 1. juli til og med d. 30. juni starter afskrivningsberegningen f.eks. d. 1. juli.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-129">For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1.</span></span> <span data-ttu-id="ec8f5-130">Regnskabsåret kan være længere eller kortere end 12 måneder.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-130">The fiscal year can be longer or shorter than 12 months.</span></span> <span data-ttu-id="ec8f5-131">Afskrivningen reguleres automatisk for hver regnskabsperiode.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-131">The depreciation automatically is adjusted for each fiscal period.</span></span> <span data-ttu-id="ec8f5-132">Længden på regnskabsåret er baseret på de regnskabsperioder, du angiver, når du opretter et nyt regnskabsår i formen Regnskabskalendere.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-132">The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year in the Fiscal calendars form.</span></span> 
 
-Hvis du vælger Regnskab, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens:
--   Årligt bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
--   Regnskabsperiode beregner det samlede afskrivningsbeløb for regnskabsåret, der periodiseres for de perioder, der er defineret i formen Regnskabskalendere for regnskabskalenderen.
+<span data-ttu-id="ec8f5-133">Hvis du vælger Regnskab, kan du vælge mellem følgende indstillinger i feltet Periodefrekvens:</span><span class="sxs-lookup"><span data-stu-id="ec8f5-133">If you select Fiscal, the following options are available in the Period frequency field:</span></span>
+-   <span data-ttu-id="ec8f5-134">Årligt bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-134">Yearly posts the total amount of the depreciation that is calculated for the fiscal year as one amount on the last day of the fiscal year.</span></span>
+-   <span data-ttu-id="ec8f5-135">Regnskabsperiode beregner det samlede afskrivningsbeløb for regnskabsåret, der periodiseres for de perioder, der er defineret i formen Regnskabskalendere for regnskabskalenderen.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-135">Fiscal period calculates the total amount of the depreciation for the fiscal year, which is accrued into the periods that are defined in the Fiscal calendars form for the fiscal calendar.</span></span>
 
-## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel: Lineær afskrivning af et uændret anlægsaktiv
-Det antages, at anlægsaktivet har følgende karakteristika.
+## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a><span data-ttu-id="ec8f5-136">Eksempel: Lineær afskrivning af et uændret anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="ec8f5-136">Example: Straight line depreciation of an unchanged fixed asset</span></span>
+<span data-ttu-id="ec8f5-137">Det antages, at anlægsaktivet har følgende karakteristika.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-137">Suppose that a fixed asset has the following characteristics.</span></span>
 
 |                     |        |
 |---------------------|--------|
-| Anskaffelsesomkostninger    | 11.000 |
-| Restværdi       | 1.000  |
-| Afskrivningsgrundlag   | 10.000 |
-| Levetid i år  | 5      |
-| Årlig afskrivning | 2.000  |
+| <span data-ttu-id="ec8f5-138">Anskaffelsesomkostninger</span><span class="sxs-lookup"><span data-stu-id="ec8f5-138">Acquisition cost</span></span>    | <span data-ttu-id="ec8f5-139">11.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-139">11,000</span></span> |
+| <span data-ttu-id="ec8f5-140">Restværdi</span><span class="sxs-lookup"><span data-stu-id="ec8f5-140">Salvage value</span></span>       | <span data-ttu-id="ec8f5-141">1.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-141">1,000</span></span>  |
+| <span data-ttu-id="ec8f5-142">Afskrivningsgrundlag</span><span class="sxs-lookup"><span data-stu-id="ec8f5-142">Depreciation base</span></span>   | <span data-ttu-id="ec8f5-143">10.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-143">10,000</span></span> |
+| <span data-ttu-id="ec8f5-144">Levetid i år</span><span class="sxs-lookup"><span data-stu-id="ec8f5-144">Service life years</span></span>  | <span data-ttu-id="ec8f5-145">5</span><span class="sxs-lookup"><span data-stu-id="ec8f5-145">5</span></span>      |
+| <span data-ttu-id="ec8f5-146">Årlig afskrivning</span><span class="sxs-lookup"><span data-stu-id="ec8f5-146">Yearly depreciation</span></span> | <span data-ttu-id="ec8f5-147">2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-147">2,000</span></span>  |
 
-Dette giver det samme afskrivningsbeløb for hvert år. (Anskaffelsesomkostninger - restværdi)/levetiden i år
+<span data-ttu-id="ec8f5-148">Dette giver det samme afskrivningsbeløb for hvert år.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-148">You get the same depreciation amount each year.</span></span> <span data-ttu-id="ec8f5-149">(Anskaffelsesomkostninger - restværdi)/levetiden i år</span><span class="sxs-lookup"><span data-stu-id="ec8f5-149">(Acquisition cost - Salvage value) / Service life years</span></span>
 
-| Periode | Beregning af det årlige afskrivningsbeløb | Den bogførte nettoværdi ved årets afslutning |
+| <span data-ttu-id="ec8f5-150">Periode</span><span class="sxs-lookup"><span data-stu-id="ec8f5-150">Period</span></span> | <span data-ttu-id="ec8f5-151">Beregning af det årlige afskrivningsbeløb</span><span class="sxs-lookup"><span data-stu-id="ec8f5-151">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="ec8f5-152">Den bogførte nettoværdi ved årets afslutning</span><span class="sxs-lookup"><span data-stu-id="ec8f5-152">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | (11.000 - 1.000) / 5 = 2.000              | 9.000                                 |
-| År 2 | (11.000 - 1.000) / 5 = 2.000              | 7.000                                 |
-| År 3 | (11.000 - 1.000) / 5 = 2.000              | 5.000                                 |
-| År 4 | (11.000 - 1.000) / 5 = 2.000              | 3.000                                 |
-| År 5 | (11.000 - 1.000) / 5 = 2.000              | 1.000                                 |
+| <span data-ttu-id="ec8f5-153">År 1</span><span class="sxs-lookup"><span data-stu-id="ec8f5-153">Year 1</span></span> | <span data-ttu-id="ec8f5-154">(11.000 - 1.000) / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-154">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="ec8f5-155">9.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-155">9,000</span></span>                                 |
+| <span data-ttu-id="ec8f5-156">År 2</span><span class="sxs-lookup"><span data-stu-id="ec8f5-156">Year 2</span></span> | <span data-ttu-id="ec8f5-157">(11.000 - 1.000) / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-157">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="ec8f5-158">7.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-158">7,000</span></span>                                 |
+| <span data-ttu-id="ec8f5-159">År 3</span><span class="sxs-lookup"><span data-stu-id="ec8f5-159">Year 3</span></span> | <span data-ttu-id="ec8f5-160">(11.000 - 1.000) / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-160">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="ec8f5-161">5.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-161">5,000</span></span>                                 |
+| <span data-ttu-id="ec8f5-162">År 4</span><span class="sxs-lookup"><span data-stu-id="ec8f5-162">Year 4</span></span> | <span data-ttu-id="ec8f5-163">(11.000 - 1.000) / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-163">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="ec8f5-164">3.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-164">3,000</span></span>                                 |
+| <span data-ttu-id="ec8f5-165">År 5</span><span class="sxs-lookup"><span data-stu-id="ec8f5-165">Year 5</span></span> | <span data-ttu-id="ec8f5-166">(11.000 - 1.000) / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-166">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="ec8f5-167">1.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-167">1,000</span></span>                                 |
 
-## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a>Eksempel: Lineær afskrivning af et ændret anlægsaktiv
+## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a><span data-ttu-id="ec8f5-168">Eksempel: Lineær afskrivning af et ændret anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="ec8f5-168">Example: Straight line depreciation of a modified fixed asset</span></span>
 
-Forestil dig, at du føjer en anskaffelsesregulering på 4.000 i år 2 til det samme anlægsaktiv. 
+<span data-ttu-id="ec8f5-169">Forestil dig, at du føjer en anskaffelsesregulering på 4.000 i år 2 til det samme anlægsaktiv.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-169">Suppose that you add an acquisition adjustment of 4,000 in year 2 to the same fixed asset.</span></span> 
 
-Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og begynder ved anskaffelsen. Der er en bogført nettoværdi tilbage ved afslutningen af år 5. Denne svarer til den bogført nettoværdi for anskaffelsesreguleringen. Den periodeopdelte afskrivning beregnes som angivet i følgende tabel.
+<span data-ttu-id="ec8f5-170">Levetiden for anskaffelsesreguleringen er den samme som for anlægsaktivet og begynder ved anskaffelsen.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-170">The service life of the acquisition adjustment is the same as that of the fixed asset and starts at the time of its acquisition.</span></span> <span data-ttu-id="ec8f5-171">Der er en bogført nettoværdi tilbage ved afslutningen af år 5. Denne svarer til den bogført nettoværdi for anskaffelsesreguleringen.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-171">A net book value remains at the end of year 5, corresponding to the net book value of the acquisition adjustment.</span></span> <span data-ttu-id="ec8f5-172">Den periodeopdelte afskrivning beregnes som angivet i følgende tabel.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-172">The depreciation by period is calculated as shown in the following table.</span></span>
 
-| Periode | Beregning af det årlige afskrivningsbeløb | Den bogførte nettoværdi ved årets afslutning |
+| <span data-ttu-id="ec8f5-173">Periode</span><span class="sxs-lookup"><span data-stu-id="ec8f5-173">Period</span></span> | <span data-ttu-id="ec8f5-174">Beregning af det årlige afskrivningsbeløb</span><span class="sxs-lookup"><span data-stu-id="ec8f5-174">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="ec8f5-175">Den bogførte nettoværdi ved årets afslutning</span><span class="sxs-lookup"><span data-stu-id="ec8f5-175">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | 10.000 / 5 = 2.000                        | 11.000 - 2.000 = 9.000                |
-| År 2 | 4000 (anskaffelsesregulering)            | 9.000 + 4.000 =13.000                 |
-| År 2 | 14.000 / 5 = 2.800                        | 13.000 - 2.800 = 10.200               |
-| År 3 | 14.000 / 5 = 2.800                        | 10.200 - 2.800 = 7.400                |
-| År 4 | 14.000 / 5 = 2.800                        | 7.400 - 2.800 = 4.600                 |
-| År 5 | 14.000 / 5 = 2.800                        | 4.600 - 2.800 = 1.800                 |
-| År 6 | Resterende 800\*                           | 1.800 – 800 = 1.000                   |
+| <span data-ttu-id="ec8f5-176">År 1</span><span class="sxs-lookup"><span data-stu-id="ec8f5-176">Year 1</span></span> | <span data-ttu-id="ec8f5-177">10.000 / 5 = 2.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-177">10,000 / 5 = 2,000</span></span>                        | <span data-ttu-id="ec8f5-178">11.000 - 2.000 = 9.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-178">11,000 - 2,000 = 9,000</span></span>                |
+| <span data-ttu-id="ec8f5-179">År 2</span><span class="sxs-lookup"><span data-stu-id="ec8f5-179">Year 2</span></span> | <span data-ttu-id="ec8f5-180">4000 (anskaffelsesregulering)</span><span class="sxs-lookup"><span data-stu-id="ec8f5-180">4,000 (acquisition adjustment)</span></span>            | <span data-ttu-id="ec8f5-181">9.000 + 4.000 =13.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-181">9,000 + 4,000 =13,000</span></span>                 |
+| <span data-ttu-id="ec8f5-182">År 2</span><span class="sxs-lookup"><span data-stu-id="ec8f5-182">Year 2</span></span> | <span data-ttu-id="ec8f5-183">14.000 / 5 = 2.800</span><span class="sxs-lookup"><span data-stu-id="ec8f5-183">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="ec8f5-184">13.000 - 2.800 = 10.200</span><span class="sxs-lookup"><span data-stu-id="ec8f5-184">13,000 - 2,800 = 10,200</span></span>               |
+| <span data-ttu-id="ec8f5-185">År 3</span><span class="sxs-lookup"><span data-stu-id="ec8f5-185">Year 3</span></span> | <span data-ttu-id="ec8f5-186">14.000 / 5 = 2.800</span><span class="sxs-lookup"><span data-stu-id="ec8f5-186">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="ec8f5-187">10.200 - 2.800 = 7.400</span><span class="sxs-lookup"><span data-stu-id="ec8f5-187">10,200 - 2,800 = 7,400</span></span>                |
+| <span data-ttu-id="ec8f5-188">År 4</span><span class="sxs-lookup"><span data-stu-id="ec8f5-188">Year 4</span></span> | <span data-ttu-id="ec8f5-189">14.000 / 5 = 2.800</span><span class="sxs-lookup"><span data-stu-id="ec8f5-189">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="ec8f5-190">7.400 - 2.800 = 4.600</span><span class="sxs-lookup"><span data-stu-id="ec8f5-190">7,400 - 2,800 = 4,600</span></span>                 |
+| <span data-ttu-id="ec8f5-191">År 5</span><span class="sxs-lookup"><span data-stu-id="ec8f5-191">Year 5</span></span> | <span data-ttu-id="ec8f5-192">14.000 / 5 = 2.800</span><span class="sxs-lookup"><span data-stu-id="ec8f5-192">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="ec8f5-193">4.600 - 2.800 = 1.800</span><span class="sxs-lookup"><span data-stu-id="ec8f5-193">4,600 - 2,800 = 1,800</span></span>                 |
+| <span data-ttu-id="ec8f5-194">År 6</span><span class="sxs-lookup"><span data-stu-id="ec8f5-194">Year 6</span></span> | <span data-ttu-id="ec8f5-195">Resterende 800\*</span><span class="sxs-lookup"><span data-stu-id="ec8f5-195">Remaining 800\*</span></span>                           | <span data-ttu-id="ec8f5-196">1.800 – 800 = 1.000</span><span class="sxs-lookup"><span data-stu-id="ec8f5-196">1,800 – 800 = 1,000</span></span>                   |
 
-\*Da restbeløbet er mindre end afskrivningsbeløbet, er det kun restbeløbet minus restværdien der angives.
+<span data-ttu-id="ec8f5-197">\*Da restbeløbet er mindre end afskrivningsbeløbet, er det kun restbeløbet minus restværdien der angives.</span><span class="sxs-lookup"><span data-stu-id="ec8f5-197">\*Because the remaining amount is less than the depreciation amount, only the remaining amount minus the salvage value is taken.</span></span>
 
 
 

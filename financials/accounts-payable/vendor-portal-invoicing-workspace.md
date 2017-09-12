@@ -18,50 +18,50 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
-ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3f9b8cc1ee7f8c8bed79bac3ca6a6856d9101aad
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
+# <a name="vendor-collaboration-invoicing-workspace"></a><span data-ttu-id="d6154-103">Arbejdsområde for kreditorsamarbejdsfakturering</span><span class="sxs-lookup"><span data-stu-id="d6154-103">Vendor collaboration invoicing workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
+<span data-ttu-id="d6154-104">Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.</span><span class="sxs-lookup"><span data-stu-id="d6154-104">This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.</span></span>
 
-**Kreditorsamarbejdsfakturaer**-arbejdsområdet kan bruges til at få vist oplysninger om kreditorfakturaen og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ved hjælp af arbejdsgangfunktioner.
+<span data-ttu-id="d6154-105">**Kreditorsamarbejdsfakturaer**-arbejdsområdet kan bruges til at få vist oplysninger om kreditorfakturaen og sende fakturaer til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ved hjælp af arbejdsgangfunktioner.</span><span class="sxs-lookup"><span data-stu-id="d6154-105">The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition using workflow capabilities.</span></span>
 
 
-<a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
+<a name="vendor-collaboration-invoicing-workspace"></a><span data-ttu-id="d6154-106">Arbejdsområde for kreditorsamarbejdsfakturering</span><span class="sxs-lookup"><span data-stu-id="d6154-106">Vendor collaboration invoicing workspace</span></span>
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Oversigt over felter
+### <a name="summary-tiles"></a><span data-ttu-id="d6154-107">Oversigt over felter</span><span class="sxs-lookup"><span data-stu-id="d6154-107">Summary tiles</span></span>
 
-**Oversigt**-fliserne giver en oversigt over fakturaer for den valgte kreditor. Du kan få vist fakturaer efter deres tilstand.
--   Udkast til fakturaer er ikke sendt til arbejdsgang.
--   Sendte, ikke godkendte fakturaer er de fakturaer, som kreditoren har sendt, men de er ikke blevet bogført i Finance and Operations.
--   Godkendte, ikke betalte fakturaer er de fakturaer, som er blevet bogført i Finance and Operations, men de er ikke betalt fuldt ud.
--   Betalte fakturaer er dem, der er blevet betalt fuldt ud i Finance and Operations.
+<span data-ttu-id="d6154-108">**Oversigt**-fliserne giver en oversigt over fakturaer for den valgte kreditor.</span><span class="sxs-lookup"><span data-stu-id="d6154-108">The **Summary** tiles give an overview of the invoices for the selected vendor.</span></span> <span data-ttu-id="d6154-109">Du kan få vist fakturaer efter deres tilstand.</span><span class="sxs-lookup"><span data-stu-id="d6154-109">You can view invoices by their state.</span></span>
+-   <span data-ttu-id="d6154-110">Udkast til fakturaer er ikke sendt til arbejdsgang.</span><span class="sxs-lookup"><span data-stu-id="d6154-110">Draft invoices have not been submitted to workflow.</span></span>
+-   <span data-ttu-id="d6154-111">Sendte, ikke godkendte fakturaer er de fakturaer, som kreditoren har sendt, men de er ikke blevet bogført i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d6154-111">Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in Finance and Operations.</span></span>
+-   <span data-ttu-id="d6154-112">Godkendte, ikke betalte fakturaer er de fakturaer, som er blevet bogført i Finance and Operations, men de er ikke betalt fuldt ud.</span><span class="sxs-lookup"><span data-stu-id="d6154-112">Approved, not paid invoices are those that have been posted in Finance and Operations, but they have not yet been fully paid.</span></span>
+-   <span data-ttu-id="d6154-113">Betalte fakturaer er dem, der er blevet betalt fuldt ud i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d6154-113">Paid invoices are those that have been fully paid in Finance and Operations.</span></span>
 
-Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
-### <a name="tabular-lists"></a>Tabellister
+<span data-ttu-id="d6154-114">Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.</span><span class="sxs-lookup"><span data-stu-id="d6154-114">Clicking on a tile will open a filtered view of the **Invoices list** page.</span></span>
+### <a name="tabular-lists"></a><span data-ttu-id="d6154-115">Tabellister</span><span class="sxs-lookup"><span data-stu-id="d6154-115">Tabular lists</span></span>
 
-I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
-Alle kreditorfakturaer (listeside)
+<span data-ttu-id="d6154-116">I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister.</span><span class="sxs-lookup"><span data-stu-id="d6154-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="d6154-117">Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes.</span><span class="sxs-lookup"><span data-stu-id="d6154-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="d6154-118">Den sidste tabelliste er en mulighed for at finde fakturaer.</span><span class="sxs-lookup"><span data-stu-id="d6154-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="d6154-119">Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.</span><span class="sxs-lookup"><span data-stu-id="d6154-119">You can filter as you search, to allow for faster searches.</span></span>
+<span data-ttu-id="d6154-120">Alle kreditorfakturaer (listeside)</span><span class="sxs-lookup"><span data-stu-id="d6154-120">All vendor invoices list page</span></span>
 -----------------------------
 
-Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**. Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne. Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.
-Oprettelse af en ny faktura ud fra en indkøbsordre
+<span data-ttu-id="d6154-121">Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="d6154-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="d6154-122">Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne.</span><span class="sxs-lookup"><span data-stu-id="d6154-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="d6154-123">Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.</span><span class="sxs-lookup"><span data-stu-id="d6154-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
+<span data-ttu-id="d6154-124">Oprettelse af en ny faktura ud fra en indkøbsordre</span><span class="sxs-lookup"><span data-stu-id="d6154-124">Creating a new invoice from a purchase order</span></span>
 --------------------------------------------
 
-Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kreditorsamarbejdsfakturaer**-arbejdsområdet. Indkøbsordrenummer og fakturanummer skal oplyses af kreditoren. Som standard vises alle linjerne fra kreditorens indkøbsordre på den nye faktura. Oplysninger om antal og omkostninger kan redigeres, inden du sender kreditorfakturaen til arbejdsgangen. Du kan vedhæfte filer, noter, billeder og URL-adresser til en faktura, inden du sender den.
+<span data-ttu-id="d6154-125">Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kreditorsamarbejdsfakturaer**-arbejdsområdet.</span><span class="sxs-lookup"><span data-stu-id="d6154-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="d6154-126">Indkøbsordrenummer og fakturanummer skal oplyses af kreditoren.</span><span class="sxs-lookup"><span data-stu-id="d6154-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="d6154-127">Som standard vises alle linjerne fra kreditorens indkøbsordre på den nye faktura.</span><span class="sxs-lookup"><span data-stu-id="d6154-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="d6154-128">Oplysninger om antal og omkostninger kan redigeres, inden du sender kreditorfakturaen til arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="d6154-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="d6154-129">Du kan vedhæfte filer, noter, billeder og URL-adresser til en faktura, inden du sender den.</span><span class="sxs-lookup"><span data-stu-id="d6154-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
 
 
 
-Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+<span data-ttu-id="d6154-130">Yderligere oplysninger finder du i [Samarbejde med kreditorer ved hjælp af kreditorportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)</span><span class="sxs-lookup"><span data-stu-id="d6154-130">For more information, see [Collaborating with vendors by using the Vendor portal](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)</span></span>
 
 
 

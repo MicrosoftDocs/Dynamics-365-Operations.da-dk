@@ -16,55 +16,55 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 8a53c4deb146d336fdd8ca88a081e6a5af71465a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 543ac29ac1b1cbad52f1c155ac90b04d0c122a1f
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="process-interest"></a>Behandle rente
+# <a name="process-interest"></a><span data-ttu-id="6b5a8-103">Behandle rente</span><span class="sxs-lookup"><span data-stu-id="6b5a8-103">Process interest</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer. Denne opgave bruger demofirmaet USMF.
+<span data-ttu-id="6b5a8-104">Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-104">This procedure shows how to create, print, and post interest notes.</span></span> <span data-ttu-id="6b5a8-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-105">This task uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-interest-on-the-posting-profile"></a>Konfigurer rente i posteringsprofilen
-1. Gå til Kredit og inkasso > Opsætning > Debitorposteringsprofiler.
-2. Klik på Rediger.
-    * Vælg en rentekode på rullelisten. Hvis du ikke vil have beregnet rente for transaktioner med denne posteringsprofil, skal du undlade at udfylde feltet.  
-    * Under fanen Tabelbegrænsninger kan du ændre den måde, som rente behandles på. Hvis dette felt er indstillet til Ja, beregnes der rente for denne posteringsprofil.  
+## <a name="set-up-interest-on-the-posting-profile"></a><span data-ttu-id="6b5a8-106">Konfigurer rente i posteringsprofilen</span><span class="sxs-lookup"><span data-stu-id="6b5a8-106">Set up interest on the posting profile</span></span>
+1. <span data-ttu-id="6b5a8-107">Gå til Kredit og inkasso > Opsætning > Debitorposteringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-107">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
+2. <span data-ttu-id="6b5a8-108">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-108">Click Edit.</span></span>
+    * <span data-ttu-id="6b5a8-109">Vælg en rentekode på rullelisten.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-109">Select an interest code from the drop-down list.</span></span> <span data-ttu-id="6b5a8-110">Hvis du ikke vil have beregnet rente for transaktioner med denne posteringsprofil, skal du undlade at udfylde feltet.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-110">If you do not want interest calculated for transactions using this posting profile, leave the field blank.</span></span>  
+    * <span data-ttu-id="6b5a8-111">Under fanen Tabelbegrænsninger kan du ændre den måde, som rente behandles på.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-111">The Table restriction tab allows you to change the way that interest is processed.</span></span> <span data-ttu-id="6b5a8-112">Hvis dette felt er indstillet til Ja, beregnes der rente for denne posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-112">If this field is set to Yes, then interest will be calculated for this posting profile.</span></span>  
 
-## <a name="calculate-interest"></a>Beregn renter
-1. Gå til Kredit og inkasso > Rente > Opret rentenotaer.
-    * Du skal vælge de transaktionstyper, du vil beregne rente for. Alle åbne transaktioner for disse typer medtages i beregningen.  
-    * Hvis du vælger Rente, skal du beregne renten af renten. Du bør kontrollere lovgivning vedrørende beregning af renters rente, før du inkluderer disse transaktioner.  
-    * Rente beregnes fra denne dato til "Til dato". Hvis du ikke angiver en "Fra dato", annulleres alle ikke-bogførte rentenotaer, og rente genberegnes fra transaktionsdatoen.  
-2. Angiv datoen for rentenotaen.
-    * Der findes tre posteringsprofilindstillinger: Konto – Brug den posteringsprofil, der er tildelt kundekontoen for hver rentenota.   Vælg – Brug den posteringsprofil, som du vælger i feltet Posteringsprofil.   Transaktion – Brug den individuelle posteringsprofil fra transaktioner, som der beregnes rente på for hver rentenota. For transaktioner, som ikke har en tildelt posteringsprofil, anvendes den posteringsprofil, der er angivet i området Finans og moms i formen Debitorparametre.  
-    * Vælg en posteringsprofil her, hvis du har ændret "Anvend posteringsprofil fra" til Vælg.  
-3. Udvis eller skjul sektionen Poster, der skal indgå.
-4. Klik på Filtrér.
-5. Angiv i feltet kriterier et kunde-ID. Indtast for eksempel "US-001".
-6. Klik på OK.
-7. Klik på OK.
+## <a name="calculate-interest"></a><span data-ttu-id="6b5a8-113">Beregn renter</span><span class="sxs-lookup"><span data-stu-id="6b5a8-113">Calculate interest</span></span>
+1. <span data-ttu-id="6b5a8-114">Gå til Kredit og inkasso > Rente > Opret rentenotaer.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-114">Go to Credit and collections > Interest > Create interest notes.</span></span>
+    * <span data-ttu-id="6b5a8-115">Du skal vælge de transaktionstyper, du vil beregne rente for.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-115">You must select the transaction types for which you will calculate interest.</span></span> <span data-ttu-id="6b5a8-116">Alle åbne transaktioner for disse typer medtages i beregningen.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-116">All of the open transactions for these types will be included in the calculation.</span></span>  
+    * <span data-ttu-id="6b5a8-117">Hvis du vælger Rente, skal du beregne renten af renten.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-117">If you select Interest, you will calculate interest on interest.</span></span> <span data-ttu-id="6b5a8-118">Du bør kontrollere lovgivning vedrørende beregning af renters rente, før du inkluderer disse transaktioner.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-118">You may want to check the laws governing the calculation of interest on interest before including these transactions.</span></span>  
+    * <span data-ttu-id="6b5a8-119">Rente beregnes fra denne dato til "Til dato".</span><span class="sxs-lookup"><span data-stu-id="6b5a8-119">Interest will be calculated from this date to the "To date".</span></span> <span data-ttu-id="6b5a8-120">Hvis du ikke angiver en "Fra dato", annulleres alle ikke-bogførte rentenotaer, og rente genberegnes fra transaktionsdatoen.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-120">If you do not specific a "From date", then all unposted interest notes will be canceled and interest will be recalculated from the transaction date.</span></span>  
+2. <span data-ttu-id="6b5a8-121">Angiv datoen for rentenotaen.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-121">Enter the date of the interest note.</span></span>
+    * <span data-ttu-id="6b5a8-122">Der findes tre posteringsprofilindstillinger: Konto – Brug den posteringsprofil, der er tildelt kundekontoen for hver rentenota.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-122">There are three posting profile options:   Account – Use the posting profile that is assigned to the customer account for each interest note.</span></span>   <span data-ttu-id="6b5a8-123">Vælg – Brug den posteringsprofil, som du vælger i feltet Posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-123">Select – Use the posting profile that you select in the Posting profile field.</span></span>   <span data-ttu-id="6b5a8-124">Transaktion – Brug den individuelle posteringsprofil fra transaktioner, som der beregnes rente på for hver rentenota.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-124">Transaction – Use the individual posting profile from transactions on which interest is calculated for each interest note.</span></span> <span data-ttu-id="6b5a8-125">For transaktioner, som ikke har en tildelt posteringsprofil, anvendes den posteringsprofil, der er angivet i området Finans og moms i formen Debitorparametre.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-125">Transactions that do not have an assigned posting profile will use the posting profile that is specified in the Ledger and sales tax area of the Accounts receivable parameters form.</span></span>  
+    * <span data-ttu-id="6b5a8-126">Vælg en posteringsprofil her, hvis du har ændret "Anvend posteringsprofil fra" til Vælg.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-126">Select a posting profile here if you changed "Use posting profile from" to "Select".</span></span>  
+3. <span data-ttu-id="6b5a8-127">Udvis eller skjul sektionen Poster, der skal indgå.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-127">Expand or collapse the Records to include section.</span></span>
+4. <span data-ttu-id="6b5a8-128">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-128">Click Filter.</span></span>
+5. <span data-ttu-id="6b5a8-129">Angiv i feltet kriterier et kunde-ID.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-129">In the Criteria field, enter a Customer ID.</span></span> <span data-ttu-id="6b5a8-130">Indtast for eksempel "US-001".</span><span class="sxs-lookup"><span data-stu-id="6b5a8-130">For example, enter 'US-001'..</span></span>
+6. <span data-ttu-id="6b5a8-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-131">Click OK.</span></span>
+7. <span data-ttu-id="6b5a8-132">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-132">Click OK.</span></span>
 
-## <a name="print-interest-notes"></a>Udskrivning af rentenotaer
-1. Gå til Kredit og inkasso > Rente > Gennemse og behandl rentenotaer.
-2. Vælg "Oprettet" i feltet Status.
-3. Vælg "Ikke udskrevet" i feltet Udskrevet.
-4. Klik på Udskriv.
-5. Udvis eller skjul sektionen Poster, der skal indgå.
-6. Klik på OK.
-7. Luk siden.
+## <a name="print-interest-notes"></a><span data-ttu-id="6b5a8-133">Udskrivning af rentenotaer</span><span class="sxs-lookup"><span data-stu-id="6b5a8-133">Print interest notes</span></span>
+1. <span data-ttu-id="6b5a8-134">Gå til Kredit og inkasso > Rente > Gennemse og behandl rentenotaer.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-134">Go to Credit and collections > Interest > Review and process interest notes.</span></span>
+2. <span data-ttu-id="6b5a8-135">Vælg "Oprettet" i feltet Status.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-135">In the Status field, select 'Created'.</span></span>
+3. <span data-ttu-id="6b5a8-136">Vælg "Ikke udskrevet" i feltet Udskrevet.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-136">In the Printed field, select 'Not printed'.</span></span>
+4. <span data-ttu-id="6b5a8-137">Klik på Udskriv.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-137">Click Print.</span></span>
+5. <span data-ttu-id="6b5a8-138">Udvis eller skjul sektionen Poster, der skal indgå.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-138">Expand or collapse the Records to include section.</span></span>
+6. <span data-ttu-id="6b5a8-139">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-139">Click OK.</span></span>
+7. <span data-ttu-id="6b5a8-140">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-140">Close the page.</span></span>
 
-## <a name="post-the-interest-note"></a>Bogfør rentenotaen
-1. Vælg en rentenota, der er klar til at blive bogført (status er Oprettet).
-2. Klik på Bogfør.
-3. Angiv bogføringsdatoen for rentenotaen.
-    * Vælg Ja for at oprette en transaktion i finansmodulet for hver enkelt rentenota.     Hvis du ikke vælger Ja, samles renten fra alle rentenotaer til debitoren, og den bogføres til finansmodulet i én transaktion.  
-4. Udvis eller skjul sektionen Poster, der skal indgå.
-5. Klik på OK.
-6. Vælg "Bogført" i feltet Status.
+## <a name="post-the-interest-note"></a><span data-ttu-id="6b5a8-141">Bogfør rentenotaen</span><span class="sxs-lookup"><span data-stu-id="6b5a8-141">Post the interest note</span></span>
+1. <span data-ttu-id="6b5a8-142">Vælg en rentenota, der er klar til at blive bogført (status er Oprettet).</span><span class="sxs-lookup"><span data-stu-id="6b5a8-142">Select an interest note that is ready to post (status is created).</span></span>
+2. <span data-ttu-id="6b5a8-143">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-143">Click Post.</span></span>
+3. <span data-ttu-id="6b5a8-144">Angiv bogføringsdatoen for rentenotaen.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-144">Enter the posting date for the interest note.</span></span>
+    * <span data-ttu-id="6b5a8-145">Vælg Ja for at oprette en transaktion i finansmodulet for hver enkelt rentenota.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-145">Select Yes to create a general ledger transaction for each interest note.</span></span>     <span data-ttu-id="6b5a8-146">Hvis du ikke vælger Ja, samles renten fra alle rentenotaer til debitoren, og den bogføres til finansmodulet i én transaktion.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-146">If you do not select Yes, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction.</span></span>  
+4. <span data-ttu-id="6b5a8-147">Udvis eller skjul sektionen Poster, der skal indgå.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-147">Expand or collapse the Records to include section.</span></span>
+5. <span data-ttu-id="6b5a8-148">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-148">Click OK.</span></span>
+6. <span data-ttu-id="6b5a8-149">Vælg "Bogført" i feltet Status.</span><span class="sxs-lookup"><span data-stu-id="6b5a8-149">In the Status field, select 'Posted'.</span></span>
 
 

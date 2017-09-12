@@ -18,321 +18,219 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
-ms.openlocfilehash: 77049ba4c9c39cd44f1919b672deaf700b91357d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Oversigt over eksterne detailenheder
+# <a name="retail-peripherals-overview"></a><span data-ttu-id="56248-104">Oversigt over eksterne detailenheder</span><span class="sxs-lookup"><span data-stu-id="56248-104">Retail peripherals overview</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
+<span data-ttu-id="56248-105">I dette emne forklares begreberne i forbindelse med eksterne detailenheder.</span><span class="sxs-lookup"><span data-stu-id="56248-105">This topic explains the concepts that are related to retail peripherals.</span></span> <span data-ttu-id="56248-106">Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-106">It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.</span></span>
 
-## <a name="concepts"></a>Begreber
+## <a name="concepts"></a><span data-ttu-id="56248-107">Begreber</span><span class="sxs-lookup"><span data-stu-id="56248-107">Concepts</span></span>
 
-### <a name="pos-registers"></a>Kasseapparater
+### <a name="pos-registers"></a><span data-ttu-id="56248-108">Kasseapparater</span><span class="sxs-lookup"><span data-stu-id="56248-108">POS registers</span></span>
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden. Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.
+<span data-ttu-id="56248-109">Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.</span><span class="sxs-lookup"><span data-stu-id="56248-109">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="56248-110">POS-kasseapparat er en enhed, der bruges til at definere egenskaberne for en bestemt forekomst af POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-110">The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS.</span></span> <span data-ttu-id="56248-111">Disse egenskaber omfatter hardwareprofilen eller opsætningen af detailenheder, der skal bruges ved kasseapparatet, den butik, som kasseapparatet er tilknyttet, og den visuelle oplevelse for den bruger, der logger på kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-111">These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.</span></span>
 
-### <a name="devices"></a>Enheder
+### <a name="devices"></a><span data-ttu-id="56248-112">Enheder</span><span class="sxs-lookup"><span data-stu-id="56248-112">Devices</span></span>
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**. En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat. Når der oprettes en enhed, knyttes den til et POS-kasseapparat. Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed. Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.
+<span data-ttu-id="56248-113">Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Enheder**.</span><span class="sxs-lookup"><span data-stu-id="56248-113">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**.</span></span> <span data-ttu-id="56248-114">En enhed repræsenterer en fysisk forekomst af en enhed, der er knyttet til et POS-kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="56248-114">A device is an entity that represents a physical instance of a device that is mapped to a POS register.</span></span> <span data-ttu-id="56248-115">Når der oprettes en enhed, knyttes den til et POS-kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="56248-115">When a device is created, it’s mapped to a POS register.</span></span> <span data-ttu-id="56248-116">Enheden registrerer oplysninger om, hvornår et POS-kasseapparat aktiveres, den klienttype, som benyttes, og den programpakke, der er blevet installeret på en bestemt enhed.</span><span class="sxs-lookup"><span data-stu-id="56248-116">The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device.</span></span> <span data-ttu-id="56248-117">Enheder kan knyttes til følgende programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android og Retail Modern POS – iOS.</span><span class="sxs-lookup"><span data-stu-id="56248-117">Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.</span></span>
 
-### <a name="retail-modern-pos"></a>Retail Modern POS
+### <a name="retail-modern-pos"></a><span data-ttu-id="56248-118">Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="56248-118">Retail Modern POS</span></span>
 
-Modern POS er POS-programmet til Microsoft Windows. Det kan anvendes på Windows 10-operativsystemer (OSs).
+<span data-ttu-id="56248-119">Modern POS er POS-programmet til Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-119">Modern POS is the POS program for Microsoft Windows.</span></span> <span data-ttu-id="56248-120">Det kan anvendes på Windows 10-operativsystemer (OSs).</span><span class="sxs-lookup"><span data-stu-id="56248-120">It can be deployed on Windows 10 operating systems (OSs).</span></span>
 
-### <a name="cloud-pos"></a>Cloud POS
+### <a name="cloud-pos"></a><span data-ttu-id="56248-121">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="56248-121">Cloud POS</span></span>
 
-Cloud POS er en browserbaseret version af Modern POS-programmet, der kan åbnes i en webbrowser.
+<span data-ttu-id="56248-122">Cloud POS er en browserbaseret version af Modern POS-programmet, der kan åbnes i en webbrowser.</span><span class="sxs-lookup"><span data-stu-id="56248-122">Cloud POS is a browser-based version of the Modern POS program that can be accessed in a web browser.</span></span>
 
-### <a name="modern-pos-for-ios"></a>Modern POS til iOS
+### <a name="modern-pos-for-ios"></a><span data-ttu-id="56248-123">Modern POS til iOS</span><span class="sxs-lookup"><span data-stu-id="56248-123">Modern POS for iOS</span></span>
 
-Modern POS til iOS er en iOS-baseret version af Modern POS-programmet, der kan implementeres på iOS-enheder.
+<span data-ttu-id="56248-124">Modern POS til iOS er en iOS-baseret version af Modern POS-programmet, der kan implementeres på iOS-enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-124">Modern POS for iOS is an iOS-based version of the Modern POS program that can be deployed on iOS devices.</span></span>
 
-### <a name="modern-pos-for-android"></a>Modern POS til Android
+### <a name="modern-pos-for-android"></a><span data-ttu-id="56248-125">Modern POS til Android</span><span class="sxs-lookup"><span data-stu-id="56248-125">Modern POS for Android</span></span>
 
-Modern POS til Android er en Android-baseret version af Modern POS-programmet, der kan implementeres på Android-enheder.
+<span data-ttu-id="56248-126">Modern POS til Android er en Android-baseret version af Modern POS-programmet, der kan implementeres på Android-enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-126">Modern POS for Android is an Android-based version of the Modern POS program that can be deployed on Android devices.</span></span>
 
-### <a name="pos-peripherals"></a>Eksterne POS-enheder
+### <a name="pos-peripherals"></a><span data-ttu-id="56248-127">Eksterne POS-enheder</span><span class="sxs-lookup"><span data-stu-id="56248-127">POS peripherals</span></span>
 
-Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktioner. Disse eksterne enheder er typisk opdelt i bestemte klasser. Du kan finde yderligere oplysninger om disse klasser i afsnittet "Enhedsklasser" i dette emne.
+<span data-ttu-id="56248-128">Eksterne POS-enheder er enheder, der udtrykkeligt understøttes til POS-funktioner.</span><span class="sxs-lookup"><span data-stu-id="56248-128">POS peripherals are devices that are explicitly supported for POS functions.</span></span> <span data-ttu-id="56248-129">Disse eksterne enheder er typisk opdelt i bestemte klasser.</span><span class="sxs-lookup"><span data-stu-id="56248-129">These peripherals are typically divided into specific classes.</span></span> <span data-ttu-id="56248-130">Du kan finde yderligere oplysninger om disse klasser i afsnittet "Enhedsklasser" i dette emne.</span><span class="sxs-lookup"><span data-stu-id="56248-130">For more information about these classes, see the “Device classes” section of this topic.</span></span>
 
-### <a name="hardware-station"></a>Hardwarestation
+### <a name="hardware-station"></a><span data-ttu-id="56248-131">Hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-131">Hardware station</span></span>
 
-Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**. Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**. Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres. Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen. Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik. Hardwarestationen er indbygget i Modern POS-programmet til Windows. Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program. I så fald kan der opnås adgang via et netværk.
+<span data-ttu-id="56248-132">Navigation: Klik på **Detail** &gt; **Kanaler** &gt; **Detailbutikker** &gt; **Alle detailbutikker**.</span><span class="sxs-lookup"><span data-stu-id="56248-132">Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.</span></span> <span data-ttu-id="56248-133">Vælg en butik, og klik derefter i oversigtspanelet **Hardwarestationer**.</span><span class="sxs-lookup"><span data-stu-id="56248-133">Select a store, and then click the **Hardware stations** FastTab.</span></span> <span data-ttu-id="56248-134">Indstillingen **Hardwarestation** er en indstilling på kanalniveau, der bruges til at definere forekomster, hvor logikken for eksterne detailenheder skal implementeres.</span><span class="sxs-lookup"><span data-stu-id="56248-134">The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed.</span></span> <span data-ttu-id="56248-135">Denne indstilling på kanalniveau bruges til at bestemme karakteristika for hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-135">This setting at the channel level is used to determine characteristics of the hardware station.</span></span> <span data-ttu-id="56248-136">Den bruges også til at angive de hardwarestationer, der er tilgængelige for en Modern POS-forekomst i en given butik.</span><span class="sxs-lookup"><span data-stu-id="56248-136">It's also used to list hardware stations that are available for a Modern POS instance in a given store.</span></span> <span data-ttu-id="56248-137">Hardwarestationen er indbygget i Modern POS-programmet til Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-137">The hardware station is built into the Modern POS program for Windows.</span></span> <span data-ttu-id="56248-138">Hardwarestationen kan også installeres uafhængigt som et enkeltstående Microsoft Internet Information Services (IIS)-program.</span><span class="sxs-lookup"><span data-stu-id="56248-138">The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program.</span></span> <span data-ttu-id="56248-139">I så fald kan der opnås adgang via et netværk.</span><span class="sxs-lookup"><span data-stu-id="56248-139">In this case, it can be accessed via a network.</span></span>
 
-### <a name="hardware-profile"></a>Hardwareprofil
+### <a name="hardware-profile"></a><span data-ttu-id="56248-140">Hardwareprofil</span><span class="sxs-lookup"><span data-stu-id="56248-140">Hardware profile</span></span>
 
-Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardware-profiler**. Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation. Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.
+<span data-ttu-id="56248-141">Navigation: Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardware-profiler**.</span><span class="sxs-lookup"><span data-stu-id="56248-141">Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="56248-142">Hardwareprofilen er en liste over enheder, der er konfigureret til et POS-kasseapparat eller en hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-142">The hardware profile is a list of devices that are configured for a POS register or a hardware station.</span></span> <span data-ttu-id="56248-143">Hardwareprofilen kan afbildes direkte til et POS-kasseapparat eller en hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-143">The hardware profile can be mapped directly to a POS register or a hardware station.</span></span>
 
-## <a name="devices-classes"></a>Enhedsklasser
-Eksterne POS-enheder er typisk opdelt i klasser. Dette afsnit beskriver og giver et overblik over de enheder, der understøttes af Modern POS.
+## <a name="devices-classes"></a><span data-ttu-id="56248-144">Enhedsklasser</span><span class="sxs-lookup"><span data-stu-id="56248-144">Devices classes</span></span>
+<span data-ttu-id="56248-145">Eksterne POS-enheder er typisk opdelt i klasser.</span><span class="sxs-lookup"><span data-stu-id="56248-145">POS peripherals are typically divided into classes.</span></span> <span data-ttu-id="56248-146">Dette afsnit beskriver og giver et overblik over de enheder, der understøttes af Modern POS.</span><span class="sxs-lookup"><span data-stu-id="56248-146">This section describes and gives an overview of the devices that Modern POS supports.</span></span>
 
-### <a name="printer"></a>Printer
+### <a name="printer"></a><span data-ttu-id="56248-147">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-147">Printer</span></span>
 
-Printere omfatter traditionelle POS-bonprintere og helsidesprintere. Printeren understøttes via Object Linking and Embedding for Retail POS (OPOS) og Microsoft Windows driver-grænseflader. Der kan bruges op til to printere på samme tid. Denne funktion understøtter scenarier, hvor cash-and-carry-kundekvitteringer udskrives på bonprintere, hvorimod kundeordrer, der indeholder yderligere oplysninger, udskrives på en helsidesprinter. Bonprintere kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk via Ethernet eller tilsluttet via Bluetooth.
+<span data-ttu-id="56248-148">Printere omfatter traditionelle POS-bonprintere og helsidesprintere.</span><span class="sxs-lookup"><span data-stu-id="56248-148">Printers include traditional POS receipt printers and full-page printers.</span></span> <span data-ttu-id="56248-149">Printeren understøttes via Object Linking and Embedding for Retail POS (OPOS) og Microsoft Windows driver-grænseflader.</span><span class="sxs-lookup"><span data-stu-id="56248-149">Printer are supported through Object Linking and Embedding for Retail POS (OPOS) and Microsoft Windows driver interfaces.</span></span> <span data-ttu-id="56248-150">Der kan bruges op til to printere på samme tid.</span><span class="sxs-lookup"><span data-stu-id="56248-150">Up to two printers can be used at the same time.</span></span> <span data-ttu-id="56248-151">Denne funktion understøtter scenarier, hvor cash-and-carry-kundekvitteringer udskrives på bonprintere, hvorimod kundeordrer, der indeholder yderligere oplysninger, udskrives på en helsidesprinter.</span><span class="sxs-lookup"><span data-stu-id="56248-151">This capability supports scenarios where cash-and-carry customer receipts are printed on receipt printers, whereas customer orders, which carry more information, are printed on a full-page printer.</span></span> <span data-ttu-id="56248-152">Bonprintere kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk via Ethernet eller tilsluttet via Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="56248-152">Receipt printers can be connected directly to a computer via USB, connected to a network via Ethernet, or connected via Bluetooth.</span></span>
 
-### <a name="scanner"></a>Scanner
+### <a name="scanner"></a><span data-ttu-id="56248-153">Scanner</span><span class="sxs-lookup"><span data-stu-id="56248-153">Scanner</span></span>
 
-Der kan bruges op til to stregkodescannere på samme tid. Denne funktion understøtter scenarier, hvor der kræves en scanner, som er mere mobil, til at scanne store eller tunge varer, hvorimod en fast integreret scanner bruges til de fleste varer af standardstørrelse for at give hurtigere ekspeditionstider. Scannere kan understøttes via grænseflader til OPOS, UWP (Universal Windows Platform) eller kreditkortlæsere. USB eller Bluetooth kan bruges til at tilslutte en scanner til en computer.
+<span data-ttu-id="56248-154">Der kan bruges op til to stregkodescannere på samme tid.</span><span class="sxs-lookup"><span data-stu-id="56248-154">Up to two bar code scanners can be used at the same time.</span></span> <span data-ttu-id="56248-155">Denne funktion understøtter scenarier, hvor der kræves en scanner, som er mere mobil, til at scanne store eller tunge varer, hvorimod en fast integreret scanner bruges til de fleste varer af standardstørrelse for at give hurtigere ekspeditionstider.</span><span class="sxs-lookup"><span data-stu-id="56248-155">This capability supports scenarios where a scanner that is more mobile is required in order to scan large or heavy items, whereas a fixed embedded scanner is used for most standard-sized items, to speed up checkout times.</span></span> <span data-ttu-id="56248-156">Scannere kan understøttes via grænseflader til OPOS, UWP (Universal Windows Platform) eller kreditkortlæsere.</span><span class="sxs-lookup"><span data-stu-id="56248-156">Scanners can be supported through OPOS, Universal Windows Platform (UWP), or keyboard wedge interfaces.</span></span> <span data-ttu-id="56248-157">USB eller Bluetooth kan bruges til at tilslutte en scanner til en computer.</span><span class="sxs-lookup"><span data-stu-id="56248-157">USB or Bluetooth can be used to connect a scanner to a computer.</span></span>
 
-### <a name="msr"></a>Magnetstribelæser
+### <a name="msr"></a><span data-ttu-id="56248-158">Magnetstribelæser</span><span class="sxs-lookup"><span data-stu-id="56248-158">MSR</span></span>
 
-Én USB-magnetstribelæser (MSR) kan konfigureres ved hjælp af OPOS-drivere. Hvis du vil bruge en enkeltstående MSR til betalingstransaktioner med elektronisk pengeoverførsel, skal MSR-enheden administreres af en betalingsconnector. Enkeltstående MSR'er kan bruges til registrering af kundefordelskort, medarbejderlogon og registrering af gavekort, uafhængigt af betalingsconnectoren.
+<span data-ttu-id="56248-159">Én USB-magnetstribelæser (MSR) kan konfigureres ved hjælp af OPOS-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-159">One USB magnetic stripe reader (MSR) can be set up by using OPOS drivers.</span></span> <span data-ttu-id="56248-160">Hvis du vil bruge en enkeltstående MSR til betalingstransaktioner med elektronisk pengeoverførsel, skal MSR-enheden administreres af en betalingsconnector.</span><span class="sxs-lookup"><span data-stu-id="56248-160">If you want to use a stand-alone MSR for electronic funds transfer (EFT) payment transactions, the MSR must be managed by a payment connector.</span></span> <span data-ttu-id="56248-161">Enkeltstående MSR'er kan bruges til registrering af kundefordelskort, medarbejderlogon og registrering af gavekort, uafhængigt af betalingsconnectoren.</span><span class="sxs-lookup"><span data-stu-id="56248-161">Stand-alone MSRs can be used for customer loyalty entry, employee sign-in, and gift card entry, independently of the payment connector.</span></span>
 
-### <a name="cash-drawer"></a>Pengeskuffe
+### <a name="cash-drawer"></a><span data-ttu-id="56248-162">Pengeskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-162">Cash drawer</span></span>
 
-To pengeskuffer kan understøttes pr. hardwareprofil. Denne funktion gør det muligt for to aktive skift pr. kasseapparat at være tilgængelige på samme tid. I tilfælde af et delt skift eller en pengeskuffe, der bruges af flere mobile POS-enheder på samme tid, tillades kun én pengeskuffe pr. hardwareprofil. Pengeskuffer kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk eller tilsluttet til en bonprinter via en RJ12-grænseflade. I nogle tilfælde kan pengeskuffer også tilsluttes via Bluetooth.
+<span data-ttu-id="56248-163">To pengeskuffer kan understøttes pr. hardwareprofil.</span><span class="sxs-lookup"><span data-stu-id="56248-163">Two cash drawers can be supported per hardware profile.</span></span> <span data-ttu-id="56248-164">Denne funktion gør det muligt for to aktive skift pr. kasseapparat at være tilgængelige på samme tid.</span><span class="sxs-lookup"><span data-stu-id="56248-164">This capability enables two active shifts per register to be available at the same time.</span></span> <span data-ttu-id="56248-165">I tilfælde af et delt skift eller en pengeskuffe, der bruges af flere mobile POS-enheder på samme tid, tillades kun én pengeskuffe pr. hardwareprofil.</span><span class="sxs-lookup"><span data-stu-id="56248-165">In the case of a shared shift, or a cash drawer that is used by multiple mobile POS devices at the same time, only one cash drawer is allowed per hardware profile.</span></span> <span data-ttu-id="56248-166">Pengeskuffer kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk eller tilsluttet til en bonprinter via en RJ12-grænseflade.</span><span class="sxs-lookup"><span data-stu-id="56248-166">Cash drawers can be connected directly to a computer via USB, connected to a network, or connected to a receipt printer via an RJ12 interface.</span></span> <span data-ttu-id="56248-167">I nogle tilfælde kan pengeskuffer også tilsluttes via Bluetooth.</span><span class="sxs-lookup"><span data-stu-id="56248-167">In some cases, cash drawers can also be connected via Bluetooth.</span></span>
 
-### <a name="line-display"></a>Linjevisning
+### <a name="line-display"></a><span data-ttu-id="56248-168">Linjevisning</span><span class="sxs-lookup"><span data-stu-id="56248-168">Line display</span></span>
 
-Linjedisplay bruges til at vise produkter, transaktionssaldi og andre nyttige oplysninger til kunden under en transaktion. Der kan være tilsluttet ét linjedisplay til computeren via USB ved brug af OPOS-drivere.
+<span data-ttu-id="56248-169">Linjedisplay bruges til at vise produkter, transaktionssaldi og andre nyttige oplysninger til kunden under en transaktion.</span><span class="sxs-lookup"><span data-stu-id="56248-169">Line displays are used to show products, transaction balances, and other useful information to the customer during a transaction.</span></span> <span data-ttu-id="56248-170">Der kan være tilsluttet ét linjedisplay til computeren via USB ved brug af OPOS-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-170">One line display can be connected to the computer via USB by using OPOS drivers.</span></span>
 
-### <a name="signature-capture"></a>Signaturhentning
+### <a name="signature-capture"></a><span data-ttu-id="56248-171">Signaturhentning</span><span class="sxs-lookup"><span data-stu-id="56248-171">Signature capture</span></span>
 
-Signaturhentningsenheder kan være tilsluttet direkte til en computer via USB ved brug af OPOS-drivere. Når signaturhentningen er konfigureret, bliver kunden bedt om at logge på enheden. Når signaturen er angivet, vises den til kassereren til accept.
+<span data-ttu-id="56248-172">Signaturhentningsenheder kan være tilsluttet direkte til en computer via USB ved brug af OPOS-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-172">Signature capture devices can be connected directly to a computer via USB by using OPOS drivers.</span></span> <span data-ttu-id="56248-173">Når signaturhentningen er konfigureret, bliver kunden bedt om at logge på enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-173">When signature capture is configured, the customer is prompted to sign on the device.</span></span> <span data-ttu-id="56248-174">Når signaturen er angivet, vises den til kassereren til accept.</span><span class="sxs-lookup"><span data-stu-id="56248-174">After the signature is provided, it's shown to the cashier for acceptance.</span></span>
 
-### <a name="scale"></a>Vægt
+### <a name="scale"></a><span data-ttu-id="56248-175">Vægt</span><span class="sxs-lookup"><span data-stu-id="56248-175">Scale</span></span>
 
-Der kan være tilsluttet vægte til computeren via USP ved brug af OPOS-drivere. Når et produkt, der er markeret som et produkt med "Vejning" føjes til en transaktion, aflæser POS-enheden den målte vægt fra vægten, føjer produktet til transaktionen og bruger det antal, der leveres af vægten.
+<span data-ttu-id="56248-176">Der kan være tilsluttet vægte til computeren via USP ved brug af OPOS-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-176">Scales can be connected to the computer via USP by using OPOS drivers.</span></span> <span data-ttu-id="56248-177">Når et produkt, der er markeret som et produkt med "Vejning" føjes til en transaktion, aflæser POS-enheden den målte vægt fra vægten, føjer produktet til transaktionen og bruger det antal, der leveres af vægten.</span><span class="sxs-lookup"><span data-stu-id="56248-177">When a product that is marked as a “Weighed” product is added to a transaction, the POS reads the weight from the scale, adds the product to the transaction, and uses the quantity that the scale provided.</span></span>
 
-### <a name="pin-pad"></a>Pinkodetastatur
+### <a name="pin-pad"></a><span data-ttu-id="56248-178">Pinkodetastatur</span><span class="sxs-lookup"><span data-stu-id="56248-178">PIN pad</span></span>
 
-Tastaturer til PIN-koder understøttes via OPOS, men de skal administreres via en betalingsconnector.
+<span data-ttu-id="56248-179">Tastaturer til PIN-koder understøttes via OPOS, men de skal administreres via en betalingsconnector.</span><span class="sxs-lookup"><span data-stu-id="56248-179">Personal identification number (PIN) pads are supported through OPOS, but they must be managed via a payment connector.</span></span>
 
-### <a name="secondary-display"></a>Sekundær skærm
+### <a name="secondary-display"></a><span data-ttu-id="56248-180">Sekundær skærm</span><span class="sxs-lookup"><span data-stu-id="56248-180">Secondary display</span></span>
 
-Når en sekundær skærm er konfigureret, bruges nummer 2 Windows-skærm til at vise grundlæggende oplysninger. Formålet med den sekundære skærm er at understøtte udvidelser fra uafhængige softwareproducenter, for i leveringstilstand kan den sekundære skærm ikke konfigureres, og den viser begrænset indhold.
+<span data-ttu-id="56248-181">Når en sekundær skærm er konfigureret, bruges nummer 2 Windows-skærm til at vise grundlæggende oplysninger.</span><span class="sxs-lookup"><span data-stu-id="56248-181">When a secondary display is configured, the number 2 Windows display is used to show basic information.</span></span> <span data-ttu-id="56248-182">Formålet med den sekundære skærm er at understøtte udvidelser fra uafhængige softwareproducenter, for i leveringstilstand kan den sekundære skærm ikke konfigureres, og den viser begrænset indhold.</span><span class="sxs-lookup"><span data-stu-id="56248-182">The purpose of the secondary display is to support independent software vendor (ISV) extension, because out of the box, the secondary display isn't configurable and shows limited content.</span></span>
 
-### <a name="payment-device"></a>Betalingsenhed
+### <a name="payment-device"></a><span data-ttu-id="56248-183">Betalingsenhed</span><span class="sxs-lookup"><span data-stu-id="56248-183">Payment device</span></span>
 
-Understøttelse af betalingsenheder er implementeret via betalingsconnectoren. Betalingsenheder kan udføre én eller flere af de funktioner, som andre enhedsklasser indeholder. For eksempel kan en betalingsenhed fungere som en MSR/kortlæser, linjevisning, signaturhentningsenhed eller PIN-tastatur. Understøttelse af betalingsenheder er implementeret uafhængigt af den understøttelse af selvstændige enheder, der leveres til andre enheder, der er inkluderet i hardwareprofilen.
+<span data-ttu-id="56248-184">Understøttelse af betalingsenheder er implementeret via betalingsconnectoren.</span><span class="sxs-lookup"><span data-stu-id="56248-184">Payment device support is implemented through the payment connector.</span></span> <span data-ttu-id="56248-185">Betalingsenheder kan udføre én eller flere af de funktioner, som andre enhedsklasser indeholder.</span><span class="sxs-lookup"><span data-stu-id="56248-185">Payment devices can perform one or many of the functions that other device classes provide.</span></span> <span data-ttu-id="56248-186">For eksempel kan en betalingsenhed fungere som en MSR/kortlæser, linjevisning, signaturhentningsenhed eller PIN-tastatur.</span><span class="sxs-lookup"><span data-stu-id="56248-186">For example, a payment device can function as an MSR/card reader, line display, signature capture device, or PIN pad.</span></span> <span data-ttu-id="56248-187">Understøttelse af betalingsenheder er implementeret uafhængigt af den understøttelse af selvstændige enheder, der leveres til andre enheder, der er inkluderet i hardwareprofilen.</span><span class="sxs-lookup"><span data-stu-id="56248-187">Support for payment devices is implemented independently of the stand-alone device support that is provided for other devices that are included in the hardware profile.</span></span>
 
-## <a name="supported-interfaces"></a>Understøttede grænseflader
-### <a name="opos"></a>OPOS
+## <a name="supported-interfaces"></a><span data-ttu-id="56248-188">Understøttede grænseflader</span><span class="sxs-lookup"><span data-stu-id="56248-188">Supported interfaces</span></span>
+### <a name="opos"></a><span data-ttu-id="56248-189">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-189">OPOS</span></span>
 
-For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft Dynamics 365 for Retail, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes i Microsoft Dynamics 365 for Retail. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
+<span data-ttu-id="56248-190">For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft Dynamics 365 for Retail, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="56248-190">To help guarantee that the largest range of devices can be used with Microsoft Dynamics 365 for Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="56248-191">OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder.</span><span class="sxs-lookup"><span data-stu-id="56248-191">The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices.</span></span> <span data-ttu-id="56248-192">OPOS er en alment vedtagen implementering af OLE til POS-standarden.</span><span class="sxs-lookup"><span data-stu-id="56248-192">OPOS is a widely adopted implementation of the OLE for POS standard.</span></span> <span data-ttu-id="56248-193">Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da.</span><span class="sxs-lookup"><span data-stu-id="56248-193">It was developed in the mid-1990s and has been updated several times since then.</span></span> <span data-ttu-id="56248-194">OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer.</span><span class="sxs-lookup"><span data-stu-id="56248-194">OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems.</span></span> <span data-ttu-id="56248-195">OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren.</span><span class="sxs-lookup"><span data-stu-id="56248-195">OPOS controls handle communication between compatible hardware and the POS software.</span></span> <span data-ttu-id="56248-196">Et OPOS-kontrolelement består af to dele:</span><span class="sxs-lookup"><span data-stu-id="56248-196">An OPOS control consists of two parts:</span></span>
 
--   **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'erne bruges til at teste POS-komponenten af Microsoft Dynamics 365 for Retail. Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
--   **Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden. Typisk leveres serviceobjektet til en enhed af enhedsproducenten. I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted. Et nyere serviceobjekt kan f.eks. være tilgængeligt. Se dokumentationen til hardwaren for at finde adressen på producentens websted.
+-   <span data-ttu-id="56248-197">**Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet.</span><span class="sxs-lookup"><span data-stu-id="56248-197">**Control object** – The control object for a device class (such as line displays) provides the interface for the software program.</span></span> <span data-ttu-id="56248-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er).</span><span class="sxs-lookup"><span data-stu-id="56248-198">Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs).</span></span> <span data-ttu-id="56248-199">CCO'erne bruges til at teste POS-komponenten af Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="56248-199">The CCOs are used to test the POS component of Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="56248-200">Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS.</span><span class="sxs-lookup"><span data-stu-id="56248-200">Therefore, the testing helps guarantee that, if Microsoft Dynamics 365 for Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS.</span></span> <span data-ttu-id="56248-201">Du behøver ikke udtrykkeligt at teste hver enhedstype.</span><span class="sxs-lookup"><span data-stu-id="56248-201">You don't have to explicitly test each device type.</span></span>
+-   <span data-ttu-id="56248-202">**Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-202">**Service object** – The service object provides communication between the control object (CCO) and the device.</span></span> <span data-ttu-id="56248-203">Typisk leveres serviceobjektet til en enhed af enhedsproducenten.</span><span class="sxs-lookup"><span data-stu-id="56248-203">Typically, the service object for a device is provided by the device manufacturer.</span></span> <span data-ttu-id="56248-204">I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted.</span><span class="sxs-lookup"><span data-stu-id="56248-204">However, in some cases, you might have to download the service object from the manufacturer’s website.</span></span> <span data-ttu-id="56248-205">Et nyere serviceobjekt kan f.eks. være tilgængeligt.</span><span class="sxs-lookup"><span data-stu-id="56248-205">For example, a more recent service object might be available.</span></span> <span data-ttu-id="56248-206">Se dokumentationen til hardwaren for at finde adressen på producentens websted.</span><span class="sxs-lookup"><span data-stu-id="56248-206">To find the address of the manufacturer's website, see your hardware documentation.</span></span>
 
-[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen. **Bemærk:** OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller -klasse gennem OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
+<span data-ttu-id="56248-207">[![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen.</span><span class="sxs-lookup"><span data-stu-id="56248-207">[![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.</span></span> <span data-ttu-id="56248-208">**Bemærk:** OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-208">**Note:** OPOS support doesn't guarantee support for all devices that have OPOS drivers.</span></span> <span data-ttu-id="56248-209">Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller -klasse gennem OPOS.</span><span class="sxs-lookup"><span data-stu-id="56248-209">Microsoft Dynamics 365 for Retail must first support that device type, or class, through OPOS.</span></span> <span data-ttu-id="56248-210">Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne.</span><span class="sxs-lookup"><span data-stu-id="56248-210">In addition, service objects might not always be up to date with the latest version of the CCOs.</span></span> <span data-ttu-id="56248-211">Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.</span><span class="sxs-lookup"><span data-stu-id="56248-211">You should also be aware that, in general, the quality of service objects varies.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="56248-212">Windows</span><span class="sxs-lookup"><span data-stu-id="56248-212">Windows</span></span>
 
-Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS. OPOS har en tendens til at være meget hurtigere end udskrivning via Windows. Det er derfor en god ide at bruge OPOS, især i detailmiljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig. Til de fleste enheder bruger du OPOS-kontrolelementer. Men nogle OPOS-bonprintere understøtter også Windows-drivere. Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater. Der er dog ulemper ved at bruge Windows-drivere. Her er nogle eksempler på disse ulemper:
+<span data-ttu-id="56248-213">Udskrivning af kvitteringer i POS-enheden er optimeret til OPOS.</span><span class="sxs-lookup"><span data-stu-id="56248-213">Receipt printing at the POS is optimized for OPOS.</span></span> <span data-ttu-id="56248-214">OPOS har en tendens til at være meget hurtigere end udskrivning via Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-214">OPOS tends to be much faster than printing through Windows.</span></span> <span data-ttu-id="56248-215">Det er derfor en god ide at bruge OPOS, især i detailmiljøer, hvor der udskrives kvitteringer med 40 kolonner, og transaktionshastigheden skal være hurtig.</span><span class="sxs-lookup"><span data-stu-id="56248-215">Therefore, it's a good idea to use OPOS, especially in retail environments where 40-column receipts are printed and transaction times must be fast.</span></span> <span data-ttu-id="56248-216">Til de fleste enheder bruger du OPOS-kontrolelementer.</span><span class="sxs-lookup"><span data-stu-id="56248-216">For most devices, you will use OPOS controls.</span></span> <span data-ttu-id="56248-217">Men nogle OPOS-bonprintere understøtter også Windows-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-217">However, some OPOS receipt printers also support Windows drivers.</span></span> <span data-ttu-id="56248-218">Ved hjælp af en Windows-driver kan du få adgang til de nyeste skrifttyper og via netværk forbinde én printer til flere kasseapparater.</span><span class="sxs-lookup"><span data-stu-id="56248-218">By using a Windows driver, you can access the latest fonts and network one printer for multiple registers.</span></span> <span data-ttu-id="56248-219">Der er dog ulemper ved at bruge Windows-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-219">However, there are drawbacks to using Windows drivers.</span></span> <span data-ttu-id="56248-220">Her er nogle eksempler på disse ulemper:</span><span class="sxs-lookup"><span data-stu-id="56248-220">Here are some examples of these drawbacks:</span></span>
 
--   Når der bruges Windows-drivere, gengives billeder, før udskrivningen sker. Derfor har udskrivningen en tendens til at være langsommere end på printere, der bruger OPOS-kontrolelementer.
--   Enheder, der er tilsluttet via printeren ("sammenkoblet") fungerer muligvis ikke korrekt, når der bruges Windows-drivere. F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.
--   OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i detailhandlen, f.eks. papirafskæring eller bilagsudskrivning.
+-   <span data-ttu-id="56248-221">Når der bruges Windows-drivere, gengives billeder, før udskrivningen sker.</span><span class="sxs-lookup"><span data-stu-id="56248-221">When Windows drivers are used, images are rendered before printing occurs.</span></span> <span data-ttu-id="56248-222">Derfor har udskrivningen en tendens til at være langsommere end på printere, der bruger OPOS-kontrolelementer.</span><span class="sxs-lookup"><span data-stu-id="56248-222">Therefore, printing tends to be slower than it is on printers that use OPOS controls.</span></span>
+-   <span data-ttu-id="56248-223">Enheder, der er tilsluttet via printeren ("sammenkoblet") fungerer muligvis ikke korrekt, når der bruges Windows-drivere.</span><span class="sxs-lookup"><span data-stu-id="56248-223">Devices that are connected through the printer (“daisy-chained”) might not work correctly when Windows drivers are used.</span></span> <span data-ttu-id="56248-224">F.eks. åbner pengeskuffen muligvis ikke, eller bilagsprinteren fungerer muligvis ikke som forventet.</span><span class="sxs-lookup"><span data-stu-id="56248-224">For example, the cash drawer might not open, or the slip printer might not word as you expect.</span></span>
+-   <span data-ttu-id="56248-225">OPOS understøtter også et mere omfattende sæt af variabler, der er specifikke for bonprintere i detailhandlen, f.eks. papirafskæring eller bilagsudskrivning.</span><span class="sxs-lookup"><span data-stu-id="56248-225">OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.</span></span>
 
-Hvis OPOS-kontrolelementer er tilgængelige for den Windows-printer, du bruger, skulle printeren stadig fungere korrekt med Microsoft Dynamics 365 for Retail.
+<span data-ttu-id="56248-226">Hvis OPOS-kontrolelementer er tilgængelige for den Windows-printer, du bruger, skulle printeren stadig fungere korrekt med Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="56248-226">If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.</span></span>
 
-### <a name="universal-windows-platform"></a>Universel Windows-platform
+### <a name="universal-windows-platform"></a><span data-ttu-id="56248-227">Universel Windows-platform</span><span class="sxs-lookup"><span data-stu-id="56248-227">Universal Windows Platform</span></span>
 
-UWP, for så vidt angår eksterne detailenheder, er relateret til understøttelse af Plug and Play-enheder i Windows. Når en Plug and Play-enhed tilsluttes til en Windows OS-version, som understøtter denne type enhed, kræves der ingen driver, for at enheden kan bruges som tilsigtet. Hvis Windows f.eks. registrerer en enhed med en Bluetooth-højttaler, ved operativsystemet, at enheden har klassetypen **Højttaler**. Derfor behandler det den pågældende enhed som en højttaler. Der kræves ikke yderligere opsætning. Hvad angår POS-enheder, kan mange USB-enheder tilsluttes, og Windows kan genkende dem som brugerstyrede inputenheder (HID'er). Operativsystemet er dog muligvis ikke i stand til at bestemme de funktioner, enheden indeholder, fordi enheden ikke angiver klassen eller typen af enhed. Enhedsklasser til stregkodescannere og MSR'er er blevet tilføjet i Windows 10. Hvis en enhed derfor erklærer sig selv over for Windows 10 som en enhed af en af disse klasser, vil Windows lytte efter hændelser fra enheden på passende tidspunkter. Modern POS understøtter UWP MSR'er og scannere. Når det er klar til input fra en af disse enheder, og en enhed, der hører til en af disse klasser, er tilsluttet, kan enheden bruges. Hvis en UWP-stregkodescanner f.eks. er tilsluttet en computer med Windows 10, og stregkodelogon er konfigureret til Modern POS, bliver stregkodescanneren aktiv på logonskærmen. Der kræves ikke yderligere opsætning. Flere klasser af POS-enheder til UWP føjes til Windows. Disse klasser omfatter klasser for pengeskuffer og bonprintere. Understøttelse af disse nye enhedsklasser i Modern POS afventer.
+<span data-ttu-id="56248-228">UWP, for så vidt angår eksterne detailenheder, er relateret til understøttelse af Plug and Play-enheder i Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-228">UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices.</span></span> <span data-ttu-id="56248-229">Når en Plug and Play-enhed tilsluttes til en Windows OS-version, som understøtter denne type enhed, kræves der ingen driver, for at enheden kan bruges som tilsigtet.</span><span class="sxs-lookup"><span data-stu-id="56248-229">When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended.</span></span> <span data-ttu-id="56248-230">Hvis Windows f.eks. registrerer en enhed med en Bluetooth-højttaler, ved operativsystemet, at enheden har klassetypen **Højttaler**.</span><span class="sxs-lookup"><span data-stu-id="56248-230">For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type.</span></span> <span data-ttu-id="56248-231">Derfor behandler det den pågældende enhed som en højttaler.</span><span class="sxs-lookup"><span data-stu-id="56248-231">Therefore, and it treats that device as a speaker.</span></span> <span data-ttu-id="56248-232">Der kræves ikke yderligere opsætning.</span><span class="sxs-lookup"><span data-stu-id="56248-232">No additional setup is required.</span></span> <span data-ttu-id="56248-233">Hvad angår POS-enheder, kan mange USB-enheder tilsluttes, og Windows kan genkende dem som brugerstyrede inputenheder (HID'er).</span><span class="sxs-lookup"><span data-stu-id="56248-233">In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs).</span></span> <span data-ttu-id="56248-234">Operativsystemet er dog muligvis ikke i stand til at bestemme de funktioner, enheden indeholder, fordi enheden ikke angiver klassen eller typen af enhed.</span><span class="sxs-lookup"><span data-stu-id="56248-234">However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device.</span></span> <span data-ttu-id="56248-235">Enhedsklasser til stregkodescannere og MSR'er er blevet tilføjet i Windows 10.</span><span class="sxs-lookup"><span data-stu-id="56248-235">In Windows 10, device classes for bar code scanners and MSRs have been added.</span></span> <span data-ttu-id="56248-236">Hvis en enhed derfor erklærer sig selv over for Windows 10 som en enhed af en af disse klasser, vil Windows lytte efter hændelser fra enheden på passende tidspunkter.</span><span class="sxs-lookup"><span data-stu-id="56248-236">Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times.</span></span> <span data-ttu-id="56248-237">Modern POS understøtter UWP MSR'er og scannere.</span><span class="sxs-lookup"><span data-stu-id="56248-237">Modern POS supports UWP MSRs and scanners.</span></span> <span data-ttu-id="56248-238">Når det er klar til input fra en af disse enheder, og en enhed, der hører til en af disse klasser, er tilsluttet, kan enheden bruges.</span><span class="sxs-lookup"><span data-stu-id="56248-238">Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used.</span></span> <span data-ttu-id="56248-239">Hvis en UWP-stregkodescanner f.eks. er tilsluttet en computer med Windows 10, og stregkodelogon er konfigureret til Modern POS, bliver stregkodescanneren aktiv på logonskærmen.</span><span class="sxs-lookup"><span data-stu-id="56248-239">For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen.</span></span> <span data-ttu-id="56248-240">Der kræves ikke yderligere opsætning.</span><span class="sxs-lookup"><span data-stu-id="56248-240">No additional setup is required.</span></span> <span data-ttu-id="56248-241">Flere klasser af POS-enheder til UWP føjes til Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-241">Additional classes of point of service UWP devices are being added to Windows.</span></span> <span data-ttu-id="56248-242">Disse klasser omfatter klasser for pengeskuffer og bonprintere.</span><span class="sxs-lookup"><span data-stu-id="56248-242">These classes include classes for cash drawers and receipt printers.</span></span> <span data-ttu-id="56248-243">Understøttelse af disse nye enhedsklasser i Modern POS afventer.</span><span class="sxs-lookup"><span data-stu-id="56248-243">Support for these new device classes in Modern POS is pending.</span></span>
 
-### <a name="keyboard-wedge"></a>Kreditkortlæser
+### <a name="keyboard-wedge"></a><span data-ttu-id="56248-244">Kreditkortlæser</span><span class="sxs-lookup"><span data-stu-id="56248-244">Keyboard wedge</span></span>
 
-Enheder til kreditkortlæsning sender data til computeren, som om dataene blev indtastet på et tastatur. Som standard vil feltet der er aktivt på POS-enheden, derfor modtage de data, der er scannet eller ført gennem kortlæseren. Denne funktionsmåde kan i nogle tilfælde medføre, at den forkerte type data scannes ind i det forkerte felt. En stregkode scannes f.eks. ind i et felt, der er beregnet til indtastning af kreditkortdata. I mange tilfælde er der logik i POS-enheden, der bestemmer, om de data, der er scannet eller ført gennem kortlæser, er en stregkode eller et kort, der er ført gennem kortlæseren. Derfor håndteres dataene korrekt. Men når enhederne er angivet som OPOS i stedet for som enheder til kreditkortlæsning, er der mere kontrol med, hvordan dataene fra disse enheder kan bruges, fordi der er større "kendskab" til den enhed, som dataene stammer fra. F.eks. genkendes data fra en stregkodescanner automatisk som en stregkode, og den tilknyttede post i databasen findes lettere og hurtigere, end hvis en søgning med generisk streng blev brugt, som det er tilfældet med enheder til kreditkortlæsning.
+<span data-ttu-id="56248-245">Enheder til kreditkortlæsning sender data til computeren, som om dataene blev indtastet på et tastatur.</span><span class="sxs-lookup"><span data-stu-id="56248-245">Keyboard wedge devices send data to the computer as if that data were typed on a keyboard.</span></span> <span data-ttu-id="56248-246">Som standard vil feltet der er aktivt på POS-enheden, derfor modtage de data, der er scannet eller ført gennem kortlæseren.</span><span class="sxs-lookup"><span data-stu-id="56248-246">Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped.</span></span> <span data-ttu-id="56248-247">Denne funktionsmåde kan i nogle tilfælde medføre, at den forkerte type data scannes ind i det forkerte felt.</span><span class="sxs-lookup"><span data-stu-id="56248-247">In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field.</span></span> <span data-ttu-id="56248-248">En stregkode scannes f.eks. ind i et felt, der er beregnet til indtastning af kreditkortdata.</span><span class="sxs-lookup"><span data-stu-id="56248-248">For example, a bar code might be scanned into a field that is intended for input of credit card data.</span></span> <span data-ttu-id="56248-249">I mange tilfælde er der logik i POS-enheden, der bestemmer, om de data, der er scannet eller ført gennem kortlæser, er en stregkode eller et kort, der er ført gennem kortlæseren.</span><span class="sxs-lookup"><span data-stu-id="56248-249">In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe.</span></span> <span data-ttu-id="56248-250">Derfor håndteres dataene korrekt.</span><span class="sxs-lookup"><span data-stu-id="56248-250">Therefore, the data is handled correctly.</span></span> <span data-ttu-id="56248-251">Men når enhederne er angivet som OPOS i stedet for som enheder til kreditkortlæsning, er der mere kontrol med, hvordan dataene fra disse enheder kan bruges, fordi der er større "kendskab" til den enhed, som dataene stammer fra.</span><span class="sxs-lookup"><span data-stu-id="56248-251">However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from.</span></span> <span data-ttu-id="56248-252">F.eks. genkendes data fra en stregkodescanner automatisk som en stregkode, og den tilknyttede post i databasen findes lettere og hurtigere, end hvis en søgning med generisk streng blev brugt, som det er tilfældet med enheder til kreditkortlæsning.</span><span class="sxs-lookup"><span data-stu-id="56248-252">For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.</span></span>
 
-### <a name="native-printer"></a>Indbygget printer
+### <a name="native-printer"></a><span data-ttu-id="56248-253">Indbygget printer</span><span class="sxs-lookup"><span data-stu-id="56248-253">Native printer</span></span>
 
-Indbyggede (eller "Enheds", som typen er navngivet i hardwareprofilen) printere kan konfigureres til at bede brugeren om at vælge en printer, der er konfigureret til computeren. Når en printer af typen **Enhed** er konfigureret, bliver brugeren bedt om at vælge en printer på en liste, hvis Modern POS støder på en udskrivningskommando. Denne funktionsmåde adskiller sig fra funktionsmåden for Windows-drivere, da printertypen **Windows** i hardwareprofilen ikke viser en liste over printere. I stedet kræver det, at der angives en navngiven printer i feltet **Enhedsnavn**.
+<span data-ttu-id="56248-254">Indbyggede (eller "Enheds", som typen er navngivet i hardwareprofilen) printere kan konfigureres til at bede brugeren om at vælge en printer, der er konfigureret til computeren.</span><span class="sxs-lookup"><span data-stu-id="56248-254">Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer.</span></span> <span data-ttu-id="56248-255">Når en printer af typen **Enhed** er konfigureret, bliver brugeren bedt om at vælge en printer på en liste, hvis Modern POS støder på en udskrivningskommando.</span><span class="sxs-lookup"><span data-stu-id="56248-255">When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list.</span></span> <span data-ttu-id="56248-256">Denne funktionsmåde adskiller sig fra funktionsmåden for Windows-drivere, da printertypen **Windows** i hardwareprofilen ikke viser en liste over printere.</span><span class="sxs-lookup"><span data-stu-id="56248-256">This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers.</span></span> <span data-ttu-id="56248-257">I stedet kræver det, at der angives en navngiven printer i feltet **Enhedsnavn**.</span><span class="sxs-lookup"><span data-stu-id="56248-257">Instead, it requires that a named printer be provided in the **Device name** field.</span></span>
 
-### <a name="windows"></a>Windows
+### <a name="windows"></a><span data-ttu-id="56248-258">Windows</span><span class="sxs-lookup"><span data-stu-id="56248-258">Windows</span></span>
 
-Enhedstypen **Windows** bruges kun til printere. Når en Windows-printer er konfigureret i hardwareprofilen, skal det specifikke printernavn angives. Når Modern POS registrerer udskrivningshændelser, vil hændelsen blive overført til den angivne Windows-printer, hvis der er konfigureret en printer i Windows. Brugeren bliver ikke bedt om at vælge en printer.
+<span data-ttu-id="56248-259">Enhedstypen **Windows** bruges kun til printere.</span><span class="sxs-lookup"><span data-stu-id="56248-259">The **Windows** device type is used for printers only.</span></span> <span data-ttu-id="56248-260">Når en Windows-printer er konfigureret i hardwareprofilen, skal det specifikke printernavn angives.</span><span class="sxs-lookup"><span data-stu-id="56248-260">When a Windows printer is configured in the hardware profile, the specific printer name must be provided.</span></span> <span data-ttu-id="56248-261">Når Modern POS registrerer udskrivningshændelser, vil hændelsen blive overført til den angivne Windows-printer, hvis der er konfigureret en printer i Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-261">When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer.</span></span> <span data-ttu-id="56248-262">Brugeren bliver ikke bedt om at vælge en printer.</span><span class="sxs-lookup"><span data-stu-id="56248-262">The user won't be prompted to select a printer.</span></span>
 
-### <a name="network"></a>Netværk
+### <a name="network"></a><span data-ttu-id="56248-263">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-263">Network</span></span>
 
-Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruges via et netværk, enten direkte via IPC-hardwarestationen (Interprocess Communications), der er indbygget i Modern POS til Windows-programmet eller via IIS-hardwarestationen til andre Modern POS-klienter.
+<span data-ttu-id="56248-264">Netværksadresserbare pengeskuffer, bonprintere og betalingsterminaler kan bruges via et netværk, enten direkte via IPC-hardwarestationen (Interprocess Communications), der er indbygget i Modern POS til Windows-programmet eller via IIS-hardwarestationen til andre Modern POS-klienter.</span><span class="sxs-lookup"><span data-stu-id="56248-264">Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.</span></span>
 
-## <a name="hardware-station-deployment-options"></a>Installationsindstillinger for hardwarestation
-### <a name="ipc-built-in"></a>IPC (indbygget)
+## <a name="hardware-station-deployment-options"></a><span data-ttu-id="56248-265">Installationsindstillinger for hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-265">Hardware station deployment options</span></span>
+### <a name="ipc-built-in"></a><span data-ttu-id="56248-266">IPC (indbygget)</span><span class="sxs-lookup"><span data-stu-id="56248-266">IPC (built-in)</span></span>
 
-IPC-hardwarestationen er indbygget i Modern POS til Windows-programmet. Hvis du vil bruge IPC hardwarestationen, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows-programmet. Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges. Når du starter Modern POS, vil IPC-hardwarestationen være aktiv, og de eksterne POS-enheder, der er konfigureret, vil være klar til brug. Hvis du midlertidigt ikke har brug for den lokale hardware af en eller anden grund, kan du bruge handlingen **Administrer hardwarestationer** til at deaktivere hardwarestationens funktioner. Modern POS kan også bruge IPC-hardwarestationen til at kommunikere direkte med eksterne enheder på netværket.
+<span data-ttu-id="56248-267">IPC-hardwarestationen er indbygget i Modern POS til Windows-programmet.</span><span class="sxs-lookup"><span data-stu-id="56248-267">The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="56248-268">Hvis du vil bruge IPC hardwarestationen, kan du tildele en hardwareprofil til et kasseapparat, som skal bruge Modern POS til Windows-programmet.</span><span class="sxs-lookup"><span data-stu-id="56248-268">To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application.</span></span> <span data-ttu-id="56248-269">Opret derefter en hardwarestation af typen **Dedikeret** til den butik, hvor registret skal bruges.</span><span class="sxs-lookup"><span data-stu-id="56248-269">Then create a hardware station of the **Dedicated** type for the store where the register will be used.</span></span> <span data-ttu-id="56248-270">Når du starter Modern POS, vil IPC-hardwarestationen være aktiv, og de eksterne POS-enheder, der er konfigureret, vil være klar til brug.</span><span class="sxs-lookup"><span data-stu-id="56248-270">When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use.</span></span> <span data-ttu-id="56248-271">Hvis du midlertidigt ikke har brug for den lokale hardware af en eller anden grund, kan du bruge handlingen **Administrer hardwarestationer** til at deaktivere hardwarestationens funktioner.</span><span class="sxs-lookup"><span data-stu-id="56248-271">If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities.</span></span> <span data-ttu-id="56248-272">Modern POS kan også bruge IPC-hardwarestationen til at kommunikere direkte med eksterne enheder på netværket.</span><span class="sxs-lookup"><span data-stu-id="56248-272">Modern POS can also use the IPC hardware station to communicate directly with network peripherals.</span></span>
 
-### <a name="iis"></a>IIS
+### <a name="iis"></a><span data-ttu-id="56248-273">IIS</span><span class="sxs-lookup"><span data-stu-id="56248-273">IIS</span></span>
 
-Du kan bruge IIS-versionen eller den enkeltstående version af hardwarestationen på to måder. Beskrivelsen "IIS" betyder, at POS-programmet har forbindelse til hardwarestationen via Microsoft Internet Information Services. POS-programmet opretter forbindelse til IIS-hardwarestationen via webtjenester, der kører på en computer, hvor enhederne er tilsluttet. Når du bruger IIS, kan de eksterne detailenheder, der er tilsluttet en hardwarestation, bruges af ethvert POS-kasseapparat, der er på samme netværk som IIS-hardwarestationen. Da kun Modern POS til Windows indeholder indbygget understøttelse af eksterne detailenheder, skal alle andre Modern POS-programmer bruge IIS-hardwarestationen til at kommunikere med eksterne POS-enheder, der er konfigureret i hardwareprofilen. Hver forekomst af IIS hardware station kræver derfor, at en computer, der kører webtjenesten, og et program, der kommunikerer med enhederne. IIS hardwarestationen er påkrævet til alle ikke-Windows Modern POS-programmer.
+<span data-ttu-id="56248-274">Du kan bruge IIS-versionen eller den enkeltstående version af hardwarestationen på to måder.</span><span class="sxs-lookup"><span data-stu-id="56248-274">You can use the IIS or stand-alone version of the hardware station in two ways.</span></span> <span data-ttu-id="56248-275">Beskrivelsen "IIS" betyder, at POS-programmet har forbindelse til hardwarestationen via Microsoft Internet Information Services.</span><span class="sxs-lookup"><span data-stu-id="56248-275">The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services.</span></span> <span data-ttu-id="56248-276">POS-programmet opretter forbindelse til IIS-hardwarestationen via webtjenester, der kører på en computer, hvor enhederne er tilsluttet.</span><span class="sxs-lookup"><span data-stu-id="56248-276">The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected.</span></span> <span data-ttu-id="56248-277">Når du bruger IIS, kan de eksterne detailenheder, der er tilsluttet en hardwarestation, bruges af ethvert POS-kasseapparat, der er på samme netværk som IIS-hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-277">When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station.</span></span> <span data-ttu-id="56248-278">Da kun Modern POS til Windows indeholder indbygget understøttelse af eksterne detailenheder, skal alle andre Modern POS-programmer bruge IIS-hardwarestationen til at kommunikere med eksterne POS-enheder, der er konfigureret i hardwareprofilen.</span><span class="sxs-lookup"><span data-stu-id="56248-278">Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile.</span></span> <span data-ttu-id="56248-279">Hver forekomst af IIS hardware station kræver derfor, at en computer, der kører webtjenesten, og et program, der kommunikerer med enhederne.</span><span class="sxs-lookup"><span data-stu-id="56248-279">Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices.</span></span> <span data-ttu-id="56248-280">IIS hardwarestationen er påkrævet til alle ikke-Windows Modern POS-programmer.</span><span class="sxs-lookup"><span data-stu-id="56248-280">The IIS hardware station is required for all non-Windows Modern POS applications.</span></span>
 
-#### <a name="dedicated"></a>Dedikeret
+#### <a name="dedicated"></a><span data-ttu-id="56248-281">Dedikeret</span><span class="sxs-lookup"><span data-stu-id="56248-281">Dedicated</span></span>
 
-Modern POS bruger hardwarestationer af typen **Dedikeret** til at registrere, at eksterne enheder har direkte forbindelse til den computer, hvor programmet anvendes. Men typen **Dedikeret** kan også bruges til IIS-hardwarestationer. I et traditionelt, fast POS-scenarie, der bruger Cloud POS som POS-programmet, bruges hardwarestationen af typen **Dedikeret** til IIS-hardwarestationer, som er installeret på samme computer, der kører Cloud POS. Set fra en ekstern detailenhed har den dedikerede IIS-hardwarestation bedre understøttelse af eksterne detailenheder til traditionelle faste POS-scenarier. Dedikerede hardwarestationer understøtter alle eksterne enheder, der understøttes i hardwareprofilen.
+<span data-ttu-id="56248-282">Modern POS bruger hardwarestationer af typen **Dedikeret** til at registrere, at eksterne enheder har direkte forbindelse til den computer, hvor programmet anvendes.</span><span class="sxs-lookup"><span data-stu-id="56248-282">Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used.</span></span> <span data-ttu-id="56248-283">Men typen **Dedikeret** kan også bruges til IIS-hardwarestationer.</span><span class="sxs-lookup"><span data-stu-id="56248-283">However, the **Dedicated** type can also be used for IIS hardware stations.</span></span> <span data-ttu-id="56248-284">I et traditionelt, fast POS-scenarie, der bruger Cloud POS som POS-programmet, bruges hardwarestationen af typen **Dedikeret** til IIS-hardwarestationer, som er installeret på samme computer, der kører Cloud POS.</span><span class="sxs-lookup"><span data-stu-id="56248-284">In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS.</span></span> <span data-ttu-id="56248-285">Set fra en ekstern detailenhed har den dedikerede IIS-hardwarestation bedre understøttelse af eksterne detailenheder til traditionelle faste POS-scenarier.</span><span class="sxs-lookup"><span data-stu-id="56248-285">From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios.</span></span> <span data-ttu-id="56248-286">Dedikerede hardwarestationer understøtter alle eksterne enheder, der understøttes i hardwareprofilen.</span><span class="sxs-lookup"><span data-stu-id="56248-286">Dedicated hardware stations support all peripherals that are supported in the hardware profile.</span></span>
 
-#### <a name="shared"></a>Delt
+#### <a name="shared"></a><span data-ttu-id="56248-287">Delt</span><span class="sxs-lookup"><span data-stu-id="56248-287">Shared</span></span>
 
-Fælles hardwarestationer er beregnet til at blive brugt af flere POS-enheder i løbet af dagen. Fælles hardwarestationer er optimeret til kun at understøtte pengeskuffer, bonprintere og betalingsterminaler. Du kan ikke direkte forbinde enkeltstående stregkodescannere, MSR'er, linjeskærme, vægte eller andre enheder. Ellers kan der opstå konflikter, når flere POS-enheder gør krav på disse enheder på samme tid. Sådan håndteres konflikter for understøttede enheder:
+<span data-ttu-id="56248-288">Fælles hardwarestationer er beregnet til at blive brugt af flere POS-enheder i løbet af dagen.</span><span class="sxs-lookup"><span data-stu-id="56248-288">Shared hardware stations are intended to be used by multiple POS devices through the course of the day.</span></span> <span data-ttu-id="56248-289">Fælles hardwarestationer er optimeret til kun at understøtte pengeskuffer, bonprintere og betalingsterminaler.</span><span class="sxs-lookup"><span data-stu-id="56248-289">Shared hardware stations are optimized to support only cash drawers, receipt printers, and payment terminals.</span></span> <span data-ttu-id="56248-290">Du kan ikke direkte forbinde enkeltstående stregkodescannere, MSR'er, linjeskærme, vægte eller andre enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-290">You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices.</span></span> <span data-ttu-id="56248-291">Ellers kan der opstå konflikter, når flere POS-enheder gør krav på disse enheder på samme tid.</span><span class="sxs-lookup"><span data-stu-id="56248-291">Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time.</span></span> <span data-ttu-id="56248-292">Sådan håndteres konflikter for understøttede enheder:</span><span class="sxs-lookup"><span data-stu-id="56248-292">Here is how conflicts are managed for supported devices:</span></span>
 
--   **Pengeskuffe** – Pengeskuffen åbnes via en hændelse, der sendes til enheden. Det eneste problem, der kan opstå, når en pengeskuffen kaldes, er, at pengeskuffen allerede er åben. Når der er tale om fælles hardwarestationer, skal pengeskuffen indstilles til **Delt** i hardwareprofilen. Denne indstilling forhindrer, at POS-enheden kontrollerer, om kassen allerede er åben, når der sendes Åbn-kommandoer.
--   **Bonprinter** – Hvis to kommandoer til bonudskrivning sendes til hardwarestationen på samme tid, kan en af kommandoerne gå tabt, afhængigt af enheden. Nogle enheder har intern hukommelse eller gruppering, der kan forhindre dette problem. Hvis en udskrivningskommando ikke lykkes, modtager kassereren en fejlmeddelelse og kan derefter gentage udskrivningskommandoen fra POS-enheden.
--   **Betalingsterminal** – Hvis en kasserer forsøger at modtage betaling for en transaktion på en betalingsterminal, der allerede bruges, giver en meddelelse kassereren besked om, at terminalen bruges, og kassereren bliver bedt om at prøve igen senere. Normalt kan kasserere se, at en terminal allerede er i brug, og venter, indtil den anden transaktion er fuldført, inden de forsøger at modtage betaling igen.
+-   <span data-ttu-id="56248-293">**Pengeskuffe** – Pengeskuffen åbnes via en hændelse, der sendes til enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-293">**Cash drawer** – The cash drawer is opened via an event that is sent to the device.</span></span> <span data-ttu-id="56248-294">Det eneste problem, der kan opstå, når en pengeskuffen kaldes, er, at pengeskuffen allerede er åben.</span><span class="sxs-lookup"><span data-stu-id="56248-294">The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open.</span></span> <span data-ttu-id="56248-295">Når der er tale om fælles hardwarestationer, skal pengeskuffen indstilles til **Delt** i hardwareprofilen.</span><span class="sxs-lookup"><span data-stu-id="56248-295">In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile.</span></span> <span data-ttu-id="56248-296">Denne indstilling forhindrer, at POS-enheden kontrollerer, om kassen allerede er åben, når der sendes Åbn-kommandoer.</span><span class="sxs-lookup"><span data-stu-id="56248-296">This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.</span></span>
+-   <span data-ttu-id="56248-297">**Bonprinter** – Hvis to kommandoer til bonudskrivning sendes til hardwarestationen på samme tid, kan en af kommandoerne gå tabt, afhængigt af enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-297">**Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device.</span></span> <span data-ttu-id="56248-298">Nogle enheder har intern hukommelse eller gruppering, der kan forhindre dette problem.</span><span class="sxs-lookup"><span data-stu-id="56248-298">Some devices have internal memory or pooling that can prevent this issue.</span></span> <span data-ttu-id="56248-299">Hvis en udskrivningskommando ikke lykkes, modtager kassereren en fejlmeddelelse og kan derefter gentage udskrivningskommandoen fra POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-299">If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.</span></span>
+-   <span data-ttu-id="56248-300">**Betalingsterminal** – Hvis en kasserer forsøger at modtage betaling for en transaktion på en betalingsterminal, der allerede bruges, giver en meddelelse kassereren besked om, at terminalen bruges, og kassereren bliver bedt om at prøve igen senere.</span><span class="sxs-lookup"><span data-stu-id="56248-300">**Payment terminal** – If a cashier tries to tender a transaction on a payment terminal that is already being used, a message notifies the cashier that the terminal is being used and asks the cashier to try again later.</span></span> <span data-ttu-id="56248-301">Normalt kan kasserere se, at en terminal allerede er i brug, og venter, indtil den anden transaktion er fuldført, inden de forsøger at modtage betaling igen.</span><span class="sxs-lookup"><span data-stu-id="56248-301">Usually, cashiers can see that a terminal is already being used and will wait until the other transaction is completed before they try to tender again.</span></span>
 
-Validering er planlagt til en fremtidig version for at registrere, om ikke-understøttede enheder er konfigureret for en hardwareprofil, der er knyttet til en delt hardwarestation. Hvis der registreres ikke-understøttede enheder, vil brugeren modtage en meddelelse om, at enhederne ikke understøttes til fælles hardwarestationer. Hvis der er fælles hardwarestationer, er indstillingen **Vælg ved betaling** angivet til **Ja** på kasseapparatniveauet. POS-bruger bliver derefter bedt om at vælge en hardwarestation, når et betalingsmiddel vælges til en transaktion på POS-enheden. Hvis hardwarestationen kun vælges på betalingstidspunktet, føjes valget af hardwarestation direkte til POS-arbejdsgangen for mobile scenarier. Som en ekstra fordel bruges linjevisningen på betalingsterminalen ikke til delte scenarier. Hvis betalingsterminalen bruges som en linjevisning, forhindres andre brugere muligvis i at bruge den pågældende terminal, før transaktionen er fuldført. I mobile scenarier kan linjer føjes til en transaktion i en længere periode. Derfor er indstillingen **Vælg ved betaling** påkrævet for at sikre enhedens optimale tilgængelighed.
+<span data-ttu-id="56248-302">Validering er planlagt til en fremtidig version for at registrere, om ikke-understøttede enheder er konfigureret for en hardwareprofil, der er knyttet til en delt hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-302">Validation is planned for a future release, to detect whether unsupported devices are set up for a hardware profile that is mapped to a shared hardware station.</span></span> <span data-ttu-id="56248-303">Hvis der registreres ikke-understøttede enheder, vil brugeren modtage en meddelelse om, at enhederne ikke understøttes til fælles hardwarestationer.</span><span class="sxs-lookup"><span data-stu-id="56248-303">If any unsupported devices are detected, the user will receive a message that states that the devices aren't supported for shared hardware stations.</span></span> <span data-ttu-id="56248-304">Hvis der er fælles hardwarestationer, er indstillingen **Vælg ved betaling** angivet til **Ja** på kasseapparatniveauet.</span><span class="sxs-lookup"><span data-stu-id="56248-304">In the case of shared hardware stations, the **Select upon tendering** option is set to **Yes** at the register level.</span></span> <span data-ttu-id="56248-305">POS-bruger bliver derefter bedt om at vælge en hardwarestation, når et betalingsmiddel vælges til en transaktion på POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-305">The POS user is then prompted to select a hardware station when a tender is selected for a transaction at the POS.</span></span> <span data-ttu-id="56248-306">Hvis hardwarestationen kun vælges på betalingstidspunktet, føjes valget af hardwarestation direkte til POS-arbejdsgangen for mobile scenarier.</span><span class="sxs-lookup"><span data-stu-id="56248-306">When the hardware station is selected only at the time of tender, the hardware station selection is added directly to the POS workflow for mobile scenarios.</span></span> <span data-ttu-id="56248-307">Som en ekstra fordel bruges linjevisningen på betalingsterminalen ikke til delte scenarier.</span><span class="sxs-lookup"><span data-stu-id="56248-307">As an additional benefit, the line display on the payment terminal isn't used for shared scenarios.</span></span> <span data-ttu-id="56248-308">Hvis betalingsterminalen bruges som en linjevisning, forhindres andre brugere muligvis i at bruge den pågældende terminal, før transaktionen er fuldført.</span><span class="sxs-lookup"><span data-stu-id="56248-308">If the payment terminal is used as a line display, other users might be blocked from using that terminal until the transaction is completed.</span></span> <span data-ttu-id="56248-309">I mobile scenarier kan linjer føjes til en transaktion i en længere periode.</span><span class="sxs-lookup"><span data-stu-id="56248-309">In mobile scenarios, lines might be added to a transaction over a longer period.</span></span> <span data-ttu-id="56248-310">Derfor er indstillingen **Vælg ved betaling** påkrævet for at sikre enhedens optimale tilgængelighed.</span><span class="sxs-lookup"><span data-stu-id="56248-310">Therefore, the **Select upon tendering** option is required in order to ensure optimum device availability.</span></span>
 
-### <a name="network-peripherals"></a>Eksterne netværksenheder
+### <a name="network-peripherals"></a><span data-ttu-id="56248-311">Eksterne netværksenheder</span><span class="sxs-lookup"><span data-stu-id="56248-311">Network peripherals</span></span>
 
-Netværksangivelsen for enheder i hardwareprofilen, giver pengeskuffer, bonprintere og betalingsterminaler mulighed for at være forbundet via en netværksforbindelse.
+<span data-ttu-id="56248-312">Netværksangivelsen for enheder i hardwareprofilen, giver pengeskuffer, bonprintere og betalingsterminaler mulighed for at være forbundet via en netværksforbindelse.</span><span class="sxs-lookup"><span data-stu-id="56248-312">The network designation for devices in the hardware profile enables cash drawers, receipt printers, and payment terminals to be connected via a network connection.</span></span>
 
-#### <a name="modern-pos-for-windows"></a>Modern POS til Windows
+#### <a name="modern-pos-for-windows"></a><span data-ttu-id="56248-313">Modern POS til Windows</span><span class="sxs-lookup"><span data-stu-id="56248-313">Modern POS for Windows</span></span>
 
-Du kan angive IP-adresser til eksterne netværksenheder to steder. Hvis Windows-klienten til Modern POS bruger et enkelt sæt af eksterne netværksenheder, skal du angive IP-adresserne for disse enheder ved hjælp af indstillingen **IP-konfiguration** i handlingsruden for selve kasseapparatet. Hvis netværksenheder skal deles mellem POS-kasseapparater, kan en hardwareprofil, der har netværksenheder tilknyttet, afbildes direkte til en delt hardwarestation. For at tildele IP-adresser, skal du vælge den pågældende hardwarestation på siden **Detailbutikker** side og derefter bruge indstillingen **IP-konfiguration** i afsnittet **Hardwarestationer** til at angive de netværksenheder, der er knyttet til denne hardwarestation. For hardwarestationer, der kun har netværksenheder, behøver du ikke at installere selve hardwarestationen. I det tilfælde kræves hardwarestationen kun for begrebsmæssigt at gruppere netværksadresserbare enheder ud fra deres placering i detailbutikken.
+<span data-ttu-id="56248-314">Du kan angive IP-adresser til eksterne netværksenheder to steder.</span><span class="sxs-lookup"><span data-stu-id="56248-314">You can specify IP addresses for network peripherals in two places.</span></span> <span data-ttu-id="56248-315">Hvis Windows-klienten til Modern POS bruger et enkelt sæt af eksterne netværksenheder, skal du angive IP-adresserne for disse enheder ved hjælp af indstillingen **IP-konfiguration** i handlingsruden for selve kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-315">If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself.</span></span> <span data-ttu-id="56248-316">Hvis netværksenheder skal deles mellem POS-kasseapparater, kan en hardwareprofil, der har netværksenheder tilknyttet, afbildes direkte til en delt hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-316">In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station.</span></span> <span data-ttu-id="56248-317">For at tildele IP-adresser, skal du vælge den pågældende hardwarestation på siden **Detailbutikker** side og derefter bruge indstillingen **IP-konfiguration** i afsnittet **Hardwarestationer** til at angive de netværksenheder, der er knyttet til denne hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-317">To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station.</span></span> <span data-ttu-id="56248-318">For hardwarestationer, der kun har netværksenheder, behøver du ikke at installere selve hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-318">For hardware stations that have only network devices, you don't have to deploy the hardware station itself.</span></span> <span data-ttu-id="56248-319">I det tilfælde kræves hardwarestationen kun for begrebsmæssigt at gruppere netværksadresserbare enheder ud fra deres placering i detailbutikken.</span><span class="sxs-lookup"><span data-stu-id="56248-319">In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.</span></span>
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS til iOS og Modern POS til Android
+#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a><span data-ttu-id="56248-320">Cloud POS, Modern POS til iOS og Modern POS til Android</span><span class="sxs-lookup"><span data-stu-id="56248-320">Cloud POS, Modern POS for iOS, and Modern POS for Android</span></span>
 
-Den logik, der styrer fysisk tilsluttede og netværksadresserbare eksterne enheder, findes i hardwarestationen. Til alle POS-klienter med undtagelse af Modern POS til Windows skal IIS-hardwarestationen være installeret og aktiv for at aktivere POS-enheden til at kommunikere med eksterne enheder, uanset om disse enheder er fysisk forbundet til en hardwarestation eller adresseres via netværket.
+<span data-ttu-id="56248-321">Den logik, der styrer fysisk tilsluttede og netværksadresserbare eksterne enheder, findes i hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-321">The logic that drives physically connected and network-addressable peripherals is contained in the hardware station.</span></span> <span data-ttu-id="56248-322">Til alle POS-klienter med undtagelse af Modern POS til Windows skal IIS-hardwarestationen være installeret og aktiv for at aktivere POS-enheden til at kommunikere med eksterne enheder, uanset om disse enheder er fysisk forbundet til en hardwarestation eller adresseres via netværket.</span><span class="sxs-lookup"><span data-stu-id="56248-322">Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.</span></span>
 
-## <a name="setup-and-configuration"></a>Installation og konfiguration
-### <a name="hardware-station-installation"></a>Installation af hardwarestation
+## <a name="setup-and-configuration"></a><span data-ttu-id="56248-323">Installation og konfiguration</span><span class="sxs-lookup"><span data-stu-id="56248-323">Setup and configuration</span></span>
+### <a name="hardware-station-installation"></a><span data-ttu-id="56248-324">Installation af hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-324">Hardware station installation</span></span>
 
-Du kan finde flere oplysninger i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
+<span data-ttu-id="56248-325">Du kan finde flere oplysninger i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-325">For information, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
 
-### <a name="modern-pos-for-windows-setup-and-configuration"></a>Installation og konfiguration af Modern POS til Windows
+### <a name="modern-pos-for-windows-setup-and-configuration"></a><span data-ttu-id="56248-326">Installation og konfiguration af Modern POS til Windows</span><span class="sxs-lookup"><span data-stu-id="56248-326">Modern POS for Windows setup and configuration</span></span>
 
-Du kan finde flere oplysninger i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
+<span data-ttu-id="56248-327">Du kan finde flere oplysninger i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-327">For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
 
-### <a name="opos-device-setup-and-configuration"></a>Installation og konfiguration af OPOS-enhed
+### <a name="opos-device-setup-and-configuration"></a><span data-ttu-id="56248-328">Installation og konfiguration af OPOS-enhed</span><span class="sxs-lookup"><span data-stu-id="56248-328">OPOS device setup and configuration</span></span>
 
-Du kan finde flere oplysninger om OPOS-komponenter i afsnittet "Understøttede grænseflader" i dette dokument. Typisk leveres OPOS-drivere af producenten af enheden. Når der installeres en OPOS-enhedsdriver, føjer den en nøgle til Windows-registreringsdatabasen på en af følgende placeringer:
+<span data-ttu-id="56248-329">Du kan finde flere oplysninger om OPOS-komponenter i afsnittet "Understøttede grænseflader" i dette dokument.</span><span class="sxs-lookup"><span data-stu-id="56248-329">For more information about OPOS components, see the "Supported interfaces" section of this document.</span></span> <span data-ttu-id="56248-330">Typisk leveres OPOS-drivere af producenten af enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-330">Typically, OPOS drivers are provided by the device manufacturer.</span></span> <span data-ttu-id="56248-331">Når der installeres en OPOS-enhedsdriver, føjer den en nøgle til Windows-registreringsdatabasen på en af følgende placeringer:</span><span class="sxs-lookup"><span data-stu-id="56248-331">When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:</span></span>
 
--   **32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS
--   **64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS
+-   <span data-ttu-id="56248-332">**32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="56248-332">**32-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREOLEforRetailServiceOPOS</span></span>
+-   <span data-ttu-id="56248-333">**64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span><span class="sxs-lookup"><span data-stu-id="56248-333">**64-bit system:** HKEY\_LOCAL\_MACHINESOFTWAREWOW6432NodeOLEforRetailServiceOPOS</span></span>
 
-Konfigurerede enheder er organiseret efter enhedsklassen OPOS inden for lokaliteten for registreringsdatabasen ServiceOPOS. Flere enhedsdrivere gemmes.
+<span data-ttu-id="56248-334">Konfigurerede enheder er organiseret efter enhedsklassen OPOS inden for lokaliteten for registreringsdatabasen ServiceOPOS.</span><span class="sxs-lookup"><span data-stu-id="56248-334">Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class.</span></span> <span data-ttu-id="56248-335">Flere enhedsdrivere gemmes.</span><span class="sxs-lookup"><span data-stu-id="56248-335">Multiple device drivers are saved.</span></span>
 
-## <a name="supported-scenarios-by-hardware-station-type"></a>Understøttede scenarier efter hardwarestationstype
-### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a>Understøttelse af klienter – IPC-hardwarestation vs. IIS-hardwarestation
+## <a name="supported-scenarios-by-hardware-station-type"></a><span data-ttu-id="56248-336">Understøttede scenarier efter hardwarestationstype</span><span class="sxs-lookup"><span data-stu-id="56248-336">Supported scenarios by hardware station type</span></span>
+### <a name="client-support--ipc-hardware-station-vs-iis-hardware-station"></a><span data-ttu-id="56248-337">Understøttelse af klienter – IPC-hardwarestation vs. IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-337">Client support – IPC hardware station vs. IIS hardware station</span></span>
 
-Følgende tabel viser de topologier og installationsscenarier, der understøttes.
+<span data-ttu-id="56248-338">Følgende tabel viser de topologier og installationsscenarier, der understøttes.</span><span class="sxs-lookup"><span data-stu-id="56248-338">The following table shows the topologies and deployment scenarios that are supported.</span></span>
 
-| Klient      | IPC-hardwarestation | IIS-hardwarestation |
+| <span data-ttu-id="56248-339">Klient</span><span class="sxs-lookup"><span data-stu-id="56248-339">Client</span></span>      | <span data-ttu-id="56248-340">IPC-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-340">IPC hardware station</span></span> | <span data-ttu-id="56248-341">IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-341">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| <span data-ttu-id="56248-342">Windows-app</span><span class="sxs-lookup"><span data-stu-id="56248-342">Windows app</span></span> | <span data-ttu-id="56248-343">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-343">Yes</span></span>                  | <span data-ttu-id="56248-344">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-344">Yes</span></span>                  |
+| <span data-ttu-id="56248-345">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="56248-345">Cloud POS</span></span>   | <span data-ttu-id="56248-346">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-346">No</span></span>                   | <span data-ttu-id="56248-347">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-347">Yes</span></span>                  |
+| <span data-ttu-id="56248-348">Android</span><span class="sxs-lookup"><span data-stu-id="56248-348">Android</span></span>     | <span data-ttu-id="56248-349">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-349">No</span></span>                   | <span data-ttu-id="56248-350">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-350">Yes</span></span>                  |
+| <span data-ttu-id="56248-351">iOS</span><span class="sxs-lookup"><span data-stu-id="56248-351">iOS</span></span>         | <span data-ttu-id="56248-352">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-352">No</span></span>                   | <span data-ttu-id="56248-353">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-353">Yes</span></span>                  |
 
-### <a name="network-peripherals"></a>Eksterne netværksenheder
+### <a name="network-peripherals"></a><span data-ttu-id="56248-354">Eksterne netværksenheder</span><span class="sxs-lookup"><span data-stu-id="56248-354">Network peripherals</span></span>
 
-Netværksenheder understøttes direkte via den hardwarestation, der er indbygget i Modern POS til Windows-programmet. Til alle andre klienter skal du installere en IIS-hardwarestation.
+<span data-ttu-id="56248-355">Netværksenheder understøttes direkte via den hardwarestation, der er indbygget i Modern POS til Windows-programmet.</span><span class="sxs-lookup"><span data-stu-id="56248-355">Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows application.</span></span> <span data-ttu-id="56248-356">Til alle andre klienter skal du installere en IIS-hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-356">For all other clients, you must deploy an IIS hardware station.</span></span>
 
-| Klient      | IPC-hardwarestation | IIS-hardwarestation |
+| <span data-ttu-id="56248-357">Klient</span><span class="sxs-lookup"><span data-stu-id="56248-357">Client</span></span>      | <span data-ttu-id="56248-358">IPC-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-358">IPC hardware station</span></span> | <span data-ttu-id="56248-359">IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-359">IIS hardware station</span></span> |
 |-------------|----------------------|----------------------|
-| Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| <span data-ttu-id="56248-360">Windows-app</span><span class="sxs-lookup"><span data-stu-id="56248-360">Windows app</span></span> | <span data-ttu-id="56248-361">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-361">Yes</span></span>                  | <span data-ttu-id="56248-362">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-362">Yes</span></span>                  |
+| <span data-ttu-id="56248-363">Cloud POS</span><span class="sxs-lookup"><span data-stu-id="56248-363">Cloud POS</span></span>   | <span data-ttu-id="56248-364">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-364">No</span></span>                   | <span data-ttu-id="56248-365">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-365">Yes</span></span>                  |
+| <span data-ttu-id="56248-366">Android</span><span class="sxs-lookup"><span data-stu-id="56248-366">Android</span></span>     | <span data-ttu-id="56248-367">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-367">No</span></span>                   | <span data-ttu-id="56248-368">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-368">Yes</span></span>                  |
+| <span data-ttu-id="56248-369">iOS</span><span class="sxs-lookup"><span data-stu-id="56248-369">iOS</span></span>         | <span data-ttu-id="56248-370">Nr.</span><span class="sxs-lookup"><span data-stu-id="56248-370">No</span></span>                   | <span data-ttu-id="56248-371">Ja</span><span class="sxs-lookup"><span data-stu-id="56248-371">Yes</span></span>                  |
 
-## <a name="supported-device-types-by-hardware-station-type"></a>Understøttede enhedstyper efter hardwarestationstype
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Understøttet enhedsklasse</th>
-<th>Understøttede grænseflader</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Printer</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows-driver</li>
-<li>Enhed</li>
-<li>Netværk</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Printer 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>Windows-driver</li>
-<li>Enhed</li>
-<li>Netværk</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Linjevisning</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Dobbeltvisning</td>
-<td>Windows-driver</td>
-</tr>
-<tr class="odd">
-<td>Magnetstribelæser</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (opsætning er ikke nødvendig).</li>
-<li>Kreditkortlæser (opsætning er ikke nødvendig).</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Vekseludsteder</td>
-<td><ul>
-<li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Kasseskuffe 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Scanner</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (opsætning er ikke nødvendig).</li>
-<li>Kreditkortlæser (opsætning er ikke nødvendig).</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Scanner 2</td>
-<td><ul>
-<li>OPOS</li>
-<li>UWP (opsætning er ikke nødvendig).</li>
-<li>Kreditkortlæser (opsætning er ikke nødvendig).</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Vægt</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Pinkodetastatur</td>
-<td>OPOS (Support ydes gennem tilpasning af betalingsconnectorer).</td>
-</tr>
-<tr class="even">
-<td>Signaturhentning</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Betalingsterminal</td>
-<td><ul>
-<li>Understøttelse af brugerdefineret enhed</li>
-<li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Alle Modern POS-klienter, der har en dedikeret IIS-hardwarestation
-
-**Bemærk:** Når IIS-hardwarestationen er "dedikeret", er der en én til én-relation mellem POS-klienten og hardwarestationen.
+## <a name="supported-device-types-by-hardware-station-type"></a><span data-ttu-id="56248-372">Understøttede enhedstyper efter hardwarestationstype</span><span class="sxs-lookup"><span data-stu-id="56248-372">Supported device types by hardware station type</span></span>
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="56248-373">Modern POS til Windows med en IPC-hardwarestation (indbygget)</span><span class="sxs-lookup"><span data-stu-id="56248-373">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
 <table>
 <colgroup>
@@ -341,82 +239,100 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </colgroup>
 <thead>
 <tr class="header">
-<th>Understøttet enhedsklasse</th>
-<th>Understøttede grænseflader</th>
+<th><span data-ttu-id="56248-374">Understøttet enhedsklasse</span><span class="sxs-lookup"><span data-stu-id="56248-374">Supported device class</span></span></th>
+<th><span data-ttu-id="56248-375">Understøttede grænseflader</span><span class="sxs-lookup"><span data-stu-id="56248-375">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Printer</td>
+<td><span data-ttu-id="56248-376">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-376">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-driver <strong>Bemærk:</strong> Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-377">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-377">OPOS</span></span></li>
+<li><span data-ttu-id="56248-378">Windows-driver</span><span class="sxs-lookup"><span data-stu-id="56248-378">Windows driver</span></span></li>
+<li><span data-ttu-id="56248-379">Enhed</span><span class="sxs-lookup"><span data-stu-id="56248-379">Device</span></span></li>
+<li><span data-ttu-id="56248-380">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-380">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Printer 2</td>
+<td><span data-ttu-id="56248-381">Printer 2</span><span class="sxs-lookup"><span data-stu-id="56248-381">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-driver</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-382">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-382">OPOS</span></span></li>
+<li><span data-ttu-id="56248-383">Windows-driver</span><span class="sxs-lookup"><span data-stu-id="56248-383">Windows driver</span></span></li>
+<li><span data-ttu-id="56248-384">Enhed</span><span class="sxs-lookup"><span data-stu-id="56248-384">Device</span></span></li>
+<li><span data-ttu-id="56248-385">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-385">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Linjevisning</td>
-<td>OPOS</td>
+<td><span data-ttu-id="56248-386">Linjevisning</span><span class="sxs-lookup"><span data-stu-id="56248-386">Line display</span></span></td>
+<td><span data-ttu-id="56248-387">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-387">OPOS</span></span></td>
 </tr>
 <tr class="even">
-<td>Magnetstribelæser</td>
-<td>OPOS</td>
+<td><span data-ttu-id="56248-388">Dobbeltvisning</span><span class="sxs-lookup"><span data-stu-id="56248-388">Dual display</span></span></td>
+<td><span data-ttu-id="56248-389">Windows-driver</span><span class="sxs-lookup"><span data-stu-id="56248-389">Windows driver</span></span></td>
 </tr>
 <tr class="odd">
-<td>Vekseludsteder</td>
+<td><span data-ttu-id="56248-390">Magnetstribelæser</span><span class="sxs-lookup"><span data-stu-id="56248-390">MSR</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li><span data-ttu-id="56248-391">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-391">OPOS</span></span></li>
+<li><span data-ttu-id="56248-392">UWP (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-392">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="56248-393">Kreditkortlæser (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-393">Keyboard wedge (No setup is required.)</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kasseskuffe 2</td>
+<td><span data-ttu-id="56248-394">Vekseludsteder</span><span class="sxs-lookup"><span data-stu-id="56248-394">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-395">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-395">OPOS</span></span></li>
+<li><span data-ttu-id="56248-396">Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</span><span class="sxs-lookup"><span data-stu-id="56248-396">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Scanner</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Scanner 2</td>
-<td>OPOS</td>
-</tr>
-<tr class="odd">
-<td>Vægt</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Pinkodetastatur</td>
-<td>OPOS (Support ydes gennem tilpasning af betalingsconnectorer).</td>
-</tr>
-<tr class="odd">
-<td>Sig. hente</td>
-<td>OPOS</td>
-</tr>
-<tr class="even">
-<td>Betalingsterminal</td>
+<td><span data-ttu-id="56248-397">Kasseskuffe 2</span><span class="sxs-lookup"><span data-stu-id="56248-397">Drawer 2</span></span></td>
 <td><ul>
-<li>Understøttelse af brugerdefineret enhed</li>
-<li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
+<li><span data-ttu-id="56248-398">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-398">OPOS</span></span></li>
+<li><span data-ttu-id="56248-399">Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</span><span class="sxs-lookup"><span data-stu-id="56248-399">Network <strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-400">Scanner</span><span class="sxs-lookup"><span data-stu-id="56248-400">Scanner</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-401">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-401">OPOS</span></span></li>
+<li><span data-ttu-id="56248-402">UWP (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-402">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="56248-403">Kreditkortlæser (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-403">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-404">Scanner 2</span><span class="sxs-lookup"><span data-stu-id="56248-404">Scanner 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-405">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-405">OPOS</span></span></li>
+<li><span data-ttu-id="56248-406">UWP (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-406">UWP (No setup is required.)</span></span></li>
+<li><span data-ttu-id="56248-407">Kreditkortlæser (opsætning er ikke nødvendig).</span><span class="sxs-lookup"><span data-stu-id="56248-407">Keyboard wedge (No setup is required.)</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-408">Vægt</span><span class="sxs-lookup"><span data-stu-id="56248-408">Scale</span></span></td>
+<td><span data-ttu-id="56248-409">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-409">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-410">Pinkodetastatur</span><span class="sxs-lookup"><span data-stu-id="56248-410">PIN pad</span></span></td>
+<td><span data-ttu-id="56248-411">OPOS (Support ydes gennem tilpasning af betalingsconnectorer).</span><span class="sxs-lookup"><span data-stu-id="56248-411">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-412">Signaturhentning</span><span class="sxs-lookup"><span data-stu-id="56248-412">Signature capture</span></span></td>
+<td><span data-ttu-id="56248-413">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-413">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-414">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-414">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-415">Understøttelse af brugerdefineret enhed</span><span class="sxs-lookup"><span data-stu-id="56248-415">Custom device support</span></span></li>
+<li><span data-ttu-id="56248-416">Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</span><span class="sxs-lookup"><span data-stu-id="56248-416">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en delt IIS-hardwarestation
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="56248-417">Alle Modern POS-klienter, der har en dedikeret IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-417">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-**Bemærk:** Når IIS-hardwarestationen er "delt", kan flere enheder bruge hardwarestationen på samme tid. I dette scenarie skal du kun bruge de enheder, der er angivet i følgende tabel. Hvis du forsøger at dele enheder, der ikke er angivet her, f.eks. stregkodescannere og MSR'er, opstår der fejl, når flere enheder forsøger at gøre krav på den samme eksterne enhed. I fremtiden forhindres en sådan konfiguration udtrykkeligt.
+<span data-ttu-id="56248-418">**Bemærk:** Når IIS-hardwarestationen er "dedikeret", er der en én til én-relation mellem POS-klienten og hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-418">**Note:** When the IIS hardware station is “dedicated,” there is a one-to-one relationship between the POS client and the hardware station.</span></span>
 
 <table>
 <colgroup>
@@ -425,386 +341,470 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 </colgroup>
 <thead>
 <tr class="header">
-<th>Understøttet enhedsklasse</th>
-<th>Understøttede grænseflader</th>
+<th><span data-ttu-id="56248-419">Understøttet enhedsklasse</span><span class="sxs-lookup"><span data-stu-id="56248-419">Supported device class</span></span></th>
+<th><span data-ttu-id="56248-420">Understøttede grænseflader</span><span class="sxs-lookup"><span data-stu-id="56248-420">Supported interfaces</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Printer</td>
+<td><span data-ttu-id="56248-421">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-421">Printer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-driver <strong>Bemærk:</strong> Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-422">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-422">OPOS</span></span></li>
+<li><span data-ttu-id="56248-423">Windows-driver <strong>Bemærk:</strong> Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</span><span class="sxs-lookup"><span data-stu-id="56248-423">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="56248-424">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-424">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Printer 2</td>
+<td><span data-ttu-id="56248-425">Printer 2</span><span class="sxs-lookup"><span data-stu-id="56248-425">Printer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Windows-driver</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-426">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-426">OPOS</span></span></li>
+<li><span data-ttu-id="56248-427">Windows-driver</span><span class="sxs-lookup"><span data-stu-id="56248-427">Windows driver</span></span></li>
+<li><span data-ttu-id="56248-428">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-428">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Vekseludsteder</td>
+<td><span data-ttu-id="56248-429">Linjevisning</span><span class="sxs-lookup"><span data-stu-id="56248-429">Line display</span></span></td>
+<td><span data-ttu-id="56248-430">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-430">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-431">Magnetstribelæser</span><span class="sxs-lookup"><span data-stu-id="56248-431">MSR</span></span></td>
+<td><span data-ttu-id="56248-432">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-432">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-433">Vekseludsteder</span><span class="sxs-lookup"><span data-stu-id="56248-433">Drawer</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</li>
+<li><span data-ttu-id="56248-434">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-434">OPOS</span></span></li>
+<li><span data-ttu-id="56248-435">Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</span><span class="sxs-lookup"><span data-stu-id="56248-435">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kasseskuffe 2</td>
+<td><span data-ttu-id="56248-436">Kasseskuffe 2</span><span class="sxs-lookup"><span data-stu-id="56248-436">Drawer 2</span></span></td>
 <td><ul>
-<li>OPOS</li>
-<li>Netværk</li>
+<li><span data-ttu-id="56248-437">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-437">OPOS</span></span></li>
+<li><span data-ttu-id="56248-438">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-438">Network</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Betalingsterminal</td>
+<td><span data-ttu-id="56248-439">Scanner</span><span class="sxs-lookup"><span data-stu-id="56248-439">Scanner</span></span></td>
+<td><span data-ttu-id="56248-440">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-440">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-441">Scanner 2</span><span class="sxs-lookup"><span data-stu-id="56248-441">Scanner 2</span></span></td>
+<td><span data-ttu-id="56248-442">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-442">OPOS</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-443">Vægt</span><span class="sxs-lookup"><span data-stu-id="56248-443">Scale</span></span></td>
+<td><span data-ttu-id="56248-444">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-444">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-445">Pinkodetastatur</span><span class="sxs-lookup"><span data-stu-id="56248-445">PIN pad</span></span></td>
+<td><span data-ttu-id="56248-446">OPOS (Support ydes gennem tilpasning af betalingsconnectorer).</span><span class="sxs-lookup"><span data-stu-id="56248-446">OPOS (Support is provided through customization of the payment connector.)</span></span></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-447">Sig.</span><span class="sxs-lookup"><span data-stu-id="56248-447">Sig.</span></span> <span data-ttu-id="56248-448">hente</span><span class="sxs-lookup"><span data-stu-id="56248-448">capture</span></span></td>
+<td><span data-ttu-id="56248-449">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-449">OPOS</span></span></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-450">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-450">Payment terminal</span></span></td>
 <td><ul>
-<li>Understøttelse af brugerdefineret enhed</li>
-<li>Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</li>
+<li><span data-ttu-id="56248-451">Understøttelse af brugerdefineret enhed</span><span class="sxs-lookup"><span data-stu-id="56248-451">Custom device support</span></span></li>
+<li><span data-ttu-id="56248-452">Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</span><span class="sxs-lookup"><span data-stu-id="56248-452">Network (For more information, see the payment connector documentation.)</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configuration-for-supported-scenarios"></a>Konfiguration til understøttede scenarier
-Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md). **Bemærk:** I Microsoft Dynamics 365 for Retail version 1611 bruges hardwarestationsprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="56248-453">Alle Modern POS-klienter, der har en delt IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-453">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)
+<span data-ttu-id="56248-454">**Bemærk:** Når IIS-hardwarestationen er "delt", kan flere enheder bruge hardwarestationen på samme tid.</span><span class="sxs-lookup"><span data-stu-id="56248-454">**Note:** When the IIS hardware station is “shared,” multiple devices can use the hardware station at the same time.</span></span> <span data-ttu-id="56248-455">I dette scenarie skal du kun bruge de enheder, der er angivet i følgende tabel.</span><span class="sxs-lookup"><span data-stu-id="56248-455">For this scenario, you should use only the devices that are listed in the following table.</span></span> <span data-ttu-id="56248-456">Hvis du forsøger at dele enheder, der ikke er angivet her, f.eks. stregkodescannere og MSR'er, opstår der fejl, når flere enheder forsøger at gøre krav på den samme eksterne enhed.</span><span class="sxs-lookup"><span data-stu-id="56248-456">If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral.</span></span> <span data-ttu-id="56248-457">I fremtiden forhindres en sådan konfiguration udtrykkeligt.</span><span class="sxs-lookup"><span data-stu-id="56248-457">In the future, such a configuration will be explicitly prevented.</span></span>
 
-Denne konfiguration er den mest typiske konfiguration for traditionelle, faste POS-kasseapparater. I dette scenarie er hardwareprofiloplysningerne knyttet direkte til selve kasseapparatet. EFT-terminalnummeret bør også angives i selve registeret. Benyt denne fremgangsmåde for at udføre konfigurationen.
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span data-ttu-id="56248-458">Understøttet enhedsklasse</span><span class="sxs-lookup"><span data-stu-id="56248-458">Supported device class</span></span></th>
+<th><span data-ttu-id="56248-459">Understøttede grænseflader</span><span class="sxs-lookup"><span data-stu-id="56248-459">Supported interfaces</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span data-ttu-id="56248-460">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-460">Printer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-461">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-461">OPOS</span></span></li>
+<li><span data-ttu-id="56248-462">Windows-driver <strong>Bemærk:</strong> Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</span><span class="sxs-lookup"><span data-stu-id="56248-462">Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</span></span></li>
+<li><span data-ttu-id="56248-463">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-463">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-464">Printer 2</span><span class="sxs-lookup"><span data-stu-id="56248-464">Printer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-465">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-465">OPOS</span></span></li>
+<li><span data-ttu-id="56248-466">Windows-driver</span><span class="sxs-lookup"><span data-stu-id="56248-466">Windows driver</span></span></li>
+<li><span data-ttu-id="56248-467">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-467">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-468">Vekseludsteder</span><span class="sxs-lookup"><span data-stu-id="56248-468">Drawer</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-469">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-469">OPOS</span></span></li>
+<li><span data-ttu-id="56248-470">Netværk <strong>Bemærk:</strong> Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</span><span class="sxs-lookup"><span data-stu-id="56248-470">Network <strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</span></span></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><span data-ttu-id="56248-471">Kasseskuffe 2</span><span class="sxs-lookup"><span data-stu-id="56248-471">Drawer 2</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-472">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-472">OPOS</span></span></li>
+<li><span data-ttu-id="56248-473">Netværk</span><span class="sxs-lookup"><span data-stu-id="56248-473">Network</span></span></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><span data-ttu-id="56248-474">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-474">Payment terminal</span></span></td>
+<td><ul>
+<li><span data-ttu-id="56248-475">Understøttelse af brugerdefineret enhed</span><span class="sxs-lookup"><span data-stu-id="56248-475">Custom device support</span></span></li>
+<li><span data-ttu-id="56248-476">Netværk (Du kan finde yderligere oplysninger i dokumentationen til betalingsconnectorer).</span><span class="sxs-lookup"><span data-stu-id="56248-476">Network (For more information, see the payment connector documentation.)</span></span></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-1.  Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.
-2.  Tilknyt hardwareprofilen til POS-kasseapparatet.
-3.  Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges. En beskrivelse er valgfri. **Bemærk:** Du behøver ikke at angive andre egenskaber for hardwarestationen. Alle andre nødvendige oplysninger, f.eks. hardwareprofilen, kommer fra selve kasseapparatet.
-4.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
-5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-7.  Installer og aktivér Modern POS til Windows.
-8.  Start Modern POS til Windows, og begynd at bruge de tilsluttede eksterne enheder.
+## <a name="configuration-for-supported-scenarios"></a><span data-ttu-id="56248-477">Konfiguration til understøttede scenarier</span><span class="sxs-lookup"><span data-stu-id="56248-477">Configuration for supported scenarios</span></span>
+<span data-ttu-id="56248-478">Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md).</span><span class="sxs-lookup"><span data-stu-id="56248-478">For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).</span></span> <span data-ttu-id="56248-479">**Bemærk:** I Microsoft Dynamics 365 for Retail version 1611 bruges hardwarestationsprofilen ikke længere.</span><span class="sxs-lookup"><span data-stu-id="56248-479">**Note:** For Microsoft Dynamics 365 for Retail version 1611, the hardware station profile is no longer used.</span></span> <span data-ttu-id="56248-480">Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-480">Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a>Alle Modern POS-klienter, der har en dedikeret IIS-hardwarestation
+### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a><span data-ttu-id="56248-481">Modern POS til Windows med en IPC-hardwarestation (indbygget)</span><span class="sxs-lookup"><span data-stu-id="56248-481">Modern POS for Windows with an IPC (built-in) hardware station</span></span>
 
-Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardwarestation, der bruges udelukkende af ét POS-kasseapparat. Benyt denne fremgangsmåde for at udføre konfigurationen.
+<span data-ttu-id="56248-482">Denne konfiguration er den mest typiske konfiguration for traditionelle, faste POS-kasseapparater.</span><span class="sxs-lookup"><span data-stu-id="56248-482">This configuration is the most typical configuration for traditional, fixed POS registers.</span></span> <span data-ttu-id="56248-483">I dette scenarie er hardwareprofiloplysningerne knyttet direkte til selve kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-483">For this scenario, the hardware profile information is mapped directly to the register itself.</span></span> <span data-ttu-id="56248-484">EFT-terminalnummeret bør også angives i selve registeret.</span><span class="sxs-lookup"><span data-stu-id="56248-484">The EFT terminal number should also be set on the register itself.</span></span> <span data-ttu-id="56248-485">Benyt denne fremgangsmåde for at udføre konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="56248-485">To set up this configuration, follow these steps.</span></span>
 
-1.  Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.
-2.  Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges.
-3.  På den dedikerede hardwarestation skal du angive følgende egenskaber:
-    -   **Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre. **Bemærk:** Cloud POS kan fortolke **localhost** for at bestemme den lokale computer, hvor Cloud POS kører. Men det certifikat, der kræves for at parre Cloud POS med hardwarestationen, skal dog også have "Localhost" som navnet på computeren. For at undgå problemer anbefaler vi, at du efter behov angiver en forekomst af hver dedikeret hardwarestation for butikken. For hver hardwarestation skal værtsnavnet være det specifikke computernavn, hvor hardwarestationen skal installeres.
-    -   **Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.
-    -   **Hardwareprofil** – Hvis hardwareprofilen ikke er angivet på selve hardwarestationen, bruges den hardwareprofil, der er tildelt til kasseapparatet.
-    -   **Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes. Dette id leveres af kreditkortprocessoren.
-    -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
+1.  <span data-ttu-id="56248-486">Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.</span><span class="sxs-lookup"><span data-stu-id="56248-486">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="56248-487">Tilknyt hardwareprofilen til POS-kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-487">Map the hardware profile to the POS register.</span></span>
+3.  <span data-ttu-id="56248-488">Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges.</span><span class="sxs-lookup"><span data-stu-id="56248-488">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span> <span data-ttu-id="56248-489">En beskrivelse er valgfri.</span><span class="sxs-lookup"><span data-stu-id="56248-489">A description is optional.</span></span> <span data-ttu-id="56248-490">**Bemærk:** Du behøver ikke at angive andre egenskaber for hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-490">**Note:** You don't have to set any other properties on the hardware station.</span></span> <span data-ttu-id="56248-491">Alle andre nødvendige oplysninger, f.eks. hardwareprofilen, kommer fra selve kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-491">All other required information, such as the hardware profile, will come from the register itself.</span></span>
+4.  <span data-ttu-id="56248-492">Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="56248-492">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="56248-493">Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-493">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="56248-494">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-494">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="56248-495">Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-495">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="56248-496">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-496">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="56248-497">Installer og aktivér Modern POS til Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-497">Install and activate Modern POS for Windows.</span></span>
+8.  <span data-ttu-id="56248-498">Start Modern POS til Windows, og begynd at bruge de tilsluttede eksterne enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-498">Start Modern POS for Windows, and begin to use the connected peripheral devices.</span></span>
 
-4.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
-5.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-6.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-7.  Installer hardwarestationen. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
-8.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
-9.  Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
-10. Start handlingen **Administrer hardwarestationer**.
-11. Klik på **Administrer**.
-12. Angiv indstillingen for at slå hardwarestationen til på siden til administration af hardwarestation.
-13. Vælg den hardwarestation, der skal bruges, og klik derefter på **Par**.
-14. Når hardwarestationen er parret, skal du klikke på **Luk**.
-15. Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv.
+### <a name="all-modern-pos-clients-that-have-a-dedicated-iis-hardware-station"></a><span data-ttu-id="56248-499">Alle Modern POS-klienter, der har en dedikeret IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-499">All Modern POS clients that have a dedicated IIS hardware station</span></span>
 
-### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a>Alle Modern POS-klienter, der har en delt IIS-hardwarestation
+<span data-ttu-id="56248-500">Denne konfiguration kan bruges til alle Modern POS-klienter, der har en hardwarestation, der bruges udelukkende af ét POS-kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="56248-500">This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register.</span></span> <span data-ttu-id="56248-501">Benyt denne fremgangsmåde for at udføre konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="56248-501">To set up this configuration, follow these steps.</span></span>
 
-Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwarestationer med andre enheder. Benyt denne fremgangsmåde for at udføre konfigurationen.
+1.  <span data-ttu-id="56248-502">Opret en hardwareprofil, hvor alle de nødvendige eksterne enheder er konfigureret.</span><span class="sxs-lookup"><span data-stu-id="56248-502">Create a hardware profile where all the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="56248-503">Opret en hardwarestation af typen **Dedikeret** til den detailbutik, hvor POS-kasseapparatet skal bruges.</span><span class="sxs-lookup"><span data-stu-id="56248-503">Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="56248-504">På den dedikerede hardwarestation skal du angive følgende egenskaber:</span><span class="sxs-lookup"><span data-stu-id="56248-504">On the dedicated hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="56248-505">**Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre.</span><span class="sxs-lookup"><span data-stu-id="56248-505">**Host name** – The name of the host computer where the hardware station will run.</span></span> <span data-ttu-id="56248-506">**Bemærk:** Cloud POS kan fortolke **localhost** for at bestemme den lokale computer, hvor Cloud POS kører.</span><span class="sxs-lookup"><span data-stu-id="56248-506">**Note:** Cloud POS can resolve **localhost** to determine the local computer where Cloud POS is running.</span></span> <span data-ttu-id="56248-507">Men det certifikat, der kræves for at parre Cloud POS med hardwarestationen, skal dog også have "Localhost" som navnet på computeren.</span><span class="sxs-lookup"><span data-stu-id="56248-507">However, the certificate that is required in order to pair Cloud POS with the hardware station must also have "Localhost" as the computer name.</span></span> <span data-ttu-id="56248-508">For at undgå problemer anbefaler vi, at du efter behov angiver en forekomst af hver dedikeret hardwarestation for butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-508">To avoid issues, we recommend that you list an instance of each dedicated hardware station for the store, as required.</span></span> <span data-ttu-id="56248-509">For hver hardwarestation skal værtsnavnet være det specifikke computernavn, hvor hardwarestationen skal installeres.</span><span class="sxs-lookup"><span data-stu-id="56248-509">For each hardware station, the host name should be the specific computer name where the hardware station will be deployed.</span></span>
+    -   <span data-ttu-id="56248-510">**Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.</span><span class="sxs-lookup"><span data-stu-id="56248-510">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="56248-511">**Hardwareprofil** – Hvis hardwareprofilen ikke er angivet på selve hardwarestationen, bruges den hardwareprofil, der er tildelt til kasseapparatet.</span><span class="sxs-lookup"><span data-stu-id="56248-511">**Hardware profile** – If the hardware profile isn't provided on the hardware station itself, the hardware profile that is assigned to the register will be used.</span></span>
+    -   <span data-ttu-id="56248-512">**Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes.</span><span class="sxs-lookup"><span data-stu-id="56248-512">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="56248-513">Dette id leveres af kreditkortprocessoren.</span><span class="sxs-lookup"><span data-stu-id="56248-513">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="56248-514">**Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.</span><span class="sxs-lookup"><span data-stu-id="56248-514">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-1.  Opret en hardwareprofil, hvor de nødvendige eksterne enheder er konfigureret.
-2.  Opret en hardwarestation af typen **Delt** til den detailbutik, hvor POS-kasseapparatet skal bruges.
-3.  På den delte hardwarestation skal du angive følgende egenskaber:
-    -   **Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre.
-    -   **Beskrivelse** – Tekst, der hjælper med til at identificere hardwarestationen, f.eks. **Returneringer** eller **Foran i butikken**.
-    -   **Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.
-    -   **Hardwareprofil** – For delte hardwarestationer skal hver hardwarestation have en hardwareprofil. Hardwareprofiler kan deles mellem hardwarestationer, men de skal være knyttet til hver hardwarestation. Vi anbefaler desuden, at du bruger delte skift, når flere enheder bruger den samme delte hardwarestation. Hvis du vil konfigurere et delt skift, skal du klikke på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**. For hver delt hardwareprofil skal du vælge pengeskuffen og angive indstillingen **Skuffe til delt skift** til **Ja**.
-    -   **Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes. Dette id leveres af kreditkortprocessoren.
-    -   **Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.
+4.  <span data-ttu-id="56248-515">Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="56248-515">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+5.  <span data-ttu-id="56248-516">Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-516">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="56248-517">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-517">Click **Run now** to sync changes to the POS.</span></span>
+6.  <span data-ttu-id="56248-518">Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-518">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="56248-519">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-519">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="56248-520">Installer hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-520">Install the hardware station.</span></span> <span data-ttu-id="56248-521">Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-521">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+8.  <span data-ttu-id="56248-522">Installer og aktivér Modern POS.</span><span class="sxs-lookup"><span data-stu-id="56248-522">Install and activate Modern POS.</span></span> <span data-ttu-id="56248-523">Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-523">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+9.  <span data-ttu-id="56248-524">Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.</span><span class="sxs-lookup"><span data-stu-id="56248-524">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+10. <span data-ttu-id="56248-525">Start handlingen **Administrer hardwarestationer**.</span><span class="sxs-lookup"><span data-stu-id="56248-525">Start the **Manage hardware stations** operation.</span></span>
+11. <span data-ttu-id="56248-526">Klik på **Administrer**.</span><span class="sxs-lookup"><span data-stu-id="56248-526">Click **Manage**.</span></span>
+12. <span data-ttu-id="56248-527">Angiv indstillingen for at slå hardwarestationen til på siden til administration af hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-527">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+13. <span data-ttu-id="56248-528">Vælg den hardwarestation, der skal bruges, og klik derefter på **Par**.</span><span class="sxs-lookup"><span data-stu-id="56248-528">Select the hardware station to use, and then click **Pair**.</span></span>
+14. <span data-ttu-id="56248-529">Når hardwarestationen er parret, skal du klikke på **Luk**.</span><span class="sxs-lookup"><span data-stu-id="56248-529">After the hardware station is paired, click **Close**.</span></span>
+15. <span data-ttu-id="56248-530">Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv.</span><span class="sxs-lookup"><span data-stu-id="56248-530">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span>
 
-4.  Gentag trinene 2 og 3 for hver yderligere hardwarestation, der skal bruges i butikken.
-5.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
-6.  Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-7.  Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken. Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.
-8.  Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3. Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).
-9.  Installer og aktivér Modern POS. Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).
-10. Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.
-11. Start handlingen **Administrer hardwarestationer**.
+### <a name="all-modern-pos-clients-that-have-a-shared-iis-hardware-station"></a><span data-ttu-id="56248-531">Alle Modern POS-klienter, der har en delt IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-531">All Modern POS clients that have a shared IIS hardware station</span></span>
 
-12. Klik på **Administrer**.
-13. Angiv indstillingen for at slå hardwarestationen til på siden til administration af hardwarestation.
-14. Vælg den hardwarestation, der skal bruges, og klik derefter på **Par**.
-15. Gentag trin 14 for hver hardwarestation, som Modern POS bruger.
-16. Når alle de påkrævede hardwarestationer er parret, skal du klikke på **Luk**.
-17. Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv. **Bemærk:** Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen. Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**. Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**. Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.
+<span data-ttu-id="56248-532">Denne konfiguration kan bruges til alle Modern POS-klienter, der deler hardwarestationer med andre enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-532">This configuration can be used for all Modern POS clients that share hardware stations with other devices.</span></span> <span data-ttu-id="56248-533">Benyt denne fremgangsmåde for at udføre konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="56248-533">To set up this configuration, follow these steps.</span></span>
 
-## <a name="extensibility"></a>Udvidelsesmuligheder
-Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestationen i [Udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md).
+1.  <span data-ttu-id="56248-534">Opret en hardwareprofil, hvor de nødvendige eksterne enheder er konfigureret.</span><span class="sxs-lookup"><span data-stu-id="56248-534">Create a hardware profile where the required peripherals are configured.</span></span>
+2.  <span data-ttu-id="56248-535">Opret en hardwarestation af typen **Delt** til den detailbutik, hvor POS-kasseapparatet skal bruges.</span><span class="sxs-lookup"><span data-stu-id="56248-535">Create a hardware station of the **Shared** type for the retail store where the POS register will be used.</span></span>
+3.  <span data-ttu-id="56248-536">På den delte hardwarestation skal du angive følgende egenskaber:</span><span class="sxs-lookup"><span data-stu-id="56248-536">On the shared hardware station, set the following properties:</span></span>
+    -   <span data-ttu-id="56248-537">**Værtsnavn** – Navnet på den værtscomputer, hvor hardwarestationen skal køre.</span><span class="sxs-lookup"><span data-stu-id="56248-537">**Host name** – The name of the host computer where the hardware station will run.</span></span>
+    -   <span data-ttu-id="56248-538">**Beskrivelse** – Tekst, der hjælper med til at identificere hardwarestationen, f.eks. **Returneringer** eller **Foran i butikken**.</span><span class="sxs-lookup"><span data-stu-id="56248-538">**Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.</span></span>
+    -   <span data-ttu-id="56248-539">**Port** – Den port, der skal bruges af hardwarestationen til at kommunikere med Modern POS-klienten.</span><span class="sxs-lookup"><span data-stu-id="56248-539">**Port** – The port to use for the hardware station to communicate with the Modern POS client.</span></span>
+    -   <span data-ttu-id="56248-540">**Hardwareprofil** – For delte hardwarestationer skal hver hardwarestation have en hardwareprofil.</span><span class="sxs-lookup"><span data-stu-id="56248-540">**Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile.</span></span> <span data-ttu-id="56248-541">Hardwareprofiler kan deles mellem hardwarestationer, men de skal være knyttet til hver hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-541">Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station.</span></span> <span data-ttu-id="56248-542">Vi anbefaler desuden, at du bruger delte skift, når flere enheder bruger den samme delte hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-542">In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station.</span></span> <span data-ttu-id="56248-543">Hvis du vil konfigurere et delt skift, skal du klikke på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.</span><span class="sxs-lookup"><span data-stu-id="56248-543">To set up a shared shift, click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span> <span data-ttu-id="56248-544">For hver delt hardwareprofil skal du vælge pengeskuffen og angive indstillingen **Skuffe til delt skift** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="56248-544">For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.</span></span>
+    -   <span data-ttu-id="56248-545">**Elektronisk pengeoverførsel POS-nummer** – Det terminal-id til elektronisk pengeoverførsel, der skal bruges, når godkendelser af elektronisk pengeoverførsel sendes.</span><span class="sxs-lookup"><span data-stu-id="56248-545">**EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent.</span></span> <span data-ttu-id="56248-546">Dette id leveres af kreditkortprocessoren.</span><span class="sxs-lookup"><span data-stu-id="56248-546">This ID is provided by the credit card processor.</span></span>
+    -   <span data-ttu-id="56248-547">**Pakkenavn** – Den hardwarestationspakke, der skal bruges, når hardwarestationen installeres.</span><span class="sxs-lookup"><span data-stu-id="56248-547">**Package name** – The hardware station package to use when the hardware station is deployed.</span></span>
 
-## <a name="security"></a>Sikkerhed
-I henhold til de aktuelle sikkerhedsstandarder, skal følgende indstillinger bruges i et produktionsmiljø: **Bemærk:** Installationsprogrammet for hardwarestationen foretager automatisk disse redigeringer i registreringsdatabasen som en del af installationen via selvbetjening.
+4.  <span data-ttu-id="56248-548">Gentag trinene 2 og 3 for hver yderligere hardwarestation, der skal bruges i butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-548">Repeat steps 2 and 3 for each additional hardware station that is required in the store.</span></span>
+5.  <span data-ttu-id="56248-549">Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="56248-549">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+6.  <span data-ttu-id="56248-550">Vælg distributionsplanen **1090** for at synkronisere den nye hardwareprofil til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-550">Select the **1090** distribution schedule to sync the new hardware profile to the store.</span></span> <span data-ttu-id="56248-551">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-551">Click **Run now** to sync changes to the POS.</span></span>
+7.  <span data-ttu-id="56248-552">Vælg distributionsplanen **1040** for at synkronisere den nye hardwarestation til butikken.</span><span class="sxs-lookup"><span data-stu-id="56248-552">Select the **1040** distribution schedule to sync the new hardware station to the store.</span></span> <span data-ttu-id="56248-553">Klik på **Kør nu** for at synkronisere ændringer til POS-enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-553">Click **Run now** to sync changes to the POS.</span></span>
+8.  <span data-ttu-id="56248-554">Installer hardwarestationen på hver værtscomputer, du har oprettet i trin 2 og 3.</span><span class="sxs-lookup"><span data-stu-id="56248-554">Install the hardware station on each host computer that you set up in steps 2 and 3.</span></span> <span data-ttu-id="56248-555">Du kan finde flere oplysninger om, hvordan du installerer hardwarestationen i [Konfiguration og installation af hardwarestation til detail](retail-hardware-station-configuration-installation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-555">For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).</span></span>
+9.  <span data-ttu-id="56248-556">Installer og aktivér Modern POS.</span><span class="sxs-lookup"><span data-stu-id="56248-556">Install and activate Modern POS.</span></span> <span data-ttu-id="56248-557">Du kan finde flere oplysninger om, hvordan du installerer Modern POS i [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md).</span><span class="sxs-lookup"><span data-stu-id="56248-557">For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).</span></span>
+10. <span data-ttu-id="56248-558">Log på Modern POS, og vælg **Udfør handlinger uden om kasseskuffen.**.</span><span class="sxs-lookup"><span data-stu-id="56248-558">Sign in to Modern POS, and select **Perform non-drawer operations**.</span></span>
+11. <span data-ttu-id="56248-559">Start handlingen **Administrer hardwarestationer**.</span><span class="sxs-lookup"><span data-stu-id="56248-559">Start the **Manage hardware stations** operation.</span></span>
 
--   SSL (Secure Sockets Layer) skal deaktiveres.
--   Kun TLS (Transport Layer Security) version 1.2 (eller den aktuelle højeste version) skal aktiveres og anvendes. **Bemærk:** Som standard er SSL og alle version af TLS, undtagen TLS 1.2, deaktiveret. Hvis du vil redigere eller aktivere disse værdier, skal du følge disse trin:
-    1.  Tryk på Windows-logotasten + R for at åbne et **Kør**-vindue.
-    2.  I feltet **Åbn** skal du skrive **Regedit** og derefter klikke på **OK**.
-    3.  Hvis meddelelsesboksen **Kontrol af brugerkonti** vises, skal du klikke på **Ja**.
-    4.  I vinduet **Registreringseditor** skal du gå til **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Følgende taster er indsat automatisk for kun at tillade TLS 1.2:
-        -   TLS 1.2Server:Enabled=1
-        -   TLS 1.2Server:DisabledByDefault=0
-        -   TLS 1.2Client:Enabled=1
-        -   TLS 1.2Client:DisabledByDefault=0
-        -   TLS 1.1Server:Enabled=0
-        -   TLS 1.1Client:Enabled=0
-        -   TLS 1.0Server:Enabled=0
-        -   TLS 1.0Client:Enabled=0
-        -   SSL 3.0Server:Enabled=0
-        -   SSL 3.0Client:Enabled=0
-        -   SSL 2.0Server:Enabled=0
-        -   SSL 2.0Client:Enabled=0
--   Ingen yderligere netværksporte må være åbne, medmindre de er påkrævede af kendte, angivne grunde.
--   Deling af ressourcer på tværs af oprindelse skal deaktiveres, og skal angive de tilladte oprindelser, der er godkendt.
--   Kun de nøglecentre, der er tillid til, skal bruges til at hente certifikater, der skal bruges på computere, der kører hardwarestationen.
+12. <span data-ttu-id="56248-560">Klik på **Administrer**.</span><span class="sxs-lookup"><span data-stu-id="56248-560">Click **Manage**.</span></span>
+13. <span data-ttu-id="56248-561">Angiv indstillingen for at slå hardwarestationen til på siden til administration af hardwarestation.</span><span class="sxs-lookup"><span data-stu-id="56248-561">On the hardware station management page, set the option to turn on the hardware station.</span></span>
+14. <span data-ttu-id="56248-562">Vælg den hardwarestation, der skal bruges, og klik derefter på **Par**.</span><span class="sxs-lookup"><span data-stu-id="56248-562">Select the hardware station to use, and then click **Pair**.</span></span>
+15. <span data-ttu-id="56248-563">Gentag trin 14 for hver hardwarestation, som Modern POS bruger.</span><span class="sxs-lookup"><span data-stu-id="56248-563">Repeat step 14 for each hardware station that Modern POS will use.</span></span>
+16. <span data-ttu-id="56248-564">Når alle de påkrævede hardwarestationer er parret, skal du klikke på **Luk**.</span><span class="sxs-lookup"><span data-stu-id="56248-564">After all the required hardware stations are paired, click **Close**.</span></span>
+17. <span data-ttu-id="56248-565">Klik på den senest valgte hardwarestation på siden til valg af hardwarestation for at gøre den aktiv.</span><span class="sxs-lookup"><span data-stu-id="56248-565">On the hardware station selection page, click the recently selected hardware station to make it active.</span></span> <span data-ttu-id="56248-566">**Bemærk:** Hvis enheder ofte bruger forskellige hardwarestationer, anbefaler vi, at du konfigurerer Modern POS til at bede kassereren om at vælge en hardwarestation, når de begynder betalingsprocessen.</span><span class="sxs-lookup"><span data-stu-id="56248-566">**Note:** If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process.</span></span> <span data-ttu-id="56248-567">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.</span><span class="sxs-lookup"><span data-stu-id="56248-567">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span> <span data-ttu-id="56248-568">Vælg kasseapparatet, og angiv derefter indstillingen **Vælg ved betaling** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="56248-568">Select the register, and then set the **Select upon tender** option to **Yes**.</span></span> <span data-ttu-id="56248-569">Brug distributionsplanen **1090** til at synkronisere ændringerne til kanaldatabasen.</span><span class="sxs-lookup"><span data-stu-id="56248-569">Use the **1090** distribution schedule to sync changes to the channel database.</span></span>
 
-**Bemærk:** Det er meget vigtigt, at du gennemgår sikkerhedsretningslinjer for IIS og PCI-kravene (Payment Card Industry).
+## <a name="extensibility"></a><span data-ttu-id="56248-570">Udvidelsesmuligheder</span><span class="sxs-lookup"><span data-stu-id="56248-570">Extensibility</span></span>
+<span data-ttu-id="56248-571">Du kan finde oplysninger om scenarier med udvidelsesmuligheder for hardwarestationen i [Udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md).</span><span class="sxs-lookup"><span data-stu-id="56248-571">For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).</span></span>
 
-## <a name="peripheral-simulator"></a>Ekstern simulator
-Du kan finde oplysninger under [Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md).
+## <a name="security"></a><span data-ttu-id="56248-572">Sikkerhed</span><span class="sxs-lookup"><span data-stu-id="56248-572">Security</span></span>
+<span data-ttu-id="56248-573">I henhold til de aktuelle sikkerhedsstandarder, skal følgende indstillinger bruges i et produktionsmiljø: **Bemærk:** Installationsprogrammet for hardwarestationen foretager automatisk disse redigeringer i registreringsdatabasen som en del af installationen via selvbetjening.</span><span class="sxs-lookup"><span data-stu-id="56248-573">According to current security standards, the following settings should be used in a production environment: **Note:** The hardware station installer will automatically make these registry edits as part of the installation through self-service.</span></span>
 
-## <a name="microsofttested-peripheral-devices"></a>Microsoft-testede eksterne enheder
-### <a name="ipc-built-in-hardware-station"></a>IPC-hardwarestation (indbygget)
+-   <span data-ttu-id="56248-574">SSL (Secure Sockets Layer) skal deaktiveres.</span><span class="sxs-lookup"><span data-stu-id="56248-574">Secure Sockets Layer (SSL) should be disabled.</span></span>
+-   <span data-ttu-id="56248-575">Kun TLS (Transport Layer Security) version 1.2 (eller den aktuelle højeste version) skal aktiveres og anvendes.</span><span class="sxs-lookup"><span data-stu-id="56248-575">Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.</span></span> <span data-ttu-id="56248-576">**Bemærk:** Som standard er SSL og alle version af TLS, undtagen TLS 1.2, deaktiveret.</span><span class="sxs-lookup"><span data-stu-id="56248-576">**Note:** By default, SSL and all version of TLS except TLS 1.2 are disabled.</span></span> <span data-ttu-id="56248-577">Hvis du vil redigere eller aktivere disse værdier, skal du følge disse trin:</span><span class="sxs-lookup"><span data-stu-id="56248-577">To edit or enable these values, follow these steps:</span></span>
+    1.  <span data-ttu-id="56248-578">Tryk på Windows-logotasten + R for at åbne et **Kør**-vindue.</span><span class="sxs-lookup"><span data-stu-id="56248-578">Press the Windows logo key+R to open a **Run** window.</span></span>
+    2.  <span data-ttu-id="56248-579">I feltet **Åbn** skal du skrive **Regedit** og derefter klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="56248-579">In the **Open** field, type **Regedit**, and then click **OK**.</span></span>
+    3.  <span data-ttu-id="56248-580">Hvis meddelelsesboksen **Kontrol af brugerkonti** vises, skal du klikke på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="56248-580">If a **User Account Control** message box appears, click **Yes**.</span></span>
+    4.  <span data-ttu-id="56248-581">I vinduet **Registreringseditor** skal du gå til **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span><span class="sxs-lookup"><span data-stu-id="56248-581">In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**.</span></span> <span data-ttu-id="56248-582">Følgende taster er indsat automatisk for kun at tillade TLS 1.2:</span><span class="sxs-lookup"><span data-stu-id="56248-582">The following keys have been automatically entered to allow for TLS 1.2 only:</span></span>
+        -   <span data-ttu-id="56248-583">TLS 1.2Server:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="56248-583">TLS 1.2Server:Enabled=1</span></span>
+        -   <span data-ttu-id="56248-584">TLS 1.2Server:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="56248-584">TLS 1.2Server:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="56248-585">TLS 1.2Client:Enabled=1</span><span class="sxs-lookup"><span data-stu-id="56248-585">TLS 1.2Client:Enabled=1</span></span>
+        -   <span data-ttu-id="56248-586">TLS 1.2Client:DisabledByDefault=0</span><span class="sxs-lookup"><span data-stu-id="56248-586">TLS 1.2Client:DisabledByDefault=0</span></span>
+        -   <span data-ttu-id="56248-587">TLS 1.1Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-587">TLS 1.1Server:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-588">TLS 1.1Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-588">TLS 1.1Client:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-589">TLS 1.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-589">TLS 1.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-590">TLS 1.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-590">TLS 1.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-591">SSL 3.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-591">SSL 3.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-592">SSL 3.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-592">SSL 3.0Client:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-593">SSL 2.0Server:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-593">SSL 2.0Server:Enabled=0</span></span>
+        -   <span data-ttu-id="56248-594">SSL 2.0Client:Enabled=0</span><span class="sxs-lookup"><span data-stu-id="56248-594">SSL 2.0Client:Enabled=0</span></span>
+-   <span data-ttu-id="56248-595">Ingen yderligere netværksporte må være åbne, medmindre de er påkrævede af kendte, angivne grunde.</span><span class="sxs-lookup"><span data-stu-id="56248-595">No additional network ports should be open, unless they are required for known, specified reasons.</span></span>
+-   <span data-ttu-id="56248-596">Deling af ressourcer på tværs af oprindelse skal deaktiveres, og skal angive de tilladte oprindelser, der er godkendt.</span><span class="sxs-lookup"><span data-stu-id="56248-596">Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.</span></span>
+-   <span data-ttu-id="56248-597">Kun de nøglecentre, der er tillid til, skal bruges til at hente certifikater, der skal bruges på computere, der kører hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-597">Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.</span></span>
 
-De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation, der er indbygget i Modern POS til Windows.
+<span data-ttu-id="56248-598">**Bemærk:** Det er meget vigtigt, at du gennemgår sikkerhedsretningslinjer for IIS og PCI-kravene (Payment Card Industry).</span><span class="sxs-lookup"><span data-stu-id="56248-598">**Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.</span></span>
 
-#### <a name="printer"></a>Printer
+## <a name="peripheral-simulator"></a><span data-ttu-id="56248-599">Ekstern simulator</span><span class="sxs-lookup"><span data-stu-id="56248-599">Peripheral simulator</span></span>
+<span data-ttu-id="56248-600">Du kan finde oplysninger under [Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md).</span><span class="sxs-lookup"><span data-stu-id="56248-600">For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).</span></span>
 
-| Producent | Model    | Interface | Bemærkninger                |
+## <a name="microsofttested-peripheral-devices"></a><span data-ttu-id="56248-601">Microsoft-testede eksterne enheder</span><span class="sxs-lookup"><span data-stu-id="56248-601">Microsofttested peripheral devices</span></span>
+### <a name="ipc-built-in-hardware-station"></a><span data-ttu-id="56248-602">IPC-hardwarestation (indbygget)</span><span class="sxs-lookup"><span data-stu-id="56248-602">IPC (built-in) hardware station</span></span>
+
+<span data-ttu-id="56248-603">De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation, der er indbygget i Modern POS til Windows.</span><span class="sxs-lookup"><span data-stu-id="56248-603">The following peripherals were tested by using the IPC hardware station that is built into Modern POS for Windows.</span></span>
+
+#### <a name="printer"></a><span data-ttu-id="56248-604">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-604">Printer</span></span>
+
+| <span data-ttu-id="56248-605">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-605">Manufacturer</span></span> | <span data-ttu-id="56248-606">Model</span><span class="sxs-lookup"><span data-stu-id="56248-606">Model</span></span>    | <span data-ttu-id="56248-607">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-607">Interface</span></span> | <span data-ttu-id="56248-608">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-608">Comments</span></span>                |
 |--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket   |
-| Star         | mPOP     | OPOS      | Tilsluttet via Bluetooth |
-| HP           | F7M67AA  | OPOS      | Drevet via USB             |
+| <span data-ttu-id="56248-609">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-609">Epson</span></span>        | <span data-ttu-id="56248-610">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="56248-610">Tm-T88IV</span></span> | <span data-ttu-id="56248-611">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-611">OPOS</span></span>      |                         |
+| <span data-ttu-id="56248-612">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-612">Epson</span></span>        | <span data-ttu-id="56248-613">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="56248-613">TM-T88V</span></span>  | <span data-ttu-id="56248-614">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-614">OPOS</span></span>      |                         |
+| <span data-ttu-id="56248-615">Star</span><span class="sxs-lookup"><span data-stu-id="56248-615">Star</span></span>         | <span data-ttu-id="56248-616">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-616">TSP650II</span></span> | <span data-ttu-id="56248-617">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-617">OPOS</span></span>      |                         |
+| <span data-ttu-id="56248-618">Star</span><span class="sxs-lookup"><span data-stu-id="56248-618">Star</span></span>         | <span data-ttu-id="56248-619">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-619">TSP650II</span></span> | <span data-ttu-id="56248-620">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-620">Custom</span></span>    | <span data-ttu-id="56248-621">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-621">Connected via network</span></span>   |
+| <span data-ttu-id="56248-622">Star</span><span class="sxs-lookup"><span data-stu-id="56248-622">Star</span></span>         | <span data-ttu-id="56248-623">mPOP</span><span class="sxs-lookup"><span data-stu-id="56248-623">mPOP</span></span>     | <span data-ttu-id="56248-624">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-624">OPOS</span></span>      | <span data-ttu-id="56248-625">Tilsluttet via Bluetooth</span><span class="sxs-lookup"><span data-stu-id="56248-625">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="56248-626">HP</span><span class="sxs-lookup"><span data-stu-id="56248-626">HP</span></span>           | <span data-ttu-id="56248-627">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="56248-627">F7M67AA</span></span>  | <span data-ttu-id="56248-628">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-628">OPOS</span></span>      | <span data-ttu-id="56248-629">Drevet via USB</span><span class="sxs-lookup"><span data-stu-id="56248-629">Powered USB</span></span>             |
 
-#### <a name="bar-code-scanner"></a>Stregkodescanner
+#### <a name="bar-code-scanner"></a><span data-ttu-id="56248-630">Stregkodescanner</span><span class="sxs-lookup"><span data-stu-id="56248-630">Bar code scanner</span></span>
 
-| Producent  | Model         | Interface | Bemærkninger |
+| <span data-ttu-id="56248-631">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-631">Manufacturer</span></span>  | <span data-ttu-id="56248-632">Model</span><span class="sxs-lookup"><span data-stu-id="56248-632">Model</span></span>         | <span data-ttu-id="56248-633">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-633">Interface</span></span> | <span data-ttu-id="56248-634">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-634">Comments</span></span> |
 |---------------|---------------|-----------|----------|
-| Motorola      | DS9208        | OPOS      |          |
-| Honeywell     | 1900          | UWP       |          |
-| Tegn        | LS2208        | OPOS      |          |
-| HP Integrated | E1L07AA       | OPOS      |          |
-| Datalogic     | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="56248-635">Motorola</span><span class="sxs-lookup"><span data-stu-id="56248-635">Motorola</span></span>      | <span data-ttu-id="56248-636">DS9208</span><span class="sxs-lookup"><span data-stu-id="56248-636">DS9208</span></span>        | <span data-ttu-id="56248-637">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-637">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-638">Honeywell</span><span class="sxs-lookup"><span data-stu-id="56248-638">Honeywell</span></span>     | <span data-ttu-id="56248-639">1900</span><span class="sxs-lookup"><span data-stu-id="56248-639">1900</span></span>          | <span data-ttu-id="56248-640">UWP</span><span class="sxs-lookup"><span data-stu-id="56248-640">UWP</span></span>       |          |
+| <span data-ttu-id="56248-641">Tegn</span><span class="sxs-lookup"><span data-stu-id="56248-641">Symbol</span></span>        | <span data-ttu-id="56248-642">LS2208</span><span class="sxs-lookup"><span data-stu-id="56248-642">LS2208</span></span>        | <span data-ttu-id="56248-643">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-643">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-644">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="56248-644">HP Integrated</span></span> | <span data-ttu-id="56248-645">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="56248-645">E1L07AA</span></span>       | <span data-ttu-id="56248-646">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-646">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-647">Datalogic</span><span class="sxs-lookup"><span data-stu-id="56248-647">Datalogic</span></span>     | <span data-ttu-id="56248-648">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="56248-648">Magellan 8400</span></span> | <span data-ttu-id="56248-649">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-649">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>Pinkodetastatur
+#### <a name="pin-pad"></a><span data-ttu-id="56248-650">Pinkodetastatur</span><span class="sxs-lookup"><span data-stu-id="56248-650">PIN pad</span></span>
 
-| Producent | Model  | Interface | Bemærkninger                                        |
+| <span data-ttu-id="56248-651">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-651">Manufacturer</span></span> | <span data-ttu-id="56248-652">Model</span><span class="sxs-lookup"><span data-stu-id="56248-652">Model</span></span>  | <span data-ttu-id="56248-653">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-653">Interface</span></span> | <span data-ttu-id="56248-654">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-654">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
+| <span data-ttu-id="56248-655">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-655">VeriFone</span></span>     | <span data-ttu-id="56248-656">1000SE</span><span class="sxs-lookup"><span data-stu-id="56248-656">1000SE</span></span> | <span data-ttu-id="56248-657">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-657">OPOS</span></span>      | <span data-ttu-id="56248-658">Kræver tilpasning af betalingsconnector</span><span class="sxs-lookup"><span data-stu-id="56248-658">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Betalingsterminal
+#### <a name="payment-terminal"></a><span data-ttu-id="56248-659">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-659">Payment terminal</span></span>
 
-| Producent | Model | Interface | Bemærkninger                                                                       |
+| <span data-ttu-id="56248-660">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-660">Manufacturer</span></span> | <span data-ttu-id="56248-661">Model</span><span class="sxs-lookup"><span data-stu-id="56248-661">Model</span></span> | <span data-ttu-id="56248-662">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-662">Interface</span></span> | <span data-ttu-id="56248-663">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-663">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| <span data-ttu-id="56248-664">Equinox</span><span class="sxs-lookup"><span data-stu-id="56248-664">Equinox</span></span>      | <span data-ttu-id="56248-665">L5300</span><span class="sxs-lookup"><span data-stu-id="56248-665">L5300</span></span> | <span data-ttu-id="56248-666">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-666">Custom</span></span>    | <span data-ttu-id="56248-667">Kræver tilpasning af betalingsconnector</span><span class="sxs-lookup"><span data-stu-id="56248-667">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="56248-668">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-668">VeriFone</span></span>     | <span data-ttu-id="56248-669">MX925</span><span class="sxs-lookup"><span data-stu-id="56248-669">MX925</span></span> | <span data-ttu-id="56248-670">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-670">Custom</span></span>    | <span data-ttu-id="56248-671">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-671">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="56248-672">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-672">VeriFone</span></span>     | <span data-ttu-id="56248-673">MX915</span><span class="sxs-lookup"><span data-stu-id="56248-673">MX915</span></span> | <span data-ttu-id="56248-674">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-674">Custom</span></span>    | <span data-ttu-id="56248-675">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-675">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pengeskuffe
+#### <a name="cash-drawer"></a><span data-ttu-id="56248-676">Pengeskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-676">Cash drawer</span></span>
 
-| Producent | Model     | Interface | Bemærkninger                |
+| <span data-ttu-id="56248-677">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-677">Manufacturer</span></span> | <span data-ttu-id="56248-678">Model</span><span class="sxs-lookup"><span data-stu-id="56248-678">Model</span></span>     | <span data-ttu-id="56248-679">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-679">Interface</span></span> | <span data-ttu-id="56248-680">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-680">Comments</span></span>                |
 |--------------|-----------|-----------|-------------------------|
-| Star         | mPOP      | OPOS      | Tilsluttet via Bluetooth |
-| APG          | Atwood    | Brugerdefineret    | Forbundet via netværket   |
-| Star         | SMD2-1317 | OPOS      |                         |
-| HP           | QT457AA   | OPOS      |                         |
+| <span data-ttu-id="56248-681">Star</span><span class="sxs-lookup"><span data-stu-id="56248-681">Star</span></span>         | <span data-ttu-id="56248-682">mPOP</span><span class="sxs-lookup"><span data-stu-id="56248-682">mPOP</span></span>      | <span data-ttu-id="56248-683">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-683">OPOS</span></span>      | <span data-ttu-id="56248-684">Tilsluttet via Bluetooth</span><span class="sxs-lookup"><span data-stu-id="56248-684">Connected via Bluetooth</span></span> |
+| <span data-ttu-id="56248-685">APG</span><span class="sxs-lookup"><span data-stu-id="56248-685">APG</span></span>          | <span data-ttu-id="56248-686">Atwood</span><span class="sxs-lookup"><span data-stu-id="56248-686">Atwood</span></span>    | <span data-ttu-id="56248-687">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-687">Custom</span></span>    | <span data-ttu-id="56248-688">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-688">Connected via network</span></span>   |
+| <span data-ttu-id="56248-689">Star</span><span class="sxs-lookup"><span data-stu-id="56248-689">Star</span></span>         | <span data-ttu-id="56248-690">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="56248-690">SMD2-1317</span></span> | <span data-ttu-id="56248-691">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-691">OPOS</span></span>      |                         |
+| <span data-ttu-id="56248-692">HP</span><span class="sxs-lookup"><span data-stu-id="56248-692">HP</span></span>           | <span data-ttu-id="56248-693">QT457AA</span><span class="sxs-lookup"><span data-stu-id="56248-693">QT457AA</span></span>   | <span data-ttu-id="56248-694">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-694">OPOS</span></span>      |                         |
 
-#### <a name="line-display"></a>Linjevisning
+#### <a name="line-display"></a><span data-ttu-id="56248-695">Linjevisning</span><span class="sxs-lookup"><span data-stu-id="56248-695">Line display</span></span>
 
-| Producent  | Model   | Interface | Bemærkninger |
+| <span data-ttu-id="56248-696">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-696">Manufacturer</span></span>  | <span data-ttu-id="56248-697">Model</span><span class="sxs-lookup"><span data-stu-id="56248-697">Model</span></span>   | <span data-ttu-id="56248-698">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-698">Interface</span></span> | <span data-ttu-id="56248-699">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-699">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="56248-700">HP integrated</span><span class="sxs-lookup"><span data-stu-id="56248-700">HP integrated</span></span> | <span data-ttu-id="56248-701">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="56248-701">G6U79AA</span></span> | <span data-ttu-id="56248-702">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-702">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-703">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-703">Epson</span></span>         | <span data-ttu-id="56248-704">M58DC</span><span class="sxs-lookup"><span data-stu-id="56248-704">M58DC</span></span>   | <span data-ttu-id="56248-705">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-705">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Signaturhentning
+#### <a name="signature-capture"></a><span data-ttu-id="56248-706">Signaturhentning</span><span class="sxs-lookup"><span data-stu-id="56248-706">Signature capture</span></span>
 
-| Producent | Model  | Interface | Bemærkninger |
+| <span data-ttu-id="56248-707">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-707">Manufacturer</span></span> | <span data-ttu-id="56248-708">Model</span><span class="sxs-lookup"><span data-stu-id="56248-708">Model</span></span>  | <span data-ttu-id="56248-709">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-709">Interface</span></span> | <span data-ttu-id="56248-710">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-710">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="56248-711">Scriptel</span><span class="sxs-lookup"><span data-stu-id="56248-711">Scriptel</span></span>     | <span data-ttu-id="56248-712">ST1550</span><span class="sxs-lookup"><span data-stu-id="56248-712">ST1550</span></span> | <span data-ttu-id="56248-713">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-713">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Vægt
+#### <a name="scale"></a><span data-ttu-id="56248-714">Vægt</span><span class="sxs-lookup"><span data-stu-id="56248-714">Scale</span></span>
 
-| Producent | Model         | Interface | Bemærkninger |
+| <span data-ttu-id="56248-715">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-715">Manufacturer</span></span> | <span data-ttu-id="56248-716">Model</span><span class="sxs-lookup"><span data-stu-id="56248-716">Model</span></span>         | <span data-ttu-id="56248-717">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-717">Interface</span></span> | <span data-ttu-id="56248-718">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-718">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="56248-719">Datalogic</span><span class="sxs-lookup"><span data-stu-id="56248-719">Datalogic</span></span>    | <span data-ttu-id="56248-720">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="56248-720">Magellan 8400</span></span> | <span data-ttu-id="56248-721">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-721">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>Magnetstribelæser
+#### <a name="msr"></a><span data-ttu-id="56248-722">Magnetstribelæser</span><span class="sxs-lookup"><span data-stu-id="56248-722">MSR</span></span>
 
-| Producent | Model       | Interface | Bemærkninger |
+| <span data-ttu-id="56248-723">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-723">Manufacturer</span></span> | <span data-ttu-id="56248-724">Model</span><span class="sxs-lookup"><span data-stu-id="56248-724">Model</span></span>       | <span data-ttu-id="56248-725">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-725">Interface</span></span> | <span data-ttu-id="56248-726">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-726">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="56248-727">Magtek</span><span class="sxs-lookup"><span data-stu-id="56248-727">Magtek</span></span>       | <span data-ttu-id="56248-728">21073075</span><span class="sxs-lookup"><span data-stu-id="56248-728">21073075</span></span>    | <span data-ttu-id="56248-729">UWP</span><span class="sxs-lookup"><span data-stu-id="56248-729">UWP</span></span>       |          |
+| <span data-ttu-id="56248-730">Magtek</span><span class="sxs-lookup"><span data-stu-id="56248-730">Magtek</span></span>       | <span data-ttu-id="56248-731">21073062</span><span class="sxs-lookup"><span data-stu-id="56248-731">21073062</span></span>    | <span data-ttu-id="56248-732">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-732">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-733">HP</span><span class="sxs-lookup"><span data-stu-id="56248-733">HP</span></span>           | <span data-ttu-id="56248-734">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="56248-734">IDRA-334133</span></span> | <span data-ttu-id="56248-735">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-735">OPOS</span></span>      |          |
 
-### <a name="dedicated-iis-hardware-station"></a>Dedikeret IIS-hardwarestation
+### <a name="dedicated-iis-hardware-station"></a><span data-ttu-id="56248-736">Dedikeret IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-736">Dedicated IIS hardware station</span></span>
 
-De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hardwarestation samt Modern POS til Windows og Cloud POS.
+<span data-ttu-id="56248-737">De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hardwarestation samt Modern POS til Windows og Cloud POS.</span><span class="sxs-lookup"><span data-stu-id="56248-737">The following peripherals were tested by using a dedicated (not shared) IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span>
 
-#### <a name="printer"></a>Printer
+#### <a name="printer"></a><span data-ttu-id="56248-738">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-738">Printer</span></span>
 
-| Producent | Model    | Interface | Bemærkninger                  |
+| <span data-ttu-id="56248-739">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-739">Manufacturer</span></span> | <span data-ttu-id="56248-740">Model</span><span class="sxs-lookup"><span data-stu-id="56248-740">Model</span></span>    | <span data-ttu-id="56248-741">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-741">Interface</span></span> | <span data-ttu-id="56248-742">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-742">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket     |
-| Star         | TSP100   | OPOS      | Kræver TSP650II-drivere |
-| HP           | F7M67AA  | OPOS      | Drevet via USB               |
+| <span data-ttu-id="56248-743">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-743">Epson</span></span>        | <span data-ttu-id="56248-744">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="56248-744">Tm-T88IV</span></span> | <span data-ttu-id="56248-745">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-745">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-746">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-746">Epson</span></span>        | <span data-ttu-id="56248-747">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="56248-747">TM-T88V</span></span>  | <span data-ttu-id="56248-748">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-748">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-749">Star</span><span class="sxs-lookup"><span data-stu-id="56248-749">Star</span></span>         | <span data-ttu-id="56248-750">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-750">TSP650II</span></span> | <span data-ttu-id="56248-751">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-751">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-752">Star</span><span class="sxs-lookup"><span data-stu-id="56248-752">Star</span></span>         | <span data-ttu-id="56248-753">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-753">TSP650II</span></span> | <span data-ttu-id="56248-754">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-754">Custom</span></span>    | <span data-ttu-id="56248-755">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-755">Connected via network</span></span>     |
+| <span data-ttu-id="56248-756">Star</span><span class="sxs-lookup"><span data-stu-id="56248-756">Star</span></span>         | <span data-ttu-id="56248-757">TSP100</span><span class="sxs-lookup"><span data-stu-id="56248-757">TSP100</span></span>   | <span data-ttu-id="56248-758">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-758">OPOS</span></span>      | <span data-ttu-id="56248-759">Kræver TSP650II-drivere</span><span class="sxs-lookup"><span data-stu-id="56248-759">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="56248-760">HP</span><span class="sxs-lookup"><span data-stu-id="56248-760">HP</span></span>           | <span data-ttu-id="56248-761">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="56248-761">F7M67AA</span></span>  | <span data-ttu-id="56248-762">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-762">OPOS</span></span>      | <span data-ttu-id="56248-763">Drevet via USB</span><span class="sxs-lookup"><span data-stu-id="56248-763">Powered USB</span></span>               |
 
-#### <a name="bar-code-scanner"></a>Stregkodescanner
+#### <a name="bar-code-scanner"></a><span data-ttu-id="56248-764">Stregkodescanner</span><span class="sxs-lookup"><span data-stu-id="56248-764">Bar code scanner</span></span>
 
-| Producent  | Model   | Interface | Bemærkninger |
+| <span data-ttu-id="56248-765">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-765">Manufacturer</span></span>  | <span data-ttu-id="56248-766">Model</span><span class="sxs-lookup"><span data-stu-id="56248-766">Model</span></span>   | <span data-ttu-id="56248-767">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-767">Interface</span></span> | <span data-ttu-id="56248-768">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-768">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| Motorola      | DS9208  | OPOS      |          |
-| Tegn        | LS2208  | OPOS      |          |
-| HP Integrated | E1L07AA | OPOS      |          |
+| <span data-ttu-id="56248-769">Motorola</span><span class="sxs-lookup"><span data-stu-id="56248-769">Motorola</span></span>      | <span data-ttu-id="56248-770">DS9208</span><span class="sxs-lookup"><span data-stu-id="56248-770">DS9208</span></span>  | <span data-ttu-id="56248-771">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-771">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-772">Tegn</span><span class="sxs-lookup"><span data-stu-id="56248-772">Symbol</span></span>        | <span data-ttu-id="56248-773">LS2208</span><span class="sxs-lookup"><span data-stu-id="56248-773">LS2208</span></span>  | <span data-ttu-id="56248-774">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-774">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-775">HP Integrated</span><span class="sxs-lookup"><span data-stu-id="56248-775">HP Integrated</span></span> | <span data-ttu-id="56248-776">E1L07AA</span><span class="sxs-lookup"><span data-stu-id="56248-776">E1L07AA</span></span> | <span data-ttu-id="56248-777">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-777">OPOS</span></span>      |          |
 
-#### <a name="pin-pad"></a>Pinkodetastatur
+#### <a name="pin-pad"></a><span data-ttu-id="56248-778">Pinkodetastatur</span><span class="sxs-lookup"><span data-stu-id="56248-778">PIN pad</span></span>
 
-| Producent | Model  | Interface | Bemærkninger                                        |
+| <span data-ttu-id="56248-779">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-779">Manufacturer</span></span> | <span data-ttu-id="56248-780">Model</span><span class="sxs-lookup"><span data-stu-id="56248-780">Model</span></span>  | <span data-ttu-id="56248-781">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-781">Interface</span></span> | <span data-ttu-id="56248-782">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-782">Comments</span></span>                                        |
 |--------------|--------|-----------|-------------------------------------------------|
-| VeriFone     | 1000SE | OPOS      | Kræver tilpasning af betalingsconnector |
+| <span data-ttu-id="56248-783">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-783">VeriFone</span></span>     | <span data-ttu-id="56248-784">1000SE</span><span class="sxs-lookup"><span data-stu-id="56248-784">1000SE</span></span> | <span data-ttu-id="56248-785">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-785">OPOS</span></span>      | <span data-ttu-id="56248-786">Kræver tilpasning af betalingsconnector</span><span class="sxs-lookup"><span data-stu-id="56248-786">Requires customization of the payment connector</span></span> |
 
-#### <a name="payment-terminal"></a>Betalingsterminal
+#### <a name="payment-terminal"></a><span data-ttu-id="56248-787">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-787">Payment terminal</span></span>
 
-| Producent | Model | Interface | Bemærkninger                                                                       |
+| <span data-ttu-id="56248-788">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-788">Manufacturer</span></span> | <span data-ttu-id="56248-789">Model</span><span class="sxs-lookup"><span data-stu-id="56248-789">Model</span></span> | <span data-ttu-id="56248-790">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-790">Interface</span></span> | <span data-ttu-id="56248-791">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-791">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Brugerdefineret    | Kræver tilpasning af betalingsconnector                                |
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| <span data-ttu-id="56248-792">Equinox</span><span class="sxs-lookup"><span data-stu-id="56248-792">Equinox</span></span>      | <span data-ttu-id="56248-793">L5300</span><span class="sxs-lookup"><span data-stu-id="56248-793">L5300</span></span> | <span data-ttu-id="56248-794">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-794">Custom</span></span>    | <span data-ttu-id="56248-795">Kræver tilpasning af betalingsconnector</span><span class="sxs-lookup"><span data-stu-id="56248-795">Requires customization of the payment connector</span></span>                                |
+| <span data-ttu-id="56248-796">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-796">VeriFone</span></span>     | <span data-ttu-id="56248-797">MX925</span><span class="sxs-lookup"><span data-stu-id="56248-797">MX925</span></span> | <span data-ttu-id="56248-798">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-798">Custom</span></span>    | <span data-ttu-id="56248-799">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-799">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="56248-800">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-800">VeriFone</span></span>     | <span data-ttu-id="56248-801">MX915</span><span class="sxs-lookup"><span data-stu-id="56248-801">MX915</span></span> | <span data-ttu-id="56248-802">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-802">Custom</span></span>    | <span data-ttu-id="56248-803">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-803">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pengeskuffe
+#### <a name="cash-drawer"></a><span data-ttu-id="56248-804">Pengeskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-804">Cash drawer</span></span>
 
-| Producent | Model     | Interface | Bemærkninger              |
+| <span data-ttu-id="56248-805">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-805">Manufacturer</span></span> | <span data-ttu-id="56248-806">Model</span><span class="sxs-lookup"><span data-stu-id="56248-806">Model</span></span>     | <span data-ttu-id="56248-807">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-807">Interface</span></span> | <span data-ttu-id="56248-808">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-808">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Brugerdefineret    | Forbundet via netværket |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="56248-809">APG</span><span class="sxs-lookup"><span data-stu-id="56248-809">APG</span></span>          | <span data-ttu-id="56248-810">Atwood</span><span class="sxs-lookup"><span data-stu-id="56248-810">Atwood</span></span>    | <span data-ttu-id="56248-811">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-811">Custom</span></span>    | <span data-ttu-id="56248-812">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-812">Connected via network</span></span> |
+| <span data-ttu-id="56248-813">Star</span><span class="sxs-lookup"><span data-stu-id="56248-813">Star</span></span>         | <span data-ttu-id="56248-814">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="56248-814">SMD2-1317</span></span> | <span data-ttu-id="56248-815">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-815">OPOS</span></span>      |                       |
+| <span data-ttu-id="56248-816">HP</span><span class="sxs-lookup"><span data-stu-id="56248-816">HP</span></span>           | <span data-ttu-id="56248-817">QT457AA</span><span class="sxs-lookup"><span data-stu-id="56248-817">QT457AA</span></span>   | <span data-ttu-id="56248-818">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-818">OPOS</span></span>      |                       |
 
-#### <a name="line-display"></a>Linjevisning
+#### <a name="line-display"></a><span data-ttu-id="56248-819">Linjevisning</span><span class="sxs-lookup"><span data-stu-id="56248-819">Line display</span></span>
 
-| Producent  | Model   | Interface | Bemærkninger |
+| <span data-ttu-id="56248-820">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-820">Manufacturer</span></span>  | <span data-ttu-id="56248-821">Model</span><span class="sxs-lookup"><span data-stu-id="56248-821">Model</span></span>   | <span data-ttu-id="56248-822">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-822">Interface</span></span> | <span data-ttu-id="56248-823">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-823">Comments</span></span> |
 |---------------|---------|-----------|----------|
-| HP integrated | G6U79AA | OPOS      |          |
-| Epson         | M58DC   | OPOS      |          |
+| <span data-ttu-id="56248-824">HP integrated</span><span class="sxs-lookup"><span data-stu-id="56248-824">HP integrated</span></span> | <span data-ttu-id="56248-825">G6U79AA</span><span class="sxs-lookup"><span data-stu-id="56248-825">G6U79AA</span></span> | <span data-ttu-id="56248-826">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-826">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-827">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-827">Epson</span></span>         | <span data-ttu-id="56248-828">M58DC</span><span class="sxs-lookup"><span data-stu-id="56248-828">M58DC</span></span>   | <span data-ttu-id="56248-829">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-829">OPOS</span></span>      |          |
 
-#### <a name="signature-capture"></a>Signaturhentning
+#### <a name="signature-capture"></a><span data-ttu-id="56248-830">Signaturhentning</span><span class="sxs-lookup"><span data-stu-id="56248-830">Signature capture</span></span>
 
-| Producent | Model  | Interface | Bemærkninger |
+| <span data-ttu-id="56248-831">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-831">Manufacturer</span></span> | <span data-ttu-id="56248-832">Model</span><span class="sxs-lookup"><span data-stu-id="56248-832">Model</span></span>  | <span data-ttu-id="56248-833">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-833">Interface</span></span> | <span data-ttu-id="56248-834">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-834">Comments</span></span> |
 |--------------|--------|-----------|----------|
-| Scriptel     | ST1550 | OPOS      |          |
+| <span data-ttu-id="56248-835">Scriptel</span><span class="sxs-lookup"><span data-stu-id="56248-835">Scriptel</span></span>     | <span data-ttu-id="56248-836">ST1550</span><span class="sxs-lookup"><span data-stu-id="56248-836">ST1550</span></span> | <span data-ttu-id="56248-837">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-837">OPOS</span></span>      |          |
 
-#### <a name="scale"></a>Vægt
+#### <a name="scale"></a><span data-ttu-id="56248-838">Vægt</span><span class="sxs-lookup"><span data-stu-id="56248-838">Scale</span></span>
 
-| Producent | Model         | Interface | Bemærkninger |
+| <span data-ttu-id="56248-839">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-839">Manufacturer</span></span> | <span data-ttu-id="56248-840">Model</span><span class="sxs-lookup"><span data-stu-id="56248-840">Model</span></span>         | <span data-ttu-id="56248-841">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-841">Interface</span></span> | <span data-ttu-id="56248-842">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-842">Comments</span></span> |
 |--------------|---------------|-----------|----------|
-| Datalogic    | Magellan 8400 | OPOS      |          |
+| <span data-ttu-id="56248-843">Datalogic</span><span class="sxs-lookup"><span data-stu-id="56248-843">Datalogic</span></span>    | <span data-ttu-id="56248-844">Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="56248-844">Magellan 8400</span></span> | <span data-ttu-id="56248-845">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-845">OPOS</span></span>      |          |
 
-#### <a name="msr"></a>Magnetstribelæser
+#### <a name="msr"></a><span data-ttu-id="56248-846">Magnetstribelæser</span><span class="sxs-lookup"><span data-stu-id="56248-846">MSR</span></span>
 
-| Producent | Model       | Interface | Bemærkninger |
+| <span data-ttu-id="56248-847">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-847">Manufacturer</span></span> | <span data-ttu-id="56248-848">Model</span><span class="sxs-lookup"><span data-stu-id="56248-848">Model</span></span>       | <span data-ttu-id="56248-849">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-849">Interface</span></span> | <span data-ttu-id="56248-850">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-850">Comments</span></span> |
 |--------------|-------------|-----------|----------|
-| Magtek       | 21073075    | UWP       |          |
-| Magtek       | 21073062    | OPOS      |          |
-| HP           | IDRA-334133 | OPOS      |          |
+| <span data-ttu-id="56248-851">Magtek</span><span class="sxs-lookup"><span data-stu-id="56248-851">Magtek</span></span>       | <span data-ttu-id="56248-852">21073075</span><span class="sxs-lookup"><span data-stu-id="56248-852">21073075</span></span>    | <span data-ttu-id="56248-853">UWP</span><span class="sxs-lookup"><span data-stu-id="56248-853">UWP</span></span>       |          |
+| <span data-ttu-id="56248-854">Magtek</span><span class="sxs-lookup"><span data-stu-id="56248-854">Magtek</span></span>       | <span data-ttu-id="56248-855">21073062</span><span class="sxs-lookup"><span data-stu-id="56248-855">21073062</span></span>    | <span data-ttu-id="56248-856">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-856">OPOS</span></span>      |          |
+| <span data-ttu-id="56248-857">HP</span><span class="sxs-lookup"><span data-stu-id="56248-857">HP</span></span>           | <span data-ttu-id="56248-858">IDRA-334133</span><span class="sxs-lookup"><span data-stu-id="56248-858">IDRA-334133</span></span> | <span data-ttu-id="56248-859">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-859">OPOS</span></span>      |          |
 
-### <a name="shared-iis-hardware-station"></a>Delt IIS-hardwarestation
+### <a name="shared-iis-hardware-station"></a><span data-ttu-id="56248-860">Delt IIS-hardwarestation</span><span class="sxs-lookup"><span data-stu-id="56248-860">Shared IIS hardware station</span></span>
 
-De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestation samt Modern POS til Windows og Cloud POS. **Bemærk:** Kun en printer, en betalingsterminal og en pengeskuffe understøttes.
+<span data-ttu-id="56248-861">De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestation samt Modern POS til Windows og Cloud POS.</span><span class="sxs-lookup"><span data-stu-id="56248-861">The following peripherals were tested by using a shared IIS hardware station together with Modern POS for Windows and Cloud POS.</span></span> <span data-ttu-id="56248-862">**Bemærk:** Kun en printer, en betalingsterminal og en pengeskuffe understøttes.</span><span class="sxs-lookup"><span data-stu-id="56248-862">**Note:** Only a printer, payment terminal, and cash drawer are supported.</span></span>
 
-#### <a name="printer"></a>Printer
+#### <a name="printer"></a><span data-ttu-id="56248-863">Printer</span><span class="sxs-lookup"><span data-stu-id="56248-863">Printer</span></span>
 
-| Producent | Model    | Interface | Bemærkninger                  |
+| <span data-ttu-id="56248-864">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-864">Manufacturer</span></span> | <span data-ttu-id="56248-865">Model</span><span class="sxs-lookup"><span data-stu-id="56248-865">Model</span></span>    | <span data-ttu-id="56248-866">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-866">Interface</span></span> | <span data-ttu-id="56248-867">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-867">Comments</span></span>                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
-| Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
-| Star         | TSP650II | Brugerdefineret    | Forbundet via netværket     |
-| Star         | TSP100   | OPOS      | Kræver TSP650II-drivere |
-| HP           | F7M67AA  | OPOS      | Drevet via USB               |
+| <span data-ttu-id="56248-868">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-868">Epson</span></span>        | <span data-ttu-id="56248-869">Tm-T88IV</span><span class="sxs-lookup"><span data-stu-id="56248-869">Tm-T88IV</span></span> | <span data-ttu-id="56248-870">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-870">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-871">Epson</span><span class="sxs-lookup"><span data-stu-id="56248-871">Epson</span></span>        | <span data-ttu-id="56248-872">TM-T88V</span><span class="sxs-lookup"><span data-stu-id="56248-872">TM-T88V</span></span>  | <span data-ttu-id="56248-873">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-873">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-874">Star</span><span class="sxs-lookup"><span data-stu-id="56248-874">Star</span></span>         | <span data-ttu-id="56248-875">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-875">TSP650II</span></span> | <span data-ttu-id="56248-876">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-876">OPOS</span></span>      |                           |
+| <span data-ttu-id="56248-877">Star</span><span class="sxs-lookup"><span data-stu-id="56248-877">Star</span></span>         | <span data-ttu-id="56248-878">TSP650II</span><span class="sxs-lookup"><span data-stu-id="56248-878">TSP650II</span></span> | <span data-ttu-id="56248-879">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-879">Custom</span></span>    | <span data-ttu-id="56248-880">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-880">Connected via network</span></span>     |
+| <span data-ttu-id="56248-881">Star</span><span class="sxs-lookup"><span data-stu-id="56248-881">Star</span></span>         | <span data-ttu-id="56248-882">TSP100</span><span class="sxs-lookup"><span data-stu-id="56248-882">TSP100</span></span>   | <span data-ttu-id="56248-883">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-883">OPOS</span></span>      | <span data-ttu-id="56248-884">Kræver TSP650II-drivere</span><span class="sxs-lookup"><span data-stu-id="56248-884">Requires TSP650II drivers</span></span> |
+| <span data-ttu-id="56248-885">HP</span><span class="sxs-lookup"><span data-stu-id="56248-885">HP</span></span>           | <span data-ttu-id="56248-886">F7M67AA</span><span class="sxs-lookup"><span data-stu-id="56248-886">F7M67AA</span></span>  | <span data-ttu-id="56248-887">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-887">OPOS</span></span>      | <span data-ttu-id="56248-888">Drevet via USB</span><span class="sxs-lookup"><span data-stu-id="56248-888">Powered USB</span></span>               |
 
-#### <a name="payment-terminal"></a>Betalingsterminal
+#### <a name="payment-terminal"></a><span data-ttu-id="56248-889">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-889">Payment terminal</span></span>
 
-| Producent | Model | Interface | Bemærkninger                                                                       |
+| <span data-ttu-id="56248-890">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-890">Manufacturer</span></span> | <span data-ttu-id="56248-891">Model</span><span class="sxs-lookup"><span data-stu-id="56248-891">Model</span></span> | <span data-ttu-id="56248-892">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-892">Interface</span></span> | <span data-ttu-id="56248-893">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-893">Comments</span></span>                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
-| VeriFone     | MX925 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
-| VeriFone     | MX915 | Brugerdefineret    | Kræver tilpasning af betalingsconnector, forbundet via netværk og USB |
+| <span data-ttu-id="56248-894">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-894">VeriFone</span></span>     | <span data-ttu-id="56248-895">MX925</span><span class="sxs-lookup"><span data-stu-id="56248-895">MX925</span></span> | <span data-ttu-id="56248-896">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-896">Custom</span></span>    | <span data-ttu-id="56248-897">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-897">Requires customization of the payment connector; connected via network and USB</span></span> |
+| <span data-ttu-id="56248-898">VeriFone</span><span class="sxs-lookup"><span data-stu-id="56248-898">VeriFone</span></span>     | <span data-ttu-id="56248-899">MX915</span><span class="sxs-lookup"><span data-stu-id="56248-899">MX915</span></span> | <span data-ttu-id="56248-900">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-900">Custom</span></span>    | <span data-ttu-id="56248-901">Kræver tilpasning af betalingsconnector, forbundet via netværk og USB</span><span class="sxs-lookup"><span data-stu-id="56248-901">Requires customization of the payment connector; connected via network and USB</span></span> |
 
-#### <a name="cash-drawer"></a>Pengeskuffe
+#### <a name="cash-drawer"></a><span data-ttu-id="56248-902">Pengeskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-902">Cash drawer</span></span>
 
-| Producent | Model     | Interface | Bemærkninger              |
+| <span data-ttu-id="56248-903">Producent</span><span class="sxs-lookup"><span data-stu-id="56248-903">Manufacturer</span></span> | <span data-ttu-id="56248-904">Model</span><span class="sxs-lookup"><span data-stu-id="56248-904">Model</span></span>     | <span data-ttu-id="56248-905">Interface</span><span class="sxs-lookup"><span data-stu-id="56248-905">Interface</span></span> | <span data-ttu-id="56248-906">Bemærkninger</span><span class="sxs-lookup"><span data-stu-id="56248-906">Comments</span></span>              |
 |--------------|-----------|-----------|-----------------------|
-| APG          | Atwood    | Brugerdefineret    | Forbundet via netværket |
-| Star         | SMD2-1317 | OPOS      |                       |
-| HP           | QT457AA   | OPOS      |                       |
+| <span data-ttu-id="56248-907">APG</span><span class="sxs-lookup"><span data-stu-id="56248-907">APG</span></span>          | <span data-ttu-id="56248-908">Atwood</span><span class="sxs-lookup"><span data-stu-id="56248-908">Atwood</span></span>    | <span data-ttu-id="56248-909">Brugerdefineret</span><span class="sxs-lookup"><span data-stu-id="56248-909">Custom</span></span>    | <span data-ttu-id="56248-910">Forbundet via netværket</span><span class="sxs-lookup"><span data-stu-id="56248-910">Connected via network</span></span> |
+| <span data-ttu-id="56248-911">Star</span><span class="sxs-lookup"><span data-stu-id="56248-911">Star</span></span>         | <span data-ttu-id="56248-912">SMD2-1317</span><span class="sxs-lookup"><span data-stu-id="56248-912">SMD2-1317</span></span> | <span data-ttu-id="56248-913">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-913">OPOS</span></span>      |                       |
+| <span data-ttu-id="56248-914">HP</span><span class="sxs-lookup"><span data-stu-id="56248-914">HP</span></span>           | <span data-ttu-id="56248-915">QT457AA</span><span class="sxs-lookup"><span data-stu-id="56248-915">QT457AA</span></span>   | <span data-ttu-id="56248-916">OPOS</span><span class="sxs-lookup"><span data-stu-id="56248-916">OPOS</span></span>      |                       |
 
-## <a name="troubleshooting"></a>Fejlfinding
-### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a>Modern POS kan registrere hardwarestationen på valglisten, men det kan ikke fuldføre parringen
+## <a name="troubleshooting"></a><span data-ttu-id="56248-917">Fejlfinding</span><span class="sxs-lookup"><span data-stu-id="56248-917">Troubleshooting</span></span>
+### <a name="modern-pos-can-detect-the-hardware-station-in-its-list-for-selection-but-it-cant-complete-the-pairing"></a><span data-ttu-id="56248-918">Modern POS kan registrere hardwarestationen på valglisten, men det kan ikke fuldføre parringen</span><span class="sxs-lookup"><span data-stu-id="56248-918">Modern POS can detect the hardware station in its list for selection, but it can’t complete the pairing</span></span>
 
-**Løsning:** Kontrollér følgende liste over mulige fejlpunkter:
+<span data-ttu-id="56248-919">**Løsning:** Kontrollér følgende liste over mulige fejlpunkter:</span><span class="sxs-lookup"><span data-stu-id="56248-919">**Solution:** Verify the following list of potential failure points:</span></span>
 
--   Den computer, der kører Modern POS har tillid til det certifikat, der bruges på den computer, der kører hardwarestationen.
-    -   For at kontrollere denne opsætning i en webbrowser, skal du gå til følgende URL-adresse: https://&lt;computernavn&gt;:&lt;portnummer&gt;/HardwareStation/ping.
-    -   Denne URL-adresse bruger et ping til at kontrollere, at du kan få adgang til computeren, og browseren angiver, om der er tillid til certifikatet. (F.eks. vises i Internet Explorer et låseikon på adresselinjen. Når du klikker på dette ikon, kontrollerer Internet Explorer, om der i øjeblikket er tillid til certifikatet. Du kan installere certifikatet på den lokale computer ved at få vist detaljer om det certifikat, der er vist.)
--   På den computer, der kører hardwarestationen, er den port, der bruges af hardwarestationen åben i firewall'en.
--   Hardwarestationen har installeret forhandlerkontooplysninger korrekt ved hjælp af værktøjet Installér forhandleroplysninger, der køres i slutningen af installationsprogrammet til hardwarestationen.
+-   <span data-ttu-id="56248-920">Den computer, der kører Modern POS har tillid til det certifikat, der bruges på den computer, der kører hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-920">The computer that is running Modern POS trusts the certificate that is used on the computer that runs the hardware station.</span></span>
+    -   <span data-ttu-id="56248-921">For at kontrollere denne opsætning i en webbrowser, skal du gå til følgende URL-adresse: https://&lt;computernavn&gt;:&lt;portnummer&gt;/HardwareStation/ping.</span><span class="sxs-lookup"><span data-stu-id="56248-921">To verify this setup, in a web browser, go to the following URL: https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.</span></span>
+    -   <span data-ttu-id="56248-922">Denne URL-adresse bruger et ping til at kontrollere, at du kan få adgang til computeren, og browseren angiver, om der er tillid til certifikatet.</span><span class="sxs-lookup"><span data-stu-id="56248-922">This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted.</span></span> <span data-ttu-id="56248-923">(F.eks. vises i Internet Explorer et låseikon på adresselinjen.</span><span class="sxs-lookup"><span data-stu-id="56248-923">(For example, in Internet Explorer, a lock icon appears in the address bar.</span></span> <span data-ttu-id="56248-924">Når du klikker på dette ikon, kontrollerer Internet Explorer, om der i øjeblikket er tillid til certifikatet.</span><span class="sxs-lookup"><span data-stu-id="56248-924">When you click this icon, Internet Explorer verifies whether the certificate is currently trusted.</span></span> <span data-ttu-id="56248-925">Du kan installere certifikatet på den lokale computer ved at få vist detaljer om det certifikat, der er vist.)</span><span class="sxs-lookup"><span data-stu-id="56248-925">You can install the certificate on the local computer by viewing the details of the certificate that is shown.)</span></span>
+-   <span data-ttu-id="56248-926">På den computer, der kører hardwarestationen, er den port, der bruges af hardwarestationen åben i firewall'en.</span><span class="sxs-lookup"><span data-stu-id="56248-926">On the computer that runs the hardware station, the port that will be used by the hardware station is opened in the firewall.</span></span>
+-   <span data-ttu-id="56248-927">Hardwarestationen har installeret forhandlerkontooplysninger korrekt ved hjælp af værktøjet Installér forhandleroplysninger, der køres i slutningen af installationsprogrammet til hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="56248-927">The hardware station has correctly installed merchant account information through the Install merchant information tool that runs at the end of the hardware station installer.</span></span>
 
-### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a>Modern POS kan ikke registrere hardwarestationen på valglisten
+### <a name="modern-pos-cant-detect-the-hardware-station-in-its-list-for-selection"></a><span data-ttu-id="56248-928">Modern POS kan ikke registrere hardwarestationen på valglisten</span><span class="sxs-lookup"><span data-stu-id="56248-928">Modern POS can’t detect the hardware station in its list for selection</span></span>
 
-**Løsning:** En af følgende faktorer kan forårsage dette problem:
+<span data-ttu-id="56248-929">**Løsning:** En af følgende faktorer kan forårsage dette problem:</span><span class="sxs-lookup"><span data-stu-id="56248-929">**Solution:** Either of the following factors can cause this issue:</span></span>
 
--   Hardwarestationen er endnu ikke blevet konfigureret korrekt i hovedsædet. Brug trinnene tidligere i dette emne til at kontrollere, at hardwarestationsprofilen og hardwarestationen er angivet korrekt.
--   Job til opdatering af kanalkonfigurationen har ikke været kørt. I dette tilfælde skal du køre job 1070 til kanalkonfiguration.
+-   <span data-ttu-id="56248-930">Hardwarestationen er endnu ikke blevet konfigureret korrekt i hovedsædet.</span><span class="sxs-lookup"><span data-stu-id="56248-930">The hardware station hasn’t been set up correctly in headquarters.</span></span> <span data-ttu-id="56248-931">Brug trinnene tidligere i dette emne til at kontrollere, at hardwarestationsprofilen og hardwarestationen er angivet korrekt.</span><span class="sxs-lookup"><span data-stu-id="56248-931">Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.</span></span>
+-   <span data-ttu-id="56248-932">Job til opdatering af kanalkonfigurationen har ikke været kørt.</span><span class="sxs-lookup"><span data-stu-id="56248-932">The jobs haven’t been run to update the channel configuration.</span></span> <span data-ttu-id="56248-933">I dette tilfælde skal du køre job 1070 til kanalkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="56248-933">In this case, run the 1070 job for channel configuration.</span></span>
 
-### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a>Modern POS afspejle ikke nye indstillinger for kontantskuffe
+### <a name="modern-pos-doesnt-reflect-new-cash-drawer-settings"></a><span data-ttu-id="56248-934">Modern POS afspejle ikke nye indstillinger for kontantskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-934">Modern POS doesn't reflect new cash drawer settings</span></span>
 
-**Løsning:** Luk den aktuelle batch. Ændringer til kontantskuffen opdateres ikke i Modern POS, før den aktuelle batch er lukket.
+<span data-ttu-id="56248-935">**Løsning:** Luk den aktuelle batch.</span><span class="sxs-lookup"><span data-stu-id="56248-935">**Solution:** Close the current batch.</span></span> <span data-ttu-id="56248-936">Ændringer til kontantskuffen opdateres ikke i Modern POS, før den aktuelle batch er lukket.</span><span class="sxs-lookup"><span data-stu-id="56248-936">Changes to the cash drawer aren't updated to Modern POS until the current batch is closed.</span></span>
 
-### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a>Modern POS rapporterer et problem med en eksterne detailenhed
+### <a name="modern-pos-is-reporting-an-issue-with-a-retail-peripheral"></a><span data-ttu-id="56248-937">Modern POS rapporterer et problem med en eksterne detailenhed</span><span class="sxs-lookup"><span data-stu-id="56248-937">Modern POS is reporting an issue with a retail peripheral</span></span>
 
-**Løsning:** Her er nogle typiske årsager til problemet:
+<span data-ttu-id="56248-938">**Løsning:** Her er nogle typiske årsager til problemet:</span><span class="sxs-lookup"><span data-stu-id="56248-938">**Solution:** Here are some typical causes of this issue:</span></span>
 
--   Kontrollér, at andre konfigurationsværktøjer til enhedsdrivere er lukket. Hvis disse værktøjer er åbne, kan de forhindre Modern POS eller hardwarestationen i at gøre krav på enheden.
--   Hvis den eksterne detailenhed deles med flere POS-enheder, skal du kontrollere, at den tilhører en af følgende kategorier:
-    -   Pengeskuffe
-    -   Printer til modtagelse
-    -   Betalingsterminal
+-   <span data-ttu-id="56248-939">Kontrollér, at andre konfigurationsværktøjer til enhedsdrivere er lukket.</span><span class="sxs-lookup"><span data-stu-id="56248-939">Make sure that other device driver configuration utilities are closed.</span></span> <span data-ttu-id="56248-940">Hvis disse værktøjer er åbne, kan de forhindre Modern POS eller hardwarestationen i at gøre krav på enheden.</span><span class="sxs-lookup"><span data-stu-id="56248-940">If these utilities are open, they might prevent Modern POS or the hardware station from claiming the device.</span></span>
+-   <span data-ttu-id="56248-941">Hvis den eksterne detailenhed deles med flere POS-enheder, skal du kontrollere, at den tilhører en af følgende kategorier:</span><span class="sxs-lookup"><span data-stu-id="56248-941">If the retail peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:</span></span>
+    -   <span data-ttu-id="56248-942">Pengeskuffe</span><span class="sxs-lookup"><span data-stu-id="56248-942">Cash drawer</span></span>
+    -   <span data-ttu-id="56248-943">Printer til modtagelse</span><span class="sxs-lookup"><span data-stu-id="56248-943">Receipt printer</span></span>
+    -   <span data-ttu-id="56248-944">Betalingsterminal</span><span class="sxs-lookup"><span data-stu-id="56248-944">Payment terminal</span></span>
 
-    Hvis den eksterne enhed ikke tilhører en af disse kategorier, er hardwarestationen ikke beregnet til at aktivere den eksterne enhed til at blive delt mellem flere POS-enheder.
--   Nogle gange kan enhedsdrivere forårsage, at de fælles kontrolobjekter (CCO'er) holder op med at fungere korrekt. Hvis en enhed er blevet installeret for nylig, men den ikke fungerer korrekt, eller du bemærker andre problemer, kan du ofte løse problemet ved at geninstallere CCO'erne. Du kan hente CCO'erne på <http://monroecs.com/oposccos_current.htm>.
--   Hvis du foretager hyppige ændringer af eksterne enheder under test eller fejlfinding, skal du muligvis nulstille IIS i stedet for at vente på, at cachen opdaterer sig selv. Følg disse trin for at nulstille IIS:
-    1.  Fra menuen **Start** skal du skrive **CMD**.
-    2.  I søgeresultaterne, skal du højreklikke på **Kommandoprompt**, og derefter klikke på **Kør som administrator**.
-    3.  I vinduet **Kommandoprompt** skal du skrive **iisreset/Restart** og derefter trykke på Enter.
-    4.  Når IIS er genstartet, skal du genstarte Modern POS.
--   Hvis du foretager hyppige ændringer af eksterne enheder, og hvis du også ofte starter og lukker POS-klienten, kan dllhost-processen fra en tidligere POS-session forstyrre den aktuelle session. I dette tilfælde kan en enhed ikke bruges, før du lukker DLL-værten (dynamic-link library), der styrer den forrige session. Følg disse trin for at lukke DLL-værten:
-    1.  Fra menuen **Start** skal du skrive **Jobliste**.
-    2.  I søgeresultaterne, skal du klikke på **Jobliste**.
-    3.  I Jobliste under fanen **Detaljer** skal du klikke på kolonneoverskriften, der hedder **Navn** at sortere tabellen alfabetisk efter navn.
-    4.  Rul ned, indtil du finder dllhost.exe.
-    5.  Vælg hver DLL-vært, og klik derefter på **Afslut job**.
-    6.  Når DLL-værterne er blevet lukket, genstarter du Modern POS.
+    <span data-ttu-id="56248-945">Hvis den eksterne enhed ikke tilhører en af disse kategorier, er hardwarestationen ikke beregnet til at aktivere den eksterne enhed til at blive delt mellem flere POS-enheder.</span><span class="sxs-lookup"><span data-stu-id="56248-945">If the peripheral doesn't belong to one of these categories, the hardware station isn't designed to enable the peripheral to be shared among multiple POS devices.</span></span>
+-   <span data-ttu-id="56248-946">Nogle gange kan enhedsdrivere forårsage, at de fælles kontrolobjekter (CCO'er) holder op med at fungere korrekt.</span><span class="sxs-lookup"><span data-stu-id="56248-946">Sometimes, device drivers can cause the common control objects (CCOs) to stop working correctly.</span></span> <span data-ttu-id="56248-947">Hvis en enhed er blevet installeret for nylig, men den ikke fungerer korrekt, eller du bemærker andre problemer, kan du ofte løse problemet ved at geninstallere CCO'erne.</span><span class="sxs-lookup"><span data-stu-id="56248-947">If a device has recently been installed, but it isn't working properly or you notice other issues, you can often resolve the issue by reinstalling the CCOs.</span></span> <span data-ttu-id="56248-948">Du kan hente CCO'erne på <http://monroecs.com/oposccos_current.htm>.</span><span class="sxs-lookup"><span data-stu-id="56248-948">To download the CCOs, visit <http://monroecs.com/oposccos_current.htm>.</span></span>
+-   <span data-ttu-id="56248-949">Hvis du foretager hyppige ændringer af eksterne enheder under test eller fejlfinding, skal du muligvis nulstille IIS i stedet for at vente på, at cachen opdaterer sig selv.</span><span class="sxs-lookup"><span data-stu-id="56248-949">If you make frequent peripheral changes during testing or troubleshooting, you might have to reset IIS instead of waiting for the cache to refresh itself.</span></span> <span data-ttu-id="56248-950">Følg disse trin for at nulstille IIS:</span><span class="sxs-lookup"><span data-stu-id="56248-950">To reset IIS, follow these steps:</span></span>
+    1.  <span data-ttu-id="56248-951">Fra menuen **Start** skal du skrive **CMD**.</span><span class="sxs-lookup"><span data-stu-id="56248-951">From the **Start** menu, type **CMD**.</span></span>
+    2.  <span data-ttu-id="56248-952">I søgeresultaterne, skal du højreklikke på **Kommandoprompt**, og derefter klikke på **Kør som administrator**.</span><span class="sxs-lookup"><span data-stu-id="56248-952">In the search results, right-click **Command prompt**, and then click **Run as administrator**.</span></span>
+    3.  <span data-ttu-id="56248-953">I vinduet **Kommandoprompt** skal du skrive **iisreset/Restart** og derefter trykke på Enter.</span><span class="sxs-lookup"><span data-stu-id="56248-953">In the **Command prompt** window, type **iisreset /Restart** and then press Enter.</span></span>
+    4.  <span data-ttu-id="56248-954">Når IIS er genstartet, skal du genstarte Modern POS.</span><span class="sxs-lookup"><span data-stu-id="56248-954">After IIS has restarted, restart Modern POS.</span></span>
+-   <span data-ttu-id="56248-955">Hvis du foretager hyppige ændringer af eksterne enheder, og hvis du også ofte starter og lukker POS-klienten, kan dllhost-processen fra en tidligere POS-session forstyrre den aktuelle session.</span><span class="sxs-lookup"><span data-stu-id="56248-955">While you're making frequent changes to peripheral devices, if you also frequently start and exit the POS client, the dllhost process from a previous POS session can interfere with the current session.</span></span> <span data-ttu-id="56248-956">I dette tilfælde kan en enhed ikke bruges, før du lukker DLL-værten (dynamic-link library), der styrer den forrige session.</span><span class="sxs-lookup"><span data-stu-id="56248-956">In this case, a device might not be usable until you close the dynamic-link library (DLL) host that is managing the previous session.</span></span> <span data-ttu-id="56248-957">Følg disse trin for at lukke DLL-værten:</span><span class="sxs-lookup"><span data-stu-id="56248-957">To close the DLL host, follow these steps:</span></span>
+    1.  <span data-ttu-id="56248-958">Fra menuen **Start** skal du skrive **Jobliste**.</span><span class="sxs-lookup"><span data-stu-id="56248-958">From the **Start** menu, type **Task manager**.</span></span>
+    2.  <span data-ttu-id="56248-959">I søgeresultaterne, skal du klikke på **Jobliste**.</span><span class="sxs-lookup"><span data-stu-id="56248-959">In the search results, click **Task manager**.</span></span>
+    3.  <span data-ttu-id="56248-960">I Jobliste under fanen **Detaljer** skal du klikke på kolonneoverskriften, der hedder **Navn** at sortere tabellen alfabetisk efter navn.</span><span class="sxs-lookup"><span data-stu-id="56248-960">In Task manager, on the **Details** tab, click the column header that is labeled **Name** to sort the table alphabetically by name.</span></span>
+    4.  <span data-ttu-id="56248-961">Rul ned, indtil du finder dllhost.exe.</span><span class="sxs-lookup"><span data-stu-id="56248-961">Scroll down until you find dllhost.exe.</span></span>
+    5.  <span data-ttu-id="56248-962">Vælg hver DLL-vært, og klik derefter på **Afslut job**.</span><span class="sxs-lookup"><span data-stu-id="56248-962">Select each DLL host, and then click **End task**.</span></span>
+    6.  <span data-ttu-id="56248-963">Når DLL-værterne er blevet lukket, genstarter du Modern POS.</span><span class="sxs-lookup"><span data-stu-id="56248-963">After the DLL hosts have been closed, restart Modern POS.</span></span>
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="56248-964">Se også</span><span class="sxs-lookup"><span data-stu-id="56248-964">See also</span></span>
 --------
 
-[Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md)
+[<span data-ttu-id="56248-965">Simulator for eksterne detailenheder</span><span class="sxs-lookup"><span data-stu-id="56248-965">Retail peripheral simulator</span></span>](dev-itpro/retail-peripheral-simulator.md)
 
 
 

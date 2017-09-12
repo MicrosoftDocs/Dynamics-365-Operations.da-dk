@@ -20,33 +20,33 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: efb184269c66483304af0589e4305a55ae08ce08
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f8c633e09103c45aff5614270a94a3bfe4fc5e20
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Udfoldning af styklisteversion
+# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="e51da-103">Udfoldning af styklisteversion</span><span class="sxs-lookup"><span data-stu-id="e51da-103">Explosion of a BOM version</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives en varedisponeringssituation, der involverer udfoldning af en styklisteversion.
+<span data-ttu-id="e51da-104">I denne artikel beskrives en varedisponeringssituation, der involverer udfoldning af en styklisteversion.</span><span class="sxs-lookup"><span data-stu-id="e51da-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
 
-En efterspørgselsudfoldning af en styklisteversion opretter en efterspørgsel efter de enkelte varer på styklistelinjen på en bestemt lokation og muligvis på et bestemt lagersted. På en lokationsspecifik stykliste kan der defineres et bestemt lagersted defineret for de enkelte styklistelinjer. Og for de enkelte styklistelinjer bestemmer varens dimensionsindstillinger, om lagerstedet er påkrævet. Den resulterende efterspørgsel for de enkelte styklistelinjer bliver derefter startpunktet for en ekstra efterspørgselsudfoldning. Dette behovsplanlægningsscenario omfatter følgende forhold:
+<span data-ttu-id="e51da-105">En efterspørgselsudfoldning af en styklisteversion opretter en efterspørgsel efter de enkelte varer på styklistelinjen på en bestemt lokation og muligvis på et bestemt lagersted.</span><span class="sxs-lookup"><span data-stu-id="e51da-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="e51da-106">På en lokationsspecifik stykliste kan der defineres et bestemt lagersted defineret for de enkelte styklistelinjer.</span><span class="sxs-lookup"><span data-stu-id="e51da-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="e51da-107">Og for de enkelte styklistelinjer bestemmer varens dimensionsindstillinger, om lagerstedet er påkrævet.</span><span class="sxs-lookup"><span data-stu-id="e51da-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="e51da-108">Den resulterende efterspørgsel for de enkelte styklistelinjer bliver derefter startpunktet for en ekstra efterspørgselsudfoldning.</span><span class="sxs-lookup"><span data-stu-id="e51da-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="e51da-109">Dette behovsplanlægningsscenario omfatter følgende forhold:</span><span class="sxs-lookup"><span data-stu-id="e51da-109">This master planning scenario involves the following conditions:</span></span>
 
--   Lokationsdimensionen er obligatorisk og skal angives ved posteringen.
--   Lokationsdimensionen er konsistent. Lokationen for efterspørgsel på lavere niveau er derfor den samme som lokationen for posteringen af den indledende efterspørgsel.
+-   <span data-ttu-id="e51da-110">Lokationsdimensionen er obligatorisk og skal angives ved posteringen.</span><span class="sxs-lookup"><span data-stu-id="e51da-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="e51da-111">Lokationsdimensionen er konsistent.</span><span class="sxs-lookup"><span data-stu-id="e51da-111">The site dimension is consistent.</span></span> <span data-ttu-id="e51da-112">Lokationen for efterspørgsel på lavere niveau er derfor den samme som lokationen for posteringen af den indledende efterspørgsel.</span><span class="sxs-lookup"><span data-stu-id="e51da-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
 
-I følgende grafik vises, hvordan efterspørgselsudfoldningen for behovsplanlægning forløber. ![Efterspørgselsudfoldning med styklisteversion](./media/multisitedemandexplosionscenariousingbomversion.gif)
+<span data-ttu-id="e51da-113">I følgende grafik vises, hvordan efterspørgselsudfoldningen for behovsplanlægning forløber.</span><span class="sxs-lookup"><span data-stu-id="e51da-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Efterspørgselsudfoldning med styklisteversion](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="e51da-115">Se også</span><span class="sxs-lookup"><span data-stu-id="e51da-115">See also</span></span>
 --------
 
-[Varedisponering – Sådan bestemmes styklisteversionen](master-plan-bom-version-determined.md)
+[<span data-ttu-id="e51da-116">Varedisponering – Sådan bestemmes styklisteversionen</span><span class="sxs-lookup"><span data-stu-id="e51da-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
-[Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+[<span data-ttu-id="e51da-117">Varedisponering og funktionen til flere lokationer</span><span class="sxs-lookup"><span data-stu-id="e51da-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
 
 

@@ -16,45 +16,45 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ce1b0ebe41974d3e176caee9ca7dd5e79676b401
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1bb1663b0f5d7e6a550e1ffd2ee2edf3771a13b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-advanced-rules-for-journals"></a>Oprette avancerede regler for kladder
+# <a name="create-advanced-rules-for-journals"></a><span data-ttu-id="42938-103">Oprette avancerede regler for kladder</span><span class="sxs-lookup"><span data-stu-id="42938-103">Create advanced rules for journals</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede regler for kladder. Dette omfatter opsætning af kladdekontrol og brugerbogføringsbegrænsninger. Proceduren bruger USMF-demodatafirmaet.
+<span data-ttu-id="42938-104">Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede regler for kladder.</span><span class="sxs-lookup"><span data-stu-id="42938-104">This procedure steps through creating advanced rules for journals.</span></span> <span data-ttu-id="42938-105">Dette omfatter opsætning af kladdekontrol og brugerbogføringsbegrænsninger.</span><span class="sxs-lookup"><span data-stu-id="42938-105">This includes setting up journal control and user posting restrictions.</span></span> <span data-ttu-id="42938-106">Proceduren bruger USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="42938-106">This procedure uses the USMF demo data company.</span></span>
 
 
-## <a name="set-up-journal-control"></a>Opsæt kladdekontrol.
-1. Gå til Finans > Kladdeopsætning > Kladdenavne.
-2. Find og vælg den ønskede post på listen.
-3. Klik på Kladdekontrol.
-4. Klik på Tilføj.
-5. Klik på rullelisten i feltet Regnskaber for at åbne opslaget.
-6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-8. Klik på Tilføj.
-9. Klik på rullelisten i feltet Kontostruktur for at åbne opslaget.
-10. Find og vælg den ønskede post på listen.
-11. Klik op linket i den valgte række på listen.
-12. Klik på rullelisten i feltet Segment for at åbne opslaget.
-13. Klik op linket i den valgte række på listen.
-14. Klik på rullelisten i feltet Fra-værdi for at åbne opslaget.
-15. Find og vælg den ønskede post på listen.
-16. Klik op linket i den valgte række på listen.
-17. Klik på rullelisten i feltet Til-værdi for at åbne opslaget.
-18. Find og vælg den ønskede post på listen.
-19. Klik op linket i den valgte række på listen.
+## <a name="set-up-journal-control"></a><span data-ttu-id="42938-107">Opsæt kladdekontrol.</span><span class="sxs-lookup"><span data-stu-id="42938-107">Set up journal control</span></span>
+1. <span data-ttu-id="42938-108">Gå til Finans > Kladdeopsætning > Kladdenavne.</span><span class="sxs-lookup"><span data-stu-id="42938-108">Go to General ledger > Journal setup > Journal names.</span></span>
+2. <span data-ttu-id="42938-109">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="42938-110">Klik på Kladdekontrol.</span><span class="sxs-lookup"><span data-stu-id="42938-110">Click Journal control.</span></span>
+4. <span data-ttu-id="42938-111">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="42938-111">Click Add.</span></span>
+5. <span data-ttu-id="42938-112">Klik på rullelisten i feltet Regnskaber for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="42938-112">In the Company accounts field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="42938-113">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-113">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="42938-114">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="42938-115">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="42938-115">Click Add.</span></span>
+9. <span data-ttu-id="42938-116">Klik på rullelisten i feltet Kontostruktur for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="42938-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="42938-117">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-117">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="42938-118">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="42938-119">Klik på rullelisten i feltet Segment for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="42938-119">In the Segment field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="42938-120">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-120">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="42938-121">Klik på rullelisten i feltet Fra-værdi for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="42938-121">In the From value field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="42938-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-122">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="42938-123">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-123">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="42938-124">Klik på rullelisten i feltet Til-værdi for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="42938-124">In the To value field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="42938-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-125">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="42938-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="42938-126">In the list, click the link in the selected row.</span></span>
 
-## <a name="set-up-posting-restrictions"></a>Angive bogføringsbegrænsninger
-1. Luk siden.
-2. Klik på Bogføringsbegrænsninger.
-3. Vælg Pr. brugergruppe i Hvordan vil du indstille bogføringsbegrænsninger?.
-4. Markér 'den gruppe, du vil tillade bogføring af dette kladdenavn' i træet.
-5. Klik på OK.
+## <a name="set-up-posting-restrictions"></a><span data-ttu-id="42938-127">Angive bogføringsbegrænsninger</span><span class="sxs-lookup"><span data-stu-id="42938-127">Set up posting restrictions</span></span>
+1. <span data-ttu-id="42938-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="42938-128">Close the page.</span></span>
+2. <span data-ttu-id="42938-129">Klik på Bogføringsbegrænsninger.</span><span class="sxs-lookup"><span data-stu-id="42938-129">Click Posting restrictions.</span></span>
+3. <span data-ttu-id="42938-130">Vælg Pr. brugergruppe i Hvordan vil du indstille bogføringsbegrænsninger?.</span><span class="sxs-lookup"><span data-stu-id="42938-130">In the How do you want to set up posting restrictions, select By user group.</span></span>
+4. <span data-ttu-id="42938-131">Markér 'den gruppe, du vil tillade bogføring af dette kladdenavn' i træet.</span><span class="sxs-lookup"><span data-stu-id="42938-131">In the tree, check 'the group that you want to allow posting for this journal name.'.</span></span>
+5. <span data-ttu-id="42938-132">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="42938-132">Click OK.</span></span>
 
 

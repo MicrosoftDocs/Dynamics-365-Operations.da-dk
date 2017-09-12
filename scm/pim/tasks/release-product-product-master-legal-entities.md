@@ -16,24 +16,24 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 81d7945d347f11d5d86f30edd1844ae4fe26e978
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: bda9066781df6350f4df5de0766d6728beced4d2
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="release-a-productproduct-master-to-legal-entities"></a>Frigive et produkt/en produktmaster til juridiske enheder
+# <a name="release-a-productproduct-master-to-legal-entities"></a><span data-ttu-id="13849-103">Frigive et produkt/en produktmaster til juridiske enheder</span><span class="sxs-lookup"><span data-stu-id="13849-103">Release a product/product master to legal entities</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til en eller flere juridiske enheder. Demodatafirmaet, der bruges til at oprette denne opgave, er USRT, og opgaven er beregnet til markedsføringschefen og produktdesigneren.
+<span data-ttu-id="13849-104">Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til en eller flere juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="13849-104">This procedure walks through how to release a product or product master into one or more legal entities.</span></span> <span data-ttu-id="13849-105">Demodatafirmaet, der bruges til at oprette denne opgave, er USRT, og opgaven er beregnet til markedsføringschefen og produktdesigneren.</span><span class="sxs-lookup"><span data-stu-id="13849-105">The demo data company used to create this task is USRT, and the task is intended for the Merchandising Manager and Product Designer.</span></span>
 
-1. Gå til Detail og handel > .. > Produkter efter kategori.
-2. Markér den valgte række på listen.
-3. Klik på Frigiv produkter.
-4. Klik på Næste.
-5. Find og vælg den ønskede post på listen.
-6. Klik på Næste.
-7. Klik på Finish.
+1. <span data-ttu-id="13849-106">Gå til Detail og handel > ..</span><span class="sxs-lookup"><span data-stu-id="13849-106">Go to Retail and commerce > ..</span></span> <span data-ttu-id="13849-107">> Produkter efter kategori.</span><span class="sxs-lookup"><span data-stu-id="13849-107">> Products by category.</span></span>
+2. <span data-ttu-id="13849-108">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="13849-108">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="13849-109">Klik på Frigiv produkter.</span><span class="sxs-lookup"><span data-stu-id="13849-109">Click Release products.</span></span>
+4. <span data-ttu-id="13849-110">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="13849-110">Click Next.</span></span>
+5. <span data-ttu-id="13849-111">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="13849-111">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="13849-112">Klik på Næste.</span><span class="sxs-lookup"><span data-stu-id="13849-112">Click Next.</span></span>
+7. <span data-ttu-id="13849-113">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="13849-113">Click Finish.</span></span>
 
 

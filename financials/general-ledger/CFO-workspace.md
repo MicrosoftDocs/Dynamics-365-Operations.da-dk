@@ -26,35 +26,35 @@ ms.lasthandoff: 08/03/2017
 
 ---
 
-# <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør
+# <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="338d5-103">Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør</span><span class="sxs-lookup"><span data-stu-id="338d5-103">Add financial dimensions to the CFO workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør (CFO), så de kan bruges til rapporter for finans- og budgetposteringer. Arbejdsområdet Regnskabsdirektør indeholder fanen **Oversigt** og fanen **Finansiel**. Rapporterne under disse to faner understøttes af to målpunkter: LedgerActivityMeasure og BudgetActivityMeasure. I opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 er der en relation mellem disse to målpunkter og DimensionCombinationEntity-enheden. Derfor kan du vælge dimensioner.
+<span data-ttu-id="338d5-104">I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør (CFO), så de kan bruges til rapporter for finans- og budgetposteringer.</span><span class="sxs-lookup"><span data-stu-id="338d5-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="338d5-105">Arbejdsområdet Regnskabsdirektør indeholder fanen **Oversigt** og fanen **Finansiel**.</span><span class="sxs-lookup"><span data-stu-id="338d5-105">The CFO workspace has an **Overview** tab and a **Financial** tab.</span></span> <span data-ttu-id="338d5-106">Rapporterne under disse to faner understøttes af to målpunkter: LedgerActivityMeasure og BudgetActivityMeasure.</span><span class="sxs-lookup"><span data-stu-id="338d5-106">The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="338d5-107">I opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 er der en relation mellem disse to målpunkter og DimensionCombinationEntity-enheden.</span><span class="sxs-lookup"><span data-stu-id="338d5-107">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="338d5-108">Derfor kan du vælge dimensioner.</span><span class="sxs-lookup"><span data-stu-id="338d5-108">Therefore, you can select dimensions.</span></span>
 
-1. I Finance and Operations skal du på siden **Enhedslager** opdatere målpunkterne **LedgerActivityMeasure** og **BudgetActivityMeasure**.
-2. Åbn Application Explorer i Microsoft Visual Studio, og søg efter **LedgerCFO**.
-3. Under **Resources** (Ressourcer) skal du åbne **LedgerCFOWorkspacePBIX**.
-4. Når ressourcen åbnes i Microsoft Power BI Desktop, skal du vælge **Get Data** (Hent Data). Vælg **SQL Server-database**, og vælg derefter **Connect** (Forbind).
-5. Angiv en navnet på serveren og **AxDW** som database. Vælg **DirectQuery**, og vælg derefter **OK**.
-6. Søg efter og vælg **LedgerActivityMeasure\_DimensionCombination**, og vælg derefter **Indlæs**.
+1. <span data-ttu-id="338d5-109">I Finance and Operations skal du på siden **Enhedslager** opdatere målpunkterne **LedgerActivityMeasure** og **BudgetActivityMeasure**.</span><span class="sxs-lookup"><span data-stu-id="338d5-109">In Finance and Operations, on the **Entity Store** page, update the **LedgerActivityMeasure** and the **BudgetActivityMeasure** measures.</span></span>
+2. <span data-ttu-id="338d5-110">Åbn Application Explorer i Microsoft Visual Studio, og søg efter **LedgerCFO**.</span><span class="sxs-lookup"><span data-stu-id="338d5-110">In Microsoft Visual Studio, open Application Explorer, and search for **LedgerCFO**.</span></span>
+3. <span data-ttu-id="338d5-111">Under **Resources** (Ressourcer) skal du åbne **LedgerCFOWorkspacePBIX**.</span><span class="sxs-lookup"><span data-stu-id="338d5-111">Under **Resources**, open **LedgerCFOWorkspacePBIX**.</span></span>
+4. <span data-ttu-id="338d5-112">Når ressourcen åbnes i Microsoft Power BI Desktop, skal du vælge **Get Data** (Hent Data). Vælg **SQL Server-database**, og vælg derefter **Connect** (Forbind).</span><span class="sxs-lookup"><span data-stu-id="338d5-112">When the resource opens in Microsoft Power BI desktop, select **Get Data**, select **SQL Server database**, and then select **Connect**.</span></span>
+5. <span data-ttu-id="338d5-113">Angiv en navnet på serveren og **AxDW** som database.</span><span class="sxs-lookup"><span data-stu-id="338d5-113">Enter the server name, and enter **AxDW** as the database.</span></span> <span data-ttu-id="338d5-114">Vælg **DirectQuery**, og vælg derefter **OK**.</span><span class="sxs-lookup"><span data-stu-id="338d5-114">Select **DirectQuery**, and then select **OK**.</span></span>
+6. <span data-ttu-id="338d5-115">Søg efter og vælg **LedgerActivityMeasure\_DimensionCombination**, og vælg derefter **Indlæs**.</span><span class="sxs-lookup"><span data-stu-id="338d5-115">Search for and select **LedgerActivityMeasure\_DimensionCombination**, and then select **Load**.</span></span>
 
     > [!TIP]
-    > I listen **Fields** (Felter) skal du omdøbe tabellen **Økonomiske dimensioner**, så den er nem at identificere.
+    > <span data-ttu-id="338d5-116">I listen **Fields** (Felter) skal du omdøbe tabellen **Økonomiske dimensioner**, så den er nem at identificere.</span><span class="sxs-lookup"><span data-stu-id="338d5-116">In the **Fields** list, rename the table **Financial dimensions**, so that it's easy to identify.</span></span>
 
-7. Vælg **Administrer relationer**, og vælg derefter **Ny**.
-8. Vælg i det første felt **Finansaktiviteter**, og vælg derefter **LedgerDimension**.
-9. I det andet felt skal du vælge **LedgerActivityMeasure\_DimensionCombination** (eller **Financial dimensions** (Økonomiske dimensioner), hvis du omdøbte tabellen). Vælg hovedet **DimensionCombinationRECID**.
-10. I feltet **Cardinality** (Kardinalitet) skal du vælge **Many to One** (Mange til en).
-11. Vælg værdien **Single** (Enkelt) for **Cross filter direction** (Tværgående filterretning).
-12. Vælg både **Aktivér denne relation** og **Antag referentiel integritet**, vælg **OK**, og vælg derefter **Luk**.
+7. <span data-ttu-id="338d5-117">Vælg **Administrer relationer**, og vælg derefter **Ny**.</span><span class="sxs-lookup"><span data-stu-id="338d5-117">Select **Manage Relationships**, and then select **New**.</span></span>
+8. <span data-ttu-id="338d5-118">Vælg i det første felt **Finansaktiviteter**, og vælg derefter **LedgerDimension**.</span><span class="sxs-lookup"><span data-stu-id="338d5-118">In the first field, select **General Ledger Activities**, and then select **LedgerDimension**.</span></span>
+9. <span data-ttu-id="338d5-119">I det andet felt skal du vælge **LedgerActivityMeasure\_DimensionCombination** (eller **Financial dimensions** (Økonomiske dimensioner), hvis du omdøbte tabellen).</span><span class="sxs-lookup"><span data-stu-id="338d5-119">In the second field, select **LedgerActivityMeasure\_DimensionCombination** (or **Financial dimensions** if you renamed the table).</span></span> <span data-ttu-id="338d5-120">Vælg hovedet **DimensionCombinationRECID**.</span><span class="sxs-lookup"><span data-stu-id="338d5-120">Select the  **DimensionCombinationRECID** header.</span></span>
+10. <span data-ttu-id="338d5-121">I feltet **Cardinality** (Kardinalitet) skal du vælge **Many to One** (Mange til en).</span><span class="sxs-lookup"><span data-stu-id="338d5-121">In the **Cardinality** field, select **Many to One**.</span></span>
+11. <span data-ttu-id="338d5-122">Vælg værdien **Single** (Enkelt) for **Cross filter direction** (Tværgående filterretning).</span><span class="sxs-lookup"><span data-stu-id="338d5-122">Change the **Cross filter direction** value to **Single**.</span></span>
+12. <span data-ttu-id="338d5-123">Vælg både **Aktivér denne relation** og **Antag referentiel integritet**, vælg **OK**, og vælg derefter **Luk**.</span><span class="sxs-lookup"><span data-stu-id="338d5-123">Select both **Make this relationship active** and **Assume referential integrity**, select **OK**, and then select **Close**.</span></span>
 
-    [![Oprette en relation](./media/Create-relationship.png)](./media/Create-relationship.png)
+    <span data-ttu-id="338d5-124">[![Oprette en relation](./media/Create-relationship.png)](./media/Create-relationship.png)</span><span class="sxs-lookup"><span data-stu-id="338d5-124">[![Create a relationship](./media/Create-relationship.png)](./media/Create-relationship.png)</span></span>
 
-13. I listen **Fields** (Felter) skal du nu kunne se tabellen og de tilgængelige økonomiske dimensioner. Træk de økonomiske dimensioner, du ønsker, til rapportniveaufilterne.
-14. Gem ændringerne.
-15. I applikationsobjekttræet (AOT) skal du højreklikke på projektet og derefter vælge **Synchronize** (Synkroniser).
-16. Opbyg projektet, og åbn derefter programmet for at se resultaterne.
+13. <span data-ttu-id="338d5-125">I listen **Fields** (Felter) skal du nu kunne se tabellen og de tilgængelige økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="338d5-125">In the **Fields** list, you should see the table and the available financial dimensions.</span></span> <span data-ttu-id="338d5-126">Træk de økonomiske dimensioner, du ønsker, til rapportniveaufilterne.</span><span class="sxs-lookup"><span data-stu-id="338d5-126">Drag the financial dimensions that you want to the report-level filters.</span></span>
+14. <span data-ttu-id="338d5-127">Gem ændringerne.</span><span class="sxs-lookup"><span data-stu-id="338d5-127">Save your changes.</span></span>
+15. <span data-ttu-id="338d5-128">I applikationsobjekttræet (AOT) skal du højreklikke på projektet og derefter vælge **Synchronize** (Synkroniser).</span><span class="sxs-lookup"><span data-stu-id="338d5-128">In the Application Object Tree (AOT), right-click your project, and then select **Synchronize**.</span></span>
+16. <span data-ttu-id="338d5-129">Opbyg projektet, og åbn derefter programmet for at se resultaterne.</span><span class="sxs-lookup"><span data-stu-id="338d5-129">Build your project, and then open the application to view the results.</span></span>
 
-    [![Fuldført arbejdsområde](./media/workspace.png)](./media/workspace.png)
+    <span data-ttu-id="338d5-130">[![Fuldført arbejdsområde](./media/workspace.png)](./media/workspace.png)</span><span class="sxs-lookup"><span data-stu-id="338d5-130">[![Completed workspace](./media/workspace.png)](./media/workspace.png)</span></span>
 

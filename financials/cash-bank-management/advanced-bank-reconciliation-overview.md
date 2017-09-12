@@ -19,36 +19,36 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 33150777222faa97af7488c59ab13cb0fb9e8e2c
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="advanced-bank-reconciliation-overview"></a>Oversigt over avanceret bankafstemning
+# <a name="advanced-bank-reconciliation-overview"></a><span data-ttu-id="378a5-104">Oversigt over avanceret bankafstemning</span><span class="sxs-lookup"><span data-stu-id="378a5-104">Advanced bank reconciliation overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives forløbet for den avancerede bankafstemningsproces. Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne.
+<span data-ttu-id="378a5-105">I denne artikel beskrives forløbet for den avancerede bankafstemningsproces.</span><span class="sxs-lookup"><span data-stu-id="378a5-105">This article describes the flow for the advanced bank reconciliation process.</span></span> <span data-ttu-id="378a5-106">Med funktionen Avanceret bankafstemning kan du importere bankkontoudtog, der kan afstemmes automatisk fra bankposteringerne.</span><span class="sxs-lookup"><span data-stu-id="378a5-106">The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.</span></span>
 
-Med funktionen til avanceret afstemning kan du importere bankkontoudtog. De importerede bankkontoudtog kan derefter afstemmes automatisk fra inden for bankposteringer. Her er trinene i arbejdsgangen til avanceret bankafstemning.
+<span data-ttu-id="378a5-107">Med funktionen til avanceret afstemning kan du importere bankkontoudtog.</span><span class="sxs-lookup"><span data-stu-id="378a5-107">The advanced bank reconciliation feature lets you import bank statements.</span></span> <span data-ttu-id="378a5-108">De importerede bankkontoudtog kan derefter afstemmes automatisk fra inden for bankposteringer.</span><span class="sxs-lookup"><span data-stu-id="378a5-108">The imported bank statement can then be automatically reconciled from within bank transactions.</span></span> <span data-ttu-id="378a5-109">Her er trinene i arbejdsgangen til avanceret bankafstemning.</span><span class="sxs-lookup"><span data-stu-id="378a5-109">Here are the steps in the advanced bank reconciliation flow.</span></span>
 
-1.  Konfigurer import af et kontoudtog.
-    -   Importer bankkontoudtog gennem dataenhedsstrukturen.
-    -   Tre typiske bankkontoudtogsformater er indbygget: ISO20022, BAI2 og MT940.
-    -   Funktionaliteten kan udvides til et vilkårligt format.
+1.  <span data-ttu-id="378a5-110">Konfigurer import af et kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="378a5-110">Set up a bank statement import.</span></span>
+    -   <span data-ttu-id="378a5-111">Importer bankkontoudtog gennem dataenhedsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="378a5-111">Import bank statements through the data entity framework.</span></span>
+    -   <span data-ttu-id="378a5-112">Tre typiske bankkontoudtogsformater er indbygget: ISO20022, BAI2 og MT940.</span><span class="sxs-lookup"><span data-stu-id="378a5-112">Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.</span></span>
+    -   <span data-ttu-id="378a5-113">Funktionaliteten kan udvides til et vilkårligt format.</span><span class="sxs-lookup"><span data-stu-id="378a5-113">The functionality can be extended to any format.</span></span>
 
-2.  Opret en nummerserie, der skal bruges til avanceret bankafstemning, og definer sammenholdningsregler for bankafstemning.
-    -   En sammenholdningsregel for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-banktransaktionslinjer under afstemningsprocessen. Du kan oprette mere end én sammenholdningsregel for at automatisere og optimere dine afstemningsprocesser, afhængigt af din forretningspraksis.
+2.  <span data-ttu-id="378a5-114">Opret en nummerserie, der skal bruges til avanceret bankafstemning, og definer sammenholdningsregler for bankafstemning.</span><span class="sxs-lookup"><span data-stu-id="378a5-114">Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.</span></span>
+    -   <span data-ttu-id="378a5-115">En sammenholdningsregel for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-banktransaktionslinjer under afstemningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="378a5-115">A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition bank transaction lines during the reconciliation process.</span></span> <span data-ttu-id="378a5-116">Du kan oprette mere end én sammenholdningsregel for at automatisere og optimere dine afstemningsprocesser, afhængigt af din forretningspraksis.</span><span class="sxs-lookup"><span data-stu-id="378a5-116">Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.</span></span>
 
-3.  Afstem bankkontoudtog med bankposteringer i Finance and Operations.
-    -   Udfør automatisk sammenholdning og oprettelse af kladder til afstemning.
-    -   Få vist bankkontoudtog og bankposteringer i Finance and Operations side om side.
-    -   Bogføre automatisk Finance and Operations-banktransaktioner, hvis de vises på bankens kontoudtog, men ikke i Finance and Operations.
-    -   Generere en afstemningsopgørelse.
+3.  <span data-ttu-id="378a5-117">Afstem bankkontoudtog med bankposteringer i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="378a5-117">Reconcile bank statements with Finance and Operations bank transactions.</span></span>
+    -   <span data-ttu-id="378a5-118">Udfør automatisk sammenholdning og oprettelse af kladder til afstemning.</span><span class="sxs-lookup"><span data-stu-id="378a5-118">Perform automatic matching and creation of reconciliation journals.</span></span>
+    -   <span data-ttu-id="378a5-119">Få vist bankkontoudtog og bankposteringer i Finance and Operations side om side.</span><span class="sxs-lookup"><span data-stu-id="378a5-119">View bank statements and Finance and Operations bank transactions side by side.</span></span>
+    -   <span data-ttu-id="378a5-120">Bogføre automatisk Finance and Operations-banktransaktioner, hvis de vises på bankens kontoudtog, men ikke i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="378a5-120">Automatically post Finance and Operations bank transactions if they appear on a bank statement but don't appear in Finance and Operations.</span></span>
+    -   <span data-ttu-id="378a5-121">Generere en afstemningsopgørelse.</span><span class="sxs-lookup"><span data-stu-id="378a5-121">Generate a reconciliation statement.</span></span>
 
 
 

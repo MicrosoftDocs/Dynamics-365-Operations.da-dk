@@ -16,116 +16,116 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1379c8c5bc6f0f80eaa0d9b3348f810631f7c737
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 873996c1cfc7861a48f83a85c2d644e4bc9db4c8
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-eu-sales-list-reporting"></a>Konfigurere rapportering for EU-listesystemet
+# <a name="set-up-eu-sales-list-reporting"></a><span data-ttu-id="9e385-103">Konfigurere rapportering for EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-103">Set up EU sales list reporting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering. Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Dynamics 365 for Finance and Operations Hjælp.
+<span data-ttu-id="9e385-104">Denne opgave gennemgår en oversigt over de forudsætninger, der er nødvendige for EU-listesystem-rapportering.</span><span class="sxs-lookup"><span data-stu-id="9e385-104">This task walks you through an overview of the prerequisites required for EU sales list reporting.</span></span> <span data-ttu-id="9e385-105">Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Dynamics 365 for Finance and Operations Hjælp.</span><span class="sxs-lookup"><span data-stu-id="9e385-105">For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.</span></span>
 
-Denne opgave gælder for alle europæiske lande/områder. Guiden er oprettet ved hjælp af demodatafirmaet DEMF og bruger derfor Tyskland som et EU-land/områdeeksempel. Guiden bruger også Portugal som et EU-land/områdeeksempel.
+<span data-ttu-id="9e385-106">Denne opgave gælder for alle europæiske lande/områder.</span><span class="sxs-lookup"><span data-stu-id="9e385-106">This task applies to all European countries/regions.</span></span> <span data-ttu-id="9e385-107">Guiden er oprettet ved hjælp af demodatafirmaet DEMF og bruger derfor Tyskland som et EU-land/områdeeksempel.</span><span class="sxs-lookup"><span data-stu-id="9e385-107">The guide was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="9e385-108">Guiden bruger også Portugal som et EU-land/områdeeksempel.</span><span class="sxs-lookup"><span data-stu-id="9e385-108">The guide also uses Portugal as an exemplar EU country/region.</span></span>
 
-Disse opgaver er beregnet til systemadministratorer.
+<span data-ttu-id="9e385-109">Disse opgaver er beregnet til systemadministratorer.</span><span class="sxs-lookup"><span data-stu-id="9e385-109">These tasks are intended for system administrators.</span></span>
 
 
-## <a name="import-electronic-reporting-configurations-for-eu-sales-list-reporting"></a>Importer konfiguration for elektronisk rapportering for rapportering til EU-listesystemet
-1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-2. Klik på Angiv som aktiv.
-3. Klik på Lagre.
-4. Klik på Åbn.
-5. Klik på Indstillinger i handlingsruden.
-6. Klik på Avanceret filtrering/sortering.
-7. Klik på Tilføj.
-8. Vælg "Konfigurationsnavn" i feltet Felt.
-9. Skriv '"EU-listesystem (DE)" i feltet Kriterier.
-10. Klik på OK.
-11. Klik på Importer.
-12. Klik på Ja.
-13. Klik på Indstillinger i handlingsruden.
-14. Klik på Avanceret filtrering/sortering.
-15. Klik på Nulstil.
-16. Klik på Tilføj.
-17. Vælg "Konfigurationsnavn" i feltet Felt.
-18. Skriv "EU-listesystemrapport efter rækker'" i feltet Kriterier.
-19. Klik på OK.
-20. Klik på Importer.
-21. Klik på Ja.
+## <a name="import-electronic-reporting-configurations-for-eu-sales-list-reporting"></a><span data-ttu-id="9e385-110">Importer konfiguration for elektronisk rapportering for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-110">Import electronic reporting configurations for EU sales list reporting</span></span>
+1. <span data-ttu-id="9e385-111">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="9e385-111">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="9e385-112">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="9e385-112">Click Set active.</span></span>
+3. <span data-ttu-id="9e385-113">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="9e385-113">Click Repositories.</span></span>
+4. <span data-ttu-id="9e385-114">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="9e385-114">Click Open.</span></span>
+5. <span data-ttu-id="9e385-115">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9e385-115">On the Action Pane, click Options.</span></span>
+6. <span data-ttu-id="9e385-116">Klik på Avanceret filtrering/sortering.</span><span class="sxs-lookup"><span data-stu-id="9e385-116">Click Advanced Filter/Sort.</span></span>
+7. <span data-ttu-id="9e385-117">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="9e385-117">Click Add.</span></span>
+8. <span data-ttu-id="9e385-118">Vælg "Konfigurationsnavn" i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="9e385-118">In the Field field, select 'Configuration name'.</span></span>
+9. <span data-ttu-id="9e385-119">Skriv '"EU-listesystem (DE)" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="9e385-119">In the Criteria field, type 'EU Sales list (DE)'.</span></span>
+10. <span data-ttu-id="9e385-120">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9e385-120">Click OK.</span></span>
+11. <span data-ttu-id="9e385-121">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="9e385-121">Click Import.</span></span>
+12. <span data-ttu-id="9e385-122">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="9e385-122">Click Yes.</span></span>
+13. <span data-ttu-id="9e385-123">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9e385-123">On the Action Pane, click Options.</span></span>
+14. <span data-ttu-id="9e385-124">Klik på Avanceret filtrering/sortering.</span><span class="sxs-lookup"><span data-stu-id="9e385-124">Click Advanced Filter/Sort.</span></span>
+15. <span data-ttu-id="9e385-125">Klik på Nulstil.</span><span class="sxs-lookup"><span data-stu-id="9e385-125">Click Reset.</span></span>
+16. <span data-ttu-id="9e385-126">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="9e385-126">Click Add.</span></span>
+17. <span data-ttu-id="9e385-127">Vælg "Konfigurationsnavn" i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="9e385-127">In the Field field, select 'Configuration name'.</span></span>
+18. <span data-ttu-id="9e385-128">Skriv "EU-listesystemrapport efter rækker'" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="9e385-128">In the Criteria field, type 'EU Sales list by rows report'.</span></span>
+19. <span data-ttu-id="9e385-129">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9e385-129">Click OK.</span></span>
+20. <span data-ttu-id="9e385-130">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="9e385-130">Click Import.</span></span>
+21. <span data-ttu-id="9e385-131">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="9e385-131">Click Yes.</span></span>
 
-## <a name="set-up-sales-tax-codes-for-eu-sales-list-reporting"></a>Opsætning af momskoder for rapportering til EU-listesystemet
-1. Gå til Moms > Indirekte skatter > Moms > Momskoder.
-2. Brug Quick Filter til at filtrere på feltet Momskode med værdien ''VAT19".
-3. Udvid sektionen Rapportopsætning.
-    * Kontroller, at sektionen Udelukket er angivet til Nej.  
-    * Du skal muligvis oplåse opgaveguiden for at ændre denne indstilling.  
+## <a name="set-up-sales-tax-codes-for-eu-sales-list-reporting"></a><span data-ttu-id="9e385-132">Opsætning af momskoder for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-132">Set up sales tax codes for EU sales list reporting</span></span>
+1. <span data-ttu-id="9e385-133">Gå til Moms > Indirekte skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="9e385-133">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+2. <span data-ttu-id="9e385-134">Brug Quick Filter til at filtrere på feltet Momskode med værdien ''VAT19".</span><span class="sxs-lookup"><span data-stu-id="9e385-134">Use the Quick Filter to filter on the Sales tax code field with a value of 'VAT19'.</span></span>
+3. <span data-ttu-id="9e385-135">Udvid sektionen Rapportopsætning.</span><span class="sxs-lookup"><span data-stu-id="9e385-135">Expand the Report setup section.</span></span>
+    * <span data-ttu-id="9e385-136">Kontroller, at sektionen Udelukket er angivet til Nej.</span><span class="sxs-lookup"><span data-stu-id="9e385-136">Verify that the Excluded selection is set to No.</span></span>  
+    * <span data-ttu-id="9e385-137">Du skal muligvis oplåse opgaveguiden for at ændre denne indstilling.</span><span class="sxs-lookup"><span data-stu-id="9e385-137">You may need to unlock the task guide to change this setting.</span></span>  
 
-## <a name="set-up-sales-tax-groups-for-eu-sales-list-reporting"></a>Opsætning af momsgrupper for rapportering til EU-listesystemet
-1. Gå til Moms > Indirekte skatter > Moms > Momsgrupper.
-2. Brug Quick Filter til at filtrere på feltet Momsgruppe med værdien ''AR-DOM".
-3. Klik på Rediger.
-4. Udvid sektionen Konfiguration.
-5. Marker den første række på listen.
-6. Marker afkrydsningsfeltet Momsfri.
-7. Marker den anden række på listen.
-8. Marker afkrydsningsfeltet Momsfri.
-9. Marker den tredje række på listen.
-10. Marker afkrydsningsfeltet Momsfri.
+## <a name="set-up-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="9e385-138">Opsætning af momsgrupper for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-138">Set up sales tax groups for EU sales list reporting</span></span>
+1. <span data-ttu-id="9e385-139">Gå til Moms > Indirekte skatter > Moms > Momsgrupper.</span><span class="sxs-lookup"><span data-stu-id="9e385-139">Go to Tax > Indirect taxes > Sales tax > Sales tax groups.</span></span>
+2. <span data-ttu-id="9e385-140">Brug Quick Filter til at filtrere på feltet Momsgruppe med værdien ''AR-DOM".</span><span class="sxs-lookup"><span data-stu-id="9e385-140">Use the Quick Filter to filter on the Sales tax group field with a value of 'AR-DOM'.</span></span>
+3. <span data-ttu-id="9e385-141">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="9e385-141">Click Edit.</span></span>
+4. <span data-ttu-id="9e385-142">Udvid sektionen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="9e385-142">Expand the Setup section.</span></span>
+5. <span data-ttu-id="9e385-143">Marker den første række på listen.</span><span class="sxs-lookup"><span data-stu-id="9e385-143">In the list, select the first row.</span></span>
+6. <span data-ttu-id="9e385-144">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="9e385-144">Select the Exempt check box.</span></span>
+7. <span data-ttu-id="9e385-145">Marker den anden række på listen.</span><span class="sxs-lookup"><span data-stu-id="9e385-145">In the list, select the second row.</span></span>
+8. <span data-ttu-id="9e385-146">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="9e385-146">Select the Exempt check box.</span></span>
+9. <span data-ttu-id="9e385-147">Marker den tredje række på listen.</span><span class="sxs-lookup"><span data-stu-id="9e385-147">In the list, select the third row.</span></span>
+10. <span data-ttu-id="9e385-148">Marker afkrydsningsfeltet Momsfri.</span><span class="sxs-lookup"><span data-stu-id="9e385-148">Select the Exempt check box.</span></span>
 
-## <a name="set-up-item-sales-tax-groups-for-eu-sales-list-reporting"></a>Opsætning af varemomsgrupper for rapportering til EU-listesystemet
-1. Gå til Moms > Indirekte skatter > Moms > Momsgrupper.
-2. Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''FULL".
-    * Kontroller, at Rapporteringstype er indstillet til "Vare".  
-    * Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.  
-3. Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''RED".
-    * Kontroller, at Rapporteringstype er indstillet til "Service".  
-    * Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.  
+## <a name="set-up-item-sales-tax-groups-for-eu-sales-list-reporting"></a><span data-ttu-id="9e385-149">Opsætning af varemomsgrupper for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-149">Set up item sales tax groups for EU sales list reporting</span></span>
+1. <span data-ttu-id="9e385-150">Gå til Moms > Indirekte skatter > Moms > Momsgrupper.</span><span class="sxs-lookup"><span data-stu-id="9e385-150">Go to Tax > Indirect taxes > Sales tax > Item sales tax groups.</span></span>
+2. <span data-ttu-id="9e385-151">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''FULL".</span><span class="sxs-lookup"><span data-stu-id="9e385-151">Use the Quick Filter to filter on the Item sales tax group field with a value of 'FULL '.</span></span>
+    * <span data-ttu-id="9e385-152">Kontroller, at Rapporteringstype er indstillet til "Vare".</span><span class="sxs-lookup"><span data-stu-id="9e385-152">Verify that the Reporting type selection is set to 'Item'.</span></span>  
+    * <span data-ttu-id="9e385-153">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="9e385-153">You may need to unlock the task guide to change the value in this field.</span></span>  
+3. <span data-ttu-id="9e385-154">Brug Quick Filter til at filtrere på feltet Varemomsgruppe med værdien ''RED".</span><span class="sxs-lookup"><span data-stu-id="9e385-154">Use the Quick Filter to filter on the Item sales tax group field with a value of 'RED '.</span></span>
+    * <span data-ttu-id="9e385-155">Kontroller, at Rapporteringstype er indstillet til "Service".</span><span class="sxs-lookup"><span data-stu-id="9e385-155">Verify that the Reporting type selection is set to 'Service'.</span></span>  
+    * <span data-ttu-id="9e385-156">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="9e385-156">You may need to unlock the task guide to change the value in this field.</span></span>  
 
-## <a name="set-up-countryregion-parameters-for-eu-sales-list-reporting"></a>Konfigurere parametre for land/område for rapportering til EU-listesystemet
-1. Gå til Skat > Opsætning > Moms > Land/områdeparametre.
-2. Klik på Ny.
-3. Skriv "PRT" i feltet Land/område.
-4. Skriv 'PT' i feltet Moms.
+## <a name="set-up-countryregion-parameters-for-eu-sales-list-reporting"></a><span data-ttu-id="9e385-157">Konfigurere parametre for land/område for rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-157">Set up country/region parameters for EU sales list reporting</span></span>
+1. <span data-ttu-id="9e385-158">Gå til Skat > Opsætning > Moms > Land/områdeparametre.</span><span class="sxs-lookup"><span data-stu-id="9e385-158">Go to Tax > Setup > Sales tax > Country/region parameters.</span></span>
+2. <span data-ttu-id="9e385-159">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9e385-159">Click New.</span></span>
+3. <span data-ttu-id="9e385-160">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="9e385-160">In the Country/region field, type 'PRT'.</span></span>
+4. <span data-ttu-id="9e385-161">Skriv 'PT' i feltet Moms.</span><span class="sxs-lookup"><span data-stu-id="9e385-161">In the Sales tax field, type 'PT'.</span></span>
 
-## <a name="create-tax-exempt-numbers"></a>Oprette SE-numre
-1. Gå til Skat > Opsætning > Moms > SE-numre.
-2. Klik på Ny.
-3. Skriv "PRT" i feltet Land/område.
-4. Skriv "PT12345" i feltet SE-nummer.
+## <a name="create-tax-exempt-numbers"></a><span data-ttu-id="9e385-162">Oprette SE-numre</span><span class="sxs-lookup"><span data-stu-id="9e385-162">Create tax exempt numbers</span></span>
+1. <span data-ttu-id="9e385-163">Gå til Skat > Opsætning > Moms > SE-numre.</span><span class="sxs-lookup"><span data-stu-id="9e385-163">Go to Tax > Setup > Sales tax > Tax exempt numbers.</span></span>
+2. <span data-ttu-id="9e385-164">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9e385-164">Click New.</span></span>
+3. <span data-ttu-id="9e385-165">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="9e385-165">In the Country/region field, type 'PRT'.</span></span>
+4. <span data-ttu-id="9e385-166">Skriv "PT12345" i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="9e385-166">In the Tax exempt number field, type 'PT12345'.</span></span>
 
-## <a name="set-up-eu-sales-list-reporting-parameters"></a>Konfigurere parametre for rapportering for EU-listesystemet
-1. Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.
-2. Klik på fanen EU-listesystem.
-3. Vælg Ja i feltet Overfør køb.
-4. Udvid sektionen Afrundingsregler.
-5. Indstil Afrundingsregel til "0.1".
-6. Vælg Ja i feltet Brug minimumværdi.
-7. Skriv "2" i feltet Antal decimaler.
-8. Udvid sektionen Elektronisk rapportering.
-9. Vælg "EU-listesystem (DE)" i feltet Filformattilknytning.
-10. Vælg "EU-listesystemrapport efter rækker" i feltet Filformattilknytning.
-11. Klik på fanen Egenskaber for land/område.
-    * Kontroller, at feltet Lande-/områdetype er angivet til "Indland" for landet/området DEU.  
-    * Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.  
-12. Klik på Ny.
-13. Skriv "PRT" i feltet Land/område.
-14. Skriv 'PT' i feltet Intrastat-kode.
-15. Vælg "EU" i feltet Lande-/områdetype.
-16. Klik på fanen Nummerserier.
-    * Kontroller, at der er angivet en nummerseriekode for referencen "EU-listesystem".  
+## <a name="set-up-eu-sales-list-reporting-parameters"></a><span data-ttu-id="9e385-167">Konfigurere parametre for rapportering for EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-167">Set up EU sales list reporting parameters</span></span>
+1. <span data-ttu-id="9e385-168">Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.</span><span class="sxs-lookup"><span data-stu-id="9e385-168">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+2. <span data-ttu-id="9e385-169">Klik på fanen EU-listesystem.</span><span class="sxs-lookup"><span data-stu-id="9e385-169">Click the EU sales list tab.</span></span>
+3. <span data-ttu-id="9e385-170">Vælg Ja i feltet Overfør køb.</span><span class="sxs-lookup"><span data-stu-id="9e385-170">Select Yes in the Transfer purchases field.</span></span>
+4. <span data-ttu-id="9e385-171">Udvid sektionen Afrundingsregler.</span><span class="sxs-lookup"><span data-stu-id="9e385-171">Expand the Rounding rules section.</span></span>
+5. <span data-ttu-id="9e385-172">Indstil Afrundingsregel til "0.1".</span><span class="sxs-lookup"><span data-stu-id="9e385-172">Set Rounding rule to '0.1'.</span></span>
+6. <span data-ttu-id="9e385-173">Vælg Ja i feltet Brug minimumværdi.</span><span class="sxs-lookup"><span data-stu-id="9e385-173">Select Yes in the Use minimum value field.</span></span>
+7. <span data-ttu-id="9e385-174">Skriv "2" i feltet Antal decimaler.</span><span class="sxs-lookup"><span data-stu-id="9e385-174">In the Number of decimals field, enter '2'.</span></span>
+8. <span data-ttu-id="9e385-175">Udvid sektionen Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="9e385-175">Expand the Electronic reporting section.</span></span>
+9. <span data-ttu-id="9e385-176">Vælg "EU-listesystem (DE)" i feltet Filformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="9e385-176">In the File format mapping field, select 'EU Sales list (DE)'.</span></span>
+10. <span data-ttu-id="9e385-177">Vælg "EU-listesystemrapport efter rækker" i feltet Filformattilknytning.</span><span class="sxs-lookup"><span data-stu-id="9e385-177">In the Report format mapping field, select 'EU Sales list by rows report'.</span></span>
+11. <span data-ttu-id="9e385-178">Klik på fanen Egenskaber for land/område.</span><span class="sxs-lookup"><span data-stu-id="9e385-178">Click the Country/region properties tab.</span></span>
+    * <span data-ttu-id="9e385-179">Kontroller, at feltet Lande-/områdetype er angivet til "Indland" for landet/området DEU.</span><span class="sxs-lookup"><span data-stu-id="9e385-179">Verify that the Country/region type field is set to 'Domestic' for Country/region DEU.</span></span>  
+    * <span data-ttu-id="9e385-180">Du skal muligvis oplåse opgaveguiden for at ændre værdien i dette felt.</span><span class="sxs-lookup"><span data-stu-id="9e385-180">You may need to unlock the task guide to change the value in this field.</span></span>  
+12. <span data-ttu-id="9e385-181">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9e385-181">Click New.</span></span>
+13. <span data-ttu-id="9e385-182">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="9e385-182">In the Country/region field, type 'PRT'.</span></span>
+14. <span data-ttu-id="9e385-183">Skriv 'PT' i feltet Intrastat-kode.</span><span class="sxs-lookup"><span data-stu-id="9e385-183">In the Intrastat code field, type 'PT'.</span></span>
+15. <span data-ttu-id="9e385-184">Vælg "EU" i feltet Lande-/områdetype.</span><span class="sxs-lookup"><span data-stu-id="9e385-184">In the Country/region type field, select 'EU'.</span></span>
+16. <span data-ttu-id="9e385-185">Klik på fanen Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="9e385-185">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="9e385-186">Kontroller, at der er angivet en nummerseriekode for referencen "EU-listesystem".</span><span class="sxs-lookup"><span data-stu-id="9e385-186">Verify that a Number sequence code is specified for the Reference 'EU sales list'.</span></span>  
 
-## <a name="create-a-customer-for-eu-sales-list-reporting-demo-purposes"></a>Oprette en kunde med henblik på demonstration af EU-rapportering til EU-listesystemet
-1. Gå til Debitor > Kunder > Alle kunder.
-2. Klik på Ny.
-3. Skriv "PRT-001" i feltet Kundekonto.
-4. Skriv 'En kunde fra Portugal' i feltet Navn.
-5. Vælg "10" i feltet Kundegruppe.
-6. Vælg "AR-DOM" i feltet Momsgruppe.
-7. Vælg "PT12345" i feltet SE-nummer.
-8. Skriv "PRT" i feltet Land/område.
-9. Klik på Gem.
+## <a name="create-a-customer-for-eu-sales-list-reporting-demo-purposes"></a><span data-ttu-id="9e385-187">Oprette en kunde med henblik på demonstration af EU-rapportering til EU-listesystemet</span><span class="sxs-lookup"><span data-stu-id="9e385-187">Create a customer for EU sales list reporting demo purposes</span></span>
+1. <span data-ttu-id="9e385-188">Gå til Debitor > Kunder > Alle kunder.</span><span class="sxs-lookup"><span data-stu-id="9e385-188">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="9e385-189">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9e385-189">Click New.</span></span>
+3. <span data-ttu-id="9e385-190">Skriv "PRT-001" i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="9e385-190">In the Customer account field, type 'PRT-001'.</span></span>
+4. <span data-ttu-id="9e385-191">Skriv 'En kunde fra Portugal' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9e385-191">In the Name field, type 'A customer from Portugal'.</span></span>
+5. <span data-ttu-id="9e385-192">Vælg "10" i feltet Kundegruppe.</span><span class="sxs-lookup"><span data-stu-id="9e385-192">In the Customer group field, select '10'.</span></span>
+6. <span data-ttu-id="9e385-193">Vælg "AR-DOM" i feltet Momsgruppe.</span><span class="sxs-lookup"><span data-stu-id="9e385-193">In the Sales tax group field, select 'AR-DOM'.</span></span>
+7. <span data-ttu-id="9e385-194">Vælg "PT12345" i feltet SE-nummer.</span><span class="sxs-lookup"><span data-stu-id="9e385-194">In the Tax exempt number field, select 'PT12345'.</span></span>
+8. <span data-ttu-id="9e385-195">Skriv "PRT" i feltet Land/område.</span><span class="sxs-lookup"><span data-stu-id="9e385-195">In the Country/region field, type 'PRT'.</span></span>
+9. <span data-ttu-id="9e385-196">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9e385-196">Click Save.</span></span>
 
 

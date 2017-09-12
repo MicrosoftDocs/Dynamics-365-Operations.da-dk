@@ -16,64 +16,64 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: b9afb85f1ca3a2e1930a74e1923d5ed3a8358711
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 62697a180709d0409926f7df47d44579b09eb862
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer-denmark"></a>Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor (Danmark)
+# <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer-denmark"></a><span data-ttu-id="b11b2-103">Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor (Danmark)</span><span class="sxs-lookup"><span data-stu-id="b11b2-103">Create and post a customer invoice for a public sector customer (Denmark)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure hjælper dig med at oprette og bogføre en salgsordrefaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering. 
+<span data-ttu-id="b11b2-104">Denne procedure hjælper dig med at oprette og bogføre en salgsordrefaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.</span><span class="sxs-lookup"><span data-stu-id="b11b2-104">This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing.</span></span> 
 
 
 
-Den blev oprettet ved hjælp af demodatafirmaet USMF med primær adresse for en juridisk enhed i Danmark.
+<span data-ttu-id="b11b2-105">Den blev oprettet ved hjælp af demodatafirmaet USMF med primær adresse for en juridisk enhed i Danmark.</span><span class="sxs-lookup"><span data-stu-id="b11b2-105">It was created using the demo data company USMF with a legal entity primary address in Denmark.</span></span>
 
 
 
-Det er den femte af seks procedurer, der viser den afsluttende proces til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer. Den er baseret på OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge. Du kan finde mindre forskelle for andre landespecifikke e-fakturaimplementeringer, som spansk eller italiensk, i tilgængelige WIKI-artikler.
+<span data-ttu-id="b11b2-106">Det er den femte af seks procedurer, der viser den afsluttende proces til oprettelse af e-fakturaer ved hjælp af elektroniske rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="b11b2-106">This is the fifth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations.</span></span> <span data-ttu-id="b11b2-107">Den er baseret på OIOUBL-e-fakturaen, der er fælles for Danmark, Østrig og Norge.</span><span class="sxs-lookup"><span data-stu-id="b11b2-107">It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway.</span></span> <span data-ttu-id="b11b2-108">Du kan finde mindre forskelle for andre landespecifikke e-fakturaimplementeringer, som spansk eller italiensk, i tilgængelige WIKI-artikler.</span><span class="sxs-lookup"><span data-stu-id="b11b2-108">In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.</span></span>
 
 
 
-Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Importere elektroniske rapporteringskonfigurationer for elektronisk OIOUBL-fakturering', 'Konfigurere elektronisk OIOUBL-fakturering' og 'Konfigurere en debitorkonto til elektronisk OIOUBL-fakturering'.
+<span data-ttu-id="b11b2-109">Før du kan udføre denne procedure, skal du udføre følgende procedurer: 'Importere elektroniske rapporteringskonfigurationer for elektronisk OIOUBL-fakturering', 'Konfigurere elektronisk OIOUBL-fakturering' og 'Konfigurere en debitorkonto til elektronisk OIOUBL-fakturering'.</span><span class="sxs-lookup"><span data-stu-id="b11b2-109">Before you can complete this procedure, you must complete the following procedures: ‘Import OIOUBL electronic invoicing electronic reporting configurations’, ‘Set up OIOUBL electronic invoicing’ and ‘Set up a customer account for OIOUBL electronic invoicing’.</span></span>
 
 
-## <a name="create-a-sales-order"></a>Oprette en salgsordre
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Kundekonto.
-    * Vælg en kunde, der er aktiveret til elektronisk fakturering.  
-4. Klik på OK.
-5. Vælg en visning for salgsordreoverskrift.
-6. Indtast eller vælg en værdi i feltet Kontakt.
-7. Skriv en værdi i feltet Debitorrekvisition.
-8. Skriv en værdi i feltet Kundereference.
-9. Udvid sektionen Konfiguration.
-10. Vælg en visning for salgsordrelinje.
-11. Indtast eller vælg en værdi i feltet Varenummer.
-    * Du kan bruge varenummer 'D0001'.  
-12. Klik på Gem.
+## <a name="create-a-sales-order"></a><span data-ttu-id="b11b2-110">Oprette en salgsordre</span><span class="sxs-lookup"><span data-stu-id="b11b2-110">Create a sales order</span></span>
+1. <span data-ttu-id="b11b2-111">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="b11b2-111">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="b11b2-112">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="b11b2-112">Click New.</span></span>
+3. <span data-ttu-id="b11b2-113">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="b11b2-113">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="b11b2-114">Vælg en kunde, der er aktiveret til elektronisk fakturering.</span><span class="sxs-lookup"><span data-stu-id="b11b2-114">Select a customer that is enabled for electronic invoicing.</span></span>  
+4. <span data-ttu-id="b11b2-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b11b2-115">Click OK.</span></span>
+5. <span data-ttu-id="b11b2-116">Vælg en visning for salgsordreoverskrift.</span><span class="sxs-lookup"><span data-stu-id="b11b2-116">Select a sales order header view.</span></span>
+6. <span data-ttu-id="b11b2-117">Indtast eller vælg en værdi i feltet Kontakt.</span><span class="sxs-lookup"><span data-stu-id="b11b2-117">In the Contact field, enter or select a value.</span></span>
+7. <span data-ttu-id="b11b2-118">Skriv en værdi i feltet Debitorrekvisition.</span><span class="sxs-lookup"><span data-stu-id="b11b2-118">In the Customer requisition field, type a value.</span></span>
+8. <span data-ttu-id="b11b2-119">Skriv en værdi i feltet Kundereference.</span><span class="sxs-lookup"><span data-stu-id="b11b2-119">In the Customer reference field, type a value.</span></span>
+9. <span data-ttu-id="b11b2-120">Udvid sektionen Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="b11b2-120">Expand the Setup section.</span></span>
+10. <span data-ttu-id="b11b2-121">Vælg en visning for salgsordrelinje.</span><span class="sxs-lookup"><span data-stu-id="b11b2-121">Select a sales order line view.</span></span>
+11. <span data-ttu-id="b11b2-122">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="b11b2-122">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="b11b2-123">Du kan bruge varenummer 'D0001'.</span><span class="sxs-lookup"><span data-stu-id="b11b2-123">You may use an item number 'D0001'.</span></span>  
+12. <span data-ttu-id="b11b2-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b11b2-124">Click Save.</span></span>
 
-## <a name="post-an-invoice-for-a-sales-order"></a>Bogføre en faktura for en salgsordre
-1. Klik på Faktura i handlingsruden.
-2. Klik på Faktura.
-3. Udvid sektionen Parametre.
-4. Vælg "Alle" i feltet Antal.
-5. Klik på OK.
-6. Klik på OK.
+## <a name="post-an-invoice-for-a-sales-order"></a><span data-ttu-id="b11b2-125">Bogføre en faktura for en salgsordre</span><span class="sxs-lookup"><span data-stu-id="b11b2-125">Post an invoice for a sales order</span></span>
+1. <span data-ttu-id="b11b2-126">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b11b2-126">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="b11b2-127">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="b11b2-127">Click Invoice.</span></span>
+3. <span data-ttu-id="b11b2-128">Udvid sektionen Parametre.</span><span class="sxs-lookup"><span data-stu-id="b11b2-128">Expand the Parameters section.</span></span>
+4. <span data-ttu-id="b11b2-129">Vælg "Alle" i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="b11b2-129">In the Quantity field, select 'All'.</span></span>
+5. <span data-ttu-id="b11b2-130">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b11b2-130">Click OK.</span></span>
+6. <span data-ttu-id="b11b2-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b11b2-131">Click OK.</span></span>
 
-## <a name="generate-oioubl-electronic-invoice"></a>Oprette elektronisk OIOUBL faktura
-1. Klik på Faktura.
-2. Klik på Faktura i handlingsruden.
-3. Klik på Send.
-4. Klik på Oprindelig.
+## <a name="generate-oioubl-electronic-invoice"></a><span data-ttu-id="b11b2-132">Oprette elektronisk OIOUBL faktura</span><span class="sxs-lookup"><span data-stu-id="b11b2-132">Generate OIOUBL electronic invoice</span></span>
+1. <span data-ttu-id="b11b2-133">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="b11b2-133">Click Invoice.</span></span>
+2. <span data-ttu-id="b11b2-134">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="b11b2-134">On the Action Pane, click Invoice.</span></span>
+3. <span data-ttu-id="b11b2-135">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="b11b2-135">Click Send.</span></span>
+4. <span data-ttu-id="b11b2-136">Klik på Oprindelig.</span><span class="sxs-lookup"><span data-stu-id="b11b2-136">Click Original.</span></span>
 
-## <a name="view-an-oioubl-electronic-invoice"></a>Se en elektronisk OIOUBL faktura
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Elektroniske rapporteringsjob.
-2. Klik på Vis filer.
-3. Klik på Åbn.
+## <a name="view-an-oioubl-electronic-invoice"></a><span data-ttu-id="b11b2-137">Se en elektronisk OIOUBL faktura</span><span class="sxs-lookup"><span data-stu-id="b11b2-137">View an OIOUBL electronic invoice</span></span>
+1. <span data-ttu-id="b11b2-138">Gå til Virksomhedsadministration > Elektronisk rapportering > Elektroniske rapporteringsjob.</span><span class="sxs-lookup"><span data-stu-id="b11b2-138">Go to Organization administration > Electronic reporting > Electronic reporting jobs.</span></span>
+2. <span data-ttu-id="b11b2-139">Klik på Vis filer.</span><span class="sxs-lookup"><span data-stu-id="b11b2-139">Click Show files.</span></span>
+3. <span data-ttu-id="b11b2-140">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="b11b2-140">Click Open.</span></span>
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Karantæneordrer"
 description: "I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for lager."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: ec3d54e8e08850cd81891e7058b2b787e08b0fb9
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 17dde4a4e3380beb98eeb71c719fb898b40a94f7
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="quarantine-orders"></a>Karantæneordrer
+# <a name="quarantine-orders"></a><span data-ttu-id="00070-103">Karantæneordrer</span><span class="sxs-lookup"><span data-stu-id="00070-103">Quarantine orders</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for lager. 
+<span data-ttu-id="00070-104">I denne artikel beskrives, hvordan karantæneordrer bruges til at blokere for lager.</span><span class="sxs-lookup"><span data-stu-id="00070-104">This article describes how quarantine orders are used to block inventory.</span></span>
 
-Karantæneordrer kan bruges til at blokere lager. Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager. Lager, der er blevet sat i karantæne, overføres til et karantænelagersted. **Bemærk!** Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.
+<span data-ttu-id="00070-105">Karantæneordrer kan bruges til at blokere lager.</span><span class="sxs-lookup"><span data-stu-id="00070-105">Quarantine orders can be used to block inventory.</span></span> <span data-ttu-id="00070-106">Det kan f.eks. være, at du vil sætte varer i karantæne af kvalitetskontrolmæssige årsager.</span><span class="sxs-lookup"><span data-stu-id="00070-106">For example, you might want to quarantine items for quality control reasons.</span></span> <span data-ttu-id="00070-107">Lager, der er blevet sat i karantæne, overføres til et karantænelagersted.</span><span class="sxs-lookup"><span data-stu-id="00070-107">Inventory that has been quarantined is transferred to a quarantine warehouse.</span></span> <span data-ttu-id="00070-108">**Bemærk!** Hvis du anvender avancerede lagerstyringsprocesser (i Lagerstedsstyring), bruges karantæneordrebehandling kun til retursalgsordrer.</span><span class="sxs-lookup"><span data-stu-id="00070-108">**Note:** If you're using advanced warehouse management processes (in Warehouse management), quarantine order processing is used only for return sales orders.</span></span>
 
-## <a name="quarantine-onhand-inventory-items"></a>Sæt disponible lagervarer i karantæne
-Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling. Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**. Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder. Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Microsoft Dynamics 365 for Finance and Operations. Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**. Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe. For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges. Du kan bruge karantæneordrestatusser til at planlægge processen.
+## <a name="quarantine-onhand-inventory-items"></a><span data-ttu-id="00070-109">Sæt disponible lagervarer i karantæne</span><span class="sxs-lookup"><span data-stu-id="00070-109">Quarantine onhand inventory items</span></span>
+<span data-ttu-id="00070-110">Når du sætter varer i karantæne, kan du enten oprette karantæneordrerne manuelt eller definere, at systemet skal oprette karantæneordrer automatisk under indgående behandling.</span><span class="sxs-lookup"><span data-stu-id="00070-110">When you quarantine items, you can either create the quarantine orders manually or set up the system to create the quarantine orders automatically during inbound processing.</span></span> <span data-ttu-id="00070-111">Du kan oprette karantæneordrer automatisk ved at vælge indstillingen **Karantænestyring** under fanen **Lagerpolitikker** på siden **Varemodelgrupper**.</span><span class="sxs-lookup"><span data-stu-id="00070-111">To create quarantine orders automatically, select the **Quarantine management** option on the **Inventory policies** tab on the **Item model groups** page.</span></span> <span data-ttu-id="00070-112">Du skal også angive et standardkarantænelagersted i feltet **Karantænelagersted** for de modtagende lagersteder.</span><span class="sxs-lookup"><span data-stu-id="00070-112">You must also specify a default quarantine warehouse in the **Quarantine warehouse** field for the receiving warehouses.</span></span> <span data-ttu-id="00070-113">Når den fysisk disponible lagerbeholdning bliver registreret i en indkøbsordre eller produktionsordre, flyttes varerne i karantæne automatisk til et karantænelagersted i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="00070-113">When the physically on-hand inventory is recorded in a purchase order or production order, quarantined items are automatically moved to a quarantine warehouse in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="00070-114">Denne bevægelse opstår, fordi status for karantæneordren ændres til **Startet**.</span><span class="sxs-lookup"><span data-stu-id="00070-114">This movement occurs because the status of the quarantine order is changed to **Started**.</span></span> <span data-ttu-id="00070-115">Når du opretter karantæneordrer manuelt, behøver varen ikke at være sat op til karantænestyring i den tilknyttede varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="00070-115">When you create quarantine orders manually, the item doesn't have to be set up for quarantine management in the associated item model group.</span></span> <span data-ttu-id="00070-116">For denne proces skal du angive den disponible lagerbeholdning, der skulle sættes i karantæne, og det karantænelagersted, der skal bruges.</span><span class="sxs-lookup"><span data-stu-id="00070-116">For this process, you must specify the on-hand inventory that should be quarantined and the quarantine warehouse that should be used.</span></span> <span data-ttu-id="00070-117">Du kan bruge karantæneordrestatusser til at planlægge processen.</span><span class="sxs-lookup"><span data-stu-id="00070-117">You can use the quarantine order statuses to help plan the process.</span></span>
 
-## <a name="quarantine-order-statuses"></a>Karantæneordrens status
-Karantæneordrer kan have følgende statusværdier:
+## <a name="quarantine-order-statuses"></a><span data-ttu-id="00070-118">Karantæneordrens status</span><span class="sxs-lookup"><span data-stu-id="00070-118">Quarantine order statuses</span></span>
+<span data-ttu-id="00070-119">Karantæneordrer kan have følgende statusværdier:</span><span class="sxs-lookup"><span data-stu-id="00070-119">Quarantine orders can have the following statuses:</span></span>
 
--   Oprettet
--   Startet
--   Færdigmeldt
--   Afsluttet
+-   <span data-ttu-id="00070-120">Oprettet</span><span class="sxs-lookup"><span data-stu-id="00070-120">Created</span></span>
+-   <span data-ttu-id="00070-121">Startet</span><span class="sxs-lookup"><span data-stu-id="00070-121">Started</span></span>
+-   <span data-ttu-id="00070-122">Færdigmeldt</span><span class="sxs-lookup"><span data-stu-id="00070-122">Reported as finished</span></span>
+-   <span data-ttu-id="00070-123">Afsluttet</span><span class="sxs-lookup"><span data-stu-id="00070-123">Ended</span></span>
 
-### <a name="created"></a>Oprettet
+### <a name="created"></a><span data-ttu-id="00070-124">Oprettet</span><span class="sxs-lookup"><span data-stu-id="00070-124">Created</span></span>
 
-Når en karantæneordre er oprettet manuelt, men varen endnu ikke er på karantænelagerstedet, har karantæneordren statussen **Oprettet**. Der oprettes to lagerposteringer. Én transaktion er en afgangspostering, der kan have statussen **I bestilling**, **Reserveret fysisk** eller **Plukket**. Den anden transaktion er en tilgangspostering, der kan have statussen **Bestilt** eller **Registreret** på karantænelagerstedet. Du kan reservere, plukke og registrere opdateringer til lageret ved hjælp af de sædvanlige processer.
+<span data-ttu-id="00070-125">Når en karantæneordre er oprettet manuelt, men varen endnu ikke er på karantænelagerstedet, har karantæneordren statussen **Oprettet**.</span><span class="sxs-lookup"><span data-stu-id="00070-125">When a quarantine order has been created manually, but the item isn't yet in the quarantine warehouse, the quarantine order has a status of **Created**.</span></span> <span data-ttu-id="00070-126">Der oprettes to lagerposteringer.</span><span class="sxs-lookup"><span data-stu-id="00070-126">Two inventory transactions are generated.</span></span> <span data-ttu-id="00070-127">Én transaktion er en afgangspostering, der kan have statussen **I bestilling**, **Reserveret fysisk** eller **Plukket**.</span><span class="sxs-lookup"><span data-stu-id="00070-127">One transaction is an issue transaction that can have a status of **On order**, **Reserved physical**, or **Picked**.</span></span> <span data-ttu-id="00070-128">Den anden transaktion er en tilgangspostering, der kan have statussen **Bestilt** eller **Registreret** på karantænelagerstedet.</span><span class="sxs-lookup"><span data-stu-id="00070-128">The other transaction is a receipt transaction that can have a status of **Ordered** or **Registered** at the quarantine warehouse.</span></span> <span data-ttu-id="00070-129">Du kan reservere, plukke og registrere opdateringer til lageret ved hjælp af de sædvanlige processer.</span><span class="sxs-lookup"><span data-stu-id="00070-129">You can reserve, pick, and register updates to the inventory by using the usual processes.</span></span>
 
-### <a name="started"></a>Startet
+### <a name="started"></a><span data-ttu-id="00070-130">Startet</span><span class="sxs-lookup"><span data-stu-id="00070-130">Started</span></span>
 
-Når en karantæneordren har statussen **Startet**, overføres lageret fra det almindelige lagersted til karantænelagerstedet, og der genereres to lagerposteringer. Den ene postering har statussen **Trukket**, og den anden postering har statussen **Modtaget**. Samtidig oprettes der to lagertransaktioner til håndtering af tilbageflytningen. Disse transaktioner dateres ikke. Den ene postering har statussen **Reserveret fysisk**, og den anden postering har statussen **Bestilt**.
+<span data-ttu-id="00070-131">Når en karantæneordren har statussen **Startet**, overføres lageret fra det almindelige lagersted til karantænelagerstedet, og der genereres to lagerposteringer.</span><span class="sxs-lookup"><span data-stu-id="00070-131">When a quarantine order has a status of **Started**, the inventory is transferred from the regular warehouse to the quarantine warehouse, and two inventory transactions are generated.</span></span> <span data-ttu-id="00070-132">Den ene postering har statussen **Trukket**, og den anden postering har statussen **Modtaget**.</span><span class="sxs-lookup"><span data-stu-id="00070-132">One transaction has a status of **Deducted**, and the other transaction has a status of **Received**.</span></span> <span data-ttu-id="00070-133">Samtidig oprettes der to lagertransaktioner til håndtering af tilbageflytningen.</span><span class="sxs-lookup"><span data-stu-id="00070-133">At the same time, two inventory transactions are created to handle the return transfer.</span></span> <span data-ttu-id="00070-134">Disse transaktioner dateres ikke.</span><span class="sxs-lookup"><span data-stu-id="00070-134">These transactions aren't dated.</span></span> <span data-ttu-id="00070-135">Den ene postering har statussen **Reserveret fysisk**, og den anden postering har statussen **Bestilt**.</span><span class="sxs-lookup"><span data-stu-id="00070-135">One transaction has a status of **Reserved physical**, and the other transaction has a status of **Ordered**.</span></span>
 
-### <a name="reported-as-finished"></a>Færdigmeldt
+### <a name="reported-as-finished"></a><span data-ttu-id="00070-136">Færdigmeldt</span><span class="sxs-lookup"><span data-stu-id="00070-136">Reported as finished</span></span>
 
-Hvis du klikker på **Færdigmeld**, kan du færdigmelde en igangsat karantæneordre. Varen frigives fra karantæne, men den er endnu ikke flyttet tilbage til det almindelige lagersted. Flytningen tilbage til det almindelige lagersted kan behandles via en varemodtagelseskladde, som kan initialiseres under færdigmeldingsprocessen.
+<span data-ttu-id="00070-137">Hvis du klikker på **Færdigmeld**, kan du færdigmelde en igangsat karantæneordre.</span><span class="sxs-lookup"><span data-stu-id="00070-137">By clicking **Report as finished**, you can report a started quarantine order as finished.</span></span> <span data-ttu-id="00070-138">Varen frigives fra karantæne, men den er endnu ikke flyttet tilbage til det almindelige lagersted.</span><span class="sxs-lookup"><span data-stu-id="00070-138">The item is released from quarantine but isn't yet moved back to the regular warehouse.</span></span> <span data-ttu-id="00070-139">Flytningen tilbage til det almindelige lagersted kan behandles via en varemodtagelseskladde, som kan initialiseres under færdigmeldingsprocessen.</span><span class="sxs-lookup"><span data-stu-id="00070-139">The movement back to the regular warehouse can be procesed via an Item arrival journal that can be initialized during the Report as finished process.</span></span>
 
-### <a name="ended"></a>Afsluttet
+### <a name="ended"></a><span data-ttu-id="00070-140">Afsluttet</span><span class="sxs-lookup"><span data-stu-id="00070-140">Ended</span></span>
 
-Når en karantæneordre afsluttes, flyttes varen fra karantænelagerstedet tilbage til det almindelige lagersted. Status for varebevægelsen er angivet til **Solgt** på karantænelagerstedet og **Købt** på det almindelige lagersted.
+<span data-ttu-id="00070-141">Når en karantæneordre afsluttes, flyttes varen fra karantænelagerstedet tilbage til det almindelige lagersted.</span><span class="sxs-lookup"><span data-stu-id="00070-141">When a quarantine order is ended, the item is moved from the quarantine warehouse back to the regular warehouse.</span></span> <span data-ttu-id="00070-142">Status for varebevægelsen er angivet til **Solgt** på karantænelagerstedet og **Købt** på det almindelige lagersted.</span><span class="sxs-lookup"><span data-stu-id="00070-142">The status of the item transaction is set to **Sold** at the quarantine warehouse and **Purchased** at the regular warehouse.</span></span>
 
-## <a name="quarantine-order-scrap"></a>Kassering af karantæneordre
-Du kan kassere lageret som en del af karantæneordreprocessen. Når du behandler en kassering, indstilles lagerstatus til **Solgt** med en afgangspostering fra karantænelagerstedet.
+## <a name="quarantine-order-scrap"></a><span data-ttu-id="00070-143">Kassering af karantæneordre</span><span class="sxs-lookup"><span data-stu-id="00070-143">Quarantine order scrap</span></span>
+<span data-ttu-id="00070-144">Du kan kassere lageret som en del af karantæneordreprocessen.</span><span class="sxs-lookup"><span data-stu-id="00070-144">As part of the quarantine order process, you can scrap inventory.</span></span> <span data-ttu-id="00070-145">Når du behandler en kassering, indstilles lagerstatus til **Solgt** med en afgangspostering fra karantænelagerstedet.</span><span class="sxs-lookup"><span data-stu-id="00070-145">When you process scrap, the status of the inventory will be set to **Sold** by an issue transaction from the quarantine warehouse.</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="00070-146">Se også</span><span class="sxs-lookup"><span data-stu-id="00070-146">See also</span></span>
 --------
 
-[Lagerspærring](inventory-blocking.md)
-
-
-
+[<span data-ttu-id="00070-147">Lagerspærring</span><span class="sxs-lookup"><span data-stu-id="00070-147">Inventory blocking</span></span>](inventory-blocking.md)
 

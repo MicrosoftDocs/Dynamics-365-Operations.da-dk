@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 23541bb2d82b552cdc9e0ada4aa4ec473f498d0b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 49d5242168cd43e78dd4b0c63da363f91f680904
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-payable"></a>Centraliserede kreditorbetalinger
+# <a name="centralized-payments-for-accounts-payable"></a><span data-ttu-id="f28a3-105">Centraliserede kreditorbetalinger</span><span class="sxs-lookup"><span data-stu-id="f28a3-105">Centralized payments for Accounts payable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
+<span data-ttu-id="f28a3-106">Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger.</span><span class="sxs-lookup"><span data-stu-id="f28a3-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="f28a3-107">Derfor skal de samme betalinger ikke angives i flere juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="f28a3-107">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="f28a3-108">Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.</span><span class="sxs-lookup"><span data-stu-id="f28a3-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Derudover kan organisationen spare tid, fordi betalingsprocessen er strømlinet.
+<span data-ttu-id="f28a3-109">Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger.</span><span class="sxs-lookup"><span data-stu-id="f28a3-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="f28a3-110">Derfor skal de samme betalinger ikke angives i flere juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="f28a3-110">Therefore, the same payments don't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="f28a3-111">Derudover kan organisationen spare tid, fordi betalingsprocessen er strømlinet.</span><span class="sxs-lookup"><span data-stu-id="f28a3-111">Additionally, the organization saves time, because the payment process is streamlined.</span></span>
 
-I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne kreditorfakturaer. Betalinger for alle juridiske driftsenheder genereres fra én juridisk enhed, der kaldes betalingens juridiske enhed. Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer. Du kan angive, hvilken juridisk enhed i organisationen der skal modtage posteringerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabatposteringer, der er relateret til en betaling for hele virksomheden, skal håndteres. 
+<span data-ttu-id="f28a3-112">I organisationer med centraliserede betalinger er der mange juridiske driftsenheder, og hver juridisk driftsenhed administrerer sine egne kreditorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="f28a3-112">In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices.</span></span> <span data-ttu-id="f28a3-113">Betalinger for alle juridiske driftsenheder genereres fra én juridisk enhed, der kaldes betalingens juridiske enhed.</span><span class="sxs-lookup"><span data-stu-id="f28a3-113">Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="f28a3-114">Under udligningsprocessen oprettes de gældende skyldig til- og skyldig fra-posteringer.</span><span class="sxs-lookup"><span data-stu-id="f28a3-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="f28a3-115">Du kan angive, hvilken juridisk enhed i organisationen der skal modtage posteringerne af den realiserede gevinst eller det realiserede tab, og hvordan kasserabatposteringer, der er relateret til en betaling for hele virksomheden, skal håndteres.</span><span class="sxs-lookup"><span data-stu-id="f28a3-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled.</span></span> 
 
-I følgende eksempler vises, hvordan bogføring håndteres i forskellige scenarier. Følgende konfiguration antages for alle disse eksempler:
+<span data-ttu-id="f28a3-116">I følgende eksempler vises, hvordan bogføring håndteres i forskellige scenarier.</span><span class="sxs-lookup"><span data-stu-id="f28a3-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="f28a3-117">Følgende konfiguration antages for alle disse eksempler:</span><span class="sxs-lookup"><span data-stu-id="f28a3-117">The following configuration is assumed for all these examples:</span></span>
 
--   De juridiske enheder er Fabrikam, Fabrikam East og Fabrikam West. Betalinger sker fra Fabrikam.
--   Feltet **Bogfør kasserabat** på siden **Mellemregning** er angivet til **Juridisk enhed for fakturaen**.
--   Feltet **Bogfør valutakurstab eller -vinding** på siden **Mellemregning** er angivet til **Juridisk enhed for betalingen**.
--   Kreditoren Fourth Coffee er oprettet som kreditor i de enkelte juridiske enheder. Kreditorerne fra de forskellige juridiske enheder er identificeret som den samme kreditor, fordi de deler det samme globale adresseadressekartoteks-id.
+-   <span data-ttu-id="f28a3-118">De juridiske enheder er Fabrikam, Fabrikam East og Fabrikam West.</span><span class="sxs-lookup"><span data-stu-id="f28a3-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="f28a3-119">Betalinger sker fra Fabrikam.</span><span class="sxs-lookup"><span data-stu-id="f28a3-119">Payments are made from Fabrikam.</span></span>
+-   <span data-ttu-id="f28a3-120">Feltet **Bogfør kasserabat** på siden **Mellemregning** er angivet til **Juridisk enhed for fakturaen**.</span><span class="sxs-lookup"><span data-stu-id="f28a3-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="f28a3-121">Feltet **Bogfør valutakurstab eller -vinding** på siden **Mellemregning** er angivet til **Juridisk enhed for betalingen**.</span><span class="sxs-lookup"><span data-stu-id="f28a3-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="f28a3-122">Kreditoren Fourth Coffee er oprettet som kreditor i de enkelte juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="f28a3-122">The vendor Fourth Coffee is set up as a vendor in each legal entity.</span></span> <span data-ttu-id="f28a3-123">Kreditorerne fra de forskellige juridiske enheder er identificeret som den samme kreditor, fordi de deler det samme globale adresseadressekartoteks-id.</span><span class="sxs-lookup"><span data-stu-id="f28a3-123">The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.</span></span>
 
-| Register-id | Kreditorkonto | Navn          | Juridisk enhed  |
+| <span data-ttu-id="f28a3-124">Register-id</span><span class="sxs-lookup"><span data-stu-id="f28a3-124">Directory ID</span></span> | <span data-ttu-id="f28a3-125">Kreditorkonto</span><span class="sxs-lookup"><span data-stu-id="f28a3-125">Vendor account</span></span> | <span data-ttu-id="f28a3-126">Navn</span><span class="sxs-lookup"><span data-stu-id="f28a3-126">Name</span></span>          | <span data-ttu-id="f28a3-127">Juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="f28a3-127">Legal entity</span></span>  |
 |--------------|----------------|---------------|---------------|
-| 1050         | 3004           | Fourth Coffee | Fabrikam      |
-| 1050         | 100            | Fourth Coffee | Fabrikam East |
-| 1050         | 3004           | Fourth Coffee | Fabrikam West |
+| <span data-ttu-id="f28a3-128">1050</span><span class="sxs-lookup"><span data-stu-id="f28a3-128">1050</span></span>         | <span data-ttu-id="f28a3-129">3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-129">3004</span></span>           | <span data-ttu-id="f28a3-130">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="f28a3-130">Fourth Coffee</span></span> | <span data-ttu-id="f28a3-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="f28a3-131">Fabrikam</span></span>      |
+| <span data-ttu-id="f28a3-132">1050</span><span class="sxs-lookup"><span data-stu-id="f28a3-132">1050</span></span>         | <span data-ttu-id="f28a3-133">100</span><span class="sxs-lookup"><span data-stu-id="f28a3-133">100</span></span>            | <span data-ttu-id="f28a3-134">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="f28a3-134">Fourth Coffee</span></span> | <span data-ttu-id="f28a3-135">Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="f28a3-135">Fabrikam East</span></span> |
+| <span data-ttu-id="f28a3-136">1050</span><span class="sxs-lookup"><span data-stu-id="f28a3-136">1050</span></span>         | <span data-ttu-id="f28a3-137">3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-137">3004</span></span>           | <span data-ttu-id="f28a3-138">Fourth Coffee</span><span class="sxs-lookup"><span data-stu-id="f28a3-138">Fourth Coffee</span></span> | <span data-ttu-id="f28a3-139">Fabrikam West</span><span class="sxs-lookup"><span data-stu-id="f28a3-139">Fabrikam West</span></span> |
 
-## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a>Eksempel 1: Kreditorbetaling af faktura fra en anden juridisk enhed
-Fabrikam East har en åben faktura for kreditorkonto 100, Fourth Coffee. Fabrikam registrerer og bogfører en betaling til Fabrikams kreditorkonto 3004, Fourth Coffee. Betalingen udlignes med den åbne faktura.
+## <a name="example-1-vendor-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="f28a3-140">Eksempel 1: Kreditorbetaling af faktura fra en anden juridisk enhed</span><span class="sxs-lookup"><span data-stu-id="f28a3-140">Example 1: Vendor payment of invoice from another legal entity</span></span>
+<span data-ttu-id="f28a3-141">Fabrikam East har en åben faktura for kreditorkonto 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-141">Fabrikam East has an open invoice for vendor account 100, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-142">Fabrikam registrerer og bogfører en betaling til Fabrikams kreditorkonto 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-142">Fabrikam enters and posts a payment to Fabrikam vendor account 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-143">Betalingen udlignes med den åbne faktura.</span><span class="sxs-lookup"><span data-stu-id="f28a3-143">The payment is settled with the open invoice.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a>Faktura bogføres i Fabrikam East for kreditor 100
+### <a name="invoice-is-posted-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="f28a3-144">Faktura bogføres i Fabrikam East for kreditor 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-144">Invoice is posted in Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-145">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-145">Account</span></span>                          | <span data-ttu-id="f28a3-146">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-146">Debit amount</span></span> | <span data-ttu-id="f28a3-147">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-147">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Udgift (Fabrikam East)          | 600,00       |               |
-| Kreditor (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="f28a3-148">Udgift (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-148">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="f28a3-149">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-149">600.00</span></span>       |               |
+| <span data-ttu-id="f28a3-150">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-150">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="f28a3-151">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-151">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Betaling registreres og bogføres i Fabrikam for kreditor 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="f28a3-152">Betaling registreres og bogføres i Fabrikam for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-152">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-153">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-153">Account</span></span>                     | <span data-ttu-id="f28a3-154">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-154">Debit amount</span></span> | <span data-ttu-id="f28a3-155">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-155">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditor (Fabrikam) | 600,00       |               |
-| Kontant (Fabrikam)             |              | 600,00        |
+| <span data-ttu-id="f28a3-156">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-156">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-157">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-157">600.00</span></span>       |               |
+| <span data-ttu-id="f28a3-158">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-158">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="f28a3-159">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-159">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="f28a3-160">Fabrikams betaling udlignes med fakturaen fra Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="f28a3-160">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-161">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-161">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-162">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-162">Account</span></span>                           | <span data-ttu-id="f28a3-163">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-163">Debit amount</span></span> | <span data-ttu-id="f28a3-164">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-164">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Forfalden fra Fabrikam East (Fabrikam) | 600,00       |               |
-| Kreditor (Fabrikam)       |              | 600,00        |
+| <span data-ttu-id="f28a3-165">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-165">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="f28a3-166">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-166">600.00</span></span>       |               |
+| <span data-ttu-id="f28a3-167">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-167">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="f28a3-168">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-168">600.00</span></span>        |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-169">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-169">**Fabrikam East posting**</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-170">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-170">Account</span></span>                          | <span data-ttu-id="f28a3-171">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-171">Debit amount</span></span> | <span data-ttu-id="f28a3-172">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-172">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam East) | 600,00       |               |
-| Forfalden til Fabrikam (Fabrikam East)  |              | 600,00        |
+| <span data-ttu-id="f28a3-173">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-173">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-174">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-174">600.00</span></span>       |               |
+| <span data-ttu-id="f28a3-175">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-175">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="f28a3-176">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-176">600.00</span></span>        |
 
-## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Eksempel 2: Kreditorbetaling af faktura fra en anden juridisk enhed med kasserabat
-Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der er en kontantrabat på 20,00 for fakturaen. Fabrikam registrerer og bogfører en betaling på 580,00 for Fabrikam-kreditoren 3004, Fourth Coffee. Betalingen udlignes med de åbne fakturaer fra Fabrikam East. Kasserabatten bogføres på fakturaens juridiske enhed, Fabrikam East.
+## <a name="example-2-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="f28a3-177">Eksempel 2: Kreditorbetaling af faktura fra en anden juridisk enhed med kasserabat</span><span class="sxs-lookup"><span data-stu-id="f28a3-177">Example 2: Vendor payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="f28a3-178">Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-178">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-179">Der er en kontantrabat på 20,00 for fakturaen.</span><span class="sxs-lookup"><span data-stu-id="f28a3-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="f28a3-180">Fabrikam registrerer og bogfører en betaling på 580,00 for Fabrikam-kreditoren 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-180">Fabrikam enters and posts a payment of 580.00 for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-181">Betalingen udlignes med de åbne fakturaer fra Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="f28a3-181">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="f28a3-182">Kasserabatten bogføres på fakturaens juridiske enhed, Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="f28a3-182">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Faktura bogføres i Fabrikam East for Fabrikam East-kreditoren 100
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="f28a3-183">Faktura bogføres i Fabrikam East for Fabrikam East-kreditoren 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-183">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-184">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-184">Account</span></span>                          | <span data-ttu-id="f28a3-185">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-185">Debit amount</span></span> | <span data-ttu-id="f28a3-186">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-186">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Udgift (Fabrikam East)          | 600,00       |               |
-| Kreditor (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="f28a3-187">Udgift (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-187">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="f28a3-188">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-188">600.00</span></span>       |               |
+| <span data-ttu-id="f28a3-189">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-189">Accounts payable (Fabrikam East)</span></span> |              | <span data-ttu-id="f28a3-190">600,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-190">600.00</span></span>        |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Betaling registreres og bogføres i Fabrikam for Fabrikam-kreditoren 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="f28a3-191">Betaling registreres og bogføres i Fabrikam for Fabrikam-kreditoren 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-191">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Konto                     | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-192">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-192">Account</span></span>                     | <span data-ttu-id="f28a3-193">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-193">Debit amount</span></span> | <span data-ttu-id="f28a3-194">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-194">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditor (Fabrikam) | 580,00       |               |
-| Kontant (Fabrikam)             |              | 580,00        |
+| <span data-ttu-id="f28a3-195">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-195">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-196">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-196">580.00</span></span>       |               |
+| <span data-ttu-id="f28a3-197">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-197">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="f28a3-198">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-198">580.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="f28a3-199">Fabrikams betaling udlignes med fakturaen fra Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="f28a3-199">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-200">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-200">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-201">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-201">Account</span></span>                           | <span data-ttu-id="f28a3-202">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-202">Debit amount</span></span> | <span data-ttu-id="f28a3-203">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-203">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Forfalden fra Fabrikam East (Fabrikam) | 580,00       |               |
-| Kreditor (Fabrikam)       |              | 580,00        |
+| <span data-ttu-id="f28a3-204">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-204">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="f28a3-205">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-205">580.00</span></span>       |               |
+| <span data-ttu-id="f28a3-206">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-206">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="f28a3-207">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-207">580.00</span></span>        |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-208">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-208">**Fabrikam East posting**</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-209">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-209">Account</span></span>                          | <span data-ttu-id="f28a3-210">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-210">Debit amount</span></span> | <span data-ttu-id="f28a3-211">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-211">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam East) | 580,00       |               |
-| Forfalden til Fabrikam (Fabrikam East)  |              | 580,00        |
-| Kreditor (Fabrikam East) | 20,00        |               |
-| Kasserabat (Fabrikam East)    |              | 20,00         |
+| <span data-ttu-id="f28a3-212">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-212">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-213">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-213">580.00</span></span>       |               |
+| <span data-ttu-id="f28a3-214">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-214">Due to Fabrikam (Fabrikam East)</span></span>  |              | <span data-ttu-id="f28a3-215">580,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-215">580.00</span></span>        |
+| <span data-ttu-id="f28a3-216">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-216">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-217">20,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-217">20.00</span></span>        |               |
+| <span data-ttu-id="f28a3-218">Kasserabat (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-218">Cash discount (Fabrikam East)</span></span>    |              | <span data-ttu-id="f28a3-219">20,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-219">20.00</span></span>         |
 
-## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a>Eksempel 3: Kreditorbetaling af faktura fra en anden juridisk enhed med realiseret valutakurstab
-Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Fabrikam registrerer og bogfører en betaling for Fabrikam-kreditoren 3004, Fourth Coffee. Betalingen udlignes med den åbne faktura fra Fabrikam East. En valutakursFanerpostering genereres under udligningsprocessen.
+## <a name="example-3-vendor-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-loss"></a><span data-ttu-id="f28a3-220">Eksempel 3: Kreditorbetaling af faktura fra en anden juridisk enhed med realiseret valutakurstab</span><span class="sxs-lookup"><span data-stu-id="f28a3-220">Example 3: Vendor payment of invoice from another legal entity with realized exchange rate loss</span></span>
+<span data-ttu-id="f28a3-221">Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-221">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-222">Fabrikam registrerer og bogfører en betaling for Fabrikam-kreditoren 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-222">Fabrikam enters and posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-223">Betalingen udlignes med den åbne faktura fra Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="f28a3-223">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="f28a3-224">En valutakursFanerpostering genereres under udligningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="f28a3-224">A currency exchange loss transaction is generated during the settlement process.</span></span>
 
--   Valutakurs for euro (EUR) til USD på fakturadatoen: 1,2062
--   Valutakurs for EUR til USD på betalingsdatoen: 1,2277
+-   <span data-ttu-id="f28a3-225">Valutakurs for euro (EUR) til USD på fakturadatoen: 1,2062</span><span class="sxs-lookup"><span data-stu-id="f28a3-225">Exchange rate for euros (EUR) to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="f28a3-226">Valutakurs for EUR til USD på betalingsdatoen: 1,2277</span><span class="sxs-lookup"><span data-stu-id="f28a3-226">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a>Faktura bogføres i Fabrikam East for Fabrikam East-kreditoren 100
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-vendor-100"></a><span data-ttu-id="f28a3-227">Faktura bogføres i Fabrikam East for Fabrikam East-kreditoren 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-227">Invoice is posted in Fabrikam East for Fabrikam East vendor 100</span></span>
 
-| Konto                          | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-228">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-228">Account</span></span>                          | <span data-ttu-id="f28a3-229">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-229">Debit amount</span></span>            | <span data-ttu-id="f28a3-230">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-230">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Udgift (Fabrikam East)          | 600,00 EUR / 723,72 USD |                         |
-| Kreditor (Fabrikam East) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="f28a3-231">Udgift (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-231">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="f28a3-232">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-232">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-233">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-233">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="f28a3-234">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-234">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a>Betaling registreres og bogføres i Fabrikam for Fabrikam-kreditoren 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-fabrikam-vendor-3004"></a><span data-ttu-id="f28a3-235">Betaling registreres og bogføres i Fabrikam for Fabrikam-kreditoren 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-235">Payment is generated and posted in Fabrikam for Fabrikam vendor 3004</span></span>
 
-| Konto                     | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-236">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-236">Account</span></span>                     | <span data-ttu-id="f28a3-237">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-237">Debit amount</span></span>            | <span data-ttu-id="f28a3-238">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-238">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kreditor (Fabrikam) | 600,00 EUR / 736,62 USD |                         |
-| Kontant (Fabrikam)             |                         | 600,00 EUR / 736,62 USD |
+| <span data-ttu-id="f28a3-239">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-239">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-240">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-240">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-241">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-241">Cash (Fabrikam)</span></span>             |                         | <span data-ttu-id="f28a3-242">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-242">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="f28a3-243">Fabrikams betaling udlignes med fakturaen fra Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="f28a3-243">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-244">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-244">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-245">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-245">Account</span></span>                           | <span data-ttu-id="f28a3-246">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-246">Debit amount</span></span>            | <span data-ttu-id="f28a3-247">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-247">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Forfalden fra Fabrikam East (Fabrikam) | 600,00 EUR / 736,62 USD |                         |
-| Kreditor (Fabrikam)       |                         | 600,00 EUR / 736,62 USD |
-| Realiseret tab (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
-| Forfalden fra Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="f28a3-248">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-248">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="f28a3-249">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-249">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-250">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-250">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="f28a3-251">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-251">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="f28a3-252">Realiseret tab (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-252">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="f28a3-253">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-253">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="f28a3-254">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-254">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="f28a3-255">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-255">0.00 EUR / 12.90 USD</span></span>    |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-256">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-256">**Fabrikam East posting**</span></span>
 
-| Konto                          | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-257">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-257">Account</span></span>                          | <span data-ttu-id="f28a3-258">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-258">Debit amount</span></span>            | <span data-ttu-id="f28a3-259">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-259">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kreditor (Fabrikam East) | 600,00 EUR / 736,62 USD |                         |
-| Forfalden til Fabrikam (Fabrikam East)  |                         | 600,00 EUR / 736,62 USD |
-| Forfalden til Fabrikam (Fabrikam East)  | 0,00 EUR / 12,90 USD    |                         |
-| Kreditor (Fabrikam East) |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="f28a3-260">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-260">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-261">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-261">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-262">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-262">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="f28a3-263">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-263">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="f28a3-264">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-264">Due to Fabrikam (Fabrikam East)</span></span>  | <span data-ttu-id="f28a3-265">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-265">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="f28a3-266">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-266">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="f28a3-267">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-267">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a>Eksempel 4: Kreditorbetaling af faktura fra en anden juridisk enhed med kasserabat og realiseret valutakurstab
-Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee. Der gælder en kontantrabat for fakturaen, og der oprettes en momspostering. Fabrikam bogfører en betaling for Fabrikam-kreditoren 3004, Fourth Coffee. Betalingen udlignes med den åbne faktura fra Fabrikam East. En valutakursFanerpostering genereres under udligningsprocessen. Kasserabatten bogføres på fakturaens juridiske enhed (Fabrikam East), og valutakurstabet bogføres på betalingens juridiske enhed (Fabrikam).
+## <a name="example-4-vendor-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-loss"></a><span data-ttu-id="f28a3-268">Eksempel 4: Kreditorbetaling af faktura fra en anden juridisk enhed med kasserabat og realiseret valutakurstab</span><span class="sxs-lookup"><span data-stu-id="f28a3-268">Example 4: Vendor payment of invoice from another legal entity with cash discount and realized exchange rate loss</span></span>
+<span data-ttu-id="f28a3-269">Fabrikam East har en åben faktura for kreditor 100, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-269">Fabrikam East has an open invoice for vendor 100, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-270">Der gælder en kontantrabat for fakturaen, og der oprettes en momspostering.</span><span class="sxs-lookup"><span data-stu-id="f28a3-270">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="f28a3-271">Fabrikam bogfører en betaling for Fabrikam-kreditoren 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-271">Fabrikam posts a payment for Fabrikam vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-272">Betalingen udlignes med den åbne faktura fra Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="f28a3-272">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="f28a3-273">En valutakursFanerpostering genereres under udligningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="f28a3-273">A currency exchange loss transaction is generated during the settlement process.</span></span> <span data-ttu-id="f28a3-274">Kasserabatten bogføres på fakturaens juridiske enhed (Fabrikam East), og valutakurstabet bogføres på betalingens juridiske enhed (Fabrikam).</span><span class="sxs-lookup"><span data-stu-id="f28a3-274">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange loss is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Valutakurs for EUR til USD pr. fakturadatoen: 1,2062
--   Valutakurs for EUR til USD pr. betalingsdatoen: 1,2277
+-   <span data-ttu-id="f28a3-275">Valutakurs for EUR til USD pr. fakturadatoen: 1,2062</span><span class="sxs-lookup"><span data-stu-id="f28a3-275">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="f28a3-276">Valutakurs for EUR til USD pr. betalingsdatoen: 1,2277</span><span class="sxs-lookup"><span data-stu-id="f28a3-276">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a>Fakturaen bogføres, og der oprettes en momspostering i Fabrikam East for kreditor 100
+### <a name="invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-vendor-100"></a><span data-ttu-id="f28a3-277">Fakturaen bogføres, og der oprettes en momspostering i Fabrikam East for kreditor 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-277">Invoice is posted and a tax transaction is generated in Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-278">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-278">Account</span></span>                          | <span data-ttu-id="f28a3-279">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-279">Debit amount</span></span>            | <span data-ttu-id="f28a3-280">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-280">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Udgift (Fabrikam East)          | 564,07 EUR / 680,38 USD |                         |
-| Moms (Fabrikam East)        | 35,93 EUR / 43,34 USD   |                         |
-| Kreditor (Fabrikam East) |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="f28a3-281">Udgift (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-281">Expense (Fabrikam East)</span></span>          | <span data-ttu-id="f28a3-282">564,07 EUR / 680,38 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-282">564.07 EUR / 680.38 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-283">Moms (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-283">Sales tax (Fabrikam East)</span></span>        | <span data-ttu-id="f28a3-284">35,93 EUR / 43,34 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-284">35.93 EUR / 43.34 USD</span></span>   |                         |
+| <span data-ttu-id="f28a3-285">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-285">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="f28a3-286">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-286">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a>Betaling registreres og bogføres i Fabrikam for kreditor 3004
+### <a name="payment-is-generated-and-posted-in-fabrikam-for-vendor-3004"></a><span data-ttu-id="f28a3-287">Betaling registreres og bogføres i Fabrikam for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-287">Payment is generated and posted in Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-288">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-288">Account</span></span>                     | <span data-ttu-id="f28a3-289">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-289">Debit amount</span></span>            | <span data-ttu-id="f28a3-290">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-290">Credit amount</span></span>           |
 |-----------------------------|-------------------------|-------------------------|
-| Kreditor (Fabrikam) | 588,72 EUR / 722,77 USD |                         |
-| Kontant (Fabrikam East)        |                         | 588,72 EUR / 722,77 USD |
+| <span data-ttu-id="f28a3-291">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-291">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-292">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-292">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-293">Kontant (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-293">Cash (Fabrikam East)</span></span>        |                         | <span data-ttu-id="f28a3-294">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-294">588.72 EUR / 722.77 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikams betaling udlignes med fakturaen fra Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="f28a3-295">Fabrikams betaling udlignes med fakturaen fra Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="f28a3-295">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-296">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-296">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-297">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-297">Account</span></span>                           | <span data-ttu-id="f28a3-298">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-298">Debit amount</span></span>            | <span data-ttu-id="f28a3-299">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-299">Credit amount</span></span>           |
 |-----------------------------------|-------------------------|-------------------------|
-| Forfalden fra Fabrikam East (Fabrikam) | 588,72 EUR / 722,77 USD |                         |
-| Kreditor (Fabrikam)       |                         | 588,72 EUR / 722,77 USD |
-| Realiseret tab (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
-| Forfalden fra Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
+| <span data-ttu-id="f28a3-300">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-300">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="f28a3-301">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-301">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-302">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-302">Accounts payable (Fabrikam)</span></span>       |                         | <span data-ttu-id="f28a3-303">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-303">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="f28a3-304">Realiseret tab (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-304">Realized loss (Fabrikam)</span></span>          | <span data-ttu-id="f28a3-305">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-305">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="f28a3-306">Forfalden fra Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-306">Due from Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="f28a3-307">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-307">0.00 EUR / 12.66 USD</span></span>    |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-308">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-308">**Fabrikam East posting**</span></span>
 
-| Konto                          | Debetbeløb            | Kreditbeløb           |
+| <span data-ttu-id="f28a3-309">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-309">Account</span></span>                          | <span data-ttu-id="f28a3-310">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-310">Debit amount</span></span>            | <span data-ttu-id="f28a3-311">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-311">Credit amount</span></span>           |
 |----------------------------------|-------------------------|-------------------------|
-| Kreditor (Fabrikam East) | 588,72 EUR / 722,77 USD |                         |
-| Forfalden til Fabrikam (Fabrikam East)  |                         | 588,72 EUR / 722,77 USD |
-| Forfalden til Fabrikam (Fabrikam East)   | 0,00 EUR / 12,66 USD    |                         |
-| Kreditor (Fabrikam East) |                         | 0,00 EUR / 12,66 USD    |
-| Kreditor (Fabrikam East) | 11,28 EUR / 13,61 USD   |                         |
-| Kontantrabat (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
+| <span data-ttu-id="f28a3-312">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-312">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-313">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-313">588.72 EUR / 722.77 USD</span></span> |                         |
+| <span data-ttu-id="f28a3-314">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-314">Due to Fabrikam (Fabrikam East)</span></span>  |                         | <span data-ttu-id="f28a3-315">588,72 EUR / 722,77 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-315">588.72 EUR / 722.77 USD</span></span> |
+| <span data-ttu-id="f28a3-316">Forfalden til Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-316">Due to Fabrikam (Fabrikam East</span></span>   | <span data-ttu-id="f28a3-317">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-317">0.00 EUR / 12.66 USD</span></span>    |                         |
+| <span data-ttu-id="f28a3-318">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-318">Accounts payable (Fabrikam East)</span></span> |                         | <span data-ttu-id="f28a3-319">0,00 EUR / 12,66 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-319">0.00 EUR / 12.66 USD</span></span>    |
+| <span data-ttu-id="f28a3-320">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-320">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-321">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-321">11.28 EUR / 13.61 USD</span></span>   |                         |
+| <span data-ttu-id="f28a3-322">Kontantrabat (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-322">Cash discount (Fabrikam East)</span></span>    |                         | <span data-ttu-id="f28a3-323">11,28 EUR / 13,61 USD</span><span class="sxs-lookup"><span data-stu-id="f28a3-323">11.28 EUR / 13.61 USD</span></span>   |
 
-## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Eksempel 5: Kreditorkreditnota med primær betaling
-Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen vælges som primær betaling på siden **Udlign transaktioner**.
+## <a name="example-5-vendor-credit-note-with-primary-payment"></a><span data-ttu-id="f28a3-324">Eksempel 5: Kreditorkreditnota med primær betaling</span><span class="sxs-lookup"><span data-stu-id="f28a3-324">Example 5: Vendor credit note with primary payment</span></span>
+<span data-ttu-id="f28a3-325">Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-325">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-326">Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100.</span><span class="sxs-lookup"><span data-stu-id="f28a3-326">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="f28a3-327">Betalingen vælges som primær betaling på siden **Udlign transaktioner**.</span><span class="sxs-lookup"><span data-stu-id="f28a3-327">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bogføres på Fabrikam West for kreditor 3004
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="f28a3-328">Faktura bogføres på Fabrikam West for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-328">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-329">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-329">Account</span></span>                          | <span data-ttu-id="f28a3-330">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-330">Debit amount</span></span> | <span data-ttu-id="f28a3-331">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-331">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Udgift (Fabrikam West)          | 100,00       |               |
-| Kreditor (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="f28a3-332">Udgift (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-332">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="f28a3-333">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-333">100.00</span></span>       |               |
+| <span data-ttu-id="f28a3-334">Kreditor (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-334">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="f28a3-335">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-335">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Kreditnota bogføres i Fabrikam East for kreditor 100
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="f28a3-336">Kreditnota bogføres i Fabrikam East for kreditor 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-336">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-337">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-337">Account</span></span>                          | <span data-ttu-id="f28a3-338">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-338">Debit amount</span></span> | <span data-ttu-id="f28a3-339">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-339">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam East) | 25,00        |               |
-| Indkøbsreturneringer (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="f28a3-340">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-340">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-341">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-341">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-342">Indkøbsreturneringer (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-342">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="f28a3-343">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-343">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Betaling bogføres i Fabrikam for kreditor 3004
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="f28a3-344">Betaling bogføres i Fabrikam for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-344">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-345">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-345">Account</span></span>                     | <span data-ttu-id="f28a3-346">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-346">Debit amount</span></span> | <span data-ttu-id="f28a3-347">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-347">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditor (Fabrikam) | 75,00        |               |
-| Kontant (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="f28a3-348">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-348">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-349">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-349">75.00</span></span>        |               |
+| <span data-ttu-id="f28a3-350">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-350">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="f28a3-351">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-351">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="f28a3-352">Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota</span><span class="sxs-lookup"><span data-stu-id="f28a3-352">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-353">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-353">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-354">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-354">Account</span></span>                           | <span data-ttu-id="f28a3-355">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-355">Debit amount</span></span> | <span data-ttu-id="f28a3-356">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-356">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam)       | 25,00        |               |
-| Forfalden til Fabrikam East (Fabrikam)   |              | 25,00         |
-| Forfalden fra Fabrikam West (Fabrikam) | 100,00       |               |
-| Kreditor (Fabrikam)       |              | 100,00        |
+| <span data-ttu-id="f28a3-357">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-357">Accounts payable (Fabrikam)</span></span>       | <span data-ttu-id="f28a3-358">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-358">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-359">Forfalden til Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-359">Due to Fabrikam East (Fabrikam)</span></span>   |              | <span data-ttu-id="f28a3-360">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-360">25.00</span></span>         |
+| <span data-ttu-id="f28a3-361">Forfalden fra Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-361">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="f28a3-362">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-362">100.00</span></span>       |               |
+| <span data-ttu-id="f28a3-363">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-363">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="f28a3-364">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-364">100.00</span></span>        |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-365">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-365">**Fabrikam East posting**</span></span>
 
-| Konto                           | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-366">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-366">Account</span></span>                           | <span data-ttu-id="f28a3-367">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-367">Debit amount</span></span> | <span data-ttu-id="f28a3-368">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-368">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Forfalden fra Fabrikam (Fabrikam East) | 25,00        |               |
-| Kreditor (Fabrikam East)  |              | 25,00         |
+| <span data-ttu-id="f28a3-369">Forfalden fra Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-369">Due from Fabrikam (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-370">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-370">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-371">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-371">Accounts payable (Fabrikam East)</span></span>  |              | <span data-ttu-id="f28a3-372">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-372">25.00</span></span>         |
 
-**Fabrikam West-bogføring**
+<span data-ttu-id="f28a3-373">**Fabrikam West-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-373">**Fabrikam West posting**</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-374">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-374">Account</span></span>                          | <span data-ttu-id="f28a3-375">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-375">Debit amount</span></span> | <span data-ttu-id="f28a3-376">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-376">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam West) | 100,00       |               |
-| Forfalden til Fabrikam (Fabrikam West)  |              | 100,00        |
+| <span data-ttu-id="f28a3-377">Kreditor (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-377">Accounts payable (Fabrikam West)</span></span> | <span data-ttu-id="f28a3-378">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-378">100.00</span></span>       |               |
+| <span data-ttu-id="f28a3-379">Forfalden til Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-379">Due to Fabrikam (Fabrikam West)</span></span>  |              | <span data-ttu-id="f28a3-380">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-380">100.00</span></span>        |
 
-## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Eksempel 6: Kreditorkreditnota uden primær betaling
-Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee. Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100. Betalingen vælges ikke som primær betaling på siden **Udlign transaktioner**.
+## <a name="example-6-vendor-credit-note-without-primary-payment"></a><span data-ttu-id="f28a3-381">Eksempel 6: Kreditorkreditnota uden primær betaling</span><span class="sxs-lookup"><span data-stu-id="f28a3-381">Example 6: Vendor credit note without primary payment</span></span>
+<span data-ttu-id="f28a3-382">Fabrikam opretter en betaling på 75,00 til kreditoren 3004, Fourth Coffee.</span><span class="sxs-lookup"><span data-stu-id="f28a3-382">Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee.</span></span> <span data-ttu-id="f28a3-383">Betalingen udlignes med en åben faktura for Fabrikam West-kreditoren 3004 og en åben kreditnota for Fabrikam East-kreditoren 100.</span><span class="sxs-lookup"><span data-stu-id="f28a3-383">The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100.</span></span> <span data-ttu-id="f28a3-384">Betalingen vælges ikke som primær betaling på siden **Udlign transaktioner**.</span><span class="sxs-lookup"><span data-stu-id="f28a3-384">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bogføres på Fabrikam West for kreditor 3004
+### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a><span data-ttu-id="f28a3-385">Faktura bogføres på Fabrikam West for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-385">Invoice is posted to Fabrikam West for vendor 3004</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-386">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-386">Account</span></span>                          | <span data-ttu-id="f28a3-387">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-387">Debit amount</span></span> | <span data-ttu-id="f28a3-388">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-388">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Udgift (Fabrikam West)          | 100,00       |               |
-| Kreditor (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="f28a3-389">Udgift (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-389">Expense (Fabrikam West)</span></span>          | <span data-ttu-id="f28a3-390">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-390">100.00</span></span>       |               |
+| <span data-ttu-id="f28a3-391">Kreditor (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-391">Accounts payable (Fabrikam West)</span></span> |              | <span data-ttu-id="f28a3-392">100,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-392">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a>Kreditnota bogføres i Fabrikam East for kreditor 100
+### <a name="credit-note-is-posted-to-fabrikam-east-for-vendor-100"></a><span data-ttu-id="f28a3-393">Kreditnota bogføres i Fabrikam East for kreditor 100</span><span class="sxs-lookup"><span data-stu-id="f28a3-393">Credit note is posted to Fabrikam East for vendor 100</span></span>
 
-| Konto                          | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-394">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-394">Account</span></span>                          | <span data-ttu-id="f28a3-395">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-395">Debit amount</span></span> | <span data-ttu-id="f28a3-396">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-396">Credit amount</span></span> |
 |----------------------------------|--------------|---------------|
-| Kreditor (Fabrikam East) | 25,00        |               |
-| Indkøbsreturneringer (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="f28a3-397">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-397">Accounts payable (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-398">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-398">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-399">Indkøbsreturneringer (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-399">Purchase returns (Fabrikam East)</span></span> |              | <span data-ttu-id="f28a3-400">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-400">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a>Betaling bogføres i Fabrikam for kreditor 3004
+### <a name="payment-is-posted-to-fabrikam-for-vendor-3004"></a><span data-ttu-id="f28a3-401">Betaling bogføres i Fabrikam for kreditor 3004</span><span class="sxs-lookup"><span data-stu-id="f28a3-401">Payment is posted to Fabrikam for vendor 3004</span></span>
 
-| Konto                     | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-402">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-402">Account</span></span>                     | <span data-ttu-id="f28a3-403">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-403">Debit amount</span></span> | <span data-ttu-id="f28a3-404">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-404">Credit amount</span></span> |
 |-----------------------------|--------------|---------------|
-| Kreditor (Fabrikam) | 75,00        |               |
-| Kontant (Fabrikam)             |              | 75,00         |
+| <span data-ttu-id="f28a3-405">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-405">Accounts payable (Fabrikam)</span></span> | <span data-ttu-id="f28a3-406">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-406">75.00</span></span>        |               |
+| <span data-ttu-id="f28a3-407">Kontant (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-407">Cash (Fabrikam)</span></span>             |              | <span data-ttu-id="f28a3-408">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-408">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="f28a3-409">Fabrikam-betaling udlignes med Fabrikam West-faktura og Fabrikam East-kreditnota</span><span class="sxs-lookup"><span data-stu-id="f28a3-409">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Fabrikam-bogføring**
+<span data-ttu-id="f28a3-410">**Fabrikam-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-410">**Fabrikam posting**</span></span>
 
-| Konto                           | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-411">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-411">Account</span></span>                           | <span data-ttu-id="f28a3-412">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-412">Debit amount</span></span> | <span data-ttu-id="f28a3-413">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-413">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Forfalden fra Fabrikam West (Fabrikam) | 75,00        |               |
-| Kreditor (Fabrikam)       |              | 75,00         |
+| <span data-ttu-id="f28a3-414">Forfalden fra Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-414">Due from Fabrikam West (Fabrikam)</span></span> | <span data-ttu-id="f28a3-415">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-415">75.00</span></span>        |               |
+| <span data-ttu-id="f28a3-416">Kreditor (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="f28a3-416">Accounts payable (Fabrikam)</span></span>       |              | <span data-ttu-id="f28a3-417">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-417">75.00</span></span>         |
 
-**Fabrikam East-bogføring**
+<span data-ttu-id="f28a3-418">**Fabrikam East-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-418">**Fabrikam East posting**</span></span>
 
-| Konto                                | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-419">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-419">Account</span></span>                                | <span data-ttu-id="f28a3-420">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-420">Debit amount</span></span> | <span data-ttu-id="f28a3-421">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-421">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Forfalden fra Fabrikam West (Fabrikam East) | 25,00        |               |
-| Kreditor (Fabrikam East)       |              | 25,00         |
+| <span data-ttu-id="f28a3-422">Forfalden fra Fabrikam West (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-422">Due from Fabrikam West (Fabrikam East)</span></span> | <span data-ttu-id="f28a3-423">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-423">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-424">Kreditor (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="f28a3-424">Accounts payable (Fabrikam East)</span></span>       |              | <span data-ttu-id="f28a3-425">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-425">25.00</span></span>         |
 
-**Fabrikam West-bogføring**
+<span data-ttu-id="f28a3-426">**Fabrikam West-bogføring**</span><span class="sxs-lookup"><span data-stu-id="f28a3-426">**Fabrikam West posting**</span></span>
 
-| Konto                              | Debetbeløb | Kreditbeløb |
+| <span data-ttu-id="f28a3-427">Konto</span><span class="sxs-lookup"><span data-stu-id="f28a3-427">Account</span></span>                              | <span data-ttu-id="f28a3-428">Debetbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-428">Debit amount</span></span> | <span data-ttu-id="f28a3-429">Kreditbeløb</span><span class="sxs-lookup"><span data-stu-id="f28a3-429">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Kreditor (Fabrikam West)     | 75,00        |               |
-| Forfalden til Fabrikam (Fabrikam West)      |              | 75,00         |
-| Kreditor (Fabrikam West)     | 25,00        |               |
-| Forfalden til Fabrikam East (Fabrikam West) |              | 25,00         |
+| <span data-ttu-id="f28a3-430">Kreditor (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-430">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="f28a3-431">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-431">75.00</span></span>        |               |
+| <span data-ttu-id="f28a3-432">Forfalden til Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-432">Due to Fabrikam (Fabrikam West)</span></span>      |              | <span data-ttu-id="f28a3-433">75,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-433">75.00</span></span>         |
+| <span data-ttu-id="f28a3-434">Kreditor (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-434">Accounts payable (Fabrikam West)</span></span>     | <span data-ttu-id="f28a3-435">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-435">25.00</span></span>        |               |
+| <span data-ttu-id="f28a3-436">Forfalden til Fabrikam East (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="f28a3-436">Due to Fabrikam East (Fabrikam West)</span></span> |              | <span data-ttu-id="f28a3-437">25,00</span><span class="sxs-lookup"><span data-stu-id="f28a3-437">25.00</span></span>         |
 
 
 

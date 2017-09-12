@@ -16,55 +16,55 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 71b2a2da0b705b84f79adcff25672855e7b5253f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 59f1af68e4b1198894a7cdab291021de9f3cf8a9
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-closed-ended-question"></a>Oprette et lukket spørgsmål
+# <a name="create-a-closed-ended-question"></a><span data-ttu-id="fdc60-103">Oprette et lukket spørgsmål</span><span class="sxs-lookup"><span data-stu-id="fdc60-103">Create a closed ended question</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen kan vælge fra. Først skal du oprette en Svarsamling med svarene, derefter skal du oprette spørgsmålet, som bruger svarsamlingen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+<span data-ttu-id="fdc60-104">Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen kan vælge fra.</span><span class="sxs-lookup"><span data-stu-id="fdc60-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="fdc60-105">Først skal du oprette en Svarsamling med svarene, derefter skal du oprette spørgsmålet, som bruger svarsamlingen.</span><span class="sxs-lookup"><span data-stu-id="fdc60-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="fdc60-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="fdc60-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-answer-group"></a>Opret en svarsamling
-1. Gå til Spørgeskema > Design > Svarsamlinger.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Svarsamling.
-4. Skriv en værdi i feltet Beskrivelse.
-    * Du kan bruge funktionen Tilfældig til at placere svarene i en tilfældig rækkefølge, hver gang svarsamlingen bruges til et spørgsmål.  
-5. Klik på Svar.
-6. Klik på Ny.
-    * Sekvensnummeret styrer den rækkefølge, som svarene vises i, medmindre Tilfældig vælges til svarsamlingen.  
-    * Point kan overdrages til svar til brug i vurdering af spørgeskemaet.  
-7. Angiv et tal i feltet Point.
-    * Det rigtige svar kan markeres for at angive, at det valgte svar er korrekt. Dette kan bruges til vurdering af spørgeskemaet.  
-8. Skriv en værdi i feltet Svar.
-    * Fortsæt med at oprette valgmuligheder for svar til svarsamlingen.  
-9. Klik på Ny.
-10. Angiv et tal i feltet Point.
-11. Skriv en værdi i feltet Svar.
-12. Klik på Ny.
-13. Angiv et tal i feltet Point.
-14. Skriv en værdi i feltet Svar.
-15. Klik på Ny.
-16. Angiv et tal i feltet Point.
-17. Skriv en værdi i feltet Svar.
-18. Klik på Ny.
-19. Angiv et tal i feltet Point.
-20. Skriv en værdi i feltet Svar.
-21. Luk siden.
-22. Luk siden.
+## <a name="create-an-answer-group"></a><span data-ttu-id="fdc60-107">Opret en svarsamling</span><span class="sxs-lookup"><span data-stu-id="fdc60-107">Create an answer group</span></span>
+1. <span data-ttu-id="fdc60-108">Gå til Spørgeskema > Design > Svarsamlinger.</span><span class="sxs-lookup"><span data-stu-id="fdc60-108">Go to Questionnaire > Design > Answer groups.</span></span>
+2. <span data-ttu-id="fdc60-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-109">Click New.</span></span>
+3. <span data-ttu-id="fdc60-110">Indtast en værdi i feltet Svarsamling.</span><span class="sxs-lookup"><span data-stu-id="fdc60-110">In the Answer group field, type a value.</span></span>
+4. <span data-ttu-id="fdc60-111">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="fdc60-111">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="fdc60-112">Du kan bruge funktionen Tilfældig til at placere svarene i en tilfældig rækkefølge, hver gang svarsamlingen bruges til et spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="fdc60-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
+5. <span data-ttu-id="fdc60-113">Klik på Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-113">Click Answer.</span></span>
+6. <span data-ttu-id="fdc60-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-114">Click New.</span></span>
+    * <span data-ttu-id="fdc60-115">Sekvensnummeret styrer den rækkefølge, som svarene vises i, medmindre Tilfældig vælges til svarsamlingen.</span><span class="sxs-lookup"><span data-stu-id="fdc60-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
+    * <span data-ttu-id="fdc60-116">Point kan overdrages til svar til brug i vurdering af spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="fdc60-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
+7. <span data-ttu-id="fdc60-117">Angiv et tal i feltet Point.</span><span class="sxs-lookup"><span data-stu-id="fdc60-117">In the Points field, enter a number.</span></span>
+    * <span data-ttu-id="fdc60-118">Det rigtige svar kan markeres for at angive, at det valgte svar er korrekt.</span><span class="sxs-lookup"><span data-stu-id="fdc60-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="fdc60-119">Dette kan bruges til vurdering af spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="fdc60-119">This can be used for scoring the questionnaire.</span></span>  
+8. <span data-ttu-id="fdc60-120">Skriv en værdi i feltet Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-120">In the Answer field, type a value.</span></span>
+    * <span data-ttu-id="fdc60-121">Fortsæt med at oprette valgmuligheder for svar til svarsamlingen.</span><span class="sxs-lookup"><span data-stu-id="fdc60-121">Continue to create answer selection options for the answer group.</span></span>  
+9. <span data-ttu-id="fdc60-122">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-122">Click New.</span></span>
+10. <span data-ttu-id="fdc60-123">Angiv et tal i feltet Point.</span><span class="sxs-lookup"><span data-stu-id="fdc60-123">In the Points field, enter a number.</span></span>
+11. <span data-ttu-id="fdc60-124">Skriv en værdi i feltet Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-124">In the Answer field, type a value.</span></span>
+12. <span data-ttu-id="fdc60-125">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-125">Click New.</span></span>
+13. <span data-ttu-id="fdc60-126">Angiv et tal i feltet Point.</span><span class="sxs-lookup"><span data-stu-id="fdc60-126">In the Points field, enter a number.</span></span>
+14. <span data-ttu-id="fdc60-127">Skriv en værdi i feltet Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-127">In the Answer field, type a value.</span></span>
+15. <span data-ttu-id="fdc60-128">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-128">Click New.</span></span>
+16. <span data-ttu-id="fdc60-129">Angiv et tal i feltet Point.</span><span class="sxs-lookup"><span data-stu-id="fdc60-129">In the Points field, enter a number.</span></span>
+17. <span data-ttu-id="fdc60-130">Skriv en værdi i feltet Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-130">In the Answer field, type a value.</span></span>
+18. <span data-ttu-id="fdc60-131">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-131">Click New.</span></span>
+19. <span data-ttu-id="fdc60-132">Angiv et tal i feltet Point.</span><span class="sxs-lookup"><span data-stu-id="fdc60-132">In the Points field, enter a number.</span></span>
+20. <span data-ttu-id="fdc60-133">Skriv en værdi i feltet Svar.</span><span class="sxs-lookup"><span data-stu-id="fdc60-133">In the Answer field, type a value.</span></span>
+21. <span data-ttu-id="fdc60-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="fdc60-134">Close the page.</span></span>
+22. <span data-ttu-id="fdc60-135">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="fdc60-135">Close the page.</span></span>
 
-## <a name="create-the-question"></a>Opret spørgsmålet
-1. Gå til Spørgeskema > Design > Spørgsmål.
-2. Klik på Ny.
-3. Brug feltet Type til at gruppere relaterede spørgsmål.
-    * Du kan bruge inputtyper som afkrydsningsfelt, alternativknap eller kombinationsboks til lukkede spørgsmål.  
-4. Vælg en indstilling i feltet Inputtype.
-5. Indtast eller vælg en værdi i feltet Svarsamling.
-6. Skriv en værdi i feltet Tekst.
+## <a name="create-the-question"></a><span data-ttu-id="fdc60-136">Opret spørgsmålet</span><span class="sxs-lookup"><span data-stu-id="fdc60-136">Create the question</span></span>
+1. <span data-ttu-id="fdc60-137">Gå til Spørgeskema > Design > Spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="fdc60-137">Go to Questionnaire > Design > Questions.</span></span>
+2. <span data-ttu-id="fdc60-138">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="fdc60-138">Click New.</span></span>
+3. <span data-ttu-id="fdc60-139">Brug feltet Type til at gruppere relaterede spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="fdc60-139">Use the Type field to group related questions together.</span></span>
+    * <span data-ttu-id="fdc60-140">Du kan bruge inputtyper som afkrydsningsfelt, alternativknap eller kombinationsboks til lukkede spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="fdc60-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
+4. <span data-ttu-id="fdc60-141">Vælg en indstilling i feltet Inputtype.</span><span class="sxs-lookup"><span data-stu-id="fdc60-141">In the Input type field, select an option.</span></span>
+5. <span data-ttu-id="fdc60-142">Indtast eller vælg en værdi i feltet Svarsamling.</span><span class="sxs-lookup"><span data-stu-id="fdc60-142">In the Answer group field, enter or select a value.</span></span>
+6. <span data-ttu-id="fdc60-143">Skriv en værdi i feltet Tekst.</span><span class="sxs-lookup"><span data-stu-id="fdc60-143">In the Text field, type a value.</span></span>
 
 

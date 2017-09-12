@@ -20,50 +20,50 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 868018a921fd9ecf21dcd935c435ed0ccbf443ba
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 9ee5536d6e157ced0518e36fab0c92301a33a66d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
+# <a name="reimbursements-in-the-public-sector"></a><span data-ttu-id="6d034-103">Refusioner i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="6d034-103">Reimbursements in the public sector</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
+<span data-ttu-id="6d034-104">I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="6d034-104">This topic answers common questions related to reimbursements in the public sector.</span></span> 
 
-<a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a>Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?
+<a name="what-happens-if-i-create-a-separate-reimbursement-transaction-for-each-billing-classification"></a><span data-ttu-id="6d034-105">Hvad sker der, hvis jeg opretter en separat refusionspostering for hver faktureringsklassifikation?</span><span class="sxs-lookup"><span data-stu-id="6d034-105">What happens if I create a separate reimbursement transaction for each billing classification?</span></span>
 ----------------------------------------------------------------------------------------------
 
-Når du opretter en separat refusionspostering for hver faktureringsklassifikation, samles kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har samme faktureringsklassifikation til en enkelt refusionspostering. Der oprettes separate refusionsposteringer for kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har forskellige faktureringsklassifikationer. Lad os f.eks. antage, du behandler refusioner til tre kreditnotaer. Alle tre kreditnotaer er $1000.
+<span data-ttu-id="6d034-106">Når du opretter en separat refusionspostering for hver faktureringsklassifikation, samles kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har samme faktureringsklassifikation til en enkelt refusionspostering.</span><span class="sxs-lookup"><span data-stu-id="6d034-106">When you create a separate reimbursement transaction for each billing classification, the credit note transactions that are distributed to the same ledger account and that have the same billing classification will be combined into a single reimbursement transaction.</span></span> <span data-ttu-id="6d034-107">Der oprettes separate refusionsposteringer for kreditnotaposteringer, der er fordelt til den samme finanskonto, og som har forskellige faktureringsklassifikationer.</span><span class="sxs-lookup"><span data-stu-id="6d034-107">Credit note transactions that are distributed to the same ledger account and that have different billing classifications will generate separate reimbursement transactions.</span></span> <span data-ttu-id="6d034-108">Lad os f.eks. antage, du behandler refusioner til tre kreditnotaer.</span><span class="sxs-lookup"><span data-stu-id="6d034-108">For example, let’s say that you process reimbursements for three credit notes.</span></span> <span data-ttu-id="6d034-109">Alle tre kreditnotaer er $1000.</span><span class="sxs-lookup"><span data-stu-id="6d034-109">All three credit notes are for $1000.</span></span>
 
--   Første kreditnota har faktureringsklassifikation UTL, er fordelt på tre firmaer, med 15 % til konto 1110, 30 % til konto 2210 og 55 % til konto 3210.
--   Den anden kreditnota har også faktureringsklassifikation UTL. Den er distribueret 100 % til konto 3210.
--   Den tredje kreditnota med faktureringsklassifikationen GEN er distribueret 100 % til konto 1110.
+-   <span data-ttu-id="6d034-110">Første kreditnota har faktureringsklassifikation UTL, er fordelt på tre firmaer, med 15 % til konto 1110, 30 % til konto 2210 og 55 % til konto 3210.</span><span class="sxs-lookup"><span data-stu-id="6d034-110">The first credit note has billing classification UTL, is distributed to three accounts, with 15% going to account 1110, 30% to account 2210, and 55% to account 3210.</span></span>
+-   <span data-ttu-id="6d034-111">Den anden kreditnota har også faktureringsklassifikation UTL.</span><span class="sxs-lookup"><span data-stu-id="6d034-111">The second credit note also has billing classification UTL.</span></span> <span data-ttu-id="6d034-112">Den er distribueret 100 % til konto 3210.</span><span class="sxs-lookup"><span data-stu-id="6d034-112">It is distributed 100% to account 3210.</span></span>
+-   <span data-ttu-id="6d034-113">Den tredje kreditnota med faktureringsklassifikationen GEN er distribueret 100 % til konto 1110.</span><span class="sxs-lookup"><span data-stu-id="6d034-113">The third credit note, with billing classification GEN, is distributed 100% to account 1110.</span></span>
 
-Hvis du opretter en separat refusionspostering for hver faktureringsklassifikation, vil fire refusionsposteringer blive oprettet, på følgende måde:
+<span data-ttu-id="6d034-114">Hvis du opretter en separat refusionspostering for hver faktureringsklassifikation, vil fire refusionsposteringer blive oprettet, på følgende måde:</span><span class="sxs-lookup"><span data-stu-id="6d034-114">If you create a separate reimbursement transaction for each billing classification, four reimbursement transactions will be created, as follows:</span></span>
 
--   $150 til konto 1110
--   $1000 til konto 1110
--   $300 til konto 2210
--   $1550 til konto 3210
+-   <span data-ttu-id="6d034-115">$150 til konto 1110</span><span class="sxs-lookup"><span data-stu-id="6d034-115">$150 to account 1110</span></span>
+-   <span data-ttu-id="6d034-116">$1000 til konto 1110</span><span class="sxs-lookup"><span data-stu-id="6d034-116">$1000 to account 1110</span></span>
+-   <span data-ttu-id="6d034-117">$300 til konto 2210</span><span class="sxs-lookup"><span data-stu-id="6d034-117">$300 to account 2210</span></span>
+-   <span data-ttu-id="6d034-118">$1550 til konto 3210</span><span class="sxs-lookup"><span data-stu-id="6d034-118">$1550 to account 3210</span></span>
 
-De beløb, der går til konto 3210, kombineres, fordi de begge bruger samme faktureringsklassifikation. De beløb, der går til konto 1110, kombineres ikke, fordi de ikke bruger samme faktureringsklassifikation. Hvis du ikke opretter en separat refusion for hver faktureringsklassifikation, vil posteringerne for konto 1110 blive kombineret, og kun tre refusionsposteringer vil blive oprettet.
+<span data-ttu-id="6d034-119">De beløb, der går til konto 3210, kombineres, fordi de begge bruger samme faktureringsklassifikation.</span><span class="sxs-lookup"><span data-stu-id="6d034-119">The amounts going to account 3210 are combined, because they both use the same billing classification.</span></span> <span data-ttu-id="6d034-120">De beløb, der går til konto 1110, kombineres ikke, fordi de ikke bruger samme faktureringsklassifikation.</span><span class="sxs-lookup"><span data-stu-id="6d034-120">The amounts going to account 1110 are not combined, because they do not use the same billing classification.</span></span> <span data-ttu-id="6d034-121">Hvis du ikke opretter en separat refusion for hver faktureringsklassifikation, vil posteringerne for konto 1110 blive kombineret, og kun tre refusionsposteringer vil blive oprettet.</span><span class="sxs-lookup"><span data-stu-id="6d034-121">If you do not create a separate reimbursement for each billing classification, the transactions for account 1110 would be combined, and only three reimbursement transactions would be created.</span></span>
 
-## <a name="how-do-billing-classifications-affect-reimbursements-for-overpayments"></a>Hvordan påvirker faktureringsklassifikationer refusioner for overbetalinger?
-Det gør de ikke. Faktureringsklassifikationer anvendes aldrig til debitorbetalinger, så de bruges ikke ved behandling af refusioner for overbetalinger.
+## <a name="how-do-billing-classifications-affect-reimbursements-for-overpayments"></a><span data-ttu-id="6d034-122">Hvordan påvirker faktureringsklassifikationer refusioner for overbetalinger?</span><span class="sxs-lookup"><span data-stu-id="6d034-122">How do billing classifications affect reimbursements for overpayments?</span></span>
+<span data-ttu-id="6d034-123">Det gør de ikke.</span><span class="sxs-lookup"><span data-stu-id="6d034-123">They don’t.</span></span> <span data-ttu-id="6d034-124">Faktureringsklassifikationer anvendes aldrig til debitorbetalinger, så de bruges ikke ved behandling af refusioner for overbetalinger.</span><span class="sxs-lookup"><span data-stu-id="6d034-124">Billing classifications are never applied to customer payments, so they aren’t used when processing reimbursements for overpayments.</span></span>
 
-## <a name="can-i-process-a-reimbursement-for-a-customer-who-has-outstanding-debit-transactions"></a>Er det muligt at behandle en refusion til en kunde, der har udestående debiteringer?
-Ja. Hvis du vil behandle en refusion for en kunde med udestående debiteringer, skal du bruge filtre på siden refusion til at vælge debitoren og vælge indstillingen for at medtage debitorer med udestående debiteringer. Når du gør dette, oprettes refusionsposteringer for det fulde beløb af alle kundens kreditposteringer. De udestående debetbeløb er ikke trukket fra kreditbeløbene.
+## <a name="can-i-process-a-reimbursement-for-a-customer-who-has-outstanding-debit-transactions"></a><span data-ttu-id="6d034-125">Er det muligt at behandle en refusion til en kunde, der har udestående debiteringer?</span><span class="sxs-lookup"><span data-stu-id="6d034-125">Can I process a reimbursement for a customer who has outstanding debit transactions?</span></span>
+<span data-ttu-id="6d034-126">Ja.</span><span class="sxs-lookup"><span data-stu-id="6d034-126">Yes.</span></span> <span data-ttu-id="6d034-127">Hvis du vil behandle en refusion for en kunde med udestående debiteringer, skal du bruge filtre på siden refusion til at vælge debitoren og vælge indstillingen for at medtage debitorer med udestående debiteringer.</span><span class="sxs-lookup"><span data-stu-id="6d034-127">If you need to process a reimbursement for a customer with outstanding debit transactions, use the filters on the reimbursement page to select the customer, and select the option to include customers with outstanding debit transactions.</span></span> <span data-ttu-id="6d034-128">Når du gør dette, oprettes refusionsposteringer for det fulde beløb af alle kundens kreditposteringer.</span><span class="sxs-lookup"><span data-stu-id="6d034-128">When you do this, reimbursement transactions are created for the full amount of all of the customer’s credit transactions.</span></span> <span data-ttu-id="6d034-129">De udestående debetbeløb er ikke trukket fra kreditbeløbene.</span><span class="sxs-lookup"><span data-stu-id="6d034-129">The outstanding debit amounts are not deducted from the credit amounts.</span></span>
 
-## <a name="can-i-process-reimbursements-for-customers-who-have-pending-settlements"></a>Kan jeg ikke behandle refusioner for kunder, der har ventende udligninger?
-Nr. Refusioner behandles ikke for en kunde, der har ventende udligninger, der ikke er blevet bogført til journalen.
+## <a name="can-i-process-reimbursements-for-customers-who-have-pending-settlements"></a><span data-ttu-id="6d034-130">Kan jeg ikke behandle refusioner for kunder, der har ventende udligninger?</span><span class="sxs-lookup"><span data-stu-id="6d034-130">Can I process reimbursements for customers who have pending settlements?</span></span>
+<span data-ttu-id="6d034-131">Nr.</span><span class="sxs-lookup"><span data-stu-id="6d034-131">No.</span></span> <span data-ttu-id="6d034-132">Refusioner behandles ikke for en kunde, der har ventende udligninger, der ikke er blevet bogført til journalen.</span><span class="sxs-lookup"><span data-stu-id="6d034-132">Reimbursements are not processed for any customer who has pending settlements that have not been posted to the journal.</span></span>
 
-## <a name="can-i-reverse-reimbursement-settlements"></a>Kan jeg fortryde refusionsudligninger?
-Nej, ikke direkte. Du kan dog bruge finanskladdeposter til at oprette posteringer, der ville medføre tilbageførsel af finansposterne.
+## <a name="can-i-reverse-reimbursement-settlements"></a><span data-ttu-id="6d034-133">Kan jeg fortryde refusionsudligninger?</span><span class="sxs-lookup"><span data-stu-id="6d034-133">Can I reverse reimbursement settlements?</span></span>
+<span data-ttu-id="6d034-134">Nej, ikke direkte.</span><span class="sxs-lookup"><span data-stu-id="6d034-134">No, not directly.</span></span> <span data-ttu-id="6d034-135">Du kan dog bruge finanskladdeposter til at oprette posteringer, der ville medføre tilbageførsel af finansposterne.</span><span class="sxs-lookup"><span data-stu-id="6d034-135">However, you could use general journal entries to create transactions that would have the effect of reversing the general ledger entries.</span></span>
 
 
 

@@ -16,157 +16,157 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5549534700360776ad409c2324a4d84bcde005f9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: aa173138eaf0178f2a942a88eafe80d4bac4d6a8
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Redigere model og tilknytning for at generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)
+# <a name="modify-model-and-mapping-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a><span data-ttu-id="7d52c-103">Redigere model og tilknytning for at generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="7d52c-103">Modify model and mapping to generate documents with application data update for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 2: Generere dokumenter)". 
+<span data-ttu-id="7d52c-104">For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 2: Generere dokumenter)".</span><span class="sxs-lookup"><span data-stu-id="7d52c-104">To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 2: Generate documents)”.</span></span> 
 
-I denne procedure forklares det, hvordan du designer elektroniske rapportering (ER) konfigurationer for at generere et elektronisk dokument og opdatere programdata. I denne procedure skal redigere du ER-konfigurationerne for at begynde at bruge dem til at generere elektroniske dokumenter og opdatere programdata. Denne procedure er til brugere, der er tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Disse trin kan udføres ved hjælp af DEMF-datasættet.
+<span data-ttu-id="7d52c-105">I denne procedure forklares det, hvordan du designer elektroniske rapportering (ER) konfigurationer for at generere et elektronisk dokument og opdatere programdata.</span><span class="sxs-lookup"><span data-stu-id="7d52c-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="7d52c-106">I denne procedure skal redigere du ER-konfigurationerne for at begynde at bruge dem til at generere elektroniske dokumenter og opdatere programdata.</span><span class="sxs-lookup"><span data-stu-id="7d52c-106">In this procedure, you will modify the ER configurations to start using them to generate electronic documents and update application data.</span></span> <span data-ttu-id="7d52c-107">Denne procedure er til brugere, der er tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler.</span><span class="sxs-lookup"><span data-stu-id="7d52c-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="7d52c-108">Disse trin kan udføres ved hjælp af DEMF-datasættet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-108">These steps can be completed using the DEMF dataset.</span></span>
 
 
-## <a name="modify-data-model"></a>Rediger datamodel
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-2. Vælg 'Intrastat (model)' i træet.
-    * Du skal udvide brugen af datamodellen. Ud over at bruge den som datakilde for at generere Intrastat-rapporten, bruges datamodellen til at indsamle oplysninger om Intrastat-rapporteringsprocessen. Oplysningerne bruges derefter til at opdatere programdata.   
-3. Klik på Designer.
-4. Klik på Ny for at åbne dialogboksen Fjern.
-5. Skriv "Modelrod" i feltet Ny node som felt.
-6. Skriv 'Til opdatering af programdata' i feltet Navn.
-    * Til opdatering af programdata  
-7. Klik på Tilføj.
-8. Vælg 'Til opdatering af programdata' i træet.
-    * Det nye rodelement tilføjes for at angive det dataflow, der skal bruges til at flytte data fra Intrastat-rapporten (brugt som datakilde) til programtabellerne (opdateringsdestinationen). Bemærk, at de forskellige rodelementer skal bruges til at hente data, der bogføres i det udgående dokument, og til at hente data fra det dokument, der bruges til at opdatere programdata.   
-9. Klik på Ny for at åbne dialogboksen Fjern.
-10. Skriv 'Arkivoverskrift' i feltet Navn.
-    * Arkivoverskrift  
-11. Vælg "Liste over poster" i feltet Varetype.
-12. Klik på Tilføj.
-    * Eftersom du skal oprette en post for hver Intrastat-rapport, der oprettes, skal du oprette et nyt element til den.  
-13. Klik på Ny for at åbne dialogboksen Fjern.
-14. Skriv "Filnavn" i feltet Navn.
-    * Filnavn  
-15. Vælg "Streng" i feltet Varetype.
-16. Klik på Tilføj.
-17. Klik på Ny for at åbne dialogboksen Fjern.
-18. Skriv "Antal linjer" i feltet Navn.
-    * Antal linjer  
-19. Vælg "Heltal" i feltet Varetype.
-20. Klik på Tilføj.
-    * Tilføj dette element for at repræsenterer antallet af Intrastat-posteringer, der rapporteres i den aktuelle rapporteringsproces.  
-21. Klik på Ny for at åbne dialogboksen Fjern.
-22. Skriv 'Arkivér linjer' i feltet Navn.
-    * Arkivér linjer  
-23. Vælg "Liste over poster" i feltet Varetype.
-24. Klik på Tilføj.
-    * Tilføj dette element for at repræsenterer listen over Intrastat-posteringer, der rapporteres i den aktuelle rapporteringsproces.  
-25. Klik på Ny for at åbne dialogboksen Fjern.
-26. Skriv "Beløb" i feltet Navn.
-    * Beløb  
-27. Vælg "Kommatal" i feltet Varetype.
-28. Klik på Tilføj.
-29. Klik på Ny for at åbne dialogboksen Fjern.
-30. Skriv 'Varepost-id' i feltet Navn.
-    * Varepost-id  
-31. Vælg 'Int64' i feltet Varetype.
-32. Klik på Tilføj.
-33. Klik på Ny for at åbne dialogboksen Fjern.
-34. Skriv 'Varenummer' i feltet Navn.
-    * varenummer  
-35. Vælg "Streng" i feltet Varetype.
-36. Klik på Tilføj.
-37. Klik på Gem.
-38. Luk siden.
+## <a name="modify-data-model"></a><span data-ttu-id="7d52c-109">Rediger datamodel</span><span class="sxs-lookup"><span data-stu-id="7d52c-109">Modify data model</span></span>
+1. <span data-ttu-id="7d52c-110">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="7d52c-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="7d52c-111">Vælg 'Intrastat (model)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-111">In the tree, select 'Intrastat (model)'.</span></span>
+    * <span data-ttu-id="7d52c-112">Du skal udvide brugen af datamodellen.</span><span class="sxs-lookup"><span data-stu-id="7d52c-112">You will extend how you use the data model.</span></span> <span data-ttu-id="7d52c-113">Ud over at bruge den som datakilde for at generere Intrastat-rapporten, bruges datamodellen til at indsamle oplysninger om Intrastat-rapporteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="7d52c-113">Besides using it as data source to generate the Intrastat report, the data model will be used to collect details about the Intrastat reporting process.</span></span> <span data-ttu-id="7d52c-114">Oplysningerne bruges derefter til at opdatere programdata.</span><span class="sxs-lookup"><span data-stu-id="7d52c-114">The details will then be used to update application data.</span></span>   
+3. <span data-ttu-id="7d52c-115">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="7d52c-115">Click Designer.</span></span>
+4. <span data-ttu-id="7d52c-116">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-116">Click New to open the drop dialog.</span></span>
+5. <span data-ttu-id="7d52c-117">Skriv "Modelrod" i feltet Ny node som felt.</span><span class="sxs-lookup"><span data-stu-id="7d52c-117">In the New node as a field, enter 'Model root'.</span></span>
+6. <span data-ttu-id="7d52c-118">Skriv 'Til opdatering af programdata' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-118">In the Name field, type 'For application data update'.</span></span>
+    * <span data-ttu-id="7d52c-119">Til opdatering af programdata</span><span class="sxs-lookup"><span data-stu-id="7d52c-119">For application data update</span></span>  
+7. <span data-ttu-id="7d52c-120">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-120">Click Add.</span></span>
+8. <span data-ttu-id="7d52c-121">Vælg 'Til opdatering af programdata' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-121">In the tree, select 'For application data update'.</span></span>
+    * <span data-ttu-id="7d52c-122">Det nye rodelement tilføjes for at angive det dataflow, der skal bruges til at flytte data fra Intrastat-rapporten (brugt som datakilde) til programtabellerne (opdateringsdestinationen).</span><span class="sxs-lookup"><span data-stu-id="7d52c-122">This new root item is added to specify the data flow for moving data from the Intrastat report (used as a data source) to the application tables (the update destination).</span></span> <span data-ttu-id="7d52c-123">Bemærk, at de forskellige rodelementer skal bruges til at hente data, der bogføres i det udgående dokument, og til at hente data fra det dokument, der bruges til at opdatere programdata.</span><span class="sxs-lookup"><span data-stu-id="7d52c-123">Note that different root items must be used for getting data that is posted to the outgoing document and for getting data from the document that is used to update application data.</span></span>   
+9. <span data-ttu-id="7d52c-124">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-124">Click New to open the drop dialog.</span></span>
+10. <span data-ttu-id="7d52c-125">Skriv 'Arkivoverskrift' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-125">In the Name field, type 'Archive header'.</span></span>
+    * <span data-ttu-id="7d52c-126">Arkivoverskrift</span><span class="sxs-lookup"><span data-stu-id="7d52c-126">Archive header</span></span>  
+11. <span data-ttu-id="7d52c-127">Vælg "Liste over poster" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-127">In the Item type field, select 'Record list'.</span></span>
+12. <span data-ttu-id="7d52c-128">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-128">Click Add.</span></span>
+    * <span data-ttu-id="7d52c-129">Eftersom du skal oprette en post for hver Intrastat-rapport, der oprettes, skal du oprette et nyt element til den.</span><span class="sxs-lookup"><span data-stu-id="7d52c-129">Because you will create a record for each Intrastat report that is generated, you must create a new item for that.</span></span>  
+13. <span data-ttu-id="7d52c-130">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-130">Click New to open the drop dialog.</span></span>
+14. <span data-ttu-id="7d52c-131">Skriv "Filnavn" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-131">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="7d52c-132">Filnavn</span><span class="sxs-lookup"><span data-stu-id="7d52c-132">File name</span></span>  
+15. <span data-ttu-id="7d52c-133">Vælg "Streng" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-133">In the Item type field, select 'String'.</span></span>
+16. <span data-ttu-id="7d52c-134">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-134">Click Add.</span></span>
+17. <span data-ttu-id="7d52c-135">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-135">Click New to open the drop dialog.</span></span>
+18. <span data-ttu-id="7d52c-136">Skriv "Antal linjer" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-136">In the Name field, type 'Number of lines'.</span></span>
+    * <span data-ttu-id="7d52c-137">Antal linjer</span><span class="sxs-lookup"><span data-stu-id="7d52c-137">Number of lines</span></span>  
+19. <span data-ttu-id="7d52c-138">Vælg "Heltal" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-138">In the Item type field, select 'Integer'.</span></span>
+20. <span data-ttu-id="7d52c-139">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-139">Click Add.</span></span>
+    * <span data-ttu-id="7d52c-140">Tilføj dette element for at repræsenterer antallet af Intrastat-posteringer, der rapporteres i den aktuelle rapporteringsproces.</span><span class="sxs-lookup"><span data-stu-id="7d52c-140">Add this item to represent the number of Intrastat transactions that are reported during the current reporting process.</span></span>  
+21. <span data-ttu-id="7d52c-141">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-141">Click New to open the drop dialog.</span></span>
+22. <span data-ttu-id="7d52c-142">Skriv 'Arkivér linjer' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-142">In the Name field, type 'Archive lines'.</span></span>
+    * <span data-ttu-id="7d52c-143">Arkivér linjer</span><span class="sxs-lookup"><span data-stu-id="7d52c-143">Archive lines</span></span>  
+23. <span data-ttu-id="7d52c-144">Vælg "Liste over poster" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-144">In the Item type field, select 'Record list'.</span></span>
+24. <span data-ttu-id="7d52c-145">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-145">Click Add.</span></span>
+    * <span data-ttu-id="7d52c-146">Tilføj dette element for at repræsenterer listen over Intrastat-posteringer, der rapporteres i den aktuelle rapporteringsproces.</span><span class="sxs-lookup"><span data-stu-id="7d52c-146">Add this item to represent the list of Intrastat transactions that are reported during the current reporting process.</span></span>  
+25. <span data-ttu-id="7d52c-147">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-147">Click New to open the drop dialog.</span></span>
+26. <span data-ttu-id="7d52c-148">Skriv "Beløb" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-148">In the Name field, type 'Amount'.</span></span>
+    * <span data-ttu-id="7d52c-149">Beløb</span><span class="sxs-lookup"><span data-stu-id="7d52c-149">Amount</span></span>  
+27. <span data-ttu-id="7d52c-150">Vælg "Kommatal" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-150">In the Item type field, select 'Real'.</span></span>
+28. <span data-ttu-id="7d52c-151">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-151">Click Add.</span></span>
+29. <span data-ttu-id="7d52c-152">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-152">Click New to open the drop dialog.</span></span>
+30. <span data-ttu-id="7d52c-153">Skriv 'Varepost-id' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-153">In the Name field, type 'Commodity rec id'.</span></span>
+    * <span data-ttu-id="7d52c-154">Varepost-id</span><span class="sxs-lookup"><span data-stu-id="7d52c-154">Commodity rec id</span></span>  
+31. <span data-ttu-id="7d52c-155">Vælg 'Int64' i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-155">In the Item type field, select 'Int64'.</span></span>
+32. <span data-ttu-id="7d52c-156">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-156">Click Add.</span></span>
+33. <span data-ttu-id="7d52c-157">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="7d52c-157">Click New to open the drop dialog.</span></span>
+34. <span data-ttu-id="7d52c-158">Skriv 'Varenummer' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-158">In the Name field, type 'Item number'.</span></span>
+    * <span data-ttu-id="7d52c-159">varenummer</span><span class="sxs-lookup"><span data-stu-id="7d52c-159">Item number</span></span>  
+35. <span data-ttu-id="7d52c-160">Vælg "Streng" i feltet Varetype.</span><span class="sxs-lookup"><span data-stu-id="7d52c-160">In the Item type field, select 'String'.</span></span>
+36. <span data-ttu-id="7d52c-161">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-161">Click Add.</span></span>
+37. <span data-ttu-id="7d52c-162">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="7d52c-162">Click Save.</span></span>
+38. <span data-ttu-id="7d52c-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="7d52c-163">Close the page.</span></span>
 
-## <a name="modify-model-mapping"></a>Rediger modeltilknytning
-1. Udvid 'Intrastat (model)' i træet.
-2. Vælg 'Intrastat (model)\Intrastat (tilknytning)' i træet.
-    * Rediger den eksisterende modeltilknytning for at begynde at bruge den til opdateringen af programdata og arkivere Intrastat-rapporteringsdetaljer.  
-3. Klik på Designer.
-4. Klik på Ny.
-5. Skriv 'Opdater arkiv' i feltet Navn.
-    * Opdater arkiv  
-6. Vælg 'Til destination' i feltet Retning.
-7. Klik på Gem.
-    * Denne nye tilknytning angiver det dataflow, der skal bruges til at flytte data (Intrastat-rapporteringsdetaljer) fra datamodellen til programtabellerne (opdateringsdestinationen). Bemærk, at en anden models rodelementer skal bruges til at hente data fra programmet til rapporteringsprocessen og derefter bruge dataene fra datamodellen til programdataopdateringen.   
-8. Klik på Designer.
-9. Vælg 'Datamodel\Datamodel' i træet.
-    * Tilføj den krævede datakilde. Dette er den datamodel, der indeholder oplysninger om de rapporterede Intrastat-transaktioner, der skal arkiveres.  
-10. Klik på Tilføj rod.
-11. Skriv 'model' i feltet Navn.
-    * model  
-12. Angiv eller vælg værdien 'Til opdatering af programdata' i feltet Definition.
-    * Til opdatering af programdata  
-13. Klik på OK.
-14. Udvid 'model' i træet.
-15. Vælg "Funktioner\Beregnet felt" i træet.
-16. Vælg 'model\Arkivér overskrift' i træet.
-17. Klik på Tilføj.
-    * Datakilden skal tilføjes, fordi du skal optælle Intrastat-posteringer, der er rapporteret til arkivering.  
-18. Skriv 'Optalte linjer' i feltet Navn.
-    * Optalte linjer  
-19. Klik på Rediger formel.
-20. Vælg 'Liste\ENUMERATE' i træet.
-21. Klik på Tilføj funktion.
-22. Udvid 'model' i træet.
-23. Udvid 'model\Arkivér overskrift' i træet.
-24. Vælg 'model\Arkivér overskrift\Arkivér linjer' i træet.
-25. Klik på Tilføj datakilde.
-26. Angiv 'ENUMERATE(model.'Arkivér overskrift.'Arkivér linjer)' i feltet Formel.
-    * ENUMERATE(model. 'Arkivoverskrift'.' Arkivér linjer)  
-27. Klik på Gem.
-28. Luk siden.
-29. Klik på OK.
-30. Klik på Tilføj destination.
-    * Tilføj programtabeller som krævede destinationer, der skal opdateres for at arkivere oplysninger om rapporterede Intrastat-transaktioner.  
-31. Skriv 'Arkiv' i feltet Navn.
-    * Arkivér  
-32. Gå til feltet Tabelnavn, og skriv 'IntrastatArchiveGeneral'.
-    * IntrastatArchiveGeneral  
-    * Behold posthandlingen "Indsæt", så du kan tilføje poster under arkiveringen af detaljer for hver Intrastat-rapporteringsproces.  
-33. Vælg Ja i feltet Postinfolog.
-    * Vælg Ja for at få oplysninger om problemer med programdataopdateringen.  
-34. Vælg Ja i feltet Undlad validering af posthandling.
-    * Vælg Ja for at forhindre valideringsfejl for det tomme felt 'Id for Intrastat-arkiv'. Dette sker, når der er tilføjet poster, baseret på rækkefølgen af talindstillinger, der er konfigureret for denne tabel i formularen Udenrigshandelsparametre.  
-35. Klik på OK.
-    * Bind elementer i den tilføjede datakilde (den filtrerede model, der er baseret på det valgte rodelement) til elementer fra den tilføjede destination.  
-36. Udvid 'Arkivér' i træet.
-37. Udvid 'Arkivér\<Relationer' i træet.
-38. Udvid 'Arkivér\<Relationer\IntrastatArchiveDetail' i træet.
-39. Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Beløb(AmountMST)' i træet.
-40. Udvid 'model\Arkivér overskrift\Optalte linjer' i træet.
-41. Udvid 'model\Arkivér overskrift\Optalte linjer\Værdi' i træet.
-42. Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Beløb' i træet.
-43. Klik på Bind.
-44. Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Vare(IntrastatCommodity)' i træet.
-45. Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Varepost-id' i træet.
-46. Klik på Bind.
-47. Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Varenummer(ItemId)' i træet.
-48. Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Varenummer' i træet.
-49. Klik på Bind.
-50. Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Linjenummer(LineNumber)' i træet.
-51. Vælg 'model\Arkivér overskrift\Optalte linjer\Nummer' i træet.
-52. Klik på Bind.
-53. Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail' i træet.
-54. Vælg 'model\Arkivér overskrift\Optalte linjer' i træet.
-55. Klik på Bind.
-56. Vælg 'Arkivér\Filnavn(FileName)' i træet.
-57. Vælg 'model\Arkivér overskrift\Filnavn' i træet.
-58. Klik på Bind.
-59. Vælg 'Arkivér\Antal linjer(NumberOfLines)' i træet.
-60. Vælg 'model\Arkivér overskrift\Antal linjer' i træet.
-61. Klik på Bind.
-62. Vælg 'Arkivér' i træet.
-63. Vælg 'model\Arkivér overskrift' i træet.
-64. Klik på Bind.
-65. Klik på Gem.
-66. Luk siden.
-67. Luk siden.
+## <a name="modify-model-mapping"></a><span data-ttu-id="7d52c-164">Rediger modeltilknytning</span><span class="sxs-lookup"><span data-stu-id="7d52c-164">Modify model mapping</span></span>
+1. <span data-ttu-id="7d52c-165">Udvid 'Intrastat (model)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-165">In the tree, expand 'Intrastat (model)'.</span></span>
+2. <span data-ttu-id="7d52c-166">Vælg 'Intrastat (model)\Intrastat (tilknytning)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-166">In the tree, select 'Intrastat (model)\Intrastat (mapping)'.</span></span>
+    * <span data-ttu-id="7d52c-167">Rediger den eksisterende modeltilknytning for at begynde at bruge den til opdateringen af programdata og arkivere Intrastat-rapporteringsdetaljer.</span><span class="sxs-lookup"><span data-stu-id="7d52c-167">Modify the existing model mapping to start using it for  the application data update and to archive Intrastat reporting details.</span></span>  
+3. <span data-ttu-id="7d52c-168">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="7d52c-168">Click Designer.</span></span>
+4. <span data-ttu-id="7d52c-169">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="7d52c-169">Click New.</span></span>
+5. <span data-ttu-id="7d52c-170">Skriv 'Opdater arkiv' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-170">In the Name field, type 'Update archive'.</span></span>
+    * <span data-ttu-id="7d52c-171">Opdater arkiv</span><span class="sxs-lookup"><span data-stu-id="7d52c-171">Update archive</span></span>  
+6. <span data-ttu-id="7d52c-172">Vælg 'Til destination' i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="7d52c-172">In the Direction field, select 'To destination'.</span></span>
+7. <span data-ttu-id="7d52c-173">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="7d52c-173">Click Save.</span></span>
+    * <span data-ttu-id="7d52c-174">Denne nye tilknytning angiver det dataflow, der skal bruges til at flytte data (Intrastat-rapporteringsdetaljer) fra datamodellen til programtabellerne (opdateringsdestinationen).</span><span class="sxs-lookup"><span data-stu-id="7d52c-174">This new mapping specifies the data flow for moving data (Intrastat reporting details) from the data model to the application tables (the update destination).</span></span> <span data-ttu-id="7d52c-175">Bemærk, at en anden models rodelementer skal bruges til at hente data fra programmet til rapporteringsprocessen og derefter bruge dataene fra datamodellen til programdataopdateringen.</span><span class="sxs-lookup"><span data-stu-id="7d52c-175">Note that different model’s root items must be used to get data from the application for the reporting process and then use the data from data model for the application data update.</span></span>   
+8. <span data-ttu-id="7d52c-176">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="7d52c-176">Click Designer.</span></span>
+9. <span data-ttu-id="7d52c-177">Vælg 'Datamodel\Datamodel' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-177">In the tree, select 'Data model\Data model'.</span></span>
+    * <span data-ttu-id="7d52c-178">Tilføj den krævede datakilde.</span><span class="sxs-lookup"><span data-stu-id="7d52c-178">Add the required data source.</span></span> <span data-ttu-id="7d52c-179">Dette er den datamodel, der indeholder oplysninger om de rapporterede Intrastat-transaktioner, der skal arkiveres.</span><span class="sxs-lookup"><span data-stu-id="7d52c-179">This is the data model that contains details of the reported Intrastat transactions that must be archived.</span></span>  
+10. <span data-ttu-id="7d52c-180">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="7d52c-180">Click Add root.</span></span>
+11. <span data-ttu-id="7d52c-181">Skriv 'model' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-181">In the Name field, type 'model'.</span></span>
+    * <span data-ttu-id="7d52c-182">model</span><span class="sxs-lookup"><span data-stu-id="7d52c-182">model</span></span>  
+12. <span data-ttu-id="7d52c-183">Angiv eller vælg værdien 'Til opdatering af programdata' i feltet Definition.</span><span class="sxs-lookup"><span data-stu-id="7d52c-183">In the Definition field, enter or select the value ‘For application data update’.</span></span>
+    * <span data-ttu-id="7d52c-184">Til opdatering af programdata</span><span class="sxs-lookup"><span data-stu-id="7d52c-184">For application data update</span></span>  
+13. <span data-ttu-id="7d52c-185">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7d52c-185">Click OK.</span></span>
+14. <span data-ttu-id="7d52c-186">Udvid 'model' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-186">In the tree, expand 'model'.</span></span>
+15. <span data-ttu-id="7d52c-187">Vælg "Funktioner\Beregnet felt" i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-187">In the tree, select 'Functions\Calculated field'.</span></span>
+16. <span data-ttu-id="7d52c-188">Vælg 'model\Arkivér overskrift' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-188">In the tree, select 'model\Archive header'.</span></span>
+17. <span data-ttu-id="7d52c-189">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="7d52c-189">Click Add.</span></span>
+    * <span data-ttu-id="7d52c-190">Datakilden skal tilføjes, fordi du skal optælle Intrastat-posteringer, der er rapporteret til arkivering.</span><span class="sxs-lookup"><span data-stu-id="7d52c-190">Because you want to enumerate reported Intrastat transactions for archiving, the appropriate data source must be added.</span></span>  
+18. <span data-ttu-id="7d52c-191">Skriv 'Optalte linjer' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-191">In the Name field, type 'Enumerated lines'.</span></span>
+    * <span data-ttu-id="7d52c-192">Optalte linjer</span><span class="sxs-lookup"><span data-stu-id="7d52c-192">Enumerated lines</span></span>  
+19. <span data-ttu-id="7d52c-193">Klik på Rediger formel.</span><span class="sxs-lookup"><span data-stu-id="7d52c-193">Click Edit formula.</span></span>
+20. <span data-ttu-id="7d52c-194">Vælg 'Liste\ENUMERATE' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-194">In the tree, select 'List\ENUMERATE'.</span></span>
+21. <span data-ttu-id="7d52c-195">Klik på Tilføj funktion.</span><span class="sxs-lookup"><span data-stu-id="7d52c-195">Click Add function.</span></span>
+22. <span data-ttu-id="7d52c-196">Udvid 'model' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-196">In the tree, expand 'model'.</span></span>
+23. <span data-ttu-id="7d52c-197">Udvid 'model\Arkivér overskrift' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-197">In the tree, expand 'model\Archive header'.</span></span>
+24. <span data-ttu-id="7d52c-198">Vælg 'model\Arkivér overskrift\Arkivér linjer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-198">In the tree, select 'model\Archive header\Archive lines'.</span></span>
+25. <span data-ttu-id="7d52c-199">Klik på Tilføj datakilde.</span><span class="sxs-lookup"><span data-stu-id="7d52c-199">Click Add data source.</span></span>
+26. <span data-ttu-id="7d52c-200">Angiv 'ENUMERATE(model.'Arkivér overskrift.'Arkivér linjer)' i feltet Formel.</span><span class="sxs-lookup"><span data-stu-id="7d52c-200">In the Formula field, enter 'ENUMERATE(model.'Archive header'.'Archive lines')'.</span></span>
+    * <span data-ttu-id="7d52c-201">ENUMERATE(model. 'Arkivoverskrift'.' Arkivér linjer)</span><span class="sxs-lookup"><span data-stu-id="7d52c-201">ENUMERATE(model.'Archive header'.'Archive lines')</span></span>  
+27. <span data-ttu-id="7d52c-202">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="7d52c-202">Click Save.</span></span>
+28. <span data-ttu-id="7d52c-203">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="7d52c-203">Close the page.</span></span>
+29. <span data-ttu-id="7d52c-204">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7d52c-204">Click OK.</span></span>
+30. <span data-ttu-id="7d52c-205">Klik på Tilføj destination.</span><span class="sxs-lookup"><span data-stu-id="7d52c-205">Click Add destination.</span></span>
+    * <span data-ttu-id="7d52c-206">Tilføj programtabeller som krævede destinationer, der skal opdateres for at arkivere oplysninger om rapporterede Intrastat-transaktioner.</span><span class="sxs-lookup"><span data-stu-id="7d52c-206">Add application tables as required destinations that require updates to archive details of reported Intrastat transactions.</span></span>  
+31. <span data-ttu-id="7d52c-207">Skriv 'Arkiv' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="7d52c-207">In the Name field, type 'Archive'.</span></span>
+    * <span data-ttu-id="7d52c-208">Arkivér</span><span class="sxs-lookup"><span data-stu-id="7d52c-208">Archive</span></span>  
+32. <span data-ttu-id="7d52c-209">Gå til feltet Tabelnavn, og skriv 'IntrastatArchiveGeneral'.</span><span class="sxs-lookup"><span data-stu-id="7d52c-209">In the Table name field, type 'IntrastatArchiveGeneral'.</span></span>
+    * <span data-ttu-id="7d52c-210">IntrastatArchiveGeneral</span><span class="sxs-lookup"><span data-stu-id="7d52c-210">IntrastatArchiveGeneral</span></span>  
+    * <span data-ttu-id="7d52c-211">Behold posthandlingen "Indsæt", så du kan tilføje poster under arkiveringen af detaljer for hver Intrastat-rapporteringsproces.</span><span class="sxs-lookup"><span data-stu-id="7d52c-211">Keep the record action ‘Insert’ so you can add records during the detail archiving of each Intrastat reporting process.</span></span>  
+33. <span data-ttu-id="7d52c-212">Vælg Ja i feltet Postinfolog.</span><span class="sxs-lookup"><span data-stu-id="7d52c-212">Select Yes in the Record infolog field.</span></span>
+    * <span data-ttu-id="7d52c-213">Vælg Ja for at få oplysninger om problemer med programdataopdateringen.</span><span class="sxs-lookup"><span data-stu-id="7d52c-213">Select Yes to get information about issues with the application data update.</span></span>  
+34. <span data-ttu-id="7d52c-214">Vælg Ja i feltet Undlad validering af posthandling.</span><span class="sxs-lookup"><span data-stu-id="7d52c-214">Select Yes in the Skip record action validation field.</span></span>
+    * <span data-ttu-id="7d52c-215">Vælg Ja for at forhindre valideringsfejl for det tomme felt 'Id for Intrastat-arkiv'.</span><span class="sxs-lookup"><span data-stu-id="7d52c-215">Select Yes to suppress validation errors about the empty ‘Intrastat archive ID’ field.</span></span> <span data-ttu-id="7d52c-216">Dette sker, når der er tilføjet poster, baseret på rækkefølgen af talindstillinger, der er konfigureret for denne tabel i formularen Udenrigshandelsparametre.</span><span class="sxs-lookup"><span data-stu-id="7d52c-216">This will be done after records are added, based on the sequence number settings that are configured for this table in the Foreign trade parameters form.</span></span>  
+35. <span data-ttu-id="7d52c-217">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="7d52c-217">Click OK.</span></span>
+    * <span data-ttu-id="7d52c-218">Bind elementer i den tilføjede datakilde (den filtrerede model, der er baseret på det valgte rodelement) til elementer fra den tilføjede destination.</span><span class="sxs-lookup"><span data-stu-id="7d52c-218">Bind elements of the added data source (the filtered model based on the selected root item) with elements from the added destination.</span></span>  
+36. <span data-ttu-id="7d52c-219">Udvid 'Arkivér' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-219">In the tree, expand 'Archive'.</span></span>
+37. <span data-ttu-id="7d52c-220">Udvid 'Arkivér\<Relationer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-220">In the tree, expand 'Archive\<Relations'.</span></span>
+38. <span data-ttu-id="7d52c-221">Udvid 'Arkivér\<Relationer\IntrastatArchiveDetail' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-221">In the tree, expand 'Archive\<Relations\IntrastatArchiveDetail'.</span></span>
+39. <span data-ttu-id="7d52c-222">Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Beløb(AmountMST)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-222">In the tree, select 'Archive\<Relations\IntrastatArchiveDetail\Amount(AmountMST)'.</span></span>
+40. <span data-ttu-id="7d52c-223">Udvid 'model\Arkivér overskrift\Optalte linjer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-223">In the tree, expand 'model\Archive header\Enumerated lines'.</span></span>
+41. <span data-ttu-id="7d52c-224">Udvid 'model\Arkivér overskrift\Optalte linjer\Værdi' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-224">In the tree, expand 'model\Archive header\Enumerated lines\Value'.</span></span>
+42. <span data-ttu-id="7d52c-225">Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Beløb' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-225">In the tree, select 'model\Archive header\Enumerated lines\Value\Amount'.</span></span>
+43. <span data-ttu-id="7d52c-226">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-226">Click Bind.</span></span>
+44. <span data-ttu-id="7d52c-227">Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Vare(IntrastatCommodity)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-227">In the tree, select 'Archive\<Relations\IntrastatArchiveDetail\Commodity(IntrastatCommodity)'.</span></span>
+45. <span data-ttu-id="7d52c-228">Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Varepost-id' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-228">In the tree, select 'model\Archive header\Enumerated lines\Value\Commodity rec id'.</span></span>
+46. <span data-ttu-id="7d52c-229">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-229">Click Bind.</span></span>
+47. <span data-ttu-id="7d52c-230">Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Varenummer(ItemId)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-230">In the tree, select 'Archive\<Relations\IntrastatArchiveDetail\Item number(ItemId)'.</span></span>
+48. <span data-ttu-id="7d52c-231">Vælg 'model\Arkivér overskrift\Optalte linjer\Værdi\Varenummer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-231">In the tree, select 'model\Archive header\Enumerated lines\Value\Item number'.</span></span>
+49. <span data-ttu-id="7d52c-232">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-232">Click Bind.</span></span>
+50. <span data-ttu-id="7d52c-233">Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail\Linjenummer(LineNumber)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-233">In the tree, select 'Archive\<Relations\IntrastatArchiveDetail\Line number(LineNumber)'.</span></span>
+51. <span data-ttu-id="7d52c-234">Vælg 'model\Arkivér overskrift\Optalte linjer\Nummer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-234">In the tree, select 'model\Archive header\Enumerated lines\Number'.</span></span>
+52. <span data-ttu-id="7d52c-235">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-235">Click Bind.</span></span>
+53. <span data-ttu-id="7d52c-236">Vælg 'Arkivér\<Relationer\IntrastatArchiveDetail' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-236">In the tree, select 'Archive\<Relations\IntrastatArchiveDetail'.</span></span>
+54. <span data-ttu-id="7d52c-237">Vælg 'model\Arkivér overskrift\Optalte linjer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-237">In the tree, select 'model\Archive header\Enumerated lines'.</span></span>
+55. <span data-ttu-id="7d52c-238">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-238">Click Bind.</span></span>
+56. <span data-ttu-id="7d52c-239">Vælg 'Arkivér\Filnavn(FileName)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-239">In the tree, select 'Archive\File name(FileName)'.</span></span>
+57. <span data-ttu-id="7d52c-240">Vælg 'model\Arkivér overskrift\Filnavn' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-240">In the tree, select 'model\Archive header\File name'.</span></span>
+58. <span data-ttu-id="7d52c-241">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-241">Click Bind.</span></span>
+59. <span data-ttu-id="7d52c-242">Vælg 'Arkivér\Antal linjer(NumberOfLines)' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-242">In the tree, select 'Archive\Number of lines(NumberOfLines)'.</span></span>
+60. <span data-ttu-id="7d52c-243">Vælg 'model\Arkivér overskrift\Antal linjer' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-243">In the tree, select 'model\Archive header\Number of lines'.</span></span>
+61. <span data-ttu-id="7d52c-244">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-244">Click Bind.</span></span>
+62. <span data-ttu-id="7d52c-245">Vælg 'Arkivér' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-245">In the tree, select 'Archive'.</span></span>
+63. <span data-ttu-id="7d52c-246">Vælg 'model\Arkivér overskrift' i træet.</span><span class="sxs-lookup"><span data-stu-id="7d52c-246">In the tree, select 'model\Archive header'.</span></span>
+64. <span data-ttu-id="7d52c-247">Klik på Bind.</span><span class="sxs-lookup"><span data-stu-id="7d52c-247">Click Bind.</span></span>
+65. <span data-ttu-id="7d52c-248">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="7d52c-248">Click Save.</span></span>
+66. <span data-ttu-id="7d52c-249">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="7d52c-249">Close the page.</span></span>
+67. <span data-ttu-id="7d52c-250">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="7d52c-250">Close the page.</span></span>
 
 

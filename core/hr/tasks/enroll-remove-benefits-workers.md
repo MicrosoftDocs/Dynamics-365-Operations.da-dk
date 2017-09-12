@@ -16,45 +16,45 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 146d62fef0da482d141276ddd2c73c43e7d29e46
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a0edbe6de43a1c99e2e5d8507f9190e6a7b04b8e
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enroll-and-remove-benefits-from-workers"></a>Tilmelde og fjerne frynsegoder fra arbejdere
+# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="5ff11-103">Tilmelde og fjerne frynsegoder fra arbejdere</span><span class="sxs-lookup"><span data-stu-id="5ff11-103">Enroll and remove benefits from workers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller flere frynsegoder, og hvordan flere arbejdere kan være tilmeldt et frynsegode. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+<span data-ttu-id="5ff11-104">Denne procedure viser, hvordan en enkelt medarbejder kan være tilmeldt et eller flere frynsegoder, og hvordan flere arbejdere kan være tilmeldt et frynsegode.</span><span class="sxs-lookup"><span data-stu-id="5ff11-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="5ff11-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="5ff11-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="enroll-a-single-worker-in-benefits"></a>Tilmelde en enkelt arbejder til frynsegoder
-1. Gå til Personale > Arbejdere > Medarbejdere
-2. Find og vælg den ønskede post på listen.
-3. Klik på Frynsegoder.
-4. Klik på Ny.
-5. Indtast eller vælg en værdi i feltet Frynsegode.
-6. Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.
-7. Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.
-8. Udvid sektionen Beneficianter, hvis modtagerne skal føjes til frynsegodet. Du kan også tilføje afhængige fra denne side, hvis de er relevante for frynsegodet.
-9. Du kan også redigere oplysningerne for en frynsegodetilmelding eller slette en tilmelding på denne side. Når du har udført ændringerne tilmeldingen til frynsegodet, skal du lukke siden.
+## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="5ff11-106">Tilmelde en enkelt arbejder til frynsegoder</span><span class="sxs-lookup"><span data-stu-id="5ff11-106">Enroll a single worker in benefits</span></span>
+1. <span data-ttu-id="5ff11-107">Gå til Personale > Arbejdere > Medarbejdere</span><span class="sxs-lookup"><span data-stu-id="5ff11-107">Go to Human resources > Workers > Employees</span></span>
+2. <span data-ttu-id="5ff11-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="5ff11-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="5ff11-109">Klik på Frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="5ff11-109">Click Benefits.</span></span>
+4. <span data-ttu-id="5ff11-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5ff11-110">Click New.</span></span>
+5. <span data-ttu-id="5ff11-111">Indtast eller vælg en værdi i feltet Frynsegode.</span><span class="sxs-lookup"><span data-stu-id="5ff11-111">In the Benefit field, enter or select a value.</span></span>
+6. <span data-ttu-id="5ff11-112">Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.</span><span class="sxs-lookup"><span data-stu-id="5ff11-112">In the Coverage start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="5ff11-113">Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.</span><span class="sxs-lookup"><span data-stu-id="5ff11-113">In the Coverage end date field, enter a date and time.</span></span>
+8. <span data-ttu-id="5ff11-114">Udvid sektionen Beneficianter, hvis modtagerne skal føjes til frynsegodet.</span><span class="sxs-lookup"><span data-stu-id="5ff11-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="5ff11-115">Du kan også tilføje afhængige fra denne side, hvis de er relevante for frynsegodet.</span><span class="sxs-lookup"><span data-stu-id="5ff11-115">You can also add dependents from this page if applicable to the benefit.</span></span>
+9. <span data-ttu-id="5ff11-116">Du kan også redigere oplysningerne for en frynsegodetilmelding eller slette en tilmelding på denne side.</span><span class="sxs-lookup"><span data-stu-id="5ff11-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="5ff11-117">Når du har udført ændringerne tilmeldingen til frynsegodet, skal du lukke siden.</span><span class="sxs-lookup"><span data-stu-id="5ff11-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
 
-## <a name="enroll-multiple-workers-in-a-benefit"></a>Tilmelde flere arbejdere til et frynsegode
-1. Luk siden.
-2. Gå til Personale > Arbejdere > Medarbejdere
-3. Markér den valgte række på listen.
-4. Find og vælg den ønskede post på listen.
-5. Find og vælg den ønskede post på listen.
-6. Klik på Tilmeld i frynsegoder.
-7. Indtast eller vælg en værdi i feltet Frynsegode.
-8. Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.
-9. Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.
-10. Klik på Tilmeld.
-11. Luk siden.
-12. Gå til Personale > Frynsegoder > Tilmelding > Resultater af tilmelding til frynsegoder
-13. Find den post med frynsegoderesultater, du søger efter.
-14. Klik op linket i den valgte række på listen.
-15. På denne side kan du få vist de medarbejdere, som er tilmeldt frynsegodet, samt alle medarbejdere, der ikke er tilmeldt.
+## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="5ff11-118">Tilmelde flere arbejdere til et frynsegode</span><span class="sxs-lookup"><span data-stu-id="5ff11-118">Enroll multiple workers in a benefit</span></span>
+1. <span data-ttu-id="5ff11-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5ff11-119">Close the page.</span></span>
+2. <span data-ttu-id="5ff11-120">Gå til Personale > Arbejdere > Medarbejdere</span><span class="sxs-lookup"><span data-stu-id="5ff11-120">Go to Human resources > Workers > Employees</span></span>
+3. <span data-ttu-id="5ff11-121">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5ff11-121">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="5ff11-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="5ff11-122">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="5ff11-123">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="5ff11-123">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="5ff11-124">Klik på Tilmeld i frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="5ff11-124">Click Enroll in benefits.</span></span>
+7. <span data-ttu-id="5ff11-125">Indtast eller vælg en værdi i feltet Frynsegode.</span><span class="sxs-lookup"><span data-stu-id="5ff11-125">In the Benefit field, enter or select a value.</span></span>
+8. <span data-ttu-id="5ff11-126">Angiv en dato og et klokkeslæt i feltet Gyldigheds startdato.</span><span class="sxs-lookup"><span data-stu-id="5ff11-126">In the Coverage start date field, enter a date and time.</span></span>
+9. <span data-ttu-id="5ff11-127">Angiv en dato og et klokkeslæt i feltet Gyldigheds slutdato.</span><span class="sxs-lookup"><span data-stu-id="5ff11-127">In the Coverage end date field, enter a date and time.</span></span>
+10. <span data-ttu-id="5ff11-128">Klik på Tilmeld.</span><span class="sxs-lookup"><span data-stu-id="5ff11-128">Click Enroll.</span></span>
+11. <span data-ttu-id="5ff11-129">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5ff11-129">Close the page.</span></span>
+12. <span data-ttu-id="5ff11-130">Gå til Personale > Frynsegoder > Tilmelding > Resultater af tilmelding til frynsegoder</span><span class="sxs-lookup"><span data-stu-id="5ff11-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
+13. <span data-ttu-id="5ff11-131">Find den post med frynsegoderesultater, du søger efter.</span><span class="sxs-lookup"><span data-stu-id="5ff11-131">Find the benefit results record that you are looking for.</span></span>
+14. <span data-ttu-id="5ff11-132">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5ff11-132">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="5ff11-133">På denne side kan du få vist de medarbejdere, som er tilmeldt frynsegodet, samt alle medarbejdere, der ikke er tilmeldt.</span><span class="sxs-lookup"><span data-stu-id="5ff11-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
 
 

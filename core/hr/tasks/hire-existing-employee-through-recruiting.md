@@ -16,29 +16,29 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 839f803690bef657078483a073ef363beefa6ee3
-ms.openlocfilehash: 59688ad50addaf4e5a6d76ef78990b303ff114fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5dfe5c25b299284267bed91d58e0acefb7250570
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="hire-an-existing-employee-through-recruiting"></a>Ansætte en eksisterende medarbejder gennem rekruttering
+# <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="1fa94-103">Ansætte en eksisterende medarbejder gennem rekruttering</span><span class="sxs-lookup"><span data-stu-id="1fa94-103">Hire an existing employee through recruiting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen. Denne fremgangsmåde fører dig gennem trinnene til at ansætte en eksisterende medarbejder gennem rekrutteringsprocessen. Et rekrutteringsprojekt allerede er oprettet i denne procedure, og en eksisterende medarbejder har allerede indsendt en ansøgning til rekrutteringsprojektet. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+<span data-ttu-id="1fa94-104">Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen.</span><span class="sxs-lookup"><span data-stu-id="1fa94-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="1fa94-105">Denne fremgangsmåde fører dig gennem trinnene til at ansætte en eksisterende medarbejder gennem rekrutteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="1fa94-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="1fa94-106">Et rekrutteringsprojekt allerede er oprettet i denne procedure, og en eksisterende medarbejder har allerede indsendt en ansøgning til rekrutteringsprojektet.</span><span class="sxs-lookup"><span data-stu-id="1fa94-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="1fa94-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="1fa94-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå til Personale > Rekruttering > Ansøgninger > Ansøgninger.
-2. Find ansøgningen for den medarbejder, du vil ansætte, på listen. Eksempel: 00002 John Emory
-3. Klik på Ansøgningsstatus.
-    * Ansøgningsstatussen angiver, hvor langt en ansøgningen er nået i rekrutteringsprocessen.  Hvert af disse trin er valgfrit. Typisk vil et program flytte statusser i følgende rækkefølge: modtaget, bekræftet og jobsamtale. Efter jobsamtalen træffes beslutning om ansættelse.  
-4. Klik på Skift Stilling.
-5. Vælg den stilling, du ansætter en medarbejder til.
-6. I feltet Ny startdato for tildeling skal du angive den dato, hvor medarbejderen begynder arbejdet i den nye stilling.  
-7. I feltet Slutdato for tildeling skal du angive den dato, hvor medarbejderen stopper arbejdet i den nuværende stilling.
-    * Startdatoen for den nye stilling og slutdatoen for den gamle stilling kan overlappe hinanden. Dette kan ske, når en person udfører opgaver i begge stillinger i en overgangsperiode.  
-8. Du kan eventuelt også vælge en årsagskode. Eksempel: Omorganisering
-9. Klik på Skift Stilling.
-    * Du kan også ændre kompensationen på nuværende tidspunkt. Hvis du ikke tildeler kompensation på dette tidspunkt, kan du ændre den ved at gå til arbejderformen, vælge fanen Kompensation og vælge "Fast Plan". Når du vælger "Skift stilling", opdateres statussen på ansøgning til "Ansat".  
+1. <span data-ttu-id="1fa94-108">Gå til Personale > Rekruttering > Ansøgninger > Ansøgninger.</span><span class="sxs-lookup"><span data-stu-id="1fa94-108">Go to Human resources > Recruitment > Applications > Applications.</span></span>
+2. <span data-ttu-id="1fa94-109">Find ansøgningen for den medarbejder, du vil ansætte, på listen.</span><span class="sxs-lookup"><span data-stu-id="1fa94-109">In the list, find application for the employee that you would like to hire.</span></span> <span data-ttu-id="1fa94-110">Eksempel: 00002 John Emory</span><span class="sxs-lookup"><span data-stu-id="1fa94-110">Example:  00002  John Emory</span></span>
+3. <span data-ttu-id="1fa94-111">Klik på Ansøgningsstatus.</span><span class="sxs-lookup"><span data-stu-id="1fa94-111">Click Application status.</span></span>
+    * <span data-ttu-id="1fa94-112">Ansøgningsstatussen angiver, hvor langt en ansøgningen er nået i rekrutteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="1fa94-112">The application status indicates where an application is at in the recruitment process.</span></span>  <span data-ttu-id="1fa94-113">Hvert af disse trin er valgfrit.</span><span class="sxs-lookup"><span data-stu-id="1fa94-113">Each of these steps is optional.</span></span> <span data-ttu-id="1fa94-114">Typisk vil et program flytte statusser i følgende rækkefølge: modtaget, bekræftet og jobsamtale.</span><span class="sxs-lookup"><span data-stu-id="1fa94-114">Typically, an application would move the statuses in the following order:  received, confirmed, and interviewed.</span></span> <span data-ttu-id="1fa94-115">Efter jobsamtalen træffes beslutning om ansættelse.</span><span class="sxs-lookup"><span data-stu-id="1fa94-115">After the interview process, a hiring decision would be made.</span></span>  
+4. <span data-ttu-id="1fa94-116">Klik på Skift Stilling.</span><span class="sxs-lookup"><span data-stu-id="1fa94-116">Click Change position.</span></span>
+5. <span data-ttu-id="1fa94-117">Vælg den stilling, du ansætter en medarbejder til.</span><span class="sxs-lookup"><span data-stu-id="1fa94-117">Select the position that you are hiring the employee into.</span></span>
+6. <span data-ttu-id="1fa94-118">I feltet Ny startdato for tildeling skal du angive den dato, hvor medarbejderen begynder arbejdet i den nye stilling.</span><span class="sxs-lookup"><span data-stu-id="1fa94-118">In the New Assignment Start Date field, enter the date that the employee will begin working in the new position.</span></span>  
+7. <span data-ttu-id="1fa94-119">I feltet Slutdato for tildeling skal du angive den dato, hvor medarbejderen stopper arbejdet i den nuværende stilling.</span><span class="sxs-lookup"><span data-stu-id="1fa94-119">In the Assignment end date, enter the date that the employee will stop working in their current position.</span></span>
+    * <span data-ttu-id="1fa94-120">Startdatoen for den nye stilling og slutdatoen for den gamle stilling kan overlappe hinanden.</span><span class="sxs-lookup"><span data-stu-id="1fa94-120">The starting date for the new position and the ending date of the old position may overlap.</span></span> <span data-ttu-id="1fa94-121">Dette kan ske, når en person udfører opgaver i begge stillinger i en overgangsperiode.</span><span class="sxs-lookup"><span data-stu-id="1fa94-121">This can happen when a person is performing duties for both positions during a transition period.</span></span>  
+8. <span data-ttu-id="1fa94-122">Du kan eventuelt også vælge en årsagskode.</span><span class="sxs-lookup"><span data-stu-id="1fa94-122">Optionally, you can select a reason code.</span></span> <span data-ttu-id="1fa94-123">Eksempel: Omorganisering</span><span class="sxs-lookup"><span data-stu-id="1fa94-123">Example: Reorganization</span></span>
+9. <span data-ttu-id="1fa94-124">Klik på Skift Stilling.</span><span class="sxs-lookup"><span data-stu-id="1fa94-124">Click Change position.</span></span>
+    * <span data-ttu-id="1fa94-125">Du kan også ændre kompensationen på nuværende tidspunkt.</span><span class="sxs-lookup"><span data-stu-id="1fa94-125">You may also change compensation at this time.</span></span> <span data-ttu-id="1fa94-126">Hvis du ikke tildeler kompensation på dette tidspunkt, kan du ændre den ved at gå til arbejderformen, vælge fanen Kompensation og vælge "Fast Plan".</span><span class="sxs-lookup"><span data-stu-id="1fa94-126">If you do not assign compensation at this time, you can change it by going to the worker form, selecting the Compensation tab, and choosing 'Fixed Plan'.</span></span> <span data-ttu-id="1fa94-127">Når du vælger "Skift stilling", opdateres statussen på ansøgning til "Ansat".</span><span class="sxs-lookup"><span data-stu-id="1fa94-127">After you select 'Change position', the status on the application will be updated to 'Employed'.</span></span>  
 
 

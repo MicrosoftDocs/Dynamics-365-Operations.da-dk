@@ -17,57 +17,57 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 8903e782d875d4d1ca7c3383f6978afc5554378a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e66ece3c8d7eb0c52e832f49d25e0d9133870e9
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-loyalty-schemes"></a>Definere fordelskundeplaner
+# <a name="define-loyalty-schemes"></a><span data-ttu-id="9811b-103">Definere fordelskundeplaner</span><span class="sxs-lookup"><span data-stu-id="9811b-103">Define loyalty schemes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne procedure hjælper med at definere en fordelskundeplan. Fordelskundeplaner er belønning for opnåelse og indløsning af regler for et loyalitetsprogram. Proceduren bruger USRT-demodatafirmaet.
+<span data-ttu-id="9811b-104">Denne procedure hjælper med at definere en fordelskundeplan.</span><span class="sxs-lookup"><span data-stu-id="9811b-104">This procedure walks through how to define a loyalty scheme.</span></span> <span data-ttu-id="9811b-105">Fordelskundeplaner er belønning for opnåelse og indløsning af regler for et loyalitetsprogram.</span><span class="sxs-lookup"><span data-stu-id="9811b-105">Loyalty schemes are reward earning and redeeming rules for a loyalty program.</span></span> <span data-ttu-id="9811b-106">Proceduren bruger USRT-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="9811b-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Gå til Detail og handel > Kunder > Fordel > Fordelskundeplaner.
-2. Klik på Ny.
-3. Indtast en værdi i feltet Skema-id.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Klik på rullelisten i feltet Navn for at åbne opslaget.
-    * Du kan have flere fordelskundeplaner for et fordelskundeprogram. Fordelskundeplaner kan være for alle kanaler eller en underordnet række kanaler.  
-6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-8. Klik på Gem.
-9. Klik på Tilføj linje.
-10. Vælg en indstilling i feltet Aktivitetstype.
-    * Vælg Køb produkter efter beløb, hvis kunderne skal kunne optjene belønninger baseret på, hvor meget de bruger. Vælg Køb produkter efter antal, hvis kunderne skal kunne optjene belønninger baseret på, hvor mange produkter de køber.  Vælg Antal salgstransaktioner, hvis kunder skal kunne optjene belønning for hver salgstransaktion, uanset hvad eller hvor meget der købes.  
-    * Vælg en kategori. Kategorien vil begrænse, hvilke produkter denne indtjeningsregel gælder for.  
-    * Lad feltet være tomt, hvis indtjeningsreglen skal gælde for alle produkter.  
-11. Indtast et tal i feltet Aktivitetsbeløb/-antal.
-    *  Du bør altid bruge værdien "1,0" for aktivitetstypen Salgstransaktion. For aktivitetstyper for køb efter beløb eller køb efter antal vil enhver transaktion, der er mindre end den angivne værdi, ikke udløse indtægtsreglen. Hvis aktivitetstypen for eksempel er køb efter beløb, og du indtaster "10,00", vil en salgstransaktion på "9,00" ikke optjene belønning ifølge denne indtægtsregel.  
-12. Skriv en værdi i feltet Aktivitetsvaluta.
-13. Klik på rullelisten i feltet Belønningspoint-id for at åbne opslaget.
-14. Klik op linket i den valgte række på listen.
-15. Angiv et tal i feltet Belønningspoint.
-    * Belønningspoint af typen Beløb registrerer indtjente beløb med decimaler. Hvis indtægtsreglen for eksempel angiver, at der optjenes 1 belønningspoint for hver 1 canadiske dollar, der er brugt, og kunden bruger 1,25 canadiske dollar, optjener kunden derefter 1,25 belønningspoint. Belønningspoint af typen Antal registrerer beløb i hele tal. I eksemplet, hvor indtægtsreglen for eksempel angiver, at der optjenes 1 belønningspoint for hver 1 canadiske dollar, der er brugt, og kunden bruger 1,25 canadiske dollar, optjener kunden 1,0 belønningspoint.  
-16. Klik på Gem.
-17. Klik på Tilføj linje.
-    * Reglerne for indløsning bruges, når der anvendes betalingsmåde for fordelskunder.  
-18. Klik på rullelisten i feltet Belønningspoint-id for at åbne opslaget.
-    * Der vises kun belønningspoint, som kan indløses.  
-19. Klik op linket i den valgte række på listen.
-20. Angiv et tal i feltet Belønningspoint.
-21. Vælg en indstilling i feltet Indløsningstype.
-    * Når der vælges Betaling efter beløb, behandles feltet Beløb eller Antal som en valutaværdi. I dette tilfælde er beløbet for belønningspoint brugt pr. valutaenhed af betalingen et fast forhold. Når der vælges Betaling efter antal, behandles feltet Beløb eller Antal som en antalsværdi. I dette tilfælde er beløbet for belønningspoint anvendt pr. vareantal et fast forhold. Men beløbet i valuta kan variere, hvis prisen på varer, der er betalt med fordelskundebelønningspoint, varierer for det samme antal. Indløsningstype for kundefordelspointrabat er kun gyldig, når konfigurationsnøglen med specifikke funktioner for landet/området "Rusland" er aktiveret, og POS-funktionalitetsprofilerne har ISO-koden "RU".  
-    * Vælg en kategori. Kategorien vil begrænse, hvilke produkter denne indløsningsregel gælder for.  
-    * Lad feltet være tomt, hvis indløsningsreglen skal gælde for alle produkter.  
-22. Indtast et tal i feltet Beløb eller antal.
-23. Skriv en værdi i feltet Valuta.
-24. Klik på Gem.
-25. Klik på Tilføj linje.
-    * Vælg en eller flere noder på listen Tilgængelige organisationsnoder og flytte dem til listen Valgte organisationsnoder ved at klikke på pilen mellem de to lister.  
-26. Klik på OK.
-27. Klik på Gem.
-    * Hver gang du skifter kanal for et fordelskundeprogram, skal du køre fordelskundeplaner. På den måde får kanalerne opdaterede fordelskundeplaner.  
+1. <span data-ttu-id="9811b-107">Gå til Detail og handel > Kunder > Fordel > Fordelskundeplaner.</span><span class="sxs-lookup"><span data-stu-id="9811b-107">Go to Retail and commerce > Customers > Loyalty > Loyalty schemes.</span></span>
+2. <span data-ttu-id="9811b-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9811b-108">Click New.</span></span>
+3. <span data-ttu-id="9811b-109">Indtast en værdi i feltet Skema-id.</span><span class="sxs-lookup"><span data-stu-id="9811b-109">In the Scheme ID field, type a value.</span></span>
+4. <span data-ttu-id="9811b-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="9811b-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="9811b-111">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9811b-111">In the Name field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="9811b-112">Du kan have flere fordelskundeplaner for et fordelskundeprogram.</span><span class="sxs-lookup"><span data-stu-id="9811b-112">You can have multiple loyalty schemes for a loyalty program.</span></span> <span data-ttu-id="9811b-113">Fordelskundeplaner kan være for alle kanaler eller en underordnet række kanaler.</span><span class="sxs-lookup"><span data-stu-id="9811b-113">Loyalty schemes can be for all channels or only a sub-set of channels.</span></span>  
+6. <span data-ttu-id="9811b-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="9811b-114">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="9811b-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="9811b-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="9811b-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9811b-116">Click Save.</span></span>
+9. <span data-ttu-id="9811b-117">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9811b-117">Click Add line.</span></span>
+10. <span data-ttu-id="9811b-118">Vælg en indstilling i feltet Aktivitetstype.</span><span class="sxs-lookup"><span data-stu-id="9811b-118">In the Activity type field, select an option.</span></span>
+    * <span data-ttu-id="9811b-119">Vælg Køb produkter efter beløb, hvis kunderne skal kunne optjene belønninger baseret på, hvor meget de bruger.</span><span class="sxs-lookup"><span data-stu-id="9811b-119">Select Purchase products by amount if you want customers to earn rewards based on how much they spend.</span></span> <span data-ttu-id="9811b-120">Vælg Køb produkter efter antal, hvis kunderne skal kunne optjene belønninger baseret på, hvor mange produkter de køber.</span><span class="sxs-lookup"><span data-stu-id="9811b-120">Select Purchase products by quantity if you want customers to earn rewards based on how many products they buy.</span></span>  <span data-ttu-id="9811b-121">Vælg Antal salgstransaktioner, hvis kunder skal kunne optjene belønning for hver salgstransaktion, uanset hvad eller hvor meget der købes.</span><span class="sxs-lookup"><span data-stu-id="9811b-121">Select Sales transaction count if you want customers to earn rewards for each sales transaction, regardless of what or how much is purchased.</span></span>  
+    * <span data-ttu-id="9811b-122">Vælg en kategori.</span><span class="sxs-lookup"><span data-stu-id="9811b-122">Select a category.</span></span> <span data-ttu-id="9811b-123">Kategorien vil begrænse, hvilke produkter denne indtjeningsregel gælder for.</span><span class="sxs-lookup"><span data-stu-id="9811b-123">The category will limit which products this earning rule applies to.</span></span>  
+    * <span data-ttu-id="9811b-124">Lad feltet være tomt, hvis indtjeningsreglen skal gælde for alle produkter.</span><span class="sxs-lookup"><span data-stu-id="9811b-124">If you want the earning rule to apply to all products, leave this field blank.</span></span>  
+11. <span data-ttu-id="9811b-125">Indtast et tal i feltet Aktivitetsbeløb/-antal.</span><span class="sxs-lookup"><span data-stu-id="9811b-125">In the Activity amount/quantity field, enter a number.</span></span>
+    *  <span data-ttu-id="9811b-126">Du bør altid bruge værdien "1,0" for aktivitetstypen Salgstransaktion.</span><span class="sxs-lookup"><span data-stu-id="9811b-126">For activity type Sales transaction count, you should always use a value of '1.0'.</span></span> <span data-ttu-id="9811b-127">For aktivitetstyper for køb efter beløb eller køb efter antal vil enhver transaktion, der er mindre end den angivne værdi, ikke udløse indtægtsreglen.</span><span class="sxs-lookup"><span data-stu-id="9811b-127">For activity types of Purchase by amount or Purchase by quantity, any transaction that is less than the value entered will not trigger the earning rule.</span></span> <span data-ttu-id="9811b-128">Hvis aktivitetstypen for eksempel er køb efter beløb, og du indtaster "10,00", vil en salgstransaktion på "9,00" ikke optjene belønning ifølge denne indtægtsregel.</span><span class="sxs-lookup"><span data-stu-id="9811b-128">For example, if the activity type is Purchase by amount, and you enter '10.00', then a sales transaction for '9.00' will not earn rewards for this earning rule.</span></span>  
+12. <span data-ttu-id="9811b-129">Skriv en værdi i feltet Aktivitetsvaluta.</span><span class="sxs-lookup"><span data-stu-id="9811b-129">In the Activity currency field, type a value.</span></span>
+13. <span data-ttu-id="9811b-130">Klik på rullelisten i feltet Belønningspoint-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9811b-130">In the Reward point ID field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="9811b-131">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="9811b-131">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="9811b-132">Angiv et tal i feltet Belønningspoint.</span><span class="sxs-lookup"><span data-stu-id="9811b-132">In the Reward points field, enter a number.</span></span>
+    * <span data-ttu-id="9811b-133">Belønningspoint af typen Beløb registrerer indtjente beløb med decimaler.</span><span class="sxs-lookup"><span data-stu-id="9811b-133">Amount type reward points will record earned amounts with decimals.</span></span> <span data-ttu-id="9811b-134">Hvis indtægtsreglen for eksempel angiver, at der optjenes 1 belønningspoint for hver 1 canadiske dollar, der er brugt, og kunden bruger 1,25 canadiske dollar, optjener kunden derefter 1,25 belønningspoint.</span><span class="sxs-lookup"><span data-stu-id="9811b-134">For example, if the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Canadian Dollars, then the customer will earn 1.25 reward points.</span></span> <span data-ttu-id="9811b-135">Belønningspoint af typen Antal registrerer beløb i hele tal.</span><span class="sxs-lookup"><span data-stu-id="9811b-135">Quantity type reward points will record earned amounts in integers.</span></span> <span data-ttu-id="9811b-136">I eksemplet, hvor indtægtsreglen for eksempel angiver, at der optjenes 1 belønningspoint for hver 1 canadiske dollar, der er brugt, og kunden bruger 1,25 canadiske dollar, optjener kunden 1,0 belønningspoint.</span><span class="sxs-lookup"><span data-stu-id="9811b-136">Using the example where the earning rule states 1 reward point earned for every 1 Canadian Dollar spent, and the customer spends 1.25 Canadian Canadian Dollars, then the customer will earn 1.0 reward points.</span></span>  
+16. <span data-ttu-id="9811b-137">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9811b-137">Click Save.</span></span>
+17. <span data-ttu-id="9811b-138">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9811b-138">Click Add line.</span></span>
+    * <span data-ttu-id="9811b-139">Reglerne for indløsning bruges, når der anvendes betalingsmåde for fordelskunder.</span><span class="sxs-lookup"><span data-stu-id="9811b-139">Redemption rules are used when the loyalty payment method is used.</span></span>  
+18. <span data-ttu-id="9811b-140">Klik på rullelisten i feltet Belønningspoint-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9811b-140">In the Reward point ID field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="9811b-141">Der vises kun belønningspoint, som kan indløses.</span><span class="sxs-lookup"><span data-stu-id="9811b-141">Only redeemable reward points are shown.</span></span>  
+19. <span data-ttu-id="9811b-142">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="9811b-142">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="9811b-143">Angiv et tal i feltet Belønningspoint.</span><span class="sxs-lookup"><span data-stu-id="9811b-143">In the Reward points field, enter a number.</span></span>
+21. <span data-ttu-id="9811b-144">Vælg en indstilling i feltet Indløsningstype.</span><span class="sxs-lookup"><span data-stu-id="9811b-144">In the Redemption type field, select an option.</span></span>
+    * <span data-ttu-id="9811b-145">Når der vælges Betaling efter beløb, behandles feltet Beløb eller Antal som en valutaværdi.</span><span class="sxs-lookup"><span data-stu-id="9811b-145">Selecting Payment by amount causes the Amount or quantity field to be treated as a currency value.</span></span> <span data-ttu-id="9811b-146">I dette tilfælde er beløbet for belønningspoint brugt pr. valutaenhed af betalingen et fast forhold.</span><span class="sxs-lookup"><span data-stu-id="9811b-146">In this case, the amount of reward points used per currency unit of payment is a fixed ratio.</span></span> <span data-ttu-id="9811b-147">Når der vælges Betaling efter antal, behandles feltet Beløb eller Antal som en antalsværdi.</span><span class="sxs-lookup"><span data-stu-id="9811b-147">Selecting Payment by quantity causes the Amount or quantity field to be treated as a quantity value.</span></span> <span data-ttu-id="9811b-148">I dette tilfælde er beløbet for belønningspoint anvendt pr. vareantal et fast forhold. Men beløbet i valuta kan variere, hvis prisen på varer, der er betalt med fordelskundebelønningspoint, varierer for det samme antal.</span><span class="sxs-lookup"><span data-stu-id="9811b-148">In this case, the amount of reward points used per item quantity is a fixed ratio, however, the amount in currency can vary if the price of items paid for with loyalty reward points varies for the same quantity.</span></span> <span data-ttu-id="9811b-149">Indløsningstype for kundefordelspointrabat er kun gyldig, når konfigurationsnøglen med specifikke funktioner for landet/området "Rusland" er aktiveret, og POS-funktionalitetsprofilerne har ISO-koden "RU".</span><span class="sxs-lookup"><span data-stu-id="9811b-149">Redemption type of Loyalty points discount is only valid when the 'Russia' Country/Regional specific features configuration key is enabled, and the POS functionality profiles has an ISO code of 'RU'.</span></span>  
+    * <span data-ttu-id="9811b-150">Vælg en kategori.</span><span class="sxs-lookup"><span data-stu-id="9811b-150">Select a category.</span></span> <span data-ttu-id="9811b-151">Kategorien vil begrænse, hvilke produkter denne indløsningsregel gælder for.</span><span class="sxs-lookup"><span data-stu-id="9811b-151">The category will limit which products this redemption rule applies to.</span></span>  
+    * <span data-ttu-id="9811b-152">Lad feltet være tomt, hvis indløsningsreglen skal gælde for alle produkter.</span><span class="sxs-lookup"><span data-stu-id="9811b-152">If you want the redemption rule to apply to all products, leave this field blank.</span></span>  
+22. <span data-ttu-id="9811b-153">Indtast et tal i feltet Beløb eller antal.</span><span class="sxs-lookup"><span data-stu-id="9811b-153">In the Amount or quantity field, enter a number.</span></span>
+23. <span data-ttu-id="9811b-154">Skriv en værdi i feltet Valuta.</span><span class="sxs-lookup"><span data-stu-id="9811b-154">In the Currency field, type a value.</span></span>
+24. <span data-ttu-id="9811b-155">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9811b-155">Click Save.</span></span>
+25. <span data-ttu-id="9811b-156">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9811b-156">Click Add line.</span></span>
+    * <span data-ttu-id="9811b-157">Vælg en eller flere noder på listen Tilgængelige organisationsnoder og flytte dem til listen Valgte organisationsnoder ved at klikke på pilen mellem de to lister.</span><span class="sxs-lookup"><span data-stu-id="9811b-157">Select one or more nodes from the Available organization nodes list and move them to the Selected organization nodes list by clicking the arrow between the two lists.</span></span>  
+26. <span data-ttu-id="9811b-158">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9811b-158">Click OK.</span></span>
+27. <span data-ttu-id="9811b-159">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9811b-159">Click Save.</span></span>
+    * <span data-ttu-id="9811b-160">Hver gang du skifter kanal for et fordelskundeprogram, skal du køre fordelskundeplaner.</span><span class="sxs-lookup"><span data-stu-id="9811b-160">Anytime you change the channels for a loyalty scheme, you must run Process loyalty schemes.</span></span> <span data-ttu-id="9811b-161">På den måde får kanalerne opdaterede fordelskundeplaner.</span><span class="sxs-lookup"><span data-stu-id="9811b-161">That way, the channels will get updated loyalty schemes.</span></span>  
 
 

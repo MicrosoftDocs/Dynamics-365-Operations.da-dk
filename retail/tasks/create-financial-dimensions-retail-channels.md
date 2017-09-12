@@ -17,42 +17,42 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ab2da91a4eba2e953963a20ec1594d202157b879
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 56b586e971cfd4684f3c0b259270cc8b31521ac9
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a> Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker
+# <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a><span data-ttu-id="0f1fe-103"> Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker</span><span class="sxs-lookup"><span data-stu-id="0f1fe-103">Create financial dimensions for Retail channels and configure dimension values on stores</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde fører dig gennem oprettelse af en detailkanals økonomiske dimension med dimensionsværdier og trin til at konfigurere økonomiske dimensionsværdier for detailbutikker. Emnet indeholder ikke andre relaterede trin, f.eks. oprettelse af dimensionssæt og kontostrukturer. Denne procedure bruger USRT-firmaets demodata.
+<span data-ttu-id="0f1fe-104">Denne fremgangsmåde fører dig gennem oprettelse af en detailkanals økonomiske dimension med dimensionsværdier og trin til at konfigurere økonomiske dimensionsværdier for detailbutikker.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-104">This procedure walks through creating a retail channel financial dimension with dimension values and steps to configure financial dimension values on retail stores.</span></span> <span data-ttu-id="0f1fe-105">Emnet indeholder ikke andre relaterede trin, f.eks. oprettelse af dimensionssæt og kontostrukturer.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-105">The topic does not include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="0f1fe-106">Denne procedure bruger USRT-firmaets demodata.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. Gå til Finans > Kontoplan > Dimensioner > Økonomiske dimensioner.
-2. Klik på Ny.
-3. Vælg "Detailkanaler" i feltet Brug værdier fra.
-4. Skriv en værdi i feltet Dimensionsnavn.
-5. Klik på Aktiver.
-6. Klik på Luk.
-7. Klik på Aktiver.
-8. Klik på Dimensionsværdier.
-9. Luk siden.
-10. Klik på Gem.
-11. Luk siden.
-12. Gå til Detail og handel > Kanaler > Detailbutikker > Alle detailbutikker.
-13. Klik op linket i den valgte række på listen.
-14. Slå udvidelsen af sektionen Økonomiske dimensioner til/fra.
-15. Klik på Rediger.
-16. Klik på rullelisten i feltet Retailchannel for at åbne opslaget.
-17. Find og vælg på listen dimensionsværdien for butikken, der skal opdateres.
-18. Klik op linket i den valgte række på listen.
-19. Klik på rullelisten i feltet CostCenter for at åbne opslaget.
-20. Find og vælg den ønskede post på listen.
-21. Klik op linket i den valgte række på listen.
-22. Klik på rullelisten i feltet Afdeling for at åbne opslaget.
-23. Find og vælg den ønskede post på listen.
-24. Klik op linket i den valgte række på listen.
-25. Klik på Gem.
+1. <span data-ttu-id="0f1fe-107">Gå til Finans > Kontoplan > Dimensioner > Økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-107">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
+2. <span data-ttu-id="0f1fe-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-108">Click New.</span></span>
+3. <span data-ttu-id="0f1fe-109">Vælg "Detailkanaler" i feltet Brug værdier fra.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-109">In the Use values from field, select 'Retail channels'.</span></span>
+4. <span data-ttu-id="0f1fe-110">Skriv en værdi i feltet Dimensionsnavn.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-110">In the Dimension name field, type a value.</span></span>
+5. <span data-ttu-id="0f1fe-111">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-111">Click Activate.</span></span>
+6. <span data-ttu-id="0f1fe-112">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-112">Click Close.</span></span>
+7. <span data-ttu-id="0f1fe-113">Klik på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-113">Click Activate.</span></span>
+8. <span data-ttu-id="0f1fe-114">Klik på Dimensionsværdier.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-114">Click Dimension values.</span></span>
+9. <span data-ttu-id="0f1fe-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-115">Close the page.</span></span>
+10. <span data-ttu-id="0f1fe-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-116">Click Save.</span></span>
+11. <span data-ttu-id="0f1fe-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-117">Close the page.</span></span>
+12. <span data-ttu-id="0f1fe-118">Gå til Detail og handel > Kanaler > Detailbutikker > Alle detailbutikker.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-118">Go to Retail and commerce > Channels > Retail stores > All retail stores.</span></span>
+13. <span data-ttu-id="0f1fe-119">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-119">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="0f1fe-120">Slå udvidelsen af sektionen Økonomiske dimensioner til/fra.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-120">Toggle the expansion of the Financial dimensions section.</span></span>
+15. <span data-ttu-id="0f1fe-121">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-121">Click Edit.</span></span>
+16. <span data-ttu-id="0f1fe-122">Klik på rullelisten i feltet Retailchannel for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-122">In the Retailchannel field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="0f1fe-123">Find og vælg på listen dimensionsværdien for butikken, der skal opdateres.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-123">In the list, find and select the dimension value for the store being updated.</span></span>
+18. <span data-ttu-id="0f1fe-124">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-124">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="0f1fe-125">Klik på rullelisten i feltet CostCenter for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-125">In the CostCenter field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="0f1fe-126">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-126">In the list, find and select the desired record.</span></span>
+21. <span data-ttu-id="0f1fe-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-127">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="0f1fe-128">Klik på rullelisten i feltet Afdeling for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-128">In the Department field, click the drop-down button to open the lookup.</span></span>
+23. <span data-ttu-id="0f1fe-129">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-129">In the list, find and select the desired record.</span></span>
+24. <span data-ttu-id="0f1fe-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-130">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="0f1fe-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="0f1fe-131">Click Save.</span></span>
 
 

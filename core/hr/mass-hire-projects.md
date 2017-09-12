@@ -19,73 +19,73 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 006a8c110fe694c487e1e89e52c07438cf2becc3
+ms.sourcegitcommit: 754c52431fbaf97307a5e630150c3248fad5d271
+ms.openlocfilehash: cc6621c51bd0018bfb449457a30aed807cf56bda
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/01/2017
 
 ---
 
-# <a name="mass-hire-projects"></a>Masseansættelsesprojekter
+# <a name="mass-hire-projects"></a><span data-ttu-id="1c7c0-103">Masseansættelsesprojekter</span><span class="sxs-lookup"><span data-stu-id="1c7c0-103">Mass hire projects</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Masseansættelsesprojekter tillader personalespecialister at oprette flere stillinger og effektivt ansætte arbejdere til disse stillinger.
+<span data-ttu-id="1c7c0-104">Masseansættelsesprojekter tillader personalespecialister at oprette flere stillinger og effektivt ansætte arbejdere til disse stillinger.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-104">Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.</span></span>
 
-<a name="overview"></a>Overblik
+<a name="overview"></a><span data-ttu-id="1c7c0-105">Overblik</span><span class="sxs-lookup"><span data-stu-id="1c7c0-105">Overview</span></span>
 --------
 
-Brug masseansættelsesprojekter, når du ansætter flere arbejdere på én gang, f.eks når du ansætter pga. sæsonbestemt efterspørgsel. Det er nyttigt at oprette et masseansættelsesprojekt, fordi kan du oprette stillingsposter, poster for arbejdere og arbejdertildelinger på samme tid. Når du opretter stillinger til et masseansættelsesprojekt, kan du angive følgende oplysninger:
--   Antallet af stillinger, der skal oprettes
--   De arbejdstyper, du vil ansætte i stillingerne
--   Afdelingen og det job, der er tilknyttet stillingerne.
--   Værdien af den tilsvarende fuldtidsstilling
+<span data-ttu-id="1c7c0-106">Brug masseansættelsesprojekter, når du ansætter flere arbejdere på én gang, f.eks når du ansætter pga. sæsonbestemt efterspørgsel.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-106">Use mass hire projects when you hire multiple workers at one time, such as when you hire to meet a seasonal demand.</span></span> <span data-ttu-id="1c7c0-107">Det er nyttigt at oprette et masseansættelsesprojekt, fordi kan du oprette stillingsposter, poster for arbejdere og arbejdertildelinger på samme tid.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-107">Creating a mass hire project is useful because you can create position records, worker records, and worker assignments for positions at the same time.</span></span> <span data-ttu-id="1c7c0-108">Når du opretter stillinger til et masseansættelsesprojekt, kan du angive følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="1c7c0-108">When you create positions for a mass hire project, you can specify the following information:</span></span>
+-   <span data-ttu-id="1c7c0-109">Antallet af stillinger, der skal oprettes</span><span class="sxs-lookup"><span data-stu-id="1c7c0-109">The number of positions to create</span></span>
+-   <span data-ttu-id="1c7c0-110">De arbejdstyper, du vil ansætte i stillingerne</span><span class="sxs-lookup"><span data-stu-id="1c7c0-110">The worker type of the people that you will hire for the positions</span></span>
+-   <span data-ttu-id="1c7c0-111">Afdelingen og det job, der er tilknyttet stillingerne.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-111">The department and the job that are associated with the positions</span></span>
+-   <span data-ttu-id="1c7c0-112">Værdien af den tilsvarende fuldtidsstilling</span><span class="sxs-lookup"><span data-stu-id="1c7c0-112">The full-time equivalent value of the position</span></span>
 
-## <a name="example"></a>Eksempel
-Om sommeren ansætter du normalt 15-20 studerende på deltid i de turnusstillinger, der findes i virksomheden. I år vil du ansætte fem bogholdere, fem medarbejdere til ordrebehandling og fem kasserer. I stedet for at oprette hver stillingspost og arbejderpost særskilt, opretter du ét masseansættelsesprojekt, der kaldes "Sommermedarbejdere". Projektets start- og slutdatoer samkøres med start- og slutdatoerne for varigheden af de stillinger, du opretter til dette masseansættelsesprojekt. 
+## <a name="example"></a><span data-ttu-id="1c7c0-113">Eksempel</span><span class="sxs-lookup"><span data-stu-id="1c7c0-113">Example</span></span>
+<span data-ttu-id="1c7c0-114">Om sommeren ansætter du normalt 15-20 studerende på deltid i de turnusstillinger, der findes i virksomheden.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-114">In the summer, you usually hire 15-20 part-time college students to fill available internships in your company.</span></span> <span data-ttu-id="1c7c0-115">I år vil du ansætte fem bogholdere, fem medarbejdere til ordrebehandling og fem kasserer.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-115">This year, you want to hire five accountants, five order processors, and five cashiers.</span></span> <span data-ttu-id="1c7c0-116">I stedet for at oprette hver stillingspost og arbejderpost særskilt, opretter du ét masseansættelsesprojekt, der kaldes "Sommermedarbejdere".</span><span class="sxs-lookup"><span data-stu-id="1c7c0-116">Instead of creating each position record and worker record separately, you create one mass hire project called “SummerInterns”.</span></span> <span data-ttu-id="1c7c0-117">Projektets start- og slutdatoer samkøres med start- og slutdatoerne for varigheden af de stillinger, du opretter til dette masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-117">The project start and end dates correlate with the start and end dates of the position durations for the positions you create for the mass hire project.</span></span> 
 
-På siden **Masseansættelsesprojekter** skal du vælge projektet "Sommermedarbejdere" og derefter klikke på **Åbn projekt**. I det åbne masseansættelsesprojekt skal du klikke på **Opret stillinger** og angive oplysninger om bogholderstillingen. Du kan angive, at fem bogholderstillinger bør oprettes med de samme oplysninger for hver stilling, og derefter kan du klikke på OK. Gentag denne proces for stillingerne til medarbejdere til ordrebehandling og kasserere. 
+<span data-ttu-id="1c7c0-118">På siden **Masseansættelsesprojekter** skal du vælge projektet "Sommermedarbejdere" og derefter klikke på **Åbn projekt**.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-118">In the **Mass hire projects** page, select the “SummerInterns” project and then click **Open project**.</span></span> <span data-ttu-id="1c7c0-119">I det åbne masseansættelsesprojekt skal du klikke på **Opret stillinger** og angive oplysninger om bogholderstillingen.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-119">In the open mass hire project, click **Create positions** and enter information about the accountant position.</span></span> <span data-ttu-id="1c7c0-120">Du kan angive, at fem bogholderstillinger bør oprettes med de samme oplysninger for hver stilling, og derefter kan du klikke på OK.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-120">You can indicate that five accountant positions should be created using the same information for each one, and then click OK.</span></span> <span data-ttu-id="1c7c0-121">Gentag denne proces for stillingerne til medarbejdere til ordrebehandling og kasserere.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-121">Repeat this process for the order processor and cashier positions.</span></span> 
 
-Når du har fundet studerende, der skal ansættes i praktikantstillingerne, indtaster du den enkelte studerendes oplysninger i **Detaljer for stilling** for stillingen, som du vil ansætte dem i. Når du har angivet alle stillingsoplysningerne, skal du vælge stillingen på siden Masseansættelsesprojekter og derefter klikke på **Ansæt**. Der oprettes en stillingspost for hver stilling, og der oprettes og tildeles en arbejderpost til den relevante stilling for hver person, du ansætter.
+<span data-ttu-id="1c7c0-122">Når du har fundet studerende, der skal ansættes i praktikantstillingerne, indtaster du den enkelte studerendes oplysninger i **Detaljer for stilling** for stillingen, som du vil ansætte dem i.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-122">After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for.</span></span> <span data-ttu-id="1c7c0-123">Når du har angivet alle stillingsoplysningerne, skal du vælge stillingen på siden Masseansættelsesprojekter og derefter klikke på **Ansæt**.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-123">When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**.</span></span> <span data-ttu-id="1c7c0-124">Der oprettes en stillingspost for hver stilling, og der oprettes og tildeles en arbejderpost til den relevante stilling for hver person, du ansætter.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-124">A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.</span></span>
 
-## <a name="mass-hire-project-statuses"></a>Statusser for masseansættelsesprojekter
-Et masseansættelsesprojekt kan have følgende statusser.
--   Oprettet
--   Åbnet
--   Lukket
+## <a name="mass-hire-project-statuses"></a><span data-ttu-id="1c7c0-125">Statusser for masseansættelsesprojekter</span><span class="sxs-lookup"><span data-stu-id="1c7c0-125">Mass hire project statuses</span></span>
+<span data-ttu-id="1c7c0-126">Et masseansættelsesprojekt kan have følgende statusser.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-126">A mass hire project can have the following statuses.</span></span>
+-   <span data-ttu-id="1c7c0-127">Oprettet</span><span class="sxs-lookup"><span data-stu-id="1c7c0-127">Created</span></span>
+-   <span data-ttu-id="1c7c0-128">Åbnet</span><span class="sxs-lookup"><span data-stu-id="1c7c0-128">Open</span></span>
+-   <span data-ttu-id="1c7c0-129">Lukket</span><span class="sxs-lookup"><span data-stu-id="1c7c0-129">Closed</span></span>
 
-På siden **Masseansættelsesprojekt** skal du klikke på **Åbn projekt** eller **Luk projekt** for at ændre status for et masseansættelsesprojekt. I følgende tabel beskrives, hvad du kan gøre med et projekt i henhold til projektets status.
+<span data-ttu-id="1c7c0-130">På siden **Masseansættelsesprojekt** skal du klikke på **Åbn projekt** eller **Luk projekt** for at ændre status for et masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-130">On the **Mass hire project** page, click **Open project** or **Close project** to change the status of a mass hire project.</span></span> <span data-ttu-id="1c7c0-131">I følgende tabel beskrives, hvad du kan gøre med et projekt i henhold til projektets status.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-131">The following table describes what you can do with a project according to its status.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Status</th>
-<th>Beskrivelse</th>
+<th><span data-ttu-id="1c7c0-132">Status</span><span class="sxs-lookup"><span data-stu-id="1c7c0-132">Status</span></span></th>
+<th><span data-ttu-id="1c7c0-133">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="1c7c0-133">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Oprettet</td>
-<td>Du kan oprette og redigere oplysninger, men du kan ikke oprette stillinger til projektet. Det er standardstatus for nye projekter.</td>
+<td><span data-ttu-id="1c7c0-134">Oprettet</span><span class="sxs-lookup"><span data-stu-id="1c7c0-134">Created</span></span></td>
+<td><span data-ttu-id="1c7c0-135">Du kan oprette og redigere oplysninger, men du kan ikke oprette stillinger til projektet.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-135">You can create and modify information, but cannot create positions for the project.</span></span> <span data-ttu-id="1c7c0-136">Det er standardstatus for nye projekter.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-136">This is the default status for new projects.</span></span></td>
 </tr>
 <tr class="even">
-<td>Åbnet</td>
-<td>Du kan ændre projektoplysninger, oprette stillinger til masseansættelsesprojektet og ansætte personer i stillingerne. Det er status for aktive projekter.</td>
+<td><span data-ttu-id="1c7c0-137">Åbnet</span><span class="sxs-lookup"><span data-stu-id="1c7c0-137">Open</span></span></td>
+<td><span data-ttu-id="1c7c0-138">Du kan ændre projektoplysninger, oprette stillinger til masseansættelsesprojektet og ansætte personer i stillingerne.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-138">You can modify the project details, create positions for the mass hire project, and hire people for the positions.</span></span> <span data-ttu-id="1c7c0-139">Det er status for aktive projekter.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-139">This is the status for active projects.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Lukket</td>
-<td>Du kan ikke føje stillinger til projektet. Hvis du vil føje stillinger til masseansættelsesprojektet, skal du åbne projektet igen. Det er status for færdige projekter.
+<td><span data-ttu-id="1c7c0-140">Lukket</span><span class="sxs-lookup"><span data-stu-id="1c7c0-140">Closed</span></span></td>
+<td><span data-ttu-id="1c7c0-141">Du kan ikke føje stillinger til projektet.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-141">You cannot add positions to the project.</span></span> <span data-ttu-id="1c7c0-142">Hvis du vil føje stillinger til masseansættelsesprojektet, skal du åbne projektet igen.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-142">To add positions to the mass hire project, open the project again.</span></span> <span data-ttu-id="1c7c0-143">Det er status for færdige projekter.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-143">This is the status for completed projects.</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><strong>Bemærk! </strong></th>
+<th><span data-ttu-id="1c7c0-144"><strong>Bemærk! </strong></span><span class="sxs-lookup"><span data-stu-id="1c7c0-144"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Før du kan lukke et masseansættelsesprojekt, skal alle stillinger i projektet være tildelt statussen Oprettet eller Lukket.</td>
+<td><span data-ttu-id="1c7c0-145">Før du kan lukke et masseansættelsesprojekt, skal alle stillinger i projektet være tildelt statussen Oprettet eller Lukket.</span><span class="sxs-lookup"><span data-stu-id="1c7c0-145">Before you can close a mass hire project, all positions in the project must have a status of either Created or Closed.</span></span></td>
 </tr>
 </tbody>
 </table>

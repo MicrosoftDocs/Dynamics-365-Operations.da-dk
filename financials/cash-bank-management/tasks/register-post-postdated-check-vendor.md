@@ -16,43 +16,43 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: e1eff11654afea3270f995d462e3bce6d9efc667
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8689421d3281f93af9298f777f92c5c3b2c1c86c
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrere og bogføre en fremdateret check for en kreditor
+# <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="53ebb-103">Registrere og bogføre en fremdateret check for en kreditor</span><span class="sxs-lookup"><span data-stu-id="53ebb-103">Register and post a postdated check for a vendor</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan registrere detaljerne omkring en fremdateret check, før du udsteder checken til en leverandør ved brug af kladdebilaget. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser. Inden du registrerer og bogfører en fremdateret check fra en kunde, skal du udføre følgende opgave: 
+<span data-ttu-id="53ebb-104">Du kan registrere detaljerne omkring en fremdateret check, før du udsteder checken til en leverandør ved brug af kladdebilaget.</span><span class="sxs-lookup"><span data-stu-id="53ebb-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="53ebb-105">Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser.</span><span class="sxs-lookup"><span data-stu-id="53ebb-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="53ebb-106">Inden du registrerer og bogfører en fremdateret check fra en kunde, skal du udføre følgende opgave:</span><span class="sxs-lookup"><span data-stu-id="53ebb-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
 
-Konfigurer fremdaterede checks på siden Kontant- og bankstyring. 
+<span data-ttu-id="53ebb-107">Konfigurer fremdaterede checks på siden Kontant- og bankstyring.</span><span class="sxs-lookup"><span data-stu-id="53ebb-107">Set up postdated checks in the Cash and bank management page.</span></span> 
 
 
 
-Rollen for denne opgaveguide er Kasserer. Denne opgave bruger demofirmaet USMF.
+<span data-ttu-id="53ebb-108">Rollen for denne opgaveguide er Kasserer.</span><span class="sxs-lookup"><span data-stu-id="53ebb-108">The role of this task guides is Treasurer.</span></span> <span data-ttu-id="53ebb-109">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="53ebb-109">This task uses the USMF demo company.</span></span>
 
-1. Gå til Kreditor > Betalinger > Betalingskladde
-2. Klik på Ny.
-3. Skriv VendPay i feltet Navn.
-4. Klik på Linjer.
-5. I feltet Konto skal du specificere de ønskede værdier.
-6. Markér den valgte række på listen.
-7. Angiv et tal i feltet Debet.
-8. Klik på rullelisten i feltet Betalingsmåde for at åbne opslaget.
-    * Vælg betalingsmåden for den fremdaterede check  
-9. Find og vælg den ønskede post på listen.
-10. Klik op linket i den valgte række på listen.
-11. Klik på fanen Fremdaterede checks.
-12. Skriv en værdi i feltet Checknummer.
-    * Angiv eller ret nummeret på den fremdaterede check.  
-13. Skriv en værdi i feltet Navn på udstedende bank.
-    * Angiv bankoplysninger om den udstedende bank.  
-14. Klik på fanen Liste.
-15. Klik på Bogfør.
-16. Luk siden.
-17. Klik på fanen Fremdaterede checks.
+1. <span data-ttu-id="53ebb-110">Gå til Kreditor > Betalinger > Betalingskladde</span><span class="sxs-lookup"><span data-stu-id="53ebb-110">Go to Acounts payable > Payments > Payment journal</span></span>
+2. <span data-ttu-id="53ebb-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="53ebb-111">Click New.</span></span>
+3. <span data-ttu-id="53ebb-112">Skriv VendPay i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="53ebb-112">In the Name field, type 'VendPay'.</span></span>
+4. <span data-ttu-id="53ebb-113">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="53ebb-113">Click Lines.</span></span>
+5. <span data-ttu-id="53ebb-114">I feltet Konto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="53ebb-114">In the Account field, specify the desired values.</span></span>
+6. <span data-ttu-id="53ebb-115">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="53ebb-115">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="53ebb-116">Angiv et tal i feltet Debet.</span><span class="sxs-lookup"><span data-stu-id="53ebb-116">In the Debit field, enter a number.</span></span>
+8. <span data-ttu-id="53ebb-117">Klik på rullelisten i feltet Betalingsmåde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="53ebb-117">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="53ebb-118">Vælg betalingsmåden for den fremdaterede check</span><span class="sxs-lookup"><span data-stu-id="53ebb-118">Select the method of payment for the postdated check</span></span>  
+9. <span data-ttu-id="53ebb-119">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="53ebb-119">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="53ebb-120">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="53ebb-120">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="53ebb-121">Klik på fanen Fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="53ebb-121">Click the Postdated checks tab.</span></span>
+12. <span data-ttu-id="53ebb-122">Skriv en værdi i feltet Checknummer.</span><span class="sxs-lookup"><span data-stu-id="53ebb-122">In the Check number field, type a value.</span></span>
+    * <span data-ttu-id="53ebb-123">Angiv eller ret nummeret på den fremdaterede check.</span><span class="sxs-lookup"><span data-stu-id="53ebb-123">Enter or modify the number of the postdated check.</span></span>  
+13. <span data-ttu-id="53ebb-124">Skriv en værdi i feltet Navn på udstedende bank.</span><span class="sxs-lookup"><span data-stu-id="53ebb-124">In the Issuing bank name field, type a value.</span></span>
+    * <span data-ttu-id="53ebb-125">Angiv bankoplysninger om den udstedende bank.</span><span class="sxs-lookup"><span data-stu-id="53ebb-125">enter the bank details for the issuing bank.</span></span>  
+14. <span data-ttu-id="53ebb-126">Klik på fanen Liste.</span><span class="sxs-lookup"><span data-stu-id="53ebb-126">Click the List tab.</span></span>
+15. <span data-ttu-id="53ebb-127">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="53ebb-127">Click Post.</span></span>
+16. <span data-ttu-id="53ebb-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="53ebb-128">Close the page.</span></span>
+17. <span data-ttu-id="53ebb-129">Klik på fanen Fremdaterede checks.</span><span class="sxs-lookup"><span data-stu-id="53ebb-129">Click the Postdated checks tab.</span></span>
 
 

@@ -16,59 +16,59 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: de5baa1e5c30ee998d113f7366c445a65723dfdc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6bb7a5133e9412f4ed6fb74f0d3ee595c07a0c4b
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-unit-of-measure"></a>Administrere måleenhed
+# <a name="manage-unit-of-measure"></a><span data-ttu-id="dcda5-103">Administrere måleenhed</span><span class="sxs-lookup"><span data-stu-id="dcda5-103">Manage unit of measure</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder. Du kan gennemgå denne procedure ved at bruge demodataene eller dine egne data.
+<span data-ttu-id="dcda5-104">Denne fremgangsmåde viser, hvordan du definerer en måleenhed, angiver oversættelser for enheden og dens beskrivelse og definerer omregningsregler for relaterede enheder.</span><span class="sxs-lookup"><span data-stu-id="dcda5-104">This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units.</span></span> <span data-ttu-id="dcda5-105">Du kan gennemgå denne procedure ved at bruge demodataene eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="dcda5-105">You can walk through this procedure using demo data, or using your own data.</span></span>
 
-1. Gå til Vedligeholdelse af frigivet produkt.
-2. Klik på enheder.
+1. <span data-ttu-id="dcda5-106">Gå til Vedligeholdelse af frigivet produkt.</span><span class="sxs-lookup"><span data-stu-id="dcda5-106">Go to Released product maintenance.</span></span>
+2. <span data-ttu-id="dcda5-107">Klik på enheder.</span><span class="sxs-lookup"><span data-stu-id="dcda5-107">Click Units.</span></span>
 
-## <a name="create-a-unit-of-measure"></a>Opret en måleenhed
-1. Klik på Ny.
-2. Skriv en værdi i feltet Enhed.
-    * Angiv det id eller symbol, der skal bruges i forbindelse med måleenheden.  
-3. Skriv en værdi i feltet Beskrivelse.
-    * Indtast et beskrivende navn for måleenheden i systemsproget.  
-4. Vælg en indstilling i feltet Enhedsklasse.
-    * Enhedsklassen definerer, hvilken logisk gruppering, f.eks. område, masse eller mængde, måleenheden er del af.  
-5. Angiv et tal i feltet Decimalpræcision.
-    * Angiv antallet af decimaler, som den omregnede måleenhed skal afrundes til, når der er fuldført en beregning for måleenheden.  
-6. Klik på Gem.
+## <a name="create-a-unit-of-measure"></a><span data-ttu-id="dcda5-108">Opret en måleenhed</span><span class="sxs-lookup"><span data-stu-id="dcda5-108">Create a unit of measure</span></span>
+1. <span data-ttu-id="dcda5-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dcda5-109">Click New.</span></span>
+2. <span data-ttu-id="dcda5-110">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="dcda5-110">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="dcda5-111">Angiv det id eller symbol, der skal bruges i forbindelse med måleenheden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-111">Enter the ID or symbol to use when referring to the unit of measure.</span></span>  
+3. <span data-ttu-id="dcda5-112">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="dcda5-112">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="dcda5-113">Indtast et beskrivende navn for måleenheden i systemsproget.</span><span class="sxs-lookup"><span data-stu-id="dcda5-113">Enter a descriptive name for the unit of measure in the system language.</span></span>  
+4. <span data-ttu-id="dcda5-114">Vælg en indstilling i feltet Enhedsklasse.</span><span class="sxs-lookup"><span data-stu-id="dcda5-114">In the Unit class field, select an option.</span></span>
+    * <span data-ttu-id="dcda5-115">Enhedsklassen definerer, hvilken logisk gruppering, f.eks. område, masse eller mængde, måleenheden er del af.</span><span class="sxs-lookup"><span data-stu-id="dcda5-115">The unit class defines what logical grouping, such as area, mass, or quantity, the unit of measure is part of.</span></span>  
+5. <span data-ttu-id="dcda5-116">Angiv et tal i feltet Decimalpræcision.</span><span class="sxs-lookup"><span data-stu-id="dcda5-116">In the Decimal precision field, enter a number.</span></span>
+    * <span data-ttu-id="dcda5-117">Angiv antallet af decimaler, som den omregnede måleenhed skal afrundes til, når der er fuldført en beregning for måleenheden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-117">Specify the number of decimals that the converted unit of measure must be rounded to when a calculation is completed for the unit of measure.</span></span>  
+6. <span data-ttu-id="dcda5-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dcda5-118">Click Save.</span></span>
 
-## <a name="define-unit-translations"></a>Definer enhedsoversættelser
-1. Klik på Enhedstekster.
-2. Klik på Ny.
-    * Brug enhedstekst til at oprette en oversættelse af id'et eller et symbol, der repræsenterer måleenheden, til brug på eksterne dokumenter på debitor- eller kreditorspecifikke sprog.  
-3. Indtast eller vælg en værdi i feltet Sprog.
-4. Skriv en værdi i feltet Tekst.
-5. Klik på Gem.
-6. Luk siden.
-7. Klik på Oversatte beskrivelser af enheder.
-8. Klik på Ny.
-    * Definer sprogspecifikke beskrivelser af måleenheden.  
-9. Indtast eller vælg en værdi i feltet Sprog.
-10. Skriv en værdi i feltet Beskrivelse.
-11. Klik på Gem.
-12. Luk siden.
+## <a name="define-unit-translations"></a><span data-ttu-id="dcda5-119">Definer enhedsoversættelser</span><span class="sxs-lookup"><span data-stu-id="dcda5-119">Define unit translations</span></span>
+1. <span data-ttu-id="dcda5-120">Klik på Enhedstekster.</span><span class="sxs-lookup"><span data-stu-id="dcda5-120">Click Unit texts.</span></span>
+2. <span data-ttu-id="dcda5-121">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dcda5-121">Click New.</span></span>
+    * <span data-ttu-id="dcda5-122">Brug enhedstekst til at oprette en oversættelse af id'et eller et symbol, der repræsenterer måleenheden, til brug på eksterne dokumenter på debitor- eller kreditorspecifikke sprog.</span><span class="sxs-lookup"><span data-stu-id="dcda5-122">Use unit text to create a translation of the ID or a symbol representing the unit of measure for use on external documents in customer- or vendor-specific languages.</span></span>  
+3. <span data-ttu-id="dcda5-123">Indtast eller vælg en værdi i feltet Sprog.</span><span class="sxs-lookup"><span data-stu-id="dcda5-123">In the Language field, enter or select a value.</span></span>
+4. <span data-ttu-id="dcda5-124">Skriv en værdi i feltet Tekst.</span><span class="sxs-lookup"><span data-stu-id="dcda5-124">In the Text field, type a value.</span></span>
+5. <span data-ttu-id="dcda5-125">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dcda5-125">Click Save.</span></span>
+6. <span data-ttu-id="dcda5-126">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-126">Close the page.</span></span>
+7. <span data-ttu-id="dcda5-127">Klik på Oversatte beskrivelser af enheder.</span><span class="sxs-lookup"><span data-stu-id="dcda5-127">Click Translated unit descriptions.</span></span>
+8. <span data-ttu-id="dcda5-128">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="dcda5-128">Click New.</span></span>
+    * <span data-ttu-id="dcda5-129">Definer sprogspecifikke beskrivelser af måleenheden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-129">Define language-specific descriptions for the unit of measure.</span></span>  
+9. <span data-ttu-id="dcda5-130">Indtast eller vælg en værdi i feltet Sprog.</span><span class="sxs-lookup"><span data-stu-id="dcda5-130">In the Language field, enter or select a value.</span></span>
+10. <span data-ttu-id="dcda5-131">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="dcda5-131">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="dcda5-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="dcda5-132">Click Save.</span></span>
+12. <span data-ttu-id="dcda5-133">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-133">Close the page.</span></span>
 
-## <a name="define-unit-conversion-rules"></a>Definer omregningsregler for enhed
-1. Klik på Vis enhedsomregninger.
-    * Definer regler for konvertering af måleenheden til og fra andre enheder i den valgte enhedsklasse.  
-2. Klik på Ny for at åbne dialogboksen Fjern.
-3. Angiv et tal i feltet Faktor.
-    * Omregningsfaktor mellem Fra enhed og Til enhed. Omregningsfaktoren fra centimeter til meter er f.eks. 100, fordi der går 100 centimeter på 1 meter.  
-4. Indtast eller vælg en værdi i feltet Til-enhed.
-5. Vælg en indstilling i feltet Afrunding.
-    * Definer, hvordan den omregnede værdi skal afrundes.  
-6. Klik på OK.
-7. Luk siden.
+## <a name="define-unit-conversion-rules"></a><span data-ttu-id="dcda5-134">Definer omregningsregler for enhed</span><span class="sxs-lookup"><span data-stu-id="dcda5-134">Define unit conversion rules</span></span>
+1. <span data-ttu-id="dcda5-135">Klik på Vis enhedsomregninger.</span><span class="sxs-lookup"><span data-stu-id="dcda5-135">Click Unit conversions.</span></span>
+    * <span data-ttu-id="dcda5-136">Definer regler for konvertering af måleenheden til og fra andre enheder i den valgte enhedsklasse.</span><span class="sxs-lookup"><span data-stu-id="dcda5-136">Define rules for converting the unit of measure to and from other units of measure in the selected unit class.</span></span>  
+2. <span data-ttu-id="dcda5-137">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="dcda5-137">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="dcda5-138">Angiv et tal i feltet Faktor.</span><span class="sxs-lookup"><span data-stu-id="dcda5-138">In the Factor field, enter a number.</span></span>
+    * <span data-ttu-id="dcda5-139">Omregningsfaktor mellem Fra enhed og Til enhed.</span><span class="sxs-lookup"><span data-stu-id="dcda5-139">Conversion factor between the From unit and the To unit.</span></span> <span data-ttu-id="dcda5-140">Omregningsfaktoren fra centimeter til meter er f.eks. 100, fordi der går 100 centimeter på 1 meter.</span><span class="sxs-lookup"><span data-stu-id="dcda5-140">For example, the conversion factor from centimeter to meter is 100 because there are 100 centimeters in one meter.</span></span>  
+4. <span data-ttu-id="dcda5-141">Indtast eller vælg en værdi i feltet Til-enhed.</span><span class="sxs-lookup"><span data-stu-id="dcda5-141">In the To unit field, enter or select a value.</span></span>
+5. <span data-ttu-id="dcda5-142">Vælg en indstilling i feltet Afrunding.</span><span class="sxs-lookup"><span data-stu-id="dcda5-142">In the Rounding field, select an option.</span></span>
+    * <span data-ttu-id="dcda5-143">Definer, hvordan den omregnede værdi skal afrundes.</span><span class="sxs-lookup"><span data-stu-id="dcda5-143">Define how the converted value should be rounded.</span></span>  
+6. <span data-ttu-id="dcda5-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="dcda5-144">Click OK.</span></span>
+7. <span data-ttu-id="dcda5-145">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="dcda5-145">Close the page.</span></span>
 
 

@@ -15,7 +15,7 @@ ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -25,240 +25,241 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="budget-planning"></a>Budgetplanlægning
+# <a name="budget-planning"></a><span data-ttu-id="07db7-105">Budgetplanlægning</span><span class="sxs-lookup"><span data-stu-id="07db7-105">Budget planning</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel 
+<span data-ttu-id="07db7-106">Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funktionalitetsopdateringer i området for budgetplanlægning.</span><span class="sxs-lookup"><span data-stu-id="07db7-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area.</span></span> <span data-ttu-id="07db7-107">Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="07db7-108">Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel</span><span class="sxs-lookup"><span data-stu-id="07db7-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 
-<a name="prerequisites"></a>Forudsætninger 
+<a name="prerequisites"></a><span data-ttu-id="07db7-109">Forudsætninger</span><span class="sxs-lookup"><span data-stu-id="07db7-109">Prerequisites</span></span> 
 ------------------
 
-I dette selvstudium skal du have adgang til Finance and Operations-miljøet med demodata til Contoso og være klargjort som administrator på forekomsten. Brug ikke privat browsertilstand til denne øvelse – log ud fra en anden konto i browseren, hvis det er nødvendigt, og log på med legitimationsoplysninger for administrator til Finance and Operations. Når du logger på Finance and Operations, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Derved oprettes en vedvarende cookie, som Excel-appen aktuelt skal bruge. Hvis du logger på Finance and Operations ved hjælp af en anden webbrowser end Internet Explorer, bliver du derefter bedt om at logge på i Excel-appen. Når du klikker på "Log på" i Excel-appen, åbnes et pop op-vindue i Internet Explorer, og når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på". Hvis der ikke ser ud til at ske noget, når du klikker på "Log på" i Excel-appen, skal du rydde cachen med IE-cookies.
+<span data-ttu-id="07db7-110">I dette selvstudium skal du have adgang til Finance and Operations-miljøet med demodata til Contoso og være klargjort som administrator på forekomsten.</span><span class="sxs-lookup"><span data-stu-id="07db7-110">For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance.</span></span> <span data-ttu-id="07db7-111">Brug ikke privat browsertilstand til denne øvelse – log ud fra en anden konto i browseren, hvis det er nødvendigt, og log på med legitimationsoplysninger for administrator til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="07db7-111">Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials.</span></span> <span data-ttu-id="07db7-112">Når du logger på Finance and Operations, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på".</span><span class="sxs-lookup"><span data-stu-id="07db7-112">When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox.</span></span> <span data-ttu-id="07db7-113">Derved oprettes en vedvarende cookie, som Excel-appen aktuelt skal bruge.</span><span class="sxs-lookup"><span data-stu-id="07db7-113">This creates a persistent cookie that the Excel App currently needs.</span></span> <span data-ttu-id="07db7-114">Hvis du logger på Finance and Operations ved hjælp af en anden webbrowser end Internet Explorer, bliver du derefter bedt om at logge på i Excel-appen.</span><span class="sxs-lookup"><span data-stu-id="07db7-114">If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App.</span></span> <span data-ttu-id="07db7-115">Når du klikker på "Log på" i Excel-appen, åbnes et pop op-vindue i Internet Explorer, og når du logger på, **SKAL** du markere afkrydsningsfeltet "Forbliv logget på".</span><span class="sxs-lookup"><span data-stu-id="07db7-115">When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox.</span></span> <span data-ttu-id="07db7-116">Hvis der ikke ser ud til at ske noget, når du klikker på "Log på" i Excel-appen, skal du rydde cachen med IE-cookies.</span><span class="sxs-lookup"><span data-stu-id="07db7-116">If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.</span></span>
 
-## <a name="scenario-overview"></a>**Oversigt over scenarie**
-Lene arbejder som økonomichef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer sig, skal hun arbejde på at konfigurere virksomhedens budget for det kommende år. Forberedelse af budgettet ser ud som følger:
+## <a name="scenario-overview"></a><span data-ttu-id="07db7-117">**Oversigt over scenarie**</span><span class="sxs-lookup"><span data-stu-id="07db7-117">**Scenario overview**</span></span>
+<span data-ttu-id="07db7-118">Lene arbejder som økonomichef i Contoso Entertainment Systems i Tyskland (DEMF).</span><span class="sxs-lookup"><span data-stu-id="07db7-118">Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF).</span></span> <span data-ttu-id="07db7-119">Når FY2016 nærmer sig, skal hun arbejde på at konfigurere virksomhedens budget for det kommende år.</span><span class="sxs-lookup"><span data-stu-id="07db7-119">As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year.</span></span> <span data-ttu-id="07db7-120">Forberedelse af budgettet ser ud som følger:</span><span class="sxs-lookup"><span data-stu-id="07db7-120">Budget preparation looks as follows:</span></span>
 
-1.  Lene bruger faktiske beløb fra forrige år som udgangspunkt til at oprette budgettet.
-2.  Baseret på de foregående år faktiske oplysninger, opretter hun estimater for 12 måneder i det kommende år
-3.  Lene gennemgår budgettet med regnskabsdirektøren. Når det er gjort, foretager hun de nødvendige tilpasninger af budgetplanen og færdiggør budgetforberedelsen.
+1.  <span data-ttu-id="07db7-121">Lene bruger faktiske beløb fra forrige år som udgangspunkt til at oprette budgettet.</span><span class="sxs-lookup"><span data-stu-id="07db7-121">Julia uses previous year actuals amounts as a starting point to create the budget.</span></span>
+2.  <span data-ttu-id="07db7-122">Baseret på de foregående år faktiske oplysninger, opretter hun estimater for 12 måneder i det kommende år</span><span class="sxs-lookup"><span data-stu-id="07db7-122">Based on the previous year actuals, she creates estimates for 12 months in the upcoming year</span></span>
+3.  <span data-ttu-id="07db7-123">Lene gennemgår budgettet med regnskabsdirektøren.</span><span class="sxs-lookup"><span data-stu-id="07db7-123">Julia reviews the budget with CFO.</span></span> <span data-ttu-id="07db7-124">Når det er gjort, foretager hun de nødvendige tilpasninger af budgetplanen og færdiggør budgetforberedelsen.</span><span class="sxs-lookup"><span data-stu-id="07db7-124">Once done she makes necessary adjustments for the budget plan and finalizes budget preparation.</span></span>
 
-Konfigurationsskema til budgetplanlægning for scenariet ser ud som følger:
+<span data-ttu-id="07db7-125">Konfigurationsskema til budgetplanlægning for scenariet ser ud som følger:</span><span class="sxs-lookup"><span data-stu-id="07db7-125">Budget planning configuration schema for the scenario looks as follows:</span></span>
 
 ![Konfigurationsskema til budgetplanlægning](./media/screenshot1-300x152.png)
 
-Julia bruger følgende Excel-skabelon til at udarbejde budgettet:
+<span data-ttu-id="07db7-127">Julia bruger følgende Excel-skabelon til at udarbejde budgettet:</span><span class="sxs-lookup"><span data-stu-id="07db7-127">Julia uses the following Excel template to prepare the budget:</span></span>
 
-[![Excel-skabelon](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
+<span data-ttu-id="07db7-128">[![Excel-skabelon](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-128">[![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span></span>
 
-<a name="exercise-1-configuration"></a>Øvelse 1: Konfiguration
+<a name="exercise-1-configuration"></a><span data-ttu-id="07db7-129">Øvelse 1: Konfiguration</span><span class="sxs-lookup"><span data-stu-id="07db7-129">Exercise 1: Configuration</span></span>
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Opgave 1: Opret et organisationshierarki**
-Ad hele budgetteringsprocessen sker i økonomiafdelingen, skal Lene oprette et meget simpelt organisationshierarki – kun bestående af økonomiafdelingen. 1.1. Naviger til organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier), og klik på knappen Ny
+## <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="07db7-130">**Opgave 1: Opret et organisationshierarki**</span><span class="sxs-lookup"><span data-stu-id="07db7-130">**Task 1: Create organizational hierarchy**</span></span>
+<span data-ttu-id="07db7-131">Ad hele budgetteringsprocessen sker i økonomiafdelingen, skal Lene oprette et meget simpelt organisationshierarki – kun bestående af økonomiafdelingen.</span><span class="sxs-lookup"><span data-stu-id="07db7-131">As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</span></span> <span data-ttu-id="07db7-132">1.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-132">1.1.</span></span> <span data-ttu-id="07db7-133">Naviger til organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier), og klik på knappen Ny</span><span class="sxs-lookup"><span data-stu-id="07db7-133">Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button</span></span>
 
 ![Organisationshierarki](./media/screenshot3.png) 
 
-1.2. Skriv navnet for organisationshierarkiet, og klik på knappen Tildel formål
+<span data-ttu-id="07db7-135">1.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-135">1.2.</span></span> <span data-ttu-id="07db7-136">Skriv navnet for organisationshierarkiet, og klik på knappen Tildel formål</span><span class="sxs-lookup"><span data-stu-id="07db7-136">Type the name for the organizational hierarchy and click button Assign purpose</span></span>
 
-[![Navn](./media/screenshot4.png)](./media/screenshot4.png) 
+<span data-ttu-id="07db7-137">[![Navn](./media/screenshot4.png)](./media/screenshot4.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-137">[![Name](./media/screenshot4.png)](./media/screenshot4.png)</span></span> 
 
-1.3. Vælg formålet for budgetplanlægning, klik på knappen Tilføj, og tildel nyoprettet organisationshierarki: 
+<span data-ttu-id="07db7-138">1.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-138">1.3.</span></span> <span data-ttu-id="07db7-139">Vælg formålet for budgetplanlægning, klik på knappen Tilføj, og tildel nyoprettet organisationshierarki:</span><span class="sxs-lookup"><span data-stu-id="07db7-139">Select Budget planning purpose, click button Add and assign newly created organizational hierarchy:</span></span> 
 
-[![Tildel formål](./media/screenshot5.png)](./media/screenshot5.png)
+<span data-ttu-id="07db7-140">[![Tildel formål](./media/screenshot5.png)](./media/screenshot5.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-140">[![Assign purpose](./media/screenshot5.png)](./media/screenshot5.png)</span></span>
 
-1.4. Gentag trinnene ovenfor af hensyn til organisationens sikkerhed. Luk formen, når det er gjort.
+<span data-ttu-id="07db7-141">1.4.</span><span class="sxs-lookup"><span data-stu-id="07db7-141">1.4.</span></span> <span data-ttu-id="07db7-142">Gentag trinnene ovenfor af hensyn til organisationens sikkerhed.</span><span class="sxs-lookup"><span data-stu-id="07db7-142">Repeat the step above for Security organizational purpose.</span></span> <span data-ttu-id="07db7-143">Luk formen, når det er gjort.</span><span class="sxs-lookup"><span data-stu-id="07db7-143">Close the form when done.</span></span>
 
-[![Sikkerhedsorganisation](./media/screenshot6.png)](./media/screenshot6.png)
+<span data-ttu-id="07db7-144">[![Sikkerhedsorganisation](./media/screenshot6.png)](./media/screenshot6.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-144">[![Security org](./media/screenshot6.png)](./media/screenshot6.png)</span></span>
 
-1.5. Klik på knappen Vis i formen Organisationshierarkier. Klik på Rediger i Hierarkidesigner, og opret et hierarki ved at klikke på knappen Indsæt.
+<span data-ttu-id="07db7-145">1.5.</span><span class="sxs-lookup"><span data-stu-id="07db7-145">1.5.</span></span> <span data-ttu-id="07db7-146">Klik på knappen Vis i formen Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="07db7-146">In the Organizational Hierarchies form click button View.</span></span> <span data-ttu-id="07db7-147">Klik på Rediger i Hierarkidesigner, og opret et hierarki ved at klikke på knappen Indsæt.</span><span class="sxs-lookup"><span data-stu-id="07db7-147">Click Edit in the Hierarchy designer and create a hierarchy by clicking button Insert.</span></span>
 
-[![Indsæt](./media/screenshot7.png)](./media/screenshot7.png) 
+<span data-ttu-id="07db7-148">[![Indsæt](./media/screenshot7.png)](./media/screenshot7.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-148">[![Insert](./media/screenshot7.png)](./media/screenshot7.png)</span></span> 
 
-1.6. Vælg Økonomiafdeling for budgetteringshierarkiet. 
+<span data-ttu-id="07db7-149">1.6.</span><span class="sxs-lookup"><span data-stu-id="07db7-149">1.6.</span></span> <span data-ttu-id="07db7-150">Vælg Økonomiafdeling for budgetteringshierarkiet.</span><span class="sxs-lookup"><span data-stu-id="07db7-150">Select Finance department for the budgeting hierarchy.</span></span> 
 
-[![Finans](./media/screenshot8.png)](./media/screenshot8.png)
+<span data-ttu-id="07db7-151">[![Finans](./media/screenshot8.png)](./media/screenshot8.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-151">[![Finance](./media/screenshot8.png)](./media/screenshot8.png)</span></span>
 
-1.7. Når du er færdig, skal du klikke på knappen Publicer og Luk. Vælg 1-1/2015 som ikrafttrædelsesdato for publicering af hierarkiet.
+<span data-ttu-id="07db7-152">1.7.</span><span class="sxs-lookup"><span data-stu-id="07db7-152">1.7.</span></span> <span data-ttu-id="07db7-153">Når du er færdig, skal du klikke på knappen Publicer og Luk.</span><span class="sxs-lookup"><span data-stu-id="07db7-153">When done, click button Publish and Close.</span></span> <span data-ttu-id="07db7-154">Vælg 1-1/2015 som ikrafttrædelsesdato for publicering af hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="07db7-154">Select 1/1/2015 as effective date for hierarchy publishing.</span></span>
 
-[![Gælder fra](./media/screenshot9.png)](./media/screenshot9.png)
+<span data-ttu-id="07db7-155">[![Gælder fra](./media/screenshot9.png)](./media/screenshot9.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-155">[![Effective date](./media/screenshot9.png)](./media/screenshot9.png)</span></span>
 
-## <a name="task-2-configure-user-security"></a>Opgave 2: Konfigurer brugersikkerhed
-Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgang til budgetplandata. Lene skal give sig selv adgang til økonomiske budgetplaner. 
+## <a name="task-2-configure-user-security"></a><span data-ttu-id="07db7-156">Opgave 2: Konfigurer brugersikkerhed</span><span class="sxs-lookup"><span data-stu-id="07db7-156">Task 2: Configure user security</span></span>
+<span data-ttu-id="07db7-157">Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgang til budgetplandata.</span><span class="sxs-lookup"><span data-stu-id="07db7-157">Budget planning uses special security policies to configure access to budget plans data.</span></span> <span data-ttu-id="07db7-158">Lene skal give sig selv adgang til økonomiske budgetplaner.</span><span class="sxs-lookup"><span data-stu-id="07db7-158">Julia needs to give access to Finance budget plans for herself.</span></span> 
 
-2.1. Skift til DEMF juridisk enhedskontekst. 
+<span data-ttu-id="07db7-159">2.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-159">2.1.</span></span> <span data-ttu-id="07db7-160">Skift til DEMF juridisk enhedskontekst.</span><span class="sxs-lookup"><span data-stu-id="07db7-160">Switch to DEMF legal entity context.</span></span> 
 
 
-2.2. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Indstiller værdien for sikkerhedsmodel til Baseret på sikkerhedsorganisationer under fanen Parametre 
+<span data-ttu-id="07db7-161">2.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-161">2.2.</span></span> <span data-ttu-id="07db7-162">Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-162">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="07db7-163">Indstiller værdien for sikkerhedsmodel til Baseret på sikkerhedsorganisationer under fanen Parametre</span><span class="sxs-lookup"><span data-stu-id="07db7-163">In Parameters tab, set the Security model value to Based on security organizations</span></span> 
 
-[![Parametre](./media/screenshot11.png)](./media/screenshot11.png) 
+<span data-ttu-id="07db7-164">[![Parametre](./media/screenshot11.png)](./media/screenshot11.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-164">[![Parameters](./media/screenshot11.png)](./media/screenshot11.png)</span></span> 
 
-2.3. Naviger til Systemadministration &gt; Brugere &gt; Brugere. Give brugeradministrator (Lene Jeppesen) rollen som budgetchef. 
+<span data-ttu-id="07db7-165">2.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-165">2.3.</span></span> <span data-ttu-id="07db7-166">Naviger til Systemadministration &gt; Brugere &gt; Brugere.</span><span class="sxs-lookup"><span data-stu-id="07db7-166">Navigate to System administration &gt; Users &gt; Users.</span></span> <span data-ttu-id="07db7-167">Give brugeradministrator (Lene Jeppesen) rollen som budgetchef.</span><span class="sxs-lookup"><span data-stu-id="07db7-167">Give user Admin (Julia Funderburk) Budget manager role.</span></span> 
 
-[![Budgetchef](./media/screenshot12.png)](./media/screenshot12.png) 
+<span data-ttu-id="07db7-168">[![Budgetchef](./media/screenshot12.png)](./media/screenshot12.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-168">[![Budget manager](./media/screenshot12.png)](./media/screenshot12.png)</span></span> 
 
-2.4. Vælg brugerrolle, og klik på Tildel organisationer 
+<span data-ttu-id="07db7-169">2.4.</span><span class="sxs-lookup"><span data-stu-id="07db7-169">2.4.</span></span> <span data-ttu-id="07db7-170">Vælg brugerrolle, og klik på Tildel organisationer</span><span class="sxs-lookup"><span data-stu-id="07db7-170">Pick user role and click Assign organizations</span></span> 
 
-[![Tildel organisationer](./media/screenshot13.png)](./media/screenshot13.png)
+<span data-ttu-id="07db7-171">[![Tildel organisationer](./media/screenshot13.png)](./media/screenshot13.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-171">[![Assign org](./media/screenshot13.png)](./media/screenshot13.png)</span></span>
 
-2.5. Vælg "Giv adgang til bestemte organisationer enkeltvist". Vælg organisationshierarkiet, der er oprettet i første trin. Vælg noden Økonomi, og på knappen Tildel med underordnede 
+<span data-ttu-id="07db7-172">2.5.</span><span class="sxs-lookup"><span data-stu-id="07db7-172">2.5.</span></span> <span data-ttu-id="07db7-173">Vælg "Giv adgang til bestemte organisationer enkeltvist".</span><span class="sxs-lookup"><span data-stu-id="07db7-173">Select “Grant access to specific organizations”.</span></span> <span data-ttu-id="07db7-174">Vælg organisationshierarkiet, der er oprettet i første trin.</span><span class="sxs-lookup"><span data-stu-id="07db7-174">Pick Organizational hierarchy created in the first step.</span></span> <span data-ttu-id="07db7-175">Vælg noden Økonomi, og på knappen Tildel med underordnede</span><span class="sxs-lookup"><span data-stu-id="07db7-175">Pick Finance node and click Grant with children button</span></span> 
 
-***Vigtigt!*** *Kontroller, at du befinder dig i DEMF's juridiske enhedskontekst under udførelse af denne opgave, da organisatorisk sikkerhed anvendes pr. juridisk enhed* 
+<span data-ttu-id="07db7-176">***Vigtigt!***</span><span class="sxs-lookup"><span data-stu-id="07db7-176">***Important!***</span></span> <span data-ttu-id="07db7-177">*Kontroller, at du befinder dig i DEMF's juridiske enhedskontekst under udførelse af denne opgave, da organisatorisk sikkerhed anvendes pr. juridisk enhed*</span><span class="sxs-lookup"><span data-stu-id="07db7-177">*Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity*</span></span> 
 
-[![Giv adgang](./media/screenshot14.png)](./media/screenshot14.png)
+<span data-ttu-id="07db7-178">[![Giv adgang](./media/screenshot14.png)](./media/screenshot14.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-178">[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)</span></span>
 
-## <a name="task-3-create-scenarios"></a>Opgave 3: Opret scenarier
-3.1. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Bemærk på siden Scenarier de scenarier, som vi skal bruge videre frem i denne øvelse: Forrige års faktiske og budgetterede. 
+## <a name="task-3-create-scenarios"></a><span data-ttu-id="07db7-179">Opgave 3: Opret scenarier</span><span class="sxs-lookup"><span data-stu-id="07db7-179">Task 3: Create scenarios</span></span>
+<span data-ttu-id="07db7-180">3.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-180">3.1.</span></span> <span data-ttu-id="07db7-181">Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-181">Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="07db7-182">Bemærk på siden Scenarier de scenarier, som vi skal bruge videre frem i denne øvelse: Forrige års faktiske og budgetterede.</span><span class="sxs-lookup"><span data-stu-id="07db7-182">In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</span></span> 
 
-*Bemærk! Du kan oprette nye scenarier for denne opgave, hvis du ønsker det, og bruge dem i stedet.* 
+<span data-ttu-id="07db7-183">*Bemærk! Du kan oprette nye scenarier for denne opgave, hvis du ønsker det, og bruge dem i stedet.*</span><span class="sxs-lookup"><span data-stu-id="07db7-183">*Note: You can create new scenarios for this exercise if desired and use those instead.*</span></span> 
 
-[![Nye scenarier](./media/screenshot15.png)](./media/screenshot15.png) 
+<span data-ttu-id="07db7-184">[![Nye scenarier](./media/screenshot15.png)](./media/screenshot15.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-184">[![New scenarios](./media/screenshot15.png)](./media/screenshot15.png)</span></span> 
 
-*Da Lene ikke bruger formel godkendelsesproces til udarbejdelsen af budgettet, springer vi opsætning af arbejdsgange, stadier og stadier i arbejdsgange over i denne øvelse og vil bruge en eksisterende konfiguration til automatisk – Godkend arbejdsgang. Se tillæg til konfiguration af denne arbejdsgang.*
+<span data-ttu-id="07db7-185">*Da Lene ikke bruger formel godkendelsesproces til udarbejdelsen af budgettet, springer vi opsætning af arbejdsgange, stadier og stadier i arbejdsgange over i denne øvelse og vil bruge en eksisterende konfiguration til automatisk – Godkend arbejdsgang. Se tillæg til konfiguration af denne arbejdsgang.*</span><span class="sxs-lookup"><span data-stu-id="07db7-185">*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*</span></span>
 
-## <a name="task-4-create-budget-plan-columns"></a>Opgave 4: Opret budgetplankolonner
-Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bruges i dokumentlayoutet til en budgetplan. I vores eksempel skal vi oprette en kolonne til forrige år faktiske oplysninger og 12 kolonner, der repræsenterer hver måned i et budgetteret år. Kolonner kan oprettes ved enten blot at klikke på knappen Tilføj og indsætte værdierne eller med hjælp af en dataenhed. I denne øvelse vil vi benytte dataenhed til at udfylde værdierne. 
+## <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="07db7-186">Opgave 4: Opret budgetplankolonner</span><span class="sxs-lookup"><span data-stu-id="07db7-186">Task 4: Create budget plan columns</span></span>
+<span data-ttu-id="07db7-187">Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bruges i dokumentlayoutet til en budgetplan.</span><span class="sxs-lookup"><span data-stu-id="07db7-187">Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</span></span> <span data-ttu-id="07db7-188">I vores eksempel skal vi oprette en kolonne til forrige år faktiske oplysninger og 12 kolonner, der repræsenterer hver måned i et budgetteret år.</span><span class="sxs-lookup"><span data-stu-id="07db7-188">In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</span></span> <span data-ttu-id="07db7-189">Kolonner kan oprettes ved enten blot at klikke på knappen Tilføj og indsætte værdierne eller med hjælp af en dataenhed.</span><span class="sxs-lookup"><span data-stu-id="07db7-189">Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</span></span> <span data-ttu-id="07db7-190">I denne øvelse vil vi benytte dataenhed til at udfylde værdierne.</span><span class="sxs-lookup"><span data-stu-id="07db7-190">In this lab we will use Data entity to fill in the values.</span></span> 
 
-4.1. Åbn siden Kolonner i Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Klik på Office-knappen i øverste højre hjørne af formularen, og vælg Kolonner (ufiltreret) 
+<span data-ttu-id="07db7-191">4.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-191">4.1.</span></span> <span data-ttu-id="07db7-192">Åbn siden Kolonner i Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-192">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page.</span></span> <span data-ttu-id="07db7-193">Klik på Office-knappen i øverste højre hjørne af formularen, og vælg Kolonner (ufiltreret)</span><span class="sxs-lookup"><span data-stu-id="07db7-193">Click Office button on the top right corner of the form and pick Columns (unfiltered)</span></span> 
 
-[![Kolonner ufiltreret](./media/screenshot16.png)](./media/screenshot16.png) 
+<span data-ttu-id="07db7-194">[![Kolonner ufiltreret](./media/screenshot16.png)](./media/screenshot16.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-194">[![Columns unfiltered](./media/screenshot16.png)](./media/screenshot16.png)</span></span> 
 
-4.2. Systemet åbner Excel-projektmappen, der skal bruges til at udfylde værdierne. Hvis du bliver spurgt, skal du klikke på Aktivér redigering og Hav tillid til denne app 
+<span data-ttu-id="07db7-195">4.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-195">4.2.</span></span> <span data-ttu-id="07db7-196">Systemet åbner Excel-projektmappen, der skal bruges til at udfylde værdierne.</span><span class="sxs-lookup"><span data-stu-id="07db7-196">System will open Excel workbook to be used for filling in the values.</span></span> <span data-ttu-id="07db7-197">Hvis du bliver spurgt, skal du klikke på Aktivér redigering og Hav tillid til denne app</span><span class="sxs-lookup"><span data-stu-id="07db7-197">If prompted, click Enable Editing and Trust this app</span></span> 
 
-[![Aktivér redigering](./media/screenshot18.png)](./media/screenshot18.png) 
+<span data-ttu-id="07db7-198">[![Aktivér redigering](./media/screenshot18.png)](./media/screenshot18.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-198">[![Enable editing](./media/screenshot18.png)](./media/screenshot18.png)</span></span> 
 
-[![Hav tillid til denne app](./media/screenshot17.png)](./media/screenshot17.png)
+<span data-ttu-id="07db7-199">[![Hav tillid til denne app](./media/screenshot17.png)](./media/screenshot17.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-199">[![Trust this app](./media/screenshot17.png)](./media/screenshot17.png)</span></span>
 
-4.3. Vi skal bruge flere kolonner til at angive værdierne i. Klik på Design i den højre siderude for at føje kolonner til gitteret: 
+<span data-ttu-id="07db7-200">4.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-200">4.3.</span></span> <span data-ttu-id="07db7-201">Vi skal bruge flere kolonner til at angive værdierne i.</span><span class="sxs-lookup"><span data-stu-id="07db7-201">We will need more columns to fill the values in.</span></span> <span data-ttu-id="07db7-202">Klik på Design i den højre siderude for at føje kolonner til gitteret:</span><span class="sxs-lookup"><span data-stu-id="07db7-202">Click Design on the right side pane to add the columns to the grid:</span></span> 
 
-[![Design](./media/screenshot19.png)](./media/screenshot19.png) 
+<span data-ttu-id="07db7-203">[![Design](./media/screenshot19.png)](./media/screenshot19.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-203">[![Design](./media/screenshot19.png)](./media/screenshot19.png)</span></span> 
 
-4.4. Klik på lille blyantknap ved siden af PlanColumns for at få vist tilgængelige kolonner, der skal føjes til gitteret 
+<span data-ttu-id="07db7-204">4.4.</span><span class="sxs-lookup"><span data-stu-id="07db7-204">4.4.</span></span> <span data-ttu-id="07db7-205">Klik på lille blyantknap ved siden af PlanColumns for at få vist tilgængelige kolonner, der skal føjes til gitteret</span><span class="sxs-lookup"><span data-stu-id="07db7-205">Click little pencil button next to PlanColumns to see available columns to add to the grid</span></span> 
 
-[![Rediger](./media/screenshot20.png)](./media/screenshot20.png) 
+<span data-ttu-id="07db7-206">[![Rediger](./media/screenshot20.png)](./media/screenshot20.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-206">[![Edit](./media/screenshot20.png)](./media/screenshot20.png)</span></span> 
 
-4.5. Dobbeltklik på hvert tilgængeligt felt for at føje dem til de markerede felter, og klik på Opdater 
+<span data-ttu-id="07db7-207">4.5.</span><span class="sxs-lookup"><span data-stu-id="07db7-207">4.5.</span></span> <span data-ttu-id="07db7-208">Dobbeltklik på hvert tilgængeligt felt for at føje dem til de markerede felter, og klik på Opdater</span><span class="sxs-lookup"><span data-stu-id="07db7-208">Double click on each available field to add them to Selected fields and click Update</span></span> 
 
-![Vedligeholdelse](./media/screenshot21.png)](./Media/screenshot21.png) 
+![Vedligeholdelse](./media/screenshot21.png)<span data-ttu-id="07db7-210">](./Media/screenshot21.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-210">](./media/screenshot21.png)</span></span> 
 
-4.6. Tilføj alle de kolonner, der skal oprettes, i Excel-tabellen. Brug funktionen Autofyld i Excel til hurtigt at tilføje linjerne. Sørg for, at linjerne er tilføjet som en del af tabellen (når du bruger lodret rulning, skal du kunne se kolonneoverskrifter øverst i gitteret) 
+<span data-ttu-id="07db7-211">4.6.</span><span class="sxs-lookup"><span data-stu-id="07db7-211">4.6.</span></span> <span data-ttu-id="07db7-212">Tilføj alle de kolonner, der skal oprettes, i Excel-tabellen.</span><span class="sxs-lookup"><span data-stu-id="07db7-212">In Excel table add all the columns that need to be created.</span></span> <span data-ttu-id="07db7-213">Brug funktionen Autofyld i Excel til hurtigt at tilføje linjerne.</span><span class="sxs-lookup"><span data-stu-id="07db7-213">Use AutoFill feature in Excel to add the lines quickly.</span></span> <span data-ttu-id="07db7-214">Sørg for, at linjerne er tilføjet som en del af tabellen (når du bruger lodret rulning, skal du kunne se kolonneoverskrifter øverst i gitteret)</span><span class="sxs-lookup"><span data-stu-id="07db7-214">Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid)</span></span> 
 
-[![Autofyld](./media/screenshot22.png)](./media/screenshot22.png) 
+<span data-ttu-id="07db7-215">[![Autofyld](./media/screenshot22.png)](./media/screenshot22.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-215">[![Autofill](./media/screenshot22.png)](./media/screenshot22.png)</span></span> 
 
-4.7. Gå tilbage til Finance and Operations, og opdater siden. Publicerede værdier vises i Finance and Operations. 
+<span data-ttu-id="07db7-216">4.7.</span><span class="sxs-lookup"><span data-stu-id="07db7-216">4.7.</span></span> <span data-ttu-id="07db7-217">Gå tilbage til Finance and Operations, og opdater siden.</span><span class="sxs-lookup"><span data-stu-id="07db7-217">Return to Finance and Operations and refresh the page.</span></span> <span data-ttu-id="07db7-218">Publicerede værdier vises i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="07db7-218">Published values will appear in Finance and Operations.</span></span> 
 
-[![Opdatér](./media/screenshot23.png)](./media/screenshot23.png)
+<span data-ttu-id="07db7-219">[![Opdatér](./media/screenshot23.png)](./media/screenshot23.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-219">[![Refresh](./media/screenshot23.png)](./media/screenshot23.png)</span></span>
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan
-Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når brugeren åbner budgetplansdokumentet. Det er også muligt at skifte layout for budgetplandokumentet for at få vist samme data med forskellige vinkler. Da Lene nu har fået defineret kolonner, der skal bruges sammen med vores budgetplansdokumentet, skal hun oprette et dokumentlayout for budgetplanen, der skal ligne Excel-tabellen, som hun bruger til at oprette budgetdata (se afsnittet Oversigt over scenarie i denne øvelse) 
+## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="07db7-220">Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan</span><span class="sxs-lookup"><span data-stu-id="07db7-220">Task 5: Create budget plan document layouts and templates</span></span>
+<span data-ttu-id="07db7-221">Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når brugeren åbner budgetplansdokumentet.</span><span class="sxs-lookup"><span data-stu-id="07db7-221">Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</span></span> <span data-ttu-id="07db7-222">Det er også muligt at skifte layout for budgetplandokumentet for at få vist samme data med forskellige vinkler.</span><span class="sxs-lookup"><span data-stu-id="07db7-222">It is also possible to switch the layout for budget plan document to see the same data in different angles.</span></span> <span data-ttu-id="07db7-223">Da Lene nu har fået defineret kolonner, der skal bruges sammen med vores budgetplansdokumentet, skal hun oprette et dokumentlayout for budgetplanen, der skal ligne Excel-tabellen, som hun bruger til at oprette budgetdata (se afsnittet Oversigt over scenarie i denne øvelse)</span><span class="sxs-lookup"><span data-stu-id="07db7-223">Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</span></span> 
 
-5.1. I Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration skal du åbne siden Layouts. Opret et nyt layout for budgetposten Månedlig:
+<span data-ttu-id="07db7-224">5.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-224">5.1.</span></span> <span data-ttu-id="07db7-225">I Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration skal du åbne siden Layouts.</span><span class="sxs-lookup"><span data-stu-id="07db7-225">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page.</span></span> <span data-ttu-id="07db7-226">Opret et nyt layout for budgetposten Månedlig:</span><span class="sxs-lookup"><span data-stu-id="07db7-226">Create a new layout for Monthly budget entry:</span></span>
 
--   Vælg MA + BU-dimensionsopsætning for at medtage hovedkonti og virksomhedsenheder i layoutet.
--   Vis alle kolonner med budgetplaner, der er oprettet i det forrige trin, i sektionen Elementer. Gør alle redigerbare undtagen Faktiske omkostninger for forrige år.
--   Klik på knappen Beskrivelser for at vælge, hvilke økonomiske dimensioner der skal vise beskrivelser i gitteret.
+-   <span data-ttu-id="07db7-227">Vælg MA + BU-dimensionsopsætning for at medtage hovedkonti og virksomhedsenheder i layoutet.</span><span class="sxs-lookup"><span data-stu-id="07db7-227">Pick MA+BU dimension set to include Main accounts and Business units to the layout.</span></span>
+-   <span data-ttu-id="07db7-228">Vis alle kolonner med budgetplaner, der er oprettet i det forrige trin, i sektionen Elementer.</span><span class="sxs-lookup"><span data-stu-id="07db7-228">List all budget plan columns created in the previous step in the Elements section.</span></span> <span data-ttu-id="07db7-229">Gør alle redigerbare undtagen Faktiske omkostninger for forrige år.</span><span class="sxs-lookup"><span data-stu-id="07db7-229">Make all but Previous year actuals editable.</span></span>
+-   <span data-ttu-id="07db7-230">Klik på knappen Beskrivelser for at vælge, hvilke økonomiske dimensioner der skal vise beskrivelser i gitteret.</span><span class="sxs-lookup"><span data-stu-id="07db7-230">Click Descriptions button to select which financial dimensions should display Descriptions in the grid.</span></span>
 
-[![Beskrivelser](./media/screenshot24.png)](./media/screenshot24.png) 
+<span data-ttu-id="07db7-231">[![Beskrivelser](./media/screenshot24.png)](./media/screenshot24.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-231">[![Descriptions](./media/screenshot24.png)](./media/screenshot24.png)</span></span> 
 
-Baseret på definitionen af budgetplanens layout kan vi oprette en Excel-skabelon, der skal bruges som en alternativ måde at redigere budgetdata på. Da Excel-skabelonen skal matche layoutdefinitionen af budgetplanen, kan du ikke redigere budgetplanens layout efter oprettelse af Excel-skabelonen, derfor skal denne opgave udføres, når alle layoutkomponenter er defineret. 
+<span data-ttu-id="07db7-232">Baseret på definitionen af budgetplanens layout kan vi oprette en Excel-skabelon, der skal bruges som en alternativ måde at redigere budgetdata på.</span><span class="sxs-lookup"><span data-stu-id="07db7-232">Based on the budget plan layout definition we can create an Excel template to be used as an alternative way to edit Budget data.</span></span> <span data-ttu-id="07db7-233">Da Excel-skabelonen skal matche layoutdefinitionen af budgetplanen, kan du ikke redigere budgetplanens layout efter oprettelse af Excel-skabelonen, derfor skal denne opgave udføres, når alle layoutkomponenter er defineret.</span><span class="sxs-lookup"><span data-stu-id="07db7-233">As Excel template has to match budget plan layout definition, you won’t be able to edit budget plan layout after generating Excel template, therefore this task should be done after all layout components are defined.</span></span> 
 
-5.2. For det layout, der blev oprettet i trin 5.1., skal du klikke på knappen Skabelon &gt; Generer. Bekræft advarselsmeddelelsen. Hvis du vil have vist skabelonen, skal du klikke på Skabelon &gt; Vis. 
+<span data-ttu-id="07db7-234">5.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-234">5.2.</span></span> <span data-ttu-id="07db7-235">For det layout, der blev oprettet i trin 5.1.,</span><span class="sxs-lookup"><span data-stu-id="07db7-235">For the layout created in the 5.1.</span></span> <span data-ttu-id="07db7-236">skal du klikke på knappen Skabelon &gt; Generer.</span><span class="sxs-lookup"><span data-stu-id="07db7-236">step, click button Template &gt; Generate.</span></span> <span data-ttu-id="07db7-237">Bekræft advarselsmeddelelsen.</span><span class="sxs-lookup"><span data-stu-id="07db7-237">Confirm the warning message.</span></span> <span data-ttu-id="07db7-238">Hvis du vil have vist skabelonen, skal du klikke på Skabelon &gt; Vis.</span><span class="sxs-lookup"><span data-stu-id="07db7-238">To view the template, click Template &gt; View.</span></span> 
 
-*Bemærk! Sørg for at vælge "Gem som" og vælge det sted, hvor skabelonen skal gemmes for at redigere den. Hvis brugeren vælger "Åbn" i dialogboksen uden at gemme, bevares de ændringer, der er udført på filen, ikke, når filen lukkes.* 
-[![Skabelonvisning](./media/screenshot25.png)](./media/screenshot25.png) 
+<span data-ttu-id="07db7-239">*Bemærk! Sørg for at vælge "Gem som" og vælge det sted, hvor skabelonen skal gemmes for at redigere den. Hvis brugeren vælger "Åbn" i dialogboksen uden at gemme, bevares de ændringer, der er udført på filen, ikke, når filen lukkes.* 
+[![Skabelonvisning](./media/screenshot25.png)](./media/screenshot25.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-239">*Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
+[![Template view](./media/screenshot25.png)](./media/screenshot25.png)</span></span> 
 
-5.3. &lt; Valgfrit trin&gt; Rediger Excel-skabelonen for at gøre den mere brugervenlig – tilføj samlede formler, overskriftsfelter, formatering osv. Gem ændringerne, og overfør filen til budgetplanslayoutet ved at klikke på Layout &gt; Overfør [![Overfør](./media/screenshot26.png)](./media/screenshot26.png)
+<span data-ttu-id="07db7-240">5.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-240">5.3.</span></span> <span data-ttu-id="07db7-241">&lt; Valgfrit trin&gt; Rediger Excel-skabelonen for at gøre den mere brugervenlig – tilføj samlede formler, overskriftsfelter, formatering osv. Gem ændringerne, og overfør filen til budgetplanslayoutet ved at klikke på Layout &gt; Overfør [![Overfør](./media/screenshot26.png)](./media/screenshot26.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-241">&lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload [![Upload](./media/screenshot26.png)](./media/screenshot26.png)</span></span>
 
-## <a name="task-6-create-a-budget-planning-process"></a>Opgave 6: Opret en budgetplanlægningsproces
-Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer hele opsætningen ovenfor for at begynde at indtaste budgetplaner. Budgetplanlægningsprocessen definerer, hvilke budgetteringsorganisationer, arbejdsgangslayout og skabeloner der skal bruges til at oprette budgetplaner. 
+## <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="07db7-242">Opgave 6: Opret en budgetplanlægningsproces</span><span class="sxs-lookup"><span data-stu-id="07db7-242">Task 6: Create a budget planning process</span></span>
+<span data-ttu-id="07db7-243">Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer hele opsætningen ovenfor for at begynde at indtaste budgetplaner.</span><span class="sxs-lookup"><span data-stu-id="07db7-243">Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</span></span> <span data-ttu-id="07db7-244">Budgetplanlægningsprocessen definerer, hvilke budgetteringsorganisationer, arbejdsgangslayout og skabeloner der skal bruges til at oprette budgetplaner.</span><span class="sxs-lookup"><span data-stu-id="07db7-244">Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</span></span> 
 
-6.1. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningsproces, og opret en ny post.
+<span data-ttu-id="07db7-245">6.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-245">6.1.</span></span> <span data-ttu-id="07db7-246">Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningsproces, og opret en ny post.</span><span class="sxs-lookup"><span data-stu-id="07db7-246">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.</span></span>
 
--   Budgetplanlægningsproces – DEMF-budgettering FY2016
--   Budgetcyklus – FY2016
--   Finans – DEMF
--   Standardkontostruktur – Manufacturing P&L
--   Organisationshierarkiet – Vælg det hierarki, der er oprettet i begyndelsen af øvelsen
--   Budgetplanlægningsarbejdsgang – Tildel automatisk – Godkend arbejdsgang for økonomiafdeling
--   I regler og skabeloner til budgetplanlægning skal du for hvert stadie i arbejdsgangens budgetplanlægning vælge, om tilføjelse og redigering af linjer er tilladt, og hvilket layout der skal bruges som standard
+-   <span data-ttu-id="07db7-247">Budgetplanlægningsproces – DEMF-budgettering FY2016</span><span class="sxs-lookup"><span data-stu-id="07db7-247">Budget planning process – DEMF budgeting FY2016</span></span>
+-   <span data-ttu-id="07db7-248">Budgetcyklus – FY2016</span><span class="sxs-lookup"><span data-stu-id="07db7-248">Budget cycle – FY2016</span></span>
+-   <span data-ttu-id="07db7-249">Finans – DEMF</span><span class="sxs-lookup"><span data-stu-id="07db7-249">Ledger – DEMF</span></span>
+-   <span data-ttu-id="07db7-250">Standardkontostruktur – Manufacturing P&L</span><span class="sxs-lookup"><span data-stu-id="07db7-250">Default account structure – Manufacturing P&L</span></span>
+-   <span data-ttu-id="07db7-251">Organisationshierarkiet – Vælg det hierarki, der er oprettet i begyndelsen af øvelsen</span><span class="sxs-lookup"><span data-stu-id="07db7-251">Organization hierarchy – pick the hierarchy created in the beginning of the lab</span></span>
+-   <span data-ttu-id="07db7-252">Budgetplanlægningsarbejdsgang – Tildel automatisk – Godkend arbejdsgang for økonomiafdeling</span><span class="sxs-lookup"><span data-stu-id="07db7-252">Budget planning workflow – assign Auto – Approve workflow for Finance department</span></span>
+-   <span data-ttu-id="07db7-253">I regler og skabeloner til budgetplanlægning skal du for hvert stadie i arbejdsgangens budgetplanlægning vælge, om tilføjelse og redigering af linjer er tilladt, og hvilket layout der skal bruges som standard</span><span class="sxs-lookup"><span data-stu-id="07db7-253">In budget planning stage rules and templates, for each workflow Budget planning stage pick if Adding lines and Modifying lines is allowed and what Layout should be used by default</span></span>
 
-*Bemærk! Du kan oprette flere dokumentlayout og tildele dem, så de er tilgængelige i budgetplanlægningen arbejdsgangsstadie ved at klikke på knappen Alternative layouts.* 
+<span data-ttu-id="07db7-254">*Bemærk! Du kan oprette flere dokumentlayout og tildele dem, så de er tilgængelige i budgetplanlægningen arbejdsgangsstadie ved at klikke på knappen Alternative layouts.*</span><span class="sxs-lookup"><span data-stu-id="07db7-254">*Note: You can create additional document layouts and assign them to be available in budget planning workflow stage by clicking Alternate layouts button.*</span></span> 
 
-[![Alternative layouts](./media/screenshot27.png)](./media/screenshot27.png) 
+<span data-ttu-id="07db7-255">[![Alternative layouts](./media/screenshot27.png)](./media/screenshot27.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-255">[![Alternate layouts](./media/screenshot27.png)](./media/screenshot27.png)</span></span> 
 
-6.2. Vælg Handlinger &gt; Aktiver for at aktivere denne budgetplanlægningsarbejdsgang 
+<span data-ttu-id="07db7-256">6.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-256">6.2.</span></span> <span data-ttu-id="07db7-257">Vælg Handlinger &gt; Aktiver for at aktivere denne budgetplanlægningsarbejdsgang</span><span class="sxs-lookup"><span data-stu-id="07db7-257">Select Actions &gt; Activate to activate this budget planning workflow</span></span> 
 
-[![Aktivér](./media/screenshot28.png)](./media/screenshot28.png)
+<span data-ttu-id="07db7-258">[![Aktivér](./media/screenshot28.png)](./media/screenshot28.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-258">[![Activate](./media/screenshot28.png)](./media/screenshot28.png)</span></span>
 
-<a name="exercise-2-process-simulation"></a>Øvelse 2: Processimulering
+<a name="exercise-2-process-simulation"></a><span data-ttu-id="07db7-259">Øvelse 2: Processimulering</span><span class="sxs-lookup"><span data-stu-id="07db7-259">Exercise 2: Process simulation</span></span>
 ==============================
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Opgave 7: Generér startdata for budgetplan fra Finans
-7.1. Naviger til Budgettering &gt; Periodisk &gt; Opret budgetplan fra finansmodulet. Udfyld de periodiske procesparametre, og klik på knappen Generér. 
+## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="07db7-260">Opgave 7: Generér startdata for budgetplan fra Finans</span><span class="sxs-lookup"><span data-stu-id="07db7-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
+<span data-ttu-id="07db7-261">7.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-261">7.1.</span></span> <span data-ttu-id="07db7-262">Naviger til Budgettering &gt; Periodisk &gt; Opret budgetplan fra finansmodulet.</span><span class="sxs-lookup"><span data-stu-id="07db7-262">Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger.</span></span> <span data-ttu-id="07db7-263">Udfyld de periodiske procesparametre, og klik på knappen Generér.</span><span class="sxs-lookup"><span data-stu-id="07db7-263">Fill in the periodic process parameters and click button Generate.</span></span> 
 
-[![Generer](./media/screenshot29.png)](./media/screenshot29.png) 
+<span data-ttu-id="07db7-264">[![Generer](./media/screenshot29.png)](./media/screenshot29.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-264">[![Generate](./media/screenshot29.png)](./media/screenshot29.png)</span></span> 
 
-7.2. Naviger til budgettering &gt; Budgetplaner til at finde en budgetplan, der er oprettet af processen Generér. 
+<span data-ttu-id="07db7-265">7.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-265">7.2.</span></span> <span data-ttu-id="07db7-266">Naviger til budgettering &gt; Budgetplaner til at finde en budgetplan, der er oprettet af processen Generér.</span><span class="sxs-lookup"><span data-stu-id="07db7-266">Navigate to Budgeting &gt; Budget plans to find a budget plan created by Generate process.</span></span> 
 
-[![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png) 
+<span data-ttu-id="07db7-267">[![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-267">[![Budget plan](./media/screenshot30.png)](./media/screenshot30.png)</span></span> 
 
-7.3. Åbn oplysninger om dokumentet ved at klikke på dokumentnummerlinket. Budgetplanen vises som defineret i det layout, der er oprettet under denne øvelse 
+<span data-ttu-id="07db7-268">7.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-268">7.3.</span></span> <span data-ttu-id="07db7-269">Åbn oplysninger om dokumentet ved at klikke på dokumentnummerlinket.</span><span class="sxs-lookup"><span data-stu-id="07db7-269">Open document details by clicking on Document number hyperlink.</span></span> <span data-ttu-id="07db7-270">Budgetplanen vises som defineret i det layout, der er oprettet under denne øvelse</span><span class="sxs-lookup"><span data-stu-id="07db7-270">Budget plan is displayed as defined in the layout created during this lab</span></span> 
 
-[![Budgetplansvisning](./media/screenshot31.png)](./media/screenshot31.png)
+<span data-ttu-id="07db7-271">[![Budgetplansvisning](./media/screenshot31.png)](./media/screenshot31.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-271">[![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)</span></span>
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Opgave 8: Opret budget for indeværende år baseret på faktiske oplysninger i forrige år
-Fordelingsmetoderne kan bruges i budgetplanen til nemt at kopiere oplysninger til budgetplaner fra ét scenarie til et andet/sprede dem på tværs af perioder/allokere til andre dimensioner. Vi skal bruge fordelinger til at oprette budget for indeværende år fra forrige års faktiske oplysninger. 
+## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="07db7-272">Opgave 8: Opret budget for indeværende år baseret på faktiske oplysninger i forrige år</span><span class="sxs-lookup"><span data-stu-id="07db7-272">Task 8: Create current year budget based on previous year actuals</span></span>
+<span data-ttu-id="07db7-273">Fordelingsmetoderne kan bruges i budgetplanen til nemt at kopiere oplysninger til budgetplaner fra ét scenarie til et andet/sprede dem på tværs af perioder/allokere til andre dimensioner.</span><span class="sxs-lookup"><span data-stu-id="07db7-273">Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</span></span> <span data-ttu-id="07db7-274">Vi skal bruge fordelinger til at oprette budget for indeværende år fra forrige års faktiske oplysninger.</span><span class="sxs-lookup"><span data-stu-id="07db7-274">We will use allocations to create current year budget from previous year actuals.</span></span> 
 
-8.1. Vælg alle linjer i budgetplanens dokumentgitter og klik på knappen Fordel budget 
+<span data-ttu-id="07db7-275">8.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-275">8.1.</span></span> <span data-ttu-id="07db7-276">Vælg alle linjer i budgetplanens dokumentgitter og klik på knappen Fordel budget</span><span class="sxs-lookup"><span data-stu-id="07db7-276">Pick all lines in the budget plan document grid and click button allocate budget</span></span> 
 
-[![Alle linjer](./media/screenshot32.png)](./media/screenshot32.png) 
+<span data-ttu-id="07db7-277">[![Alle linjer](./media/screenshot32.png)](./media/screenshot32.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-277">[![All lines](./media/screenshot32.png)](./media/screenshot32.png)</span></span> 
 
-8.2. Vælg fordelingsmetode, periodenøgle, kilde- og destinationsscenarier, og klik på Alloker 
+<span data-ttu-id="07db7-278">8.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-278">8.2.</span></span> <span data-ttu-id="07db7-279">Vælg fordelingsmetode, periodenøgle, kilde- og destinationsscenarier, og klik på Alloker</span><span class="sxs-lookup"><span data-stu-id="07db7-279">Select allocation method, Period key, Source and destination scenarios and click Allocate</span></span> 
 
-[![Alloker](./media/screenshot33.png)](./media/screenshot33.png)
+<span data-ttu-id="07db7-280">[![Alloker](./media/screenshot33.png)](./media/screenshot33.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-280">[![Allocate](./media/screenshot33.png)](./media/screenshot33.png)</span></span>
 
-De faktiske beløb for tidligere år vil blive kopieret til budgettet for indeværende år og fordelt på tværs af perioder med periodenøglen Salgskurve. 
+<span data-ttu-id="07db7-281">De faktiske beløb for tidligere år vil blive kopieret til budgettet for indeværende år og fordelt på tværs af perioder med periodenøglen Salgskurve.</span><span class="sxs-lookup"><span data-stu-id="07db7-281">The previous year actual amounts will be copied to current year budget and allocate them across periods using Sales curve period key.</span></span> 
 
-[![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
+<span data-ttu-id="07db7-282">[![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-282">[![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)</span></span>
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Opgave 9: Juster budgetplansdokumentet ved hjælp af Excel, og færdiggør dokumentet
-9.1. Klik på knappen Regneark for at åbne dokumentindholdet i Excel
+## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="07db7-283">Opgave 9: Juster budgetplansdokumentet ved hjælp af Excel, og færdiggør dokumentet</span><span class="sxs-lookup"><span data-stu-id="07db7-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
+<span data-ttu-id="07db7-284">9.1.</span><span class="sxs-lookup"><span data-stu-id="07db7-284">9.1.</span></span> <span data-ttu-id="07db7-285">Klik på knappen Regneark for at åbne dokumentindholdet i Excel</span><span class="sxs-lookup"><span data-stu-id="07db7-285">Click Button worksheet to open document contents in Excel</span></span>
 
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+<span data-ttu-id="07db7-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span></span>
 
-9.2. Når Excel-projektmappen åbnes, skal du justere tallene i budgetplansdokumentet og klikke på knappen Publicer.
+<span data-ttu-id="07db7-287">9.2.</span><span class="sxs-lookup"><span data-stu-id="07db7-287">9.2.</span></span> <span data-ttu-id="07db7-288">Når Excel-projektmappen åbnes, skal du justere tallene i budgetplansdokumentet og klikke på knappen Publicer.</span><span class="sxs-lookup"><span data-stu-id="07db7-288">When Excel workbook opens, adjust the numbers in budget plan document and click button Publish.</span></span>
 
-[![Publicer](./media/screenshot36.png)](./media/screenshot36.png)
+<span data-ttu-id="07db7-289">[![Publicer](./media/screenshot36.png)](./media/screenshot36.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-289">[![Publish](./media/screenshot36.png)](./media/screenshot36.png)</span></span>
 
-9.3. Vend tilbage til budgetplansdokumentet i Finance and Operations. Klik på Arbejdsgang &gt; Send for automatisk at godkende dokumentet
+<span data-ttu-id="07db7-290">9.3.</span><span class="sxs-lookup"><span data-stu-id="07db7-290">9.3.</span></span> <span data-ttu-id="07db7-291">Vend tilbage til budgetplansdokumentet i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="07db7-291">Return to budget plan document in Finance and Operations.</span></span> <span data-ttu-id="07db7-292">Klik på Arbejdsgang &gt; Send for automatisk at godkende dokumentet</span><span class="sxs-lookup"><span data-stu-id="07db7-292">Click Workflow &gt; Submit to Auto-approve the document</span></span>
 
-[![Automatisk godkendt](./media/screenshot37.png)](./media/screenshot37.png) 
+<span data-ttu-id="07db7-293">[![Automatisk godkendt](./media/screenshot37.png)](./media/screenshot37.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-293">[![Auto-approve](./media/screenshot37.png)](./media/screenshot37.png)</span></span> 
 
-Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godkendt. [![Godkendt](./media/screenshot38.png)](./media/screenshot38.png)
+<span data-ttu-id="07db7-294">Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godkendt.</span><span class="sxs-lookup"><span data-stu-id="07db7-294">Once workflow completes, budget plan document stage changes to Approved.</span></span> <span data-ttu-id="07db7-295">[![Godkendt](./media/screenshot38.png)](./media/screenshot38.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-295">[![Approved](./media/screenshot38.png)](./media/screenshot38.png)</span></span>
 
-<a name="appendix"></a>Appendiks
+<a name="appendix"></a><span data-ttu-id="07db7-296">Appendiks</span><span class="sxs-lookup"><span data-stu-id="07db7-296">Appendix</span></span>
 ========
 
-### <a name="auto-approve-workflow-configuration"></a>Automatisk godkendelse af konfiguration af arbejdsgang.
+### <a name="auto-approve-workflow-configuration"></a><span data-ttu-id="07db7-297">Automatisk godkendelse af konfiguration af arbejdsgang.</span><span class="sxs-lookup"><span data-stu-id="07db7-297">Auto-Approve workflow configuration</span></span>
 
-A. Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Arbejdsgang for budgettering Opret en ny arbejdsgang ved hjælp af arbejdsgange i skabelonen Budgetplanlægning:
+<span data-ttu-id="07db7-298">A.</span><span class="sxs-lookup"><span data-stu-id="07db7-298">A.</span></span> <span data-ttu-id="07db7-299">Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Arbejdsgang for budgettering Opret en ny arbejdsgang ved hjælp af arbejdsgange i skabelonen Budgetplanlægning:</span><span class="sxs-lookup"><span data-stu-id="07db7-299">Budgeting &gt; Setup &gt; Budget planning &gt; Budgeting workflows Create a new workflow using template Budget planning workflows:</span></span>
 
-[![Opret en ny arbejdsgang](./media/screenshot39.png)](./media/screenshot39.png)
+<span data-ttu-id="07db7-300">[![Opret en ny arbejdsgang](./media/screenshot39.png)](./media/screenshot39.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-300">[![Create a new workflow](./media/screenshot39.png)](./media/screenshot39.png)</span></span>
 
-Denne arbejdsgang indeholder kun én opgave – Stadieovergang for budgetplan 
+<span data-ttu-id="07db7-301">Denne arbejdsgang indeholder kun én opgave – Stadieovergang for budgetplan</span><span class="sxs-lookup"><span data-stu-id="07db7-301">This workflow will contain only one task – Stage transition budget plan</span></span> 
 
-[![Stadieoverførsel for budgetplan](./media/screenshot40.png)](./media/screenshot40.png) 
+<span data-ttu-id="07db7-302">[![Stadieoverførsel for budgetplan](./media/screenshot40.png)](./media/screenshot40.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-302">[![Stage transition budget plan](./media/screenshot40.png)](./media/screenshot40.png)</span></span> 
 
-Gem og aktiver arbejdsgangen. 
+<span data-ttu-id="07db7-303">Gem og aktiver arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="07db7-303">Save and activate the workflow.</span></span> 
 
-B. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Opret 2 faser under fanen Stadier – Start og Sendt 
+<span data-ttu-id="07db7-304">B.</span><span class="sxs-lookup"><span data-stu-id="07db7-304">B.</span></span> <span data-ttu-id="07db7-305">Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-305">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="07db7-306">Opret 2 faser under fanen Stadier – Start og Sendt</span><span class="sxs-lookup"><span data-stu-id="07db7-306">In Stages tab create 2 stages – Initial and Submitted</span></span> 
 
-[![Start og Sendt](./media/screenshot41.png)](./media/screenshot41.png)
+<span data-ttu-id="07db7-307">[![Start og Sendt](./media/screenshot41.png)](./media/screenshot41.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-307">[![Initial and submitted](./media/screenshot41.png)](./media/screenshot41.png)</span></span>
 
-C. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Tilknyt under fanen Arbejdsprocesstadier den arbejdsgang, der er automatisk godkendt i Trin A med stadierne Start og Sendt 
+<span data-ttu-id="07db7-308">C.</span><span class="sxs-lookup"><span data-stu-id="07db7-308">C.</span></span> <span data-ttu-id="07db7-309">Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="07db7-309">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="07db7-310">Tilknyt under fanen Arbejdsprocesstadier den arbejdsgang, der er automatisk godkendt i Trin A med stadierne Start og Sendt</span><span class="sxs-lookup"><span data-stu-id="07db7-310">In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted</span></span> 
 
-[![Budgettering og budgetplanlægning](./media/screenshot42.png)](./media/screenshot42.png)  
+<span data-ttu-id="07db7-311">[![Budgettering og budgetplanlægning](./media/screenshot42.png)](./media/screenshot42.png)</span><span class="sxs-lookup"><span data-stu-id="07db7-311">[![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)</span></span>  
 
 
 

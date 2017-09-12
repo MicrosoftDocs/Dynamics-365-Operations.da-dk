@@ -17,180 +17,180 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 044da854273345877be92c9eab787f4edf0bba5b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1082c86361180db84bb2b5c0b8158816f76a219e
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokationer på et WMS-aktiveret lagersted
+# <a name="configure-locations-in-a-wms-enabled-warehouse"></a><span data-ttu-id="28326-103">Konfigurere lokationer på et WMS-aktiveret lagersted</span><span class="sxs-lookup"><span data-stu-id="28326-103">Configure locations in a WMS-enabled warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser). Processen udføres typisk af en lagerchef. Du kan køre denne guide i demofirmaet USMF eller på dine egne data. En forudsætning er, at du har konfigureret mindst ét websted.
+<span data-ttu-id="28326-104">Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser).</span><span class="sxs-lookup"><span data-stu-id="28326-104">This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes).</span></span> <span data-ttu-id="28326-105">Processen udføres typisk af en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="28326-105">The process is typically done by a warehouse manager.</span></span> <span data-ttu-id="28326-106">Du kan køre denne guide i demofirmaet USMF eller på dine egne data.</span><span class="sxs-lookup"><span data-stu-id="28326-106">You can run this guide in demo data company USMF or on your own data.</span></span> <span data-ttu-id="28326-107">En forudsætning er, at du har konfigureret mindst ét websted.</span><span class="sxs-lookup"><span data-stu-id="28326-107">A precondition is that you have at least one site configured.</span></span>
 
 
-## <a name="create-a-new-warehouse"></a>Opret et nyt lagersted
-1. Gå til Lagersteder.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Lagersted.
-4. Skriv en værdi i feltet Navn.
-5. Skriv en værdi i feltet Sted.
-6. Vis eller skjul sektionen Lagersted.
-7. Angiv indstillingen Brug lagerstedsstyringsprocesser til Ja.
-    * Denne indstilling giver dig mulighed at køre avancerede lagerprocesser ved hjælp af lagerstedsarbejde og mobilenheder.  
-8. Luk siden.
+## <a name="create-a-new-warehouse"></a><span data-ttu-id="28326-108">Opret et nyt lagersted</span><span class="sxs-lookup"><span data-stu-id="28326-108">Create a new warehouse</span></span>
+1. <span data-ttu-id="28326-109">Gå til Lagersteder.</span><span class="sxs-lookup"><span data-stu-id="28326-109">Go to Warehouses.</span></span>
+2. <span data-ttu-id="28326-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-110">Click New.</span></span>
+3. <span data-ttu-id="28326-111">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-111">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="28326-112">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="28326-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="28326-113">Skriv en værdi i feltet Sted.</span><span class="sxs-lookup"><span data-stu-id="28326-113">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="28326-114">Vis eller skjul sektionen Lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-114">Expand or collapse the Warehouse section.</span></span>
+7. <span data-ttu-id="28326-115">Angiv indstillingen Brug lagerstedsstyringsprocesser til Ja.</span><span class="sxs-lookup"><span data-stu-id="28326-115">Set the Use warehouse management processes option to Yes.</span></span>
+    * <span data-ttu-id="28326-116">Denne indstilling giver dig mulighed at køre avancerede lagerprocesser ved hjælp af lagerstedsarbejde og mobilenheder.</span><span class="sxs-lookup"><span data-stu-id="28326-116">This setting allows you to  run advanced warehousing processes using warehouse work and mobile devices.</span></span>  
+8. <span data-ttu-id="28326-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-117">Close the page.</span></span>
 
-## <a name="define-a-location-format"></a>Definere et lokalitetsformat
-1. Gå til Lokationsformater.
-    * Placering-formater er et navngivningssystem, der bruges til at oprette entydige og konsekvent navne for de forskellige placeringpositioner på et lagersted. Det kan være nyttigt at bruge separatorer som en del af placeringsformatet for at gøre det nemmere at identificere komponenter på lokationen som gangnummeret. I dette eksempel skal vi oprette et navn med fire komponenter. Disse kan for eksempel være gang, reol, hylde og placering.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Lokationsformat.
-4. Skriv en værdi i feltet Navn.
-5. Skriv en værdi i feltet Segmentbeskrivelse.
-    * Dette beskriver, hvad den første komponent i lokationsnavnet repræsenterer. Det kan for eksempel være Gang.  
-6. Angiv et tal i feltet Længde.
-    * Dette bestemmer, hvor mange tegn denne del af lokationsnavnet må indeholde. Bemærk, at summen af alle komponenterne i navnet, herunder separatorer, ikke må overstige 10 tegn.  
-7. Skriv en værdi i feltet Separator.
-    * Dette bestemmer, hvilket tegn eller symbol der bruges mellem den første og anden komponent i navnet.  
-8. Klik på Ny.
-9. Skriv en værdi i feltet Segmentbeskrivelse.
-10. Angiv et tal i feltet Længde.
-11. Skriv en værdi i feltet Separator.
-12. Klik på Ny.
-13. Skriv en værdi i feltet Segmentbeskrivelse.
-14. Angiv et tal i feltet Længde.
-15. Skriv en værdi i feltet Separator.
-16. Klik på Ny.
-17. Skriv en værdi i feltet Segmentbeskrivelse.
-18. Angiv et tal i feltet Længde.
-19. Klik på Gem.
-20. Luk siden.
+## <a name="define-a-location-format"></a><span data-ttu-id="28326-118">Definere et lokalitetsformat</span><span class="sxs-lookup"><span data-stu-id="28326-118">Define a location format</span></span>
+1. <span data-ttu-id="28326-119">Gå til Lokationsformater.</span><span class="sxs-lookup"><span data-stu-id="28326-119">Go to Location formats.</span></span>
+    * <span data-ttu-id="28326-120">Placering-formater er et navngivningssystem, der bruges til at oprette entydige og konsekvent navne for de forskellige placeringpositioner på et lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-120">Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse.</span></span> <span data-ttu-id="28326-121">Det kan være nyttigt at bruge separatorer som en del af placeringsformatet for at gøre det nemmere at identificere komponenter på lokationen som gangnummeret.</span><span class="sxs-lookup"><span data-stu-id="28326-121">It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number.</span></span> <span data-ttu-id="28326-122">I dette eksempel skal vi oprette et navn med fire komponenter.</span><span class="sxs-lookup"><span data-stu-id="28326-122">In this example, we’ll create a name with four components.</span></span> <span data-ttu-id="28326-123">Disse kan for eksempel være gang, reol, hylde og placering.</span><span class="sxs-lookup"><span data-stu-id="28326-123">For example, these could be aisle, rack, shelf, and bin.</span></span>  
+2. <span data-ttu-id="28326-124">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-124">Click New.</span></span>
+3. <span data-ttu-id="28326-125">Skriv en værdi i feltet Lokationsformat.</span><span class="sxs-lookup"><span data-stu-id="28326-125">In the Location format field, type a value.</span></span>
+4. <span data-ttu-id="28326-126">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="28326-126">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="28326-127">Skriv en værdi i feltet Segmentbeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="28326-127">In the Segment description field, type a value.</span></span>
+    * <span data-ttu-id="28326-128">Dette beskriver, hvad den første komponent i lokationsnavnet repræsenterer.</span><span class="sxs-lookup"><span data-stu-id="28326-128">This describes what the first component of the location name represents.</span></span> <span data-ttu-id="28326-129">Det kan for eksempel være Gang.</span><span class="sxs-lookup"><span data-stu-id="28326-129">For example, it could be Aisle.</span></span>  
+6. <span data-ttu-id="28326-130">Angiv et tal i feltet Længde.</span><span class="sxs-lookup"><span data-stu-id="28326-130">In the Length field, enter a number.</span></span>
+    * <span data-ttu-id="28326-131">Dette bestemmer, hvor mange tegn denne del af lokationsnavnet må indeholde.</span><span class="sxs-lookup"><span data-stu-id="28326-131">This determines how many characters this part of the location name must have.</span></span> <span data-ttu-id="28326-132">Bemærk, at summen af alle komponenterne i navnet, herunder separatorer, ikke må overstige 10 tegn.</span><span class="sxs-lookup"><span data-stu-id="28326-132">Note that the total of all components in the name, including the separators, cannot exceed 10 characters.</span></span>  
+7. <span data-ttu-id="28326-133">Skriv en værdi i feltet Separator.</span><span class="sxs-lookup"><span data-stu-id="28326-133">In the Separator field, type a value.</span></span>
+    * <span data-ttu-id="28326-134">Dette bestemmer, hvilket tegn eller symbol der bruges mellem den første og anden komponent i navnet.</span><span class="sxs-lookup"><span data-stu-id="28326-134">This determines which character or symbol is used between the first and second component of the name.</span></span>  
+8. <span data-ttu-id="28326-135">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-135">Click New.</span></span>
+9. <span data-ttu-id="28326-136">Skriv en værdi i feltet Segmentbeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="28326-136">In the Segment description field, type a value.</span></span>
+10. <span data-ttu-id="28326-137">Angiv et tal i feltet Længde.</span><span class="sxs-lookup"><span data-stu-id="28326-137">In the Length field, enter a number.</span></span>
+11. <span data-ttu-id="28326-138">Skriv en værdi i feltet Separator.</span><span class="sxs-lookup"><span data-stu-id="28326-138">In the Separator field, type a value.</span></span>
+12. <span data-ttu-id="28326-139">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-139">Click New.</span></span>
+13. <span data-ttu-id="28326-140">Skriv en værdi i feltet Segmentbeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="28326-140">In the Segment description field, type a value.</span></span>
+14. <span data-ttu-id="28326-141">Angiv et tal i feltet Længde.</span><span class="sxs-lookup"><span data-stu-id="28326-141">In the Length field, enter a number.</span></span>
+15. <span data-ttu-id="28326-142">Skriv en værdi i feltet Separator.</span><span class="sxs-lookup"><span data-stu-id="28326-142">In the Separator field, type a value.</span></span>
+16. <span data-ttu-id="28326-143">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-143">Click New.</span></span>
+17. <span data-ttu-id="28326-144">Skriv en værdi i feltet Segmentbeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="28326-144">In the Segment description field, type a value.</span></span>
+18. <span data-ttu-id="28326-145">Angiv et tal i feltet Længde.</span><span class="sxs-lookup"><span data-stu-id="28326-145">In the Length field, enter a number.</span></span>
+19. <span data-ttu-id="28326-146">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="28326-146">Click Save.</span></span>
+20. <span data-ttu-id="28326-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-147">Close the page.</span></span>
 
-## <a name="define-location-types"></a>Definere lokalitetstyper
-1. Gå til Lokationstyper.
-    * Lokationstyper kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser. Som minimum skal du oprette midlertidige og endelige afsendelseslokationstyper for at definere styring af udgående lagerprocesser.  
-2. Klik på Ny.
-3. Indtast en værdi i feltet Lokalitetstype.
-4. Skriv en værdi i feltet Beskrivelse.
-5. Luk siden.
+## <a name="define-location-types"></a><span data-ttu-id="28326-148">Definere lokalitetstyper</span><span class="sxs-lookup"><span data-stu-id="28326-148">Define location types</span></span>
+1. <span data-ttu-id="28326-149">Gå til Lokationstyper.</span><span class="sxs-lookup"><span data-stu-id="28326-149">Go to Location types.</span></span>
+    * <span data-ttu-id="28326-150">Lokationstyper kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="28326-150">Location types can be used as filtering options to control the different warehouse management processes.</span></span> <span data-ttu-id="28326-151">Som minimum skal du oprette midlertidige og endelige afsendelseslokationstyper for at definere styring af udgående lagerprocesser.</span><span class="sxs-lookup"><span data-stu-id="28326-151">As a minimum, you need to create staging and final shipping location types in order to define the outbound warehouse management process.</span></span>  
+2. <span data-ttu-id="28326-152">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-152">Click New.</span></span>
+3. <span data-ttu-id="28326-153">Indtast en værdi i feltet Lokalitetstype.</span><span class="sxs-lookup"><span data-stu-id="28326-153">In the Location type field, type a value.</span></span>
+4. <span data-ttu-id="28326-154">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="28326-154">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="28326-155">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-155">Close the page.</span></span>
 
-## <a name="define-location-profile"></a>Definere lokalitetsprofil
-1. Gå til Lokationsprofiler.
-    * Definitionen af lokationsprofiler er meget vigtigt. Grupperede lokaliteters kapacitet kan styres her, og de politikker, der er relateret til, hvilket lager der gemmes, og hvordan det gemmes. Lokationprofiler kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser. Som minimum skal du oprette en brugerlokationsprofil for at aktivere lagerstedsstyringsprocesser.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Id for lokationsprofil.
-4. Skriv en værdi i feltet Navn.
-5. Klik på rullelisten i feltet Lokationsformat for at åbne opslaget.
-6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-8. Klik på rullelisten i feltet Lokationstype for at åbne opslaget.
-9. Find og vælg den ønskede post på listen.
-10. Klik op linket i den valgte række på listen.
-11. Markér eller fjern markeringen i afkrydsningsfeltet Tillad blandede lagerstatusser.
-    * Aktiver denne indstilling, hvis du vil tillade blandede lagerstatusværdier på de lokaliteter, der skal grupperes efter denne lokationsprofil.  
-12. Markér eller fjern markeringen i afkrydsningsfeltet Tilsidesæt regler for batchdage.
-    * Aktiver denne indstilling for at tilsidesætte reglen for, hvor mange dage lagerbatchudløbsdatoer kan variere, for at tillade blanding af lagerbatches, der ikke overholder denne regel.  
-13. Marker eller fjern markeringen i afkrydsningsfeltet Tillad cyklusoptælling.
-    * Aktiver denne indstilling, hvis du vil tillade behandling af cyklusoptælling på alle de lokaliteter, der skal grupperes efter denne lokationsprofil.  
-14. Vis eller skjul sektionen Dimensioner.
-    * Fanen Dimensioner giver dig mulighed for at definere parametre og metoder, så der kan foretages aktivere nøjagtige beregninger af belastkapacitet inden for hver af lokaliteterne.  
-15. Luk siden.
+## <a name="define-location-profile"></a><span data-ttu-id="28326-156">Definere lokalitetsprofil</span><span class="sxs-lookup"><span data-stu-id="28326-156">Define location profile</span></span>
+1. <span data-ttu-id="28326-157">Gå til Lokationsprofiler.</span><span class="sxs-lookup"><span data-stu-id="28326-157">Go to Location profiles.</span></span>
+    * <span data-ttu-id="28326-158">Definitionen af lokationsprofiler er meget vigtigt.</span><span class="sxs-lookup"><span data-stu-id="28326-158">The definition of location profiles is very important.</span></span> <span data-ttu-id="28326-159">Grupperede lokaliteters kapacitet kan styres her, og de politikker, der er relateret til, hvilket lager der gemmes, og hvordan det gemmes.</span><span class="sxs-lookup"><span data-stu-id="28326-159">Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored.</span></span> <span data-ttu-id="28326-160">Lokationprofiler kan bruges til at filtrere indstillinger for at styre de forskellige lagerstedsstyringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="28326-160">Location profiles can be used as filtering options to control the different warehouse management processes.</span></span> <span data-ttu-id="28326-161">Som minimum skal du oprette en brugerlokationsprofil for at aktivere lagerstedsstyringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="28326-161">As a minimum, you must create a user location profile in order to enable the warehouse management processes.</span></span>  
+2. <span data-ttu-id="28326-162">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-162">Click New.</span></span>
+3. <span data-ttu-id="28326-163">Skriv en værdi i feltet Id for lokationsprofil.</span><span class="sxs-lookup"><span data-stu-id="28326-163">In the Location profile ID field, type a value.</span></span>
+4. <span data-ttu-id="28326-164">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="28326-164">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="28326-165">Klik på rullelisten i feltet Lokationsformat for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-165">In the Location format field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="28326-166">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-166">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="28326-167">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-167">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="28326-168">Klik på rullelisten i feltet Lokationstype for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-168">In the Location type field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="28326-169">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-169">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="28326-170">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-170">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="28326-171">Markér eller fjern markeringen i afkrydsningsfeltet Tillad blandede lagerstatusser.</span><span class="sxs-lookup"><span data-stu-id="28326-171">Select or clear the Allow mixed  inventory statuses check box.</span></span>
+    * <span data-ttu-id="28326-172">Aktiver denne indstilling, hvis du vil tillade blandede lagerstatusværdier på de lokaliteter, der skal grupperes efter denne lokationsprofil.</span><span class="sxs-lookup"><span data-stu-id="28326-172">Enable this option if you want to allow mixed inventory status values in the locations that are going to be grouped by this location profile.</span></span>  
+12. <span data-ttu-id="28326-173">Markér eller fjern markeringen i afkrydsningsfeltet Tilsidesæt regler for batchdage.</span><span class="sxs-lookup"><span data-stu-id="28326-173">Select or clear the Override rules for batch days check box.</span></span>
+    * <span data-ttu-id="28326-174">Aktiver denne indstilling for at tilsidesætte reglen for, hvor mange dage lagerbatchudløbsdatoer kan variere, for at tillade blanding af lagerbatches, der ikke overholder denne regel.</span><span class="sxs-lookup"><span data-stu-id="28326-174">Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don’t obeying this rule.</span></span>  
+13. <span data-ttu-id="28326-175">Marker eller fjern markeringen i afkrydsningsfeltet Tillad cyklusoptælling.</span><span class="sxs-lookup"><span data-stu-id="28326-175">Select or clear the Allow cycle counting check box.</span></span>
+    * <span data-ttu-id="28326-176">Aktiver denne indstilling, hvis du vil tillade behandling af cyklusoptælling på alle de lokaliteter, der skal grupperes efter denne lokationsprofil.</span><span class="sxs-lookup"><span data-stu-id="28326-176">Enable this option to allow cycle counting processing in all the locations that are going to be grouped by this location profile.</span></span>  
+14. <span data-ttu-id="28326-177">Vis eller skjul sektionen Dimensioner.</span><span class="sxs-lookup"><span data-stu-id="28326-177">Expand or collapse the Dimensions section.</span></span>
+    * <span data-ttu-id="28326-178">Fanen Dimensioner giver dig mulighed for at definere parametre og metoder, så der kan foretages aktivere nøjagtige beregninger af belastkapacitet inden for hver af lokaliteterne.</span><span class="sxs-lookup"><span data-stu-id="28326-178">The Dimensions tab allows you to define parameters and methods to enable precise calculations of the load capacity within each of the locations.</span></span>  
+15. <span data-ttu-id="28326-179">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-179">Close the page.</span></span>
 
-## <a name="enable-warehouse-management-parameters"></a>Aktivér parametre for lagerstedsstyring
-1. Gå til Parametre til lagerstedsstyring.
-    * For at kunne behandle lagerstedsarbejde skal du angive parametre for brugerlokationsprofilen, den midlertidige lokationstype og den endelige afsendelseslokationstype Så snart, den udgående processen afsluttes på den endelige afsendelseslokationstype, du definerer, opdateres de relaterede udgående transaktioner til 'Plukket'.  
-2. Vis eller skjul sektionen Lokalitetsprofiler.
-3. Klik på rullelisten i feltet Brugerlokation for at åbne opslaget.
-4. Klik op linket i den valgte række på listen.
-5. Vis eller skjul sektionen Lokalitetstyper.
-6. Klik på rullelisten i feltet Midlertidig lokalitetstype for at åbne opslaget.
-7. Klik op linket i den valgte række på listen.
-8. Klik på rullelisten i feltet Endelig afsendelseslokalitetstype for at åbne opslaget.
-9. Klik op linket i den valgte række på listen.
-10. Luk siden.
+## <a name="enable-warehouse-management-parameters"></a><span data-ttu-id="28326-180">Aktivér parametre for lagerstedsstyring</span><span class="sxs-lookup"><span data-stu-id="28326-180">Enable warehouse management parameters</span></span>
+1. <span data-ttu-id="28326-181">Gå til Parametre til lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="28326-181">Go to Warehouse management parameters.</span></span>
+    * <span data-ttu-id="28326-182">For at kunne behandle lagerstedsarbejde skal du angive parametre for brugerlokationsprofilen, den midlertidige lokationstype og den endelige afsendelseslokationstype Så snart, den udgående processen afsluttes på den endelige afsendelseslokationstype, du definerer, opdateres de relaterede udgående transaktioner til 'Plukket'.</span><span class="sxs-lookup"><span data-stu-id="28326-182">To be able to process warehouse work, you need to set parameters for the user location profile the staging location type, and the final shipping location type  As soon as the outbound process ends at the final shipping location type that you define, the related outbound transactions will be updated to ‘Picked’.</span></span>  
+2. <span data-ttu-id="28326-183">Vis eller skjul sektionen Lokalitetsprofiler.</span><span class="sxs-lookup"><span data-stu-id="28326-183">Expand or collapse the Location profiles section.</span></span>
+3. <span data-ttu-id="28326-184">Klik på rullelisten i feltet Brugerlokation for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-184">In the User location field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="28326-185">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-185">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="28326-186">Vis eller skjul sektionen Lokalitetstyper.</span><span class="sxs-lookup"><span data-stu-id="28326-186">Expand or collapse the Location types section.</span></span>
+6. <span data-ttu-id="28326-187">Klik på rullelisten i feltet Midlertidig lokalitetstype for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-187">In the Staging location type field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="28326-188">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-188">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="28326-189">Klik på rullelisten i feltet Endelig afsendelseslokalitetstype for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-189">In the Final shipping location type field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="28326-190">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-190">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="28326-191">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-191">Close the page.</span></span>
 
-## <a name="define-warehouse-zone-groups"></a>Definere lagerstedszonegrupper
-1. Gå til Lagerstedszonegrupper.
-    * Lagerstedszoner kan bruges som filtre for indstillinger for at styre de forskellige lagerstedsstyringsprocesser. Du skal oprette en zonegruppe, før du kan definere en zone.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Id for zonegruppe.
-4. Skriv en værdi i feltet Navn på zonegruppe.
-5. Luk siden.
+## <a name="define-warehouse-zone-groups"></a><span data-ttu-id="28326-192">Definere lagerstedszonegrupper</span><span class="sxs-lookup"><span data-stu-id="28326-192">Define warehouse zone groups</span></span>
+1. <span data-ttu-id="28326-193">Gå til Lagerstedszonegrupper.</span><span class="sxs-lookup"><span data-stu-id="28326-193">Go to Warehouse zone groups.</span></span>
+    * <span data-ttu-id="28326-194">Lagerstedszoner kan bruges som filtre for indstillinger for at styre de forskellige lagerstedsstyringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="28326-194">Warehouse zones can be used as filters for options to control the different warehouse management processes.</span></span> <span data-ttu-id="28326-195">Du skal oprette en zonegruppe, før du kan definere en zone.</span><span class="sxs-lookup"><span data-stu-id="28326-195">You need to create a zone group before you can define a zone.</span></span>  
+2. <span data-ttu-id="28326-196">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-196">Click New.</span></span>
+3. <span data-ttu-id="28326-197">Skriv en værdi i feltet Id for zonegruppe.</span><span class="sxs-lookup"><span data-stu-id="28326-197">In the Zone group ID field, type a value.</span></span>
+4. <span data-ttu-id="28326-198">Skriv en værdi i feltet Navn på zonegruppe.</span><span class="sxs-lookup"><span data-stu-id="28326-198">In the Zone group name field, type a value.</span></span>
+5. <span data-ttu-id="28326-199">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-199">Close the page.</span></span>
 
-## <a name="define-warehouse-zones"></a>Definere Lagerstedszoner
-1. Gå til Zoner.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Zone-id
-4. Skriv en værdi i feltet Navn på zone.
-5. Klik på rullelisten i feltet Id for zonegruppe for at åbne opslaget.
-6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-8. Luk siden.
+## <a name="define-warehouse-zones"></a><span data-ttu-id="28326-200">Definere Lagerstedszoner</span><span class="sxs-lookup"><span data-stu-id="28326-200">Define Warehouse zones</span></span>
+1. <span data-ttu-id="28326-201">Gå til Zoner.</span><span class="sxs-lookup"><span data-stu-id="28326-201">Go to Zones.</span></span>
+2. <span data-ttu-id="28326-202">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-202">Click New.</span></span>
+3. <span data-ttu-id="28326-203">Skriv en værdi i feltet Zone-id</span><span class="sxs-lookup"><span data-stu-id="28326-203">In the Zone ID field, type a value.</span></span>
+4. <span data-ttu-id="28326-204">Skriv en værdi i feltet Navn på zone.</span><span class="sxs-lookup"><span data-stu-id="28326-204">In the Zone name field, type a value.</span></span>
+5. <span data-ttu-id="28326-205">Klik på rullelisten i feltet Id for zonegruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-205">In the Zone group ID field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="28326-206">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-206">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="28326-207">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-207">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="28326-208">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-208">Close the page.</span></span>
 
-## <a name="create-locations-using-the-location-setup-wizard"></a>Oprette lokationer ved hjælp af guiden Konfiguration af lokalitet
-1. Gå til guiden Konfiguration af lokalitet.
-2. Klik på rullelisten i feltet Lagersted for at åbne opslaget.
-3. Find og vælg den ønskede post på listen.
-4. Klik op linket i den valgte række på listen.
-5. Klik på rullelisten i feltet Zone-id for at åbne opslaget.
-6. Find og vælg den ønskede post på listen.
-7. Klik op linket i den valgte række på listen.
-8. Klik på rullelisten i feltet Id for lokalitetsprofil for at åbne opslaget.
-9. Find og vælg den ønskede post på listen.
-10. Klik op linket i den valgte række på listen.
-11. Markér den valgte række på listen.
-12. Indtast et tal i feltet Fra numnmer.
-    * Felterne Fra nummer og Til nummer definerer, hvor mange lokaliteter, der bliver oprettet. Hvis du for eksempel angiver Fra nummer til 1 og Til nummer til 3 for alle fire linjer i lokationsformatet, oprettes 81 lokaliteter (3x3x3x3).  
-13. Indtast et tal i feltet Til nummer.
-14. Find og vælg den ønskede post på listen.
-15. Indtast et tal i feltet Fra numnmer.
-16. Indtast et tal i feltet Til nummer.
-17. Find og vælg den ønskede post på listen.
-18. Indtast et tal i feltet Fra numnmer.
-19. Indtast et tal i feltet Til nummer.
-20. Find og vælg den ønskede post på listen.
-21. Indtast et tal i feltet Fra numnmer.
-22. Indtast et tal i feltet Til nummer.
-23. Klik på Opret.
+## <a name="create-locations-using-the-location-setup-wizard"></a><span data-ttu-id="28326-209">Oprette lokationer ved hjælp af guiden Konfiguration af lokalitet</span><span class="sxs-lookup"><span data-stu-id="28326-209">Create locations using the Location setup wizard</span></span>
+1. <span data-ttu-id="28326-210">Gå til guiden Konfiguration af lokalitet.</span><span class="sxs-lookup"><span data-stu-id="28326-210">Go to Location setup wizard.</span></span>
+2. <span data-ttu-id="28326-211">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-211">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="28326-212">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-212">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="28326-213">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-213">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="28326-214">Klik på rullelisten i feltet Zone-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-214">In the Zone ID field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="28326-215">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-215">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="28326-216">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-216">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="28326-217">Klik på rullelisten i feltet Id for lokalitetsprofil for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-217">In the Location profile ID field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="28326-218">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-218">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="28326-219">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-219">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="28326-220">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-220">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="28326-221">Indtast et tal i feltet Fra numnmer.</span><span class="sxs-lookup"><span data-stu-id="28326-221">In the From number field, enter a number.</span></span>
+    * <span data-ttu-id="28326-222">Felterne Fra nummer og Til nummer definerer, hvor mange lokaliteter, der bliver oprettet.</span><span class="sxs-lookup"><span data-stu-id="28326-222">The From number and To number fields define how many locations will be created.</span></span> <span data-ttu-id="28326-223">Hvis du for eksempel angiver Fra nummer til 1 og Til nummer til 3 for alle fire linjer i lokationsformatet, oprettes 81 lokaliteter (3x3x3x3).</span><span class="sxs-lookup"><span data-stu-id="28326-223">For example, if you set From number to 1 and To number to 3 for all four lines in the location format, 81 locations will be created (3x3x3x3).</span></span>  
+13. <span data-ttu-id="28326-224">Indtast et tal i feltet Til nummer.</span><span class="sxs-lookup"><span data-stu-id="28326-224">In the To number field, enter a number.</span></span>
+14. <span data-ttu-id="28326-225">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-225">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="28326-226">Indtast et tal i feltet Fra numnmer.</span><span class="sxs-lookup"><span data-stu-id="28326-226">In the From number field, enter a number.</span></span>
+16. <span data-ttu-id="28326-227">Indtast et tal i feltet Til nummer.</span><span class="sxs-lookup"><span data-stu-id="28326-227">In the To number field, enter a number.</span></span>
+17. <span data-ttu-id="28326-228">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-228">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="28326-229">Indtast et tal i feltet Fra numnmer.</span><span class="sxs-lookup"><span data-stu-id="28326-229">In the From number field, enter a number.</span></span>
+19. <span data-ttu-id="28326-230">Indtast et tal i feltet Til nummer.</span><span class="sxs-lookup"><span data-stu-id="28326-230">In the To number field, enter a number.</span></span>
+20. <span data-ttu-id="28326-231">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-231">In the list, find and select the desired record.</span></span>
+21. <span data-ttu-id="28326-232">Indtast et tal i feltet Fra numnmer.</span><span class="sxs-lookup"><span data-stu-id="28326-232">In the From number field, enter a number.</span></span>
+22. <span data-ttu-id="28326-233">Indtast et tal i feltet Til nummer.</span><span class="sxs-lookup"><span data-stu-id="28326-233">In the To number field, enter a number.</span></span>
+23. <span data-ttu-id="28326-234">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="28326-234">Click Create.</span></span>
 
-## <a name="create-locations-manually"></a>Oprette lokaliteter manuelt
-1. Gå til Lokaliteter.
-    * Det er nemt manuelt at oprette lokaliteter i lagersted. Lokalitetens navn og profil-ID er obligatoriske værdier.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Lagersted.
-4. Skriv en værdi i feltet Lokalitet.
-    * Bemærk, at du opretter en ny lokalitet her, så du skal skrive et nyt entydigt navn i stedet for at vælge et eksisterende navn.  
-5. Skriv en værdi i feltet Id for lokationsprofil.
-6. Luk siden.
+## <a name="create-locations-manually"></a><span data-ttu-id="28326-235">Oprette lokaliteter manuelt</span><span class="sxs-lookup"><span data-stu-id="28326-235">Create locations manually</span></span>
+1. <span data-ttu-id="28326-236">Gå til Lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="28326-236">Go to Locations.</span></span>
+    * <span data-ttu-id="28326-237">Det er nemt manuelt at oprette lokaliteter i lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-237">Manually creation of locations within a warehouse can easily be done.</span></span> <span data-ttu-id="28326-238">Lokalitetens navn og profil-ID er obligatoriske værdier.</span><span class="sxs-lookup"><span data-stu-id="28326-238">The location name and the Location profile ID are mandatory values.</span></span>  
+2. <span data-ttu-id="28326-239">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-239">Click New.</span></span>
+3. <span data-ttu-id="28326-240">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-240">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="28326-241">Skriv en værdi i feltet Lokalitet.</span><span class="sxs-lookup"><span data-stu-id="28326-241">In the Location field, type a value.</span></span>
+    * <span data-ttu-id="28326-242">Bemærk, at du opretter en ny lokalitet her, så du skal skrive et nyt entydigt navn i stedet for at vælge et eksisterende navn.</span><span class="sxs-lookup"><span data-stu-id="28326-242">Note that you're creating a new location here, so you need to type a new unique name, rather than selecting an existing one.</span></span>  
+5. <span data-ttu-id="28326-243">Skriv en værdi i feltet Id for lokationsprofil.</span><span class="sxs-lookup"><span data-stu-id="28326-243">In the Location profile ID field, type a value.</span></span>
+6. <span data-ttu-id="28326-244">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-244">Close the page.</span></span>
 
-## <a name="define-pack-size-categories"></a>Definere Kategorier af pakkestørrelse
-1. Gå til Kategorier af pakkestørrelse.
-    * Kategorier af pakkestørrelse kan bruges til gruppering af varer, der har samme fysiske pakkestørrelser. I dette eksempel bruges pakkestørrelsekategorien til at styre kapaciteten på plukkelokaliteterne inden for en bestemt zone på lagerstedet. Bemærk, at pakkestørrelsekategori-id'et skal tildeles til det frigivne produkt for at kunne bruges som en del af behandlingen af grænser for lokationslagring.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Kategori-id for pakkestørrelse.
-4. Skriv en værdi i feltet Kategorinavn på pakkestørrelse.
-5. Luk siden.
+## <a name="define-pack-size-categories"></a><span data-ttu-id="28326-245">Definere Kategorier af pakkestørrelse</span><span class="sxs-lookup"><span data-stu-id="28326-245">Define Pack size categories</span></span>
+1. <span data-ttu-id="28326-246">Gå til Kategorier af pakkestørrelse.</span><span class="sxs-lookup"><span data-stu-id="28326-246">Go to Pack size categories.</span></span>
+    * <span data-ttu-id="28326-247">Kategorier af pakkestørrelse kan bruges til gruppering af varer, der har samme fysiske pakkestørrelser.</span><span class="sxs-lookup"><span data-stu-id="28326-247">Pack size categories can be used to group items that have similar physical packing sizes.</span></span> <span data-ttu-id="28326-248">I dette eksempel bruges pakkestørrelsekategorien til at styre kapaciteten på plukkelokaliteterne inden for en bestemt zone på lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="28326-248">In this example the pack size category will be used to control the capacity at the picking locations within a specific zone of the warehouse.</span></span> <span data-ttu-id="28326-249">Bemærk, at pakkestørrelsekategori-id'et skal tildeles til det frigivne produkt for at kunne bruges som en del af behandlingen af grænser for lokationslagring.</span><span class="sxs-lookup"><span data-stu-id="28326-249">Please note that the pack size category ID must be assigned to the released product entity in order to be used as part of the stocking limits processing.</span></span>  
+2. <span data-ttu-id="28326-250">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-250">Click New.</span></span>
+3. <span data-ttu-id="28326-251">Skriv en værdi i feltet Kategori-id for pakkestørrelse.</span><span class="sxs-lookup"><span data-stu-id="28326-251">In the Pack size category ID field, type a value.</span></span>
+4. <span data-ttu-id="28326-252">Skriv en værdi i feltet Kategorinavn på pakkestørrelse.</span><span class="sxs-lookup"><span data-stu-id="28326-252">In the Pack size category name field, type a value.</span></span>
+5. <span data-ttu-id="28326-253">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-253">Close the page.</span></span>
 
-## <a name="define-location-stocking-limits"></a>Definere grænser for lokalitetslagring
-1. Gå til Grænser for lokalitetslagring.
-    * Grænser for lokationslagring hjælper med til at sikre, at arbejdet ikke oprettes for at anmode om, at lageret skal placeres på en lokalitet, der ikke har den fysiske kapacitet til rumme lageret.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Lagersted.
-4. Skriv en værdi i feltet Id for lokationsprofil.
-5. Skriv en værdi i feltet Kategori-id for pakkestørrelse.
-6. Angiv et tal i feltet Antal.
-7. Klik på Gem.
-8. Luk siden.
+## <a name="define-location-stocking-limits"></a><span data-ttu-id="28326-254">Definere grænser for lokalitetslagring</span><span class="sxs-lookup"><span data-stu-id="28326-254">Define location stocking limits</span></span>
+1. <span data-ttu-id="28326-255">Gå til Grænser for lokalitetslagring.</span><span class="sxs-lookup"><span data-stu-id="28326-255">Go to Location stocking limits.</span></span>
+    * <span data-ttu-id="28326-256">Grænser for lokationslagring hjælper med til at sikre, at arbejdet ikke oprettes for at anmode om, at lageret skal placeres på en lokalitet, der ikke har den fysiske kapacitet til rumme lageret.</span><span class="sxs-lookup"><span data-stu-id="28326-256">Location stocking limits help to make sure that work isn't created to request that inventory to be put in a location that doesn't have the physical capacity to carry the inventory.</span></span>  
+2. <span data-ttu-id="28326-257">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-257">Click New.</span></span>
+3. <span data-ttu-id="28326-258">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-258">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="28326-259">Skriv en værdi i feltet Id for lokationsprofil.</span><span class="sxs-lookup"><span data-stu-id="28326-259">In the Location profile ID field, type a value.</span></span>
+5. <span data-ttu-id="28326-260">Skriv en værdi i feltet Kategori-id for pakkestørrelse.</span><span class="sxs-lookup"><span data-stu-id="28326-260">In the Pack size category ID field, type a value.</span></span>
+6. <span data-ttu-id="28326-261">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="28326-261">In the Quantity field, enter a number.</span></span>
+7. <span data-ttu-id="28326-262">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="28326-262">Click Save.</span></span>
+8. <span data-ttu-id="28326-263">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-263">Close the page.</span></span>
 
-## <a name="define-fixed-picking-locations"></a>Definere faste plukpladser
-1. Gå til Faste lokationer.
-    * Du kan definere de lokaliteter, der skal bruges pr. produkt eller produktvariant. Det er muligt at oprette flere faste lokaliteter til det samme produkt inden for det samme lager.  
-2. Klik på Ny.
-3. Indtast en værdi i feltet Varenummer.
-4. Skriv en værdi i feltet Lagersted.
-5. Klik på rullelisten i feltet Lokation for at åbne opslaget.
-6. Klik op linket i den valgte række på listen.
-7. Luk siden.
+## <a name="define-fixed-picking-locations"></a><span data-ttu-id="28326-264">Definere faste plukpladser</span><span class="sxs-lookup"><span data-stu-id="28326-264">Define fixed picking locations</span></span>
+1. <span data-ttu-id="28326-265">Gå til Faste lokationer.</span><span class="sxs-lookup"><span data-stu-id="28326-265">Go to Fixed locations.</span></span>
+    * <span data-ttu-id="28326-266">Du kan definere de lokaliteter, der skal bruges pr. produkt eller produktvariant.</span><span class="sxs-lookup"><span data-stu-id="28326-266">You can define the locations to be used per product or per product variant.</span></span> <span data-ttu-id="28326-267">Det er muligt at oprette flere faste lokaliteter til det samme produkt inden for det samme lager.</span><span class="sxs-lookup"><span data-stu-id="28326-267">It is possible to create multiple fixed locations for the same product within the same warehouse.</span></span>  
+2. <span data-ttu-id="28326-268">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="28326-268">Click New.</span></span>
+3. <span data-ttu-id="28326-269">Indtast en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="28326-269">In the Item number field, type a value.</span></span>
+4. <span data-ttu-id="28326-270">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="28326-270">In the Warehouse field, type a value.</span></span>
+5. <span data-ttu-id="28326-271">Klik på rullelisten i feltet Lokation for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="28326-271">In the Location field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="28326-272">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="28326-272">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="28326-273">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="28326-273">Close the page.</span></span>
 
 

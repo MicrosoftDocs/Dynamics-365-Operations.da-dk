@@ -17,49 +17,49 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: fbbcbadc2ab777ae615ef13db6d6ecdb9e5d37a6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1f88fbbacde9c0bd2b3499df5682a717d0b804ab
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enter-project-timesheets"></a>Angive projekttimesedler
+# <a name="enter-project-timesheets"></a><span data-ttu-id="50663-103">Angive projekttimesedler</span><span class="sxs-lookup"><span data-stu-id="50663-103">Enter project timesheets</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelsformular. Den nye timeseddel kan baseres på oplysninger fra en tidligere timeseddel eller fra projekt- og aktivitetstildelinger på siden Favoritter. Som standard viser listesiden Alle timesedler alle dine timesedler for den aktuelle periode. Du kan bruge på rullelisten i feltet Vis på siden Mine timesedler til at filtrere listen over timesedler efter tidsperiode eller projekt eller til at få vist timesedler, der er oprettet på vegne af andre medarbejdere. Det demodatafirma, der bruges til at oprette denne procedure, er USSI. Du begynder denne procedure ved at gå til Projektstyring og regnskab > Timesedler > Mine timesedler
+<span data-ttu-id="50663-104">I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelsformular.</span><span class="sxs-lookup"><span data-stu-id="50663-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="50663-105">Den nye timeseddel kan baseres på oplysninger fra en tidligere timeseddel eller fra projekt- og aktivitetstildelinger på siden Favoritter.</span><span class="sxs-lookup"><span data-stu-id="50663-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favourites page.</span></span> <span data-ttu-id="50663-106">Som standard viser listesiden Alle timesedler alle dine timesedler for den aktuelle periode.</span><span class="sxs-lookup"><span data-stu-id="50663-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="50663-107">Du kan bruge på rullelisten i feltet Vis på siden Mine timesedler til at filtrere listen over timesedler efter tidsperiode eller projekt eller til at få vist timesedler, der er oprettet på vegne af andre medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="50663-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="50663-108">Det demodatafirma, der bruges til at oprette denne procedure, er USSI.</span><span class="sxs-lookup"><span data-stu-id="50663-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="50663-109">Du begynder denne procedure ved at gå til Projektstyring og regnskab > Timesedler > Mine timesedler</span><span class="sxs-lookup"><span data-stu-id="50663-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 
-1. Klik på Ny for at angive en ny timeseddel.
-    * Rullelisten Ressource viser den arbejder, der er tildelt den aktuelle bruger som standard.  
-    * Hvis brugeren er udpeget som stedfortræder, angives navnene, så brugeren kan angive en timeseddel på deres vegne.  
-2. Indtast en dato i feltet Dato.
-    * Hvis denne indstilling er markeret, oprettes nye timeseddellinjer ved hjælp af de timeseddelindstillinger, der er konfigureret som favoritter.  
-3. Klik på OK.
-4. Klik på Ny linje.
-5. Markér den valgte række på listen.
-    * Feltet Juridisk enhed viser den aktuelle juridiske enhed som standard.   
-6. Klik på rullelisten i feltet Projekt for at åbne opslaget.
-7. Find og vælg den ønskede post på listen.
-8. Klik op linket i den valgte række på listen.
-9. Klik på rullelisten i feltet Aktivitet for at åbne opslaget.
-10. Find og vælg den ønskede post på listen.
-11. Klik op linket i den valgte række på listen.
-12. Klik på rullelisten i feltet Kategori for at åbne opslaget.
-13. Find og vælg den ønskede post på listen.
-14. Klik op linket i den valgte række på listen.
-15. Angiv antal arbejdstimer hver dag.
-    * Timer skal angive i et format med decimaler.  Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.   
-16. Angiv antal arbejdstimer hver dag.
-    * Timer skal angive i et format med decimaler.  Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.   
-17. Angiv antal arbejdstimer hver dag.
-    * Timer skal angive i et format med decimaler.  Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.   
-18. Angiv antal arbejdstimer hver dag.
-    * Timer skal angive i et format med decimaler.  Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.   
-19. Angiv antal arbejdstimer hver dag.
-    * Timer skal angive i et format med decimaler.  Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.   
-    * I Linjedetaljer er følgende indstillinger tilgængelige: o Tilføj oplysninger om moms og økonomiske dimensioner.  o Tilføj bemærkninger om timeseddellinjen.  
-20. Klik på Arbejdsgang for at åbne dialogboksen.
-21. Klik på Send.
-22. Klik på Send.
+1. <span data-ttu-id="50663-110">Klik på Ny for at angive en ny timeseddel.</span><span class="sxs-lookup"><span data-stu-id="50663-110">To enter a new timesheet, click New.</span></span>
+    * <span data-ttu-id="50663-111">Rullelisten Ressource viser den arbejder, der er tildelt den aktuelle bruger som standard.</span><span class="sxs-lookup"><span data-stu-id="50663-111">The Resource drop-down list shows the worker assigned to the current user, by default.</span></span>  
+    * <span data-ttu-id="50663-112">Hvis brugeren er udpeget som stedfortræder, angives navnene, så brugeren kan angive en timeseddel på deres vegne.</span><span class="sxs-lookup"><span data-stu-id="50663-112">If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.</span></span>  
+2. <span data-ttu-id="50663-113">Indtast en dato i feltet Dato.</span><span class="sxs-lookup"><span data-stu-id="50663-113">In the Date field, enter a date.</span></span>
+    * <span data-ttu-id="50663-114">Hvis denne indstilling er markeret, oprettes nye timeseddellinjer ved hjælp af de timeseddelindstillinger, der er konfigureret som favoritter.</span><span class="sxs-lookup"><span data-stu-id="50663-114">If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favourites.</span></span>  
+3. <span data-ttu-id="50663-115">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="50663-115">Click OK.</span></span>
+4. <span data-ttu-id="50663-116">Klik på Ny linje.</span><span class="sxs-lookup"><span data-stu-id="50663-116">Click New line.</span></span>
+5. <span data-ttu-id="50663-117">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-117">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="50663-118">Feltet Juridisk enhed viser den aktuelle juridiske enhed som standard.</span><span class="sxs-lookup"><span data-stu-id="50663-118">The Legal Entity field displays the current Legal entity by default.</span></span>   
+6. <span data-ttu-id="50663-119">Klik på rullelisten i feltet Projekt for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="50663-119">In the Project field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="50663-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-120">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="50663-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-121">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="50663-122">Klik på rullelisten i feltet Aktivitet for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="50663-122">In the Activity field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="50663-123">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-123">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="50663-124">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-124">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="50663-125">Klik på rullelisten i feltet Kategori for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="50663-125">In the Category field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="50663-126">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-126">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="50663-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="50663-127">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="50663-128">Angiv antal arbejdstimer hver dag.</span><span class="sxs-lookup"><span data-stu-id="50663-128">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="50663-129">Timer skal angive i et format med decimaler.</span><span class="sxs-lookup"><span data-stu-id="50663-129">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="50663-130">Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.</span><span class="sxs-lookup"><span data-stu-id="50663-130">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+16. <span data-ttu-id="50663-131">Angiv antal arbejdstimer hver dag.</span><span class="sxs-lookup"><span data-stu-id="50663-131">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="50663-132">Timer skal angive i et format med decimaler.</span><span class="sxs-lookup"><span data-stu-id="50663-132">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="50663-133">Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.</span><span class="sxs-lookup"><span data-stu-id="50663-133">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+17. <span data-ttu-id="50663-134">Angiv antal arbejdstimer hver dag.</span><span class="sxs-lookup"><span data-stu-id="50663-134">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="50663-135">Timer skal angive i et format med decimaler.</span><span class="sxs-lookup"><span data-stu-id="50663-135">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="50663-136">Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.</span><span class="sxs-lookup"><span data-stu-id="50663-136">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+18. <span data-ttu-id="50663-137">Angiv antal arbejdstimer hver dag.</span><span class="sxs-lookup"><span data-stu-id="50663-137">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="50663-138">Timer skal angive i et format med decimaler.</span><span class="sxs-lookup"><span data-stu-id="50663-138">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="50663-139">Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.</span><span class="sxs-lookup"><span data-stu-id="50663-139">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+19. <span data-ttu-id="50663-140">Angiv antal arbejdstimer hver dag.</span><span class="sxs-lookup"><span data-stu-id="50663-140">Enter the number of hours worked each day.</span></span>
+    * <span data-ttu-id="50663-141">Timer skal angive i et format med decimaler.</span><span class="sxs-lookup"><span data-stu-id="50663-141">Hours should be entered in a decimal format.</span></span>  <span data-ttu-id="50663-142">Hvis du f.eks. har arbejdet i to timer og femten minutter, skal du skrive 2,25.</span><span class="sxs-lookup"><span data-stu-id="50663-142">For example, if you worked for two hours and fifteen minutes, enter 2.25.</span></span>   
+    * <span data-ttu-id="50663-143">I Linjedetaljer er følgende indstillinger tilgængelige: o Tilføj oplysninger om moms og økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="50663-143">In Line details, the following options are available:  o  Add information about taxes and financial dimensions.</span></span>  <span data-ttu-id="50663-144">o Tilføj bemærkninger om timeseddellinjen.</span><span class="sxs-lookup"><span data-stu-id="50663-144">o    Add comments about the timesheet line.</span></span>  
+20. <span data-ttu-id="50663-145">Klik på Arbejdsgang for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="50663-145">Click Workflow to open the drop dialog.</span></span>
+21. <span data-ttu-id="50663-146">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="50663-146">Click Submit.</span></span>
+22. <span data-ttu-id="50663-147">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="50663-147">Click Submit.</span></span>
 
 

@@ -19,84 +19,84 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 72f73404f99330c3ff8b23dabed78477a0cd30cd
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="shift-and-cash-drawer-management"></a>Styring af skift og kasseapparater
+# <a name="shift-and-cash-drawer-management"></a><span data-ttu-id="9e48b-104">Styring af skift og kasseapparater</span><span class="sxs-lookup"><span data-stu-id="9e48b-104">Shift and cash drawer management</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-I denne artikel beskrives, hvordan du konfigurerer og bruger de to typer detail-POS-skift – delt og separat. Delte skift kan bruges af flere brugere på flere steder, hvorimod separate skift kun kan bruges af én arbejder ad gangen.
+<span data-ttu-id="9e48b-105">I denne artikel beskrives, hvordan du konfigurerer og bruger de to typer detail-POS-skift – delt og separat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-105">This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone.</span></span> <span data-ttu-id="9e48b-106">Delte skift kan bruges af flere brugere på flere steder, hvorimod separate skift kun kan bruges af én arbejder ad gangen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-106">Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.</span></span>
 
-Der er to typer af POS-skift (Point Of Sale): separate og delte. Separate skift kan kun bruges af én arbejder ad gangen. Delte skift kan bruges af flere brugere på flere steder. Derfor skaber de grundlæggende et enkelt skift for flere arbejdere i en butik.
+<span data-ttu-id="9e48b-107">Der er to typer af POS-skift (Point Of Sale): separate og delte.</span><span class="sxs-lookup"><span data-stu-id="9e48b-107">There are two types of retail point of sale (POS) shifts: stand-alone and shared.</span></span> <span data-ttu-id="9e48b-108">Separate skift kan kun bruges af én arbejder ad gangen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-108">Stand-alone shifts can be used by only one worker at a time.</span></span> <span data-ttu-id="9e48b-109">Delte skift kan bruges af flere brugere på flere steder.</span><span class="sxs-lookup"><span data-stu-id="9e48b-109">Shared shifts can be used by multiple users in multiple places.</span></span> <span data-ttu-id="9e48b-110">Derfor skaber de grundlæggende et enkelt skift for flere arbejdere i en butik.</span><span class="sxs-lookup"><span data-stu-id="9e48b-110">Therefore, they effectively create a single shift for multiple workers in a store.</span></span>
 
-## <a name="standalone-shifts"></a>Separate skift
-Separate skift bruges i et traditionelt, fast POS-scenarie, hvor kontanter afstemmes uafhængigt for hvert POS-kasseapparat. For eksempel er der i en butik normalt flere faste POS-kasseapparater og en kasserer, der er tildelt til hvert kasseapparat. I sådanne tilfælde bruges der sandsynligvis et separat skift til hvert kasseapparat, og kassereren er ansvarlig for pengeskuffen eller fysiske kontanter for dette kasseapparat. Et separat skift omfatter alle aktiviteter for dette kasseapparat under kassererens holdskifte. Aktiviteter kan omfatte startbeløbet, der er deponeret i pengeskuffen, al fjernelse og tilføjelse af kontanter under aktiviteter som f.eks. indsættelser i banken og kassebeholdning, og kasseoptællingen i slutningen af skiftet.
+## <a name="standalone-shifts"></a><span data-ttu-id="9e48b-111">Separate skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-111">Standalone shifts</span></span>
+<span data-ttu-id="9e48b-112">Separate skift bruges i et traditionelt, fast POS-scenarie, hvor kontanter afstemmes uafhængigt for hvert POS-kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-112">Stand-alone shifts are used in a traditional, fixed POS scenario, where cash is reconciled independently for each POS register.</span></span> <span data-ttu-id="9e48b-113">For eksempel er der i en butik normalt flere faste POS-kasseapparater og en kasserer, der er tildelt til hvert kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-113">For example, in a grocery store setting, there are typically several fixed POS registers, and a cashier is assigned to each register.</span></span> <span data-ttu-id="9e48b-114">I sådanne tilfælde bruges der sandsynligvis et separat skift til hvert kasseapparat, og kassereren er ansvarlig for pengeskuffen eller fysiske kontanter for dette kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-114">In this case, each register likely uses a stand-alone shift, and the cashier is responsible for the till or physical cash at that register.</span></span> <span data-ttu-id="9e48b-115">Et separat skift omfatter alle aktiviteter for dette kasseapparat under kassererens holdskifte.</span><span class="sxs-lookup"><span data-stu-id="9e48b-115">A stand-alone shift encompasses all the activity on that register during the cashier’s work shift.</span></span> <span data-ttu-id="9e48b-116">Aktiviteter kan omfatte startbeløbet, der er deponeret i pengeskuffen, al fjernelse og tilføjelse af kontanter under aktiviteter som f.eks. indsættelser i banken og kassebeholdning, og kasseoptællingen i slutningen af skiftet.</span><span class="sxs-lookup"><span data-stu-id="9e48b-116">Activities can include the opening amount that is deposited in the till, all removal and addition of cash through operations such as bank drops and float entry, and the tender declaration at the end of the shift.</span></span>
 
-### <a name="set-up-a-stand-alone-shift"></a>Oprette et separat skift
+### <a name="set-up-a-stand-alone-shift"></a><span data-ttu-id="9e48b-117">Oprette et separat skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-117">Set up a stand-alone shift</span></span>
 
-Et separat skift angives på kasseapparatniveau. I denne fremgangsmåde beskrives, hvordan du konfigurerer et separat skift for et POS-kasseapparat.
+<span data-ttu-id="9e48b-118">Et separat skift angives på kasseapparatniveau.</span><span class="sxs-lookup"><span data-stu-id="9e48b-118">A stand-alone shift is designated at the cash drawer level.</span></span> <span data-ttu-id="9e48b-119">I denne fremgangsmåde beskrives, hvordan du konfigurerer et separat skift for et POS-kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-119">This procedure explains how to set up a stand-alone shift on a POS register.</span></span>
 
-1.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
-2.  Vælg hardwareprofilen, der skal bruges til det separate skift.
-3.  I oversigtspanelet **Kasseskuffe** skal du kontrollere, at indstillingen **Skuffe til delt skift** er indstillet til **Nej**.
-4.  Klik på **Gem**.
-5.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
-6.  Vælg det kasseapparat, der kræver et separat skift, og klik derefter på **Rediger**.
-7.  I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.
-8.  Klik på **Gem**.
-9.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
-10. Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.
+1.  <span data-ttu-id="9e48b-120">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-120">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span>
+2.  <span data-ttu-id="9e48b-121">Vælg hardwareprofilen, der skal bruges til det separate skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-121">Select the hardware profile to use for the stand-alone shift.</span></span>
+3.  <span data-ttu-id="9e48b-122">I oversigtspanelet **Kasseskuffe** skal du kontrollere, at indstillingen **Skuffe til delt skift** er indstillet til **Nej**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-122">On the **Drawer** FastTab, confirm that the **Shared shift drawer** option is set to **No**.</span></span>
+4.  <span data-ttu-id="9e48b-123">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-123">Click **Save**.</span></span>
+5.  <span data-ttu-id="9e48b-124">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-124">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span>
+6.  <span data-ttu-id="9e48b-125">Vælg det kasseapparat, der kræver et separat skift, og klik derefter på **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-125">Select the register that requires a stand-alone shift, and then click **Edit**.</span></span>
+7.  <span data-ttu-id="9e48b-126">I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.</span><span class="sxs-lookup"><span data-stu-id="9e48b-126">In the **Hardware profile** field, select the hardware profile that you selected in step 2.</span></span>
+8.  <span data-ttu-id="9e48b-127">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-127">Click **Save**.</span></span>
+9.  <span data-ttu-id="9e48b-128">Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-128">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+10. <span data-ttu-id="9e48b-129">Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.</span><span class="sxs-lookup"><span data-stu-id="9e48b-129">Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.</span></span>
 
-### <a name="use-a-stand-alone-shift"></a>Bruge et separat skift
+### <a name="use-a-stand-alone-shift"></a><span data-ttu-id="9e48b-130">Bruge et separat skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-130">Use a stand-alone shift</span></span>
 
-1.  Log på POS'et.
-2.  Hvis der ikke er nogen åbne skift, skal du vælge **Åbn et nyt skift**.
-3.  Gå til aktiviteten **Angiv startbeløb**, og angiv det pengebeløb, der føjes til pengeskuffen ved arbejdsdagens begyndelse.
-4.  Udfør transaktioner.
-5.  Ved dagens slutning skal du vælge **Foretag kasseoptælling** for at optælle det beløb, der forbliver i kassen.
-6.  Angiv kontantbeløbet, og klik derefter på **Gem** for at gemme kasseoptællingen.
-7.  Vælg **Luk skift** at lukke skiftet.
+1.  <span data-ttu-id="9e48b-131">Log på POS'et.</span><span class="sxs-lookup"><span data-stu-id="9e48b-131">Sign in to the POS.</span></span>
+2.  <span data-ttu-id="9e48b-132">Hvis der ikke er nogen åbne skift, skal du vælge **Åbn et nyt skift**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-132">If no shift is open, select **Open a new shift**.</span></span>
+3.  <span data-ttu-id="9e48b-133">Gå til aktiviteten **Angiv startbeløb**, og angiv det pengebeløb, der føjes til pengeskuffen ved arbejdsdagens begyndelse.</span><span class="sxs-lookup"><span data-stu-id="9e48b-133">Go to the **Declare start amount** operation, and specify the amount of cash that is being added to the till to start the work day.</span></span>
+4.  <span data-ttu-id="9e48b-134">Udfør transaktioner.</span><span class="sxs-lookup"><span data-stu-id="9e48b-134">Perform some transactions.</span></span>
+5.  <span data-ttu-id="9e48b-135">Ved dagens slutning skal du vælge **Foretag kasseoptælling** for at optælle det beløb, der forbliver i kassen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-135">At the end of the day, select **Declare tender** to declare the amount of cash that remains in the cash drawer.</span></span>
+6.  <span data-ttu-id="9e48b-136">Angiv kontantbeløbet, og klik derefter på **Gem** for at gemme kasseoptællingen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-136">Enter the amount of cash, and then click **Save** to save the tender declaration.</span></span>
+7.  <span data-ttu-id="9e48b-137">Vælg **Luk skift** at lukke skiftet.</span><span class="sxs-lookup"><span data-stu-id="9e48b-137">Select **Close shift** to close the shift.</span></span>
 
-**Bemærk:** Andre handlinger er tilgængelige under skiftet, afhængigt af de forretningsprocesser der findes. Handlingerne **Deponering til pengeskab**, **Indsættelse i banken** og **Fjernelse af betalingsmiddel** kan bruges til at fjerne penge fra pengeskuffen i dagens løb, eller før skiftet lukkes. Hvis der kommer til at mangle kontanter i en pengeskuffe, kan handlingen **Kassebeholdning** bruges til at tilføje kontanter i skuffen.
+<span data-ttu-id="9e48b-138">**Bemærk:** Andre handlinger er tilgængelige under skiftet, afhængigt af de forretningsprocesser der findes.</span><span class="sxs-lookup"><span data-stu-id="9e48b-138">**Note:** Other operations are available during the shift, depending on the business processes that are in place.</span></span> <span data-ttu-id="9e48b-139">Handlingerne **Deponering til pengeskab**, **Indsættelse i banken** og **Fjernelse af betalingsmiddel** kan bruges til at fjerne penge fra pengeskuffen i dagens løb, eller før skiftet lukkes.</span><span class="sxs-lookup"><span data-stu-id="9e48b-139">The **Safe drop**, **Bank drop**, and **Tender removal** operations can be used to remove money from the till during the day or before the shift is closed.</span></span> <span data-ttu-id="9e48b-140">Hvis der kommer til at mangle kontanter i en pengeskuffe, kan handlingen **Kassebeholdning** bruges til at tilføje kontanter i skuffen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-140">If a till runs low on cash, the **Float entry** operation can be used to add cash to the till.</span></span>
 
-## <a name="shared-shifts"></a>Delte skift
-Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat eller et sæt af kasseapparater i løbet af arbejdsdagen. Normalt bruges et delt skift i POS-miljøer på mobilenheder. I et mobilmiljø tildeles hver kasserer ikke en enkelt kasseapparat, som han eller hun er ansvarlig for. I stedet for skal alle kasserere kunne foretage et salg og tilføje kontanter til det nærmeste kasseapparat. I dette scenarie indgår de kasseapparater, der deles mellem kasserere, i et delt skift. Alle kasseapparater i et delt skift er inkluderet i det samme skift med henblik på aktiviteter, der vedrører kontantstyring for dette skift. Startbeløbet for skiftet bør derfor omfatte summen af alle kontanter i alle kasseapparater, der findes i det delte skift. Ligeledes skal kasseoptællingen være summen af alle kontanter i alle kasseapparater, der indgår i det delte skift. **Bemærk:** Kun ét delt skift kan være åbent ad gangen i hver butik. Delte skift og separate skift kan bruges i samme butik.
+## <a name="shared-shifts"></a><span data-ttu-id="9e48b-141">Delte skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-141">Shared shifts</span></span>
+<span data-ttu-id="9e48b-142">Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat eller et sæt af kasseapparater i løbet af arbejdsdagen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-142">A shared shift is used in an environment where multiple cashiers share a cash drawer or a set of cash drawers throughout the work day.</span></span> <span data-ttu-id="9e48b-143">Normalt bruges et delt skift i POS-miljøer på mobilenheder.</span><span class="sxs-lookup"><span data-stu-id="9e48b-143">Typically, a shared shift is used in mobile POS environments.</span></span> <span data-ttu-id="9e48b-144">I et mobilmiljø tildeles hver kasserer ikke en enkelt kasseapparat, som han eller hun er ansvarlig for.</span><span class="sxs-lookup"><span data-stu-id="9e48b-144">In a mobile environment, each cashier isn’t assigned to and responsible for a single cash drawer.</span></span> <span data-ttu-id="9e48b-145">I stedet for skal alle kasserere kunne foretage et salg og tilføje kontanter til det nærmeste kasseapparat.</span><span class="sxs-lookup"><span data-stu-id="9e48b-145">Instead, all cashiers must be able to tender a sale and add cash to whatever cash drawer is closest to them.</span></span> <span data-ttu-id="9e48b-146">I dette scenarie indgår de kasseapparater, der deles mellem kasserere, i et delt skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-146">In this scenario, the cash drawers that are shared among cashiers are included in a shared shift.</span></span> <span data-ttu-id="9e48b-147">Alle kasseapparater i et delt skift er inkluderet i det samme skift med henblik på aktiviteter, der vedrører kontantstyring for dette skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-147">All the cash drawers in a shared shift are included in the same shift for the purpose of activities that are related to cash management for that shift.</span></span> <span data-ttu-id="9e48b-148">Startbeløbet for skiftet bør derfor omfatte summen af alle kontanter i alle kasseapparater, der findes i det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-148">Therefore, the starting amount for the shift should include the sum of all cash in all the cash drawers that are included in the shared shift.</span></span> <span data-ttu-id="9e48b-149">Ligeledes skal kasseoptællingen være summen af alle kontanter i alle kasseapparater, der indgår i det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-149">Likewise, the tender declaration will be the sum of all the cash in all the cash drawers that are included in the shared shift.</span></span> <span data-ttu-id="9e48b-150">**Bemærk:** Kun ét delt skift kan være åbent ad gangen i hver butik.</span><span class="sxs-lookup"><span data-stu-id="9e48b-150">**Note:** Only one shared shift can be open at a time in each store.</span></span> <span data-ttu-id="9e48b-151">Delte skift og separate skift kan bruges i samme butik.</span><span class="sxs-lookup"><span data-stu-id="9e48b-151">Shared shifts and stand-alone shifts can be used in the same store.</span></span>
 
-### <a name="set-up-a-shared-shift"></a>Konfigurere et delt skift
+### <a name="set-up-a-shared-shift"></a><span data-ttu-id="9e48b-152">Konfigurere et delt skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-152">Set up a shared shift</span></span>
 
-1.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.
-2.  Vælg hardwareprofilen, der skal bruges til det delte skift.
-3.  I oversigtspanelet **Kasseskuffe** skal du vælge indstillingen **Ja** for **Skuffe til delt skift**.
-4.  Klik på **Gem**.
-5.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.
-6.  Vælg det kasseapparat, der kræver et delt skift, og klik derefter på **Rediger**.
-7.  I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.
-8.  Klik på **Gem**.
-9.  Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.
-10. Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.
+1.  <span data-ttu-id="9e48b-153">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Hardwareprofiler**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-153">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span>
+2.  <span data-ttu-id="9e48b-154">Vælg hardwareprofilen, der skal bruges til det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-154">Select the hardware profile to use for the shared shift.</span></span>
+3.  <span data-ttu-id="9e48b-155">I oversigtspanelet **Kasseskuffe** skal du vælge indstillingen **Ja** for **Skuffe til delt skift**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-155">On the **Drawer** FastTab, set the **Shared shift drawer** option to **Yes**.</span></span>
+4.  <span data-ttu-id="9e48b-156">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-156">Click **Save**.</span></span>
+5.  <span data-ttu-id="9e48b-157">Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **Kasseapparater**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-157">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span>
+6.  <span data-ttu-id="9e48b-158">Vælg det kasseapparat, der kræver et delt skift, og klik derefter på **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-158">Select the register that requires a shared shift, and then click **Edit**.</span></span>
+7.  <span data-ttu-id="9e48b-159">I feltet **Hardwareprofil** skal du vælge den hardwareprofil, du valgte i trin 2.</span><span class="sxs-lookup"><span data-stu-id="9e48b-159">In the **Hardware profile** field, select the hardware profile that you selected in step 2.</span></span>
+8.  <span data-ttu-id="9e48b-160">Klik på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-160">Click **Save**.</span></span>
+9.  <span data-ttu-id="9e48b-161">Klik på **Detail** &gt; **Detail-it** &gt; **Distributionsplan**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-161">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+10. <span data-ttu-id="9e48b-162">Vælg distributionsplanen **1090**, og klik derefter på **Kør nu** for at synkronisere ændringer i POS.</span><span class="sxs-lookup"><span data-stu-id="9e48b-162">Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.</span></span>
 
-### <a name="use-a-shared-shift"></a>Bruge et delt skift
+### <a name="use-a-shared-shift"></a><span data-ttu-id="9e48b-163">Bruge et delt skift</span><span class="sxs-lookup"><span data-stu-id="9e48b-163">Use a shared shift</span></span>
 
-1.  Log på POS'et.
-2.  Hvis POS'et endnu ikke er forbundet med en hardwarestation, skal du vælge **handling uden for pengeskuffe** og derefter vælge handlingen **Vælg hardwarestation** for at gøre en hardwarestation aktiv for det delte skift. Dette trin er kun obligatorisk første gang, et kasseapparat føjes til et miljø for et delt skift.
-3.  Log af POS, og log derefter på igen.
-4.  Vælg **Opret et nyt skift**.
-5.  Vælg **Angiv startbeløb**.
-6.  Angiv startbeløbet for alle kasseapparater i den butik, som er en del af det delte skift, og klik derefter på **Gem**.
-    -   For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation** for at aktivere hardwarestationen.
-    -   For at føje en pengeskuffe til et bestemt kasseapparat, skal du bruge handlingen **Åbn kasseskuffe**.
-    -   Fortsæt indtil alle kasseapparater i det delte skift har deres del af startbeløbet.
+1.  <span data-ttu-id="9e48b-164">Log på POS'et.</span><span class="sxs-lookup"><span data-stu-id="9e48b-164">Sign in to the POS.</span></span>
+2.  <span data-ttu-id="9e48b-165">Hvis POS'et endnu ikke er forbundet med en hardwarestation, skal du vælge **handling uden for pengeskuffe** og derefter vælge handlingen **Vælg hardwarestation** for at gøre en hardwarestation aktiv for det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-165">If the POS isn’t yet connected to a hardware station, select **Non-drawer operation**, and then select the **Select hardware station** operation to make a hardware station active for the shared shift.</span></span> <span data-ttu-id="9e48b-166">Dette trin er kun obligatorisk første gang, et kasseapparat føjes til et miljø for et delt skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-166">This step is required only the first time that a register is added to a shared shift environment.</span></span>
+3.  <span data-ttu-id="9e48b-167">Log af POS, og log derefter på igen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-167">Sign out of the POS, and then sign back in.</span></span>
+4.  <span data-ttu-id="9e48b-168">Vælg **Opret et nyt skift**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-168">Select **Create a new shift**.</span></span>
+5.  <span data-ttu-id="9e48b-169">Vælg **Angiv startbeløb**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-169">Select **Declare start amount**.</span></span>
+6.  <span data-ttu-id="9e48b-170">Angiv startbeløbet for alle kasseapparater i den butik, som er en del af det delte skift, og klik derefter på **Gem**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-170">Enter the starting amount of all the cash drawers in the store that are part of the shared shift, and then click **Save**.</span></span>
+    -   <span data-ttu-id="9e48b-171">For at føje en del af startbeløbet til hver efterfølgende kasseapparat, skal du bruge handlingen **Vælg hardwarestation** for at aktivere hardwarestationen.</span><span class="sxs-lookup"><span data-stu-id="9e48b-171">To add part of the starting amount to each subsequent cash drawer, use the **Select hardware station** operation to make the hardware station active.</span></span>
+    -   <span data-ttu-id="9e48b-172">For at føje en pengeskuffe til et bestemt kasseapparat, skal du bruge handlingen **Åbn kasseskuffe**.</span><span class="sxs-lookup"><span data-stu-id="9e48b-172">To add a till to a specific cash drawer, use the **Open drawer** operation.</span></span>
+    -   <span data-ttu-id="9e48b-173">Fortsæt indtil alle kasseapparater i det delte skift har deres del af startbeløbet.</span><span class="sxs-lookup"><span data-stu-id="9e48b-173">Continue until all cash drawers in the shared shift have their part of the starting amount.</span></span>
 
-7.  Ved dagens slutning skal du åbne hvert kasseapparat og fjerne kontanterne.
-8.  Når du har fjernet kontanterne fra det sidste kasseapparat, skal du tælle alle beløbene fra alle kasseapparater.
-9.  Brug handlingen **Foretag kasseoptælling** til at optælle det samlede kontantbeløb fra alle kasseapparater, der indgår i det delte skift.
-10. Brug handlingen **Luk skift** til at lukke det delte skift.
+7.  <span data-ttu-id="9e48b-174">Ved dagens slutning skal du åbne hvert kasseapparat og fjerne kontanterne.</span><span class="sxs-lookup"><span data-stu-id="9e48b-174">At the end of the day, open each cash drawer, and remove the cash.</span></span>
+8.  <span data-ttu-id="9e48b-175">Når du har fjernet kontanterne fra det sidste kasseapparat, skal du tælle alle beløbene fra alle kasseapparater.</span><span class="sxs-lookup"><span data-stu-id="9e48b-175">After you’ve removed the cash from the last cash drawer, count all the cash from all the cash drawers.</span></span>
+9.  <span data-ttu-id="9e48b-176">Brug handlingen **Foretag kasseoptælling** til at optælle det samlede kontantbeløb fra alle kasseapparater, der indgår i det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-176">Use the **Declare tender** operation to declare the total amount of cash from all the cash drawers that are included in the shared shift.</span></span>
+10. <span data-ttu-id="9e48b-177">Brug handlingen **Luk skift** til at lukke det delte skift.</span><span class="sxs-lookup"><span data-stu-id="9e48b-177">Use the **Close shift** operation to close the shared shift.</span></span>
 
 
 

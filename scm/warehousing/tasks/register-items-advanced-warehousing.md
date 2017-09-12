@@ -17,62 +17,62 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 80f71f4ec5710ab257a45edbaee06d7c0e6a281e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4721ec8437ff7907a417a331bba887847c7e447a
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde
+# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="9dc13-103">Registrere varer for en vare med aktiveret avanceret lagerstyring ved hjælp af en varemodtagelseskladde</span><span class="sxs-lookup"><span data-stu-id="9dc13-103">Register items for an advanced warehousing enabled item using an item arrival journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser. Dette vil normalt blive udført af en modtagende medarbejder. 
+<span data-ttu-id="9dc13-104">Denne procedure viser, hvordan du registrerer varer ved hjælp af varemodtagelseskladden, når du bruger avancerede lagerstyringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="9dc13-104">This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes.</span></span> <span data-ttu-id="9dc13-105">Dette vil normalt blive udført af en modtagende medarbejder.</span><span class="sxs-lookup"><span data-stu-id="9dc13-105">This would usually be done by a receiving clerk.</span></span> 
 
-Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Du skal have en bekræftet indkøbsordre med en åben indkøbsordrelinje, før du starter denne guide. Varen på linjen skal på lager, og den skal ikke bruge produktvarianter og ikke have sporingsdimensioner. Og varen skal tilknyttes en lagerstyringsprocesaktiveret lagringsdimensionsgruppe. Det lagersted, der bruges, skal være aktiveret for lagerstyringsprocesser og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret. Hvis du bruger USMF, kan du bruge regnskab 1001, lagersted 51 og vare M9200 til at oprette din IO. 
+<span data-ttu-id="9dc13-106">Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.</span><span class="sxs-lookup"><span data-stu-id="9dc13-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="9dc13-107">Du skal have en bekræftet indkøbsordre med en åben indkøbsordrelinje, før du starter denne guide.</span><span class="sxs-lookup"><span data-stu-id="9dc13-107">You need to have a confirmed purchase order with an open purchase order line before you start this guide.</span></span> <span data-ttu-id="9dc13-108">Varen på linjen skal på lager, og den skal ikke bruge produktvarianter og ikke have sporingsdimensioner.</span><span class="sxs-lookup"><span data-stu-id="9dc13-108">The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions.</span></span> <span data-ttu-id="9dc13-109">Og varen skal tilknyttes en lagerstyringsprocesaktiveret lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="9dc13-109">And the item needs to be associated with a warehouse management process enabled storage dimension group.</span></span> <span data-ttu-id="9dc13-110">Det lagersted, der bruges, skal være aktiveret for lagerstyringsprocesser og den lokalitet, du bruger til modtagelse, skal være id-kontrolleret.</span><span class="sxs-lookup"><span data-stu-id="9dc13-110">The warehouse that’s used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled.</span></span> <span data-ttu-id="9dc13-111">Hvis du bruger USMF, kan du bruge regnskab 1001, lagersted 51 og vare M9200 til at oprette din IO.</span><span class="sxs-lookup"><span data-stu-id="9dc13-111">If you’re using USMF, you can use company account 1001, Warehouse 51, and item M9200 to create your PO.</span></span> 
 
-Noter nummeret på den indkøbsordre, du opretter, og bemærk også varenummeret og det sted, du har brugt til din indkøbsordrelinje.
+<span data-ttu-id="9dc13-112">Noter nummeret på den indkøbsordre, du opretter, og bemærk også varenummeret og det sted, du har brugt til din indkøbsordrelinje.</span><span class="sxs-lookup"><span data-stu-id="9dc13-112">Make a note of the number of the purchase order that you create, and also note the item number and the site that you used for your purchase order line.</span></span>
 
 
-## <a name="create-an-item-arrival-journal-header"></a>Oprette en varemodtagelseskladde
-1. Gå til Varemodtagelse.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-    * Hvis du bruger USMF, kan du skrive WHS. Hvis du bruger andre data, skal kladden, hvis navn du vælger, have følgende egenskaber: Undersøg plukplads skal angives til Nej, og Karantænestyring skal angives til Nej.  
-4. Skriv en værdi i feltet Nummer.
-5. Skriv en værdi i feltet Sted.
-    * Vælg det sted, du brugte til din indkøbsordrelinje. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du brugte lagersted 51 i USMF, skal du vælge sted 5.  
-6. Skriv en værdi i feltet Lagersted.
-    * Vælg et lagersted, der er gyldigt for det sted, du har valgt. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du bruger eksempelværdierne i USMF, skal du vælge 51.  
-7. Skriv en værdi i feltet Lokalitet.
-    * Vælg en gyldig lokalitet på det lagersted, du har valgt. Lokaliteten skal knyttet til en lokalitetsprofil, som er nummerpladekontrolleret. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden. Hvis du bruger eksempelværdierne i USMF, skal du vælge Bulk-008.  
-8. Højreklik på rullepilen i feltet Nummerplade, og vælg derefter Vis detaljer.
-9. Klik på Ny.
-10. Skriv en værdi i feltet Nummerplade.
-    * Noter værdien.  
-11. Klik på Gem.
-12. Luk siden.
-13. Skriv en værdi i feltet Nummerplade.
-    * Angiv værdien af den nummerplade, du netop har oprettet. Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.  
-14. Klik på OK.
+## <a name="create-an-item-arrival-journal-header"></a><span data-ttu-id="9dc13-113">Oprette en varemodtagelseskladde</span><span class="sxs-lookup"><span data-stu-id="9dc13-113">Create an item arrival journal header</span></span>
+1. <span data-ttu-id="9dc13-114">Gå til Varemodtagelse.</span><span class="sxs-lookup"><span data-stu-id="9dc13-114">Go to Item arrival.</span></span>
+2. <span data-ttu-id="9dc13-115">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9dc13-115">Click New.</span></span>
+3. <span data-ttu-id="9dc13-116">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9dc13-116">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-117">Hvis du bruger USMF, kan du skrive WHS.</span><span class="sxs-lookup"><span data-stu-id="9dc13-117">If you are using USMF, you can type WHS.</span></span> <span data-ttu-id="9dc13-118">Hvis du bruger andre data, skal kladden, hvis navn du vælger, have følgende egenskaber: Undersøg plukplads skal angives til Nej, og Karantænestyring skal angives til Nej.</span><span class="sxs-lookup"><span data-stu-id="9dc13-118">If you’re using other data, the journal whose name you choose has to have the following properties: Check picking location must be set to No, and Quarantine management must be set to No.</span></span>  
+4. <span data-ttu-id="9dc13-119">Skriv en værdi i feltet Nummer.</span><span class="sxs-lookup"><span data-stu-id="9dc13-119">In the Number field, type a value.</span></span>
+5. <span data-ttu-id="9dc13-120">Skriv en værdi i feltet Sted.</span><span class="sxs-lookup"><span data-stu-id="9dc13-120">In the Site field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-121">Vælg det sted, du brugte til din indkøbsordrelinje.</span><span class="sxs-lookup"><span data-stu-id="9dc13-121">Select the site that you used for your purchase order line.</span></span> <span data-ttu-id="9dc13-122">Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-122">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="9dc13-123">Hvis du brugte lagersted 51 i USMF, skal du vælge sted 5.</span><span class="sxs-lookup"><span data-stu-id="9dc13-123">If you used warehouse 51 in USMF, choose site 5.</span></span>  
+6. <span data-ttu-id="9dc13-124">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="9dc13-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-125">Vælg et lagersted, der er gyldigt for det sted, du har valgt.</span><span class="sxs-lookup"><span data-stu-id="9dc13-125">Select a valid warehouse for the site that you’ve selected.</span></span> <span data-ttu-id="9dc13-126">Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-126">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="9dc13-127">Hvis du bruger eksempelværdierne i USMF, skal du vælge 51.</span><span class="sxs-lookup"><span data-stu-id="9dc13-127">If you’re using the example values in USMF, select 51.</span></span>  
+7. <span data-ttu-id="9dc13-128">Skriv en værdi i feltet Lokalitet.</span><span class="sxs-lookup"><span data-stu-id="9dc13-128">In the Location field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-129">Vælg en gyldig lokalitet på det lagersted, du har valgt.</span><span class="sxs-lookup"><span data-stu-id="9dc13-129">Select a valid location in the warehouse that you’ve selected.</span></span> <span data-ttu-id="9dc13-130">Lokaliteten skal knyttet til en lokalitetsprofil, som er nummerpladekontrolleret.</span><span class="sxs-lookup"><span data-stu-id="9dc13-130">The location has to be associated with a location profile, which is license plate controlled.</span></span> <span data-ttu-id="9dc13-131">Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-131">This will serve as a default value, which will default to all lines in the journal.</span></span> <span data-ttu-id="9dc13-132">Hvis du bruger eksempelværdierne i USMF, skal du vælge Bulk-008.</span><span class="sxs-lookup"><span data-stu-id="9dc13-132">If you’re using the example values in USMF, select Bulk-008.</span></span>  
+8. <span data-ttu-id="9dc13-133">Højreklik på rullepilen i feltet Nummerplade, og vælg derefter Vis detaljer.</span><span class="sxs-lookup"><span data-stu-id="9dc13-133">Right-click on the drop-down arrow in the License plate field and then select View details.</span></span>
+9. <span data-ttu-id="9dc13-134">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9dc13-134">Click New.</span></span>
+10. <span data-ttu-id="9dc13-135">Skriv en værdi i feltet Nummerplade.</span><span class="sxs-lookup"><span data-stu-id="9dc13-135">In the License plate field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-136">Noter værdien.</span><span class="sxs-lookup"><span data-stu-id="9dc13-136">Make a note of the value.</span></span>  
+11. <span data-ttu-id="9dc13-137">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="9dc13-137">Click Save.</span></span>
+12. <span data-ttu-id="9dc13-138">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-138">Close the page.</span></span>
+13. <span data-ttu-id="9dc13-139">Skriv en værdi i feltet Nummerplade.</span><span class="sxs-lookup"><span data-stu-id="9dc13-139">In the License plate field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-140">Angiv værdien af den nummerplade, du netop har oprettet.</span><span class="sxs-lookup"><span data-stu-id="9dc13-140">Enter the value of the license plate that you just created.</span></span> <span data-ttu-id="9dc13-141">Dette vil fungere som en standardværdi, der som standard bruges til alle linjer i kladden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-141">This will serve as a default value, which will default to all lines in the journal.</span></span>  
+14. <span data-ttu-id="9dc13-142">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9dc13-142">Click OK.</span></span>
 
-## <a name="add-a-line"></a>Tilføj en linje
-1. Klik på Tilføj linje.
-2. Indtast en værdi i feltet Varenummer.
-    * Angiv det varenummer, som du brugte på indkøbsordrelinjen.  
-3. Angiv et tal i feltet Antal.
-    * Angiv den mængde, du vil registrere.  
-    * Feltet Dato angiver den dato, hvor den disponible mængde af denne vare registreres på lageret.  
-    * Parti-id udfyldes af systemet, hvis det kan identificeres entydigt fra de givne oplysninger. Ellers skal du tilføje dem manuelt. Dette er et obligatorisk felt, der sammenkæder denne registrering med en bestemt kildedokumentlinje.  
+## <a name="add-a-line"></a><span data-ttu-id="9dc13-143">Tilføj en linje</span><span class="sxs-lookup"><span data-stu-id="9dc13-143">Add a line</span></span>
+1. <span data-ttu-id="9dc13-144">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9dc13-144">Click Add line.</span></span>
+2. <span data-ttu-id="9dc13-145">Indtast en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="9dc13-145">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="9dc13-146">Angiv det varenummer, som du brugte på indkøbsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="9dc13-146">Enter the item number that you used on the purchase order line.</span></span>  
+3. <span data-ttu-id="9dc13-147">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="9dc13-147">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="9dc13-148">Angiv den mængde, du vil registrere.</span><span class="sxs-lookup"><span data-stu-id="9dc13-148">Enter the quantity that you want to register.</span></span>  
+    * <span data-ttu-id="9dc13-149">Feltet Dato angiver den dato, hvor den disponible mængde af denne vare registreres på lageret.</span><span class="sxs-lookup"><span data-stu-id="9dc13-149">The Date field determines the date on which the on-hand quantity of this item will be registered in the inventory.</span></span>  
+    * <span data-ttu-id="9dc13-150">Parti-id udfyldes af systemet, hvis det kan identificeres entydigt fra de givne oplysninger.</span><span class="sxs-lookup"><span data-stu-id="9dc13-150">The lot ID will be populated by the system if it can be uniquely identified from the information provided.</span></span> <span data-ttu-id="9dc13-151">Ellers skal du tilføje dem manuelt.</span><span class="sxs-lookup"><span data-stu-id="9dc13-151">Otherwise you will have to add this manually.</span></span> <span data-ttu-id="9dc13-152">Dette er et obligatorisk felt, der sammenkæder denne registrering med en bestemt kildedokumentlinje.</span><span class="sxs-lookup"><span data-stu-id="9dc13-152">This is a mandatory field, which links this registration to a specific source document line.</span></span>  
 
-## <a name="complete-the-registration"></a>Fuldføre registreringen
-1. Klik på Valider.
-    * Dette kontrollerer, at kladden er klar til at blive bogført. Hvis valideringen mislykkes, skal du rette fejlene, før du kan bogføre kladden.  
-2. Klik på OK.
-    * Når du har klikket på OK, kan du se meddelelsen. Der bør være en meddelelse om, at kladden er OK.  
-3. Klik på Bogfør.
-4. Klik på OK.
-    * Når du har klikket på OK, skal du tjekke meddelelseslinjen. Der bør være en meddelelse om, at handlingen er fuldført.  
-5. Luk siden.
+## <a name="complete-the-registration"></a><span data-ttu-id="9dc13-153">Fuldføre registreringen</span><span class="sxs-lookup"><span data-stu-id="9dc13-153">Complete the registration</span></span>
+1. <span data-ttu-id="9dc13-154">Klik på Valider.</span><span class="sxs-lookup"><span data-stu-id="9dc13-154">Click Validate.</span></span>
+    * <span data-ttu-id="9dc13-155">Dette kontrollerer, at kladden er klar til at blive bogført.</span><span class="sxs-lookup"><span data-stu-id="9dc13-155">This checks that the journal is ready to be posted.</span></span> <span data-ttu-id="9dc13-156">Hvis valideringen mislykkes, skal du rette fejlene, før du kan bogføre kladden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-156">If the validation fails you will need to fix the errors before you can post the journal.</span></span>  
+2. <span data-ttu-id="9dc13-157">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9dc13-157">Click OK.</span></span>
+    * <span data-ttu-id="9dc13-158">Når du har klikket på OK, kan du se meddelelsen.</span><span class="sxs-lookup"><span data-stu-id="9dc13-158">After you clicked OK, check the message.</span></span> <span data-ttu-id="9dc13-159">Der bør være en meddelelse om, at kladden er OK.</span><span class="sxs-lookup"><span data-stu-id="9dc13-159">There should be a message saying that the journal is OK.</span></span>  
+3. <span data-ttu-id="9dc13-160">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="9dc13-160">Click Post.</span></span>
+4. <span data-ttu-id="9dc13-161">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9dc13-161">Click OK.</span></span>
+    * <span data-ttu-id="9dc13-162">Når du har klikket på OK, skal du tjekke meddelelseslinjen.</span><span class="sxs-lookup"><span data-stu-id="9dc13-162">After you have clicked OK, check the message bar.</span></span> <span data-ttu-id="9dc13-163">Der bør være en meddelelse om, at handlingen er fuldført.</span><span class="sxs-lookup"><span data-stu-id="9dc13-163">There should be a message saying that the operation completed.</span></span>  
+5. <span data-ttu-id="9dc13-164">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="9dc13-164">Close the page.</span></span>
 
 

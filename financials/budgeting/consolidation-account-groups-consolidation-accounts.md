@@ -18,40 +18,40 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: 3c08e48b22f964c3f643c5ddc4ecd687502d7fda
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: eb69b8def1d0a4fc296ccf44490af6c70591cb7b
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Koncernkontogrupper og yderligere koncernkonti
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a><span data-ttu-id="16b05-103">Koncernkontogrupper og yderligere koncernkonti</span><span class="sxs-lookup"><span data-stu-id="16b05-103">Consolidation account groups and additional consolidation accounts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+<span data-ttu-id="16b05-104">Dette emne indeholder oplysninger om koncernkontogrupper og yderligere af koncernkonti og om, hvordan de bruges i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="16b05-104">This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span>
 
-<a name="consolidation-account-groups"></a>Koncernkontogrupper
+<a name="consolidation-account-groups"></a><span data-ttu-id="16b05-105">Koncernkontogrupper</span><span class="sxs-lookup"><span data-stu-id="16b05-105">Consolidation account groups</span></span>
 ----------------------------
 
-Med koncernkontogrupper kan du oprette grupper af konti, du vil bruge til at konsolidere data. Oftest repræsenterer en koncernkontogruppe en lovpligtig kontoplan eller knytter konti til en gruppe, der er defineret af virksomhedens hovedkontor. Du kan finde koncernkontogrupper i **Opsætning**-området af modulet **Konsolideringer**. Når du tilføjer en ny gruppe, angiver du en entydig identifikator for kontogruppen og et navn.
+<span data-ttu-id="16b05-106">Med koncernkontogrupper kan du oprette grupper af konti, du vil bruge til at konsolidere data.</span><span class="sxs-lookup"><span data-stu-id="16b05-106">Consolidation account groups let you create groups of the accounts that you want to use to consolidate data.</span></span> <span data-ttu-id="16b05-107">Oftest repræsenterer en koncernkontogruppe en lovpligtig kontoplan eller knytter konti til en gruppe, der er defineret af virksomhedens hovedkontor.</span><span class="sxs-lookup"><span data-stu-id="16b05-107">Most often, a consolidation account group represents a government-mandated chart of accounts or maps accounts to a group that is defined by the company's headquarters.</span></span> <span data-ttu-id="16b05-108">Du kan finde koncernkontogrupper i **Opsætning**-området af modulet **Konsolideringer**.</span><span class="sxs-lookup"><span data-stu-id="16b05-108">You can find consolidation account groups in the **Setup** area of the **Consolidations** module.</span></span> <span data-ttu-id="16b05-109">Når du tilføjer en ny gruppe, angiver du en entydig identifikator for kontogruppen og et navn.</span><span class="sxs-lookup"><span data-stu-id="16b05-109">When you add a new group, you enter a unique identifier for the account group and a name.</span></span>
 
-## <a name="additional-consolidation-accounts"></a>Flere koncernkonti
-Med flere koncernkonti kan du tildele en konto fra en eksisterende kontoplan til en koncernkontogruppe. Du kan derefter angive en værdi og et navn til koncernkontoen. 
+## <a name="additional-consolidation-accounts"></a><span data-ttu-id="16b05-110">Flere koncernkonti</span><span class="sxs-lookup"><span data-stu-id="16b05-110">Additional consolidation accounts</span></span>
+<span data-ttu-id="16b05-111">Med flere koncernkonti kan du tildele en konto fra en eksisterende kontoplan til en koncernkontogruppe.</span><span class="sxs-lookup"><span data-stu-id="16b05-111">Additional consolidation accounts let you assign an account from an existing chart of accounts to a consolidation account group.</span></span> <span data-ttu-id="16b05-112">Du kan derefter angive en værdi og et navn til koncernkontoen.</span><span class="sxs-lookup"><span data-stu-id="16b05-112">You can then specify a consolidation account value and name.</span></span> 
 
-Du kan finde flere koncernkonti i **Opsætning**-området af modulet **Konsolideringer**. Når du opretter en ny koncernkonto, skal du angive følgende oplysninger:
+<span data-ttu-id="16b05-113">Du kan finde flere koncernkonti i **Opsætning**-området af modulet **Konsolideringer**.</span><span class="sxs-lookup"><span data-stu-id="16b05-113">You can find additional consolidation accounts in the **Setup** area of the **Consolidations** module.</span></span> <span data-ttu-id="16b05-114">Når du opretter en ny koncernkonto, skal du angive følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="16b05-114">When you create a new consolidation account, you must specify the following information:</span></span>
 
--   **Hovedkonto** – Dette felt er et opslag, der viser alle de hovedkonti, der er baseret på de kontoplaner, som du valgte på siden. Når du vælger en konto, angives navnet automatisk i feltet **Hovedkontonavn**.
--   **Koncernkontogruppe** – Brug dette felt til at angive den gruppe, kontoen skal tildeles til. Hvis du konsoliderer på to forskellige måder, skal du føje den samme konto til alle fire koncernkontogrupper.
--   **Koncernkonto** – Angiv værdien af koncernkontoen. Denne værdi behøver ikke være fra en kontoplan. Det kan være enhver værdi, som du har brug for.
--   **Navn på koncernkonto** – Angiv navnet på kontoen, som det skal vises i forespørgsler og rapporter.
--   **SAT niveau** – Dette felt bruges til at rapportere kontoudtog til de mexicanske myndigheder. 
+-   <span data-ttu-id="16b05-115">**Hovedkonto** – Dette felt er et opslag, der viser alle de hovedkonti, der er baseret på de kontoplaner, som du valgte på siden.</span><span class="sxs-lookup"><span data-stu-id="16b05-115">**Main account** – This field is a lookup that shows all the main accounts that are based on the chart of accounts that you selected on the page.</span></span> <span data-ttu-id="16b05-116">Når du vælger en konto, angives navnet automatisk i feltet **Hovedkontonavn**.</span><span class="sxs-lookup"><span data-stu-id="16b05-116">When you select an account, the name is automatically entered in the **Main account name** field.</span></span>
+-   <span data-ttu-id="16b05-117">**Koncernkontogruppe** – Brug dette felt til at angive den gruppe, kontoen skal tildeles til.</span><span class="sxs-lookup"><span data-stu-id="16b05-117">**Consolidation account group** – Use this field to specify the group to assign the account to.</span></span> <span data-ttu-id="16b05-118">Hvis du konsoliderer på to forskellige måder, skal du føje den samme konto til alle fire koncernkontogrupper.</span><span class="sxs-lookup"><span data-stu-id="16b05-118">If you consolidate in two different ways, you must add the same account to all four consolidation account groups.</span></span>
+-   <span data-ttu-id="16b05-119">**Koncernkonto** – Angiv værdien af koncernkontoen.</span><span class="sxs-lookup"><span data-stu-id="16b05-119">**Consolidation account** – Enter the value of the consolidation account.</span></span> <span data-ttu-id="16b05-120">Denne værdi behøver ikke være fra en kontoplan.</span><span class="sxs-lookup"><span data-stu-id="16b05-120">This value doesn't have to be an account from a chart of accounts.</span></span> <span data-ttu-id="16b05-121">Det kan være enhver værdi, som du har brug for.</span><span class="sxs-lookup"><span data-stu-id="16b05-121">It can be any value that you require.</span></span>
+-   <span data-ttu-id="16b05-122">**Navn på koncernkonto** – Angiv navnet på kontoen, som det skal vises i forespørgsler og rapporter.</span><span class="sxs-lookup"><span data-stu-id="16b05-122">**Consolidation account name** – Enter the name of account as you want it to appear on inquiries and reports.</span></span>
+-   <span data-ttu-id="16b05-123">**SAT niveau** – Dette felt bruges til at rapportere kontoudtog til de mexicanske myndigheder.</span><span class="sxs-lookup"><span data-stu-id="16b05-123">**SAT level** – This field is used to report account statements to the Mexican tax authorities.</span></span> 
 
-Når du har oprettet dine koncernkontogrupper og ekstra koncernkonti, kan du vælge gruppen under onlinekonsolideringsprocessen.
+<span data-ttu-id="16b05-124">Når du har oprettet dine koncernkontogrupper og ekstra koncernkonti, kan du vælge gruppen under onlinekonsolideringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="16b05-124">When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.</span></span>
 
 
-Du kan finde flere oplysninger under [Oprette koncerngrupper og supplerende koncernkonti](../general-ledger/tasks/create-consolidation-groups.md) 
+<span data-ttu-id="16b05-125">Du kan finde flere oplysninger under [Oprette koncerngrupper og supplerende koncernkonti](../general-ledger/tasks/create-consolidation-groups.md)</span><span class="sxs-lookup"><span data-stu-id="16b05-125">For more information, see [Create consolidation groups and additional consolidation accounts](../general-ledger/tasks/create-consolidation-groups.md).</span></span> 
 
 
 

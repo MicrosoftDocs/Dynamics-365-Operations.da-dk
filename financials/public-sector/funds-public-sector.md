@@ -27,86 +27,86 @@ ms.lasthandoff: 08/09/2017
 
 ---
 
-# <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
+# <a name="funds-in-the-public-sector"></a><span data-ttu-id="33814-104">Midler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="33814-104">Funds in the public sector</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
+<span data-ttu-id="33814-105">Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav.</span><span class="sxs-lookup"><span data-stu-id="33814-105">A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements.</span></span> <span data-ttu-id="33814-106">Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.</span><span class="sxs-lookup"><span data-stu-id="33814-106">Public-sector organizations use funds to demonstrate their fiscal accountability.</span></span>
 
-<a name="what-general-ledger-parameters-should-be-set-for-funds"></a>Hvilke Finans-parametre skal angives for midler?
+<a name="what-general-ledger-parameters-should-be-set-for-funds"></a><span data-ttu-id="33814-107">Hvilke Finans-parametre skal angives for midler?</span><span class="sxs-lookup"><span data-stu-id="33814-107">What General ledger parameters should be set for funds?</span></span>
 -------------------------------------------------------
 
-Hvis du vil vide mere om de Finans-parametre, der er nødvendige for midler, skal du se under [Finans i den offentlige sektor](general-ledger-public-sector.md).
+<span data-ttu-id="33814-108">Hvis du vil vide mere om de Finans-parametre, der er nødvendige for midler, skal du se under [Finans i den offentlige sektor](general-ledger-public-sector.md).</span><span class="sxs-lookup"><span data-stu-id="33814-108">To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).</span></span>
 
-## <a name="what-fund-classes-and-fund-types-do-i-need-to-set-up"></a>Hvilke middelklasser og -typer skal jeg angive?
-GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder.  GAAP identificerer otte middeltyper, der er kategoriseret i de tre middelklasser:
+## <a name="what-fund-classes-and-fund-types-do-i-need-to-set-up"></a><span data-ttu-id="33814-109">Hvilke middelklasser og -typer skal jeg angive?</span><span class="sxs-lookup"><span data-stu-id="33814-109">What fund classes and fund types do I need to set up?</span></span>
+<span data-ttu-id="33814-110">GASB (Governmental Accounting Standards Board) anbefaler GAAP (Generally Accepted Accounting Principles) til regnskabsføring for delstater og lokale myndigheder.</span><span class="sxs-lookup"><span data-stu-id="33814-110">The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting.</span></span>  <span data-ttu-id="33814-111">GAAP identificerer otte middeltyper, der er kategoriseret i de tre middelklasser:</span><span class="sxs-lookup"><span data-stu-id="33814-111">The GAAP identifies eight fund types that are categorized under the three fund classes:</span></span>
 
--   Offentlige midler
-    -   Generelle midler
-    -   Særlige indtægtsmidler
-    -   Midler i forbindelse med kapitalprojekter
-    -   Midler i forbindelse med servicing af gæld
--   Beskyttede midler eller forretningsrelaterede midler
-    -   Virksomhedsmidler
-    -   Interne tjenestemidler
--   Fiduciariske midler
-    -   Forvaltningsmidler
-    -   Agenturmidler
+-   <span data-ttu-id="33814-112">Offentlige midler</span><span class="sxs-lookup"><span data-stu-id="33814-112">Governmental funds</span></span>
+    -   <span data-ttu-id="33814-113">Generelle midler</span><span class="sxs-lookup"><span data-stu-id="33814-113">General fund</span></span>
+    -   <span data-ttu-id="33814-114">Særlige indtægtsmidler</span><span class="sxs-lookup"><span data-stu-id="33814-114">Special revenue funds</span></span>
+    -   <span data-ttu-id="33814-115">Midler i forbindelse med kapitalprojekter</span><span class="sxs-lookup"><span data-stu-id="33814-115">Capital project funds</span></span>
+    -   <span data-ttu-id="33814-116">Midler i forbindelse med servicing af gæld</span><span class="sxs-lookup"><span data-stu-id="33814-116">Debt service funds</span></span>
+-   <span data-ttu-id="33814-117">Beskyttede midler eller forretningsrelaterede midler</span><span class="sxs-lookup"><span data-stu-id="33814-117">Proprietary, or business-type, funds</span></span>
+    -   <span data-ttu-id="33814-118">Virksomhedsmidler</span><span class="sxs-lookup"><span data-stu-id="33814-118">Enterprise funds</span></span>
+    -   <span data-ttu-id="33814-119">Interne tjenestemidler</span><span class="sxs-lookup"><span data-stu-id="33814-119">Internal service funds</span></span>
+-   <span data-ttu-id="33814-120">Fiduciariske midler</span><span class="sxs-lookup"><span data-stu-id="33814-120">Fiduciary funds</span></span>
+    -   <span data-ttu-id="33814-121">Forvaltningsmidler</span><span class="sxs-lookup"><span data-stu-id="33814-121">Trust funds</span></span>
+    -   <span data-ttu-id="33814-122">Agenturmidler</span><span class="sxs-lookup"><span data-stu-id="33814-122">Agency funds</span></span>
 
-De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+<span data-ttu-id="33814-123">De tre GAAP middelklasser, plus en **Notat** klasse, er foruddefinerede indstillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="33814-123">The three GAAP fund classes, plus a **Memo** class, are predefined options in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Middeltyper defineres i henhold til organisationens behov. I de fleste tilfælde skal du angive de otte typer af GAAP-midler. Middeltyperne grupperer midler til detaljeret finansiel opfølgning og rapportering. Mange midler kan indgå i en enkelt overordnet rapport, men de enkelte midler forbliver en særskilt finansiel og regnskabsmæssig enhed med sin egen finans, resultatopgørelse og egne balancerapporter. 
+<span data-ttu-id="33814-124">Middeltyper defineres i henhold til organisationens behov.</span><span class="sxs-lookup"><span data-stu-id="33814-124">Fund types are defined according to the needs of the organization.</span></span> <span data-ttu-id="33814-125">I de fleste tilfælde skal du angive de otte typer af GAAP-midler.</span><span class="sxs-lookup"><span data-stu-id="33814-125">In most cases, you’ll set up the eight GAAP fund types.</span></span> <span data-ttu-id="33814-126">Middeltyperne grupperer midler til detaljeret finansiel opfølgning og rapportering.</span><span class="sxs-lookup"><span data-stu-id="33814-126">The fund types group funds for detailed fiscal tracking and reporting.</span></span> <span data-ttu-id="33814-127">Mange midler kan indgå i en enkelt overordnet rapport, men de enkelte midler forbliver en særskilt finansiel og regnskabsmæssig enhed med sin egen finans, resultatopgørelse og egne balancerapporter.</span><span class="sxs-lookup"><span data-stu-id="33814-127">Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports.</span></span> 
 
-Hvert enkelt middel skal have et entydigt middelnummer. I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.
+<span data-ttu-id="33814-128">Hvert enkelt middel skal have et entydigt middelnummer.</span><span class="sxs-lookup"><span data-stu-id="33814-128">Each fund must have a unique fund number.</span></span> <span data-ttu-id="33814-129">I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel.</span><span class="sxs-lookup"><span data-stu-id="33814-129">In Finance and Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund.</span></span> <span data-ttu-id="33814-130">Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.</span><span class="sxs-lookup"><span data-stu-id="33814-130">When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.</span></span>
 
-### <a name="example"></a>Eksempel
+### <a name="example"></a><span data-ttu-id="33814-131">Eksempel</span><span class="sxs-lookup"><span data-stu-id="33814-131">Example</span></span>
 
-Her er en liste over nogle af de midler, der kan bruges af myndighederne i en by:
+<span data-ttu-id="33814-132">Her er en liste over nogle af de midler, der kan bruges af myndighederne i en by:</span><span class="sxs-lookup"><span data-stu-id="33814-132">Here’s a list of some of the funds that might be used by a town government:</span></span>
 
--   Generelt middel
--   School of Technology
--   Informationsteknologi
--   Farmers Market
--   Utilities Commission
--   Fragttjeneste
--   Worker’s Compensation Fund
--   Omfattende medicinordning
--   Udskudt aflønning
--   Opkrævning af lokal moms
--   Domstolsansatte
+-   <span data-ttu-id="33814-133">Generelt middel</span><span class="sxs-lookup"><span data-stu-id="33814-133">General Fund</span></span>
+-   <span data-ttu-id="33814-134">School of Technology</span><span class="sxs-lookup"><span data-stu-id="33814-134">School of Technology</span></span>
+-   <span data-ttu-id="33814-135">Informationsteknologi</span><span class="sxs-lookup"><span data-stu-id="33814-135">Information Technology</span></span>
+-   <span data-ttu-id="33814-136">Farmers Market</span><span class="sxs-lookup"><span data-stu-id="33814-136">Farmers Market</span></span>
+-   <span data-ttu-id="33814-137">Utilities Commission</span><span class="sxs-lookup"><span data-stu-id="33814-137">Utilities Commission</span></span>
+-   <span data-ttu-id="33814-138">Fragttjeneste</span><span class="sxs-lookup"><span data-stu-id="33814-138">Courier Service</span></span>
+-   <span data-ttu-id="33814-139">Worker’s Compensation Fund</span><span class="sxs-lookup"><span data-stu-id="33814-139">Worker’s Compensation Fund</span></span>
+-   <span data-ttu-id="33814-140">Omfattende medicinordning</span><span class="sxs-lookup"><span data-stu-id="33814-140">Comprehensive Major Medical Plan</span></span>
+-   <span data-ttu-id="33814-141">Udskudt aflønning</span><span class="sxs-lookup"><span data-stu-id="33814-141">Deferred Compensation</span></span>
+-   <span data-ttu-id="33814-142">Opkrævning af lokal moms</span><span class="sxs-lookup"><span data-stu-id="33814-142">Local Sales Tax Collections</span></span>
+-   <span data-ttu-id="33814-143">Domstolsansatte</span><span class="sxs-lookup"><span data-stu-id="33814-143">Clerk of Courts</span></span>
 
-Følgende tabel viser disse midler grupperet efter klasse og middeltype.
+<span data-ttu-id="33814-144">Følgende tabel viser disse midler grupperet efter klasse og middeltype.</span><span class="sxs-lookup"><span data-stu-id="33814-144">The following table shows these funds grouped by fund class and fund type.</span></span>
 
 |                |                        |                 |                                  |
 |----------------|------------------------|-----------------|----------------------------------|
-| **Finansieringskildeklasse** | **Finansieringskildetype**          | **Finansieringskildenummer** | **Navn på finansieringskilde**                    |
-| Offentlig   | Generelt middel           | 1103            | Generelt middel                     |
-|                | Særlige indtægtsmidler  | 1343            | School of Technology             |
-|                |                        | 1372            | Informationsteknologi           |
-| Beskyttede    | Virksomhedsmidler       | 2501            | Farmers Market                   |
-|                |                        | 2541            | Utilities Commission             |
-|                | Interne tjenestemidler | 2723            | Fragttjeneste                  |
-|                |                        | 2738            | Worker’s Compensation Fund       |
-| Fiduciariske      | Pension Trust Funds    | 3320            | Omfattende medicinordning |
-|                |                        | 3324            | Udskudt aflønning            |
-|                | Agenturmidler           | 3912            | Opkrævning af lokal moms      |
-|                |                        | 3914            | Domstolsansatte                  |
+| <span data-ttu-id="33814-145">**Finansieringskildeklasse**</span><span class="sxs-lookup"><span data-stu-id="33814-145">**Fund class**</span></span> | <span data-ttu-id="33814-146">**Finansieringskildetype**</span><span class="sxs-lookup"><span data-stu-id="33814-146">**Fund type**</span></span>          | <span data-ttu-id="33814-147">**Finansieringskildenummer**</span><span class="sxs-lookup"><span data-stu-id="33814-147">**Fund number**</span></span> | <span data-ttu-id="33814-148">**Navn på finansieringskilde**</span><span class="sxs-lookup"><span data-stu-id="33814-148">**Fund name**</span></span>                    |
+| <span data-ttu-id="33814-149">Offentlig</span><span class="sxs-lookup"><span data-stu-id="33814-149">Governmental</span></span>   | <span data-ttu-id="33814-150">Generelt middel</span><span class="sxs-lookup"><span data-stu-id="33814-150">General Fund</span></span>           | <span data-ttu-id="33814-151">1103</span><span class="sxs-lookup"><span data-stu-id="33814-151">1103</span></span>            | <span data-ttu-id="33814-152">Generelt middel</span><span class="sxs-lookup"><span data-stu-id="33814-152">General Fund</span></span>                     |
+|                | <span data-ttu-id="33814-153">Særlige indtægtsmidler</span><span class="sxs-lookup"><span data-stu-id="33814-153">Special Revenue Funds</span></span>  | <span data-ttu-id="33814-154">1343</span><span class="sxs-lookup"><span data-stu-id="33814-154">1343</span></span>            | <span data-ttu-id="33814-155">School of Technology</span><span class="sxs-lookup"><span data-stu-id="33814-155">School of Technology</span></span>             |
+|                |                        | <span data-ttu-id="33814-156">1372</span><span class="sxs-lookup"><span data-stu-id="33814-156">1372</span></span>            | <span data-ttu-id="33814-157">Informationsteknologi</span><span class="sxs-lookup"><span data-stu-id="33814-157">Information Technology</span></span>           |
+| <span data-ttu-id="33814-158">Beskyttede</span><span class="sxs-lookup"><span data-stu-id="33814-158">Proprietary</span></span>    | <span data-ttu-id="33814-159">Virksomhedsmidler</span><span class="sxs-lookup"><span data-stu-id="33814-159">Enterprise Funds</span></span>       | <span data-ttu-id="33814-160">2501</span><span class="sxs-lookup"><span data-stu-id="33814-160">2501</span></span>            | <span data-ttu-id="33814-161">Farmers Market</span><span class="sxs-lookup"><span data-stu-id="33814-161">Farmers Market</span></span>                   |
+|                |                        | <span data-ttu-id="33814-162">2541</span><span class="sxs-lookup"><span data-stu-id="33814-162">2541</span></span>            | <span data-ttu-id="33814-163">Utilities Commission</span><span class="sxs-lookup"><span data-stu-id="33814-163">Utilities Commission</span></span>             |
+|                | <span data-ttu-id="33814-164">Interne tjenestemidler</span><span class="sxs-lookup"><span data-stu-id="33814-164">Internal Service Funds</span></span> | <span data-ttu-id="33814-165">2723</span><span class="sxs-lookup"><span data-stu-id="33814-165">2723</span></span>            | <span data-ttu-id="33814-166">Fragttjeneste</span><span class="sxs-lookup"><span data-stu-id="33814-166">Courier Service</span></span>                  |
+|                |                        | <span data-ttu-id="33814-167">2738</span><span class="sxs-lookup"><span data-stu-id="33814-167">2738</span></span>            | <span data-ttu-id="33814-168">Worker’s Compensation Fund</span><span class="sxs-lookup"><span data-stu-id="33814-168">Worker’s Compensation Fund</span></span>       |
+| <span data-ttu-id="33814-169">Fiduciariske</span><span class="sxs-lookup"><span data-stu-id="33814-169">Fiduciary</span></span>      | <span data-ttu-id="33814-170">Pension Trust Funds</span><span class="sxs-lookup"><span data-stu-id="33814-170">Pension Trust Funds</span></span>    | <span data-ttu-id="33814-171">3320</span><span class="sxs-lookup"><span data-stu-id="33814-171">3320</span></span>            | <span data-ttu-id="33814-172">Omfattende medicinordning</span><span class="sxs-lookup"><span data-stu-id="33814-172">Comprehensive Major Medical Plan</span></span> |
+|                |                        | <span data-ttu-id="33814-173">3324</span><span class="sxs-lookup"><span data-stu-id="33814-173">3324</span></span>            | <span data-ttu-id="33814-174">Udskudt aflønning</span><span class="sxs-lookup"><span data-stu-id="33814-174">Deferred Compensation</span></span>            |
+|                | <span data-ttu-id="33814-175">Agenturmidler</span><span class="sxs-lookup"><span data-stu-id="33814-175">Agency Funds</span></span>           | <span data-ttu-id="33814-176">3912</span><span class="sxs-lookup"><span data-stu-id="33814-176">3912</span></span>            | <span data-ttu-id="33814-177">Opkrævning af lokal moms</span><span class="sxs-lookup"><span data-stu-id="33814-177">Local Sales Tax Collections</span></span>      |
+|                |                        | <span data-ttu-id="33814-178">3914</span><span class="sxs-lookup"><span data-stu-id="33814-178">3914</span></span>            | <span data-ttu-id="33814-179">Domstolsansatte</span><span class="sxs-lookup"><span data-stu-id="33814-179">Clerk of Courts</span></span>                  |
 
-## <a name="how-are-financial-dimensions-used-with-funds"></a>Hvordan bruges økonomiske dimensioner med midler?
-Hvert enkelt middel skal have et entydigt middelnummer. I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel. Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel. 
+## <a name="how-are-financial-dimensions-used-with-funds"></a><span data-ttu-id="33814-180">Hvordan bruges økonomiske dimensioner med midler?</span><span class="sxs-lookup"><span data-stu-id="33814-180">How are financial dimensions used with funds?</span></span>
+<span data-ttu-id="33814-181">Hvert enkelt middel skal have et entydigt middelnummer.</span><span class="sxs-lookup"><span data-stu-id="33814-181">Each fund must have a unique fund number.</span></span> <span data-ttu-id="33814-182">I Finance and Operations bruges middeltal som dimensionsværdier i økonomiske kontonumre, hvor en dimension er knyttet til et middel.</span><span class="sxs-lookup"><span data-stu-id="33814-182">In Finance and Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund.</span></span> <span data-ttu-id="33814-183">Når et kontonummer er knyttet til et bestemt middel, tilhører det en række finansielle regnskabsbøger, der er omfattet af dette middel.</span><span class="sxs-lookup"><span data-stu-id="33814-183">When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.</span></span> 
 
-Offentlige organisationer kræver normalt afstemte poster for økonomiske dimensioner, der er relateret til midler. Når en økonomisk dimension eller en kombination af dimensioner er markeret til at kræve afstemte poster, vil systemet ikke bogføre en transaktion, hvor debet ikke svarer til kredit for den økonomiske dimension.
+<span data-ttu-id="33814-184">Offentlige organisationer kræver normalt afstemte poster for økonomiske dimensioner, der er relateret til midler.</span><span class="sxs-lookup"><span data-stu-id="33814-184">Public sector organizations usually require balanced entries for financial dimensions related to funds.</span></span> <span data-ttu-id="33814-185">Når en økonomisk dimension eller en kombination af dimensioner er markeret til at kræve afstemte poster, vil systemet ikke bogføre en transaktion, hvor debet ikke svarer til kredit for den økonomiske dimension.</span><span class="sxs-lookup"><span data-stu-id="33814-185">When a financial dimension or a combination of dimensions is marked to require balanced entries, the system will not post a transaction where debits do not equal credits for the financial dimension.</span></span>
 
-## <a name="how-do-i-set-a-fund-balance-to-carry-over-to-the-new-year"></a>Hvordan indstiller jeg en middelsaldo, som skal overføres til det nye år?
-Hvis du vil vide mere om årsafslutningen for midler, skal du se under [Årsafslutningen i den offentlige sektor](year-end-processing-public-sector.md).
+## <a name="how-do-i-set-a-fund-balance-to-carry-over-to-the-new-year"></a><span data-ttu-id="33814-186">Hvordan indstiller jeg en middelsaldo, som skal overføres til det nye år?</span><span class="sxs-lookup"><span data-stu-id="33814-186">How do I set a fund balance to carry over to the new year?</span></span>
+<span data-ttu-id="33814-187">Hvis du vil vide mere om årsafslutningen for midler, skal du se under [Årsafslutningen i den offentlige sektor](year-end-processing-public-sector.md).</span><span class="sxs-lookup"><span data-stu-id="33814-187">To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).</span></span>
 
 
-Du kan finde flere oplysninger under følgende emner:
+<span data-ttu-id="33814-188">Du kan finde flere oplysninger under følgende emner:</span><span class="sxs-lookup"><span data-stu-id="33814-188">For more information, see the following topics:</span></span>
 
-[Oprettelse af en middeltype](tasks/create-fund-type-public-sector.md)
+[<span data-ttu-id="33814-189">Oprettelse af en middeltype</span><span class="sxs-lookup"><span data-stu-id="33814-189">Create a fund type</span></span>](tasks/create-fund-type-public-sector.md)
 
-[Konfigurere et middel](tasks/set-up-fund-public-sector.md)
+[<span data-ttu-id="33814-190">Konfigurere et middel</span><span class="sxs-lookup"><span data-stu-id="33814-190">Set up a fund</span></span>](tasks/set-up-fund-public-sector.md)
 
 
 

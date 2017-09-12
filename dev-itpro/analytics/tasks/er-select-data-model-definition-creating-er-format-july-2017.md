@@ -16,87 +16,87 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9820888a6ab0b3eafcd4d8c95982900b2719b2ec
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 79e5c09484f9d33106194c2a8b2c9971d58d0e75
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Vælge datamodeldefinition under oprettelse af format til elektronisk rapportering (ER)
+# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a><span data-ttu-id="d20cc-103">Vælge datamodeldefinition under oprettelse af format til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="d20cc-103">Select data model definition while creating format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv. 
+<span data-ttu-id="d20cc-104">For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="d20cc-104">To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active.</span></span> 
 
-Denne fremgangsmåde viser, hvordan rodelementet i en model kan vælges som en datamodeldefinition til indsættelse af en ER-formatkonfiguration, der er designet til at generere elektroniske dokumenter. I denne procedure skal du tilføje en ny ER-formatkonfiguration til eksempelfirmaet Litware Inc. 
+<span data-ttu-id="d20cc-105">Denne fremgangsmåde viser, hvordan rodelementet i en model kan vælges som en datamodeldefinition til indsættelse af en ER-formatkonfiguration, der er designet til at generere elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="d20cc-105">This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents.</span></span> <span data-ttu-id="d20cc-106">I denne procedure skal du tilføje en ny ER-formatkonfiguration til eksempelfirmaet Litware Inc.</span><span class="sxs-lookup"><span data-stu-id="d20cc-106">In this procedure, you will add a new ER format configuration for the sample company Litware, Inc.</span></span> 
 
-Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Trinnene kan udføres ved hjælp af et vilkårligt datasæt.
+<span data-ttu-id="d20cc-107">Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler.</span><span class="sxs-lookup"><span data-stu-id="d20cc-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="d20cc-108">Trinnene kan udføres ved hjælp af et vilkårligt datasæt.</span><span class="sxs-lookup"><span data-stu-id="d20cc-108">The steps can be completed by using any dataset.</span></span>
 
-1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren Opret en konfigurationsudbyder, og markér den som aktiv.  
-2. Klik på Rapporteringskonfigurationer.
+1. <span data-ttu-id="d20cc-109">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="d20cc-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="d20cc-110">Sørg for, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv.</span><span class="sxs-lookup"><span data-stu-id="d20cc-110">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active.</span></span> <span data-ttu-id="d20cc-111">Hvis du ikke kan se denne konfigurationsudbyder, skal du fuldføre trinnene i proceduren Opret en konfigurationsudbyder, og markér den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="d20cc-111">If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.</span></span>  
+2. <span data-ttu-id="d20cc-112">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="d20cc-112">Click Reporting configurations.</span></span>
 
-## <a name="add-a-new-er-data-model-configuration"></a>Tilføj en ny ER-datamodelkonfiguration
-1. Klik på Opret konfiguration for at åbne dialogboksen.
-    * Vi tilføjer en ny ER-modelkonfiguration, der indeholder en datamodel, der skal bruges som datakilde ved oprettelse af ER-rapporter.  
-2. Skriv 'Betalingsmodel (fiktiv)' i feltet Navn.
-    * Betalingsmodel (fiktiv)  
-3. Klik på Opret konfiguration.
-4. Klik på Designer.
-    * Åbn ER-designeren for at angive strukturen af datamodellen i denne konfiguration.  
-    * Antag, at vi udvikler datamodellen for en betalings forretningsdomæne for at understøtte 2 betalingsmetoder – pengeoverførsel og direkte debitering.  
-5. Klik på Ny for at åbne dialogboksen Fjern.
-6. Skriv 'Betalinger – kreditoverførsel' i feltet Navn.
-    * Betalinger – kreditoverførsel  
-7. Klik på Tilføj.
-8. Klik på Ny for at åbne dialogboksen Fjern.
-9. Skriv "Modelrod" i feltet Ny node som felt.
-10. Skriv 'Betalinger – direkte debitering' i feltet Navn.
-    * Betalinger – direkte debitering  
-11. Klik på Tilføj.
-12. Klik på Gem.
-13. Luk siden.
-14. Klik på Skift status.
-    * Fuldfør kladdeversionen af modellen for at gøre den tilgængelig i nye modeltilknytninger og formater.  
-15. Klik på Fuldført.
-16. Klik på OK.
+## <a name="add-a-new-er-data-model-configuration"></a><span data-ttu-id="d20cc-113">Tilføj en ny ER-datamodelkonfiguration</span><span class="sxs-lookup"><span data-stu-id="d20cc-113">Add a new ER data model configuration</span></span>
+1. <span data-ttu-id="d20cc-114">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="d20cc-114">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="d20cc-115">Vi tilføjer en ny ER-modelkonfiguration, der indeholder en datamodel, der skal bruges som datakilde ved oprettelse af ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="d20cc-115">We add a new ER model configuration containing a data model that is designed to be used as data source for generation ER reports.</span></span>  
+2. <span data-ttu-id="d20cc-116">Skriv 'Betalingsmodel (fiktiv)' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d20cc-116">In the Name field, type 'Payment model (fictitious)'.</span></span>
+    * <span data-ttu-id="d20cc-117">Betalingsmodel (fiktiv)</span><span class="sxs-lookup"><span data-stu-id="d20cc-117">Payment model (fictitious)</span></span>  
+3. <span data-ttu-id="d20cc-118">Klik på Opret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d20cc-118">Click Create configuration.</span></span>
+4. <span data-ttu-id="d20cc-119">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="d20cc-119">Click Designer.</span></span>
+    * <span data-ttu-id="d20cc-120">Åbn ER-designeren for at angive strukturen af datamodellen i denne konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d20cc-120">Open the ER designer to specify the structure of data model of this configuration.</span></span>  
+    * <span data-ttu-id="d20cc-121">Antag, at vi udvikler datamodellen for en betalings forretningsdomæne for at understøtte 2 betalingsmetoder – pengeoverførsel og direkte debitering.</span><span class="sxs-lookup"><span data-stu-id="d20cc-121">Assume that we design the data model for payments business domain to support 2 payment methods – credit transfer and direct debit ones.</span></span>  
+5. <span data-ttu-id="d20cc-122">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="d20cc-122">Click New to open the drop dialog.</span></span>
+6. <span data-ttu-id="d20cc-123">Skriv 'Betalinger – kreditoverførsel' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d20cc-123">In the Name field, type 'Payments – credit transfer'.</span></span>
+    * <span data-ttu-id="d20cc-124">Betalinger – kreditoverførsel</span><span class="sxs-lookup"><span data-stu-id="d20cc-124">Payments – credit transfer</span></span>  
+7. <span data-ttu-id="d20cc-125">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="d20cc-125">Click Add.</span></span>
+8. <span data-ttu-id="d20cc-126">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="d20cc-126">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="d20cc-127">Skriv "Modelrod" i feltet Ny node som felt.</span><span class="sxs-lookup"><span data-stu-id="d20cc-127">In the New node as a field, enter 'Model root'.</span></span>
+10. <span data-ttu-id="d20cc-128">Skriv 'Betalinger – direkte debitering' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d20cc-128">In the Name field, type 'Payments – direct debit'.</span></span>
+    * <span data-ttu-id="d20cc-129">Betalinger – direkte debitering</span><span class="sxs-lookup"><span data-stu-id="d20cc-129">Payments – direct debit</span></span>  
+11. <span data-ttu-id="d20cc-130">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="d20cc-130">Click Add.</span></span>
+12. <span data-ttu-id="d20cc-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d20cc-131">Click Save.</span></span>
+13. <span data-ttu-id="d20cc-132">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d20cc-132">Close the page.</span></span>
+14. <span data-ttu-id="d20cc-133">Klik på Skift status.</span><span class="sxs-lookup"><span data-stu-id="d20cc-133">Click Change status.</span></span>
+    * <span data-ttu-id="d20cc-134">Fuldfør kladdeversionen af modellen for at gøre den tilgængelig i nye modeltilknytninger og formater.</span><span class="sxs-lookup"><span data-stu-id="d20cc-134">Complete the draft version of the model to make it available in new model mappings and formats.</span></span>  
+15. <span data-ttu-id="d20cc-135">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="d20cc-135">Click Complete.</span></span>
+16. <span data-ttu-id="d20cc-136">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d20cc-136">Click OK.</span></span>
 
-## <a name="start-to-enter-a-new-er-format-configuration"></a>Begynde at angive en ny ER-formatkonfiguration
-1. Klik på Opret konfiguration for at åbne dialogboksen.
-2. Skriv 'Format baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.
-3. Indtast eller vælg en værdi i feltet Definition af datamodel.
-    * Bemærk, at alle rodelementer i den valgte datamodel aktuelt kan vælges som datamodeldefinition. Du kan fortsætte med at designe dit format ved at bruge et af de krævede rodelementer i datamodellen. En manglende modeltilknytning for det valgte rodelementet forhindrer ikke, at du kan fortsætte.  
-4. Luk siden.
+## <a name="start-to-enter-a-new-er-format-configuration"></a><span data-ttu-id="d20cc-137">Begynde at angive en ny ER-formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="d20cc-137">Start to enter a new ER format configuration</span></span>
+1. <span data-ttu-id="d20cc-138">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="d20cc-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="d20cc-139">Skriv 'Format baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.</span><span class="sxs-lookup"><span data-stu-id="d20cc-139">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="d20cc-140">Indtast eller vælg en værdi i feltet Definition af datamodel.</span><span class="sxs-lookup"><span data-stu-id="d20cc-140">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="d20cc-141">Bemærk, at alle rodelementer i den valgte datamodel aktuelt kan vælges som datamodeldefinition.</span><span class="sxs-lookup"><span data-stu-id="d20cc-141">Note that all root items of the selected data model are currently available for selection as a data model definition.</span></span> <span data-ttu-id="d20cc-142">Du kan fortsætte med at designe dit format ved at bruge et af de krævede rodelementer i datamodellen.</span><span class="sxs-lookup"><span data-stu-id="d20cc-142">You can continue to design your format by using any of the required root items of the data model.</span></span> <span data-ttu-id="d20cc-143">En manglende modeltilknytning for det valgte rodelementet forhindrer ikke, at du kan fortsætte.</span><span class="sxs-lookup"><span data-stu-id="d20cc-143">A missing model mapping for the selected root item doesn't prevent you from continuing.</span></span>  
+4. <span data-ttu-id="d20cc-144">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d20cc-144">Close the page.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Tilføje en ny ER-modeltilknytningskonfiguration
-1. Klik på Opret konfiguration for at åbne dialogboksen.
-2. Skriv 'Modeltilknytning baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.
-3. Skriv 'Betalingsmodeltilknytninger (fiktiv)' i feltet Navn.
-    * Betalingsmodeltilknytninger (fiktive)  
-4. Indtast eller vælg en værdi i feltet Definition af datamodel.
-5. Klik på Opret konfiguration.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="d20cc-145">Tilføje en ny ER-modeltilknytningskonfiguration</span><span class="sxs-lookup"><span data-stu-id="d20cc-145">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="d20cc-146">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="d20cc-146">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="d20cc-147">Skriv 'Modeltilknytning baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.</span><span class="sxs-lookup"><span data-stu-id="d20cc-147">In the New field, enter 'Model Mapping based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="d20cc-148">Skriv 'Betalingsmodeltilknytninger (fiktiv)' i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d20cc-148">In the Name field, type 'Payment model mappings (fictitious)'.</span></span>
+    * <span data-ttu-id="d20cc-149">Betalingsmodeltilknytninger (fiktive)</span><span class="sxs-lookup"><span data-stu-id="d20cc-149">Payment model mappings (fictitious)</span></span>  
+4. <span data-ttu-id="d20cc-150">Indtast eller vælg en værdi i feltet Definition af datamodel.</span><span class="sxs-lookup"><span data-stu-id="d20cc-150">In the Data model definition field, enter or select a value.</span></span>
+5. <span data-ttu-id="d20cc-151">Klik på Opret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d20cc-151">Click Create configuration.</span></span>
 
-## <a name="design-er-model-mappings"></a>Designe ER-modeltilknytninger
-1. Klik på Designer.
-    * Brug ER-designeren til at angive modeltilknytningerne for de krævede rodelementer.  
-2. Klik på Designer.
-    * Simuler indstilling af den valgte modeltilknytning for rodelementet i den valgte model.  
-3. Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.
-4. Klik på Tilføj rod.
-5. Skriv Finans i feltet Navn.
-6. Skriv "LedgerJournalTrans" i feltet Tabel.
-    * LedgerJournalTrans  
-7. Klik på OK.
-8. Klik på Gem.
-9. Luk siden.
-10. Luk siden.
+## <a name="design-er-model-mappings"></a><span data-ttu-id="d20cc-152">Designe ER-modeltilknytninger</span><span class="sxs-lookup"><span data-stu-id="d20cc-152">Design ER model mappings</span></span>
+1. <span data-ttu-id="d20cc-153">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="d20cc-153">Click Designer.</span></span>
+    * <span data-ttu-id="d20cc-154">Brug ER-designeren til at angive modeltilknytningerne for de krævede rodelementer.</span><span class="sxs-lookup"><span data-stu-id="d20cc-154">Use the ER designer to specify the model mappings for the required root items.</span></span>  
+2. <span data-ttu-id="d20cc-155">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="d20cc-155">Click Designer.</span></span>
+    * <span data-ttu-id="d20cc-156">Simuler indstilling af den valgte modeltilknytning for rodelementet i den valgte model.</span><span class="sxs-lookup"><span data-stu-id="d20cc-156">Simulate setting of selected model mapping for the selected model’s root item.</span></span>  
+3. <span data-ttu-id="d20cc-157">Vælg 'Dynamics 365 for Operations\Tabelposter' i træet.</span><span class="sxs-lookup"><span data-stu-id="d20cc-157">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+4. <span data-ttu-id="d20cc-158">Klik på Tilføj rod.</span><span class="sxs-lookup"><span data-stu-id="d20cc-158">Click Add root.</span></span>
+5. <span data-ttu-id="d20cc-159">Skriv Finans i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="d20cc-159">In the Name field, type 'Ledger'.</span></span>
+6. <span data-ttu-id="d20cc-160">Skriv "LedgerJournalTrans" i feltet Tabel.</span><span class="sxs-lookup"><span data-stu-id="d20cc-160">In the Table field, type 'LedgerJournalTrans'.</span></span>
+    * <span data-ttu-id="d20cc-161">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="d20cc-161">LedgerJournalTrans</span></span>  
+7. <span data-ttu-id="d20cc-162">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="d20cc-162">Click OK.</span></span>
+8. <span data-ttu-id="d20cc-163">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="d20cc-163">Click Save.</span></span>
+9. <span data-ttu-id="d20cc-164">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d20cc-164">Close the page.</span></span>
+10. <span data-ttu-id="d20cc-165">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d20cc-165">Close the page.</span></span>
 
-## <a name="start-to-enter-another-new-er-format-configuration"></a>Begynde at angive en anden ny ER-formatkonfiguration
-1. Vælg 'Betalingsmodel (fiktiv)' i træet.
-2. Klik på Opret konfiguration for at åbne dialogboksen.
-3. Skriv 'Format baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.
-4. Indtast eller vælg en værdi i feltet Definition af datamodel.
-    * Bemærk, at der nu kun findes ét rodelementet, som kan tilknyttes programdatakilderne. Når der introduceres mindst én modeltilknytning, er det kun modellens rodelementer, som er knyttet til programdatakilder, der kan vælges som modeldefinition, mens ER-formatet er tilføjet.   
-5. Luk siden.
+## <a name="start-to-enter-another-new-er-format-configuration"></a><span data-ttu-id="d20cc-166">Begynde at angive en anden ny ER-formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="d20cc-166">Start to enter another new ER format configuration</span></span>
+1. <span data-ttu-id="d20cc-167">Vælg 'Betalingsmodel (fiktiv)' i træet.</span><span class="sxs-lookup"><span data-stu-id="d20cc-167">In the tree, select 'Payment model (fictitious)'.</span></span>
+2. <span data-ttu-id="d20cc-168">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="d20cc-168">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="d20cc-169">Skriv 'Format baseret på datamodel af typen Betalingsmodel (fiktiv)' i feltet Ny.</span><span class="sxs-lookup"><span data-stu-id="d20cc-169">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+4. <span data-ttu-id="d20cc-170">Indtast eller vælg en værdi i feltet Definition af datamodel.</span><span class="sxs-lookup"><span data-stu-id="d20cc-170">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="d20cc-171">Bemærk, at der nu kun findes ét rodelementet, som kan tilknyttes programdatakilderne.</span><span class="sxs-lookup"><span data-stu-id="d20cc-171">Note that now only one root item is available to map to the application data sources.</span></span> <span data-ttu-id="d20cc-172">Når der introduceres mindst én modeltilknytning, er det kun modellens rodelementer, som er knyttet til programdatakilder, der kan vælges som modeldefinition, mens ER-formatet er tilføjet.</span><span class="sxs-lookup"><span data-stu-id="d20cc-172">When at least one model mapping is introduced, only the model’s root items that are mapped to application data sources can be selected as a model definition while the ER format is added.</span></span>   
+5. <span data-ttu-id="d20cc-173">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="d20cc-173">Close the page.</span></span>
 
 

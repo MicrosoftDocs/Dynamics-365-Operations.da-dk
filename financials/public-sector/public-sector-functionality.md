@@ -20,60 +20,60 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7a12c9678e60ab10d4693f1d9d20b77e31b7d84b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 6cebb7f13522c9a34db759735d0ef2c424d0714b
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="public-sector-home-page"></a>Startside for offentlig sektor
+# <a name="public-sector-home-page"></a><span data-ttu-id="5c9f4-103">Startside for offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-103">Public sector home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor. 
+<span data-ttu-id="5c9f4-104">Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-104">Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks.</span></span> 
 
-Brug følgende funktion til den offentlige sektor for at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentlige myndigheder. De berørte forretningsprocesser omfatter: 
+<span data-ttu-id="5c9f4-105">Brug følgende funktion til den offentlige sektor for at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentlige myndigheder.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-105">Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public.</span></span> <span data-ttu-id="5c9f4-106">De berørte forretningsprocesser omfatter:</span><span class="sxs-lookup"><span data-stu-id="5c9f4-106">The business processes affected include:</span></span> 
 
--   Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.
--   Foreløbige budgetter, fordelinger og forpligtelser.
--   Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.
--   Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.
--   Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.
+-   <span data-ttu-id="5c9f4-107">Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-107">Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.</span></span>
+-   <span data-ttu-id="5c9f4-108">Foreløbige budgetter, fordelinger og forpligtelser.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-108">Preliminary budgets, apportionments, and commitments.</span></span>
+-   <span data-ttu-id="5c9f4-109">Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-109">Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.</span></span>
+-   <span data-ttu-id="5c9f4-110">Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-110">General ledger year-end processing, which includes encumbrances and commitments on purchase orders.</span></span>
+-   <span data-ttu-id="5c9f4-111">Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-111">Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.</span></span>
 
- Du kan finde flere oplysninger under følgende emner:
+ <span data-ttu-id="5c9f4-112">Du kan finde flere oplysninger under følgende emner:</span><span class="sxs-lookup"><span data-stu-id="5c9f4-112">For more information, see the following topics:</span></span>
 
--   [Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)
--   [Kreditorer i den offentlige sektor](accounts-payable-public-sector.md)
--   [Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
--   [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
--   [Anlægsaktiver i den offentlige sektor](fixed-asset-public-sector.md)
--   [Franske lovmæssige funktioner](../localizations/emea-fra-public-sector-accounting.md)
--   [Finans i den offentlige sektor](general-ledger-public-sector.md)
--   [Indkøb og forsyning i den offentlige sektor](procurement-sourcing-public-sector.md)
--   [Sikkerhedsroller i den offentlige sektor](security-roles-public-sector.md)
+-   [<span data-ttu-id="5c9f4-113">Planlægning af funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-113">Planning for Public sector functionality</span></span>](plan-public-sector-functionality.md)
+-   [<span data-ttu-id="5c9f4-114">Kreditorer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-114">Accounts payable in the Public sector</span></span>](accounts-payable-public-sector.md)
+-   [<span data-ttu-id="5c9f4-115">Debitorer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-115">Accounts receivable in the Public sector</span></span>](accounts-receivable-public-sector.md)
+-   [<span data-ttu-id="5c9f4-116">Budgetlægning i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-116">Budgeting in the Public sector</span></span>](budgeting-public-sector.md)
+-   [<span data-ttu-id="5c9f4-117">Anlægsaktiver i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-117">Fixed assets in the Public sector</span></span>](fixed-asset-public-sector.md)
+-   [<span data-ttu-id="5c9f4-118">Franske lovmæssige funktioner</span><span class="sxs-lookup"><span data-stu-id="5c9f4-118">French regulatory features</span></span>](../localizations/emea-fra-public-sector-accounting.md)
+-   [<span data-ttu-id="5c9f4-119">Finans i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-119">General ledger in the Public sector</span></span>](general-ledger-public-sector.md)
+-   [<span data-ttu-id="5c9f4-120">Indkøb og forsyning i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-120">Procurement and sourcing in the Public sector</span></span>](procurement-sourcing-public-sector.md)
+-   [<span data-ttu-id="5c9f4-121">Sikkerhedsroller i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-121">Security roles in the Public sector</span></span>](security-roles-public-sector.md)
 
-\* Gælder kun, hvis organisationen er i Frankrig.
+<span data-ttu-id="5c9f4-122">\* Gælder kun, hvis organisationen er i Frankrig.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-122">\* Applicable only if your organization is in France.</span></span>
 
-## <a name="why-do-i-need-the-public-sector-configuration-key"></a>Hvorfor skal jeg bruge konfigurationsnøglen for offentlig sektor?
-Den **offentlige sektors** konfigurationsnøgle aktiverer sider og kontrolelementer, som supplerer kerneapps. Du kan aktivere eller deaktivere denne nøgle på siden **Licenskonfiguration**.
+## <a name="why-do-i-need-the-public-sector-configuration-key"></a><span data-ttu-id="5c9f4-123">Hvorfor skal jeg bruge konfigurationsnøglen for offentlig sektor?</span><span class="sxs-lookup"><span data-stu-id="5c9f4-123">Why do I need the Public sector configuration key?</span></span>
+<span data-ttu-id="5c9f4-124">Den **offentlige sektors** konfigurationsnøgle aktiverer sider og kontrolelementer, som supplerer kerneapps.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-124">The **Public sector** configuration key enables pages and controls that supplement the core apps .</span></span> <span data-ttu-id="5c9f4-125">Du kan aktivere eller deaktivere denne nøgle på siden **Licenskonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-125">You can enable or disable this key on the **License configuration** page.</span></span>
 
-## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>Hvordan er den offentlige sektors konfigurationsnøgle relateret til andre konfigurationsnøgler?
-Følgende tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er relateret til andre konfigurationsnøgler.
+## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a><span data-ttu-id="5c9f4-126">Hvordan er den offentlige sektors konfigurationsnøgle relateret til andre konfigurationsnøgler?</span><span class="sxs-lookup"><span data-stu-id="5c9f4-126">How does the Public sector configuration key relate to other configuration keys?</span></span>
+<span data-ttu-id="5c9f4-127">Følgende tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er relateret til andre konfigurationsnøgler.</span><span class="sxs-lookup"><span data-stu-id="5c9f4-127">The following table provides information about how this configuration key relates to other configuration keys.</span></span>
 
 |            |                                                                                                                                                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detalje** | **Beskrivelse**                                                                                                                                                                                                     |
-| Overordnet nøgle | Ingen                                                                                                                                                                                                                |
-| Underordnede nøgler | **Avanceret finanspost**-konfigurationsnøgle (AdvancedLedgerEntry) **Offentlig sektor 1099G**-konfigurationsnøgle (Tax1099G) **Offentlig sektor 1099S**-konfigurationsnøgle (Tax1099S) **Franske myndighedskrav**-konfigurationsnøgle |
+| <span data-ttu-id="5c9f4-128">**Detalje**</span><span class="sxs-lookup"><span data-stu-id="5c9f4-128">**Detail**</span></span> | <span data-ttu-id="5c9f4-129">**Beskrivelse**</span><span class="sxs-lookup"><span data-stu-id="5c9f4-129">**Description**</span></span>                                                                                                                                                                                                     |
+| <span data-ttu-id="5c9f4-130">Overordnet nøgle</span><span class="sxs-lookup"><span data-stu-id="5c9f4-130">Parent key</span></span> | <span data-ttu-id="5c9f4-131">Ingen</span><span class="sxs-lookup"><span data-stu-id="5c9f4-131">None</span></span>                                                                                                                                                                                                                |
+| <span data-ttu-id="5c9f4-132">Underordnede nøgler</span><span class="sxs-lookup"><span data-stu-id="5c9f4-132">Child keys</span></span> | <span data-ttu-id="5c9f4-133">**Avanceret finanspost**-konfigurationsnøgle (AdvancedLedgerEntry) **Offentlig sektor 1099G**-konfigurationsnøgle (Tax1099G) **Offentlig sektor 1099S**-konfigurationsnøgle (Tax1099S) **Franske myndighedskrav**-konfigurationsnøgle</span><span class="sxs-lookup"><span data-stu-id="5c9f4-133">**Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key</span></span> |
 
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="5c9f4-134">Se også</span><span class="sxs-lookup"><span data-stu-id="5c9f4-134">See also</span></span>
 --------
 
-[Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)
+[<span data-ttu-id="5c9f4-135">Planlægning af funktioner til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5c9f4-135">Planning for public sector functionality</span></span>](plan-public-sector-functionality.md)
 
 
 

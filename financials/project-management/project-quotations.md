@@ -19,28 +19,28 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0906a1600d4bf097a27cabff4d3b51e50f986631
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 9e8f56c8ee0567d4fd5820462583b79316d44c4b
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="project-quotations"></a>Projekttilbud
+# <a name="project-quotations"></a><span data-ttu-id="4c79e-104">Projekttilbud</span><span class="sxs-lookup"><span data-stu-id="4c79e-104">Project quotations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel introducerer begrebet projekttilbud, som du kan bruge til at oprette et attraktivt tilbud til en kunde som første trin i projektfasen. Et projekttilbud kan omfatte varer og tjenester, der gives tilbud på, grundlæggende kontaktoplysninger, særlige samhandelsaftaler og rabatter samt eventuelle skatter og tillæg. 
+<span data-ttu-id="4c79e-105">Denne artikel introducerer begrebet projekttilbud, som du kan bruge til at oprette et attraktivt tilbud til en kunde som første trin i projektfasen.</span><span class="sxs-lookup"><span data-stu-id="4c79e-105">This article introduces the concept of project quotations, which you can use to make an attractive offer to a customer as the first step of the project phase.</span></span> <span data-ttu-id="4c79e-106">Et projekttilbud kan omfatte varer og tjenester, der gives tilbud på, grundlæggende kontaktoplysninger, særlige samhandelsaftaler og rabatter samt eventuelle skatter og tillæg.</span><span class="sxs-lookup"><span data-stu-id="4c79e-106">A project quotation might include the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges.</span></span> 
 
-Muligheden for at overvåge, gennemgå og styre projekttilbud og ordrer er en vigtig del af projektstyringen. Forskellige funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan hjælpe med disse opgaver. Værktøjer som f.eks. korrekte referencedatadefinitioner (tilbudstyper, tilbudsoprindelse, prognose og sandsynlighed) giver dig mulighed for at analysere pipeline. Du kan bruge disse værktøjer til at kategorisere årsagerne til, at et projekttilbud blev vundet eller tabt, og til at fastslå den potentielle værdi af tilbuddet. 
+<span data-ttu-id="4c79e-107">Muligheden for at overvåge, gennemgå og styre projekttilbud og ordrer er en vigtig del af projektstyringen.</span><span class="sxs-lookup"><span data-stu-id="4c79e-107">The ability to monitor, review, and control the pipeline of project quotations and orders is an important part of project management.</span></span> <span data-ttu-id="4c79e-108">Forskellige funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan hjælpe med disse opgaver.</span><span class="sxs-lookup"><span data-stu-id="4c79e-108">Various tools in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition can help with these tasks.</span></span> <span data-ttu-id="4c79e-109">Værktøjer som f.eks. korrekte referencedatadefinitioner (tilbudstyper, tilbudsoprindelse, prognose og sandsynlighed) giver dig mulighed for at analysere pipeline.</span><span class="sxs-lookup"><span data-stu-id="4c79e-109">For example, correct reference data definitions (quotation types, quotation origin, and prognosis and probability) help you analyze the pipeline.</span></span> <span data-ttu-id="4c79e-110">Du kan bruge disse værktøjer til at kategorisere årsagerne til, at et projekttilbud blev vundet eller tabt, og til at fastslå den potentielle værdi af tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="4c79e-110">You can use these tools to categorize the reasons why a project quotation was won or lost, and to determine the potential value of a quotation.</span></span> 
 
-I et projekttilbud skal du angive servicer, generelle kontaktoplysninger, særlige samhandelsaftaler og rabatter samt estimerede skatter og tillæg for projektet. Du kan også vælge aktiviteterne eller opgaverne for et projekt og oprette et hierarki over opgaver og underopgaver. For hver aktivitet kan du angive oplysninger om tidsmålingen og varigheden af aktiviteten og om de færdigheder og erfaringer, der kræves for arbejdere, der udfører aktiviteten. 
+<span data-ttu-id="4c79e-111">I et projekttilbud skal du angive servicer, generelle kontaktoplysninger, særlige samhandelsaftaler og rabatter samt estimerede skatter og tillæg for projektet.</span><span class="sxs-lookup"><span data-stu-id="4c79e-111">In a project quotation, you enter the services, basic contact information, special trade agreements and discounts, and estimated taxes and surcharges for a project.</span></span> <span data-ttu-id="4c79e-112">Du kan også vælge aktiviteterne eller opgaverne for et projekt og oprette et hierarki over opgaver og underopgaver.</span><span class="sxs-lookup"><span data-stu-id="4c79e-112">You can also select the activities or tasks for a project, and create a hierarchy of tasks and subtasks.</span></span> <span data-ttu-id="4c79e-113">For hver aktivitet kan du angive oplysninger om tidsmålingen og varigheden af aktiviteten og om de færdigheder og erfaringer, der kræves for arbejdere, der udfører aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="4c79e-113">For each activity, you can enter details about the timing and duration of the activity, and about the skills and experience that are required for workers who perform the activity.</span></span> 
 
-Projekttilbuddet er en ikke-bindende vurdering af arbejdet, der skal udføres. Når oplysningerne i tilbuddet er kopieret til et projekt, der er knyttet til en projektkontrakt, bliver disse oplysninger imidlertid en del af en bindende aftale mellem to parter. 
+<span data-ttu-id="4c79e-114">Projekttilbuddet er en ikke-bindende vurdering af arbejdet, der skal udføres.</span><span class="sxs-lookup"><span data-stu-id="4c79e-114">The project quotation is a non-binding estimate of the work that must be performed.</span></span> <span data-ttu-id="4c79e-115">Når oplysningerne i tilbuddet er kopieret til et projekt, der er knyttet til en projektkontrakt, bliver disse oplysninger imidlertid en del af en bindende aftale mellem to parter.</span><span class="sxs-lookup"><span data-stu-id="4c79e-115">However, when the information in the quotation is copied to a project that is associated with a project contract, that information becomes part of a binding agreement between two parties.</span></span> 
 
-Hvis kunden godkender projekttilbuddet, kan du kopiere oplysningerne i projekttilbuddet til et projekt. Du kan også kopiere oplysninger om projekttilbuddet til en projektprognose samtidigt.
+<span data-ttu-id="4c79e-116">Hvis kunden godkender projekttilbuddet, kan du kopiere oplysningerne i projekttilbuddet til et projekt.</span><span class="sxs-lookup"><span data-stu-id="4c79e-116">If the customer approves the project quotation, you can copy the information in the project quotation to a project.</span></span> <span data-ttu-id="4c79e-117">Du kan også kopiere oplysninger om projekttilbuddet til en projektprognose samtidigt.</span><span class="sxs-lookup"><span data-stu-id="4c79e-117">You can also copy the project quotation information to a project forecast at the same time.</span></span>
 
 
 

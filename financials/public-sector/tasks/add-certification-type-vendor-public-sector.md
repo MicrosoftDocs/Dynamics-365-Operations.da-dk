@@ -17,30 +17,30 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 1c6f16d58e3db1e8877aa15ea2ca969c1be14b9e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 078c1dcb22e385bc658befcdf81497f567bef494
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a>Tilføje en certificeringstype til en kreditor i den offentlige sektor
+# <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a><span data-ttu-id="ff881-103">Tilføje en certificeringstype til en kreditor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="ff881-103">Add a certification type to a vendor in the public sector</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
+<span data-ttu-id="ff881-104">Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne.</span><span class="sxs-lookup"><span data-stu-id="ff881-104">You can create and assign to vendors any type of certification that they may hold.</span></span> <span data-ttu-id="ff881-105">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="ff881-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. Gå til Indkøb og forsyning > Kreditorer > Alle kreditorer.
-2. Find og vælg den ønskede post på listen.
-3. Klik på Kreditor i handlingsruden.
-4. Klik på Certificeringer.
-5. Klik på Ny.
-6. Klik på rullelisten i feltet Certificering for at åbne opslaget.
-7. Find og vælg den ønskede post på listen.
-8. Skriv en værdi i feltet Certificeringsnummer.
-9. Klik på rullelisten i feltet Certificeringsorganisation for at åbne opslaget.
-10. Find og vælg den ønskede post på listen.
-11. Klik på Vælg.
-    * Fuldfør detaljerne.   
-12. Klik på Gem.
+1. <span data-ttu-id="ff881-106">Gå til Indkøb og forsyning > Kreditorer > Alle kreditorer.</span><span class="sxs-lookup"><span data-stu-id="ff881-106">Go to Procurement and sourcing > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="ff881-107">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff881-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ff881-108">Klik på Kreditor i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ff881-108">On the Action Pane, click Vendor.</span></span>
+4. <span data-ttu-id="ff881-109">Klik på Certificeringer.</span><span class="sxs-lookup"><span data-stu-id="ff881-109">Click Certifications.</span></span>
+5. <span data-ttu-id="ff881-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ff881-110">Click New.</span></span>
+6. <span data-ttu-id="ff881-111">Klik på rullelisten i feltet Certificering for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ff881-111">In the Certification type field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="ff881-112">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff881-112">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="ff881-113">Skriv en værdi i feltet Certificeringsnummer.</span><span class="sxs-lookup"><span data-stu-id="ff881-113">In the Certification number field, type a value.</span></span>
+9. <span data-ttu-id="ff881-114">Klik på rullelisten i feltet Certificeringsorganisation for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="ff881-114">In the Certifying organization field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="ff881-115">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff881-115">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="ff881-116">Klik på Vælg.</span><span class="sxs-lookup"><span data-stu-id="ff881-116">Click Select.</span></span>
+    * <span data-ttu-id="ff881-117">Fuldfør detaljerne.</span><span class="sxs-lookup"><span data-stu-id="ff881-117">Complete the details.</span></span>   
+12. <span data-ttu-id="ff881-118">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="ff881-118">Click Save.</span></span>
 
 

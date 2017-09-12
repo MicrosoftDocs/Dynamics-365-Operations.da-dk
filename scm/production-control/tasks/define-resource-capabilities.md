@@ -17,35 +17,35 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4a7d342eeb16fd76f2dde58151bfc7973de76e2d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 99c230c0e6a580f77d863b6f0be298615966c479
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-resource-capabilities"></a>Definere ressourceegenskaber
+# <a name="define-resource-capabilities"></a><span data-ttu-id="05c42-103">Definere ressourceegenskaber</span><span class="sxs-lookup"><span data-stu-id="05c42-103">Define resource capabilities</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ressourceegenskaber beskriver, hvad operationsressourcer kan gøre. Under planlægningen sammenlignes krav i hvert enkelt job og handling med egenskaberne hos de tilgængelige ressourcer. Denne opgaveguide hjælper dig med at oprette en ressourceegenskab og tildele den til en ressource. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
+<span data-ttu-id="05c42-104">Ressourceegenskaber beskriver, hvad operationsressourcer kan gøre.</span><span class="sxs-lookup"><span data-stu-id="05c42-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="05c42-105">Under planlægningen sammenlignes krav i hvert enkelt job og handling med egenskaberne hos de tilgængelige ressourcer.</span><span class="sxs-lookup"><span data-stu-id="05c42-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="05c42-106">Denne opgaveguide hjælper dig med at oprette en ressourceegenskab og tildele den til en ressource.</span><span class="sxs-lookup"><span data-stu-id="05c42-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="05c42-107">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="05c42-107">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-resource-capability"></a>Opret en ny ressourceegenskab.
-1. Gå til Ressourceegenskaber.
-2. Klik på Ny.
-3. Skriv id'et for ressourcens egenskab i feltet Egenskab.
-    * For en given operation kan du bruge egenskabs-id'et til at angive, at ressourcerne skal have denne egenskab for at udføre handlingen.  
-4. Skriv en beskrivelse af egenskaben i feltet Beskrivelse.
+## <a name="create-a-resource-capability"></a><span data-ttu-id="05c42-108">Opret en ny ressourceegenskab.</span><span class="sxs-lookup"><span data-stu-id="05c42-108">Create a resource capability</span></span>
+1. <span data-ttu-id="05c42-109">Gå til Ressourceegenskaber.</span><span class="sxs-lookup"><span data-stu-id="05c42-109">Go to Resource capabilities.</span></span>
+2. <span data-ttu-id="05c42-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="05c42-110">Click New.</span></span>
+3. <span data-ttu-id="05c42-111">Skriv id'et for ressourcens egenskab i feltet Egenskab.</span><span class="sxs-lookup"><span data-stu-id="05c42-111">In the Capability field, type the ID of the resource capability.</span></span>
+    * <span data-ttu-id="05c42-112">For en given operation kan du bruge egenskabs-id'et til at angive, at ressourcerne skal have denne egenskab for at udføre handlingen.</span><span class="sxs-lookup"><span data-stu-id="05c42-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
+4. <span data-ttu-id="05c42-113">Skriv en beskrivelse af egenskaben i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="05c42-113">In the Description field, enter a description of the capability.</span></span>
 
-## <a name="assign-capability-to-a-resource"></a>Tildel egenskab til en ressource
-1. Klik på Tilføj.
-2. Skriv id'et for ressourcen i feltet Ressource.
-    * En ressourceegenskab kan tildeles til en eller flere ressourcer.  
-3. Angiv en dato i feltet Udløb.
-    * Du kan bruge dette felt til at angive, at en ressource kun har egenskaben i et begrænset tidsrum.  
-4. Angiv et tal i feltet Prioritet.
-    * Når du planlægger opgaver og operationer, kan du angive, om du vil vælge ressourcer efter prioritet. Hvis du vælger at gøre dette, og mere end én ressource kan udføre jobbet eller handlingen inden den ønskede dato, vælges ressourcen med den laveste prioritet med hensyn til den nødvendige egenskab.  
-5. Angiv et tal i feltet Niveau.
-    * Når du angiver, at et job eller en handling kræver en bestemt egenskab, kan du også angive det krævede minimumsniveau. Brug egenskabsniveauet til at skelne mellem ressourcer, der kan udføre det samme job, men ved forskellige hastigheder, styrke, omfang og så videre.  
+## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="05c42-114">Tildel egenskab til en ressource</span><span class="sxs-lookup"><span data-stu-id="05c42-114">Assign capability to a resource</span></span>
+1. <span data-ttu-id="05c42-115">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="05c42-115">Click Add.</span></span>
+2. <span data-ttu-id="05c42-116">Skriv id'et for ressourcen i feltet Ressource.</span><span class="sxs-lookup"><span data-stu-id="05c42-116">In the Resource field, type the ID of the resource.</span></span>
+    * <span data-ttu-id="05c42-117">En ressourceegenskab kan tildeles til en eller flere ressourcer.</span><span class="sxs-lookup"><span data-stu-id="05c42-117">A resource capability can be assigned to one or more resources.</span></span>  
+3. <span data-ttu-id="05c42-118">Angiv en dato i feltet Udløb.</span><span class="sxs-lookup"><span data-stu-id="05c42-118">In the Expiration field, enter a date.</span></span>
+    * <span data-ttu-id="05c42-119">Du kan bruge dette felt til at angive, at en ressource kun har egenskaben i et begrænset tidsrum.</span><span class="sxs-lookup"><span data-stu-id="05c42-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
+4. <span data-ttu-id="05c42-120">Angiv et tal i feltet Prioritet.</span><span class="sxs-lookup"><span data-stu-id="05c42-120">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="05c42-121">Når du planlægger opgaver og operationer, kan du angive, om du vil vælge ressourcer efter prioritet.</span><span class="sxs-lookup"><span data-stu-id="05c42-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="05c42-122">Hvis du vælger at gøre dette, og mere end én ressource kan udføre jobbet eller handlingen inden den ønskede dato, vælges ressourcen med den laveste prioritet med hensyn til den nødvendige egenskab.</span><span class="sxs-lookup"><span data-stu-id="05c42-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
+5. <span data-ttu-id="05c42-123">Angiv et tal i feltet Niveau.</span><span class="sxs-lookup"><span data-stu-id="05c42-123">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="05c42-124">Når du angiver, at et job eller en handling kræver en bestemt egenskab, kan du også angive det krævede minimumsniveau.</span><span class="sxs-lookup"><span data-stu-id="05c42-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="05c42-125">Brug egenskabsniveauet til at skelne mellem ressourcer, der kan udføre det samme job, men ved forskellige hastigheder, styrke, omfang og så videre.</span><span class="sxs-lookup"><span data-stu-id="05c42-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
 
 

@@ -16,33 +16,33 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1984a303af844f63ab393675d809e04b78ac857f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 27ac6a4783eba148bcdd462bc8aa360691f67a06
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-a-fixed-asset-group"></a>Ændre en anlægsaktivgruppe
+# <a name="change-a-fixed-asset-group"></a><span data-ttu-id="6ec34-103">Ændre en anlægsaktivgruppe</span><span class="sxs-lookup"><span data-stu-id="6ec34-103">Change a fixed asset group</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Anlægsaktiver skal tilknyttes den korrekte anlægsaktivgruppe. Anlægsaktivgruppen bruges, når du:
+<span data-ttu-id="6ec34-104">Anlægsaktiver skal tilknyttes den korrekte anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="6ec34-104">Fixed assets should be assigned to the correct fixed assets group.</span></span> <span data-ttu-id="6ec34-105">Anlægsaktivgruppen bruges, når du:</span><span class="sxs-lookup"><span data-stu-id="6ec34-105">The fixed assets group is used when you:</span></span>
 
- - Oprette forespørgsler og rapporter
+ - <span data-ttu-id="6ec34-106">Oprette forespørgsler og rapporter</span><span class="sxs-lookup"><span data-stu-id="6ec34-106">Create inquiries and reports</span></span>
 
- - Opretter nye anlægsaktiver.
+ - <span data-ttu-id="6ec34-107">Opretter nye anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="6ec34-107">Set up new fixed assets</span></span>
 
- - Integrerer finanskonti og bogføring af anlægsaktivposter til de relevante finanskonti
+ - <span data-ttu-id="6ec34-108">Integrerer finanskonti og bogføring af anlægsaktivposter til de relevante finanskonti</span><span class="sxs-lookup"><span data-stu-id="6ec34-108">Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts</span></span>
 
-Denne guide anvender demofirmaet USMF.
+<span data-ttu-id="6ec34-109">Denne guide anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="6ec34-109">This guide uses the USMF demo company.</span></span>
 
-1. Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.
-2. Væld det anlægsaktiv, du vil ændre anlægsaktivgruppen for.
-3. Klik på Skift anlægsaktivgruppe.
-4. Indtast eller vælg en værdi i feltet Ny gruppe.
-5. Vælg denne indstilling for at tildele et anlægsaktivnummer til det valgte anlægsaktiv.
-    * Feltet Nummer på anlægsaktiv er tilgængeligt, hvis du vælger indstillingen Nyt nummer på anlægsaktivet.   Hvis der er konfigureret automatisk nummerering for anlægsaktiver, viser feltet det næste tilgængelige anlægsaktivnummer. Du kan ændre nummeret.   Hvis der er defineret manuel nummerering, er feltet tomt og du skal angive det nye anlægsaktivnummer.     
-6. Klik på OK.
-7. Klik på Ja.
+1. <span data-ttu-id="6ec34-110">Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="6ec34-110">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="6ec34-111">Væld det anlægsaktiv, du vil ændre anlægsaktivgruppen for.</span><span class="sxs-lookup"><span data-stu-id="6ec34-111">Select the fixed asset you would like to change the fixed asset group on.</span></span>
+3. <span data-ttu-id="6ec34-112">Klik på Skift anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="6ec34-112">Click Change fixed asset group.</span></span>
+4. <span data-ttu-id="6ec34-113">Indtast eller vælg en værdi i feltet Ny gruppe.</span><span class="sxs-lookup"><span data-stu-id="6ec34-113">In the New group field, enter or select a value.</span></span>
+5. <span data-ttu-id="6ec34-114">Vælg denne indstilling for at tildele et anlægsaktivnummer til det valgte anlægsaktiv.</span><span class="sxs-lookup"><span data-stu-id="6ec34-114">Select this option to assign a fixed asset number to the selected fixed asset.</span></span>
+    * <span data-ttu-id="6ec34-115">Feltet Nummer på anlægsaktiv er tilgængeligt, hvis du vælger indstillingen Nyt nummer på anlægsaktivet.</span><span class="sxs-lookup"><span data-stu-id="6ec34-115">The Fixed asset number field is available if you select the New fixed asset number option.</span></span>   <span data-ttu-id="6ec34-116">Hvis der er konfigureret automatisk nummerering for anlægsaktiver, viser feltet det næste tilgængelige anlægsaktivnummer.</span><span class="sxs-lookup"><span data-stu-id="6ec34-116">If automatic numbering is set up for fixed assets, this field shows the next available fixed asset number.</span></span> <span data-ttu-id="6ec34-117">Du kan ændre nummeret.</span><span class="sxs-lookup"><span data-stu-id="6ec34-117">You can change the number.</span></span>   <span data-ttu-id="6ec34-118">Hvis der er defineret manuel nummerering, er feltet tomt og du skal angive det nye anlægsaktivnummer.</span><span class="sxs-lookup"><span data-stu-id="6ec34-118">If manual numbering is set up, this field is blank and you must enter the new fixed asset number.</span></span>     
+6. <span data-ttu-id="6ec34-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="6ec34-119">Click OK.</span></span>
+7. <span data-ttu-id="6ec34-120">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="6ec34-120">Click Yes.</span></span>
 
 

@@ -20,26 +20,26 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 49db5ad10914897b2157e123c5803ca51e4e66e7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 55c77c5c41b83c6b9d3e04e1e0c6382f23831502
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurere appfeltnavne i lagerstedsappen
+# <a name="configure-app-field-names-in-warehousing-app"></a><span data-ttu-id="8fb93-103">Konfigurere appfeltnavne i lagerstedsappen</span><span class="sxs-lookup"><span data-stu-id="8fb93-103">Configure app field names in Warehousing app</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Finance and Operations. 
+<span data-ttu-id="8fb93-104">I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og prioriteter i lagerstedsapp i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="8fb93-104">This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations.</span></span> 
 
-**Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Finance and Operations - Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Finance and Operations - Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Finance and Operations - Lagersted i selvstudiet [Installere og konfigurere Finance and Operations - Lagersted](install-configure-warehousing-app.md).
+<span data-ttu-id="8fb93-105">**Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="8fb93-105">**Note:** This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="8fb93-106">Det gælder ikke for funktioner i Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="8fb93-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="8fb93-107">Finance and Operations - Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="8fb93-107">Finance and Operations - Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="8fb93-108">Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene.</span><span class="sxs-lookup"><span data-stu-id="8fb93-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="8fb93-109">I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Finance and Operations - Lagersted.</span><span class="sxs-lookup"><span data-stu-id="8fb93-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Finance and Operations - Warehousing.</span></span> <span data-ttu-id="8fb93-110">Du kan finde flere oplysninger om at konfigurere forbindelsen til Finance and Operations - Lagersted i selvstudiet [Installere og konfigurere Finance and Operations - Lagersted](install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="8fb93-110">For detailed information about how to configure the connection to Finance and Operations  - Warehousing, refer to the tutorial [Install and configure Finance and Operations - Warehousing](install-configure-warehousing-app.md).</span></span>
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
+<a name="configure-warehouse-app-field-names"></a><span data-ttu-id="8fb93-111">Konfigurere feltnavne for lagerstedsapp</span><span class="sxs-lookup"><span data-stu-id="8fb93-111">Configure warehouse app field names</span></span>
 ===================================
 
-Når du bruger Finance and Operations - Lagersted på din mobilenhed, kan du konfigurere, hvordan metadata skal vises på din enhed på siden **Feltnavne for lagerstedsapp**. I et nyt regnskab i Finance and Operations skal du vælge **Opret standardopsætning** for at oprette alle de feltnavne, der skal bruges i arbejdsprocesser på mobilenheden til lagerstedet, og derefter tildele dem en foretrukken inputtilstand og inputtype. Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.
+<span data-ttu-id="8fb93-112">Når du bruger Finance and Operations - Lagersted på din mobilenhed, kan du konfigurere, hvordan metadata skal vises på din enhed på siden **Feltnavne for lagerstedsapp**.</span><span class="sxs-lookup"><span data-stu-id="8fb93-112">When you use Finance and Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="8fb93-113">I et nyt regnskab i Finance and Operations skal du vælge **Opret standardopsætning** for at oprette alle de feltnavne, der skal bruges i arbejdsprocesser på mobilenheden til lagerstedet, og derefter tildele dem en foretrukken inputtilstand og inputtype.</span><span class="sxs-lookup"><span data-stu-id="8fb93-113">In a new company in Finance and Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="8fb93-114">Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.</span><span class="sxs-lookup"><span data-stu-id="8fb93-114">After you have generated all field names, you can select the following input options.</span></span>
 
 <table>
 <colgroup>
@@ -48,32 +48,32 @@ Når du bruger Finance and Operations - Lagersted på din mobilenhed, kan du kon
 </colgroup>
 <thead>
 <tr class="header">
-<th>Indstilling</th>
-<th>Betegnelse</th>
+<th><span data-ttu-id="8fb93-115">Indstilling</span><span class="sxs-lookup"><span data-stu-id="8fb93-115">Option</span></span></th>
+<th><span data-ttu-id="8fb93-116">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="8fb93-116">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Foretrukket inputtilstand</td>
-<td>Denne indstilling angiver, om et scanningsfelt eller et inputfelt til manuel indtastning skal vises for det valgte feltnavn. Det er nyttigt at skelne mellem felterne ud fra, om der bruges stregkoder til feltet. <strong>Bemærk:</strong> For feltnavne, hvor den foretrukne inputtilstand er indstillet til <strong>Scanning</strong>, kan du angive oplysningerne manuelt, hvis stregkoden er ikke kan læses eller er beskadiget.</td>
+<td><span data-ttu-id="8fb93-117">Foretrukket inputtilstand</span><span class="sxs-lookup"><span data-stu-id="8fb93-117">Preferred input mode</span></span></td>
+<td><span data-ttu-id="8fb93-118">Denne indstilling angiver, om et scanningsfelt eller et inputfelt til manuel indtastning skal vises for det valgte feltnavn.</span><span class="sxs-lookup"><span data-stu-id="8fb93-118">This option defines whether a scanning field or a manual entry input field should be shown for the selected field name.</span></span> <span data-ttu-id="8fb93-119">Det er nyttigt at skelne mellem felterne ud fra, om der bruges stregkoder til feltet.</span><span class="sxs-lookup"><span data-stu-id="8fb93-119">This is useful to distinguish fields depending on if barcodes are used for the field.</span></span> <span data-ttu-id="8fb93-120"><strong>Bemærk:</strong> For feltnavne, hvor den foretrukne inputtilstand er indstillet til <strong>Scanning</strong>, kan du angive oplysningerne manuelt, hvis stregkoden er ikke kan læses eller er beskadiget.</span><span class="sxs-lookup"><span data-stu-id="8fb93-120"><strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</span></span></td>
 </tr>
 <tr class="even">
-<td>Inputtype</td>
-<td>Denne indstilling definerer, hvilke inputtype der skal bruges til navnet på det valgte felt. Der er fire valgmuligheder:
+<td><span data-ttu-id="8fb93-121">Inputtype</span><span class="sxs-lookup"><span data-stu-id="8fb93-121">Input type</span></span></td>
+<td><span data-ttu-id="8fb93-122">Denne indstilling definerer, hvilke inputtype der skal bruges til navnet på det valgte felt.</span><span class="sxs-lookup"><span data-stu-id="8fb93-122">This option defines what input type should be used for the selected field name.</span></span> <span data-ttu-id="8fb93-123">Der er fire valgmuligheder:</span><span class="sxs-lookup"><span data-stu-id="8fb93-123">Four options are available:</span></span>
 <ul>
-<li><strong>Valg</strong> - Indeholder en liste over indstillinger at vælge imellem. Feltnavne med denne indstilling kan ikke redigeres.</li>
-<li><strong>Dato</strong> - Feltnavne, der er angivet som dato, viser et datoformat i etiketten. Dette hjælper lagermedarbejdere med at se, hvilket format datoen skal indtastes i. Feltnavne med denne indstilling kan ikke redigeres.</li>
-<li><strong>Alfa</strong> - Hvis denne indstilling er valg, bruges tastaturet, når du indtaster oplysninger i programmet manuelt. Tastaturoplevelsen kan ændres, afhængigt af hvilken enhed der bruges.</li>
-<li><strong>Numerisk</strong> - Til feltnavne, der kun bruger numerisk input, kan du vælge denne indstilling for at få vist et brugerdefineret numerisk tastatur med inputfelt i stedet for tastaturet på enheden.</li>
+<li><span data-ttu-id="8fb93-124"><strong>Valg</strong> - Indeholder en liste over indstillinger at vælge imellem.</span><span class="sxs-lookup"><span data-stu-id="8fb93-124"><strong>Selection</strong> - Contains a list of options to choose from.</span></span> <span data-ttu-id="8fb93-125">Feltnavne med denne indstilling kan ikke redigeres.</span><span class="sxs-lookup"><span data-stu-id="8fb93-125">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="8fb93-126"><strong>Dato</strong> - Feltnavne, der er angivet som dato, viser et datoformat i etiketten.</span><span class="sxs-lookup"><span data-stu-id="8fb93-126"><strong>Date</strong> - Field names specified as date will show a date format with the label.</span></span> <span data-ttu-id="8fb93-127">Dette hjælper lagermedarbejdere med at se, hvilket format datoen skal indtastes i.</span><span class="sxs-lookup"><span data-stu-id="8fb93-127">This helps warehouse workers see in which format to enter the date.</span></span> <span data-ttu-id="8fb93-128">Feltnavne med denne indstilling kan ikke redigeres.</span><span class="sxs-lookup"><span data-stu-id="8fb93-128">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="8fb93-129"><strong>Alfa</strong> - Hvis denne indstilling er valg, bruges tastaturet, når du indtaster oplysninger i programmet manuelt.</span><span class="sxs-lookup"><span data-stu-id="8fb93-129"><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app.</span></span> <span data-ttu-id="8fb93-130">Tastaturoplevelsen kan ændres, afhængigt af hvilken enhed der bruges.</span><span class="sxs-lookup"><span data-stu-id="8fb93-130">The keyboard experience can be changed depending on which device is used.</span></span></li>
+<li><span data-ttu-id="8fb93-131"><strong>Numerisk</strong> - Til feltnavne, der kun bruger numerisk input, kan du vælge denne indstilling for at få vist et brugerdefineret numerisk tastatur med inputfelt i stedet for tastaturet på enheden.</span><span class="sxs-lookup"><span data-stu-id="8fb93-131"><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurere feltprioritet for lagerstedsapp
+<a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="8fb93-132">Konfigurere feltprioritet for lagerstedsapp</span><span class="sxs-lookup"><span data-stu-id="8fb93-132">Configure warehouse app field priority</span></span>
 ======================================
 
-På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forskellige prioriterede grupper. Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden for hovedopgaven, når lagermedarbejderne udfører opgaver ved hjælp af programmet. Hvis du klikker på **Opret standardopsætning**, oprettes et standardsæt af prioriterede grupper. Det er muligt at oprette så mange prioriterede grupper som ønsket, men kun tre prioriterede grupper vil blive vist på opgavesiden. Når Finance and Operations sender metadata til programmet, tildeler det hvert felt en relativ prioritet afhængigt af dets prioriterede gruppe, og appen viser de tre første højt prioriterede grupper, der er indeholdt i metadataene på opgavesiden. Resten af overløbsmetadataene vises på en side med sekundære oplysninger. Følgende tabel viser et eksempel på fem prioriterede grupper.
+<span data-ttu-id="8fb93-133">På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forskellige prioriterede grupper.</span><span class="sxs-lookup"><span data-stu-id="8fb93-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="8fb93-134">Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden for hovedopgaven, når lagermedarbejderne udfører opgaver ved hjælp af programmet.</span><span class="sxs-lookup"><span data-stu-id="8fb93-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="8fb93-135">Hvis du klikker på **Opret standardopsætning**, oprettes et standardsæt af prioriterede grupper.</span><span class="sxs-lookup"><span data-stu-id="8fb93-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="8fb93-136">Det er muligt at oprette så mange prioriterede grupper som ønsket, men kun tre prioriterede grupper vil blive vist på opgavesiden.</span><span class="sxs-lookup"><span data-stu-id="8fb93-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="8fb93-137">Når Finance and Operations sender metadata til programmet, tildeler det hvert felt en relativ prioritet afhængigt af dets prioriterede gruppe, og appen viser de tre første højt prioriterede grupper, der er indeholdt i metadataene på opgavesiden.</span><span class="sxs-lookup"><span data-stu-id="8fb93-137">When Finance and Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="8fb93-138">Resten af overløbsmetadataene vises på en side med sekundære oplysninger.</span><span class="sxs-lookup"><span data-stu-id="8fb93-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="8fb93-139">Følgende tabel viser et eksempel på fem prioriterede grupper.</span><span class="sxs-lookup"><span data-stu-id="8fb93-139">The following table shows an example of five priority groups.</span></span>
 
 <table>
 <colgroup>
@@ -82,71 +82,71 @@ På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forsk
 </colgroup>
 <thead>
 <tr class="header">
-<th>Prioritetsgruppe</th>
-<th>Tildelte felter</th>
+<th><span data-ttu-id="8fb93-140">Prioritetsgruppe</span><span class="sxs-lookup"><span data-stu-id="8fb93-140">Priority group</span></span></th>
+<th><span data-ttu-id="8fb93-141">Tildelte felter</span><span class="sxs-lookup"><span data-stu-id="8fb93-141">Assigned fields</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td> Prioritet 10</td>
+<td> <span data-ttu-id="8fb93-142">Prioritet 10</span><span class="sxs-lookup"><span data-stu-id="8fb93-142">Priority 10</span></span></td>
 <td><ul>
-<li>Post</li>
-<li>Mængde</li>
-<li>Måleenhed</li>
+<li><span data-ttu-id="8fb93-143">Post</span><span class="sxs-lookup"><span data-stu-id="8fb93-143">Item</span></span></li>
+<li><span data-ttu-id="8fb93-144">Mængde</span><span class="sxs-lookup"><span data-stu-id="8fb93-144">Quantity</span></span></li>
+<li><span data-ttu-id="8fb93-145">Måleenhed</span><span class="sxs-lookup"><span data-stu-id="8fb93-145">Unit of measure</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> Prioritet 20</td>
+<td> <span data-ttu-id="8fb93-146">Prioritet 20</span><span class="sxs-lookup"><span data-stu-id="8fb93-146">Priority 20</span></span></td>
 <td><ul>
-<li>Klyngeplacering</li>
-<li>Klynge</li>
+<li><span data-ttu-id="8fb93-147">Klyngeplacering</span><span class="sxs-lookup"><span data-stu-id="8fb93-147">Cluster position</span></span></li>
+<li><span data-ttu-id="8fb93-148">Klynge</span><span class="sxs-lookup"><span data-stu-id="8fb93-148">Cluster</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> Prioritet 30</td>
+<td> <span data-ttu-id="8fb93-149">Prioritet 30</span><span class="sxs-lookup"><span data-stu-id="8fb93-149">Priority 30</span></span></td>
 <td><ul>
-<li>Varebeskrivelse</li>
+<li><span data-ttu-id="8fb93-150">Varebeskrivelse</span><span class="sxs-lookup"><span data-stu-id="8fb93-150">Item description</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> Prioritet 40</td>
+<td> <span data-ttu-id="8fb93-151">Prioritet 40</span><span class="sxs-lookup"><span data-stu-id="8fb93-151">Priority 40</span></span></td>
 <td><ul>
-<li>Variantkonfiguration</li>
-<li>Farve</li>
-<li>Størrelse</li>
-<li>Skabelon</li>
+<li><span data-ttu-id="8fb93-152">Variantkonfiguration</span><span class="sxs-lookup"><span data-stu-id="8fb93-152">Configuration</span></span></li>
+<li><span data-ttu-id="8fb93-153">Farve</span><span class="sxs-lookup"><span data-stu-id="8fb93-153">Color</span></span></li>
+<li><span data-ttu-id="8fb93-154">Størrelse</span><span class="sxs-lookup"><span data-stu-id="8fb93-154">Size</span></span></li>
+<li><span data-ttu-id="8fb93-155">Skabelon</span><span class="sxs-lookup"><span data-stu-id="8fb93-155">Style</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> Prioritet 50</td>
+<td> <span data-ttu-id="8fb93-156">Prioritet 50</span><span class="sxs-lookup"><span data-stu-id="8fb93-156">Priority 50</span></span></td>
 <td><ul>
-<li>Placering</li>
-<li>Nummerplade</li>
+<li><span data-ttu-id="8fb93-157">Placering</span><span class="sxs-lookup"><span data-stu-id="8fb93-157">Location</span></span></li>
+<li><span data-ttu-id="8fb93-158">Nummerplade</span><span class="sxs-lookup"><span data-stu-id="8fb93-158">License plate</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-For eksempel når en lagermedarbejder udfører en opgave på en mobilenhed, hvis de metadata, der bliver vist i appen, består af følgende felter:
+<span data-ttu-id="8fb93-159">For eksempel når en lagermedarbejder udfører en opgave på en mobilenhed, hvis de metadata, der bliver vist i appen, består af følgende felter:</span><span class="sxs-lookup"><span data-stu-id="8fb93-159">For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:</span></span>
 
--   Post
--   Mængde
--   Måleenhed
--   Varebeskrivelse
--   Størrelse og sted
+-   <span data-ttu-id="8fb93-160">Post</span><span class="sxs-lookup"><span data-stu-id="8fb93-160">Item</span></span>
+-   <span data-ttu-id="8fb93-161">Mængde</span><span class="sxs-lookup"><span data-stu-id="8fb93-161">Quantity</span></span>
+-   <span data-ttu-id="8fb93-162">Måleenhed</span><span class="sxs-lookup"><span data-stu-id="8fb93-162">Unit of measure</span></span>
+-   <span data-ttu-id="8fb93-163">Varebeskrivelse</span><span class="sxs-lookup"><span data-stu-id="8fb93-163">Item description</span></span>
+-   <span data-ttu-id="8fb93-164">Størrelse og sted</span><span class="sxs-lookup"><span data-stu-id="8fb93-164">Size and Location</span></span>
 
-Baseret på den feltprioritet i lagerstedsappen, der er angivet i ovenstående tabel, vises følgende 3 rækker af oplysninger på opgavesiden:
+<span data-ttu-id="8fb93-165">Baseret på den feltprioritet i lagerstedsappen, der er angivet i ovenstående tabel, vises følgende 3 rækker af oplysninger på opgavesiden:</span><span class="sxs-lookup"><span data-stu-id="8fb93-165">Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:</span></span>
 
--   Række 1: Vare, Antal, Måleenhed
--   Række 2: Beskrivelse af varen
--   Række 3: Størrelse
+-   <span data-ttu-id="8fb93-166">Række 1: Vare, Antal, Måleenhed</span><span class="sxs-lookup"><span data-stu-id="8fb93-166">Row 1: Item, Quantity, Unit of measure</span></span>
+-   <span data-ttu-id="8fb93-167">Række 2: Beskrivelse af varen</span><span class="sxs-lookup"><span data-stu-id="8fb93-167">Row 2: Item description</span></span>
+-   <span data-ttu-id="8fb93-168">Række 3: Størrelse</span><span class="sxs-lookup"><span data-stu-id="8fb93-168">Row 3: Size</span></span>
 
-De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises på en side med oplysninger. Hvis du vil vide mere og se eksempler på brugergrænsefladen, kan du se i blogindlægget [Præsentation af Finance and Operations - Lagersted](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+<span data-ttu-id="8fb93-169">De resterende metadata, f.eks. placering, vises ikke på opgavesiden, men vises på en side med oplysninger.</span><span class="sxs-lookup"><span data-stu-id="8fb93-169">The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page.</span></span> <span data-ttu-id="8fb93-170">Hvis du vil vide mere og se eksempler på brugergrænsefladen, kan du se i blogindlægget [Præsentation af Finance and Operations - Lagersted](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span><span class="sxs-lookup"><span data-stu-id="8fb93-170">To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="8fb93-171">Se også</span><span class="sxs-lookup"><span data-stu-id="8fb93-171">See also</span></span>
 --------
 
-[Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lagersted](install-configure-warehousing-app.md)
+[<span data-ttu-id="8fb93-172">Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lagersted</span><span class="sxs-lookup"><span data-stu-id="8fb93-172">Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing</span></span>](install-configure-warehousing-app.md)
 
 
 

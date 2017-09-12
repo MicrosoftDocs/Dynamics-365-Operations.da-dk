@@ -15,28 +15,28 @@ ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3c6d817424be79b09ccdd89deb7f31599fe9bf5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 13ad43cc77731727525aae1edc4d405c166acbc1
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade"></a>Opgradering for enkelt bilag og værdiregulering af valuta
+# <a name="single-voucher-and-currency-revaluation-upgrade"></a><span data-ttu-id="a5edb-104">Opgradering for enkelt bilag og værdiregulering af valuta</span><span class="sxs-lookup"><span data-stu-id="a5edb-104">Single voucher and currency revaluation upgrade</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Nogle organisationer angiver kladder, der indeholder et enkelt bilag, der har mere end én debitor eller kreditor, og de kører også processen til værdiregulering af udenlandsk valuta for debitorer eller kreditorer. I dette emne beskrives den fremgangsmåde, som disse organisationer skal følge, når de opgraderer til Microsoft Dynamics 365 Operations version 1611.
+<span data-ttu-id="a5edb-105">Nogle organisationer angiver kladder, der indeholder et enkelt bilag, der har mere end én debitor eller kreditor, og de kører også processen til værdiregulering af udenlandsk valuta for debitorer eller kreditorer.</span><span class="sxs-lookup"><span data-stu-id="a5edb-105">Some organizations enter journals that contain a single voucher that has more than one customer or vendor, and they also run the Accounts receivable or Accounts payable foreign currency revaluation process.</span></span> <span data-ttu-id="a5edb-106">I dette emne beskrives den fremgangsmåde, som disse organisationer skal følge, når de opgraderer til Microsoft Dynamics 365 Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="a5edb-106">This topic describes the steps that these organizations should follow when they upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-Følg disse trin, når du opgraderer til Microsoft Dynamics 365 for Operations version 1611.
+<span data-ttu-id="a5edb-107">Følg disse trin, når du opgraderer til Microsoft Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="a5edb-107">Follow these steps when you upgrade to Microsoft Dynamics 365 for Operations version 1611.</span></span>
 
-1.  Før du opgraderer til Dynamics 365 for Operations, skal du køre processerne til værdiregulering af udenlandsk valuta for debitorer og kreditorer. Angiv feltet **Metode** til **Fakturadato**. Der oprettes en værdireguleringspostering, der tilbagefører den sidste værdiregulering af udenlandsk valuta. Derfor værdiansættes de åbne posteringer til deres oprindelige regnskabsvaluta.
-2.  Opgrader til Dynamics 365 for Operations version 1611.
-3.  Kør processerne til værdiregulering af udenlandsk valuta for debitorer og kreditorer igen. Denne gang skal feltet **Metode** angives til **Standard**. Der oprettes en ny værdireguleringspostering, der er baseret på de aktuelle valutakurser. Denne transaktion registrerer urealiseret gevinst eller tab og den korrekte samlefinanskonto.
+1.  <span data-ttu-id="a5edb-108">Før du opgraderer til Dynamics 365 for Operations, skal du køre processerne til værdiregulering af udenlandsk valuta for debitorer og kreditorer.</span><span class="sxs-lookup"><span data-stu-id="a5edb-108">Before you upgrade to Dynamics 365 for Operations, run the foreign currency revaluation processes for Accounts receivable and Accounts payable.</span></span> <span data-ttu-id="a5edb-109">Angiv feltet **Metode** til **Fakturadato**.</span><span class="sxs-lookup"><span data-stu-id="a5edb-109">Set the **Method** field to **Invoice date**.</span></span> <span data-ttu-id="a5edb-110">Der oprettes en værdireguleringspostering, der tilbagefører den sidste værdiregulering af udenlandsk valuta.</span><span class="sxs-lookup"><span data-stu-id="a5edb-110">A revaluation transaction is created that reverses the last foreign currency revaluation.</span></span> <span data-ttu-id="a5edb-111">Derfor værdiansættes de åbne posteringer til deres oprindelige regnskabsvaluta.</span><span class="sxs-lookup"><span data-stu-id="a5edb-111">Therefore, the open transactions are valued at their original accounting currency.</span></span>
+2.  <span data-ttu-id="a5edb-112">Opgrader til Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="a5edb-112">Upgrade to Dynamics 365 for Operations version 1611.</span></span>
+3.  <span data-ttu-id="a5edb-113">Kør processerne til værdiregulering af udenlandsk valuta for debitorer og kreditorer igen.</span><span class="sxs-lookup"><span data-stu-id="a5edb-113">Run the Accounts receivable and Accounts payable foreign currency revaluation processes again.</span></span> <span data-ttu-id="a5edb-114">Denne gang skal feltet **Metode** angives til **Standard**.</span><span class="sxs-lookup"><span data-stu-id="a5edb-114">This time, set the **Method** field to **Standard**.</span></span> <span data-ttu-id="a5edb-115">Der oprettes en ny værdireguleringspostering, der er baseret på de aktuelle valutakurser.</span><span class="sxs-lookup"><span data-stu-id="a5edb-115">A new revaluation transaction is created that is based on the current exchange rates.</span></span> <span data-ttu-id="a5edb-116">Denne transaktion registrerer urealiseret gevinst eller tab og den korrekte samlefinanskonto.</span><span class="sxs-lookup"><span data-stu-id="a5edb-116">This transaction records the unrealized gain/loss and the correct summary ledger account.</span></span>
 
 
 

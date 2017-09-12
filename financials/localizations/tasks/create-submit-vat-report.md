@@ -16,29 +16,29 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 55cd78ab21085330685ea654b9c408152900362e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 298dc0fbed97a66c85508669b15025d0ad2b176b
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-submit-vat-report"></a>Oprette og sende en momsrapport
+# <a name="create-and-submit-vat-report"></a><span data-ttu-id="895f5-103">Oprette og sende en momsrapport</span><span class="sxs-lookup"><span data-stu-id="895f5-103">Create and submit VAT report</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure fører dig igennem oprettelse og indsendelse af momsrapporten til de tyske myndigheder.
+<span data-ttu-id="895f5-104">Denne procedure fører dig igennem oprettelse og indsendelse af momsrapporten til de tyske myndigheder.</span><span class="sxs-lookup"><span data-stu-id="895f5-104">This procedure walks you through creating and submitting the VAT report to German authority.</span></span>
 
-Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF. 
+<span data-ttu-id="895f5-105">Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="895f5-105">This procedure was created using the demo data company DEMF.</span></span> 
 
-Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Tyskland
+<span data-ttu-id="895f5-106">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Tyskland</span><span class="sxs-lookup"><span data-stu-id="895f5-106">This functionality is available for legal entities whose primary address is in Germany.</span></span>
 
 
 
-1. Gå til Skat > Erklæringer > Moms > Rapporter moms for afregningsperioden.
-2. Indtast eller vælg en værdi i feltet Afregningsperiode.
-3. Indtast en dato i feltet Fra dato.
-4. Klik på OK.
-5. Vælg Ja i feltet Opret elektronisk momsdokument.
-6. Klik på OK.
+1. <span data-ttu-id="895f5-107">Gå til Skat > Erklæringer > Moms > Rapporter moms for afregningsperioden.</span><span class="sxs-lookup"><span data-stu-id="895f5-107">Go to Tax > Declarations > Sales tax > Report sales tax for settlement period.</span></span>
+2. <span data-ttu-id="895f5-108">Indtast eller vælg en værdi i feltet Afregningsperiode.</span><span class="sxs-lookup"><span data-stu-id="895f5-108">In the Settlement period field, enter or select a value.</span></span>
+3. <span data-ttu-id="895f5-109">Indtast en dato i feltet Fra dato.</span><span class="sxs-lookup"><span data-stu-id="895f5-109">In the From date field, enter a date.</span></span>
+4. <span data-ttu-id="895f5-110">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="895f5-110">Click OK.</span></span>
+5. <span data-ttu-id="895f5-111">Vælg Ja i feltet Opret elektronisk momsdokument.</span><span class="sxs-lookup"><span data-stu-id="895f5-111">Select Yes in the Create electronic tax document field.</span></span>
+6. <span data-ttu-id="895f5-112">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="895f5-112">Click OK.</span></span>
 
 

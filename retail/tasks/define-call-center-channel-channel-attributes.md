@@ -16,88 +16,88 @@ ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 45972e6eed9ea73ed37dcf6e45c6c866d94c7174
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c3d2f6785b9054ede7ea96ebd48c5d1f23e510e7
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-call-center-channel-and-channel-attributes"></a> Definere callcenter-kanal og kanalattributter
+# <a name="define-call-center-channel-and-channel-attributes"></a><span data-ttu-id="1d353-103"> Definere callcenter-kanal og kanalattributter</span><span class="sxs-lookup"><span data-stu-id="1d353-103">Define call center channel and channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne procedure gennemgår oprettelse af en ny detailkanal og definition af kanalattributter. Det demodatafirma, der bruges til at oprette denne opgave, er USRT. Denne procedure er beregnet til Retail IT-rollen.
+<span data-ttu-id="1d353-104">Denne procedure gennemgår oprettelse af en ny detailkanal og definition af kanalattributter.</span><span class="sxs-lookup"><span data-stu-id="1d353-104">This procedure walks through creating a new retail channel and defining channel attributes.</span></span> <span data-ttu-id="1d353-105">Det demodatafirma, der bruges til at oprette denne opgave, er USRT.</span><span class="sxs-lookup"><span data-stu-id="1d353-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="1d353-106">Denne procedure er beregnet til Retail IT-rollen.</span><span class="sxs-lookup"><span data-stu-id="1d353-106">This procedure is intended for the Retail IT role.</span></span>
 
 
-## <a name="create-new-store"></a>Opret ny butik
-1. Gå til Alle arbejdsområder > Installation af kanal.
-2. Klik på Ny kanal.
-3. Klik på Butik.
-4. Skriv en værdi i feltet Navn.
-5. Skriv en værdi i feltet Butiksnummer.
-6. Klik på rullelisten i feltet Lagersted for at åbne opslaget.
-7. Find og vælg den ønskede post på listen.
-8. Klik op linket i den valgte række på listen.
-9. Vælg en indstilling i feltet Lagertidszone.
-10. Klik på rullelisten i feltet Kanalprofil for at åbne opslaget.
-11. Klik op linket i den valgte række på listen.
-12. Klik på rullelisten i feltet Sprog for at åbne opslaget.
-13. Find og vælg den ønskede post på listen.
-14. Klik op linket i den valgte række på listen.
-15. Klik på rullelisten i feltet Momsgruppe for at åbne opslaget.
-16. Find og vælg den ønskede post på listen.
-17. Klik op linket i den valgte række på listen.
-18. Klik på rullelisten i feltet Kundeadressekartotek for at åbne opslaget.
-    * Vælg det adressekartotek, der bruges til at knytte kunder til denne butik.  
-19. Find og vælg den ønskede post på listen.
-20. Klik op linket i den valgte række på listen.
-21. Klik på Vælg.
-22. Klik på rullelisten i feltet Medarbejderadressekartotek for at åbne opslaget.
-    * Vælg det adressekartotek, der bruges til at knytte kasserer til denne kanal.  
-23. Find og vælg den ønskede post på listen.
-24. Klik op linket i den valgte række på listen.
-25. Klik på Vælg.
-26. Klik på rullelisten i feltet Standardkunde for at åbne opslaget.
-27. Klik op linket i den valgte række på listen.
-28. Udvis eller skjul sektionen Skærmlayout.
-29. Klik på rullelisten i feltet Skærmlayout-id for at åbne opslaget.
-    * Vælg standard POS-skærmlayoutet for denne butik.  
-30. Find og vælg den ønskede post på listen.
-31. Klik op linket i den valgte række på listen.
-32. Klik på Konfigurer i handlingsruden.
-33. Klik på Kanalattributter.
-34. Klik på Ny.
-35. Klik på rullelisten i feltet Navn for at åbne opslaget.
-36. Find og vælg den ønskede post på listen.
-37. Klik op linket i den valgte række på listen.
-38. Klik på Gem.
-39. Luk siden.
-40. Klik på Konfigurer i handlingsruden.
-41. Klik på Betalingsmetoder.
-42. Klik på Ny.
-43. Klik på rullelisten i feltet Betalingsmetode for at åbne opslaget.
-44. Klik op linket i den valgte række på listen.
-45. Udvid eller skjul sektionen Bogføring.
-46. Angiv de ønskede værdier i feltet Kontonummer.
-47. Klik på Gem.
-48. Luk siden.
-49. Klik på Konfigurer i handlingsruden.
-50. Klik på Kontantopgørelse.
-51. Klik på Ny.
-52. Indtast et tal i feltet Beløb i transaktionsvaluta.
-53. Klik på rullelisten i feltet Valuta for at åbne opslaget.
-54. Find og vælg den ønskede post på listen.
-55. Klik op linket i den valgte række på listen.
-56. Klik på Gem.
-57. Luk siden.
-58. Klik på Konfigurer i handlingsruden.
-59. Klik på Tildeling af butikssøgergruppe.
-60. Klik på Ny.
-61. Markér den valgte række på listen.
-62. Klik på rullelisten i feltet Søgegruppe for at åbne opslaget.
-63. Find og vælg den ønskede post på listen.
-64. Klik op linket i den valgte række på listen.
-65. Klik på Gem.
-66. Luk siden.
+## <a name="create-new-store"></a><span data-ttu-id="1d353-107">Opret ny butik</span><span class="sxs-lookup"><span data-stu-id="1d353-107">Create new store</span></span>
+1. <span data-ttu-id="1d353-108">Gå til Alle arbejdsområder > Installation af kanal.</span><span class="sxs-lookup"><span data-stu-id="1d353-108">Go to All workspaces > Channel deployment.</span></span>
+2. <span data-ttu-id="1d353-109">Klik på Ny kanal.</span><span class="sxs-lookup"><span data-stu-id="1d353-109">Click New channel.</span></span>
+3. <span data-ttu-id="1d353-110">Klik på Butik.</span><span class="sxs-lookup"><span data-stu-id="1d353-110">Click Store.</span></span>
+4. <span data-ttu-id="1d353-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="1d353-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="1d353-112">Skriv en værdi i feltet Butiksnummer.</span><span class="sxs-lookup"><span data-stu-id="1d353-112">In the Store number field, type a value.</span></span>
+6. <span data-ttu-id="1d353-113">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-113">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="1d353-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="1d353-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="1d353-116">Vælg en indstilling i feltet Lagertidszone.</span><span class="sxs-lookup"><span data-stu-id="1d353-116">In the Store time zone field, select an option.</span></span>
+10. <span data-ttu-id="1d353-117">Klik på rullelisten i feltet Kanalprofil for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-117">In the Channel profile field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="1d353-118">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="1d353-119">Klik på rullelisten i feltet Sprog for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-119">In the Language field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="1d353-120">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="1d353-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-121">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="1d353-122">Klik på rullelisten i feltet Momsgruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-122">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="1d353-123">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-123">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="1d353-124">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-124">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="1d353-125">Klik på rullelisten i feltet Kundeadressekartotek for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-125">In the Customer address book field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="1d353-126">Vælg det adressekartotek, der bruges til at knytte kunder til denne butik.</span><span class="sxs-lookup"><span data-stu-id="1d353-126">Select the address book used to link customers to this store.</span></span>  
+19. <span data-ttu-id="1d353-127">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-127">In the list, find and select the desired record.</span></span>
+20. <span data-ttu-id="1d353-128">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-128">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="1d353-129">Klik på Vælg.</span><span class="sxs-lookup"><span data-stu-id="1d353-129">Click Select.</span></span>
+22. <span data-ttu-id="1d353-130">Klik på rullelisten i feltet Medarbejderadressekartotek for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-130">In the Employee address book field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="1d353-131">Vælg det adressekartotek, der bruges til at knytte kasserer til denne kanal.</span><span class="sxs-lookup"><span data-stu-id="1d353-131">Select the address book used to link cashiers to this channel.</span></span>  
+23. <span data-ttu-id="1d353-132">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-132">In the list, find and select the desired record.</span></span>
+24. <span data-ttu-id="1d353-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-133">In the list, click the link in the selected row.</span></span>
+25. <span data-ttu-id="1d353-134">Klik på Vælg.</span><span class="sxs-lookup"><span data-stu-id="1d353-134">Click Select.</span></span>
+26. <span data-ttu-id="1d353-135">Klik på rullelisten i feltet Standardkunde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-135">In the Default customer field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="1d353-136">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-136">In the list, click the link in the selected row.</span></span>
+28. <span data-ttu-id="1d353-137">Udvis eller skjul sektionen Skærmlayout.</span><span class="sxs-lookup"><span data-stu-id="1d353-137">Expand or collapse the Screen layout section.</span></span>
+29. <span data-ttu-id="1d353-138">Klik på rullelisten i feltet Skærmlayout-id for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-138">In the Screen layout ID field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="1d353-139">Vælg standard POS-skærmlayoutet for denne butik.</span><span class="sxs-lookup"><span data-stu-id="1d353-139">Select the default POS screen layout for this store.</span></span>  
+30. <span data-ttu-id="1d353-140">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-140">In the list, find and select the desired record.</span></span>
+31. <span data-ttu-id="1d353-141">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-141">In the list, click the link in the selected row.</span></span>
+32. <span data-ttu-id="1d353-142">Klik på Konfigurer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1d353-142">On the Action Pane, click Set up.</span></span>
+33. <span data-ttu-id="1d353-143">Klik på Kanalattributter.</span><span class="sxs-lookup"><span data-stu-id="1d353-143">Click Channel attributes.</span></span>
+34. <span data-ttu-id="1d353-144">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1d353-144">Click New.</span></span>
+35. <span data-ttu-id="1d353-145">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-145">In the Name field, click the drop-down button to open the lookup.</span></span>
+36. <span data-ttu-id="1d353-146">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-146">In the list, find and select the desired record.</span></span>
+37. <span data-ttu-id="1d353-147">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-147">In the list, click the link in the selected row.</span></span>
+38. <span data-ttu-id="1d353-148">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="1d353-148">Click Save.</span></span>
+39. <span data-ttu-id="1d353-149">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1d353-149">Close the page.</span></span>
+40. <span data-ttu-id="1d353-150">Klik på Konfigurer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1d353-150">On the Action Pane, click Set up.</span></span>
+41. <span data-ttu-id="1d353-151">Klik på Betalingsmetoder.</span><span class="sxs-lookup"><span data-stu-id="1d353-151">Click Payment methods.</span></span>
+42. <span data-ttu-id="1d353-152">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1d353-152">Click New.</span></span>
+43. <span data-ttu-id="1d353-153">Klik på rullelisten i feltet Betalingsmetode for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-153">In the Payment method field, click the drop-down button to open the lookup.</span></span>
+44. <span data-ttu-id="1d353-154">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-154">In the list, click the link in the selected row.</span></span>
+45. <span data-ttu-id="1d353-155">Udvid eller skjul sektionen Bogføring.</span><span class="sxs-lookup"><span data-stu-id="1d353-155">Expand or collapse the Posting section.</span></span>
+46. <span data-ttu-id="1d353-156">Angiv de ønskede værdier i feltet Kontonummer.</span><span class="sxs-lookup"><span data-stu-id="1d353-156">In the Account number field, specify the desired values.</span></span>
+47. <span data-ttu-id="1d353-157">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="1d353-157">Click Save.</span></span>
+48. <span data-ttu-id="1d353-158">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1d353-158">Close the page.</span></span>
+49. <span data-ttu-id="1d353-159">Klik på Konfigurer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1d353-159">On the Action Pane, click Set up.</span></span>
+50. <span data-ttu-id="1d353-160">Klik på Kontantopgørelse.</span><span class="sxs-lookup"><span data-stu-id="1d353-160">Click Cash declaration.</span></span>
+51. <span data-ttu-id="1d353-161">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1d353-161">Click New.</span></span>
+52. <span data-ttu-id="1d353-162">Indtast et tal i feltet Beløb i transaktionsvaluta.</span><span class="sxs-lookup"><span data-stu-id="1d353-162">In the Amount in transaction currency field, enter a number.</span></span>
+53. <span data-ttu-id="1d353-163">Klik på rullelisten i feltet Valuta for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-163">In the Currency field, click the drop-down button to open the lookup.</span></span>
+54. <span data-ttu-id="1d353-164">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-164">In the list, find and select the desired record.</span></span>
+55. <span data-ttu-id="1d353-165">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-165">In the list, click the link in the selected row.</span></span>
+56. <span data-ttu-id="1d353-166">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="1d353-166">Click Save.</span></span>
+57. <span data-ttu-id="1d353-167">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1d353-167">Close the page.</span></span>
+58. <span data-ttu-id="1d353-168">Klik på Konfigurer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="1d353-168">On the Action Pane, click Set up.</span></span>
+59. <span data-ttu-id="1d353-169">Klik på Tildeling af butikssøgergruppe.</span><span class="sxs-lookup"><span data-stu-id="1d353-169">Click Store locator group assignment.</span></span>
+60. <span data-ttu-id="1d353-170">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1d353-170">Click New.</span></span>
+61. <span data-ttu-id="1d353-171">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-171">In the list, mark the selected row.</span></span>
+62. <span data-ttu-id="1d353-172">Klik på rullelisten i feltet Søgegruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="1d353-172">In the Locator group field, click the drop-down button to open the lookup.</span></span>
+63. <span data-ttu-id="1d353-173">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-173">In the list, find and select the desired record.</span></span>
+64. <span data-ttu-id="1d353-174">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="1d353-174">In the list, click the link in the selected row.</span></span>
+65. <span data-ttu-id="1d353-175">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="1d353-175">Click Save.</span></span>
+66. <span data-ttu-id="1d353-176">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1d353-176">Close the page.</span></span>
 
 

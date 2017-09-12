@@ -17,34 +17,34 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: caf7dead2da14e1ff76e205e7477b1eb11a2ca52
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3c2b5a5fbfc5bd83cc68ffafaa243dac9244c003
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="update-kanban-status"></a>Opdatere status for kanban
+# <a name="update-kanban-status"></a><span data-ttu-id="261c4-103">Opdatere status for kanban</span><span class="sxs-lookup"><span data-stu-id="261c4-103">Update kanban status</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Når en kanban bliver tømt ved en fejltagelse eller en modtaget kanban skal tømmes, skal du opdatere kanban-statussen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til den tilsynsførende.
+<span data-ttu-id="261c4-104">Når en kanban bliver tømt ved en fejltagelse eller en modtaget kanban skal tømmes, skal du opdatere kanban-statussen.</span><span class="sxs-lookup"><span data-stu-id="261c4-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="261c4-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="261c4-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="261c4-106">Denne procedure er beregnet til den tilsynsførende.</span><span class="sxs-lookup"><span data-stu-id="261c4-106">This procedure is intended for the shop supervisor.</span></span>
 
 
-## <a name="find-the-kanban"></a>Find kanban.
-1. Gå til Produktionsstyring > Kanban > Kanbans.
-2. Åbn kolonnefilteret Status på håndteringsenhed.
-3. Klik på Ryd.
-    * Dette nulstiller filtrene.  
-4. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Kortnummer med værdien '000149'.
+## <a name="find-the-kanban"></a><span data-ttu-id="261c4-107">Find kanban.</span><span class="sxs-lookup"><span data-stu-id="261c4-107">Find the kanban.</span></span>
+1. <span data-ttu-id="261c4-108">Gå til Produktionsstyring > Kanban > Kanbans.</span><span class="sxs-lookup"><span data-stu-id="261c4-108">Go to Production control > Kanban > Kanbans.</span></span>
+2. <span data-ttu-id="261c4-109">Åbn kolonnefilteret Status på håndteringsenhed.</span><span class="sxs-lookup"><span data-stu-id="261c4-109">Open Handling unit status column filter.</span></span>
+3. <span data-ttu-id="261c4-110">Klik på Ryd.</span><span class="sxs-lookup"><span data-stu-id="261c4-110">Click Clear.</span></span>
+    * <span data-ttu-id="261c4-111">Dette nulstiller filtrene.</span><span class="sxs-lookup"><span data-stu-id="261c4-111">This resets the filters.</span></span>  
+4. <span data-ttu-id="261c4-112">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="261c4-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="261c4-113">Filtrer f.eks. efter feltet Kortnummer med værdien '000149'.</span><span class="sxs-lookup"><span data-stu-id="261c4-113">For example, filter on the Card number field with a value of '000149'.</span></span>
 
-## <a name="change-emptied-status-to-received-status"></a>Ændre statussen Tømt til Modtaget
-1. Klik på Fortryd tømning af materialehåndteringsenhed.
-2. Klik på OK.
-    * Bemærk, at Status på håndteringsenhed er Modtaget.  
+## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="261c4-114">Ændre statussen Tømt til Modtaget</span><span class="sxs-lookup"><span data-stu-id="261c4-114">Change emptied status to received status</span></span>
+1. <span data-ttu-id="261c4-115">Klik på Fortryd tømning af materialehåndteringsenhed.</span><span class="sxs-lookup"><span data-stu-id="261c4-115">Click Reverse empty handling unit.</span></span>
+2. <span data-ttu-id="261c4-116">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="261c4-116">Click OK.</span></span>
+    * <span data-ttu-id="261c4-117">Bemærk, at Status på håndteringsenhed er Modtaget.</span><span class="sxs-lookup"><span data-stu-id="261c4-117">Notice that the Handling unit status is Received.</span></span>  
 
-## <a name="change-received-status-to-emptied-status"></a>Ændre statussen Modtaget til Tømt
-1. Klik på Tøm kanban.
-2. Markér den valgte række på listen.
-    * Bemærk, at Status på håndteringsenhed er Tømt.  
+## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="261c4-118">Ændre statussen Modtaget til Tømt</span><span class="sxs-lookup"><span data-stu-id="261c4-118">Change received status to emptied status</span></span>
+1. <span data-ttu-id="261c4-119">Klik på Tøm kanban.</span><span class="sxs-lookup"><span data-stu-id="261c4-119">Click Empty kanban.</span></span>
+2. <span data-ttu-id="261c4-120">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="261c4-120">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="261c4-121">Bemærk, at Status på håndteringsenhed er Tømt.</span><span class="sxs-lookup"><span data-stu-id="261c4-121">Notice that the Handling unit status is Emptied.</span></span>  
 
 

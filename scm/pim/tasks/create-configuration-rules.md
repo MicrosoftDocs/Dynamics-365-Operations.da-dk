@@ -16,42 +16,42 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f42a6a3f2bfec0bd2df77bc5bbc1156f820aa772
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c901ebea4fd7423db61ef2c33689e606e33e2434
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-configuration-rules"></a>Oprette konfigurationsregler
+# <a name="create-configuration-rules"></a><span data-ttu-id="5d302-103">Oprette konfigurationsregler</span><span class="sxs-lookup"><span data-stu-id="5d302-103">Create configuration rules</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure opretter variantregler, der kan bruges til dimensionsbaseret konfiguration for at gennemtvinge eller forhindre bestemte kombinationer af styklistelinjer. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Dette er den syvende procedure ud af otte, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.
+<span data-ttu-id="5d302-104">Denne procedure opretter variantregler, der kan bruges til dimensionsbaseret konfiguration for at gennemtvinge eller forhindre bestemte kombinationer af styklistelinjer.</span><span class="sxs-lookup"><span data-stu-id="5d302-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="5d302-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="5d302-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5d302-106">Dette er den syvende procedure ud af otte, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="5d302-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. Gå til Administration af produktoplysninger > Styklister og formler > Styklister.
-2. Find og vælg den ønskede post på listen.
-    * Find og vælg stykliste for dimensionsbaseret konfiguration.  
-3. Klik på Indstillinger i handlingsruden.
-4. Klik på Skift visning.
-5. Klik på Overskriftsvisning.
-    * Åbn Overskriftsvisning for at åbne oversigtspanelet Variantrute.  
-6. Vis eller skjul sektionen Variansrute.
-    * Oversigtspanelet Variantrute skal være i udvidet tilstand.  
-7. Klik på Konfigurationsregler.
-8. Klik på Ny.
-9. Markér den valgte række på listen.
-10. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-    * Varerne i den aktuelle variantgruppe vises. Vælg den, der repræsenterer betingelsen i reglen.  
-11. Klik op linket i den valgte række på listen.
-12. Vælg en indstilling i feltet Metode.
-    * Det er muligt at gennemtvinge enten en markering eller et fravalg af en vare fra en anden variantgruppe.  
-13. Klik på rullelisten i feltet Afledt gruppe for at åbne opslaget.
-14. Find og vælg den ønskede post på listen.
-15. Klik op linket i den valgte række på listen.
-    * Vælg den ønskede variantgruppe.  
-16. Klik på rullelisten i feltet Afledt varenummer for at åbne opslaget.
-17. Klik op linket i den valgte række på listen.
-    * Vælg det varenummer, der skal vælges eller fravælges afhængigt af den valgte metode.  
-18. Luk siden.
+1. <span data-ttu-id="5d302-107">Gå til Administration af produktoplysninger > Styklister og formler > Styklister.</span><span class="sxs-lookup"><span data-stu-id="5d302-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="5d302-108">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="5d302-109">Find og vælg stykliste for dimensionsbaseret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="5d302-109">Find and select the BOM for the dimension-based configuration.</span></span>  
+3. <span data-ttu-id="5d302-110">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5d302-110">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="5d302-111">Klik på Skift visning.</span><span class="sxs-lookup"><span data-stu-id="5d302-111">Click Change view.</span></span>
+5. <span data-ttu-id="5d302-112">Klik på Overskriftsvisning.</span><span class="sxs-lookup"><span data-stu-id="5d302-112">Click Header view.</span></span>
+    * <span data-ttu-id="5d302-113">Åbn Overskriftsvisning for at åbne oversigtspanelet Variantrute.</span><span class="sxs-lookup"><span data-stu-id="5d302-113">Open the header view to access the Configuration route FastTab.</span></span>  
+6. <span data-ttu-id="5d302-114">Vis eller skjul sektionen Variansrute.</span><span class="sxs-lookup"><span data-stu-id="5d302-114">Expand or collapse the Configuration route section.</span></span>
+    * <span data-ttu-id="5d302-115">Oversigtspanelet Variantrute skal være i udvidet tilstand.</span><span class="sxs-lookup"><span data-stu-id="5d302-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
+7. <span data-ttu-id="5d302-116">Klik på Konfigurationsregler.</span><span class="sxs-lookup"><span data-stu-id="5d302-116">Click Configuration rules.</span></span>
+8. <span data-ttu-id="5d302-117">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5d302-117">Click New.</span></span>
+9. <span data-ttu-id="5d302-118">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-118">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="5d302-119">Klik på rullelisten i feltet Varenummer for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="5d302-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="5d302-120">Varerne i den aktuelle variantgruppe vises.</span><span class="sxs-lookup"><span data-stu-id="5d302-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="5d302-121">Vælg den, der repræsenterer betingelsen i reglen.</span><span class="sxs-lookup"><span data-stu-id="5d302-121">Select the one that represents the condition in the rule.</span></span>  
+11. <span data-ttu-id="5d302-122">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-122">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="5d302-123">Vælg en indstilling i feltet Metode.</span><span class="sxs-lookup"><span data-stu-id="5d302-123">In the Method field, select an option.</span></span>
+    * <span data-ttu-id="5d302-124">Det er muligt at gennemtvinge enten en markering eller et fravalg af en vare fra en anden variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="5d302-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
+13. <span data-ttu-id="5d302-125">Klik på rullelisten i feltet Afledt gruppe for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="5d302-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="5d302-126">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-126">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="5d302-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-127">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5d302-128">Vælg den ønskede variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="5d302-128">Select the desired configuration group.</span></span>  
+16. <span data-ttu-id="5d302-129">Klik på rullelisten i feltet Afledt varenummer for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="5d302-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="5d302-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5d302-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5d302-131">Vælg det varenummer, der skal vælges eller fravælges afhængigt af den valgte metode.</span><span class="sxs-lookup"><span data-stu-id="5d302-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
+18. <span data-ttu-id="5d302-132">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5d302-132">Close the page.</span></span>
 
 

@@ -18,40 +18,40 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 16acadf0b814ff5863873280cd8d6e6ddbdcffc8
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="close-the-general-ledger-at-period-end"></a>Lukke Finans ved periodeafslutning
+# <a name="close-the-general-ledger-at-period-end"></a><span data-ttu-id="efb53-103">Lukke Finans ved periodeafslutning</span><span class="sxs-lookup"><span data-stu-id="efb53-103">Close the general ledger at period end</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans. 
+<span data-ttu-id="efb53-104">I dette emne beskrives de opgaver, der typisk udføres, når du udfører en lukning af periode til Finans.</span><span class="sxs-lookup"><span data-stu-id="efb53-104">This topic describes the tasks that are typically completed when performing a period closing for General ledger.</span></span> 
 
-I Finans kan du afslutte lukningsprocedurer for en periode eller et år. Lukningsprocesser forberede systemet på en ny periode. Når du skal forberede systemet på et nyt år, skal du køre årsafslutningsprocessen. Hver organisation har forskellige processer og trin, der udføres ved periodens udløb. Her er nogle valgfrie trin for periodeudløb:
+<span data-ttu-id="efb53-105">I Finans kan du afslutte lukningsprocedurer for en periode eller et år.</span><span class="sxs-lookup"><span data-stu-id="efb53-105">In General ledger, you can complete closing procedures for a period or a year.</span></span> <span data-ttu-id="efb53-106">Lukningsprocesser forberede systemet på en ny periode.</span><span class="sxs-lookup"><span data-stu-id="efb53-106">Closing processes prepare the system for a new period.</span></span> <span data-ttu-id="efb53-107">Når du skal forberede systemet på et nyt år, skal du køre årsafslutningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="efb53-107">To prepare the system for a new year, you must run the year end close process.</span></span> <span data-ttu-id="efb53-108">Hver organisation har forskellige processer og trin, der udføres ved periodens udløb.</span><span class="sxs-lookup"><span data-stu-id="efb53-108">Each organization has different processes and steps that it performs for the end of a period.</span></span> <span data-ttu-id="efb53-109">Her er nogle valgfrie trin for periodeudløb:</span><span class="sxs-lookup"><span data-stu-id="efb53-109">Here are some optional steps for period ends:</span></span>
 
--   Udfør alle opgaverne for alle andre moduler, som f.eks. Debitor, Kreditor og Lager.
--   Kontroller, at alle kladder bogføres.
--   Kør værdiregulering af udenlandsk valuta for at generere eventuelle ikke-realiserede tab eller gevinster.
--   Udlign posteringer for hver finanskonti.
--   Behandl alle nødvendige fordelinger.
--   Bogfør manuelt justeringer for periodeafslutningen.
--   Journaliser posteringer, og gennemse rapporten **Finanskladde**.
--   Konsolider ved hjælp af et koncernselskab eller økonomisk rapportering.
--   Generér regnskaber for periodeafslutningen ved hjælp af Økonomirapportering.
--   Angiv finansperioder til **På hold**, så der sker yderligere bogføring. Du kan også begrænse en periode til en bestemt brugergruppe, mens der pågår aktiviteter i periodeafslutningen, for at have bedre kontrol. Det er ikke en god ide at indstille perioder til **Permanent lukket**, fordi du ikke kan genåbne en periode, der er blevet lukket.
+-   <span data-ttu-id="efb53-110">Udfør alle opgaverne for alle andre moduler, som f.eks. Debitor, Kreditor og Lager.</span><span class="sxs-lookup"><span data-stu-id="efb53-110">Complete all the tasks for all other modules, such as Accounts receivable, Accounts payable, and Inventory.</span></span>
+-   <span data-ttu-id="efb53-111">Kontroller, at alle kladder bogføres.</span><span class="sxs-lookup"><span data-stu-id="efb53-111">Verify that all journals are posted.</span></span>
+-   <span data-ttu-id="efb53-112">Kør værdiregulering af udenlandsk valuta for at generere eventuelle ikke-realiserede tab eller gevinster.</span><span class="sxs-lookup"><span data-stu-id="efb53-112">Run foreign currency revaluation to generate any unrealized gain or loss amounts.</span></span>
+-   <span data-ttu-id="efb53-113">Udlign posteringer for hver finanskonti.</span><span class="sxs-lookup"><span data-stu-id="efb53-113">Settle transactions for each ledger account.</span></span>
+-   <span data-ttu-id="efb53-114">Behandl alle nødvendige fordelinger.</span><span class="sxs-lookup"><span data-stu-id="efb53-114">Process any required allocations.</span></span>
+-   <span data-ttu-id="efb53-115">Bogfør manuelt justeringer for periodeafslutningen.</span><span class="sxs-lookup"><span data-stu-id="efb53-115">Manually post period-end adjustments.</span></span>
+-   <span data-ttu-id="efb53-116">Journaliser posteringer, og gennemse rapporten **Finanskladde**.</span><span class="sxs-lookup"><span data-stu-id="efb53-116">Journalize transactions, and review the **Ledger journal** report.</span></span>
+-   <span data-ttu-id="efb53-117">Konsolider ved hjælp af et koncernselskab eller økonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="efb53-117">Perform a consolidation by using a consolidation company or Financial reporting.</span></span>
+-   <span data-ttu-id="efb53-118">Generér regnskaber for periodeafslutningen ved hjælp af Økonomirapportering.</span><span class="sxs-lookup"><span data-stu-id="efb53-118">Generate period-end financial statements by using Financial reporting.</span></span>
+-   <span data-ttu-id="efb53-119">Angiv finansperioder til **På hold**, så der sker yderligere bogføring.</span><span class="sxs-lookup"><span data-stu-id="efb53-119">Set ledger periods to **On hold**, so that no further posting occurs.</span></span> <span data-ttu-id="efb53-120">Du kan også begrænse en periode til en bestemt brugergruppe, mens der pågår aktiviteter i periodeafslutningen, for at have bedre kontrol.</span><span class="sxs-lookup"><span data-stu-id="efb53-120">You can also restrict a period to a specific user group while period-end activities are occurring, for better control.</span></span> <span data-ttu-id="efb53-121">Det er ikke en god ide at indstille perioder til **Permanent lukket**, fordi du ikke kan genåbne en periode, der er blevet lukket.</span><span class="sxs-lookup"><span data-stu-id="efb53-121">It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.</span></span>
 
-Den arbejdsområdet Afslutning på regnskabsperiode kan bruges til at organisere og spore de opgaver, der kræves til forskellige periodeafslutningsprocesser. 
+<span data-ttu-id="efb53-122">Den arbejdsområdet Afslutning på regnskabsperiode kan bruges til at organisere og spore de opgaver, der kræves til forskellige periodeafslutningsprocesser.</span><span class="sxs-lookup"><span data-stu-id="efb53-122">The Financial period close workspace can be used to organize and track the tasks required for various period end processes.</span></span> 
 
 
-Du kan finde flere oplysninger i følgende emner:
-- [Arbejdsområde til afslutning på regnskabsperiode](financial-period-close-workspace.md) 
-- [Årsafslutning](Year-end-close.md)  
-- [Masseafslutning af regnskabsperiode](tasks/mass-financial-period-close.md)
+<span data-ttu-id="efb53-123">Du kan finde flere oplysninger i følgende emner:</span><span class="sxs-lookup"><span data-stu-id="efb53-123">For more information, see the following topics for more information:</span></span>
+- [<span data-ttu-id="efb53-124">Arbejdsområde til afslutning på regnskabsperiode</span><span class="sxs-lookup"><span data-stu-id="efb53-124">Financial period close workspace</span></span>](financial-period-close-workspace.md) 
+- [<span data-ttu-id="efb53-125">Årsafslutning</span><span class="sxs-lookup"><span data-stu-id="efb53-125">Year end close</span></span>](Year-end-close.md)  
+- [<span data-ttu-id="efb53-126">Masseafslutning af regnskabsperiode</span><span class="sxs-lookup"><span data-stu-id="efb53-126">Mass financial period close</span></span>](tasks/mass-financial-period-close.md)
 
 
 

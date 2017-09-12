@@ -17,47 +17,47 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 60e56e957208100b5eee5dd5a1ce86b0819df768
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 748c536692043a4cfe7d8b087066e12b3e7ddadc
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-online-channels-and-define-channel-attributes"></a>Oprette onlinekanaler og definere kanalattributter
+# <a name="create-online-channels-and-define-channel-attributes"></a><span data-ttu-id="1f8eb-103">Oprette onlinekanaler og definere kanalattributter</span><span class="sxs-lookup"><span data-stu-id="1f8eb-103">Create online channels and define channel attributes</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet. Du skal oprette organisationshierarkiet, før du kan oprette en ny onlinekanal. Proceduren bruger USRT-demodatafirmaet.
+<span data-ttu-id="1f8eb-104">Denne procedure gennemgår oprettelse af en ny onlinekanal og tilføjelse af den til organisationshierarkiet.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="1f8eb-105">Du skal oprette organisationshierarkiet, før du kan oprette en ny onlinekanal.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="1f8eb-106">Proceduren bruger USRT-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-106">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-new-online-channel"></a>Opret en ny onlinekanal
-1. Gå til Detail og handel > Kanaler > Onlinebutikker.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Indtast eller vælg en værdi i feltet Lagersted.
-5. Vælg en indstilling i feltet Lagertidszone.
-6. Indtast eller vælg en værdi i feltet Standardkunde.
-7. Indtast eller vælg en værdi i feltet Kundeadressekartotek.
-8. Indtast eller vælg en værdi i feltet Betalingsbetingelse.
-9. Indtast eller vælg en værdi i feltet Betalingsmåde.
-10. Indtast eller vælg en værdi i feltet Profil til e-mailbesked.
-11. Udvid sektionen Økonomiske dimensioner.
-12. Indtast eller vælg en værdi i feltet BusinessUnit.
-    * På samme måde kan du angive værdien for alle andre standarddimensioner.  
-13. Klik på Gem.
+## <a name="create-a-new-online-channel"></a><span data-ttu-id="1f8eb-107">Opret en ny onlinekanal</span><span class="sxs-lookup"><span data-stu-id="1f8eb-107">Create a new online channel</span></span>
+1. <span data-ttu-id="1f8eb-108">Gå til Detail og handel > Kanaler > Onlinebutikker.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-108">Go to Retail and commerce > Channels > Online stores.</span></span>
+2. <span data-ttu-id="1f8eb-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-109">Click New.</span></span>
+3. <span data-ttu-id="1f8eb-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="1f8eb-111">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-111">In the Warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="1f8eb-112">Vælg en indstilling i feltet Lagertidszone.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-112">In the Store time zone field, select an option.</span></span>
+6. <span data-ttu-id="1f8eb-113">Indtast eller vælg en værdi i feltet Standardkunde.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-113">In the Default customer field, enter or select a value.</span></span>
+7. <span data-ttu-id="1f8eb-114">Indtast eller vælg en værdi i feltet Kundeadressekartotek.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-114">In the Customer address book field, enter or select a value.</span></span>
+8. <span data-ttu-id="1f8eb-115">Indtast eller vælg en værdi i feltet Betalingsbetingelse.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-115">In the Terms of payment field, enter or select a value.</span></span>
+9. <span data-ttu-id="1f8eb-116">Indtast eller vælg en værdi i feltet Betalingsmåde.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-116">In the Method of payment field, enter or select a value.</span></span>
+10. <span data-ttu-id="1f8eb-117">Indtast eller vælg en værdi i feltet Profil til e-mailbesked.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-117">In the Email notification profile field, enter or select a value.</span></span>
+11. <span data-ttu-id="1f8eb-118">Udvid sektionen Økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-118">Expand the Financial dimensions section.</span></span>
+12. <span data-ttu-id="1f8eb-119">Indtast eller vælg en værdi i feltet BusinessUnit.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-119">In the BusinessUnit field, enter or select a value.</span></span>
+    * <span data-ttu-id="1f8eb-120">På samme måde kan du angive værdien for alle andre standarddimensioner.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-120">Similarly set the value for all the other default dimensions.</span></span>  
+13. <span data-ttu-id="1f8eb-121">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-121">Click Save.</span></span>
 
-## <a name="add-the-online-channel-to-organization-hierarchy"></a>Føj onlinekanalen til organisationshierarkiet
-1. Luk siden.
-2. Gå til Virksomhedsadministration > Organisationer > Organisationshierarkier.
-3. Find og vælg den ønskede post på listen.
-4. Klik på Vis.
-5. Klik på Rediger.
-    * Du kan vælge en hvilket som helst hierarkinode, hvor du vil indsætte den nye kanal.  
-6. Klik på Indsæt.
-7. Klik på Detailkanal.
-8. Klik på OK.
-9. Klik på Publicer for at åbne dialogboksen Fjern.
-10. Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.
-11. Klik på Publicer.
+## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="1f8eb-122">Føj onlinekanalen til organisationshierarkiet</span><span class="sxs-lookup"><span data-stu-id="1f8eb-122">Add the online channel to organization hierarchy</span></span>
+1. <span data-ttu-id="1f8eb-123">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-123">Close the page.</span></span>
+2. <span data-ttu-id="1f8eb-124">Gå til Virksomhedsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+3. <span data-ttu-id="1f8eb-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-125">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="1f8eb-126">Klik på Vis.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-126">Click View.</span></span>
+5. <span data-ttu-id="1f8eb-127">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-127">Click Edit.</span></span>
+    * <span data-ttu-id="1f8eb-128">Du kan vælge en hvilket som helst hierarkinode, hvor du vil indsætte den nye kanal.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
+6. <span data-ttu-id="1f8eb-129">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-129">Click Insert.</span></span>
+7. <span data-ttu-id="1f8eb-130">Klik på Detailkanal.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-130">Click Retail channel.</span></span>
+8. <span data-ttu-id="1f8eb-131">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-131">Click OK.</span></span>
+9. <span data-ttu-id="1f8eb-132">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-132">Click Publish to open the drop dialog.</span></span>
+10. <span data-ttu-id="1f8eb-133">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-133">In the Effective date field, enter a date and time.</span></span>
+11. <span data-ttu-id="1f8eb-134">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="1f8eb-134">Click Publish.</span></span>
 
 

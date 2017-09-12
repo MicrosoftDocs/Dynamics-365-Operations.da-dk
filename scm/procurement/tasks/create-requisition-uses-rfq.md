@@ -16,91 +16,91 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 14eed7982041b7af7dad5453b10f07f063ba1855
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d97ccd15031b2f7398486eee4a716ecef5e9dafd
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-requisition-that-uses-an-rfq"></a>Oprette en rekvisition, der bruger en tilbudsanmodning
+# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="e3034-103">Oprette en rekvisition, der bruger en tilbudsanmodning</span><span class="sxs-lookup"><span data-stu-id="e3034-103">Create a requisition that uses an RFQ</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne vejledning viser, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces. Eksemplet i denne vejledning kan bruges i USMF-demodatafirmaet, og du skal være logget på som administrator for at fuldføre alle trin. Opgaverne i denne vejledning udføres normalt af indkøbsmedarbejderne.
+<span data-ttu-id="e3034-104">Denne vejledning viser, hvordan du føjer pris- og leverandøroplysninger til en indkøbsrekvisition fra en tilbudsanmodningsproces.</span><span class="sxs-lookup"><span data-stu-id="e3034-104">This guide shows how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="e3034-105">Eksemplet i denne vejledning kan bruges i USMF-demodatafirmaet, og du skal være logget på som administrator for at fuldføre alle trin.</span><span class="sxs-lookup"><span data-stu-id="e3034-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="e3034-106">Opgaverne i denne vejledning udføres normalt af indkøbsmedarbejderne.</span><span class="sxs-lookup"><span data-stu-id="e3034-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
 
 
-## <a name="create-a-requisition"></a>Opret en rekvisition
-1. Gå til Indkøb og Forsyning > Indkøbsrekvisitioner > Indkøbsrekvisitioner, der er udarbejdet af mig.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Navn.
-4. Angiv en dato i feltet Ønsket dato.
-5. Angiv en dato i datofeltet Regnskab.
-6. Klik på OK.
-7. Indtast eller vælg en værdi i feltet Årsag.
-8. Klik på Tilføj linje.
-9. Vælg en kategori i træet i feltet Indkøbskategori, og klik derefter på OK.
-10. Skriv en værdi i feltet Produktnavn.
-11. Angiv et tal i feltet Antal.
-12. Indtast eller vælg en værdi i feltet Enhed.
-13. Klik på Gem.
-14. Klik på Arbejdsgang for at åbne dialogboksen.
-15. Klik på Send.
-16. Luk siden.
-17. Klik på Send.
+## <a name="create-a-requisition"></a><span data-ttu-id="e3034-107">Opret en rekvisition</span><span class="sxs-lookup"><span data-stu-id="e3034-107">Create a requisition</span></span>
+1. <span data-ttu-id="e3034-108">Gå til Indkøb og Forsyning > Indkøbsrekvisitioner > Indkøbsrekvisitioner, der er udarbejdet af mig.</span><span class="sxs-lookup"><span data-stu-id="e3034-108">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
+2. <span data-ttu-id="e3034-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="e3034-109">Click New.</span></span>
+3. <span data-ttu-id="e3034-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="e3034-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="e3034-111">Angiv en dato i feltet Ønsket dato.</span><span class="sxs-lookup"><span data-stu-id="e3034-111">In the Requested date field, enter a date.</span></span>
+5. <span data-ttu-id="e3034-112">Angiv en dato i datofeltet Regnskab.</span><span class="sxs-lookup"><span data-stu-id="e3034-112">In the Accounting date field, enter a date.</span></span>
+6. <span data-ttu-id="e3034-113">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="e3034-113">Click OK.</span></span>
+7. <span data-ttu-id="e3034-114">Indtast eller vælg en værdi i feltet Årsag.</span><span class="sxs-lookup"><span data-stu-id="e3034-114">In the Reason field, enter or select a value.</span></span>
+8. <span data-ttu-id="e3034-115">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="e3034-115">Click Add line.</span></span>
+9. <span data-ttu-id="e3034-116">Vælg en kategori i træet i feltet Indkøbskategori, og klik derefter på OK.</span><span class="sxs-lookup"><span data-stu-id="e3034-116">In the Procurement category field, select a category in the tree, and then click OK.</span></span>
+10. <span data-ttu-id="e3034-117">Skriv en værdi i feltet Produktnavn.</span><span class="sxs-lookup"><span data-stu-id="e3034-117">In the Product name field, type a value.</span></span>
+11. <span data-ttu-id="e3034-118">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="e3034-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="e3034-119">Indtast eller vælg en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="e3034-119">In the Unit field, enter or select a value.</span></span>
+13. <span data-ttu-id="e3034-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="e3034-120">Click Save.</span></span>
+14. <span data-ttu-id="e3034-121">Klik på Arbejdsgang for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="e3034-121">Click Workflow to open the drop dialog.</span></span>
+15. <span data-ttu-id="e3034-122">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="e3034-122">Click Submit.</span></span>
+16. <span data-ttu-id="e3034-123">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-123">Close the page.</span></span>
+17. <span data-ttu-id="e3034-124">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="e3034-124">Click Submit.</span></span>
 
-## <a name="reassign-a-workflow-task"></a>Tildel en opgave i en arbejdsgang til en anden
-    * Den næste opgave er at oprette en tilbudsanmodning for at få tilbud på produktet fra leverandører. I demodataene for USMF er arbejdsgangen for indkøbsrekvisitionen konfigureret med en regel, at hvis en leverandør ikke er markeret, eller hvis prisen er 0 for en linje, tildeles der en opgave til en bestemt arbejder om at oprette en tilbudsanmodning. For at fortsætte med denne vejledning skal du gentildele opgaven til en anden bruger (dig selv). Det kan du kun gøre, hvis du er logget på som administrator.  
-1. Klik på Arbejdsgang for at åbne dialogboksen.
-2. Klik på Vis historik.
-3. Opdater siden.
-4. Udvid sektionen Sporingsdetaljer.
-5. Vælg 'den linje, der starter med "Arbejdsgang for linjeelement aktiveret den"' i træet.
-6. Klik på Vis detaljer for arbejdsgang.
-7. Udvid sektionen Workflowopgaver.
-8. Klik på Tildel igen.
-9. Vælg Administrator i feltet Bruger.
-10. Klik på Tildel igen.
-11. Luk siden.
-12. Luk siden.
+## <a name="reassign-a-workflow-task"></a><span data-ttu-id="e3034-125">Tildel en opgave i en arbejdsgang til en anden</span><span class="sxs-lookup"><span data-stu-id="e3034-125">Reassign a workflow task</span></span>
+    * <span data-ttu-id="e3034-126">Den næste opgave er at oprette en tilbudsanmodning for at få tilbud på produktet fra leverandører.</span><span class="sxs-lookup"><span data-stu-id="e3034-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="e3034-127">I demodataene for USMF er arbejdsgangen for indkøbsrekvisitionen konfigureret med en regel, at hvis en leverandør ikke er markeret, eller hvis prisen er 0 for en linje, tildeles der en opgave til en bestemt arbejder om at oprette en tilbudsanmodning.</span><span class="sxs-lookup"><span data-stu-id="e3034-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="e3034-128">For at fortsætte med denne vejledning skal du gentildele opgaven til en anden bruger (dig selv).</span><span class="sxs-lookup"><span data-stu-id="e3034-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="e3034-129">Det kan du kun gøre, hvis du er logget på som administrator.</span><span class="sxs-lookup"><span data-stu-id="e3034-129">You can only do this if you are logged in as an Admin.</span></span>  
+1. <span data-ttu-id="e3034-130">Klik på Arbejdsgang for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="e3034-130">Click Workflow to open the drop dialog.</span></span>
+2. <span data-ttu-id="e3034-131">Klik på Vis historik.</span><span class="sxs-lookup"><span data-stu-id="e3034-131">Click View history.</span></span>
+3. <span data-ttu-id="e3034-132">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-132">Refresh the page.</span></span>
+4. <span data-ttu-id="e3034-133">Udvid sektionen Sporingsdetaljer.</span><span class="sxs-lookup"><span data-stu-id="e3034-133">Expand the Tracking details section.</span></span>
+5. <span data-ttu-id="e3034-134">Vælg 'den linje, der starter med "Arbejdsgang for linjeelement aktiveret den"' i træet.</span><span class="sxs-lookup"><span data-stu-id="e3034-134">In the tree, select 'the line that starts with “Line workflow activated on”'.</span></span>
+6. <span data-ttu-id="e3034-135">Klik på Vis detaljer for arbejdsgang.</span><span class="sxs-lookup"><span data-stu-id="e3034-135">Click View workflow details.</span></span>
+7. <span data-ttu-id="e3034-136">Udvid sektionen Workflowopgaver.</span><span class="sxs-lookup"><span data-stu-id="e3034-136">Expand the Work items section.</span></span>
+8. <span data-ttu-id="e3034-137">Klik på Tildel igen.</span><span class="sxs-lookup"><span data-stu-id="e3034-137">Click Reassign.</span></span>
+9. <span data-ttu-id="e3034-138">Vælg Administrator i feltet Bruger.</span><span class="sxs-lookup"><span data-stu-id="e3034-138">In the User field, select Admin.</span></span>
+10. <span data-ttu-id="e3034-139">Klik på Tildel igen.</span><span class="sxs-lookup"><span data-stu-id="e3034-139">Click Reassign.</span></span>
+11. <span data-ttu-id="e3034-140">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-140">Close the page.</span></span>
+12. <span data-ttu-id="e3034-141">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-141">Close the page.</span></span>
 
-## <a name="create-an-rfq"></a>Opret en tilbudsanmodning
-1. Opdater siden.
-2. Klik på Tilbudsanmodning.
-3. Derefter skal du vælge USMF i feltet Juridisk indkøbsenhed.
-    * Du skal vælge den samme juridiske enhed som den, der er på rekvisitionslinjen.  
-4. Markér den valgte række på listen.
-    * Hvis du havde flere linjer på indkøbsrekvisitionen, kan du vælge alle de linjer, du vil føje til tilbudsanmodningen.  
-5. Klik på OK.
-6. Opdater siden.
-7. Åbn faktaboksen, og udvid derefter sektionen Relaterede dokumenter.
-    * Du har måske allerede åbnet faktaboksen. Se efter ikonet med en pil, til højre for til/fra-knapperne Linjer/Sidehoved. Hvis pilen peger mod højre, er faktaboksen allerede åben. Hvis pilen peger mod venstre, skal du klikke på den for at åbne faktaboksen.  
-8. Klik på linket i feltet Tilbudsanmodning for at åbne den tilbudsanmodning, der netop er blevet oprettet.
-9. Klik på Overskrift.
-10. Klik på Tilføj.
-11. Indtast eller vælg en værdi i feltet Kreditorkonto.
-12. Klik på Tilføj.
-13. Indtast eller vælg en værdi i feltet Kreditorkonto.
-14. Klik på Send.
-15. Klik på OK.
-16. Klik på Indtast svar.
-17. Klik på Svar i handlingsruden.
-18. Klik på Kopiér data til svar.
-    * Derved kopieres data, f.eks. antal og datoer, fra tilbudsanmodningen til svaret.  
-19. Angiv et tal i feltet Enhedspris.
-    * Det er den pris, du har modtaget fra leverandøren. Du kan også angive yderligere oplysninger fra leverandøren.  
-20. Klik på Acceptér.
-21. Klik på OK.
+## <a name="create-an-rfq"></a><span data-ttu-id="e3034-142">Opret en tilbudsanmodning</span><span class="sxs-lookup"><span data-stu-id="e3034-142">Create an RFQ</span></span>
+1. <span data-ttu-id="e3034-143">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-143">Refresh the page.</span></span>
+2. <span data-ttu-id="e3034-144">Klik på Tilbudsanmodning.</span><span class="sxs-lookup"><span data-stu-id="e3034-144">Click Request for quotation.</span></span>
+3. <span data-ttu-id="e3034-145">Derefter skal du vælge USMF i feltet Juridisk indkøbsenhed.</span><span class="sxs-lookup"><span data-stu-id="e3034-145">In the Buying legal entity field, select USMF.</span></span>
+    * <span data-ttu-id="e3034-146">Du skal vælge den samme juridiske enhed som den, der er på rekvisitionslinjen.</span><span class="sxs-lookup"><span data-stu-id="e3034-146">You must select the same legal entity that’s on the requisition line.</span></span>  
+4. <span data-ttu-id="e3034-147">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="e3034-147">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e3034-148">Hvis du havde flere linjer på indkøbsrekvisitionen, kan du vælge alle de linjer, du vil føje til tilbudsanmodningen.</span><span class="sxs-lookup"><span data-stu-id="e3034-148">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
+5. <span data-ttu-id="e3034-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="e3034-149">Click OK.</span></span>
+6. <span data-ttu-id="e3034-150">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-150">Refresh the page.</span></span>
+7. <span data-ttu-id="e3034-151">Åbn faktaboksen, og udvid derefter sektionen Relaterede dokumenter.</span><span class="sxs-lookup"><span data-stu-id="e3034-151">Open the FactBox and then expand the Related documents section.</span></span>
+    * <span data-ttu-id="e3034-152">Du har måske allerede åbnet faktaboksen.</span><span class="sxs-lookup"><span data-stu-id="e3034-152">You may already have the FactBox open.</span></span> <span data-ttu-id="e3034-153">Se efter ikonet med en pil, til højre for til/fra-knapperne Linjer/Sidehoved.</span><span class="sxs-lookup"><span data-stu-id="e3034-153">Look for the icon with an arrow on it, to the right of the Lines/Header toggle buttons.</span></span> <span data-ttu-id="e3034-154">Hvis pilen peger mod højre, er faktaboksen allerede åben.</span><span class="sxs-lookup"><span data-stu-id="e3034-154">If the arrow is pointing to the right, the FactBox is already open.</span></span> <span data-ttu-id="e3034-155">Hvis pilen peger mod venstre, skal du klikke på den for at åbne faktaboksen.</span><span class="sxs-lookup"><span data-stu-id="e3034-155">If the arrow points to the left, click it to open the FactBox.</span></span>  
+8. <span data-ttu-id="e3034-156">Klik på linket i feltet Tilbudsanmodning for at åbne den tilbudsanmodning, der netop er blevet oprettet.</span><span class="sxs-lookup"><span data-stu-id="e3034-156">Click the link in the Request for quotation field to open the RFQ that was just created.</span></span>
+9. <span data-ttu-id="e3034-157">Klik på Overskrift.</span><span class="sxs-lookup"><span data-stu-id="e3034-157">Click Header.</span></span>
+10. <span data-ttu-id="e3034-158">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="e3034-158">Click Add.</span></span>
+11. <span data-ttu-id="e3034-159">Indtast eller vælg en værdi i feltet Kreditorkonto.</span><span class="sxs-lookup"><span data-stu-id="e3034-159">In the Vendor account field, enter or select a value.</span></span>
+12. <span data-ttu-id="e3034-160">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="e3034-160">Click Add.</span></span>
+13. <span data-ttu-id="e3034-161">Indtast eller vælg en værdi i feltet Kreditorkonto.</span><span class="sxs-lookup"><span data-stu-id="e3034-161">In the Vendor account field, enter or select a value.</span></span>
+14. <span data-ttu-id="e3034-162">Klik på Send.</span><span class="sxs-lookup"><span data-stu-id="e3034-162">Click Send.</span></span>
+15. <span data-ttu-id="e3034-163">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="e3034-163">Click OK.</span></span>
+16. <span data-ttu-id="e3034-164">Klik på Indtast svar.</span><span class="sxs-lookup"><span data-stu-id="e3034-164">Click Enter reply.</span></span>
+17. <span data-ttu-id="e3034-165">Klik på Svar i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="e3034-165">On the Action Pane, click Reply.</span></span>
+18. <span data-ttu-id="e3034-166">Klik på Kopiér data til svar.</span><span class="sxs-lookup"><span data-stu-id="e3034-166">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="e3034-167">Derved kopieres data, f.eks. antal og datoer, fra tilbudsanmodningen til svaret.</span><span class="sxs-lookup"><span data-stu-id="e3034-167">This copies data, such as the quantity and dates, from the RFQ to the reply .</span></span>  
+19. <span data-ttu-id="e3034-168">Angiv et tal i feltet Enhedspris.</span><span class="sxs-lookup"><span data-stu-id="e3034-168">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="e3034-169">Det er den pris, du har modtaget fra leverandøren.</span><span class="sxs-lookup"><span data-stu-id="e3034-169">This is the price that you’ve received from the vendor.</span></span> <span data-ttu-id="e3034-170">Du kan også angive yderligere oplysninger fra leverandøren.</span><span class="sxs-lookup"><span data-stu-id="e3034-170">You might also want to enter additional information from the vendor.</span></span>  
+20. <span data-ttu-id="e3034-171">Klik på Acceptér.</span><span class="sxs-lookup"><span data-stu-id="e3034-171">Click Accept.</span></span>
+21. <span data-ttu-id="e3034-172">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="e3034-172">Click OK.</span></span>
 
-## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a>Kontrollér, at leverandøren og prisen er blevet overført til rekvisitionen
-1. Luk siden.
-2. Klik på Linjer.
-3. Klik på Relaterede oplysninger.
-4. Klik på Indkøbsrekvisitionslinjer.
-5. Vælg den linje, der blev overført til tilbudsanmodningen.
-    * Kontrollér, at prisen og leverandøren er blevet kopieret til rekvisitionen.  
-6. Klik på Arbejdsgang for at åbne dialogboksen.
-7. Klik på Fuldført.
-8. Luk siden.
-9. Klik på Fuldført.
+## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="e3034-173">Kontrollér, at leverandøren og prisen er blevet overført til rekvisitionen</span><span class="sxs-lookup"><span data-stu-id="e3034-173">Verify that vendor and price have been transferred to the requisition</span></span>
+1. <span data-ttu-id="e3034-174">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-174">Close the page.</span></span>
+2. <span data-ttu-id="e3034-175">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="e3034-175">Click Lines.</span></span>
+3. <span data-ttu-id="e3034-176">Klik på Relaterede oplysninger.</span><span class="sxs-lookup"><span data-stu-id="e3034-176">Click Related information.</span></span>
+4. <span data-ttu-id="e3034-177">Klik på Indkøbsrekvisitionslinjer.</span><span class="sxs-lookup"><span data-stu-id="e3034-177">Click Purchase requisition.</span></span>
+5. <span data-ttu-id="e3034-178">Vælg den linje, der blev overført til tilbudsanmodningen.</span><span class="sxs-lookup"><span data-stu-id="e3034-178">Select the line that was transferred to the RFQ.</span></span>
+    * <span data-ttu-id="e3034-179">Kontrollér, at prisen og leverandøren er blevet kopieret til rekvisitionen.</span><span class="sxs-lookup"><span data-stu-id="e3034-179">Verify that the price and vendor have been copied to the requisition.</span></span>  
+6. <span data-ttu-id="e3034-180">Klik på Arbejdsgang for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="e3034-180">Click Workflow to open the drop dialog.</span></span>
+7. <span data-ttu-id="e3034-181">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="e3034-181">Click Complete.</span></span>
+8. <span data-ttu-id="e3034-182">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="e3034-182">Close the page.</span></span>
+9. <span data-ttu-id="e3034-183">Klik på Fuldført.</span><span class="sxs-lookup"><span data-stu-id="e3034-183">Click Complete.</span></span>
 
 

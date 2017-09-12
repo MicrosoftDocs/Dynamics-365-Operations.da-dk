@@ -19,15 +19,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 093047d43a39fa723eb99e3daf34cf33fa81a099
+ms.sourcegitcommit: 55cb0f20dbd671e39d0f409a87cec93efd9ce4d6
+ms.openlocfilehash: bab0f6ca21f4216b70cccf24f5781e0dbf48b7f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
 
-# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Indstillinger for beregning af hele beløbet og intervaller for momskoder
+# <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a><span data-ttu-id="2006f-103">Indstillinger for beregning af hele beløbet og intervaller for momskoder</span><span class="sxs-lookup"><span data-stu-id="2006f-103">Whole amount and Interval calculation options for sales tax codes</span></span>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,61 +35,61 @@ ms.lasthandoff: 05/25/2017
 
 
 
-I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
+<span data-ttu-id="2006f-104">I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.</span><span class="sxs-lookup"><span data-stu-id="2006f-104">This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.</span></span>
 
-Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge, hvordan en momskode skal beregnes.
--   Hele beløb – En momssats anvendes på hele det momspligtige beløb.
--   Interval – Det momspligtige beløb er opdelt i dele, hvor hver del ligger inden for et beløbsinterval, der er underlagt en bestemt momssats. Den del af beløbet, der ligger inden for et bestemt interval, pålægges moms i henhold til momssatsen for dette interval. Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
+<span data-ttu-id="2006f-105">Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb.</span><span class="sxs-lookup"><span data-stu-id="2006f-105">You can set up a sales tax code to be calculated based on a whole amount or an interval amount.</span></span> <span data-ttu-id="2006f-106">På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge, hvordan en momskode skal beregnes.</span><span class="sxs-lookup"><span data-stu-id="2006f-106">In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.</span></span>
+-   <span data-ttu-id="2006f-107">Hele beløb – En momssats anvendes på hele det momspligtige beløb.</span><span class="sxs-lookup"><span data-stu-id="2006f-107">Whole amount – The tax rate is applied to the whole taxable amount.</span></span>
+-   <span data-ttu-id="2006f-108">Interval – Det momspligtige beløb er opdelt i dele, hvor hver del ligger inden for et beløbsinterval, der er underlagt en bestemt momssats.</span><span class="sxs-lookup"><span data-stu-id="2006f-108">Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate.</span></span> <span data-ttu-id="2006f-109">Den del af beløbet, der ligger inden for et bestemt interval, pålægges moms i henhold til momssatsen for dette interval.</span><span class="sxs-lookup"><span data-stu-id="2006f-109">The part of the amount that falls in a given interval is taxed according to the tax rate for that interval.</span></span> <span data-ttu-id="2006f-110">Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.</span><span class="sxs-lookup"><span data-stu-id="2006f-110">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
 > [!NOTE]                                                                                                                              
-> Indstillingen Interval er kun tilgængelig, når du vælger Linje i en feltet Beregningsmåde i området Moms på siden Finansparametre. 
+> <span data-ttu-id="2006f-111">Indstillingen Interval er kun tilgængelig, når du vælger Linje i en feltet Beregningsmåde i området Moms på siden Finansparametre.</span><span class="sxs-lookup"><span data-stu-id="2006f-111">The Interval option is available only when you select Line in the Calculation method field in the Sales tax area of the General ledger parameters page.</span></span> 
 
-Du angiver Intervaller på siden Momskodeværdier ved at angive minimum- og maksimumgrænsebeløb pr. momssats. For moms, der skal beregnes af alle momspligtige beløb, uanset den valgte beregningsmetode, skal intervallerne overholde følgende regler:
--   Første interval skal have en minimumgrænse på nul.
--   Det sidste interval, der skal have en maksimumgrænse på nul, angiver uendeligt.
--   Maksimumgrænsen for alle intervaller er minimumgrænsen for det næste interval.
+<span data-ttu-id="2006f-112">Du angiver Intervaller på siden Momskodeværdier ved at angive minimum- og maksimumgrænsebeløb pr. momssats.</span><span class="sxs-lookup"><span data-stu-id="2006f-112">Intervals are set up in the Sales tax code values page by entering Minimum and Maximum limit amounts per tax rate.</span></span> <span data-ttu-id="2006f-113">For moms, der skal beregnes af alle momspligtige beløb, uanset den valgte beregningsmetode, skal intervallerne overholde følgende regler:</span><span class="sxs-lookup"><span data-stu-id="2006f-113">For taxes to be calculated on all taxable amounts, regardless of which calculation method is selected, intervals must follow these rules:</span></span>
+-   <span data-ttu-id="2006f-114">Første interval skal have en minimumgrænse på nul.</span><span class="sxs-lookup"><span data-stu-id="2006f-114">The first interval must have a Minimum limit of zero.</span></span>
+-   <span data-ttu-id="2006f-115">Det sidste interval, der skal have en maksimumgrænse på nul, angiver uendeligt.</span><span class="sxs-lookup"><span data-stu-id="2006f-115">The last interval must have a Maximum limit of zero, which indicates infinity.</span></span>
+-   <span data-ttu-id="2006f-116">Maksimumgrænsen for alle intervaller er minimumgrænsen for det næste interval.</span><span class="sxs-lookup"><span data-stu-id="2006f-116">The Maximum limit of an interval must be the Minimum limit of the next interval.</span></span>
 
-Hvis et beløb er maksimumgrænsen for det forrige interval og minimumgrænsen for det næste interval, gælder momssatsen for det første interval for beløbet. Hvis et beløb ligger uden for de intervaller, der er defineret af de øvre og nedre grænser, anvendes momssatsen 0.
+<span data-ttu-id="2006f-117">Hvis et beløb er maksimumgrænsen for det forrige interval og minimumgrænsen for det næste interval, gælder momssatsen for det første interval for beløbet.</span><span class="sxs-lookup"><span data-stu-id="2006f-117">If an amount is the Maximum limit of the previous interval and the Minimum limit of the next interval, the sales tax rate of the first interval will be applied to the amount.</span></span> <span data-ttu-id="2006f-118">Hvis et beløb ligger uden for de intervaller, der er defineret af de øvre og nedre grænser, anvendes momssatsen 0.</span><span class="sxs-lookup"><span data-stu-id="2006f-118">If an amount falls outside the intervals that are defined by upper and lower limits, a sales tax rate of zero will be applied.</span></span>
 
-## <a name="example-whole-amount-method-of-calculation"></a>Eksempel: Beregningsmåden er hele beløbet
-På siden Momskodeværdier er momssatserne defineret i følgende intervaller i:
+## <a name="example-whole-amount-method-of-calculation"></a><span data-ttu-id="2006f-119">Eksempel: Beregningsmåden er hele beløbet</span><span class="sxs-lookup"><span data-stu-id="2006f-119">Example: Whole amount method of calculation</span></span>
+<span data-ttu-id="2006f-120">På siden Momskodeværdier er momssatserne defineret i følgende intervaller i:</span><span class="sxs-lookup"><span data-stu-id="2006f-120">In the Sales tax code values page, sales tax rates are set up in the following intervals:</span></span>
 |                   |                   |              |
 |-------------------|-------------------|--------------|
-| **Minimumsgrænse** | **Maksimumgrænse** | **Momssats** |
-| 0,00              | 50,00             | 30 %          |
-| 50,00             | 100,00            | 20 %          |
-| 100,00            | 0,00              | 10 %          |
+| <span data-ttu-id="2006f-121">**Minimumsgrænse**</span><span class="sxs-lookup"><span data-stu-id="2006f-121">**Minimum limit**</span></span> | <span data-ttu-id="2006f-122">**Maksimumgrænse**</span><span class="sxs-lookup"><span data-stu-id="2006f-122">**Maximum limit**</span></span> | <span data-ttu-id="2006f-123">**Momssats**</span><span class="sxs-lookup"><span data-stu-id="2006f-123">**Tax rate**</span></span> |
+| <span data-ttu-id="2006f-124">0,00</span><span class="sxs-lookup"><span data-stu-id="2006f-124">0.00</span></span>              | <span data-ttu-id="2006f-125">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-125">50.00</span></span>             | <span data-ttu-id="2006f-126">30 %</span><span class="sxs-lookup"><span data-stu-id="2006f-126">30%</span></span>          |
+| <span data-ttu-id="2006f-127">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-127">50.00</span></span>             | <span data-ttu-id="2006f-128">100,00</span><span class="sxs-lookup"><span data-stu-id="2006f-128">100.00</span></span>            | <span data-ttu-id="2006f-129">20 %</span><span class="sxs-lookup"><span data-stu-id="2006f-129">20%</span></span>          |
+| <span data-ttu-id="2006f-130">100,00</span><span class="sxs-lookup"><span data-stu-id="2006f-130">100.00</span></span>            | <span data-ttu-id="2006f-131">0,00</span><span class="sxs-lookup"><span data-stu-id="2006f-131">0.00</span></span>              | <span data-ttu-id="2006f-132">10 %</span><span class="sxs-lookup"><span data-stu-id="2006f-132">10%</span></span>          |
 
-Momsen beregnes af hele det momspligtige beløb.
+<span data-ttu-id="2006f-133">Momsen beregnes af hele det momspligtige beløb.</span><span class="sxs-lookup"><span data-stu-id="2006f-133">The sales tax is calculated on the whole taxable amount.</span></span>
 
-| Momspligtigt beløb (pris) | Kalkulation    | Moms |
+| <span data-ttu-id="2006f-134">Momspligtigt beløb (pris)</span><span class="sxs-lookup"><span data-stu-id="2006f-134">Taxable amount (price)</span></span> | <span data-ttu-id="2006f-135">Kalkulation</span><span class="sxs-lookup"><span data-stu-id="2006f-135">Calculation</span></span>    | <span data-ttu-id="2006f-136">Moms</span><span class="sxs-lookup"><span data-stu-id="2006f-136">Sales tax</span></span> |
 |------------------------|----------------|-----------|
-| 35,00                  | 35,00 \* 0,30  | 10,50     |
-| 50,00                  | 50,00 \* 0,30  | 15,00     |
-| 85,00                  | 85,00 \* 0,20  | 17,00     |
-| 305,00                 | 305,00 \* 0,10 | 30,50     |
+| <span data-ttu-id="2006f-137">35,00</span><span class="sxs-lookup"><span data-stu-id="2006f-137">35.00</span></span>                  | <span data-ttu-id="2006f-138">35,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="2006f-138">35.00 \* 0.30</span></span>  | <span data-ttu-id="2006f-139">10,50</span><span class="sxs-lookup"><span data-stu-id="2006f-139">10.50</span></span>     |
+| <span data-ttu-id="2006f-140">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-140">50.00</span></span>                  | <span data-ttu-id="2006f-141">50,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="2006f-141">50.00 \* 0.30</span></span>  | <span data-ttu-id="2006f-142">15,00</span><span class="sxs-lookup"><span data-stu-id="2006f-142">15.00</span></span>     |
+| <span data-ttu-id="2006f-143">85,00</span><span class="sxs-lookup"><span data-stu-id="2006f-143">85.00</span></span>                  | <span data-ttu-id="2006f-144">85,00 \* 0,20</span><span class="sxs-lookup"><span data-stu-id="2006f-144">85.00 \* 0.20</span></span>  | <span data-ttu-id="2006f-145">17,00</span><span class="sxs-lookup"><span data-stu-id="2006f-145">17.00</span></span>     |
+| <span data-ttu-id="2006f-146">305,00</span><span class="sxs-lookup"><span data-stu-id="2006f-146">305.00</span></span>                 | <span data-ttu-id="2006f-147">305,00 \* 0,10</span><span class="sxs-lookup"><span data-stu-id="2006f-147">305.00 \* 0.10</span></span> | <span data-ttu-id="2006f-148">30,50</span><span class="sxs-lookup"><span data-stu-id="2006f-148">30.50</span></span>     |
 
-## <a name="example-interval-method-of-calculation"></a>Eksempel: Beregningsmåde er interval
-På siden Værdier er momssatserne defineret i følgende intervaller:
+## <a name="example-interval-method-of-calculation"></a><span data-ttu-id="2006f-149">Eksempel: Beregningsmåde er interval</span><span class="sxs-lookup"><span data-stu-id="2006f-149">Example: Interval method of calculation</span></span>
+<span data-ttu-id="2006f-150">På siden Værdier er momssatserne defineret i følgende intervaller:</span><span class="sxs-lookup"><span data-stu-id="2006f-150">In the Values page, sales tax rates are set up in the following intervals:</span></span>
 
 |                   |                   |              |
 |-------------------|-------------------|--------------|
-| **Minimumsgrænse** | **Maksimumgrænse** | **Momssats** |
-| 0,00              | 50,00             | 30 %          |
-| 50,00             | 100,00            | 20 %          |
-| 100,00            | 0,00              | 10 %          |
+| <span data-ttu-id="2006f-151">**Minimumsgrænse**</span><span class="sxs-lookup"><span data-stu-id="2006f-151">**Minimum limit**</span></span> | <span data-ttu-id="2006f-152">**Maksimumgrænse**</span><span class="sxs-lookup"><span data-stu-id="2006f-152">**Maximum limit**</span></span> | <span data-ttu-id="2006f-153">**Momssats**</span><span class="sxs-lookup"><span data-stu-id="2006f-153">**Tax rate**</span></span> |
+| <span data-ttu-id="2006f-154">0,00</span><span class="sxs-lookup"><span data-stu-id="2006f-154">0.00</span></span>              | <span data-ttu-id="2006f-155">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-155">50.00</span></span>             | <span data-ttu-id="2006f-156">30 %</span><span class="sxs-lookup"><span data-stu-id="2006f-156">30%</span></span>          |
+| <span data-ttu-id="2006f-157">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-157">50.00</span></span>             | <span data-ttu-id="2006f-158">100,00</span><span class="sxs-lookup"><span data-stu-id="2006f-158">100.00</span></span>            | <span data-ttu-id="2006f-159">20 %</span><span class="sxs-lookup"><span data-stu-id="2006f-159">20%</span></span>          |
+| <span data-ttu-id="2006f-160">100,00</span><span class="sxs-lookup"><span data-stu-id="2006f-160">100.00</span></span>            | <span data-ttu-id="2006f-161">0,00</span><span class="sxs-lookup"><span data-stu-id="2006f-161">0.00</span></span>              | <span data-ttu-id="2006f-162">10 %</span><span class="sxs-lookup"><span data-stu-id="2006f-162">10%</span></span>          |
 
-Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
+<span data-ttu-id="2006f-163">Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.</span><span class="sxs-lookup"><span data-stu-id="2006f-163">The sales tax is the sum of the tax amounts that are calculated for each amount interval.</span></span>
 
-| Momspligtigt beløb (pris) | Kalkulation                                                               | Moms |
+| <span data-ttu-id="2006f-164">Momspligtigt beløb (pris)</span><span class="sxs-lookup"><span data-stu-id="2006f-164">Taxable amount (price)</span></span> | <span data-ttu-id="2006f-165">Kalkulation</span><span class="sxs-lookup"><span data-stu-id="2006f-165">Calculation</span></span>                                                               | <span data-ttu-id="2006f-166">Moms</span><span class="sxs-lookup"><span data-stu-id="2006f-166">Sales tax</span></span> |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35,00 \* 0,30                                                             | 10,50     |
-| 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
-| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
-| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
+| <span data-ttu-id="2006f-167">35,00</span><span class="sxs-lookup"><span data-stu-id="2006f-167">35.00</span></span>                  | <span data-ttu-id="2006f-168">35,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="2006f-168">35.00 \* 0.30</span></span>                                                             | <span data-ttu-id="2006f-169">10,50</span><span class="sxs-lookup"><span data-stu-id="2006f-169">10.50</span></span>     |
+| <span data-ttu-id="2006f-170">50,00</span><span class="sxs-lookup"><span data-stu-id="2006f-170">50.00</span></span>                  | <span data-ttu-id="2006f-171">50,00 \* 0,30</span><span class="sxs-lookup"><span data-stu-id="2006f-171">50.00 \* 0.30</span></span>                                                             | <span data-ttu-id="2006f-172">15,00</span><span class="sxs-lookup"><span data-stu-id="2006f-172">15.00</span></span>     |
+| <span data-ttu-id="2006f-173">85,00</span><span class="sxs-lookup"><span data-stu-id="2006f-173">85.00</span></span>                  | <span data-ttu-id="2006f-174">(50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)</span><span class="sxs-lookup"><span data-stu-id="2006f-174">(50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)</span></span>                          | <span data-ttu-id="2006f-175">22,00</span><span class="sxs-lookup"><span data-stu-id="2006f-175">22.00</span></span>     |
+| <span data-ttu-id="2006f-176">305,00</span><span class="sxs-lookup"><span data-stu-id="2006f-176">305.00</span></span>                 | <span data-ttu-id="2006f-177">(50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50)</span><span class="sxs-lookup"><span data-stu-id="2006f-177">(50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50)</span></span> | <span data-ttu-id="2006f-178">45,50</span><span class="sxs-lookup"><span data-stu-id="2006f-178">45.50</span></span>     |
 
  
 
-Du kan finde flere oplysninger i [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md).
+<span data-ttu-id="2006f-179">Du kan finde flere oplysninger i [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md).</span><span class="sxs-lookup"><span data-stu-id="2006f-179">For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).</span></span>
 
 
 

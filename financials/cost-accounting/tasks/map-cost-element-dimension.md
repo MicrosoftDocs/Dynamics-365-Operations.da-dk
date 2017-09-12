@@ -16,32 +16,32 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6b99e1b5fc86bd1972766c8154141e9dd26bb7b0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3ff31db3dbb6da9570bb85bbcaa3b444852d91d7
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="map-a-cost-element-dimension"></a>Tilknytte en dimension for omkostningselement
+# <a name="map-a-cost-element-dimension"></a><span data-ttu-id="f3727-103">Tilknytte en dimension for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="f3727-103">Map a cost element dimension</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-En omkostningscontroller kan bruge denne procedure til at knytte en dimension for et omkostningselement til en dimension for et omkostningselement i den juridiske enhed for MXMF. Denne registrering bruger USP2-demodatafirmaet.
+<span data-ttu-id="f3727-104">En omkostningscontroller kan bruge denne procedure til at knytte en dimension for et omkostningselement til en dimension for et omkostningselement i den juridiske enhed for MXMF.</span><span class="sxs-lookup"><span data-stu-id="f3727-104">A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity.</span></span> <span data-ttu-id="f3727-105">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="f3727-105">This recording uses the USP2 demo data company.</span></span>
 
-1. Gå til Omkostningsregnskab > Dimensioner > Dimensioner for omkostningselement.
-2. Find og vælg den ønskede post på listen.
-    * Vælg Omkostningselementer i dette eksempel.  
-3. Klik på Tilknytninger af dimensioner.
-4. Klik på Konfigurer tilknytninger fra denne dimension.
-5. Klik på Ny.
-6. Indtast eller vælg en værdi i feltet Til dimension.
-    * Vælg MXMF-omkostningselementer i dette eksempel.  
-7. Klik på Ny.
-8. Markér den valgte række på listen.
-9. Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.
-    * I dette eksempel skal du vælge dimensionsmedlem 606400 Udgift til telefon og fax.  
-10. Indtast eller vælg en værdi i feltet Til dimensionsmedlem.
-    * I dette eksempel skal du vælge dimensionsmedlem 6001004 Telefono.  
-11. Klik på Gem.
+1. <span data-ttu-id="f3727-106">Gå til Omkostningsregnskab > Dimensioner > Dimensioner for omkostningselement.</span><span class="sxs-lookup"><span data-stu-id="f3727-106">Go to Cost accounting > Dimensions > Cost element dimensions.</span></span>
+2. <span data-ttu-id="f3727-107">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="f3727-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="f3727-108">Vælg Omkostningselementer i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="f3727-108">For this example, select Cost elements.</span></span>  
+3. <span data-ttu-id="f3727-109">Klik på Tilknytninger af dimensioner.</span><span class="sxs-lookup"><span data-stu-id="f3727-109">Click Dimension mappings.</span></span>
+4. <span data-ttu-id="f3727-110">Klik på Konfigurer tilknytninger fra denne dimension.</span><span class="sxs-lookup"><span data-stu-id="f3727-110">Click Configure mappings from this dimension.</span></span>
+5. <span data-ttu-id="f3727-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="f3727-111">Click New.</span></span>
+6. <span data-ttu-id="f3727-112">Indtast eller vælg en værdi i feltet Til dimension.</span><span class="sxs-lookup"><span data-stu-id="f3727-112">In the To dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="f3727-113">Vælg MXMF-omkostningselementer i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="f3727-113">For this example, select MXMF Cost elements.</span></span>  
+7. <span data-ttu-id="f3727-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="f3727-114">Click New.</span></span>
+8. <span data-ttu-id="f3727-115">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="f3727-115">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="f3727-116">Indtast eller vælg en værdi i feltet Fra dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f3727-116">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="f3727-117">I dette eksempel skal du vælge dimensionsmedlem 606400 Udgift til telefon og fax.</span><span class="sxs-lookup"><span data-stu-id="f3727-117">For this example, select dimension member 606400 Telephone & Fax Expense.</span></span>  
+10. <span data-ttu-id="f3727-118">Indtast eller vælg en værdi i feltet Til dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f3727-118">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="f3727-119">I dette eksempel skal du vælge dimensionsmedlem 6001004 Telefono.</span><span class="sxs-lookup"><span data-stu-id="f3727-119">For this example, select dimension member 6001004 Telefono.</span></span>  
+11. <span data-ttu-id="f3727-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="f3727-120">Click Save.</span></span>
 
 

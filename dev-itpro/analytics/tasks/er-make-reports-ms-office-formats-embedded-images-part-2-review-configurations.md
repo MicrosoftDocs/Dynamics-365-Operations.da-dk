@@ -16,80 +16,80 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 21e73f9e7e3fbab4c62786e689f72127598d1961
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 19757b1b8f932113361b6e5d210a66f149a212f6
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>Gennemgå konfigurationer til udarbejdelse af rapporter i Microsoft Office-formater med integrerede billeder til elektronisk rapportering (ER)
+# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a><span data-ttu-id="bb0f5-103">Gennemgå konfigurationer til udarbejdelse af rapporter i Microsoft Office-formater med integrerede billeder til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="bb0f5-103">Review configurations to make reports in Microsoft Office formats with embedded images for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "ER Oprette rapporter i Microsoft Office-formater med integrerede billeder (Del 1: Konfigurere parametre)".
+<span data-ttu-id="bb0f5-104">For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "ER Oprette rapporter i Microsoft Office-formater med integrerede billeder (Del 1: Konfigurere parametre)".</span><span class="sxs-lookup"><span data-stu-id="bb0f5-104">To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)” task guide.</span></span>
 
-Denne procedure viser, hvordan du designer elektroniske rapporteringskonfigurationer (ER) for at generere elektroniske dokumenter, der indeholder integrerede billeder i Microsoft Excel og Microsoft Word. I dette eksempel skal du gennemse ER-konfigurationer for eksempelfirmaet Litware Inc. 
+<span data-ttu-id="bb0f5-105">Denne procedure viser, hvordan du designer elektroniske rapporteringskonfigurationer (ER) for at generere elektroniske dokumenter, der indeholder integrerede billeder i Microsoft Excel og Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-105">This procedure shows how to design Electronic reporting (ER) configurations to generate electronic documents that contain embedded images in Microsoft Excel and Microsoft Word.</span></span> <span data-ttu-id="bb0f5-106">I dette eksempel skal du gennemse ER-konfigurationer for eksempelfirmaet Litware Inc.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-106">In this example, you will review ER configurations for the sample company Litware, Inc.</span></span> 
 
-Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Trinnene kan udføres ved hjælp af USMF datasættet.
+<span data-ttu-id="bb0f5-107">Denne procedure er beregnet til brugere, der har fået tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="bb0f5-108">Trinnene kan udføres ved hjælp af USMF datasættet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-108">The steps can be completed by using the USMF data set.</span></span>
 
 
-## <a name="review-the-imported-data-model"></a>Gennemse den importerede datamodel
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-2. Vælg 'Model for checks' i træet.
-3. Klik på Designer.
-    * Denne model er udviklet til at repræsentere betalingschecks fra en forretningsmæssig betragtning og tilknytningen af denne model til programmets datakilder. Gennemse denne model ved hjælp af ER Operations-designeren. Bemærk, at attributterne for de modelelementer, der præsenteres: struktur, navn, beskrivelse, datatype og så videre.   
-4. Udvid 'root' i træet.
-5. Vælg 'rod\checks' i træet.
-6. Udvid 'rod\checks' i træet.
-7. Udvid 'rod\checks\attributter' i træet.
-8. Udvid 'rod\indbetaler' i træet.
-9. Vælg 'rod\istestrun' i træet.
-10. Vælg 'rod\layout' i træet.
-    * Layoutelementet for denne model repræsenterer detaljerede oplysninger om udskrivning af checkformularlayoutet for den valgte bankkonto. Den indeholder også to noder af datatypen Container til lagring af billeder.   
-11. Udvid 'rod\layout' i træet.
-12. Vælg 'rod\layout\firmalogo' i træet.
-13. Vælg 'rod\layout\firmalogo' i træet.
-14. Vælg 'rod\layout\firmalogo\billede' i træet.
-15. Vælg 'rod\layout\firmalogo\isprinted' i træet.
-16. Vælg 'rod\layout\signatur' i træet.
-17. Udvid 'rod\layout\signatur' i træet.
-18. Vælg 'rod\layout\signatur\billede' i træet.
-19. Vælg 'rod\layout\signatur\isprinted' i træet.
-    * Bemærk, at de to billeddatamodelelementer er bundet til felterne i de tabeller, der indeholder billeder af firmaets logo og den autoriserede persons signatur i binært format.  
-20. Udvid 'rod\layout\vandmærke' i træet.
-21. Klik på Tilknyt model til datakilde.
-22. Klik på Designer.
-23. Udvid 'chequesselected' i træet.
-24. Udvid 'layout' i træet.
-25. Vælg 'layout\firmalogo' i træet.
-26. Udvid 'layout\signatur' i træet.
-27. Udvid 'layout\vandmærke' i træet.
-28. Slå "Vis detaljer" til.
-    * Bemærk, at checkdatamodelelementet er bundet til tabellen TmpChequePrintout, der på kørselstidspunktet indeholder poster for checks, som brugeren har valgt til udskrivning.   
-29. Luk siden.
-30. Luk siden.
-31. Luk siden.
+## <a name="review-the-imported-data-model"></a><span data-ttu-id="bb0f5-109">Gennemse den importerede datamodel</span><span class="sxs-lookup"><span data-stu-id="bb0f5-109">Review the imported data model</span></span>
+1. <span data-ttu-id="bb0f5-110">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="bb0f5-111">Vælg 'Model for checks' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-111">In the tree, select 'Model for cheques'.</span></span>
+3. <span data-ttu-id="bb0f5-112">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-112">Click Designer.</span></span>
+    * <span data-ttu-id="bb0f5-113">Denne model er udviklet til at repræsentere betalingschecks fra en forretningsmæssig betragtning og tilknytningen af denne model til programmets datakilder.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-113">This model is designed to represent payment cheques from the business standpoint and the mapping of this model to the application’s data sources.</span></span> <span data-ttu-id="bb0f5-114">Gennemse denne model ved hjælp af ER Operations-designeren.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-114">Review this model by the ER Operations designer.</span></span> <span data-ttu-id="bb0f5-115">Bemærk, at attributterne for de modelelementer, der præsenteres: struktur, navn, beskrivelse, datatype og så videre.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-115">Note the attributes of the model elements that are presented: structure, name, description, data type, and so on.</span></span>   
+4. <span data-ttu-id="bb0f5-116">Udvid 'root' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-116">In the tree, expand 'root'.</span></span>
+5. <span data-ttu-id="bb0f5-117">Vælg 'rod\checks' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-117">In the tree, select 'root\cheques'.</span></span>
+6. <span data-ttu-id="bb0f5-118">Udvid 'rod\checks' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-118">In the tree, expand 'root\cheques'.</span></span>
+7. <span data-ttu-id="bb0f5-119">Udvid 'rod\checks\attributter' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-119">In the tree, expand 'root\cheques\attributes'.</span></span>
+8. <span data-ttu-id="bb0f5-120">Udvid 'rod\indbetaler' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-120">In the tree, expand 'root\payer'.</span></span>
+9. <span data-ttu-id="bb0f5-121">Vælg 'rod\istestrun' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-121">In the tree, select 'root\istestrun'.</span></span>
+10. <span data-ttu-id="bb0f5-122">Vælg 'rod\layout' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-122">In the tree, select 'root\layout'.</span></span>
+    * <span data-ttu-id="bb0f5-123">Layoutelementet for denne model repræsenterer detaljerede oplysninger om udskrivning af checkformularlayoutet for den valgte bankkonto.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-123">The layout element of this model represents the details of the printing cheque form layout for the selected bank account.</span></span> <span data-ttu-id="bb0f5-124">Den indeholder også to noder af datatypen Container til lagring af billeder.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-124">It also includes two nodes of the Container data type to store images.</span></span>   
+11. <span data-ttu-id="bb0f5-125">Udvid 'rod\layout' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-125">In the tree, expand 'root\layout'.</span></span>
+12. <span data-ttu-id="bb0f5-126">Vælg 'rod\layout\firmalogo' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-126">In the tree, select 'root\layout\company logo'.</span></span>
+13. <span data-ttu-id="bb0f5-127">Vælg 'rod\layout\firmalogo' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-127">In the tree, expand 'root\layout\company logo'.</span></span>
+14. <span data-ttu-id="bb0f5-128">Vælg 'rod\layout\firmalogo\billede' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-128">In the tree, select 'root\layout\company logo\image'.</span></span>
+15. <span data-ttu-id="bb0f5-129">Vælg 'rod\layout\firmalogo\isprinted' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-129">In the tree, select 'root\layout\company logo\isprinted'.</span></span>
+16. <span data-ttu-id="bb0f5-130">Vælg 'rod\layout\signatur' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-130">In the tree, select 'root\layout\signature'.</span></span>
+17. <span data-ttu-id="bb0f5-131">Udvid 'rod\layout\signatur' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-131">In the tree, expand 'root\layout\signature'.</span></span>
+18. <span data-ttu-id="bb0f5-132">Vælg 'rod\layout\signatur\billede' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-132">In the tree, select 'root\layout\signature\image'.</span></span>
+19. <span data-ttu-id="bb0f5-133">Vælg 'rod\layout\signatur\isprinted' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-133">In the tree, select 'root\layout\signature\isprinted'.</span></span>
+    * <span data-ttu-id="bb0f5-134">Bemærk, at de to billeddatamodelelementer er bundet til felterne i de tabeller, der indeholder billeder af firmaets logo og den autoriserede persons signatur i binært format.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-134">Note that two image data model elements are bound to the fields of the tables that contain images of the company logo and the authorized person’s signature in binary format.</span></span>  
+20. <span data-ttu-id="bb0f5-135">Udvid 'rod\layout\vandmærke' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-135">In the tree, expand 'root\layout\watermark'.</span></span>
+21. <span data-ttu-id="bb0f5-136">Klik på Tilknyt model til datakilde.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-136">Click Map model to datasource.</span></span>
+22. <span data-ttu-id="bb0f5-137">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-137">Click Designer.</span></span>
+23. <span data-ttu-id="bb0f5-138">Udvid 'chequesselected' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-138">In the tree, expand 'chequesselected'.</span></span>
+24. <span data-ttu-id="bb0f5-139">Udvid 'layout' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-139">In the tree, expand 'layout'.</span></span>
+25. <span data-ttu-id="bb0f5-140">Vælg 'layout\firmalogo' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-140">In the tree, expand 'layout\company logo'.</span></span>
+26. <span data-ttu-id="bb0f5-141">Udvid 'layout\signatur' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-141">In the tree, expand 'layout\signature'.</span></span>
+27. <span data-ttu-id="bb0f5-142">Udvid 'layout\vandmærke' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-142">In the tree, expand 'layout\watermark'.</span></span>
+28. <span data-ttu-id="bb0f5-143">Slå "Vis detaljer" til.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-143">Toggle 'Show details' on.</span></span>
+    * <span data-ttu-id="bb0f5-144">Bemærk, at checkdatamodelelementet er bundet til tabellen TmpChequePrintout, der på kørselstidspunktet indeholder poster for checks, som brugeren har valgt til udskrivning.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-144">Note that the cheques data model element is bound to the TmpChequePrintout table that, at runtime, will contain records for cheques that the user has selected for printing.</span></span>   
+29. <span data-ttu-id="bb0f5-145">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-145">Close the page.</span></span>
+30. <span data-ttu-id="bb0f5-146">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-146">Close the page.</span></span>
+31. <span data-ttu-id="bb0f5-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-147">Close the page.</span></span>
 
-## <a name="review-the-imported-format"></a>Gennemse det importerede format
-1. Udvid 'Model for checks' i træet.
-2. Vælg 'Model for checks\Checkudskrivningsformat' i træet.
-3. Klik på Designer.
-4. Klik på Vedhæftede filer.
-5. Klik på Åbn.
-    * Åbn den vedhæftede rapports skabelon i Excel.  
-    * Gennemse den vedhæftede rapports Excel-skabelon, der skal bruges til at udskrive checks. Skabelonen indeholder to checks pr. side og er designet til at udskrive checks til den fortrykte formular. Bemærk, at to tomme billeder er integreret. Disse tomme billeder er beregnet til firmalogoet og signaturen fra den person, der godkender en betaling. Kontroller, at billederne hedder henholdsvis CompLogo og SignatureImage i Excel.   
-6. Luk siden.
-7. Udvid 'Rapport' i træet.
-8. Udvid 'Rapport\ChequeLines' i træet.
-9. Vælg 'Rapport\ChequeLines\CompLogo' i træet.
-10. Slå "Vis detaljer" til.
-    * Bemærk, at celleelementet for formatet 'CompLogo' repræsenterer det Excel-element, der bruges til at udfylde feltet med firmalogobilledet i rapporten. Dette formatelement er bundet til det billeddatamodelelement, der på kørselstidspunktet indeholder et billede af firmalogoet i binært format.   
-11. Klik på fanen Tilknytning.
-12. Klik på Rediger aktiveret.
-    * Bemærk, at du kan ændre celleelementet for formatet 'CompLogo', så det ikke længere er aktiveret. I så fald skjuler det tilknyttede Excel-billedelement et firmalogo i den genererede rapport. Hvis det aktiverede udtryk returnerer TRUE, og den definerede binding ikke viser et billede, viser det tilknyttede Excel-billedelement et billede, der er gemt i Excel-skabelonen.   
-13. Luk siden.
-14. Udvid 'labels: Container' i træet.
-    * Nogle etiketter, der vises i den fortrykte checkformular, medtages i rapporten, når den oprettes til testformål. Disse etiketter udskrives dog ikke under den egentlige udskrivning, fordi den fortrykte formular allerede indeholder dem.  
-15. Luk siden.
+## <a name="review-the-imported-format"></a><span data-ttu-id="bb0f5-148">Gennemse det importerede format</span><span class="sxs-lookup"><span data-stu-id="bb0f5-148">Review the imported format</span></span>
+1. <span data-ttu-id="bb0f5-149">Udvid 'Model for checks' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-149">In the tree, expand 'Model for cheques'.</span></span>
+2. <span data-ttu-id="bb0f5-150">Vælg 'Model for checks\Checkudskrivningsformat' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-150">In the tree, select 'Model for cheques\Cheques printing format'.</span></span>
+3. <span data-ttu-id="bb0f5-151">Klik på Designer.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-151">Click Designer.</span></span>
+4. <span data-ttu-id="bb0f5-152">Klik på Vedhæftede filer.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-152">Click Attachments.</span></span>
+5. <span data-ttu-id="bb0f5-153">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-153">Click Open.</span></span>
+    * <span data-ttu-id="bb0f5-154">Åbn den vedhæftede rapports skabelon i Excel.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-154">Open the attached report’s template in Excel.</span></span>  
+    * <span data-ttu-id="bb0f5-155">Gennemse den vedhæftede rapports Excel-skabelon, der skal bruges til at udskrive checks.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-155">Review the attached report’s Excel template that will be used to print cheques.</span></span> <span data-ttu-id="bb0f5-156">Skabelonen indeholder to checks pr. side og er designet til at udskrive checks til den fortrykte formular.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-156">The template contains two cheques per page and is designed to print cheques to the preprinted form.</span></span> <span data-ttu-id="bb0f5-157">Bemærk, at to tomme billeder er integreret.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-157">Note that two blank images are embedded.</span></span> <span data-ttu-id="bb0f5-158">Disse tomme billeder er beregnet til firmalogoet og signaturen fra den person, der godkender en betaling.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-158">These blank images are for the company logo and the signature of the person who is authorizing a payment.</span></span> <span data-ttu-id="bb0f5-159">Kontroller, at billederne hedder henholdsvis CompLogo og SignatureImage i Excel.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-159">Verify that the images are named CompLogo and SignatureImage, respectively, in Excel.</span></span>   
+6. <span data-ttu-id="bb0f5-160">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-160">Close the page.</span></span>
+7. <span data-ttu-id="bb0f5-161">Udvid 'Rapport' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-161">In the tree, expand 'Report'.</span></span>
+8. <span data-ttu-id="bb0f5-162">Udvid 'Rapport\ChequeLines' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-162">In the tree, expand 'Report\ChequeLines'.</span></span>
+9. <span data-ttu-id="bb0f5-163">Vælg 'Rapport\ChequeLines\CompLogo' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-163">In the tree, select 'Report\ChequeLines\CompLogo'.</span></span>
+10. <span data-ttu-id="bb0f5-164">Slå "Vis detaljer" til.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-164">Toggle 'Show details' on.</span></span>
+    * <span data-ttu-id="bb0f5-165">Bemærk, at celleelementet for formatet 'CompLogo' repræsenterer det Excel-element, der bruges til at udfylde feltet med firmalogobilledet i rapporten.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-165">Note that the ‘CompLogo’ format’s cell element represents the Excel item that is used to populate the company logo image in the report.</span></span> <span data-ttu-id="bb0f5-166">Dette formatelement er bundet til det billeddatamodelelement, der på kørselstidspunktet indeholder et billede af firmalogoet i binært format.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-166">This format element is bound to the image data model element that, at runtime, contains a company logo image in binary format.</span></span>   
+11. <span data-ttu-id="bb0f5-167">Klik på fanen Tilknytning.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-167">Click the Mapping tab.</span></span>
+12. <span data-ttu-id="bb0f5-168">Klik på Rediger aktiveret.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-168">Click Edit enabled.</span></span>
+    * <span data-ttu-id="bb0f5-169">Bemærk, at du kan ændre celleelementet for formatet 'CompLogo', så det ikke længere er aktiveret.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-169">Note that you can make the ‘CompLogo’ format’s cell element so that it’s no longer enabled.</span></span> <span data-ttu-id="bb0f5-170">I så fald skjuler det tilknyttede Excel-billedelement et firmalogo i den genererede rapport.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-170">In this case, the associated Excel image element will hide a company logo in the generated report.</span></span> <span data-ttu-id="bb0f5-171">Hvis det aktiverede udtryk returnerer TRUE, og den definerede binding ikke viser et billede, viser det tilknyttede Excel-billedelement et billede, der er gemt i Excel-skabelonen.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-171">If the enabled expression returns TRUE and the defined binding brings no image, the associated Excel image element will show an image that has been saved in the Excel template.</span></span>   
+13. <span data-ttu-id="bb0f5-172">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-172">Close the page.</span></span>
+14. <span data-ttu-id="bb0f5-173">Udvid 'labels: Container' i træet.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-173">In the tree, expand 'labels: Container'.</span></span>
+    * <span data-ttu-id="bb0f5-174">Nogle etiketter, der vises i den fortrykte checkformular, medtages i rapporten, når den oprettes til testformål.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-174">Some labels that are presented in the preprinted cheque form will be included in the report when it’s created for testing purposes.</span></span> <span data-ttu-id="bb0f5-175">Disse etiketter udskrives dog ikke under den egentlige udskrivning, fordi den fortrykte formular allerede indeholder dem.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-175">However, those labels won’t be printed during real printing, because the preprinted form already includes them.</span></span>  
+15. <span data-ttu-id="bb0f5-176">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bb0f5-176">Close the page.</span></span>
 
 

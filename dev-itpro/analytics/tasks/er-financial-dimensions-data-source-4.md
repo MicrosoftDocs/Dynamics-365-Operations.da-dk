@@ -16,34 +16,34 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f07e640d4b2a7f67d48df4c081819a55e7e68cda
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e319c9d11ccc4311437ce1e74d4f6c8be0e0de35
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Køre en rapport, der bruger økonomiske dimensioner som en datakilde til elektronisk rapportering (ER)
+# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="049e4-103">Køre en rapport, der bruger økonomiske dimensioner som en datakilde til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="049e4-103">Run a report that uses financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter. Disse trin kan udføres i DEMF-virksomheden.
+<span data-ttu-id="049e4-104">Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="049e4-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="049e4-105">Disse trin kan udføres i DEMF-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="049e4-105">These steps can be performed in the DEMF company.</span></span>
 
-For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER-brug af økonomiske dimensioner som datakilde (del 3: Design rapporten)". Du skal også konfigurere standarddokumenttyper på siden Parametre til elektronisk rapportering. Standarddokumenttyper angives også, når du henter og importerer en ER-konfiguration. 
+<span data-ttu-id="049e4-106">For at fuldføre disse trin skal du først udføre trinnene i proceduren den "ER-brug af økonomiske dimensioner som datakilde (del 3: Design rapporten)".</span><span class="sxs-lookup"><span data-stu-id="049e4-106">To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 3: Design the report)” procedure.</span></span> <span data-ttu-id="049e4-107">Du skal også konfigurere standarddokumenttyper på siden Parametre til elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="049e4-107">You must also configure default document types on the Electronic reporting parameters page.</span></span> <span data-ttu-id="049e4-108">Standarddokumenttyper angives også, når du henter og importerer en ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="049e4-108">Default document types are also set when you download and import any ER configuration.</span></span> 
 
 
-## <a name="run-report"></a>Kør rapporter
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-2. Udvid 'Eksempelmodel til økonomiske dimensioner' i træet.
-3. Vælg 'Eksempelmodel til økonomiske dimensioner\Finanskladderapport' i træet.
-4. Klik på Kør.
-5. I feltet Dimensionens navn skal du angive eller vælge en værdi.
-    * Hvis du vil vælge alle dimensioner i det aktuelle regnskab, skal du angive følgende: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-6. Udvid posterne for at inkludere sektion.
-7. Klik på Filtrér.
-8. Vælg rækken for tabellen Finanskladde og feltet Kladdebatchnummer.
-9. Skriv "00057" i feltet Kriterier.
-10. Klik på OK.
-11. Klik på OK.
-    * Gennemse det genererede output. Bemærk, at for hver transaktion for det markerede batch vises de økonomiske dimensioner fra det tilsvarende sæt dimensioner. Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne Dynamics 365 for Finance and Operations, Enterprise edition-forekomst.  
+## <a name="run-report"></a><span data-ttu-id="049e4-109">Kør rapporter</span><span class="sxs-lookup"><span data-stu-id="049e4-109">Run report</span></span>
+1. <span data-ttu-id="049e4-110">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="049e4-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="049e4-111">Udvid 'Eksempelmodel til økonomiske dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="049e4-111">In the tree, expand 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="049e4-112">Vælg 'Eksempelmodel til økonomiske dimensioner\Finanskladderapport' i træet.</span><span class="sxs-lookup"><span data-stu-id="049e4-112">In the tree, select 'Financial dimensions sample model\Ledger journal report'.</span></span>
+4. <span data-ttu-id="049e4-113">Klik på Kør.</span><span class="sxs-lookup"><span data-stu-id="049e4-113">Click Run.</span></span>
+5. <span data-ttu-id="049e4-114">I feltet Dimensionens navn skal du angive eller vælge en værdi.</span><span class="sxs-lookup"><span data-stu-id="049e4-114">In the Dimension name field, In the Dimension name field, enter or select a value..</span></span>
+    * <span data-ttu-id="049e4-115">Hvis du vil vælge alle dimensioner i det aktuelle regnskab, skal du angive følgende: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span><span class="sxs-lookup"><span data-stu-id="049e4-115">To select all dimensions in the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
+6. <span data-ttu-id="049e4-116">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="049e4-116">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="049e4-117">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="049e4-117">Click Filter.</span></span>
+8. <span data-ttu-id="049e4-118">Vælg rækken for tabellen Finanskladde og feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="049e4-118">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
+9. <span data-ttu-id="049e4-119">Skriv "00057" i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="049e4-119">In the Criteria field, type '00057'.</span></span>
+10. <span data-ttu-id="049e4-120">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="049e4-120">Click OK.</span></span>
+11. <span data-ttu-id="049e4-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="049e4-121">Click OK.</span></span>
+    * <span data-ttu-id="049e4-122">Gennemse det genererede output.</span><span class="sxs-lookup"><span data-stu-id="049e4-122">Review the generated output.</span></span> <span data-ttu-id="049e4-123">Bemærk, at for hver transaktion for det markerede batch vises de økonomiske dimensioner fra det tilsvarende sæt dimensioner.</span><span class="sxs-lookup"><span data-stu-id="049e4-123">Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented.</span></span> <span data-ttu-id="049e4-124">Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne Dynamics 365 for Finance and Operations, Enterprise edition-forekomst.</span><span class="sxs-lookup"><span data-stu-id="049e4-124">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.</span></span>  
 
 

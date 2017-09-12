@@ -16,144 +16,144 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: a20a2c720af7c981cced231c0f863a1bd8283f2c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f1c10e0f8275d928c1455cd99105aece8780e7f0
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-raw-materials-february-2016-only"></a>Oprette råmaterialer (kun februar 2016)
+# <a name="create-raw-materials-february-2016-only"></a><span data-ttu-id="5fdd0-103">Oprette råmaterialer (kun februar 2016)</span><span class="sxs-lookup"><span data-stu-id="5fdd0-103">Create raw materials (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprodukter. Det er den tredje opgave i styklisteberegningsserien. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
+<span data-ttu-id="5fdd0-104">Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprodukter.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-104">This task focuses on creating the components of finished and semi-finished products.</span></span> <span data-ttu-id="5fdd0-105">Det er den tredje opgave i styklisteberegningsserien.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-105">It is the third task in the BOM calculation series.</span></span> <span data-ttu-id="5fdd0-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-106">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-the-first-material"></a>Opret det første materiale
-1. Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Produktnummer.
-    * Skriv ITEM_A i dette eksempel.  
-4. Indtast eller vælg en værdi i feltet Varemodelgruppe.
-    * Vælg STD. STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.  
-5. Indtast eller vælg en værdi i feltet Varegruppe.
-    * Vælg f.eks. Lyd. Dette har ingen indflydelse på omkostningsberegninger.  
-6. Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.
-    * Vælg SiteWH. Kun lokation og lagersted bruges til demonstrationen.  
-7. Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.
-    * Sporingsdimensioner bliver ikke brugt i dette eksempel. Vælg Ingen.  
-8. Klik på OK.
-9. Klik på Styr lager i handlingsruden.
-10. Klik på Standardindstillinger for ordre.
-11. Indtast eller vælg en værdi i feltet Købssted.
-    * I dette eksempel skal du vælge Sted 1.  
-12. Indtast eller vælg en værdi i feltet Sted for lager.
-    * I dette eksempel skal du vælge Sted 1.  
-13. Indtast eller vælg en værdi i feltet Salgssted.
-    * I dette eksempel skal du vælge Sted 1.  
-14. Luk siden.
-15. Luk siden.
-16. Klik op linket i den valgte række på listen.
-    * Klik på ITEM_A.  
-17. Udvid sektionen Administrer omkostninger.
-18. Skriv en værdi i feltet Omkostningsgruppe.
-    * I dette eksempel skal du skrive M2.  
-19. Klik på Administrer omkostninger i handlingsruden.
-20. Klik på Varepris.
-21. Klik på Ny.
-22. Indtast eller vælg en værdi i feltet Version.
-    * I dette eksempel skal du vælge 10, som er en omkostningstype for standardomkostninger.  
-23. Indtast eller vælg en værdi i feltet Lokation.
-    * I dette eksempel skal du vælge Sted 1.  
-24. Angiv et tal i feltet Pris.
-    * I dette eksempel skal du skrive 10.  
-25. Klik på Gem.
-26. Klik på Aktivér afventende pris(er).
-27. Luk siden.
-28. Luk siden.
+## <a name="create-the-first-material"></a><span data-ttu-id="5fdd0-107">Opret det første materiale</span><span class="sxs-lookup"><span data-stu-id="5fdd0-107">Create the first material</span></span>
+1. <span data-ttu-id="5fdd0-108">Gå til Administration af produktoplysninger > Produkter > Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="5fdd0-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-109">Click New.</span></span>
+3. <span data-ttu-id="5fdd0-110">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-111">Skriv ITEM_A i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-111">For this example, enter ITEM_A.</span></span>  
+4. <span data-ttu-id="5fdd0-112">Indtast eller vælg en værdi i feltet Varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-112">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-113">Vælg STD.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-113">Select STD.</span></span> <span data-ttu-id="5fdd0-114">STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-114">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+5. <span data-ttu-id="5fdd0-115">Indtast eller vælg en værdi i feltet Varegruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-115">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-116">Vælg f.eks. Lyd.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-116">For example, select Audio.</span></span> <span data-ttu-id="5fdd0-117">Dette har ingen indflydelse på omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-117">This has no impact on cost calculations.</span></span>  
+6. <span data-ttu-id="5fdd0-118">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-118">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-119">Vælg SiteWH.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-119">Select SiteWH.</span></span> <span data-ttu-id="5fdd0-120">Kun lokation og lagersted bruges til demonstrationen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-120">Only Site and Warehouse will be used for the demonstration.</span></span>  
+7. <span data-ttu-id="5fdd0-121">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-121">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-122">Sporingsdimensioner bliver ikke brugt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-122">Tracking dimensions will not be used for this example.</span></span> <span data-ttu-id="5fdd0-123">Vælg Ingen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-123">Select None.</span></span>  
+8. <span data-ttu-id="5fdd0-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-124">Click OK.</span></span>
+9. <span data-ttu-id="5fdd0-125">Klik på Styr lager i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-125">On the Action Pane, click Manage inventory.</span></span>
+10. <span data-ttu-id="5fdd0-126">Klik på Standardindstillinger for ordre.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-126">Click Default order settings.</span></span>
+11. <span data-ttu-id="5fdd0-127">Indtast eller vælg en værdi i feltet Købssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-127">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-128">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-128">For this example, select Site 1.</span></span>  
+12. <span data-ttu-id="5fdd0-129">Indtast eller vælg en værdi i feltet Sted for lager.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-129">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-130">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-130">For this example, select Site 1.</span></span>  
+13. <span data-ttu-id="5fdd0-131">Indtast eller vælg en værdi i feltet Salgssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-131">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-132">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-132">For this example, select Site 1.</span></span>  
+14. <span data-ttu-id="5fdd0-133">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-133">Close the page.</span></span>
+15. <span data-ttu-id="5fdd0-134">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-134">Close the page.</span></span>
+16. <span data-ttu-id="5fdd0-135">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-135">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5fdd0-136">Klik på ITEM_A.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-136">Click ITEM_A.</span></span>  
+17. <span data-ttu-id="5fdd0-137">Udvid sektionen Administrer omkostninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-137">Expand the Manage costs section.</span></span>
+18. <span data-ttu-id="5fdd0-138">Skriv en værdi i feltet Omkostningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-138">In the Cost group field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-139">I dette eksempel skal du skrive M2.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-139">For this example, type M2.</span></span>  
+19. <span data-ttu-id="5fdd0-140">Klik på Administrer omkostninger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-140">On the Action Pane, click Manage costs.</span></span>
+20. <span data-ttu-id="5fdd0-141">Klik på Varepris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-141">Click Item price.</span></span>
+21. <span data-ttu-id="5fdd0-142">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-142">Click New.</span></span>
+22. <span data-ttu-id="5fdd0-143">Indtast eller vælg en værdi i feltet Version.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-143">In the Version field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-144">I dette eksempel skal du vælge 10, som er en omkostningstype for standardomkostninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-144">For this example, select 10, which is the Standard cost costing type.</span></span>  
+23. <span data-ttu-id="5fdd0-145">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-145">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-146">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-146">For this example, select Site 1.</span></span>  
+24. <span data-ttu-id="5fdd0-147">Angiv et tal i feltet Pris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-147">In the Price field, enter a number.</span></span>
+    * <span data-ttu-id="5fdd0-148">I dette eksempel skal du skrive 10.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-148">For this example, type 10.</span></span>  
+25. <span data-ttu-id="5fdd0-149">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-149">Click Save.</span></span>
+26. <span data-ttu-id="5fdd0-150">Klik på Aktivér afventende pris(er).</span><span class="sxs-lookup"><span data-stu-id="5fdd0-150">Click Activate pending price(s).</span></span>
+27. <span data-ttu-id="5fdd0-151">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-151">Close the page.</span></span>
+28. <span data-ttu-id="5fdd0-152">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-152">Close the page.</span></span>
 
-## <a name="create-the-second-material"></a>Opret det andet materiale
-1. Klik på Ny.
-2. Skriv en værdi i feltet Produktnummer.
-    * I dette eksempel skal du skrive ITEM_B.  
-3. Indtast eller vælg en værdi i feltet Varemodelgruppe.
-    * Vælg STD. STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.  
-4. Indtast eller vælg en værdi i feltet Varegruppe.
-    * Vælg f.eks. Lyd. Dette har ingen indflydelse på omkostningsberegninger.  
-5. Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.
-    * Vælg SiteWH. Kun lokalitet og lagersted bruges til dette eksempel.  
-6. Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.
-    * Sporingsdimensioner bliver ikke brugt i dette eksempel. Vælg Ingen.  
-7. Klik på OK.
-8. Klik på Styr lager i handlingsruden.
-9. Klik på Standardindstillinger for ordre.
-10. Indtast eller vælg en værdi i feltet Købssted.
-    * I dette eksempel skal du vælge Sted 1.  
-11. Indtast eller vælg en værdi i feltet Sted for lager.
-    * I dette eksempel skal du vælge Sted 1.  
-12. Indtast eller vælg en værdi i feltet Salgssted.
-    * I dette eksempel skal du vælge Sted 1.  
-13. Luk siden.
-14. Luk siden.
-15. Klik op linket i den valgte række på listen.
-    * Klik på ITEM_B.  
-16. Udvid sektionen Administrer omkostninger.
-17. Skriv en værdi i feltet Omkostningsgruppe.
-    * I dette eksempel skal du skrive M2.  
-18. Klik på Administrer omkostninger i handlingsruden.
-19. Klik på Varepris.
-20. Klik på Ny.
-21. Indtast eller vælg en værdi i feltet Version.
-    * I dette eksempel skal du vælge 10. Dette er omkostningstypen for standardomkostninger  
-22. Indtast eller vælg en værdi i feltet Lokation.
-    * I dette eksempel skal du vælge Sted 1.  
-23. Angiv et tal i feltet Pris.
-    * Skriv 10 i demonstrationen.  
-24. Klik på Gem.
-25. Klik på Aktivér afventende pris(er).
-26. Luk siden.
-27. Luk siden.
+## <a name="create-the-second-material"></a><span data-ttu-id="5fdd0-153">Opret det andet materiale</span><span class="sxs-lookup"><span data-stu-id="5fdd0-153">Create the second material</span></span>
+1. <span data-ttu-id="5fdd0-154">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-154">Click New.</span></span>
+2. <span data-ttu-id="5fdd0-155">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-155">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-156">I dette eksempel skal du skrive ITEM_B.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-156">For this example, type ITEM_B.</span></span>  
+3. <span data-ttu-id="5fdd0-157">Indtast eller vælg en værdi i feltet Varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-157">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-158">Vælg STD.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-158">Select STD.</span></span> <span data-ttu-id="5fdd0-159">STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-159">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+4. <span data-ttu-id="5fdd0-160">Indtast eller vælg en værdi i feltet Varegruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-160">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-161">Vælg f.eks. Lyd.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-161">For example, select Audio.</span></span> <span data-ttu-id="5fdd0-162">Dette har ingen indflydelse på omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-162">This has no impact on cost calculations.</span></span>  
+5. <span data-ttu-id="5fdd0-163">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-163">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-164">Vælg SiteWH.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-164">Select SiteWH.</span></span> <span data-ttu-id="5fdd0-165">Kun lokalitet og lagersted bruges til dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-165">Only Site and Warehouse will be used for this example.</span></span>  
+6. <span data-ttu-id="5fdd0-166">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-166">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-167">Sporingsdimensioner bliver ikke brugt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-167">Tracking dimensions will not be used for this example.</span></span> <span data-ttu-id="5fdd0-168">Vælg Ingen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-168">Select None.</span></span>  
+7. <span data-ttu-id="5fdd0-169">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-169">Click OK.</span></span>
+8. <span data-ttu-id="5fdd0-170">Klik på Styr lager i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-170">On the Action Pane, click Manage inventory.</span></span>
+9. <span data-ttu-id="5fdd0-171">Klik på Standardindstillinger for ordre.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-171">Click Default order settings.</span></span>
+10. <span data-ttu-id="5fdd0-172">Indtast eller vælg en værdi i feltet Købssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-172">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-173">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-173">For this example, select Site 1.</span></span>  
+11. <span data-ttu-id="5fdd0-174">Indtast eller vælg en værdi i feltet Sted for lager.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-174">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-175">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-175">For this example, select Site 1.</span></span>  
+12. <span data-ttu-id="5fdd0-176">Indtast eller vælg en værdi i feltet Salgssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-176">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-177">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-177">For this example, select Site 1.</span></span>  
+13. <span data-ttu-id="5fdd0-178">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-178">Close the page.</span></span>
+14. <span data-ttu-id="5fdd0-179">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-179">Close the page.</span></span>
+15. <span data-ttu-id="5fdd0-180">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-180">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5fdd0-181">Klik på ITEM_B.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-181">Click ITEM_B.</span></span>  
+16. <span data-ttu-id="5fdd0-182">Udvid sektionen Administrer omkostninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-182">Expand the Manage costs section.</span></span>
+17. <span data-ttu-id="5fdd0-183">Skriv en værdi i feltet Omkostningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-183">In the Cost group field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-184">I dette eksempel skal du skrive M2.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-184">For this example, type M2.</span></span>  
+18. <span data-ttu-id="5fdd0-185">Klik på Administrer omkostninger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-185">On the Action Pane, click Manage costs.</span></span>
+19. <span data-ttu-id="5fdd0-186">Klik på Varepris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-186">Click Item price.</span></span>
+20. <span data-ttu-id="5fdd0-187">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-187">Click New.</span></span>
+21. <span data-ttu-id="5fdd0-188">Indtast eller vælg en værdi i feltet Version.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-188">In the Version field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-189">I dette eksempel skal du vælge 10.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-189">For this example, select 10.</span></span> <span data-ttu-id="5fdd0-190">Dette er omkostningstypen for standardomkostninger</span><span class="sxs-lookup"><span data-stu-id="5fdd0-190">This is the Standard cost costing type.</span></span>  
+22. <span data-ttu-id="5fdd0-191">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-191">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-192">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-192">For this example, select Site 1.</span></span>  
+23. <span data-ttu-id="5fdd0-193">Angiv et tal i feltet Pris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-193">In the Price field, enter a number.</span></span>
+    * <span data-ttu-id="5fdd0-194">Skriv 10 i demonstrationen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-194">For the demonstration, type 10.</span></span>  
+24. <span data-ttu-id="5fdd0-195">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-195">Click Save.</span></span>
+25. <span data-ttu-id="5fdd0-196">Klik på Aktivér afventende pris(er).</span><span class="sxs-lookup"><span data-stu-id="5fdd0-196">Click Activate pending price(s).</span></span>
+26. <span data-ttu-id="5fdd0-197">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-197">Close the page.</span></span>
+27. <span data-ttu-id="5fdd0-198">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-198">Close the page.</span></span>
 
-## <a name="create-the-third-material"></a>Opret det tredje materiale
-1. Klik på Ny.
-2. Skriv en værdi i feltet Produktnummer.
-    * Skriv ITEM_C i demonstrationen  
-3. Indtast eller vælg en værdi i feltet Varemodelgruppe.
-    * Vælg STD. STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.  
-4. Indtast eller vælg en værdi i feltet Varegruppe.
-    * Vælg f.eks. Lyd. Dette har ingen indflydelse på omkostningsberegninger.  
-5. Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.
-    * Vælg SiteWH. Kun lokation og lagersted bruges til demonstrationen.  
-6. Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.
-    * Sporingsdimensioner bliver ikke brugt i dette eksempel. Vælg Ingen.  
-7. Klik på OK.
-8. Klik på Styr lager i handlingsruden.
-9. Klik på Standardindstillinger for ordre.
-10. Indtast eller vælg en værdi i feltet Købssted.
-    * I dette eksempel skal du vælge Sted 1.  
-11. Indtast eller vælg en værdi i feltet Sted for lager.
-    * I dette eksempel skal du vælge Sted 1.  
-12. Indtast eller vælg en værdi i feltet Salgssted.
-    * I dette eksempel skal du vælge Sted 1.  
-13. Luk siden.
-14. Luk siden.
-15. Klik op linket i den valgte række på listen.
-    * Klik på ITEM_C.  
-16. Udvid sektionen Administrer omkostninger.
-17. Skriv en værdi i feltet Omkostningsgruppe.
-    * I dette eksempel skal du skrive M1.  
-18. Klik på Administrer omkostninger i handlingsruden.
-19. Klik på Varepris.
-20. Klik på Ny.
-21. Indtast eller vælg en værdi i feltet Version.
-    * I dette eksempel skal du vælge 10. Dette er omkostningstypen for standardomkostninger  
-22. Indtast eller vælg en værdi i feltet Lokation.
-    * I dette eksempel skal du vælge Sted 1.  
-23. Angiv et tal i feltet Pris.
-    * I dette eksempel skal du skrive 10.  
-24. Klik på Gem.
-25. Klik på Aktivér afventende pris(er).
-26. Luk siden.
-27. Luk siden.
+## <a name="create-the-third-material"></a><span data-ttu-id="5fdd0-199">Opret det tredje materiale</span><span class="sxs-lookup"><span data-stu-id="5fdd0-199">Create the third material</span></span>
+1. <span data-ttu-id="5fdd0-200">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-200">Click New.</span></span>
+2. <span data-ttu-id="5fdd0-201">Skriv en værdi i feltet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-201">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-202">Skriv ITEM_C i demonstrationen</span><span class="sxs-lookup"><span data-stu-id="5fdd0-202">For the demonstration, type ITEM_C</span></span>  
+3. <span data-ttu-id="5fdd0-203">Indtast eller vælg en værdi i feltet Varemodelgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-203">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-204">Vælg STD.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-204">Select STD.</span></span> <span data-ttu-id="5fdd0-205">STD står for standardomkostninger og er den mest almindeligt anvendte model, når du arbejder med omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-205">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+4. <span data-ttu-id="5fdd0-206">Indtast eller vælg en værdi i feltet Varegruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-206">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-207">Vælg f.eks. Lyd.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-207">For example, select Audio.</span></span> <span data-ttu-id="5fdd0-208">Dette har ingen indflydelse på omkostningsberegninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-208">This has no impact on cost calculations.</span></span>  
+5. <span data-ttu-id="5fdd0-209">Indtast eller vælg en værdi i feltet Lagringsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-209">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-210">Vælg SiteWH.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-210">Select SiteWH.</span></span> <span data-ttu-id="5fdd0-211">Kun lokation og lagersted bruges til demonstrationen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-211">Only Site and Warehouse will be used for the demonstration.</span></span>  
+6. <span data-ttu-id="5fdd0-212">Indtast eller vælg en værdi i feltet Sporingsdimensionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-212">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-213">Sporingsdimensioner bliver ikke brugt i dette eksempel.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-213">Tracking dimensions will not be used for this example.</span></span> <span data-ttu-id="5fdd0-214">Vælg Ingen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-214">Select None.</span></span>  
+7. <span data-ttu-id="5fdd0-215">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-215">Click OK.</span></span>
+8. <span data-ttu-id="5fdd0-216">Klik på Styr lager i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-216">On the Action Pane, click Manage inventory.</span></span>
+9. <span data-ttu-id="5fdd0-217">Klik på Standardindstillinger for ordre.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-217">Click Default order settings.</span></span>
+10. <span data-ttu-id="5fdd0-218">Indtast eller vælg en værdi i feltet Købssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-218">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-219">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-219">For this example, select Site 1.</span></span>  
+11. <span data-ttu-id="5fdd0-220">Indtast eller vælg en værdi i feltet Sted for lager.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-220">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-221">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-221">For this example, select Site 1.</span></span>  
+12. <span data-ttu-id="5fdd0-222">Indtast eller vælg en værdi i feltet Salgssted.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-222">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-223">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-223">For this example, select Site 1.</span></span>  
+13. <span data-ttu-id="5fdd0-224">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-224">Close the page.</span></span>
+14. <span data-ttu-id="5fdd0-225">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-225">Close the page.</span></span>
+15. <span data-ttu-id="5fdd0-226">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-226">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="5fdd0-227">Klik på ITEM_C.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-227">Click ITEM_C.</span></span>  
+16. <span data-ttu-id="5fdd0-228">Udvid sektionen Administrer omkostninger.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-228">Expand the Manage costs section.</span></span>
+17. <span data-ttu-id="5fdd0-229">Skriv en værdi i feltet Omkostningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-229">In the Cost group field, type a value.</span></span>
+    * <span data-ttu-id="5fdd0-230">I dette eksempel skal du skrive M1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-230">For this example, type M1.</span></span>  
+18. <span data-ttu-id="5fdd0-231">Klik på Administrer omkostninger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-231">On the Action Pane, click Manage costs.</span></span>
+19. <span data-ttu-id="5fdd0-232">Klik på Varepris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-232">Click Item price.</span></span>
+20. <span data-ttu-id="5fdd0-233">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-233">Click New.</span></span>
+21. <span data-ttu-id="5fdd0-234">Indtast eller vælg en værdi i feltet Version.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-234">In the Version field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-235">I dette eksempel skal du vælge 10.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-235">For this example, select 10.</span></span> <span data-ttu-id="5fdd0-236">Dette er omkostningstypen for standardomkostninger</span><span class="sxs-lookup"><span data-stu-id="5fdd0-236">This is the Standard cost costing type.</span></span>  
+22. <span data-ttu-id="5fdd0-237">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-237">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fdd0-238">I dette eksempel skal du vælge Sted 1.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-238">For this example, select Site 1.</span></span>  
+23. <span data-ttu-id="5fdd0-239">Angiv et tal i feltet Pris.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-239">In the Price field, enter a number.</span></span>
+    * <span data-ttu-id="5fdd0-240">I dette eksempel skal du skrive 10.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-240">For this example, type 10.</span></span>  
+24. <span data-ttu-id="5fdd0-241">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-241">Click Save.</span></span>
+25. <span data-ttu-id="5fdd0-242">Klik på Aktivér afventende pris(er).</span><span class="sxs-lookup"><span data-stu-id="5fdd0-242">Click Activate pending price(s).</span></span>
+26. <span data-ttu-id="5fdd0-243">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-243">Close the page.</span></span>
+27. <span data-ttu-id="5fdd0-244">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="5fdd0-244">Close the page.</span></span>
 
 

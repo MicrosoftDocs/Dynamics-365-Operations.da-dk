@@ -17,72 +17,72 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 7416e0407892281377b69a7a3b19e61f46220709
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a817dbc02890d863f68c5bf2a6cc11b9a5328060
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="calculate-kanban-quantity-suggestions"></a>Beregne forslag til kanban-mængder
+# <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="f6dad-103">Beregne forslag til kanban-mængder</span><span class="sxs-lookup"><span data-stu-id="f6dad-103">Calculate kanban quantity suggestions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde fokuserer på optimering af kanban-størrelse og -mængder for en specifik kanban-regel ved at bruge beregningen af kanban-mængden. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til værdistrømlederen. Det er en forudsætning, at du har gennemført proceduren Føj en ny politik til beregning af kanban-mængde til en kanban-regel.
+<span data-ttu-id="f6dad-104">Denne fremgangsmåde fokuserer på optimering af kanban-størrelse og -mængder for en specifik kanban-regel ved at bruge beregningen af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="f6dad-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="f6dad-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f6dad-106">Denne procedure er beregnet til værdistrømlederen.</span><span class="sxs-lookup"><span data-stu-id="f6dad-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="f6dad-107">Det er en forudsætning, at du har gennemført proceduren Føj en ny politik til beregning af kanban-mængde til en kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="f6dad-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 
 
-## <a name="create-a-kanban-quantity-calculation"></a>Opret en beregning af kanban-mængde
-1. Gå til Produktionsstyring > Periodiske opgaver > Beregning af kanban-mængde > Beregn kanban-mængde.
-2. Klik på Ny.
-3. Skriv "Speaker2016" i feltet Navn.
-4. Klik på rullelisten i feltet Navn for at åbne opslaget.
-    * Vælg den politik, du har oprettet i proceduren Føj en politik til beregning af kanban-mængde til en kanban-regel. F.eks. Speaker2016.  
-5. Klik op linket i den valgte række på listen.
-6. I feltet Regel aktiv fra og med dato skal du angive dato og klokkeslæt til "2012-12-17T08:00:00".
-    * Den dato bruges som basis for bestemmelse af, hvilke faste kanban-regler der medtages i beregning af kanban-mængden.  
-7. I feltet Opfyldt efterspørgselsperiodes startdato skal du angive dato og klokkeslæt til "2012-11-17T09:00:00".
-    * Datoen, fra hvilken tidligere efterspørgselstransaktioner medtages til beregning af kanban-mængden.  
-8. I feltet Opfyldt efterspørgselsperiodes slutdato skal du angive dato og klokkeslæt til "2012-12-17T07:59:59".
-    * Datoen, indtil hvilken tidligere efterspørgselstransaktioner medtages til beregning af kanban-mængden.  
-9. I feltet Efterspørgselsperiodens startdato skal du angive dato og klokkeslæt til "2012-12-17T08:00:00".
-    * Datoen, fra hvilken aktuelle efterspørgselstransaktioner medtages til beregning af kanban-mængden.  
-10. I feltet Efterspørgselsperiodens slutdato skal du angive dato og klokkeslæt til "2013-01-16T07:59:59".
-    * Datoen, indtil hvilken aktuelle efterspørgselstransaktioner medtages til beregning af kanban-mængden.  
+## <a name="create-a-kanban-quantity-calculation"></a><span data-ttu-id="f6dad-108">Opret en beregning af kanban-mængde</span><span class="sxs-lookup"><span data-stu-id="f6dad-108">Create a kanban quantity calculation</span></span>
+1. <span data-ttu-id="f6dad-109">Gå til Produktionsstyring > Periodiske opgaver > Beregning af kanban-mængde > Beregn kanban-mængde.</span><span class="sxs-lookup"><span data-stu-id="f6dad-109">Go to Production control > Periodic tasks > Kanban quantity calculation > Calculate kanban quantity.</span></span>
+2. <span data-ttu-id="f6dad-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="f6dad-110">Click New.</span></span>
+3. <span data-ttu-id="f6dad-111">Skriv "Speaker2016" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="f6dad-111">In the Name field, type 'Speaker2016'.</span></span>
+4. <span data-ttu-id="f6dad-112">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="f6dad-112">In the Name field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="f6dad-113">Vælg den politik, du har oprettet i proceduren Føj en politik til beregning af kanban-mængde til en kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="f6dad-113">Select the policy that you have created in the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span> <span data-ttu-id="f6dad-114">F.eks. Speaker2016.</span><span class="sxs-lookup"><span data-stu-id="f6dad-114">For example, Speaker2016.</span></span>  
+5. <span data-ttu-id="f6dad-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="f6dad-115">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="f6dad-116">I feltet Regel aktiv fra og med dato skal du angive dato og klokkeslæt til "2012-12-17T08:00:00".</span><span class="sxs-lookup"><span data-stu-id="f6dad-116">In the Rule active as of date field, set the date and time to '2012-12-17T08:00:00'.</span></span>
+    * <span data-ttu-id="f6dad-117">Den dato bruges som basis for bestemmelse af, hvilke faste kanban-regler der medtages i beregning af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-117">This date serves as the basis for determining which fixed kanban rules are included in the kanban quantity calculation.</span></span>  
+7. <span data-ttu-id="f6dad-118">I feltet Opfyldt efterspørgselsperiodes startdato skal du angive dato og klokkeslæt til "2012-11-17T09:00:00".</span><span class="sxs-lookup"><span data-stu-id="f6dad-118">In the Fulfilled demand period start date field, set the date and time to '2012-11-17T09:00:00'.</span></span>
+    * <span data-ttu-id="f6dad-119">Datoen, fra hvilken tidligere efterspørgselstransaktioner medtages til beregning af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-119">The date from when past demand transactions are included to calculate the kanban quantity.</span></span>  
+8. <span data-ttu-id="f6dad-120">I feltet Opfyldt efterspørgselsperiodes slutdato skal du angive dato og klokkeslæt til "2012-12-17T07:59:59".</span><span class="sxs-lookup"><span data-stu-id="f6dad-120">In the Fulfilled demand period end date field, set the date and time to '2012-12-17T07:59:59'.</span></span>
+    * <span data-ttu-id="f6dad-121">Datoen, indtil hvilken tidligere efterspørgselstransaktioner medtages til beregning af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-121">The date until when past demand transactions are included to calculate the kanban quantity.</span></span>  
+9. <span data-ttu-id="f6dad-122">I feltet Efterspørgselsperiodens startdato skal du angive dato og klokkeslæt til "2012-12-17T08:00:00".</span><span class="sxs-lookup"><span data-stu-id="f6dad-122">In the Demand period start date field, set the date and time to '2012-12-17T08:00:00'.</span></span>
+    * <span data-ttu-id="f6dad-123">Datoen, fra hvilken aktuelle efterspørgselstransaktioner medtages til beregning af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-123">The date from when current demand transactions are included to calculate the kanban quantity.</span></span>  
+10. <span data-ttu-id="f6dad-124">I feltet Efterspørgselsperiodens slutdato skal du angive dato og klokkeslæt til "2013-01-16T07:59:59".</span><span class="sxs-lookup"><span data-stu-id="f6dad-124">In the Demand period end date field, set the date and time to '2013-01-16T07:59:59'.</span></span>
+    * <span data-ttu-id="f6dad-125">Datoen, indtil hvilken aktuelle efterspørgselstransaktioner medtages til beregning af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-125">The date until when current demand transactions are included to calculate the kanban quantity.</span></span>  
 
-## <a name="generate-kanban-quantity-proposal"></a>Generer forslag til kanban-mængde
-1. Klik på Gem.
-2. Klik på Generer.
-    * Dette genererer en forslagslinje til kanban-mængde i kanban-reglen 000020.  
+## <a name="generate-kanban-quantity-proposal"></a><span data-ttu-id="f6dad-126">Generer forslag til kanban-mængde</span><span class="sxs-lookup"><span data-stu-id="f6dad-126">Generate kanban quantity proposal</span></span>
+1. <span data-ttu-id="f6dad-127">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="f6dad-127">Click Save.</span></span>
+2. <span data-ttu-id="f6dad-128">Klik på Generer.</span><span class="sxs-lookup"><span data-stu-id="f6dad-128">Click Generate.</span></span>
+    * <span data-ttu-id="f6dad-129">Dette genererer en forslagslinje til kanban-mængde i kanban-reglen 000020.</span><span class="sxs-lookup"><span data-stu-id="f6dad-129">This generates a kanban quantity proposal line for the kanban rule 000020.</span></span>  
 
-## <a name="run-kanban-quantity-calculation"></a>Kør beregning af kanban-mængde
-1. Klik på Beregn.
-    * Derved beregnes forslaget til kanban-mængde.  
-2. Klik på OK.
-3. Markér den valgte række på listen.
-    * Bemærk, at den foreslåede kanban-mængden er 2.  
+## <a name="run-kanban-quantity-calculation"></a><span data-ttu-id="f6dad-130">Kør beregning af kanban-mængde</span><span class="sxs-lookup"><span data-stu-id="f6dad-130">Run kanban quantity calculation</span></span>
+1. <span data-ttu-id="f6dad-131">Klik på Beregn.</span><span class="sxs-lookup"><span data-stu-id="f6dad-131">Click Calculate.</span></span>
+    * <span data-ttu-id="f6dad-132">Derved beregnes forslaget til kanban-mængde.</span><span class="sxs-lookup"><span data-stu-id="f6dad-132">This calculates the kanban quantity proposal.</span></span>  
+2. <span data-ttu-id="f6dad-133">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f6dad-133">Click OK.</span></span>
+3. <span data-ttu-id="f6dad-134">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="f6dad-134">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="f6dad-135">Bemærk, at den foreslåede kanban-mængden er 2.</span><span class="sxs-lookup"><span data-stu-id="f6dad-135">Notice the suggested kanban quantity is 2.</span></span>  
 
-## <a name="change-product-quantity-and-calculate-again"></a>Ændr produktmængde, og beregn igen
-1. Angiv Produktmængde til "5".
-2. Klik på Beregn.
-3. Klik på OK.
-    * Bemærk, at med en kanban-mængde på 5 ændres forslaget til en kanban-mængde på 4.  
-    * Dette skyldes, at med en lavere produktmængde har vi brug for flere kanbans for at opfylde behovet.  
+## <a name="change-product-quantity-and-calculate-again"></a><span data-ttu-id="f6dad-136">Ændr produktmængde, og beregn igen</span><span class="sxs-lookup"><span data-stu-id="f6dad-136">Change product quantity and calculate again</span></span>
+1. <span data-ttu-id="f6dad-137">Angiv Produktmængde til "5".</span><span class="sxs-lookup"><span data-stu-id="f6dad-137">Set Product quantity to '5'.</span></span>
+2. <span data-ttu-id="f6dad-138">Klik på Beregn.</span><span class="sxs-lookup"><span data-stu-id="f6dad-138">Click Calculate.</span></span>
+3. <span data-ttu-id="f6dad-139">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f6dad-139">Click OK.</span></span>
+    * <span data-ttu-id="f6dad-140">Bemærk, at med en kanban-mængde på 5 ændres forslaget til en kanban-mængde på 4.</span><span class="sxs-lookup"><span data-stu-id="f6dad-140">Notice that with a kanban quantity of 5, the suggestion is changed to a kanban quantity of 4.</span></span>  
+    * <span data-ttu-id="f6dad-141">Dette skyldes, at med en lavere produktmængde har vi brug for flere kanbans for at opfylde behovet.</span><span class="sxs-lookup"><span data-stu-id="f6dad-141">This is caused by the fact that with a lower product quantity, we need more kanbans to fulfill the demand.</span></span>  
 
-## <a name="update-kanban-rule"></a>Opdater kanban-regel
-1. Angiv en dato og et klokkeslæt i feltet Reglens ikrafttrædelsesdato.
-    * Angiv "Regel aktiv fra og med dato" til en dato i fremtiden. F.eks. dags dato + et år.  
-2. Klik på Opdater.
-3. Klik på OK.
-4. Luk siden.
+## <a name="update-kanban-rule"></a><span data-ttu-id="f6dad-142">Opdater kanban-regel</span><span class="sxs-lookup"><span data-stu-id="f6dad-142">Update kanban rule</span></span>
+1. <span data-ttu-id="f6dad-143">Angiv en dato og et klokkeslæt i feltet Reglens ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="f6dad-143">In the Rule effective date field, enter a date and time.</span></span>
+    * <span data-ttu-id="f6dad-144">Angiv "Regel aktiv fra og med dato" til en dato i fremtiden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-144">Set the 'Rule active as of date' to a date in the future.</span></span> <span data-ttu-id="f6dad-145">F.eks. dags dato + et år.</span><span class="sxs-lookup"><span data-stu-id="f6dad-145">For example, today + one year.</span></span>  
+2. <span data-ttu-id="f6dad-146">Klik på Opdater.</span><span class="sxs-lookup"><span data-stu-id="f6dad-146">Click Update.</span></span>
+3. <span data-ttu-id="f6dad-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f6dad-147">Click OK.</span></span>
+4. <span data-ttu-id="f6dad-148">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-148">Close the page.</span></span>
 
-## <a name="validate-change-on-kanban-rule"></a>Valider ændring af kanban-regel
-1. Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.
-2. Klik op linket i den valgte række på listen.
-    * Vælg den kanban-regel, der er oprettet i den tidligere underopgave. Dette bør være den første kanban-regel på listen sorteret efter nummer.  
-3. Slå udvidelsen af sektionen afsnittet Detaljer til/fra.
-    * Bemærk ikrafttrædelsesdatoen, hvilket betyder at denne regel ikke aktiveres før denne dato.  
-4. Slå udvidelsen af sektionen Antal til/fra.
-    * Bemærk, at dette er den standardmængde, som du angav i beregningen af kanban-mængden.  
-    * Bemærk, at dette er den faste kanban-mængde på 4 fra beregningen af kanban-mængden.  
-5. Klik på fanen ListPanel.
+## <a name="validate-change-on-kanban-rule"></a><span data-ttu-id="f6dad-149">Valider ændring af kanban-regel</span><span class="sxs-lookup"><span data-stu-id="f6dad-149">Validate change on kanban rule</span></span>
+1. <span data-ttu-id="f6dad-150">Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="f6dad-150">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="f6dad-151">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="f6dad-151">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="f6dad-152">Vælg den kanban-regel, der er oprettet i den tidligere underopgave.</span><span class="sxs-lookup"><span data-stu-id="f6dad-152">Select the kanban rule that was created in the previous sub-task.</span></span> <span data-ttu-id="f6dad-153">Dette bør være den første kanban-regel på listen sorteret efter nummer.</span><span class="sxs-lookup"><span data-stu-id="f6dad-153">This should be the first kanban rule in the list sorted by number.</span></span>  
+3. <span data-ttu-id="f6dad-154">Slå udvidelsen af sektionen afsnittet Detaljer til/fra.</span><span class="sxs-lookup"><span data-stu-id="f6dad-154">Toggle the expansion of the Details section.</span></span>
+    * <span data-ttu-id="f6dad-155">Bemærk ikrafttrædelsesdatoen, hvilket betyder at denne regel ikke aktiveres før denne dato.</span><span class="sxs-lookup"><span data-stu-id="f6dad-155">Notice the effective date, which means that this rule is not activated until this date.</span></span>  
+4. <span data-ttu-id="f6dad-156">Slå udvidelsen af sektionen Antal til/fra.</span><span class="sxs-lookup"><span data-stu-id="f6dad-156">Toggle the expansion of the Quantities section.</span></span>
+    * <span data-ttu-id="f6dad-157">Bemærk, at dette er den standardmængde, som du angav i beregningen af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-157">Notice this is the default quantity that you entered on the kanban quantity calculation.</span></span>  
+    * <span data-ttu-id="f6dad-158">Bemærk, at dette er den faste kanban-mængde på 4 fra beregningen af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="f6dad-158">Notice this is the fixed kanban quantity of 4 from the kanban quantity calculation.</span></span>  
+5. <span data-ttu-id="f6dad-159">Klik på fanen ListPanel.</span><span class="sxs-lookup"><span data-stu-id="f6dad-159">Click the ListPanel tab.</span></span>
 
 

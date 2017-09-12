@@ -15,7 +15,7 @@ ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -25,61 +25,61 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="organization-administration-home-page"></a>Startside for organisationsadministration
+# <a name="organization-administration-home-page"></a><span data-ttu-id="8f94c-103">Startside for organisationsadministration</span><span class="sxs-lookup"><span data-stu-id="8f94c-103">Organization administration home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Finance and Operations i din organisation.
+<span data-ttu-id="8f94c-104">Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Finance and Operations i din organisation.</span><span class="sxs-lookup"><span data-stu-id="8f94c-104">This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.</span></span>
 
-<a name="number-sequences"></a>Nummerserier
+<a name="number-sequences"></a><span data-ttu-id="8f94c-105">Nummerserier</span><span class="sxs-lookup"><span data-stu-id="8f94c-105">Number sequences</span></span>
 ----------------
 
--   [Oversigt over nummerserier](number-sequence-overview.md)
--   [Opret nummerserier vha. en guide](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (opgaveguide)
--   [Opret nummerserier på individuel basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (opgaveguide)
+-   [<span data-ttu-id="8f94c-106">Oversigt over nummerserier</span><span class="sxs-lookup"><span data-stu-id="8f94c-106">Number sequence overview</span></span>](number-sequence-overview.md)
+-   <span data-ttu-id="8f94c-107">[Opret nummerserier vha. en guide](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-107">[Set up number sequences by using a wizard](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard) (Task guide)</span></span>
+-   <span data-ttu-id="8f94c-108">[Opret nummerserier på individuel basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-108">[Set up number sequences on an individual basis](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis) (Task guide)</span></span>
 
-## <a name="address-books"></a>Adressekartoteker
--   [Adressekartoteker](qa-address-books.md)
--   [Oversigt: globalt adressekartotek](overview-global-address-book.md)
--   [Planlægning af konfigurationen af det globale adressekartotek og et yderligere adressekartotek](plan-configuration-global-address-book-additional-address-books.md)
+## <a name="address-books"></a><span data-ttu-id="8f94c-109">Adressekartoteker</span><span class="sxs-lookup"><span data-stu-id="8f94c-109">Address books</span></span>
+-   [<span data-ttu-id="8f94c-110">Adressekartoteker</span><span class="sxs-lookup"><span data-stu-id="8f94c-110">Address books</span></span>](qa-address-books.md)
+-   [<span data-ttu-id="8f94c-111">Oversigt: globalt adressekartotek</span><span class="sxs-lookup"><span data-stu-id="8f94c-111">Overview: Global address book</span></span>](overview-global-address-book.md)
+-   [<span data-ttu-id="8f94c-112">Planlægning af konfigurationen af det globale adressekartotek og et yderligere adressekartotek</span><span class="sxs-lookup"><span data-stu-id="8f94c-112">Planning the configuration of the global address book and additional address book</span></span>](plan-configuration-global-address-book-additional-address-books.md)
 
-## <a name="workflow"></a>Arbejdsgang
--   [Oversigt over arbejdsgangssystemet](overview-workflow-system.md)
--   [Arkitektur for arbejdsgangssystem](workflow-system-architecture.md)
--   [Arbejdsgangselementer](workflow-elements.md)
--   [Arbejdsgangshandlinger](workflow-actions.md)
--   [Opret en arbejdsgang](create-workflow.md)
--   [Konfigurer egenskaberne for en arbejdsgang](configure-workflow-properties.md)
--   [Konfigurer en manuel opgave](configure-manual-task-workflow.md)
--   [Konfigurer en automatiseret opgave](configure-automated-task-workflow.md)
--   [Konfigurer en godkendelsesproces](configure-approval-process-workflow.md)
--   [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md)
--   [Konfigurere en manuel beslutning](configure-manual-decision-workflow.md)
--   [Konfigurere en betinget beslutning](configure-conditional-decision-workflow.md)
--   [Konfigurere en parallel aktivitet](configure-parallel-activity-workflow.md)
--   [Konfigurer en parallel gren](configure-parallel-branch-workflow.md)
--   [Konfigurer et element i en arbejdsgang for linjeelementer](configure-line-item-workflow.md)
+## <a name="workflow"></a><span data-ttu-id="8f94c-113">Arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="8f94c-113">Workflow</span></span>
+-   [<span data-ttu-id="8f94c-114">Oversigt over arbejdsgangssystemet</span><span class="sxs-lookup"><span data-stu-id="8f94c-114">Overview of the workflow system</span></span>](overview-workflow-system.md)
+-   [<span data-ttu-id="8f94c-115">Arkitektur for arbejdsgangssystem</span><span class="sxs-lookup"><span data-stu-id="8f94c-115">Workflow system architecture</span></span>](workflow-system-architecture.md)
+-   [<span data-ttu-id="8f94c-116">Arbejdsgangselementer</span><span class="sxs-lookup"><span data-stu-id="8f94c-116">Workflow elements</span></span>](workflow-elements.md)
+-   [<span data-ttu-id="8f94c-117">Arbejdsgangshandlinger</span><span class="sxs-lookup"><span data-stu-id="8f94c-117">Workflow actions</span></span>](workflow-actions.md)
+-   [<span data-ttu-id="8f94c-118">Opret en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="8f94c-118">Create a workflow</span></span>](create-workflow.md)
+-   [<span data-ttu-id="8f94c-119">Konfigurer egenskaberne for en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="8f94c-119">Configure the properties of a workflow</span></span>](configure-workflow-properties.md)
+-   [<span data-ttu-id="8f94c-120">Konfigurer en manuel opgave</span><span class="sxs-lookup"><span data-stu-id="8f94c-120">Configure a manual task</span></span>](configure-manual-task-workflow.md)
+-   [<span data-ttu-id="8f94c-121">Konfigurer en automatiseret opgave</span><span class="sxs-lookup"><span data-stu-id="8f94c-121">Configure an automated task</span></span>](configure-automated-task-workflow.md)
+-   [<span data-ttu-id="8f94c-122">Konfigurer en godkendelsesproces</span><span class="sxs-lookup"><span data-stu-id="8f94c-122">Configure an approval process</span></span>](configure-approval-process-workflow.md)
+-   [<span data-ttu-id="8f94c-123">Konfigurere et godkendelsestrin</span><span class="sxs-lookup"><span data-stu-id="8f94c-123">Configure an approval step</span></span>](configure-approval-step-workflow.md)
+-   [<span data-ttu-id="8f94c-124">Konfigurere en manuel beslutning</span><span class="sxs-lookup"><span data-stu-id="8f94c-124">Configure a manual decision</span></span>](configure-manual-decision-workflow.md)
+-   [<span data-ttu-id="8f94c-125">Konfigurere en betinget beslutning</span><span class="sxs-lookup"><span data-stu-id="8f94c-125">Configure a conditional decision</span></span>](configure-conditional-decision-workflow.md)
+-   [<span data-ttu-id="8f94c-126">Konfigurere en parallel aktivitet</span><span class="sxs-lookup"><span data-stu-id="8f94c-126">Configure a parallel activity</span></span>](configure-parallel-activity-workflow.md)
+-   [<span data-ttu-id="8f94c-127">Konfigurer en parallel gren</span><span class="sxs-lookup"><span data-stu-id="8f94c-127">Configure a parallel branch</span></span>](configure-parallel-branch-workflow.md)
+-   [<span data-ttu-id="8f94c-128">Konfigurer et element i en arbejdsgang for linjeelementer</span><span class="sxs-lookup"><span data-stu-id="8f94c-128">Configure a line-item workflow element</span></span>](configure-line-item-workflow.md)
 
-## <a name="case-management"></a>Sagsstyring
--   [Planlægning: sagsopsætning](plan-case-management.md)
--   [Eksempler på sagsstyring](cases.md)
+## <a name="case-management"></a><span data-ttu-id="8f94c-129">Sagsstyring</span><span class="sxs-lookup"><span data-stu-id="8f94c-129">Case management</span></span>
+-   [<span data-ttu-id="8f94c-130">Planlægning: sagsopsætning</span><span class="sxs-lookup"><span data-stu-id="8f94c-130">Planning: Case setup</span></span>](plan-case-management.md)
+-   [<span data-ttu-id="8f94c-131">Eksempler på sagsstyring</span><span class="sxs-lookup"><span data-stu-id="8f94c-131">Case management examples</span></span>](cases.md)
 
-## <a name="electronic-signatures"></a>Elektroniske signaturer
--   [Oversigt over elektroniske signaturer](electronic-signature-overview.md)
--   [Konfigurer elektroniske signaturer](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (opgaveguide)
+## <a name="electronic-signatures"></a><span data-ttu-id="8f94c-132">Elektroniske signaturer</span><span class="sxs-lookup"><span data-stu-id="8f94c-132">Electronic signatures</span></span>
+-   [<span data-ttu-id="8f94c-133">Oversigt over elektroniske signaturer</span><span class="sxs-lookup"><span data-stu-id="8f94c-133">Electronic signature overview</span></span>](electronic-signature-overview.md)
+-   <span data-ttu-id="8f94c-134">[Konfigurer elektroniske signaturer](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-134">[Set up electronic signatures](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures) (Task guide)</span></span>
 
-## <a name="organizations"></a>Organisationer
--   [Organisationer og organisationshierarkier](organizations-organizational-hierarchies.md)
--   [Planlæg organisationshierarkiet](plan-organizational-hierarchy.md)
--   [Opret en driftsenhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (opgaveguide)
--   [Opret et organisationshierarki](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (opgaveguide)
--   [Opret en juridisk enhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (opgaveguide)
+## <a name="organizations"></a><span data-ttu-id="8f94c-135">Organisationer</span><span class="sxs-lookup"><span data-stu-id="8f94c-135">Organizations</span></span>
+-   [<span data-ttu-id="8f94c-136">Organisationer og organisationshierarkier</span><span class="sxs-lookup"><span data-stu-id="8f94c-136">Organizations and organizational hierarchies</span></span>](organizations-organizational-hierarchies.md)
+-   [<span data-ttu-id="8f94c-137">Planlæg organisationshierarkiet</span><span class="sxs-lookup"><span data-stu-id="8f94c-137">Plan the organizational hierarchy</span></span>](plan-organizational-hierarchy.md)
+-   <span data-ttu-id="8f94c-138">[Opret en driftsenhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-138">[Create an operating unit](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-operating-unit) (Task guide)</span></span>
+-   <span data-ttu-id="8f94c-139">[Opret et organisationshierarki](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-139">[Create an organization hierarchy](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-organization-hierarchy) (Task guide)</span></span>
+-   <span data-ttu-id="8f94c-140">[Opret en juridisk enhed](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-140">[Create a legal entity](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/create-legal-entity) (Task guide)</span></span>
 
-## <a name="general-administration"></a>Generel administration
--   [Rediger banneret eller logoet](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (opgaveguide)
--   [Om dato/tidsdata og tidzoner](date-time-zones.md)
--   [Postskabeloner](record-templates.md)
+## <a name="general-administration"></a><span data-ttu-id="8f94c-141">Generel administration</span><span class="sxs-lookup"><span data-stu-id="8f94c-141">General administration</span></span>
+-   <span data-ttu-id="8f94c-142">[Rediger banneret eller logoet](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (opgaveguide)</span><span class="sxs-lookup"><span data-stu-id="8f94c-142">[Change the banner or logo](/dynamics365/unified-operations/fin-and-ops/get-started/tasks/change-banner-or-logo) (Task guide)</span></span>
+-   [<span data-ttu-id="8f94c-143">Om dato/tidsdata og tidzoner</span><span class="sxs-lookup"><span data-stu-id="8f94c-143">About date/time data and time zones</span></span>](date-time-zones.md)
+-   [<span data-ttu-id="8f94c-144">Postskabeloner</span><span class="sxs-lookup"><span data-stu-id="8f94c-144">Record templates</span></span>](record-templates.md)
 
 
 

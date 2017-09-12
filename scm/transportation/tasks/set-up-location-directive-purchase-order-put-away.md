@@ -17,81 +17,81 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c2456fffd9a010728154749b35c58db13f142bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="8ba6b-103">Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer</span><span class="sxs-lookup"><span data-stu-id="8ba6b-103">Set up a location directive for purchase order put-away</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du opretter en simpel lokalitetsvejledning. Det viste eksemplet opretter en lokalitetsvejledning, som skal bruges til at bestemme, hvor du kan placere elementer, der er blevet modtaget for en indkøbsordre. Du kan afspille denne opgaveguide med de nævnte data ved hjælp af demodatafirmaet USMF. Forudsætninger: Du skal oprette en dispositionskode. I denne procedure bruger vi en dispositionskode kaldet Relabel. Hvis du opretter en lokalitetsvejledning i dine egne data, skal du havet oprettet avanceret lagerstedsstyring for dit lagersted og dine elementer.  Denne procedure er beregnet til lagerchefen.
+<span data-ttu-id="8ba6b-104">Denne fremgangsmåde viser, hvordan du opretter en simpel lokalitetsvejledning.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="8ba6b-105">Det viste eksemplet opretter en lokalitetsvejledning, som skal bruges til at bestemme, hvor du kan placere elementer, der er blevet modtaget for en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="8ba6b-106">Du kan afspille denne opgaveguide med de nævnte data ved hjælp af demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="8ba6b-107">Forudsætninger: Du skal oprette en dispositionskode.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="8ba6b-108">I denne procedure bruger vi en dispositionskode kaldet Relabel.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="8ba6b-109">Hvis du opretter en lokalitetsvejledning i dine egne data, skal du havet oprettet avanceret lagerstedsstyring for dit lagersted og dine elementer.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="8ba6b-110">Denne procedure er beregnet til lagerchefen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-110">This procedure is intended for the warehouse manager.</span></span>
 
-1. Gå til Lagerstedsstyring > Opsætning > Lokalitetsvejledninger.
-2. I feltet Arbejdsordretype skal du vælge "Indkøbsordrer".
+1. <span data-ttu-id="8ba6b-111">Gå til Lagerstedsstyring > Opsætning > Lokalitetsvejledninger.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-111">Go to Warehouse management > Setup > Location directives.</span></span>
+2. <span data-ttu-id="8ba6b-112">I feltet Arbejdsordretype skal du vælge "Indkøbsordrer".</span><span class="sxs-lookup"><span data-stu-id="8ba6b-112">In the Work order type field, select 'Purchase orders'.</span></span>
 
-## <a name="create-a-location-directive-header"></a>Overskriften Oprette en lokalitetsvejledning
-1. Klik på Ny.
-2. Indtast et tal i feltet Sekvensnummer.
-    * Dette er den rækkefølge, som lokalitetsvejledningen skal behandles i for den valgte arbejdstype. Hvis det er nødvendigt, kan du også ændre rækkefølgen.  
-3. Skriv en værdi i feltet Navn.
-    * Dette er det entydige id for denne vejledning.  
-4. Vælg 'Læg på lager' i feltet Arbejdstype.
-    * Vælg den type arbejde, der skal udføres. For vejledningen med arbejdsordretype Indkøbsordre er Læg på lager den eneste understøttede værdi.  
-5. Skriv en værdi i feltet Sted.
-6. Skriv en værdi i feltet Lagersted.
-    * Lad Vejledningskode stå tom.  Vejledningskode bruges til at tilknytte en arbejdsordrelinje af typen Læg på lager til en bestemt vejledning. For indkøbsordrer løses lokaliteten for den sidste arbejdsordrelinjer af typen Læg på lager, inden arbejdsskabelonen bestemmes. Det er derfor ikke muligt at tilknytte den sidste linje i en arbejdsskabelon til en bestemt vejledning.   
-7. Indtast en værdi i feltet Dispositionskode.
-    * Dispositionskoden begrænser brugen af lokalitetsvejledningen, så lokalitetsvejledningen kun bruges, hvis lagerarbejderen angiver denne specifikke værdi under registrering af elementet ved hjælp af en mobilenhed.  
-8. Klik på Gem.
+## <a name="create-a-location-directive-header"></a><span data-ttu-id="8ba6b-113">Overskriften Oprette en lokalitetsvejledning</span><span class="sxs-lookup"><span data-stu-id="8ba6b-113">Create a location directive header</span></span>
+1. <span data-ttu-id="8ba6b-114">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-114">Click New.</span></span>
+2. <span data-ttu-id="8ba6b-115">Indtast et tal i feltet Sekvensnummer.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-115">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="8ba6b-116">Dette er den rækkefølge, som lokalitetsvejledningen skal behandles i for den valgte arbejdstype.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-116">This is the sequence in which the location directive is processed for the selected work type.</span></span> <span data-ttu-id="8ba6b-117">Hvis det er nødvendigt, kan du også ændre rækkefølgen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-117">You can also modify the sequence, if needed.</span></span>  
+3. <span data-ttu-id="8ba6b-118">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="8ba6b-119">Dette er det entydige id for denne vejledning.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-119">This is the unique identifier for this directive.</span></span>  
+4. <span data-ttu-id="8ba6b-120">Vælg 'Læg på lager' i feltet Arbejdstype.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-120">In the Work type field, select 'Put'.</span></span>
+    * <span data-ttu-id="8ba6b-121">Vælg den type arbejde, der skal udføres.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-121">Select the type of work to be performed.</span></span> <span data-ttu-id="8ba6b-122">For vejledningen med arbejdsordretype Indkøbsordre er Læg på lager den eneste understøttede værdi.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-122">For directive with work order type Purchase order, Put is the only supported value.</span></span>  
+5. <span data-ttu-id="8ba6b-123">Skriv en værdi i feltet Sted.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-123">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="8ba6b-124">Skriv en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="8ba6b-125">Lad Vejledningskode stå tom.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-125">Leave the Directive code blank.</span></span>  <span data-ttu-id="8ba6b-126">Vejledningskode bruges til at tilknytte en arbejdsordrelinje af typen Læg på lager til en bestemt vejledning.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-126">Directive codes are used to link a work order line of type Put to a specific directive.</span></span> <span data-ttu-id="8ba6b-127">For indkøbsordrer løses lokaliteten for den sidste arbejdsordrelinjer af typen Læg på lager, inden arbejdsskabelonen bestemmes.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-127">For purchase orders, the location of the last work order line of type Put is resolved before the work template is determined.</span></span> <span data-ttu-id="8ba6b-128">Det er derfor ikke muligt at tilknytte den sidste linje i en arbejdsskabelon til en bestemt vejledning.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-128">Therefore it is not possible to connect the last line of a work template to a specific directive.</span></span>   
+7. <span data-ttu-id="8ba6b-129">Indtast en værdi i feltet Dispositionskode.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-129">In the Disposition code field, type a value.</span></span>
+    * <span data-ttu-id="8ba6b-130">Dispositionskoden begrænser brugen af lokalitetsvejledningen, så lokalitetsvejledningen kun bruges, hvis lagerarbejderen angiver denne specifikke værdi under registrering af elementet ved hjælp af en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-130">The Disposition code limits the use of the location directive, so the location directive is only used if the warehouse worker enters this specific value during registration of the item using a mobile device.</span></span>  
+8. <span data-ttu-id="8ba6b-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-131">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive"></a>Rediger forespørgslen for vejledningen
-1. Klik på Rediger forespørgsel.
-    * Anvendelsen af denne vejledning er allerede begrænset til elementer, der er registreret på det lagersted, du har angivet, og med den dispositionskode, du har angivet. Du kan tilføje andre begrænsninger ved hjælp af forespørgslen.  
-2. Klik på OK.
+## <a name="edit-the-query-for-directive"></a><span data-ttu-id="8ba6b-132">Rediger forespørgslen for vejledningen</span><span class="sxs-lookup"><span data-stu-id="8ba6b-132">Edit the query for directive</span></span>
+1. <span data-ttu-id="8ba6b-133">Klik på Rediger forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-133">Click Edit query.</span></span>
+    * <span data-ttu-id="8ba6b-134">Anvendelsen af denne vejledning er allerede begrænset til elementer, der er registreret på det lagersted, du har angivet, og med den dispositionskode, du har angivet.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-134">The use of this directive is already limited to be used for items registered in the warehouse that you specified, and with the disposition code that you specified.</span></span> <span data-ttu-id="8ba6b-135">Du kan tilføje andre begrænsninger ved hjælp af forespørgslen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-135">You can add other constraints using the query.</span></span>  
+2. <span data-ttu-id="8ba6b-136">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-136">Click OK.</span></span>
 
-## <a name="add-directive-lines"></a>Tilføj vejledningslinjer
-1. Klik på Ny.
-    * Dette er den rækkefølge, som lokalitetsvejledningslinjerne skal behandles i for den valgte arbejdstype. Hvis det er nødvendigt, kan du også ændre rækkefølgen.  
-2. Indtast et tal i feltet Fra antal.
-    * Dette er den laveste mængde, som denne vejledningslinje gælder for.  
-3. Indtast et tal i feltet Til antal.
-4. Skriv en værdi i feltet Enhed.
-    * Den enhed, som Fra antal og Til antal udtrykkes i. Hvis du lader feltet stå tomt, bruges lagerenheden fra varen.  
-5. Vælg en indstilling i feltet Angiv lokalitet for antal.
-    * Ingen, eller nummerpladeantal: Den mængde, der er registreret på hver nummerplade. Enhedsopdelt antal: Hele den mængde, der er blevet registreret. Resterende antal: Den mængde, der er endnu ikke er registreret fra indkøbsordrelinjen. Forventet mængde: Den samlede mængde, der er angivet på indkøbsordrelinjen.  
-6. Markér eller fjern markeringen af afkrydsningsfeltet Begræns efter enhed.
-    * Hvis du vælger denne indstilling og angiver enheden på siden Begræns efter enhed, kan kun varer med denne måleenhed placeres på lokaliteten. Hvis måleenheden f.eks. er PL (paller), kan kun elementer på paller placeres på en bestemt lokalitet.  
-7. Markér eller fjern markeringen af afkrydsningsfeltet Tillad opdeling.
-    * Dette muliggør, at vejledningen opdeler mængden på flere lokaliteter.  
-8. Klik på Gem.
+## <a name="add-directive-lines"></a><span data-ttu-id="8ba6b-137">Tilføj vejledningslinjer</span><span class="sxs-lookup"><span data-stu-id="8ba6b-137">Add directive lines</span></span>
+1. <span data-ttu-id="8ba6b-138">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-138">Click New.</span></span>
+    * <span data-ttu-id="8ba6b-139">Dette er den rækkefølge, som lokalitetsvejledningslinjerne skal behandles i for den valgte arbejdstype.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-139">This is the sequence in which the location directive lines are processed for the selected work type.</span></span> <span data-ttu-id="8ba6b-140">Hvis det er nødvendigt, kan du også ændre rækkefølgen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-140">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="8ba6b-141">Indtast et tal i feltet Fra antal.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-141">In the From quantity field, enter a number.</span></span>
+    * <span data-ttu-id="8ba6b-142">Dette er den laveste mængde, som denne vejledningslinje gælder for.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-142">This is the lowest quantity that this directive line is valid for.</span></span>  
+3. <span data-ttu-id="8ba6b-143">Indtast et tal i feltet Til antal.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-143">In the To quantity field, enter a number.</span></span>
+4. <span data-ttu-id="8ba6b-144">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-144">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="8ba6b-145">Den enhed, som Fra antal og Til antal udtrykkes i.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-145">The unit the From quantity and To quantity is expressed in.</span></span> <span data-ttu-id="8ba6b-146">Hvis du lader feltet stå tomt, bruges lagerenheden fra varen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-146">If you leave this field blank the inventory unit from the item is used.</span></span>  
+5. <span data-ttu-id="8ba6b-147">Vælg en indstilling i feltet Angiv lokalitet for antal.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-147">In the Locate quantity field, select an option.</span></span>
+    * <span data-ttu-id="8ba6b-148">Ingen, eller nummerpladeantal: Den mængde, der er registreret på hver nummerplade.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-148">None, or licence plate quantity: The quantity registered on each licence plate.</span></span> <span data-ttu-id="8ba6b-149">Enhedsopdelt antal: Hele den mængde, der er blevet registreret.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-149">Unitized quantity: The entire quantity that’s been registered.</span></span> <span data-ttu-id="8ba6b-150">Resterende antal: Den mængde, der er endnu ikke er registreret fra indkøbsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-150">Remaining quantity: The quantity that is yet to be registered from the purchase order line.</span></span> <span data-ttu-id="8ba6b-151">Forventet mængde: Den samlede mængde, der er angivet på indkøbsordrelinjen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-151">Expected quantity: The total quantity that is specified on the purchase order line.</span></span>  
+6. <span data-ttu-id="8ba6b-152">Markér eller fjern markeringen af afkrydsningsfeltet Begræns efter enhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-152">Check or uncheck the Restrict by unit checkbox.</span></span>
+    * <span data-ttu-id="8ba6b-153">Hvis du vælger denne indstilling og angiver enheden på siden Begræns efter enhed, kan kun varer med denne måleenhed placeres på lokaliteten.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-153">If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location.</span></span> <span data-ttu-id="8ba6b-154">Hvis måleenheden f.eks. er PL (paller), kan kun elementer på paller placeres på en bestemt lokalitet.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-154">For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.</span></span>  
+7. <span data-ttu-id="8ba6b-155">Markér eller fjern markeringen af afkrydsningsfeltet Tillad opdeling.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-155">Check or uncheck the Allow split checkbox.</span></span>
+    * <span data-ttu-id="8ba6b-156">Dette muliggør, at vejledningen opdeler mængden på flere lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-156">This allows the directive to split the quantity across multiple locations.</span></span>  
+8. <span data-ttu-id="8ba6b-157">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-157">Click Save.</span></span>
 
-## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Begræns vejledningslinjen til en bestemt enhed
-1. Klik på Begræns efter enhed.
-    * Denne knap er kun tilgængelig, når du trykker på Gem, efter at du har markeret afkrydsningsfeltet Begræns efter enhed.  
-2. Skriv en værdi i feltet Enhed.
-3. Luk siden.
+## <a name="restrict-the-directive-line-to-a-specific-unit"></a><span data-ttu-id="8ba6b-158">Begræns vejledningslinjen til en bestemt enhed</span><span class="sxs-lookup"><span data-stu-id="8ba6b-158">Restrict the directive line to a specific unit</span></span>
+1. <span data-ttu-id="8ba6b-159">Klik på Begræns efter enhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-159">Click Restrict by unit.</span></span>
+    * <span data-ttu-id="8ba6b-160">Denne knap er kun tilgængelig, når du trykker på Gem, efter at du har markeret afkrydsningsfeltet Begræns efter enhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-160">This button is only available when you press Save after you have selected the Restrict by unit check box.</span></span>  
+2. <span data-ttu-id="8ba6b-161">Skriv en værdi i feltet Enhed.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-161">In the Unit field, type a value.</span></span>
+3. <span data-ttu-id="8ba6b-162">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-162">Close the page.</span></span>
 
-## <a name="add-a-location-directive-action-line"></a>Tilføj en vejledningshandlingslinje for lokalitet
-1. Klik på Ny.
-    * Dette er den rækkefølge, som handlingslinjerne for lokalitetsvejledningen skal behandles i for den valgte arbejdstype. Hvis det er nødvendigt, kan du også ændre rækkefølgen.  
-2. Skriv en værdi i feltet Navn.
-    * Dette er det entydige id for denne vejledningshandling.  
-3. Vælg en indstilling i feltet Anvendelse af fast lokation.
-    * Faste og ikke-faste lokationer: Alle ikke-faste lokationer er gyldige lige som produktets egen faste lokation inden for det interval, der er angivet i forespørgslen.  Kun fast lokation for produktet: Faste lokationer for produktet er gyldige, og alle produktvarianter deler samme sæt af faste lokationer. Kun fast lokation for produktvarianterne: Kun faste lokationer, der er angivet for hver produktvariant, er gyldige.  
-4. Vælg en indstilling i feltet Strategi.
-    * Arbejdsordrer af typen Indkøbsordre understøtter følgende strategier: Ingen: Varen placeres på den første lokalitet, der findes. Konsolidering: Varen placeres på en lokalitet, hvor lignende elementer allerede er tilgængelige. Tom lokation uden indgående arbejde: elementet placeres på den første tomme lokalitet, der findes. En lokalitet betragtes som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde.  
-5. Klik på Gem.
+## <a name="add-a-location-directive-action-line"></a><span data-ttu-id="8ba6b-163">Tilføj en vejledningshandlingslinje for lokalitet</span><span class="sxs-lookup"><span data-stu-id="8ba6b-163">Add a location directive action line</span></span>
+1. <span data-ttu-id="8ba6b-164">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-164">Click New.</span></span>
+    * <span data-ttu-id="8ba6b-165">Dette er den rækkefølge, som handlingslinjerne for lokalitetsvejledningen skal behandles i for den valgte arbejdstype.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-165">This is the sequence in which the location directive action lines are processed for the selected work type.</span></span> <span data-ttu-id="8ba6b-166">Hvis det er nødvendigt, kan du også ændre rækkefølgen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-166">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="8ba6b-167">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-167">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="8ba6b-168">Dette er det entydige id for denne vejledningshandling.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-168">This is the unique identifier for this directive action.</span></span>  
+3. <span data-ttu-id="8ba6b-169">Vælg en indstilling i feltet Anvendelse af fast lokation.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-169">In the Fixed location usage field, select an option.</span></span>
+    * <span data-ttu-id="8ba6b-170">Faste og ikke-faste lokationer: Alle ikke-faste lokationer er gyldige lige som produktets egen faste lokation inden for det interval, der er angivet i forespørgslen.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-170">Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.</span></span>  <span data-ttu-id="8ba6b-171">Kun fast lokation for produktet: Faste lokationer for produktet er gyldige, og alle produktvarianter deler samme sæt af faste lokationer.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-171">Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.</span></span> <span data-ttu-id="8ba6b-172">Kun fast lokation for produktvarianterne: Kun faste lokationer, der er angivet for hver produktvariant, er gyldige.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-172">Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.</span></span>  
+4. <span data-ttu-id="8ba6b-173">Vælg en indstilling i feltet Strategi.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-173">In the Strategy field, select an option.</span></span>
+    * <span data-ttu-id="8ba6b-174">Arbejdsordrer af typen Indkøbsordre understøtter følgende strategier: Ingen: Varen placeres på den første lokalitet, der findes.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-174">Work orders of type Purchase order support the following strategies: None: the item is placed at the first location that’s found.</span></span> <span data-ttu-id="8ba6b-175">Konsolidering: Varen placeres på en lokalitet, hvor lignende elementer allerede er tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-175">Consolidate: The item is placed in a location where similar items are already available.</span></span> <span data-ttu-id="8ba6b-176">Tom lokation uden indgående arbejde: elementet placeres på den første tomme lokalitet, der findes.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-176">Empty location with no incoming work: the item is placed in the first empty location that’s found.</span></span> <span data-ttu-id="8ba6b-177">En lokalitet betragtes som tom, hvis den ikke har noget fysisk lager og intet forventet indgående arbejde.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-177">A location is considered to be empty if it has no physical inventory and no expected incoming work.</span></span>  
+5. <span data-ttu-id="8ba6b-178">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-178">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive-action-line"></a>Rediger forespørgslen for vejledningshandlingslinjen
-1. Klik på Rediger forespørgsel.
-2. Klik på Tilføj.
-3. Skriv "id for lokationsprofil" i feltet Felt.
-    * I dette eksempel vil vi begrænse de mulige lokaliteter ved hjælp af et lokalitetsprofil-id.  
-4. Skriv en værdi i feltet Kriterier.
-5. Klik på OK.
-    * Du kan fortsætte med at tilføje vejledningslinjer og vejledningshandlinger, indtil du har dækket alle de mulige scenarier på lagerstedet.  
+## <a name="edit-the-query-for-directive-action-line"></a><span data-ttu-id="8ba6b-179">Rediger forespørgslen for vejledningshandlingslinjen</span><span class="sxs-lookup"><span data-stu-id="8ba6b-179">Edit the query for directive action line</span></span>
+1. <span data-ttu-id="8ba6b-180">Klik på Rediger forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-180">Click Edit query.</span></span>
+2. <span data-ttu-id="8ba6b-181">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-181">Click Add.</span></span>
+3. <span data-ttu-id="8ba6b-182">Skriv "id for lokationsprofil" i feltet Felt.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-182">In the Field field, type 'location profile ID'.</span></span>
+    * <span data-ttu-id="8ba6b-183">I dette eksempel vil vi begrænse de mulige lokaliteter ved hjælp af et lokalitetsprofil-id.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-183">In this example, we’ll restrict the possible locations using a location profile ID.</span></span>  
+4. <span data-ttu-id="8ba6b-184">Skriv en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-184">In the Criteria field, type a value.</span></span>
+5. <span data-ttu-id="8ba6b-185">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-185">Click OK.</span></span>
+    * <span data-ttu-id="8ba6b-186">Du kan fortsætte med at tilføje vejledningslinjer og vejledningshandlinger, indtil du har dækket alle de mulige scenarier på lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="8ba6b-186">You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.</span></span>  
 
 

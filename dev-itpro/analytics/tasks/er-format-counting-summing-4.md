@@ -16,91 +16,91 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 90a0dc0fc32a448d859fbb0933ea6f12ea16668f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 60a34e35a376635669b764457617cb997822bdcd
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing-for-electronic-reporting-er"></a>Køre formatet, der foretager optælling og opsummering til elektronisk rapportering (ER)
+# <a name="run-the-format-to-do-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="08b5c-103">Køre formatet, der foretager optælling og opsummering til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="08b5c-103">Run the format to do counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet. Disse trin kan udføres i DEMF-virksomheden.
+<span data-ttu-id="08b5c-104">Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="08b5c-105">Disse trin kan udføres i DEMF-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-105">These steps can be performed in the DEMF company.</span></span>
 
-For at fuldføre disse trin skal du først udføre trinnene i proceduren "Konfigurer ER-format til optælling og sammenlægning (del 3: Brug beregninger til at oprette output)".
+<span data-ttu-id="08b5c-106">For at fuldføre disse trin skal du først udføre trinnene i proceduren "Konfigurer ER-format til optælling og sammenlægning (del 3: Brug beregninger til at oprette output)".</span><span class="sxs-lookup"><span data-stu-id="08b5c-106">To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 3: Use computations to make the output)” procedure.</span></span>
 
-Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+<span data-ttu-id="08b5c-107">Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="08b5c-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a>Test denne konfiguration til oprettelse af Intrastat-rapporter
-1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-2. Klik på Rapporteringskonfigurationer.
-3. Udvid 'Intrastat-model' i træet.
-4. Udvid 'Intrastat-model\Intrastat (DE)' i træet.
-5. Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.
-6. Klik på Konfigurationer i handlingsruden.
-7. Klik på Brugerparametre.
-8. Vælg Ja i feltet Indstillinger for kørsel.
-9. Klik på OK.
-10. Klik på Rediger.
-11. Vælg Ja i feltet Udkast til kørsel.
-12. Klik på Gem.
-13. Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.
-14. Udvid sektionen Elektronisk rapportering.
-15. Vælg konfigurationen "Intrastat (DE) med optælling og sammenlægning".
-16. Vælg konfigurationen "Intrastat (DE) med optælling og sammenlægning".
-17. Klik på Gem.
-18. Luk siden.
-19. Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.
-20. Klik på Output.
-21. Klik på Rapport.
-    * Kør processen til oprettelse af Intrastat-rapport.  
-22. I feltet Fra dato skal du angive datoen til "2000-01-01".
-    * Definer start- og slutdatoer for af rapporteringsperioden, som omfatter de eksisterende posteringer i formen.  
-23. I feltet Til dato skal du angive datoen til "2022-12-31".
-    * Definer start- og slutdatoer for af rapporteringsperioden, som omfatter de eksisterende posteringer i formen.  
-24. Vælg 'Indførsel' i feltet Retning.
-25. Vælg Ja i feltet Generer fil.
-26. Klik på OK.
-    * Få vist oprettet output med oversigtslinjer i slutningen.  
-27. Klik på Ny.
-28. Markér den valgte række på listen.
-29. Vælg 'Udførsel' i feltet Retning.
-30. Indtast eller vælg en værdi i feltet Varenummer.
-31. Indtast eller vælg en værdi i feltet Vare.
-32. Angiv Vægt til 10
-33. Angiv Fakturabeløb til '10000'.
-34. Angiv Statistisk beløb til '10000'.
-35. Klik på Output.
-36. Klik på Rapport.
-37. Vælg 'Udførsel' i feltet Retning.
-38. Klik på OK.
-    * Få vist oprettet output med oversigtslinjer i slutningen. Bemærk, at det er blevet ændret sammenlignet med den første kørsel.  
+## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a><span data-ttu-id="08b5c-108">Test denne konfiguration til oprettelse af Intrastat-rapporter</span><span class="sxs-lookup"><span data-stu-id="08b5c-108">Test this configuration for generation of the Intrastat reports</span></span>
+1. <span data-ttu-id="08b5c-109">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="08b5c-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="08b5c-110">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="08b5c-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="08b5c-111">Udvid 'Intrastat-model' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-111">In the tree, expand 'Intrastat model'.</span></span>
+4. <span data-ttu-id="08b5c-112">Udvid 'Intrastat-model\Intrastat (DE)' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-112">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+5. <span data-ttu-id="08b5c-113">Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-113">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+6. <span data-ttu-id="08b5c-114">Klik på Konfigurationer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-114">On the Action Pane, click Configurations.</span></span>
+7. <span data-ttu-id="08b5c-115">Klik på Brugerparametre.</span><span class="sxs-lookup"><span data-stu-id="08b5c-115">Click User parameters.</span></span>
+8. <span data-ttu-id="08b5c-116">Vælg Ja i feltet Indstillinger for kørsel.</span><span class="sxs-lookup"><span data-stu-id="08b5c-116">Select Yes in the Run settings field.</span></span>
+9. <span data-ttu-id="08b5c-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08b5c-117">Click OK.</span></span>
+10. <span data-ttu-id="08b5c-118">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="08b5c-118">Click Edit.</span></span>
+11. <span data-ttu-id="08b5c-119">Vælg Ja i feltet Udkast til kørsel.</span><span class="sxs-lookup"><span data-stu-id="08b5c-119">Select Yes in the Run Draft field.</span></span>
+12. <span data-ttu-id="08b5c-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="08b5c-120">Click Save.</span></span>
+13. <span data-ttu-id="08b5c-121">Gå til Skat > Opsætning > Udenrigshandel > Udenrigshandelsparametre.</span><span class="sxs-lookup"><span data-stu-id="08b5c-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+14. <span data-ttu-id="08b5c-122">Udvid sektionen Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="08b5c-122">Expand the Electronic reporting section.</span></span>
+15. <span data-ttu-id="08b5c-123">Vælg konfigurationen "Intrastat (DE) med optælling og sammenlægning".</span><span class="sxs-lookup"><span data-stu-id="08b5c-123">Select the “Intrastat (DE) with counting & summing” configuration.</span></span>
+16. <span data-ttu-id="08b5c-124">Vælg konfigurationen "Intrastat (DE) med optælling og sammenlægning".</span><span class="sxs-lookup"><span data-stu-id="08b5c-124">Select the “Intrastat (DE) with counting & summing” configuration.</span></span>
+17. <span data-ttu-id="08b5c-125">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="08b5c-125">Click Save.</span></span>
+18. <span data-ttu-id="08b5c-126">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-126">Close the page.</span></span>
+19. <span data-ttu-id="08b5c-127">Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="08b5c-127">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+20. <span data-ttu-id="08b5c-128">Klik på Output.</span><span class="sxs-lookup"><span data-stu-id="08b5c-128">Click Output.</span></span>
+21. <span data-ttu-id="08b5c-129">Klik på Rapport.</span><span class="sxs-lookup"><span data-stu-id="08b5c-129">Click Report.</span></span>
+    * <span data-ttu-id="08b5c-130">Kør processen til oprettelse af Intrastat-rapport.</span><span class="sxs-lookup"><span data-stu-id="08b5c-130">Run the Intrastat report generation process.</span></span>  
+22. <span data-ttu-id="08b5c-131">I feltet Fra dato skal du angive datoen til "2000-01-01".</span><span class="sxs-lookup"><span data-stu-id="08b5c-131">In the From date field, set the date to '2000-01-01'.</span></span>
+    * <span data-ttu-id="08b5c-132">Definer start- og slutdatoer for af rapporteringsperioden, som omfatter de eksisterende posteringer i formen.</span><span class="sxs-lookup"><span data-stu-id="08b5c-132">Define start and end dates for the reporting period that include the existing on the form transactions.</span></span>  
+23. <span data-ttu-id="08b5c-133">I feltet Til dato skal du angive datoen til "2022-12-31".</span><span class="sxs-lookup"><span data-stu-id="08b5c-133">In the To date field, set the date to '2022-12-31'.</span></span>
+    * <span data-ttu-id="08b5c-134">Definer start- og slutdatoer for af rapporteringsperioden, som omfatter de eksisterende posteringer i formen.</span><span class="sxs-lookup"><span data-stu-id="08b5c-134">Define start and end dates for the reporting period that include the existing on the form transactions.</span></span>  
+24. <span data-ttu-id="08b5c-135">Vælg 'Indførsel' i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="08b5c-135">In the Direction field, select 'Arrivals'.</span></span>
+25. <span data-ttu-id="08b5c-136">Vælg Ja i feltet Generer fil.</span><span class="sxs-lookup"><span data-stu-id="08b5c-136">Select Yes in the Generate file field.</span></span>
+26. <span data-ttu-id="08b5c-137">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08b5c-137">Click OK.</span></span>
+    * <span data-ttu-id="08b5c-138">Få vist oprettet output med oversigtslinjer i slutningen.</span><span class="sxs-lookup"><span data-stu-id="08b5c-138">Review the created output with the summary lines in the end.</span></span>  
+27. <span data-ttu-id="08b5c-139">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="08b5c-139">Click New.</span></span>
+28. <span data-ttu-id="08b5c-140">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="08b5c-140">In the list, mark the selected row.</span></span>
+29. <span data-ttu-id="08b5c-141">Vælg 'Udførsel' i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="08b5c-141">In the Direction field, select 'Dispatches'.</span></span>
+30. <span data-ttu-id="08b5c-142">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="08b5c-142">In the Item number field, enter or select a value.</span></span>
+31. <span data-ttu-id="08b5c-143">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="08b5c-143">In the Commodity field, enter or select a value.</span></span>
+32. <span data-ttu-id="08b5c-144">Angiv Vægt til 10</span><span class="sxs-lookup"><span data-stu-id="08b5c-144">Set Weight to '10'.</span></span>
+33. <span data-ttu-id="08b5c-145">Angiv Fakturabeløb til '10000'.</span><span class="sxs-lookup"><span data-stu-id="08b5c-145">Set Invoice amount to '10000'.</span></span>
+34. <span data-ttu-id="08b5c-146">Angiv Statistisk beløb til '10000'.</span><span class="sxs-lookup"><span data-stu-id="08b5c-146">Set Statistical amount to '10000'.</span></span>
+35. <span data-ttu-id="08b5c-147">Klik på Output.</span><span class="sxs-lookup"><span data-stu-id="08b5c-147">Click Output.</span></span>
+36. <span data-ttu-id="08b5c-148">Klik på Rapport.</span><span class="sxs-lookup"><span data-stu-id="08b5c-148">Click Report.</span></span>
+37. <span data-ttu-id="08b5c-149">Vælg 'Udførsel' i feltet Retning.</span><span class="sxs-lookup"><span data-stu-id="08b5c-149">In the Direction field, select 'Dispatches'.</span></span>
+38. <span data-ttu-id="08b5c-150">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08b5c-150">Click OK.</span></span>
+    * <span data-ttu-id="08b5c-151">Få vist oprettet output med oversigtslinjer i slutningen.</span><span class="sxs-lookup"><span data-stu-id="08b5c-151">Review the created output with the summary lines in the end.</span></span> <span data-ttu-id="08b5c-152">Bemærk, at det er blevet ændret sammenlignet med den første kørsel.</span><span class="sxs-lookup"><span data-stu-id="08b5c-152">Note that it has been changed in comparison to the first run.</span></span>  
 
-## <a name="run-this-configuration-in-debug-mode-to-review-the-collected-counting--summing-data"></a>Kør denne konfiguration i fejlfindingstilstand for at gennemse indsamlede optællings- og sammenlægningsdata
-1. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-2. Udvid 'Intrastat-model' i træet.
-3. Udvid 'Intrastat-model\Intrastat (DE)' i træet.
-4. Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.
-5. Klik på Konfigurationer i handlingsruden.
-6. Klik på Brugerparametre.
-7. Vælg Ja i feltet Kør i fejlfindingstilstand.
-8. Klik på OK.
-9. Luk siden.
-10. Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.
-11. Klik på Output.
-12. Klik på Rapport.
-13. Klik på OK.
-14. Luk siden.
-15. Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.
-16. Udvid 'Intrastat-model' i træet.
-17. Udvid 'Intrastat-model\Intrastat (DE)' i træet.
-18. Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.
-19. Klik på Fejlfindingslogfiler.
-    * Bemærk, at der er oprettet en fejlfindingslogpost for kørselsprocessen for den valgte konfiguration.  
-20. Klik på Vedhæft.
-21. Klik på Åbn.
-    * Gennemse den XML-fil, der indeholder optællings- og sammenlægningsdetaljer, der er indsamlet under kørsel af den valgte konfiguration.  
+## <a name="run-this-configuration-in-debug-mode-to-review-the-collected-counting--summing-data"></a><span data-ttu-id="08b5c-153">Kør denne konfiguration i fejlfindingstilstand for at gennemse indsamlede optællings- og sammenlægningsdata</span><span class="sxs-lookup"><span data-stu-id="08b5c-153">Run this configuration in debug mode to review the collected counting & summing data</span></span>
+1. <span data-ttu-id="08b5c-154">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="08b5c-154">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="08b5c-155">Udvid 'Intrastat-model' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-155">In the tree, expand 'Intrastat model'.</span></span>
+3. <span data-ttu-id="08b5c-156">Udvid 'Intrastat-model\Intrastat (DE)' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-156">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+4. <span data-ttu-id="08b5c-157">Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-157">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+5. <span data-ttu-id="08b5c-158">Klik på Konfigurationer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-158">On the Action Pane, click Configurations.</span></span>
+6. <span data-ttu-id="08b5c-159">Klik på Brugerparametre.</span><span class="sxs-lookup"><span data-stu-id="08b5c-159">Click User parameters.</span></span>
+7. <span data-ttu-id="08b5c-160">Vælg Ja i feltet Kør i fejlfindingstilstand.</span><span class="sxs-lookup"><span data-stu-id="08b5c-160">Select Yes in the Run in debug mode field.</span></span>
+8. <span data-ttu-id="08b5c-161">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08b5c-161">Click OK.</span></span>
+9. <span data-ttu-id="08b5c-162">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-162">Close the page.</span></span>
+10. <span data-ttu-id="08b5c-163">Gå til Skat > Erklæringer > Udenrigshandel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="08b5c-163">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+11. <span data-ttu-id="08b5c-164">Klik på Output.</span><span class="sxs-lookup"><span data-stu-id="08b5c-164">Click Output.</span></span>
+12. <span data-ttu-id="08b5c-165">Klik på Rapport.</span><span class="sxs-lookup"><span data-stu-id="08b5c-165">Click Report.</span></span>
+13. <span data-ttu-id="08b5c-166">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="08b5c-166">Click OK.</span></span>
+14. <span data-ttu-id="08b5c-167">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="08b5c-167">Close the page.</span></span>
+15. <span data-ttu-id="08b5c-168">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="08b5c-168">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+16. <span data-ttu-id="08b5c-169">Udvid 'Intrastat-model' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-169">In the tree, expand 'Intrastat model'.</span></span>
+17. <span data-ttu-id="08b5c-170">Udvid 'Intrastat-model\Intrastat (DE)' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-170">In the tree, expand 'Intrastat model\Intrastat (DE)'.</span></span>
+18. <span data-ttu-id="08b5c-171">Vælg 'Intrastat-model\Intrastat (DE)\Intrastat (DE) med optælling og sammenlægning' i træet.</span><span class="sxs-lookup"><span data-stu-id="08b5c-171">In the tree, select 'Intrastat model\Intrastat (DE)\Intrastat (DE) with counting & summing'.</span></span>
+19. <span data-ttu-id="08b5c-172">Klik på Fejlfindingslogfiler.</span><span class="sxs-lookup"><span data-stu-id="08b5c-172">Click Debug logs.</span></span>
+    * <span data-ttu-id="08b5c-173">Bemærk, at der er oprettet en fejlfindingslogpost for kørselsprocessen for den valgte konfiguration.</span><span class="sxs-lookup"><span data-stu-id="08b5c-173">Note that a debug log record has been created for the execution process of the selected configuration.</span></span>  
+20. <span data-ttu-id="08b5c-174">Klik på Vedhæft.</span><span class="sxs-lookup"><span data-stu-id="08b5c-174">Click Attach.</span></span>
+21. <span data-ttu-id="08b5c-175">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="08b5c-175">Click Open.</span></span>
+    * <span data-ttu-id="08b5c-176">Gennemse den XML-fil, der indeholder optællings- og sammenlægningsdetaljer, der er indsamlet under kørsel af den valgte konfiguration.</span><span class="sxs-lookup"><span data-stu-id="08b5c-176">Review the created XML file that contains counting and summing details that were collected during the execution of the selected configuration.</span></span>  
 
 

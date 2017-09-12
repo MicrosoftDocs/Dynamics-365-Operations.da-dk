@@ -16,31 +16,31 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: aa74bfe5540df7be37ac79dfd48c0c1c510c694d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 002fffc7e8c3186eedf9060d36d2b4a77749da98
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="modify-reporting-relationships-for-a-position"></a>Redigere rapporteringsrelationerne for en stilling
+# <a name="modify-reporting-relationships-for-a-position"></a><span data-ttu-id="3a502-103">Redigere rapporteringsrelationerne for en stilling</span><span class="sxs-lookup"><span data-stu-id="3a502-103">Modify reporting relationships for a position</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du ændrer rapporteringsrelation for en medarbejder. Den rapporteringsrelationen kan bruges til at planlægge rute for dokumenter via arbejdsgangen. Proceduren viser også, hvordan medarbejderen tildeles til flere hierarkier. En medarbejder kan eksempelvis være en del af et projektteam med en uformel rapporteringsrelation til en projektleder. Yderligere rapporteringsrelationer kan defineres for stillingen for at imødekomme forskellige projekt- eller matrixscenarier. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+<span data-ttu-id="3a502-104">Denne procedure viser, hvordan du ændrer rapporteringsrelation for en medarbejder.</span><span class="sxs-lookup"><span data-stu-id="3a502-104">This procedure shows how to change the reporting relationship for an employee.</span></span> <span data-ttu-id="3a502-105">Den rapporteringsrelationen kan bruges til at planlægge rute for dokumenter via arbejdsgangen.</span><span class="sxs-lookup"><span data-stu-id="3a502-105">The reporting relationship can be used for routing documents through workflow.</span></span> <span data-ttu-id="3a502-106">Proceduren viser også, hvordan medarbejderen tildeles til flere hierarkier.</span><span class="sxs-lookup"><span data-stu-id="3a502-106">The procedure also shows how to assign the employee to additional hierarchies.</span></span> <span data-ttu-id="3a502-107">En medarbejder kan eksempelvis være en del af et projektteam med en uformel rapporteringsrelation til en projektleder.</span><span class="sxs-lookup"><span data-stu-id="3a502-107">For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor.</span></span> <span data-ttu-id="3a502-108">Yderligere rapporteringsrelationer kan defineres for stillingen for at imødekomme forskellige projekt- eller matrixscenarier.</span><span class="sxs-lookup"><span data-stu-id="3a502-108">Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios.</span></span> <span data-ttu-id="3a502-109">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="3a502-109">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå til Personale > Stillinger > Stillinger.
-2. Brug Quick Filter til at finde poster. For eksempel kan du filtrere på feltet Stilling med værdien '000091'.
-3. Klik op linket i den valgte række på listen.
-4. Udvid sektionen Rapporterer til stilling.
-5. Klik på Ny for at åbne dialogboksen Fjern.
-6. Indtast eller vælg en værdi i feltet Rapportér til.
-7. Klik på Opret.
-8. Udvid eller skjul sektionen Relationer.
-9. Klik på Tilføj.
-10. Markér afkrydsningsfeltet til venstre for gitteret.
-11. Indtast eller vælg en værdi i feltet Hierarkinavn.
-    * Eksempel: Projekt  
-12. Indtast eller vælg en værdi i feltet Rapporterer til stilling.  Eksempel: 000437
-13. Klik på Gem.
+1. <span data-ttu-id="3a502-110">Gå til Personale > Stillinger > Stillinger.</span><span class="sxs-lookup"><span data-stu-id="3a502-110">Go to Human resources > Positions > Positions.</span></span>
+2. <span data-ttu-id="3a502-111">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="3a502-111">Use the Quick Filter to find records.</span></span> <span data-ttu-id="3a502-112">For eksempel kan du filtrere på feltet Stilling med værdien '000091'.</span><span class="sxs-lookup"><span data-stu-id="3a502-112">For example, filter on the Position field with a value of '000091'.</span></span>
+3. <span data-ttu-id="3a502-113">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="3a502-113">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="3a502-114">Udvid sektionen Rapporterer til stilling.</span><span class="sxs-lookup"><span data-stu-id="3a502-114">Expand the Reports to position section.</span></span>
+5. <span data-ttu-id="3a502-115">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="3a502-115">Click New to open the drop dialog.</span></span>
+6. <span data-ttu-id="3a502-116">Indtast eller vælg en værdi i feltet Rapportér til.</span><span class="sxs-lookup"><span data-stu-id="3a502-116">In the Reports to field, enter or select a value.</span></span>
+7. <span data-ttu-id="3a502-117">Klik på Opret.</span><span class="sxs-lookup"><span data-stu-id="3a502-117">Click Create.</span></span>
+8. <span data-ttu-id="3a502-118">Udvid eller skjul sektionen Relationer.</span><span class="sxs-lookup"><span data-stu-id="3a502-118">Expand the Relationships section.</span></span>
+9. <span data-ttu-id="3a502-119">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="3a502-119">Click Add.</span></span>
+10. <span data-ttu-id="3a502-120">Markér afkrydsningsfeltet til venstre for gitteret.</span><span class="sxs-lookup"><span data-stu-id="3a502-120">Select the check box on the left of the grid.</span></span>
+11. <span data-ttu-id="3a502-121">Indtast eller vælg en værdi i feltet Hierarkinavn.</span><span class="sxs-lookup"><span data-stu-id="3a502-121">In the Hierarchy name field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a502-122">Eksempel: Projekt</span><span class="sxs-lookup"><span data-stu-id="3a502-122">Example: Project</span></span>  
+12. <span data-ttu-id="3a502-123">Indtast eller vælg en værdi i feltet Rapporterer til stilling.</span><span class="sxs-lookup"><span data-stu-id="3a502-123">In the Reports to position field, enter or select a value.</span></span>  <span data-ttu-id="3a502-124">Eksempel: 000437</span><span class="sxs-lookup"><span data-stu-id="3a502-124">Example:  000437</span></span>
+13. <span data-ttu-id="3a502-125">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3a502-125">Click Save.</span></span>
 
 

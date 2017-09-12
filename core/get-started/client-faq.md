@@ -15,46 +15,46 @@ ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b7618f5150b55542d26d10000a644a13a8651e82
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="finance-and-operations-client-faq"></a>Ofte stillede spørgsmål til Finance and Operations-klient
+# <a name="finance-and-operations-client-faq"></a><span data-ttu-id="d0569-103">Ofte stillede spørgsmål til Finance and Operations-klient</span><span class="sxs-lookup"><span data-stu-id="d0569-103">Finance and Operations client FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Finance and Operations-klienten.
+<span data-ttu-id="d0569-104">Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Finance and Operations-klienten.</span><span class="sxs-lookup"><span data-stu-id="d0569-104">This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.</span></span>
 
-<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a>Hvorfor indlæses symboler ikke, når jeg bruger Finance and Operations?
+<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a><span data-ttu-id="d0569-105">Hvorfor indlæses symboler ikke, når jeg bruger Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="d0569-105">Why aren't symbols loaded when I use Finance and Operations?</span></span>
 -----------------------------------------------------------------
 
-Sikkerhedsindstillingerne i din browser kan forhindre, at symbolerne indlæses korrekt. Hvis du vil løse dette problem, kan du prøve følgende trin:
+<span data-ttu-id="d0569-106">Sikkerhedsindstillingerne i din browser kan forhindre, at symbolerne indlæses korrekt.</span><span class="sxs-lookup"><span data-stu-id="d0569-106">The security settings on your browser might prevent the symbols from being loaded correctly.</span></span> <span data-ttu-id="d0569-107">Hvis du vil løse dette problem, kan du prøve følgende trin:</span><span class="sxs-lookup"><span data-stu-id="d0569-107">To resolve this issue, try the following steps:</span></span>
 
--   Hvis du oplever dette problem i Internet Explorer, skal du klikke på **Funktioner**, og klik derefter på **Internetindstillinger**.  I dialogboksen Internetindstillinger under fanen **Beskyttelse af personlige oplysninger** skal du klikke på **Brugerdefineret niveau** og kontrollere, at indstillingen **Overførsel af skrifttyper** er markeret.
--   Ellers skal du muligvis føje Finance and Operations-webstedet til listen over websteder, du har tillid til.
+-   <span data-ttu-id="d0569-108">Hvis du oplever dette problem i Internet Explorer, skal du klikke på **Funktioner**, og klik derefter på **Internetindstillinger**.</span><span class="sxs-lookup"><span data-stu-id="d0569-108">If you're experiencing this issue in Internet Explorer, click **Tools**, and then click **Internet Options**.</span></span>  <span data-ttu-id="d0569-109">I dialogboksen Internetindstillinger under fanen **Beskyttelse af personlige oplysninger** skal du klikke på **Brugerdefineret niveau** og kontrollere, at indstillingen **Overførsel af skrifttyper** er markeret.</span><span class="sxs-lookup"><span data-stu-id="d0569-109">In the Internet Options dialog box, on the **Privacy** tab, click **Custom level**, and make sure the **Font download** option is selected.</span></span>
+-   <span data-ttu-id="d0569-110">Ellers skal du muligvis føje Finance and Operations-webstedet til listen over websteder, du har tillid til.</span><span class="sxs-lookup"><span data-stu-id="d0569-110">Otherwise, you might have to add the Finance and Operations site to the list of trusted sites.</span></span>
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Jeg savner båndet fra Dynamics AX 2012. Kan jeg lade faner i handlingsruden være åbne hele tiden?
-Vi planlægger at implementere denne funktion snart. Brugerne vil herefter kunne vælge at beholde fanerne i Handlingsruder åbne hele tiden. Ellers skjules fanerne, når de ikke bruges, for at give mere skærmplads til siden.
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a><span data-ttu-id="d0569-111">Jeg savner båndet fra Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="d0569-111">I miss the ribbon from Dynamics AX 2012.</span></span> <span data-ttu-id="d0569-112">Kan jeg lade faner i handlingsruden være åbne hele tiden?</span><span class="sxs-lookup"><span data-stu-id="d0569-112">Can I keep Action Pane tabs open all the time?</span></span>
+<span data-ttu-id="d0569-113">Vi planlægger at implementere denne funktion snart.</span><span class="sxs-lookup"><span data-stu-id="d0569-113">We are planning to implement this feature soon.</span></span> <span data-ttu-id="d0569-114">Brugerne vil herefter kunne vælge at beholde fanerne i Handlingsruder åbne hele tiden.</span><span class="sxs-lookup"><span data-stu-id="d0569-114">Users will then be able to choose to keep the tabs on Action Panes open all the time.</span></span> <span data-ttu-id="d0569-115">Ellers skjules fanerne, når de ikke bruges, for at give mere skærmplads til siden.</span><span class="sxs-lookup"><span data-stu-id="d0569-115">Otherwise, the tabs will be collapsed when they aren't being used, to gain more screen space for the page.</span></span>
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Hvorfor kan jeg nogle gange se forskellige genvejsmenuer når jeg højreklikker?
-Hvis du højreklikker på et redigerbart felt (eller hvis tekst er markeret), vises genvejsmenuen i browseren. Denne menu giver dig adgang til kommandoerne **Klip**, **Kopiér** og **Sæt ind** kommandoer. Vi kan ikke integrere disse kommandoer i genvejsmenuer i Finance and Operations af sikkerhedsmæssige årsager, da browsere ikke giver os mulighed for automatisk at få adgang til systemets Udklipsholder.
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a><span data-ttu-id="d0569-116">Hvorfor kan jeg nogle gange se forskellige genvejsmenuer når jeg højreklikker?</span><span class="sxs-lookup"><span data-stu-id="d0569-116">Why do I sometimes see different shortcut menus when I rightclick?</span></span>
+<span data-ttu-id="d0569-117">Hvis du højreklikker på et redigerbart felt (eller hvis tekst er markeret), vises genvejsmenuen i browseren.</span><span class="sxs-lookup"><span data-stu-id="d0569-117">If you right-click in an editable field (or if text is selected), the browser's shortcut menu is displayed.</span></span> <span data-ttu-id="d0569-118">Denne menu giver dig adgang til kommandoerne **Klip**, **Kopiér** og **Sæt ind** kommandoer.</span><span class="sxs-lookup"><span data-stu-id="d0569-118">This menu gives you access to the **Cut**, **Copy**, and **Paste** commands.</span></span> <span data-ttu-id="d0569-119">Vi kan ikke integrere disse kommandoer i genvejsmenuer i Finance and Operations af sikkerhedsmæssige årsager, da browsere ikke giver os mulighed for automatisk at få adgang til systemets Udklipsholder.</span><span class="sxs-lookup"><span data-stu-id="d0569-119">We can't embed these commands into the Finance and Operations shortcut menus because, for security reasons, browsers don’t allow us to programmatically access the system clipboard.</span></span>
 
-Hvis du højreklikker på en feltetiket eller værdien af et skrivebeskyttet kontrolelement, vises genvejsmenuen Finance and Operations.
+<span data-ttu-id="d0569-120">Hvis du højreklikker på en feltetiket eller værdien af et skrivebeskyttet kontrolelement, vises genvejsmenuen Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d0569-120">If you right-click a field label or the value of a read-only control, you'll see the Finance and Operations shortcut menu.</span></span>
 
-For at gøre tastaturadgang nemmere, planlægger vi at implementere en tastaturgenvej i fremtiden, som vil åbne genvejsmenuen til Finance and Operations.
+<span data-ttu-id="d0569-121">For at gøre tastaturadgang nemmere, planlægger vi at implementere en tastaturgenvej i fremtiden, som vil åbne genvejsmenuen til Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d0569-121">To make keyboard access easier, we plan to implement a keyboard shortcut in the future that will open the Finance and Operations shortcut menu.</span></span>
 
-## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a>Hvor er funktionen Vis detaljer i Finance and Operations?
-Indstillingen **Vis detaljer** er tilgængelig på flere måder:
+## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a><span data-ttu-id="d0569-122">Hvor er funktionen Vis detaljer i Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="d0569-122">Where is the View details functionality in Finance and Operations?</span></span>
+<span data-ttu-id="d0569-123">Indstillingen **Vis detaljer** er tilgængelig på flere måder:</span><span class="sxs-lookup"><span data-stu-id="d0569-123">The **View details** option is available in a couple of ways:</span></span>
 
--   Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink. Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.
--   **Vis detaljer** er også en indstilling i genvejsmenuer i Finance and Operations. Du kan finde flere oplysninger om, hvornår genvejsmenuer i Finance and Operations vises, når du højreklikker, i det forrige afsnit.
+-   <span data-ttu-id="d0569-124">Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink.</span><span class="sxs-lookup"><span data-stu-id="d0569-124">If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink.</span></span> <span data-ttu-id="d0569-125">Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.</span><span class="sxs-lookup"><span data-stu-id="d0569-125">You can click the hyperlink to open a page that contains additional details.</span></span>
+-   <span data-ttu-id="d0569-126">**Vis detaljer** er også en indstilling i genvejsmenuer i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d0569-126">**View details** is also an option on Finance and Operations shortcut menus.</span></span> <span data-ttu-id="d0569-127">Du kan finde flere oplysninger om, hvornår genvejsmenuer i Finance and Operations vises, når du højreklikker, i det forrige afsnit.</span><span class="sxs-lookup"><span data-stu-id="d0569-127">For more information about when Finance and Operations shortcut menus are displayed when you right-click, see the previous section.</span></span>
 
 
 

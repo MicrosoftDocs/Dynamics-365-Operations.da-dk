@@ -17,35 +17,35 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 44c5e9d62d3d4562a9d8a918b53711a5663bcb65
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 59fa33dbbf2b5e0d5fd2f7975c1ace71cdd383bd
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-value-stream"></a>Oprette en værdistrøm
+# <a name="create-a-value-stream"></a><span data-ttu-id="387f8-103">Oprette en værdistrøm</span><span class="sxs-lookup"><span data-stu-id="387f8-103">Create a value stream</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Værdistrømme er driftsenheder, som grupperer et eller flere produktionsflow. Hvis du vil definere et produktionsflow, skal først du definere en værdistrøm.
+<span data-ttu-id="387f8-104">Værdistrømme er driftsenheder, som grupperer et eller flere produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="387f8-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="387f8-105">Hvis du vil definere et produktionsflow, skal først du definere en værdistrøm.</span><span class="sxs-lookup"><span data-stu-id="387f8-105">To define a production flow, you first must define a value stream.</span></span>
 
 
-## <a name="open-the-form"></a>Åbn formen
-1. Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Værdistrømme.
+## <a name="open-the-form"></a><span data-ttu-id="387f8-106">Åbn formen</span><span class="sxs-lookup"><span data-stu-id="387f8-106">Open the form</span></span>
+1. <span data-ttu-id="387f8-107">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Værdistrømme.</span><span class="sxs-lookup"><span data-stu-id="387f8-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
 
-## <a name="create-a-new-value-stream"></a>Opret en ny værdistrøm
-1. Klik på Ny for at åbne dialogboksen Fjern.
-2. Skriv en værdi i feltet Navn.
+## <a name="create-a-new-value-stream"></a><span data-ttu-id="387f8-108">Opret en ny værdistrøm</span><span class="sxs-lookup"><span data-stu-id="387f8-108">Create a new value stream</span></span>
+1. <span data-ttu-id="387f8-109">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="387f8-109">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="387f8-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="387f8-110">In the Name field, type a value.</span></span>
 
-## <a name="select-a-value-stream-manager"></a>Vælg en værdistrømleder
-1. Klik på rullelisten i feltet Leder for at åbne opslaget.
-    * Værdistrømlederen defineres for at dokumentere organisationen.  
-2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
+## <a name="select-a-value-stream-manager"></a><span data-ttu-id="387f8-111">Vælg en værdistrømleder</span><span class="sxs-lookup"><span data-stu-id="387f8-111">Select a value stream manager</span></span>
+1. <span data-ttu-id="387f8-112">Klik på rullelisten i feltet Leder for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="387f8-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="387f8-113">Værdistrømlederen defineres for at dokumentere organisationen.</span><span class="sxs-lookup"><span data-stu-id="387f8-113">The value stream manager is defined to document the organization.</span></span>  
+2. <span data-ttu-id="387f8-114">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="387f8-114">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="387f8-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="387f8-115">In the list, click the link in the selected row.</span></span>
 
-## <a name="save-and-close"></a>Gem og luk
-1. Klik på Gem.
-2. Luk siden.
-3. Opdater siden.
+## <a name="save-and-close"></a><span data-ttu-id="387f8-116">Gem og luk</span><span class="sxs-lookup"><span data-stu-id="387f8-116">Save and close</span></span>
+1. <span data-ttu-id="387f8-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="387f8-117">Click Save.</span></span>
+2. <span data-ttu-id="387f8-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="387f8-118">Close the page.</span></span>
+3. <span data-ttu-id="387f8-119">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="387f8-119">Refresh the page.</span></span>
 
 

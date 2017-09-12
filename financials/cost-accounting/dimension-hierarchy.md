@@ -17,321 +17,321 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7fb7efdd574c705c2ecfbb46e302985db0729517
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="dimension-hierarchy"></a>Dimensionshierarki
+# <a name="dimension-hierarchy"></a><span data-ttu-id="e490e-104">Dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-104">Dimension hierarchy</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger om dimensionshierarkier. Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab.  
+<span data-ttu-id="e490e-105">Dette emne indeholder oplysninger om dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="e490e-105">This topic provides information about dimension hierarchies.</span></span> <span data-ttu-id="e490e-106">Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="e490e-106">You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.</span></span>  
 
-## <a name="overview"></a>Overblik
+## <a name="overview"></a><span data-ttu-id="e490e-107">Overblik</span><span class="sxs-lookup"><span data-stu-id="e490e-107">Overview</span></span>
 
-Dimensionshierarkier bruges forskellige steder i Omkostningsregnskab. Med et dimensionshierarki kan du definere følgende oplysninger:
+<span data-ttu-id="e490e-108">Dimensionshierarkier bruges forskellige steder i Omkostningsregnskab.</span><span class="sxs-lookup"><span data-stu-id="e490e-108">Dimension hierarchies are used in various places in Cost accounting.</span></span> <span data-ttu-id="e490e-109">Med et dimensionshierarki kan du definere følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="e490e-109">A dimension hierarchy lets you define the following information:</span></span>
 
--  Den rapporteringsstruktur, der passer til organisationens behov
--  Omkostningspolitikker
--  Sikkerhedsopsætningen
+-  <span data-ttu-id="e490e-110">Den rapporteringsstruktur, der passer til organisationens behov</span><span class="sxs-lookup"><span data-stu-id="e490e-110">The reporting structure that fits into the organization's requirements</span></span>
+-  <span data-ttu-id="e490e-111">Omkostningspolitikker</span><span class="sxs-lookup"><span data-stu-id="e490e-111">Cost policies</span></span>
+-  <span data-ttu-id="e490e-112">Sikkerhedsopsætningen</span><span class="sxs-lookup"><span data-stu-id="e490e-112">The security setup</span></span>
 
-Her er et eksempel på et dimensionshierarki.
+<span data-ttu-id="e490e-113">Her er et eksempel på et dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="e490e-113">Here is an example of a dimension hierarchy.</span></span>
 
 ![Eksempel på et dimensionshierarki](./media/dimension-hierarchy.png)
 
-Du kan oprette et dimensionshierarki for følgende dimensionstyper:
+<span data-ttu-id="e490e-115">Du kan oprette et dimensionshierarki for følgende dimensionstyper:</span><span class="sxs-lookup"><span data-stu-id="e490e-115">A dimension hierarchy can be created for the following types of dimensions:</span></span>
 
--  Dimensioner for omkostningselement
--  Dimensioner for omkostningsobjekt
--  Statistiske dimensioner
+-  <span data-ttu-id="e490e-116">Dimensioner for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="e490e-116">Cost element dimensions</span></span>
+-  <span data-ttu-id="e490e-117">Dimensioner for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="e490e-117">Cost object dimensions</span></span>
+-  <span data-ttu-id="e490e-118">Statistiske dimensioner</span><span class="sxs-lookup"><span data-stu-id="e490e-118">Statistical dimensions</span></span>
 
 > [!NOTE]
-> - Du kan oprette flere dimensionshierarkier for den samme dimension, hvis der kræves forskellige perspektiver.
-> - Et dimensionshierarki kan kun knyttes til én dimension.
-> - Et dimensionshierarki kan have ubegrænsede niveauer i strukturen. Alle niveauer bliver tilgængelige i arbejdsområdet **Omkostningsstyring**. Når du bruger Microsoft Excel eller Microsoft Power BI til rapporteringsformål, eksporteres kun de første 15 niveauer i dimensionshierarkiet. Denne begrænsning findes, fordi både Excel og Power BI kræver et fast skema.
-> - Et dimensionshierarki er ikke datorelateret. Derfor gemmes enhver ændring i et dimensionshierarki til posten med det samme, og du kan ikke sammenligne før- og efter-datoen.
+> - <span data-ttu-id="e490e-119">Du kan oprette flere dimensionshierarkier for den samme dimension, hvis der kræves forskellige perspektiver.</span><span class="sxs-lookup"><span data-stu-id="e490e-119">You can create multiple dimension hierarchies for the same dimension if different perspectives are required.</span></span>
+> - <span data-ttu-id="e490e-120">Et dimensionshierarki kan kun knyttes til én dimension.</span><span class="sxs-lookup"><span data-stu-id="e490e-120">A dimension hierarchy can be associated with only one dimension.</span></span>
+> - <span data-ttu-id="e490e-121">Et dimensionshierarki kan have ubegrænsede niveauer i strukturen.</span><span class="sxs-lookup"><span data-stu-id="e490e-121">A dimension hierarchy can have unlimited levels in its structure.</span></span> <span data-ttu-id="e490e-122">Alle niveauer bliver tilgængelige i arbejdsområdet **Omkostningsstyring**.</span><span class="sxs-lookup"><span data-stu-id="e490e-122">All the levels will be available in the **Cost control** workspace.</span></span> <span data-ttu-id="e490e-123">Når du bruger Microsoft Excel eller Microsoft Power BI til rapporteringsformål, eksporteres kun de første 15 niveauer i dimensionshierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-123">When you use Microsoft Excel or Microsoft Power BI for reporting purposes, only the first 15 levels of the dimension hierarchy are exported.</span></span> <span data-ttu-id="e490e-124">Denne begrænsning findes, fordi både Excel og Power BI kræver et fast skema.</span><span class="sxs-lookup"><span data-stu-id="e490e-124">This limitation exists because both Excel and Power BI require a fixed schema.</span></span>
+> - <span data-ttu-id="e490e-125">Et dimensionshierarki er ikke datorelateret.</span><span class="sxs-lookup"><span data-stu-id="e490e-125">A dimension hierarchy isn't date-effective.</span></span> <span data-ttu-id="e490e-126">Derfor gemmes enhver ændring i et dimensionshierarki til posten med det samme, og du kan ikke sammenligne før- og efter-datoen.</span><span class="sxs-lookup"><span data-stu-id="e490e-126">Therefore, any change to a dimension hierarchy is immediately saved to the record, and you can't compare the before date and after date.</span></span>
 
-## <a name="dimension-hierarchy-type"></a>Dimensionshierarkitype
+## <a name="dimension-hierarchy-type"></a><span data-ttu-id="e490e-127">Dimensionshierarkitype</span><span class="sxs-lookup"><span data-stu-id="e490e-127">Dimension hierarchy type</span></span>
 
-Når du opretter et nyt dimensionshierarki, skal du vælge en hierarkitype. Gå til **Omkostningsregnskab** > **Dimensioner** > **Dimensionshierarkier**. Klik på **Ny**, og vælg en dimensionshierarkitype. Du kan vælge enten **Kategoriseringshierarki for dimension** eller **Klassifikationshierarki for dimension**.
+<span data-ttu-id="e490e-128">Når du opretter et nyt dimensionshierarki, skal du vælge en hierarkitype.</span><span class="sxs-lookup"><span data-stu-id="e490e-128">When you create a new dimension hierarchy, you must select a hierarchy type.</span></span> <span data-ttu-id="e490e-129">Gå til **Omkostningsregnskab** > **Dimensioner** > **Dimensionshierarkier**.</span><span class="sxs-lookup"><span data-stu-id="e490e-129">Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**.</span></span> <span data-ttu-id="e490e-130">Klik på **Ny**, og vælg en dimensionshierarkitype.</span><span class="sxs-lookup"><span data-stu-id="e490e-130">Click **New**, and select a dimension hierarchy type.</span></span> <span data-ttu-id="e490e-131">Du kan vælge enten **Kategoriseringshierarki for dimension** eller **Klassifikationshierarki for dimension**.</span><span class="sxs-lookup"><span data-stu-id="e490e-131">You can select either **Dimension categorization hierarchy** or **Dimension classification hierarchy**.</span></span>
 
-### <a name="dimension-categorization-hierarchy"></a>Kategoriseringshierarki for dimension
+### <a name="dimension-categorization-hierarchy"></a><span data-ttu-id="e490e-132">Kategoriseringshierarki for dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-132">Dimension categorization hierarchy</span></span>
 
-**Kategoriseringshierarki for dimension**-typen bruges til rapporteringsformål. Den understøtter kun omkostningselementdimensioner. Når du vælger denne type, gælder følgende regler:
+<span data-ttu-id="e490e-133">**Kategoriseringshierarki for dimension**-typen bruges til rapporteringsformål.</span><span class="sxs-lookup"><span data-stu-id="e490e-133">The **Dimension categorization hierarchy** type is used for reporting purposes.</span></span> <span data-ttu-id="e490e-134">Den understøtter kun omkostningselementdimensioner.</span><span class="sxs-lookup"><span data-stu-id="e490e-134">It supports only the cost element dimensions.</span></span> <span data-ttu-id="e490e-135">Når du vælger denne type, gælder følgende regler:</span><span class="sxs-lookup"><span data-stu-id="e490e-135">When you select this type, the following rules apply:</span></span>
 
--  Et dimensionsmedlem kan tilknyttes mere end én gang i den hierarkiske struktur.
--  Du kan placere et omkostningselements dimensionsmedlem i forskellige noder ved at tildele en omkostningsfunktionsmåde til bladnoden.
+-  <span data-ttu-id="e490e-136">Et dimensionsmedlem kan tilknyttes mere end én gang i den hierarkiske struktur.</span><span class="sxs-lookup"><span data-stu-id="e490e-136">A dimension member can be associated more than one time in the hierarchy structure.</span></span>
+-  <span data-ttu-id="e490e-137">Du kan placere et omkostningselements dimensionsmedlem i forskellige noder ved at tildele en omkostningsfunktionsmåde til bladnoden.</span><span class="sxs-lookup"><span data-stu-id="e490e-137">You can put a cost element dimension member in different nodes by assigning a cost behavior to the leaf node.</span></span>
 
-### <a name="dimension-classification-hierarchy"></a>Klassifikationshierarki for dimension
+### <a name="dimension-classification-hierarchy"></a><span data-ttu-id="e490e-138">Klassifikationshierarki for dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-138">Dimension classification hierarchy</span></span>
 
-**Klassifikationshierarki for dimension**-typen bruges til at definere regler og til rapporteringsformål. Den understøtter alle dimensioner, f.eks. omkostningsobjekter, omkostningselementer og statistiske dimensioner. Når du vælger denne type, kan et dimensionsmedlem kun tilknyttes én gang i den hierarkiske struktur.
+<span data-ttu-id="e490e-139">**Klassifikationshierarki for dimension**-typen bruges til at definere regler og til rapporteringsformål.</span><span class="sxs-lookup"><span data-stu-id="e490e-139">The **Dimension classification hierarchy** type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="e490e-140">Den understøtter alle dimensioner, f.eks. omkostningsobjekter, omkostningselementer og statistiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="e490e-140">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span> <span data-ttu-id="e490e-141">Når du vælger denne type, kan et dimensionsmedlem kun tilknyttes én gang i den hierarkiske struktur.</span><span class="sxs-lookup"><span data-stu-id="e490e-141">When you select this type, a dimension member can be associated only one time in the hierarchy structure.</span></span>
 
-## <a name="create-and-maintain-a-dimension-hierarchy"></a>Oprette og vedligeholde et dimensionshierarki
+## <a name="create-and-maintain-a-dimension-hierarchy"></a><span data-ttu-id="e490e-142">Oprette og vedligeholde et dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-142">Create and maintain a dimension hierarchy</span></span>
 
-Et dimensionshierarki oprettes som en træstruktur, der har node- og bladnoderelationer.
+<span data-ttu-id="e490e-143">Et dimensionshierarki oprettes som en træstruktur, der har node- og bladnoderelationer.</span><span class="sxs-lookup"><span data-stu-id="e490e-143">A dimension hierarchy is created as a tree structure that has node and leaf node relationships.</span></span>
 
--  En node kan have 1:_n_ undernoder.
--  En node kan ikke have tilknyttet både undernoder og bladnoder.
--  En bladnode kan kun tildeles på det laveste niveau i hierarkiet.
+-  <span data-ttu-id="e490e-144">En node kan have 1:_n_ undernoder.</span><span class="sxs-lookup"><span data-stu-id="e490e-144">A node can have 1:_n_ subnodes.</span></span>
+-  <span data-ttu-id="e490e-145">En node kan ikke have tilknyttet både undernoder og bladnoder.</span><span class="sxs-lookup"><span data-stu-id="e490e-145">A node can’t have both subnodes and leaf nodes assigned to it.</span></span>
+-  <span data-ttu-id="e490e-146">En bladnode kan kun tildeles på det laveste niveau i hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-146">A leaf node can be assigned only at the lowest level in the hierarchy.</span></span>
 
-### <a name="example"></a>Eksempel
+### <a name="example"></a><span data-ttu-id="e490e-147">Eksempel</span><span class="sxs-lookup"><span data-stu-id="e490e-147">Example</span></span>
 
-Et lille firma har følgende organisationsstruktur, hvor Finans og Personale er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.
+<span data-ttu-id="e490e-148">Et lille firma har følgende organisationsstruktur, hvor Finans og Personale er afdelinger under Administration, og Samling og Emballage er afdelinger under Produktion.</span><span class="sxs-lookup"><span data-stu-id="e490e-148">A small company has the following organization structure, where Finance and Human resources are departments under Admin, and Assembly and Packaging are departments under Production.</span></span>
 
 ![Eksempel på en organisationsstruktur](./media/dimension-hierarchy-org.png)
 
-En omkostningsobjektdimension repræsenterer alle bærerne i organisationen.
+<span data-ttu-id="e490e-150">En omkostningsobjektdimension repræsenterer alle bærerne i organisationen.</span><span class="sxs-lookup"><span data-stu-id="e490e-150">A cost object dimension represents all the cost centers in the organization.</span></span>
 
-- Dimension for omkostningsobjekt
-    - Bærere
+- <span data-ttu-id="e490e-151">Dimension for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="e490e-151">Cost object dimension</span></span>
+    - <span data-ttu-id="e490e-152">Bærere</span><span class="sxs-lookup"><span data-stu-id="e490e-152">Cost centers</span></span>
 
-Den omkostningsobjektdimension, der repræsenterer alle bærerne, kan konfigureres som vist her.
+<span data-ttu-id="e490e-153">Den omkostningsobjektdimension, der repræsenterer alle bærerne, kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-153">The cost object dimension that represents all the cost centers can be set up as shown here.</span></span>
 
-| Bærere | Betegnelse |
+| <span data-ttu-id="e490e-154">Bærere</span><span class="sxs-lookup"><span data-stu-id="e490e-154">Cost centers</span></span> | <span data-ttu-id="e490e-155">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="e490e-155">Description</span></span> |
 |--------------|-------------|
-| CC001        | Personale          |
-| CC002        | Finans     |
-| CC003        | Skat         |
-| CC007        | Kreditor/Debitor       |
-| CC005        | Samling    |
-| CC006        | Emballage   |
+| <span data-ttu-id="e490e-156">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-156">CC001</span></span>        | <span data-ttu-id="e490e-157">Personale</span><span class="sxs-lookup"><span data-stu-id="e490e-157">HR</span></span>          |
+| <span data-ttu-id="e490e-158">CC002</span><span class="sxs-lookup"><span data-stu-id="e490e-158">CC002</span></span>        | <span data-ttu-id="e490e-159">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-159">Finance</span></span>     |
+| <span data-ttu-id="e490e-160">CC003</span><span class="sxs-lookup"><span data-stu-id="e490e-160">CC003</span></span>        | <span data-ttu-id="e490e-161">Skat</span><span class="sxs-lookup"><span data-stu-id="e490e-161">Tax</span></span>         |
+| <span data-ttu-id="e490e-162">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-162">CC007</span></span>        | <span data-ttu-id="e490e-163">Kreditor/Debitor</span><span class="sxs-lookup"><span data-stu-id="e490e-163">AR/AP</span></span>       |
+| <span data-ttu-id="e490e-164">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-164">CC005</span></span>        | <span data-ttu-id="e490e-165">Samling</span><span class="sxs-lookup"><span data-stu-id="e490e-165">Assembly</span></span>    |
+| <span data-ttu-id="e490e-166">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-166">CC006</span></span>        | <span data-ttu-id="e490e-167">Emballage</span><span class="sxs-lookup"><span data-stu-id="e490e-167">Packaging</span></span>   |
 
-En omkostningselementdimension repræsenterer alle omkostningselementerne i organisationen.
+<span data-ttu-id="e490e-168">En omkostningselementdimension repræsenterer alle omkostningselementerne i organisationen.</span><span class="sxs-lookup"><span data-stu-id="e490e-168">A cost element dimension represents all the cost elements in the organization.</span></span>
 
-- Dimension for omkostningselement
-    - Omkostningselementer
+- <span data-ttu-id="e490e-169">Dimension for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="e490e-169">Cost element dimension</span></span>
+    - <span data-ttu-id="e490e-170">Omkostningselementer</span><span class="sxs-lookup"><span data-stu-id="e490e-170">Cost elements</span></span>
 
-Den omkostningselementdimension, der repræsenterer alle omkostningselementerne, kan konfigureres som vist her.
+<span data-ttu-id="e490e-171">Den omkostningselementdimension, der repræsenterer alle omkostningselementerne, kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-171">The cost element dimension that represents all the cost elements can be set up as shown here.</span></span>
 
-| Omkostningselementer | Betegnelse |
+| <span data-ttu-id="e490e-172">Omkostningselementer</span><span class="sxs-lookup"><span data-stu-id="e490e-172">Cost elements</span></span> | <span data-ttu-id="e490e-173">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="e490e-173">Description</span></span> |
 |---------------|-------------|
-| 10001         | Elektricitet |
-| 10010         | Rengøring    |
-| 10011         | Opvarmning     |
-| 40001         | Vareforbrug        |
+| <span data-ttu-id="e490e-174">10001</span><span class="sxs-lookup"><span data-stu-id="e490e-174">10001</span></span>         | <span data-ttu-id="e490e-175">Elektricitet</span><span class="sxs-lookup"><span data-stu-id="e490e-175">Electricity</span></span> |
+| <span data-ttu-id="e490e-176">10010</span><span class="sxs-lookup"><span data-stu-id="e490e-176">10010</span></span>         | <span data-ttu-id="e490e-177">Rengøring</span><span class="sxs-lookup"><span data-stu-id="e490e-177">Cleaning</span></span>    |
+| <span data-ttu-id="e490e-178">10011</span><span class="sxs-lookup"><span data-stu-id="e490e-178">10011</span></span>         | <span data-ttu-id="e490e-179">Opvarmning</span><span class="sxs-lookup"><span data-stu-id="e490e-179">Heating</span></span>     |
+| <span data-ttu-id="e490e-180">40001</span><span class="sxs-lookup"><span data-stu-id="e490e-180">40001</span></span>         | <span data-ttu-id="e490e-181">Vareforbrug</span><span class="sxs-lookup"><span data-stu-id="e490e-181">COGS</span></span>        |
 
-Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan konfigureres som vist her.
+<span data-ttu-id="e490e-182">Et dimensionshierarki, der opfylder de organisatoriske rapporteringskrav, kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-182">A dimension hierarchy that meets the organizational reporting requirements can be set up as shown here.</span></span>
 
-**Detaljer om dimensionshierarki**
+<span data-ttu-id="e490e-183">**Detaljer om dimensionshierarki**</span><span class="sxs-lookup"><span data-stu-id="e490e-183">**Dimension hierarchy details**</span></span>
 
-| Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
+| <span data-ttu-id="e490e-184">Navn på dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-184">Dimension hierarchy name</span></span> | <span data-ttu-id="e490e-185">Dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-185">Dimension</span></span>    | <span data-ttu-id="e490e-186">Navn på dimensionshierarkitype</span><span class="sxs-lookup"><span data-stu-id="e490e-186">Dimension hierarchy type name</span></span>      | <span data-ttu-id="e490e-187">Adgangslistehierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-187">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | Nr.                    |
+| <span data-ttu-id="e490e-188">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-188">Organization</span></span>             | <span data-ttu-id="e490e-189">Bærere</span><span class="sxs-lookup"><span data-stu-id="e490e-189">Cost centers</span></span> | <span data-ttu-id="e490e-190">Klassifikationshierarki for dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-190">Dimension classification hierarchy</span></span> | <span data-ttu-id="e490e-191">Nr.</span><span class="sxs-lookup"><span data-stu-id="e490e-191">No</span></span>                    |
 
-Dimensionshierarkiet til rapportering kan konfigureres som vist her.
+<span data-ttu-id="e490e-192">Dimensionshierarkiet til rapportering kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-192">The dimension hierarchy for reporting can be set up as shown here.</span></span>
 
-|                   | Intervaller for dimensionsmedlemmer   |                         |
+|                   | <span data-ttu-id="e490e-193">Intervaller for dimensionsmedlemmer</span><span class="sxs-lookup"><span data-stu-id="e490e-193">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
-| Organisation      |                           |                         |
-| &nbsp;&nbsp;Administration         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
-|                   | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | CC001                     | CC001                   |
-| &nbsp;&nbsp;Produktion    |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Emballage | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Samling  | CC006                     | CC006                   |
+| <span data-ttu-id="e490e-194">**Noder**</span><span class="sxs-lookup"><span data-stu-id="e490e-194">**Nodes**</span></span>         | <span data-ttu-id="e490e-195">**Fra dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-195">**From dimension member**</span></span> | <span data-ttu-id="e490e-196">**Til dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-196">**To dimension member**</span></span> |
+| <span data-ttu-id="e490e-197">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-197">Organization</span></span>      |                           |                         |
+| <span data-ttu-id="e490e-198">&nbsp;&nbsp;Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-198">&nbsp;&nbsp;Admin</span></span>         |                           |                         |
+|<span data-ttu-id="e490e-199">&nbsp;&nbsp;&nbsp;&nbsp;Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-199">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="e490e-200">CC002</span><span class="sxs-lookup"><span data-stu-id="e490e-200">CC002</span></span>                     | <span data-ttu-id="e490e-201">CC003</span><span class="sxs-lookup"><span data-stu-id="e490e-201">CC003</span></span>                   |
+|                   | <span data-ttu-id="e490e-202">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-202">CC007</span></span>                     | <span data-ttu-id="e490e-203">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-203">CC007</span></span>                   |
+| <span data-ttu-id="e490e-204">&nbsp;&nbsp;&nbsp;&nbsp;Personale</span><span class="sxs-lookup"><span data-stu-id="e490e-204">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="e490e-205">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-205">CC001</span></span>                     | <span data-ttu-id="e490e-206">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-206">CC001</span></span>                   |
+| <span data-ttu-id="e490e-207">&nbsp;&nbsp;Produktion</span><span class="sxs-lookup"><span data-stu-id="e490e-207">&nbsp;&nbsp;Production</span></span>    |                           |                         |
+| <span data-ttu-id="e490e-208">&nbsp;&nbsp;&nbsp;&nbsp;Emballage</span><span class="sxs-lookup"><span data-stu-id="e490e-208">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="e490e-209">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-209">CC005</span></span>                     | <span data-ttu-id="e490e-210">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-210">CC005</span></span>                   |
+| <span data-ttu-id="e490e-211">&nbsp;&nbsp;&nbsp;&nbsp;Samling</span><span class="sxs-lookup"><span data-stu-id="e490e-211">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="e490e-212">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-212">CC006</span></span>                     | <span data-ttu-id="e490e-213">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-213">CC006</span></span>                   |
 
-Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres som vist her.
+<span data-ttu-id="e490e-214">Et dimensionshierarki, der opfylder kravene i politikken, kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-214">A dimension hierarchy that meets the policy requirement can be set up as shown here.</span></span>
 
-**Detaljer om dimensionshierarki**
+<span data-ttu-id="e490e-215">**Detaljer om dimensionshierarki**</span><span class="sxs-lookup"><span data-stu-id="e490e-215">**Dimension hierarchy details**</span></span>
 
-| Navn på dimensionshierarki | Dimension     | Navn på dimensionshierarkitype      |
+| <span data-ttu-id="e490e-216">Navn på dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-216">Dimension hierarchy name</span></span> | <span data-ttu-id="e490e-217">Dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-217">Dimension</span></span>     | <span data-ttu-id="e490e-218">Navn på dimensionshierarkitype</span><span class="sxs-lookup"><span data-stu-id="e490e-218">Dimension hierarchy type name</span></span>      |
 |--------------------------|---------------|------------------------------------|
-| Funktionalitet af omkostning            | Omkostningselementer | Klassifikationshierarki for dimension |
+| <span data-ttu-id="e490e-219">Funktionalitet af omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-219">Cost behavior</span></span>            | <span data-ttu-id="e490e-220">Omkostningselementer</span><span class="sxs-lookup"><span data-stu-id="e490e-220">Cost elements</span></span> | <span data-ttu-id="e490e-221">Klassifikationshierarki for dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-221">Dimension classification hierarchy</span></span> |
 
-Dimensionshierarkiet til politikken kan konfigureres som vist her.
+<span data-ttu-id="e490e-222">Dimensionshierarkiet til politikken kan konfigureres som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-222">The dimension hierarchy for the policy can be set up as shown here.</span></span>
 
-|                   | Intervaller for dimensionsmedlemmer   |                         |
+|                   | <span data-ttu-id="e490e-223">Intervaller for dimensionsmedlemmer</span><span class="sxs-lookup"><span data-stu-id="e490e-223">Dimension member ranges</span></span>   |                         |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
-| Funktionalitet af omkostning     |                           |                         |
-| &nbsp;&nbsp;Fast omkostning    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabel omkostning | 40001                     | 40010                   |
+| <span data-ttu-id="e490e-224">**Noder**</span><span class="sxs-lookup"><span data-stu-id="e490e-224">**Nodes**</span></span>         | <span data-ttu-id="e490e-225">**Fra dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-225">**From dimension member**</span></span> | <span data-ttu-id="e490e-226">**Til dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-226">**To dimension member**</span></span> |
+| <span data-ttu-id="e490e-227">Funktionalitet af omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-227">Cost behavior</span></span>     |                           |                         |
+| <span data-ttu-id="e490e-228">&nbsp;&nbsp;Fast omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-228">&nbsp;&nbsp;Fixed cost</span></span>    | <span data-ttu-id="e490e-229">10001</span><span class="sxs-lookup"><span data-stu-id="e490e-229">10001</span></span>                     | <span data-ttu-id="e490e-230">10011</span><span class="sxs-lookup"><span data-stu-id="e490e-230">10011</span></span>                   |
+|<span data-ttu-id="e490e-231">&nbsp;&nbsp;Variabel omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-231">&nbsp;&nbsp;Variable cost</span></span> | <span data-ttu-id="e490e-232">40001</span><span class="sxs-lookup"><span data-stu-id="e490e-232">40001</span></span>                     | <span data-ttu-id="e490e-233">40010</span><span class="sxs-lookup"><span data-stu-id="e490e-233">40010</span></span>                   |
 
 > [!NOTE]
-> Under **Intervaller for dimensionsmedlemmer** kan en node indeholde 1:_n_ dimensionsmedlemsintervaller. Du kan indsætte dimensionsmedlem-id'er, der endnu ikke findes som medlemmer af dimensionen. Denne fremgangsmåde gør hierarkiet fleksibelt i fremtiden.  
+> <span data-ttu-id="e490e-234">Under **Intervaller for dimensionsmedlemmer** kan en node indeholde 1:_n_ dimensionsmedlemsintervaller.</span><span class="sxs-lookup"><span data-stu-id="e490e-234">Under **Dimension member ranges**, a node can contain 1:_n_ dimension member ranges.</span></span> <span data-ttu-id="e490e-235">Du kan indsætte dimensionsmedlem-id'er, der endnu ikke findes som medlemmer af dimensionen.</span><span class="sxs-lookup"><span data-stu-id="e490e-235">You can insert dimension member IDs that don’t yet exist as dimension members.</span></span> <span data-ttu-id="e490e-236">Denne fremgangsmåde gør hierarkiet fleksibelt i fremtiden.</span><span class="sxs-lookup"><span data-stu-id="e490e-236">This approach makes the hierarchy resilient for the future.</span></span>  
 
-### <a name="copy-a-hierarchy"></a>Kopiere et hierarki
+### <a name="copy-a-hierarchy"></a><span data-ttu-id="e490e-237">Kopiere et hierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-237">Copy a hierarchy</span></span>
 
-Du kan kopiere et aktuelt dimensionshierarki som udgangspunkt for et nyt dimensionshierarki. Denne fremgangsmåde kan være nyttig, hvis du vil sammenligne det forrige dimensionshierarki med det nye.
+<span data-ttu-id="e490e-238">Du kan kopiere et aktuelt dimensionshierarki som udgangspunkt for et nyt dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="e490e-238">You can copy a current dimension hierarchy as the starting point for a new dimension hierarchy.</span></span> <span data-ttu-id="e490e-239">Denne fremgangsmåde kan være nyttig, hvis du vil sammenligne det forrige dimensionshierarki med det nye.</span><span class="sxs-lookup"><span data-stu-id="e490e-239">This approach can be useful if you want to compare the previous dimension hierarchy to the new dimension hierarchy.</span></span>
 
-### <a name="rearrange-nodes-in-a-hierarchy"></a>Omarrangere noder i et hierarki
+### <a name="rearrange-nodes-in-a-hierarchy"></a><span data-ttu-id="e490e-240">Omarrangere noder i et hierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-240">Rearrange nodes in a hierarchy</span></span>
 
-Du kan flytte en node op og ned inden for dens aktuelle niveau i strukturen. På denne måde kan du ændre rækkefølgen af noder til rapportering i arbejdsområdet **Omkostningsstyring**.
+<span data-ttu-id="e490e-241">Du kan flytte en node op og ned inden for dens aktuelle niveau i strukturen.</span><span class="sxs-lookup"><span data-stu-id="e490e-241">You can move a node up and down within its current level in the structure.</span></span> <span data-ttu-id="e490e-242">På denne måde kan du ændre rækkefølgen af noder til rapportering i arbejdsområdet **Omkostningsstyring**.</span><span class="sxs-lookup"><span data-stu-id="e490e-242">In this way, you can rearrange the order of nodes for reporting in the **Cost control** workspace.</span></span>
 
-Du kan flytte en node til en ny placering i hierarkiet ved at markere målnoden. Noder kan flyttes på to måder:
+<span data-ttu-id="e490e-243">Du kan flytte en node til en ny placering i hierarkiet ved at markere målnoden.</span><span class="sxs-lookup"><span data-stu-id="e490e-243">You move a node to a new location in the hierarchy by selecting the target node.</span></span> <span data-ttu-id="e490e-244">Noder kan flyttes på to måder:</span><span class="sxs-lookup"><span data-stu-id="e490e-244">There are two ways to move a node:</span></span>
 
-- **Flyt under** – Flyt den markerede node fra den aktuelle placering i hierarkiet, og indsæt den **under** den valgte målnode.
-- **Flyt efter** – Flyt den markerede node fra den aktuelle placering i hierarkiet, og indsæt den **efter** den valgte node på dens niveau i hierarkiet.
+- <span data-ttu-id="e490e-245">**Flyt under** – Flyt den markerede node fra den aktuelle placering i hierarkiet, og indsæt den **under** den valgte målnode.</span><span class="sxs-lookup"><span data-stu-id="e490e-245">**Move below** – Move the selected node from its current position in the hierarchy, and insert it **under** the selected target node.</span></span>
+- <span data-ttu-id="e490e-246">**Flyt efter** – Flyt den markerede node fra den aktuelle placering i hierarkiet, og indsæt den **efter** den valgte node på dens niveau i hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-246">**Move after** – Move the selected node from its current position in the hierarchy, and insert it **after** the selected target node at its level of the hierarchy.</span></span>
 
 > [!NOTE] 
-> Rækkefølgen af noderne vedligeholdes ikke, når du eksporterer data til Excel eller Power BI, fordi disse værktøjer bruger en alfanumerisk sorteringsrækkefølge som standard. Du skal ændre rækkefølgen manuelt.
+> <span data-ttu-id="e490e-247">Rækkefølgen af noderne vedligeholdes ikke, når du eksporterer data til Excel eller Power BI, fordi disse værktøjer bruger en alfanumerisk sorteringsrækkefølge som standard.</span><span class="sxs-lookup"><span data-stu-id="e490e-247">The order of the nodes isn't maintained when you export data to Excel or Power BI, because those tools use an alphanumeric sort order by default.</span></span> <span data-ttu-id="e490e-248">Du skal ændre rækkefølgen manuelt.</span><span class="sxs-lookup"><span data-stu-id="e490e-248">You should manually rearrange the order.</span></span>
 
-## <a name="define-dimension-hierarchies-for-reporting"></a>Definere dimensionshierarkier for rapportering
+## <a name="define-dimension-hierarchies-for-reporting"></a><span data-ttu-id="e490e-249">Definere dimensionshierarkier for rapportering</span><span class="sxs-lookup"><span data-stu-id="e490e-249">Define dimension hierarchies for reporting</span></span>
 
-Dimensionshierarkier er vigtige ved rapportering. Du kan bruge dem til at angive den specifikke struktur, som passer til den enkelte organisation. De aggregeringer, som foretages på nodeniveauet i dimensionshierarkiet, gør det muligt for interessenter på alle niveauer i organisationen at se data på alle niveauer.
+<span data-ttu-id="e490e-250">Dimensionshierarkier er vigtige ved rapportering.</span><span class="sxs-lookup"><span data-stu-id="e490e-250">Dimension hierarchies are important for reporting.</span></span> <span data-ttu-id="e490e-251">Du kan bruge dem til at angive den specifikke struktur, som passer til den enkelte organisation.</span><span class="sxs-lookup"><span data-stu-id="e490e-251">They let you define the specific structure that fits into the individual organization.</span></span> <span data-ttu-id="e490e-252">De aggregeringer, som foretages på nodeniveauet i dimensionshierarkiet, gør det muligt for interessenter på alle niveauer i organisationen at se data på alle niveauer.</span><span class="sxs-lookup"><span data-stu-id="e490e-252">The aggregations that are done at the node level of the dimension hierarchy let stakeholders at any level of the organization see data at any level.</span></span>
 
-Dimensionshierarkier er tilgængelige i følgende rapporteringsværktøjer. Denne fremgangsmåde er med til at sikre konsistens i rapporteringsstrukturen.
+<span data-ttu-id="e490e-253">Dimensionshierarkier er tilgængelige i følgende rapporteringsværktøjer.</span><span class="sxs-lookup"><span data-stu-id="e490e-253">Dimension hierarchies are available in the following reporting tools.</span></span> <span data-ttu-id="e490e-254">Denne fremgangsmåde er med til at sikre konsistens i rapporteringsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="e490e-254">This approach helps guarantee consistency in the reporting structure.</span></span>
 
-- Arbejdsområdet **Omkostningsstyring** (klient):
+- <span data-ttu-id="e490e-255">Arbejdsområdet **Omkostningsstyring** (klient):</span><span class="sxs-lookup"><span data-stu-id="e490e-255">**Cost control** workspace (Client):</span></span>
 
-    - Styres af konfigurationen.
+    - <span data-ttu-id="e490e-256">Styres af konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="e490e-256">Controlled by configuration.</span></span>
 
-- Arbejdsområdet **Omkostningsstyring** (mobilprogram):
+- <span data-ttu-id="e490e-257">Arbejdsområdet **Omkostningsstyring** (mobilprogram):</span><span class="sxs-lookup"><span data-stu-id="e490e-257">**Cost control** workspace (Mobile application):</span></span>
 
-    - Styres af konfigurationen.
+    - <span data-ttu-id="e490e-258">Styres af konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="e490e-258">Controlled by configuration.</span></span>
 
-- Excel
+- <span data-ttu-id="e490e-259">Excel</span><span class="sxs-lookup"><span data-stu-id="e490e-259">Excel</span></span>
 
-    - Giver mulighed for at vælge bestemte dimensionshierarkier pr. eksportdefinition:
+    - <span data-ttu-id="e490e-260">Giver mulighed for at vælge bestemte dimensionshierarkier pr. eksportdefinition:</span><span class="sxs-lookup"><span data-stu-id="e490e-260">Provides the option to select specific dimension hierarchies per export definition:</span></span>
 
-        - Ét dimensionshierarki for omkostningselement (obligatorisk)
-        - Ét dimensionshierarki for omkostningselement (valgfrit)
-        - Ét statistisk dimensionshierarki (valgfrit)
+        - <span data-ttu-id="e490e-261">Ét dimensionshierarki for omkostningselement (obligatorisk)</span><span class="sxs-lookup"><span data-stu-id="e490e-261">One cost element dimension hierarchy (mandatory)</span></span>
+        - <span data-ttu-id="e490e-262">Ét dimensionshierarki for omkostningselement (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="e490e-262">One cost object dimension hierarchy (optional)</span></span>
+        - <span data-ttu-id="e490e-263">Ét statistisk dimensionshierarki (valgfrit)</span><span class="sxs-lookup"><span data-stu-id="e490e-263">One statistical dimension hierarchy (optional)</span></span>
 
-- Power BI:
+- <span data-ttu-id="e490e-264">Power BI:</span><span class="sxs-lookup"><span data-stu-id="e490e-264">Power BI:</span></span>
 
-    - Alle dimensionshierarkier er tilgængelige.
+    - <span data-ttu-id="e490e-265">Alle dimensionshierarkier er tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="e490e-265">All dimension hierarchies are available.</span></span>
     
-Hvis du opretter rapporter ved hjælp af Excel eller Power BI, eksporteres kun de første 15 niveauer i hierarkierne. Denne begrænsning findes, fordi der kræves et fast skema i Excel og Power BI. Hvis et hierarki har mere end 15 niveauer, eksporteres der ikke flere niveauer. Den normaliserede tabel indeholder en post for hvert dimensionsmedlem i hierarkiet. Der forekommer derfor automatisk aggregering. Denne funktionsmåde er med til at sikre, at saldi på ethvert af de 15 tilgængelige niveauer i hierarkiet stadig er korrekt.
+<span data-ttu-id="e490e-266">Hvis du opretter rapporter ved hjælp af Excel eller Power BI, eksporteres kun de første 15 niveauer i hierarkierne.</span><span class="sxs-lookup"><span data-stu-id="e490e-266">If you create reports by using Excel or Power BI, only the first 15 levels of the dimension hierarchies are exported.</span></span> <span data-ttu-id="e490e-267">Denne begrænsning findes, fordi der kræves et fast skema i Excel og Power BI.</span><span class="sxs-lookup"><span data-stu-id="e490e-267">This limitation exists because a fixed schema is required in Excel and Power BI.</span></span> <span data-ttu-id="e490e-268">Hvis et hierarki har mere end 15 niveauer, eksporteres der ikke flere niveauer.</span><span class="sxs-lookup"><span data-stu-id="e490e-268">If a hierarchy has more than 15 levels, the additional levels won't be exported.</span></span> <span data-ttu-id="e490e-269">Den normaliserede tabel indeholder en post for hvert dimensionsmedlem i hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-269">The normalized table contains a record for each dimension member in the hierarchy.</span></span> <span data-ttu-id="e490e-270">Der forekommer derfor automatisk aggregering.</span><span class="sxs-lookup"><span data-stu-id="e490e-270">Therefore, automated aggregation occurs.</span></span> <span data-ttu-id="e490e-271">Denne funktionsmåde er med til at sikre, at saldi på ethvert af de 15 tilgængelige niveauer i hierarkiet stadig er korrekt.</span><span class="sxs-lookup"><span data-stu-id="e490e-271">This behavior helps guarantee that the balances at any of the 15 available levels in the hierarchy are still correct.</span></span>
 
-Følgende eksempel viser, hvordan et dimensionshierarki kan se ud i rapporteringsstrukturen.
+<span data-ttu-id="e490e-272">Følgende eksempel viser, hvordan et dimensionshierarki kan se ud i rapporteringsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="e490e-272">The following example shows what a dimension hierarchy might look like in the reporting structure.</span></span>
 
-| Dimensionshierarki for omkostningsobjekt – niveau 1 | Dimensionshierarki for omkostningsobjekt – niveau 2 | Dimensionshierarki for omkostningsobjekt – niveau 3 | Dimensionshierarki for omkostningsobjekt – niveau 4 | Dimensionshierarki for omkostningsobjekt – niveau 15 |
+| <span data-ttu-id="e490e-273">Dimensionshierarki for omkostningsobjekt – niveau 1</span><span class="sxs-lookup"><span data-stu-id="e490e-273">Cost object dimension hierarchy – Level 1</span></span> | <span data-ttu-id="e490e-274">Dimensionshierarki for omkostningsobjekt – niveau 2</span><span class="sxs-lookup"><span data-stu-id="e490e-274">Cost object dimension hierarchy – Level 2</span></span> | <span data-ttu-id="e490e-275">Dimensionshierarki for omkostningsobjekt – niveau 3</span><span class="sxs-lookup"><span data-stu-id="e490e-275">Cost object dimension hierarchy – Level 3</span></span> | <span data-ttu-id="e490e-276">Dimensionshierarki for omkostningsobjekt – niveau 4</span><span class="sxs-lookup"><span data-stu-id="e490e-276">Cost object dimension hierarchy – Level 4</span></span> | <span data-ttu-id="e490e-277">Dimensionshierarki for omkostningsobjekt – niveau 15</span><span class="sxs-lookup"><span data-stu-id="e490e-277">Cost object dimension hierarchy – Level 15</span></span> |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organisation                              | Administration                                     | Finans                                   | CC002                                     |                                            |
-| Organisation                              | Administration                                     | Finans                                   | CC003                                     |                                            |
-| Organisation                              | Administration                                     | Finans                                   | CC007                                     |                                            |
-| Organisation                              | Administration                                     | Personale                                        | CC001                                     |                                            |
-| Organisation                              | Produktion                                | Emballage                                 | CC005                                     |                                            |
-| Organisation                              | Produktion                                | Samling                                  | CC006                                     |                                            |
+| <span data-ttu-id="e490e-278">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-278">Organization</span></span>                              | <span data-ttu-id="e490e-279">Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-279">Admin</span></span>                                     | <span data-ttu-id="e490e-280">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-280">Finance</span></span>                                   | <span data-ttu-id="e490e-281">CC002</span><span class="sxs-lookup"><span data-stu-id="e490e-281">CC002</span></span>                                     |                                            |
+| <span data-ttu-id="e490e-282">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-282">Organization</span></span>                              | <span data-ttu-id="e490e-283">Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-283">Admin</span></span>                                     | <span data-ttu-id="e490e-284">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-284">Finance</span></span>                                   | <span data-ttu-id="e490e-285">CC003</span><span class="sxs-lookup"><span data-stu-id="e490e-285">CC003</span></span>                                     |                                            |
+| <span data-ttu-id="e490e-286">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-286">Organization</span></span>                              | <span data-ttu-id="e490e-287">Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-287">Admin</span></span>                                     | <span data-ttu-id="e490e-288">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-288">Finance</span></span>                                   | <span data-ttu-id="e490e-289">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-289">CC007</span></span>                                     |                                            |
+| <span data-ttu-id="e490e-290">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-290">Organization</span></span>                              | <span data-ttu-id="e490e-291">Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-291">Admin</span></span>                                     | <span data-ttu-id="e490e-292">Personale</span><span class="sxs-lookup"><span data-stu-id="e490e-292">HR</span></span>                                        | <span data-ttu-id="e490e-293">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-293">CC001</span></span>                                     |                                            |
+| <span data-ttu-id="e490e-294">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-294">Organization</span></span>                              | <span data-ttu-id="e490e-295">Produktion</span><span class="sxs-lookup"><span data-stu-id="e490e-295">Production</span></span>                                | <span data-ttu-id="e490e-296">Emballage</span><span class="sxs-lookup"><span data-stu-id="e490e-296">Packaging</span></span>                                 | <span data-ttu-id="e490e-297">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-297">CC005</span></span>                                     |                                            |
+| <span data-ttu-id="e490e-298">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-298">Organization</span></span>                              | <span data-ttu-id="e490e-299">Produktion</span><span class="sxs-lookup"><span data-stu-id="e490e-299">Production</span></span>                                | <span data-ttu-id="e490e-300">Samling</span><span class="sxs-lookup"><span data-stu-id="e490e-300">Assembly</span></span>                                  | <span data-ttu-id="e490e-301">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-301">CC006</span></span>                                     |                                            |
 
-### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Opdatere de dimensionshierarkier, der bruges til rapportering 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a><span data-ttu-id="e490e-302">Opdatere de dimensionshierarkier, der bruges til rapportering</span><span class="sxs-lookup"><span data-stu-id="e490e-302">Update the dimension hierarchies that are used for reporting</span></span> 
 
-Med tiden skal de dimensionshierarkier, der bruges i de tidligere nævnte rapporteringsværktøjer, opdateres. Du kan opdatere dimensionshierarkier ved at opdatere klienten.
+<span data-ttu-id="e490e-303">Med tiden skal de dimensionshierarkier, der bruges i de tidligere nævnte rapporteringsværktøjer, opdateres.</span><span class="sxs-lookup"><span data-stu-id="e490e-303">Over time, the dimension hierarchies that are used in the previously mentioned reporting tools will have to be updated.</span></span> <span data-ttu-id="e490e-304">Du kan opdatere dimensionshierarkier ved at opdatere klienten.</span><span class="sxs-lookup"><span data-stu-id="e490e-304">You can update dimension hierarchies by refreshing the client.</span></span>
 
-- Arbejdsområdet **Omkostningsstyring** (klient)
-- Arbejdsområdet **Omkostningsstyring** (mobilprogram)
+- <span data-ttu-id="e490e-305">Arbejdsområdet **Omkostningsstyring** (klient)</span><span class="sxs-lookup"><span data-stu-id="e490e-305">**Cost control** workspace (Client)</span></span>
+- <span data-ttu-id="e490e-306">Arbejdsområdet **Omkostningsstyring** (mobilprogram)</span><span class="sxs-lookup"><span data-stu-id="e490e-306">**Cost control** workspace (Mobile application)</span></span>
 
-Opdateringer til dimensionshierarkier hentes hver 24 timer af et job, der er cachelagret på forhånd. Når de eksporterede data er opdateret, er de opdaterede dimensionshierarkier tilgængelige i følgende værktøjer:
+<span data-ttu-id="e490e-307">Opdateringer til dimensionshierarkier hentes hver 24 timer af et job, der er cachelagret på forhånd.</span><span class="sxs-lookup"><span data-stu-id="e490e-307">Updates to dimension hierarchies are picked up every 24 hours by a pre-cached job.</span></span> <span data-ttu-id="e490e-308">Når de eksporterede data er opdateret, er de opdaterede dimensionshierarkier tilgængelige i følgende værktøjer:</span><span class="sxs-lookup"><span data-stu-id="e490e-308">After the exported data is updated, the updated dimension hierarchies are available in the following tools:</span></span>
 
-- Excel
-- Power BI
+- <span data-ttu-id="e490e-309">Excel</span><span class="sxs-lookup"><span data-stu-id="e490e-309">Excel</span></span>
+- <span data-ttu-id="e490e-310">Power BI</span><span class="sxs-lookup"><span data-stu-id="e490e-310">Power BI</span></span>
 
 > [!NOTE] 
-> Du kan manuelt udløse en opdatering af dimensionshierarkiets cache ved at oprette en ny eksport til Excel for det eller de dimensionshierarkier, der skal opdateres.
+> <span data-ttu-id="e490e-311">Du kan manuelt udløse en opdatering af dimensionshierarkiets cache ved at oprette en ny eksport til Excel for det eller de dimensionshierarkier, der skal opdateres.</span><span class="sxs-lookup"><span data-stu-id="e490e-311">To manually trigger an update of the dimension hierarchy cache, you can create a new export to Excel for the dimension hierarchy or hierarchies that must be updated.</span></span>
 
-## <a name="define-dimension-hierarchies-for-cost-policies"></a>Definere dimensionshierarkier for omkostningspolitikker
+## <a name="define-dimension-hierarchies-for-cost-policies"></a><span data-ttu-id="e490e-312">Definere dimensionshierarkier for omkostningspolitikker</span><span class="sxs-lookup"><span data-stu-id="e490e-312">Define dimension hierarchies for cost policies</span></span>
 
-Omkostningsregnskab består af flere politikker, hvor der defineres detaljerede regler. Du skal definere et eller flere dimensionshierarkier for følgende politikker:
+<span data-ttu-id="e490e-313">Omkostningsregnskab består af flere politikker, hvor der defineres detaljerede regler.</span><span class="sxs-lookup"><span data-stu-id="e490e-313">Cost accounting consists of multiple policies where detailed rules are defined.</span></span> <span data-ttu-id="e490e-314">Du skal definere et eller flere dimensionshierarkier for følgende politikker:</span><span class="sxs-lookup"><span data-stu-id="e490e-314">You must define one or more dimension hierarchies for the following policies:</span></span>
 
-- Funktionalitet af omkostning
-- Omkostningsfordeling
-- Omkostningstildeling
-- Omkostningstotaler
+- <span data-ttu-id="e490e-315">Funktionalitet af omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-315">Cost behavior</span></span>
+- <span data-ttu-id="e490e-316">Omkostningsfordeling</span><span class="sxs-lookup"><span data-stu-id="e490e-316">Cost distribution</span></span>
+- <span data-ttu-id="e490e-317">Omkostningstildeling</span><span class="sxs-lookup"><span data-stu-id="e490e-317">Cost allocation</span></span>
+- <span data-ttu-id="e490e-318">Omkostningstotaler</span><span class="sxs-lookup"><span data-stu-id="e490e-318">Cost rollup</span></span>
 
-Dimensionshierarkier gør det nemt at oprette regler. For at undgå at skulle oprette regler for hvert dimensionsmedlem, kan du drage fordel af de aggregeringer af dimensionsmedlemmer, der leveres af dimensionshierarkiniveauer. Hvis du har overlappende regler, skal du definere specifikke regler, som systemet behandler, når det beregner de faste omkostninger.
+<span data-ttu-id="e490e-319">Dimensionshierarkier gør det nemt at oprette regler.</span><span class="sxs-lookup"><span data-stu-id="e490e-319">Dimension hierarchies make it easy to create rules.</span></span> <span data-ttu-id="e490e-320">For at undgå at skulle oprette regler for hvert dimensionsmedlem, kan du drage fordel af de aggregeringer af dimensionsmedlemmer, der leveres af dimensionshierarkiniveauer.</span><span class="sxs-lookup"><span data-stu-id="e490e-320">To avoid having to create rules for every dimension member, you can take advantage of the aggregations of dimension members that are provided by dimension hierarchy levels.</span></span> <span data-ttu-id="e490e-321">Hvis du har overlappende regler, skal du definere specifikke regler, som systemet behandler, når det beregner de faste omkostninger.</span><span class="sxs-lookup"><span data-stu-id="e490e-321">If you have overlapping rules, you must define specific rules that the system will consider when it does the overhead calculation.</span></span>
 
-### <a name="example-define-a-cost-behavior-policy"></a>Eksempel: Definere en politik for omkostningsfunktionalitet
+### <a name="example-define-a-cost-behavior-policy"></a><span data-ttu-id="e490e-322">Eksempel: Definere en politik for omkostningsfunktionalitet</span><span class="sxs-lookup"><span data-stu-id="e490e-322">Example: Define a cost behavior policy</span></span>
 
-Der oprettes en ny politik for omkostningsfunktionalitet, og relevante dimensionshierarkier tildeles politikken, som vist her.
+<span data-ttu-id="e490e-323">Der oprettes en ny politik for omkostningsfunktionalitet, og relevante dimensionshierarkier tildeles politikken, som vist her.</span><span class="sxs-lookup"><span data-stu-id="e490e-323">A new cost behavior policy is created, and appropriate dimension hierarchies are assigned to the policy, as shown here.</span></span>
 
-**Politik for funktionalitet af omkostning**
+<span data-ttu-id="e490e-324">**Politik for funktionalitet af omkostning**</span><span class="sxs-lookup"><span data-stu-id="e490e-324">**Cost behavior policy**</span></span>
 
-| Navn på politik   | Dimensionshierarki for omkostningselement | Dimensionshierarki for omkostningsobjekt | Regnskabsvaluta |
+| <span data-ttu-id="e490e-325">Navn på politik</span><span class="sxs-lookup"><span data-stu-id="e490e-325">Policy name</span></span>   | <span data-ttu-id="e490e-326">Dimensionshierarki for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="e490e-326">Cost element dimension hierarchy</span></span> | <span data-ttu-id="e490e-327">Dimensionshierarki for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="e490e-327">Cost object dimension hierarchy</span></span> | <span data-ttu-id="e490e-328">Regnskabsvaluta</span><span class="sxs-lookup"><span data-stu-id="e490e-328">Accounting currency</span></span> |
 |---------------|----------------------------------|---------------------------------|---------------------|
-| Funktionalitet af omkostning | Funktionalitet af omkostning                    | Organisation                    | USD                 |
+| <span data-ttu-id="e490e-329">Funktionalitet af omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-329">Cost behavior</span></span> | <span data-ttu-id="e490e-330">Funktionalitet af omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-330">Cost behavior</span></span>                    | <span data-ttu-id="e490e-331">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-331">Organization</span></span>                    | <span data-ttu-id="e490e-332">USD</span><span class="sxs-lookup"><span data-stu-id="e490e-332">USD</span></span>                 |
 
-**Regler**
+<span data-ttu-id="e490e-333">**Regler**</span><span class="sxs-lookup"><span data-stu-id="e490e-333">**Rules**</span></span>
 
-| Dimensionshierarkinode for omkostningselement | Dimensionshierarkinode for omkostningsobjekt | Fast procentdel | Fast beløb | Gyldig fra | Gyldig til |
+| <span data-ttu-id="e490e-334">Dimensionshierarkinode for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="e490e-334">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="e490e-335">Dimensionshierarkinode for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="e490e-335">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="e490e-336">Fast procentdel</span><span class="sxs-lookup"><span data-stu-id="e490e-336">Fixed percentage</span></span> | <span data-ttu-id="e490e-337">Fast beløb</span><span class="sxs-lookup"><span data-stu-id="e490e-337">Fixed amount</span></span> | <span data-ttu-id="e490e-338">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="e490e-338">Valid from</span></span> | <span data-ttu-id="e490e-339">Gyldig til</span><span class="sxs-lookup"><span data-stu-id="e490e-339">Valid to</span></span> |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
-| Fast omkostning                            | Organisation                         | 100,00           | 0,00         | 1/1/2017   | Aldrig    |
-| 10001                                 | Organisation                         | 0,00             | 150,00       | 1/1/2017   | Aldrig    |
-| 10001 (\*)                             | Finans                              |                  | 50,00        | 1/1/2017   | Aldrig    |
-| Funktionalitet af omkostning eller variabel omkostning (\*\*)   | Organisation                         | 0,00             | 0,00         | 1/1/2017   | Aldrig    |
+| <span data-ttu-id="e490e-340">Fast omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-340">Fixed cost</span></span>                            | <span data-ttu-id="e490e-341">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-341">Organization</span></span>                         | <span data-ttu-id="e490e-342">100,00</span><span class="sxs-lookup"><span data-stu-id="e490e-342">100.00</span></span>           | <span data-ttu-id="e490e-343">0,00</span><span class="sxs-lookup"><span data-stu-id="e490e-343">0.00</span></span>         | <span data-ttu-id="e490e-344">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-344">1/1/2017</span></span>   | <span data-ttu-id="e490e-345">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-345">Never</span></span>    |
+| <span data-ttu-id="e490e-346">10001</span><span class="sxs-lookup"><span data-stu-id="e490e-346">10001</span></span>                                 | <span data-ttu-id="e490e-347">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-347">Organization</span></span>                         | <span data-ttu-id="e490e-348">0,00</span><span class="sxs-lookup"><span data-stu-id="e490e-348">0.00</span></span>             | <span data-ttu-id="e490e-349">150,00</span><span class="sxs-lookup"><span data-stu-id="e490e-349">150.00</span></span>       | <span data-ttu-id="e490e-350">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-350">1/1/2017</span></span>   | <span data-ttu-id="e490e-351">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-351">Never</span></span>    |
+| <span data-ttu-id="e490e-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="e490e-352">10001 (\*)</span></span>                             | <span data-ttu-id="e490e-353">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-353">Finance</span></span>                              |                  | <span data-ttu-id="e490e-354">50,00</span><span class="sxs-lookup"><span data-stu-id="e490e-354">50.00</span></span>        | <span data-ttu-id="e490e-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-355">1/1/2017</span></span>   | <span data-ttu-id="e490e-356">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-356">Never</span></span>    |
+| <span data-ttu-id="e490e-357">Funktionalitet af omkostning eller variabel omkostning (\*\*)</span><span class="sxs-lookup"><span data-stu-id="e490e-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="e490e-358">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-358">Organization</span></span>                         | <span data-ttu-id="e490e-359">0,00</span><span class="sxs-lookup"><span data-stu-id="e490e-359">0.00</span></span>             | <span data-ttu-id="e490e-360">0,00</span><span class="sxs-lookup"><span data-stu-id="e490e-360">0.00</span></span>         | <span data-ttu-id="e490e-361">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-361">1/1/2017</span></span>   | <span data-ttu-id="e490e-362">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-362">Never</span></span>    |
 
-\* Noden for variable omkostninger er ikke påkrævet. Hvis en omkostning ikke er klassificeret som en fast omkostninger, er den en variabel omkostning.
+<span data-ttu-id="e490e-363">\* Noden for variable omkostninger er ikke påkrævet.</span><span class="sxs-lookup"><span data-stu-id="e490e-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="e490e-364">Hvis en omkostning ikke er klassificeret som en fast omkostninger, er den en variabel omkostning.</span><span class="sxs-lookup"><span data-stu-id="e490e-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
-\*\* Der oprettes en detaljeret regel for kombinationen af omkostningselementmedlem 10001, og alle omkostningsobjektmedlemmer, der samles under Finans-hierarkiniveauet (CC002, CC003, CC007).
+<span data-ttu-id="e490e-365">\*\* Der oprettes en detaljeret regel for kombinationen af omkostningselementmedlem 10001, og alle omkostningsobjektmedlemmer, der samles under Finans-hierarkiniveauet (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="e490e-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
-De foregående regler viser den fleksibilitet, som dimensionshierarkier giver. Ved at definere regler på højt niveau, kan du minimere vedligeholdelsen. Du kan derefter definere detaljerede regler, som passer til en bestemt forretningsmålsætning.
+<span data-ttu-id="e490e-366">De foregående regler viser den fleksibilitet, som dimensionshierarkier giver.</span><span class="sxs-lookup"><span data-stu-id="e490e-366">The preceding rules show the flexibility that dimension hierarchies provide.</span></span> <span data-ttu-id="e490e-367">Ved at definere regler på højt niveau, kan du minimere vedligeholdelsen.</span><span class="sxs-lookup"><span data-stu-id="e490e-367">By defining high-level rules, you can help minimize maintenance.</span></span> <span data-ttu-id="e490e-368">Du kan derefter definere detaljerede regler, som passer til en bestemt forretningsmålsætning.</span><span class="sxs-lookup"><span data-stu-id="e490e-368">You can then define detailed rules to fit into a specific business objective.</span></span>
 
-Hvis de dimensionshierarkier, der bruges i regler, opdateres, sender systemet automatisk opdateringerne videre.
+<span data-ttu-id="e490e-369">Hvis de dimensionshierarkier, der bruges i regler, opdateres, sender systemet automatisk opdateringerne videre.</span><span class="sxs-lookup"><span data-stu-id="e490e-369">If the dimension hierarchies that are used in rules are updated, the system automatically brings the updates forward.</span></span>
 
-Hvis et niveau af granularitet ikke længere kræves i reglerne, kan du lade reglen udløbe.
+<span data-ttu-id="e490e-370">Hvis et niveau af granularitet ikke længere kræves i reglerne, kan du lade reglen udløbe.</span><span class="sxs-lookup"><span data-stu-id="e490e-370">If a level of granularity in the rules is no longer required, the rule can be expired.</span></span>
 
-F.eks. er en regel for en specifik omkostningsfunktionsmåde for Finans-omkostningsobjektets dimensionshierarkinode ikke længere påkrævet. Derfor kan du klikke på **Lad regel udløbe** for at lade reglen udløbe.
+<span data-ttu-id="e490e-371">F.eks. er en regel for en specifik omkostningsfunktionsmåde for Finans-omkostningsobjektets dimensionshierarkinode ikke længere påkrævet.</span><span class="sxs-lookup"><span data-stu-id="e490e-371">For example, a specific cost behavior rule for the Finance cost object dimension hierarchy node is no longer required.</span></span> <span data-ttu-id="e490e-372">Derfor kan du klikke på **Lad regel udløbe** for at lade reglen udløbe.</span><span class="sxs-lookup"><span data-stu-id="e490e-372">In this case, click **Expire rule** to expire the rule.</span></span>
 
-| Dimensionshierarkinode for omkostningselement | Dimensionshierarkinode for omkostningsobjekt | Fast procentdel | Fast beløb | Gyldig fra | Gyldig til  |
+| <span data-ttu-id="e490e-373">Dimensionshierarkinode for omkostningselement</span><span class="sxs-lookup"><span data-stu-id="e490e-373">Cost element dimension hierarchy node</span></span> | <span data-ttu-id="e490e-374">Dimensionshierarkinode for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="e490e-374">Cost object dimension hierarchy node</span></span> | <span data-ttu-id="e490e-375">Fast procentdel</span><span class="sxs-lookup"><span data-stu-id="e490e-375">Fixed percentage</span></span> | <span data-ttu-id="e490e-376">Fast beløb</span><span class="sxs-lookup"><span data-stu-id="e490e-376">Fixed amount</span></span> | <span data-ttu-id="e490e-377">Gyldig fra</span><span class="sxs-lookup"><span data-stu-id="e490e-377">Valid from</span></span> | <span data-ttu-id="e490e-378">Gyldig til</span><span class="sxs-lookup"><span data-stu-id="e490e-378">Valid to</span></span>  |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
-| Fast omkostning                            | Organisation                         | 100,00           | 0.00         | 1/1/2017   | Aldrig     |
-| 10001                                 | Organisation                         | 0.00             | 150,00       | 1/1/2017   | Aldrig     |
-| 10001                                 | Finans                              |                  | 50,00        | 1/1/2017   | 20/1/2017 |
-| Funktionalitet af omkostning eller variabel omkostning        | Organisation                         | 0.00             | 0.00         | 1/1/2017   | Aldrig     |
+| <span data-ttu-id="e490e-379">Fast omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-379">Fixed cost</span></span>                            | <span data-ttu-id="e490e-380">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-380">Organization</span></span>                         | <span data-ttu-id="e490e-381">100,00</span><span class="sxs-lookup"><span data-stu-id="e490e-381">100,00</span></span>           | <span data-ttu-id="e490e-382">0.00</span><span class="sxs-lookup"><span data-stu-id="e490e-382">0,00</span></span>         | <span data-ttu-id="e490e-383">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-383">1/1/2017</span></span>   | <span data-ttu-id="e490e-384">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-384">Never</span></span>     |
+| <span data-ttu-id="e490e-385">10001</span><span class="sxs-lookup"><span data-stu-id="e490e-385">10001</span></span>                                 | <span data-ttu-id="e490e-386">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-386">Organization</span></span>                         | <span data-ttu-id="e490e-387">0.00</span><span class="sxs-lookup"><span data-stu-id="e490e-387">0,00</span></span>             | <span data-ttu-id="e490e-388">150,00</span><span class="sxs-lookup"><span data-stu-id="e490e-388">150,00</span></span>       | <span data-ttu-id="e490e-389">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-389">1/1/2017</span></span>   | <span data-ttu-id="e490e-390">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-390">Never</span></span>     |
+| <span data-ttu-id="e490e-391">10001</span><span class="sxs-lookup"><span data-stu-id="e490e-391">10001</span></span>                                 | <span data-ttu-id="e490e-392">Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-392">Finance</span></span>                              |                  | <span data-ttu-id="e490e-393">50,00</span><span class="sxs-lookup"><span data-stu-id="e490e-393">50,00</span></span>        | <span data-ttu-id="e490e-394">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-394">1/1/2017</span></span>   | <span data-ttu-id="e490e-395">20/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-395">20/1/2017</span></span> |
+| <span data-ttu-id="e490e-396">Funktionalitet af omkostning eller variabel omkostning</span><span class="sxs-lookup"><span data-stu-id="e490e-396">Cost behavior or Variable cost</span></span>        | <span data-ttu-id="e490e-397">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-397">Organization</span></span>                         | <span data-ttu-id="e490e-398">0.00</span><span class="sxs-lookup"><span data-stu-id="e490e-398">0,00</span></span>             | <span data-ttu-id="e490e-399">0.00</span><span class="sxs-lookup"><span data-stu-id="e490e-399">0,00</span></span>         | <span data-ttu-id="e490e-400">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="e490e-400">1/1/2017</span></span>   | <span data-ttu-id="e490e-401">Aldrig</span><span class="sxs-lookup"><span data-stu-id="e490e-401">Never</span></span>     |
 
-Alle beregninger af faste omkostninger, der køres efter den 20. januar 2017, anvender ikke længere denne regel.
+<span data-ttu-id="e490e-402">Alle beregninger af faste omkostninger, der køres efter den 20. januar 2017, anvender ikke længere denne regel.</span><span class="sxs-lookup"><span data-stu-id="e490e-402">Any overhead calculation that is run after January 20, 2017, no longer considers this rule.</span></span>
 
 > [!NOTE] 
-> Felterne **Gyldig fra** og **Gyldig til** er dato- og klokkeslætsrelaterede. Du kan lade reglen udløbe og køre en ny beregning af faste omkostninger samme dag.
+> <span data-ttu-id="e490e-403">Felterne **Gyldig fra** og **Gyldig til** er dato- og klokkeslætsrelaterede.</span><span class="sxs-lookup"><span data-stu-id="e490e-403">The **Valid from** and **Valid to** fields are date-effective and time-effective.</span></span> <span data-ttu-id="e490e-404">Du kan lade reglen udløbe og køre en ny beregning af faste omkostninger samme dag.</span><span class="sxs-lookup"><span data-stu-id="e490e-404">You can expire the rule and run a new overhead calculation on the same day.</span></span>
 
-## <a name="define-dimension-hierarchies-for-security-setup"></a>Definere dimensionshierarkier for sikkerhedsopsætning
+## <a name="define-dimension-hierarchies-for-security-setup"></a><span data-ttu-id="e490e-405">Definere dimensionshierarkier for sikkerhedsopsætning</span><span class="sxs-lookup"><span data-stu-id="e490e-405">Define dimension hierarchies for security setup</span></span>
 
-Data i Omkostningsregnskab skal gøres tilgængelige for alle ledere, der er ansvarlige for en rapporteringsenhed. I omkostningsregnskabets terminologi repræsenteres en rapporteringsenhed som et omkostningsobjekt eller en række omkostningsobjekter.
+<span data-ttu-id="e490e-406">Data i Omkostningsregnskab skal gøres tilgængelige for alle ledere, der er ansvarlige for en rapporteringsenhed.</span><span class="sxs-lookup"><span data-stu-id="e490e-406">Cost accounting data should be made available to all managers who are responsible for a reporting unit.</span></span> <span data-ttu-id="e490e-407">I omkostningsregnskabets terminologi repræsenteres en rapporteringsenhed som et omkostningsobjekt eller en række omkostningsobjekter.</span><span class="sxs-lookup"><span data-stu-id="e490e-407">In Cost accounting terminology, a reporting unit is represented as a cost object or a set of cost objects.</span></span>
 
-Potentielt skal alle ledere kunne få adgang til følsomme forretningsoplysninger som f.eks. indtægter og margener. Det er derfor vigtigt, at du konfigurerer sikkerhed, så lederne kun kan se de data, der er relevante for dem. Af hensyn til datasikkerheden skal du definere dimensionshierarkier.
+<span data-ttu-id="e490e-408">Potentielt skal alle ledere kunne få adgang til følsomme forretningsoplysninger som f.eks. indtægter og margener.</span><span class="sxs-lookup"><span data-stu-id="e490e-408">Potentially, all managers will be able to access highly sensitive business data, such revenues and margins.</span></span> <span data-ttu-id="e490e-409">Det er derfor vigtigt, at du konfigurerer sikkerhed, så lederne kun kan se de data, der er relevante for dem.</span><span class="sxs-lookup"><span data-stu-id="e490e-409">Therefore, it's important that you set up security, so that managers see only the data that is relevant to them.</span></span> <span data-ttu-id="e490e-410">Af hensyn til datasikkerheden skal du definere dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="e490e-410">To help control data security, you define dimension hierarchies.</span></span>
 
-- Brugen af dimensionshierarkier gælder kun, når den dimensionsværdi, der er valgt i referencen til dimensionshierarkiet, er en omkostningsobjektdimension.
-- Der kan kun aktiveres ét dimensionshierarki pr. omkostningsobjektdimensionen i adgangslistehierarkiet.
+- <span data-ttu-id="e490e-411">Brugen af dimensionshierarkier gælder kun, når den dimensionsværdi, der er valgt i referencen til dimensionshierarkiet, er en omkostningsobjektdimension.</span><span class="sxs-lookup"><span data-stu-id="e490e-411">The use of dimension hierarchies applies only when the dimension value that is selected in the dimension hierarchy reference is a cost object dimension.</span></span>
+- <span data-ttu-id="e490e-412">Der kan kun aktiveres ét dimensionshierarki pr. omkostningsobjektdimensionen i adgangslistehierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-412">Only one dimension hierarchy can be enabled per cost object dimension in the access list hierarchy.</span></span>
 
-**Detaljer om dimensionshierarki**
+<span data-ttu-id="e490e-413">**Detaljer om dimensionshierarki**</span><span class="sxs-lookup"><span data-stu-id="e490e-413">**Dimension hierarchy details**</span></span>
 
-| Navn på dimensionshierarki | Dimension    | Navn på dimensionshierarkitype      | Adgangslistehierarki |
+| <span data-ttu-id="e490e-414">Navn på dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-414">Dimension hierarchy name</span></span> | <span data-ttu-id="e490e-415">Dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-415">Dimension</span></span>    | <span data-ttu-id="e490e-416">Navn på dimensionshierarkitype</span><span class="sxs-lookup"><span data-stu-id="e490e-416">Dimension hierarchy type name</span></span>      | <span data-ttu-id="e490e-417">Adgangslistehierarki</span><span class="sxs-lookup"><span data-stu-id="e490e-417">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Bærere | Klassifikationshierarki for dimension | **Ja**               |
+| <span data-ttu-id="e490e-418">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-418">Organization</span></span>             | <span data-ttu-id="e490e-419">Bærere</span><span class="sxs-lookup"><span data-stu-id="e490e-419">Cost centers</span></span> | <span data-ttu-id="e490e-420">Klassifikationshierarki for dimension</span><span class="sxs-lookup"><span data-stu-id="e490e-420">Dimension classification hierarchy</span></span> | <span data-ttu-id="e490e-421">**Ja**</span><span class="sxs-lookup"><span data-stu-id="e490e-421">**Yes**</span></span>               |
 
-Et nyt oversigtspanel **Brugere** er tilgængeligt i hierarkidesigneren. Her kan du indsætte et eller flere bruger-id'er på hver node i hierarkiet.
+<span data-ttu-id="e490e-422">Et nyt oversigtspanel **Brugere** er tilgængeligt i hierarkidesigneren.</span><span class="sxs-lookup"><span data-stu-id="e490e-422">A new **Users** FastTab is available in the hierarchy designer.</span></span> <span data-ttu-id="e490e-423">Her kan du indsætte et eller flere bruger-id'er på hver node i hierarkiet.</span><span class="sxs-lookup"><span data-stu-id="e490e-423">Here, you can insert one or more user IDs at each node in the hierarchy.</span></span>
 
-|                 | Brugere            | Intervaller for dimensionsmedlemmer   |                         |
+|                 | <span data-ttu-id="e490e-424">Brugere</span><span class="sxs-lookup"><span data-stu-id="e490e-424">Users</span></span>            | <span data-ttu-id="e490e-425">Intervaller for dimensionsmedlemmer</span><span class="sxs-lookup"><span data-stu-id="e490e-425">Dimension member ranges</span></span>   |                         |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Noder**       | **Bruger-id**      | **Fra dimensionsmedlem** | **Til dimensionsmedlem** |
-| Organisation    | Benjamin, Claire |                           |                         |
-| &nbsp;&nbsp;Administration         | April            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Alicia           | CC002                     | CC003                   |
-|                 |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personale        | Arnie            | CC001                     | CC001                   |
-| &nbsp;&nbsp;Produktion    | David            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Emballage | Ellen            | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Samling  | Chris            | CC006                     | CC006                   |
+| <span data-ttu-id="e490e-426">**Noder**</span><span class="sxs-lookup"><span data-stu-id="e490e-426">**Nodes**</span></span>       | <span data-ttu-id="e490e-427">**Bruger-id**</span><span class="sxs-lookup"><span data-stu-id="e490e-427">**User ID**</span></span>      | <span data-ttu-id="e490e-428">**Fra dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-428">**From dimension member**</span></span> | <span data-ttu-id="e490e-429">**Til dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="e490e-429">**To dimension member**</span></span> |
+| <span data-ttu-id="e490e-430">Organisation</span><span class="sxs-lookup"><span data-stu-id="e490e-430">Organization</span></span>    | <span data-ttu-id="e490e-431">Benjamin, Claire</span><span class="sxs-lookup"><span data-stu-id="e490e-431">Benjamin, Claire</span></span> |                           |                         |
+| <span data-ttu-id="e490e-432">&nbsp;&nbsp;Administration</span><span class="sxs-lookup"><span data-stu-id="e490e-432">&nbsp;&nbsp;Admin</span></span>         | <span data-ttu-id="e490e-433">April</span><span class="sxs-lookup"><span data-stu-id="e490e-433">April</span></span>            |                           |                         |
+| <span data-ttu-id="e490e-434">&nbsp;&nbsp;&nbsp;&nbsp;Finans</span><span class="sxs-lookup"><span data-stu-id="e490e-434">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="e490e-435">Alicia</span><span class="sxs-lookup"><span data-stu-id="e490e-435">Alicia</span></span>           | <span data-ttu-id="e490e-436">CC002</span><span class="sxs-lookup"><span data-stu-id="e490e-436">CC002</span></span>                     | <span data-ttu-id="e490e-437">CC003</span><span class="sxs-lookup"><span data-stu-id="e490e-437">CC003</span></span>                   |
+|                 |                  | <span data-ttu-id="e490e-438">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-438">CC007</span></span>                     | <span data-ttu-id="e490e-439">CC007</span><span class="sxs-lookup"><span data-stu-id="e490e-439">CC007</span></span>                   |
+| <span data-ttu-id="e490e-440">&nbsp;&nbsp;&nbsp;&nbsp;Personale</span><span class="sxs-lookup"><span data-stu-id="e490e-440">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="e490e-441">Arnie</span><span class="sxs-lookup"><span data-stu-id="e490e-441">Arnie</span></span>            | <span data-ttu-id="e490e-442">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-442">CC001</span></span>                     | <span data-ttu-id="e490e-443">CC001</span><span class="sxs-lookup"><span data-stu-id="e490e-443">CC001</span></span>                   |
+| <span data-ttu-id="e490e-444">&nbsp;&nbsp;Produktion</span><span class="sxs-lookup"><span data-stu-id="e490e-444">&nbsp;&nbsp;Production</span></span>    | <span data-ttu-id="e490e-445">David</span><span class="sxs-lookup"><span data-stu-id="e490e-445">David</span></span>            |                           |                         |
+| <span data-ttu-id="e490e-446">&nbsp;&nbsp;&nbsp;&nbsp;Emballage</span><span class="sxs-lookup"><span data-stu-id="e490e-446">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="e490e-447">Ellen</span><span class="sxs-lookup"><span data-stu-id="e490e-447">Ellen</span></span>            | <span data-ttu-id="e490e-448">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-448">CC005</span></span>                     | <span data-ttu-id="e490e-449">CC005</span><span class="sxs-lookup"><span data-stu-id="e490e-449">CC005</span></span>                   |
+| <span data-ttu-id="e490e-450">&nbsp;&nbsp;&nbsp;&nbsp;Samling</span><span class="sxs-lookup"><span data-stu-id="e490e-450">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="e490e-451">Chris</span><span class="sxs-lookup"><span data-stu-id="e490e-451">Chris</span></span>            | <span data-ttu-id="e490e-452">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-452">CC006</span></span>                     | <span data-ttu-id="e490e-453">CC006</span><span class="sxs-lookup"><span data-stu-id="e490e-453">CC006</span></span>                   |
 
 > [!NOTE] 
-> Bogholdere skal tildeles til det øverste niveau i hierarkiet, så de kan se alle poster i omkostningsregnskabet.
+> <span data-ttu-id="e490e-454">Bogholdere skal tildeles til det øverste niveau i hierarkiet, så de kan se alle poster i omkostningsregnskabet.</span><span class="sxs-lookup"><span data-stu-id="e490e-454">Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.</span></span>
 
-Du kan aktivere adgangslistehierarkiet og de tilhørende sikkerhedsindstillinger ved at gå til **Omkostningsregnskab** > **Opsætning** > **Parametre** > **Generelt**. Vælg parameteren **Aktivér læseadgang for dimensionsmedlemmer for omkostningsobjekt**.
+<span data-ttu-id="e490e-455">Du kan aktivere adgangslistehierarkiet og de tilhørende sikkerhedsindstillinger ved at gå til **Omkostningsregnskab** > **Opsætning** > **Parametre** > **Generelt**.</span><span class="sxs-lookup"><span data-stu-id="e490e-455">To enable the access list hierarchy and its security settings, go to **Cost accounting** > **Setup** > **Parameters** > **General**.</span></span> <span data-ttu-id="e490e-456">Vælg parameteren **Aktivér læseadgang for dimensionsmedlemmer for omkostningsobjekt**.</span><span class="sxs-lookup"><span data-stu-id="e490e-456">Select the **Enable view access for cost object dimension members** parameter.</span></span>
 
-Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der vises i følgende områder:
+<span data-ttu-id="e490e-457">Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der vises i følgende områder:</span><span class="sxs-lookup"><span data-stu-id="e490e-457">The settings for the access list hierarchy are used to control the data that is shown in the following areas:</span></span>
 
-- Arbejdsområdet **Omkostningsstyring** (klient):
+- <span data-ttu-id="e490e-458">Arbejdsområdet **Omkostningsstyring** (klient):</span><span class="sxs-lookup"><span data-stu-id="e490e-458">**Cost control** workspace (Client):</span></span>
 
-    - Data i formularer, der bruges til at gennemgå scenarier
+    - <span data-ttu-id="e490e-459">Data i formularer, der bruges til at gennemgå scenarier</span><span class="sxs-lookup"><span data-stu-id="e490e-459">Data in forms that are used to drill through scenarios</span></span>
 
-- Arbejdsområdet **Omkostningsstyring** (mobilprogram):
+- <span data-ttu-id="e490e-460">Arbejdsområdet **Omkostningsstyring** (mobilprogram):</span><span class="sxs-lookup"><span data-stu-id="e490e-460">**Cost control** workspace (Mobile application):</span></span>
 
-    - Saldi i kort
+    - <span data-ttu-id="e490e-461">Saldi i kort</span><span class="sxs-lookup"><span data-stu-id="e490e-461">Balances in cards</span></span>
 
-- Power BI:
+- <span data-ttu-id="e490e-462">Power BI:</span><span class="sxs-lookup"><span data-stu-id="e490e-462">Power BI:</span></span>
 
-    - Data, der vises i Power BI visualiseringer
-    - Data Power BI-visualiseringer, der er integreret i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-klienten
+    - <span data-ttu-id="e490e-463">Data, der vises i Power BI visualiseringer</span><span class="sxs-lookup"><span data-stu-id="e490e-463">Data that is shown in Power BI visualizations</span></span>
+    - <span data-ttu-id="e490e-464">Data Power BI-visualiseringer, der er integreret i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-klienten</span><span class="sxs-lookup"><span data-stu-id="e490e-464">Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition client</span></span>
 
 > [!NOTE] 
-> - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
-> - Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel. Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.
+> - <span data-ttu-id="e490e-465">Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres.</span><span class="sxs-lookup"><span data-stu-id="e490e-465">Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired.</span></span> <span data-ttu-id="e490e-466">Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span><span class="sxs-lookup"><span data-stu-id="e490e-466">For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span></span>
+> - <span data-ttu-id="e490e-467">Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel.</span><span class="sxs-lookup"><span data-stu-id="e490e-467">The access list hierarchy doesn't help secure the export of data to Excel.</span></span> <span data-ttu-id="e490e-468">Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.</span><span class="sxs-lookup"><span data-stu-id="e490e-468">Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.</span></span>
 

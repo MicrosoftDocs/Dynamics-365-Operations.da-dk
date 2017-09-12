@@ -16,55 +16,55 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cc0909f99be9aad1b6bec22d4ed10381e0484a41
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 96195003c209c56c7ea4cbfec2f3543eb68453ff
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="prepare-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Forberede datamodel til at bruge dokumentstyringsfiler i formatoutput til elektronisk rapportering (ER)
+# <a name="prepare-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="f2829-103">Forberede datamodel til at bruge dokumentstyringsfiler i formatoutput til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="f2829-103">Prepare data model to use Document Management files in format outputs for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER. Disse trin kan udføres i en hvilken som helst virksomhed.
+<span data-ttu-id="f2829-104">Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER.</span><span class="sxs-lookup"><span data-stu-id="f2829-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="f2829-105">Disse trin kan udføres i en hvilken som helst virksomhed.</span><span class="sxs-lookup"><span data-stu-id="f2829-105">These steps can be performed in any company.</span></span>
 
-Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin.
+<span data-ttu-id="f2829-106">Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin.</span><span class="sxs-lookup"><span data-stu-id="f2829-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
 
-Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+<span data-ttu-id="f2829-107">Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="f2829-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Få adgang til listen over de konfigurationer, der leveres af Microsoft
-1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
-    * Sørg for, at udbyderen 'Litware, Inc.' er tilgængelig og markeret som aktiv.  
-2. Vælg udbyderen Litware, Inc. .
-3. Klik på Lagre.
-    * Hvis der allerede findes et lager af typen "Operationsressourcer", kan du springe over de resterende trin i den aktuelle underopgave.  
-4. Klik på Tilføj for at åbne dialogboksen.
-5. Angiv 'Operationsressourcer' i feltet Konfigurationslagertype.
-6. Klik på Opretlager.
-7. Klik på OK.
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="f2829-108">Få adgang til listen over de konfigurationer, der leveres af Microsoft</span><span class="sxs-lookup"><span data-stu-id="f2829-108">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="f2829-109">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="f2829-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="f2829-110">Sørg for, at udbyderen 'Litware, Inc.'</span><span class="sxs-lookup"><span data-stu-id="f2829-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="f2829-111">er tilgængelig og markeret som aktiv.</span><span class="sxs-lookup"><span data-stu-id="f2829-111">provider is available and marked as active.</span></span>  
+2. <span data-ttu-id="f2829-112">Vælg udbyderen Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="f2829-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="f2829-113">.</span><span class="sxs-lookup"><span data-stu-id="f2829-113">provider.</span></span>
+3. <span data-ttu-id="f2829-114">Klik på Lagre.</span><span class="sxs-lookup"><span data-stu-id="f2829-114">Click Repositories.</span></span>
+    * <span data-ttu-id="f2829-115">Hvis der allerede findes et lager af typen "Operationsressourcer", kan du springe over de resterende trin i den aktuelle underopgave.</span><span class="sxs-lookup"><span data-stu-id="f2829-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
+4. <span data-ttu-id="f2829-116">Klik på Tilføj for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="f2829-116">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="f2829-117">Angiv 'Operationsressourcer' i feltet Konfigurationslagertype.</span><span class="sxs-lookup"><span data-stu-id="f2829-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="f2829-118">Klik på Opretlager.</span><span class="sxs-lookup"><span data-stu-id="f2829-118">Click Create repository.</span></span>
+7. <span data-ttu-id="f2829-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="f2829-119">Click OK.</span></span>
 
-## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a>Hent de konfigurationer for kundefakturamodelle, der leveres af Microsoft
-1. Klik på Vis filtre.
-2. Anvend følgende filtre: Angiv filterværdien "Operationsressourcer" i feltet "Navn" ved hjælp af filteroperatoren "starter med". Angiv filterværdien "" i feltet "Beskrivelse" ved hjælp af filteroperatoren "starter med"
-3. Klik på Vis filtre.
-4. Klik på Åbn.
-5. Vælg 'Debitorfakturamodel' i træet.
-    * Vælg modelkonfigurationen 'Debitorfakturamodel' for at importere den.  
-6. Klik på Importer.
-    * Klik på Importer for version 1 af den valgte konfiguration.  
-7. Klik på Ja.
-8. Luk siden.
-9. Luk siden.
-10. Klik på Rapporteringskonfigurationer.
-11. Vælg 'Debitorfakturamodel' i træet.
+## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="f2829-120">Hent de konfigurationer for kundefakturamodelle, der leveres af Microsoft</span><span class="sxs-lookup"><span data-stu-id="f2829-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="f2829-121">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="f2829-121">Click Show filters.</span></span>
+2. <span data-ttu-id="f2829-122">Anvend følgende filtre: Angiv filterværdien "Operationsressourcer" i feltet "Navn" ved hjælp af filteroperatoren "starter med". Angiv filterværdien "" i feltet "Beskrivelse" ved hjælp af filteroperatoren "starter med"</span><span class="sxs-lookup"><span data-stu-id="f2829-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
+3. <span data-ttu-id="f2829-123">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="f2829-123">Click Show filters.</span></span>
+4. <span data-ttu-id="f2829-124">Klik på Åbn.</span><span class="sxs-lookup"><span data-stu-id="f2829-124">Click Open.</span></span>
+5. <span data-ttu-id="f2829-125">Vælg 'Debitorfakturamodel' i træet.</span><span class="sxs-lookup"><span data-stu-id="f2829-125">In the tree, select 'Customer invoice model'.</span></span>
+    * <span data-ttu-id="f2829-126">Vælg modelkonfigurationen 'Debitorfakturamodel' for at importere den.</span><span class="sxs-lookup"><span data-stu-id="f2829-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
+6. <span data-ttu-id="f2829-127">Klik på Importer.</span><span class="sxs-lookup"><span data-stu-id="f2829-127">Click Import.</span></span>
+    * <span data-ttu-id="f2829-128">Klik på Importer for version 1 af den valgte konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f2829-128">Click Import for version 1 of the selected configuration.</span></span>  
+7. <span data-ttu-id="f2829-129">Klik på Ja.</span><span class="sxs-lookup"><span data-stu-id="f2829-129">Click Yes.</span></span>
+8. <span data-ttu-id="f2829-130">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f2829-130">Close the page.</span></span>
+9. <span data-ttu-id="f2829-131">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f2829-131">Close the page.</span></span>
+10. <span data-ttu-id="f2829-132">Klik på Rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="f2829-132">Click Reporting configurations.</span></span>
+11. <span data-ttu-id="f2829-133">Vælg 'Debitorfakturamodel' i træet.</span><span class="sxs-lookup"><span data-stu-id="f2829-133">In the tree, select 'Customer invoice model'.</span></span>
 
-## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a>Opret den afledte model for at understøtte adgang til filerne fra Dokumentstyring.
-    * Du vil oprette vores egen konfiguration af kundens fakturamodel, der er afledt af den konfiguration, der leveres af Microsoft. Du skal bruge denne konfiguration til at implementere adgang til filerne fra Dokumentstyring og gøre dem tilgængelige for elektroniske dokumenter, som du opretter ud fra denne model.  
-1. Klik på Opret konfiguration for at åbne dialogboksen.
-2. Skriv 'Afled fra navn: Debitorfakturamodel, Microsoft' i feltet Ny.
-3. Skriv "Debitorfakturamodel (brugerdefineret)" i feltet Navn.
-    * Debitorfakturamodel (brugerdefineret)  
-4. Klik på Opret konfiguration.
+## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="f2829-134">Opret den afledte model for at understøtte adgang til filerne fra Dokumentstyring.</span><span class="sxs-lookup"><span data-stu-id="f2829-134">Create the derived model to support access to the Document Management files.</span></span>
+    * <span data-ttu-id="f2829-135">Du vil oprette vores egen konfiguration af kundens fakturamodel, der er afledt af den konfiguration, der leveres af Microsoft.</span><span class="sxs-lookup"><span data-stu-id="f2829-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="f2829-136">Du skal bruge denne konfiguration til at implementere adgang til filerne fra Dokumentstyring og gøre dem tilgængelige for elektroniske dokumenter, som du opretter ud fra denne model.</span><span class="sxs-lookup"><span data-stu-id="f2829-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
+1. <span data-ttu-id="f2829-137">Klik på Opret konfiguration for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="f2829-137">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="f2829-138">Skriv 'Afled fra navn: Debitorfakturamodel, Microsoft' i feltet Ny.</span><span class="sxs-lookup"><span data-stu-id="f2829-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
+3. <span data-ttu-id="f2829-139">Skriv "Debitorfakturamodel (brugerdefineret)" i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="f2829-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="f2829-140">Debitorfakturamodel (brugerdefineret)</span><span class="sxs-lookup"><span data-stu-id="f2829-140">Customer invoice model (custom)</span></span>  
+4. <span data-ttu-id="f2829-141">Klik på Opret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f2829-141">Click Create configuration.</span></span>
 
 

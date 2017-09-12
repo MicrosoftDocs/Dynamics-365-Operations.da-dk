@@ -17,32 +17,32 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 06daa5e7d2b8e88bca281dc9bcaa73927253553c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8db4b2857e9a7c99ee6fa4ef397f7ed99335faba
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="deactivate-a-production-flow-version"></a>Deaktivere en produktionsflowversion
+# <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="75587-103">Deaktivere en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="75587-103">Deactivate a production flow version</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Når en aktiv produktionsflowversion ikke længere er nødvendig, kan den være deaktiveret. Du skal kun bruge denne indstilling, hvis alle kanban-regler og aktiviteter er afsluttet og ikke aktiveres igen. Bemærk, at udløbsdatoen for alle kanban-regler, der er relateret til denne version af produktionsflowet, opdateres med dags dato og det aktuelle klokkeslæt. 
+<span data-ttu-id="75587-104">Når en aktiv produktionsflowversion ikke længere er nødvendig, kan den være deaktiveret.</span><span class="sxs-lookup"><span data-stu-id="75587-104">When an active production flow version is no longer needed, it can be deactivated.</span></span> <span data-ttu-id="75587-105">Du skal kun bruge denne indstilling, hvis alle kanban-regler og aktiviteter er afsluttet og ikke aktiveres igen.</span><span class="sxs-lookup"><span data-stu-id="75587-105">You should only use this option if all kanban rules and activities have ended and will not be activated again.</span></span> <span data-ttu-id="75587-106">Bemærk, at udløbsdatoen for alle kanban-regler, der er relateret til denne version af produktionsflowet, opdateres med dags dato og det aktuelle klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="75587-106">Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time.</span></span> 
 
-Hvis du vil redigere en aktiv produktionsflowversion, kan du overveje at angive en udløbsdato for den aktive version og oprette en ny version. Det gør det muligt at fortsætte dine produktionsoperationer, mens du udarbejder den nye version og relaterede kanban-regler. 
+<span data-ttu-id="75587-107">Hvis du vil redigere en aktiv produktionsflowversion, kan du overveje at angive en udløbsdato for den aktive version og oprette en ny version.</span><span class="sxs-lookup"><span data-stu-id="75587-107">To modify an active production flow version, consider setting an expiry date for the active version and create a new version.</span></span> <span data-ttu-id="75587-108">Det gør det muligt at fortsætte dine produktionsoperationer, mens du udarbejder den nye version og relaterede kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="75587-108">This will allow you to continue your production operations while preparing the new version and related kanban rules.</span></span> 
 
-For at få en aktiv produktionsflowversion til at udløbe skal du angive en udløbsdato. Det betyder, at deaktivering er mere en undtagelse end en regel. 
+<span data-ttu-id="75587-109">For at få en aktiv produktionsflowversion til at udløbe skal du angive en udløbsdato.</span><span class="sxs-lookup"><span data-stu-id="75587-109">To expire an active production flow version, you need to set an expiry date.</span></span> <span data-ttu-id="75587-110">Det betyder, at deaktivering er mere en undtagelse end en regel.</span><span class="sxs-lookup"><span data-stu-id="75587-110">In that sense, deactivation is more like an exception than a rule.</span></span> 
 
-I denne procedure skal du bruge en produktionsflow med en version, der kan deaktiveres. Prøv ikke dette i et produktionsmiljø, medmindre du er 100 % sikker på, at versionen er helt forældet.
+<span data-ttu-id="75587-111">I denne procedure skal du bruge en produktionsflow med en version, der kan deaktiveres.</span><span class="sxs-lookup"><span data-stu-id="75587-111">For this procedure you need a production flow with a version that can be deactivated.</span></span> <span data-ttu-id="75587-112">Prøv ikke dette i et produktionsmiljø, medmindre du er 100 % sikker på, at versionen er helt forældet.</span><span class="sxs-lookup"><span data-stu-id="75587-112">Do not try this in a production environment unless you are 100% positive that the version is fully obsolete.</span></span>
 
 
-## <a name="deactivate-a-production-flow-version"></a>Deaktivere en produktionsflowversion
-1. Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.
-2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
-4. Find og vælg den ønskede post på listen.
-5. Klik på Deaktiver.
-    * Fortsæt ikke, hvis du ikke er 100 % sikker på, at denne version af produktionsflowet er forældet. Hvis du klikker på OK, udløber alle aktive kanban-regler, og alle produktions- og genopfyldningsaktiviteter for denne version af produktionsflowet standser øjeblikkeligt.  
-6. Klik på OK.
+## <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="75587-113">Deaktivere en produktionsflowversion</span><span class="sxs-lookup"><span data-stu-id="75587-113">Deactivate a production flow version</span></span>
+1. <span data-ttu-id="75587-114">Gå til Produktionsstyring > Opsætning > Lean produktionsflow > Produktionsflow.</span><span class="sxs-lookup"><span data-stu-id="75587-114">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="75587-115">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="75587-115">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="75587-116">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="75587-116">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="75587-117">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="75587-117">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="75587-118">Klik på Deaktiver.</span><span class="sxs-lookup"><span data-stu-id="75587-118">Click Deactivate.</span></span>
+    * <span data-ttu-id="75587-119">Fortsæt ikke, hvis du ikke er 100 % sikker på, at denne version af produktionsflowet er forældet.</span><span class="sxs-lookup"><span data-stu-id="75587-119">Do not proceed if you are not 100% positive that this production flow version is obsolete.</span></span> <span data-ttu-id="75587-120">Hvis du klikker på OK, udløber alle aktive kanban-regler, og alle produktions- og genopfyldningsaktiviteter for denne version af produktionsflowet standser øjeblikkeligt.</span><span class="sxs-lookup"><span data-stu-id="75587-120">Clicking Ok will expire all active kanban rules and put an immediate stop to all production and replenishment activities of this production flow version.</span></span>  
+6. <span data-ttu-id="75587-121">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="75587-121">Click OK.</span></span>
 
 

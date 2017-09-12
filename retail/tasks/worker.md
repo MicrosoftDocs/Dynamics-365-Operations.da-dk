@@ -17,43 +17,43 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f241899df89377e3c08c94663b90ee9d0ce750dc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 09c5d263f3ad0bade6b7dd8f099dd3f62a1ddf5d
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-a-worker"></a> Konfigurere en arbejder
+# <a name="configure-a-worker"></a><span data-ttu-id="53096-103"> Konfigurere en arbejder</span><span class="sxs-lookup"><span data-stu-id="53096-103">Configure a worker</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du konfigurerer en detailarbejder som en sælger, der er berettiget til provision på salg i POS. Proceduren bruger USRT-demodatafirmaet.
+<span data-ttu-id="53096-104">Denne fremgangsmåde viser, hvordan du konfigurerer en detailarbejder som en sælger, der er berettiget til provision på salg i POS.</span><span class="sxs-lookup"><span data-stu-id="53096-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="53096-105">Proceduren bruger USRT-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="53096-105">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-commission-sales-group-for-the-worker"></a>Opret en provisionssalgsgruppe for arbejderen
-1. Gå til Salg og marketing > Provisioner > Salgsgrupper.
-    * Arbejdere kan tildeles til en eller flere salgsgrupper. I POS kan du vælge en salgsgruppe, der indeholder arbejdere fra butikkens adressekartotek.  
-2. Klik på Ny.
-3. Skriv en værdi i feltet Gruppe.
-4. Skriv en værdi i feltet Navn.
-5. Klik på Gem.
-6. Klik på Generelt i handlingsruden.
-7. Klik på Sælger.
-    * En salgsgruppe kan indeholde mere end én medarbejder. Provisioner kan opdeles mellem arbejdere baseret på, hvordan du definerer kommissionen.  
-8. Indtast eller vælg en værdi i feltet Navn.
-9. Angiv et tal i feltet Provisionsandel.
-10. Klik på Gem.
-11. Luk siden.
-12. Luk siden.
+## <a name="create-a-commission-sales-group-for-the-worker"></a><span data-ttu-id="53096-106">Opret en provisionssalgsgruppe for arbejderen</span><span class="sxs-lookup"><span data-stu-id="53096-106">Create a commission sales group for the worker</span></span>
+1. <span data-ttu-id="53096-107">Gå til Salg og marketing > Provisioner > Salgsgrupper.</span><span class="sxs-lookup"><span data-stu-id="53096-107">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="53096-108">Arbejdere kan tildeles til en eller flere salgsgrupper.</span><span class="sxs-lookup"><span data-stu-id="53096-108">Workers can be assigned to one or more sales groups.</span></span> <span data-ttu-id="53096-109">I POS kan du vælge en salgsgruppe, der indeholder arbejdere fra butikkens adressekartotek.</span><span class="sxs-lookup"><span data-stu-id="53096-109">In POS, you can choose any sales group that contains workers from the store's address book.</span></span>  
+2. <span data-ttu-id="53096-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="53096-110">Click New.</span></span>
+3. <span data-ttu-id="53096-111">Skriv en værdi i feltet Gruppe.</span><span class="sxs-lookup"><span data-stu-id="53096-111">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="53096-112">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="53096-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="53096-113">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="53096-113">Click Save.</span></span>
+6. <span data-ttu-id="53096-114">Klik på Generelt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="53096-114">On the Action Pane, click General.</span></span>
+7. <span data-ttu-id="53096-115">Klik på Sælger.</span><span class="sxs-lookup"><span data-stu-id="53096-115">Click Sales rep.</span></span>
+    * <span data-ttu-id="53096-116">En salgsgruppe kan indeholde mere end én medarbejder.</span><span class="sxs-lookup"><span data-stu-id="53096-116">A sales group can contain more than one worker.</span></span> <span data-ttu-id="53096-117">Provisioner kan opdeles mellem arbejdere baseret på, hvordan du definerer kommissionen.</span><span class="sxs-lookup"><span data-stu-id="53096-117">Commissions can be split between workers based on how you define the commission share.</span></span>  
+8. <span data-ttu-id="53096-118">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="53096-118">In the Name field, enter or select a value.</span></span>
+9. <span data-ttu-id="53096-119">Angiv et tal i feltet Provisionsandel.</span><span class="sxs-lookup"><span data-stu-id="53096-119">In the Commission share field, enter a number.</span></span>
+10. <span data-ttu-id="53096-120">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="53096-120">Click Save.</span></span>
+11. <span data-ttu-id="53096-121">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="53096-121">Close the page.</span></span>
+12. <span data-ttu-id="53096-122">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="53096-122">Close the page.</span></span>
 
-## <a name="assign-the-workers-default-sales-group"></a>Tildel standardsalgsgruppen for arbejdere
-1. Gå til Detail og handel > Medarbejdere > Alle arbejdere.
-2. Find og vælg den ønskede post på listen.
-3. Klik op linket i den valgte række på listen.
-4. Klik på fanen Detail.
-    * En arbejder kan tildeles til en standardsalgsgruppe. Standardsalgsgruppen føjes automatisk til salgslinjerne i POS, hvis indstillingen er aktiveret i funktionalitetsprofilen for butikken.  
-5. Klik på Rediger.
-6. Indtast eller vælg en værdi i feltet Standardgruppe.
-7. Klik på Gem.
+## <a name="assign-the-workers-default-sales-group"></a><span data-ttu-id="53096-123">Tildel standardsalgsgruppen for arbejdere</span><span class="sxs-lookup"><span data-stu-id="53096-123">Assign the workers default sales group</span></span>
+1. <span data-ttu-id="53096-124">Gå til Detail og handel > Medarbejdere > Alle arbejdere.</span><span class="sxs-lookup"><span data-stu-id="53096-124">Go to Retail and commerce > Employees > Workers.</span></span>
+2. <span data-ttu-id="53096-125">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="53096-125">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="53096-126">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="53096-126">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="53096-127">Klik på fanen Detail.</span><span class="sxs-lookup"><span data-stu-id="53096-127">Click the Retail tab.</span></span>
+    * <span data-ttu-id="53096-128">En arbejder kan tildeles til en standardsalgsgruppe.</span><span class="sxs-lookup"><span data-stu-id="53096-128">A worker can be assigned to a default sales group.</span></span> <span data-ttu-id="53096-129">Standardsalgsgruppen føjes automatisk til salgslinjerne i POS, hvis indstillingen er aktiveret i funktionalitetsprofilen for butikken.</span><span class="sxs-lookup"><span data-stu-id="53096-129">The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.</span></span>  
+5. <span data-ttu-id="53096-130">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="53096-130">Click Edit.</span></span>
+6. <span data-ttu-id="53096-131">Indtast eller vælg en værdi i feltet Standardgruppe.</span><span class="sxs-lookup"><span data-stu-id="53096-131">In the Default group field, enter or select a value.</span></span>
+7. <span data-ttu-id="53096-132">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="53096-132">Click Save.</span></span>
 
 

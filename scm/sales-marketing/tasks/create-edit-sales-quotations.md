@@ -16,64 +16,64 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5dcf7d2b5e5d5397c51c51223abe95f9d4911b4f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f56b495131836689395a2124d5a834579e1646b7
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-edit-sales-quotations"></a>Oprette og redigere salgstilbud
+# <a name="create-and-edit-sales-quotations"></a><span data-ttu-id="33bae-103">Oprette og redigere salgstilbud</span><span class="sxs-lookup"><span data-stu-id="33bae-103">Create and edit sales quotations</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter og opdaterer et salgstilbud. Du kan køre procedure på dine egne data eller i demofirmaet USMF.
+<span data-ttu-id="33bae-104">Denne procedure viser, hvordan du opretter og opdaterer et salgstilbud.</span><span class="sxs-lookup"><span data-stu-id="33bae-104">This procedure demonstrates how to create and update a sales quotation.</span></span> <span data-ttu-id="33bae-105">Du kan køre procedure på dine egne data eller i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="33bae-105">You can run this procedure on your own data or in demo data company USMF.</span></span>
 
 
-## <a name="create-a-sales-quotation"></a>Oprette et salgstilbud
-1. Gå til Salg og marketing > Salgstilbud > Alle tilbud.
-2. Klik på Ny.
-3. Vælg Kundeemne i feltet Kontotype.
-4. Indtast eller vælg en værdi i feltet Kundeemne.
-5. Udvid sektionen Generelt.
-    * Typen indstilles automatisk til Salgstilbud, fordi du har valgt at oprette et tilbud fra området Salg og marketing. Hvis du vil oprette et tilbud for et projekt, kan du åbne det i modulet Projektstyring og regnskab.   
-6. Klik på OK.
-    * Felter og handlinger på tilbudslinjerne er meget lig dem på salgsordrelinjerne.   Som salgsordrer, kan der oprettes tilbud for en bestemt vare, eller når varenummer ikke er kendt eller ikke findes på tidspunktet for oprettelse af tilbud, kan der oprettes tilbud for en salgskategori.  
-7. Indtast eller vælg en værdi i feltet Vare.
-8. Skriv en værdi i feltet Vare.
-9. Luk siden.
-10. Angiv et tal i feltet Antal.
-    * Hvis der er gyldige samhandelsaftaler for varen, der er valgt på linjen, kopieres gældende priser og rabatter automatisk til tilbudslinjen. Kontroller, at feltet Enhedspris indeholder en værdi, og du kan også angive værdier for rabat, hvis du vil.  
-11. Klik på Gem.
-12. Klik på Salgstilbud i handlingsruden.
-13. Klik på Totaler.
-14. Klik på OK.
-15. Klik på Salgstilbudslinje.
-16. Klik på Priser.
-    * På siden Kør prissimulering kan du eksperimentere med at justere forventet omsætning eller rentabilitet for dit tilbud baseret på den ønskede enhedspris, rabatbeløb, rabatprocent, samlet beløb, margen eller dækningsgrad.   Når du er tilfreds med måltallene, anvender du forslaget på tilbudslinjen; så opdateres dens prisrelaterede felter tilsvarende.  
-    * Du kan oprette så mange prissimuleringer, som du ønsker. Når du klikker på Ny, kopieres prisbetingelserne fra den aktuelle tilbudslinje til siden. Du kan derefter ændre værdierne i ethvert af de prisrelaterede felter til målværdierne. En ændring i et af felterne udløser genberegning i alle andre felter. Produktets enhedsomkostning skal være kendt, for at systemet kan beregne salgsmargen og dækningsgrad. Brug fanen Simulerede priser for at se en detaljeret visning af de oprindelige priser, foreslåede ændringer og deres indvirkning på de samlede tilbudsbeløb.   Som hovedregel, når der anvendes en simulering, der angiver et nyt beløb på tilbudslinjen, genberegner og angiver systemet en ny værdi i feltet Enhedspris. Hvis simuleringen er baseret på en ny margen eller en ny dækningsgrad, opdateres kun feltet Nettobeløb, og Enhedspris er tomt. I begge tilfælde slettes eventuelle rabatter, der var på tilbudslinjen før simulering.  
-17. Luk siden.
-18. Klik på Tilbud i handlingsruden.
-19. Klik på Send tilbud.
-20. Vælg Ja i feltet Udskriv tilbud.
-21. Klik på OK.
-    * Rapporten kan tage et minut at generere. Luk ikke siden, før den er færdig.  
-22. Luk siden.
+## <a name="create-a-sales-quotation"></a><span data-ttu-id="33bae-106">Oprette et salgstilbud</span><span class="sxs-lookup"><span data-stu-id="33bae-106">Create a sales quotation</span></span>
+1. <span data-ttu-id="33bae-107">Gå til Salg og marketing > Salgstilbud > Alle tilbud.</span><span class="sxs-lookup"><span data-stu-id="33bae-107">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+2. <span data-ttu-id="33bae-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="33bae-108">Click New.</span></span>
+3. <span data-ttu-id="33bae-109">Vælg Kundeemne i feltet Kontotype.</span><span class="sxs-lookup"><span data-stu-id="33bae-109">In the Account type field, select 'Prospect'.</span></span>
+4. <span data-ttu-id="33bae-110">Indtast eller vælg en værdi i feltet Kundeemne.</span><span class="sxs-lookup"><span data-stu-id="33bae-110">In the Prospect field, enter or select a value.</span></span>
+5. <span data-ttu-id="33bae-111">Udvid sektionen Generelt.</span><span class="sxs-lookup"><span data-stu-id="33bae-111">Expand the General section.</span></span>
+    * <span data-ttu-id="33bae-112">Typen indstilles automatisk til Salgstilbud, fordi du har valgt at oprette et tilbud fra området Salg og marketing.</span><span class="sxs-lookup"><span data-stu-id="33bae-112">Because you chose to create a quotation from the Sales and Marketing area, the type is automatically set to Sales quotation.</span></span> <span data-ttu-id="33bae-113">Hvis du vil oprette et tilbud for et projekt, kan du åbne det i modulet Projektstyring og regnskab.</span><span class="sxs-lookup"><span data-stu-id="33bae-113">To create a quotation for a project you must access it from the Project management and accounting module.</span></span>   
+6. <span data-ttu-id="33bae-114">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="33bae-114">Click OK.</span></span>
+    * <span data-ttu-id="33bae-115">Felter og handlinger på tilbudslinjerne er meget lig dem på salgsordrelinjerne.</span><span class="sxs-lookup"><span data-stu-id="33bae-115">The fields and actions on the quotation lines are very similar to the ones on the sales order lines.</span></span>   <span data-ttu-id="33bae-116">Som salgsordrer, kan der oprettes tilbud for en bestemt vare, eller når varenummer ikke er kendt eller ikke findes på tidspunktet for oprettelse af tilbud, kan der oprettes tilbud for en salgskategori.</span><span class="sxs-lookup"><span data-stu-id="33bae-116">Like sales orders, quotations can be created for a specific item or, when item number is not known or does not exist at the time of quotation creation, quotations can be created for a sales category.</span></span>  
+7. <span data-ttu-id="33bae-117">Indtast eller vælg en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="33bae-117">In the Item field, enter or select a value.</span></span>
+8. <span data-ttu-id="33bae-118">Skriv en værdi i feltet Vare.</span><span class="sxs-lookup"><span data-stu-id="33bae-118">In the Item field, type a value.</span></span>
+9. <span data-ttu-id="33bae-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-119">Close the page.</span></span>
+10. <span data-ttu-id="33bae-120">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="33bae-120">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="33bae-121">Hvis der er gyldige samhandelsaftaler for varen, der er valgt på linjen, kopieres gældende priser og rabatter automatisk til tilbudslinjen.</span><span class="sxs-lookup"><span data-stu-id="33bae-121">If there are valid trade agreements for the item selected on the line, the applicable price and discounts will be automatically copied to the quotation line.</span></span> <span data-ttu-id="33bae-122">Kontroller, at feltet Enhedspris indeholder en værdi, og du kan også angive værdier for rabat, hvis du vil.</span><span class="sxs-lookup"><span data-stu-id="33bae-122">Make sure that the Unit price field contains a value and you can also enter discount values if you want to.</span></span>  
+11. <span data-ttu-id="33bae-123">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="33bae-123">Click Save.</span></span>
+12. <span data-ttu-id="33bae-124">Klik på Salgstilbud i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="33bae-124">On the Action Pane, click Sales quotation.</span></span>
+13. <span data-ttu-id="33bae-125">Klik på Totaler.</span><span class="sxs-lookup"><span data-stu-id="33bae-125">Click Totals.</span></span>
+14. <span data-ttu-id="33bae-126">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="33bae-126">Click OK.</span></span>
+15. <span data-ttu-id="33bae-127">Klik på Salgstilbudslinje.</span><span class="sxs-lookup"><span data-stu-id="33bae-127">Click Sales quotation line.</span></span>
+16. <span data-ttu-id="33bae-128">Klik på Priser.</span><span class="sxs-lookup"><span data-stu-id="33bae-128">Click Prices.</span></span>
+    * <span data-ttu-id="33bae-129">På siden Kør prissimulering kan du eksperimentere med at justere forventet omsætning eller rentabilitet for dit tilbud baseret på den ønskede enhedspris, rabatbeløb, rabatprocent, samlet beløb, margen eller dækningsgrad.</span><span class="sxs-lookup"><span data-stu-id="33bae-129">In the Run price simulation page you can experiment with adjusting the expected revenue or profitability of your quotation based on the desired unit price, discount amount, discount percentage, total amount, margin, or contribution ratio.</span></span>   <span data-ttu-id="33bae-130">Når du er tilfreds med måltallene, anvender du forslaget på tilbudslinjen; så opdateres dens prisrelaterede felter tilsvarende.</span><span class="sxs-lookup"><span data-stu-id="33bae-130">When you are satisfied with the target figures, you apply the suggestion to the quotation line, and its price-related fields will be updated accordingly.</span></span>  
+    * <span data-ttu-id="33bae-131">Du kan oprette så mange prissimuleringer, som du ønsker.</span><span class="sxs-lookup"><span data-stu-id="33bae-131">Y ou can create as many price simulations as you wish.</span></span> <span data-ttu-id="33bae-132">Når du klikker på Ny, kopieres prisbetingelserne fra den aktuelle tilbudslinje til siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-132">When you click New, the price conditions from the current quotation line are copied to the page.</span></span> <span data-ttu-id="33bae-133">Du kan derefter ændre værdierne i ethvert af de prisrelaterede felter til målværdierne.</span><span class="sxs-lookup"><span data-stu-id="33bae-133">You can then modify values in any of the price-related fields to the target ones.</span></span> <span data-ttu-id="33bae-134">En ændring i et af felterne udløser genberegning i alle andre felter.</span><span class="sxs-lookup"><span data-stu-id="33bae-134">A change in one of the fields will trigger recalculation in all the other fields.</span></span> <span data-ttu-id="33bae-135">Produktets enhedsomkostning skal være kendt, for at systemet kan beregne salgsmargen og dækningsgrad.</span><span class="sxs-lookup"><span data-stu-id="33bae-135">In order for the system to calculate the sales margin and contribution ratio, the product's unit cost has to be known.</span></span> <span data-ttu-id="33bae-136">Brug fanen Simulerede priser for at se en detaljeret visning af de oprindelige priser, foreslåede ændringer og deres indvirkning på de samlede tilbudsbeløb.</span><span class="sxs-lookup"><span data-stu-id="33bae-136">Use the Simulated prices tab for a detailed view of the original prices, proposed changes and their effect on the quotation totals.</span></span>   <span data-ttu-id="33bae-137">Som hovedregel, når der anvendes en simulering, der angiver et nyt beløb på tilbudslinjen, genberegner og angiver systemet en ny værdi i feltet Enhedspris.</span><span class="sxs-lookup"><span data-stu-id="33bae-137">As a general rule, when a simulation that sets a new amount is applied to the quotation line, the system recalculates and enters a new value in the Unit price field.</span></span> <span data-ttu-id="33bae-138">Hvis simuleringen er baseret på en ny margen eller en ny dækningsgrad, opdateres kun feltet Nettobeløb, og Enhedspris er tomt.</span><span class="sxs-lookup"><span data-stu-id="33bae-138">If the simulation is based on a new margin or a new contribution ratio, only the Net amount field is updated, and the Unit price is blank.</span></span> <span data-ttu-id="33bae-139">I begge tilfælde slettes eventuelle rabatter, der var på tilbudslinjen før simulering.</span><span class="sxs-lookup"><span data-stu-id="33bae-139">In both cases, any discounts that were on the quotation line before simulation will be deleted.</span></span>  
+17. <span data-ttu-id="33bae-140">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-140">Close the page.</span></span>
+18. <span data-ttu-id="33bae-141">Klik på Tilbud i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="33bae-141">On the Action Pane, click Quotation.</span></span>
+19. <span data-ttu-id="33bae-142">Klik på Send tilbud.</span><span class="sxs-lookup"><span data-stu-id="33bae-142">Click Send quotation.</span></span>
+20. <span data-ttu-id="33bae-143">Vælg Ja i feltet Udskriv tilbud.</span><span class="sxs-lookup"><span data-stu-id="33bae-143">Select Yes in the Print quotation field.</span></span>
+21. <span data-ttu-id="33bae-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="33bae-144">Click OK.</span></span>
+    * <span data-ttu-id="33bae-145">Rapporten kan tage et minut at generere.</span><span class="sxs-lookup"><span data-stu-id="33bae-145">The report may take a minute to generate.</span></span> <span data-ttu-id="33bae-146">Luk ikke siden, før den er færdig.</span><span class="sxs-lookup"><span data-stu-id="33bae-146">Don’t close the page until it does so.</span></span>  
+22. <span data-ttu-id="33bae-147">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-147">Close the page.</span></span>
 
-## <a name="update-a-sales-quotation"></a>Opdatere et salgstilbud
-1. Klik på Opfølgning i handlingsruden.
-2. Klik på Konverter til kunde.
-3. Skriv en værdi i feltet Kundekonto.
-4. Klik på Kontroller.
-    * Kontroller, at der vises en meddelelse om, at det kontonummer, du har skrevet, kan benyttes.  
-5. Klik på OK.
-    * Systemet er nu oprettet en ny debitorkonto for kundeemnet i tilbuddet.  
-6. Luk siden.
-7. Klik på Opfølgning i handlingsruden.
-8. Klik på Bekræft.
-9. Indtast eller vælg en værdi i feltet Årsag.
-10. Klik på OK.
-11. Klik på Generelt i handlingsruden.
-12. Klik på Salgsordrer.
-13. Luk siden.
+## <a name="update-a-sales-quotation"></a><span data-ttu-id="33bae-148">Opdatere et salgstilbud</span><span class="sxs-lookup"><span data-stu-id="33bae-148">Update a sales quotation</span></span>
+1. <span data-ttu-id="33bae-149">Klik på Opfølgning i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="33bae-149">On the Action Pane, click Follow up.</span></span>
+2. <span data-ttu-id="33bae-150">Klik på Konverter til kunde.</span><span class="sxs-lookup"><span data-stu-id="33bae-150">Click Convert to customer.</span></span>
+3. <span data-ttu-id="33bae-151">Skriv en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="33bae-151">In the Customer account field, type a value.</span></span>
+4. <span data-ttu-id="33bae-152">Klik på Kontroller.</span><span class="sxs-lookup"><span data-stu-id="33bae-152">Click Check.</span></span>
+    * <span data-ttu-id="33bae-153">Kontroller, at der vises en meddelelse om, at det kontonummer, du har skrevet, kan benyttes.</span><span class="sxs-lookup"><span data-stu-id="33bae-153">Make sure you see a message that the account number you typed in is free to use.</span></span>  
+5. <span data-ttu-id="33bae-154">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="33bae-154">Click OK.</span></span>
+    * <span data-ttu-id="33bae-155">Systemet er nu oprettet en ny debitorkonto for kundeemnet i tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="33bae-155">The system has now created a new customer account for the prospect on the quotation.</span></span>  
+6. <span data-ttu-id="33bae-156">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-156">Close the page.</span></span>
+7. <span data-ttu-id="33bae-157">Klik på Opfølgning i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="33bae-157">On the Action Pane, click Follow up.</span></span>
+8. <span data-ttu-id="33bae-158">Klik på Bekræft.</span><span class="sxs-lookup"><span data-stu-id="33bae-158">Click Confirm.</span></span>
+9. <span data-ttu-id="33bae-159">Indtast eller vælg en værdi i feltet Årsag.</span><span class="sxs-lookup"><span data-stu-id="33bae-159">In the Reason field, enter or select a value.</span></span>
+10. <span data-ttu-id="33bae-160">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="33bae-160">Click OK.</span></span>
+11. <span data-ttu-id="33bae-161">Klik på Generelt i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="33bae-161">On the Action Pane, click General.</span></span>
+12. <span data-ttu-id="33bae-162">Klik på Salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="33bae-162">Click Sales orders.</span></span>
+13. <span data-ttu-id="33bae-163">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="33bae-163">Close the page.</span></span>
 
 

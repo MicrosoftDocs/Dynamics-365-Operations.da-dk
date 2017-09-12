@@ -16,120 +16,120 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f2fd3c8cfa63e11a0bf4e5e095375d024c9d45ce
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b9766d96d16429d0ce0864695a3157f54cad4054
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-fixed-asset-posting-profiles"></a>Oprette posteringsprofiler for anlægsaktiver
+# <a name="set-up-fixed-asset-posting-profiles"></a><span data-ttu-id="a9590-103">Oprette posteringsprofiler for anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="a9590-103">Set up fixed asset posting profiles</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgaveguide konfigurerer posteringsprofiler for bogføring af anlægsaktiver.  Den bruger rollen Revisor og demodata for den juridiske enhed USMF.  Eksemplerne i opgaveguiden er for en grundlæggende posteringsprofil, men posteringsprofiler skal oprettes for din specifikke kontoplan og krav til finansiel rapportering.
+<span data-ttu-id="a9590-104">Denne opgaveguide konfigurerer posteringsprofiler for bogføring af anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="a9590-104">This task guide will set up Fixed asset posting profiles.</span></span>  <span data-ttu-id="a9590-105">Den bruger rollen Revisor og demodata for den juridiske enhed USMF.</span><span class="sxs-lookup"><span data-stu-id="a9590-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>  <span data-ttu-id="a9590-106">Eksemplerne i opgaveguiden er for en grundlæggende posteringsprofil, men posteringsprofiler skal oprettes for din specifikke kontoplan og krav til finansiel rapportering.</span><span class="sxs-lookup"><span data-stu-id="a9590-106">Examples given in the task guide are for a basic posting profile, though posting profiles must be created for your specific chart of accounts and financial reporting requirements.</span></span>
 
-1. Gå til Anlægsaktiver > Opsætning > Posteringsprofiler for anlægsaktiver.
-2. Klik på Ny.
-3. Skriv en værdi i feltet Posteringsprofil.
-4. Skriv en værdi i feltet Beskrivelse.
-    * Du skal oprette en posteringsprofil til hver transaktionstype for anlægsaktiver, som du vil bruge, når du arbejder med anlægsaktiver.  Denne opgaveguide starter med transaktionstypen Anskaffelse.  
-5. Klik på Tilføj.
-6. Indtast eller vælg en værdi i feltet Bog.
-    * I feltet Grupperinger kan du definere posteringsprofilen ned til tabellen (én konto konfigureret for hvert anlægsaktiv) eller gruppe (én konto konfigureret for hver anlægsaktivgruppe).  Til denne opgaveguide er værdien angivet til "Alle" for at gælde for alle anlægsaktiver med den angivne bog.  
-7. Angive de ønskede værdier i feltet Hovedkonto.
-    * Du kan for Anskaffelser angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.    
-8. Vælg "Anskaffelsesregulering" i feltet Transaktionstype.
-    * Til posteringer til anskaffelsesreguleringer bruger vi de samme konti som anvendt til anskaffelsesposteringer.  
-9. Klik på Tilføj.
-10. Indtast eller vælg en værdi i feltet Bog.
-11. Angive de ønskede værdier i feltet Hovedkonto.
-    * Du kan for anskaffelsesreguleringer angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.    
-12. Vælg "Afskrivning" i feltet Transaktionstype.
-13. Klik på Tilføj.
-14. Indtast eller vælg en værdi i feltet Bog.
-15. Angive de ønskede værdier i feltet Hovedkonto.
-16. I feltet Modkonto skal du specificere de ønskede værdier.
-17. Vælg "Afskrivningsregulering" i feltet Transaktionstype.
-    * Til posteringer til afskrivningsreguleringer bruger vi de samme konti som anvendt til afskrivningsposteringer.  
-18. Klik på Tilføj.
-19. Indtast eller vælg en værdi i feltet Bog.
-20. Angive de ønskede værdier i feltet Hovedkonto.
-21. I feltet Modkonto skal du specificere de ønskede værdier.
-22. Vælg "Kassation – salg" i feltet Transaktionstype.
-23. Klik på Tilføj.
-24. Indtast eller vælg en værdi i feltet Bog.
-25. Angive de ønskede værdier i feltet Hovedkonto.
-    * Du kan for Kassation angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.  
-26. Vælg "Kassation – spild" i feltet Transaktionstype.
-    * Vi bruger de samme konti til kassation-salg og kassation-spild.  
-27. Klik på Tilføj.
-28. Indtast eller vælg en værdi i feltet Bog.
-29. Angive de ønskede værdier i feltet Hovedkonto.
-    * Du kan for Kassation angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.  
-30. Udvid sektionen Kassation.
-    * Du skal konfigurere posteringsprofiler for både salg og skrot.  Vi starter med salgstransaktioner for kassation.  
-31. Klik på Tilføj.
-32. Indtast eller vælg en værdi i feltet Bog.
-33. Vælg "Anskaffelsesværdi" i feltet Bogfør værdi.
-    * Anskaffelsesværdi håndterer anskaffelse og anskaffelsesreguleringsværdier for alle år.  Du kan også definere konti for disse posteringstyper separat.  
-    * Du kan angive, at kassationsprocessen skal bruge forskellige konti, afhængigt af om kassationen resulterer i tab eller vinding.  Jeg vil angive værditypen til "Alle" for at bruge de samme konti til alle former for kassation.  
-34. Angive de ønskede værdier i feltet Hovedkonto.
-35. I feltet Modkonto skal du specificere de ønskede værdier.
-36. Klik på Tilføj.
-37. Indtast eller vælg en værdi i feltet Bog.
-    * Vælg "Afskrivning (foregående år)" i feltet Bogfør værdi.  
-38. Angive de ønskede værdier i feltet Hovedkonto.
-39. I feltet Modkonto skal du specificere de ønskede værdier.
-40. Klik på Tilføj.
-41. Indtast eller vælg en værdi i feltet Bog.
-42. Vælg "Afskrivning (indeværende år)" i feltet Bogfør værdi.
-43. Angive de ønskede værdier i feltet Hovedkonto.
-44. I feltet Modkonto skal du specificere de ønskede værdier.
-45. Klik på Tilføj.
-46. Indtast eller vælg en værdi i feltet Bog.
-47. Vælg "Reguleringer af afskrivning (foregående år)" i feltet Bogfør værdi.
-48. Angive de ønskede værdier i feltet Hovedkonto.
-49. I feltet Modkonto skal du specificere de ønskede værdier.
-50. Klik på Tilføj.
-51. Indtast eller vælg en værdi i feltet Bog.
-52. Vælg "Reguleringer af afskrivning (indeværende år)" i feltet Bogfør værdi.
-53. Angive de ønskede værdier i feltet Hovedkonto.
-54. I feltet Modkonto skal du specificere de ønskede værdier.
-55. Klik på Tilføj.
-56. Indtast eller vælg en værdi i feltet Bog.
-57. Vælg "Bogført nettoværdi" i feltet Bogfør værdi.
-58. Angive de ønskede værdier i feltet Hovedkonto.
-59. I feltet Modkonto skal du specificere de ønskede værdier.
-60. Vælg "Spild" i feltet Salg eller spild.
-61. Klik på Tilføj.
-62. Indtast eller vælg en værdi i feltet Bog.
-63. Vælg "Anskaffelsesværdi" i feltet Bogfør værdi.
-64. Angive de ønskede værdier i feltet Hovedkonto.
-65. I feltet Modkonto skal du specificere de ønskede værdier.
-66. Klik på Tilføj.
-67. Indtast eller vælg en værdi i feltet Bog.
-    * Vælg "Afskrivning (foregående år)" i feltet Bogfør værdi.  
-68. Angive de ønskede værdier i feltet Hovedkonto.
-69. I feltet Modkonto skal du specificere de ønskede værdier.
-70. Klik på Tilføj.
-71. Indtast eller vælg en værdi i feltet Bog.
-72. Vælg "Afskrivning (indeværende år)" i feltet Bogfør værdi.
-73. Angive de ønskede værdier i feltet Hovedkonto.
-74. I feltet Modkonto skal du specificere de ønskede værdier.
-75. Klik på Tilføj.
-76. Indtast eller vælg en værdi i feltet Bog.
-77. Vælg "Reguleringer af afskrivning (foregående år)" i feltet Bogfør værdi.
-78. Angive de ønskede værdier i feltet Hovedkonto.
-79. I feltet Modkonto skal du specificere de ønskede værdier.
-80. Klik på Tilføj.
-81. Indtast eller vælg en værdi i feltet Bog.
-82. Vælg "Reguleringer af afskrivning (indeværende år)" i feltet Bogfør værdi.
-83. Angive de ønskede værdier i feltet Hovedkonto.
-84. I feltet Modkonto skal du specificere de ønskede værdier.
-85. Klik på Tilføj.
-86. Indtast eller vælg en værdi i feltet Bog.
-87. Vælg "Bogført nettoværdi" i feltet Bogfør værdi.
-88. Angive de ønskede værdier i feltet Hovedkonto.
-89. I feltet Modkonto skal du specificere de ønskede værdier.
+1. <span data-ttu-id="a9590-107">Gå til Anlægsaktiver > Opsætning > Posteringsprofiler for anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="a9590-107">Go to Fixed assets > Setup > Fixed asset posting profiles.</span></span>
+2. <span data-ttu-id="a9590-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="a9590-108">Click New.</span></span>
+3. <span data-ttu-id="a9590-109">Skriv en værdi i feltet Posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="a9590-109">In the Posting profile field, type a value.</span></span>
+4. <span data-ttu-id="a9590-110">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a9590-110">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="a9590-111">Du skal oprette en posteringsprofil til hver transaktionstype for anlægsaktiver, som du vil bruge, når du arbejder med anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="a9590-111">You will need to create a posting profile for each fixed asset transaction type you will be using when working with fixed assets.</span></span>  <span data-ttu-id="a9590-112">Denne opgaveguide starter med transaktionstypen Anskaffelse.</span><span class="sxs-lookup"><span data-stu-id="a9590-112">This task guide will start with the Acquisition transaction type.</span></span>  
+5. <span data-ttu-id="a9590-113">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-113">Click Add.</span></span>
+6. <span data-ttu-id="a9590-114">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-114">In the Book field, enter or select a value.</span></span>
+    * <span data-ttu-id="a9590-115">I feltet Grupperinger kan du definere posteringsprofilen ned til tabellen (én konto konfigureret for hvert anlægsaktiv) eller gruppe (én konto konfigureret for hver anlægsaktivgruppe).</span><span class="sxs-lookup"><span data-stu-id="a9590-115">The Groupings field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group).</span></span>  <span data-ttu-id="a9590-116">Til denne opgaveguide er værdien angivet til "Alle" for at gælde for alle anlægsaktiver med den angivne bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-116">For this task guide I will leave the value set to “All” to apply to all fixed assets with the specified Book.</span></span>  
+7. <span data-ttu-id="a9590-117">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-117">In the Main account field, specify the desired values.</span></span>
+    * <span data-ttu-id="a9590-118">Du kan for Anskaffelser angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.</span><span class="sxs-lookup"><span data-stu-id="a9590-118">For Acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.</span></span>    
+8. <span data-ttu-id="a9590-119">Vælg "Anskaffelsesregulering" i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="a9590-119">In the Transaction type field, select 'Acquisition adjustment'.</span></span>
+    * <span data-ttu-id="a9590-120">Til posteringer til anskaffelsesreguleringer bruger vi de samme konti som anvendt til anskaffelsesposteringer.</span><span class="sxs-lookup"><span data-stu-id="a9590-120">For Acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.</span></span>  
+9. <span data-ttu-id="a9590-121">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-121">Click Add.</span></span>
+10. <span data-ttu-id="a9590-122">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-122">In the Book field, enter or select a value.</span></span>
+11. <span data-ttu-id="a9590-123">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-123">In the Main account field, specify the desired values.</span></span>
+    * <span data-ttu-id="a9590-124">Du kan for anskaffelsesreguleringer angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.</span><span class="sxs-lookup"><span data-stu-id="a9590-124">For Acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.</span></span>    
+12. <span data-ttu-id="a9590-125">Vælg "Afskrivning" i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="a9590-125">In the Transaction type field, select 'Depreciation'.</span></span>
+13. <span data-ttu-id="a9590-126">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-126">Click Add.</span></span>
+14. <span data-ttu-id="a9590-127">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-127">In the Book field, enter or select a value.</span></span>
+15. <span data-ttu-id="a9590-128">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-128">In the Main account field, specify the desired values.</span></span>
+16. <span data-ttu-id="a9590-129">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-129">In the Offset account field, specify the desired values.</span></span>
+17. <span data-ttu-id="a9590-130">Vælg "Afskrivningsregulering" i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="a9590-130">In the Transaction type field, select 'Depreciation adjustment'.</span></span>
+    * <span data-ttu-id="a9590-131">Til posteringer til afskrivningsreguleringer bruger vi de samme konti som anvendt til afskrivningsposteringer.</span><span class="sxs-lookup"><span data-stu-id="a9590-131">For Depreciation adjustment transactions, we will use the same accounts as used for Depreciation transactions.</span></span>  
+18. <span data-ttu-id="a9590-132">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-132">Click Add.</span></span>
+19. <span data-ttu-id="a9590-133">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-133">In the Book field, enter or select a value.</span></span>
+20. <span data-ttu-id="a9590-134">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-134">In the Main account field, specify the desired values.</span></span>
+21. <span data-ttu-id="a9590-135">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-135">In the Offset account field, specify the desired values.</span></span>
+22. <span data-ttu-id="a9590-136">Vælg "Kassation – salg" i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="a9590-136">In the Transaction type field, select 'Disposal - sale'.</span></span>
+23. <span data-ttu-id="a9590-137">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-137">Click Add.</span></span>
+24. <span data-ttu-id="a9590-138">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-138">In the Book field, enter or select a value.</span></span>
+25. <span data-ttu-id="a9590-139">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-139">In the Main account field, specify the desired values.</span></span>
+    * <span data-ttu-id="a9590-140">Du kan for Kassation angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.</span><span class="sxs-lookup"><span data-stu-id="a9590-140">For Disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.</span></span>  
+26. <span data-ttu-id="a9590-141">Vælg "Kassation – spild" i feltet Transaktionstype.</span><span class="sxs-lookup"><span data-stu-id="a9590-141">In the Transaction type field, select 'Disposal - scrap'.</span></span>
+    * <span data-ttu-id="a9590-142">Vi bruger de samme konti til kassation-salg og kassation-spild.</span><span class="sxs-lookup"><span data-stu-id="a9590-142">We will use the same accounts for Disposal sale and Disposal scrap.</span></span>  
+27. <span data-ttu-id="a9590-143">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-143">Click Add.</span></span>
+28. <span data-ttu-id="a9590-144">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-144">In the Book field, enter or select a value.</span></span>
+29. <span data-ttu-id="a9590-145">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-145">In the Main account field, specify the desired values.</span></span>
+    * <span data-ttu-id="a9590-146">Du kan for Kassation angive en modkonto eller lade det stå tomt, så det udfyldes for den specifikke transaktion.</span><span class="sxs-lookup"><span data-stu-id="a9590-146">For Disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.</span></span>  
+30. <span data-ttu-id="a9590-147">Udvid sektionen Kassation.</span><span class="sxs-lookup"><span data-stu-id="a9590-147">Expand the Disposal section.</span></span>
+    * <span data-ttu-id="a9590-148">Du skal konfigurere posteringsprofiler for både salg og skrot.</span><span class="sxs-lookup"><span data-stu-id="a9590-148">You must set up disposal posting profiles for both sale and scrap.</span></span>  <span data-ttu-id="a9590-149">Vi starter med salgstransaktioner for kassation.</span><span class="sxs-lookup"><span data-stu-id="a9590-149">We will start with disposal sale transactions.</span></span>  
+31. <span data-ttu-id="a9590-150">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-150">Click Add.</span></span>
+32. <span data-ttu-id="a9590-151">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-151">In the Book field, enter or select a value.</span></span>
+33. <span data-ttu-id="a9590-152">Vælg "Anskaffelsesværdi" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-152">In the Post value field, select 'Acquisition value'.</span></span>
+    * <span data-ttu-id="a9590-153">Anskaffelsesværdi håndterer anskaffelse og anskaffelsesreguleringsværdier for alle år.</span><span class="sxs-lookup"><span data-stu-id="a9590-153">Acquisition value will address Acquisition and Acquisition adjustment values for all years.</span></span>  <span data-ttu-id="a9590-154">Du kan også definere konti for disse posteringstyper separat.</span><span class="sxs-lookup"><span data-stu-id="a9590-154">You can also define accounts for these transaction types separately.</span></span>  
+    * <span data-ttu-id="a9590-155">Du kan angive, at kassationsprocessen skal bruge forskellige konti, afhængigt af om kassationen resulterer i tab eller vinding.</span><span class="sxs-lookup"><span data-stu-id="a9590-155">You can set the disposal process to use different accounts depending upon if the disposal results in a gain or loss.</span></span>  <span data-ttu-id="a9590-156">Jeg vil angive værditypen til "Alle" for at bruge de samme konti til alle former for kassation.</span><span class="sxs-lookup"><span data-stu-id="a9590-156">I will set the Sales value type to “All” to use the same accounts for all types of disposals.</span></span>  
+34. <span data-ttu-id="a9590-157">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-157">In the Main account field, specify the desired values.</span></span>
+35. <span data-ttu-id="a9590-158">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-158">In the Offset account field, specify the desired values.</span></span>
+36. <span data-ttu-id="a9590-159">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-159">Click Add.</span></span>
+37. <span data-ttu-id="a9590-160">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-160">In the Book field, enter or select a value.</span></span>
+    * <span data-ttu-id="a9590-161">Vælg "Afskrivning (foregående år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-161">In the Post value field, select 'Depreciation (prior years)'.</span></span>  
+38. <span data-ttu-id="a9590-162">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-162">In the Main account field, specify the desired values.</span></span>
+39. <span data-ttu-id="a9590-163">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-163">In the Offset account field, specify the desired values.</span></span>
+40. <span data-ttu-id="a9590-164">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-164">Click Add.</span></span>
+41. <span data-ttu-id="a9590-165">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-165">In the Book field, enter or select a value.</span></span>
+42. <span data-ttu-id="a9590-166">Vælg "Afskrivning (indeværende år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-166">In the Post value field, select 'Depreciation (this year)'.</span></span>
+43. <span data-ttu-id="a9590-167">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-167">In the Main account field, specify the desired values.</span></span>
+44. <span data-ttu-id="a9590-168">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-168">In the Offset account field, specify the desired values.</span></span>
+45. <span data-ttu-id="a9590-169">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-169">Click Add.</span></span>
+46. <span data-ttu-id="a9590-170">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-170">In the Book field, enter or select a value.</span></span>
+47. <span data-ttu-id="a9590-171">Vælg "Reguleringer af afskrivning (foregående år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-171">In the Post value field, select 'Depreciation adjustments (prior years)'.</span></span>
+48. <span data-ttu-id="a9590-172">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-172">In the Main account field, specify the desired values.</span></span>
+49. <span data-ttu-id="a9590-173">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-173">In the Offset account field, specify the desired values.</span></span>
+50. <span data-ttu-id="a9590-174">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-174">Click Add.</span></span>
+51. <span data-ttu-id="a9590-175">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-175">In the Book field, enter or select a value.</span></span>
+52. <span data-ttu-id="a9590-176">Vælg "Reguleringer af afskrivning (indeværende år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-176">In the Post value field, select 'Depreciation adjustments (this year)'.</span></span>
+53. <span data-ttu-id="a9590-177">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-177">In the Main account field, specify the desired values.</span></span>
+54. <span data-ttu-id="a9590-178">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-178">In the Offset account field, specify the desired values.</span></span>
+55. <span data-ttu-id="a9590-179">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-179">Click Add.</span></span>
+56. <span data-ttu-id="a9590-180">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-180">In the Book field, enter or select a value.</span></span>
+57. <span data-ttu-id="a9590-181">Vælg "Bogført nettoværdi" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-181">In the Post value field, select 'Net book value'.</span></span>
+58. <span data-ttu-id="a9590-182">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-182">In the Main account field, specify the desired values.</span></span>
+59. <span data-ttu-id="a9590-183">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-183">In the Offset account field, specify the desired values.</span></span>
+60. <span data-ttu-id="a9590-184">Vælg "Spild" i feltet Salg eller spild.</span><span class="sxs-lookup"><span data-stu-id="a9590-184">In the Sale or scrap field, select 'Scrap'.</span></span>
+61. <span data-ttu-id="a9590-185">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-185">Click Add.</span></span>
+62. <span data-ttu-id="a9590-186">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-186">In the Book field, enter or select a value.</span></span>
+63. <span data-ttu-id="a9590-187">Vælg "Anskaffelsesværdi" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-187">In the Post value field, select 'Acquisition value'.</span></span>
+64. <span data-ttu-id="a9590-188">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-188">In the Main account field, specify the desired values.</span></span>
+65. <span data-ttu-id="a9590-189">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-189">In the Offset account field, specify the desired values.</span></span>
+66. <span data-ttu-id="a9590-190">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-190">Click Add.</span></span>
+67. <span data-ttu-id="a9590-191">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-191">In the Book field, enter or select a value.</span></span>
+    * <span data-ttu-id="a9590-192">Vælg "Afskrivning (foregående år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-192">In Post value field, select 'Depreciation (prior years)'.</span></span>  
+68. <span data-ttu-id="a9590-193">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-193">In the Main account field, specify the desired values.</span></span>
+69. <span data-ttu-id="a9590-194">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-194">In the Offset account field, specify the desired values.</span></span>
+70. <span data-ttu-id="a9590-195">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-195">Click Add.</span></span>
+71. <span data-ttu-id="a9590-196">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-196">In the Book field, enter or select a value.</span></span>
+72. <span data-ttu-id="a9590-197">Vælg "Afskrivning (indeværende år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-197">In the Post value field, select 'Depreciation (this year)'.</span></span>
+73. <span data-ttu-id="a9590-198">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-198">In the Main account field, specify the desired values.</span></span>
+74. <span data-ttu-id="a9590-199">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-199">In the Offset account field, specify the desired values.</span></span>
+75. <span data-ttu-id="a9590-200">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-200">Click Add.</span></span>
+76. <span data-ttu-id="a9590-201">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-201">In the Book field, enter or select a value.</span></span>
+77. <span data-ttu-id="a9590-202">Vælg "Reguleringer af afskrivning (foregående år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-202">In the Post value field, select 'Depreciation adjustments (prior years)'.</span></span>
+78. <span data-ttu-id="a9590-203">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-203">In the Main account field, specify the desired values.</span></span>
+79. <span data-ttu-id="a9590-204">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-204">In the Offset account field, specify the desired values.</span></span>
+80. <span data-ttu-id="a9590-205">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-205">Click Add.</span></span>
+81. <span data-ttu-id="a9590-206">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-206">In the Book field, enter or select a value.</span></span>
+82. <span data-ttu-id="a9590-207">Vælg "Reguleringer af afskrivning (indeværende år)" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-207">In the Post value field, select 'Depreciation adjustments (this year)'.</span></span>
+83. <span data-ttu-id="a9590-208">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-208">In the Main account field, specify the desired values.</span></span>
+84. <span data-ttu-id="a9590-209">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-209">In the Offset account field, specify the desired values.</span></span>
+85. <span data-ttu-id="a9590-210">Klik på Tilføj.</span><span class="sxs-lookup"><span data-stu-id="a9590-210">Click Add.</span></span>
+86. <span data-ttu-id="a9590-211">Indtast eller vælg en værdi i feltet Bog.</span><span class="sxs-lookup"><span data-stu-id="a9590-211">In the Book field, enter or select a value.</span></span>
+87. <span data-ttu-id="a9590-212">Vælg "Bogført nettoværdi" i feltet Bogfør værdi.</span><span class="sxs-lookup"><span data-stu-id="a9590-212">In the Post value field, select 'Net book value'.</span></span>
+88. <span data-ttu-id="a9590-213">Angive de ønskede værdier i feltet Hovedkonto.</span><span class="sxs-lookup"><span data-stu-id="a9590-213">In the Main account field, specify the desired values.</span></span>
+89. <span data-ttu-id="a9590-214">I feltet Modkonto skal du specificere de ønskede værdier.</span><span class="sxs-lookup"><span data-stu-id="a9590-214">In the Offset account field, specify the desired values.</span></span>
 
 

@@ -16,135 +16,135 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5835469cff8295bc6486c097eaf26114fa547c00
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 21895bcda8f0fe46e9b7c4b2189ca8b13e0dc012
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="letter-of-guarantee-transaction"></a>Garantipostering
+# <a name="letter-of-guarantee-transaction"></a><span data-ttu-id="ff64e-103">Garantipostering</span><span class="sxs-lookup"><span data-stu-id="ff64e-103">Letter of guarantee transaction</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure gennemgår garantiprocessen.
+<span data-ttu-id="ff64e-104">Denne procedure gennemgår garantiprocessen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-104">This procedure walks through the Letter of guarantee process.</span></span>
 
 
 
-Følgende opgaver skal være fuldført, før du fuldfører denne procedure:
+<span data-ttu-id="ff64e-105">Følgende opgaver skal være fuldført, før du fuldfører denne procedure:</span><span class="sxs-lookup"><span data-stu-id="ff64e-105">The following tasks must be complete before completing this procedure:</span></span>
 
-- Konfigurere bankfaciliteter og posteringsprofiler for en garanti.
+- <span data-ttu-id="ff64e-106">Konfigurere bankfaciliteter og posteringsprofiler for en garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-106">Set up bank facilities and posting profiles for a letter of guarantee.</span></span>
 
-- Opret en bankfacilitetsaftale for en garanti.
-
-
-
-Denne procedure bruger demofirmaet USMF.
+- <span data-ttu-id="ff64e-107">Opret en bankfacilitetsaftale for en garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-107">Create a bank facility agreement for a letter of guarantee.</span></span>
 
 
-## <a name="create-sales-order-with-letter-of-guarantee"></a>Oprette salgsordre med Garanti
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Kundekonto.
-4. Udvid afsnittet Generelt.
-5. Indtast eller vælg en værdi i feltet Lokation.
-6. Klik op linket i den valgte række på listen.
-7. Indtast eller vælg en værdi i feltet Lagersted.
-8. Klik op linket i den valgte række på listen.
-9. Vælg Garanti i feltet Bankdokumenttype.
-10. Klik på OK.
-11. Indtast eller vælg en værdi i feltet Varenummer.
-12. Angiv et tal i feltet Enhedspris.
-13. Vis eller skjul sektionen Linjedetaljer.
-14. Klik på fanen Levering.
-    * Bemærk! Vælg leveringsdatokontrol = Ingen  
-15. Angiv en dato i feltet Ønsket afsendelsesdato.
-16. Angiv en dato i feltet Bekræftet afsendelsesdato.
 
-## <a name="process-letter-of-guaranteerequest"></a>Behandle garanti_Anmodning
-1. Klik på Administrer i handlingsruden.
-2. Klik på Garanti.
-3. I handlingsruden skal du klikke på Garanti.
-4. Klik på Anmodning for at åbne dialogboksen.
-5. Indtast eller vælg en værdi i feltet Type.
-6. Klik op linket i den valgte række på listen.
-7. Angiv et tal i feltet Værdi.
-8. Angiv dato og klokkeslæt i feltet Udløbsdato.
-9. Klik på OK.
-10. Luk siden.
+<span data-ttu-id="ff64e-108">Denne procedure bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="ff64e-108">This procedure uses the USMF demo company.</span></span>
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>Behandle anmodning om garanti_Send til bank
-1. Gå til Kontant- og bankstyring > Garantier > Garantier.
-2. Find og vælg den ønskede post på listen.
-3. Klik på Send til bank for at åbne dialogboksen.
-4. Indtast eller vælg en værdi i feltet Bankkonto.
-5. Klik op linket i den valgte række på listen.
-6. Klik på OK.
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>Behandle garanti_Modtag fra bank
-1. Klik på Modtag fra bank for at åbne dialogboksen.
-2. Skriv en værdi i feltet Banknummer.
-    * Kontrollér værdierne i de beregnede avance- og udgiftsfelter.  
-3. Klik på OK.
-4. Udvid afsnittet Handlinger.
-    * Kontroller posten "Modtag fra bank".  
-5. Klik for at følge linket i feltet Kladdebatchnummer.
-6. Klik på Linjer.
-    * Kontrollér bogføringen af kladdeposteringer.  
-7. Luk siden.
+## <a name="create-sales-order-with-letter-of-guarantee"></a><span data-ttu-id="ff64e-109">Oprette salgsordre med Garanti</span><span class="sxs-lookup"><span data-stu-id="ff64e-109">Create Sales Order with Letter of Guarantee</span></span>
+1. <span data-ttu-id="ff64e-110">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-110">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="ff64e-111">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="ff64e-111">Click New.</span></span>
+3. <span data-ttu-id="ff64e-112">Indtast eller vælg en værdi i feltet Kundekonto.</span><span class="sxs-lookup"><span data-stu-id="ff64e-112">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="ff64e-113">Udvid afsnittet Generelt.</span><span class="sxs-lookup"><span data-stu-id="ff64e-113">Expand the General section.</span></span>
+5. <span data-ttu-id="ff64e-114">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="ff64e-114">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="ff64e-115">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-115">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="ff64e-116">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="ff64e-116">In the Warehouse field, enter or select a value.</span></span>
+8. <span data-ttu-id="ff64e-117">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="ff64e-118">Vælg Garanti i feltet Bankdokumenttype.</span><span class="sxs-lookup"><span data-stu-id="ff64e-118">In the Bank document type field, select 'Letter of guarantee'.</span></span>
+10. <span data-ttu-id="ff64e-119">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-119">Click OK.</span></span>
+11. <span data-ttu-id="ff64e-120">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-120">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="ff64e-121">Angiv et tal i feltet Enhedspris.</span><span class="sxs-lookup"><span data-stu-id="ff64e-121">In the Unit price field, enter a number.</span></span>
+13. <span data-ttu-id="ff64e-122">Vis eller skjul sektionen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-122">Expand the Line details section.</span></span>
+14. <span data-ttu-id="ff64e-123">Klik på fanen Levering.</span><span class="sxs-lookup"><span data-stu-id="ff64e-123">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="ff64e-124">Bemærk! Vælg leveringsdatokontrol = Ingen</span><span class="sxs-lookup"><span data-stu-id="ff64e-124">Note: Select Delivery date control = None</span></span>  
+15. <span data-ttu-id="ff64e-125">Angiv en dato i feltet Ønsket afsendelsesdato.</span><span class="sxs-lookup"><span data-stu-id="ff64e-125">In the Requested ship date field, enter a date.</span></span>
+16. <span data-ttu-id="ff64e-126">Angiv en dato i feltet Bekræftet afsendelsesdato.</span><span class="sxs-lookup"><span data-stu-id="ff64e-126">In the Confirmed ship date field, enter a date.</span></span>
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>Behandle garanti_Giv til modtager
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik op linket i den valgte række på listen.
-3. Klik på Administrer i handlingsruden.
-4. Klik på Garanti.
-5. I handlingsruden skal du klikke på Garanti.
-6. Klik på Giv til modtager for at åbne dialogboksen.
-7. Klik på OK.
-8. Gå til Kontant- og bankstyring > Garantier > Garantier.
-9. Find og vælg den ønskede post på listen.
-10. Klik på Giv til modtager for at åbne dialogboksen.
-11. Klik på OK.
-12. Udvid afsnittet Handlinger.
-    * Valider 'Giv til beneficiant'-posten.  
+## <a name="process-letter-of-guaranteerequest"></a><span data-ttu-id="ff64e-127">Behandle garanti_Anmodning</span><span class="sxs-lookup"><span data-stu-id="ff64e-127">Process letter of guarantee_Request</span></span>
+1. <span data-ttu-id="ff64e-128">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-128">On the Action Pane, click Manage.</span></span>
+2. <span data-ttu-id="ff64e-129">Klik på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-129">Click Letter of guarantee.</span></span>
+3. <span data-ttu-id="ff64e-130">I handlingsruden skal du klikke på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-130">On the Action Pane, click Letter of guarantee.</span></span>
+4. <span data-ttu-id="ff64e-131">Klik på Anmodning for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-131">Click Request to open the drop dialog.</span></span>
+5. <span data-ttu-id="ff64e-132">Indtast eller vælg en værdi i feltet Type.</span><span class="sxs-lookup"><span data-stu-id="ff64e-132">In the Type field, enter or select a value.</span></span>
+6. <span data-ttu-id="ff64e-133">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-133">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="ff64e-134">Angiv et tal i feltet Værdi.</span><span class="sxs-lookup"><span data-stu-id="ff64e-134">In the Value field, enter a number.</span></span>
+8. <span data-ttu-id="ff64e-135">Angiv dato og klokkeslæt i feltet Udløbsdato.</span><span class="sxs-lookup"><span data-stu-id="ff64e-135">In the Expiration date field, enter a date and time.</span></span>
+9. <span data-ttu-id="ff64e-136">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-136">Click OK.</span></span>
+10. <span data-ttu-id="ff64e-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-137">Close the page.</span></span>
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>Behandle garanti_Opskriv værdi
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik op linket i den valgte række på listen.
-3. Klik på Administrer i handlingsruden.
-4. Klik på Garanti.
-5. I handlingsruden skal du klikke på Garanti.
-6. Klik på Opskriv værdi for at åbne dialogboksen.
-7. Indtast et tal i feltet Værdi, der skal tilføjes.
-8. Klik på OK.
-9. Gå til Kontant- og bankstyring > Garantier > Garantier.
-10. Find og vælg den ønskede post på listen.
-11. Klik på Opskriv værdi for at åbne dialogboksen.
-12. Klik på OK.
-13. Udvid afsnittet Handlinger.
-    * Kontroller posten 'Opskriv værdi'.  
-14. Find og vælg den ønskede post på listen.
-15. Klik for at følge linket i feltet Kladdebatchnummer.
-16. Klik på Linjer.
-    * Kontrollér de bogførte kladdeposteringer.  
+## <a name="process-letter-of-guaranteesubmit-to-bank"></a><span data-ttu-id="ff64e-138">Behandle anmodning om garanti_Send til bank</span><span class="sxs-lookup"><span data-stu-id="ff64e-138">Process letter of guarantee_Submit to bank</span></span>
+1. <span data-ttu-id="ff64e-139">Gå til Kontant- og bankstyring > Garantier > Garantier.</span><span class="sxs-lookup"><span data-stu-id="ff64e-139">Go to Cash and bank management > Letters of guarantee > Letters of guarantee.</span></span>
+2. <span data-ttu-id="ff64e-140">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-140">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ff64e-141">Klik på Send til bank for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-141">Click Submit to bank to open the drop dialog.</span></span>
+4. <span data-ttu-id="ff64e-142">Indtast eller vælg en værdi i feltet Bankkonto.</span><span class="sxs-lookup"><span data-stu-id="ff64e-142">In the Bank account field, enter or select a value.</span></span>
+5. <span data-ttu-id="ff64e-143">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-143">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="ff64e-144">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-144">Click OK.</span></span>
 
-## <a name="process-letter-of-guaranteeliquidate"></a>Behandle garanti_Udfør afvikling
-1. Gå til Debitor > Ordrer > Alle salgsordrer.
-2. Klik op linket i den valgte række på listen.
-3. Klik på Administrer i handlingsruden.
-4. Klik på Garanti.
-5. I handlingsruden skal du klikke på Garanti.
-6. Klik på Udfør afvikling for at åbne dialogboksen.
-7. Klik på OK.
-8. Gå til Kontant- og bankstyring > Garantier > Garantier.
-9. Find og vælg den ønskede post på listen.
-10. Klik på Udfør afvikling for at åbne dialogboksen.
-11. Klik på OK.
-12. Udvid afsnittet Handlinger.
-    * Kontroller posten 'Udfør afvikling'.  
-13. Find og vælg den ønskede post på listen.
-14. Klik for at følge linket i feltet Kladdebatchnummer.
-15. Klik på Linjer.
-    * Kontrollér de bogførte kladdeposteringer.  
-16. Luk siden.
+## <a name="process-letter-of-guaranteereceive-from-bank"></a><span data-ttu-id="ff64e-145">Behandle garanti_Modtag fra bank</span><span class="sxs-lookup"><span data-stu-id="ff64e-145">Process letter of guarantee_Receive from bank</span></span>
+1. <span data-ttu-id="ff64e-146">Klik på Modtag fra bank for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-146">Click Receive from bank to open the drop dialog.</span></span>
+2. <span data-ttu-id="ff64e-147">Skriv en værdi i feltet Banknummer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-147">In the Bank number field, type a value.</span></span>
+    * <span data-ttu-id="ff64e-148">Kontrollér værdierne i de beregnede avance- og udgiftsfelter.</span><span class="sxs-lookup"><span data-stu-id="ff64e-148">Verify the values in the calculated Margin and Expense fields.</span></span>  
+3. <span data-ttu-id="ff64e-149">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-149">Click OK.</span></span>
+4. <span data-ttu-id="ff64e-150">Udvid afsnittet Handlinger.</span><span class="sxs-lookup"><span data-stu-id="ff64e-150">Expand the Actions section.</span></span>
+    * <span data-ttu-id="ff64e-151">Kontroller posten "Modtag fra bank".</span><span class="sxs-lookup"><span data-stu-id="ff64e-151">Verify the 'Receive from bank' record.</span></span>  
+5. <span data-ttu-id="ff64e-152">Klik for at følge linket i feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-152">Click to follow the link in the Journal batch number field.</span></span>
+6. <span data-ttu-id="ff64e-153">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-153">Click Lines.</span></span>
+    * <span data-ttu-id="ff64e-154">Kontrollér bogføringen af kladdeposteringer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-154">Verify the posting of journal entries.</span></span>  
+7. <span data-ttu-id="ff64e-155">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-155">Close the page.</span></span>
+
+## <a name="process-letter-of-guaranteegive-to-beneficiary"></a><span data-ttu-id="ff64e-156">Behandle garanti_Giv til modtager</span><span class="sxs-lookup"><span data-stu-id="ff64e-156">Process letter of guarantee_Give to beneficiary</span></span>
+1. <span data-ttu-id="ff64e-157">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-157">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="ff64e-158">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-158">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="ff64e-159">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-159">On the Action Pane, click Manage.</span></span>
+4. <span data-ttu-id="ff64e-160">Klik på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-160">Click Letter of guarantee.</span></span>
+5. <span data-ttu-id="ff64e-161">I handlingsruden skal du klikke på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-161">On the Action Pane, click Letter of guarantee.</span></span>
+6. <span data-ttu-id="ff64e-162">Klik på Giv til modtager for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-162">Click Give to beneficiary to open the drop dialog.</span></span>
+7. <span data-ttu-id="ff64e-163">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-163">Click OK.</span></span>
+8. <span data-ttu-id="ff64e-164">Gå til Kontant- og bankstyring > Garantier > Garantier.</span><span class="sxs-lookup"><span data-stu-id="ff64e-164">Go to Cash and bank management > Letters of guarantee > Letters of guarantee.</span></span>
+9. <span data-ttu-id="ff64e-165">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-165">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="ff64e-166">Klik på Giv til modtager for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-166">Click Give to beneficiary to open the drop dialog.</span></span>
+11. <span data-ttu-id="ff64e-167">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-167">Click OK.</span></span>
+12. <span data-ttu-id="ff64e-168">Udvid afsnittet Handlinger.</span><span class="sxs-lookup"><span data-stu-id="ff64e-168">Expand the Actions section.</span></span>
+    * <span data-ttu-id="ff64e-169">Valider 'Giv til beneficiant'-posten.</span><span class="sxs-lookup"><span data-stu-id="ff64e-169">Validate the 'Give to beneficiary' record.</span></span>  
+
+## <a name="process-letter-of-guaranteeincrease-value"></a><span data-ttu-id="ff64e-170">Behandle garanti_Opskriv værdi</span><span class="sxs-lookup"><span data-stu-id="ff64e-170">Process letter of guarantee_Increase value</span></span>
+1. <span data-ttu-id="ff64e-171">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-171">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="ff64e-172">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-172">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="ff64e-173">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-173">On the Action Pane, click Manage.</span></span>
+4. <span data-ttu-id="ff64e-174">Klik på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-174">Click Letter of guarantee.</span></span>
+5. <span data-ttu-id="ff64e-175">I handlingsruden skal du klikke på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-175">On the Action Pane, click Letter of guarantee.</span></span>
+6. <span data-ttu-id="ff64e-176">Klik på Opskriv værdi for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-176">Click Increase value to open the drop dialog.</span></span>
+7. <span data-ttu-id="ff64e-177">Indtast et tal i feltet Værdi, der skal tilføjes.</span><span class="sxs-lookup"><span data-stu-id="ff64e-177">In the Value to add field, enter a number.</span></span>
+8. <span data-ttu-id="ff64e-178">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-178">Click OK.</span></span>
+9. <span data-ttu-id="ff64e-179">Gå til Kontant- og bankstyring > Garantier > Garantier.</span><span class="sxs-lookup"><span data-stu-id="ff64e-179">Go to Cash and bank management > Letters of guarantee > Letters of guarantee.</span></span>
+10. <span data-ttu-id="ff64e-180">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-180">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="ff64e-181">Klik på Opskriv værdi for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-181">Click Increase value to open the drop dialog.</span></span>
+12. <span data-ttu-id="ff64e-182">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-182">Click OK.</span></span>
+13. <span data-ttu-id="ff64e-183">Udvid afsnittet Handlinger.</span><span class="sxs-lookup"><span data-stu-id="ff64e-183">Expand the Actions section.</span></span>
+    * <span data-ttu-id="ff64e-184">Kontroller posten 'Opskriv værdi'.</span><span class="sxs-lookup"><span data-stu-id="ff64e-184">Verify the 'Increase value' record.</span></span>  
+14. <span data-ttu-id="ff64e-185">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-185">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="ff64e-186">Klik for at følge linket i feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-186">Click to follow the link in the Journal batch number field.</span></span>
+16. <span data-ttu-id="ff64e-187">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-187">Click Lines.</span></span>
+    * <span data-ttu-id="ff64e-188">Kontrollér de bogførte kladdeposteringer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-188">Verify the posted journal entries.</span></span>  
+
+## <a name="process-letter-of-guaranteeliquidate"></a><span data-ttu-id="ff64e-189">Behandle garanti_Udfør afvikling</span><span class="sxs-lookup"><span data-stu-id="ff64e-189">Process letter of guarantee_Liquidate</span></span>
+1. <span data-ttu-id="ff64e-190">Gå til Debitor > Ordrer > Alle salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-190">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="ff64e-191">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-191">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="ff64e-192">Klik på Administrer i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-192">On the Action Pane, click Manage.</span></span>
+4. <span data-ttu-id="ff64e-193">Klik på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-193">Click Letter of guarantee.</span></span>
+5. <span data-ttu-id="ff64e-194">I handlingsruden skal du klikke på Garanti.</span><span class="sxs-lookup"><span data-stu-id="ff64e-194">On the Action Pane, click Letter of guarantee.</span></span>
+6. <span data-ttu-id="ff64e-195">Klik på Udfør afvikling for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-195">Click Liquidate to open the drop dialog.</span></span>
+7. <span data-ttu-id="ff64e-196">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-196">Click OK.</span></span>
+8. <span data-ttu-id="ff64e-197">Gå til Kontant- og bankstyring > Garantier > Garantier.</span><span class="sxs-lookup"><span data-stu-id="ff64e-197">Go to Cash and bank management > Letters of guarantee > Letters of guarantee.</span></span>
+9. <span data-ttu-id="ff64e-198">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-198">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="ff64e-199">Klik på Udfør afvikling for at åbne dialogboksen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-199">Click Liquidate to open the drop dialog.</span></span>
+11. <span data-ttu-id="ff64e-200">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="ff64e-200">Click OK.</span></span>
+12. <span data-ttu-id="ff64e-201">Udvid afsnittet Handlinger.</span><span class="sxs-lookup"><span data-stu-id="ff64e-201">Expand the Actions section.</span></span>
+    * <span data-ttu-id="ff64e-202">Kontroller posten 'Udfør afvikling'.</span><span class="sxs-lookup"><span data-stu-id="ff64e-202">Verify the 'Liquidate' record.</span></span>  
+13. <span data-ttu-id="ff64e-203">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="ff64e-203">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="ff64e-204">Klik for at følge linket i feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-204">Click to follow the link in the Journal batch number field.</span></span>
+15. <span data-ttu-id="ff64e-205">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-205">Click Lines.</span></span>
+    * <span data-ttu-id="ff64e-206">Kontrollér de bogførte kladdeposteringer.</span><span class="sxs-lookup"><span data-stu-id="ff64e-206">Verify the posted journal entries.</span></span>  
+16. <span data-ttu-id="ff64e-207">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="ff64e-207">Close the page.</span></span>
 
 

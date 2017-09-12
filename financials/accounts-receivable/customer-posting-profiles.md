@@ -19,39 +19,39 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
-ms.openlocfilehash: b36e75a5f527b41d50cc73e28a0b4e7e5df67e5c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: da750645612c2a0a7650edfd933d707618d9f9ce
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
+# <a name="customer-posting-profiles"></a><span data-ttu-id="1ea0f-103">Debitor, posteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="1ea0f-103">Customer posting profiles</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
+<span data-ttu-id="1ea0f-104">Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-104">Customer posting profiles control the posting of customer transactions to the general ledger.</span></span>
 
-<a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
+<a name="customer-posting-profiles"></a><span data-ttu-id="1ea0f-105">Debitor, posteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="1ea0f-105">Customer posting profiles</span></span>
 -------------------------
 
-Debitorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle debitorer, en gruppe debitorer eller en enkelt debitor. Disse indstillinger bruges, når du opretter salgsordrer, fritekstfakturaer, kontantbetalinger, rykkere og rentenotaer. For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side. 
+<span data-ttu-id="1ea0f-106">Debitorposteringsprofiler giver dig mulighed for at tildele finanskonti og dokumentindstillinger til alle debitorer, en gruppe debitorer eller en enkelt debitor.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-106">Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer.</span></span> <span data-ttu-id="1ea0f-107">Disse indstillinger bruges, når du opretter salgsordrer, fritekstfakturaer, kontantbetalinger, rykkere og rentenotaer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-107">These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes.</span></span> <span data-ttu-id="1ea0f-108">For nogle transaktioner kan du vælge en posteringsprofil, der er anderledes end, og som prioriteres højere end de posteringsprofiler, der er oprettet for transaktioner på denne side.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-108">For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page.</span></span> 
 
-Standardposteringsprofilen defineres i oversigtspanelet Finans og Moms på siden Debitorparametre. Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.
+<span data-ttu-id="1ea0f-109">Standardposteringsprofilen defineres i oversigtspanelet Finans og Moms på siden Debitorparametre.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-109">The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page.</span></span> <span data-ttu-id="1ea0f-110">Standardposteringsprofilen medtages derefter automatisk i hovedet i nye dokumenter, hvor du kan ændre den til en anden posteringsprofil, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-110">The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.</span></span>
 
-Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden Definitioner af posteringsbogføring. I stedet for posteringsprofiler er det bogføringsdefinitioner, der styrer, hvordan debitorposter bogføres i finansmodulet.
+<span data-ttu-id="1ea0f-111">Du kan også knytte bogføringsdefinitioner til posteringsbogføringstyper på siden Definitioner af posteringsbogføring.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-111">You can also associate posting definitions with transaction posting types in the Transaction posting definitions page.</span></span> <span data-ttu-id="1ea0f-112">I stedet for posteringsprofiler er det bogføringsdefinitioner, der styrer, hvordan debitorposter bogføres i finansmodulet.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-112">Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles.</span></span>
 
-## <a name="creating-a-posting-profile"></a>Oprette en posteringsprofil
-Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte posteringsprofil. Vælg en kontokode og – når det er muligt – en konto eller et gruppenummer til den valgte posteringsprofil. Under bogføringsprocessen finder programmet den posteringsprofil, der passer bedst til hver enkelt post, ved at søge efter den mest specifikke kombination af kontokode, kontonummer eller gruppe og nummer i følgende prioritetsrækkefølge:
+## <a name="creating-a-posting-profile"></a><span data-ttu-id="1ea0f-113">Oprette en posteringsprofil</span><span class="sxs-lookup"><span data-stu-id="1ea0f-113">Creating a posting profile</span></span>
+<span data-ttu-id="1ea0f-114">Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-114">Specify the ledger accounts that are used in the posting of transactions that use the selected posting profile.</span></span> <span data-ttu-id="1ea0f-115">Vælg en kontokode og – når det er muligt – en konto eller et gruppenummer til den valgte posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-115">Select an account code and, whenever possible, an account or group number for the selected posting profile.</span></span> <span data-ttu-id="1ea0f-116">Under bogføringsprocessen finder programmet den posteringsprofil, der passer bedst til hver enkelt post, ved at søge efter den mest specifikke kombination af kontokode, kontonummer eller gruppe og nummer i følgende prioritetsrækkefølge:</span><span class="sxs-lookup"><span data-stu-id="1ea0f-116">In the posting process, the most appropriate posting profile for each transaction is located by searching for the most specific account code, account number, or group and number combination in the following priority:</span></span>
 
-| Feltværdien **Kontokode** | Feltværdien **Konto/gruppenummer**            | Søgeprioritet |
+| <span data-ttu-id="1ea0f-117">Feltværdien **Kontokode**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-117">**Account code** field value</span></span> | <span data-ttu-id="1ea0f-118">Feltværdien **Konto/gruppenummer**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-118">**Account/Group number** field value</span></span>            | <span data-ttu-id="1ea0f-119">Søgeprioritet</span><span class="sxs-lookup"><span data-stu-id="1ea0f-119">Search priority</span></span> |
 |------------------------------|-------------------------------------------------|-----------------|
-| **Tabel**                    | Bestemt debitorkonto                       | 1               |
-| **Gruppe**                    | Debitorgruppe, som debitor er tilknyttet | 2               |
-| **Alle**                      | Tom                                           | 3               |
+| <span data-ttu-id="1ea0f-120">**Tabel**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-120">**Table**</span></span>                    | <span data-ttu-id="1ea0f-121">Bestemt debitorkonto</span><span class="sxs-lookup"><span data-stu-id="1ea0f-121">Specific customer account</span></span>                       | <span data-ttu-id="1ea0f-122">1</span><span class="sxs-lookup"><span data-stu-id="1ea0f-122">1</span></span>               |
+| <span data-ttu-id="1ea0f-123">**Gruppe**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-123">**Group**</span></span>                    | <span data-ttu-id="1ea0f-124">Debitorgruppe, som debitor er tilknyttet</span><span class="sxs-lookup"><span data-stu-id="1ea0f-124">Customer group that is assigned to the customer</span></span> | <span data-ttu-id="1ea0f-125">2</span><span class="sxs-lookup"><span data-stu-id="1ea0f-125">2</span></span>               |
+| <span data-ttu-id="1ea0f-126">**Alle**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-126">**All**</span></span>                      | <span data-ttu-id="1ea0f-127">Tom</span><span class="sxs-lookup"><span data-stu-id="1ea0f-127">Blank</span></span>                                           | <span data-ttu-id="1ea0f-128">3</span><span class="sxs-lookup"><span data-stu-id="1ea0f-128">3</span></span>               |
 
-Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med Alle i feltet Kontokode. Angiv følgende værdier for at definere en posteringsprofil:
+<span data-ttu-id="1ea0f-129">Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med Alle i feltet Kontokode.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-129">If you want all customer transactions to have the same posting profile, set up only one posting profile with All in the Account code field.</span></span> <span data-ttu-id="1ea0f-130">Angiv følgende værdier for at definere en posteringsprofil:</span><span class="sxs-lookup"><span data-stu-id="1ea0f-130">Specify the following values to set up your posting profile:</span></span>
 
 <table>
 <colgroup>
@@ -60,90 +60,90 @@ Hvis alle debitorposteringer skal have samme posteringsprofil, skal du kun defin
 </colgroup>
 <thead>
 <tr class="header">
-<th>Felt</th>
-<th>Beskrivelse</th>
+<th><span data-ttu-id="1ea0f-131">Felt</span><span class="sxs-lookup"><span data-stu-id="1ea0f-131">Field</span></span></th>
+<th><span data-ttu-id="1ea0f-132">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="1ea0f-132">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Posteringsprofil</strong></td>
-<td>Angiv en kode for posteringsprofilen. Eksempel: Hvis du vil have én konto for debitorsaldi i indenlandsk valuta og én konto for debitorsaldi i udenlandsk valuta, skal du oprette to posteringsprofiler. Du kan kalde den ene konto Indland og den anden Udland.</td>
+<td><span data-ttu-id="1ea0f-133"><strong>Posteringsprofil</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-133"><strong>Posting profile</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-134">Angiv en kode for posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-134">Enter a code for the posting profile.</span></span> <span data-ttu-id="1ea0f-135">Eksempel: Hvis du vil have én konto for debitorsaldi i indenlandsk valuta og én konto for debitorsaldi i udenlandsk valuta, skal du oprette to posteringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-135">For example, you could create two posting profiles to obtain one account for customer balances in the national currency and another for customer balances in a foreign currency.</span></span> <span data-ttu-id="1ea0f-136">Du kan kalde den ene konto Indland og den anden Udland.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-136">You could call one account National and the other Foreign.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Beskrivelse</strong></td>
-<td>Angiv en beskrivelse af posteringsprofilen. Dette bruges kun til at identificere posteringsprofilen bedre, når du ser den på denne side.</td>
+<td><span data-ttu-id="1ea0f-137"><strong>Beskrivelse</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-137"><strong>Description</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-138">Angiv en beskrivelse af posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-138">Enter a description of the posting profile.</span></span> <span data-ttu-id="1ea0f-139">Dette bruges kun til at identificere posteringsprofilen bedre, når du ser den på denne side.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-139">This is only used to better identify the posting profile when you view it in this page.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Kontokode</strong></td>
-<td>Angiv, om posteringsprofilen skal gælde for en bestemt debitor, en gruppe af debitorer eller alle debitorer:
+<td><span data-ttu-id="1ea0f-140"><strong>Kontokode</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-140"><strong>Account code</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-141">Angiv, om posteringsprofilen skal gælde for en bestemt debitor, en gruppe af debitorer eller alle debitorer:</span><span class="sxs-lookup"><span data-stu-id="1ea0f-141">Specify whether the posting profile applies to a single customer, a group of customers, or all customers:</span></span>
 <ul>
-<li><strong>Tabel</strong> – Posteringsprofilen anvendes på en enkelt debitor. Vælg debitorkontoen i feltet Konto/gruppenummer.</li>
-<li><strong>Gruppe</strong> – Posteringsprofilen anvendes på en debitorgruppe. Vælg debitorgruppen i feltet Konto/gruppenummer.</li>
-<li><strong>Alle</strong> – Posteringsprofilen anvendes på alle debitorer. Lad feltet Konto/gruppenummer være tomt.</li>
+<li><span data-ttu-id="1ea0f-142"><strong>Tabel</strong> – Posteringsprofilen anvendes på en enkelt debitor.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-142"><strong>Table</strong> – The posting profile applies to a single customer.</span></span> <span data-ttu-id="1ea0f-143">Vælg debitorkontoen i feltet Konto/gruppenummer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-143">Select the customer account in the Account/Group number field.</span></span></li>
+<li><span data-ttu-id="1ea0f-144"><strong>Gruppe</strong> – Posteringsprofilen anvendes på en debitorgruppe.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-144"><strong>Group</strong> – The posting profile applies to a customer group.</span></span> <span data-ttu-id="1ea0f-145">Vælg debitorgruppen i feltet Konto/gruppenummer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-145">Select the customer group in the Account/Group number field.</span></span></li>
+<li><span data-ttu-id="1ea0f-146"><strong>Alle</strong> – Posteringsprofilen anvendes på alle debitorer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-146"><strong>All</strong> – The posting profile applies to all customers.</span></span> <span data-ttu-id="1ea0f-147">Lad feltet Konto/gruppenummer være tomt.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-147">Leave the Account/Group number field blank.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Konto/gruppenummer</strong></td>
-<td>Hvis du vælger Tabel i feltet Kontokode, skal du vælge kontonummeret på den debitor, der er knyttet til posteringsprofilen. Hvis du vælger Gruppe, skal du vælge debitorgruppen. Hvis du vælger Alle, skal feltet stå tomt.</td>
+<td><span data-ttu-id="1ea0f-148"><strong>Konto/gruppenummer</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-148"><strong>Account/Group number</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-149">Hvis du vælger Tabel i feltet Kontokode, skal du vælge kontonummeret på den debitor, der er knyttet til posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-149">If Table is selected in the Account code field, select the account number of the customer who is associated with the posting profile.</span></span> <span data-ttu-id="1ea0f-150">Hvis du vælger Gruppe, skal du vælge debitorgruppen.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-150">If Group is selected, select the customer group.</span></span> <span data-ttu-id="1ea0f-151">Hvis du vælger Alle, skal feltet stå tomt.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-151">If All is selected, leave this field blank.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Samlekonto</strong></td>
-<td>Vælg den finanskonto, der skal bruges som samlekonto for de debitorer, som er tilknyttet posteringsprofilen.</td>
+<td><span data-ttu-id="1ea0f-152"><strong>Samlekonto</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-152"><strong>Summary account</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-153">Vælg den finanskonto, der skal bruges som samlekonto for de debitorer, som er tilknyttet posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-153">Select the ledger account that will be used as the customer summary account for the customers who are associated with the posting profile.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Afregn konto</strong></td>
-<td>Vælg den likviditetskonto i Finans, der bruges til likviditetsbudgetter. Dette felt vises kun, hvis likviditetsbudgetter er aktiveret.</td>
+<td><span data-ttu-id="1ea0f-154"><strong>Afregn konto</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-154"><strong>Settle account</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-155">Vælg den likviditetskonto i Finans, der bruges til likviditetsbudgetter.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-155">Select the liquidity ledger account that is used for cash flow forecasts.</span></span> <span data-ttu-id="1ea0f-156">Dette felt vises kun, hvis likviditetsbudgetter er aktiveret.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-156">This field will only appear if cash flow forecasts are enabled.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Momsforudbetalinger</strong></td>
-<td>Angiv kontonummeret for momsbetaling, der er modtaget forud.
+<td><span data-ttu-id="1ea0f-157"><strong>Momsforudbetalinger</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-157"><strong>Sales tax prepayments</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-158">Angiv kontonummeret for momsbetaling, der er modtaget forud.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-158">Select the account for sales tax for payments that are received in advance.</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Bemærk!" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Bemærk!</strong></th>
+<th><span data-ttu-id="1ea0f-159"><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Bemærk!</span><span class="sxs-lookup"><span data-stu-id="1ea0f-159"><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Note</span></span>" alt="Note" id="alert_note" class="cl_IC101471" /><span data-ttu-id="1ea0f-160"><strong>Bemærk!</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-160"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Brug siden Debitorparametre til at angive den posteringsprofil, der skal bruges, når en betaling er markeret som forudbetaling.</td>
+<td><span data-ttu-id="1ea0f-161">Brug siden Debitorparametre til at angive den posteringsprofil, der skal bruges, når en betaling er markeret som forudbetaling.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-161">Use the Accounts receivable parameters page to specify the posting profile to use when a payment is marked as a prepayment.</span></span></td>
 </tr>
 </tbody>
 </table>
 </div></td>
 </tr>
 <tr class="even">
-<td><strong>Passiver for rabatkonto</strong></td>
-<td>Vælg finanskontoen til rabatpassiver.</td>
+<td><span data-ttu-id="1ea0f-162"><strong>Passiver for rabatkonto</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-162"><strong>Liabilities for discount account</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-163">Vælg finanskontoen til rabatpassiver.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-163">Select the ledger account for liabilities of discount.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Rykkerforløb</strong></td>
-<td>Vælg identifikationen for den rykkerserie, der skal bruges i forbindelse med debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
+<td><span data-ttu-id="1ea0f-164"><strong>Rykkerforløb</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-164"><strong>Collection letter sequence</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-165">Vælg identifikationen for den rykkerserie, der skal bruges i forbindelse med debitorer, som har den aktuelle posteringsprofil tilknyttet.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-165">Select the identifier of the collection letter sequence to use for customers to whom the posting profile is assigned.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Rentekode</strong></td>
-<td>Vælg den rentekode, der skal bruges ved renteberegning for debitorer, som har den aktuelle posteringsprofil tilknyttet.</td>
+<td><span data-ttu-id="1ea0f-166"><strong>Rentekode</strong></span><span class="sxs-lookup"><span data-stu-id="1ea0f-166"><strong>Interest code</strong></span></span></td>
+<td><span data-ttu-id="1ea0f-167">Vælg den rentekode, der skal bruges ved renteberegning for debitorer, som har den aktuelle posteringsprofil tilknyttet.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-167">Select the interest code to use for the calculation of interest for customers to whom the posting profile is assigned.</span></span></td>
 </tr>
 </tbody>
 </table>
 
 ### 
 
-### <a name="table-restrictions"></a>**Tabelbegrænsninger**
+### <a name="table-restrictions"></a><span data-ttu-id="1ea0f-168">**Tabelbegrænsninger**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-168">**Table restrictions**</span></span>
 
-For de posteringer, der har den valgte posteringsprofil, skal du angive, om posterne skal udlignes automatisk, om der skal beregnes rente og udsendes rykkere. Du kan også vælge den konto, der skal bruges, når poster med den valgte posteringsprofil lukkes.
+<span data-ttu-id="1ea0f-169">For de posteringer, der har den valgte posteringsprofil, skal du angive, om posterne skal udlignes automatisk, om der skal beregnes rente og udsendes rykkere.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-169">For transactions that have the selected posting profile, specify whether transactions will be settled automatically, interest will be calculated, and collection letters will be issued.</span></span> <span data-ttu-id="1ea0f-170">Du kan også vælge den konto, der skal bruges, når poster med den valgte posteringsprofil lukkes.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-170">You can also select the account that is used when transactions that have the selected posting profile are closed.</span></span>
 
-Angiv følgende værdier for at definere en posteringsprofil:
+<span data-ttu-id="1ea0f-171">Angiv følgende værdier for at definere en posteringsprofil:</span><span class="sxs-lookup"><span data-stu-id="1ea0f-171">Specify the following values to set up your posting profile:</span></span>
 
-| Felt                 | Beskrivelse                                                                                                                                                                                                                                        |
+| <span data-ttu-id="1ea0f-172">Felt</span><span class="sxs-lookup"><span data-stu-id="1ea0f-172">Field</span></span>                 | <span data-ttu-id="1ea0f-173">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="1ea0f-173">Description</span></span>                                                                                                                                                                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Udligning**        | Vælg denne, hvis der skal kunne foretages automatisk udligning af poster med denne posteringsprofil. Hvis denne indstilling ikke er markeret, skal du manuelt udligne posteringer ved hjælp af siden Udligning af åbne posteringer eller siden Angiv debitorbetalinger. |
-| **Renter**          | Vælg denne, hvis der skal beregnes rente på udestående saldi for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke beregnet rente for disse debitorer.                                           |
-| **Rykker** | Vælg denne, hvis der skal genereres rykkere for debitorkonti med denne profil. Hvis denne ikke markeres, bliver der ikke genereret rykkere for disse debitorer.                                                 |
-| **Luk**             | Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes. En post anses for lukket, når der er fuldt ud udlignet.                                                                           |
+| <span data-ttu-id="1ea0f-174">**Udligning**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-174">**Settlement**</span></span>        | <span data-ttu-id="1ea0f-175">Vælg denne, hvis der skal kunne foretages automatisk udligning af poster med denne posteringsprofil.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-175">Select this toggle to enable automatic settlement of transactions that have this posting profile.</span></span> <span data-ttu-id="1ea0f-176">Hvis denne indstilling ikke er markeret, skal du manuelt udligne posteringer ved hjælp af siden Udligning af åbne posteringer eller siden Angiv debitorbetalinger.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-176">If this toggle is cleared, you must manually settle transactions by using the Settle open transactions page or the Enter customer payments page.</span></span> |
+| <span data-ttu-id="1ea0f-177">**Renter**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-177">**Interest**</span></span>          | <span data-ttu-id="1ea0f-178">Vælg denne, hvis der skal beregnes rente på udestående saldi for debitorkonti med denne profil.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-178">Select this toggle if interest should be calculated on outstanding balances for customer accounts that use this profile.</span></span> <span data-ttu-id="1ea0f-179">Hvis denne ikke markeres, bliver der ikke beregnet rente for disse debitorer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-179">If this toggle is cleared, interest will not be calculated for these customers.</span></span>                                           |
+| <span data-ttu-id="1ea0f-180">**Rykker**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-180">**Collection letter**</span></span> | <span data-ttu-id="1ea0f-181">Vælg denne, hvis der skal genereres rykkere for debitorkonti med denne profil.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-181">Select this toggle if collection letters should be generated for customer accounts that use this profile.</span></span> <span data-ttu-id="1ea0f-182">Hvis denne ikke markeres, bliver der ikke genereret rykkere for disse debitorer.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-182">If this toggle is cleared, collection letters will not be generated for these customers.</span></span>                                                 |
+| <span data-ttu-id="1ea0f-183">**Luk**</span><span class="sxs-lookup"><span data-stu-id="1ea0f-183">**Close**</span></span>             | <span data-ttu-id="1ea0f-184">Vælg den posteringsprofil, der skal skiftes til, når poster med denne posteringsprofil lukkes.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-184">Select a posting profile to change to when transactions that have this posting profile are closed.</span></span> <span data-ttu-id="1ea0f-185">En post anses for lukket, når der er fuldt ud udlignet.</span><span class="sxs-lookup"><span data-stu-id="1ea0f-185">A transaction is regarded as closed when it has been settled in full.</span></span>                                                                           |
 
 
 
-Du kan finde flere oplysninger i [Oversigt over debitorbetalinger](../cash-bank-management/tasks/customer-payment-overview.md).
+<span data-ttu-id="1ea0f-186">Du kan finde flere oplysninger i [Oversigt over debitorbetalinger](../cash-bank-management/tasks/customer-payment-overview.md).</span><span class="sxs-lookup"><span data-stu-id="1ea0f-186">For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md).</span></span>
 
 

@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurere importprocessen for avanceret bankafstemning
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="a426f-104">Konfigurere importprocessen for avanceret bankafstemning</span><span class="sxs-lookup"><span data-stu-id="a426f-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
+<span data-ttu-id="a426f-105">Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="a426f-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="a426f-106">I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken.</span><span class="sxs-lookup"><span data-stu-id="a426f-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Finance and Operations understøtter tre standardformater for bankkontoudtog: ISO20022, MT940 og BAI2.
+<span data-ttu-id="a426f-107">Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog.</span><span class="sxs-lookup"><span data-stu-id="a426f-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="a426f-108">Finance and Operations understøtter tre standardformater for bankkontoudtog: ISO20022, MT940 og BAI2.</span><span class="sxs-lookup"><span data-stu-id="a426f-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Eksempelfiler
-For alle tre formater skal du have filer, der oversætter det elektroniske bankkontoudtog fra det oprindelige format til et format, der kan bruges af Finance and Operations. Du kan finde de nødvendige ressourcefiler under noden **Ressourcer** i Application Explorer i Microsoft Visual Studio. Når du har fundet filerne, skal du kopiere dem til en enkelt kendt placering, så du nemmere kan overføre dem under konfigurationsprocessen.
+## <a name="sample-files"></a><span data-ttu-id="a426f-109">Eksempelfiler</span><span class="sxs-lookup"><span data-stu-id="a426f-109">Sample files</span></span>
+<span data-ttu-id="a426f-110">For alle tre formater skal du have filer, der oversætter det elektroniske bankkontoudtog fra det oprindelige format til et format, der kan bruges af Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="a426f-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="a426f-111">Du kan finde de nødvendige ressourcefiler under noden **Ressourcer** i Application Explorer i Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="a426f-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="a426f-112">Når du har fundet filerne, skal du kopiere dem til en enkelt kendt placering, så du nemmere kan overføre dem under konfigurationsprocessen.</span><span class="sxs-lookup"><span data-stu-id="a426f-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Ressourcenavn                                           | Filnavn                            |
+| <span data-ttu-id="a426f-113">Ressourcenavn</span><span class="sxs-lookup"><span data-stu-id="a426f-113">Resource name</span></span>                                           | <span data-ttu-id="a426f-114">Filnavn</span><span class="sxs-lookup"><span data-stu-id="a426f-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="a426f-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="a426f-116">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="a426f-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="a426f-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="a426f-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="a426f-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="a426f-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="a426f-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="a426f-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="a426f-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="a426f-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="a426f-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="a426f-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="a426f-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="a426f-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="a426f-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="a426f-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Eksempler på bankkontoudtogsformater og tekniske layout
-Nedenfor vises eksempler på avancerede definitioner af teknisk layout for bankafstemnings importfil og tre relaterede eksempelfiler på bankkontoudtog: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="a426f-129">Eksempler på bankkontoudtogsformater og tekniske layout</span><span class="sxs-lookup"><span data-stu-id="a426f-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="a426f-130">Nedenfor vises eksempler på avancerede definitioner af teknisk layout for bankafstemnings importfil og tre relaterede eksempelfiler på bankkontoudtog: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="a426f-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Teknisk layoutdefinition                             | Eksempelfil med bankkontoudtog          |
+| <span data-ttu-id="a426f-131">Teknisk layoutdefinition</span><span class="sxs-lookup"><span data-stu-id="a426f-131">Technical layout definition</span></span>                             | <span data-ttu-id="a426f-132">Eksempelfil med bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="a426f-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="a426f-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="a426f-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="a426f-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="a426f-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="a426f-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="a426f-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="a426f-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="a426f-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="a426f-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="a426f-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="a426f-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="a426f-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Konfigurere importen af ISO20022-bankkontoudtog
-Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for ISO20022-bankkontoudtog ved hjælp af dataenhedsstrukturen.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="a426f-139">Konfigurere importen af ISO20022-bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="a426f-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="a426f-140">Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for ISO20022-bankkontoudtog ved hjælp af dataenhedsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="a426f-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Gå til **Arbejdsområder** &gt; **Datastyring**.
-2.  Klik på **Importer**.
-3.  Angiv et navn for formatet, f.eks. **ISO20022**.
-4.  Indstil feltet **Kildedataformat** til **XML-element**.
-5.  Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.
-6.  Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.
-7.  Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.
-8.  Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder. På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.
-9.  Klik på **Ny** under fanen **Transformationer**.
-10. For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **ISO20022XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Klik på **Ny**.
-12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
-13. Klik på **Anvend transformeringer**.
+1.  <span data-ttu-id="a426f-141">Gå til **Arbejdsområder** &gt; **Datastyring**.</span><span class="sxs-lookup"><span data-stu-id="a426f-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="a426f-142">Klik på **Importer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="a426f-143">Angiv et navn for formatet, f.eks. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="a426f-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="a426f-144">Indstil feltet **Kildedataformat** til **XML-element**.</span><span class="sxs-lookup"><span data-stu-id="a426f-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="a426f-145">Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.</span><span class="sxs-lookup"><span data-stu-id="a426f-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="a426f-146">Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="a426f-147">Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.</span><span class="sxs-lookup"><span data-stu-id="a426f-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="a426f-148">Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder.</span><span class="sxs-lookup"><span data-stu-id="a426f-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="a426f-149">På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="a426f-150">Klik på **Ny** under fanen **Transformationer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="a426f-151">For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **ISO20022XML-to-Reconciliation.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="a426f-152">**Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="a426f-153">Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat.</span><span class="sxs-lookup"><span data-stu-id="a426f-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="a426f-154">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-154">Click **New**.</span></span>
+12. <span data-ttu-id="a426f-155">For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="a426f-156">Klik på **Anvend transformeringer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-156">Click **Apply transforms**.</span></span>
 
-Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for ISO20022-bankkontoudtog.
+<span data-ttu-id="a426f-157">Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for ISO20022-bankkontoudtog.</span><span class="sxs-lookup"><span data-stu-id="a426f-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.
-2.  Klik på **Ny**.
-3.  Angiv et kontoudtogsformat, f.eks **ISO20022**.
-4.  Angiv et navn til formatet.
-5.  Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **ISO20022**.
-6.  Marker afkrydsningsfeltet **XML-fil**.
+1.  <span data-ttu-id="a426f-158">Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.</span><span class="sxs-lookup"><span data-stu-id="a426f-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="a426f-159">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-159">Click **New**.</span></span>
+3.  <span data-ttu-id="a426f-160">Angiv et kontoudtogsformat, f.eks **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="a426f-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="a426f-161">Angiv et navn til formatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="a426f-162">Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="a426f-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="a426f-163">Marker afkrydsningsfeltet **XML-fil**.</span><span class="sxs-lookup"><span data-stu-id="a426f-163">Select the **XML file** check box.</span></span>
 
-Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.
+<span data-ttu-id="a426f-164">Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.</span><span class="sxs-lookup"><span data-stu-id="a426f-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.
-2.  Vælg bankkontoen, og åbn for at få vist detaljerne.
-3.  På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.
-4.  Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **ISO20022**.
+1.  <span data-ttu-id="a426f-165">Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.</span><span class="sxs-lookup"><span data-stu-id="a426f-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="a426f-166">Vælg bankkontoen, og åbn for at få vist detaljerne.</span><span class="sxs-lookup"><span data-stu-id="a426f-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="a426f-167">På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="a426f-168">Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="a426f-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Konfigurere importen af MT940-bankkontoudtog
-Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for MT940-bankkontoudtog ved hjælp af dataenhedsstrukturen.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="a426f-169">Konfigurere importen af MT940-bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="a426f-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="a426f-170">Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for MT940-bankkontoudtog ved hjælp af dataenhedsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="a426f-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Gå til **Arbejdsområder** &gt; **Datastyring**.
-2.  Klik på **Importer**.
-3.  Angiv et navn for formatet, f.eks. **MT940**.
-4.  Indstil feltet **Kildedataformat** til **XML-element**.
-5.  Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.
-6.  Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.
-7.  Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.
-8.  Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder. På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.
-9.  Klik på **Ny** under fanen **Transformationer**.
-10. For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **MT940TXT-to-MT940XML.xslt**, du gemte tidligere.
-11. Klik på **Ny**.
-12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **MT940XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Klik på **Ny**.
-14. For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
-15. Klik på **Anvend transformeringer**.
+1.  <span data-ttu-id="a426f-171">Gå til **Arbejdsområder** &gt; **Datastyring**.</span><span class="sxs-lookup"><span data-stu-id="a426f-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="a426f-172">Klik på **Importer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="a426f-173">Angiv et navn for formatet, f.eks. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="a426f-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="a426f-174">Indstil feltet **Kildedataformat** til **XML-element**.</span><span class="sxs-lookup"><span data-stu-id="a426f-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="a426f-175">Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.</span><span class="sxs-lookup"><span data-stu-id="a426f-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="a426f-176">Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="a426f-177">Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.</span><span class="sxs-lookup"><span data-stu-id="a426f-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="a426f-178">Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder.</span><span class="sxs-lookup"><span data-stu-id="a426f-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="a426f-179">På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="a426f-180">Klik på **Ny** under fanen **Transformationer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="a426f-181">For løbenummer 1 skal du klikke på **Overfør fil** og vælge filen **MT940TXT-to-MT940XML.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="a426f-182">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-182">Click **New**.</span></span>
+12. <span data-ttu-id="a426f-183">For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **MT940XML-to-Reconciliation.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="a426f-184">**Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="a426f-185">Da bankerne ofte afviger fra dette format, skal du muligvis opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat.</span><span class="sxs-lookup"><span data-stu-id="a426f-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="a426f-186">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-186">Click **New**.</span></span>
+14. <span data-ttu-id="a426f-187">For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="a426f-188">Klik på **Anvend transformeringer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-188">Click **Apply transforms**.</span></span>
 
-Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for MT940-bankkontoudtog.
+<span data-ttu-id="a426f-189">Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for MT940-bankkontoudtog.</span><span class="sxs-lookup"><span data-stu-id="a426f-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.
-2.  Klik på **Ny**.
-3.  Angiv et kontoudtogsformat, f.eks **MT940**.
-4.  Angiv et navn til formatet.
-5.  Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **MT940**.
-6.  Indstil feltet **Filtype** til **txt**.
+1.  <span data-ttu-id="a426f-190">Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.</span><span class="sxs-lookup"><span data-stu-id="a426f-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="a426f-191">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-191">Click **New**.</span></span>
+3.  <span data-ttu-id="a426f-192">Angiv et kontoudtogsformat, f.eks **MT940**.</span><span class="sxs-lookup"><span data-stu-id="a426f-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="a426f-193">Angiv et navn til formatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="a426f-194">Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="a426f-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="a426f-195">Indstil feltet **Filtype** til **txt**.</span><span class="sxs-lookup"><span data-stu-id="a426f-195">Set the **File type** field to **txt**.</span></span>
 
-Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.
+<span data-ttu-id="a426f-196">Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.</span><span class="sxs-lookup"><span data-stu-id="a426f-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.
-2.  Vælg bankkontoen, og åbn for at få vist detaljerne.
-3.  På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.
-4.  Når du bliver bedt om at bekræfte dit valg og aktivere avanceret bankafstemning, skal du klikke på **OK**.
-5.  Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **MT940**.
+1.  <span data-ttu-id="a426f-197">Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.</span><span class="sxs-lookup"><span data-stu-id="a426f-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="a426f-198">Vælg bankkontoen, og åbn for at få vist detaljerne.</span><span class="sxs-lookup"><span data-stu-id="a426f-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="a426f-199">På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="a426f-200">Når du bliver bedt om at bekræfte dit valg og aktivere avanceret bankafstemning, skal du klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="a426f-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="a426f-201">Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="a426f-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Konfigurere importen af BAI2-bankkontoudtog
-Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for BAI2-bankkontoudtog ved hjælp af dataenhedsstrukturen.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="a426f-202">Konfigurere importen af BAI2-bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="a426f-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="a426f-203">Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for BAI2-bankkontoudtog ved hjælp af dataenhedsstrukturen.</span><span class="sxs-lookup"><span data-stu-id="a426f-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Gå til **Arbejdsområder** &gt; **Datastyring**.
-2.  Klik på **Importer**.
-3.  Angiv et navn for formatet, f.eks. **BAI2**.
-4.  Indstil feltet **Kildedataformat** til **XML-element**.
-5.  Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.
-6.  Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.
-7.  Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.
-8.  Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder. På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.
-9.  Klik på **Ny** under fanen **Transformationer**.
-10. For løbenummer skal du klikke på **Overfør fil** og vælge filen **BAI2CSV-to-BAI2XML.xslt**, du gemte tidligere.
-11. Klik på **Ny**.
-12. For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BAI2XML-to-Reconciliation.xslt**, du gemte tidligere. **Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet. Da bankerne ofte afviger fra dette format, og du muligvis skal opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Klik på **Ny**.
-14. For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.
-15. Klik på **Anvend transformeringer**.
+1.  <span data-ttu-id="a426f-204">Gå til **Arbejdsområder** &gt; **Datastyring**.</span><span class="sxs-lookup"><span data-stu-id="a426f-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="a426f-205">Klik på **Importer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="a426f-206">Angiv et navn for formatet, f.eks. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="a426f-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="a426f-207">Indstil feltet **Kildedataformat** til **XML-element**.</span><span class="sxs-lookup"><span data-stu-id="a426f-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="a426f-208">Indstil feltet **Enhedsnavn** til **Bankkontoudtog**.</span><span class="sxs-lookup"><span data-stu-id="a426f-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="a426f-209">Hvis du vil overføre importfiler, skal du klikke på **Overfør**, og derefter søge efter og vælge filen **SampleBankCompositeEntity.xml**, som du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="a426f-210">Når enheden Bankkontoudtog er blevet overført, og tilknytningen er fuldført, skal du klikke på handlingen **Vis tilknytning** for enheden.</span><span class="sxs-lookup"><span data-stu-id="a426f-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="a426f-211">Enheden Bankkontoudtog er en sammensat enhed, der består af fire separate enheder.</span><span class="sxs-lookup"><span data-stu-id="a426f-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="a426f-212">På listen skal du vælge **BankStatementDocumentEntity**, og derefter klikke på handlingen **Vis tilknytning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="a426f-213">Klik på **Ny** under fanen **Transformationer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="a426f-214">For løbenummer skal du klikke på **Overfør fil** og vælge filen **BAI2CSV-to-BAI2XML.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="a426f-215">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-215">Click **New**.</span></span>
+12. <span data-ttu-id="a426f-216">For løbenummer 2 skal du klikke på **Overfør fil** og vælge filen **BAI2XML-to-Reconciliation.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="a426f-217">**Bemærk:** Finance and Operations-transformationsfiler er udviklet til standardformatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="a426f-218">Da bankerne ofte afviger fra dette format, og du muligvis skal opdatere transformationsfilen, som skal knyttes til dit bankkontoudtogsformat.</span><span class="sxs-lookup"><span data-stu-id="a426f-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="a426f-219">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-219">Click **New**.</span></span>
+14. <span data-ttu-id="a426f-220">For løbenummer 3 skal du klikke på **Overfør fil** og vælge filen **BankReconciliation-to-Composite.xslt**, du gemte tidligere.</span><span class="sxs-lookup"><span data-stu-id="a426f-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="a426f-221">Klik på **Anvend transformeringer**.</span><span class="sxs-lookup"><span data-stu-id="a426f-221">Click **Apply transforms**.</span></span>
 
-Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for BAI2-bankkontoudtog.
+<span data-ttu-id="a426f-222">Når formatbehandlingsgruppen er oprettet, er næste trin at definere regler for bankkontoudtogsformatet for BAI2-bankkontoudtog.</span><span class="sxs-lookup"><span data-stu-id="a426f-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.
-2.  Klik på **Ny**.
-3.  Angiv et kontoudtogsformat, f.eks **BAI2**.
-4.  Angiv et navn til formatet.
-5.  Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **BAI2**.
-6.  Indstil feltet **Filtype** til **txt**.
+1.  <span data-ttu-id="a426f-223">Gå til **Kontant- og bankstyring** &gt; **Opsætning** &gt; **Konfiguration af avanceret bankafstemning** &gt; **Bankkontoudtogsformat**.</span><span class="sxs-lookup"><span data-stu-id="a426f-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="a426f-224">Klik på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a426f-224">Click **New**.</span></span>
+3.  <span data-ttu-id="a426f-225">Angiv et kontoudtogsformat, f.eks **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="a426f-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="a426f-226">Angiv et navn til formatet.</span><span class="sxs-lookup"><span data-stu-id="a426f-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="a426f-227">Indstil feltet **Behandlingsgruppe** til den gruppe, du definerede tidligere, f.eks. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="a426f-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="a426f-228">Indstil feltet **Filtype** til **txt**.</span><span class="sxs-lookup"><span data-stu-id="a426f-228">Set the **File type** field to **txt**.</span></span>
 
-Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.
+<span data-ttu-id="a426f-229">Det sidste trin er at aktivere Avanceret bankafstemning og angive kontoudtogsformatet på bankkontoen.</span><span class="sxs-lookup"><span data-stu-id="a426f-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.
-2.  Vælg bankkontoen, og åbn for at få vist detaljerne.
-3.  På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.
-4.  Når du bliver bedt om at bekræfte dit valg og aktivere avanceret bankafstemning, skal du klikke på **OK**.
-5.  Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **BAI2**.
+1.  <span data-ttu-id="a426f-230">Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.</span><span class="sxs-lookup"><span data-stu-id="a426f-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="a426f-231">Vælg bankkontoen, og åbn for at få vist detaljerne.</span><span class="sxs-lookup"><span data-stu-id="a426f-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="a426f-232">På fanen **Afstemning** skal du vælge indstillingen **Ja** for **Avanceret bankafstemning**.</span><span class="sxs-lookup"><span data-stu-id="a426f-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="a426f-233">Når du bliver bedt om at bekræfte dit valg og aktivere avanceret bankafstemning, skal du klikke på **OK**.</span><span class="sxs-lookup"><span data-stu-id="a426f-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="a426f-234">Indstil feltet **Kontoudtogsformat** til det format, du oprettede tidligere, f.eks. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="a426f-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Teste import af bankkontoudtog
-Det sidste trin er at kontrollere, at du kan importere dine kontoudtog.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="a426f-235">Teste import af bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="a426f-235">Test the bank statement import</span></span>
+<span data-ttu-id="a426f-236">Det sidste trin er at kontrollere, at du kan importere dine kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="a426f-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.
-2.  Vælg den bankkonto, som funktionen Avanceret bankafstemning er aktiveret for.
-3.  På fanen **Afstem** skal du klikke på **Bankkontoudtog**.
-4.  På siden **Bankkontoudtog** skal du klikke på **Importér kontoudtog**.
-5.  Indstil feltet **Bankkonto** til det valgte bankkonto. Feltet **Kontoudtogsformat** indstilles automatisk baseret på indstillingen på bankkontoen.
-6.  Klik på **Gennemse**, og vælg din elektroniske bankkontofil.
-7.  Klik på **Overfør**.
-8.  Klik på **OK**.
+1.  <span data-ttu-id="a426f-237">Gå til **Kontant- og bankstyring** &gt; **Bankkonti**.</span><span class="sxs-lookup"><span data-stu-id="a426f-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="a426f-238">Vælg den bankkonto, som funktionen Avanceret bankafstemning er aktiveret for.</span><span class="sxs-lookup"><span data-stu-id="a426f-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="a426f-239">På fanen **Afstem** skal du klikke på **Bankkontoudtog**.</span><span class="sxs-lookup"><span data-stu-id="a426f-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="a426f-240">På siden **Bankkontoudtog** skal du klikke på **Importér kontoudtog**.</span><span class="sxs-lookup"><span data-stu-id="a426f-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="a426f-241">Indstil feltet **Bankkonto** til det valgte bankkonto.</span><span class="sxs-lookup"><span data-stu-id="a426f-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="a426f-242">Feltet **Kontoudtogsformat** indstilles automatisk baseret på indstillingen på bankkontoen.</span><span class="sxs-lookup"><span data-stu-id="a426f-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="a426f-243">Klik på **Gennemse**, og vælg din elektroniske bankkontofil.</span><span class="sxs-lookup"><span data-stu-id="a426f-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="a426f-244">Klik på **Overfør**.</span><span class="sxs-lookup"><span data-stu-id="a426f-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="a426f-245">Klik på **OK**.</span><span class="sxs-lookup"><span data-stu-id="a426f-245">Click **OK**.</span></span>
 
-Hvis importen gennemføres, modtager du en meddelelse om, at kontoudtoget blev importeret. Hvis importen ikke lykkes, skal du finde jobbet i arbejdsområdet **Datastyring** i **Jobhistorik**. Klik på **Detaljer om udførelse** for jobbet for at åbne siden **Udførelsesoversigt**, og klik derefter på **Vis udførelseslog** for at få vist importfejl.
+<span data-ttu-id="a426f-246">Hvis importen gennemføres, modtager du en meddelelse om, at kontoudtoget blev importeret.</span><span class="sxs-lookup"><span data-stu-id="a426f-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="a426f-247">Hvis importen ikke lykkes, skal du finde jobbet i arbejdsområdet **Datastyring** i **Jobhistorik**.</span><span class="sxs-lookup"><span data-stu-id="a426f-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="a426f-248">Klik på **Detaljer om udførelse** for jobbet for at åbne siden **Udførelsesoversigt**, og klik derefter på **Vis udførelseslog** for at få vist importfejl.</span><span class="sxs-lookup"><span data-stu-id="a426f-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

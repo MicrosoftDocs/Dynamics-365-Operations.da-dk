@@ -19,32 +19,32 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: d6c04b8a6a4208e187786be158ceb3c84e1bb408
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 679bafc81e7c3bd328dd3be3d8cabe7969077f93
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="assess-sales-performance-by-product"></a>Vurdere salgsperformance efter produkt
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="97e30-103">Vurdere salgsperformance efter produkt</span><span class="sxs-lookup"><span data-stu-id="97e30-103">Assess sales performance by product</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail. 
+<span data-ttu-id="97e30-104">Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="97e30-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 
-Som en del af Dynamics 365 for Retail kan brugerne også undersøge rentabilitet for de bedste produkter (10 til 100) på tværs af forskellige niveauer i organisationshierarkiet, baseret på et af følgende kriterier:
+<span data-ttu-id="97e30-105">Som en del af Dynamics 365 for Retail kan brugerne også undersøge rentabilitet for de bedste produkter (10 til 100) på tværs af forskellige niveauer i organisationshierarkiet, baseret på et af følgende kriterier:</span><span class="sxs-lookup"><span data-stu-id="97e30-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   Salgsbeløb
--   Antal
--   Overskudsgrad, brutto
--   DB-procent
+-   <span data-ttu-id="97e30-106">Salgsbeløb</span><span class="sxs-lookup"><span data-stu-id="97e30-106">Sales amount</span></span>
+-   <span data-ttu-id="97e30-107">Antal</span><span class="sxs-lookup"><span data-stu-id="97e30-107">Quantity</span></span>
+-   <span data-ttu-id="97e30-108">Overskudsgrad, brutto</span><span class="sxs-lookup"><span data-stu-id="97e30-108">Gross profit margin</span></span>
+-   <span data-ttu-id="97e30-109">DB-procent</span><span class="sxs-lookup"><span data-stu-id="97e30-109">Margin percentage</span></span>
 
-Til denne vurdering kan du bruge den færdiglavede rapport **Vigtigste produkter**, som du kan åbne fra et af følgende steder:
+<span data-ttu-id="97e30-110">Til denne vurdering kan du bruge den færdiglavede rapport **Vigtigste produkter**, som du kan åbne fra et af følgende steder:</span><span class="sxs-lookup"><span data-stu-id="97e30-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
--   **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over topprodukter**
+-   <span data-ttu-id="97e30-111">Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**</span><span class="sxs-lookup"><span data-stu-id="97e30-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="97e30-112">**Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**</span><span class="sxs-lookup"><span data-stu-id="97e30-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="97e30-113">Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over topprodukter**</span><span class="sxs-lookup"><span data-stu-id="97e30-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 
 
 

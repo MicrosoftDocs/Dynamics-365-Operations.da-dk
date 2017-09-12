@@ -16,98 +16,98 @@ ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9cabce5400216ee0214eb6d56f0d32d746b260f
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 9e9d1912abf9a356542ce2c317fa717bc991dbf9
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="order-entry-deadlines"></a>Ordreindtastningsfrister
+# <a name="order-entry-deadlines"></a><span data-ttu-id="292ac-104">Ordreindtastningsfrister</span><span class="sxs-lookup"><span data-stu-id="292ac-104">Order entry deadlines</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om frister for ordreindtastning. En ordreindtastningsfrist er et cut-off-tidspunkt, der bestemmer, om en kundeordre skal behandles (og opfyldes), som om den blev modtaget på den aktuelle dag eller næste dag.
+<span data-ttu-id="292ac-105">Denne artikel indeholder oplysninger om frister for ordreindtastning.</span><span class="sxs-lookup"><span data-stu-id="292ac-105">This article provides information about order entry deadlines.</span></span> <span data-ttu-id="292ac-106">En ordreindtastningsfrist er et cut-off-tidspunkt, der bestemmer, om en kundeordre skal behandles (og opfyldes), som om den blev modtaget på den aktuelle dag eller næste dag.</span><span class="sxs-lookup"><span data-stu-id="292ac-106">An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.</span></span>
 
-I mange firmaer er det kun salgsordrer, der modtages før et bestemt tidspunkt på dagen, der behandles som modtaget den pågældende dag. Alle ordrer, der modtages efter dette tidspunkt, behandles, som om de modtages den næste arbejdsdag. Dette skæringstidspunkt for ordrer kaldes ordreindtastningsfristen.  
+<span data-ttu-id="292ac-107">I mange firmaer er det kun salgsordrer, der modtages før et bestemt tidspunkt på dagen, der behandles som modtaget den pågældende dag.</span><span class="sxs-lookup"><span data-stu-id="292ac-107">In many companies, only sales orders that are received before a certain time of day are treated as if they were received on that day.</span></span> <span data-ttu-id="292ac-108">Alle ordrer, der modtages efter dette tidspunkt, behandles, som om de modtages den næste arbejdsdag.</span><span class="sxs-lookup"><span data-stu-id="292ac-108">Any orders that are received after that time are treated as if they are received on the next business day.</span></span> <span data-ttu-id="292ac-109">Dette skæringstidspunkt for ordrer kaldes ordreindtastningsfristen.</span><span class="sxs-lookup"><span data-stu-id="292ac-109">This cut-off time for orders is known as the order entry deadline.</span></span>  
 
-Ordreindtastningsfrister bruges som input for ordretilsagn. Derfor hjælper de dig med at administrere kundernes forventninger til levering af ordren. Kunderne kan for eksempel se, at hvis de afgiver en ordre hos dig inden et bestemt tidspunkt, giver du tilsagn om at levere varerne samme dag. Men hvis de misser denne frist, kan de først forvente levering den næste arbejdsdag. Du kan angive ordreindtastningsfrister baseret på din lagerkapacitet og fragtmandens kalender.  
+<span data-ttu-id="292ac-110">Ordreindtastningsfrister bruges som input for ordretilsagn.</span><span class="sxs-lookup"><span data-stu-id="292ac-110">Order entry deadlines are used as input for order promising.</span></span> <span data-ttu-id="292ac-111">Derfor hjælper de dig med at administrere kundernes forventninger til levering af ordren.</span><span class="sxs-lookup"><span data-stu-id="292ac-111">Therefore, they help you manage customer expectations about order deliveries.</span></span> <span data-ttu-id="292ac-112">Kunderne kan for eksempel se, at hvis de afgiver en ordre hos dig inden et bestemt tidspunkt, giver du tilsagn om at levere varerne samme dag.</span><span class="sxs-lookup"><span data-stu-id="292ac-112">For example, customers can see that, if they place an order with you before a specific time, you will commit to shipping the goods on the same day.</span></span> <span data-ttu-id="292ac-113">Men hvis de misser denne frist, kan de først forvente levering den næste arbejdsdag.</span><span class="sxs-lookup"><span data-stu-id="292ac-113">However, if they miss that deadline, they can expect the shipment only on the next business day.</span></span> <span data-ttu-id="292ac-114">Du kan angive ordreindtastningsfrister baseret på din lagerkapacitet og fragtmandens kalender.</span><span class="sxs-lookup"><span data-stu-id="292ac-114">You set order entry deadlines based on your warehouse capabilities and shipping carrier schedules.</span></span>  
 
-På siden **Ordreindtastningsfrister** kan du oprette ordreindtastningsfristerne for alle ugens dage. Hvis ordrer modtages efter det angivne tidspunkt, behandles de, som om de modtages den næste dag. Disse tider angives som standard til 23:59 (dvs. ét minut før midnat, inden den pågældende dag er gået). Du kan ændre standardtiderne, så de falder sammen med de faktiske tider for afsendelse eller tilgang.  
+<span data-ttu-id="292ac-115">På siden **Ordreindtastningsfrister** kan du oprette ordreindtastningsfristerne for alle ugens dage.</span><span class="sxs-lookup"><span data-stu-id="292ac-115">On the **Order entry deadlines** page, you set up order entry deadline times for all the days of the week.</span></span> <span data-ttu-id="292ac-116">Hvis ordrer modtages efter det angivne tidspunkt, behandles de, som om de modtages den næste dag.</span><span class="sxs-lookup"><span data-stu-id="292ac-116">If orders are received after the specified times, they are treated as if they are received on the next day.</span></span> <span data-ttu-id="292ac-117">Disse tider angives som standard til 23:59 (dvs. ét minut før midnat, inden den pågældende dag er gået).</span><span class="sxs-lookup"><span data-stu-id="292ac-117">By default, these times are set to 23:59 (that is, one minute before midnight at the end of the relevant day).</span></span> <span data-ttu-id="292ac-118">Du kan ændre standardtiderne, så de falder sammen med de faktiske tider for afsendelse eller tilgang.</span><span class="sxs-lookup"><span data-stu-id="292ac-118">You can change the default times so that they coincide with actual ship or receipt deadline times.</span></span>  
 
-Du kan definere en ordreindtastningsfrist for en specifik kundegruppe. Du ønsker f.eks., at en bestemt gruppe kunder har ordreindtastningsfrister, der er senere end fristerne for andre kunder. I dette tilfælde skal du først definere grupper for ordreindtastningsfrister på siden **Ordreindtastningsfristgrupper**. Du tildeler derefter grupperne til kunder på siden **Kunder**.  
+<span data-ttu-id="292ac-119">Du kan definere en ordreindtastningsfrist for en specifik kundegruppe.</span><span class="sxs-lookup"><span data-stu-id="292ac-119">You can define order entry deadlines for a specific group of customers.</span></span> <span data-ttu-id="292ac-120">Du ønsker f.eks., at en bestemt gruppe kunder har ordreindtastningsfrister, der er senere end fristerne for andre kunder.</span><span class="sxs-lookup"><span data-stu-id="292ac-120">For example, you might want a specific group of customers to have order entry deadlines that are later than those of other customers.</span></span> <span data-ttu-id="292ac-121">I dette tilfælde skal du først definere grupper for ordreindtastningsfrister på siden **Ordreindtastningsfristgrupper**.</span><span class="sxs-lookup"><span data-stu-id="292ac-121">In this case, you first define groups for order entry deadlines on the **Order entry deadline groups** page.</span></span> <span data-ttu-id="292ac-122">Du tildeler derefter grupperne til kunder på siden **Kunder**.</span><span class="sxs-lookup"><span data-stu-id="292ac-122">You then assign the groups to customers on the **Customers** page.</span></span>  
 
-Hvis dit firma driver virksomhed fra flere adresser, kan du oprette ordreindtastningsfrister for de enkelte steder. Hvis disse steder er i forskellige tidszoner, oprettes ordreindtastningsfristerne i de enkelte steders tidszone. Men når du arbejder med salgsordrer og salgstilbud, omregnes ordreindtastningsfristen til din tidszone på siden **Mulige afsendelses- og modtagelsesdatoer**.  
+<span data-ttu-id="292ac-123">Hvis dit firma driver virksomhed fra flere adresser, kan du oprette ordreindtastningsfrister for de enkelte steder.</span><span class="sxs-lookup"><span data-stu-id="292ac-123">If your company consists of several sites, you can set up order entry deadlines for each site.</span></span> <span data-ttu-id="292ac-124">Hvis disse steder er i forskellige tidszoner, oprettes ordreindtastningsfristerne i de enkelte steders tidszone.</span><span class="sxs-lookup"><span data-stu-id="292ac-124">If the sites are located in different time zones, the order entry deadlines are set up in each site's time zone.</span></span> <span data-ttu-id="292ac-125">Men når du arbejder med salgsordrer og salgstilbud, omregnes ordreindtastningsfristen til din tidszone på siden **Mulige afsendelses- og modtagelsesdatoer**.</span><span class="sxs-lookup"><span data-stu-id="292ac-125">However, when you work with sales orders and sales quotations, the order entry deadline is converted to your time zone on the **Available ship and receipt dates** page.</span></span>  
 
-På siden **Aktiver kombinationer af ordreindtastningsfrister** kan du definere kombinationer af steder og ordreindtastningsfristgrupper, der er tilladt.
+<span data-ttu-id="292ac-126">På siden **Aktiver kombinationer af ordreindtastningsfrister** kan du definere kombinationer af steder og ordreindtastningsfristgrupper, der er tilladt.</span><span class="sxs-lookup"><span data-stu-id="292ac-126">On the **Activate order entry deadline combinations** page, you define the combinations of sites and order entry deadline groups that are allowed.</span></span>
 
-## <a name="example-order-entry-deadline"></a>Eksempel: Ordreindtastningsfrist
-Ordreindtastningsfristen på tirsdage er indstillet til 16:00. På en bestemt tirsdag kl. 17:00 forsøger du at indstille den aktuelle dato som afsendelsesdato. (Bemærk, at der ikke er nogen gennemløbstid i dette eksempel). Hvis afkrydsningsfeltet **Leveringsdatokontrol** er markeret, modtager du en advarsel, der angiver, at datoen ikke er gyldig. Denne advarsel vises på siden **Mulige afsendelses- og modtagelsesdatoer**, hvor du kan vælge alternative datoer.
+## <a name="example-order-entry-deadline"></a><span data-ttu-id="292ac-127">Eksempel: Ordreindtastningsfrist</span><span class="sxs-lookup"><span data-stu-id="292ac-127">Example: Order entry deadline</span></span>
+<span data-ttu-id="292ac-128">Ordreindtastningsfristen på tirsdage er indstillet til 16:00.</span><span class="sxs-lookup"><span data-stu-id="292ac-128">The order entry deadline on Tuesdays has been set to 16:00.</span></span> <span data-ttu-id="292ac-129">På en bestemt tirsdag kl. 17:00 forsøger du at indstille den aktuelle dato som afsendelsesdato.</span><span class="sxs-lookup"><span data-stu-id="292ac-129">On a particular Tuesday, at 17:00, you try to set the current date as the ship date.</span></span> <span data-ttu-id="292ac-130">(Bemærk, at der ikke er nogen gennemløbstid i dette eksempel). Hvis afkrydsningsfeltet **Leveringsdatokontrol** er markeret, modtager du en advarsel, der angiver, at datoen ikke er gyldig.</span><span class="sxs-lookup"><span data-stu-id="292ac-130">(Note that there is no lead time for this example.) If the **Delivery date control** check box is selected, you receive a warning that states that the date isn't valid.</span></span> <span data-ttu-id="292ac-131">Denne advarsel vises på siden **Mulige afsendelses- og modtagelsesdatoer**, hvor du kan vælge alternative datoer.</span><span class="sxs-lookup"><span data-stu-id="292ac-131">This warning appears on the **Available ship and receipt dates** page, where you can then select alternative dates.</span></span>
 
-## <a name="example-different-order-entry-deadlines-per-site"></a>Eksempel: Forskellige ordreindtastningsfrister pr. sted
-Dit firma udgøres af to steder. Stederne findes i forskellige tidszoner som vist i følgende tabel.
+## <a name="example-different-order-entry-deadlines-per-site"></a><span data-ttu-id="292ac-132">Eksempel: Forskellige ordreindtastningsfrister pr. sted</span><span class="sxs-lookup"><span data-stu-id="292ac-132">Example: Different order entry deadlines per site</span></span>
+<span data-ttu-id="292ac-133">Dit firma udgøres af to steder.</span><span class="sxs-lookup"><span data-stu-id="292ac-133">Your company consists of two sites.</span></span> <span data-ttu-id="292ac-134">Stederne findes i forskellige tidszoner som vist i følgende tabel.</span><span class="sxs-lookup"><span data-stu-id="292ac-134">The sites are located in different time zones, as shown in the following table.</span></span>
 
-| Sted A                      | Sted B                      |
+| <span data-ttu-id="292ac-135">Sted A</span><span class="sxs-lookup"><span data-stu-id="292ac-135">Site A</span></span>                      | <span data-ttu-id="292ac-136">Sted B</span><span class="sxs-lookup"><span data-stu-id="292ac-136">Site B</span></span>                      |
 |-----------------------------|-----------------------------|
-| Californien                  | Florida                     |
-| PST (Pacific, normaltid) | EST (Eastern, normaltid) |
+| <span data-ttu-id="292ac-137">Californien</span><span class="sxs-lookup"><span data-stu-id="292ac-137">California</span></span>                  | <span data-ttu-id="292ac-138">Florida</span><span class="sxs-lookup"><span data-stu-id="292ac-138">Florida</span></span>                     |
+| <span data-ttu-id="292ac-139">PST (Pacific, normaltid)</span><span class="sxs-lookup"><span data-stu-id="292ac-139">PST (Pacific Standard Time)</span></span> | <span data-ttu-id="292ac-140">EST (Eastern, normaltid)</span><span class="sxs-lookup"><span data-stu-id="292ac-140">EST (Eastern Standard Time)</span></span> |
 
-Der er angivet følgende ordreindtastningsfrister for sted A og B.
+<span data-ttu-id="292ac-141">Der er angivet følgende ordreindtastningsfrister for sted A og B.</span><span class="sxs-lookup"><span data-stu-id="292ac-141">Sites A and B have defined the following order entry deadlines.</span></span>
 
-| Ugedag             | A: Ordreindtastningsfrister (PST) | B: Ordreindtastningsfrister (EST) |
+| <span data-ttu-id="292ac-142">Ugedag</span><span class="sxs-lookup"><span data-stu-id="292ac-142">Day of the week</span></span>             | <span data-ttu-id="292ac-143">A: Ordreindtastningsfrister (PST)</span><span class="sxs-lookup"><span data-stu-id="292ac-143">A: Order entry deadlines (PST)</span></span> | <span data-ttu-id="292ac-144">B: Ordreindtastningsfrister (EST)</span><span class="sxs-lookup"><span data-stu-id="292ac-144">B: Order entry deadlines (EST)</span></span> |
 |-----------------------------|--------------------------------|--------------------------------|
-| Mandag                      | 13:00                          | 14:00                          |
-| Tirsdag                     | 13:00                          | 14:00                          |
-| Onsdag                   | 13:00                          | 14:00                          |
-| Torsdag                    | 13:00                          | 14:00                          |
-| Fredag                      | 13:00                          | 14:00                          |
+| <span data-ttu-id="292ac-145">Mandag</span><span class="sxs-lookup"><span data-stu-id="292ac-145">Monday</span></span>                      | <span data-ttu-id="292ac-146">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-146">13:00</span></span>                          | <span data-ttu-id="292ac-147">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-147">14:00</span></span>                          |
+| <span data-ttu-id="292ac-148">Tirsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-148">Tuesday</span></span>                     | <span data-ttu-id="292ac-149">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-149">13:00</span></span>                          | <span data-ttu-id="292ac-150">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-150">14:00</span></span>                          |
+| <span data-ttu-id="292ac-151">Onsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-151">Wednesday</span></span>                   | <span data-ttu-id="292ac-152">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-152">13:00</span></span>                          | <span data-ttu-id="292ac-153">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-153">14:00</span></span>                          |
+| <span data-ttu-id="292ac-154">Torsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-154">Thursday</span></span>                    | <span data-ttu-id="292ac-155">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-155">13:00</span></span>                          | <span data-ttu-id="292ac-156">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-156">14:00</span></span>                          |
+| <span data-ttu-id="292ac-157">Fredag</span><span class="sxs-lookup"><span data-stu-id="292ac-157">Friday</span></span>                      | <span data-ttu-id="292ac-158">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-158">13:00</span></span>                          | <span data-ttu-id="292ac-159">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-159">14:00</span></span>                          |
 
-Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST (Mountain, normaltid). Det betyder, at hvis du afgiver ordrer hos sted A før kl. 14:00 MST og hos sted B før kl. 12:00 MST, overholder du ordreindtastningsfristerne for begge steder.  
+<span data-ttu-id="292ac-160">Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST (Mountain, normaltid).</span><span class="sxs-lookup"><span data-stu-id="292ac-160">You're an order processor in Utah, where the time zone is MST (Mountain Standard Time).</span></span> <span data-ttu-id="292ac-161">Det betyder, at hvis du afgiver ordrer hos sted A før kl. 14:00 MST og hos sted B før kl. 12:00 MST, overholder du ordreindtastningsfristerne for begge steder.</span><span class="sxs-lookup"><span data-stu-id="292ac-161">Therefore, provided that you place orders with site A before 14:00 MST and place orders with site B before 12:00 MST, you meet the order entry deadlines for both sites.</span></span>  
 
-I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.
+<span data-ttu-id="292ac-162">I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.</span><span class="sxs-lookup"><span data-stu-id="292ac-162">The following table shows how the order entry deadlines for sites A and B are converted to MST time.</span></span>
 
-| Sted A: PST         | Sted A: MST        | Sted B: EST           | Sted B: MST        |
+| <span data-ttu-id="292ac-163">Sted A: PST</span><span class="sxs-lookup"><span data-stu-id="292ac-163">Site A: PST</span></span>         | <span data-ttu-id="292ac-164">Sted A: MST</span><span class="sxs-lookup"><span data-stu-id="292ac-164">Site A: MST</span></span>        | <span data-ttu-id="292ac-165">Sted B: EST</span><span class="sxs-lookup"><span data-stu-id="292ac-165">Site B: EST</span></span>           | <span data-ttu-id="292ac-166">Sted B: MST</span><span class="sxs-lookup"><span data-stu-id="292ac-166">Site B: MST</span></span>        |
 |---------------------|--------------------|-----------------------|--------------------|
-| 13:00               | 14:00              | 14:00                 | 12:00              |
+| <span data-ttu-id="292ac-167">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-167">13:00</span></span>               | <span data-ttu-id="292ac-168">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-168">14:00</span></span>              | <span data-ttu-id="292ac-169">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-169">14:00</span></span>                 | <span data-ttu-id="292ac-170">12:00</span><span class="sxs-lookup"><span data-stu-id="292ac-170">12:00</span></span>              |
 
-**Bemærk!** Hvis det er sommertid, justeres ordreindtastningsfristerne tilsvarende.
+<span data-ttu-id="292ac-171">**Bemærk!** Hvis det er sommertid, justeres ordreindtastningsfristerne tilsvarende.</span><span class="sxs-lookup"><span data-stu-id="292ac-171">**Note:** If adjustment for daylight saving time is in effect, the order entry deadlines are adjusted accordingly.</span></span>
 
-## <a name="example-same-order-entry-deadline-per-site"></a>Eksempel: Samme ordreregistreringsfrist pr. sted
-Dit firma udgøres af to steder. Stederne findes i forskellige tidszoner som vist i følgende tabel.
+## <a name="example-same-order-entry-deadline-per-site"></a><span data-ttu-id="292ac-172">Eksempel: Samme ordreregistreringsfrist pr. sted</span><span class="sxs-lookup"><span data-stu-id="292ac-172">Example: Same order entry deadline per site</span></span>
+<span data-ttu-id="292ac-173">Dit firma udgøres af to steder.</span><span class="sxs-lookup"><span data-stu-id="292ac-173">Your company consists of two sites.</span></span> <span data-ttu-id="292ac-174">Stederne findes i forskellige tidszoner som vist i følgende tabel.</span><span class="sxs-lookup"><span data-stu-id="292ac-174">The sites are located in different time zones, as shown in the following table.</span></span>
 
-| Sted A                      | Sted B                      |
+| <span data-ttu-id="292ac-175">Sted A</span><span class="sxs-lookup"><span data-stu-id="292ac-175">Site A</span></span>                      | <span data-ttu-id="292ac-176">Sted B</span><span class="sxs-lookup"><span data-stu-id="292ac-176">Site B</span></span>                      |
 |-----------------------------|-----------------------------|
-| Californien                  | Florida                     |
-| PST (Pacific, normaltid) | EST (Eastern, normaltid) |
+| <span data-ttu-id="292ac-177">Californien</span><span class="sxs-lookup"><span data-stu-id="292ac-177">California</span></span>                  | <span data-ttu-id="292ac-178">Florida</span><span class="sxs-lookup"><span data-stu-id="292ac-178">Florida</span></span>                     |
+| <span data-ttu-id="292ac-179">PST (Pacific, normaltid)</span><span class="sxs-lookup"><span data-stu-id="292ac-179">PST (Pacific Standard Time)</span></span> | <span data-ttu-id="292ac-180">EST (Eastern, normaltid)</span><span class="sxs-lookup"><span data-stu-id="292ac-180">EST (Eastern Standard Time)</span></span> |
 
-Der er angivet følgende ordreindtastningsfrister for sted A og B.
+<span data-ttu-id="292ac-181">Der er angivet følgende ordreindtastningsfrister for sted A og B.</span><span class="sxs-lookup"><span data-stu-id="292ac-181">Sites A and B have defined the following order entry deadlines.</span></span>
 
-| Ugedag | PST og EST |
+| <span data-ttu-id="292ac-182">Ugedag</span><span class="sxs-lookup"><span data-stu-id="292ac-182">Day of the week</span></span> | <span data-ttu-id="292ac-183">PST og EST</span><span class="sxs-lookup"><span data-stu-id="292ac-183">PST and EST</span></span> |
 |-----------------|-------------|
-| Mandag          | 13:00       |
-| Tirsdag         | 13:00       |
-| Onsdag       | 13:00       |
-| Torsdag        | 13:00       |
-| Fredag          | 13:00       |
+| <span data-ttu-id="292ac-184">Mandag</span><span class="sxs-lookup"><span data-stu-id="292ac-184">Monday</span></span>          | <span data-ttu-id="292ac-185">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-185">13:00</span></span>       |
+| <span data-ttu-id="292ac-186">Tirsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-186">Tuesday</span></span>         | <span data-ttu-id="292ac-187">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-187">13:00</span></span>       |
+| <span data-ttu-id="292ac-188">Onsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-188">Wednesday</span></span>       | <span data-ttu-id="292ac-189">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-189">13:00</span></span>       |
+| <span data-ttu-id="292ac-190">Torsdag</span><span class="sxs-lookup"><span data-stu-id="292ac-190">Thursday</span></span>        | <span data-ttu-id="292ac-191">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-191">13:00</span></span>       |
+| <span data-ttu-id="292ac-192">Fredag</span><span class="sxs-lookup"><span data-stu-id="292ac-192">Friday</span></span>          | <span data-ttu-id="292ac-193">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-193">13:00</span></span>       |
 
-Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST. Det betyder, at hvis du afgiver ordrer hos sted A før kl. 14:00 MST og hos sted B før kl. 11:00 MST, overholder du ordreindtastningsfristerne for begge steder. 
+<span data-ttu-id="292ac-194">Det er din opgave at behandle ordren i Utah, hvor tidszonen er MST.</span><span class="sxs-lookup"><span data-stu-id="292ac-194">You're an order processor in Utah, where the time zone is MST.</span></span> <span data-ttu-id="292ac-195">Det betyder, at hvis du afgiver ordrer hos sted A før kl. 14:00 MST og hos sted B før kl. 11:00 MST, overholder du ordreindtastningsfristerne for begge steder.</span><span class="sxs-lookup"><span data-stu-id="292ac-195">Therefore, provided that you place orders with site A before 14:00 MST and place orders with site B before 11:00 MST, you meet the order entry deadlines for both sites.</span></span> 
 
-I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.
+<span data-ttu-id="292ac-196">I tabellen nedenfor vises, hvordan ordreindtastningsfristerne for sted A og B omregnet til MST-tidspunkter.</span><span class="sxs-lookup"><span data-stu-id="292ac-196">The following table shows how the order entry deadlines for sites A and B are converted to MST time.</span></span>
 
-| Sted A: PST         | Sted A: MST        | Sted B: EST           | Sted B: MST        |
+| <span data-ttu-id="292ac-197">Sted A: PST</span><span class="sxs-lookup"><span data-stu-id="292ac-197">Site A: PST</span></span>         | <span data-ttu-id="292ac-198">Sted A: MST</span><span class="sxs-lookup"><span data-stu-id="292ac-198">Site A: MST</span></span>        | <span data-ttu-id="292ac-199">Sted B: EST</span><span class="sxs-lookup"><span data-stu-id="292ac-199">Site B: EST</span></span>           | <span data-ttu-id="292ac-200">Sted B: MST</span><span class="sxs-lookup"><span data-stu-id="292ac-200">Site B: MST</span></span>        |
 |---------------------|--------------------|-----------------------|--------------------|
-| 13:00               | 14:00              | 13:00                 | 11:00              |
+| <span data-ttu-id="292ac-201">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-201">13:00</span></span>               | <span data-ttu-id="292ac-202">14:00</span><span class="sxs-lookup"><span data-stu-id="292ac-202">14:00</span></span>              | <span data-ttu-id="292ac-203">13:00</span><span class="sxs-lookup"><span data-stu-id="292ac-203">13:00</span></span>                 | <span data-ttu-id="292ac-204">11:00</span><span class="sxs-lookup"><span data-stu-id="292ac-204">11:00</span></span>              |
 
-**Bemærk!** Hvis det er sommertid, justeres ordreindtastningsfristerne tilsvarende.
+<span data-ttu-id="292ac-205">**Bemærk!** Hvis det er sommertid, justeres ordreindtastningsfristerne tilsvarende.</span><span class="sxs-lookup"><span data-stu-id="292ac-205">**Note:** If adjustment for daylight saving time is in effect, the order entry deadlines are adjusted accordingly.</span></span>
 
-<a name="see-also"></a>Se også
+<a name="see-also"></a><span data-ttu-id="292ac-206">Se også</span><span class="sxs-lookup"><span data-stu-id="292ac-206">See also</span></span>
 --------
 
-[Leveranceplaner](delivery-schedules.md)
+[<span data-ttu-id="292ac-207">Leveranceplaner</span><span class="sxs-lookup"><span data-stu-id="292ac-207">Delivery schedules</span></span>](delivery-schedules.md)
 
 
 

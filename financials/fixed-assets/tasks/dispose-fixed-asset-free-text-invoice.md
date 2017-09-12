@@ -16,34 +16,34 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: baf8a55deed8f3a844954f7e7ba31391cc4741c1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="c7c00-103">Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="c7c00-103">Dispose of a fixed asset using a free text invoice</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+<span data-ttu-id="c7c00-104">Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden.</span><span class="sxs-lookup"><span data-stu-id="c7c00-104">This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal.</span></span> <span data-ttu-id="c7c00-105">Den bruger rollen Revisor og demodata for den juridiske enhed USMF.</span><span class="sxs-lookup"><span data-stu-id="c7c00-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
-1. Gå til Anlægsaktiver > Kladdepostering > Anlægsaktivkladde.
-2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Navn.
-4. Klik på Linjer.
-5. Klik på Forslag.
-6. Klik på Anskaffelsesforslag.
-7. Klik på Filtrér.
-8. Klik på Nulstil for at rydde tidligere værdier.
-9. Vælg rækken med anlægsaktivnummeret.
-10. Indtast eller vælg en værdi i feltet Kriterier.
-    * Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.  
-11. Klik på OK.
-12. Klik på OK.
-    * Bekræft de oprettede transaktionslinjer.  
-    * Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
-13. Klik på fanen Bøger.
-14. Klik på Bogfør.
+1. <span data-ttu-id="c7c00-106">Gå til Anlægsaktiver > Kladdepostering > Anlægsaktivkladde.</span><span class="sxs-lookup"><span data-stu-id="c7c00-106">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+2. <span data-ttu-id="c7c00-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="c7c00-107">Click New.</span></span>
+3. <span data-ttu-id="c7c00-108">Indtast eller vælg en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="c7c00-108">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="c7c00-109">Klik på Linjer.</span><span class="sxs-lookup"><span data-stu-id="c7c00-109">Click Lines.</span></span>
+5. <span data-ttu-id="c7c00-110">Klik på Forslag.</span><span class="sxs-lookup"><span data-stu-id="c7c00-110">Click Proposals.</span></span>
+6. <span data-ttu-id="c7c00-111">Klik på Anskaffelsesforslag.</span><span class="sxs-lookup"><span data-stu-id="c7c00-111">Click Acquisition proposal.</span></span>
+7. <span data-ttu-id="c7c00-112">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="c7c00-112">Click Filter.</span></span>
+8. <span data-ttu-id="c7c00-113">Klik på Nulstil for at rydde tidligere værdier.</span><span class="sxs-lookup"><span data-stu-id="c7c00-113">Click Reset to clear out previous values.</span></span>
+9. <span data-ttu-id="c7c00-114">Vælg rækken med anlægsaktivnummeret.</span><span class="sxs-lookup"><span data-stu-id="c7c00-114">Select the Fixed asset number row.</span></span>
+10. <span data-ttu-id="c7c00-115">Indtast eller vælg en værdi i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="c7c00-115">In the Criteria field, enter or select a value.</span></span>
+    * <span data-ttu-id="c7c00-116">Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.</span><span class="sxs-lookup"><span data-stu-id="c7c00-116">Set the remaining criteria for the fixed assets that you want to acquire with this proposal.</span></span>  
+11. <span data-ttu-id="c7c00-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c7c00-117">Click OK.</span></span>
+12. <span data-ttu-id="c7c00-118">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c7c00-118">Click OK.</span></span>
+    * <span data-ttu-id="c7c00-119">Bekræft de oprettede transaktionslinjer.</span><span class="sxs-lookup"><span data-stu-id="c7c00-119">Verify the transaction lines created.</span></span>  
+    * <span data-ttu-id="c7c00-120">Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.</span><span class="sxs-lookup"><span data-stu-id="c7c00-120">Only fixed assets with the acquisition date and acquisition price set on the book will be included in the acquisition proposal.</span></span>  
+13. <span data-ttu-id="c7c00-121">Klik på fanen Bøger.</span><span class="sxs-lookup"><span data-stu-id="c7c00-121">Click the Books tab.</span></span>
+14. <span data-ttu-id="c7c00-122">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="c7c00-122">Click Post.</span></span>
 
 

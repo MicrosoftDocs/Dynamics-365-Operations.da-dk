@@ -15,7 +15,7 @@ ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
@@ -25,20 +25,20 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="production-output-location"></a>Produktionsudlagringslokation
+# <a name="production-output-location"></a><span data-ttu-id="35cc2-103">Produktionsudlagringslokation</span><span class="sxs-lookup"><span data-stu-id="35cc2-103">Production output location</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne beskrives det hierarki, der bruges til at identificere produktionsudlagringslokationen.
+<span data-ttu-id="35cc2-104">I dette emne beskrives det hierarki, der bruges til at identificere produktionsudlagringslokationen.</span><span class="sxs-lookup"><span data-stu-id="35cc2-104">This topic describes the hierarchy that is used to identify the production output location.</span></span>
 
-Produktionsudlagringslokationen er det sted, hvor en færdigvare er først gemmes, når den er produceret. Normalt er dette sted tæt på den produktionsproces, der fremstiller færdigvaren. Produktionsudlagringslokationen bruges som mellemoplagring for materialet, før det flyttes området for forsendelsen, en lagerlokation, en produktionsindlagringslokation for en downstream-produktionsproces osv. 
+<span data-ttu-id="35cc2-105">Produktionsudlagringslokationen er det sted, hvor en færdigvare er først gemmes, når den er produceret.</span><span class="sxs-lookup"><span data-stu-id="35cc2-105">The production output location is the location where a finished good is first stored after it's produced.</span></span> <span data-ttu-id="35cc2-106">Normalt er dette sted tæt på den produktionsproces, der fremstiller færdigvaren.</span><span class="sxs-lookup"><span data-stu-id="35cc2-106">Usually, this location is close to the production process that produces the finished good.</span></span> <span data-ttu-id="35cc2-107">Produktionsudlagringslokationen bruges som mellemoplagring for materialet, før det flyttes området for forsendelsen, en lagerlokation, en produktionsindlagringslokation for en downstream-produktionsproces osv.</span><span class="sxs-lookup"><span data-stu-id="35cc2-107">The production output location is used as intermediate storage for the material before it's moved on to the shipment area, a storage location, a production input location for a downstream production process, and so on.</span></span> 
 
-En standardproduktionsudlagringslokation angives, når færdigvarer er rapporteret for en produktionsordre eller en batchordre. Følgende hierarki bruges til at identificere denne udlagringslokation:
+<span data-ttu-id="35cc2-108">En standardproduktionsudlagringslokation angives, når færdigvarer er rapporteret for en produktionsordre eller en batchordre.</span><span class="sxs-lookup"><span data-stu-id="35cc2-108">A default production output location is set when finished goods are reported on a production order or batch order.</span></span> <span data-ttu-id="35cc2-109">Følgende hierarki bruges til at identificere denne udlagringslokation:</span><span class="sxs-lookup"><span data-stu-id="35cc2-109">The following hierarchy is used to identify this output location:</span></span>
 
-1. Brug den udlagringslokation, der er defineret i produktionsordre- eller batchordrehovedet.
-2. Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret i den ressource, der bruges af den sidste handling, der er defineret i produktionsruten.
-3. Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret i den ressourcegruppe, der bruges af ressourcen for den sidste handling, der er defineret i produktionsruten.
-4. Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret for det lagersted, der er defineret for produktionsordren.
+1. <span data-ttu-id="35cc2-110">Brug den udlagringslokation, der er defineret i produktionsordre- eller batchordrehovedet.</span><span class="sxs-lookup"><span data-stu-id="35cc2-110">Use the output location that is defined on the production order or batch order header.</span></span>
+2. <span data-ttu-id="35cc2-111">Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret i den ressource, der bruges af den sidste handling, der er defineret i produktionsruten.</span><span class="sxs-lookup"><span data-stu-id="35cc2-111">If no location is found there, use the output location that is defined on the resource that is used by the last operation that is defined in the production route.</span></span>
+3. <span data-ttu-id="35cc2-112">Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret i den ressourcegruppe, der bruges af ressourcen for den sidste handling, der er defineret i produktionsruten.</span><span class="sxs-lookup"><span data-stu-id="35cc2-112">If no location is found there, use the output location that is defined on the resource group that is used by the resource for the last operation that is defined in the production route.</span></span>
+4. <span data-ttu-id="35cc2-113">Hvis der ikke findes en lokation der, kan du bruge den udlagringslokation, der er defineret for det lagersted, der er defineret for produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="35cc2-113">If no location is found there, use the output location that is defined on the warehouse that is defined for the production order.</span></span>
 
-En standardproduktionsudlagringslokation angives kun for produkter, der er oprettet ved hjælp af avancerede lagerprocesser. Når denne varetype er færdigmeldt, oprettes lagerstedsarbejde af typen **Færdige varer, læg på lager** eller **Samprodukt og biprodukt, læg på lager**. Denne type arbejde bruger produktionsudlagringslokationen som pluklokation. Læg-på-lager-lokationen bestemmes af lokationsvejledningerne.
+<span data-ttu-id="35cc2-114">En standardproduktionsudlagringslokation angives kun for produkter, der er oprettet ved hjælp af avancerede lagerprocesser.</span><span class="sxs-lookup"><span data-stu-id="35cc2-114">A default production output location is set only for products that are set up by using advanced warehouse processes.</span></span> <span data-ttu-id="35cc2-115">Når denne varetype er færdigmeldt, oprettes lagerstedsarbejde af typen **Færdige varer, læg på lager** eller **Samprodukt og biprodukt, læg på lager**.</span><span class="sxs-lookup"><span data-stu-id="35cc2-115">When this type of item is reported as finished, warehouse work of the **Finished goods put away** or **Co-product and by-product put away** type is created.</span></span> <span data-ttu-id="35cc2-116">Denne type arbejde bruger produktionsudlagringslokationen som pluklokation.</span><span class="sxs-lookup"><span data-stu-id="35cc2-116">This type of work uses the production output location as the pick location.</span></span> <span data-ttu-id="35cc2-117">Læg-på-lager-lokationen bestemmes af lokationsvejledningerne.</span><span class="sxs-lookup"><span data-stu-id="35cc2-117">The put-away location is determined by the location directives.</span></span>
 

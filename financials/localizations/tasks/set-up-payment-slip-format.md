@@ -16,53 +16,53 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 73e33afe757d8029d18995298b8c59e52767959e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1b3817fd5b45605f1157c6c034af358a1defba95
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-payment-slip-format-denmark"></a>Konfigurere indbetalingskortformat (Danmark)
+# <a name="set-up-payment-slip-format-denmark"></a><span data-ttu-id="2e78c-103">Konfigurere indbetalingskortformat (Danmark)</span><span class="sxs-lookup"><span data-stu-id="2e78c-103">Set up payment slip format (Denmark)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling. Indbetalingskortet kan bruges til projekt- eller servicefakturaer, rykkere, rentenotaer og kontoopgørelser samt til salgsfakturaer og fritekstfakturaer. For at generere indbetalingskort skal du først oprette et kreditor-id-nummer og formater for vedhæftningen af indbetalingskortet.
+<span data-ttu-id="2e78c-104">Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling.</span><span class="sxs-lookup"><span data-stu-id="2e78c-104">Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</span></span> <span data-ttu-id="2e78c-105">Indbetalingskortet kan bruges til projekt- eller servicefakturaer, rykkere, rentenotaer og kontoopgørelser samt til salgsfakturaer og fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="2e78c-105">The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</span></span> <span data-ttu-id="2e78c-106">For at generere indbetalingskort skal du først oprette et kreditor-id-nummer og formater for vedhæftningen af indbetalingskortet.</span><span class="sxs-lookup"><span data-stu-id="2e78c-106">To process payment slips, first set up your creditor identification number and payment slip attachment formats.</span></span>
 
-Denne registrering anvender demofirmaet DEMF. 
+<span data-ttu-id="2e78c-107">Denne registrering anvender demofirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="2e78c-107">This recording uses the DEMF demo company.</span></span> 
 
-Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.
+<span data-ttu-id="2e78c-108">Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære adresse er i Danmark.</span><span class="sxs-lookup"><span data-stu-id="2e78c-108">This functionality is available for legal entities whose primary address is in Denmark.</span></span>
 
 
-## <a name="set-up-a-creditor-id-number"></a>Oprette et kreditor-id-nummer
-1. Gå til Virksomhedsadministration > Organisationer > Juridiske enheder.
-2. Udvid eller skjul sektionen Bankkontooplysninger.
-3. Klik på Rediger.
-4. Skriv en værdi i feltet FI-kreditor-id.
-5. Klik på Gem.
-6. Luk siden.
+## <a name="set-up-a-creditor-id-number"></a><span data-ttu-id="2e78c-109">Oprette et kreditor-id-nummer</span><span class="sxs-lookup"><span data-stu-id="2e78c-109">Set up a creditor ID number</span></span>
+1. <span data-ttu-id="2e78c-110">Gå til Virksomhedsadministration > Organisationer > Juridiske enheder.</span><span class="sxs-lookup"><span data-stu-id="2e78c-110">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="2e78c-111">Udvid eller skjul sektionen Bankkontooplysninger.</span><span class="sxs-lookup"><span data-stu-id="2e78c-111">Expand or collapse the Bank account information section.</span></span>
+3. <span data-ttu-id="2e78c-112">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="2e78c-112">Click Edit.</span></span>
+4. <span data-ttu-id="2e78c-113">Skriv en værdi i feltet FI-kreditor-id.</span><span class="sxs-lookup"><span data-stu-id="2e78c-113">In the FI-Creditor ID field, type a value.</span></span>
+5. <span data-ttu-id="2e78c-114">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-114">Click Save.</span></span>
+6. <span data-ttu-id="2e78c-115">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-115">Close the page.</span></span>
 
-## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a>Oprette et indbetalingskortformat for debitorer, notaer, rykkere og opgørelser
-1. Gå til Debitor > Opsætning > Formularer > Formularopsætning.
-2. Klik på fanen Faktura.
-3. Vælg en indstilling i feltet Tilknyttet betalingsbilag på debitorfaktura.
-    * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.  
-4. Klik på Gem.
-5. Klik på fanen Fritekstfaktura.
-6. Vælg en indstilling i feltet Tilknyttet betalingsbilag på fritekstfaktura.
-    * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.  
-7. Klik på Gem.
-8. Klik på fanen Rentenota.
-9. Vælg en indstilling i feltet Tilknyttet betalingsbilag på rentenota.
-    * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.  
-10. Klik på Gem.
-11. Klik på fanen Rykker.
-12. Vælg en indstilling i feltet Tilknyttet betalingsbilag på rykker.
-    * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.  
-13. Klik på Gem.
-14. Klik på fanen Kontoudtog.
-15. Vælg en indstilling i feltet Tilknyttet betalingsbilag på kontoudtog.
-    * Ingen – Udskriv ikke et indbetalingskort. Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).   FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.   FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.  
-16. Klik på Gem.
-17. Luk siden.
+## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a><span data-ttu-id="2e78c-116">Oprette et indbetalingskortformat for debitorer, notaer, rykkere og opgørelser</span><span class="sxs-lookup"><span data-stu-id="2e78c-116">Set up a payment slip format for invoices, notes, letters, and statements</span></span>
+1. <span data-ttu-id="2e78c-117">Gå til Debitor > Opsætning > Formularer > Formularopsætning.</span><span class="sxs-lookup"><span data-stu-id="2e78c-117">Go to Accounts receivable > Setup > Forms > Form setup.</span></span>
+2. <span data-ttu-id="2e78c-118">Klik på fanen Faktura.</span><span class="sxs-lookup"><span data-stu-id="2e78c-118">Click the Invoice tab.</span></span>
+3. <span data-ttu-id="2e78c-119">Vælg en indstilling i feltet Tilknyttet betalingsbilag på debitorfaktura.</span><span class="sxs-lookup"><span data-stu-id="2e78c-119">In the Associated payment attachment on customer invoice field, select an option.</span></span>
+    * <span data-ttu-id="2e78c-120">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="2e78c-120">None – Do not print a payment slip.</span></span> <span data-ttu-id="2e78c-121">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="2e78c-121">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="2e78c-122">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-122">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="2e78c-123">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="2e78c-123">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+4. <span data-ttu-id="2e78c-124">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-124">Click Save.</span></span>
+5. <span data-ttu-id="2e78c-125">Klik på fanen Fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="2e78c-125">Click the Free text invoice tab.</span></span>
+6. <span data-ttu-id="2e78c-126">Vælg en indstilling i feltet Tilknyttet betalingsbilag på fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="2e78c-126">In the Associated payment attachment on free text invoice field, select an option.</span></span>
+    * <span data-ttu-id="2e78c-127">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="2e78c-127">None – Do not print a payment slip.</span></span> <span data-ttu-id="2e78c-128">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="2e78c-128">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="2e78c-129">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-129">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="2e78c-130">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="2e78c-130">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+7. <span data-ttu-id="2e78c-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-131">Click Save.</span></span>
+8. <span data-ttu-id="2e78c-132">Klik på fanen Rentenota.</span><span class="sxs-lookup"><span data-stu-id="2e78c-132">Click the Interest note tab.</span></span>
+9. <span data-ttu-id="2e78c-133">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rentenota.</span><span class="sxs-lookup"><span data-stu-id="2e78c-133">In the Associated payment attachment on interest note field, select an option.</span></span>
+    * <span data-ttu-id="2e78c-134">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="2e78c-134">None – Do not print a payment slip.</span></span> <span data-ttu-id="2e78c-135">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="2e78c-135">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="2e78c-136">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-136">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="2e78c-137">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="2e78c-137">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+10. <span data-ttu-id="2e78c-138">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-138">Click Save.</span></span>
+11. <span data-ttu-id="2e78c-139">Klik på fanen Rykker.</span><span class="sxs-lookup"><span data-stu-id="2e78c-139">Click the Collection letter tab.</span></span>
+12. <span data-ttu-id="2e78c-140">Vælg en indstilling i feltet Tilknyttet betalingsbilag på rykker.</span><span class="sxs-lookup"><span data-stu-id="2e78c-140">In the Associated payment attachment on collection letter field, select an option.</span></span>
+    * <span data-ttu-id="2e78c-141">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="2e78c-141">None – Do not print a payment slip.</span></span> <span data-ttu-id="2e78c-142">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="2e78c-142">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="2e78c-143">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-143">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="2e78c-144">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="2e78c-144">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+13. <span data-ttu-id="2e78c-145">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-145">Click Save.</span></span>
+14. <span data-ttu-id="2e78c-146">Klik på fanen Kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="2e78c-146">Click the Account statement tab.</span></span>
+15. <span data-ttu-id="2e78c-147">Vælg en indstilling i feltet Tilknyttet betalingsbilag på kontoudtog.</span><span class="sxs-lookup"><span data-stu-id="2e78c-147">In the Associated payment attachment on account statement field, select an option.</span></span>
+    * <span data-ttu-id="2e78c-148">Ingen – Udskriv ikke et indbetalingskort.</span><span class="sxs-lookup"><span data-stu-id="2e78c-148">None – Do not print a payment slip.</span></span> <span data-ttu-id="2e78c-149">Vælg denne indstilling, hvis indbetalingsbeløbet er i en anden valuta end danske kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="2e78c-149">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="2e78c-150">FIK 751 – Udskriv et FIK 751-indbetalingskort, hvis du har tænkt dig at skrive betalingsbeløbet og forfaldsdatoen på indbetalingskortet i hånden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-150">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="2e78c-151">FIK 752 – Udskriv et FIK 752-indbetalingskort, hvis du har tænkt dig at bruge et computergenereret indbetalingskort, hvor betalingsbeløb og forfaldsdato er fortrykt.</span><span class="sxs-lookup"><span data-stu-id="2e78c-151">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+16. <span data-ttu-id="2e78c-152">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="2e78c-152">Click Save.</span></span>
+17. <span data-ttu-id="2e78c-153">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="2e78c-153">Close the page.</span></span>
 
 

@@ -1,2 +1,2 @@
 > [!NOTE]
-> Vi accepterer ikke redigeringer af dette emne, fordi det er genereret af en forretningsproces i Lifecycle Services.
+> <span data-ttu-id="6fc1c-101">Vi accepterer ikke redigeringer af dette emne, fordi det er genereret af en forretningsproces i Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="6fc1c-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>

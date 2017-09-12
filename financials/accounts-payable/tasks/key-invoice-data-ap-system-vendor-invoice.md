@@ -16,67 +16,67 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a365c52af49a66d6af5bb38f0053bd9c0fd34301
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 48535a283cbdfdc7343a20105b139c527cac85f4
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="key-invoice-data-into-accounts-payable-using-a-vendor-invoice"></a>Indtaste fakturadata under kreditorer ved hjælp af en kreditorfaktura
+# <a name="key-invoice-data-into-accounts-payable-using-a-vendor-invoice"></a><span data-ttu-id="9866e-103">Indtaste fakturadata under kreditorer ved hjælp af en kreditorfaktura</span><span class="sxs-lookup"><span data-stu-id="9866e-103">Key invoice data into accounts payable using a vendor invoice</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne opgaveguide hjælper dig med at oprette en kreditorfaktura fra en indkøbsordre og få vist resultaterne af sammenholdelse af indkøbsordre, tilgang og faktura (trevejs-sammenholdelse).
+<span data-ttu-id="9866e-104">Denne opgaveguide hjælper dig med at oprette en kreditorfaktura fra en indkøbsordre og få vist resultaterne af sammenholdelse af indkøbsordre, tilgang og faktura (trevejs-sammenholdelse).</span><span class="sxs-lookup"><span data-stu-id="9866e-104">This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching).</span></span>
 
 
-## <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
-1. Gå til Kreditor > Indkøbsordrer > Alle indkøbsordrer.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.
-4. Find en kreditor, du vil vælge. Rul for eksempel ned til US-104.
-5. Vælg kreditor US-104.
-6. Klik på OK.
-7. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-8. Vælg en lagervare. Du kan for eksempel vælge varenummer 1000.
-9. Udvis eller skjul sektionen Linedetaljer.
-10. Klik på fanen Opsætning.
-    * Du kan tilsidesætte sammenholdelsespolitikken for at undlade at bruge sammenholdelse, tovejs-sammenholdelse eller trevejs-sammenholdelse .  
-11. Udvis eller skjul sektionen Linedetaljer.
-12. Klik på Køb i handlingsruden.
-13. Klik på Bekræft.
+## <a name="create-a-purchase-order"></a><span data-ttu-id="9866e-105">Oprette en indkøbsordre</span><span class="sxs-lookup"><span data-stu-id="9866e-105">Create a purchase order</span></span>
+1. <span data-ttu-id="9866e-106">Gå til Kreditor > Indkøbsordrer > Alle indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="9866e-106">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="9866e-107">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9866e-107">Click New.</span></span>
+3. <span data-ttu-id="9866e-108">Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9866e-108">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="9866e-109">Find en kreditor, du vil vælge.</span><span class="sxs-lookup"><span data-stu-id="9866e-109">Find a vendor to select.</span></span> <span data-ttu-id="9866e-110">Rul for eksempel ned til US-104.</span><span class="sxs-lookup"><span data-stu-id="9866e-110">For example, scroll down to US-104.</span></span>
+5. <span data-ttu-id="9866e-111">Vælg kreditor US-104.</span><span class="sxs-lookup"><span data-stu-id="9866e-111">Select vendor US-104.</span></span>
+6. <span data-ttu-id="9866e-112">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9866e-112">Click OK.</span></span>
+7. <span data-ttu-id="9866e-113">Klik på rullelisten i feltet Varenummer for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9866e-113">In the Item number field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="9866e-114">Vælg en lagervare.</span><span class="sxs-lookup"><span data-stu-id="9866e-114">Select an inventory item.</span></span> <span data-ttu-id="9866e-115">Du kan for eksempel vælge varenummer 1000.</span><span class="sxs-lookup"><span data-stu-id="9866e-115">For example, select item number 1000.</span></span>
+9. <span data-ttu-id="9866e-116">Udvis eller skjul sektionen Linedetaljer.</span><span class="sxs-lookup"><span data-stu-id="9866e-116">Expand or collapse the Line details section.</span></span>
+10. <span data-ttu-id="9866e-117">Klik på fanen Opsætning.</span><span class="sxs-lookup"><span data-stu-id="9866e-117">Click the Setup tab.</span></span>
+    * <span data-ttu-id="9866e-118">Du kan tilsidesætte sammenholdelsespolitikken for at undlade at bruge sammenholdelse, tovejs-sammenholdelse eller trevejs-sammenholdelse .</span><span class="sxs-lookup"><span data-stu-id="9866e-118">You can override the matching policy to use no matching, 2-way matching, or 3-way matching.</span></span>  
+11. <span data-ttu-id="9866e-119">Udvis eller skjul sektionen Linedetaljer.</span><span class="sxs-lookup"><span data-stu-id="9866e-119">Expand or collapse the Line details section.</span></span>
+12. <span data-ttu-id="9866e-120">Klik på Køb i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9866e-120">On the Action Pane, click Purchase.</span></span>
+13. <span data-ttu-id="9866e-121">Klik på Bekræft.</span><span class="sxs-lookup"><span data-stu-id="9866e-121">Click Confirm.</span></span>
 
-## <a name="receive-the-products"></a>Modtage produkterne
-1. Klik på Modtag i handlingsruden.
-2. Klik på Produktkvittering.
-3. Angiv nummeret på produktkvitteringen i feltet Produktkvittering. Angiv for eksempel PR123.
-4. Klik på OK for at bogføre produktkvitteringen.
-5. Luk siden.
+## <a name="receive-the-products"></a><span data-ttu-id="9866e-122">Modtage produkterne</span><span class="sxs-lookup"><span data-stu-id="9866e-122">Receive the products</span></span>
+1. <span data-ttu-id="9866e-123">Klik på Modtag i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9866e-123">On the Action Pane, click Receive.</span></span>
+2. <span data-ttu-id="9866e-124">Klik på Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="9866e-124">Click Product receipt.</span></span>
+3. <span data-ttu-id="9866e-125">Angiv nummeret på produktkvitteringen i feltet Produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="9866e-125">In the Product receipt field, enter the product receipt number.</span></span> <span data-ttu-id="9866e-126">Angiv for eksempel PR123.</span><span class="sxs-lookup"><span data-stu-id="9866e-126">For example, enter PR123.</span></span>
+4. <span data-ttu-id="9866e-127">Klik på OK for at bogføre produktkvitteringen.</span><span class="sxs-lookup"><span data-stu-id="9866e-127">Click OK to post the product receipt.</span></span>
+5. <span data-ttu-id="9866e-128">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="9866e-128">Close the page.</span></span>
 
-## <a name="create-a-vendor-invoice"></a>Oprette en kreditorfaktura
-1. Gå til Debitor > Indkøbsordrer > Indkøbsordrer, der er modtaget, men ikke faktureret.
-2. Vælg den indkøbsordrelinje, du har oprettet.
-3. Klik på Faktura i handlingsruden.
-4. Klik på Faktura.
-5. Angiv fakturanummeret i feltet Nummer.
-6. Skriv en værdi i feltet Fakturabeskrivelse.
-7. Indtast en dato i feltet Fakturadato.
-8. Angiv 1200 i feltet Enhedspris.
-9. Klik på Tilføj linje.
-10. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-11. Find installationens gebyrvarenummer på listen. For eksempel S0001
-12. Vælg installationens gebyrvarenummer.
-    * Bemærk, at sammenholdelse ikke er blevet udført, siden du foretog ændringerne.  
-13. Klik på Opdater status for sammenholdelse.
-14. Klik på Gennemse i handlingsruden.
-15. Klik på Detaljer om sammenholdelse.
-    * Den nye linje med tjenester behøver ikke at blive sammenholdt, så status forbliver "Ikke udført".  
-16. Vælg produktkvitteringen for den lagervare, du har modtaget.
-    * Linjen med produktkvitteringen blev sammenholdt, men der er en uoverensstemmelse i antallet eller prisen, så den mislykkes.  
-17. Angiv et tal i feltet Enhedspris.
-    * Nu, da enhedsprisen passer, opdateres status til Fuldført. Hvis politikken tillader uoverensstemmelser, eller hvis sammenholdelse kun er en advarsel, kan du stadig bogføre fakturaen.  
-18. Luk siden.
-19. Klik på Bogfør.
-20. Luk formularen.
-    * Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.  
+## <a name="create-a-vendor-invoice"></a><span data-ttu-id="9866e-129">Oprette en kreditorfaktura</span><span class="sxs-lookup"><span data-stu-id="9866e-129">Create a vendor invoice</span></span>
+1. <span data-ttu-id="9866e-130">Gå til Debitor > Indkøbsordrer > Indkøbsordrer, der er modtaget, men ikke faktureret.</span><span class="sxs-lookup"><span data-stu-id="9866e-130">Go to Accounts payable > Purchase orders > Purchase orders received but not invoiced.</span></span>
+2. <span data-ttu-id="9866e-131">Vælg den indkøbsordrelinje, du har oprettet.</span><span class="sxs-lookup"><span data-stu-id="9866e-131">Select the purchase order that you created.</span></span>
+3. <span data-ttu-id="9866e-132">Klik på Faktura i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9866e-132">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="9866e-133">Klik på Faktura.</span><span class="sxs-lookup"><span data-stu-id="9866e-133">Click Invoice.</span></span>
+5. <span data-ttu-id="9866e-134">Angiv fakturanummeret i feltet Nummer.</span><span class="sxs-lookup"><span data-stu-id="9866e-134">In the Number field, enter the invoice number.</span></span>
+6. <span data-ttu-id="9866e-135">Skriv en værdi i feltet Fakturabeskrivelse.</span><span class="sxs-lookup"><span data-stu-id="9866e-135">In the Invoice description field, type a value.</span></span>
+7. <span data-ttu-id="9866e-136">Indtast en dato i feltet Fakturadato.</span><span class="sxs-lookup"><span data-stu-id="9866e-136">In the Invoice date field, enter a date.</span></span>
+8. <span data-ttu-id="9866e-137">Angiv 1200 i feltet Enhedspris.</span><span class="sxs-lookup"><span data-stu-id="9866e-137">In the Unit price field, enter 1200.</span></span>
+9. <span data-ttu-id="9866e-138">Klik på Tilføj linje.</span><span class="sxs-lookup"><span data-stu-id="9866e-138">Click Add line.</span></span>
+10. <span data-ttu-id="9866e-139">Klik på rullelisten i feltet Varenummer for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="9866e-139">In the Item number field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="9866e-140">Find installationens gebyrvarenummer på listen.</span><span class="sxs-lookup"><span data-stu-id="9866e-140">In the list, find the installation charge item number.</span></span> <span data-ttu-id="9866e-141">For eksempel S0001</span><span class="sxs-lookup"><span data-stu-id="9866e-141">For example, S0001</span></span>
+12. <span data-ttu-id="9866e-142">Vælg installationens gebyrvarenummer.</span><span class="sxs-lookup"><span data-stu-id="9866e-142">Select the installation charge item number.</span></span>
+    * <span data-ttu-id="9866e-143">Bemærk, at sammenholdelse ikke er blevet udført, siden du foretog ændringerne.</span><span class="sxs-lookup"><span data-stu-id="9866e-143">Note that matching has not been performed since you made the changes.</span></span>  
+13. <span data-ttu-id="9866e-144">Klik på Opdater status for sammenholdelse.</span><span class="sxs-lookup"><span data-stu-id="9866e-144">Click Update match status.</span></span>
+14. <span data-ttu-id="9866e-145">Klik på Gennemse i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9866e-145">On the Action Pane, click Review.</span></span>
+15. <span data-ttu-id="9866e-146">Klik på Detaljer om sammenholdelse.</span><span class="sxs-lookup"><span data-stu-id="9866e-146">Click Matching details.</span></span>
+    * <span data-ttu-id="9866e-147">Den nye linje med tjenester behøver ikke at blive sammenholdt, så status forbliver "Ikke udført".</span><span class="sxs-lookup"><span data-stu-id="9866e-147">The new line with services does not need to be matched so the status stays "Not performed".</span></span>  
+16. <span data-ttu-id="9866e-148">Vælg produktkvitteringen for den lagervare, du har modtaget.</span><span class="sxs-lookup"><span data-stu-id="9866e-148">Select the product receipt for the inventory item that you received.</span></span>
+    * <span data-ttu-id="9866e-149">Linjen med produktkvitteringen blev sammenholdt, men der er en uoverensstemmelse i antallet eller prisen, så den mislykkes.</span><span class="sxs-lookup"><span data-stu-id="9866e-149">The line with the product receipt was matched but there is a mismatch of quantity or price so it fails.</span></span>  
+17. <span data-ttu-id="9866e-150">Angiv et tal i feltet Enhedspris.</span><span class="sxs-lookup"><span data-stu-id="9866e-150">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="9866e-151">Nu, da enhedsprisen passer, opdateres status til Fuldført.</span><span class="sxs-lookup"><span data-stu-id="9866e-151">Now that the unit price matches, the status is updated to Passed.</span></span> <span data-ttu-id="9866e-152">Hvis politikken tillader uoverensstemmelser, eller hvis sammenholdelse kun er en advarsel, kan du stadig bogføre fakturaen.</span><span class="sxs-lookup"><span data-stu-id="9866e-152">If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.</span></span>  
+18. <span data-ttu-id="9866e-153">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="9866e-153">Close the page.</span></span>
+19. <span data-ttu-id="9866e-154">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="9866e-154">Click Post.</span></span>
+20. <span data-ttu-id="9866e-155">Luk formularen.</span><span class="sxs-lookup"><span data-stu-id="9866e-155">Close the form.</span></span>
+    * <span data-ttu-id="9866e-156">Bemærk, at indkøbsordren ikke længere er angivet som modtaget, men ikke faktureret.</span><span class="sxs-lookup"><span data-stu-id="9866e-156">Note that the purchase order is no longer listed as received but not invoiced.</span></span>  
 
 

@@ -27,242 +27,229 @@ ms.lasthandoff: 05/25/2017
 
 ---
 
-# Designe et spørgeskema
-<a id="design-a-questionnaire" class="xliff"></a>
+# <a name="design-a-questionnaire"></a><span data-ttu-id="3bd26-105">Designe et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="3bd26-105">Design a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
+<span data-ttu-id="3bd26-106">I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-106">This topic describes the process for creating a questionnaire.</span></span> <span data-ttu-id="3bd26-107">Det første trin er at designe spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-107">The first step is to design the questionnaire.</span></span> <span data-ttu-id="3bd26-108">Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform.</span><span class="sxs-lookup"><span data-stu-id="3bd26-108">When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated.</span></span> 
 
-Et omhyggelig udformet spørgeskemaet kan være med til at øge kvaliteten af de oplysninger, du indsamler. Via et omhyggeligt design kan du vælge de relevante indstillinger på det relevante tidspunkt for et spørgeskema. Følgende punkter kan hjælpe dig med at planlægge et effektivt spørgeskema:
+<span data-ttu-id="3bd26-109">Et omhyggelig udformet spørgeskemaet kan være med til at øge kvaliteten af de oplysninger, du indsamler.</span><span class="sxs-lookup"><span data-stu-id="3bd26-109">A carefully designed questionnaire can help increase the quality of the data that you collect.</span></span> <span data-ttu-id="3bd26-110">Via et omhyggeligt design kan du vælge de relevante indstillinger på det relevante tidspunkt for et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-110">Through careful design, you can better select the appropriate options at the appropriate time for a questionnaire.</span></span> <span data-ttu-id="3bd26-111">Følgende punkter kan hjælpe dig med at planlægge et effektivt spørgeskema:</span><span class="sxs-lookup"><span data-stu-id="3bd26-111">The following points can help you plan an effective questionnaire:</span></span>
 
--   Definer klart formålet med spørgeskemaet for at sikre, at spørgsmålene understøtter formålet.
--   Bestem den enkeltperson eller den gruppe af personer, der skal udfylde spørgeskemaet.
--   Skriv spørgsmål, der skal fremgå af spørgeskemaet, og medtag svarmuligheder, hvis det er relevant.
--   Sørg for, at spørgeskemaet flyder logisk, så svarpersonernes interesse fastholdes.
--   Opstil spørgsmål og svar i den rækkefølge, de skal præsenteres i for svarpersonerne.
--   Beslutte, hvordan resultaterne skal evalueres, hvis det er relevant.
--   Find ud af, om du har brug for yderligere funktioner. Bestem f.eks. om og hvordan resultater skal kategoriseres, om en tidsfrist er nødvendig, eller om alle spørgsmål skal være obligatoriske.
+-   <span data-ttu-id="3bd26-112">Definer klart formålet med spørgeskemaet for at sikre, at spørgsmålene understøtter formålet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-112">Clearly define the purpose of the questionnaire to help guarantee that the questions support the purpose.</span></span>
+-   <span data-ttu-id="3bd26-113">Bestem den enkeltperson eller den gruppe af personer, der skal udfylde spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-113">Determine the individual person or the group of people who should complete the questionnaire.</span></span>
+-   <span data-ttu-id="3bd26-114">Skriv spørgsmål, der skal fremgå af spørgeskemaet, og medtag svarmuligheder, hvis det er relevant.</span><span class="sxs-lookup"><span data-stu-id="3bd26-114">Write questions that will appear on the questionnaire, and include answer choices, if applicable.</span></span>
+-   <span data-ttu-id="3bd26-115">Sørg for, at spørgeskemaet flyder logisk, så svarpersonernes interesse fastholdes.</span><span class="sxs-lookup"><span data-stu-id="3bd26-115">Be sure that the questionnaire flows logically, so that respondents remain engaged.</span></span>
+-   <span data-ttu-id="3bd26-116">Opstil spørgsmål og svar i den rækkefølge, de skal præsenteres i for svarpersonerne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-116">Arrange questions and answers in the order that they should be presented to respondents in.</span></span>
+-   <span data-ttu-id="3bd26-117">Beslutte, hvordan resultaterne skal evalueres, hvis det er relevant.</span><span class="sxs-lookup"><span data-stu-id="3bd26-117">Decide how the results should be evaluated, if applicable.</span></span>
+-   <span data-ttu-id="3bd26-118">Find ud af, om du har brug for yderligere funktioner.</span><span class="sxs-lookup"><span data-stu-id="3bd26-118">Decide whether you’ll need additional features.</span></span> <span data-ttu-id="3bd26-119">Bestem f.eks. om og hvordan resultater skal kategoriseres, om en tidsfrist er nødvendig, eller om alle spørgsmål skal være obligatoriske.</span><span class="sxs-lookup"><span data-stu-id="3bd26-119">For example, determine whether and how results should be categorized, whether a time limit is required, or whether all the questions will be mandatory.</span></span>
 
-Designfasen indeholder fire kategorier af opgaver, der skal udføres i denne rækkefølge:
+<span data-ttu-id="3bd26-120">Designfasen indeholder fire kategorier af opgaver, der skal udføres i denne rækkefølge:</span><span class="sxs-lookup"><span data-stu-id="3bd26-120">The design phase includes four categories of tasks that you must complete in this order:</span></span>
 
-1.  Angiv forudsætninger efter behov.
-2.  Angivelse af svargrupper og svar, hvis det er relevant.
-3.  Angivelse af spørgsmål og deres tilknytning til svargrupperne.
-4.  Opret selve spørgeskemaet, og føj spørgsmål til det.
+1.  <span data-ttu-id="3bd26-121">Angiv forudsætninger efter behov.</span><span class="sxs-lookup"><span data-stu-id="3bd26-121">Set up prerequisites, as required.</span></span>
+2.  <span data-ttu-id="3bd26-122">Angivelse af svargrupper og svar, hvis det er relevant.</span><span class="sxs-lookup"><span data-stu-id="3bd26-122">Set up answer groups and answers, if applicable.</span></span>
+3.  <span data-ttu-id="3bd26-123">Angivelse af spørgsmål og deres tilknytning til svargrupperne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-123">Set up questions and their association with the answer groups.</span></span>
+4.  <span data-ttu-id="3bd26-124">Opret selve spørgeskemaet, og føj spørgsmål til det.</span><span class="sxs-lookup"><span data-stu-id="3bd26-124">Set up the questionnaire itself, and attach questions to it.</span></span>
 
-## Forudsætninger
-<a id="prerequisites" class="xliff"></a>
-Visse forudsætninger skal være på plads, før du kan oprette spørgeskemaer, svar og spørgsmål. Det er imidlertid ikke alle forudsætninger, der er påkrævet for at få fuld funktionalitet.
+## <a name="prerequisites"></a><span data-ttu-id="3bd26-125">Forudsætninger</span><span class="sxs-lookup"><span data-stu-id="3bd26-125">Prerequisites</span></span>
+<span data-ttu-id="3bd26-126">Visse forudsætninger skal være på plads, før du kan oprette spørgeskemaer, svar og spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-126">Some prerequisites must be in place before you can create questionnaires, answers, and questions.</span></span> <span data-ttu-id="3bd26-127">Det er imidlertid ikke alle forudsætninger, der er påkrævet for at få fuld funktionalitet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-127">However, not all prerequisites are required for full functionality.</span></span>
 
-### Påkrævet
-<a id="required" class="xliff"></a>
+### <a name="required"></a><span data-ttu-id="3bd26-128">Påkrævet</span><span class="sxs-lookup"><span data-stu-id="3bd26-128">Required</span></span>
 
-| Forudsætning        | Beskrivelse                |
+| <span data-ttu-id="3bd26-129">Forudsætning</span><span class="sxs-lookup"><span data-stu-id="3bd26-129">Prerequisite</span></span>        | <span data-ttu-id="3bd26-130">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="3bd26-130">Description</span></span>                |
 |---------------------|----------------------------|
-| Spørgeskematyper | Kategoriser spørgeskemaer. |
-| Spørgsmålstyper      | Kategoriser spørgsmål.      |
+| <span data-ttu-id="3bd26-131">Spørgeskematyper</span><span class="sxs-lookup"><span data-stu-id="3bd26-131">Questionnaire types</span></span> | <span data-ttu-id="3bd26-132">Kategoriser spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-132">Categorize questionnaires.</span></span> |
+| <span data-ttu-id="3bd26-133">Spørgsmålstyper</span><span class="sxs-lookup"><span data-stu-id="3bd26-133">Question types</span></span>      | <span data-ttu-id="3bd26-134">Kategoriser spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-134">Categorize questions.</span></span>      |
 
-### Valgfri
-<a id="optional" class="xliff"></a>
+### <a name="optional"></a><span data-ttu-id="3bd26-135">Valgfri</span><span class="sxs-lookup"><span data-stu-id="3bd26-135">Optional</span></span>
 
-| Forudsætning             | Beskrivelse                                                    |
+| <span data-ttu-id="3bd26-136">Forudsætning</span><span class="sxs-lookup"><span data-stu-id="3bd26-136">Prerequisite</span></span>             | <span data-ttu-id="3bd26-137">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="3bd26-137">Description</span></span>                                                    |
 |--------------------------|----------------------------------------------------------------|
-| Spørgeskemaparametre | Ret grundlæggende kontrolelementer og standardindstillingerne for spørgeskemaer. |
+| <span data-ttu-id="3bd26-138">Spørgeskemaparametre</span><span class="sxs-lookup"><span data-stu-id="3bd26-138">Questionnaire parameters</span></span> | <span data-ttu-id="3bd26-139">Ret grundlæggende kontrolelementer og standardindstillingerne for spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-139">Modify basic controls and default settings for questionnaires.</span></span> |
 
-### Spørgeskematyper
-<a id="questionnaire-types" class="xliff"></a>
+### <a name="questionnaire-types"></a><span data-ttu-id="3bd26-140">Spørgeskematyper</span><span class="sxs-lookup"><span data-stu-id="3bd26-140">Questionnaire types</span></span>
 
-Spørgeskematyper er obligatoriske og skal tildeles, når du opretter et spørgeskema. Spørgeskematyper gør det lettere at administrere og klassificere spørgeskemaer. Brug spørgeskematyper til at klassificere spørgeskemaer og skelne dem fra hinanden. Hvis du f.eks. har flere spørgeskemaer at vælge mellem, kan du filtrere dem for at gøre det nemmere at finde et bestemt spørgeskema. Følgende er eksempler på spørgeskematyper:
+<span data-ttu-id="3bd26-141">Spørgeskematyper er obligatoriske og skal tildeles, når du opretter et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-141">Questionnaire types are required and must be assigned when you create a questionnaire.</span></span> <span data-ttu-id="3bd26-142">Spørgeskematyper gør det lettere at administrere og klassificere spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-142">Questionnaire types help you manage and classify questionnaires more easily.</span></span> <span data-ttu-id="3bd26-143">Brug spørgeskematyper til at klassificere spørgeskemaer og skelne dem fra hinanden.</span><span class="sxs-lookup"><span data-stu-id="3bd26-143">Use questionnaire types to classify questionnaires and differentiate them from each other.</span></span> <span data-ttu-id="3bd26-144">Hvis du f.eks. har flere spørgeskemaer at vælge mellem, kan du filtrere dem for at gøre det nemmere at finde et bestemt spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-144">For example, if you have multiple questionnaires to select from, you can filter them by type to help make it easier to find a particular questionnaire.</span></span> <span data-ttu-id="3bd26-145">Følgende er eksempler på spørgeskematyper:</span><span class="sxs-lookup"><span data-stu-id="3bd26-145">Here are some examples of questionnaire types:</span></span>
 
--   Personaleudvikling
--   Kundemeningsmålinger
--   Gennemse proces
+-   <span data-ttu-id="3bd26-146">Personaleudvikling</span><span class="sxs-lookup"><span data-stu-id="3bd26-146">Human resource development</span></span>
+-   <span data-ttu-id="3bd26-147">Kundemeningsmålinger</span><span class="sxs-lookup"><span data-stu-id="3bd26-147">Customer surveys</span></span>
+-   <span data-ttu-id="3bd26-148">Gennemse proces</span><span class="sxs-lookup"><span data-stu-id="3bd26-148">Review process</span></span>
 
-### Spørgsmålstyper
-<a id="question-types" class="xliff"></a>
+### <a name="question-types"></a><span data-ttu-id="3bd26-149">Spørgsmålstyper</span><span class="sxs-lookup"><span data-stu-id="3bd26-149">Question types</span></span>
 
-Spørgsmålstyper er obligatoriske og skal tildeles, når du opretter et spørgsmål. 
+<span data-ttu-id="3bd26-150">Spørgsmålstyper er obligatoriske og skal tildeles, når du opretter et spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-150">Question types are required and must be assigned when you create a question.</span></span> 
 
-Brug spørgsmålstyper til at kategorisere spørgsmål i forbindelse med rapporter. Spørgsmålstyper gør det også nemmere at finde spørgsmål, fordi du kan bruge typer som filtre på siden **Spørgsmål**. Følgende er eksempler på spørgsmålstyper:
+<span data-ttu-id="3bd26-151">Brug spørgsmålstyper til at kategorisere spørgsmål i forbindelse med rapporter.</span><span class="sxs-lookup"><span data-stu-id="3bd26-151">Use question types to categorize questions for reporting.</span></span> <span data-ttu-id="3bd26-152">Spørgsmålstyper gør det også nemmere at finde spørgsmål, fordi du kan bruge typer som filtre på siden **Spørgsmål**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-152">Question types also make it easier to find questions, because you can use types as filters on the **Questions** page.</span></span> <span data-ttu-id="3bd26-153">Følgende er eksempler på spørgsmålstyper:</span><span class="sxs-lookup"><span data-stu-id="3bd26-153">Here are some examples of question types:</span></span>
 
--   Personale
--   Forretningsadministration
--   Kursusevaluering
+-   <span data-ttu-id="3bd26-154">Personale</span><span class="sxs-lookup"><span data-stu-id="3bd26-154">Human resource</span></span>
+-   <span data-ttu-id="3bd26-155">Forretningsadministration</span><span class="sxs-lookup"><span data-stu-id="3bd26-155">Managing business</span></span>
+-   <span data-ttu-id="3bd26-156">Kursusevaluering</span><span class="sxs-lookup"><span data-stu-id="3bd26-156">Course evaluation</span></span>
 
-### Spørgeskemaparametre
-<a id="questionnaire-parameters" class="xliff"></a>
+### <a name="questionnaire-parameters"></a><span data-ttu-id="3bd26-157">Spørgeskemaparametre</span><span class="sxs-lookup"><span data-stu-id="3bd26-157">Questionnaire parameters</span></span>
 
-Parametre for spørgeskemaer er valgfri. Du kan vælge ikke at bruge dem, afhængigt af dit firmas behov. 
+<span data-ttu-id="3bd26-158">Parametre for spørgeskemaer er valgfri.</span><span class="sxs-lookup"><span data-stu-id="3bd26-158">Questionnaire parameters are optional.</span></span> <span data-ttu-id="3bd26-159">Du kan vælge ikke at bruge dem, afhængigt af dit firmas behov.</span><span class="sxs-lookup"><span data-stu-id="3bd26-159">You might not use them, depending on your company’s requirements.</span></span> 
 
-Spørgeskemaparametre definerer anonymitet, nummerseriekoder og referencetyper for et spørgeskema. Når en organisation udsender et spørgeskema, kan muligheden for at give svarpersonerne mulighed at være anonyme være noget, der skal tages i betragtning. 
+<span data-ttu-id="3bd26-160">Spørgeskemaparametre definerer anonymitet, nummerseriekoder og referencetyper for et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-160">Questionnaire parameters define the anonymity, number sequence codes, and reference types of a questionnaire.</span></span> <span data-ttu-id="3bd26-161">Når en organisation udsender et spørgeskema, kan muligheden for at give svarpersonerne mulighed at være anonyme være noget, der skal tages i betragtning.</span><span class="sxs-lookup"><span data-stu-id="3bd26-161">When an organization distributes a questionnaire, the option to allow respondents to remain anonymous might be of concern.</span></span> 
 
-Nummerseriekoderne bruges til at organisere spørgsmål og svar. Baseret på disse nummerseriekoder tildeles værdier automatisk til disse elementer. 
+<span data-ttu-id="3bd26-162">Nummerseriekoderne bruges til at organisere spørgsmål og svar.</span><span class="sxs-lookup"><span data-stu-id="3bd26-162">The number sequence codes are used to organize questions and answers.</span></span> <span data-ttu-id="3bd26-163">Baseret på disse nummerseriekoder tildeles værdier automatisk til disse elementer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-163">Based on these number sequence codes, values are automatically assigned to items.</span></span> 
 
-Du bør definere alle parametre, før du begynder at oprette dataene. Du kan til enhver tid ændre parameterindstillinger for spørgeskemaer.
+<span data-ttu-id="3bd26-164">Du bør definere alle parametre, før du begynder at oprette dataene.</span><span class="sxs-lookup"><span data-stu-id="3bd26-164">You should define all parameters before you begin to create your data.</span></span> <span data-ttu-id="3bd26-165">Du kan til enhver tid ændre parameterindstillinger for spørgeskemaer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-165">You can modify the questionnaire parameter settings at any time.</span></span>
 
-## Spørgeskemakomponenter
-<a id="questionnaire-components" class="xliff"></a>
-Spørgeskemaer omfatter tre hovedelementer: svarsamlinger, der indeholder svar på spørgsmål med flere svarmuligheder, spørgsmål og selve spørgeskemaet. Du kan eventuelt også gruppere spørgsmål i et spørgeskema i resultatgrupper. Med resultatgrupper kan du kategorisere spørgsmål og få yderligere analyse af spørgeskemaet. 
+## <a name="questionnaire-components"></a><span data-ttu-id="3bd26-166">Spørgeskemakomponenter</span><span class="sxs-lookup"><span data-stu-id="3bd26-166">Questionnaire components</span></span>
+<span data-ttu-id="3bd26-167">Spørgeskemaer omfatter tre hovedelementer: svarsamlinger, der indeholder svar på spørgsmål med flere svarmuligheder, spørgsmål og selve spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-167">Questionnaires comprise three main elements: answer groups that contain the answers for multiple choice questions, questions, and the questionnaire itself.</span></span> <span data-ttu-id="3bd26-168">Du kan eventuelt også gruppere spørgsmål i et spørgeskema i resultatgrupper.</span><span class="sxs-lookup"><span data-stu-id="3bd26-168">You can optionally group the questions on a questionnaire into result groups.</span></span> <span data-ttu-id="3bd26-169">Med resultatgrupper kan du kategorisere spørgsmål og få yderligere analyse af spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-169">Result groups let you categorize questions and provide further analysis on the questionnaire.</span></span> 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+<span data-ttu-id="3bd26-170">[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)</span><span class="sxs-lookup"><span data-stu-id="3bd26-170">[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)</span></span>
 
-### Svarsamlinger og svar
-<a id="answer-groups-and-answers" class="xliff"></a>
+### <a name="answer-groups-and-answers"></a><span data-ttu-id="3bd26-171">Svarsamlinger og svar</span><span class="sxs-lookup"><span data-stu-id="3bd26-171">Answer groups and answers</span></span>
 
-Svarpersoner kan besvare et spørgsmål på to måder afhængigt af spørgsmålets emne:
+<span data-ttu-id="3bd26-172">Svarpersoner kan besvare et spørgsmål på to måder afhængigt af spørgsmålets emne:</span><span class="sxs-lookup"><span data-stu-id="3bd26-172">Respondents can answer a question in two ways, depending on the subject of the question:</span></span>
 
--   Åbne spørgsmål kræver ikke svar i et bestemt format. Svarpersonerne kan angive et svar som tekst, et tal, en dato eller et klokkeslæt. Disse spørgsmål kræver typisk, at svarpersonerne angiver subjektive oplysninger i deres svar som en udtalelse, en beskrivelse, en vurdering eller et estimat.
--   Lukkede spørgsmål kræver, at svarpersonen vælger et svar på en liste over mulige korrekte svar.
+-   <span data-ttu-id="3bd26-173">Åbne spørgsmål kræver ikke svar i et bestemt format.</span><span class="sxs-lookup"><span data-stu-id="3bd26-173">Open-ended questions don’t require responses in a specific format.</span></span> <span data-ttu-id="3bd26-174">Svarpersonerne kan angive et svar som tekst, et tal, en dato eller et klokkeslæt.</span><span class="sxs-lookup"><span data-stu-id="3bd26-174">Respondents can type a response as text, a number, a date, or a time.</span></span> <span data-ttu-id="3bd26-175">Disse spørgsmål kræver typisk, at svarpersonerne angiver subjektive oplysninger i deres svar som en udtalelse, en beskrivelse, en vurdering eller et estimat.</span><span class="sxs-lookup"><span data-stu-id="3bd26-175">These questions typically require that the respondents provide subjective information in their answers, such as an opinion, description, evaluation, or estimate.</span></span>
+-   <span data-ttu-id="3bd26-176">Lukkede spørgsmål kræver, at svarpersonen vælger et svar på en liste over mulige korrekte svar.</span><span class="sxs-lookup"><span data-stu-id="3bd26-176">Closed-ended questions require that the respondent select an answer in a list of possible correct answers.</span></span>
 
-For at angive en liste over mulige svar til lukkede spørgsmål kan du oprette svar på siden **Svarsamlinger**. 
+<span data-ttu-id="3bd26-177">For at angive en liste over mulige svar til lukkede spørgsmål kan du oprette svar på siden **Svarsamlinger**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-177">To provide a list of possible answers for closed-ended questions, you can create answers on the **Answer groups** page.</span></span> 
 
-Svarsamlinger og svar er komponenter, der udgør hovedafsnittet med oplysninger, som spørgsmålene oprettes ud fra. Når du har oprettet en svarsamling, kan du knytte svarsamlingen til et spørgsmål i feltet **Svarsamling** på siden **Spørgsmål**. 
+<span data-ttu-id="3bd26-178">Svarsamlinger og svar er komponenter, der udgør hovedafsnittet med oplysninger, som spørgsmålene oprettes ud fra.</span><span class="sxs-lookup"><span data-stu-id="3bd26-178">Answer groups and answers are components that make up the main body of information that questions are created from.</span></span> <span data-ttu-id="3bd26-179">Når du har oprettet en svarsamling, kan du knytte svarsamlingen til et spørgsmål i feltet **Svarsamling** på siden **Spørgsmål**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-179">After you create an answer group, you can associate the answer group with a question in the **Answer group** field on the **Questions** page.</span></span> 
 
-En svarsamling kan bruges til mere end ét spørgsmål i det samme spørgeskema og kan også bruges i mere end ét spørgeskema. 
+<span data-ttu-id="3bd26-180">En svarsamling kan bruges til mere end ét spørgsmål i det samme spørgeskema og kan også bruges i mere end ét spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-180">An answer group can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire.</span></span> 
 
->**Bemærk!** Hvis du redigerer svartekst i svargrupper, der allerede er brugt i udfyldte spørgeskemaer, kan det blive vanskeligt at evaluere data, og resultaterne af spørgeskemaet er muligvis ikke længere gyldige. Hvis du skal ændre en svarsamling, kan du overveje at oprette en ny svargruppe i stedet for at ændre en eksisterende. Du kan ikke slette svargrupper, der er knyttet til et spørgsmål eller svar, eller som er besvaret.
+><span data-ttu-id="3bd26-181">**Bemærk!** Hvis du redigerer svartekst i svargrupper, der allerede er brugt i udfyldte spørgeskemaer, kan det blive vanskeligt at evaluere data, og resultaterne af spørgeskemaet er muligvis ikke længere gyldige.</span><span class="sxs-lookup"><span data-stu-id="3bd26-181">**Note** If you modify answer text in answer groups that have already been used on completed questionnaires, data can become difficult to evaluate, and questionnaire results might no longer be valid.</span></span> <span data-ttu-id="3bd26-182">Hvis du skal ændre en svarsamling, kan du overveje at oprette en ny svargruppe i stedet for at ændre en eksisterende.</span><span class="sxs-lookup"><span data-stu-id="3bd26-182">If you must change an answer group, consider creating a new answer group instead of changing an existing one.</span></span> <span data-ttu-id="3bd26-183">Du kan ikke slette svargrupper, der er knyttet til et spørgsmål eller svar, eller som er besvaret.</span><span class="sxs-lookup"><span data-stu-id="3bd26-183">You can't delete answer groups that are attached to a question or answer, or that have been answered.</span></span>
 
-### Spørgsmål
-<a id="questions" class="xliff"></a>
+### <a name="questions"></a><span data-ttu-id="3bd26-184">Spørgsmål</span><span class="sxs-lookup"><span data-stu-id="3bd26-184">Questions</span></span>
 
-Et spørgeskema skal indeholde spørgsmål. Spørgsmål kan enten være åbne eller lukkede.
+<span data-ttu-id="3bd26-185">Et spørgeskema skal indeholde spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-185">A questionnaire must contain questions.</span></span> <span data-ttu-id="3bd26-186">Spørgsmål kan enten være åbne eller lukkede.</span><span class="sxs-lookup"><span data-stu-id="3bd26-186">Questions can be either open-ended or closed-ended.</span></span>
 
--   Svar på spørgsmål med åbne svarmuligheder kontrolleres ikke, og svarpersonerne kan skrive deres svar.
--   Lukkede spørgsmål kræver en liste over foruddefinerede svarindstillinger, og spørgsmålene kan struktureres, så en svarperson kan vælge flere svarmuligheder. Spørgsmål skal være designet til at indhente specifikke oplysninger fra en svarperson og skal være kædet sammen med en svarsamling, der indeholder indstillinger for svar for hvert lukket spørgsmål. 
-    >**Bemærk!** Før du kan definere lukkede spørgsmål, skal du oprette svarsamlinger og svar.
+-   <span data-ttu-id="3bd26-187">Svar på spørgsmål med åbne svarmuligheder kontrolleres ikke, og svarpersonerne kan skrive deres svar.</span><span class="sxs-lookup"><span data-stu-id="3bd26-187">The responses to open-ended questions aren't controlled, and respondents can type their answers.</span></span>
+-   <span data-ttu-id="3bd26-188">Lukkede spørgsmål kræver en liste over foruddefinerede svarindstillinger, og spørgsmålene kan struktureres, så en svarperson kan vælge flere svarmuligheder.</span><span class="sxs-lookup"><span data-stu-id="3bd26-188">Closed-ended questions require a list of predefined response options, and the questions can be structured to let a respondent select multiple responses.</span></span> <span data-ttu-id="3bd26-189">Spørgsmål skal være designet til at indhente specifikke oplysninger fra en svarperson og skal være kædet sammen med en svarsamling, der indeholder indstillinger for svar for hvert lukket spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-189">Questions should be designed to elicit specific information from a respondent and must be linked to an answer group that provides the response options for each closed-ended question.</span></span> 
+    ><span data-ttu-id="3bd26-190">**Bemærk!** Før du kan definere lukkede spørgsmål, skal du oprette svarsamlinger og svar.</span><span class="sxs-lookup"><span data-stu-id="3bd26-190">**Note** Before you can set up closed-ended questions, you must create answer groups and answers.</span></span>
 
-Spørgsmål kan arrangeres i et hierarki med betingede spørgsmål, så sekundære spørgsmål afhænger af det svar, som svarpersonen vælger til det forrige spørgsmål. Du kan skrive spørgsmålene først og så arrangere dem i et hierarki senere.
+<span data-ttu-id="3bd26-191">Spørgsmål kan arrangeres i et hierarki med betingede spørgsmål, så sekundære spørgsmål afhænger af det svar, som svarpersonen vælger til det forrige spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-191">Questions can be arranged in a conditional question hierarchy, so that secondary questions depend on the answer that the respondent selects for the previous question.</span></span> <span data-ttu-id="3bd26-192">Du kan skrive spørgsmålene først og så arrangere dem i et hierarki senere.</span><span class="sxs-lookup"><span data-stu-id="3bd26-192">You can write the questions first and then arrange them into a hierarchy later.</span></span>
 
-## Oprette spørgeskemaer
-<a id="setting-up-questionnaires" class="xliff"></a>
->**Bemærk!**
->  Før du kan oprette et spørgeskema, skal du angive svar, spørgsmål og forudsætninger. 
+## <a name="setting-up-questionnaires"></a><span data-ttu-id="3bd26-193">Oprette spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="3bd26-193">Setting up questionnaires</span></span>
+><span data-ttu-id="3bd26-194">**Bemærk!**
+>  Før du kan oprette et spørgeskema, skal du angive svar, spørgsmål og forudsætninger.</span><span class="sxs-lookup"><span data-stu-id="3bd26-194">**Note**
+ Before you can set up a questionnaire, you must set up answers, questions, and prerequisites.</span></span> 
 
-Til hvert spørgeskema kan du angive følgende oplysninger:
+<span data-ttu-id="3bd26-195">Til hvert spørgeskema kan du angive følgende oplysninger:</span><span class="sxs-lookup"><span data-stu-id="3bd26-195">For each questionnaire, you can specify the following information:</span></span>
 
--   Samlet timeantal eller tidsgrænse for besvarelse af obligatoriske spørgsmål.
--   Om alle spørgsmål skal besvares.
--   Om der skal beregnes point på et spørgeskema.
--   Hvordan resultater skal kategoriseres.
--   Om spørgeskemaet skal være tilgængelige for et begrænset antal svarpersoner.
--   Om der skal vises en formskabelon som baggrund til hver side i spørgeskemaet.
--   Om der kræves yderligere bemærkninger til at tydeliggøre formålet med spørgeskemaet for svarpersonerne.
--   Om spørgsmålene skal vises i en fast rækkefølge, eller om de skal vælges i tilfældig rækkefølge fra en pulje.
--   Om spørgsmål kun bliver stillet, hvis der gives bestemte svarmuligheder til foregående svar.
+-   <span data-ttu-id="3bd26-196">Samlet timeantal eller tidsgrænse for besvarelse af obligatoriske spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-196">The total time or time limit to answer mandatory questions.</span></span>
+-   <span data-ttu-id="3bd26-197">Om alle spørgsmål skal besvares.</span><span class="sxs-lookup"><span data-stu-id="3bd26-197">Whether all questions are mandatory.</span></span>
+-   <span data-ttu-id="3bd26-198">Om der skal beregnes point på et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-198">Whether to calculate points on a questionnaire.</span></span>
+-   <span data-ttu-id="3bd26-199">Hvordan resultater skal kategoriseres.</span><span class="sxs-lookup"><span data-stu-id="3bd26-199">How to categorize results.</span></span>
+-   <span data-ttu-id="3bd26-200">Om spørgeskemaet skal være tilgængelige for et begrænset antal svarpersoner.</span><span class="sxs-lookup"><span data-stu-id="3bd26-200">Whether the questionnaire will be available to a restricted set of respondents.</span></span>
+-   <span data-ttu-id="3bd26-201">Om der skal vises en formskabelon som baggrund til hver side i spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-201">Whether a form template should be displayed as a background behind each page of the questionnaire.</span></span>
+-   <span data-ttu-id="3bd26-202">Om der kræves yderligere bemærkninger til at tydeliggøre formålet med spørgeskemaet for svarpersonerne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-202">Whether additional notes are required in order to clarify the intent of the questionnaire for the respondents.</span></span>
+-   <span data-ttu-id="3bd26-203">Om spørgsmålene skal vises i en fast rækkefølge, eller om de skal vælges i tilfældig rækkefølge fra en pulje.</span><span class="sxs-lookup"><span data-stu-id="3bd26-203">Whether to display questions in a fixed order or randomly select them from a pool.</span></span>
+-   <span data-ttu-id="3bd26-204">Om spørgsmål kun bliver stillet, hvis der gives bestemte svarmuligheder til foregående svar.</span><span class="sxs-lookup"><span data-stu-id="3bd26-204">Whether questions will be asked only if specific responses are given for previous answers.</span></span>
 
-### Oprette et spørgeskema
-<a id="set-up-a-questionnaire" class="xliff"></a>
+### <a name="set-up-a-questionnaire"></a><span data-ttu-id="3bd26-205">Oprette et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="3bd26-205">Set up a questionnaire</span></span>
 
-Den primære side, som du kan bruge til at oprette et spørgeskema, er siden **Spørgeskemaer**. Når du vil oprette et spørgeskema, skal du udføre følgende opgaver i rækkefølge:
+<span data-ttu-id="3bd26-206">Den primære side, som du kan bruge til at oprette et spørgeskema, er siden **Spørgeskemaer**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-206">The primary page that you use to set up a questionnaire is the **Questionnaires** page.</span></span> <span data-ttu-id="3bd26-207">Når du vil oprette et spørgeskema, skal du udføre følgende opgaver i rækkefølge:</span><span class="sxs-lookup"><span data-stu-id="3bd26-207">To set up a questionnaire, complete the following tasks in order:</span></span>
 
-1.  Opret et spørgeskema.
-2.  Benyt en af følgende fremgangsmåder til at knytte spørgsmål til spørgeskemaet:
-    -   Hvis du bruger resultatgrupper, kan du føje spørgsmål til et spørgeskema ved hjælp af resultatgrupper. Opret først resultatgrupperne til spørgeskemaet, og føj derefter spørgsmål til resultatgrupperne.
-    -   Hvis du ikke bruger resultatgrupper, kan du knytte spørgsmål direkte til spørgeskemaet.
+1.  <span data-ttu-id="3bd26-208">Opret et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-208">Create a questionnaire.</span></span>
+2.  <span data-ttu-id="3bd26-209">Benyt en af følgende fremgangsmåder til at knytte spørgsmål til spørgeskemaet:</span><span class="sxs-lookup"><span data-stu-id="3bd26-209">Follow one of these steps to attach questions to the questionnaire:</span></span>
+    -   <span data-ttu-id="3bd26-210">Hvis du bruger resultatgrupper, kan du føje spørgsmål til et spørgeskema ved hjælp af resultatgrupper.</span><span class="sxs-lookup"><span data-stu-id="3bd26-210">If you're using result groups, you can attach questions to a questionnaire by using result groups.</span></span> <span data-ttu-id="3bd26-211">Opret først resultatgrupperne til spørgeskemaet, og føj derefter spørgsmål til resultatgrupperne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-211">First set up the result groups for the questionnaire, and then add questions to the result groups.</span></span>
+    -   <span data-ttu-id="3bd26-212">Hvis du ikke bruger resultatgrupper, kan du knytte spørgsmål direkte til spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-212">If you aren't using result groups, you can attach questions directly to the questionnaire.</span></span>
 
-3.  Opret et hierarki for betingede spørgsmål, hvis det er nødvendigt.
-4.  Test spørgeskemaet.
+3.  <span data-ttu-id="3bd26-213">Opret et hierarki for betingede spørgsmål, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="3bd26-213">Set up a conditional question hierarchy, if it's required.</span></span>
+4.  <span data-ttu-id="3bd26-214">Test spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-214">Test the questionnaire.</span></span>
 
-Klik på **Valider** på siden **Spørgeskemaer** for at teste, om det er korrekt sat sammen. Vi anbefaler dog også, at du udfylder spørgeskemaet og selv tester skemaet, før du distribuerer det.
+<span data-ttu-id="3bd26-215">Klik på **Valider** på siden **Spørgeskemaer** for at teste, om det er korrekt sat sammen.</span><span class="sxs-lookup"><span data-stu-id="3bd26-215">On the **Questionnaires** page, click **Validate** to test whether the questionnaire is assembled correctly.</span></span> <span data-ttu-id="3bd26-216">Vi anbefaler dog også, at du udfylder spørgeskemaet og selv tester skemaet, før du distribuerer det.</span><span class="sxs-lookup"><span data-stu-id="3bd26-216">However, it's also a good idea to complete the questionnaire and test it yourself before you distribute it.</span></span>
 
-### Ændre et spørgeskema
-<a id="modify-a-questionnaire" class="xliff"></a>
+### <a name="modify-a-questionnaire"></a><span data-ttu-id="3bd26-217">Ændre et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="3bd26-217">Modify a questionnaire</span></span>
 
-Du kan udføre følgende opgaver på siden **Spørgeskemaer**:
+<span data-ttu-id="3bd26-218">Du kan udføre følgende opgaver på siden **Spørgeskemaer**:</span><span class="sxs-lookup"><span data-stu-id="3bd26-218">You can complete the following tasks on the **Questionnaires** page:</span></span>
 
--   Ret oplysninger i spørgeskemaet, f.eks. resultatgrupper og spørgsmål.
--   Slette og tilføje spørgsmål.
--   Foretage ændringer i resultatgrupperne og sekvensnummeret. 
+-   <span data-ttu-id="3bd26-219">Ret oplysninger i spørgeskemaet, f.eks. resultatgrupper og spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-219">Modify information in the questionnaire, such as the result groups and questions.</span></span>
+-   <span data-ttu-id="3bd26-220">Slette og tilføje spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-220">Delete and add questions.</span></span>
+-   <span data-ttu-id="3bd26-221">Foretage ændringer i resultatgrupperne og sekvensnummeret.</span><span class="sxs-lookup"><span data-stu-id="3bd26-221">Make changes in the result groups and sequence number.</span></span> 
 
->**Advarsel!** Vær forsigtig, når du ændrer de spørgeskemaer der allerede er udfyldt. Ændringer kan reducere statistiknøjagtigheden, hvilket kan resultere i et dårligt grundlag for evalueringen. Overvej at oprette et nyt spørgsmål i stedet for at ændre et spørgsmål, som allerede er besvaret.
+><span data-ttu-id="3bd26-222">**Advarsel!** Vær forsigtig, når du ændrer de spørgeskemaer der allerede er udfyldt.</span><span class="sxs-lookup"><span data-stu-id="3bd26-222">**Caution** Be careful when you change questionnaires that have already been answered.</span></span> <span data-ttu-id="3bd26-223">Ændringer kan reducere statistiknøjagtigheden, hvilket kan resultere i et dårligt grundlag for evalueringen.</span><span class="sxs-lookup"><span data-stu-id="3bd26-223">Changes can reduce the accuracy of statistics and therefore make them a poor basis for evaluation.</span></span> <span data-ttu-id="3bd26-224">Overvej at oprette et nyt spørgsmål i stedet for at ændre et spørgsmål, som allerede er besvaret.</span><span class="sxs-lookup"><span data-stu-id="3bd26-224">Consider creating a new question instead of changing a question that has already been answered.</span></span>
 
-Du kan ikke slette følgende typer spørgsmål i et spørgeskema:
+<span data-ttu-id="3bd26-225">Du kan ikke slette følgende typer spørgsmål i et spørgeskema:</span><span class="sxs-lookup"><span data-stu-id="3bd26-225">In a questionnaire, you can't delete the following types of questions:</span></span>
 
--   Spørgsmål, der er knyttet til et spørgeskema
--   Spørgsmål, der allerede er besvaret, og som derfor findes i dialogboksen **Svar**.
+-   <span data-ttu-id="3bd26-226">Spørgsmål, der er knyttet til et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="3bd26-226">Questions that are attached to a questionnaire</span></span>
+-   <span data-ttu-id="3bd26-227">Spørgsmål, der allerede er besvaret, og som derfor findes i dialogboksen **Svar**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-227">Questions that have already been answered and therefore appear in the **Answers** dialog box.</span></span>
 
-### Resultatgrupper
-<a id="result-groups" class="xliff"></a>
+### <a name="result-groups"></a><span data-ttu-id="3bd26-228">Resultatgrupper</span><span class="sxs-lookup"><span data-stu-id="3bd26-228">Result groups</span></span>
 
-Resultatgrupper er valgfrie, når du føjer spørgsmål til et spørgeskema. 
+<span data-ttu-id="3bd26-229">Resultatgrupper er valgfrie, når du føjer spørgsmål til et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-229">Result groups are optional when you attach questions to a questionnaire.</span></span> 
 
-En resultatgruppe bruges til at beregne point og kategorisere resultaterne af et spørgeskema. Hvis du bruger resultatgrupper, kan du udføre følgende opgaver:
+<span data-ttu-id="3bd26-230">En resultatgruppe bruges til at beregne point og kategorisere resultaterne af et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-230">A result group is used to calculate points and categorize the results of a questionnaire.</span></span> <span data-ttu-id="3bd26-231">Hvis du bruger resultatgrupper, kan du udføre følgende opgaver:</span><span class="sxs-lookup"><span data-stu-id="3bd26-231">If you use result groups, you can perform the following tasks:</span></span>
 
--   Evaluere resultaterne af spørgeskemaet på baggrund af pointstatistik.
--   Evaluere en svarpersons point for hver resultatgruppe, som du opretter.
--   Opret statistik for hver resultatgruppe, som kan hjælpe dig med at analysere resultaterne.
--   Udskrive en rapport, der viser resultaterne for hver resultatgruppe og også valgfri point/tekster, der er baseret på point, som er optjent i hver resultatgruppe.
+-   <span data-ttu-id="3bd26-232">Evaluere resultaterne af spørgeskemaet på baggrund af pointstatistik.</span><span class="sxs-lookup"><span data-stu-id="3bd26-232">Evaluate questionnaire results, based on point statistics.</span></span>
+-   <span data-ttu-id="3bd26-233">Evaluere en svarpersons point for hver resultatgruppe, som du opretter.</span><span class="sxs-lookup"><span data-stu-id="3bd26-233">Evaluate a respondent’s score for each result group that you set up.</span></span>
+-   <span data-ttu-id="3bd26-234">Opret statistik for hver resultatgruppe, som kan hjælpe dig med at analysere resultaterne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-234">Generate statistics for each result group to help you analyze results.</span></span>
+-   <span data-ttu-id="3bd26-235">Udskrive en rapport, der viser resultaterne for hver resultatgruppe og også valgfri point/tekster, der er baseret på point, som er optjent i hver resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-235">Print a report that shows results for each result group, and also optional points/texts that are based on points that are earned in each result group.</span></span>
 
-> **Bemærk!**
->  Inden du kan konfigurere resultatgrupper, skal du fuldføre følgende opgaver:
+> <span data-ttu-id="3bd26-236">**Bemærk!**
+>  Inden du kan konfigurere resultatgrupper, skal du fuldføre følgende opgaver:</span><span class="sxs-lookup"><span data-stu-id="3bd26-236">**Note**
+  Before you can set up result groups, you must complete the following tasks:</span></span>
 
--   Konfigurere lukkede spørgsmål. Til et lukket spørgsmål skal inputtypen på siden **Spørgsmål** være **Afkrydsningsfelt**, **Alternativknap** eller **Kombinationsboks**.
--   Definer point for svar i svargrupperne, der tildeles hvert spørgsmål.
--   Oprette et spørgeskema.
+-   <span data-ttu-id="3bd26-237">Konfigurere lukkede spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-237">Set up closed-ended questions.</span></span> <span data-ttu-id="3bd26-238">Til et lukket spørgsmål skal inputtypen på siden **Spørgsmål** være **Afkrydsningsfelt**, **Alternativknap** eller **Kombinationsboks**.</span><span class="sxs-lookup"><span data-stu-id="3bd26-238">For a closed-ended question, the input type on the **Questions** page must be **Check box**, **Alternative button**, or **Combo box**.</span></span>
+-   <span data-ttu-id="3bd26-239">Definer point for svar i svargrupperne, der tildeles hvert spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-239">Define points for answers in the answer groups that are assigned to each question.</span></span>
+-   <span data-ttu-id="3bd26-240">Oprette et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-240">Set up a questionnaire.</span></span>
 
-For at føje spørgsmål til et spørgeskema ved hjælp af resultatgrupper skal du først oprette resultatgrupper for spørgeskemaet og derefter føje spørgsmål til resultatgruppen. Hvis du ikke bruger resultatgrupper, kan du knytte spørgsmål direkte til et spørgeskema. 
+<span data-ttu-id="3bd26-241">For at føje spørgsmål til et spørgeskema ved hjælp af resultatgrupper skal du først oprette resultatgrupper for spørgeskemaet og derefter føje spørgsmål til resultatgruppen.</span><span class="sxs-lookup"><span data-stu-id="3bd26-241">To attach questions to a questionnaire by using result groups, first set up the result groups for the questionnaire, and then add questions to the result groups.</span></span> <span data-ttu-id="3bd26-242">Hvis du ikke bruger resultatgrupper, kan du knytte spørgsmål direkte til et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-242">If you don't use result groups, you can attach questions directly to a questionnaire.</span></span> 
 
-Du kan angive flere resultatgrupper for at evaluere point, som en svarperson optjener i hver kategori. Når et spørgeskema er fuldført, kan du få vist de point, der er opnået for hver resultatgruppe. 
+<span data-ttu-id="3bd26-243">Du kan angive flere resultatgrupper for at evaluere point, som en svarperson optjener i hver kategori.</span><span class="sxs-lookup"><span data-stu-id="3bd26-243">You can set up multiple result groups to evaluate the points that a respondent earns in each category.</span></span> <span data-ttu-id="3bd26-244">Når et spørgeskema er fuldført, kan du få vist de point, der er opnået for hver resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-244">After a questionnaire is completed, you can view the points that have been achieved for each result group.</span></span> 
 
-> **Tip!**
->  For at evaluere et spørgeskema ved at bruge point men ikke separate kategorier kan du føje alle spørgsmål til en enkelt resultatgruppe. 
+> <span data-ttu-id="3bd26-245">**Tip!**
+>  For at evaluere et spørgeskema ved at bruge point men ikke separate kategorier kan du føje alle spørgsmål til en enkelt resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-245">**Tip**
+   To evaluate a questionnaire by using points but not separate categories, you can add all questions to a single result group.</span></span> 
 
-For hver resultatgruppe kan du også oprette en eller flere pointbaserede meddelelser, som svarpersoner modtager, efter de har udfyldt et spørgeskema. Den tekst, der vises, kan variere alt efter det resultat, som en svarperson opnår i en resultatgruppe. For at bruge pointbaserede meddelelser skal du definere pointintervaller og en beskrivelse af hvert interval. Når en svarperson opnår et resultat i et bestemt interval, er teksten til det pågældende interval medtaget i resultatrapporten. 
+<span data-ttu-id="3bd26-246">For hver resultatgruppe kan du også oprette en eller flere pointbaserede meddelelser, som svarpersoner modtager, efter de har udfyldt et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-246">For each result group, you can also set up one or more point-based messages that respondents receive after they complete a questionnaire.</span></span> <span data-ttu-id="3bd26-247">Den tekst, der vises, kan variere alt efter det resultat, som en svarperson opnår i en resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-247">The text that is shown can vary, depending on the score that a respondent achieves in a result group.</span></span> <span data-ttu-id="3bd26-248">For at bruge pointbaserede meddelelser skal du definere pointintervaller og en beskrivelse af hvert interval.</span><span class="sxs-lookup"><span data-stu-id="3bd26-248">To use point-based messages, you must define point intervals and a description of each interval.</span></span> <span data-ttu-id="3bd26-249">Når en svarperson opnår et resultat i et bestemt interval, er teksten til det pågældende interval medtaget i resultatrapporten.</span><span class="sxs-lookup"><span data-stu-id="3bd26-249">When a respondent achieves a score in a specific interval, the text for that interval is included on the results report.</span></span> 
 
-Da en resultatgruppe vedrører points, der er knyttet til et bestemt sæt spørgsmål i et spørgeskema, kan du kun bruge en bestemt resultatgruppe til et spørgeskema.
+<span data-ttu-id="3bd26-250">Da en resultatgruppe vedrører points, der er knyttet til et bestemt sæt spørgsmål i et spørgeskema, kan du kun bruge en bestemt resultatgruppe til et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-250">Because a result group is related to the points that are associated with specific sets of questions on a questionnaire, you can use only a specific result group for a questionnaire.</span></span>
 
-#### Eksempel: Point/tekster til resultatgruppe 3
-<a id="example-pointstexts-for-result-group-3" class="xliff"></a>
+#### <a name="example-pointstexts-for-result-group-3"></a><span data-ttu-id="3bd26-251">Eksempel: Point/tekster til resultatgruppe 3</span><span class="sxs-lookup"><span data-stu-id="3bd26-251">Example: Points/texts for result group 3</span></span>
 
-Du bruger et spørgeskema til en ledertest med 15 spørgsmål i tre kategorier. Du opretter tre resultatgrupper og knytter fem spørgsmål til hver resultatgruppe. Point opsummeres så i de tre grupper. De tre resultatgrupper er som følger:
+<span data-ttu-id="3bd26-252">Du bruger et spørgeskema til en ledertest med 15 spørgsmål i tre kategorier.</span><span class="sxs-lookup"><span data-stu-id="3bd26-252">You're using a questionnaire for a leadership test that has 15 questions in three categories.</span></span> <span data-ttu-id="3bd26-253">Du opretter tre resultatgrupper og knytter fem spørgsmål til hver resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-253">You create three result groups and add five questions to each result group.</span></span> <span data-ttu-id="3bd26-254">Point opsummeres så i de tre grupper.</span><span class="sxs-lookup"><span data-stu-id="3bd26-254">Points are then totaled in the three groups.</span></span> <span data-ttu-id="3bd26-255">De tre resultatgrupper er som følger:</span><span class="sxs-lookup"><span data-stu-id="3bd26-255">The three result groups are as follows:</span></span>
 
--   Kreativitet
--   Lederevner
--   Teknisk kunnen
+-   <span data-ttu-id="3bd26-256">Kreativitet</span><span class="sxs-lookup"><span data-stu-id="3bd26-256">Creative abilities</span></span>
+-   <span data-ttu-id="3bd26-257">Lederevner</span><span class="sxs-lookup"><span data-stu-id="3bd26-257">Leadership abilities</span></span>
+-   <span data-ttu-id="3bd26-258">Teknisk kunnen</span><span class="sxs-lookup"><span data-stu-id="3bd26-258">Technical abilities</span></span>
 
-Hvis du vil bruge pointbaserede meddelelser, kan du angive tekstintervaller for hver resultatgruppe. Hvert spørgsmål tildeles to point. Derfor er det maksimale antal point i hver resultatgruppe 10. 
+<span data-ttu-id="3bd26-259">Hvis du vil bruge pointbaserede meddelelser, kan du angive tekstintervaller for hver resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-259">To use point-based messages, you set up text intervals for each result group.</span></span> <span data-ttu-id="3bd26-260">Hvert spørgsmål tildeles to point.</span><span class="sxs-lookup"><span data-stu-id="3bd26-260">Each question is assigned two points.</span></span> <span data-ttu-id="3bd26-261">Derfor er det maksimale antal point i hver resultatgruppe 10.</span><span class="sxs-lookup"><span data-stu-id="3bd26-261">Therefore, the maximum point total in each result group is 10.</span></span> 
 
-Følgende tabel viser de pointbaserede meddelelser, som du definerer for resultatgruppen "lederevner".
+<span data-ttu-id="3bd26-262">Følgende tabel viser de pointbaserede meddelelser, som du definerer for resultatgruppen "lederevner".</span><span class="sxs-lookup"><span data-stu-id="3bd26-262">The following table shows the point-based messages that you define for the “leadership abilities” result group.</span></span>
 
-| Pointinterval | Tekst                                       |
+| <span data-ttu-id="3bd26-263">Pointinterval</span><span class="sxs-lookup"><span data-stu-id="3bd26-263">Point interval</span></span> | <span data-ttu-id="3bd26-264">Tekst</span><span class="sxs-lookup"><span data-stu-id="3bd26-264">Text</span></span>                                       |
 |----------------|--------------------------------------------|
-| 1-3         | Du har gennemsnitlige lederevner.     |
-| 4-7         | Du har gode lederevner.        |
-| 8-10        | Du har fremragende lederevner. |
+| <span data-ttu-id="3bd26-265">1-3</span><span class="sxs-lookup"><span data-stu-id="3bd26-265">1 to 3</span></span>         | <span data-ttu-id="3bd26-266">Du har gennemsnitlige lederevner.</span><span class="sxs-lookup"><span data-stu-id="3bd26-266">You have average leadership abilities.</span></span>     |
+| <span data-ttu-id="3bd26-267">4-7</span><span class="sxs-lookup"><span data-stu-id="3bd26-267">4 to 7</span></span>         | <span data-ttu-id="3bd26-268">Du har gode lederevner.</span><span class="sxs-lookup"><span data-stu-id="3bd26-268">You have good leadership abilities.</span></span>        |
+| <span data-ttu-id="3bd26-269">8-10</span><span class="sxs-lookup"><span data-stu-id="3bd26-269">8 to 10</span></span>        | <span data-ttu-id="3bd26-270">Du har fremragende lederevner.</span><span class="sxs-lookup"><span data-stu-id="3bd26-270">You have outstanding leadership abilities.</span></span> |
 
-Du kan angive pointintervaller og tekster til hver resultatgruppe i et spørgeskema. Tekster, der svarer til hver svarpersons score, vises for hver resultatgruppe. 
+<span data-ttu-id="3bd26-271">Du kan angive pointintervaller og tekster til hver resultatgruppe i et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-271">You can set up point intervals and texts for each result group on a questionnaire.</span></span> <span data-ttu-id="3bd26-272">Tekster, der svarer til hver svarpersons score, vises for hver resultatgruppe.</span><span class="sxs-lookup"><span data-stu-id="3bd26-272">Texts that correspond to each respondent’s score are displayed for each result group.</span></span> 
 
-> **Bemærk!**
->  Du kan ændre intervaller og tekster. Hvis et spørgeskema er udfyldt, kan ændringer dog forårsage uoverensstemmelser mellem gamle og nye resultatrapporter.
+> <span data-ttu-id="3bd26-273">**Bemærk!**
+>  Du kan ændre intervaller og tekster.</span><span class="sxs-lookup"><span data-stu-id="3bd26-273">**Note**
+  You can change intervals and texts.</span></span> <span data-ttu-id="3bd26-274">Hvis et spørgeskema er udfyldt, kan ændringer dog forårsage uoverensstemmelser mellem gamle og nye resultatrapporter.</span><span class="sxs-lookup"><span data-stu-id="3bd26-274">However, if a questionnaire has been completed, changes might cause differences between previous and new result reports.</span></span>
 
-### Hierarkier med betingede spørgsmål
-<a id="conditional-question-hierarchies" class="xliff"></a>
+### <a name="conditional-question-hierarchies"></a><span data-ttu-id="3bd26-275">Hierarkier med betingede spørgsmål</span><span class="sxs-lookup"><span data-stu-id="3bd26-275">Conditional question hierarchies</span></span>
 
-Hierarkier med betingede spørgsmål er valgfrie, når du konfigurerer et spørgeskema. 
+<span data-ttu-id="3bd26-276">Hierarkier med betingede spørgsmål er valgfrie, når du konfigurerer et spørgeskema.</span><span class="sxs-lookup"><span data-stu-id="3bd26-276">Conditional question hierarchies are optional when you set up a questionnaire.</span></span> 
 
-> **Bemærk!**
->  Før du kan konfigurere et hierarki med betingede spørgsmål, skal du knytte spørgsmål, der har tildelte svargrupper, til spørgeskemaet. 
+> <span data-ttu-id="3bd26-277">**Bemærk!**
+>  Før du kan konfigurere et hierarki med betingede spørgsmål, skal du knytte spørgsmål, der har tildelte svargrupper, til spørgeskemaet.</span><span class="sxs-lookup"><span data-stu-id="3bd26-277">**Note**
+  Before you can set up a conditional question hierarchy, you must attach questions that have assigned answer groups to the questionnaire.</span></span> 
 
-Hvis du vil bruge betingede spørgsmål til at oprette et spørgsmålshierarki i et spørgeskema, kan du lade rækkefølgen, som spørgsmålene vises i, være afhængig af det svar, som en svarperson vælger for hvert spørgsmål. Hvis du baserer spørgsmålenes rækkefølge på en svarpersons svar, kan du ændre spørgeskemaet, efterhånden som efter svarpersonen færdiggør det.
+<span data-ttu-id="3bd26-278">Hvis du vil bruge betingede spørgsmål til at oprette et spørgsmålshierarki i et spørgeskema, kan du lade rækkefølgen, som spørgsmålene vises i, være afhængig af det svar, som en svarperson vælger for hvert spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-278">To use conditional questions to create a question hierarchy in a questionnaire, you can make the sequence that questions are presented in depend on the answer that a respondent selects for each question.</span></span> <span data-ttu-id="3bd26-279">Hvis du baserer spørgsmålenes rækkefølge på en svarpersons svar, kan du ændre spørgeskemaet, efterhånden som efter svarpersonen færdiggør det.</span><span class="sxs-lookup"><span data-stu-id="3bd26-279">By basing the question sequence on a respondent’s answer, you can modify the questionnaire as the respondent completes it.</span></span>
 
-#### Eksempler
-<a id="examples" class="xliff"></a>
+#### <a name="examples"></a><span data-ttu-id="3bd26-280">Eksempler</span><span class="sxs-lookup"><span data-stu-id="3bd26-280">Examples</span></span>
 
-En juridisk enhed tilbyder både varer og tjenester til kunderne. Som det ofte er tilfældet, køber nogle kunder kun varer, nogle køber kun tjenester, mens nogle køber begge både varer og tjenester. Når den juridiske enhed derfor distribuerer en undersøgelse om kundetilfredshed, anvender den en betinget struktur til spørgeskemaet, så kunder, som kun køber tjenester, ikke behøver at besvare spørgsmål om varer. 
+<span data-ttu-id="3bd26-281">En juridisk enhed tilbyder både varer og tjenester til kunderne.</span><span class="sxs-lookup"><span data-stu-id="3bd26-281">A legal entity offers both items and services to its customers.</span></span> <span data-ttu-id="3bd26-282">Som det ofte er tilfældet, køber nogle kunder kun varer, nogle køber kun tjenester, mens nogle køber begge både varer og tjenester.</span><span class="sxs-lookup"><span data-stu-id="3bd26-282">As typically occurs in such cases, some customers purchase only items, some purchase only services, and some purchase both items and services.</span></span> <span data-ttu-id="3bd26-283">Når den juridiske enhed derfor distribuerer en undersøgelse om kundetilfredshed, anvender den en betinget struktur til spørgeskemaet, så kunder, som kun køber tjenester, ikke behøver at besvare spørgsmål om varer.</span><span class="sxs-lookup"><span data-stu-id="3bd26-283">Therefore, when the legal entity distributes a customer satisfaction survey, it applies a conditional structure to the questionnaire, so that customers who purchase only services don't have to answer questions about items.</span></span> 
 
-Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Svar A til spørgsmål 1, er Spørgsmål 2 det næste i rækkefølgen af spørgsmål. Men hvis svarpersonen vælger Svar B til Spørgsmål 1, kan Spørgsmål 5 være det næste.
+<span data-ttu-id="3bd26-284">Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Svar A til spørgsmål 1, er Spørgsmål 2 det næste i rækkefølgen af spørgsmål.</span><span class="sxs-lookup"><span data-stu-id="3bd26-284">Alternatively, you set up a questionnaire so that if a respondent selects answer A for question 1, question 2 is next in the question sequence.</span></span> <span data-ttu-id="3bd26-285">Men hvis svarpersonen vælger Svar B til Spørgsmål 1, kan Spørgsmål 5 være det næste.</span><span class="sxs-lookup"><span data-stu-id="3bd26-285">However, if the respondent selects answer B for question 1, question 5 is next.</span></span>
 
-Se også
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a><span data-ttu-id="3bd26-286">Se også</span><span class="sxs-lookup"><span data-stu-id="3bd26-286">See also</span></span>
 --------
 
-[Brug af spørgeskemaer](questionnaires.md)
+[<span data-ttu-id="3bd26-287">Brug af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="3bd26-287">Using questionnaires</span></span>](questionnaires.md)
 
-[Distribution og udfyldning af et spørgeskema](distribute-questionnaires.md)
+[<span data-ttu-id="3bd26-288">Distribution og udfyldning af et spørgeskema</span><span class="sxs-lookup"><span data-stu-id="3bd26-288">Distributing and completing questionnaires</span></span>](distribute-questionnaires.md)
 
-[Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
+[<span data-ttu-id="3bd26-289">Visning og evaluering af resultaterne af spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="3bd26-289">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 

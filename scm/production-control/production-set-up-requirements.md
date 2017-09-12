@@ -20,65 +20,65 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2e39173ef6a27296a20d5f6e44ff6c728aa49c09
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b5df3c6c776a8dafdcfb3be7e2f273e01d70bcae
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="production-setup-requirements"></a>Krav til produktionsopsætning
+# <a name="production-setup-requirements"></a><span data-ttu-id="95333-103">Krav til produktionsopsætning</span><span class="sxs-lookup"><span data-stu-id="95333-103">Production setup requirements</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om opsætningskrav, før du kan arbejde med Produktionsstyring. 
+<span data-ttu-id="95333-104">Denne artikel indeholder oplysninger om opsætningskrav, før du kan arbejde med Produktionsstyring.</span><span class="sxs-lookup"><span data-stu-id="95333-104">This article provides information about setup requirements before you can work with Production control.</span></span> 
 
-Produktionsstyring er integreret med funktioner i andre moduler. Denne integration giver dig mulighed for at ændre produktionsordrer og sikre, at de automatisk opdateres i alle andre relaterede processer og beregninger i systemet. Følgende opsætningsprocesser er angivet i den rækkefølge, du skal udføre dem i.
+<span data-ttu-id="95333-105">Produktionsstyring er integreret med funktioner i andre moduler.</span><span class="sxs-lookup"><span data-stu-id="95333-105">Production control is integrated with features in other modules.</span></span> <span data-ttu-id="95333-106">Denne integration giver dig mulighed for at ændre produktionsordrer og sikre, at de automatisk opdateres i alle andre relaterede processer og beregninger i systemet.</span><span class="sxs-lookup"><span data-stu-id="95333-106">This interconnectivity lets you change production orders and make sure that they are automatically updated in all other related processes and calculations in the system.</span></span> <span data-ttu-id="95333-107">Følgende opsætningsprocesser er angivet i den rækkefølge, du skal udføre dem i.</span><span class="sxs-lookup"><span data-stu-id="95333-107">The following setup processes are listed in the order that you should complete them in.</span></span>
 
-## <a name="required-baseline-setup-in-other-modules"></a>Nødvendig grundlæggende opsætning i andre moduler
-Der skal angives oplysninger i andre moduler, før du kan arbejde i Produktionsstyring. Opsætningen omfatter følgende opgaver:
+## <a name="required-baseline-setup-in-other-modules"></a><span data-ttu-id="95333-108">Nødvendig grundlæggende opsætning i andre moduler</span><span class="sxs-lookup"><span data-stu-id="95333-108">Required baseline setup in other modules</span></span>
+<span data-ttu-id="95333-109">Der skal angives oplysninger i andre moduler, før du kan arbejde i Produktionsstyring.</span><span class="sxs-lookup"><span data-stu-id="95333-109">Information in other modules must be set up before you can work with Production control.</span></span> <span data-ttu-id="95333-110">Opsætningen omfatter følgende opgaver:</span><span class="sxs-lookup"><span data-stu-id="95333-110">This setup includes the following tasks:</span></span>
 
--   Opsætning af generelle firmaoplysninger.
--   Opsætning af finansmodulet.
--   Definition af varegrupper.
--   Opsætning af finanskonti for varegrupper.
--   Opsætning af lagervaretabellen i Lagerstyring.
--   Oprette styklister og styklisteversioner i Lagerstyring.
+-   <span data-ttu-id="95333-111">Opsætning af generelle firmaoplysninger.</span><span class="sxs-lookup"><span data-stu-id="95333-111">Set up general company information.</span></span>
+-   <span data-ttu-id="95333-112">Opsætning af finansmodulet.</span><span class="sxs-lookup"><span data-stu-id="95333-112">Set up the general ledger.</span></span>
+-   <span data-ttu-id="95333-113">Definition af varegrupper.</span><span class="sxs-lookup"><span data-stu-id="95333-113">Define item groups.</span></span>
+-   <span data-ttu-id="95333-114">Opsætning af finanskonti for varegrupper.</span><span class="sxs-lookup"><span data-stu-id="95333-114">Set up ledger accounts for item groups.</span></span>
+-   <span data-ttu-id="95333-115">Opsætning af lagervaretabellen i Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="95333-115">Set up the inventory item table in Inventory management.</span></span>
+-   <span data-ttu-id="95333-116">Oprette styklister og styklisteversioner i Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="95333-116">Create bills of materials (BOMs) and BOM versions in Inventory management.</span></span>
 
-## <a name="required-calendar-and-resource-setup"></a>Krævet kalender- og ressourceopsætning
-Før du bruger Produktionsstyring, skal du åbne Virksomhedsadministration og oprette og definere kalender- og operationsressourcer i følgende rækkefølge:
+## <a name="required-calendar-and-resource-setup"></a><span data-ttu-id="95333-117">Krævet kalender- og ressourceopsætning</span><span class="sxs-lookup"><span data-stu-id="95333-117">Required calendar and resource setup</span></span>
+<span data-ttu-id="95333-118">Før du bruger Produktionsstyring, skal du åbne Virksomhedsadministration og oprette og definere kalender- og operationsressourcer i følgende rækkefølge:</span><span class="sxs-lookup"><span data-stu-id="95333-118">Before you use Production control, open Organization administration, and create and define the calendar and operations resources in the following order:</span></span>
 
-1.  **Arbejdstidsskabeloner** – Opret arbejdstidsskabeloner for at definere de tider, der er tilgængelige til produktionsplanlægning.
-2.  **Kalendere** – Opret arbejdstidskalendere for at definere, hvilke dage i året der er tilgængelige for produktionsplanlægning.
-3.  **Ressourcegrupper**– Opret ressourcegrupper til gruppering af operationsressourcer, så du kan få et overblik over eventuel ledig kapacitet, når du kører planlægning. Du behøver ikke at oprette ressourcegrupper, før du opretter operationsressourcer. Det anbefales dog, at du forstår, hvordan du kan gruppere ressourcer, når du konfigurerer Produktionsstyring.
-4.  **Ressourcer** – Opret operationsressourcer for at definere de forskellige ressourcer, der skal bruges til at fuldføre produktionsprocessen og til at planlægge med henblik på kapacitet.
+1.  <span data-ttu-id="95333-119">**Arbejdstidsskabeloner** – Opret arbejdstidsskabeloner for at definere de tider, der er tilgængelige til produktionsplanlægning.</span><span class="sxs-lookup"><span data-stu-id="95333-119">**Working time templates** – Set up working time templates to define the times that are available for production scheduling.</span></span>
+2.  <span data-ttu-id="95333-120">**Kalendere** – Opret arbejdstidskalendere for at definere, hvilke dage i året der er tilgængelige for produktionsplanlægning.</span><span class="sxs-lookup"><span data-stu-id="95333-120">**Calendars** – Set up working time calendars to define the days of the year that are available for production scheduling.</span></span>
+3.  <span data-ttu-id="95333-121">**Ressourcegrupper**– Opret ressourcegrupper til gruppering af operationsressourcer, så du kan få et overblik over eventuel ledig kapacitet, når du kører planlægning.</span><span class="sxs-lookup"><span data-stu-id="95333-121">**Resource groups** – Set up resource groups to group the operations resources, so that you can get an overview of any free capacity when you run scheduling.</span></span> <span data-ttu-id="95333-122">Du behøver ikke at oprette ressourcegrupper, før du opretter operationsressourcer.</span><span class="sxs-lookup"><span data-stu-id="95333-122">You don't have to set up resource groups before you set up operations resources.</span></span> <span data-ttu-id="95333-123">Det anbefales dog, at du forstår, hvordan du kan gruppere ressourcer, når du konfigurerer Produktionsstyring.</span><span class="sxs-lookup"><span data-stu-id="95333-123">However, we recommend that you understand how to group resources when you set up Production control.</span></span>
+4.  <span data-ttu-id="95333-124">**Ressourcer** – Opret operationsressourcer for at definere de forskellige ressourcer, der skal bruges til at fuldføre produktionsprocessen og til at planlægge med henblik på kapacitet.</span><span class="sxs-lookup"><span data-stu-id="95333-124">**Resources** – Set up operations resources to define the resources that are used to complete the production process and plan for capacity.</span></span>
 
-## <a name="required-production-parameters-setup"></a>Nødvendig opsætning af produktionsparametre
-**Produktionsstyringsparametre** – Konfigurer grundlæggende produktionsparametre for at definere, hvordan systemet skal håndtere og behandle produktionsordrer. Angive, hvordan produktionsordrer oprettes, forkalkuleres, planlægges og forbruges. Du kan også vælge, hvilken form for feedback du ønsker, og hvordan omkostningsregnskabet skal udføres.
+## <a name="required-production-parameters-setup"></a><span data-ttu-id="95333-125">Nødvendig opsætning af produktionsparametre</span><span class="sxs-lookup"><span data-stu-id="95333-125">Required production parameters setup</span></span>
+<span data-ttu-id="95333-126">**Produktionsstyringsparametre** – Konfigurer grundlæggende produktionsparametre for at definere, hvordan systemet skal håndtere og behandle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="95333-126">**Production control parameters** – Set up basic production parameters to define how the system handles and processes production orders.</span></span> <span data-ttu-id="95333-127">Angive, hvordan produktionsordrer oprettes, forkalkuleres, planlægges og forbruges.</span><span class="sxs-lookup"><span data-stu-id="95333-127">Define how production orders are created, estimated, scheduled, and consumed.</span></span> <span data-ttu-id="95333-128">Du kan også vælge, hvilken form for feedback du ønsker, og hvordan omkostningsregnskabet skal udføres.</span><span class="sxs-lookup"><span data-stu-id="95333-128">You can also select what kind of feedback you want and how cost accounting is done.</span></span>
 
-## <a name="required-journal-name-identification"></a>Nødvendigt id for kladdenavn
-**Produktionskladdenavne** – Angiv de produktionskladdenavne, der bruges til at registrere og bogføre posteringer.
+## <a name="required-journal-name-identification"></a><span data-ttu-id="95333-129">Nødvendigt id for kladdenavn</span><span class="sxs-lookup"><span data-stu-id="95333-129">Required journal name identification</span></span>
+<span data-ttu-id="95333-130">**Produktionskladdenavne** – Angiv de produktionskladdenavne, der bruges til at registrere og bogføre posteringer.</span><span class="sxs-lookup"><span data-stu-id="95333-130">**Production journal names** – Specify the production journal names that are used to record and post transactions.</span></span>
 
-## <a name="setup-if-you-use-operations"></a>Opsætning, hvis du bruger operationer
-Operationer repræsenterer de bestemte aktiviteter, der udføres for at producere færdigvaren. **Bemærk!** Du skal kende de aktivitetstyper, der er nødvendige for at producere varen, og rækkefølgen og prioriteter for disse aktiviteter. Du skal også vide, hvilke ressourcer der er involveret, og hvor mange.
+## <a name="setup-if-you-use-operations"></a><span data-ttu-id="95333-131">Opsætning, hvis du bruger operationer</span><span class="sxs-lookup"><span data-stu-id="95333-131">Setup if you use operations</span></span>
+<span data-ttu-id="95333-132">Operationer repræsenterer de bestemte aktiviteter, der udføres for at producere færdigvaren.</span><span class="sxs-lookup"><span data-stu-id="95333-132">Operations represent the specific activities that are completed to produce the finished product.</span></span> <span data-ttu-id="95333-133">**Bemærk!** Du skal kende de aktivitetstyper, der er nødvendige for at producere varen, og rækkefølgen og prioriteter for disse aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="95333-133">**Note:** You must know the types of activities that are required in order to produce your item, and the order and priorities of those activities.</span></span> <span data-ttu-id="95333-134">Du skal også vide, hvilke ressourcer der er involveret, og hvor mange.</span><span class="sxs-lookup"><span data-stu-id="95333-134">You must also know which resources are involved, and how many.</span></span>
 
-1.  **Operationer** – Angiv parametre, der repræsenterer de opgaver, som skal udføres for at producere færdigvaren.
-2.  **Relationer** – Opret operationsrelationer for at angive detaljerede egenskaber. Hvis du vil definere operationsrelationer, skal du klikke på **Relationer** på siden **Operationer**.
+1.  <span data-ttu-id="95333-135">**Operationer** – Angiv parametre, der repræsenterer de opgaver, som skal udføres for at producere færdigvaren.</span><span class="sxs-lookup"><span data-stu-id="95333-135">**Operations** – Set up operations to represent the tasks that must be completed to produce the finished item.</span></span>
+2.  <span data-ttu-id="95333-136">**Relationer** – Opret operationsrelationer for at angive detaljerede egenskaber.</span><span class="sxs-lookup"><span data-stu-id="95333-136">**Relations** – Set up operation relations to establish detailed properties.</span></span> <span data-ttu-id="95333-137">Hvis du vil definere operationsrelationer, skal du klikke på **Relationer** på siden **Operationer**.</span><span class="sxs-lookup"><span data-stu-id="95333-137">To define operation relations, click **Relations** on the **Operations** page.</span></span>
 
-## <a name="setup-if-you-use-routes"></a>Opsætning, hvis du bruger ruter
-Hvis du arbejder med ruter, skal der defineres operationer for hver produktionsrute, du opretter. Ruten repræsenterer den sti, varen følger fra operation til operation, lige fra starten af produktionsprocessen til slutningen.
+## <a name="setup-if-you-use-routes"></a><span data-ttu-id="95333-138">Opsætning, hvis du bruger ruter</span><span class="sxs-lookup"><span data-stu-id="95333-138">Setup if you use routes</span></span>
+<span data-ttu-id="95333-139">Hvis du arbejder med ruter, skal der defineres operationer for hver produktionsrute, du opretter.</span><span class="sxs-lookup"><span data-stu-id="95333-139">If you're working with routes, operations must be defined for every production route that you set up.</span></span> <span data-ttu-id="95333-140">Ruten repræsenterer den sti, varen følger fra operation til operation, lige fra starten af produktionsprocessen til slutningen.</span><span class="sxs-lookup"><span data-stu-id="95333-140">The route represents the path that the item takes from operation to operation, from the start of the production process to the end.</span></span>
 
-1.  **Omkostningskategorier** – Opret omkostningsarter for at definere omkostningerne for hver time i de angive processer og opsætningstider.
-2.  **Kostprisgrupper** – Definer omkostningsgrupper for at oprette og vedligeholde forskellige typer af efterkalkulationer.
-3.  **Rutegrupper** – Opret rutegrupper for at definere parametre, der er relateret til rutegrupper. Du skal oprette rutegrupper, før du kan oprette produktionsruter.
-4.  **Ruter** – Opret produktionsruter, og definer standardindstillinger for at styre planlægning, efterkalkulation og prissætning af ruteoperationer og for at køre rapportering.
-5.  **Ruter** – Opret ruteversioner for at muliggøre varevariationer i produktionen.
+1.  <span data-ttu-id="95333-141">**Omkostningskategorier** – Opret omkostningsarter for at definere omkostningerne for hver time i de angive processer og opsætningstider.</span><span class="sxs-lookup"><span data-stu-id="95333-141">**Cost categories** – Set up cost categories to define the cost per hour of specified processes and setup times.</span></span>
+2.  <span data-ttu-id="95333-142">**Kostprisgrupper** – Definer omkostningsgrupper for at oprette og vedligeholde forskellige typer af efterkalkulationer.</span><span class="sxs-lookup"><span data-stu-id="95333-142">**Cost groups** – Set up cost groups to create and maintain different types of costing.</span></span>
+3.  <span data-ttu-id="95333-143">**Rutegrupper** – Opret rutegrupper for at definere parametre, der er relateret til rutegrupper.</span><span class="sxs-lookup"><span data-stu-id="95333-143">**Route groups** – Set up route groups to define parameters that are related to groups of routes.</span></span> <span data-ttu-id="95333-144">Du skal oprette rutegrupper, før du kan oprette produktionsruter.</span><span class="sxs-lookup"><span data-stu-id="95333-144">You must set up route groups before you can create production routes.</span></span>
+4.  <span data-ttu-id="95333-145">**Ruter** – Opret produktionsruter, og definer standardindstillinger for at styre planlægning, efterkalkulation og prissætning af ruteoperationer og for at køre rapportering.</span><span class="sxs-lookup"><span data-stu-id="95333-145">**Routes** – Set up production routes, and define default settings to control scheduling, costing, and pricing of route operations, and to control progress reporting.</span></span>
+5.  <span data-ttu-id="95333-146">**Ruter** – Opret ruteversioner for at muliggøre varevariationer i produktionen.</span><span class="sxs-lookup"><span data-stu-id="95333-146">**Routes** – Set up route versions to enable item variations in production.</span></span>
 
-## <a name="optional-advanced-settings"></a>Valgfrie avancerede indstillinger
-1.  **Produktionsgrupper** – Opret produktionsgrupper for at angive relationer mellem produktionsordren og finanskontiene. Finanskontiene bruges til at bogføre eller gruppere ordrer til rapportering.
-2.  **Produktionspuljer** – Opret produktionspuljer for at gruppere produktionsordrer til behandling af presserende produktionsordrer og for at slette og bogføre grupper af ordrer.
-3.  **Egenskaber** – Definer egenskaber til at oprette specielle attributter, som du kan tildele ressourcer for at styre produktionsrækkefølgen. Disse attributter er forbundet til arbejdstidsskabelonen.
+## <a name="optional-advanced-settings"></a><span data-ttu-id="95333-147">Valgfrie avancerede indstillinger</span><span class="sxs-lookup"><span data-stu-id="95333-147">Optional advanced settings</span></span>
+1.  <span data-ttu-id="95333-148">**Produktionsgrupper** – Opret produktionsgrupper for at angive relationer mellem produktionsordren og finanskontiene.</span><span class="sxs-lookup"><span data-stu-id="95333-148">**Production groups** – Set up production groups to establish relationships between the production order and ledger accounts.</span></span> <span data-ttu-id="95333-149">Finanskontiene bruges til at bogføre eller gruppere ordrer til rapportering.</span><span class="sxs-lookup"><span data-stu-id="95333-149">The ledger accounts are used to post or group orders for reporting.</span></span>
+2.  <span data-ttu-id="95333-150">**Produktionspuljer** – Opret produktionspuljer for at gruppere produktionsordrer til behandling af presserende produktionsordrer og for at slette og bogføre grupper af ordrer.</span><span class="sxs-lookup"><span data-stu-id="95333-150">**Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.</span></span>
+3.  <span data-ttu-id="95333-151">**Egenskaber** – Definer egenskaber til at oprette specielle attributter, som du kan tildele ressourcer for at styre produktionsrækkefølgen.</span><span class="sxs-lookup"><span data-stu-id="95333-151">**Properties** – Define properties to create special attributes that you can assign to your resources to control the order of productions.</span></span> <span data-ttu-id="95333-152">Disse attributter er forbundet til arbejdstidsskabelonen.</span><span class="sxs-lookup"><span data-stu-id="95333-152">These attributes are connected to the working time template.</span></span>
 
 
 

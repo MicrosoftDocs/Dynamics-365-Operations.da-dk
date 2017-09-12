@@ -16,39 +16,39 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 147d8fa82bf15c984ad263cada42789038fa7371
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f01947840553a65af4aba1309d89f9b3e9ced872
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a>Konfigurere kreditorer og kreditorbankkonti for ISO20022-kreditoverførsler
+# <a name="set-up-vendors-and-vendor-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="fdc67-103">Konfigurere kreditorer og kreditorbankkonti for ISO20022-kreditoverførsler</span><span class="sxs-lookup"><span data-stu-id="fdc67-103">Set up vendors and vendor bank accounts for ISO20022 credit transfers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du konfigurerer kreditoren og de kreditorspecifikke bankkontooplysninger, der kræves til generering af ISO20022-kreditoroverførsel eller andre betalingsfiler. 
+<span data-ttu-id="fdc67-104">Denne fremgangsmåde viser, hvordan du konfigurerer kreditoren og de kreditorspecifikke bankkontooplysninger, der kræves til generering af ISO20022-kreditoroverførsel eller andre betalingsfiler.</span><span class="sxs-lookup"><span data-stu-id="fdc67-104">This procedure demonstrates how to set up the vendor and vendor specific bank account information required for ISO20022 Credit transfer or any other vendor payment file generation.</span></span> 
 
-Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.
-Det er den fjerde procedure af fem, der illustrerer kreditors betalingsproces ved hjælp af konfigurationer af elektronisk rapportering. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+<span data-ttu-id="fdc67-105">Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.</span><span class="sxs-lookup"><span data-stu-id="fdc67-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="fdc67-106">Det er den fjerde procedure af fem, der illustrerer kreditors betalingsproces ved hjælp af konfigurationer af elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="fdc67-106">This is the fourth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="fdc67-107">Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="fdc67-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="set-up-bank-details"></a>Konfigurer bankoplysninger
-1. Gå til Kreditor > Kreditorer > Alle kreditorer.
-2. Brug Quick Filter til at finde poster. Filtrer f.eks. efter feltet Kreditorkonto med værdien "DE-001".
-3. Klik på DE-001 åbne kreditoroplysninger.
-4. Klik på Kreditor i handlingsruden.
-5. Klik på Bankkonti.
-6. Klik på Rediger.
-    * Hvis der ikke er nogen bankkonto, skal du oprette en ny.  
-7. Skriv "COBADEFFXXX" i feltet SWIFT-kode.
-8. Angiv "DE36200400000628808808" i feltet IBAN.
-9. Luk siden.
+## <a name="set-up-bank-details"></a><span data-ttu-id="fdc67-108">Konfigurer bankoplysninger</span><span class="sxs-lookup"><span data-stu-id="fdc67-108">Set up bank details</span></span>
+1. <span data-ttu-id="fdc67-109">Gå til Kreditor > Kreditorer > Alle kreditorer.</span><span class="sxs-lookup"><span data-stu-id="fdc67-109">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="fdc67-110">Brug Quick Filter til at finde poster.</span><span class="sxs-lookup"><span data-stu-id="fdc67-110">Use the Quick Filter to find records.</span></span> <span data-ttu-id="fdc67-111">Filtrer f.eks. efter feltet Kreditorkonto med værdien "DE-001".</span><span class="sxs-lookup"><span data-stu-id="fdc67-111">For example, filter on the Vendor account field with a value of 'DE-001'.</span></span>
+3. <span data-ttu-id="fdc67-112">Klik på DE-001 åbne kreditoroplysninger.</span><span class="sxs-lookup"><span data-stu-id="fdc67-112">Click DE-001 to open vendor details.</span></span>
+4. <span data-ttu-id="fdc67-113">Klik på Kreditor i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="fdc67-113">On the Action Pane, click Vendor.</span></span>
+5. <span data-ttu-id="fdc67-114">Klik på Bankkonti.</span><span class="sxs-lookup"><span data-stu-id="fdc67-114">Click Bank accounts.</span></span>
+6. <span data-ttu-id="fdc67-115">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="fdc67-115">Click Edit.</span></span>
+    * <span data-ttu-id="fdc67-116">Hvis der ikke er nogen bankkonto, skal du oprette en ny.</span><span class="sxs-lookup"><span data-stu-id="fdc67-116">If there is no bank account available, you need to create a new one.</span></span>  
+7. <span data-ttu-id="fdc67-117">Skriv "COBADEFFXXX" i feltet SWIFT-kode.</span><span class="sxs-lookup"><span data-stu-id="fdc67-117">In the SWIFT code field, type 'COBADEFFXXX'.</span></span>
+8. <span data-ttu-id="fdc67-118">Angiv "DE36200400000628808808" i feltet IBAN.</span><span class="sxs-lookup"><span data-stu-id="fdc67-118">In the IBAN field, type 'DE36200400000628808808'.</span></span>
+9. <span data-ttu-id="fdc67-119">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="fdc67-119">Close the page.</span></span>
 
-## <a name="set-up-a-method-of-payment-for-the-vendor"></a>Konfigurer en betalingsmåde for kreditoren
-1. Klik på Rediger.
-2. Vis eller skjul sektionen Betaling.
-3. Klik på rullelisten i feltet Betalingsmåde for at åbne opslaget.
-4. Klik på linket i rækken SEPA CT på listen.
-5. Klik på Gem.
+## <a name="set-up-a-method-of-payment-for-the-vendor"></a><span data-ttu-id="fdc67-120">Konfigurer en betalingsmåde for kreditoren</span><span class="sxs-lookup"><span data-stu-id="fdc67-120">Set up a method of payment for the vendor</span></span>
+1. <span data-ttu-id="fdc67-121">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="fdc67-121">Click Edit.</span></span>
+2. <span data-ttu-id="fdc67-122">Vis eller skjul sektionen Betaling.</span><span class="sxs-lookup"><span data-stu-id="fdc67-122">Expand or collapse the Payment section.</span></span>
+3. <span data-ttu-id="fdc67-123">Klik på rullelisten i feltet Betalingsmåde for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="fdc67-123">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="fdc67-124">Klik på linket i rækken SEPA CT på listen.</span><span class="sxs-lookup"><span data-stu-id="fdc67-124">In the list, click the link in the SEPA CT row.</span></span>
+5. <span data-ttu-id="fdc67-125">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="fdc67-125">Click Save.</span></span>
 
 

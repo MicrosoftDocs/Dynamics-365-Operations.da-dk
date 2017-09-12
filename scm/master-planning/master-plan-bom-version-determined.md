@@ -20,27 +20,27 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ee265d0ab7807cd92c70096111ffb3dbec11ad62
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ceeb82130a3ab214ef3e9eda09294c9bcc0c7cc0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Bestemme styklisteversionen
+# <a name="determine-the-bom-version"></a><span data-ttu-id="6bd38-103">Bestemme styklisteversionen</span><span class="sxs-lookup"><span data-stu-id="6bd38-103">Determine the BOM version</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Hvis en vare har standardordre af typen Produktion, finder planlægningssystemet en gyldig styklisteversion ud fra lokationen under en efterspørgselsudfoldning. 
+<span data-ttu-id="6bd38-104">Hvis en vare har standardordre af typen Produktion, finder planlægningssystemet en gyldig styklisteversion ud fra lokationen under en efterspørgselsudfoldning.</span><span class="sxs-lookup"><span data-stu-id="6bd38-104">During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site.</span></span> 
 
-Lokationsdimensionen kendes altid og er anført i efterspørgselsposteringen. Følgende proces bruges til fastlæggelse af den styklisteversion, der skal anvendes:
+<span data-ttu-id="6bd38-105">Lokationsdimensionen kendes altid og er anført i efterspørgselsposteringen.</span><span class="sxs-lookup"><span data-stu-id="6bd38-105">The site dimension is always known and is stated on the demand transaction.</span></span> <span data-ttu-id="6bd38-106">Følgende proces bruges til fastlæggelse af den styklisteversion, der skal anvendes:</span><span class="sxs-lookup"><span data-stu-id="6bd38-106">The following process is used to determine the BOM version to use:</span></span>
 
--   Hvis en styklisteversion er defineret for varen på efterspørgselslokationen, bruges den lokationsspecifikke stykliste.
--   Hvis der ikke er defineret en lokationsspecifik styklisteversion for en vare på efterspørgselslokationen, bruges der en generel stykliste. En generel stykliste angiver ikke en lokation og er gyldig for flere lokationer. Hvis der findes en generel stykliste, bruges den.
--   Hvis der ikke findes en generel stykliste, som kan bruges, standser efterspørgselsudfoldningen her.
+-   <span data-ttu-id="6bd38-107">Hvis en styklisteversion er defineret for varen på efterspørgselslokationen, bruges den lokationsspecifikke stykliste.</span><span class="sxs-lookup"><span data-stu-id="6bd38-107">If there is a BOM version defined for the item at the demand site, the site-specific BOM is used.</span></span>
+-   <span data-ttu-id="6bd38-108">Hvis der ikke er defineret en lokationsspecifik styklisteversion for en vare på efterspørgselslokationen, bruges der en generel stykliste.</span><span class="sxs-lookup"><span data-stu-id="6bd38-108">If there is no site-specific BOM version defined for an item at the demand site, a general BOM is used.</span></span> <span data-ttu-id="6bd38-109">En generel stykliste angiver ikke en lokation og er gyldig for flere lokationer.</span><span class="sxs-lookup"><span data-stu-id="6bd38-109">A general BOM does not state a site, and it is valid for multiple sites.</span></span> <span data-ttu-id="6bd38-110">Hvis der findes en generel stykliste, bruges den.</span><span class="sxs-lookup"><span data-stu-id="6bd38-110">If there is a general BOM, it is used.</span></span>
+-   <span data-ttu-id="6bd38-111">Hvis der ikke findes en generel stykliste, som kan bruges, standser efterspørgselsudfoldningen her.</span><span class="sxs-lookup"><span data-stu-id="6bd38-111">If there is no general BOM version to use, the demand explosion stops at this point.</span></span>
 
-En gyldig styklisteversion skal opfylde de krævede kriterier for dato og antal, uanset om den er lokationsspecifik eller generel.
+<span data-ttu-id="6bd38-112">En gyldig styklisteversion skal opfylde de krævede kriterier for dato og antal, uanset om den er lokationsspecifik eller generel.</span><span class="sxs-lookup"><span data-stu-id="6bd38-112">A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.</span></span>
 
 
 
