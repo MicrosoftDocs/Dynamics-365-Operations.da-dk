@@ -1,7 +1,7 @@
 --- 
 title: Definere konfigurationsruter
 description: "Denne fremgangsmåde drejer sig om at definere en variantrute, der bestemmer den rækkefølge, hvori variantgrupper skal præsenteres."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
