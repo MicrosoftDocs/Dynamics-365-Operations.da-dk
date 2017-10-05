@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 6b576be9986a0c0701792a87422a0865cd3f8e7a
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="financial-management-home-page"></a><span data-ttu-id="3320f-103">Startside for økonomistyring</span><span class="sxs-lookup"><span data-stu-id="3320f-103">Financial management home page</span></span>
+# <a name="financial-management-home-page"></a>Startside for økonomistyring
 
 [!include[banner](includes/banner.md)]
 
-<span data-ttu-id="3320f-104">Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="3320f-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
+Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
-<span data-ttu-id="3320f-105">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="3320f-105">Select a feature area to learn more about it.</span></span>
-- [<span data-ttu-id="3320f-106">Kreditor</span><span class="sxs-lookup"><span data-stu-id="3320f-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
-- [<span data-ttu-id="3320f-107">Debitor</span><span class="sxs-lookup"><span data-stu-id="3320f-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
-- [<span data-ttu-id="3320f-108">Kontant- og bankstyring</span><span class="sxs-lookup"><span data-stu-id="3320f-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
-- [<span data-ttu-id="3320f-109">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="3320f-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
-- [<span data-ttu-id="3320f-110">Anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="3320f-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
-- [<span data-ttu-id="3320f-111">Finans</span><span class="sxs-lookup"><span data-stu-id="3320f-111">General ledger</span></span>](general-ledger\general-ledger.md) 
-- [<span data-ttu-id="3320f-112">Projektstyring</span><span class="sxs-lookup"><span data-stu-id="3320f-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
-- [<span data-ttu-id="3320f-113">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="3320f-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
-- [<span data-ttu-id="3320f-114">Budgettering</span><span class="sxs-lookup"><span data-stu-id="3320f-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
+Vælg et funktionsområde, du vil vide mere om.
+- [Kreditor](accounts-payable\accounts-payable.md) 
+- [Debitor](accounts-receivable\accounts-receivable.md) 
+- [Kontant- og bankstyring](cash-bank-management\cash-bank-management.md)
+- [Omkostningsregnskab](cost-accounting\cost-accounting-home-page.md)
+- [Anlægsaktiver](fixed-assets\fixed-assets.md)
+- [Finans](general-ledger\general-ledger.md) 
+- [Projektstyring](project-management\overview-project-management-accounting.md)
+- [Offentlig sektor](public-sector\public-sector-functionality.md) 
+- [Budgettering](budgeting\budgeting-overview.md) 
 
 
 
