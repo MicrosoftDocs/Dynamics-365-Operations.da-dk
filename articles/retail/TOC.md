@@ -1,5 +1,8 @@
 # [Velkommen til Dynamics 365 for Retail](index.md)
 
+# Introduktion
+## [Nyheder eller ændringer](get-started/whats-new.md)
+
 # Betalinger
 ## [Betalingsmetoder](payment-methods.md)
 ## [Opsætning, godkendelse og registrering af kreditkort](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -173,9 +176,10 @@
 ### [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md)
 #### [Administrere detailkonti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
 #### [Enhedsaktivering for Retail POS](dev-itpro/retail-device-activation.md)
-#### [Sikker detail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
+#### [Sikker Retail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration og installation af Retail Hardware Station](retail-hardware-station-configuration-installation.md)
-### [Retail-komponent-hændelser for diagnosticering og fejlfinding](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
+### [Masseinstallation af Retail-selvbetjeningskomponenter](dev-itpro/retail-mass-deployment.md)
+### [Hændelser i Retail-komponenter for diagnosticering og fejlfinding](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Anvend en installerbar pakke](../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ## Opgradering og N-1 support

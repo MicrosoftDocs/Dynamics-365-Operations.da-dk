@@ -451,6 +451,7 @@
 ### [Opdele modeller](dev-tools/model-split.md)
 ### [Bruge delegerede til at løse afhængigheder mellem modeller](migration-upgrade/delegates-migration.md)
 
+
 ## Opgradere til en aktuel opdatering
 ### [Proces for flytning til den seneste opdatering](migration-upgrade/upgrade-latest-update.md)
 ### [Livscykluspolitik](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Overføre brugerdefinerede forretningsprocesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Overvågning og diagnose ](lifecycle-services/monitoring-diagnostics.md)
 ## [Aktivbibliotek](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 – Oversigt over oversættelsestjeneste](lifecycle-services/translation-service-overview.md)
+### [Microsoft Dynamics 365 – Brugervejledning til oversættelsestjeneste](lifecycle-services/use-translation-service.md)
 
 ## Dynamics AX 2012 Lifecycle Services-funktioner
 ### Installation
