@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9b9bb0acc6f0dc1722c916f133eed766ffdd4cc8
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,7 +61,7 @@ Ofte skal du i Finance and Operations kende både placeringen af en knap og dens
 -   Menuseparator (Hvis knappen er inde i en navngivet gruppe inde i en menuknap)
 -   Gruppe eller fane på siden (f.eks navnet på et oversigtspanel)
 
-Du har for eksempel indtastet **tot** i feltet **handlingssøgning** og er nu at undersøge listen over resultater. Den første post for en knap, der hedder **Totaler**, er fremhævet. Også knapstien **Salgsordre** &gt; **Vis** vises. **Salgsordre**-delen af stien svarer til fanen **Salgsordre** i handlingsruden, og **Vis**-delen af stien svarer til gruppen **Vis** under denne fane. På samme måde viser stien til knappen **Slutrabat** (**Sælg** &gt; **Beregn**), at denne knap er placeret i gruppen **Beregn** under fanen **Sælg** i handlingsruden. Derfor hjælper disse oplysninger dig til at forstå, nøjagtigt hvilken knap der udløses af handlingssøgningen (hvis du vælger denne knap på resultatlisten). 
+Du har for eksempel indtastet **tot** i feltet **handlingssøgning** og er nu at undersøge listen over resultater. Den første post for en knap, der hedder **Totaler**, er fremhævet. Også knapstien **Salgsordre** &gt; **Vis** vises. **Salgsordredelen** af stien svarer til fanen **Salgsordre** fane i handlingsruden, og **visningsdelen** af stien svarer til gruppen **Visning** under denne fane. På samme måde fortæller stien til knappen **Slutrabat** (**Sælg** &gt; **Beregn**) dig, at denne knap er placeret i gruppen **Beregn** under fanen **Sælg** i handlingsruden. Derfor hjælper disse oplysninger dig til at forstå, nøjagtigt hvilken knap der udløses af handlingssøgningen (hvis du vælger denne knap på resultatlisten). 
 
 [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 

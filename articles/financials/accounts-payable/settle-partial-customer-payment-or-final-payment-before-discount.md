@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08b5fc87fdee476cd978bcc242cea324ac4bcee2
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1d48a10f413ce4e2830bfba062615980a6de70a4
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -36,7 +36,7 @@ Denne artikel indeholder scenarier, der viser, hvordan du registrerer delbetalin
 Fabrikam sælger varer til debitor 4028. Fabrikam tilbyder en kasserabat på 1 procent, hvis fakturaen betales i løbet af 14 dage. Fakturaer skal betales inden 30 dage. Fabrikam tilbyder også kasserabatter på delvise indbetalinger. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="customer-invoice"></a>Debitorfaktura
-Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4028. Arnie kan se denne postering på siden**Debitorposteringer**.
+Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 4028. Arnie kan se denne postering på siden **Debitorposteringer**.
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|

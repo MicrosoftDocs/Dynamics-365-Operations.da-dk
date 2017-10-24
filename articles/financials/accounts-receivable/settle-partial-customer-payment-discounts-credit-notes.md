@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4fbbd4d4b4ff9ecfcb30cd0ded2bc366d07dc1c4
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c396bef3d31f343da972d163d89543dcea873cc0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -36,7 +36,7 @@ Denne artikel fører dig gennem et scenarie, hvor en kasserabat er anvendt på e
 Fabrikam gør det muligt at anvende kasserabatter på delvise betalinger samt på kreditnotaer. En kasserabat kan anvendes på en kreditnota, når der udstedes en kreditnota for en faktura, som kunden fik en kasserabat på. I stedet for at oprette en kreditnota for det fulde beløb, kan du kreditere kundens saldo for et beløb, der udelukker den kasserabatprocent, kunden har fået. Udligningsparametrene er placeret på siden **Kreditorparametre**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura og kreditnota
-Debitor 4035 har en faktura på 1.000,00 og en kreditnota på 100,00. Hvert dokument har en rabat på 1 procent, hvis der betales inden 14 dage. Arnie kan se disse oplysninger på siden**Debitorposteringer**.
+Debitor 4035 har en faktura på 1.000,00 og en kreditnota på 100,00. Hvert dokument har en rabat på 1 procent, hvis der betales inden 14 dage. Arnie kan se disse oplysninger på siden **Debitorposteringer**.
 
 | Bilag    | Transaktionstype | Dato      | Faktura  | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|

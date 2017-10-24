@@ -1,7 +1,7 @@
 ---
 title: Opdatere standardomkostninger for en ny produceret vare
 description: Denne artikel indeholder en vejledning til opdatering af standardomkostninger for en ny produceret vare.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: ba64b70f-3f4c-4373-9a7d-8fd07c45a8cf
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d8f1b5614811faad3fda15809e4e606c93e6b786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9672b5063193ba62b731a9536fdca326cfaa7b6f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -39,7 +39,7 @@ I følgende retningslinjer antages det, at du bruger en tilgang med to versioner
 -   Tildel efterkalkulationstypen **Standardomkostninger**.
 -   Tildel et tydeligt id, der angiver indholdet i efterkalkulationsversionen, f.eks. **2016-OPDATERINGER**.
 -   I feltgruppen **Tillad pristype** skal du sikre dig, at **Kostpris** er indstillet til **Ja**.
--   Tillad, at omkostningsposter angives for alle steder (det vil sige, lad feltet **Sted**stå tomt). Hvis du angiver et sted, kan omkostningsposter kun angives for det pågældende sted.
+-   Tillad, at omkostningsposter angives for alle steder (det vil sige, lad feltet **Sted** stå tomt). Hvis du angiver et sted, kan omkostningsposter kun angives for det pågældende sted.
 -   Brug reserveprincippet **Aktiv**.
 
 Hvis du vil tilføje nye produktionsvarer i løbet af den frosne periode, skal du følge disse trin.

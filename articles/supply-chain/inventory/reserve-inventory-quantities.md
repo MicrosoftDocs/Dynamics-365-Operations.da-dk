@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 942a1e9ddcf6e0952da66b239e1884cb83369175
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 67c7582665255e65995be688ef133e71938e7c28
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -46,7 +46,7 @@ Der er følgende årsager til en reservation af lager:
 Lageret kan reserveres automatisk, når der oprettes en ny ordrelinje, eller lageret kan reserveres manuelt for de enkelte ordrer. Det er også muligt at reservere lager på forskellige stadier i en produktionsproces. Kun produkter på lager kan reserveres. Serviceydelser kan ikke reserveres, fordi der ikke er nogen disponibel lagerbeholdning. Både disponibel lagerbeholdning og bestilt, men endnu ikke modtaget lager, kan reserveres. Hvis der reserveres et større antal, end der findes i den disponible lagerbeholdning, får du vist en meddelelse om, at det ikke er muligt at reservere et så stort antal. Du kan derefter enten reservere antallet alligevel, eller du kan ændre det bestilte antal. Antallet kan enten reserveres eller ændres. Hvis der reserveres flere varer end det disponible antal, dækkes mankoen ind, næste gang der er disponible varer til levering.
 
 ## <a name="inventory-reservation-policies"></a>Politikker for lagerreservation
-Politikker for lagerreservation angives på siden **Varemodelgrupper,**siden **Parametre til lager- og lokationsstyring** og siden **Produktionsparametre**.
+Politikker for lagerreservation angives på siden **Varemodelgrupper,** siden **Parametre til lager- og lokationsstyring** og siden **Produktionsparametre**.
 ### <a name="policies-on-the-item-model-groups-page"></a>Politikker på siden Varemodelgrupper
 
 Afsnittet **Lagerpolitikker** indeholder følgende reservationspolitikker.

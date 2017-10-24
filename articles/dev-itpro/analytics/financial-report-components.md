@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -71,7 +71,7 @@ Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefi
 ### <a name="create-a-building-block-group"></a>Oprette komponentgruppe
 
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
-2.  Klik på **Ny** i dialogboksen **Komponentgrupper**.
+2.  Klik på **Ny** i dialogboksen **Rapportkomponentgrupper**.
 3.  Angiv et entydigt navn og en beskrivelse for komponentgruppen. Hvert felt kan indeholde op til 256 tegn. (Dette tal omfatter mellemrum).
 4.  Klik på **OK** for at oprette den nye komponentgruppe.
 
@@ -79,7 +79,7 @@ Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefi
 
 Når du har en oprettet en komponentgruppe, skal du tildele den til mindst ét firma. Du kan derefter oprette rapport-, række-, kolonne- og rapporteringstrædefinitioner og gemme dem i komponentgruppen. Før du begynder nedenstående procedure, skal du lukke alle komponenter.
 1.  Klik på **Firmaer** i menuen **Firma** i Report Designer.
-2.  I dialogboksen **Regnskaber** skal du vælge det regnskab, som du vil tildele en komponentgruppe.
+2.  Vælg det firma, du vil tildele en rapportkomponentgruppe til, i dialogboksen **Firmaer**.
 3.  Klik på **Rediger**.
 4.  I dialogboksen **Rediger regnskab** i feltet **Komponentgruppe** skal du vælge den komponentgruppe, der skal tildeles virksomheden, eller du kan klikke på **Ny** for at oprette en ny komponentgruppe.
 5.  Klik på **OK** for at tildele komponentgruppen.
@@ -96,7 +96,7 @@ Når en dokumentkomponentgruppe er oprettet og taget i brug, kan du se alle de d
 ### <a name="save-a-building-block-group-under-a-new-name"></a>Gemme en komponentgruppe under et nyt navn
 
 Du kan gemme en eksisterende komponentgruppe under et nyt navn. Derefter kan du ændre den nye komponentgruppe uden at ændre den oprindelige komponentgruppe.
-1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
+1.  Klik på **Rapportkomponentgrupper** i menuen **Firma** i Rapportdesigner.
 2.  I dialogboksen **Komponentgrupper** skal du vælge den komponentgruppe, der skal gemmes, under et nyt navn.
 3.  Klik på **Gem som**.
 4.  Angiv et nyt navn og en beskrivelse for komponentgruppen.
@@ -104,12 +104,12 @@ Du kan gemme en eksisterende komponentgruppe under et nyt navn. Derefter kan du 
 
 ### <a name="export-a-building-block-group"></a>Eksportere en komponentgruppe
 
-Du kan eksportere en dokumentkomponentgruppe eller bestemte rapportkomponenter i en dokumentkomponentgruppe. Du kan bruge den eksporterede dokumentkomponentgruppe som sikkerhedskopi. Du kan også kopiere de eksporterede data mellem komponentgrupper eller Finance and Operations-installationer. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
+Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem komponentgrupper eller Finance and Operations-installationer. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
-2.  I dialogboksen **Komponentgrupper** skal du vælge den komponentgruppe, der skal eksporteres, og derefter klikke på **Eksportér**.
+2.  Markér den rapportkomponentgruppe, du vil eksportere, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Eksportér**.
 3.  I dialogboksen **Eksportér** skal du vælge de rapportdefinitioner, der skal eksporteres:
     -   Hvis du vil eksportere alle rapportdefinitioner og de tilhørende komponenter, skal du klikke på **Marker alt**.
-    -   Hvis du vil eksportere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du klikke på den relevante fane og derefter vælge de elementer, der skal eksporteres. Tryk på og hold Ctrl-tasten nede for at vælge flere elementer under en fane. **Bemærk:** Når du vælger rapporter til eksport, markeres de tilknyttede rækker, kolonner, træer og dimensionsopsætninger.
+    -   Hvis du vil eksportere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du klikke på den relevante fane og derefter vælge de elementer, der skal eksporteres. Tryk på og hold Ctrl-tasten nede for at vælge flere elementer på en fane. **Bemærk:** Når du vælger rapporter til eksport, vælges de tilknyttede rækker, kolonner, træer og dimensionsopsætninger.
 
 4.  Når du er færdig med at markere elementer til eksport, skal du klikke på **Eksportér**.
 5.  I dialogboksen **Gem som** skal du vælge den placering, som komponentgruppen skal eksporteres til.
@@ -120,8 +120,8 @@ Du kan eksportere en dokumentkomponentgruppe eller bestemte rapportkomponenter i
 
 Du kan importere en dokumentkomponentgruppe til en eksisterende dokumentkomponentgruppe, eller du kan oprette en ny dokumentkomponentgruppe til dataene. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionssæt.
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
-2.  I dialogboksen **Komponentgrupper** skal du vælge den komponentgruppe, som en komponentgruppe skal importeres til, og derefter klikke på **Importér**.
-3.  I dialogboksen **Åbn** skal du vælge den komponentgruppe, der skal importeres, og derefter klikke på **Åbn**.
+2.  Markér den rapportkomponent, du vil importere en rapportkomponentgruppe til, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Importér**.
+3.  Markér den rapportkomponentgruppe, der skal importeres, i dialogboksen **Åbn**, og klik derefter på **Åbn**.
 4.  I dialogboksen **Importér** skal du vælge de rapportdefinitioner, der skal importeres:
     -   Hvis du vil importere alle rapportdefinitioner og de understøttende komponenter, skal du klikke på **Marker alt**.
     -   Hvis du vil importere bestemte rapporter, rækker, kolonner, træer eller dimensionsopsætninger, skal du markere de rapporter, rækker, kolonner, træer eller dimensionsopsætninger, der skal importeres.
@@ -130,9 +130,9 @@ Du kan importere en dokumentkomponentgruppe til en eksisterende dokumentkomponen
 
 ### <a name="undo-a-checkout-of-a-building-block"></a>Fortryde udtjekning af en komponent
 
-Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgang til denne komponent. Nogle gange glemmer en bruger måske at lukke en komponent eller lukker sit system uden at lukke komponenten. Det indebærer, at komponenten forbliver tjekket ud, og at ingen andre brugere kan åbne den. I sådanne situationer kan en økonomirapporteringsadministrator bruge dialogboksen **Udtjekkede elementer** til at tjekke komponenter ind, som brugere har efterladt i udtjekket tilstand. **Bemærk**: Du skal have rollen administrator for at tjekke komponenter ind ved hjælp af dialogboksen **Udtjekkede elementer**.
+Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgang til denne komponent. Nogle gange glemmer en bruger måske at lukke en komponent eller lukker sit system uden at lukke komponenten. Det indebærer, at komponenten forbliver tjekket ud, og at ingen andre brugere kan åbne den. I disse situationer kan en administrator for økonomisk rapportering bruge dialogboksen **Elementer, der er tjekket ud** til at tjekke byggesten ind, som brugere har efterladt som tjekket ud. **Bemærk:** Du skal have rollen som administrator for at tjekke byggesten ind ved hjælp af dialogboksen **Elementer, der er tjekket ud**.
 1.  I Report Designer skal du klikke på **Udtjekkede elementer** i menuen **Funktioner**.
-2.  I dialogboksen **Udtjekkede elementer** skal du vælge **Vis elementer fra alle brugere**. Listen opdateres, så alle de komponenter, der er checket ud, og de brugere, der har tjekket dem ud, vises.
+2.  Vælg **Vis elementer fra alle brugere** i dialogboksen **Elementer, der er tjekket ud**. Listen opdateres, så den viser alle de rapportkomponenter, der er tjekket ud, og de brugere, der har tjekket dem ud.
 3.  Vælg en komponent, og klik derefter på **Fortryd udtjekning**.
 4.  Klik på **Ja** for at tjekke komponenten ind.
 

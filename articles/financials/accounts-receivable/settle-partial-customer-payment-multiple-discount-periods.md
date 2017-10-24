@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 08f87cbb37f8b52ec5554c8ab940d96a77c53d20
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 048a4ca44d457849e2f632da1686dfbeb81dd61b
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -44,14 +44,14 @@ Den 25. juni indtaster og bogfører Arnie en faktura på 1.000,00 for debitor 40
 | 9-7-2015           | 10,00                | 990,00                         |
 | 25-7-2015          | 0,00                 | 1.000,00                       |
 
-Arnie kan se denne postering på siden**Debitorposteringer**.
+Arnie kan se denne postering på siden **Debitorposteringer**.
 
 | Bilag   | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
 | FTI 10030 | Faktura          | 25-6-2015 | 10030   | 1.000,00                             |                                       | 1.000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Delvis betaling før kasserabatdatoen
-Kunde 4031 foretager en delvis betaling på 294,00 d. 28. juni. Da d. 28 juni er inden for den første kasserabatperiode, får kunden en rabat på 6,00. På siden **Udlign posteringer** er værdien**Kasserabatbeløb** 20,00, og værdien **Kasserabatbeløb, der skal medtages** er 6,00.
+Kunde 4031 foretager en delvis betaling på 294,00 d. 28. juni. Da d. 28 juni er inden for den første kasserabatperiode, får kunden en rabat på 6,00. På siden **Udlign posteringer** er værdien **Kasserabatbeløb** 20,00, og værdien **Kasserabatbeløb, der skal medtages** er 6,00.
 
 | Foretag afmærkning     | Anvend kasserabat | Bilag   | Konto | Dato      | Forfaldsdato  | Faktura | Beløb i transaktionsvaluta | Valuta | Beløb, der skal udlignes |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

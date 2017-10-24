@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f227a630f7d1245d5db810d6d48df2b20f699185
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb61a3dd6534cd20f311b5b0c85b9e712981a5dd
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -60,7 +60,7 @@ April klikker på **Bogfør**. Dereefter gennemgår hun den gennemførte udligni
 | Markeret og fremhævet | Almindelig            | Fak-10070 | 3050    | 29-6-2015 | 29-7-2015 | 10070    | -1.000,00                      | USD      | -200,00          |
 | Valgt                 | Almindelig            | CR-10070  | 3050    | 2-7-2015  | 29-7-2015 | CR-10070 | 200,00                         | USD      | 198,00           |
 
-April kan gennemgå kreditorposteringer på siden **Kreditorposteringer** ved at vælge en kreditor på siden **Alle kreditorer**og derefter klikke på **Transaktioner** i handlingsruden. På denne side kan April se, at fakturaen har en saldo på -800,00. Hun kan også se en kreditnota på 198,00 og en rabat på 2,00.
+April kan gennemgå kreditorposteringer på siden **Kreditorposteringer** ved at vælge en kreditor på siden **Alle kreditorer** og derefter klikke på **Transaktioner** i handlingsruden. På denne side kan April se, at fakturaen har en saldo på -800,00. Hun kan også se en kreditnota på 198,00 og en rabat på 2,00.
 
 | Bilag    | Transaktionstype | Dato      | Faktura | Beløb i transaktionsvalutadebet | Beløb i transaktionsvalutakredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

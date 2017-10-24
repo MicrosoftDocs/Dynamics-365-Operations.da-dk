@@ -1,7 +1,7 @@
 ---
 title: Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
 description: "Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 712406f1a47d3b0b6b8302cd7337a594a3818f95
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1fcc7914f2bb283a746b5e10993f91f949818473
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -34,7 +34,9 @@ ms.lasthandoff: 05/25/2017
 
 Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål.
 
-Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Hvis det er tilfældet, en der også angives en omkostningsart til produktions- og projektformål. Når en omkostningsart bruges i produktion og projekter, skal der defineres yderligere projektrelaterede oplysninger. Timeomkostninger, der er tilknyttet projekter, kan f.eks. være forskellige fra timeomkostninger, der er tilknyttet produktion. Du kan bruge siden **Omkostningsarter** til at definere en omkostningsart, der bruges i Produktionsstyring og Projektstyring og regnskab. **Bemærk!** Omkostningsregnskab har siden **Projektart**, men denne side har ingen relation til de funktioner, der beskrives i dette emne. Når du bruger en omkostningsart i projekter, har siden **Omkostningsart** flere faner, der viser yderligere projektrelaterede oplysninger. Disse oplysninger omfatter artsgruppen, en linjeegenskab og finanskonti, der er knyttet til omkostningsarten.
+Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Hvis det er tilfældet, en der også angives en omkostningsart til produktions- og projektformål. Når en omkostningsart bruges i produktion og projekter, skal der defineres yderligere projektrelaterede oplysninger. Timeomkostninger, der er tilknyttet projekter, kan f.eks. være forskellige fra timeomkostninger, der er tilknyttet produktion. Du kan bruge siden **Omkostningsarter** til at definere en omkostningsart, der bruges i Produktionsstyring og Projektstyring og regnskab. 
+
+**Bemærk!** Omkostningsregnskab har siden **Projektart**, men denne side har ingen relation til de funktioner, der beskrives i dette emne. Når du bruger en omkostningsart i projekter, har siden **Omkostningsart** flere faner, der viser yderligere projektrelaterede oplysninger. Disse oplysninger omfatter artsgruppen, en linjeegenskab og finanskonti, der er knyttet til omkostningsarten.
 
 -   Omkostningsarten skal knyttes til en kategorigruppe, der understøtter posteringstypen **Timer**.
 -   Linjeegenskaben angiver standardoplysninger for, hvordan rapporteret tid kan faktureres i et projekt.

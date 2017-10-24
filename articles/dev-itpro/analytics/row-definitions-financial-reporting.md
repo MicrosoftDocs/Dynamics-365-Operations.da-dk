@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport. En rækkedefinition kan kombineres med kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer.
 
-<a name="create-a-row-definition"></a>Opret en rækkedefinition.
+<a name="create-a-row-definition"></a>Oprette en ny definition
 -----------------------
 
 1.  Klik på **Rækkedefinitioner** i navigationsruden i Report Designer.
@@ -68,7 +68,7 @@ En dimension er et skæringspunkt for data og værdier. Du kan gruppere data og 
 | Indstilling                | Beskrivelse                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimension             | Det mønster, der identificerer den dimension, der skal føjes til rækkedefinitionen. Dette mønster indeholder et (&) eller et nummertegn (\#) for hver enkelt position i dimensionerne. Generelt skal du bruge alle plustegn for hovedkontodimensionen og alle nummertegn til andre dimensioner. |
-| Start på dimensionsområde | Den første værdi for den dimension, der skal føjes til rækkedefinitionen.                                                                                                                                                                                                                 |
+| Start på dimensionsområde | Den første værdi for denne dimension, der skal føjes til rækkedefinitionen.                                                                                                                                                                                                                 |
 | Slut på dimensionsområde   | Den sidste værdi for den dimension, der skal føjes til rækkedefinitionen.                                                                                                                                                                                                                  |
 
 Udfør følgende trin for at føje dimensioner til en rækkedefinition.
@@ -93,7 +93,7 @@ Hvis du har en balance, hvor beløbene er afrundede, stemmer totalerne muligvis 
 Hvis du vil justere afrunding i en balance, skal du følge disse trin.
 
 1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
-2.  I menuen **Rediger** skal du klikke på **Regulering af afrunding**.
+2.  Klik på **Afrundingsdifference** i menuen **Rediger**.
 3.  I dialogboksen **Regulering af afrunding** skal du angive følgende værdier:
     -   **Række til regulering af afrunding** – rækkekoden for den række, der skal reguleres for at afstemme balancen.
     -   **Række for samlede aktiver** – rækkekoden for den række i balancen, der indeholder de samlede aktiver.
@@ -121,23 +121,23 @@ Du kan oprette og ændre typografier for rapporten. Du kan derefter anvende diss
 <td>Oprette en typografi</td>
 <td><ol>
 <li>I menuen <strong>Formater</strong> i Report Designer skal du klikke på <strong>Typografier og formatering</strong>.</li>
-<li>Klik på <strong>Ny</strong> i dialogboksen <strong>Typografier og formatering</strong> og derefter skrive et entydigt navn til den nye typografi.</li>
-<li>Vælg skrifttype, og klik derefter på <strong>OK</strong>.</li>
+<li>Klik på <strong>Ny</strong> i dialogboksen <strong>Typografier og formatering</strong>, og angiv derefter et entydigt navn for den nye typografi.</li>
+<li>Vælg de ønskede indstillinger for skrifttypen, og klik derefter på <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Ændre en typografi</td>
+<td>Redigere en typografi</td>
 <td><ol>
 <li>I menuen <strong>Formater</strong> i Report Designer skal du klikke på <strong>Typografier og formatering</strong>.</li>
-<li>Vælg en typografi, der skal ændres, i dialogboksen <strong>Typografier og formatering</strong>, og klik derefter på <strong>Rediger</strong>.</li>
-<li>Vælg skrifttype, og klik derefter på <strong>OK</strong>.</li>
+<li>Vælg en typografi, som du vil ændre, i dialogboksen <strong>Typografier og formatering</strong>, og klik derefter på <strong>Rediger</strong>.</li>
+<li>Vælg de ønskede indstillinger for skrifttypen, og klik derefter på <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anvende en typografi</td>
 <td><ol>
 <li>I Report Designer i en definition eller kolonnedefinition eller i sidehoveder og sidefødder skal du vælge en eller flere celler.</li>
-<li>Vælg en typografi på listen <strong>Typografi</strong> på værktøjslinjen.</li>
+<li>Vælg en typografi på listen <strong>Type</strong> på værktøjslinjen.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 ### <a name="hide-columns-in-the-view-pane"></a>Skjule kolonner i visningsruden
 
 1.  Åbn den rækkedefinition, der skal ændres, i Report Designer.
-2.  Vælg den eller de kolonner, der skal minimeres.
+2.  Markér den eller de kolonner, der skal minimeres.
 3.  Højreklik, og klik derefter på **Skjul**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Få vist alle skjulte kolonner i visningsruden

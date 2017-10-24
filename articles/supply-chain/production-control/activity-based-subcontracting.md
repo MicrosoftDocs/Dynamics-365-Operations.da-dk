@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 000bfcf5c3daea75fc257374dd471c62e94fbc16
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -76,7 +76,7 @@ Dette krav gennemtvinger brugen af FIFO-lagermodellen (FIFO – First In, First 
 Følg disse trin for at konfigurere en procesaktivitet som en aktivitet udført af underleverandør.
 
 1.  Konfigurer en underleverandørarbejdscelle. Hvis du vil konfigurere en arbejdscelle som udført af underleverandør skal du oprette en ressource af typen **Leverandør** og knytte den til arbejdscellen (ressourcegruppen). En kørselsomkostningsart for kostprisgruppetypen **Direkte outsourcing** skal tildeles til arbejdscellen. Omkostningskategorierne til opsætning og antal er ikke påkrævet.
-2.  Når en procesaktivitet er oprettet og knyttet til en underleverandørarbejdscelle, skal du konfigurere en tjeneste til aktiviteten, før produktionsflowversionen kan aktiveres. Du kan udføre dette trin på siden **Aktivitetsdetaljer******. For aktiviteter, der er knyttet til en underleverandørarbejdscelle, vises oversigtspanelet **Servicebetingelser**. I dette oversigtspanel skal du tilføje en standardservice, som gælder for alle slutvarer. Hvis bestemte slutvarer kræver andre services eller andre parametre for beregning af servicen (eksempelvis en anden servicegrad), kan du tilføje andre services til aktiviteten.
+2.  Når en procesaktivitet er oprettet og knyttet til en underleverandørarbejdscelle, skal du konfigurere en tjeneste til aktiviteten, før produktionsflowversionen kan aktiveres. Du kan udføre dette trin på siden **Aktivitetsdetaljer**. For aktiviteter, der er knyttet til en underleverandørarbejdscelle, vises oversigtspanelet **Servicebetingelser**. I dette oversigtspanel skal du tilføje en standardservice, som gælder for alle slutvarer. Hvis bestemte slutvarer kræver andre services eller andre parametre for beregning af servicen (eksempelvis en anden servicegrad), kan du tilføje andre services til aktiviteten.
 
 ## <a name="subcontracted-transfer-activities"></a>Overførselsaktiviteter udført af underleverandør
 En overførselsaktivitet konfigureres som en underleverandøraktivitet, afhængigt af indstillingen **Fragtet af** for overførselsaktiviteten. Følgende valgmuligheder er tilgængelige:
@@ -85,7 +85,7 @@ En overførselsaktivitet konfigureres som en underleverandøraktivitet, afhængi
 -   **Modtager** – Aktiviteten gives i underentreprise, hvis overførslen til lagerstedet administreres af en leverandør (som defineret af en egenskab for lagerstedet). Alle valgte købsaftaler for tjenester skal have det samme leverandør-ID som lagerstedet.
 -   **Fragtmand** – Aktiviteten gives i underentreprise til den leverandør, der leverer tjenesten. For at være gyldig skal en fragtmand oprettes for lokationsstyring og skal have en tildelt kreditorkonto.
 
-For procesaktiviteter skal du konfigurere en standardtjeneste til overførselsaktiviteter udført af underleverandør i oversigtspanelet **Servicebetingelser** på siden **Aktivitetsdetaljer******.
+For procesaktiviteter skal du konfigurere en standardtjeneste til overførselsaktiviteter udført af underleverandør i oversigtspanelet **Servicebetingelser** på siden **Aktivitetsdetaljer**.
 
 ## <a name="service-quantity-calculation"></a>Beregning af ydelsesmængde
 Hele indkøbsprocessen er baseret på en varereference for en tjeneste. Varereferencen måles i en måleenhed for en tjeneste. Tjenester måles normalt i antal tjenester (enheder) eller i tid. Hvis du vil beregne ydelsesmængden baseret på den registrerede afslutning af kanban-job, kan du bruge følgende metoder:

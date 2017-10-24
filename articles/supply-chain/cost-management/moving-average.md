@@ -1,7 +1,7 @@
 ---
 title: Glidende gennemsnit
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 Følgende er forudsætningerne for at bruge glidende gennemsnitskostpriser som en kalkulationsmetode.
 1.  På siden **Varemodelgrupper** skal du konfigurere en varemodelgruppe, hvor Glidende gennemsnit er valgt i feltet **Lagermodel**. **Bemærk!** Når Glidende gennemsnit er valgt, er felterne **Bogfør fysisk varelager** og **Bogfør økonomisk varelager** som standard også markeret. 
 
-2.  På siden **Bogføring** skal du tildele konti til kontiene **Prisdifference for glidende gennemsnit** og **Omkostningsværdiregulering for glidende gennemsnit** under fanen **Lager**. Du kan bruge kontoen **Prisdifference for glidende gennemsnit**, når omkostningen skal være forholdsmæssigt udgiftsført. Dette sker på grund af en difference i omkostningen mellem en købskvittering og købsfakturaen og på grund af en difference mellem det oprindelige lagerantal og den aktuelle beholdning. Brug kontoen **Omkostningsværdiregulering for glidende gennemsnit**, når du vil justere den glidende gennemsnitskostpris for et produkt til en ny enhedspris.
+2.  På siden **Bogføring** skal du tildele konti til kontiene **Prisdifference for glidende gennemsnit** og **Omkostningsværdiregulering for glidende gennemsnit** under fanen **Lager**. Du kan bruge kontoen **Prisdifference for glidende gennemsnit**, når omkostningen, der skal være forholdsmæssigt udgiftsført. Dette sker på grund af en difference i omkostningen mellem en købskvittering og købsfakturaen og på grund af en difference mellem det oprindelige lagerantal og den aktuelle beholdning. Brug kontoen **Omkostningsværdiregulering for glidende gennemsnit**, når du vil justere den glidende gennemsnitskostpris for et produkt til en ny enhedspris.
 3.  På siden **Frigivne produkter** skal du tildele varemodelgruppen med glidende gennemsnit til produktet. **Bemærk!** Lukning af lageret lukker kun regnskabsperioden. Den påvirker ikke produkter, som har et glidende gennemsnit, der er tildelt som en varemodelgruppe.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Konvertér til kalkulationsmetoden med glidende gennemsnit

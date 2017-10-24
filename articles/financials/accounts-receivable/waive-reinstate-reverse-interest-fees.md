@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 97f5aa378aa11cb89176cbcba63e32f690833d47
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 59fa39db725032cdd202704d53a39b85fd946f89
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,7 +62,7 @@ Du kan foretage rettelsen ved hjælp af knappen **Ret faktura** i handlingsruden
 
 Du kan tilbageføre en debitorpostering på en faktura, hvis en faktura er oprettet forkert. Hvis den tilbageførte debitorpostering har rente, der er inkluderet på en rentenota, og hvis rentenotaen er bogført, tilbageføres renten på posteringen også på rentenotaen. Rentenotaen annulleres, hvis den ikke er bogført. 
 
-Du kan tilbageføre debitorposteringer ved hjælp af knappen **Tilbagefør**på siden **Debitorposteringer**.
+Du kan tilbageføre debitorposteringer ved hjælp af knappen **Tilbagefør** på siden **Debitorposteringer**.
 
 ## <a name="waive-or-reinstate-interest-notes"></a>Frafalde eller genindsætte rentenotaer
 Du kan frakalde eller genindføre alle gebyrer på de rentenotaer, du vælger. Når du frafalder gebyrer, kan det samlede beløb, der kan frafaldes, ikke overstige evt. fastsatte beløbsgrænser. Du kan kun genindsætte en rentenota, hvis den tidligere er frafaldet. 
@@ -82,7 +82,7 @@ Du kan frafalde eller genindføre rentenotaer ved hjælp af knappen **Gebyr** p�
 ## <a name="reverse-interest-notes"></a>Tilbagefør rentenotaer
 Du kan tilbageføre alle gebyrer på de rentenotaer, du vælger. Tilbageførte gebyrer fjernes fra en debitors konto og er ikke længere skyldige. Når rentenotaen er tilbageført, kan du genberegne rente og oprette en ny rentenota. 
 
-Du kan tilbageføre rentenotaer ved hjælp af knappen **Rentenota**på siden **Indsaml** på siden **Debitor**.
+Du kan tilbageføre rentenotaer ved hjælp af knappen **Rentenota** på siden **Indsaml** på siden **Debitor**.
 
 ## <a name="reverse-interest-transactions"></a>Tilbageføre renteposteringer
 Du kan tilbageføre alle de renteposteringer, du vælger. Tilbageførte gebyrer fjernes fra en debitors konto og er ikke længere skyldige. Når transaktionerne er tilbageført, kan du genberegne rente og oprette en ny rentenota.
@@ -92,7 +92,7 @@ Du kan tilbageføre renteposteringer ved hjælp af knappen **Posteringsrente** p
 ## <a name="view-the-history-of-adjustments-for-charges-that-were-waived-reinstated-or-reversed"></a>Få vist historikken over reguleringer af gebyrer, der er frafaldet, genindsat eller tilbageført
 Du kan få vist den detaljerede historik over reguleringer, der er foretaget af rentenotaer, f.eks. den bruger, der har angivet reguleringen, reguleringstypen, beløbet og hvornår reguleringen blev indtastet. Det kan f.eks. være, at du vil have vist tidligere reguleringer, der er angivet for en rentenota, før du opretter en ny rentenota. 
 
-Du kan tilbageføre renteposteringer ved hjælp af knappen **Oversigt**på siden **Indsaml** på siden **Debitor**.
+Du kan tilbageføre renteposteringer ved hjælp af knappen **Oversigt** på siden **Indsaml** på siden **Debitor**.
 
 
 

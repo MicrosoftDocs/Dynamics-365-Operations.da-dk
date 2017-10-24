@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -133,7 +133,7 @@ Klik på pilen for at åbne en ekstra menu. Vælg **Lås**.
 
 Ja, de fleste af de almindelige Excel-funktioner fungerer i budgetplanskabeloner. Det anbefales at bruge farvekodning, så brugerne kan skelne mellem skrivebeskyttede og redigerbare kolonner. Betinget formatering kan bruges til at fremhæve problematiske områder af budgettet. Kolonnetotaler kan let vises ved hjælp af standard Excel-formler oven over tabellen.
 
-Du kan også oprette og bruge pivottabeller og -diagrammer til supplerende grupperinger og visualiseringer af budgetdata. Under fanen **Data** i gruppen **Forbindelser** skal du klikke på **Opdater alle** og derefter klikke på **Forbindelsesegenskaber**. Klik på fanen **Anvendelse**. Under **Opdater** skal du markere **Opdater data, når filen åbnes** afkrydsningsfeltet. 
+Du kan også oprette og bruge pivottabeller og -diagrammer til supplerende grupperinger og visualiseringer af budgetdata. Under fanen **Data** i gruppen **Forbindelser** skal du klikke på **Opdater alle** og derefter klikke på **Forbindelsesegenskaber**. Klik på fanen **Anvendelse**. Under **Opdater** skal du markere afkrydsningsfeltet **Opdater data, når filen åbnes**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 

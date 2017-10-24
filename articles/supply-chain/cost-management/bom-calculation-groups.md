@@ -1,7 +1,7 @@
 ---
 title: Styklisteberegningsgrupper
 description: "Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Afkrydsningsfeltet **Stop udfoldning** bruges til at angive, hvornår en produce
 
 ### <a name="warnings"></a>Advarsler
 
-I oversigtspanelet **Advarsler** skal du vælge indstillingerne for advarselsmeddelelser, som brugere skal have vist, når de udfører styklisteberegninger. For eksempel, hvis du markerer afkrydsningsfeltet **Ingen stykliste**, modtager brugeren en advarsel, hvis der findes nogen aktiv styklisteversion for en af komponenterne eller den overordnede vare, som styklistekalkulationen køres for. Hvis du markerer afkrydsningsfeltet **Ingen rute**, får brugeren vist en advarsel, hvis der ikke findes nogen aktiv ruteversion. Hvis du bruger ressourcer på ruter og operationer, kan du bede systemet kontrollere disse ressourcer. Hvis en ressource ikke findes på hver linje i den aktive rute, modtager brugeren en advarsel. Du kan også kontrollere og undersøge forbruget. Forbruget er antallet i en bestemt rute. Det repræsenterer typisk den tid, der kræves for at udføre en bestemt handling for en produktionsproces. Du kan kontrollere, om en vare har en kostpris. Hvis der ikke er en aktiv kostpris for en vare, tilføjes der ingen omkostning i styklistekalkulationen. Du kan også kontrollere og bekræfte alderen for kostprisen. Skriv f.eks. **60** for at angive, at enhedskostprisen skal reevalueres efter 60 dage. Hvis denne grænse nås, genererer systemet en advarsel. For eksempel blev der angivet en kostpris for en vare i januar i år. Hvis det nu er august, hvilket er mere end 60 dage, efter at kostprisen blev angivet, modtager brugeren en advarsel, når styklistekalkulationen køres. Du kan angiv en procent i feltet **Min. dækningsbidrag**. Denne værdi angiver det punkt, hvor det mindste dækningsbidrag ikke er opfyldt. Hvis dækningsbidraget for en bestemt komponent ikke er opfyldt, modtager brugeren en advarsel. Dette felt kan derfor være med til at sikre, at du ikke underbyder omkostningerne og de ekstra lagerbindingsomkostninger, der kan kræves for dine varer.
-Standardkonfiguration af parametre til lager- og lokationsstyring
---------------------------------------------------------------
+I oversigtspanelet **Advarsler** skal du vælge indstillingerne for advarselsmeddelelser, som brugere skal have vist, når de udfører styklisteberegninger. 
 
-Da der kræves beregningsgrupper for at kunne køre beregninger, skal du oprette en standardberegningsgruppe i lagerstyringsparametrene. Denne opsætning gør det muligt for virksomheder at have en standardomkostningsgruppe og -avancesæt for alle varer. Hvis en bestemt vare har særlige beregningskrav, kan brugeren tildele en anden beregningsgruppe til varen. Typisk kan du angive beregningsgrupper for styklistekomponentvarer i stedet for styklistevarer. Når der vises advarsler, kan der dog anvendes beregningsgrupper. En beregningsgruppe, der er tildelt til varer, tilsidesætter den standardværdi, der er angivet i lagerstyringsparametrene. Du kan definere standardparameteren i **Omkostningsstyring** &gt; **Konfiguration af regnskabspolitik for lager** &gt; **Parametre** &gt; **Lagerregnskab** &gt; **Beregningsgruppe**. Ved at oprette en standardkonfigurationsgruppe kan du også konfigurere advarsler i situationer, hvor brugerne bliver advaret under styklistekalkulationsprocessen, hvis de valgte komponenter kan det medføre beregningsfejl.
-Vise advarsler på siden Fuldført
-------------------------------------------
+For eksempel, hvis du markerer afkrydsningsfeltet **Ingen stykliste**, modtager brugeren en advarsel, hvis der findes nogen aktiv styklisteversion for en af komponenterne eller den overordnede vare, som styklistekalkulationen køres for. Hvis du markerer afkrydsningsfeltet **Ingen rute**, får brugeren vist en advarsel, hvis der ikke findes nogen aktiv ruteversion. Hvis du bruger ressourcer på ruter og operationer, kan du bede systemet kontrollere disse ressourcer. Hvis en ressource ikke findes på hver linje i den aktive rute, modtager brugeren en advarsel. 
+
+Du kan også kontrollere og undersøge forbruget. Forbruget er antallet i en bestemt rute. Det repræsenterer typisk den tid, der kræves for at udføre en bestemt handling for en produktionsproces. Du kan kontrollere, om en vare har en kostpris. Hvis der ikke er en aktiv kostpris for en vare, tilføjes der ingen omkostning i styklistekalkulationen. 
+
+Du kan også kontrollere og bekræfte alderen for kostprisen. Skriv f.eks. **60** for at angive, at enhedskostprisen skal reevalueres efter 60 dage. Hvis denne grænse nås, genererer systemet en advarsel. For eksempel blev der angivet en kostpris for en vare i januar i år. Hvis det nu er august, hvilket er mere end 60 dage, efter at kostprisen blev angivet, modtager brugeren en advarsel, når styklistekalkulationen køres. Du kan angiv en procent i feltet **Min. dækningsbidrag**. Denne værdi angiver det punkt, hvor det mindste dækningsbidrag ikke er opfyldt. Hvis dækningsbidraget for en bestemt komponent ikke er opfyldt, modtager brugeren en advarsel. Dette felt kan derfor være med til at sikre, at du ikke underbyder omkostningerne og de ekstra lagerbindingsomkostninger, der kan kræves for dine varer.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Standardkonfiguration af parametre til lager- og lokationsstyring
+
+Da der kræves beregningsgrupper for at kunne køre beregninger, skal du oprette en standardberegningsgruppe i lagerstyringsparametrene. Denne opsætning gør det muligt for virksomheder at have en standardomkostningsgruppe og -avancesæt for alle varer. Hvis en bestemt vare har særlige beregningskrav, kan brugeren tildele en anden beregningsgruppe til varen. Typisk kan du angive beregningsgrupper for styklistekomponentvarer i stedet for styklistevarer. Når der vises advarsler, kan der dog anvendes beregningsgrupper. En beregningsgruppe, der er tildelt til varer, tilsidesætter den standardværdi, der er angivet i lagerstyringsparametrene. 
+
+Du kan definere standardparameteren i **Omkostningsstyring** &gt; **Konfiguration af regnskabspolitik for lager** &gt; **Parametre** &gt; **Lagerregnskab** &gt; **Beregningsgruppe**. Ved at oprette en standardkonfigurationsgruppe kan du også konfigurere advarsler i situationer, hvor brugerne bliver advaret under styklistekalkulationsprocessen, hvis de valgte komponenter kan det medføre beregningsfejl.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Vise advarsler på siden Fuldført
 
 En styklistekalkulation genererer advarsler. Du kan få vist advarslerne om den valgte vare. For eksempel kan du i Salg og marketing oprette en ny salgsordre for varen D0001. Derefter skal du på salgsordrelinjen klikke på **Beregn baseret på stykliste/formel** i menuen **Opdater linje** for at få vist oplysninger om beregningen og advarsler. Du kan også få vist resultater af styklistekalkulationer på siden **Fuldført**. For advarselsmeddelelser gælder der kun to advarselssituationer for producerede varer, mens der gælder fire advarselssituationer for alle varer:
 -   Identificer, hvornår en produceret vare ikke har en aktiv stykliste.

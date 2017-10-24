@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ De faktiske hardwarekrav varierer baseret på systemkonfigurationen, datakomposi
 - Antal samtidige brugere
 
 ## <a name="minimum-infrastructure-requirements"></a>Minimumkrav til infrastruktur
-Finance and Operations (on-premises) bruger Service Fabric som vært for AOS, Batch, datastyring, Management Reporter og Orchestrator-miljøtjenester. Service Fabric-klyngen er ikke vært for Microsoft SQL Server Reporting Services (SSRS).
+Finance and Operations (on-premises) bruger Service Fabric som vært for AOS, Batch, datastyring, Management Reporter og Orchestrator-miljøtjenester. 
 
 SQL Server skal have en HADRON-konfiguration med høj tilgængelighed, der har mindst to noder til produktionsbrug.
 
@@ -225,6 +225,12 @@ I følgende tabel vises de SQL Server versioner, der understøttes til Finance a
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition eller Enterprise Edition | Krav til hardware for SQL Server 2016 finder du i [Hardware og softwarekrav til installation af SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Krav til software til AOS (Applikationsobjektserver) 
+- SQL Server Integration Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>Krav til software til Reporting Server (BI)
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>Krav til software for klientservere
 Finance and Operations-webprogrammet kan køre på alle enheder, der har en HTML 5.0-kompatibel webbrowser. Her er nogle specifikke kombinationer af enhed/browser, som Microsoft har bekræftet:
 
@@ -244,7 +250,7 @@ Domænecontrolleren skal være Windows Server 2012 R2 eller nyere, og domænefun
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-programmer
 Følgende Microsoft Office-programmer understøttes i installationerne af Finance and Operations i skyen og det lokale miljø:
 
--   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Microsoft Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde yderligere oplysninger om versionskrav i [Fejlfinding af Office-integration](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Microsoft Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde yderligere oplysninger om versionskrav i [Fejlfinding af Office-integration](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>Krav til hardware og software for Retail-komponenter

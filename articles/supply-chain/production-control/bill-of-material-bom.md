@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5a23acfa95bb93dbc5990bf3839bbc629f15cc2f
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -110,7 +110,7 @@ Bemærk, at fantomstyklister typisk bruges til at forenkle den tekniske proces. 
 
 ### <a name="pegged-supply"></a>Sporet forsyning
 
-Vælg linjetypen**Sporet forsyning**, når du vil oprette en underproduktion, en hændelseskanban for en styklistelinje eller en direkte købsordre for en produktvariant, som styklistelinje henviser til. Den underproduktion, hændelseskanban eller indkøbsordre, der oprettes, når du forkalkulerer produktionsordren. De påkrævede vareantal reserveres automatisk til den forbrugende produktionsordre.
+Vælg linjetypen **Sporet forsyning**, når du vil oprette en underproduktion, en hændelseskanban for en styklistelinje eller en direkte købsordre for en produktvariant, som styklistelinje henviser til. Den underproduktion, hændelseskanban eller indkøbsordre, der oprettes, når du forkalkulerer produktionsordren. De påkrævede vareantal reserveres automatisk til den forbrugende produktionsordre.
 
 ### <a name="vendor"></a>Kreditor
 
