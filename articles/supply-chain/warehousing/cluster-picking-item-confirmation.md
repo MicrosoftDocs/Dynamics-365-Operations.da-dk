@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 17f5761df4294abfea28e7cb8d50c86f1e3e136f
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 [!include[banner](../includes/banner.md)]
 
-# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="c660f-103">Produktbekræftelse for klyngepluk</span><span class="sxs-lookup"><span data-stu-id="c660f-103">Product confirmation for cluster picking</span></span>
-<span data-ttu-id="c660f-104">Med pluk af klyngen kan du plukke varer til flere ordrer samtidig.</span><span class="sxs-lookup"><span data-stu-id="c660f-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="c660f-105">Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af de varer, der føjes til klynger.</span><span class="sxs-lookup"><span data-stu-id="c660f-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="c660f-106">Du kan kontrollere varer i klyngepluk under klyngeplukprocessen.</span><span class="sxs-lookup"><span data-stu-id="c660f-106">You can verify items in cluster picking during the cluster picking process.</span></span>
+# <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="8614f-103">Produktbekræftelse for klyngepluk</span><span class="sxs-lookup"><span data-stu-id="8614f-103">Product confirmation for cluster picking</span></span>
+<span data-ttu-id="8614f-104">Med pluk af klyngen kan du plukke varer til flere ordrer samtidig.</span><span class="sxs-lookup"><span data-stu-id="8614f-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="8614f-105">Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af de varer, der føjes til klynger.</span><span class="sxs-lookup"><span data-stu-id="8614f-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="8614f-106">Du kan kontrollere varer i klyngepluk under klyngeplukprocessen.</span><span class="sxs-lookup"><span data-stu-id="8614f-106">You can verify items in cluster picking during the cluster picking process.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="c660f-107">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="c660f-107">Where it applies</span></span>
-<span data-ttu-id="c660f-108">Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer varer i en ikke-klynge plukproces.</span><span class="sxs-lookup"><span data-stu-id="c660f-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="c660f-109">Opsætningen er baseret på opsætningen af produktets stregkode.</span><span class="sxs-lookup"><span data-stu-id="c660f-109">The setup is based on the product bar code setup.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="8614f-107">Hvor det er relevant</span><span class="sxs-lookup"><span data-stu-id="8614f-107">Where it applies</span></span>
+<span data-ttu-id="8614f-108">Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer varer i en ikke-klynge plukproces.</span><span class="sxs-lookup"><span data-stu-id="8614f-108">Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes.</span></span> <span data-ttu-id="8614f-109">Opsætningen er baseret på opsætningen af produktets stregkode.</span><span class="sxs-lookup"><span data-stu-id="8614f-109">The setup is based on the product bar code setup.</span></span>
 
-## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="c660f-110">Konfigurer varekontrol med klyngepluk</span><span class="sxs-lookup"><span data-stu-id="c660f-110">Set up item verification with cluster picking</span></span>
-1.  <span data-ttu-id="c660f-111">I menupunktet på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** > **Lokationsstyring** > **Opsætning** > **Mobilenhed** > **Menupunkter i mobilenhed**.</span><span class="sxs-lookup"><span data-stu-id="c660f-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
-2.  <span data-ttu-id="c660f-112">Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden.</span><span class="sxs-lookup"><span data-stu-id="c660f-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
+## <a name="set-up-item-verification-with-cluster-picking"></a><span data-ttu-id="8614f-110">Konfigurer varekontrol med klyngepluk</span><span class="sxs-lookup"><span data-stu-id="8614f-110">Set up item verification with cluster picking</span></span>
+1.  <span data-ttu-id="8614f-111">I menupunktet på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** > **Lokationsstyring** > **Opsætning** > **Mobilenhed** > **Menupunkter i mobilenhed**.</span><span class="sxs-lookup"><span data-stu-id="8614f-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
+2.  <span data-ttu-id="8614f-112">Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden.</span><span class="sxs-lookup"><span data-stu-id="8614f-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
 
-| <span data-ttu-id="c660f-113">Indstilling</span><span class="sxs-lookup"><span data-stu-id="c660f-113">Option</span></span>        | <span data-ttu-id="c660f-114">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="c660f-114">Description</span></span>   | 
+| <span data-ttu-id="8614f-113">Indstilling</span><span class="sxs-lookup"><span data-stu-id="8614f-113">Option</span></span>        | <span data-ttu-id="8614f-114">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="8614f-114">Description</span></span>   | 
 | ------------- | ------------- |
-|<span data-ttu-id="c660f-115">Bekræftelse af produkt</span><span class="sxs-lookup"><span data-stu-id="c660f-115">Product confirmation</span></span> | <span data-ttu-id="c660f-116">Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.</span><span class="sxs-lookup"><span data-stu-id="c660f-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span>|
+|<span data-ttu-id="8614f-115">Bekræftelse af produkt</span><span class="sxs-lookup"><span data-stu-id="8614f-115">Product confirmation</span></span> | <span data-ttu-id="8614f-116">Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.</span><span class="sxs-lookup"><span data-stu-id="8614f-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span>|
 

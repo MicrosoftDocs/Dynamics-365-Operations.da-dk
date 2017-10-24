@@ -17,29 +17,29 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 731a3ec06efa103ba663df83240c77dfe78bb7cd
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="faa54-103">Parameterkonfigurationer for detailopgørelser</span><span class="sxs-lookup"><span data-stu-id="faa54-103">Parameter configurations for Retail statements</span></span>
+# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="67f66-103">Parameterkonfigurationer for detailopgørelser</span><span class="sxs-lookup"><span data-stu-id="67f66-103">Parameter configurations for Retail statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="faa54-104">Denne procedure viser konfigurationer for detailparametre, der påvirker, hvordan detailopgørelser oprettes og bogføres.</span><span class="sxs-lookup"><span data-stu-id="faa54-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="faa54-105">Denne procedure bruger demofirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="faa54-105">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="67f66-104">Denne procedure viser konfigurationer for detailparametre, der påvirker, hvordan detailopgørelser oprettes og bogføres.</span><span class="sxs-lookup"><span data-stu-id="67f66-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="67f66-105">Denne procedure bruger demofirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="67f66-105">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="faa54-106">Gå til Detail og handel > Konfiguration af hovedkontor > Parametre > Detailparametre.</span><span class="sxs-lookup"><span data-stu-id="faa54-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
-2. <span data-ttu-id="faa54-107">Klik på fanen Bogføring.</span><span class="sxs-lookup"><span data-stu-id="faa54-107">Click the Posting tab.</span></span>
-    * <span data-ttu-id="faa54-108">Vælg "Ja", hvis du specifikt vil bogføre de periodiske rabatbeløb.</span><span class="sxs-lookup"><span data-stu-id="faa54-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
-    * <span data-ttu-id="faa54-109">Vælg "Standard" for at bruge standardkonti, eller Vælg "Periodisk", hvis du vil angive, hvilken konto der skal bruges til hver periodisk rabat.</span><span class="sxs-lookup"><span data-stu-id="faa54-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
-    * <span data-ttu-id="faa54-110">Vælg "Oversigt", hvis lagerlinjer skal samles, når det er muligt.</span><span class="sxs-lookup"><span data-stu-id="faa54-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
-    * <span data-ttu-id="faa54-111">Vælg "Ja", hvis fakturaer og betalinger bør udlignes automatisk som en del af processen til bogføring af opgørelser.</span><span class="sxs-lookup"><span data-stu-id="faa54-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
-    * <span data-ttu-id="faa54-112">Vælg "Ja", hvis transaktioner med deponering til pengeskab skal samles.</span><span class="sxs-lookup"><span data-stu-id="faa54-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="faa54-113">Vælg "Ja", hvis transaktioner med indsættelse i banken skal samles.</span><span class="sxs-lookup"><span data-stu-id="faa54-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="faa54-114">Vælg "Ja" for at aktivere sammenlægning for bogføring af opgørelsen.</span><span class="sxs-lookup"><span data-stu-id="faa54-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
-    * <span data-ttu-id="faa54-115">Vælg "Ja" for at oprette og behandle ordrer parallelt, når opgørelser bogføres.</span><span class="sxs-lookup"><span data-stu-id="faa54-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
-    * <span data-ttu-id="faa54-116">Angiv de maksimale ordrer, skal behandles i hver batchjobopgave.</span><span class="sxs-lookup"><span data-stu-id="faa54-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
-3. <span data-ttu-id="faa54-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="faa54-117">Click Save.</span></span>
+1. <span data-ttu-id="67f66-106">Gå til Detail og handel > Konfiguration af hovedkontor > Parametre > Detailparametre.</span><span class="sxs-lookup"><span data-stu-id="67f66-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="67f66-107">Klik på fanen Bogføring.</span><span class="sxs-lookup"><span data-stu-id="67f66-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="67f66-108">Vælg "Ja", hvis du specifikt vil bogføre de periodiske rabatbeløb.</span><span class="sxs-lookup"><span data-stu-id="67f66-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="67f66-109">Vælg "Standard" for at bruge standardkonti, eller Vælg "Periodisk", hvis du vil angive, hvilken konto der skal bruges til hver periodisk rabat.</span><span class="sxs-lookup"><span data-stu-id="67f66-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="67f66-110">Vælg "Oversigt", hvis lagerlinjer skal samles, når det er muligt.</span><span class="sxs-lookup"><span data-stu-id="67f66-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="67f66-111">Vælg "Ja", hvis fakturaer og betalinger bør udlignes automatisk som en del af processen til bogføring af opgørelser.</span><span class="sxs-lookup"><span data-stu-id="67f66-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="67f66-112">Vælg "Ja", hvis transaktioner med deponering til pengeskab skal samles.</span><span class="sxs-lookup"><span data-stu-id="67f66-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="67f66-113">Vælg "Ja", hvis transaktioner med indsættelse i banken skal samles.</span><span class="sxs-lookup"><span data-stu-id="67f66-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="67f66-114">Vælg "Ja" for at aktivere sammenlægning for bogføring af opgørelsen.</span><span class="sxs-lookup"><span data-stu-id="67f66-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="67f66-115">Vælg "Ja" for at oprette og behandle ordrer parallelt, når opgørelser bogføres.</span><span class="sxs-lookup"><span data-stu-id="67f66-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="67f66-116">Angiv de maksimale ordrer, skal behandles i hver batchjobopgave.</span><span class="sxs-lookup"><span data-stu-id="67f66-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="67f66-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="67f66-117">Click Save.</span></span>
 
 

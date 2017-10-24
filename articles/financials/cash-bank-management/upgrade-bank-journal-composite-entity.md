@@ -17,42 +17,42 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 18b2b228f287a946eb18536b1ea93b0d6af6900c
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="9b7b1-103">Opdater den sammensatte enhed Bankkladde</span><span class="sxs-lookup"><span data-stu-id="9b7b1-103">Update the bank journal composite entity</span></span>
+# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="4d8c7-103">Opdater den sammensatte enhed Bankkladde</span><span class="sxs-lookup"><span data-stu-id="4d8c7-103">Update the bank journal composite entity</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="9b7b1-104">Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="4d8c7-104">Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-<span data-ttu-id="9b7b1-105">Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="4d8c7-105">Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-1.  <span data-ttu-id="9b7b1-106">Kompilerer og synkroniserer følgende sammensatte bankkladdeobjekter, objekter, og midlertidige tabeller:</span><span class="sxs-lookup"><span data-stu-id="9b7b1-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
-    -   <span data-ttu-id="9b7b1-107">Sammensat enhed\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="9b7b1-107">Composite Entity\\BankJournalEntity</span></span>
-    -   <span data-ttu-id="9b7b1-108">Enhed\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="9b7b1-108">Entity\\BankJournalHeaderEntity</span></span>
-    -   <span data-ttu-id="9b7b1-109">Enhed\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="9b7b1-109">Entity\\BankJournalLineEntity</span></span>
-    -   <span data-ttu-id="9b7b1-110">Tabel\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="9b7b1-110">Table\\BankJournalHeaderStaging</span></span>
-    -   <span data-ttu-id="9b7b1-111">Tabel\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="9b7b1-111">Table\\BankJournalLineStaging</span></span>
+1.  <span data-ttu-id="4d8c7-106">Kompilerer og synkroniserer følgende sammensatte bankkladdeobjekter, objekter, og midlertidige tabeller:</span><span class="sxs-lookup"><span data-stu-id="4d8c7-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
+    -   <span data-ttu-id="4d8c7-107">Sammensat enhed\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="4d8c7-107">Composite Entity\\BankJournalEntity</span></span>
+    -   <span data-ttu-id="4d8c7-108">Enhed\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="4d8c7-108">Entity\\BankJournalHeaderEntity</span></span>
+    -   <span data-ttu-id="4d8c7-109">Enhed\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="4d8c7-109">Entity\\BankJournalLineEntity</span></span>
+    -   <span data-ttu-id="4d8c7-110">Tabel\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="4d8c7-110">Table\\BankJournalHeaderStaging</span></span>
+    -   <span data-ttu-id="4d8c7-111">Tabel\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="4d8c7-111">Table\\BankJournalLineStaging</span></span>
 
-2.  <span data-ttu-id="9b7b1-112">Datastyring\\dataprojekter</span><span class="sxs-lookup"><span data-stu-id="9b7b1-112">Data management\\data projects</span></span>
-    -   <span data-ttu-id="9b7b1-113">Vis typen **Banktransaktion**på **Kildedata-**layout.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
-        -   <span data-ttu-id="9b7b1-114">Kildedataformat = XML-element</span><span class="sxs-lookup"><span data-stu-id="9b7b1-114">Source data format = XML-Element</span></span>
-        -   <span data-ttu-id="9b7b1-115">Enhedsnavn = Bankkladde</span><span class="sxs-lookup"><span data-stu-id="9b7b1-115">Entity name = Bank Journal</span></span>
-        -   <span data-ttu-id="9b7b1-116">Upload datafilen = ny version af SampleBankJournalCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="9b7b1-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
-        -   <span data-ttu-id="9b7b1-117">Klik på **Ja** for at overskrive den eksisterende fil.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-117">Click **Yes** to overwrite the existing file.</span></span>
-        -   <span data-ttu-id="9b7b1-118">Klik på **Ja** for at oprette en tilknytning fra grunden.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-118">Click **Yes** to generate mapping from scratch.</span></span>
-        -   <span data-ttu-id="9b7b1-119">Kontrollér, at bankposteringstypen er tilknyttet.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-119">Verify that the Bank Transaction Type is mapped.</span></span>
-            -   <span data-ttu-id="9b7b1-120">Klik på **Vis tilknytning** på linjeenhed.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-120">Click **View map** on Line entity.</span></span>
-            -   <span data-ttu-id="9b7b1-121">Kontrollér, at bankposteringstypen er knyttet fra Kilde til Midlertidig.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
+2.  <span data-ttu-id="4d8c7-112">Datastyring\\dataprojekter</span><span class="sxs-lookup"><span data-stu-id="4d8c7-112">Data management\\data projects</span></span>
+    -   <span data-ttu-id="4d8c7-113">Vis typen **Banktransaktion** på **Kildedata-** layout.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
+        -   <span data-ttu-id="4d8c7-114">Kildedataformat = XML-element</span><span class="sxs-lookup"><span data-stu-id="4d8c7-114">Source data format = XML-Element</span></span>
+        -   <span data-ttu-id="4d8c7-115">Enhedsnavn = Bankkladde</span><span class="sxs-lookup"><span data-stu-id="4d8c7-115">Entity name = Bank Journal</span></span>
+        -   <span data-ttu-id="4d8c7-116">Upload datafilen = ny version af SampleBankJournalCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="4d8c7-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
+        -   <span data-ttu-id="4d8c7-117">Klik på **Ja** for at overskrive den eksisterende fil.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-117">Click **Yes** to overwrite the existing file.</span></span>
+        -   <span data-ttu-id="4d8c7-118">Klik på **Ja** for at oprette en tilknytning fra grunden.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-118">Click **Yes** to generate mapping from scratch.</span></span>
+        -   <span data-ttu-id="4d8c7-119">Kontrollér, at bankposteringstypen er tilknyttet.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-119">Verify that the Bank Transaction Type is mapped.</span></span>
+            -   <span data-ttu-id="4d8c7-120">Klik på **Vis tilknytning** på linjeenhed.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-120">Click **View map** on Line entity.</span></span>
+            -   <span data-ttu-id="4d8c7-121">Kontrollér, at bankposteringstypen er knyttet fra Kilde til Midlertidig.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
 
-3.  <span data-ttu-id="9b7b1-122">Importér det nye udtog.</span><span class="sxs-lookup"><span data-stu-id="9b7b1-122">Import the new statement.</span></span>
+3.  <span data-ttu-id="4d8c7-122">Importér det nye udtog.</span><span class="sxs-lookup"><span data-stu-id="4d8c7-122">Import the new statement.</span></span>
 
 
 
