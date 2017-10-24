@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 111ebf578e455408c5b6168e5a7af705f3624d78
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -209,7 +209,7 @@ Du kan bruge dataobjektet Importerede statistiske målinger til at importere sta
 | Regnskabsdato | Dimensionsmedlem | Størrelsesorden | Kildeidentifikator |
 |-----------------|------------------|-----------|-------------------|
 | 01-31-2017      | CC001            | 2,450.00  | Elektricitet       |
-| 01-31-2017      | CC002            | 4,100.00  | Elektricitet       |
+| 31-01-2017      | CC002            | 4,100.00  | Elektricitet       |
 | 01-31-2017      | CC003            | 15.000,00 | Elektricitet       |
 
 Når kildedataene for statistiske målinger er behandlet, oprettes følgende poster i omkostningsregnskabet.
@@ -218,8 +218,8 @@ Når kildedataene for statistiske målinger er behandlet, oprettes følgende pos
 
 | Omkostningsobjekt |    | Regnskabsdato | Statistisk dimensionsmedlem |    Betegnelse          | Størrelsesorden |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | Personale | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
-| CC002       | FI | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
+| CC001       | Personale | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
+| CC002       | FI | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
 | CC003       | LO | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 15.000,00 |
 
 Her er et eksempel på en regel til fordeling af omkostninger, hvis den foruddefinerede fordelingsbasis for dimensionsmedlem for Elektricitet er tildelt som fordelingsgrundlag i den.
@@ -319,8 +319,8 @@ Den foruddefinerede fordelingsbasis for dimensionsmedlem for Elektricitet er all
 
 | Omkostningsobjekt | Navn | Regnskabsdato | Statistisk dimensionsmedlem | Betegnelse             | Størrelsesorden |
 |-------------|------|-----------------|------------------------------|-------------------------|-----------|
-| CC001       | Personale   | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
-| CC002       | FI   | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
+| CC001       | Personale   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 2,450.00  |
+| CC002       | FI   | 31-01-2017      | Elektricitet                  | Forbrug af elektricitet | 4,100.00  |
 | CC003       | LO   | 01-31-2017      | Elektricitet                  | Forbrug af elektricitet | 15.000,00 |
 
 Hvis det faste gebyr nu skal fordeles jævnt over omkostningsobjekter, der forbruger elektricitet, har du to muligheder for fordeling af omkostningerne:

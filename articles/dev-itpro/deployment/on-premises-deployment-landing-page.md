@@ -18,13 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 4399dc7374ae11f2eca3add37b60c50574dfad9d
+ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
+ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Landingsside for lokal installation
+
+[!include[banner](../includes/banner.md)]
 
 Du kan installere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.
 
@@ -32,10 +34,10 @@ Du kan installere Microsoft Dynamics 365 for Finance and Operations, Enterprise 
 
 ## <a name="get-started"></a>Introduktion
 - [Oversigt over Dynamics 365 for Finance and Operations, Enterprise edition (lokal installation)](on-premises-overview.md)
-- [Systemkrav til installationer i det lokale miljø](../get-started/system-requirements-on-prem.md)
-- [Tilpasning af hardware til lokale miljøer](../get-started/hardware-sizing-on-premises-environments.md)
+- [Systemkrav til installationer i det lokale miljø](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Tilpasning af hardware til lokale miljøer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Livscykluspolitik for software til onlinetjeneste og lokale installationer](../migration-upgrade/versions-update-policy.md)
-- [Købe Dynamics 365 for Finance and Operations, Enterprise edition (lokal installation)](../get-started/purchase-on-premises.md)
+- [Købe Dynamics 365 for Finance and Operations, Enterprise edition (lokal installation)](../../fin-and-ops/get-started/purchase-on-premises.md)
 
 ## <a name="onboard"></a>Onboard
 - [Oprette et lokalt projekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -44,14 +46,14 @@ Du kan installere Microsoft Dynamics 365 for Finance and Operations, Enterprise 
 - [Udvikle og installere brugerdefinerede modeller i lokale miljøer](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Arbejde i din lokale installation
-- [Konfigurere dokumentstyring](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [Konfigurere dokumentstyring](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Importér konfigurationer for elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Funktioner for dokumentgenerering, -udgivelse og -udskrivning i lokale installationer](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurere teknisk support](../lifecycle-services/support-experience.md)
 - [Fejlfinding af klientinternetforbindelse](../user-interface/client-disconnected.md)
 
 ## <a name="other-resources"></a>Andre ressourcer
-- [Funktioner, der endnu ikke er implementeret i lokale installationer](../get-started/features-not-implemented-on-prem.md)
+- [Funktioner, der endnu ikke er implementeret i lokale installationer](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Frarådede funktioner](../migration-upgrade/deprecated-features.md)
  
 

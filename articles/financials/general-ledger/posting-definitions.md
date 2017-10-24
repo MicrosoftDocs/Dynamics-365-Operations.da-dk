@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1865a695a89ed0501f97189b542b3915a96bf08
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c49e4abe28078f62f46b4eea4e22a268339b569
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -36,12 +35,12 @@ Denne artikel indeholder oplysninger om bogføringsdefinitioner, og hvordan du d
 
 Til understøttede bogføringstyper og -dokumenter kan du bruge bogføringsdefinitioner i stedet for posteringsprofiler til at klassificere hovedkonti og økonomiske dimensioner på regnskabsposter. Du kan se de understøttede dokumenter og bogføringstyper på siden **Definitioner af posteringsbogføring**. 
 
-Hvis du vil bruge bogføringsdefinitioner, skal du vælge indstillingen**Brug bogføringsdefinitioner** på siden **Finansparametre**. Selv når du bruger bogføringsdefinitioner, skal du stadig definere posteringsprofiler for de oprindelige poster og de ikke-understøttede bogføringsprofiler og -dokumenter. 
+Hvis du vil bruge bogføringsdefinitioner, skal du vælge indstillingen **Brug bogføringsdefinitioner** på siden **Finansparametre**. Selv når du bruger bogføringsdefinitioner, skal du stadig definere posteringsprofiler for de oprindelige poster og de ikke-understøttede bogføringsprofiler og -dokumenter. 
 
 Du skal bruge bogføringsdefinitioner for at kunne aktivere indeholder bogføring af behæftelser for indkøbsordrer og bogføring af budgetreservationer for indkøbsrekvisitioner.
 
 ## <a name="defining-posting-definitions"></a>Definition af bogføringsdefinitioner
-Brug siden**Bogføringsdefinitioner** til at angive søgekriterier og definere de poster, der skal genereres, når der opstår et match. Søgekriterierne evalueres som regnskabsfordelinger for de oprindelige poster. 
+Brug siden **Bogføringsdefinitioner** til at angive søgekriterier og definere de poster, der skal genereres, når der opstår et match. Søgekriterierne evalueres som regnskabsfordelinger for de oprindelige poster. 
 
 På siden **Bogføringsdefinitioner** kan du også tildele prioritetsnumre til posteringslinjer for at styre den rækkefølge, linjerne evalueres i. De linjer, der har det laveste prioritetsnummer, evalueres først. For eksempel evalueres alle linjer, der har prioritet 1, og derefter linjer, der har en prioritet 2, osv. Når der er overensstemmelse, ignoreres de andre søgekriterier. Desuden er det kun de kriterier i gruppen, der matcher den oprindelige transaktion, der opretter genererede poster. 
 

@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
 
-Økonomirapportering understøtter fleksibel rapportering, så du kan nemt foretage ændringer, i takt med at din virksomhedsstruktur ændres. Rapporter bygges på forskellige komponenter eller dokumentkomponenter. En af disse komponenter er en definition af et rapporteringstræ. En rapporteringstrædefinition hjælper med at definere strukturen og hierarkiet i din organisation. Det er en krydsdimensionale hierarkisk struktur, der er baseret på de størrelsesmæssige relationer i dine økonomiske data. Den giver oplysninger på rapporteringsenhedsniveau og på oversigtsniveau for alle enheder i træet. Rapporteringstrædefinitioner kan kombineres med kolonnedefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer. Der bruges en rapporteringsenhed for hver boks i et organisationsdiagram. En rapporteringsenhed kan være en enkelt afdeling fra de økonomiske data, eller det kan være en oversigtsenhed på et højere niveau, der kombinerer oplysninger fra andre rapporteringsenheder. For en rapportdefinition, der omfatter et rapporteringstræ, oprettes der én rapport for hver rapporteringsenhed og for oversigtsniveauet. Alle disse rapporter bruger de række- og kolonnedefinitioner, der er angivet i rapportdefinitionen, medmindre rapportdefinitionen angiver, at rapporteringstræet fra rækkedefinitionen skal bruges. Række- og kolonnedefinitioner er vigtige komponenter i udformningen af og funktionaliteten for økonomiske rapporter. Rapporteringstræer øger styrken af komponenter og understøtter fleksibel rapportering i takt med, at virksomhedsstrukturen ændres. Økonomiske rapporter, der ikke er baseret på et rapporteringstræ, anvender kun nogle af funktionerne i økonomirapportering. Du kan bruge flere rapporteringstrædefinitioner sammen med de samme række- og kolonnedefinitioner for at få vist organisationens data på forskellige måder.
+Økonomirapportering understøtter fleksibel rapportering, så du kan nemt foretage ændringer, i takt med at din virksomhedsstruktur ændres. Rapporter bygges på forskellige komponenter eller dokumentkomponenter. En af disse komponenter er en definition af et rapporteringstræ. En rapporteringstrædefinition hjælper med at definere strukturen og hierarkiet i din organisation. Det er en krydsdimensionale hierarkisk struktur, der er baseret på de størrelsesmæssige relationer i dine økonomiske data. Den giver oplysninger på rapporteringsenhedsniveau og på oversigtsniveau for alle enheder i træet. Rapporteringstrædefinitioner kan kombineres med kolonnedefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer. Der bruges en rapporteringsenhed for hver boks i et organisationsdiagram. En enhed i trædiagrammet kan være en enkelt afdeling fra de økonomiske data, eller det kan være en summeringsenhed på et højere niveau, der kombinerer oplysninger fra andre enheder i trædiagrammet. For en rapportdefinition, der omfatter et rapporteringstræ, oprettes der én rapport for hver rapporteringsenhed og for oversigtsniveauet. Alle disse rapporter bruger de række- og kolonnedefinitioner, der er angivet i rapportdefinitionen, medmindre rapportdefinitionen angiver, at rapporteringstræet fra rækkedefinitionen skal bruges. Række- og kolonnedefinitioner er vigtige komponenter i udformningen af og funktionaliteten for økonomiske rapporter. Rapporteringstræer øger styrken af komponenter og understøtter fleksibel rapportering i takt med, at virksomhedsstrukturen ændres. Økonomiske rapporter, der ikke er baseret på et rapporteringstræ, anvender kun nogle af funktionerne i økonomirapportering. Du kan bruge flere rapporteringstrædefinitioner sammen med de samme række- og kolonnedefinitioner for at få vist organisationens data på forskellige måder.
 
 ## <a name="reporting-tree-best-practices"></a>Bedste fremgangsmåder for rapporteringstræ
 Inden du opretter et rapporteringstræ, bør du overveje følgende bedste fremgangsmåder:
 
 -   Først skal du afgøre, hvilke rapporteringsdimensioner din juridiske enhed eller virksomhed kræver.
--   Overvej, hvordan du har oprettet din struktur, og tegn derefter et organisationsdiagram for din virksomhed. Organisationsdiagrammet hjælper dig med at visualisere, hvordan du kan gruppere rapporteringsenhederne i et eller flere rapporteringstræer.
+-   Overvej, hvordan du har oprettet din struktur, og tegn derefter et organisationsdiagram for din virksomhed. Organisationsdiagrammet er med til at visualisere, hvordan du skal gruppere enhederne i trædiagrammet i et eller flere trædiagrammer.
 -   Start med det laveste detaljeniveau, for eksempel afdelinger og projekter, der er defineret i de økonomiske data. Føj så mange bokse til detaljeniveauet, som er nødvendige for at vise divisioner eller områder på højere niveauer. Hver boks repræsenterer en potentiel rapporteringsenhed i et hvilket som helst rapporteringstræ, du opretter.
 -   Du skal også overveje, hvordan du bedst opbygger din træer. Du kan bruge en automatiseret proces til at generere et rapporteringstræ, eller du kan oprette en rapporteringstræ manuelt. Det er vigtigt, at du forstår begge metoder, før du designer dine træer.
 -   Du kan bruge de rapporteringsenheder, der er defineret i systemet for økonomiske data, til at føje rapporteringsenheder til definitionen af rapporteringstræet.
@@ -52,13 +52,13 @@ En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følge
 
 | Kolonne i rapporteringstræ | Betegnelse|
 |---|---|
-| Regnskab               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, der normalt kun tildeles på oversigtsniveau, gør det muligt at anvende rapporteringstræet for alle virksomheder. Alle underordnede grene har fået tildelt en virksomhed.|
+| Regnskab               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, der normalt kun tildeles på oversigtsniveau, gør det muligt at anvende rapporteringstræet for alle virksomheder. Alle underordnede grene har et firma tilknyttet.|
 | Enhedsbetegnelse             | Den kode, der identificerer denne rapporteringsenhed i det grafiske rapporteringstræ. Sørg for at oprette et entydigt kodesystem, der er konsistent, og som vil være let for brugerne at forstå. |
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen.|
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret.|
-| Rækkedefinitioner       | Navnet på rækkedefinitionen for rapporteringsenheden. Der bruges samme rækkedefinition for alle enheder i rapporteringstræet. Når du genererer en rapport, bruges denne rækkedefinition for hver rapporteringsenhed. Rækkedefinitionen kan indeholde flere sammenkædninger af økonomiske dimensioner. Hvis der er angivet en rækkedefinition i rapporteringstræet, skal du markere afkrydsningsfeltet **Brug rækkedefinition fra rapporteringstræ** under fanen **Rapport** i rapportdefinitionen.|
-| Link til række              | Det link til række, der skal bruges til rapporteringsenheden. Der er defineret link til rækker for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal være link til.|
-| Eksternt link         | Det link til række, der skal bruges til denne rapporteringsenhed. Der er defineret link til rækker for rækkedefinitionen for at identificere den rapport, der skal være link til.|
+| Rækkedefinitioner       | Navnet på rækkedefinitionen for rapporteringsenheden. Den samme rækkedefinition bruges til hver enkelt enhed i trædiagrammet. Når du opretter en rapport, bruges denne rækkedefinition til hver enhed i trædiagrammet. Rækkedefinitionen kan indeholde flere sammenkædninger af økonomiske dimensioner. Hvis der er angivet en rækkedefinition i rapporteringstræet, skal du markere afkrydsningsfeltet **Brug rækkedefinition fra rapporteringstræ** under fanen **Rapport** i rapportdefinitionen.|
+| Rækkelink              | Det rækkelink, der skal bruges til enheden i trædiagrammet. Rækkelinks defineres for rækkedefinitionen for at identificere de økonomiske dimensioner, der skal linkes til.|
+| Eksternt link         | Det rækkelink, der skal bruges til enheden i trædiagrammet. Der er defineret link til rækker for rækkedefinitionen for at identificere den rapport, der skal være link til.|
 | Ekstern fil         | Filstien til økonomirapporteringsregnearket, der skal hentes data fra.|
 | Sideindstillinger          | Denne kolonne angiver, om detaljerne for den rapporteringsenheden tilsidesættes, når rapporten vises eller udskrives.|
 | Opløsning %              | Procentdelen af rapporteringsenheden, der skal allokeres til den overordnede enhed. Den procentdel, du angiver i denne kolonne, gælder for hver række i rækkedefinitionen, før værdien i rækken føjes til den overordnede rapport. Hvis en underordnet enhed for eksempel skal være fordelt ligeligt mellem to afdelinger, skal beløbene i hver række ganges med 50 procent, før værdien føjes til afdelingsrapporten. En rapporteringsenhed kan ikke have to overordnede enheder. Hvis du vil tildele beløbene fra en rapporteringsenhed til to overordnede enheder, skal du oprette en anden rapporteringsenhed, der har samme dimension, for at få vist yderligere 50 procent. Angiv hele procentsatser uden et decimaltegn. For eksempel repræsenterer **25** 25 procent allokering til den overordnede enhed. Hvis du medtager et decimaltegn (**0,25**), fordeles 0,25 procent til den overordnede enhed. Hvis du vil bruge en procentdel, der er mindre end 1 procent, skal du anvende indstillingen **Tillad opløftning på &lt;1 %** i rapportdefinitionen. Denne indstilling er på fanen **Flere indstillinger** i dialogboksen **Rapportindstillinger**. Denne dialogboks er tilgængelig via knappen **Andre** under fanen **Indstillinger** i rapportdefinitionen. |
@@ -138,8 +138,8 @@ Ekstra indtastet tekst er en statisk tekststreng på op til 255 tegn, der føjer
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Fjerne supplerende tekst fra en rapporteringsenhed
 
-1.  Åbn den rapporteringstrædefinition, der skal ændres, i Report Designer.
-2.  Dobbeltklik på cellen **Supplerende tekst** for rapporteringsenhedsrækken.
+1.  Åbn den trædiagramdefinition, der skal redigeres, i Rapportdesigner.
+2.  Dobbeltklik på cellen **Supplerende tekst** for rækken for enheden i trædiagrammet.
 3.  Vælg den tekst, der skal fjernes, i dialogboksen **Supplerende tekst**, og klik derefter på **Ryd**. Du kan også højreklikke på posten og derefter vælge **Klip**.
 4.  Klik på **OK**.
 
@@ -148,7 +148,7 @@ Ekstra indtastet tekst er en statisk tekststreng på op til 255 tegn, der føjer
 Du kan forhindre bestemte brugere og grupper i at få adgang til en rapporteringsenhed. Du kan også definere begrænsninger, så de gælder for underordnede rapporteringsenheder i rapporteringsenheden.
 
 1.  Åbn den rapporteringstrædefinition, der skal ændres, i Report Designer.
-2.  Dobbeltklik på cellen **Sikkerhed for enhed** for den rapporteringsenhedsrække, du vil begrænse adgangen til.
+2.  Dobbeltklik på cellen **Enhedssikkerhed** for den række med enheden i trædiagrammet, som du vil begrænse adgangen til.
 3.  I dialogboksen **Sikkerhed for enhed** skal du klikke på **Brugere og grupper**.
 4.  Vælg de brugere eller grupper, der skal have adgang til rapporteringsenheden, og klik derefter på **OK**.
 5.  Hvis du vil begrænse adgangen til underordnede rapporteringsenheder, skal du markere afkrydsningsfeltet **Føj sikkerhed til underordnede rapporteringsenheder**.

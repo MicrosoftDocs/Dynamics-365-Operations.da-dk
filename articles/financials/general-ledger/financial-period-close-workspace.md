@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Du skal først vælge en ultimotidsplan øverst i arbejdsområdet. Alle data, de
 
 ### <a name="summary-tiles"></a>Oversigt over felter
 
-Feltet **Oversigt** giver et overblik over processen og indikatorer, der hjælper dig med at holde ultimoprocessen på sporet. Du kan se opgaver, der ligger efter forfaldsdato, resterende opgaver i dag, opgaver, der forfalder i dag, men er blokeret på grund af afhængigheder, og alle resterende opgaver for processen. Disse oplysninger er for alle firmaer, der er inkluderet i den valgte ultimotidsplan.
+Felterne **Oversigt** giver et overblik over processen, og indikatorer hjælper dig med at holde lukningsprocessen på sporet. Du kan se de opgaver, der er forfaldne, resterende opgaver for dags dato, opgaver, der forfalder i dag, men er blokeret på grund af afhængigheder, og alle de resterende opgaver for processen. Disse oplysninger er for alle firmaer, der er inkluderet i den valgte ultimotidsplan.
 
 ### <a name="tasks-and-status-section"></a>Opgaver og statussektion
 
@@ -82,7 +81,7 @@ Opgaveområder bruges til at gruppere ultimoopgaver i logiske områder af ejersk
 
 ### <a name="calendars"></a>Kalendere
 
-Opret og rediger finansielle afsluttende kalendere under fanen Kalendere.  Det er her, du skal definere arbejdsdage for de afsluttende processer, og hvor afsluttende opgaver planlægges.  Opret en ny kalender, og angiv de arbejdsdage, der skal bruges til opgaveplanlægningen.  Det er bedst at oprette en kalender til en længere periode som f.eks. et år eller flere år, da den kan redigeres efter oprettelsen.  Efter oprettelsen af kalenderen skal du klikke på knappen Rediger for at opdatere kalenderen for bestemte dage f.eks. helligdage.  Afsluttende opgaver planlægges på dage, hvor værdien i kontrolelementet er indstillet til Åben.  Hvis afsluttende opgaver ikke skal planlægges på en bestemt dag, skal denne dag i kontrolelementet have værdien Lukket.
+Oprette og redigere kalendere for ultimoposteringer ved hjælp af fanen Kalendere. Det er her, du definerer arbejdsdagene til ultimoprocesser, og du bruger dem til planlægning af ultimoopgaver.  Opret en ny kalender, og angiv de arbejdsdage, der skal bruges til opgaveplanlægningen.  Det er bedst at oprette en kalender til en længere periode som f.eks. et år eller flere år, da den kan redigeres efter oprettelsen.  Efter oprettelsen af kalenderen skal du klikke på knappen Rediger for at opdatere kalenderen for bestemte dage f.eks. helligdage.  Afsluttende opgaver planlægges på dage, hvor værdien i kontrolelementet er indstillet til Åben.  Hvis afsluttende opgaver ikke skal planlægges på en bestemt dag, skal denne dag i kontrolelementet have værdien Lukket.
 
 ### <a name="templates"></a>Skabeloner
 

@@ -16,13 +16,13 @@ ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 765825ba43cad44b076ea6628d2787011e97fc57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4ad82f3177e4abb7b9cb575b910aabc69901f475
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -55,7 +55,7 @@ Hvis du f.eks. vælger **Årligt**, bogføres den årlige afskrivning kun én ga
 Hvis du vælger **Regnskabsår** i feltet **Afskrivningsår**, bruges den lineære afskrivning for den resterende levetid. Afskrivning beregnes på grundlag af de resterende regnskabsår. I forbindelse med regnskabsåret fra d. 1. juli 2015 til og med d. 30. juni 2016 starter afskrivningsberegningen f.eks. d. 1. juli. Regnskabsåret kan være længere eller kortere end 12 måneder. Afskrivningen reguleres for hver regnskabsperiode. Længden på det næste regnskabsår bestemmes af de regnskabsperioder, der er oprettet på siden **Regnskabskalendere**. Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger tilgængelige i feltet **Periodefrekvens**:
 
 -   **Årligt** bogfører det samlede afskrivningsbeløb, der beregnes for regnskabsåret som ét beløb på den sidste dag i regnskabsåret.
--   **Regnskabsperiode**beregner det samlede afskrivningsbeløb for regnskabsåret. Dette beløb er derefter påløbet i regnskabsperioder, der er defineret på siden **Regnskabskalendere** for den regnskabskalender, der er angivet for bogen.
+-   **Regnskabsperiode** beregner det samlede afskrivningsbeløb for regnskabsåret. Dette beløb er derefter påløbet i regnskabsperioder, der er defineret på siden **Regnskabskalendere** for den regnskabskalender, der er angivet for bogen.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel på lineær afskrivning af et uændret anlægsaktiv
 Et anlægsaktivet har følgende karakteristika.

@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -106,7 +106,7 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <td>Detaljeringsniveau</td>
 <td>Angiv det detaljeringsniveau, som rapporterne indeholder.
 <ul>
-<li><strong>Finansiel</strong>– en oversigtsrapport på højt niveau. Du kan ikke rulle ned til konti og dimensioner, med undtagelse af de konti og dimensioner, der er tilføjet via et rapporteringstræ.</li>
+<li><strong>Finansiel</strong>− En detaljeret oversigtsrapport. Du kan ikke rulle ned til konti og dimensioner, med undtagelse af de konti og dimensioner, der er tilføjet via et rapporteringstræ.</li>
 <li><strong>Finans og konto</strong> – en rapport, der indeholder en oversigt på højt niveau og kontooplysninger.</li>
 <li><strong>Finans, Konto og Transaktion</strong> – en rapport, der indeholder en oversigt på højt niveau og transaktionsoplysninger.</li>
 </ul></td>
@@ -115,14 +115,14 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <td>Midlertidig</td>
 <td>Angiv de aktivitetstyper, som rapporterne indeholder.
 <ul>
-<li><strong>Kun bogført aktivitet</strong> − Omfatter kun de transaktioner og saldi, der er bogført i dine finansielle data.</li>
-<li><strong>Bogført og ikke-bogført aktivitet</strong> − Omfatter alle de transaktioner og saldi, der er indtastet og bogført i dine finansielle data.</li>
-<li><strong>Kun ikke-bogført aktivitet</strong> − Omfatter kun de transaktioner, der er indtastet men ikke bogført i dine finansielle data.</li>
+<li><strong>Kun bogført aktivitet</strong> − Medtag kun de transaktioner og saldi i de økonomiske data, der er bogført.</li>
+<li><strong>Bogført og ikke-bogført aktivitet</strong> − Medtag alle de transaktioner og saldi i de økonomiske data, der er indtastet og bogført.</li>
+<li><strong>Kun ikke-bogført aktivitet</strong> − Medtag kun de transaktioner i de økonomiske data, der er indtastet, men som endnu ikke er bogført.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Medtag alle rapporteringsvalutaer</td>
-<td>Hvis der konfigureres yderligere rapporteringsvalutaer i Microsoft Dynamics ERP-systemet, vises de her. Markér dette afkrydsningsfelt for at få genereret flere rapporter i de angivne valutaer. Du kan få vist disse rapporter i webfremviseren ved at klikke på knappen <strong>Valuta</strong> og derefter vælge en valuta.</td>
+<td>Hvis der konfigureres yderligere rapporteringsvalutaer i Microsoft Dynamics ERP-systemet, vises de her. Markér dette afkrydsningsfelt for at få genereret flere rapporter i de angivne valutaer. Du kan se disse rapporter i webfremviseren ved at klikke på knappen <strong>Valuta</strong> og derefter vælge en valuta.</td>
 </tr>
 <tr class="even">
 <td>Datooplysninger gemmes ikke sammen med rapportdefinitionen</td>
@@ -144,8 +144,8 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 <td>Rapporter i gruppe</td>
 <td>Tilføje, fjerne og ændre rækkefølgen af rapporter i rapportgruppen.
 <ul>
-<li>Hvis du vil tilføje rapportdefinitioner til rapportgruppen, skal du dobbeltklikke på rapportgruppen for at åbne den og derefter klikke på <strong>Tilføj</strong>. Markér de rapporter, der skal medtages i rapportgruppen, og klik derefter på <strong>OK</strong>.</li>
-<li>Hvis du vil fjerne en rapport fra rapportgruppen, skal du markere den og derefter klikke på <strong>Fjern</strong>.</li>
+<li>For at tilføje rapportdefinitioner til rapportgruppen skal du dobbeltklikke på rapportgruppen for at åbne den og derefter klikke på <strong>Tilføj</strong>. Vælg de rapporter, der skal medtages i rapportgruppen, og klik derefter på <strong>OK</strong>.</li>
+<li>For at fjerne en rapport fra rapportgruppen skal du vælge den og derefter klikke på <strong>Fjern</strong>.</li>
 <li>Hvis du vil ændre den rækkefølge, rapporterne genereres i, skal du vælge en rapport på listen og derefter klikke på <strong>Flyt op</strong> eller <strong>Flyt ned</strong>.</li>
 </ul></td>
 </tr>

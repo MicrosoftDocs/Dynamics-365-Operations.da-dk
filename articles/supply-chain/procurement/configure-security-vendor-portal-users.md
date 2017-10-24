@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 560e0760c33cab4186095ac2ae7e105d75cc16d0
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: ab096bcc7003f60851077d9c7e03b16c5d46ce2a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -41,7 +41,7 @@ Før du opretter en brugerkonto til en person, der bruger kreditorportalen, skal
 -   En brugerkonto i Microsoft Azure Active Directory (AAD) skal være registreret for kreditoren på siden **Brugere** i Dynamics AX.
 -   Kreditoren skal have sikkerhedsrollen **Kreditor (ekstern)**, ikke rollen **Systembruger**. **Bemærk!** Rollen **Systembruger** tildeles automatisk, når du opretter en ny brugerkonto i Dynamics AX. Du skal derfor fjerne denne rolle og acceptere den advarselsmeddelelse, du modtager.
 -   Kreditorbrugeren bør ikke gives tilladelse til at tilføje flere felter fra PO-tabellerne til deres PO-visning. Under fanen **Brugertilpasning** skal du under fanen **Brugere** angive indstillingen **Eksplicit personlig tilpasning tilladt** for brugeren til **Nej**.
--   Brugerkontoen skal være tilknyttet en kontakt, der er registreret. Under fanen **Brugere**skal du vælge en kontakt i feltet **Navn**. Den person, du vælger, skal have rollen **Kontakt** for den pågældende kreditor.
+-   Brugerkontoen skal være tilknyttet en kontakt, der er registreret. Under fanen **Brugere** skal du vælge en kontakt i feltet **Navn**. Den person, du vælger, skal have rollen **Kontakt** for den pågældende kreditor.
 
 Hvis den samme person skal have adgang til kreditorportalen for flere kreditorkonti (måske for forskellige juridiske enheder), skal hver af den pågældende persons brugerkonti være knyttet til den samme registrerede kontakt. Rollen **Kreditor (ekstern)** omfatter alle de grundlæggende funktioner, der er nødvendige for at kunne bruge de funktioner, der findes på kreditorportalen. Denne opsætning sikrer, at den brugergrænseflade, som den eksterne bruger ser, kun er fokuseret på det ønskede scenarie.
 

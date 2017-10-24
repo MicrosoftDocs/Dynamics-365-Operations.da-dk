@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3669de6314e65c78ce5d401dae2e7481ec38b68
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 03af609a9d21fc11247f247aad1ca26e3719755e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Denne artikel indeholder en oversigt over den funktionalitet, der er tilgængeli
 Indkøb og forsyning dækker alle trin fra at identificere behov for produkter og tjenester gennem indkøb af produktet, kvittering, fakturering og behandling af betalinger med kreditorer. Indkøbsprocesser kan konfigureres mod specifikke forretningsmæssige behov ved at definere indkøbspolitikker og arbejdsgange.
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identificere behov for produkter og tjenester
-Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner*, for eksempel, når en medarbejder rekvirerer et produkt. *Produktkataloger * kan være sat op til at vejlede i valget af tilgængelige produkter, der kan vælges mellem, eller anmodninger kan foretages for produkter, der ikke er endnu gjort tilgængelige i et katalog, så indkøbsafdelingen får mulighed for at overveje, hvordan produktet kan leveres.  
+Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner*, for eksempel, når en medarbejder rekvirerer et produkt. *Produktkataloger* kan være sat op til at vejlede i valget af tilgængelige produkter, der kan vælges mellem, eller anmodninger kan foretages for produkter, der ikke er endnu gjort tilgængelige i et katalog, så indkøbsafdelingen får mulighed for at overveje, hvordan produktet kan leveres.  
 
 *Forbrugsgrænser* kan bruges til at begrænse rekvisitionsforbruget, og *indkøbsarbejdsgangen* tilføjer mulighed for at kræve godkendelse, før bestilling sker. Det er også muligt at angive fordeling af budgetmidler, hvis det er nødvendigt.  
   
@@ -61,7 +61,7 @@ Når du opretter en indkøbsordre, udfyldes mange af felterne på forhånd med v
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
-Priser og rabatter Indeholder oplysninger om priser, rabatter og rabatbetingelser, der tilbydes. Priser og rabatter kan repræsenteres som *samhandels**aftaler*. Samhandelsaftaler repræsenterer kreditorprislister med priser eller rabatter og har et bestemt sæt datoer, hvor aftalen er gyldig. Priser og rabatter kan forhandles og repræsenteres via *indkøbsaftaler *med betingelser som f.eks. forpligtelser til at købe visse enheder eller for et vist pengebeløb som en forudsætning for de aftalte vilkår. *Rabataftaler* kan indgås med kreditorer, hvor indkøb af bestemte produkter eller grupper af produkter kan udløse en rabat fra kreditoren afhængigt af indkøbsbeløbet eller -mængden.
+Priser og rabatter Indeholder oplysninger om priser, rabatter og rabatbetingelser, der tilbydes. Priser og rabatter kan repræsenteres som *samhandels**aftaler*. Samhandelsaftaler repræsenterer kreditorprislister med priser eller rabatter og har et bestemt sæt datoer, hvor aftalen er gyldig. Priser og rabatter kan forhandles og repræsenteres via *indkøbsaftaler* med betingelser som f.eks. forpligtelser til at købe visse enheder eller for et vist pengebeløb som en forudsætning for de aftalte vilkår. *Rabataftaler* kan indgås med kreditorer, hvor indkøb af bestemte produkter eller grupper af produkter kan udløse en rabat fra kreditoren afhængigt af indkøbsbeløbet eller -mængden.
 
 ### <a name="delivery-options"></a>Indstillinger for levering
 

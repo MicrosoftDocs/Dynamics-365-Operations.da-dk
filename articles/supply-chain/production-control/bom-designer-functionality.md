@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c871cf4e5ee7f359010aac1fa0fef81e0e0df564
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 011e8220e155a5202b7b0a18bbfa9581826645d0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -98,7 +98,7 @@ Det filter, der anvendes til styklisten og ruten vises i overskriften i styklist
 Når du bruger styklistedesigneren til at gennemgå eller redigere styklister, der består af et eller flere niveauer af fantomstyklister, strækker den rute, som typisk er knyttet til topvaren, sig over hele styklistehierarkiet. For at forenkle oversigten kan du låse ruten på øverste niveau i visningen ved at klikke på **Vis** &gt; **Lås rute**. For at låse op for ruten skal du klikke på **Vis** &gt; **Lås rute op**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Tilføje og redigere styklister og styklistelinjer
-Brug funktionerne **Styklistelinjer**eller **Stykliste** til at redigere styklistelinjer eller styklister. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
+Brug funktionerne **Styklistelinjer** eller **Stykliste** til at redigere styklistelinjer eller styklister. Når du markerer en node i træet, bestemmer typen af noden, hvilke funktioner der er tilgængelige.
 
 | Funktion                            | Betegnelse                                                                                               | Nodetype og betingelser                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

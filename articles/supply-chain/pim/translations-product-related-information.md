@@ -19,11 +19,11 @@ ms.search.industry: Product information
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d232473a1df0b821c6f39553ad826c61ff9ecff8
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -117,8 +117,8 @@ En dimensionsværdi, der er knyttet til et produkt via en dimensionsvariantgrupp
 Følg disse trin for at oprette en dimensionsværdigruppe:
 1.  Klik på **Administration af produktoplysninger** &gt; **Konfiguration** &gt; **Variantgrupper**.
 2.  Vælg **Størrelse** **Grupper**, **Farvegrupper** eller **Typegrupper**.
-3.  Klik på **Ny**, og angiv derefter et navn til gruppen i feltet **Størrelsesgruppe******, **Farvegruppe** eller **Typografigruppe**. Klik på **Størrelser**, **Farver** eller **Typer** for at oprette linjer til grupperne.
-4.  På siden **Størrelsesgruppelinjer******, **Farvegruppelinjer********** eller **Typografigruppelinjer** skal du klikke på **Ny** og derefter oprette størrelser, farver og typografier for grupperne.
+3.  Klik på **Ny**, og angiv derefter et navn til gruppen i feltet **Størrelsesgruppe**, **Farvegruppe** eller **Typografigruppe**. Klik på **Størrelser**, **Farver** eller **Typer** for at oprette linjer til grupperne.
+4.  På siden **Størrelsesgruppelinjer**, **Farvegruppelinjer** eller **Typografigruppelinjer** skal du klikke på **Ny** og derefter oprette størrelser, farver og typografier for grupperne.
 
 Følg disse trin for at administrere oversættelser af værdier for en dimensionsværdigruppe:
 1.  Følg trinnene i forrige procedure for at oprette en dimensionsværdigruppe og åbne siden **Størrelsesgruppelinjer**, **Farvegruppelinjer** eller **Typografigruppelinjer**.

@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Eksplicitte tilpasninger er de tilpasninger, som du eksplicit udfører med det f
 
 Du tilpasser et element på din side på denne måde, hvis du blot vil ændre elementets etiket, skjule elementet, så det ikke vises på siden (dette ændringer ikke nogen data, du får blot ikke vist oplysningerne), medtage oplysninger i oversigtssektionen for oversigtspaneler (hvis elementet er et oversigtspanel), springe feltet over under tabulering eller gøre det således, at dataene ikke kan ændres, ved at markere dem som "Rediger ikke." 
 
-Når du vil flytte eller skjule elementer eller foretage flere ændringer, kan du bruge værktøjslinjen Brugertilpasning, der er tilgængelig fra elementvinduet Egenskaber. Det gør du ved at vælge **Tilpas denne formular**. Værktøjslinjen Brugertilpasning er også tilgængelig på formularens handlingsrude under gruppen Tilpas under fanen **Indstillinger**. Vælg **Tilpas denne formular**, hvorefter du ser værktøjslinjen Brugertilpasning. 
+Når du vil flytte eller skjule elementer eller foretage flere ændringer, kan du bruge værktøjslinjen Brugertilpasning, der er tilgængelig fra elementvinduet Egenskaber. Det gør du ved at vælge **Tilpas denne formular**. Værktøjslinjen Brugertilpasning er også tilgængelig i formularens handlingsrude under gruppen Personaliser under fanen **Indstillinger**. Vælg **Personaliser denne formular**, så får du vist værktøjslinjen Brugertilpasning. 
 
 [![Værktøjslinjen Brugertilpasning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Vælg knappen **Luk** for at lukke værktøjslinjen og sætte siden tilbage til 
 Når du bruger værktøjslinjen Brugertilpasning, er lagring implicit. Dine tilpasninger aktiveres, så snart du foretager dem, og det er ikke nødvendigt at klikke på knappen **Gem**. I nogle tilfælde ser du et hængelåsikon ud for elementet, når du vælger et værktøj. Det betyder, at for at få siden til at fungere korrekt kan du ikke redigere de egenskaber, der er relateret til det valgte værktøj. Når værktøjslinjen Brugertilpasning er åbnet, bliver siden ikke-interaktiv. Du kan ikke indtaste data eller udvide eller skjule sektioner.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Eksplicit brugertilpasning: Tilføje et felt eller en liste til et arbejdsområde
-Nogle sider med lister har en yderligere tilpasningsfunktion, der er tilgængelig i dens handlingsrude under gruppe Tilpas under fanen Indstillinger. Vælg **Føj til arbejdsområde** for at åbne den rulleliste, der gør det muligt at vise oplysninger på den aktuelle liste (filtreret og sorteret eller standard) i et arbejdsområde som en liste eller et oversigtsfelt (der kan bruges til at vise antallet af elementer på listen). 
+Nogle sider med lister har en yderligere brugertilpasningsfunktion i handlingsruden under gruppen Personaliser under fanen Indstillinger. Vælg **Føj til arbejdsområde** for at åbne den rulleliste, der gør det muligt at vise oplysninger på den aktuelle liste (filtreret og sorteret eller standard) i et arbejdsområde som en liste eller et oversigtsfelt (der kan bruges til at vise antallet af elementer på listen). 
 
 [![Føj til arbejdsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 

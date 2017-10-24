@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -41,7 +40,7 @@ En faktura anses for overbetalt, når betalingsbeløbet er større end fakturabe
 | 105,00        | 10,50                   | 94,50                                               | 95,00                             |
 
 ## <a name="cash-discount-administration--specific"></a>Håndtering af kasserabat = Specifik
-Når **Specifik** er valgt i feltet **Håndtering af kasserabat** på siden **Konti til automatisk posteringer**, medtages den fulde kasserabat. Det overbetalte beløb bogføres enten til en finanskonto til kasserabatdifference eller forbliver en saldo på debitorens konto. Funktionen afhænger af, om det overbetalte beløb er mellem 0,00 og det beløb, der er angivet i feltet**Maksimal over- eller underbetaling**, eller om det overbetalte beløb er mere end beløbet for **Maksimal over- eller underbetaling**.
+Når **Specifik** er valgt i feltet **Håndtering af kasserabat** på siden **Konti til automatisk posteringer**, medtages den fulde kasserabat. Det overbetalte beløb bogføres enten til en finanskonto til kasserabatdifference eller forbliver en saldo på debitorens konto. Funktionen afhænger af, om det overbetalte beløb er mellem 0,00 og det beløb, der er angivet i feltet **Maksimal over- eller underbetaling**, eller om det overbetalte beløb er mere end beløbet for **Maksimal over- eller underbetaling**.
 
 ### <a name="scenario-1"></a>Scenarie 1
 
@@ -102,7 +101,7 @@ Det for meget betalte beløb på 0,50 forbliver som en åben saldo for betalinge
 
 | Konto                                                                                          | Debetbeløb | Kreditbeløb |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Kasserabatten (feltet **Hovedkonto til debitorrabatter** på siden**Kasserabatter**) | 10,50        |               |
+| Kasserabatten (feltet **Hovedkonto til debitorrabatter** på siden **Kasserabatter**) | 10,50        |               |
 | Debitor                                                                              |              | 10,50         |
 
 ## <a name="cash-discount-administration--unspecific"></a>Håndtering af kasserabat = Uspecifik

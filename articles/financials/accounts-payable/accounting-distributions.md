@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 96ff984310ce5877c37a22f182064a5038d71752
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: bbf23d9cab01e8cdbae776c9310fbd19b429443d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -55,7 +54,7 @@ Funktioner til generisk regnskabsfordeling indeholder følgende indstillinger ti
     -   **Korrekt**-knappen vises og er aktiveret for dokumenter, der understøtter rettelser. **Korrekt** opretter nye fordelinger. Først oprettes fordelinger, som tilbagefører de oprindelige fordelinger. Disse fordelinger kan ikke ændres. Derefter oprettes nye korrekte regnskabsfordelinger. Disse fordelinger kan ændres, hvis de oprindelige fordelinger kunne ændres.
     -   Knappen **Projektoplysninger** er aktiveret som en udvidelse, når en linje er knyttet til et projekt. Projektregnskabsfordelinger giver dig mulighed for at redigere detaljer som finansieringskilde og linjeegenskab.
     -   Du kan se den aktuelle regnskabsstatus i **Reference**. Status er for hele dokumentet, og angiver, om dokumentet er i gang eller afsluttet.
--   ** Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjerne og pengebeløbene i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
+-   **Få vist fordelinger** – Få vist regnskabsfordelingerne for alle linjerne og pengebeløbene i dokumentet. Du kan ikke redigere de regnskabsmæssige fordelinger fra denne visning.
 
 
 Du kan finde flere oplysninger under [Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md)

@@ -16,13 +16,13 @@ ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 01955aefb27bd18809b35fd025c9dd1b8eb70520
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 035c5d15e5508c78dd66a349defd534bfecc96bb
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Alt efter dine rettigheder kan du ændre anmoderen, den juridiske indkøbsenhed 
 Du kan finde flere oplysninger om politikker i [Indkøbspolitikker](../procurement/purchase-policies.md).
 
 - For at finde eksterne kataloger til bestemte indkøbskategorier kan du indtaste tekst i søgefeltet til kataloger.
-- Hvis du vil tilføje produkter fra en leverandørs eksterne katalog på leverandørens websted, skal du klikke på det eksterne katalog. Tilføj derefter produkter i indkøbsvognen, og gå til kassen. Linjerne for indkøbsvognen overføres til Microsoft Dynamics 365.
+- Hvis du vil tilføje produkter fra en leverandørs eksterne katalog på leverandørens websted, skal du klikke på det eksterne katalog. Føj derefter produkter til indkøbsvognen, og check ud. Linjerne fra indkøbsvognen overføres til Microsoft Dynamics 365.
 
 Hvis der er flere muligheder for indkøbskategorier, kan du vælge den korrekte indkøbskategori, før du tilføjer linjerne i rekvisitionen.
 Når du har føjet linjer til en rekvisition, kan du tilføje flere linjer uden at bruge eksterne kataloger. Alternativt kan du fortsætte med at bruge eksterne kataloger til at tilføje linjer.

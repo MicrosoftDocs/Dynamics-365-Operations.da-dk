@@ -15,13 +15,13 @@ ms.custom: 104233
 ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a613f5a84a7c72da3cc76eac147d4754f6259e4c
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 8b5437e5652ca5111ded89cb3417db46ab4b45af
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -69,7 +69,7 @@ APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til b
 | Designe en ER-konfiguration til generering af rapporter i OPENXML-format         | Globalt         |
 | Generere elektroniske dokumenter for betalinger ved hjælp af en formatkonfiguration | Globalt         |
 | Importere ER-konfiguration fra Lifecycle Services                          | Globalt         |
-| **\***Vælg ER-serviceudbyder                                           | Globalt         |
+| **\*** Vælg ER-serviceudbyder                                           | Globalt         |
 | Opgradere dit ER-format ved at bruge en ny basisversion af formatet      | Globalt         |
 | Overføre ER-konfiguration til Lifecycle Services                          | Globalt         |
 
@@ -180,12 +180,12 @@ APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til b
 | BPM-linje                                                            | Land/område |
 |---------------------------------------------------------------------|----------------|
 | Konfigurere bølgebehandling                                           | Globalt         |
-| **\***Færdigmelde til en lokation uden id-kontrol | Globalt         |
+| **\*** Færdigmelde til en lokation uden id-kontrol | Globalt         |
 | Oprette en proces for minimum- eller maksimumgenopfyldning                              | Globalt         |
 | Konfigurere containere                                             | Globalt         |
 | Konfigurere manuel emballering                                               | Globalt         |
 | Konfigurere transportbegrænsninger for en vare                       | Globalt         |
-| **\***Konfigurere politikker for lagerstedsarbejde                                | Globalt         |
+| **\*** Konfigurere politikker for lagerstedsarbejde                                | Globalt         |
 
 
 

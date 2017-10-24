@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,9 +35,9 @@ Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkede
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Angiv en rækkekode i en rækkedefinition
 
-I rækkedefinitioner angiver tal eller etiketter i cellen **Rækkekode** hver linje i rækkedefinitionen. Du kan angive rækkekoden for at henvise til data i beregninger og totaler.
+I rækkedefinitioner angiver tal eller etiketter i cellen **Rækkekode** hver linje i rækkedefinitionen. Du kan angive rækkekoden til at referere til data i beregninger og totaler.
 
-### <a name="row-code-requirements"></a>Krav til årsagskoder
+### <a name="row-code-requirements"></a>Krav til rækkekoder
 
 Der kræves en rækkekode for alle rækker. Du kan blande numeriske, alfanumeriske og ikke-angivne (tomme) rækkekoder i en rækkedefinition. Rækkekoden kan være et positivt heltal (under 100.000.000) eller en beskrivende etiket, der identificerer den pågældende række. En beskrivende etiket skal følge disse regler:
 
@@ -68,7 +68,7 @@ Følgende eksempler er gyldige rækkekoder:
 ## <a name="add-a-description"></a>Tilføje en beskrivelse
 Beskrivelsescellen indeholder en beskrivelse af de økonomiske oplysninger i rækken i rapporten, f.eks. "Omsætning" eller "Nettoindkomst". Teksten i cellen **Beskrivelse** vises i rapporten, nøjagtigt som du angiver dem i rækkedefinitionen. 
 > [!NOTE]
-> Bredden af beskrivelseskolonnen i rapporten er angivet i kolonnedefinitionen. Hvis teksten i kolonnen **Beskrivelse** i rækkedefinitionen er lang, skal du kontrollere bredden af **DESC**-kolonnen. Når du bruger dialogboksen **Indsæt rækker fra**, er værdierne i kolonnen **Beskrivelse** segmentværdierne eller dimensionsværdierne fra de økonomiske data. Du kan indsætte rækker for at tilføje beskrivende tekst, såsom en sektionsoverskrift eller en sektionstotal, og tilføje formatering, f.eks en linje før en rækketotal. Hvis rapporten indeholder et rapporteringstræ, kan du medtage den ekstra tekst, der er defineret for rapporteringsenhederne i rapporteringstræet. Du kan også begrænse den ekstra tekst til en bestemt rapporteringsenhed.
+> Bredden af beskrivelseskolonnen i rapporten er angivet i kolonnedefinitionen. Hvis teksten i kolonnen **Beskrivelse** i rækkedefinitionen er lang, skal du kontrollere bredden af **DESC**-kolonnen. Når du bruger dialogboksen **Indsæt rækker fra**, er værdierne i kolonnen **Beskrivelse** segmentværdierne eller dimensionsværdierne fra de økonomiske data. Du kan indsætte rækker for at tilføje beskrivende tekst, f.eks. en sektionsoverskrift eller en sektionstotal, og for at tilføje formatering, f.eks. en linje før en totalrække. Hvis rapporten indeholder et rapporteringstræ, kan du medtage den ekstra tekst, der er defineret for rapporteringsenhederne i rapporteringstræet. Du kan også begrænse den ekstra tekst til en bestemt rapporteringsenhed.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Tilføj beskrivelsen for en linje i en rapport
 
@@ -112,12 +112,12 @@ Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hen
     | ---                           | Enkelt understregning.                   | Placerer en enkelt streg under alle beløbskolonner i rapporten.                                                                                                                                                     |
     | ===                           | Dobbelt understregning.                   | Placerer en dobbelt streg under alle beløbskolonner i rapporten.                                                                                                                                                     |
     | LINE1                         | Tynd streg                          | Tegner en enkelt tynd streg på tværs af siden.                                                                                                                                                                      |
-    | LINE2                         | Tyk streg                         | Tegner en enkelt tyk streg på tværs af siden.                                                                                                                                                                     |
-    | LINE3                         | Punkteret streg                        | Tegner en enkelt punkteret streg på tværs af siden.                                                                                                                                                                    |
+    | LINE2                         | Tyk linje                         | Tegner en enkelt tyk linje på tværs af siden.                                                                                                                                                                     |
+    | LINE3                         | Stiplet linje                        | Tegner en enkelt punkteret streg på tværs af siden.                                                                                                                                                                    |
     | LINE4                         | Tyk og tynd streg           | Tegner en dobbelt streg på tværs af siden. Den øverste streg er tyk, og den nederste streg er tynd.                                                                                                                       |
     | LINE5                         | Tynd streg og tyk streg           | Tegner en dobbelt streg på tværs af siden. Den øverste streg er tynd, og den nederste streg er tyk.                                                                                                                       |
     | BXB BXC                       | Række i boks                          | Tegner en boks omkring de rækker i rapporten, der begynder med rækken **BXB** og slutter med rækken **BXC**.                                                                                                               |
-    | REM                           | Bemærkning                             | Identificerer en række, der er en kommentarrække og ikke skal udskrives på rapporten. For eksempel kan en bemærkningsrække muligvis forklare dine formateringsteknikker.                                                            |
+    | REM                           | Bemærkning                             | Identificerer en række, der er en kommentarrække, og som ikke skal udskrives i rapporten. En bemærkning kan f.eks. forklare dine formateringsteknikker.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Sortér                               | Sorterer udgifter eller indtægter, sorterer en faktisk eller budgetafvigelsesrapport efter den største afvigelse eller sorterer rækkebeskrivelserne alfabetisk.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Angiv relaterede formler/rækker/enheder
@@ -133,7 +133,7 @@ Cellen **Relaterede formler/rækker/enheder** har flere formål. Afhængigt af t
 
 Du kan bruge en formel for rækketotal til at tilføje eller fratrække beløbene i andre rækker. En formel til oprettelse af en rækketotal kan indeholde operatorerne + og - til at kombinere individuelle rækkekoder og områder. Områder er angivet med et kolon (:). Formlen kan indeholde op til 1.024 tegn. Her er et eksempel på en standardsammentællingsformel: 400 + 420 + 430 + 450 + 460LIABILITIES + EQUITY520:546520:546-LIABILITIES
 
-### <a name="components-of-a-row-total-formula"></a>Komponenter i en formel for rækketotal
+### <a name="components-of-a-row-total-formula"></a>Komponenter i en rækketotalformel
 
 Når du opretter en formel for rækketotal, skal du bruge rækkekoder til at angive, hvilke rækker der skal tilføjes eller fratrækkes i den aktuelle rækkedefinition, og du skal bruge operatorer til at angive, hvordan rækkerne kombineres. Totalrækker og beløbsrækker kan bruges i enhver kombination. **Bemærk:** Alle totalrækker, der er i et område, er udeladt. Hvis du vil oprette en samlet total, kan du angive området af rækker. Hvis den første række i et område er totalrække, medtages rækken i den nye total. I følgende tabel beskrives, hvordan operatorer bruges i rækketotalformler.
 
@@ -143,9 +143,9 @@ Når du opretter en formel for rækketotal, skal du bruge rækkekoder til at ang
 | :        | 100:330         | Lægger totalerne af alle rækker mellem række 100 og række 330 sammen.    |
 | -        | 100-330         | Trækker beløbet i række 100 fra beløbet i række 330. |
 
-### <a name="create-a-row-total"></a>Oprette en rækketotal.
+### <a name="create-a-row-total"></a>Oprette en ny rækketotal
 
-1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
+1.  Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
 2.  Dobbeltklik på cellen **Formatkode** i rækkedefinitionen, og vælg **TOT**.
 3.  Angiv totalformlen i cellen **Relaterede formler/rækker/enheder**.
 
@@ -177,7 +177,7 @@ Der er defineret en eller flere basisrækker i rækkedefinitionen, og derefter b
 -   **CBR**-rækker udskrives ikke på den færdige rapport.
 -   **CBR**-formatkoden og dens relaterede rækkekode er placeret over den række eller sektion, der viser relaterede beregninger.
 
-I en kolonnedefinition angiver kolonnetypen **CALC** en kolonne, der angiver en formel i rækken **Formel**. Denne formel fungerer på data for denne kolonne i rapporten og bruger nøgleordet Baserow for basisberegninger på **CBR**-formatkoder i rækken. I rækkedefinitionen definerer **CBR**-formatkoden basisrækken for kolonner, der beregner en procentdel af eller multipliceres med basisrækken for hver række i rapporten. Du kan have flere **CBR**-formatkoder i et rækkeformat, f.eks én for nettoomsætning, én til bruttosalg og én for samlede udgifter. Normalt bruges **CBR**-formatkoden til at oprette en procentdel for konti, der skal sammenlignes med en totallinje. En basisrække bruges til alle beregninger, indtil der defineres en anden basisrække. Du skal definere en start-**CBR**-formatkode og en slut-**CBR**-formatkode. Hvis du for eksempel vil bestemme udgifter som en procentdel af nettosalget, kan du dividere værdien i hver udgiftsrække med værdien i rækken for nettosalg. I så fald er rækken for nettosalg basisrækken. Du kan definere en kolonnedefinition, der rapporterer det aktuelle og år til dato-resultatet sammen med en basisprocentdel af hvert resultat, som vist i følgende eksempel. Start med en detaljeret resultatopgørelse.
+I en kolonnedefinition angiver kolonnetypen **CALC** en kolonne, hvor der angives en formel i rækken **Formel**. Denne formel fungerer på data for denne kolonne i rapporten og bruger nøgleordet Baserow for basisberegninger på **CBR**-formatkoder i rækken. I rækkedefinitionen definerer **CBR**-formatkoden basisrækken for kolonner, der beregner en procentdel af eller multipliceres med basisrækken for hver række i rapporten. Du kan have flere **CBR**-formatkoder i et rækkeformat, f.eks én for nettoomsætning, én til bruttosalg og én for samlede udgifter. Normalt bruges **CBR**-formatkoden til at oprette en procentdel for konti, der skal sammenlignes med en totallinje. En basisrække bruges til alle beregninger, indtil der defineres en anden basisrække. Du skal definere en start-**CBR**-formatkode og en slut-**CBR**-formatkode. Hvis du for eksempel vil bestemme udgifter som en procentdel af nettosalget, kan du dividere værdien i hver udgiftsrække med værdien i rækken for nettosalg. I så fald er rækken for nettosalg basisrækken. Du kan definere en kolonnedefinition, der rapporterer det aktuelle og år til dato-resultatet sammen med en basisprocentdel af hvert resultat, som vist i følgende eksempel. Start med en detaljeret resultatopgørelse.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Vælg basisrækken i en rækkedefinition til en kolonneberegning
 
@@ -221,17 +221,17 @@ I følgende eksempel sorteres værdierne i kolonne D i rapporten i stigende ræk
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Sorteret efter månedlig afvigelse i stigende rækkefølge       | DES         |                             |                |                    |                              |
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Salg                                               |             |                             | K              |                    | 4100                         |
-| 190      | Salgsreturneringer                                       |             |                             |                |                    | 4110                         |
+| 160      | Salg                                               |             |                             | C              |                    | 4100                         |
+| 190      | Salgsstatistik                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Renteindtægter                                     |             |                             | K              |                    | 7000                         |
+| 490      | Renteindtægt                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
-| 550      | Sorteret efter absolut afvigelse år til dato i faldende rækkefølge | DES         |                             |                |                    |                              |
+| 550      | Sorteret efter absolut afvigelse ÅTD i faldende rækkefølge | DES         |                             |                |                    |                              |
 | 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Salg                                               |             |                             | K              |                    | 4100                         |
+| 610      | Salg                                               |             |                             | C              |                    | 4100                         |
 | 640      | Salgsreturneringer                                       |             |                             |                |                    | 4110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Renteindtægter                                     |             |                             | K              |                    | 7000                         |
+| 940      | Renteindtægter                                     |             |                             | C              |                    | 7000                         |
 
 Her er et eksempel på den rapport, der genereres.
 
@@ -270,9 +270,9 @@ Cellen **Tilsidesæt format** angiver den formatering, der anvendes til rækken,
 
 ### <a name="currency-formatting"></a>Formatering af valuta
 
-Formatering af valuta gælder for et regnskabsbeløb og inkluderer valutasymbolet. Følgende valgmuligheder er tilgængelige:
+Formatering af valuta gælder for et regnskabsbeløb og inkluderer valutasymbolet. Følgende indstillinger er tilgængelige:
 
--   **Valutasymbol** – valutasymbolet for rapporten. Værdien tilsidesætter indstillingen **Internationale indstillinger** for firmaoplysningerne.
+-   **Valutasymbol** – Valutasymbolet for rapporten. Værdien tilsidesætter indstillingen **Internationale indstillinger** for firmaoplysningerne.
 -   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
 -   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
 -   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
@@ -303,7 +303,7 @@ Formatering af procenter indeholder procenttegnet (%). Følgende valgmuligheder 
 
 Brug kategorien for brugerdefineret formatering til at oprette et brugerdefineret tilsidesættelse af format. Følgende valgmuligheder er tilgængelige:
 
--   **Type** – det brugerdefinerede format.
+-   **Type** – Det brugerdefinerede format.
 -   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
     > [!NOTE]
     >  Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
@@ -385,7 +385,7 @@ Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske 
 
 1.  Åbn den rækkedefinition, der skal ændres, i Report Designer.
 2.  Dobbeltklik på en celle i kolonnen **Link til økonomiske dimensioner**.
-3.  I dialogboksen **Dimensioner** skal du dobbeltklikke på en celle under navnet på dimensionen.
+3.  Dobbeltklik på en celle under dimensionsnavnet i dialogboksen **Dimensioner**.
 4.  Vælg **Person eller interval** i dialogboksen for dimensionen.
 5.  I feltet **Fra** skal du angive den første dimension eller klikke på ![Gennemse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Gennemse") for at søge efter tilgængelige dimensioner. Du kan angive en række dimensioner ved at angive den sidste dimension i feltet **Til**.
 6.  Klik på **OK** for at lukke dialogboksen for dimensionen. Dialogboksen **Dimensioner** viser den opdaterede dimension eller det opdaterede interval.
@@ -464,7 +464,7 @@ I følgende tabel beskrives felterne i dialogboksen **Dimensioner**.
 | Samlekonti   | I feltet **Navn** skal du indtaste eller søge efter en dimension af samlekonti. Feltet **Formel** udfyldes med formlen i cellen **Link til økonomiske dimensioner** for denne samlekonto i rapportdefinitionen.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Tilføje dimensionsværdisæt i en rækkedefinition
-Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensionsværdisæt kan udelukkende indeholde værdier i en enkelt dimension, men du kan bruge et dimensionsværdisæt i flere rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner. Du kan også kombinere dimensionsværdisæt i en rapportdefinition. Når en ændring af de økonomiske data kræver, at du ændrer dimensionsværdisættet, kan du opdatere definitionen af dimensionsværdisættet, og denne opdatering gælder for alle områder, der bruger dimensionsværdisættet. Hvis du for eksempel ofte angiver et interval af værdier, der skal knyttes til de økonomiske data, såsom værdierne fra 5100 til og med 5600, kan du tildele dette interval til et kontosæt med navnet Salg. Når du har oprettet et dimensionsværdisæt, kan du vælge dette sæt som link til dine økonomiske data. Et andet eksempel er, hvis værdiintervallet fra 5100 til og med 5600 tildeles til Salg, og 4175 tildeles Rabatter. I dette tilfælde kan du bestemme det samlede salg ved at fratrække Rabatter fra Salg. Denne handling er angivet som **(5100:5600)-4175**.
+Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensionsværdisæt kan udelukkende indeholde værdier i en enkelt dimension, men du kan bruge et dimensionsværdisæt i flere rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner. Du kan også kombinere dimensionsværdisæt i en rapportdefinition. Når en ændring af de økonomiske data kræver, at du ændrer dimensionsværdisættet, kan du opdatere definitionen af dimensionsværdisættet, og denne opdatering gælder for alle områder, der bruger dimensionsværdisættet. Hvis du for eksempel ofte angiver et interval af værdier, der skal knyttes til de økonomiske data, såsom værdierne fra 5100 til og med 5600, kan du tildele dette interval til et kontosæt med navnet Salg. Når dimensionsværdigruppen er oprettet, kan du vælge sættet som et link til de økonomiske data. I et andet eksempel, hvor et værdiområde fra 5100 til og med 5600 er tildelt Salg, og tildelt 4175 er tildelt Rabatter, kan du beregne det samlede salg ved at trække Rabatter fra Salg, som i (5100:5600)-4175. Denne handling er angivet som **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Oprette et dimensionsværdisæt
 
@@ -476,11 +476,11 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 6.  I dialogboksen **Konto** skal du vælge kontonavnet på listen eller søge efter posten i feltet **Søg**. Klik derefter på **OK**.
 7.  Gentag trin 5 til 6 i kolonnen **Til** for at designe en formel for denne operator.
 8.  Når formlen er fuldført, skal du klikke på **OK**.
-9.  I dialogboksen **Administrer dimensionssæt** skal du klikke på **Luk**.
+9.  Klik på **Luk** i dialogboksen **Administrer dimensionsgrupper**.
 
-### <a name="update-a-set-of-dimension-values"></a>Opdatere et sæt dimensionsværdier
+### <a name="update-a-set-of-dimension-values"></a>Opdatere en gruppe af dimensionsværdier
 
-1.  Åbn den række-, kolonne- eller trædefinition, der skal ændres, i Report Designer.
+1.  Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
 2.  Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3.  I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
 4.  Vælg det dimensionsværdisæt, der skal opdateres, på listen, og klik derefter på **Rediger**.
@@ -498,9 +498,9 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 4.  Vælg det sæt, der skal kopieres, på listen, og klik derefter på **Gem som**.
 5.  Angiv et nyt navn for det kopierede sæt, og klik derefter på **OK**.
 
-### <a name="delete-a-dimension-set"></a>Slette et dimensionssæt
+### <a name="delete-a-dimension-set"></a>Slette en dimensionsgruppe
 
-1.  Åbn den række-, kolonne- eller trædefinition, der skal ændres, i Report Designer.
+1.  Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
 2.  Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3.  I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
 4.  Markér det sæt, der skal slettes, og klik derefter på **Slet**. Klik på **Ja** for at slette dimensionsværdisættet permanent.
