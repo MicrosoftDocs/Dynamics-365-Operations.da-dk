@@ -15,13 +15,13 @@ ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c944fd20273623ce3f7d03a24546addbe987084e
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: d41f4d454bc3a763ca6658babde6c3a6a44be73d
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ Der findes følgende landespecifikke formater for elektroniske fakturaer:
 -   FacturaE v.3.2.1 for Spanien
 -   FatturaPA v.1.2 for Italien
 
-Elektronisk fakturering er baseret på [elektronisk indberetning](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). Der er en **Debitorfakturamodel**-datamodel, og der er oprettet en række landespecifikke konfigurationer for elektroniske indberetningsformater for Østrig (AT), Danmark (DK), Italien (IT), Norge (NO), Spanien (ES), Frankrig (FR), Belgien (BE) Nederlandene (NL).
+Elektronisk fakturering er baseret på [elektronisk indberetning](../../dev-itpro/analytics/general-electronic-reporting.md). Der er en **Debitorfakturamodel**-datamodel, og der er oprettet en række landespecifikke konfigurationer for elektroniske indberetningsformater for Østrig (AT), Danmark (DK), Italien (IT), Norge (NO), Spanien (ES), Frankrig (FR), Belgien (BE) Nederlandene (NL).
 
 -   OIOUBL salgsfaktura - for AT, DK og NO
 -   OIOUBL salgskreditnota - for AT, DK og NO
@@ -71,7 +71,7 @@ Elektronisk fakturering er baseret på [elektronisk indberetning](/dynamics365/u
 De elektroniske fakturaer og kreditnotaer, som du genererer, omfatter nødvendige oplysninger som et europæisk varenummer (EAN) og oplysninger om kontakt, dimensionskontonummer og adresse til kunden. Der anvendes valideringsregler, når der genereres fakturaer, så du kan kontrollere, at de korrekte oplysninger er angivet. Sættet af nødvendige oplysninger kan variere fra land til land. Da både kravene og de understøttede lande og formater kan blive ændret, bør du altid gå til det delte aktivbibliotek i Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**.
 
 ## <a name="additional-information"></a>Yderligere oplysninger
-Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides) i ruden Hjælp:
+Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](../../fin-and-ops/get-started/help-overview.md#task-guides) i ruden Hjælp:
 
  - Konfigurere elektronisk OIOUBL-fakturering
  - Importere OIOUBL elektroniske faktureringskonfigurationer

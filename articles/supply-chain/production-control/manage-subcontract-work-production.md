@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ Når du bruger denne konfiguration, oprettes en indkøbsordre for det relaterede
 En produktionsordre kan have mange operationer, og hver af dem kan allokeres til en anden leverandør. Derfor kan en produktionsordre fra start til slut udløse flere indkøbsordrer.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Underleverandørarbejde på produktionsflowaktiviteter
-Med [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodellerne fungerer underleverandørarbejdet som en service, der er relateret til en aktivitet i et [produktionsflow](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (emnet Opgaveguide). Derfor omtales denne type underleverandørarbejde også som [aktivitetsbaseret underleverandørarbejde.](activity-based-subcontracting.md) En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de servicer, der udføres af underleverandører, er ikke en del af styklisten for færdigvarerne. Når du bruger lean manufacturing, defineres alle aktiviteter af kanbans, der kan relateres til en eller flere produktionsflowaktiviteter. Denne beskrivelse kunne indtil videre lige så godt være en beskrivelse af produktionsordrer. Men mens produktionsordrer altid skal afsluttes med et færdigt produkt, kan du oprette kanbans for at levere et halvfabrikataprodukt. Du behøver ikke at indføre et nyt produkt og styklisteniveau.  
+Med [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodellerne fungerer underleverandørarbejdet som en service, der er relateret til en aktivitet i et [produktionsflow](tasks/create-production-flow-version.md) (emnet Opgaveguide). Derfor omtales denne type underleverandørarbejde også som [aktivitetsbaseret underleverandørarbejde.](activity-based-subcontracting.md) En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de servicer, der udføres af underleverandører, er ikke en del af styklisten for færdigvarerne. Når du bruger lean manufacturing, defineres alle aktiviteter af kanbans, der kan relateres til en eller flere produktionsflowaktiviteter. Denne beskrivelse kunne indtil videre lige så godt være en beskrivelse af produktionsordrer. Men mens produktionsordrer altid skal afsluttes med et færdigt produkt, kan du oprette kanbans for at levere et halvfabrikataprodukt. Du behøver ikke at indføre et nyt produkt og styklisteniveau.  
 
 Da kanban-regler kan være meget dynamiske, kan du udforme forskellige forsyningsvarianter for samme produkt i et produktionsflow. Når du bruger lean underleverandørarbejde, er materialeflowet og det økonomiske flow strengt adskilt. Alle materialeflows repræsenteres af kanban-aktiviteter. Indkøbsordrerne for serviceprodukterne og bogføring af kvitteringer for disse servicer kan automatiseres, baseret på status for kanban-job i produktionsflowet. Kanban-job kan startes og fuldføres, inden der oprettes indkøbsordrer. Dokumenter vedrørende underleverandørarbejde (indkøbsordre og købskvittering for servicen) kan aggregeres efter periode og service. Derfor kan antallet af indkøbsdokumenter og -linjer holdes nede, selv i operationer, der gentages ofte, hvor leverandører leverer underleverandørydelser i et samlet flow.
 

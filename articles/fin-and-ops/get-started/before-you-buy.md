@@ -14,13 +14,13 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 21761
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 831550256176df6fa8542b9985eba1b9b1282fcb
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 75e2a31f1c0e82c6f0dcf92309d7673243e1bdc9
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Du kan afprøve Dynamics 365 for Finance and Operations i 30 dage via en enkel e
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 Du kan nu installere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i skyen eller i dit lokale miljø. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
-Du kan finde flere oplysninger under [Installationsindstillinger](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
+Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Trin 3: Køb og administrer et abonnement
 Hvis du vil undersøge abonnementsmulighederne, skal du gå til prissætningssiden for [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing). Denne side indeholder flere forskellige planer, som du kan vælge ud fra din organisations behov.
@@ -51,7 +51,7 @@ Der er to måder at købe et abonnement til en lokal installation
 Hvis organisationen har 250 eller flere brugere af Dynamics 365, vil du muligvis være interesseret i en [Volumenlicensaftale](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy.aspx). 
 
 I Volumenlicensering er Finance and Operations tilgængelig via:
-- Enterprise Agreement
+- Enterprise-aftale
 - Abonnement på Enterprise Agreement
 - Tilmelding til uddannelsesløsninger (under Campus og School-aftalen)
 - Aftale om Microsoft-produkter og Services (MPSA)
@@ -60,7 +60,7 @@ I Volumenlicensering er Finance and Operations tilgængelig via:
 Du kan samarbejde med en Microsoft Cloud Solution Provider for at forstå behovene i din virksomhed eller organisation. [Bruge Microsoft Partnercenter-portalen til at finde en partner til dine behov](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Køb via en Dynamics-partner (lokal installation)
-Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger i [Købe Dynamics 365 for Finance and Operations, Enterprise edition (lokal installation)](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
+Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger i [Købe Dynamics 365 for Finance and Operations, Enterprise edition (lokal installation)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Vælge supportmulighed
 Microsoft leverer fleksibel, brancheførende support, tjenester og ressourcer, så brugerne hurtigt kan at løse tekniske problemer og maksimere afkastningsgraden af Dynamics 365. Vælg en plan, der bedst opfylder dine forretningsbehov. 

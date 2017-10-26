@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 661c5a14d27f3ad9df6088c2977c507ca315a998
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations, E
 
 | Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | Et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og Microsoft Dynamics for Operations platformsopdatering 3 (november 2016)                   |
 | Installer hotfix-KB 3204341.                                                                              | Arbejdsrutineoptager kan fejlagtigt optage to Luk-kommandoer til rullelistedialogbokse. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering) |
 | Installer hotfix-KB 3207800.                                                                              | Dette hotfix gør det muligt at se vedhæftede filer på mobilklienten. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering).           |

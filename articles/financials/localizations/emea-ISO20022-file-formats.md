@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -118,7 +118,7 @@ Når du importerer en formatkonfiguration fra LCS, kan du importere hele konfigu
  - **Pain.002** – dette format skal bruges sammen med betalingsmodel-tilknytningen til destination ISO20022 for at importere filen pain.002 til overførselskladder for kreditorbetaling
  - **Camt.054** – dette format skal bruges sammen med betalingsmodel-tilknytningen til destination ISO20022 for at importere filen camt.054 til overførselskladder for kreditorbetaling. Der skal bruges samme formatkonfigurationen i funktionen til import af debitorbetalinger, men den anden tilknytning skal bruges i betalingsmodel-tilknytningen til destinationen ISO20022-konfiguration.
 
-Yderligere oplysninger om elektronisk indberetning kan du finde i [Oversigt over elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Yderligere oplysninger om elektronisk indberetning kan du finde i [Oversigt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Oprette og eksportere kreditorbetalinger ved hjælp af ISO20022-betalingsformat](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

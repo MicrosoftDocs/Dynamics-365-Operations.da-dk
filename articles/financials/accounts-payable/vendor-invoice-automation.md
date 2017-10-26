@@ -15,10 +15,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 75865ece49837e2a8758c4d739d3e29ce9128945
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering af kreditorfaktura
@@ -57,7 +57,7 @@ En datapakke er arbejdsenheden, der skal sendes til Finance and Operations , så
 
 Kreditorfakturaens vedhæftede dokument er en ny dataenhed, der indføres i forbindelse med denne funktion. Kreditorfakturahovedets enhed er blevet ændret, så det understøtter vedhæftede filer. Kreditorfakturaens linjeenhed er ikke blevet ændret for denne funktion.
 
-Dette emne give ikke en detaljeret definition af en datapakke. Det forklarer heller ikke, hvordan datapakker oprettes. Du kan finde disse oplysninger i [Struktur for dataenheder og pakker](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+Dette emne give ikke en detaljeret definition af en datapakke. Det forklarer heller ikke, hvordan datapakker oprettes. Du kan finde disse oplysninger i [Struktur for dataenheder og pakker](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 Du kan hurtigt generere testdata, der indeholder fakturaer og vedhæftede filer, ved at følge disse trin.
 

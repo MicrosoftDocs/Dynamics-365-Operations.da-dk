@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 007a7e8a34f3f5a2d0d18eb3955822a8fd8bdd0a
+ms.translationtype: HT
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: 9a1e3f08eeda93adeac4509edad244754770db65
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -126,7 +126,7 @@ Tekst, du har angivet i feltet **Tekst**, vises *over* teksten til trinnet i opg
 Tekst, du har angivet i feltet **Notater**, vises *under* teksten til trinnet i opgaveguiden. For at læse noteteksten skal brugeren udvide teksten til trinnet i pop op-vinduet. Denne placering er velegnet til valgfrit læsemateriale eller andre oplysninger, der kan være nyttige for brugeren, men som ikke er nødvendige for brugeren for at fuldføre handlingen.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjælp i Retail Modern POS og Cloud POS
-For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp i Retail Modern POS og Cloud POS så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Vil du have mere hjælp, kan du se [Forbindelse til hjælpesystemet.](/dynamics365/unified-operations/dev-itpro/get-started/help-connect) Hjælpen til Retail Modern POS og Cloud POS søger i LCS i realtid. Den søger på tværs af alle BPM-biblioteker, der er valgt i Microsoft Dynamics 365 for Retail Hjælp-systemparametrene og viser de relevante resultater. For at få adgang til menuen **Hjælp** skal du klikke på knappen **Hjælp** (spørgsmålstegn) øverst på skærmen, og derefter skal du skrive navnet på din proces i søgefeltet og trykke på søgeknappen. 
+For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp i Retail Modern POS og Cloud POS så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Vil du have mere hjælp, kan du se [Forbindelse til hjælpesystemet.](../fin-and-ops/get-started/help-connect.md) Hjælpen til Retail Modern POS og Cloud POS søger i LCS i realtid. Den søger på tværs af alle BPM-biblioteker, der er valgt i Microsoft Dynamics 365 for Retail Hjælp-systemparametrene og viser de relevante resultater. For at få adgang til menuen **Hjælp** skal du klikke på knappen **Hjælp** (spørgsmålstegn) øverst på skærmen, og derefter skal du skrive navnet på din proces i søgefeltet og trykke på søgeknappen. 
 
 [![Knappen Hjælp](./media/help.jpg)](./media/help.jpg) 
 

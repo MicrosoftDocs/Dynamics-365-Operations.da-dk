@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Tilpasning af hardware til lokale miljøer
-Før du begynder at tilpasse hardware og infrastruktur til et lokalt miljø, skal du sætte dig ind i [Systemkrav](../get-started/system-requirements.md) og læse [Vejledning til installation og implementering](../deployment/setup-deploy-on-premises-environments.md) for at få en ordentlig forståelse af den underliggende struktur. 
+Før du begynder at tilpasse hardware og infrastruktur til et lokalt miljø, skal du sætte dig ind i [Systemkrav](system-requirements.md) og læse [Vejledning til installation og implementering](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) for at få en ordentlig forståelse af den underliggende struktur. 
 
   **Bemærk!** Vær særligt opmærksom på best practices for opsætning af systemet for at opnå optimal ydelse. 
 
@@ -89,7 +89,7 @@ For at kende kravene til størrelsestilpasning skal du kende det maksimale antal
 Vi anbefaler altid at benytte SQL Server i en klynge- eller spejlingskonfiguration. Den sekundære SQL-node skal have det samme antal kerner, som den primære node. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-Du kan finde oplysninger om tilpasning af AD FS størrelse i [Dokumentationen til AD FS-serverkapacitet](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+Du kan finde oplysninger om tilpasning af AD FS størrelse i [Dokumentationen til AD FS-serverkapacitet](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 Du kan finde et [størrelsestilpasningsregneark](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) til planlægning af antallet af forekomster i installationen.
 

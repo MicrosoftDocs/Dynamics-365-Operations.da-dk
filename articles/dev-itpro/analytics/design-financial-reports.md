@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ I denne øvelse skal du generere og udforske en eksisterende standardrapport. De
 4.  Gå til **Økonomirapporter** under **Forespørgsler og rapporter** i Finans.
 5.  Vælg rækken for rapporten med navnet **Finansdetaljer – standard.**
 6.  Vælg **Rediger.** Bemærk! Du bliver bedt om at hente Report Designer og logge på. Du kan bruge dine legitimationsoplysninger til at logge på.
-7.  Ret basisåret til 2012, og vælg **Generer**. Når der oprettes en rapport fra Report Designer, åbnes den i en ny fane i browseren. Du kan enten udforske rapporten under den nye browserfane, eller gå til den oprindelige browserfane og derefter åbne rapporten derfra ved at vælge den på listen **Økonomirapporter**.
+7.  Ret basisåret til 2012, og vælg **Generer**. Når der oprettes en rapport fra rapportdesigneren, åbnes den i en ny fane i browseren. Du kan enten udforske rapporten i den nye fane i browseren, eller gå til den oprindelige browserfane og åbne rapporten i denne ved at vælge den på listen **Økonomirapporter**.
 8.  I den åbnede rapport skal du vælge t af beløbene for at dykke ned i kontodetaljerne for rapporten.
 9.  Én gang i kontooplysninger skal du vælge en konto med data og **dykke til rapportens transaktionsniveau**. Du kan se de egenskaber (attributter), der er inkluderet i denne rapports design, på rapportens posteringsniveau. Afhængigt af posteringen og konto, vise nogle eller alle attributterne muligvis.
 10. Luk rapportposteringsniveauet.
@@ -183,8 +182,8 @@ I denne øvelse skal du oprette en ny rapport. Rapporten er en afdelings resulta
 18. **Gem** dine ændringer og **generer**. Når rapporten færdiggøres, oprettes og åbnes, kan du gennemse rapporten.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-[Økonomirapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Vis økonomirapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Økonomirapportering](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Vis økonomirapporter](../../financials/general-ledger/view-financial-reports.md) 
 [Bloggen Dynamics Financial Reporting](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Du kan hente og redigere Microsofts opgaveregistreringer for at bruge dem til di
 11. Vælg, hvordan du vil gemme Arbejdsrutineoptager.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Medtag dine opgaveregistreringer i Hjælp-ruden
-For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Du kan finde flere oplysninger i [Tilslut hjælpesystemet.](../get-started/help-connect.md)
+For at få vist dine egne brugerdefinerede opgaveregistreringer i ruden Hjælp, så de kan afspilles som opgaveguider eller vises som tekst, skal du gemme opgaveregistreringerne i dit eget BPM-bibliotek og derefter opdatere dine systemparametre til Hjælp til at pege på BPM-biblioteket. Du kan finde flere oplysninger i [Tilslut hjælpesystemet.](../../fin-and-ops/get-started/help-connect.md)
 
 <a name="see-also"></a>Se også
 --------
 
-[Oversigt over Hjælp](..\get-started\help-overview.md)
+[Oversigt over Hjælp](../../fin-and-ops/get-started/help-overview.md)
 
-[Forbinde Hjælp](..\get-started\help-connect.md)
+[Forbinde Hjælp](../../fin-and-ops/get-started/help-connect.md)
 
 [Arbejdsrutineoptager](task-recorder.md)
 
