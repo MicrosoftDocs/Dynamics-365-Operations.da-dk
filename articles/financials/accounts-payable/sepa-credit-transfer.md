@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, 
 
 ## <a name="what-is-a-credit-transfer-message"></a>Hvad er en kreditoverførselsmeddelelse?
 Kreditoverførselsmeddelelsen er en anmodning, som en initierende part (din virksomhed) sender for at flytte midler fra sin egen konto til en kreditor. Der er mange lande-/områdespecifikke og bankspecifikke implementeringer af kreditoverførselsmeddelelser. Nogle af dem der anvendes inden for ét land/område, og nogle er ved at blive standarder. Én veletableret global standard er ISO 20022 og dens initieringsmeddelelser, f.eks. som kreditoverførsel. I følgende illustration vises forbindelserne og dækningen for udvalgte kreditoverførselsmeddelelser. 
-![Kreditoverførsel](./media/credit-transfer.jpg) Kreditoverførselsmeddelelser\[/billedtekst\] 
+![Kreditoverførsel](./media/credit-transfer.jpg) Kreditoverførselsmeddelelser 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Hvad er ISO 20022 og SEPA-betalinger?
 Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret. Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet. SEPA omfatter de 28 EU-medlemsstater samt Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino. SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA). I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med. Europa-Kommissionen har fastlagt det juridiske grundlag for SEPA-betalinger via PSD (Payment Services Directive). EPC (European Payments Council) understøtter SEPA gennem følgende aktiviteter:
@@ -59,7 +59,7 @@ Betalingsformatet for kreditoverførsel i de europæiske lande implementeres ved
 Du bør altid gå til den delte aktivbiblioteket på Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**. Næste afsnit, "Hvad skal jeg bruge for at komme i gang?", indeholder et link til det emne, der forklarer, hvordan du opretter en LCS-lager for at se tilgængelige konfigurationer og importere markerede konfigurationer.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hvad skal jeg bruge for at komme i gang?
--   Før du kan oprette kreditoverførselsfiler, skal mindst én aktiv konfiguration af kreditoverførsel importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Før du kan oprette kreditoverførselsfiler, skal mindst én aktiv konfiguration af kreditoverførsel importeres til dine ER-konfigurationer. Du kan finde vejledning i [Download af elektroniske rapporteringskonfigurationer fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Når du konfigurerer betalingsmetoder for kreditor, skal du markere afkrydsningsfeltet **Generiske elektronisk rapportering** og vælge det relevante kreditoverførselsformat (f.eks. **ISO 20022-kreditoverførsel (AT)**) som en formatkonfiguration til eksport.
 -   Du skal også angive den juridiske enhed og bankkontooplysninger i Finance and Operations.
 -   Bankkontonumre, IBAN og undertiden SWIFT-koder (BIC) eller andre id'er, der er nødvendige for at oprette gyldige betalinger ved kreditoverførsel. Derfor, du skal angive dem for kreditorbankkontoen og bankkontoen for den organisation, der anmoder om overførslen.

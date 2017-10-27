@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -61,7 +60,7 @@ Registreringskategori er landets/områdets registrerings-identifikator, der er g
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angiv registrering-id'er for poster i globalt adressekartotek
 
-Det globale adressekartotek (GAB) i Microsoft Finance and Operations indeholder konsoliderede adresseoplysninger for debitorer, kreditorer, kontaktpersoner, forretningsforbindelser og juridiske enheder. Du kan finde flere oplysninger under [Oversigt over globalt adressekartotek](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). De partposter, der er gemt i det globale adressekartotek, kan indeholde en eller flere adresseposter. Disse adresser bruges til forskellige formål, f.eks. fakturering eller levering. Du kan konfigurere registrerings-id'er for adresseoplysninger for debitorer, kreditorer, arbejdstagere og juridiske enheder. Find den partspost (juridisk enhed, kreditor, debitor, arbejder), som du vil angive registrerings-id, og klik derefter på **Registrerings-id'er** i formularer, der er relateret til part, juridisk enhed, kreditor, debitor, arbejder for at åbne siden **Administrer adresser**. Under fanen **Momsregistrering** skal du klikke på **Tilføj** og angiv følgende oplysninger om registrerings-id'et.
+Det globale adressekartotek (GAB) i Microsoft Finance and Operations indeholder konsoliderede adresseoplysninger for debitorer, kreditorer, kontaktpersoner, forretningsforbindelser og juridiske enheder. Du kan finde flere oplysninger under [Oversigt over globalt adressekartotek](../../fin-and-ops/organization-administration/overview-global-address-book.md). De partposter, der er gemt i det globale adressekartotek, kan indeholde en eller flere adresseposter. Disse adresser bruges til forskellige formål, f.eks. fakturering eller levering. Du kan konfigurere registrerings-id'er for adresseoplysninger for debitorer, kreditorer, arbejdstagere og juridiske enheder. Find den partspost (juridisk enhed, kreditor, debitor, arbejder), som du vil angive registrerings-id, og klik derefter på **Registrerings-id'er** i formularer, der er relateret til part, juridisk enhed, kreditor, debitor, arbejder for at åbne siden **Administrer adresser**. Under fanen **Momsregistrering** skal du klikke på **Tilføj** og angiv følgende oplysninger om registrerings-id'et.
 
 
 |Felt                |Betegnelse                                                |

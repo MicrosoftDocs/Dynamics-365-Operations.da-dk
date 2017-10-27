@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Webprogrammet kan køre i en af følgende webbrowsere, der kører på de angivne
 Gå til producentens websted for at finde den nyeste version af hver webbrowser. 
 
 > [!NOTE]
-> -   Du skal installere en foreløbig version af Chrome-udvidelsen, for at Arbejdsrutineoptager kan tage skærmbilleder og medtage dem i de Microsoft Word-dokumenter, der genereres. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   Du skal installere en foreløbig version af Chrome-udvidelsen, for at Arbejdsrutineoptager kan tage skærmbilleder og medtage dem i de Microsoft Word-dokumenter, der genereres. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   Arbejdsgangseditoren startes som et ClickOnce-program. Kun Microsoft Edge og Internet Explorer (på en understøttet version af Microsoft Windows) understøtter ClickOnce-programmer. ClickOnce-programmet til arbejdsgangseditoren kræver et kompatibelt 64-bit-operativsystem.
 > -   Report Designer til finansiel rapportering startes som et ClickOnce-program. Det kræver et kompatibelt 64-bit-operativsystem. Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at kunne hente Report Designer-klienten. Hvis du bruger Chrome i Incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen også er aktiveret til Incognito-tilstand.
 > -   Hvis du vil se PDF-filer, anbefaler vi, at du bruger browsere som f.eks. Microsoft Edge (seneste offentligt tilgængelige version) i Windows 10 eller Google Chrome (seneste offentligt tilgængelige version) i Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-tabletten.
@@ -70,7 +70,7 @@ Finance and Operations kræver Microsoft .NET Framework version 4.6.2 til alle C
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-programmer
 Følgende Microsoft Office-programmer understøttes i installationerne af Finance and Operations i skyen og det lokale miljø:
 
--   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde yderligere oplysninger om versionskrav i [Fejlfinding af Office-integration](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde yderligere oplysninger om versionskrav i [Fejlfinding af Office-integration](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
 
 ## <a name="retail-modern-pos-requirements"></a>Retail Modern POS-krav
@@ -153,10 +153,10 @@ Computeren skal opfylde alle systemkrav til installation og brug af følgende el
 -   Mindst 10 GB ledig plads (kanaldatabasen kan kræve en stor mængde plads.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Krav til udvikling på lokale virtuelle maskiner
-Du kan finde oplysninger om kravene til udvikling på lokale virtuelle maskiner (VM'er), [VM, der kører i det lokale miljø](../dev-tools/access-instances.md).
+Du kan finde oplysninger om kravene til udvikling på lokale virtuelle maskiner (VM'er), [VM, der kører i det lokale miljø](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## <a name="see-also"></a>Se også
 
-[Få en evalueringskopi af Dynamics 365 for Finance and Operations, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Få en evalueringskopi af Dynamics 365 for Finance and Operations, Enterprise edition](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 
