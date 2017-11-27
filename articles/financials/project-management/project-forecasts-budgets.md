@@ -1,9 +1,9 @@
 ---
 title: Projektprognoser og -budgetter
-description: 
+description: Microsoft Dynamics 365 for Finance and Operations indeholder projektprognoser og projektbudgetter til at administrere og styre dine projekter.
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
@@ -19,18 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 32dd89d92a496d6601d1983dbc3c8e7e579ee0b3
+ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
+ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
 # <a name="project-forecasts-and-budgets"></a>Projektprognoser og -budgetter
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Microsoft Dynamics 365 for Finance and Operations, Enterprise edition indeholder to metoder til at administrere og styre dine projekter: projektprognoser og projektbudgetter. 
@@ -41,16 +39,16 @@ Prognosemodeller anvendes i både projektprognoser og projektbudgetter til at ru
 
 Hver metode har sine fordele. Du bør overveje følgende punkter, før du vælger en metode til din organisation.
 
-|                           |                                                                                                                                                                                                                                                         |                                                                                                                                                                         |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           | **Projektprognoser**                                                                                                                                                                                                                                 | **Projektbudgetter**                                                                                                                                                   |
+|                           |                                          |                                                    |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+|                           | **Projektprognoser**                  | **Projektbudgetter**                              |
 | **Periodefordeling**     | Du kan ikke eksplicit fordele transaktioner på en regnskabsperiode. Prognosen og styringen af den er i stedet baseret på projektets levetid. Da prognoser er baseret på en bestemt dato, skal du derfor udlede perioden fra datoen. | Du kan fordele transaktioner på hele projektet eller på en regnskabsperiode. Hvis du fordeler hen over en periode, kan du overføre ikke-anvendte beløb til næste regnskabsperiode. |
 | **Se transaktioner**  | Du kan få vist transaktioner i prognoseformularer, hvor du får vist prognoserne for hele firmaet og for alle projekter uanset hierarki. Hvis du vil fokusere på et bestemt projekt, skal du filtrere dataene.                                       | Du kan få vist budgetterede transaktioner for et enkelt projekthierarki. Du kan derfor få vist detaljer om transaktioner for et overordnet projekt eller dets underprojekter.                 |
-| **Transaktionsvariabler** | Når du angiver prognosetransaktioner, kan du bruge hver attribut, der findes til en faktisk transaktion: Det giver mulighed for større detaljering i prognosen. Du kan f.eks. angive detaljer vedrørende antal, arbejdere, varer eller linjeegenskaber.         | Når du angiver budgetoplysninger, kan du kun indtaste beløb, kategorier og aktiviteter.                                                                                    |
-| **Sikkerhed**              | Prognoser er baseret på transaktioner, du indtaster i prognoseformularerne og involverer ingen mekanisme til processtyring. Alle arbejdere, der har tilladelser til en prognoseformular, kan revidere oplysninger uden godkendelse.                                        | Budgettering anvender arbejdsgangssystemet, som gør det muligt at anvende ændringsstyring og lader dig bevare en historik over revisionerne.                                                       |
-| **Posttyper**           | Prognoseposteringer er baseret på antallet af enheder og på kost- og salgsenhedspriser.                                                                                                                                                       | Budgetoplysninger er baseret på beløb, der er fordelt på omkostninger og indtægter.                                                                                        |
-| **Lagerbudgetmodeller**       | Da hver prognose skal være tilknyttet en model, kan du oprette flere prognosemodeller, og du kan også definere undermodeller.                                                                                                                               | Projektbudgettering begrænser de prognosemodeller, der anvendes til budgettering. Færre prognosemodeller kan være med til at give øget konsistens i projektioner.                           |
-| **Omkostningsoverskridelser**         | Du kan kun tillade eller forbyde indtastning af transaktioner, som vil resultere i en omkostningsoverskridelse.                                                                                                                                                                | I projektbudgettering har brugerne flere muligheder for styring. Du kan tillade advarsler og overskridelser.                                                                   |
+| **Transaktionsvariabler** | Når du angiver prognosetransaktioner, kan du bruge hver attribut, der findes til en faktisk transaktion: Det giver mulighed for større detaljering i prognosen. Du kan f.eks. angive detaljer vedrørende antal, arbejdere, varer eller linjeegenskaber.         | Når du angiver budgetoplysninger, kan du kun indtaste beløb, kategorier og aktiviteter.                    |
+| **Sikkerhed**              | Prognoser er baseret på transaktioner, du indtaster i prognoseformularerne og involverer ingen mekanisme til processtyring. Alle arbejdere, der har tilladelser til en prognoseformular, kan revidere oplysninger uden godkendelse.                                        | Budgettering anvender arbejdsgangssystemet, som gør det muligt at anvende ændringsstyring og lader dig bevare en historik over revisionerne.         |
+| **Posttyper**           | Prognoseposteringer er baseret på antallet af enheder og på kost- og salgsenhedspriser.  | Budgetoplysninger er baseret på beløb, der er fordelt på omkostninger og indtægter.                                          |
+| **Lagerbudgetmodeller**       | Da hver prognose skal være tilknyttet en model, kan du oprette flere prognosemodeller, og du kan også definere undermodeller.           | Projektbudgettering begrænser de prognosemodeller, der anvendes til budgettering. Færre prognosemodeller kan være med til at give øget konsistens i projektioner.                           |
+| **Omkostningsoverskridelser**         | Du kan kun tillade eller forbyde indtastning af transaktioner, som vil resultere i en omkostningsoverskridelse.   | I projektbudgettering har brugerne flere muligheder for styring. Du kan tillade advarsler og overskridelser.                    |
 | **Styring**               | Prognosebaseret styring udføres ved brug af prognosereduktion. Faktiske beløb fratrækkes i saldi for prognoseposteringer uden noget revisionsspor. Det kan gøre det vanskeligere at spore, hvor posteringerne reelt fandt sted.                   | I projektbudgetstyring trækkes faktisk beløb fra beløb i det resterende budget. Det giver et klarere revisionsspor.                                   |
 
 ## <a name="project-forecasts"></a>Projektprognoser

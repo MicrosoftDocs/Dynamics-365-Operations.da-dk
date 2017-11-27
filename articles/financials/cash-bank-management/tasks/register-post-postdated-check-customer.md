@@ -3,7 +3,7 @@ title: "Registrere og bogføre en fremdateret check for en debitor"
 description: Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en kunde.
 author: kweekley
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/26/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1610036815349f625a67d5dd67260114d42fff97
+ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
+ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og bogføre en fremdateret check for en debitor
@@ -38,7 +38,7 @@ Du kan registrere oplysninger om en fremdateret check, du har modtaget fra en ku
     * Indtast det beløb, der er angivet på den fremdaterede check.  
 8. Klik på fanen Betaling.
 9. Indtast en værdi i feltet Betalingsmåde.
-    * Vælg betalingsmåden for den fremdaterede check  
+    * Vælg betalingsmåden for den fremdaterede check.  
 10. Klik på fanen Fremdaterede checks.
 11. Angiv en dato i feltet Forfaldsdato.
     * Angiv den dato, hvor den fremdaterede check skal indløses.  

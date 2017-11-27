@@ -3,14 +3,14 @@ title: "Integration af budgetplanlægning med andre moduler"
 description: "Budgetplaner kan oprettes fra flere forskellige ressourcer. De grundlæggende elementer i den periodiske proces er ens for alle ressourcer."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 311a5cbd3768d8ecc7e7430717369193e60c3e57
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -59,7 +59,7 @@ For hver oprettelsesproces findes tre handlinger:
 
 For alle processer kan du under fanen **Kilde** filtrere data ved hjælp af knappen **Filter**. Som standard føjes specifikke felter til filteret for hver proces. For eksempel er processen **Generér budgetplan fra finanskonto**, kategorierne **Finanskonto** og **Hovedkonto** tilgængelige og vises på oprettelsessiden. Alle de felter, du føjer til filteret, føjes også til siden sammen med de kriterier, du tilføjer.
 
-### <a name="target"></a>Mål
+### <a name="target"></a>Målsætning
 
 Indstillingen **Historisk** under fanen **mål** gør det muligt at bruge datoerne fra kildedatene som ikrafttrædelsesdatoen i budgetplanen. Ikrafttrædelsesdatoen skal typisk være inden for planens budgetcyklus. Når du angiver indstillingen **Historisk** til **Ja**, bruges kildens dato (selv året), så du kan bruge tidligere data som grundlag for sammenligning. Du kan ikke ændre historiske data i budgetplanen, og planen er indstillet til en godkendt arbejdsgangsstatus. Men du kan nulstille statussen, hvis andre scenarier i planen skal ændres.
 

@@ -3,7 +3,7 @@ title: "Ofte stillede spørgsmål til produktvariantoversættelser"
 description: "Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2976d4fc62a71039da0bc8be5b50be92a95959c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -47,7 +47,7 @@ Du kan oversætte de produktrelaterede oplysninger til et hvilket som helst spro
 ## <a name="where-can-i-view-the-translated-information"></a>Hvor kan jeg se de oversatte oplysninger?
 Du kan få vist oversættelser af produkt-relaterede oplysninger i en ekstern kildedokument, f.eks en faktura, der bruger et sprog, hvor der findes oversættelser.
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hvordan kan jeg oprette oversættelser til produktvariantoplysninger?
+## <a name="how-do-i-create-translations-for-product-related-information"></a>Hvordan kan jeg oprette oversættelser for produkt-relaterede oplysninger?
 Hvis du vil oprette oversættelser for et projekt, skal du følge disse trin:
 1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Frigivne produkter**.
 2.  Vælg et produkt, og klik på **Oversættelser** i gruppen **Sprog** i handlingsruden.
@@ -124,7 +124,7 @@ Følg disse trin for at administrere oversættelser af værdier for en dimension
 1.  Følg trinnene i forrige procedure for at oprette en dimensionsværdigruppe og åbne siden **Størrelsesgruppelinjer**, **Farvegruppelinjer** eller **Typografigruppelinjer**.
 2.  Klik på **Oversættelse af tekst**. På siden **Oversættelse af tekst** skal du i gruppen **Oversat tekst** indtaste oversættelser i felterne **Navn** og **Beskrivelse**.
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>Hvornår kan oversættelser af produktrelaterede oplysninger administreres?
+## <a name="when-can-translations-of-product-related-information-be-managed"></a>Hvornår kan oversættelser af produktrelaterede oplysninger administreres?
 Du kan administrere oversættelser af produktrelaterede oplysninger når som helst. Når oversættelser opdateres for en dimensionsværdi, der er knyttet til et produkt, opdateres produktoplysninger, uanset om produktet har transaktioner.
 
 

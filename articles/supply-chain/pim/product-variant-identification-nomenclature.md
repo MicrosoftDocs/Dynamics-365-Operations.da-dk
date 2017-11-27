@@ -1,9 +1,9 @@
 ---
 title: Nomenklatur for produktvariantnumre og -navne
-description: "Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format. Den nye nomenklatur har et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og tekstafgrænsningstegn efter eget valg. Du kan også oprette en nomenklatur for produktnavne. Endelig kan du også oprette en nomenklatur til at identificere konfigurationer, der er oprettet af den begrænsningsbaserede produktkonfigurator. Disse nomenklaturer kan indeholde attributter efter eget valg."
+description: "Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ En T-shirt (TS1234), der produceres i tre størrelser (S, M, L), fire farver (r�
 
 I dette tilfælde vil produktvariantnummeret for en rød, small, polo T-shirt være TS1234-Rød-Small-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatur for begrænsningsbaserede konfigurationer
+## <a name="nomenclature-of-constraint-based-configurations"></a>Nomenklatur for begrænsningsbaserede konfigurationer
 Til begrænsningsbaserede konfigurationer kan du oprette en dedikeret nomenklatur til konfigurationsproduktdimensionen. Du kan vælge følgende segmenter på siden **Produktnomenklatur**:
 
 -   Nummerserieværdi
@@ -92,7 +92,7 @@ Du opretter en konfigurationsnomenklatur, der har følgende segmenter:
 
 I dette tilfælde vil konfigurations-id'et for træmateriale, der har en længde på 78, være WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatur for dimensionsbaserede konfigurationer
+## <a name="nomenclature-of-dimension-based-configurations"></a>Nomenklatur for dimensionsbaserede konfigurationer
 Til dimensionsbaserede konfigurationer kan du oprette en dedikeret nomenklatur til konfigurationsproduktdimensionen. Du kan vælge følgende segmenter på siden **Produktnomenklatur**:
 
 -   Nummerserieværdi

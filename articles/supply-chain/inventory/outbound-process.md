@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Gå til **Lagerstyring** \> **Konfiguration** \> **Parametre til lager- og lokat
 
 [![Indstillingen Afslut udgående lagerordre](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Sommetider kan nogle varer på lageret ikke plukkes som en del af pluklisteprocessen. Denne situation kan for eksempel opstå, hvis en lagermedarbejder reducerer antallet på pluklinjer og behandler pluklisten. Hvis indstillingen **Afslut udgående lagerordre** er angivet til **Ja**, rapporteres de resterende uplukkede mængder tilbage til ordreniveauet. Hvis indstillingen er angivet til **Nej**, bevares de resterende uplukkede mængder som et åbent udlagringsordreantal. I dette tilfælde forbliver mængderne frigivet til lageret og skal føjes til en ny plukliste som en del af funktionen **Åbne udlagringsordrer**.
+Når lagermedarbejderen reducerer pluklisteantallene, fjernes de tilsvarende lagerordreantal fra forsendelsen. Når pluklisten opdateres på et tidspunkt, rapporteres den resterende mængde tilbage til ordren, hvis indstillingen **Afslut udgående lagerordre** er angivet til **Ja**. Hvis den **Afslut udgående lagerordre** er angivet til **Nej**, bevares de resterende mængder som et åbent udlagringsordreantal og skal føjes til en ny plukliste som en del af funktionen **Åbne udlagringsordrer**. 
 
 [![Kommandoen Åbn udlagringsordrer i menuen Funktioner](./media/open-output-order.png)](./media/open-output-order.png)
 

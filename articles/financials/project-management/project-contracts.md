@@ -1,9 +1,9 @@
 ---
 title: Projektkontrakter
-description: "I denne artikel beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "I dette emne beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d7d3b64b0d6a662246074b12e3a3fe105dfae47
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+I denne artikel beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 Den type projekt, du opretter til en projektkontrakt, afgør, hvilken metode der bruges til fakturering af projektdebitorere. Du kan ændre en projektkontrakt og det relaterede projekt, men du kan ikke ændre projekttypen. 
 
@@ -224,7 +224,7 @@ I følgende tabel undersøges dette scenario yderligere.
 </tr>
 <tr class="odd">
 <td>Postering 2</td>
-<td><strong>Transaktionsbeløb:</strong> 5.000,00<strong>Finansiering:</strong> Transaktionen betales i henhold til alle tre regler.<strong>Regel 1</strong>
+<td><strong>Transaktionsbeløb:</strong> 5.000,00<strong>Finansiering:</strong> Transaktionen betales i henhold til alle tre regler. <strong>Regel 1</strong>
 <ul>
 <li>Finansieringskilde 2: 450.00</li>
 <li>Finansieringskilde 3: 450.00</li>

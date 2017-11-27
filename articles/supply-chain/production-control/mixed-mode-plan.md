@@ -1,9 +1,9 @@
 ---
 title: "Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning"
-description: "Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer)."
+description: "Dette emne indeholder oplysninger om planlægning i blandet tilstand."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
+Dette emne indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
 
 Du kan vælge din overordnede strategi for at levere et produkt, uanset produktstrukturen.  
 
@@ -59,7 +59,7 @@ Typisk oprettes kanbans ikke for fremtidige datoer, da en kanban har en kort lev
 
 Den samme logik er til stede ved alle øvrige typer forsyningspolitikker. Derfor er langsigtet planlægning for materialer baseret på den samme logik, som du forventer at køre med de faktiske ordrer, når produktion og forsyning er blevet godkendt.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Krydsforsyningspolitik for materialefordeling – ressourceforbrug på styklister
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>Krydsforsyningspolitik for materialefordeling – ressourceforbrug på styklister
 Ressourceforbrug er en vigtig funktion. Ressourceforbrug giver et lagersted til plukning materialer mulighed for at blive valgt, baseret på forsyningspolitikken (ordretype) og også letter vedligeholdelsen af stamdata.  
 
 Ressourceforbrug kræver, at det lagersted, der er plukket materialer fra, tildeles baseret på den måde, produktet leveres. Med andre ord, på kørselstidspunktet finder systemet de ressourcer, der skal bruges til produktion. Baseret på disse ressourcer finder systemet derefter pluklagerstedet.  

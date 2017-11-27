@@ -1,9 +1,9 @@
 ---
-title: Oversigt over produktionsprocessen
-description: Denne artikel indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
+title: Oversigt over produktionsproces
+description: Dette emne indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="production-process-overview"></a>Oversigt over produktionsprocessen
+# <a name="production-process-overview"></a>Oversigt over produktionsproces
 
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden. 
+Dette emne indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden. 
 
 Produktionen af produkter, en proces, der også kaldes produktionslivscyklus, følger bestemte trin, der er nødvendige for at gennemføre fremstillingen af en vare. Livscyklussen begynder med oprettelsen af produktionsordre, batchordre eller kanban. Det slutter med en færdig produceret vare, der enten er klar til en kunde eller en anden fase i produktionen. Hvert enkelt trin i dette forløb kræver, at der angives forskellige former for oplysninger, så processen kan fuldføres. Når et trin er afsluttet, viser produktionsordren, batchordren eller kanban en ændring i produktionsstatus. Forskellige typer af produkter kræver forskellige fremstillingsprocesser.  
 

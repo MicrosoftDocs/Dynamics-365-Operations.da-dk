@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 04def14ddf9b079005bf11acbcaf64b21aa80fdb
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Designe en konfiguration til generering af rapporter i OpenXML-format til elektronisk rapportering (ER)
@@ -34,8 +34,7 @@ I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirm
 
 
 
-Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også have en Excel-fil, der vil blive importeret, når du opretter skabelonen. Denne fil kan åbnes fra: https://msdynamics.blob.core.windows.net/media/2016/04/SampleVendPaymWsReport.xlsx
-
+Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også hente og gemme Microsoft Excel-filen, [Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266). 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Overføre konfiguration for betalingsdatamodel
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.

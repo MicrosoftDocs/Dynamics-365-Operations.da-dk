@@ -3,24 +3,24 @@ title: "Arbejdsområde for styring af anlægsaktiver"
 description: "Dette emne indeholder oplysninger om arbejdsområdet Styring af anlægsaktiv. Dette arbejdsområde viser oplysninger, der er tilknyttet de anlægsaktiver, der er angivet i systemet. Det omfatter en oversigtsvisning og en analysevisning."
 author: saraschi
 manager: AnnBe
-ms.date: 06/06/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c87cd29f46acb44faddaf5552de21fb8f4c5c71d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c544ae60433dd14d061bc1a78d5cad6577cf579d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -58,7 +58,7 @@ Du kan gå direkte til siden **Opsætning af bøger**, siden **Forespørgsel om 
 
 ### <a name="analytics--all-companies"></a>Analyse – alle firmaer
 
-Siden **Analyser** indeholder vigtige oplysninger om anlægsaktiver i alle juridiske enheder i systemet. Adgang til denne fane styres af sikkerhedsrettigheden Vis analyse af anlægsaktiver for alle firmaer.
+Siden **Analyser** indeholder vigtige oplysninger om anlægsaktiver i alle juridiske enheder i systemet. Adgang til denne fane styres af sikkerhedsrettighederne Vis analyse af anlægsaktiver for alle firmaer.
 
 Følgende tabel viser de visualiseringer, der er tilgængelig på hver rapportside.
 

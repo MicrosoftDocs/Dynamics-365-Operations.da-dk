@@ -18,10 +18,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0fb86cd4264d5420c479e14f7eed41e480c88b63
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a76558d220e98de85060d23d6e5d8df1c0cd1baf
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -57,7 +57,7 @@ Brug følgende trin til at tilføje importenhed for bankkontoudtog, der underst�
             3.  Upload datafilen = ny version af SampleBankCompositeEntity.xml.
             4.  Klik på **Ja** for at overskrive den eksisterende fil.
             5.  Klik på **Ja** for at oprette en ny tilknytning.
-            6.  Kontrollér, at S **equenceNumber** er tilknyttet.
+            6.  Kontrollér, at S**equenceNumber** er tilknyttet.
                 -   Klik på **Vis tilknytning** på bankkontoudtogets enhed.
                 -   Kontrollér, at **SequenceNumber** er knyttet fra Kilde til Midlertidig.
 

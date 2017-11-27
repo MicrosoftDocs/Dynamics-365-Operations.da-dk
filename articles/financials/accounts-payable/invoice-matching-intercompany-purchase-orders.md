@@ -3,7 +3,7 @@ title: "Fakturasammenholdelse og interne indkøbsordrer"
 description: "Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Nettobeløbene for den interne kreditorfaktura og den interne debitorfaktura ska
 2.  Registrer i Fabrikam Sales, at varerne er modtaget, og bogfør en følgeseddel. Statussen for ICS0888 skifter til Leveret. Statussen for ICP0222 skifter til Modtaget.
 3.  Udfør en fakturaopdatering af ICS0888 i Fabrikam Sales. Enhedsprisen er 0,45, og 100 varer opdateres.
 4.  Opret en faktura til ICP0222 i Fabrikam Purchase. Du kommer utilsigtet til at ændre nettoprisen fra 45,00 til 54,00. Der vises et ikon, som angiver, at prisen overstiger den tilladte pristolerance på 2 procent.
-5.  på siden Detaljer om fakturasammenholdelse skal du vælge indstillingen for at godkende bogføring med matchningsafvigelser. På siden Kreditorfaktura skal du klikke på OK. Hvis ikke kreditorfakturaen var en intern kreditorfaktura, er bogføring korrekt gennemført. Men fordi du arbejder med en intern kreditorfaktura, er bogføringen ikke udført korrekt. I forbindelse med intern handel skal fakturatotaler på den interne salgsordre være lig med fakturatotaler på den tilsvarende interne indkøbsordre. Du kan løse dette problem ved at rette nettoprisen på fakturaen ved at ændre nettoprisen tilbage til standardbeløbet på 45,00.
+5.  på siden Detaljer om fakturasammenholdelse skal du vælge indstillingen for at godkende bogføring med matchningsafvigelser. Klik på OK på siden Kreditorfaktura. Hvis kreditorfakturaen ikke var en intern kreditorfaktura, er bogføring korrekt gennemført. Men fordi du arbejder med en intern kreditorfaktura, er bogføringen ikke udført korrekt. I forbindelse med intern handel skal fakturatotaler på den interne salgsordre være lig med fakturatotaler på den tilsvarende interne indkøbsordre. Du kan løse dette problem ved at rette nettoprisen på fakturaen ved at ændre nettoprisen tilbage til standardbeløbet på 45,00.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a>Eksempel: Antalssammenholdelse i intern handel
 Antallene i den interne indkøbsordre og den interne salgsordre skal være ens. Dette krav tilsidesætter eventuelle godkendelser af fakturasammenholdelse, der måtte gælde. I dette eksempel bruges følgende yderligere opsætning af intern handel:

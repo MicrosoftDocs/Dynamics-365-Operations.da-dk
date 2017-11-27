@@ -3,7 +3,7 @@ title: Budgetanalyse i den offentlig sektor
 description: "Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e2af104916c7acce94467588677f5624fd9bd823
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dfdaa28dce86f42faa3ae7def6da6c3618e111e0
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -36,7 +36,7 @@ Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indt
 
 I dette emne beskrives de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
 
-Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor.](budgeting-public-sector.md). 
+Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md). 
 
 Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
 

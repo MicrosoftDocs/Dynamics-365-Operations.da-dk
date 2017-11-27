@@ -3,7 +3,7 @@ title: Betalingsmetoder i et callcenter
 description: I dette emne beskrives de forskellige betalingsformer, du kan bruge i et callcenter i Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 93cff4454139524911a98fc28bccd6aeb5b49d4a
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -37,7 +37,7 @@ De betalingsformer, der anvendes i andre kanaler, såsom kontanter, checks, kred
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribut**             | I feltet **Indløsningssats** skal du angive den forventede indløsningssats på kuponen som en procentdel og derefter vælge, om kuponen kan bruges som en engangskupon, skal udstedes igen automatisk eller gælder specifikt for kunden.                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Attribut**             | I feltet **Indløsningssats** skal du angive den forventede indløsningssats på kuponen som en procentdel og derefter vælge, om kuponen kan bruges én gang, skal udstedes igen automatisk eller gælder specifikt for kunden.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Gyldig**                 | Angiv datoerne for den første og sidste dag, hvor kuponen gælder, i felterne **Startdato** og **Slutdato**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Medtag/udelad regler** | I felterne **Kataloger** og **Varer** skal du vælge, om alle kataloger eller varer skal medtages eller ej i kuponen. Hvis du vælger **Medtag** eller **Udeluk**, skal du klikke på **Opsætning**, vælge **Medtag/Udelad kataloger** eller **Medtag/Udelad produkter** og angive oplysninger om katalog eller vare. Hvis du vælger **Ingen** i disse felter, medtages alle kataloger eller varer i kuponen.                                                                                                                                                                                                                          |
 | **Diverse**         | Hvis denne rabatkupon ikke kan bruges sammen med andre rabatter, skal du markere afkrydsningsfeltet **Eksklusiv**. I feltet **Oprindelse** skal du vælge, hvor kuponen kan bruges. Hvis denne kupon er en producents kupon, skal du markerer afkrydsningsfeltet **Producentens kupon**.                                                                                                                                                                                                                                                                                                                                                                |

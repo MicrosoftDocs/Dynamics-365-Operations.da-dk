@@ -3,14 +3,14 @@ title: "Leverandørsamarbejde med eksterne leverandører"
 description: "I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
-ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: abff906bcdf31c91ce696afbcd651a1d7a87ea8a
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,6 +33,8 @@ ms.lasthandoff: 10/05/2017
 I dette emne forklares, hvordan indkøbere bruger leverandørportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
 
 Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 for Finance and Operations. Det gør det muligt for kreditorer at arbejde med oplysninger om købsordrer, fakturaer og konsignationslager. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre. Der er flere oplysninger om, hvad eksterne kreditorer kan gøre i grænsefladen for kreditorsamarbejde, i [Kreditorsamarbejde med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+Oplysningerne i dette emne om leverandørsamarbejde gælder kun for den aktuelle version af Dynamics 365 for Finance and Operations. I versionerne fra februar 2016 og maj 2016 af Microsoft Dynamics AX samarbejder du med leverandører ved brug af modulet Leverandørportal. Du kan finde flere oplysninger om modulet Leverandørportal under [Samarbejde med kreditorer ved hjælp af leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Der er flere oplysninger om, hvordan kreditorerne kan bruge kreditorsamarbejde i faktureringsprocesser, i [Arbejdsområde for kreditorsamarbejdsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Der er oplysninger om, hvordan du klargør nye brugere af kreditorsamarbejde, i [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md).
 
@@ -148,7 +150,7 @@ I arbejdsområdet **Klargøring af indkøbsordrer** kan du på listen Til ekster
 
 Kreditoren kan også tilføje en note eller vedhæftet fil
 
-På linjerne kan kreditoren ændre antallet og leveringsdatoerne, tilføje noter og vedhæftede filer, afvise en linje, erstatte en linje med et andet produkt, der indtastes som tekst, og opdele en linje i flere leverancer. Afhængigt af hvilke ændringer, der foreslås af kreditoren, vil linjestatus have forskellige statusser:
+På linjerne kan leverandøren ændre antallet og leveringsdatoerne, tilføje noter og vedhæftede filer, afvise en linje, erstatte en linje med et andet produkt, der indtastes som tekst, og opdele en linje i flere leverancer. Afhængigt af hvilke ændringer, der foreslås af kreditoren, vil linjestatus have forskellige statusser:
     
 -   **Accepteret med ændringer**
 -   **Afvist**
@@ -161,7 +163,7 @@ I svaret kan du se de tidligere nævnte linjestatusser, der angiver typerne af �
 
 Du kan opdatere en indkøbsordre ved at klikke på handlingen **Udfør opdatering af indkøbsordre** på svaret eller én linje ad gangen. En indikator, **Er opdatering af indkøbsordre behandlet?**, i hovedet og på linjerne viser, om systemet har behandlet hovedet eller linjerne for at opdatere indkøbsordren med eventuelle ændringer, der stammer fra svaret. Du kan kun køre processen **Udfør opdatering af indkøbsordre** én gang pr. hoved eller linje.
 
-Ikke alle foreslåede ændringer kan opdateres på en indkøbsordre. Det er kun opdateringer i hovedet og opdateringer af datoer og antal på linjerne, der kan opdateres automatisk på indkøbsordren. Andre ændringer skal du manuelt opdatere på indkøbsordren. I dette tilfælde viser indikatoren **Er opdatering af indkøbsordre behandlet?** **Manuel opdatering**. Når en kreditor foreslår at opdele en linje i en tidsplan, skal denne ændring for eksempel håndteres manuelt.
+Ikke alle foreslåede ændringer kan opdateres på en indkøbsordre. Det er kun opdateringer i hovedet og opdateringer af datoer og antal på linjerne, der kan opdateres automatisk på indkøbsordren. Andre ændringer skal du manuelt opdatere på indkøbsordren. I dette tilfælde viser indikatoren **Er opdatering af indkøbsordre behandlet?** **Manuel opdatering**. Når en leverandør foreslår opsplitning af en linje i en tidsplan, skal denne ændring for eksempel håndteres manuelt.
 
 En linje med statussen **Accepteret** har en bekræftet leveringsdato, der skal opdateres på indkøbsordren, når du afvikler **Udfør opdatering af indkøbsordre**. Noter og vedhæftede filer bliver ikke automatisk overført til den aktuelle indkøbsordre. Bemærk, at når du opdaterer den aktuelle indkøbsordre via **Udfør opdatering af indkøbsordre**-handlingen, bliver handelsaftaler ikke vurderet på ny på linjerne i indkøbsordren.
 

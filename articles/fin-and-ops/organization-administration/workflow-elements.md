@@ -1,27 +1,27 @@
 ---
 title: Arbejdsgangselementer
-description: "I denne artikel beskrives de forskellige elementer, der indgår i en arbejdsgang."
+description: "I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives de forskellige elementer, der indgår i en arbejdsgang.
+I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang.
 
 En arbejdsgang består af elementer. Følgende afsnit indeholder beskrivelser af hver type element.
 
@@ -59,7 +59,7 @@ En *godkendelsesproces* er en proces, der består af separate trin. På hvert en
 -   Anmode om en ændring af dokumentet.
 -   Tildele dokumentet til en anden bruger til godkendelse.
 
-## <a name="lineitem-workflow-elements"></a>Elementer i arbejdsgang for linjeelement
+## <a name="line-item-workflow-elements"></a>Elementer i arbejdsgang for linjeelement
 En arbejdsgang kan oprettes for at behandle enten dokumenter eller linjeelementerne i et dokument. Du har f.eks. oprettet en godkendelsesarbejdsgang for timesedler. (Vi vil henvise til denne arbejdsproces som *dokumentarbejdsgangen*). Du kan tilføje en *arbejdsgang for linjeelement* til denne dokumentarbejdsgang. Når elementet i linjeelementet køres, sendes hvert linjeelement i dokumentet til behandling. Det kan være, at du vil have alle linjeelementer behandlet af samme arbejdsgang for linjeelement, eller at du vil måske have hvert enkelt linjeelement behandlet af en særskilt arbejdsgang for linjeelement. Antag, at en medarbejder har sendt en timeseddel, der ligner nedenstående figur.
 
 ![Arbejdsgang med linjeelementer](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ I dette scenario kan du muligvis oprette følgende arbejdsgange for linjeelement
 -   **Arbejdsgang for linjeelement 2** – denne arbejdsgang bruges til at behandle linjeelementer, hvor projekt-id er 2222.
 -   **Arbejdsgang for linjeelement 3** – denne arbejdsgang bruges til at behandle linjeelementer, hvor projekt-id er 3333.
 
-## <a name="flowcontrol-elements"></a>Flowstyringselementer
+## <a name="flow-control-elements"></a>Flowstyringselementer
 Følgende elementer sætter dig i stand til at designe arbejdsgange, der har alternative forgreninger eller grene, der kører samtidigt.
 
 ### <a name="manual-decision"></a>Manuel beslutning
