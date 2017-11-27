@@ -1,16 +1,16 @@
 ---
 title: Startside for Supply Chain Management
-description: "Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Finance and Operations - Supply Chain Management mere effektivt."
+description: "Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/02/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 6cef449562ba75b03b10b4fe27a436ecff3a6691
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0ca879fc4b0a43cd3af1e45c78a48f1c942a9a6a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,18 +30,18 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Denne side peger på ressourcer, der hjælper dig med at bruge Microsoft Dynamics 365 for Finance and Operations - Supply Chain Management mere effektivt. 
+Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
-## <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
-Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
+## <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
+Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
 
 ## <a name="core-concepts-and-tasks"></a>Grundlæggende begreber og opgaver
 
 Vælg et funktionsområde, du vil vide mere om.
 
-- [Driftsregnskab](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Omkostningsregnskab](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Omkostningsstyring](cost-management/costing-sheets.md)  
-- [Lagerstyring](inventory/consignment.md)
+- [Lagerstyring](inventory/inventory-home-page.md)
 - [Varedisponering](master-planning/introduction-demand-forecasting.md)
 - [Indkøb og forsyning](procurement/procurement-sourcing-overview.md)
 - [Administration af produktoplysninger](pim/product-information.md)

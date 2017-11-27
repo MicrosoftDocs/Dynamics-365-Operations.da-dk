@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 358f5bf6194f5dd3f1639425e6633aa1a855bdc1
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 449643cc34e67388210e0b4e9d04d615d2420610
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent strømliner mange rutinemæssige og registreringskrævende opgaver og automatiserer en række processer, der er relateret til arbejdskraften i din organisation. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, performanceevalueringer og styring af ændringer. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
+Microsoft Dynamics 365 for Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til medarbejderforhold i din organisation. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
 
 Du kan udføre disse opgaver vha. Talent:
 

@@ -2,6 +2,11 @@
 
 # Introduktion
 ## [Nyheder eller ændringer](get-started/whats-new.md)
+## [Før du køber Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Tilmelde dig et prøveabonnement](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Installere et demomiljø](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Installationsindstillinger](dev-itpro/choose-deployment.md)
+
 
 # Betalinger
 ## [Betalingsmetoder](payment-methods.md)
@@ -39,6 +44,8 @@
 ## [Detailtid og fremmøde](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) og Cloud POS
+## [POS-handlinger](POS-operations.md)
+## [Skærmlayout for demodata i MPOS/CPOS](demo-data.md)
 ## Hardware og ydre enheder
 ### [Oversigt over eksterne detailenheder](retail-peripherals-overview.md)
 ### [Microsoft-testede eksterne POS-hardwareenheder](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,10 +67,11 @@
 ### [Hybride kundeordrer](hybrid-customer-orders.md)
 ## Salgstilknytninger
 ### [Spore provisioner i POS via salgsgrupper](pos-sales-groups-track-commissions.md)
+## [Levere en ordre fra en anden butik](charge-send.md)
 ## Enhedsaktivering
 ### [Konfigurere og installere MPOS](retail-modern-pos-device-activation.md)
 ### [Konfigurere udvidet logon for Cloud POS og MPOS](extended-logon.md)
-### [Administrere detailkonti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
+### [Administrere Retail-konti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
 ## Kvitteringer
 ### [Konfigurere kvitteringsskabeloner](receipt-templates-printing.md) 
 ### [Sende mailkvitteringer fra MPOS](email-receipts.md)
@@ -121,44 +129,44 @@
 ## [Oprette et produkt](../supply-chain/pim/tasks/create-product.md)
 ## [Konfigurere tilknyttede produkter](../supply-chain/pim/tasks/configure-linked-products.md)
 ## [Frigive et produkt/en produktmaster til juridiske enheder](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
-## [ Basispris- og samhandelsaftaler](tasks/base-price-trade-agreements.md)
-## [ Regler for kategoriprissætning til oprettelse af samhandelsaftaler](tasks/category-pricing-rules-trade-agreements.md)
-## [ Konfigurere kreditkortbehandling](tasks/configure-credit-card-processing.md)
-## [ Konfigurere funktionalitetsprofilen for en sælger](tasks/configure-functionality-profile-sales-representative.md)
-## [ Konfigurere produktanbefalinger, der er baseret på maskinel indlæring](tasks/configure-machine-learning-product-recommendations.md)
-## [ Oprette og tilknytte en enhed](tasks/create-associate-device.md)
-## [ Oprette og tilknytte en hardwarestation](tasks/create-associate-hardware-station.md)
-## [ Oprette og tilknytte registre](tasks/create-associate-registers.md)
-## [ Oprette, beregne og bogføre et opgørelse for en detailbutik](tasks/create-calculate-post-statement-retail-store.md)
-## [ Oprette callcenter-ordrer](tasks/create-call-center-orders.md)
-## [ Oprette økonomiske dimensioner for POS-kasseapparater og konfigurere dimensionsværdier for registre](tasks/create-financial-dimensions-pos.md)
-## [ Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker](tasks/create-financial-dimensions-retail-channels.md)
-## [ Oprette onlinekanaler og definere kanalattributter](tasks/create-online-channel-define-channel-attributes.md)
-## [ Oprette POS-rettighedsgrupper](tasks/create-pos-permission-groups.md)
-## [ Oprette en visuel POS-profil ](tasks/create-pos-visual-profile-2016-02.md).
-## [ Oprette produktpakker til indkøbsordrer](tasks/create-product-packages-purchase-orders.md)
-## [ Definere callcenter-kanal og kanalattributter](tasks/define-call-center-channel-channel-attributes.md)
-## [ Definere kanalattributter](tasks/define-channel-attributes.md)
-## [ Definere kontinuitetsplaner](tasks/define-continuity-schedules.md)
-## [ Definere fordelskundeprogrammer](tasks/define-loyalty-programs.md)
-## [ Definere bonuspoint for fordelskunde](tasks/define-loyalty-reward-points.md)
-## [ Definere fordelskundeplaner](tasks/define-loyalty-schemes.md)
-## [ Designe relationerne mellem organisationsenheder](tasks/design-relationships-between-organizational-units.md)
-## [ Administrere sortimenter ](tasks/manage-assortments-2016-11.md)
-## [ Parameterkonfigurationer for detailopgørelser](tasks/parameter-configurations-retail-statements.md)
-## [ Betalingskonfigurationer for detailopgørelser](tasks/payment-configurations-retail-statements.md)
-## [ Udføre selvbetjening for at downloade hardwarestation](tasks/perform-self-service-download-hardware-station.md)
-## [ Bogføre onlinesalg og -betalinger](tasks/posting-online-sales-payments.md)
-## [ Behandle reguleringer for kundefordelsbonuspoint](tasks/process-loyalty-reward-point-adjustments.md)
-## [ Skubbe produkter fra distributionscenter til butik ved hjælp af centraliseret indkøb](tasks/push-products-distribution-center-store-buyers-push.md)
-## [ Detailprisjusteringer](tasks/retail-price-adjustments.md)
-## [ Konfigurere og køre et job for at beregne opgørelser](tasks/run-job-calculate-statements.md)
-## [ Konfigurere og køre et job for at bogføre opgørelser](tasks/run-job-post-statements.md)
-## [ Generere og køre brugsklare rapporter](tasks/run-out-box-reports.md)
-## [ Konfigurere regler og parametre for cross-docking og centraliseret indkøb](tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
-## [ Gemme konfigurationer for detailopgørelser](tasks/store-configurations-retail-statements.md)
-## [ Bruge et kontinuitetsprogram](tasks/use-continuity-program.md)
-## [ Konfigurere en arbejder](tasks/worker.md)
+## [Basispris- og samhandelsaftaler](tasks/base-price-trade-agreements.md)
+## [Regler for kategoriprissætning til oprettelse af samhandelsaftaler](tasks/category-pricing-rules-trade-agreements.md)
+## [Konfigurere kreditkortbehandling](tasks/configure-credit-card-processing.md)
+## [Konfigurere funktionalitetsprofilen for en sælger](tasks/configure-functionality-profile-sales-representative.md)
+## [Konfigurere produktanbefalinger, der er baseret på maskinel indlæring](tasks/configure-machine-learning-product-recommendations.md)
+## [Oprette og tilknytte en enhed](tasks/create-associate-device.md)
+## [Oprette og tilknytte en hardwarestation](tasks/create-associate-hardware-station.md)
+## [Oprette og tilknytte registre](tasks/create-associate-registers.md)
+## [Oprette, beregne og bogføre et opgørelse for en detailbutik](tasks/create-calculate-post-statement-retail-store.md)
+## [Oprette callcenter-ordrer](tasks/create-call-center-orders.md)
+## [Oprette økonomiske dimensioner for POS-kasseapparater og konfigurere dimensionsværdier for registre](tasks/create-financial-dimensions-pos.md)
+## [Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker](tasks/create-financial-dimensions-retail-channels.md)
+## [Oprette onlinekanaler og definere kanalattributter](tasks/create-online-channel-define-channel-attributes.md)
+## [Oprette POS-rettighedsgrupper](tasks/create-pos-permission-groups.md)
+## [Oprette en visuel POS-profil ](tasks/create-pos-visual-profile-2016-02.md).
+## [Oprette produktpakker til indkøbsordrer](tasks/create-product-packages-purchase-orders.md)
+## [Definere callcenter-kanal og kanalattributter](tasks/define-call-center-channel-channel-attributes.md)
+## [Definere kanalattributter](tasks/define-channel-attributes.md)
+## [Definere kontinuitetsplaner](tasks/define-continuity-schedules.md)
+## [Definere fordelskundeprogrammer](tasks/define-loyalty-programs.md)
+## [Definere bonuspoint for fordelskunde](tasks/define-loyalty-reward-points.md)
+## [Definere fordelskundeplaner](tasks/define-loyalty-schemes.md)
+## [Designe relationerne mellem organisationsenheder](tasks/design-relationships-between-organizational-units.md)
+## [Administrere sortimenter ](tasks/manage-assortments-2016-11.md)
+## [Parameterkonfigurationer for detailopgørelser](tasks/parameter-configurations-retail-statements.md)
+## [Betalingskonfigurationer for detailopgørelser](tasks/payment-configurations-retail-statements.md)
+## [Udføre selvbetjening for at downloade hardwarestation](tasks/perform-self-service-download-hardware-station.md)
+## [Bogføre onlinesalg og -betalinger](tasks/posting-online-sales-payments.md)
+## [Behandle reguleringer for kundefordelsbonuspoint](tasks/process-loyalty-reward-point-adjustments.md)
+## [Skubbe produkter fra distributionscenter til butik ved hjælp af centraliseret indkøb](tasks/push-products-distribution-center-store-buyers-push.md)
+## [Detailprisjusteringer](tasks/retail-price-adjustments.md)
+## [Konfigurere og køre et job for at beregne opgørelser](tasks/run-job-calculate-statements.md)
+## [Konfigurere og køre et job for at bogføre opgørelser](tasks/run-job-post-statements.md)
+## [Generere og køre brugsklare rapporter](tasks/run-out-box-reports.md)
+## [Konfigurere regler og parametre for cross-docking og centraliseret indkøb](tasks/set-up-rules-parameters-cross-docking-buyers-push.md)
+## [Gemme konfigurationer for detailopgørelser](tasks/store-configurations-retail-statements.md)
+## [Bruge et kontinuitetsprogram](tasks/use-continuity-program.md)
+## [Konfigurere en arbejder](tasks/worker.md)
 
 # [Detailudvikling og -administration](dev-itpro/dev-retail-home-page.md)
 
@@ -171,10 +179,10 @@
 ### [Detailkanalperformance i Power BI-indhold](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Installation og hotfixes
-### [Konfiguration og installation af skalaenhed til detailbutikker](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Detailbutikssystem, før du går i gang](dev-itpro/retail-store-system-begin.md)
+### [Oversigt over skalaenhed til detailbutikker](dev-itpro/retail-store-system-begin.md)
+#### [Konfiguration og installation af skalaenhed til detailbutikker](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Administrere detailkonti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
+#### [Administrere Retail-konti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
 #### [Enhedsaktivering for Retail POS](dev-itpro/retail-device-activation.md)
 #### [Sikker Retail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration og installation af Retail Hardware Station](retail-hardware-station-configuration-installation.md)
@@ -183,11 +191,12 @@
 ### [Anvend en installerbar pakke](../dev-itpro/deployment/apply-deployable-package-system.md)
 
 ## Opgradering og N-1 support
-### [Oversigt over opgradering og N-1-support](dev-itpro/overview-upgrade-n-minus1.md)
-### [Installer N-1-komponenter](dev-itpro/n-1-installation-configuration.md)
+### [Oversigt over understøttelse af opgradering og N-1](dev-itpro/overview-upgrade-n-minus1.md)
+### [Installere N-1-komponenter](dev-itpro/n-1-installation-configuration.md)
 
 ## Miljøkonfiguration
-### [Administrere Bing Maps](dev-itpro/manage-bing-maps.md)
+### [Føje links til din organisations juridiske begreber og erklæring om beskyttelse af personlige oplysninger](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Administrere Bing Kort](dev-itpro/manage-bing-maps.md)
 
 ## Udvidelsesmuligheder
 ### POS
@@ -197,6 +206,7 @@
 #### [Udvidelse af MPOS- og Cloud POS-udløser](dev-itpro/modern-pos-trigger-extensibility.md)
 #### [Føje et brugerdefineret kontrolelement til en POS-visning](dev-itpro/pos-custom-control.md)
 #### [Udvidelse af POS-betaling](dev-itpro/pos-payment-extension.md)
+#### [Understøttelse af eksterne gavekort](dev-itpro/gift-card.md)
 ### [Oprette en app for detailoplevelser](dev-itpro/create-retail-experience-app.md)
 ### [Oversigt og udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md)
 
@@ -230,10 +240,16 @@
 ### [Prøver på udvidelsesmuligheder til Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Kasseapparater for Sverige](localizations/emea-swe-cash-registers.md)
 ### [Prøve på Retail POS-integration med kontrolenheder for Sverige](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Kasseapparater for Norge](localizations/emea-nor-cash-registers.md)
+### [Retningslinjer for installation af kasseapparater for Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK-pakker](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Retail SDK-prøver ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [Retail SDK-prøver](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Udvidelser til kanaldatabase (DB)](dev-itpro/channel-db-extensions.md)
 ### [CDX-udvidelsesmuligheder](dev-itpro/cdx-extensibility.md)
+### [Ordreattributter](dev-itpro/order-attributes.md)
+### [Debitorattributter](dev-itpro/customer-attributes.md)
+### [Retail Typescript og C#-proxy](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce Runtime
 ### [Loyalitetsudvidelse](dev-itpro/retail-sdk/loyalty-extension-sample.md)
