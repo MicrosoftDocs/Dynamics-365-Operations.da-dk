@@ -3,7 +3,7 @@ title: "Initialisere lagerbeholdninger på lagerstedet"
 description: "Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret manuelt ved hjælp af en lagerbevægelseskladden."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,45 +17,45 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45c93febbbc4ea78fe2b87735ed96fd773605d96
+ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
+ms.openlocfilehash: 3b4685b034f7e6a3af0259fb921230e7b3397754
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
-# Initialisere lagerbeholdninger på lagerstedet
+# <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="91bc5-103">Initialisere lagerbeholdninger på lagerstedet</span><span class="sxs-lookup"><span data-stu-id="91bc5-103">Initialize stock levels in the warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret manuelt ved hjælp af en lagerbevægelseskladden. (Det er også muligt at opdatere den disponible lagerbeholdning ved at importere posteringer i dataenheder). Du kan køre denne guide i demodatafirmaet USMF, hvor alle de nødvendige komponenter som kladdenavn, vareopsætning, posteringsprofiler og konti er tilgængelige. Guiden foreslår specifikke værdier for varen og dimensionerne, der bruges. Hvis du vælger et andet element, skal du indtaste værdier for forskellige dimensioner.
+<span data-ttu-id="91bc5-104">Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret manuelt ved hjælp af en lagerbevægelseskladden.</span><span class="sxs-lookup"><span data-stu-id="91bc5-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="91bc5-105">(Det er også muligt at opdatere den disponible lagerbeholdning ved at importere posteringer i dataenheder). Du kan køre denne guide i demodatafirmaet USMF, hvor alle de nødvendige komponenter som kladdenavn, vareopsætning, posteringsprofiler og konti er tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="91bc5-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="91bc5-106">Guiden foreslår specifikke værdier for varen og dimensionerne, der bruges.</span><span class="sxs-lookup"><span data-stu-id="91bc5-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="91bc5-107">Hvis du vælger et andet element, skal du indtaste værdier for forskellige dimensioner.</span><span class="sxs-lookup"><span data-stu-id="91bc5-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 
-1. Gå til Lagerstyring > Kladdeposteringer > Elementer > Bevægelser.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Navn for at åbne opslaget.
-4. Vælg IMov.
-    * Det er en god ide at bruge forskellige journalnavnskabeloner for de forskellige forretningsmæssige formål.  
-5. Klik op linket i den valgte række på listen.
-6. I feltet Modkonto skal du angive værdien "140200".
-    * Dette er den modkonto, der skal være standardkontoen på kladdelinjerne. Det er muligt at tilsidesætte standardindstillingerne for at tildele forskellige modkonti pr. linje.  
-7. Klik på OK.
-8. Klik på Ny.
-9. Klik på rullelisten i feltet Varenummer for at åbne opslaget.
-10. Vælg vare A0001.
-11. Klik op linket i den valgte række på listen.
-12. Klik på fanen Lagerdimensioner.
-13. Klik på rullelisten i feltet Sted for at åbne opslaget.
-14. Vælg sted 1.
-15. Klik på rullelisten i feltet Lagersted for at åbne opslaget.
-16. Vælg lagersted 13.
-17. Klik op linket i den valgte række på listen.
-18. Klik på rullelisten i feltet Lokation for at åbne opslaget.
-19. Vælg lokalitet 13.
-20. Angiv et tal i feltet Antal.
-21. Klik på Gem.
-22. Klik på Bogfør.
-23. Markér eller fjern markeringen af afkrydsningsfeltet Overfør alle posteringsfejl til en ny kladde.
-    * Hvis du aktiverer denne indstilling, kopieres alle linjer, der ikke kan bogføres, til en ny journal. Du kan bruge oplysningerne i logfilen til at løse problemerne og derefter bogføre linjerne igen.  
-24. Klik på OK.
-25. Luk siden.
-26. Luk siden.
+1. <span data-ttu-id="91bc5-108">Gå til Lagerstyring > Kladdeposteringer > Elementer > Bevægelser.</span><span class="sxs-lookup"><span data-stu-id="91bc5-108">Go to Inventory management > Journal entries > Items > Movement.</span></span>
+2. <span data-ttu-id="91bc5-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="91bc5-109">Click New.</span></span>
+3. <span data-ttu-id="91bc5-110">Klik på rullelisten i feltet Navn for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="91bc5-110">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="91bc5-111">Vælg IMov.</span><span class="sxs-lookup"><span data-stu-id="91bc5-111">Select IMov.</span></span>
+    * <span data-ttu-id="91bc5-112">Det er en god ide at bruge forskellige journalnavnskabeloner for de forskellige forretningsmæssige formål.</span><span class="sxs-lookup"><span data-stu-id="91bc5-112">It’s a good practice to use different journal name templates for the different business purposes.</span></span>  
+5. <span data-ttu-id="91bc5-113">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="91bc5-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="91bc5-114">I feltet Modkonto skal du angive værdien "140200".</span><span class="sxs-lookup"><span data-stu-id="91bc5-114">In the Offset account field, specify the values '140200'.</span></span>
+    * <span data-ttu-id="91bc5-115">Dette er den modkonto, der skal være standardkontoen på kladdelinjerne.</span><span class="sxs-lookup"><span data-stu-id="91bc5-115">This is the offset account that will be the default account on the journal lines.</span></span> <span data-ttu-id="91bc5-116">Det er muligt at tilsidesætte standardindstillingerne for at tildele forskellige modkonti pr. linje.</span><span class="sxs-lookup"><span data-stu-id="91bc5-116">It’s possible to override the default to assign different offset accounts per line.</span></span>  
+7. <span data-ttu-id="91bc5-117">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="91bc5-117">Click OK.</span></span>
+8. <span data-ttu-id="91bc5-118">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="91bc5-118">Click New.</span></span>
+9. <span data-ttu-id="91bc5-119">Klik på rullelisten i feltet Varenummer for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="91bc5-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="91bc5-120">Vælg vare A0001.</span><span class="sxs-lookup"><span data-stu-id="91bc5-120">Select item A0001.</span></span>
+11. <span data-ttu-id="91bc5-121">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="91bc5-121">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="91bc5-122">Klik på fanen Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="91bc5-122">Click the Inventory dimensions tab.</span></span>
+13. <span data-ttu-id="91bc5-123">Klik på rullelisten i feltet Sted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="91bc5-123">In the Site field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="91bc5-124">Vælg sted 1.</span><span class="sxs-lookup"><span data-stu-id="91bc5-124">Select site 1.</span></span>
+15. <span data-ttu-id="91bc5-125">Klik på rullelisten i feltet Lagersted for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="91bc5-125">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="91bc5-126">Vælg lagersted 13.</span><span class="sxs-lookup"><span data-stu-id="91bc5-126">Select warehouse 13.</span></span>
+17. <span data-ttu-id="91bc5-127">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="91bc5-127">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="91bc5-128">Klik på rullelisten i feltet Lokation for at åbne opslaget.</span><span class="sxs-lookup"><span data-stu-id="91bc5-128">In the Location field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="91bc5-129">Vælg lokalitet 13.</span><span class="sxs-lookup"><span data-stu-id="91bc5-129">Select location 13.</span></span>
+20. <span data-ttu-id="91bc5-130">Angiv et tal i feltet Antal.</span><span class="sxs-lookup"><span data-stu-id="91bc5-130">In the Quantity field, enter a number.</span></span>
+21. <span data-ttu-id="91bc5-131">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="91bc5-131">Click Save.</span></span>
+22. <span data-ttu-id="91bc5-132">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="91bc5-132">Click Post.</span></span>
+23. <span data-ttu-id="91bc5-133">Markér eller fjern markeringen af afkrydsningsfeltet Overfør alle posteringsfejl til en ny kladde.</span><span class="sxs-lookup"><span data-stu-id="91bc5-133">Check or uncheck the Transfer all posting errors to a new journal check box.</span></span>
+    * <span data-ttu-id="91bc5-134">Hvis du aktiverer denne indstilling, kopieres alle linjer, der ikke kan bogføres, til en ny journal.</span><span class="sxs-lookup"><span data-stu-id="91bc5-134">If you enable this option, any lines that fail to post will be copied to a new journal.</span></span> <span data-ttu-id="91bc5-135">Du kan bruge oplysningerne i logfilen til at løse problemerne og derefter bogføre linjerne igen.</span><span class="sxs-lookup"><span data-stu-id="91bc5-135">You can use the information in the log to correct the issues and then re-post the lines.</span></span>  
+24. <span data-ttu-id="91bc5-136">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="91bc5-136">Click OK.</span></span>
+25. <span data-ttu-id="91bc5-137">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="91bc5-137">Close the page.</span></span>
+26. <span data-ttu-id="91bc5-138">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="91bc5-138">Close the page.</span></span>
 
