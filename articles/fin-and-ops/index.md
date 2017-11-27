@@ -3,7 +3,7 @@ title: Dokumentation til Microsoft Dynamics 365 for Finance and Operations, Ente
 description: Dokumentation til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/13/2017
 
 ---
 
@@ -67,7 +67,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 
 <h3><a href="../supply-chain/index.md">Supply Chain Management</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Lagerstyring</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Varedisponering</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Indkøb og forsyning</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Administration af produktoplysninger</a></p>
@@ -88,7 +88,10 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Udvikling</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Udvidelsesmuligheder</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Datastyring og -integration</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Dataintegration</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Datastyring</a></p>
+
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Fortløbende levering</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobilplatform</a></p>
@@ -97,8 +100,8 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Installation</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Opgradering</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Servicering</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Datastyring</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicering</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data Management Framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organisationsadministration</a></p>
 </td>

@@ -3,14 +3,14 @@ title: Startside for Kontant- og bankstyring
 description: "Du kan bruge Kontant- og bankstyring til at vedligeholde den juridiske enheds bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/21/2017
+ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 82a2be9d6058a1c3394bb8269774772793333541
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8b060d8ef5bd7e7358df666c5e17cc5d9aac944a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -84,15 +84,15 @@ Disse instrumenter omfatter indbetalingsbilag, checks, veksler og egenveksler. D
 
 ### <a name="additional-resources"></a>Yderligere ressourcer
 
-#### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
+#### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
+Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
 
 #### <a name="blogs"></a>Blogs
 
 Du kan finde meninger, nyheder og andre oplysninger om Likviditets-og bankstyring og andre løsninger på [Microsoft Dynamics 365 blog] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Der er mange opslag om Likviditets- og bankstyring i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Likviditets- og bankstyring, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
+Der er mange opslag om Likviditets- og bankstyring i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Likviditets- og bankstyring, gælder de samme begreber stadig, og der findes også tilsvarende procedurer i den aktuelle version.
 
 [Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
 

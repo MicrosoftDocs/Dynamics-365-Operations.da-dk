@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b53f95a55e66f7df4f7b3b85dd0dee2047019439
-ms.openlocfilehash: f0f601b2cf66daf0d7d3175bc78938e13aa6cd19
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 35b574e24e721e80ca1469878697aba4c1699dff
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -73,8 +73,8 @@ Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du er ansvarlig for
 - [Udvikling og administration til Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
-### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
-Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.
+### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
+Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.
 
 ### <a name="blogs"></a>Blogs
 Du kan finde meninger, nyheder og andre oplysninger om Retail og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog).
