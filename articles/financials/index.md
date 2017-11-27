@@ -25,22 +25,22 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Startside for økonomistyring
+# <a name="financial-management-home-page"></a><span data-ttu-id="186a1-103">Startside for økonomistyring</span><span class="sxs-lookup"><span data-stu-id="186a1-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
+<span data-ttu-id="186a1-104">Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="186a1-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Vælg et funktionsområde, du vil vide mere om.
-- [Kreditor](accounts-payable\accounts-payable.md) 
-- [Debitor](accounts-receivable\accounts-receivable.md) 
-- [Kontant- og bankstyring](cash-bank-management\cash-bank-management.md)
-- [Omkostningsregnskab](cost-accounting\cost-accounting-home-page.md)
-- [Anlægsaktiver](fixed-assets\fixed-assets.md)
-- [Finans](general-ledger\general-ledger.md) 
-- [Projektstyring](project-management\overview-project-management-accounting.md)
-- [Offentlig sektor](public-sector\public-sector-functionality.md) 
-- [Budgettering](budgeting\budgeting-overview.md) 
+<span data-ttu-id="186a1-105">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="186a1-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="186a1-106">Kreditor</span><span class="sxs-lookup"><span data-stu-id="186a1-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="186a1-107">Debitor</span><span class="sxs-lookup"><span data-stu-id="186a1-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="186a1-108">Kontant- og bankstyring</span><span class="sxs-lookup"><span data-stu-id="186a1-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="186a1-109">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="186a1-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="186a1-110">Anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="186a1-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="186a1-111">Finans</span><span class="sxs-lookup"><span data-stu-id="186a1-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="186a1-112">Projektstyring</span><span class="sxs-lookup"><span data-stu-id="186a1-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="186a1-113">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="186a1-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="186a1-114">Budgettering</span><span class="sxs-lookup"><span data-stu-id="186a1-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 
