@@ -3,7 +3,7 @@ title: Projektstyring og regnskab
 description: "Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -228,7 +228,7 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <tbody>
 <tr class="odd">
 <td>Samlet omkostning – faktisk</td>
-<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne til færdiggørelse af projektet. Typisk spores status for omkostninger ikke baseret på eksempelvis antallet af hotelophold og måltider, der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
+<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne, der er forbundet med færdiggørelsen af projektet. Sporing af status for omkostninger er f.eks. typisk ikke baseret på, hvor mange hotelovernatninger og måltider der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
 </tr>
 <tr class="even">
 <td>Samlet budget – faktisk</td>
@@ -243,11 +243,11 @@ Finance and Operations reducerer ikke automatisk de budgetterede skøn. Der er d
 > </tr>
 <tr class="odd">
 <td>Resterende budget</td>
-<td>Denne metode bruger en resterende budgetmodel til at beregne færdiggørelsesomkostningerne for projektet. Når du bruger denne metode, lægges de faktiske omkostninger og de budgetterede beløb i den resterende budgetmodel sammen. Resultatet er samlede omkostninger. Før du bruger denne metode, skal du oprette en resterende budgetmodel for at fratrække posteringer, der er baseret på de faktiske posteringer, som er registreret i systemet. På siden <strong>Budgetmodeller</strong> skal du kontrollere, at felterne er markeret i gruppen <strong>Automatisk prognosereduktion</strong>. Typisk kopieres et resterende budget fra et oprindeligt budget. Når posteringerne indtastes, reduceres posteringerne i det resterende budget. Som projektet skrider frem, kan du trække budgetposteringer på det resterende budget, hvis du finder ud af, at det resterende budget skal justeres. <strong>Bemærk!</strong> Denne metode kan kun anvendes, hvis der er knyttet en budgetmodel til estimatet.</td>
+<td>Denne metode bruger en resterende budgetmodel til at beregne færdiggørelsesomkostningerne for projektet. Når du bruger denne metode, lægges de faktiske omkostninger og de budgetterede beløb i den resterende budgetmodel sammen. Resultatet er de samlede omkostninger. Før du bruger denne metode, skal du oprette en resterende budgetmodel for at fratrække posteringer, der er baseret på de faktiske posteringer, som er registreret i systemet. På siden <strong>Budgetmodeller</strong> skal du kontrollere, at felterne er markeret i gruppen <strong>Automatisk prognosereduktion</strong>. Typisk kopieres et resterende budget fra et oprindeligt budget. Når posteringerne indtastes, reduceres posteringerne i det resterende budget. Som projektet skrider frem, kan du trække budgetposteringer på det resterende budget, hvis du finder ud af, at det resterende budget skal justeres. <strong>Bemærk!</strong> Denne metode kan kun anvendes, hvis der er knyttet en budgetmodel til estimatet.</td>
 </tr>
 <tr class="even">
 <td>Som forrige estimat</td>
-<td>Der anvendes samme estimatmetode, som den der blev anvendt i forrige periode. Denne metode kræver en budgetmodel, hvis den forrige periode krævede en budgetmodel.</td>
+<td>Der anvendes den samme vurderingsmetode, som blev brugt i den foregående periode. Denne metode kræver en budgetmodel, hvis der kræves en budgetmodel for den forrige periode.</td>
 </tr>
 <tr class="odd">
 <td>Sæt færdiggørelsesomkostninger til nul</td>

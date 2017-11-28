@@ -3,7 +3,7 @@ title: "Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer"
 description: "Denne fremgangsmåde viser, hvordan du opretter en simpel lokalitetsvejledning."
 author: BibiSp
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurere en lokationsvejledning til vareplacering for indkøbsordrer
@@ -61,7 +61,7 @@ Denne fremgangsmåde viser, hvordan du opretter en simpel lokalitetsvejledning. 
 4. Skriv en værdi i feltet Enhed.
     * Den enhed, som Fra antal og Til antal udtrykkes i. Hvis du lader feltet stå tomt, bruges lagerenheden fra varen.  
 5. Vælg en indstilling i feltet Angiv lokalitet for antal.
-    * Ingen, eller nummerpladeantal: Den mængde, der er registreret på hver nummerplade. Enhedsopdelt antal: Hele den mængde, der er blevet registreret. Resterende antal: Den mængde, der er endnu ikke er registreret fra indkøbsordrelinjen. Forventet mængde: Den samlede mængde, der er angivet på indkøbsordrelinjen.  
+    * Ingen eller nummerpladeantal: Den mængde, der er registreret på hver nummerplade. Enhedsopdelt antal: Hele den mængde, der er blevet registreret. Resterende antal: Den mængde, der er endnu ikke er registreret fra indkøbsordrelinjen. Forventet mængde: Den samlede mængde, der er angivet på indkøbsordrelinjen.  
 6. Markér eller fjern markeringen af afkrydsningsfeltet Begræns efter enhed.
     * Hvis du vælger denne indstilling og angiver enheden på siden Begræns efter enhed, kan kun varer med denne måleenhed placeres på lokaliteten. Hvis måleenheden f.eks. er PL (paller), kan kun elementer på paller placeres på en bestemt lokalitet.  
 7. Markér eller fjern markeringen af afkrydsningsfeltet Tillad opdeling.

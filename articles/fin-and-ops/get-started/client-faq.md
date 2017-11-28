@@ -3,14 +3,14 @@ title: "Ofte stillede spørgsmål til Finance and Operations-klient"
 description: "Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Finance and Operations-klienten."
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 658d5a1a031f2292dbd445fa7fb345be01c61947
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -43,7 +43,7 @@ Sikkerhedsindstillingerne i din browser kan forhindre, at symbolerne indlæses k
 ## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Jeg savner båndet fra Dynamics AX 2012. Kan jeg lade faner i handlingsruden være åbne hele tiden?
 Vi planlægger at implementere denne funktion snart. Brugerne vil herefter kunne vælge at beholde fanerne i Handlingsruder åbne hele tiden. Ellers skjules fanerne, når de ikke bruges, for at give mere skærmplads til siden.
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Hvorfor kan jeg nogle gange se forskellige genvejsmenuer når jeg højreklikker?
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-right-click"></a>Hvorfor kan jeg nogle gange se forskellige genvejsmenuer, når jeg højreklikker?
 Hvis du højreklikker på et redigerbart felt (eller hvis tekst er markeret), vises genvejsmenuen i browseren. Denne menu giver dig adgang til kommandoerne **Klip**, **Kopiér** og **Sæt ind** kommandoer. Vi kan ikke integrere disse kommandoer i genvejsmenuer i Finance and Operations af sikkerhedsmæssige årsager, da browsere ikke giver os mulighed for automatisk at få adgang til systemets Udklipsholder.
 
 Hvis du højreklikker på en feltetiket eller værdien af et skrivebeskyttet kontrolelement, vises genvejsmenuen Finance and Operations.

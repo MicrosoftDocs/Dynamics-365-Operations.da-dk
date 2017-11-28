@@ -1,9 +1,9 @@
 ---
 title: Definere og vedligeholde detailkanaler
-description: "Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik."
+description: "Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik."
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 700b8868a68be7f0172202d737b4f1ae9813ecf3
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: b6dd6d929d771e0b1fc2604b90a2a1522447e168
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](includes/banner.md)]
 
 
-Denne artikel indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
+Dette emne indeholder en oversigt over processen for opsætning af fysiske butikker, som kaldes detailbutikker i Microsoft Dynamics 365 for Retail. Den indeholder oplysninger om de opgaver, du skal udføre, både før og efter du har oprettet en detailbutik.
 
 Dynamics 365 for Retail understøtter flere detailkanaler, f.eks. onlinebutikker, callcentre og fysiske butikker. En fysisk butik kaldes en detailbutik. Hver detailbutik kan have sine egne betalingsmetoder, prisgrupper, POS-kasseapparater, indtægtskonti og udgiftskonti samt medarbejdere. Du skal oprette alle disse elementer for en detailbutik, før du opretter den. Når du har oprettet detailbutikken, kan du tildele de produkter, som skal føres i denne butik. Du skal også knytte medarbejdere, kasseapparater og kunder til butikken. Endelig kan føje den nye butik til et organisationshierarki.
 

@@ -1,9 +1,9 @@
 ---
 title: Styklister og formler
-description: "Denne artikel indeholder oplysninger om styklister og formler, som er en central del af definitionen af produkter og produktvarianter. Styklister og formler angiver de nødvendige materialer eller ingredienser for et bestemt produkt. Formler angiver også samprodukter og biprodukter, der modtages i forbindelse med den specifikke produktion."
+description: Dette emne indeholder oplysninger om styklister og formler, som er en central del af definitionen af produkter og produktvarianter.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel indeholder oplysninger om styklister og formler, som er en central del af definitionen af produkter og produktvarianter. Styklister og formler angiver de nødvendige materialer eller ingredienser for et bestemt produkt. Formler angiver også samprodukter og biprodukter, der modtages i forbindelse med den specifikke produktion. 
+Dette emne indeholder oplysninger om styklister og formler, som er en central del af definitionen af produkter og produktvarianter. Styklister og formler angiver de nødvendige materialer eller ingredienser for et bestemt produkt. Formler angiver også samprodukter og biprodukter, der modtages i forbindelse med den specifikke produktion. 
 
 <a name="bills-of-materials"></a>Styklister
 ------------------
@@ -62,7 +62,7 @@ I produktets levetid kan mange typer styklister oprettes af forskellige årsager
 -   **Teknikerstykliste** – Denne stykliste anvendes typisk, når du designer produkter, der er baseret på eksisterende produktporteføljer. Teknikerstyklister er struktureret til at forenkle designprocessen og gruppere komplekse produkter i teknikermoduler. Til enkle produkter kan det være muligt at oprette tekniske styklister for den faktiske produktionsproces. For andre produkter skal den tekniske styklisten imidlertid konverteres til en faktisk produktionsstykliste. Tekniske stykliste er typisk repræsenteret af fantomstyklister i styklistehierarkiet. Selvom tekniske styklister kan bruges til planlægning og udførelse af produktionsoperationer, kan denne fremgangsmåde føre til ineffektivitet, især i gentagne operationer hvor mange ordrer oprettes.
 -   **Planlægning af styklisten** – Denne stykliste bruges til at udføre planlægning af materialebehov. Behovet for komponenter og ingredienser beregnes ud fra behovet for de færdige produkter. Ligesom efterkalkulation af styklister kan planlægning af styklister repræsentere en bestemt blanding af materialer, der bruges i en periode.
 -   **Produktionsstykliste** – Dette er den faktiske stykliste, der bruges til en bestemt produktion. En produktionsstykliste skal medregne faktiske ressourcer, der bruges til at fremstille produktet. Når der oprettes en produktionsordre, en batchordre eller en kanban, er styklistens niveauer, der er repræsenteret af fantomstyklister, skjult på ét niveau og fordelt over operationer for ordren.
--   **Efterkalkulationsstykliste** Den pris, der bruges til at beregne den forkalkulerede omkostning for et produkt. Du kan f.eks. bruge en efterkalkulationsstykliste, når standardomkostning bruges eller den forkalkulerede, planlagte omkostning for et givent produkt beregnes. Efterkalkulationsstyklister kan referere til en bestemt blanding af materialer og ressourcer, som forventes at blive brugt. Du kan derfor bruge efterkalkulationsstykliste til at oprette en repræsentativ forkalkuleret omkostning i en periode og undgå afvigelser over tid.
+-   **Efterkalkulationsstykliste** – Denne stykliste bruges til at beregne den forkalkulerede omkostning for et produkt. Du kan f.eks. bruge en efterkalkulationsstykliste, når standardomkostning bruges eller den forkalkulerede, planlagte omkostning for et givent produkt beregnes. Efterkalkulationsstyklister kan referere til en bestemt blanding af materialer og ressourcer, som forventes at blive brugt. Du kan derfor bruge efterkalkulationsstykliste til at oprette en repræsentativ forkalkuleret omkostning i en periode og undgå afvigelser over tid.
 
 Hvilke typer af styklisten, der faktisk anvendes i en implementering, afhænger af gennemførelsen og også af de forretningsmæssige scenarier og krav. I enkle implementeringer kan en planlægningsstykliste, produktionsstykliste og efterkalkulationsstykliste modelleres som én stykliste. I miljøer, der har hyppige tekniske ændringer og flere alternative ruter, er et større udvalg af styklistetyper sandsynligvis nødvendigt.
 

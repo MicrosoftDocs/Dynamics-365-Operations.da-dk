@@ -1,9 +1,9 @@
 ---
 title: Glidende gennemsnit
-description: 
+description: "Glidende gennemsnit er en permanent kalkulationsmetode baseret på gennemsnitsprincippet, hvor omkostninger på lagerafgange ikke ændres, når indkøbsprisen ændres. Differencen er aktiveret og baseret på en proportional beregning. Det beløb, der er tilbage, udgiftsføres."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Glidende gennemsnit er en permanent kalkulationsmetode baseret på gennemsnitsprincippet, hvor omkostninger på lagerafgange ikke ændres, når indkøbsprisen ændres. Differencen er aktiveret og baseret på en proportional beregning. Det beløb, der er tilbage, udgiftsføres. 
+
+Når du bruger et glidende gennemsnit, understøttes lagerudligninger og lagermarkering ikke. Lukning af lageret påvirker ikke produkter, der har et glidende gennemsnit som lagermodelgruppe, og det genererer ikke nogen udligninger mellem transaktionerne.
 
 Følgende er forudsætningerne for at bruge glidende gennemsnitskostpriser som en kalkulationsmetode.
+
 1.  På siden **Varemodelgrupper** skal du konfigurere en varemodelgruppe, hvor Glidende gennemsnit er valgt i feltet **Lagermodel**. **Bemærk!** Når Glidende gennemsnit er valgt, er felterne **Bogfør fysisk varelager** og **Bogfør økonomisk varelager** som standard også markeret. 
 
 2.  På siden **Bogføring** skal du tildele konti til kontiene **Prisdifference for glidende gennemsnit** og **Omkostningsværdiregulering for glidende gennemsnit** under fanen **Lager**. Du kan bruge kontoen **Prisdifference for glidende gennemsnit**, når omkostningen, der skal være forholdsmæssigt udgiftsført. Dette sker på grund af en difference i omkostningen mellem en købskvittering og købsfakturaen og på grund af en difference mellem det oprindelige lagerantal og den aktuelle beholdning. Brug kontoen **Omkostningsværdiregulering for glidende gennemsnit**, når du vil justere den glidende gennemsnitskostpris for et produkt til en ny enhedspris.

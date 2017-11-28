@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 09/29/2017
 
 Dette emne indeholder oplysninger om generering af en økonomisk rapport. 
 
-Åbn den ønskede rapportdefinition for at generere en rapport, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
-| ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Bemærk")**Bemærk**        |
-|------------------------------------------------------------------------------------------------|
-| Du kan kun generere rapporter til mapper og placeringer, som du har tilladelse til at åbne. |
+Åbn den ønskede rapportdefinition for at generere en rapport, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i webfremviseren.
+
+> [!NOTE]
+> Du kan kun generere rapporter til mapper og placeringer, som du har tilladelse til at åbne.
 
 I følgende tabel beskrives de indstillinger, der er tilgængelige for generering af rapporter.
 
@@ -50,10 +50,11 @@ Når du genererer en rapport, bruges de indstillinger, du har angivet under fane
 ## <a name="schedule-report-generation"></a>Planlæg rapportgenerering
 Mange virksomheder har et grundlæggende sæt af rapporter, der køres med planlagte intervaller, så de justeres med deres virksomhedsprocesser. Du kan planlægge en rapport, der skal genereres regelmæssigt, f.eks. dagligt, ugentligt, månedligt eller årligt. Dette kan være en enkelt rapport eller en gruppe af rapporter, der indeholder flere virksomheder. Du skal indtaste dine legitimationsoplysninger for hvert firma, der er angivet, som f.eks. dem, der er i en trædiagramdefinition. Hvis legitimationsoplysningerne ikke er gyldige, viser rapporten kun de oplysninger, du har adgang til, f.eks. den virksomhed, som du er logget på, på tidspunktet. Outputoplysninger læses først fra rapportgruppen og derefter fra de enkelte rapporter.
 
-Efterhånden som rapporttidsplaner oprettes og gemmes, vises de i navigationsruden under Rapporttidsplaner. Du kan oprette mapper til at organisere rapporterne. Hvis en enkelt rapport i en tidsplan ikke kører, fortsætter alle andre rapporter med at køre.
-| ![Vigtigt](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Vigtigt")**Vigtigt**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Du skal have rollen som designer eller administrator for at oprette, redigere eller slette rapporttidsplaner. Når du kører en rapport, bruges legitimationsoplysningerne for den bruger, der oprettede tidsplanen, til at generere rapporten. |
+Efterhånden som rapporttidsplaner oprettes og gemmes, vises de i navigationsruden under Rapporttidsplaner. Du kan oprette mapper til at organisere rapporterne. Selvom en enkelt rapport i en tidsplan ikke køres, fortsætter alle andre rapporter med at køre.
+
+> [!IMPORTANT]
+> For at oprette, redigere og slette rapporttidsplaner skal du have en rolle som designer eller administrator. Når du kører en rapport, bruges legitimationsoplysningerne for den bruger, der oprettede tidsplanen, til at generere rapporten.
+
 
 ### <a name="create-a-report-schedule"></a>Opret en ny rapporttidsplan
 
@@ -99,15 +100,16 @@ Du kan fortsætte ved at klikke på knappen Tilladelser i dialogboksen Rapportpl
 ## <a name="missing-account-analysis-feature"></a>Funktion til analyse af manglende konto
 Du kan søge efter finanskonti og økonomiske dimensioner, der kan mangle på tværs af alle rækkedefinitioner, definitioner af rapporteringstræ og rapportdefinitioner i en dokumentkomponentgruppe. Dette er nyttigt, når du opretter eller opdaterer flere konti eller dokumentkomponent i en kort tidsperiode, og du vil kontrollere, at alle nye oplysninger er inkluderet i dine rapporter.
 
-Manglende konti bestemmes ved hjælp af de laveste og højeste værdier fra rækkedefinitionen eller definitionen af rapporteringstræet og derefter vises en liste over firmaer, som ikke er i rækkedefinitionen eller definitionen af rapporteringstræet, men som er i de økonomisk data. Hvis en manglende konto er større end eller mindre end værdierne i rækkedefinitionen, er kontoen ikke medtaget på listen over manglende konti.
-| ![Tip](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Tip")**Tip**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Denne proces skal køres, før du genererer månedlige rapporter, og når du opretter nye dokumentkomponenter med henblik på validering. |
+Manglende konti bestemmes ved hjælp af de laveste og højeste værdier fra rækkedefinitionen eller definitionen af rapporteringstræet og derefter vises en liste over firmaer, som ikke er i rækkedefinitionen eller definitionen af rapporteringstræet, men som er i de økonomisk data. Hvis en manglende konto er højere eller lavere end værdierne i rækkedefinitionen, medtages kontoen ikke i oversigten over manglende konti.
+
+> [!TIP]
+> Af hensyn til valideringen skal denne proces køres, før du genererer månedlige rapporter, og når du opretter nye rapportkomponenter.
 
 Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglende konti. Når det er muligt, kan du bruge intervaller i dokumentkomponenten med nye konti, når de oprettes. Hvis en rapportdefinition er angivet til @ANY-virksomhed, kan du logge på en bestemt virksomhed og køre en manglende kontoanalyse for virksomheden.
-| ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Bemærk")**Bemærk**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hvis der er tilføjet en ny virksomhed, skal du føje den nye virksomhed til rapporteringstræer i eventuelle eksisterende rapporter, ellers medtages virksomheden ikke i manglende kontoanalysen. |
+
+> [!NOTE]
+> Hvis der er tilføjet en ny virksomhed, skal du føje den nye virksomhed til rapporteringstræer i eventuelle eksisterende rapporter, ellers medtages virksomheden ikke i manglende kontoanalysen.
+
 
 ### <a name="run-missing-account-analysis"></a>Kør manglende kontoanalyse
 
@@ -117,11 +119,11 @@ Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglen
 4.  Vælg en indstilling for sortering af resultaterne i feltet Gruppér efter. Du kan sortere resultaterne i henhold til den rapportkomponent, der påvirkes, eller du kan sortere resultaterne efter dimensions- og værdigrupper.
 5.  Gennemse de vist resultater. Når du vælger et element i den øverste rude, vises der yderligere oplysninger om undtagelsen i den nederste rude. Dette omfatter tilknyttede dimensioner, værdier og rapporter.
 6.  For at åbne den pågældende vare skal du klikke på det tilhørende ikon, der vises i listeruden, eller højreklikke på varen og vælge Åbn. Du kan markere flere varer ved at holde Ctrl-tasten nede, mens du markerer varerne i den nederste rude.
-7.  Hvis alle værdier, dokumentkomponenter eller rapporter returneres, som ikke skal indgå i analysen, skal du højreklikke på varen og vælge Udeluk eller markere afkrydsningsfeltet Udeluk ud for varen for at fjerne varen fra listen. Udeladte varer medtages ikke, når listen er blevet opdateret. Du kan at markere flere varer ved at holde Ctrl-tasten nede, mens du markerer varerne i den nederste rude. For at få vist alle varer, herunder de resultater, du tidligere har valgt ikke skulle medtages i analysen, skal du vælge afkrydsningsfeltet Vis udelukkede dokumentkomponenter og værdier og derefter klikke på Opdater.
-8.  Klik på Opdater for at opdatere undtagelser, som du har behandlet. Klik på Ja for at udføre en komplet opdatering af alle resultater, eller klik på Nej for at udføre en delvis opdatering af varer, der er behandlet.
-    | ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Bemærk")**Bemærk**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Formen opdateres automatisk, når den åbnes, medmindre formen er åbnet i de sidste 15 minutter. |
+7.  Hvis alle værdier, dokumentkomponenter eller rapporter returneres, som ikke skal indgå i analysen, skal du højreklikke på varen og vælge Udeluk eller markere afkrydsningsfeltet Udeluk ud for varen for at fjerne varen fra listen. Udeladte varer medtages ikke, når listen er blevet opdateret. Hvis du vil markere flere elementer, skal du holde Ctrl nede, mens du vælger elementer i den nederste rude. Hvis du vil have vist alle elementer, herunder resultater, som du tidligere har valgt at udelade af analysen, skal du markere afkrydsningsfeltet Vis udeladte rapportkomponenter og værdier og klikke på Opdater.
+8.  Klik på Opdater for at opdatere undtagelser, som du har behandlet. Klik på Ja for at bekræfte en fuld opdatering af alle resultater, eller klik på Nej for at udføre en delvis opdatering af behandlede elementer.
+
+    > [!NOTE]
+    > Formularen opdateres automatisk, når den åbnes, medmindre formularen er blevet åbnet inden for de sidste 15 minutter.
 
 9.  Når problemerne er løst, skal du klikke på OK for at lukke dialogboksen.
 

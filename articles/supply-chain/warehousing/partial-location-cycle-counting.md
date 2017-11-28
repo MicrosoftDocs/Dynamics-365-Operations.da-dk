@@ -3,7 +3,7 @@ title: "Delvis cyklusoptælling for sted"
 description: "Cyklusoptællingsplaner guider de faktiske optællingshandlinger. Du kan anmode om, at kun specifikke produkter og produktvarianter optælles i stedet for alle disponible lagerbeholdninger på en lokalitet."
 author: perlynne
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 626b2f9f35b94124168adb7bb09c75a086d38a97
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0e0f9d81f4d5943a89d8ac87776e05acb32cb8d9
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -54,7 +54,7 @@ I dette eksempel skal kun varenummer A0001 optælles på lagersted 61.
 
 1.  Der oprettes en ny arbejdsskabelon for cyklusoptælling. Indstillingen **Arbejdslinjeskift** bruges til at gruppere optællingsarbejdslinjer efter varenummer. Derfor har det cyklusoptællingsarbejde, der oprettes, linjer pr. varenummer. Du kan også gruppere linjerne efter produktvariantnummer.
 2.  Der oprettes en ny cyklusoptællingsplan, der refererer til den nyoprettede arbejdsskabelon. Cyklusoptællingsplanen omfatter alle lokationer på lagersted 61 (forespørgslen **Vælg lokationer**), der har en lagerbeholdning for varenummeret A0001. Valget af bestemte produkter defineres i afsnittet **Produktvalg for cyklusoptælling**.
-3.  Du kan vælge produkter for cyklusoptællingsplaner ved at indstille feltet **Tomme lokationer** til **Udeluk tomme**. Når cyklusoptællingsplanen behandles, oprettes delvis cyklusoptællingsarbejde for varenummer A0001. Den faktiske optællingsproces kan udføres ved hjælp af menupunktet for cyklusoptælling på mobilenheden.
+3.  Du kan vælge produkter til cyklusoptællingsplaner ved at angive feltet **Tomme lokationer** til **Udeluk tomme**. Når cyklusoptællingsplanen behandles, oprettes delvist cyklusoptællingsarbejde for varenummer A0001. Den faktiske optællingsproces kan udføres ved hjælp af menupunktet for cyklusoptælling på mobilenheden.
 
 
 

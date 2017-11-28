@@ -3,7 +3,7 @@ title: Kredit og rykkere i Debitor
 description: "Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62f659d6e4529adce10e6eb2699dfc84a7329143
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 -   Rykkersager – Kolonnerne på listesiden viser oplysninger om sager, der har en sagskategori med sagstypen Rykkere.
 
 > [!NOTE]
-> Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Oplysninger vises kun for debitorer, som der allerede er oprettet et aldersfordelt øjebliksbillede for. De poster, der vises på listesiden, kan yderligere filtreres på følgende måde:
+> Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Der vises kun oplysninger for debitorer, for hvem der allerede er oprettet et aldersfordelt øjebliksbillede. De poster, der vises på listesiden, kan filtreres yderligere på følgende måde:
 <li>En Finance and Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
 <li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
 <li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>

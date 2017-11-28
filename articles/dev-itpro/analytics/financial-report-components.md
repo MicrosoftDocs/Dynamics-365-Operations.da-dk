@@ -1,17 +1,17 @@
 ---
 title: "Komponenter i økonomisk rapport"
 description: "I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I artiklen forklares, hvordan du organiserer og låser komponenter, og hvordan du arbejder med dokumentkomponentgrupper."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I artiklen forklares, hvordan du organiserer og låser komponenter, og hvordan du arbejder med dokumentkomponentgrupper. 
+I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I denne artikel forklares, hvordan du organiserer og låser rapportkomponentgrupper. 
 
-Designfilosofien bag designeren til økonomirapporter er at opdele oplysninger i det mindste komponent eller dokumentkomponent og derefter mixe og matche komponenterne efter behov. Derfor er rapportformateringen adskilt fra de økonomiske data, og du kan ændre designet af en rapport uden at ændre de økonomiske data i Microsoft Dynamics ERP-systemet. Ved hjælp af denne metode med byggesten, kan du kombinere tekst, beløb og beregninger for at producere de rapporter, du har brug for. Desuden fremmer denne fleksibilitet kreativitet ved at gøre det nemt for dig at se dine handlinger på forskellige måder. De enkelte komponenter i en rapportdefinition svarer til et tredimensionalt regneark, men de er mere effektive. En rapportdefinition angiver den rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition, der skal bruges til rapporten. Den indeholder også oplysninger om, hvor rapporten, der genereres, skal gemmes, og hvordan den formateres. For at øge muligheden for genbrug og deling, kan du oprette en komponentgruppe, som er en samling af eksisterende rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og dimensionsopsætninger, der er tilknyttet en virksomhed.
+Designfilosofien bag designeren til økonomirapporter er at opdele oplysninger i det mindste komponent eller dokumentkomponent og derefter mixe og matche komponenterne efter behov. Derfor er rapportformateringen adskilt fra de økonomiske data, og du kan ændre designet af en rapport uden at ændre de økonomiske data i Microsoft Dynamics ERP-systemet. Ved hjælp af denne metode med byggesten, kan du kombinere tekst, beløb og beregninger for at producere de rapporter, du har brug for. Desuden fremmer denne fleksibilitet kreativitet ved at gøre det nemt for dig at se dine handlinger på forskellige måder. De enkelte komponenter i en rapportdefinition svarer til et tredimensionalt regneark, men de er mere effektive. En rapportdefinition angiver den rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition, der skal bruges til rapporten. Den indeholder også oplysninger om, hvor rapporten, der genereres, skal gemmes, og hvordan den formateres. 
 
-## <a name="building-blocks-of-a-report"></a>Komponenter i en rapport
-| Komponent            | Beskrivelse                                                                                                                                                                                                                                                                              | Hvis du vil have flere oplysninger                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Komponenterne i en rapport
+| Komponent            | Betegnelse                     | Hvis du vil have flere oplysninger                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Definition af række            | En rækkedefinition definerer de beskrivende linjer (f.eks. lønninger eller salg) i en rapport. Den viser også de segmentværdier eller dimensioner, der indeholder værdierne for hvert linjeelement og indeholder en rækkeformateringer og beregninger.                                                    | [Rækkedefinitioner](row-definitions-financial-reporting.md)                       |
 | Kolonnedefinition         | En kolonnedefinition definerer den periode, der skal bruges, når data udtrækkes fra de økonomiske dimensioner. Den indeholder også kolonneformatering og beregninger.                                                                                                                                 | [Kolonnedefinitioner](column-definitions-financial-reports.md)         |
 | Rapporteringstrædefinition | En rapporteringstrædefinition ligner et organisationsdiagram. Den indeholder individuelle rapporteringsenheder, der repræsenterer de enkelte bokse i diagrammet. Enhederne, der kan være enkelte afdelinger fra de økonomiske data eller enheder på et højere niveau, der opsummerer data fra andre rapporteringsenheder. | [Rapporteringstrædefinitioner](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Hvis du vil låse en låst komponent op, skal du åbne komponenten og derefter k
 
 ## <a name="building-block-groups"></a>Dokumentkomponentgrupper
 
-Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, du opretter for en rapport. Komponentgrupper er samlinger af de definitioner og dimensionsopsætninger, der er tilknyttet en virksomhed. Komponentgrupper kan være firmaspecifikke, eller flere firmaer kan dele det samme sæt komponenter. Hvis nogle af dine firmaer har en anden kontoplan, kan du evt. bruge en anden komponentgruppe for hvert firma. Alternativt kan du evt. give alle dine individuelle komponenter et navn, der afspejler, hvilket firma de er kompatible med.
-### <a name="create-a-building-block-group"></a>Oprette komponentgruppe
+Komponenter er de rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, du opretter for en rapport. Rapportkomponentgrupper er samlinger af definitioner og dimensionsgrupper. 
 
-1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
-2.  Klik på **Ny** i dialogboksen **Rapportkomponentgrupper**.
-3.  Angiv et entydigt navn og en beskrivelse for komponentgruppen. Hvert felt kan indeholde op til 256 tegn. (Dette tal omfatter mellemrum).
-4.  Klik på **OK** for at oprette den nye komponentgruppe.
 
-### <a name="assign-a-building-block-group"></a>Tildel en komponentgruppe
+### <a name="view-a-building-block-group"></a>Få vist en rapportkomponentgruppe
 
-Når du har en oprettet en komponentgruppe, skal du tildele den til mindst ét firma. Du kan derefter oprette rapport-, række-, kolonne- og rapporteringstrædefinitioner og gemme dem i komponentgruppen. Før du begynder nedenstående procedure, skal du lukke alle komponenter.
-1.  Klik på **Firmaer** i menuen **Firma** i Report Designer.
-2.  Vælg det firma, du vil tildele en rapportkomponentgruppe til, i dialogboksen **Firmaer**.
-3.  Klik på **Rediger**.
-4.  I dialogboksen **Rediger regnskab** i feltet **Komponentgruppe** skal du vælge den komponentgruppe, der skal tildeles virksomheden, eller du kan klikke på **Ny** for at oprette en ny komponentgruppe.
-5.  Klik på **OK** for at tildele komponentgruppen.
-6.  Klik på **Luk** for at lukke dialogboksen **Regnskaber**. Den komponentgruppe, du har valgt, er nu knyttet til virksomheden. Nu er alle nye rækkedefinitioner, kolonnedefinitioner osv., der er blevet oprettet, en del af den komponentgruppe, der er tildelt til denne virksomhed. Du kan også importere en .tdbx-fil eller rapport fra et andet system.
-
-### <a name="view-a-building-block-group"></a>Vise en komponentgruppe
-
-Når en dokumentkomponentgruppe er oprettet og taget i brug, kan du se alle de dokumentkomponenter, der er tildelt til den. Du kan også eksportere eller importere en dokumentkomponentgruppe og udføre yderligere vedligeholdelse på dokumentkomponentgrupper.
-1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
+Du kan få vist alle de rapportkomponenter, der er knyttet til en rapportkomponentgruppe. Du kan også eksportere eller importere en rapportkomponentgruppe.
+1.  Klik på **Rapportkomponentgrupper** i menuen **Firma** i Rapportdesigner.
 2.  I dialogboksen **Komponentgrupper** skal du vælge den komponent, du vil have vist.
 3.  Klik på **Vis** for at åbne dialogboksen **Vis komponentgruppe**, hvor du kan få vist indholdet af komponentgruppen.
 4.  Klik på **Luk** for at lukke dialogboksene.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Gemme en komponentgruppe under et nyt navn
+### <a name="export-a-building-block-group"></a>Eksportere en rapportkomponentgruppe
 
-Du kan gemme en eksisterende komponentgruppe under et nyt navn. Derefter kan du ændre den nye komponentgruppe uden at ændre den oprindelige komponentgruppe.
-1.  Klik på **Rapportkomponentgrupper** i menuen **Firma** i Rapportdesigner.
-2.  I dialogboksen **Komponentgrupper** skal du vælge den komponentgruppe, der skal gemmes, under et nyt navn.
-3.  Klik på **Gem som**.
-4.  Angiv et nyt navn og en beskrivelse for komponentgruppen.
-5.  Klik på **OK**. Den nye komponentgruppe vises i dialogboksen **Komponentgrupper**.
-
-### <a name="export-a-building-block-group"></a>Eksportere en komponentgruppe
-
-Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem komponentgrupper eller Finance and Operations-installationer. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
+Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer af Finance and Operations. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
 2.  Markér den rapportkomponentgruppe, du vil eksportere, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Eksportér**.
 3.  I dialogboksen **Eksportér** skal du vælge de rapportdefinitioner, der skal eksporteres:
@@ -118,7 +94,7 @@ Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i 
 
 ### <a name="import-a-building-block-group"></a>Importere en komponentgruppe
 
-Du kan importere en dokumentkomponentgruppe til en eksisterende dokumentkomponentgruppe, eller du kan oprette en ny dokumentkomponentgruppe til dataene. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionssæt.
+Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentgruppe. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionssæt.
 1.  Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
 2.  Markér den rapportkomponent, du vil importere en rapportkomponentgruppe til, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Importér**.
 3.  Markér den rapportkomponentgruppe, der skal importeres, i dialogboksen **Åbn**, og klik derefter på **Åbn**.

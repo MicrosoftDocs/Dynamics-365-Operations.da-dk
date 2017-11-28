@@ -3,7 +3,7 @@ title: Kompensationsbehandling
 description: "Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 166219b2871a6a0b13e6fd2d15e3c34ab1c041f2
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 671bdea9e58309742424b098abb78522c2a6155e
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -70,7 +70,7 @@ For at få vist resultaterne af processen skal du åbne siden **Procesresultater
 
 Siden **Procesresultater** indeholder oplysninger om proceskørslen, herunder hvornår kørslen fandt sted, den bruger, der har kørt processen, og om der opstod fejl, da processen blev kørt. Du kan også markere indstillingen **Låst** for at deaktivere knappen **Indlæs kompensation** og forhindre andre i at indlæse kompensationshændelser i medarbejderposterne. Hvis du klikker på knappen **Medarbejderresultater** vises en liste over de medarbejdere, der er med i kørslen.
 
-Indstillingen **Medarbejderresultater** viser oplysninger om selve processen samt eventuelle løn-handlinger, der udføres under processen. Sektionen **Fast løn** indeholder en post for hver handling, der er medtaget i proceshændelsen for lønstrukturen. Kolonnerne **Aktuelt tillæg** og **Anbefaling** vises flere oplysninger om den handling, der er valgt i sektionen **Fast løn**. Hvis **Aktiver anbefalinger** var markeret for handlingen, kan Anbefalet-felterne redigeres. Derved kunne du manuelt justere beløbene for medarbejderen. Bemærk, at hvis du har markeret **Brug tidligere resultat** for handlingen i proceshændelsen, skal du manuelt opdatere beløbene for eventuelle afhængige handlinger.
+Indstillingen **Medarbejderresultater** viser oplysninger om selve processen samt eventuelle løn-handlinger, der udføres under processen. Sektionen **Fast løn** indeholder en post for hver handling, der er medtaget i proceshændelsen for lønstrukturen. Kolonnerne **Aktuel retningslinje** og **Anbefaling** viser flere oplysninger om den handling, der er valgt i sektionen **Fast løn**. Hvis **Aktiver anbefalinger** var markeret for handlingen, kan Anbefalet-felterne redigeres. Derved kunne du manuelt justere beløbene for medarbejderen. Bemærk, at hvis du har markeret **Brug tidligere resultat** for handlingen i proceshændelsen, skal du manuelt opdatere beløbene for eventuelle afhængige handlinger.
 
 Når du har gennemset kompensationsbeløbene for en medarbejder, og du har foretaget eventuelle ændringer i de anbefalede værdier, kan du ændre **Status** på **Medarbejderhændelse**-linjen for at angive, om hændelsen er blevet godkendt eller skal ignoreres. Du kan eventuelt slette ændringer af anbefalingerne for medarbejderen ved at klikke på knappen **Genberegn**. Dette markerer den eksisterende medarbejderhændelse med statussen Ignorer, og der oprettes en ny medarbejderhændelse med genberegnede værdier.
 

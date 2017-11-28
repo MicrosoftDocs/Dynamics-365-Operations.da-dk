@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,11 +36,10 @@ Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgåend
 Du kan definere debitorgrupper, debitorer, posteringsprofiler, forskellige betalingsmuligheder, rentenotaer, rykkere, provision, parametre vedrørende debitorer tillæg, leveringer og destinationer, veksler og andre typer debitoroplysninger og kredit- og rykkeroplysninger.
 I følgende tabel vises de sider, der understøtter konfiguration og vedligeholdelse af debitor og kredit og rykkere. Tabelposterne er organiseret efter opgave og derefter alfabetisk efter sidenavn.
 
-| ![Bemærk](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Bemærk")**Bemærk**          |
-|--------------------------------------------------------------------------------------------------|
-| Til nogle sider i nedenstående tabel kræves oplysninger eller parameterindstillinger, for at du kan navigere til dem. |
+> [!NOTE]
+> Du kan ikke navigere til nogle sider i tabellen nedenfor, medmindre der er angivet data eller parameterindstillinger på andre sider.
 
-| Opgave                                                 | Sidens navn                            | Brug                                                                                                                                                                                                                                                                             |
+| Opgave                                                 | Sidenavn                            | Anvendelse                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurere påkrævede debitoroplysninger | Debitorparametre       | Angiv parametre for modulet Debitor.                                                                                                                                                                                                                             |
 |                                                      | Arbejdsgange i Debitor        | Opret en arbejdsgang, eller rediger en eksisterende.                                                                                                                                                                                                                                      |

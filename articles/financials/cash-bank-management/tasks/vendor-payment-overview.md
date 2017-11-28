@@ -3,7 +3,7 @@ title: Oversigt over kreditorbetalinger
 description: "Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling."
 author: kweekley
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 020d147744df24b2065e66e5fc68ed5d5479127b
+ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
+ms.openlocfilehash: e9a94231f755ff23bb442d62e90daff8f2d1f4fb
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 # <a name="vendor-payment-overview"></a>Oversigt over kreditorbetalinger
@@ -43,7 +43,7 @@ Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at opret
 11. Valgfrit: Angiv en dato for minimumsbetaling der kan anvendes som betalingsdato.
     * Dato for minimumsbetaling bliver den tidligste dato, der blev brugt, da betalingerne blev oprettet. Hvis en faktura f.eks. har en forfaldsdato, der efter datoen for minimumsbetaling, bliver forfaldsdatoen betalingsdatoen i stedet for datoen for minimumsbetaling, så fakturaen betales på den seneste mulige dato.  
 12. Angiv ekstra forespørgselsrestriktioner under Poster, der skal medtages.
-    * Filteret bruges ofte til at begrænse de fakturaer, der er udvalgt til betaling efter kreditorgruppe eller betalingsmåde. For eksempel kan du tilføje et filter for kun at betale fakturaer med check i denne betalingskørsel.  
+    * Filteret bruges ofte til at begrænse de fakturaer, der er udvalgt til betaling efter kreditorgruppe eller betalingsmåde. For eksempel kan du tilføje et filter for kun at betale fakturaer ved indtjekning af denne kørsel af betaling.  
 13. Angiv yderligere forespørgselsrestriktioner eller betalingsstandarder. 
     * Yderligere parametre kan bruges til at definere betalingsvalutaen eller aktiverer centraliserede betalinger for denne lønkørsel.  
 14. Klik på OK.

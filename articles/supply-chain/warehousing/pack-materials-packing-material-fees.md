@@ -3,7 +3,7 @@ title: Emballage og gebyrer
 description: "Emballagegebyrer betales med bestemte intervaller til et genbrugsfirma. Der betales et beløb pr. vægtenhed for hvert materiale, som en pakkeenhed består af. Emballagegebyrer beregnes og rapporteres, men der bogføres ingen finansposteringer, da gebyrerne ikke anses som afgifter, der skal betales til en myndighed."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ Når du opretter en salgsordrelinje, kontrolleres det, om der er angivet pakkeen
 ## <a name="packing-units-on-purchase-order-lines"></a>Pakkeenheder på indkøbsordrelinjer
 Emballageposteringer for en indkøbsordrelinje oprettes ikke af systemet. Du opretter transaktioner for fakturerede indkøbsordrelinjer manuelt på siden **Emballageposteringer**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Definer kundelicensnumre for emballagegebyr
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Definere kundelicensnumre for emballagegebyr
 Hvis kunderne betaler emballagegebyret, skal du angive kundelicensnumre for emballagegebyr på siden **Kunder**. Når en kunde er tildelt et licensnummer, beregnes emballagegebyrer automatisk, når salgsordrer faktureres. Når ordren er faktureret, fjernes markeringen i afkrydsningsfeltet **Beregn gebyr** på siden **Emballageposteringer**, da du ikke behøver at beregne og udskrive en rapport. Du kan udskrive emballagevægten på fakturaen og underrette kunderne om, at de kommer til at betale gebyrerne. 
 
 Hvis firmaet betaler emballagegebyrerne, skal du ikke angive kundelicensnumrene. Når ordren er faktureret, markeres afkrydsningsfeltet **Beregn gebyr** på siden **Emballageposteringer**. Det angiver, at gebyrer beregnes, når der oprettes en rapport. Du kan udskrive vægtangivelserne på fakturaen og angive, at firmaet betaler gebyrerne.

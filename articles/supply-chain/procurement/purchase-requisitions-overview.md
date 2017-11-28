@@ -1,9 +1,9 @@
 ---
 title: "Oversigt over indkøbsrekvisition"
-description: "Denne artikel beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have."
+description: "Dette emne beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have.
+Dette emne beskriver arbejdsgangen for indkøbsrekvisitioner og de forskellige statusser, som en indkøbsrekvisition kan have.
 
 Afhængigt af hvordan organisationen er opbygget, kan du oprette indkøbsrekvisitioner for produkter, som organisationen forbruger. En indkøbsrekvisitionen er et internt dokument, der giver indkøbsafdelingen tilladelse til at købe vare eller tjenesteydelser.  
 
@@ -70,7 +70,7 @@ Den overordnede status for indkøbsrekvisitionen bestemmes af status for indkøb
 <tr class="odd">
 <td>Udkast</td>
 <td>Udkast</td>
-<td>Indkøbsrekvisitionen og indkøbsrekvisitionslinjen er oprettet, men de er ikke sendt til gennemsyn. Indkøbsrekvisitioner og indkøbsrekvisitionslinjer, der har status som <strong>Kladde</strong> kan ændres. En indkøbsrekvisition eller indkøbsrekvisitionslinje har også en status som <strong>Kladde</strong>, hvis den er tilbagekaldt, men endnu ikke sendt til gennemsyn.<strong>Bemærk:</strong> Du kan sende eller trække en indkøbsrekvisition tilbage på dokumentniveau. Du kan ikke sende eller tilbagekalde en enkelt indkøbsrekvisitionslinje.</td>
+<td>Indkøbsrekvisitionen og indkøbsrekvisitionslinjen er oprettet, men de er ikke sendt til gennemsyn. Indkøbsrekvisitioner og indkøbsrekvisitionslinjer, der har status <strong>Kladde</strong> kan ændres. En indkøbsrekvisition eller indkøbsrekvisitionslinje har også status som <strong>Kladde</strong>, hvis den er trukket tilbage, men ikke er sendt til gennemsyn igen. <strong>Bemærk:</strong> Du kan sende eller trække en indkøbsrekvisition tilbage på dokumentniveau. Du kan ikke sende eller tilbagekalde en enkelt indkøbsrekvisitionslinje.</td>
 </tr>
 <tr class="even">
 <td>Til gennemsyn</td>
@@ -111,7 +111,7 @@ Hvis du sender en indkøbsrekvisitionslinje igen, efter at den blev afvist, star
 <tr class="odd">
 <td>Annulleret</td>
 <td>Annulleret</td>
-<td>Indkøbsrekvisitionen og alle indkøbsrekvisitionslinjer er blevet annulleret.<strong>Bemærk:</strong> Hvis du ikke længere har brug for en vare på en indkøbsrekvisitionslinje, skal du annullere indkøbsrekvisitionslinjen, hvis den allerede er blevet godkendt. Kun godkendte indkøbsrekvisitionslinjer kan annulleres. Hvis der er indkøbsrekvisitionslinjer, som stadig er til gennemsyn, har indkøbsrekvisitionen statussen <strong>Til gennemsyn</strong>. I dette tilfælde kan du trække indkøbsrekvisitionen tilbage og slette den relevante indkøbsrekvisitionslinje.</td>
+<td>Indkøbsrekvisition og alle indkøbsrekvisitionslinjer er blevet annulleret. <strong>Bemærk:</strong> Hvis du ikke længere har brug for en vare på en indkøbsrekvisitionslinje, skal du annullere indkøbsrekvisitionslinjen, hvis den allerede er godkendt. Kun godkendte indkøbsrekvisitionslinjer kan annulleres. Hvis der er indkøbsrekvisitionslinjer, som stadig er til gennemsyn, har indkøbsrekvisitionen statussen <strong>Til gennemsyn</strong>. I dette tilfælde kan du trække indkøbsrekvisitionen tilbage og slette den relevante indkøbsrekvisitionslinje.</td>
 </tr>
 <tr class="even">
 <td>Lukket</td>

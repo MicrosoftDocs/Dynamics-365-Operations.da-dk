@@ -1,9 +1,9 @@
 ---
-title: Registrer serienumre i salgsprocessen
-description: "Denne artikel forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang."
+title: Registrere serienumre i salgsprocessen
+description: "Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,20 +20,20 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b8f66d4b62b43b3a62af8d39631e7cd7f688a11
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrer serienumre i salgsprocessen
+# <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprocessen
 
 [!include[banner](../includes/banner.md)]
 
 [!include[retail name](../includes/retail-name.md)]
 
-Denne artikel forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
+Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
 
 Mange virksomheder vil blot indsamle serienumre for service- og garantiformål og behøver ikke at gemme serienumre på lageret fra tilgang til afgang. I disse scenarier kan Microsoft Dynamics 365 for Finance and Operations lade dig registrere serienumre på følgesedler eller fakturaer, når produkterne sælges. Hvis produkterne på et senere tidspunkt returneres, kan du spore et produkt til en faktura for at finde ud af, om du har solgt produktet, og om servicen eller garantiforpligtelser er gældende.
 Findes der nogen krav?

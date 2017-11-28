@@ -3,7 +3,7 @@ title: "Konfigurere et eksternt katalog til PunchOut e-indkøb"
 description: "Dette emne beskriver brugen af et eksternt katalog eller punchout-katalog til at indsamle oplysninger tilbud fra en leverandør og føje dem til en rekvisition."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -40,15 +40,15 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Hvis du vil konfigurere et eksternt kreditorkatalog, skal du fuldføre følgende opgaver:
 
-1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
-2. Registrer leverandøren i Finance and Operations. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører i Microsoft Dynamics 365 under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
-3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenheder](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
-4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Yderligere oplysninger om denne opgave finder du i næste afsnit.
+1. Konfigurer et indkøbskategorihierarki. Du kan finde flere oplysninger under [Konfigurere politikker for indkøbskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
+2. Registrer leverandøren i Finance and Operations. Før du kan oprette konfigurationer for at få adgang til en ekstern leverandørs katalog, skal du konfigurere leverandøren og leverandørens kontakt i Microsoft Dynamics 365. Det eksterne katalogs leverandør skal også føjes til den valgte indkøbskategori. Du kan finde flere oplysninger om registrering af leverandører i Microsoft Dynamics 365 under [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md). Du kan finde flere oplysninger om at tildele leverandører en indkøbskategori under [Godkend leverandører til bestemte indkøbskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+3. Sørg for, at de måleenheder og den valuta, som leverandøren bruger, er konfigureret. Du kan finde oplysninger om, hvordan du opretter en måleenhed, i [Administrere måleenheder](../pim/tasks/manage-unit-measure.md).
+4. Konfigurer det eksterne kreditorkatalog ved hjælp af kravene til leverandørens eksterne katalogwebsted. Du kan finde yderligere oplysninger om denne opgave i [Konfigurere det eksterne leverandørkatalog](#configure-the-external-vendor-catalog).
 5. Test konfigurationerne af leverandørens eksterne katalog for at kontrollere, at indstillingerne er gyldige, og at du kan få adgang til leverandørens eksterne katalog. Brug handlingen **Valider indstillinger** til at validere den meddelelse om konfigurationsanmodning, du har defineret. Denne meddelelse bør medføre, at leverandørens eksterne katalogwebsted åbnes i et browservindue. Under valideringen kan du ikke bestille varer og tjenester fra leverandøren. Hvis du vil bestille varer og tjenester, skal du have adgang til leverandørkataloget fra en indkøbsrekvisition.
 6. Aktivér det eksterne katalog ved hjælp af knappen **Aktivér katalog** på siden **Eksterne kataloger**. Det eksterne katalog skal aktiveres, før medarbejdere kan bruge det. Du kan deaktivere det eksterne katalog når som helst.
 
 
-## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurere det eksterne leverandørkatalog
+## <a name="configure-the-external-vendor-catalog"></a>Konfigurere det eksterne leverandørkatalog
 
 Dette afsnit indeholder flere detaljer om opgave 4 i forrige afsnit.
 
@@ -81,7 +81,7 @@ Nedenfor kan du se en beskrivelse af de koder, der er inkluderet i skabelonen:
 
 ### <a name="extrinsic-elements"></a>Ydre elementer
 
-En ydre element er yderligere oplysninger, f.eks. et brugernavn, der er baseret på en bruger, der stempler ud. Det ydre element angives, når punchout forekommer, og det kan sendes i meddelelsen om konfigurationsanmodning.
+Et ydre element er yderligere oplysninger, f.eks. et brugernavn, der er baseret på en bruger, der stempler ud. Det ydre element angives, når udstempling forekommer, og det kan sendes i meddelelsen om konfigurationsanmodning.
 Leverandøren kan have et behov for at modtage et ydre element i opsætning af anmodningen. I så fald skal du føje det ydre element til listen over ydre elementer i sektionen **Meddelelsesformat** på siden **Eksternt katalog**. Angiv et navn for det ydre element, så leverandøren kan genkende det og tilknytte en værdi. De mulige værdier er: brugernavn, brugermail eller en tilfældig værdi.
 Du kan finde flere oplysninger om cXML-protokollen på: http://cxml.org/
 

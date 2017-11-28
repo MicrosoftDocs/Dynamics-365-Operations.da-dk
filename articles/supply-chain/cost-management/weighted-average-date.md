@@ -1,9 +1,9 @@
 ---
 title: Gennemsnitskostdato
-description: 
+description: "Gennemsnitskostdato er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor lagerafgange værdisættes til den gennemsnitlige værdi af de varer, der modtages på lageret, for hver enkelt dag i lagerlukningsperioden."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+Gennemsnitskostdatoen er en lagermodel, der er baseret på princippet om vægtet gennemsnit. For princippet om vægtet princip værdisættes afgange fra lageret til gennemsnitsværdien for de varer, der modtages på lageret hver enkelt dag i lagerlukningsperioden. 
 
-Gennemsnitskostdatoen er en lagermodel, der er baseret på princippet om vægtet gennemsnit. For princippet om vægtet princip værdisættes afgange fra lageret til gennemsnitsværdien for de varer, der modtages på lageret hver enkelt dag i lagerlukningsperioden. Når du kører en lagerlukning ved brug af vægtet gennemsnitsdato, udlignes alle daglige tilgange mod en virtuel afgang. Denne virtuelle afgang indeholder den samlede modtagne mængde og værdi for denne dag. Denne virtuelle afgang har en tilsvarende virtuel tilgang, som tilgangene udlignes mod. På denne måde opnår alle afgange derfor samme gennemsnitskostpris. Den virtuelle afgang og virtuelle tilgang kan betragtes som en virtuel overførsel, som kaldes *lagerlukningsoverførsel efter vægtet gennemsnit*. 
+Når du kører en lagerlukning ved brug af vægtet gennemsnitsdato, udlignes alle daglige tilgange mod en virtuel afgang. Denne virtuelle afgang indeholder den samlede modtagne mængde og værdi for denne dag. Denne virtuelle afgang har en tilsvarende virtuel tilgang, som tilgangene udlignes mod. På denne måde opnår alle afgange derfor samme gennemsnitskostpris. Den virtuelle afgang og virtuelle tilgang kan betragtes som en virtuel overførsel, som kaldes *lagerlukningsoverførsel efter vægtet gennemsnit*. 
 
 Hvis der kun har været én tilgang til og med denne dato, er det ikke nødvendigt at vurdere gennemsnittet. Det er fordi, at alle tilgange udlignes fra den tilgang, og der oprettes ikke en virtuel overførsel. Hvis der kun forekommer afgange på denne dato, vil der ligeledes ikke være nogen tilgange, som gennemsnittet kan vurderes fra, og der oprettes ikke en virtuel overførsel. Når du bruger vægtet gennemsnit, kan du vælge at markere lagertransaktioner, så en specifik varetilgang udlignes mod en specifik afgang. I dette tilfælde bruger du ikke reglen om vægtet gennemsnitsdato. Det anbefales at bruge en månedlig lagerlukning, når du bruger lagermodellen for gennemsnitskostdato. 
 

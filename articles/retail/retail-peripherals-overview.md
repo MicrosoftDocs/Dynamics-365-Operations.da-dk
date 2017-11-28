@@ -1,9 +1,8 @@
 ---
 title: Oversigt over eksterne detailenheder
-description: "I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden."
-author: rubencdelgado
+description: I dette emne forklares begreberne i forbindelse med eksterne detailenheder.
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,10 +17,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -575,7 +574,7 @@ I henhold til de aktuelle sikkerhedsstandarder, skal følgende indstillinger bru
 ## <a name="peripheral-simulator"></a>Ekstern simulator
 Du kan finde oplysninger under [Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Microsoft-testede eksterne enheder
+## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testede eksterne enheder
 ### <a name="ipc-built-in-hardware-station"></a>IPC-hardwarestation (indbygget)
 
 De følgende eksterne enheder blev testet ved hjælp af den IPC-hardwarestation, der er indbygget i Modern POS til Windows.

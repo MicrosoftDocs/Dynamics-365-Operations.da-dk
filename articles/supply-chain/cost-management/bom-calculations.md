@@ -1,7 +1,7 @@
 ---
 title: Styklistekalkulationer
 description: Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Dette emne indeholder oplysninger om styklistekalkulationer.
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ Når du bruger en beregning af omkostninger plus avance afspejler den beregnede 
 -   **Styklistekalkulation for en vare og en angivet efterkalkulationsversion** − Under styklistekalkulationen oprettes der en ventende salgsprispost i efterkalkulationsversionen. Denne salgsprispost udgør startpunktet for visning af kalkulationsdetaljer (f.eks. på siden **Beregn varens kostpris**). Salgsprisposten fungerer primært som referenceoplysninger og bruges ikke som udgangspunkt for en salgspris på salgsordrer.
 -   **Ordrespecifik styklistekalkulation** − En varians af siden **Styklistekalkulation** bruges sammen med en vare på en linje i en salgsordre, et salgstilbud eller en serviceordre. Med en ordrespecifik styklistekalkulation genereres der ikke en omkostningspost i en efterkalkulationsversion. I stedet genereres en kalkulationspost, som vises på siden **Resultater af styklistekalkulation**. Denne kalkulationspost udgør startpunktet for visning af kalkulationsdetaljer (f.eks. på siden **Beregn varens kostpris**). Oplysninger om en valgt kalkulationspost kan overføres til det oprindelige linjeelement. Den beregnede salgspris kan for eksempel overføres til et salgsordrelinjeelement.
 
-## <a name="orderspecific-bom-calculations"></a>Ordrespecifikke styklistekalkulationer
+## <a name="order-specific-bom-calculations"></a>Ordrespecifikke styklistekalkulationer
 En ordrespecifik styklistekalkulation repræsenterer en variant af en styklistekalkulation for en fremstillet vare. Den ordrespecifikke styklistekalkulation udføres til en linjevare i en salgsordre, et salgstilbud eller en serviceordre. En ordrespecifik styklistekalkulation genererer en kalkulationspost, der vises på siden **Resultater af styklistekalkulation**. Kalkulationsposten indeholder en beregnet vægt, en beregnet omkostning, der er baseret på omkostninger til aktive poster, og en beregnet salgspris. Kalkulationsposten, som hver ordrespecifikke styklistekalkulation for en vare genererer på siden **Resultater af styklistekalkulation** identificeres entydigt med et kalkulationsnummer. Resultaterne af en kalkulationspost kan også overføres til den oprindelige varelinje. En ordrespecifik styklistekalkulation adskiller sig fra en styklistekalkulation for en produceret vare på to måder:
 
 -   En ordrespecifik styklistekalkulation genererer ikke en vareomkostningspost i en efterkalkulationsversion. Derfor anvendes reglerne for styklistekalkulation ikke, når der oprettes en vareomkostningspost, eller når en omkostningspost overskrives.

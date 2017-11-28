@@ -1,17 +1,17 @@
 ---
 title: Oversigt over elektronisk rapportering
-description: "Denne artikel indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen."
-author: kfend
+description: "Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen."
+author: NickSelin
 manager: AnnBe
-ms.date: 06/15/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 704235fb1aacb7e3101d4b1feca1e36051059ade
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ea9550b7209064a2842d7e5efe55e9e51c23b9f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -198,7 +198,7 @@ I følgende illustration vises et eksempel på, hvor datamodelindhold oversætte
 
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfiguration af datamodeltilknytninger for udgående dokumenter
 
-ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte datakilder i Dynamics 365 for Finance and Operations. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. I følgende illustration vises et eksempel på denne type datamodeltilknytning (**SEPA-overførsel**-modeltilknytningen i datamodellen for betalingsdomæne). 
+ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte datakilder i Dynamics 365 for Finance and Operations. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. I følgende illustration vises et eksempel på denne type datamodeltilknytning vises i nedenstående billede (**SEPA-overførsel**-modeltilknytningen i datamodellen for betalingsdomæne). 
 
 [![Eksempel på en datamodeltilknytning](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 

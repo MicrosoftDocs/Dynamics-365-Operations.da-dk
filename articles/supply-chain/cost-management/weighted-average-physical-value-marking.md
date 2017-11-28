@@ -1,9 +1,9 @@
 ---
-title: "Vægtet gennemsnit for med fysisk værdi og afmærkning"
-description: 
+title: "Vægtet gennemsnit med fysisk værdi og afmærkning"
+description: "Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 65501
 ms.assetid: 25041ff0-bafe-484d-a94a-e1772ad43204
 ms.search.region: Global
@@ -20,20 +20,20 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c9db625e5af77b8f5d1569e35ce2d4c20e5be646
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit for med fysisk værdi og afmærkning
+# <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit med fysisk værdi og afmærkning
 
 [!include[banner](../includes/banner.md)]
 
 [!include[retail name](../includes/retail-name.md)]
 
-
+Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode.
 
 Når du kører en lagerlukning, udlignes alle tilgange mod en virtuel afgang, der indeholder den samlede modtagne mængde og værdi. Denne virtuelle afgang har en tilsvarende virtuel tilgang, som tilgangene vil blive udlignet fra. På denne måde opnår alle afgange samme gennemsnitskostpris. Den virtuelle afgang og tilgang kan ses som en virtuel overførsel, som kaldes "lagerlukningsoverførsel efter vægtet gennemsnit".
 
@@ -196,7 +196,7 @@ En tilgangspostering afmærkes til en afgangspostering. Derefter ses der bort fr
 
 Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. Du kan gøre dette fra en salgsordrelinje på siden Oplysninger om salgsordre. Du kan få vist de åbne tilgangsposteringer på siden Afmærkning. 
 
-Du kan afmærke en afgangspostering til en tilgang, efter at posteringen er bogført. Du kan matche eller afmærke en afgangspostering for en åben tilgangstransaktion for en lagerført vare fra en bogført lagerreguleringskladde. 
+Du kan afmærke en afgangspostering til en tilgang, efter at posteringen er bogført. Du kan matche eller afmærke en afgangspostering for en åben tilgangspostering for en lagerført vare fra en bogført lagerreguleringskladde. 
 
 De efterfølgende posteringer illustreres i nedenstående grafik:
 -   1a. Fysisk lagertilgang for et antal på 1 til en kostpris a kr. 10,00 pr. stk.

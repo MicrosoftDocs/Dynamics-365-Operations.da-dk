@@ -1,9 +1,9 @@
 ---
 title: Automatisk udligning og prioritering
-description: "I denne artikel beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten."
+description: "I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
+I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 
 Du har to muligheder, når du udligner betalinger med fakturaer og andre transaktioner. Du kan manuelt vælge posteringerne, der skal udlignes, eller Microsoft Dynamics 365 for Finance and Operations kan vælge posteringerne automatisk ved hjælp af funktionen til automatiske udligning. Du kan også tilpasse, hvordan automatiske udligninger skal behandles, ved hjælp af indstillingen **Prioriter udligning**. Disse indstillinger er en del af de udligningsparametre, der er defineret på siden **Debitorparametre**. Den måde, posteringer automatisk udlignes på, kan variere, afhængigt af den metode, der bruges til automatisk udligning. Følgende metoder er tilgængelige:
 
@@ -50,7 +50,7 @@ Eksemplerne på udligninger senere i denne artikel er baseret på følgende tran
 | Faktura 3     | 15. oktober  | 500,00 | 2% 14/Net 30        | 29. oktober         |                                                                                                                                                                                               |
 | Rentenota | 15. oktober  | 7:00   |                     |                    | Denne rentenota er for faktura 1 og 2. Beløbet beregnes som 2 procent renter på beløb, der er forfaldet for mindst 30 dage siden. F.eks. 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Brugerdefineret udligningsprioritet
+## <a name="user-defined-settlement-priority"></a>Brugerdefineret udligningsprioritet
 Hvis du angiver **Brug prioritet til automatiske udligninger** til **Ja** på siden **Debitorparametre**, bruges den udligningsprioritet, du definerer på siden **Udligningsprioritet**, når posteringer er markeret til automatisk udligning. Følgende udligningsprioritet er defineret i dette eksempel:
 
 1.  Transaktionstype

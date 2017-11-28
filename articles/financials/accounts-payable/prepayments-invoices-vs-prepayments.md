@@ -1,9 +1,9 @@
 ---
 title: Forudbetalingsfakturaer vs. forudbetalinger
-description: "Denne artikel beskriver de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger) og stiller også kontrasterne op mellem dem. I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling."
+description: "I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6bf67fb17363f7b61e782ed6d8e7b6310433ffd
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denne artikel beskriver de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger) og stiller også kontrasterne op mellem dem. I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling.
+I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling.
 
 Organisationer kan udstede forudbetalinger til kreditorer for varer eller tjenester, før varerne eller tjenesterne er opfyldt. To metoder kan bruges til at udstede forudbetalinger til kreditorer. Hvis du vil minimere risikoen, kan du spore forudbetalinger ved at definere forudbetalingen i en indkøbsordre. I forbindelse med denne metode skal du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. Denne metode kaldes forudbetalingsfakturering. Organisationer, der ikke ønsker at spore forudbetalinger så tæt, eller som ikke modtager en forudbetalingsfaktura fra deres leverandør, kan bruge kladdebilag for forudbetaling i stedet for metoden til forudbetalingsfaktura. Du kan oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling. I forbindelse med denne metode kan du ikke spore, hvilke forudbetalinger der foretages til en kreditor i forhold til hvilke indkøbsordrer. Du kan dog markere en bogført forudbetaling som udlignet mod en indkøbsordre.
 
