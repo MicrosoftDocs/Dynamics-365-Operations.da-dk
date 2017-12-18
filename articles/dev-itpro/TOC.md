@@ -124,6 +124,7 @@
 #### [Registrer en underklasse for standardmetoder](extensibility/register-subclass-factory-methods.md)
 #### [Svare med EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Udvide RunBase-klassen](extensibility/extend-runbase-class.md)
+#### [Bruge delegerede til at tilpasse programstart](extensibility/startup-customizations.md)
 #### [Ændre et eksisterende felt i en tabel](extensibility/modify-existing-field.md)
 #### [Tilføje et nyt felt til en eksisterende tabel](extensibility/add-field-extension.md)
 #### [Tilføje et indeks til en eksisterende tabel](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Konfigurere og installere lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 ### [Udvikle og installere brugerdefinerede modeller i lokale miljøer](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Anvende opdateringer på en lokal installation](deployment/apply-updates-on-premises.md)
+### [Geninstallere en lokal installation](deployment/redeploy-on-prem.md)
+### [Fejlfinde Dynamics 365 for Finance and Operations, Enterprise edition lokal installation](deployment/troubleshoot-on-prem.md)
 
 ## Installere brugerdefineret kode
 ### [Oprette en installerbar pakke](deployment/create-apply-deployable-package.md)
-### [Anvende en installerbar pakke](deployment/apply-deployable-package-system.md)
+### [Anvende opdateringer på et skybaseret miljø](deployment/apply-deployable-package-system.md)
 ### [Installere en installerbar pakke](deployment/install-deployable-package.md)
 ### [Fejlfinde problemer med pakkeprogrammer](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## Opgradere til en aktuel opdatering
 ### [Proces for flytning til den seneste opdatering](migration-upgrade/upgrade-latest-update.md)
 ### [Livscykluspolitik](migration-upgrade/versions-update-policy.md)
-### [Opgradere til den seneste platformsopdatering](migration-upgrade/upgrade-latest-platform-update.md)
+### [Anvende den seneste platformsopdatering til dit miljø](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Opgradere Dynamics-platformen til august 2016-udgivelsen](migration-upgrade/update-platform-each-release.md)
 ### [Opgradere et sandkassemiljø](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Opgradere data i udviklings- eller demomiljøer](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Opdatere udviklingsværktøjer](dev-tools/update-development-tools.md)
+### [Anvende opdateringer på en lokal installation](deployment/apply-updates-on-premises.md)
+### [Geninstallere en lokal installation](deployment/redeploy-on-prem.md)
 
 ## Hotfixes og vedligeholdelse
 ### [Hente hotfixes fra Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Datadeling på tværs af firma](sysadmin/cross-company-data-sharing.md)
 ## [Vedligeholdelsestilstand](sysadmin/maintenance-mode.md)
 ## [Forudkonfigurerede systemkonti](sysadmin/pre-configured-system-accounts.md)
+## [Eksportere B2B-brugere til Azure AD](sysadmin/implement-b2b.md)
 ## [Rollebaseret sikkerhed](sysadmin/role-based-security.md)
 ### [Sikkerhedsarkitektur](sysadmin/security-architecture.md)
 ### [Sikkerhedsrapporter](sysadmin/security-reports.md)
