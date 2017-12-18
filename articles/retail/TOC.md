@@ -180,11 +180,11 @@
 
 ## Installation og hotfixes
 ### [Oversigt over skalaenhed til detailbutikker](dev-itpro/retail-store-system-begin.md)
-#### [Konfiguration og installation af skalaenhed til detailbutikker](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Konfiguration og installation af skalaenhed til detailbutikker](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Administrere Retail-konti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
-#### [Enhedsaktivering for Retail POS](dev-itpro/retail-device-activation.md)
-#### [Sikker Retail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
+### [Administrere Retail-konti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
+### [Enhedsaktivering for Retail POS](dev-itpro/retail-device-activation.md)
+### [Sikker Retail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration og installation af Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Masseinstallation af Retail-selvbetjeningskomponenter](dev-itpro/retail-mass-deployment.md)
 ### [Hændelser i Retail-komponenter for diagnosticering og fejlfinding](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -194,48 +194,52 @@
 ### [Oversigt over understøttelse af opgradering og N-1](dev-itpro/overview-upgrade-n-minus1.md)
 ### [Installere N-1-komponenter](dev-itpro/n-1-installation-configuration.md)
 
+## Vejledning til implementering
+### [Vejledning til implementering af enhedsstyring](implementation-considerations-devices.md)
+
 ## Miljøkonfiguration
 ### [Føje links til din organisations juridiske begreber og erklæring om beskyttelse af personlige oplysninger](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Administrere Bing Kort](dev-itpro/manage-bing-maps.md)
 
-## Udvidelsesmuligheder
-### POS
-#### [Skærmlayout for Retail POS](pos-screen-layouts.md)
-##### [Installere layoutdesigneren til POS](install-pos-layout-designer.md)
-#### [Konfigurere MPOS til offline-tilstand](dev-itpro/retail-modern-pos-offline.md)
-#### [Udvidelse af MPOS- og Cloud POS-udløser](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Føje et brugerdefineret kontrolelement til en POS-visning](dev-itpro/pos-custom-control.md)
-#### [Udvidelse af POS-betaling](dev-itpro/pos-payment-extension.md)
-#### [Understøttelse af eksterne gavekort](dev-itpro/gift-card.md)
+## POS-udvidelse
+### [Skærmlayout for Retail POS](pos-screen-layouts.md)
+### [Installere layoutdesigneren til POS](install-pos-layout-designer.md)
+### [Konfigurere MPOS til offline-tilstand](dev-itpro/retail-modern-pos-offline.md)
+### [Udvidelse af MPOS- og Cloud POS-udløser](dev-itpro/modern-pos-trigger-extensibility.md)
+### [Føje et brugerdefineret kontrolelement til en POS-visning](dev-itpro/pos-custom-control.md)
+### [Udvidelse af POS-betaling](dev-itpro/pos-payment-extension.md)
+### [Understøttelse af eksterne gavekort](dev-itpro/gift-card.md)
 ### [Oprette en app for detailoplevelser](dev-itpro/create-retail-experience-app.md)
 ### [Oversigt og udvidelsesmuligheder for hardwarestation](dev-itpro/hardware-station-extensibility.md)
 
-### Retail Server
-#### [Udvide en Retail Server OData-controller](dev-itpro/extend-retail-server-odata-controller.md)
-#### [Web API og OData-controllere](dev-itpro/odata-controllers-api.md)
-#### [Retail Server kunde- og forbruger-API'er](dev-itpro/retail-server-customer-consumer-api.md)
-#### [Udvide metadataene](dev-itpro/extend-metadata.md)
-#### [Udvide Commerce Runtime for at understøtte POS-offlinetilstand](dev-itpro/call-crt-service-offline.md)
-### Commerce Runtime
-#### [Commerce runtime-oversigt](dev-itpro/commerce-runtime-overview.md)
-#### [Udvidelsese af Commerce runtime og Retail Server ](dev-itpro/commerce-runtime-extensibility.md)
-#### [Tilføje foretrukne kundedata til en kanal-database](dev-itpro/add-customer-preference-channel.md)
-#### [Føje egenskaber til en salgsordre](dev-itpro/add-properties-sales-order.md)
-#### [Udvidelsesmuligheder og udløsere for Commerce runtime](dev-itpro/commerce-runtime-extensibility-trigger.md)
-#### [Udløsereksempel: Blokere transaktion](dev-itpro/trigger-example-blocking-transaction.md)
-#### [Udløsereksempel: Returneringspolitik](dev-itpro/trigger-example-return-policy.md)
-### e-Commerce
-#### [Konfigurere en onlinebutik](dev-itpro/configure-online-store.md)
-#### [Konfiguration af godkendelsesprovider](dev-itpro/configure-authentication-providers.md)
-#### [e-handel-platform](dev-itpro/ecommerce-platform.md)
-#### [e-handel-platform SDK](dev-itpro/ecommerce-platform-sdk.md)
-### Betalingsconnector
-#### [Implementering af en betalingsconnector og betalingsenhed (hvidbog)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
-#### [Installere en betalingsconnector](dev-itpro/deploy-payment-connector.md)
-#### [Oprette en Windows Installer for en betalingsconnector](dev-itpro/create-windows-installer-payment-connector.md)
+## Retail Server-udvidelse
+### [Udvide en Retail Server OData-controller](dev-itpro/extend-retail-server-odata-controller.md)
+### [Web API og OData-controllere](dev-itpro/odata-controllers-api.md)
+### [Retail Server kunde- og forbruger-API'er](dev-itpro/retail-server-customer-consumer-api.md)
+### [Udvide metadataene](dev-itpro/extend-metadata.md)
+### [Udvide Commerce Runtime for at understøtte POS-offlinetilstand](dev-itpro/call-crt-service-offline.md)
 
-## Retail SDK
-### [Retail SDK-oversigt](dev-itpro/retail-sdk/retail-sdk-overview.md)
+## Commerce runtime-udvidelse
+### [Commerce runtime-oversigt](dev-itpro/commerce-runtime-overview.md)
+### [Udvidelse af Commerce runtime og Retail Server ](dev-itpro/commerce-runtime-extensibility.md)
+### [Tilføje foretrukne kundedata til en kanal-database](dev-itpro/add-customer-preference-channel.md)
+### [Føje egenskaber til en salgsordre](dev-itpro/add-properties-sales-order.md)
+### [Udvidelsesmuligheder og udløsere for Commerce runtime](dev-itpro/commerce-runtime-extensibility-trigger.md)
+### [Udløsereksempel: Blokere transaktion](dev-itpro/trigger-example-blocking-transaction.md)
+### [Udløsereksempel: Returneringspolitik](dev-itpro/trigger-example-return-policy.md)
+
+## e-handel-udvidelse
+### [Konfigurere en onlinebutik](dev-itpro/configure-online-store.md)
+### [Konfiguration af godkendelsesprovider](dev-itpro/configure-authentication-providers.md)
+### [e-handel-platform](dev-itpro/ecommerce-platform.md)
+### [e-handel-platform SDK](dev-itpro/ecommerce-platform-sdk.md)
+
+## Betalingsconnector-udvidelse
+### [Implementering af en betalingsconnector og betalingsenhed (hvidbog)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+### [Installere en betalingsconnector](dev-itpro/deploy-payment-connector.md)
+### [Oprette en Windows Installer for en betalingsconnector](dev-itpro/create-windows-installer-payment-connector.md)
+
+## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrere Retail SDK med det fortløbende build-system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Prøver på udvidelsesmuligheder til Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Kasseapparater for Sverige](localizations/emea-swe-cash-registers.md)
@@ -249,7 +253,13 @@
 ### [Ordreattributter](dev-itpro/order-attributes.md)
 ### [Debitorattributter](dev-itpro/customer-attributes.md)
 ### [Retail Typescript og C#-proxy](dev-itpro/typescript-proxy-retail-pos.md)
-
+### [Kør Retail POS-prøver](dev-itpro/pos-run-samples.md)
+### [Udvide eksisterende POS-visninger for at tilføje brugerdefinerede kolonner og knapper på applinjen](dev-itpro/pos-view-extension.md)
+### [Føje tilpassede kontrolelementer til Retail Modern POS-transaktionssider](dev-itpro/pos-custom-transaction.md)
+### [Føje brugerdefinerede kolonner til et POS-transaktionsgitter](dev-itpro/pos-custom-transaction-column.md)
+### [Kalde et POS-API eller en operation fra en POS-udvidelse](dev-itpro/pos-api-extension.md)
+### [Udvide eksisterende POS-visninger for at tilføje brugerdefinerede kolonner og knapper på applinjen](dev-itpro/pos-view-extension.md)
+### [Retail Modern POS-udløsere og udskrivning](dev-itpro/pos-trigger-printing.md)
 
 ## Commerce Runtime
 ### [Loyalitetsudvidelse](dev-itpro/retail-sdk/loyalty-extension-sample.md)

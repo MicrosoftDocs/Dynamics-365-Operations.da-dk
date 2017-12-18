@@ -2,6 +2,8 @@
 
 # [Kom godt i gang](talent-get-started.md)
 ## [Systemkrav og opdateringspolitik](talent-versions-update-policy.md)
+## [Klargøre Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Udvide Talent-funktionaliteten](extend-talent-functionality.md)
 
 # [Udarbejde en personalestrategi](departments-jobs-positions.md)
 ## [Konfigurere jobkomponenter](create-job.md)
