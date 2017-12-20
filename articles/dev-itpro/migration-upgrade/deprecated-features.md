@@ -3,7 +3,7 @@ title: "Frarådede funktioner"
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,8 +490,8 @@ Datapartitioner giver en logisk adskillelse af dataene i Microsoft Dynamics AX-d
 
 |   |   |
 |---|---|
-| **Årsagen til fjernelsen**       | Datapartitioner blev introduceret i Microsoft Dynamics AX 2012 R2 for at give mulighed for dataisolering. I et almindeligt scenarie har en virksomhed datterselskaber, og data fra ét datterselskab bør ikke være synlige for et andet datterselskab, selvom begge datterselskaber, der administreres af samme it-afdeling. Dog var ekstra scripts og indirekte administrationsomkostninger i hele programmet påkrævet for at oprette nye partitioner og udfylde dem med data og til sikkerhedskopiering af data på partitionen. I skyen, hvor vi har adgang til PaaS-databasetjenester (platform som en tjeneste) (Microsoft Azure, SQL Database), er det langt mere effektivt at bruge en database som isolationscontainer end at udføre isolation i programmet. Uanset om datapartitionering er påkrævet for datterselskaber, for flere lejere eller blot af skaleringsårsager, mener vi, at scenarierne kan håndteres bedre gennem flere databaser eller flere Dynamics AX-forekomster. |
-| **Erstattet af en anden funktion?** | Datapartitioner erstattes gennem støtte til flere databaser eller Dynamics AX-forekomster i en fremtidig version.    |
+| **Årsagen til fjernelsen**       | Datapartitioner blev introduceret i Microsoft Dynamics AX 2012 R2 for at give mulighed for dataisolering. I et almindeligt scenarie har en virksomhed datterselskaber, og data fra ét datterselskab bør ikke være synlige for et andet datterselskab, selvom begge datterselskaber, der administreres af samme it-afdeling. Dog var ekstra scripts og indirekte administrationsomkostninger i hele programmet påkrævet for at oprette nye partitioner og udfylde dem med data og til sikkerhedskopiering af data på partitionen. I skyen, hvor vi har adgang til PaaS-databasetjenester (platform som en tjeneste) (Microsoft Azure, SQL Database), er det langt mere effektivt at bruge en database som isolationscontainer end at udføre isolation i programmet. Uanset om datapartitionering er påkrævet for datterselskaber, for flere lejere eller blot af skaleringsårsager, mener vi, at scenarierne kan håndteres bedre gennem flere Finance and Operations-forekomster. |
+| **Erstattet af en anden funktion?** | Kunder, der bruger datapartitioner, skal bruge flere forekomster af Finance and Operations, hvis separation på databaseniveau er af vigtighed.    |
 | **Påvirkede moduler**             | Alt  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Database- og filshare-lagring for vedhæftede filer
@@ -525,7 +525,7 @@ I Dynamics AX 2012 R3 kunne Retail Modern POS forbindes direkte med kanaldatabas
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| **Årsagen til fjernelsen**       | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Dynamics 365 for Finance and Operations medfører denne funktion nu flere problemer, end den løser. |
+| **Årsagen til fjernelsen**       | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Finance and Operations medfører denne funktion nu flere problemer, end den løser. |
 | **Erstattet af en anden funktion?** | Nr. Kun standard Retail Server-kommunikation understøttes nu.    |
 | **Påvirkede moduler**             | Kanaldatabase/Retail Modern POS                                    |
 

@@ -3,7 +3,7 @@ title: Power BI-indhold til produktionsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Med dette Power BI-indhold kan du også analysere afvigelser i produktionen. Pro
 Power BI-indholdet til **Produktionsperformance** omfatter data, der stammer fra produktionsordrer og batchordrer. Rapporterne omfatter ikke data, der er relateret til kanban-produktioner.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises Power BI-indholdet til **Produktionsperformance** på siden **Produktionsperformance** (**Produktionsstyring** > **Forespørgsler og rapporter** > **Performanceanalyse for produktion** > **Produktionsperformance**). 
+Power BI-indholdet **Produktionsperformance** vises på siden **Produktionsperformance** (**Produktionsstyring** > **Forespørgsler og rapporter** > **Performanceanalyse for produktion** > **Produktionsperformance**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 

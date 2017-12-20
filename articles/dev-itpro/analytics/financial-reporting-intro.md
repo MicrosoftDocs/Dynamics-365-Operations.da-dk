@@ -1,15 +1,15 @@
 ---
 title: "Økonomirapportering til Finance and Operations"
 description: "Med Økonomirapportering til Finance and Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Med Økonomirapportering til Finance and Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter.
 
 Økonomirapportering omfatter understøttelse af dimension. Derfor er kontosegmenter eller dimensioner umiddelbart tilgængelige. Der kræves ingen yderligere værktøjer eller konfigurationstrin.
+
+## <a name="financial-reporting-setup"></a>Konfiguration af økonomirapportering
+På siden **Konfiguration af økonomirapportering** findes en liste over alle økonomiske dimensioner i systemet. **Finans** > **Opsætning Finans** > **Konfiguration af økonomirapportering**. 
+
+Siden **Konfiguration af økonomirapportering** består af to sektioner, der bestemmer, hvilke data du rapportere om i Økonomirapportering:
+
+• **Fanen Dimensioner** - Forskellige firmaer bruger forskellige dimensioner og kontostrukturer, og det er derfor ikke muligt at bestemme den rækkefølge, brugerne vil se alle økonomiske dimensioner i rapporter. På denne side kan du angive den rækkefølge, du vil have, at økonomiske dimensioner skal vises i, når du opretter og får vist en rapport i Økonomirapportering.
+
+• **Fanen Attributter** er der, hvor du kan vælge, om du vil kunne bruge **Kreditorer** og **Debitorer** som attributter til filtrering og rapportdesign. Rapportering om kreditorer og debitorer er kun praktisk, hvis du ikke angiver flere kreditorer eller debitorer i et enkelt bilag ved bogføring af transaktioner. Valg af kreditorer og/eller debitorer betyder ekstra integrationstid.
+
+
 
 ## <a name="financial-reporting-components"></a>Komponenter i økonomirapportering
 Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og planlægge rapporter.

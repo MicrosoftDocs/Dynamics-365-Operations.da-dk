@@ -3,7 +3,7 @@ title: Registrerings-id'er
 description: "Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e85e1ef9bb27e3644264c898feb3a484c5b3ec3f
+ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
+ms.openlocfilehash: e908d4ec41263ed4230ea5e70fa08db793abedc6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/28/2017
 
 ---
 
@@ -98,6 +98,12 @@ Følgende tabel indeholder de understøttede registreringstyper i Finance and Op
 | OGRN                                                          | Den Russiske Føderation| OGRN (lovgivningsmæssig type OGRN i AX 2012 R3) |
 | SNILS                                                         | Den Russiske Føderation| SNILS (lovgivningsmæssig type SNILS i AX 2012 R3)|
 | CIFTS                                                         | Den Russiske Føderation| CIFTS (lovgivningsmæssig type CIFTS i AX 2012 R3)|
+| Pas                                                      | Spanien             | Pas|
+| Officielt identifikationsdokument                              | Spanien             | Officielt identifikationsdokument|
+| Bopælscertifikat                                         | Spanien             | Bopælscertifikat|
+| Andet identifikationsdokument                                 | Spanien             | Andet identifikationsdokument|
+| Ikke anvendt                                                  | Spanien             | Ikke tilgængelig i AX 2012 R3|
+
 
 Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder nødvendige forudsætninger, i følgende opgaveregistreringer for moms-ID i Lifecycle Services (LCS):
 

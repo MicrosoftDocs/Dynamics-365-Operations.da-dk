@@ -3,7 +3,7 @@ title: Tastaturgenveje
 description: "Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -34,10 +34,14 @@ Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Op
 
 **Bemærk!** De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
+## <a name="finding-a-shorcut"></a>Søge efter en genvej
+Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden. 
+
+
 ## <a name="action-shortcuts"></a>Handlingsgenveje
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **For at gøre det**                                    | **Tryk på**                        |
+| **Hvis du vil gøre dette**                                    | **Tryk på**                        |
 | Åbne handlingssøgning                                | Ctrl+’ eller Alt+Q                  |
 | Flytte til standardhandlingsruden                  | Alt+M, A eller Ctrl+F6               |
 | Åbne en fane i handlingsruden eller en menu           | Enter eller mellemrum eller Alt+pil ned |
@@ -48,13 +52,14 @@ Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Op
 | Udføre standardknappen i en formular/dialogboks   | Alt+Enter                        |
 | Klikke på en knap eller et felt                            | Enter eller mellemrum                   |
 | Vise opdaterede oplysninger for et antalsfelt         | Alt+pil op                     |
+| Vis genveje, der er tilgængelige i øjeblikket                | Alt+Skift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Genveje for datovælger
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Hvis du vil gøre dette**                        | **Tryk på**                                 |
 | Åbne datovælgeren                  | Alt+pil ned                            |
-| Flytte mellem datoerne i datovælgeren | CTRL+piletast                               |
+| Flytte mellem datoerne i datovælgeren | CTRL+piletast                           |
 | Flytte til næste/forrige måned       | Page down/Page up                       |
 | Flytte til næste/forrige år        | Ctrl+Skift+Page down/Ctrl+Skift+Page up |
 | Flytte til i dag                         | Ctrl+Home                                 |
@@ -65,6 +70,7 @@ Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Op
 ## <a name="factbox-shortcuts"></a>Genveje i faktaboks
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Hvis du vil gøre dette**                                                                  | **Tryk på**                                 |
 | Åbne faktaboksruden (eller flytte fokus til faktaboksruden, hvis den allerede er åben) | Alt+M, B eller Ctrl+F2                        |
 | Lukke faktaboksruden (med fokus i faktaboksruden)                         | Esc                                       |
 | Flytte til næste/forrige faktaboks (med fokus i faktaboksruden)              | Alt+Skift+pil ned/Alt+Skift+pil op |

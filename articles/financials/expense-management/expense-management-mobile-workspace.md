@@ -3,7 +3,7 @@ title: "Arbejdsområde til udgiftsstyring på mobilenhed"
 description: "Dette emne indeholder oplysninger om arbejdsområdet Udgiftsstyring på mobilenheder. I dette arbejdsområde kan brugerne hente og sende en kvittering, så de senere kan knytte den til en udgiftsrapport. Brugerne kan også hurtigt oprette en udgiftslinje ved hjælp af en vedhæftet kvittering, og oprette og administrere deres udgiftsrapporter."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ Med arbejdsområdet **Udgiftsstyring** på mobilenheder kan brugerne udføre dis
 - Overføre en fil som hentet kvittering. Du kan derefter knytte filen til en udgiftsrapport senere.
 - Oprette en ny udgiftslinje ved hjælp af en tilknyttet kvittering. Du kan derefter føje linjeelementet til en udgiftsrapport senere og sende det til godkendelse og refusion.
 
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), kan du også bruge disse funktioner:
+Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, kan du også bruge disse funktioner:
 
 - Oprette en ny udgiftsrapport.
 - Tilknytte kreditkorttransaktioner og andre udgifter, der tidligere er oprettet, til en udgiftsrapport.
@@ -60,8 +60,8 @@ Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 ## <a name="prerequisites"></a>Forudsætninger
 Forudsætningerne varierer, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) 
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Udgiftsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
+Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Udgiftsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 

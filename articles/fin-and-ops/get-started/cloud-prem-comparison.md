@@ -3,7 +3,7 @@ title: "Sammenligning af funktioner i skyen og på arbejdsstedet"
 description: "Emnet viser, hvilke funktioner der understøttes i skyen og lokalt."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | | Integration med PowerBI.com| Ja | Nr. |
 | | Analytiske arbejdsområder | Ja | Nr. |
 | | Intelligent forretningsproces: anbefalinger| Ja | Nr. |
+| | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery | Ja | Nr. |
+| | SQL Server Reporting Services (SSRS) understøtter udskalering  | Ja | Nr. |
+| | Telemetri overføres til skyen | Ja | Nr. |
 | Lagerstyring| | Ja | Ja |
 | Lifecycle Services| | Ja | Ja |
 | | Forretningsprocesser, der kan konfigureres | Ja | Nr. |
@@ -86,7 +89,7 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Transportstyring| | Ja | Ja |
 | Kreditorsamarbejde| | Ja | Ja|
 | Lokationsstyring| | Ja | Ja |
-| | Lagerstedsapp til mobil| Ja | Nr. |
+| | Lagerstedsapp til mobil| Ja | Ja |
 | | Power BI-rapporter om lagersted| Ja | Nr. |
 | Webklient | | Ja | Ja |
 | | Arbejdsrutineoptager - gemme eller indlæse opgaveregistreringer fra BPM-biblioteket| Ja | Nr. |
@@ -103,6 +106,7 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Platformkompatibilitet  || Ja | Ja |
 | Servicering | | Ja | Ja |
 | | Service af miljøer | Ja | Nr. |
+| Trace Parser og PerfTimer | | Ja | Nr. |
 | Opgrader | | Ja | Ja |
 | | Opgrader | Ja | Nr. |
 | | Opgradering og understøttelse af tidligere versioner | Ja | Nr. |
@@ -121,6 +125,8 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 |---|---|---|---|
 | Alle Talent-områder | Alle Talent-funktioner | Ja | Nr. |
 
+## <a name="see-also"></a>Se også
 
+- [Funktioner, der endnu ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md)
 
 

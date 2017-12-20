@@ -3,7 +3,7 @@ title: Power BI-indhold
 description: "Dette emne beskriver det Power BI-indhold, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om det."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ffae237693ebf0b0feedf7c60230590d95eed3d4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/03/2017
 
 Dette emne beskriver det Microsoft Power BI-indhold, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om det.
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Power BI-indhold til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) er følgende Power BI-indhold tilgængeligt:
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Power BI-indhold til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
+Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition er følgende Power BI-indhold tilgængeligt:
 
 - [Power BI-indhold til Faktisk vs. budget](ledger-budgets-power-bi.md)
 - [Power BI-indhold for frynsegoder](benefits-power-bi.md)

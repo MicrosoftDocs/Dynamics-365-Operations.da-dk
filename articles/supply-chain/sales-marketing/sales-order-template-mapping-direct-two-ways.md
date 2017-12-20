@@ -1,6 +1,6 @@
 ---
 title: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
-description: "Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at køre tovejssynkronisering af salgsordrehoveder og -linjer direkte mellem Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at køre synkronisering af salgsordrer direkte mellem Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at køre tovejssynkronisering af salgsordrehoveder og -linjer direkte mellem Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at køre synkronisering af salgsordrer direkte mellem Microsoft Dynamics 365 for Sales og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
 For at få adgang til de tilgængelige skabeloner, skal du åbne [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Vælg **Projekter**, og vælg derefter i øverste højre hjørne **Nyt projekt** for at vælge offentlige skabeloner.
 
-Følgende skabeloner og underliggende opgaver bruges til at køre tovejssynkronisering af salgsordrehoveder og -linjer direkte mellem Sales og Finance and Operations:
+Følgende skabeloner og underliggende opgaver bruges til at køre synkronisering af salgsordrer direkte mellem Sales og Finance and Operations:
 
 - **Navne på skabeloner i dataintegration:** 
 
