@@ -3,7 +3,7 @@ title: Power BI-indhold til Faktisk vs. budget
 description: "I dette emne beskrives Power BI-indhold til Faktisk vs. budget. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet."
 author: ryansandness
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f09af96fb1c76d8737d2c535f1a46565a18deca0
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 2a0ad5af4e4d7da09690331dc9d1a51d2e97a664
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ I dette emne beskrives Microsoft Power BI-indhold til **Faktisk vs. budget**. De
 Power BI-indholdet til **Faktisk vs. budget** er beregnet til personer, der er ansvarlige for at overvåge performance for faktisk vs. budget i deres organisation. Power BI-indholdet til **Faktisk vs. budget** skaber synlighed i dine budgetafvigelser. Du kan analysere budgettet for det indeværende år efter kontokategori, budgetkode, hovedkonto, beskrivelser af hovedkonto eller regnskabsperiode for at få en bedre forståelse af årsagen til eventuelle afvigelser. 
 
 # <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises rapporter fra Power BI-indholdet til **Faktisk vs. budget** i arbejdsområderne **Finansbudgetter og budgetter** og **Regnskabsdirektør**.
+Rapporter fra Power BI-indholdet **Faktisk vs. budget** vises i arbejdsområderne **Finansbudgetter og budgetter** og **Regnskabsdirektør** .
 
 # <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet til **Faktisk vs. budget**.

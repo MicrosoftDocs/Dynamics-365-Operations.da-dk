@@ -3,7 +3,7 @@ title: "Power BI-indhold for regnskabsdirektørens oversigt"
 description: "Dette emne beskriver Microsoft Power BI-indhold for regnskabsdirektørens oversigt."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Dette emne beskriver Microsoft Power BI-indhold for **Regnskabsdirektørens over
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
-Hvis du bruger Opdateringen til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises rapporterer fra Power BI-indholdet for **Regnskabsdirektørens oversigt** i arbejdsområdet **Regnskabsdirektørens oversigt**.
+Rapporter fra Power BI-indholdet **Regnskabsdirektørens oversigt** vises i arbejdsområdet **Regnskabsdirektørens oversigt**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 Power BI-indhold for **Regnskabsdirektørens oversigt** er sammensat af rapporter fra forskellige andet Power BI-indhold, sammen med nogle faktiske og budgetterede saldi fra Finans. Derfor giver dette Power BI-indhold regnskabsdirektøren en oversigt over organisationen.

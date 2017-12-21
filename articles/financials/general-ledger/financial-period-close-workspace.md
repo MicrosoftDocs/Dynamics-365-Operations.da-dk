@@ -3,7 +3,7 @@ title: "Arbejdsområde til afslutning på regnskabsperiode"
 description: "Denne artikel indeholder en oversigt over arbejdsområdet Afslutning på regnskabsperiode og den tilknyttede konfiguration."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ Du kan tildele en opgave i skabelonen til en eller flere virksomheder, hvor opga
 
 Menupunktet **Opgavelink** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. n afsluttende opgave, der kører processen til valutaregulering for Kreditor, kan f.eks. knyttes til den tilhørende side med **Kursregulering** i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan også foretage sammenkædning til en ekstern URL-adresse. 
 
-> [Tip!] Hvis du vil sammenkæde en bestemt Management Reporter-rapport med en opgave til afslutning på regnskabsperiode, kan du bruge URL-adressen til rapporten. For at få adgang til URL-adressen til rapporten skal du åbne rapporten i rapportdesigneren og derefter klikke på **Filer** &gt; **Vis rapport** for at åbne rapporten i en webbrowser. Du kan derefter kopiere URL-adressen på browserens adresselinje og indsætte den i **URL-adressen** til feltet **Opgavelink**. 
+> [!TIP]
+> Hvis du vil sammenkæde en bestemt Management Reporter-rapport med en opgave til afslutning på regnskabsperiode, kan du bruge URL-adressen til rapporten. For at få adgang til URL-adressen til rapporten skal du åbne rapporten i rapportdesigneren og derefter klikke på **Filer** &gt; **Vis rapport** for at åbne rapporten i en webbrowser. Du kan derefter kopiere URL-adressen på browserens adresselinje og indsætte den i **URL-adressen** til feltet **Opgavelink**. 
 
 Du kan definere opgaveafhængigheder i skabelonen. Hvis en opgave er indstillet til at afhænge af en eller flere opgaver, kan opgaven ikke markeres som fuldført, før alle afhængigheder er opfyldt. 
 

@@ -3,7 +3,7 @@ title: Power BI-indhold til rekruttering
 description: "I dette emne beskrives Power BI-indholdet til Rekruttering. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 42d7b94e655799596f478e7592a17437b336099e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 I dette emne beskrives Microsoft Power BI-indholdet til **Rekruttering**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises Power BI-indholdet til **Rekruttering** i arbejdsområdet **Administration af rekruttering**. 
+Power BI-indholdet **Rekruttering** vises i arbejdsområdet **Administration af rekruttering**. 
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter og grafik i arbejdsområdet Administration af rekruttering
 Arbejdsområdet **Administration af rekruttering** indeholder fanen **Analyser**. Denne fane indeholder integreret Power BI-indhold til rekruttering. Indholdet består af en fane med en oversigt og yderligere faner, der indeholder detaljer. Rapporterne er beskrevet under hver fane i følgende tabel.

@@ -3,7 +3,7 @@ title: Power BI-indhold til styring af kredit og inkasso
 description: "I dette emne beskrives, hvad der indgår i Power BI-indhold til styring af kredit og inkasso. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f08df6cb8549e87e123b10c5a771ae1c60ff39c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 536ebae3ec44954aba314a966c9b0d2dabef45d1
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Alle beløb vises i systemvalutaen. Du kan angive systemvalutaen på siden **Sys
 Som standard vises kredit og rykkerdata for det aktuelle firma. Hvis du vil se dataene i alle firmaer, kan du tildele afgiften **CustCollectionsBICrossCompany** for rollen.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises Power BI-indholdet **Styring af kredit og inkasso** i arbejdsområdet **Kundekredit og inkasso**.
+Power BI-indholdet **Styring af kredit og inkasso** vises i arbejdsområdet **Kundekredit og inkasso**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 

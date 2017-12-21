@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 88e4737bd8abf7f7dbab54fa6fb18afa525177e9
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 233d91138b11905d971be90154da54e61bbe2919
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -84,13 +84,13 @@ Tabellen nedenfor indeholder links til ressourcer, der kan hjælpe dig med at im
 <tr class="odd">
 <td>1</td>
 <td>Systemadministrator</td>
-<td>Implementer Finance and Operations eller Finance and Operations i organisationen.</td>
+<td>Implementer Finance and Operations i din organisation.</td>
 <td><ul><li>Hvis du endnu ikke har installeret en version af Microsoft Dynamics 365, kan du se under <a href="../deployment/deploy-demo-environment.md">Installere et demomiljø</a>.</li><li>Du kan se en liste over arbejdsområder til mobilenheder, der kan bruges, under <a href="mobile-workspaces-released.md">Arbejdsområde til mobilenheder, der er udgivet for nylig</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Systemadministrator</td>
-<td><strong>Hvis du bruger Microsoft Dynamics 365 til Finance and Operations version 1611:</strong> Hent og installer KB'er, der gør det muligt at bruge de arbejdsområder til mobilenheder, der leveres af Microsoft.</td>
+<td><strong>Hvis du bruger Microsoft Dynamics 365 for Finance and Operations version 1611:</strong> Hent og installer KB'er, der gør det muligt at bruge de arbejdsområder til mobilenheder, der leveres af Microsoft.</td>
 <td>Du kan finde flere oplysninger under følgende emner:
 <ul>
 

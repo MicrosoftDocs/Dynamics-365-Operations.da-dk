@@ -3,7 +3,7 @@ title: "Mobilarbejdsområde for kreditorsamarbejde"
 description: "Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 850a5dceb9ea084d9964094c0e2ba5325025fb5e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 6028f6007cf2fd3f21c2e6cf3f5fac85c6e0da0a
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -60,8 +60,8 @@ Arbejdsområdet **Kreditorsamarbejde** til mobilenheder giver en leverandør mul
 ## <a name="prerequisites"></a>Forudsætninger
 Forudsætningerne varierer alt efter, hvilken version af Microsoft Dynamics 365 der er installeret i din organisation.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) 
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Kreditorsamarbejde** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
+Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Kreditorsamarbejde** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 

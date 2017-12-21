@@ -3,7 +3,7 @@ title: Power BI-indhold til lagerstedsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til lagerstedsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Lagerchefer kan bruge Power BI-indhold til **Lagerstedsperformance** til at mål
 -   **Lagernøjagtighed på lokation**: Lagernøjagtighed er vigtig intern business intelligence (BI) for et lagersted. Det er meget vigtigt, at du bestemmer, hvor præcise dine optællinger er generelt. Men det er også vigtigt at fastlægge, hvor nøjagtig din opbevaring af varer er på de rette steder, og at du fremhæver data vedr. uoverensstemmelser, så du kan finde bedre placeringer til varer eller starte en samlet optælling af bestemte varer. (I øjeblikket leveres den nye varebaserede funktionalitet til optælling som et hotfix). Hvis du bruger dette Power BI-indhold til at bestemme korrektheden af dataene for den disponible lagerbeholdning pr. lokation, kan du også identificere tyveri i dine butikker. Du kan også bestemme, om der er disponible mængder på andre lokaliteter, der afviger fra ERP-dataene (enterprise resource planning). Disse lokaliteter kan være for store, eller de kan være umulige at tælle. Det kan også være, at den fysiske placering er uhensigtsmæssig, så det er svært at holde en enkelt type vare synkroniseret med disponible data.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Adgang til Power BI-indholdspakke
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) vises **Lagerstedperformance** Power BI-indhold på siden **Lagerstedperformance** (**Lokationsstyring** > **Forespørgsler og rapporter** > **Performanceanalyse for lagersted** > **Lagerstedperformance**). 
+Power BI-indholdet **Lagerstedperformance** vises på siden **Lagerstedperformance** (**Lokationsstyring** > **Forespørgsler og rapporter** > **Performanceanalyse for lagersted** > **Lagerstedperformance**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Power BI indholdet til **Lagerstedsperformance** omfatter en rapport. Denne rapport består af en række målinger, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Lagerstedsperformance**.

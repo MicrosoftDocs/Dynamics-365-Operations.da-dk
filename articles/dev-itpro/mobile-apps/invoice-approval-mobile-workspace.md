@@ -3,7 +3,7 @@ title: "Arbejdsområde for fakturagodkendelser på mobilenheder"
 description: "Dette emne indeholder oplysninger om arbejdsområdet til fakturagodkendelse på mobilenheder. Arbejdsområdet indeholder en liste over fakturaer, der er tildelt til dig via arbejdsgangen for kreditorfakturahovedet."
 author: abruer
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: af673f076f684500b6ca84d04c01f7f773d65cd6
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 03179fdfd23e26250af92eb70d2ede710bd7007f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Før du kan bruge dette mobilarbejdsområde, skal følgende forudsætninger vær
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) skal være installeret i organisationen.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition skal være installeret i organisationen.</td>
 <td>Systemadministrator</td>
 <td>Se <a href="../deployment/deploy-demo-environment.md">Installere et demomiljø</a>.
 </td>

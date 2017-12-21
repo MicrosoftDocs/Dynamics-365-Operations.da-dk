@@ -3,7 +3,7 @@ title: Power BI-indhold for kompensation
 description: "Dette emne beskriver Power BI-indhold for kompensation. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f97b1323e739196ae58369a3d66de6a65df94f83
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 7143a2750d284080609c884ce15bc2b2e8943394
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ I dette emne beskrives **Kompensation** i Microsoft Power BI-indhold. Det beskri
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 Power BI-indholdet for **Kompensation** vises i arbejdsområdet **Kompensationsstyring**, hvis du bruger et af følgende produkter:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet

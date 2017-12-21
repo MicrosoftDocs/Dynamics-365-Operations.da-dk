@@ -3,7 +3,7 @@ title: "Power BI-indhold til købsforbrugsanalyse"
 description: "I dette emne beskrives, hvad der skal medtages i Power BI-indhold til Købsforbrugsanalyse. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Power BI-indholdet til **Købsforbrugsanalyse** er udviklet til at hjælpe indk�
 Indholdet bruger købstransaktionsdata og indeholder både en samlet oversigt over alle firmaets købstal og en opdeling af købsforbrug pr. leverandør og vare. Rapporter fremhæve ændringer i købsforbruget over tid. Derfor kan rapporterne bruges til at give ledere besked om positive og negative forbrugstendenser for individuelle leverandører og produkter. Desuden viser diagrammer købsforbruget til forskellige indkøbskategorier og kreditorgrupper. Derfor kan kategori- og områdeledere bruge diagrammerne til at identificere ændringer i forbrugsmønsteret.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) vises Power BI-indholdet til **Købsforbrugsanalyse** på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** > **Forespørgsler og rapporter** > **Performanceanalyse for indkøb** > **Købs- og forbrugsanalyse**). 
+Power BI-indholdet **Købsforbrugsanalyse** vises på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** > **Forespørgsler og rapporter** > **Performanceanalyse for indkøb** > **Købs- og forbrugsanalyse**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne.

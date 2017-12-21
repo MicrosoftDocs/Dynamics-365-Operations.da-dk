@@ -3,7 +3,7 @@ title: Power BI-indhold for oversigt over kontanter
 description: "Dette emne beskriver Power BI-indhold for oversigt over kontanter. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdet."
 author: saraschi2
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fdcd3083f475967ec2e5f94dad850a1bf98c864a
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 8a3d12b3b0f71ea8b84b1618d9bb6bbc416e3b1d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -35,7 +35,7 @@ Power BI-indholdet for **Oversigt over kontanter** blev oprettet for personer, d
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
-Hvis du bruger Opdateringen til Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises rapporterer fra Power BI-indholdet **Oversigt over kontanter** i arbejdsområderne **Oversigt over kontanter** og **Bankstyring**.
+Rapporter fra Power BI-indholdet **Oversigt over kontanter** vises i arbejdsområderne **Oversigt over kontanter** og **Bankstyring**.
 
 For at få vist rapporter over likviditetsbudgettering med data skal du først køre budgetteringsberegningsprocessen ved hjælp af funktionen **Beregn likviditetsbudgetter** fra området Likviditets- og bankstyring.  Dette skal udføres for hvert regnskab, der er medtaget i budgettet.  På siden **Enhedslager** skal du derefter opdatere den samlede LedgerCovLiquidityMeasurement-måling.  
 

@@ -3,7 +3,7 @@ title: Power BI-indhold for praksischef
 description: "I dette emne beskrives, hvad der er medtaget i Power BI-indhold til praksischef. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ Power BI-indholdet til **Praksischef** indeholder fem rapportsider: en oversigts
 Alle beløb i indholdet vises i systemvalutaen. Du kan angive systemvalutaen på siden **Systemparametre**.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017), vises Power BI-indholdet til **Praksischef** i arbejdsområdet **Projektstyring**.
+Power BI-indholdet **Praksischef** vises i arbejdsområdet **Projektstyring**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 

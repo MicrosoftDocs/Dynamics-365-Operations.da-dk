@@ -3,7 +3,7 @@ title: Driftsregnskab i Power BI-indhold
 description: I dette emne beskrives Power BI-indhold til Driftsregnskab. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Du kan få adgang til Power BI-indhold til **Driftsregnskab** fra Microsoft Dyna
 ### <a name="available-from-lcs"></a>Tilgængelig fra LCS
 Power BI-indholdet til **Driftsregnskab**, som er tilgængeligt fra LCS, understøtter følgende versioner:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition-versioner
 - Microsoft Dynamics 365 for Operations version 1611 
 
 Du kan finde Power BI-indhold i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indholdspakken og implementerer den i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
