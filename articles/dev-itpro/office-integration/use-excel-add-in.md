@@ -3,7 +3,7 @@ title: "Brug af Excel-tilføjelsesprogrammet"
 description: "Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
-ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
+ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
+ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 11/07/2017
 
 ---
 
@@ -104,6 +104,18 @@ Du kan bruge designeren til at justere de kolonner, der automatisk er føjet til
 
 4. Du anvender dine ændringer af datakilden ved at vælge **Opdater**. Vælg derefter **Udført** for at lukke designeren.
 5. Hvis du har tilføjet et felt (kolonne), skal du vælge **Opdater** for at trække et sæt opdaterede data ind.
+
+## <a name="copy-environment-data"></a>Kopiér miljødata
+
+De data, der indlæses i projektmappen fra ét miljø kan kopieres til et andet miljø. Du kan ikke dog kun ændre URL-adressen for forbindelsen, fordi datacachen i projektmappen vil fortsætte med at behandle dataene som en eksisterende data. I stedet skal du bruge funktionen Kopiér miljødata for at udgive dataene til et nyt miljø som nye data.
+
+1. Vælg knappen **Indstillinger** (tandhjulssymbolet), og på oversigtspanelet **Dataconnector** skal du derefter vælge **Kopiér miljødata**. 
+2. Angiv URL-adressen til serveren til det nye miljø. 
+3. Vælg **OK**, og vælg derefter **Ja** for at bekræfte handlingen. Excel-tilføjelsesprogrammet genstartes, og opretter forbindelse til det nye miljø. Alle eksisterende data i projektmappen behandles som nye data.
+
+    Når Excel-tilføjelsesprogrammet er genstartet, viser et meddelelsesfelt, at projektmappen er i miljøkopieringstilstand.
+
+4. Hvis du vil kopiere dataene til det nye miljø som nye data, skal du vælge **Udgiv**. Hvis du vil annullere miljøkopieringshandlingen og gennemse de eksisterende data i det nye miljø, skal du vælge **Opdater**.
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Der er nogle få problemer, der kan løses gennem nogle nemme trin.
