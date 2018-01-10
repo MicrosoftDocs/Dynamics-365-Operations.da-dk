@@ -3,7 +3,7 @@ title: Projektstyring og regnskab
 description: "Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat."
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
