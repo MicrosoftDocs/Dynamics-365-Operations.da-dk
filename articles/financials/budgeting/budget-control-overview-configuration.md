@@ -3,7 +3,7 @@ title: Oversigt over budgetstyring
 description: "Denne artikel introducerer budgetstyring og oplysninger for at hjælpe dig med at konfigurere budgetstyring i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, så du kan administrere finansielle midler."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
