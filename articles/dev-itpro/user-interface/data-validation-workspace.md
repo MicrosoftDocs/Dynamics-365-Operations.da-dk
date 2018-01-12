@@ -3,7 +3,7 @@ title: "Arbejdsområde for datavalidering"
 description: "I arbejdsområdet Kontrolliste for datavalidering kan du spore processer til validering af data på tværs af firmaer, områder og personer. Kontrollisten kan bruges under en ny implementering efter en opgradering eller efter en overførsel."
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
