@@ -3,7 +3,7 @@ title: "Budgetplanlægningsskabeloner til Excel"
 description: I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: 63bf043124797b328116fd7951913eaeda6ff97b
+ms.openlocfilehash: 747e57b11c13f71c672d43531255751ff273f57c
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/03/2017
 > [!NOTE] 
 > <span data-ttu-id="d29d2-154">For at definere formlen skal du oprette formlen i regnearket og derefter kopiere det til **Design** vinduet.</span><span class="sxs-lookup"><span data-stu-id="d29d2-154">To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window.</span></span> <span data-ttu-id="d29d2-155">En tabel, der er bundet til Finance and Operations, får typisk navnet "AXTable1".</span><span class="sxs-lookup"><span data-stu-id="d29d2-155">A Finance and Operations bound table will typically be named "AXTable1".</span></span> <span data-ttu-id="d29d2-156">For at opsummere kolonnerne for anmodningen Første kvartal til anmodningen Fjerde kvartal i regnearket bruges formlen = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span><span class="sxs-lookup"><span data-stu-id="d29d2-156">For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span></span>
 
-<span data-ttu-id="d29d2-157">Gentag disse trin for at indsætte kolonnen **Regulering**.</span><span class="sxs-lookup"><span data-stu-id="d29d2-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="d29d2-158">Brug formlen = AxTable1\[Total request\]\*$I$ 1 for denne kolonne.</span><span class="sxs-lookup"><span data-stu-id="d29d2-158">Use formula = AxTable1\[Total request\]\*$I$1 for this column.</span></span> <span data-ttu-id="d29d2-159">Dette vil tage værdien i celle I1 og multiplicere værdierne i kolonnen **Anmodet i alt** for at beregne reguleringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="d29d2-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
+<span data-ttu-id="d29d2-157">Gentag disse trin for at indsætte kolonnen **Regulering**.</span><span class="sxs-lookup"><span data-stu-id="d29d2-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="d29d2-158">Brug formlen = AxTable1\[Total request\]\\*$I$ 1 for denne kolonne.</span><span class="sxs-lookup"><span data-stu-id="d29d2-158">Use formula = AxTable1\[Total request\]\\*$I$1 for this column.</span></span> <span data-ttu-id="d29d2-159">Dette vil tage værdien i celle I1 og multiplicere værdierne i kolonnen **Anmodet i alt** for at beregne reguleringsbeløb.</span><span class="sxs-lookup"><span data-stu-id="d29d2-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
 
 <span data-ttu-id="d29d2-160">Gem og luk Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="d29d2-160">Save and close the Excel file.</span></span> <span data-ttu-id="d29d2-161">Gå tilbage til Finance and Operations og klik i **Layout** på **Skabelon &gt; Overfør** for at overføre den gemte Excel-skabelon, der skal bruges til budgetplanen.</span><span class="sxs-lookup"><span data-stu-id="d29d2-161">Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan.</span></span> 
 
