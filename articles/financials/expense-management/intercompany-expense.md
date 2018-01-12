@@ -3,7 +3,7 @@ title: Interne udgifter
 description: "En medarbejder, der er ansat af en juridisk enhed i en organisation, kan udføre arbejde for en anden juridisk enhed i den samme organisation. I denne situation kan du bruge funktionaliteten til interne udgifter til at tildele medarbejderens udgifter til den juridiske enhed, som arbejdet blev udført for."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

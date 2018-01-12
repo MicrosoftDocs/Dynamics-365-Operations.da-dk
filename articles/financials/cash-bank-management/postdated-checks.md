@@ -3,7 +3,7 @@ title: Fremdaterede checks
 description: "Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

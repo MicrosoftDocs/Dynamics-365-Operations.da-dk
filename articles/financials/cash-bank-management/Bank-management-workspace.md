@@ -3,7 +3,7 @@ title: "Arbejdsområde for bankstyring"
 description: "Dette emne indeholder oplysninger om arbejdsområdet Bankstyring. Dette arbejdsområde viser oplysninger, der er relateret til et firmas bankkonti og indeholder en oversigtsvisning og en analyseside. Oversigtsvisningen indeholder oversigtsfelter, bankkontooplysninger, et saldodiagram og relaterede oplysninger. Analysesiden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører bankkontosaldi."
 author: saraschi2
 manager: AnnBe
-ms.date: 01/18/2018
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

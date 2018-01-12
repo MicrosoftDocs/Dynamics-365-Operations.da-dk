@@ -3,7 +3,7 @@ title: "Budgetplanlægning"
 description: "Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

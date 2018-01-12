@@ -3,7 +3,7 @@ title: Remburser
 description: "Remburser er bankdokumenter, der ofte bruges ved køb og salg af varer på tværs af internationale grænser."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
