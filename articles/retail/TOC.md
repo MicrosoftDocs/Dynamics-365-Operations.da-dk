@@ -41,9 +41,10 @@
 ## [Definere detailkanaler](define-maintain-retail-channels.md)
 ## [Oversigt over Onlinebutik](online-stores.md)
 ## [Konfigurere og installere en detailhardwarestation](retail-hardware-station-configuration-installation.md)
-## [Detailtid og fremmøde](retail-time-attendance.md)
+## [Retail-tid og fremmøde](retail-time-attendance.md)
 
 # Modern Point of Sale (MPOS) og Cloud POS
+## [Vælge mellem Modern POS og Cloud POS](MPOS-or-CPOS.md)
 ## [POS-handlinger](POS-operations.md)
 ## [Skærmlayout for demodata i MPOS/CPOS](demo-data.md)
 ## Hardware og ydre enheder
@@ -76,6 +77,11 @@
 ### [Konfigurere kvitteringsskabeloner](receipt-templates-printing.md) 
 ### [Sende mailkvitteringer fra MPOS](email-receipts.md)
 ## [Arbejdsrutineoptager og Hjælp til POS](task-recorder-retail-pos.md)
+
+# Ordreopfyldning
+## [Oversigt over butiksordreopfyldning](Order-fulfillment-overview.md)
+## [Konfigurere opfyldning i butik](Order-fulfillment-POS-setup.md)
+## [Aktivere beskeder på POS](Notifications-POS.md)
 
 # Overvågning og analyse
 ## [Overvåge salgs- og avanceudvikling](monitor-sales-margin-performance.md)
@@ -184,7 +190,7 @@
 ### [Konfiguration og installation af Retail Modern POS](retail-modern-pos-device-activation.md)
 ### [Administrere Retail-konti og -enheder fra hovedkontoret](set-up-activation-accounts-validate-devices-hq.md)
 ### [Enhedsaktivering for Retail POS](dev-itpro/retail-device-activation.md)
-### [Sikker Retail sky-POS](dev-itpro/secure-retail-cloud-pos.md)
+### [Sikker Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration og installation af Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Masseinstallation af Retail-selvbetjeningskomponenter](dev-itpro/retail-mass-deployment.md)
 ### [Hændelser i Retail-komponenter for diagnosticering og fejlfinding](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -258,8 +264,10 @@
 ### [Føje tilpassede kontrolelementer til Retail Modern POS-transaktionssider](dev-itpro/pos-custom-transaction.md)
 ### [Føje brugerdefinerede kolonner til et POS-transaktionsgitter](dev-itpro/pos-custom-transaction-column.md)
 ### [Kalde et POS-API eller en operation fra en POS-udvidelse](dev-itpro/pos-api-extension.md)
-### [Udvide eksisterende POS-visninger for at tilføje brugerdefinerede kolonner og knapper på applinjen](dev-itpro/pos-view-extension.md)
 ### [Retail Modern POS-udløsere og udskrivning](dev-itpro/pos-trigger-printing.md)
+### [Føje et brugerdefineret kontrolelement til en Retail Modern POS-designerbaseret visning uden skærm](dev-itpro/pos-control-non-screen.md)
+### [Generere Retail-proxy til POS- og e-handel](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurationstrin for Retail-udviklere, der arbejder på skybaserede udviklingsfelter](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime
 ### [Loyalitetsudvidelse](dev-itpro/retail-sdk/loyalty-extension-sample.md)

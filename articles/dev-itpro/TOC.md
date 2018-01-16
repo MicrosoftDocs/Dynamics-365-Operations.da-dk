@@ -2,6 +2,7 @@
 # [Systemkrav til skyinstallationer](../fin-and-ops/get-started/system-requirements.md)
 # [Systemkrav til lokale installationer](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Demodata](../fin-and-ops/get-started/demo-data.md)
+## [Generere demodata med pakker](data-entities/generate-demo-data-packages.md)
 
 
 # [Udvikle og tilpasse ved hjælp af Visual Studio](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Kundeservice](data-entities/custom-services.md)
 ### [Tilbagevendende integrationer](data-entities/recurring-integrations.md)
+### [Bruge tjenestetestværktøjer fra tredjepart i tjenester](data-entities/third-party-service-test.md)
 
 ## Udvikling med henblik på integration
 ### [Dataintegration med dataenheder](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Konfigurationsdatapakker](data-entities/configuration-data-packages.md)
 ### [Kopiere konfigurationsdata mellem firmaer](data-entities/copy-configuration.md)
 ### [Konfigurationsdataskabeloner](data-entities/configuration-data-templates.md)
+### [Dataskabeloner med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore ændringer i en enhed](data-entities/entity-change-track.md)
 
 ## Standarddataenheder
@@ -501,13 +504,16 @@
 
 ## [Lokal installation](deployment/on-premises-deployment-landing-page.md)
 ### [Oversigt over lokal installation](deployment/on-premises-overview.md)
+### [Planlægning af lokal installation](deployment/plan-onprem-deployment.md)
 ### [Hardwaretilpasning](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Oprette et lokalt projekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurere og installere lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 ### [Udvikle og installere brugerdefinerede modeller i lokale miljøer](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Anvende opdateringer på en lokal installation](deployment/apply-updates-on-premises.md)
 ### [Geninstallere en lokal installation](deployment/redeploy-on-prem.md)
-### [Fejlfinde Dynamics 365 for Finance and Operations, Enterprise edition lokal installation](deployment/troubleshoot-on-prem.md)
+### [Opdatere den lokale agent](lifecycle-services/update-local-agent.md)
+### [Omkonfigurere et miljø](lifecycle-services/reconfigure-environment.md)
+### [Fejlfinding i Dynamics 365 for Finance and Operations, Enterprise edition til det lokale miljø](deployment/troubleshoot-on-prem.md)
 
 ## Installere brugerdefineret kode
 ### [Oprette en installerbar pakke](deployment/create-apply-deployable-package.md)
