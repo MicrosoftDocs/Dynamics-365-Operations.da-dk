@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: da-dk
 ms.lasthandoff: 09/29/2017
 
 ---
-# Kontrollere tilgængelighed af lagerbeholdning
+# <a name="check-the-availability-of-stock"></a>Kontrollere tilgængelighed af lagerbeholdning
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponibel lagerbeholdning for et bestemt varenummer. Den viser også, hvordan du får leveringsoplysninger relateret til en vare. Fysisk disponibel lagerbeholdning er den disponible lagerbeholdning, der er tilgængelig – den er købt, modtaget og registreret. Den disponible lagerbeholdning indeholder den tilgængelige disponible lagerbeholdning, men også det lager, der er bestilt og forventes, men endnu ikke modtaget eller registreret. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Hvis du bruger USMF, kan du bruge eksempelværdier, der vises. Disse opgaver udføres normalt af en lagerarbejder.
 
 
-## Kontrollér disponibel lagerbeholdning for en vare
+## <a name="check-on-hand-inventory-for-an-item"></a>Kontrollér disponibel lagerbeholdning for en vare
 1. Gå til Lagerstyring > Forespørgsler og rapporter > Disponibel lagerbeholdning.
 2. Vælg varenummerrækken.
     * Hvis du vil forespørge om den disponible lagerbeholdning efter varenummer, skal du markere den række, hvor tabellen er angivet til den disponible lagerbeholdning og felt er angivet til varenummer.  
@@ -49,7 +49,7 @@ Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponi
 11. Luk siden.
 12. Luk siden.
 
-## Kontrollér fysisk disponibel lagerbeholdning
+## <a name="check-physical-on-hand-inventory"></a>Kontrollér fysisk disponibel lagerbeholdning
 1. Gå til Lagerstedsstyring > Forespørgsler og rapporter > Fysisk disponibel lagerbeholdning.
 2. Indtast en værdi i feltet Varenummer.
     * Du kan bruge felterne Sted og Lagersted til at filtrere listen over varer.  
@@ -59,7 +59,7 @@ Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponi
 5. Klik på OK.
 6. Luk siden.
 
-## Kontrollér disponibel lagerbeholdning efter lokation.
+## <a name="check-on-hand-inventory-by-location"></a>Kontrollér disponibel lagerbeholdning efter lokation.
 1. Gå til Lagerstedsstyring > Forespørgsler og rapporter > Disponibel efter lokation.
 2. Skriv en værdi i feltet Lagersted.
     * Hvis du bruger demodatafirmaet USMF, kan du bruge "51".  
