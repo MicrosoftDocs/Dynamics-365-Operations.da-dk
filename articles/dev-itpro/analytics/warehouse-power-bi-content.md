@@ -3,7 +3,7 @@ title: Power BI-indhold til lagerstedsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til lagerstedsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +76,6 @@ Power BI indholdet til **Lagerstedsperformance** omfatter en rapport. Denne rapp
 | Leveringsperformance        | Afsendt efter biprodukt                       | Den procentdel, der er leveret tidligt, til tiden eller for sent efter vare eller varegruppe.                                                                                                                                                                                                                                                                                                                                   |
 | Leveringsperformance        | Afsendt efter kunder                      | Den procentdel, der er leveret tidligt, til tiden eller for sent efter kunde eller kundegruppe.                                                                                                                                                                                                                                                                                                                           |
 | Leveringsperformance        | Afsendt pr. websted/lagersted              | Den procentdel, der er leveret tidligt, til tiden eller for sent pr. sted eller lagersted.                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Udvidelse af Power BI-indhold
-Når du bruger de indholdspakker, der er tilgængelige i Microsoft Dynamics Lifecycle Services (LCS), kan du levere fremragende analyser til personer, der ikke logger på Microsoft Dynamics 365. Du kan redigere disse indholdspakker, så de omfatter andre rapporter eller grafik, og derefter udgive indholdspakkerne på din Power BI.com-lejer med henblik på analyse. 
-
-Du kan finde Power BI-indhold for **Lagerstedperformance** i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
-
-Sørg for at downloade **Lagerstedperformance**-indhold, der gælder for den version af Dynamics 365, du bruger.
-
-> [!NOTE]
-> Hvis du bruger Microsoft Dynamics 365 for Operations version 1611, er KB 4011327 en forudsætning for dette Power BI-indhold. Når du logger på LCS, kan du få adgang til KB på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Om datamodellen og beregninger
 Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Lagerstedperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). 

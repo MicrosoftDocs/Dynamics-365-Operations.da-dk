@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -38,16 +38,17 @@ En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et do
 -   **Synliggørelse af processer** – Du kan spore status, historik og performanceværdier for en bestemt arbejdsgangsforekomst. Dette hjælper dig med at bestemme, om der skal foretages ændringer i arbejdsgangen for at forbedre effektiviteten.
 -   **Centraliseret arbejdsliste**– Brugerne kan få vist en centraliseret arbejdsliste for at få vist opgaverne i arbejdsgangen og godkendelser, der er tildelt til dem på tværs af alle arbejdsprocesser, som de deltager i. Dette er tilgængeligt på siden Workflowopgaver.
 
-## <a name="the-types-of-workflows-that-you-can-create"></a> De typer arbejdsgange, du kan oprette
+## <a name="the-types-of-workflows-that-you-can-create"></a>De typer arbejdsgange, du kan oprette
 Der er følgende tilgængelige arbejdsgangstyper for Indkøb og forsyning.
 
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
-| **Skriv**                         | **Brug denne type til at**                                          |
-| Gennemgang af indkøbsrekvisition      | Oprette evalueringsarbejdsgange for indkøbsrekvisitioner.            |
-| Evaluering af indkøbsrekvisitionslinjer | Oprette evalueringsarbejdsgange for indkøbsrekvisitionslinjer.       |
+| **Type**                         | **Brug denne type til at**                                          |
+| Gennemgang af indkøbsrekvisition      | Oprette evaluerings- og godkendelsesarbejdsgange for indkøbsrekvisitioner.            |
+| Evaluering af indkøbsrekvisitionslinjer | Oprette evaluerings- og godkendelsesarbejdsgange for indkøbsrekvisitionslinjer.       |
 | Arbejdsgang for indkøbsordre          | Opret evaluerings- og godkendelsesarbejdsgange for indkøbsordrelinjer.     |
 | Arbejdsgang for indkøbsordrelinje     | Oprette evaluerings- og godkendelsesarbejdsgange for indkøbsordrelinjer. |
+| Arbejdsgang for ansøgning om tilføjelse af kreditor  | Oprette arbejdsgange for gennemsyn og godkendelse for at tilføje nye kreditorer via kreditoranmodninger. |
 
 ## <a name="creating-a-workflow"></a>Oprettelse af en arbejdsgang
 Hvis du vil oprette en arbejdsgang, skal du gå til Indkøb og forsyning &gt; Opsætning &gt; Indkøbs- og forsyningsarbejdsgange og oprette en ny arbejdsgang ved at vælge den type arbejdsgang, du vil oprette.  
@@ -75,6 +76,6 @@ Du kan knytte et godkendelsestrin til følgende deltagergrupper.
 
 [Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
 
-
+[Onboarding af kreditorer](vendor-onboarding.md)
 
 

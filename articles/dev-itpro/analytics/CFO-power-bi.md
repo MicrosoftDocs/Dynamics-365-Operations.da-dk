@@ -3,7 +3,7 @@ title: "Power BI-indhold for regnskabsdirektørens oversigt"
 description: "Dette emne beskriver Microsoft Power BI-indhold for regnskabsdirektørens oversigt."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,8 +47,5 @@ I følgende tabel vises det Power BI-indhold, som rapporterne kopieres fra, og d
 | [Styring af kredit og inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Forfalden debitor</li><li>Kunders over kreditmaksimum</li><li>Aldersfordelte saldi</li></ul> |
 | [Købsforbrugsanalyse](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Køb efter måned/dag</li><li>10 bedste leverandører efter indkøb</li><li>10 bedste leverandører efter indkøb</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Udvidelse af Power BI-indhold
-Når du bruger de indholdspakker, der er tilgængelige i Microsoft Dynamics Lifecycle Services (LCS), kan du levere fremragende analyser til personer, der ikke logger på Microsoft Dynamics 365. Du kan redigere disse indholdspakker, så de omfatter andre rapporter eller grafik, og derefter udgive indholdspakkerne på din Power BI.com-lejer med henblik på analyse.
 
-Du kan finde Power BI-indhold for **Regnskabsdirektørens oversigt** i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
 

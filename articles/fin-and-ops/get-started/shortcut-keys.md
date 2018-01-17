@@ -3,7 +3,7 @@ title: Tastaturgenveje
 description: "Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Op
 
 **Bemærk!** De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
-## <a name="finding-a-shorcut"></a>Søge efter en genvej
+## <a name="finding-a-shortcut"></a>Søge efter en genvej
 Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden. 
 
 
@@ -143,6 +143,9 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
 | Flyt til den sidste post                                                                                                | Ctrl+End                        |
 | Udføre standardhandlingen i et gitter<br><br>**Bemærk:** Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.                 | Enter                           |
+| Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
+| Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
+| Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
 |                                                                              |                               |

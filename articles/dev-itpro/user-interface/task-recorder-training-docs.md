@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 Dette emne forklarer, hvad Arbejdsrutineoptager og opgaveguider er, hvordan du opretter opgaveregistreringer, og hvordan du tilpasser Microsoft-opgaveguider og inkluderer dem i din Hjælp.
 
 > [!IMPORTANT]
-> Du kan ikke oprette brugerdefinerede opgaveguider til Dynamics 365 for Talent. Hjælpesystemet til Talent er automatisk tilknyttet opgavevejledninger til produktet. 
+> Du kan registrere dine egne opgaveguider til Dynamics 365 for Talent, men du kan ikke gemme dem til et Forretningsmodeldesigner-bibliotek (BPM) eller åbne dem fra Hjælp-ruden på nuværende tidspunkt. Du kan gemme dem lokalt eller på en netværksplacering og derefter åbne og afspille dem igen ved hjælp af Arbejdsrutineoptager. 
 
 <a name="learn-about-task-recorder"></a>Få mere at vide om Arbejdsrutineoptager
 -------------------------
@@ -42,7 +42,7 @@ Arbejdsrutineoptager er et værktøj, du kan bruge til at registrere de handling
 
 -   **Opgaveregistreringer kan afspilles som opgaveguide.** Opgaveguider er en integreret del af Hjælp-oplevelsen. En opgaveguide er en kontrolleret, automatiseret og interaktiv oplevelse, der fører dig gennem trinene i en forretningsproces. Brugeren bliver instrueret i at fuldføre hvert trin ved hjælp af en pop op-meddelelse (eller "boble"), som vil være animeret på tværs af brugergrænsefladen og pege på det element i brugergrænsefladen, som brugeren skal arbejde med. "Boblen" indeholder også oplysninger om, hvordan du arbejder med elementet, f.eks. "Klik her" eller "Angiv en værdi i dette felt". En opgaveguide kører i forhold til brugerens aktuelle datasæt, og de data, der er angivet, gemmes i brugerens miljø.
 -   **Opgaveregistreringer kan vises som en trinvis fremgangsmåde i Hjælp-ruden.** Du kan bruge Hjælp-ruden til at søge efter og få vist opgaveregistreringer. Du kan få adgang til Hjælp-ruden ved at klikke på ikonet **?**. i den øverste navigationslinje, eller du kan bruge genvejstastekombinationen **Ctrl + Skift +?**. Du kan læse trinene i en opgaveregistrering i Hjælp-ruden, eller du kan vælge at afspille optagelsen som en opgaveguide, så du bliver guidet gennem brugergrænsefladen.
--   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek (Business Process Modeler) i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgaveregistreringer, der er gemt i et BPM-bibliotek, kan vises i Hjælp.
+-   **Opgaveregistreringer kan gemmes i BPM.** Du kan gemme din opgaveregistrering på en linje i et hierarki i et BPM-bibliotek i LCS (Lifecycle Services). En liste over trin og flowdiagram for en forretningsproces, der genereres fra optagelsen. Opgaveregistreringer, der er gemt i et BPM-bibliotek, kan vises i Hjælp.
 -   **Opgaveregistreringer kan gemmes som Word-dokumenter.** På den måde kan du nemt oprette kursusguider, der kan udskrives.
 
 Du kan oprette dine egne opgaveregistreringer, afspille opgaveregistreringer fra Microsoft eller ændre opgaveregistreringer fra Microsoft, så de afspejler din konfiguration. Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager](task-recorder.md).

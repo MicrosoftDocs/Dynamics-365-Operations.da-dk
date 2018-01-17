@@ -1,9 +1,9 @@
 ---
 title: Driftsregnskab i Power BI-indhold
-description: I dette emne beskrives Power BI-indhold til Driftsregnskab. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+description: I dette emne beskrives Power BI-indhold til Driftsregnskab.
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 I dette emne beskrives Microsoft Power BI-indholdet til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
-
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-
-Du kan få adgang til Power BI-indhold til **Driftsregnskab** fra Microsoft Dynamics Lifecycle Services (LCS) og fra PowerBI.com.
-
-### <a name="available-from-lcs"></a>Tilgængelig fra LCS
-Power BI-indholdet til **Driftsregnskab**, som er tilgængeligt fra LCS, understøtter følgende versioner:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition-versioner
-- Microsoft Dynamics 365 for Operations version 1611 
-
-Du kan finde Power BI-indhold i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indholdspakken og implementerer den i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
-
-### <a name="available-from-powerbicom"></a>Tilgængelig fra PowerBI.com
-Power BI-indholdet til **Driftsregnskab**, der er tilgængeligt fra PowerBI.com, understøtter Microsoft Dynamics AX-version 7.0 og 7.0.1. Du kan finde flere oplysninger om, hvordan du forbinder og indlæser dine Dynamics AX-data, under [Adgang til Power BI-indhold fra PowerBI.com](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Konfiguration af hovedkonto
 Da organisationer ønsker, at passiver og omsætningsbeløb skal vises som positive beløb i rapporter, er konfigurationen af hovedkonti vigtig. For at disse hovedkonti skal kunne vises som positive beløb, skal hovedkontotypen indstilles til **Passiv** eller **Indtægter**. Når disse kontotyper bruges, bruger rapportering via Power BI omvendt fortegn og viser beløbene som positive beløb.
@@ -101,5 +86,5 @@ Følgende enheder blev brugt som grundlag for Power BI-indholdet til **Driftsreg
 - Finans
 - ChartofAccounts
 
-Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet. Når du har foretaget ændringerne, kan du oprette en indholdspakke og et dashboard for organisationen, som indeholder de oplysninger, du har tilføjet.
+Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet. 
 

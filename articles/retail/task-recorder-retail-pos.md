@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +98,10 @@ Hvis du vil genoptage registreringssessionen, når du har afbrudt den midlertidi
 
 ### <a name="capture-screenshots"></a>Tag skærmbilleder
 
-Arbejdsrutineoptager kan hente skærmbilleder af brugergrænsefladen i Retail Modern POS i takt med, at du registrerer en forretningsproces. Arbejdsrutineoptager bruger skærmbillederne, hvis du henter registreringen som et Word-dokument. Hvis du vil slå funktionen til hentning af skærmbilleder til, skal du angive indstillingen **Tag skærmbilleder** til **Ja**. 
+Arbejdsrutineoptager kan hente skærmbilleder af brugergrænsefladen i Retail Modern POS i takt med, at du registrerer en forretningsproces. Hvis du vil slå funktionen til hentning af skærmbilleder til, skal du angive indstillingen **Tag skærmbilleder** til **Ja** og derefter foretage registreringen. Når registreringen er fuldført, skal du klikke på **Stop** og hente Word-dokumentet. Dokumentet indeholder trinene med relevante skærmbilleder.
 
-#### <a name="note"></a>Bemærk!
-> Funktionen til hentning af skærmbilleder understøttes ikke i Cloud POS.
+#### <a name="note"></a>Note
+> Funktionen til hentning af skærmbilleder understøttes ikke i Modern POS.
 
 ### <a name="start-task-and-end-task"></a>Start opgave, og Afslut opgave
 
