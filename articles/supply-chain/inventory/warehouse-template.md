@@ -1,0 +1,100 @@
+---
+title: "Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted"
+description: "I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted."
+author: perlynne
+manager: AnnBe
+ms.date: 11/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.contentlocale: da-dk
+ms.lasthandoff: 12/14/2017
+
+---
+
+# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a><span data-ttu-id="81db0-103">Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted</span><span class="sxs-lookup"><span data-stu-id="81db0-103">Set up a warehouse by using a warehouse configuration template</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="81db0-104">I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted.</span><span class="sxs-lookup"><span data-stu-id="81db0-104">This topic explains how to set up a warehouse by using a warehouse configuration template.</span></span> <span data-ttu-id="81db0-105">Der findes flere foruddefinerede konfigurationsskabeloner, som du kan bruge.</span><span class="sxs-lookup"><span data-stu-id="81db0-105">There are several predefined configuration templates that you can use.</span></span> <span data-ttu-id="81db0-106">Du kan finde oplysninger om, hvordan du kan bruge disse skabeloner, i [Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="81db0-106">For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="scenarios-where-configuration-templates-can-be-helpful"></a><span data-ttu-id="81db0-107">Scenarier, hvor konfigurationsskabeloner kan være nyttige</span><span class="sxs-lookup"><span data-stu-id="81db0-107">Scenarios where configuration templates can be helpful</span></span>
+
+<span data-ttu-id="81db0-108">Konfigurationsskabeloner kan være nyttige i mange scenarier.</span><span class="sxs-lookup"><span data-stu-id="81db0-108">Configuration templates can be helpful in many scenarios.</span></span> <span data-ttu-id="81db0-109">Her er nogle eksempler:</span><span class="sxs-lookup"><span data-stu-id="81db0-109">Here are some examples:</span></span>
+
+- <span data-ttu-id="81db0-110">Du har fuldført og testet en konfigurationsopsætning i et testmiljø, og nu skal du kopiere opsætningen til et produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="81db0-110">You've completed and tested a configuration setup in a test environment, and you now want to copy the setup to a production environment.</span></span>
+- <span data-ttu-id="81db0-111">Du vil rulle lagerstedsopsætningen ud til flere juridiske enheder eller oprette et nyt lagersted i den samme juridiske enhed.</span><span class="sxs-lookup"><span data-stu-id="81db0-111">You want to roll the warehouse setup out to several legal entities or create a new warehouse in the same legal entity.</span></span>
+- <span data-ttu-id="81db0-112">Du vil hurtigt forberede en demo af lagerstedsfunktionerne.</span><span class="sxs-lookup"><span data-stu-id="81db0-112">You want to quickly prepare for a demo of the warehouse functionality.</span></span>
+- <span data-ttu-id="81db0-113">Du vil have, at eksisterende varer og lagersteder kan bruge funktionerne i Lokationsstyring i stedet for funktionerne i Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="81db0-113">You want existing items and warehouses to use the functionality in Warehouse management instead of the functionality in Inventory management.</span></span>
+
+<span data-ttu-id="81db0-114">I dette emne beskrives det første af disse scenarier.</span><span class="sxs-lookup"><span data-stu-id="81db0-114">This topic focuses on the first of these scenarios.</span></span> <span data-ttu-id="81db0-115">Den viser, hvordan du kan bruge en konfigurationsskabelon til at kopiere en konfigurationsopsætning fra et testmiljø til et produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="81db0-115">It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.</span></span>
+
+## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a><span data-ttu-id="81db0-116">Kopiere en konfigurationsopsætning fra et testmiljø til et produktionsmiljø</span><span class="sxs-lookup"><span data-stu-id="81db0-116">Copy a configuration setup from a test environment to a production environment</span></span>
+
+<span data-ttu-id="81db0-117">I dette scenarie findes konfigurationsopsætningen for et lagersted og nogle transaktionsprocesser allerede i et testmiljø.</span><span class="sxs-lookup"><span data-stu-id="81db0-117">For this scenario, the configuration setup for a warehouse and some transaction processes already exist in a test environment.</span></span> <span data-ttu-id="81db0-118">Du vil nu kopiere konfigurationsopsætningen for lagerstedet fra testmiljøet til et produktionsmiljø.</span><span class="sxs-lookup"><span data-stu-id="81db0-118">You now want to copy the configuration setup for the warehouse from the test environment to a production environment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="81db0-119">Det er vigtigt, at du medtager andre relaterede opsætningsdata, når du kopierer en konfigurationsopsætning.</span><span class="sxs-lookup"><span data-stu-id="81db0-119">It's important that you include other related setup data when you copy a configuration setup.</span></span> <span data-ttu-id="81db0-120">Du vil for eksempel konfigurere produkter ved at kopiere opsætningen fra et testmiljø.</span><span class="sxs-lookup"><span data-stu-id="81db0-120">For example, you want to set up products by copying the setup from a test environment.</span></span> <span data-ttu-id="81db0-121">Du kan dog ikke konfigurere en fast plukplads for et produkt, før produktet er oprettet.</span><span class="sxs-lookup"><span data-stu-id="81db0-121">However, you can't set up a fixed picking location for a product before that product is created.</span></span> <span data-ttu-id="81db0-122">Selvom individuelle konfigurationsskabeloner ikke understøtter denne type afhængighed, findes der standarddataskabeloner, der understøtter funktionen.</span><span class="sxs-lookup"><span data-stu-id="81db0-122">Although individual configuration templates don't support this type of dependency, there are default data templates that support it.</span></span> <span data-ttu-id="81db0-123">Du kan nemt medtage disse standardskabeloner i en konfigurationsproces.</span><span class="sxs-lookup"><span data-stu-id="81db0-123">You can easily include these default data templates in a configuration process.</span></span>
+
+### <a name="export-a-default-warehouse-template"></a><span data-ttu-id="81db0-124">Eksportere en standardlagerstedsskabelon</span><span class="sxs-lookup"><span data-stu-id="81db0-124">Export a default warehouse template</span></span> 
+
+1. <span data-ttu-id="81db0-125">Åbn arbejdsområdet **Datastyring**.</span><span class="sxs-lookup"><span data-stu-id="81db0-125">Open the **Data management** workspace.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="81db0-126">Hvis du bruger dette arbejdsområde for første gang, skal du indlæse alle dataenheder, før du fortsætter.</span><span class="sxs-lookup"><span data-stu-id="81db0-126">If you're using this workspace for the first time, you must load all the data entities before you continue.</span></span>
+
+2. <span data-ttu-id="81db0-127">Vælg feltet **Skabeloner**, og vælg derefter **Indlæs standardskabeloner** for at indlæse standardskabelonerne.</span><span class="sxs-lookup"><span data-stu-id="81db0-127">Select the **Templates** tile, and then select **Load default templates** to load the default templates.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="81db0-128">**Indlæs standardskabeloner** er kun tilgængelig i visningen **Udvidet**.</span><span class="sxs-lookup"><span data-stu-id="81db0-128">**Load default templates** is available only in the **Enhanced** view.</span></span> <span data-ttu-id="81db0-129">Vælg **Rammeparametre** og vælg derefter **Vis standarder** i feltet **Udvidet visning** .</span><span class="sxs-lookup"><span data-stu-id="81db0-129">Select **Framework parameters**, and then, in the **View defaults** field, select **Enhanced view**.</span></span>
+
+3. <span data-ttu-id="81db0-130">Når standardskabelonerne er indlæst, kan du ændre dem, så de opfylder dine forretningsbehov.</span><span class="sxs-lookup"><span data-stu-id="81db0-130">After the default templates are loaded, you can change them so that they meet your business requirements.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="81db0-131">For at indlæse standardskabeloner og importere skabeloner skal du have administratoradgang.</span><span class="sxs-lookup"><span data-stu-id="81db0-131">To load default templates and import templates, you must have system administrator access.</span></span> <span data-ttu-id="81db0-132">Dette krav hjælper med at sikre, at alle enheder er korrekt indlæst i skabelonen.</span><span class="sxs-lookup"><span data-stu-id="81db0-132">This requirement helps guarantee that all entities are correctly loaded into the template.</span></span>
+
+4. <span data-ttu-id="81db0-133">Kontroller, at du er i den juridiske enhed, som du vil eksportere de firmaspecifikke data fra.</span><span class="sxs-lookup"><span data-stu-id="81db0-133">Make sure that you're in the legal entity that you want to export the company-specific data from.</span></span>
+5. <span data-ttu-id="81db0-134">I arbejdsområdet skal du vælge **Eksportér**.</span><span class="sxs-lookup"><span data-stu-id="81db0-134">In the workspace, select **Export**.</span></span>
+6. <span data-ttu-id="81db0-135">Opret et nyt eksportprojekt.</span><span class="sxs-lookup"><span data-stu-id="81db0-135">Create a new export project.</span></span>
+7. <span data-ttu-id="81db0-136">Vælg **+ Tilføj skabelon**, og find **400 - WMS** standardskabelonen for lagerstedet.</span><span class="sxs-lookup"><span data-stu-id="81db0-136">Select **+ Add template**, and find the **400 - WMS** default warehouse template.</span></span> <span data-ttu-id="81db0-137">Denne skabelon tilføjer dataenheder til konfiguration af lagersted.</span><span class="sxs-lookup"><span data-stu-id="81db0-137">This template adds data entities for warehouse configuration.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="81db0-138">Hvis de data, du eksporterer, skal filtreres (f.eks. hvis du kun vil eksportere de data, der er relateret til et bestemt lagersted), skal du evaluere hver dataenhed og tilføje filtrering via en forespørgsel.</span><span class="sxs-lookup"><span data-stu-id="81db0-138">If the data that you're exporting must be filtered (for example, you want to export only the data that is related to a specific warehouse), you must evaluate each data entity and add filtering via a query.</span></span> <span data-ttu-id="81db0-139">Du kan også eksportere alle data og derefter slette de poster, der ikke er behov for i destinationsfilerne.</span><span class="sxs-lookup"><span data-stu-id="81db0-139">Alternatively, you can export all data and then delete the records that aren't required in the destination files.</span></span>
+
+8. <span data-ttu-id="81db0-140">Vælg **Eksportér**.</span><span class="sxs-lookup"><span data-stu-id="81db0-140">Select **Export**.</span></span> <span data-ttu-id="81db0-141">Data, der er knyttet til alle dataenhederne i projektet, eksporteres.</span><span class="sxs-lookup"><span data-stu-id="81db0-141">Data that is related to all the data entities in the project is exported.</span></span>
+
+<span data-ttu-id="81db0-142">Du kan hente en zip-fil til datapakken.</span><span class="sxs-lookup"><span data-stu-id="81db0-142">You can download a zip file for the data package.</span></span> <span data-ttu-id="81db0-143">Denne fil indeholder alle data i det valgte format (f.eks. Excel-format).</span><span class="sxs-lookup"><span data-stu-id="81db0-143">This file contains all the data in the selected format (for example, Excel format).</span></span> <span data-ttu-id="81db0-144">Som nævnt skal nogle poster i filerne i datapakken muligvis opdateres, før du kan importere dem til produktionsmiljøet.</span><span class="sxs-lookup"><span data-stu-id="81db0-144">As has been mentioned, some records in the data package files might have to be updated before you can import them into the production environment.</span></span> <span data-ttu-id="81db0-145">Hvis du opdaterer en post, skal du sørge for ikke at ændre filnavnet.</span><span class="sxs-lookup"><span data-stu-id="81db0-145">If you update a record, make sure that you don't change the file name.</span></span>
+
+### <a name="import-a-warehouse-configuration-setup"></a><span data-ttu-id="81db0-146">Importere en opsætning af en lagerstedskonfiguration</span><span class="sxs-lookup"><span data-stu-id="81db0-146">Import a warehouse configuration setup</span></span>
+
+1. <span data-ttu-id="81db0-147">Sørg for, at du er i det firma, du vil importere lagerstedsdataene til, i destinationsmiljøet.</span><span class="sxs-lookup"><span data-stu-id="81db0-147">In the destination environment, make sure that you're in the company that you want to import the warehouse data into.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="81db0-148">Før du foretager importen, skal du identificere eventuelle dataafhængigheder.</span><span class="sxs-lookup"><span data-stu-id="81db0-148">Before you do the import, you should identify any data dependencies.</span></span> <span data-ttu-id="81db0-149">For eksempel omfatter skabelonen **Lokationsstyring** en dataenhed, der hedder **Dispositionskoder for lagerstedet**.</span><span class="sxs-lookup"><span data-stu-id="81db0-149">For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**.</span></span> <span data-ttu-id="81db0-150">Denne enhed indeholder data, der er relateret til opsætningssiden **Dispositionskoder** (**Lokationsstyring** > **Opsætning** > **Mobilenhed** > **Dispositionskoder**).</span><span class="sxs-lookup"><span data-stu-id="81db0-150">This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**).</span></span> <span data-ttu-id="81db0-151">Hvis en eksisterende opsætning allerede håndterer returvareprocessen for salgsordrer, indeholder feltet **Returdispositionskode** en værdi.</span><span class="sxs-lookup"><span data-stu-id="81db0-151">If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value.</span></span> <span data-ttu-id="81db0-152">Dispositionskoden i dette felt er relateret til dataenheden **Dispositionskode**, som er en del af skabelonen **Salg og marketing**.</span><span class="sxs-lookup"><span data-stu-id="81db0-152">The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template.</span></span> <span data-ttu-id="81db0-153">Hvis dataene fra dataenheden **Dispositionskode** ikke blev importeret, før dataene fra feltet **Dispositionskoder for lagerstedet**, mislykkes importen.</span><span class="sxs-lookup"><span data-stu-id="81db0-153">If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.</span></span>
+
+2. <span data-ttu-id="81db0-154">I arbejdsområdet **Datastyring** skal du vælge **Importér**.</span><span class="sxs-lookup"><span data-stu-id="81db0-154">In the **Data management** workspace, select **Import**.</span></span>
+3. <span data-ttu-id="81db0-155">Opret et nyt importprojekt.</span><span class="sxs-lookup"><span data-stu-id="81db0-155">Create a new import project.</span></span>
+4. <span data-ttu-id="81db0-156">Vælg **+ Tilføj fil**, og overfør zip-filen til datapakken.</span><span class="sxs-lookup"><span data-stu-id="81db0-156">Select **+ Add file**, and upload the zip file for the data package.</span></span>
+5. <span data-ttu-id="81db0-157">Vælg **Importér**.</span><span class="sxs-lookup"><span data-stu-id="81db0-157">Select **Import**.</span></span> <span data-ttu-id="81db0-158">I visningen **Udvidet** visning kan du bruge indstillingen **Filter** til at få hurtigt overblik over de problemer, der kan opstå under importen.</span><span class="sxs-lookup"><span data-stu-id="81db0-158">In the **Enhanced** view, you can use the **Filter** option to quickly get an overview of issues that might occur during the import.</span></span>
+
+<span data-ttu-id="81db0-159">Loggen **Vis udførelseslog** indeholder detaljerede oplysninger om hver dataenhed, der importeres.</span><span class="sxs-lookup"><span data-stu-id="81db0-159">The **View execution** log provides detailed information about each data entity that is imported.</span></span> <span data-ttu-id="81db0-160">Du kan bruge den midlertidige datavisning til hurtigt at komme til måldataene.</span><span class="sxs-lookup"><span data-stu-id="81db0-160">You can use the staging data view to quickly get to the target data.</span></span> <span data-ttu-id="81db0-161">På denne måde kan du se, hvordan de importerede data ser ud på de relaterede sider i programmet.</span><span class="sxs-lookup"><span data-stu-id="81db0-161">In this way, you can see what the imported data looks like on the related pages in the application.</span></span> <span data-ttu-id="81db0-162">Når du bruger standarddataskabelonerne, fungerer importrækkefølgen for hver dataenhed på den foruddefinerede måde for at sikre, at alle afhængige data importeres først.</span><span class="sxs-lookup"><span data-stu-id="81db0-162">When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first.</span></span> <span data-ttu-id="81db0-163">Hvis brugerdefinerede dataenheder er del af projektet, skal du sikre dig, at den korrekte rækkefølge er defineret.</span><span class="sxs-lookup"><span data-stu-id="81db0-163">If custom data entities are part of the project, you must make sure that the correct sequence is defined.</span></span> <span data-ttu-id="81db0-164">Du kan finde flere oplysninger i [Konfigurere dataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="81db0-164">For more information, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="81db0-165">Relateret emne</span><span class="sxs-lookup"><span data-stu-id="81db0-165">Related topic</span></span>
+
+[<span data-ttu-id="81db0-166">Konfigurationsdataskabeloner</span><span class="sxs-lookup"><span data-stu-id="81db0-166">Configuration data templates</span></span>](../../dev-itpro/data-entities/configuration-data-templates.md)
+

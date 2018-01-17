@@ -1,0 +1,118 @@
+---
+title: Status for produktlivscyklus
+description: En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant.
+author: cvocph
+manager: AnnBe
+ms.date: 12/08/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
+audience: Application User, IT Pro
+ms.reviewer: yuyus
+ms.search.scope: Core (Operations, Core)
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: cvocph
+ms.dyn365.ops.intro: 7.3
+ms.search.validFrom: 2017-12-31
+ms.translationtype: HT
+ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
+ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.contentlocale: da-dk
+ms.lasthandoff: 12/20/2017
+
+---
+
+# <a name="product-lifecycle-state"></a><span data-ttu-id="74c0b-103">Status for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="74c0b-103">Product lifecycle state</span></span> 
+
+[!include[banner](../includes/banner.md)]
+
+
+<span data-ttu-id="74c0b-104">En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant.</span><span class="sxs-lookup"><span data-stu-id="74c0b-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="74c0b-105">Status for produktlivscyklus defineres af brugeren, typisk en produktchef eller produktmasterdatachef.</span><span class="sxs-lookup"><span data-stu-id="74c0b-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="74c0b-106">Bestemte virksomhedsprocesser, f.eks. ved varedisponering, kan blive påvirket af en bestemt livscyklusstatus.</span><span class="sxs-lookup"><span data-stu-id="74c0b-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
+ 
+<span data-ttu-id="74c0b-107">Et frigivet produkt eller en produktvariant kan knyttes til en status for produktlivscyklus, der dokumenterer, hvilken livscyklusstatus et bestemt produkt eller en produktvariant har.</span><span class="sxs-lookup"><span data-stu-id="74c0b-107">A released product or product variant can be associated with a product lifecycle state that documents in which lifecycle state a specific product or variant is currently in.</span></span> <span data-ttu-id="74c0b-108">Du kan definere et ubegrænset antal produktlivscyklusstatusser ved at tildele et tilstandsnavn og en beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="74c0b-108">You can define any number of product lifecycle states by assigning a state name and description.</span></span> <span data-ttu-id="74c0b-109">Du kan vælge én livscyklusstatus som standardstatus for nye frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="74c0b-109">You can select one lifecycle state as the default state for new released products.</span></span> <span data-ttu-id="74c0b-110">Frigivne produktvarianter nedarver deres status for produktlivscyklus fra deres frigivne produktmaster ved oprettelse.</span><span class="sxs-lookup"><span data-stu-id="74c0b-110">Released product variants inherit their product lifecycle state from their released product master on creation.</span></span> <span data-ttu-id="74c0b-111">Når du ændrer livscyklusstatussen for en frigivet produktmaster, kan du vælge at opdatere alle eksisterende varianter, der har samme oprindelige status.</span><span class="sxs-lookup"><span data-stu-id="74c0b-111">When changing the lifecycle state on a released product master, you can choose to update all existing variants that have the same original state.</span></span>  
+
+## <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="74c0b-112">Opret en ny status for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="74c0b-112">Create a new product lifecycle state</span></span> 
+ 
+- <span data-ttu-id="74c0b-113">Når du vil oprette en ny status for produktlivscyklus, skal du afspille eller læse opgaveguiden **Opret en ny status for produktlivscyklus**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-113">To create a new product lifecycle state, play or read the task guide **Create a new product lifecycle state**.</span></span> 
+
+-  <span data-ttu-id="74c0b-114">Når du vil oprette en standardstatus for produktlivscyklus, skal du afspille eller læse opgaveguiden **Opret en standardstatus for produktlivscyklus**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-114">To create a default product lifecycle state, play or read the task guide **Create a default product lifecycle state**.</span></span>   
+
+## <a name="associate-product-lifecycle-states-to-released-products"></a><span data-ttu-id="74c0b-115">Knytte status for produktlivscyklus til frigivne produkter</span><span class="sxs-lookup"><span data-stu-id="74c0b-115">Associate product lifecycle states to released products</span></span>  
+
+<span data-ttu-id="74c0b-116">Der er flere måder til at knytte en status for produktlivscyklus til frigivne produkter eller produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="74c0b-116">There are multiple ways to associate a product lifecycle state to released products or product variants.</span></span>
+
+-  <span data-ttu-id="74c0b-117">Ved oprettelse af et nyt frigivet produkt tildeles **Status for produktlivscyklus**-standarden automatisk.</span><span class="sxs-lookup"><span data-stu-id="74c0b-117">On creation of a new released product, the default **Product lifecycle state** is automatically assigned.</span></span> 
+-  <span data-ttu-id="74c0b-118">Ved frigivelse af et produkt til en juridisk enhed tildeles **Status for produktlivscyklus**-standarden automatisk.</span><span class="sxs-lookup"><span data-stu-id="74c0b-118">On release of a product to a legal entity, the default **Product lifecycle state** is automatically assigned.</span></span> 
+-  <span data-ttu-id="74c0b-119">Ved frigivelse af en produktvariant til en juridisk enhed tildeles den **Status for produktlivscyklus**, der er knyttet til den frigivne produktmaster i denne juridiske enhed, automatisk til den nye variant.</span><span class="sxs-lookup"><span data-stu-id="74c0b-119">On release of a product variant to a legal entity, the **Product lifecycle state** associated to the released product master in this legal entity is automatically assigned to the new variant.</span></span> 
+
+<span data-ttu-id="74c0b-120">Du kan opdatere status for produktlivscyklus manuelt ved hjælp af:</span><span class="sxs-lookup"><span data-stu-id="74c0b-120">You can manually update the product lifecycle state by using:</span></span> 
+
+-    <span data-ttu-id="74c0b-121">Listesiden **Frigivne produkter** eller **Detaljevisning**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-121">The **Released products** list page or **Details view**.</span></span> 
+-  <span data-ttu-id="74c0b-122">Listesiden **Frigivne produktvarianter** eller **Detaljevisning**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-122">The **Released product variants** list page or **Details view**.</span></span> 
+-  <span data-ttu-id="74c0b-123">Finde forældede produkter eller produktvarianter baseret på behov og tilknytte en livscyklusstatus.</span><span class="sxs-lookup"><span data-stu-id="74c0b-123">Find the obsolete products or product variants based on demand and associate a lifecycle state.</span></span>  
+
+<span data-ttu-id="74c0b-124">Du kan finde detaljerede oplysninger om, hvordan du tilknytter statusser for produktlivscyklus, ved at afspille eller læse følgende to opgaveguider.</span><span class="sxs-lookup"><span data-stu-id="74c0b-124">For detailed information about how to associate product lifecycle states, play or read the following two task guides.</span></span>
+
+-  <span data-ttu-id="74c0b-125">Hvis du vil knytte en status for produktlivscyklus til en frigivet produktmaster, af du afspille eller læse opgaveguiden **Tildel en status for produktlivscyklus til en frigivet produktmaster**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-125">To associate a product lifecycle state to a released product master, play or read the task guide **Assign a product lifecycle state to a released product master**.</span></span> 
+
+-  <span data-ttu-id="74c0b-126">Hvis du vil knytte en status for produktlivscyklus til et frigivet produkt, af du afspille eller læse opgaveguiden **Tildel en status for produktlivscyklus til et frigivet produkt**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-126">To associate a product lifecycle state to a release product, play or read the task guide **Assign a product lifecycle state to a released product**.</span></span> 
+
+## <a name="impact-on-master-planning"></a><span data-ttu-id="74c0b-127">Påvirkning af varedisponering</span><span class="sxs-lookup"><span data-stu-id="74c0b-127">Impact on master planning</span></span> 
+
+<span data-ttu-id="74c0b-128">Statussen for produktlivscyklus har kun ét kontrolflag: **Er aktiv for planlægning**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-128">The product lifecycle state has only one control flag: **Is active for planning**.</span></span> <span data-ttu-id="74c0b-129">Som standard er dette indstillet til **Ja** for alle oprettede statusser for produktlivscyklus, men det kan ændres til **Nej**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-129">By default, this is set to **Yes** for all created product lifecycle states, but it can be changed to **No**.</span></span> <span data-ttu-id="74c0b-130">Når det er indstillet **Nej**, er de tilknyttede frigivne produkter eller frigivne produktvarianter:</span><span class="sxs-lookup"><span data-stu-id="74c0b-130">When set to **No**, the associated released products or released product variants are:</span></span> 
+
+-  <span data-ttu-id="74c0b-131">Udelukket fra varedisponering.</span><span class="sxs-lookup"><span data-stu-id="74c0b-131">Excluded from master planning.</span></span> 
+-  <span data-ttu-id="74c0b-132">Udelukket fra beregning af styklisteniveau.</span><span class="sxs-lookup"><span data-stu-id="74c0b-132">Excluded from BOM-level calculation.</span></span> 
+
+<span data-ttu-id="74c0b-133">Du kan finde detaljerede oplysninger om, hvordan du kan bruge statusser for produktlivscyklus til at udelukke produkter fra varedisponering og beregning af styklisteniveau, ved at afspille eller læse opgaveguiden **Opret en status for produktlivscyklus for at udelukke produkter fra varedisponering**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-133">For detailed information about how to use product lifecycle state to exclude products from master planning and BOM-level calculation, play or read the task guide **Create a product lifecycle state to exclude products from Master planning**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="74c0b-134">Af hensyn til ydeevnen anbefales du at knytte alle forældede frigivne produkter eller produktvarianter, især når du arbejder med ikke-genanvendelige produktkonfigurationsvarianter, til en status for produktlivscyklus, der er deaktiveret for varedisponering.</span><span class="sxs-lookup"><span data-stu-id="74c0b-134">For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.</span></span>  
+ 
+## <a name="default-migration-import-and-export"></a><span data-ttu-id="74c0b-135">Standardoverførsel, - import og -eksport</span><span class="sxs-lookup"><span data-stu-id="74c0b-135">Default migration, import, and export</span></span> 
+
+<span data-ttu-id="74c0b-136">Statusser for produktlivscyklus understøttes ikke af dataenheder, og livscyklusstatussen kan ikke indstilles til en variabel status via de frigivne produktdataenheder.</span><span class="sxs-lookup"><span data-stu-id="74c0b-136">The product lifecycle states are not supported by data entities, and the lifecycle state cannot be set to a variable state through the released product data entities.</span></span>
+
+-  <span data-ttu-id="74c0b-137">Ved overførsel fra tidligere frigivelser er livscyklusstatussen for alle produkter og produktvarianter tom.</span><span class="sxs-lookup"><span data-stu-id="74c0b-137">On migration from previous releases, the lifecycle state of all products and product variants will be blank.</span></span>  
+-  <span data-ttu-id="74c0b-138">Når frigivne produkter importeres via en dataenhed, anvendes standardlivscyklusstatussen ved oprettelse.</span><span class="sxs-lookup"><span data-stu-id="74c0b-138">When importing released products through a data entity, the default lifecycle state will be applied on creation.</span></span>  
+-  <span data-ttu-id="74c0b-139">Når frigivne produktvarianter importeres via en dataenhed, importeres produktlivscyklusstatussen for den frigivne produktmaster.</span><span class="sxs-lookup"><span data-stu-id="74c0b-139">When importing released product variants through a data entity, the product lifecycle state of the released product master will be imported.</span></span>   
+ 
+## <a name="find-obsolete-products-and-products-variants"></a><span data-ttu-id="74c0b-140">Finde forældede produkter og produktvarianter</span><span class="sxs-lookup"><span data-stu-id="74c0b-140">Find obsolete products and products variants</span></span> 
+ 
+<span data-ttu-id="74c0b-141">Du kan køre en simuleringsanalyse for at finde forældede frigivne produkter eller produktvarianter og derefter opdatere deres status for produktlivscyklus.</span><span class="sxs-lookup"><span data-stu-id="74c0b-141">You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status.</span></span> <span data-ttu-id="74c0b-142">For at finde forældede produkter skal du afspille og læse opgaveguiden **Find forældede produktvarianter, og tildel en status for produktlivscyklus**.</span><span class="sxs-lookup"><span data-stu-id="74c0b-142">To find obsolete products, play and read the task guide **Find obsolete product variants and assign a product lifecycle state**.</span></span> <span data-ttu-id="74c0b-143">Denne opgaveguiden viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter.</span><span class="sxs-lookup"><span data-stu-id="74c0b-143">This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products.</span></span> <span data-ttu-id="74c0b-144">Guiden viser også, hvordan du kan få vist resultaterne af simuleringen og vurdere, hvor mange produkter og produktvarianter der skal knyttes til en ny status for produktlivscyklus, når du kører opdateringen uden simulering.</span><span class="sxs-lookup"><span data-stu-id="74c0b-144">It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.</span></span>  
+ 
+<span data-ttu-id="74c0b-145">Hvis du kører analysen i en simuleringstilstand, vises de produkter og produktvarianter, der er identificeret som forældet, i en bestemt formular, hvor de nemt kan evalueres.</span><span class="sxs-lookup"><span data-stu-id="74c0b-145">By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed.</span></span> <span data-ttu-id="74c0b-146">Analysen søges efter posteringer og bestemte masterdata for at identificere produkter, der ikke er behov for i en variabel periode, og som ikke har nogen masterdata, der kan medføre behov.</span><span class="sxs-lookup"><span data-stu-id="74c0b-146">The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand.</span></span> <span data-ttu-id="74c0b-147">Nye frigivne produkter inden for en variabel periode kan udelukkes fra analysen.</span><span class="sxs-lookup"><span data-stu-id="74c0b-147">New released products within a variable period can be excluded from the analysis.</span></span> <span data-ttu-id="74c0b-148">Når analysesimuleringen returnerer det forventede resultat, kan brugeren køre analysen og indstille en ny status for produktlivscyklus til alle produkter, der er angivet som forældede af analysen.</span><span class="sxs-lookup"><span data-stu-id="74c0b-148">When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.</span></span>  
+ 
+> [!NOTE]
+> <span data-ttu-id="74c0b-149">Bemærk, at alle analyser og opdateringer skal udføre inden for den samme juridiske enhed.</span><span class="sxs-lookup"><span data-stu-id="74c0b-149">Note that all analysis and updates must be done within the same legal entity.</span></span>  
+ 
+## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a><span data-ttu-id="74c0b-150">Kriterier for valg og opdatering af frigivne produkter eller produktvarianter</span><span class="sxs-lookup"><span data-stu-id="74c0b-150">Criteria to select and update released products or product variants</span></span> 
+ 
+<span data-ttu-id="74c0b-151">Brug følgende kriterier til at vælge og opdatere frigivne produkter og produktvarianter:</span><span class="sxs-lookup"><span data-stu-id="74c0b-151">Use the following criteria to select and update the released products and product variants:</span></span> 
+
+-    <span data-ttu-id="74c0b-152">Statussen for produktlivscyklus for produktet eller produktvarianten skal være forskellig fra den nye ønskede status.</span><span class="sxs-lookup"><span data-stu-id="74c0b-152">The product lifecycle state of the product or product variant must be different from the new desired state.</span></span> 
+-  <span data-ttu-id="74c0b-153">Produktet eller produktvarianten blev oprettet for nogle dage siden baseret på antallet af dage, du angiver i valgdialogboksen.</span><span class="sxs-lookup"><span data-stu-id="74c0b-153">The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.</span></span> 
+-  <span data-ttu-id="74c0b-154">Der er ingen åbne produktionsordrer (= status < afsluttet) for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-154">There are no open production orders (= status < ended) for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-155">Der er ingen åbne lagertransaktioner (= statusafgang ReservPhysical til QuotationIssue eller statustilgang Registreret til QuotationReceipt) for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-155">There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registrered to QuotationReceipt) for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-156">Der er ingen lagertransaktioner inden for de sidste dage for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-156">There are no inventory transactions within the last number of days for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-157">Der er ingen fremtidig behovs- eller forsyningsprognose for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-157">There is no future demand or supply forecast for the product or product variant.</span></span>  
+-  <span data-ttu-id="74c0b-158">Der er ikke angivet noget minimumlagerniveauet i varedisponering for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-158">No minimum stock level has been set in item coverage for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-159">Der er ingen aktiv kanban-regel for fast antal for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-159">No active fixed quantity kanban rule for the product or product variant.</span></span>  
+-  <span data-ttu-id="74c0b-160">Der er ingen serviceordrelinje for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-160">No service order line for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-161">Der er ingen aktive eller fremtidige salgs- eller købsaftalelinjer for produktet eller produktvarianten.</span><span class="sxs-lookup"><span data-stu-id="74c0b-161">No active or future sales or purchase agreement lines for the product or product variant.</span></span> 
+-  <span data-ttu-id="74c0b-162">Produktet eller produktvarianten bruges ikke i en stykliste, der er knyttet til en ikke-udløbet godkendt styklisteversion for et produkt eller variant, der er aktiv for planlægning.</span><span class="sxs-lookup"><span data-stu-id="74c0b-162">The product or product variant is not used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="74c0b-163">Relaterede emner</span><span class="sxs-lookup"><span data-stu-id="74c0b-163">Related topics</span></span>
+
+-  <span data-ttu-id="74c0b-164">Opret en ny status for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="74c0b-164">Create a new product lifecycle state</span></span>
+-  <span data-ttu-id="74c0b-165">Oprette en ny standardstatus for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="74c0b-165">Create a default new product lifecycle state</span></span>
+-  <span data-ttu-id="74c0b-166">Tildele en status for produktlivscyklus til en frigivet produktmaster</span><span class="sxs-lookup"><span data-stu-id="74c0b-166">Assign a product lifecycle state to a released product master</span></span>
+-  <span data-ttu-id="74c0b-167">Tildele en status for produktlivscyklus til et frigivet produkt</span><span class="sxs-lookup"><span data-stu-id="74c0b-167">Assign a product lifecycle state to a released product</span></span>
+-  <span data-ttu-id="74c0b-168">Finde forældede produktvarianter og tildele en status for produktlivscyklus</span><span class="sxs-lookup"><span data-stu-id="74c0b-168">Find obsolete product variants and assign a product lifecycle state</span></span>
+-  <span data-ttu-id="74c0b-169">Oprette en status for produktlivscyklus for at udelukke produkter fra varedisponering</span><span class="sxs-lookup"><span data-stu-id="74c0b-169">Create a product lifecycle state to exclude products from Master planning</span></span>
+
