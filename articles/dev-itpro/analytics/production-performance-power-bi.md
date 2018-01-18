@@ -3,7 +3,7 @@ title: Power BI-indhold til produktionsperformance
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ I nedenstående tabel vises en oversigt over de visualiseringer, der indgår.
 | Fejltendenser efter ressource                  | Fejlrate (ppm) efter behandlet antal | |
 | Produktionsafvigelser for efterkalkulering af jobordre | <ul><li>Produktionsafvigelse efter dato og omkostningsgruppetype</li><li>Produktionsafvigelse efter sted og omkostningsgruppetype</li><li>Varer i top 10 med negativ produktionsafvigelse</li><li>Top 10 over negativ produktionsafvigelse efter ressource</li></ul> | <ul><li>Realiseret omkostning</li><li>Produktionsomkostningsafvigelse</li><li>Produktionsomkostningsafvigelse i %</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Udvidelse af Power BI-indhold
-Når du bruger de indholdspakker, der er tilgængelige i Microsoft Dynamics Lifecycle Services (LCS), kan du levere fremragende analyser til personer, der ikke logger på Microsoft Dynamics 365. Du kan redigere disse indholdspakker, så de omfatter andre rapporter eller grafik, og derefter udgive indholdspakkerne på din Power BI.com-lejer med henblik på analyse.
-
-Du kan finde Power BI-indholdet til **Produktionsperformance** i biblioteket med delte aktiver i LCS. Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](power-bi-content-microsoft-partners.md). Hvis du vil se en demo, der viser, hvordan du implementerer Power BI-indholdet, kan du se dette Office Mix [Power BI-indhold fra Microsoft og dine partnere i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w).
-
-Sørg for at downloade det **Produktionsperformance**-indhold, der gælder for den version af Dynamics 365, du bruger.
-
-> [!NOTE]
-> Hvis du bruger Microsoft Dynamics 365 for Operations version 1611, er KB 4011327 en forudsætning for dette Power BI-indhold. Når du logger på LCS, kan du få adgang til KB på https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
@@ -139,12 +130,5 @@ Følgende tabel viser de nøgledimensioner, der bruges som filtre til at skabe u
 | Ressourcer                 | Ressource-id, ressourcenavn, ressourcetype og ressourcegruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-id og varegruppe         |
 
-## <a name="additional-resources"></a>Yderligere ressourcer
 
-Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
-
-- [Dataenheder](../data-entities/data-entities.md)
-- [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
 

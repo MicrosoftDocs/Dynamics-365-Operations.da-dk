@@ -1,9 +1,9 @@
 ---
 title: Power BI-indhold til omkostningsstyring
-description: "I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
+description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring. 
 
 # <a name="overview"></a>Overblik
 
@@ -51,8 +51,6 @@ Microsoft Power BI-indhold til **Omkostningsstyring** er beregnet til lagerregns
 
 Den primære datakilde for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabel administreres af datasættes cachestruktur. Tabellen opdateres med 24 timers mellemrum som standard, men du kan aktivere manuelle opdateringer i datacachekonfigurationen. Du kan derefter foretage en manuel opdatering i **Omkostningsstyring** eller **Omkostningsanalyse** arbejdsområdet. Efter kørslen af opdateringen af CostStatementCache skal du opdatere OData-forbindelsen på Power BI.com for at få vist opdaterede data på webstedet. Afvigelsesmålingerne (indkøb, produktion) i dette Power BI-indhold gælder kun for varer, der er vurderet med lagermetoden for standardomkostninger. Produktionsafvigelsen beregnes som forskellen mellem aktive omkostninger og realiserede omkostninger. Produktionsafvigelsen beregnes, når produktionsordren har status **Afsluttet**. Du kan finde flere oplysninger om typer af produktionsafvigelse, og hvordan hver type beregnes, under [Om analyse af afvigelser for en afsluttet produktionsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Power BI-indholdet **Omkostningsstyring** er tilgængeligt fra PowerBI.com. Du kan finde yderligere oplysninger om, hvordan du opretter forbindelse og indlæse dine Microsoft Dynamics 365 for Finance and Operations-data, under [Få adgang Power BI-indhold fra PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Omkostningsstyring**.
@@ -134,15 +132,8 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Regnskabskalendere | Kalender, måned, periode, kvartal, år       |
 | KPI-mål        | Mål for lagernøjagtighed, mål for lageromsætning |
 | Finans          | Valuta, navn, beskrivelse                  |
-| Steder            | Id, navn, land, by                      |
+| Lokationer            | Id, navn, land, by                      |
 
-## <a name="additional-resources"></a>Yderligere ressourcer
-Her er nogle nyttige links, der er knyttet til enheder og oprettelse af Power BI-indhold:
-
--   [Dataenheder](..\data-entities\data-entities.md)
--   [Oprettelse af organisatoriske indholdspakker](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodellering i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Tilføjelse af Power BI-felter til arbejdsområder](configure-power-bi-integration.md)
 
 
 

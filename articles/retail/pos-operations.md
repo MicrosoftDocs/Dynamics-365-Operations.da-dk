@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 521 | Saldo for fordelskundepoint | Få vist saldoen for point for det angivne fordelskundekort. | Ja | Ja | Nr. | Nr. | Nr. |
 | 914 | Minimere POS-vinduet | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nr. |
 | 1000 | Åbn kasseskuffe | Udfør en handling af typen "intet salg", og åbn den aktuelt valgte pengeskuffen. | Ja | Ja | Ja | Ja | Nr. |
+| 928 | Ordreopfyldelse | Denne handling tillader brugerne at plukke, pakke, afsende eller tilbagekalde ordrer for afhentning i butik. | Ja | Ja | Ja | Nr. | Nr. |
 | 129 | Tilsidesæt linjeproduktmoms | Tilsidesæt momsen på det valgte linjeelement, og brug en anden angivet moms. | Ja | Ja | Nr. | Ja | Nr. |
 | 130 | Tilsidesæt linjeproduktmoms fra liste | Tilsidesæt momsen på det valgte linjeelement, og brug den moms, som brugeren vælger på en liste. | Ja | Ja | Nr. | Ja | Nr. |
 | 127 | Tilsidesæt transaktionsmoms | Tilsidesæt momsen på transaktionen, og brug en anden angivet moms. | Ja | Ja | Nr. | Ja | Nr. |

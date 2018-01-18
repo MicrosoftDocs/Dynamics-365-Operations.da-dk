@@ -3,7 +3,7 @@ title: Intelligence
 description: "Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -48,7 +48,6 @@ Brugerne kan arbejde med data ved at klikke eller trykke på visuelle elementer 
  - [Power BI Embedded i arbejdsområder](embed-power-bi-workspaces.md)
  - [Power BI Embedded-integration](power-bi-embedded-integration.md)
  - [Føje analyser til arbejdsområder ved hjælp af Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Udgive analyseprogrammer på Power BI](publish-apps-powerbi.md)
  - [Hjælpe til med at sikre analytiske arbejdsområder og rapporter ved hjælp af Power BI Embedded](secure-analytical-workspaces.md)
  - [Power BI-indhold til Finance and Operations](power-bi-home-page.md)
 
@@ -59,7 +58,7 @@ Rapporteringsløsninger bruges ofte til at indsamle og formidle oplysninger om f
 
 Hvis du vil lære mere, skal du se følgende emner:
 
-- [Oversigt over dokumentrapporteringstjenester](document-reporting-services.md)
+- [Oversigt over Document Reporting Services](document-reporting-services.md)
 - [Udskrivning i Finance and Operations-programmer](print-documents.md)
 - [Installere dokumentets ruteplanlægningsagent til aktivering af netværksprinterenheder](install-document-routing-agent.md)
 
@@ -88,10 +87,7 @@ Hvis du vil lære mere, skal du se følgende emner:
 ## <a name="technical-reference-reports"></a>Technical Reference-rapporter
 Følgende rapporter indeholder referenceoplysninger om objekterne i Finance and Operations:
 
-- [Rapport for samlede dataenheder](aggregate-data-entities-report.md)
-- [Rapport for samlede målinger](aggregate-measurements-report.md)
 - [Rapport for dataenheder](../data-entities/data-entities-report.md)
-- [Nøgletalsrapport (KPI-rapport)](key-performance-indicators-report.md)
 - [Rapport for licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services-rapporter](SSRS-report.md)
 - [Rapport for arbejdsgangstyper](../../fin-and-ops/organization-administration/workflow-types-report.md)

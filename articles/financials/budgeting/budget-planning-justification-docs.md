@@ -3,11 +3,12 @@ title: "Berettigelsesdokumenter til budgetplanlægning"
 description: "Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, som kan forklare, hvorfor det er nødvendigt med et specifikt budget."
 author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

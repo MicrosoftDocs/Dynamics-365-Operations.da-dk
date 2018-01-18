@@ -3,7 +3,7 @@ title: "Nulstille datacenteret Økonomirapportering"
 description: "Dette emne beskriver, hvordan du nulstiller datacenteret Økonomirapportering."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ I dette emne forklares, hvordan du nulstiller datacenteret Økonomirapportering 
 - Version 7.0.10000.4 og nyere versioner af Økonomirapportering til Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lokal installation)
 
-Hvis du vil have Økonomirapportering version 7.2.6.0 til Finance and Operations, kan du hente KB 4052514 fra <https://support.microsoft.com/en-us/help/4052514>.
+Hvis du vil have Økonomirapportering version 7.2.6.0 til Finance and Operations, kan du hente KB 4052514 fra <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Nulstille datacenteret Økonomirapportering for version 7.2.6.0 og nyere versioner af Økonomirapportering til Finance and Operations
 
@@ -55,7 +55,7 @@ Nulstillingen af datacenteret bør kun udføres på tidspunkter, hvor mængden a
 
 Når du vil nulstille datacenteret, skal du i menuen **Værktøjer** i Rapportdesigner vælge **Nulstil datacenter**. Den viste dialogboks har to sektioner: **Statistik** og **Nulstil**.
 
-[![Dialogboksen Nulstil datacenter](./media/Statistics.png)](./media/Statistics.png)
+[![Dialogboksen Nulstil datacenter](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integrationsforsøg
 
@@ -83,8 +83,10 @@ Hvis du konstaterer, at der kræves en nulstilling af datacenteret, kan du marke
 - **Gendan database** – Finance and Operations-databasen blev gendannet, men databasen for datacenteret Økonomirapportering blev ikke gendannet.
 - **Andet** – Du er ved at nulstille datacenteret af anden årsag. Hvis du mener, at der er et problem, kan du kontakte Support for at identificere det.
 
+[![Nulstil datacenter](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Kontroller, at alle eksisterende opgaver er blevet integreret, før du fuldfører trinnene. Du kan få vist status for integrationen ved at vælge **Værktøjer** &gt; **Integrationsstatus**.
+> Kontroller, at alle opgaver i datacenteret har fuldført en oprindelige belastning, før du starter en nulstilling. Du kan kontrollere dette ved at søge efter en værdi i kolonnen Tidspunkt for seneste kørsel ved at vælge **Værktøjer** &gt; **Integrationsstatus**.
 
 #### <a name="clear-users-and-companies"></a>Ryd brugere og firmaer
 
@@ -94,7 +96,10 @@ Når du er klar til at starte nulstillingsprocessen, skal du vælge **OK**. Du b
 
 Hvis du vil kontrollere status for integrationen, skal du vælge **Værktøjer** &gt; **Integrationsstatus** at se sidst integrationen blev kørt og status.
 
-[![Få vist status for integrationen](./media/Integration.png)](./media/Integration.png)
+[![Få vist status for integrationen](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Nulstillingen er afsluttet, når alle tilknytninger viser status for RanToCompletion, og der i vinduet Integrationsstatus står "Integration fuldført" i nederste venstre hjørne.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Nulstille datacenteret Økonomirapportering version 7.0.10000.4 og nyere versioner af Økonomirapportering til Finance and Operations
 
@@ -142,7 +147,9 @@ Følgende Microsoft Windows-tjenester har åbne forbindelser til Finance and Ope
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Download den nyeste MinorVersionDataUpgrade.zip-pakke
 
-Download den nyeste MinorVersionDataUpgrade.zip-pakke. Du kan finde oplysninger om, hvordan du finder og henter den korrekte version af dataopgraderingspakken, under [Hent den nyeste installerbare dataopgraderingspakke](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). Der kræves ikke en opgradering for at hente pakken MinorVersionDataUpgrade.zip. Derfor skal du bare følge trinnene i afsnittet "Hent den nyeste installerbare dataopgraderingspakke" i det pågældende emne. Du kan springe alle de andre trin i emnet over.
+Download den nyeste MinorVersionDataUpgrade.zip-pakke. Du kan finde oplysninger om, hvordan du finder og henter den korrekte version af dataopgraderingspakken, under [Hent den nyeste installerbare dataopgraderingspakke](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+Der kræves ikke en opgradering for at hente pakken MinorVersionDataUpgrade.zip. Derfor skal du bare følge trinnene i afsnittet "Hent den nyeste installerbare dataopgraderingspakke" i det pågældende emne. Du kan springe alle de andre trin i emnet over.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Køre scripts mod Finance and Operations-databasen
 
