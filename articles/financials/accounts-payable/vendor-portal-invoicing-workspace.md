@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ff1818d927f7ab9212c4d5d9109c426be5e0e152
-ms.openlocfilehash: 0d11e4fecc4c42636be63c1ce622f0b2f8e58f2c
+ms.sourcegitcommit: 17a7d9c40d07524378a671397fed566b9bd3af6b
+ms.openlocfilehash: af284d31714df7fe87d49b311c951f9df818fa22
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -47,10 +48,12 @@ ms.lasthandoff: 11/29/2017
 -   <span data-ttu-id="73067-113">Betalte fakturaer er dem, der er blevet betalt fuldt ud i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="73067-113">Paid invoices are those that have been fully paid in Finance and Operations.</span></span>
 
 <span data-ttu-id="73067-114">Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.</span><span class="sxs-lookup"><span data-stu-id="73067-114">Clicking on a tile will open a filtered view of the **Invoices list** page.</span></span>
+
 ### <a name="tabular-lists"></a><span data-ttu-id="73067-115">Tabellister</span><span class="sxs-lookup"><span data-stu-id="73067-115">Tabular lists</span></span>
 
 <span data-ttu-id="73067-116">I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister.</span><span class="sxs-lookup"><span data-stu-id="73067-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="73067-117">Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes.</span><span class="sxs-lookup"><span data-stu-id="73067-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="73067-118">Den sidste tabelliste er en mulighed for at finde fakturaer.</span><span class="sxs-lookup"><span data-stu-id="73067-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="73067-119">Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.</span><span class="sxs-lookup"><span data-stu-id="73067-119">You can filter as you search, to allow for faster searches.</span></span>
-<span data-ttu-id="73067-120">Alle kreditorfakturaer (listeside)</span><span class="sxs-lookup"><span data-stu-id="73067-120">All vendor invoices list page</span></span>
+
+<a name="all-vendor-invoices-list-page"></a><span data-ttu-id="73067-120">Alle kreditorfakturaer (listeside)</span><span class="sxs-lookup"><span data-stu-id="73067-120">All vendor invoices list page</span></span>
 -----------------------------
 
 <span data-ttu-id="73067-121">Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="73067-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="73067-122">Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne.</span><span class="sxs-lookup"><span data-stu-id="73067-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="73067-123">Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.</span><span class="sxs-lookup"><span data-stu-id="73067-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
