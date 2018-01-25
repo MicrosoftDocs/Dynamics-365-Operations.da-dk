@@ -36,8 +36,7 @@ I dette emne beskrives, hvordan du definerer og konfigurerer feltnavne og priori
 
 **Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring. Det gælder ikke for funktioner i Lagerstyring. Finance and Operations - Lagersted er et program, du kan bruge til at udføre opgaver i forbindelse med lagerstedet. Du kan definere og konfigurere de feltnavne, der bruges i appen, samt konfigurere den prioritet, der skal tildeles feltnavnene. I dette emne beskrives, hvordan du definerer og konfigurerer disse feltnavne og prioriteter i lagerstedsappen, og hvordan de bruges i Finance and Operations - Lagersted. Du kan finde flere oplysninger om at konfigurere forbindelsen til Finance and Operations - Lagersted i selvstudiet [Installere og konfigurere Finance and Operations - Lagersted](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
-===================================
+## <a name="configure-warehouse-app-field-names"></a>Konfigurere feltnavne for lagerstedsapp
 
 Når du bruger Finance and Operations - Lagersted på din mobilenhed, kan du konfigurere, hvordan metadata skal vises på din enhed på siden **Feltnavne for lagerstedsapp**. I et nyt regnskab i Finance and Operations skal du vælge **Opret standardopsætning** for at oprette alle de feltnavne, der skal bruges i arbejdsprocesser på mobilenheden til lagerstedet, og derefter tildele dem en foretrukken inputtilstand og inputtype. Når du har oprettet alle feltnavne, kan du vælge følgende indstillinger for input.
 
@@ -70,8 +69,7 @@ Når du bruger Finance and Operations - Lagersted på din mobilenhed, kan du kon
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurere feltprioritet for lagerstedsapp
-======================================
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurere feltprioritet for lagerstedsapp
 
 På siden **Feltprioritet for lagerstedsapp** kan du placere feltnavnene i forskellige prioriterede grupper. Dette gør det muligt at afgøre, hvilke oplysninger der vises på siden for hovedopgaven, når lagermedarbejderne udfører opgaver ved hjælp af programmet. Hvis du klikker på **Opret standardopsætning**, oprettes et standardsæt af prioriterede grupper. Det er muligt at oprette så mange prioriterede grupper som ønsket, men kun tre prioriterede grupper vil blive vist på opgavesiden. Når Finance and Operations sender metadata til programmet, tildeler det hvert felt en relativ prioritet afhængigt af dets prioriterede gruppe, og appen viser de tre første højt prioriterede grupper, der er indeholdt i metadataene på opgavesiden. Resten af overløbsmetadataene vises på en side med sekundære oplysninger. Følgende tabel viser et eksempel på fem prioriterede grupper.
 

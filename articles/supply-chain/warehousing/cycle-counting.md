@@ -137,7 +137,7 @@ En cyklusoptællingsforskel opstår i følgende situationer, hvis indstillingen 
 
 Du kan justere forskelle i den optalte værdi og derefter acceptere den optællingsværdien på siden **Ventende gennemsyn af cyklusoptælling**. Du kan kontrollere det ændrede vareantal på siden **Disponibel efter lokalitet**. Værdien for optællingen afvises, hvis forskellen ikke kan godkendes.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 [Konfigurer mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)
 
 

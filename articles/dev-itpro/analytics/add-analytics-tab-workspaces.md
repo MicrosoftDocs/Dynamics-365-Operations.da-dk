@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Denne funktion understøttes i Dynamics 365 for Finance and Operations (version 7.2 og nyere).
 
-# <a name="introduction"></a>Introduktion
+## <a name="introduction"></a>Introduktion
 Dette emne viser, hvordan du kan integrere en Microsoft Power BI-rapport under fanen **Analyser** i et arbejdsområde. I det eksempel, der er angivet her, skal vi udvide arbejdsområdet **Reservationsstyring** i Flådeadministration-programmet for at integrere et analysearbejdsområde under fanen **Analyser**.
 
-# <a name="prerequisites"></a>Forudsætninger
+## <a name="prerequisites"></a>Forudsætninger
 + Adgang til et udviklermiljø, der kører platformsopdatering 8 eller nyere.
 + En analyserapport (.pbix-fil), der er oprettet ved hjælp af Microsoft Power BI Desktop, og som har en datamodel, der leveres fra databasen Enhedslager.
 
-# <a name="overview"></a>Overblik
+## <a name="overview"></a>Overblik
 Uanset om du udvider et eksisterende arbejdsområde i et program eller indfører et nyt arbejdsområde, du selv har oprettet, kan du bruge integrerede analysevisninger til at levere nyttig indsigt og interaktive visninger af dine forretningsdata. Tilføjelse af en fane til analyse i et arbejdsområdet består af fire trin.
 
 1. Tilføj en .pbix-fil som en Dynamics 365-ressource.
@@ -48,7 +48,7 @@ Uanset om du udvider et eksisterende arbejdsområde i et program eller indfører
 > [!NOTE]
 > Du kan finde flere oplysninger om oprettelse af analyserapporter i [Introduktion til Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Denne side er en fremragende kilde til indsigt, der kan hjælpe dig med at oprette effektive analyserapporteringsløsninger.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Tilføje en .pbix-fil som en ressource
+## <a name="add-a-pbix-file-as-a-resource"></a>Tilføje en .pbix-fil som en ressource
 Før du begynder, skal du oprette eller anskaffe den Power BI-rapport, du vil integrere i arbejdsområdet. Du kan finde flere oplysninger om oprettelse af analyserapporter i [Introduktion til Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgenstand.
@@ -66,7 +66,7 @@ Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgensta
   
 Nu, hvor du har tilføjet .pbix filen som en ressource i Dynamics 365, kan du integrere rapporterne i arbejdsområder og tilføje direkte hyperlinks ved hjælp af menupunkter.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Føje et fanekontrolelement til et arbejdsområde i et program
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Føje et fanekontrolelement til et arbejdsområde i et program
 I dette eksempel skal vi udvide arbejdsområdet **Reservationsstyring** i Flådeadministration-modellen ved at tilføje fanen **Analyser** til definitionen af formularen **FMClerkWorkspace**.
  
 Følgende illustration viser, hvordan formularen **FMClerkWorkspace** ser ud i designeren i Microsoft Visual Studio.
@@ -105,7 +105,7 @@ Nu, hvor du har tilføjet de kontrolelementer til formularen, der skal bruges ti
  
 Du har nu fuldført udvidelsen af programformulardefinitionen. Du kan finde flere oplysninger om, hvordan du bruger udvidelser til at foretage tilpasninger, i [Tilpasning: Overlejring og udvidelser](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Tilføje X ++-forretningslogik for at integrere et fremviserkontrolelement
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Tilføje X ++-forretningslogik for at integrere et fremviserkontrolelement
 Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrolelement til rapportfremvisningen, der er integreret i arbejdsområdet **Reservationsstyring**.
 
 1. Åbn formulardesigneren **FMClerkWorkspace** for at udvide designdefinitionen.
@@ -151,12 +151,12 @@ Du har nu fuldført tilføjelsen af forretningslogik for at initialisere det int
 > [!NOTE]
 > Du kan åbne den eksisterende operationsvisning ved hjælp af fanerne i arbejdsområde under sidetitlen.
 
-# <a name="reference"></a>Reference
+## <a name="reference"></a>Reference
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-metode
+### <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-metode
 Dette afsnit indeholder oplysninger om den hjælpeklasse, der bruges til at integrere en Power BI-rapport (.pbix-ressource) i et kontrolelement i formulargruppen.
 
-### <a name="syntax"></a>Syntaks
+#### <a name="syntax"></a>Syntaks
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parametre
+#### <a name="parameters"></a>Parametre
 
 | Navn | Betegnelse |
 |---|---|

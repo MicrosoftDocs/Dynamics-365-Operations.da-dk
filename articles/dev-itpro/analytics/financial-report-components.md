@@ -112,7 +112,7 @@ Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgan
 3.  Vælg en komponent, og klik derefter på **Fortryd udtjekning**.
 4.  Klik på **Ja** for at tjekke komponenten ind.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 
 [Økonomirapportering](financial-reporting-intro.md)
 

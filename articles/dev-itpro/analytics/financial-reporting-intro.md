@@ -98,7 +98,7 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 [Generere en økonomisk rapport](generate-financial-report.md)
 
 
