@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a351418583ee29ad57bd2586121bb92d24635fb8
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 13f7cfa8776436ed2c73fc588948ce88fee93326
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,14 +31,14 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="060f1-105">I dette emne beskrives Microsoft Power BI-indhold til **Faktisk vs. budget**.</span><span class="sxs-lookup"><span data-stu-id="060f1-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="060f1-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="060f1-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a><span data-ttu-id="060f1-107">Overblik</span><span class="sxs-lookup"><span data-stu-id="060f1-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="060f1-107">Overblik</span><span class="sxs-lookup"><span data-stu-id="060f1-107">Overview</span></span>
 
 <span data-ttu-id="060f1-108">Power BI-indholdet til **Faktisk vs. budget** er beregnet til personer, der er ansvarlige for at overvåge performance for faktisk vs. budget i deres organisation.</span><span class="sxs-lookup"><span data-stu-id="060f1-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="060f1-109">Power BI-indholdet til **Faktisk vs. budget** skaber synlighed i dine budgetafvigelser.</span><span class="sxs-lookup"><span data-stu-id="060f1-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="060f1-110">Du kan analysere budgettet for det indeværende år efter kontokategori, budgetkode, hovedkonto, beskrivelser af hovedkonto eller regnskabsperiode for at få en bedre forståelse af årsagen til eventuelle afvigelser.</span><span class="sxs-lookup"><span data-stu-id="060f1-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="060f1-111">Adgang til Power BI-indhold</span><span class="sxs-lookup"><span data-stu-id="060f1-111">Accessing the Power BI content</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="060f1-111">Adgang til Power BI-indhold</span><span class="sxs-lookup"><span data-stu-id="060f1-111">Accessing the Power BI content</span></span>
 <span data-ttu-id="060f1-112">Rapporter fra Power BI-indholdet **Faktisk vs. budget** vises i arbejdsområderne **Finansbudgetter og budgetter** og **Regnskabsdirektør** .</span><span class="sxs-lookup"><span data-stu-id="060f1-112">Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="060f1-113">Rapporter, der er inkluderet i Power BI-indholdet</span><span class="sxs-lookup"><span data-stu-id="060f1-113">Reports that are included in the Power BI content</span></span>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="060f1-113">Rapporter, der er inkluderet i Power BI-indholdet</span><span class="sxs-lookup"><span data-stu-id="060f1-113">Reports that are included in the Power BI content</span></span>
 <span data-ttu-id="060f1-114">Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet til **Faktisk vs. budget**.</span><span class="sxs-lookup"><span data-stu-id="060f1-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
 | <span data-ttu-id="060f1-115">Rapport</span><span class="sxs-lookup"><span data-stu-id="060f1-115">Report</span></span>                      | <span data-ttu-id="060f1-116">Metrik</span><span class="sxs-lookup"><span data-stu-id="060f1-116">Metrics</span></span> |
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="060f1-129">Nettoresultat</span><span class="sxs-lookup"><span data-stu-id="060f1-129">Net income</span></span>                  | <ul><li><span data-ttu-id="060f1-130">Nettoresultat i år</span><span class="sxs-lookup"><span data-stu-id="060f1-130">Net income this year</span></span></li><li><span data-ttu-id="060f1-131">Mål for nettoindkomst baseret på budget</span><span class="sxs-lookup"><span data-stu-id="060f1-131">Goal for net income based on budget</span></span> </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="060f1-132">Forståelse af datamodellen og enheder</span><span class="sxs-lookup"><span data-stu-id="060f1-132">Understanding the data model and entities</span></span>
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="060f1-132">Forståelse af datamodellen og enheder</span><span class="sxs-lookup"><span data-stu-id="060f1-132">Understanding the data model and entities</span></span>
 
 | <span data-ttu-id="060f1-133">Enhed</span><span class="sxs-lookup"><span data-stu-id="060f1-133">Entity</span></span>                    | <span data-ttu-id="060f1-134">Indhold</span><span class="sxs-lookup"><span data-stu-id="060f1-134">Contents</span></span> |
 |---------------------------|----------|

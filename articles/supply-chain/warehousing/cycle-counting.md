@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ddb035eaa496a7c84f117f0523d509eccdf58505
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 68ae9bad8c15f06689c4660ccad27eff5d01c93c
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -137,7 +137,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="feb93-192">Du kan justere forskelle i den optalte værdi og derefter acceptere den optællingsværdien på siden **Ventende gennemsyn af cyklusoptælling**.</span><span class="sxs-lookup"><span data-stu-id="feb93-192">You can adjust differences in the counted value and then accept the counted value on the **Cycle count pending review** page.</span></span> <span data-ttu-id="feb93-193">Du kan kontrollere det ændrede vareantal på siden **Disponibel efter lokalitet**.</span><span class="sxs-lookup"><span data-stu-id="feb93-193">You can verify the modified count of the item quantity on the **On hand by location** page.</span></span> <span data-ttu-id="feb93-194">Værdien for optællingen afvises, hvis forskellen ikke kan godkendes.</span><span class="sxs-lookup"><span data-stu-id="feb93-194">The counted value is rejected if the difference can't be approved.</span></span>
 
-# <a name="see-also"></a><span data-ttu-id="feb93-195">Se også</span><span class="sxs-lookup"><span data-stu-id="feb93-195">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="feb93-195">Se også</span><span class="sxs-lookup"><span data-stu-id="feb93-195">See also</span></span>
 [<span data-ttu-id="feb93-196">Konfigurer mobilenheder til lagerstedsarbejde</span><span class="sxs-lookup"><span data-stu-id="feb93-196">Configure mobile devices for warehouse work</span></span>](configure-mobile-devices-warehouse.md)
 
 
