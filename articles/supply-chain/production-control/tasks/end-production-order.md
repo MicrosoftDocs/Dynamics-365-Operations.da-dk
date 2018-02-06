@@ -1,4 +1,4 @@
---- 
+---
 title: Afslut en produktionsordre
 description: Denne procedure viser, hvordan du afslutter en produktionsordre.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Denne procedure viser, hvordan du afslutter en produktionsordre. Det demodatafir
 1. Klik på Administrer omkostninger i handlingsruden.
 2. Klik på Vis omkostningssammenligning.
     * Når du har afsluttet produktionsordren, kan du sammenligne den forkalkulerede kostpris i forhold til den realiserede kostpris for at få et overblik over produktionsafvigelser.  
-
 

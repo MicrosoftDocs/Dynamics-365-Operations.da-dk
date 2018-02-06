@@ -1,4 +1,4 @@
---- 
+---
 title: "Rapportere en produktionsordre som færdig"
 description: "Denne procedure viser, hvordan du færdigmelder en produktionsordre."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ Denne procedure viser, hvordan du færdigmelder en produktionsordre. Det demodat
 3. Markér den valgte række på listen.
 4. Klik op linket i den valgte række på listen.
     * Færdigmeldingskladden bogføres. Hvis du vil foretage ændringer i kladden, kan du oprette en ny kladde, hvor du kan foretage ændringer manuelt.  
-
 

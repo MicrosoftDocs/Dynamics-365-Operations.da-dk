@@ -1,4 +1,4 @@
---- 
+---
 title: Frigive en produktionsordre
 description: Denne procedure viser, hvordan du frigiver en produktionsordre.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ Denne procedure viser, hvordan du frigiver en produktionsordre. Det demodatafirm
 5. Markér afkrydsningsfeltet Udskriv rutekort.
 6. Klik på OK.
 7. Luk siden.
-
 

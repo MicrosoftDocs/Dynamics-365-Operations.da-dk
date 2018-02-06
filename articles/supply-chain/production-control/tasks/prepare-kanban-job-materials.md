@@ -1,4 +1,4 @@
---- 
+---
 title: "Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen"
 description: "Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materialerne ikke er tilgængelige for arbejdscellen."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materiale
     * Hvis flere job er markeret, viser pluklisten summen af alle varer, der er nødvendige for de valgte job.  
 6. Klik på Klargør.
     * Klargøringsprocessen er nu fuldført. Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.  
-
 

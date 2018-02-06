@@ -69,4 +69,3 @@ Denne procedure viser, hvordan du tildeler de korrekte roller til brugerkontoen 
 6. Du kan angive standardfilteret for arbejderen i feltet Produktionsenhed. Dette sikrer, at kun produktionsjob for den valgte produktionsenhed vises, når arbejderen logger på enheden.
 7. Luk siden.
 
-

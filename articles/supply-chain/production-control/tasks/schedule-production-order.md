@@ -1,4 +1,4 @@
---- 
+---
 title: "Planlægge en produktionsordre"
 description: "Denne procedure viser, hvordan du planlægger en produktionsordre."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ Denne procedure viser, hvordan du planlægger en produktionsordre. Det demodataf
     * Siden Kapacitetsbelastning viser den kapacitet, der er reserveret via finplanlægning, det samlede antal timer, som aktuelt er reserveret for ressourcen, og antallet af timer, der er tilgængelige til finplanlægning af ressourcen.  
 6. Luk siden.
 7. Luk siden.
-
 

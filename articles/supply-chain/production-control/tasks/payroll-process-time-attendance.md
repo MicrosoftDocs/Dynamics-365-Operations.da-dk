@@ -1,4 +1,4 @@
---- 
+---
 title: "Aktivere lønproces for tid og fremmøde"
 description: "Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres. Det
 6. Udvid sektionen Tidsregistrering.
 7. Klik på Rediger.
 8. Indtast eller vælg en værdi i feltet Lønaftale.
-
 
