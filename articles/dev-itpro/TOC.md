@@ -114,6 +114,7 @@
 #### [Tilpasning: overlejring og udvidelser](extensibility/customization-overlayering-extensions.md)
 ### Nyheder
 #### [Ændringer i udvidelse juli 2017](extensibility/changes-july-2017.md)
+#### [Ændringer i udvidelse i Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Grundlæggende funktioner
 #### [Forstyrrende tilpasninger](extensibility/intrusive-customizations.md)
 #### [Klasseudvidelser](extensibility/class-extensions.md)
@@ -138,14 +139,19 @@
 #### [Ændre egenskaber for formularkontrol](extensibility/modify-control-properties.md)
 #### [Ændre en etiket](extensibility/change-label.md)
 #### [Forlænge nummerserieintervallet](extensibility/extend-number-sequence-scope.md)
+#### [Tilføj en ny lagerdimension](extensibility/inventory-dimensions.md)
+#### [Ændringer af pris- og rabatudvidelse](extensibility/pricing-app73.md)
+#### [Udvidelse til tabeloversigt](extensibility/map-extensions.md)
+#### [Udvide tabeloversigter, der bruges som grænseflader](extensibility/maps-as-interfaces.md)
+#### [Udvide tabeloversigter, der bruges til versionsstyring](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Ydeevne
-### [Udføre en sporing ved hjælp af sporingsparser](perf-test/trace-trace-tutorial.md)
+### [Udføre en sporing ved hjælp af Trace parser](perf-test/trace-trace-tutorial.md)
 ### [PerfSDK og flerbrugertest med Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
-### [Diagnosticere problemer og analysere problemer med ydeevnen ved hjælp af sporingsparser](perf-test/trace-parser.md)
+### [Diagnosticere problemer og analysere problemer med ydeevnen ved hjælp af Trace parser](perf-test/trace-parser.md)
 ### [Ydeevne-timer](perf-test/performance-timer.md)
 ## Test af understøttelse i Visual Studio
 ### [Testning og valideringer](perf-test/testing-validation.md)
@@ -523,16 +529,16 @@
 
 # [Opgradering og overflytning](migration-upgrade/upgrade-home-page.md)
 ## [Opgradere fra AX 2012 til Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analysere – Brug opgraderingsanalyseværktøjet til planlægning af opgradering](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analysere – Brug kodeopgraderingstjeneste til at anslå behovet for at opgradere kode](migration-upgrade/analyze-code-upgrade.md)
-### [Analysere - Installere et sandkassemiljø](migration-upgrade/analysis-sandbox.md)
-### [Opgradere – Dataopgradering i et udviklingsmiljø](migration-upgrade/data-upgrade-2012.md)
-### [Opgradere – Dataopgraderingsopgaver i AX 2012](migration-upgrade/prepare-data-upgrade.md)
-### [Opgradere – Dataopgradering i et sandkassemiljø](migration-upgrade/upgrade-data-sandbox.md)
-### [Validere - Efterkalkulationstest](migration-upgrade/upgrade-cutover-testing.md)
-### [Validere - Opgaver, der skal udføres efter opgradering](migration-upgrade/app-validation-process.md)
-### [Validere- Funktionel testning](migration-upgrade/upgrade-functional-validation.md)
-### [Validere – Klargøring til udgivelse](migration-upgrade/upgrade-go-live-prep.md)
+### [Opgradering til AX 2012 – Brug opgraderingsanalyseværktøjet til planlægning](migration-upgrade/upgrade-analyzer-tool.md)
+### [Opgradering til AX 2012 – Brug kodeopgraderingstjeneste til at anslå behov](migration-upgrade/analyze-code-upgrade.md)
+### [Opgradering til AX 2012 – Installere et sandkassemiljø](migration-upgrade/analysis-sandbox.md)
+### [Opgradering til AX 2012 – Dataopgradering i et udviklingsmiljø](migration-upgrade/data-upgrade-2012.md)
+### [Opgradering til AX 2012 – Dataopgraderingsopgaver i AX 2012](migration-upgrade/prepare-data-upgrade.md)
+### [Opgradering til AX 2012 – Dataopgradering i et sandkassemiljø](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012-opgradering – efterkalkulationstest](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012-opgradering – opgaver, der skal fuldføres efter opgradering](migration-upgrade/app-validation-process.md)
+### [AX 2012-opgradering – bestå funktionstest](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012 opgradering – forberede udgivelse](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Ændringer, der påvirker opgradering fra AX 2012
@@ -590,6 +596,8 @@
 ## [Batchbehandling](sysadmin/batch-processing-overview.md)
 ### [Oversigt over batchserver](sysadmin/batch-server-overview.md)
 ### [Oprette et batchjob](sysadmin/tasks/create-batch-job.md)
+
+## [Oprette regler for optimeringsrådgiver](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Oversigt over Lifecycle Services](lifecycle-services/lcs.md)

@@ -3,7 +3,7 @@ title: Startside for Supply Chain Management
 description: "Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,18 +52,20 @@ Vælg et funktionsområde, du vil vide mere om.
 
 ## <a name="videos"></a>Videoer
 
-### <a name="get-started"></a>Introduktion  
+Disse korte videoer giver dig et få et indblik i de nye funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
 
-Disse korte videoer hjælper dig i gang med de nye funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
+-  [Kundeemne til integration af kontanter](https://youtu.be/AVV9x5x-XCg) 
+-  [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Disse korte videoer giver dig et få et indblik i de nye funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
 
 -  [Introduktion til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
 -  [Bruge Excel til omkostningsanalyse](https://youtu.be/-HKHYdClvx8)
 -  [Godkende indkøbsordrer på en mobilenhed](https://youtu.be/gZ-gOlJe7H8)
--  [Visuel planlægning med Gantt-diagram for produktion og batchordrer](https://youtu.be/BtbuShkGj4I)
+-  [Visuel planlægning med Gantt-diagram til produktions- og batchordrer](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Optagelser af tekniske konferencer
-De fleste at disse optagelser gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version ligner også. 
+Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version ligner også. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Varedisponering - tips og tricks til forbedring af ydeevnen</a>
