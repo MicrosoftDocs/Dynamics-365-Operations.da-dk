@@ -1,7 +1,7 @@
 ---
 title: Flet lagerbatches
 description: Denne artikel indeholder oplysninger om, hvordan du konsoliderer to eller flere lagerbatchnumre i et flettet batch.
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

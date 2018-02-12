@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ Du kan fordele eller distribuere pengebeløb til en eller flere konti eller komb
 
 [![Forretningsproces](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Moms
+## <a name="sales-tax"></a>Moms
 Alle virksomheder inddriver og betaler skatter til forskellige skattemyndigheder. Reglerne og satserne varierer afhængigt af land/område, stat, region og by.
 Reglerne skal desuden opdateres regelmæssigt, når skattemyndighederne ændrer kravene. Momskoder indeholder grundlæggende oplysninger om, hvor meget du skal inddrive og betale til myndighederne. Når du konfigurerer momskoder, skal du definere de beløb eller procentsatser, der skal inddrives. Du skal også definerer de forskellige metoder, der bruges til at anvende disse beløb eller procentsatser på transaktionsbeløb. Emnerne i dette afsnit indeholder oplysninger om, hvordan du kan konfigurere momskoder til de metoder og satser, skattemyndighederne kræver.
 
@@ -52,13 +53,13 @@ Reglerne skal desuden opdateres regelmæssigt, når skattemyndighederne ændrer 
  - [Momsafregninger og afrundingsregler](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Yderligere ressourcer
+## <a name="additional-resources"></a>Yderligere ressourcer
 
-#### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
+### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
 
 Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
 
-#### <a name="blogs"></a>Blogs
+### <a name="blogs"></a>Blogs
 
 Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +67,10 @@ Der er mange opslag om Finans i [Microsoft Dynamics AX-produktteambloggen](https
 
 [Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
 
-#### <a name="task-guides"></a>Opgaveguider
+### <a name="task-guides"></a>Opgaveguider
 Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
-#### <a name="videos"></a>Videoer
+### <a name="videos"></a>Videoer
 
 Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

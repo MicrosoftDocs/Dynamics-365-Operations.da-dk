@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende faktura
 -   Betalte fakturaer er dem, der er blevet betalt fuldt ud i Finance and Operations.
 
 Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
+
 ### <a name="tabular-lists"></a>Tabellister
 
 I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
-Alle kreditorfakturaer (listeside)
+
+<a name="all-vendor-invoices-list-page"></a>Alle kreditorfakturaer (listeside)
 -----------------------------
 
 Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**. Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne. Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.

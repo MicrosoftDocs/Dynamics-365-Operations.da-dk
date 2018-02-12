@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Angiv en rækkekode i en rækkedefinition
+## <a name="specify-a-row-code-in-a-row-definition"></a>Angiv en rækkekode i en rækkedefinition
 
 I rækkedefinitioner angiver tal eller etiketter i cellen **Rækkekode** hver linje i rækkedefinitionen. Du kan angive rækkekoden til at referere til data i beregninger og totaler.
 
@@ -506,8 +506,7 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 4.  Markér det sæt, der skal slettes, og klik derefter på **Slet**. Klik på **Ja** for at slette dimensionsværdisættet permanent.
 
 
-<a name="see-also"></a>Se også
---------
+## <a name="see-also"></a>Se også
 
 [Økonomirapportering](financial-reporting-intro.md)
 

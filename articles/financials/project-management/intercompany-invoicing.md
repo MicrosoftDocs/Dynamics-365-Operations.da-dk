@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ I dette eksempel skal FRSI være en debitor i den juridiske enhed for USSI, og U
 
 1.  Opret FRSI som debitor i den juridiske USSI-enhed, og opret USSI som kreditor i den juridiske enhed for FRSI. Der er tre indgangspunkter for de trin, der kræves til denne opgave.
     | Trin | Indgangspunkt                                                                       | Betegnelse   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | I USSI skal du klikke på **Debitor** &gt; **Kunder** &gt; **Alle kunder**. | Opret en ny kundepost for FRSI, og vælg debitorgruppen.                                                                                                                                                                                                                           |
-    | B    | I FRSI skal du klikke på **Kreditor** &gt; **Kreditorer** &gt; **Alle kreditorer**.        | Opret en ny kreditorpost for USSI, og vælg kreditorgruppen.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | I USSI skal du klikke på **Debitor** &gt; **Kunder** &gt; **Alle kunder**. | Opret en ny kundepost for FRSI, og vælg debitorgruppen.                                                                                  |
+    | B    | I FRSI skal du klikke på **Kreditor** &gt; **Kreditorer** &gt; **Alle kreditorer**.        | Opret en ny kreditorpost for USSI, og vælg kreditorgruppen.                                                                                    |
     | K    | I FRSI skal du åbne den kreditorpost, du netop har oprettet.                            | I handlingsruden under fanen **Generelt** i gruppen **Konfigurer** skal du klikke på **Internt**. På siden **Intern** under fanen **Handelsforhold** skal du indstille skyderen **Aktiv** til **Ja**. I feltet **Kundens firma** skal du vælge den debitorpost, som du oprettede i trin A. |
 
 2.  Klik på **Projektstyring og regnskab** &gt; **Konfiguration** &gt; **Parametre for projektstyring og regnskab**, og klik derefter på fanen **Intern**. Hvordan du skal konfigurere parametrene afhænger af, om du er den juridiske låneenhed eller den juridiske udlånsenhed.

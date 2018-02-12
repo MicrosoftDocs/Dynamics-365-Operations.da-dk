@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Denne funktion er en del af en målrettet version og er kun tilgængelig for brugere, der har valgt at deltage i det fortløbende fordelsprogram til automatisk opdatering (FFAO). Denne funktion medtages i en anden kommende almindeligt tilgængelig version. Du kan finde flere oplysninger om standardversioner og målrettede versioner i [Standard- og målrettede platformversioner](../../fin-and-ops/get-started/public-preview-releases.md).

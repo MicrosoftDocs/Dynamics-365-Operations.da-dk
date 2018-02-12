@@ -1,6 +1,7 @@
 ---
 title: Oversigt over eksterne detailenheder
 description: I dette emne forklares begreberne i forbindelse med eksterne detailenheder.
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

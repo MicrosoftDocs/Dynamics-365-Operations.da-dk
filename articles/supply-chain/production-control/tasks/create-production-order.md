@@ -1,4 +1,4 @@
---- 
+---
 title: Oprette en produktionsordre
 description: Denne procedure viser, hvordan du opretter en produktionsordre.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Denne procedure viser, hvordan du opretter en produktionsordre. Det demodatafirm
     * Ændring af procestiden påvirker det beregnede ruteforbrug og omkostninger for produktionsordren.  
 6. Klik på Gem.
 7. Luk siden.
-
 

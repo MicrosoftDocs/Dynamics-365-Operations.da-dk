@@ -53,10 +53,9 @@ Julia bruger følgende Excel-skabelon til at udarbejde budgettet:
 
 [![Excel-skabelon](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Øvelse 1: Konfiguration
-=========================
+## <a name="exercise-1-configuration"></a>Øvelse 1: Konfiguration
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Opgave 1: Opret et organisationshierarki**
+### <a name="task-1-create-organizational-hierarchy"></a>**Opgave 1: Opret et organisationshierarki**
 Ad hele budgetteringsprocessen sker i økonomiafdelingen, skal Lene oprette et meget simpelt organisationshierarki – kun bestående af økonomiafdelingen. 1.1. Naviger til organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier), og klik på knappen Ny
 
 ![Organisationshierarki](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ Ad hele budgetteringsprocessen sker i økonomiafdelingen, skal Lene oprette et m
 
 [![Gælder fra](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Opgave 2: Konfigurer brugersikkerhed
+### <a name="task-2-configure-user-security"></a>Opgave 2: Konfigurer brugersikkerhed
 Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgang til budgetplandata. Lene skal give sig selv adgang til økonomiske budgetplaner. 
 
 2.1. Skift til DEMF juridisk enhedskontekst. 
@@ -109,7 +108,7 @@ Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgan
 
 [![Giv adgang](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Opgave 3: Opret scenarier
+### <a name="task-3-create-scenarios"></a>Opgave 3: Opret scenarier
 3.1. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Bemærk på siden Scenarier de scenarier, som vi skal bruge videre frem i denne øvelse: Forrige års faktiske og budgetterede. 
 
 *Bemærk! Du kan oprette nye scenarier for denne opgave, hvis du ønsker det, og bruge dem i stedet.* 
@@ -118,7 +117,7 @@ Budgetplanlægning bruger særlige sikkerhedspolitikker til at konfigurere adgan
 
 *Da Lene ikke bruger formel godkendelsesproces til udarbejdelsen af budgettet, springer vi opsætning af arbejdsgange, stadier og stadier i arbejdsgange over i denne øvelse og vil bruge en eksisterende konfiguration til automatisk – Godkend arbejdsgang. Se tillæg til konfiguration af denne arbejdsgang.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Opgave 4: Opret budgetplankolonner
+### <a name="task-4-create-budget-plan-columns"></a>Opgave 4: Opret budgetplankolonner
 Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bruges i dokumentlayoutet til en budgetplan. I vores eksempel skal vi oprette en kolonne til forrige år faktiske oplysninger og 12 kolonner, der repræsenterer hver måned i et budgetteret år. Kolonner kan oprettes ved enten blot at klikke på knappen Tilføj og indsætte værdierne eller med hjælp af en dataenhed. I denne øvelse vil vi benytte dataenhed til at udfylde værdierne. 
 
 4.1. Åbn siden Kolonner i Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Klik på Office-knappen i øverste højre hjørne af formularen, og vælg Kolonner (ufiltreret) 
@@ -151,7 +150,7 @@ Budgetplankolonner er enten monetære eller antalsbaserede kolonner, der kan bru
 
 [![Opdatér](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Opgave 5: Opret dokumentlayouter og skabeloner til budgetplan
 Layout definerer, hvordan budgetplanens dokumentlinjegitter skal se ud, når brugeren åbner budgetplansdokumentet. Det er også muligt at skifte layout for budgetplandokumentet for at få vist samme data med forskellige vinkler. Da Lene nu har fået defineret kolonner, der skal bruges sammen med vores budgetplansdokumentet, skal hun oprette et dokumentlayout for budgetplanen, der skal ligne Excel-tabellen, som hun bruger til at oprette budgetdata (se afsnittet Oversigt over scenarie i denne øvelse) 
 
 5.1. I Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration skal du åbne siden Layouts. Opret et nyt layout for budgetposten Månedlig:
@@ -171,7 +170,7 @@ Baseret på definitionen af budgetplanens layout kan vi oprette en Excel-skabelo
 
 5.3. &lt; Valgfrit trin&gt; Rediger Excel-skabelonen for at gøre den mere brugervenlig – tilføj samlede formler, overskriftsfelter, formatering osv. Gem ændringerne, og overfør filen til budgetplanslayoutet ved at klikke på Layout &gt; Overfør [![Overfør](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Opgave 6: Opret en budgetplanlægningsproces
+### <a name="task-6-create-a-budget-planning-process"></a>Opgave 6: Opret en budgetplanlægningsproces
 Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer hele opsætningen ovenfor for at begynde at indtaste budgetplaner. Budgetplanlægningsprocessen definerer, hvilke budgetteringsorganisationer, arbejdsgangslayout og skabeloner der skal bruges til at oprette budgetplaner. 
 
 6.1. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningsproces, og opret en ny post.
@@ -192,10 +191,9 @@ Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer he
 
 [![Aktivér](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Øvelse 2: Processimulering
-==============================
+## <a name="exercise-2-process-simulation"></a>Øvelse 2: Processimulering
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Opgave 7: Generér startdata for budgetplan fra Finans
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Opgave 7: Generér startdata for budgetplan fra Finans
 7.1. Naviger til Budgettering &gt; Periodisk &gt; Opret budgetplan fra finansmodulet. Udfyld de periodiske procesparametre, og klik på knappen Generér. 
 
 [![Generer](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Lene skal oprette og aktivere en ny budgetplanlægningsproces, der kombinerer he
 
 [![Budgetplansvisning](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Opgave 8: Opret budget for indeværende år baseret på faktiske oplysninger i forrige år
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Opgave 8: Opret budget for indeværende år baseret på faktiske oplysninger i forrige år
 Fordelingsmetoderne kan bruges i budgetplanen til nemt at kopiere oplysninger til budgetplaner fra ét scenarie til et andet/sprede dem på tværs af perioder/allokere til andre dimensioner. Vi skal bruge fordelinger til at oprette budget for indeværende år fra forrige års faktiske oplysninger. 
 
 8.1. Vælg alle linjer i budgetplanens dokumentgitter og klik på knappen Fordel budget 
@@ -223,7 +221,7 @@ De faktiske beløb for tidligere år vil blive kopieret til budgettet for indev�
 
 [![Salgskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Opgave 9: Juster budgetplansdokumentet ved hjælp af Excel, og færdiggør dokumentet
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Opgave 9: Juster budgetplansdokumentet ved hjælp af Excel, og færdiggør dokumentet
 9.1. Klik på knappen Regneark for at åbne dokumentindholdet i Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ De faktiske beløb for tidligere år vil blive kopieret til budgettet for indev�
 
 Når arbejdsprocessen er fuldført, ændres dokumentstadiets budgetplan til Godkendt. [![Godkendt](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Appendiks
-========
+## <a name="appendix"></a>Appendiks
 
 ### <a name="auto-approve-workflow-configuration"></a>Automatisk godkendelse af konfiguration af arbejdsgang.
 

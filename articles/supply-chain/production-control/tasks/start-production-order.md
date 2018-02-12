@@ -1,4 +1,4 @@
---- 
+---
 title: Starte en produktionsordre
 description: Denne procedure viser, hvordan du starter en produktionsordre i produktionen.
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Denne procedure viser, hvordan du starter en produktionsordre i produktionen. Ti
 7. Klik på Bogfør.
 8. Klik på OK.
     * I rutekortkladden registreres den tid, der er brugt på de enkelte operationer. Antal gode og fejl kan også rapporteres.  
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Estimere en produktionsordre
 description: "Du kan køre denne procedure ved hjælp af demodatafirmaet USMF eller dine egne datasæt."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Du kan køre denne procedure ved hjælp af demodatafirmaet USMF eller dine egne 
 1. Klik på Administrer omkostninger i handlingsruden.
 2. Klik på Vis beregningsoplysninger.
     * Denne side viser kostprisopdelingen. For eksempel kan du se den samlede kostpris pr. enhed for det færdige produkt i den første række. De efterfølgende rækker indeholder omkostninger i henhold til styklisten, produktionsruten, og indirekte omkostninger.  
-
 

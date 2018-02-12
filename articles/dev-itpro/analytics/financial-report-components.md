@@ -1,7 +1,7 @@
 ---
 title: "Komponenter i økonomisk rapport"
 description: "I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I artiklen forklares, hvordan du organiserer og låser komponenter, og hvordan du arbejder med dokumentkomponentgrupper."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -112,7 +112,7 @@ Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgan
 3.  Vælg en komponent, og klik derefter på **Fortryd udtjekning**.
 4.  Klik på **Ja** for at tjekke komponenten ind.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 
 [Økonomirapportering](financial-reporting-intro.md)
 
