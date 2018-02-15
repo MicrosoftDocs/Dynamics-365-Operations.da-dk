@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ Når du har oprettet en reference, kan du oprette en fildestination for hver map
 
 [![Oprettelse af en fildestination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Bemærk:** Du kan oprette én fildestination for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Du kan derefter aktivere og deaktivere individuelle destinationer for fildestinationen i dialogboksen **Indstillinger for destination**. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
+> ![BEMÆRK] Du kan oprette én fildestination for hver outputkomponent af samme format som f.eks. en mappe eller en fil, der er markeret i feltet **Filnavn**. Du kan derefter aktivere og deaktivere individuelle destinationer for fildestinationen i dialogboksen **Indstillinger for destination**. Knappen **Indstillinger** bruges til at styre alle destinationer for en valgt fildestination. I dialogboksen **Indstillinger for destination** kan du styre hver destination separat ved at vælge indstillingen **Aktiveret** for destinationen.
 
 [![Dialogboksen Indstillinger for destination](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -131,7 +131,7 @@ To typer rettigheder og opgaver bruges til ER-destinationer. Én type styrer mul
 | PaymAccountsPayablePaymentsClerk    | Ansvarlig for kreditorbetalinger            | ERFormatDestinationRuntimeConfigure | Konfigurer destination for elektronisk rapportformat under kørsel |
 | PaymAccountsReceivablePaymentsClerk | Ansvarlig for debitorbetalinger         | ERFormatDestinationRuntimeConfigure | Konfigurer destination for elektronisk rapportformat under kørsel |
 
-**Bemærk:** To rettigheder bruges i de foregående opgaver. Disse rettigheder har de samme navne som de tilsvarende opgaver: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
+> ![BEMÆRK] To rettigheder bruges i de foregående opgaver. Disse rettigheder har de samme navne som de tilsvarende opgaver: **ERFormatDestinationConfigure** og **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jeg har importeret elektroniske konfigurationer, og jeg kan se dem på siden Konfigurationer for elektronisk rapportering. Men hvorfor kan jeg ikke se dem på siden Destinationer for elektronisk rapportering?
@@ -154,7 +154,7 @@ Formlen er specifik for ER-konfigurationen. Hvis du bruger konfigurationen ISO 2
 
 Forudsætningen er, at formatet skal være tilgængeligt i ER-konfigurationerne. Hvis du har formatet, skal du åbne siden **Destination for elektronisk rapportering** og oprette en ny reference til denne konfiguration. Derefter skal du have fire fildestinationer, én for hver outputkomponent. Opret den første fildestination, giv den et navn som f.eks. **Mappe**, og vælg et filnavn, der repræsenterer en mappe i din konfiguration. Klik derefter på **Indstillinger**, og sørg for, at alle destinationer er deaktiveret. Mappen vil ikke blive oprettet for denne fildestination. Som standard fungerer filerne på samme måde på grund af hierarkisk afhængigheder mellem filerne og overordnede mapper. Med andre ord sendes de ikke et vilkårligt sted hen. Hvis du vil tilsidesætte denne standardfunktionsmåde, skal du oprette tre yderligere fildestinationer, én for hver fil. I destinationsindstillingerne for hver skal du aktivere den destination, som filen skal sendes til.
 
-# <a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 
 [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 

@@ -1,7 +1,7 @@
 ---
 title: "Før du køber"
 description: "Trinvis vejledning, der kan bruges, når du overvejer at købe Dynamics 365 for Finance and Operations Enterprise edition."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Du kan afprøve Dynamics 365 for Finance and Operations i 30 dage via en enkel e
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 Du kan nu installere Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i skyen eller i dit lokale miljø. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
-Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Der skal tages følgende overvejelser, når du vælger lokalt som installationsmulighed:
+- Lovmæssige krav og behov for overholdelse, der ikke findes i [skycertificeringerne](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Der kræves afbrudte forretningsproces med uregelmæssig forbindelse til internettet for at få adgang til Microsoft Dynamics Lifecycle Services (LCS) til administration af programmets livscyklus
+- [Funktioner, der i øjeblikket ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md)
+- [Minimumkrav til infrastruktur](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Lokale installationer af Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition understøttes ikke på offentlige skyinfrastrukturer, herunder Azure. 
+
+Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpro/deployment/choose-deployment-type.md).
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Trin 3: Køb og administrer et abonnement
 Hvis du vil undersøge abonnementsmulighederne, skal du gå til prissætningssiden for [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing). Denne side indeholder flere forskellige planer, som du kan vælge ud fra din organisations behov.

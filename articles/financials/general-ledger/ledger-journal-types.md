@@ -1,6 +1,6 @@
 ---
 title: Finanskladdetyper
-description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden Kladdenavne til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
-| Kladdetype                      | Formål                                                                                                                                                                                                                                                                                                                                                     | Angive posteringer på denne side                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Tildeling                        | Opret fordelingsposter i en fordelingskladde. Før du kan oprette en fordelingskladde, skal du oprette en fordelingsregel på siden **Finansfordelingsregel**.                                                                                                                                                                           | Udfør fordelingsanmodning                                     |
-| Godkendelse                          | Bogfør kreditorfakturaer, der er godkendt, på de relevante finanskonti.                                                                                                                                                                                                                                                                            | Godkendelseskladde                                       |
-| Tilbageførsel af bankcheck               | Tilbagefør en bogført check. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af checks** på siden **Likviditets- og bankstyringsparametre**.                                                                                                                                                                                       | Tilbageførsel af checks, Annullering af checks                              |
-| Annullering af bankindbetalingsbildrag    | Annuller et indbetalingsbilag. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af indbetalingsbilag** på siden **Likviditets- og bankstyringsparametre**.                                                                                                                                                                       | Annulleringer af betalinger af indbetalingsbilag                             |
+| Kladdetype                      | Formål                       | Angive posteringer på denne side                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Tildeling                        | Opret fordelingsposter i en fordelingskladde. Før du kan oprette en fordelingskladde, skal du oprette en fordelingsregel på siden **Finansfordelingsregel**.      | Udfør fordelingsanmodning             |
+| Godkendelse                          | Bogfør kreditorfakturaer, der er godkendt, på de relevante finanskonti.  | Godkendelseskladde                                       |
+| Tilbageførsel af bankcheck               | Tilbagefør en bogført check. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af checks** på siden **Likviditets- og bankstyringsparametre**.   | Tilbageførsel af checks, Annullering af checks                   |
+| Annullering af bankindbetalingsbildrag    | Annuller et indbetalingsbilag. For at bruge denne kladdetype skal du vælge indstillingen **Brug evalueringsprocessen til annullering af indbetalingsbilag** på siden **Likviditets- og bankstyringsparametre**.   | Annulleringer af betalinger af indbetalingsbilag            |
 | Budget                            | Behandl budgetbevillinger. For at bruge denne kladdetype skal du vælge indstillingen **Aktivér budgetdisponering** på siden **Økonomiparametre**. Budgetkladdeposterne omfatter oplysninger, der er baseret på de finanskonti, der er defineret på siden **Bogføringsdefinitioner**.                                                        |                                                                |
-| Debitoraccept af veksel  | Opret debitoracceptposter for veksler.                                                                                                                                                                                                                                                                                              | Udsted vekseljournal, Genudsted vekseljournal |
-| Debitorbankremittering          | Opret en vekselremitteringsfil, der kan sendes til virksomhedens bank. Du kan bruge denne kladdetype ved at fjerne indstillingen **Automatisk udligning** på siden **Debitor** **parametre**.                                                                                                                                             | Remittering                                                     |
-| Debitorudstedelse af veksel    | Opret debitortransaktioner for udstedelse af veksel. For at bruge denne kladdetype skal du fjerne indstillingen **Opret og bogfør automatisk udstedelseskladde ved bogføring af fakturaer** på siden **Betalingsmåder - debitorer**.                                                                                                                                         | Kladde til udstedelse af veksel                                  |
-| Debitorbetaling                  | Opret debitorbetalingsposter.                                                                                                                                                                                                                                                                                                                       | Betalingskladde                                                |
-| Debitorprotest af veksel | Opret debitortransaktioner for protest af veksel.                                                                                                                                                                                                                                                                                                      | Protester vekseljournal                               |
-| Debitorgenudstedelse af veksel  | Opret transaktioner for debitorgenudstedelse af veksler.                                                                                                                                                                                                                                                                                                       | Genudsted vekseljournal                                |
-| Debitorudligning af veksel  | Opret debitortransaktioner for udligning af veksel.                                                                                                                                                                                                                                                                                                       | Udlign vekseljournal                                |
-| Dagligt                             | Opret daglige posteringer i en finanskladde.                                                                                                                                                                                                                                                                                                             | Finanskladde                                                |
+| Debitoraccept af veksel  | Opret debitoracceptposter for veksler.             | Udsted vekseljournal, Genudsted vekseljournal |
+| Debitorbankremittering          | Opret en vekselremitteringsfil, der kan sendes til virksomhedens bank. Du kan bruge denne kladdetype ved at fjerne indstillingen **Automatisk udligning** på siden **Debitor** **parametre**.            | Remittering                                                     |
+| Debitorudstedelse af veksel    | Opret debitortransaktioner for udstedelse af veksel. For at bruge denne kladdetype skal du fjerne indstillingen **Opret og bogfør automatisk udstedelseskladde ved bogføring af fakturaer** på siden **Betalingsmåder - debitorer**.   | Kladde til udstedelse af veksel                                  |
+| Debitorbetaling                  | Opret debitorbetalingsposter.                             | Betalingskladde             |
+| Debitorprotest af veksel | Opret debitortransaktioner for protest af veksel.                    | Protester vekseljournal                               |
+| Debitorgenudstedelse af veksel  | Opret transaktioner for debitorgenudstedelse af veksler.                     | Genudsted vekseljournal                                |
+| Debitorudligning af veksel  | Opret debitortransaktioner for udligning af veksel.                       | Udlign vekseljournal                                |
+| Dagligt                             | Opret daglige posteringer i en finanskladde.                          | Finanskladde                                                |
 | Eliminering                       | Opret elimineringsposter i en elimineringskladde. For at bruge denne kladdetype skal du vælge indstillingerne **Brug til økonomisk eliminering** og **Brug til økonomisk konsolidering** på siden **Juridiske enheder**. Før du kan bruge denne kladdetype skal du oprette en finanselimineringsregel på siden **Elimineringsregel i Finans**. | Eliminering                                                    |
 | Anlægsaktivbudget                | Opret poster i budgetregisteret for anlægsaktiver.                                                                                                                                                                                                                                                                                                                 | Anlægsaktivbudget                                             |
 | Godkendelseskladde                  | Registrer grundlæggende oplysninger om kreditorfakturaer.                                                                                                                                                                                                                                                                                                           | Godkendelseskladde                                               |

@@ -3,12 +3,12 @@ title: Kundeemne til kontanter
 description: "Dette emne indeholder en oversigt over kundeemne til kontanter-løsningen mellem Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition og Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-Kundeemne til kontanter-løsningen giver direkte synkronisering på tværs af Dynamics 365 for Finance and Operations, Enterprise Edition og Dynamics 365 for Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data til firmaer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Finance and Operations og Sales. Når data flyder mellem Finance and Operations og Sales, kan du udføre salgs- og marketingaktiviteter i Sales, og du kan håndtere ordreopfyldelsen ved at bruge lagerstyring i Finance and Operations.
+Kundeemne til kontanter-løsningen giver direkte synkronisering på tværs af Dynamics 365 for Finance and Operations, Enterprise Edition og Dynamics 365 for Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data til firmaer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Finance and Operations og Sales. Når data flyder mellem Finance and Operations og Sales, kan du udføre salgs- og marketingaktiviteter i Sales, og du kan håndtere ordreopfyldelsen ved at bruge lagerstyring i Finance and Operations. 
+
+Du kan finde yderligere oplysninger om kundeemne til kontant-integration i denne korte YouTube-video:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typer direkte synkronisering:
 
 - [Vedligehold konti i Sales, og synkroniser dem direkte fra Sales med Finance and Operations](accounts-template-mapping-direct.md)
 - [Vedligeholde produkter i Finance and Operations, og synkronisere dem direkte med Sales](products-template-mapping-direct.md)
 - [Vedligeholde kontakter i Sales og synkronisere dem direkte med kontakter eller debitorer i Finance and Operations](contacts-template-mapping-direct.md)
-- [Synkronisere salgstilbud direkte fra Sales med Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisere salgstilbud direkte fra Sales med Finance and Operations (skabelon afventer frigivelse)](sales-quotation-template-mapping-sales-fin.md)
 - [Synkronisere salgsordrer direkte fra Finance and Operations med Sales](sales-order-template-mapping-direct.md)
-- [Synkronisere salgsordrer direkte mellem Sales og Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisere salgsordrer direkte mellem Sales og Finance and Operations (skabelon afventer frigivelse)](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisere salgsfakturaer direkte fra Finance and Operations med Sales](sales-invoice-template-mapping-direct.md)
 
 I tidligere versioner indeholder Kundeemne til kontanter-løsning følgende typer ikke-direkte synkronisering:
@@ -50,15 +54,19 @@ I tidligere versioner indeholder Kundeemne til kontanter-løsning følgende type
 - [Vedligeholde produkter i Finance and Operations og synkronisere dem direkte med Sales](products-template-mapping.md)
 - [Oprette salgstilbud i Sales og synkronisere dem med Finance and Operations](sales-quotation-template-mapping.md)
 - [Oprette salgsordrer i Finance and Operations og synkronisere dem med Sales](sales-order-template-mapping.md)
-- [Opret salgsfakturaer i Finance and Operations, og synkroniser dem med Sales](sales-invoice-template-mapping.md)
+- [Oprette salgsfakturaer i Finance and Operations og synkronisere dem med Sales](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav til Finance and Operations
 
-Hvis du vil bruge løsningen Kundeemne til kontanter, skal du installere følgende komponenter:
+Kundeemne til kontant-integration understøttes iå følgende versioner:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (December 2017)
+
+- Dynamics 365 for Finance and Operations, Enterprise Edition (december 2017) - programbuild 7.3.11971.56116 med platformopdatering 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) med platformsopdatering 8 (programbuild 7.2.11792.56024 med platformbuild 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) - med platformsopdatering 8 (programbuild 7.2.11792.56024 med platformbuild 7.0.4565.16212).
 - De følgende hotfixes er obligatoriske:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Dette hotfix muliggør salgsordresynkronisering fra Sales til Finance and Operations via funktionen Dataintegration. Det indeholder også flere andre forbedringer.
@@ -68,7 +76,7 @@ Hvis du vil bruge løsningen Kundeemne til kontanter, skal du installere følgen
     > [!NOTE]
     > Du behøver kun at installere KB4045570, fordi installationen omfatter ændringerne fra andre hotfixes. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016)
 
 - Dynamics 365 for Finance and Operations version 1611 (november 2016) med platformsopdatering 8 eller derover
 
@@ -106,4 +114,6 @@ Hvis du vil bruge løsningen Kundeemne til kontanter, skal du installere følgen
     2. Vælg **Vis avancerede**.
     3. For en hurtig installation skal du vælge et område. Hvis du vælger **Ved ikke**, vil systemet søge efter alle områder, og installationen vil tage længere tid.
     4. Angiv brugernavnet og adgangskoden for en administrator, der har installationsrettigheder.
+
+
 
