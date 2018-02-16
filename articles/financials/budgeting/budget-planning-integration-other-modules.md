@@ -3,11 +3,12 @@ title: "Integration af budgetplanlægning med andre moduler"
 description: "Budgetplaner kan oprettes fra flere forskellige ressourcer. De grundlæggende elementer i den periodiske proces er ens for alle ressourcer."
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -71,7 +72,7 @@ Feltet **Budgetklasse** gør det muligt at angive budgetplanlinjerne som enten u
 
 ### <a name="generation-rules"></a>Genereringsregler
 
-Tre felter indeholder yderligere funktioner: **Faktor**, **Minimum** og **Afrundings****regel**. 
+Tre felter indeholder yderligere funktioner: **Faktor**, **Minimum** og **Afrundings** **regel**. 
 
 Værdien i feltet **Faktor** ganges med kildebeløbet for at angive beløbet i budgetplanen. Du kan derefter foretage justeringer, når du opretter budgetplanlinjer. Du kan f.eks. angive **1,03** for en stigning på 3 procent. Faktoren skal være et positivt tal. 
 
@@ -110,7 +111,7 @@ Feltet **Budgetklasse** er der ikke, fordi budgetklassen (**Udgift** eller **Ind
 
 Du kan bruge projektbudgetter som kilde ved at vælge den prognosemodel, der indeholder projektbudgetbeløb. Husk, at projektbudgetter opretter projektprognoseposter, når de er godkendt.
 
-Hvis du kun vælger omkostninger eller indtægter for budgetplanlinjer, skal du bruge filtret til at vælge **Budgetopdateringer: Beløbsstype = Omkostning**. Hvis du kun vil vælge en type prognose, skal du bruge filtret til at vælge **Budgetopdateringer: Transaktionstype = *xxx***. 
+Hvis du kun vælger omkostninger eller indtægter for budgetplanlinjer, skal du bruge filtret til at vælge **Budgetopdateringer: Beløbsstype = Omkostning**. Hvis du kun vil vælge én type prognose, skal du bruge filtret til at vælge **Budgetopdateringer: Transaktionstype = *xxx***. 
 
 Kun én prognosemodel kan bruges til at oprette et budgetplansscenarie. Hvis du kører processen for en prognosemodel og derefter foretager en opdatering og prøver at angive en anden model, overskrives den første model, hvis det samme projekt og de samme finanskonti gælder. Hvis du vil generere et budgetplanscenarie fra mere end én prognosemodel, skal du generere ind i forskellige budgetplanscenarier og bruge fordelingsindstillinger til at lægge dem sammen i et andet scenarie. 
 

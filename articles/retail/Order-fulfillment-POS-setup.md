@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,9 +52,9 @@ Der findes en konfigurationsindstilling på butiksniveau, som kan bruges til at 
 
 Som standard er ordrelinjer, der er tildelt til en butik, markeret som **Accepteret**. Det betyder, at det forudsættes, at de opfyldes fra den tildelte butik og ikke får yderligere tildelinger. I visse tilfælde vil detailhandlere acceptere ordrer manuelt, før de kan opfyldes. Hvis en butik er underbemandet f.eks. og ikke kan levere ordrer, accepterer en butikschef kun så mange ordrer til behandling, som han eller hun mener kan behandles på en given dag. Indtil en ordre er accepteret, kan den overdrages af administrationen til en anden butik. På denne måde udgør accept af ordren også en måde til at angive, at en ordre er blevet accepteret af butikken, og at den bliver opfyldt. 
 
-Ordrelinjer for afhentning i butikken er altid markeret som **Afventer** og kræver ikke accept.
+Ordrelinjer for afhentning i butikken er markeret som **Afventer** og kræver ikke accept.
 
-Hvis du vil aktivere manuel accept eller ordrelinjer, skal du gå til **Detail** > **Kanaler** > **Detailbutikker** > **Alle detailbutikker**. Vælg butikken, og klik på butiks-ID'et for at få vist oplysninger om butikken. Klik på **Rediger**. I oversigtspanelet **Generelt** skal du finde underoverskriften **Ordreopfyldelse** og ændre **Manuel godkendelse** fra **Nej** til **Ja**. 
+Hvis du vil aktivere manuel accept af ordrelinjer, skal du gå til **Detail** > **Kanaler** > **Detailbutikker** > **Alle detailbutikker**. Vælg butikken, og klik på butiks-ID'et for at få vist oplysninger om butikken. Klik på **Rediger**. I oversigtspanelet **Generelt** skal du finde underoverskriften **Ordreopfyldelse** og ændre **Manuel godkendelse** fra **Nej** til **Ja**. 
 
 ### <a name="enable-reject-order-line-capability"></a>Aktivere funktionen til ordrelinjeafvisning
 
@@ -114,7 +117,7 @@ Som standard har ordrer status **Accepteret**. Ordrestatus kan ses som en kolonn
 
 **Pakke** - Pakkeindstillingen understøtter to handlinger: **Udskrivning af følgeseddel** udskriver en følgeseddel for de valgte linjer og **Markér som pakket** markerer linjerne som pakkede og markerer linjerne som leveret i administrationen. Kun ordrelinjer, der tilhører samme ordre og har samme leveringsmåde kan pakkes på samme tid. Følgeseddelformater styres som en del af kvitteringsformater. Du kan finde flere oplysninger om, hvordan du konfigurerer kvitteringsformater i [Kvitteringsskabeloner og udskrivning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Send** - Afsendelseshandlingen markerer valgte linjer som **Leveret** i administrationen. Når en linje er fuldt ud leveret, vises den ikke længere i butiksopfyldningsvisningen.
+**Send** - Afsendelseshandlingen markerer valgte linjer som **Leveret** i administrationen. Når en linje er fuldt ud leveret, vises den ikke længere i ordreopfyldningsvisningen.
 
 **Afhentning** - Handlingen Afhentning føjer linjerne til transaktionsvisningen for afhentning. Hvis der er andre linjer i ordren, der ikke i øjeblikket er afhentet, føjes de til transaktionsvisningen med et antal på nul. Når en linje er helt afhentet, vises den ikke længere i ordreopfyldningsvisningen. 
 

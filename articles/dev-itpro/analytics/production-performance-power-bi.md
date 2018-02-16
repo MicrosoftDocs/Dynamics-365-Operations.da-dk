@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -16,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -104,7 +105,7 @@ Følgende tabel viser, hvor de samlede nøglemålinger bruges til at oprette fle
 | Er forsinket               | 'Produktionsordre'[Er færdigmeldt] = TRUE && 'Produktionsordre'[Værdi for Forsinket] = 1 |
 | Er for tidlig                 | 'Produktionsordre'[Er færdigmeldt] = TRUE && 'Produktionsordre'[Dages forsinkelse] \< 0 |
 | Er i sin helhed               | 'Produktionsordre'[Antal gode] \> = 'Produktionsordre'[Planlagt antal] |
-| Er færdigmeldt                | 'Produktionsordre'[Værdi for Produktionsstatus] = 5 \|\| 'Produktionsordre'[Værdi for Produktionsstatus] = 7 |
+| Er færdigmeldt                | 'Produktionsordre' [produktionsstatusværdi] = 5 \|\| 'Produktionsordre' [produktionsstatusværdi] = 7 |
 | For sent og i sin helhed           | COUNTROWS(FILTER('Produktionsordre', 'Produktionsordre'[Er i sin helhed] = TRUE && 'Produktionsordre'[Er forsinket] = TRUE)) |
 | For sent \#                  | COUNTROWS(FILTER('Produktionsordre', 'Produktionsordre'[Er forsinket] = TRUE)) |
 | For sent i %                   | IFERROR( IF('Produktionsordre'[For sent \#] \<\> 0, 'Produktionsordre'[For sent \#], IF('Produktionsordre'[Samlede ordrer] = 0, BLANK(), 0)) / 'Produktionsordre'[Samlede ordrer,] BLANK()) |

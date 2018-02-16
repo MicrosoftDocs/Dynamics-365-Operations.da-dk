@@ -3,14 +3,14 @@ title: "Planlæg din kontoplan"
 description: "Denne artikel indeholder oplysninger, der kan hjælpe dig med at planlægge kontoplanen for organisationen."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ Her er nogle af de faktorer, du bør overveje, når du planlægger strukturen af
 -   Hvilke rapporteringskrav der gælder for den juridiske enhed
 -   Detaljeringsgraden, som kræves, både for eksterne organisationer og for din organisation
 
-Opret kontoplanen på siden **Kontoplan**. Hovedkonti kan oprettes fra siden **Kontoplan** eller siden **Hovedkonti**. Dine hovedkonti bør ikke bruge specialtegn, der bruges som afgrænsningstegn i kontoplaner. Hvis du har et specialtegn, der er det samme som afgrænsningstegnet i din kontoplan, kan du opleve ustabilitet, eller der kan opstå behov for hele tiden at skulle bruge opslag eller pop op-vinduet, når du angiver kombinationer af konto og dimension. Du kan finde flere oplysninger i [Oprette en hovedkonto](tasks/create-account-structures.md).
+Opret kontoplanen på siden **Kontoplan**. Hovedkonti kan oprettes fra siden **Kontoplan** eller siden **Hovedkonti**. Dine hovedkonti bør ikke bruge specialtegn, der bruges som afgrænsningstegn i kontoplaner. Hvis du har et specialtegn, der er det samme som afgrænsningstegnet i din kontoplan, kan du opleve ustabilitet, eller der kan opstå behov for hele tiden at skulle bruge opslag eller pop op-vinduet, når du angiver kombinationer af konto og dimension. Du kan finde flere oplysninger i [Oprette en hovedkonto](tasks/create-main-account.md).
 
 
 Det er en god ide at knytte hovedkontiene til hovedkontokategorier, så du kan drage fordel af økonomiske standardrapporter uden at skulle foretage ændringer. Derfor kan du hurtigere og nemmere designe og vedligeholde rapporter. 
 
-Brug siden **Konfigurer kontostrukturer** til at oprette kontostrukturer. Kontostrukturer definerer gyldige kombinationer. Kombinationerne udgør, sammen med hovedkontiene, en kontoplan.  Du kan finde flere oplysninger under [Oprette kontostrukturer](tasks/create-main-account.md).
+Brug siden **Konfigurer kontostrukturer** til at oprette kontostrukturer. Kontostrukturer definerer gyldige kombinationer. Kombinationerne udgør, sammen med hovedkontiene, en kontoplan.  Du kan finde flere oplysninger under [Oprette kontostrukturer](tasks/create-account-structures.md).
 
 **Tilsidesættelser af juridisk enhed** 
 
