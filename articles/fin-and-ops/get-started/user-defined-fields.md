@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 5c66f893b0dc26b01e7c4eb024ef543f915bfe9f
-ms.openlocfilehash: e272b846fba16445d3a48f9e6c33805d7b4f4d38
+ms.sourcegitcommit: ad59346f88b7a5984e16418e2aade7ccaedf180b
+ms.openlocfilehash: 142c66c189d6401cfb3db128e45fea6c071e99bf
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/19/2018
 10.   <span data-ttu-id="8278d-136">Klik på **Indsæt** for at indsætte de markerede felter i det valgte område i formularen.</span><span class="sxs-lookup"><span data-stu-id="8278d-136">Click **Insert** to insert the marked fields into the selected region of the form.</span></span> 
 11.   <span data-ttu-id="8278d-137">**Valgfrit:** Aktivér tilstanden **Flyt** fra værktøjslinjen til personlige indstillinger for at flytte de nye felter til den ønskede placering i det valgte område.</span><span class="sxs-lookup"><span data-stu-id="8278d-137">**Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region.</span></span> <span data-ttu-id="8278d-138">Se [Tilpasse brugeroplevelsen](personalize-user-experience.md) for at få yderligere oplysninger om, hvordan du bruger de forskellige funktioner for tilpasning til at optimere en formular til din personlige brug.</span><span class="sxs-lookup"><span data-stu-id="8278d-138">See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.</span></span>  
 
-### <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="8278d-139">Dele brugerdefinerede felter med andre brugere</span><span class="sxs-lookup"><span data-stu-id="8278d-139">Sharing custom fields with other users</span></span>
+## <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="8278d-139">Dele brugerdefinerede felter med andre brugere</span><span class="sxs-lookup"><span data-stu-id="8278d-139">Sharing custom fields with other users</span></span>
 <span data-ttu-id="8278d-140">Når du har oprettet et brugerdefineret felt og vist det i en formular, ønsker du muligvis at give denne opdaterede sidevisning, der indeholder det nye felt, til andre brugere i systemet.</span><span class="sxs-lookup"><span data-stu-id="8278d-140">After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system.</span></span> <span data-ttu-id="8278d-141">Dette kan gøres på to forskellige måder ved hjælp af funktionerne til brugertilpasning af produktet:</span><span class="sxs-lookup"><span data-stu-id="8278d-141">This can be accomplished in two different ways using the personalization capabilities of the product:</span></span>
 
 -   <span data-ttu-id="8278d-142">Den anbefalede rute er via systemadministratoren, der kan overføre en tilpasning til alle brugere eller en undergruppe af brugere.</span><span class="sxs-lookup"><span data-stu-id="8278d-142">The recommended route is through the system administrator, who can push a personalization to all users or a subset of users.</span></span> <span data-ttu-id="8278d-143">Du kan finde flere oplysninger i [Tilpasse brugeroplevelsen](personalize-user-experience.md).</span><span class="sxs-lookup"><span data-stu-id="8278d-143">See [Personalize the user experience](personalize-user-experience.md) for more details.</span></span> 
