@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Tilpasning af hardware til lokale miljøer
+
+[!include[banner](../includes/banner.md)]
+
 Før du begynder at tilpasse hardware og infrastruktur til et lokalt miljø, skal du sætte dig ind i [Systemkrav](system-requirements.md) og læse [Vejledning til installation og implementering](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) for at få en ordentlig forståelse af den underliggende struktur. 
 
   **Bemærk!** Vær særligt opmærksom på best practices for opsætning af systemet for at opnå optimal ydelse. 

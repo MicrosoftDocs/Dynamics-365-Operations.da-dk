@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Parametre for udgiftsstyring
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Parametrene styrer den generelle funktionsmåde i Udgiftsstyring.

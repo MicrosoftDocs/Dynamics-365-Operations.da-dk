@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Automatisering af kreditorfaktura
 
+[!include[banner](../includes/banner.md)]
+
 Dette emne forklarer de funktioner, der er tilgængelige for start-til-slut-automatisering af kreditorfakturaer, tilmed fakturaer, der indeholder vedhæftede filer.
 
 Organisationer, der ønsker at strømline deres kreditorprocesser, identificerer ofte fakturabehandling som en af de vigtigste procesområder, der skal være mere effektive. I mange tilfælde overfører disse organisationer behandlingen af papirfakturaer til en tredjepartserviceudbyder af optisk tegngenkendelse (OCR). Derefter modtager de maskinlæsbare fakturametadata sammen med et scannet billede af hver faktura. Som hjælp til automatisering oprettes en sidste løsning derefter for at kunne forbruge disse artefakter i faktureringssystemet. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition giver nu mulighed for denne sidste automatisering som standard via en løsning til fakturaautomatisering.

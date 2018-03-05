@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Sammenligning af funktioner i skyen og på arbejdsstedet
 
+[!include[banner](../includes/banner.md)]
+
 Dette emne viser, om hver funktion er tilgængelig i disse produkter:
 
 + Dynamics 365 for Finance and Operations, Enterprise Edition (sky)

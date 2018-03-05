@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>WebSearchAX er udgået
 
+[!include[banner](../includes/banner.md)]
+
 Vi var nødt til at trækkes siden WebSearchAX tilbage. Det anbefales, at du som erstatning bruger søgefunktionen på webstedet fra dit foretrukne søgeprogram.  F.eks.: 
 
 site:technet.microsoft.com dynamics ax 2012 "søgeterm"
