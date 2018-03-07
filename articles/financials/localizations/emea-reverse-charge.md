@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>Modtagermoms
+
+[!include[banner](../includes/banner.md)]
+
 I dette emne beskrives den generiske tilgang til konfiguration af modtagermoms moms for europæiske lande.
 
 Modtagermoms er et momsskema, der flytter ansvaret for momsregnskab og rapportering af moms fra sælgeren til køberen af varer og/eller tjenesteydelser. Derfor rapporterer modtagere af varer og/eller tjenesteydelser både udgående moms (i rollen som sælger) og indgående moms (i rollen som køber) i deres momsangivelse.
