@@ -26,6 +26,8 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="create-an-engaging-onboarding-experience"></a>Oprette en spændende onboardingoplevelse
 
+[!include[banner](includes/banner.md)]
+
 Når det gøres korrekt, hjælper onboarding nye medarbejdere med at arbejde mere effektivt, samtidig med, at de også får en følelse af tilhørsforhold i deres nye rolle. Onboarding kan hjælpe nye medarbejdere med at forstår deres nye rolle, hurtigere og mere præcist, end de ellers ville, og de kommer hurtigt i gang med at etablere relationer, der kan hjælpe dem med at få succes. Omvendt kan en ineffektiv onboardingoplevelse muligvis få medarbejdere til at stille spørgsmål ved deres beslutning om at blive en del af din organisation. En undersøgelse udført af Gartner i 2014 viste, at næsten en tredjedel af de 1.005 svarpersoner, som forlod et job inden for de første seks måneder, gjorde det, fordi de ikke fik klare retningslinjer af ledelsen, fordi deres uddannelse ikke var effektiv, eller fordi de ikke etablerede effektive relationer i deres nye miljø.
 
 ## <a name="have-an-onboarding-program-in-place"></a>Sørg for at have et onboardingprogram på plads

@@ -29,6 +29,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nomenklatur for produktvariantnumre og -navne
 
+[!include[banner](../includes/banner.md)]
+
 Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format. Den nye nomenklatur har et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og tekstafgrænsningstegn efter eget valg. Du kan også oprette en nomenklatur for produktnavne. Endelig kan du også oprette en nomenklatur til at identificere konfigurationer, der er oprettet af den begrænsningsbaserede produktkonfigurator. Disse nomenklaturer kan indeholde attributter efter eget valg.
 
 De nye nomenklaturer for produktvariantnumre og produktvariantnavne giver dig mulighed for at medtage segmenter i id'erne for produktvarianter. Disse segmenter kan indeholde produktmasternummer og -navn, produktdimensions-id'er og -navne, nummerserier, tekstkonstanter og attributter. Med denne funktion kan du hurtigt finde en bestemt produktvariant, når du opretter en salgsordre eller en indkøbsordre. Du opretter nomenklaturer til både produktvariantnumre og produktvariantnavne ved hjælp af siden **Produktnomenklatur**. Klik på **Administration af produktoplysninger** &gt; **Konfiguration** for at åbne denne side.

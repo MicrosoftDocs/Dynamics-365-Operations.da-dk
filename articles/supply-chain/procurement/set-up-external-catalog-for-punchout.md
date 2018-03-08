@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
+[!include[banner](../includes/banner.md)]
+
 Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations, Enterprise edition juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
 
 Når det eksterne katalog er konfigureret, og medarbejderen forbereder en rekvisition, er der mulighed for at omdirigere til et eksternt websted, det eksterne katalog, og returnere indkøbskurven, der er oprettet på det eksterne websted. Denne meddelelse er baseret på cXML-protokollen og skal være konfigureret mellem systemerne for den købende og den sælgende organisation.

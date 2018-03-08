@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="set-up-order-fulfillment-for-stores"></a>Konfigurere ordreopfyldning for butikker
 
+[!include[banner](includes/banner.md)]
+
 ## <a name="overview"></a>Overblik
 Mange detailhandlere ønsker at optimere deres ordreopfyldning ved at gøre det muligt for butikker at opfylde ordrer. Ordreopfyldning på butiksniveau kan afhjælpe situationer med overfyldte lagre i en bestemt butik eller kan være nødvendigt fra et logistisk synspunkt i tilfælde, hvor en butik har ekstra kapacitet eller ligger inden for nærmere leveringsafstand i forhold til kunden. Du kan løse dette behov ved hjælp af en samlet ordreopfyldningsoperation, der er tilgængelig på salgsstedet (POS).
 

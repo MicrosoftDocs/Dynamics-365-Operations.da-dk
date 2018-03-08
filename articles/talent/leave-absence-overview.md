@@ -27,6 +27,8 @@ ms.lasthandoff: 01/31/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Oversigt over orlovs- og fraværsstyring
 
+[!include[banner](includes/banner.md)]
+
 Modulet **Orlovs- og fraværsstyring** giver en fleksibel struktur til definition af fraværsstyringsprocessen. Orlov og fraværsplaner kan oprettes for at finde ud af, hvordan medarbejdere periodiserer eller tildeles fridage. Når medarbejderne er tilmeldt en plan, kan de sende anmodninger om fravær til godkendelse af ledere. Med orlovssporing kan både ledere på øverste niveau og personalechefer se, hvem der holder fri, og hvor lang tid hver enkelt medarbejder stadig holder fri.  
 
 Orlovs- og fraværsstyring indeholder følgende funktioner: 

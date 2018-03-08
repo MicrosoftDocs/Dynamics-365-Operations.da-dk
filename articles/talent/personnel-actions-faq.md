@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="personnel-actions-faq"></a>Personalehandlinger [Ofte stillede spørgsmål]
+
+[!include[banner](includes/banner.md)]
+
 Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
 
 **Bemærk!** Personalehandlinger er kun tilgængelige, hvis felterne **Aktivér arbejderhandlinger** og **Aktivér stillingshandlinger** er angivet til **Ja** under fanen **Personalehandlinger** på siden **Delte parametre for personale**. 

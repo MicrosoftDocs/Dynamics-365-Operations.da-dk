@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Synlighed i materialeundtagelser
 
+[!include[banner](../includes/banner.md)]
+
 I arbejdsområdet **Administration af produktion** findes tre felter, som giver dig bedre indblik i undtagelser for råmaterialer til produktionsordrer og batchordrer:
 
 - Ikke-frigivne materialelinjer, der kræver opmærksomhed
