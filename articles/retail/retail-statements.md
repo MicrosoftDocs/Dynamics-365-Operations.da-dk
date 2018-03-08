@@ -20,14 +20,17 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f9ea6190823a5af951538e0da2760f05896ee993
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: ddceadb797af98f85670df72a335b2714fe2f01e
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="retail-statements"></a><span data-ttu-id="8c77b-103">Detailopgørelser</span><span class="sxs-lookup"><span data-stu-id="8c77b-103">Retail statements</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="8c77b-104">I Microsoft Dynamics 365 for Retail bruges processen til bogføring af opgørelsen til at redegøre for de transaktioner, der opstår i POS eller MPOS (Modern POS).</span><span class="sxs-lookup"><span data-stu-id="8c77b-104">In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="8c77b-105">Opgørelsesbogføringsprocessen bruger distributionsplanen til at trække en række POS-transaktioner til Headquarters-klienten (HQ).</span><span class="sxs-lookup"><span data-stu-id="8c77b-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="8c77b-106">De parametre, der er defineret på siden **Detailparametre** og **Butikker**, bruges til at vælge de transaktioner, der trækkes til hver enkelt opgørelse.</span><span class="sxs-lookup"><span data-stu-id="8c77b-106">The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>  
 
 <span data-ttu-id="8c77b-107">Følgende illustration viser til opgørelsesbogføringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="8c77b-107">The following illustration shows the statement posting process.</span></span> <span data-ttu-id="8c77b-108">I denne proces overføres transaktioner, der er registreret i POS, til klienten ved hjælp af Retail planlægger.</span><span class="sxs-lookup"><span data-stu-id="8c77b-108">In this process, transactions that are recorded in the POS are transmitted to the client by using the Retail scheduler.</span></span> <span data-ttu-id="8c77b-109">Når klienten modtager transaktionerne, kan du oprette, beregne og bogføre transaktionsopgørelsen for butikken.</span><span class="sxs-lookup"><span data-stu-id="8c77b-109">After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</span></span> 

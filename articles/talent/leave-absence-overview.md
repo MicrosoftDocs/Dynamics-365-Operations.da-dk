@@ -19,13 +19,15 @@ ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: dcaf0e58afe01a530ef567bfdb3b8e2506da9742
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: e59ccde58adb7fae2504d37f8a0bc76110a3348b
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 # <a name="leave-and-absence-management-overview"></a><span data-ttu-id="96c1e-103">Oversigt over orlovs- og fraværsstyring</span><span class="sxs-lookup"><span data-stu-id="96c1e-103">Leave and absence management overview</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="96c1e-104">Modulet **Orlovs- og fraværsstyring** giver en fleksibel struktur til definition af fraværsstyringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="96c1e-104">The **Leave and absence management** module offers a flexible framework for defining the absence management process.</span></span> <span data-ttu-id="96c1e-105">Orlov og fraværsplaner kan oprettes for at finde ud af, hvordan medarbejdere periodiserer eller tildeles fridage.</span><span class="sxs-lookup"><span data-stu-id="96c1e-105">Leave and absence plans can be created to determine how employees accrue or are granted time off.</span></span> <span data-ttu-id="96c1e-106">Når medarbejderne er tilmeldt en plan, kan de sende anmodninger om fravær til godkendelse af ledere.</span><span class="sxs-lookup"><span data-stu-id="96c1e-106">After employees are enrolled in a plan, they can submit time-off requests for approval by managers.</span></span> <span data-ttu-id="96c1e-107">Med orlovssporing kan både ledere på øverste niveau og personalechefer se, hvem der holder fri, og hvor lang tid hver enkelt medarbejder stadig holder fri.</span><span class="sxs-lookup"><span data-stu-id="96c1e-107">Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.</span></span>  
 

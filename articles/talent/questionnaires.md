@@ -19,14 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: a892b53b555c29b1fc3928bb24eff98128d648f3
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="questionnaires"></a><span data-ttu-id="dcfb7-105">Spørgeskemaer</span><span class="sxs-lookup"><span data-stu-id="dcfb7-105">Questionnaires</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="dcfb7-106">Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger.</span><span class="sxs-lookup"><span data-stu-id="dcfb7-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="dcfb7-107">Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål.</span><span class="sxs-lookup"><span data-stu-id="dcfb7-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="dcfb7-108">Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne.</span><span class="sxs-lookup"><span data-stu-id="dcfb7-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 

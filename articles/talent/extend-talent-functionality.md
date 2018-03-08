@@ -18,13 +18,16 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: e1d0bbd71737001579218068e2ab0e02bc973f38
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 51eb4288f5b6c732755007c1dcd8c4db090ccc0a
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="a4ec2-103">Udvide funktionaliteten i Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="a4ec2-103">Extend the functionality of Microsoft Dynamics 365 for Talent</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="a4ec2-104">Hvis du har oprettet Microsoft PowerApps, kan du starte disse programmer fra hyperlinks i Microsoft Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="a4ec2-104">If you’ve created any Microsoft PowerApps, you can start those applications from links within Microsoft Dynamics 365 for Talent.</span></span> <span data-ttu-id="a4ec2-105">Når du vil oprette adgang til dine programmer, skal du angive nogle oplysninger i Talent på en konfigurationsside, som du kan åbne fra arbejdsområdet **Systemadministration**.</span><span class="sxs-lookup"><span data-stu-id="a4ec2-105">To set up access to your applications, you’ll need to set up some information in Talent on a configuration page that you can open from the **System administration** workspace.</span></span>
 
 ## <a name="configuring-embedded-powerapps-within-talent"></a><span data-ttu-id="a4ec2-106">Konfiguration af integrerede PowerApps i Talent</span><span class="sxs-lookup"><span data-stu-id="a4ec2-106">Configuring embedded PowerApps within Talent</span></span>
