@@ -62,7 +62,7 @@ Følgende trin beskriver processen til oprettelse af et brugerdefineret felt og 
 10.   Klik på **Indsæt** for at indsætte de markerede felter i det valgte område i formularen. 
 11.   **Valgfrit:** Aktivér tilstanden **Flyt** fra værktøjslinjen til personlige indstillinger for at flytte de nye felter til den ønskede placering i det valgte område. Se [Tilpasse brugeroplevelsen](personalize-user-experience.md) for at få yderligere oplysninger om, hvordan du bruger de forskellige funktioner for tilpasning til at optimere en formular til din personlige brug.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Dele brugerdefinerede felter med andre brugere
+## <a name="sharing-custom-fields-with-other-users"></a>Dele brugerdefinerede felter med andre brugere
 Når du har oprettet et brugerdefineret felt og vist det i en formular, ønsker du muligvis at give denne opdaterede sidevisning, der indeholder det nye felt, til andre brugere i systemet. Dette kan gøres på to forskellige måder ved hjælp af funktionerne til brugertilpasning af produktet:
 
 -   Den anbefalede rute er via systemadministratoren, der kan overføre en tilpasning til alle brugere eller en undergruppe af brugere. Du kan finde flere oplysninger i [Tilpasse brugeroplevelsen](personalize-user-experience.md). 

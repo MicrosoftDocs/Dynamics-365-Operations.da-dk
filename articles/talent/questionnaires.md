@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Spørgeskemaer
 
+[!include[banner](includes/banner.md)]
+
 Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne. 
 
 Du kan tilpasse et spørgeskema, så det passer til dine specifikke behov, ved hjælp af forskellige funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Her er nogle eksempler på, hvordan du kan bruge spørgeskemaer:

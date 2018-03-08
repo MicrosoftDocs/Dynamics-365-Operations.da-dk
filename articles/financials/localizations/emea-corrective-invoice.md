@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="corrective-invoicing"></a>Korrigerende fakturering
 
+[!include[banner](../includes/banner.md)]
+
 En kreditnota er et dokument, der reducerer eller eliminerer det beløb, som køberen skal at betale.
 
 En kreditnota indeholder en liste over produkterne, antal og aftalte priser for produkter eller tjenesteydelser, som sælgeren har leveret til køberen, men som køberen har returneret eller ikke har modtaget. Den kan udstedes i tilfælde af varer, der er beskadiget, fejl eller godtgørelser.

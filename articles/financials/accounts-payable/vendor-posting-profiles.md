@@ -54,10 +54,6 @@ Angiv de finanskonti, der skal bruges til bogføring af poster med den valgte po
 Hvis alle kreditorposteringer skal have samme posteringsprofil, skal du kun definere én posteringsprofil med Alle i feltet Kontokode. Angiv følgende værdier for at definere en posteringsprofil:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Felt</th>

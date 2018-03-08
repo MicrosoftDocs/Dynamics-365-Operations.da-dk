@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnøgler og dataenheder
+
+[!include[banner](../includes/banner.md)]
+
 Før du kan bruge dataenheder til at importere eller eksportere data, anbefales det, at du først bestemmer virkningen af konfigurationsnøgler på de dataenheder, du planlægger at bruge. 
 
 Yderligere oplysninger om konfigurationsnøgler i Finance and Operations, finder du i [Rapport for licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md).

@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="bank-management-workspace"></a>Arbejdsområde for bankstyring
 
+[!include[banner](../includes/banner.md)]
+
 Arbejdsområdet **Bankstyring** viser oplysninger, der er relateret til firmaets bankkonti. Arbejdsområdet indeholder en **Oversigt**-visning og siden **Analyser**. **Oversigt**-visningen indeholder oversigtsfelter, bankkontooplysninger, et saldodiagram og relaterede oplysninger. **Analyser**-siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører bankkontosaldi.
 
 ## <a name="summary-view"></a>Oversigtsvisning
