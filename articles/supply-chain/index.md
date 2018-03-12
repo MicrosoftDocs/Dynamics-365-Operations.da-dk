@@ -3,7 +3,7 @@ title: Startside for Supply Chain Management
 description: "Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for 
 Vælg et funktionsområde, du vil vide mere om.
 
 - [Omkostningsregnskab](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Omkostningsstyring](cost-management/costing-sheets.md)  
+- [Omkostningsstyring](cost-management/cost-management-home-page.md)  
 - [Lagerstyring](inventory/inventory-home-page.md)
 - [Varedisponering](master-planning/master-planning-home-page.md)
 - [Indkøb og forsyning](procurement/procurement-sourcing-overview.md)
@@ -52,12 +52,13 @@ Vælg et funktionsområde, du vil vide mere om.
 
 ## <a name="videos"></a>Videoer
 
-Disse korte videoer giver dig et få et indblik i de nye funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
+Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
 
--  [Kundeemne til integration af kontanter](https://youtu.be/AVV9x5x-XCg) 
+-  [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoer giver dig et få et indblik i de nye funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
+Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
 
 -  [Introduktion til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
@@ -65,19 +66,38 @@ Disse korte videoer giver dig et få et indblik i de nye funktioner, der findes 
 -  [Godkende indkøbsordrer på en mobilenhed](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuel planlægning med Gantt-diagram til produktions- og batchordrer](https://youtu.be/BtbuShkGj4I)
 
-Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version ligner også. 
+Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigurator i Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Varedisponering - tips og tricks til forbedring af ydeevnen</a>
--  <a href="https://youtu.be/RLXybx20B5o">Hjælp! MPS er langsom!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Håndter indgående ASN'er i Lokationsstyring</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få mest muligt ud af dit lokationsstyringssystem</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avanceret R3 lokationsstyring - Indgående behandling og min./maks. genopfyldning</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Avanceret R3 lokationsstyring - En almindelig dag, Indgående behandling og min./maks. genopfyldning</a>
--  <a href="https://youtu.be/5w1MngVchBA">Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avanceret lokationsstyring - En almindelig dag med procesproduktion</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Underleverandørhandlinger og aktiviteter i produktion</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Transportstyring (TMS) i det nye Microsoft Dynamics AX</a>
+**Omkostningsstyring**
+
+-  [Oversigt over omkostningsstyring](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Varedisponering**
+
+-  [Udvide behovsprognosefunktionen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Varedisponering - tips og tricks til forbedring af ydeevnen](https://youtu.be/7v8BPmEs9Dg)
+-  [Hjælp! MPS er langsom!](https://youtu.be/RLXybx20B5o)
+
+**Administration af produktoplysninger**
+
+-  [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Lokationssstyring** 
+
+-  [Håndtere indgående ASN'er i Lokationsstyring](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Få mest muligt ud af dit lokationsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning](https://youtu.be/Og0gLlVp7jA)
+-  [Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Produktionsstyring**
+
+-  [Underleverandørhandlinger og -aktiviteter i produktion](https://youtu.be/y1jrd3A_k70)
+
+**Transportstyring**
+
+-  [Transportstyring (TMS) i det nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogs
 Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>. De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version. 

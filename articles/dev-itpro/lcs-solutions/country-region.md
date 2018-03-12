@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -217,6 +217,21 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Afskrivningsmetoder for anlægsaktiver](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
 -   [Flytte et anlægsaktiv til lager](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Anlægsaktiver til små værdier](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+
+### <a name="india"></a>Indien
+
+- [Anlægsaktiver](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Overførsel af kapitalvarer til anlægsaktivet](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Knytte en dagsbaseret kalender til et anlægsaktivkartotek](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Konfigurere parametre til beregning af afskrivning](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Konfigurere afskrivning af anlægsaktivgruppe for afskrivningsmodeller](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Oprette en lagermodelgruppe til kapitalvarer](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Skifte til beregning af afskrivning for indiske anlægsaktiver](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Definere typer af skift og branche for bøger og knytte dem til anlægsaktiv](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Oversigt over skatteprogram](../../financials/general-ledger/tax-engine.md)
+    - [Integration af skatteprogram](../../financials/general-ledger/tax-engine-integration.md)
+    - [Ofte stillede spørgsmål om skattegrænser](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Udvidelse af skatteprogram](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 ### <a name="italy"></a>Italien
 
