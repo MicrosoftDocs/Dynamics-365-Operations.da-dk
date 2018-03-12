@@ -183,6 +183,7 @@
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiceringsarkitektur for detailonlinebutik](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Detailkanalperformance i Power BI-indhold](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [PA-DSS-certificering (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
 
 ## Installation og hotfixes
 ### [Oversigt over skalaenhed til detailbutikker](dev-itpro/retail-store-system-begin.md)
