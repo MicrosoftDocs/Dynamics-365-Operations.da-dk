@@ -1,7 +1,7 @@
 ---
 title: Ruter og operationer
 description: Dette emne indeholder en beskrivelse af ruter og operationer.
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
