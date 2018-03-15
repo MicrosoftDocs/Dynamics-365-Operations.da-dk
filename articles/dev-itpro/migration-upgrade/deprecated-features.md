@@ -3,7 +3,7 @@ title: "Frarådede funktioner"
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 > Fra og med versionen af Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 med platformsopdatering 8 er installationstyperne angivet for hver fjernet eller forældet funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 med platformsopdatering 12
+
+### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger 
+Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise personlige produktanbefalinger på en POS-enhed. Du kan finde flere oplysninger under [Tilpassede produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner.  |
+| **Erstattet af en anden funktion?**   | Nr. Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
+| **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
+| **Installationsindstilling**              | Alt                                                                                      |
+| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Operations 1611 og nyere versioner.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Udvidelser af listen over elektroniske rapporteringsfunktioner (ER)
 Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-udtryksgeneratoren (yderligere oplysninger finder du i [Udvide listen over elektroniske rapporteringsfunktioner](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)), understøttes ikke længere. På grund af ændringer af ER-API'er er API'en til kald af indbyggede funktioner fra ER-udtryksgeneratoren blevet intern og kan ikke længere udvides.
@@ -132,6 +143,19 @@ Brugere kan hente denne formular på portalen for myndigheder.
 | **Installationsindstilling**                       | Alle moduler                                                                    |
 | **Status**                                  | Forældet: En dato for fjernelse er ikke angivet for denne funktion.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger 
+Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise personlige produktanbefalinger på en POS-enhed. Du kan finde flere oplysninger under [Tilpassede produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner.  |
+| **Erstattet af en anden funktion?**   | Nr. Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
+| **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
+| **Installationsindstilling**              | Alt                                                                                      |
+| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere versioner. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 med platformsopdatering 8

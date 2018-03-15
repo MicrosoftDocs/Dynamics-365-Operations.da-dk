@@ -3,7 +3,7 @@ title: "Økonomisk indsigt"
 description: "Økonomiske indsigt bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ På nuværende tidspunkt kan dataene i integrerede Power BI-rapporter ikke begr�
 | Vis økonomisk indsigt i hele firmaet   | •   I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne pligt ikke tildelt som en rolle. • I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | •    Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. •    Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder.             |
 
 
-## <a name="how-financial-statements-work"></a>Sådan fungerer regnskaber
-Selvom **økonomiske indsigt** indeholder regnskaber, er det ikke en erstatning til regnskabsaflæggelse i Finance and Operations. Standardregnskaberne i **økonomisk indsigt** har begrænset omfang og ikke omfatter alle former for regnskaber. Økonomirapportering er stadig det primære værktøj til at designe, oprette og generere lovpligtige regnskaber.
+## <a name="financial-reporting-vs-finanical-insights"></a>Økonomirapportering vs. Økonomisk indsigt
+Selvom **Økonomisk indsigt** indeholder regnskaber, er det ikke en erstatning for regnskabsaflæggelse i Finance and Operations. Standardregnskaberne i **Økonomisk indsigt** har begrænset omfang og omfatter ikke alle former for regnskaber. Økonomirapportering er stadig det primære værktøj til at designe, oprette og generere lovpligtige regnskaber.
 
-Ud over de visuelle elementer fra det oprindelige arbejdsområde **Regnskabsdirektørens oversigt** er nye KPI'er, diagrammer og regnskaber nu tilgængelig. Følgende regnskaber er tilgængelige:
+I følgende diagram til sammenligning får du hjælp til at skelne mellem de to indstillinger:
+
+|                                         | **Økonomirapportering**                            | **Økonomisk indsigt**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Redigere standardrapporter**                | Ja                                                | Nej                                 | | **Oprette nye rapporter**                  | Ja                                                | Nej                                 | | **Udskrive rapporter**                       | Ja                                                | Nej                                 | | **Eksporere til Excel**                     | Ja          | Begrænset eksport af rådata til Excel, ikke en formateret rapport       | | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                               | Nej                                 | | **Rapportere om reskontrodata**       | Ja Begrænset til kreditor, debitor    | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser etc.  | | **Rapporteringsvaluta**      | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta      | | **Sikkerhed**                | Ja Overholder sikkerheden i Finance and Operations og i trædiagrammet | Begrænset Visning af rapporter for alle virksomheder (uanset sikkerhed i Finance and Operations) eller kun den aktive virksomhed | | **Understøtte forskellige kontoplaner og regnskabsår** | Ja                   | Nej                   | | **Rapporter om eksterne data**                              | Nej                   | Nej                                   | | **Understøtte konsolideringer**                               | Ja                          | Begrænset Kan rapportere om flere virksomheder, men kan kun bruge regnskabsvaluta                                     |
+
+
+Ud over brugergrænsefladen i det oprindelige arbejdsområde **Regnskabsdirektørens oversigt** er nye KPI'er, diagrammer og regnskaber nu tilgængelig. Følgende regnskaber er tilgængelige:
 
 •   Råbalance
 

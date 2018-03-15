@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Butiksordreopfyldning
+
+[!include[banner](includes/banner.md)]
 
 Mange detailhandlere ønsker at optimere deres ordreopfyldning ved at gøre det muligt for butikker at opfylde ordrer. Ordreopfyldning på butiksniveau kan afhjælpe situationer med overfyldte lagre i en bestemt butik eller kan være nødvendigt fra et logistisk synspunkt i tilfælde, hvor en butik har ekstra kapacitet eller ligger inden for nærmere leveringsafstand i forhold til kunden. Du kan løse dette behov ved hjælp af en samlet ordreopfyldningsoperation, der er tilgængelig på salgsstedet (POS).
 
@@ -56,7 +58,7 @@ Linjer kan vælges ved hjælp af funktionen **Vælg** i handlingsruden. Når **V
 
 ## <a name="line-details"></a>Linjedetaljer
 
-Linjedetaljerne kan ses ved hjælp af pop op-menuen med linjedetaljer. Når denne menu bruges, findes der to faner med yderligere oplysninger om den valgte linje. Den første fane, **Linjedetaljer**, indeholder oplysninger om selve linjen, f.eks. det bestilte og det resterende antal. Der vises yderligere oplysninger, herunder plukket, pakket og faktureret antal samt leveringsmåde og leveringsadresse. Fanen **Ordredetaljer** indeholder oplysningerne i ordrehovedet herunder kunde, kunde-id, ordrenummer, ordretotal og saldo.
+Linjedetaljerne kan ses ved hjælp af pop op-menuen med linjedetaljer. Når denne menu bruges, findes der tre faner med yderligere oplysninger om den valgte linje. Den første fane, **Linjedetaljer**, indeholder oplysninger om selve linjen, f.eks. det bestilte og det resterende antal. Der vises yderligere oplysninger, herunder plukket, pakket og faktureret antal samt leveringsmåde og leveringsadresse. Fanen **Ordredetaljer** indeholder oplysningerne i ordrehovedet herunder kunde, kunde-id, ordrenummer, ordretotal og saldo. Fanen **Lager** indeholder oplysninger for den valgte linje i form af fysisk disponible lagerbeholdning, reserveret lagerbeholdning og bestilt lagerbeholdning.
 
 Hvis flere linjer er markeret, angiver pop op-menuen med ordrelinjedetaljer kun, at der er valgt flere linjer. Ryd linjerne, indtil der kun én linje mangler, hvis du vil se detaljerne for en linje. 
 

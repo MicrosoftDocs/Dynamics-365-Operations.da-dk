@@ -3,7 +3,7 @@ title: Power BI-indhold
 description: "Dette emne beskriver det Power BI-indhold, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om det."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edi
 - [Power BI-indhold til analyse af omkostningsregnskab](cost-accounting-analysis-content-pack.md) 
 - [Power BI-indhold til styring af kredit og inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-indhold til medarbejderudvikling](employee-development-PBI.md) 
+- [Power BI-indhold til økonomisk indsigt](financial-insights.md)
 - [Driftsregnskab i Power BI-indhold](financial-performance-power-bi-content-pack.md)
 - [Power BI-indhold til styring af anlægsaktiver](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Power BI-indhold til Læring](learning-power-bi.md)
@@ -73,6 +74,9 @@ Hvis du bruger Microsoft Dynamics 365 for Operations version 1611 er følgende P
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-indhold til Microsoft Dynamics AX
 Hvis du bruger Microsoft Dynamics AX 7.0 eller Microsoft Dynamics AX 7.0.1, er følgende Power BI-indhold tilgængeligt:
+
+> [!Note]
+> Disse indholdspakker er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er publiceret på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Power BI-indhold til omkostningsstyring](cost-management-content-pack.md)    
 - [Driftsregnskab i Power BI-indhold](financial-performance-power-bi-content-pack.md)

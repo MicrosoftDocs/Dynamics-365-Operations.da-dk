@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
-## <a name="overview"></a>Overblik
+[!include[banner](../includes/banner.md)]
+
 Du kan importere betalingsfiler, som har følgende formater:
 
  - **ISO20022 camt.054 kreditadvis** – Importere indgående betalinger fra en fil i dette format i debitorbetalingskladden.
@@ -40,7 +42,7 @@ Følgende forudsætninger skal være opfyldt, for at du kan importere meddelelse
 4. På siden **Bankkonti** skal du oprette bankkonti for juridiske enheder ved at angive følgende oplysninger: IBAN eller bankkontonummer, SWIFT-kode eller registreringsnummer, valuta og adresse.
 
     > [!NOTE]
-    > Hvis du planlægger at bruge avanceret bankafstemning, skal du på i oversigtspanelet **Afstemning** indstille **Avanceret bankafstemning** til **Ja**. Hvis du planlægger at afstemme en ikke-bogførte importerede betalinger, kan du indstille **Brug bankkontoudtog som bekræftelse på elektroniske betalinger** til **Ja**.
+        > Hvis du planlægger at bruge avanceret bankafstemning, skal du på i oversigtspanelet **Afstemning** indstille **Avanceret bankafstemning** til **Ja**. Hvis du planlægger at afstemme en ikke-bogførte importerede betalinger, kan du indstille **Brug bankkontoudtog som bekræftelse på elektroniske betalinger** til **Ja**.
 
 5. Valgfrit: På siden **Tilknytning af transaktionskode** skal du oprette en tilknytning mellem bankposteringskoder i filen og bankposteringstyperne.
 6. Hvis filen indeholder posteringsgebyrer, der skal bogføres sammen med den indgående betaling, kan du oprette et betalingsgebyr på siden **Debitorbetalingsgebyr**. Tilknyt derefter på siden **Betalingsmåder** betalingsgebyret med bankkontoen i opsætningen af betalingsgebyret.
@@ -53,9 +55,7 @@ Følgende forudsætninger skal være opfyldt, for at du kan importere meddelelse
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importere filen camt.054 kreditadvis til debitorbetalingskladden
 1. På siden **Kladdelinjer for debitorindbetalinger** skal du klikke på **Funktioner** > **Importer betalinger**.
 2. Vælg den betalingsmåde, der har de nødvendige indstillinger for formatet ISO20022 camt.054.
-3. Angiv de krævede parametre og filstien, og klik derefter på **OK**.
-
-Filen importeres.
+3. Angiv de krævede parametre og filstien, og klik derefter på **OK**. Filen importeres.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>Forudsætninger for at importere filer i pain.002 returneringsstatus- og camt.054 debetadvis-format i overførselskladden for kreditorbetaling.
 Følgende forudsætninger skal være opfyldt, for at du kan importere bankmeddelelser i følgende ISO20022 formater til siden **Overførsel af kreditorbetaling**: pain.002.001.003 returneringsstatusmeddelelser og camt.054.001.002 debetadvis.

@@ -1,6 +1,6 @@
 ---
 title: "Konfigurere elektronisk rapportering for at trække data ind i Power BI"
-description: "Dette emne forklarer, hvordan du kan bruge din konfiguration af elektronisk rapportering(ER) til at arrangere overførslen af data fra din forekomst af Finance and Operations til Power BI-tjenester. I dette emne bruges som eksempel Intrastat-posteringer som virksomhedens data, der skal overføres. Power BI-kortvisualiseringen bruger disse Intrastat-posteringsdata til at præsentere en visning til analyse af virksomhedens import-/eksportaktiviteter i Power BI-rapporten."
+description: "Dette emne forklarer, hvordan du kan bruge din konfiguration af elektronisk rapportering(ER) til at arrangere overførslen af data fra din forekomst af Finance and Operations til Power BI-tjenester."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 90749012c3eb4f3d1c275f0661f8cff43ec285a2
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -100,22 +100,38 @@ Klik på knappen **Indstillinger** til den nye destinationspost. I **Indstilling
 2.  I feltet **SharePoint** skal du vælge den **Delt**-dokumenttype, du oprettede tidligere.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Planlægge kørsel af konfigureret ER-format
-På siden **Konfigurationer** (**Virksomhedsadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**) skal du i konfigurationstræet vælge den **Import-/eksportaktiviteter**-konfiguration, du oprettede tidligere. Skift status for version 1.1 fra **Udkast** til **Komplet** for at gøre dette format tilgængeligt til brug. [![Siden Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Vælg den komplette version af **Import-/-eksportaktiviteter**-konfigurationen, og klik derefter på **Kør**. Bemærk, at der anvendes den destination, der er konfigureret til outputresultatet, som genereres i Excel-format. Angiv indstillingen **Batchbehandling** til **Ja** for at køre denne rapport i fuldautomatisk tilstand. Klik på **Gentages** for at planlægge den krævede gentagelse af denne batchkørsel. Gentagelsen definerer, hvor ofte de opdaterede data overføres fra Finance and Operations til Power BI. [![Dialogboksen Parametre til elektronisk rapport](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Når den er konfigureret, kan du finde ER-kørselsrapporten på siden **Batchjob** (**Systemadministration &gt; Forespørgsler &gt; Batchjob**). [![Siden Batchjob](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Når dette job køres for første gang, oprettes der en ny Excel-fil med det navn, der er konfigureret i den valgte SharePoint-mappe. Hver gang jobbet køres, opretter destinationen en ny version af denne Excel-fil. [![Ny version af Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+1. På siden **Konfigurationer** (**Virksomhedsadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**) skal du i konfigurationstræet vælge den **Import-/eksportaktiviteter**-konfiguration, du oprettede tidligere. 
+2. Skift status for version 1.1 fra **Udkast** til **Komplet** for at gøre dette format tilgængeligt til brug. [![Siden Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) 
+3. Vælg den komplette version af **Import-/-eksportaktiviteter**-konfigurationen, og klik derefter på **Kør**. Bemærk, at der anvendes den destination, der er konfigureret til outputresultatet, som genereres i Excel-format. 
+4. Angiv indstillingen **Batchbehandling** til **Ja** for at køre denne rapport i fuldautomatisk tilstand. 
+5. Klik på **Gentages** for at planlægge den krævede gentagelse af denne batchkørsel. Gentagelsen definerer, hvor ofte de opdaterede data overføres fra Finance and Operations til Power BI. [![Dialogboksen Parametre til elektronisk rapport](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) 
+6. Når den er konfigureret, kan du finde ER-kørselsrapporten på siden **Batchjob** (**Systemadministration &gt; Forespørgsler &gt; Batchjob**). [![Siden Batchjob](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) 
+7. Når dette job køres for første gang, oprettes der en ny Excel-fil med det navn, der er konfigureret i den valgte SharePoint-mappe. Hver gang jobbet køres, opretter destinationen en ny version af denne Excel-fil. [![Ny version af Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Oprette et Power BI-datasæt ved hjælp af outputresultatet i ER-formatet
-Log på Power BI, og åbn en eksisterende Power BI-gruppe (arbejdsområde), eller opret en ny gruppe. Enten klik på **Tilføj** under **Filer** i sektionen **Importér eller opret forbindelse til data**, eller klik på plustegnet (**+**) ud for **Datasæt** i venstre rude. [![Oprettelse af et datasæt](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Vælg indstillingen **SharePoint - Teamwebsteder**, og angiv derefter stien til den SharePoint Server, du vil bruge (**https://ax7partner.litware.com** i vores eksempel). Gå derefter til mappen **/Delte dokumenter/GER data/PowerBI**, og vælg den Excel-fil, du har oprettet som kilde for data til det nye Power BI-datasæt. [![Valg af Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Klik på **Tilknyt**, og klik derefter på **Importér**. Der oprettes et nyt datasæt, der er baseret på den valgte Excel-fil. Datasættet kan også føjes automatisk til det nyoprettede dashboard. [![Datasæt på dashboardet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Konfigurer opdateringsskemaet for dette datasæt for at tvinge en periodisk opdatering. Periodiske opdateringer gør det muligt at bruge nye forretningsdata, der kommer fra Finance and Operations, via periodisk kørsel af ER-rapporten gennem nye versioner af den Excel-fil, der oprettes på SharePoint-serveren.
+1. Log på Power BI, og åbn en eksisterende Power BI-gruppe (arbejdsområde), eller opret en ny gruppe. Enten klik på **Tilføj** under **Filer** i sektionen **Importér eller opret forbindelse til data**, eller klik på plustegnet (**+**) ud for **Datasæt** i venstre rude. [![Oprettelse af et datasæt](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) 
+2. Vælg indstillingen **SharePoint - Teamwebsteder**, og angiv derefter stien til den SharePoint Server, du vil bruge (`https://ax7partner.litware.com` i vores eksempel). 
+3. Gå til mappen **/Delte dokumenter/GER data/PowerBI**, og vælg den Excel-fil, du har oprettet som kilde for data til det nye Power BI-datasæt. [![Valg af Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) 
+4. Klik på **Tilknyt**, og klik derefter på **Importér**. Der oprettes et nyt datasæt, der er baseret på den valgte Excel-fil. Datasættet kan også føjes automatisk til det nyoprettede dashboard. [![Datasæt på dashboardet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) 
+5. Konfigurer opdateringsskemaet for dette datasæt for at tvinge en periodisk opdatering. Periodiske opdateringer gør det muligt at bruge nye forretningsdata, der kommer fra Finance and Operations, via periodisk kørsel af ER-rapporten gennem nye versioner af den Excel-fil, der oprettes på SharePoint-serveren.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Oprette en Power BI-rapport ved hjælp af det nye datasæt
-Hvis du vil oprette en ny Power BI-rapport, skal du klikke på det **Import- og eksportoplysninger** Power BI-datasæt, du har oprettet. Konfigurer derefter den visuelle effekt. Du kan for eksempel vælge **Kartogram** som visualisering og konfigurere den som følger:
+1. Klik på det **Import- og eksportoplysninger** Power BI-datasæt, du har oprettet. 
+2. Konfigurer den visuelle effekt. Du kan for eksempel vælge **Kartogram** som visualisering og konfigurere den som følger:
+ -   Tildel **CountryOrigin**-feltet i datasættet til feltet **Placering** i kortvisualiseringen.
+ -   Tildel **Mængde**-feltet i datasættet til feltet **Farvemætning** i kortvisualiseringen.
+ -   Tilføj **Aktivitet**- og **År**-datasætfelterne til felterne **Filtre** i kortvisualiseringen.
 
--   Tildel **CountryOrigin**-feltet i datasættet til feltet **Placering** i kortvisualiseringen.
--   Tildel **Mængde**-feltet i datasættet til feltet **Farvemætning** i kortvisualiseringen.
--   Tilføj **Aktivitet**- og **År**-datasætfelterne til felterne **Filtre** i kortvisualiseringen.
-
-Gem Power BI-rapporten som **Import- og eksportoplysningsrapport**. [![Import- og eksportoplysningsrapport](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Bemærk, at kortet viser de lande/områder, der er nævnt i Excel-filen (Østrig og Schweiz i dette eksempel). Disse lande/områder er farvet for at vise den procentvise andel af de fakturerede beløb for hver. Opdater listen over Intrastat-transaktioner. Der tilføjes en eksporttransaktion, der kommer fra Italien. [![Listen Intrastat-posteringer](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Vent på næste planlagte kørsel af ER-rapporten og den næste planlagte opdatering af Power BI-datasættet. Gennemgå derefter Power BI-rapporten (vælg kun at få vist importtransaktioner). Det opdaterede kort viser nu Italien. [![Opdateret kort](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+3. Gem Power BI-rapporten som **Import- og eksportoplysningsrapport**. [![Import- og eksportoplysningsrapport](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Bemærk, at kortet viser de lande/områder, der er nævnt i Excel-filen (Østrig og Schweiz i dette eksempel). Disse lande/områder er farvet for at vise den procentvise andel af de fakturerede beløb for hver. 
+4. Opdater listen over Intrastat-transaktioner. Der tilføjes en eksporttransaktion, der kommer fra Italien. [![Listen Intrastat-posteringer](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 
+5. Vent på næste planlagte kørsel af ER-rapporten og den næste planlagte opdatering af Power BI-datasættet. Gennemgå derefter Power BI-rapporten (vælg kun at få vist importtransaktioner). Det opdaterede kort viser nu Italien. [![Opdateret kort](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance-and-operations"></a>Få adgang til Power BI-rapport i Finance and Operations
-Konfigurer integrationen mellem Finance and Operations og Power BI. Yderligere oplysninger finder du under [Konfiguration af Power BI til arbejdsområder](configure-power-bi-integration.md). På siden **Elektronisk rapportering** af arbejdsområdet, der understøtter Power BI-integration (**Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Arbejdsområde for elektronisk rapportering**) skal du klikke på **Indstillinger** &gt; **Åbn rapportkatalog**. Vælg den **Import- og eksportoplysninger** Power BI-rapport, du har oprettet, for at få vist rapporten som et handlingselement på den valgte side. Klik på handlingselement for at åbne Finance and Operations-side, der viser den rapport, du har designet i Power BI. [![Import- og eksportoplysningsrapport](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+Konfigurer integrationen mellem Finance and Operations og Power BI. Yderligere oplysninger finder du under [Konfiguration af Power BI til arbejdsområder](configure-power-bi-integration.md). 
+
+1. På siden **Elektronisk rapportering** af arbejdsområdet, der understøtter Power BI-integration (**Virksomhedsadministration** &gt; **Arbejdsområder** &gt; **Arbejdsområde for elektronisk rapportering**) skal du klikke på **Indstillinger** &gt; **Åbn rapportkatalog**. 
+2. Vælg den **Import- og eksportoplysninger** Power BI-rapport, du har oprettet, for at få vist rapporten som et handlingselement på den valgte side. 
+3. Klik på handlingselement for at åbne Finance and Operations-side, der viser den rapport, du har designet i Power BI. [![Import- og eksportoplysningsrapport](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 <a name="see-also"></a>Se også
 --------
