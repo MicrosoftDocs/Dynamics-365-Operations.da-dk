@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
+
+[!include[banner](../includes/banner.md)]
 
 I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet. Når du frigiver en stykliste- eller formellinje til lagerstedet, afgør systemet først, om materialet allerede findes på indlagringslokationen for produktionen i produktionsanlægget, hvor materialet skal forbruges i produktionsprocessen.
 
@@ -40,6 +42,9 @@ Hvilken metode der bruges til at frigive stykliste- og formellinjer styres af pa
 
 - **Frigiv stykliste- og formellinjer som en del af frigivelsen af produktions- eller batchordren** – Med denne metode frigives stykliste- og formellinjer for en produktions- eller batchordre som en del af processen med at frigive ordren. Normalt under frigivelsen af en produktions- eller batchordre frigives produktionsjob til arbejderne i produktionsanlægget, og der udskrives produktionspapirer. Under denne proces ændres status for ordren også til **Frigivet**.
 - **Frigiv stykliste- og formellinjer via et batchjob eller som en manuel indgriben** – Med denne metode kan stykliste- og formellinjer kun frigives via batchjobbet **Automatisk frigivelse af stykliste- og formellinjer** eller via manuel indgriben. Hvis du vil frigive stykliste- og formellinjer manuelt, skal du vælge **Frigiv til lagersted** i handlingsruden Produktionsordre på listesiden eller detaljesiden for produktionsordren.
+
+Du kan se en hurtig demonstration af, hvordan du frigiver stykliste- og formellinjer til produktion ved hjælp af et batchjob, i denne korte YouTube-video:
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigive stykliste- og formellinjer ved hjælp af et batchjob
 
@@ -79,6 +84,9 @@ Hvis du vil styre de operationer, som materialet skal frigives til, skal du brug
 I følgende illustration vises en produktionsordre, der har to operationer, 10 og 20. Hvis du i dette eksempel begrænser frigivelsen til operation 10, frigives kun materiale M9203.
 
 ![Eksempel på frigivelse af materiale pr. operationsnummer](media/two-operations.PNG)
+
+Du kan se en hurtig demonstration af, hvordan du kan frigive materiale i forhold til mængden af færdigvarer, i denne korte YouTube-video:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale i forhold til antallet af færdigvarer
 

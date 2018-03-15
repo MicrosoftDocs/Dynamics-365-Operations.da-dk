@@ -3,7 +3,7 @@ title: Budgetanalyse i den offentlig sektor
 description: "Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring."
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfdaa28dce86f42faa3ae7def6da6c3618e111e0
+ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
+ms.openlocfilehash: 597af28f9b07c7f590882c4bfa3b3f9e96b3dd5d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
+Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogførte indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
 
 I dette emne beskrives de budgetanalysefunktioner, som er tilgængelige for den offentlige sektor. 
 
 Før du læser dette emne, skal du også læse [Budgettering i den offentlige sektor](budgeting-public-sector.md). 
 
-Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
+Du skal evt. angive følgende budgetteringsfunktioner for den offentlige sektor. Brug siden **Budgetanalyse** til at få vist bogførte indtægter og udgifter efter økonomisk dimension ved hjælp af en kombination af finanskonto og budgetstyringsdata. Du kan få vist opsummerede beløb og transaktionsdetaljer for reviderede budgetter, faktiske udgifter, behæftelser og forudgående behæftelser. 
 
 Indtægter og udgifter kan opsummeres ved hjælp af de forskellige niveauer af økonomiske dimensioner. Hvis f.eks. budgetdimensioner er middel, organisation og hovedkonto, kan du vælge **Middel**, **Organisation** eller **Hovedkonto** for at se den økonomiske aktivitet opsummeret på det pågældende niveau. 
 
@@ -54,15 +54,15 @@ Du kan også bruge siden **Budgetanalyse** til at vælge en økonomisk dimension
 ## <a name="what-transaction-details-are-available-on-the-budget-analysis-page"></a>Hvilke transaktionsdetaljer er tilgængelige på siden Budgetanalyse?
 Du kan vælge et element i gitteret og rulle ned for at se detaljer om følgende transaktioner:
 
--   **Revideret budgetbeløb**(summen af oprindeligt budget, revision, overførsel og overførte beløb)
+-   **Revideret budgetbeløb** (summen af oprindeligt budget, revision, overførsel og overførte beløb)
 -   **Faktiske udgifter** (summen af de debiteringer og krediteringer, der blev bogført i forhold til de økonomiske dimensionsværdier)
 -   **Behæftelser** og **Budgetreservationer** (herunder oprindelige og eftergivelse af posteringer)
 
 ### <a name="tips"></a>Tip!
 
 -   Du kan få vist de reviderede budgetregisterposter for budgetanalyseforespørgslen ved at klikke på **Opdateret budget** i handlingsruden. Budgettyperne for de reviderede budgetregisterposter omfatter det oprindelige budget, overførsel, flytning og revision. Disse beløb kommer fra tabellerne med budgetregisterposterne.
--   Du kan få vist de faktiske udgifter for budgetanalyseforespørgslen ved at klikke på **Faktisk**. Siden har indflydelse på den oprindelige dokumentside, f.eks. en avanceret finanspost. Disse beløb kommer fra tabellerne med finanskontoposterne.
--   Du kan få vist behæftelser og refererede transaktioner for budgetanalyseforespørgslen ved at klikke på **Behæftelse**. Siden har indflydelse på indkøbsordren for den valgte postering. Disse beløb kommer fra tabellerne til budgetkildesporing.
+-   Du kan få vist de faktiske udgifter for budgetanalyseforespørgslen ved at klikke på **Faktisk**. Siden har indflydelse på den oprindelige dokumentside, f.eks. en avanceret finanspost. Disse beløb kommer fra tabellerne med finanskontoposterne, undtagen når indstillingen **Udgiftsbudget med overførsler** er valgt. Når denne indstilling er markeret, bruges budgetkildetabellerne.
+-   Du kan få vist behæftelser og refererede transaktioner for budgetanalyseforespørgslen ved at klikke på **Behæftelse**. Siden påvirker den generelle budgetreservation (hvis den er implementeret) eller indkøbsordre for den valgte postering. Disse beløb kommer fra tabellerne til budgetkildesporing.
 -   Du kan få vist budgetreservationer og refererede transaktioner for budgetanalyseforespørgslen ved at klikke på **Budgetreservation**. Siden har indflydelse på indkøbsrekvisitionen for den valgte postering. Disse beløb kommer fra tabellerne til budgetkildesporing.
 
 ## <a name="should-i-use-the-budget-control-statistics-page-or-the-budget-analysis-page"></a>Skal jeg bruge siden Statistik for budgetstyring eller siden Budgetanalyse?

@@ -18,14 +18,19 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
-ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
+ms.sourcegitcommit: 8b59ea6a2ac8c1c4e5df6e251fa3390639ff3f30
+ms.openlocfilehash: e6266ef5890b5caaf33db76eeccfc8a7a6888a11
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/01/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Klargøre Microsoft Dynamics 365 for Talent
-Dette emne fører dig gennem processen med at klargøre et nyt miljø til Microsoft Dynamics 365 for Talent. Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Talent-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
+
+[!include[banner](includes/banner.md)]
+
+[!include[banner](includes/banner.md)]
+
+Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 for Talent. Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Talent-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
 
 For at komme i gang skal den globale administrator logge på [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) og oprette et nyt Talent-projekt. Medmindre et problem med licensering forhindrer klargøring af Talent, skulle der ikke være brug for hjælp fra Support- eller DSE-medarbejdere (Dynamics Service Engineering).
 
@@ -52,19 +57,23 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
 3. Vælg **Tilføj**, og vælg derefter det miljø, Talent skal klargøres i.
 4. Vælg **Ja** for at acceptere vilkårene og begynde installationen.
 
-    Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er opdateret til **Installeret**. Dette tager normalt kun et par minutter. Hvis klargøringen mislykkes, skal du kontakte Support.
+    Det nye miljø vises på listen over miljøer i navigationsruden til venstre. Men du kan ikke begynde at bruge miljøet, før installationsstatus er opdateret til **Installeret**. Dette tager normalt kun et par minutter. Hvis klargøringsprocessen mislykkes, skal du kontakte Support.
 
 6. Vælg **Log på Talent** for at bruge det nye miljø.
 
 > [!NOTE]
 > Hvis du endnu ikke har godkendt de endelige krav, kan du installere en testforekomst af Talent i projektet. Du kan derefter bruge denne forekomst til at teste din løsning, indtil du kan godkende den. Hvis du bruger det nye miljø til test, skal du gentage denne procedure for at oprette et produktionsmiljø.
 
+> [!NOTE]
+> Talent-miljøer, der klargøres via LCS, indeholder ikke demodata, der er konfigureret til personaleopgaver (HR), eller der er specifikke for Talent. Hvis du har brug for et miljø, der indeholder demodata, anbefales det, at du tilmelder dig et gratis 60-dages [Talent-forsøgsmiljø](https://dynamics.microsoft.com/en-us/talent/overview/). Selvom et forsøgsmiljø ejes af den bruger, der har anmodet om det, kan andre brugere inviteres gennem systemadministrationsoplevelsen i det centrale HR-miljø. Forsøgsmiljøer indeholder fiktive data, der kan bruges til at udforske programmet på en sikker måde. De ikke er beregnet til brug som produktionsmiljøer. Bemærk, at når forsøgsmiljøet udløber efter 60 dage, slettes alle data i det, og de kan ikke gendannes. Du kan tilmelde dig til et nyt forsøgsmiljø, når det eksisterende miljø udløber.
+
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Oprette et nyt PowerApps-miljø (hvis nødvendigt)
+Integrationen mellem Talent- og PowerApps-miljøerne gør det muligt for dig at integrere og udvide brugen af Talent-data ved hjælp af PowerApps-værktøjer. Når du forstår formålet med PowerApps-miljøer, kan du bedre bygge programmer, der opfylder dine behov for at udvide Talent. Du kan finde flere oplysninger om PowerApps-miljøer, herunder omfanget af miljøet, adgang til miljøet og oprettelse og valg af et miljø, under [Annoncering af PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). Selv om hver lejer automatisk klargøres i et PowerApps-standardmiljø, er dette miljø muligvis ikke det bedste at bruge til Talent-installationen. Du skal overveje dataintegration og teststrategier i dette trin, og vi anbefaler, at du overvejer de mulige konsekvenser af dette for installationen, da nogle handlinger ikke er nemme at ændre senere. 
 
-Visionen bag Talent's integration med PowerApps-miljøer er at aktivere dataintegration og udvidelsesprocesser ved brug af værktøjer til PowerApps oven på Talent-data. Det er derfor vigtigt at forstå formålet med PowerApps-miljøer, når du vælger miljøet, der skal bruges til Talent. Yderligere oplysninger om PowerApps-miljøer, herunder omfanget af miljøet, adgang til miljøet, og oprettelse og valg af et miljø, finder du i [Annoncering af PowerApps-miljøer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  Selv om hver lejer automatisk klargøres i et miljø med standard PowerApps, er det muligvis ikke det bedste miljø at bruge til Talent-installationen. Dataintegration og teststrategier skal overvejes i dette trin, så det anbefales, at du overvejer de forskellige konsekvenser for installationen, da det ikke er nemt at ændre senere.
+Selvom hver lejer automatisk klargøres i et PowerApps-standardmiljø, er dette miljø muligvis ikke det bedste til din Talent-installation. Du skal overveje dataintegrations- og teststrategier i dette trin. Derfor anbefaler vi, at du overvejer, hvilke forskellige konsekvenser det har for din installation, fordi det ikke er let at ændre PowerApps-miljøet senere.
 
-1. Vælg **Administrer miljøer** i LCS. Du føres til [PowerApps Administration](https://preview.admin.powerapps.com/environments), hvor du kan se eksisterende miljøer og oprette nye miljøer.
-2. Vælg knappen (**+**) **Nyt miljø**.
+1. I LCS skal du vælge **Administrer miljøer**. Du kommer til [PowerApps Administration](https://preview.admin.powerapps.com/environments), hvor du kan se eksisterende miljøer og oprette nye miljøer.
+2. Vælg **Nyt miljø**.
 3. Angiv et entydigt navn til miljøet, og vælg en placering at installere det på.
 
     > [!NOTE]
@@ -72,25 +81,27 @@ Visionen bag Talent's integration med PowerApps-miljøer er at aktivere datainte
 
 4. Når du bliver spurgt, om du vil oprette en database, skal du vælge **Opret database** for at oprette CDS-databasen (Common Data Service), der skal være vært for en del af dine Talent-data. Når du opretter en database, kan du også integrere PowerApps-programmer i Talent.
 5. Du bliver spurgt, hvilket adgangsniveau du vil bruge til databasen. Det anbefales, at du vælger **Begræns adgang**, da denne indstilling forhindrer, at Talent-brugerne kan få direkte adgang til følsomme data ved hjælp af et PowerApps-program.
-6. Den CDS-database, der oprettes, indeholder demo-data. Disse demodata er nyttige, fordi du kan bruge demodatafirmaet til test eller til at oprette opgaveregistreringer eller opgaveguider. Dog tilføjer demodata inaktive medarbejdere og fiktive adresser, blandt andre oplysninger, til produktionsmiljøet. Du kan fjerne demodataene ved at følge disse trin, når du er færdig med at oprette CDS-databasen:
+6. Den CDS-database, der oprettes, indeholder demodata, som tilføjer inaktive medarbejdere og fiktive adresser, blandt andre oplysninger, til produktionsmiljøet. Du kan fjerne demodataene ved at følge disse trin, når du er færdig med at oprette CDS-databasen:
 
     > [!IMPORTANT]
-    > Hvis du tidligere har oprettet en CDS-database og angivet nogle af firmaets produktionsdata i den, skal du være opmærksom på, at disse trin fjerner **alle** data i den valgte database, selv dit firmas produktionsdata.
+    > Hvis du tidligere har oprettet en CDS-database og angivet nogle af firmaets produktionsdata i den, fjerner disse trin **alle** data i den valgte database, selv dit firmas produktionsdata.
 
-    1. Log på [PowerApps](https://preview.web.powerapps.com/home), og vælg det miljø, du oprettede i trin 2, på rullelisten i højre side af siden.
-    2. Udvid **Common Data Service** i den venstre navigationsrude, og vælg **Enheder**.
-    3. I højre side af siden skal du vælge ellipseknappen (**...**) og derefter vælge **Ryd alle data**.
-    4. Vælg **Slet data** for at bekræfte, at du vil fjerne dataene. Denne handling fjerner som standard alle demodata, som indgår i CDS-databasen. Den fjerner også alle andre data, der er angivet i den valgte database.
-    
+    1. Log på [PowerApps](https://preview.web.powerapps.com/home).
+    2. Vælg det miljø, som du oprettede i trin 2, i rullelisten øverst til højre.
+    3. Udvid **Common Data Service** i navigationsruden til venstre, og vælg derefter **Enheder**.
+    4. I højre side af siden skal du vælge ellipseknappen (**...**) og derefter vælge **Ryd alle data**.
+    5. Vælg **Slet data** for at bekræfte, at du vil fjerne dataene. Denne handling fjerner som standard alle demodata, som indgår i CDS-databasen. Den fjerner også alle andre data, der er angivet i den valgte database.
+
 Du kan nu bruge det nye miljø.
 
-## <a name="granting-access-to-the-environment"></a>Give adgang til miljøet
-Den globale administrator, der oprettede miljøet, skal have adgang som standard, men yderligere programbrugere skal eksplicit tildeles adgang. Dette kan gøres ved [tilføjelse af brugere](../dev-itpro/sysadmin/tasks/create-new-users.md) og [tildele dem de relevante roller](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i HR-kernemiljøet. Desuden er det også nødvendigt at tilføje disse brugere til PowerApps-miljøet, så de kan få adgang til Attract- og Onboard-programmerne.  Blogindlægget, [Introduktion til PowerApps Administration](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) kan hjælpe dig med at følge disse trin, der beskrives her:
+## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
+Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. Når du vil give adgang, skal du [tilføje brugere](../dev-itpro/sysadmin/tasks/create-new-users.md) og [tildele de relevante roller til dem](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i det centrale HR-miljø. Du skal også tilføje disse brugere i PowerApps-miljøet, så de kan få adgang til Attract- og Onboard-programmerne. Proceduren er beskrevet her. Hvis du har brug for hjælp til at udføre trinnene, kan du se blogindlægget [Introduktion til PowerApps Administration](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
 
-> 1.    Den globale administrator, der installerede Talent-miljøet, skal navigere til [PowerApps Administration](https://preview.admin.powerapps.com/environments).   
-> 2.    Vælg de pågældende miljøer.
-> 3.    Tilføj de nødvendige brugere til rollen"Miljøopretter" under fanen Sikkerhed.
+Denne procedure fuldføres af den globale administrator, der installerede Talent-miljøet.
 
-Bemærk, at dette sidste trin for at føje brugere til PowerApps-miljøet er midlertidigt. Vi tilføjer senere funktionalitet for at aktivere dette automatisk, når brugeren tilføjes i kerne HR.
+1. Åbn [PowerApps Administration](https://preview.admin.powerapps.com/environments).
+2. Vælg de relevante miljøer.
+3. Tilføj de nødvendige brugere til rollen **Miljøopretter** under fanen **Sikkerhed**.
 
+Bemærk, at dette sidste trin, hvor du manuelt føjer brugere til PowerApps-miljøet, er midlertidigt. Det bliver udfyldt automatisk til sidst, når der tilføjes brugere i det centrale HR-miljø.
 

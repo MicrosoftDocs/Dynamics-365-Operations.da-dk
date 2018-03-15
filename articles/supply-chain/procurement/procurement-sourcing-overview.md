@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0692518afc5c8b385773dad3c44dc4e3c978362b
+ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
+ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -62,7 +62,7 @@ Når du opretter en indkøbsordre, udfyldes mange af felterne på forhånd med v
 
 ### <a name="prices-and-discounts"></a>Priser og rabatter
 
-Priser og rabatter Indeholder oplysninger om priser, rabatter og rabatbetingelser, der tilbydes. Priser og rabatter kan repræsenteres som *samhandels**aftaler*. Samhandelsaftaler repræsenterer kreditorprislister med priser eller rabatter og har et bestemt sæt datoer, hvor aftalen er gyldig. Priser og rabatter kan forhandles og repræsenteres via *indkøbsaftaler* med betingelser som f.eks. forpligtelser til at købe visse enheder eller for et vist pengebeløb som en forudsætning for de aftalte vilkår. *Rabataftaler* kan indgås med kreditorer, hvor indkøb af bestemte produkter eller grupper af produkter kan udløse en rabat fra kreditoren afhængigt af indkøbsbeløbet eller -mængden.
+Priser og rabatter Indeholder oplysninger om priser, rabatter og rabatbetingelser, der tilbydes. Priser og rabatter kan repræsenteres som *samhandels* *aftaler*. Samhandelsaftaler repræsenterer kreditorprislister med priser eller rabatter og har et bestemt sæt datoer, hvor aftalen er gyldig. Priser og rabatter kan forhandles og repræsenteres via *indkøbsaftaler* med betingelser som f.eks. forpligtelser til at købe visse enheder eller for et vist pengebeløb som en forudsætning for de aftalte vilkår. *Rabataftaler* kan indgås med kreditorer, hvor indkøb af bestemte produkter eller grupper af produkter kan udløse en rabat fra kreditoren afhængigt af indkøbsbeløbet eller -mængden.
 
 ### <a name="delivery-options"></a>Indstillinger for levering
 
@@ -87,7 +87,7 @@ Når *kreditorfakturaer* modtages fra kreditoren, kan de først registreres i *f
 
 *Regnskabsfordelinger* kan være angivet på indkøbsordren for at beskrive, hvordan bogføring skal udføres i Finans, og kan også definere, hvordan fordeling af budgetmidler opnås, når denne er medtaget i konfigurationen.  
 
-Fakturerede indkøbsordrer registrerer passivet på kreditorkontoen i kreditorer, hvorfra *kreditor**betalingen* kan behandles.
+Fakturerede indkøbsordrer registrerer passivet på kreditorkontoen i kreditorer, hvorfra *kreditor* *betalingen* kan behandles.
 
 ## <a name="vendor-performance"></a>Leverandørperformance
 Ydeevne og gennemgang af indkøb understøttes via *indkøbs- og kreditorapporter,* som indeholder forbrugsanalyse og analyse af kreditorydeevne.

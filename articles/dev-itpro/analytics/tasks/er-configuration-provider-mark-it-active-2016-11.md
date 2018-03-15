@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Oprette en konfigurationsudbyder og markere den som aktiv til elektronisk rapportering (ER)
@@ -33,11 +33,10 @@ Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator ell
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
 2. Klik på Konfigurationsudbydere.
 3. Klik på Ny.
-    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring over denne procedure, hvis der allerede findes en post for Litware, Inc. (http://www.litware.com).  
+    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (`http://www.litware.com`).  
 4. Skriv "Litware, Inc." i feltet Navn.
     * Litware, Inc.  
-5. Skriv "http://www.litware.com" i feltet Internetadresse.
-    * http://www.litware.com  
+5. Indtast `http://www.litware.com` i feltet Internetadresse.
 6. Klik på Gem.
 7. Luk siden.
 

@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typ
 - [Synkronisere salgsordrer direkte fra Finance and Operations med Sales](sales-order-template-mapping-direct.md)
 - [Synkronisere salgsordrer direkte mellem Sales og Finance and Operations (skabelon afventer frigivelse)](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisere salgsfakturaer direkte fra Finance and Operations med Sales](sales-invoice-template-mapping-direct.md)
-
-I tidligere versioner indeholder Kundeemne til kontanter-løsning følgende typer ikke-direkte synkronisering:
-
-- [Vedligehold konti i Sales, og synkroniser dem med Finance and Operations](accounts-template-mapping.md)
-- [Vedligeholde kontakter i Sales og synkronisere dem direkte med Finance and Operations](contacts-template-mapping.md)
-- [Vedligeholde produkter i Finance and Operations og synkronisere dem direkte med Sales](products-template-mapping.md)
-- [Oprette salgstilbud i Sales og synkronisere dem med Finance and Operations](sales-quotation-template-mapping.md)
-- [Oprette salgsordrer i Finance and Operations og synkronisere dem med Sales](sales-order-template-mapping.md)
-- [Oprette salgsfakturaer i Finance and Operations og synkronisere dem med Sales](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav til Finance and Operations
 
@@ -87,7 +78,7 @@ Kundeemne til kontant-integration understøttes iå følgende versioner:
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Understøttelse af Kundeemne til kontanter-integration via dataenheder er påkrævet.
     
     > [!NOTE]
-    > Du skal udløse følgende batchjob fra formularen **SalesPopulateProspectToCash** efter installation af hotfixes. Denne formular er skjult, fordi du kun skal bruge den én gang. For at åbne formularen skal du logge på miljøet og tilføje følgende i URL-adressen i din browseradresse: &mi=action:SalesPopulateProspectToCash, f.eks. https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. Når formularen åbnes, skal du klikke på OK. Dette udfylder et nyt **LineCreationSequnceNumber**-felt i tabellerne **SalesLine**, **SalesQuotationLine** og **CustInvoiceTrans** med entydige værdier og opdaterer produktlisten. Dette er nødvendigt, for at integration af Kundeemne til kontanter kan fungere.
+    > Du skal udløse følgende batchjob fra formularen **SalesPopulateProspectToCash** efter installation af hotfixes. Denne formular er skjult, fordi du kun skal bruge den én gang. For at få adgang til formen skal du logge på miljøet og føje følgende til URL-adressen i din browseradresse: &mi=action:SalesPopulateProspectToCash, f.eks. `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Når formularen åbnes, skal du klikke på OK. Dette udfylder et nyt **LineCreationSequnceNumber**-felt i tabellerne **SalesLine**, **SalesQuotationLine** og **CustInvoiceTrans** med entydige værdier og opdaterer produktlisten. Dette er nødvendigt, for at integration af Kundeemne til kontanter kan fungere.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemkrav til Sales
@@ -96,12 +87,6 @@ Hvis du vil bruge løsningen Kundeemne til kontanter, skal du installere følgen
 
 - Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Løsningen Kundeemne til kontanter til Dynamics 365 for Sales, version 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Skabeloner med version 1.0.0.0 og 1.0.0.1 understøttes i Kundeemne til kontanter-løsning for Dynamics 365 for Sales, version 1.14.1.0
-   >
-   > Skabeloner med version 2.0.0.0 og 2.1.0.0 understøttes i Kundeemne til kontanter-løsning for Dynamics for 365 Sales, version 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installer løsningen Kundeemne til kontanter til Sales
 

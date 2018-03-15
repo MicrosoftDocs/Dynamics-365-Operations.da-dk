@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7bcc8464d34c35423e86c963c6b493fc09db4472
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: fc0e71e2ffc2adbaed598f788141b651fbcc616a
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -56,7 +56,7 @@ Netværkskrav
 
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-programmer
 
-*   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Yderligere oplysninger om versionskrav kan du finde under [Fejlfinding af Office-integration] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
+*   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde flere oplysninger om versionskrav i [Fejlfinding af Office-integration] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
 *   Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
 
 ## <a name="update-policy"></a>Opdateringspolitik
