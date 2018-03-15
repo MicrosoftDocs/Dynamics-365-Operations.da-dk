@@ -23,51 +23,51 @@ ms.contentlocale: da-dk
 ms.lasthandoff: 02/06/2018
 
 ---
-# <a name="start-a-production-order"></a><span data-ttu-id="cd6cf-103">Starte en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="cd6cf-103">Start a production order</span></span>
+# <a name="start-a-production-order"></a><span data-ttu-id="03033-103">Starte en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="03033-103">Start a production order</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="cd6cf-104">Denne procedure viser, hvordan du starter en produktionsordre i produktionen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="cd6cf-105">Tids- og materialeforbrug rapporteres i denne proces.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="cd6cf-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="cd6cf-107">Dette er den femte procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="03033-104">Denne procedure viser, hvordan du starter en produktionsordre i produktionen.</span><span class="sxs-lookup"><span data-stu-id="03033-104">This procedure shows how to start a production order on the shop floor.</span></span> <span data-ttu-id="03033-105">Tids- og materialeforbrug rapporteres i denne proces.</span><span class="sxs-lookup"><span data-stu-id="03033-105">Time and material consumption are reported in this process.</span></span> <span data-ttu-id="03033-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="03033-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="03033-107">Dette er den femte procedure ud af syv, der beskriver produktionsordrelivscyklussen.</span><span class="sxs-lookup"><span data-stu-id="03033-107">This is the fifth procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="start-a-production-order"></a><span data-ttu-id="cd6cf-108">Starte en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="cd6cf-108">Start a production order</span></span>
-1. <span data-ttu-id="cd6cf-109">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-109">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="cd6cf-110">Vælg en produktionsordre, som har statussen Frigivet.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-110">Select a production order that has the Released status.</span></span>  
-2. <span data-ttu-id="cd6cf-111">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-111">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="cd6cf-112">Klik på Start.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-112">Click Start.</span></span>
-    * <span data-ttu-id="cd6cf-113">På denne side kan du bekræfte start af produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-113">On this page, you can confirm the start of the production order.</span></span>  
-4. <span data-ttu-id="cd6cf-114">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-114">Click the General tab.</span></span>
-5. <span data-ttu-id="cd6cf-115">I feltet Fra opr.nr.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-115">In the From Oper.</span></span> <span data-ttu-id="cd6cf-116">Nr.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-116">No.</span></span> <span data-ttu-id="cd6cf-117">skal du skrive "10".</span><span class="sxs-lookup"><span data-stu-id="cd6cf-117">field, enter '10'.</span></span>
-6. <span data-ttu-id="cd6cf-118">Vælg "Altid" i feltet Automatisk ruteforbrug.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-118">In the Automatic route consumption field, select 'Always'.</span></span>
-7. <span data-ttu-id="cd6cf-119">Klik på afkrydsningsfeltet Bogfør rutekort nu.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-119">Click the Post route card now checkbox.</span></span>
-8. <span data-ttu-id="cd6cf-120">Vælg "Altid" i feltet Automatisk styklisteforbrug.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
-9. <span data-ttu-id="cd6cf-121">Klik på afkrydsningsfeltet Bogfør plukliste nu.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-121">Click the Post picking list now checkbox.</span></span>
-10. <span data-ttu-id="cd6cf-122">Klik på afkrydsningsfeltet Udskriv plukliste nu.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-122">Click the Print picking list checkbox.</span></span>
-11. <span data-ttu-id="cd6cf-123">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-123">Click OK.</span></span>
-    * <span data-ttu-id="cd6cf-124">Dette er den udskrevne plukliste, som viser de materialer, der er brugt til produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
-12. <span data-ttu-id="cd6cf-125">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-125">Close the page.</span></span>
+## <a name="start-a-production-order"></a><span data-ttu-id="03033-108">Starte en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="03033-108">Start a production order</span></span>
+1. <span data-ttu-id="03033-109">Gå til Produktionsstyring > Produktionsordrer > Alle produktionsordrer.</span><span class="sxs-lookup"><span data-stu-id="03033-109">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="03033-110">Vælg en produktionsordre, som har statussen Frigivet.</span><span class="sxs-lookup"><span data-stu-id="03033-110">Select a production order that has the Released status.</span></span>  
+2. <span data-ttu-id="03033-111">Klik på Produktionsordre i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="03033-111">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="03033-112">Klik på Start.</span><span class="sxs-lookup"><span data-stu-id="03033-112">Click Start.</span></span>
+    * <span data-ttu-id="03033-113">På denne side kan du bekræfte start af produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="03033-113">On this page, you can confirm the start of the production order.</span></span>  
+4. <span data-ttu-id="03033-114">Klik på fanen Generelt.</span><span class="sxs-lookup"><span data-stu-id="03033-114">Click the General tab.</span></span>
+5. <span data-ttu-id="03033-115">I feltet Fra opr.nr.</span><span class="sxs-lookup"><span data-stu-id="03033-115">In the From Oper.</span></span> <span data-ttu-id="03033-116">Nr.</span><span class="sxs-lookup"><span data-stu-id="03033-116">No.</span></span> <span data-ttu-id="03033-117">skal du skrive "10".</span><span class="sxs-lookup"><span data-stu-id="03033-117">field, enter '10'.</span></span>
+6. <span data-ttu-id="03033-118">Vælg "Altid" i feltet Automatisk ruteforbrug.</span><span class="sxs-lookup"><span data-stu-id="03033-118">In the Automatic route consumption field, select 'Always'.</span></span>
+7. <span data-ttu-id="03033-119">Klik på afkrydsningsfeltet Bogfør rutekort nu.</span><span class="sxs-lookup"><span data-stu-id="03033-119">Click the Post route card now checkbox.</span></span>
+8. <span data-ttu-id="03033-120">Vælg "Altid" i feltet Automatisk styklisteforbrug.</span><span class="sxs-lookup"><span data-stu-id="03033-120">In the Automatic BOM consumption field, select 'Always'.</span></span>
+9. <span data-ttu-id="03033-121">Klik på afkrydsningsfeltet Bogfør plukliste nu.</span><span class="sxs-lookup"><span data-stu-id="03033-121">Click the Post picking list now checkbox.</span></span>
+10. <span data-ttu-id="03033-122">Klik på afkrydsningsfeltet Udskriv plukliste nu.</span><span class="sxs-lookup"><span data-stu-id="03033-122">Click the Print picking list checkbox.</span></span>
+11. <span data-ttu-id="03033-123">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="03033-123">Click OK.</span></span>
+    * <span data-ttu-id="03033-124">Dette er den udskrevne plukliste, som viser de materialer, der er brugt til produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="03033-124">This is the printed picking list that shows the materials used for the production order.</span></span>  
+12. <span data-ttu-id="03033-125">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="03033-125">Close the page.</span></span>
 
-## <a name="validate-the-picking-list"></a><span data-ttu-id="cd6cf-126">Valider pluklisten</span><span class="sxs-lookup"><span data-stu-id="cd6cf-126">Validate the picking list</span></span>
-1. <span data-ttu-id="cd6cf-127">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-127">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="cd6cf-128">Klik på Plukliste.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-128">Click Picking list.</span></span>
-3. <span data-ttu-id="cd6cf-129">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-129">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="cd6cf-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-130">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="cd6cf-131">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-131">Click Edit.</span></span>
-6. <span data-ttu-id="cd6cf-132">Angiv et nummer i feltet Forbrug.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-132">In the Consumption field, enter a number.</span></span>
-7. <span data-ttu-id="cd6cf-133">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-133">Click Post.</span></span>
-8. <span data-ttu-id="cd6cf-134">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-134">Click OK.</span></span>
-    * <span data-ttu-id="cd6cf-135">I pluklistejournalen bogføres de materialer, der forbruges af produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="cd6cf-136">Før du bogfører journalen, kan du foretage justeringer, hvis der er en forskel mellem den forkalkulerede mængde og den faktiske forbrugte mængde.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
-9. <span data-ttu-id="cd6cf-137">Klik på fanen GridPanel.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-137">Click the GridPanel tab.</span></span>
-10. <span data-ttu-id="cd6cf-138">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-138">Close the page.</span></span>
+## <a name="validate-the-picking-list"></a><span data-ttu-id="03033-126">Valider pluklisten</span><span class="sxs-lookup"><span data-stu-id="03033-126">Validate the picking list</span></span>
+1. <span data-ttu-id="03033-127">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="03033-127">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="03033-128">Klik på Plukliste.</span><span class="sxs-lookup"><span data-stu-id="03033-128">Click Picking list.</span></span>
+3. <span data-ttu-id="03033-129">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="03033-129">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="03033-130">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="03033-130">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="03033-131">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="03033-131">Click Edit.</span></span>
+6. <span data-ttu-id="03033-132">Angiv et nummer i feltet Forbrug.</span><span class="sxs-lookup"><span data-stu-id="03033-132">In the Consumption field, enter a number.</span></span>
+7. <span data-ttu-id="03033-133">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="03033-133">Click Post.</span></span>
+8. <span data-ttu-id="03033-134">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="03033-134">Click OK.</span></span>
+    * <span data-ttu-id="03033-135">I pluklistejournalen bogføres de materialer, der forbruges af produktionsordren.</span><span class="sxs-lookup"><span data-stu-id="03033-135">In the picking list journal, the materials consumed by the production order are posted.</span></span> <span data-ttu-id="03033-136">Før du bogfører journalen, kan du foretage justeringer, hvis der er en forskel mellem den forkalkulerede mængde og den faktiske forbrugte mængde.</span><span class="sxs-lookup"><span data-stu-id="03033-136">Before posting the journal, you can make adjustments if there is a difference between the estimated quantity and the actual consumed quantity.</span></span>  
+9. <span data-ttu-id="03033-137">Klik på fanen GridPanel.</span><span class="sxs-lookup"><span data-stu-id="03033-137">Click the GridPanel tab.</span></span>
+10. <span data-ttu-id="03033-138">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="03033-138">Close the page.</span></span>
 
-## <a name="verify-the-route-card-journal"></a><span data-ttu-id="cd6cf-139">Bekræft rutekortjournalen</span><span class="sxs-lookup"><span data-stu-id="cd6cf-139">Verify the route card journal</span></span>
-1. <span data-ttu-id="cd6cf-140">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-140">On the Action Pane, click View.</span></span>
-2. <span data-ttu-id="cd6cf-141">Klik på Rutekort.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-141">Click Route card.</span></span>
-3. <span data-ttu-id="cd6cf-142">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-142">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="cd6cf-143">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-143">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="cd6cf-144">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-144">Click Edit.</span></span>
-6. <span data-ttu-id="cd6cf-145">Angiv et tal i feltet Timer.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-145">In the Hours field, enter a number.</span></span>
-7. <span data-ttu-id="cd6cf-146">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-146">Click Post.</span></span>
-8. <span data-ttu-id="cd6cf-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-147">Click OK.</span></span>
-    * <span data-ttu-id="cd6cf-148">I rutekortkladden registreres den tid, der er brugt på de enkelte operationer.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="cd6cf-149">Antal gode og fejl kan også rapporteres.</span><span class="sxs-lookup"><span data-stu-id="cd6cf-149">Good and error quantity can also be reported.</span></span>  
+## <a name="verify-the-route-card-journal"></a><span data-ttu-id="03033-139">Bekræft rutekortjournalen</span><span class="sxs-lookup"><span data-stu-id="03033-139">Verify the route card journal</span></span>
+1. <span data-ttu-id="03033-140">Klik på Vis i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="03033-140">On the Action Pane, click View.</span></span>
+2. <span data-ttu-id="03033-141">Klik på Rutekort.</span><span class="sxs-lookup"><span data-stu-id="03033-141">Click Route card.</span></span>
+3. <span data-ttu-id="03033-142">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="03033-142">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="03033-143">Klik op linket i den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="03033-143">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="03033-144">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="03033-144">Click Edit.</span></span>
+6. <span data-ttu-id="03033-145">Angiv et tal i feltet Timer.</span><span class="sxs-lookup"><span data-stu-id="03033-145">In the Hours field, enter a number.</span></span>
+7. <span data-ttu-id="03033-146">Klik på Bogfør.</span><span class="sxs-lookup"><span data-stu-id="03033-146">Click Post.</span></span>
+8. <span data-ttu-id="03033-147">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="03033-147">Click OK.</span></span>
+    * <span data-ttu-id="03033-148">I rutekortkladden registreres den tid, der er brugt på de enkelte operationer.</span><span class="sxs-lookup"><span data-stu-id="03033-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="03033-149">Antal gode og fejl kan også rapporteres.</span><span class="sxs-lookup"><span data-stu-id="03033-149">Good and error quantity can also be reported.</span></span>  
 
