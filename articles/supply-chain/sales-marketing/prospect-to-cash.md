@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,10 +42,9 @@ I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typ
 - [Vedligehold konti i Sales, og synkroniser dem direkte fra Sales med Finance and Operations](accounts-template-mapping-direct.md)
 - [Vedligeholde produkter i Finance and Operations, og synkronisere dem direkte med Sales](products-template-mapping-direct.md)
 - [Vedligeholde kontakter i Sales og synkronisere dem direkte med kontakter eller debitorer i Finance and Operations](contacts-template-mapping-direct.md)
-- [Synkronisere salgstilbud direkte fra Sales med Finance and Operations (skabelon afventer frigivelse)](sales-quotation-template-mapping-sales-fin.md)
-- [Synkronisere salgsordrer direkte fra Finance and Operations med Sales](sales-order-template-mapping-direct.md)
-- [Synkronisere salgsordrer direkte mellem Sales og Finance and Operations (skabelon afventer frigivelse)](sales-order-template-mapping-direct-two-ways.md)
-- [Synkronisere salgsfakturaer direkte fra Finance and Operations med Sales](sales-invoice-template-mapping-direct.md)
+- [Synkronisere salgstilbud direkte fra Sales med Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisere salgsordrer direkte mellem Sales og Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisere salgsfaktura direkte fra Finance and Operations med Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav til Finance and Operations
 
@@ -85,7 +84,7 @@ Kundeemne til kontant-integration understøttes iå følgende versioner:
 
 Hvis du vil bruge løsningen Kundeemne til kontanter, skal du installere følgende komponenter:
 
-- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online eller en nyere version.
 - Løsningen Kundeemne til kontanter til Dynamics 365 for Sales, version 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installer løsningen Kundeemne til kontanter til Sales

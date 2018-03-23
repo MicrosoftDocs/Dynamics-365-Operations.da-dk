@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e9d7e756c56932372ed931620016973c794fb3fc
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: 347509a9556f15e7d880508e36516f04bc6964b7
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -134,11 +134,11 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 
 [Synkronisere konti fra direkte fra Sales med debitorer i Finance and Operations](accounts-template-mapping-direct.md)
 
-[Synkronisere produkter direkte fra Finance and Operations med produkter i Sales](products-template-mapping-direct.md)
+[Synkronisere produkter fra Finance and Operations direkte med produkter i Sales](products-template-mapping-direct.md)
 
-[Synkronisere kontakter direkte fra Sales med kontakter eller debitorer i Finance and Operations](contacts-template-mapping-direct.md)
+[Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations](contacts-template-mapping-direct.md)
 
-[Synkronisere salgsordrehoveder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct.md)
+[Synkronisere salgsordrehoveder og -linjer direkte fra Finance and Operations til Sales](sales-order-template-mapping-direct-two-ways.md)
 
 
 
