@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
+ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
+ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
@@ -99,6 +99,8 @@ Du skal konfigurere appen på enheden at oprette forbindelse til Finance and Ope
     <br>**Bemærk**: Afslut ikke dette felt med en skråstreg (/). 
     + **Firma** - Angiv den juridiske enhed i Finance and Operations, som applikationen skal oprette forbindelse til. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Vælg knappen **Tilbage** i applikationens øverste venstre hjørne. Applikationen opretter nu forbindelse til din Finance and Operations-server, og logonskærmen for lagermedarbejderen vises. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Oplysninger om, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af et kamera på en mobilenhed, finder du under [Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations – Lagersted](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Fjerne adgang til en enhed
 I tilfælde af en mistet eller beskadiget enhed skal du fjerne adgangen til Finance and Operations for enheden. De følgende trin beskriver den anbefalede proces til at fjerne adgangen.

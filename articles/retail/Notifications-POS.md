@@ -1,9 +1,9 @@
 ---
-title: "Få vist ordrebeskeder i POS"
-description: "I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og beskedstrukturen, som kan udvides til andre operationer."
+title: "Vis ordrebeskeder på POS"
+description: "I dette emne beskrives, hvordan du aktiverer ordrebeskeder på salgsstedet (POS) og i beskedstrukturen. Til slut kan udviklere udvide disse beskeder til operationer ud over ordreopfyldningsoperationer."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,49 +18,58 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="display-notifications-in-point-of-sale"></a>Få vist beskeder i POS
+# <a name="show-order-notifications-in-the-point-of-sale"></a>Vis ordrebeskeder på POS
 
 [!include[banner](includes/banner.md)]
 
-I dagens moderne detailmiljø, tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten gør det muligt for medarbejderne at udføre disse opgaver og meget mere, det hele i ét enkelt program. Med forskellige opgaver, der skal udføres i løbet af en dag, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et løser dette problem ved at tillade forhandlere at konfigurere rollebaseret beskeder. Med Dynamics 365 for Retail med programopdatering 5, kan disse beskeder kun konfigureres for POS-operationer.
+I det moderne detailmiljø tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten leverer ét enkelt program, hvor medarbejderne kan udføre alle disse og mange andre opgaver. Da der skal udføres forskellige opgaver i løbet af dagen, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. I Microsoft Dynamics 365 for Retail med programopdatering 5 kan disse beskeder kun konfigureres for POS-operationer.
 
-I øjeblikket giver systemet dig mulighed for at få vist beskeder for ordreopfyldningsoperationer, men strukturen er designet, så den kan udvides, så i fremtiden kan udviklere skrive en beskedbehandler til enhver operation, så beskeder kan vises i POS.  
+På nuværende tidspunkt kan systemet kun vise beskeder for ordreopfyldningsoperationer. Fordi strukturen er udviklet til at kunne udvides, vil udviklere dog senere kunne skrive en beskedbehandler for operationer og få vist beskederne for den pågældende operation i POS'et.
 
 ## <a name="enable-notifications-for-order-fulfillment-operations"></a>Aktivere beskeder for ordreopfyldningsoperationer
 
-Hvis du vil aktivere beskeder for ordreopfyldningsoperationer, skal du se følgende trin:
+Hvis du vil aktivere beskeder for ordreopfyldningsoperationer, skal du følge disse trin.
 
- - Gå til siden **Operationer** (**Detail** > **Konfiguration af kanal** > **POS-opsætning** > **POS** > **Operationer**).
- - Søg efter ordreopfyldningsoperationen, og markér afkrydsningsfeltet **Aktivér beskeder** ud for denne operation. Dette giver beskedstrukturen besked om at lytte til behandleren for ordreopfyldningsoperationen. Hvis behandleren er implementeret, vises beskeder på POS, ellers bliver der ikke vist beskeder for denne operation.
-- Gå til de POS-rettigheder, der er knyttet til medarbejderne, og tilføj ordreopfyldningsoperationen i oversigtspanelet **Beskeder** med "visningsrækkefølge" 1. Når der er mere end én konfigureret besked, bruges visningsrækkefølgen til at arrangere beskeden fra top til bund med 1 øverst. Kun de operationer, hvor afkrydsningsfeltet **Aktiver beskeder** er markeret, kan tilføjes. Desuden vises beskederne kun for de operationer, der er tilføjet her, og kun for de medarbejdere, for hvem operationerne er føjet til de tilsvarende POS-rettigheder. 
+1. Gå til **Retail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS** &gt; **Operationer**.
+2. Søg efter **Ordreopfyldning**-operationen, og marker afkrydsningsfeltet **Aktiver beskeder** ud for indstillingen for at angive, at beskedstrukturen skal lytte til behandleren for denne operation. Hvis behandleren er implementeret, vises beskeder for denne operation derefter i POS.
+3. Gå til **Retail** &gt; **Medarbejdere** &gt; **Arbejdere** &gt;. Under fanen Detail skal du åbne de POS-rettigheder, der er knyttet til arbejderen. Udvid oversigtspanelet **Beskeder**, tilføj operationen **Ordreopfyldning**, og indstil feltet **Visningsrækkefølge** til **1**. Hvis mere end én besked er konfigureret, kan dette felt bruges til at arrangere beskeder. Beskeder, der har en lavere værdi for **Visningsrækkefølge**, vises over beskeder, der har en højere værdi. Beskeder, der har en **Visningsrækkefølge**-værdi på **1**, findes øverst.
+
+    Beskeder vises kun for operationer, der er tilføjet i oversigtspanelet **Beskeder**, og du kan kun tilføje operationer der, hvis afkrydsningsfeltet **Aktiver beskeder** for disse operationer er markeret på siden **POS-operationer**. Derudover vises beskeder for en operation kun for arbejdere, hvis operationen føjes til POS-rettighederne for disse arbejdere.
+
+    > [!NOTE]
+    > Beskeder kan tilsidesættes på brugerniveau. Åbn arbejderens post, vælg **POS-rettigheder**, og rediger derefter brugerens beskedabonnement.
+
+4. Gå til **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Funktionalitetsprofiler**. I feltet **Beskedinterval** skal du angive, hvor ofte beskeder skal udtrækkes. For nogle beskeder skal POS foretage kald i realtid til back-office-programmet. Disse kald forbruger databehandlingskapaciteten fra back-office-programmet. Når du indstiller beskedintervallet, skal du derfor overveje både virksomhedens behov og virkningen af kald i realtid til back-office-programmet. En værdi på **0** (nul) deaktiverer beskeder.
+5. Gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplan**. Vælg tidsplanen **1060** (**personale**) for at synkronisere indstillinger for beskedabonnementet, og vælg derefter **Kør nu**. Vælg derefter tidsplanen **1070** (**kanalkonfiguration**) for at synkronisere rettighedsintervallet, og vælg derefter **Kør nu**.
+
+## <a name="view-notifications-in-the-pos"></a>Vise beskeder i POS'et
+
+Når du har fuldført de foregående trin, kan arbejderne se beskederne i POS'et. Tryk på beskedikonet i øverste højre hjørne i POS'et for at få vist beskederne. Der vises et beskedcenter med beskederne for ordreopfyldningsoperationen. Beskedcenteret skal vise følgende grupper i ordreopfyldningsoperationen:
+
+- **Afhentning i butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Afhentning**, og som er planlagt til afhentning fra den aktuelle butik. Du kan trykke på nummeret på gruppen for at åbne siden **Ordreopfyldning**. I dette tilfælde filtreres på siden, så den kun viser de aktive ordrer, der er konfigureret til afhentning fra det aktuelle lager.
+- **Afsend fra butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Levering**, og som er planlagt til forsendelse fra den aktuelle butik. Du kan trykke på nummeret på gruppen for at åbne siden **Ordreopfyldning**. I dette tilfælde filtreres på siden, så den kun viser de aktive ordrer, der er konfigureret til forsendelse fra det aktuelle lager.
+
+Hvis der tildeles nye ordrer til butikken til opfyldelse, ændres beskedikonet, så det angiver, at der er nye beskeder, og antallet af de relevante grupper opdateres. Selvom grupperne opdateres med jævne mellemrum, kan POS-brugere manuelt opdatere grupperne til enhver tid ved at vælge knappen **Opdater** ud for gruppen. Endelig, hvis en gruppe har en ny vare, som den aktuelle arbejder ikke har fået vist, viser gruppen et burst-symbol for at angive nyt indhold.
+
+## <a name="enable-live-content-on-pos-buttons"></a>Aktivere dynamisk indhold på POS-knapper
+
+POS-knapper kan nu vise en optælling, så arbejderne nemmere kan bestemme, hvilke opgaver der kræver deres omgående opmærksomhed. For at vise dette nummer på en POS-knap skal du fuldføre opsætningen af beskeder, der er beskrevet tidligere i dette emne, (det vil sige, du skal aktivere beskeder for en operation, oprette et beskedinterval og opdatere POS-rettighedsgruppen for arbejderen). Derudover skal du åbne knapgitterdesigneren, se knappens egenskaber og markere afkrydsningsfeltet **Aktiver dynamisk indhold**. I feltet **Justering af indhold** kan du vælge, om antallet skal vises i øverste højre hjørne af knappen (**Øverst til højre**) eller i midten (**Centreret**).
 
 > [!NOTE]
-> Du kan tilsidesætte beskeder på brugerniveau ved at navigere til posten for medarbejderen og vælge **POS-rettigheder** og derefter redigere denne brugers beskedabonnement.
+> Dynamisk indhold kan kun aktiveres for operationer, hvis afkrydsningsfeltet **Aktiver beskeder** er markeret for dem på siden **POS-handlinger** som beskrevet tidligere i dette emne.
 
- - Gå til siden **Funktionalitetsprofil** (**Detail** > **Konfiguration af kanal** > **POS-opsætning** > **POS-profiler** > **Funktionalitetsprofiler**). Opdater **Beskedinterval**-egenskaben til at angive det interval i minutter, som beskederne skal hentes med. Vi anbefaler at indstille værdien til 10 minutter for at undgå unødvendig kommunikation til hovedkontoret. Hvis du indstiller beskedintervallet til "0", deaktiveres beskeder.  
+I følgende illustration vises indstillingerne for dynamisk indhold i knapgitterdesigneren.
 
- - Gå til **Detail** > **Detail-it** > **Distributionsplan**. Vælg tidsplan "1060-personale" for at synkronisere indstillinger for beskedabonnementet, og klik derefter på **Kør nu**. Synkroniser derefter rettighedsintervallet ved at vælge "1070-kanalkonfiguration", og klik derefter på **Kør nu**. 
+![Indstillinger for dynamisk indhold i knapgitterdesigneren](./media/ButtonGridDesigner.png "Indstillinger for dynamisk indhold i knapgitterdesigneren")
 
-## <a name="view-notifications-in-pos"></a>Vise beskeder i POS
+I følgende illustration viser effekten af at vælge **Øverst til højre** og **Centreret** i feltet **Justering af indhold** for knapper i forskellige størrelser.
 
-Når ovenstående trin er fuldført, kan de medarbejdere, for hvem beskederne er oprettet, få vist beskederne i POS. Klik på beskedikonet på titellinjen i POS for at få vist beskederne. Der vises et beskedcenter med beskederne for ordreopfyldningsoperationen. Beskedcenteret skal vise følgende grupper i ordreopfyldningsoperationen: 
-
-- **Ventende ordrer** - Denne gruppe viser antallet af ordrer, der er i tilstanden Afventer, som f.eks. ordrer der skal godkendes af en POS-medarbejder, der har de nødvendige rettigheder til butiksopfyldning. Når du klikker på nummeret på gruppen, åbnes siden **Ordreopfyldning** filtreret, så kun de ventende ordrer, der er tildelt butikken for at blive opfyldt, vises. Hvis ordrerne automatisk accepteres for butikken, er antallet for denne gruppe nul.
-
-- **Afhentning i butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Afhentning**, og afhentningen planlægges fra den aktuelle butik. Når du klikker på nummeret på gruppen, åbnes siden **Ordreopfyldning** filtreret, så de aktive ordrer, der er konfigureret til at blive plukket fra den aktuelle butik, vises.
-
-- **Afsend fra butik** - Denne gruppe viser antallet af ordrer, der har leveringsmåden **Levering**, og leveringen planlægges fra den aktuelle butik. Når du klikker på nummeret på gruppen, åbnes siden **Ordreopfyldning** filtreret, så de aktive ordrer, der er konfigureret til at blive leveret fra den aktuelle butik, vises.
-
-Hvis der er nye ordrer, der er tildelt butikken for at blive opfyldt, ændres beskedikonet, så det angiver de nye beskeder, og antallet af de tilsvarende grupper bliver opdateret. Brugeren kan også klikke på opdateringsikonet ud for navnet på operationen for straks at opdatere antallet af grupper. Antallet opdateres også med det interval, der er foruddefineret. En gruppe, der har en ny vare, der ikke kan ses af den aktuelle medarbejder, vises med et burst-ikon, der angiver, at denne gruppe har en ny vare. Klik på felterne i beskeder åbner den operation, som beskeden er konfigureret for. Hvis du i ovenstående situationer klikker på beskederne, åbnes siden **Ordreopfyldning**, og de relevante parametre overføres: ventende ordrer, afhentning i butik og afsend fra butik. 
-
-> [!NOTE]
-> Beskeder om ventende ordrer aktiveres i en kommende opdatering til Dynamics 365 for Retail. 
-
+![Dynamisk indhold på POS-knapper](./media/ButtonsWithLiveContent.png "Dynamisk indhold på POS-knapper")
 

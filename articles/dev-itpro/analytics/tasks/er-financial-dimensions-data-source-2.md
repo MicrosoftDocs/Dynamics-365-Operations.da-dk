@@ -1,5 +1,5 @@
 --- 
-title: "Tilknytte modeller til at bruge økonomiske dimensioner som en datakilde til elektronisk rapportering (ER)"
+title: "Tilknytte modeller for at bruge økonomiske dimensioner som en datakilde til elektronisk rapportering (ER)"
 description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at bruge økonomiske dimensioner so datakilde for ER-rapporter."
 author: NickSelin
 manager: AnnBe
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a3eafa7b66dcc0c2481d7eeaf98bed7f58e4be33
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: a5fa6fb07fb2ba08812826acba748b38738bb468
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/09/2018
 
 ---
 # <a name="map-models--to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Tilknytte modeller til at bruge økonomiske dimensioner som en datakilde til elektronisk rapportering (ER)
