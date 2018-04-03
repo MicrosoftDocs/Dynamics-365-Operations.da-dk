@@ -1,0 +1,6 @@
+> [!IMPORTANT]
+> <span data-ttu-id="c5424-101">**Annoncering af produktbemærkninger til Dynamics 365 foråret 2018**</span><span class="sxs-lookup"><span data-stu-id="c5424-101">**Announcing the Dynamics 365 Spring '18 release notes**</span></span>
+>
+> <span data-ttu-id="c5424-102">Vil du gerne vide mere om kommende og de senest frigivne funktioner i en af vores forretningsapps eller platforme?</span><span class="sxs-lookup"><span data-stu-id="c5424-102">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span> 
+> 
+> <span data-ttu-id="c5424-103">[Hent produktbemærkninger foråret 2018](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf).</span><span class="sxs-lookup"><span data-stu-id="c5424-103">[Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf).</span></span> <span data-ttu-id="c5424-104">Vi har samlet alle oplysninger fra start til slut og top til bund i en enkelt PDF-fil, som du kan bruge til planlægning.</span><span class="sxs-lookup"><span data-stu-id="c5424-104">We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning.</span></span> 
