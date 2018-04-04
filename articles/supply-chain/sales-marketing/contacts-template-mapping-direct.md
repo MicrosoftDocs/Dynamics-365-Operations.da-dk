@@ -1,6 +1,6 @@
 ---
 title: Synkronisere kontakter direkte fra Sales med kontakter eller debitorer i Finance and Operations
-description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere enhederne kontakt (kontakter) og kontakt (kunder) fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere enheder med kontaktpersoner (Kontaktpersoner) og kontaktpersoner (Kunder) fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2017
@@ -20,21 +20,21 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: 6269b73dfca46d455784046199463d3f86e653ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 021a43c78cec83b23aff5dcc40db1a4be81aefc3
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Synkronisere kontakter direkte fra Sales med kontakter eller debitorer i Finance and Operations
+# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
 > Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Dynamics 365-dataintegration](/common-data-service/entity-reference/dynamics-365-integration).
 
-Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere enhederne kontakt (kontakter) og kontakt (kunder) direkte fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere enheder med kontaktpersoner (Kontaktpersoner) og kontaktpersoner (Kunder) direkte fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 

@@ -1,6 +1,6 @@
 ---
 title: Importere data fra Excel-dataenhedsskabeloner med flere regneark
-description: "I dette emne beskrives, hvordan du kan importere data ved hjælp af Excel-dataenhedsskabeloner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "I dette emne beskrives, hvordan du kan importere data ved hjælp af Excel-dataenhedsskabeloner i Microsoft Dynamics 365 for Finance and Operations."
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Administration af data i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition understøtter Microsoft Excel-baserede skabeloner til dataenheder. Disse skabeloner kan indeholde et eller flere regneark. Skabeloner med flere regneark bruges ofte, når det passer til at administrere data i en enkelt fil og importere den til flere dataenheder. Et eksempel er lokationer og lagersteder.
+Administration af data i Microsoft Dynamics 365 for Finance and Operations understøtter Microsoft Excel-baserede skabeloner til dataenheder. Disse skabeloner kan indeholde et eller flere regneark. Skabeloner med flere regneark bruges ofte, når det passer til at administrere data i en enkelt fil og importere den til flere dataenheder. Et eksempel er lokationer og lagersteder.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Overføre en fil én gang og knytte den til alle enheder
 Lad os tage et eksempel, hvor der er én Excel-fil med regnearkene **Lokationer** og **Lagersteder**. For at konfigurere dataimportprojektet skal du tilføje den første dataenhed **Lokationer** og derefter overføre filen. Du kan vælge **Lokationer** som det regneark, der skal bruges til denne enhed.

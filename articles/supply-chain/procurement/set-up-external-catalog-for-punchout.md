@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 [!include[banner](../includes/banner.md)]
 
-Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations, Enterprise edition juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
+Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations, juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
 
 Når det eksterne katalog er konfigureret, og medarbejderen forbereder en rekvisition, er der mulighed for at omdirigere til et eksternt websted, det eksterne katalog, og returnere indkøbskurven, der er oprettet på det eksterne websted. Denne meddelelse er baseret på cXML-protokollen og skal være konfigureret mellem systemerne for den købende og den sælgende organisation.
 
@@ -85,7 +85,7 @@ Nedenfor kan du se en beskrivelse af de koder, der er inkluderet i skabelonen:
 
 Et ydre element er yderligere oplysninger, f.eks. et brugernavn, der er baseret på en bruger, der stempler ud. Det ydre element angives, når udstempling forekommer, og det kan sendes i meddelelsen om konfigurationsanmodning.
 Leverandøren kan have et behov for at modtage et ydre element i opsætning af anmodningen. I så fald skal du føje det ydre element til listen over ydre elementer i sektionen **Meddelelsesformat** på siden **Eksternt katalog**. Angiv et navn for det ydre element, så leverandøren kan genkende det og tilknytte en værdi. De mulige værdier er: brugernavn, brugermail eller en tilfældig værdi.
-Du kan finde flere oplysninger om cXML-protokollen på: http://cxml.org/
+Yderligere oplysninger om cXML-protokollen finder du i http://cxml.org/.
 
 ## <a name="post-back-message"></a>Tilbagesendelsesmeddelelse
 Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Finance and Operations. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen. Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje:

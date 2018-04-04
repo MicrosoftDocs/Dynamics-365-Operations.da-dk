@@ -1,6 +1,6 @@
 ---
 title: Konfigurationsproces for avanceret bankafstemning
-description: "Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.  I denne artikel forklares opsætningsprocesserne ved afstemning."
+description: "Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  I denne artikel forklares opsætningsprocesserne ved afstemning."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aec219f545e880407b9a7d62b2dda4a607ac6bdd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.  I denne artikel forklares opsætningsprocesserne ved afstemning.  
+Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  I denne artikel forklares opsætningsprocesserne ved afstemning.  
 
 Der er et antal enheder, der skal konfigureres, før du kan bruge den avancerede bankkontoafstemningsfunktion. Du kan finde flere oplysninger om opsætning af import af bankkontoudtog under [Konfigurere importprocessen for bankkontoudtog](set-up-advanced-bank-reconciliation-import-process.md).  Krav til konfiguration af afstemningsprocessen er beskrevet nedenfor.
 

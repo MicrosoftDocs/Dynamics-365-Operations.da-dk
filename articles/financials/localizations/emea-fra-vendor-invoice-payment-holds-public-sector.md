@@ -1,6 +1,6 @@
 ---
 title: "Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig"
-description: "De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig."
+description: "De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: 91847561da295988029318fdcd569d8d6563d0d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 8ed76dd2b8b46056807ebc3e015cf413d357a035
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/14/2018
 [!include[banner](../includes/banner.md)]
 
 
-De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
+De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
 
 <a name="set-up-rules-for-vendor-invoice-payment-holds"></a>Konfigurere regler for betalingsspærring af kreditorfakturaer
 ---------------------------------------------

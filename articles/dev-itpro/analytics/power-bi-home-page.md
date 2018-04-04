@@ -19,10 +19,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 99eece7b31034065694f8875c72eb2360088ec23
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,8 +32,8 @@ ms.lasthandoff: 02/23/2018
 
 Dette emne beskriver det Microsoft Power BI-indhold, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om det.
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Power BI-indhold til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
-Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition er følgende Power BI-indhold tilgængeligt:
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Power BI-indhold til Dynamics 365 for Finance and Operations
+Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, er følgende Power BI-indhold tilgængeligt:
 
 - [Power BI-indhold til Faktisk vs. budget](ledger-budgets-power-bi.md)
 - [Power BI-indhold for frynsegoder](benefits-power-bi.md)

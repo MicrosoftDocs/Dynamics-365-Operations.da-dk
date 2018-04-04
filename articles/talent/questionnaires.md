@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/07/2018
 
 Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne. 
 
-Du kan tilpasse et spørgeskema, så det passer til dine specifikke behov, ved hjælp af forskellige funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Her er nogle eksempler på, hvordan du kan bruge spørgeskemaer:
+Du kan tilpasse et spørgeskema, så det passer til dine specifikke behov, ved hjælp af forskellige funktioner, der findes i Microsoft Dynamics 365 for Finance and Operations. Her er nogle eksempler på, hvordan du kan bruge spørgeskemaer:
 
 -   Teste medarbejderes og ansøgeres faglige kunnen.
 -   Vurder, om kursusdeltagerne har lært kursusmaterialet.

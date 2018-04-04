@@ -3,7 +3,7 @@ title: Styring af skift og kasseapparater
 description: "I denne artikel beskrives, hvordan du konfigurerer og bruger de to typer detail-POS-skift – delt og separat. Delte skift kan bruges af flere brugere på flere steder, hvorimod separate skift kun kan bruges af én arbejder ad gangen."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Et delt skift bruges i et miljø, hvor flere kasserere deler et kasseapparat ell
 9.  Brug handlingen **Foretag kasseoptælling** til at optælle det samlede kontantbeløb fra alle kasseapparater, der indgår i det delte skift.
 10. Brug handlingen **Luk skift** til at lukke det delte skift.
 
+## <a name="shift-operations"></a>Operationer for skift
+Der kan foretages forskellige handlinger for at ændre tilstanden for et skift eller for at forøge eller formindske det pengebeløb, der i skuffen. Afsnittet nedenfor beskriver disse operationer for skift til Dynamics 365 for Retail Modern POS og Cloud POS.
 
+**Åbne skift**
 
+POS kræver, at en bruger har et aktivt åbent skift for at udføre operationer, der resulterer i en økonomisk transaktion, f.eks. et salg, en returnering eller en kundeordre.  
 
+Når der logges på POS, kontrollerer systemet først, om brugeren har et aktivt skift tilgængeligt på det aktuelle kasseapparat. Hvis det ikke er tilfældet, kan brugeren derefter vælge at åbne et nyt skift, genoptage et eksisterende skift eller fortsætte med at logge på i tilstanden "uden pengeskuffe", afhængigt af systemkonfigurationen og den pågældendes tilladelse.
+
+**Angiv startbeløb**
+
+Denne handling er ofte den første handling, der udføres i et skift, der netop er åbnet. Brugerne angiver startbeløbet for kontanter i kasseskuffen for skiftet. Det er vigtigt, da beregningen af over/under beløb i kassen, der foretages, når et skift lukkes, tager udgangspunkt i dette beløb.
+
+**Kassebeholdning**
+
+Flydende poster er ikke-salgstransaktioner, der udføres i et aktivt skift, og de øger mængden af kontanter i kasseskuffen. Et almindeligt eksempel på en flydende tilgang kan være tilføjelsen af yderligere byttepenge til kasseskuffen, når den er ved at være tom.
+
+**Fjernelse af betalingsmiddel**
+
+Fjernelse af betalingsmidler er ikke-salgstransaktioner, der udføres i et aktivt skift for at reducere mængden af kontanter i kasseskuffen. Dette bruges som regel sammen med en flydende tilgang på et andet skift. Hvis kasseskuffe 1 f.eks. mangler byttepenge, så fortager brugeren på kasseskuffe 2 en fjernelse af betalingsmiddel for at reducere beløbet i kasseskuffen. Brugeren på kasseapparat 1 udfører derfor en flydende tilgang for at øge beløbet i kasseskuffen.
+
+**Afbryd skifte**
+
+Brugere kan afbryde deres aktive skift for at frigøre det aktuelle kasseapparat til en anden bruger, eller for at flytte deres skift til et andet kasseapparat (dette kaldes ofte kaldet en "flydende pengeskuffe"). 
+
+Afbrydelse af skiftet forhindrer eventuelle nye transaktioner eller ændringer af skiftet, indtil det genoptages.
+
+**Genoptag skift**
+
+Denne handling giver en bruger mulighed for at genoptage et tidligere afbrudt skift på et kasseapparat, der ikke allerede har et aktivt skift.
+
+**Kasseoptælling**
+
+Kasseoptællingen er en handling, som brugeren udfører for at angive det samlede pengebeløb, der i øjeblikket er i kassen, oftest før lukningen af skiftet. Dette er den værdi, der sammenlignes med det forventede skift, for at beregne over/under beløb.
+
+**Deponering til pengeskab**
+
+Deponeringer til pengeskab kan udføres når som helst på et aktivt skift. Denne handling fjerner penge fra kassen, så den kan overføres til en mere sikker placering, f.eks. et pengeskab i baglokalet. Det samlede beløb, der er registreret til deponering i pengeskab, indgår stadig i totalerne for skiftet, men det skal ikke tælles med som en del af kasseoptællingen.
+
+**Indsættelse i banken**
+
+I lighed med deponering til pengeskab udføres indsættelser i banken også på aktive skift. Denne handling fjerner penge fra skiftet for at forberede bankindbetalingen.
+
+**Luk skifte uden kontrol**
+
+Et skjult lukket skift er et skift, der ikke længere er aktivt, men som endnu ikke er helt lukket. Skjulte lukkede skift kan ikke genoptages som et afbrudt skift, men procedurer, f.eks. angivelse af startbeløb og kasseoptællinger, kan udføres på et senere tidspunkt eller fra et andet kasseapparat.
+
+Skjulte lukkede skift bruges ofte til at frigøre et kasseapparat til en ny bruger eller et nyt skift, uden at der først skal foretages fuld optælling, afstemning og lukning af skiftet. 
+
+**Luk skift**
+
+Denne handling beregner totaler for skift, over/under beløb og færdiggør derefter et aktivt eller et skjult lukket skift. Lukkede skift kan ikke genoptages eller ændres.  
+
+**Administrer skift**
+
+Denne handling giver brugerne mulighed for at få vist alle aktive, afbrudte eller skjulte lukkede skift. Afhængigt af deres rettigheder kan brugerne udføre deres endelige lukningsprocedurer, f.eks. kasseoptælling og lukning af skjulte lukkede skift. Denne handling tillader også brugere at få vist og slette ugyldige skift i de sjældne tilfælde, hvor et skift er efterladt i fejlbehæftet tilstand efter omstilling mellem offline- og onlinetilstand. Disse ugyldige skift indeholder ikke nogen økonomiske oplysninger eller transaktionsdata, der skal bruges til afstemning. 
 

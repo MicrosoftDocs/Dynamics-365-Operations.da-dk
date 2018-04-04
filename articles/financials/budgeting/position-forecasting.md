@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Det indtjeningsomkostningselement, der er valgt i løngruppen, bruges, når du o
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Oprette prognosestillinger for eksisterende stillinger
 
-For at få den mest nøjagtige budgetplanlægning kan du oprette prognosepositioner ved at bruge oplysninger fra eksisterende stillinger i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uanset om stillingen i øjeblikket er besat eller ubesat. 
+For at få den mest nøjagtige budgetplanlægning kan du oprette prognosepositioner ved at bruge oplysninger fra eksisterende stillinger i Microsoft Dynamics 365 for Finance and Operations, uanset om stillingen i øjeblikket er besat eller ubesat. 
 
 Funktionen **Tilføj eksisterende stillinger** viser alle stillinger for en organisation. Ved at angive datoen **Pr. dato** kan du ændre listen over stillinger, så den indeholder de stillinger, der fandtes på en dato i fortiden, eller mere almindeligt i fremtiden (for eksempel start på næste budgetcyklus). Vælg en budgetplanlægningsproces og et budgetplanscenarie, vælg stillinger på listen, og klik derefter på **OK** for at oprette prognosestillinger for de valgte stillinger. Bemærk, at du kun kan oprette en prognosestilling for hver eksisterende stilling i en budgetplanlægningsproces og et scenarie. Du kan dog oprette flere versioner ved at tildele forskellige budgetplanscenarier. 
 

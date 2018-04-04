@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ For hver transaktion (salgs-/indkøbsdokumentlinjer, kladder osv.) skal du angiv
 For hver transaktion kan du slå den beregnede moms op ved at åbne siden **Momspostering**. Du kan søge efter moms for en dokumentlinje eller hele dokumentet. Du kan justere den beregnede moms for visse dokumenter (f.eks kreditorfakturaen og finanskladder), hvis det oprindelige dokument viser beløb, der afviger.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Udligning og rapportering af moms
-Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition indeholder funktioner, så du kan afregne moms for intervallet og forskyde saldi til momsafregningskontoen, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på siden **Afregn og bogfør moms**. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
+Momsen skal rapporteres og betales til momsmyndighederne i regulerede intervaller (månedlig, kvartalsvis, og så videre). Microsoft Dynamics 365 for Finance and Operations indeholder funktioner, så du kan afregne moms for intervallet og forskyde saldi til momsafregningskontoen, som angivet i finanskonteringsgrupperne. Du kan få adgang til denne funktion på siden **Afregn og bogfør moms**. Du skal angive den momsafregningsperiode, der skal afregnes moms for. 
 
 Når momsen er blevet betalt, bør saldoen på momsafregningskontoen opvejes mod bankkontoen. Hvis den momsmyndighed, der er angivet i momsafregningsperioden, er relateret til en kreditorkonto, bogføres momssaldoen som en åben kreditorfaktura og kan tages med i det regelmæssige betalingsforslag.
 

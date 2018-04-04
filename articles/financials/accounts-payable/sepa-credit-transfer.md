@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ EPC, som består af europæiske banker, udvikler de forretningsmæssige og tekni
 En SEPA-pengeoverførsel er en betaling fra en virksomhed eller et individ til et andet selskab eller et andet individ. Betalinger skal være i euro og skal indeholde IBAN (International Bank Account Number) og BIC (Bank Identifier Code) for begge parter. (BIC er også kendt som \[SWIFT\]-kode (Society for Worldwide Interbank Financial Telecommunication)). Transaktionsomkostninger skal desuden deles mellem begge parter. Pengeoverførsler, der foregår mellem parterne, skal bruge XML-filer, der er i overensstemmelse med ISO 20022 betalingsbehandlingsstandarder og XML-format, som angivet af EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hvordan implementeres en kreditoverførsel?
-Betalingsformatet for kreditoverførsel i de europæiske lande implementeres ved hjælp af den elektroniske rapportering (ER) og betalingsmetoderne i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Nogle få kreditoverførselsformater, der bruges i andre områder, bruger stadig den ældre betalingsstruktur. Blandt mange andre formater er der tolv ISO 20022-filformater til kreditoverførsel, der er tilgængelige. Disse eksportformater er i overensstemmelse med SEPA ISO 20022 XML-standarden. De bruges til at generere ikke-euro betalingsoverførsler til lande/områder, hvor de bruges, og til euro-betalinger som angivet i version 8.2 af den SEPA Credit Transfer Scheme Rulebook, der udgives af EPC. Før du kan implementere kreditoverførsler, skal du kontakte din bank for at få den software, der kræves for at overføre elektroniske filer. Du skal bruge softwaren til at overføre de XML-filer, der indeholder betalingsordrer til banken.
+Betalingsformatet for kreditoverførsel i de europæiske lande implementeres ved hjælp af den elektroniske rapportering (ER) og betalingsmetoderne i Microsoft Dynamics 365 for Finance and Operations. Nogle få kreditoverførselsformater, der bruges i andre områder, bruger stadig den ældre betalingsstruktur. Blandt mange andre formater er der tolv ISO 20022-filformater til kreditoverførsel, der er tilgængelige. Disse eksportformater er i overensstemmelse med SEPA ISO 20022 XML-standarden. De bruges til at generere ikke-euro betalingsoverførsler til lande/områder, hvor de bruges, og til euro-betalinger som angivet i version 8.2 af den SEPA Credit Transfer Scheme Rulebook, der udgives af EPC. Før du kan implementere kreditoverførsler, skal du kontakte din bank for at få den software, der kræves for at overføre elektroniske filer. Du skal bruge softwaren til at overføre de XML-filer, der indeholder betalingsordrer til banken.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Hvilke formater til kreditoverførsel understøttes i øjeblikket i Finance and Operations?
 Du bør altid gå til den delte aktivbiblioteket på Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**. Næste afsnit, "Hvad skal jeg bruge for at komme i gang?", indeholder et link til det emne, der forklarer, hvordan du opretter en LCS-lager for at se tilgængelige konfigurationer og importere markerede konfigurationer.

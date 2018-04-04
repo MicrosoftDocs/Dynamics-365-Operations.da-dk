@@ -1,6 +1,6 @@
 ---
 title: Power BI-indhold til medarbejderkompetencer og udvikling
-description: "I dette emne beskrives Finance and Operations – Power BI-indhold til medarbejderkompetencer og udvikling."
+description: "I dette emne beskrives Finance and Operations – Power BI-indhold til medarbejderkompetencer og -udvikling."
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 99fa6e396989e6e204d84cc776f627c7c4baf1d1
+ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
+ms.openlocfilehash: 0769596c5ebaed1f5698d596d66d6f0334d5fcc2
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/19/2017
 [!include[banner](../includes/banner.md)]
 
 
-I dette emne beskrives Finance and Operations – Power BI-indhold til medarbejderkompetencer og udvikling. 
+I dette emne beskrives Finance and Operations – Power BI-indhold til medarbejderkompetencer og -udvikling. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter, der er inkluderet i indholdspakken
 Når du har knyttet indholdspakken til dine data i Finance and Operations, viser rapporterne din organisations data. Hvis du aldrig har brugt Microsoft Power BI før, kan du finde oplysninger om det under [Guidet indføring i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). De rapporter, der er inkluderet i indholdspakken, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
@@ -44,7 +44,7 @@ Når du har knyttet indholdspakken til dine data i Finance and Operations, viser
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Finance and Operations-data bruges til at udfylde rapporterne i indholdspakken til medarbejderkompensation og udvikling. Følgende tabel viser de enheder, som indholdspakken er baseret på.
+Finance and Operations-data bruges til at udfylde rapporterne i indholdspakken til medarbejderkompensation og -udvikling. Følgende tabel viser de enheder, som indholdspakken er baseret på.
 
 | Enhed                            | Indhold                                                                                                   | Relationer med andre enheder                                                                                                                                                                                                                                                                       |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

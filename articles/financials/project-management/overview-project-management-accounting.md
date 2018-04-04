@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Et projekt er en gruppe af aktiviteter, der er udviklet til at yde en service, f
 ## <a name="projects-across-industries"></a>Projekter på tværs af brancher
 Projektstyring og regnskabsfunktioner kan bruges i flere brancher som vist i følgende illustration. [![Projekter på tværs af brancher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-I et callcenter kan en billet bruges til at beskrive det sæt handlinger, der er nødvendige for at løse et opkald. Konsulentfirmaer, f.eks. organisationer med ledelsesmæssig eller teknisk rådgivning eller reklamebureauer, ser deres aktiviteter som projekter. I marketing repræsenterer en kampagne en samling af arbejde, der skal leveres. I projektbaseret produktion vedrører en produktionsordre forskelligt arbejde, der skal udføres for at producere nogle færdige varer. Uanset navnet, der bruges til dem, omfatter disse projekter, ressourcer, planer og omkostninger, og projektstyringen og regnskabsfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan hjælpe med planlægning, udførelse og analyse af disse projekter.
+I et callcenter kan en billet bruges til at beskrive det sæt handlinger, der er nødvendige for at løse et opkald. Konsulentfirmaer, f.eks. organisationer med ledelsesmæssig eller teknisk rådgivning eller reklamebureauer, ser deres aktiviteter som projekter. I marketing repræsenterer en kampagne en samling af arbejde, der skal leveres. I projektbaseret produktion vedrører en produktionsordre forskelligt arbejde, der skal udføres for at producere nogle færdige varer. Uanset navnet, der bruges til dem, omfatter disse projekter, ressourcer, planer og omkostninger, og projektstyringen og regnskabsfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations kan hjælpe med planlægning, udførelse og analyse af disse projekter.
 
 ## <a name="project-phases"></a>Projektfaser
 Selvom følgende procesforløb er rettet mod eksterne projekter eller et projekt, der er fuldført for en eller flere kunder, gælder funktionen også for interne projekter, der udelukkende er omkostningsbaseret. 

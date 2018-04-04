@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -42,7 +42,7 @@ Nogle jobdetaljer som f.eks. stillingsbetegnelse, type og funktion er datorelate
 ## <a name="job-titles"></a>Stillingsbetegnelser
 Før du opretter job, skal du konfigurere stillingsbetegnelser for jobbene. Stillinger arver stillingsbetegnelser fra de job, som stillingerne er tilknyttet. 
 
-Vedligehold stillingsbetegnelser ved hjælp af siden **Titler**, som du kan åbne ved hjælp af søgefunktionen. På siden **Titler ** skal du angive de stillingsbetegnelser, som du vil bruge til dine job.
+Vedligehold stillingsbetegnelser ved hjælp af siden **Titler**, som du kan åbne ved hjælp af søgefunktionen. På siden **Titler** skal du angive de stillingsbetegnelser, som du vil bruge til dine job.
 
 ## <a name="job-types"></a>Jobtyper
 Du kan bruge jobtyper til at gruppere lignende job i kategorier. Jobtyper er ikke nødvendige. Hvis du planlægger at bruge jobtyper, når du konfigurerer berettigelsesregler for kompensationsstyring, skal du dog konfigurere jobtyper, før du konfigurerer job. Nogle eksempler på jobtyper er fuldtids og deltids eller fastlønnede og timelønnede. Du kan vedligeholde jobtyper fra siden **Jobtyper**. Angiv et navn og en kort beskrivelse af stillingstypen på siden **Jobtyper**. I feltet **Momsfri status** skal du vælge en af følgende indstillinger for at angive Fair Labor Standards Act (FLSA) fritagelsesstatus for job med denne jobtype:
@@ -91,6 +91,6 @@ Du kan vedligeholde arbejdsopgaver fra siden **Arbejdsopgaver**. Angiv et navn t
 ## <a name="areas-of-responsibility"></a>Ansvarsområder
 Du kan bruge ansvarsområder til at angive arbejdsroller, processer og produkter, som en arbejder, der er i stilling til et job, er ansvarlig for. Et eksempel for et job med titlen "Bogholder" kunne et ansvarsområde være "Økonomirapportering for produkt A". Du kan vedligeholde ansvarsområder ved hjælp af siden **Ansvarsområder**, som du kan finde ved hjælp af søgefunktionen. Angiv et navn til og en beskrivelse af ansvarsområdet på siden **Ansvarsområder**. I feltet **Notat** kan du også yderligere oplysninger. Noterne kan blive opdateret for et bestemt job, uden at det ændrer de noter, du har angivet her.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Trin til oprettelse af et job
+Referer til emnet [Definere nye job](../fin-and-ops/hr/tasks/define-new-jobs.md) for den trinvise procedure til at oprette et nyt job. 
 

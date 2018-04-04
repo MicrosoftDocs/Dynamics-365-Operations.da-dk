@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 768448a0f2143e5abf01fb843864b296877e8cbd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 32f22ab1ca64ace467a480161f3b68ea35f8546e
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
 
-Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
+Alle brugere skal være tilknyttet mindst én sikkerhedsrolle for at have adgang til Microsoft Dynamics 365 for Finance and Operations. Sikkerhedsroller bestemmer, hvilke opgaver brugere kan udføre, og hvilke dele af brugergrænsefladen de kan se.
 
 ## <a name="what-are-the-prerequisites-for-assigning-security-roles-in-the-public-sector"></a>Hvad er forudsætningerne for tildeling af sikkerhedsroller i den offentlige sektor?
 Brugerne skal findes i Finance and Operations, før du kan tildele dem roller. Selvom du bruger automatisk rolletildeling, føjes brugerne selv ikke automatisk til Finance and Operations.
