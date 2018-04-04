@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/07/2018
 Microsoft Dynamics 365 for Retail er en altomfattende detailhandelsløsning, der sikrer en ensartet handel på tværs af alle kanaler. Det omfatter salg, mobilitet, intelligence og produktivitet, som kan hjælpe detailhandlere og deres medarbejdere med at opnå mere på en måde, hvor skyen og mobilen kommer i første række. Retail tilbyder omfattende support til driften af en lang række forretningsprocesser, som merchandising, lager og kanaladministrationsfunktioner. Det indeholder også fængslende kundeoplevelser på tværs af alle kontaktpunkter.
 
 > [!NOTE] 
-> Dynamics 365 for Retail er tæt forbundet med Dynamics 365 for Finance and Operations, Enterprise Edition og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle tre produkter. Derfor er produktnavnet i emner, der primært vedrører Retail, Microsoft Dynamics 365 for Retail. I emner, der primært vedrører kerneproduktet (Finance and Operations), er produktnavnet Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. I emner, der primært vedrører personale, er produktnavnet Dynamics 365 for Talent. 
+> Dynamics 365 for Retail er tæt forbundet med Dynamics 365 for Finance and Operations og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle tre produkter. Derfor er produktnavnet i emner, der primært vedrører Retail, Microsoft Dynamics 365 for Retail. I emner, der primært vedrører kerneproduktet (Finance and Operations), er produktnavnet Microsoft Dynamics 365 for Finance and Operations. I emner, der primært vedrører personale, er produktnavnet Dynamics 365 for Talent. 
 
 Vælg et funktionsområde, du vil vide mere om, i venstre rude.
 

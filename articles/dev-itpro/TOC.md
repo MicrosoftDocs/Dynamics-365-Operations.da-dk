@@ -1,7 +1,7 @@
 # [Udvikling og administration til Dynamics 365 for Finance and Operations](index.md)
-# [Systemkrav til skyinstallationer](../fin-and-ops/get-started/system-requirements.md)
-# [Systemkrav til lokale installationer](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Demodata](../fin-and-ops/get-started/demo-data.md)
+# [Systemkrav til skyinstallationer](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [Systemkrav til lokale installationer](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Demodata](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generere demodata med pakker](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [Eksportere og importere en model](dev-tools/models-export-import.md)
 ### [Metadata-søgning i Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Modeller](dev-tools/models.md)
-### [Projekter i Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projekter i Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Værktøjs-tilføjelsesprogrammer til Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten](dev-tools/lock-models.md)
 ### [Opdatere Visual Studio-udviklingsværktøjer](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [Tilpasning: overlejring og udvidelser](extensibility/customization-overlayering-extensions.md)
 ### Nyheder
 #### [Ændringer i udvidelse juli 2017](extensibility/changes-july-2017.md)
-#### [Ændringer i udvidelse i Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Ændringer i udvidelse version 7.3](extensibility/extensibility-changes-73.md)
 ### Grundlæggende funktioner
 #### [Forstyrrende tilpasninger](extensibility/intrusive-customizations.md)
 #### [Klasseudvidelser](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [Opbyg navigation](user-interface/build-navigation.md)
 ### [Opbyg et arbejdsområde](user-interface/build-workspace.md)
 ## Formularer
-### [Navigation i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Layout i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigation i Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Layout i Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Symbolskrifttype](user-interface/symbol-font.md)
 ### [Testformularer med brugerdefinerede mønstre](user-interface/testing-forms-custom-patterns.md)
 ### [Oprette og bruge dybe links](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## Skyinstallation
 ### [Onboarding i Azure Resource Manager](deployment/arm-onboarding.md)
-### [Azure ExpressRoute og Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute og Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [Lokal installation](deployment/on-premises-deployment-landing-page.md)
 ### [Oversigt over lokal installation](deployment/on-premises-overview.md)
 ### [Planlægning af lokal installation](deployment/plan-onprem-deployment.md)
-### [Hardwaretilpasning](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Hardwaretilpasning](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Oprette et lokalt projekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurere og installere lokale miljøer](deployment/setup-deploy-on-premises-environments.md)
 #### [Installere lokale miljøer med Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [Opdatere den lokale agent](lifecycle-services/update-local-agent.md)
 ### [Omkonfigurere et miljø](lifecycle-services/reconfigure-environment.md)
 ### [Klientens internetforbindelse](user-interface/client-disconnected.md)
-### [Fejlfinding i Dynamics 365 for Finance and Operations, Enterprise edition til det lokale miljø](deployment/troubleshoot-on-prem.md)
+### [Fejlfinding i Dynamics 365 for Finance and Operations til det lokale miljø](deployment/troubleshoot-on-prem.md)
 
 ## Installere brugerdefineret kode
 ### [Oprette en installerbar pakke](deployment/create-apply-deployable-package.md)
@@ -527,10 +527,10 @@
 ### [AX 2012-opgradering – opgaver, der skal fuldføres efter opgradering](migration-upgrade/app-validation-process.md)
 ### [AX 2012-opgradering – bestå funktionstest](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012 opgradering – forberede udgivelse](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012-opgradering – udgivelse](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Ændringer, der påvirker opgradering fra AX 2012
-#### [Opgradering for enkelt bilag og værdiregulering af valuta ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Opgradering for enkelt bilag og værdiregulering af valuta](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Datamodel for projektressourceplanlægning](migration-upgrade/data-model-changes-resource-management.md)
 #### [Ændringer af undersystem for arbejdsgang](migration-upgrade/workflow-subsystem.md)
 #### [Hvorfor vi skiftede fra kuber til aggregatmodeller](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -588,7 +588,9 @@
 ### [Oversigt over batchserver](sysadmin/batch-server-overview.md)
 ### [Oprette et batchjob](sysadmin/tasks/create-batch-job.md)
 
-## [Oprette regler for optimeringsrådgiver](sysadmin/optimization-advisor.md)
+##  [Oversigt over optimeringsrådgiver](sysadmin/optimization-advisor-overview.md)
+### [Oprette regler for optimeringsrådgiver](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Oversigt over Lifecycle Services](lifecycle-services/lcs.md)
@@ -701,10 +703,10 @@
 ## [Anmode om en databaseopdatering for sandkasse](database/database-refresh.md)
 
 # Support
-## [Få support til Dynamics 365 for Finance and Operations, Enterprise Edition og Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Få support til Dynamics 365 for Finance and Operations og Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Log en premier-supportbillet](lifecycle-services/premier-support.md)
 ## [Sende en anmodning til Dynamics Service Engineering-teamet](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Opsætte teknisk support til Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
+## [Opsætte teknisk support til Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Ofte stillede spørgsmål om planlagt vedligeholdelsesvindue](lifecycle-services/planned-maintenance-window-faq.md) 
-## [Cloud-handlinger og -vedligeholdelse](lifecycle-services/cloud-operations-servicing.md)
+## [Skyoperationer og -vedligeholdelse](lifecycle-services/cloud-operations-servicing.md)
 ## [Administrere supportoplevelser i forbindelse med Finance and Operations](lifecycle-services/cloud-powered-support-lcs.md)

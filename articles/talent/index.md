@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Du kan udføre disse opgaver vha. Talent:
 + Oprette, afholde og analysere undervisningskurser, herunder agendaer, sessioner og spor.
 
 > [!NOTE] 
-> Dynamics 365 for Talent er tæt forbundet med Personale i Dynamics 365 for Finance and Operations, Enterprise Edition. Den samme funktionalitet kan forekomme i begge produkter. Derfor er produktnavnet i emner, der primært vedrører Personale, Dynamics 365 for Finance and Operations, Enterprise Edition. I de emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+> Dynamics 365 for Talent er tæt forbundet med Personale i Dynamics 365 for Finance and Operations. Den samme funktionalitet kan forekomme i begge produkter. Derfor er produktnavnet i emner, der primært vedrører Personale, Dynamics 365 for Finance and Operations. I de emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Udvikle en strategi til administration af dit personale
 ---------------------------------------------------------
