@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ Du kan bruge siden **Økonomiske dimensioner** til at oprette økonomiske dimens
 
 Når du har oprettet de økonomiske dimensioner, skal du bruge siden **Økonomiske dimensionsværdier** til at tildele hver økonomisk dimension yderligere egenskaber. 
 
-Du kan bruge økonomiske dimensioner til at repræsentere juridiske enheder. Du behøver ikke at oprette de juridiske enheder i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Økonomiske dimensioner kan dog ikke til opfylde juridiske enheders handlings- eller forretningsmæssige behov. Funktionen for regnskab mellem enheder i Finance and Operations er kun udviklet i forbindelse med de regnskabsposter, der oprettes ved hver transaktion. 
+Du kan bruge økonomiske dimensioner til at repræsentere juridiske enheder. Du behøver ikke at oprette de juridiske enheder i Microsoft Dynamics 365 for Finance and Operations. Økonomiske dimensioner kan dog ikke til opfylde juridiske enheders handlings- eller forretningsmæssige behov. Funktionen for regnskab mellem enheder i Finance and Operations er kun udviklet i forbindelse med de regnskabsposter, der oprettes ved hver transaktion. 
 
 Før du kan konfigurere økonomiske dimensioner som juridiske enheder, skal du evaluere forretningsprocesserne på følgende områder for at afgøre, om denne installation vil fungere for organisationen:
 

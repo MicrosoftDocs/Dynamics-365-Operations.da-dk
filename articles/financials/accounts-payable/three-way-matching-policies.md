@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: da3099a07e3084bf49d03e0f4d421aebe9b39940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8ea45ece05f006f1649c79fcdee427a0bc4b0b5
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -65,7 +65,7 @@ Fakturasammenholdelsespolitikkerne i dette eksempel kan hjælpe personer i følg
 1.  Claus, en arbejder i modtagelsesafdelingen hos Fabrikam, modtager det samlede antal maskiner, der leveres fra Contoso. Han angiver antallet 5 ved modtagelse af produkterne. Da indkøbsordren er blevet fuldt modtaget, ændres status for indkøbsordren til Modtaget.
 2.  Pernille, kreditorkoordinator hos Fabrikam, indtaster og kontrollerer den faktura, der er sendt af Contoso. Hun kontrollerer følgende oplysninger:
     -   For varer, der kræver trevejs-sammenholdelse, svarer antallet på fakturalinjen til det antal, der blev modtaget. Det modtagne antal angives på den produktkvittering, der sammenholdes med fakturaen.
-    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Dette omfatter følgende typer prissammenholdelse:
+    -   For varer, der kræver tovejs- eller trevejs-sammenholdelse, er priserne på fakturalinjen inden for de tolerancer, der er defineret i Microsoft Dynamics 365 for Finance and Operations. Dette omfatter følgende typer prissammenholdelse:
         -   Sammenholdelse af nettoenhedspriser – Nettoenhedsprisen på fakturalinjen svarer til nettoenhedsprisen på indkøbsordrelinjen, dvs. den er inden for den tilladte toleranceprocent. I dette eksempel er tolerancen for nettoenhedsprisen +8 %.
         -   Sammenholdelse af pristotaler – Nettobeløbet på fakturalinjen svarer til nettobeløbet på indkøbsordrelinjen, dvs. den er inden for tilladt toleranceprocent, beløb eller tilladt procent og beløb. I dette eksempel er tolerancen for sammenholdelse af pristotaler +15 %.
 

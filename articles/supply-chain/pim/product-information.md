@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ Et produkt defineres primært af produktnummer, navn og beskrivelse. Andre data 
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribution, eksport og import af produktdata
 
-Produktdefinitionen kan oprettes i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den kan også importeres fra styring af systemer til produktlivscyklus (PLM), produktdatastyring (PDM) eller administration af produktoplysninger (PIM). Når der bruges mere end én forekomst af Finance and Operations, bruges der som regel én forekomst som produktdatamaster for alle andre forekomster. Denne fremgangsmåde understøttes af en stor mængde dataenheder, der aktiverer eksport og import af produktdefinitionsdata fra én forekomst til en anden.
+Produktdefinitionen kan oprettes i Microsoft Dynamics 365 for Finance and Operations. Den kan også importeres fra styring af systemer til produktlivscyklus (PLM), produktdatastyring (PDM) eller administration af produktoplysninger (PIM). Når der bruges mere end én forekomst af Finance and Operations, bruges der som regel én forekomst som produktdatamaster for alle andre forekomster. Denne fremgangsmåde understøttes af en stor mængde dataenheder, der aktiverer eksport og import af produktdefinitionsdata fra én forekomst til en anden.
 
 For at understøtte distributionen af produktdata til mange forekomster kan du bruge tjenesten Common Data Service i Finance and Operations. Produktdefinitionerne kan eksporteres fra en forekomst af Finance and Operations til Common Data Service. Produktdefinitionerne kan derefter bruges til at klargøre andre forretningsprogrammer, f.eks. Microsoft Dynamics 365 for Sales, med produktdata.
 

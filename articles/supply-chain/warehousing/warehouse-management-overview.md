@@ -17,17 +17,17 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 43167cc36398d3f7f8d639187f67fad1bae8082f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="warehouse-management"></a>Lokationsstyring
 
 [!include[banner](../includes/banner.md)]
 
-Modulet Lokationsstyring til Dynamics 365 for Finance and Operations, Enterprise Edition giver dig mulighed for at administrere lagerstedsprocesser i produktions-, distributions- og detailvirksomheder. Dette modul har en lang række funktioner, der understøtter lagerstedet på et optimal niveau, når som helst. Lokationsstyring er fuldt integreret med andre forretningsprocesser i Finance and Operations, f.eks. transport, produktion, kvalitetskontrol, køb, overførsel, salg og returneringer.
+Modulet Lokationsstyring til Dynamics 365 for Finance and Operations giver dig mulighed for at administrere lagerstedsprocesser i produktions-, distributions- og detailvirksomheder. Dette modul har en lang række funktioner, der understøtter lagerstedet på et optimal niveau, når som helst. Lokationsstyring er fuldt integreret med andre forretningsprocesser i Finance and Operations, f.eks. transport, produktion, kvalitetskontrol, køb, overførsel, salg og returneringer.
 
 ## <a name="get-started"></a>Introduktion
 Hvis du vil begynde at arbejde med Lokationsstyring, skal du fuldføre opsætningen af de generelle lagerstedsparametre for at understøtte forretningsprocesserne i virksomheden.

@@ -1,6 +1,6 @@
 --- 
 title: "Oprette krævede konfigurationer til import af data fra en ekstern fil til elektronisk rapportering (ER)"
-description: "Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe ER-konfigurationer for at importere data i Dynamics 365 for Finance and Operations, Enterprise edition-applikationen fra en ekstern fil."
+description: "Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe ER-konfigurationer for at importere data i Dynamics 365 for Finance and Operations-applikationen fra en ekstern fil."
 author: NickSelin
 manager: AnnBe
 ms.date: 02/22/2017
@@ -16,26 +16,26 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c0d9636fe8a8d5230859da8fe557fe11a9513ba0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Oprette krævede konfigurationer til import af data fra en ekstern fil til elektronisk rapportering (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe ER-konfigurationer for at importere data i Dynamics 365 for Finance and Operations, Enterprise edition-applikationen fra en ekstern fil. I dette eksempel skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "ER Oprette en konfigurationsudbyder og markere den som aktiv". Disse trin kan udføres ved hjælp af USMF-datasættet. Du skal også downloade og gemme følgende filer lokalt ved hjælp af links fra emnet Oversigt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller Udvikler til elektronisk rapportering kan designe ER-konfigurationer for at importere data i Dynamics 365 for Finance and Operations-applikationen fra en ekstern fil. I dette eksempel skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "ER Oprette en konfigurationsudbyder og markere den som aktiv". Disse trin kan udføres ved hjælp af USMF-datasættet. Du skal også downloade og gemme følgende filer lokalt ved hjælp af links fra emnet Oversigt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550):: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * ER giver erhvervsbrugere mulighed for at konfigurere processen med at importere eksterne datafiler til tabeller i Dynamics 365 for Finance and Operations, Enterprise edition i enten. XML eller .TXT-format. Først skal der designes en abstrakt datamodel og en konfiguration af en ER-datamodel til at repræsentere de data, som du importerer. Dernæst skal du definere strukturen af den fil, som du importerer, og den metode, du vil bruge til at overføre dataene fra filen til den abstrakte datamodel. Konfigurationen af det ER-format, der knyttes til den designede datamodel, skal være oprettet for den pågældende abstrakte datamodel. Derefter skal datamodelkonfigurationen udvides med en tilknytning, der beskriver, hvordan de importerede data bevares som abstrakte datamodeldata, og hvordan de bruges til at opdatere tabeller i Dynamics 365 for Finance and Operations, Enterprise edition.  Konfiguration af ER-datamodellen skal føjes til en ny modeltilknytning, der beskriver bindingen af datamodellen til programmets destinationer.  
-    * I følgende scenario vises funktionerne til ER-dataimport. Dette omfatter kreditorposteringer, der spores eksternt og derefter importeres i Dynamics 365 for Finance and Operations, Enterprise edition for at blive rapporteret senere i kreditorudligningen for 1099-formularer.   
+    * ER giver erhvervsbrugere mulighed for at konfigurere processen med at importere eksterne datafiler til tabeller i Dynamics 365 for Finance and Operations i enten. XML eller .TXT-format. Først skal der designes en abstrakt datamodel og en konfiguration af en ER-datamodel til at repræsentere de data, som du importerer. Dernæst skal du definere strukturen af den fil, som du importerer, og den metode, du vil bruge til at overføre dataene fra filen til den abstrakte datamodel. Konfigurationen af det ER-format, der knyttes til den designede datamodel, skal være oprettet for den pågældende abstrakte datamodel. Derefter skal datamodelkonfigurationen udvides med en tilknytning, der beskriver, hvordan de importerede data bevares som abstrakte datamodeldata, og hvordan de bruges til at opdatere tabeller i Dynamics 365 for Finance and Operations.  Konfiguration af ER-datamodellen skal føjes til en ny modeltilknytning, der beskriver bindingen af datamodellen til programmets destinationer.  
+    * I følgende scenario vises funktionerne til ER-dataimport. Dette omfatter kreditorposteringer, der spores eksternt og derefter importeres i Dynamics 365 for Finance and Operations for at blive rapporteret senere i kreditorudligningen for 1099-formularer.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Tilføj en ny ER-modelkonfiguration
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Kontrollér, at konfigurationsudbyderen for eksempelvirksomheden Litware, Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv".   
 2. Klik på Rapporteringskonfigurationer.
-    * I stedet for at oprette en ny model, der understøtter dataimporten, kan du indlæse filen, 1099model.xml, som du tidligere har downloadet. Denne fil indeholder den brugerdefinerede datamodel af kreditortransaktioner. Denne datamodel er knyttet til datakomponenter i Dynamics 365 for Finance and Operations, Enterprise edition, der er i AOT-dataenheden.   
+    * I stedet for at oprette en ny model, der understøtter dataimporten, kan du indlæse filen, 1099model.xml, som du tidligere har downloadet. Denne fil indeholder den brugerdefinerede datamodel af kreditortransaktioner. Denne datamodel er knyttet til datakomponenter i Dynamics 365 for Finance and Operations, der er i AOT-dataenheden.   
 3. Klik på Udveksling.
 4. Klik på Indlæs fra XML-fil.
     * Klik på Gennemse, og naviger til filen 1099model.xml, som du tidligere har downloadet.  
@@ -44,7 +44,7 @@ Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller U
 
 ## <a name="review-data-model-settings"></a>Gennemgå datamodelindstillinger
 1. Klik på Designer.
-    * Denne model er udviklet til at vise kreditorens transaktioner fra virksomhedens synspunkt og er adskilt fra implementeringen i Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * Denne model er udviklet til at vise kreditorens transaktioner fra virksomhedens synspunkt og er adskilt fra implementeringen i Dynamics 365 for Finance and Operations.   
 2. Udvid "1099-MISC" i træet.
 3. Vælg "1099-MISC\Transaktioner" i træet.
 4. Udvid "1099-MISC\Transaktioner" i træet.
@@ -106,7 +106,7 @@ Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller U
 1. Vælg "1099-betalingsmodel" i træet.
 2. Klik på Designer.
 3. Klik på Tilknyt model til datakilde.
-    * Tilknytningen for import af manuelle 1099-transaktioner er defineret med retningstypen Til destination. Dette betyder, at den er angivet for at understøtte dataimport og indeholder indstillingen af de regler, der definerer hvordan den importerede eksterne fil og de bevarede abstrakte datamodeldata bruges til at opdatere tabeller i programmet Dynamics 365 for Finance and Operations, Enterprise edition.  
+    * Tilknytningen for import af manuelle 1099-transaktioner er defineret med retningstypen Til destination. Dette betyder, at den er angivet for at understøtte dataimport og indeholder indstillingen af de regler, der definerer hvordan den importerede eksterne fil og de bevarede abstrakte datamodeldata bruges til at opdatere tabeller i programmet Dynamics 365 for Finance and Operations.  
 4. Klik på Designer.
 5. Udvid "model: Datamodel 1099-betalingsmodel" i træet.
 6. Udvid "model: Datamodel 1099-betalingsmodel\Transaktioner: Postliste" i træet.
@@ -120,7 +120,7 @@ Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller U
 12. Vælg "tax1099trans: Table 'VendSettlementTax1099'-poster = model.Validated" i træet.
 13. Klik på Rediger destination.
     * Denne ER-destination blev tilføjet for at angive, hvordan de importerede data opdaterer programmets tabeller. I denne situation er datatabellen VendSettlementTax1099 valgt. Da posthandlingen Indsæt er valgt, indsættes de importerede transaktioner i tabellen VendSettlementTax1099. Bemærk, at en enkelt modeltilknytning kan indeholde flere destinationer. Det betyder, at de importerede data kan bruges til at opdatere flere af programmets tabeller på én gang. Tabeller, visninger og dataenheder kan bruges som ER-destinationer.   
-    * Hvis tilknytningen bliver kaldt fra et punkt i programmet Dynamics 365 for Finance and Operations, Enterprise edition (f.eks. knap eller menupunkt), der er udviklet specifikt til denne handling, skal ER-destinationen markeres som integrationspunktet. I dette eksempel er punktet ERTableDestination#VendSettlementTax1099.  
+    * Hvis tilknytningen bliver kaldt fra et punkt i programmet Dynamics 365 for Finance and Operations (f.eks. knap eller menupunkt), der er udviklet specifikt til denne handling, skal ER-destinationen markeres som integrationspunktet. I dette eksempel er punktet ERTableDestination#VendSettlementTax1099.  
 14. Klik på Annuller.
 15. Klik på Vis alle.
 16. Klik på Vis kun tilknyttede.
@@ -176,15 +176,15 @@ Følgende trin beskriver, hvordan en bruger i rollen Systemadministrator eller U
 18. Luk siden.
 19. Luk siden.
 20. Klik på Rediger.
-    * Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK model-tilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 for Finance and Operations, Enterprise edition" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
+    * Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK model-tilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 for Finance and Operations" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du udføre næste trin "Slå flaget 'Standard for model-tilknytning' til" for den angivne formatkonfiguration. Ellers skal du springe næste trin over.  
 21. Vælg Ja i feltet Standard for modeltilknytning.
 22. Vælg "1099-betalingsmodel" i træet.
 23. Klik på Designer.
 24. Klik på Tilknyt model til datakilde.
 25. Klik på Kør.
-    * Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK model-tilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du vælge den foretrukne modeltilknytning i opslagsfeltet. Hvis du endnu ikke har installeret hotfixet, skal du gå til næste trin, da tilknytningen allerede er valgt af definitionen af standardformatkonfigurationen.  
+    * Hvis du installerede hotfix "KB 4012871 understøttelse af TYSK model-tilknytninger i adskilte konfigurationer med en mulighed for at angive forskellige forudsætninger for at installere dem på forskellige versioner af Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), skal du vælge den foretrukne modeltilknytning i opslagsfeltet. Hvis du endnu ikke har installeret hotfixet, skal du gå til næste trin, da tilknytningen allerede er valgt af definitionen af standardformatkonfigurationen.  
     * Hvis du ikke har installeret hotfixet, KB 4012871, skal du være opmærksom på, at dialogboksen indeholder et yderligere spørgsmål om modeltilknytning, der bruges til at fortolke den fil, du importerer. Dataene overføres derefter fra dialogboksen til datamodellen. I øjeblikket kan du vælge, hvilken formattilknytning der skal anvendes, afhængigt af den filtype du vil importere.  
-    * Hvis du planlægger at kalde denne modeltilknytning fra et punkt i Dynamics 365 for Finance and Operations, Enterprise edition, der er udviklet specifikt til handlingen, skal ER-destinationen og formattilknytningen være markeret som en del af integrationen.  
+    * Hvis du planlægger at kalde denne modeltilknytning fra et punkt i Dynamics 365 for Finance and Operations, der er udviklet specifikt til handlingen, skal ER-destinationen og formattilknytningen være markeret som en del af integrationen.  
 26. Klik på Annuller.
 27. Luk siden.
 28. Luk siden.

@@ -1,6 +1,6 @@
 ---
 title: Synkronisere konti fra direkte fra Sales med debitorer i Finance and Operations
-description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere konti fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere konti fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -20,21 +20,21 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: 5dede6024dcd7837dd4e94ecca2ccd059b11b5b9
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fb694db32638756328623c186594cf5ba2e7d6b8
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Synkronisere konti fra direkte fra Sales med debitorer i Finance and Operations
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
 > Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Dynamics 365-dataintegration](/common-data-service/entity-reference/dynamics-365-integration).
 
-Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere konti direkte fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere konti direkte fra Microsoft Dynamics 365 for Sales med Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 

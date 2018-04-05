@@ -19,10 +19,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 156cd33a0216514a70229b4e23fc86c0c68cd940
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indehol
 **Bemærk!** Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
-Administrationssystemet for lagersted i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition giver dig fleksible muligheder for at definere dit lagersteds layout efter skiftende behov, så du kan opnå en optimal lagerstedseffektivitet.
+Lokationsstyringssystemet i Microsoft Dynamics 365 for Finance and Operations giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagereffektivitet.
 
 -   Du kan oprette opbevaringssteder med høj prioritet og lav prioritet til optimal placering af varer.
 -   Du kan opdele lageret i områder, der passer til forskellige opbevaringsbehov, som temperaturkrav eller forskellige omsætningssatser for varer.

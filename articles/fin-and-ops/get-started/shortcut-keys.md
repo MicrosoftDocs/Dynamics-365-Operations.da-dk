@@ -1,6 +1,6 @@
 ---
 title: Tastaturgenveje
-description: "Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations, Enterprise Edition. 
+Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations. 
 
 **Bemærk!** De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
@@ -74,7 +74,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Åbne faktaboksruden (eller flytte fokus til faktaboksruden, hvis den allerede er åben) | Alt+M, B eller Ctrl+F2                        |
 | Lukke faktaboksruden (med fokus i faktaboksruden)                         | Esc                                       |
 | Flytte til næste/forrige faktaboks (med fokus i faktaboksruden)              | Alt+Skift+pil ned/Alt+Skift+pil op |
-| Flyt til den &lt;n&gt;. faktaboks (med fokus i ruden Faktaboks)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flyt til &lt;n&gt;. faktaboks (med fokus i faktaboksruden)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Udvide en faktaboks (med fokus på overskriften i faktaboksen)                             | Mellemrum eller Enter                            |
 | Skjule den aktuelle faktaboks                                                    | Alt+0                                     |
 
@@ -115,11 +115,11 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | **Hvis du vil gøre dette**                                      | **Tryk på**                                    |
 | Flytte til næste/forrige felt                     | Tabulator/Skift+tabulator                              |
 | Flytte til næste/forrige tabulator                       | Alt+Skift+højre pil/Alt+Skift+venstre pil |
-| Flyt til den &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flyt til &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Flytte til næste/forrige oversigtspanel                   | Alt+Skift+pil ned/Alt+Skift+pil op    |
-| Flyt til det &lt;n&gt;. oversigtspanel                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flyt til &lt;n&gt;. oversigtspanel                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Flytte til det næste/forrige blad (lodret fane)      | Alt+Skift+højre pil/Alt+Skift+venstre pil |
-| Flytte til det &lt;n&gt;. blad (lodret fane)        | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytte til det &lt;n&gt;te blad (lodret fane)        | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Udvide et oversigtspanel (med fokus på overskriften i oversigtspanelet) | Mellemrum eller Enter                               |
 | Skjule det aktuelle oversigtspanel                        | Alt+0                                        |
 | Skifte til gittervisning                                 | Ctrl+Skift+G                                 |

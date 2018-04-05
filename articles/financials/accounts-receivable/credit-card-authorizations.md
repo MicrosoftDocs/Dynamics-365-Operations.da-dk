@@ -1,6 +1,6 @@
 ---
 title: "Opsætning, godkendelse og opsamling af kreditkort"
-description: "Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig."
+description: "Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 for Finance and Operations. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 40d636cac477871f094286d29edc32cd5616ad44
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig.
+Denne artikel indeholder en oversigt over kreditkortgodkendelse i Microsoft Dynamics 365 for Finance and Operations. Den indeholder oplysninger om, hvordan du kan konfigurere en betalingstjeneste, føje et kreditkort til en salgsordre og erklære en tilladelse ugyldig.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Opsætning af kreditkortbetalingstjeneste
 ------------------------------------------

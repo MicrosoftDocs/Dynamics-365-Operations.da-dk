@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 24a17d3734e39815684098f694a77e96cdbc1cfe
-ms.openlocfilehash: d366ae53f4a9d8e676c3bc19e0450baa254cb716
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2f495fa3507fd54499e29b4c09f504dd037c0a6c
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,13 +36,13 @@ Dette emne indeholder oplysninger om arbejdsområdet **Godkendelse af indkøbsor
 ## <a name="overview"></a>Overblik 
 Indkøbsordrer, der kræver godkendelse, går gennem en godkendelsesarbejdsgang. Arbejdsgangen kan indeholde forskellige trin, der kræver handling af en eller flere personer. Én person kan f.eks. skulle fuldføre en opgave eller godkende indkøbsordren. 
 
-I arbejdsområdet **Godkendelse af indkøbsordre** til mobilenheder kan du nemt få vist og reagere på indkøbsordrer fra din mobilenhed. I dette arbejdsområde kan du også udføre de samme arbejdsgangshandlinger, som du kan udføre fra Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-webklienten.
+I arbejdsområdet **Godkendelse af indkøbsordre** til mobilenheder kan du nemt få vist og reagere på indkøbsordrer fra din mobilenhed. I dette arbejdsområde kan du også udføre de samme arbejdsgangshandlinger, som du kan udføre fra Microsoft Dynamics 365 for Finance and Operations-webklienten.
 
 ## <a name="prerequisites"></a>Forudsætninger
 Forudsætningerne varierer alt efter, hvilken version af Finance and Operations der er installeret i din organisation.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
-Hvis Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Godkendelse af indkøbsordre** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations 
+Hvis Microsoft Dynamics 365 for Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Godkendelse af indkøbsordre** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
 Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 

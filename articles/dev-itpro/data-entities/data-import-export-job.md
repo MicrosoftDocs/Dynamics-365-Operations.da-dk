@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Til at oprette og administrere job til import og eksport af data i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, kan du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
+Til at oprette og administrere job til import og eksport af data i Microsoft Dynamics 365 for Finance and Operations, kan du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
 > [!NOTE]
 > I dette emne antages det, at du er fortrolig med [dataenheder](data-entities.md).
@@ -66,7 +66,7 @@ Du kan føje bestemte objekter til et import- eller eksportjob eller vælge en s
 ### <a name="set-the-data-format-for-the-job"></a>Angiv jobbets dataformat
 Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporteres eller importeres. Du kan definere formater ved hjælp af feltet **Opsætning af datakilder**. Mange organisationer begynder med de formater, der er inkluderet som standard i demodatasættet. Her er en liste over nogle af disse formater:
 
-- AX (for data, der skal importeres eller eksporteres i det samme format, der bruges til Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition)
+- AX (for data, der skal importeres eller eksporteres i det samme format, der bruges til Microsoft Dynamics 365 for Finance and Operations)
 - ColonSeparated
 - CSV
 - Excel

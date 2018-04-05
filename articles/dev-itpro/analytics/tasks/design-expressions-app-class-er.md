@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Designe udtryk til kald af programklassemetoder (ER)
@@ -28,13 +28,13 @@ ms.lasthandoff: 02/07/2018
 
 Denne vejledning indeholder oplysninger om, hvordan du genbruge den eksisterende programlogik i konfigurationer til elektronisk rapportering (ER) ved at kalde de krævede metoder for programklasser i ER-udtryk. Værdier for argumenter til kald af klasser kan defineres dynamisk på kørselstidspunktet, f.eks. baseret på oplysninger i parsingdokumentet for at sikre, at det er korrekt. I denne guide skal du oprette de krævede ER-konfigurationer til eksempelfirmaet Litware Inc. Denne procedure er til brugere, der er tildelt rollen som Systemadministrator eller Elektronisk rapporteringsudvikler. 
 
-Disse trin kan udføres ved hjælp af ethvert datasæt. Du skal desuden hente og gemme følgende fil lokalt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Disse trin kan udføres ved hjælp af ethvert datasæt. Du skal hente og gemme følgende fil lokalt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
 Du skal først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudbyder markere den som aktiv" for at fuldføre disse trin.
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i proceduren "Oprette en ER-konfigurationsudbyder og markere den som aktiv".   
-    * Lad os antage, at du designer en proces til fortolkning af indgående bankkontoudtog for en opdatering til programdata. Du får de indgående bankkontoudtog som TXT-filer, der indeholder IBAN-koder. Som en del af importprocessen for kontoudtog skal du validere rigtigheden af disse IBAN-koder ved brug af den logik, der allerede findes i Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * Lad os antage, at du designer en proces til fortolkning af indgående bankkontoudtog for en opdatering til programdata. Du får de indgående bankkontoudtog som TXT-filer, der indeholder IBAN-koder. Som en del af importprocessen for kontoudtog skal du validere rigtigheden af disse IBAN-koder ved brug af den logik, der allerede findes i Dynamics 365 for Finance and Operations.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importere en ny ER-modelkonfiguration
 1. Find og vælg den ønskede post på listen.

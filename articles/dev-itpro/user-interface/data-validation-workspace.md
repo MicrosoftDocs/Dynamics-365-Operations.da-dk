@@ -16,10 +16,10 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: daded9d8ef48456cbd3f97a7bae5fa75885ce9d1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ I afsnittet **Opgaver og status** vises status for det samlede datavalideringspr
 Den sidste fane er for den detaljerede opgaveliste. Denne liste viser den fuldstændige opgaveliste.
 Du kan filtrere opgavelisten på flere måder. Klik på **Rediger opgave** for at ændre status for en opgave eller tildele en opgave. Klik på **Vedhæftede filer** for at få vist vedhæftede filer for en opgave.
 
-Opgavenavnet er et hyperlink til siden Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, som brugeren skal gå til for at fuldføre arbejdet. Du kan angive dette hyperlink ved hjælp af feltet **Menupunktnavn**, når du redigerer eller opretter en opgave fra formularen **Konfigurer datavalideringsprojekt**.
+Opgavenavnet er et hyperlink til siden Microsoft Dynamics 365 for Finance and Operations, som brugeren skal gå til for at fuldføre arbejdet. Du kan angive dette hyperlink ved hjælp af feltet **Menupunktnavn**, når du redigerer eller opretter en opgave fra formularen **Konfigurer datavalideringsprojekt**.
 
 Du kan vedhæfte filer, noter, billeder og URL-adresser til en opgave ved hjælp af handlingen **Vedhæftede filer**. Du kan f.eks. tilknytte en rapportfil, som blev udskrevet for en opgave. Der vises et ikon i kolonnen **Vedhæftet fil** for opgaven, hvis der findes en vedhæftet fil.
 

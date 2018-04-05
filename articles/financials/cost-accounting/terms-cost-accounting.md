@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ Fordelingsgrundlaget bruges til at måle og kvantificere aktiviteter, f.eks. mas
 
 **Driftsregnskab**
 
-I omkostningsregnskabet kan du indsamle data fra forskellige kilder, f.eks. finans, underfinanskonti, budgetter og statistiske oplysninger. Du kan derefter analysere, opsummere og evaluere omkostningsdata, så ledelsen kan tage de bedst mulige beslutninger om prisopdateringer, budgetter, omkostningsstyring og så videre. De kildedata, der bruges til omkostningsanalyse, behandles uafhængigt af hinanden i omkostningsregnskab. Opdateringer i omkostningsregnskabet påvirker derfor ikke kildedataene. Når du indsamler omkostningsdata fra forskellige kilder, og især når du importerer hovedkontiene fra finansmodulet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som omkostningselementer, er der dog dataredundans, fordi de samme data findes i både finansmodulet og omkostningsregnskabet. Denne redundans er påkrævet, fordi du bruger økonomistyring til ekstern rapportering og omkostningsregnskab til intern afrapportering.
+I omkostningsregnskabet kan du indsamle data fra forskellige kilder, f.eks. finans, underfinanskonti, budgetter og statistiske oplysninger. Du kan derefter analysere, opsummere og evaluere omkostningsdata, så ledelsen kan tage de bedst mulige beslutninger om prisopdateringer, budgetter, omkostningsstyring og så videre. De kildedata, der bruges til omkostningsanalyse, behandles uafhængigt af hinanden i omkostningsregnskab. Opdateringer i omkostningsregnskabet påvirker derfor ikke kildedataene. Når du indsamler omkostningsdata fra forskellige kilder, og især når du importerer hovedkontiene fra finansmodulet i Microsoft Dynamics 365 for Finance and Operations som omkostningselementer, er der dog dataredundans, fordi de samme data findes i både finansmodulet og omkostningsregnskabet. Denne redundans er påkrævet, fordi du bruger økonomistyring til ekstern rapportering og omkostningsregnskab til intern afrapportering.
 
 **Finanspost for omkostningsregnskab**
 
@@ -120,7 +120,7 @@ Der er to dimensionshierarkier: kategorihierarki og klassifikationshierarki. Kat
 Omkostningsregnskab understøtter integration af data fra andre kildesystemer via en række dataconnectorer. Følgende dataconnectorer er tilgængelige:
 
 -  Importerede transaktioner (konfigureret på forhånd)
--  Dynamics 365 for Finance and Operations, Enterprise Edition (konfigureret på forhånd)
+-  Dynamics 365 for Finance and Operations (konfigureret på forhånd)
 -  Dynamics AX (konfiguration kræves)
 
 **Bemærk:** Transaktioner importeret via dataconnector er baserede på dataenheder.
@@ -129,7 +129,7 @@ Omkostningsregnskab understøtter integration af data fra andre kildesystemer vi
 
 De fleste kildesystemer kan levere data, der svarer til en eller flere datakilder i omkostningsregnskab. Hvis du vil justere data fra kildesystemer med datakilden i omkostningsregnskabet, skal en dataprovider konfigureres. I følgende tabel vises tilgængeligheden af dataprovidere pr. dataconnector og datakilde.
 
-|  **Tabeller** |  **Dataconnector for importerede transaktioner** | **Dynamics 365 for Finance and Operations, Enterprise Edition-dataconnector**  | **Dynamics AX-dataconnector**  |
+|  **Tabeller** |  **Dataconnector for importerede transaktioner** | **Dynamics 365 for Finance and Operations-dataconnector**  | **Dynamics AX-dataconnector**  |
 |---|---|---|---|
 | Dimensionsmedlemmer for omkostningselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmer for omkostningsobjekt |  Ja | Ja  | Ja  |

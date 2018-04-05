@@ -3,7 +3,7 @@ title: "Nyheder eller ændringer"
 description: "Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ff73fdb3e6ce97e01838228c45795ca64e888add
-ms.openlocfilehash: e00dece6a6f917028379d879ec81a5c7ab210253
+ms.sourcegitcommit: 47de452c2072b6a29d7e2d34eb73b472be669a6c
+ms.openlocfilehash: eb6132b6d535deb13a4cd1343d04967893a2cfe9
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/25/2018
 
 ---
 
@@ -120,10 +120,10 @@ Hvis du vil vide, hvordan du opgraderer til den nyeste version, skal du se [Proc
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
-<td>Platformsopdatering 13</td>
-<td>7.0.4764</td>
-<td>Januar 2018 (dette er en målrettet version kun til brugere, der har tilvalgt CAAP (Continuous Auto-update Advantage Program)).</td>
-<td><a href="whats-new-platform-update-13.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise Edition, platformsopdatering 13 (januar 2018)</a></td><tbody>
+<td>Platformsopdatering 15</td>
+<td>7.0.4839</td>
+<td>Marts 2018 (dette er en målrettet version kun til brugere, der har tilvalgt CAAP (Continuous Auto-update Advantage Program)).</td>
+<td><a href="whats-new-platform-update-15.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, platformsopdatering 15 (marts 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Platformsopdatering 12</td>

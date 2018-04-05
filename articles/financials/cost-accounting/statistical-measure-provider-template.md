@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Her er nogle eksempler på typiske statistiske dimensionsmedlemmer.
 
 ## <a name="statistical-measure-provider-template"></a>Skabelon til provider af statistiske målinger
 
-Statistiske målinger kan stamme fra mange forskellige kilder. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, er en fremragende kilde til at udtrække statistiske målinger fra. Du kan bruge en provider-skabelon for statistisk målinger til nemt at konfigurere de statistiske målinger, som du vil udtrække.
+Statistiske målinger kan stamme fra mange forskellige kilder. Microsoft Dynamics 365 for Finance and Operations er en fremragende kilde til at udtrække statistiske målinger fra. Du kan bruge en provider-skabelon for statistisk målinger til nemt at konfigurere de statistiske målinger, som du vil udtrække.
 
 Definitionen af en provider-skabelon til statistiske målinger er generisk og kan genbruges i flere statistiske dimensionsmedlemmer.
 
@@ -132,13 +132,13 @@ Før du kan få statistiske målinger i omkostningsregnskabet, skal du oprette r
 > [!NOTE]
 > I dette eksempel skal du oprette en relation for den **faktiske version**.
 
-Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Dynamics 365 for Finance and Operations, Enterprise edition – Statistiske målinger** som dataconnector for at udtrække data fra Finance and Operations.
+Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Dynamics 365 for Finance and Operations – Statistiske målinger** som dataconnector for at udtrække data fra Finance and Operations.
 
 **Datakilde**
 
 | Navn        | Dataconnector                                                                     | Statistisk dimensionsmedlem |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Fuldtidsansatte D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – Statistiske målinger | Fuldtidsansatte                         |
+| Fuldtidsansatte D365FO | Dynamics 365 for Finance and Operations – Statistiske målinger | Fuldtidsansatte                         |
 
 **Konfiguration af dataprovider**
 
@@ -220,13 +220,13 @@ Før du kan få statistiske målinger i omkostningsregnskabet, skal du oprette r
 > [!NOTE]
 > I dette eksempel skal du oprette en relation for den **faktiske version**.
 
-Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Dynamics 365 for Finance and Operations, Enterprise edition – Statistiske målinger** som dataconnector for at udtrække data fra Finance and Operations.
+Gå til **Finanspost for omkostningsregnskab** \> **Faktisk version** \> **Administrer** \> **Statistiske målinger** for at oprette relationen. I dette scenarie skal du vælge **Dynamics 365 for Finance and Operations – Statistiske målinger** som dataconnector for at udtrække data fra Finance and Operations.
 
 **Datakilde**
 
 | Navn           | Dataconnector                                                                     | Statistisk dimensionsmedlem |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pakke CC D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – Statistiske målinger | Pakke-CC                      |
+| Pakke CC D365FO | Dynamics 365 for Finance and Operations – Statistiske målinger | Pakke-CC                      |
 
 Systemet registrerer, at ProdRouteTrans er en tabel, hvor hver post tilhører en særskilt juridisk enhed. Derfor vil du blive bedt om at vælge den juridiske enhed, som posteringer skal importeres fra.
 

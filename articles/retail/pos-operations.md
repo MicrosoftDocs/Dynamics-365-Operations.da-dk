@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 - **Knapmatrix** – Handlinger kan tildeles til knapper i POS-knapmatrixer, som er en del af et POS-skærmlayout.
 - **Transaktionsskærm** – Handlingen kan startes fra POS-knapmatrixer, der er konfigureret på POS-transaktionsskærmen.
 - **Velkomstskærm** – Handlingen kan startes fra POS-knapmatrixer, der er konfigureret på POS-velkomstskærmen.
+
+Bemærk: De operationer, der er angivet nedenfor, gælder for den nyeste version af Dynamics 365 for Retail. Nogle operationer kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
 
 | Id | Handling | Betegnelse | Knapmatrix | Transaktionsskærm | Velkomstskærm | Tilgængelig offline | Specifik for landestandard |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 703 | Lås kasseapparat | Lås det aktuelle kasseapparat, så det ikke kan bruges, men log ikke den aktuelle bruger af. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 701 | Log af | Log den aktuelle bruger af kasseapparatet. | Ja | Ja | Ja | Ja | Nr. |
 | 521 | Saldo for fordelskundepoint | Få vist saldoen for point for det angivne fordelskundekort. | Ja | Ja | Nr. | Nr. | Nr. |
+| 918 | Administrer skift | Få vist en oversigt over aktive eller afbrudte skift og skift, der er lukket uden kontrol. | Ja | Ja | Ja | Nr. | Nr. |
 | 914 | Minimere POS-vinduet | Denne handling understøttes ikke. | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Ikke tilgængelig | Nr. |
 | 1000 | Åbn kasseskuffe | Udfør en handling af typen "intet salg", og åbn den aktuelt valgte pengeskuffen. | Ja | Ja | Ja | Ja | Nr. |
 | 928 | Ordreopfyldelse | Denne handling tillader brugerne at plukke, pakke, afsende eller tilbagekalde ordrer for afhentning i butik. | Ja | Ja | Ja | Nr. | Nr. |
@@ -162,7 +165,6 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 | 638 | Angiv sælger på linjen | Med denne handling kan brugeren vælge en af de berettigede provisionssalgsgrupper (sælgere) til den aktuelt valgte linje. | Ja | Ja | Nr. | Ja | Nr. |
 | 630 | Send alle produkter | Angiv leveringstilstanden til **Forsendelse** for alle linjeelementer. | Ja | Ja | Nr. | Ja\* | Nr. |
 | 629 | Send valgte produkter | Angiv leveringsmåden til **Forsendelse** for de valgte linjer. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 918 | Vis skifter lukket uden kontrol | Få vist en oversigt over skift, der er lukket uden kontrol. | Ja | Ja | Ja | Nr. | Nr. |
 | 115 | Vis kladde | Vis kladde for butikken. Du kan få vist transaktioner, udskrive kvitteringer og gavekvitteringer og tilbagekald ved returnering. | Ja | Ja | Ja | Ja\*\* | Nr. |
 | 802 | Status | Med denne handling kan brugeren oprette eller ændre statusoptællingskladder for fysisk lager eller periodisk optælling. | Ja | Ja | Ja | Nr. | Nr. |
 | 401 | Undermenu | Med denne handling føres brugeren til en anden sammenkædede knapmatrix. | Ja | Ja | Ja | Ja | Nr. |

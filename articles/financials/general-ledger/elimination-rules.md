@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -132,7 +132,7 @@ Din juridiske enhed, juridisk enhed A, sælger dimser til en anden juridisk enhe
 Alle disse transaktioner skaber interne transaktioner, der bogføres på skyldig til- og skyldig fra-konti. Derudover kan disse transaktioner omfatte avance- eller tabsbeløb, når beløbet for det interne salg ikke er lig med kostprisen for solgte varer
 
 ## <a name="set-up-elimination-rules"></a>Konfigurere elimineringsregler
-Når du opretter elimineringsregler i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på eliminering. De fleste kunder navngiver den Samhandelspartner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
+Når du opretter elimineringsregler i Microsoft Dynamics 365 for Finance and Operations, anbefales det, at du opretter en økonomisk dimension, specielt med henblik på eliminering. De fleste kunder navngiver den Samhandelspartner eller lignende. Hvis du beslutter ikke at bruge en økonomisk dimension, skal du have hovedkonti, der er specifikke for kun interne transaktioner. 
 
 Opsætningen for elimineringer findes i området Opsætning i modulet Konsolideringer. Når du angiver en beskrivelse af reglen, skal du vælge det regnskab, som elimineringskladden skal bogføres til. Det skal være et regnskab, hvor **Brug til økonomisk eliminering** er valgt i opsætningen af den juridiske enhed. 
 

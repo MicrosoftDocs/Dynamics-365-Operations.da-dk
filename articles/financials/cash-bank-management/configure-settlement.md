@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I denne artikel beskrives de parametre, der bruges til udligning for både Kreditor og Debitor. 
 
-Følgende parametre påvirker den måde, udligninger behandles på i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
+Følgende parametre påvirker den måde, udligninger behandles på i Microsoft Dynamics 365 for Finance and Operations. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
 
 -   **Automatisk udligning** – Angiv denne indstilling til **Ja**, hvis en transaktion automatisk skal udlignes mod andre åbne poster, når den bogføres. Hvis denne indstilling er angivet til **Nej**, kan brugerne manuelt kan udligne posteringer, når de angiver betalinger eller senere ved hjælp af siden **Udligne transaktioner**.
 -   **Håndtering af kasserabat** – Angiv, hvordan et [kasserabat håndteres, når en faktura er overbetalt](cash-discount-handling-overpayments.md). Kasserabatten for en overbetaling kan reduceres, den kan blive behandlet som en forskel, eller den kan forblive på kontoen for debitoren eller kreditoren.

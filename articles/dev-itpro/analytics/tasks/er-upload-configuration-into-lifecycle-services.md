@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Overføre en konfiguration til Lifecycle Services til elektronisk rapportering (ER)
@@ -92,6 +92,6 @@ I dette eksempel skal du oprette en konfiguration og overføre den til LCS for e
 10. Klik på Åbn.
     * Vælg LCS-lageret, og åbn det.  
     * Bemærk, at den valgte konfiguration vises som et aktiv for det valgte LCS-projekt.  
-    * Åbn LCS ved hjælp af https://lcs.dynamics.com. Åbn et projekt, der tidligere blev brugt til registrering af lageret, åbn 'Aktivbibliotek' for dette projekt, og udvid indholdet af aktivtypen 'GER-konfiguration' – den overførte ER-konfiguration vil være tilgængelig. Bemærk, at den overførte LCS-konfiguration kan importeres til en anden forekomst af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, hvis udbyderne har adgang til dette LCS-projekt.  
+    * Åbn LCS ved brug af https://lcs.dynamics.com. Åbn et projekt, der tidligere blev brugt til registrering af lageret, åbn 'Aktivbibliotek' for dette projekt, og udvid indholdet af aktivtypen 'GER-konfiguration' – den overførte ER-konfiguration vil være tilgængelig. Bemærk, at den overførte LCS-konfiguration kan importeres til en anden forekomst af Microsoft Dynamics 365 for Finance and Operations, hvis udbyderne har adgang til dette LCS-projekt.  
 
 

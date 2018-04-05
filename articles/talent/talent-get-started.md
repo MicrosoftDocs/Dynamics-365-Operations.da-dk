@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b2514b6ff7500863a312ee378be008a7dcfb7438
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Komme i gang med Microsoft Dynamics 365 for Talent
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/07/2018
 I Microsoft Dynamics 365 for Talent er det nemt at ændre brugergrænsefladen og angive indstillinger, der gør programmet mere intuitiv til dine behov. Dette emne indeholder links til emner med oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov. Emnet indeholder også links til oplysninger, der kan hjælpe dig med at finde oplysninger i systemet, effektivt og korrekt. 
 
 > [!NOTE] 
-> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Enterprise edition, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
 ### <a name="personalizing-talent"></a>Tilpasse Talent 
 I de følgende emner beskrives opsætning af mange funktioner i Dynamics 365 for Talent, der gør det lettere for dig at udføre dit arbejde til tiden. 

@@ -1,6 +1,6 @@
 ---
 title: "Planlæg funktioner til den offentlige sektor"
-description: "I denne artikel angives de første trin til opsætning af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: e6c91c81304407ed35bd80464fb986ebacaf37e9
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aa24ef5538d4a38522af2c92d7ad5342efb8070
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/07/2018
 [!include[banner](../includes/banner.md)]
 
 
-I denne artikel angives de første trin til opsætning af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations.
 
 <a name="what-should-i-do-first"></a>Hvad skal jeg først gøre?
 -----------------------

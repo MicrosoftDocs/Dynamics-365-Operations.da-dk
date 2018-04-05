@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 
 1.  Klik på **Design** i Microsoft Dynamics Office-tilføjelsesprogrammet, når du har logget.
 2.  Til headeroplysninger skal du bruge knappen **Tilføj felter**.
-3.  Vælg BudgetPlanJustification for enhedsdatakilden, og klik på **Næste**. **Bemærk:** Denne enhed er påkrævet for alle berettigelsesdokumenter. Andre enheder kan bruges, men overførslen tilbage til Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mislykkes, hvis denne enhed ikke medtages.
+3.  Vælg BudgetPlanJustification for enhedsdatakilden, og klik på **Næste**. **Bemærk:** Denne enhed er påkrævet for alle berettigelsesdokumenter. Andre enheder kan bruges, men overførslen tilbage til Microsoft Dynamics 365 for Finance and Operations mislykkes, hvis denne enhed ikke medtages.
 4.  Tilføj BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter og DocumentNumber-etiketter og værdier i Word-dokumentet. **Bemærk:** Du kan bruge dine egne etiketter i stedet for standardetiketterne, hvis det er nødvendigt.
 5.  Klik på **Udført** for at fuldføre headersektionen.
 6.  Du kan angive detaljer for budgetplanbeløb på linjeniveau ved at klikke på **Tilføj tabel**.

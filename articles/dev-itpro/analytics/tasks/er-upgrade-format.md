@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Opgradere dit format ved at bruge en ny basisversion af formatet til elektronisk rapportering (ER)
@@ -107,7 +107,7 @@ Proseware, Inc. modtog version 1.1 af BACS-konfigurationen (UK fiktiv), der inde
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.1.1. Det betyder, at det er version 1 af det brugerdefinerede BACS-format (UK fiktivt brugerdefineret), der er baseret på version 1 af BACS-formatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Teste det tilpassede format for at generere betalingsfiler
-Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations, Enterprise edition-session. Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.  
+Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations-session. Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Opdatere den eksisterende landespecifikke konfiguration
 Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye lande/områdespecifikke krav til håndtering af formatet på det elektroniske dokument. Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.  
@@ -203,6 +203,6 @@ Proseware, Inc. får besked om, at en ny version 1.2 af BACS-konfigurationen (UK
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.2.2: version 2 af BACS-basisformatet (UK fiktivt brugerdefineret), der er baseret på version 2 af BACS-basisformatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det tilpassede format for generering af betalingsfiler
-Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations, Enterprise edition-session. Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav. Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.  
+Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations-session. Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav. Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.  
 
 

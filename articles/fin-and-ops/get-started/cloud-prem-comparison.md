@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 Dette emne viser, om hver funktion er tilgængelig i disse produkter:
 
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (sky)
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (lokal installation)
++ Dynamics 365 for Finance and Operations (sky)
++ Dynamics 365 for Finance and Operations (lokalt)
 
 I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er angivet for funktionen som helhed. Hvis der er specifikke funktioner, som afviger fra det overordnede område, er funktionerne angivet på en separat linje i kolonnen Funktion.
 
