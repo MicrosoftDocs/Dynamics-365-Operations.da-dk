@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-hr-parameters-across-legal-entities"></a>Konfigurer parametre for personale på tværs af juridiske enheder
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Du skal konfigurere delte parametre for poster, der deles på tværs af virksomheder, herunder stillingsposter. I denne artikel beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder.
 

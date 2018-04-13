@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Oprette en materialeplan for samprodukter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Produktionsplanlæggeren planlægger materialebehovet for varer, der er formelsamprodukter. Det demodatafirma, der bruges til at oprette denne procedure, er USP2.
 

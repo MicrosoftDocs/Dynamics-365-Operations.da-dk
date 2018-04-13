@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Fremdaterede checks
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for Finance and Operations. Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato. Derfor kan checken ikke indløses før den angivne dato.
 
@@ -76,14 +75,14 @@ Hvis din oprindelige check til en kreditor eller fra en debitor går tabt eller 
 <td>Du kan annullere en bogført, fremdateret check i disse situationer: - Checken returneres af banken.
 - Checken anvendes til en forkert faktura.
 - Der modtages et kontantbeløb til dækning af checkbeløbet.
-</td>
-</tr>
-<tr class="even">
-<td>Stands betaling af en fremdateret check.</td>
-<td>Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren. Du kan kun standse betalingen, hvis checken ikke allerede er clearet.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Stands betaling af en fremdateret check.</td>
+  <td>Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren. Du kan kun standse betalingen, hvis checken ikke allerede er clearet.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

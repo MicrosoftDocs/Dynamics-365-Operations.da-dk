@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Startside for økonomistyring
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations. 
 

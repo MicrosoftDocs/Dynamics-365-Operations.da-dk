@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Overføre posteringer til Intrastat
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser dig, hvordan du kan konfigurere Intrastat-parametre og overføre transaktioner til Intrastat. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF.
 

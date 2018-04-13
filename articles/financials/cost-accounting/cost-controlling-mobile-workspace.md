@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Omkostningsstyring** på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 

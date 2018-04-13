@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics-programversion AX 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynami
 | Konfigurere ER-destinationer, så outputresultatet af et format dirigeres til en bestemt destination: fil, e-mail eller arkiv (Microsoft SharePoint-mappe eller Microsoft Azure Storage). | Tidligere, når du kørte en ER-konfiguration, vistes en meddelelsesboks, der krævede brugerhandling for at gemme eller åbne en fil. Nu kan du forudkonfigurere en destination til hver formatkonfiguration og til hver outputkomponent (en mappe eller en fil) separat. Brugere, der har de nødvendige adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>POS – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hvad kan du gøre?**           | **Hvorfor er det vigtigt?**                                                                                                                                                              |
 | Bruge Google Chrome-browseren. | Detailhandlere kan nu starte Cloud POS fra Chrome-browseren og kan opleve alle de funktioner, der er tilgængelige i Microsoft Edge og Internet Explorer-versionen af Cloud POS. |
 
 ## <a name="financial-reporting"></a>Økonomirapportering
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hvad kan du gøre?**                                                | **Hvorfor er det vigtigt?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynami
 | Du kan ikke længere vælge rapportdesignerindstillinger, der ikke er gyldige. | Flere rapportdesignerindstillinger, der blev brugt i versioner af Management Reporter på markedet, gælder ikke for denne version af Dynamics AX. Disse indstillinger er relateret til økonomisk rapport-design, output og sammenkædning. Disse indstillinger er blevet fjernet fra designeren til økonomirapporter for at forhindre brugerfejl. |
 
 ## <a name="financial-management"></a>Økonomistyring
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Hvad kan du gøre?**                                       | **Hvorfor er det vigtigt?**                                       |
 | Generere positive betalingsfiler til kreditorbetalinger. | Der kan genereres positive betalingsfiler for at hjælpe med at forebygge checkbedrageri. |
 
 ## <a name="warehouse-and-production"></a>Lager og produktion
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hvad kan du gøre?**                                                                                                                                                                                                                                                                                                                                                                    | **Hvorfor er det vigtigt?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynami
 | Produktionsordrer med cirkulære strukturer på første niveau af deres styklister er udelukket fra kalkulation på styklisteniveau for materialeressourceplanlægning.                                                                                                                                                                                                                                     | Det er ikke muligt at tildele korrekte styklisteniveauer til produktvarianter for produktionsordrer, der forårsager cirkularitet i styklistehierarkiet.                                                                                                                                                                                                                                                                                                  |
 | Beregn separate styklisteniveauer for materialeressourceplanlægning og omkostningsberegning: • For planlægning af materialeressourcer beregnes styklisteniveauer i den nye tabel **ReqItemLevel**. Afsluttede produktionsordrer ignoreres i beregningen. • Til beregning af produktionsomkostninger beregnes styklisteniveauer i **InventTable**. Afsluttede produktionsordrer medtages i beregningen. | • Når du kører materialeressourceplanlægning, eksempelvis planlægning og udfoldning af varedisponeringsplan, skal kun styklisteniveauer, der bruges til planlægning af materialeressourcer, genberegnes. Med andre ord er der ingen grund til at beregne styklisteniveauer, der anvendes til beregning af efterkalkulation af produktion. • Når du kører efterkalkulationsoperationer, for eksempel lagerlukning, skal kun styklisteniveauer, der anvendes til efterkalkulations-produktionsberegning, genberegnes. |
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
 

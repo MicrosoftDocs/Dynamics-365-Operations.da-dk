@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan indtægt, skat eller afgifter redegøres for på en fritekstfaktura. Alle beløb, der skal tages redegøres for, når fritekstfakturaen journaliseres, har en eller flere regnskabsfordelinger.
 

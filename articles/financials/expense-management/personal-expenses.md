@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Personlige udgifter i en udgiftsrapport
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Under forretningsrejser kan arbejdere undertiden kreditere personaleudgifter på deres firmaets kreditkort. Hvis du ikke definerer en proces til håndtering af personlige udgifter, kan godkendelsesprocessen for udgiftsrapporter blive afbrudt, når arbejderne sender deres specificerede udgiftsrapporter. 
 

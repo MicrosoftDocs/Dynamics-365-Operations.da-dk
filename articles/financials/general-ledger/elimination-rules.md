@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="elimination-rules"></a>Elimineringsregler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om elimineringsregler og de forskellige indstillinger for rapportering om elimineringer.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-benefit"></a>Opret et nyt frynsegode
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Opgaven er beregnet til en leder for kompensation og frynsegoder.
 

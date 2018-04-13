@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserede kreditorbetalinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal de samme betalinger ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
 

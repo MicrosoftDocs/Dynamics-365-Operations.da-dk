@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekræftelse for klyngepluk
 Med pluk af klyngen kan du plukke varer til flere ordrer samtidig. Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af de varer, der føjes til klynger. Du kan kontrollere varer i klyngepluk under klyngeplukprocessen.
@@ -37,7 +37,8 @@ Varekontrol for klyngepluk fungerer på samme måde, som når du kontrollerer va
 1.  I menupunktet på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** > **Lokationsstyring** > **Opsætning** > **Mobilenhed** > **Menupunkter i mobilenhed**.
 2.  Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden.
 
-| Indstilling        | Betegnelse   | 
-| ------------- | ------------- |
-|Bekræftelse af produkt | Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.|
+|        Indstilling        |                                    Betegnelse                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Bekræftelse af produkt | Gør det muligt for dig at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes. |
+
 

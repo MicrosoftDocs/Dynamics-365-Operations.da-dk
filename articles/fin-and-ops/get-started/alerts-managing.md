@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>Batchbehandling til påmindelser
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Påmindelser behandles af funktionen til batchbehandling i Microsoft Dynamics 365 for Finance and Operations. Du skal konfigurere batchbehandling, før påmindelser kan leveres.
 

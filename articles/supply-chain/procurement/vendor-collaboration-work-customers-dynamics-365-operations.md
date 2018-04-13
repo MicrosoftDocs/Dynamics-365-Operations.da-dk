@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 for Finance and Operations. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 

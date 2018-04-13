@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Momsberegningsmetoderne i feltet Grundlag
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 I denne artikel beskrives indstillingerne i feltet Grundlag på siden Momskoder, og hvordan momsen beregnes ud fra den valgte indstilling for en momskode.
 
@@ -53,11 +52,12 @@ Momsmyndighederne har pålagt en vare specielle afgifter. Afgiftsbeløbene føje
 -   MOMS = 25 % ved hjælp af beregningsmetoden Procent af bruttobeløb
 
 Hvis nettobeløbet er 10,00, er AFGIFT 1 1,00 (10,00 x 10 %) og AFGIFT 2 = 2,00 (10,00 x 20 %). Beløbene vil være som følger: Bruttobeløb: Nettobeløb + AFGIFT 1-beløb + AFGIFT 2-beløb (10,00 + 1,00 + 2,00) = 13,00 MOMS = 13,00 x 25 % = 3,25 samlede AFGIFTER og MOMS: 1,00 + 2,00 + 3,25 = 6,25 samlet beløb: 10,00 + 6,25 = 16,25
+
 | **Bemærk!**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kun én skattekode til Grundlag = Procentdel af bruttobeløb kan bruges til en transaktion. Hvis der bestemmes mere end én momskode for en transaktion, vises der en fejl om, at der ikke kan beregnes moms. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Procent af moms
 -----------------------
 
@@ -70,6 +70,7 @@ Anvend følgende momskoder:
 -   MOMS = 25 % ved hjælp af metoden Procent af bruttobeløb
 
 Nettobeløb: 10,00 AFGIFT 1: 10,00 x 10 % = 1,00 AFGIFT 2: 1,00 x 20 % = 0,20 Bruttobeløb: 10,00 + 1,00 + 0,20 = 11,20 MOMS: 11,20 x 25 % = 2,80 Samlet AFGIFT og MOMS: 1,00 + 0,20 + 2,80 = 4,00 Samlet beløb: 10,00 + 4,00 = 14,00
+
 | **Bemærk!**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Moms på moms-beregninger på flere niveauer er ikke mulig. En moms kan ikke beregnes ud fra en moms, der allerede er beregnet ud fra en anden moms. Flere moms på moms-koder på et enkelt niveau kan beregnes for en transaktion. |
@@ -79,6 +80,7 @@ Når du vælger Beløb pr. enhed i feltet Grundlag, beregnes momsen som et fast 
 ### <a name="example"></a>Eksempel
 
 Momskode er sat op som: kr. 1,20 pr. enhed = kasse på salgsfakturalinje 25 kasser med en vare solgt Moms beregnes som 25 x 1,20 = 30,00
+
 | **Bemærk!**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hvis transaktionen angives i en anden enhed end den enhed, der er angivet for momskoden, omregnes den automatisk på grundlag af de enhedsomregninger, der er angivet på siden Enhedsomregninger. |

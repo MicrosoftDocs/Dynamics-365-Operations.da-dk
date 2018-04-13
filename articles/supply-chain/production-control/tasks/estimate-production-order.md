@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Estimere en produktionsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan køre denne procedure ved hjælp af demodatafirmaet USMF eller dine egne datasæt. I begge tilfælde skal du have en åben produktionsordre, der har statussen Oprettet. Dette er den anden procedure ud af syv, der beskriver produktionsordrelivscyklussen.
 

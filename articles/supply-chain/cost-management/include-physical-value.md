@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="include-physical-value"></a>Medtag fysisk værdi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du skal bruge afkrydsningsfeltet Medtag fysisk værdi i oversigtspanelet Lagermodel på siden Varemodelgrupper til at angive, om fysisk opdaterede transaktioner medtages, når varens løbende gennemsnitlige kostpris beregnes.
 

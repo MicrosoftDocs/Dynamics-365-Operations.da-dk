@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vendor-portal-user-security"></a>Brugersikkerhed på leverandørportal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel beskriver, hvordan du konfigurerer sikkerhed for eksterne leverandører, der bruger leverandørportalen. Oplysningerne i dette emne gælder kun for versioner af Dynamics AX fra februar 2016 og maj 2016.
 

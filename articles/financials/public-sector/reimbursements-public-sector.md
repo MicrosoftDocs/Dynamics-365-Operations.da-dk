@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor. 
 

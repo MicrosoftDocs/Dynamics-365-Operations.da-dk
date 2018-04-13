@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Virkninger af afskrivninger med tilbageførsler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives mulige konsekvenser af tilbageførsel af en anlægsaktivtransaktion. 
 

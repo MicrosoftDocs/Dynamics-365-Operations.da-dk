@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Konfigurere momsgrupper og varemomsgrupper
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsgrupper. Momsgrupper er grupper med momskoder, der er tilknyttet debitorer og kreditorer. De er også tilknyttet finanskonti for posteringer, der ikke er bogført for en bestemt kreditor eller debitor.  Varemomsgrupper er grupper af momskoder, der er knyttet til ressourcer som produkter.  Den momssats, der gælder for en bestemt postering, fastlægges af momskoden, som findes i momsgruppen og i varemomsgruppen for posteringen.  Der kan kun beregnes moms, hvis der er valgt en momsgruppe og en varemomsgruppe for hver postering, hvor der skal beregnes eller registreres moms.  
 

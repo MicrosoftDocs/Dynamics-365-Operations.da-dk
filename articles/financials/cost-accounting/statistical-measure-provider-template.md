@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Skabeloner for statistiske dimensionsmedlemmer og providere af statistiske målinger
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En statistisk dimension og dens medlemmer bruges til registrering og kontrol af ikke-pengemæssige poster i omkostningsregnskab. Statistiske dimensionsmedlemmer kan bruges til to formål:
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="outbound-process"></a>Udgående proces
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over den udgående proces i Lagerstyring.
 

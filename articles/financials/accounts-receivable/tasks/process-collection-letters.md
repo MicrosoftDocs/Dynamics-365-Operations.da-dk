@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-collection-letters"></a>Behandle rykkere
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rykkere. Denne opgave bruger demofirmaet USMF.
 

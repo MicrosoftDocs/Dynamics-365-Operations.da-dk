@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startside for omkostningsregnskab
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Køreplan 
 
@@ -37,6 +37,7 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 [![Køreplan for omkostningsregnskab](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Hurtige links
+
 |      |   |
 |------|---|
 |  [Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)  |[Opret dimensioner](cost-elements.md)  |

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-justification-documents"></a>Berettigelsesdokumenter til budgetplanlægning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, som kan forklare, hvorfor det er nødvendigt med et specifikt budget. 
 

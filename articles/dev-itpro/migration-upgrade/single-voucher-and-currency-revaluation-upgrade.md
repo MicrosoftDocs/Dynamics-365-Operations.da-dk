@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="single-voucher-and-currency-revaluation-upgrade"></a>Opgradering for enkelt bilag og værdiregulering af valuta
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Nogle organisationer angiver kladder, der indeholder et enkelt bilag, der har mere end én debitor eller kreditor, og de kører også processen til værdiregulering af udenlandsk valuta for debitorer eller kreditorer. I dette emne beskrives den fremgangsmåde, som disse organisationer skal følge, når de opgraderer til Microsoft Dynamics 365 Operations version 1611.
 

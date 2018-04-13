@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Oprette et hierarki eller en produktklassifikation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter et nyt kategorihierarki og tildeler en varekodehierarkitype. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er beregnet til kategorilederen.
 

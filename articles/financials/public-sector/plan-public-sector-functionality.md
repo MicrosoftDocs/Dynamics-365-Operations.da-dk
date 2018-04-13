@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-for-public-sector-functionality"></a>Planlægge funktioner til den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -69,7 +68,7 @@ Avancerede finansposter Tilknyt afledte økonomiske hierarkier Afledte økonomis
 
 Certificeringstype Bekræfter IO-koder Beløb på indkøbsordrelinjer
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

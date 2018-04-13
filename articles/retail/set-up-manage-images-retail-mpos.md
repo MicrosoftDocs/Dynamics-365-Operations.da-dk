@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurer og håndter billeder for Retail Modern POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).
 
@@ -141,7 +140,7 @@ De produktbilleder, der skal bruges i offlinetilstand, kan konfigureres ved at o
 6.  Mens MPOS er i onlinetilstand, skal katalogjobbet køres i HQ for at sikre, at dataene sendes mindst én gang til offlinedatabasen.
 7.  Sæt MPOS i offlinetilstand. Du skulle nu kunne se det billede, du overførte for det specifikke produkt i HQ. [![offline1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Konfigurere katalog-, kategori-, medarbejder- og debitorbilleder, der skal vises i offlinetilstand for MPOS
 

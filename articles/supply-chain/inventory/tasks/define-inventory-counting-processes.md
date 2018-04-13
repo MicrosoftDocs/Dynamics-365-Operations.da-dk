@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Definere lageroptællingsprocesser
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde. Den viser også, hvordan du aktiverer optællingspolitikker på et lagersted og vareniveau. Disse opgaver udføres normalt af en tilsynsførende på lagerstedet. Det er en forudsætning, at der er nogle eksisterende, frigivne produkter og lagersteder. Hvis du bruger et demodatafirma, kan du køre denne procedure i USMF-firmaet med en hvilken som helst lagervare.
 

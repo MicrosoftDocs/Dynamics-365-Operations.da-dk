@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 
@@ -42,11 +41,11 @@ Budgetplandokumenter kan ses og redigeres ved hjælp af et eller flere layout. H
 1. Åbn **listen over budgetplaner** (**Budgettering** &gt; **Budgetplaner**). 
 2. Klik på **Ny** for at oprette et nyt budgetplandokument. 
 
-  [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Budgetplanliste](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Brug indstillingen på linjen **Tilføj** for at tilføje linjer. Klik på **Layout** for at få vist konfigurationen af dokumentlayout til budgetplan. 
 
-  [![Budgetplantilføjelse](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Budgetplantilføjelse](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Du kan gennemgå layoutkonfigurationen og justere den efter behov. 
 1. Gå til **Skabelon** &gt; **Generer** for at oprette en Excel-fil for dette layout. 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Oprette firmaspecifikke parametre for personale
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Indstillingerne for nogle parametre for personale (HR) deles på tværs af firmaer, mens indstillingerne for andre parametre er firmaspecifikke. Denne artikel forklarer, hvordan du konfigurerer virksomhedsspecifikke parametre for personale.
 

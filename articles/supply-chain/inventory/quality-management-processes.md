@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Processer for kvalitetsstyring
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om kvalitetsstyringsprocessen for ikke-standardiserede produkter. Det beskriver, hvordan du kan bruge funktioner til kvalitetskontrol, definere og vedligeholde uoverensstemmelser og håndtere rettelser.
 

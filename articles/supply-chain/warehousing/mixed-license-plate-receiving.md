@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-license-plate-receiving"></a>Modtagelse af blandede id'er
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med Modtagelse af blandede id'er kan du oprette et id, der består af flere varer, før du registrerer og opretter læg-på-lager-arbejde. 
 

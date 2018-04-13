@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="process-compensation"></a>Kompensationsbehandling
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Med kompensationsbehandling kan du beregne nye grundkompensationsbeløb for dine medarbejdere baseret på justeringer af egenkapital, meritstigningsmål og performance. Dette emne drejer sig om den grundlæggende arbejdsgang ved kompensationsbehandling i forbindelse med faste lønplaner uden indregning af en medarbejderperformance.
 

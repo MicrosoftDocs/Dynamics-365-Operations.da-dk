@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>Opret faste lønstrukturer
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Fast løn henviser til en medarbejders normale bruttoløn eller løn. I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 

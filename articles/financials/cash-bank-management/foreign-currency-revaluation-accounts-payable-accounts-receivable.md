@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Værdiregulering af udenlandsk valuta for kreditor og debitor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor. 
 

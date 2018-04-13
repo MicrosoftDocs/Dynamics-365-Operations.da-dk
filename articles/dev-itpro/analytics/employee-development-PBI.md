@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Power BI-indhold til medarbejderudvikling
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives Microsoft Power BI-indhold til **Medarbejderudvikling**.
 
@@ -45,6 +45,7 @@ De rapporter, der er inkluderet i Power BI-indholdet for **Medarbejderudvikling*
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
+
 | Enhed                   | Indhold                                                                                                   | Relationer med andre enheder |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Kalenderforskydning          | Kalenderforskydninger for at opdele rapporter                                                                          | Tidligere stillingstildeling, stillingstendens, medarbejdertendens, fratrådt medarbejder 

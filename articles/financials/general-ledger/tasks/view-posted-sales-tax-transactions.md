@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Vis bogførte momstransaktioner
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist. Denne opgave bruger demofirmaet USMF.
 

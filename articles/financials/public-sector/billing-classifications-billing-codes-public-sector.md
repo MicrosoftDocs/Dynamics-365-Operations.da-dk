@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer. 
 

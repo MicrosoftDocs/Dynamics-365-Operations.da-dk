@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>Importere ISO20022-filer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan importere betalingsfiler, som har følgende formater:
 
@@ -41,8 +41,8 @@ Følgende forudsætninger skal være opfyldt, for at du kan importere meddelelse
 3. På siden **Debitors bankkonto** skal du oprette en debitorbankkontopost ved at angive følgende oplysninger: IBAN eller bankkontonummer, og SWIFT-kode eller registreringsnummer.
 4. På siden **Bankkonti** skal du oprette bankkonti for juridiske enheder ved at angive følgende oplysninger: IBAN eller bankkontonummer, SWIFT-kode eller registreringsnummer, valuta og adresse.
 
-    > [!NOTE]
-        > Hvis du planlægger at bruge avanceret bankafstemning, skal du på i oversigtspanelet **Afstemning** indstille **Avanceret bankafstemning** til **Ja**. Hvis du planlægger at afstemme en ikke-bogførte importerede betalinger, kan du indstille **Brug bankkontoudtog som bekræftelse på elektroniske betalinger** til **Ja**.
+   > [!NOTE]
+   > Hvis du planlægger at bruge avanceret bankafstemning, skal du på i oversigtspanelet **Afstemning** indstille **Avanceret bankafstemning** til **Ja**. Hvis du planlægger at afstemme en ikke-bogførte importerede betalinger, kan du indstille **Brug bankkontoudtog som bekræftelse på elektroniske betalinger** til **Ja**.
 
 5. Valgfrit: På siden **Tilknytning af transaktionskode** skal du oprette en tilknytning mellem bankposteringskoder i filen og bankposteringstyperne.
 6. Hvis filen indeholder posteringsgebyrer, der skal bogføres sammen med den indgående betaling, kan du oprette et betalingsgebyr på siden **Debitorbetalingsgebyr**. Tilknyt derefter på siden **Betalingsmåder** betalingsgebyret med bankkontoen i opsætningen af betalingsgebyret.

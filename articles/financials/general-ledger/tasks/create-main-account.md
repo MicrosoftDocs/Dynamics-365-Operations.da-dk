@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Oprette en hovedkonto
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan. Denne registrering anvender demofirmaet USMF.  
 

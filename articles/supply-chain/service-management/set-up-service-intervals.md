@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="set-up-service-intervals"></a>Oprette serviceintervaller  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Serviceintervallet angiver den frekvens, hvormed serviceordrelinjer oprettes til serviceaftalelinjer, når du opretter serviceordrer.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avanceret bankafstemning MT940-import – opgraderingstrin for sammensat dataenhed
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Et løbenummer skal føjes til bankkontoudtogets importenhed for at understøtte formatet MT940. 
 

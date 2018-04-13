@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angiv kombinationer af konto og dimension (segmenteret postkontrolelement)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du indtaster kontoen og dimensionskombinationer eller finanskonti. Indtastningshandlingen kaldes ofte segmenteret postkontrolelement.
 
@@ -112,7 +111,7 @@ I følgende tabel beskriver de tastaturgenveje, der kan bruges, når opslaget er
 </tbody>
 </table>
 
- 
+
 
 
 

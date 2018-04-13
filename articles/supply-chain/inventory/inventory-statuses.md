@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-statuses"></a>Lagerstatusser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du kan bruge lagerstatus til at kategorisere og holde styr på lageret.
 

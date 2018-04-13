@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Oversigt over produktionsproces
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over produktionsprocessen. Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Design en konfiguration til at importere data fra en ekstern fil i CSV-format (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at designe konfigurationer til elektronisk rapportering (ER) for at importere data i Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format. I denne procedure skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv". 
 

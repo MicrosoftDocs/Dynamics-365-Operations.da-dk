@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-området for overførsel understøtter stregkodescannere
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kanban-områdetet understøtter scannerinput fra en widget stregkodescanner til at vælge, starte, udfylde og tømme et kanban-job.
 
@@ -38,6 +37,7 @@ Kanban-områdetet understøtter scannerinput fra en widget stregkodescanner til 
 ------------------
 
 På oversigtspanelet **Scanner registrering** kan du vælge den registreringstilstand, der styrer handlingen, når du scanner et kanban-kortnummer eller manuelt skriver tallet i feltet med kanban-kortet.
+
 | Angiv registreringstilstand | Beskrivelse                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Igangsætning                 | Registrerer et kanban-overførselsjob som igangværende.                                                 |

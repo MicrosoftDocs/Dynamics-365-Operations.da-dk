@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="common-sources-of-production-variances"></a>Almindelige kilder til produktionsafvigelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives forskellige kilder, der er typiske for de enkelte typer afvigelser i produktion. 
 

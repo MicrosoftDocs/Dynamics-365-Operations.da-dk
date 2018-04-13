@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balanced-journals-for-interunit-accounting"></a>Afstemte kladder for regnskab mellem enheder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel viser, hvordan en kladde automatisk afstemmes, når en udlignende økonomisk dimension er valgt på siden Finans. 
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="running-average-cost-price"></a>Løbende gennemsnitskostpris
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Under processen til lagerlukning udlignes afgangsposteringer i forhold til tilgangsposteringer på baggrund af den metode til lagerværdi, der er valgt i varens varemodelgruppe. Men inden lagerlukningen køres, beregner systemet en løbende gennemsnitskostpris, der typisk bruges, når afgangsposteringer bogføres.
 

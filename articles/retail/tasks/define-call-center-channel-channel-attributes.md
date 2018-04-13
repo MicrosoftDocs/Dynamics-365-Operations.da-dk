@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Definere callcenter-kanal og kanalattributter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår oprettelse af en ny detailkanal og definition af kanalattributter. Det demodatafirma, der bruges til at oprette denne opgave, er USRT. Denne procedure er beregnet til Retail IT-rollen.
 

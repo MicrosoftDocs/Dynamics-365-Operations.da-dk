@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkende en produktkonfigurationsmodel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kørsel af denne procedure kræver, at der er mindst én tilgængelig produktkonfigurationsmodel. Denne procedure bruger Højttaler af topkvalitet-modellen i demodatafirmaet USMF. Bemærk, at denne model er blevet godkendt, men at proceduren fører dig gennem hele processen.
 

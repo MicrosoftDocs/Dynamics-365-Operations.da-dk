@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Afskrivningsmetoder og -principper
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over afskrivningsprincipper og afskrivningsmetoder, der understøttes af Microsoft Dynamics 365 for Finance and Operations.
 
@@ -62,7 +61,7 @@ Du kan vælge mellem følgende afskrivningsmetoder.
 -   150 % saldoværdi
 -   125 % saldoværdi
 
- 
+
 
 
 

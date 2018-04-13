@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generere og bogføre tilbagevendende fritekstfakturaer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tilbagevendende fakturaer bruges til jævnlig fakturering af kunder for samme beløb. Denne registrering anvender demofirmaet USMF. Registreringen er beregnet til den person, der er ansvarlig for håndtering og behandling af debitorfakturaer.
 

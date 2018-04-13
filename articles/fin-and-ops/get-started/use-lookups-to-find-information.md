@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>Brug opslag til at finde oplysninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.  
 

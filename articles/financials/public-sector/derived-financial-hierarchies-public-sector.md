@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-financial-hierarchies-in-the-public-sector"></a>Afledte finansielle hierarkier i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor. 
 
@@ -47,7 +46,7 @@ En organisation har et medarbejdersundhedsprogram og et medarbejderuddannelsespr
 -   **Konfigurere filterregler** Brug siden **Afledte økonomiske hierarkier** til at oprette filterregler for hovedkonti og økonomiske dimensionsværdier, der er knyttet til noderne "Medarbejdersundhed" og "Medarbejderuddannelse" i det afledte finansielle hierarki for "Medarbejderprogrammer". **Tip!** Hvis du vil angive mere end én dimensionsværdi i et filter, skal du bruge et komma uden mellemrum som skilletegn. Angiv for eksempel 100,110 eller Frynsegoder,Forsikring.
 -   **Analysere bogførte transaktionsdata:** I de filtrerede resultater skal du se på kontonumre og kontooplysninger og oplysninger om økonomisk dimension.
 
- 
+
 
 
 

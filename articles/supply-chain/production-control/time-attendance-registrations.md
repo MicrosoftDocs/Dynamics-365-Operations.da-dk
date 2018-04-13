@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Registrering af tid og fremmøde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbejdere, der registrerer tid, kan angive forskellige former for tidsregistreringer. De kan f.eks. angive, hvornår de kommer og går, og de kan registrere indirekte aktiviteter og fravær. I dette emne beskrives registreringer, deres beregning, godkendelse og anvendelse af arbejdsgang til at føje struktur og automatisk godkendelse til processen til godkendelse af timesedler. 
 
@@ -95,7 +94,7 @@ Du kan oprette en godkendelsesproces som en arbejdsgang, der automatisk godkende
 | Tid og fremmøde - Dage i alt            | Arbejdsgangen validerer registreringer i forhold til f.eks. det forventede antal arbejdstimer om dagen. |                                                                                                                                                                                                                                                       |
 | Kladderegistrering af tid og fremmøde. | Arbejdsgangen validerer hver registreringstype for registreringsdatoen.                           | Tid og fremmøde • Komme • Gå • Fravær • Pause • Switch-kode • Projekt • Projektaktivitet • Indirekte aktivitet • Produktionsjob • Kø før • Konfiguration • Proces • Overlapning • Transportér • Kø efter • Start medhjælp • Stop medhjælp |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Overføre godkendte registreringer
 Når registreringerne er godkendt, kan du overføre dem til et periodisk lønjob. En overført registrering posteres til en aktivitet eller et job, som den vedrører, for eksempel en produktionsordre eller et projekt. Der oprettes løntransaktioner for hver arbejder på basis af registreringerne.  

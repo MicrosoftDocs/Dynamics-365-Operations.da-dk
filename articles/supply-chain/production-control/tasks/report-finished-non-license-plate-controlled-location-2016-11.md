@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>Rapportere som færdig til en id-styret lokalitet 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgavevejledning viser et eksempel på færdigmedling til en lokation, der ikke er id-kontrolleret. En relevant arbejdspolitik er en forudsætning for denne opgave. En tidligere opgavevejledning viste konfigurationen af arbejdspolitikken. Denne opgavevejledning kræver Dynamics AX-program 7.0.1 eller nyere.
 

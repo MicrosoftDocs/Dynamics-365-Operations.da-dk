@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="batch-and-license-plate-confirmation"></a>Bekræftelse af batch og nummerplade
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med batchbekræftelse kan du bekræfte, at den korrekte batch plukkes fra mobilenheden. Ved det oprindelige pluk af arbejde for varer af typen batch over alene, hvor batch over angiver, at batch rangerer højere end sted i søgehierarkiet, skal du kontrollere, svarer det batch, der plukkes, svarer til batchen på arbejdslinjen. 
 

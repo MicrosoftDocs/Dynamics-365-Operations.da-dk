@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definere og vedligeholde kanalklienter, kasseapparater og hardwarestationer
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne dækker, hvordan du forbinder enheder med din Retail POS.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Ofte stillede spørgsmål til produktvariantoversættelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter. 
 
@@ -95,8 +94,7 @@ En kunde ønsker at købe nogle små, røde T-shirts, og navnet på T-shirten sk
 <tbody>
 <tr class="odd">
 <td>Følg disse trin for at angive det foretrukne sprog for en kunde:
-<ol>  
-<li>Klik på <strong>Salg og marketing</strong> &gt; <strong>Generelt</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
+<ol><br/><li>Klik på <strong>Salg og marketing</strong> &gt; <strong>Generelt</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
 <li>Dobbeltklik på en kunde for at åbne siden <strong>Kunder</strong>. Under fanen <strong>Generelt</strong> skal du vælge <strong>sproget</strong> i feltet <strong>Sprog</strong>.</li>
 </ol></td>
 </tr>

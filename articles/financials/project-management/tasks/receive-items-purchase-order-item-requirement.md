@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Modtage varer på indkøbsordre ud fra varebehov
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du modtager varer på en købsordre fra et varebehov.
 

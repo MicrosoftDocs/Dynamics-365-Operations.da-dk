@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="release-production-orders"></a>Frigive produktionsordrer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En frigivet produktionsordre er en ordre, der er godkendt til produktion. Udtrykket Frigivet bruges til at beskrive en tilstand i produktionsordrens levetid, hvor produktionsordren er tilgængelig til udførelse på produktionen og lagerprocesser. 
 

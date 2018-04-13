@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Emballage og gebyrer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Emballagegebyrer betales med bestemte intervaller til et genbrugsfirma. Der betales et beløb pr. vægtenhed for hvert materiale, som en pakkeenhed består af. Emballagegebyrer beregnes og rapporteres, men der bogføres ingen finansposteringer, da gebyrerne ikke anses som afgifter, der skal betales til en myndighed.
 
@@ -63,7 +62,7 @@ Hvis firmaet betaler emballagegebyrerne, skal du ikke angive kundelicensnumrene.
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Udskrive emballagevægt på fakturaer
 Du kan udskrive emballagevægten på fakturaen og angive, hvem der skal betale emballagegebyrerne. I rapporten opsummeres vægten efter emballagekoder.
- 
+
 
 
 

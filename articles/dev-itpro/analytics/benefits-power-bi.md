@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="benefits-power-bi-content"></a>Power BI-indhold for frynsegoder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives Microsoft Power BI-indhold for **Frynsegoder**. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 

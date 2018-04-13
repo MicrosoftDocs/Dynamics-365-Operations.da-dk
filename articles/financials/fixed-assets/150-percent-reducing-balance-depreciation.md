@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 % saldoafskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over afskrivningsmetoden 150 % saldoafskrivning.
 
@@ -68,6 +67,7 @@ Hvis du vælger **Regnskabsår** som afskrivningsår, er følgende indstillinger
 -   **Regnskabsperiode** bogfører det samlede afskrivningsbeløb, der er beregnet for regnskabsåret. Dette beløb periodiseres for de regnskabsperioder, der er defineret på siden **Regnskabskalendere**.
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Eksempel på en 150 % saldoafskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffelsesomkostning               | 11.000 |

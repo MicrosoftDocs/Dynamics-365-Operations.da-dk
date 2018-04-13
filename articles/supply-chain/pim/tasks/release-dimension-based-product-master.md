@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Frigive en dimensionsbaseret produktmaster
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du frigiver en produktmaster, der skal bruges til dimensionsbaserede konfigurationer. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Det er en forudsætning, at du har oprettet en produktmaster med dimensionsbaseret konfigurationsteknologi. Dette er den anden procedure ud af otte, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.
 

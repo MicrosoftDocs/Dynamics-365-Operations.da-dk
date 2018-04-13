@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreements"></a>Oprette serviceaftaler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives det, hvordan du kan bruge funktionerne i modulerne Servicestyring og Projektstyring og regnskab til at oprette serviceaftaler.
 

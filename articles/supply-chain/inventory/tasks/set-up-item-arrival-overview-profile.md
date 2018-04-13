@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="set-up-an-item-arrival-overview-profile"></a>Konfigurere en oversigtsprofil for varemodtagelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave fokuserer på oprettelse af en profil for modtagelsesoversigt. Profilen for modtagelsesoversigt er en samling af regler, der anvendes, når siden Modtagelsesoversigt åbnes af en bruger. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne procedure vil typisk blive udført af en modtagende medarbejder.
 

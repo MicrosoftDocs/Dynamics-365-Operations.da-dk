@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Salgs- og rentabilitetsperformance i Power BI-indhold
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Salgs og rentabilitetsperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 

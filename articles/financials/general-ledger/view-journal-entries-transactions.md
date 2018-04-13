@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Få vist kladdeposteringer og transaktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner. 
 
@@ -55,7 +54,7 @@ Ud over de økonomiske rapporter, kan du bruge følgende finansrapporter til at 
 -   **Transaktionsoprindelse** – Denne transaktionsrapport viser kontoen efter kladde og efter transaktions-, regnskabs- og rapporteringsvaluta. Den viser også hver linje i kladden, der blev brugt som en forskydning.
 
 
-##<a name="see-also"></a>Se også
+## <a name="see-also"></a>Se også
 - [Kontosaldi i Finans](general-ledger-account-balances.md) 
 - [Sporing af regnskabskilde](..\accounts-payable\accounting-source-explorer.md)
 - [Økonomirapportering](financial-reporting-getting-started.md)

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-agreements"></a>Købsaftaler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om købsaftaler. En købsaftale er en kontrakt, som forpligter en organisation til at købe et bestemt antal eller beløb via flere indkøbsordrer over tid. I bytte for denne forpligtelse får køberen specialpriser og rabatter. 
 

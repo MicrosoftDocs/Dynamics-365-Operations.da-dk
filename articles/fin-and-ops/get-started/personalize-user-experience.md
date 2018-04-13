@@ -28,8 +28,7 @@ ms.lasthandoff: 11/20/2017
 
 # <a name="personalize-the-user-experience"></a>Tilpasse brugeroplevelsen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 

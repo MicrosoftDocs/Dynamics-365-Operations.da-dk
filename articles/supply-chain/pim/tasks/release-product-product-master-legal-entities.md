@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Frigive et produkt/en produktmaster til juridiske enheder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til en eller flere juridiske enheder. Demodatafirmaet, der bruges til at oprette denne opgave, er USRT, og opgaven er beregnet til markedsføringschefen og produktdesigneren.
 

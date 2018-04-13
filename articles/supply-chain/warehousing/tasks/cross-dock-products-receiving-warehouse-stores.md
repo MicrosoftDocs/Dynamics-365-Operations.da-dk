@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Levere produkter direkte fra modtagende lagersteder til butikker
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår trin til oprettelse og behandling af en cross-dock med henblik på distribution af produkter fra modtagelokationen af en købsordre til en eller flere butikker. Brugeren kan definere flere konfigurationer og få systemet til at foreslå, hvordan produkter skal distribueres, eller manuelt angive, hvor produkterne skal distribueres til, og hvor meget der bliver distribueret til de enkelte butikker. Proceduren omfatter ikke opsætning af data, der kan bruges i cross-dock'en som f.eks. genopfyldningsregler, organisationshierarkier og vægten af butikken. Proceduren bruger demofirmaet USRT.
 

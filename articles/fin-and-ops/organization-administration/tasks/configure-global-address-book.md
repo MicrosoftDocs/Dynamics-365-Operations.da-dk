@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>Konfiguration af den globale adressebog
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at angive standardværdier og sikkerhedspolitikker for det globale adressekartotek. 
 

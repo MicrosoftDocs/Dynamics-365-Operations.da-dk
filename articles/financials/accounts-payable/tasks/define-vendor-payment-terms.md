@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Definere kreditorbetalingsbetalinger
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Konfigurer betalingsbetingelserne kreditorfakturaer. Denne opgave bruger demofirmaet USMF.
 

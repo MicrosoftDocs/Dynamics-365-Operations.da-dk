@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a>Definere fordelskundeprogrammer
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du konfigurerer et fordelskundeprogram med to niveauer. Proceduren bruger USRT-demodatafirmaet.
 

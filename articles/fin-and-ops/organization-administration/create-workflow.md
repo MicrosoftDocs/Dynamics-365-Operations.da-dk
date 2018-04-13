@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-workflow"></a>Oprette en arbejdsgang
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emner beskriver, hvordan du opretter en arbejdsgang.
 

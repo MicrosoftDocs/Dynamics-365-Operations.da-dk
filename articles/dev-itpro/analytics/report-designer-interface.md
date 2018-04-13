@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-designer-interface"></a>Grænseflade til Report Designer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel forklares, hvordan du navigerer gennem Report Designer, og hvordan du bruger de forskellige indstillinger til at opfylde dine specifikke krav. 
 

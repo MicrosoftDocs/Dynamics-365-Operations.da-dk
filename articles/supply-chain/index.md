@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Startside for supply chain management
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations. 
 

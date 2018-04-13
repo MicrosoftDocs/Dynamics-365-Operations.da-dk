@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturasammenholdelse og interne indkøbsordrer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres.
 

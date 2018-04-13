@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Lager, luk
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Som en del af processen til at udligne afgangsposteringerne med tilgangsposteringer, kan du også vælge at have Finans opdateret for at afspejle de justeringer, der er foretaget.
 

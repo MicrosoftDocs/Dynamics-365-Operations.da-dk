@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Vurdere salgsperformance efter produkt
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail. 
 

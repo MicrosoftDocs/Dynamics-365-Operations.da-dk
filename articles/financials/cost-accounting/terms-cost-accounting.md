@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologi for omkostningsregnskab
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet.
 
@@ -150,14 +149,14 @@ Med fordelingsbaser for formler kan du definere særlige formler for at opnå de
 |  + |  Tilføjelse |
 |  – |  Subtraktion |
 | *  | Multiplikation  |
-    
+
 Traditionelle IF-sætninger understøttes ikke. Du kan dog oprette sætninger og kontrollere, om de er sande.
 
 |  **Kontoudtogsvalidering** | **Resultat**  |
 |---|---|
 |  a > b| Sand  |
 |  a > b |  Falsk |
-    
+
 **Faste omkostninger**
 
 Faste omkostninger vedrører de løbende udgifter til drift af en virksomhed. Det er de omkostninger, der ikke kan knyttes direkte til virksomhedens konkrete aktiviteter. Følgende er eksempler på faste omkostninger:

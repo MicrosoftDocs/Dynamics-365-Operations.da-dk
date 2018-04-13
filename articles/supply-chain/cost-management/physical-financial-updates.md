@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="physical-and-financial-updates"></a>Fysiske og økonomiske opdateringer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over, hvilke typer transaktioner der opskriver eller reducerer lagerantal. 
 

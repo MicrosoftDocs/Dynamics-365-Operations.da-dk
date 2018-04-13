@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="end-a-production-order"></a>Afslut en produktionsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du afslutter en produktionsordre. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Dette er den sidste procedure ud af syv, der beskriver produktionsordrelivscyklussen.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurere importprocessen for avanceret bankafstemning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
 
@@ -57,7 +56,7 @@ Nedenfor vises eksempler på avancerede definitioner af teknisk layout for banka
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
 
- 
+
 
 ## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Konfigurere importen af ISO20022-bankkontoudtog
 Først skal du definere behandlingsgruppen for bankkontoudtogsformatet for ISO20022-bankkontoudtog ved hjælp af dataenhedsstrukturen.

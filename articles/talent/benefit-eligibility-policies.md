@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="benefit-eligibility-policies"></a>Politikker for frynsegodeberettigelse
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om politikker for frynsegodeberettigelse, som gør det lettere at definere, hvem der er berettiget til særlige frynsegoder.
 

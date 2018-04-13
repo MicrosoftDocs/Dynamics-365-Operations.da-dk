@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="batch-attributes"></a>Batchattributter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om batchattributter. Batchattributter er karakteristika for de råvarer og færdigvarer, der udgør lagerbatches. I dette emne forklares også, hvordan du tildeler batchattributter, og hvordan du kan søge efter dem, når du reserverer batchnumre.
 

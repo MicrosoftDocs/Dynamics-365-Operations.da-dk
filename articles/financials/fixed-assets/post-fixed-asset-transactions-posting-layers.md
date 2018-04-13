@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Bogfør anlægsaktivposteringer i posteringslag
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel giver et overblik over bogføringslagets funktionalitet for anlægsaktivposteringer.
 

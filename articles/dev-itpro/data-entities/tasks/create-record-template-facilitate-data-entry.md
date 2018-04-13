@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Oprette en postskabelon for at lette dataindtastning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post. I denne procedure skal oprette en ny post til nye bærbare computere, der skal føjes til dine anlægsaktiver. Denne procedure bruger eksempelfirmaet USMF.
 

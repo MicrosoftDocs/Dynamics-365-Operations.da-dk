@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>Projekttidsregistrering i arbejdsområde til mobile enheder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Tidsregistrering for projekt** på mobilenheder. I dette arbejdsområde kan brugerne angive og gemme tider for et projekt ved hjælp af deres mobilenhed.
 

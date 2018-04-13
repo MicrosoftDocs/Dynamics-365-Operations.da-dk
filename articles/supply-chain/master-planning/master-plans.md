@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-plans"></a>Behovsplaner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Brug forskellige behovsplaner, der understøtter firmaets daglige arbejdsrutiner, simulere forskellige planlægningsstrategier, som du vil overvåge, og implementer en firmapolitik, der f.eks. vedrører intern performance eller kundetilfredshed. 
 

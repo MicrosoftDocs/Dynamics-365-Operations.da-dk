@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskabsåret
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår processen for årsafslutning, som overfører saldi til et nyt regnskabsår.
 

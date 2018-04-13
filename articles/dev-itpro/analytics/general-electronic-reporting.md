@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-reporting-overview"></a>Oversigt over elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen.
 
@@ -287,6 +286,7 @@ Med ER kan du oprette (aflede) en ny komponent fra den aktuelle version af en ko
 Med ER kan du automatisk implementere ændringer af den nyeste version af basiskomponenten i den aktuelle kladdeversion af den afledte komponent. Denne proces kaldes *rebasering*. F.eks. kan en ny lovmæssig ændring, der er indført i den nyeste version af formatet, der blev importeret fra LCS, automatisk flettes med den tilpassede version af dette format af det elektroniske dokument. Ændringerne, der ikke kan flettes automatisk, anses for konflikter. Disse konflikter præsenteres for manuel løsning i designerværktøjet for den pågældende komponent. For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavevejledningen **ER Opgrader format ved at implementere en ny basisversion af formatet** (del af forretningsprocessen **7.5.5.3 Anskaffe/udvikle ændret IT-tjeneste/løsningskomponent (10683)**).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Oversigt over ER-konfigurationer, der leveres i Finance and Operations-løsningen
+
 | Domænespecifikke datamodelkonfigurationer: titel | Domæne                | Datamodel-afhængige formatkonfigurationer: titel | Beskrivelse                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | Revisionsfilmodel                                 | Finansiel revision       |                                                   |                                                                    |

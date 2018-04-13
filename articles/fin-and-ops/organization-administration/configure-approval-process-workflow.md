@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurere en godkendelsesproces i en arbejdsgang
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen.
 
@@ -136,6 +135,7 @@ Det kan være en god ide at udpege en endelig godkender for scenarier, hvor godk
 
 ## <a name="set-a-time-limit"></a>Angive en tidsgrænse
 Udfør følgende trin, hvis godkendelsesprocessen skal fuldføres inden en bestemt tidsgrænse.
+
 | **Bemærk!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De indstillinger, du vælger under udførelsen af disse trin, tilsidesætter de indstillinger, du har valgt i områderne **Tildeling** og **Eskalering** for hvert godkendelsestrin. |

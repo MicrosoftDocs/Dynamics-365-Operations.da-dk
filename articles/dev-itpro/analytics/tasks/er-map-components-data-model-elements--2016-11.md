@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>Tilknytte komponenter af det oprettede format til modelelementer til elektronisk rapportering (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne. Dette format bruges senere til at generere elektroniske dokumenter til behandling af betalinger. I dette eksempel skal du oprette en formatkonfiguration til eksempelfirmaet "Litware Inc." Disse trin kan udføres i alle firmaer, da ER-konfigurationer deles mellem alle firmaer. For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "Opret en formatkonfiguration".
 

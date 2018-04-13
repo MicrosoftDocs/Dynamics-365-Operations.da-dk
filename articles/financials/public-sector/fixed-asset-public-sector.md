@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-in-the-public-sector"></a>Anlægsaktiver i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor. 
 

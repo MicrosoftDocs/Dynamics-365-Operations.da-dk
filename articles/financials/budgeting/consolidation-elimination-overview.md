@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidation-and-elimination-overview"></a>Oversigt over konsolidering og eliminering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder generelle oplysninger om konsoliderings- og elimineringsprocessen. Den indeholder svar på nogle ofte stillede spørgsmål.
 

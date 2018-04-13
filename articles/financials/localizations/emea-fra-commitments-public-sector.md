@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen. 
 

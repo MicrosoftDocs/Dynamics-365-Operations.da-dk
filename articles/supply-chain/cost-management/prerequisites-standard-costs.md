@@ -29,8 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>Forudsætninger for standardomkostninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives de grundlæggende trin til brug af standardomkostninger. Efterfølgende trin afhænger af virksomhedens aktiviteter. Trinene er f.eks. forskellige i et ikke-produktionsmiljø, et produktionsmiljø, der ikke bruger ruter, eller et produktionsmiljø, der bruges ruter. 
 

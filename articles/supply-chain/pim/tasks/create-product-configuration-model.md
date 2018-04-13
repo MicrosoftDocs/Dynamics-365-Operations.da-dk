@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-a-product-configuration-model"></a>Oprette en ny model for produktkonfiguration
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en produktkonfigurationsmodel og indsætter stamoplysninger som f.eks. attributter og underkomponenter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

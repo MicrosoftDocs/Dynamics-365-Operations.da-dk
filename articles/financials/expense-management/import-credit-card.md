@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Importere og vedligeholde kreditkorttransaktioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Udgiftsrelaterede kreditkorttransaktioner kan konfigureres, så de automatisk importeres efter en tilbagevendende tidsplan. Du kan også importere posteringerne manuelt, når det er påkrævet. Kreditkorttransaktionerne importeres via dataenheden Kreditkorttransaktioner.
 

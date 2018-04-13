@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Håndtering af kasserabat i forbindelse med overbetalinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder scenarier, der viser, hvordan en betaling skal håndteres, når kunden skal have en kasserabat, men har betalt for meget. 
 

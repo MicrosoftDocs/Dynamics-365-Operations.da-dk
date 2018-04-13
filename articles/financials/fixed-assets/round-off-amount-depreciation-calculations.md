@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Afrund beløb til afskrivningsberegninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog.
 

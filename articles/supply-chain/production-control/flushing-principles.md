@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Styre forbrug af råmaterialer ved hjælp af rydningsprincipper
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rydningsprincipperne afspejler forskellige forbrugsstrategier for råvarer, der bruges i produktionsprocesser. Forbruget er den proces, der trækker materiale fra den disponible lagerbeholdning og indstiller værdien af de anvendte materialer til **Igangværende arbejde** (IGVA) for produktionsordrer og batchordrer. Råvarerne forbruges normalt fra en lokalitet, der er konfigureret for den proces, der forbruger materialet. Denne lokalitet kaldes produktionens indlagringslokation.
 

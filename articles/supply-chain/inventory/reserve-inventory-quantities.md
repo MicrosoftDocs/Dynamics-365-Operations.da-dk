@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives de forskellige indstillinger, der er tilgængelige for lagerreservation.
 
@@ -50,6 +49,7 @@ Politikker for lagerreservation angives på siden **Varemodelgrupper,** siden **
 ### <a name="policies-on-the-item-model-groups-page"></a>Politikker på siden Varemodelgrupper
 
 Afsnittet **Lagerpolitikker** indeholder følgende reservationspolitikker.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservationspolitik**  | **Beskrivelse**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Afsnittet **Lagerpolitikker** indeholder følgende reservationspolitikker.
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Eksempel på FIFO-datokontrolleret og Bagud fra afsendelsesdato
 
 I dette eksempel findes disponibel lagerbeholdning for varenummer A for tre forskellige batchnumre.
+
 | varenummer | Batchnummer | Mængde | Dato             |
 |-------------|--------------|----------|------------------|
 | A           | 1000         | 5        | 2. februar 2016 |

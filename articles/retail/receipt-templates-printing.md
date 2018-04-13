@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="receipt-templates-and-printing"></a>Kvitteringsskabeloner og udskrivning
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du kan oprette og ændre formularlayout for at styre, hvordan kvitteringer, fakturaer og andre dokumenter udskrives. Microsoft Dynamics 365 for Retail indeholder en formularlayoutdesigner, som du kan bruge til nemt at oprette og redigere forskellige typer formularlayout.
 

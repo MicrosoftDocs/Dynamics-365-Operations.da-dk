@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="authorize-an-adjusted-forecast"></a>Godkende en justeret prognose
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det er ikke alle prognosedata, der skal godkendes med det samme. I denne artikel forklares, hvordan du kan angive den periode, som en prognose er godkendt for. Den forklarer også, hvordan du kan godkende prognosen for specifikke firmaer og prognosemodeller.
 

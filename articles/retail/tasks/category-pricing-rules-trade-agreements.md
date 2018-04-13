@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Regler for kategoriprissætning til oprettelse af samhandelsaftaler
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter salgsprissamhandelsaftaler ved hjælp af en kategoriprissætningsregel. Det demodatafirma, der bruges til at oprette denne opgave, er USRT. Denne opgave er tiltænkt rollen Detailproduktchef.
 

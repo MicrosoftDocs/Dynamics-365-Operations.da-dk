@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 % saldoafskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over afskrivningsmetoden 200 % saldoafskrivning.
 
@@ -70,6 +69,7 @@ Npr du har valgt **Regnskabsår** som afskrivningsår, er følgende indstillinge
 -   **Regnskabsperiode** bogfører det samlede afskrivningsbeløb, der er beregnet for regnskabsåret. Dette beløb periodiseres for de regnskabsperioder, der er defineret på siden **Regnskabskalendere**.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Eksempel på en 200 % saldoafskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffelsesomkostning               | 11.000 |

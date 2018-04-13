@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generere og køre brugsklare rapporter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Brug denne opgaveguide til at køre out of box-rapporter i Headquarters fra forskellige arbejdsområder og forespørgsler og salgsrapporter, der er placeret under Detail og handel.
 

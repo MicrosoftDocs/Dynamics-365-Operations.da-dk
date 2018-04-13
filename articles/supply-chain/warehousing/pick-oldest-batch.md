@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>Pluk det ældste batch på en mobilenhed
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan få adgang til konfigurationen af **Pluk den ældste batch** via en menu på mobilenhed, og det giver dig mulighed at tvinge lagermedarbejdere til eller advare dem mod at plukke det ældste batch på deres aktuelle placering.  
 

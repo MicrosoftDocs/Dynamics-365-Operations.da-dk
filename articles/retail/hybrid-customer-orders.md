@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="hybrid-customer-orders"></a>Hybride kundeordrer
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 En hybrid kundeordre er en enkelt ordre, der indeholder produkter, der kan sælges ud af butikken af kunden, samt produkter, der skal afhentes eller sendes senere.
 

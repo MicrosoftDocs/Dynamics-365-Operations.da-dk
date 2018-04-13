@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Nye opgaveguider (februar 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne vises de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.  De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-bibliotek til Microsoft Dynamics AX og (februar 2016) Introduktion.
 
@@ -50,8 +49,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Konfigurere validering af fakturasammenholdelse for kreditor       | Globalt             |
 | Konfigurer politikker for kreditorfakturaer                            | Globalt             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Debitor
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Gennemgå oplysninger om rykkere                              | Globalt             |
 | Konfigurere og oprette oplysninger om debitorforældelse   | Globalt             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Kontant- og bankstyring
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Udligne en fremdateret check fra en debitor                             | Globalt             |
 | Oversigt over kreditorbetalinger                                              | Globalt             |
 
- 
 
+ 
 ### <a name="compliance"></a>Overholdelse
 
 |                                            |                    |
@@ -108,8 +107,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | **BPM-linje**                               | **Land/område** |
 | Definere revisionspolitikker for kildedokumenter | Globalt             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Omkostningsstyring
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Vis en produktionsordres aktuelle WIP-status                       | Globalt             |
 | Få vist lageropgørelse og KPI efter omkostningsobjekt                     | Globalt             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | GB-00009 Oprette en kreditnota på udligningsrabatbeløbet                                               | Storbritannien                  |
 | GB-00009 Konfigurere parametre for kreditnota for straksbetalingsrabat                                   | Storbritannien                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Udarbejd vision og strategi
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Gør et spørgsmål afhængigt af svaret på det forrige spørgsmål (betinget spørgsmål) | Globalt             |
 | Beregne score for et spørgeskema baseret på procent                                                   | Globalt             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Tilknyt ER-datamodel til markerede datakilder      | Globalt             |
 | Vælg ER-serviceudbyder                      | Globalt             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Udgiftsstyring
 
 |                              |                    |
@@ -298,8 +297,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | **BPM-linje**                 | **Land/område** |
 | Konfigurer udgiftsstyring | Globalt             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Anlægsaktiver
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Opdele et anlægsaktiv                                       | Globalt             |
 | Overfør et anlægsaktiv                                    | Globalt             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Finans
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Vis kladdeposteringer eller transaktioner                              | Globalt             |
 | Få vist relaterede intern bilag fra kladde                    | Globalt             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Styring af menneskelig kapital
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Oprettelse af politikker for frynsegodeberettigelse                             | Globalt             |
 | Konfigurere i9-dokumenttyper                                     | Globalt             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Lagerstyring
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Spor en vare eller råvare                                                     | Globalt             |
 | Overføre fysisk lager på lagerstedet                                  | Globalt             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Produktion
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Overføre materiale med Kanban-job                            | Globalt             |
 | Validér produktionsflow og -version                          | Globalt             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Overordnet planlægning
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Identificer kritiske materialer og leverandørkapacitet | Globalt             |
 | Ændr en behovsprognose manuelt                 | Globalt             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Virksomhedsadministration
 
 |                                           |                    |
@@ -501,8 +500,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Opsætning af elektroniske signaturer              | Globalt             |
 | Opret nummerserier vha. en guide | Globalt             |
 
- 
 
+ 
 ### <a name="planning"></a>Planlægning
 
 |                        |                    |
@@ -510,8 +509,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | **BPM-linje**           | **Land/område** |
 | Fastlæg tilgængelighed | Globalt             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Indkøb og forsyning
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Søg efter kreditorer                                               | Globalt             |
 | Konfigurer et indkøbskategorihierarki                          | Globalt             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Produktoplysninger og -konfiguration
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Frigiv en ..\financial-dimensions\dimension-based produktmaster              | Globalt             |
 | Overfør data for produktmodeller                      | Globalt             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Den offentlige sektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Konfigurere midler til den offentlige sektor                                                         | Globalt             |
 | Konfigurer købsaftaleklassifikationer til den offentlige sektor                             | Globalt             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Detail og handel
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Detailprisjusteringer                                                                  | Globalt             |
 | Gemme konfigurationer for detailopgørelser                                                | Globalt             |
 
- 
 
+ 
 ### <a name="sales"></a>Salg
 
 |                                            |                    |
@@ -642,8 +641,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Send ordrer som direkte leveringer           | Globalt             |
 | Send salgsordrer uden lagersted      | Globalt             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Moms
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Konfigurere A-skat                             | Globalt             |
 | Vis bogførte momstransaktioner                 | Globalt             |
 
- 
 
+ 
 ### <a name="security"></a>Sikkerhed
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Identificere og løse konflikter i opdeling af opgaver | Globalt             |
 | Konfigurer opdeling af opgaver                            | Globalt             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Lagersted og transport
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ APQC Unified-bibliotek (februar 2016) indeholder Opgaveguider, der er beregnet t
 | Konfigurere fragtmænd                                                          | Globalt             |
 | Brug af lastplanlægningspanel til at planlægge laster og leverancer                       | Globalt             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Opgaveguider i Introduktions-bibliotek (februar 2016)
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-linje**                                       | **Land/område** |

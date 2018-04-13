@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="create-ledger-accrual-transactions"></a>Oprette posteringer til periodisering af finans
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide gennemgår oprettelse af posteringer til periodisering af finans, som er baseret på periodiseringsskemaer
 

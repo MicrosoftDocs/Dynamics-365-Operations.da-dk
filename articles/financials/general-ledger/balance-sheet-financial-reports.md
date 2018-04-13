@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Balance - økonomiske rapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter. 
 
@@ -71,7 +70,7 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
     -   **DESC** – En beskrivelse af rækkedefinitionen
     -   **FD** – År til dato-økonomiske data for indeværende år
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

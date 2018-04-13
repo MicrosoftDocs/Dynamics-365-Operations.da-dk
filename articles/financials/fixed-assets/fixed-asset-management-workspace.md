@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Arbejdsområde for styring af anlægsaktiver
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbejdsområdet **Styring af anlægsaktiv** viser oplysninger, der er tilknyttet de anlægsaktiver, der er angivet i systemet. Arbejdsområdet indeholder en oversigtsvisning og analysevisning. Fanen **Mit arbejde** viser en oversigtsfelter, oplysninger om anlægsaktiver og relaterede oplysninger om anlægsaktiver i det aktuelle firma. Du kan også føje analyser til afsnittet med Power BI-analyser direkte i arbejdsområdet. Fanen **Analyser – alle firmaer** bruger funktioner i Microsoft Power BI til at vise grafik, der vedrører anlægsaktiver i alle firmaer.
 

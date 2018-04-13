@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger. 
 

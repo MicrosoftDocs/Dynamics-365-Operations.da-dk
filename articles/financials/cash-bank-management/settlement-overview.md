@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Udligningsoversigt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder generelle oplysninger om udligningsprocessen. Den beskriver de typer transaktioner, der kan udlignes, hvornår og hvordan transaktioner kan udlignes og resultaterne af udligningsprocessen.
 

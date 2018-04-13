@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurere en manuel beslutning i en arbejdsgang
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne forklares det, hvordan du konfigurerer de forskellige egenskaber for en manuel beslutning.
 
@@ -252,73 +251,74 @@ Udfør følgende trin for at angive, hvem en manuel beslutning skal tildeles til
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Angive, hvad der sker, når en beslutning er forsinket.
 Hvis en bruger ikke træffer beslutningen inden for den tildelte tid, er beslutningen forsinket. En beslutning, der er forfalden, kan eskaleres eller tildeles automatisk til en anden bruger. Udfør følgende trin for at eskalere beslutningen, hvis den er forsinket.
 
-1.  Klik på **Eskalering** i venstre rude.
-2.  Markér afkrydsningsfeltet **Brug eskaleringssti** for at oprette en eskaleringssti. De brugere, der er angivet i eskaleringsstien, tildeles automatisk beslutningen. Følgende tabel repræsenterer f.eks. en eskaleringssti.
-    | Forløb | Eskaleringssti            |
-    |----------|----------------------------|
-    | 1        | Knyt til: Anna           |
-    | 2        | Knyt til: Erik            |
-    | 3        | Sluthandling: \[Valg 1\] |
+1. Klik på **Eskalering** i venstre rude.
+2. Markér afkrydsningsfeltet **Brug eskaleringssti** for at oprette en eskaleringssti. De brugere, der er angivet i eskaleringsstien, tildeles automatisk beslutningen. Følgende tabel repræsenterer f.eks. en eskaleringssti.
 
-    I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Erik ikke træffer beslutningen inden for den tildelte tid, vælges **\[[Valg 1\]** automatisk som beslutning.
-3.  Klik på **Tilføj eskalering** for at føje en bruger til eskaleringsstien. Vælg en af indstillingerne i følgende tabel, og udfør derefter de ekstra trin for den pågældende indstilling, før du går videre til trin 4.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Indstilling</th>
-    <th>Brugere, som beslutningen eskaleres til</th>
-    <th>Ekstra trin</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarki</td>
-    <td>Brugere i et bestemt organisationshierarki</td>
-    <td><ol>
-    <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil eskalere beslutningen til.</li>
-    <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som beslutningen kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
-    <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
-    <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
-    </ol></li>
-    <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet beslutningen skal eskaleres til: <ul>
-    <li><strong>Tildel til alle hentede brugere</strong> – Beslutningen eskaleres til alle brugere i intervallet.</li>
-    <li><strong>Tildel kun til den sidst hentede bruger</strong> – Beslutningen eskaleres kun til den sidste bruger i intervallet.</li>
-    <li><strong>Udeluk brugere med følgende betingelse</strong> – Beslutningen eskaleres ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Arbejdsgangsbruger</td>
-    <td>Brugere i den aktuelle arbejdsgang</td>
-    <td><ul>
-    <li>Når du har valgt <strong>Arbejdsgangbruger</strong> på fanen <strong>Arbejdsgangbruger</strong> på listen <strong>Arbejdsgangbruger</strong>, skal du vælge en bruger, der deltager i arbejdsgangen.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Bruger</td>
-    <td>Bestemte Finance and Operations-brugere</td>
-    <td><ol>
-    <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Listen <strong>Tilgængelige brugere</strong> vises alle Finance and Operations-brugere. Vælg de brugere, beslutningen skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Forløb | Eskaleringssti            |
+   |----------|----------------------------|
+   | 1        | Knyt til: Anna           |
+   | 2        | Knyt til: Erik            |
+   | 3        | Sluthandling: \[Valg 1\] |
 
-4.  På fanen **Tidsgrænse** i feltet **Varighed** skal du angive, hvor lang tid brugeren har til at træffe beslutningen. Vælg en af følgende indstillinger:
-    -   **Timer** – Angiv det antal timer, som brugeren har til at træffe beslutningen. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
-    -   **Dage** – Angiv det antal dage, som brugeren har til at træffe beslutningen. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
-    -   **Uger** – Angiv det antal uger, som brugeren har til at træffe beslutningen.
-    -   **Måneder** – Vælg den dag og uge, hvor brugeren senest skal have truffet beslutningen. Det kan være, at brugeren f.eks. skal træffe beslutningen senest fredag i den tredje uge i måneden.
-    -   **År** – Vælg den dag, uge og måned, hvor brugeren senest skal have truffet beslutningen. Det kan være, at brugeren f.eks. skal træffe beslutningen senest fredag i den tredje uge i december.
+   I dette eksempel tildeles den forsinkede beslutning automatisk til Anna. Hvis Anna ikke træffer beslutningen inden for den tildelte tid, tildeles beslutningen automatisk til Erik. Hvis Erik ikke træffer beslutningen inden for den tildelte tid, vælges **\[[Valg 1\]** automatisk som beslutning.
+3. Klik på **Tilføj eskalering** for at føje en bruger til eskaleringsstien. Vælg en af indstillingerne i følgende tabel, og udfør derefter de ekstra trin for den pågældende indstilling, før du går videre til trin 4.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Indstilling</th>
+   <th>Brugere, som beslutningen eskaleres til</th>
+   <th>Ekstra trin</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarki</td>
+   <td>Brugere i et bestemt organisationshierarki</td>
+   <td><ol>
+   <li>Når du har valgt <strong>Hierarki</strong> under fanen <strong>Hierarkivalg</strong> på listen <strong>Hierarkitype</strong>, skal du vælge den type hierarki, du vil eskalere beslutningen til.</li>
+   <li>Systemet skal hente et interval af brugernavne fra hierarkiet. Disse navne repræsenterer de brugere, som beslutningen kan eskaleres til. Udfør følgende trin for at angive startpunktet og slutpunktet for intervallet af de brugernavne, som systemet henter: <ol>
+   <li>Vælg en person på listen <strong>Start fra</strong> for at angive startpunktet.</li>
+   <li>Klik på <strong>Tilføj betingelse</strong> for at angive slutpunktet. Angiv derefter en betingelse for at bestemme, hvor i hierarkiet systemet skal stoppe med at hente navne.</li>
+   </ol></li>
+   <li>På fanen <strong>Hierarkiindstillinger</strong> skal du angive, hvilke brugere i intervallet beslutningen skal eskaleres til: <ul>
+   <li><strong>Tildel til alle hentede brugere</strong> – Beslutningen eskaleres til alle brugere i intervallet.</li>
+   <li><strong>Tildel kun til den sidst hentede bruger</strong> – Beslutningen eskaleres kun til den sidste bruger i intervallet.</li>
+   <li><strong>Udeluk brugere med følgende betingelse</strong> – Beslutningen eskaleres ikke til brugere i intervallet, som opfylder en bestemt betingelse. Klik på <strong>Tilføj betingelse</strong> for at angive betingelsen.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Arbejdsgangsbruger</td>
+   <td>Brugere i den aktuelle arbejdsgang</td>
+   <td><ul>
+   <li>Når du har valgt <strong>Arbejdsgangbruger</strong> på fanen <strong>Arbejdsgangbruger</strong> på listen <strong>Arbejdsgangbruger</strong>, skal du vælge en bruger, der deltager i arbejdsgangen.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Bruger</td>
+   <td>Bestemte Finance and Operations-brugere</td>
+   <td><ol>
+   <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
+   <li>Listen <strong>Tilgængelige brugere</strong> vises alle Finance and Operations-brugere. Vælg de brugere, beslutningen skal eskaleres til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Gentag trin 3 til 4 for hvert bruger, der skal føjes til eskaleringsstien. Du kan ændre brugernes rækkefølge.
-6.  Hvis brugerne i eskaleringsstien ikke træffer beslutningen inden for den tildelte tid, træffes beslutningen automatisk af systemet. Hvis du vil angive den indstilling, som systemet vælger, skal du vælge rækken **Handling** og derefter vælge en indstilling på fanen **Sluthandling**.
+4. På fanen **Tidsgrænse** i feltet **Varighed** skal du angive, hvor lang tid brugeren har til at træffe beslutningen. Vælg en af følgende indstillinger:
+   -   **Timer** – Angiv det antal timer, som brugeren har til at træffe beslutningen. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
+   -   **Dage** – Angiv det antal dage, som brugeren har til at træffe beslutningen. Vælg derefter den kalender, din organisation bruger, og angiv oplysninger om organisationens arbejdsuge.
+   -   **Uger** – Angiv det antal uger, som brugeren har til at træffe beslutningen.
+   -   **Måneder** – Vælg den dag og uge, hvor brugeren senest skal have truffet beslutningen. Det kan være, at brugeren f.eks. skal træffe beslutningen senest fredag i den tredje uge i måneden.
+   -   **År** – Vælg den dag, uge og måned, hvor brugeren senest skal have truffet beslutningen. Det kan være, at brugeren f.eks. skal træffe beslutningen senest fredag i den tredje uge i december.
+
+5. Gentag trin 3 til 4 for hvert bruger, der skal føjes til eskaleringsstien. Du kan ændre brugernes rækkefølge.
+6. Hvis brugerne i eskaleringsstien ikke træffer beslutningen inden for den tildelte tid, træffes beslutningen automatisk af systemet. Hvis du vil angive den indstilling, som systemet vælger, skal du vælge rækken **Handling** og derefter vælge en indstilling på fanen **Sluthandling**.
 
 ## <a name="set-a-time-limit"></a>Angive en tidsgrænse
 Udfør følgende trin, hvis beslutningen skal træffes inden en bestemt tidsgrænse. **Bemærk!** De indstillinger, du vælger i denne procedure, overskriver de indstillinger, du har valgt i områderne **Tildeling** og **Eskalering** på siden.

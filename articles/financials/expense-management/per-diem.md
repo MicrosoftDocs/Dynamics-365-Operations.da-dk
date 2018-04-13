@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Diætregler
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En *diæt* er et beløb, der betales til en arbejder, der rejser i forbindelse med arbejdet. I Udgiftsstyring kan du oprette diætregler for forskellige rejsesituationer. Diætsatser kan baseres på tidspunktet på året, rejselokationen eller begge. Når du opretter en diætregel, kan du angive, at du vil tilbageholde en procentdel af en diætsats, hvis en arbejder modtager ekstra måltider eller tjenester. Du kan også angive et minimum- og maksimumantal timer, en diætsats kan gælde for en arbejders rejse.
 

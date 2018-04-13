@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bonus-depreciation"></a>Straksafskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over funktionerne til bonusafskrivning.
 

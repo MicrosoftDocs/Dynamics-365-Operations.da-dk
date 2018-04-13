@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Reserver den samme batch til en salgsordre
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer et produkt til at tillade reservation af lager i forhold til et enkelt batch af lageret.
 

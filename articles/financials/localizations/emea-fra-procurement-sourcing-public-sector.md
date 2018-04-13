@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a>Indkøb og forsyning i den offentlige sektor i Frankrig
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics. 
 
@@ -60,7 +59,7 @@ Du kan oprette købsaftaleklassifikationer, der føjer administrative felter til
 -   Hvis du vil føje oplysninger om certificeringer for leverandører til købsaftaler, skal du vælge indstillingen **Certificeringer** i købsaftaleklassifikationen. Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.
 -   Hvis du vil føje oplysninger om milepæle og opgaver til købsaftaler, skal du vælge indstillingen **Aktiviteter** i købsaftaleklassifikationen.
 
- 
+
 
 
 

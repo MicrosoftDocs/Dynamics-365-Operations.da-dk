@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-warehouse-work-policies"></a>Konfigurere politikker for lagerstedsarbejde  
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Lagerstedsprocesser omfatter ikke altid lagerstedsarbejde. Ved at definere en arbejdspolitik kan du forhindre oprettelse af arbejde med pluk af råmaterialer og placering af færdigvarer på lager for en række produkter på bestemte lokationer. USMF-demodatafirmaet blev brugt til at oprette denne registrering. Denne opgavevejledning kræver Dynamics AX-program 7.0.1 eller nyere.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Opgraderingsoversigt for afskrivningsmodel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog. Dette emne indeholder nogle overvejelser for opgraderingen. 
 

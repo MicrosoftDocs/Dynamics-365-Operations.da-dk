@@ -29,7 +29,7 @@ ms.lasthandoff: 10/24/2017
 
 # <a name="prevent-discounts-for-retail-products"></a>Forhindre rabatter for detailprodukter
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Der er forskellige grunde til, at detailhandlere ønsker at forhindre, at der kan ydes rabat på nogle produkter, enten fra en kampagne eller under et salg på POS.
 

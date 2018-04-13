@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuel planlægning af lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om kanban-planlægningsområdet, som produktionsplanlæggeren kan bruge til at styre og optimere produktionsplanen for kanban-job.
 

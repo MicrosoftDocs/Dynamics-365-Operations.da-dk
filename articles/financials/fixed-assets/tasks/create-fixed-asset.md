@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Opret et anlægsaktiv
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide anvender demofirmaet USMF.  Det opretter et nyt anlægsaktiv ved hjælp af listesiden Anlægsaktiv.
 

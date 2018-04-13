@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling.
 
 Organisationer kan udstede forudbetalinger til kreditorer for varer eller tjenester, før varerne eller tjenesterne er opfyldt. To metoder kan bruges til at udstede forudbetalinger til kreditorer. Hvis du vil minimere risikoen, kan du spore forudbetalinger ved at definere forudbetalingen i en indkøbsordre. I forbindelse med denne metode skal du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. Denne metode kaldes forudbetalingsfakturering. Organisationer, der ikke ønsker at spore forudbetalinger så tæt, eller som ikke modtager en forudbetalingsfaktura fra deres leverandør, kan bruge kladdebilag for forudbetaling i stedet for metoden til forudbetalingsfaktura. Du kan oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling. I forbindelse med denne metode kan du ikke spore, hvilke forudbetalinger der foretages til en kreditor i forhold til hvilke indkøbsordrer. Du kan dog markere en bogført forudbetaling som udlignet mod en indkøbsordre.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Hvornår skal jeg bruge forudbetalingsfakturering vs. forudbetalinger
+
 | Forudbetalingsfakturering                                                                | Forudbetalinger                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definer forudbetalingsværdi på en indkøbsordre.                                    | Der er ikke defineret en forudbetalingsværdi på en indkøbsordre.                    |

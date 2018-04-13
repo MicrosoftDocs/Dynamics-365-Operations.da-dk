@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="number-sequences"></a>Nummerserier
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer. En masterdatapost eller transaktionspost, der kræver et id, kaldes en *reference*.
 

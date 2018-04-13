@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Regnskabsrapport over resultatopgørelse
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport. 
 
@@ -60,7 +59,7 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
     -   **FD** – Økonomiske data for den aktuelle periode
     -   **FD** – Økonomiske data for år til dato
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

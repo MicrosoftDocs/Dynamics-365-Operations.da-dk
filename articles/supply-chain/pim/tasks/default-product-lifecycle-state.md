@@ -24,7 +24,7 @@ ms.lasthandoff: 02/08/2018
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>Opret en standardstatus for produktlivscyklus
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter en standardstatus for produktlivscyklus, samt hvordan standardstatussen tilknyttes frigivne produkter.
 

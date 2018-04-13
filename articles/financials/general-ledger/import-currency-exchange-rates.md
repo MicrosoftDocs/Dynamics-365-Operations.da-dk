@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-currency-exchange-rates"></a>Importér valutakurser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Hvis en juridisk enhed har modtaget fakturaer i fremmed valuta, er det nødvendigt at konvertere den udenlandske valuta til den lokale valuta. Det betyder, at der kræves opdaterede valutakurser for forskellige valutaer. Dette emne indeholder en oversigt over de nødvendige indstillinger og behandling for import af udenlandsk valutakursreferencer, der udgives via internettet af valutakursudbydere, som den Europæiske Centralbank og den russiske centralbank.
 

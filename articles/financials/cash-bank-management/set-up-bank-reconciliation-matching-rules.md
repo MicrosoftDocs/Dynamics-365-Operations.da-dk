@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Konfigurere sammenholdningsregler for bankafstemning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives det, hvor du konfigurerer sammenholdningsregler for afstemning og sammenholdningsregelsæt for afstemning for at lette bankafstemningsprocessen. Sammenholdningsregler for afstemning er et sæt af kriterier, der anvendes til at filtrere kontoudtogslinjer og bankdokumentlinjer under afstemningsprocessen.
 
@@ -50,7 +49,7 @@ På siden **Sammenholdningsregler for afstemning** kan du vælge, hvilke handlin
 | **Ryd opgørelseslinjer til tilbageførsel** | Opret kriterier for at angive, hvordan opgørelseslinjer til tilbageførsel skal fjernes fra siden **Bankafstemningsarbejdsark**, når sammenholdningsreglen køres. Denne indstilling bruges, når en bankfejl medfører, at der er angivet to kontoudtogslinjer i det importerede kontoudtog, og linjerne skal afstemmes. | **Trin 1**:**Finde opgørelseslinjer til tilbageførsel**– Tilføj udvælgelseskriterier for at vælge tilbageførselslinjer for bankens kontoudtog. Hvis du f.eks. kun vil vælge checks, skal du markere **Banktransaktionskode** i feltet Felt, vælge plustegnet (+) i feltet **Operatør** og derefter angive **Checks** i feltet Værdi. **Trin 2: Søg efter oprindelige opgørelseslinjer** – Du kan tilføje kriterier til sammenholdning af bankdokumentlinjer med kontoudtogslinjer. **Trin 3: Søg efter Finance and Operations-banktransaktioner** – Du kan tilføje kriterier til for at matche Finance and Operations-bankposteringer med bankkontoudtogslinjer. |
 | **Markér nye transaktioner**          | Opret kriterier for at angive, hvordan nye transaktioner skal markeres på siden **Bankafstemningsarbejdsark**, når sammenholdningsreglen køres.                                                                                                                                                                 | **Trin 1: Søg efter opgørelseslinjer**– Tilføj markerede felter for at angive, hvilken kontoudtogslinjer der skal vælges fra siden **Bankafstemningsregneark**. **Trin 2: Søg efter Finance and Operations** – Du kan tilføje udvælgelseskriterier for at søge efter bankdokumentlinjer. Hvis der ikke findes noget bankdokument, markeres en opgørelseslinje som en ny postering.                                                                                                                                                                                                                                             |
 
- 
+
 
 
 

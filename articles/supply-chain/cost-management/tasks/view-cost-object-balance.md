@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-object-balance"></a>Vise saldo for omkostningsobjekt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er beregnet til omkostningscontrolleren.
 

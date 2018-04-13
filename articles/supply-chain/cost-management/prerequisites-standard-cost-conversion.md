@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forudsætninger for en standardomkostningskonvertering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering. 
 

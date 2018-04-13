@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-locations"></a>Lagerlokationer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lagerlokationer bruges sammen med grundlæggende lagersted (WMS I) til at bestemme, hvor varerne opbevares, og hvor varerne plukkes fra i et WMS I-lagersted.
 

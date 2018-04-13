@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Melde en medarbejder til en fast lønplan
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Chefen for kompensation og frynsegoder kan tildele medarbejdere faste lønplaner for at administrere deres grundløn. Denne procedure forudsætter, at en fast lønplan er blevet oprettet og er aktiv, og at der er angivet berettigelsesregler for planen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du begynder proceduren ved at gå til Personale > Arbejdere > Medarbejdere > Kompensation > Fast plan
 

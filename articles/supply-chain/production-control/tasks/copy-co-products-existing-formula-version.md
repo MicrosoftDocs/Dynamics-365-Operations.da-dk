@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Kopiere samprodukter fra en eksisterende formelversion
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kopierer samprodukter fra en eksisterende formelversion til en anden formelversion for et frigivet produkt. Det er en forudsætning, at der er mindst én formelversion tilknyttet samprodukter. Det demodatafirmaet USP2 bruges til at oprette denne procedure.
 

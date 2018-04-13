@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>Skærmlayouts til demodata i MPOS/CPOS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om de skærmlayout, der følger med demodatasæt til POS-oplevelserne i Microsoft Dynamics 365 for Retail.
 

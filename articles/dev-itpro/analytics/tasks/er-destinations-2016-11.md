@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurere destinationer for elektronisk rapportering (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du konfigurerer og bruger forskellige destinationer for outputkomponenter for elektronisk rapportering (ER), f.eks. en mappe eller en fil. Det demodatafirma, der bruges til at oprette denne procedure, er DEMF. Tyskland er landet\området for den juridiske enheds primære adresse, men du kan også bruge enhver juridisk enhed til denne procedure. 
 

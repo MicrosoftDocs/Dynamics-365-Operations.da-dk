@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Vise et relateret internt bilag fra en kladde
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Vinduet med relaterede bilag viser bilaget fra modkontoen, når du bogfører en intern transaktion fra finanskladden.
 

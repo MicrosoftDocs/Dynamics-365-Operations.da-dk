@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-forecast-accuracy"></a>Overvåge prognosenøjagtighed
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Finance and Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne.
 

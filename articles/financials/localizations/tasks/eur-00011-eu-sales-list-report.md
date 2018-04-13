@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-an-eu-sales-list-report"></a>Generere en rapport over EU-listesystem
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører dig gennem oprettelse af EU-salgslisterapporten. Dette omfatter overførsel af samhandelstransaktioner inden for Fællesskabet til EU-listesystemet og procestiden for rapporten. Denne procedure omfatter også oprettelse af en EU-samhandelstransaktion til demonstrationsformål. Du kan finde flere oplysninger om rapportering i EU-listesystemet, herunder de nødvendige forudsætninger, i Dynamics 365 for Finance and Operations Hjælp.
 

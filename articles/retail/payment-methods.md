@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>Betalingsmetoder
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 De enkelte betalingstyper, som en detailhandlende accepterer, skal konfigureres, når systemet konfigureres. I denne artikel beskrives de betalingstyper, som du kan konfigurere, og processen for konfigurationen af dem..
 

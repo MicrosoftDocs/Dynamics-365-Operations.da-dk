@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>Konfigurer oplysninger om skade og sygdom
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver syge som følge af farlige forhold på arbejdspladsen. Du kan bruge siden Skade og sygdom til at angive oplysninger til brug for rapportering af tilskadekomst eller sygdom på arbejdspladsen. Du kan definere typer af tilskadekomst og sygdom, herunder også behandlingstyper, omkostninger og resultater. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

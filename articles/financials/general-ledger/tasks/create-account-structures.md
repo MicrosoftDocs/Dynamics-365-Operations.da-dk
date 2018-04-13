@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-account-structures"></a>Oprette kontostrukturer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide gennemgår oprettelse af en kontostruktur. Der er brugt demodatafirmaet USMF.
 

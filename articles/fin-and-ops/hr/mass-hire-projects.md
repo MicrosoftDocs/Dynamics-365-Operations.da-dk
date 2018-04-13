@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Masseansættelsesprojekter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Masseansættelsesprojekter tillader personalespecialister at oprette flere stillinger og effektivt ansætte arbejdere til disse stillinger.
 
@@ -94,7 +93,7 @@ På siden **Masseansættelsesprojekt** skal du klikke på **Åbn projekt** eller
 </tbody>
 </table>
 
- 
+
 
 
 

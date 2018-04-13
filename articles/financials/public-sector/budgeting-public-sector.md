@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="budgeting-in-the-public-sector"></a>Budgetlægning i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
 

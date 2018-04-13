@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planlægning i blandet tilstand: kombinere separate, proces og lean forsyning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om planlægning i blandet tilstand. Du kan udforme din forsyningskæde ud fra materialeflowet i planlægning i blandet tilstand. Microsoft Dynamics 365 for Finance and Operations sørger for, at materialeflowet følger dine modeller, uanset den valgte forsyningspoliti (kanbans, produktionsordrer, indkøbsordrer, batchordrer eller overflytningsordrer). 
 

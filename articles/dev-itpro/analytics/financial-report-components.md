@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>Komponenter i økonomisk rapport
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I denne artikel forklares, hvordan du organiserer og låser rapportkomponentgrupper. 
 
 Designfilosofien bag designeren til økonomirapporter er at opdele oplysninger i det mindste komponent eller dokumentkomponent og derefter mixe og matche komponenterne efter behov. Derfor er rapportformateringen adskilt fra de økonomiske data, og du kan ændre designet af en rapport uden at ændre de økonomiske data i Microsoft Dynamics ERP-systemet. Ved hjælp af denne metode med byggesten, kan du kombinere tekst, beløb og beregninger for at producere de rapporter, du har brug for. Desuden fremmer denne fleksibilitet kreativitet ved at gøre det nemt for dig at se dine handlinger på forskellige måder. De enkelte komponenter i en rapportdefinition svarer til et tredimensionalt regneark, men de er mere effektive. En rapportdefinition angiver den rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition, der skal bruges til rapporten. Den indeholder også oplysninger om, hvor rapporten, der genereres, skal gemmes, og hvordan den formateres. 
 
 ## <a name="building-blocks-of-a-report"></a>Komponenterne i en rapport
+
 | Komponent            | Betegnelse                     | Hvis du vil have flere oplysninger                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Definition af række            | En rækkedefinition definerer de beskrivende linjer (f.eks. lønninger eller salg) i en rapport. Den viser også de segmentværdier eller dimensioner, der indeholder værdierne for hvert linjeelement og indeholder en rækkeformateringer og beregninger.                                                    | [Rækkedefinitioner](row-definitions-financial-reporting.md)                       |

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-guarantee"></a>Garantier
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om garantier. I en garanti accepterer en bank at betale et bestemt pengebeløb til en person, hvis en af bankens kunder misligholder en betaling eller en forpligtelse til den pågældende person. 
 

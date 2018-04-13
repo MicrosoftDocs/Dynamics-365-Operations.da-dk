@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Oprette en operationsressource
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En operationsressource udfører aktiviteterne i et projekt eller en produktionsproces. Denne procedure viser, hvordan du definerer en operationsressource. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.
 

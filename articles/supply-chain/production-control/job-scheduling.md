@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Finplanlægning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om jobplanlægning, som er en mere detaljeret form for planlægning end grovplanlægning. Du kan bruge finplanlægning til at planlægge individuelle job eller værkstedsordrer og til at styre produktionsmiljøet.
 

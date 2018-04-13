@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Velkommen til Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til medarbejderforhold i din organisation. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
 

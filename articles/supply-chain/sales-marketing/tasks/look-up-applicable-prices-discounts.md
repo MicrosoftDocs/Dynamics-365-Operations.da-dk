@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå gældende priser og rabatter op
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt, der er gyldig for en bestemt debitor, uden at oprette en salgsordre. Proceduren fører dig gennem et specifikt eksempel, og du skal følge eksemplet med USMF-demofirmaet for at vælge de nødvendige værdier.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Administrere opdateringer af standardomkostninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Opdateringer til standardomkostningsoplysninger kan administreres ved hjælp af to forskellige metoder – metoden med én version eller metoden med to versioner. 
 

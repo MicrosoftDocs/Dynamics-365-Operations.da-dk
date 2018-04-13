@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="define-coverage-rules-for-items"></a>Definere dækningsregler for varer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure viser, hvordan du opretter disponeringsregler og tilsidesætter disponeringsindstillinger for et bestemt element. Det viser også, hvordan du angiver standardindstillinger for lager.
 

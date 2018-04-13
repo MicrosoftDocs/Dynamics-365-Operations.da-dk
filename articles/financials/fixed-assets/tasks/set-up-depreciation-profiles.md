@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Konfigurere og oprette afskrivningsprofiler
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Afskrivningsprofiler bestemmer typen og hyppigheden af afskrivningen for et aktiv.   Denne registrering bruger USMF-demofirmaet og rollen revisor.
 

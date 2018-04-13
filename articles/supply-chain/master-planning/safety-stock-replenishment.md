@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Opfyldning af sikkerhedslager for varer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Et sikkerhedslager er en ekstra beholdning af en vare, der opbevares på lageret, for at reducere risikoen for, at varen bliver udsolgt fra lageret. Sikkerhedslageret bruges som et bufferlager i tilfælde af indgående salgsordrer, hvor leverandøren ikke er i stand til at levere de ekstra varer, der kræves for at overholde kundens ønskede afsendelsesdato. Når sikkerhedslageret bruges til at opfylde en salgsordre, reduceres sikkerhedslageret. Du kan bruge Varedisponering til automatisk at føre lageret tilbage til niveauet for sikkerhedsbeholdningen.    
 

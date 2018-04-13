@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Generere et overførselsdokument for en intern lageroverførsel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed. Denne procedure er kun tilgængelig for juridiske enheder med en primær adresse i Litauen. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Litauen. Før du kan udføre denne procedure, skal du fuldføre proceduren "Konfiguration af overførselsdokumenter for transport af varer inden for virksomheden". Denne procedure er kun beregnet til lagerregnskabsmedarbejdere. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Arbejdsrutineoptager og Hjælp til POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne beskriver, hvordan du bruger Arbejdsrutineoptager i Retail Modern POS og Cloud POS.
 

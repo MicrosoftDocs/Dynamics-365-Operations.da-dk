@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Vælge datamodeldefinition under oprettelse af format til elektronisk rapportering (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv. 
 

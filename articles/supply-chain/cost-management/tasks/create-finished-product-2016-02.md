@@ -24,7 +24,7 @@ ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-a-finished-product-february-2016-only"></a>Oprette et færdigt produkt (kun februar 2016)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave drejer sig om oprettelse af et færdigt produkt. Det er den første opgave i styklisteberegningsserien. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
 

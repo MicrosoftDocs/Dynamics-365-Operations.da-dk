@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne giver en oversigt over kreditor. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="project-invoicing"></a>Projektfakturering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over projektfakturering for tids- og materialeprojekter og fastprisprojekter. Det omfatter oplysninger om fakturaforslag (foreløbig fakturaer), fakturastyring, acontofakturering, kreditorfakturering og kreditnotaer.
 

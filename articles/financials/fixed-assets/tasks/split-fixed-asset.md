@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="split-a-fixed-asset"></a>Opdele et anlægsaktiv
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide opdeler en procentdel af et anlægskartotek til et nyt anlægskartotek.  Den bruger rollen Revisor og USMF demodata.
 

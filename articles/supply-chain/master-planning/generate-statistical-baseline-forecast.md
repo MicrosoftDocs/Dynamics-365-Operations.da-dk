@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om de parametre og filtre, der bruges i beregningen af behovsprognoser. 
 

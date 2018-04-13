@@ -25,7 +25,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a>Oprette og tildele en handelspartnerkode i den offentlige sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med. Kundeposten for agenturet skal være oprettet, før du kan udføre denne opgave. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

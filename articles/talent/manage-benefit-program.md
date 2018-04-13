@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-manage-a-benefits-program"></a>Definere og administrere et frynsegodeprogram
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Personale indeholder en række værktøjer, der kan bruges til at konfigurere og vedligeholde frynsegoder, fradrag og arbejderes kompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte. Dette emne indeholder oplysninger om, hvordan du konfigurerer og administrerer frynsegoder.
 

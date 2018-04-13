@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-benefit-expiration-dates"></a>Administrere frynsegoders udløbsdatoer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet eller forlænget og administrere tilmeldingsdatoerne for arbejdere, der er tilmeldt frynsegodet. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

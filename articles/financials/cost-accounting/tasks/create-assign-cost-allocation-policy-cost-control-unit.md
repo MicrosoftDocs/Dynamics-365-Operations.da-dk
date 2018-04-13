@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Oprette og tildele omkostningstildelingspolitik til en omkostningskontrolenhed
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan bruge denne procedure til at oprette og tildele en politik for omkostningsfordeling og de tilsvarende regler til en omkostningskontrolenhed. Denne registrering bruger USP2-demodatafirmaet.
 

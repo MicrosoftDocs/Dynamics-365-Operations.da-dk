@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-leave-of-absence"></a>Administrere orlov
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører gennem oprettelse af poster for medarbejderorlov. Du kan spore orlovstid af årsager, som omfatter medicinske, uddannelsesmæssig eller forældrerelaterede aktiviteter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="standard-cost-conversion-overview"></a>Oversigt over standardomkostningskonvertering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel giver et overblik over processer, som kan hjælpe dig med at konfigurere og køre en standardomkostningskonvertering. Trinnene skal udføres, når du har udført forberedelserne til en standardomkostningskonvertering. 
 

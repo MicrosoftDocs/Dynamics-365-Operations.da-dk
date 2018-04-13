@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correct-a-free-text-invoice"></a>Rette en fritekstfaktura
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du retter en fritekstfaktura, der er bogført, og genudsteder den som en rettet faktura.
 

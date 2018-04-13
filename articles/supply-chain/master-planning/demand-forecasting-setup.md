@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne omhandler de konfigurationsopgaver, du skal udføre, for at forberede behovsprognoser.  
 

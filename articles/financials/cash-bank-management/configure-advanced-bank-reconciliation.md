@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advanced-bank-reconciliation-setup-process"></a>Konfigurationsproces for avanceret bankafstemning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  I denne artikel forklares opsætningsprocesserne ved afstemning.  
 

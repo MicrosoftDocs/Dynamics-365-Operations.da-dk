@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Konfigurere containerlogik
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure beskriver, hvordan du automatiserer containeriseringen af laster i Lagerstedsstyring. Automatiseret containerisering opretter containere og plukker arbejde for leverancer, når en bølge behandles og arbejdslinjer kan opdeles i mængder, der passer til containerne. Det gør det lettere for lagermedarbejdere at plukke varer direkte i den valgte container. Sammenlignet med den manuelle pakningsproces, udføres opgaver såsom oprettelse af containere, tildeleling af varer og lukning af containere automatisk af systemet. Denne procedure bruger USMF-demofirmaet og udføres af en lagerchef.
 

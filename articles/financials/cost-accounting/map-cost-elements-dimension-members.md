@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Oprette en værdistrøm
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Værdistrømme er driftsenheder, som grupperer et eller flere produktionsflow. Hvis du vil definere et produktionsflow, skal først du definere en værdistrøm.
 

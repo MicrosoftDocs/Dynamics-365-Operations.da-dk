@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="partial-location-cycle-counting"></a>Delvis cyklusoptælling for sted
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cyklusoptællingsplaner guider de faktiske optællingshandlinger. Du kan anmode om, at kun specifikke produkter og produktvarianter optælles i stedet for alle disponible lagerbeholdninger på en lokalitet.
 

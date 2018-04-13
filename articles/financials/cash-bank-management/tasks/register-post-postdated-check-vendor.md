@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrere og bogføre en fremdateret check for en kreditor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan registrere detaljerne omkring en fremdateret check, før du udsteder checken til en leverandør ved brug af kladdebilaget. Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser. Inden du registrerer og bogfører en fremdateret check fra en kunde, skal du udføre følgende opgave: 
 

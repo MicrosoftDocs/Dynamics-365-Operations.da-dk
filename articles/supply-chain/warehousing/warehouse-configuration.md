@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Konfiguration af lagersted
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 

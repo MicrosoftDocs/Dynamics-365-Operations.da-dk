@@ -27,8 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="use-workflows-to-manage-employee-information"></a>Brug af arbejdsgange til at administrere medarbejderoplysninger
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 I dette emne forklares, hvordan du kan bruge arbejdsgangsfunktionen i Personale til at administrere medarbejderoplysninger. Du kan f.eks. knytte en arbejdsgang til en stilling og konfigurere et godkendelsesforløb, der startes, når medarbejderne ændrer deres post.
 

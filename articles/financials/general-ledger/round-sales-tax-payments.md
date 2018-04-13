@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsafregninger og afrundingsregler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel forklares opsætning af afrundingsregel for momsmyndigheder og afrunding af momssaldoen under jobbet Afregn og bogfør moms.
 

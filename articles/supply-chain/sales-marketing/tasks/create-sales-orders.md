@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Opret salgsordrer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en salgsordre. Du kan bruge denne procedure i demodatafirmaet USMF. Salgsordrer oprettes typisk af en salgsordreprocessor. 
 

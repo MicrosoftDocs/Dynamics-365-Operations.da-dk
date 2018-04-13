@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Status for produktlivscyklus 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant. Status for produktlivscyklus defineres af brugeren, typisk en produktchef eller produktmasterdatachef. Bestemte virksomhedsprocesser, f.eks. ved varedisponering, kan blive påvirket af en bestemt livscyklusstatus.   
- 
+
 Et frigivet produkt eller en produktvariant kan knyttes til en status for produktlivscyklus, der dokumenterer, hvilken livscyklusstatus et bestemt produkt eller en produktvariant har. Du kan definere et ubegrænset antal produktlivscyklusstatusser ved at tildele et tilstandsnavn og en beskrivelse. Du kan vælge én livscyklusstatus som standardstatus for nye frigivne produkter. Frigivne produktvarianter nedarver deres status for produktlivscyklus fra deres frigivne produktmaster ved oprettelse. Når du ændrer livscyklusstatussen for en frigivet produktmaster, kan du vælge at opdatere alle eksisterende varianter, der har samme oprindelige status.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Opret en ny status for produktlivscyklus 
- 
+
 - Når du vil oprette en ny status for produktlivscyklus, skal du afspille eller læse opgaveguiden **Opret en ny status for produktlivscyklus**. 
 
 -  Når du vil oprette en standardstatus for produktlivscyklus, skal du afspille eller læse opgaveguiden **Opret en standardstatus for produktlivscyklus**.   
@@ -73,7 +72,7 @@ Du kan finde detaljerede oplysninger om, hvordan du kan bruge statusser for prod
 
 > [!NOTE]
 > Af hensyn til ydeevnen anbefales du at knytte alle forældede frigivne produkter eller produktvarianter, især når du arbejder med ikke-genanvendelige produktkonfigurationsvarianter, til en status for produktlivscyklus, der er deaktiveret for varedisponering.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Standardoverførsel, - import og -eksport 
 
 Statusser for produktlivscyklus understøttes ikke af dataenheder, og livscyklusstatussen kan ikke indstilles til en variabel status via de frigivne produktdataenheder.
@@ -81,18 +80,18 @@ Statusser for produktlivscyklus understøttes ikke af dataenheder, og livscyklus
 -  Ved overførsel fra tidligere frigivelser er livscyklusstatussen for alle produkter og produktvarianter tom.  
 -  Når frigivne produkter importeres via en dataenhed, anvendes standardlivscyklusstatussen ved oprettelse.  
 -  Når frigivne produktvarianter importeres via en dataenhed, importeres produktlivscyklusstatussen for den frigivne produktmaster.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Finde forældede produkter og produktvarianter 
- 
+
 Du kan køre en simuleringsanalyse for at finde forældede frigivne produkter eller produktvarianter og derefter opdatere deres status for produktlivscyklus. For at finde forældede produkter skal du afspille og læse opgaveguiden **Find forældede produktvarianter, og tildel en status for produktlivscyklus**. Denne opgaveguiden viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter. Guiden viser også, hvordan du kan få vist resultaterne af simuleringen og vurdere, hvor mange produkter og produktvarianter der skal knyttes til en ny status for produktlivscyklus, når du kører opdateringen uden simulering.  
- 
+
 Hvis du kører analysen i en simuleringstilstand, vises de produkter og produktvarianter, der er identificeret som forældet, i en bestemt formular, hvor de nemt kan evalueres. Analysen søges efter posteringer og bestemte masterdata for at identificere produkter, der ikke er behov for i en variabel periode, og som ikke har nogen masterdata, der kan medføre behov. Nye frigivne produkter inden for en variabel periode kan udelukkes fra analysen. Når analysesimuleringen returnerer det forventede resultat, kan brugeren køre analysen og indstille en ny status for produktlivscyklus til alle produkter, der er angivet som forældede af analysen.  
- 
+
 > [!NOTE]
 > Bemærk, at alle analyser og opdateringer skal udføre inden for den samme juridiske enhed.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Kriterier for valg og opdatering af frigivne produkter eller produktvarianter 
- 
+
 Brug følgende kriterier til at vælge og opdatere frigivne produkter og produktvarianter: 
 
 -    Statussen for produktlivscyklus for produktet eller produktvarianten skal være forskellig fra den nye ønskede status. 

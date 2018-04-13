@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkende kreditorer til specifikke produkter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du godkender kreditorer for bestemte produkter. Dette gør det muligt at styre, hvilke kreditorer der kan bruges, når produktet føjes til en indkøbsordre. Du kan bruge denne procedure på demofirmaet USMF eller dine egne data. Denne opgave vil typisk blive udført af en indkøbschef.
 

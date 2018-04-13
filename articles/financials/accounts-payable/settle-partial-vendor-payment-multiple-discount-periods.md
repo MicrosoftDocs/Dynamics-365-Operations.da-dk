@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Udlign en delvis kreditorbetaling, der omfatter flere rabatperioder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel gennemgår et scenarie, hvor der foretages flere delbetalinger for en kreditor, der tilbyder flere kasserabatter. 
 

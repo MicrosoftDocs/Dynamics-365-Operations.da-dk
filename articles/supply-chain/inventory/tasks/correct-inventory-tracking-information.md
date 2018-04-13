@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="correct-inventory-tracking-information"></a>Rette oplysninger om lagersproing
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde for at korrigere lagersporingsoplysninger. I dette eksempel vil vi opdatere oplysningerne for en batchstyret vare ved at ændre en forkert registreret batch til en anden batch. Du kan gennemgå denne procedure i demodatafirmaet USPI eller bruge dine egne data. Hvis du bruger dine egne data, skal du have en vare, der er batchaktiveret, og den må ikke være placeringsstyret. Du skal også have oprettet et lagerkladdenavn for lageroverførsler. Disse opgaver udføres normalt af en lagermedarbejder.
 

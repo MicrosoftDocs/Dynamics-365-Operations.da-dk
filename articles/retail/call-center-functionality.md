@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="call-center-functionality"></a>Callcenter-funktionalitet
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Retail.
 

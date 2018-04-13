@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en direkte levering for en salgsordre. Du bruger direkte levering, når du vil levere varer til kunden direkte fra leverandøren, i stedet for at sende dem til dit eget lager først. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. For at fuldføre den anden underopgave "Oprette direkte leveringer fra panelet" skal du sikre dig, at der for den vare, du vælger på salgsordren, er angivet en standardleverandør i oversigtspanelet Køb i Frigivne produktmaster.
 

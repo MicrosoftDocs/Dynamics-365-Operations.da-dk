@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Reduktionsnøgler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder eksempler på, hvordan du konfigurerer en reduktionsnøgle. Den indeholder oplysninger om de forskellige indstillinger for reduktionsnøglen og resultaterne af hver. Du kan bruge en reduktionsnøgle til at definere, hvordan du kan reducere budgetbehov.
 
@@ -39,17 +38,19 @@ Denne artikel indeholder eksempler på, hvordan du konfigurerer en reduktionsnø
 
 Dette eksempel viser, hvordan en reduktionsnøgle reducerer efterspørgselsprognosebehovet i henhold til de procenter og tidsperioder, der er defineret i reduktionsnøglen.
 
-1.  På siden **Reduktionsnøgler** skal du angive følgende linjer.
-    | Byttepenge | Enhed  | Procent |
-    |--------|-------|---------|
-    | 1      | Måned | 100     |
-    | 2      | Måned | 75      |
-    | 3      | Måned | 50      |
-    | 4      | Måned | 25      |
+1. På siden **Reduktionsnøgler** skal du angive følgende linjer.
 
-2.  Knyt reduktionsnøglen til varedisponeringsgruppen.
-3.  Vælg **Procent - reduktionsnøgle** i feltet **Reduktionsprincip** på siden **Behovsplaner**.
-4.  Opret en efterspørgselsprognose på 1000 enheder pr. måned.
+   | Byttepenge | Enhed  | Procent |
+   |--------|-------|---------|
+   |   1    | Måned |   100   |
+   |   2    | Måned |   75    |
+   |   3    | Måned |   50    |
+   |   4    | Måned |   25    |
+
+
+2. Knyt reduktionsnøglen til varedisponeringsgruppen.
+3. Vælg **Procent - reduktionsnøgle** i feltet **Reduktionsprincip** på siden **Behovsplaner**.
+4. Opret en efterspørgselsprognose på 1000 enheder pr. måned.
 
 Hvis du kører hovedplanlægning pr. 1. januar, forbruges efterspørgselsprognosebehovet i overensstemmelse med den procentdel, som du konfigurerer på siden **Reduktionsnøgler**. Følgende behovsantal overføres til behovsplanen.
 
@@ -88,20 +89,21 @@ Hvis du bruger samme efterspørgselsprognose på 1.000 enheder pr. måned anvend
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Eksempel 3: Posteringer – reduktionsprincip for dynamisk budgetperiode
 I de fleste tilfælde konfigureres systemer, så posteringer reducerer efterspørgselsprognose inden for specifikke budgetperioder: uger, måneder og så videre. Disse perioder er defineret i reduktionsnøglen. Men tiden mellem to linjer i behovsprognosen kan også *omfatte* en periode.
 
-1.  Opret en behovsprognose for følgende datoer og antal.
-    | Dato       | Behovsprognose |
-    |------------|-----------------|
-    | 1. januar  | 1.000           |
-    | 5. januar  | 500             |
-    | 12. januar | 1.000           |
+1. Opret en behovsprognose for følgende datoer og antal.
 
-    I dette budget er der ikke en klar periode mellem budgetdatoerne: mellem første og anden dato er der et interval på fire dage, og mellem den anden og tredje dato er det et interval på syv dage. Disse forskellige intervaller er dynamiske perioder.
-2.  Opret salgsordrelinjer på følgende måde.
-    | Dato                             | Salgsordremængde |
-    |----------------------------------|----------------------|
-    | 15. december forrige år | 500                  |
-    | 3. januar                        | 100                  |
-    | 10. januar                       | 200                  |
+   | Dato       | Behovsprognose |
+   |------------|-----------------|
+   | 1. januar  | 1.000           |
+   | 5. januar  | 500             |
+   | 12. januar | 1.000           |
+
+   I dette budget er der ikke en klar periode mellem budgetdatoerne: mellem første og anden dato er der et interval på fire dage, og mellem den anden og tredje dato er det et interval på syv dage. Disse forskellige intervaller er dynamiske perioder.
+2. Opret salgsordrelinjer på følgende måde.
+   | Dato                             | Salgsordremængde |
+   |----------------------------------|----------------------|
+   | 15. december forrige år | 500                  |
+   | 3. januar                        | 100                  |
+   | 10. januar                       | 200                  |
 
 Budgettet reduceres på følgende måde:
 

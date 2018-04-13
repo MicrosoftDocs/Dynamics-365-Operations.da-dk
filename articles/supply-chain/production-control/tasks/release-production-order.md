@@ -24,7 +24,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="release-a-production-order"></a>Frigive en produktionsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du frigiver en produktionsordre. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Dette er den fjerde procedure ud af syv, der beskriver produktionsordrens livscyklus.
 

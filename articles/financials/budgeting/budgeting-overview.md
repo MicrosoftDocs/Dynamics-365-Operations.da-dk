@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Startside for budgettering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over budgetteringsfunktionens komponenter, budgetteringsværktøjer og rapporteringsfunktioner i Finance and Operations. 
 

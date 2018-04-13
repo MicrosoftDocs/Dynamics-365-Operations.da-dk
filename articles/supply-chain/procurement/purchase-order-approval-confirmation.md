@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="approve-and-confirm-purchase-orders"></a>Godkend og bekræft indkøbsordrer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 I denne artikel beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO'er.
 

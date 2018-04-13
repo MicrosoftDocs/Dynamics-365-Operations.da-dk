@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="generate-affordable-care-act-reports"></a>Generere Affordable Care Act-indberetninger
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Funktionen kan hjælpe arbejdsgivere med at spore de oplysninger, der indberettes i blanketterne 1095-B og C 1095, som et led i **Employer Mandate**-delen af Affordable Care Act. Bemærk, at denne funktion er kun aktiveret for juridiske enheder i USA.
 

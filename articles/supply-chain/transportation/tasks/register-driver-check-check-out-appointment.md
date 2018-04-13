@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Registrere chaufførs ind- og udtjekning for en aftale
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du registrerer chaufførens check-in og chaufførens check-ud. Denne konfiguration vil normalt blive udført af en transportkoordinator. Du kan bruge denne procedure i USMF-demodatafirmaet. Før du starter, skal der være en oprettet en aftale for en last. Hvis du vil oprette en aftale, kan du køre proceduren "Konfigurer en aftale for en last" som en forudsætning.
 

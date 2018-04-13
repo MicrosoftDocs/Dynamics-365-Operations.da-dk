@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Tilknytte et brændstofindeks med en fragtmand som tillægsgebyr
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne vejledning viser, hvordan du opretter en tilbehørstildeling, tillægsgebyr for fragtmand, tillægsmaster for brændstoftillæg og knytter en fragtmands brændstofindeks til en fragtmand. Du skal have oprettet en fragtmands brændstofindeks, før du kører denne guide. Du kan bruge guiden "Konfigurer brændstofindeks for en fragtmand" for at gøre dette. Disse konfigurationsopgaver udføres typisk af en logistikchef. De demodata, der bruges til at oprette denne procedure, er USMF.
 

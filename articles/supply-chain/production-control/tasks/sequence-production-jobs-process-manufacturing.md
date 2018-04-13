@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Arrangere produktionsjob i forløb til procesproduktion
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure bruger malingsprodukter som et eksempel til at vise, hvordan du sorterer ordreforslag i overensstemmelse med prioriteten af farve og pakkestørrelse. Det demodatafirma, der bruges til at oprette denne procedure, er USPI. Denne procedure er beregnet til produktionsplanlæggeren.
 

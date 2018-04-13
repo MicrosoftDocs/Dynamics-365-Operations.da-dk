@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="maintain-planned-orders"></a>Vedligehold ordreforslag
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om, hvordan du administrerer planlagte ordrer. Den beskriver, hvordan du kan opdatere status for planlagte ordrer, autorisere dem og filtrere for planlagte ordre, der har samme status som en valgte planlagt ordre.
 

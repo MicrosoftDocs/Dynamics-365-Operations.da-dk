@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="calculate-material-consumption"></a>Beregne materialeforbrug
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om forskellige indstillinger, der er relateret til beregning af materialeforbrug. 
 

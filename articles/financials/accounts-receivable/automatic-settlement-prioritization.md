@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk udligning og prioritering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 

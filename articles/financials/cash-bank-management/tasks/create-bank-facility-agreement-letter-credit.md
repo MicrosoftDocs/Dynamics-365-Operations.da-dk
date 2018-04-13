@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Oprette en bankfacilitetsaftale for en remburs
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave fører dig gennem oprettelse af en bankfacilitetsaftale til behandling af en remburs. Du vil konfigurere bankfaciliteter og posteringsprofiler før denne opgave.  Denne opgave bruger demofirmaet "USMF".  
 

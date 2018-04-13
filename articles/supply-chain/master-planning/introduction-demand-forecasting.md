@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="demand-forecasting-overview"></a>Oversigt over behovsprognose
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Behovsprognoser bruges til at forudsige uafhængigt behov fra salgsordrer og afhængigt behov ved ethvert afkoblingspunkt for debitorordrer. De forbedrede reduceringsregler for behovsprognoser i er en ideel løsning til massetilpasning.
 

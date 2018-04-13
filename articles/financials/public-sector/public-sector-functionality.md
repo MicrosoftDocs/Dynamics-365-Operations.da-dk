@@ -29,30 +29,29 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor. 
 
 Brug følgende funktion til den offentlige sektor for at overholde reglerne, bestemmelserne og kravene til rapportering for organisationer, der servicerer offentlige myndigheder. De berørte forretningsprocesser omfatter: 
 
--   Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.
--   Foreløbige budgetter, fordelinger og forpligtelser.
--   Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.
--   Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.
--   Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.
+- Regnskab over midler, afledte finansielle hierarkier og bogføringsdefinitioner for debitor og finans.
+- Foreløbige budgetter, fordelinger og forpligtelser.
+- Faktureringskoder, faktureringsklassifikationer, samhandelspartnerkoder og brugerdefinerede felter til fritekstfakturaer.
+- Behandling af årsafslutning for Finans, som omfatter behæftelser og forpligtelser på indkøbsordrer.
+- Elektroniske betalinger til kreditorer, signatursider til betalingsrapporter og spærring af fakturabetaling.
 
- Du kan finde flere oplysninger under følgende emner:
+  Du kan finde flere oplysninger under følgende emner:
 
--   [Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)
--   [Kreditorer i den offentlige sektor](accounts-payable-public-sector.md)
--   [Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
--   [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
--   [Anlægsaktiver i den offentlige sektor](fixed-asset-public-sector.md)
--   [Franske lovmæssige funktioner](../localizations/emea-fra-public-sector-accounting.md)
--   [Finans i den offentlige sektor](general-ledger-public-sector.md)
--   [Indkøb og forsyning i den offentlige sektor](procurement-sourcing-public-sector.md)
--   [Sikkerhedsroller i den offentlige sektor](security-roles-public-sector.md)
+- [Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)
+- [Kreditorer i den offentlige sektor](accounts-payable-public-sector.md)
+- [Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
+- [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
+- [Anlægsaktiver i den offentlige sektor](fixed-asset-public-sector.md)
+- [Franske lovmæssige funktioner](../localizations/emea-fra-public-sector-accounting.md)
+- [Finans i den offentlige sektor](general-ledger-public-sector.md)
+- [Indkøb og forsyning i den offentlige sektor](procurement-sourcing-public-sector.md)
+- [Sikkerhedsroller i den offentlige sektor](security-roles-public-sector.md)
 
 \* Gælder kun, hvis organisationen er i Frankrig.
 

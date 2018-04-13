@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="personnel-actions-faq"></a>Personalehandlinger [Ofte stillede spørgsmål]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger. Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale. Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.
 
@@ -64,9 +64,9 @@ Ja, kan du slette personalehandlinger, der har status **Kladde**, **Fejl**, **Ly
 Hvis en anmodning om personalehandling mislykkes, skal du følge disse trin for at løse fejlen og sende anmodningen igen:
 
 > 1. I **Handlingsrude** skal du klikke på knappen **Fejltekst** for at få vist den meddelelsestekst, der beskriver problemet.
-
+> 
 > 2. I **Handlingsrude** skal du klikke på **Genaktiver** for at indlæse de seneste oplysninger og igen indstille **Kladde** som status for personalehandlingen.
-
+> 
 > 3. Ret fejlen, og klik derefter på **Fuldfør** eller **Send**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Hvad sker der med en personalehandling, der bruger en arbejdsgang, når den endelige godkendelse er fuldført?

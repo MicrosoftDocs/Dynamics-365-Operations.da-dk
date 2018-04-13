@@ -28,10 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Værdiregulering af valuta i et konsolideret regnskab
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Når du konsoliderer data fra én regnskabsvalutaen til en anden, skal du stadig køre værdiregulering af valuta, hvis der sker en ændring i valutakursen, så dine kontosaldi værdireguleres korrekt. Når du oprindeligt konsoliderer dataene, skal du bruge fanen **Valutaomregning** for at markere de første valutakurser til oversættelse under konsolideringsprocessen. Når en ny valutakurs er angivet (f.eks. i den næste måned), skal du værdiregulere kontosaldiene. Urealiserede gevinster eller tab opdateres derefter baseret på den nye valutakurs og dato. Følgende eksempel illustrerer regnskabsposterne, der er oprettet under processen.
 
@@ -52,6 +49,7 @@ Når du konsoliderer data fra én regnskabsvalutaen til en anden, skal du stadig
 | 10/11/2015 | 130100 – Debitorer | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Valutakurser
+
 | Fra valuta | Til valuta | Startdato | Valutakurs |
 |---------------|-------------|------------|---------------|
 | EUR           | USD         | 10/1/2015  | 200           |

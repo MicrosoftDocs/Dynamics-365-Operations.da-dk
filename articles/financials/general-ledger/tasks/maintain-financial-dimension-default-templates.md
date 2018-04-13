@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Vedligehold standardskabeloner for økonomiske dimensioner
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du konfigurerer standardskabeloner for økonomiske dimensioner. Skabelonerne kan bruges til hurtigt at distribuere beløb på kildedokumenterne.
 

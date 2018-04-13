@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Administrere elementer, der er udlånt til arbejdere
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Udlånsemner er poster, der hjælper ledere med at holde styr på de fysiske emner, som virksomheden udlåner til sine arbejdere. 
 
@@ -51,7 +50,7 @@ Ledere kan få vist udlånte emner for deres direkte rapporter. De kan også få
 
 Hvis et emne bliver beskadiget eller mistes, skal du angive en fiktiv tilbageleveringspost. Derefter skal du enten slette emnet eller beholde det i oversigten og ændre beskrivelsen for at angive, at emnet ikke er tilgængeligt.
 
- 
+
 <a name="see-also"></a>Se også
 --------
 

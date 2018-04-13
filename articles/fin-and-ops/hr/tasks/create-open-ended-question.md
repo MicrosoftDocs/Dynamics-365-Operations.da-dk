@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-open-ended-question"></a>Oprette et åbent spørgsmål
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Åbne spørgsmål giver svarpersoner mulighed for at give deres egne svar. Du kan kontrollere, om dette svar er et tal, decimal, dato, kommentar og så videre. Denne fremgangsmåde fører dig gennem processen med at oprette en bestemt type spørgsmål, åbne spørgsmål. Du kan begynde denne procedure ved at gå til Spørgeskema > Design > Spørgsmål. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

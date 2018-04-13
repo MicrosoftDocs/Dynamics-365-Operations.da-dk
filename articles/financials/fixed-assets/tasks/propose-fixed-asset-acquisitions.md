@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anskaffelser af anlægsaktiver
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
 

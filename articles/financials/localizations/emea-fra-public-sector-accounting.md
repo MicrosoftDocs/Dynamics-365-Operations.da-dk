@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="public-sector-accounting-in-france"></a>Regnskab i den offentlige sektor i Frankrig
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives regnskaber for den franske offentlige sektor.
 

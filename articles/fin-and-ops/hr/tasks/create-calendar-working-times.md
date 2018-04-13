@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>Oprette en kalender og generere arbejdstider
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kalendere beskriver kapacitet og arbejdstider for operationsressourcer. Denne procedure hjælper dig med at definere en arbejdskalender, der er baseret på en arbejdstidsskabelon. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.
 

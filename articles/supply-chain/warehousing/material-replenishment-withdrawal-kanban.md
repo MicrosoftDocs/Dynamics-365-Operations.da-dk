@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Genopfyldning med udbetalingskanbans
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan udbetalingskanban bruges til materialegenopfyldning under produktionsaktiviteter.
 

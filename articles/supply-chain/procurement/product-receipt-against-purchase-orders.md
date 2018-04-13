@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Produktkvittering sammenlignet med indkøbsordrer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurere adgangsrettigheder for en controller for omkostningsobjekt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at konfigurere adgangsrettigheder for en omkostningsobjektcontroller. Denne registrering bruger USP2-demodatafirmaet.
 

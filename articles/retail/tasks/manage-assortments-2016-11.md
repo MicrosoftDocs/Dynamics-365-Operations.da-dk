@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a> Administrere sortimenter  
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du kan oprette og udgive et nyt produktudvalg og bruge demodatafirmaet USRT. Denne procedure kræver Dynamics AX-program 7.0.1 eller nyere, og Dynamics AX-platform 7.1.  
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a>Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler. 
 

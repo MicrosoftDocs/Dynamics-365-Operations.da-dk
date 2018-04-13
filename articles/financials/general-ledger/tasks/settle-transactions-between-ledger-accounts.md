@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Udligne posteringer mellem finanskonti
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du udligner posteringer mellem finanskonti og annullerer en finansudligning. Proceduren bruger USMF-demodatafirmaet.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-purchasing-policies"></a>Konfigurere indkøbspolitikker
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du opretter indkøbspolitikker, der skal justeres med dine forretningsprocesser til indkøb. Før du kan oprette indkøbspolitikker, skal du konfigurere parametrene for indkøbspolitikker. Det er muligt at oprette, redigere og trække en indkøbspolitik tilbage, men du kan ikke slette en indkøbspolitik. Denne procedure vil typisk blive udført af en indkøbschef. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.
 

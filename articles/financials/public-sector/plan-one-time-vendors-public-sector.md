@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
 
@@ -88,6 +87,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 
 
 **Distributionssektion**
+
 | Felt                                                | Oplysninger                                  |
 |------------------------------------------------------|------------------------------------------|
 | Antal                                               | Regnskabsfordelingslinjenummer      |

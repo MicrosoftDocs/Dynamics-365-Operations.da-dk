@@ -29,8 +29,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="routes-and-operations"></a>Ruter og operationer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af ruter og operationer. En rute definerer processen til fremstilling af et produkt eller en produktvariant. Den beskriver hvert trin (operation) i produktionsprocessen, og den rækkefølge, som disse trin skal udføres i. For hvert trin definerer ruten også de krævede operationsressourcer, den krævede opstillingstid og operationstid, og hvordan omkostningerne skal beregnes.
 

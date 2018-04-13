@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Økonomiske dimensioner og hovedkonti på et højre mod venstre-sprog
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives nogle af de implementeringsbeslutninger, der skal overvejes, når du bruger et højre mod venstre-sprog, og du skal oprette økonomiske dimensioner og hovedkonti.
 

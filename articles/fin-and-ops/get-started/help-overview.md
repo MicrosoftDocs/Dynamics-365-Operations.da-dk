@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="help-system-overview"></a>Oversigt over Hjælp-system
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation. 
 

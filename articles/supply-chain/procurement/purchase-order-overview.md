@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>Oversigt over indkøbsordrer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Denne artikel indeholder generelle oplysninger om indkøbsordrer (IO'er) og links til andre artikler, der er relateret til de forskellige stadier, som en indkøbsordre gennemgår.
 

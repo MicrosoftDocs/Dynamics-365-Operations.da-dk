@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="access-rights-of-a-cost-object-controller"></a>Adgangsrettigheder for en controller til et omkostningsobjekt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbejdsområdet **Omkostningsstyring** er et centralt punkt, hvor ledere kan få vist performance for deres omkostningsobjekter. I dette arbejdsområde kan ledere bruge omkostningsregnskabsdata, selvom de ikke er bogholdere. Ledere skal af sikkerhedsmæssige årsager kun have adgang til at se de omkostningsregnskabsdata, der er relateret til de specifikke omkostningsobjekter, som de er ansvarlige for.
 

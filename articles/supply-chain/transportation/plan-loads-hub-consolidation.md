@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-loads-using-hub-consolidation"></a>Planlægge belastninger ved hjælp af hubkonsolidering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives funktionen til konsolidering af leverancer på en hub, når du leverer varer fra forskellige lagersteder til samme kunde, eller når du modtager varer fra flere leverandører på det samme lagersted.
 

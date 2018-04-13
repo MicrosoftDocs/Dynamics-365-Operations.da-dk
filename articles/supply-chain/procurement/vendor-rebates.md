@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Kreditorrabatter
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
 

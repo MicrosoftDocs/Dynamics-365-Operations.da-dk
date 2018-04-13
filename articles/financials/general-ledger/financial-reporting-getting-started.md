@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-reporting"></a>Økonomirapportering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 for Finance and Operations, og hvordan du bruger funktionerne til økonomirapportering. Den indeholder en beskrivelse af de økonomirapporter, der findes.
 

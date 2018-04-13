@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="set-up-sales-commission-rules"></a>Konfigurere salgsprovisionsregler
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan konfigurere og aktivere beregning og sporing af salgsprovision. Proceduren viser, hvordan du kan oprette både debitor- og vareprovisionsgrupper, og hvordan du derefter sammenkæder en valgt kunde og et produkt til de respektive grupper. Disse grupper bruges derefter i opsætningen af provisionsberegningen til at oprette en debitor-, vare- og sælgerkombination, der skal matches af en salgsordre for at berettige sælgerne til en provision. Oprettelse af debitor- og vareprovisionsgrupper er valgfri, da beregningen af provisionen også kan udføres for en individuel debitor og/eller vare. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.
 

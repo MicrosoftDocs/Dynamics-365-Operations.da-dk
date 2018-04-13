@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>Definere nye job
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hjælp af manuel indtastning og kopier fra skabelon-funktionalitet. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til personalespecialisten.
 

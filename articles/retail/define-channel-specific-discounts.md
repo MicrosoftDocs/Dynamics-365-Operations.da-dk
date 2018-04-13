@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Definere kanalspecifikke rabatter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Detailhandlere angiver ofte forskellige rabatter i forskellige kanaler. Dette emne gennemgår de begreber, du skal kende for at oprette en rabat til en bestemt kanal. 
 
@@ -61,7 +60,7 @@ Følgende eksempel illustrerer de opgaver, der er involveret i oprettelse af en 
 4.  Når du har oprettet den nye **I skole igen**-rabat, skal du klikke på **Prisgrupper** øverst på **Rabat** siden. Siden **Detailprisgrupper** åbnes. Klik derefter på **ny** , og vælg prisgruppen **Horsens-PG**.
 5.  Du kan nu aktivere rabatten og sende den til kanalen.
 
- 
+
 
 <a name="see-also"></a>Se også
 --------
