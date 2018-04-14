@@ -20,19 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9cb4bded4b8d841c6d164e6b8ded2cb3fb4d0978
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="e5fcb-105">Produktdimensioner</span><span class="sxs-lookup"><span data-stu-id="e5fcb-105">Product dimensions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="e5fcb-106">Der er fire produktdimensioner – farve, konfiguration, størrelse og type.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="e5fcb-107">Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="e5fcb-108">Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 
@@ -51,6 +50,7 @@ ms.lasthandoff: 02/07/2018
 -   <span data-ttu-id="e5fcb-129">Klik på **Administration af produktoplysninger** &gt; **Frigivne produkter**.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-129">Click **Product information management** &gt; **Released products**.</span></span> <span data-ttu-id="e5fcb-130">Vælg en produktmaster.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-130">Select a product master.</span></span> <span data-ttu-id="e5fcb-131">Klik på **Produkt** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-131">On the **Action Pane**, click **Product**.</span></span> <span data-ttu-id="e5fcb-132">Klik på **Produktdimensioner** i gruppen **Produktmaster**.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-132">In the **Product master** group, click **Product dimensions**.</span></span>
 
 <span data-ttu-id="e5fcb-133">Antallet af varianter, der kan oprettes for en vare, er begrænset af antallet af mulige kombinationer af produktdimensioner.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-133">The number of variants that you can create for an item is limited by the number of possible product dimension combinations.</span></span>
+
 | <span data-ttu-id="e5fcb-134">**Tip!**</span><span class="sxs-lookup"><span data-stu-id="e5fcb-134">**Tip**</span></span>                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="e5fcb-135">Når du bruger et produkt på for eksempel en ordrelinje, skal du vælge produktdimensioner for at identificere den produktvariant, som du vil arbejde med.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-135">When you use a product on, for example, an order line, you select the product dimensions to identify the product variant that you want to work with.</span></span> |

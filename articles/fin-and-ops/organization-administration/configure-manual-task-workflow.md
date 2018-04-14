@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09bd86ff7a4aa8ae64cfa4a38fba643f9117d6eb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8cda2ea6e75b3d33160599cc4334a7b4d2612815
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-a-manual-task-in-a-workflow"></a><span data-ttu-id="b9460-103">Konfigurere en manuel opgave i en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="b9460-103">Configure a manual task in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b9460-104">I dette emne forklares det, hvordan du konfigurerer egenskaberne for en manuel opgave.</span><span class="sxs-lookup"><span data-stu-id="b9460-104">This topic explains how to configure the properties for a manual task.</span></span>
 

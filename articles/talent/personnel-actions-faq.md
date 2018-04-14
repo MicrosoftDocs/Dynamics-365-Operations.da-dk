@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="b70cf-104">Personalehandlinger [Ofte stillede spørgsmål]</span><span class="sxs-lookup"><span data-stu-id="b70cf-104">Personnel actions [FAQ]</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="b70cf-105">Dette emne indeholder svar på spørgsmål, som du kan have, hvis din organisation bruger personalehandlinger.</span><span class="sxs-lookup"><span data-stu-id="b70cf-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="b70cf-106">Personalehandlinger er yderligere trin, du skal udføre, når du udfører bestemte opgaver i forbindelse med personale.</span><span class="sxs-lookup"><span data-stu-id="b70cf-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="b70cf-107">Eksempler på opgaver, der kan kræve personalehandlinger, er, når du opretter nye stillinger, ændrer eksisterende stillingsværdier, ansætter nye medarbejdere, overflytter arbejdere, ændrer arbejderes løn, ændrer stillingsopgaver eller opsiger arbejdere.</span><span class="sxs-lookup"><span data-stu-id="b70cf-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 03/07/2018
 <span data-ttu-id="b70cf-140">Hvis en anmodning om personalehandling mislykkes, skal du følge disse trin for at løse fejlen og sende anmodningen igen:</span><span class="sxs-lookup"><span data-stu-id="b70cf-140">If a personnel action request fails, follow these steps to resolve the error and resubmit the request:</span></span>
 
 > 1. <span data-ttu-id="b70cf-141">I **Handlingsrude** skal du klikke på knappen **Fejltekst** for at få vist den meddelelsestekst, der beskriver problemet.</span><span class="sxs-lookup"><span data-stu-id="b70cf-141">On the **Action Pane**, click the **Error text** button to view the message text that describes the problem.</span></span>
-
+> 
 > 2. <span data-ttu-id="b70cf-142">I **Handlingsrude** skal du klikke på **Genaktiver** for at indlæse de seneste oplysninger og igen indstille **Kladde** som status for personalehandlingen.</span><span class="sxs-lookup"><span data-stu-id="b70cf-142">On the **Action Pane**, click **Reactivate** to load the latest information and set the status of the personnel action back to **Draft**.</span></span>
-
+> 
 > 3. <span data-ttu-id="b70cf-143">Ret fejlen, og klik derefter på **Fuldfør** eller **Send**.</span><span class="sxs-lookup"><span data-stu-id="b70cf-143">Resolve the error, and then click **Complete** or **Submit**.</span></span>
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a><span data-ttu-id="b70cf-144">Hvad sker der med en personalehandling, der bruger en arbejdsgang, når den endelige godkendelse er fuldført?</span><span class="sxs-lookup"><span data-stu-id="b70cf-144">What happens to a personnel action that uses workflow when the final approval is completed?</span></span>

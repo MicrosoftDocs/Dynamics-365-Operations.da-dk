@@ -18,17 +18,16 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 426e0f8096a65b2233cf04663c38335ee6e9bb2d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9d889b7a64cff763c31b4375fd0e1553a4beeeb
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="performance-management-overview"></a><span data-ttu-id="457db-104">Oversigt over performancestyring</span><span class="sxs-lookup"><span data-stu-id="457db-104">Performance management overview</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="457db-105">Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef.</span><span class="sxs-lookup"><span data-stu-id="457db-105">The performance management process lets employees document and discuss their performance with their manager.</span></span> <span data-ttu-id="457db-106">Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.</span><span class="sxs-lookup"><span data-stu-id="457db-106">In turn, managers can then provide feedback and guidance to the employees.</span></span>  
 

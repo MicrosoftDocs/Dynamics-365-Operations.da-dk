@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fec3811b6c0e3f740e68618a403281628c5eb468
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a><span data-ttu-id="f3809-103">Konfigurere et eksternt katalog til PunchOut e-indkøb</span><span class="sxs-lookup"><span data-stu-id="f3809-103">Set up an external catalog for PunchOut eProcurement</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f3809-104">Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations, juli 2017, er nøjagtige og ajourførte.</span><span class="sxs-lookup"><span data-stu-id="f3809-104">By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date.</span></span> <span data-ttu-id="f3809-105">Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.</span><span class="sxs-lookup"><span data-stu-id="f3809-105">The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.</span></span>
 

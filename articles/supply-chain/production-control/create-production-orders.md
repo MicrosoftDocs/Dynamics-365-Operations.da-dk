@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d962dbf5a5a4e3847252171d3631f78341640bc7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c572c15f58f1633fe89a8ad8683075fa6b9de6d4
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-production-orders"></a><span data-ttu-id="ba272-105">Opret produktionsordrer</span><span class="sxs-lookup"><span data-stu-id="ba272-105">Create production orders</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ba272-106">Når der oprettes en produktionsordre, oprettes en anmodning om at starte produktionen af en vare.</span><span class="sxs-lookup"><span data-stu-id="ba272-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="ba272-107">Produktionsordren indeholder oplysninger om, hvad der skal produceres, det antal, der skal produceres, og den planlagte slutdato.</span><span class="sxs-lookup"><span data-stu-id="ba272-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="ba272-108">Den indeholder også oplysninger om, hvilke materialer der skal bruges, og hvilken proces der skal følges for at producere varen.</span><span class="sxs-lookup"><span data-stu-id="ba272-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
 

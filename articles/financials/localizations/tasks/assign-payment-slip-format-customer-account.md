@@ -16,15 +16,15 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 11c522b69bc9c27ef8d8586f91a1fc5cf937a626
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 68e8b111d81f69814f03b18f653300f74f1f8ccc
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="assign-a-payment-slip-format-to-a-customer-account-denmark"></a><span data-ttu-id="4f1e0-103">Tildele et indbetalingskortformat til en debitorkonto (Danmark)</span><span class="sxs-lookup"><span data-stu-id="4f1e0-103">Assign a payment slip format to a customer account (Denmark)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4f1e0-104">Denne procedure fører dig gennem oprettelse af formatet for vedhæftningen af indbetalingskortet for en udvalgt debitor.</span><span class="sxs-lookup"><span data-stu-id="4f1e0-104">This procedure walks you through setting up the payment slip attachment format for a selected customer.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0da2c4e308ef377b7657f0905fec56e47f27b99
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="enter-applicant-and-application-data-manually"></a><span data-ttu-id="f345e-103">Angive ansøger og ansøgningsdata manuelt</span><span class="sxs-lookup"><span data-stu-id="f345e-103">Enter applicant and application data manually</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f345e-104">Denne fremgangsmåde viser, hvordan du manuelt vedligeholder oplysninger om ansøgere og deres ansøgninger.</span><span class="sxs-lookup"><span data-stu-id="f345e-104">This procedure shows how to manually maintain information about applicants and their application.</span></span>   <span data-ttu-id="f345e-105">Du kan angive og vedligeholde personlige oplysninger, dato og klokkeslæt for jobsamtaler, referencer, kompetencer og tilpasningsanmodninger for ansøgere.</span><span class="sxs-lookup"><span data-stu-id="f345e-105">You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants.</span></span> <span data-ttu-id="f345e-106">Du kan også opdatere status for ansøgernes jobansøgninger og oprette breve eller e-mailmeddelelser for at kommunikere med ansøgerne.</span><span class="sxs-lookup"><span data-stu-id="f345e-106">You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants.</span></span> <span data-ttu-id="f345e-107">Når du opretter en ansøgningspost, oprettes en personpost for ansøgeren i det globale adressekartotek.</span><span class="sxs-lookup"><span data-stu-id="f345e-107">When you create an applicant record, a person record for that applicant is created in the global address book.</span></span>       <span data-ttu-id="f345e-108">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="f345e-108">The demo data company used to create this procedure is USMF.</span></span>
 

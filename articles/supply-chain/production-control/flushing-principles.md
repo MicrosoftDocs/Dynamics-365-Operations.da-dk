@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 818d7d21605ada63a29a41d3bf20ed9cbf21a178
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a><span data-ttu-id="4b6c5-103">Styre forbrug af råmaterialer ved hjælp af rydningsprincipper</span><span class="sxs-lookup"><span data-stu-id="4b6c5-103">Controlling raw material consumption by using flushing principles</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4b6c5-104">Rydningsprincipperne afspejler forskellige forbrugsstrategier for råvarer, der bruges i produktionsprocesser.</span><span class="sxs-lookup"><span data-stu-id="4b6c5-104">The flushing principles reflect different consumption strategies for raw materials that are used in production processes.</span></span> <span data-ttu-id="4b6c5-105">Forbruget er den proces, der trækker materiale fra den disponible lagerbeholdning og indstiller værdien af de anvendte materialer til **Igangværende arbejde** (IGVA) for produktionsordrer og batchordrer.</span><span class="sxs-lookup"><span data-stu-id="4b6c5-105">Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to **Work in progress** (WIP) for production orders and batch orders.</span></span> <span data-ttu-id="4b6c5-106">Råvarerne forbruges normalt fra en lokalitet, der er konfigureret for den proces, der forbruger materialet.</span><span class="sxs-lookup"><span data-stu-id="4b6c5-106">Raw materials are usually consumed from a location that is configured for the process that consumes the material.</span></span> <span data-ttu-id="4b6c5-107">Denne lokalitet kaldes produktionens indlagringslokation.</span><span class="sxs-lookup"><span data-stu-id="4b6c5-107">This location is known as the production input location.</span></span>
 

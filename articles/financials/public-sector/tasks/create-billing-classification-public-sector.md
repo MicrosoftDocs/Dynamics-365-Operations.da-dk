@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8858ca9e11ba4e6345fc31b439a1b69540837519
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a9fd9aba69271c6dbaa14449a7c4ae3efe8e8f5
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-billing-classification-in-the-public-sector"></a><span data-ttu-id="b6ed1-103">Oprette en faktureringsklassifikation i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="b6ed1-103">Create a billing classification in the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b6ed1-104">Offentlige institutioner kan bruge faktureringsklassifikationer til at administrere fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="b6ed1-104">Public-sector organizations can use billing classifications to help manage free text invoices.</span></span> <span data-ttu-id="b6ed1-105">Faktureringsklassifikationer bruges til at gruppere ensartede fritekstfakturaer til behandling og visning.</span><span class="sxs-lookup"><span data-stu-id="b6ed1-105">Billing classifications are used to group similar free text invoices for processing and viewing.</span></span> <span data-ttu-id="b6ed1-106">Før du bruger denne procedure, skal du kontrollere, at der findes en faktureringskode, der kan tildeles til en faktureringsklassifikation.</span><span class="sxs-lookup"><span data-stu-id="b6ed1-106">Before using this procedure, verify that a billing code exists that can be assigned to a billing classification.</span></span> <span data-ttu-id="b6ed1-107">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="b6ed1-107">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b1868851d22f41d3278cd9574a48bdf062185012
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="1a448-103">Bekræftelse af stykplukning</span><span class="sxs-lookup"><span data-stu-id="1a448-103">Piece picking confirmation</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1a448-104">Stykplukning gør det muligt for dig at bekræfte hver enkelt lagervare via pluk og optællingsarbejde på en mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="1a448-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="1a448-105">For pluk kan du bekræfte mængden af arbejde, der skal behandles, op til det antal, der er angivet på arbejde, der skal plukkes.</span><span class="sxs-lookup"><span data-stu-id="1a448-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="1a448-106">For optællingsarbejde kan du scanne det lager, du optæller, og spore det samlede beløb.</span><span class="sxs-lookup"><span data-stu-id="1a448-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
@@ -46,8 +46,10 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="1a448-122">Følgende indstillinger kan vælges, når arbejdstype pluk eller optælling.</span><span class="sxs-lookup"><span data-stu-id="1a448-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| <span data-ttu-id="1a448-123">Indstilling</span><span class="sxs-lookup"><span data-stu-id="1a448-123">Option</span></span>        | <span data-ttu-id="1a448-124">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="1a448-124">Description</span></span>   | 
-| ------------- | ------------- |
-| <span data-ttu-id="1a448-125">Bekræftelse af stykplukning</span><span class="sxs-lookup"><span data-stu-id="1a448-125">Piece picking confirmation</span></span>   | <span data-ttu-id="1a448-126">Arbejdstyper, der kan vælges til pluk og optælling.</span><span class="sxs-lookup"><span data-stu-id="1a448-126">Available for pick and counting work types.</span></span> <span data-ttu-id="1a448-127">Bekræftelse af produkt vælges automatisk.</span><span class="sxs-lookup"><span data-stu-id="1a448-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="1a448-128">Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden.</span><span class="sxs-lookup"><span data-stu-id="1a448-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
-| <span data-ttu-id="1a448-129">Maksimalt antal stykker</span><span class="sxs-lookup"><span data-stu-id="1a448-129">Maximum number of pieces</span></span>     | <span data-ttu-id="1a448-130">Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret.</span><span class="sxs-lookup"><span data-stu-id="1a448-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="1a448-131">Angiver en grænse for det antal styk, du skal bekræfte.</span><span class="sxs-lookup"><span data-stu-id="1a448-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
+
+|           <span data-ttu-id="1a448-123">Indstilling</span><span class="sxs-lookup"><span data-stu-id="1a448-123">Option</span></span>           |                                                                            <span data-ttu-id="1a448-124">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="1a448-124">Description</span></span>                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="1a448-125">Bekræftelse af stykplukning</span><span class="sxs-lookup"><span data-stu-id="1a448-125">Piece picking confirmation</span></span> | <span data-ttu-id="1a448-126">Arbejdstyper, der kan vælges til pluk og optælling.</span><span class="sxs-lookup"><span data-stu-id="1a448-126">Available for pick and counting work types.</span></span> <span data-ttu-id="1a448-127">Bekræftelse af produkt vælges automatisk.</span><span class="sxs-lookup"><span data-stu-id="1a448-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="1a448-128">Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden.</span><span class="sxs-lookup"><span data-stu-id="1a448-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> |
+|  <span data-ttu-id="1a448-129">Maksimalt antal stykker</span><span class="sxs-lookup"><span data-stu-id="1a448-129">Maximum number of pieces</span></span>  |                   <span data-ttu-id="1a448-130">Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret.</span><span class="sxs-lookup"><span data-stu-id="1a448-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="1a448-131">Angiver en grænse for det antal styk, du skal bekræfte.</span><span class="sxs-lookup"><span data-stu-id="1a448-131">Sets a limit to the number of pieces that you must confirm.</span></span>                   |
+
 

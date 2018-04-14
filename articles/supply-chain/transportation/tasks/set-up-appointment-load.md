@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8f608a38dd28a77e2a33e5c23cf35b5a9e6a8c38
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5be31d9b70f4a2e1edc5f84c3f621058b105090e
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-an-appointment-for-a-load"></a><span data-ttu-id="e5610-103">Konfigurere en aftale for en last</span><span class="sxs-lookup"><span data-stu-id="e5610-103">Set up an appointment for a load</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e5610-104">Denne procedure viser, hvordan du opretter og planlægger området for læsning.</span><span class="sxs-lookup"><span data-stu-id="e5610-104">This procedure shows how to set up and plan a dock appointment for a load.</span></span> <span data-ttu-id="e5610-105">Denne konfiguration vil normalt blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="e5610-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="e5610-106">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="e5610-106">You can use this procedure in the USMF demo data company.</span></span>
 

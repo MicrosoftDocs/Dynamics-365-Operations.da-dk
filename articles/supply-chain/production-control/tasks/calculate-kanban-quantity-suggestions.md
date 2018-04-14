@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a817dbc02890d863f68c5bf2a6cc11b9a5328060
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba09bfba52cd576782e61802e44fa4b80f4711f
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="775e8-103">Beregne forslag til kanban-mængder</span><span class="sxs-lookup"><span data-stu-id="775e8-103">Calculate kanban quantity suggestions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="775e8-104">Denne fremgangsmåde fokuserer på optimering af kanban-størrelse og -mængder for en specifik kanban-regel ved at bruge beregningen af kanban-mængden.</span><span class="sxs-lookup"><span data-stu-id="775e8-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="775e8-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="775e8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="775e8-106">Denne procedure er beregnet til værdistrømlederen.</span><span class="sxs-lookup"><span data-stu-id="775e8-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="775e8-107">Det er en forudsætning, at du har gennemført proceduren Føj en ny politik til beregning af kanban-mængde til en kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="775e8-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 

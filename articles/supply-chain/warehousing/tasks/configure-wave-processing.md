@@ -17,15 +17,15 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad45fd25a6911ca8f9976ee0040f193da0b3a993
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="configure-wave-processing"></a><span data-ttu-id="cc7fc-103">Konfigurere behandling af bølge</span><span class="sxs-lookup"><span data-stu-id="cc7fc-103">Configure wave processing</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cc7fc-104">Denne vejledning beskriver, hvordan du konfigurerer de kriterier, der bestemmer, hviket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk.</span><span class="sxs-lookup"><span data-stu-id="cc7fc-104">This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.</span></span> <span data-ttu-id="cc7fc-105">Du angiver kriterierne ved at konfigurere bølgeskabeloner og forespørgsler, der svarer til en bølge med frigivne linjer i salgsordrer, produktionsordrer eller kanbanordrer.</span><span class="sxs-lookup"><span data-stu-id="cc7fc-105">You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders.</span></span> <span data-ttu-id="cc7fc-106">Bølgebehandling bruges på lagersteder, der bruger funktionerne i modulet Lagerstedsstyring, og ikke dem, der bruger funktionerne i modulet Lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="cc7fc-106">Wave processing is used in warehouses that use the functionality in the Warehouse management module, and not those that use the functionality in the Inventory management module.</span></span> <span data-ttu-id="cc7fc-107">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="cc7fc-107">You can run this procedure in demo data company USMF.</span></span>
 

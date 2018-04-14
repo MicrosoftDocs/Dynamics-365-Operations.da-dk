@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
-ms.openlocfilehash: 6e6d933acb9aa6917f0bf1ed5eb34156aa60ebd2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0acafc8a3e89e901e901931e3ac309469ba12124
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budgeting-in-the-public-sector"></a><span data-ttu-id="a892a-104">Budgetlægning i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="a892a-104">Budgeting in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a892a-105">Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="a892a-105">This overview introduces you to the budgeting functionality that is available for public sector.</span></span> <span data-ttu-id="a892a-106">Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.</span><span class="sxs-lookup"><span data-stu-id="a892a-106">This includes budget analysis, preliminary budgets and apportionments, and posting definitions.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 008e0ceddac334d5624fb0793f5297caac7bd7d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e699d92d2e38416928d4386621d176e17b3fa77f
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="balance-sheet-financial-reports"></a><span data-ttu-id="24df3-104">Balance - økonomiske rapporter</span><span class="sxs-lookup"><span data-stu-id="24df3-104">Balance sheet financial reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="24df3-105">I denne artikel beskrives standardrapporterne til balancer.</span><span class="sxs-lookup"><span data-stu-id="24df3-105">This article describes the default reports for balance sheets.</span></span> <span data-ttu-id="24df3-106">Her beskrives også de komponenter, der er knyttet til disse rapporter.</span><span class="sxs-lookup"><span data-stu-id="24df3-106">It also describes the building blocks that are associated with these reports.</span></span> 
 
@@ -71,7 +70,7 @@ ms.lasthandoff: 01/19/2018
     -   <span data-ttu-id="24df3-142">**DESC** – En beskrivelse af rækkedefinitionen</span><span class="sxs-lookup"><span data-stu-id="24df3-142">**DESC** – The description from the row definition</span></span>
     -   <span data-ttu-id="24df3-143">**FD** – År til dato-økonomiske data for indeværende år</span><span class="sxs-lookup"><span data-stu-id="24df3-143">**FD** – Year-to-date financial data for the current year</span></span>
 
- 
+
 
 <a name="see-also"></a><span data-ttu-id="24df3-144">Se også</span><span class="sxs-lookup"><span data-stu-id="24df3-144">See also</span></span>
 --------

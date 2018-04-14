@@ -20,17 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: e7c815cc5b660b505cb06560efc3e7501645c350
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec804559d6514b4443bd295ec9d9b8b192f45ec0
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-rfm-analysis"></a><span data-ttu-id="6a8d6-103">Konfigurere RFM-analyse</span><span class="sxs-lookup"><span data-stu-id="6a8d6-103">Set up RFM analysis</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="6a8d6-104">Dette emne forklarer, hvordan du konfigurerer en RFM-analyse (Recency, Frequency, Monetary) af dine kunder.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-104">This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</span></span>
 
@@ -60,25 +59,25 @@ ms.lasthandoff: 01/17/2018
     - <span data-ttu-id="6a8d6-126">Hvis hver del af RFM-resultatet skal indeholde et lige antal debitorer, kan du markere afkrydsningsfeltet **Lige distribution**.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-126">If each section of the RFM score must contain an equal count of customers, select the **Even distribution** check box.</span></span> 
     - <span data-ttu-id="6a8d6-127">Markér afkrydsningsfeltet **Tilføj scorer** for at samle de tre resultater.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-127">Select the **Add scores** check box to aggregate the three scores.</span></span> <span data-ttu-id="6a8d6-128">Dette ville f.eks. give en debitor et RFM-resultat på 13 i stedet for 535.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-128">For example, this would give a customer an RFM score of 13 instead of 535.</span></span> 
     - <span data-ttu-id="6a8d6-129">Markér afkrydsningsfeltet **Gem historik** for at kræve, at systemet skal gemme de statistiske data for debitorer, så dataene kan bruges til at beregne RFM-resultatet.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-129">Select the **Save history** check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.</span></span>
-  
+
 5.  <span data-ttu-id="6a8d6-130">Benyt følgende fremgangsmåde i oversigtspanelet **Recency**:</span><span class="sxs-lookup"><span data-stu-id="6a8d6-130">On the **Recency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="6a8d6-131">I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne recency-resultatet for debitorer.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-131">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers.</span></span> <span data-ttu-id="6a8d6-132">Hvis du f.eks. har 100 debitorer, betyder en opdeling af 5, at der er 20 debitorer for hvert resultat.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-132">For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score.</span></span> <span data-ttu-id="6a8d6-133">De 20 kunder, der har foretaget de seneste køb, har et recency-resultat på 5.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-133">The 20 customers who have made purchases most recently have a recency score of 5.</span></span> <span data-ttu-id="6a8d6-134">De næste 20 kunder har et recency-resultat på 4 osv.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-134">The next 20 customers have a recency score of 4, and so on.</span></span> <span data-ttu-id="6a8d6-135">Hvis du har 50 debitorer, har 10 kunder et recency-resultat på 5, 10 har et recency-resultat på 4 osv.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-135">If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on.</span></span> 
     - <span data-ttu-id="6a8d6-136">I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren recency i forhold til de andre parametre, når RFM-resultatet beregnes for en debitor.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-136">In the **Priority** field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer.</span></span> <span data-ttu-id="6a8d6-137">Det kunne f.eks. være, at du vil angive en større værdi for recency-resultatet end det pengemæssige resultat.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-137">For example, you might place more value on the recency score than the monetary score.</span></span> 
     - <span data-ttu-id="6a8d6-138">I feltet **Multiplikator** skal du angive den værdi, som recency-resultatet skal ganges med.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-138">In the **Multiplier** field, enter the value by which to multiply the recency score.</span></span> <span data-ttu-id="6a8d6-139">Hvis du ikke angiver en værdi, multipliceres resultatet ikke.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-139">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="6a8d6-140">I feltet **Periode** skal du vælge den tidsperiode, for hvilken recency-resultatet beregnes.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-140">In the **Period** field, select the time period by which the recency score is calculated.</span></span> <span data-ttu-id="6a8d6-141">F.eks. pr. uge eller pr. måned.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-141">For example, by week or by month.</span></span>
-   
+
 6.  <span data-ttu-id="6a8d6-142">Benyt følgende fremgangsmåde i oversigtspanelet **Frekvens**:</span><span class="sxs-lookup"><span data-stu-id="6a8d6-142">On the **Frequency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="6a8d6-143">I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne frekvensscore for debitorer.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-143">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers.</span></span> 
     - <span data-ttu-id="6a8d6-144">I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren frequency i forhold til de andre, når RFM-resultatet beregnes for en debitor.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-144">In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="6a8d6-145">I feltet **Multiplikator** skal du angive den værdi, som frekvensscore skal ganges med.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-145">In the **Multiplier** field, enter the value by which to multiply the frequency score.</span></span> <span data-ttu-id="6a8d6-146">Hvis du ikke angiver en værdi, multipliceres resultatet ikke.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-146">If you do not enter a value, the score will not be multiplied.</span></span>
-   
+
 7.  <span data-ttu-id="6a8d6-147">Benyt følgende fremgangsmåde i oversigtspanelet **Monetær**:</span><span class="sxs-lookup"><span data-stu-id="6a8d6-147">On the **Monetary** FastTab, do the following:</span></span> 
     - <span data-ttu-id="6a8d6-148">I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne pengescoren for debitorer.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-148">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers.</span></span> 
     - <span data-ttu-id="6a8d6-149">I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren monetary i forhold til de andre, når RFM-resultatet beregnes for en debitor.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-149">In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="6a8d6-150">I feltet **Multiplikator** skal du angive den værdi, som pengescoren skal ganges med.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-150">In the **Multiplier** field, enter the value by which to multiply the monetary score.</span></span> <span data-ttu-id="6a8d6-151">Hvis du ikke angiver en værdi, multipliceres resultatet ikke.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-151">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="6a8d6-152">I feltet **Brutto/netto** skal du angive, om debitors pengemæssige resultat skal beregnes ved hjælp af brutto- eller nettofakturabeløb.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-152">In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount.</span></span> 
     - <span data-ttu-id="6a8d6-153">Hvis en debitors returbeløb skal trækkes fra debitorens samlede faktura, skal du markere afkrydsningsfeltet **Fratræk returneringer**.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-153">If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box.</span></span> 
- 
+
 ## <a name="view-a-customers-rfm-score"></a><span data-ttu-id="6a8d6-154">Se en kundes RFM-score</span><span class="sxs-lookup"><span data-stu-id="6a8d6-154">View a customer’s RFM score</span></span>
 <span data-ttu-id="6a8d6-155">Brug denne procedure til at få vist en kundes RFM-score.</span><span class="sxs-lookup"><span data-stu-id="6a8d6-155">Use this procedure to view a customer’s RFM score.</span></span> 
 

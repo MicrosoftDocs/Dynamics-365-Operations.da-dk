@@ -19,21 +19,21 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 034e25eea8a4db3126f7f33ae0712b6f30606651
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a><span data-ttu-id="55f49-104">Publicere kladdelinjer og dokumenter fra Excel</span><span class="sxs-lookup"><span data-stu-id="55f49-104">Publish journal lines and documents from Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="55f49-105">I dette emne beskrives, hvordan du skriver og publicerer linjer til finanskladder fra Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="55f49-105">This topic explains how to enter and publish lines for general journals from Microsoft Excel.</span></span> <span data-ttu-id="55f49-106">Emnet indeholder oplysninger om de forskellige skabeloner, som du kan bruge, afhængigt af den type postering, du angiver.</span><span class="sxs-lookup"><span data-stu-id="55f49-106">It includes information about the various templates that you can use, depending on the type of transactions that you're entering.</span></span>
 
 <span data-ttu-id="55f49-107">Brugere kan skrive og publicere linjer for økonomikladder fra Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="55f49-107">Users can enter and publish lines for financial journals from Microsoft Excel.</span></span> <span data-ttu-id="55f49-108">Når en bruger opretter en kladde, viser knappen **Åbn linjer i Excel** de skabeloner, der er tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="55f49-108">After a user creates a journal, the **Open lines in Excel** button displays the templates that are available.</span></span> <span data-ttu-id="55f49-109">Skabeloner er udviklet til at understøtte specifikke scenarier, men ikke enhver kombination af kontotyper understøttes i kladden.</span><span class="sxs-lookup"><span data-stu-id="55f49-109">Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal.</span></span> <span data-ttu-id="55f49-110">Følgende tabel viser de skabeloner, der er tilgængelige, og de kontotyper, som de understøtter.</span><span class="sxs-lookup"><span data-stu-id="55f49-110">The following table shows the templates that are available and the account types which they support.</span></span>
+
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <span data-ttu-id="55f49-111">**Skabelon**</span><span class="sxs-lookup"><span data-stu-id="55f49-111">**Template**</span></span>             | <span data-ttu-id="55f49-112">**Understøttede kontotyper**</span><span class="sxs-lookup"><span data-stu-id="55f49-112">**Supported account types**</span></span>                                                                                             | <span data-ttu-id="55f49-113">**Sådan får du adgang til skabelonen**</span><span class="sxs-lookup"><span data-stu-id="55f49-113">**How to access the template**</span></span>                                                          |

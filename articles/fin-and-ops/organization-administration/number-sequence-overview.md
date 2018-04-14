@@ -19,17 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a290f6f453d8440d6e68a13915339d3da31d959a
-ms.openlocfilehash: 353113d7c7341eab567224a0d3508f6fdb7bdcec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58069d79f92ce015fe4b11b50fb3348722bca4f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="number-sequences"></a><span data-ttu-id="cb03b-103">Nummerserier</span><span class="sxs-lookup"><span data-stu-id="cb03b-103">Number sequences</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cb03b-104">Talserier bruges til generering af læselige, entydige identifikatorer for masterdataposter og transaktionsposter, der kræver identifikatorer.</span><span class="sxs-lookup"><span data-stu-id="cb03b-104">Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.</span></span> <span data-ttu-id="cb03b-105">En masterdatapost eller transaktionspost, der kræver et id, kaldes en *reference*.</span><span class="sxs-lookup"><span data-stu-id="cb03b-105">A master data record or transaction record that requires an identifier is referred to as a *reference*.</span></span>
 

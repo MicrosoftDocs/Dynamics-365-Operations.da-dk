@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8c0d2eabd0519b1029f3c0a33a502f3550adb6e4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d2bc03d28c108611f49c500a5d5337f7ec17278
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-a-fund-in-the-public-sector"></a><span data-ttu-id="0f8ae-103">Konfigurere en finansieringskilde i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="0f8ae-103">Set up a fund in the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0f8ae-104">Middeltyper skal være oprettet, før du kan konfigurere midler.</span><span class="sxs-lookup"><span data-stu-id="0f8ae-104">Fund types must be created before you set up funds.</span></span> <span data-ttu-id="0f8ae-105">Hvert enkelt middel skal have et navn og et entydigt nummer og skal være tildelt en middeltype og middelklasse.</span><span class="sxs-lookup"><span data-stu-id="0f8ae-105">Each fund must have a name and a unique number, and must be assigned a fund type and fund class.</span></span> <span data-ttu-id="0f8ae-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="0f8ae-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

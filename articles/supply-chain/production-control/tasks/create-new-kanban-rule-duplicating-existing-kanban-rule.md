@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6bdd79de9f7dd71c3acbfa32c4decbf0b4593798
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d375e6c029e575269f7b9fce8a2eb9ac95717b5c
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a><span data-ttu-id="62cb6-103">Oprette en ny kanban-regel ved at duplikere en eksisterende kanban-regel</span><span class="sxs-lookup"><span data-stu-id="62cb6-103">Create a new kanban rule by duplicating an existing kanban rule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="62cb6-104">Denne procedure fokuserer på oprettelse en dublet af en eksisterende kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="62cb6-104">This procedure focuses on creating a duplicate of an existing kanban rule.</span></span> <span data-ttu-id="62cb6-105">Dette er nyttigt, hvis du vil oprette nye kanban-regler baseret på eksisterende kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="62cb6-105">This is useful if you want to create new kanban rules based on existing kanban rules.</span></span> <span data-ttu-id="62cb6-106">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="62cb6-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="62cb6-107">Denne procedure er beregnet til procesingeniøren eller værdistrømlederen, når de forbereder produktionen til et nyt produktionsflow eller en ny genopfyldningsregel.</span><span class="sxs-lookup"><span data-stu-id="62cb6-107">This procedure is intended for the process engineer or the value stream manager as they prepare production for a changed production flow or a new replenishment rule.</span></span>
 

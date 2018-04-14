@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: e50fc2b6b8f4cd91e9a5593297fff2e9a6ef5525
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e326acd4a7f681b02ee4846d36e94559ce6dbdfa
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a><span data-ttu-id="4709a-103">Oprette finanskonteringsgrupper til moms</span><span class="sxs-lookup"><span data-stu-id="4709a-103">Set up ledger posting groups for sales tax</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4709a-104">Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgrupperne.</span><span class="sxs-lookup"><span data-stu-id="4709a-104">Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups.</span></span> <span data-ttu-id="4709a-105">Finanskonteringsgrupperne er tilknyttet de enkelte momskoder.</span><span class="sxs-lookup"><span data-stu-id="4709a-105">Ledger posting groups are attached to each sales tax code.</span></span> <span data-ttu-id="4709a-106">Du kan oprette individuelle finanskonteringsgrupper til hver enkelt momskode, bruge én finanskonteringsgruppe til alle momskoder eller knytte flere finanskonteringsgrupper til momskoderne.</span><span class="sxs-lookup"><span data-stu-id="4709a-106">You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes.</span></span> <span data-ttu-id="4709a-107">Denne registrering anvender demofirmaet DEMF.</span><span class="sxs-lookup"><span data-stu-id="4709a-107">This recording uses the DEMF demo company.</span></span> 
 

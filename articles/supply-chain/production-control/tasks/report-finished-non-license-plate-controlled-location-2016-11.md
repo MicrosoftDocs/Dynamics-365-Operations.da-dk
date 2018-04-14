@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 34fac03a0ff3d71a2349b66f8f85e4e124dcd708
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9a7901b307cffb81cce351e4e45ac8f73f328b02
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a><span data-ttu-id="831d7-103">Rapportere som færdig til en id-styret lokalitet</span><span class="sxs-lookup"><span data-stu-id="831d7-103">Report as finished to a plate-controlled location</span></span> 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="831d7-104">Denne opgavevejledning viser et eksempel på færdigmedling til en lokation, der ikke er id-kontrolleret.</span><span class="sxs-lookup"><span data-stu-id="831d7-104">This task guide shows an example of reporting as finished to a location that isn't license plate–controlled.</span></span> <span data-ttu-id="831d7-105">En relevant arbejdspolitik er en forudsætning for denne opgave.</span><span class="sxs-lookup"><span data-stu-id="831d7-105">An applicable work policy is the prerequisite for this task.</span></span> <span data-ttu-id="831d7-106">En tidligere opgavevejledning viste konfigurationen af arbejdspolitikken.</span><span class="sxs-lookup"><span data-stu-id="831d7-106">A previous task guide showed the setup of the work policy.</span></span> <span data-ttu-id="831d7-107">Denne opgavevejledning kræver Dynamics AX-program 7.0.1 eller nyere.</span><span class="sxs-lookup"><span data-stu-id="831d7-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
 

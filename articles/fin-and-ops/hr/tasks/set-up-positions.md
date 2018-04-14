@@ -16,15 +16,15 @@ ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 38ff9fde897136fa23a2c2951167f6507b047b2d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 110dde293fea31f82fb4b2b1c54bf96d5baa04b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-positions"></a><span data-ttu-id="f4784-103">Konfigurere stillinger</span><span class="sxs-lookup"><span data-stu-id="f4784-103">Set up positions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f4784-104">Stillinger er et vigtigt element i et organisationshierarkis lavere niveau.</span><span class="sxs-lookup"><span data-stu-id="f4784-104">Positions are an important element of the lower level of an organization hierarchy.</span></span> <span data-ttu-id="f4784-105">En stilling er en individuel forekomst af et job.</span><span class="sxs-lookup"><span data-stu-id="f4784-105">A position is an individual instance of a job.</span></span> <span data-ttu-id="f4784-106">For eksempel er stillingen "Salgschef (øst)" én af de stillinger, der er tilknyttet jobbet "Salgschef".</span><span class="sxs-lookup"><span data-stu-id="f4784-106">For example, the position, “Sales manager (East),” is one of the positions that is associated with the job, “Sales manager.”</span></span> <span data-ttu-id="f4784-107">En stilling findes i en afdeling og har muligvis kun én tilknyttet arbejder.</span><span class="sxs-lookup"><span data-stu-id="f4784-107">A position exists in a department and may have only one worker associated with it.</span></span> <span data-ttu-id="f4784-108">I denne opgave vil vi gennemgå de trin, der kræves for at oprette en stilling.</span><span class="sxs-lookup"><span data-stu-id="f4784-108">In this task we will walk through the steps required to create a position.</span></span> <span data-ttu-id="f4784-109">Denne procedure er beregnet til personalespecialister.</span><span class="sxs-lookup"><span data-stu-id="f4784-109">This procedure is intended for Human Resources Specialists.</span></span>
 

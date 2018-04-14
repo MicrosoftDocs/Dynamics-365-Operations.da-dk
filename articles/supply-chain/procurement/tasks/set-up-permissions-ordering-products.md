@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9e003f953c05facd5516e2bfa6d1c83ba6381c15
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5839962a5a3be5d7836c74fc8476ceafa414d48c
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a><span data-ttu-id="dd6df-103">Konfigurere tilladelser til bestilling af produkter på vegne af en anden person</span><span class="sxs-lookup"><span data-stu-id="dd6df-103">Set up permissions for ordering products on behalf of someone else</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dd6df-104">Denne fremgangsmåde viser, hvordan du kan give arbejdere tilladelse til at oprette indkøbsrekvisitioner på vegne af andre arbejdere.</span><span class="sxs-lookup"><span data-stu-id="dd6df-104">This procedure shows how to grant workers permission to prepare purchase requisitions on behalf of other workers.</span></span> <span data-ttu-id="dd6df-105">Med andre ord kan "klargøreren" af en indkøbsrekvisition oprette en rekvisition for en anden "anmoder."</span><span class="sxs-lookup"><span data-stu-id="dd6df-105">In other words, a purchase requisition “preparer” can create a requisition for another “requester.”</span></span> <span data-ttu-id="dd6df-106">Proceduren viser også, hvordan du kan tildele en arbejder rettigheder til at bestille varer og tjenester i forskellige juridiske enheder eller driftsenheder.</span><span class="sxs-lookup"><span data-stu-id="dd6df-106">The procedure also shows how to grant a worker permission to order items and services in different legal entities or operating units.</span></span> <span data-ttu-id="dd6df-107">Disse opgaver udføres typisk af en indkøbschef.</span><span class="sxs-lookup"><span data-stu-id="dd6df-107">Typically, these tasks are performed by a purchasing manager.</span></span> <span data-ttu-id="dd6df-108">Du kan enten bruge denne procedure dataene i USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="dd6df-108">You can use this procedure either on data for the USMF demo company or on your own data.</span></span>
 

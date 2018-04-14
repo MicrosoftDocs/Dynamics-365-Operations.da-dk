@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 81707760e3ee3bc212706fb0857ed087455b0a9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8a01506d94a12642cae1c8331f473afb76bcf2b6
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-goal"></a><span data-ttu-id="eef99-103">Oprette et mål</span><span class="sxs-lookup"><span data-stu-id="eef99-103">Create a goal</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eef99-104">Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål til en evaluering.</span><span class="sxs-lookup"><span data-stu-id="eef99-104">You can create goals, add activities to goals, track measurements, and link the goals to a review.</span></span> <span data-ttu-id="eef99-105">Denne procedure blev oprettet ved hjælp af demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="eef99-105">This procedure was created using the USMF demo data company.</span></span> <span data-ttu-id="eef99-106">Denne procedure er til en funktion, der blev tilføjet i Dynamics 365 for Operations, version 1611.</span><span class="sxs-lookup"><span data-stu-id="eef99-106">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 

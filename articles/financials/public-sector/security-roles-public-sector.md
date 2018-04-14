@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 32f22ab1ca64ace467a480161f3b68ea35f8546e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ab91d4e6bc7a86e473aa8cd4735409eff19283b7
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="security-roles-in-the-public-sector"></a><span data-ttu-id="083da-104">Sikkerhedsroller i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="083da-104">Security roles in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="083da-105">I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="083da-105">This article describes the functionality for public sector security roles.</span></span> <span data-ttu-id="083da-106">Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="083da-106">This functionality includes the Project manager and Purchasing agent roles for the public sector.</span></span>
 

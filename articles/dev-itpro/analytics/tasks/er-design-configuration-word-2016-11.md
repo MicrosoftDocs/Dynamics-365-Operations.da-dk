@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 21eb35e7713ce856b7c6d364e2ad4dfc1b30e5fd
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a><span data-ttu-id="cd3a2-103">Designe en konfiguration til generering af rapporter i Microsoft Word-format til elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="cd3a2-103">Design a configuration for generating reports in Microsoft Word format for electronic reporting (ER)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cd3a2-104">Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan konfigurere en model for elektronisk rapporteringsformat (ER) til at generere rapporter som Microsoft Word-filer.</span><span class="sxs-lookup"><span data-stu-id="cd3a2-104">The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files.</span></span> <span data-ttu-id="cd3a2-105">Disse trin kan udføres i GBSI-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="cd3a2-105">These steps can be performed in the GBSI company.</span></span>
 

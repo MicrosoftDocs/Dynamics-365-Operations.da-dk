@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 47336a19899b1fad0e63265173fd7fd02fc74ec3
-ms.openlocfilehash: 593924e8d6be1e24f79795768e1facbb7dcf1e56
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aff05047ceee7c994532851808474e63fb422517
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="accounts-receivable-in-the-public-sector"></a><span data-ttu-id="7ff39-103">Debitorer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="7ff39-103">Accounts receivable in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7ff39-104">I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="7ff39-104">This topic describes the Accounts receivable functionality that is available for the public sector.</span></span>
 

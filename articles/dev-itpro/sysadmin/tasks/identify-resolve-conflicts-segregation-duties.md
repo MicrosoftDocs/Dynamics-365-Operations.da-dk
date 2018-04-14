@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90deb42e8443d6d1ee7edbdfcedf4513c28a3bf1
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a><span data-ttu-id="f87d5-103">Identificere og løse konflikter i opdeling af opgaver</span><span class="sxs-lookup"><span data-stu-id="f87d5-103">Identify and resolve conflicts in segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f87d5-104">Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige brugere.</span><span class="sxs-lookup"><span data-stu-id="f87d5-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="f87d5-105">Dette begreb kaldes opdeling af opgaver.</span><span class="sxs-lookup"><span data-stu-id="f87d5-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="f87d5-106">Hvis definitionen af en sikkerhedsrolle eller rolletildelinger for en bruger overtræder reglerne, logføres konflikten.</span><span class="sxs-lookup"><span data-stu-id="f87d5-106">When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged.</span></span> <span data-ttu-id="f87d5-107">Alle konflikter skal løses af administratoren.</span><span class="sxs-lookup"><span data-stu-id="f87d5-107">All conflicts must be resolved by the administrator.</span></span> <span data-ttu-id="f87d5-108">Fuldfør følgende procedure for at identificere og løse konflikter.</span><span class="sxs-lookup"><span data-stu-id="f87d5-108">Complete the following procedure to identify and resolve conflicts.</span></span> <span data-ttu-id="f87d5-109">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="f87d5-109">The demo data company used to create this procedure is USMF.</span></span>
 

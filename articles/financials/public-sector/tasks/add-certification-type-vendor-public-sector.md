@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 078c1dcb22e385bc658befcdf81497f567bef494
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2253ad78f750b9f4738885b0433c34440e760172
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a><span data-ttu-id="03649-103">Tilføje en certificeringstype til en kreditor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="03649-103">Add a certification type to a vendor in the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="03649-104">Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne.</span><span class="sxs-lookup"><span data-stu-id="03649-104">You can create and assign to vendors any type of certification that they may hold.</span></span> <span data-ttu-id="03649-105">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="03649-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

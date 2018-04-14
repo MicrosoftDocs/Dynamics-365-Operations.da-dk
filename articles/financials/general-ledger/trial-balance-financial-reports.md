@@ -19,17 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 77e46e8693c65410ac7c44754edcb3c181f2aa18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7363ac8d83c5d8f9da550f76ad888a666149cd6e
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="trial-balance-financial-reports"></a><span data-ttu-id="0bdc6-104">Råbalance - økonomiske rapporter</span><span class="sxs-lookup"><span data-stu-id="0bdc6-104">Trial balance financial reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0bdc6-105">I denne artikel beskrives standardrapporterne til råbalancer.</span><span class="sxs-lookup"><span data-stu-id="0bdc6-105">This article describes the default reports for trial balances.</span></span> <span data-ttu-id="0bdc6-106">Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov.</span><span class="sxs-lookup"><span data-stu-id="0bdc6-106">It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</span></span> 
 
@@ -99,7 +98,7 @@ ms.lasthandoff: 03/26/2018
     -   <span data-ttu-id="0bdc6-175">**FD** – Økonomiske data, der kun indeholder debiteringer for sidste år</span><span class="sxs-lookup"><span data-stu-id="0bdc6-175">**FD** – Financial data that contains only debits for the last year</span></span>
     -   <span data-ttu-id="0bdc6-176">**FD** – Økonomiske data, der kun indeholder krediteringer for sidste år</span><span class="sxs-lookup"><span data-stu-id="0bdc6-176">**FD** – Financial data that contains only credits for the last year</span></span>
 
- 
+
 
 <a name="see-also"></a><span data-ttu-id="0bdc6-177">Se også</span><span class="sxs-lookup"><span data-stu-id="0bdc6-177">See also</span></span>
 --------

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ffc58d2afe73fa2290e4e73a058d47ffd64b8d54
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9bc32f4453deb028781514fd3b97602d07771402
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="approve-vendors-for-specific-products"></a><span data-ttu-id="9af3d-103">Godkende kreditorer til specifikke produkter</span><span class="sxs-lookup"><span data-stu-id="9af3d-103">Approve vendors for specific products</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9af3d-104">Denne fremgangsmåde viser, hvordan du godkender kreditorer for bestemte produkter.</span><span class="sxs-lookup"><span data-stu-id="9af3d-104">This procedure shows you how to approve vendors for specific products.</span></span> <span data-ttu-id="9af3d-105">Dette gør det muligt at styre, hvilke kreditorer der kan bruges, når produktet føjes til en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="9af3d-105">This allows you to control which vendors can be used when the product is added to a purchase order.</span></span> <span data-ttu-id="9af3d-106">Du kan bruge denne procedure på demofirmaet USMF eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="9af3d-106">You can use this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="9af3d-107">Denne opgave vil typisk blive udført af en indkøbschef.</span><span class="sxs-lookup"><span data-stu-id="9af3d-107">This task would typically be carried out by a Purchasing manager.</span></span>
 

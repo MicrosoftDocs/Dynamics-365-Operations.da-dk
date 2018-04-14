@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 8ed33e2e80915a80eb4c6de014091f1884799098
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5a31ceacb7037164d35e38fb70a013b33d670d94
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-raw-materials-february-2016-only"></a><span data-ttu-id="0c09b-103">Oprette råmaterialer (kun februar 2016)</span><span class="sxs-lookup"><span data-stu-id="0c09b-103">Create raw materials (February 2016 only)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0c09b-104">Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprodukter.</span><span class="sxs-lookup"><span data-stu-id="0c09b-104">This task focuses on creating the components of finished and semi-finished products.</span></span> <span data-ttu-id="0c09b-105">Det er den tredje opgave i styklisteberegningsserien.</span><span class="sxs-lookup"><span data-stu-id="0c09b-105">It is the third task in the BOM calculation series.</span></span> <span data-ttu-id="0c09b-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="0c09b-106">The demo data company used to create this task is USMF.</span></span>
 

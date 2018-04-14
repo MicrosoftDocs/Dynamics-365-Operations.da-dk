@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fb55f4b0b06019891c2e490eda837cfad882e6db
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c41194f5d032b3ec59c079c91c83fcbe90f8b47d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sepa-direct-debit-overview"></a><span data-ttu-id="da844-107">Oversigt over direkte debitering (SEPA)</span><span class="sxs-lookup"><span data-stu-id="da844-107">SEPA direct debit overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="da844-108">Det Fælles eurobetalingsområde (SEPA) er nedsat af Europa-Kommissionen og bestemmer, at alle elektroniske betalinger behandles som indenlandske, uanset det land/område, hvor personen, virksomheden eller organisationen og banken er placeret.</span><span class="sxs-lookup"><span data-stu-id="da844-108">The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located.</span></span> <span data-ttu-id="da844-109">Der er ingen forskel imellem nationale betalinger og betalinger, der involverer udlandet.</span><span class="sxs-lookup"><span data-stu-id="da844-109">There is no difference between national and cross-border payments.</span></span> <span data-ttu-id="da844-110">SEPA omfatter de 28 EU-medlemsstater, foruden Island, Liechtenstein, Norge, Schweiz, Monaco og San Marino.</span><span class="sxs-lookup"><span data-stu-id="da844-110">The SEPA includes the 28 European Union (EU) member states, as well as Iceland, Liechtenstein, Norway, Switzerland, Monaco and San Marino.</span></span> <span data-ttu-id="da844-111">SEPA er med til at danne et enkelt marked for betalingstransaktioner inden for Det Europæiske Økonomiske Samarbejdsområde (EEA).</span><span class="sxs-lookup"><span data-stu-id="da844-111">The SEPA helps form a single market for payment transactions within the European Economic Area (EEA).</span></span> <span data-ttu-id="da844-112">I sidste ende forventes SEPA at reducere antallet af betalingsformater, som banker, virksomheder og enkeltpersoner skal arbejde med.</span><span class="sxs-lookup"><span data-stu-id="da844-112">Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.</span></span>   
 

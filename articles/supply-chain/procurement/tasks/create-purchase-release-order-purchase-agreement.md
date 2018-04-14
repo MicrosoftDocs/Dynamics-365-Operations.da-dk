@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cecda03dd4d224d4319f2b0b196560389bb54195
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 467253299c6cf80c7366ab4f12913a93546d1d69
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a><span data-ttu-id="ced9f-103">Oprette en købsaftræksordre ud fra en købsaftale</span><span class="sxs-lookup"><span data-stu-id="ced9f-103">Create a purchase release order from a purchase agreement</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ced9f-104">Denne fremgangsmåde viser, hvordan du bruger en købsaftale, når du opretter en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="ced9f-104">This procedure shows how to use a purchase agreement when you create a purchase order.</span></span> <span data-ttu-id="ced9f-105">Købsaftalen skal anvendes, når du opretter indkøbsordren, fordi der er generelle betingelser, der skal kopieres til indkøbsordrehovedet.</span><span class="sxs-lookup"><span data-stu-id="ced9f-105">The purchase agreement has to be applied when you create the purchase order because there are general terms that should be copied to the purchase order header.</span></span> <span data-ttu-id="ced9f-106">Denne opgave vil typisk blive foretaget af en indkøber.</span><span class="sxs-lookup"><span data-stu-id="ced9f-106">Typically this task would be carried out by a purchasing agent.</span></span> <span data-ttu-id="ced9f-107">Du skal have en gyldig købsaftale med et tilsagn om produktantal for en kreditor og varer som en forudsætning for denne vejledning.</span><span class="sxs-lookup"><span data-stu-id="ced9f-107">As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items.</span></span> <span data-ttu-id="ced9f-108">Samme fremgangsmåde kan bruges, hvis du har en købsaftale med andre typer forpligtelser.</span><span class="sxs-lookup"><span data-stu-id="ced9f-108">The same procedure can be used if you have a purchase agreement with other types of commitments.</span></span> <span data-ttu-id="ced9f-109">Du kan køre denne guide i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="ced9f-109">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="ced9f-110">Hvis du bruger USMF, kan du køre guiden "Opret en købsaftale" først for at konfigurere de nødvendige forudsætninger for denne vejledning.</span><span class="sxs-lookup"><span data-stu-id="ced9f-110">If you’re using USMF, you can run the “Create a purchase agreement” guide first to set up the necessary preconditions for this guide.</span></span>
 

@@ -15,15 +15,15 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 364207d188c0361cbbc9627bec35e059a7bb552c
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="assortment-management"></a><span data-ttu-id="11b52-103">Sortimentsstyring</span><span class="sxs-lookup"><span data-stu-id="11b52-103">Assortment management</span></span>
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="11b52-104">Overblik</span><span class="sxs-lookup"><span data-stu-id="11b52-104">Overview</span></span>
 <span data-ttu-id="11b52-105">Microsoft Dynamics 365 for Retail indeholder *sortimenter*, så du kan administrere produkttilgængeligheden på tværs af kanaler.</span><span class="sxs-lookup"><span data-stu-id="11b52-105">Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels.</span></span> <span data-ttu-id="11b52-106">Sortimenter bestemmer, hvilke produkter der er tilgængelige i bestemte butikker og i en bestemt periode.</span><span class="sxs-lookup"><span data-stu-id="11b52-106">Assortments determine which products are available at specific stores and during a specific period.</span></span>

@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0e86c33580cbcafb16f508c2f6330d81422f12d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="57bbc-103">Oprette en indkøbsordre med en leveranceplan</span><span class="sxs-lookup"><span data-stu-id="57bbc-103">Create a purchase order with a delivery schedule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="57bbc-104">Denne procedure viser, hvordan du opretter en leveranceplan til en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="57bbc-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="57bbc-105">En leveranceplan bruges, når der anmodes om et antal i en ordre eller en kladde, som skal leveres i flere leverancer.</span><span class="sxs-lookup"><span data-stu-id="57bbc-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="57bbc-106">Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="57bbc-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="57bbc-107">Denne procedure vil normalt ske via en indkøbsagent.</span><span class="sxs-lookup"><span data-stu-id="57bbc-107">This procedure would typically be done by a purchasing agent.</span></span>
 

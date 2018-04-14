@@ -20,17 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0567cdad6f9f27097f534381655e5b468884bed8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 729a14a4a1f72b45c2232bef8d7d1ccd2e67ecec
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-blocking"></a><span data-ttu-id="79cad-104">Lagerspærring</span><span class="sxs-lookup"><span data-stu-id="79cad-104">Inventory blocking</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="79cad-105">Denne artikel indeholder en oversigt over lagerblokering, som er en del af kvalitetsinspektionsprocessen i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="79cad-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="79cad-106">Du kan bruge lagerblokering til at forhindre elementer i at blive behandlet eller forbrugt.</span><span class="sxs-lookup"><span data-stu-id="79cad-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 

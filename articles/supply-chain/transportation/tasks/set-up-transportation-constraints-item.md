@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f2ef71e2d4d8fa0d0af0d8cb076ca59d32934181
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 73533bb4a30cef126f4f8322fa0b85331a53de48
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="0daff-103">Konfigurere transportbegrænsninger for en vare</span><span class="sxs-lookup"><span data-stu-id="0daff-103">Set up transportation constraints for an item</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0daff-104">Denne procedure skal oprette en transportbegrænsning for at forhindre, at en valgt vare transporteres gennem en valgt hub.</span><span class="sxs-lookup"><span data-stu-id="0daff-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="0daff-105">Denne opgave vil typisk blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="0daff-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="0daff-106">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="0daff-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
 

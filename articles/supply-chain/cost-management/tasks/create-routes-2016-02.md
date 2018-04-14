@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6949c729f474e5ea4aea8ad1cca6ae127cf4d652
-ms.openlocfilehash: e3df21705c5b417a4541ba2e76528be63f1f531d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a3f46d282937468351c94dfe3f06403ee2900f82
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/27/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-routes-february-2016-only"></a><span data-ttu-id="67b01-103">Oprette ruter (kun februar 2016)</span><span class="sxs-lookup"><span data-stu-id="67b01-103">Create routes (February 2016 only)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="67b01-104">Denne opgave drejer sig om oprettelse af produktionsruter for et færdigt produkt og et halvfabrikatprodukt.</span><span class="sxs-lookup"><span data-stu-id="67b01-104">This task focuses on creating the production routes for a finished product and a semi-finished product.</span></span> <span data-ttu-id="67b01-105">Det er den femte opgave i styklisteberegningsserien.</span><span class="sxs-lookup"><span data-stu-id="67b01-105">It is the fifth task in the BOM calculation series.</span></span> <span data-ttu-id="67b01-106">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="67b01-106">The demo data company used to create this task is USMF.</span></span>
 

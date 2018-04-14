@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 257582d889ff55753f9bdbd234f0540503d20f27
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7f93d991730872c0d50a23d27236be5a057f75b
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-repeat-purchase-order"></a><span data-ttu-id="2b862-103">Oprette en gentagen indkøbsordre</span><span class="sxs-lookup"><span data-stu-id="2b862-103">Create a repeat purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2b862-104">Denne fremgangsmåde viser, hvordan du opretter en ny indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="2b862-104">This procedure shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO.</span></span> <span data-ttu-id="2b862-105">Du kan oprette tilbagevendende ordrer på to måder.</span><span class="sxs-lookup"><span data-stu-id="2b862-105">There are two methods for creating repeat orders.</span></span> <span data-ttu-id="2b862-106">Du kan bruge de tilgængelige handlinger på dokumentniveau fra handlingsruden, eller du kan bruge linjedetaljehandlinger.</span><span class="sxs-lookup"><span data-stu-id="2b862-106">You can use the actions available at the document level from the Action Pane, or you can use the line detail actions.</span></span> <span data-ttu-id="2b862-107">Handlingerne på dokumentniveau er primært beregnet til at oprette en ny købsordre ved at tilføje linjer og headeroplysninger fra en anden ordre, mens linjedetaljehandlingen især er beregnet til at føje linjer til en eksisterende ordre.</span><span class="sxs-lookup"><span data-stu-id="2b862-107">The document level actions are mainly intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order.</span></span> <span data-ttu-id="2b862-108">Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="2b862-108">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="2b862-109">Denne opgave foretages typisk af en indkøber.</span><span class="sxs-lookup"><span data-stu-id="2b862-109">This task would typically be carried out by a purchasing agent.</span></span>
 

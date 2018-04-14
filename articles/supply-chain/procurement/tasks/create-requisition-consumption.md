@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7d8ca4e7eedea140f32e264c205b243027a06d03
-ms.openlocfilehash: d1ea95d0bc283297fcedaee730e1829850f07998
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="dc858-103">Oprette en forbrugsrekvisition</span><span class="sxs-lookup"><span data-stu-id="dc858-103">Create a requisition for consumption</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dc858-104">Denne fremgangsmåde fører dig gennem processen med at oprette en rekvisition.</span><span class="sxs-lookup"><span data-stu-id="dc858-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="dc858-105">Den viser forskellige måder at søge efter produkter i indkøbskataloget, og hvordan du tilføjer et produkt, der ikke findes i kataloget.</span><span class="sxs-lookup"><span data-stu-id="dc858-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="dc858-106">Inden du begynder denne procedure, skal du have en indkøbspolitik, der er konfigureret med Forbrug som standardtypen for rekvisitionen.</span><span class="sxs-lookup"><span data-stu-id="dc858-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="dc858-107">Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.</span><span class="sxs-lookup"><span data-stu-id="dc858-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="dc858-108">Proceduren kan kun udføres af en brugerprofil, der er angivet som arbejder.</span><span class="sxs-lookup"><span data-stu-id="dc858-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="dc858-109">Denne opgave vil normalt udføres af en medarbejder.</span><span class="sxs-lookup"><span data-stu-id="dc858-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="dc858-110">Medarbejders sikkerhedsrolle tillader, at du kan udføre opgaverne, eller hvis du bruger USMF, kan du logge på som Alicia.</span><span class="sxs-lookup"><span data-stu-id="dc858-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

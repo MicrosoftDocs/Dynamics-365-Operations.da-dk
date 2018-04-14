@@ -18,15 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: de36746bce4aa27d23aa45f2d08cb6c2d527ea90
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a><span data-ttu-id="71490-103">Startside for lokal installation</span><span class="sxs-lookup"><span data-stu-id="71490-103">On-premises deployment home page</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="71490-104">Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokalt).</span><span class="sxs-lookup"><span data-stu-id="71490-104">You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).</span></span> <span data-ttu-id="71490-105">Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation.</span><span class="sxs-lookup"><span data-stu-id="71490-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="71490-106">Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.</span><span class="sxs-lookup"><span data-stu-id="71490-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 

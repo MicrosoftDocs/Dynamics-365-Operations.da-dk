@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c90de64ccc61a6515298c55dacaec44b79b19a3b
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a><span data-ttu-id="1a1d2-103">Slå gældende priser og rabatter op</span><span class="sxs-lookup"><span data-stu-id="1a1d2-103">Look up applicable prices and discounts</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1a1d2-104">Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt, der er gyldig for en bestemt debitor, uden at oprette en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="1a1d2-104">This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order.</span></span> <span data-ttu-id="1a1d2-105">Proceduren fører dig gennem et specifikt eksempel, og du skal følge eksemplet med USMF-demofirmaet for at vælge de nødvendige værdier.</span><span class="sxs-lookup"><span data-stu-id="1a1d2-105">The procedure walks through a specific example, and you need follow the example using the USMF demo company in order to select the necessary values.</span></span>
 

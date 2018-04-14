@@ -19,17 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 275e7926eb5ade1b7b03bd997a6fdc86d9f0bb20
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2b8ddd0fb056466b1d52c2494a3a0149cbd207af
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a><span data-ttu-id="2b0e2-104">Indkøb og forsyning i den offentlige sektor i Frankrig</span><span class="sxs-lookup"><span data-stu-id="2b0e2-104">Procurement and sourcing in the public sector in France</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2b0e2-105">I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-105">This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector.</span></span> <span data-ttu-id="2b0e2-106">Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-106">These features are used to help meet the requirements of the Code des Marchés Publics.</span></span> 
 
@@ -60,7 +59,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="2b0e2-139">Hvis du vil føje oplysninger om certificeringer for leverandører til købsaftaler, skal du vælge indstillingen **Certificeringer** i købsaftaleklassifikationen.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-139">To add information about certifications for vendors to purchase agreements, select the **Certifications** option on the purchase agreement classification.</span></span> <span data-ttu-id="2b0e2-140">Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-140">Certification information can be used to generate a report that lets you monitor vendor compliance with certification requirements.</span></span>
 -   <span data-ttu-id="2b0e2-141">Hvis du vil føje oplysninger om milepæle og opgaver til købsaftaler, skal du vælge indstillingen **Aktiviteter** i købsaftaleklassifikationen.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-141">To add information about milestones and tasks to purchase agreements, select the **Activities** option on the purchase agreement classification.</span></span>
 
- 
+
 
 
 

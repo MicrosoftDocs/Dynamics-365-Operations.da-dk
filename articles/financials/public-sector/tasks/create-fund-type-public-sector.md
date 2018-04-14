@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 80a72d6e4b210ebc996f639c16e8b6fd50c11624
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf2c3d3b69a4cd98401b1f3ba029d8eef151905a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-fund-type-in-the-public-sector"></a><span data-ttu-id="d7dcf-103">Oprette en finansieringskildetype i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="d7dcf-103">Create a fund type in the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d7dcf-104">Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet.</span><span class="sxs-lookup"><span data-stu-id="d7dcf-104">Fund types are categories that you can use to group funds for detailed fiscal tracking and reporting.</span></span> <span data-ttu-id="d7dcf-105">De generelt accepterede regnskabsmæssige principper (GAAP) for statslige og lokale statslige regnskaber indeholder standarder, som du kan følge, når du opretter dit system af midler og middeltyper.</span><span class="sxs-lookup"><span data-stu-id="d7dcf-105">The Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting provides standards that you can follow when you set up your system of funds and fund types.</span></span> 
 

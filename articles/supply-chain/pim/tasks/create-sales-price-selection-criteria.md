@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: e928bcc4f9fd00bdb36dd5e61743191c23c68827
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8a651453fe9693fdb22875d860d7c118ea009b3e
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-sales-price-selection-criteria"></a><span data-ttu-id="2cf72-103">Oprette kriterier for valg af salgspris</span><span class="sxs-lookup"><span data-stu-id="2cf72-103">Create sales price selection criteria</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2cf72-104">Denne procedure viser, hvordan du opretter et valgkriterium for salgspris til attributbaserede salgsprismodeller.</span><span class="sxs-lookup"><span data-stu-id="2cf72-104">This procedure shows how to create a sales price selection criterion for attribute-based sales price models.</span></span> <span data-ttu-id="2cf72-105">Denne procedure kræver, at der er mindst én tilgængelig salgspris.</span><span class="sxs-lookup"><span data-stu-id="2cf72-105">This procedure requires that at least one sales price model be available.</span></span> <span data-ttu-id="2cf72-106">I dette eksempel bruges prismodellen for salgsprismodellen for højttalerløsningen i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="2cf72-106">This example uses the price model for the Speaker solution sales price model in the USMF demo data company.</span></span> <span data-ttu-id="2cf72-107">Normalt bruger en produktchef denne procedure.</span><span class="sxs-lookup"><span data-stu-id="2cf72-107">Typically, a product manager uses this procedure.</span></span>
 

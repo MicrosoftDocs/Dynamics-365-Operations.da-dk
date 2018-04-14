@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4cb9d1389dc2b1d71b9b18f755bbddc8e799f7ef
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 27097eccd3d3c2db03b62b27d793c3410afe276b
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formulas-and-formula-versions"></a><span data-ttu-id="51241-105">Formler og formelversioner</span><span class="sxs-lookup"><span data-stu-id="51241-105">Formulas and formula versions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="51241-106">En formel definerer materialerne, ingredienserne og udfaldet for en bestemt proces i procesproduktion.</span><span class="sxs-lookup"><span data-stu-id="51241-106">A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing.</span></span> <span data-ttu-id="51241-107">Sammen med den tilsvarende rute definerer formlen hele processen i procesproduktion.</span><span class="sxs-lookup"><span data-stu-id="51241-107">Together with the corresponding route, the formula defines the whole process in process manufacturing.</span></span> <span data-ttu-id="51241-108">Formler, der bruges til at planlægge og fremstille produkter i procesproduktion.</span><span class="sxs-lookup"><span data-stu-id="51241-108">Formulas are used to plan and produce products in process manufacturing.</span></span>
 

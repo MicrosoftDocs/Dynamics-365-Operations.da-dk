@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ea2ff4416736993f63863f3059e244998026d1cd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2e2628dcc3eee97ed9431f7d27ac47f41c29515f
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a><span data-ttu-id="5ca47-103">Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5ca47-103">Create cover and signature pages for a payments report for the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5ca47-104">Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises.</span><span class="sxs-lookup"><span data-stu-id="5ca47-104">When you create cover and signature pages for a payment report, you can specify what information should appear.</span></span> <span data-ttu-id="5ca47-105">Dette omfatter eksempelvis navne og titler på de personer, der skal godkende de foreslåede betalinger.</span><span class="sxs-lookup"><span data-stu-id="5ca47-105">This includes, for example, the names and titles of the people who should approve the proposed payments.</span></span> <span data-ttu-id="5ca47-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="5ca47-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

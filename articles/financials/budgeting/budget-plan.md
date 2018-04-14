@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="42929-105">Budgetplanlægning</span><span class="sxs-lookup"><span data-stu-id="42929-105">Budget planning</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="42929-106">Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations-funktionalitetsopdateringer i området for budgetplanlægning.</span><span class="sxs-lookup"><span data-stu-id="42929-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="42929-107">Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.</span><span class="sxs-lookup"><span data-stu-id="42929-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="42929-108">Denne øvelse vil fokusere specielt på følgende forretningsprocesser eller opgaver: -    - Oprettelse af organisationshierarkiet for budgetplanlægning og konfiguration af brugersikkerhed   - Definition af budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner   - Oprettelse og aktivering af budgetplanlægningsproces   - Oprettelse af budgetplansdokumentet ved at trække i faktiske oplysninger fra Finans    - Brug af allokeringer for at justere data i budgetplansdokument   - Redigering af budgetplansdokumentets dat i Excel</span><span class="sxs-lookup"><span data-stu-id="42929-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

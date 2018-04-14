@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a9ab627a4c1e5f9d7f335b408bb124f01e70e396
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e5419dda3d7a0850f1e9a9ad8c25621df04a08cf
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-oioubl-electronic-invoicing-denmark"></a><span data-ttu-id="3f46c-103">Konfigurere elektronisk OIOUBL-fakturering (Danmark)</span><span class="sxs-lookup"><span data-stu-id="3f46c-103">Set up OIOUBL electronic invoicing (Denmark)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3f46c-104">Denne procedure gennemgår, hvordan du konfigurerer elektronisk OIOUBL fakturering.</span><span class="sxs-lookup"><span data-stu-id="3f46c-104">This procedure walks you through setting up OIOUBL electronic invoicing.</span></span> 
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="f3600-103">Konfigurere debitorer og kredit og rykkere</span><span class="sxs-lookup"><span data-stu-id="f3600-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f3600-104">Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgående betalinger fra debitorer.</span><span class="sxs-lookup"><span data-stu-id="f3600-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="f3600-251">NSF-oplysninger.</span><span class="sxs-lookup"><span data-stu-id="f3600-251">NSF information.</span></span>                     | <span data-ttu-id="f3600-252">Konfigurer NSF-oplysninger på den bankkonto, der skal bruges, når en betaling er markeret som en NSF-transaktion på siden Rykkere.</span><span class="sxs-lookup"><span data-stu-id="f3600-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="f3600-253">Oplysninger om salgsperson</span><span class="sxs-lookup"><span data-stu-id="f3600-253">Salesperson information</span></span>              | <span data-ttu-id="f3600-254">Angiv e-mailadressen for sælgere.</span><span class="sxs-lookup"><span data-stu-id="f3600-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="f3600-255">Disse adresser vises på siden Rykkere, og du kan bruge dem til at sende e-mail til en sælger fra den pågældende side.</span><span class="sxs-lookup"><span data-stu-id="f3600-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="f3600-256">Du kan finde flere oplysninger under [Kredit og inkasso i debitorparametre](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="f3600-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 

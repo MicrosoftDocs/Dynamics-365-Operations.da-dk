@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="ee1ff-104">Salgs- og rentabilitetsperformance i Power BI-indhold</span><span class="sxs-lookup"><span data-stu-id="ee1ff-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ee1ff-105">I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Salgs og rentabilitetsperformance**.</span><span class="sxs-lookup"><span data-stu-id="ee1ff-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="ee1ff-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="ee1ff-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="ee1ff-140">Omsætning efter produkt</span><span class="sxs-lookup"><span data-stu-id="ee1ff-140">Revenue by product</span></span>     | <span data-ttu-id="ee1ff-141">Omsætning og bruttoavance efter salgskategori</span><span class="sxs-lookup"><span data-stu-id="ee1ff-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="ee1ff-142">I alt \# produkter</span><span class="sxs-lookup"><span data-stu-id="ee1ff-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="ee1ff-143">Top 10-produkter efter omsætning</span><span class="sxs-lookup"><span data-stu-id="ee1ff-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="ee1ff-144">Antal aktive produkter i alt og procentdel af antal produkter i alt</span><span class="sxs-lookup"><span data-stu-id="ee1ff-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="ee1ff-145">Omsætning i alt efter salgskategori</span><span class="sxs-lookup"><span data-stu-id="ee1ff-145">Total revenue by sales category</span></span>            | <span data-ttu-id="ee1ff-146">Antal produkter, der udgør for 80 % af omsætningen</span><span class="sxs-lookup"><span data-stu-id="ee1ff-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="ee1ff-147">Omsætning pr. periode\\*</span><span class="sxs-lookup"><span data-stu-id="ee1ff-147">Revenue by period\\*</span></span>    | <span data-ttu-id="ee1ff-148">Omsætning pr. måned</span><span class="sxs-lookup"><span data-stu-id="ee1ff-148">Revenue by month</span></span>                           | <span data-ttu-id="ee1ff-149">Stigning år for år i omsætning</span><span class="sxs-lookup"><span data-stu-id="ee1ff-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="ee1ff-147">Omsætning pr. periode\*</span><span class="sxs-lookup"><span data-stu-id="ee1ff-147">Revenue by period\*</span></span>    | <span data-ttu-id="ee1ff-148">Omsætning pr. måned</span><span class="sxs-lookup"><span data-stu-id="ee1ff-148">Revenue by month</span></span>                           | <span data-ttu-id="ee1ff-149">Stigning år for år i omsætning</span><span class="sxs-lookup"><span data-stu-id="ee1ff-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="ee1ff-150">Efterfølgende omsætningsafvigelse år for år</span><span class="sxs-lookup"><span data-stu-id="ee1ff-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="ee1ff-151">Stigning i % år for år i omsætning</span><span class="sxs-lookup"><span data-stu-id="ee1ff-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="ee1ff-152">Afvigelse i salg i alt efter kundeområde</span><span class="sxs-lookup"><span data-stu-id="ee1ff-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="ee1ff-153">Omsætning efter lokalitet</span><span class="sxs-lookup"><span data-stu-id="ee1ff-153">Revenue by location</span></span>    | <span data-ttu-id="ee1ff-154">Omsætning efter by</span><span class="sxs-lookup"><span data-stu-id="ee1ff-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="ee1ff-162">Top 15-kunder efter bruttoavance</span><span class="sxs-lookup"><span data-stu-id="ee1ff-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="ee1ff-163">Bruttoavance pr. måned, år for år</span><span class="sxs-lookup"><span data-stu-id="ee1ff-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="ee1ff-164">\\* Omsætning dette og sidste år, og vækst efter salgskategori.</span><span class="sxs-lookup"><span data-stu-id="ee1ff-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="ee1ff-164">\* Omsætning dette og sidste år, og vækst efter salgskategori.</span><span class="sxs-lookup"><span data-stu-id="ee1ff-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="ee1ff-165">Forståelse af datamodellen og enheder</span><span class="sxs-lookup"><span data-stu-id="ee1ff-165">Understanding the data model and entities</span></span>

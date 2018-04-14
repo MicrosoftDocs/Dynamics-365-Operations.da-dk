@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 331f516f3483acd79be4ef7b95b53adcfbef1ae2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d6e7c8884c0fa29b5c6efc053f2ad8171581b946
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-request-for-quotation"></a><span data-ttu-id="0a2c8-103">Oprette en tilbudsanmodning</span><span class="sxs-lookup"><span data-stu-id="0a2c8-103">Create a request for quotation</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0a2c8-104">Denne procedure viser dig, hvordan du skal oprette en tilbudsanmodning.</span><span class="sxs-lookup"><span data-stu-id="0a2c8-104">This procedure shows you how to create a request for quotation.</span></span> <span data-ttu-id="0a2c8-105">Dette vil normalt ske via en indkøbsagent.</span><span class="sxs-lookup"><span data-stu-id="0a2c8-105">This would typically be done by a purchasing agent.</span></span> <span data-ttu-id="0a2c8-106">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="0a2c8-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="0a2c8-107">Du skal have oprettet anmodningstyper, før du begynder.</span><span class="sxs-lookup"><span data-stu-id="0a2c8-107">You need to have set up solicitation types before you start.</span></span> <span data-ttu-id="0a2c8-108">Når du har fuldført denne opgave, og du har oprettet og sendt en tilbudsanmodning, kan du derefter angive svarene pr. kreditor, sammenligne dem og tildele kontrakter.</span><span class="sxs-lookup"><span data-stu-id="0a2c8-108">Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.</span></span>
 

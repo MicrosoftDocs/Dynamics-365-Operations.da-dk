@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6600176cbbcb6e30fc451613acff1fb487e7c76
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="200-percent-reducing-balance-depreciation"></a><span data-ttu-id="6e866-103">200 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="6e866-103">200 percent reducing balance depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6e866-104">Denne artikel indeholder en oversigt over afskrivningsmetoden 200 % saldoafskrivning.</span><span class="sxs-lookup"><span data-stu-id="6e866-104">This article gives an overview of the 200 percent reducing balance method of depreciation.</span></span>
 
@@ -70,6 +69,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="6e866-136">**Regnskabsperiode** bogfører det samlede afskrivningsbeløb, der er beregnet for regnskabsåret.</span><span class="sxs-lookup"><span data-stu-id="6e866-136">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="6e866-137">Dette beløb periodiseres for de regnskabsperioder, der er defineret på siden **Regnskabskalendere**.</span><span class="sxs-lookup"><span data-stu-id="6e866-137">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a><span data-ttu-id="6e866-138">Eksempel på en 200 % saldoafskrivning</span><span class="sxs-lookup"><span data-stu-id="6e866-138">Example of 200% reducing balance depreciation</span></span>
+
 |                                |        |
 |--------------------------------|--------|
 | <span data-ttu-id="6e866-139">Anskaffelsesomkostning</span><span class="sxs-lookup"><span data-stu-id="6e866-139">Acquisition cost</span></span>               | <span data-ttu-id="6e866-140">11.000</span><span class="sxs-lookup"><span data-stu-id="6e866-140">11,000</span></span> |

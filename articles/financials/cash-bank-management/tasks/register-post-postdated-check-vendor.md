@@ -16,15 +16,15 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 632b04848cdb6d71e7e7dbd6c6bc710d0577950a
-ms.openlocfilehash: 776121532c42fde8b1c3e29b4af0bf833952c0cd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cd00227ed6d288a4b2041630bc7a604ac94d3c70
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="0de0d-103">Registrere og bogføre en fremdateret check for en kreditor</span><span class="sxs-lookup"><span data-stu-id="0de0d-103">Register and post a postdated check for a vendor</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0de0d-104">Du kan registrere detaljerne omkring en fremdateret check, før du udsteder checken til en leverandør ved brug af kladdebilaget.</span><span class="sxs-lookup"><span data-stu-id="0de0d-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="0de0d-105">Du kan også bogføre den fremdaterede check og generere økonomiske bevægelser.</span><span class="sxs-lookup"><span data-stu-id="0de0d-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="0de0d-106">Inden du registrerer og bogfører en fremdateret check fra en kunde, skal du udføre følgende opgave:</span><span class="sxs-lookup"><span data-stu-id="0de0d-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
 

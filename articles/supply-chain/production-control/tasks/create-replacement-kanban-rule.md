@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5b27200a8d56192d473887f01076eced0f92e4c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b0bdabb9c2a4362c55251b67c491dd3779fd036
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-replacement-kanban-rule"></a><span data-ttu-id="4ccc7-103">Oprette en kanban-regel til erstatning</span><span class="sxs-lookup"><span data-stu-id="4ccc7-103">Create a replacement kanban rule</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4ccc7-104">Denne procedure drejer sig om at erstatte en eksisterende kanban-regel med en ny kanban-regel på en bestemt dato.</span><span class="sxs-lookup"><span data-stu-id="4ccc7-104">This procedure focuses on replacing an existing kanban rule with a new kanban rule on a specific date.</span></span> <span data-ttu-id="4ccc7-105">Dette er nyttigt, når ændringer af produktionsflow eller genopfyldningregler skal koordineres og planlægges.</span><span class="sxs-lookup"><span data-stu-id="4ccc7-105">This is useful when changes in the production flow or replenishment rules need to be coordinated and scheduled.</span></span> <span data-ttu-id="4ccc7-106">Det demodatafirma, der bruges til at oprette proceduren, er USMF.</span><span class="sxs-lookup"><span data-stu-id="4ccc7-106">The demo data company used to create procedure is USMF.</span></span> <span data-ttu-id="4ccc7-107">Denne procedure er beregnet til procesingeniøren eller værdistrømlederen, når de forbereder produktionen til et nyt produktionsflow eller en ny genopfyldningsregel.</span><span class="sxs-lookup"><span data-stu-id="4ccc7-107">This procedure is intended for the process engineer or the value stream manager when they prepare production for a changed production flow or a new replenishment rule.</span></span> <span data-ttu-id="4ccc7-108">Denne opgave erstatter kanban-regel 000022 med en ny regel og øger det maksimale antal fra 48 til 100 for den nye regel.</span><span class="sxs-lookup"><span data-stu-id="4ccc7-108">This task replaces kanban rule 000022 with a new rule and increases the maximum quantity from 48 to 100 for the new rule.</span></span>
 

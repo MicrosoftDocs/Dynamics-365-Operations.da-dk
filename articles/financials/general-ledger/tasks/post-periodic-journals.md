@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 8eae11e0501db78e467e517b29a2bc19f5765e75
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 57b73c43be6ef4dda82cb919d4eb83eeae9c3633
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="post-periodic-journals"></a><span data-ttu-id="93cfb-103">Bogføre periodiske kladder</span><span class="sxs-lookup"><span data-stu-id="93cfb-103">Post periodic journals</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="93cfb-104">Periodiske kladder kaldes også gentagelseskladder, da beløb, tekst og andre oplysninger gentages, hver gang den periodiske kladde hentes.</span><span class="sxs-lookup"><span data-stu-id="93cfb-104">Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved.</span></span> <span data-ttu-id="93cfb-105">Når du opretter den periodiske kladde, angiver du periodeintervallet for gentagelsen, eksempelvis dage eller måneder.</span><span class="sxs-lookup"><span data-stu-id="93cfb-105">When you create the periodic journal, you specify the period interval for the recurrence, such as days or months.</span></span> <span data-ttu-id="93cfb-106">Denne opgaveguide opretter en periodisk kladde med en månedlig gentagelse.</span><span class="sxs-lookup"><span data-stu-id="93cfb-106">This task guide will create a periodic journal with a monthly recurrence.</span></span>
 

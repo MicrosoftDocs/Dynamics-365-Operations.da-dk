@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 507d72973cef9a995d80971cdff6378561b6b4fb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aa88d18a8bed26e669a1e216105141bb51767249
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="derived-financial-hierarchies-in-the-public-sector"></a><span data-ttu-id="41f4c-103">Afledte finansielle hierarkier i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="41f4c-103">Derived financial hierarchies in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="41f4c-104">I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="41f4c-104">This article describes the derived financial hierarchies functionality that is available for the public sector.</span></span> 
 
@@ -47,7 +46,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="41f4c-118">**Konfigurere filterregler** Brug siden **Afledte økonomiske hierarkier** til at oprette filterregler for hovedkonti og økonomiske dimensionsværdier, der er knyttet til noderne "Medarbejdersundhed" og "Medarbejderuddannelse" i det afledte finansielle hierarki for "Medarbejderprogrammer".</span><span class="sxs-lookup"><span data-stu-id="41f4c-118">**Set up filter rules:** Use the **Derived financial hierarchies** page to create filter rules for the main accounts and financial dimension values associated with the “Employee wellness” and “Employee education” nodes in the “Employee programs” derived financial hierarchy.</span></span> <span data-ttu-id="41f4c-119">**Tip!** Hvis du vil angive mere end én dimensionsværdi i et filter, skal du bruge et komma uden mellemrum som skilletegn.</span><span class="sxs-lookup"><span data-stu-id="41f4c-119">**Tip:** To enter more than one dimension value in a filter, use a comma without spaces as a separator.</span></span> <span data-ttu-id="41f4c-120">Angiv for eksempel 100,110 eller Frynsegoder,Forsikring.</span><span class="sxs-lookup"><span data-stu-id="41f4c-120">For example, enter 100,110 or Benefits,Insurance.</span></span>
 -   <span data-ttu-id="41f4c-121">**Analysere bogførte transaktionsdata:** I de filtrerede resultater skal du se på kontonumre og kontooplysninger og oplysninger om økonomisk dimension.</span><span class="sxs-lookup"><span data-stu-id="41f4c-121">**Analyze posted transaction data:** In the filter results, view account numbers and their account and financial dimension details.</span></span>
 
- 
+
 
 
 

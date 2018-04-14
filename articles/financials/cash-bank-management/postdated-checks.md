@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad4212584b0f9062edbd5c13f4c75eaa03c853f7
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="postdated-checks"></a><span data-ttu-id="3d938-105">Fremdaterede checks</span><span class="sxs-lookup"><span data-stu-id="3d938-105">Postdated checks</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3d938-106">Denne artikel indeholder oplysninger om understøttelse af fremdaterede checks i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="3d938-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="3d938-107">Fremdaterede checks er checks, der udstedes med det formål at foretage og modtage betalinger på en fremtidig dato.</span><span class="sxs-lookup"><span data-stu-id="3d938-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="3d938-108">Derfor kan checken ikke indløses før den angivne dato.</span><span class="sxs-lookup"><span data-stu-id="3d938-108">Therefore, the check can't be cashed until the specified date.</span></span>
 
@@ -76,14 +75,14 @@ ms.lasthandoff: 03/26/2018
 <td><span data-ttu-id="3d938-132">Du kan annullere en bogført, fremdateret check i disse situationer: - Checken returneres af banken.</span><span class="sxs-lookup"><span data-stu-id="3d938-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
 <span data-ttu-id="3d938-133">- Checken anvendes til en forkert faktura.</span><span class="sxs-lookup"><span data-stu-id="3d938-133">- The check is applied to an incorrect invoice.</span></span>
 <span data-ttu-id="3d938-134">- Der modtages et kontantbeløb til dækning af checkbeløbet.</span><span class="sxs-lookup"><span data-stu-id="3d938-134">- A cash payment is made against the check.</span></span>
-</td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="3d938-135">Stands betaling af en fremdateret check.</span><span class="sxs-lookup"><span data-stu-id="3d938-135">Stop payment for a postdated check</span></span></td>
-<td><span data-ttu-id="3d938-136">Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren.</span><span class="sxs-lookup"><span data-stu-id="3d938-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="3d938-137">Du kan kun standse betalingen, hvis checken ikke allerede er clearet.</span><span class="sxs-lookup"><span data-stu-id="3d938-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td><span data-ttu-id="3d938-135">Stands betaling af en fremdateret check.</span><span class="sxs-lookup"><span data-stu-id="3d938-135">Stop payment for a postdated check</span></span></td>
+  <td><span data-ttu-id="3d938-136">Du kan standse betalingen af en fremdateret check, der er udstedt til en leverandør, af forskellige årsager, f.eks. hvis du mangler midler at betale med, hvis aftalen med leverandøren er ændret, hvis leverandøren leverer defekte varer, eller hvis du har returneret varer til leverandøren.</span><span class="sxs-lookup"><span data-stu-id="3d938-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="3d938-137">Du kan kun standse betalingen, hvis checken ikke allerede er clearet.</span><span class="sxs-lookup"><span data-stu-id="3d938-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

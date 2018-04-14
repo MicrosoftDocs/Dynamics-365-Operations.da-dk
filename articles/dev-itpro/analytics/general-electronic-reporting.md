@@ -19,17 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ea9550b7209064a2842d7e5efe55e9e51c23b9f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: eeea5f6f9860bf109bb3063c5a2cc0517192e95d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-overview"></a><span data-ttu-id="f07a2-104">Oversigt over elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="f07a2-104">Electronic reporting overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f07a2-105">Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="f07a2-105">This topic provides an overview of the Electronic reporting (ER) tool.</span></span> <span data-ttu-id="f07a2-106">Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen.</span><span class="sxs-lookup"><span data-stu-id="f07a2-106">It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.</span></span>
 
@@ -287,6 +286,7 @@ ms.lasthandoff: 11/03/2017
 <span data-ttu-id="f07a2-344">Med ER kan du automatisk implementere ændringer af den nyeste version af basiskomponenten i den aktuelle kladdeversion af den afledte komponent.</span><span class="sxs-lookup"><span data-stu-id="f07a2-344">ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component.</span></span> <span data-ttu-id="f07a2-345">Denne proces kaldes *rebasering*.</span><span class="sxs-lookup"><span data-stu-id="f07a2-345">This process is known as *rebasing*.</span></span> <span data-ttu-id="f07a2-346">F.eks. kan en ny lovmæssig ændring, der er indført i den nyeste version af formatet, der blev importeret fra LCS, automatisk flettes med den tilpassede version af dette format af det elektroniske dokument.</span><span class="sxs-lookup"><span data-stu-id="f07a2-346">For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document.</span></span> <span data-ttu-id="f07a2-347">Ændringerne, der ikke kan flettes automatisk, anses for konflikter.</span><span class="sxs-lookup"><span data-stu-id="f07a2-347">Any changes that can’t be merged automatically are considered conflicts.</span></span> <span data-ttu-id="f07a2-348">Disse konflikter præsenteres for manuel løsning i designerværktøjet for den pågældende komponent.</span><span class="sxs-lookup"><span data-stu-id="f07a2-348">These conflicts are presented for manual resolution in the designer tool for the appropriate component.</span></span> <span data-ttu-id="f07a2-349">For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavevejledningen **ER Opgrader format ved at implementere en ny basisversion af formatet** (del af forretningsprocessen **7.5.5.3 Anskaffe/udvikle ændret IT-tjeneste/løsningskomponent (10683)**).</span><span class="sxs-lookup"><span data-stu-id="f07a2-349">To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).</span></span>
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a><span data-ttu-id="f07a2-350">Oversigt over ER-konfigurationer, der leveres i Finance and Operations-løsningen</span><span class="sxs-lookup"><span data-stu-id="f07a2-350">List of ER configurations that are delivered in the Finance and Operations solution</span></span>
+
 | <span data-ttu-id="f07a2-351">Domænespecifikke datamodelkonfigurationer: titel</span><span class="sxs-lookup"><span data-stu-id="f07a2-351">Domain-specific data model configurations: Title</span></span> | <span data-ttu-id="f07a2-352">Domæne</span><span class="sxs-lookup"><span data-stu-id="f07a2-352">Domain</span></span>                | <span data-ttu-id="f07a2-353">Datamodel-afhængige formatkonfigurationer: titel</span><span class="sxs-lookup"><span data-stu-id="f07a2-353">Data model–dependent format configurations: Title</span></span> | <span data-ttu-id="f07a2-354">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="f07a2-354">Description</span></span>                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | <span data-ttu-id="f07a2-355">Revisionsfilmodel</span><span class="sxs-lookup"><span data-stu-id="f07a2-355">Audit file model</span></span>                                 | <span data-ttu-id="f07a2-356">Finansiel revision</span><span class="sxs-lookup"><span data-stu-id="f07a2-356">Financial audit</span></span>       |                                                   |                                                                    |

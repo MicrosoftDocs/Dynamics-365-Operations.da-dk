@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cab69222c5004e6a62c632a9e85085403434ffd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b60dbe15eca10511f4aaaf472b512eb003fbf6bc
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="747cc-103">Bekræfte salgsordrer</span><span class="sxs-lookup"><span data-stu-id="747cc-103">Confirm sales orders</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="747cc-104">Denne fremgangsmåde viser, hvordan du bekræfter salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="747cc-104">This procedure demonstrates how to confirm sales orders.</span></span> <span data-ttu-id="747cc-105">Du får vist, hvordan du bekræfter en enkelt ordre, og hvordan du bekræfter flere ordrer på én gang.</span><span class="sxs-lookup"><span data-stu-id="747cc-105">You’ll be shown how to confirm a single order, and how to confirm multiple orders at once.</span></span> <span data-ttu-id="747cc-106">Disse opgaver udføres normalt af en salgsordrebehandler.</span><span class="sxs-lookup"><span data-stu-id="747cc-106">These tasks would typically be carried out by a sales order processor.</span></span> <span data-ttu-id="747cc-107">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="747cc-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="747cc-108">Kontrollér, at der er flere åbne salgsordrer for samme debitor, før du starter.</span><span class="sxs-lookup"><span data-stu-id="747cc-108">Before you start, make sure there are several open sales orders for the same customer.</span></span> <span data-ttu-id="747cc-109">Hvis du bruger USMF, kan du bruge debitor US-027.</span><span class="sxs-lookup"><span data-stu-id="747cc-109">If you’re using USMF, you can use customer US-027.</span></span>
 

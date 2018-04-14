@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 245fc2ef39868856e4dc573e15341bcbea6a651c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ae5d9cb144dfd21bf3388d7cc6347d3dd41019b1
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-customer-accounts-for-oioubl-electronic-invoicing-denmark"></a><span data-ttu-id="db75b-103">Konfigurere debitorkonti til elektronisk OIOUBL-fakturering (Danmark)</span><span class="sxs-lookup"><span data-stu-id="db75b-103">Set up customer accounts for OIOUBL electronic invoicing (Denmark)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="db75b-104">Denne opgave gennemgår, hvordan du konfigurerer en debitorkonto for elektronisk OIOUBL fakturering.</span><span class="sxs-lookup"><span data-stu-id="db75b-104">This task walks you through how to set up a customer account for OIOUBL electronic invoicing.</span></span> 
 

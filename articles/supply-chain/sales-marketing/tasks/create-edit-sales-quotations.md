@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: 7ffa4fe8d87db5b3f8293ec9dbc042496d09d6e3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bdb4758c80cb0212f0b58595c99b8fa2f715fecf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-edit-sales-quotations"></a><span data-ttu-id="43b05-103">Oprette og redigere salgstilbud</span><span class="sxs-lookup"><span data-stu-id="43b05-103">Create and edit sales quotations</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="43b05-104">Denne procedure viser, hvordan du opretter og opdaterer et salgstilbud.</span><span class="sxs-lookup"><span data-stu-id="43b05-104">This procedure demonstrates how to create and update a sales quotation.</span></span> <span data-ttu-id="43b05-105">Du kan køre procedure på dine egne data eller i demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="43b05-105">You can run this procedure on your own data or in demo data company USMF.</span></span>
 

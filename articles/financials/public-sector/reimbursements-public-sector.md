@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f2c05473ef3d5861049c2481387df518d8ec9fd8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 33611e44551f4e214f23ac0301465cd890adde14
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reimbursements-in-the-public-sector"></a><span data-ttu-id="f8cbd-103">Refusioner i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="f8cbd-103">Reimbursements in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f8cbd-104">I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="f8cbd-104">This topic answers common questions related to reimbursements in the public sector.</span></span> 
 

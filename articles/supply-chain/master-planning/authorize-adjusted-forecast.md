@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ce38e94ae4c7b28b4e182018add7c046f685e46
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: df1abf5029917c40392922f0d018d13bb54045ac
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="authorize-an-adjusted-forecast"></a><span data-ttu-id="16a13-105">Godkende en justeret prognose</span><span class="sxs-lookup"><span data-stu-id="16a13-105">Authorize an adjusted forecast</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="16a13-106">Det er ikke alle prognosedata, der skal godkendes med det samme.</span><span class="sxs-lookup"><span data-stu-id="16a13-106">Not all forecast data must be authorized immediately.</span></span> <span data-ttu-id="16a13-107">I denne artikel forklares, hvordan du kan angive den periode, som en prognose er godkendt for.</span><span class="sxs-lookup"><span data-stu-id="16a13-107">This article explains how you can specify the period that a forecast is authorized for.</span></span> <span data-ttu-id="16a13-108">Den forklarer også, hvordan du kan godkende prognosen for specifikke firmaer og prognosemodeller.</span><span class="sxs-lookup"><span data-stu-id="16a13-108">It also explains how you can authorize the forecast for specific companies and forecast models.</span></span>
 

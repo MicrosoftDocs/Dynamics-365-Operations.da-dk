@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b00c7f2ee619bcae03f427a41162ad11999d68f5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 66251ed112dae9db73485df806be0aca5957e78e
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-in-the-public-sector"></a><span data-ttu-id="df22d-104">Indkøb og forsyning i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="df22d-104">Procurement and sourcing in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="df22d-105">Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning.</span><span class="sxs-lookup"><span data-stu-id="df22d-105">This overview introduces you to the public sector Procurement and sourcing functionality.</span></span> <span data-ttu-id="df22d-106">Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb.</span><span class="sxs-lookup"><span data-stu-id="df22d-106">This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.</span></span>
 
@@ -136,7 +135,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
- 
+
 
 <span data-ttu-id="df22d-172">Du kan finde yderligere oplysninger i [Kreditorbetalinger i den offentlige sektor](../../supply-chain/procurement/procurement-sourcing-overview.md) og [Indkøb og forsyning i den offentlige sektor](accounts-payable-public-sector.md).</span><span class="sxs-lookup"><span data-stu-id="df22d-172">For more information, see [Procurement and sourcing](../../supply-chain/procurement/procurement-sourcing-overview.md) and [Accounts payable in the public sector](accounts-payable-public-sector.md).</span></span>
 

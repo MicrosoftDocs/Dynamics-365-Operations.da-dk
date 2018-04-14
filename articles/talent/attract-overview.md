@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b64a97897a1ea75eb2a9681bc9357433a570dd74
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 45383a32afe53f4005e329382ddc0fe511799477
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="attract-overview"></a><span data-ttu-id="ec347-104">Attract-oversigt</span><span class="sxs-lookup"><span data-stu-id="ec347-104">Attract overview</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="ec347-105">Attract indeholder funktioner til at administrere processen til ansættelse af nye talenter.</span><span class="sxs-lookup"><span data-stu-id="ec347-105">Attract provides capabilities to manage the process of hiring new talent.</span></span> <span data-ttu-id="ec347-106">Kandidaterne kan tilføjes til åbne job og avancere fra fase til fase, indtil et tilbud er udvidet, eller ansøgningen afvises.</span><span class="sxs-lookup"><span data-stu-id="ec347-106">Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected.</span></span> <span data-ttu-id="ec347-107">I de enkelte faser bevæger kandidaterne sig gennem aktiviteter som screeningsopkald, vurderinger eller planlægningen af samtaler.</span><span class="sxs-lookup"><span data-stu-id="ec347-107">In each stage, candidates move through activities like screening calls, assessments, or the scheduling of interviews.</span></span> <span data-ttu-id="ec347-108">Når de ansøger, får kandidaterne en mail, der inviterer dem til at logge på Attract, hvor de kan følge status for jobbet, deres ansøgning og reagere på de opgaver, der tildeles til dem.</span><span class="sxs-lookup"><span data-stu-id="ec347-108">After they apply, candidates get an email inviting them to sign in to Attract, where they can follow the status of the job, their application, and respond to any tasks that are assigned to them.</span></span>
 

@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 5bcd02e08a4ce5b601615b39bf95362cf92d3fec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e8f97dbd3f60be72793c04eb729623321016f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="c81d1-103">Oprette påmindelser</span><span class="sxs-lookup"><span data-stu-id="c81d1-103">Create alerts</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="c81d1-104">Kom godt i gang</span><span class="sxs-lookup"><span data-stu-id="c81d1-104">Getting started</span></span>
 <span data-ttu-id="c81d1-105">Før du opretter en påmindelsesregel, skal du beslutte, hvornår og i hvilke situationer du vil modtage påmindelser.</span><span class="sxs-lookup"><span data-stu-id="c81d1-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="c81d1-106">Når du ved, hvilke hændelser du vil have besked om, skal du i Microsoft Dynamics 365 for Finance and Operations finde den side, hvor de data vises, der udløser den pågældende hændelse.</span><span class="sxs-lookup"><span data-stu-id="c81d1-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="c81d1-107">Hændelsen kan være en dato, der bliver nået, eller en bestemt ændring, der opstår.</span><span class="sxs-lookup"><span data-stu-id="c81d1-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="c81d1-108">Derfor skal du finde den side, hvor datoen er angivet, eller hvor det felt, der ændres, eller posten, der oprettes, bliver vist.</span><span class="sxs-lookup"><span data-stu-id="c81d1-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="c81d1-109">Når du har disse oplysninger, kan du oprette påmindelsesreglen.</span><span class="sxs-lookup"><span data-stu-id="c81d1-109">After you have this information, you can create the alert rule.</span></span>

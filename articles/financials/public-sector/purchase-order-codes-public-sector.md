@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b966c7c6ffc23aff08fb9018b80eb921ffa60839
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 698d5d00f7aa43acd593016d47ffa1a8283de552
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-order-codes-in-the-public-sector"></a><span data-ttu-id="fc539-104">Indkøbsordrekoder i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="fc539-104">Purchase order codes in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc539-105">Denne artikel indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="fc539-105">This article provides information about the codes and special messages that can be used with confirming purchase orders.</span></span> <span data-ttu-id="fc539-106">En bekræftende indkøbsordre omgår den typiske indkøbsproces.</span><span class="sxs-lookup"><span data-stu-id="fc539-106">A confirming purchase order bypasses the typical purchasing process.</span></span>
 
@@ -44,7 +43,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="fc539-115">Hvis du ændrer en bekræftende PO-kode, der allerede er tildelt til en indkøbsordre, erstatter den nye kode den gamle.</span><span class="sxs-lookup"><span data-stu-id="fc539-115">If you change a confirming PO code that was already assigned to a purchase order, the new code will replace the old code.</span></span> <span data-ttu-id="fc539-116">Denne ændring påvirker både nye indkøbsordrer og produktionsordrer, der er bogført.</span><span class="sxs-lookup"><span data-stu-id="fc539-116">This change affects both new purchase orders and purchase orders that have been posted.</span></span> <span data-ttu-id="fc539-117">En indkøbsordre havde f.eks. en bekræftende PO-kode for **Bekræfter**, da den blev bogført, men den pågældende kode er senere ændret til **Nødstilfælde**.</span><span class="sxs-lookup"><span data-stu-id="fc539-117">For example, a purchase order had a confirming PO code of **Confirming** when it was posted, but that code is later changed to **Emergency**.</span></span> <span data-ttu-id="fc539-118">I dette tilfælde vil hver indkøbsordre, der havde koden **Bekræfter**, nu have koden **Nødstilfælde** i stedet.</span><span class="sxs-lookup"><span data-stu-id="fc539-118">In this case, every purchase order that had the **Confirming** code will now have the **Emergency** code instead.</span></span>
 -   <span data-ttu-id="fc539-119">Du kan oprette meddelelser på forskellige sprog.</span><span class="sxs-lookup"><span data-stu-id="fc539-119">You can create messages in different languages.</span></span> <span data-ttu-id="fc539-120">Denne funktion kan være en hjælp, når du køber fra handlende i andre lande/områder.</span><span class="sxs-lookup"><span data-stu-id="fc539-120">This feature is helpful when you are purchasing from merchants in other countries or regions.</span></span> <span data-ttu-id="fc539-121">Organisationen har f.eks. hjemsted i et engelsktalende land eller område, og du vil oprette en spansk meddelelse for bekræftende indkøbsordrer, som har en bekræftende PO-kode **Bekræfter**.</span><span class="sxs-lookup"><span data-stu-id="fc539-121">For example, your organization is located in an English-speaking country or region, and you want to create a Spanish message for confirming purchase orders that have a confirming PO code **Confirming**.</span></span>
 
- 
+
 
 
 

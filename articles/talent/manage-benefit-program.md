@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 3097bd52377a6c431cef6344a6b504fda9f85550
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7344fad7c4dffabd99993924604e2e497bebc5ef
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-and-manage-a-benefits-program"></a><span data-ttu-id="0c42e-104">Definere og administrere et frynsegodeprogram</span><span class="sxs-lookup"><span data-stu-id="0c42e-104">Define and manage a benefits program</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="0c42e-105">Personale indeholder en række værktøjer, der kan bruges til at konfigurere og vedligeholde frynsegoder, fradrag og arbejderes kompensationsplaner, som en organisation tilbyder eller behandler for sine ansatte.</span><span class="sxs-lookup"><span data-stu-id="0c42e-105">Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers.</span></span> <span data-ttu-id="0c42e-106">Dette emne indeholder oplysninger om, hvordan du konfigurerer og administrerer frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="0c42e-106">This topic provides information about how to set up and manage benefits.</span></span>
 

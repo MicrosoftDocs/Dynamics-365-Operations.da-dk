@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a9d0d9a3f278a09e89311ee75b6f95fb4f3b04cb
-ms.openlocfilehash: 7431d6d1e090bf1dcab48de741b7d08a52209b76
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c94f731cbdd62d51a21a42e8fcc86c5711c0e965
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="deliver-an-employee-benefits-program"></a><span data-ttu-id="30ed7-103">Levere et frynsegodeprogram for medarbejdere</span><span class="sxs-lookup"><span data-stu-id="30ed7-103">Deliver an employee benefits program</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="30ed7-104">Denne opgave viser, hvordan du kan oprette frynsegodeelementer, der skal bruges, når du opretter et nyt frynsegode.</span><span class="sxs-lookup"><span data-stu-id="30ed7-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="30ed7-105">Det demodatafirma, der bruges til at oprette denne opgave, er USMF.</span><span class="sxs-lookup"><span data-stu-id="30ed7-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="30ed7-106">Opgaven er beregnet til en leder for kompensation og frynsegoder.</span><span class="sxs-lookup"><span data-stu-id="30ed7-106">This task is intended for a Compensation and Benefits manager.</span></span>
 

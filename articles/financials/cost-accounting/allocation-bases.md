@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: fe0be9164a285ce3884d1f35e99bdad80eb8b581
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="aeda7-104">Fordelingsgrundlag</span><span class="sxs-lookup"><span data-stu-id="aeda7-104">Allocation bases</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="aeda7-105">Et fordelingsgrundlag er det grundlag, som omkostningsregnskabet fordeler faste omkostninger på.</span><span class="sxs-lookup"><span data-stu-id="aeda7-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="aeda7-106">Et fordelingsgrundlag kan være et antal, som f.eks. maskintimer, der bruges, kilowatttimer (kWh), der forbruges eller areal, der er optaget.</span><span class="sxs-lookup"><span data-stu-id="aeda7-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="aeda7-107">Fordelingsgrundlag bruges oftest til at tildele faste omkostninger til lager, der er produceret.</span><span class="sxs-lookup"><span data-stu-id="aeda7-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="aeda7-108">F.eks. fordeler en IT-afdeling sine udgifter i overensstemmelse med antallet af computere, som hver afdeling bruger.</span><span class="sxs-lookup"><span data-stu-id="aeda7-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 
@@ -424,9 +424,11 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="aeda7-775">Her er et eksempel på en regel til fordeling af omkostninger, hvis fordelingsbasis for formlen for Elektricitet, der er fastsat, er tildelt som fordelingsgrundlag i den.</span><span class="sxs-lookup"><span data-stu-id="aeda7-775">Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.</span></span>
 
-| <span data-ttu-id="aeda7-776">Omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="aeda7-776">Cost object</span></span> |  <span data-ttu-id="aeda7-777">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="aeda7-777">Description</span></span>  | <span data-ttu-id="aeda7-778">Størrelsesorden</span><span class="sxs-lookup"><span data-stu-id="aeda7-778">Magnitude</span></span> | <span data-ttu-id="aeda7-779">Fordelingsfaktor</span><span class="sxs-lookup"><span data-stu-id="aeda7-779">Allocation factor</span></span>                |
-|-------------|----|-----------|----------------------------------|
-| <span data-ttu-id="aeda7-780">CC001</span><span class="sxs-lookup"><span data-stu-id="aeda7-780">CC001</span></span>       | <span data-ttu-id="aeda7-781">Personale</span><span class="sxs-lookup"><span data-stu-id="aeda7-781">HR</span></span> | <span data-ttu-id="aeda7-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="aeda7-782">1,837.50</span></span>  | <span data-ttu-id="aeda7-783">(1.837,50 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="aeda7-784">CC002</span><span class="sxs-lookup"><span data-stu-id="aeda7-784">CC002</span></span>       | <span data-ttu-id="aeda7-785">FI</span><span class="sxs-lookup"><span data-stu-id="aeda7-785">FI</span></span> | <span data-ttu-id="aeda7-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="aeda7-786">3,075.00</span></span>  | <span data-ttu-id="aeda7-787">(3.075,00 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="aeda7-788">CC003</span><span class="sxs-lookup"><span data-stu-id="aeda7-788">CC003</span></span>       | <span data-ttu-id="aeda7-789">LO</span><span class="sxs-lookup"><span data-stu-id="aeda7-789">IT</span></span> | <span data-ttu-id="aeda7-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="aeda7-790">13,250.00</span></span> | <span data-ttu-id="aeda7-791">(13.250,00 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
+| <span data-ttu-id="aeda7-776">Omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="aeda7-776">Cost object</span></span> | <span data-ttu-id="aeda7-777">Betegnelse</span><span class="sxs-lookup"><span data-stu-id="aeda7-777">Description</span></span> | <span data-ttu-id="aeda7-778">Størrelsesorden</span><span class="sxs-lookup"><span data-stu-id="aeda7-778">Magnitude</span></span> |        <span data-ttu-id="aeda7-779">Fordelingsfaktor</span><span class="sxs-lookup"><span data-stu-id="aeda7-779">Allocation factor</span></span>         |
+|-------------|-------------|-----------|----------------------------------|
+|    <span data-ttu-id="aeda7-780">CC001</span><span class="sxs-lookup"><span data-stu-id="aeda7-780">CC001</span></span>    |     <span data-ttu-id="aeda7-781">Personale</span><span class="sxs-lookup"><span data-stu-id="aeda7-781">HR</span></span>      | <span data-ttu-id="aeda7-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="aeda7-782">1,837.50</span></span>  | <span data-ttu-id="aeda7-783">(1.837,50 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="aeda7-784">CC002</span><span class="sxs-lookup"><span data-stu-id="aeda7-784">CC002</span></span>    |     <span data-ttu-id="aeda7-785">FI</span><span class="sxs-lookup"><span data-stu-id="aeda7-785">FI</span></span>      | <span data-ttu-id="aeda7-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="aeda7-786">3,075.00</span></span>  | <span data-ttu-id="aeda7-787">(3.075,00 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="aeda7-788">CC003</span><span class="sxs-lookup"><span data-stu-id="aeda7-788">CC003</span></span>    |     <span data-ttu-id="aeda7-789">LO</span><span class="sxs-lookup"><span data-stu-id="aeda7-789">IT</span></span>      | <span data-ttu-id="aeda7-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="aeda7-790">13,250.00</span></span> | <span data-ttu-id="aeda7-791">(13.250,00 ÷ 18.162,50) × beløb</span><span class="sxs-lookup"><span data-stu-id="aeda7-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
 

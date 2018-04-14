@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 94942b4dc499c225fd636e7080ef253d5370b96e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0c9c868ff68369817be8f5951b7a9ca6da488067
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="adjust-project-transactions"></a><span data-ttu-id="d6a69-103">Reguler projektposteringer</span><span class="sxs-lookup"><span data-stu-id="d6a69-103">Adjust project transactions</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d6a69-104">Denne opgaveguide viser, hvordan du justerer en transaktion på et projekt.</span><span class="sxs-lookup"><span data-stu-id="d6a69-104">This task guide shows you how to adjust a transaction on a project.</span></span> <span data-ttu-id="d6a69-105">Du kan dog regulere projekttransaktioner én ad gangen, eller du kan vælge på en liste over alle projekttransaktioner.</span><span class="sxs-lookup"><span data-stu-id="d6a69-105">However, you can adjust project transactions one at a time, or select from a list of all project transactions.</span></span> <span data-ttu-id="d6a69-106">Denne opgave fuldføres normalt af projektlederen.</span><span class="sxs-lookup"><span data-stu-id="d6a69-106">This task is usually completed by the Project supervisor.</span></span> <span data-ttu-id="d6a69-107">Opgaveguiden bruger USSI-datasættet.</span><span class="sxs-lookup"><span data-stu-id="d6a69-107">This task guide uses the USSI data set.</span></span>
 

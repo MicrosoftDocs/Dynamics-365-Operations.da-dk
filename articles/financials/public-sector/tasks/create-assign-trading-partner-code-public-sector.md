@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e57db8f4b692aa9c27916625897e268f63031782
-ms.openlocfilehash: 27ea0937f33c40a61e03cb8670ad790ef87dd4cf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 15f9023f5a269ea9dd68bb4aa0ddc391b55c9df7
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a><span data-ttu-id="7372c-103">Oprette og tildele en handelspartnerkode i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="7372c-103">Create and assign a trading partner code in the public sector</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7372c-104">Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med.</span><span class="sxs-lookup"><span data-stu-id="7372c-104">Create a trading partner code and assign it to a government agency that your organization does business with.</span></span> <span data-ttu-id="7372c-105">Kundeposten for agenturet skal være oprettet, før du kan udføre denne opgave.</span><span class="sxs-lookup"><span data-stu-id="7372c-105">The customer record for the agency must exist before you can perform this task.</span></span> <span data-ttu-id="7372c-106">Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="7372c-106">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 

@@ -20,17 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 495f867385d4f842e9cdd2c78432ccdcd27919cd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4b50a0499fad343cdcdbf671a6ee2cda55f1627e
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a><span data-ttu-id="4eaa6-103">Planlægning af engangsleverandører i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="4eaa6-103">Plan for one-time vendors in the public sector</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4eaa6-104">Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.</span><span class="sxs-lookup"><span data-stu-id="4eaa6-104">This article explains how to prepare to import and create multiple one-time vendors and invoices.</span></span> 
 
@@ -88,6 +87,7 @@ ms.lasthandoff: 02/07/2018
 
 
 <span data-ttu-id="4eaa6-178">**Distributionssektion**</span><span class="sxs-lookup"><span data-stu-id="4eaa6-178">**Distributions section**</span></span>
+
 | <span data-ttu-id="4eaa6-179">Felt</span><span class="sxs-lookup"><span data-stu-id="4eaa6-179">Field</span></span>                                                | <span data-ttu-id="4eaa6-180">Oplysninger</span><span class="sxs-lookup"><span data-stu-id="4eaa6-180">Details</span></span>                                  |
 |------------------------------------------------------|------------------------------------------|
 | <span data-ttu-id="4eaa6-181">Antal</span><span class="sxs-lookup"><span data-stu-id="4eaa6-181">Number</span></span>                                               | <span data-ttu-id="4eaa6-182">Regnskabsfordelingslinjenummer</span><span class="sxs-lookup"><span data-stu-id="4eaa6-182">Accounting distribution line number</span></span>      |

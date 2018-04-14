@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9c9811b348d81cd735c5b75ca48e0a56a8d52be
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d785922d1c6775d95ad5697eb6a872434e59c8e4
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-free-text-invoice-template"></a><span data-ttu-id="12c94-103">Oprette en skabelon til en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="12c94-103">Create a free text invoice template</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="12c94-104">Denne registrering anvender demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="12c94-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="12c94-105">Registreringen er beregnet til den bruger, der er ansvarlig for håndtering og behandling af debitorfakturaer.</span><span class="sxs-lookup"><span data-stu-id="12c94-105">The recording is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 

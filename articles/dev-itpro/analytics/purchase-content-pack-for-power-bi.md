@@ -19,16 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 4963cc5fb94097ef831813e7732961821c20ad25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 37f3b1b4d362bd8b40977648b4aa4387011eea08
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a><span data-ttu-id="e6fb6-104">Power BI-indhold til købsforbrugsanalyse</span><span class="sxs-lookup"><span data-stu-id="e6fb6-104">Purchase spend analysis Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e6fb6-105">I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indholdet til **Købsforbrugsanalyse**.</span><span class="sxs-lookup"><span data-stu-id="e6fb6-105">This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content.</span></span> <span data-ttu-id="e6fb6-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="e6fb6-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 01/17/2018
 </tbody>
 </table>
 
-<span data-ttu-id="e6fb6-160">\\* Køb dette og sidste år, og vækst efter indkøbskategori</span><span class="sxs-lookup"><span data-stu-id="e6fb6-160">\\* Purchase this year and last year, and growth by procurement category</span></span>
+<span data-ttu-id="e6fb6-160">\* Køb dette og sidste år, og vækst efter indkøbskategori</span><span class="sxs-lookup"><span data-stu-id="e6fb6-160">\* Purchase this year and last year, and growth by procurement category</span></span>
 
 ## <a name="data-model-and-entities"></a><span data-ttu-id="e6fb6-161">Datamodel og enheder</span><span class="sxs-lookup"><span data-stu-id="e6fb6-161">Data model and entities</span></span>
 <span data-ttu-id="e6fb6-162">Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Købsforbrugsanalyse**.</span><span class="sxs-lookup"><span data-stu-id="e6fb6-162">The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content.</span></span> <span data-ttu-id="e6fb6-163">Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret.</span><span class="sxs-lookup"><span data-stu-id="e6fb6-163">This data is represented as aggregate measurements that are staged in the Entity store.</span></span> <span data-ttu-id="e6fb6-164">Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser.</span><span class="sxs-lookup"><span data-stu-id="e6fb6-164">The Entity store is a Microsoft SQL Server database that is optimized for analytics.</span></span> <span data-ttu-id="e6fb6-165">Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).</span><span class="sxs-lookup"><span data-stu-id="e6fb6-165">For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).</span></span>

@@ -18,17 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 33cd67bda4d4b868b00cb1c0a062de03d3aa6273
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: caa07418cb834c7f004c4fb95d5ea1c0e3a28f56
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-task-guides-february-2016"></a><span data-ttu-id="f5291-104">Nye opgaveguider (februar 2016)</span><span class="sxs-lookup"><span data-stu-id="f5291-104">New task guides (February 2016)</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f5291-105">I dette emne vises de opgaveguider, der er udgivet til Microsoft BPM-biblioteker pr. februar 2016.</span><span class="sxs-lookup"><span data-stu-id="f5291-105">This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.</span></span>  <span data-ttu-id="f5291-106">De biblioteker, der er udgivet, omfatter (februar 2016) APQC Unified-bibliotek til Microsoft Dynamics AX og (februar 2016) Introduktion.</span><span class="sxs-lookup"><span data-stu-id="f5291-106">The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.</span></span>
 
@@ -50,8 +49,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-124">Konfigurere validering af fakturasammenholdelse for kreditor</span><span class="sxs-lookup"><span data-stu-id="f5291-124">Set up Accounts payable invoice matching validation</span></span>       | <span data-ttu-id="f5291-125">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-125">Global</span></span>             |
 | <span data-ttu-id="f5291-126">Konfigurer politikker for kreditorfakturaer</span><span class="sxs-lookup"><span data-stu-id="f5291-126">Set up vendor invoice policies</span></span>                            | <span data-ttu-id="f5291-127">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-127">Global</span></span>             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a><span data-ttu-id="f5291-128">Debitor</span><span class="sxs-lookup"><span data-stu-id="f5291-128">Accounts receivable</span></span>
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-153">Gennemgå oplysninger om rykkere</span><span class="sxs-lookup"><span data-stu-id="f5291-153">Review collections information</span></span>                              | <span data-ttu-id="f5291-154">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-154">Global</span></span>             |
 | <span data-ttu-id="f5291-155">Konfigurere og oprette oplysninger om debitorforældelse</span><span class="sxs-lookup"><span data-stu-id="f5291-155">Set up and generate accounts receivable aging information</span></span>   | <span data-ttu-id="f5291-156">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-156">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a><span data-ttu-id="f5291-157">Kontant- og bankstyring</span><span class="sxs-lookup"><span data-stu-id="f5291-157">Cash and bank management</span></span>
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-196">Udligne en fremdateret check fra en debitor</span><span class="sxs-lookup"><span data-stu-id="f5291-196">Settle a postdated check from a customer</span></span>                             | <span data-ttu-id="f5291-197">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-197">Global</span></span>             |
 | <span data-ttu-id="f5291-198">Oversigt over kreditorbetalinger</span><span class="sxs-lookup"><span data-stu-id="f5291-198">Vendor payment overview</span></span>                                              | <span data-ttu-id="f5291-199">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-199">Global</span></span>             |
 
- 
 
+ 
 ### <a name="compliance"></a><span data-ttu-id="f5291-200">Overholdelse</span><span class="sxs-lookup"><span data-stu-id="f5291-200">Compliance</span></span>
 
 |                                            |                    |
@@ -108,8 +107,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-201">**BPM-linje**</span><span class="sxs-lookup"><span data-stu-id="f5291-201">**BPM Line**</span></span>                               | <span data-ttu-id="f5291-202">**Land/område**</span><span class="sxs-lookup"><span data-stu-id="f5291-202">**Country/Region**</span></span> |
 | <span data-ttu-id="f5291-203">Definere revisionspolitikker for kildedokumenter</span><span class="sxs-lookup"><span data-stu-id="f5291-203">Define audit policies for source documents</span></span> | <span data-ttu-id="f5291-204">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-204">Global</span></span>             |
 
- 
 
+ 
 ### <a name="cost-management"></a><span data-ttu-id="f5291-205">Omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="f5291-205">Cost management</span></span>
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-214">Vis en produktionsordres aktuelle WIP-status</span><span class="sxs-lookup"><span data-stu-id="f5291-214">View current WIP status on a production order</span></span>                       | <span data-ttu-id="f5291-215">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-215">Global</span></span>             |
 | <span data-ttu-id="f5291-216">Få vist lageropgørelse og KPI efter omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="f5291-216">View inventory statement and KPI by cost object</span></span>                     | <span data-ttu-id="f5291-217">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-217">Global</span></span>             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a><span data-ttu-id="f5291-218">Lande-/områdefunktionalitet</span><span class="sxs-lookup"><span data-stu-id="f5291-218">Country/Region functionality</span></span>
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-485">GB-00009 Oprette en kreditnota på udligningsrabatbeløbet</span><span class="sxs-lookup"><span data-stu-id="f5291-485">GB-00009 Create a credit note on the settlement discount</span></span>                                               | <span data-ttu-id="f5291-486">Storbritannien</span><span class="sxs-lookup"><span data-stu-id="f5291-486">United Kingdom</span></span>                  |
 | <span data-ttu-id="f5291-487">GB-00009 Konfigurere parametre for kreditnota for straksbetalingsrabat</span><span class="sxs-lookup"><span data-stu-id="f5291-487">GB-00009 Setup parameters for credit note on prompt payment discount</span></span>                                   | <span data-ttu-id="f5291-488">Storbritannien</span><span class="sxs-lookup"><span data-stu-id="f5291-488">United Kingdom</span></span>                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a><span data-ttu-id="f5291-489">Udarbejd vision og strategi</span><span class="sxs-lookup"><span data-stu-id="f5291-489">Develop Vision and Strategy</span></span>
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-498">Gør et spørgsmål afhængigt af svaret på det forrige spørgsmål (betinget spørgsmål)</span><span class="sxs-lookup"><span data-stu-id="f5291-498">Make a question dependent on the answer of the previous question (Conditional questions)</span></span> | <span data-ttu-id="f5291-499">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-499">Global</span></span>             |
 | <span data-ttu-id="f5291-500">Beregne score for et spørgeskema baseret på procent</span><span class="sxs-lookup"><span data-stu-id="f5291-500">Score a questionnaire based on Percent</span></span>                                                   | <span data-ttu-id="f5291-501">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-501">Global</span></span>             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a><span data-ttu-id="f5291-502">Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="f5291-502">Electronic reporting</span></span>
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-511">Tilknyt ER-datamodel til markerede datakilder</span><span class="sxs-lookup"><span data-stu-id="f5291-511">ER Map data model to selected data sources</span></span>      | <span data-ttu-id="f5291-512">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-512">Global</span></span>             |
 | <span data-ttu-id="f5291-513">Vælg ER-serviceudbyder</span><span class="sxs-lookup"><span data-stu-id="f5291-513">ER Select service provider</span></span>                      | <span data-ttu-id="f5291-514">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-514">Global</span></span>             |
 
- 
 
+ 
 ### <a name="expense-management"></a><span data-ttu-id="f5291-515">Udgiftsstyring</span><span class="sxs-lookup"><span data-stu-id="f5291-515">Expense management</span></span>
 
 |                              |                    |
@@ -298,8 +297,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-516">**BPM-linje**</span><span class="sxs-lookup"><span data-stu-id="f5291-516">**BPM Line**</span></span>                 | <span data-ttu-id="f5291-517">**Land/område**</span><span class="sxs-lookup"><span data-stu-id="f5291-517">**Country/Region**</span></span> |
 | <span data-ttu-id="f5291-518">Konfigurer udgiftsstyring</span><span class="sxs-lookup"><span data-stu-id="f5291-518">Configure expense management</span></span> | <span data-ttu-id="f5291-519">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-519">Global</span></span>             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a><span data-ttu-id="f5291-520">Anlægsaktiver</span><span class="sxs-lookup"><span data-stu-id="f5291-520">Fixed assets</span></span>
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-549">Opdele et anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="f5291-549">Split a fixed asset</span></span>                                       | <span data-ttu-id="f5291-550">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-550">Global</span></span>             |
 | <span data-ttu-id="f5291-551">Overfør et anlægsaktiv</span><span class="sxs-lookup"><span data-stu-id="f5291-551">Transfer a fixed asset</span></span>                                    | <span data-ttu-id="f5291-552">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-552">Global</span></span>             |
 
- 
 
+ 
 ### <a name="general-ledger"></a><span data-ttu-id="f5291-553">Finans</span><span class="sxs-lookup"><span data-stu-id="f5291-553">General ledger</span></span>
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-602">Vis kladdeposteringer eller transaktioner</span><span class="sxs-lookup"><span data-stu-id="f5291-602">View journal entries or transactions</span></span>                              | <span data-ttu-id="f5291-603">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-603">Global</span></span>             |
 | <span data-ttu-id="f5291-604">Få vist relaterede intern bilag fra kladde</span><span class="sxs-lookup"><span data-stu-id="f5291-604">View related intercompany voucher from journal</span></span>                    | <span data-ttu-id="f5291-605">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-605">Global</span></span>             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a><span data-ttu-id="f5291-606">Styring af menneskelig kapital</span><span class="sxs-lookup"><span data-stu-id="f5291-606">Human capital management</span></span>
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-677">Oprettelse af politikker for frynsegodeberettigelse</span><span class="sxs-lookup"><span data-stu-id="f5291-677">Setting benefit eligibility policies</span></span>                             | <span data-ttu-id="f5291-678">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-678">Global</span></span>             |
 | <span data-ttu-id="f5291-679">Konfigurere i9-dokumenttyper</span><span class="sxs-lookup"><span data-stu-id="f5291-679">Setting up i9 document types</span></span>                                     | <span data-ttu-id="f5291-680">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-680">Global</span></span>             |
 
- 
 
+ 
 ### <a name="inventory-management"></a><span data-ttu-id="f5291-681">Lagerstyring</span><span class="sxs-lookup"><span data-stu-id="f5291-681">Inventory management</span></span>
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-712">Spor en vare eller råvare</span><span class="sxs-lookup"><span data-stu-id="f5291-712">Trace an item or raw material</span></span>                                                     | <span data-ttu-id="f5291-713">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-713">Global</span></span>             |
 | <span data-ttu-id="f5291-714">Overføre fysisk lager på lagerstedet</span><span class="sxs-lookup"><span data-stu-id="f5291-714">Transfer physical inventory within the warehouse</span></span>                                  | <span data-ttu-id="f5291-715">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-715">Global</span></span>             |
 
- 
 
+ 
 ### <a name="manufacturing"></a><span data-ttu-id="f5291-716">Produktion</span><span class="sxs-lookup"><span data-stu-id="f5291-716">Manufacturing</span></span>
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-803">Overføre materiale med Kanban-job</span><span class="sxs-lookup"><span data-stu-id="f5291-803">Transfer material with Kanban jobs</span></span>                            | <span data-ttu-id="f5291-804">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-804">Global</span></span>             |
 | <span data-ttu-id="f5291-805">Validér produktionsflow og -version</span><span class="sxs-lookup"><span data-stu-id="f5291-805">Validate production flow and version</span></span>                          | <span data-ttu-id="f5291-806">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-806">Global</span></span>             |
 
- 
 
+ 
 ### <a name="master-planning"></a><span data-ttu-id="f5291-807">Overordnet planlægning</span><span class="sxs-lookup"><span data-stu-id="f5291-807">Master planning</span></span>
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-816">Identificer kritiske materialer og leverandørkapacitet</span><span class="sxs-lookup"><span data-stu-id="f5291-816">Identify critical materials and supplier capacity</span></span> | <span data-ttu-id="f5291-817">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-817">Global</span></span>             |
 | <span data-ttu-id="f5291-818">Ændr en behovsprognose manuelt</span><span class="sxs-lookup"><span data-stu-id="f5291-818">Modify a demand forecast manually</span></span>                 | <span data-ttu-id="f5291-819">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-819">Global</span></span>             |
 
- 
 
+ 
 ### <a name="organization-administration"></a><span data-ttu-id="f5291-820">Virksomhedsadministration</span><span class="sxs-lookup"><span data-stu-id="f5291-820">Organization administration</span></span>
 
 |                                           |                    |
@@ -501,8 +500,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-831">Opsætning af elektroniske signaturer</span><span class="sxs-lookup"><span data-stu-id="f5291-831">Set up electronic signatures</span></span>              | <span data-ttu-id="f5291-832">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-832">Global</span></span>             |
 | <span data-ttu-id="f5291-833">Opret nummerserier vha. en guide</span><span class="sxs-lookup"><span data-stu-id="f5291-833">Set up number sequences by using a wizard</span></span> | <span data-ttu-id="f5291-834">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-834">Global</span></span>             |
 
- 
 
+ 
 ### <a name="planning"></a><span data-ttu-id="f5291-835">Planlægning</span><span class="sxs-lookup"><span data-stu-id="f5291-835">Planning</span></span>
 
 |                        |                    |
@@ -510,8 +509,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-836">**BPM-linje**</span><span class="sxs-lookup"><span data-stu-id="f5291-836">**BPM Line**</span></span>           | <span data-ttu-id="f5291-837">**Land/område**</span><span class="sxs-lookup"><span data-stu-id="f5291-837">**Country/Region**</span></span> |
 | <span data-ttu-id="f5291-838">Fastlæg tilgængelighed</span><span class="sxs-lookup"><span data-stu-id="f5291-838">Determine availability</span></span> | <span data-ttu-id="f5291-839">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-839">Global</span></span>             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a><span data-ttu-id="f5291-840">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="f5291-840">Procurement and sourcing</span></span>
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-853">Søg efter kreditorer</span><span class="sxs-lookup"><span data-stu-id="f5291-853">Search for vendors</span></span>                                               | <span data-ttu-id="f5291-854">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-854">Global</span></span>             |
 | <span data-ttu-id="f5291-855">Konfigurer et indkøbskategorihierarki</span><span class="sxs-lookup"><span data-stu-id="f5291-855">Set up a procurement category hierarchy</span></span>                          | <span data-ttu-id="f5291-856">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-856">Global</span></span>             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a><span data-ttu-id="f5291-857">Produktoplysninger og -konfiguration</span><span class="sxs-lookup"><span data-stu-id="f5291-857">Product information and configuration</span></span>
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-892">Frigiv en ..\financial-dimensions\dimension-based produktmaster</span><span class="sxs-lookup"><span data-stu-id="f5291-892">Release a ..\financial-dimensions\dimension-based product master</span></span>              | <span data-ttu-id="f5291-893">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-893">Global</span></span>             |
 | <span data-ttu-id="f5291-894">Overfør data for produktmodeller</span><span class="sxs-lookup"><span data-stu-id="f5291-894">Transfer data for product models</span></span>                      | <span data-ttu-id="f5291-895">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-895">Global</span></span>             |
 
- 
 
+ 
 ### <a name="public-sector"></a><span data-ttu-id="f5291-896">Den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="f5291-896">Public sector</span></span>
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-931">Konfigurere midler til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="f5291-931">Set up a fund for Public sector</span></span>                                                         | <span data-ttu-id="f5291-932">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-932">Global</span></span>             |
 | <span data-ttu-id="f5291-933">Konfigurer købsaftaleklassifikationer til den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="f5291-933">Set up purchase agreement classifications for Public Sector</span></span>                             | <span data-ttu-id="f5291-934">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-934">Global</span></span>             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a><span data-ttu-id="f5291-935">Detail og handel</span><span class="sxs-lookup"><span data-stu-id="f5291-935">Retail and commerce</span></span>
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-1002">Detailprisjusteringer</span><span class="sxs-lookup"><span data-stu-id="f5291-1002">Retail price adjustments</span></span>                                                                  | <span data-ttu-id="f5291-1003">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1003">Global</span></span>             |
 | <span data-ttu-id="f5291-1004">Gemme konfigurationer for detailopgørelser</span><span class="sxs-lookup"><span data-stu-id="f5291-1004">Store configurations for Retail statements</span></span>                                                | <span data-ttu-id="f5291-1005">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1005">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales"></a><span data-ttu-id="f5291-1006">Salg</span><span class="sxs-lookup"><span data-stu-id="f5291-1006">Sales</span></span>
 
 |                                            |                    |
@@ -642,8 +641,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-1035">Send ordrer som direkte leveringer</span><span class="sxs-lookup"><span data-stu-id="f5291-1035">Ship orders as direct deliveries</span></span>           | <span data-ttu-id="f5291-1036">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1036">Global</span></span>             |
 | <span data-ttu-id="f5291-1037">Send salgsordrer uden lagersted</span><span class="sxs-lookup"><span data-stu-id="f5291-1037">Ship sales orders without warehousing</span></span>      | <span data-ttu-id="f5291-1038">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1038">Global</span></span>             |
 
- 
 
+ 
 ### <a name="sales-tax"></a><span data-ttu-id="f5291-1039">Moms</span><span class="sxs-lookup"><span data-stu-id="f5291-1039">Sales tax</span></span>
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-1060">Konfigurere A-skat</span><span class="sxs-lookup"><span data-stu-id="f5291-1060">Set up withholding tax</span></span>                             | <span data-ttu-id="f5291-1061">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1061">Global</span></span>             |
 | <span data-ttu-id="f5291-1062">Vis bogførte momstransaktioner</span><span class="sxs-lookup"><span data-stu-id="f5291-1062">View posted sales tax transactions</span></span>                 | <span data-ttu-id="f5291-1063">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1063">Global</span></span>             |
 
- 
 
+ 
 ### <a name="security"></a><span data-ttu-id="f5291-1064">Sikkerhed</span><span class="sxs-lookup"><span data-stu-id="f5291-1064">Security</span></span>
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-1069">Identificere og løse konflikter i opdeling af opgaver</span><span class="sxs-lookup"><span data-stu-id="f5291-1069">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="f5291-1070">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1070">Global</span></span>             |
 | <span data-ttu-id="f5291-1071">Konfigurer opdeling af opgaver</span><span class="sxs-lookup"><span data-stu-id="f5291-1071">Set up segregation of duties</span></span>                            | <span data-ttu-id="f5291-1072">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1072">Global</span></span>             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a><span data-ttu-id="f5291-1073">Lagersted og transport</span><span class="sxs-lookup"><span data-stu-id="f5291-1073">Warehouse and transportation</span></span>
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ ms.lasthandoff: 11/03/2017
 | <span data-ttu-id="f5291-1106">Konfigurere fragtmænd</span><span class="sxs-lookup"><span data-stu-id="f5291-1106">Set up shipping carriers</span></span>                                                          | <span data-ttu-id="f5291-1107">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1107">Global</span></span>             |
 | <span data-ttu-id="f5291-1108">Brug af lastplanlægningspanel til at planlægge laster og leverancer</span><span class="sxs-lookup"><span data-stu-id="f5291-1108">Use the Load Planning Workbench to plan loads and shipments</span></span>                       | <span data-ttu-id="f5291-1109">Globalt</span><span class="sxs-lookup"><span data-stu-id="f5291-1109">Global</span></span>             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a><span data-ttu-id="f5291-1110">Opgaveguider i Introduktions-bibliotek (februar 2016)</span><span class="sxs-lookup"><span data-stu-id="f5291-1110">Task guides in the (February 2016) Getting started library</span></span>
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | <span data-ttu-id="f5291-1111">**BPM-linje**</span><span class="sxs-lookup"><span data-stu-id="f5291-1111">**BPM Line**</span></span>                                       | <span data-ttu-id="f5291-1112">**Land/område**</span><span class="sxs-lookup"><span data-stu-id="f5291-1112">**Country/Region**</span></span> |

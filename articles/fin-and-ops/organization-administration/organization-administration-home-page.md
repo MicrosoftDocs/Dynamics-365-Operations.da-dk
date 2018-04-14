@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 92c3487e7174497cd77e6685f5ed9ea2bc675d2a
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="organization-administration-home-page"></a><span data-ttu-id="83402-103">Startside for organisationsadministration</span><span class="sxs-lookup"><span data-stu-id="83402-103">Organization administration home page</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="83402-104">Dette emne peger på indhold, der kan hjælpe avancerede brugere og administratorer med at konfigurere Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="83402-104">This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="83402-105">Dette indhold kan hjælpe dem med at konfigurere systemet til at arbejde uden problemer og effektivt i din organisation og virksomhed.</span><span class="sxs-lookup"><span data-stu-id="83402-105">This content will help them configure the system to work smoothly and effectively for your organization and business.</span></span>
 

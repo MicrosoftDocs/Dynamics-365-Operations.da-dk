@@ -17,15 +17,15 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e106e79674b47b918c79f734e809d19994a94350
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a><span data-ttu-id="b1aa4-103"> Behandle reguleringer for kundefordelsbonuspoint</span><span class="sxs-lookup"><span data-stu-id="b1aa4-103">Process loyalty reward point adjustments</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b1aa4-104">Denne procedure viser, hvordan du søger efter oplysninger om fordelskundekort og regulerer fordelskundebelønningspoint.</span><span class="sxs-lookup"><span data-stu-id="b1aa4-104">This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points.</span></span> <span data-ttu-id="b1aa4-105">Det demodatafirma, der bruges til at oprette denne opgave, er USRT.</span><span class="sxs-lookup"><span data-stu-id="b1aa4-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="b1aa4-106">Denne opgave er beregnet til rollen Retail driftschef eller en Kundeservicechef-rolle.</span><span class="sxs-lookup"><span data-stu-id="b1aa4-106">This task is intended for the Retail operations manager role or a Customer service manager role.</span></span>
 

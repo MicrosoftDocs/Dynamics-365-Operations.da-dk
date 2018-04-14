@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c785b2eb787fa7327e336ea74c91177816d33a9c
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-process-overview"></a><span data-ttu-id="4925e-104">Oversigt over produktionsproces</span><span class="sxs-lookup"><span data-stu-id="4925e-104">Production process overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4925e-105">Dette emne indeholder en oversigt over produktionsprocessen.</span><span class="sxs-lookup"><span data-stu-id="4925e-105">This topic gives an overview of the production processes.</span></span> <span data-ttu-id="4925e-106">Den beskriver de forskellige stadier af produktionsordrer, batchordrer og kanbans fra oprettelse af ordre til afslutning af regnskabsperioden.</span><span class="sxs-lookup"><span data-stu-id="4925e-106">It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period.</span></span> 
 
