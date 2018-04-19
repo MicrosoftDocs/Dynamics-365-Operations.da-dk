@@ -3,7 +3,7 @@ title: Udvide funktionaliteten i Microsoft Dynamics 365 for Talent
 description: Hvis du har oprettet Microsoft PowerApps, kan du starte disse programmer fra hyperlinks i Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,16 @@ Brug siden **Indstil integrerede Microsoft PowerApps** til at konfigurere Talent
 
 Følgende oplysninger angives eller indstilles på denne side: 
 
-> - Et beskrivende navn eller id til hvert PowerApps-program.
-> - Et entydigt id (GUID) for hvert program, du føjer til en Talent-side. Program-id'et findes på webstedet PowerApps-webstedet [powerapps.com](http://powerapps.com/). 
-> - Den side, hvorfra brugere kan åbne et program eller en rapport. Ikke alle Talent-sider understøtter integrerede PowerApps og Power BI-rapporter. 
-> 
-> [!NOTE]
->  Angiv det interne navn på siden i stedet for det viste navn, der vises øverst på siden. Du kan finde det interne navn ved at åbne den side, du skal bruge interne navn på, og højreklikke på et vilkårligt sted på siden. Når menuen åbnes, skal du pege på elementet **Oplysninger om formular**. Det interne formularnavn, der vises ud for elementet **Oplysninger om formular** i menuen.
-> 
-> - Angiv det kontrolelement i formularen, som programmet kan hente kontekstdata fra. Et program kan for eksempel bruge data om en arbejder. Hvis du angiver siden **Arbejder** i feltet **Kontekst**, åbnes siden **Arbejder**, når du starter programmet. En post i **Kontekstfelt** er valgfri. 
-> - Angiv størrelsen på den dialogboks, hvor PowerApps-programmet skal køre. Dialogboksene er angivet som "små" eller "store" for at optimere brugergrænsefladen, når programmet kører på henholdsvis en telefon eller en større enhed. 
+ -  Et beskrivende navn eller id til hvert PowerApps-program.
+ -  Et entydigt id (GUID) for hvert program, du føjer til en Talent-side. Program-id'et findes på webstedet PowerApps-webstedet [powerapps.com](http://powerapps.com/). 
+ -  Den side, hvorfra brugere kan åbne et program eller en rapport. Ikke alle Talent-sider understøtter integrerede PowerApps og Power BI-rapporter. 
+
+ > [!NOTE]
+ >  Angiv det interne navn på siden i stedet for det viste navn, der vises øverst på siden. Du kan finde det interne navn ved at åbne den side, du skal bruge interne navn på, og højreklikke på et vilkårligt sted på siden. Når menuen åbnes, skal du pege på elementet **Oplysninger om formular**. Det interne formularnavn, der vises ud for elementet **Oplysninger om formular** i menuen.
+ 
+-   Angiv det kontrolelement i formularen, som programmet kan hente kontekstdata fra. Et program kan for eksempel bruge data om en arbejder. Hvis du angiver siden **Arbejder** i feltet **Kontekst**, åbnes siden **Arbejder**, når du starter programmet. En post i **Kontekstfelt** er valgfri. 
+-   Angiv størrelsen på den dialogboks, hvor PowerApps-programmet skal køre. Dialogboksene er angivet som "små" eller "store" for at optimere brugergrænsefladen, når programmet kører på henholdsvis en telefon eller en større enhed. 
+
 
 Du kan også angive, hvilke juridiske enheder et program er tilgængeligt til, eller du kan gøre det tilgængeligt for alle juridiske enheder. PowerApps-programmerne er som standard tilgængelige for alle juridiske enheder.
 
