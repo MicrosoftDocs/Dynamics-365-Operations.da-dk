@@ -3,7 +3,7 @@ title: Lokalisering og lovpligtige funktioner
 description: "Dette emne indeholder en liste over ressourcer, der kan give dig større viden om lande-/områdepecifikke funktioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokalisering og lovpligtige funktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations indeholder funktioner for de lande/områder, der er beskrevet i [vejledningen til international produkttilgængelighed](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Denne funktion er aktiveret på basis af den primære adresse for den aktive juridiske enhed. 
 
@@ -51,13 +50,13 @@ Følgende ressourcer indeholder oplysninger om planlagte og nye lokaliseringsfun
 
 ### <a name="communication-and-alerts"></a>Kommunikation og påmindelser
 -   [Lovpligtig kontrol og kommunikation om opdateringer](regulatory-watch-communication.md)
--   [Informere Microsoft om lovpligtige lande-/områdepåmindelser og spore status for lovmæssige funktioner](submit-localization-alerts.md)
+-   [Informere Microsoft om lovpligtige lande-/områdevarslinger og spore status for lovmæssige funktioner](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Dynamics 365-oversigt
-[Dynamics 365-oversigten](https://roadmap.dynamics.com/) giver et øjebliksbillede af, hvad vi arbejder på. Du kan bruge denne oversigt til at finde ud af, hvad der gøres almindeligt tilgængeligt, og hvad er under udvikling. Alle datoer og funktioner, der er under udvikling, er foreløbige, er baseret på aktuelle forventninger og kan ændres uden forudgående varsel.
+### <a name="dynamics-365-release-notes"></a>Dynamics 365-frigivelsesnoter
+[Dynamics 365-frigivelsesnoter (PDF-overførsel)](https://aka.ms/businessappsreleasenotes) indeholder beskrivelser af de nye og forbedrede funktioner i Dynamics 365-virksomhedsprogrammer og -programplatforme. 
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
-Med det elektroniske rapporteringsværktøj (ER) kan du konfigurere formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
+Med det elektroniske rapporteringsværktøj (ER) kan du konfigurerer formater for elektroniske dokumenter i overensstemmelse med de lovgivningsmæssige krav i forskellige lande/områder. Med ER kan du administrere disse formater i løbet af deres livscyklus. Yderligere oplysninger finder du i et af følgende emner:
 -   [Oversigt over elektronisk rapportering](../analytics/general-electronic-reporting.md)
 -   [Administrere livscyklus for konfiguration af elektronisk rapportering](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
 -   [Oprette en konfiguration af elektronisk rapportering](../analytics/electronic-reporting-configuration.md)
@@ -79,25 +78,9 @@ Du kan finde flere oplysninger i [Opgaveguider](../../fin-and-ops/get-started/he
 ## <a name="countryregion-specific-help-topics"></a>Lande-/områdespecifikke emner i Hjælp
 I følgende afsnit vises ressourcer efter land/område.
 
-### <a name="australia"></a>Australien
-
--   [Bankfilformater](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Business Activity Statement ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Afskrivning af aktiver med lav værdi](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Østrig
-
-- [Halvårlig afskrivning](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Emballagegebyrer](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Indkøbsafgifter](../../financials/localizations/emea-aut-purchase-duties.md)
-- [Momsopgørelse](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgien
-
--   [CODA-bankkontoudtog](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat-momsopgørelse](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [PRODCOM-rapportopsætning](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Bankafstemningsrapporter](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australien](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Østrig](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgien](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brasilien
 
@@ -134,23 +117,10 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Bogføre lagerhovedkonti efter lokation](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Vise debet- og kreditbeløb for finanskonti](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Tjekkiet
-
--   [Kasserabat på kreditnota](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Afskrivningsafrunding](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Halvårlig afskrivning på kassation af anlægsaktiver i Tjekkiet](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Midlertidigt stop af afskrivning (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Afskrivningsmetoder for anlægsaktiver i Tjekkiet](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Bogføre præanskaffelsen af et anlægsaktiv](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Momsopgørelse for Tjekkiet](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Momsrapportering ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Splitperioder i periodiske kladder](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Konfigurere underskrivere til trykte formularer](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Opdatere, hvordan beløb vises på rapporter og dokumenter](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Tjekkiet](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Estland
-
--   [Momsopgørelsesoplysninger for Estland](../../financials/localizations/emea-est-vat-statement-details.md)
+-   [Momsopgørelsesdetaljer for Estland](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Kassation af anlægsaktiver](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
 ### <a name="europe"></a>Europa
@@ -280,7 +250,7 @@ I følgende afsnit vises ressourcer efter land/område.
 -   [Opgørelsesrapport over inflationsregulering](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [Rapport over ISR-opgørelser](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Elektroniske fakturaer (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malaysia
 
 -   [Moms på varer og ydelser (GST)](../../financials/localizations/apac-mys-gst.md)

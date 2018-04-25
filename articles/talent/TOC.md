@@ -3,7 +3,7 @@
 # [Kom godt i gang](talent-get-started.md)
 ## [Systemkrav og opdateringspolitik](talent-versions-update-policy.md)
 ## [Klargøre Microsoft Dynamics 365 for Talent](provisioning-talent.md)
-## [Fjerne et Talent-miljø](remove-test-environment.md)
+## [Fjerne et Talent-miljø](remove-talent-environment.md)
 ## [Klargøre Microsoft Dynamics 365 for Talent-modulapps](modular-app-tech-faq.md)
 ## [Udvide Talent-funktionaliteten](extend-talent-functionality.md)
 
@@ -12,7 +12,8 @@
 ## [Oprette en afdeling og knytte den til afdelingshierarkiet](create-department-add-department-hierarchy.md)
 ## [Angive personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md)
 ## [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
-## [Ofte stillede spørgsmål om personalehandlinger](personnel-actions-faq.md)
+## [Ofte stillede spørgsmål til personalehandlinger](personnel-actions-faq.md)
+## [Formalisere forretningsprocesser](formalize-business-processes.md)
 ## [Bruge arbejdsgang til at administrere medarbejderoplysninger](workflow-manage-employee-information.md)
 ## [Oversigt over orlov og fravær](leave-absence-overview.md)
 
