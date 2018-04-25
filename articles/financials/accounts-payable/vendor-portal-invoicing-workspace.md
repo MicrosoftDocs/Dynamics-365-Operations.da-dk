@@ -52,16 +52,12 @@ Klik på et felt åbner en filtreret visning af siden **Fakturaliste**.
 
 I sektionen **Tabellister** er status for fakturering opdelt på samme måde som oversigtsfelterne: kladde og sendt, ikke godkendte lister. Mens du er i kladdetilstand, kan en faktura sendes til arbejdsgangen eller slettes. Den sidste tabelliste er en mulighed for at finde fakturaer. Du kan filtrere, når du søger, for at give mulighed for hurtigere søgninger.
 
-<a name="all-vendor-invoices-list-page"></a>Alle kreditorfakturaer (listeside)
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Alle kreditorfakturaer (listeside)
 
 Du kan få vist alle bogførte og ikke-bogførte fakturaer på siden med listen **Kreditorsamarbejdsfakturaer**. Du kan bruge denne listeside til at få vist betalingsstatus for fakturaerne. Statusserne for betaling omfatter ikke-bogførte, ubetalte, delvist betalte og betalte.
 Oprettelse af en ny faktura ud fra en indkøbsordre
---------------------------------------------
 
 Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kreditorsamarbejdsfakturaer**-arbejdsområdet. Indkøbsordrenummer og fakturanummer skal oplyses af kreditoren. Som standard vises alle linjerne fra kreditorens indkøbsordre på den nye faktura. Oplysninger om antal og omkostninger kan redigeres, inden du sender kreditorfakturaen til arbejdsgangen. Du kan vedhæfte filer, noter, billeder og URL-adresser til en faktura, inden du sender den.
-
-
 
 Du kan finde flere oplysninger i [Kreditorsamarbejde med eksterne kreditorer](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 
