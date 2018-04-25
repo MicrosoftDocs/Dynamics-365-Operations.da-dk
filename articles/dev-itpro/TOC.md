@@ -115,6 +115,7 @@
 ### Nyheder
 #### [Ændringer i udvidelse juli 2017](extensibility/changes-july-2017.md)
 #### [Ændringer i udvidelse version 7.3](extensibility/extensibility-changes-73.md)
+#### [Ændringer i udvidelse version 8.0](extensibility/changes-80.md)
 ### Grundlæggende funktioner
 #### [Forstyrrende tilpasninger](extensibility/intrusive-customizations.md)
 #### [Klasseudvidelser](extensibility/class-extensions.md)
@@ -382,17 +383,18 @@
 
 ### [Dataintegration med Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurere et kundeemne til kontantscenarie](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synkronisere produkter fra Finance and Operations med produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Synkronisere konti fra Sales med debitorer i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Synkronisere kontakter fra Sales med kontakter eller debitorer i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synkronisere titler og linjer i salgstilbud fra Sales med Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Synkronisere salgsordrehoveder og linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Synkronisere salgsfakturahoveder og linjer fra Finance and Operations til Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synkronisere konti fra Sales direkte med debitorer i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synkronisere produkter fra Finance and Operations direkte med produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synkronisere salgsordrehoveder og linjer fra Finance and Operations direkte med Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Konfigurere integration med Field Service](../supply-chain/sales-marketing/field-service.md)
+##### [Synkronisere produkter fra Finance and Operations med produkter i Field Service](../supply-chain/sales-marketing/field-service-product.md)
+##### [Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [Forbrug af eksterne webtjenester](data-entities/consume-external-web-service.md)
 
@@ -407,7 +409,9 @@
 ### [Konfigurationsdataskabeloner](data-entities/configuration-data-templates.md)
 ### [Dataskabeloner med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore ændringer i en enhed](data-entities/entity-change-track.md)
+
 ### [Finde oplysninger om standarddataenheder](data-entities/data-entities-report.md)
+
 
 ## [Dataimport- og -eksportjob](data-entities/data-import-export-job.md)
 
@@ -427,13 +431,18 @@
 
 ## [Bruge din egen database](analytics/export-entities-to-your-own-database.md)
 
+
+## [Automatisering af dataopgaver](data-entities/data-task-automation.md)
+
 ## [Ressourcer til besvarelse af en anmodning om GDPR-data](gdpr/gdpr-home-page.md)
 ### [Vejledning til GDPR til Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Klassifikationer af aktiver](gdpr/gdpr-asset-classification-values.md)
 ### [Bruge rapporten over personsøgning](gdpr/gdpr-person-search-report.md)
 ### [Udvide rapporten over personsøgning](gdpr/gdpr-extend-person-search-report.md)
 ### [Administrere adgang til følsomme data](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Besvare en anmodning om personlige data ved hjælp af Talent](gdpr/respond-dsr-request-talent.md)
 ### [Besvare en anmodning om personlige data ved hjælp af Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+
 
 # [Startside for fortløbende levering](dev-tools/continuous-delivery-home-page.md)
 ## [Ofte stillede spørgsmål om udvikling og fortløbende levering](dev-tools/continuous-delivery-faq.md)
@@ -530,6 +539,7 @@
 ### [AX 2012-opgradering – udgivelse](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Ændringer, der påvirker opgradering fra AX 2012
+#### [Afgrænsningstegn for kontoplaner skal være entydigt](migration-upgrade/chart-accounts-delimiter-unique.md)
 #### [Opgradering for enkelt bilag og værdiregulering af valuta](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Datamodel for projektressourceplanlægning](migration-upgrade/data-model-changes-resource-management.md)
 #### [Ændringer af undersystem for arbejdsgang](migration-upgrade/workflow-subsystem.md)
@@ -569,6 +579,7 @@
 
 # [Systemadministration](sysadmin/system-administration-home-page.md)
 ## [Ofte stillede spørgsmål til månedlige platformsopdateringer](sysadmin/faq-platform-monthly-updates.md)
+## [Ofte stillede spørgsmål til virtuelle maskiner, der ikke tillader administratoradgang](sysadmin/VMs-no-admin-access.md)
 ## [Føje links til din organisations juridiske begreber og erklæring om beskyttelse af personlige oplysninger](sysadmin/legal-terms-privacy-statement.md)
 ## [Rapport for licenskoder og konfigurationsnøgler](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadeling på tværs af firma](sysadmin/cross-company-data-sharing.md)
@@ -612,14 +623,17 @@
 ## [Udføre opgaver i et BPM-bibliotek](lifecycle-services/complete-tasks-bpm.md)
 ## [Bruge aktivitetsdiagrammer](lifecycle-services/using-activity-diagrams.md)
 ## [Synkronisere et BPM-bibliotek med Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Oprette en accepttestpakke ved hjælp af opgaveguider og BPM](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Rutediagrammer for forretningsmodeldesigner](lifecycle-services/flowcharts-business-process-modeler.md)
-## [Overføre brugerdefinerede forretningsprocesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
+## [Overfør brugerdefinerede forretningsprocesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Overvågning og diagnosticering ](lifecycle-services/monitoring-diagnostics.md)
 ## [Genstarte miljøets tjenester](lifecycle-services/restart-environment-services.md)
 ## [Registrere brugerlogon](lifecycle-services/user-logins.md)
 ## [Aktivbibliotek](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – Oversigt over oversættelsestjeneste](lifecycle-services/translation-service-overview.md)
 ### [Microsoft Dynamics 365 – Brugervejledning til oversættelsestjeneste](lifecycle-services/use-translation-service.md)
+### [Microsoft Dynamics 365 – Oversættelse af dokumentationsfil i oversættelsestjeneste](lifecycle-services/use-translation-service-ua.md)
+### [Microsoft Dynamics 365 – Oversættelseshukommelse i oversættelsestjeneste](lifecycle-services/use-translation-service-tm.md)
 
 ## Dynamics AX 2012 Lifecycle Services-funktioner
 ### Installation

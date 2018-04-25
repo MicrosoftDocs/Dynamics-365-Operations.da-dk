@@ -31,7 +31,7 @@
 ## [Callcenter-kataloger](call-center-catalogs.md)
 ## [Oprette et callcenter-katalog](create-call-center-catalogs.md)
 ## [Konfigurere advarsler om svindel](set-up-fraud-alerts.md)
-## [Konfigurere indstillinger for ordrebehandling](set-up-order-processing-options.md)
+## [Konfigurere et callcenter](set-up-order-processing-options.md)
 ## [Oprette et kontinuitetsprogram for et callcenter](set-up-continuity-program.md)
 ## [Ordrer på hold](work-with-order-holds.md)
 ## [Betalingsindstillinger](work-with-payments.md)
@@ -47,8 +47,9 @@
 # Modern Point of Sale (MPOS) og Cloud POS
 ## [Vælge mellem Modern POS og Cloud POS](MPOS-or-CPOS.md)
 ## [POS-handlinger, online og offline](pos-operations.md)
-## [Skærmlayout for demodata i MPOS/CPOS](demo-data.md)
+## [Skærmlayouts til demodata i MPOS/CPOS](demo-data.md)
 ## [Oversigt over produkt- og kundesøgning i POS](POS-search-improvements.md)
+## [Lagersøgning i POS](product-variants-POS.md)
 ## Hardware og ydre enheder
 ### [Oversigt over eksterne detailenheder](retail-peripherals-overview.md)
 ### [Microsoft-testede eksterne POS-hardwareenheder](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,6 +97,7 @@
 ## [Konfigurere RFM-analyse](set-up-rfm-analysis.md)
 
 # Rabatter og prisjusteringer
+## [Styring af detailsalgspriser](price-management.md)
 ## [Prisjusteringer og rabatter](price-adjustments-discounts.md)
 ## [Bestemme den optimale kombination af overlappende rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definere kanalspecifikke rabatter](define-channel-specific-discounts.md)
@@ -139,16 +141,20 @@
 ## [Konfiguration af komponenter i et job](../talent/create-job.md)
 
 # Lokalisering og lovpligtige funktioner
+## Frankrig
+### [Kasseapparater for Frankrig](localizations/emea-fra-cash-registers.md)
+### [Retningslinjer for installation af kasseapparater i Frankrig](localizations/emea-fra-deployment.md)
 ## Indien
-### [GST-integration for kasseapparater for Indien](localizations/apac-ind-cash-registers.md)
-### [Retningslinjer for installation af kasseapparater for Indien](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST-integration for kasseapparater](localizations/apac-ind-cash-registers.md)
+### [Retningslinjer for installation af kasseapparater i Indien](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norge
 ### [Kasseapparater for Norge](localizations/emea-nor-cash-registers.md)
-### [Retningslinjer for installation af kasseapparater for Norge](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Retningslinjer for installation af kasseapparater i Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sverige
 ### [Kasseapparater for Sverige](localizations/emea-swe-cash-registers.md)
+### [Prøve på Retail POS-integration med kontrolenheder](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
-# Retail-opgaver
+# Detailopgaver
 ## [Oprette et produkt](../supply-chain/pim/tasks/create-product.md)
 ## [Konfigurere tilknyttede produkter](../supply-chain/pim/tasks/configure-linked-products.md)
 ## [Frigive et produkt/en produktmaster til juridiske enheder](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
@@ -259,16 +265,18 @@
 ### [e-handel-platform](dev-itpro/ecommerce-platform.md)
 ### [e-handel-platform SDK](dev-itpro/ecommerce-platform-sdk.md)
 
-## Betalingsconnector-udvidelse
+## Betalingsconnectorudvidelse
+### [Integration af betaling med en betalingsterminal](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementering af en betalingsconnector og betalingsenhed (hvidbog)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Installere en betalingsconnector](dev-itpro/deploy-payment-connector.md)
 ### [Oprette en Windows Installer for en betalingsconnector](dev-itpro/create-windows-installer-payment-connector.md)
 
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrere Retail SDK med det fortløbende build-system](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
-### [Prøver på udvidelsesmuligheder til Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
+### [Prøver på udvidelsesmuligheder for Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Retail SDK-pakker](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK-prøver ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Udvidelsespunkter for følgesedler](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Udvidelser til kanaldatabase (DB)](dev-itpro/channel-db-extensions.md)
 ### [CDX-udvidelsesmuligheder](dev-itpro/cdx-extensibility.md)
 ### [Ordreattributter](dev-itpro/order-attributes.md)
