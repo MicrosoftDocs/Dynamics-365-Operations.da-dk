@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Angive primosaldi for løn
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Emnet beskriver trinnene til angivelse af primosaldi for lønkoder, fradrag, frynsegoder og moms. Disse oplysninger er vigtig for partnere, som vil overflytte eller overføre data til en ny lønimplementering fra et andet system. Som indledning til at angive primolønsaldi skal vi kontrollere følgende oplysninger:
 
 > * Medarbejderregistreringer er angivet og er tilgængelige i systemet
 > * Følgende data er konfigureret og tildelt til medarbejdere:
-
+> 
 > > * Betalingscyklusser og lønperioder
 > > * Lønkoder
 > > * Moms
 > > * Frynsegoder og fradrag
-
+> 
 > * Virksomheden skal have valgt en dato, som skal gælde for angivelse af primosaldi for løn.
-
+> 
 > * Der er indsamlet oplysninger om alle indtægter, frynsegoder/fradrag, frynsegodebidrag, medarbejderskat, selskabsskat og deres år til dato-beløb fra det gamle system.
 
 Når du skal angive primosaldi, skal du overveje, hvor detaljerede dataene skal være. De fleste virksomheder angive et enkelt, konsolideret år-til-dato-beløb. Hvis der kræves mere detaljerede oplysninger, kan saldi dog angives kvartalsvis. Angivelse af det detaljeringsniveau, der er nødvendigt, bestemmer også, hvor mange manuelle betalingsopgørelser der skal oprettes for hver arbejder. Der er kun brug for én manuel opgørelse for hver medarbejder for et enkelt år-til-dato-beløb. Brug år-til-dato-beløb fra den endelige betalingsopgørelse fra det tidligere system som det beløb, der skal angives i det nye lønsystem, for at bruge dette.
@@ -128,22 +128,22 @@ Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrolle
 
 4. Åbn fanen **Frynsegodefradrag**, og angiv følgende:
 
-| Felt                           | Værdi            |
-|---------------------------------|------------------|
-| Frynsegode                         | Fradragsbeløb |
-| 401K | Deltag              | 3000.00          |
-| Tandlægeforsikring | SubSp                  | 495,00           |
-| Beløb til sikring af afhængige | Deltag | 2500.00          |
-| Vision | SupSp                  | 500,00           |
+|       Felt       |      Værdi       |
+|-------------------|------------------|
+|      Frynsegode      | Fradragsbeløb |
+|       401K        |   Deltag    |
+|      Tandlægeforsikring       |      SubSp       |
+| Beløb til sikring af afhængige |   Deltag    |
+|      Vision       |      SupSp       |
 
 5. Angiv følgende under fanen **Frynsegodebidrag**:
 
-| Felt              | Værdi               |
-|--------------------|---------------------|
-| Frynsegode            | Bidragsbeløb |
-| 401K | Deltag | 3000,00             |
-| Tandlægeforsikring | SubSp     | 495,00              |
-| Vision | SubSp     | 500,00              |
+|  Felt  |        Værdi        |
+|---------|---------------------|
+| Frynsegode | Bidragsbeløb |
+|  401K   |     Deltag     |
+| Tandlægeforsikring  |        SubSp        |
+| Vision  |        SubSp        |
 
 6. Angiv følgende under fanen **Skattefradrag**:
 
@@ -156,8 +156,8 @@ Når du har oprettet betalingsopgørelser, der har primosaldi, skal du kontrolle
 7. Angiv følgende under fanen **Skattebidrag**:
 
 8. Klik på **Beregn**.
-> [!IMPORTANT] 
-> Kontroller, at de samlede beløb på betalingsopgørelsen svarer til år til dato i det oprindelige system for arbejderen. Du kan eventuelt vente med afslutningen i næste trin for at foretage en overordnet validering af alle samlede betalingsopgørelser. Efter valideringen skal du gennemse alle betalingsopgørelser og færdiggøre dem.
+   > [!IMPORTANT] 
+   > Kontroller, at de samlede beløb på betalingsopgørelsen svarer til år til dato i det oprindelige system for arbejderen. Du kan eventuelt vente med afslutningen i næste trin for at foretage en overordnet validering af alle samlede betalingsopgørelser. Efter valideringen skal du gennemse alle betalingsopgørelser og færdiggøre dem.
 
 Den samme proces kan evt. udføres kvartalsvis for alle tidligere kvartaler i året. Dette er kun nødvendigt, hvis kunden har brug at se dataene pr. kvartal uden at skulle gå tilbage til det oprindelige system.
 

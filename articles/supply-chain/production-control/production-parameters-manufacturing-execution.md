@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametre i Produktionsudførelse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om konfiguration af produktionsparametre i Produktionsudførelse.
 
@@ -69,17 +69,17 @@ For hvert stadie kan du i feltet **Auto-styklisteforbrug** vælge en af tre meto
 
 - **Varetrækprincip** – Denne indstilling bruges sammen med en indstilling, der er defineret for styklisten i modulet **Produktion**. Klik på **Produktionsstyring** &gt; **Almindelige** &gt; **Produktionsordrer** &gt; **Alle produktionsordrer**. Vælg en produktionsordre i listen på siden **Alle produktionsordrer**, og klik derefter på **Stykliste** i handlingsruden. På siden **Stykliste** under fanen **Opsætning** skal du vælge i feltet **Varetrækprincip** vælge en af følgende indstillinger:
 
-    - **Igangsæt**
-    - **Afslut**
-    - **Manuel**
-    - Tom (der er ikke valgt nogen indstilling).
-    - **Disponibel på lokation**
+  - **Igangsæt**
+  - **Afslut**
+  - **Manuel**
+  - Tom (der er ikke valgt nogen indstilling).
+  - **Disponibel på lokation**
 
     I Produktionsudførelse, hvis **Varetrækprincip** er valgt i feltet **Auto-styklisteforbrug** under fanen **Start**, trækkes alle materialer, der er indstillet til **Start** i styklisten fra lageret, når operationen startes. Indstillingen **Disponibel på lokation** bruges til produkter, der er aktiveret til avancerede lagerprocesser. Hvis du vælger dette varetrækprincip, ryddes materialet, når lagerstedsarbejde til pluk af råmateriale er fuldført. Materiale ryddes også, når en styklistelinje, bruger dette varetrækprincip, frigives til lagerstedet, og materialet disponibelt på produktionsindlagringsstedet.
-    
+
     > [!NOTE]
     > Hvis feltet **Varetrækprincip** er angivet under fanen **Start** i Produktionsudførelse, skal du vælge det samme princip under fanen **Operationer** eller under fanen **Færdigmeld**. Dette krav er med til at sikre, at materialer fratrækkes på lageret for de styklister, der bruger **Afslut** som varetrækprincip på produktionsordren. Hvis det samme varetrækprincip ikke er valgt under fanen **Operationer** eller fanen eller **Færdigmeld**, kan materialer blive trukket fra lageret to gange.
- 
+
 - **Altid** – Hvis du vælger denne indstilling for et stadie, bliver materiale altid fratrukket på lager i dette stadie. Materiale til produktionen fratrækkes f.eks., når produktionsordren startes. Denne indstilling kræver, at **Aldrig** er markeret under fanen **Operationer** og fanen **Færdigmeld**. Dette krav er med til at forhindre, at varer bliver fratrukket to gange på lageret.
 - **Aldrig** – Hvis du vælger denne indstilling for et stadie, finder der intet styklisteforbrug sted i dette stadie. Hvis du f.eks. vælger **Aldrig** under alle tre faner (**Start**, **Operationer** og **Færdigmeld**), skal materialer fratrækkes manuelt på lageret.
 
@@ -146,11 +146,13 @@ Ud fra de valg, der er beskrevet tidligere i dette afsnit, bogføres pluklistekl
 
 Du kan bruge følgende indstillinger, hvis materiale altid skal fratrækkes lageret manuelt. I så fald bogføres ingen pluklistekladder.
 
-| Fane                | Felt                          | Indstilling    |
-|--------------------|--------------------------------|------------|
-| Start              | Opdater igangsætning online           | **Status** |
-| Start              | Automatisk styklisteforbrug      | **Aldrig**  |
-| Operations         | Automatisk styklisteforbrug      | **Aldrig**  |
-| Færdigmelding | Automatisk styklisteforbrug      | **Aldrig**  |
-| Færdigmelding | Opdater færdigmelding online | **Status** |
+
+|        Fane         |             Felt              |         Indstilling         |
+|--------------------|--------------------------------|-------------------------|
+|       Start        |      Opdater igangsætning online      | <strong>Status</strong> |
+|       Start        |   Automatisk styklisteforbrug    | <strong>Aldrig</strong>  |
+|     Operations     |   Automatisk styklisteforbrug    | <strong>Aldrig</strong>  |
+| Færdigmelding |   Automatisk styklisteforbrug    | <strong>Aldrig</strong>  |
+| Færdigmelding | Opdater færdigmelding online | <strong>Status</strong> |
+
 

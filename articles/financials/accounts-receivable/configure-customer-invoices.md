@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e5605b65b6203a50ef2fef81d032a887da32bf9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a>Oprette en debitorfaktura
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde. Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre. Varenumre angives og bogføres i finansmodulet. Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre. Du kan finde flere oplysninger i [Oprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
 
@@ -92,13 +91,13 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 <ul>
 <li><strong>Levér nu</strong> – Vælg alle de mængder, der er angivet i feltet <strong>Levér nu</strong>. Du kan bruge denne indstilling til at bekræfte eller levere en delordre.</li>
 <li><strong>Plukket</strong> – Vælg alle de mængder, der er plukket.</li>
-<li><strong>Alle</strong> – Vælg alle antal i salgsordren, der endnu ikke er opdateret af den aktuelle dokumenttype.</li>
+<li><strong>Alle</strong> – Vælg alle mængder i salgsordren, der endnu ikke er opdateret af den aktuelle dokumenttype.</li>
 <li><strong>Følgeseddel</strong> – Vælg alle de antal, der er opdateret af en følgeseddel,.</li>
 <li><strong>Plukket antal og ikke-lagerførte produkter</strong> – Vælg alle de mængder, der er plukket, og alle de produktmængder, der ikke er på lager.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Bogfører</td>
+<td>Opdatering</td>
 <td><ul>
 <li>Vælg denne indstilling for at journalisere salgsordren.</li>
 <li>Fjern markeringen af denne indstilling for at udskrive en proformasalgsordre. <strong>Bemærk!</strong> Hvis du har indgået en aftale om en betalingsplan, vises betalingsplanen ikke på proformasalgsordren. Betalingsplaner vises kun på de egentlige salgsordrer.</li>
@@ -119,7 +118,7 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 <li><strong>Løbende</strong> – Udskriv dokumenter, når de enkelte fakturaer er opdateret.</li>
 <li><strong>Efter</strong> – Udskriv dokumenter, efter alle fakturaerne er blevet opdateret.</li>
 </ul>
-<strong>Bemærk!</strong> Feltet <strong>Udskrivning</strong> er kun tilgængeligt, hvis du vælger indstillingen <strong>Udskrivning af faktura</strong>, <strong>Udskrivning af bekræftelse</strong>, <strong>Udskrivning af plukliste</strong> eller <strong>Udskrivning af følgeseddel</strong>. På siden <strong>Formsortering</strong> har du f.eks. konfigureret systemet til at sortere efter fakturakonto. Du kan da vælge <strong>Efter</strong> for at udskrive dokumenter i en batch, der er sorteret efter fakturakonto. Ellers udskrives dokumenter, før behandlingen er fuldført, og dokumenterne sorteres ikke i den rækkefølge, der er angivet på siden <strong>Formsortering</strong>.</td>
+<strong>Bemærk!</strong> Feltet <strong>Udskrivning</strong> er kun tilgængeligt, hvis du vælger indstillingen <strong>Udskrivning af faktura</strong>, <strong>Udskrivning af bekræftelse</strong>, <strong>Udskrivning af plukliste</strong> eller <strong>Udskrivning af følgeseddel</strong>. På siden <strong>Formsortering</strong> har du f.eks. konfigureret systemet til at sortere efter fakturakonto. Du kan da vælge <strong>Efter</strong> for at udskrive dokumenter i en batch, der er sorteret efter fakturakonto. Ellers udskrives dokumenterne, før behandlingen er fuldført, og dokumenterne sorteres ikke i den rækkefølge, der er angivet på siden <strong>Formsortering</strong>.</td>
 </tr>
 <tr class="even">
 <td>Udskrivning af faktura</td>
@@ -158,7 +157,7 @@ Følgende felter ændrer funktionaliteten af bogføringsprocessen.
 <li><strong>Ingen</strong> – Opsummer ikke salgsordrer. Der oprettes f.eks. en separat faktura for hver enkelt salgsordre.</li>
 <li><strong>Fakturakonto</strong> – Opsummer alle valgte ordrer, baseret på de kriterier, der er angivet på siden <strong>Samleopdateringsparametre</strong>.</li>
 <li><strong>Ordre</strong> – Opsummer en udvalgt række ordrer i én ordre, som du angiver. Ordrerne opsummeres baseret på de kriterier, der er angivet på siden <strong>Samleopdateringsparametre</strong>. Hvis du vælger denne indstilling, skal du vælge en værdi i feltet <strong>Salgsordrer</strong>.</li>
-<li><strong>Automatisk samling</strong> – Hvis der er angivet samleopdateringer på siden <strong>Samleopdatering</strong>, skal du samle alle de valgte ordrer baseret på de kriterier, der er angivet på siden <strong>Samleopdateringsparametre</strong>. Hvis du ikke har angivet samleopdateringer, bliver ordren bogført særskilt.</li>
+<li><strong>Automatisk samling</strong> – Hvis der er angivet samleopdateringer på siden <strong>Samleopdatering</strong>, skal du samle alle de valgte ordrer baseret på de kriterier, der er angivet på siden <strong>Samleopdateringsparametre</strong>. Hvis du ikke har angivet samlede opdateringer, bliver ordren bogført særskilt.</li>
 <li><strong>Følgeseddel</strong> – Opsummer en udvalgt række ordrer i én faktura for hver følgeseddel. Denne indstilling kan kun benyttes, hvis der er valgt <strong>Følgeseddel</strong> i feltet <strong>Antal</strong>.</li>
 </ul></td>
 </tr>

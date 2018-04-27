@@ -1,5 +1,5 @@
 --- 
-title: "Designe et format til at bruge vandret udvidelige områder til dynamisk at tilføje kolonnerne i Excel-rapporter til elektronisk rapportering (ER)"
+title: "Designe et format for at bruge områder, der kan udvides i vandret retning, for at tilføje kolonnerne i Excel-rapporter dynamisk"
 description: "Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1ccf3b2d81066fce80fe14428fab24020ab85496
-ms.openlocfilehash: b921b5ff51f951112031fe8b1bc2faa90cf29a28
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9c3cf17cd406a50a9f92e78991289f9139d7c73
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Designe et format til at bruge vandret udvidelige områder til dynamisk at tilføje kolonnerne i Excel-rapporter til elektronisk rapportering (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Designe et format for at bruge områder, der kan udvides i vandret retning, for at tilføje kolonnerne i Excel-rapporter dynamisk
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret. Disse trin kan udføres i en hvilken som helst virksomhed.
 
@@ -36,7 +36,7 @@ Du skal først udføre disse tre opgaveguider for at fuldføre disse trin:
 
 "ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)"
 
-Du skal også hente og gemme en lokal kopi af den skabelon med et rapporteksempel, du finder her, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
+Du skal hente og gemme en lokal kopi af skabelonen med et eksempel på en rapport findes her, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
 
 
 Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.

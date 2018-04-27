@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Klargøre Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 for Talent. Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Talent-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
 
@@ -79,12 +79,12 @@ Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø til
  
     **CDS 2.0-miljøer** CDS 2.0 bliver offentligt tilgængelige den 21. marts 2018, men Talent understøtter endnu ikke CDS 2.0. Selvom du kan få vist og oprette CDS 2.0-databaser i PowerApps Administration, kan de ikke bruges i Talent. Muligheden for at bruge CDS 2.0-miljøer i Talent-installationer bliver tilgængelig på et senere tidspunkt.
    
- > [!Note]
- > Hvis du vil skelne mellem CDS 1.0 og 2.0-miljøer på administrationsportalen, skal du vælge et miljø, og se på **Oplysninger**. CDS 2.0-miljøer refererer alle til det forhold, at "Du kan styre disse indstillinger i Dynamics 365 Administration", du kan pege på en forekomst, og der er fane med navnet Database. 
+   > [!Note]
+   > Hvis du vil skelne mellem CDS 1.0 og 2.0-miljøer på administrationsportalen, skal du vælge et miljø, og se på **Oplysninger**. CDS 2.0-miljøer refererer alle til det forhold, at "Du kan styre disse indstillinger i Dynamics 365 Administration", du kan pege på en forekomst, og der er fane med navnet Database. 
  
    **Power Apps-standardmiljøer** Selvom hver lejer automatisk klargøres med et PowerApps-standardmiljø, anbefales det ikke at bruge dem sammen med Talent, da alle lejerbrugere har adgang til PowerApps-miljøet og derfor utilsigtet kan beskadige produktionsdata i forbindelse med test og gennemsyn af PowerApps- eller Flow-integrationer.
    
-   **Miljøer til testkørsel** Miljøer med et navn, som f.eks. 'TestDrive – alias@domain' oprettes med en 60-dages udløbsperiode og udløber efter dette tidspunkt, og det medfører, at dit miljø fjernes automatisk.
+   <strong>Miljøer til testkørsel</strong> Miljøer med et navn, som f.eks. 'TestDrive – alias@domain' oprettes med en 60-dages udløbsperiode og udløber efter dette tidspunkt, og det medfører, at dit miljø fjernes automatisk.
    
    **Ikke-understøttede områder** I øjeblikket understøttes Talent kun i følgende områder: USA, Europa eller Australien.
   
@@ -115,7 +115,7 @@ Udfør følgende instruktioner for at køre scriptet:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** skal erstattes med navnet på dit miljø. Dette navn vises i LCS og kan ses, når brugere vælge, hvilket Talent-miljø der skal bruges. 
+   **MyNewEnvironment** skal erstattes med navnet på dit miljø. Dette navn vises i LCS og kan ses, når brugere vælge, hvilket Talent-miljø der skal bruges. 
 
    **YourLocation** skal erstattes med et af de områder, hvor Talent understøttes: unitedsates, europe, australia. 
 

@@ -3,7 +3,7 @@ title: "Oprette kreditorbetalinger ved hjælp af et betalingsforslag"
 description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/17/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 454a370e73e6e0d33f0aeb1ca2b3f9d6d9f8cb98
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Oprette kreditorbetalinger ved hjælp af et betalingsforslag
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten. 
 
@@ -40,25 +39,26 @@ Forespørgslen om betalingsforslag indeholder forskellige faner, der hver især 
 ## <a name="parameters"></a>Parametre
 -   **Vælg fakturaer efter** – Fakturaer inden for det datointerval, der er angivet i felterne **Fra dato** og **Til dato**, kan vælges efter forfaldsdato, kasserabatdato eller begge dele. Hvis du bruger kasserabatdatoen, søger systemet først efter fakturaer, der har en kasserabatdato mellem Fra dato og Til dato. Systemet afgør derefter, om fakturaen er berettiget til kasserabatten, ved hjælp af sessionsdatoen for at sikre, at kasserabatdatoen ikke er overskredet.
 -   **Fra dato** og **Til dato** – Fakturaer, der har en forfaldsdato eller kasserabatdato inden for dette datointerval er udvalgt til betaling.
--   **Betalingsdato** – Bruges kun, når feltet **Periode** for betalingsmetoden er indstillet til **Samlet**. Hvis der er defineret en dato, oprettes alle betalinger på denne dato. Feltet **Dato for minimumsbetaling** ignoreres.
 -   **Dato for minimumsbetaling** – Angiv dato for minimumsbetaling. Felterne **Fra dato** og **Til dato** angiver f.eks. et interval fra 1. september til 10. september, og den dato for minimumsbetaling er 5. september. I dette tilfælde har alle fakturaer, der har en forfaldsdato fra den 1. til 5. september, en betalingsdato for 5. september. Alle fakturaer, der har en forfaldsdato fra 5. september til 10. september, har dog en betalingsdato, der er lig med forfaldsdatoen for hver faktura.
 -   **Beløbsgrænse** – Angiv det maksimale samlede beløb for alle betalinger.
 -   **Opret betalinger uden projektfaktura** – Hvis du har sat indstillingen til **Ja**, oprettes betalinger straks på siden **Kreditorbetalinger**. Siden **Betalingsforslag** vil blive sprunget over. Betalinger vil derfor blive oprettet hurtigere. Betalinger kan stadig ændres på siden **Kreditorbetalinger**. Alternativt kan du returnere til siden **Betalingsforslag** ved hjælp af knappen **Rediger fakturaer for valgt betaling**.
 
 ## <a name="advanced-options"></a>Avancerede indstillinger
--   **Kontroller kreditorsaldo** – Hvis denne indstilling er angivet til **Ja**, kontrollerer systemet, at en kreditor ikke har en debetsaldo, før fakturaen er betalt. Hvis en kreditor har en debetsaldo, oprettes der ingen betaling. Kreditoren har f.eks. måske kreditnotaer, eller betalinger, der er blevet bogført, men endnu ikke er udlignet. I disse tilfælde bør kreditoren ikke betales. I stedet skal kreditnotaer eller betalinger udlignes mod de udestående fakturaer.
--   **Slet negative betalinger** – Denne indstilling fungerer forskelligt, afhængigt af om betalinger er foretaget for enkelte fakturaer eller for summen af fakturaer, der opfylder kriterierne for betaling. Denne adfærd defineres på betalingsmåden .
--   **Betaling for hver faktura** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og der er en ikke-udlignet fakturaer og betaling for en kreditor, markeres kun fakturaen til betaling. Den eksisterende betaling udlignes i forhold til fakturaen. Hvis indstillingen **Slet negative betalinger** er angivet til **Nej**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling. En betaling oprettes for betalingen, og der oprettes en refusion (negativ betaling) til betaling.
--   **Betaling for summen af fakturaer** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og en ikke-udlignet faktura og betaling findes for en kreditor, vælges både den ikke-udlignede faktura og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb. Den eneste undtagelse opstår, hvis summen resulterer i en refusion. I så fald vælges hverken fakturaen eller betalingen. Hvis indstillingen **Slet negative betalinger** angives til **Nej**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb.
--   **Udskriv kun rapport** – Angiv denne indstilling til **Ja** for at se resultatet af betalingsforslaget i en rapport, men uden at oprette betalinger.
--   **Medtag kreditorfakturaer fra andre juridiske enheder** – Hvis din organisation har en centraliseret proces til betaling og betalingsforslaget indeholder fakturaer fra andre juridiske enheder, der er inkluderet i søgekriterierne, skal denne indstilling angives til **Ja**.
--   **Foreslå separat kreditorbetaling pr. juridisk enhed** – Hvis denne indstilling er angivet til **Ja**, oprettes der en separat betaling for hver juridisk enhed pr. kreditor. Kreditoren på betalingen er kreditoren fra fakturaen fra hver juridisk enhed. Hvis denne indstilling er angivet til **Nej**, og den samme kreditor har fakturaer i flere juridiske enheder, oprettes en betaling for det samlede beløb af de valgte fakturaer. Kreditoren på betalingen er kreditoren i den aktuelle juridiske enhed. Hvis kreditorkontoen ikke findes i den aktuelle juridiske enhed, bruges kreditorkontoen for den første faktura, der skal betales.
--   **Betalingsvaluta** – Dette felt angiver den valuta, som alle betalinger er oprettet i. Hvis der ikke er defineret en valuta, betales hver faktura i fakturaens valuta.
--   **Betalingsugedag** – Angiv den ugedag, hvor betalingen skal foretages. Dette felt bruges kun, hvis betalingsmåden er konfigureret til samlede fakturaer til betaling på en bestemt dag på ugen.
--   **Modkontotype** og **Modkonto** – Indstil disse felter til at definere en bestemt kontotype (f.eks. **Finans** eller **Bank**) og modkonto (f.eks. en bestemt bankkonto). Betalingsmåden for fakturaen definerer standardmodkontotypen og -modkontoen, men du kan bruge disse felter til at tilsidesætte standardværdierne.
--   **Ekstra filtre** – I **Poster, der skal indgå**-oversigtspanelet kan du definere flere kriterieområder. Hvis du f.eks. kun vil betale et område af kreditorer, kan du definere et filter for kreditorområdet. Denne funktion bruges ofte til at vælge fakturaer for en bestemt betalingsmåde. Hvis du f.eks. definerer et filter, hvor **Betalingsmåde** = **Check**, vælges kun fakturaer, der har denne betalingsmåde valgt til betaling, forudsat at de også opfylder andre kriterier, der er angivet i forespørgslen.
+- **Kontroller kreditorsaldo** – Hvis denne indstilling er angivet til **Ja**, kontrollerer systemet, at en kreditor ikke har en debetsaldo, før fakturaen er betalt. Hvis en kreditor har en debetsaldo, oprettes der ingen betaling. Kreditoren har f.eks. måske kreditnotaer, eller betalinger, der er blevet bogført, men endnu ikke er udlignet. I disse tilfælde bør kreditoren ikke betales. I stedet skal kreditnotaer eller betalinger udlignes mod de udestående fakturaer.
+- **Slet negative betalinger** – Denne indstilling fungerer forskelligt, afhængigt af om betalinger er foretaget for enkelte fakturaer eller for summen af fakturaer, der opfylder kriterierne for betaling. Denne adfærd defineres på betalingsmåden .
+- **Betaling for hver faktura** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og der er en ikke-udlignet fakturaer og betaling for en kreditor, markeres kun fakturaen til betaling. Den eksisterende betaling udlignes i forhold til fakturaen. Hvis indstillingen **Slet negative betalinger** er angivet til **Nej**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling. En betaling oprettes for betalingen, og der oprettes en refusion (negativ betaling) til betaling.
+- <strong>Betaling for summen af fakturaer</strong> – Hvis indstillingen <strong>Slet negative betalinger</strong> er angivet til <strong>Ja</strong>, og en ikke-udlignet faktura og betaling findes for en kreditor, vælges både den ikke-udlignede faktura og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb. Den eneste undtagelse opstår, hvis summen resulterer i en refusion. I så fald vælges hverken fakturaen eller betalingen. Hvis indstillingen <strong>Slet negative betalinger** er angivet til **Nej</strong> , og en faktura og en betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb.
+- **Udskriv kun rapport** – Angiv denne indstilling til **Ja** for at se resultatet af betalingsforslaget i en rapport, men uden at oprette betalinger.
+- **Medtag kreditorfakturaer fra andre juridiske enheder** – Hvis din organisation har en centraliseret proces til betaling og betalingsforslaget indeholder fakturaer fra andre juridiske enheder, der er inkluderet i søgekriterierne, skal denne indstilling angives til **Ja**.
+- **Foreslå separat kreditorbetaling pr. juridisk enhed** – Hvis denne indstilling er angivet til **Ja**, oprettes der en separat betaling for hver juridisk enhed pr. kreditor. Kreditoren på betalingen er kreditoren fra fakturaen fra hver juridisk enhed. Hvis denne indstilling er angivet til **Nej**, og den samme kreditor har fakturaer i flere juridiske enheder, oprettes en betaling for det samlede beløb af de valgte fakturaer. Kreditoren på betalingen er kreditoren i den aktuelle juridiske enhed. Hvis kreditorkontoen ikke findes i den aktuelle juridiske enhed, bruges kreditorkontoen for den første faktura, der skal betales.
+- **Betalingsvaluta** – Dette felt angiver den valuta, som alle betalinger er oprettet i. Hvis der ikke er defineret en valuta, betales hver faktura i fakturaens valuta.
+- **Betalingsugedag** – Angiv den ugedag, hvor betalingen skal foretages. Dette felt bruges kun, hvis betalingsmåden er konfigureret til samlede fakturaer til betaling på en bestemt dag på ugen.
+- **Modkontotype** og **Modkonto** – Indstil disse felter til at definere en bestemt kontotype (f.eks. **Finans** eller **Bank**) og modkonto (f.eks. en bestemt bankkonto). Betalingsmåden for fakturaen definerer standardmodkontotypen og -modkontoen, men du kan bruge disse felter til at tilsidesætte standardværdierne.
+- **Opsummeret betalingsdato** – Bruges kun, når feltet **Periode** for betalingsmetoden er indstillet til **Samlet**. Hvis der er defineret en dato, oprettes alle betalinger på denne dato. Feltet **Dato for minimumsbetaling** ignoreres.
+- **Ekstra filtre** – I **Poster, der skal indgå**-oversigtspanelet kan du definere flere kriterieområder. Hvis du f.eks. kun vil betale et område af kreditorer, kan du definere et filter for kreditorområdet. Denne funktion bruges ofte til at vælge fakturaer for en bestemt betalingsmåde. Hvis du f.eks. definerer et filter, hvor **Betalingsmåde** = **Check**, vælges kun fakturaer, der har denne betalingsmåde valgt til betaling, forudsat at de også opfylder andre kriterier, der er angivet i forespørgslen.
 
 ## <a name="scenarios"></a>Scenarier
+
 | Kreditor | Faktura | Fakturadato | Fakturabeløb | Forfaldsdato | Kasserabatdato | Kasserabatbeløb |
 |--------|---------|--------------|----------------|----------|--------------------|----------------------|
 | 3050   | 1001    | 15. juni      | 500,00         | 15. juli  | 29. juni            | 10,00                |

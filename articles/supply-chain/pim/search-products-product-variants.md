@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søge efter produkter og produktvarianter under ordreindtastning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Brug feltet <strong>Varenummer </strong>til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige.
 
@@ -72,7 +72,7 @@ Eksempler på produkt- og produktvariant-id'er og -dimensioner, som du kan søge
 
 Gå til siden **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgekriterier**. På siden **Søgekriterier,** kan du definere kriterier for søgning efter kunde, kundeemne og produkt. Sørg for at filtrere siden ved hjælp af søgekriterier for produktet. Du kan gøre dette ved at skifte til **Produkt** i sidens menu.  
 
-Klik på **Ny** i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret **Søgekriterier**. Åbn **Feltnavn**-kolonneopslaget, og vælg **DisplayProductNumber**. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i gitteret **Søgekriterier** og vælge **configId** i kolonnen **Feltnavn**. På samme måde kan du oprette en post med **Feltnavn** **InventColorId** for farvedimensionen, **InventSizeId** for størrelsesdimensionen og **InventStyleId** for typedimensionen.
+Klik på <strong>Ny</strong> i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret <strong>Søgekriterier</strong>. Åbn <strong>Feltnavn</strong>-kolonneopslaget, og vælg <strong>DisplayProductNumber</strong>. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i gitteret <strong>Søgekriterier** og vælge **configId</strong> i kolonnen <strong>Feltnavn</strong>. På samme måde kan du oprette en post med <strong>Feltnavn</strong> <strong>InventColorId</strong> for farvedimensionen, <strong>InventSizeId</strong> for størrelsesdimensionen og <strong>InventStyleId</strong> for typedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Trin 2: Udfyld den databasetabel, som bruges til at søge efter produkt
 

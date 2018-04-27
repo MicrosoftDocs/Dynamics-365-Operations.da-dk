@@ -19,19 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf7af869e44a60d07d66e83bfb55bd0cc7edfb91
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90b24e8e00a78c122e0f7c712a694c9c62bd4824
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Standardmodkonti for kreditorfakturakladder og fakturagodkendelseskladder
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Standardmodkonti bruges på følgende sider for kreditorfakturakladder:
 
@@ -72,7 +69,7 @@ Brug følgende tabel til at afgøre, hvor du bør tildele standardkonti for fakt
 <td>Brug denne indstilling, hvis du typisk betaler for den samme slags ting fra samme kreditorer over tid.</td>
 </tr>
 <tr class="odd">
-<td><strong>Kladdenavne</strong> – Konfigurer standardmodkonti for kladder på siden <strong>Kladdenavne</strong>. Vælg indstillingen <strong>Fast modkonto</strong>. Bemærk, at du ikke kan angive standardmodkonti på kladdenavne, hvis typen af kladdenavnene, der er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
+<td><strong>Kladdenavne</strong> – Konfigurer standardmodkonti for kladder på siden <strong>Kladdenavne</strong>. Vælg indstillingen <strong>Fast modkonto</strong>. Bemærk, at du ikke kan angive standardmodkonti på kladdenavne, hvis kladdetypen for kladdenavnene er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
 <td><ul>
 <li>Kladdehoved, der bruger kladdenavnet</li>
 <li>Kladdeposteringer i kladder, der bruger kladdenavnet</li>
@@ -81,7 +78,7 @@ Brug følgende tabel til at afgøre, hvor du bør tildele standardkonti for fakt
 <td>Brug denne indstilling til at konfigurere kladder til specifikke omkostninger og udgifter, der opkræves på bestemte konti, uanset kreditoren eller hvilken kreditorgruppe kreditoren tilhører.</td>
 </tr>
 <tr class="even">
-<td><strong>Kladdenavne</strong> – Konfigurer standardmodkonti for kladder på siden <strong>Kladdenavne</strong>. Fjern indstillingen <strong>Fast modkonto</strong>. Bemærk, at du ikke kan angive standardmodkonti på kladdenavne, hvis typen af kladdenavnene, der er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
+<td><strong>Kladdenavne</strong> – Konfigurer standardmodkonti for kladder på siden <strong>Kladdenavne</strong>. Fjern indstillingen <strong>Fast modkonto</strong>. Bemærk, at du ikke kan angive standardmodkonti på kladdenavne, hvis kladdetypen for kladdenavnene er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
 <td><ul>
 <li>Kladdehoved</li>
 <li>Kladdeposteringer i kladder, der bruger kladdenavnet</li>
@@ -90,7 +87,7 @@ Brug følgende tabel til at afgøre, hvor du bør tildele standardkonti for fakt
 <td>Brug denne indstilling til at oprette de standardkonti, der bruges, når der ikke er tildelt en standardmodkonto for kreditor.</td>
 </tr>
 <tr class="odd">
-<td><strong>Kladdehoved</strong> – Opret en standardmodkonto for en kladde som en standardpost på kladdebilagssiderne. Bemærk, at du ikke kan angive standardmodkonti på kladdehovedet, hvis typen af kladdenavnene er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
+<td><strong>Kladdehoved</strong> – Opret en standardmodkonto for en kladde som en standardpost på kladdebilagssiderne. Bemærk, at du ikke kan angive standardmodkonti på kladdehovedet, hvis kladdetypen for kladdenavnene er <strong>Indgangsbog</strong> eller <strong>Godkendelse</strong>.</td>
 <td>Kladdeposteringer i kladden</td>
 <td>Standardmodkontoen for en kladde bruges som standardpost på kladdebilagssiderne.</td>
 <td>Brug denne indstilling til at gøre indtastningen af data hurtigere, hvis de fleste poster i en kladde har samme modkonto.</td>

@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Økonomisk indsigt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Økonomiske indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i Microsoft Dynamics 365 for Finance and Operations.
 Fokus for **økonomiske indsigt** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 
@@ -107,8 +107,20 @@ Selvom **Økonomisk indsigt** indeholder regnskaber, er det ikke en erstatning f
 
 I følgende diagram til sammenligning får du hjælp til at skelne mellem de to indstillinger:
 
-|                                         | **Økonomirapportering**                            | **Økonomisk indsigt**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Redigere standardrapporter**                | Ja                                                | Nej                                 | | **Oprette nye rapporter**                  | Ja                                                | Nej                                 | | **Udskrive rapporter**                       | Ja                                                | Nej                                 | | **Eksporere til Excel**                     | Ja          | Begrænset eksport af rådata til Excel, ikke en formateret rapport       | | **Understøtte rapporteringshierarki/organisationshierarki**   | Ja                               | Nej                                 | | **Rapportere om reskontrodata**       | Ja Begrænset til kreditor, debitor    | Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser etc.  | | **Rapporteringsvaluta**      | Ja Regnskabsvaluta og omregning til rapporteringsvaluta       | Nej Kun regnskabsvaluta      | | **Sikkerhed**                | Ja Overholder sikkerheden i Finance and Operations og i trædiagrammet | Begrænset Visning af rapporter for alle virksomheder (uanset sikkerhed i Finance and Operations) eller kun den aktive virksomhed | | **Understøtte forskellige kontoplaner og regnskabsår** | Ja                   | Nej                   | | **Rapporter om eksterne data**                              | Nej                   | Nej                                   | | **Understøtte konsolideringer**                               | Ja                          | Begrænset Kan rapportere om flere virksomheder, men kan kun bruge regnskabsvaluta                                     |
 
+|                                                                       |               <strong>Økonomirapportering</strong>                |                                      <strong>Økonomisk indsigt</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Redigere standardrapporter</strong>                 |                                Ja                                |                                                      Nr.                                                       |
+|                  <strong>Oprette nye rapporter</strong>                  |                                Ja                                |                                                      Nr.                                                       |
+|                    <strong>Udskriv rapporter</strong>                     |                                Ja                                |                                                      Nr.                                                       |
+|                   <strong>Eksportér til Excel</strong>                    |                                Ja                                |                           Rådata for begrænsede eksporter til Excel, ikke en formateret rapport                           |
+|  <strong>Understøtte rapporteringshierarki/organisationshierarki</strong>  |                                Ja                                |                                                      Nr.                                                       |
+|               <strong>Rapportere reskontrodata</strong>               |               Ja Begrænset til kreditor, debitor                |                 Ja Kreditor, debitor, kreditor-/debitorgrupper, kreditor-/debitoradresser osv.                 |
+|                  <strong>Rapporteringsvaluta</strong>                  |    Ja Regnskabsvaluta og omregning til rapporteringsvaluta    |                                          Nej Kun regnskabsvaluta                                          |
+|                       <strong>Sikkerhed</strong>                       | Ja Overholde sikkerhed for Finance and Operations og trædiagrammet | Begrænset Vis rapporter for alle firmaer (uanset sikkerhed for Finance and Operations) eller kun aktivt firma |
+| <strong>Understøtte forskellige kontoplaner og regnskabsår</strong> |                                Ja                                |                                                      Nr.                                                       |
+|               <strong>Rapportere eksterne data</strong>                |                                Nr.                                 |                                                      Nr.                                                       |
+|                <strong>Understøtte konsolideringer</strong>                |                                Ja                                |                   Begrænset Kan rapportere om flere firmaer, men kun bruge regnskabsvaluta                   |
 
 Ud over brugergrænsefladen i det oprindelige arbejdsområde **Regnskabsdirektørens oversigt** er nye KPI'er, diagrammer og regnskaber nu tilgængelig. Følgende regnskaber er tilgængelige:
 

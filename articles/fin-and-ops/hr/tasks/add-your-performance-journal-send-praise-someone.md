@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Tilføje til performancekladde og sende ros til en person
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode. Du kan også rose handlinger udført af en kollega fra kladden. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
@@ -42,7 +42,7 @@ Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt
 9. Skriv en værdi i feltet Nøgleord.
 10. Klik på Tilføj eksternt link.
 11. Skriv 'Envision' i feltet 'Beskrivelse'.
-12. I feltet Internetadresse skal du skrive 'https://www.microsoft.com/en/envision/default'.
+12. Indtast '<https://www.microsoft.com/en/envision/default>' i feltet Internetadresse.
 13. Klik på titelteksten under knappen Gem kaldet "Performancejournal" for at vende tilbage til gitteret.
     * Du kan føje den eller de valgte kladder til et mål, så det vises, når du åbner målet. Der tilføjes et link på hurtigfanen Links. Hvis du føjer en kladde til et mål og derefter føjer målet til en evaluering, vises kladden automatisk i evalueringen.  
     * Du kan føje den eller de valgte kladder til en evaluering så det vises, når du åbner evalueringen.    I oversigtspanelet Links tilføjes der et link.  

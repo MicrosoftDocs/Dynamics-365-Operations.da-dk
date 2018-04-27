@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Oprette kuponer for detailsalg
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Oversigt over kuponer
 
@@ -46,9 +45,12 @@ Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Der
 
 ### <a name="limited-use-coupons"></a>Kuponer med begrænset anvendelse
 
-Kuponer kan konfigureres som kuponer med begrænset anvendelse. Anvendelsesgrænsen kan defineres pr. kunde eller kanal eller som en global begrænsning. Denne begrænsning gennemtvinges, når koden eller stregkode angives eller indscannes i POS eller under indtastning af salgsordrer. En kupon registreres som anvendt, når en ordre, der har en kupon tilknyttet, er fuldført.
+Kuponer kan konfigureres som kuponer med begrænset anvendelse. Anvendelsesgrænsen kan defineres pr. kunde eller kanal eller som en global begrænsning. Denne begrænsning gennemtvinges, når koden eller stregkode angives eller indscannes i POS eller under indtastning af salgsordrer.
 
 Grænsen gennemtvinges pr. kuponkode på en kupon. F.eks. kan en engangskupon, der har to kuponkoder, bruges to gange: én gang for hver kuponkode. Hver kode på en kupon kan indstilles uafhængigt til aktiv.
+
+> [!NOTE]
+> Når en kuponkode har nået sin forbrugsgrænse, ændrer systemet *ikke* automatisk statussen for kuponkoden til "Brugt". Systemet tillader dog ikke yderligere brug af en kuponkode, som har nået brugsgrænsen. Hvis statussen for en kuponkode indstilles manuelt til andet end "Aktiv", kan denne kuponkode ikke bruges i nogen kanal.
 
 ## <a name="managing-coupons"></a>Administration af kuponer
 
@@ -68,8 +70,8 @@ Når du vil konfigurere en kupon, skal du først angive kuponens stregkode og to
     > [!NOTE]
     > For begge nummerserier skal du indstille feltet **Interval** til **Firma**. I de fleste tilfælde bør du generere begge serienumre automatisk.
 
-5.  På siden **Delte parametre for detail** under fanen **Stregkoder** skal du vælge den stregkode, du oprettede tidligere.
-6.  På siden **Detailparametre** under fanen **Nummerserier** skal du vælge de nummerserier, du oprettede for Kuponnummer og Kuponkode-id.
+5.  På siden **Detailparametre** under fanen **Stregkoder** skal du vælge den stregkode, du oprettede tidligere.
+6.  På siden **Delte parametre for detail** under fanen **Nummerserier** skal du vælge de nummerserier, du oprettede for kuponnummeret og kuponkode-id'et.
 7.  Du kan nu åbne siden **Kuponer** og oprette nye rabatkuponer.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen af delvise opdateringer på kuponer

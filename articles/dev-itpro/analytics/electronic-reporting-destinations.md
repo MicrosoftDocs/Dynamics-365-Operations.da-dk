@@ -19,17 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Destinationer for elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser.
 
@@ -71,7 +70,7 @@ Når du klikker på **Rediger** for feltet **til** eller **Cc**, åbnes dialogbo
 
 #### <a name="print-management"></a>Udskriftsstyring
 
-Hvis du vælger typen **Mail for udskriftsstyring**, kan du angive fast e-mailadresser i feltet **Til**. Hvis du vil bruge mailadresser, der ikke er faste, skal du vælge mailkildetypen for en fildestination. Følgende værdier understøttes: **Kunde**, **Leverandør**, **Kundeemne**, **Kontakt**, **Konkurrent**, **Arbejder**, **Ansøger**, **Mulig kreditor** og **Ikke-godkendt kreditor**. Når du har valgt en kildetype for e-mailen, skal du bruge knappen ud for feltet **Kildekonto for mail** til at åbne formularen **Formeldesigner**. Du kan bruge denne formular til at knytte en formel, der repræsenterer den valgte partskonto, til e-maildestinationen.
+Hvis du vælger typen **Mail for udskriftsstyring**, kan du angive fast e-mailadresser i feltet **Til**. Hvis du vil bruge mailadresser, der ikke er faste, skal du vælge mailkildetypen for en fildestination. Følgende værdier understøttes: **Kunde**, **Leverandør**, **Kundeemne**, **Kontakt**, **Konkurrent**, **Arbejder**, **Ansøger**, **Mulig kreditor** og **Ikke-godkendt kreditor**. Når du har valgt en kildetype for mail, skal du bruge knappen ved feltet **Kildekonto for mail** til at åbne formularen **Formeldesigner**. Du kan bruge denne formular til at knytte en formel, der repræsenterer den valgte partskonto, til e-maildestinationen.
 
 [![Konfigurere e-mailtypen udskriftsstyring](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 

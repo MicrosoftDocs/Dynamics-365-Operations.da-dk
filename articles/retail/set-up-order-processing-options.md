@@ -1,9 +1,9 @@
 ---
-title: Konfigurer indstillinger for ordrebehandling
-description: Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Retail.
+title: Konfigurere en callcenter-kanal
+description: "Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved hjælp af Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Konfigurere indstillinger for ordrebehandling
+# <a name="set-up-a-call-center-channel"></a>Konfigurere en callcenter-kanal
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Et firma kan definere flere callcenter-kanaler i Microsoft Dynamics 365 for Retail. Callcenter-kanaler konfigureres under **Retail** \> **Kanaler** \> **Callcentre** \> **Alle callcentre**, og de er specifikke for en juridisk enhed.
 
-Dette emne indeholder oplysninger om, hvordan du behandler ordrer for callcentre ved brug af Microsoft Dynamics 365 for Retail. 
+Når der oprettes en ny callcenter-kanal, tildeles den systematisk et driftsenhedsnummer. Da callcentre oprettes som driftsenheder, kan brugere knytte callcenter-kanalen til forskellige Retail-funktioner, f.eks. sortimenter, kataloger og specifikke leveringsmåder.
 
-Retail understøtter flere detailkanaler, f.eks. onlinebutikker, fysiske butikker og callcentre. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Dette emne beskriver, hvordan du opretter et callcenter og konfigurerer indstillingerne for callcenteret. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. **Vigtigt:** Når en bruger opretter salgsordrer, skal brugeren tildeles til callcentret som callcenterbruger, før callcenterarbejdsgangen kan bruges. Du kan bruge siden **Callcenter** til at aktivere eller deaktivere grupper af funktioner, der er unikke for callcentre. Følgende grupper af funktioner kan aktiveres:
+Der kan konfigureres et standardlagersted for callcenter-kanalen. Derefter, når der oprettes salgsordrer i denne kanal, angives standardlagerstedet automatisk på salgsordrehovedet, medmindre et andet lagersted er defineret for den kunde, der er valgt til salgsordren. I så fald er kundens lagersted angivet som standard.
 
--   **Ordrefuldførelse** – Denne gruppe omfatter funktioner, der er knyttet til betalinger og færdiggørelse på siden **Salgsordre**.
--   **Dirigeret salg** – Denne gruppe indeholder funktioner, der er relateret til kildekoder, scripts og kataloganmodninger.
+Brugere skal være knyttet til en callcenter-kanalen for at kunne bruge funktionerne i callcenteret. En salgsordre, som oprettes i Retail af bruger, knyttes automatisk til denne brugers callcenter-kanal. I øjeblikket kan en enkelt bruger ikke knyttes til flere callcenter-kanaler samtidigt.
 
-Når du aktiverer disse funktioner i indstillingerne for callcenteret, er de tilgængelige på siden **Salgsordre** for brugere, der er knyttet til callcenteret. De fleste af disse funktioner kræver yderligere opsætning, før de kan bruges. Billeder og scripts er aktiveret som en del af indstillingen for dirigeret salg for det specifikke callcenter. Hvis disse funktioner er aktiveret, vises scripts og produktbilleder i faktaboksruden på siden **Salgsordre**. Standardbilledet, der er angivet for et produkt, vises. Scripts kan konfigureres for en vare, katalog, debitor eller vare i forbindelse med et katalog. Callcenterordrer kan vise flere oplysninger om, hvordan prisen for en bestemt ordrelinje blev afledt. Ordrerne viser f.eks., hvilke rabatter der blev anvendt. Du kan aktivere funktionen under **Debitor** &gt; **Opsætning** &gt; **Debitorparametre** &gt; **Priser** &gt; **Prisdetaljer**. Du kan få adgang til siden **Prisdetaljer** på rullelisten **Salgsordrelinje**. Du kan bruge ordrehændelsessporing til overvågningsformål, til at gennemse de handlinger, der er udført for en ordre i ordrens livscyklus, eller til at spore handlinger for en bestemt bruger. Du kan for eksempel optage handlingen, hver gang en bruger opretter en salgsordre, sætter en ordre på hold, tilsidesætter et gebyr eller opdaterer en ordrelinje. Du kan konfigurere ordrehændelser til at spore handlinger for bestemte brugere, grupper af brugere eller alle brugere i en bestemt periode. Du kan få vist de handlinger, der er udført på et dokument, ved at åbne siden **Ordrehændelser** fra handlingsruden på siden for det pågældende dokument. Du kan konfigurere ordrehændelser på **Salgs og marketing** &gt; **Opsætning** &gt; **Hændelser** &gt; **Ordrehændelser**. Når en debitors ordre ikke kan leveres til tiden, kan en virksomhed automatisk sende mailbeskeder til debitoren for at forklare ordrestatussen og giver debitoren en mulighed for at annullere ordren. Hvis forsinkelsen rækker ud over en bestemt tærskel, kan ordren annulleres automatisk. Der kan sendes op til tre mailbeskeder med bestemte intervaller:
+En profil for e-mail-besked kan også konfigureres for callcenter-kanalen. Profilen definerer det sæt af e-mail-skabeloner, der bruges, når der sendes e-mail til kunder, der kan afgiver ordrer gennem callcenter-kanalen. E-mail-udløserne kan konfigureres i forhold til systemhændelser som f.eks. indgivelse eller forsendelse af ordrer.
 
-1.  **Første varsel om automatisk annullering** – Debitoren kan vælge at annullere ordren.
-2.  **Andet varsel om automatisk annullering** – Debitoren kan vælge at annullere ordren.
-3.  **Endeligt varsel om automatisk annullering** – Systemet annullerer ordren, og debitoren får besked om annulleringen.
+Før salget kan behandles korrekt via en callcenter-kanal, skal du angive de rette [betalingsmetoder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) og leveringsmåder for kanalen.
 
-Du kan undtage individuelle debitorer og produkter fra den automatiske proces til beskeder og annullering. Der udløses en vigtig besked om avance, når du føjer en vare til en ordre. Beskeden indeholder vigtige oplysninger om varen, f.eks. DB for pris og varerentabilitet. Du kan bruge disse oplysninger til at afgøre, om en prisændring er passende, når du tilføjer en vare til salgsordren. Du kan for eksempel konfigurere grænseværdier for handelsavancer for at angive, at en grænseværdi på 40 % eller mere over omkostninger er acceptabelt for en vare, men en grænse på 20 til 39 % over omkostninger er diskutabelt. I dette tilfælde udløser en vare med en grænse mellem 20 og 39 % en advarsel. Alle varer, der har en grænse på mindre end 20 % over omkostninger kan ikke sælges, og vareprisen kan ikke justeres. Du kan konfigurere vigtige beskeder om avance på **Debitor** &gt; **Opsætning** &gt; **Debitorparametre** &gt; **Vigtige beskeder om avance**. Når du konfigurerer momstildelingen, der er baseret på standardregler, kan du bestemme en tilsvarende prioritet for adresseelementer. Du kan f.eks. angive, at det har højere prioritet at sammenholde en momsgruppe efter postnummer end stat. Når du indtaster nye kundeadresseposter, tildeles momsgruppen automatisk baseret på, hvordan kundens adresse stemmer overens med standardreglerne og prioriteten, der svarer til det, du definerede. Du kan konfigurere denne funktion på siden **Finansparametre**.
+På niveauet for callcenter-kanalen kan du definere andre standardværdier i relation til de økonomiske dimensioner, som knyttes til de ordrer, der oprettes i den pågældende kanal.
 
+## <a name="options-for-order-processing-behavior"></a>Indstillinger for ordrebehandling
 
+Tre indstillinger i konfigurationen af et callcenter har stor indvirkning på de funktioner, der er tilgængelige for salgsordrer, som oprettes i forhold til det pågældende callcenter: **Aktivér ordrefuldførelse**, **Aktivér direkte salg**, og **Aktivér ordrepriskontrol**.
 
+### <a name="enable-order-completion"></a>Aktivér ordrefuldførelse
+
+Indstillingen **Aktivér ordrefuldførelse** for callcenter-kanalen har en større effekt på ordrebehandlingens flow af de salgsordrer, som er angivet for den pågældende kanal. Når indstillingen er aktiveret, skal alle salgsordrer opfylde en række valideringsregler, før de kan bekræftes. Du kan køre disse regler ved at vælge knappen **Fuldført**, der er tilføjet i handlingsruden på siden for salgsordren. Alle salgsordrer, der oprettes, når indstillingen **Aktivér ordrefuldførelse** er aktiveret, skal gennemgå processen for ordrefuldførelse. Denne proces gennemtvinger indhentning af betaling og følger valideringslogikken for betalingen. Ud over indhentning af betaling kan ordreindgivelsesprocessen udløse [svindelkontroller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts), som konfigureres i systemet. Ordrer, der ikke består betalings- eller svindelvalideringer, sættes i kø og kan ikke frigives til yderligere behandling (f.eks. pluk eller levering), indtil det problem, der forårsagede spærringen, er løst.
+
+Når indstillingen **Aktivér ordrefuldførelse** er aktiveret for callcenter-kanalen, der er angivet linjeelementer på en salgsordre, og kanalens bruger forsøger at lukke eller forlade salgsordreformen uden først at markere **Fuldført**, håndhæver systemet ordrefuldførelsesprocessen ved at åbne siden for opsummering af salgsordrer og kræver, at brugeren indsender ordren korrekt. Hvis ordren ikke kan sendes korrekt sammen med betalingen, kan brugeren anvende funktionen for [ordrekø](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) for at sætte ordren i kø. Hvis brugeren forsøger at annullere ordren, skal han eller hun annullere den korrekt ved hjælp af funktionen Annuller eller Slet, afhængigt af den funktion brugerens sikkerhedsindstillinger tillader.
+
+Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret for callcenter-kanalen, spores feltet **Betalingsstatus** på ordren. Systemet beregner **Betalingsstatus**, når salgsordren er afgivet. Kun ordrer, der har en godkendt betalingsstatus, får lov til at gå gennem systemet til de øvrige trin i ordrebehandlingen, f.eks. pluk og levering. Hvis betalinger bliver afvist, aktiveres flaget **Udfør ikke behandling** i den detaljerede ordrestatus, og ordren sættes i kø, indtil betalingsproblemet er løst.
+
+Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, når brugere opretter salgsordrer, og tilstanden for indtastning af linjeelementer er aktiveret, vil feltet **Kilde** være tilgængeligt i det overordnede salgsordrehoved. Feltet **Kilde** bruges til at registrere en [katalogkildekode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) i forbindelse med et salgscenarie med direkte marketing. Denne kode kan derefter udløse specialpriser og kampagner.
+
+Selvom indstillingen **Aktivér ordrefuldførelse** er deaktiveret, kan brugerne stadig anvende en kildekode til en salgsordre. De skal dog først åbne salgsordrehovedets detaljer for at få adgang til feltet **Kilde**. Med andre ord kræves der nogle ekstra klik. Samme funktionsmåde gælder for funktioner som f.eks. Forsendelse fuldført og Fremskyndede ordrer. Disse funktioner er tilgængelige for alle ordrer, der er oprettet i callcenteret. Når indstillingen **Aktivér ordrefuldførelse** er slået til, kan brugere dog se konfigurationen af disse funktioner på salgshovedet, mens de er i linjepostvisning. De behøver ikke dykke ned i salgsordrehovedets detaljer for at finde de relevante indstillinger og felter.
+
+### <a name="enable-direct-selling"></a>Aktivere direkte salg
+
+Hvis indstillingen **Aktivér direkte salg** er aktiveret for callcenter-kanalen, kan brugerne udnytte fordelene ved funktionerne for mersalg og tillægssalg i Retail. I så fald vises pop op-vinduer under ordreindtastningen med forslag til andre produkter, som callcenter-brugeren kan tilbyde sin kunde. De produkter, der foreslås, er baseret på det produkt, der netop er blevet bestilt på salgsordrelinjen. Forslag til mersalg og tillægsslag konfigureres i øjeblikket på vareniveauet for produkter eller kataloger. Hvis indstillingen **Aktivér direkte salg** er deaktiveret for callcenter-kanalen, vises der ikke pop op-vinduer under ordreindtastningen, selvom der er defineret et gyldigt mersalg eller tillægssalg for den vare, der bestilles.
+
+Når indstillingen **Aktivér direkte salg** er aktiveret, er funktionerne for scripts og billeder på siden for salgsordreindtastningen også aktiveret. I så fald findes der et informationspanel til højre på siden under ordreindtastningen. Dette panel kan vise scripts, der er relateret til den generiske ordreindtastningsproces, den anvendte kildekode for kataloget eller scripts i relation til de varer, som bliver bestilt. Derudover kan billedpanelet vise et produktbillede for de varer, som bliver bestilt, hvis der er defineret et billede for varen i produktopsætningen.
+
+### <a name="enable-order-price-control"></a>Aktivér ordrepriskontrol
+
+Når indstillingen **Aktivér ordrepriskontrol** er aktiveret, kan kun autoriserede brugere ændre salgsprisen for en vare under ordreindtastningen. Ændringerne skal ligge inden for de angivne tolerancer. Brugere, der ikke har den rette godkendelse, skal i stedet indsende en anmodning om en prisændring. Anmodningen behandles derefter via systemets arbejdsgange for gennemsyn og godkendelse.
+
+## <a name="channel-users"></a>Kanalbrugere
+
+Når du definerer callcenter-kanalen, skal du knytte kanalens brugere til callcenteret. Ellers kan callcenteret ikke bruges i systemet. Når brugere logger på Retail og indtaster salgsordrer eller returordrer på en side, der er relateret til ordreindtastning, valideres deres bruger-id'er ud fra konfigurationen af callcenter-kanalen. Hvis en bruger er knyttet til en bestemt callcenter-kanal, arver de ordrer, som brugeren opretter, egenskaberne og standardværdierne for den pågældende kanal.
+
+Som standard er flaget **Detailsalg** aktiveret på salgsordrehovedet for alle ordrer, som callcenterets brugere opretter. Ordrerne kan derefter udnytte systemets detailspecifikke pris- og kampagnefunktioner.
+
+Brugere, der ikke er tilknyttet en callcenter-kanal skal bruge standardfunktionerne til ordreindtastning i Microsoft Dynamics 365 for Finance and Operations. De ordrer, som disse brugere indtaster via salgsordreformularen, registreres ikke systematisk som ordrer i Retail. Derudover vil disse ordrer, der er indgivet af disse brugere, ikke være omfattet af behandlingsreglerne for ordrefuldførelse, logikken for detailpriser eller andre valideringer, som kan defineres i konfigurationen af callcenter-kanalen eller callcenterets systemparametre.
+
+Når du er færdig med at konfigurere callcenter-kanalen og definere kanalens brugere, og når du vil sikre den ønskede systemadfærd, skal du kontrollere, at alle nødvendige parametre for callcenteret er defineret under **Retail** \> **Konfiguration af kanal** \> **Callcenter-konfiguration** \> **Callcenter-parametre**. Sørg for, at der også er defineret relaterede nummerserier.
 

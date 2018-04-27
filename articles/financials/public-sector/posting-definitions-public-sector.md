@@ -19,17 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59a63897cec4a749b727d00976ab27d6ba04af28
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8d2bdd40c16000e080c215aa4eaaf807770949f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
 
@@ -349,10 +348,10 @@ I posteringsdefinitionen skal du derefter angive følgende søgekriterier og gen
 
 ### <a name="posting-definition--generated-entries-for-match-criteria--row-1"></a>Bogføringsdefinition – genererede poster for søgekriterier – række 1
 
-| Kontostruktur | Genereret kontonummer                                                               | Genereret debet/kredit |
-|-------------------|----------------------------------------------------------------------------------------|------------------------|
-| Saldo           | 999 - 11530 (Debiter debitorsaldoposteringstypeposten på den kreditornota, der udstedes). | Balancere          |
-| Samme              | 999 – (Krediter tilgodehavende i 999-midlet).                                         | Samme                   |Bogføringsdefinitionen skal indeholde følgende postering for hvert middel, ud over kassererens midler (999).
+| Kontostruktur |                                 Genereret kontonummer                                  | Genereret debet/kredit |
+|-------------------|-------------------------------------------------------------------------------------------|------------------------|
+|      Saldo      | 999 - 11530 (Debiter debitorsaldoposteringstypeposten på den kreditornota, der udstedes). |       Balancere        |
+|       Samme        |                      999 – (Krediter tilgodehavende i 999-midlet).                       |          Samme          |
 
 ### <a name="posting-definition--match-criteria--row-2"></a>Bogføringsdefinition – søgekriterier – række 2
 

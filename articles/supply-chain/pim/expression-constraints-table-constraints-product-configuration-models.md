@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives brugen af udtryksbegrænsninger og tabelbegrænsninger. Begrænsninger styrer de attributværdier, som du kan vælge, når du konfigurerer produkter til en salgsordre, et salgstilbud, en indkøbsordre eller en produktionsordre. Du kan bruge udtryksbegrænsninger eller tabelbegrænsninger, afhængigt af hvordan du foretrækker at udforme begrænsninger. 
 
@@ -171,7 +170,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </tr>
 <tr class="even">
 <td>Strøm</td>
-<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Power[a, b, c]</strong> til <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
+<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Strøm[a, b, c]</strong> til <strong>Strøm[a, Strøm[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -204,23 +203,24 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 
 Eksemplerne i næste tabel viser, hvordan du skriver en infix-anmærkning.
 
-| Notationen infix    | Betegnelse                                                                                   |
+
+|  Notationen infix   |                                          Betegnelse                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Tilføjelse                                                                                      |
-| x \* y \* z       | Multiplikation                                                                                |
-| x - y             | Binær subtraktion oversættes på samme måde som binær addition, hvor der er et negativt sekund. |
-| x ^ y ^ z         | Eksponentiering, der har en højre-association                                                   |
-| !x                | Boolesk ikke                                                                                   |
-| x -: y            | Boolesk virkning                                                                           |
-| x | y | z         | Boolsk eller                                                                                    |
-| x & y & z         | Boolesk og                                                                                   |
-| x == y == z       | Lig med                                                                                      |
-| x != y != z       | Bestemt                                                                                      |
-| x &lt; y &lt; z   | Mindre end                                                                                     |
-| x &gt; y &gt; z   | Større end                                                                                  |
-| x &lt;= y &lt;= z | Mindre end eller lig med                                                                         |
-| x &gt;= y &gt;= z | Større end eller lig med                                                                      |
-| (x)               | Parentes tilsidesætter standardprioritering.                                                      |
+|     x + y + z     |                                           Tilføjelse                                            |
+|    x \* y \* z    |                                        Multiplikation                                         |
+|       x - y       | Binær subtraktion oversættes på samme måde som binær addition, hvor der er et negativt sekund. |
+|     x ^ y ^ z     |                          Eksponentiering, der har en højre-association                          |
+|        !x         |                                          Boolesk ikke                                          |
+|      x -: y       |                                      Boolesk virkning                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Boolesk og                                          |
+|    x == y == z    |                                           Lig med                                            |
+|    x != y != z    |                                           Bestemt                                            |
+|  x &lt; y &lt; z  |                                           Mindre end                                           |
+|  x &gt; y &gt; z  |                                         Større end                                          |
+| x &lt;= y &lt;= z |                                     Mindre end eller lig med                                     |
+| x &gt;= y &gt;= z |                                   Større end eller lig med                                    |
+|        (x)        |                           Parentes tilsidesætter standardprioritering.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres mine udtryksbegrænsninger ikke korrekt?
 Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel. Her er en liste over de reserverede nøgleord, som du kan bruge:

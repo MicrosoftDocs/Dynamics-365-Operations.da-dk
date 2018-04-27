@@ -3,11 +3,12 @@ title: Power BI-indhold til omkostningsstyring
 description: I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -19,124 +20,195 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+## <a name="overview"></a>Overblik
+
+Microsoft Power BI-indholdet for **Omkostningsstyring** er beregnet til lagerbogholdere eller enkeltpersoner i organisationen, som er ansvarlige for eller interesserede i status for lageret eller det igangværende arbejde (IGVA), eller som er ansvarlig for eller interesseret i at analysere afvigelser i standardomkostningerne.
 
 > [!Note]
-> Denne indholdspakke er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er publiceret på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> Power BI-indholdet for **Omkostningsstyring**, som er beskrevet i dette emne, gælder for Dynamics 365 for Finance and Operations 8.0.
+> 
+> Power BI-indholdspakken for **Omkostningsstyring**, som er publiceret til webstedet PowerBI.com, frarådes. Du kan finde flere oplysninger om denne afskrivning i [Power BI-indholdspakkerne, der er publiceret til PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
-I dette emne beskrives, hvad der skal medtages i Power BI-indhold til omkostningsstyring. 
+Dette Power BI-indhold giver et kategoriseret format, som gør det lettere at overvåge performance for lagerbeholdninger og visualisere, hvordan omkostninger "flyder" gennem dem. Du kan få ledelsesmæssig indsigt, f.eks. omsætningshastigheden, antallet af dage, hvor varen er på lager, nøjagtighed og "ABC-klassifikation" på dit foretrukne samlede niveau (firma, vare, varegruppe eller sted). De oplysninger, der er gjort tilgængelige, kan også bruges som et detaljeret supplement til regnskabet.
 
-Microsoft Power BI-indhold til **Omkostningsstyring** er beregnet til lagerregnskabsmedarbejdere eller personer i organisationen, der er ansvarlige for lageret. Power BI-indholdet til **Omkostningsstyring** giver ledelsesmæssig indsigt i lager og lager for igangværende forarbejdning (IGVF), og hvordan kostprisen flyder gennem dem efter kategori over tid. Oplysningerne kan også bruges som et detaljeret supplement til regnskabet.
+Power BI-indholdet er baseret på den samlede måling for **CostObjectStatementCacheMonthly**, som har tabellen **CostObjectStatementCache** som primær datakilde. Denne tabel administreres af datasættes cachestruktur. Tabellen opdateres med 24 timers mellemrum som standard, men du kan ændre opdateringshyppigheden og aktivere manuelle opdateringer i konfigurationen af datasætcachen. Manuelle opdateringer kan køres enten i arbejdsområdet **Omkostningsstyring** eller **Omkostningsanalyse**.
 
-## <a name="key-measures"></a>Nøgletal
+Efter hver opdatering af tabellen **CostObjectStatementCache**, skal den samlede måling for **CostObjectStatementCacheMonthly** opdateres, før dataene Power BI-visualiseringerne opdateres.
 
-+ Startsaldo
-+ Slutsaldo
-+ Netto ændring
-+ Netto ændring i %
-+ Aldersfordeling
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
-## <a name="key-performance-indicators"></a>Nøgletal
-+ Lageromsætning
-+ Lagernøjagtighed
+Power BI-indholdet for **Omkostningsstyring** vises i arbejdsområderne **Omkostningsstyring** og **Omkostningsanalyse**.
 
-Den primære datakilde for CostAggregatedCostStatementEntryEntity er CostStatementCache-tabellen. Denne tabel administreres af datasættes cachestruktur. Tabellen opdateres med 24 timers mellemrum som standard, men du kan aktivere manuelle opdateringer i datacachekonfigurationen. Du kan derefter foretage en manuel opdatering i **Omkostningsstyring** eller **Omkostningsanalyse** arbejdsområdet. Efter kørslen af opdateringen af CostStatementCache skal du opdatere OData-forbindelsen på Power BI.com for at få vist opdaterede data på webstedet. Afvigelsesmålingerne (indkøb, produktion) i dette Power BI-indhold gælder kun for varer, der er vurderet med lagermetoden for standardomkostninger. Produktionsafvigelsen beregnes som forskellen mellem aktive omkostninger og realiserede omkostninger. Produktionsafvigelsen beregnes, når produktionsordren har status **Afsluttet**. Du kan finde flere oplysninger om typer af produktionsafvigelse, og hvordan hver type beregnes, under [Om analyse af afvigelser for en afsluttet produktionsordre](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+Arbejdsområdet **Omkostningsstyring** indeholder følgende faner:
+
+- **Oversigt** – Denne fane viser programdata.
+- **Lagerregnskabsstatus** – Denne fane viser Power BI-indhold.
+- **Produktionsregnskabsstatus** – Denne fane viser Power BI-indhold.
+
+Arbejdsområdet **Omkostningsanalyse** indeholder følgende faner:
+
+- **Oversigt** – Denne fane viser programdata.
+- **Lagerregnskabsanalyse** – Denne fane viser Power BI-indhold.
+- **Produktionsregnskabsanalyse** – Denne fane viser Power BI-indhold.
+- **Analyse af standardomkostningsafvigelse** – Denne fane viser Power BI-indhold.
+
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Rapportsider, der er inkluderet i Power BI-indholdet
+
+Power BI-indholdet for **Omkostningsstyring** omfatter en række rapportsider, der indeholder et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. 
+
+I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-indholdet for **Omkostningsstyring**.
+
+### <a name="inventory-accounting-status"></a>Lagerregnskabsstatus
+
+| Rapportside                               | Visualisering                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Lageroversigt                        | Startsaldo                               |
+|                                           | Netto ændring                                      |
+|                                           | Nettoændring i %                                    |
+|                                           | Slutsaldo                                  |
+|                                           | Lagernøjagtighed                              |
+|                                           | Lageromsætningshastighed                        |
+|                                           | Dage for disponibel beholdning                          |
+|                                           | Aktivt produkt i periode                        |
+|                                           | Aktive omkostningsobjekter i periode                   |
+|                                           | Saldo pr. varegruppe                           |
+|                                           | Saldo pr. sted                                 |
+|                                           | Kontoudtog pr. kategori                           |
+|                                           | Nettoændring pr. kvartal                           |
+| Lageroversigt pr. sted og varegruppe | Lagernøjagtighed pr. sted                      |
+|                                           | Lageromsætningshastighed pr. sted                |
+|                                           | Lagerslutsaldo pr. sted                |
+|                                           | Lagernøjagtighed pr. varegruppe                |
+|                                           | Lageromsætningshastighed pr. varegruppe          |
+|                                           | Lagerslutsaldo pr. sted og varegruppe |
+| Lageropgørelse                       | Lageropgørelse                             |
+| Lageropgørelse pr. sted               | Lageropgørelse pr. sted                     |
+| Lageropgørelse pr. produkthierarki  | Lageropgørelse                             |
+| Lageropgørelse pr. produkthierarki  | Lageropgørelse pr. sted                     |
+
+### <a name="manufacturing-accounting-status"></a>Produktionsregnskabsstatus
+
+| Rapportside                | Visualisering                       |
+|----------------------------|-------------------------------------|
+| ÅTD for IGVF-oversigt           | Startsaldo                   |
+|                            | Netto ændring                          |
+|                            | Nettoændring i %                        |
+|                            | Slutsaldo                      |
+|                            | Omsætningshastighed for IGVF                  |
+|                            | Dage for IGVF-beholdning                    |
+|                            | Aktivt omkostningsobjekt i periode        |
+|                            | Nettoændring pr. ressourcegruppe        |
+|                            | Saldo pr. sted                     |
+|                            | Kontoudtog pr. kategori               |
+|                            | Nettoændring pr. kvartal               |
+| IGVA-beregning              | Startsaldo                   |
+|                            | Slutsaldo                      |
+|                            | IGVF-kontoudtog pr. kategori           |
+| IGVF-kontoudtog pr. sted      | Startsaldo                   |
+|                            | Slutsaldo                      |
+|                            | IGVF-kontoudtog pr. kategori og sted  |
+| IGVF-kontoudtog pr. hierarki | Startsaldo                   |
+|                            | Slutsaldo                      |
+|                            | IGVF-kontoudtog pr. kategorihierarki |
+
+### <a name="inventory-accounting-analysis"></a>Lagerregnskabsanalyse
+
+| Rapportside        | Visualisering                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Lagerdetaljer  | 10 vigtigste ressourcer pr. slutsaldo                                           |
+|                    | 10 vigtigste ressourcer pr. stigning i nettoændring                                      |
+|                    | 10 vigtigste ressourcer pr. reduktion i nettoændring                                      |
+|                    | 10 vigtigste ressourcer pr. lagers omsætningshastighed                                 |
+|                    | Ressourcer pr. lav omsætningshastighed og slutsaldo over grænseværdi for lager |
+|                    | 10 vigtigste ressourcer pr. lav nøjagtighed                                             |
+| ABC-klassifikation | Lagerslutsaldo                                                     |
+|                    | Forbrugt materiale                                                            |
+|                    | Solgt (vareforbrug)                                                                  |
+| Lagertendenser   | Lagerslutsaldo                                                     |
+|                    | Lagernettoændring                                                         |
+|                    | Lageromsætningshastighed                                                     |
+|                    | Lagernøjagtighed                                                           |
+
+### <a name="manufacturing-accounting-analysis"></a>Produktionsregnskabsanalyse
+
+| Rapportside | Visualisering      |
+|-------------|--------------------|
+| IGVF-tendenser  | IGVF-slutsaldo |
+|             | IGVF-nettoændring     |
+|             | Omsætningshastighed for IGVF |
+
+### <a name="std-cost-variance-analysis"></a>Analyse af standardomkostningsafvigelse
+
+| Rapportside                             | Visualisering                                        |
+|-----------------------------------------|------------------------------------------------------|
+| ÅTD for afvigelse i købspris (standardomkostning) | Saldo for indkøb                                     |
+|                                         | Afvigelse i købspris                              |
+|                                         | Afvigelsesgrad for købspris                        |
+|                                         | Afvigelse pr. varegruppe                               |
+|                                         | Afvigelse pr. sted                                     |
+|                                         | Købspris pr. kvartal                            |
+|                                         | Købspris pr. kvartal og varegruppe             |
+|                                         | 10 vigtigste ressourcer pr. negativt købsprisforhold |
+|                                         | 10 vigtigste ressourcer pr. positivt købsprisforhold   |
+| ÅTD for produktionsafvigelse (standardomkostning)     | Produktionsomkostning                                    |
+|                                         | Produktionsomkostningsafvigelse                                  |
+|                                         | Produktionsafvigelsesforhold                            |
+|                                         | Afvigelse pr. varegruppe                               |
+|                                         | Afvigelse pr. sted                                     |
+|                                         | Produktionsafvigelse pr. kvartal                       |
+|                                         | Produktionsafvigelse pr. kvartal og afvigelsestype     |
+|                                         | 10 vigtigste ressourcer pr. negativ produktionsafvigelse  |
+|                                         | 10 vigtigste ressourcer pr. positiv produktionsafvigelse    |
+
+### <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
+
+Data fra Microsoft Dynamics 365 for Finance and Operations bruges til at udfylde rapportsiderne i Power BI-indholdet for **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der placeres midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
+
+De vigtigste samlede målinger for følgende objekter bruges som grundlag af Power BI-indholdet.
+
+| Objekt                          | Samlede nøglemålinger | Datakilde til Finance and Operations | Felt               |
+|---------------------------------|----------------------------|----------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Beløb                     | CostObjectStatementCache               | Beløb              |
+| CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Antal                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
+
+Tabellen nedenfor viser de beregnede målinger i Power BI-indholdet.
+
+| Målepunkt                            | Kalkulation |
+|------------------------------------|-------------|
+| Startsaldo                  | Startsaldo = [Slutsaldo]-[Nettoændring] |
+| Antal for startsaldo             | Antal for startsaldo = [Antal for slutsaldo]-[Antal for nettoændring] |
+| Slutsaldo                     | Slutsaldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
+| Antal for slutsaldo                | Antal for slutsaldo = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
+| Netto ændring                         | Nettoændring = SUM([AMOUNT]) |
+| Antal for nettoændring                    | Antal for nettoændring = SUM([QTY]) |
+| Lageromsætningshastighed pr. beløb | Lageromsætningshastighed pr. beløb = if(OR([Gennemsnitlig saldo for lager] \<= 0, [Lagerafgange, salg eller forbrug] \>= 0), 0, ABS([Lagerafgange, salg eller forbrug])/[Gennemsnitlig saldo for lager]) |
+| Gennemsnitlig saldo for lager          | Gennemsnitlig saldo for lager = (([Slutsaldo] + [Startsaldo]) / 2) |
+| Dage for disponibel beholdning             | Dage for disponibel beholdning = 365 / CostObjectStatementEntries [Lageromsætningshastighed pr. beløb] |
+| Lagernøjagtighed                 | Lagernøjagtighed pr. beløb = IF([Slutsaldo] \<= 0, IF(OR([Lager, optalt beløb] \<\> 0, [Slutsaldo] \< 0), 0, 1), MAX(0, ([Slutsaldo] - ABS([Lager, optalt beløb]))/[Slutsaldo])) |
+
+Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger, så du kan få større granularitet og dybere analytisk indsigt.
 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
-Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, som er visualiseret som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i Power BI-indholdet til **Omkostningsstyring**.
-
-| Rapportside | Diagrammer | Titler |
-|---|---|---|
-|Samlet lager (standard efter aktuel periode) |Nøjagtighed |Lagermålinger:<br>Lagerslutsaldo<br>Lagernettoændring<br>Lagernettoændring i %<br>|
-| |Lageromsætning | |
-| |Lagerslutsaldo efter ressourcegruppe | |
-| |Lagernettoændring efter kategorinavn på niveau 1 og kategorinavn på niveau 2| |
-| |Købsafvigelser pr. ressourcegruppe og kategorinavn på niveau 3 | |
-|Lager efter sted (standard efter aktuel periode) |Lagerslutsaldo efter navn på sted og ressourcegruppe | |
-| |Lageromsætning efter navn på sted og ressourcegruppe | |
-| |Lagerslutsaldo efter by og ressourcegruppe | |
-|Lager efter ressourcegruppe (standard efter aktuel periode) |Lagermålinger | |
-| |Lagernøjagtighed efter mængde efter ressourcegruppe | |
-| |Lageromsætning efter mængde efter ressourcegruppe | |
-|Lager år for år (standard indeværende år i forhold til tidligere år) |Lagermålinger | |
-| |Lager-KPI'er:<br>Lageromsætning<br>Lagernøjagtighed | |
-| |Lagerslutsaldo efter år og ressourcegruppe | |
-| |Købsafvigelser pr. år og kategorinavn på niveau 3 | |
-|Aldersfordelt lager (standard efter indeværende år) |Aldersfordelt lager efter kvartal og ressourcegruppe | |
-| |Aldersfordelt lager efter kvartal og navn på sted | |
-|Samlet IGVF (standard efter aktuel periode) |IGVF-nettoændring efter kategorinavn på niveau 1 og kategorinavn på niveau 2 |IGVF-målinger for igangværende forarbejdning:<br>IGVF-slutsaldo<br>IGVF-nettoændring<br>IGVF-nettoændring i %<br> |
-| |Produktionsafvigelser pr. ressourcegruppe og kategorinavn på niveau 3 | |
-| |IGVF-nettoændring efter ressourcegruppe | |
-|IGVF efter sted (standard efter aktuel periode) |IGVF-målinger for igangværende forarbejdning | |
-| |IGVF-nettoændring efter navn sted og kategorinavn på niveau 2 | |
-| |Produktionsafvigelser pr. navn på sted og kategorinavn på niveau 3 | |
-
-## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Finance and Operations-data bruges til at udfylde rapportsiderne i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). Følgende samlede nøglemålinger bruges som grundlag for indholdet.
-
-| Enhed            | Samlede nøglemålinger | Datakilde til Finance and Operations | Felt             | Betegnelse                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Fordelingsposter | Netto ændring                | CostAggregatedCostStatementEntryEntity      | sum (\[Beløb\])   | Beløb i regnskabsvalutaen |
-| Fordelingsposter | Nettoændring, antal       | CostAggregatedCostStatementEntryEntity      | sum(\[Antal\]) |                                   |
-
-Følgende tabel viser, hvor de samlede nøglemålinger bruges til at oprette flere beregnede målepunkter i indholdets datasæt.
-
-| Målepunkt                                 | Sådan beregnes målepunktet                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Startsaldo                       | \[Slutsaldo\]-\[Nettoændring\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Startsaldoantal              | \[Slutsaldoantal\]-\[Nettoændring, antal\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Slutsaldo                          | CALCULATE(SUM(\[Beløb\]), FILTER(ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]), 'Regnskabskalendere'\[Dato\] &lt;= MAX('Regnskabskalendere'\[Dato\])))                                                                                                                                                                                           |
-| Slutsaldoantal                 | CALCULATE(SUM(\[Antal\]), FILTER(ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]), 'Regnskabskalendere'\[Dato\] &lt;= MAX('Regnskabskalendere'\[Dato\])))                                                                                                                                                                                         |
-| Lagerstartsaldo             | CALCULATE(\[Startsaldo\], 'Fordelingsposter'\[Fordelingstype\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                      |
-| Lagerslutsaldo                | CALCULATE(\[Slutsaldo\], 'Fordelingsposter'\[Fordelingstype\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                         |
-| Lagernettoændring                    | CALCULATE(\[Nettoændring\], 'Fordelingsposter'\[Fordelingstype\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                             |
-| Lagernettoændring i antal           | CALCULATE(\[Nettoændring, antal\], 'Fordelingsposter'\[Fordelingstype\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                    |
-| Lagernettoændring i %                  | IF(\[Lagerslutsaldo\] = 0, 0, \[Lagernettoændring\] / \[Lagerslutsaldo\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Lageromsætning efter beløb                | if(OR (\[Gennemsnitlig saldo for lager\] &lt;= 0, \[Lagerafgange, salg eller forbrug\] &gt;= 0), 0 ABS (\[Lagerafgange, salg eller forbrug\]) /\[Gennemsnitlig saldo for lager\])                                                                                                                                                                                                                                                                                                  |
-| Gennemsnitlig saldo for lager               | (\[Lagerslutsaldo\] + \[Lagerstartsaldo\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Lagerafgange, salg eller forbrug       | \[Lagersalg\] + \[Forbrugt materialeomkostning for lager\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Forbrugt materialeomkostning for lager        | CALCULATE(\[Lagernettoændring\], 'Fordelingsposter'\[Kategorinavn - niveau 2\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Lagersalg                          | CALCULATE(\[Lagernettoændring\], 'Fordelingsposter'\[Kategorinavn - niveau 2\_\] = "Solgt")                                                                                                                                                                                                                                                                                                                                                                             |
-| Lagernøjagtighed efter beløb            | IF(\[Lagerslutsaldo\] &lt;= 0, IF(OR(\[Lager, optalt beløb\] &lt;&gt; 0, \[Lagerslutsaldo\] &lt; 0), 0, 1), MAX(0, (\[Lagerslutsaldo\] - ABS(\[Lager, optalt beløb\]))/\[Lagerslutsaldo\]))                                                                                                                                                                                                                              |
-| Lager, optalt beløb                | CALCULATE(\[Lagernettoændring\], 'Fordelingsposter'\[Kategorinavn - niveau 3\_\] = "Optælling")                                                                                                                                                                                                                                                                                                                                                                         |
-| Aldersfordelt lager                         | if(ISBLANK(max('Regnskabskalendere'\[Date\])), blank(), MAX(0, MIN(\[Aldersfordelt lager, antal tilgange\], \[Aldersfordelt lager, slutsaldoantal\] - \[Aldersfordelt lager, tilgange i fremtiden\]))) \* \[Lager, gennemsnitlig enhedskostpris\]                                                                                                                                                                                                                                |
-| Aldersfordelt lager, antal tilgange       | IF(\[minDate\] = \[minDateAllSelected\], CALCULATE(\[Lagernettoændring i antal\], 'Fordelingsposter'\[Antal\] &gt; 0, FILTER(ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]), 'Regnskabskalendere'\[Dato\] &lt;= MAX('Regnskabskalendere'\[Dato\]))), CALCULATE(\[Lagernettoændring i antal\], 'Fordelingsposter'\[Antal\] &gt; 0)) |
-| Aldersfordelt lager, slutsaldoantal | \[Aldersfordelt lager, slutsaldoantal\] + CALCULATE(\[Lagernettoændring i antal\], FILTER(ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]), 'Regnskabskalendere'\[Dato\] &gt; max('Regnskabskalendere'\[Dato\]) ))                                                                                                                                 |
-| Aldersfordelt lager, tilgange i fremtiden  | CALCULATE(\[Lagernettoændring\], 'Fordelingsposter'\[Beløb\] &gt; 0, FILTER(ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]), 'Regnskabskalendere'\[Dato\] &gt; MAX('Regnskabskalendere'\[Dato\])))                                                                                                                                             |
-| Lager, gennemsnitlig enhedskostpris                 | CALCULATE(\[Lagerslutsaldo\] / \[Aldersfordelt lager, slutsaldoantal\],ALLEXCEPT('Regnskabskalendere', 'Regnskabskalendere'\[LedgerRecId\], 'enheder'\[ID\], 'enheder'\[Navn\], 'Finans'\[Valuta\], 'Finans'\[Beskrivelse\], 'Finans'\[Navn\]))                                                                                                                                                                                                                 |
-| Købsafvigelser                      | CALCULATE(SUM(\[Beløb\]), 'Fordelingsposter'\[Kategorinavn - niveau 2\_\] = "Indkøbt", 'Fordelingsposter'\[Fordelingstype\] = "Afvigelse")                                                                                                                                                                                                                                                                                                                              |
-| IGVF-startsaldo                   | CALCULATE(\[Startsaldo\], 'Fordelingsposter'\[Fordelingstype\] = "IGVF")                                                                                                                                                                                                                                                                                                                                                                                            |
-| IGVF-slutsaldo                      | CALCULATE(\[Slutsaldo\], 'Fordelingsposter'\[Fordelingstype\] = "IGVF")                                                                                                                                                                                                                                                                                                                                                                                               |
-| IGVF-nettoændring                          | CALCULATE(\[Nettoændring\], 'Fordelingsposter'\[Fordelingstype\] = "IGVF")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| IGVF-nettoændring i %                        | IF(\[IGVF-slutsaldo\] = 0, 0, \[IGVF-nettoændring\] / \[IGVF-slutsaldo\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Afvigelser i produktion                    | CALCULATE(SUM(\[Beløb\]), 'Fordelingsposter'\[Kategorinavn - niveau 2\_\] = "ManufacturedCost", 'Fordelingsposter'\[Fordelingstype\] = "Afvigelse")                                                                                                                                                                                                                                                                                                                      |
-| Kategorinavn - niveau 1                 | switch(\[Kategorinavn - niveau 1\_\], "None", "Ingen", "NetSourcing", "Nettoforsyning", "NetUsage", "Nettoanvendelse", "NetConversionCost", "Nettokonverteringsomkostning", "NetCostOfGoodsManufactured", "Nettoomkostning for fremstillede varer", "BeginningBalance", "Startsaldo")                                                                                                                                                                                                         |
-| Kategorinavn - niveau 2                 | switch(\[Kategorinavn - niveau 2\_\], "None", "Ingen", "Procured", "Indkøbt", "Disposed", "Kasseret", "Transferred", "Overført", "Sold", "Solgt", "ConsumedMaterialsCost", "Forbrugt materialeomkostning", "ConsumedManufacturingCost", "Forbrugt produktionsomkostning", "ConsumedOutsourcingCost", "Forbrugt outsourcingomkostning", "ConsumedIndirectCost", "Forbrugt indirekte omkostning", "ManufacturedCost", "Produktionsomkostning", "Variances", "Afvigelser")                            |
-| Kategorinavn - niveau 3                 | switch(\[Kategorinavn - niveau 3\_\], "None", "Ingen", "Optælling", "Ingen", "ProductionPriceVariance", "Produktionspris", "QuantityVariance", "Antal", "SubstitutionVariance", "Erstatning", "ScrapVariance", "Spild", "LotSizeVariance", "Lotstørrelse", "RevaluationVariance", "Værdiregulering", "PurchasePriceVariance", "Købspris", "CostChangeVariance", "Ændring i kostpris", "RoundingVariance", "Afvigelse i afrunding")                                                   |
-
-Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger for at opnå større granularitet og give dybere analytisk indsigt.
-
-| Enhed           | Eksempler på attributter                       |
-|------------------|----------------------------------------------|
-| Enheder         | Id, navn                                     |
-| Regnskabskalendere | Kalender, måned, periode, kvartal, år       |
-| KPI-mål        | Mål for lagernøjagtighed, mål for lageromsætning |
-| Finans          | Valuta, navn, beskrivelse                  |
-| Lokationer            | Id, navn, land, by                      |
-
-
-
-
+|                         Enhed                          |             Eksempler på attributter              |
+|---------------------------------------------------------|-------------------------------------------------|
+|                        Produkter                         | Produktnummer, Produktnavn, Enhed, Varegrupper |
+| Kategorihierarkier (tildelt rollen Omkostningsstyring) |       Kategorihierarki, Kategoriniveau        |
+|                     Juridiske enheder                      |               Navne på juridisk enhed                |
+|                    Regnskabskalendere                     |  Regnskabskalender, År, Kvartal, Periode, Måned  |
+|                          Sted                           |        Id, Navn, Adresse, Stat, Land        |
 
 

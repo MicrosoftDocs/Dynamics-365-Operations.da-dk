@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transportstyringsprogrammer definerer den logik, der bruges til at oprette og behandle transportsatser i Transportstyring. 
 
@@ -47,7 +46,7 @@ Følgende tabel viser de transportstyringsprogrammer, der er tilgængelige i Mic
 | **Zoneprogram**                  | Beregner zonen baseret på den aktuelle adresse og beregner antallet af zoner, der skal krydses for at kunne rejse fra adresse A til adresse B.                                                                                                                                                                    |
 | **Fragtbrevstype**            | Standardiserer fragtfaktura- og fragtbrevslinjerne og bruges til automatisk sammenholdelse af fragtbreve.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilket program skal være konfigureret for at vurdere en forsendelse?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ Et transportstyringsprogram kræver, at du konfigurerer initialiseringsdataene, 
 -   Enkle konfigurationsdata.
 
 I de fleste tilfælde kan du klikke på knappen **Parametre** i konfigurationsformularerne til transportstyringsprogrammet for at konfigurere initialiseringsdataene. **Eksempel på konfiguration af et satsprogram, der refererer til et kørselsprogram** Følgende eksempel viser den konfiguration, der kræves til et satsprogram, der er baseret på .NET-programtypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine og refererer til et kørselsprogram.
-| Parameter             | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | .NET-typen, der fortolker satsens grundlæggende tildelingsdata for et bestemt skema. Syntaksen for parameterværdien består af to segmenter, der er afgrænset af en lodret streg (|). Det første segment indeholder montagenavnet, der definerer assigner-typen. Det andet segment definerer det fuldt kvalificerede navn på assigner-typen. Dette omfatter typens navneområde. |
-| *MileageEngineCode*   | Kørselsprogramkode, der identificerer kørselsprogramposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Generisk programkode, der identificerer fordelingsprogrammet i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                              |
 
- 
+|          Parameter           |                                                                                  Beskrivelse                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | .NET-typen, der fortolker satsens grundlæggende tildelingsdata for et bestemt skema. Syntaksen for parameterværdien består af to segmenter, der er afgrænset af en lodret streg ( |
+|  <em>MileageEngineCode</em>  |                       Kørselsprogramkode, der identificerer kørselsprogramposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+| <em>ApportionmentEngine</em> |                        Generisk programkode, der identificerer fordelingsprogrammet i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan bruges metadata i transportstyringsprogrammer?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ De data, du bruger, når du beregner satser i Microsoft Dynamics 365 for Finance
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kræver alle programkonfigurationer metadata?
 Nej, transportstyringsprogrammer, der bruges til at hente de data, som skal bruges til satsberegning fra eksterne systemer, kræver ikke metadata. Satsdataene for disse programmer kan hentes fra eksterne transportfragtsystemer, normalt via en webtjeneste. Du kan for eksempel bruge et kørselsprogram, der henter data direkte fra Bing Maps, så du ikke behøver metadata for dette program.
+
 | **Bemærk!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transportstyringsprogrammer, der leveres med Finance and Operations, er baseret på data, der hentes fra programmet. Programmer, der opretter forbindelse til eksterne systemer, leveres ikke sammen med Operations. Med det programbaserede udvidelsesmodel kan du dog bygge udvidelser med Visual Studio-værktøjer til Microsoft Dynamics 365 for Finance and Operations. |

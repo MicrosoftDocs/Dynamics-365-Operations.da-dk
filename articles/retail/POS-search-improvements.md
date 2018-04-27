@@ -1,9 +1,9 @@
 ---
 title: "Produktsøgning og kundesøgning i POS"
-description: "Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Dynamics 365 for Retail."
+description: "Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,24 +19,24 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: bd563610616fa72a610e0b134371765cc1edacc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b055ae09e87434f9e43c558e2a43d0467d70aaed
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Oversigt over produkt- og kundesøgning i POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-Modern Point of Sale (MPOS) og Cloud Point of Sale (CPOS) indeholder brugervenlige søgefunktioner, der giver butiksmedarbejdere mulighed for hurtigt at søge efter produkter og kunder. Søgelinjen vises altid øverst i MPOS og CPOS, så medarbejderne hurtigt kan finde produkter og kunder.
+Modern Point of Sale (MPOS) og Cloud Point of Sale (CPOS) indeholder brugervenlige søgefunktioner for produkter og debitorer. Eftersom søgelinjen altid vises øverst i MPOS- og CPOS-vinduerne, kan medarbejderne hurtigt søge efter produkter og debitorer.
 
-Medarbejdere kan søge efter produkter i det sortiment og de kataloger, der er tilknyttet den aktuelle butik og i det sortiment og de kataloger, der er knyttet til alle de andre butikker i virksomheden. Derfor kan kasserere sælge og returnere produkter, der ikke er i butikkens sortiment. På samme måde kan medarbejdere søge efter kunder, der er knyttet til den aktuelle butik eller alle de andre butikker i virksomheden. Medarbejdere kan desuden søge efter kunder, der er knyttet til en anden virksomhed i den overordnede organisation.
+Medarbejdere kan søge efter produkter i de udvalg og kataloger, der er tilknyttet det aktuelle lager. De kan også søge i udvalg og kataloger, der er tilknyttet ethvert andet lager i virksomheden. Derfor kan kasserere sælge og returnere produkter, der ikke er i butikkens sortiment. På samme måde kan medarbejdere søge efter debitorer, der er tilknyttet den aktuelle butik eller enhver anden butik i virksomheden. Medarbejdere kan desuden søge efter kunder, der er tilknyttet en anden virksomhed i den overordnede organisation.
 
-## <a name="product-search"></a>Produktsøgning 
+## <a name="product-search"></a>Produktsøgning
 
-Som standard udføres en søgning efter produkt på butikkens sortiment. Denne type søgning kaldes en *søgning efter lokalt produkt*. Men medarbejdere kan nemt skifte til ethvert katalog, der er tilknyttet den aktuelle butik, eller de kan søge i en anden butik. Denne type søgning kaldes en *ekstern produktsøgning*. Hvis du vil ændre kataloget, skal du vælge knappen **Kategorier** til venstre på siden. Øverst i ruden, der vises, skal du vælge knappen **Skift katalog** og derefter vælge et af de tilgængelige kataloger for at gennemse det. Systemet søger i det valgte katalog efter produkter.
+Som standard udføres produktsøgninger i butikkens udvalg. Denne type søgning kaldes en *søgning efter lokalt produkt*. Men medarbejdere kan nemt skifte til ethvert katalog, der er tilknyttet den aktuelle butik, eller de kan søge i en anden butik. Denne type søgning kaldes en *ekstern produktsøgning*. Hvis du vil ændre kataloget, skal du vælge knappen **Kategorier** til venstre på siden. Øverst i ruden, der vises, skal du vælge knappen **Skift katalog** og derefter vælge et af de tilgængelige kataloger for at gennemse det. Systemet søger i det valgte katalog efter produkter.
 
 På siden **Skift katalog** kan medarbejdere nemt vælge alle butikker, eller de kan søge efter produkter på tværs af alle butikker.
 
@@ -53,17 +53,17 @@ En lokal produktsøgning søger i følgende produktegenskaber:
 
 ### <a name="enhancements-to-local-product-searches"></a>Forbedringer af lokale produktsøgninger
 
-Oplevelsen for lokale produktsøgninger er blevet gjort mere brugervenlig. Der er blevet foretaget følgende forbedringen:
+Oplevelsen af lokale produktsøgninger er nu blevet mere brugervenlig. Der er blevet foretaget følgende forbedringen:
 
 - Rullemenuer for produkt og kunde er føjet til søgelinjen, så medarbejderne kan vælge enten **Produkt** eller **Kunde**, før de søger. Som standard er **Produkt** markeret, som vist i nedenstående illustration.
-- Til søgninger med flere nøgleord (dvs. til søgninger, der bruger søgeord), kan detailhandlerne konfigurere, om søgeresultaterne omfatter resultater, der passer til et af søgeordene, eller kun de resultater, der svarer til alle søgeord. Denne indstilling findes i POS-funktionalitetsprofilen under en ny gruppe med navnet **Produktsøgning**. Standardindstillingen er **Match et hvilket som helst søgeord**. Denne indstilling er også den anbefalede indstilling. Når indstillingen **Match et hvilket som helst søgeord** bruges, returneres alle de produkter, der matcher et eller flere søgeord helt eller delvist, som resultater, og resultaterne sorteres automatisk i stigende rækkefølge efter produkter, der matcher flest nøgleord (helt eller delvist).
+- Til søgninger med flere nøgleord (dvs. til søgninger, der bruger søgeord), kan detailforretninger konfigurere, om søgeresultaterne skal omfatte resultater, der opfylder *ethvert* søgeord, eller kun de resultater, der opfylder *alle* søgeord. Denne indstilling findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Standardindstillingen er **Match et hvilket som helst søgeord**. Denne indstilling er også den anbefalede indstilling. Når indstillingen **Match et hvilket som helst søgeord** bruges, returneres alle produkter, der svarer helt eller delvist til et eller flere søgeord. Resultaterne sorteres automatisk i stigende rækkefølge, så de produkter, der har fleste forekomster af nøgleord (fuld eller delvis), placeres først.
 
     Indstillingen **Match alle søgeord** returnerer kun produkter, der matcher alle søgeordene (helt eller delvist). Denne indstilling er nyttig, når produktnavnene er lange, og medarbejdere kun vil se begrænsede produkter i søgeresultaterne. Denne type søgning har dog to begrænsninger:
 
     - Søgningen foretages på de enkelte produktegenskaber. F.eks. returneres kun produkter, der har alle de søgte nøgleord i mindst én produktegenskab.
     - Der søges ikke i dimensioner.
 
-- Detailhandlere kan nu konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen under en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
+- Detailhandlere kan nu konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
 - Produktsøgningsalgoritmen søger nu også efter de søgte udtryk i egenskaben **Søgenavn** for produktet.
 
 ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
@@ -83,7 +83,23 @@ I en ekstern kundesøgning vises kunde-id ikke for debitorer fra de andre juridi
 
 ![Global kundesøgning](./media/Globalcustomersearch.png "Global kundesøgning")
 
-### <a name="enhancements-to-local-customer-searches"></a>Forbedringer af lokale kundesøgninger
+### <a name="enhancements-to-local-customer-search"></a>Forbedringer af søgning efter lokale debitorer
 
-Lokal kundesøgninger hjælpe medarbejderne med hurtigt at finde kunder ved hjælp af telefonnummeret. Medarbejderne behøver ikke at skrive eventuelle specialtegn, der er føjet til en kundes telefonnummer. f.eks. mellemrum, bindestreger eller kantede parenteser. Selvom kasserere kan gemme telefonnumre i et vilkårligt format (de kan f.eks. indeholde parenteser, bindestreger, symboler osv.), kan de søge efter kunder ved at skrive et delvis telefonnummer. Hvis en kasserer medtager specialtegn, når han eller hun angiver et telefonnummer, kan andre kasserere finde kunden ved at skrive de tal, der vises efter de særlige tegn. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **123**, **456**, **7890** eller **1234567890** eller ved delvist at angive de første par tal af telefonnummeret.
+Søgninger, der er baseret på telefonnummeret, er blevet mere enkle. Disse søgninger ignorerer nu specialtegn som f.eks. mellemrum, bindestreger og parenteser, der kan være blevet tilføjet, da debitoren blev oprettet. Derfor behøver kasserere ikke spekulere på telefonnummerets format, når de søger. De kan også søge efter kunder ved at skrive et telefonnummer, der er delvis. Hvis et telefonnummer indeholder specialtegn, skal finder det også du ved at søge efter de tal, der vises efter de særlige tegn. Hvis en kundes telefonnummer f.eks. blev angivet som **123-456-7890**, kan en kasserer søge efter debitoren ved at skrive **123**, **456**, **7890** eller **1234567890** eller ved at angive de første par tal af telefonnummeret.
+
+Den traditionelle kundesøgning kan være tidskrævende, da den søger på tværs af flere felter. I stedet kan kasserere nu søge i en enkelt brugerdefineret egenskab, f.eks. navn, mailadresse eller telefonnummer. De egenskaber, som kundesøgningsalgoritmen bruger, kaldes samlet *kundesøgningskriteriet*. Systemadministratoren kan nemt konfigurere et eller flere kriterier som genveje, der skal vises i POS. Da søgningen er begrænset til et enkelt kriterium, vises kun de relevante søgeresultater, og ydeevnen er meget bedre end ydeevnen ved en standardkundesøgning. I følgende illustration vises kundesøgningsgenvejene i POS.
+
+![Kundesøgningsgenveje](./media/SearchShortcutsPOS.png "Kundesøgningsgenveje")
+
+For at angive søgekriterier som genveje, skal administratoren åbne siden **Detailparametre** i Microsoft Dynamics 365 for Finance and Operations og derefter under fanen **POS-søgekriterie** vælge alle de kriterier, der skal vises som genveje.
+
+![Konfigurere søgningsgenveje](./media/ConfigureShortcutsAX.png "Konfigurere søgningsgenveje")
+
+> [!NOTE]
+> Hvis du tilføjer for mange genveje, vil rullemenuen på søgelinjen på POS blive overfyldt, og medarbejderens søgeoplevelse kan blive påvirket. Det anbefales, at du kun tilføje så mange genveje, som du har brug for.
+
+Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises i POS. Det kriterie, der vises, er de standardegenskaber, som kundesøgningsalgoritmen bruger til at søge efter kunder. Partnere kan dog tilføje brugerdefinerede egenskaber som søgningsgenveje. For at tilføje brugerdefinerede egenskaber som søgningsgenveje skal systemadministratoren udvide den udvidelige fasttekst, der bruges som kundesøgningskriterie, og derefter markere partnerens brugerdefinerede egenskaber som genveje. Partnere har ansvaret for at skrive kode til at søge efter resultater, når deres brugerdefinerede genveje bruges til søgning.
+
+> [!NOTE]
+> En brugerdefineret egenskab, der er føjet til fastteksten, påvirker ikke standardalgoritmen til kundesøgning. Med andre ord søger kundesøgningsalgoritmen ikke i den brugerdefinerede egenskab. Brugere kan kun bruge en brugerdefineret egenskab til søgninger, hvis den brugerdefinerede egenskab tilføjes som en genvej, eller hvis standardalgoritmen til søgning tilsidesættes.
 

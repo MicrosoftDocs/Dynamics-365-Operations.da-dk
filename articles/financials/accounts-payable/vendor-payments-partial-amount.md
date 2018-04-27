@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7acf791d9a04c618b9a238e5d16e676849792b65
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aeef806980665c523f10b373f7662ecf509a8172
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-payments-for-a-partial-amount"></a>Kreditorbetalinger af et delvist beløb
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan somme tider skulle foretage en betaling, der er mindre end fakturabeløbet, til en kreditor. I denne artikel beskrives de forskellige indstillinger til håndtering af denne situation. De tilgængelige indstillinger afhænger af forretningsbehovene og konfigurationen. 
 
@@ -39,7 +38,7 @@ Du kan somme tider skulle foretage en betaling, der er mindre end fakturabeløbe
 En kreditor kan tilbyde dig en kasserabat, hvis du betaler en faktura før forfaldsdatoen. Du kan f.eks. en oprette en faktura på 100,00, der specificerer en kasserabat på 2 %, hvis fakturaen betales inden for 10 dage. Forfaldsdatoen er 30 dage. Hvis et betalingsforslag bruger kasserabatten som et kriterium for at vælge en faktura, og hvis forslaget køres på eller før datoen for kasserabat, udvælges fakturaen til betaling, og der oprettes betalingen af 98,00. En kasserabat kan også tages fra en engangsbetaling, der er oprettet manuelt.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Delvise betalinger med kasserabatter
-Når du foretager en delvis betaling, har du måske til hensigt at foretage en yderligere delbetaling, så fakturaen udlignes helt. For at medtage en kasserabat for en delbetaling skal du angive indstillingen **Beregn kasserabatter for delvise betalinger** til **Ja** på siden **Kreditorparametre**. 
+Når du foretager en delvis betaling, har du måske til hensigt at foretage en yderligere delbetaling, så fakturaen udlignes helt. For at medtage en kasserabat for en delbetaling skal du angive indstillingen <strong>Beregn kasserabatter for delvise betalinger** til **Ja</strong> på siden <strong>Kreditorparametre</strong>. 
 
 Du modtager f.eks. en kasserabat på 2 %, hvis fakturaen betales inden for 10 dage efter, at den er udstedt. Der er bogført en faktura på 100,00. Hvis du foretager en betaling på 49,00 inden for 10 dage, angiver du en debitering på 49,00 i en betalingskladde. Når du udligner den delvise betaling på siden **Udlign åbne posteringer**, vises **1,00** i feltet **Kasserabatbeløb, der skal medtages**. 
 
@@ -47,7 +46,7 @@ Du modtager f.eks. en kasserabat på 2 %, hvis fakturaen betales inden for 10 da
 > Hvis du indtaster en delvis betaling og lader det fulde fakturabeløb stå i feltet **Beløb, der skal udlignes** beregnes feltet **Kasserabatbeløb, der skal medtages** automatisk, når posteringerne bogføres.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Kreditnotaer med kasserabatter
-Du kan evt. returnere nogle af varerne på en faktura, hvorefter du modtager en kreditnota. Hvis der tidligere er medtaget en kasserabat på en original faktura, kan du fratrække værdien af rabatten og modtage en refundering på det rigtige beløb. Hvis indstillingen **Beregn kasserabatter for kreditnotaer** er angivet til **Ja** på siden **Kreditorparametre**, beregnes rabatten automatisk for kreditnotaen. 
+Du kan evt. returnere nogle af varerne på en faktura, hvorefter du modtager en kreditnota. Hvis der tidligere er medtaget en kasserabat på en original faktura, kan du fratrække værdien af rabatten og modtage en refundering på det rigtige beløb. Hvis indstillingen <strong>Beregn kasserabatter for kreditnotaer** er angivet til **Ja</strong> på siden <strong>Kreditorparametre</strong>, beregnes rabatten automatisk for kreditnotaen. 
 
 Du modtager f.eks. en kasserabat på 2 %, hvis fakturaen betales inden for 10 dage efter, at den er udstedt. Der er bogført en faktura på 100,00. Hvis du returnerer varerne, og du modtager en kreditnota, kan du indtaste kreditnotaen for det fulde beløb for den oprindelige faktura 100,00 sammen med de 2 procent kasserabat, der er også defineret i kreditnotaen.  Når du ser en kreditnota på siden **Udlign transaktioner**, vises **98,00** i feltet **Beløb, der skal udlignes**, og **-2,00** vises i feltet **Kasserabatbeløb**. Rabatbeløbet bogføres på en kasserabatkonto.
 

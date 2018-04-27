@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 0ec45fcf7cebf530b3a5889a857214b97b3fffbb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-overview"></a>Oversigt over transportstyring
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -52,12 +51,12 @@ Med Transportstyring kan du bruge virksomhedens transport og også identificere 
 <td>Brug transportstyring til indgående og/eller udgående transport.</td>
 </tr>
 <tr class="even">
-<td>Virksomhedens egen flåde er klar til levering/afhentning, og leveringsgebyrer sendes videre til kunderne.</td>
-<td>Du kan bruge transportstyring ved udgående processer til at bestemme transportgebyrerne for transport og sende dem videre til kunder. Dog er fragtmandens fakturaafstemningsproces ikke påkrævet.</td>
+<td>Virksomhedens egen flåde er klar til levering/afhentning, og leveringsgebyrer sendes videre til kreditorerne.</td>
+<td>Du kan bruge transportstyring ved udgående processer til at bestemme transportgebyrerne for transport og sende dem videre til kunder. Fragtmandens fakturaafstemningsproces er dog ikke påkrævet.</td>
 </tr>
 <tr class="odd">
-<td>Virksomhedens egen flåde er klar til levering/afhentning, men leveringsgebyrer videreformidles ikke til kunder, fordi produktpriser omfatter transport.</td>
-<td>Mange af funktionerne til projektstyring transport er ikke påkrævede. Du kan dog bruge transportstyring til at bestemme transportsatserne og justere salgsprisen i overensstemmelse hermed.</td>
+<td>Virksomhedens egen flåde er klar til levering/afhentning, men leveringsgebyrer videresendes ikke til kreditorer, fordi produktpriserne omfatter transport.</td>
+<td>Mange af funktionerne i Transportstyring er ikke påkrævede. Du kan dog bruge transportstyring til at bestemme transportsatserne og justere salgsprisen i overensstemmelse hermed.</td>
 </tr>
 <tr class="even">
 <td>Logistiktjenesten leveres fra en anden juridisk enhed i samme firma.</td>

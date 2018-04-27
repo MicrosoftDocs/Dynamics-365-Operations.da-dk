@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Modtage kreditorer
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Nye kreditorer kan modtages og registreres som kreditorer i Microsoft Dynamics 365 for Finance and Operations baseret på oplysninger, der er indsamlet fra en person, der repræsenterer kreditoren.
@@ -164,13 +165,15 @@ De forskellige statusser for en anmodning om registrering af mulig kreditor give
 
 Ved hjælp af handlingen **Slet** i anmodningen om registrering af mulig kreditor, du kan slette i og fjerne kæden af poster, der er oprettet, og du kan deaktivere brugerkontoen. Resultatet af handlingen **Slet** varierer, afhængigt af status for registreringsanmodningen for mulig kreditor som vist i følgende tabel.
 
-| Status                   | Statusbeskrivelse | Resultat af handlingen Slet |
-|--------------------------|--------------------|-----------------------------------|
-| Nyt                      | Der er ikke udført nogen handlinger på anmodningen. | Anmodningen om registrering af mulig kreditor er slettet. |
-| Anmodet bruger           | Når du vælger **Inviter bruger**, ændres status til **Anmodet bruger**, og en anmodning om en mulig bruger oprettes og sendes til en brugeranmodningsarbejdsgang. | Du kan ikke slette en anmodning om registrering af mulig kreditor, der har denne status, fordi brugeranmodningsarbejdsgangen ikke endnu er afsluttet. |
-| Inviteret bruger             | Brugeranmodningsarbejdsgangen er godkendt, og brugeren er oprettet. | Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor slettes. |
-| Registrering er i gang | Den nye bruger har logget på og har startet kreditorregistreringsguiden. | Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor og de data, der blev angivet i kreditorregistreringsguiden, slettes. |
-| Oprettet kreditoranmodning   | Kreditorregistreringsguiden er fuldført. | Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruge handlingen **Slet**, når kreditoranmodningen er i en evalueringsproces i arbejdsgangen.</blockquote> |
-| Godkendt                 | Kreditoranmodningen er godkendt. | Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes. |
-| Afvist                 | Kreditoranmodningen slettes. | Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes. |
+
+|          Status          |                                                                                     Statusbeskrivelse                                                                                      |                                                                                                                                                            Resultat af handlingen Slet                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Nyt            |                                                                         Der er ikke udført nogen handlinger på anmodningen.                                                                          |                                                                                                                                              Anmodningen om registrering af mulig kreditor er slettet.                                                                                                                                               |
+|      Anmodet bruger      | Når du vælger <strong>Inviter bruger</strong>, ændres status til <strong>Anmodet bruger</strong>, og en anmodning om en mulig bruger oprettes og sendes til en brugeranmodningsarbejdsgang. |                                                                                                          Du kan ikke slette en anmodning om registrering af mulig kreditor, der har denne status, fordi brugeranmodningsarbejdsgangen ikke endnu er afsluttet.                                                                                                          |
+|       Inviteret bruger       |                                                               Brugeranmodningsarbejdsgangen er godkendt, og brugeren er oprettet.                                                               |                                                                                                                      Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor slettes.                                                                                                                      |
+| Registrering er i gang |                                                         Den nye bruger har logget på og har startet kreditorregistreringsguiden.                                                          |                                                                                     Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor og de data, der blev angivet i kreditorregistreringsguiden, slettes.                                                                                      |
+|  Oprettet kreditoranmodning  |                                                                     Kreditorregistreringsguiden er fuldført.                                                                      | Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruge handlingen <strong>Slet</strong>, når kreditoranmodningen er i en evalueringsproces i arbejdsgangen.</blockquote> |
+|         Godkendt         |                                                                               Kreditoranmodningen er godkendt.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
+|         Afvist         |                                                                               Kreditoranmodningen slettes.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
+
 

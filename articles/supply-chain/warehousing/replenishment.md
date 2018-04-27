@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Opfyldning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring. Oplysningerne i dette emne gælder ikke for lagerstedsløsninger, der findes i Lagerstyring.
 
@@ -67,13 +67,15 @@ Genopfyldning for lastbehov opsummerer behovet for flere laster og opretter det 
 I stedet for at opsummere behov i slutningen af en fordelingsproces og foretage genopfyldning på basis af sammentalte antal, kan du anvende strategien øjeblikkelig genopfyldning. Når du bruger denne strategi, kan lageret genopfyldes, umiddelbart efter at en lokalitetsvejledningslinje mislykkes. Du kan derfor konfigurere genopfyldningen, så den er begrænset af bestemte enheder, og så den bruger antal, der er angivet for bestemte lokationer.
 
 ## <a name="replenishment-prerequisites"></a>Forudsætninger for genopfyldning
-| Forudsætning            | Betegnelse |
-|-------------------------|-------------|
-| Vare                    | Varen skal være aktiveret for lagerprocesser for lagersted. |
-| Lagersted               | Lagerstedet skal være aktiveret for lagerprocesser for lagersted. Hvis du vil aktivere et lagersted for lagerstedsstyringsprocesser, skal du på siden **Lagersteder** vælge lagerstedet og derefter vælge indstillingen **Brug lagerstedsstyringsprocesser**. |
-| Genopfyldningsskabeloner | Mindst én genopfyldningsskabelon skal sættes op til Min/Maks genopfyldning, Genopfyldning baseret på bølgebehov eller Genopfyldning for lastbehov. |
-| Lokationer               | Lokationer skal oprettes og forbindes til en lokationsprofil. |
-| Lokationsprofiler       | Lokationsprofiler er nødvendige for at oprette lokationer. |
-| Lokationsvejledninger     | Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra. |
-| Arbejdsskabeloner          | Arbejdsskabeloner af typen **Genopfyldning** kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer. |
+
+|      Forudsætning       |                                                                                                                                Betegnelse                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Vare           |                                                                                                        Varen skal være aktiveret for lagerprocesser for lagersted.                                                                                                        |
+|        Lagersted        | Lagerstedet skal være aktiveret for lagerprocesser for lagersted. Hvis du vil aktivere et lagersted for lagerstedsstyringsprocesser, skal du på siden <strong>Lagersteder</strong> vælge lagerstedet og derefter vælge indstillingen <strong>Brug lagerstedsstyringsprocesser</strong>. |
+| Genopfyldningsskabeloner |                                                                   Mindst én genopfyldningsskabelon skal sættes op til Min/Maks genopfyldning, Genopfyldning baseret på bølgebehov eller Genopfyldning for lastbehov.                                                                   |
+|        Lokationer        |                                                                                                       Lokationer skal oprettes og forbindes til en lokationsprofil.                                                                                                       |
+|    Lokationsprofiler    |                                                                                                        Lokationsprofiler er nødvendige for at oprette lokationer.                                                                                                        |
+|   Lokationsvejledninger   |                                                       Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra.                                                        |
+|     Arbejdsskabeloner      |                                                   Arbejdsskabeloner af typen <strong>Genopfyldning</strong> kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer.                                                    |
+
 

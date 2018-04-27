@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Batchtilpasning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+I dette emne beskrives, hvordan batchtilpasningsprocessen understøttes. 
 
-I dette emne beskrives, hvordan batchtilpasningsprocessen understøttes.
+Se en [video om batchtilpasning i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 I batchtilpasningsprocessen beregnes mængden af stoffer, der skal bruges i et produktionsbatch, ud fra koncentrationen af aktive stoffer i de valgte produktbatchnumre.
 
@@ -179,7 +180,7 @@ Når stofmængderne er beregnet, kan du bekræfte og frigive formlen. Frigivelse
 
 -   Hvis et produkt er aktiveret til lokationsstyringsprocesserne, frigives formellinjen til lagerstedet i overensstemmelse med principperne for lokationsstyringsprocesserne. Formellinjen frigives i mængder, der svarer til de mængder, der er afstemt, og den er frigives for bestemte batchkørsler, der er valgt for de aktive stoffer.
 
->   [!NOTE]
+> [!NOTE]
 >   Formellinjer kan kun frigives til lagerstedet som del af batchtilpasningsprocessen. Selvom der er andre muligheder for frigivelse af produktionsmaterialer til lagerstedet, kan de ikke bruges til formellinjerne.
 
 -   Hvis et produkt ikke er aktiveret til lokationsstyringsprocesserne, oprettes en plukliste til produktion for produktet, når du bekræfter og frigiver formlen.

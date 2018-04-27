@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Projektstyring og regnskab
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat.  
 
@@ -83,6 +82,7 @@ Du kan bruge prognosebaseret budgettering, hvis organisationen har et operatione
 Du kan oprette seks typer projekter i Microsoft Finance and Operations. Hver enkelt projekttype er angivet forskelligt med hensyn til omkostninger og indtægtsføring. Den projekttype, du vælger, afhænger af formålet med projektet. I følgende tabel beskrives den typiske brug af de enkelte projekttyper.
 
                                                                                                                                                                          |
+
 | Projekttype      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tid og materialer | I tids- og materialeprojekter faktureres kunden for alle omkostninger, der påløber et projekt. Dette omkostninger omfatter omkostninger for timer, udgifter, varer og gebyrer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ En projektrelateret produktionsordre kan knyttes til en salgsordre eller et vare
 
 Ud fra kombinationer af disse faktorer kan du benytte en af følgende metoder:
 
--   **Færdigvare/Tilknytning til ordre** – Knyt projektet til en salgsordre eller et vareforbrug. Når du bruger denne metode, bogføres de faktiske projektomkostninger, når salgsordren faktureres, eller når følgesedlen opdateres for varebehovet. Omkostningen vil blive bogført som en færdigvare.
--   **Færdigvare/Ingen tilknytning til ordre** – Faktiske omkostninger kan ikke bogføres, før produktionscyklussen for en vare har status **Afsluttet**. Omkostningen for færdigvaren vil blive bogført som en enkelt postering.
--   **Forbrugt vare/Tilknytning til ordre** – Knyt projektet til et vareforbrug. Hvis du bruger denne metode, kan du få vist de faktiske projektomkostninger, når produktionen har statussen **Igangsat** eller er rapporteret Færdigmeldt. Omkostningerne vil blive bogført som flere posteringer for projektvarer for råmaterialer og timer, der er forbrugt under produktionen. Når følgesedlen opdateres for varebehovet, vil der ikke blive bogført projektomkostninger. Du kan også angive det niveau i styklistehierarkiet, som projekterne i produktionen skal spores til.
--   ****Forbrugt vare/Ingen tilknytning til ordre**** – Knyt projektet til et vareforbrug. Hvis du bruger denne metode, kan du få vist de faktiske projektomkostninger, når produktionen har statussen **Igangsat** eller er rapporteret Færdigmeldt. Omkostningerne vil blive bogført som flere posteringer for projektvarer for råmaterialer og timer, der er forbrugt under produktionen. Du kan også angive, hvilket niveau i styklistehierarkiet, projekterne i produktionen skal spores til.
+- **Færdigvare/Tilknytning til ordre** – Knyt projektet til en salgsordre eller et vareforbrug. Når du bruger denne metode, bogføres de faktiske projektomkostninger, når salgsordren faktureres, eller når følgesedlen opdateres for varebehovet. Omkostningen vil blive bogført som en færdigvare.
+- **Færdigvare/Ingen tilknytning til ordre** – Faktiske omkostninger kan ikke bogføres, før produktionscyklussen for en vare har status **Afsluttet**. Omkostningen for færdigvaren vil blive bogført som en enkelt postering.
+- **Forbrugt vare/Tilknytning til ordre** – Knyt projektet til et vareforbrug. Hvis du bruger denne metode, kan du få vist de faktiske projektomkostninger, når produktionen har statussen **Igangsat** eller er rapporteret Færdigmeldt. Omkostningerne vil blive bogført som flere posteringer for projektvarer for råmaterialer og timer, der er forbrugt under produktionen. Når følgesedlen opdateres for varebehovet, vil der ikke blive bogført projektomkostninger. Du kan også angive det niveau i styklistehierarkiet, som projekterne i produktionen skal spores til.
+- *<strong><em>Forbrugt vare/ingen tilknytning til ordre</em></strong>* – Knyt projektet til et varebehov. Hvis du bruger denne metode, kan du få vist de faktiske projektomkostninger, når produktionen har statussen <strong>Igangsat</strong> eller Færdigmeldt. Omkostningerne vil blive bogført som flere posteringer for projektvarer for råmaterialer og timer, der er forbrugt under produktionen. Du kan også angive, hvilket niveau i styklistehierarkiet, projekterne i produktionen skal spores til.
 
 ### <a name="procure-products-and-services"></a>Køb produkter og tjenester
 
@@ -229,7 +229,7 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <tbody>
 <tr class="odd">
 <td>Samlet omkostning – faktisk</td>
-<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne, der er forbundet med færdiggørelsen af projektet. Sporing af status for omkostninger er f.eks. typisk ikke baseret på, hvor mange hotelovernatninger og måltider der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
+<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne, der er forbundet med færdiggørelsen af projektet. Sporing af status for omkostninger er typisk ikke baseret på, hvor mange hotelovernatninger og måltider der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
 </tr>
 <tr class="even">
 <td>Samlet budget – faktisk</td>
@@ -239,9 +239,8 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <li>Sammenlign budgetposteringer med de faktiske posteringer.</li>
 <li>Vedligehold, mindsk eller øg overslagene for den næste periode.</li>
 </ol>
-Finance and Operations reducerer ikke automatisk de budgetterede skøn. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at oprette stamdata til sammenligning, når projektet er fuldført. 
-> [!NOTE] Når du vælger denne metode, skal du bruge mindst to budgetmodeller. Én model bør indeholde det oprindelige budget. For den anden model skal du kopiere budgetposteringerne fra en anden model. Denne metode er kun gyldig for fastpris- og investeringsprojekter.</td>
-> </tr>
+Finance and Operations reducerer ikke automatisk de budgetterede estimater. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at etablere et grundlag for sammenligning, når projektet er fuldført. &gt; [!NOTE] &gt; Når du vælger denne metode, skal du bruge mindst to budgetmodeller. Én model bør indeholde det oprindelige budget. For den anden model skal du kopiere budgetposteringerne fra en anden model. Denne metode er kun gyldig for fastpris- og investeringsprojekter.</td>
+</tr>
 <tr class="odd">
 <td>Resterende budget</td>
 <td>Denne metode bruger en resterende budgetmodel til at beregne færdiggørelsesomkostningerne for projektet. Når du bruger denne metode, lægges de faktiske omkostninger og de budgetterede beløb i den resterende budgetmodel sammen. Resultatet er de samlede omkostninger. Før du bruger denne metode, skal du oprette en resterende budgetmodel for at fratrække posteringer, der er baseret på de faktiske posteringer, som er registreret i systemet. På siden <strong>Budgetmodeller</strong> skal du kontrollere, at felterne er markeret i gruppen <strong>Automatisk prognosereduktion</strong>. Typisk kopieres et resterende budget fra et oprindeligt budget. Når posteringerne indtastes, reduceres posteringerne i det resterende budget. Som projektet skrider frem, kan du trække budgetposteringer på det resterende budget, hvis du finder ud af, at det resterende budget skal justeres. <strong>Bemærk!</strong> Denne metode kan kun anvendes, hvis der er knyttet en budgetmodel til estimatet.</td>
