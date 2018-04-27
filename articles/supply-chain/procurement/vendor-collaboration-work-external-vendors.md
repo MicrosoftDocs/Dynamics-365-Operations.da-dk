@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 for Finance and Operations. Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata. Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager. Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.
 
@@ -99,7 +99,7 @@ I nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Bekræftet</strong>-status. Når indkøbsordren er bekræftet, vises den i brugergrænsefladen for kreditorens samarbejde.</td>
 </tr>
 <tr class="odd">
-<td>Kreditoren <strong>accepterer</strong> ordren, men Finance and Operations er ikke konfigureret til automatisk at bekræfte IO'er, som kreditoren accepterer.</td>
+<td>Kreditoren <strong>accepterer</strong> ordren, men Finance and Operations er ikke konfigureret til automatisk at bekræfte indkøbsordrer, som kreditoren accepterer.</td>
 <td>Kreditorens svar registreres som <strong>Accepteret</strong>, men indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>.
 
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Til eksternt gennemsyn</strong>-status. Derefter kan du manuelt bekræfte indkøbsordren.</td>
@@ -116,7 +116,7 @@ Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til ekstern
 <li>Erstat en vare.</li>
 </ul>
 Kreditoren kan ikke ændre oplysninger om pris og gebyrer. Kreditoren kan dog foreslå disse ændringer ved hjælp af noter.</td>
-<td>Kreditorens svar registreres som <strong>Accepteret med ændringer</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Statusangivelser viser de typer af ændringer kreditoren har foreslået. Oplysninger om automatisk forbrug af ændringerne kan du se i afsnittet "Opdatere indkøbsordren, når en kreditor foreslår ændringer" senere i dette emne. </td>
+<td>Kreditorens svar registreres som <strong>Accepteret med ændringer</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Statusangivelser viser de typer af ændringer kreditoren har foreslået. Oplysninger om automatisk forbrug af ændringerne kan du se i afsnittet &quot;Opdatere indkøbsordren, når en kreditor foreslår ændringer&quot; senere i dette emne. </td>
 </tr>
 </tbody>
 </table>

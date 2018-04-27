@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-analysis"></a>Omkostningsanalyse for produktionsordre
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om den omkostningsanalyse, du kan udføre for afsluttede og aktuelle produktionsordrer. Du kan analysere de forkalkulerede omkostninger og faktiske omkostninger ved hjælp af siden Prisberegning og efterkalkulationsrapporten. Du kan se oplysninger om de forventede og faktiske omkostninger (og antal) for de enkelte indgående varer, ruteoperationer og indirekte omkostninger.
 

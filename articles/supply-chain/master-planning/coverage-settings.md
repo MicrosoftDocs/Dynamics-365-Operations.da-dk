@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Disponeringsindstillinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ved behovsplanlægning anvendes disponeringsindstillinger til at beregne varebehov. 
 
@@ -46,7 +45,7 @@ Du kan angive disponeringsindstillinger på flere måder:
 
 <!-- -->
 
--   Angiv disponeringsindstillinger for en dimensionsgruppe. Klik på **Administration af produktoplysninger &gt; Almindelige &gt; Frigivne produkter**. Klik på linket **Lagringsdimensionsgruppe** i gruppen **Administration** under fanen **Generelt** på siden **Frigivne produktdetaljer**. Vælg **Lagringsdimensionsgruppe** i feltet **Disponer pr. dimension** for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi, skal have feltet **Disponer pr. dimension** markeret.
+- Angiv disponeringsindstillinger for en dimensionsgruppe. Klik på <strong>Administration af produktoplysninger &gt; Almindelige &gt; Frigivne produkter</strong>. På siden <strong>Frigivet produkt** på fanen **Generelt</strong> i gruppen <strong>Administration</strong> skal du klikke på linket <strong>Lagerdimensionsgruppe</strong>. Vælg <strong>Lagringsdimensionsgruppe</strong> i feltet <strong>Disponer pr. dimension</strong> for at oprette dispositionsindstillinger for en dimension i lagringsdimensionsgruppen. Alle produktdimensioner, f.eks. konfiguration, farve, størrelse, typografi, skal have feltet <strong>Disponer pr. dimension</strong> markeret.
 
 
 

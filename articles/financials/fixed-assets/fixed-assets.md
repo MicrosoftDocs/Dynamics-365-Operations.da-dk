@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Startside for anlægsaktiver
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation. 
 

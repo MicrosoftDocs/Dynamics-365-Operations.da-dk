@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>Oprette og tildele en omkostningsfordelingspolitik til en omkostningskontrolenhed
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Regler for omkostningsfordeling bruges til at fordele omkostninger, der er optalt i økonomisk sammenhæng på en kollektiv bærer. Bogholderen sikrer, at omkostningerne fordeles til bærerne baseret på den valgte fordelingsbasis. En politik og de tilsvarende regler tildeles til en enhed til en omkostningskontrolenhed. Denne opgaveguide bruger et eksempel til at vise, hvordan du opretter en politik for fordeling af omkostninger og de tilsvarende regler.
 

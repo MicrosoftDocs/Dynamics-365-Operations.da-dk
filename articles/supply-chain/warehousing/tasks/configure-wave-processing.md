@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Konfigurere behandling af bølge
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne vejledning beskriver, hvordan du konfigurerer de kriterier, der bestemmer, hviket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk. Du angiver kriterierne ved at konfigurere bølgeskabeloner og forespørgsler, der svarer til en bølge med frigivne linjer i salgsordrer, produktionsordrer eller kanbanordrer. Bølgebehandling bruges på lagersteder, der bruger funktionerne i modulet Lagerstedsstyring, og ikke dem, der bruger funktionerne i modulet Lagerstyring. Du kan bruge denne procedure i USMF-demodatafirmaet.
 

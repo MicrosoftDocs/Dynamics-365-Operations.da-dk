@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="budget-analysis-in-the-public-sector"></a>Budgetanalyse i den offentlig sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogførte indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring. 
 

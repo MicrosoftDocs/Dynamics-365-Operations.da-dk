@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Modtagelsesoversigt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om funktionen Modtagelsesoversigt. Siden Modtagelsesoversigt er en del af denne funktion og indeholder en oversigt over alle varer, der forventes at ankomme som indgående varer.
 

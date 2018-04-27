@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rapporten Rul anlægsaktiver fremad
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rapporten **Rul anlægsaktiver fremad** indeholder, i et letlæseligt Microsoft Excel-format, de detaljerede data om anlægsaktiver, du har brug for til lukning af periode, regnskaber og skatterapportering. Rapporten omfatter start- og slutsaldi for anlægsaktiver, sammen med værdibevægelser for perioden, og eventuelle nye anskaffelser og salg, der er opstået i løbet af perioden. Data rapporteres for de enkelte anlægsaktiver, og der opsummeres også værdierne for anlægsaktivgrupper og den juridiske enhed.
 
@@ -41,28 +41,30 @@ Denne rapport er tilgængelig i Microsoft Dynamics 365 for Finance and Operation
 
 I følgende tabel forklares de felter, der er tilgængelige på rapporten.
 
-| Felt                                       | Betegnelse |
-|---------------------------------------------|-------------|
-| Saldi: Åbnings                           | Anlægsaktivets bogførte nettoværdi fra den "fra"-dato, der er angivet i rapporten. |
-| Saldi: Ultimo                           | Anlægsaktivets bogførte nettoværdi fra den "til"-dato, der er angivet i rapporten. |
-| Anskaffelser: Åbningsværdi                 | Summen af alle transaktioner af typerne **Anskaffelse** og **Anskaffelsesregulering** op til den "fra"-dato, der er angivet i rapporten. |
-| Anskaffelser: Periodeanskaffelser           | Summen af alle transaktioner af typerne **Anskaffelse** og **Anskaffelsesregulering**, der blev posteret i datointervallet for rapporten. |
-| Anskaffelser: Periodekassationer              | Summen af alle tilbageførsler af anskaffelser, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten. |
-| Anskaffelser: Ultimoværdi                 | Summen af alle transaktioner af typerne **Anskaffelse** og **Anskaffelsesregulering** op til den "til"-dato, der er angivet i rapporten. |
-| Afskrivninger: Åbningsværdi                | Summen af alle posteringer af typerne **Afskrivning**, **Afskrivningsregulering**, **Særlig afskrivning** og **Ekstraordinær afskrivning** op til den "fra"-dato, der er angivet i rapporten. |
-| Afskrivninger: Periodeafskrivninger         | Summen af alle transaktioner af typerne **Afskrivning**, **Afskrivningsjustering** og **Ekstraordinær afskrivning**, der blev posteret i datointervallet for rapporten. |
-| Afskrivninger: Særlige afskrivninger i perioden | Summen af alle transaktioner af typen **Særlig afskrivning**, der blev posteret i datointervallet for rapporten. |
-| Afskrivninger: Periodekassationer             | Summen af alle tilbageførsler af afskrivninger, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten. |
-| Afskrivninger: Ultimoværdi                | Summen af alle posteringer af typerne **Afskrivning**, **Afskrivningsregulering**, **Særlig afskrivning** og **Ekstraordinær afskrivning** op til den "til"-dato, der er angivet i rapporten. |
-| Opskrivninger/nedskrivninger: Åbningsværdi        | Summen af alle transaktioner af typerne **Opskrivningsregulering**, **Nedskrivningsregulering** og **Værdiregulering** op til den "fra"-dato, der er angivet i rapporten. |
-| Opskrivninger/nedskrivninger: Periodens opskrivninger     | Summen af alle transaktioner af typen **Opskrivningsregulering**, der blev posteret i datointervallet for rapporten. |
-| Opskrivninger/nedskrivninger: Periodens nedskrivninger   | Summen af alle transaktioner af typen **Nedskrivningsregulering**, der blev posteret i datointervallet for rapporten. |
-| Opskrivninger/nedskrivninger: Periodens værdireguleringer  | Summen af alle transaktioner af typen **Værdiregulering**, der blev posteret i datointervallet for rapporten. |
-| Opskrivninger/nedskrivninger: Periodens kassationer     | Summen af alle tilbageførsler af opskrivninger, nedskrivninger og værdireguleringer, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten. |
-| Opskrivninger/nedskrivninger: Ultimoværdi        | Summen af alle transaktioner af typerne **Opskrivningsregulering**, **Nedskrivningsregulering** og **Værdiregulering** op til den "til"-dato, der er angivet på rapporten. |
-| Kassationer: Kassationsdato                    | Kassationsdatoen for anlægsaktivet. |
-| Kassationer: Bogført nettoværdi ved kassation       | Anlægsaktivets bogførte nettoværdi på kassationstidspunktet. |
-| Kassationer: Salgsværdi                       | Salgsværdien for anlægsaktivet med en kassation – salgstransaktion. |
-| Kassationer: Scrapværdi                      | Scrapværdien for anlægsaktivet med en kassation – scraptransaktion. |
-| Kassationer: Gevinst/tab                      | Gevinst- eller tabsværdien beregnes som en del af kassationsposteringen for anlægsaktivet. |
+
+|                    Felt                    |                                                                                                                                Betegnelse                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Saldi: Åbnings              |                                                                                           Anlægsaktivets bogførte nettoværdi fra den "fra"-dato, der er angivet i rapporten.                                                                                           |
+|              Saldi: Ultimo              |                                                                                            Anlægsaktivets bogførte nettoværdi fra den "til"-dato, der er angivet i rapporten.                                                                                            |
+|         Anskaffelser: Åbningsværdi         |                                                 Summen af alle transaktioner af typerne <strong>Anskaffelse</strong> og <strong>Anskaffelsesregulering</strong> op til den "fra"-dato, der er angivet i rapporten.                                                  |
+|      Anskaffelser: Periodeanskaffelser      |                                                 Summen af alle transaktioner af typerne <strong>Anskaffelse</strong> og <strong>Anskaffelsesregulering</strong>, der blev posteret i datointervallet for rapporten.                                                  |
+|       Anskaffelser: Periodekassationer        |                                                                        Summen af alle tilbageførsler af anskaffelser, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten.                                                                        |
+|         Anskaffelser: Ultimoværdi         |                                                  Summen af alle transaktioner af typerne <strong>Anskaffelse</strong> og <strong>Anskaffelsesregulering</strong> op til den "til"-dato, der er angivet i rapporten.                                                   |
+|        Afskrivninger: Åbningsværdi         | Summen af alle posteringer af typerne <strong>Afskrivning</strong>, <strong>Afskrivningsregulering</strong>, <strong>Særlig afskrivning</strong> og <strong>Ekstraordinær afskrivning</strong> op til den "fra"-dato, der er angivet i rapporten. |
+|     Afskrivninger: Periodeafskrivninger     |                         Summen af alle transaktioner af typerne <strong>Afskrivning</strong>, <strong>Afskrivningsjustering</strong> og <strong>Ekstraordinær afskrivning</strong>, der blev posteret i datointervallet for rapporten.                          |
+| Afskrivninger: Særlige afskrivninger i perioden |                                                              Summen af alle transaktioner af typen <strong>Særlig afskrivning</strong>, der blev posteret i datointervallet for rapporten.                                                               |
+|       Afskrivninger: Periodekassationer       |                                                                       Summen af alle tilbageførsler af afskrivninger, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten.                                                                        |
+|        Afskrivninger: Ultimoværdi         |  Summen af alle posteringer af typerne <strong>Afskrivning</strong>, <strong>Afskrivningsregulering</strong>, <strong>Særlig afskrivning</strong> og <strong>Ekstraordinær afskrivning</strong> op til den "til"-dato, der er angivet i rapporten.  |
+|    Opskrivninger/nedskrivninger: Åbningsværdi     |                              Summen af alle transaktioner af typerne <strong>Opskrivningsregulering</strong>, <strong>Nedskrivningsregulering</strong> og <strong>Værdiregulering</strong> op til den "fra"-dato, der er angivet i rapporten.                               |
+|   Opskrivninger/nedskrivninger: Periodens opskrivninger   |                                                                    Summen af alle transaktioner af typen <strong>Opskrivningsregulering</strong>, der blev posteret i datointervallet for rapporten.                                                                    |
+|  Opskrivninger/nedskrivninger: Periodens nedskrivninger  |                                                                   Summen af alle transaktioner af typen <strong>Nedskrivningsregulering</strong>, der blev posteret i datointervallet for rapporten.                                                                   |
+| Opskrivninger/nedskrivninger: Periodens værdireguleringer  |                                                                        Summen af alle transaktioner af typen <strong>Værdiregulering</strong>, der blev posteret i datointervallet for rapporten.                                                                        |
+|   Opskrivninger/nedskrivninger: Periodens kassationer   |                                                           Summen af alle tilbageførsler af opskrivninger, nedskrivninger og værdireguleringer, der blev posteret, som havde en kassationstransaktion i datointervallet for rapporten.                                                           |
+|    Opskrivninger/nedskrivninger: Ultimoværdi     |                               Summen af alle transaktioner af typerne <strong>Opskrivningsregulering</strong>, <strong>Nedskrivningsregulering</strong> og <strong>Værdiregulering</strong> op til den "til"-dato, der er angivet på rapporten.                                |
+|          Kassationer: Kassationsdato           |                                                                                                                Kassationsdatoen for anlægsaktivet.                                                                                                                |
+|    Kassationer: Bogført nettoværdi ved kassation    |                                                                                                    Anlægsaktivets bogførte nettoværdi på kassationstidspunktet.                                                                                                    |
+|            Kassationer: Salgsværdi            |                                                                                               Salgsværdien for anlægsaktivet med en kassation – salgstransaktion.                                                                                                |
+|           Kassationer: Scrapværdi            |                                                                                               Scrapværdien for anlægsaktivet med en kassation – scraptransaktion.                                                                                               |
+|           Kassationer: Gevinst/tab            |                                                                                 Gevinst- eller tabsværdien beregnes som en del af kassationsposteringen for anlægsaktivet.                                                                                 |
+
 

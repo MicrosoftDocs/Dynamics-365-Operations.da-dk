@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i Elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapportering (ER). Når du designer et format til et bestemt elektronisk dokument i ER, kan du bruge formler til at transformere data, så de opfylder kravene til dokumentets udførelse og formatering. Disse formler ligner formler i Microsoft Excel. Forskellige typer funktioner understøttes i formlerne: tekst, dato og klokkeslæt, matematisk logik, oplysninger, konvertering af datatypen og andre (domænespecifikke funktioner i virksomheden).
 
@@ -313,12 +313,12 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <tr class="odd">
 <td>ORDERBY (liste [udtryk 1, udtryk, 2, ...])</td>
 <td>Returnere den angivne liste, når den er sorteret i henhold til de angivne argumenter. Disse argumenter kan defineres som udtryk.</td>
-<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
+<td>Hvis <strong>Kreditor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (liste)</td>
 <td>Returner den angivne liste i omvendt rækkefølge.</td>
-<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()'))</strong> returnere en liste over leverandører, der er sorteret efter navn i faldende rækkefølge.</td>
+<td>Hvis <strong>Kreditor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;) )</strong> returnere en liste over leverandører, der er sorteret efter navn i faldende rækkefølge.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (liste, betingelse)</td>
@@ -358,7 +358,7 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <li>Label</li>
 <li>Betegnelse</li>
 </ul>
-På kørselstidspunktet returnerer felterne <strong>Label</strong> og <strong>Beskrivelse</strong> værdier, der er baseret på formatets sprogindstillinger.</td>
+På kørselstidspunktet returnerer felterne <strong>Etiket</strong> og <strong>Beskrivelse</strong> værdier, der er baseret på formatets sprogindstillinger.</td>
 <td>I følgende illustration introduceres en fasttekst i en datamodel.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>Følgende illustration viser disse detaljer:</p>
@@ -384,7 +384,7 @@ Baseret på sprogindstillingerne til de overordnede FILE- og FOLDER-formatelemen
 <li>Betegnelse</li>
 <li>Er oversat</li>
 </ul>
-<p>På kørselstidspunktet returnerer felterne <strong>Label</strong> og <strong>Beskrivelse</strong> værdier, der er baseret på formatets sprogindstillinger og det angivne sprog. Feltet <strong>Er oversat</strong> angiver, at feltet <strong>Etiket</strong> er oversat til det angivne sprog.</td>
+<p>På kørselstidspunktet returnerer felterne <strong>Etiket</strong> og <strong>Beskrivelse</strong> værdier, der er baseret på formatets sprogindstillinger og det angivne sprog. Feltet <strong>Er oversat</strong> angiver, at feltet <strong>Etiket</strong> er oversat til det angivne sprog.</td>
 <td>Du bruger f.eks. datakildetypen <strong>Beregnet felt</strong> til at konfigurere datakilderne <strong>enumType_de</strong> og <strong>enumType_deCH</strong> for datamodeloptællingen <strong>enumType</strong>:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
@@ -395,7 +395,9 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <tr class="even">
 <td>STRINGJOIN (liste, feltnavn, afgrænser)</td>
 <td>Returnerer en streng, der består af sammenføjede værdier for det angivne felt fra den angivne liste. Værdierne er adskilt af et angivet separatortegn.</td>
-<td>Hvis du angiver <strong>SPLIT(&quot;abc&quot; , 1)</strong> som en datakilde (DS), vil udtrykket <strong>STRINGJOIN (DS, DS.Value, &quot; :&quot;)</strong> returnere <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Hvis du angiver <strong>SPLIT(&quot;abc&quot; , 1)</strong> som en datakilde (DS), vil udtrykket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returnere <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (liste, grænseværdi. grænsekilde)</td>
@@ -416,7 +418,7 @@ Grænsen anvendes ikke på den sidste vare på den oprindelige liste, da værdie
 <tr class="even">
 <td>FILTER (liste, betingelse)</td>
 <td>Returner den angivne liste, når forespørgslen er blevet ændret til at filtrere i henhold til den angivne tilstand. Denne funktion adskiller sig fra funktionen <strong>WHERE</strong>, fordi den angivne betingelse anvendes på enhver ER-datakilde af typen <strong>Tabelposter</strong> på databaseniveau. Listen og betingelse kan defineres ved hjælp af tabeller og relationer.</td>
-  <td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returnere en liste over blot de kreditorer, der tilhører kreditorgruppe 40. Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til <strong>VendTable</strong>-tabel og <strong>parmVendorBankGroup</strong>, der er konfigureret som ER-datakilder, returnerer værdien af datatypen streng, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over kun de kreditorkonti, der tilhører en bestemt bankgruppe.</td>
+  <td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returnere en liste over blot de kreditorer, der tilhører kreditorgruppe 40. Hvis <strong>Kreditor</strong> er konfigureret som en ER-datakilde, der henviser til <strong>VendTable</strong>-tabel og <strong>parmVendorBankGroup</strong>, der er konfigureret som ER-datakilder, returnerer værdien af datatypen streng, returnerer <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over kun de kreditorkonti, der tilhører en bestemt bankgruppe.</td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +555,7 @@ Udtrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer ogs�
 <li>Finance and Operations-label SYS18389, som har følgende tekst:
 <ul>
 <li><strong>For det amerikanske sprog:</strong> &quot;Customer %1 is stopped for %2&quot;.</li>
-<li><strong>For det danske sprog:</strong> &quot;Debitor '%1' er spærret for %2.&quot;</li>
+<li><strong>For det danske sprog:</strong> &quot;Debitor &#39;%1&#39; er spærret for %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Her er den formel, der kan udvikles:</p>
@@ -561,7 +563,7 @@ Udtrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer ogs�
 <p>Hvis en rapport er behandlet for debitoren <strong>Litware Retail</strong> den 17. december 2015 i den amerikanske kultur <strong>EN-US</strong> og på det amerikanske sprog <strong>EN-US</strong>, vil denne formel returnere følgende tekst, som kan præsenteres som en meddelelse til slutbrugeren:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapport behandles den 17. december 2015 for kunden <strong>Litware Retail</strong> med dansk kultur <strong>DA</strong> og sproget <strong>DA</strong>, returnerer formlen følgende tekst, der bruger et andet datoformat:</p>
-<p>&quot;Intet at udskrive. Debitor 'Litware Retail' er spærret for 17.12.2015.&quot;</p>
+<p>&quot;Intet at udskrive. Debitor &#39;Litware Retail&#39; er spærret for 17.12.2015.&quot;</p>
 <blockquote>[!NOTE]<br>
 Følgende syntaks er anvendt i ER-formler for etiketter:
 <ul>
@@ -578,7 +580,7 @@ Følgende syntaks er anvendt i ER-formler for etiketter:
 <td>NUMERALSTOTEXT (tal, sprog, valuta, udskriv valutanavn, decimaltegn)</td>
 <td>Returner det angivne nummer, når den er blevet skrevet helt ud (konverteret) til tekststrenge i det angivne sprog. Sprogkoden er valgfri. Når den er defineret som en tom streng, bruges sprogkoden for kørselskonteksten i stedet. (Sprogkoden for kørselskonteksten er defineret for en genererende mappe eller fil). Valutakoden er også valgfrie. Når den er defineret som en tom streng, bruges firmavalutaen.
 <blockquote>[!NOTE]<br>
-Flaget for udskriv valutanavn og decimaltegns-parameters analyseres kun for følgende sprogkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. Desuden analyseres udskriv valutanavn-flagparameter kun for Finance and Operations-virksomheder, hvor landers eller områdets kontekst understøtter afvigelse af valutanavne.</blockquote></td>
+Flaget for udskriv valutanavn og decimaltegns-parameters analyseres kun for følgende sprogkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. Desuden analyseres udskrivningsflagparameteren for valutanavn kun for Finance and Operations-virksomheder, hvor landets eller områdets kontekst understøtter afvigelse af valutanavne.</blockquote></td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerer <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerer <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerer <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
 <tr class="odd">

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-process-a-conformance"></a>Oprette og behandle en overensstemmelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at udføre uoverensstemmelsesstyring baseret på en eksisterende kvalitetsordre. Du kan køre denne registrering i demofirmaet USMF, og du kan bruge de foreslåede værdier. Denne procedure udføres typisk af en kvalitetsmedarbejder.  Som en forudsætning skal du køre opgaveregistreringen "Inspicer kvaliteten af varer". For at behandle godkendelse af en uoverensstemmelse skal den bruger, der kører opgavregistreringen, have en "Navn"-værdi tildelt på siden Brugere. For at kunne bruge dokumentnoter skal brugeren også have Dokumenthåndtering aktiveret i brugerindstillingerne.
 

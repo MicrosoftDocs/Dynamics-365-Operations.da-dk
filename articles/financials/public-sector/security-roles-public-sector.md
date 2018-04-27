@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
 

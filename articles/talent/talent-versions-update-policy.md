@@ -18,17 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: fc0e71e2ffc2adbaed598f788141b651fbcc616a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 954f6237739defe14aaa13b19641f9f9d27b5fac
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Systemkrav og opdateringspolitik for Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 I dette emne beskrives kravene til Microsoft Dynamics 365 for Talent. Opdateringspolitikken skitseres også.
 
@@ -47,21 +46,21 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 > * Hvis du vil hente billeder, der er genereret ud fra Arbejdsrutineoptager og inkludere dem i Microsoft Word-dokumenter, skal du have en Chrome-udvidelse installeret. 
 > * Arbejdsgangseditoren startes som et ClickOnce-program. Kun Microsoft Edge og Internet Explorer (på en understøttet version af Microsoft Windows) understøtter ClickOnce-programmer. ClickOnce-programmet til arbejdsgangseditoren kræver et kompatibelt 64-bit-operativsystem.
 > * Hvis du vil se PDF-filer, anbefaler vi, at du bruger moderne browsere, som Microsoft Edge (seneste offentligt tilgængelige version) i Windows 10 eller Google Chrome (seneste offentligt tilgængelige version) i Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-tabletten.
-Netværkskrav
-> * Dynamics 365 for Talent er designet til netværk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Talent. Vi anbefaler, at du tester netværksventetiden på [www.azurespeed.com] (http://www.azurespeed.com "Test af ventetid i Azure").
+>   Netværkskrav
+> * Dynamics 365 for Talent er designet til netværk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Talent. Vi anbefaler, at du tester netværksventetiden på [www.azurespeed.com](http://www.azurespeed.com "Test af ventetid i Azure").
 > * Kravene til båndbredde for Dynamics 365 for Talent afhænger af dit scenarie. De fleste typiske scenarier kræver en båndbredde på mere end 50 kilobyte pr. sekund (KBps).
-
+> 
 > [!WARNING]
 > Du må ikke beregne kravene til båndbredde fra en klientlokalitet ved at multiplicere antallet af brugere med minimumkravene til båndbredde. Den samtidig brug af en given lokalitet er meget vanskeligt at beregne. Til kunder, der er bekymret over kravene til båndbredde, kan du bruge en prøveversion af Dynamics 365 for Talent.
 
 ## <a name="supported-microsoft-office-applications"></a>Understøttede Microsoft Office-programmer
 
-*   Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde flere oplysninger om versionskrav i [Fejlfinding af Office-integration] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
-*   Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
+* Hvis du vil køre tilføjelsesprogrammer til Microsoft Excel og Word, skal du have Microsoft Office 2016 til Windows eller Mac installeret. Du kan finde flere oplysninger om versionskrav i [Fejlfinding af Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md "Fejlfinding af Office-integration").
+* Hvis du vil have vist dokumenter, der er genereret med funktionerne Eksport til Excel eller Eksport til Word, skal have Microsoft Office 2007 eller nyere installeret.
 
 ## <a name="update-policy"></a>Opdateringspolitik
 
 Serviceydelser til Microsoft Dynamics 365 for Talent er skybaserede tilbud. Opdateringer til Dynamics 365 for Talent foretages fortløbende og anvendes automatisk af Microsoft.
 
-Opdateringer udgives regelmæssigt, og der foretages opdateringer af alle miljøer.  Dynamics 365 for Talent understøttes i overensstemmelse med [Microsoft Support Lifecycle-politik] (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som giver klare retningslinjer for teknisk support.
+Opdateringer udgives regelmæssigt, og der foretages opdateringer af alle miljøer.  Dynamics 365 for Talent understøttes i overensstemmelse med [Microsoft Support Lifecycle-politik](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som giver klare retningslinjer for teknisk support.
 

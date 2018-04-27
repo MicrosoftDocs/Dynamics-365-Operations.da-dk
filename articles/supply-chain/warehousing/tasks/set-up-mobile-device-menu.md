@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Konfigurere et menupunkt for mobilenheden til fuldførelse af arbejde på en indkøbsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du konfigurerer et menupunkt for en mobilenhed. I dette eksempel bruges menupunktet til at udføre arbejde af typen Indkøbsordre. Det arbejde, der er gyldigt, bestemmes af den arbejdsklasse, der er knyttet til menupunktet. Du kan bruge denne guide i USMF-demodatafirmaet. Denne procedure udføres typisk af en lagerstedschef.
 

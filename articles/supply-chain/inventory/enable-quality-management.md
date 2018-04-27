@@ -20,17 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c8961d1c62167192fcf32d17c2941b8813ea0629
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 91cc547becfbd0c0d675d87921aed92eb2ab570d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations til at forbedre produktkvaliteten i forsyningskæden.
 
@@ -261,7 +260,7 @@ Tabellen nedenfor indeholder flere oplysninger om, hvordan kvalitetsordrer kan o
 <tr>
 <td>Karantæneordre</td>
 <td>Før eller efter karantæneordren rapporteres som færdigmeldt eller afsluttet</td>
-<td>Kvalitetsordrer, der kræver destruktive prøvninger kan ikke oprettes. Det antages, at funktionerne i karantæneordren håndterer bortskaffelsen af det materiale, der destrueres.</td>
+<td>Kvalitetsordrer, der kræver destruktive tests kan ikke oprettes. Det antages, at funktionerne i karantæneordren håndterer bortskaffelsen af det materiale, der destrueres.</td>
 <td>Behovet for en kvalitetsordre kan afhænge af en bestemt lokation, vare eller kreditor eller en kombination af disse forhold.</td>
 <td>En manuelt oprettet kvalitetsordre, der refererer til en karantæneordre, kan bruge oplysninger i en kvalitetstilknytningspost, som f.eks. prøveudtagningsplanen.</td>
 </tr>

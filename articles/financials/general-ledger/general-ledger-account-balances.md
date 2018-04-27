@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldi i Finans
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives to metoder til visning af finanssaldi: listeside med råbalance og økonomiske rapporter. Det diskuteres, hvordan du opdaterer saldi for dimensionssæt.
 

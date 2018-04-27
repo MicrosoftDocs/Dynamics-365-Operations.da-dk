@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Frafalde, genindføre eller tilbageføre rentegebyrer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du kan frafalde, genindføre og tilbageføre gebyrer for renter og gebyrer.
 

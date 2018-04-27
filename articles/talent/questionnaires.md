@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="questionnaires"></a>Spørgeskemaer
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne emne indeholder generelle oplysninger om spørgeskemaer og links til mere detaljerede oplysninger. Et spørgeskema er en række spørgsmål, der bruges til at indsamle oplysninger til forskellige formål. Du kan designe, oprette, fordele og udfylde spørgeskemaer og derefter analysere resultaterne. 
 

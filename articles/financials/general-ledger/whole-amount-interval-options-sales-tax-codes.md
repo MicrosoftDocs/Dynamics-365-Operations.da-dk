@@ -28,19 +28,17 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Indstillinger for beregning af hele beløbet og intervaller for momskoder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 I denne artikel beskrives indstillingerne for feltet Beregningsmåde for momskoder, og hvordan der beregnes moms for intervaller og hele beløb.
 
 Du kan konfigurere, at en momskode skal beregnes på grundlag af hele beløbet eller et intervalbeløb. På siden Momskoder skal du bruge feltet Beregningsmåde på oversigtspanelet Beregning til at vælge, hvordan en momskode skal beregnes.
--   Hele beløb – En momssats anvendes på hele det momspligtige beløb.
--   Interval – Det momspligtige beløb er opdelt i dele, hvor hver del ligger inden for et beløbsinterval, der er underlagt en bestemt momssats. Den del af beløbet, der ligger inden for et bestemt interval, pålægges moms i henhold til momssatsen for dette interval. Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
-> [!NOTE]                                                                                                                              
-> Indstillingen Interval er kun tilgængelig, når du vælger Linje i en feltet Beregningsmåde i området Moms på siden Finansparametre. 
+- Hele beløb – En momssats anvendes på hele det momspligtige beløb.
+- Interval – Det momspligtige beløb er opdelt i dele, hvor hver del ligger inden for et beløbsinterval, der er underlagt en bestemt momssats. Den del af beløbet, der ligger inden for et bestemt interval, pålægges moms i henhold til momssatsen for dette interval. Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
+  > [!NOTE]                                                                                                                              
+  > Indstillingen Interval er kun tilgængelig, når du vælger Linje i en feltet Beregningsmåde i området Moms på siden Finansparametre. 
 
 Du angiver Intervaller på siden Momskodeværdier ved at angive minimum- og maksimumgrænsebeløb pr. momssats. For moms, der skal beregnes af alle momspligtige beløb, uanset den valgte beregningsmetode, skal intervallerne overholde følgende regler:
 -   Første interval skal have en minimumgrænse på nul.
@@ -51,6 +49,7 @@ Hvis et beløb er maksimumgrænsen for det forrige interval og minimumgrænsen f
 
 ## <a name="example-whole-amount-method-of-calculation"></a>Eksempel: Beregningsmåden er hele beløbet
 På siden Momskodeværdier er momssatserne defineret i følgende intervaller i:
+
 |                   |                   |              |
 |-------------------|-------------------|--------------|
 | **Minimumsgrænse** | **Maksimumgrænse** | **Momssats** |
@@ -86,7 +85,7 @@ Momsen er summen af de momsbeløb, der beregnes for hvert beløbsinterval.
 | 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
 | 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
- 
+
 
 Du kan finde flere oplysninger i [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md).
 

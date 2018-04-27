@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprocessen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
 

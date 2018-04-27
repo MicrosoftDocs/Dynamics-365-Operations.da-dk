@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-the-bank-journal-composite-entity"></a>Opdater den sammensatte enhed Bankkladde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Brug følgende trin til at føje det ekstra felt BankTransactionType til den sammensatte BankJournalEntity.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Bekræftelse af stykplukning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Stykplukning gør det muligt for dig at bekræfte hver enkelt lagervare via pluk og optællingsarbejde på en mobilenhed. For pluk kan du bekræfte mængden af arbejde, der skal behandles, op til det antal, der er angivet på arbejde, der skal plukkes. For optællingsarbejde kan du scanne det lager, du optæller, og spore det samlede beløb.
 
@@ -46,8 +46,10 @@ Stykpluk fungerer for alt optællingsarbejde og for det indledende pluk ved alle
 
 Følgende indstillinger kan vælges, når arbejdstype pluk eller optælling.
 
-| Indstilling        | Betegnelse   | 
-| ------------- | ------------- |
-| Bekræftelse af stykplukning   | Arbejdstyper, der kan vælges til pluk og optælling. Bekræftelse af produkt vælges automatisk. Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden. | 
-| Maksimalt antal stykker     | Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret. Angiver en grænse for det antal styk, du skal bekræfte. |  
+
+|           Indstilling           |                                                                            Betegnelse                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bekræftelse af stykplukning | Arbejdstyper, der kan vælges til pluk og optælling. Bekræftelse af produkt vælges automatisk. Gør det muligt for dig at bekræfte hver enkelt vare på lageret fra mobilenheden. |
+|  Maksimalt antal stykker  |                   Tilgængelig for plukarbejde, hvis bekræftelse af stykpluk er aktiveret. Angiver en grænse for det antal styk, du skal bekræfte.                   |
+
 

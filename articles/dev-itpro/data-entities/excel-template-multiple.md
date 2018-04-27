@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Excel-skabeloner med flere regneark
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Administration af data i Microsoft Dynamics 365 for Finance and Operations understøtter Microsoft Excel-baserede skabeloner til dataenheder. Disse skabeloner kan indeholde et eller flere regneark. Skabeloner med flere regneark bruges ofte, når det passer til at administrere data i en enkelt fil og importere den til flere dataenheder. Et eksempel er lokationer og lagersteder.
 

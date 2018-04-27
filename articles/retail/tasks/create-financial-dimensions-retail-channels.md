@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a> Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fører dig gennem oprettelse af en detailkanals økonomiske dimension med dimensionsværdier og trin til at konfigurere økonomiske dimensionsværdier for detailbutikker. Emnet indeholder ikke andre relaterede trin, f.eks. oprettelse af dimensionssæt og kontostrukturer. Denne procedure bruger USRT-firmaets demodata.
 

@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Gennemsnitskostdatoen er en lagermodel, der er baseret på princippet om vægtet gennemsnit. For princippet om vægtet princip værdisættes afgange fra lageret til gennemsnitsværdien for de varer, der modtages på lageret hver enkelt dag i lagerlukningsperioden. 
 

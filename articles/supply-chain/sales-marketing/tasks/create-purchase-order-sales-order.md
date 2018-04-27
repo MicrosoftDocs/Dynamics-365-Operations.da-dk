@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Oprette en indkøbsordre fra en salgsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan oprette en indkøbsordre, der er baseret på en salgsordre. Produktmængderne på indkøbsordren angives derefter for at imødekomme efterspørgslen i den oprindelige salgsordre. Opfyldelse af salgsbehovet på denne måde er et alternativ til en mere omfattende og optimeret metode til planlægning af distributionskrav. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.
 

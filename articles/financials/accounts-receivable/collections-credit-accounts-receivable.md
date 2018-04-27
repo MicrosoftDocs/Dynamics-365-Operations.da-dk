@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit og rykkere i Debitor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Oplysninger om rykkere for debitorer styres i en central visning ved hjælp af siden Finance and Operations-samlinger. De ansvarlige for kredit og rykkere kan bruge denne centrale visning til at administrere rykkere. Inkassatorerne kan begynde rykkerprocessen fra debitorlisten, der genereres ved hjælp af foruddefinerede rykkerkriterier, eller fra siden Kunder.
 
@@ -70,9 +69,9 @@ Følgende listesider hjælper dig med at organisere dine rykkeroplysninger.
 
 > [!NOTE]
 > Der skal oprettes et aldersfordelt øjebliksbillede, før du kan få vist oplysningerne på disse listesider. Der vises kun oplysninger for debitorer, for hvem der allerede er oprettet et aldersfordelt øjebliksbillede. De poster, der vises på listesiden, kan filtreres yderligere på følgende måde:
-<li>En Finance and Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
-<li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
-<li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>
+> <li>En Finance and Operations-bruger har som standard adgang til alle de debitorer, som der findes et aldersfordelt øjebliksbillede for.</li>
+> <li>Hvis der findes kundepuljer, skal brugeren oprettes som en inkassator for at kunne bruge puljerne til filtrering af oplysninger på listesiderne med rykkere. Oplysningerne er begrænset til kunder, der er inkluderet i den valgte kundepulje.</li>
+> <li>Hvis en bruger oprettes som inkassator, er det kun de puljer, der er valgt for den pågældende inkassator, der er tilgængelige på listesiden. Hvis til/fra-tasten Tillad agent at få vist alle kundepuljer er markeret på siden Inkassoagent for inkassoagenten, er alle puljer tilgængelige for den pågældende agent.</li>
 
 
 ## <a name="collections-page"></a> Siden Rykkere

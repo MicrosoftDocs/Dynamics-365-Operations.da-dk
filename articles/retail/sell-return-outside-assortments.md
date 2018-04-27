@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>Sælge og returnere produkter uden for et sortiment
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Et almindeligt scenarie for enhver detailhandler er at sælge produkter til kunderne eller acceptere returvarer fra kunderne, selvom de ikke fører de konkrete produkter i deres butik (med andre ord er produkterne ikke i butikssortimentet).
 Her er nogle typiske scenarier:

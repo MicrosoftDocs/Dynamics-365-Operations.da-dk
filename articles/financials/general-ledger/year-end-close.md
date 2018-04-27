@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Årsafslutning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver den krævede konfiguration og trinnene for at køre årsafslutningsprocessen i Finans. 
 

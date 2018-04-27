@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurere et godkendelsestrin i en arbejdsgang
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne forklares det, hvordan du konfigurerer egenskaberne for et godkendelsestrin.
 
@@ -145,9 +144,9 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
     Hvis brugeren ikke håndterer dokumentet inden for den tildelte tid, er dokumentet forsinket. Et forsinket dokument eskaleres ud fra de indstillinger, du vælger i området **Eskalering** på siden.
 4.  Hvis du har tildelt godkendelsestrinnet til flere brugere eller en gruppe af brugere, skal du vælge følgende indstillinger på fanen **Afviklingspolitik**:
     -   **Enkelt godkender** – den handling, der udføres på dokumentet, bestemmes af den første person, der reagerer. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette er den første person, der reagerer på dokumentet, vil den handling, hun udfører, blive anvendt på dokumentet. Hvis Mette afviser dokumentet, afvises det og sendes tilbage til Søren. Hvis Mette godkender dokumentet, sendes det til Dorthe til godkendelse. 
-    
+
     ![Arbejdsgang, der har en godkendelsesproces](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Flertal af godkendere** – den handling, der skal anvendes på dokumentet, bliver bestemt, når de fleste af godkenderne har reageret. Antag f.eks. at Søren har sendt en udgiftsrapport på kr. 15.000. Dokumentet er aktuelt tildelt Mette, Karina og Bjarne. Hvis Mette og Karina er de første personer, der reagerer på dokumentet, vil den handling, de udfører, blive anvendt på dokumentet.
         -   Hvis Mette godkender dokumentet, men Karina afviser det, vil dokumentet blive afvist og sendt tilbage til Søren.
         -   Hvis både Mette og Karina godkender dokumentet, vil det blive sendt til Dorthe til godkendelse.

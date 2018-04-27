@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Politikker for lagerstedsarbejde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lagerstedets arbejdspolitikker i Microsoft Dynamics 365 for Finance and Operations kontrollerer, om lagerstedsarbejde er oprettet af lagerprocesser i produktion, ud fra arbejdsordretype, lagerlokation og produkt.
 
@@ -68,14 +67,15 @@ Når du skal konfigurere lagerstedets arbejdspolitik for dette scenario, skal du
 
 Her er et eksempel på den politik for arbejde, du har angivet, ud fra disse overvejelser.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Navn på arbejdspolitik**<br>                 |**Arbejdsordretyper**<br>                               |
-| Læg ikke på lager 01     `                    |- Færdige varer, læg på lager<br>                           |
-|                                         |**Lokationer**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkter** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Navn på arbejdspolitik</strong><br> | <strong>Arbejdsordretyper</strong><br> |
+|         Læg ikke på lager 01     `          |     - Færdige varer, læg på lager<br>      |
+|                                       |    <strong>Lokationer</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkter</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Følgende procedurer indeholder trinvise instruktioner om, hvordan du konfigurerer arbejdspolitikken for lagersted i dette scenario. En eksempelopsætning, der viser, hvordan du færdigmelder en produktionsordre til en lokation, der ikke er id-kontrolleret, beskrives også.
 
@@ -126,7 +126,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Vælg ressourcegruppen '5102' på listen.</td>
+<td>Vælg ressourcegruppen &#39;5102&#39; på listen.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,12 +136,12 @@ TRIN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Indtast '51' i feltet Lagersted for udlagring.</td>
+<td>Indtast &#39;51&#39; i feltet Lagersted for udlagring.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Indtast '001' i feltet Udlagringslokation.</td>
+<td>Indtast &#39;001&#39; i feltet Udlagringslokation.</td>
 </tr>
 <tr>
 <td></td>
@@ -169,7 +169,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Indtast 'L0101' i feltet Varenummer.</td>
+<td>Indtast &#39;L0101&#39; i feltet Varenummer.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +204,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Vælg "Aldrig" i feltet Automatisk styklisteforbrug.</td>
+<td>Vælg &#39;Aldrig&#39; i feltet Automatisk styklisteforbrug.</td>
 </tr>
 <tr>
 <td></td>
@@ -214,7 +214,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Klik på Færdigmeld.</td>
+<td>Klik på Færdigmelding.</td>
 </tr>
 <tr>
 <td></td>

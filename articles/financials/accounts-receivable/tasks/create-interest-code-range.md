@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Oprette en rentekode med et interval
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Rentekoder kan konfigureres til at beregne forskellige rentebeløb baseret på et interval af værdier. Denne procedure viser, hvordan du kan tilføje en rentekode og føje et interval til den.
 

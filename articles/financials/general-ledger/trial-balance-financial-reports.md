@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Råbalance - økonomiske rapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov. 
 
@@ -99,7 +98,7 @@ Hver råbalancerapport bruger en anden kolonnedefinition. Disse kolonnedefinitio
     -   **FD** – Økonomiske data, der kun indeholder debiteringer for sidste år
     -   **FD** – Økonomiske data, der kun indeholder krediteringer for sidste år
 
- 
+
 
 <a name="see-also"></a>Se også
 --------

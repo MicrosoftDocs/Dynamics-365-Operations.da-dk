@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross-docking fra produktionsordrer til forsendelsesområder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du administrerer cross-docking-processen på materiale, der færdigmeldes fra en produktionslinje til et forsendelsesområde.
 
@@ -76,10 +76,10 @@ I **politik for cross-docking** definerer du, hvilke dokumenttyper der kan anven
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Navn på politik for cross-docking: Flytteordre
 
--   Løbenummer: 10
- -   Arbejdsordretype: Flytteafgang
--   Cross-docking-behov kræver lokation: Falsk
--   Strategi for cross-docking: Dato og klokkeslæt
+- Løbenummer: 10
+  -   Arbejdsordretype: Flytteafgang
+- Cross-docking-behov kræver lokation: Falsk
+- Strategi for cross-docking: Dato og klokkeslæt
 
 ### <a name="sequence-number"></a>Løbenummer
 

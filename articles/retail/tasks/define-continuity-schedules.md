@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-continuity-schedules"></a>Definere kontinuitetsplaner
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Dette emne gennemgår oprettelse af et kontinuitetsprogram (kaldes også tilbagevendende ordrer). Dette emne bruger demodatafirmaet USRT.
 

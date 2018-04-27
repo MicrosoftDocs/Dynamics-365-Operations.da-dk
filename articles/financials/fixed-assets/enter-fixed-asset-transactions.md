@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-transaction-options"></a>Indstillinger for anlægsaktivtransaktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de forskellige tilgængelige metoder til oprettelse af anlægsaktivtransaktioner.
 

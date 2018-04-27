@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Formeldesigner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du bruger formeldesigneren til at analysere og vedligeholde formler i en trævisning.
 
@@ -88,7 +88,7 @@ Det filter, der anvendes til formlen og ruten vises i overskriften i formeldesig
 </tr>
 <tr class="odd">
 <td>Fra antal</td>
-<td>Du kan filtrere versionerne ved at vælge et bestemt antal i "fra". Hvis du angiver en værdi, kan der vælges forskellige formel- og ruteversioner.</td>
+<td>Du kan filtrere versionerne ved at vælge et bestemt antal for &quot;fra&quot;. Hvis du angiver en værdi, kan der vælges forskellige formel- og ruteversioner.</td>
 </tr>
 <tr class="even">
 <td>Vis kun gyldige</td>
@@ -116,8 +116,10 @@ Brug funktionerne **Styklistelinjer** eller **Formel** til at redigere formellin
 ## <a name="configuring-the-tree-view"></a>Konfigurere træstrukturen
 Klik på **Opsætning** for at tilpasse de oplysninger, der vises i formeldesignerens træstruktur.
 
-| Feltgruppe | Betegnelse |
-|-------------|-------------|
-| Stykliste         | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. De valgte kriterier vises nederst under begge faner i formeldesigneren. |
-| Rute       | Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne. |
+
+| Feltgruppe |                                                                          Betegnelse                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Stykliste     | Brug afkrydsningsfelterne til at vælge de kriterier, der vises i træstrukturen. De valgte kriterier vises nederst under begge faner i formeldesigneren. |
+|    Rute    |                                           Brug afkrydsningsfelterne til at vælge de kriterier, der vises for ruterne.                                           |
+
 

@@ -19,17 +19,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 6772c1d7906db27333206ea2ecd5a0585c3eb939
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Oversigt over produktkonfigurationsmodeller
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel definerer termer og begreber, der er relevante for produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygge en generisk produktstruktur, som kan bruges til at konfigurere mange produktvarianter for et enkelt produkt.
 
@@ -58,8 +57,8 @@ Produktkonfigurationsmodeller oprettes for at repræsentere en generisk produkts
 <td>Attributter beskriver alle funktioner i produktkonfigurationsmodellen. Du kan bruge attributter til at angive de funktioner, der kan vælges, når et bestemt produkt skal konfigureres. Attributter bruges i begrænsninger og betingelser. Når attributter oprettes og føjes til en produktkonfigurationsmodel, refereres til de relaterede attributtyper. Der kan angives en standardværdi for en attribut. Standardværdien bruges i konfigurationsbrugergrænsefladen (UI), når produktkonfigurationsmodellen konfigureres. Du kan angive, at en attribut er obligatorisk, skrivebeskyttet eller skjult.
 <ul>
 <li><strong>Tvungen</strong> – Der skal angives en værdi for attributten, når produktet konfigureres.</li>
-<li><strong>Skrivebeskyttet</strong> – Attributværdien vises under konfigurationen, men den kan ikke ændres.</li>
-<li><strong>Skjult</strong> – Attributværdien medtages i begrænsninger og betingelser, men den vises ikke under konfigurationen.</li>
+<li><strong>Skrivebeskyttet</strong> – Attributværdien vises under en konfigurationssession, men den kan ikke ændres.</li>
+<li><strong>Skjult</strong> – Attributværdien medtages i begrænsninger og betingelser, men den vises ikke under en konfigurationssession.</li>
 </ul>
 Du kan også angive en betingelse for attributter. Hvis betingelsen er opfyldt, skal der angives en værdi for den obligatoriske attribut. Betingelser er udtryk, der skal opfyldes for attributter, styklistelinjer og ruteoperationer, der skal medtages i en produktkonfigurationsmodel. Alle attributter, der refereres til i en betingelse, bliver tvungne. Det anbefales, at du vælger attributter som tvungne under fanen <strong>Attributter</strong>. Det kan gøre det nemmere at identificere de obligatoriske attributter. Attributværdier er en vigtig del af genbrug af konfigurationer. Systemet bruger attributværdier for at fastslå, om der findes en konfiguration, der svarer til de valg, som en bruger har foretaget under en konfiguration.</td>
 </tr>
@@ -78,7 +77,7 @@ Hvis attributtypen er <strong>Boolesk</strong>, <strong>Heltal</strong> med et i
 <td>Begrænsninger</td>
 <td>Begrænsninger beskriver begrænsninger i produktmodelkonfigurationen. Begrænsninger bruges til at sikre, at der kun vælges gyldige værdier, når et produkt konfigureres. Begrænsninger kan enten være udtryksbegrænsninger eller tabelbegrænsninger:
 <ul>
-<li>Udtryksbegrænsninger kan kun anvendes til den komponent, som de er knyttet til. Udtryksbegrænsninger for en komponent kan dog henvise til attributter for komponentens underkomponenter. Produktkonfigurationsproblemløseren bruges til at løse begrænsningerne, og du bruge problemløsersyntaksen, når du skriver begrænsningerne. Du kan finde flere oplysninger under linket i emnet om udtryksbegrænsninger og tabelbegrænsninger.</li>
+<li>Udtryksbegrænsninger kan kun anvendes til den komponent, som de er knyttet til. Udtryksbegrænsninger for en komponent kan henvise til attributter for komponentens underkomponenter. Produktkonfigurationsproblemløseren bruges til at løse begrænsningerne, og du bruge problemløsersyntaksen, når du skriver begrænsningerne. Du kan finde flere oplysninger under linket i emnet om udtryksbegrænsninger og tabelbegrænsninger.</li>
 <li>Tabelbegrænsninger skal defineres, før de kan anvendes til en komponent i en produktkonfigurationsmodel. Tabelbegrænsninger kan enten være brugerdefinerede eller systemdefinerede. En begrænsning for en brugerdefineret tabel er en matrixtype, der kan bruges til at beskrive sæt af kombinationer af de attributværdier, der er defineret af attributtyper. Hvis der f.eks. produceres højttalere, indeholder matricen for en brugerdefineret tabelbegrænsning muligvis kolonner for højttalerfinish og gitter.</li>
 </ul>
 <strong>Eksempel</strong> Højttalere fås med fire finishes: sort, egetræ, rosentræ og hvid. Højttalerne kan have et af tre frontgitre: sort, metal eller hvid. Sort finish er tilgængelig for alle gitre, men de andre overfladematerialer er begrænset til bestemte gitre. Følgende tabel viser et eksempel på de oplysninger, der vises under fanen <strong>Tilladte kombinationer</strong> på siden <strong>Rediger tabelbegrænsning</strong>.
@@ -138,11 +137,11 @@ Du kan få vist, om et frigivet produkt kan bruges som en komponent eller underk
 </tr>
 <tr class="odd">
 <td>Brugerkrav</td>
-<td>Brugerkrav repræsenterer en abstraktion mellem brugerkrav og bestemte komponenter og attributter. Et brugerkrav kan ikke knyttes til en vare. Forestil dig f.eks., at en kunde ønsker at købe et hjemmebiografsystem. Sælgeren spørger muligvis om størrelsen på det rum, hvor kunden vil have systemet, for at fastslå, hvor mange watt der er påkrævet. I dette eksempel kan rummets størrelse være et brugerkrav, der hjælper med at identificere den relevante attributværdi for en bestemt komponent. Du kan skjule brugerkrav, så de ikke vises for brugeren under en konfigurationssession. Attributter, underkomponenter og brugerkrav, der vedrører brugerkrav, skjules også. Du kan skrive en betingelse for at styre, om et brugerkrav kan skjules. Du skal bruge OML-syntaksen (Optimization Modeling Language), når du skriver betingelsen.</td>
+<td>Brugerkrav repræsenterer en abstraktion mellem brugerkrav og bestemte komponenter og attributter. Der kan ikke knyttes et brugerkrav til en vare. Forestil dig f.eks., at en kunde ønsker at købe et hjemmebiografsystem. Sælgeren spørger muligvis om størrelsen på det rum, hvor kunden vil have systemet, for at fastslå, hvor mange watt der er påkrævet. I dette eksempel kan rummets størrelse være et brugerkrav, der hjælper med at identificere den relevante attributværdi for en bestemt komponent. Du kan skjule brugerkrav, så de ikke vises for brugeren under en konfigurationssession. Attributter, underkomponenter og brugerkrav, der vedrører brugerkrav, skjules også. Du kan skrive en betingelse for at styre, om et brugerkrav kan skjules. Du skal bruge OML-syntaksen (Optimization Modeling Language), når du skriver betingelsen.</td>
 </tr>
 <tr class="even">
 <td>Styklistelinjer</td>
-<td>Styklistelinjer repræsenterer separate materialer af komponenterne i produktkonfigurationsmodellen. På siden <strong>Linjedetaljer i stykliste</strong> kan alle elementer vælges. En betingelse kan føjes til styklistelinjen, så de styklistelinjer, der er valgt for en bestemt produktvariant kan variere, baseret på brugerens valg, når produktkonfigurationsmodellen angives. Betingelser er udtryk, der skal opfyldes for attributter, styklistelinjer og ruteoperationer, der skal medtages i en produktkonfigurationsmodel. På siden <strong>Linjedetaljer i stykliste</strong> kan du vælge en bestemt værdi. Du kan også oprette en tilknytning til en attribut, som værdien vælges for under opsætning af produktkonfigurationsmodellen.</td>
+<td>Styklistelinjer repræsenterer separate materialer af komponenterne i produktkonfigurationsmodellen. På siden <strong>Linjedetaljer i stykliste</strong> kan alle elementer vælges. En betingelse kan føjes til styklistelinjen, så de styklistelinjer, der er valgt for en bestemt produktvariant, kan variere ud fra brugerens valg, når produktkonfigurationsmodellen konfigureres. Betingelser er udtryk, der skal opfyldes for attributter, styklistelinjer og ruteoperationer, der skal medtages i en produktkonfigurationsmodel. På siden <strong>Linjedetaljer i stykliste</strong> kan du vælge en bestemt værdi. Du kan også oprette en tilknytning til en attribut, som værdien vælges for under opsætning af produktkonfigurationsmodellen.</td>
 </tr>
 <tr class="odd">
 <td>Ruteoperationer</td>

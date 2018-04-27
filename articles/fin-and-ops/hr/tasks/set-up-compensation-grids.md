@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 258149dbd610dafb8daacaf54c61e69898ca35d6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d507224004bdf319f9bf13ba07ed07ef29cc85dc
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer. Kompensationsgitre kan deles mellem flere planer eller kopieres, når du opretter en ny lønstruktur.  Før du opretter et kompensationsgitteret, skal niveauer og referencepunkter konfigureres. I dette eksempel oprettes der en ny klassetype for kompensationsgitteret ved hjælp af demodata for niveauerne og referencepunkter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

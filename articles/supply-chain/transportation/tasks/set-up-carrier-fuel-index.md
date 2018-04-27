@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Konfigurere et brændstofindeks for fragtmand
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne vejledning viser, hvordan du opretter et område for brændstofindeks, et brændstofindeks og fragtmandens brændstofindeks. Området for brændstofindeks angiver hvilket område brændstofindekset skal gælde for, og brændstofindekset angiver en brændstofpris for en bestemt tidsperiode. For at afspejle ændringer i brændstofpriser over tid kan du knytte flere brændstofindekser til en fragtmand.  Disse opgaver udføres normalt af en transportkoordinator. Du kan bruge denne procedure i USMF-demodatafirmaet eller ved at bruge dine egne data.
 

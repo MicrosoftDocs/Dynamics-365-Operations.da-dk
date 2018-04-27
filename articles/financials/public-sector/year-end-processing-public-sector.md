@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 

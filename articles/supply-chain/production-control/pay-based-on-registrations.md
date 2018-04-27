@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Løn på basis af registreringer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne forklarer detaljeret, hvordan løn beregnes baseret på arbejderregistreringer. Det indeholder eksempler på, hvordan de forskellige kombinationer af opsætningsindstillinger, der er tilgængelige for beregning, påvirker resultatet. Her er nogle af de områder, der behandles:
 
@@ -446,7 +446,7 @@ Du kan oprette planlagt fravær for arbejdere på siden **Opret planlagt fravær
 Jobbet er baseret på en forespørgsel. Du kan derfor oprette planlagt fravær for flere arbejdere, f.eks. arbejdere, der tilhører den samme beregningsgruppe. Hvis der er planlagt fravær for en enkelt arbejder, kan du angive registreringen enten fra siden **Fremmøde** eller siden **Tidsregistrering arbejdere** side.
 
 - Hvis du vil angive en fraværsregistrering fra siden **Fremmøde** skal du vælge **Tid og fremmøde** &gt; **Forespørgsler og rapporter** &gt; **Fremmøde** &gt; **Fremmøde** og derefter vælge **Fraværsregistrering**.
-- Hvis du vil angive en fraværsregistrering fra siden ****Tidsregistrering arbejdere****, skal du vælge **Tid og fremmøde** &gt; **Konfiguration** &gt; **Tidsregistrering arbejdere** og derefter klikke på fanen **Tid** under **Tidstildeling** og vælge **Fraværsregistreringer**.
+- Hvis du vil angive en fraværsregistrering fra siden *<strong><em>Tidsregistreringsarbejder</em></strong>*, skal du vælge <strong>Tid og fremmøde</strong> &gt; <strong>Opsætning</strong> &gt; <strong>Tidsregistreringsarbejder</strong> og derefter på fanen <strong>Tid</strong> under <strong>Tidstildeling</strong> vælge <strong>Fraværsregistreringer</strong>.
 
 Du kan bruge rapporten **Planlagt fravær** til at få vist en oversigt over planlagt fravær for arbejdere. Hvis du vil åbne rapporten, skal du vælge **Tid og fremmøde** &gt; **Forespørgsler og rapporter** &gt; **Fraværsrapporter** &gt; **Planlagt fravær**.
 

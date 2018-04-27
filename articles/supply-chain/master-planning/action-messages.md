@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Handlingsmeddelelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En aktionsmeddelelse er et systemgenereret forslag om ændring af en eksisterende planlagt eller autoriseret ordre.
 

@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 1f0b5ff383c8bb2d1ac892ef771e15f0afec2655
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="alerts-overview"></a>Oversigt over påmindelser
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Om påmindelser
 Påmindelser udgør et beskedsystem for kritiske hændelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen. Du kan nemt oprette dit eget sæt påmindelsesregler, så du bliver påmindet om forfaldne leveringer, slettede ordrer, ændrede priser eller andre hændelser, du skal reagere på.
@@ -71,4 +71,7 @@ En påmindelsesregel har fem komponenter
 
     > [!NOTE]
     > Denne indstilling er begrænset til administratorer i organisationen.
+
+## <a name="email-notifications-from-alerts"></a>E-mail-beskeder fra påmindelser
+E-mail-beskeder fra påmindelser er ikke aktiveret endnu. Dette vil blive aktiveret i en senere opdatering.
 

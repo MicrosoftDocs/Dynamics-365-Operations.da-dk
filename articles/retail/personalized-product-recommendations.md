@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Oversigt over tilpassede produktanbefalinger
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner. Du kan finde flere oplysninger i [Fjernede eller forældede funktioner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Gå til bunden af siden, hvis du har problemer med allerede aktiverede produktanbefalinger til dit miljø. 
@@ -86,9 +85,9 @@ Når du aktiverer **Aktivér anbefalinger** og kører konfigurationsjobbene, udf
 -   Legitimationsoplysninger og id for modellen er gjort tilgængelige for CRT, så kald til produktanbefalinger fra Cloud POS og MPOS i onlinetilstand kan opfyldes.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Foretage fejlfinding af problemer, hvor produktanbefalingerne allerede er aktiveret 
->- Gå til **Detailparametre** > **Maskinel indlæring** > **Deaktiver produktanbefalinger**, og kør **Globalt konfigurationsjob [1110]**. Hvis du ikke kan finde fanen **Maskinel indlæring**, skal du kontakte Dynamics Support. 
-
->- Hvis du har føjet **Kontrolelement til anbefalinger** til din transaktionsskærm ved hjælp af **Designer for skærmlayout**, skal du også fjerne det. 
+> - Gå til **Detailparametre** > **Maskinel indlæring** > **Deaktiver produktanbefalinger**, og kør **Globalt konfigurationsjob [1110]**. Hvis du ikke kan finde fanen **Maskinel indlæring**, skal du kontakte Dynamics Support. 
+> 
+> - Hvis du har føjet **Kontrolelement til anbefalinger** til din transaktionsskærm ved hjælp af **Designer for skærmlayout**, skal du også fjerne det. 
 
 
 

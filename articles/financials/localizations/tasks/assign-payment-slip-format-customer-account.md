@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-payment-slip-format-to-a-customer-account-denmark"></a>Tildele et indbetalingskortformat til en debitorkonto (Danmark)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører dig gennem oprettelse af formatet for vedhæftningen af indbetalingskortet for en udvalgt debitor.
 

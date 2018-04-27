@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Føje et kontrolelement med anbefalinger til transaktionssiden på en POS-enhed
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner. Du kan finde flere oplysninger i [Fjernede eller forældede funktioner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 

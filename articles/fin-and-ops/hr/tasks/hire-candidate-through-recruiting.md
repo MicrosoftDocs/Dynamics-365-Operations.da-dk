@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Skjule en kandidat gennem rekruttering
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger  
 

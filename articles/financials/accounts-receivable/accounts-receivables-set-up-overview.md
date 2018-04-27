@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurere debitorer og kredit og rykkere
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurer Debitor og Kredit og rykkere til at spore alle fakturaer og indgående betalinger fra debitorer.
 
@@ -107,7 +106,7 @@ I følgende tabel vises de sider, der understøtter konfiguration og vedligehold
 |                                                      | NSF-oplysninger.                     | Konfigurer NSF-oplysninger på den bankkonto, der skal bruges, når en betaling er markeret som en NSF-transaktion på siden Rykkere.                                                                                                                                              |
 |                                                      | Oplysninger om salgsperson              | Angiv e-mailadressen for sælgere. Disse adresser vises på siden Rykkere, og du kan bruge dem til at sende e-mail til en sælger fra den pågældende side.                                                                                                                |
 
- 
+
 Du kan finde flere oplysninger under [Kredit og inkasso i debitorparametre](collections-credit-accounts-receivable.md).
 
 

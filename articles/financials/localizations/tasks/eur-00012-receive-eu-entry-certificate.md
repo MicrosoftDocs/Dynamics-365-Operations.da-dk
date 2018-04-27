@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>Modtage et EU-indførselscertifikat
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fører dig gennem registrering af et EU-posteringscertifikat udstedt af en tredjepart og modtaget fra kunden.
 

@@ -1,5 +1,5 @@
 --- 
-title: Design konfigurationer til udarbejdelse af rapporter i Microsoft Office-formater med integrerede billeder til elektronisk rapportering
+title: Designe konfigurationer for at generere rapporter i Microsoft Office-formater med integrerede billeder
 description: Trinnene i dette emne giver dig oplysninger om, hvordan du designer elektroniske rapporteringskonfigurationer (ER), der genererer elektroniske dokumenter i Microsoft Office-formater (Excel og Word), der indeholder integrerede billeder.
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5e3ba5c76df3dcc5042074a565d102ceaeeadfb0
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Design konfigurationer til udarbejdelse af rapporter i Microsoft Office-formater med integrerede billeder til elektronisk rapportering 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Designe konfigurationer for at generere rapporter i Microsoft Office-formater med integrerede billeder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv". Denne procedure forklarer, hvordan du designer elektroniske rapporteringskonfigurationer (ER) for at generere et Microsoft Excel- og Word-dokument, der indeholder integrerede billeder. I denne procedure, skal du oprette de nødvendige ER konfigurationer for eksempelvirksomheden Litware, Inc. Disse trin kan udføres ved hjælp af USMF-datasættet. Denne procedure er til brugere, der er tildelt rollen som systemadministrator eller elektronisk rapporteringsudvikler. Før du går i gang, skal du hente og gemme filerne, der er vist i Hjælp-emnet [Integrere billeder og figurer i forretningsdokumenter, der er genereret ved hjælp af værktøjet Elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filerne er: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png og Cheque template Word.docx.
 

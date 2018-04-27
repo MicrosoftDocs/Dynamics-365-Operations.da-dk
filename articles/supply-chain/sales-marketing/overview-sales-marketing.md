@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Salg og marketing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg.
 

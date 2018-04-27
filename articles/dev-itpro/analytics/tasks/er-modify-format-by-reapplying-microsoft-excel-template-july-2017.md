@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a>Redigere et format ved at genanvende en Microsoft Excel-skabelon til elektronisk rapportering (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre trinene i denne procedure skal du først fuldføre proceduren Designe en ER-konfiguration til generering af rapporter i OPENXML-format.
 

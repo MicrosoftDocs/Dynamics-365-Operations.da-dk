@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit med fysisk værdi og afmærkning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode.
 
@@ -74,16 +74,16 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 ![Direkte udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
--   En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
--   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
+- En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
+- Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Opsummeret udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi
 Vægtet gennemsnit bruger det udligningsprincip, at alle tilgange i en lukningsperiode opsummeres i en ny postering, der kaldes Lagerlukning for vægtet gennemsnit. Alle periodens tilgange udlignes mod afgangen i den nyoprettede lageroverførselspost. Alle periodens afgange udlignes mod tilgangen i den nye lageroverførselspost. Hvis den disponible lagerbeholdning er positiv efter lagerlukningen, opsummeres denne disponible lagerbeholdning og værdien af lageret i den nye lageroverførselspost (tilgang). Hvis den disponible lagerbeholdning er negativ efter lagerlukningen, udgør den disponible lagerbeholdning og værdien af lageret summen af individuelle afgange, der ikke er blevet fuldt udlignet. I eksemplet nedenfor er der bogført flere økonomisk opdaterede tilgange og én afgang. 
@@ -108,18 +108,18 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 ![Opsummeret udligning for vægtet gennemsnit uden indstillingen Medtag fysisk værdi](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
--   En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
--   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
--   Røde pile illustrerer den tilgangspostering, som udlignes mod den afgangspostering, der oprettes af systemet.
--   Den grønne pil illustrerer den systemgenererede tilgangsmodpostering, som den oprindeligt bogførte afgangspostering udlignes mod.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
+- En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
+- Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
+- Røde pile illustrerer den tilgangspostering, som udlignes mod den afgangspostering, der oprettes af systemet.
+- Den grønne pil illustrerer den systemgenererede tilgangsmodpostering, som den oprindeligt bogførte afgangspostering udlignes mod.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Direkte udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi
 Parameteren Medtag fysisk værdi fungerer anderledes for lagermodellen for vægtet gennemsnit end i tidligere versioner af produktet. Markér feltet Medtag fysisk værdi for en vare i formen Varemodelgruppe. Derefter bruger systemet fysisk opdaterede tilgange ved beregning af den forkalkulerede kostpris eller det løbende gennemsnit. Afgangene posteres på basis af denne forkalkulerede kostpris i løbet af perioden. Under lagerlukningen tages kun økonomisk opdaterede tilgange i betragtning ved beregning af det vægtede gennemsnit. Det anbefales at bruge en månedlig lagerlukning, når du bruger lagermodellen for vægtet gennemsnit. I dette eksempel med direkte udligning for vægtet gennemsnit er varemodelgruppen markeret, så den medtager den fysiske værdi. 
@@ -137,16 +137,16 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 ![Direkte udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
--   En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
--   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
+- En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
+- Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Opsummeret udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi
 Parameteren Medtag fysisk værdi fungerer anderledes for vægtet gennemsnit end i tidligere versioner. Markér feltet Medtag fysisk værdi for en vare på siden Varemodelgruppe. Derefter bruger systemet fysisk opdaterede tilgange ved beregning af den forkalkulerede kostpris eller det løbende gennemsnit. Afgangene posteres på basis af denne forkalkulerede kostpris i løbet af perioden. Under lagerlukningen tages kun økonomisk opdaterede tilgange i betragtning i beregningen af det vægtede gennemsnit. Det anbefales at bruge en månedlig lagerlukning, når du bruger lagermodellen for vægtet gennemsnit. I dette eksempel med opsummeret udligning for vægtet gennemsnit er lagermodellen markeret, så den medtager den fysiske værdi. 
@@ -170,18 +170,18 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 ![Opsummeret udligning for vægtet gennemsnit med indstillingen Medtag fysisk værdi](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Forklaring til diagram**
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
--   En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. 1a. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
--   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
--   Røde pile illustrerer den tilgangspostering, som udlignes mod den afgangspostering, der oprettes af systemet.
--   Den grønne pil illustrerer den systemgenererede tilgangsmodpostering, som den oprindeligt bogførte afgangspostering udlignes mod
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
+- En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. 1a. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
+- Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
+- Røde pile illustrerer den tilgangspostering, som udlignes mod den afgangspostering, der oprettes af systemet.
+- Den grønne pil illustrerer den systemgenererede tilgangsmodpostering, som den oprindeligt bogførte afgangspostering udlignes mod
 
 ## <a name="weighted-average-with-marking"></a>Vægtet gennemsnit med afmærkning
 Afmærkning er en proces, som giver dig mulighed for at tilknytte – eller afmærke – en afgangspostering til en tilgangspostering. Afmærkning kan ske enten før eller efter, at en postering er bogført. Du kan bruge afmærkning, når du vil være sikker på den nøjagtige kostpris for lageret, når posteringen bogføres, eller når lagerlukningen udføres. 
@@ -218,16 +218,16 @@ I følgende diagram illustreres denne serie posteringer med virkningerne af at v
 ![Vægtet gennemsnit med afmærkning](./media/weightedaveragewithmarking.gif) 
 
 **Forklaring til diagram**
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
--   En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
--   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@"Unitprice".
+- En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
+- En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
+- Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
 
 
 

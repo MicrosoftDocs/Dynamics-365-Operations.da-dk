@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Tilbageføre en kreditorbetaling
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor. 
 

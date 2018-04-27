@@ -18,24 +18,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: c42a7e50d6efb6408e480b50b3e520f5812aeb56
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller opdaterede opgaveguider (maj 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (maj 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek. 
 
 <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016 - alle sprog)
 ------------------------------------------------------------------------------------------------
 
-APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til brug i hjælpen til maj 2016-opdateringen til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md). **Bemærk:** En stjerne (**\***) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics AX 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
+APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til brug i hjælpen til maj 2016-opdateringen til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md). <strong>Bemærk:</strong> En stjerne (<strong>\</strong>*) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics AX 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Lande-/områdefunktionalitet
 
@@ -63,15 +62,15 @@ APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til b
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
-| BPM-linje                                                                   | Land/område |
+|                                  BPM-linje                                  | Land/område |
 |----------------------------------------------------------------------------|----------------|
-| Konfigurere ER-destinationer                                                  | Globalt         |
-| Designe en ER-konfiguration til generering af rapporter i OPENXML-format         | Globalt         |
-| Generere elektroniske dokumenter for betalinger ved hjælp af en formatkonfiguration | Globalt         |
-| Importere ER-konfiguration fra Lifecycle Services                          | Globalt         |
-| **\***Vælg ER-serviceudbyder                                           | Globalt         |
-| Opgradere dit ER-format ved at bruge en ny basisversion af formatet      | Globalt         |
-| Overføre ER-konfiguration til Lifecycle Services                          | Globalt         |
+|                         Konfigurere ER-destinationer                          |     Globalt     |
+|     Designe en ER-konfiguration til generering af rapporter i OPENXML-format     |     Globalt     |
+| Generere elektroniske dokumenter for betalinger ved hjælp af en formatkonfiguration |     Globalt     |
+|             Importere ER-konfiguration fra Lifecycle Services              |     Globalt     |
+|               <strong>\</strong *ER Vælg serviceudbyder                |     Globalt     |
+|   Opgradere dit ER-format ved at bruge en ny basisversion af formatet    |     Globalt     |
+|             Overføre ER-konfiguration til Lifecycle Services              |     Globalt     |
 
 ### <a name="human-capital-management"></a>Styring af menneskelig kapital
 
@@ -177,17 +176,15 @@ APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til b
 
 ### <a name="warehouse-and-transportation"></a>Lagersted og transport
 
-| BPM-linje                                                            | Land/område |
-|---------------------------------------------------------------------|----------------|
-| Konfigurere bølgebehandling                                           | Globalt         |
-| **\***Færdigmelde til en lokation uden id-kontrol | Globalt         |
-| Oprette en proces for minimum- eller maksimumgenopfyldning                              | Globalt         |
-| Konfigurere containere                                             | Globalt         |
-| Konfigurere manuel emballering                                               | Globalt         |
-| Konfigurere transportbegrænsninger for en vare                       | Globalt         |
-| **\***Konfigurere politikker for lagerstedsarbejde                                | Globalt         |
-
-
+|                                     BPM-linje                                     | Land/område |
+|----------------------------------------------------------------------------------|----------------|
+|                            Konfigurere behandling af bølge                             |     Globalt     |
+| <strong>\</strong *Færdigmelde til en lokation uden id-kontrol |     Globalt     |
+|                      Oprette en proces for minimum- eller maksimumgenopfyldning                      |     Globalt     |
+|                             Konfigurere containere                              |     Globalt     |
+|                              Konfigurere manuel emballering                               |     Globalt     |
+|                  Konfigurere transportbegrænsninger for en vare                   |     Globalt     |
+|                <strong>\</strong *Konfigurere politikker for lagerstedsarbejde                 |     Globalt     |
 
 <a name="see-also"></a>Se også
 --------

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Angive GTIN-koden for et produkt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 GTIN-koder tildeles af GS1-organisationen. I dette eksempel skal du indtaste en kode for produktnummer M0001 i demodatafirmaet USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med omkostningsregnskab kan du få indsigt i, hvordan omkostningsforløbet er relateret til de produkter og tjenester, der leveres i en organisation. For at få vist gennemsigtigheden for omkostninger er det vigtigt at opnå omkostningsfordeling mellem omkostningsobjekter baseret på et passende fordelingsgrundlag. Som standard opnås omkostningstildelingen for det primære omkostningselement, der er behov for i nogle situationer, men det har nogle konsekvenser, som bør overvejes.
 

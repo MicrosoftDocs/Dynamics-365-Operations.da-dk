@@ -26,14 +26,14 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Komme i gang med Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Talent er det nemt at ændre brugergrænsefladen og angive indstillinger, der gør programmet mere intuitiv til dine behov. Dette emne indeholder links til emner med oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov. Emnet indeholder også links til oplysninger, der kan hjælpe dig med at finde oplysninger i systemet, effektivt og korrekt. 
 
 > [!NOTE] 
 > Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
-### <a name="personalizing-talent"></a>Tilpasse Talent 
+## <a name="personalizing-talent"></a>Tilpasse Talent 
 I de følgende emner beskrives opsætning af mange funktioner i Dynamics 365 for Talent, der gør det lettere for dig at udføre dit arbejde til tiden. 
 
 -   [Tilpasse brugeroplevelsen](../fin-and-ops/get-started/personalize-user-experience.md) – I dette emne forklares de forskellige måder, som du kan tilpasse Talent på og tilpasse dele af produktet, så det bedre passer til dine præferencer.
@@ -44,7 +44,7 @@ I de følgende emner beskrives opsætning af mange funktioner i Dynamics 365 for
 
 -   [Tastaturgenveje](../fin-and-ops/get-started/shortcut-keys.md) – I dette emne beskrives tastaturgenveje til det amerikanske tastaturlayout. 
 
-### <a name="accessing-information"></a>Få adgang til oplysninger
+## <a name="accessing-information"></a>Få adgang til oplysninger
 I følgende emner forklares, hvordan du kan bruge opslag og funktionerne til søgning og filtrering til hurtigt at finde oplysninger. 
 
 -   [Bruge Opslag til at finde oplysninger](../fin-and-ops/get-started/use-lookups-to-find-information.md) -I dette emne vises, hvordan opslag kan hjælpe dig med hurtigt at finde den korrekte eller ønskede værdi. I emnet beskrives, hvordan opslag fungerer, og der er også tip til at optimere brugen af dem.

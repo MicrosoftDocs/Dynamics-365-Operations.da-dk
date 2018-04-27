@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="install-the-retail-pos-layout-designer"></a>Installere layoutdesigneren til Retail POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Du kan bruge ét-klik-designer til at designe forskellige Retail Modern POS (MPOS) og Cloud POS-layout, i enten liggende eller stående tilstand, til butikker, kasseapparater, kasserer og ledere.
 

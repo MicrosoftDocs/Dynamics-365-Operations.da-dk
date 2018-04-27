@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurere skærmlayout til POS
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser.
 

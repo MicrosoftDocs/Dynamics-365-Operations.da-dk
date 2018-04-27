@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Flytning af lager med tilknyttet arbejde i Lokationsstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ved hjælp af lagerbevægelse kan du bestemme, hvilke lagermedarbejdere der skal have tilladelse til at flytte reserveret lager. Dette giver en fleksibilitet på regulerede lagersteder, hvor du kan vælge, at en arbejder ikke skal kunne vælge en ny pluklokation for plukarbejde, der allerede er oprettet. Det gør det også muligt for lagerstedets chef at styre, hvilke funktioner mindre erfarne arbejdere skal have adgang til.
 

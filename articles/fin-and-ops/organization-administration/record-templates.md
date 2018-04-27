@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="record-templates"></a>Postskabeloner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel introducerer begrebet postskabeloner, og forklarer, hvordan de kan bruges til at oprette poster, der deler oplysninger.
 

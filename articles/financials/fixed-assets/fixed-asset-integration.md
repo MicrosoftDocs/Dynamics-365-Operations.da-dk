@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Integration af anlægsaktiver
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Anlægsaktiver kan integreres med Finans, Lagerstyring, Debitor, Kreditor og Debitor. Du kan også oprette anlægsaktiver, der kan integreres med indkøbsordrer.
 

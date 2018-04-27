@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="advanced-ledger-entries-in-the-public-sector"></a>Avancerede finansposter i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organisationer i den offentlige sektor kan bruge avancerede finansposter til at oprette, tilpasse og tilbageføre finansposter. For eksempel kan avancerede finansposter bruges til at ompostere udgifter, hvis fakturaer fejlagtigt er blevet bogført til den forkerte konto eller det forkerte projekt.
 

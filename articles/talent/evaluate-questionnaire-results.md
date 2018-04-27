@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Få vist og evaluere resultaterne af et spørgeskema
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 I dette emne forklares det, hvordan du kan få vist og evaluere resultaterne af de spørgeskemaer, som svarpersonerne har udfyldt. 
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Oprette et callcenter-katalog
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikel indeholder en oversigt over processen til oprettelse af et katalog for et callcenter. 
 

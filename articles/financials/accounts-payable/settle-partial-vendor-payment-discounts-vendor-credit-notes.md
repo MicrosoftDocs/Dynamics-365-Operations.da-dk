@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Udlign en delvis kreditorbetaling med rabatter på kreditorkreditnotaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel fører dig gennem et scenario, hvor en kreditnota udlignes med en faktura.
 

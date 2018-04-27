@@ -3,12 +3,12 @@ title: Startside for omkostningsstyring
 description: "Med omkostningsstyring kan du håndtere vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med [Omkostningsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbejde med vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver. Det er processen med at definere, administrere og rapportere [Lagerregnskab](cost-object.md) og [Produktionsregnskab](bom-calculations.md).
 

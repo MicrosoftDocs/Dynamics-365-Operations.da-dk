@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurere validering af sammenholdelse af kreditorfakturaer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne registrering anvender demofirmaet USMF. Rollen kreditorchef eller rollen regnskabschef skal udføre disse trin. Inden du begynder, skal du kontrollere, at konfigurationsnøglen til fakturasammenholdelse er valgt. Hvis den juridiske enhed sporer udgifter, f.eks. fragt, med brug af tillæg, skal du sørge for, at konfigurationsnøglen Gebyrer er valgt.  Fakturasammenholdelse for kreditorer er den proces, hvor kreditorfakturaen, indkøbsordren og produktkvitteringen sammenholdes. Forskelle mellem disse dokumenter kaldes matchningafvigelser. Matchningsafvigelser sammenlignes med de angivne tolerancer. Hvis en matchningafvigelse overskrider toleranceprocenten eller -beløbet, vises ikoner for matchafvigelse i formularen Kreditorfaktura og formularen Detaljer om fakturasammenholdelse.
 

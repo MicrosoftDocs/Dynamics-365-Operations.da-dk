@@ -24,7 +24,7 @@ ms.lasthandoff: 10/25/2017
 ---
 # <a name="create-a-product-master"></a>Oprette en produktmaster
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Opret en produktmaster for de foruddefinerede varianter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til produktdesigneren.
 

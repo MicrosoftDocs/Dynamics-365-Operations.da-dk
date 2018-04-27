@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Syntaks for avanceret filtrering og forespørgsler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren "matches" i dialogboksen Avanceret filtrering/sortering.
 
@@ -68,7 +67,7 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <td><em>fra-værdi</em>..<em>til-værdi</em> (dobbelt punktum)</td>
 <td>Mellem de to angivne værdier, der er adskilt af dobbelt punktum</td>
 <td>Skriv fra-værdien, derefter to punktummer og til sidst til-værdien.</td>
-<td><strong>1..10</strong> finder alle værdier fra 1 til og med 10. I strengfeltet <strong>A..C</strong> findes imidlertid alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der svarer præcist til &quot;C&quot;. Denne forespørgsel finder f.eks. ikke &quot;Ca&quot;. Hvis du vil finde alle værdier fra &quot;A*&quot; til og med &quot;C*&quot;, skal du skrive <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> finder alle værdier fra 1 til og med 10. I strengfeltet <strong>A..C</strong> findes imidlertid alle værdier, der starter med &quot;A&quot; og &quot;B&quot;, og værdier, der svarer præcist til &quot;C&quot;. Denne forespørgsel finder f.eks. ikke &quot;Ca&quot;. Hvis du vil finde alle værdier fra &quot;A<em>&quot; til og med &quot;C</em>&quot;, skal du skrive <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>værdi</em> (dobbelt punktum)</td>
@@ -97,20 +96,20 @@ I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der
 <tr class="even">
 <td><em>værdi</em>* (stjerne)</td>
 <td>Starter med den værdi, der er angivet</td>
-<td>Skriv startværdien og derefter en stjerne (<strong>*</strong>).</td>
-<td><strong>S*</strong> finder enhver strenge, der starter med &quot;S&quot;, f.eks. &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
+<td>Skriv startværdien og derefter en stjerne (<strong><em></strong>).</td>
+<td><strong>S</em></strong> finder enhver strenge, der starter med &quot;S&quot;, f.eks. &quot;Stockholm&quot;, &quot;Sydney&quot; og &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>værdi</em> (stjerne)</td>
+<td><em><em>værdi</em> (stjerne)</td>
 <td>Slutter med den værdi, der er angivet.</td>
 <td>Skriv en stjerne og derefter slutværdien.</td>
-<td><strong>*øst</strong> finder alle strenge, der slutter med &quot;øst&quot;, f.eks. &quot;Nordøst&quot; og &quot;Sydøst&quot;.</td>
+<td><strong></em>øst</strong> finder alle strenge, der slutter med &quot;øst&quot;, f.eks. &quot;Nordøst&quot; og &quot;Sydøst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>værdi</em>* (stjerne)</td>
+<td><em><em>værdi</em></em> (stjerne)</td>
 <td>Indeholder den værdi, der er angivet</td>
 <td>Skriv en stjerne, derefter en værdi og så en stjerne igen.</td>
-<td><strong>**rd**</strong> finder alle strenge, der indeholder &quot;rd&quot;, f.eks. &quot;Nordøst&quot; og &quot;Nordvest&quot;.</td>
+<td><strong><em>rd</em></strong> finder alle strenge, der indeholder &quot;rd&quot;, f.eks. &quot;Nordøst&quot; og &quot;Nordvest&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (spørgsmålstegn)</td>

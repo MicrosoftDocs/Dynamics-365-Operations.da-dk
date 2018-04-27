@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations. 
 
@@ -39,6 +38,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 
 ## <a name="action-shortcuts"></a>Handlingsgenveje
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Hvis du vil gøre dette**                                    | **Tryk på**                        |
@@ -55,6 +55,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Vis genveje, der er tilgængelige i øjeblikket                | Alt+Skift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Genveje for datovælger
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Hvis du vil gøre dette**                        | **Tryk på**                                 |
@@ -68,6 +69,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Vælg Aldrig (eller den maksimale dato)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Genveje i faktaboks
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Hvis du vil gøre dette**                                                                  | **Tryk på**                                 |
@@ -79,6 +81,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Skjule den aktuelle faktaboks                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Filtreringsgenveje
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **For at gøre det**                     | **Tryk på**                |
@@ -89,6 +92,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Åbne avanceret filtrering/sortering                                      | Ctrl+Skift+F3            | 
 
 ## <a name="form-shortcuts"></a>Formulargenveje
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **For at gøre det**                                      | **Tryk på**         |
@@ -110,6 +114,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Lukke formen, uanset om der er ugemte ændringer       | Alt+Skift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Navigationsgenveje i formular
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Hvis du vil gøre dette**                                      | **Tryk på**                                    |
@@ -128,6 +133,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Skift til linjevisning                                | Ctrl+Skift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Genvejstaster til gitteret
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Hvis du vil gøre dette**                                                                                                         | **Tryk på**                       |
@@ -148,6 +154,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Hvis du vil gøre dette**                                                               | **Tryk på**                     |
@@ -163,6 +170,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Skifte fokus mellem tekstområdet og værktøjslinjen i et HTML-editor-objekt | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Beskedgenveje
+
 |                          |               |
 |--------------------------|---------------|
 | **Hvis du vil gøre dette**           | **Tryk på**     |
@@ -170,6 +178,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Gå til meddelelseslinjen    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigationsgenveje
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Hvis du vil gøre dette**                                                                | **Tryk på**                  |
@@ -191,6 +200,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flytte til faktaboksruden (som kan inkludere at åbne den)                       | Alt+M, B eller Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Tilpasning af genveje
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Hvis du vil gøre dette**                                                                                                         | **Tryk på**                           |
@@ -219,6 +229,7 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Afslut tilpasningstilstanden (i tilpasningstilstand)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Genveje til segmenterede poster
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Hvis du vil gøre dette**                                                                                                          | **Tryk på**                        |

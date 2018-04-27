@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Oversigt over omkostningsstyring 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbejdsområdet **Omkostningsstyring** er et centralt punkt, hvor ledere, der er ansvarlige for styring af et omkostningsobjekt eller en række omkostningsobjekter inden for en dimension eller på tværs af dimensioner (for eksempel bærere and produktgrupper), har adgang til rapporter. Rapporterne i arbejdsområdet administreres fuldstændigt af omkostninger lagerbogholdere, så layoutet og de data, der bruges til rapportering, kan være ensartet på tværs af hele organisationen.
 

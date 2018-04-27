@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheder eller ændringer i Dynamics 365 for Operations-version 1611 (november 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver funktioner, der er nye eller ændrede i Dynamics 365 for Operations version 1611.
 
@@ -113,6 +112,7 @@ Dette emne beskriver funktioner, der er nye eller ændrede i Dynamics 365 for Op
 </table>
 
 ## <a name="expense-management"></a>Udgiftsstyring
+
 | Hvad du kan gøre                                                            | Hvorfor dette er vigtigt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Omfordele fratrådte medarbejderes kreditkorttransaktioner.                     | Nogle gange, når en medarbejder er fratrådt, bliver hans eller hendes Active Directory-domæneservices-konto (AD DS) deaktiveret ved import af aktive kreditkorttransaktioner, der skal udgiftsføres. Tidligere kunne du tildele en delegeret for udgiftsregistrering eller vedhæfte kreditkorttransaktionerne til en udgiftsrapport. Du kan nu bruge siden **Kreditkorttransaktioner** til at tildele medarbejderen en kreditkorttransaktion, hvor den tilknyttede medarbejder er fratrådt. Når du gentildeleren en kreditkorttransaktion, kan transaktionen vælges til en udgiftsrapport og betales gennem den almindelige proces for refusion af udgiftsrapport. |
@@ -211,7 +211,7 @@ Dette emne beskriver funktioner, der er nye eller ændrede i Dynamics 365 for Op
 </tr>
 <tr class="even">
 <td>Importere elektroniske bankkontoudtog for alle juridiske enheder i et enkelt trin.</td>
-<td>Nu kan du importere elektroniske bankkontoudtog for alle juridiske enheder i et enkelt trin. Bankkontoudtogsfiler kan indeholde opgørelser fra mange bankkonti og juridiske enheder, og zip-filer kan indeholde flere bankkontoudtogsfiler. Ved hjælp af en enkelt importproces kan du starte afstemningen for alle rapporterede bankkonti i alle juridiske enheder. Denne er med til at spare tid, fordi du ikke behøver at skifte mellem virksomheder og flere importer af kontoudtog. Du kan også automatisk køre matchende regler mod alle importerede kontoudtog i de enkelte firmaer.</td>
+<td>Nu kan du importere elektroniske bankkontoudtog for alle juridiske enheder i et enkelt trin. Bankkontoudtogsfiler kan indeholde opgørelser fra mange bankkonti og juridiske enheder, og zip-filer kan indeholde flere bankkontoudtogsfiler. Ved hjælp af en enkelt importproces kan du starte afstemningen for alle rapporterede bankkonti i alle juridiske enheder. Denne funktion er med til at spare tid, fordi du ikke behøver at skifte mellem virksomheder og flere importer af kontoudtog. Du kan også automatisk køre matchende regler mod alle importerede kontoudtog i de enkelte firmaer.</td>
 </tr>
 <tr class="odd">
 <td>Sporing af vurdering</td>
@@ -219,12 +219,13 @@ Dette emne beskriver funktioner, der er nye eller ændrede i Dynamics 365 for Op
 </tr>
 <tr class="even">
 <td>Drage fordel af forbedret kørsel af afskrivning på tværs af regnskaber.</td>
-<td>Nu kan du starte en afskrivning af aktiver på tværs af alle de juridiske enheder fra en enkelt side. Du kan også automatisk bogføre kladder, når de er oprettet. Du kan sende oprettelse og bogføring af kladder til batchafvikling, så afskrivningen kører i baggrunden. Disse forbedringer øger effektiviteten, fordi du ikke behøver at starte individuelle afskrivninger separat for hvert regnskab. Udvidelsen kan også forbedre den centrale styring af anlægsaktiverne.</td>
+<td>Nu kan du starte en afskrivning af aktiver på tværs af alle de juridiske enheder fra en enkelt side. Du kan også automatisk bogføre kladder, når de er oprettet. Du kan sende oprettelse og bogføring af kladder til batchafvikling, så afskrivningen kører i baggrunden. Disse forbedringer øger effektiviteten, fordi du ikke behøver at starte individuelle afskrivningskørsler for hvert firma. Udvidelsen kan også forbedre den centrale styring af anlægsaktiverne.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="human-capital-management"></a>Styring af menneskelig kapital
+
 | Hvad du kan gøre                                                                                | Hvorfor dette er vigtigt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Oprette en performancekladde.                                                                  | Før du afslutter din evaluering, indsamler du som medarbejder ofte oplysninger om aktiviteter eller hændelser, der bidrog til din succes som medarbejder i evalueringsperioden. Du kan føje en post til performancekladden for at dokumentere disse aktiviteter og hændelser. Du kan også forbinde disse aktiviteter og hændelser til et mål eller en performancegennemgang for at give yderligere oplysninger til korrekturlæseren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Følgende lande kræver også detaillokalisering. Detaillokalisering for disse l
 </table>
 
 ## <a name="planning-and-scheduling"></a>Planlægning
+
 | Hvad du kan gøre                                                                                                                                                                                                      | Hvorfor dette er vigtigt                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Angive standardordreindstillinger for køb og salg, baseret på en aktiv produktdimension i produktmasteren. Derfor kan du definere standardordreindstillingerne for lagerenheden (SKU) eller en delvis SKU. | Du kan angive standardordreindstillinger for en produktdimension eller en kombination af produktdimensioner. **Eksempel** Du sælger et produkt, der hedder Polo T-shirt. Dette produkt fås i to farver: grøn og blå. Det fås også i to størrelser: small og medium. Aktive produktdimensioner til Polo T-shirt er farve og størrelse. Du kan blokere køb af alle grønne Polo-T-shirts, uanset deres størrelse. |
@@ -624,6 +626,7 @@ Følgende lande kræver også detaillokalisering. Detaillokalisering for disse l
 </table>
 
 ## <a name="project-management-and-accounting"></a>Projektstyring og regnskab
+
 | Hvad du kan gøre                                                                                                           | Hvorfor dette er vigtigt                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Bruge senere valg, når du bogfører fakturaforslag i en batch.                                                            | Projektrevisorer kan konfigurere et batchjob til automatisk at opsamle fakturaforslag til bogføring, hvis disse forslag opfylder de kriterier, der er angivet i batchjobbet. Denne funktion forbedrer automatiseringen af bogføring af faktura, da batchjobbet kan køre kontinuerligt og automatisk opsamler forslag til bogføring. |

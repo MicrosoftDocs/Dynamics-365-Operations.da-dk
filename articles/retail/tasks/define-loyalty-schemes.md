@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a>Definere fordelskundeplaner
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure hjælper med at definere en fordelskundeplan. Fordelskundeplaner er belønning for opnåelse og indløsning af regler for et loyalitetsprogram. Proceduren bruger USRT-demodatafirmaet.
 

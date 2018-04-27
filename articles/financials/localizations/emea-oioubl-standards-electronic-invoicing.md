@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Understøttede standarder til elektronisk fakturering i Europa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives det dækningsniveau, der findes for elektronisk fakturering for Europa. 
 

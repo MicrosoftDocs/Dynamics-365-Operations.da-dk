@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Opgradere budgetplanlægning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Der er væsentlige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
 
@@ -70,26 +69,27 @@ Følgende eksempel bruger en opgraderet budgetproces fra AX 2012 demo-data til a
 
 ### <a name="define-columns-and-layouts"></a>Definere kolonner og layout
 
-1.  På siden **Budgetplanlægningskonfiguration** skal du klikke på fanen **Kolonner**. Som en del af opgraderingen oprettes nye kolonner automatisk ud fra dine budgetplanlinjer. Kolonner bruger nu dynamiske datoer, hvor tid og år forskydes fra det regnskabsår, der er defineret i budgetplanlægningsprocessen. **Bemærk!** Af hensyn til ydeevnen under opgraderingen antages det, at alle budgetcyklusser repræsenterer kalenderår, ikke regnskabsår. Hvis du bruger regnskabsår, skal du foretage redigeringer for at tilknytte kolonner til deres regnskabsår korrekt. For eksempel fandtes følgende elementer i AX 2012:
-    -   Budgetplanscenarier: faktiske oplysninger, grundlag, budgetanmodning, godkendt budget
-    -   Budgetplanlinjerne for alle scenarier i 2017 og faktiske værdier for både 2017 og 2016
+1. På siden **Budgetplanlægningskonfiguration** skal du klikke på fanen **Kolonner**. Som en del af opgraderingen oprettes nye kolonner automatisk ud fra dine budgetplanlinjer. Kolonner bruger nu dynamiske datoer, hvor tid og år forskydes fra det regnskabsår, der er defineret i budgetplanlægningsprocessen. **Bemærk!** Af hensyn til ydeevnen under opgraderingen antages det, at alle budgetcyklusser repræsenterer kalenderår, ikke regnskabsår. Hvis du bruger regnskabsår, skal du foretage redigeringer for at tilknytte kolonner til deres regnskabsår korrekt. For eksempel fandtes følgende elementer i AX 2012:
+   -   Budgetplanscenarier: faktiske oplysninger, grundlag, budgetanmodning, godkendt budget
+   -   Budgetplanlinjerne for alle scenarier i 2017 og faktiske værdier for både 2017 og 2016
 
-    Der oprettes følgende kolonner i Finance and Operations:
-    | Kolonnenavn    | Budgetplansscenarie | Kolonnetidsperiode | Årsforskydning |
-    |----------------|----------------------|--------------------|-------------|
-    | Jan scenario 1 | Faktiske oplysninger              | 1                  | 0           |
-    | Jan scenario 2 | Grundlag             | 1                  | 0           |
-    | Jan scenario 3 | Budgetanmodning       | 1                  | 0           |
-    | Jan scenario 4 | Godkendt budget      | 1                  | 0           |
-    | Jan scenario 5 | Faktiske oplysninger              | 1                  | -1          |
-    | Feb scenario 1 | Faktiske oplysninger              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   Der oprettes følgende kolonner i Finance and Operations:
 
-    I dette eksempel er en kolonne med navnet **Jan scenario 1** oprettet for de seneste posteringsdata i budgetplanen, hvor der findes posteringer i januar. Der oprettes en tilsvarende kolonne for hvert scenario, der indeholder data. Når der findes kolonner for alle perioder i det pågældende år, oprettes der kolonner for tidligere år.
-2.  Du kan ændre navnene på kolonnerne og beskrivelserne og andre detaljer, enten manuelt i klienten eller ved at benytte masseopdateringer via Excel-tilføjelsesprogrammet, der peger på kolonnedataenheden i budgetplanen. Filtre, der tidligere blev angivet for matrixfelter, angives nu i kolonnerne.
-3.  Opret et layout til en ny budgetplan. Et layout peger på flere kolonner for at definere den visning, der vises i Excel og klienten. Layoutet kræver først, at du angiver en økonomisk dimension, der er indstillet til at bestemme, hvilke økonomiske dimensioner der kan angives. Når du har angivet dimensionsopsætningen, skal du klikke på **Beskrivelser** for at vælge de dimensionsbeskrivelser, der skal medtages i layoutet.
-4.  I oversigtspanelet **Layoutelementer** skal du klikke på **Tilføj** for at tilføje metadata for hver række som en valuta, en kommentar eller en budgetklasse, der bestemmer indtægtsrækker i forhold til udgiftsrækker. Derefter skal du tilføje kolonner for det tidsrum og de scenarier, der gælder for denne budgetcyklus og dette -stadie. Du kan foretage disse ændringer manuelt i klienten eller via Excel-tilføjelsesprogrammet, der peger på dataenheden for layoutelementer i budgetplanen.
-5.  For hvert layoutelement skal du vælge, om kolonnen skal kunne redigeres, og om kolonnen også skal vises i Excel-projektmappen for dette layout. **Bemærk!** Til vores historiske planer kan du overveje et layout, der viser 12 månedlige kolonner for alle budgetplansscenarier til denne proces.
+   | Kolonnenavn    | Budgetplansscenarie | Kolonnetidsperiode | Årsforskydning |
+   |----------------|----------------------|--------------------|-------------|
+   | Jan scenario 1 | Faktiske oplysninger              | 1                  | 0           |
+   | Jan scenario 2 | Grundlag             | 1                  | 0           |
+   | Jan scenario 3 | Budgetanmodning       | 1                  | 0           |
+   | Jan scenario 4 | Godkendt budget      | 1                  | 0           |
+   | Jan scenario 5 | Faktiske oplysninger              | 1                  | -1          |
+   | Feb scenario 1 | Faktiske oplysninger              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   I dette eksempel er en kolonne med navnet **Jan scenario 1** oprettet for de seneste posteringsdata i budgetplanen, hvor der findes posteringer i januar. Der oprettes en tilsvarende kolonne for hvert scenario, der indeholder data. Når der findes kolonner for alle perioder i det pågældende år, oprettes der kolonner for tidligere år.
+2. Du kan ændre navnene på kolonnerne og beskrivelserne og andre detaljer, enten manuelt i klienten eller ved at benytte masseopdateringer via Excel-tilføjelsesprogrammet, der peger på kolonnedataenheden i budgetplanen. Filtre, der tidligere blev angivet for matrixfelter, angives nu i kolonnerne.
+3. Opret et layout til en ny budgetplan. Et layout peger på flere kolonner for at definere den visning, der vises i Excel og klienten. Layoutet kræver først, at du angiver en økonomisk dimension, der er indstillet til at bestemme, hvilke økonomiske dimensioner der kan angives. Når du har angivet dimensionsopsætningen, skal du klikke på **Beskrivelser** for at vælge de dimensionsbeskrivelser, der skal medtages i layoutet.
+4. I oversigtspanelet **Layoutelementer** skal du klikke på **Tilføj** for at tilføje metadata for hver række som en valuta, en kommentar eller en budgetklasse, der bestemmer indtægtsrækker i forhold til udgiftsrækker. Derefter skal du tilføje kolonner for det tidsrum og de scenarier, der gælder for denne budgetcyklus og dette -stadie. Du kan foretage disse ændringer manuelt i klienten eller via Excel-tilføjelsesprogrammet, der peger på dataenheden for layoutelementer i budgetplanen.
+5. For hvert layoutelement skal du vælge, om kolonnen skal kunne redigeres, og om kolonnen også skal vises i Excel-projektmappen for dette layout. **Bemærk!** Til vores historiske planer kan du overveje et layout, der viser 12 månedlige kolonner for alle budgetplansscenarier til denne proces.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Opdatere budgetplanlægningsprocesser, så de bruger det relevante layout for hver enkelt budgetfase
 

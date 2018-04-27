@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsversion for planlagte omkostninger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel forklarer, hvordan du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for producerede varer med en separat efterkalkulationsversion for planlagte omkostninger.
 

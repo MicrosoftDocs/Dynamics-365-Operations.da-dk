@@ -1,5 +1,5 @@
 --- 
-title: Generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)
+title: Designe konfigurationer for at generere dokumenter med programdata
 description: "For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Generere dokumenter med opdatering til programdata (Del 1 - Importere konfigurationer)."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c724ce3c39ed7097a5a842b44a095628dcdfa131
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad5508ea5807f505b29f2e60a1459c9c22552694
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)
+# <a name="design-configurations-to-generate-documents-with-application-data"></a>Designe konfigurationer for at generere dokumenter med programdata
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Generere dokumenter med opdatering til programdata (Del 1: Importere konfigurationer).
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Definere omkostningskontrolenheder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du definerer omkostningskontrolenheder i finansposten for omkostningsregnskabet. Du skal vælge den omkostningsobjektdimension, hvis omkostninger i Finans du vil kontrollere. Dimensionsmedlemmerne for omkostningsobjektet konverteres til omkostningsobjekter af omkostningskontrolenhederne. Det demodatafirma, der bruges til at oprette denne procedure, er USP2.
 

@@ -25,8 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="data-validation-workspace"></a>Arbejdsområde for datavalidering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne emne indeholder en oversigt over **Arbejdsområdet Kontrolliste for datavalidering** og den tilknyttede konfiguration.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurere arbejdsområdeparametre for omkostningsstyring
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan bruge denne procedure til at konfigurere arbejdsområdet Omkostningsstyring, så ledere på forskellige niveauer i organisationen kan få indsigt i deres omkostningsobjekter, f.eks. bærere og produktgrupper. USP2-demofirmaet blev brugt til at oprette denne registrering.
 

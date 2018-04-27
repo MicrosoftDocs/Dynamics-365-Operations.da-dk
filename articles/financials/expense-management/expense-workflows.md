@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Konfigurer arbejdsgange til udgifter
 
-[!include[banner](../includes/banner.md)] Du kan oprette en proces for en arbejdsgang, der bruges til at gennemse og godkende rejse- og udgiftsdokumenter. De dokumenter, der kan være defineret en arbejdsgang for, omfatter udgiftsrapporter, rejserekvisitioner og anmodninger om kontaktforskud.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Du kan oprette en proces for en arbejdsgang, der bruges til at gennemse og godkende rejse- og udgiftsdokumenter. De dokumenter, der kan være defineret en arbejdsgang for, omfatter udgiftsrapporter, rejserekvisitioner og anmodninger om kontaktforskud.
 
 En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et dokument "flyder" gennem systemet, og viser, hvem der skal udføre en opgave eller godkende et dokument. Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
 
@@ -42,13 +44,15 @@ En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et do
 
 Tabellen nedenfor viser de typer arbejdsgange, du kan oprette i **Udgift**.
 
-| **Type**                           | **Brug denne type til at**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Udgiftsrapport**                 | Oprette godkendelsesarbejdsgange for udgiftsrapporter.                       |      
-| **Automatisk bogføring af udgiftsrapport**    | Oprette arbejdsgange for automatisk bogføring for udgiftsrapporter.              |     
-| **Udgiftslinjeelement**              | Oprette godkendelsesarbejdsgange for linjevarer i udgiftsrapporter.         |     
-| **Automatisk bogføring af udgiftslinjeelement** | Oprette arbejdsgange for automatisk bogføring for linjevarer i udgiftsrapporter.|
-| **Rejserekvisition**             | Oprette godkendelsesarbejdsgange for rejserekvisitioner.                   |    
-| **Anmodning om kontantforskud**           | Oprette arbejdsgange for anmodninger om kontantforskud.                 |     
-| **Momsopkrævning**               | Oprette godkendelsesarbejdsgange for momsopkrævning. |       
+
+|              <strong>Type</strong>              |                   <strong>Brug denne type til at</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Udgiftsrapport</strong>         |            Oprette godkendelsesarbejdsgange for udgiftsrapporter.             |
+|  <strong>Automatisk bogføring af udgiftsrapport</strong>   |        Oprette arbejdsgange for automatisk bogføring for udgiftsrapporter.        |
+|       <strong>Udgiftslinjeelement</strong>        |     Oprette godkendelsesarbejdsgange for linjevarer i udgiftsrapporter.      |
+| <strong>Automatisk bogføring af udgiftslinjeelement</strong> | Oprette arbejdsgange for automatisk bogføring for linjevarer i udgiftsrapporter. |
+|       <strong>Rejserekvisition</strong>       |          Oprette godkendelsesarbejdsgange for rejserekvisitioner.           |
+|      <strong>Anmodning om kontantforskud</strong>      |         Oprette arbejdsgange for anmodninger om kontantforskud.          |
+|        <strong>Momsopkrævning</strong>        | Oprette godkendelsesarbejdsgange for momsopkrævning.  |
+
 

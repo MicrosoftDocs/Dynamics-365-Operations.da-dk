@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Oprette produktmodelkomponenter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Begrænsningsbaserede produktkonfigurationsmodeller bruger komponenter som byggeklodser for at oprette modelproduktstrukturen. Komponenterne skal oprettes, før en produktmodel kan bygges. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

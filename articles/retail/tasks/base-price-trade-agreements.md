@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispris- og samhandelsaftaler
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår oprettelse af kanalspecifikke salgsprissamhandelsaftaler. Proceduren bruger USRT-demodatafirmaet.
 

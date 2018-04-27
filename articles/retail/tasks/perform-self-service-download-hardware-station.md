@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Udføre selvbetjening for at downloade hardwarestation
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår download af en ny foruddefineret hardwarestation. Det demodatafirma, der bruges til denne procedure, er USRT. Du skal have oprettet en ny hardwarestationsprofil og hardwarestation, før du starter denne opgave.
 

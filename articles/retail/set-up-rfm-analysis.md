@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Konfigurere RFM-analyse
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne forklarer, hvordan du konfigurerer en RFM-analyse (Recency, Frequency, Monetary) af dine kunder.
 
@@ -60,25 +59,25 @@ Hvis organisationen bruger en samlet tal for resultatet, lægges de enkelte vurd
     - Hvis hver del af RFM-resultatet skal indeholde et lige antal debitorer, kan du markere afkrydsningsfeltet **Lige distribution**. 
     - Markér afkrydsningsfeltet **Tilføj scorer** for at samle de tre resultater. Dette ville f.eks. give en debitor et RFM-resultat på 13 i stedet for 535. 
     - Markér afkrydsningsfeltet **Gem historik** for at kræve, at systemet skal gemme de statistiske data for debitorer, så dataene kan bruges til at beregne RFM-resultatet.
-  
+
 5.  Benyt følgende fremgangsmåde i oversigtspanelet **Recency**: 
     - I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne recency-resultatet for debitorer. Hvis du f.eks. har 100 debitorer, betyder en opdeling af 5, at der er 20 debitorer for hvert resultat. De 20 kunder, der har foretaget de seneste køb, har et recency-resultat på 5. De næste 20 kunder har et recency-resultat på 4 osv. Hvis du har 50 debitorer, har 10 kunder et recency-resultat på 5, 10 har et recency-resultat på 4 osv. 
     - I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren recency i forhold til de andre parametre, når RFM-resultatet beregnes for en debitor. Det kunne f.eks. være, at du vil angive en større værdi for recency-resultatet end det pengemæssige resultat. 
     - I feltet **Multiplikator** skal du angive den værdi, som recency-resultatet skal ganges med. Hvis du ikke angiver en værdi, multipliceres resultatet ikke. 
     - I feltet **Periode** skal du vælge den tidsperiode, for hvilken recency-resultatet beregnes. F.eks. pr. uge eller pr. måned.
-   
+
 6.  Benyt følgende fremgangsmåde i oversigtspanelet **Frekvens**: 
     - I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne frekvensscore for debitorer. 
     - I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren frequency i forhold til de andre, når RFM-resultatet beregnes for en debitor. 
     - I feltet **Multiplikator** skal du angive den værdi, som frekvensscore skal ganges med. Hvis du ikke angiver en værdi, multipliceres resultatet ikke.
-   
+
 7.  Benyt følgende fremgangsmåde i oversigtspanelet **Monetær**: 
     - I feltet **Afdelinger** skal du angive antallet af afdelinger eller grupper, der skal bruges til at beregne pengescoren for debitorer. 
     - I feltet **Prioritet** skal du vælge, hvor stor vægt der skal gives for parameteren monetary i forhold til de andre, når RFM-resultatet beregnes for en debitor. 
     - I feltet **Multiplikator** skal du angive den værdi, som pengescoren skal ganges med. Hvis du ikke angiver en værdi, multipliceres resultatet ikke. 
     - I feltet **Brutto/netto** skal du angive, om debitors pengemæssige resultat skal beregnes ved hjælp af brutto- eller nettofakturabeløb. 
     - Hvis en debitors returbeløb skal trækkes fra debitorens samlede faktura, skal du markere afkrydsningsfeltet **Fratræk returneringer**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Se en kundes RFM-score
 Brug denne procedure til at få vist en kundes RFM-score. 
 

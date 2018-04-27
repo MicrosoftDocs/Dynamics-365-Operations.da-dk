@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Ordrer på hold
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Dette emne beskriver tilbageholdte ordrer ved hjælp af Dynamics 365 for Retail.
 

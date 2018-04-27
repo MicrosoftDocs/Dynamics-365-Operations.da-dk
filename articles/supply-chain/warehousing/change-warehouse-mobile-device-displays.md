@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Skærmindstillinger for lagerstedets mobilenhed
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer udseendet på en mobilenheds skærm og knytter tastaturgenvejstaster til kontrolelementer, f.eks. knapper. 
 

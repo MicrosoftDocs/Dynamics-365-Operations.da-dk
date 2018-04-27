@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Søge efter kreditorer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Lær at søge efter leverandører ud fra bestemte kriterier. Dette eksempel viser, hvordan du kan søge efter leverandører, der er godkendt til en bestemt indkøbskategori og har deres primære adresse i et bestemt land. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Denne opgave vil normalt udføres af en professionel indkøb.
 

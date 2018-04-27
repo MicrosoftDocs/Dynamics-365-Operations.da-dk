@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="one-time-vendors-in-the-public-sector"></a>Engangsleverandører i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om, hvordan du opretter en engangskreditor og -faktura, og hvordan du importerer og opretter flere engangskreditorer og -fakturaer. 
 

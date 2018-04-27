@@ -30,7 +30,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede at vedligeholde standardomkostninger for producerede varer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives trinnene til forberedelse af vedligeholdelse af omkostninger for producerede varer. Trinnene for producerede varer varierer en smule fra trinnene for købte varer.
 

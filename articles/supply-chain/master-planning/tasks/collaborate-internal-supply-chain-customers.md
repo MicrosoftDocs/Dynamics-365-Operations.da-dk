@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>Samarbejde med intern forsyningskædes kunder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du får vist alle forslag, der opfyldes af en intern kreditor. Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.
 

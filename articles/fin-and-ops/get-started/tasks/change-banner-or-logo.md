@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>Skifte banner eller logo
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

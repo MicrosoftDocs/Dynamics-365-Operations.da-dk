@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Cyklusoptælling
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurere en parallel gren i en arbejdsgang
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel gren.
 

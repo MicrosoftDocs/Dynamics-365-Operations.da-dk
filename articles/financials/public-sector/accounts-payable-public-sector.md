@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accounts-payable-in-the-public-sector"></a>Kreditorbetalinger i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 for Finance and Operations. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer. 
 
@@ -45,17 +44,17 @@ Før du begynder at justere indstillingerne og angive dine data, skal du udføre
 
 Når du har konfigureret forudsætningerne, kan det være nødvendigt at konfigurere følgende kreditorfunktioner:
 
--   [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md) – Du kan oprette koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces. For eksempel tillader du en ikke-planlagt ordre ved hjælp af et indkøbsordrenummer på tidspunktet for et køb i stedet for ved hjælp af et dokument, der er leveret, før varen er påkrævet. 
-> [!NOTE]
-> Dette gælder også for indkøb og forsyning.
+- [Indkøbsordrekoder i den offentlige sektor](purchase-order-codes-public-sector.md) – Du kan oprette koder og særlige meddelelser til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces. For eksempel tillader du en ikke-planlagt ordre ved hjælp af et indkøbsordrenummer på tidspunktet for et køb i stedet for ved hjælp af et dokument, der er leveret, før varen er påkrævet. 
+  > [!NOTE]
+  > Dette gælder også for indkøb og forsyning.
 
--   [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md) – Du kan bruge bogføringsdefinitioner til at oprette kladdelinjer for oprindelige posteringer, der opfylder udvalgte kriterier. Du kan f.eks. bruge bogføringsdefinitioner til at oprette flere afstemte finansposter baseret på attributter som f.eks. posteringstyper og konti. 
-> [!NOTE]
-> Dette gælder også for Finans, Budgettering og Debitor.
+- [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md) – Du kan bruge bogføringsdefinitioner til at oprette kladdelinjer for oprindelige posteringer, der opfylder udvalgte kriterier. Du kan f.eks. bruge bogføringsdefinitioner til at oprette flere afstemte finansposter baseret på attributter som f.eks. posteringstyper og konti. 
+  > [!NOTE]
+  > Dette gælder også for Finans, Budgettering og Debitor.
 
 
--   [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du i Microsoft Dynamics AX hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor.](plan-one-time-vendors-public-sector.md)
--   Oversigt over 1099-formular i den offentlige sektor – Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Offentlige organisationer bruger formular 1099-G og 1099-S.
+- [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md) – Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du i Microsoft Dynamics AX hurtigt oprette en eller flere fakturaer, samtidig med at du opretter en post for kreditoren. Du kan finde flere oplysninger under [Planlægning for engangsleverandører i den offentlige sektor.](plan-one-time-vendors-public-sector.md)
+- Oversigt over 1099-formular i den offentlige sektor – Hvis du handler med leverandører, der er omfattet af amerikansk 1099-skat, skal du spore det beløb, du betaler til hver leverandør, og rapportere disse oplysninger til de amerikanske skattemyndigheder ved udgangen af kalenderåret. Offentlige organisationer bruger formular 1099-G og 1099-S.
 
 > [!NOTE]
 > Dette gælder også for indkøb og forsyning.

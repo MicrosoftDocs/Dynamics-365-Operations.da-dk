@@ -1,5 +1,5 @@
 --- 
-title: Redigere model og tilknytning for at generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)
+title: Redigere model og tilknytning for at generere dokumenter med programdata
 description: "For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren \"ER Generere dokumenter med opdatering til programdata (Del 2 - Generere dokumenter)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a29e273e5ef377826c0002a9a0a956defef6aa77
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Redigere model og tilknytning for at generere dokumenter med opdatering af programdata til elektronisk rapportering (ER)
+# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Redigere model og tilknytning for at generere dokumenter med programdata
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren "ER Generere dokumenter med opdatering til programdata (Del 2: Generere dokumenter)". 
 

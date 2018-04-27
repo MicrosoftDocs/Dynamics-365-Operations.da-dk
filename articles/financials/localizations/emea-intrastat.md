@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c713f3a1cb5aa4758a72a7cc42c73c57b602219
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intrastat"></a>Intrastat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 
@@ -142,7 +141,7 @@ I følgende afsnit beskrives de indstillinger, der skal bruges til Intrastat-rap
 </tr>
 <tr class="even">
 <td>Transaktionskategorier</td>
-<td>Angiv arten af transaktionen i henhold til dit lands/områdes krav. For hver transaktionskode, du har angivet, skal du angive regler for beregning af fakturabeløb og statistiske beløb for overførselsordrer og salgs-/købsordrer.
+<td>Angiv transaktionstypen i henhold til dit lands/områdes krav. For hver transaktionskode, du har angivet, skal du angive regler for beregning af fakturabeløb og statistiske beløb for overførselsordrer og salgs-/købsordrer.
 <ul>
 <li>For overførselsordrer skal du angive en af følgende regler for beregning af fakturabeløb og statistiske beløb:
 <ul>
@@ -209,7 +208,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </ul></li>
 <li><strong>Overfør</strong> – Angiv kriterierne for at overføre transaktioner til Intrastat-kladden. Du kan angive, at transaktioner kun overføres, når varerne opfylder en eller flere af følgende kriterier:
 <ul>
-<li>Varerne er ikke serviceartikler.</li>
+<li>Varerne er ikke servicevarer.</li>
 <li>Varerne har en varekode.</li>
 <li>Varerne har en vægt.</li>
 <li>Varerne har supplerende enheder.</li>
@@ -228,7 +227,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tr>
 <tr class="even">
 <td>Kontaktoplysninger for agent</td>
-<td>Angiv agentens navn, adresse, momsundtagelsesnummer, telefonnummer og faxnummer.</td>
+<td>Angiv agentens navn, adresse, SE-nummer, telefonnummer og faxnummer.</td>
 </tr>
 <tr class="odd">
 <td>Egenskaber for land/område</td>
@@ -241,7 +240,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tbody>
 </table>
 
- 
+
 
 
 

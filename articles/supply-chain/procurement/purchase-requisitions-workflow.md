@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I arbejdsgangsprocessen flyttes indkøbsrekvisitionen gennem evalueringsprocessen fra den første status Kladde til statussen Godkendt. Når en indkøbsrekvisition sendes til gennemsyn, starter arbejdsgangsprocessen. Når en indkøbsrekvisition er godkendt, kan der oprettes en indkøbsordre for indkøbsrekvisitionslinjerne, som sendes til leverandøren til ordreopfyldning.
 

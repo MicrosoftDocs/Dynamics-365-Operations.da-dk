@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="attract-overview"></a>Attract-oversigt
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Attract indeholder funktioner til at administrere processen til ansættelse af nye talenter. Kandidaterne kan tilføjes til åbne job og avancere fra fase til fase, indtil et tilbud er udvidet, eller ansøgningen afvises. I de enkelte faser bevæger kandidaterne sig gennem aktiviteter som screeningsopkald, vurderinger eller planlægningen af samtaler. Når de ansøger, får kandidaterne en mail, der inviterer dem til at logge på Attract, hvor de kan følge status for jobbet, deres ansøgning og reagere på de opgaver, der tildeles til dem.
 

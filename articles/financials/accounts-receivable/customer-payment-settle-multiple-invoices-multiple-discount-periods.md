@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne viser, hvordan flere fakturaer betales, når hver enkelt faktura er berettiget til en kasserabat. Scenarierne i dennes artikel fokuserer på, hvordan de kasserabatter, der anvendes, varierer, afhængigt af hvornår betalingen foretages.
 

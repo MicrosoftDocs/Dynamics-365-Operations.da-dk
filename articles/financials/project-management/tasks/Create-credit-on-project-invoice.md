@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Oprette en kreditnota på projektfakturaer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Gå til Projektstyring og regnskab > Projekter > Alle projekter. 
 2. Find og vælg den ønskede post på listen. 

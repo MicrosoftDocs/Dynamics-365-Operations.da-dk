@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-fund-in-the-public-sector"></a>Konfigurere en finansieringskilde i den offentlige sektor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Middeltyper skal være oprettet, før du kan konfigurere midler. Hvert enkelt middel skal have et navn og et entydigt nummer og skal være tildelt en middeltype og middelklasse. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

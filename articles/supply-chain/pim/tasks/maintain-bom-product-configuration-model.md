@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a>Vedligeholde styklisten for en produktkonfigurationsmodel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kørsel af denne procedure kræver en eksisterende model til produktkonfiguration. Højttaler af topkvalitet-modellen i demofirmaet USMF bruges til at oprette denne procedure.
 

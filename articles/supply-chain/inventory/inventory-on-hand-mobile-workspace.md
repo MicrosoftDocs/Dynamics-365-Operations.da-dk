@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-on-hand-mobile-workspace"></a>Disponibelt lager i arbejdsområde til mobilenheder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Disponibelt lager** på mobilenheder. I dette arbejdsområde kan du få indblik i reserveret og tilgængelig lagerplads, når som helst og hvor som helst på mobilenheden.
 

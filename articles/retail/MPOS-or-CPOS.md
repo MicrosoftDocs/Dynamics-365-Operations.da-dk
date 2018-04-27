@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Vælge mellem Modern POS og Cloud POS
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Emnet giver implementeringskonsulenter yderligere baggrund, tip og vejledning til de faktorer, som de skal overveje, når de installerer Microsoft Dynamics 365 for Retail. Ved at gennemse og følge denne vejledning som en del af installationsprocessen kan implementeringskonsulenter undgå problemer, der kan påvirke brugertilfredsheden eller ydeevnen.
 
@@ -92,8 +92,8 @@ Når du planlægger POS-implementeringen i dine detailforretninger, skal du over
 
     Medmindre forbindelsen for en given enhed er meget pålidelig og fleksibel, eller medmindre en bestemt mængde nedetid er acceptabel for detailhandleren, anbefaler vi en af følgende muligheder:
 
-    - Brug MPOS i Windows, og aktivér offlinetilstand.
-    - Installer på en lokal RSSU.
+  - Brug MPOS i Windows, og aktivér offlinetilstand.
+  - Installer på en lokal RSSU.
 
     Disse to indstillinger udelukker ikke gensidigt hinanden. Den mest pålidelige topologi detailhandlere kan implementere en lokal RSSU for at mindske afhængigheden af forbindelse til internettet eller Azure tilgængelighed og de kan også installere POS-kasseapparater, hvor offline-tilstand er aktiveret, hvis der er et problem med den lokale server eller et netværk.
 

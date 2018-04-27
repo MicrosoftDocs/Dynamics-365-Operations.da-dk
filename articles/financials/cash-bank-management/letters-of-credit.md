@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Remburser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Remburser er bankdokumenter, der ofte bruges ved køb og salg af varer på tværs af internationale grænser. 
 

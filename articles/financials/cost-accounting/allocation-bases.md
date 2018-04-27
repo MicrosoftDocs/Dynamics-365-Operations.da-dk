@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Fordelingsgrundlag 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Et fordelingsgrundlag er det grundlag, som omkostningsregnskabet fordeler faste omkostninger på. Et fordelingsgrundlag kan være et antal, som f.eks. maskintimer, der bruges, kilowatttimer (kWh), der forbruges eller areal, der er optaget. Fordelingsgrundlag bruges oftest til at tildele faste omkostninger til lager, der er produceret. F.eks. fordeler en IT-afdeling sine udgifter i overensstemmelse med antallet af computere, som hver afdeling bruger.
 
@@ -424,9 +424,11 @@ Her kan du se nærmere på formlen for CC003 (LO):
 
 Her er et eksempel på en regel til fordeling af omkostninger, hvis fordelingsbasis for formlen for Elektricitet, der er fastsat, er tildelt som fordelingsgrundlag i den.
 
-| Omkostningsobjekt |  Betegnelse  | Størrelsesorden | Fordelingsfaktor                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Personale | 1,837.50  | (1.837,50 ÷ 18.162,50) × beløb  |
-| CC002       | FI | 3,075.00  | (3.075,00 ÷ 18.162,50) × beløb  |
-| CC003       | LO | 13,250.00 | (13.250,00 ÷ 18.162,50) × beløb |
+
+| Omkostningsobjekt | Betegnelse | Størrelsesorden |        Fordelingsfaktor         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Personale      | 1,837.50  | (1.837,50 ÷ 18.162,50) × beløb  |
+|    CC002    |     FI      | 3,075.00  | (3.075,00 ÷ 18.162,50) × beløb  |
+|    CC003    |     LO      | 13,250.00 | (13.250,00 ÷ 18.162,50) × beløb |
+
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/14/2018
 ---
 # <a name="benefit-eligibility-process"></a>Proces for frynsegodeberettigelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan frynsegodeberettigelsesprocessen fungerer. Når processen er fuldført, kan du se resultaterne. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

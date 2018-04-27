@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet. Når du frigiver en stykliste- eller formellinje til lagerstedet, afgør systemet først, om materialet allerede findes på indlagringslokationen for produktionen i produktionsanlægget, hvor materialet skal forbruges i produktionsprocessen.
 
@@ -44,7 +44,7 @@ Hvilken metode der bruges til at frigive stykliste- og formellinjer styres af pa
 - **Frigiv stykliste- og formellinjer via et batchjob eller som en manuel indgriben** – Med denne metode kan stykliste- og formellinjer kun frigives via batchjobbet **Automatisk frigivelse af stykliste- og formellinjer** eller via manuel indgriben. Hvis du vil frigive stykliste- og formellinjer manuelt, skal du vælge **Frigiv til lagersted** i handlingsruden Produktionsordre på listesiden eller detaljesiden for produktionsordren.
 
 Du kan se en hurtig demonstration af, hvordan du frigiver stykliste- og formellinjer til produktion ved hjælp af et batchjob, i denne korte YouTube-video:
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigive stykliste- og formellinjer ved hjælp af et batchjob
 
@@ -86,7 +86,7 @@ I følgende illustration vises en produktionsordre, der har to operationer, 10 o
 ![Eksempel på frigivelse af materiale pr. operationsnummer](media/two-operations.PNG)
 
 Du kan se en hurtig demonstration af, hvordan du kan frigive materiale i forhold til mængden af færdigvarer, i denne korte YouTube-video:
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale i forhold til antallet af færdigvarer
 

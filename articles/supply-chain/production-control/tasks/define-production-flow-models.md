@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Definere produktionsflowmodeller
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Produktionsflowmodeller beskriver, hvordan kapaciteten af lean manufacturing-arbejdsceller beregnes og vedligeholdes. Definitionen af en produktionsflowmodel er derfor en forudsætning for definitionen af arbejdsceller. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

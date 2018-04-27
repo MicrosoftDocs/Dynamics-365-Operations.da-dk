@@ -18,17 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: fe24eb79cbda0aea09ab7de5e4c02189ef3c8ff0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om rapportering til EU-listesystemet.
 
@@ -123,7 +122,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 <li>Fanen <strong>Lande/områdeparametre</strong>: Identificer EU-medlemsstater. Opret en post på siden for hver EU-medlemsstat, og angiv følgende oplysninger:
 <ul>
 <li><strong>Land/område</strong> – Vælg et land/område.</li>
-<li><strong>Lande-/regionstype</strong> – Hvis værdien <strong>Land/område</strong> er det land/område, firmaet er registreret i, skal du vælge <strong>Indland</strong>. Hvis værdien <strong>Land/område</strong> er en anden EU-medlemsstat end det land/område, firmaet er registreret i, skal du vælge <strong>EU</strong>. Hvis værdien <strong>Land/område</strong> er ikke en EU-medlemsstat, skal du vælge <strong>Tredjeland/-region</strong>.</li>
+<li><strong>Lande-/regionstype</strong> – Hvis værdien <strong>Land/område</strong> er det land/område, firmaet er registreret i, skal du vælge <strong>Indland</strong>. Hvis værdien <strong>Land/område</strong> er en anden EU-medlemsstat end det land/område, firmaet er registreret i, skal du vælge <strong>EU</strong>. Hvis værdien <strong>Land/område</strong> ikke er en EU-medlemsstat, skal du vælge <strong>Tredjeland/-område</strong>.</li>
 </ul></li>
 <li>Fanen <strong>Nummerserier</strong>: På linjen, hvor værdien <strong>Reference</strong> er <strong>EU-listesystemet</strong>, skal du vælge en nummerseriekode.</li>
 </ul></td>

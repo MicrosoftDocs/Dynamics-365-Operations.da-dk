@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Startside for Kontant- og bankstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan bruge Kontant- og bankstyring til at vedligeholde den juridiske enheds bankkonti og de økonomiske instrumenter, der er knyttet til disse bankkonti. 
 

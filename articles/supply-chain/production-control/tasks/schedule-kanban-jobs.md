@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-kanban-jobs"></a>Planlægge kanban-job
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fokuserer på planlægning af kanban-procesjob for en bestemt arbejdscelle. Proceduren "Klargør et kanban-procesjob, når materialerne ikke er tilgængelige" er en forudsætning for oprettelsen af denne procedure. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne opgave er beregnet til tilsynsførende og produktionsplanlæggere, der arbejder med kanbans.
 

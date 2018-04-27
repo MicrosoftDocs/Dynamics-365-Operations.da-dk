@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Oprette finanskonteringsgrupper til moms
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgrupperne. Finanskonteringsgrupperne er tilknyttet de enkelte momskoder. Du kan oprette individuelle finanskonteringsgrupper til hver enkelt momskode, bruge én finanskonteringsgruppe til alle momskoder eller knytte flere finanskonteringsgrupper til momskoderne. Denne registrering anvender demofirmaet DEMF. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Konfigurere forudsætninger for administration
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at aktivere processer for styring af uoverensstemmelser. En uoverensstemmelse er en procedure eller vare, der har et kvalitetsproblem, hvor de beskrivende oplysninger omfatter årsagen til og typen af problemet. Proceduren bruger USMF-demodatafirmaet. Denne procedure udføres typisk af en kvalitetschef.
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk værdi og afmærkning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 FIFO (First in, First out) er en lagermodel, hvor de først anskaffede tilgange afgår først. Økonomisk opdaterede afgange fra lageret udlignes mod de første økonomisk opdaterede tilgange til lageret på baggrund af den økonomiske dato for lagertransaktionen. 
 
@@ -60,16 +59,16 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk op
 
 **Forklaring til diagram**
 
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
--   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
--   Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
+- En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
+- Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>FIFO med indstillingen Medtag fysisk værdi
 Hvis afkrydsningsfeltet **Medtag fysisk værdi** er markeret for en vare på siden **Varemodelgruppe**, bruger systemet både fysiske og økonomiske tilgangsposteringer til beregning af den løbende gennemsnitskostpris. Hvis det er relevant, udfører systemet også justeringer i den fysisk opdaterede afgangstransaktion. Når afkrydsningsfeltet **Medtag fysisk værdi** ikke er markeret, vil lagerlukning med lagermodellen FIFO kun gennemføre udligninger af økonomisk opdaterede posteringer. I følgende illustration vises disse posteringer:
@@ -90,16 +89,16 @@ Postering 5b udlignes mod tilgangspostering 1b. Der foretages en regulering på 
 
 **Forklaring til diagram**
 
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
--   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
--   Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
+- En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
+- Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
 ## <a name="fifo-with-marking"></a>FIFO med afmærkning
 Afmærkning er en proces, som giver dig mulighed for at tilknytte – eller afmærke – en afgangspostering til en tilgangspostering. Afmærkning kan ske enten før eller efter, at en postering er bogført. Du kan bruge afmærkning, når du vil være sikker på den nøjagtige kostpris for lageret, når posteringen bogføres eller når lagerlukningen udføres. Antag f.eks., at kundeserviceafdelingen har modtaget en hasteordre fra en vigtig kunde. Da denne ordre er en hasteordre, skal du betale mere for denne vare for at kunne imødekomme kundens efterspørgsel. Du skal være sikker på, at kostprisen på denne lagervare afspejles i dækningsbidraget eller i vareforbruget for denne salgsordrefaktura. Når indkøbsordren bogføres, modtages lagervarerne til et kostpris på kr. 120,00. Hvis dette salgsordredokument afmærkes til indkøbsordren, før følgesedlen eller fakturaen bogføres, vil vareforbruget være kr. 120,00 og ikke den aktuelle løbende gennemsnitskostpris for varen. Hvis følgesedlen eller fakturaen for salgsordren bogføres, før afmærkningen finder sted, bogføres vareforbruget til den løbende gennemsnitskostpris. Før lagerlukningen udføres, kan disse to transaktioner afmærkes til hinanden. Når en tilgangstransaktion matcher en afgangstransaktion, vil den værdiansættelsesmetode, der er defineret i varens modelgruppe, blive tilsidesat, og systemet udligner disse transaktioner mod hinanden. Du kan afmærke en afgangspostering til en tilgang, før posteringen bogføres. Du kan gøre dette fra en salgsordrelinje på siden **Oplysninger om salgsordre**. Du kan få vist de åbne tilgangsposteringer på siden **Afmærkning**. Du kan også afmærke en afgangspostering til en tilgang, efter posteringen bogføres. Du kan matche eller afmærke en afgangspostering for en åben tilgangspostering for en lagerført vare fra en bogført lagerreguleringskladde. I følgende illustration vises disse posteringer:
@@ -120,16 +119,16 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 
 **Forklaring til diagram**
 
--   Lagertransaktioner vises som lodrette pile.
--   Lagertilgange vises som lodrette pile over tidslinjen.
--   Lagerafgange vises som lodrette pile under tidslinjen.
--   Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
--   En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
--   En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
--   Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
--   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
--   Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
--   Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
+- Lagertransaktioner vises som lodrette pile.
+- Lagertilgange vises som lodrette pile over tidslinjen.
+- Lagerafgange vises som lodrette pile under tidslinjen.
+- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
+- En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
+- Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
+- Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
+- Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
+- Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
 
 
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Der er fire produktdimensioner – farve, konfiguration, størrelse og type. Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere. Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.
 
@@ -51,6 +50,7 @@ Produktets dimensionsværdier, f.eks størrelse, farve og typografi, kan oprette
 -   Klik på **Administration af produktoplysninger** &gt; **Frigivne produkter**. Vælg en produktmaster. Klik på **Produkt** i **handlingsruden**. Klik på **Produktdimensioner** i gruppen **Produktmaster**.
 
 Antallet af varianter, der kan oprettes for en vare, er begrænset af antallet af mulige kombinationer af produktdimensioner.
+
 | **Tip!**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Når du bruger et produkt på for eksempel en ordrelinje, skal du vælge produktdimensioner for at identificere den produktvariant, som du vil arbejde med. |

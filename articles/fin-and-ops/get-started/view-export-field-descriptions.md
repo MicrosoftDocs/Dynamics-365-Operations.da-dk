@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Få vist og eksportere feltbeskrivelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives, hvordan du får vist feltbeskrivelser, og hvordan du bruger siden Felt beskrivelser til at eksportere beskrivelser.
 
@@ -77,7 +76,7 @@ Der er flere måder at søge efter en side i feltet **Vælg en side**. Ofte skal
     -   Hvis der er mere end ét nøjagtigt match, vises der ingen beskrivelser. Du skal åbne rullelisten og vælge den ønskede side.
     -   Hvis det navn, du har skrevet, er en del af navnet på en anden side, kan du se beskrivelserne for din side. Men hvis du åbner rullelisten, ser du flere sider, der indeholder navnet.
 
-Der vises f.eks. ingen beskrivelser, når du skriver **Optælling** i feltet ****Vælg en side****. Du åbner rullelisten og ser, at der både er to sider, der har navnet **Optælling**, og flere andre sider med ordet "Optælling" i navnet. Hvis du vælger den side, der har AOT-navnet **InventJournalCount**, vises feltbeskrivelserne til denne side. Hvis du åbner rullelisten igen, kan du nu se, at listen indeholder alle de sider, der har "InventJournalCount" nu som en del af deres AOT-navn.
+Der vises f.eks. ingen beskrivelser, når du skriver <strong>Optælling</strong> i feltet *<strong><em>Vælg en side</em></strong>*. Du åbner rullelisten og ser, at der både er to sider, der har navnet <strong>Optælling</strong>, og flere andre sider med ordet "Optælling" i navnet. Hvis du vælger den side, der har AOT-navnet <strong>InventJournalCount</strong>, vises feltbeskrivelserne til denne side. Hvis du åbner rullelisten igen, kan du nu se, at listen indeholder alle de sider, der har "InventJournalCount" nu som en del af deres AOT-navn.
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Dette afsnit indeholder oplysninger, der kan hjælpe dig med at foretage fejlfinding af problemer, der evt. kan opstå, når du bruger feltbeskrivelser.

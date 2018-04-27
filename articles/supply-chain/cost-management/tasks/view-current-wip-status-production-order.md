@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>Vise aktuelle IGVF-status på en produktionsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan få vist IGVA-opgørelse på en produktionsordre. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er beregnet til omkostningscontrolleren.
 

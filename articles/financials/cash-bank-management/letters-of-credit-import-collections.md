@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Remburser og importinkassoer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser.
 

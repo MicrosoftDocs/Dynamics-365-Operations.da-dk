@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="titres-de-recette-in-the-public-sector-in-france"></a>Titres de recette i den offentlige sektor i Frankrig
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Titre de recette bruges af direktøren for at underrette bogholderen om, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed, og til at godkende, at bogholderen indbetaler beløbet. Direktøren eller bogholderen kan delegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver hos direktøren eller bogholderen. Titre opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.
 
@@ -53,21 +52,26 @@ Fra siden **Vedligehold titres de recette** eller fra fanen **Titre de recette**
 ## <a name="using-the-database-inquiry-page"></a>Brug af databaseforespørgselssiden
 Du kan åbne databaseforespørgselssiden på siden **Vedligehold titres de recette** ved at angive, hvilke datoer du vil vælge fakturaer fra. Klik derefter på **Hent linjer**. Dette åbner databaseforespørgselssiden, hvor du kan angive kriterierne for de fakturalinjer, du vil hente. Når du lukker formularen, hentes alle fakturalinjer, der opfylder de kriterier, der er valgt, til gitteret. Linjer fra fakturaer, der er ved at blive redigeret, kan ikke hentes. **Tip**! Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
--   Fakturalinjer, der ikke er gennemset af direktøren.
-    | Tabellen | Afledt tabel | Felt                         | Afgrænsning       |
-    |-------|---------------|-------------------------------|----------------|
-    | Titre | Titre         | Status for direktørgodkendelse | "Ikke gennemset" |
+- Fakturalinjer, der ikke er gennemset af direktøren.
 
--   Fakturalinjer fra titres, der er godkendt til opkrævning af direktøren, men endnu ikke godkendt af bogholderen.
-    | Tabellen | Afledt tabel | Felt                         | Afgrænsning       |
-    |-------|---------------|-------------------------------|----------------|
-    | Titre | Titre         | Status for direktørgodkendelse | "Godkendt"   |
-    | Titre | Titre         | Bogholders acceptstatus  | "Ikke gennemset" |
+  | Tabellen | Afledt tabel |             Felt             |    Afgrænsning    |
+  |-------|---------------|-------------------------------|----------------|
+  | Titre |     Titre     | Status for direktørgodkendelse | "Ikke gennemset" |
 
--   Fakturalinjer fra titres, der er afvist af bogholderen.
-    | Tabellen | Afledt tabel | Felt                        | Afgrænsning   |
-    |-------|---------------|------------------------------|------------|
-    | Titre | Titre         | Bogholders acceptstatus | "Afvist" |
+
+- Fakturalinjer fra titres, der er godkendt til opkrævning af direktøren, men endnu ikke godkendt af bogholderen.
+
+  | Tabellen | Afledt tabel |             Felt             |    Afgrænsning    |
+  |-------|---------------|-------------------------------|----------------|
+  | Titre |     Titre     | Status for direktørgodkendelse |  "Godkendt"  |
+  | Titre |     Titre     | Bogholders acceptstatus  | "Ikke gennemset" |
+
+
+- Fakturalinjer fra titres, der er afvist af bogholderen.
+
+  | Tabellen | Afledt tabel | Felt                        | Afgrænsning   |
+  |-------|---------------|------------------------------|------------|
+  | Titre | Titre         | Bogholders acceptstatus | "Afvist" |
 
 
 

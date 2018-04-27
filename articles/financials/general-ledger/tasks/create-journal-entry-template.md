@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Oprette en kladdepost ved hjælp af en skabelon
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladdebilag. Denne procedure bruger demofirmaet USMF.
 

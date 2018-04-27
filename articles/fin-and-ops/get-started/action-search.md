@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Handlingssøgning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
 

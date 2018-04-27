@@ -29,8 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Styring af skift og kasseapparater
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 I denne artikel beskrives, hvordan du konfigurerer og bruger de to typer detail-POS-skift – delt og separat. Delte skift kan bruges af flere brugere på flere steder, hvorimod separate skift kun kan bruges af én arbejder ad gangen.
 

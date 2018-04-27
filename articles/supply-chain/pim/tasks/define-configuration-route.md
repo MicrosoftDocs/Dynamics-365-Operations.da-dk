@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Definere konfigurationsruter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde drejer sig om at definere en variantrute, der bestemmer den rækkefølge, hvori variantgrupper skal præsenteres. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Dette er den sjette procedure ud af otte, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.
 

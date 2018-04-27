@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Oversigt over indkøb og forsyning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over den funktionalitet, der er tilgængelig i modulet Indkøb og forsyning.
 
@@ -39,7 +38,7 @@ Indkøb og forsyning dækker alle trin fra at identificere behov for produkter o
 Behovet for produkter eller tjenesteydelser kan opstå ud fra *rekvisitioner*, for eksempel, når en medarbejder rekvirerer et produkt. *Produktkataloger* kan være sat op til at vejlede i valget af tilgængelige produkter, der kan vælges mellem, eller anmodninger kan foretages for produkter, der ikke er endnu gjort tilgængelige i et katalog, så indkøbsafdelingen får mulighed for at overveje, hvordan produktet kan leveres.  
 
 *Forbrugsgrænser* kan bruges til at begrænse rekvisitionsforbruget, og *indkøbsarbejdsgangen* tilføjer mulighed for at kræve godkendelse, før bestilling sker. Det er også muligt at angive fordeling af budgetmidler, hvis det er nødvendigt.  
-  
+
 Indkøbsafdelingen identificerer leverandører til påkrævede produkter og tjenester, og dette kan omfatte, at der sendes en *tilbudsanmodning* til flere potentielle leverandører. Det er muligt at dele specifikationerne for det produkt, der anmodes om, og potentielle leverandører kan se disse for at finde ud af, om de kan levere et produkt, der overholder dem. Kreditorer returnerer deres bud, som derefter gennemgås af indkøbsafdelingen, før de vælger den leverandør, de vil købe fra.  
 
 Indkøbsordrer omfatter en mulighed for at sende en *indkøbsforespørgsel* til leverandøren som et alternativ til en mere omfattende tilbudsanmodningsproces. Indkøbsforespørgslen kan bruges til at oprette betingelser som f.eks. priser, rabatter og leveringsdato for ordren. Hvis kreditorer er konfigureret til at bruge **Kreditor**-portalen, deaktiveres funktion til indkøbsforespørgsel. I stedet deles ordren på **kreditorportalenleverandør**, og når der er sendt en *bekræftelsesanmodning*, kan kreditoren sende ordren direkte.  

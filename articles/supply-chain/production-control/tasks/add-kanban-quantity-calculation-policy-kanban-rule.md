@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Føje en beregningspolitik for kanban-mængder til en kanban-regel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kanban-mængde og føje den til en kanban-regel til optimering af kanban-størrelse og mængde. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til værdistrømlederen. Denne procedure er en forudsætning for oprettelse af proceduren Beregn kanban-mængdeforslag. 
 

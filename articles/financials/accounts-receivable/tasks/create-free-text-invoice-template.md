@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>Oprette en skabelon til en fritekstfaktura
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne registrering anvender demofirmaet USMF. Registreringen er beregnet til den bruger, der er ansvarlig for håndtering og behandling af debitorfakturaer.
 

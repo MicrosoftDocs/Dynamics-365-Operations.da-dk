@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Budgetplanlægningsoversigt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og konfigurere budgetplanlægningsprocesser.
 
@@ -116,18 +115,18 @@ I budgetplanlægning kan du allokere beløb eller mængder på budgetplanlinjer 
 
 Fordelingsplaner fordeler automatisk budgetplanlinjer under behandling af arbejdsgangen. Du kan udføre fordelinger ved hjælp en af følgende fordelingsmetoder på listen **Fordelingsmetode**:
 
--   **Fordel hen over perioder** – Du bruger en periodefordelingsnøgle til at fordele budgetplanlinjer fra kildescenariets budgetplan hen over perioder i destinationsscenariet. **Bemærk!** Før du kan fordele på tværs af perioder, skal du oprette periodefordelingsnøgler på siden ****Periodefordelingskategorier****.
--   **Fordel på dimensioner** – Budgetplanlinjerne fordeles fra kildescenariet for budgetplanen på tværs af de økonomiske dimensioner i destinationsscenariet. **Bemærk!** Før du kan fordele til dimensioner, skal du konfigurere budgetfordelingsbetingelser på siden ****Budgetfordelingsbetingelser****.
--   **Aggreger** – Budgetplanlinjer aggregeres fra kildescenariets budgetplan i de tilknyttede budgetplaner til destinationsscenariet i den overordnede budgetplan.
--   **Fordel** – Budgetplanlinjer distribueres fra kildescenariets budgetplan i den overordnede budgetplan for destinationsscenariet i de tilknyttede budgetplaner.
--   **Brug finansfordelingsregler** – Budgetplanlinjerne fordeles fra kildescenariets budgetplanlæg til destinationsscenariet på basis af den valgte finansfordelingsregel.
--   **Kopier fra budgetplanen** – du kan vælge en anden budgetplan, der skal bruges som kilde til fordelingen.
+- <strong>Fordel hen over perioder</strong> – Du bruger en periodefordelingsnøgle til at fordele budgetplanlinjer fra kildescenariets budgetplan hen over perioder i destinationsscenariet. <strong>Bemærk!</strong> Før du kan fordele på tværs af perioder, skal du oprette periodefordelingsnøgler på siden *<strong><em>Periodefordelingskategorier</em></strong>*.
+- <strong>Fordel på dimensioner</strong> – Budgetplanlinjerne fordeles fra kildescenariet for budgetplanen på tværs af de økonomiske dimensioner i destinationsscenariet. <strong>Bemærk!</strong> Før du kan fordele til dimensioner, skal du konfigurere budgetfordelingsbetingelser på siden *<strong><em>Budgetfordelingsbetingelser</em></strong>*.
+- **Aggreger** – Budgetplanlinjer aggregeres fra kildescenariets budgetplan i de tilknyttede budgetplaner til destinationsscenariet i den overordnede budgetplan.
+- **Fordel** – Budgetplanlinjer distribueres fra kildescenariets budgetplan i den overordnede budgetplan for destinationsscenariet i de tilknyttede budgetplaner.
+- **Brug finansfordelingsregler** – Budgetplanlinjerne fordeles fra kildescenariets budgetplanlæg til destinationsscenariet på basis af den valgte finansfordelingsregel.
+- **Kopier fra budgetplanen** – du kan vælge en anden budgetplan, der skal bruges som kilde til fordelingen.
 
 ### <a name="stage-allocations"></a>Trinfordelinger
 
 Stadiefordelinger bruges til automatisk at fordele budgetplanlinjer under behandling af arbejdsgangen. Når der bruges stadiefordelinger, kan budgetplanlinjer oprettes og ændres i destinationsscenariet uden indgriben fra klargøreren af budgetplanen eller revieweren.
 
-Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet i budgetplanlægningen til fordelingstidsplanen. Arbejdsgangen i budgetplanlægningen skal være tilknyttet en arbejdsgang i Budgettering, der bruger ****Trinfordeling for budgetplanlægning**** automatiseret arbejdsgangsopgave. Når arbejdsgangen når det angivne stadie, sker fordelingen automatisk. Denne automatiserede opgave kan bruges til at oprette budgetplanlinjer i et nyt scenario. 
+Når du konfigurerer en stadietildeling, skal du knytte arbejdsgangen og stadiet i budgetplanlægningen til fordelingstidsplanen. Arbejdsgangen i budgetplanlægningen skal være tilknyttet en arbejdsgang i Budgettering, der bruger *<strong><em>Trinfordeling for budgetplanlægning</em></strong>* som automatiseret arbejdsgangsopgave. Når arbejdsgangen når det angivne stadie, sker fordelingen automatisk. Denne automatiserede opgave kan bruges til at oprette budgetplanlinjer i et nyt scenario. 
 
 I eksempelskemaet, der vises tidligere i denne artikel, foretages en fordeling for at overføre beløb fra en budgetplan og scenarier i hovedkvarterets oprindelige stadie til en anden budgetplan og scenarier i salgsafdelingens estimatstadie. Følgende illustration viser det relevante afsnit i eksempelskemaet.
 

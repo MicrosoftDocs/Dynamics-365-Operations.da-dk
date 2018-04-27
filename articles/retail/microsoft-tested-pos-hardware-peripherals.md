@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>Eksterne POS-hardwareenheder
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Retail Modern POS og Cloud POS kan udnytte en lang række POS-hardwareenheder med flere grænseflader og installationsindstillinger for at få en detailhandlers forskellige forretningsscenarier. 
 

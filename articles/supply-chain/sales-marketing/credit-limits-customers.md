@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Kreditmaksimum for debitorer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ved at angive et kreditmaksimum kan du angive det maksimale kreditbeløb, der kan gives til dine kunder. Hvis der er angivet et kreditmaksimum, kontrolleres det automatisk, når en bruger forsøger at opdatere et dokument. Hvis kreditmaksimum overskrides, vises en meddelelse til brugeren. Denne artikel indeholder en oversigt over, hvordan kreditmaksimum fungerer, og det indeholder svar på følgende spørgsmål:
 

@@ -27,17 +27,16 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kør Værktøj til testdataoverførsel (beta) til Dynamics AX (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Formålet med Hurtig import/eksport er at give dig mulighed for import og eksport i færre trin.
 
 Vi har tilføjet funktionen Hurtig import/eksport for at lade brugerne importere eller eksportere simple job, der skal udføres hurtigt. Ideelt set bruges denne funktion i scenarier, hvor en fil automatisk knyttes til systemet, og hvor brugeren ikke behøver at gå gennem avancerede tilknytning eller oprette gentagne import- eller eksportjob.
 
--   Denne funktion understøtter arbejde med både standardenheder og brugerdefinerede enheder.
--   Du kan importere fra filer, og hvis du bruger en ODBC-datakilde, kan du vælge en forespørgsel, der kan bruges til at definere importen.
--   Du skal tidligere have defineret kildedataformater for enten AX eller Fil og vide, hvor de er placeret.
--   Du behøver ikke at oprette en behandlingsgruppe for at bruge Hurtig import/eksport. Der oprettes automatisk en af systemet under udførelse af import- eller eksportjobbet. Du kan også vælge at bevare historikken for de data, der importeres af Hurtig import/eksport.
+- Denne funktion understøtter arbejde med både standardenheder og brugerdefinerede enheder.
+- Du kan importere fra filer, og hvis du bruger en ODBC-datakilde, kan du vælge en forespørgsel, der kan bruges til at definere importen.
+- Du skal tidligere have defineret kildedataformater for enten AX eller Fil og vide, hvor de er placeret.
+- Du behøver ikke at oprette en behandlingsgruppe for at bruge Hurtig import/eksport. Der oprettes automatisk en af systemet under udførelse af import- eller eksportjobbet. Du kan også vælge at bevare historikken for de data, der importeres af Hurtig import/eksport.
 
   Bemærk, at Hurtig import/eksport antager, at du er fortrolig med DIXF-begreberne.
 

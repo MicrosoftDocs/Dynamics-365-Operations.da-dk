@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Ændre datoen for sessionen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den aktuelle dato bruges som standard ved angivelse og bogføring af kladdeposteringer eller kildedokumenter. Du kan ændre den dato, der bruges i den aktuelle session. Du kan f.eks. bruge denne funktion til at baguddatere kladdeposteringer og kildedokumenter.
 

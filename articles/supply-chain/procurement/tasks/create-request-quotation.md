@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Oprette en tilbudsanmodning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser dig, hvordan du skal oprette en tilbudsanmodning. Dette vil normalt ske via en indkøbsagent. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data. Du skal have oprettet anmodningstyper, før du begynder. Når du har fuldført denne opgave, og du har oprettet og sendt en tilbudsanmodning, kan du derefter angive svarene pr. kreditor, sammenligne dem og tildele kontrakter.
 

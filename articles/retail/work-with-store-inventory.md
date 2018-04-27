@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-store-inventory"></a>Administer butikslager
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikel beskriver de typer af dokumenter, du kan bruge til at administrere lager.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mandats-de-paiement-in-the-public-sector-in-france"></a>Mandats de paiement i den offentlige sektor i Frankrig
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mandat de paiement bruges af direktøren for at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet. Mandatet opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.
 
@@ -53,21 +52,26 @@ Fra siden **Vedligehold mandats de paiement** eller fra fanen **Mandat de paieme
 ## <a name="using-the-database-inquiry-page"></a>Brug af databaseforespørgselssiden
 For at åbne databaseforespørgselssiden skal du på siden **Vedligehold mandats de paiement** angive, om du vil arbejde med ventende eller bogførte fakturaer og hvilke datoer, du vil vælge fakturaer fra. Klik derefter på **Hent linjer**. Dette åbner siden **Database****forespørgsel**, hvor du kan angive kriterierne for de fakturalinjer, du vil hente. Når du lukker formularen, hentes alle fakturalinjer, der opfylder de kriterier, der er valgt, til gitteret. Linjer fra fakturaer, der er ved at blive redigeret, kan ikke hentes. **Tip**! Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
--   Fakturalinjer, der ikke er gennemset af direktøren.
-    | Tabellen  | Afledt tabel | Felt                         | Afgrænsning       |
-    |--------|---------------|-------------------------------|----------------|
-    | Mandat | Mandat        | Status for direktørgodkendelse | "Ikke gennemset" |
+- Fakturalinjer, der ikke er gennemset af direktøren.
 
--   Fakturalinjer fra mandats, der er godkendt til betaling af direktøren, men endnu ikke godkendt af bogholderen.
-    | Tabellen  | Afledt tabel | Felt                         | Afgrænsning       |
-    |--------|---------------|-------------------------------|----------------|
-    | Mandat | Mandat        | Status for direktørgodkendelse | "Godkendt"   |
-    | Mandat | Mandat        | Bogholders acceptstatus  | "Ikke gennemset" |
+  | Tabellen  | Afledt tabel |             Felt             |    Afgrænsning    |
+  |--------|---------------|-------------------------------|----------------|
+  | Mandat |    Mandat     | Status for direktørgodkendelse | "Ikke gennemset" |
 
--   Fakturalinjer fra mandats, der er afvist af bogholderen.
-    | Tabellen  | Afledt tabel | Felt                        | Afgrænsning   |
-    |--------|---------------|------------------------------|------------|
-    | Mandat | Mandat        | Bogholders acceptstatus | "Afvist" |
+
+- Fakturalinjer fra mandats, der er godkendt til betaling af direktøren, men endnu ikke godkendt af bogholderen.
+
+  | Tabellen  | Afledt tabel |             Felt             |    Afgrænsning    |
+  |--------|---------------|-------------------------------|----------------|
+  | Mandat |    Mandat     | Status for direktørgodkendelse |  "Godkendt"  |
+  | Mandat |    Mandat     | Bogholders acceptstatus  | "Ikke gennemset" |
+
+
+- Fakturalinjer fra mandats, der er afvist af bogholderen.
+
+  | Tabellen  | Afledt tabel | Felt                        | Afgrænsning   |
+  |--------|---------------|------------------------------|------------|
+  | Mandat | Mandat        | Bogholders acceptstatus | "Afvist" |
 
 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Reducer saldoafskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over afskrivningsmetoden Saldoafskrivning.
 
@@ -80,7 +79,7 @@ Når metoden Saldoværdi benyttes, beregnes der 30 % af afskrivningsgrundlaget (
 | År 2 | (7.000 - 1.000) \* 30 % = 1.800            | (7.000 - 1.800) = 5.200                |
 | År 3 | (5.200 - 1.000) \* 30 % = 1.260            | (5.200 - 1.260) = 3.940               |
 
- 
+
 -
 
 

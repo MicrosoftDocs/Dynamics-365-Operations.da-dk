@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Metode til samlet omkostningstildeling
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder retningslinjer for brug af samlet omkostningstildeling. Samlet omkostningstildeling er en metode til beregning af omkostningerne mellem den vigtigste formelvare for en batchordre og de samprodukter, der er defineret i formlen.
 

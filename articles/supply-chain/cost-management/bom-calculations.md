@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>Styklistekalkulationer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Beregningerne af den opsummerede kostpris og salgsprisen kaldes styklistekalkulationer, og du starter dem fra siden Beregninger. Dette emne indeholder oplysninger om styklistekalkulationer.
 

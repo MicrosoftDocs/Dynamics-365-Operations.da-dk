@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere udskrivning af nummerpladeetiket
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure aktiverer automatisk udskrivning af en SSCC-etiket (Serial Shipping Container Code), efter at sidste vare er plukket fra lager i en arbejdsproces til salgspluk. Du kan bruge denne procedure i USMF-demodatafirmaet. Hvis du vil køre den med dine egne data, skal du have en nummerserie defineret for id'er. Du skal konfigurere en etiketprinter, før du begynder denne opgave. Gå til Virksomhedsadministration > Opsætning > Netværksprintere. I handlingsruden skal du klikke på indstillinger og derefter klikke på knappen til Download-installationsprogram for dokumentets ruteplanlægningsagent. Kør installationsprogrammet, og sørg for, at du har en fungerende netværksprinter, der er aktiveret, før du fortsætter med proceduren.
 

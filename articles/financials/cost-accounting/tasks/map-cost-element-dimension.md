@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-a-cost-element-dimension"></a>Tilknytte en dimension for omkostningselement
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En omkostningscontroller kan bruge denne procedure til at knytte en dimension for et omkostningselement til en dimension for et omkostningselement i den juridiske enhed for MXMF. Denne registrering bruger USP2-demodatafirmaet.
 

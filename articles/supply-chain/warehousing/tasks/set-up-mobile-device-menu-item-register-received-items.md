@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Konfigurere et menupunkt for mobilenheden til registrering af modtagne varer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave fokuserer på opsætningen af et menupunkt på mobilenheden. Dette menupunkt bruges til registrering af modtagelsen af varer, der er bestilt via købsordrer. 
 

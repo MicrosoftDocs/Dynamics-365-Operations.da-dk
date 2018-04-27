@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>Opret et fordelskundeprogram
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denne artikel beskriver, hvordan du konfigurerer et fordelskundeprogram. Fordelskundeprogrammer kan hjælpe med at sikre kundeloyalitet ved at belønne kunder for at købe produkter i dine detailforretninger. I Microsoft Dynamics 365 for Retail kan du oprette enkle eller komplekse fordelskundeprogrammer, der gælder på tværs af juridiske enheder i enhver detailkanal.
 

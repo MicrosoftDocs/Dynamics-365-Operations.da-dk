@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cycle-counting"></a>Definere cyklusoptælling 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Cyklusoptælling er en lagerproces, du kan bruge til at overvåge disponible varer i lagerbeholdningen. Denne opgave viser, hvordan du: opsætter standardoptælling af arbejdsprioritet, aktiverer et mobilenhedsmenupunkt til at behandle både plukning og optælling, aktiverer en udløser for optællingsgrænse, når en placering bliver tom, og aktiverer en cyklusoptællingsplan for et bestemt element i et bestemt lagersted. Disse opgaver udføres typisk af en lagerstedschef. Du kan gennemgå denne procedure i USMF-demodatafirmaet eller i dine egne data.
 

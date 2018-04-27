@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations kan forretningsbruger designe oplevelser til mobilenheder. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
 
@@ -127,7 +126,7 @@ Som hovedregel når du arbejder med designeren til mobilenheder skal du sørge f
 ### <a name="create-the-workspace"></a>Oprette arbejdsområdet
 
 1.  Åbn Finance and Operations i en webbrowser, og log på.
-2.  Når du har logget på, kan du tilføje **&mode=mobile** til URL-adressen som vist i følgende eksempel og opdatere siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Når du har logget på, kan du tilføje **&mode=mobile** til URL-adressen som vist i følgende eksempel og opdatere siden: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klik på knappen **Indstillinger** (tandhjulsymbolet) i øverste højre hjørne af siden, og klik derefter på **Mobilapp**. Mobilappdesigneren skal vises på samme måde som Arbejdsrutineoptager vises.
 4.  Klik på **Tilføj** for at oprette et nyt arbejdsområde. I dette eksempel skal du navngive arbejdsområdet **Mine godkendelser**.
 5.  Angiv en beskrivelse.
@@ -173,23 +172,23 @@ Den første mobilenhedsside, du skal designe, er listen over de fakturaer, der e
 
 Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge siden **VendMobileInvoiceHeaderDetails** i Finance and Operations. Bemærk, at afhængigt af antallet af fakturaer, du har i dit system, viser denne side den ældste faktura (faktura, der blev oprettet først). Når du vil finde en bestemt faktura, kan du bruge filteret til venstre. Men vi har ikke brug for en bestemt faktura i dette eksempel. Vi skal blot bruge nogle fakturadata, så vi kan designe siden. [![Siden Arbejdsgang](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  I URL-adressen til Finance and Operations skal du erstatte navnet på menupunktet med **VendMobileInvoiceHeaderDetails** for at åbne formen
-2.  Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
-3.  Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
-4.  Vælg siden **Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger**.
-5.  Under fanen **Felter** skal du klikke på kolonneoverskriften **Gitter**.
-6.  Klik på **Egenskaber** &gt; **Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
-7.  Angiv en sidetitel, f.eks. **Fakturadetaljer** og en beskrivelse som **Vis fakturahoved og linjedetaljer**.
-8.  Klik på **Vælg felter**. Bemærk, at den rækkefølge, som du tilføjer i, er den rækkefølge, som felterne bliver vist i for slutbrugeren. Den eneste måde at ændre rækkefølgen af felterne er ved igen at vælge alle felter. 
-9.  Baseret på kravene til dette scenario skal du tilføje følgende felter fra hovedet:
-    - Navn på kreditor
-    - Fakturatotal
-    - Fakturakonto
-    - Fakturanummer
-    - Fakturadato
-    - Fakturabeskrivelse
-    - Forfaldsdato
-    - Fakturavaluta
+1. I URL-adressen til Finance and Operations skal du erstatte navnet på menupunktet med **VendMobileInvoiceHeaderDetails** for at åbne formen
+2. Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
+3. Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
+4. Vælg siden <strong>Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger</strong>.
+5. Under fanen **Felter** skal du klikke på kolonneoverskriften **Gitter**.
+6. Klik på **Egenskaber** &gt; **Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
+7. Angiv en sidetitel, f.eks. **Fakturadetaljer** og en beskrivelse som **Vis fakturahoved og linjedetaljer**.
+8. Klik på **Vælg felter**. Bemærk, at den rækkefølge, som du tilføjer i, er den rækkefølge, som felterne bliver vist i for slutbrugeren. Den eneste måde at ændre rækkefølgen af felterne er ved igen at vælge alle felter. 
+9. Baseret på kravene til dette scenario skal du tilføje følgende felter fra hovedet:
+   - Navn på kreditor
+   - Fakturatotal
+   - Fakturakonto
+   - Fakturanummer
+   - Fakturadato
+   - Fakturabeskrivelse
+   - Forfaldsdato
+   - Fakturavaluta
 
 10. Tilføj følgende felter fra gitterlinjerne på siden:
     - Indkøbskategori
@@ -199,7 +198,7 @@ Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge si
     - 1099-beløb
 
 11. Når alle felter fra de forrige to trin er tilføjet, skal du klikke på **Udført**. Siden skal ligne følgende illustration.
-[![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Side, efter at der er tilføjet felter](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Klik på **Udført** for at afslutte redigeringstilstand.
 13. Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
 14. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
@@ -296,14 +295,14 @@ Brug siden **VendMobileInvoiceHeaderDetails** i Finance and Operations til at f�
 
 ### <a name="vendor-invoice-attachments"></a>Vedhæftede filer i kreditorfakturaer
 
-1.  Klik på knappen **Indstillinger** (tandhjulsymbolet) i øverste højre hjørne af siden, og klik derefter på **Mobilapp**.
-2.  Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
-3.  Vælg siden **Fakturadetaljer**, som du oprettede tidligere, og klik derefter på **Rediger**.
-4.  Indstil **Dokumentstyring** til **Ja** som vist nedenfor. **Bemærk:** Hvis der er ikke er krav om at vise vedhæftede filer på mobilenheden, kan du lade denne indstilling være sat til **Nej**, som er standardindstillingen.
-![Dokumentstyring](./media/docmanagement-216x300.png)
-6.  Klik på **Udført** for at afslutte redigeringstilstand.
-7.  Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
-8.  Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
+1. Klik på knappen **Indstillinger** (tandhjulsymbolet) i øverste højre hjørne af siden, og klik derefter på **Mobilapp**.
+2. Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
+3. Vælg siden <strong>Fakturadetaljer**, som du oprettede tidligere, og klik derefter på **Rediger</strong>.
+4. Indstil **Dokumentstyring** til **Ja** som vist nedenfor. **Bemærk:** Hvis der er ikke er krav om at vise vedhæftede filer på mobilenheden, kan du lade denne indstilling være sat til **Nej**, som er standardindstillingen.
+   ![Dokumentstyring](./media/docmanagement-216x300.png)
+5. Klik på **Udført** for at afslutte redigeringstilstand.
+6. Klik på **Tilbage** og derefter på **Udført** for at afslutte arbejdsområdet
+7. Klik på **Publicer arbejdsområde** for at gemme dit arbejde.
 
 ### <a name="vendor-invoice-line-distributions"></a>Fordelinger af kreditorfakturalinjer
 

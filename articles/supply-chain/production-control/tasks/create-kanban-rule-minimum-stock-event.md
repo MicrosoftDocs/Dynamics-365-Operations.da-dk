@@ -23,14 +23,14 @@ ms.contentlocale: da-dk
 ms.lasthandoff: 09/29/2017
 
 ---
-# Oprette en kanban-regel ved hjælp af en hændelse for minimal lagerbeholdning
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Oprette en kanban-regel ved hjælp af en hændelse for minimal lagerbeholdning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I denne fremgangsmåde fokuseres der på den opsætning, der er nødvendig for at oprette en kanban-regel ved hjælp af en minimumlagerhændelse for at sikre, at et bestemt produkt altid er tilgængeligt på et bestemt sted. En kanban-regel oprettes for at overføre materiale til stedet, når lagerbeholdningen falder til under 200 enheder. Ved at køre behandlingen af udligningshændelsen oprettes de nødvendige kanbans. Det demodatafirma, der bruges til at oprette denne opgave, er USMF. Denne opgave er beregnet til procesingeniøren eller værdistrømlederen, når de forbereder produktionen af et nyt eller ændret produkt i et lean-miljø.
 
 
-## Opret en ny kanban-regel
+## <a name="create-a-new-kanban-rule"></a>Opret en ny kanban-regel
 1. Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.
 2. Klik på Ny.
 3. Vælg 'Udtræk' i feltet Type.
@@ -46,7 +46,7 @@ I denne fremgangsmåde fokuseres der på den opsætning, der er nødvendig for a
 9. Vælg "Batch" i feltet Lagergenopfyldningshændelse.
     * Der oprettes kanbans for at opfylde behovet på den relaterede lokation under behandling af udligningshændelser.  
 
-## Angiv minimumantallet for varen.
+## <a name="set-the-minimum-quantity-for-the-item"></a>Angiv minimumantallet for varen.
 1. Klik for at følge linket i feltet Produkt.
 2. Klik for at følge linket i feltet Varenummer.
 3. Udvid faktaboksen Produktbillede.
@@ -58,7 +58,7 @@ I denne fremgangsmåde fokuseres der på den opsætning, der er nødvendig for a
     * Angiv Lagersted til 12.  
 9. Angiv Minimum til '200'.
 
-## Kør jobbet til oprettelse af batchhændelse.
+## <a name="run-the-batch-event-creation-job"></a>Kør jobbet til oprettelse af batchhændelse.
 1. Gå til Produktionsstyring > Periodiske opgaver > Batchafvikling for kanban-job > Udligningshændelser.
 2. Klik på OK.
 3. Gå til Administration af produktoplysninger > Lean manufacturing > Kanban-regler.

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attributter, attributgrupper og deres tilknytninger til forskellige enheder i Retail i Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter kan være tilknyttet forskellige Retail-enheder, såsom produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
  
@@ -227,13 +227,13 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 5. I oversigtspanelet **Produkter** skal du vælge det krævede produkt og derefter vælge **Attributter** over produktgitteret.
 6. Opdater værdierne for de påkrævede attributter i følgende oversigtspaneler:
 
-    - Delte produktmedier
-    - Delte produktattributter
-    - Kanalmedier
-    - Kanalproduktattributter
+   - Delte produktmedier
+   - Delte produktattributter
+   - Kanalmedier
+   - Kanalproduktattributter
 
-    > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+     > [!NOTE]
+     > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
 
 ![Attributgrupper for katalogprodukt](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 
 5. Opdater værdierne for de påkrævede attributter i følgende oversigtspaneler:
 
-    - Delte produktmedier
-    - Delte produktattributter
-    - Kanalmedier
-    - Kanalproduktattributter
+   - Delte produktmedier
+   - Delte produktattributter
+   - Kanalmedier
+   - Kanalproduktattributter
 
-    > [!NOTE]
-    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+     > [!NOTE]
+     > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
 

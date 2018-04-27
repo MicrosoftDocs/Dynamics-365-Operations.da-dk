@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Oprette en købsreturordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hjælp af handlingen Kreditnota for at kopiere linjer fra et kreditorfakturadokument til en ny indkøbsordre. Det viser også, hvordan du kan bekræfte ordren og behandle forsendelsen af varerne tilbage til leverandøren. Eksemplet i denne procedure kan bruges i demodatafirmaet USMF. Denne opgave foretages typisk af en indkøber.
 

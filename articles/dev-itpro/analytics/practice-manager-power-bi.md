@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvad der er medtaget i Microsoft Power BI-indholdet til **praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
 
@@ -118,7 +118,9 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhed: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakilde:** ProjTable
 
-| Samlede nøglemålinger       | Felt               | Betegnelse |
-|---------------------------------|---------------------|-------------|
+
+|    Samlede nøglemålinger    |        Felt        |                                          Betegnelse                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
+
 

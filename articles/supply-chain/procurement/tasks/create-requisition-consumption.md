@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Oprette en forbrugsrekvisition
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fører dig gennem processen med at oprette en rekvisition. Den viser forskellige måder at søge efter produkter i indkøbskataloget, og hvordan du tilføjer et produkt, der ikke findes i kataloget. Inden du begynder denne procedure, skal du have en indkøbspolitik, der er konfigureret med Forbrug som standardtypen for rekvisitionen. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Proceduren kan kun udføres af en brugerprofil, der er angivet som arbejder.  Denne opgave vil normalt udføres af en medarbejder. Medarbejders sikkerhedsrolle tillader, at du kan udføre opgaverne, eller hvis du bruger USMF, kan du logge på som Alicia.
 

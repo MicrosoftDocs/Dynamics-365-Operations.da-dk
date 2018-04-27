@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere debitor- eller kreditorposter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over, hvad der sker, når du bogfører et enkelt bilag med flere debitor- eller kreditorposter. Denne funktion understøttes ikke i fremtidige versioner af Microsoft Dynamics 365 for Finance and Operations, så derfor fraråder vi denne metode til bogføring grundet den regnskabsmæssige virkning af udligningsbehandling. 
 
@@ -251,7 +250,7 @@ For at undgå uønskede problemer med fremtidige udligninger for denne transakti
 | 001         | Debitor          | US-008      |                 |           |  75,00     | Finans          | 999999---          |
 | 002         | Leverandør           | 1001        |                 |  75,00    |            | Finans          | 999999---          |
 
- 
+
 
 
 

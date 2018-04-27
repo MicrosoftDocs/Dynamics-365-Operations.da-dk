@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives virkningen af afregning af betalinger til fakturaer for debitorer. Scenariet fokuserer på effekterne på reskontroen, ikke på Finans.
 

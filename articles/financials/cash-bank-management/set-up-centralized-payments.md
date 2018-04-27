@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Konfigurere centraliserede betalinger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen. Før du går i gang, skal du gennemføre følgende opsætning:
 

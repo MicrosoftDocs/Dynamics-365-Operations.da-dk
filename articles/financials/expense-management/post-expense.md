@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Bogføre en udgiftsrapport
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Når en udgiftsrapport er godkendt og overført til finanskladden, kan den bogføres i finansmodulet. Når du bogfører en udgiftsrapport, identificeres alle udgifter, der er berettiget til momsrefusion. Ansvaret for kontrol og opkrævning af momsbetalinger ligger hos den medarbejder, der er ansvarlig for kontrol af udgiftsrapporten.
 

@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09a182b50917bff449f76598d61c38ae18160dd1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8652766766a557d8399e6a94088a6f9bc82ff018
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger. 
 
@@ -66,12 +65,13 @@ Følgende eksempler viser, hvordan du formaterer rækkedefinitionen og kolonnede
 
 Følgende tabel viser et eksempel på en rækkedefinition, der bruger grundlæggende tvang.
 
-| Rækkekode | Betegnelse                      | Formatkode | Relaterede formler/rækker/enheder | Rækkemodifikator | Link til økonomiske dimensioner |
-|----------|----------------------------------|-------------|-----------------------------|----------------|----|
-| 100      | Likvide midler i starten af perioden (NP) |             |                             | Kontomodifikator = \[/BB\] | +Segment2 = \[1100\]         |
-| 130      | Likvid beholdning - periodens start      | CAL         | C=C.100,F=D.100             |               |     |   |
-| 160      |                                  |             |                             |              |     |   |
-| 190      |                                  |             |                             |                 |     |   |
+
+| Rækkekode |           Betegnelse            | Formatkode | Relaterede formler/rækker/enheder |        Rækkemodifikator        | Link til økonomiske dimensioner |
+|----------|----------------------------------|-------------|-----------------------------|----------------------------|------------------------------|
+|   100    | Likvide midler i starten af perioden (NP) |             |                             | Kontomodifikator = \[/BB\] |     +Segment2 = \[1100\]     |
+|   130    |   Likvid beholdning - periodens start    |     CAL     |       C=C.100,F=D.100       |                            |                              |
+|   160    |                                  |             |                             |                            |                              |
+|   190    |                                  |             |                             |                            |                              |
 
 > [!NOTE] 
 > Tomme kolonner blev fjernet fra den forrige tabel af hensyn til præsentationen: Kolonnerne Tilsidesæt format, Normal saldo, Udskriftsstyring og Kolonnebegrænsning vises ikke.
@@ -180,11 +180,11 @@ Den celle til **kolonnebegrænsning** i en rækkedefinition har flere formål. A
 -   Cellen kan angive kolonnen med beløb, der skal sorteres.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Bruge en beregningsformel i en rækkedefinition
-En beregningsformel i en rækkedefinition kan omfatte operatorerne **+**, **-**, **\*** og **/** og også **IF/THEN/ELSE**-sætninger. Desuden kan en beregning omfatte individuelle celler og absolutte beløb (faktiske tal, der indgår i formlen). Formlen kan indeholde op til 1.024 tegn. Beregninger kan ikke anvendes til rækker, der indeholder celler af typen **Link til økonomiske dimensioner** (FD). Du kan dog medtage beregninger på fortløbende rækker, undertrykke udskrivning af disse rækker og derefter lægge beregningsrækkerne sammen.
+En beregningsformel i en rækkedefinition kan omfatte operatorerne <strong>+</strong>, <strong>-</strong>, <strong>\\</strong> og **/** og også <strong>IF/THEN/ELSE</strong>-sætninger. Desuden kan en beregning omfatte individuelle celler og absolutte beløb (faktiske tal, der indgår i formlen). Formlen kan indeholde op til 1.024 tegn. Beregninger kan ikke anvendes til rækker, der indeholder celler af typen <strong>Link til økonomiske dimensioner</strong> (FD). Du kan dog medtage beregninger på fortløbende rækker, undertrykke udskrivning af disse rækker og derefter lægge beregningsrækkerne sammen.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatorer i en formel til beregning
 
-En formel til beregning bruger mere komplekse operatorer end en formel til sammenlægning af beløb i rækker. Du kan dog bruge operatorerne **\*** og **/** sammen med de ekstra operatorer, hvis du vil gange (\*) og dividere (/) beløb. Hvis du vil bruge et interval eller en sum i en formel til beregning, skal du bruge @-tegnet foran en rækkekode, medmindre du bruger en kolonne i rækkedefinitionen. Hvis du for eksempel vil lægge beløbet i række 100 sammen med beløbet i række 330, kan du bruge rækketotalformlen **100+330** eller beregningsformlen **@100+@330**. **Bemærk:** du skal @-tegnet før hver rækkekode, der bruges i en beregningsformel. I modsat fald læses tallet som et absolut beløb. Formlen **@100+330** føjer f.eks. 330 kr. til beløbet i række 100. Når du henviser til en kolonne i en beregningsformel, er tegnet (@) ikke påkrævet.
+En formel til beregning bruger mere komplekse operatorer end en formel til sammenlægning af beløb i rækker. Du kan dog bruge operatorerne <strong>\\</strong>* og <strong>/</strong> sammen med de ekstra operatorer, hvis du vil gange (\*) og dividere (/) beløb. Hvis du vil bruge et interval eller en sum i en formel til beregning, skal du bruge @-tegnet foran en rækkekode, medmindre du bruger en kolonne i rækkedefinitionen. Hvis du for eksempel vil lægge beløbet i række 100 sammen med beløbet i række 330, kan du bruge rækketotalformlen <strong>100+330</strong> eller beregningsformlen <strong>@100+@330</strong>. <strong>Bemærk:</strong> du skal @-tegnet før hver rækkekode, der bruges i en beregningsformel. I modsat fald læses tallet som et absolut beløb. Formlen <strong>@100+330</strong> føjer f.eks. 330 kr. til beløbet i række 100. Når du henviser til en kolonne i en beregningsformel, er tegnet (@) ikke påkrævet.
 
 ### <a name="create-a-calculation-formula"></a>Oprette en beregningsformel
 
@@ -202,7 +202,7 @@ I dette eksempel betyder beregningsformlen **@100+@330**, at beløbet i række 1
 | 370      | Likvide midler i starten af året   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Likvide midler i starten af perioden | TOT         | 340+370                    |               |              |                              |
 
-Når rækken i en rækkedefinition har formateringskoden **CAL**, og du indtaster en matematisk beregning i cellen **Relaterede formler/rækker/enheder**, skal du også angive bogstavet for den tilknyttede kolonne og række i rapporten. Angiv f.eks. **A.120** for at repræsentere kolonne A, række 120. Du kan også bruge et (@) tegn til at angive alle kolonnerne. Angiv f.eks. **@120** for at repræsentere alle kolonner i række 120. En matematisk beregning, der ikke har et kolonnebogstav eller et (@) tegn antages at være et reelt tal. **Bemærk:** hvid du bruger en etiketrækkekode til at henvise til en række, skal du bruge et punktum (.) som separator mellem kolonnebogstavet og etiketten (for eksempel **A.GROSS\_MARGIN/A.SALES**). Hvis du bruger et @-tegn, er en separator ikke påkrævet (for eksempel **@GROSS\_MARGIN/@SALES**).
+Når rækken i en rækkedefinition har formateringskoden <strong>CAL</strong>, og du indtaster en matematisk beregning i cellen <strong>Relaterede formler/rækker/enheder</strong>, skal du også angive bogstavet for den tilknyttede kolonne og række i rapporten. Angiv f.eks. <strong>A.120</strong> for at repræsentere kolonne A, række 120. Du kan også bruge et (@) tegn til at angive alle kolonnerne. Angiv f.eks. <strong>@120</strong> for at repræsentere alle kolonner i række 120. En matematisk beregning, der ikke har et kolonnebogstav eller et (@) tegn antages at være et reelt tal. <strong>Bemærk:</strong> hvid du bruger en etiketrækkekode til at henvise til en række, skal du bruge et punktum (.) som separator mellem kolonnebogstavet og etiketten (for eksempel <strong>A.GROSS\_MARGIN/A.SALES</strong>). Hvis du bruger et @-tegn, er en separator ikke påkrævet (for eksempel <strong>@GROSS\_MARGIN/@SALES</strong>).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Eksempel på en beregningsformel for en bestemt kolonne
 
@@ -255,17 +255,17 @@ Udtrykket **Perioder** i en **IF**-sætning angiver antallet af perioder for rap
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrænse en beregning til en rapporteringsenhed i en rækkedefinition
 
-For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden **@Unit** i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen. Koden **@Unit** er angivet i kolonne B i rapporteringstræet **Enhedsnavn**. Når du bruger koden **@Unit**, akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet. **Bemærk:** hvis du vil bruge denne funktion, skal der knyttes et rapporteringstræ til rækkedefinitionen. Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en **IF @Unit**-konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage **OR**-kombinationer i en **IF**-sætning. Her er et eksempel: IF @Unit(SALES) OR @Unit(SALESWEST) og THEN 5 ELSE @100 Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
+For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden <strong>@Unit</strong> i cellen <strong>Relaterede formler/rækker/enheder</strong> i rækkedefinitionen. Koden <strong>@Unit</strong> er angivet i kolonne B i rapporteringstræet <strong>Enhedsnavn</strong>. Når du bruger koden <strong>@Unit</strong>, akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet. <strong>Bemærk:</strong> hvis du vil bruge denne funktion, skal der knyttes et rapporteringstræ til rækkedefinitionen. Beregningsrækken kan henvise til en beregningsrække eller en række med økonomiske data. Beregningen er registreret i cellen <strong>Relaterede formler/rækker/enheder</strong> i rækkedefinitionen og begrænsningen af typen økonomiske data. Beregningen skal bruge en betinget beregning, der starter med en <strong>IF @Unit</strong>-konstruktion. Her er et eksempel: IF @Unit(SALES) THEN @100 ELSE 0 Denne beregning medtager beløbet fra række 100 i hver kolonne i rapporten men kun for enheden SALG. Hvis flere enheder navngives SALG, vises beløbet i hver af disse enheder. Desuden kan række 100 være en række med økonomiske data række og kan defineres som en række, der ikke udskrives. I så fald forhindres beløbet i at blive vist i alle enheder i træet. Du kan også begrænse beløbet til en enkelt kolonne i rapporten, såsom kolonne H, ved hjælp af en kolonnebegrænsning, så værdien kun udskrives i den pågældende kolonne i rapporten. Du kan medtage <strong>OR</strong>-kombinationer i en <strong>IF</strong>-sætning. Her er et eksempel: IF @Unit(SALES) OR @Unit(SALESWEST) og THEN 5 ELSE @100 Du kan angive en enhed i en begrænsning af typen beregning på en af følgende måder:
 
--   Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer **IF @Unit(SALES)** beregningen af enhver enhed med navnet SALG, selvom der er flere enheder med navnet SALG i rapporteringstræet.
--   Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit(ACME:SALES**) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
--   Angiv den fulde hierarkikode fra rapporteringstræet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Bemærk:** du kan finde den fulde hierarkikode ved at højreklikke på definitionen af rapporteringstræet og derefter vælge **Kopiér rapporteringsenhedsidentifikator (H-kode)**.
+- Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer <strong>IF @Unit(SALES)</strong> beregningen af enhver enhed med navnet SALG, selvom der er flere enheder med navnet SALG i rapporteringstræet.
+- Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel <strong>IF @Unit(ACME:SALES</strong>) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
+- Angiv den fulde hierarkikode fra rapporteringstræet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel <strong>IF @Unit(SUMMARY^ACME^WEST COAST^SALES)</strong>. <strong>Bemærk:</strong> du kan finde den fulde hierarkikode ved at højreklikke på definitionen af rapporteringstræet og derefter vælge <strong>Kopiér rapporteringsenhedsidentifikator (H-kode)</strong>.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begrænse en beregning til en enhed i trædiagram
 
-1.  Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
-2.  Dobbeltklik på cellen **formateringskode**, og vælg derefter **CAL**.
-3.  Klik på cellen **Relaterede formler/rækker/enheder**, og angiv derefter en betinget beregning, der starter med en **IF @Unit**-konstruktion.
+1. Klik på **Rækkedefinitioner** i Rapportdesigner, og åbn derefter en rækkedefinition, der skal ændres.
+2. Dobbeltklik på cellen **formateringskode**, og vælg derefter **CAL**.
+3. Klik på cellen <strong>Relaterede formler/rækker/enheder</strong>, og angiv derefter en betinget beregning, der starter med en <strong>IF @Unit</strong>-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-sætninger i en kolonnedefinition
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-indhold til omkostningsregnskabsanalyse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvad der indgår i Microsoft Power BI-indholdet til **Omkostningsregnskabsanalyse**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
@@ -111,18 +111,20 @@ Følgende tabel viser, hvor de samlede nøglemålinger bruges til at oprette fle
 
 Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger for at opnå større granularitet og give dybere analytisk indsigt.
 
-| Enhed                             | Eksempler på attributter                                                                                               |
+
+|               Enhed               |                                                Eksempler på attributter                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Finansposter for omkostningsregnskab            | Finanspost for omkostningsregnskab                                                                                               |
-| Omkostningskontrolenheder                 | Navn på omkostningskontrolenhed                                                                                               |
-| Dimensioner for omkostningselement            | Navn på dimension for omkostningselementer, navn på dimensionsmedlem af omkostningselement, beskrivelse af dimensionsmedlem af omkostningselement          |
-| Dimensioner for omkostningsobjekt             | Navn på dimension for omkostningsobjekt, navn på dimensionsmedlem af omkostningsobjekt, beskrivelse af dimensionsmedlem af omkostningsobjekt              |
-| Statistiske dimensioner             | Navn på statistisk dimension, navn på statistisk dimensionsmedlem, beskrivelse af statistisk dimensionsmedlem              |
-| Dimensionshierarkier for omkostningsobjekt  | Navn på dimensionshierarki for omkostningsobjekt, niveau i dimensionshierarki for omkostningsobjekt, dimensionshierarkitræ for omkostningsobjekt    |
+|      Finansposter for omkostningsregnskab       |                                                Finanspost for omkostningsregnskab                                                |
+|         Omkostningskontrolenheder         |                                                Navn på omkostningskontrolenhed                                                |
+|      Dimensioner for omkostningselement       |     Navn på dimension for omkostningselementer, navn på dimensionsmedlem af omkostningselement, beskrivelse af dimensionsmedlem af omkostningselement      |
+|       Dimensioner for omkostningsobjekt       |       Navn på dimension for omkostningsobjekt, navn på dimensionsmedlem af omkostningsobjekt, beskrivelse af dimensionsmedlem af omkostningsobjekt        |
+|       Statistiske dimensioner       |       Navn på statistisk dimension, navn på statistisk dimensionsmedlem, beskrivelse af statistisk dimensionsmedlem        |
+| Dimensionshierarkier for omkostningsobjekt  |  Navn på dimensionshierarki for omkostningsobjekt, niveau i dimensionshierarki for omkostningsobjekt, dimensionshierarkitræ for omkostningsobjekt   |
 | Dimensionshierarkier for omkostningselement | Navn på dimensionshierarki for omkostningselement, niveau i dimensionshierarki for omkostningselement, dimensionshierarkitræ for omkostningselement |
-| Statistiske dimensionshierarkier  | Navn på statistisk dimensionshierarki, niveau i statistisk dimensionshierarki, statistisk dimensionshierarkitræ    |
-| Versioner af transaktion               | Versionsnavn                                                                                                         |
-| Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
-| Regnskabsår                       | Kalenderår                                                                                                        |
-| Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
+| Statistiske dimensionshierarkier  |  Navn på statistisk dimensionshierarki, niveau i statistisk dimensionshierarki, statistisk dimensionshierarkitræ   |
+|        Versioner af transaktion        |                                                     Versionsnavn                                                     |
+|          Regnskabskalendere          |                                            Kalender, beskrivelse af kalender                                            |
+|            Regnskabsår            |                                                    Kalenderår                                                     |
+|           Regnskabsperioder           |                                                 Kalenderårperiode                                                 |
+
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-promising"></a>Ordretilsagn
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
 

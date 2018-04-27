@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Konfigurere uddannelseskurser
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Personaleadministratorer og -chefer kan bruge kursusfunktionerne til at vedligeholde oplysninger om de kurser, der tilbydes til arbejdere.
 
@@ -81,15 +80,15 @@ Følgende tabel viser de tre opsætningstyper for kurser. Opsætningstyper beste
 
 ## <a name="course-tasks"></a>Kursusopgaver
 For hvert kursus kan udføre følgende opgaver.
--   Registrere deltagere
--   Angive en tilmeldingsfrist
--   Angive det mindste og største antal deltagere
--   Tildel et kursussted og et lokale
--   Anbefal hoteller til kursusdeltagere
--   Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening
+- Registrere deltagere
+- Angive en tilmeldingsfrist
+- Angive det mindste og største antal deltagere
+- Tildel et kursussted og et lokale
+- Anbefal hoteller til kursusdeltagere
+- Oprette en kursusbeskrivelse, som derefter kan offentliggøres på Medarbejderselvbetjening
 
   >**Bemærk!** Du kan kun slette et kursus, hvis ingen har tilmeldt sig kurset. 
-    
+
 ## <a name="course-statuses"></a>Kursusstatusser
 I følgende tabel vises de mulige statusser for kurser og de handlinger, du kan udføre, når kurset har en bestemt status.
 

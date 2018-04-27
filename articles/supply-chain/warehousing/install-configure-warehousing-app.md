@@ -29,11 +29,10 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations &#8211; Lagersted
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
-
+> 
 > Dette emne beskriver, hvordan du konfigurerer lagerfunktioner for skyinstallationer. Hvis du søger efter, hvordan du konfigurerer lagerfunktioner for lokale installationer, skal du se [Lager for lokale installationer](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 

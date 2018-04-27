@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Regnskabsfordelinger og kladdeposteringer for reskontro til kreditorfakturaer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Regnskabsfordelinger bruges til at definere, hvordan et beløb skal redegøres for, f.eks. hvordan udgifter, skat eller afgifter redegøres for på en kreditorfaktura. Alle beløb, der skal tages i betragtning, når kreditorfakturaen journaliseres, har en eller flere regnskabsfordelinger. 
 
@@ -231,7 +230,7 @@ Når du indtaster en kreditorfaktura, fordeles hvert beløb på følgende måde.
 </tbody>
 </table>
 
- 
+
 <a name="distributing-taxes"></a>Fordeling af skatter
 ------------------
 

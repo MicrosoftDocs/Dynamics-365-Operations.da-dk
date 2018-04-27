@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1bbd9230219f11407bc7afbd59670c6287b77c02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definition-examples"></a>Eksempler på bogføringsdefinitioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder eksempler på, hvordan bogføringsdefinitioner bruges for behæftelser i indkøbsordrer og budgetdisponeringer.
 
@@ -53,11 +52,11 @@ Alle bilagsposteringer for indkøbsordrebehæftelser skal være afstemt (dvs. de
 
 ### <a name="posting-definition--match-criteria"></a>Bogføringsdefinition – søgekriterier
 
-| Kontostruktur       | Sammenlign kontonummer | Prioritet |
+| Kontostruktur       | Sammenlign kontonummer | Prioritet  |
 |-------------------------|----------------------|----------|
 | Kontostruktur – drift | \*                   | 1        |
 
-*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+<em>En tom værdi i feltet **Sammenlign kontonummer</em>* betyder, at alle tilsvarende konti i den definerede kontostruktur vil indgå i sammenholdningsreglen.
 
 ### <a name="posting-definition--generated-entries"></a>Bogføringsdefinition – genererede poster
 
@@ -94,11 +93,11 @@ Når budgetdisponeringer og bogføringsdefinitioner er aktiveret, registreres bu
 
 ### <a name="posting-definition--match-criteria"></a>Bogføringsdefinition – søgekriterier
 
-| Kontostruktur       | Sammenlign kontonummer | Prioritet |
+| Kontostruktur       | Sammenlign kontonummer | Prioritet  |
 |-------------------------|----------------------|----------|
 | Kontostruktur – drift | \*                   | 1        |
 
-*Hvis feltet **Sammenlign kontonummer** er tomt, betyder det, at alle matchende konti i den definerede kontostruktur vil indgå i matchningsreglen.
+<em>En tom værdi i feltet **Sammenlign kontonummer</em>* betyder, at alle tilsvarende konti i den definerede kontostruktur vil indgå i sammenholdningsreglen.
 
 ### <a name="posting-definition--generated-entries"></a>Bogføringsdefinition – genererede poster
 

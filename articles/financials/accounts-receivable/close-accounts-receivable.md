@@ -27,10 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Luk Debitor
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Følgende tabel indeholder de sider, der understøtter forretningsprocessen for afslutning af Debitor.
 

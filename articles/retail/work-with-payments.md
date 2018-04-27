@@ -1,9 +1,9 @@
 ---
 title: Betalingsmetoder i et callcenter
-description: I dette emne beskrives de forskellige betalingsformer, du kan bruge i et callcenter i Dynamics 365 for Retail.
+description: Dette emne beskriver de forskellige betalingsmetoder, du kan bruge i et callcenter i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,36 +20,38 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 321d03d154c224b55ffedbe55a2d5952c2b29d9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="payment-methods-in-a-call-center"></a>Betalingsmetoder i et callcenter
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+I Microsoft Dynamics 365 for Retail omfatter konfigurationen af callcenter-kanalen en indstilling, der hedder **Aktivér ordrefuldførelse**. Denne indstilling er med til at sikre, at alle ordrer, som brugere af kanalen opretter, kun frigives til ordrebehandling, hvis de har en forudbetalt eller forhåndsgodkendt betaling, der ligger inden for godkendte tolerancer. Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, kan callcenter-brugere angive betalinger i forhold til salgsordrer for debitorer ved hjælp af funktionerne til behandling af betalinger for Callcenter. Hvis indstillingen er slået fra, kan callcenter-brugere ikke bruge funktionerne til behandling af betaling, men de kan stadig anvende forudbetalinger på salgsordrer ved hjælp af standardfunktioner for Debitor.
 
-I dette emne beskrives de forskellige betalingsformer, du kan bruge i et callcenter i Dynamics 365 for Retail.
+Som en del af kanalkonfigurationen kan et firma definere de betalingsmetoder, der er tilladt for callcenter-kanal. Callcenter-kanalen bruger de samme betalingsmetoder, der er defineret for detailbutikskanalerne.
 
-De betalingsformer, der anvendes i andre kanaler, såsom kontanter, checks, kreditkort og gavekort, kan også bruges i callcentre. Når du har konfigureret en betalingsmetode for et callcenter, vises den som en af indstillingerne i sektionen **Betalinger** på siden **Salgsordre** for callcenter-brugere. Du kan desuden oprette kuponer for at tilbyde rabatter til kunder, som afgiver en ordre til din organisations callcenter. Kuponer kan være for en rabat på fast beløb eller for en procentdel af en varepris eller ordretotalen. For eksempel kan en beløbsbaseret kupon tilbyde kunderne en rabat på 75,00, når kunden bruger 750,00 eller mere. Du kan oprette forskellige typer af kuponer, definere overordnet/underordnet kuponer og kopiere eller annullere en kupon. Brug indstillingerne i følgende tabel til at oprette kuponer.
+Du kan konfigurere betalingsmetoder for en callcenter-kanal ved at gå til **Retail** \> **Kanaler** \> **Callcentre** \> **Alle callcentre** og derefter klikke i menuen **Opsætning** på indstillingen **Betalingsmetoder**.
 
-|                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Attribut**             | I feltet **Indløsningssats** skal du angive den forventede indløsningssats på kuponen som en procentdel og derefter vælge, om kuponen kan bruges én gang, skal udstedes igen automatisk eller gælder specifikt for kunden.                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Gyldig**                 | Angiv datoerne for den første og sidste dag, hvor kuponen gælder, i felterne **Startdato** og **Slutdato**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Medtag/udelad regler** | I felterne **Kataloger** og **Varer** skal du vælge, om alle kataloger eller varer skal medtages eller ej i kuponen. Hvis du vælger **Medtag** eller **Udeluk**, skal du klikke på **Opsætning**, vælge **Medtag/Udelad kataloger** eller **Medtag/Udelad produkter** og angive oplysninger om katalog eller vare. Hvis du vælger **Ingen** i disse felter, medtages alle kataloger eller varer i kuponen.                                                                                                                                                                                                                          |
-| **Diverse**         | Hvis denne rabatkupon ikke kan bruges sammen med andre rabatter, skal du markere afkrydsningsfeltet **Eksklusiv**. I feltet **Oprindelse** skal du vælge, hvor kuponen kan bruges. Hvis denne kupon er en producents kupon, skal du markerer afkrydsningsfeltet **Producentens kupon**.                                                                                                                                                                                                                                                                                                                                                                |
-| **Fremtidig kupon**         | Hvis denne kupon skal tilknyttes andre kuponer som overordnet kupon, skal du markere afkrydsningsfeltet **Overordnet kupon**. Hvis denne kupon skal tilknyttes en eksisterende kupon, skal du vælge den overordnede kupon i feltet **Overordnet kupon-id**. For eksempel kan du oprette en kupon for det kommende forårskatalog. Alle andre kuponer, som du opretter for forårskataloget, bliver underordnede kuponer til forårskatalogkuponen. Underordnede kuponer kan indeholde 20 procent rabat for nye kundeordrer, 10 procent rabat på en vare, der er udgivet for nylig, eller en rabat på 95,00 kr. på ordrer på 1.000,00 kr. eller derover. |
+Når du opretter en betalingsmetode, kan du tildele fem funktioner for betalingsmetoder.
 
-Hvis du sender en kreditkortbetaling fra siden **Salgsordrer** og modtager en meddelelse om, at kortet ikke er godkendt, kan du håndtere godkendelsen manuelt. Du kan godkende, afvise eller sende en transaktion med kreditkort fra siden **Administration af godkendelse**. Du kan bruge siden callcenter-parametre til at konfigurere yderligere indstillinger for betalingsbehandling:
+| Funktion            | Betegnelse |
+|---------------------|-------------|
+| Almindelig              | Brug funktionen **Normal** for betalingsmetoden, når du definerer betalingsmetoder som f.eks. kontantbetaling eller med bilag. Når disse typer af betalinger anvendes til en salgsordre i callcenteret, bogføres de straks som forudbetalinger på debitorkontoen. Forudbetalingsbilaget bogføres i debitorens transaktionshistorik, hvor det systematisk udlignes mod fakturaen for salgsordren, når der oprettes fakturaer. |
+| Check               | Brug funktionen **Check**, når du definerer en bankcheck som en del af betalingen. Når denne type betaling anvendes til en salgsordre, skal brugeren angive debitorens checknummer som en del af programmets betalingsbehandling. Checkbetalinger behandles altid som forudbetalinger, når de anvendes. Som i betalingsfunktionen **Normal**, udlignes disse forudbetalingsbilag systematisk mod de fakturaer, der er oprettet for ordren. |
+| Kort               | Kortbetalingstyper repræsenterer alle betalinger, der kræver indtastning af et kortnummer, der er defineret på debitorens betalingskort. Eksempler omfatter kreditkort og gavekort. Når du konfigurerer disse betalingstyper, skal du bruge menuen **Opsætning af kort** til at definere de kort-id'er, der er tilknyttet denne betalingsmetode. På tidspunktet for ordreindtastning kan brugere angive, om kortbetalingen skal forudbetales, ved hjælp af indstillingen **Forudbetal**, som vises på siden for betalingsindtastning. Medmindre virksomheden kræver forudbetalinger, består den typiske proces for en ægte kreditkortbetaling af to trin, hvor godkendelsen indhentes på tidspunktet for ordreindtastningen, og betalingen udlignes derefter og indhentes fra kundens kort på faktureringstidspunktet. Gavekortbetalinger anbefales forudbetaling, fordi gavekortets saldo skal reduceres med det samme, så kunden ikke kan anvende den samme værdi et andet sted. |
+| Kunde            | Funktionen **Debitor** for en betalingsmetode indebærer, at betalingen udlignes mod kundens kreditmaksimum eller sættes "på konto". I Retail kan en debitor få tildelt et kreditmaksimum, som kan være godkendt på tidspunktet for ordreindtastning. Betalinger, der foretages ved hjælp af en betalingsmåde, der er knyttet til funktionen **Debitor**, opretter et passiv på debitorens konto. Når salgsordren er faktureret, vises derefter en forfalden saldo. I disse situationer kan debitorer typisk sende en betaling i henhold til de oplyste betingelser. Du kan også anvende et kreditbilag på debitorens konto, som tidligere har været åbnet, til udligning af den forfaldne saldo. Bemærk, at selvom du definerer denne betalingsmetode, vises den ikke blandt valgmulighederne for betaling i callcenterets ordreindtastning, medmindre flaget **Tillad aconto** er angivet i debitorposten for den debitor, du arbejder med. Dette flag findes på fanen **Betalingsstandarder** i debitorposten. |
+| Betalingsmiddel fjern/variabel | Funktionen **Betalingsmiddel fjern/variabel** bruges ikke af callcenteret. Det er kun relevant, når du definerer de betalingsmetoder, som salgsstedet (POS) bruger i en butikskanal. |
 
--   Check på hold gør det muligt for medarbejdere i økonomiafdelingen at behandle ordrer, der er blevet sat på hold, fordi en check blev brugt som betalingsmetode, og grænsebeløbet for checken på hold blev overskredet. På hold kan frigives manuelt, eller det udløber automatisk i slutningen af den periode, der er konfigureret.
--   Du kan angive grænser, over hvilke refusioner, der udstedes via checks og kreditkort, skal godkendes manuelt. En refusion, der overstiger grænsebeløbet, føjes til godkendelseskøen. Når du godkender refusionen, kan retursalgsordren faktureres.
+Når der defineres betalingsmåder, skal de knyttes til en finanskonto eller bankkonto. Hvis du udelader dette trin, får brugerne vist fejl, når de forsøger at gemme betalingstypen.
 
+## <a name="refund-payment-methods"></a>Refusionsbetalingsmetoder
 
+For refusionsbehandlingsscenarier bruger Callcenter også nogle af de betalingsmåder, der er defineret i Debitor. Hvis du vil konfigurere disse betalingsmetoder, skal du gå til **Retail** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-refusionsmetoder**. Du skal udføre denne konfiguration for at behandle refusionschecks til debitorer. Hvis en debitor oprindeligt har betalt for en ordre ved hjælp af kontanter eller en check, vil brugeren muligvis sende debitoren en refusionscheck gennem Debitor. I så fald skal betalingstyperne for kontanter og check knyttes til den rette betalingsmetode i Debitor for at sikre, at refusionen behandles korrekt.
 
-
+Hvis en bruger behandler en returordre som en callcenter-bruger i Retail, men han eller hun ikke kan knytte returneringen til et oprindeligt salg, skal betalingsmetoden **Returnering** defineres i parametrene for Callcenter. Gå til **Retail** \> **Konfiguration af kanal** \> **Call center-konfiguration** \> **Call center-parametre**, og klik derefter på fanen **RMA/returnering** for at sikre i feltet **Betalingsmetode**, at der er defineret en betalingsmetode. Betalingsmetoden, bliver den betalingsmåde, der bruges til refusioner. Den vil typisk være defineret enten som betaling med check eller kundekonto.
 

@@ -1,9 +1,9 @@
 ---
 title: Lagerkladder
-description: "I denne artikel beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner."
-author: MarkusFogelberg
+description: "I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Lagerkladder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-I denne artikel beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
+I dette emne beskrives det, hvordan du kan bruge lagerkladder til at bogføre forskellige typer fysiske lagertransaktioner.
 
 Lagerkladder i Microsoft Dynamics 365 for Finance and Operations bruges til at bogføre fysiske lagertransaktioner af forskellige typer, som bogføring af afgange og tilgange, lagerbevægelser, oprettelse af styklister og afstemning af det fysiske lager. Alle disse lagerkladder bruges på samme måde, men de er opdelt i forskellige typer.
 
@@ -51,7 +50,7 @@ Du kan vælge mellem følgende lagerkladdetyper:
 
 ### <a name="movement"></a>Flytning
 
-Når du bruger en lagerbevægelseskladde, kan du føje omkostninger til et element, når du tilføjer lager, men du skal manuelt tildele de ekstra omkostninger til en bestemt finanskonto ved at angive en modkonto i Finans, når du opretter en kladde. Denne lagerkladdetype er nyttig, hvis du vil bogføre en udgift for en vare mod en anden afdeling, eller hvis du vil fjerne varer fra lageret til udgiftsformål.
+Når du bruger en lagerbevægelseskladde, kan du føje omkostninger til et element, når du tilføjer lager, men du skal manuelt tildele de ekstra omkostninger til en bestemt finanskonto ved at angive en modkonto i Finans, når du opretter en kladde. Denne lagerkladdetype er nyttig, hvis du vil overskrive standardbogføringskonti.
 
 ### <a name="inventory-adjustment"></a>Lagerregulering
 
@@ -61,8 +60,8 @@ Når du bruger en lagerreguleringskladde, kan du føje omkostninger til en vare,
 
 Du kan bruge overførselskladder for at overflytte varer mellem lokationer til oplagring, partier eller produktvarianter uden at tilknytte eventuelle omkostninger. Du kan f.eks. overføre varer fra et lagersted til et andet lagersted i samme firma. Når du bruger en overførselskladde, skal du angive lagerdimensionerne "fra" og "til" (for eksempel for lokation og lagersted). Den disponible lagerbeholdning af de definerede lagerdimensioner ændres herefter. Lageroverførsler afspejler omgående flytning af materialer. Lagersporing i transit spores ikke. Hvis lageret i transit skal spores, skal du i stedet bruge en overflytningsordre. Når du bogfører en overførselskladde, oprettes der to lagerposteringer for hver kladdelinje:
 
--   En lagerafgang på lokationen "fra"
--   En lagertilgang på lokationen "til"
+-   En lagerafgang ved lokationen "fra"
+-   En lagertilgang ved lokationen "til"
 
 ### <a name="bom"></a>Stykliste
 
@@ -78,11 +77,11 @@ Produktionsindlagringskladder fungerer som varemodtagelseskladder, men bruges ti
 
 ### <a name="counting"></a>Optælling
 
-Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage justeringer, der er nødvendige for at afstemme forskelle. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](tasks/define-inventory-counting-processes.md).
+Med optællingskladder kan du rette den aktuelle disponible lagerbeholdning, der er registreret for varer eller for grupper af varer, og derefter bogføre det faktiske fysiske antal, så du kan foretage de justeringer, der er nødvendige for at afstemme forskellene. Du kan knytte optællingspolitikker til optælling af grupper for at hjælpe gruppevarer, der har forskellige karakteristika, så disse elementer kan være inkluderet i en optællingskladde. Du kan f.eks. oprette optællingsgrupper for at tælle varer, der har en bestemt frekvens, eller for at tælle varer, når materiel falder til et bestemt niveau. Du kan få oplysninger om, hvordan du definerer optælling af grupper, i [Definer processer med lageroptælling (opgaveguide)](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Mærkatoptælling
 
-Mærkatoptællingskladder bruges til at tildele et nummereret mærkat til et antal parti. Mærkatet skal indeholde et mærkatnummer, varenummer og antal varer. For at sikre, at et mærkat kun bruges én gang, og at alle mærkater anvendes, skal hvert varenummer have et unikt sæt af mærkater, der har sin egen nummerserie. Tre statusværdier kan indstilles for hvert mærkat:
+Mærkatoptællingskladder bruges til at tildele et nummereret mærkat til et antal parti. Mærkatet skal indeholde et mærkatnummer, varenummer og antal varer. For at sikre, at et mærkat kun bruges én gang, og at alle mærkater anvendes, skal hvert varenummer have et unikt sæt af mærkater med sin egen nummerserie. Tre statusværdier kan indstilles for hvert mærkat:
 
 -   **Anvendt** – Varenummeret er optalt for dette mærkat.
 -   **Afvist** – Varenummeret er afvist for dette mærkat.
@@ -95,4 +94,30 @@ Der er kun adgang til en kladde for en bruger ad gangen. Hvis flere brugere skal
 
 ## <a name="posting-journal-lines"></a>Bogføre kladdelinjer
 Du kan bogføre kladdelinjer, du opretter til enhver tid, indtil du har låst en vare fra flere transaktioner. De data, du indtaster i en kladde, forbliver i den pågældende kladde, selv hvis du lukker kladden uden at bogføre linjerne.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Understøttelse af dataenhed for lagerkladder
+
+Dataenheder understøtter følgende typer integrationsmuligheder:
+-    Synkron service (OData)
+-  Asynkron integration
+
+Du kan finde flere oplysninger under [Dataenheder](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Ikke alle lagerkladder OData-aktiverede, så du kan ikke bruge Excel-dataconnectoren til at hente data, der er udgivet, opdateret og importeret tilbage til Dynamics 365 for Finance and Operations. 
+
+En anden forskel mellem kladdedataenhederne er muligheden for at bruge sammensatte enheder, der indeholder både hoved og linjedata. I øjeblikket kan du bruge de sammensatte enheder til:
+-   Lagerreguleringskladde
+-   Lagerbevægelseskladde
+
+Disse to lagerkladder understøtter kun scenariet *Initialisere lager* som en del af et importprojekt for dataadministration:
+-  Når der ikke er angivet et kladdenummer i hovedet, men en nummerserie for kladdetypen, opretter importjobbet automatisk kladdehoveder pr. 1000 linjer. Import af 2020 linjer resulterer f.eks. i følgende tre kladdehoveder:
+    -  Hoved 1: indeholder 1000 linjer
+    -  Hoved 2: indeholder 1000 linjer
+    -  Hoved 3: indeholder 20 linjer
+-  Det antages, at der findes entydige linjeoplysninger pr. lagerdimension, som kan være et produkt, et lager og en sporingsdimension. Det er derfor ikke muligt at importere kladdelinjer, når kun datofeltet varierer på linjerne i det samme importprojekt.
+
+## <a name="additional-resources"></a>Yderligere ressourcer
+
+[Dataenheder](../../dev-itpro/data-entities/data-entities.md)
 

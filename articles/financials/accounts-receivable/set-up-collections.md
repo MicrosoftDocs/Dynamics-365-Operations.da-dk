@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurere kredit og inkasso
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer inkassatorfunktionen
 
@@ -97,9 +96,9 @@ Hvis der ikke er angivet en sælger, bruges kundens primære sælger. Hvis der i
 Du kan finde flere oplysninger under følgende emner:
 
  - [Oprette et rykkerforløb](tasks/create-collection-letter-sequence.md)
- 
+
  - [Behandle rykkere](tasks/process-collection-letters.md)
- 
+
  - [Gennemse oplysninger om rykkere](tasks/review-collections-information.md)
 
 

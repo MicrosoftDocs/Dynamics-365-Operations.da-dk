@@ -3,12 +3,12 @@ title: Startside for omkostningsregnskab
 description: "Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for omkostningsregnskab."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startside for omkostningsregnskab
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Køreplan 
 
@@ -37,6 +37,7 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 [![Køreplan for omkostningsregnskab](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Hurtige links
+
 |      |   |
 |------|---|
 |  [Konfigurere basisenheder (eLearning)](https://mbspartner.microsoft.com/Home) (kræver CustomerSource-konto)  |[Opret dimensioner](cost-elements.md)  |

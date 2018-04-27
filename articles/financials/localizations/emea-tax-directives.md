@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="tax-directives-for-europe"></a>Momsvejledninger for Europa
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 EU-direktivet indeholder bestemmelser, der skal følges af alle medlemsstater, med hensyn til faktureringsregler og oplysninger, der skal medtages, når der oprettes fakturaer. EU-direktivet indeholder de oplysninger, der kræves af leverandører for deres kunder i EU. F.eks. kan en faktura indeholde en reference, der beskriver de juridiske grunde til en momssats på nul eller en momsundtagelse. Hvis en faktura justerer en tidligere udstedt faktura, f.eks. en kreditnota, skal der findes en utvetydig reference til den oprindelige faktura.
 

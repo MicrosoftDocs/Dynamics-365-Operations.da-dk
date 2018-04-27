@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-entries-for-a-cost-object"></a>Vise omkostningsposter for et omkostningsobjekt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan få vist omkostningsposter for et omkostningsobjekt. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er beregnet til omkostningscontrolleren.
 

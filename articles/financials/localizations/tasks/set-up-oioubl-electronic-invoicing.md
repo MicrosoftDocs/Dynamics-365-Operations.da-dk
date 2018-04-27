@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-oioubl-electronic-invoicing-denmark"></a>Konfigurere elektronisk OIOUBL-fakturering (Danmark)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår, hvordan du konfigurerer elektronisk OIOUBL fakturering. 
 

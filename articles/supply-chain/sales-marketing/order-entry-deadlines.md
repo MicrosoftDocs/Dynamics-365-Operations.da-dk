@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Ordreindtastningsfrister
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om frister for ordreindtastning. En ordreindtastningsfrist er et cut-off-tidspunkt, der bestemmer, om en kundeordre skal behandles (og opfyldes), som om den blev modtaget på den aktuelle dag eller næste dag.
 

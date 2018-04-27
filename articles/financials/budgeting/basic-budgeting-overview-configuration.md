@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>Budgetteringsoversigt 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Finance and Operations, skal kunne oprette rapporter over budget vs. faktiske tal. I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.
 

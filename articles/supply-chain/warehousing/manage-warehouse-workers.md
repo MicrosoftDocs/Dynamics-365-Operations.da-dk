@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics 365 Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 

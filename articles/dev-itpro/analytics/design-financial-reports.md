@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Vise og designe økonomirapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder øvelser, der hjælper dig med visning og oprettelse af økonomirapporter til Microsoft Dynamics 365 for Finance and Operations. Økonomirapportering består af en visuel oplevelse i Finance and Operations og en ClickOnce-rapportdesigner, hvor du kan oprette og redigere økonomirapporter.  
 

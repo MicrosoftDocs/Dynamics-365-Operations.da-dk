@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Glidende gennemsnit
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Glidende gennemsnit er en permanent kalkulationsmetode baseret på gennemsnitsprincippet, hvor omkostninger på lagerafgange ikke ændres, når indkøbsprisen ændres. Differencen er aktiveret og baseret på en proportional beregning. Det beløb, der er tilbage, udgiftsføres. 
 

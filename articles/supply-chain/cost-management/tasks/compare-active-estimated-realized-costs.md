@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Sammenligne aktive, estimerede og realiserede omkostninger for en produktionsordre
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsomkostningsafvigelse for en produktionsordre. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er beregnet til omkostningscontrolleren.
 

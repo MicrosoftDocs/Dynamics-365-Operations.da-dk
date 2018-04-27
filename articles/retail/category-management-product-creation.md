@@ -1,6 +1,6 @@
 ---
 title: Styring af produktkategorier
-description: "I dette emne beskrives, hvordan markedsføringschefer kan bruge Retail-produktkategorier til at administrere relationer mellem detailprodukthierarki og oplysninger om frigivne produkter."
+description: "I dette emne beskrives, hvordan markedsføringschefer kan bruge detailproduktkategorier til at administrere relationer mellem detailprodukthierarkiet og oplysninger om frigivne produkter."
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/23/2017
@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Administrere produktkategorier og produkter i Retail
 
-# <a name="enhanced-product-and-category-management"></a>Forbedret produkt- og kategoristyring
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+Dette emne beskriver en forbedret metode til styring af detailproduktkategorier og produkter i Microsoft Dynamics 365 for Retail. Disse forbedringer giver markedsføringschefer mulighed for at se en fælles struktur for produktegenskaber, der deles mellem produkthierarkiet i Retail og frigivne produktdetaljer.
 
-Dette emne beskriver en forbedret metode til styring af Retail-produktkategorier og produkter i Dynamics 365 for Retail. Disse forbedringer giver markedsføringschefer mulighed for at se en fælles struktur for produktegenskaber mellem produkthierarki i Retail og oplysninger om frigivne produkter.
+Yderligere oplysninger om administration af detailproduktkategorier i arbejdsområdet **Kategori og produktstyring**, skal du vælge feltet **Detailprodukthierarki**.
 
-Du kan få flere oplysninger om administration af Retail-produktkategorier ved at gå til **Detailproduktkategori** fra arbejdsområdet **Kategori og produktstyring** og notere den forbedrede struktur på siden **Detailproduktkategori**.
+Bemærk, at den forbedrede struktur på siden **Detailprodukthierarki** vises. I tidligere versioner af Retail var produktegenskaberne inddelt i *Grundlæggende produktegenskaber* og *Egenskaber for detailprodukt*, baseret på omfanget af deres anvendelighed. Egenskaber for detailprodukt er *globale* i omfanget af deres anvendelighed. For en bestemt produktegenskab i Retail deles den samme værdi således på tværs af alle juridiske enheder. I modsat fald er de grundlæggende produktegenskaber *specifikke for den juridiske enhed*. For en given grundlæggende produktegenskab kan værdien med andre ord variere på tværs af juridiske enheder baseret på de enkelte forretningsbehov for hver juridisk enhed.
 
-![Arbejdsområdet Kategori og produktstyring](media/LaunchRetailProductHierarchy.png)
+I den forbedrede struktur for produktkategorier i Retail er produktegenskaber logisk adskilte ud fra deres anvendelighed i en gruppe, så de afspejler detaljeformstrukturen formularstrukturen for de frigivne produktegenskaber.
 
-I tidligere versioner var produktegenskaberne inddelt i **Grundlæggende produktegenskaber** og **Produktegenskaber i Retail**, baseret på området for deres anvendelse. **Egenskaber for detailprodukt** var *globale* med hensyn til deres anvendelsesområde, dvs. for en given **Egenskaber for detailprodukt** deles samme værdi på tværs af alle juridiske enheder. **Grundlæggende produktegenskaber** er *specifikke for juridisk enhed*. For en given **Grundlæggende produktegenskab** kan værdien med andre ord variere på tværs af juridiske enheder baseret på de enkelte forretningsbehov.
+![Felterne grupperes ud fra egenskabernes anvendelighed](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-I den forbedrede struktur for detailproduktkategorien er produktegenskaber logisk adskilt baseret på deres anvendelse i en gruppe, for at afspejle detaljeformstrukturen i frigivne produkter.
+Du kan skifte mellem at administrere egenskaber, der er specifikke for juridiske enheder på tværs af alle juridiske enheder og administrere dem for en bestemt juridisk enhed.
 
-![Gruppering af felter baseret på deres anvendelsesområde](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+For at administrere egenskaber på tværs af alle juridiske enheder skal du vælge **Vis for alle juridiske enheder** (eller **Rediger for alle juridiske enheder**).
 
-Du kan skifte mellem at administrere specifikke egenskaber for juridisk enhed på tværs af alle juridiske enheder og styre dem for en bestemt juridisk enhed. For at gøre det skal du vælge enten **Vis/Rediger for alle juridiske enheder** eller **Vis/Rediger for en bestemt juridisk enhed**.
+![Få vist eller redigere for alle juridiske enheder](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-![Skifte visning mellem en enkelt juridisk enhed og alle juridiske enheder](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+For at administrere egenskaberne for en bestemt juridisk enhed, skal du vælge **Vis for en bestemt juridisk enhed** (eller **Rediger for en bestemt juridisk enhed**).
 
-![Skifte visning mellem en enkelt juridisk enhed og alle juridiske enheder](media/ToggleToEditForAllLegalEntities.PNG)  
+![Få vist og redigere for en bestemt juridisk enhed](media/ToggleToEditForAllLegalEntities.PNG)
 
-Sammenlignet med tidligere versioner kan en markedsføringschef også definere standardværdier i den nye Retail-produktkategoristruktur for et ekstra sæt produktegenskaber på et individuelt kategoriniveau. På tidspunktet for oprettelse af produktet nedarves disse standardproduktegenskabsværdier af et produkt baseret på deres tilknytning til en individuel kategori fra detailprodukthierarkiet. Disse nedarvede produktegenskaber kan også ændres for hvert produkt for at imødekomme individuelle virksomhedsbehov.
+Derudover kan en markedsføringschef i den forbedrede struktur for detailproduktkategorier nu også definere standardværdier for et ekstra sæt produktegenskaber for det enkelte kategoriniveau. Når der derefter oprettes produkter, bliver de tildelt standardværdierne for deres produktegenskaber ud fra tilknytningen af disse egenskaber til en bestemt kategori i produkthierarkiet i Retail. Disse nedarvede produktegenskaber kan også ændres for hvert produkt for at opfylde individuelle virksomhedsbehov.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Vælg egenskaber til opdatering af produkter fra kategoriformularen i Retail 
- 
-Du kan bruge denne nye forbedrede struktur for produktegenskaber til at vælge, hvilke opdaterede produktegenskaber der skal anvendes på tilknyttede produkter. 
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Valg af egenskaber til opdatering af produkter på siden Detailprodukthierarki
 
-![Ny forbedret visning af Opdater produkter](media/NewUpdateProductsEnhancedView.PNG) 
+Du kan bruge den nye forbedrede struktur for produktegenskaber til at vælge, hvilke opdaterede produktegenskaber der skal anvendes til de tilknyttede produkter. På siden **Detailprodukthierarki** i handlingsruden skal du vælge **Kategori**. Vælg derefter **Opdater produkter** for at åbne dialogboksen **Opdater produkter**.
 
-Markedsføringschefer kan ændre disse nedarvede egenskaber for hvert produkt, for at imødekomme individuelle virksomhedsbehov.
+![Dialogboksen Opdater produkter](media/NewUpdateProductsEnhancedView.PNG)
 
 

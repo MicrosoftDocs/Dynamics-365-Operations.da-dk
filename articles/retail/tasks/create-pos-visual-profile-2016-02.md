@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a>Oprette en visuel POS-profil . 
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår oprettelse af en ny visuel profil for POS. En visuel profil indeholder grundlæggende oplysninger, der bestemmer udseendet af POS-kasseapparater. Du kan oprette adskillige visuelle profiler og tildele bestemte profiler, der skal køre på bestemte kasseapparater. Proceduren bruger USRT-demodatafirmaet.
 

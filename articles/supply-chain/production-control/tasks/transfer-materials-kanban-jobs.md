@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>Overføre materialer med kanban-job (kun februar 2016)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fokuserer på at udtrække et kanban-job for at overføre materialer. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til lagerarbejderen.
 

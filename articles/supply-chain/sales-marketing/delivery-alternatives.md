@@ -20,24 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b2ecf2d5b14dac28a26fe172807ae2931cb4c3ca
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Leveringsalternativer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Salgordretagerne kan bruge siden Leveringsalternativer til at finde alternative indstillinger for ordreopfyldning.
 
 I Microsoft Dynamics 365 for Operations version 1611 (november 2016) kan salgsordretagere bruge siden **Leveringsalternativer** til at finde alternative indstillinger for ordreopfyldning. Det nye sidelayout giver et bedre overblik over alle alternative indstillinger. Det giver også ordretagerne mulighed for at se opfyldningsmuligheder andre steder end i det aktuelle firma. De kan nu få vist både interne salgsmuligheder og salgsmuligheder fra eksterne leverandører. Ved at sortere indstillingerne pr. leveringsdato kan salgsordretagerne få vist en intelligent liste over leveringsalternativer. Desuden hjælper parametre dem med nemmere at administrere de foreslåede leveringer. Da transporttiden kan påvirke leveringsdatoer, kan salgsordretagerne udforske de forskellige transportsmuligheder, som fragtmænd tilbyder. Der vises detaljerede oplysninger om hvert forslag, og ordretagerne kan derfor træffe velfunderede beslutninger direkte fra siden **Leveringsalternativer**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Åbne siden Leveringsalternativer
-Du kan åbne siden **Leverings****alternativer** fra salgsordrelinjen.
+Du kan åbne siden **Leverings** **alternativer** fra salgsordrelinjen.
 
 1.  Klik på **Produkter og forsyning** &gt; **Leveringsalternativer**.
 2.  Klik på **Linjedetaljer** &gt; **Levering** &gt; **Leveringsalternativer.**

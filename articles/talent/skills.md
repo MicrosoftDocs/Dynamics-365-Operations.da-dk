@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e9e66d3c6309c195e076fd86c31aa0adade97394
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a5b9f98b371dbad9b6b0538e0d9975dc5ed701c
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="align-workforce-skills-with-business-needs"></a>Justere arbejdsstyrkens færdigheder med virksomhedens behov
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Du kan spore færdigheder, som arbejdere, ansøgere eller kontakter har eller bør have for at udfylde deres roller effektivt. Du kan også angive de færdigheder, der kræves til et bestemt job.
 
@@ -55,8 +54,8 @@ Du kan oprette en kompetencesøgning for at finde en medarbejder, ansøger eller
 
 Ved hjælp af kompetencesøgningsprofiler kan du finde aktuelle medarbejdere eller ansøgere med kvalifikationer, der svarer direkte til virksomhedens behov.  Du kan f.eks. oprette en kompetencesøgningsprofil til en ledig stilling i organisationen. Ved at oprette en profil for et bestemt job og kopiere færdigheder, uddannelse og certifikater fra dette job til profilen kan du hurtigt søge efter arbejdere, ansøgere og kontakter, der opfylder et eller flere af de kriterier, der er angivet i profilen, og se en liste over de ansøgere, hvis kvalifikationer bedst svarer de færdigheder, der kræves for jobbet.
 
->**Bemærk** Det er kun arbejdere, ansøgere og kontaktpersoner, som du har valgt til at indgå i kompetencesøgninger, der kan vises på en resultatliste for kompetencesøgning eller indgå i en kompetenceprofil. Hvis du vil medtage en medarbejder, ansøger eller kontakt i kompetencesøgninger, skal du angive **Medtag i kompetencetilknytning** til Ja på de følgende sider:
-
+> **Bemærk** Det er kun arbejdere, ansøgere og kontaktpersoner, som du har valgt til at indgå i kompetencesøgninger, der kan vises på en resultatliste for kompetencesøgning eller indgå i en kompetenceprofil. Hvis du vil medtage en medarbejder, ansøger eller kontakt i kompetencesøgninger, skal du angive **Medtag i kompetencetilknytning** til Ja på de følgende sider:
+> 
 > + Arbejdstråd
 > + Medarbejder
 > + Ansøger

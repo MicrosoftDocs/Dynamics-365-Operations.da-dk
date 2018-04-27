@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-in-the-public-sector"></a>Finans i den offentlige sektor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
 

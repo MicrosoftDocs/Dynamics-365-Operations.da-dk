@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f711ef739e8b885f2f09586f34775e826b619c82
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurere mobilenheder til lagerstedsarbejde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 
@@ -204,12 +203,12 @@ Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive 
 <thead>
 <tr class="header">
 <th>Indstilling</th>
-<th>Beskrivelse</th>
+<th>Betegnelse</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ingen</td>
+<td>None</td>
 <td>Denne standardværdi behandler ikke arbejde.</td>
 </tr>
 <tr class="even">
@@ -279,7 +278,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="odd">
 <td>Foretag forankring efter</td>
-<td>Hvis du bruger forankring, skal du angive, om du vil forankre ved levering eller ved belastning.</td>
+<td>Hvis du bruger forankring, skal du angive, om du vil forankre ved levering eller ved lastning.</td>
 </tr>
 <tr class="even">
 <td>Id for arbejdsrevisionsskabelon</td>
@@ -368,7 +367,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="odd">
 <td>Systemgrupperingslabel</td>
-<td>Skriv den tekst, der informerer arbejderen om, hvad der skal scannes, når plukkearbejde er grupperet af Microsoft Dynamics 365 for Finance and Operations. Hvis du f.eks. bruger feltet <strong>ShipmentId</strong> til at gruppere plukkearbejde efter forsendelse, kan du skrive <strong>Forsendelses-id</strong> i feltet. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Du skal også vælge det felt, der skal grupperes efter, i feltet <strong>Systemgrupperingsfelt</strong>.</td>
+<td>Skriv den tekst, der informerer arbejderen om, hvad der skal scannes, når plukkearbejde er grupperet af Microsoft Dynamics 365 for Finance and Operations. Hvis du f.eks. bruger feltet <strong>ShipmentId</strong> til at gruppere plukkearbejdet efter forsendelse, kan du skrive <strong>Forsendelses-id</strong> i feltet. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Du skal også vælge det felt, der skal grupperes efter, i feltet <strong>Systemgrupperingsfelt</strong>.</td>
 </tr>
 <tr class="even">
 <td>Brug standarddata</td>
@@ -384,7 +383,7 @@ Indstillingerne er beskrevet i følgende tabel.
 </tr>
 <tr class="odd">
 <td>Kode for arbejdsskabelon</td>
-<td>Vælg den arbejdsskabelon, der skal oprette arbejdet for en proces. Hvis du f.eks. modtager en vare for en indkøbsordre, oprettes læg på lager-arbejdet baseret på arbejdsskabelonen. Hvis du ikke vælger en arbejdsskabelon, tildeler Microsoft Dynamics 365 for Finance and Operations en skabelon baseret på forespørgselskriterier. Yderligere oplysninger om arbejdsskabeloner finder du under <a href="control-warehouse-location-directives.md">Styre lagerarbejde med arbejdsskabeloner og lokalitetsdirektiver</a>.</td>
+<td>Vælg den arbejdsskabelon, der skal oprette arbejdet for en proces. Hvis du f.eks. modtager en vare for en indkøbsordre, oprettes læg på lager-arbejdet baseret på arbejdsskabelonen. Hvis du ikke vælger en arbejdsskabelon, tildeler Microsoft Dynamics 365 for Finance and Operations en skabelon baseret på forespørgselskriterierne. Yderligere oplysninger om arbejdsskabeloner finder du under <a href="control-warehouse-location-directives.md">Styre lagerarbejde med arbejdsskabeloner og lokalitetsdirektiver</a>.</td>
 </tr>
 </tbody>
 </table>

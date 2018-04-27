@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialeforbrug ved hjælp af en mobilenhed
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 I dette emne beskrives en arbejdsgang, der gør det muligt at registrere forbrug af råmaterialer i produktionen ved hjælp af en håndholdt enhed.
 

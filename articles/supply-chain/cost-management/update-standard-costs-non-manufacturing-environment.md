@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Opdatere standardomkostninger i et ikke-produktionsmiljø
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel indeholder vejledning i at opdatere standardomkostninger i et ikke-produktionsmiljø.
 

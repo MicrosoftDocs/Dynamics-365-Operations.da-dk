@@ -17,16 +17,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 2b3a384a3b9be686b10ce1f181664b0b9bbe9969
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-parameters"></a>Parametre for udgiftsstyring
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 -----------------------------
 
@@ -87,9 +87,10 @@ Parametrene styrer den generelle funktionsmåde i Udgiftsstyring.
 
 ### <a name="anti-corruption"></a>Antikorruption
 
-| **Felt**                             | **Beskrivelse**      |
-|---------------------------------------|------------------------------------------------------------------------|
-|**Vis antikorruptionsattest**   | Vælg denne indstilling for at få vist antikorruptionsteksten, når du opretter en ny udgiftsrapport. Derefter kan du aktivere specifikke udgiftskategorier, der kræver, at antikorruptionsattesten er valgt i udgiftsrapporten. F.eks. kan en gavekategori, der er relateret til en udgift i forbindelse med en regeringsembedsmænd, kræve, at medarbejderen bekræfter, at udgiften overholder firmaets politik vedrørende regeringsembedsmænd. |
-|**Meddelelse til afsender om antikorruption** | Angiv den tekst, medarbejderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen **Oversættelser** for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.         |
-|**Meddelelse til godkender om antikorruption**  | Angiv den tekst, godkenderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen **Oversættelser** for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.        |
+|                 <strong>Felt</strong>                 |                                                                                                                                                                                            <strong>Beskrivelse</strong>                                                                                                                                                                                             |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Vis antikorruptionsattest</strong>  | Vælg denne indstilling for at få vist antikorruptionsteksten, når du opretter en ny udgiftsrapport. Derefter kan du aktivere specifikke udgiftskategorier, der kræver, at antikorruptionsattesten er valgt i udgiftsrapporten. F.eks. kan en gavekategori, der er relateret til en udgift i forbindelse med en regeringsembedsmænd, kræve, at medarbejderen bekræfter, at udgiften overholder firmaets politik vedrørende regeringsembedsmænd. |
+| <strong>Meddelelse til afsender om antikorruption</strong> |                                                                                             Angiv den tekst, medarbejderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen <strong>Oversættelser</strong> for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.                                                                                             |
+| <strong>Meddelelse til godkender om antikorruption</strong>  |                                                                                             Angiv den tekst, godkenderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen <strong>Oversættelser</strong> for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.                                                                                             |
+
 

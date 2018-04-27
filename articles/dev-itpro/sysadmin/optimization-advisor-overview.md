@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Oversigt over Optimeringsrådgiver
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Microsoft Dynamics 365 Finance and Operations.
 

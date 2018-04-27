@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Føje analyser til arbejdsområder ved hjælp af Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Denne funktion understøttes i Dynamics 365 for Finance and Operations (version 7.2 og nyere).
@@ -50,7 +50,7 @@ Uanset om du udvider et eksisterende arbejdsområde i et program eller indfører
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Tilføje en .pbix-fil som en ressource
 Før du begynder, skal du oprette eller anskaffe den Power BI-rapport, du vil integrere i arbejdsområdet. Du kan finde flere oplysninger om oprettelse af analyserapporter i [Introduktion til Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgenstand.
 
 1. Opret et nyt projekt i den relevante model.
@@ -63,12 +63,12 @@ Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgensta
 5. Find .pbix filen med definitionen af analyserapporten, og klik derefter på **Åbn**.
 
     ![Dialogboksen Vælg en ressourcefil](media/analytical-workspace-select-resource.png)
-  
+
 Nu, hvor du har tilføjet .pbix filen som en ressource i Dynamics 365, kan du integrere rapporterne i arbejdsområder og tilføje direkte hyperlinks ved hjælp af menupunkter.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Føje et fanekontrolelement til et arbejdsområde i et program
 I dette eksempel skal vi udvide arbejdsområdet **Reservationsstyring** i Flådeadministration-modellen ved at tilføje fanen **Analyser** til definitionen af formularen **FMClerkWorkspace**.
- 
+
 Følgende illustration viser, hvordan formularen **FMClerkWorkspace** ser ud i designeren i Microsoft Visual Studio.
 
 ![FMClerkWorkspace-formular før ændringer](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 16. Højreklik, og vælg derefter **Remove pattern**.
 17. Højreklik igen, og vælg derefter **Add pattern** > **Workspace Tabbed**.
 18. Opret et build for at bekræfte ændringerne.
- 
+
 I følgende illustration vises designet, når disse ændringer er anvendt.
 
 ![FMClerkWorkspace efter ændringer](media/analytical-workspace-definition-after.png)
 
 Nu, hvor du har tilføjet de kontrolelementer til formularen, der skal bruges til at integrere arbejdsområderapporten, skal du definere størrelsen på det overordnede kontrolelement, så det kan rumme layoutet. Som standard er både siden **Filterrude** og siden **Fane** synlige i rapporten. Du kan dog ændre synligheden af disse kontrolelementer alt efter rapportens målforbruger.
- 
+
 > [!NOTE]
 > Til integrerede arbejdsområder anbefaler vi, at du bruger udvidelser for at skjule både siden **Filterrude** og siden **Fane** med henblik på konsistens.
- 
+
 Du har nu fuldført udvidelsen af programformulardefinitionen. Du kan finde flere oplysninger om, hvordan du bruger udvidelser til at foretage tilpasninger, i [Tilpasning: Overlejring og udvidelser](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Tilføje X ++-forretningslogik for at integrere et fremviserkontrolelement
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametre
 
-| Navn | Betegnelse |
-|---|---|
-| resourceName | Navnet på .pbix ressourcen. |
-| formGroupControl | Kontrolelementet til formulargruppen, som Power BI-rapportkontrolelementet skal anvendes på. |
-| defaultPageName | Standardsidenavnet. |
-| showFilterPane | En boolesk værdi, der angiver, om filterruden skal vises (**true**) eller skjules (**false**). |
-| showNavPane | En boolesk værdi, der angiver, om navigationsruden skal vises (**true**) eller skjules (**false**). |
-| defaultFilters | Standardfiltrene for Power BI-rapporten. |
+|       Navn       |                                                              Betegnelse                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Navnet på .pbix ressourcen.                                                     |
+| formGroupControl |                                    Kontrolelementet til formulargruppen, som Power BI-rapportkontrolelementet skal anvendes på.                                     |
+| defaultPageName  |                                                         Standardsidenavnet.                                                         |
+|  showFilterPane  |   En boolesk værdi, der angiver, om filterruden skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>).   |
+|   showNavPane    | En boolesk værdi, der angiver, om navigationsruden skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>). |
+|  defaultFilters  |                                              Standardfiltrene for Power BI-rapporten.                                              |
+
 

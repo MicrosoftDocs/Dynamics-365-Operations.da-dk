@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startside for varedisponering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kernefunktionen i Varedisponering gør det muligt for virksomheder at bestemme og afbalancere deres fremtidige behov for råmaterialer og evne til at opfylde virksomhedens mål. Varedisponering vurderer følgende: 
 
@@ -58,6 +57,7 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 [![Køreplan for varedisponering](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Hurtige links
+
 |      |   |
 |------|---|
 |        [Behovsplaner](master-plans.md)       |     [Generere en begrænset plan](./tasks/constrained-plan.md)  |

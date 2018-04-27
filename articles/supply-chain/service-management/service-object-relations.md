@@ -28,9 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-relations"></a>Serviceobjektrelationer 
 
-[!include[banner](../includes/banner.md)]
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan oprette serviceobjektrelationer mellem et serviceobjekt og en serviceaftale eller en serviceordre. Når du opretter en relation, knyttes serviceobjektet til serviceaftalen eller serviceordren.
 

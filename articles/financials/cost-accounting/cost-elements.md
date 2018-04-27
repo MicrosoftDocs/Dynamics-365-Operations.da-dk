@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-element-dimensions"></a>Dimensioner for omkostningselement
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Som et af de centrale elementer i omkostningsregnskabet bruges omkostningselementdimensioner til at kategorisere og spore, hvor omkostningerne flyder til. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Understøttelse af mobile stregkode
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Da Android er et open source-projekt, kan enhver producent af hardware til stregkodescannere til lagerbrug bygge en enhed til at køre Android-operativsystemet. En enhed er kun Android-kompatibel, hvis det kan køre programmer, der er skrevet til Android-kørselsmiljøet.
 En hardwareleverandør kan dog redigere og oprette overlejringer til Android-versionen, der kører på deres hardware. Microsoft kan ikke tage sig ansvar for at sikre, at en app til mobil stregkodescanning til Android er kompatibel med en producents hardware til stregkodescanning og den Android-version, der kører på den. 

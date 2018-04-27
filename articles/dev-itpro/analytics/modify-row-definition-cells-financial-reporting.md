@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
-ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger. 
 
@@ -104,26 +103,26 @@ Cellen **Formatkode** indeholder forskellige forudformaterede muligheder med hen
 2.  Dobbeltklik på cellen **Formatkode**.
 3.  Vælg en formatkode på listen. Følgende tabel beskriver formatkoderne og deres handlinger.
 
-| **Formatkode**               | **Fortolkning af formatkoden** | **Handling**                                                                                                                                                                                                     |
-|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (Ingen)                        |                                       | Rydder cellen **Formatkode**.                                                                                                                                                                               |
-| TOT                           | I alt                                 |  Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Totaler indeholder enkle operatorer som f.eks. **+** eller **-**.                                                     |
-| CAL                           | Kalkulation                           | Identificerer en række, der bruger matematiske operatorer i kolonnen **Relaterede formler/rækker/enheder**. Beregningerne indeholder komplekse operatorer, f.eks. **+**, **-**, **\***, **/** og **IF/THEN/ELSE**-sætninger. |
-| DES                           | Betegnelse                           | Identificerer en overskriftslinje eller en tom linje i en rapport.                                                                                                                                                        |
-| LFT RGT CEN                   | Venstre Højre Centreret                     |  Justerer rækkebeskrivelsesteksten på rapportsiden, uanset placeringen af teksten i kolonnedefinitionen.                                                                                              |
-| CBR                           | Rediger basisrække                       | Identificerer en række, der angiver basisrækken for kolonneberegninger.                                                                                                                                               |
-| COLUMN                        | Kolonneskift                          | Starter en ny kolonne i rapporten.                                                                                                                                                                             |
-| PAGE                          | Sideskift                            | Starter en ny side i rapporten.                                                                                                                                                                               |
-| \---                          | Enkelt understregning.                      | Placerer en enkelt streg under alle beløbskolonner i rapporten.                                                                                                                                                     |
-|  ===                          | Dobbelt understregning.                      | Placerer en dobbelt streg under alle beløbskolonner i rapporten.                                                                                                                                                     |
-| LINE1                         | Tynd streg                             | Tegner en enkelt tynd streg på tværs af siden.                                                                                                                                                                      |
-| LINE2                         | Tyk linje                            | Tegner en enkelt tyk linje på tværs af siden.                                                                                                                                                                     |
-| LINE3                         | Stiplet linje                           | Tegner en enkelt punkteret streg på tværs af siden.                                                                                                                                                                    |
-| LINE4                         | Tyk og tynd streg              | Tegner en dobbelt streg på tværs af siden. Den øverste streg er tyk, og den nederste streg er tynd.                                                                                                                       |
-| LINE5                         | Tynd streg og tyk streg              | Tegner en dobbelt streg på tværs af siden. Den øverste streg er tynd, og den nederste streg er tyk.                                                                                                                       |
-| BXB BXC                       | Række i boks                             | Tegner en boks omkring de rækker i rapporten, der begynder med rækken **BXB** og slutter med rækken **BXC**.                                                                                                               |
-| REM                           | Bemærkning                                | Identificerer en række, der er en kommentarrække, og som ikke skal udskrives i rapporten. En bemærkning kan f.eks. forklare dine formateringsteknikker.                                                            |
-| SORT ASORT SORTDESC ASORTDESC | Sortér                                  | Sorterer udgifter eller indtægter, sorterer en faktisk eller budgetafvigelsesrapport efter den største afvigelse eller sorterer rækkebeskrivelserne alfabetisk.                                                                   |
+| <strong>Formatkode</strong>  | <strong>Fortolkning af formatkoden</strong> |                                                                                                                             <strong>Handling</strong>                                                                                                                              |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            (Ingen)             |                                                    |                                                                                                                  Rydder cellen <strong>Formatkode</strong>.                                                                                                                   |
+|              TOT              |                       I alt                        |                                         Identificerer en række, der bruger matematiske operatorer i kolonnen <strong>Relaterede formler/rækker/enheder</strong>. Totaler indeholder enkle operatorer som f.eks. <strong>+</strong> eller <strong>-</strong>.                                         |
+|              CAL              |                    Kalkulation                     | Identificerer en række, der bruger matematiske operatorer i kolonnen <strong>Relaterede formler/rækker/enheder</strong>. Beregningerne indeholder komplekse operatorer som f.eks. <strong>+</strong>, <strong>-</strong>, <strong>\</strong><em>, **/</em><em> og **IF/THEN/ELSE</em>*-sætninger. |
+|              DES              |                    Betegnelse                     |                                                                                                             Identificerer en overskriftslinje eller en tom linje i en rapport.                                                                                                              |
+|          LFT RGT CEN          |                 Venstre Højre Centreret                  |                                                                                 Justerer rækkebeskrivelsesteksten på rapportsiden, uanset placeringen af teksten i kolonnedefinitionen.                                                                                 |
+|              CBR              |                  Rediger basisrække                   |                                                                                                         Identificerer en række, der angiver basisrækken for kolonneberegninger.                                                                                                         |
+|            COLUMN             |                    Kolonneskift                    |                                                                                                                        Starter en ny kolonne i rapporten.                                                                                                                        |
+|             PAGE              |                     Sideskift                     |                                                                                                                         Starter en ny side i rapporten.                                                                                                                         |
+|             \---              |                  Enkelt understregning.                  |                                                                                                            Placerer en enkelt streg under alle beløbskolonner i rapporten.                                                                                                            |
+|              ===              |                  Dobbelt understregning.                  |                                                                                                            Placerer en dobbelt streg under alle beløbskolonner i rapporten.                                                                                                            |
+|             LINE1             |                     Tynd streg                      |                                                                                                                    Tegner en enkelt tynd streg på tværs af siden.                                                                                                                     |
+|             LINE2             |                     Tyk linje                     |                                                                                                                    Tegner en enkelt tyk linje på tværs af siden.                                                                                                                    |
+|             LINE3             |                    Stiplet linje                     |                                                                                                                   Tegner en enkelt punkteret streg på tværs af siden.                                                                                                                    |
+|             LINE4             |              Tyk og tynd streg              |                                                                                             Tegner en dobbelt streg på tværs af siden. Den øverste streg er tyk, og den nederste streg er tynd.                                                                                             |
+|             LINE5             |              Tynd streg og tyk streg              |                                                                                             Tegner en dobbelt streg på tværs af siden. Den øverste streg er tynd, og den nederste streg er tyk.                                                                                             |
+|            BXB BXC            |                     Række i boks                      |                                                                            Tegner en boks omkring de rapportrækker, der begynder med rækken <strong>BXB</strong> og slutter med rækken <strong>BXC</strong>.                                                                            |
+|              REM              |                       Bemærkning                       |                                                               Identificerer en række, der er en kommentarrække, og som ikke skal udskrives i rapporten. En bemærkning kan f.eks. forklare dine formateringsteknikker.                                                                |
+| SORT ASORT SORTDESC ASORTDESC |                        Sortér                        |                                                                   Sorterer udgifter eller indtægter, sorterer en faktisk eller budgetafvigelsesrapport efter den største afvigelse eller sorterer rækkebeskrivelserne alfabetisk.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Angiv relaterede formler/rækker/enheder
 Cellen **Relaterede formler/rækker/enheder** har flere formål. Afhængigt af typen af række kan cellen **Relaterede formler/rækker/enheder** udføre en af følgende funktioner:
@@ -211,12 +210,12 @@ Sorteringskoder sorterer konti eller værdier, sorterer en faktisk eller budgeta
 
 ### <a name="select-a-sorting-code"></a>Vælge en sorteringskode
 
-1.  Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
-2.  Dobbeltklik på cellen **Formatkode**, og vælg derefter en sorteringskode.
-3.  I cellen **Relaterede formler/rækker/enheder** skal du angive intervallet for rækkekoder, der skal sorteres. For at angive et interval, skal du angive den første rækkekode, et kolon (:) og derefter den sidste rækkekode. Du kan f.eks. indtaste **160:490** for at angive, at intervallet er række 160 til og med række 490.
-4.  I cellen **Kolonnebegrænsning** skal du angive bogstavet for den rapportkolonne, der skal bruges til sortering. 
-> [!Note] 
-> Medtag kun beløbsrækker i en sorteringsberegning.
+1. Klik på **Rækkedefinitioner** i Report Designer, og åbn derefter den rækkedefinition, der skal ændres.
+2. Dobbeltklik på cellen **Formatkode**, og vælg derefter en sorteringskode.
+3. I cellen **Relaterede formler/rækker/enheder** skal du angive intervallet for rækkekoder, der skal sorteres. For at angive et interval, skal du angive den første rækkekode, et kolon (:) og derefter den sidste rækkekode. Du kan f.eks. indtaste **160:490** for at angive, at intervallet er række 160 til og med række 490.
+4. I cellen **Kolonnebegrænsning** skal du angive bogstavet for den rapportkolonne, der skal bruges til sortering. 
+   > [!Note] 
+   > Medtag kun beløbsrækker i en sorteringsberegning.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Eksempler på stigende og faldende kolonneværdier
 
@@ -258,41 +257,41 @@ Cellen **Tilsidesæt format** angiver den formatering, der anvendes til rækken,
 
 Formatering af valuta gælder for et regnskabsbeløb og inkluderer valutasymbolet. Følgende indstillinger er tilgængelige:
 
--   **Valutasymbol** – Valutasymbolet for rapporten. Værdien tilsidesætter indstillingen **Internationale indstillinger** for firmaoplysningerne.
--   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
--   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
-> [!Note] 
-> Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+- **Valutasymbol** – Valutasymbolet for rapporten. Værdien tilsidesætter indstillingen **Internationale indstillinger** for firmaoplysningerne.
+- **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
+- **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
+- **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+  > [!Note] 
+  > Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="numeric-formatting"></a>Formatering af tal
 
 Formatering af tal gælder for alle beløb og inkluderer ikke et valutasymbol. Følgende valgmuligheder er tilgængelige:
 
--   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
--   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
-> [!Note] 
-> Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+- **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
+- **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
+- **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+  > [!Note] 
+  > Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="percentage-formatting"></a>Formatering af procenter
 
 Formatering af procenter indeholder procenttegnet (%). Følgende valgmuligheder er tilgængelige:
 
--   **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
--   **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
-> [!Note] 
-> Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+- **Negative tal** – negative tal kan have et minustegn (-), de kan vises i parentes, eller de kan have en trekant (∆).
+- **Decimaler** – antallet af cifre, der skal vises efter decimaltegnet.
+- **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+  > [!Note] 
+  > Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 ### <a name="custom-formatting"></a>Brugerdefineret formatering
 
 Brug kategorien for brugerdefineret formatering til at oprette et brugerdefineret tilsidesættelse af format. Følgende valgmuligheder er tilgængelige:
 
--   **Type** – Det brugerdefinerede format.
--   **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
-> [!Note] 
-> Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
+- **Type** – Det brugerdefinerede format.
+- **Tekst for tilsidesættelse ved nulværdi** – teksten, der skal medtages i rapporten, når beløbet er 0 (nul). Denne tekst vises som den sidste linje i området **Eksempel**. 
+  > [!Note] 
+  > Hvis udskrivning undertrykkes for nulværdier eller ingen periodeaktivitet, undertrykkes denne tekst.
 
 Typen bør angive den positive værdi og derefter den negative værdi. Normalt angiver du et lignende format, som differentierer positive og negative værdier. Hvis du for eksempel vil angive, at både positive og negative værdier har to decimaler, men negative værdier vises i parenteser, skal du angive **0,00;(0,00)**. Følgende tabel viser brugerdefinerede formater, du kan bruge til at styre formatet af dine værdier. Alle eksempler er baseret på værdien 1234,56.
 
@@ -387,7 +386,7 @@ Som standard udskriver rapportdesigneren ikke rækker, der ikke har en tilsvaren
 3.  Gå til menuen **Filer**, og klik på **Gem** for at gemme ændringerne.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Bruge jokertegn og intervaller i en rækkedefinition
-Når du angiver en naturlig segmentværdi i dialogboksen **Dimensioner**, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive **6???** i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du angiver **6\***, returneres det samme resultat, men resultaterne omfatter også variabel bredde-værdier som **60** og **600000**. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra **12?0** til og med **12?4** erstattes jokertegnet i **12?0** for eksempel af den laveste værdi i tegnsættet, og jokertegnet i **12?4** erstattes af den højeste værdi i tegnsættet. 
+Når du angiver en naturlig segmentværdi i dialogboksen <strong>Dimensioner</strong>, kan du anbringe et jokertegn ? eller \*) i en hvilken som helst placering i et segment. Report Designer udtrækker alle værdierne for de definerede positioner uden at tage højde for jokertegnene. Rækkedefinitionen indeholder for eksempel kun naturlige segmentværdier, og naturlige segmenter har fire tegn. Ved at angive <strong>6???</strong> i en række beder du rapportdesigneren om at medtage alle konti, der har en naturligt segment-værdi, der starter med 6. Hvis du indtaster <strong>6\</strong><em>, returneres de samme resultater, men de omfatter også værdier med variabel bredde som f.eks. **60</em>* og <strong>600000</strong>. rapportdesigneren erstatter de enkelte jokertegn (?) med et komplet udvalg af mulige værdier, som omfatter bogstaver og specialtegn. I intervallet fra <strong>12?0</strong> til og med <strong>12?4</strong> erstattes jokertegnet i <strong>12?0</strong> for eksempel af den laveste værdi i tegnsættet, og jokertegnet i <strong>12?4</strong> erstattes af den højeste værdi i tegnsættet. 
 > [!Note] 
 > Du bør undgå at bruge jokertegn for start- og slutkonti i intervaller. Hvis du bruger jokertegn i den første konto eller den sidste konto, får du måske uventede resultater.
 
@@ -466,15 +465,15 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 
 ### <a name="update-a-set-of-dimension-values"></a>Opdatere en gruppe af dimensionsværdier
 
-1.  Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
-2.  Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
-3.  I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
-4.  Vælg det dimensionsværdisæt, der skal opdateres, på listen, og klik derefter på **Rediger**.
-5.  I dialogboksen **Rediger** skal du redigere de formelværdier, der skal medtages i sættet. 
-> [!Note] 
-> Hvis du tilføjer nye konti eller dimensioner, skal du sørge for at redigere de eksisterende dimensionsværdisæt, så ændringerne implementeres.
-6.  Dobbeltklik på cellen, og vælg den relevante operator, **Fra** konto og **Til** konto.
-7.  Klik på **OK** for at lukke dialogboksen **Rediger** og gemme ændringerne.
+1. Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
+2. Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
+3. I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
+4. Vælg det dimensionsværdisæt, der skal opdateres, på listen, og klik derefter på **Rediger**.
+5. I dialogboksen **Rediger** skal du redigere de formelværdier, der skal medtages i sættet. 
+   > [!Note] 
+   > Hvis du tilføjer nye konti eller dimensioner, skal du sørge for at redigere de eksisterende dimensionsværdisæt, så ændringerne implementeres.
+6. Dobbeltklik på cellen, og vælg den relevante operator, **Fra** konto og **Til** konto.
+7. Klik på **OK** for at lukke dialogboksen **Rediger** og gemme ændringerne.
 
 ### <a name="copy-a-dimension-set"></a>Kopiere et dimensionssæt
 

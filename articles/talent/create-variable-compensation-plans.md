@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Oprette variable kompensationsstrukturer
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Variabel løn udgør en medarbejders uregelmæssige løn såsom bonus eller aktiebonusser. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan bruge variabel kompensation og tilmelde en medarbejder til en variabel lønstruktur.
 
@@ -78,12 +77,12 @@ Når du er klar til at tilmelde medarbejdere i en variabel lønstruktur, er det 
 
 **Bemærk!** Berettigelsesregler bruges til at fastlægge berettigelse for både fast løn-strukturer og variable lønstrukturer. Berettigelsesreglerne bruger følgende feltet i posterne job, stilling og medarbejder til at afgøre, om en medarbejder er berettiget til en kompensationsplan:
 
--   På siden **Job**:
-    -   Feltet **Job**
-    -   Felterne **Funktion** og **Jobtype** under fanen **Jobklassificering**
-    -   Feltet **Niveau** under fanen **Kompensation**
--   På siden **Stillinger**: Felterne **Afdeling** og **Kompensationsområde**.
--   På siden **Medarbejdere**: Oplysningerne om fagforeninger, der er tilknyttet medarbejderen under fanen **Personlige oplysninger** &gt; **Fagforeninger** under fanen ****Arbejder****
+- På siden **Job**:
+  -   Feltet **Job**
+  -   Felterne **Funktion** og **Jobtype** under fanen **Jobklassificering**
+  -   Feltet **Niveau** under fanen **Kompensation**
+- På siden **Stillinger**: Felterne **Afdeling** og **Kompensationsområde**.
+- På siden <strong>Medarbejdere</strong>: De oplysninger om fagforeninger, som er forbundet med medarbejderen, under <strong>Personlige oplysninger</strong> &gt; <strong>Fagforeninger</strong> på fanen *<strong><em>Arbejder</em></strong>*
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Aktivér tilmelding for den variable lønstruktur
 

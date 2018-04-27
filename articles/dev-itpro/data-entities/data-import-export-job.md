@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjob
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Til at oprette og administrere job til import og eksport af data i Microsoft Dynamics 365 for Finance and Operations, kan du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
@@ -64,13 +64,15 @@ Vi anbefaler, at du giver dig tid til at vælge en relevant projektkategori til 
 Du kan føje bestemte objekter til et import- eller eksportjob eller vælge en skabelon, der skal anvendes. Skabeloner udfylder et job med en liste over enheder. Indstillingen **Anvend skabelon** er tilgængelig, når du har give jobbet et navn og gemmer jobbet.
 
 ### <a name="set-the-data-format-for-the-job"></a>Angiv jobbets dataformat
-Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporteres eller importeres. Du kan definere formater ved hjælp af feltet **Opsætning af datakilder**. Mange organisationer begynder med de formater, der er inkluderet som standard i demodatasættet. Her er en liste over nogle af disse formater:
+Når du vælger en enhed, skal du vælge formatet for de data, der skal eksporteres eller importeres. Du kan definere formater ved hjælp af feltet **Opsætning af datakilder**. Et dataformat for kilden er en kombination af **Type**, **Filformat**, **Rækkeafgrænser** og **Kolonneafgrænser**. Der findes også andre attributter, men disse er dem, der er vigtige at forstå. Følgende tabel viser de gyldige kombinationer.
 
-- AX (for data, der skal importeres eller eksporteres i det samme format, der bruges til Microsoft Dynamics 365 for Finance and Operations)
-- ColonSeparated
-- CSV
-- Excel
-- Pakke
+| **Filformat**        | **Række/kolonneafgrænser**                   | **XML-typografi**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-Ikke relevant-                     |
+| XML                    | \-Ikke relevant-                                      | XML-element XML-attribut |
+| Afgrænset, fast bredde | Komma, semikolon, tabulering, lodret streg, kolon | \-Ikke relevant-                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Anbring enhederne i rækkefølge
 Enheder kan sorteres i en dataskabelon eller i import- og eksportjob. Når du kører et job, der indeholder mere end én dataenhed, skal du sikre dig, at dataenhederne er i korrekt rækkefølge. Du anbringer primært enheder rækkefølge, så du kan løse eventuelle funktionelle afhængigheder mellem enheder. Hvis enheder ikke har funktionelle afhængigheder, kan de planlægges til parallel import eller eksport.
