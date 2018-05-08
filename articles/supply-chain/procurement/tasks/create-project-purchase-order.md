@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Oprette projektindkøbsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en projektindkøbsordre. Denne opgave bruger USSI-datasættet.
 

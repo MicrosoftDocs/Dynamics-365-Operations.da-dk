@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="batch-balancing"></a>Batchtilpasning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan batchtilpasningsprocessen understøttes. 
 

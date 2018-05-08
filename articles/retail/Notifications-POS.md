@@ -27,7 +27,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="show-order-notifications-in-the-point-of-sale"></a>Vis ordrebeskeder på POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I det moderne detailmiljø tildeles medarbejderne i butikken forskellige opgaver, f.eks. at hjælpe kunder, indtaste transaktioner, udføre optællinger af lagerbeholdninger og modtage ordrer i butikken. POS-klienten leverer ét enkelt program, hvor medarbejderne kan udføre alle disse og mange andre opgaver. Da der skal udføres forskellige opgaver i løbet af dagen, skal medarbejderne evt. have besked, når noget kræver deres opmærksomhed. Beskedstrukturen på POS'et er en hjælp, fordi forhandlere kan bruge den til at konfigurere rollebaserede beskeder. I Microsoft Dynamics 365 for Retail med programopdatering 5 kan disse beskeder kun konfigureres for POS-operationer.
 

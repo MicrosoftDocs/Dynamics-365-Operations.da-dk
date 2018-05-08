@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>Konfiguration af mellemregning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder.
 

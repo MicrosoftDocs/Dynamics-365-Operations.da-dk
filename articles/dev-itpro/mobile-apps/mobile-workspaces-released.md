@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Arbejdsområder til mobile enheder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder de arbejdsområder til mobilenheder, der er tilgængelige for brug i Dynamics 365 for Unified Operations-mobilappen.
 

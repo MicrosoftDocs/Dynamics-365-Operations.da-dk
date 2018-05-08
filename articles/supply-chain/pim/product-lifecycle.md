@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Status for produktlivscyklus 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En status for produktlivscyklus dokumenter livscyklusstatus for et frigivet produkt eller en produktvariant. Status for produktlivscyklus defineres af brugeren, typisk en produktchef eller produktmasterdatachef. Bestemte virksomhedsprocesser, f.eks. ved varedisponering, kan blive påvirket af en bestemt livscyklusstatus.   
 

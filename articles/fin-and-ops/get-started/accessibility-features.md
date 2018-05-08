@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accessibility-features"></a>Funktioner til øget tilgængelighed
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives den funktionalitet, der er udviklet til at hjælpe brugere med forskellige typer handicap mede at bruge Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Der er f.eks. funktioner til personer, der bruger synsteknologiske hjælpemidler som f.eks. Microsoft Windows Oplæser.
 

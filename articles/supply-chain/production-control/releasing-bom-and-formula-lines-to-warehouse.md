@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet. Når du frigiver en stykliste- eller formellinje til lagerstedet, afgør systemet først, om materialet allerede findes på indlagringslokationen for produktionen i produktionsanlægget, hvor materialet skal forbruges i produktionsprocessen.
 

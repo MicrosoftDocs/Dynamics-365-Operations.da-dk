@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I Finance and Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
 

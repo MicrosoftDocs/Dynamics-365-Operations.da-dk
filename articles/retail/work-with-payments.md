@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Betalingsmetoder i et callcenter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail omfatter konfigurationen af callcenter-kanalen en indstilling, der hedder **Aktivér ordrefuldførelse**. Denne indstilling er med til at sikre, at alle ordrer, som brugere af kanalen opretter, kun frigives til ordrebehandling, hvis de har en forudbetalt eller forhåndsgodkendt betaling, der ligger inden for godkendte tolerancer. Hvis indstillingen **Aktivér ordrefuldførelse** er aktiveret, kan callcenter-brugere angive betalinger i forhold til salgsordrer for debitorer ved hjælp af funktionerne til behandling af betalinger for Callcenter. Hvis indstillingen er slået fra, kan callcenter-brugere ikke bruge funktionerne til behandling af betaling, men de kan stadig anvende forudbetalinger på salgsordrer ved hjælp af standardfunktioner for Debitor.
 

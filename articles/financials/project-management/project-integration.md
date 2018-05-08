@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Integration med Microsoft Project-klienten
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Planlægning og vedligeholdelse af en projektplan kan være kompleks, så projektledere skal bruge værktøjer, som kan hjælper dem med at administrere denne opgave. Integration med Microsoft Project-klienten giver understøttelse til at åbne og styre et arbejdsopgavehierarki for projektet. Projektlederen kan publicere eventuelle ændringer tilbage til arbejdsopgavehierarki i Finance and Operations-projektet.
 

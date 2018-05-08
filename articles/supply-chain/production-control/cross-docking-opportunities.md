@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Cross-docking fra produktionsordrer til forsendelsesområder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du administrerer cross-docking-processen på materiale, der færdigmeldes fra en produktionslinje til et forsendelsesområde.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle debitorrabatter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kravet til punktet, hvor de godkendes som periodiseringer til debitor. Det fører dig gennem et specifikt eksempel for at forklare, hvordan de forskellige betingelser på rabatlinjerne påvirker de endelige beløb, der krediteres til kunden. Du skal bruge USMF-demodatafirmaet og udføre følgende opgaver, før du starter guiden: (1) gå til siden Debitorparametre, og udvid fanen Priser og derefter fanen Prisdetaljer. Kontrollér, at indstillingen Aktivér prisdetaljer er angivet til Ja. (2) Gå til rabataftalesiden, og vælg debitorrabataftalen: USMF-000001. Hvis feltet Status for godkendelsesarbejdsgang ikke er angivet til Godkendt, skal du klikke på Validering i handlingsruden for at godkende den.
 

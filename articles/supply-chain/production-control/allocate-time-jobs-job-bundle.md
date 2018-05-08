@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fordele tid til job i et jobbundt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste.
 

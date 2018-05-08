@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer. Kompensationsgitre kan deles mellem flere planer eller kopieres, når du opretter en ny lønstruktur.  Før du opretter et kompensationsgitteret, skal niveauer og referencepunkter konfigureres. I dette eksempel oprettes der en ny klassetype for kompensationsgitteret ved hjælp af demodata for niveauerne og referencepunkter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

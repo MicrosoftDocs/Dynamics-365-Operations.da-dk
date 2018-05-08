@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mandats-de-paiement-in-the-public-sector-in-france"></a>Mandats de paiement i den offentlige sektor i Frankrig
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mandat de paiement bruges af direktøren for at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet. Mandatet opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Oprette en stregkode for et produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du manuelt opretter en stregkode med varenummer M0001 som eksempel. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

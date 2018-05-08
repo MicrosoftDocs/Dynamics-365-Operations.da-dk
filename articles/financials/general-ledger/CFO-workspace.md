@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne forklares, hvordan du kan føje økonomiske dimensioner til arbejdsområdet Regnskabsdirektør (CFO), så de kan bruges til rapporter for finans- og budgetposteringer. Regnskabsdirektørens arbejdsområde har fanerne **Oversigt** og **Finans**. Rapporterne under disse to faner understøttes af to målpunkter: LedgerActivityMeasure og BudgetActivityMeasure. I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) er der en relation mellem disse to målpunkter og DimensionCombinationEntity-enheden. Derfor kan du vælge dimensioner.
 

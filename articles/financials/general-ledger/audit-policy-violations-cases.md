@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Overtrædelser af overvågningspolitik og sager
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I artiklen beskrives det, hvordan revisionssager genereres ud fra overtrædelser af overvågningspolitikregler. Den indeholder også oplysninger om de forskellige metoder for overvågningspolitikkernes brug af datointerval for dokumentvalg.
 

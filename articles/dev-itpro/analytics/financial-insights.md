@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Økonomisk indsigt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Økonomiske indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i Microsoft Dynamics 365 for Finance and Operations.
 Fokus for **økonomiske indsigt** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Konfigurere advarsler om svindel
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I dette emne forklares, hvordan du definerer kriterier og regler for placering af potentielt falsk salgsordrer på hold til fornyet gennemgang. Funktionen til gennemsyn af svindel bruges til at bestemme gyldigheden af oplysningerne i en salgsordre. Hvis oplysningerne i salgsordren viser sig at være tvivlsomme baseret på en organisations svindelkriterier og -regler, kan ordren sættes på hold for fornyet gennemgang af en administrator.
 

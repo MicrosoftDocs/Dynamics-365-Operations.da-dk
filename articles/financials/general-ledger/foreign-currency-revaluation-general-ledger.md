@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt. 
 

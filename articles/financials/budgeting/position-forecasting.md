@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Budgetteret stilling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgifterne til en organisation. Stillingsprognoser gør det muligt at planlægge disse udgifter og inkludere dem i planlægningen af budgetter.
 

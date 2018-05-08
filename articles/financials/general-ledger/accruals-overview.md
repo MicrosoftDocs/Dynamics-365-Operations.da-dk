@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accruals-overview"></a>Oversigt over periodiseringer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives periodiseringer, og hvordan du konfigurerer dem og opretter transaktioner.
 

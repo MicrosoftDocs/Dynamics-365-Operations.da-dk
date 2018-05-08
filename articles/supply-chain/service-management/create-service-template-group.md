@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Oprette en serviceskabelongruppe  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan sortere og filtrere serviceskabeloner ved at bruge serviceskabelongrupper.
 

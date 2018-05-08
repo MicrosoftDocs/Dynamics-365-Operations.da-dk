@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Oversigt over Onlinebutik
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikel indeholder oplysninger om detailonlinebutikker, og hvordan du konfigurerer dem i Microsoft Dynamics 365 for Retail.
 

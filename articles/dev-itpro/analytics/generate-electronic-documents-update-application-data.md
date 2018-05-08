@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a>Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan designe elektroniske rapporteringsformater (ER), der kan bruges i programmet Finans and Operations til at generere udgående elektroniske dokumenter. Du kan også designe ER-formater, der fortolker indgående elektroniske dokumenter, og bruge indholdet i disse dokumenter til at opdatere programdata. 
 

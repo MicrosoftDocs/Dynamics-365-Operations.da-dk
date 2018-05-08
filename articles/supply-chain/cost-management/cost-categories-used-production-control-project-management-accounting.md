@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål.
 

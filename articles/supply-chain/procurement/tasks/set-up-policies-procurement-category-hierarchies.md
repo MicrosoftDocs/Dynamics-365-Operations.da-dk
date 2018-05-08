@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Konfigurere politikker for indkøbskategorihierarkier
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en kategori. Reglerne er defineret for en bestemt indkøbspolitik. Kategoriadgangspolitikreglen styrer, hvilke indkøbskategorier medarbejdere har adgang til, når de opretter en indkøbsrekvisition. Når der oprettes en indkøbsrekvisition, afgøres den indkøbspolitik og den regel for kategoriadgang, der skal anvendes, af den juridiske enhed og den driftsenhed, som medarbejderen tilhører. Du kan bruge denne procedure i USMF-demodatafirmaet. Denne opgave vil typisk blive udført af en indkøbschef.
 

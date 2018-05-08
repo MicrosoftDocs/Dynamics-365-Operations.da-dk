@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 

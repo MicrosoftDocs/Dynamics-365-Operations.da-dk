@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Konfigurere udligning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I denne artikel beskrives de parametre, der bruges til udligning for både Kreditor og Debitor. 
 

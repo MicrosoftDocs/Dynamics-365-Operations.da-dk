@@ -29,7 +29,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="retail-statements"></a>Detailopgørelser
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail bruges processen til bogføring af opgørelsen til at redegøre for de transaktioner, der opstår i POS eller MPOS (Modern POS). Opgørelsesbogføringsprocessen bruger distributionsplanen til at trække en række POS-transaktioner til Headquarters-klienten (HQ). De parametre, der er defineret på siden **Detailparametre** og **Butikker**, bruges til at vælge de transaktioner, der trækkes til hver enkelt opgørelse.  
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-routes-february-2016-only"></a>Oprette ruter (kun februar 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave drejer sig om oprettelse af produktionsruter for et færdigt produkt og et halvfabrikatprodukt. Det er den femte opgave i styklisteberegningsserien. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
 

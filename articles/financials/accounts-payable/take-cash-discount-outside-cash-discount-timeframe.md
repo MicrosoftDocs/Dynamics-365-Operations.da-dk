@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Brug en kasserabat uden for kasserabatperioden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder to scenarier, der viser, hvordan en kasserabat kan anvendes, selvom betalingen sker uden for kasserabatperioden.
 

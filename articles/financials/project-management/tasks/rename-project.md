@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Omdøbe eller redigere et projektstadie
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Projektstadier kan fungere som en retningslinje for projektets livscyklus. Du kan definere de projektstadier, du vil medtage i projekterne i området Projektstadie på siden Parametre for projektstyring og regnskab. Dynamics 365 for Finance and Operations indeholder fem foruddefinerede projektstadier og tre brugerdefinerede stadier. Du kan opdatere navnet på et projektstadie, som du bruger til at spore status for projekter. Du kan også angive navne på brugerdefinerede statusnavne. Denne opgave viser, hvordan du omdøber eller redigerer et projektstadie og bruger USSI-datasættet.
 

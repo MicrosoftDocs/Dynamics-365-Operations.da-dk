@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Oprette og tildele politik for omkostningsfunktionalitet til en omkostningskontrolenhed
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Omkostningsfunktionalitet er klassificeringen af omkostninger som enten faste eller variable. En politik og de tilsvarende regler skal tildeles til en omkostningskontrolenhed, hvis politikken skal træde i kraft. Du kan bruge denne procedure til at oprette en politik og derefter tildele politikken til en omkostningskontrolenhed.
 

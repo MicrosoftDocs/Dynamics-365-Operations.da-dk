@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="service-intervals"></a>Intervaller for service
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Serviceaftaleintervallet angiver den frekvens, hvormed serviceordrelinjer oprettes til serviceaftalelinjer, når du opretter serviceordrer automatisk.
 

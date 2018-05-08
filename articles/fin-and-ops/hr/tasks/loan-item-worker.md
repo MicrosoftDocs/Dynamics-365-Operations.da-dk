@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="loan-items-to-a-worker"></a>Låne varer til en arbejder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du udlåner et emne til en arbejder og registrere arbejderen, der returnerer et emne. Arbejdere kan også anmode om at låne emner via deres Employee Self-Service-sider. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

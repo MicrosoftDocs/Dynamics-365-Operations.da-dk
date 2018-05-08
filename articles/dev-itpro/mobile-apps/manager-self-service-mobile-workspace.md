@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Arbejdsområdet Mit team til mobilenheder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 

@@ -28,9 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Oprette koncerngrupper og supplerende koncernkonti
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter føjer konti til gruppen. Denne procedure bruger demodatafirmaet USMF.
 

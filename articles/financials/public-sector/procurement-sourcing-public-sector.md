@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-in-the-public-sector"></a>Indkøb og forsyning i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning. Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb.
 

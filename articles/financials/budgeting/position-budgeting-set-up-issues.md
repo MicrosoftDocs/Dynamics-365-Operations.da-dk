@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Fejlfinding af stillingsbudgettering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel giver svar på spørgsmål, som du kan have, når du konfigurerer stillingsbudgettering. Emnet omhandler ofte stillede spørgsmål om, hvordan man opretter budgetomkostningselementer, kompensationsgrupper og kompensationsgitre. 
 

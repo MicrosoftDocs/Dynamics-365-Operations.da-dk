@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Lokationsstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Modulet Lokationsstyring til Dynamics 365 for Finance and Operations giver dig mulighed for at administrere lagerstedsprocesser i produktions-, distributions- og detailvirksomheder. Dette modul har en lang række funktioner, der understøtter lagerstedet på et optimal niveau, når som helst. Lokationsstyring er fuldt integreret med andre forretningsprocesser i Finance and Operations, f.eks. transport, produktion, kvalitetskontrol, køb, overførsel, salg og returneringer.
 

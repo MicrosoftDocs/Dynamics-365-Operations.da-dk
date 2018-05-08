@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Oprette dimensionsbaserede konfigurationer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt. Dette er den sidste procedure i serien, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration. Udførelse af denne procedure er afhængig af de data, der er oprettet i de foregående syv optagelser. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

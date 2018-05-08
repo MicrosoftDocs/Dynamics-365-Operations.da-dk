@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Måleenhed og lagerføringspolitikker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan standardenheder, enhedssekvenser og enhedsomregninger bruges i lagerprocesser.
 

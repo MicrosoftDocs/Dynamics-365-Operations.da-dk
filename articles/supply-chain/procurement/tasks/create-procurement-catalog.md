@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>Oprette et indkøbskatalog
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne vejledning viser, hvordan du opretter et indkøbskatalog. Denne opgave vil normalt udføres af en professionel indkøber. Du lærer også, hvordan medarbejdere kan bruge kataloget, når de opretter en indkøbsrekvisition. Før du kan oprette et katalog, skal der være et indkøbskategorihierarki i systemet. Hierarkiet arves af det nye katalog sammen med alle de produkter, der er i hierarkiet. Du kan bruge denne vejledning i demodatafirmaet USMF, hvor indkøbskategorihierarkiet er tilgængeligt, såvel som de eksempler, der bruges i trinnene i proceduren.
 

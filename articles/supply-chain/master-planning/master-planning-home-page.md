@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startside for varedisponering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kernefunktionen i Varedisponering gør det muligt for virksomheder at bestemme og afbalancere deres fremtidige behov for råmaterialer og evne til at opfylde virksomhedens mål. Varedisponering vurderer følgende: 
 

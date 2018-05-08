@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="three-way-matching-policies"></a>Trevejs-sammenholdelsespolitikker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder eksempler på trevejs-sammenholdelse.
 

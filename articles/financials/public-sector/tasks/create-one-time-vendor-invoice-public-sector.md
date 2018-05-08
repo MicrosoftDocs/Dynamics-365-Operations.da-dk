@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-one-time-vendor-and-invoice-in-the-public-sector"></a>Oprette en engangskreditor og -faktura i den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kreditorpost bruger værdier fra standardengangskreditorkontoen. Du kan få vist kontooplysningerne ved at gå til listesiden Alle kreditorer og derefter dobbeltklikke på kreditorkontonummeret for standardengangskreditoren. Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne. Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.
 

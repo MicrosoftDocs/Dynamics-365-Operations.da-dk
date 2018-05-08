@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Oversigt over udligning for centraliserede betalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derved fjernes behovet for at angive den samme postering i flere juridiske enheder, og der spares tid, idet processen til betalingsforslag, udligningsprocessen, redigering af åbne posteringer og redigering af lukkede posteringer strømlines for centraliserede betalinger. 
 

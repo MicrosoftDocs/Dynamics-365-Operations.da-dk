@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurere en min.-maks. genopfyldningsproces
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en ny genopfyldningsproces, som bruger strategien for minimal/maksimal genopfyldning. Når lagerbeholdningen falder under minimumniveauet, oprettes arbejde for genopfyldning af lokationen. Proceduren viser også, hvordan faste plukpladser kan tillade genopfyldning, selvom lageret falder under det minimale niveau, og hvordan du aktiverer genopfyldningsprocessen til at køre regelmæssigt ved hjælp af et batchjob. Disse opgaver udføres normalt af en lagerchef. Du kan køre denne procedure i USMF-demodatafirmaet ved hjælp af eksempelværdierne i noterne, eller du kan køre den for dine egne data. Hvis du bruger dine egne data, skal du sørge for, at du har et lagersted, der er aktiveret for lagerstedsstyringsprocesser.
 

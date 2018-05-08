@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-issue-deadline"></a>Deadline for fakturaudstedelse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel forklarer, hvordan du konfigurerer parametre for at beregne forfaldsdatoerne for udstedelse af debitorfakturaer og kreditorfakturaer i Den Europæiske Union (EU).
 

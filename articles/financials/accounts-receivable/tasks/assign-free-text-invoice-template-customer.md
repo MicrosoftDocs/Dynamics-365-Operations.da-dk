@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Tildele en skabelon til fritekstfakturaer til en debitor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaver viser, hvordan du tildeler en fritekstfakturaskabelon til en debitor. Denne opgave bruger USMF-demofirmaet og er beregnet til den bruger, der er ansvarlig for håndtering af og behandling af debitorfakturaer.
 

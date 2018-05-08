@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="welcome-to-human-resources"></a>Velkommen til Personale
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Oprette en indkøbsordre med en leveranceplan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en leveranceplan til en indkøbsordre. En leveranceplan bruges, når der anmodes om et antal i en ordre eller en kladde, som skal leveres i flere leverancer. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Denne procedure vil normalt ske via en indkøbsagent.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-with-derived-books"></a>Bogfør med afledte bøger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan afledte bøger bruges.
 

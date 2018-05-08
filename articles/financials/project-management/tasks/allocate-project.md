@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Fordele et projektbudget eller en budgetrevision på tværs af perioder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Når du indtaster et projektbudget eller en projektbudgetrevision, og før du sender budgettet eller revisionen til godkendelse, kan du allokere beløb på tværs af perioder. Hvis budgettet eller budgetrevisionen afvises, kan du også allokere beløbene, før du sender den igen. 
 

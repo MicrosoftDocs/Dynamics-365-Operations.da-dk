@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Oversigt over indkøb og forsyning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder en oversigt over den funktionalitet, der er tilgængelig i modulet Indkøb og forsyning.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Udvide funktionaliteten i Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Hvis du har oprettet Microsoft PowerApps, kan du starte disse programmer fra hyperlinks i Microsoft Dynamics 365 for Talent. Når du vil oprette adgang til dine programmer, skal du angive nogle oplysninger i Talent på en konfigurationsside, som du kan åbne fra arbejdsområdet **Systemadministration**.
 

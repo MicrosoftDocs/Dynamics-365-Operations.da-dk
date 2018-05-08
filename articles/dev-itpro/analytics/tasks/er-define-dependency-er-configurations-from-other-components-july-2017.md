@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components"></a>Definere afhængigheden af konfigurationer fra andre komponenter 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS).
 

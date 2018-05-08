@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-cash-denominations-for-pos"></a>Konfigurere kontantbeløbsangivelser for POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Kontantbeløbsangivelser for sedler og mønter kan defineres i administrationen til brug for kasserere, salgsassistenter og bestyrere i butikken fra POS. Disse værdienheder kan bruges som hjælp til optælling af kontanter for kasseoptællinger eller for hurtigt at gennemføre et salg.
 

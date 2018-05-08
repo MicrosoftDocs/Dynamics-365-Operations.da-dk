@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk værdi og afmærkning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 LIFO (Last in, First out) er en lagermodel, hvor de senest anskaffede (nyeste) tilgange afgår først. Afgange fra lageret udlignes mod de seneste tilgange på lageret baseret på datoen for lagertransaktioner. 
 

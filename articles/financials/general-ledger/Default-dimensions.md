@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Økonomiske dimensioner og bogføring 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Dette emne forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
 

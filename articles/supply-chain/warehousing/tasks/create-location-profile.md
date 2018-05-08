@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-location-profile"></a>Oprette en lokalitetsprofil.
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer. I denne procedure skal vi oprette en profil for en lokalitet, der ikke kræver id-kontrol. Vi aktiverer blandede varer og blandede lagerstatusser og tillader cyklusoptælling. Du kan bruge denne procedure i USMF-demodatafirmaet.
 

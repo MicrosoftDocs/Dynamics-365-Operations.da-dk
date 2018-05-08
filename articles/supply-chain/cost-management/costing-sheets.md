@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Kostprisark
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Opsætning af efterkalkulationsarket omfatter to målsætninger. Som den første målsætning skal du definere formatet for visning af omkostninger for solgte varer for en produceret vare eller en produktionsordre. Den formaterede visning kaldes et kostprisark. Som den anden målsætning skal du definere udgangspunktet for beregning af indirekte omkostninger. Opsætningen af efterkalkulationsarket bygger på kostprisgruppens funktion for visning af oplysninger og formlerne til beregning af indirekte omkostninger. De to mål for opsætning af efterkalkulationsark er beskrevet i denne artikel. 
 

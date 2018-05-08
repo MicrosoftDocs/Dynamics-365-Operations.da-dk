@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Administrere underleverandørarbejde i produktionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan underleverandøroperationer administreres i Microsoft Dynamics 365 for Finance and Operations. Det beskrives med andre ord, hvordan produktionsoperationer, der er tildelt til en ressource, administreres af en leverandør.
 

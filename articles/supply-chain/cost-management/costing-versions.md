@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Efterkalkulationsversioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om efterkalkulationsversioner, hvordan du vedligeholder dem, og de typer data, som du kan medtage i dem. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger.
 

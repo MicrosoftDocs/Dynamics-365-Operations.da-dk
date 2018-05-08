@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>Konfigurere funktionalitetsprofilen for en sælger
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du konfigurerer de indstillinger for en butiks funktionalitetsprofil, der gælder for sælgere. Proceduren bruger USRT-demodatafirmaet.
 

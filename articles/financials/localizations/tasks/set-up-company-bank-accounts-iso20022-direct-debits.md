@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a>Konfigurere firmas bankkonti for direkte ISO20022-debiteringer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave fører dig gennem oprettelse af firmaspecifikke bankkontooplysninger, der skal bruges til generering af kundebetalingsfiler. Denne procedure bruger formatet ISO 20022 for Direct Debit som eksempel. Andre formater kan kræve yderligere konfigurationsoplysninger som firma-id eller sorteringskode.
 

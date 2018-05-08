@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2018
 
 # <a name="corrective-invoicing"></a>Korrigerende fakturering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  > [!NOTE]
  > Dette emne gælder for juridiske enheder med en primær adresse i Danmark, Tyskland, Frankrig, Irland, Nederlandene eller Storbritannien.

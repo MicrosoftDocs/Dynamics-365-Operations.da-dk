@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Oprette en finanspost for driftsregnskab
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En finanspost for omkostningsregnskab repræsenterer den overordnede rapporteringsenhed. Den er defineret af en dimension for omkostningselement, statistisk dimension, regnskabskalender og valuta. Det er en uafhængig af begrebet juridiske enheder. En juridisk enhed og data, der kan knyttes til mange finansposter i omkostningsregnskab. Denne registrering bruger USP2-demodatafirmaet.
 

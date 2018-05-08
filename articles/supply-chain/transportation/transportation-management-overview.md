@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-overview"></a>Oversigt over transportstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne giver et overblik over funktionerne til transportstyring i Microsoft Dynamics 365 for Finance and Operations.
 

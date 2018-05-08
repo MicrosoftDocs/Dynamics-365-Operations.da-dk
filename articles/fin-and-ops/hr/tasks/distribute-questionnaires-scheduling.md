@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Udsende spørgeskemaer ved hjælp af planlægning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Planlægning af spørgeskemaet kan du planlægge og fordele spørgeskemaer til flere svarpersoner. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

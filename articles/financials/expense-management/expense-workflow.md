@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>Arbejdsgang for udgift
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan bruge arbejdsgangssystemet i Microsoft Dynamics 365 for Finance and Operations til at konfigurere en revisionsproces for udgiftsrapporter i Udgiftsstyring. Du kan angive en arbejdsgang, der bruger følgende kriterier til at bestemme, hvem der skal godkende udgiftsrapporter:
 

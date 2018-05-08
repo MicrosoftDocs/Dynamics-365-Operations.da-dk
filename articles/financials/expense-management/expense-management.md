@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Udgiftsstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Brug Udgiftsstyring til at oprette en integreret arbejdsgang, hvor du lagrer oplysninger om betalingsmetode, importerer kreditkorttransaktioner og sporer de penge, som medarbejderne bruger, når de pådrager sig udgifter for firmaet. Du kan også definere udgiftspolitikker og automatisere tilbagebetalingen af rejseudgifter. 
 

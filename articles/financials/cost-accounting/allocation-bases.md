@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Fordelingsgrundlag 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Et fordelingsgrundlag er det grundlag, som omkostningsregnskabet fordeler faste omkostninger på. Et fordelingsgrundlag kan være et antal, som f.eks. maskintimer, der bruges, kilowatttimer (kWh), der forbruges eller areal, der er optaget. Fordelingsgrundlag bruges oftest til at tildele faste omkostninger til lager, der er produceret. F.eks. fordeler en IT-afdeling sine udgifter i overensstemmelse med antallet af computere, som hver afdeling bruger.
 

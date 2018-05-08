@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="preliminary-budgets-and-apportionments-in-the-public-sector"></a>Foreløbige budgetter og fordelinger i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget. 
 

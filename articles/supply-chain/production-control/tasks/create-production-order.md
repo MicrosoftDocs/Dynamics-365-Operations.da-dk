@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="create-a-production-order"></a>Oprette en produktionsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en produktionsordre. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Dette er den første procedure ud af syv, der beskriver produktionsordrens livscyklus.
 

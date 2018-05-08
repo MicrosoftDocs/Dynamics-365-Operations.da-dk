@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit med fysisk værdi og afmærkning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode.
 

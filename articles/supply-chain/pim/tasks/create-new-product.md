@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-product"></a>Opret et nyt produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave viser, hvordan du opretter et nyt delt produkt. Den udføres normalt af en produktdesigner. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Registrere modtagelsen af varer for indkøbsordren
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du registrerer modtagelsen af varer direkte på en indkøbsordre. Du kan også registrere produktkvitteringen på lagerstedet og derefter bogføre det senere på indkøbsordren. Denne opgave udføres typisk af en indkøber eller en kreditorkoordinator. Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF. Eksemplet indeholder trin til oprettelse af en enkelt indkøbsordre, så du kan afspille proceduren som en opgave. Hvis du bruger fremgangsmåden på dine egne data, skal du starte med underopgaven for postering af modtagelsen af varerne.
 

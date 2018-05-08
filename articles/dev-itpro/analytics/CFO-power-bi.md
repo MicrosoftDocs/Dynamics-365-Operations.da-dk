@@ -25,7 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Power BI-indhold for regnskabsdirektørens oversigt
 
-[!INCLUDE [banner](../includes/banner.md)] 
+[!include [banner](../includes/banner.md)] 
 
 Dette emne beskriver Microsoft Power BI-indhold for **Regnskabsdirektørens oversigt**. Dette Power BI-indhold gælder for dem, der bruger Microsoft Dynamics 365 for Finance and Operations version 7.2. Hvis du bruger version 7.3 eller en nyere version, skal du se under [Økonomisk indsigt](financial-insights.md).
 

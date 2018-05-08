@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ændre en behovsprognose manuelt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du redigerer prognosen for en vare. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne registrering er beregnet til produktionsplanlæggeren. 
 

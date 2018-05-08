@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Sende og godkende projektbudgetrevisioner
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure indeholder oplysninger om revidering af et projektbudget. Du kan revidere et projektbudget lige så mange gange som du har behov for det, men du ikke kan se beløbet for en enkelt revision, hvis budgettet er blevet revideret mere end én gang. 
 

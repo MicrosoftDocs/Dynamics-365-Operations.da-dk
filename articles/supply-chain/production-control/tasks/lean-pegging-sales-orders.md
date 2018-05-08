@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Om udligning fra salgsordrer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure fokuserer på validering af udligningstræet fra en salgslinje, hvor varen produceres med kanbans. Efter validering af udligningstræet, er alle kanban-job planlagt. Dette er nyttigt for ordrescenarier, hvor ordretageren skal sikre, at produktionen kan påbegyndes straks. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til den avancerede ordretager, der arbejder i en lean virksomhed.
 

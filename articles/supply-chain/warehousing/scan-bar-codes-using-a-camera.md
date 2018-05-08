@@ -27,7 +27,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations – Lagersted
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af kameraet på en mobilenhed. 
 

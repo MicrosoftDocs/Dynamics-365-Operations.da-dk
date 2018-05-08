@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-accounts-payable"></a>Konfigurere kreditorer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives de sider, som du kan bruge til at konfigurere grundlæggende og valgfri funktioner for Kreditor i Microsoft Dynamics 365 for Finance and Operations. Der beskrives også de installationstrin, du skal fuldføre, før du begynder at konfigurere Kreditor.
 

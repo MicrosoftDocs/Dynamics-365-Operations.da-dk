@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="product-information-overview"></a>Oversigt over produktoplysninger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dette emne indeholder oplysninger om administration af produktoplysninger. Administration af produktoplysninger fungerer sammen med en fælles produktdefinition, kategorisering og identifikatorer på tværs af alle juridiske enheder, og også med bestemte konfigurationer af et produkt, så det passer til forretningsprocesserne. 
 

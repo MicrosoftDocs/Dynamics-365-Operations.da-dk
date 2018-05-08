@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Oprette en juridisk enhed
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En juridisk enhed er en organisation, der er identificeret ved at være registreret hos en juridisk myndighed. Juridiske enheder kan indgå kontrakter og skal udarbejde opgørelser med afrapportering af deres præstation. I følgende procedure beskrives det, hvordan en juridisk enhed oprettes. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

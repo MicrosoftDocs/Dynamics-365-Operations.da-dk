@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a>Oprette et halvfærdigt produkt (kun februar 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave drejer sig om oprettelse af et halvfabrikataprodukt. Det er den anden opgave i styklisteberegningsserien. Det demodatafirma, der bruges til at oprette denne opgave, er USMF.
 

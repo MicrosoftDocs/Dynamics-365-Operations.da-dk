@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Tilføje til performancekladde og sende ros til en person
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode. Du kan også rose handlinger udført af en kollega fra kladden. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 

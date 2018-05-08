@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-groups"></a>Kostprisgrupper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostgrupper udgør grundlaget for segmentering og analyse af kostbidraget i en færdigvares beregnede omkostninger, såsom kostbidrag til materialer, arbejdsløn og indirekte omkostninger. Der anvendes flere synonymer for kostgruppesegmentering i produktionsmiljøer, f.eks. kostprisopdeling eller klassificering af omkostninger. 
 

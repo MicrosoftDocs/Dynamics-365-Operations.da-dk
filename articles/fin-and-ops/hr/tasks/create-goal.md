@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-goal"></a>Oprette et mål
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål til en evaluering. Denne procedure blev oprettet ved hjælp af demodatafirmaet USMF. Denne procedure er til en funktion, der blev tilføjet i Dynamics 365 for Operations, version 1611.
 

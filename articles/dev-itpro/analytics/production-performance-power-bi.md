@@ -26,7 +26,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="production-performance-power-bi-content"></a>Power BI-indhold til produktionsperformance
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Produktionsperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 

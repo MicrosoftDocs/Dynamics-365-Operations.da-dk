@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Konfigurere et finanskontoalias
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer. Denne procedure bruger demodatafirmaet USMF.
 

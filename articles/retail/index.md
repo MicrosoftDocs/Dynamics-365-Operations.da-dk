@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-dynamics-365-for-retail"></a>Velkommen til Dynamics 365 for Retail
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Retail er en altomfattende detailhandelsløsning, der sikrer en ensartet handel på tværs af alle kanaler. Det omfatter salg, mobilitet, intelligence og produktivitet, som kan hjælpe detailhandlere og deres medarbejdere med at opnå mere på en måde, hvor skyen og mobilen kommer i første række. Retail tilbyder omfattende support til driften af en lang række forretningsprocesser, som merchandising, lager og kanaladministrationsfunktioner. Det indeholder også fængslende kundeoplevelser på tværs af alle kontaktpunkter.
 

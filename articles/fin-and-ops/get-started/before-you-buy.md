@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Før du køber 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Er dy nybegynder i Dynamics 365 for Finance and Operations? Vi har sammensat en trinvis vejledning, som du kan bruge, uanset om du stadig vurderer Finance and Operations eller er klar til at foretage et køb.
 

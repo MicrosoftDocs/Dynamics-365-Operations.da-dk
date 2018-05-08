@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="eu-entry-certificates"></a>EU-postcertifikater
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om postcertifikater i den Europæiske Union (EU).
 

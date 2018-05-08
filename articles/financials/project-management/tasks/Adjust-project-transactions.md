@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Reguler projektposteringer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide viser, hvordan du justerer en transaktion på et projekt. Du kan dog regulere projekttransaktioner én ad gangen, eller du kan vælge på en liste over alle projekttransaktioner. Denne opgave fuldføres normalt af projektlederen. Opgaveguiden bruger USSI-datasættet.
 

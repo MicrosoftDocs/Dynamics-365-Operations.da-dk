@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Opfyldning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring. Oplysningerne i dette emne gælder ikke for lagerstedsløsninger, der findes i Lagerstyring.
 

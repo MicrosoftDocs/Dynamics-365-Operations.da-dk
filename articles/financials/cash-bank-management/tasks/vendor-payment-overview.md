@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Oversigt over kreditorbetalinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide fører dig gennem forskellige metoder, der bruges til at oprette kreditorbetalinger, herunder hvordan du bruger et betalingsforslag eller manuelt angiver en engangsbetaling. Denne procedure bruger demofirmaet USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger. 
 

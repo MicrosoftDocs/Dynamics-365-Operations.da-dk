@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Oprette et rykkerforløb
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne opgaveguide til at oprette et rykkerforløb. Denne opgave bruger demofirmaet USMF.
 

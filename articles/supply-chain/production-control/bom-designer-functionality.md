@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funktioner i styklistedesigneren
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives det, hvordan du kan bruge siden Styklistedesigner til at designe og arbejde med træstrukturer til styklister. Du kan klikke på Konfiguration for at vælge forskellige konfigurationer og angive, hvilke oplysninger der skal vises på linjerne i træet.
 

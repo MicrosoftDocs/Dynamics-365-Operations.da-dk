@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Finanskladdetyper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="performance-management-overview"></a>Oversigt over performancestyring
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.  
 

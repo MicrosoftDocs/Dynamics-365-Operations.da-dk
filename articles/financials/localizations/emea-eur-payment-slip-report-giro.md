@@ -27,7 +27,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="payment-slip-report-for-europe"></a>Indbetalingskortrapport for Europa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om indbetalingskortrapporter for Europa.
 

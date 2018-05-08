@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-a-recruiting-process"></a>Administrere en rekrutteringsproces
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives et koncept, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces, herunder arbejdet med at annoncere ledige stillinger og rekruttere ansøgere, spore oplysninger om ansøgeren og ansøgningen, interviewe ansøgere og vælge en eller flere kandidater til at udfylde de ledige stillinger i organisationen.
 

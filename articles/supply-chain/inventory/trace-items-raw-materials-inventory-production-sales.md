@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing af varer og råvarer i lager, produktion og salg
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge varesporing til at identificere, hvor varer eller råvarer er blevet brugt, i øjeblikket bruges eller skal bruges i produktions- og salgsprocesser.
 

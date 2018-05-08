@@ -27,7 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
 

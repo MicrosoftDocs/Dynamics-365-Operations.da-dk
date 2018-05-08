@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med [Omkostningsstyring (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du arbejde med vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver. Det er processen med at definere, administrere og rapportere [Lagerregnskab](cost-object.md) og [Produktionsregnskab](bom-calculations.md).
 

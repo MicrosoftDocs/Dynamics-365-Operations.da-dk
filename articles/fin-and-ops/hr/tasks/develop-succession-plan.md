@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>Udarbejde en efterfølgerplan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Efterhånden som organisationen vokser, og du overveje planlægning af efterfølger, kan du eventuelt søge efter en person med færdigheder, der ligner en anden persons færdigheder.  Kompetencesøgning giver dig mulighed for at analysere dine eksisterende medarbejdere og ansøgere, for at se, om de har færdighederne for en værdsat medarbejder. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

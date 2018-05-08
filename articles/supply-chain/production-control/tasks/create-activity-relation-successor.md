@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-activity-relation-successor"></a>Oprette aktivitetsrelation: Efterfølgende aktivitet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Flowet af aktiviteter i et lean produktionsflow dokumenteres via aktivitetsrelationer. Denne optagelse viser, hvordan du opretter en aktivitetsrelation.
 

@@ -27,9 +27,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-order-approval-mobile-workspace"></a>Arbejdsområdet Godkendelse af indkøbsordre til mobilenheder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Godkendelse af indkøbsordre** på mobilenheder. I dette arbejdsområde kan du få vist indkøbsordrer og reagere på dem med handlinger. Du kan f.eks. godkende eller afvise en indkøbsordre.
  

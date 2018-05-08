@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Godkende poster i indbakke for ansøgninger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du gennemser ansøgninger, der modtages via Employee Self-Service. Ud over at gennemgå ansøgningerne kan du godkende de poster i indbakken for ansøgninger, som du vælger. Poster i indbakke for ansøgninger repræsenterer ansøgninger, der er sendt til dit firma. Når du har godkendt en post, oprettes en ansøgerpost for den person, der har sendt ansøgningen. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a>Tilføje en certificeringstype til en kreditor i den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Tilføje en eksisterende aktivitet til en produktionsflowversion
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Når du opretter nye versioner af produktionsflow, kan du vælge at føje aktiviteter, der er oprettet for de ældre versioner, til den nye version. Denne fremgangsmåde viser, hvordan du kan oprette en ny version for et eksisterende produktionsflow uden at kopiere aktiviteterne. I næste trin føjes der en eksisterende aktivitet til den nye version. 
 

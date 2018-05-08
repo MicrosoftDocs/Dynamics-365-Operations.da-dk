@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>Opret en driftsenhed
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En driftsenhed er en organisation, der bruges til at opdele administrationen af økonomiske ressourcer og driftsprocesser i et firma. Personer i en driftsenhed er forpligtet til at maksimere brugen af knappe ressourcer, til at forbedre processer og til at redegøre for deres præstation. Typerne af driftsenheder inkluderer bærere, virksomhedsenheder, afdelinger og værdistrømme. Du kan bruge følgende procedure for at oprette en driftsenhed. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

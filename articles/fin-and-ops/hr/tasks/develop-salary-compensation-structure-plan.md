@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Udarbejde løn-/kompensationsstruktur og -planer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide fører dig gennem processen med at oprette en fast lønstruktur og sætte medarbejdere i stand til at blive tilmeldt strukturen via berettigelsesregler. Demodatafirmaet, der bruges til at oprette denne opgave, er USMF, og opgaven er beregnet til ledere for kompensation og frynsegoder.
 

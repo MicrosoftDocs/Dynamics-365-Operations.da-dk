@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Regulere lagerbeholdninger på lagerstedet (grundlæggende lagerstyring)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fører dig gennem processen med at oprette og bogføre en lagerreguleringsjournal for at justere lagerbeholdningerne af varer på lageret. Du skal have oprettet et lagerjournalnavn for lagerreguleringer, før du begynder på dette. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data. Disse opgaver udføres normalt af en lagermedarbejder.
 

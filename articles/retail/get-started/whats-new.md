@@ -26,11 +26,11 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail"></a>Nyheder eller ændringer i Dynamics 365 for Retail
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner og ændringer i de seneste versioner af Microsoft Dynamics 365 for Retail.
 
-[!INCLUDE [release notes](../includes/release-notes.md)]
+[!include [release notes](../includes/release-notes.md)]
 
 ## <a name="releases-of-dynamics-365-for-retail"></a>Versioner af Dynamics 365 for Retail
 

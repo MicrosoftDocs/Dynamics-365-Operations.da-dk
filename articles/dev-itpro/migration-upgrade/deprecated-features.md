@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver funktioner, der er blevet fjernet eller forældet i Dynamics 365 for Finance and Operations.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Oprette en bankfacilitetsaftale for garantien
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgave opretter en bankfacilitetsaftale til behandling af garantien. Denne opgave bruger demofirmaet USMF. 
 

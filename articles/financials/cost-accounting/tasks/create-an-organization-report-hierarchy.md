@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Oprette et organisationsrapporthierarki
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan bruge denne procedure til at oprette et rapporthierarki til organisationsrapportering. Formålet med denne registrering er at føre dig gennem dimensionshierarkiet, så du kan fortsætte, indtil rapporteringsstrukturen for hele organisationen er oprettet. Denne registrering bruger USP2-demodatafirmaet.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Konfigurere automatisk fragtafstemning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du konfigurerer data til automatisk fragtafstemning. Det udføres typisk af en lagerchef. Du kan bruge denne procedure i USMF-demodatafirmaet.
 

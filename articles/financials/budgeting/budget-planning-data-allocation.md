@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Datafordeling til budgetplanlægning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives de forskellige fordelingsmetoder, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations, og hvordan de kan bruges.  
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Bruge eksterne kataloger til PunchOut e-indkøb
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ved hjælp af eksterne kataloger til PunchOut-e-indkøb skal du ikke vedligeholde oplysninger om dine kreditorers produkter i dine egne masterdata. I stedet konverteres indkøbsvognen på en leverandørs websted til rekvisitionslinjer, der har de korrekte produktoplysninger. 
 

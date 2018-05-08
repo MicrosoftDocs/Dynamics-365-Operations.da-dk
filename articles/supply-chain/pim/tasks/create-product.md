@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Oprette et produkt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure gennemgår oprettelse af et nyt produkt i detailprodukthierarkiet. Demodatafirmaet, der bruges til at oprette denne opgave, er USRT, og denne opgave er beregnet til markedsføringschefen og produktdesigneren.
 

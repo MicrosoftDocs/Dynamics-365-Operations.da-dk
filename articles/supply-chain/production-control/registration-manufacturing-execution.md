@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Registrering for produktionsudførelse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver vigtige begreber og udtryk, som du skal kunne forstå for at konfigurere og bruge produktionsudførelse. 
 

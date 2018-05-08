@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Definere ressourcegruppe for diskret produktion
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En ressourcegruppe er et sæt operationsressourcer, der normalt svarer til den fysiske organisation af arbejdsceller, som defineret af gule streger på produktionen. Denne fremgangsmåde viser, hvordan du definerer en ressourcegruppe til brug i separat produktion. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.
 

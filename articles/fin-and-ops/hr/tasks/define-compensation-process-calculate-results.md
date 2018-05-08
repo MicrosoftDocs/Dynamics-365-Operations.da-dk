@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definere kompensationsproces og beregne resultater
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonusser for medarbejdere, der er tilmeldt faste og variable kompensationsstrukturer. Kompensationsprocesser kan køres flere gange for at udføre "what-if"-analyser, som kontrollerer, at alle ændringer og indstillinger er korrekte. Denne procedure opretter en kompensationsproces, kører processen og viser resultaterne. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

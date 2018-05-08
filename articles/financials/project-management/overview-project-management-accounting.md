@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Projektstyring og regnskab
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat.  
 

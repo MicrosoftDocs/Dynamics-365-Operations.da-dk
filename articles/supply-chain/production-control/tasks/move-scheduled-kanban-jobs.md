@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="move-scheduled-kanban-jobs"></a>Flytte planlagte kanban-job
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fokuserer på flytning af planlagte kanban-procesjob til en anden periode. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til tilsynsførende eller produktionsplanlæggere, der arbejder med kanbans.
 

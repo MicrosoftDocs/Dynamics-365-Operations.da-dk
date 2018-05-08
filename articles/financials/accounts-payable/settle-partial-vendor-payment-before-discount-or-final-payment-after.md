@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis kreditorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel fører dig gennem et scenario, hvor der foretages flere delvise betalinger, hvor nogle ligger inden for kasserabatperioden og andre uden for kasserabatperioden.
 

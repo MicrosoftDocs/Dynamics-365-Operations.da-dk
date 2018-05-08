@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Varedisponering og funktionen til flere lokationer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den overordnede planlægning tager indretningen af stedet og lagerstedets og lagerets dimensioner i betragtning. 
 

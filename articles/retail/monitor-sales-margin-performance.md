@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Overvåge salgs- og avanceudvikling
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dynamics 365 for Retail.
 

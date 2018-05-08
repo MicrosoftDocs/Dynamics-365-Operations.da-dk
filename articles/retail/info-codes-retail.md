@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Infokoder
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denne artikel indeholder en oversigt over oplysninger om infokoder, infokodegrupper, og hvordan de bruges.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Mobilarbejdsområdet Firmaadressekartotek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Firmaadressekartotek** på mobilenheder. I dette arbejdsområde kan brugerne se og kontakte andre medarbejdere i organisationen.
 

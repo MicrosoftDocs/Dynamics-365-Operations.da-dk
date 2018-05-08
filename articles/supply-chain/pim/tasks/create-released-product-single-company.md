@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Oprette et frigivet produkt for et enkelt firma
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde beskriver, hvordan du opretter et enkelt frigivet produkt inden for rammerne af en enkelt juridisk enhed. Når et frigivet produkt er oprettet, er det umiddelbart kun tilgængelig i denne enhed. Du kan gennemgå denne procedure i USMF-demodatafirmaet. Denne opgave udføres normalt af en produktdesigner.
 

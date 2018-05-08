@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal installation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokalt). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.
 
