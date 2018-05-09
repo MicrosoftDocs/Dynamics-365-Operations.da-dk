@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1232e4ec7676403c826787b724b6cca82c1e93f6
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="alerts-overview"></a><span data-ttu-id="c05db-104">Oversigt over påmindelser</span><span class="sxs-lookup"><span data-stu-id="c05db-104">Alerts overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a><span data-ttu-id="c05db-105">Om påmindelser</span><span class="sxs-lookup"><span data-stu-id="c05db-105">About alerts</span></span>
 <span data-ttu-id="c05db-106">Påmindelser udgør et beskedsystem for kritiske hændelser i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c05db-106">Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="c05db-107">Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen.</span><span class="sxs-lookup"><span data-stu-id="c05db-107">You can use alerts to stay informed about events that you want to track during the workday.</span></span> <span data-ttu-id="c05db-108">Du kan nemt oprette dit eget sæt påmindelsesregler, så du bliver påmindet om forfaldne leveringer, slettede ordrer, ændrede priser eller andre hændelser, du skal reagere på.</span><span class="sxs-lookup"><span data-stu-id="c05db-108">You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.</span></span>

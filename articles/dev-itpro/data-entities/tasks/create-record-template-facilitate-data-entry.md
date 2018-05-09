@@ -16,15 +16,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 968f3473198de5aee0b32baf3a83839aeea73835
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a84ca9a8d6e7346cc136317cc4751a495d5dee1
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a><span data-ttu-id="9d181-103">Oprette en postskabelon for at lette dataindtastning</span><span class="sxs-lookup"><span data-stu-id="9d181-103">Create a record template to facilitate data entry</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9d181-104">Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post.</span><span class="sxs-lookup"><span data-stu-id="9d181-104">This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record.</span></span> <span data-ttu-id="9d181-105">I denne procedure skal oprette en ny post til nye bærbare computere, der skal føjes til dine anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="9d181-105">In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets.</span></span> <span data-ttu-id="9d181-106">Denne procedure bruger eksempelfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="9d181-106">This procedure uses the USMF sample company.</span></span>
 

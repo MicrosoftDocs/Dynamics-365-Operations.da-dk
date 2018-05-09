@@ -16,15 +16,15 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1625567db805f735bba4ce19e70bc73e7ee0d9d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b6e782617ee85e19ed5882f81623d5c3271648
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="post-a-sales-invoice-with-a-payment-slip-denmark"></a><span data-ttu-id="f902b-103">Bogføre en salgsfaktura med et indbetalingskort (Danmark)</span><span class="sxs-lookup"><span data-stu-id="f902b-103">Post a sales invoice with a payment slip (Denmark)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f902b-104">Denne procedure fører dig gennem bogføring af en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.</span><span class="sxs-lookup"><span data-stu-id="f902b-104">This procedure walks you through posting a free text invoice with a payment slip attachment in a specified format.</span></span> <span data-ttu-id="f902b-105">Indbetalingskortet udskrives med kreditorens id-nummer og fakturanummeret, så indbetalingen kan identificeres.</span><span class="sxs-lookup"><span data-stu-id="f902b-105">The payment slip is printed with the creditor identification number and invoice number to identify the payment.</span></span>
 

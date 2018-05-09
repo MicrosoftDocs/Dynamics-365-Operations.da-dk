@@ -16,15 +16,15 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dd8c3355ac63373768292e1623ad6c771ec5ee1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 11f9d607e50d5ceaab5fcf151e3dae4393ca3007
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="ba3d0-103">Ansætte en eksisterende medarbejder gennem rekruttering</span><span class="sxs-lookup"><span data-stu-id="ba3d0-103">Hire an existing employee through recruiting</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ba3d0-104">Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen.</span><span class="sxs-lookup"><span data-stu-id="ba3d0-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="ba3d0-105">Denne fremgangsmåde fører dig gennem trinnene til at ansætte en eksisterende medarbejder gennem rekrutteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="ba3d0-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="ba3d0-106">Et rekrutteringsprojekt allerede er oprettet i denne procedure, og en eksisterende medarbejder har allerede indsendt en ansøgning til rekrutteringsprojektet.</span><span class="sxs-lookup"><span data-stu-id="ba3d0-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="ba3d0-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="ba3d0-107">The demo data company used to create this procedure is USMF.</span></span>
 

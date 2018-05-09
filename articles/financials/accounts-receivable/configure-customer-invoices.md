@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 787c958f07bc3fbd442be8132b55de7f3e769cae
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a><span data-ttu-id="c36a9-103">Oprette en debitorfaktura</span><span class="sxs-lookup"><span data-stu-id="c36a9-103">Create a customer invoice</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c36a9-104">En **debitorfaktura for en salgsordre** er en regning, som er relateret til et salg, og som en organisation giver til en kunde.</span><span class="sxs-lookup"><span data-stu-id="c36a9-104">A **customer invoice for a sales order** is a bill that is related to a sale, and that an organization gives to a customer.</span></span> <span data-ttu-id="c36a9-105">Denne type debitorfaktura oprettes på basis af en salgsordre, som omfatter ordrelinjer og varenumre.</span><span class="sxs-lookup"><span data-stu-id="c36a9-105">This type of customer invoice is created based on a sales order, which includes order lines and item numbers.</span></span> <span data-ttu-id="c36a9-106">Varenumre angives og bogføres i finansmodulet.</span><span class="sxs-lookup"><span data-stu-id="c36a9-106">Item numbers are specified and posted in the ledger.</span></span> <span data-ttu-id="c36a9-107">Reskontrokladdeposter er ikke tilgængelige for en debitorfaktura for en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="c36a9-107">Subledger journal entries aren't available for a customer invoice for a sales order.</span></span> <span data-ttu-id="c36a9-108">Du kan finde flere oplysninger i [Oprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).</span><span class="sxs-lookup"><span data-stu-id="c36a9-108">For more information, see [Create sales order invoices](tasks/create-sales-order-invoices.md).</span></span>
 

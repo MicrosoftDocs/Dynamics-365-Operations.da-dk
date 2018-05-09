@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a5f53a76ebd0bd428f791ce8493e9f388eb8e2fa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4796a440bec7c5c0e77a57beccb9379bd2978df6
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="854d2-107">Fejlfinding af filimport af bankkontoudtog</span><span class="sxs-lookup"><span data-stu-id="854d2-107">Bank statement file import troubleshooting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="854d2-108">Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Finance and Operations understøtter.</span><span class="sxs-lookup"><span data-stu-id="854d2-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports.</span></span> <span data-ttu-id="854d2-109">På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt.</span><span class="sxs-lookup"><span data-stu-id="854d2-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="854d2-110">Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater.</span><span class="sxs-lookup"><span data-stu-id="854d2-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="854d2-111">Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen.</span><span class="sxs-lookup"><span data-stu-id="854d2-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="854d2-112">Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne.</span><span class="sxs-lookup"><span data-stu-id="854d2-112">This article explains how to fix these differences and resolve the issues.</span></span>
 

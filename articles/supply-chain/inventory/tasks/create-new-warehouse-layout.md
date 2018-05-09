@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4a9c75bf84bf2bf8d92be23573cc0477209c2378
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 136ba30e8658dc1fe80124a74c773ce0e56ec310
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="aa36c-103">Oprette en ny lageropbygning</span><span class="sxs-lookup"><span data-stu-id="aa36c-103">Create a new warehouse layout</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="aa36c-104">Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted.</span><span class="sxs-lookup"><span data-stu-id="aa36c-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="aa36c-105">Dette gælder for kun for lagersteder, der er oprettet ved hjælp af "grundlæggende lagerfunktioner" i modulet Lagerstyring, ikke for lagersteder, der er oprettet i modulet Lagerstedsstyring.</span><span class="sxs-lookup"><span data-stu-id="aa36c-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="aa36c-106">Du kan bruge denne procedure på demofirmaet USMF eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="aa36c-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 

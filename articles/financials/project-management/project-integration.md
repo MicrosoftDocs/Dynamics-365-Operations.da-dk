@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d412c60f22347a38e38ca5f2c5515bd132814f25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a54e1281dc54e1656298ea86c0724ad18ceff9a2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="microsoft-project-client-integration"></a><span data-ttu-id="ee37f-104">Integration med Microsoft Project-klienten</span><span class="sxs-lookup"><span data-stu-id="ee37f-104">Microsoft Project client integration</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ee37f-105">Planlægning og vedligeholdelse af en projektplan kan være kompleks, så projektledere skal bruge værktøjer, som kan hjælper dem med at administrere denne opgave.</span><span class="sxs-lookup"><span data-stu-id="ee37f-105">Planning and maintaining a project schedule can be complex, so project managers need to use tools that help them manage this task.</span></span> <span data-ttu-id="ee37f-106">Integration med Microsoft Project-klienten giver understøttelse til at åbne og styre et arbejdsopgavehierarki for projektet.</span><span class="sxs-lookup"><span data-stu-id="ee37f-106">Integration with Microsoft Project Client provides support to open and manage a project work breakdown structure.</span></span> <span data-ttu-id="ee37f-107">Projektlederen kan publicere eventuelle ændringer tilbage til arbejdsopgavehierarki i Finance and Operations-projektet.</span><span class="sxs-lookup"><span data-stu-id="ee37f-107">The project manager can publish any changes back to the Finance and Operations project work breakdown structure.</span></span>
 

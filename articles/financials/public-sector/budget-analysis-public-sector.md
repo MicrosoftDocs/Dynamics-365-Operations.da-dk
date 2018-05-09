@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 80672d5a6761eed733f79c6f4408c36d39401b0d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 173e1e2c30b3a765ee7662c94fcc2ff62b1b0cda
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-analysis-in-the-public-sector"></a><span data-ttu-id="af548-103">Budgetanalyse i den offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="af548-103">Budget analysis in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="af548-104">Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist bogførte indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring.</span><span class="sxs-lookup"><span data-stu-id="af548-104">This topic describes how to use the Budget analysis page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page.</span></span> 
 

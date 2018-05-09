@@ -16,15 +16,15 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a12bdb1532527fff7c3ce0d2b1e34b61b73e8fbc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7be74034910ccf16732eac1383613224e02f5036
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-vendor-payment-fees"></a><span data-ttu-id="eb8db-103">Definere kreditorbetalingsgebyrer</span><span class="sxs-lookup"><span data-stu-id="eb8db-103">Define vendor payment fees</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eb8db-104">Konfigurer kreditorbetalingsgebyrer.</span><span class="sxs-lookup"><span data-stu-id="eb8db-104">Set up vendor payment fees.</span></span> <span data-ttu-id="eb8db-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="eb8db-105">This task uses the USMF demo company.</span></span>
 

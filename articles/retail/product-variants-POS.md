@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 933875f56b0f47990cb1cb767f84b23b9c9710d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff11cf7b23c48675b108d7d03d241fcec2cb792a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a><span data-ttu-id="ff235-103">Lagersøgning i POS</span><span class="sxs-lookup"><span data-stu-id="ff235-103">Inventory lookup in the Point of Sale</span></span> 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="ff235-104">Lagersøgning i salgsstedet (POS) hjælper detailhandlere med at opnå flotte resultater i realtid og få indsigt ved at forbinde butikker, salgstedet og administrationen.</span><span class="sxs-lookup"><span data-stu-id="ff235-104">Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office.</span></span> <span data-ttu-id="ff235-105">Denne funktion giver en præcis visning af produktlageret i realtid på tværs af butikker og distributionscentre.</span><span class="sxs-lookup"><span data-stu-id="ff235-105">This functionality provides an accurate real-time view of product inventory across stores and distribution centers.</span></span> <span data-ttu-id="ff235-106">Det hjælper også detailhandlere med at fremme effektiviteten og omkostningsbesparelser ved at forbedre lagerplanlægning i realtid.</span><span class="sxs-lookup"><span data-stu-id="ff235-106">It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.</span></span>
 

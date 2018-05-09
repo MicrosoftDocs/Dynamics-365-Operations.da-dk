@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 27c3f8d5a3e62d3867dcb4435479baf6db208942
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="5404b-104">Power BI-indhold for praksischef</span><span class="sxs-lookup"><span data-stu-id="5404b-104">Practice manager Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5404b-105">I dette emne beskrives, hvad der er medtaget i Microsoft Power BI-indholdet til **praksischef**.</span><span class="sxs-lookup"><span data-stu-id="5404b-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="5404b-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="5404b-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 

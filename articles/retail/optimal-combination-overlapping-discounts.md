@@ -20,16 +20,16 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c094bfa07275c14ba63cae5404156ce72c52d0b5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 633fd6d8bfe9e2b46a899779ad823e5738de7dbe
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a><span data-ttu-id="53ffe-104">Fastslå den optimale kombination af overlappende rabatter</span><span class="sxs-lookup"><span data-stu-id="53ffe-104">Determine the optimal combination of overlapping discounts</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="53ffe-105">Når rabatter overlapper hinanden, skal du bestemme den kombination af overlappende rabatter, der resulterer i den laveste samlede transaktion eller den højeste samlede rabat.</span><span class="sxs-lookup"><span data-stu-id="53ffe-105">When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount.</span></span> <span data-ttu-id="53ffe-106">Når rabatbeløbet afhænger af prisen på de produkter, der købes, f.eks. i den almindelige detailrabat (BOGO) "køb 1, og få 1 X procent i rabat" (BOGO), bliver denne proces et problem med optimering af kombinationer.</span><span class="sxs-lookup"><span data-stu-id="53ffe-106">When the discount amount varies according to the price of the products that are purchased, such as in the common “Buy 1, get 1 X percent off” (BOGO) retail discount, this process becomes an issue of combinatorial optimization.</span></span>
 

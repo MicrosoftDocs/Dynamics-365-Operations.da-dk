@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6e76afac726e9b9fbfda39ec23f8be35aded60a9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc563eac09fffc191a34041da7c91e7a3ffbd2e1
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="validate-a-production-flow-and-version"></a><span data-ttu-id="8ff5b-103">Validere et produktionsflow og en version</span><span class="sxs-lookup"><span data-stu-id="8ff5b-103">Validate a production flow and version</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8ff5b-104">Denne procedure viser, hvordan du opretter et nyt produktionsflow og en første version af lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-104">This procedure shows how to create a new production flow and a first version for lean manufacturing.</span></span> <span data-ttu-id="8ff5b-105">Forudsætninger: Produktionsparametre for lean manufacturing og måleenheder for klassen Tid skal defineres.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-105">Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined.</span></span> <span data-ttu-id="8ff5b-106">Du skal definere en værdistrøm og en produktionsgruppe.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-106">You need to define a Value stream and a Production group.</span></span> <span data-ttu-id="8ff5b-107">Se hvidbøgerne om Lean manufacturing for at blive fortrolig med begreberne produktionsflow og -aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-107">Refer to the white papers on Lean manufacturing to familiarize yourself with the concepts of production flows and activities.</span></span> <span data-ttu-id="8ff5b-108">Denne procedure refererer til den juridiske enhed USMF i demodata.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-108">This procedure refers to the legal entity USMF in demo data.</span></span> <span data-ttu-id="8ff5b-109">Forudsat at den juridiske enhed er konfigureret for Lean manufacturing, kan andre juridiske enheder imidlertid også bruges.</span><span class="sxs-lookup"><span data-stu-id="8ff5b-109">However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.</span></span>
 

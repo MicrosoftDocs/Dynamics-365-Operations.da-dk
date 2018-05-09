@@ -19,16 +19,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: eb1d4a85c0e522d05c8566ce491ea946a656b35e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e671fe6e7c99bfb6d66f3b00560c3b0c404d2343
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="project-time-entry-mobile-workspace"></a><span data-ttu-id="42a82-104">Projekttidsregistrering i arbejdsområde til mobile enheder</span><span class="sxs-lookup"><span data-stu-id="42a82-104">Project time entry mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="42a82-105">Dette emne indeholder oplysninger om arbejdsområdet **Tidsregistrering for projekt** på mobilenheder.</span><span class="sxs-lookup"><span data-stu-id="42a82-105">This topic provides information about the **Project time entry** mobile workspace.</span></span> <span data-ttu-id="42a82-106">I dette arbejdsområde kan brugerne angive og gemme tider for et projekt ved hjælp af deres mobilenhed.</span><span class="sxs-lookup"><span data-stu-id="42a82-106">This workspace lets users enter and save time against a project by using their mobile device.</span></span>
 

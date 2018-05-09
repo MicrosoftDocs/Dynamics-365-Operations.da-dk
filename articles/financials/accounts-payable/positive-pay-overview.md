@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ed4ca769c8d2b7e4935edbd442f8e96756ae78c1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bd564ec908056a8a71e227ca7a85f198d9a82e7a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="positive-pay-overview"></a><span data-ttu-id="f8f64-103">Oversigt over positive betalinger</span><span class="sxs-lookup"><span data-stu-id="f8f64-103">Positive pay overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f8f64-104">Denne artikel indeholder oplysninger om positiv betaling, som bruges til at generere en elektronisk liste over checks, der kan indløses i en bank.</span><span class="sxs-lookup"><span data-stu-id="f8f64-104">This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank.</span></span> 
 

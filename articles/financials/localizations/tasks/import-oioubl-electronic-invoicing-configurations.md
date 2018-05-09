@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4ec3a4e26d93f69266ef1ca7ac4b0b9f4648bff3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 01bba6edfff75e91eb2434b243bbc1aa59a006e2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="import-oioubl-electronic-invoicing-configurations-denmark"></a><span data-ttu-id="e181d-103">Importere konfigurationer for elektronisk OIOUBL-fakturering (Danmark)</span><span class="sxs-lookup"><span data-stu-id="e181d-103">Import OIOUBL electronic invoicing configurations (Denmark)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e181d-104">Denne procedure viser, hvordan du importerer elektroniske OIOUBL-fakturakonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="e181d-104">This procedure shows how to import OIOUBL electronic invoice configurations.</span></span> 
 

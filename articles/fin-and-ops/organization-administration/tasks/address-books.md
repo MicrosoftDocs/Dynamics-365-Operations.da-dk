@@ -16,15 +16,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 280758134921bb5d22ae90891dc3f8bf7873813c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8f1929eb4f1e58bf7d2a913394a3c41cf16b0998
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-address-books"></a><span data-ttu-id="b944b-103">Konfigurere adressekartoteker</span><span class="sxs-lookup"><span data-stu-id="b944b-103">Configure address books</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b944b-104">Brug denne procedure og de beslutninger, du har taget i emnet for planlægning af konfigurationen af det globale adressekartotek og yderligere adressekartoteker, for at oprette yderligere adressekartoteker for organisationen.</span><span class="sxs-lookup"><span data-stu-id="b944b-104">Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ddfc7093ae2fb246f66486787e225f5b4c34ba1b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e50c646154bf17594d1de78eedc55edd54cde1c5
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budgeting-overview"></a><span data-ttu-id="62f35-104">Budgetteringsoversigt </span><span class="sxs-lookup"><span data-stu-id="62f35-104">Budgeting overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="62f35-105">Næsten alle firmaer, der bruger Finans-funktionaliteten i Microsoft Dynamics 365 for Finance and Operations, skal kunne oprette rapporter over budget vs. faktiske tal.</span><span class="sxs-lookup"><span data-stu-id="62f35-105">Almost every company that uses Financials functionality in Microsoft Dynamics 365 for Finance and Operations will have to be able to create reports of budget vs. actuals.</span></span> <span data-ttu-id="62f35-106">I denne artikel beskrives den minimumkonfiguration, der kræves for at oprette budgetter i Finance and Operations eller indlæse dem fra et tredjepartsprogram.</span><span class="sxs-lookup"><span data-stu-id="62f35-106">This article explains the minimum configuration that is required in order to create budgets in Finance and Operations or load them from a third-party program.</span></span>
 

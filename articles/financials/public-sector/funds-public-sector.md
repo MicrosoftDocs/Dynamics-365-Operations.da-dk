@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 43a0f01f8bd842495ac00707eeafa1239d54c4e9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d0680fd65b0bc16e5f841e7b60f1e6e9d5e38c1d
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="funds-in-the-public-sector"></a><span data-ttu-id="6c496-104">Midler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="6c496-104">Funds in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6c496-105">Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav.</span><span class="sxs-lookup"><span data-stu-id="6c496-105">A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements.</span></span> <span data-ttu-id="6c496-106">Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.</span><span class="sxs-lookup"><span data-stu-id="6c496-106">Public-sector organizations use funds to demonstrate their fiscal accountability.</span></span>
 

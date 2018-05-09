@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 009f2760cdd98d9158209f2265e5423df75e8e73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 588ad80ab5094e1e088831b1472c27a7fcd7dcd8
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-destinations-for-electronic-reporting-er"></a><span data-ttu-id="d829e-103">Konfigurere destinationer for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="d829e-103">Configure destinations for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d829e-104">Denne procedure viser, hvordan du konfigurerer og bruger forskellige destinationer for outputkomponenter for elektronisk rapportering (ER), f.eks. en mappe eller en fil.</span><span class="sxs-lookup"><span data-stu-id="d829e-104">This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.</span></span> <span data-ttu-id="d829e-105">Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.</span><span class="sxs-lookup"><span data-stu-id="d829e-105">The demo data company used to create this procedure is DEMF.</span></span> <span data-ttu-id="d829e-106">Tyskland er landet\området for den juridiske enheds primære adresse, men du kan også bruge enhver juridisk enhed til denne procedure.</span><span class="sxs-lookup"><span data-stu-id="d829e-106">Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure.</span></span> 
 

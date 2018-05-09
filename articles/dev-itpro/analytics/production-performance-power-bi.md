@@ -17,16 +17,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e80305625439d154a0872f2b8cc64376ba933d50
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f9c6bdc1656d5c64b4d05379e549d3c9eac7fa5c
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-performance-power-bi-content"></a><span data-ttu-id="8c3b2-104">Power BI-indhold til produktionsperformance</span><span class="sxs-lookup"><span data-stu-id="8c3b2-104">Production performance Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="8c3b2-105">I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Produktionsperformance**.</span><span class="sxs-lookup"><span data-stu-id="8c3b2-105">This topic describes what is included in the **Production performance** Microsoft Power BI content.</span></span> <span data-ttu-id="8c3b2-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="8c3b2-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 

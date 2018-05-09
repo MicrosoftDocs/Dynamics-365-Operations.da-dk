@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7304d49cdaafb1521b56747e98a39f97183e12f2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-worker-information"></a><span data-ttu-id="81600-103">Angive arbejderoplysninger</span><span class="sxs-lookup"><span data-stu-id="81600-103">Enter worker information</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="81600-104">Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes.</span><span class="sxs-lookup"><span data-stu-id="81600-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="81600-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="81600-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="81600-106">Demodataene indeholder et åbent masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="81600-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="81600-107">Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter.</span><span class="sxs-lookup"><span data-stu-id="81600-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 

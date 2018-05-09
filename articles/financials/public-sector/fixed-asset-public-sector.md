@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 108c0fdb85507b983f4d206117beefb969053aba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 58960ae47d30808cffab5fd25ef1b675ac5c7535
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-assets-in-the-public-sector"></a><span data-ttu-id="394de-103">Anlægsaktiver i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="394de-103">Fixed assets in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="394de-104">I denne artikel beskrives de funktioner til anlægsaktiver, der er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="394de-104">This article describes the fixed assets functionality that is available for public sector.</span></span> 
 

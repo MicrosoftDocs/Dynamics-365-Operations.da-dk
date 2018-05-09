@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a253a37bc83482c5bc971cad585e18ccb230b16f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f1d6121ecadc7ebb4d41139d0505ba35790eee55
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a><span data-ttu-id="2a7b0-103">Fordele et projektbudget eller en budgetrevision på tværs af perioder</span><span class="sxs-lookup"><span data-stu-id="2a7b0-103">Allocate a project budget or budget revision across periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2a7b0-104"> Når du indtaster et projektbudget eller en projektbudgetrevision, og før du sender budgettet eller revisionen til godkendelse, kan du allokere beløb på tværs af perioder.</span><span class="sxs-lookup"><span data-stu-id="2a7b0-104">After you enter a project budget or project budget revision, and before you submit it for approval, you can allocate the amounts across periods.</span></span> <span data-ttu-id="2a7b0-105">Hvis budgettet eller budgetrevisionen afvises, kan du også allokere beløbene, før du sender den igen.</span><span class="sxs-lookup"><span data-stu-id="2a7b0-105">If the budget or budget revision is rejected, you can also allocate the amounts before you resubmit it.</span></span> 
 

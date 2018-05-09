@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0859eb7bf461f61396c34f4bcd89537260a536a0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f80b9824e005ccca5beb8577576781d00a43d7b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a><span data-ttu-id="05186-103">Design en konfiguration til at importere data fra en ekstern fil i CSV-format (ER)</span><span class="sxs-lookup"><span data-stu-id="05186-103">Design a configuration to import data from an external file in CSV format (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="05186-104">Brug denne procedure til at designe konfigurationer til elektronisk rapportering (ER) for at importere data i Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format.</span><span class="sxs-lookup"><span data-stu-id="05186-104">Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format.</span></span> <span data-ttu-id="05186-105">I denne procedure skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren "ER Oprette en konfigurationsudbyder og markere den som aktiv".</span><span class="sxs-lookup"><span data-stu-id="05186-105">In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.”</span></span> 
 

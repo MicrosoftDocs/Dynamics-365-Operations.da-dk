@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ed864a158bd0efb9100c18e1807b14b9d46cdab0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b8aba5c012c0fba20a717b8371cd853ed014904b
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settlement-priority-in-the-public-sector"></a><span data-ttu-id="781ab-105">Udligningsprioritet i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="781ab-105">Settlement priority in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="781ab-106">I Finance and Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning.</span><span class="sxs-lookup"><span data-stu-id="781ab-106">In Finance and Operations, you can manually select transactions to settle, or you can use the automatic settlement functionality.</span></span> <span data-ttu-id="781ab-107">Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer.</span><span class="sxs-lookup"><span data-stu-id="781ab-107">Public-sector organizations have additional options for prioritizing settlements by using billing classifications.</span></span> <span data-ttu-id="781ab-108">Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.</span><span class="sxs-lookup"><span data-stu-id="781ab-108">These options can be used with automatic or manual settlement.</span></span>
 

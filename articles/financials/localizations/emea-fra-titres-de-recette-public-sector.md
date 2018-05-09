@@ -19,16 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 28b216ae250c195e2bff59c0874ee72bd323377b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0ba76e50abd5ce124b91515eacf860dbe2e81ae2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="titres-de-recette-in-the-public-sector-in-france"></a><span data-ttu-id="048eb-105">Titres de recette i den offentlige sektor i Frankrig</span><span class="sxs-lookup"><span data-stu-id="048eb-105">Titres de recette in the public sector in France</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="048eb-106">Titre de recette bruges af direktøren for at underrette bogholderen om, at organisationen er berettiget til at indsamle et bestemt beløb fra en anden enhed, og til at godkende, at bogholderen indbetaler beløbet.</span><span class="sxs-lookup"><span data-stu-id="048eb-106">The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount.</span></span> <span data-ttu-id="048eb-107">Direktøren eller bogholderen kan delegere en repræsentant til at udføre opgaven, men ansvaret for hver opgave forbliver hos direktøren eller bogholderen.</span><span class="sxs-lookup"><span data-stu-id="048eb-107">The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant.</span></span> <span data-ttu-id="048eb-108">Titre opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.</span><span class="sxs-lookup"><span data-stu-id="048eb-108">The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.</span></span>
 

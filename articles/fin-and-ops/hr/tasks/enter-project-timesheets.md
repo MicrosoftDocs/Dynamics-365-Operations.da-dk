@@ -17,15 +17,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fdc9567040a2ea4e50325c98a2da19da039586bb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b1ccaeffde4c288667fe797d07e08b5a346b4716
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="enter-project-timesheets"></a><span data-ttu-id="27add-103">Angive projekttimesedler</span><span class="sxs-lookup"><span data-stu-id="27add-103">Enter project timesheets</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="27add-104">I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelsformular.</span><span class="sxs-lookup"><span data-stu-id="27add-104">This procedure lets you create a timesheet by using an empty timesheet form.</span></span> <span data-ttu-id="27add-105">Den nye timeseddel kan baseres på oplysninger fra en tidligere timeseddel eller fra projekt- og aktivitetstildelinger på siden Favoritter.</span><span class="sxs-lookup"><span data-stu-id="27add-105">The new timesheet can be based on information from a previous timesheet, or from project and activity assignments in the My favorites page.</span></span> <span data-ttu-id="27add-106">Som standard viser listesiden Alle timesedler alle dine timesedler for den aktuelle periode.</span><span class="sxs-lookup"><span data-stu-id="27add-106">By default, the All timesheets list page displays all your timesheets for the current period.</span></span> <span data-ttu-id="27add-107">Du kan bruge på rullelisten i feltet Vis på siden Mine timesedler til at filtrere listen over timesedler efter tidsperiode eller projekt eller til at få vist timesedler, der er oprettet på vegne af andre medarbejdere.</span><span class="sxs-lookup"><span data-stu-id="27add-107">You can use the drop-down list for the Show field in the My timesheets page to filter the timesheet list by time period or project, or to view timesheets that were created on behalf of other workers.</span></span> <span data-ttu-id="27add-108">Det demodatafirma, der bruges til at oprette denne procedure, er USSI.</span><span class="sxs-lookup"><span data-stu-id="27add-108">The demo data company used to create this procedure is USSI.</span></span> <span data-ttu-id="27add-109">Du begynder denne procedure ved at gå til Projektstyring og regnskab > Timesedler > Mine timesedler</span><span class="sxs-lookup"><span data-stu-id="27add-109">To begin this procedure, go to Project management and accounting > Timesheets >My timesheets</span></span>
 

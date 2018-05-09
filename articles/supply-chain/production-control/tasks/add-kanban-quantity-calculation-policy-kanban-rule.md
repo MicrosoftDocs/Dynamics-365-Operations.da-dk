@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 134fbbb2cde4c611798ec010ee7a128c06a80392
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aae6e85397ed4a09812389bc39306201953ab9c2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a><span data-ttu-id="edf56-103">Føje en beregningspolitik for kanban-mængder til en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="edf56-103">Add a kanban quantity calculation policy to a kanban rule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="edf56-104">Denne fremgangsmåde drejer sig om oprettelse af en politik for beregning af kanban-mængde og føje den til en kanban-regel til optimering af kanban-størrelse og mængde.</span><span class="sxs-lookup"><span data-stu-id="edf56-104">This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities.</span></span> <span data-ttu-id="edf56-105">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="edf56-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="edf56-106">Denne procedure er beregnet til værdistrømlederen.</span><span class="sxs-lookup"><span data-stu-id="edf56-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="edf56-107">Denne procedure er en forudsætning for oprettelse af proceduren Beregn kanban-mængdeforslag.</span><span class="sxs-lookup"><span data-stu-id="edf56-107">This procedure is a prerequisite for creating the procedure Calculate kanban quantity suggestions.</span></span> 
 

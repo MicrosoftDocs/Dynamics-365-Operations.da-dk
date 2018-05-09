@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 165f29ceaabe4d09785e5f1edfe57db525264c15
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 50ca6f46253ca49b90493b4588e0bbf4e9711ecd
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-purchase-order"></a><span data-ttu-id="92a97-103">Oprette en indkøbsordre</span><span class="sxs-lookup"><span data-stu-id="92a97-103">Create a purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="92a97-104">Denne procedure viser, hvordan du opretter en indkøbsordre manuelt.</span><span class="sxs-lookup"><span data-stu-id="92a97-104">This procedure shows you how to create a purchase order manually.</span></span> <span data-ttu-id="92a97-105">Det er mere almindeligt for indkøbsordrer, at de oprettes automatisk som resultat af varedisponering, direkte levering og andre processer.</span><span class="sxs-lookup"><span data-stu-id="92a97-105">It’s more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes.</span></span> <span data-ttu-id="92a97-106">Indkøbsordrer oprettes typisk af en indkøbsagent.</span><span class="sxs-lookup"><span data-stu-id="92a97-106">Purchase orders are typically created by a purchasing agent.</span></span> <span data-ttu-id="92a97-107">Det viste eksempel kan bruges i USMF-demodatafirmaet ved hjælp af de værdier, der foreslås i noterne til de forskellige trin.</span><span class="sxs-lookup"><span data-stu-id="92a97-107">The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.</span></span>
 

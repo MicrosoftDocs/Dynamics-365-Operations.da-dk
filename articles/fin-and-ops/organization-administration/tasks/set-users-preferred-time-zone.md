@@ -16,15 +16,15 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: edfd9d824fbd86506456e875b510eb56fec84b7e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9b1354a96cad9104375fe9ae7364da80015f943e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-a-users-preferred-time-zone"></a><span data-ttu-id="1a2d3-103">Indstille brugerens foretrukne tidszone</span><span class="sxs-lookup"><span data-stu-id="1a2d3-103">Set a user's preferred time zone</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1a2d3-104">Følgende procedure forklarer, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.</span><span class="sxs-lookup"><span data-stu-id="1a2d3-104">The following procedure explains how a user in the System Administrator role can set the time zone for a user.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2d1a05ffe39c208748a316bd711d9442f1ed875a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3bee87b1d82dbe3d1c6de78a26633f2e1f5e92f
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reimburse-customers"></a><span data-ttu-id="9994c-104">Refundere kunder</span><span class="sxs-lookup"><span data-stu-id="9994c-104">Reimburse customers</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9994c-105">I denne artikel beskrives det, hvordan du kan oprette refusionsposteringer for en gruppe af debitorer.</span><span class="sxs-lookup"><span data-stu-id="9994c-105">This article explains how to create reimbursement transactions for a group of customers.</span></span> <span data-ttu-id="9994c-106">Hvis en kunde har en kreditsaldo, kan du refundere kunden beløbet svarende til saldoen.</span><span class="sxs-lookup"><span data-stu-id="9994c-106">If a customer has a credit balance, you can reimburse the customer for the amount of the balance.</span></span> 
 

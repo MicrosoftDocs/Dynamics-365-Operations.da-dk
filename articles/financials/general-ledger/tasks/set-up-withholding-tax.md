@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ccaccd7b5b32431ac463925c887324a7607ae7dc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 39ebd6a1a326b0ff2943957c9606e91852d524ce
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-withholding-tax"></a><span data-ttu-id="aa944-103">Konfigurere indeholdt skat</span><span class="sxs-lookup"><span data-stu-id="aa944-103">Set up withholding tax</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="aa944-104">A-skat er en skat på leverandører, der ikke opretter momstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="aa944-104">Withholding tax is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="aa944-105">A-skat, der beregnes på leverandørbetalinger, er et passiv.</span><span class="sxs-lookup"><span data-stu-id="aa944-105">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="aa944-106">Derfor er det kun statuskonti eller passivkonti, der kan bruges til bogføring af A-skat.</span><span class="sxs-lookup"><span data-stu-id="aa944-106">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="aa944-107">Denne opgaveguide viser, hvordan du konfigurerer A-skat.</span><span class="sxs-lookup"><span data-stu-id="aa944-107">This task guide demonstrates how to set up withholding tax.</span></span>
 

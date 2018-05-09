@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6c443b96d94e0b5cee05e7bca36da0a2f045d1cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 124dfc0263b12ba50b2ec7e914b4a402a94718ab
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-performance-power-bi-content"></a><span data-ttu-id="78e4a-104">Power BI-indhold til lagerstedsperformance</span><span class="sxs-lookup"><span data-stu-id="78e4a-104">Warehouse performance Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="78e4a-105">I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Lagerstedperformance**.</span><span class="sxs-lookup"><span data-stu-id="78e4a-105">This topic describes what's included in the **Warehouse performance** Microsoft Power BI content.</span></span> <span data-ttu-id="78e4a-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="78e4a-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0161ac3d67b57484f05a64ab785bbbcc90816ba2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8285305466a3762d3dab8a7975dfa51b994f1e6f
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bom-calculations-groups"></a><span data-ttu-id="1ab98-105">Styklisteberegningsgrupper</span><span class="sxs-lookup"><span data-stu-id="1ab98-105">BOM calculations groups</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1ab98-106">Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem.</span><span class="sxs-lookup"><span data-stu-id="1ab98-106">This article provides information about calculation groups for bills of materials (BOMs) and how to set them up.</span></span> <span data-ttu-id="1ab98-107">For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe.</span><span class="sxs-lookup"><span data-stu-id="1ab98-107">To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group.</span></span> <span data-ttu-id="1ab98-108">Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen.</span><span class="sxs-lookup"><span data-stu-id="1ab98-108">The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation.</span></span> 
 

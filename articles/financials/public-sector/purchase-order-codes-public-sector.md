@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 698d5d00f7aa43acd593016d47ffa1a8283de552
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 067cc01edb1cbf8bde1ec5bfa9d210030c66cad7
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-order-codes-in-the-public-sector"></a><span data-ttu-id="fc539-104">Indkøbsordrekoder i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="fc539-104">Purchase order codes in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc539-105">Denne artikel indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer.</span><span class="sxs-lookup"><span data-stu-id="fc539-105">This article provides information about the codes and special messages that can be used with confirming purchase orders.</span></span> <span data-ttu-id="fc539-106">En bekræftende indkøbsordre omgår den typiske indkøbsproces.</span><span class="sxs-lookup"><span data-stu-id="fc539-106">A confirming purchase order bypasses the typical purchasing process.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d57f3138f5a456c85550baf1eb18b4f99733a3d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f05020dfde0b985faf3a6b9dc72f94a6d87e7968
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a><span data-ttu-id="239fa-103">Omregne regnskabs- eller rapporteringsvalutaer</span><span class="sxs-lookup"><span data-stu-id="239fa-103">Convert accounting or reporting currencies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="239fa-104">Et firma, der skal ændre sin regnskabsvaluta eller rapporteringsvaluta, har to muligheder.</span><span class="sxs-lookup"><span data-stu-id="239fa-104">A company that must change its accounting currency or reporting currency has two options.</span></span> <span data-ttu-id="239fa-105">Den første mulighed er at oprette en ny virksomhed og starte forfra.</span><span class="sxs-lookup"><span data-stu-id="239fa-105">The first option is to create a new company and start fresh.</span></span> <span data-ttu-id="239fa-106">Den anden mulighed er at køre processen til omregning af regnskabs- og rapporteringvaluta.</span><span class="sxs-lookup"><span data-stu-id="239fa-106">The second option is to run the accounting and reporting currency conversion process.</span></span> <span data-ttu-id="239fa-107">Dette er en meget langvarig proces, der ændrer alle transaktioner i systemet.</span><span class="sxs-lookup"><span data-stu-id="239fa-107">This is a very long-running process that changes every transaction in the system.</span></span> <span data-ttu-id="239fa-108">Før du kan køre processen, kræves der yderligere konfiguration.</span><span class="sxs-lookup"><span data-stu-id="239fa-108">Some setup is also required before the process can be run.</span></span>
 

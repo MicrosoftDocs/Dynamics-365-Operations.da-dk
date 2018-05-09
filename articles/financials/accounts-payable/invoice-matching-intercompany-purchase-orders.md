@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b900b19bba4b80558903847231941a6dd3df69bc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3c6dfac06f52d5c28a64680e342284451177dcee
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a><span data-ttu-id="22699-104">Fakturasammenholdelse og interne indkøbsordrer</span><span class="sxs-lookup"><span data-stu-id="22699-104">Invoice matching and intercompany purchase orders</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="22699-105">Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse.</span><span class="sxs-lookup"><span data-stu-id="22699-105">The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching.</span></span> <span data-ttu-id="22699-106">I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres.</span><span class="sxs-lookup"><span data-stu-id="22699-106">In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.</span></span>
 

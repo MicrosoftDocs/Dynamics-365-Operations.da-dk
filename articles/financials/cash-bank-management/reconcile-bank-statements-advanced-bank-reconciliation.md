@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dea67fb5ee233e9aa1862eb7d7ad6c5076d2b65a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8953126a6af241a92a4bfb20b2038d03c72b7a11
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a><span data-ttu-id="404ae-104">Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning</span><span class="sxs-lookup"><span data-stu-id="404ae-104">Reconcile bank statements by using advanced bank reconciliation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="404ae-105">Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="404ae-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="404ae-106">I dette emne beskrives afstemningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="404ae-106">This topic explains the reconciliation process.</span></span>  
 

@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16c59a53a5708a470fc1aa02d6730b7e83eece18
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6bed9ee9ae101450b3f484750287b2b7e7f5847e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="31650-103">Konfigurere debitorer og debitorbankkonti for direkte ISO20022-debiteringer</span><span class="sxs-lookup"><span data-stu-id="31650-103">Set up customers and customer bank accounts for ISO20022 direct debits</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="31650-104">Denne opgave fører dig gennem oprettelse af en debitorbankkonto og en bemyndigelsen til direkte kundedebitering, som er nødvendige for at generere en kundebetalingsfil som ISO20022 Direct Debit.</span><span class="sxs-lookup"><span data-stu-id="31650-104">This task walks you through setting up a customer bank account and a customer direct debit mandate which are required to generate the customer payment file like ISO20022 direct debit.</span></span> <span data-ttu-id="31650-105">Afhængigt af de formater for debitorbetalinger, der er konfigureret, kræves der yderligere oplysninger, der ikke er dækket i denne procedure, for en kunde eller en debitorbankkonto.</span><span class="sxs-lookup"><span data-stu-id="31650-105">Depending on the customer payment formats that are set up, additional information, not covered in this procedure, might be required for a customer or a customer bank account.</span></span> 
 

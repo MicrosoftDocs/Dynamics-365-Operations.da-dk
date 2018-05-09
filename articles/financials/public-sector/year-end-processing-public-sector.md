@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ea11e7096975e3cec59570bda62c3c28e4f73054
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbb6bb45d442b00fe5ed628b66f2950416103b67
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="year-end-processing-in-the-public-sector"></a><span data-ttu-id="b9db6-103">Årsafslutningen i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="b9db6-103">Year-end processing in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b9db6-104">Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="b9db6-104">This article provides information about year-end processing for a public sector organizations.</span></span>
 

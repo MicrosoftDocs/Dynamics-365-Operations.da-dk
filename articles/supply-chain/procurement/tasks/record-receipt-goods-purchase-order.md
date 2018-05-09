@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8a47dac61705831b330f7b4939a18c865a8ace7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a9c87b8790ed6cfe4139180f1f1785db04e7431
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="f7d22-103">Registrere modtagelsen af varer for indkøbsordren</span><span class="sxs-lookup"><span data-stu-id="f7d22-103">Record the receipt of goods on the purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f7d22-104">Denne fremgangsmåde viser, hvordan du registrerer modtagelsen af varer direkte på en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="f7d22-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="f7d22-105">Du kan også registrere produktkvitteringen på lagerstedet og derefter bogføre det senere på indkøbsordren.</span><span class="sxs-lookup"><span data-stu-id="f7d22-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="f7d22-106">Denne opgave udføres typisk af en indkøber eller en kreditorkoordinator.</span><span class="sxs-lookup"><span data-stu-id="f7d22-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="f7d22-107">Eksemplet i denne vejledning kan bruges i demodatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="f7d22-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="f7d22-108">Eksemplet indeholder trin til oprettelse af en enkelt indkøbsordre, så du kan afspille proceduren som en opgave.</span><span class="sxs-lookup"><span data-stu-id="f7d22-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="f7d22-109">Hvis du bruger fremgangsmåden på dine egne data, skal du starte med underopgaven for postering af modtagelsen af varerne.</span><span class="sxs-lookup"><span data-stu-id="f7d22-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 

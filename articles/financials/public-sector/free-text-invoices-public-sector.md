@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4f98689e1eb5a65cc027381d8152bab5bca18d54
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 493f18875c2f64488ea977f22136400dc324c1b5
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="free-text-invoices-in-the-public-sector"></a><span data-ttu-id="6087b-103">Fritekstfakturaer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="6087b-103">Free text invoices in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6087b-104">I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.</span><span class="sxs-lookup"><span data-stu-id="6087b-104">This topic describes the free text invoice functionality that is available for public sector as well as answers common questions about using billing classifications and billing codes with free text invoices.</span></span>
 

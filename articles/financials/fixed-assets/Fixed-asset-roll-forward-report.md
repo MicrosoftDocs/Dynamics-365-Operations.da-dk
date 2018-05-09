@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4bb3865488c7dcb5a8417d277bdae52c2abb23de
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a><span data-ttu-id="ba4e9-103">Rapporten Rul anlægsaktiver fremad</span><span class="sxs-lookup"><span data-stu-id="ba4e9-103">Fixed assets roll forward report</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ba4e9-104">Rapporten **Rul anlægsaktiver fremad** indeholder, i et letlæseligt Microsoft Excel-format, de detaljerede data om anlægsaktiver, du har brug for til lukning af periode, regnskaber og skatterapportering.</span><span class="sxs-lookup"><span data-stu-id="ba4e9-104">The **Fixed assets roll forward** report provides, in an easy-to-read Microsoft Excel format, the detailed fixed asset data that you require for period closing, financial statements, and tax reporting.</span></span> <span data-ttu-id="ba4e9-105">Rapporten omfatter start- og slutsaldi for anlægsaktiver, sammen med værdibevægelser for perioden, og eventuelle nye anskaffelser og salg, der er opstået i løbet af perioden.</span><span class="sxs-lookup"><span data-stu-id="ba4e9-105">The report includes start and end balances for fixed assets, together with valuation movements for the period, and any new asset acquisitions and disposals that occurred during the period.</span></span> <span data-ttu-id="ba4e9-106">Data rapporteres for de enkelte anlægsaktiver, og der opsummeres også værdierne for anlægsaktivgrupper og den juridiske enhed.</span><span class="sxs-lookup"><span data-stu-id="ba4e9-106">Data is reported for individual fixed assets, and values are also summarized for fixed asset groups and the legal entity.</span></span>
 

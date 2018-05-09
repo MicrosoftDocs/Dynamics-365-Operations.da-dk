@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d3de34eeef042cb3f283ee53579b199c6a4c9091
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="aeda7-104">Fordelingsgrundlag</span><span class="sxs-lookup"><span data-stu-id="aeda7-104">Allocation bases</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="aeda7-105">Et fordelingsgrundlag er det grundlag, som omkostningsregnskabet fordeler faste omkostninger på.</span><span class="sxs-lookup"><span data-stu-id="aeda7-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="aeda7-106">Et fordelingsgrundlag kan være et antal, som f.eks. maskintimer, der bruges, kilowatttimer (kWh), der forbruges eller areal, der er optaget.</span><span class="sxs-lookup"><span data-stu-id="aeda7-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="aeda7-107">Fordelingsgrundlag bruges oftest til at tildele faste omkostninger til lager, der er produceret.</span><span class="sxs-lookup"><span data-stu-id="aeda7-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="aeda7-108">F.eks. fordeler en IT-afdeling sine udgifter i overensstemmelse med antallet af computere, som hver afdeling bruger.</span><span class="sxs-lookup"><span data-stu-id="aeda7-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 

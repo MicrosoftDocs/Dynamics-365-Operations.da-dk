@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e9b1400de76858ca458d6742fba63c967ac6ad74
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="e5fcb-105">Produktdimensioner</span><span class="sxs-lookup"><span data-stu-id="e5fcb-105">Product dimensions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="e5fcb-106">Der er fire produktdimensioner – farve, konfiguration, størrelse og type.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="e5fcb-107">Du kan kombinere produktdimensioner i dimensionsgrupper og tildele dimensionsgrupper til produktmastere.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="e5fcb-108">Kombinationerne af produktdimensioner bestemmer, hvordan produktvarianter defineres.</span><span class="sxs-lookup"><span data-stu-id="e5fcb-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 

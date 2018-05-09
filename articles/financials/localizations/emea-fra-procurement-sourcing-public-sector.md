@@ -19,16 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2b8ddd0fb056466b1d52c2494a3a0149cbd207af
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7cf70c9dace0a1e8239ae9964eed853244c7c38e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a><span data-ttu-id="2b0e2-104">Indkøb og forsyning i den offentlige sektor i Frankrig</span><span class="sxs-lookup"><span data-stu-id="2b0e2-104">Procurement and sourcing in the public sector in France</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2b0e2-105">I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-105">This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector.</span></span> <span data-ttu-id="2b0e2-106">Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics.</span><span class="sxs-lookup"><span data-stu-id="2b0e2-106">These features are used to help meet the requirements of the Code des Marchés Publics.</span></span> 
 

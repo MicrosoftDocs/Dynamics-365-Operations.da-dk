@@ -16,15 +16,15 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f25dbd255178c09586665cfb0ad8faf595d5a73c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d99c7eae4e3b70d24ce8d8077d7cb0b24a9fcc35
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a><span data-ttu-id="d3ea0-103">Bruge en postskabelon til at oprette en ny post</span><span class="sxs-lookup"><span data-stu-id="d3ea0-103">Use a record template to create a new record</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d3ea0-104">Denne procedure viser, hvordan du bruger en foruddefineret skabelon til at oprette en ny post.</span><span class="sxs-lookup"><span data-stu-id="d3ea0-104">This procedure shows how to use a previously defined record template to create a new record.</span></span> <span data-ttu-id="d3ea0-105">Hvis du vil udføre denne procedure, skal du først udføre proceduren "Oprette en skabelon til at gøre dataindtastning lettere".</span><span class="sxs-lookup"><span data-stu-id="d3ea0-105">To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.</span></span>
 

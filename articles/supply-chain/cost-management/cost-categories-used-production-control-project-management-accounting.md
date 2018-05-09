@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 53141f29cdcd847611e1b6a8dc4c2ded1f09a9c9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1f4c03d886a7a6e98276422cd954954fe6e8a12e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a><span data-ttu-id="af5c2-104">Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab</span><span class="sxs-lookup"><span data-stu-id="af5c2-104">Cost categories used in Production control and Project management accounting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="af5c2-105">Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering.</span><span class="sxs-lookup"><span data-stu-id="af5c2-105">Some types of production work can apply to project time estimates and reporting.</span></span> <span data-ttu-id="af5c2-106">Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål.</span><span class="sxs-lookup"><span data-stu-id="af5c2-106">This article provides information about the cost categories that you must define for these types of production work for production and project purposes.</span></span>
 

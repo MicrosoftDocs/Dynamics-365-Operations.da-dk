@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b9e73f1dec1bc36431227e165d86b7ce052af3be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dd703d5c0d35b592ebd1b8fda80e0eeed4185ce1
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reuse-product-configurations"></a><span data-ttu-id="ede04-105">Genbrug produktkonfigurationer</span><span class="sxs-lookup"><span data-stu-id="ede04-105">Reuse product configurations</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ede04-106">Du kan angive, at du vil automatisk vil genbruge en eksisterende konfiguration for et produkt.</span><span class="sxs-lookup"><span data-stu-id="ede04-106">You can specify that you want to automatically reuse an existing configuration for a product.</span></span> <span data-ttu-id="ede04-107">Når en brugeren har fuldført en konfigurationssession, kontrollerer systemet, om der allerede findes en konfiguration, der svarer til brugerens valg.</span><span class="sxs-lookup"><span data-stu-id="ede04-107">Then, when a user has completed a configuration session, the system verifies whether a configuration that matches the user’s selections already exists.</span></span> <span data-ttu-id="ede04-108">Hvis der findes en tilsvarende konfiguration, genbruges konfigurations-id, stykliste og rute.</span><span class="sxs-lookup"><span data-stu-id="ede04-108">If a matching configuration is found, the configuration ID, corresponding bill of materials (BOM), and route are reused.</span></span>
 

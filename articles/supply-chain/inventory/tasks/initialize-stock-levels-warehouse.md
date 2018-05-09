@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4ad9ab54fbe84c8ec47aa2bebcca44656124a73e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: deec8bfe6e00a451d80be75ead428d5c5cc037b6
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="91bc5-103">Initialisere lagerbeholdninger på lagerstedet</span><span class="sxs-lookup"><span data-stu-id="91bc5-103">Initialize stock levels in the warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="91bc5-104">Denne procedure viser, hvordan du får den disponible lagerbeholdning opdateret manuelt ved hjælp af en lagerbevægelseskladden.</span><span class="sxs-lookup"><span data-stu-id="91bc5-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="91bc5-105">(Det er også muligt at opdatere den disponible lagerbeholdning ved at importere posteringer i dataenheder). Du kan køre denne guide i demodatafirmaet USMF, hvor alle de nødvendige komponenter som kladdenavn, vareopsætning, posteringsprofiler og konti er tilgængelige.</span><span class="sxs-lookup"><span data-stu-id="91bc5-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="91bc5-106">Guiden foreslår specifikke værdier for varen og dimensionerne, der bruges.</span><span class="sxs-lookup"><span data-stu-id="91bc5-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="91bc5-107">Hvis du vælger et andet element, skal du indtaste værdier for forskellige dimensioner.</span><span class="sxs-lookup"><span data-stu-id="91bc5-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 

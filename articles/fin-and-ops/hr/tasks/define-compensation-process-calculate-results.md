@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93f6cddd8d698dbc1a3539a156a762b8e6017aa6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d32a6245b7fcbbccb319c1ff37ce7a843e1851d2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-compensation-process-and-calculate-results"></a><span data-ttu-id="7d103-103">Definere kompensationsproces og beregne resultater</span><span class="sxs-lookup"><span data-stu-id="7d103-103">Define compensation process and calculate results</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7d103-104">Kompensationsprocesser bruges til at fastlægge nye kompensationsbeløb og bonusser for medarbejdere, der er tilmeldt faste og variable kompensationsstrukturer.</span><span class="sxs-lookup"><span data-stu-id="7d103-104">Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans.</span></span> <span data-ttu-id="7d103-105">Kompensationsprocesser kan køres flere gange for at udføre "what-if"-analyser, som kontrollerer, at alle ændringer og indstillinger er korrekte.</span><span class="sxs-lookup"><span data-stu-id="7d103-105">Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct.</span></span> <span data-ttu-id="7d103-106">Denne procedure opretter en kompensationsproces, kører processen og viser resultaterne.</span><span class="sxs-lookup"><span data-stu-id="7d103-106">This procedure will create a compensation process, run the process, and view the results.</span></span> <span data-ttu-id="7d103-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="7d103-107">The demo data company used to create this procedure is USMF.</span></span>
 

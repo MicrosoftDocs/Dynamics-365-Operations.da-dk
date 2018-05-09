@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83b15e89e87d2936cd175e05fc99e7faf4c0467e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9a9112e88464274fb544e4ba4eaae7b1a36ccd2e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-fraud-alerts"></a><span data-ttu-id="7d364-104">Konfigurere advarsler om svindel</span><span class="sxs-lookup"><span data-stu-id="7d364-104">Set up fraud alerts</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="7d364-105">I dette emne forklares, hvordan du definerer kriterier og regler for placering af potentielt falsk salgsordrer på hold til fornyet gennemgang.</span><span class="sxs-lookup"><span data-stu-id="7d364-105">This topic explains how to set up criteria and rules to place potentially fraudulent sales orders on hold for further review.</span></span> <span data-ttu-id="7d364-106">Funktionen til gennemsyn af svindel bruges til at bestemme gyldigheden af oplysningerne i en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="7d364-106">Fraud review functionality is used to determine the validity of information in a sales order.</span></span> <span data-ttu-id="7d364-107">Hvis oplysningerne i salgsordren viser sig at være tvivlsomme baseret på en organisations svindelkriterier og -regler, kan ordren sættes på hold for fornyet gennemgang af en administrator.</span><span class="sxs-lookup"><span data-stu-id="7d364-107">If the information in the sales order appears to be questionable based on an organization’s fraud criteria and rules, the order may be put on hold for further review by an administrator.</span></span>
 

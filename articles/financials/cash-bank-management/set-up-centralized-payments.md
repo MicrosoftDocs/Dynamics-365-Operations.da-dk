@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fd6f32e266dcbd78c464e42da50a347bea39fcfc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 52e48c0d1b0ef41074538180556f96fe65c206e7
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-centralized-payments"></a><span data-ttu-id="44328-103">Konfigurere centraliserede betalinger</span><span class="sxs-lookup"><span data-stu-id="44328-103">Set up centralized payments</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="44328-104">Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen.</span><span class="sxs-lookup"><span data-stu-id="44328-104">Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization.</span></span> <span data-ttu-id="44328-105">Før du går i gang, skal du gennemføre følgende opsætning:</span><span class="sxs-lookup"><span data-stu-id="44328-105">Before you begin, the following setup must be completed:</span></span>
 

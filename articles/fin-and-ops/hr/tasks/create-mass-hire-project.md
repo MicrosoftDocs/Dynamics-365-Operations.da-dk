@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 91b862155d60f297a1278e44f58804ac385be64c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ec4f8a998364998909171564135ab6133b301b9
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-mass-hire-project"></a><span data-ttu-id="d747f-103">Oprette et masseansættelsesprojekt</span><span class="sxs-lookup"><span data-stu-id="d747f-103">Create a mass hire project</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d747f-104">Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt.</span><span class="sxs-lookup"><span data-stu-id="d747f-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="d747f-105">En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger.</span><span class="sxs-lookup"><span data-stu-id="d747f-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="d747f-106">Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter.</span><span class="sxs-lookup"><span data-stu-id="d747f-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="d747f-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="d747f-107">The demo data company used to create this procedure is USMF.</span></span>
 

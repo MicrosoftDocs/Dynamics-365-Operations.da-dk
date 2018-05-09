@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c035f73fb35c6390be3c665c2645b1fdc411650
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a><span data-ttu-id="1c8a7-103">Kreditorsamarbejde med eksterne kreditorer</span><span class="sxs-lookup"><span data-stu-id="1c8a7-103">Vendor collaboration with external vendors</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1c8a7-104">Modulet **Kreditorsamarbejde** henvender sig til kreditorer, der ikke har EDI-integration (Electronic Data Interchange) med Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="1c8a7-104">The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="1c8a7-105">Kreditorer kan arbejde med indkøbsordrer (IO'er), fakturaer, konsignationslageroplysninger og tilbudsanmodninger, og de kan også få adgang til dele af deres kreditormasterdata.</span><span class="sxs-lookup"><span data-stu-id="1c8a7-105">It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data.</span></span> <span data-ttu-id="1c8a7-106">Dette emne beskriver, hvordan du kan samarbejde med eksterne kreditorer, der bruger kreditorsamarbejde-grænsefladen til at arbejde med indkøbsordrer, tilbudsanmodninger og konsignationslager.</span><span class="sxs-lookup"><span data-stu-id="1c8a7-106">This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory.</span></span> <span data-ttu-id="1c8a7-107">Det beskriver også, hvordan du aktiverer en bestemt kreditor til at bruge kreditorsamarbejde, og hvordan du definerer de oplysninger, som alle kreditorer får vist, når de svarer på en indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="1c8a7-107">It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.</span></span>
 

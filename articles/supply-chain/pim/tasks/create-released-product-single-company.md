@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ced48377f8f6cfdf416bcaf5e2b5e6473998ea91
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f23ddf59d986f16c350e9e978333cd7c9b47389a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-released-product-for-a-single-company"></a><span data-ttu-id="5b629-103">Oprette et frigivet produkt for et enkelt firma</span><span class="sxs-lookup"><span data-stu-id="5b629-103">Create a released product for a single company</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5b629-104">Denne fremgangsmåde beskriver, hvordan du opretter et enkelt frigivet produkt inden for rammerne af en enkelt juridisk enhed.</span><span class="sxs-lookup"><span data-stu-id="5b629-104">This procedure walks through how to create a single released product in the context of a single legal unit.</span></span> <span data-ttu-id="5b629-105">Når et frigivet produkt er oprettet, er det umiddelbart kun tilgængelig i denne enhed.</span><span class="sxs-lookup"><span data-stu-id="5b629-105">After the released product is created,  it's immediately available in this unit only.</span></span> <span data-ttu-id="5b629-106">Du kan gennemgå denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="5b629-106">You can walk through this procedure in demo data company USMF.</span></span> <span data-ttu-id="5b629-107">Denne opgave udføres normalt af en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="5b629-107">This task is usually performed by a product designer.</span></span>
 

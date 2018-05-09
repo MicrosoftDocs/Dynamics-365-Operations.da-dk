@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ba4c7b8ca5da5956340046932cd097ef3c7f0278
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f6d560895e097c7b5a5b106c264f868cf9f98e04
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="lifo-date-with-physical-value-and-marking"></a><span data-ttu-id="c0fbd-106">LIFO-dato med fysisk værdi og mærkning</span><span class="sxs-lookup"><span data-stu-id="c0fbd-106">LIFO Date with physical value and marking</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="c0fbd-107">LIFO (Last In, First Out) er en lagermodel, hvor de seneste (nyeste) tilgange udstedes først.</span><span class="sxs-lookup"><span data-stu-id="c0fbd-107">Last in, First out Date (LIFO Date) is an inventory model based on the LIFO principle.</span></span> <span data-ttu-id="c0fbd-108">Afgange fra lageret udlignes mod de seneste tilgange på lageret baseret på datoen for lagerposteringen.</span><span class="sxs-lookup"><span data-stu-id="c0fbd-108">Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction.</span></span> <span data-ttu-id="c0fbd-109">Hvis der ikke er nogen tilgang før afgangen i forbindelse med LIFO-dato, udlignes afgangen mod en hvilken som helst tilgang efter afgangsdatoen.</span><span class="sxs-lookup"><span data-stu-id="c0fbd-109">By using LIFO Date, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue.</span></span> <span data-ttu-id="c0fbd-110">Flere afgange på samme dato kan udlignes i rækkefølgen seneste afgang, seneste modtagelse.</span><span class="sxs-lookup"><span data-stu-id="c0fbd-110">Several issues on the same date may be settled in the order of last issue, last receipt.</span></span> 
 

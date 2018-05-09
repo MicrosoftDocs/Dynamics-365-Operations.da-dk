@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a6c93252f95e3c07e1929d70467f6aa8d43af593
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aec5393c956007a88671f111f90c16f9545633e4
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-object-dimensions"></a><span data-ttu-id="5f21c-105">Dimensioner for omkostningsobjekt</span><span class="sxs-lookup"><span data-stu-id="5f21c-105">Cost object dimensions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5f21c-106">Når du analyserer omkostninger, kan du bruge omkostningselementdimensioner til at bestemme, hvor omkostningerne skal flyde til.</span><span class="sxs-lookup"><span data-stu-id="5f21c-106">When you analyze costs, you use cost element dimensions to determine where costs flow to.</span></span> <span data-ttu-id="5f21c-107">Du kan bruge omkostningsobjektdimensioner til at bestemme, hvor du skal tildele omkostninger.</span><span class="sxs-lookup"><span data-stu-id="5f21c-107">You use cost object dimensions to determine where you should assign costs.</span></span> <span data-ttu-id="5f21c-108">Dette emne indeholder oplysninger om omkostningsobjektdimensioner.</span><span class="sxs-lookup"><span data-stu-id="5f21c-108">This topic provides information about cost object dimensions.</span></span>
 

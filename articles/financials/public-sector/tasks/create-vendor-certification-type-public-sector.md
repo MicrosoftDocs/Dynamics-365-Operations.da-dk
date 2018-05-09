@@ -17,15 +17,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7494ca453a53e89ae8b035c46afde9d8a1deccb6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b0c4e51d5dfb5357d80ff5fff210f9246ed60ec1
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-vendor-certification-type-in-the-public-sector"></a><span data-ttu-id="7e7f9-103">Oprette en kreditorcertificeringstype i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="7e7f9-103">Create a vendor certification type in the public sector</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7e7f9-104">Du kan oprette enhver form for certificering, som kreditorerne har, og tildele dem til leverandørorganisationer som f.eks. professionelle legitimationsoplysninger, ansvarsforsikring, mindretalsstatus eller overholdelse af forskellige miljømæssige eller forbrugerrelaterede sikkerhedsstandarder.</span><span class="sxs-lookup"><span data-stu-id="7e7f9-104">You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards.</span></span> <span data-ttu-id="7e7f9-105">Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.</span><span class="sxs-lookup"><span data-stu-id="7e7f9-105">This task guide was created using the PSUS demo company data in the public sector partition.</span></span>
 

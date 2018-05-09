@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ad16d00788122eb1ab22dd03561cac488b9fad6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e44b585c6e6e86d244328e73846a5c91f94233eb
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-quality-orders"></a><span data-ttu-id="3eef3-103">Konfigurere kvalitetsordrer</span><span class="sxs-lookup"><span data-stu-id="3eef3-103">Set up quality orders</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3eef3-104">Denne fremgangsmåde viser, hvordan du aktiverer en proces til kvalitetsstyring, hvor indgående lager skal undersøges umiddelbart efter modtagelsesregistrering.</span><span class="sxs-lookup"><span data-stu-id="3eef3-104">This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration.</span></span> <span data-ttu-id="3eef3-105">Proceduren udføres normalt af en kvalitetschef.</span><span class="sxs-lookup"><span data-stu-id="3eef3-105">The procedure will typically be carried out by a quality manager.</span></span> <span data-ttu-id="3eef3-106">Processen omfatter oprettelse af en kvalitetsgruppe til at definere de varer, der skal udtages, og en testgruppe til at gruppere de test, der skal udføres på varer i kvalitetsgruppen.</span><span class="sxs-lookup"><span data-stu-id="3eef3-106">The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group.</span></span> <span data-ttu-id="3eef3-107">Du kan køre denne guide i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="3eef3-107">You can run this guide in the USMF demo data company.</span></span>
 

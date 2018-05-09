@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 57884660fb9459c8cd918e5d1ba4df14efcf6db3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d7470c53c3fe48e4adb584847dbb3b7dc931e578
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="process-and-trace-source-data"></a><span data-ttu-id="26448-103">Behandle og spore kildedata</span><span class="sxs-lookup"><span data-stu-id="26448-103">Process and trace source data</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="26448-104">Al databehandling køres af job.</span><span class="sxs-lookup"><span data-stu-id="26448-104">All data processing is run by jobs.</span></span> <span data-ttu-id="26448-105">Der oprettes en kladde for hvert job og dataprovider for at dokumentere, at processen blev kørt, og at posterne blev behandlet i det aktuelle job.</span><span class="sxs-lookup"><span data-stu-id="26448-105">For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job.</span></span> <span data-ttu-id="26448-106">Du kan bruge denne procedure til at konfigurere en datakilde og derefter spore oprindelsen til en bestemt omkostningspost.</span><span class="sxs-lookup"><span data-stu-id="26448-106">Use this procedure to set up a data source and then  trace the origin of a specific cost entry.</span></span> <span data-ttu-id="26448-107">Denne registrering bruger USP2-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="26448-107">This recording uses the USP2 demo data company USP2.</span></span> <span data-ttu-id="26448-108">Før du udfører denne opgave, skal du sørge for at afspille følgende opgaveguider: "Oprette en finanspost for omkostningsregnskab", "Definere kontrolenheder for omkostninger" og "Administrere datakilde til finansposten for omkostningsregnskabet".</span><span class="sxs-lookup"><span data-stu-id="26448-108">Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."</span></span>
 

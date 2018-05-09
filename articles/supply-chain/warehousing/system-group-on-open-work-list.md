@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c9ff5df219c5e8b52e3d64d340fd55be7f51919a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a><span data-ttu-id="8c832-103">Systemgruppering på en åben opgaveliste</span><span class="sxs-lookup"><span data-stu-id="8c832-103">System grouping on an open work list</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="8c832-104">Ved hjælp af et felt til systemgruppering kan du filtrere en oversigt over åbne opgaver uden at skulle redigere menupunktet for mobilenheden.</span><span class="sxs-lookup"><span data-stu-id="8c832-104">By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.</span></span>
 <span data-ttu-id="8c832-105">Hvis det er relevant, fungerer systemgruppering til filtrering af en opgaveliste på et enkelt felt med opgaveoverskrift.</span><span class="sxs-lookup"><span data-stu-id="8c832-105">Where it applies, system grouping works for filtering a work list on a single work header field.</span></span> <span data-ttu-id="8c832-106">Du kan ikke bruge systemgruppering til at filtrere online feltniveauer.</span><span class="sxs-lookup"><span data-stu-id="8c832-106">You cannot use system grouping to filter on line level fields.</span></span>

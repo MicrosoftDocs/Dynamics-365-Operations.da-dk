@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8250b612ca62048a8ab9e0c5f082a6e652e1b5c1
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-insights"></a><span data-ttu-id="42481-103">Økonomisk indsigt</span><span class="sxs-lookup"><span data-stu-id="42481-103">Financial Insights</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="42481-104">**Økonomiske indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.</span><span class="sxs-lookup"><span data-stu-id="42481-104">**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</span></span> <span data-ttu-id="42481-105">Power BI er integreret i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="42481-105">Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</span></span>
 <span data-ttu-id="42481-106">Fokus for **økonomiske indsigt** er en analytisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="42481-106">The focus of **Financial Insights** is analytical reporting.</span></span> <span data-ttu-id="42481-107">Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere.</span><span class="sxs-lookup"><span data-stu-id="42481-107">Personas across an organization can view, research, understand, and act.</span></span> 

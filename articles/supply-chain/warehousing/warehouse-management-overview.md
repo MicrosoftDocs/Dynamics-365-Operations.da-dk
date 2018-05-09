@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d090a668988aeaeb8f1b779bc565d03a506a8f15
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a569d9264097d7a0b742bc7bf47c2504c58cdb4e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="warehouse-management"></a><span data-ttu-id="6a8d4-103">Lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="6a8d4-103">Warehouse management</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6a8d4-104">Modulet Lokationsstyring til Dynamics 365 for Finance and Operations giver dig mulighed for at administrere lagerstedsprocesser i produktions-, distributions- og detailvirksomheder.</span><span class="sxs-lookup"><span data-stu-id="6a8d4-104">The Warehouse management module for Dynamics 365 for Finance and Operations lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="6a8d4-105">Dette modul har en lang række funktioner, der understøtter lagerstedet på et optimal niveau, når som helst.</span><span class="sxs-lookup"><span data-stu-id="6a8d4-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="6a8d4-106">Lokationsstyring er fuldt integreret med andre forretningsprocesser i Finance and Operations, f.eks. transport, produktion, kvalitetskontrol, køb, overførsel, salg og returneringer.</span><span class="sxs-lookup"><span data-stu-id="6a8d4-106">Warehouse management is fully integrated with other business processes in Finance and Operations such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 81f556dca0bfa17623bb1a0f1c712bfa5a4a2a9b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: abdae353a3393e21350864042aa317bc85c191b6
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a><span data-ttu-id="41acb-104">Konfigurere produkter, som kan være produceret eller indkøbt</span><span class="sxs-lookup"><span data-stu-id="41acb-104">Set up products that can be produced or procured</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="41acb-105">Produkterne kan købes på forskellige måder: De kan produceres (fremstilles) eller fremskaffes (købes).</span><span class="sxs-lookup"><span data-stu-id="41acb-105">Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased).</span></span> <span data-ttu-id="41acb-106">Denne artikel beskriver nogle typiske punkter, du skal overveje, når du konfigurerer produkter til understøttelse af multiforsyning.</span><span class="sxs-lookup"><span data-stu-id="41acb-106">This article describes some typical points to consider when you configure products to support multi-sourcing.</span></span> 
 

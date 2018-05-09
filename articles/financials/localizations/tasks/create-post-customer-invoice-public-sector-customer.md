@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 10ab0e5ecaea6e76ad580de56ab2cdb68cbecfd8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 55bee335b013a3204be7dbf4eb6ce14a90c7cd1b
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-and-post-a-customer-invoice-for-a-public-sector-customer-denmark"></a><span data-ttu-id="a7631-103">Oprette og bogføre en debitorfaktura for en debitor i den offentlige sektor (Danmark)</span><span class="sxs-lookup"><span data-stu-id="a7631-103">Create and post a customer invoice for a public sector customer (Denmark)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a7631-104">Denne procedure hjælper dig med at oprette og bogføre en salgsordrefaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering.</span><span class="sxs-lookup"><span data-stu-id="a7631-104">This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing.</span></span> 
 

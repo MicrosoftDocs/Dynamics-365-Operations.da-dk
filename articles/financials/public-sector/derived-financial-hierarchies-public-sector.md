@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aa88d18a8bed26e669a1e216105141bb51767249
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2551cd4186df8f0befb07dbc538e141e41a028f4
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="derived-financial-hierarchies-in-the-public-sector"></a><span data-ttu-id="41f4c-103">Afledte finansielle hierarkier i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="41f4c-103">Derived financial hierarchies in the public sector</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="41f4c-104">I denne artikel beskrives de funktioner for afledte økonomiske hierarkier, der er tilgængelige for den offentlige sektor.</span><span class="sxs-lookup"><span data-stu-id="41f4c-104">This article describes the derived financial hierarchies functionality that is available for the public sector.</span></span> 
 

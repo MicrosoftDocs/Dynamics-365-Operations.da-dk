@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1f24ffbba0c28b241de66f484546844bc72b90c9
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="immediate-replenishment"></a><span data-ttu-id="d8a4b-103">Øjeblikkelig genopfyldning</span><span class="sxs-lookup"><span data-stu-id="d8a4b-103">Immediate replenishment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d8a4b-104">Øjeblikkelig genopfyldning gør det muligt at genopfylde lageret, så snart en lokationsvejledning ikke kan fordele lageret.</span><span class="sxs-lookup"><span data-stu-id="d8a4b-104">Immediate replenishment lets you replenish inventory immediately after a location directive line fails to allocate inventory.</span></span> <span data-ttu-id="d8a4b-105">Genopfyldningen er baseret på en enkelt linje i opsætningen af lokationsvejledningen.</span><span class="sxs-lookup"><span data-stu-id="d8a4b-105">The replenishment is based on a single line in the setup of the location directive.</span></span> <span data-ttu-id="d8a4b-106">Hvis lageret ikke er disponibelt i den måleenhed, der er angivet af den pågældende linje, udføres der straks genopfyldning med den pågældende måleenhed.</span><span class="sxs-lookup"><span data-stu-id="d8a4b-106">If inventory isn't on hand in the unit of measure that is specified by that line, replenishment of that unit of measure occurs immediately.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 943239c7d57b4a438c405f1ad0551db29d7a8145
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e78427dacb0d2adfd0334115581d5a5a9cfd2921
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="41741-103">Oprette regler for rådgivningsværktøj til optimering</span><span class="sxs-lookup"><span data-stu-id="41741-103">Create rules for Optimization advisor</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="41741-104">I dette emne forklares det, hvordan du oprette nye regler til **rådgivningsværktøj til optimering**.</span><span class="sxs-lookup"><span data-stu-id="41741-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="41741-105">Du kan for eksempel oprette en ny regel, der identificerer, hvilke tilbudsanmodninger (RFQ) der har en tom titel.</span><span class="sxs-lookup"><span data-stu-id="41741-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="41741-106">Brugen af titler på sager gør dem nemme at identificere og søge i.</span><span class="sxs-lookup"><span data-stu-id="41741-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="41741-107">Selv om det er ret enkelt, viser dette eksempel, hvad der kan opnås med optimeringsregler.</span><span class="sxs-lookup"><span data-stu-id="41741-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
 

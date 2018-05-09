@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2bdd1264f92b73aed2eeb6ab13e435bb3c0dde19
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3d4977ae0c1ce613b044e59161c96461027411f2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-vendor-bank-account"></a><span data-ttu-id="b59ea-103">Oprette en bankkonto for kreditor</span><span class="sxs-lookup"><span data-stu-id="b59ea-103">Create a vendor bank account</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b59ea-104">Denne procedure viser dig, hvordan du skal oprette en bankkonto for en leverandør.</span><span class="sxs-lookup"><span data-stu-id="b59ea-104">This procedure shows you how to create a bank account for a vendor.</span></span> <span data-ttu-id="b59ea-105">Du kan bruge denne procedure i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="b59ea-105">You can use this procedure in demo data company USMF.</span></span>
 

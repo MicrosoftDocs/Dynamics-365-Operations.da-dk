@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a3b8b321e1793e5959a8a8c2c32e8bdd812bc3e7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a3f0bb4e8511ea7b0987164efade964c0edd3d08
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="copy-service-templates-lines"></a><span data-ttu-id="6b103-103">Kopiere serviceskabelonlinjer</span><span class="sxs-lookup"><span data-stu-id="6b103-103">Copy service templates lines</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6b103-104">Skabelonoplysninger kan kopieres enten til en serviceaftale eller en serviceordre.</span><span class="sxs-lookup"><span data-stu-id="6b103-104">Template information can be copied to either a service agreement or a service order.</span></span>
 
