@@ -24,6 +24,7 @@
 # Moms
 ## [Momsoversigt](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Momsberegningsmetoder i feltet Grundlag](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## ####[Tildeling og tilsidesættelser af moms](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Indstillinger for beregning af hele beløb og intervaller for momskoder](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Callcenter
@@ -166,7 +167,8 @@
 ## [Oprette og tilknytte en enhed](tasks/create-associate-device.md)
 ## [Oprette og tilknytte en hardwarestation](tasks/create-associate-hardware-station.md)
 ## [Oprette og tilknytte registre](tasks/create-associate-registers.md)
-## [Oprette, beregne og bogføre et opgørelse for en detailbutik](tasks/create-calculate-post-statement-retail-store.md)
+## [Oprette, beregne og bogføre en opgørelse for en detailbutik](tasks/create-calculate-post-statement-retail-store.md)
+## [Forbedringer til bogføring af opgørelsen](statement-posting-EOD.md)
 ## [Oprette callcenter-ordrer](tasks/create-call-center-orders.md)
 ## [Oprette økonomiske dimensioner for POS-kasseapparater og konfigurere dimensionsværdier for registre](tasks/create-financial-dimensions-pos.md)
 ## [Oprette økonomiske dimensioner for detailkanaler og konfigurere dimensionsværdier for butikker](tasks/create-financial-dimensions-retail-channels.md)
@@ -288,8 +290,7 @@
 ### [Føje brugerdefinerede kolonner til et POS-transaktionsgitter](dev-itpro/pos-custom-transaction-column.md)
 ### [Kalde et POS-API eller en operation fra en POS-udvidelse](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS-udløsere og udskrivning](dev-itpro/pos-trigger-printing.md)
-### [Føje et brugerdefineret kontrolelement til en Retail Modern POS-designerbaseret visning uden skærm](dev-itpro/pos-control-non-screen.md)
-### [Generere Retail-proxy til POS- og e-handel](dev-itpro/pos-generate-retail-proxy.md)
+### [Føje et brugerdefineret kontrolelement til en Retail Modern POS-designerbaseret visning uden skærm.](dev-itpro/pos-control-non-screen.md)
 ### [Konfigurationstrin for Retail-udviklere, der arbejder på skybaserede udviklingsfelter](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime

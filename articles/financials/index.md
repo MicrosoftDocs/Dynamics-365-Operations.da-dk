@@ -18,29 +18,29 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 881b44f1128e732bc768191088e19efc38552eca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 19ba20ce16c9916e09b862b0ebedbf68259c7769
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-management-home-page"></a>Startside for økonomistyring
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til økonomistyringsfunktioner i Microsoft Dynamics 365 for Finance and Operations. 
 
 Vælg et funktionsområde, du vil vide mere om.
-- [Kreditor](accounts-payable\accounts-payable.md) 
-- [Debitor](accounts-receivable\accounts-receivable.md) 
-- [Kontant- og bankstyring](cash-bank-management\cash-bank-management.md)
-- [Omkostningsregnskab](cost-accounting\cost-accounting-home-page.md)
-- [Anlægsaktiver](fixed-assets\fixed-assets.md)
-- [Finans](general-ledger\general-ledger.md) 
-- [Projektstyring](project-management\overview-project-management-accounting.md)
-- [Offentlig sektor](public-sector\public-sector-functionality.md) 
-- [Budgettering](budgeting\budgeting-overview.md) 
+- [Kreditor](accounts-payable/accounts-payable.md) 
+- [Debitor](accounts-receivable/accounts-receivable.md) 
+- [Kontant- og bankstyring](cash-bank-management/cash-bank-management.md)
+- [Omkostningsregnskab](cost-accounting/cost-accounting-home-page.md)
+- [Anlægsaktiver](fixed-assets/fixed-assets.md)
+- [Finans](general-ledger/general-ledger.md) 
+- [Projektstyring](project-management/overview-project-management-accounting.md)
+- [Offentlig sektor](public-sector/public-sector-functionality.md) 
+- [Budgettering](budgeting/budgeting-overview.md) 
 
 
 
