@@ -3,7 +3,7 @@ title: Startside for supply chain management
 description: "Denne side indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,97 +19,102 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0748747fedd009f7bffa93a6334902503189acba
+ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
+ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
-# <a name="supply-chain-management-home-page"></a><span data-ttu-id="fdfc1-103">Startside for supply chain management</span><span class="sxs-lookup"><span data-stu-id="fdfc1-103">Supply chain management home page</span></span>
+# <a name="supply-chain-management-home-page"></a><span data-ttu-id="1a67c-103">Startside for supply chain management</span><span class="sxs-lookup"><span data-stu-id="1a67c-103">Supply chain management home page</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="fdfc1-104">Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-104">This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+<span data-ttu-id="1a67c-104">Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="1a67c-104">This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-## <a name="whats-new-and-in-development"></a><span data-ttu-id="fdfc1-105">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="fdfc1-105">What's new and in development</span></span>
-<span data-ttu-id="fdfc1-106">Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-106">Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development.</span></span> 
+## <a name="whats-new-and-in-development"></a><span data-ttu-id="1a67c-105">Nyheder og funktioner under udvikling</span><span class="sxs-lookup"><span data-stu-id="1a67c-105">What's new and in development</span></span>
+<span data-ttu-id="1a67c-106">Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.</span><span class="sxs-lookup"><span data-stu-id="1a67c-106">Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development.</span></span> 
 
-## <a name="core-concepts-and-tasks"></a><span data-ttu-id="fdfc1-107">Grundlæggende begreber og opgaver</span><span class="sxs-lookup"><span data-stu-id="fdfc1-107">Core concepts and tasks</span></span>
+## <a name="core-concepts-and-tasks"></a><span data-ttu-id="1a67c-107">Grundlæggende begreber og opgaver</span><span class="sxs-lookup"><span data-stu-id="1a67c-107">Core concepts and tasks</span></span>
 
-<span data-ttu-id="fdfc1-108">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-108">Select a feature area to learn more about it.</span></span>
+<span data-ttu-id="1a67c-108">Vælg et funktionsområde, du vil vide mere om.</span><span class="sxs-lookup"><span data-stu-id="1a67c-108">Select a feature area to learn more about it.</span></span>
 
-- [<span data-ttu-id="fdfc1-109">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="fdfc1-109">Cost accounting</span></span>](../financials/cost-accounting/cost-accounting-home-page.md)
-- [<span data-ttu-id="fdfc1-110">Omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-110">Cost management</span></span>](cost-management/cost-management-home-page.md)  
-- [<span data-ttu-id="fdfc1-111">Lagerstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-111">Inventory management</span></span>](inventory/inventory-home-page.md)
-- [<span data-ttu-id="fdfc1-112">Varedisponering</span><span class="sxs-lookup"><span data-stu-id="fdfc1-112">Master planning</span></span>](master-planning/master-planning-home-page.md)
-- [<span data-ttu-id="fdfc1-113">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="fdfc1-113">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
-- [<span data-ttu-id="fdfc1-114">Administration af produktoplysninger</span><span class="sxs-lookup"><span data-stu-id="fdfc1-114">Product information management</span></span>](pim/product-information.md)
-- [<span data-ttu-id="fdfc1-115">Produktionsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-115">Production control</span></span>](production-control/production-process-overview.md)
-- [<span data-ttu-id="fdfc1-116">Salg og marketing</span><span class="sxs-lookup"><span data-stu-id="fdfc1-116">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
-- [<span data-ttu-id="fdfc1-117">Transportstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-117">Transportation management</span></span>](transportation/transportation-management-overview.md)
-- [<span data-ttu-id="fdfc1-118">Lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-118">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
+- [<span data-ttu-id="1a67c-109">Omkostningsregnskab</span><span class="sxs-lookup"><span data-stu-id="1a67c-109">Cost accounting</span></span>](../financials/cost-accounting/cost-accounting-home-page.md)
+- [<span data-ttu-id="1a67c-110">Omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-110">Cost management</span></span>](cost-management/cost-management-home-page.md)  
+- [<span data-ttu-id="1a67c-111">Lagerstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-111">Inventory management</span></span>](inventory/inventory-home-page.md)
+- [<span data-ttu-id="1a67c-112">Varedisponering</span><span class="sxs-lookup"><span data-stu-id="1a67c-112">Master planning</span></span>](master-planning/master-planning-home-page.md)
+- [<span data-ttu-id="1a67c-113">Indkøb og forsyning</span><span class="sxs-lookup"><span data-stu-id="1a67c-113">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
+- [<span data-ttu-id="1a67c-114">Administration af produktoplysninger</span><span class="sxs-lookup"><span data-stu-id="1a67c-114">Product information management</span></span>](pim/product-information.md)
+- [<span data-ttu-id="1a67c-115">Produktionsstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-115">Production control</span></span>](production-control/production-process-overview.md)
+- [<span data-ttu-id="1a67c-116">Salg og marketing</span><span class="sxs-lookup"><span data-stu-id="1a67c-116">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
+- [<span data-ttu-id="1a67c-117">Servicestyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-117">Service management</span></span>](service-management/service-management-home-page.md)
+- [<span data-ttu-id="1a67c-118">Transportstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-118">Transportation management</span></span>](transportation/transportation-management-overview.md)
+- [<span data-ttu-id="1a67c-119">Lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-119">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
 
-## <a name="videos"></a><span data-ttu-id="fdfc1-119">Videoer</span><span class="sxs-lookup"><span data-stu-id="fdfc1-119">Videos</span></span>
+## <a name="videos"></a><span data-ttu-id="1a67c-120">Videoer</span><span class="sxs-lookup"><span data-stu-id="1a67c-120">Videos</span></span>
 
-<span data-ttu-id="fdfc1-120">Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).</span><span class="sxs-lookup"><span data-stu-id="fdfc1-120">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
+<span data-ttu-id="1a67c-121">Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, version 8.0 (april 2018).</span><span class="sxs-lookup"><span data-stu-id="1a67c-121">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
 
--  [<span data-ttu-id="fdfc1-121">Kundeemne til kontant-integration</span><span class="sxs-lookup"><span data-stu-id="fdfc1-121">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
--  [<span data-ttu-id="fdfc1-122">Optimeringsrådgiver</span><span class="sxs-lookup"><span data-stu-id="fdfc1-122">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [<span data-ttu-id="fdfc1-123">Bruge lagerstedsskabelon til at kopiere konfiguration</span><span class="sxs-lookup"><span data-stu-id="fdfc1-123">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+- [<span data-ttu-id="1a67c-122">Synkronisere en arbejdsordre mellem Field Service og Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="1a67c-122">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
 
-<span data-ttu-id="fdfc1-124">Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).</span><span class="sxs-lookup"><span data-stu-id="fdfc1-124">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
+<span data-ttu-id="1a67c-123">Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).</span><span class="sxs-lookup"><span data-stu-id="1a67c-123">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
 
--  [<span data-ttu-id="fdfc1-125">Introduktion til driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="fdfc1-125">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
--  [<span data-ttu-id="fdfc1-126">Mobilarbejdsområde for omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-126">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
--  [<span data-ttu-id="fdfc1-127">Bruge Excel til omkostningsanalyse</span><span class="sxs-lookup"><span data-stu-id="fdfc1-127">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
--  [<span data-ttu-id="fdfc1-128">Godkende indkøbsordrer på en mobilenhed</span><span class="sxs-lookup"><span data-stu-id="fdfc1-128">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
--  [<span data-ttu-id="fdfc1-129">Visuel planlægning med Gantt-diagram til produktions- og batchordrer</span><span class="sxs-lookup"><span data-stu-id="fdfc1-129">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
+-  [<span data-ttu-id="1a67c-124">Kundeemne til kontant-integration</span><span class="sxs-lookup"><span data-stu-id="1a67c-124">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
+-  [<span data-ttu-id="1a67c-125">Optimeringsrådgiver</span><span class="sxs-lookup"><span data-stu-id="1a67c-125">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [<span data-ttu-id="1a67c-126">Bruge lagerstedsskabelon til at kopiere konfiguration</span><span class="sxs-lookup"><span data-stu-id="1a67c-126">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-<span data-ttu-id="fdfc1-130">Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-130">These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+<span data-ttu-id="1a67c-127">Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).</span><span class="sxs-lookup"><span data-stu-id="1a67c-127">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
 
-<span data-ttu-id="fdfc1-131">**Omkostningsstyring**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-131">**Cost management**</span></span>
+-  [<span data-ttu-id="1a67c-128">Introduktion til driftsregnskab</span><span class="sxs-lookup"><span data-stu-id="1a67c-128">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
+-  [<span data-ttu-id="1a67c-129">Mobilarbejdsområde for omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-129">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
+-  [<span data-ttu-id="1a67c-130">Bruge Excel til omkostningsanalyse</span><span class="sxs-lookup"><span data-stu-id="1a67c-130">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
+-  [<span data-ttu-id="1a67c-131">Godkende indkøbsordrer på en mobilenhed</span><span class="sxs-lookup"><span data-stu-id="1a67c-131">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
+-  [<span data-ttu-id="1a67c-132">Visuel planlægning med Gantt-diagram til produktions- og batchordrer</span><span class="sxs-lookup"><span data-stu-id="1a67c-132">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
 
--  [<span data-ttu-id="fdfc1-132">Oversigt over omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-132">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+<span data-ttu-id="1a67c-133">Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i den tidligere version af Finance and Operations, men de samme begreber er gældende, og procedurerne i den aktuelle version er også stort set identiske.</span><span class="sxs-lookup"><span data-stu-id="1a67c-133">These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
 
-<span data-ttu-id="fdfc1-133">**Varedisponering**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-133">**Master planning**</span></span>
+<span data-ttu-id="1a67c-134">**Omkostningsstyring**</span><span class="sxs-lookup"><span data-stu-id="1a67c-134">**Cost management**</span></span>
 
--  [<span data-ttu-id="fdfc1-134">Udvide behovsprognosefunktionen</span><span class="sxs-lookup"><span data-stu-id="fdfc1-134">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [<span data-ttu-id="fdfc1-135">Varedisponering - tips og tricks til forbedring af ydeevnen</span><span class="sxs-lookup"><span data-stu-id="fdfc1-135">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
--  [<span data-ttu-id="fdfc1-136">Hjælp! MPS er langsom!</span><span class="sxs-lookup"><span data-stu-id="fdfc1-136">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
+-  [<span data-ttu-id="1a67c-135">Oversigt over omkostningsstyring</span><span class="sxs-lookup"><span data-stu-id="1a67c-135">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 
-<span data-ttu-id="fdfc1-137">**Administration af produktoplysninger**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-137">**Product information management**</span></span>
+<span data-ttu-id="1a67c-136">**Varedisponering**</span><span class="sxs-lookup"><span data-stu-id="1a67c-136">**Master planning**</span></span>
 
--  [<span data-ttu-id="fdfc1-138">Produktkonfigurator i Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="fdfc1-138">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
+-  [<span data-ttu-id="1a67c-137">Udvide behovsprognosefunktionen</span><span class="sxs-lookup"><span data-stu-id="1a67c-137">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [<span data-ttu-id="1a67c-138">Varedisponering - tips og tricks til forbedring af ydeevnen</span><span class="sxs-lookup"><span data-stu-id="1a67c-138">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
+-  [<span data-ttu-id="1a67c-139">Hjælp! MPS er langsom!</span><span class="sxs-lookup"><span data-stu-id="1a67c-139">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
 
-<span data-ttu-id="fdfc1-139">**Lokationssstyring**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-139">**Warehouse management**</span></span> 
+<span data-ttu-id="1a67c-140">**Administration af produktoplysninger**</span><span class="sxs-lookup"><span data-stu-id="1a67c-140">**Product information management**</span></span>
 
--  [<span data-ttu-id="fdfc1-140">Håndtere indgående ASN'er i Lokationsstyring</span><span class="sxs-lookup"><span data-stu-id="fdfc1-140">Process inbound ASNs in Warehouse management</span></span>](https://mix.office.com/watch/wpf78tr7rjuh)  
--  [<span data-ttu-id="fdfc1-141">Få mest muligt ud af dit lokationsstyringssystem</span><span class="sxs-lookup"><span data-stu-id="fdfc1-141">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
--  [<span data-ttu-id="fdfc1-142">Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="fdfc1-142">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
--  [<span data-ttu-id="fdfc1-143">Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="fdfc1-143">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
--  [<span data-ttu-id="fdfc1-144">Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3</span><span class="sxs-lookup"><span data-stu-id="fdfc1-144">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
--  [<span data-ttu-id="fdfc1-145">Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion</span><span class="sxs-lookup"><span data-stu-id="fdfc1-145">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
+-  [<span data-ttu-id="1a67c-141">Produktkonfigurator i Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="1a67c-141">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
 
-<span data-ttu-id="fdfc1-146">**Produktionsstyring**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-146">**Production control**</span></span>
+<span data-ttu-id="1a67c-142">**Lokationsstyring**</span><span class="sxs-lookup"><span data-stu-id="1a67c-142">**Warehouse management**</span></span> 
 
--  [<span data-ttu-id="fdfc1-147">Underleverandørhandlinger og -aktiviteter i produktion</span><span class="sxs-lookup"><span data-stu-id="fdfc1-147">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
+-  [<span data-ttu-id="1a67c-143">Få mest muligt ud af dit lokationsstyringssystem</span><span class="sxs-lookup"><span data-stu-id="1a67c-143">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [<span data-ttu-id="1a67c-144">Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="1a67c-144">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [<span data-ttu-id="1a67c-145">Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning</span><span class="sxs-lookup"><span data-stu-id="1a67c-145">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
+-  [<span data-ttu-id="1a67c-146">Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3</span><span class="sxs-lookup"><span data-stu-id="1a67c-146">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
+-  [<span data-ttu-id="1a67c-147">Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion</span><span class="sxs-lookup"><span data-stu-id="1a67c-147">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
 
-<span data-ttu-id="fdfc1-148">**Transportstyring**</span><span class="sxs-lookup"><span data-stu-id="fdfc1-148">**Transportation management**</span></span>
+<span data-ttu-id="1a67c-148">**Produktionsstyring**</span><span class="sxs-lookup"><span data-stu-id="1a67c-148">**Production control**</span></span>
 
--  [<span data-ttu-id="fdfc1-149">Transportstyring (TMS) i det nye Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="fdfc1-149">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
+-  [<span data-ttu-id="1a67c-149">Underleverandørhandlinger og -aktiviteter i produktion</span><span class="sxs-lookup"><span data-stu-id="1a67c-149">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
 
-## <a name="blogs"></a><span data-ttu-id="fdfc1-150">Blogs</span><span class="sxs-lookup"><span data-stu-id="fdfc1-150">Blogs</span></span>
-<span data-ttu-id="fdfc1-151">Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-151">There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>.</span></span> <span data-ttu-id="fdfc1-152">De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-152">Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+<span data-ttu-id="1a67c-150">**Transportstyring**</span><span class="sxs-lookup"><span data-stu-id="1a67c-150">**Transportation management**</span></span>
 
-## <a name="white-papers"></a><span data-ttu-id="fdfc1-153">Hvidbøger</span><span class="sxs-lookup"><span data-stu-id="fdfc1-153">White papers</span></span>
--  <span data-ttu-id="fdfc1-154"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a></span><span class="sxs-lookup"><span data-stu-id="fdfc1-154"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a></span></span> 
--  <span data-ttu-id="fdfc1-155"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a></span><span class="sxs-lookup"><span data-stu-id="fdfc1-155"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a></span></span> 
--  <span data-ttu-id="fdfc1-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af efterkalkulationsark</a></span><span class="sxs-lookup"><span data-stu-id="fdfc1-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a></span></span>
--  <span data-ttu-id="fdfc1-157"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet på lagerstedet via Microsoft Dynamics 365 for Finance and Operations</a></span><span class="sxs-lookup"><span data-stu-id="fdfc1-157"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a></span></span>
+-  [<span data-ttu-id="1a67c-151">Transportstyring (TMS) i det nye Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="1a67c-151">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
 
-## <a name="elearning-courses"></a><span data-ttu-id="fdfc1-158">eLearning-kurser</span><span class="sxs-lookup"><span data-stu-id="fdfc1-158">eLearning courses</span></span>
-<span data-ttu-id="fdfc1-159">Oplysninger om kurser i Microsoft Dynamics 365 for Finance and Operations finder du i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-uddannelsesportalen</a>.</span><span class="sxs-lookup"><span data-stu-id="fdfc1-159">For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>.</span></span> <span data-ttu-id="fdfc1-160">(kræver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="fdfc1-160">(requires CustomerSource account)</span></span> 
+## <a name="blogs"></a><span data-ttu-id="1a67c-152">Blogs</span><span class="sxs-lookup"><span data-stu-id="1a67c-152">Blogs</span></span>
+<span data-ttu-id="1a67c-153">Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>.</span><span class="sxs-lookup"><span data-stu-id="1a67c-153">There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>.</span></span> <span data-ttu-id="1a67c-154">De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version.</span><span class="sxs-lookup"><span data-stu-id="1a67c-154">Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+
+## <a name="white-papers"></a><span data-ttu-id="1a67c-155">Hvidbøger</span><span class="sxs-lookup"><span data-stu-id="1a67c-155">White papers</span></span>
+-  <span data-ttu-id="1a67c-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a></span><span class="sxs-lookup"><span data-stu-id="1a67c-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a></span></span> 
+-  <span data-ttu-id="1a67c-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a></span><span class="sxs-lookup"><span data-stu-id="1a67c-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a></span></span> 
+-  <span data-ttu-id="1a67c-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af efterkalkulationsark</a></span><span class="sxs-lookup"><span data-stu-id="1a67c-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a></span></span>
+-  <span data-ttu-id="1a67c-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet på lagerstedet via Microsoft Dynamics 365 for Finance and Operations</a></span><span class="sxs-lookup"><span data-stu-id="1a67c-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a></span></span>
+
+## <a name="elearning-courses"></a><span data-ttu-id="1a67c-160">eLearning-kurser</span><span class="sxs-lookup"><span data-stu-id="1a67c-160">eLearning courses</span></span>
+<span data-ttu-id="1a67c-161">Oplysninger om kurser i Microsoft Dynamics 365 for Finance and Operations finder du i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-uddannelsesportalen</a>.</span><span class="sxs-lookup"><span data-stu-id="1a67c-161">For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>.</span></span> <span data-ttu-id="1a67c-162">(kræver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="1a67c-162">(requires CustomerSource account)</span></span> 
 
 
 

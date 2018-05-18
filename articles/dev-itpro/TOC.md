@@ -10,7 +10,12 @@
 ## [Få en evalueringskopi](dev-tools/get-evaluation-copy.md)
 ## [Tilmelde dig et abonnement](dev-tools/sign-up-preview-subscription.md)
 ## [Installere og åbne et udviklingsmiljø](dev-tools/access-instances.md)
-## [Systemkrav til udvikling](dev-tools/development-system-requirements.md)
+### [Konfigurere udvikler-VM](dev-tools/configure-developer-vm.md)
+### [Oprette en ny bruger på en computer til udvikling](dev-tools/enable-development-machine.md)
+### [Ofte stillede spørgsmål om udviklings- og build-VM'er, der ikke tillader administratoradgang](sysadmin/VMs-no-admin-access.md)
+### [Omdøbe et lokalt miljø for at få adgang til Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Systemkrav til udvikling](dev-tools/development-system-requirements.md)
+## [Versionskontrol, metadatasøgning og navigation](dev-tools/version-control-metadata-navigation.md)
 ## Eksempelprogram til flådeadministration
 ### [Eksempelprogram til flådeadministration](dev-tools/fleet-management-sample.md)
 ### [Oversigt over eksempelprogram til flådeadministration](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [Buildhandlinger](dev-tools/build-operations.md)
 ### [Kodeeditor](dev-tools/code-editor.md)
 ### [Oprette en model og data modelelementer](dev-tools/create-data-model-elements.md)
-### [Oprette en ny bruger på en computer til udvikling](dev-tools/enable-development-machine.md)
+#### [Retningslinjer for navngivning](extensibility/NamingGuidelines.md)
+#### [Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten](dev-tools/lock-models.md)
 ### [Tilpasningsanalyserapport](dev-tools/customization-analysis-report.md)
 ### [Elementdesignere](dev-tools/element-designers.md)
 ### [Brug af element](dev-tools/element-usage.md)
@@ -31,7 +37,6 @@
 ### [Modeller](dev-tools/models.md)
 ### [Projekter i Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Værktøjs-tilføjelsesprogrammer til Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Deaktivere tilpasning af modellen og fraråde brug af funktionaliteten](dev-tools/lock-models.md)
 ### [Opdatere Visual Studio-udviklingsværktøjer](dev-tools/update-development-tools.md)
 ## X++ programmeringssprog
 ### [X++ og fejlfindingsfunktioner](dev-tools/new-x-debugger-features.md)
@@ -104,9 +109,9 @@
 #### [W-klasser](dev-ref/w-classes.md)
 #### [X-klasser](dev-ref/x-classes.md)
 
-## [Startside for udvidelsesmuligheder](extensibility/extensibility-home-page.md)
+## [Udvidelsesmuligheder](extensibility/extensibility-home-page.md)
 ### Præsentation og introduktion
-#### [Planer for programs udvidelsesmuligheder](extensibility/extensibility-roadmap.md)
+#### [Planer for et programs udvidelsesmuligheder](extensibility/extensibility-roadmap.md)
 #### [Anmodninger om udvidelse](extensibility/extensibility-requests.md) 
 #### [Ofte stillede spørgsmål](extensibility/app-sealing-faq.md) 
 #### [Overflytte fra overlejring til udvidelser](extensibility/migrate-overlayer-extension.md)
@@ -258,12 +263,12 @@
 ### [Cachelagring af felt og liste for arbejdsområder](user-interface/tile-list-caching-workspaces.md)
 ## [Arbejdsrutineoptager](user-interface/task-recorder.md)
 ### [Hurtig reference til Arbejdsrutineoptager](user-interface/task-recorder-quick-reference.md)
-### [Oprette dokumentation eller kursusmateriale med Arbejdsrutineoptager](user-interface/task-recorder-training-docs.md)
+### [Oprette dokumentation eller kursusmateriale ved hjælp af Arbejdsrutineoptager](user-interface/task-recorder-training-docs.md)
 
 # [Mobilplatform](mobile-apps/platform/mobile-platform-home-page.md)
-## Kom godt i gang
-### [Kom godt i gang](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Kom godt i gang](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Arkitektur](mobile-apps/platform/mobile-platform-architecture.md)
+### [Oversigt over hændelser i forretningsregel](mobile-apps/platform/business-logic-events-overview.md)
 ### [Retningslinjer for design af siden](mobile-apps/platform/page-design-guidelines.md)
 ### [Retningslinjer for handlingsdesign](mobile-apps/platform/action-design-guidelines.md)
 ### [Krav til formulardesign](mobile-apps/platform/form-design-requirements.md)
@@ -409,7 +414,8 @@
 ### [Konfigurationsdataskabeloner](data-entities/configuration-data-templates.md)
 ### [Dataskabeloner med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore ændringer i en enhed](data-entities/entity-change-track.md)
-
+### [Konfigurationsnøgler og dataenheder
+](data-entities/config-key-entities.md)
 ### [Finde oplysninger om standarddataenheder](data-entities/data-entities-report.md)
 
 
@@ -418,6 +424,7 @@
 ### [Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Udvikling for dataenheder
+### [Principper for design og bedste praksis for dataenheder](dev-tools/design-best-practices.md)
 ### [Oprette nye dataenheder](data-entities/build-consuming-data-entities.md)
 ### [Egenskaber for dataenhed](data-entities/behavioral-properties-data-entities.md)
 ### [Oprette beregningskolonner og virtuelle felter](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +435,9 @@
 ### [Metadataegenskaber](data-entities/behavioral-properties-data-entities.md)
 ### [Valideringer, standarder og ikke-tilknyttede felter](data-entities/validations-defaults-unmapped-fields.md)
 ### [Sikkerhed og dataenheder](data-entities/security-data-entities.md)
+### [Oprette en skrivebeskyttet enhed, der viser økonomiske dimensioner](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Bruge din egen database](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +445,7 @@
 ## [Automatisering af dataopgaver](data-entities/data-task-automation.md)
 
 ## [Ressourcer til besvarelse af en anmodning om GDPR-data](gdpr/gdpr-home-page.md)
-### [Vejledning til GDPR til Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Vejledning til GDPR til Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-guide.md)
 ### [Klassifikationer af aktiver](gdpr/gdpr-asset-classification-values.md)
 ### [Bruge rapporten over personsøgning](gdpr/gdpr-person-search-report.md)
 ### [Udvide rapporten over personsøgning](gdpr/gdpr-extend-person-search-report.md)
@@ -443,9 +453,10 @@
 ### [Besvare en anmodning om personlige data ved hjælp af Talent](gdpr/respond-dsr-request-talent.md)
 ### [Besvare en anmodning om personlige data ved hjælp af Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
+## [Arbejdsområde for datavalidering](user-interface/data-validation-workspace.md)
 
-# [Startside for fortløbende levering](dev-tools/continuous-delivery-home-page.md)
-## [Ofte stillede spørgsmål om udvikling og fortløbende levering](dev-tools/continuous-delivery-faq.md)
+# [Fortløbende levering](dev-tools/continuous-delivery-home-page.md)
+## [Ofte stillede spørgsmål til udvikling og fortløbende levering](dev-tools/continuous-delivery-faq.md)
 ## [Udelade testpakker fra build-output](dev-tools/exclude-test-packages.md)
 ## [Administrere tredjepartsmodeller og kørsel af pakker ved hjælp af kildekontrol](dev-tools/manage-runtime-packages.md)
 ## [Versionsmodeller i det automatiske build](dev-tools/version-models-build.md)
@@ -487,6 +498,7 @@
 ## [Metadata for segmenteret adgangsstyring](financial/segmented-entry-control-parm-method-specification.md)
 ## [Tilføje muligheden for at slå værdier op for økonomiske dimensioner i Microsoft Excel-skabeloner](financial/add-dimensions-excel-templates.md)
 ## [Oprette valutakursudbydere](financial/create-exchange-rate-providers.md)
+## [Oprette valutakursudbydere i Microsoft Dynamics økonomi og operationer version 8.0](financial/create-exchange-rate-8.md)
 
 # Udvikling af forsyningskæde
 ## [Vejledning til Gantt-udvikling](user-interface/gantt-development-guide.md)
@@ -579,7 +591,6 @@
 
 # [Systemadministration](sysadmin/system-administration-home-page.md)
 ## [Ofte stillede spørgsmål til månedlige platformsopdateringer](sysadmin/faq-platform-monthly-updates.md)
-## [Ofte stillede spørgsmål til virtuelle maskiner, der ikke tillader administratoradgang](sysadmin/VMs-no-admin-access.md)
 ## [Føje links til din organisations juridiske begreber og erklæring om beskyttelse af personlige oplysninger](sysadmin/legal-terms-privacy-statement.md)
 ## [Rapport for licenskoder og konfigurationsnøgler](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadeling på tværs af firma](sysadmin/cross-company-data-sharing.md)
