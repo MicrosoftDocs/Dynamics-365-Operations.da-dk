@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Oprette momsposteringer på dokumenter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Moms på dokumenter beregnes ved at angive en momsgruppe og en varemomsgruppe på dokumentlinjer. Disse hentes standard fra masterdata, men den kan ændres manuelt, hvis det er nødvendigt. Den beregnede moms kan kontrolleres på linje- og dokumentniveau. Denne opgave bruger demofirmaet USMF.
 

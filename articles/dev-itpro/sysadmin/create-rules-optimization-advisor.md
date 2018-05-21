@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Oprette regler for rådgivningsværktøj til optimering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne forklares det, hvordan du oprette nye regler til **rådgivningsværktøj til optimering**. Du kan for eksempel oprette en ny regel, der identificerer, hvilke tilbudsanmodninger (RFQ) der har en tom titel. Brugen af titler på sager gør dem nemme at identificere og søge i. Selv om det er ret enkelt, viser dette eksempel, hvad der kan opnås med optimeringsregler. 
 

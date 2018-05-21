@@ -3,7 +3,7 @@ title: Startside for supply chain management
 description: "Denne side indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
+ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
+ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
 # <a name="supply-chain-management-home-page"></a>Startside for supply chain management
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -47,10 +47,15 @@ Vælg et funktionsområde, du vil vide mere om.
 - [Administration af produktoplysninger](pim/product-information.md)
 - [Produktionsstyring](production-control/production-process-overview.md)
 - [Salg og marketing](sales-marketing/overview-sales-marketing.md)
+- [Servicestyring](service-management/service-management-home-page.md)
 - [Transportstyring](transportation/transportation-management-overview.md)
 - [Lokationsstyring](warehousing/warehouse-configuration.md)
 
 ## <a name="videos"></a>Videoer
+
+Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, version 8.0 (april 2018).
+
+- [Synkronisere en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
 
@@ -82,9 +87,9 @@ Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i de
 
 -  [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 
-**Lokationssstyring** 
+**Lokationsstyring** 
 
--  [Håndtere indgående ASN'er i Lokationsstyring](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Få mest muligt ud af dit lokationsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning](https://youtu.be/Og0gLlVp7jA)

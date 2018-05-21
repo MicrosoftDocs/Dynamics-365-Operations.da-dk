@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Fraværsregistrering i Tid og fremmøde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives begreberne for fravær, og det forklares, hvordan du håndterer fravær i Tid og fremmøde.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Bruge en postskabelon til at oprette en ny post
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du bruger en foruddefineret skabelon til at oprette en ny post. Hvis du vil udføre denne procedure, skal du først udføre proceduren "Oprette en skabelon til at gøre dataindtastning lettere".
 

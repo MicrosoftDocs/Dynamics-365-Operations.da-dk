@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definere revisionspolitikker for kildedokumenter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du kan konfigurere og køre regler for overvågningspolitik. I eksemplet bruges udgiftsrapporter med udgiftstypen hotel. Denne procedure bruger demofirmaet USMF. Rollen revisor indeholder de korrekte tilladelser til at kunne udføre disse opgaver.
 

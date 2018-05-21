@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Arbejdsopgavehierarkier
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Et arbejdsopgavehierarki (WBS) er en beskrivelse af det arbejde, der udføres for et projekt. Det er et hierarki af opgaver, der repræsenterer projektgruppens kendskab til sammensætning af arbejde og til størrelse, omkostninger og varighed af den enkelte komponent eller opgave. En WBS har tre overordnede formål:
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-billing-classification-in-the-public-sector"></a>Oprette en faktureringsklassifikation i den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Offentlige institutioner kan bruge faktureringsklassifikationer til at administrere fritekstfakturaer. Faktureringsklassifikationer bruges til at gruppere ensartede fritekstfakturaer til behandling og visning. Før du bruger denne procedure, skal du kontrollere, at der findes en faktureringskode, der kan tildeles til en faktureringsklassifikation. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

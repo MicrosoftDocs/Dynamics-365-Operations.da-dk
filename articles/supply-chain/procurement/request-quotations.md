@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Tilbudsanmodning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Emnet giver et overblik over tilbudsanmodninger. Organisationer sender en tilbudsanmodning, når de ønsker at modtage konkurrencedygtige tilbud fra flere leverandører på de varer eller ydelser, de har brug for at købe. I en tilbudsanmodning kan du bede leverandører om oplysninger om priser og leveringstider for det angivne antal varer.
 Du kan også bede leverandører angive, om der er ekstra gebyrer som f.eks. forsendelsesomkostninger eller eventuelle rabatter på store ordrer eller tidlig betaling af kreditorfakturaen.
@@ -57,8 +57,8 @@ Når du modtager bud pr e-mail, skal du håndtere disse bud fra siden **Tilbudsa
 
 Hvis der kræves endnu et svar fra en kreditor, skal du vælge **Returner** på siden **Tilbudsanmodning**. Handlingen Returner genererer en ny kladde og en rapport, der udskrives, arkiveres og sendes i henhold til dine indstillinger for Udskrivning.
 
-[!NOTE]
-Navnet på siden **Tilbudsanmodning** er ændret. I tidligere versioner af Dynamics 365 for Finance and Operations kaldes denne side **Svar på tilbudsanmodning**.
+> [!NOTE]
+> Navnet på siden **Tilbudsanmodning** er ændret. I tidligere versioner af Dynamics 365 for Finance and Operations kaldes denne side **Svar på tilbudsanmodning**.
 
 Hvis du har føjet scorekriterier til din tilbudsanmodningssag, har tilbudsanmodningen et scorepanel, hvor du kan angive scorer. De samlede scorer vises på tilbudsanmodningen og når du sammenligner svarene på siden **Sammenlign svar**. På siden **Sammenlign svar** kan du også sammenligne andre svardata, f.eks. linjepris, leveringsdato og den samlede pris.
 
@@ -126,8 +126,8 @@ Hvis du vil bruge årsagskoder for et bud for at at angive, hvorfor det blev afv
 
 På siden **Formularopsætning** i Indkøb og forsyning kan du konfigurere udseendet af dine udskrevne eller gemte dokumenter med tilbudsanmodninger.
 
-[!NOTE]
-For en konfigurationen til offentlige institutioner skal du bruge ændringsprocessen til at ændre en tilbudsanmodning, der er allerede blevet sendt. Når en tilbudsanmodning er sendt, er felter skrivebeskyttede.
+> [!NOTE]
+> For en konfigurationen til offentlige institutioner skal du bruge ændringsprocessen til at ændre en tilbudsanmodning, der er allerede blevet sendt. Når en tilbudsanmodning er sendt, er felter skrivebeskyttede.
 Når du vil foretage ændringer af tilbudsanmodningen, skal du derfor vælge **Opret** for at starte ændringsprocessen som beskrevet tidligere. Låsningsfunktionen styres af indstillingen **Lås tilbudsanmodninger, når de er sendt** på siden **Indkøbs- og forsyningsparametre**. Denne parameter er som standard indstillet til **Ja**, og for en konfiguration til den offentlige sektor kan standardindstillingen ikke ændres. Derfor selvom ændringsprocessen kan håndteres manuelt i en ikke-offentlig sektor-konfiguration, skal den bruges til en offentlig sektor-konfiguration.
 
 Når du opretter en tilbudsanmodningssag af typen Indkøbsordre og føjer en lagervare til tilbudsanmodningen, oprettes der en lagertransaktion med tilgangsstatussen **Tilbudstilgang**. Kun linjer i tilbudsanmodningssager med denne status kommer i betragtning når du bruger en behovsplan til beregning af forsyninger. Hvis du ønsker, at behovsplanen skal omfatte tilbudsanmodningssagens linjer som en forventet tilgang, skal du konfigurere denne funktionsmåde i opsætningen af varedisponeringen.

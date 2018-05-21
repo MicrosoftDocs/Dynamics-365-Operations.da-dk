@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Udligne en fremdateret check fra en debitor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan udligne en fremdateret check, efter at checken er clearet af banken. Denne økonomiske bevægelse clearer også posteringen på en mellemkonto for den fremdaterede check. 
 

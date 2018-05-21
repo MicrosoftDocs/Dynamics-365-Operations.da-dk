@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-new-departments"></a>Definere nye afdelinger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab. Mange firmaer har organisationshierarkier, der viser de forskellige afdelinger i en virksomhed. Denne procedure gennemgår processen til oprettelse af afdelinger og tilføjer de pågældende afdelinger i en organisations afdelingshierarki. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

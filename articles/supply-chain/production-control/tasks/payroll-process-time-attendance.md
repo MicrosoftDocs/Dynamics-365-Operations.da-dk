@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Aktivere lønproces for tid og fremmøde
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

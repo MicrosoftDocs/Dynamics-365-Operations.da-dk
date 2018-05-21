@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a>Oprette og tilknytte en enhed
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en ny enhed og knytter den til et kasseapparat. Det antages, at kasseapparatet allerede er oprettet.  Denne opgave bruger USRT-firmaets demodata. Denne opgave er beregnet til rollerne administratorer, it-medarbejdere, detail-it-medarbejdere og butikschefer.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Udføre kanban-procesjob
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure drejer sig om at udføre kanban-procesjob. Det første job er fuldført med det forventede antal og har ingen fejl. Det andet job er fuldført med fejl. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Denne procedure er beregnet til maskinoperatøren.
 

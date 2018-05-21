@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Arbejdsområde for kreditorbetalinger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbejdsområdet **Kreditorbetalinger** viser oplysninger, der vedrører behandling af kreditorbetalinger. Arbejdsområdet indeholder en **Mit arbejde**-visning og siden **Analyser**. Visningen **Mit arbejde** viser oversigtsfelter, gitre til kreditorpostering og relaterede kreditoroplysninger. **Analyser**-siden bruger funktionerne i Microsoft Power BI til at vise grafik, der vedrører kreditorbetalinger.
 

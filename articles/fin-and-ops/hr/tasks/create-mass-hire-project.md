@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Oprette et masseansættelsesprojekt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde fører dig gennem processen med at oprette et masseansættelsesprojekt. En rekrutteringsmedarbejder kan bruge masseansættelsesprojekter til nemt at oprette flere stillinger og ansætte et antal arbejdstagere til disse stillinger. Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

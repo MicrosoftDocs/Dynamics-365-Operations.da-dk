@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Fordelinger i en udgiftsrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Når du angiver udgifter i en udgiftsrapport, kan du distribuere udgiften på tværs af flere projekter, økonomiske dimensioner eller konti i organisationen.
 

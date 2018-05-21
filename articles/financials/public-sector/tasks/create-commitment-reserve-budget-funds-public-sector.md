@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-commitment-to-reserve-budget-funds-for-the-public-sector"></a>Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. Denne opgaveguide er oprettet med data fra PSUS-demofirmaet i den offentlige sektor partition.
 

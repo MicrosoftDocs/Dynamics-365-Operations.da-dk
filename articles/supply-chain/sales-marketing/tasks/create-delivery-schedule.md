@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-delivery-schedule"></a>Oprette en leveranceplan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en leveranceplan til en salgsordre. En leveranceplan bruges, når der anmodes om et antal i en ordre eller et tilbud, som skal leveres i flere leverancer. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data.
 

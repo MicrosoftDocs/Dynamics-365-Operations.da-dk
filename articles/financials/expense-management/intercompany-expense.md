@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Interne udgifter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En medarbejder, der er ansat af en juridisk enhed i en organisation, kan udføre arbejde for en anden juridisk enhed i den samme organisation. I denne situation kan du bruge funktionaliteten til interne udgifter til at tildele medarbejderens udgifter til den juridiske enhed, som arbejdet blev udført for. Den juridiske enhed, der ansætter medarbejderen, kaldes den juridiske udlånsenhed. Den juridiske enhed, som medarbejderen har udgifter for, kaldes den  juridiske låneenhed. 
 

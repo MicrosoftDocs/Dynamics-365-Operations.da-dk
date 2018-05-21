@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angive og sammenligne bud på tilbudsanmodninger og tildeler kontrakter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du indtaster svar på en tilbudsanmodning, angiver score og sammenligner bud og derefter tildeler buddet til en af kreditorerne. Du kan bruge denne procedure i USMF-demodatafirmaet. Før du starter, skal du have en tilbudsanmodning med to linjer, der er blevet sendt til mindst to kreditorer. Du kan køre proceduren "Oprette en tilbudsanmodning" som en forudsætning for at oprette den. Du skal have oprettet en scorekriterier, før du kan køre denne procedure.
 

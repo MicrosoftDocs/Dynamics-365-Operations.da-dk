@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-email-templates"></a>Administrere mailskabeloner
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan overføre oplysninger fra din organisations database til bogmærkerne i et nyt dokument og bruge dem i skabeloner, der kan hjælper dig med at kommunikere effektivt med ansøgere og kandidater. Det kan du gøre ved at oprette en skabelon, der indeholder standardtekst og nogle bogmærker, hvor systemdataene skal indsættes. Du kan f.eks. indsætte adresse og kontaktoplysninger for ansøgeren i et Microsoft Word-dokument, som du kan bruge ved kommunikation med ansøgeren. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/07/2018
 ---
 # <a name="visibility-into-material-exceptions"></a>Synlighed i materialeundtagelser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I arbejdsområdet **Administration af produktion** findes tre felter, som giver dig bedre indblik i undtagelser for råmaterialer til produktionsordrer og batchordrer:
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Ressourceegenskaber
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om ressourceegenskaber. En funktion er en operationsressource evne til at udføre en bestemt aktivitet. I denne artikel beskrives det, hvordan egenskaber og relaterede begreber såsom færdighedsniveau og prioritet bruges til at vælge passende ressourcer til en aktivitet.
 

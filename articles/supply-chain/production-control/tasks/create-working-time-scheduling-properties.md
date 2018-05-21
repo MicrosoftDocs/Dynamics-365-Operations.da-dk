@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Oprette planlægningsegenskaber for arbejdstid
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Egenskaber for planlægning af arbejdstid bruges til at kategorisere tidsintervaller i arbejdstiden og definere de indstillinger, som operatorer skal tage højde for. Denne fremgangsmåde viser, hvordan du definerer en egenskab for planlægning af arbejdstid og tilknyttede egenskabsværdier. Du kan gennemgå denne procedure i demodatafirmaet USMF eller bruge dine egne data.
 

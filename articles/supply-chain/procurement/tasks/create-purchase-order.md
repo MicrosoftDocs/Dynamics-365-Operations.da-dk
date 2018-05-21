@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter en indkøbsordre manuelt. Det er mere almindeligt for indkøbsordrer, at de oprettes automatisk som resultat af varedisponering, direkte levering og andre processer. Indkøbsordrer oprettes typisk af en indkøbsagent. Det viste eksempel kan bruges i USMF-demodatafirmaet ved hjælp af de værdier, der foreslås i noterne til de forskellige trin.
 

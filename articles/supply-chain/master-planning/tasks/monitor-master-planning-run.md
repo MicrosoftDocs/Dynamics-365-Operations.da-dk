@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåge kørsel af en varedisponering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Produktionsplanlæggeren ønsker at se, om en varedisponeringskørsel er i gang. Brug USMF-demodatafirmaet til at fuldføre denne procedure.
 

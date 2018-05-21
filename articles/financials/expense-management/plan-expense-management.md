@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Konfigurer udgiftsstyring
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives de overvejelser og de beslutninger, du skal foretage i planlægningsprocessen, før du konfigurerer Udgiftsstyring i Microsoft Dynamics 365 for Finance and Operations. Du kan gemme oplysninger om bl.a betalingsmetoderne, rejserekvisitioner, udgiftsrapporter og politikker i området Udgiftsstyring.
 

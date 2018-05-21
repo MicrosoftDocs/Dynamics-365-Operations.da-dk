@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Tastaturgenveje
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations. 
 

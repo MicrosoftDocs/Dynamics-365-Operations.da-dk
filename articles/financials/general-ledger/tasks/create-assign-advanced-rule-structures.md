@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Oprette og tildele avancerede regelstrukturer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide gennemgår oprettelse og tildeling af en avanceret regelstruktur til en kontostruktur. Denne guide anvender demofirmaet USMF.
 

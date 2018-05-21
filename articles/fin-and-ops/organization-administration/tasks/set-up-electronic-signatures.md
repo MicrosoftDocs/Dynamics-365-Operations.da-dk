@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-signatures"></a>Opsætning af elektroniske signaturer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure til at konfigurere elektroniske signaturer. En elektronisk signatur bekræfter identiteten på en person, som skal starte eller godkende en computerproces. Det demodatafirma, der bruges til at oprette denne procedure, er DAT.
 

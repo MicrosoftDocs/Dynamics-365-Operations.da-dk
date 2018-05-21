@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-continuity-program-for-a-call-center"></a>Oprette et kontinuitetsprogram for et callcenter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du kan konfigurere et kontinuitetsprogram for et call center.
 

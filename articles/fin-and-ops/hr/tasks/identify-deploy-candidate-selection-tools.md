@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identificere og installere kandidatudvælgelsesværktøjer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder.  Ansøgere med de færdigheder, du har brug for, er dog muligvis allerede ansat i organisationen. Du kan søge efter bestemte færdigheder blandt eksisterende medarbejdere eller nye ansøgere. Dette giver en rekrutteringsmedarbejder mulighed for hurtigt at samle og screene ansøgere, der har ansøgt om ledige stillinger nu eller tidligere eller for at finde potentielle ansøgere fra deres eksisterende gruppe af medarbejdere. Brug denne opgaveregistrering til at se, hvordan funktionen til kompetencesøgning kan hjælpe dig med at finde den rette person til en ledig stilling. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

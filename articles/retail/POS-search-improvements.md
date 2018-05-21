@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Oversigt over produkt- og kundesøgning i POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Modern Point of Sale (MPOS) og Cloud Point of Sale (CPOS) indeholder brugervenlige søgefunktioner for produkter og debitorer. Eftersom søgelinjen altid vises øverst i MPOS- og CPOS-vinduerne, kan medarbejderne hurtigt søge efter produkter og debitorer.
 

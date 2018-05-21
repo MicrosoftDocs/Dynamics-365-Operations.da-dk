@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Vedligeholde oplysninger om skade og sygdom for medarbejder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Det anbefales at fuldføre opgaveguiden "Konfiguration af skade og sygdom" først, fordi nogle af konfigurationsoplysningerne bruges her. 
 

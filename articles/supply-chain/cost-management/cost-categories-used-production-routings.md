@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Omkostningskategorier, der bruges i produktionsruteplanlægning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om omkostningsarter, der anvendes i produktionsmiljøer, og som bruger ruteplanlægning.
 

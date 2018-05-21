@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Efterkalkuleret varetræk
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing. 
 

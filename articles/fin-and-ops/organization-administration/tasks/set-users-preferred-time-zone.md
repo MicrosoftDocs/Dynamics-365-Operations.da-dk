@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Indstille brugerens foretrukne tidszone
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Følgende procedure forklarer, hvordan en bruger i rollen Systemadministrator kan indstille tidszonen for en bruger.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Ændre en anlægsaktivgruppe
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Anlægsaktiver skal tilknyttes den korrekte anlægsaktivgruppe. Anlægsaktivgruppen bruges, når du:
 

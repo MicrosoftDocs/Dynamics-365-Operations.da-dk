@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Debitor, posteringsprofiler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Debitorer, der bogfører profiler, styrer, hvordan debitortransaktioner bogføres til Finans.
 

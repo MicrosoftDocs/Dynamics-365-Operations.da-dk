@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Finans 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Brug finansregnskabet til at definere og administrere finansposter for den juridiske enhed. Finansregnskabet er et register over debet- og kreditposter. Disse poster er klassificeret ved hjælp af konti, som er opført i en kontoplan. 
 

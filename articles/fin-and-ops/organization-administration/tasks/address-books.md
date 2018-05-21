@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfigurere adressekartoteker
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Brug denne procedure og de beslutninger, du har taget i emnet for planlægning af konfigurationen af det globale adressekartotek og yderligere adressekartoteker, for at oprette yderligere adressekartoteker for organisationen.
 

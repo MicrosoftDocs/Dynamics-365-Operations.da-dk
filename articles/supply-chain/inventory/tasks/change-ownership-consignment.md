@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Ændre ejerskabet til konsignationslager ud fra produktionsbehov
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fra leverandøren til din juridiske enhed, når der er behov for lageret i produktionen. Denne ændring af ejerskabet sker ved at oprette og bogføre en ændringskladde for lagerejerskab. Ændringskladdelinjer for ejerskab kan oprettes manuelt, eller som vist i denne registrering, baseret på eksisterende produktionsbehov. Typisk udfører en tilsynsførende denne opgave. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data. Hvis du bruger dine egne data, skal du kontrollere, at du har følgende forudsætninger: navnet på en lagerbeholdning, der er blevet oprettet til ændring af lagerejerskab, fysisk registrerede kreditorejede disponible varer og en eller flere produktionsordrelinjer for materialet. Denne procedure er til en funktion, der blev tilføjet i Dynamics 365 for Operations, version 1611.
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Likviditetsbudget
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan bruge funktionerne til budgettering af likviditet til at analysere kommende likviditets- og valutabehov, så du kan anslå virksomhedens fremtidige likviditetsbehov. Udfør følgende opgaver for at få en budgettering af likviditeten:
 

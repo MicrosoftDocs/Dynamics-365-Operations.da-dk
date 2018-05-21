@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>Validere et produktionsflow og en version
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opretter et nyt produktionsflow og en første version af lean manufacturing. Forudsætninger: Produktionsparametre for lean manufacturing og måleenheder for klassen Tid skal defineres. Du skal definere en værdistrøm og en produktionsgruppe. Se hvidbøgerne om Lean manufacturing for at blive fortrolig med begreberne produktionsflow og -aktiviteter. Denne procedure refererer til den juridiske enhed USMF i demodata. Forudsat at den juridiske enhed er konfigureret for Lean manufacturing, kan andre juridiske enheder imidlertid også bruges.
 

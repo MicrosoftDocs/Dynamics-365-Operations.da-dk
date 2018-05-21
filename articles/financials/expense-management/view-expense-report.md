@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Vis en udgiftsrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Når du kører en forespørgsel for at få vist posteringer i Finans eller Indkøb og forsyning, returnerer forespørgslen muligvis for mange oplysninger. Derfor kan du evt. indsnævre søgningen. For at finde de oplysninger, du behøver, kan du være nødt til at foretage en detailudledning af en postering for at se den udgiftsrapport, som posteringen forekom på.
 

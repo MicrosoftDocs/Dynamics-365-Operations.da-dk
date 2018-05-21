@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Oprette en et midlertidigt budget for den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan oprette foreløbige budgetregisterposteringer for en specifik budgetmodel og dimensionsværdier. Når det faktiske budget er godkendt, kan du oprette oprindelige budgetregisterposter. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

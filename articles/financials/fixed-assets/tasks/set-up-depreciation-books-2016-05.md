@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-depreciation-books"></a>Konfigurere afskrivningsmodeller  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide opretter en ny afskrivningsmodel og knytter den til en anlægsaktivgruppe.  Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
 

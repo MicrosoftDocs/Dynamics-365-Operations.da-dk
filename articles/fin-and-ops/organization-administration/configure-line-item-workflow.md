@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurere en arbejdsgang for linjeelement
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne forklarer, hvordan du konfigurerer et element i en arbejdsgang for linjeelement.
 

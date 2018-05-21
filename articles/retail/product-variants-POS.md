@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Lagersøgning i POS 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Lagersøgning i salgsstedet (POS) hjælper detailhandlere med at opnå flotte resultater i realtid og få indsigt ved at forbinde butikker, salgstedet og administrationen. Denne funktion giver en præcis visning af produktlageret i realtid på tværs af butikker og distributionscentre. Det hjælper også detailhandlere med at fremme effektiviteten og omkostningsbesparelser ved at forbedre lagerplanlægning i realtid.
 

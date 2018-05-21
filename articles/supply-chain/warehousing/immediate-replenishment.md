@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Øjeblikkelig genopfyldning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Øjeblikkelig genopfyldning gør det muligt at genopfylde lageret, så snart en lokationsvejledning ikke kan fordele lageret. Genopfyldningen er baseret på en enkelt linje i opsætningen af lokationsvejledningen. Hvis lageret ikke er disponibelt i den måleenhed, der er angivet af den pågældende linje, udføres der straks genopfyldning med den pågældende måleenhed.
 

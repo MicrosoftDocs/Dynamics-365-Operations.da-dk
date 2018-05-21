@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-oioubl-electronic-invoicing-configurations-denmark"></a>Importere konfigurationer for elektronisk OIOUBL-fakturering (Danmark)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du importerer elektroniske OIOUBL-fakturakonfigurationer. 
 

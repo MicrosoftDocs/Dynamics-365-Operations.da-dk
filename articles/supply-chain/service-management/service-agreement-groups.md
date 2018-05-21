@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Serviceaftalegrupper 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Serviceaftalegrupper er nyttige ved sortering og filtrering af serviceaftaler. Brug serviceaftalegrupper til at gruppere serviceaftaler efter f.eks. firmastørrelse, geografiske placering eller branche. Du kan også bruge aftalegrupper til at gruppere serviceaftaler efter det serviceniveau, en kunde får tilbudt.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a> Designe relationerne mellem organisationsenheder
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure fører gennem udformning af relationen mellem organisationsenheder. Du skal oprette et nyt organisationsformål, inden du definerer relationen, eller du kan bruge det eksisterende organisationsformål. Det demodatafirma, der bruges til at fuldføre denne procedure, er USRT. Denne opgave er beregnet til rollen administrator.
 

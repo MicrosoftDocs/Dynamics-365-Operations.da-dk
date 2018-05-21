@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-worker-information"></a>Angive arbejderoplysninger
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Demodataene indeholder et åbent masseansættelsesprojekt. Du begynder denne procedure ved at gå til Personale > Rekruttering > Masseansættelsesprojekter.
 

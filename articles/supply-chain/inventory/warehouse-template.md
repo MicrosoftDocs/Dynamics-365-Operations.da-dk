@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted. Der findes flere foruddefinerede konfigurationsskabeloner, som du kan bruge. Du kan finde oplysninger om, hvordan du kan bruge disse skabeloner, i [Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).
 

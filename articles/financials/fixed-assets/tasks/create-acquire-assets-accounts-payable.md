@@ -24,7 +24,7 @@ ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Oprette og anskaffe aktiver fra kreditorer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne opgaveguide fører gennem oprettelse og anskaffelse af et anlægsaktiv med indkøbsprocessen. Den bruger bogholder- og kreditorassistenter og demofirmaet USMF.
 

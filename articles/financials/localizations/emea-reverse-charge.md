@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 # <a name="reverse-charge-vat"></a>Modtagermoms
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 I dette emne beskrives den generelle tilgang til konfiguration af modtagermoms moms for Saudi-Arabien og europæiske lande.

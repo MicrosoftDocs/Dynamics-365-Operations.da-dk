@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-bank-account"></a>Oprette en bankkonto for kreditor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser dig, hvordan du skal oprette en bankkonto for en leverandør. Du kan bruge denne procedure i USMF-demodatafirmaet.
 

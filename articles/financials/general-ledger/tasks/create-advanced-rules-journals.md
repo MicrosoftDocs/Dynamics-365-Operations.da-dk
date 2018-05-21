@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-advanced-rules-for-journals"></a>Oprette avancerede regler for kladder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure indeholder en trinvis gennemgang, hvordan du opretter avancerede regler for kladder. Dette omfatter opsætning af kladdekontrol og brugerbogføringsbegrænsninger. Proceduren bruger USMF-demodatafirmaet.
 

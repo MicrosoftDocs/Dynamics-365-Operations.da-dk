@@ -28,7 +28,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="ship-an-order-from-a-different-store"></a>Levere en ordre fra en anden butik
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Med sendefunktionen Gebyr i Dynamics 365 for Retail kan kundeordrer placeres i én butik og leveret fra en anden butik. Kundeordrer i POS-klienten understøtter flere indstillinger til ordreopfyldelse. Nogle eksempler på indstillinger for ordreopfyldelse omfatter:
 -   Afhentning fra den samme butik på en anden dato.

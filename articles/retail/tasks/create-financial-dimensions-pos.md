@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Oprette økonomiske dimensioner for POS-kasseapparater og konfigurere dimensionsværdier for registre
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Denne procedure hjælper med at oprette økonomiske dimensioner for POS-kasseapparater og demonstrerer, hvordan du konfigurerer økonomiske dimensionsværdier for kasseapparaterne. Proceduren indeholder ikke andre relaterede trin, f.eks. oprettelse af dimensionssæt og kontostrukturer. Disse opgaver findes i andre emner. Denne registrering anvender demofirmaet USRT.
 

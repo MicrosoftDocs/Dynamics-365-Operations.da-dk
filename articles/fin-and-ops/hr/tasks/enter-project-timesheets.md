@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-project-timesheets"></a>Angive projekttimesedler
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I denne procedure kan du oprette en timeseddel ved hjælp af en tom timeseddelsformular. Den nye timeseddel kan baseres på oplysninger fra en tidligere timeseddel eller fra projekt- og aktivitetstildelinger på siden Favoritter. Som standard viser listesiden Alle timesedler alle dine timesedler for den aktuelle periode. Du kan bruge på rullelisten i feltet Vis på siden Mine timesedler til at filtrere listen over timesedler efter tidsperiode eller projekt eller til at få vist timesedler, der er oprettet på vegne af andre medarbejdere. Det demodatafirma, der bruges til at oprette denne procedure, er USSI. Du begynder denne procedure ved at gå til Projektstyring og regnskab > Timesedler > Mine timesedler
 

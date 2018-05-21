@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a>Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises. Dette omfatter eksempelvis navne og titler på de personer, der skal godkende de foreslåede betalinger. Denne procedure er oprettet med PSUS-demodatafirmaet i den offentlige sektor partition.
 

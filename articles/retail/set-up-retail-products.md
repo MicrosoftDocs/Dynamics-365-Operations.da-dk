@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Konfigurere detailprodukter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer detailprodukter i Microsoft Dynamics 365 for Retail.
 

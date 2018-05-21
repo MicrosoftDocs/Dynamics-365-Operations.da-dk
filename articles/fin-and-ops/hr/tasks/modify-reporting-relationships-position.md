@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Redigere rapporteringsrelationerne for en stilling
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du ændrer rapporteringsrelation for en medarbejder. Den rapporteringsrelationen kan bruges til at planlægge rute for dokumenter via arbejdsgangen. Proceduren viser også, hvordan medarbejderen tildeles til flere hierarkier. En medarbejder kan eksempelvis være en del af et projektteam med en uformel rapporteringsrelation til en projektleder. Yderligere rapporteringsrelationer kan defineres for stillingen for at imødekomme forskellige projekt- eller matrixscenarier. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

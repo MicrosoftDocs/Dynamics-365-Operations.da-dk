@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Arbejdsområde til udgiftsstyring på mobilenhed
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Udgiftsstyring** på mobilenheder. I dette arbejdsområde kan brugerne hente og sende en kvittering, så de senere kan knytte den til en udgiftsrapport. Brugerne kan også hurtigt oprette en udgiftslinje ved hjælp af en vedhæftet kvittering, og oprette og administrere deres udgiftsrapporter. Godkendere kan desuden bruge arbejdsområdet **Udgiftsstyring** på mobilenheder til at få vist udgiftsrapporter, der er knyttet til dem, og enten godkende eller afvise udgiftsrapporter.
 

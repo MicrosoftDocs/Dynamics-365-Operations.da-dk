@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Ansætte en eksisterende medarbejder gennem rekruttering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen. Denne fremgangsmåde fører dig gennem trinnene til at ansætte en eksisterende medarbejder gennem rekrutteringsprocessen. Et rekrutteringsprojekt allerede er oprettet i denne procedure, og en eksisterende medarbejder har allerede indsendt en ansøgning til rekrutteringsprojektet. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 

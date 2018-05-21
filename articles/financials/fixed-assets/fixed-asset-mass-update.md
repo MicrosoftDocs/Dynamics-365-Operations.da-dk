@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-mass-update"></a>Masseopdatere anlægsaktiver
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hvis du bruger modeller, kan du ændre afskrivningsprincipperne for grupper af aktiver, der indgår i samme model.
 

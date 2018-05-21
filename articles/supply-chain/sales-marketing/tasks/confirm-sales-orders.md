@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Bekræfte salgsordrer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du bekræfter salgsordrer. Du får vist, hvordan du bekræfter en enkelt ordre, og hvordan du bekræfter flere ordrer på én gang. Disse opgaver udføres normalt af en salgsordrebehandler. Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data. Kontrollér, at der er flere åbne salgsordrer for samme debitor, før du starter. Hvis du bruger USMF, kan du bruge debitor US-027.
 

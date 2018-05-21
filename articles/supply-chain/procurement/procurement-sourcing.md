@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Startside for indkøb og forsyning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for indkøb og forsyning.
 

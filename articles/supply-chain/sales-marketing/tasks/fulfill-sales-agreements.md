@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="fulfill-sales-agreements"></a>Opfylde salgsaftaler
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne procedure viser, hvordan du opfylder en salgsaftale ved at knytte salgsordrer til den. Du kan køre denne procedure på dit eget demodatafirma USMF eller på dine egne data. Kontroller, at du har en gyldig salgsaftale af typen "Produkt værdi forpligtelse", før du starter denne vejledning. Du kan også køre opgaveguiden "Oprette salgsaftaler".  
 

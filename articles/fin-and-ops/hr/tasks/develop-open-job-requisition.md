@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Udarbejde og åbne en jobansættelse
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Rekrutteringsprojekter hjælper dig med at administrere rekrutteringsprocessen. For de enkelte rekrutteringsprojekter kan du angive oplysninger, f.eks. det job, du rekrutterer til, navnet på rekrutteringsmedarbejderen, status for projektet og den afdeling, som jobbet findes i. Når du har oprettet et rekrutteringsprojekt, kan du skrive en jobannonce for projektet, publicere annoncen på Medarbejderselvbetjeningssider, knytte jobansøgninger til projektet og spore aktiviteter i det pågældende projekt. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du starter proceduren ved at gå til Personale > Rekruttering > Rekrutteringsprojekter > Rekrutteringsprojekter
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definere arbejdsceller for lean manufacturing
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesaktiviteter for lean manufacturing. Arbejdsceller har indlagrings- og udlagringssteder og en kapacitetsdefinition, der er baseret på en produktionsflowmodel. Du kan få mere at vide om de grundlæggende begreber i arbejdsceller og kapacitetsberegninger i lean manufacturing i hvidbøgerne om Lean manufacturing. Det demodatafirma, der bruges til at oprette denne procedure, er USMF
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fund-type-in-the-public-sector"></a>Oprette en finansieringskildetype i den offentlige sektor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet. De generelt accepterede regnskabsmæssige principper (GAAP) for statslige og lokale statslige regnskaber indeholder standarder, som du kan følge, når du opretter dit system af midler og middeltyper. 
 

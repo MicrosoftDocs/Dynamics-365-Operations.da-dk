@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Principper for afskrivning af anlægsaktiver
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Afskrivningsprincipper bruges til at bestemme, hvornår og hvordan afskrivningen beregnes både for det år, hvor anlægsaktivet er anskaffet, og det år, hvor anlægsaktivet er solgt/kasseret.
 

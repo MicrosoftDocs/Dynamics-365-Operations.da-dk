@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>Momsafstemningsrapport
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denne fremgangsmåde viser, hvordan du kan oprette rapporten over momsafstemning, der er tilgængelig for islandske og norske juridiske enheder. Denne opgave blev oprettet ved hjælp af demodatafirmaet DEMF med landet/området i den juridiske enheds primære adresse opdateret til Norge.
 
