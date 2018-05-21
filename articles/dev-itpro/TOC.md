@@ -414,8 +414,7 @@
 ### [Konfigurationsdataskabeloner](data-entities/configuration-data-templates.md)
 ### [Dataskabeloner med flere regneark](data-entities/excel-template-multiple.md)
 ### [Spore ændringer i en enhed](data-entities/entity-change-track.md)
-### [Konfigurationsnøgler og dataenheder
-](data-entities/config-key-entities.md)
+### [Konfigurationsnøgler og dataenheder](data-entities/config-key-entities.md)
 ### [Finde oplysninger om standarddataenheder](data-entities/data-entities-report.md)
 
 
