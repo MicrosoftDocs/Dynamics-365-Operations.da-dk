@@ -2019,8 +2019,7 @@
 #### [Batch-udgivelse af delvist reserverede flytteordrer](../supply-chain/warehousing/batch-release-of-partially-reserved-transfer-orders.md)
 ### Pluk og pakning
 #### [Konfigurere klyngepluk](../supply-chain/warehousing/set-up-cluster-picking.md)
-#### [Konfigurere containerisering
-](../supply-chain/warehousing/tasks/set-up-containerization.md)
+#### [Konfigurere containerisering](../supply-chain/warehousing/tasks/set-up-containerization.md)
 #### [Bekræftelse af batch og id](../supply-chain/warehousing/batch-and-license-plate-confirmation.md)
 #### [Aktivere udskrivning af id-etiket](../supply-chain/warehousing/tasks/license-plate-label-printing.md)
 #### [Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations](../supply-chain/warehousing/scan-bar-codes-using-a-camera.md)
