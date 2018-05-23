@@ -38,9 +38,6 @@ Ved at åbne enhedsdata i Excel, kan du hurtigt og let få vist og redigere data
 
 Hvis du vil vide mere om brug af tilføjelsesprogrammet til Excel, kan du se den korte video [Opret en Excel-skabelon for hoved- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Åbn objektdata i Excel, når du starter fra Finance and Operations
 1. Klik på **Åbn i Microsoft Office** på en side i Finance and Operations.
 
