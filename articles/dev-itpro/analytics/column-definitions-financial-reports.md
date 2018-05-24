@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter.
 
@@ -583,7 +583,7 @@ Du kan oprette en kolonne, der viser alle værdier i en bestemt kolonne som en p
 
 Du kan dividere beløbet i en kolonne med et angivet antal perioder. Formlen **B/perioder** dividerer for eksempel værdien i kolonne B med antallet af perioder i kolonne B. Hvis beregningen strækker sig over flere kolonner, kan du angive antallet af perioder, der skal bruges i beregningen. Formlen **(B+C)/perioder** lægger for eksempel beløbene i kolonne B og kolonne C sammen og dividerer derefter resultatet af periodeværdien.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Rækkedefinitioner i økonomirapportering](row-definitions-financial-reporting.md)

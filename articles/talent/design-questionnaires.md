@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 506c4db7cd37fd85b3e132e7900eafdc4385fa5a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cc25f4fde93df03145baedafb9c6b093659594d0
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="design-a-questionnaire"></a>Designe et spørgeskema
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I dette emne beskrives fremgangsmåden til oprettelse af et spørgeskema. Det første trin er at designe spørgeskemaet. Når du designer et spørgeskema, skriver du ikke kun spørgsmål og svar, men opretter også den struktur, der gør det muligt at registrere svar og placere dem i tabelform. 
 
@@ -230,7 +230,7 @@ En juridisk enhed tilbyder både varer og tjenester til kunderne. Som det ofte e
 
 Du kan alternativt oprette et spørgeskema, så hvis en svarpersonen vælger Svar A til spørgsmål 1, er Spørgsmål 2 det næste i rækkefølgen af spørgsmål. Men hvis svarpersonen vælger Svar B til Spørgsmål 1, kan Spørgsmål 5 være det næste.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Brug af spørgeskemaer](questionnaires.md)

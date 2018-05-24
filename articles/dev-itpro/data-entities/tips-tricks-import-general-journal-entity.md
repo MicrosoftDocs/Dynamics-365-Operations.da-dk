@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 688fa17072cb340d6d02be31528339fb98601825
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eea226fae902c19d66aff83b7ee2786d1586ef39
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Bedste fremgangsmåder til import af bilag ved hjælp af enheden Finanskladde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.  
 
@@ -57,7 +57,7 @@ De følgende afsnit beskriver virkningen af disse indstillinger og forklarer ogs
 
 ### <a name="voucher-number"></a>Bilagsnummer
 
--   Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre, er der et hotfix i frigivelsen fra februar 2016. Hotfix-nummer er 3170316 og kan hentes fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download hotfixes fra Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md).
+-   Når du bruger indstillingen **Angivet på basis af-behandling** på enheden Finanskladde, skal bilagsnummeret gives i den importerede fil. Hver transaktion i finanskladden tildeles det bilagsnummer, der er angivet i den importerede fil, også selvom bilaget ikke er afstemt. Hvis du vil bruge sætbaseret behandling, men også vil bruge den nummerserie, der er defineret for bilagsnumre, er der et hotfix i frigivelsen fra februar 2016. Hotfix-nummer er 3170316 og kan hentes fra Lifecycle Services (LCS). Du kan finde flere oplysninger i [Download hotfixes fra Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
     -   Hvis du vil aktivere denne funktion, skal du på det kladdenavn, der bruges til import, indstille **Nummertildeling under bogføring** til **Ja**.
     -   Et bilagsnummer skal stadig defineres i den importerede fil. Men dette nummer er midlertidigt og overskrives af bilagsnummeret, når kladden bogføres. Du skal sikre dig, at linjerne i kladden er grupperet korrekt efter midlertidigt bilagsnummer. Under bogføring findes der f.eks. tre linjer, der har det midlertidige bilagsnummer 1. Det midlertidige bilagsnummer for alle tre linjer overskrives med det næste nummer i nummerserien. Hvis disse tre linjer ikke er en afstemt indgang, bogføres bilaget ikke. Hvis linjer, der har det midlertidige bilagsnummer 2, overskrives dette nummer derefter med det næste bilagsnummer i nummerserien, og så videre.
 

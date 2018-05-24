@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8010d38b015dcdb1d589c5342496dba4762cf429
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6927eced6b7c36f89a958800b6e1e6aed1d178f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="general-ledger-in-the-public-sector"></a>Finans i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
 
@@ -59,7 +59,7 @@ Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til ki
 ## <a name="how-do-i-collect-and-analyze-data-to-meet-the-common-governmentwide-accounting-classification-cgac-requirements"></a>Hvordan indsamler og analyserer jeg data for at opfylde CGAC-krav (Governmentwide Accounting Classification)?
 Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data for bogførte transaktioner for bestemte tal i hovedkonto, fuld kontonumre og økonomiske dimensionsværdier. Du kan finde flere oplysninger under [Afledte finansielle hierarkier i den offentlige sektor](derived-financial-hierarchies-public-sector.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Finans](../general-ledger/general-ledger.md)

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Kreditorsamarbejde med kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge kreditorsamarbejde til arbejde med kunder i Microsoft Dynamics 365 for Finance and Operations. Kreditorer kan udføre en række forretningsprocesser fra følgende arbejdsområder:
 
@@ -141,7 +141,7 @@ Som kreditor kan du få adgang til en del af de oplysninger, som kunden vedligeh
 
 De tilgængelige oplysninger er kreditornavn, adresser, kontaktoplysninger, kontaktpersoner og deres kontaktoplysninger, id-numre, momsregistreringsnumre, indkøbskategorier, som kreditoren er godkendt til at sælge til kunden i, og oplysninger om certificeringer.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Administrere brugere af kreditorsamarbejde](manage-vendor-collaboration-users.md)
 

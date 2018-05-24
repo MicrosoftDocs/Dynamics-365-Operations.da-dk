@@ -19,16 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 57076909dfa68f818d66726c3652cc1d14aa7160
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2d36867016f6bfeb149e417c1d86b585e01d59b2
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="commitments-in-the-public-sector-in-france"></a>Forpligtelser i den offentlige sektor i Frankrig
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig. De bruges til at reservere budgetterede beløb, så en organisation udtrykkeligt kan spore budgetreservationer til administration og rapportering i hele udgiftscyklussen. 
 
@@ -74,7 +74,7 @@ Forpligtelser skal lukkes manuelt.
 
 **Vigtigt**! Når du vælger de forpligtelser, som du vil lukke, er det vigtigt, at du ikke vælger de forpligtelser, som du allerede har oprettet for det nye regnskabsår. Lukning af en forpligtelseslinje kan ikke fortrydes. Hvis du lukker en forpligtelseslinje ved en fejltagelse, skal du oprette en ny forpligtelse for at gendanne budgetreservationen. Hvis du vil vide mere om årsafslutningsprocessen, skal du se under [Årsafslutningen i den offentlige sektor](../public-sector/year-end-processing-public-sector.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Regnskab i den offentlige sektor i Frankrig](emea-fra-public-sector-accounting.md)

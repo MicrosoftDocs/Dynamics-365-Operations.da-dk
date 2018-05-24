@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Komponenter i økonomisk rapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I denne artikel forklares, hvordan du organiserer og låser rapportkomponentgrupper. 
 
@@ -109,10 +109,10 @@ Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentg
 Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgang til denne komponent. Nogle gange glemmer en bruger måske at lukke en komponent eller lukker sit system uden at lukke komponenten. Det indebærer, at komponenten forbliver tjekket ud, og at ingen andre brugere kan åbne den. I disse situationer kan en administrator for økonomisk rapportering bruge dialogboksen **Elementer, der er tjekket ud** til at tjekke byggesten ind, som brugere har efterladt som tjekket ud. **Bemærk:** Du skal have rollen som administrator for at tjekke byggesten ind ved hjælp af dialogboksen **Elementer, der er tjekket ud**.
 1.  I Report Designer skal du klikke på **Udtjekkede elementer** i menuen **Funktioner**.
 2.  Vælg **Vis elementer fra alle brugere** i dialogboksen **Elementer, der er tjekket ud**. Listen opdateres, så den viser alle de rapportkomponenter, der er tjekket ud, og de brugere, der har tjekket dem ud.
-3.  Vælg en komponent, og klik derefter på **Fortryd udtjekning**.
-4.  Klik på **Ja** for at tjekke komponenten ind.
+3.  Markér en rapportkomponent, og klik derefter på **Fortryd udtjekning**.
+4.  Klik på **Ja** for tjekke rapportkomponenten ind.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
 

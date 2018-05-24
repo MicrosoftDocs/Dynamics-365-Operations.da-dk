@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5d13024ba15744f81406c4c8f5d5d33de658d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-fixed-compensation-plans"></a>Opret faste lønstrukturer
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Fast løn henviser til en medarbejders normale bruttoløn eller løn. I dette emne beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 
@@ -101,10 +101,10 @@ Du kan nu knytte en medarbejder til en fast løn-struktur. Åbn siden **Medarbej
 
 Systemet kontrollerer, at det kompensationsbeløb, der er angivet for en kompensationsstruktur af typen klasse eller omfang ligger inden for de minimale og maksimale referencepunkter for det givne kompensationsniveau i medarbejderens job. Hvis kompensationsbeløbet ligger uden for det tilladte interval, vises en advarsel eller fejlmeddelelse, afhængigt af det toleranceniveau, der er angivet for fast løn-strukturen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Kompensationsplaner](compensation-plans.md)
+[Kompensationsordninger](compensation-plans.md)
 
 
 

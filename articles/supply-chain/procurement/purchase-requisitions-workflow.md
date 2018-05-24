@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6828860d9e56dc8db80a11b4b611b9c0fdc2b62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a>Arbejdsgang for indkøbsrekvisitioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I arbejdsgangsprocessen flyttes indkøbsrekvisitionen gennem evalueringsprocessen fra den første status Kladde til statussen Godkendt. Når en indkøbsrekvisition sendes til gennemsyn, starter arbejdsgangsprocessen. Når en indkøbsrekvisition er godkendt, kan der oprettes en indkøbsordre for indkøbsrekvisitionslinjerne, som sendes til leverandøren til ordreopfyldning.
 
@@ -106,7 +106,7 @@ Du kan konfigurere udgiftsvalidatorer på siden **Udgiftsvalidatorer for indkøb
 
 Hvis du vil bruge en af de udgiftsvalidatorer, du har angivet i en arbejdsproces, skal du angive indstillingen **Deltagertype** til **Udgiftsdeltagere** i egenskaben **Tildeling** for det relevante arbejdsgangselement.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Opret en rekvisition til forbrug (opgaveguide)](tasks/create-requisition-consumption.md)

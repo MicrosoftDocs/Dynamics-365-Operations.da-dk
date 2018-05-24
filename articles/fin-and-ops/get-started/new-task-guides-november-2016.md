@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Nye eller opdaterede opgaveguider (november 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (november 2016 - alle sprog) til Microsoft Dynamics 365 for Operations. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 
@@ -587,7 +587,7 @@ APQC Unified-biblioteket (november 2016 - alle sprog) indeholder de opgaveguider
 |                       Konfigurere automatisk fragtafstemning                       |     Globalt     |
 |              <strong>\</strong>*Konfigurere vareomfordeling for kort plukning              |     Globalt     |
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md)

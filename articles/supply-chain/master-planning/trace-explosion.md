@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Brug af sporing for udfoldning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel beskriver, hvordan du kan bruge sporing til at undersøge årsagerne bag resultatet af en ordreudfoldning.
 
@@ -42,7 +42,7 @@ Ved at aktivere sporing kan du få vist oplysninger om de faktorer, der bidrog t
 
 Du kan få vist detaljer om terminer og handlinger til en valgt ordre. På siden **Udfoldning** er sporingsoplysninger tilgængelige under fanen **Udfoldning** i den øverste rude. Sporing forekommer, når du udfolder en ordre. Start sporing for ordren ved at klikke på **Opdater**, og markér derefter afkrydsningsfeltet **Aktivér spor**. Du kan bruge feltet **Søg efter tekst** til at søge i logfilen efter specifikke oplysninger. Søgeresultater fremhæves i træet.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Behovsplaner](master-plans.md)

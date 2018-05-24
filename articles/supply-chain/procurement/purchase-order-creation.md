@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 22264f0d82844e63bc7fc42705184c6ecc27e28d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-purchase-orders"></a>Opret indkøbsordrer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 I denne artikel beskrives den proces og de indstillinger, der gælder, når du opretter en indkøbsordre manuelt.
 
@@ -86,7 +86,7 @@ IO'er kan konfigureres til at kræve, at budgetmidler fordeles på ordren, før 
 
 Du skal muligvis forsinke fuldførelsen af en indkøbsordre. For eksempel kan du kræve yderligere oplysninger om produkter eller ydelser, eller du skal muligvis have tilladelse til forbruget. Der er flere måder at holde en ordre tilbage. For eksempel kan du vente med at bekræfte ordren. Hvis en arbejdsgang til ændringsstyring anvendes, skal du ikke sende ordren til godkendelse. Hvis du må blokere alle ordrer for en bestemt kreditor, kan du også markere kreditoren som **På hold**, for at der kan udføres behandling på kreditormasteren. Der findes også tilfælde, der kan forhindre, at ordren behandles. Behandling kan for eksempel være forhindret, hvis kreditmaksimum er overskredet, eller hvis de krævede budgetmidler ikke er tilgængelige.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Oversigt over indkøbsordrer](purchase-order-overview.md)

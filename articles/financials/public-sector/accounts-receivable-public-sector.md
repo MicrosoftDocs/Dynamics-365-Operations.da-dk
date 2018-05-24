@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eeb3d8eccf3f98c961f29eca50e7af088e3430ab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8dad7e19b7b2913ced1e7fec4f35f680d1b0ac00
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="accounts-receivable-in-the-public-sector"></a>Debitorer i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor.
 
@@ -60,10 +60,10 @@ Du kan bevare de økonomiske standarddimensioner for debitorgruppen. Bare gå ti
 ## <a name="what-can-i-use-accounts-receivable-posting-definitions-for"></a>Hvad kan jeg bruge bogføringsdefinitioner for debitor til?
 Du kan bruge bogføringsdefinitioner til at oprette reskontrokladdelinjer til kildetransaktioner, der opfylder de valgte kriterier – f.eks. til at generere flere, afstemte finansposter baseret på attributter, som f.eks. transaktionstyper og konti. Hvis du vil vide mere om bogføringsdefinitioner, skal du se [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Debitor](..\accounts-receivable\accounts-receivable.md)
+[Debitorer](../accounts-receivable/accounts-receivable.md)
 
 [Oprette en faktureringskode](tasks/create-billing-code-public-sector.md)
 

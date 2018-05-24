@@ -3,7 +3,7 @@ title: Styring af detailsalgspriser
 description: Dette emne beskriver begreberne for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Styring af detailsalgspriser
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om processen for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail. Der fokuseres på de begreber, der er involveret i processen, og om virkningerne af de forskellige konfigurationsindstillinger for salgspriser.
 
@@ -198,32 +198,6 @@ Microsoft SQL Server Express bruges ofte til kanaldatabaser på grund af prisen 
 Når du angiver salgspriser i Microsoft Dynamics 365, skal du ikke angive, om den angivne prisværdi er med eller uden moms. Værdien er kun prisen. Med indstillingen **Pris er inklusive moms** for detailkanaler kan du konfigurere detailkanaler, så de enten er inklusive eller eksklusive moms i priser. Denne indstilling er angivet for kanalen og kan ændres selv i en enkelt virksomhed.
 
 Hvis du arbejder både med inklusive og eksklusive moms, er det vigtigt, at du angiver priserne korrekt, da det samlede beløb, som kunden betaler, ændres, hvis indstillingen **Pris er inklusive moms** for kanalen ændres.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Effekten af indstillingen Pris er inklusive moms på økonomiske posteringer
-De beløb, der er bogført i finans for indtægts- og rabatkonti, påvirkes af indstillingen **Pris er inklusive moms**. Følgende eksempel viser, hvordan denne indstilling påvirker økonomiske posteringer.
-
-Eksemplet omhandler kun salgsposteringer, fordi indstillingen **Pris er inklusive moms** ikke påvirker posteringer for lageromkostninger.
-
-#### <a name="example"></a>Eksempel
-I dette eksempel skal rabatbeløb konfigureres, så de bogføres adskilt fra indtægter.
-
-Du sælger et produkt til $100 med en momssats på 10 procent, og der anvendes en rabat på 5 %. Følgende konti fra USRT-demodataene bruges:
-
-- **Indtægt:** 401100
-- **Rabat:** 403200
-- **Moms:** 202100
-
-**Eksempel 1: Eksklusive moms**
-
-- **Indtægt:** $100
-- **Rabat:** $5
-- **Moms:** $9,5 (= 10 % af $95)
-
-**Eksempel 2: Inklusive moms (\[VAT\])**
-
-- **Indtægt:** $90
-- **Rabat:** $4,5 (= 5 % af $90)
-- **Moms:** $10
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Forskelle mellem detailprissætning og ikke-detailprissætning
 Et enkelt program til prissætning bruges til at beregne detailpriserne på tværs af alle kanaler: Callcenter, Detailbutik og Onlinebutikker. Dette hjælper med at muliggøre ensartede handelsscenarier. 

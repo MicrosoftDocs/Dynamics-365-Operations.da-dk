@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Oversigt over eksterne detailenheder
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I dette emne forklares begreberne i forbindelse med eksterne detailenheder. Det beskriver de forskellige måder, at eksterne enheder kan forbindes til POS-enheden, og komponenterne, der er ansvarlige for administration af forbindelsen med POS-enheden.
 
@@ -786,7 +786,7 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
     -   Betalingsterminal
 
     Hvis den eksterne enhed ikke tilhører en af disse kategorier, er hardwarestationen ikke beregnet til at aktivere den eksterne enhed til at blive delt mellem flere POS-enheder.
--   Nogle gange kan enhedsdrivere forårsage, at de fælles kontrolobjekter (CCO'er) holder op med at fungere korrekt. Hvis en enhed er blevet installeret for nylig, men den ikke fungerer korrekt, eller du bemærker andre problemer, kan du ofte løse problemet ved at geninstallere CCO'erne. Du kan hente CCO'erne på <http://monroecs.com/oposccos_current.htm>.
+-   Nogle gange kan enhedsdrivere forårsage, at de fælles kontrolobjekter (CCO'er) holder op med at fungere korrekt. Hvis en enhed er blevet installeret for nylig, men den ikke fungerer korrekt, eller du bemærker andre problemer, kan du ofte løse problemet ved at geninstallere CCO'erne. Du kan hente CCO'er på <http://monroecs.com/oposccos_current.htm>.
 -   Hvis du foretager hyppige ændringer af eksterne enheder under test eller fejlfinding, skal du muligvis nulstille IIS i stedet for at vente på, at cachen opdaterer sig selv. Følg disse trin for at nulstille IIS:
     1.  Fra menuen **Start** skal du skrive **CMD**.
     2.  I søgeresultaterne, skal du højreklikke på **Kommandoprompt**, og derefter klikke på **Kør som administrator**.
@@ -801,10 +801,10 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
     6.  Når DLL-værterne er blevet lukket, genstarter du Modern POS.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Simulator for eksterne detailenheder](dev-itpro/retail-peripheral-simulator.md)
+[Ekstern Retail-simulatorenhed](dev-itpro/retail-peripheral-simulator.md)
 
 
 

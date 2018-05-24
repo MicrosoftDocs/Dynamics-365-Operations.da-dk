@@ -1,6 +1,6 @@
 ---
 title: "Oprette kreditorbetalinger ved hjælp af et betalingsforslag"
-description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten."
+description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Oprette kreditorbetalinger ved hjælp af et betalingsforslag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer. Betalingsforslag bruges ofte til at oprette kreditorbetalinger, fordi forespørgsel om betalingsforslag kan bruges til hurtigt at vælge kreditorfakturaer til betaling baseret på forfaldsdatoen og kasserabatten. 
 
@@ -47,7 +47,7 @@ Forespørgslen om betalingsforslag indeholder forskellige faner, der hver især 
 - **Kontroller kreditorsaldo** – Hvis denne indstilling er angivet til **Ja**, kontrollerer systemet, at en kreditor ikke har en debetsaldo, før fakturaen er betalt. Hvis en kreditor har en debetsaldo, oprettes der ingen betaling. Kreditoren har f.eks. måske kreditnotaer, eller betalinger, der er blevet bogført, men endnu ikke er udlignet. I disse tilfælde bør kreditoren ikke betales. I stedet skal kreditnotaer eller betalinger udlignes mod de udestående fakturaer.
 - **Slet negative betalinger** – Denne indstilling fungerer forskelligt, afhængigt af om betalinger er foretaget for enkelte fakturaer eller for summen af fakturaer, der opfylder kriterierne for betaling. Denne adfærd defineres på betalingsmåden .
 - **Betaling for hver faktura** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og der er en ikke-udlignet fakturaer og betaling for en kreditor, markeres kun fakturaen til betaling. Den eksisterende betaling udlignes i forhold til fakturaen. Hvis indstillingen **Slet negative betalinger** er angivet til **Nej**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling. En betaling oprettes for betalingen, og der oprettes en refusion (negativ betaling) til betaling.
-- <strong>Betaling for summen af fakturaer</strong> – Hvis indstillingen <strong>Slet negative betalinger</strong> er angivet til <strong>Ja</strong>, og en ikke-udlignet faktura og betaling findes for en kreditor, vælges både den ikke-udlignede faktura og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb. Den eneste undtagelse opstår, hvis summen resulterer i en refusion. I så fald vælges hverken fakturaen eller betalingen. Hvis indstillingen <strong>Slet negative betalinger** er angivet til **Nej</strong> , og en faktura og en betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb.
+- **Betaling for summen af fakturaer** – Hvis indstillingen **Slet negative betalinger** er angivet til **Ja**, og en ikke-udlignet faktura og betaling findes for en kreditor, vælges både den ikke-udlignede faktura og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb. Den eneste undtagelse opstår, hvis summen resulterer i en refusion. I så fald vælges hverken fakturaen eller betalingen. Hvis der er valgt **Nej** i indstillingen **Slet negative betalinger**, og en faktura og betaling ikke er udlignet, vælges både fakturaen og betalingen til betaling, og beløbene lægges sammen for at frembringe det samlede betalingsbeløb.
 - **Udskriv kun rapport** – Angiv denne indstilling til **Ja** for at se resultatet af betalingsforslaget i en rapport, men uden at oprette betalinger.
 - **Medtag kreditorfakturaer fra andre juridiske enheder** – Hvis din organisation har en centraliseret proces til betaling og betalingsforslaget indeholder fakturaer fra andre juridiske enheder, der er inkluderet i søgekriterierne, skal denne indstilling angives til **Ja**.
 - **Foreslå separat kreditorbetaling pr. juridisk enhed** – Hvis denne indstilling er angivet til **Ja**, oprettes der en separat betaling for hver juridisk enhed pr. kreditor. Kreditoren på betalingen er kreditoren fra fakturaen fra hver juridisk enhed. Hvis denne indstilling er angivet til **Nej**, og den samme kreditor har fakturaer i flere juridiske enheder, oprettes en betaling for det samlede beløb af de valgte fakturaer. Kreditoren på betalingen er kreditoren i den aktuelle juridiske enhed. Hvis kreditorkontoen ikke findes i den aktuelle juridiske enhed, bruges kreditorkontoen for den første faktura, der skal betales.
@@ -115,7 +115,8 @@ Dimensionskontrolelementet styrer gruppering af linjer, der er genereret af beta
 -   Feltet **Dimensionskontrol** aktiveres uden yderligere definition af dimensioner. Der oprettes et betalingsforslag uden hensyntagen til dimensioner. Den oprettede postering arver ingen dimensioner fra den anvendte post.
 -   Feltet **Dimensionskontrol** aktiveres, og yderligere dimensioner aktiveres. Nu kan du definere, hvordan dimensionerne skal kopieres til kladden. For eksempel: • Marker afkrydsningsfeltet **BusinessUnit** for at oprette et betalingsforslag pr. virksomhedsenhed for betalingsmåden • Marker afkrydsningsfeltet **CostCenter** for at oprette et betalingsforslag pr. bærer for betalingsmåden
 
-**Bemærk:** Hvis du vælger mere end én dimension i den tredje indstilling, oprettes der et betalingsforslag for dimensionskombinationen.
+> [[!NOTE]
+> Hvis du vælger mere end én dimension i den tredje indstilling, oprettes der et betalingsforslag for dimensionskombinationen.
 
 #### <a name="bank-account-selection"></a>Valg af bankkonto
 

@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f51fb41e19a47a9db02166de91b9e027154d6a7d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d667f2abbc7bd00d46f40178b9f6e9d21c6f79f3
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="procurement-catalogs"></a>Indkøbskataloger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives på et højt niveau, hvor indkøbsmedarbejderne kan konfigurere og vedligeholde indkøbskataloger. Indkøbskataloger definerer de varer og tjenesteydelser, som virksomhedens medarbejdere kan bestille til intern brug.
 
@@ -70,7 +70,7 @@ Opdateringer publiceres enten automatisk eller manuelt, afhængigt af de indstil
 -   **Begge** – Hvis kataloget indeholder produktkategorier, som har standardopdateringstypen **Statisk**, skal det opdateres, når disse kategorier opdateres. Hvis kataloget indeholder produktkategorier, der har standardopdateringstypen **Dynamisk**, opdateres det automatisk, når det ændres.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Konfigurer et indkøbskategorihierarki (opgaveguide)](tasks/set-up-procurement-category-hierarchy.md)

@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med omkostningsregnskab kan du få indsigt i, hvordan omkostningsforløbet er relateret til de produkter og tjenester, der leveres i en organisation. For at få vist gennemsigtigheden for omkostninger er det vigtigt at opnå omkostningsfordeling mellem omkostningsobjekter baseret på et passende fordelingsgrundlag. Som standard opnås omkostningstildelingen for det primære omkostningselement, der er behov for i nogle situationer, men det har nogle konsekvenser, som bør overvejes.
 
@@ -297,7 +297,7 @@ Den klare adskillelse mellem **Omkostningstildeling** og **Politikker for omkost
 
 
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 -  [Dimensioner for omkostningsobjekt](cost-objects.md)
 -  [Dimensioner for omkostningselement](cost-elements.md)
 -  [Dimensionshierarkier](dimension-hierarchy.md)

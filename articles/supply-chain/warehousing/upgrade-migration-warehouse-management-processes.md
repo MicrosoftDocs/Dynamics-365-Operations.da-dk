@@ -1,5 +1,5 @@
 ---
-title: Overflyt produkter og lagerstyring fra AX 2012 til Finance and Operations
+title: Opgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
 description: Dette emne indeholder en oversigt over indstillinger for overflytning af produkt-og lagerstyring.
 author: perlynne
 manager: AnnBe
@@ -19,56 +19,52 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 92d0b4dd9611de4d717f30dc8736c673835bea29
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Overflyt produkter og lagerstyring fra AX 2012 til Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Opgradere lagerstyring fra Microsoft Dynamics AX 2012 til Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over overførselsindstillinger for produkt- og lokationsstyring i Microsoft Dynamics 365 for Finance and Operations.
+Dette emne indeholder en oversigt over processen for opgradering fra Microsoft Dynamics AX 2012 R3, kørsel af modulet WMSII og til Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="introduction"></a>Introduktion
-------------
+Finance and Operations understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge modulet **Lokationsstyring**. I modulet WMSII kunne lokationslagerdimension og lagerdimensionen Palle-id vælges for det økonomiske lager, men lagerdimensionen palle-ID kan ikke bruges til økonomisk varelager i Finance and Operations.
 
-Under en opgradering til Finance and Operations blokeres produkter, hvis de er knyttet til en lagringsdimensionsgruppe, der har indstillinger, som ikke opfylder kravene til lagringsdimensionsgruppen i Finance and Operations. Efter opgraderingen kan du dog bruge et sæt af overførselsindstillinger i processen **Ændre lagringsdimensionsgruppen for varer** for at fjerne blokeringen af produkter, der blev blokeret under opgraderingen. Du kan derefter behandle transaktioner for disse produkter. Nogle af varerne kan allerede være tilknyttet lagringsdimensionsgrupper, hvor lokations-, lagersteds- og lokationslagerdimensioner er aktive og fysisk registrerede. I så fald kan du bruge processen **Ændre lagringsdimensionsgruppen for varer** til at aktivere varerne, der skal bruges i lokationsstyringsprocesser. Denne funktion er nyttig, hvis du vil bruge lokationsstyringsfunktionen for eksisterende varer.
+Under en opgradering identificeres alle produkter, der er knyttet til en lagringsdimensionsgruppe, der bruger lagerdimensionen palle-ID, markeres som blokerede og behandles ikke til opgradering.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Opgradering til Finance and Operations, når AX 2012 R3 WMSII bruges.
-Finance and Operations understøtter ikke længere det ældre **WMSII**-modul fra Microsoft Dynamics AX 2012. Du kan i stedet bruge det nye **Lokationsstyring**-modul. I tidligere versioner kunne lagerdimensionerne Lokation og Palle-id vælges for økonomisk lager. Men som en del af opgraderingsprocessen kan lagerdimensionen Palle-id ikke længere aktiveres for økonomisk lager. Alle produkter, der er knyttet til en lagringsdimensionsgruppe, der bruger lagerdimensionen Palle-id, vil blive blokeret og ikke blive behandlet.
+Efter opgraderingen kan du bruge et sæt af indstillinger i formularen **Ændre lagringsdimensionsgruppen for varer** for at fjerne blokeringen af produkter, der blev blokeret under opgraderingen, og derefter behandle transaktioner for disse produkter.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Aktivering af varer i Finance and Operations
+Denne ændring er påkrævet, fordi i Finance and Operations er varesporing en del af processerne for lokationsstyring. For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge processer for lokationsstyring, skal følgende konfigureres:
+-   Eksisterende lagersteder skal være aktiverede til at bruge lokationsstyringsprocesser 
+-   Eksisterende frigivne produkter skal være tilknyttet en lagringsdimensionsgruppe, der bruger lokationsstyringsprocesser 
 
-Varer, der skal bruges som en del af processer for lokationsstyring, skal være tilknyttet en lagringsdimensionsgruppe i Finance and Operations, hvor **Brug lokationsstyringsprocesser**-parameteren vælges. Når denne indstilling er valgt, aktiveres lagerdimensionerne for lokation, lagersted, lagerstatus, sted og nummerplade. Du kan skifte til denne type lagringsdimensionsgruppe alene for varer, der allerede er tilknyttet lagringsdimensionsgrupper, hvor lagerdimensionen Lokation er aktiv.
+Hvis kildelagringsdimensionsgrupper bruger lagerdimensionen Palle-id, skal lokationen af eksisterende disponibel lagerbeholdning, der bruger Palle-id som lagerdimension, være tilknyttet en lokationsprofil, hvor **Brug nummerpladesporing**-parameteren markeres. Hvis de eksisterende lagersteder ikke skal bruges til lokationsstyringsprocesser, kan du ændre lagringsdimensionsgrupper for den eksisterende disponible lagerbeholdning til grupper, der kun håndterer Lokation-, Lagersted- og Sted-lagerdimensioner. 
 
-### <a name="items-that-are-blocked-for-inventory-updates"></a>Varer, der er spærret for lageropdateringer
+> [!NOTE] 
+>  Du kan ændre lagringsdimensionsgruppen for varer, også selv om åbne lagertransaktioner findes.
 
+## <a name="find-products-that-were-blocked-because-of-pallet-id"></a>Finde produkter, der blev blokeret på grund af palle-ID
 For at få vist oversigten over frigivne produkter, der blev blokeret under opgraderingen og ikke kan behandles, skal du klikke på **Lagerstyring** &gt; **Konfiguration** &gt; **Lager** &gt; **Varer, der er spærret for lageropdateringer**.
 
-### <a name="reapplying-blocked-products"></a>Genanvendelse af spærrede produkter
+## <a name="change-storage-dimension-group-for-blocked-products"></a>Ændre lagringsdimensionsgruppen for spærrede produkter 
+ 
+En vare, der skal bruges som en del af en proces for lokationsstyring, skal være tilknyttet en lagringsdimensionsgruppe, hvor Lokationslagerdimension er aktiv, og **Brug lokationsstyringsprocesser**-parameteren vælges. Når denne indstilling er valgt, aktiveres lagerdimensionerne for lokation, lagersted, lagerstatus, sted og nummerplade.
 
 For at fjerne blokeringen af produkter, der blev blokeret under opgraderingen, skal du vælge en ny lagringsdimensionsgruppe for produkterne. Bemærk, at du kan ændre lagringsdimensionsgruppen, også selv om åbne lagertransaktioner findes. Hvis du vil bruge varer, der blev blokeret under opgraderingen, har du to muligheder:
 
 -   Skift lagringsdimensionsgruppen for varen til en lagringsdimensionsgruppe, der kun bruger Sted, Lagersted og Lokation som lagerdimensioner. Efter denne ændring bruges lagerdimensionen Palle-id ikke længere.
 -   Skift lagringsdimensionsgruppen for varen til en lagringsdimensionsgruppe, der bruger processer for lokationsstyring. Efter denne ændring bruges lagerdimensionen Nummerplade.
 
-### <a name="migration-processes"></a>Overførselsproces
-
-I Finance and Operations er varesporing en del af processerne for lokationsstyring. For disse processer skal alle lagersteder og deres lokationer være tilknyttet en lokationsprofil. Hvis du vil bruge processer for lokationsstyring, skal der håndteres to processer:
-
--   Eksisterende lagersteder skal være aktiverede til at bruge lokationsstyringsprocesser.
--   Eksisterende frigivne produkter skal være tilknyttet en ny lagringsdimensionsgruppe, der bruger lokationsstyringsprocesser.
-
-Hvis kildelagringsdimensionsgrupper bruger lagerdimensionen Palle-id, skal lokationen af eksisterende disponibel lagerbeholdning, der bruger Palle-id som lagerdimension, være tilknyttet en lokationsprofil, hvor **Brug nummerpladesporing**-parameteren markeres. Hvis de eksisterende lagersteder ikke skal bruges til lokationsstyringsprocesser, kan du ændre lagringsdimensionsgrupper for den eksisterende disponible lagerbeholdning til grupper, der kun håndterer Lokation-, Lagersted- og Sted-lagerdimensioner.
-
-### <a name="using-the-warehouse-management-processes"></a>Brug af lokationsstyringsprocesser
-
+## <a name="configure-warehouse-management-processes"></a>Konfigurere lokationsstyringsprocesser
 Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produkterne bruge en llagringsdimensionsgruppe, hvor **Brug lokationsstyringsprocesser**-parameteren er valgt.
 
-#### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Aktivere lagersteders brug af lokationsstyringsprocesser.
+### <a name="enable-warehouses-to-use-warehouse-management-processes"></a>Aktivere lagersteders brug af lokationsstyringsprocesser.
 
 1.  Opret mindst én ny lokationsprofil.
 2.  Klik på **Lokationsstyring** &gt; **Konfiguration** &gt; **Aktivér lokationsstyringsprocesser** &gt; **Aktivér opsætning af lagersted**.
@@ -77,7 +73,7 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 5.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 6.  Få behandlet ændringerne.
 
-#### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Ændre lagringsdimensionsgruppen for varer, så der anvendes lokationsstyringsprocesser
+### <a name="change-the-storage-dimension-group-for-items-so-that-it-uses-warehouse-management-processes"></a>Ændre lagringsdimensionsgruppen for varer, så der anvendes lokationsstyringsprocesser
 
 1.  Opret en ny **Lagerstatus**-værdi, og tildel den som **Standard-id for lagerstatus**-værdi i **Parametre til lokationsstyring**-indstillinger.
 2.  Opret en ny lagringsdimensionsgruppe, hvor **Brug lokationsstyringsprocesser**-parameteren vælges.
@@ -87,6 +83,4 @@ Før du kan bruge frigivne produkter i **Lokationsstyring**-modulet, skal produk
 6.  På siden **Ændre lagringsdimensionsgruppen for varer** skal du tilføje varenumre, lagringsdimensionsgrupper og enhedsseriegrupper. Du kan udføre dette trin direkte på siden, ved at bruge Microsoft Office-integration eller ved hjælp af dataenhedsprocessen i [Datastyring](../../dev-itpro/data-entities/data-entities.md).
 7.  Valider ændringerne. Som en del af valideringsprocessen forekommer forskellige valideringer af dataintegriteten. Som en del af en større opgraderingsproces skal problemer, der måtte opstå, tilpasses på kildeimplementeringen. I så fald skal der foretages en yderligere dataopgradering.
 8.  Få behandlet ændringerne. En opdatering af alle lagerdimensionerne kan tage et stykke tid. Du kan overvåge status ved hjælp af batchjobopgaverne.
-
-
 

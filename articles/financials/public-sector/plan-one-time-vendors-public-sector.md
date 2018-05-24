@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 495f867385d4f842e9cdd2c78432ccdcd27919cd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 90f409c170da0a2c7bc0b55512a39f2d0ea2513b
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer. 
 
@@ -100,12 +100,12 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når du har konfigureret forudsætninger, du skal bruge, kan du se [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md).
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 
-[Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
+[Kreditor i den offentlige sektor](accounts-payable-public-sector.md)
 
 
 

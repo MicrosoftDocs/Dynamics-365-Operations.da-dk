@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integration af budgetplanlægning med andre moduler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Budgetplaner kan oprettes fra flere forskellige ressourcer. De grundlæggende elementer i den periodiske proces er ens for alle ressourcer. 
 
@@ -68,7 +68,7 @@ Indstillingen **Historisk** under fanen **mål** gør det muligt at bruge datoer
 
 Feltet **Aggreger total efter** øverst på siden bestemmer også den dato, der bruges. Dette felt laver en total på beløbene og kan også angive ikrafttrædelsesdatoen til den første dag i regnskabsåret eller regnskabsperioden. 
 
-Mange af felterne på fanen <strong>Mål</strong> bliver redigerbare eller skrivebeskyttede, afhængigt af den handling, du vælger. Når du går fra at oprette en ny budgetplan til at opdatere en eksisterende plan, bliver feltet <strong>Navn på budgetplan</strong> utilgængeligt, og de felter, der er relateret til valg af en eksisterende plan, bliver tilgængelige. Både på fanen <strong>Mål</strong> og fanen <strong>Kilde** bliver feltet **Finans</strong> altid utilgængeligt, fordi værdien bestemmes af den valgte budgetplanlægningsproces. 
+Mange af felterne på fanen <strong>Mål</strong> bliver redigerbare eller skrivebeskyttede, afhængigt af den handling, du vælger. Når du går fra at oprette en ny budgetplan til at opdatere en eksisterende plan, bliver feltet **Navn på budgetplan** utilgængeligt, og de felter, der er relateret til valg af en eksisterende plan, bliver tilgængelige. Både under fanen **Mål** og **Kilde** bliver feltet **Finans** altid utilgængeligt, da værdien bestemmes af den valgte budgetplanlægningsproces. 
 
 Feltet **Budgetklasse** gør det muligt at angive budgetplanlinjerne som enten udgiftsposteringer eller indtægtsposteringer. Normalt er indtægtsposteringer krediteringer til en finanskonto og gemmes derfor som negative beløb. Disse posteringer vises typisk også som negative beløb i budgetplanen. Ved at tilføje budgetklassen som et felt i planlayoutet kan du lade omsætning blive vist som positive beløb.
 

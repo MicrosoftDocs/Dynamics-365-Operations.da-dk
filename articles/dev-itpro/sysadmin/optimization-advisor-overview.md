@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c055c673443255f3e6dda5e1179e1ef28d90e693
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="optimization-advisor-overview"></a>Oversigt over Optimeringsrådgiver
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Microsoft Dynamics 365 Finance and Operations.
 
@@ -50,8 +50,6 @@ Der gælder standardsikkerhedspolitikker for optimeringsmuligheder. Optimeringsm
 Når du udfører en handling i forbindelse med visse optimeringsmuligheder, beregner systemet virkningen af muligheden med hensyn til reduktionen i kørselstiden for forretningsprocesser. Desværre er denne funktion ikke tilgængelig for alle optimeringsmuligheder.
 
 Hvis du vil vide mere om Optimeringsrådgiver, kan du se den korte video [Optimeringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## <a name="optimization-rules"></a>Optimeringsregler
 
@@ -93,7 +91,7 @@ Hvis en mulighed ikke gælder for din rolle, kan du vælge **Skjul på min liste
 
 Hvis du vil deaktivere evalueringen af bestemte regler, skal du vælge den mulighed, der blev genereret af reglen og derefter vælge **Deaktiver analyse**.
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oprette nye regler](./create-rules-optimization-advisor.md)
 

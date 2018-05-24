@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Kasserabatter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kasserabatter konfigureres og deles for kreditor og debitor.  Den tilgængelige kasserabat kan defineres på debitorfakturaen eller kreditorfakturaen og benyttes, hvis fakturaen betales inden kasserabatdatoen. 
 
-<a name="cash-discounts"></a>Kasserabatter
---------------
+## <a name="cash-discounts"></a>Kasserabatter
 
 Kasserabatter for både debitorer eller kreditorer kan oprettes på siden Kasserabatter. Du kan også bruge feltet Næste rabatkode til at definere en række kasserabatter, der følger efter hinanden, efterhånden som tidligere kasserabatdatoer udløber. Du kan finde flere oplysninger i "Eksempel: En række kasserabatter" senere i dette emne. Hvis fakturaen, kreditposteringen (enten en betaling eller en kreditnota) eller begge angives en anden valuta end regnskabsvalutaen for den juridiske enhed, beregnes kasserabatten ved hjælp af valutakursen baseret på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kreditdokumentet er angivet for forskellige juridiske enheder, og hvis regnskabsvalutaen for de juridiske enheder er forskellig, tages valutakursen fra den juridiske enhed for fakturaen på datoen for kreditdokumentet. Du kan finde flere oplysninger i "Eksempel: Valutakurser for kasserabatter" senere i dette emne.
-Standardrækkefølge af hovedkonto for kasserabat
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardrækkefølge af hovedkonto for kasserabat
 
 Hvis en faktura udlignes inden for det tidsrum, der medfører en kasserabat, bogføres kasserabatten automatisk på en hovedkonto for kasserabatter i overensstemmelse med følgende standardprioritet:
 1.  Den hovedkonto, der er angivet i feltet Alternativ kasserabatkonto på debitorsiden Udlign åbne posteringer eller kreditorsiden Udlign åbne posteringer.
@@ -65,15 +64,7 @@ Din juridiske enheds regnskabsvaluta i EUR og de følgende valutakurser, der er 
 
 En faktura på 1000 USD med kasserabatbetingelserne for 20D2% bogføres den 15. februar. Beløbet i regnskabsvalutaen for fakturaen er 1100 EUR. Der foretages en betaling på 980 USD for fakturaen den 1. marts. Kasserabatbeløbet er 20 USD. Regnskabsvalutabeløbet for betalingen er 784 EUR. Regnskabsvalutabeløbet for kasserabatten beregnes ved hjælp af valutakursen for 1. marts: 20 \* 80/100 = 16 EUR.
 
-| **Bemærk!**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hvis indstillingen Beregn kasserabatter for delvise betalinger er valgt på siden Debitorparametre eller siden Kreditorparametre, bruges den valutakurs, der er gældende på datoen for hver delvise betaling. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Hvis indstillingen Beregn kasserabatter for delvise betalinger er valgt på siden Debitorparametre eller siden Kreditorparametre, bruges den valutakurs, der er gældende på datoen for hver delvise betaling. 
 
 

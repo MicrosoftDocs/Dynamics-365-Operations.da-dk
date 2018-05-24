@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram til finplanlægning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Gantt-diagrammet er udviklet til at sætte produktionsplanlæggere i stand til at styre og optimere produktionsplanen. Gantt-diagrammet gør strømmen af operationer gennemskuelig og gør det let at justere produktionsplanen under hensyntagen til materiale- eller ressourceunderskud. Dette hjælper planlæggere med at udnytte de disponible ressourcer bedst muligt, minimere igangværende arbejde og optimere procestider for produktionsordrer.
 
@@ -156,7 +156,7 @@ Gantt-diagrammet kan åbnes fra følgende sider.
 |           <strong>Job, der skal færdiggøres</strong> (liste i arbejdsområdet <strong>Administration af produktion</strong>)            |                                                                                               I arbejdsområdet <strong>Job, der skal færdiggøres i Administration af produktion</strong> vises job fra produktions og batchordrer, der er i gang på de valgte ressourcer til arbejdsområdet. På menupunktet <strong>Gantt-diagram</strong> kan du åbne Gantt-diagrammet, hvor alle de job, der er valgt på listen, indlæses i diagrammet.                                                                                               |
 | <strong>Produktionsordrer, der skal frigives</strong> (åbnes fra arbejdsområdet <strong>Administration af produktion</strong>) |                                                                                                                                         Siden Produktionsordrer, der skal frigives, åbnes fra arbejdsområdet <strong>Administration af produktion</strong>. Denne side viser planlagte produktions- og batchordrer, der afventer frigivelse. På denne side kan du åbne Gantt-diagrammet for de valgte produktionsordrer.                                                                                                                                          |
 
-## <a name="see-also"></a>Se også  
+## <a name="additional-resources"></a>Yderligere ressourcer  
 [Visuel planlægning med Gantt-diagram for produktion og batchordrer (video)](https://youtu.be/BtbuShkGj4I)
 
 [Visuel planlægning for produktionen (demoscript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

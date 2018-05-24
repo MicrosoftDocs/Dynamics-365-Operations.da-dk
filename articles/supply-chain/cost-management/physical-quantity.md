@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 739e998ec0962dba94cfb6d05b9f620852530d29
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 60f39b19a627e9c3288f30872d237b8c0ccd8ac4
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="inventory-object-values"></a>Lagerobjektværdier
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om beregning af værdierne i et lagerobjekt. 
 
@@ -123,7 +123,7 @@ I følgende tabel vises resultatet af beregningen for et lagerobjekt. Du kan få
 </tr>
 <tr class="even">
 <td>Lagerobjekt</td>
-<td>A</td>
+<td>T</td>
 <td>1</td>
 <td>11</td>
 <td>B2</td>
@@ -137,7 +137,7 @@ I følgende tabel vises resultatet af beregningen for et lagerobjekt. Du kan få
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Omkostningsobjekter](cost-object.md)

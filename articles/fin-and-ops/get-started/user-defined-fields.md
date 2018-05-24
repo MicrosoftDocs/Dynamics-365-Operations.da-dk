@@ -3,7 +3,7 @@ title: Brugerdefinerede felter
 description: "Dette emne viser, hvordan Microsoft Dynamics 365 for Finance and Operations tillader nogle brugere at oprette brugerdefinerede felter for at skræddersy programmet, så det passer til virksomheden."
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 4420eeb249a4d1bdac203e32d017dcebbddf95c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="custom-fields"></a>Brugerdefinerede felter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 Selvom Microsoft Dynamics 365 for Finance and Operations indeholder et omfattende sæt af felter klar til brug til administration af en lang række forretningsprocesser, er der nogle gange et behov for, at et firma vil spore flere oplysninger i systemet. For at imødekomme dette behov,giver Finance and Operations dig mulighed for at oprette brugerdefinerede felter for at skræddersy programmet til virksomhedens behov, forudsat at du har rettigheder til funktionen. 
 

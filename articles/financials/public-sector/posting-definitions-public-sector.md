@@ -19,16 +19,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c8d2bdd40c16000e080c215aa4eaaf807770949f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e537c19fec5b4ae1964d81d34fe299d477e564ae
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="posting-definitions-in-the-public-sector"></a>Bogføringsdefinitioner i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder eksempler på bogføringsdefinitioner i den offentlige sektor, som du kan bruge til at oprette reskontrokladdelinjer for oprindelige transaktioner, der opfylder udvalgte kriterier. Eksemplerne omfatter budgetdisponeringer, samlet kontantudligninger, afskrivninger, efterkravsudligninger, avancerede finansposter, finansårsafslutning og beskyttede midler.
 
@@ -609,14 +609,14 @@ I dette eksempel defineres midler med betegnelsen 601 som klassen **Privat** på
 
 Bogføringsdefinitionen leder efter en overensstemmelse på en hvilken som helst kontodel af udgiftskontostrukturen. Når 601-66100-130- evalueres, bruges der derfor samme finanskonto, beløbet tilbageføres for at afslutte kontoen, og den genererede reguleringspost i finans oprettes.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Kreditor](../accounts-payable/accounts-payable.md)
+[Kreditorer](../accounts-payable/accounts-payable.md)
 
-[Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
+[Kreditor i den offentlige sektor](accounts-payable-public-sector.md)
 
-[Debitorer i den offentlige sektor](accounts-receivable-public-sector.md)
+[Debitor i den offentlige sektor](accounts-receivable-public-sector.md)
 
 [Budgetlægning i den offentlige sektor](budgeting-public-sector.md)
 

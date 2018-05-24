@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nomenklatur for produktvariantnumre og -navne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne beskriver, hvordan du kan konfigurere en nomenklatur for produktnumre til erstatning for det faste [produktmasternummer - konfiguration - størrelse - farve - type] format. Den nye nomenklatur har et målrettet format, der omfatter produktmasternummer, aktive produktdimensioner og tekstafgrænsningstegn efter eget valg. Du kan også oprette en nomenklatur for produktnavne. Endelig kan du også oprette en nomenklatur til at identificere konfigurationer, der er oprettet af den begrænsningsbaserede produktkonfigurator. Disse nomenklaturer kan indeholde attributter efter eget valg.
 
@@ -192,10 +192,10 @@ Afhængigt af nomenklaturen vil systemet muligvis forsøge at tildele en konfigu
 
 Under ét trin af konfigurationsprocessen, foreslår systemet en konfigurationsværdi i overensstemmelse med nomenklaturen. I dette trin kan du manuelt ændre konfigurationsværdien. Når du gemmer konfigurationen, undersøges det, om konfigurationsværdien er entydig. Hvis den indtastede værdi ikke er entydig, får du vist en fejlmeddelelse. Du skal angive en unik konfigurationsværdi for at kunne gemme konfigurationen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Opret en nomenklatur for produktnumre for foruddefinerede produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Oprette et produktnummernomenklatur for foruddefinerede produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Opret en nomenklatur for produktnumre for konfigurerede produktvarianter](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

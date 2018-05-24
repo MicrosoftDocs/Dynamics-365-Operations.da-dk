@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7cc6ba50b8df54eadc9a23990a58d1d37365cb6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-control-overview"></a>Oversigt over omkostningsstyring 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbejdsområdet **Omkostningsstyring** er et centralt punkt, hvor ledere, der er ansvarlige for styring af et omkostningsobjekt eller en række omkostningsobjekter inden for en dimension eller på tværs af dimensioner (for eksempel bærere and produktgrupper), har adgang til rapporter. Rapporterne i arbejdsområdet administreres fuldstændigt af omkostninger lagerbogholdere, så layoutet og de data, der bruges til rapportering, kan være ensartet på tværs af hele organisationen.
 
@@ -154,7 +154,7 @@ I følgende eksempel er fordelingsgrundlaget af typen **Fordelingsbasis for form
 
 ![Beregninger pr. omkostningsobjekt](./media/cost-entries-allocation-base.png)
 
-Se også 
+Yderligere ressourcer 
 
 [Angive adgangsrettigheder for controllere til omkostningsobjekt](access-rights-cost-object-controller.md)
 

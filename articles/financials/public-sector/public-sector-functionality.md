@@ -20,16 +20,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 920f5b338c127b21bb350ba848ac852cf6758c8b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 24dfa9c151f8930bc62463cdd6acf8b4c4cdd870
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor. 
 
@@ -68,7 +68,7 @@ Følgende tabel indeholder oplysninger om, hvordan denne konfigurationsnøgle er
 | Underordnede nøgler | **Avanceret finanspost**-konfigurationsnøgle (AdvancedLedgerEntry) **Offentlig sektor 1099G**-konfigurationsnøgle (Tax1099G) **Offentlig sektor 1099S**-konfigurationsnøgle (Tax1099S) **Franske myndighedskrav**-konfigurationsnøgle |
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Planlægning af funktioner til den offentlige sektor](plan-public-sector-functionality.md)

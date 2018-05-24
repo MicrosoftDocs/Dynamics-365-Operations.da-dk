@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Oversigt over Hjælp-system
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation. 
 
@@ -60,7 +60,7 @@ Webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations
 
 -   **Adgang til det mest opdaterede indhold** – Webstedet giver os en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen på. Derfor hjælper det med at sikre, at du har adgang til de seneste tekniske oplysninger.
 -   **Indhold, der er skrevet af eksperter** – Webstedet giver et mere omfattende sæt af produktdokumentation, der kan forbedres af community-medlemmer både inden for og uden for Microsoft.
--   **Adgang til forskellige typer indhold** – På webstedet kan du hurtigt få adgang til forskellige typer indhold om Finance and Operations som Microsoft Office Mix-præsentationer, opgaveguider, videoer og emner.
+-   **Adgang til forskellige typer indhold** – På webstedet kan du hurtigt få adgang til forskellige typer indhold om Finance and Operations som opgaveguider, videoer og emner.
 -   **Indhold, der understøtter dine forretningsprocesser** – Webstedet omfatter indhold, der er fokuseret på forretningsprocesser, og som drager fordel af Business Process Modeler (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Søger på docs.microsoft.com
@@ -204,7 +204,7 @@ Følgende tabel viser vores websteder. Vores indholdswebsteder er organiseret ti
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 [Finance and Operations-hjælpesystemet (dataark kan hentes)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

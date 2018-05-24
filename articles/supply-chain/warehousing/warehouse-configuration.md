@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfiguration af lagersted
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indeholder oplysninger om, hvordan du aktiverer en lageropbygning og lagerprocesser.
 
@@ -112,7 +112,7 @@ Som navnet antyder, bruges lokalitetsvejledninger til at dirigere arbejdstransak
 
 For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknyttet hver enkelt linje for lokalitetsvejledning, skal du bruge en af de foruddefinerede strategier. Du kan f.eks. bruge strategien **Tom lokation uden indgående arbejde** til at søge efter ledige lokaliteter på et lagersted, eller du kan bruge strategien **FEFO-batchreservation** for udgående salgspluk.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](tasks/configure-locations-wms-enabled-warehouse.md)

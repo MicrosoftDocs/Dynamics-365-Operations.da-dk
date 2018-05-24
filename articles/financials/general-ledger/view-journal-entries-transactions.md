@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9768154e117ca09ae84c6a9c82d43000752c2b34
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Få vist kladdeposteringer og transaktioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives de forskellige måder, du kan få vist kladdeposter og transaktioner. 
 
@@ -54,9 +54,9 @@ Ud over de økonomiske rapporter, kan du bruge følgende finansrapporter til at 
 -   **Transaktionsoprindelse** – Denne transaktionsrapport viser kontoen efter kladde og efter transaktions-, regnskabs- og rapporteringsvaluta. Den viser også hver linje i kladden, der blev brugt som en forskydning.
 
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 - [Kontosaldi i Finans](general-ledger-account-balances.md) 
-- [Sporing af regnskabskilde](..\accounts-payable\accounting-source-explorer.md)
+- [Sporing af regnskabskilde](../accounts-payable/accounting-source-explorer.md)
 - [Økonomirapportering](financial-reporting-getting-started.md)
 - [Se kladdeposteringer](tasks/view-journal-entries-or-transactions.md)
 

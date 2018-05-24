@@ -18,16 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 45717bc1a7093c0282d214fc4ce5fdf153bb14a1
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering for at trække data ind i Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne forklarer, hvordan du kan bruge din konfiguration af elektronisk rapportering(ER) til at arrangere overførslen af data fra din forekomst af Finance and Operations til Power BI-tjenester. I dette emne bruges som eksempel Intrastat-posteringer som virksomhedens data, der skal overføres. Power BI-kortvisualiseringen bruger disse Intrastat-posteringsdata til at præsentere en visning til analyse af virksomhedens import-/eksportaktiviteter i Power BI-rapporten.
 
@@ -132,7 +132,7 @@ Konfigurer integrationen mellem Finance and Operations og Power BI. Yderligere o
 2. Vælg den **Import- og eksportoplysninger** Power BI-rapport, du har oprettet, for at få vist rapporten som et handlingselement på den valgte side. 
 3. Klik på handlingselement for at åbne Finance and Operations-side, der viser den rapport, du har designet i Power BI. [![Import- og eksportoplysningsrapport](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Destinationer for elektronisk rapportering](electronic-reporting-destinations.md)
