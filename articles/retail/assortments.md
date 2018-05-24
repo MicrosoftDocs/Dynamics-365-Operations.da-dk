@@ -3,27 +3,28 @@ title: Sortimentsstyring
 description: "I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Microsoft Dynamics 365 for Retail og overvejelser i forbindelse med implementering af projekter."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Sortimentsstyring
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Overblik
 Microsoft Dynamics 365 for Retail indeholder *sortimenter*, så du kan administrere produkttilgængeligheden på tværs af kanaler. Sortimenter bestemmer, hvilke produkter der er tilgængelige i bestemte butikker og i en bestemt periode.
@@ -35,25 +36,25 @@ Den overordnede blanding af produkter på en kanal afhænger af de publicerede s
 ### <a name="basic-assortment-setup"></a>Konfiguration af basissortiment
 I følgende eksempel er der konfigureret et entydigt sortiment for hver butik. I eksemplet er kun produkt 1 tilgængeligt på lager 1, og kun produkt 2 er tilgængeligt i butik 2.
 
-![Hvert produkt er tilgængeligt i én butik](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Hvert produkt er tilgængeligt i én butik")
+![Hvert produkt er tilgængeligt i én butik](./media/Managing-assortments-figure1.png)
 
 Hvis du vil gøre produkt 2 tilgængeligt i butik 1, kan du føje produktet til sortiment 1.
 
-![Produkt 2 føjet til sortiment 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Produkt 2 føjet til sortiment 1")
+![Produkt 2 blev føjet til sortiment 1](./media/Managing-assortments-figure2.png)
 
 Du kan også føje butik 1 til sortiment 2.
 
-![Butik 1 føjet til sortiment 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Butik 1 føjet til sortiment 2")
+![Butik 1 blev føjet til sortiment 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarkier
 I situationer, hvor flere kanaler deler de samme produktsortimenter, kan du konfigurere sortimenterne ved hjælp af sortimentsorganisationshierarkiet i Retail. Når der tilføjes noder fra dette hierarki, medtages alle kanaler i den pågældende node og dens underordnede noder.
 
-![Organisationshierarki](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organisationshierarki")
+![Organisationshierarki](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 På samme måde kan du på produktsiden medtage grupper af produkter ved hjælp af produktkategorihierarkier. Du kan konfigurere sortimenter ved at medtage en eller flere kategorihierarkinoder. I dette tilfælde omfatter sortimentet alle produkter i kategorinoden og dens underordnede noder.
 
-![Produktkategorier](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Produktkategorier")
+![Produktkategorier](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Udeladte produkter eller kategorier
 Ud over at medtage produkter og kategorier i sortimenter kan du bruge indstillingen Udelad til at definere bestemte produkter eller kategorier, der skal udelades fra sortimenter. I følgende eksempel skal du medtage alle produkter i en bestemt kategori, med undtagelse af produkt 2. I dette tilfælde behøver du ikke at definere sortimentet produkt for produkt eller oprette flere kategorinoder. I stedet kan du nøjes med at medtage kategorien, men udelade produktet.
@@ -61,7 +62,7 @@ Ud over at medtage produkter og kategorier i sortimenter kan du bruge indstillin
 > [!NOTE]
 > Hvis et produkt er både medtaget og udeladt i et eller flere sortimenter pr. definition, bliver produktet altid betragtet som udeladt.
 
-![Udeladt produkt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Udeladt produkt")
+![Udeladt produkt](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale og frigivne produkter
 Sortimenter defineres på globalt niveau og kan indeholde kanaler fra flere juridiske enheder. De produkter og kategorier, der er inkluderet i sortimenter, deles også på tværs af juridiske enheder. Et produkt skal dog frigives, før det faktisk kan sælges, bestilles, tælles eller modtages i kanalen (f.eks. på \[POS\]). Selvom to butikker i forskellige juridiske enheder kan dele et sortiment, der indeholder de samme produkter, er produkterne derfor kun tilgængelige, hvis de er frigivet til disse juridiske enheder.

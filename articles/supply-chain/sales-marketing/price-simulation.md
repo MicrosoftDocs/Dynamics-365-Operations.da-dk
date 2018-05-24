@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Prissimulering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om prissimuleringen for tilbud. Prissimuleringen hjælper dig med at vurdere effekten af fradrag på den fremtidige salgspris under tilbudsprocessen, før du giver tilsagn om en bestemt pris.
 
@@ -36,7 +36,7 @@ En prissimulering til et tilbud viser et nyt samlet beløb på basis af en fores
 
 En prissimulering ændrer ikke prisen i tilbuddet. Hvis prissimuleringen anvendes på et helt tilbud, behandles den som en specialrabat i tilbudshovedet. Hvis prissimuleringen anvendes på bestemte varer, behandles den som en specialrabat på tilbudslinjerne. Enhedssalgsprisen på en tilbudslinje, der oprettes, ændres ikke, når prissimuleringen anvendes. I stedet anvendes en rabatprocent, der svarer til prisreduktionen på tilbudslinjen. Når en prissimulering anvendes, overføres enhedssalgsprisen og rabatprocenten til tilbudslinjen eller tilbudshovedet.  
 
-**Bemærk!** Når du kører en prissimulering, er det kun den aktuelle salgsvaluta, der bruges til oprettelse af simuleringen. Men når du får vist de samlede tilbudsbeløb, er det med en blanding af regnskabsvalutaen og salgsvalutaen.  
+>[Bemærk!] Når du kører en prissimulering, er det kun den aktuelle salgsvaluta, der bruges til oprettelse af simuleringen. Men når du får vist de samlede tilbudsbeløb, er det med en blanding af regnskabsvalutaen og salgsvalutaen.  
 
 Ekstra varer, der føjes til tilbudslinjer, kan udløse linjerabatter eller samkøbsrabatter. De kan også udløse samlede rabatter, der ændrer dækningsbidrag og dækningsgrader for tilbudslinjerne og den samlede rabat.  
 

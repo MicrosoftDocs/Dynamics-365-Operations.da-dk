@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016.
 
@@ -536,7 +536,7 @@ Der er ikke blevet tilføjet nye funktioner.
 </tr>
 <tr class="odd">
 <td>(EU) Rapportantallet i supplerende enheder til Intrastat ved hjælp af enhedskonverteringsindstilling.</td>
-<td>Intrastat-varekoder har et tekstfelt til at identificere flere enheder, og kortet **Produkt** har et felt til at identificere antallet af supplerende enheder i kg.</td>
+<td>Intrastat-varekoder har et tekstfelt til at identificere flere enheder, og kortet <strong>Produkt</strong> har et felt til at identificere antallet af supplerende enheder i kg.</td>
 <td>Supplerende enheder til Intrastat-varekoder vælges på listen over enheder. Antallet af supplerende enheder beregnes gennem enhedskonverteringsindstillinger.</td>
 <td>Dette samler tilgangen til genberegning fra transaktionsenheder til yderligere enheder.</td>
 </tr>
@@ -1081,7 +1081,7 @@ Der er ikke blevet tilføjet nye funktioner.
 
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Nyheder eller ændret](whats-new-changed.md)

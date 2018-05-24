@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 60f1bdd14e2c42a71a3f39202d9483b4ac03c208
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0f58a2c42d9f78d7d974542ff2869b48c6a4ba37
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budgeting-in-the-public-sector"></a>Budgetlægning i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne oversigt introducerer dig til de budgetteringsfunktioner, der er tilgængelige for den offentlige sektor. Dette omfatter budgetanalyse, foreløbige budgetter og fordelinger og bogføringsdefinitioner.
 
@@ -53,12 +53,12 @@ Du skal evt. angive følgende budgetteringsfunktioner:
 
 **Bemærk!** Dette gælder også for Finans, Kreditor og Debitor.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Budgettering](../budgeting/budgeting-overview.md)
 
-[Kreditorbetalinger i den offentlige sektor](accounts-payable-public-sector.md)
+[Kreditor i den offentlige sektor](accounts-payable-public-sector.md)
 
 [Debitor i den offentlige sektor](accounts-receivable-public-sector.md)
 

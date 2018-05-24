@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Grovplanlægning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder en beskrivelse af grovplanlægning. Du kan bruge grovplanlægning til at få et generelt estimat af produktionsprocessens over tid.
 
@@ -75,7 +75,7 @@ Når du kører grovplanlægning, kan du annullere visse dele af ruteplanlægning
 ## <a name="finite-materials"></a>Materialebegrænsning
 Hvis du arbejder med materialebegrænsning, afhænger planlægningen også af tilgængeligheden af de materialer, der skal bruges til produktion. Hvis de tilgængelige komponenter ikke er tilstrækkelige til produktionen, kan produktionen forsinkes. Du kan basere planlægningen på brugen af materialer ved at angive de materialer, der skal være tilgængelige til produktionen. Når du optimerer både ressourcekapacitet og tilgængeligheden af materialer, beregnes produktion i overensstemmelse med disse begrænsninger. En produktionsordre kan ikke planlægges til at starte, før kapacitet og materialer er tilgængelige på samme tid og i de krævede mængder.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Indstillinger for grovplanlægning](operation-scheduling-options.md)

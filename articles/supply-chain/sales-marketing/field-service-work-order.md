@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Arbejdsordrens integration kræver, at du angiver salgsoprindelsen. Salgsoprinde
 6. Angiv feltet **Salgsoprindelsestype** til **Arbejdsordreintegration**.
 7. Vælg **Gem**.
 
-### <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
 
-(Kommer snart)
+### <a name="setup-in-data-integration"></a>Opsætning i Dataintegration
+
+Kontroller, at **Integrationsnøgle** findes for **msdyn_workorders**
+1. Gå til Dataintegration
+2. Vælg fanen **Forbindelsessæt**
+3. Vælg det forbindelsessæt, der bruges til synkronisering af arbejdsordre
+4. Vælg fanen **Integrationsnøgle**
+5. Find msdyn_workorders, og kontroller, at nøglen **msdyn_name (Work Order Number)** er tilføjer. Hvis den ikke vises, kan du tilføje den ved at klikke på **Tilføj nøgle** og klikke på **Gem** øverst på siden
+
+## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
+
+Følgende illustration viser skabelontilknytningen i Dataintegration.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Arbejdsordrer til salgsordrer (Field Service til Fin and Ops): WorkOrderHeader
+
+Filter: (msdyn_systemstatus ne 690970005) og (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Skabelontilknytning i dataintegration](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Fin and Ops): WorkOrderServiceLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004)
+
+[![Skabelontilknytning i dataintegration](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Arbejdsordrer til salgsordrer (Field Service til Fin and Ops): WorkOrderServiceLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
+
+[![Skabelontilknytning i dataintegration](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Arbejdsordrer til salgsordrer (Field Service til Fin and Ops): WorkOrderProductLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) og (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
+
+[![Skabelontilknytning i dataintegration](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Arbejdsordrer til salgsordrer (Field Service til Fin and Ops): WorkOrderProductLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
+
+[![Skabelontilknytning i dataintegration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

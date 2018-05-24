@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 974edd06460df4afe594b0a033a042b8c2763f7f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-setup"></a>Konfigurere behovsprognoser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne omhandler de konfigurationsopgaver, du skal udføre, for at forberede behovsprognoser.  
 
@@ -78,7 +78,7 @@ Hvis du vil oprette prognoseforudsigelser, kan du installere din egen tjeneste v
 ## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Indstillinger for Machine Learning-tjenesten til Finance and Operations-behovsprognose
 For at få vist de parametre, der kan konfigureres for tjenesten til Finance and Operations-behovsprognoser, skal du gå til **Varedisponering** &gt; **Konfiguration** &gt; **Behovsprognoser** &gt; **Parametre til prognosealgoritme**. Siden **Parametre til prognosealgoritme** viser standardværdierne for parametrene. Du kan overskrive disse parametre på siden **Parametre til behovsprognoser**. Brug fanen **Generelt** for at overskrive parametrene globalt, eller brug fanen **Varefordelingsnøgler** til at overskrive parametrene pr. varefordelingsnøgle. Parametre, der er overskrevet for en varefordelingsnøgle, påvirker kun prognosen for varer, der er knyttet til den varefordelingsnøgle.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Introduktion til behovsprognoser](introduction-demand-forecasting.md)

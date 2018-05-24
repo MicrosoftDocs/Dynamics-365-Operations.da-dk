@@ -20,16 +20,16 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 32f22ab1ca64ace467a480161f3b68ea35f8546e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 824579816662c14351eef5ee7ebc07694d43cfd2
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="security-roles-in-the-public-sector"></a>Sikkerhedsroller i den offentlige sektor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor.
 
@@ -97,7 +97,7 @@ Sikkerhedsrollen **Indkøbsagent - den offentlige sektor** understøtter de offe
 ## <a name="what-do-i-do-next"></a>Hvad skal jeg gøre nu?
 Når brugerne er oprettet, skal du tildele dem roller på siden **Tildel brugere roller**.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Rollebaseret sikkerhed](../../dev-itpro/sysadmin/role-based-security.md)

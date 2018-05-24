@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel indeholder oplysninger om de parametre og filtre, der bruges i beregningen af behovsprognoser. 
 
@@ -64,7 +64,7 @@ Den interne planlægningsgruppe i firmaet, varefordelingsnøgler og andre filtre
 
 Hvis prognosen ikke er oprettet for en lang række varer, men for eksempel for én vare eller én varefordelingsnøgle ad gangen, kan du opnå bedre ydeevne ved derefter at vælge afkrydsningsfeltet **Brug svartilstand for anmodning** under fanen **Overordnet planlægning – Opsætning – Behovsprognose** - **Parametre til behovsprognoser – Azure Machine Learning**.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Konfigurere behovsprognoser](demand-forecasting-setup.md)

@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurere skærmlayout til POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser.
 
@@ -91,10 +91,10 @@ Hver layoutstørrelse inden for et skærmlayout skal konfigureres ved hjælp af 
 
 **Anbefalede produkter** – Hvis det er konfigureret for miljøet, viser kontrolelementet for anbefalede produkter produktforslag baseret på maskinel indlæring. Kontrolelementet for anbefalede produkter er kun tilgængeligt for fulde layouts i Dynamics 365 for Retail version 1611. **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, der giver brugerne mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
-[Installer layoutdesigneren til Retail POS](install-pos-layout-designer.md)
+[Installere layoutdesigneren til Retail POS](install-pos-layout-designer.md)
 
 
 

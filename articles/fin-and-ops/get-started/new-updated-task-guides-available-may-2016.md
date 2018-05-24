@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller opdaterede opgaveguider (maj 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (maj 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016 - alle sprog)
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (maj 2016 - alle sprog)
 ------------------------------------------------------------------------------------------------
 
 APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til brug i hjælpen til maj 2016-opdateringen til Microsoft Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Lokaliserede versioner af de opgaveguider, der blev udgivet i APQC Unified-biblioteket (februar 2016), er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md). <strong>Bemærk:</strong> En stjerne (<strong>\</strong>*) ud for titlen på en BPM-linje (Business Process Modeler) angiver, at opgaveguiden til denne forretningsproces blev oprettet til opdateringen til Dynamics AX 2016, og at den ikke understøttes i tidligere versioner af Microsoft Dynamics AX.
@@ -186,7 +186,7 @@ APQC Unified-bibliotek (maj 2016) indeholder opgaveguider, der er beregnet til b
 |                  Konfigurere transportbegrænsninger for en vare                   |     Globalt     |
 |                <strong>\</strong *Konfigurere politikker for lagerstedsarbejde                 |     Globalt     |
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Nye opgaveguider (februar 2016)](new-task-guides-available-february-2016.md)

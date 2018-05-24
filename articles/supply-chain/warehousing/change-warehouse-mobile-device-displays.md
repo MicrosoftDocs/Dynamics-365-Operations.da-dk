@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Skærmindstillinger for lagerstedets mobilenhed
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I denne artikel beskrives det, hvordan du konfigurerer udseendet på en mobilenheds skærm og knytter tastaturgenvejstaster til kontrolelementer, f.eks. knapper. 
 
@@ -89,7 +89,7 @@ Klik ind på paletten, eller indtast en hexadecimal farvekode for at vælge farv
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definere datoformatet til brug på mobilenheder
 Du kan udvide listen over godkendte datoformater for hver enkelt installation. Denne egenskab kan være brugbar, hvis du f.eks. vil angive et format, der gør det lettere for en arbejder at angive datoer på en mobilenhed. Standardformatet bestemmes af brugerens standardsprog, der er angivet i feltet **Sprog** på siden **Brugerindstillinger**. (Samme side bruges også til at knytte en medarbejder til et bestemt arbejdsbruger for et lagersted). **Bemærk!** Warehouse Mobile Devices Portal bruger ikke indstillingen i feltet **Format for dato, klokkeslæt og tal** på siden **Præferencer for sprog om område**. Hvis du vil ændre et datoformat, skal du være fortrolig med regulære udtryk i Microsoft .NET Framework. Yderligere oplysninger finder du i [Regulære udtryk i .NET Framework](http://go.microsoft.com/fwlink/?LinkId=391260). Hvis du vil definere datoformater,skal du redigere filen Dates.ini, der findes på Content\\Settings\\Dates.ini på Warehouse Mobile Devices Portal-serveren. Denne fil bruger regulære .NET-udtryk til at specificere datoformatet. Det regulære udtryk skal indeholde underordnede udtryk, der opretter navngivne grupper for dag, måned og år (DDMMYY), sådan som det vises i følgende eksempel:
 
-^(?&lt;dag&gt;\\d{2})(?&lt;måned&gt;\\d{2})(?&lt;år&gt;\\d {2})$
+^(?&lt;dag&gt;\\d{2})(?&lt;måned&gt;\\d{2})(?&lt;år&gt;\\d{2})$
 
 Hver underordnet udtryk kræver en til to cifre for dagen og måneden og et til fire cifre for året. F.eks. definerer følgende underordnede udtryk en navngivet gruppe for et år, og kræver mindst to eller maksimalt fire cifre:
 
@@ -97,7 +97,7 @@ Hver underordnet udtryk kræver en til to cifre for dagen og måneden og et til 
 
 Du kan angive mere end ét udtryk i den samme fil. Hvert udtryk skal være på en separat linje. Det første udtryk, der er afstemt, bruges til at fortolke datoen.
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Konfiguration af mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)

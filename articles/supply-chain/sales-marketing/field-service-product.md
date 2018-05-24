@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 699830ce6cd993f3dd3fd4ff744ce5a8b9645c32
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -66,4 +66,12 @@ I Finance and Operations beregnes værdien **Field Service-produkttype** på dat
 - **Lager:** Produkttype = Produkt- og varemodelgruppe, Lagerført produkt = Sand
 - **Ikke-lager:** Produkttype = Produkt- og varemodelgruppe, Lagerført produkt = Falsk
 - **Service:** Produkttype = Service
+
+## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
+
+Følgende illustration viser skabelontilknytningen i Dataintegration.
+
+### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Field Service-produkter (Fin and Ops til Field Service): Produkter - Produkter
+
+[![Skabelontilknytning i dataintegration](./media/FSProduct.png)](./media/FSProduct.png)
 

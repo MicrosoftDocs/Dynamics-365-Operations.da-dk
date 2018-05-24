@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 1863814d6dd645da8602495858d024fbad2e7149
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -95,4 +95,16 @@ Opgave: **Fakturalinjer**
 Sørg for, at standardværdien for feltet **Visningsværdi for hovedkonto** i Finance and Operations opdateres, så det svarer til den ønskede værdi.
 
 Standardskabelonværdien er **401100**.
+
+## <a name="template-mapping-in-data-integration"></a>Skabelontilknytning i dataintegration
+
+Følgende illustration viser skabelontilknytningen i Dataintegration.
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Aftalefakturaer (Field Service til Fin and Ops): Fakturaoverskrifter
+
+[![Skabelontilknytning i dataintegration](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Aftalefakturaer (Field Service til Fin and Ops): Fakturalinjer
+
+[![Skabelontilknytning i dataintegration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 

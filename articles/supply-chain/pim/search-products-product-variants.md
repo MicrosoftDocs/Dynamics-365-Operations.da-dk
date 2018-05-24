@@ -1,6 +1,6 @@
 ---
 title: "Søge efter produkter og produktvarianter under ordreindtastning"
-description: "Brug feltet <strong>Varenummer </strong>til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige."
+description: "Brug feltet **Varenummer** til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje. Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søge efter produkter og produktvarianter under ordreindtastning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Brug feltet <strong>Varenummer </strong>til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige.
+Brug feltet **Varenummer** til at søge efter produkter og produktvarianter, når du manuelt opretter en salgsordrelinje eller en indkøbsordrelinje.  Her kan du hurtigt finde produktvarianter, når du kun har konfigurationsstrengen eller en af produktdimensionerne tilgængelige.
 
 Nogle gange er for meget af noget ikke den bedste situation at være i, og det er især tilfældet, hvis du sælger en række produkter, der minder om hinanden, og du prøver at huske varenumre eller produktnavne for at finde det rigtige produkt til en salgsordre. Du kan bruge feltet **Varenummer** på en salgsordrelinje eller en indkøbsordrelinje som et søgefelt. Du kan indtaste en del af et produktnavn, et nummer eller en dimension og få et opslag, som indeholder alle de elementer, der svarer til søgeordet.
 
@@ -47,7 +47,7 @@ Når du søger efter produkter eller produktvarianter, er det vigtigt at forstå
 
 ### <a name="examples"></a>Eksempler
 
-Følgende eksempler bruger produkter og produktvarianter til at illustrere, hvordan søgning håndteres i forskellige scenarier. **Forudsætning:** Under **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgeparametre** &gt; **Søgetype** skal du vælge indstillingen **Fuldt match**.
+Følgende eksempler bruger produkter og produktvarianter til at illustrere, hvordan søgning håndteres i forskellige scenarier. **Forudsætning:** Under **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgeparametre &gt; Søgetype** skal du vælge indstillingen **Fuldt match**.
 
 | Produkttype     | Produktnavn    | Vis produktnummer | varenummer | Variantkonfiguration |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Eksempler på produkt- og produktvariant-id'er og -dimensioner, som du kan søge
 
 Gå til siden **Salg og marketing &gt; Opsætning &gt; Søg &gt; Søgekriterier**. På siden **Søgekriterier,** kan du definere kriterier for søgning efter kunde, kundeemne og produkt. Sørg for at filtrere siden ved hjælp af søgekriterier for produktet. Du kan gøre dette ved at skifte til **Produkt** i sidens menu.  
 
-Klik på <strong>Ny</strong> i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret <strong>Søgekriterier</strong>. Åbn <strong>Feltnavn</strong>-kolonneopslaget, og vælg <strong>DisplayProductNumber</strong>. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i gitteret <strong>Søgekriterier** og vælge **configId</strong> i kolonnen <strong>Feltnavn</strong>. På samme måde kan du oprette en post med <strong>Feltnavn</strong> <strong>InventColorId</strong> for farvedimensionen, <strong>InventSizeId</strong> for størrelsesdimensionen og <strong>InventStyleId</strong> for typedimensionen.
+Klik på **Ny** i sidens menu for at tilføje det viste produktnummer i søgekriterierne Dette vil tilføje en ny post i gitteret **Søgekriterier**. Åbn **Feltnavn**-kolonneopslaget, og vælg **DisplayProductNumber**. For at tilføje produktets konfiguration i søgekriterierne skal du oprette en ny post i **Søgekriterier**-gitteret og vælge **configId** i kolonnen **Feltnavn**. På samme måde kan du oprette en post med **Feltnavn** **InventColorId** for farvedimensionen, **InventSizeId** for størrelsesdimensionen og **InventStyleId** for typedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Trin 2: Udfyld den databasetabel, som bruges til at søge efter produkt
 

@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-agreements"></a>Salgsaftaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
 
@@ -38,7 +38,7 @@ En salgsaftales gyldighedsperiode defineres af felterne **Ikrafttrædelsesdato**
 
 Du kan oprette en salgsordre direkte ud fra en salgsaftale ved hjælp af handlingen **Frigiv ordre**. Du kan også vælge en gyldig salgsaftale, når du tager imod ordrer (se afsnittet den "Anvende salgsaftaler i bestillingsprocessen" i denne artikel).  
 
-**Bemærk!** I tidligere versioner blev salgsaftaler kaldt rammesalgsordrer.
+> [Bemærk!] I tidligere versioner blev salgsaftaler kaldt rammesalgsordrer.
 
 ## <a name="commitment-types"></a>Tilsagnstyper
 Hver linje i en salgsaftale udtrykker et tilsagn om at sælge noget. Generelt er der to kategorier af tilsagn:

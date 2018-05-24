@@ -1,0 +1,56 @@
+---
+title: "Tilbageføre ændringer på en planlægningstavle"
+description: "Dette emne beskriver, hvordan du tilbagefører ugemte ændringer, du foretager i en planlægningstavle."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 05/01/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: SMADispatchBoard
+audience: Application User
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 38995faf7c83af2f2807b700693392540ce5e735
+ms.contentlocale: da-dk
+ms.lasthandoff: 05/08/2018
+
+---
+
+
+# <a name="reverse-changes-in-a-dispatch-board"></a>Tilbageføre ændringer på en planlægningstavle 
+
+[!include [banner](../includes/banner.md)]
+
+
+Dette emne beskriver, hvordan du tilbagefører ugemte ændringer, du foretager i en planlægningstavle. Du tildeler for eksempel en arbejder til en serviceaktivitet, gemmer oplysningerne, og senere beslutter du at tildele en anden arbejder til serviceaktiviteten. Du ændrer arbejderen på planlægningstavlen og inden du gemmer ændringen, får du at vide, at arbejderen, der lige er tildelt, ikke er tilgængelig. Du kan tilbageføre de ugemte ændringer, så den oprindelige arbejder tildeles til serviceordren igen.
+
+Brug følgende trin til at tilbageføre ugemte ændringer i en planlægningstavle:
+
+1.  Klik på **Servicestyring** \> **Periodisk** \> **Planlægningstavle**.
+
+2.  I formularen **Planlægningstavle** skal du angive de relevante oplysninger i felterne og derefter klikke på **OK**. 
+
+3.  Hvis du vil tilbageføre den seneste ændring, der ikke er gemt, skal du klikke på **Fortryd**.
+
+4.  Hvis du vil tilbageføre en række ændringer, der ikke er gemt, skal du fortsætte med at klikke på **Fortryd**, indtil hver ændring, du vil annullere, er blevet tilbageført.
+
+## <a name="see-also"></a>Se også
+
+[Planlægningstavle](dispatch-board.md)
+
+[Serviceaktiviteter](service-activities.md)
+
+ 
+
+
+

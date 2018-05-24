@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Oversigt over standardomkostningskonvertering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel giver et overblik over processer, som kan hjælpe dig med at konfigurere og køre en standardomkostningskonvertering. Trinnene skal udføres, når du har udført forberedelserne til en standardomkostningskonvertering. 
 
@@ -96,7 +96,7 @@ Rapporten **Opgørelse af afvigelsesanalyse** kan du analysere revalueringen, og
 -   Analysér tilbagedaterede lagerbevægelser. Du kan bruge rapporten **Lagerværdi** til at få vist tilbagedaterede lagerbevægelser, der er indsat efter konverteringen. Fra dato og Til dato for rapporten skal svare til startdatoen for overførslen og konverteringsdatoen minus én dag. Udvælgelseskriterierne i rapporten skal afspejle de konverterede varer. I rapporten vises lagerbevægelser, der er sket til standardomkostningen i overførselsperioden.
 
 
-<a name="see-also"></a>Se også
+<a name="additional-resources"></a>Yderligere ressourcer
 --------
 
 [Forudsætninger for en standardomkostningskonvertering](prerequisites-standard-cost-conversion.md)

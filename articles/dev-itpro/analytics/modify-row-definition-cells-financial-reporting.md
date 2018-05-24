@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger. 
 
@@ -488,10 +488,10 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 1.  Åbn den række-, kolonne- og trædefinition, der skal redigeres, i Rapportdesigner.
 2.  Klik på **Administrer dimensionsværdisæt** i menuen **Rediger**.
 3.  I dialogboksen **Administrer dimensionsværdisæt** i feltet **Dimension** skal du vælge en dimensionstype.
-4.  Markér det sæt, der skal slettes, og klik derefter på **Slet**. Klik på **Ja** for at slette dimensionsværdisættet permanent.
+4.  Vælg den gruppe, der skal slettes, og klik derefter på **Slet**. Klik på **Ja** for at slette dimensionsværdigruppen permanent.
 
 
-## <a name="see-also"></a>Se også
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
 

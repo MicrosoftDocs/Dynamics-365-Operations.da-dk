@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations kan forretningsbruger designe oplevelser til mobilenheder. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
 
@@ -175,9 +175,9 @@ Når du vil designe siden med fakturadetaljer til mobilenheder, skal du bruge si
 1. I URL-adressen til Finance and Operations skal du erstatte navnet på menupunktet med **VendMobileInvoiceHeaderDetails** for at åbne formen
 2. Åbn designeren til mobilenheder fra knappen **Indstillinger** (tandhjulsymbolet).
 3. Klik på knappen **Rediger** for at starte redigeringstilstand i arbejdsområdet.
-4. Vælg siden <strong>Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger</strong>.
+4. Vælg siden **Mine kreditorfakturaer**, som du oprettede tidligere, og klik derefter på **Rediger**.
 5. Under fanen **Felter** skal du klikke på kolonneoverskriften **Gitter**.
-6. Klik på **Egenskaber** &gt; **Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
+6. Klik på **Egenskaber &gt; Tilføj side**. **Bemærk:** Når du klikker på overskriften **Gitter** og tilføjer en side, oprettes relationen med detaljesiden automatisk.
 7. Angiv en sidetitel, f.eks. **Fakturadetaljer** og en beskrivelse som **Vis fakturahoved og linjedetaljer**.
 8. Klik på **Vælg felter**. Bemærk, at den rækkefølge, som du tilføjer i, er den rækkefølge, som felterne bliver vist i for slutbrugeren. Den eneste måde at ændre rækkefølgen af felterne er ved igen at vælge alle felter. 
 9. Baseret på kravene til dette scenario skal du tilføje følgende felter fra hovedet:

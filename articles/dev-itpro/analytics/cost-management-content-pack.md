@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -38,8 +38,7 @@ Microsoft Power BI-indholdet for **Omkostningsstyring** er beregnet til lagerbog
 > [!Note]
 > Power BI-indholdet for **Omkostningsstyring**, som er beskrevet i dette emne, gælder for Dynamics 365 for Finance and Operations 8.0.
 > 
-> Power BI-indholdspakken for **Omkostningsstyring**, som er publiceret til webstedet PowerBI.com, frarådes. Du kan finde flere oplysninger om denne afskrivning i [Power BI-indholdspakkerne, der er publiceret til PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
-
+> Power BI-indholdspakken for **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, bliver udfaset. Du kan finde flere oplysninger om denne afskrivning i [Power BI-indholdspakkerne, der er tilgængelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette Power BI-indhold giver et kategoriseret format, som gør det lettere at overvåge performance for lagerbeholdninger og visualisere, hvordan omkostninger "flyder" gennem dem. Du kan få ledelsesmæssig indsigt, f.eks. omsætningshastigheden, antallet af dage, hvor varen er på lager, nøjagtighed og "ABC-klassifikation" på dit foretrukne samlede niveau (firma, vare, varegruppe eller sted). De oplysninger, der er gjort tilgængelige, kan også bruges som et detaljeret supplement til regnskabet.
 

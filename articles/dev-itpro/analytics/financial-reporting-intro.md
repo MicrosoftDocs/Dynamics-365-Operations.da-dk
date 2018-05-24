@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4b70f1aee6b0b55a41dbfd33fcd1216579bb78c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54a3409e7bd0f1c704cf9f7dd1d860100ec83d7f
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-reporting-for-finance-and-operations"></a>Økonomirapportering til Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med Økonomirapportering til Finance and Operations kan økonomiske og forretningsmæssige medarbejdere oprette, vedligeholde, installere og se regnskaber. Funktionen går ud over traditionelle rapporteringsbegrænsninger og kan hjælpe dig med effektivt at designe forskellige typer rapporter.
 
@@ -97,8 +97,8 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 </tbody>
 </table>
 
-## <a name="see-also"></a>Se også
-[Generere en økonomisk rapport](generate-financial-report.md)
+## <a name="additional-resources"></a>Yderligere ressourcer
+[Generere en økonomirapport](generate-financial-report.md)
 
 
 

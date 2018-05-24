@@ -3,7 +3,7 @@ title: Callcenter-funktionalitet
 description: Dette emne indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Callcenter-funktionalitet
+# <a name="call-center"></a>Callcenter 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Denne artikel indeholder en oversigt over call center-salgsfunktioner i Microsoft Dynamics 365 for Retail.
+I Dynamics 365 for Retail er et callcenter en type detailkanal, som kan defineres i programmet. Når du definerer en bestemt kanal for dine callcenterenheder, kan systemet binde bestemte datastandarder og ordrebehandlingsstandarder til salgsordrer, der er oprettet af en bruger af callcenterkanalen.
 
-Dynamics 365 for Retail understøtter også callcentre som en slags detailkanal. I et callcenter tager arbejdere ordrer fra kunder over telefonen og opretter salgsordrer. Callcenterfunktioner omfatter funktioner, der er beregnet til at gøre det nemmere at tage telefonordre og håndtere kundeservice i hele ordreopfyldelsesprocesen. Eksempelvis kan call center-medarbejdere angive oplysninger om debitorbetalinger direkte til salgsordren og kan se en detaljeret oversigt over gebyrer og betalinger, før de kan sende ordren. Arbejdere har også mulighed for at styre prisen og få adgang til forskellige data om debitorer, produkter og priser fra siden **Salgsordre**. Desuden har callcentre har forbedret funktionalitet til sporing af debitorers historik og ordrestatus. Hvert callcenter kan have sine egne brugere, betalingsmetoder, prisgrupper, økonomiske dimensioner og leveringsmåder. Du kan konfigurere disse indstillinger, når du opretter callcenteret. Du kan også bruge siden **Callcenter** til at aktivere eller deaktivere følgende grupper af funktioner, der er unikke for callcentre:
+Callcenterfunktioner omfatter avancerede salgspriser og kampagner, kataloger, gavekort, loyalitetsprogrammer og kuponer. Callcenterordrer bruges også af POS-programmet til at understøtte ordreopfyldningsscenarier på tværs af kanaler.
 
--   **Ordrefuldførelse** – Denne gruppe omfatter funktioner, der er knyttet til betalinger og færdiggørelse på siden **Salgsordre**.
--   **Dirigeret salg** – Denne gruppe indeholder funktioner, der er relateret til kildekoder, scripts og kataloganmodninger.
+Det er vigtigt at bemærke, at mens callcentermodulet kan anvendes af andre brancher end detailhandlen, er den aktuelle version af Dynamics 365 for Retail-callcenterprogrammet ikke optimeret til brug i B2B-ordrebehandlingsscenarier eller scenarier, hvor ordrer har en stor mængde salgslinjer. Det anbefales, at brugere, som vil udnytte callcenterfunktionerne til anden ordrebehandling end behandling af almindelige transaktioner direkte til forbrugeren, tager sig tid til at teste og validere, at aktivering af callcenterfunktionaliteten opfylder deres krav til funktion og ydeevne.
 
-Når du aktiverer disse funktioner i indstillingerne for callcenteret, er de tilgængelige på siden **Salgsordre** for brugere, der er knyttet til callcenteret. De fleste af disse funktioner kræver yderligere opsætning, før de kan bruges. Før brugere kan oprette callcenter-ordrer, skal du føje brugere til callcentret som callcenter-brugere. Dette trin aktiverer kanalspecifikke konfiguration og funktionalitet for callcenter. Her er nogle eksempler på funktioner, der bliver tilgængelige:
+Ud over at understøtte ordreoprettelsen indeholder callcentermodulet også et brugervenligt kundeserviceprogram, der gør det lettere for brugerne at finde debitorkonti og gennemse alle de relaterede kundeordredata og -attributter. Kundeserviceskærmbilledet er udviklet til at give brugerne hurtig adgang til ordrerelaterede data, som gør det muligt for dem at besvare de mest almindelige ordrerelaterede spørgsmål, der modtages fra debitorer.
 
--   Vejledt salg indeholder konfigurationsindstillinger for telefonsalgsscripts og produktbilleder for at hjælpe og vejlede salgsassistenter, når de tager ordrer.
--   Ordrer kan ikke fuldføres, før salgsassistenten har hentet mindst én betalingsmetode.
--   Regler for mersalg og krydssalg kan konfigureres til at bede salgsassistenten om at reklamere for specifikke produkter til debitoren.
--   Salgsassistenten kan hente koden til det katalog, som en debitor bestiller fra.
--   Salgsassistenten kan føje en detailhandlers kuponer til ordren.
--   Salgsassistenten kan sælge kontinuitetsprogrammer.
--   Ordrer kan sættes på hold manuelt eller automatisk for at angive, at yderligere undersøgelse er påkrævet, før ordren kan behandles.
+Denne side indeholder links til relevant dokumentation, der er relateret til installation, konfiguration og den funktionelle brug af funktionerne i callcenteret i Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Konfigurere callcenteret
+[Konfigurere indstillinger for ordrebehandling](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
+[Oprette advarsler om svindel](set-up-fraud-alerts.md)
+[Manuel ordrehold](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
+[Betalingsmetoder i et callcenter](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurere direkte marketing
+[Callcenter-kataloger](call-center-catalogs.md)
+
+[Konfigurere RFM-analyse](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
+[Oprette et kontinuitetsprogram for et callcenter](set-up-continuity-program.md)
 
 
