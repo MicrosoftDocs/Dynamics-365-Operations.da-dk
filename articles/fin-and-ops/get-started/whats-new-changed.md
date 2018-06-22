@@ -3,7 +3,7 @@ title: "Nyheder eller ændringer"
 description: "Denne side henviser til emner, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 03/25/2018
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f49c5157294f615b134c9ea0f00b93f70d59f527
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: 8a6ea271270fd854110a8548ab92cc4ef975ad0a
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
@@ -128,13 +128,13 @@ Hvis du vil vide, hvordan du opgraderer til den nyeste version, skal du se [Proc
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Platformsopdatering 15</td>
-<td>7.0.4839</td>
-<td>Platformsopdatering 15 er målrettet, hvilket betyder, at den bliver tilgængelig for alle brugere juni 2018.</td>
+<td>7.0.4841</td>
+<td>2018. marts</td>
 <td><a href="whats-new-platform-update-15.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise edition, platformsopdatering 15 (marts 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition</td>
 <td>Platformsopdatering 12</td>
-<td>7.0.4841</td>
+<td>7.0.4709</td>
 <td>November 2017</td>
 <td><a href="whats-new-platform-update-12.md">Nyheder eller ændringer i Dynamics 365 for Finance and Operations, Enterprise Edition, platformsopdatering 12 (november 2017)</a></td>
 <tbody><tr class="odd">

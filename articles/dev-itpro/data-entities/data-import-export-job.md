@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
@@ -96,6 +96,9 @@ Menuen **Fornyet rækkefølge** er tilgængelig, når flere enheder er markeret.
 
 #### <a name="sorting"></a>Sortering
 Du kan bruge indstillingen **Sorter efter** til at få enhedslisten i indstilling for at få vist listen i rækkefølge.
+
+### <a name="truncating"></a>Afkortning
+Ved importprojekter kan du vælge at afkorte poster i enhederne før importen. Dette er nyttigt, hvis posterne skal importeres til et tomt sæt tabeller. Denne indstilling er som standard slået fra.
 
 ## <a name="validate-that-the-source-data-and-target-data-are-mapped-correctly"></a>Kontroller, at kildedataene og måldataene tilknyttes korrekt
 Tilknytningen er en funktion, der gælder for både import- og eksportjob.

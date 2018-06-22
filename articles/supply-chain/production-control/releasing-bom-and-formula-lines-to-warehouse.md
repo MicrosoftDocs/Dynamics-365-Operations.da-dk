@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Hvilken metode der bruges til at frigive stykliste- og formellinjer styres af pa
 - **Frigiv stykliste- og formellinjer som en del af frigivelsen af produktions- eller batchordren** – Med denne metode frigives stykliste- og formellinjer for en produktions- eller batchordre som en del af processen med at frigive ordren. Normalt under frigivelsen af en produktions- eller batchordre frigives produktionsjob til arbejderne i produktionsanlægget, og der udskrives produktionspapirer. Under denne proces ændres status for ordren også til **Frigivet**.
 - **Frigiv stykliste- og formellinjer via et batchjob eller som en manuel indgriben** – Med denne metode kan stykliste- og formellinjer kun frigives via batchjobbet **Automatisk frigivelse af stykliste- og formellinjer** eller via manuel indgriben. Hvis du vil frigive stykliste- og formellinjer manuelt, skal du vælge **Frigiv til lagersted** i handlingsruden Produktionsordre på listesiden eller detaljesiden for produktionsordren.
 
-Du kan se en hurtig demonstration af, hvordan du frigiver stykliste- og formellinjer til produktion ved hjælp af et batchjob, i denne korte YouTube-video:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Du kan se en hurtig demonstration af, hvordan du frigiver stykliste- og formellinjer til produktion ved hjælp af et batchjob, i denne korte YouTube-video: [Frigive produktionspluk til lagerstedet i batch](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Frigive stykliste- og formellinjer ved hjælp af et batchjob
 
@@ -85,8 +84,7 @@ I følgende illustration vises en produktionsordre, der har to operationer, 10 o
 
 ![Eksempel på frigivelse af materiale pr. operationsnummer](media/two-operations.PNG)
 
-Du kan se en hurtig demonstration af, hvordan du kan frigive materiale i forhold til mængden af færdigvarer, i denne korte YouTube-video:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+For en hurtig demonstration af, hvordan du frigiver materiale i forhold til mængden af færdige varer, kan du se denne korte YouTube-video: [Forbedringer af frigivelsesprocessen for produktionsordrer i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frigive materiale i forhold til antallet af færdigvarer
 

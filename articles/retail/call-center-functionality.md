@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
+ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
+ms.openlocfilehash: e76b29cf6312959ee84c251d582310ce4822945f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -45,11 +45,15 @@ Denne side indeholder links til relevant dokumentation, der er relateret til ins
 [Konfigurere indstillinger for ordrebehandling](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
-[Oprette advarsler om svindel](set-up-fraud-alerts.md)
-[Manuel ordrehold](work-with-order-holds.md)
+[Konfigurere advarsler om svindel](set-up-fraud-alerts.md)
+
+[Manuelle ordrer på hold](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
 [Betalingsmetoder i et callcenter](work-with-payments.md)
+
+## <a name="configure-delivery-modes"></a>Konfigurere leveringsmetoder
+[Konfigurere callcenterets leveringsmåder og -gebyrer](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurere direkte marketing
 [Callcenter-kataloger](call-center-catalogs.md)

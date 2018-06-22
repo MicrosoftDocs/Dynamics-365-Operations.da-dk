@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
-ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -94,10 +94,7 @@ Du kan hente en zip-fil til datapakken. Denne fil indeholder alle data i det val
 
 Loggen **Vis udførelseslog** indeholder detaljerede oplysninger om hver dataenhed, der importeres. Du kan bruge den midlertidige datavisning til hurtigt at komme til måldataene. På denne måde kan du se, hvordan de importerede data ser ud på de relaterede sider i programmet. Når du bruger standarddataskabelonerne, fungerer importrækkefølgen for hver dataenhed på den foruddefinerede måde for at sikre, at alle afhængige data importeres først. Hvis brugerdefinerede dataenheder er del af projektet, skal du sikre dig, at den korrekte rækkefølge er defineret. Du kan finde flere oplysninger i [Konfigurere dataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Hvis du vil vide mere om, hvordan du kan bruge lagerstedsskabelon til at kopiere konfigurationen af et lagersted fra ét firma til et nyt firma i den samme forekomst, kan du se denne 3 minutters video på YouTube.
-
-> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
-
+Du kan få flere oplysninger om, hvordan du kan bruge lagerstedsskabelon til at kopiere konfigurationen af et lagersted fra ét firma til et nyt i den samme forekomst, i denne 3 minutters video på YouTube: [Bruge lagerstedsskabelon til at kopiere konfiguration i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relateret emne
 
