@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe8dd3136f14e182e261a4dce57eef0b1946d304
+ms.sourcegitcommit: d709a7f0e087178c0961c268a78a9206ea656bbc
+ms.openlocfilehash: ca32e74b8b9f35dd9a1a48f942766bce98c5ea4b
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -41,8 +41,8 @@ Når du opretter en betalingsmetode, kan du tildele fem funktioner for betalings
 
 | Funktion            | Betegnelse |
 |---------------------|-------------|
-| Almindelig              | Brug funktionen **Normal** for betalingsmetoden, når du definerer betalingsmetoder som f.eks. kontantbetaling eller med bilag. Når disse typer af betalinger anvendes til en salgsordre i callcenteret, bogføres de straks som forudbetalinger på debitorkontoen. Forudbetalingsbilaget bogføres i debitorens transaktionshistorik, hvor det systematisk udlignes mod fakturaen for salgsordren, når der oprettes fakturaer. |
-| Check               | Brug funktionen **Check**, når du definerer en bankcheck som en del af betalingen. Når denne type betaling anvendes til en salgsordre, skal brugeren angive debitorens checknummer som en del af programmets betalingsbehandling. Checkbetalinger behandles altid som forudbetalinger, når de anvendes. Som i betalingsfunktionen **Normal**, udlignes disse forudbetalingsbilag systematisk mod de fakturaer, der er oprettet for ordren. |
+| Almindelig              | Brug funktionen **Normal** for betalingsmetoden, når du definerer betalingsmetoder som f.eks. kontantbetaling eller med bilag. Når disse typer af betalinger anvendes til en salgsordre i callcenteret, anvendes standardværdien **Ja** til flaget **Forudbetaling**.  Herved bogføres med det samme et forudbetalingsbilag på debitors konto, når denne ordre sendes. Brugerne kan ændre flaget **Forudbetaling** til **Nej**, så betalingsbilaget ikke oprettes før fakturabogføring.  Forudbetalingsbilaget bogføres i debitorens transaktionshistorik, hvor det systematisk udlignes mod fakturaen for salgsordren. |
+| Check               | Brug funktionen **Check**, når du definerer en bankcheck som en del af betalingen. Når denne type betaling anvendes til en salgsordre, skal brugeren angive debitorens checknummer som en del af programmets betalingsbehandling. Betalinger med check behandles altid som forudbetalinger, når de udlignes, og betalingsbilag oprettes med det samme ved afsendelse af ordren. Disse forudbetalingsbilag udlignes systematisk mod de fakturaer, der er oprettet for ordren. |
 | Kort               | Kortbetalingstyper repræsenterer alle betalinger, der kræver indtastning af et kortnummer, der er defineret på debitorens betalingskort. Eksempler omfatter kreditkort og gavekort. Når du konfigurerer disse betalingstyper, skal du bruge menuen **Opsætning af kort** til at definere de kort-id'er, der er tilknyttet denne betalingsmetode. På tidspunktet for ordreindtastning kan brugere angive, om kortbetalingen skal forudbetales, ved hjælp af indstillingen **Forudbetal**, som vises på siden for betalingsindtastning. Medmindre virksomheden kræver forudbetalinger, består den typiske proces for en ægte kreditkortbetaling af to trin, hvor godkendelsen indhentes på tidspunktet for ordreindtastningen, og betalingen udlignes derefter og indhentes fra kundens kort på faktureringstidspunktet. Gavekortbetalinger anbefales forudbetaling, fordi gavekortets saldo skal reduceres med det samme, så kunden ikke kan anvende den samme værdi et andet sted. |
 | Kunde            | Funktionen **Debitor** for en betalingsmetode indebærer, at betalingen udlignes mod kundens kreditmaksimum eller sættes "på konto". I Retail kan en debitor få tildelt et kreditmaksimum, som kan være godkendt på tidspunktet for ordreindtastning. Betalinger, der foretages ved hjælp af en betalingsmåde, der er knyttet til funktionen **Debitor**, opretter et passiv på debitorens konto. Når salgsordren er faktureret, vises derefter en forfalden saldo. I disse situationer kan debitorer typisk sende en betaling i henhold til de oplyste betingelser. Du kan også anvende et kreditbilag på debitorens konto, som tidligere har været åbnet, til udligning af den forfaldne saldo. Bemærk, at selvom du definerer denne betalingsmetode, vises den ikke blandt valgmulighederne for betaling i callcenterets ordreindtastning, medmindre flaget **Tillad aconto** er angivet i debitorposten for den debitor, du arbejder med. Dette flag findes på fanen **Betalingsstandarder** i debitorposten. |
 | Betalingsmiddel fjern/variabel | Funktionen **Betalingsmiddel fjern/variabel** bruges ikke af callcenteret. Det er kun relevant, når du definerer de betalingsmetoder, som salgsstedet (POS) bruger i en butikskanal. |

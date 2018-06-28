@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -117,12 +117,9 @@ Når du klikker på menuen **Økonomirapportering**, vises listen over økonomis
 ## <a name="creating-and-modifying-financial-reports"></a>Oprettelse og redigering af økonomiske rapporter
 Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at klikke på **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du har brugt i Finance and Operations. Du kan finde flere oplysninger om processen til oprettelse og redigering af økonomirapporter i Finance and Operations i disse [blogindlæg](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) fra bloggen Dynamics Financial Reporting. **Bemærk!** Den computer, du henter rapportdesignerklienten ned på, skal have version 4.6.2 af Microsoft.NET Framework installeret. Denne version af Microsoft .NET Framework kan hentes og installeres [her](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan også redigere en rapport, der vises på listen over økonomiske rapporter. Når området omkring rapportnavnet er markeret, skal du klikke på **Rediger** i handlingsruden. Rapportdesignerprogrammet starter.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
-
-[Se økonomiske rapporter](view-financial-reports.md)
-
-[Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>Yderligere ressourcer
+- [Se økonomiske rapporter](view-financial-reports.md)
+- [Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

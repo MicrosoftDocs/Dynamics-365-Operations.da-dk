@@ -1,6 +1,6 @@
 ---
 title: Intrastat
-description: "Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger."
+description: "Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger."
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
+Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 
 Intrastat er det system, der bruges til indsamling af oplysninger og generering af statistik over varehandel blandt lande/regioner i EU. Intrastat-rapportering er påkrævet, når et produkt krydser grænsen til et andet EU-land. I nogle lande/regioner gælder Intrastat-rapportering også for tjenester. Obligatoriske og fakultative elementer kan indsamles i Intrastat-rapportering. Følgende elementer er obligatoriske: momsnr. på den part, der er ansvarlig for at levere oplysninger, referenceperioden, strømmen (modtagelse eller forsendelse), den ottecifrede varekode, partnerens medlemsstat (afsendelsesmedlemsstaten på modtagelser) og bestemmelsesmedlemsstaten for forsendelser, varernes værdi, mængden af varer (nettomasse og supplerende enheder) og transaktionens art. Lande/regioner kan også indsamle valgfrie elementer i forskellige situationer. Nogle valgfrie elementer er land/region, leveringsbetingelserne, transportmåden, en mere detaljeret varekode end CN8, oprindelsesområdet for forsendelser og destinationsområdet for modtagelser, den statistiske procedure, den statistiske værdi, en beskrivelse af varerne og havn/lufthavn for lastning/losning.
 
@@ -223,6 +223,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </ul></li>
 <li><strong>Elektronisk rapportering</strong> – Angiv referencer til elektronisk rapportering af konfigurationer, så du kan generere en elektronisk fil og rapport.</li>
 <li><strong>Varekodehierarki</strong> – Angiv kategorihierarkiet af typen <strong>Varekode</strong>, der repræsenterer Intrastat-varekoder CN8.</li>
+  <li> <strong>Valutakurstype</strong> – Du kan også angive en valutakurs, der skal bruges til at rapportere Intrastat-salgs- og købstransaktioner i fremmed valuta. Dette bruges, hvis valutakursen er anderledes end den, der blev anvendt, da posten blev bogført.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -239,9 +240,5 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 

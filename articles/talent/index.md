@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Du kan udføre disse opgaver vha. Talent:
 + Gennemgå performance og implementere arbejdermål.
 + Oprette, afholde og analysere undervisningskurser, herunder agendaer, sessioner og spor.
 
+Udforske Dynamics 365 for Talent ved at se videoen [Sådan kommer du i gang med Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent er tæt forbundet med Personale i Dynamics 365 for Finance and Operations. Den samme funktionalitet kan forekomme i begge produkter. Derfor er produktnavnet i emner, der primært vedrører Personale, Dynamics 365 for Finance and Operations. I de emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
@@ -55,6 +58,8 @@ Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organi
 -   [Angive personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
 -   [Ofte stillede spørgsmål om personalehandlinger](personnel-actions-faq.md)
 -   [Oversigt over orlov og fravær](leave-absence-overview.md)
+-   [Sådan bruger du Dynamics 365 for Talent: Orlov og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Sådan administrerer du personale i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Bemanding af din organisation
 
@@ -71,6 +76,7 @@ Du kan oprette planer for effektivt og retfærdigt at administrere kompensation 
 -   [Proceskompensation](process-compensation.md)
 -   [Oprette faste kompensationsordninger](create-fixed-compensation-plans.md)
 -   [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
+-   [Sådan administrerer du kompensation i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Udvikle og undervise medarbejdere
 
@@ -79,14 +85,16 @@ For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde v
 -   [Performancestyring](performance-management-overview.md)
 -   [Justere arbejdsstyrkens færdigheder og forretningsbehov](skills.md)
 -   [Administrere uddannelse gennem kurser](courses.md)
+-   [Sådan administrerer du medarbejderudvikling i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Oprette og vedligeholde frynsegoder
 
 Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvikle frynsegodeprogrammer som f.eks. sygesikring og pensionsordninger. Du kan også administrere frynsegoder som f.eks. låneprogrammer, hvor virksomheden udlåner udstyr som f.eks. computere eller telefoner til sine medarbejdere.
 
 -   [Administrere et frynsegodeprogram](manage-benefit-program.md)
--   [Politikker for frynsegodeberettigelse](benefit-eligibility-policies.md)
+-   [Politikker for berettigelse til frynsegoder](benefit-eligibility-policies.md)
 -   [Administrere udstyr, der er udlånt til arbejdere](loan-items.md)
+-   [Sådan administrerer du frynsegoder til medarbejdere i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 

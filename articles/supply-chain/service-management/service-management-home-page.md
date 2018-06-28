@@ -1,28 +1,28 @@
 ---
 title: Servicestyring
 description: "Du kan bruge Servicestyring til at udarbejde serviceaftaler og serviceabonnementer, håndtere serviceordrer og kundeforespørgsler samt administrere og analysere leveringen af tjenester til kunder."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: 236ab21b2d1c5a4e82270e5381d163e97437cb7f
+ms.sourcegitcommit: 80a3cb74279f72e8cb94f3a2c38230f409067a47
+ms.openlocfilehash: 89035687d87c674cca7fa5fd3126100c4c0ad892
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -44,7 +44,7 @@ Du kan oprette serviceordrer til administrering af oplysninger om planlagte og i
 
 4.  Eventuelle udgifter og gebyrer, der er relateret til servicen eller reparationen
 
-Kunder kan sende serviceanmodninger via internettet ved hjælp af Enterprise Portal. Du kan modtage, behandle og ekspedere disse anmodninger. Når du har oprettet en serviceordre, kan du bruge servicestadier til at overvåge status og angive regler, der bestemmer, hvilke handlinger der er aktiveret i hvert af stadierne. Når en serviceordre er færdig, kan du afslutte ordren for at bekræfte, at den er færdig, og derefter bogføre ordren for at starte fakturaprocessen.
+Du kan modtage, behandle og ekspedere serviceanmodninger. Når du har oprettet en serviceordre, kan du bruge servicestadier til at overvåge status og angive regler, der bestemmer, hvilke handlinger der er aktiveret i hvert af stadierne. Når en serviceordre er færdig, kan du afslutte ordren for at bekræfte, at den er færdig, og derefter bogføre ordren for at starte fakturaprocessen.
 
 Brug rapporteringsværktøjerne til at overvåge serviceordremargener og abonnementstransaktioner samt udskrive arbejdsbeskrivelser og arbejdskvitteringer.
 
@@ -56,47 +56,19 @@ I følgende diagram illustreres forretningsprocesserne på højt niveau for **Se
 
 ## <a name="service-management-at-a-glance"></a>Hurtigt overblik over servicestyring
 
-<table>
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Vigtige opgaver</p></th>
-<th><p>Primære forms</p></th>
-<th><p>Populære rapporter</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Opfyld serviceaftaler</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Serviceaftaler (form)</a></p></td>
-<td><p><strong>Serviceordremargen</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>Håndter kundeforespørgsler</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Serviceordrer (form)</a></p></td>
-<td><p><strong>Arbejdsbeskrivelse</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/hh242789(v=ax.60)">Planlægningstavle (form)</a></p></td>
-<td><p><strong>Postering - Abonnement</strong></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p></p></td>
-<td><p><strong>Abonnementsgebyrtransaktioner</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Vigtige opgaver           | Primære sider                         |Populære rapporter              |
+|--------------------------|---------------------------------------|-----------------------------|
+|Opfyld serviceaftaler|Serviceaftaler                     |Serviceordremargen         |
+|Håndter kundeforespørgsler |Serviceordrer                         |Arbejdsbeskrivelse             |
+|                          |Planlægningstavle                         |Postering - Abonnement   |
+|                          |                                       |Abonnementsgebyrtransaktioner|
 
 
 ## <a name="integration-of-service-management"></a>Integration af servicestyring
 
-Servicestyring kan integreres med følgende moduler i Microsoft Dynamics 365 for Finance and Operations:
+Servicestyring kan integreres med følgende moduler:
 
   - [Salg og marketing](../sales-marketing/overview-sales-marketing.md)
-
   - [Personale](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   

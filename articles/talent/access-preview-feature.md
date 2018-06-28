@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Du kan bruge indstillingen **Prøveversioner** i Microsoft Dynamics 365 for Tale
     > Job, der er slået op, kan kun ses af kunder, der abonnerer på en eller flere LinkedIn-joboversigtsprodukter. Ellers kan kunderne kun se et job, hvis de eksplicit søger efter det. Der er en forsinkelse, når job slås op på LinkedIn. Det kan tage et par timer, før et job vises, når det er opslået fra Attract.
 
 - **Kandidatansøgning** – Både interne og eksterne kandidater kan nu ansøge direkte fra jobsiden på karrierewebstedet.
-- **Vurderinger** – Som en del af den konfigurerbare ansættelsesproces, enten til et bestemt et job, eller når der bruges en jobskabelon, har brugerne nu adgang til en ny **Vurdering**-aktivitetstype. De kan derefter bruge Project "Gauge"-app i Talent til at oprette grundlæggende vurderinger, som de kan sende til ansøgere. Project: "Gauge" findes også i den offentlige visning. Der bliver tilføjet flere udbydere i fremtiden.
-- **Project: "Gauge"** – Project: "Gauge" er en app i Talent, som brugerne kan bruge til at oprette simple vurderinger eller undersøgelser.
 - **Offer Management** – Brugerne kan nu oprette tilbudsbreve fra skabeloner, der indeholder pladsholdere. Efterhånden som kandidaterne avancerer til jobtilbudsstadiet, kan rekrutteringsmedarbejder eller ansættelseschefer bruge tilbudsværktøjet til at forberede en ansøgers formelle tilbud via skabeloner, sende tilbuddet til intern godkendelse og endelig sende tilbuddet til kandidaten til underskrivning. Der vil blive tilføjet mange nye funktioner til tilbudsværktøjet med tiden, og eksempelversionen vil blive opdateret med disse funktioner, når vi er klar til at frigive dem som eksempelfunktioner.
 
 ### <a name="core-hr"></a>Grundlæggende personalefunktioner
@@ -90,7 +88,7 @@ Uanset om din feedback er positiv eller negativ, vil vi gerne høre fra dig om d
     - [Attract-ideer](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Grundlæggende personalefunktioner](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din feedback eller indsendelser af produktanmeldelser. Oplysninger, der indsamles, kan blive analyseret yderligere, og de bruges ikke til at besvare spørgsmål i henhold til gældende love om beskyttelse af personlige oplysninger. Personlige data, der indsamles særskilt i henhold til disse programmer, er underlagt [Microsofts erklæring om beskyttelse af personlige oplysninger](https://privacy.microsoft.com/en-us/privacystatement).
+Medtag ikke personlige oplysninger (oplysninger, der kan identificere dig) i din feedback eller indsendelser af produktanmeldelser. Oplysninger, der indsamles, kan blive analyseret yderligere, og de bruges ikke til at besvare spørgsmål i henhold til gældende love om beskyttelse af personlige oplysninger. Personlige data, der indsamles særskilt i henhold til disse programmer, er underlagt [Microsofts erklæring om beskyttelse af personlige oplysninger](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Sæt et bogmærke ved dette emne, og kom tilbage ofte for at holde dig opdateret om nye eksempelfunktioner, efterhånden som vi frigiver dem.

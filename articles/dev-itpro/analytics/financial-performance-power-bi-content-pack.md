@@ -1,6 +1,6 @@
 ---
-title: Driftsregnskab i Power BI-indhold
-description: I dette emne beskrives Power BI-indhold til Driftsregnskab.
+title: "PowerBI.com-løsning til driftsregnskab"
+description: "I dette emne beskrives PowerBI.com-løsning til Driftsregnskab."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Driftsregnskab i Power BI-indhold
+# <a name="financial-performance-powerbicom-solution"></a>PowerBI.com-løsning til driftsregnskab
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Denne indholdspakke er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er tilgængelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Denne PowerBI.com-løsning er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er tilgængelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-I dette emne beskrives Microsoft Power BI-indholdet til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+I dette emne beskrives PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
 
 ## <a name="main-account-setup"></a>Konfiguration af hovedkonto
 Da organisationer ønsker, at passiver og omsætningsbeløb skal vises som positive beløb i rapporter, er konfigurationen af hovedkonti vigtig. For at disse hovedkonti skal kunne vises som positive beløb, skal hovedkontotypen indstilles til **Passiv** eller **Indtægter**. Når disse kontotyper bruges, bruger rapportering via Power BI omvendt fortegn og viser beløbene som positive beløb.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Dashboard og rapporter, der er inkluderet i Power BI-indholdet
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Dashboard og rapporter, der er inkluderet i PowerBI.com-løsningen
 Dashboardet indeholder opsummerende datafelter, der er baseret på underliggende rapporter. Hvert felt indeholder opsummerende oplysninger for det indeværende år på tværs af alle virksomheder i en organisation. Her er nogle af felterne:
 
 - Indløsning
@@ -74,7 +74,7 @@ Hvert felt er understøttet af en supplerende rapport. Disse rapporter indeholde
 Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Hvis du vil finde flere oplysninger om filtrering og fastgørelse i Power BI, skal du se [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Følgende enheder blev brugt som grundlag for Power BI-indholdet til **Driftsregnskab**:
+Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Driftsregnskab**:
 
 **Aggregér dataenheder**
 

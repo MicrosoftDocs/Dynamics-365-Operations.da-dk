@@ -3,7 +3,7 @@ title: Integrere PowerApps
 description: "Dette emne beskriver, hvordan du kan integrere PowerApps i Finance and Operations-klienten for at øge produktets funktioner."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -26,8 +26,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="embed-powerapps"></a>Integrere PowerApps
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 I platformsopdatering 14 understøtter Microsoft Dynamics 365 for Finance and Operations integration med Microsoft PowerApps, en tjeneste til udviklere og ikke-tekniske brugere til opbygning af brugerdefinerede forretningsapps til mobilenheder, tablets og internettet uden at skrive kode. PowerApps, der er udviklet af dig, din organisation eller det bredere økosystem, kan derefter integreres i Finance and Operations-klienten for at øge produktets funktioner. Du kan f.eks. opbygge en PowerApp, der supplerer Finance and Operations med oplysninger, der er hentet fra et andet system. 
 

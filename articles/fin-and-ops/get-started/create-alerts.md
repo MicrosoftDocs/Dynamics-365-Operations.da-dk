@@ -3,7 +3,7 @@ title: "Oprette påmindelser"
 description: "Dette emne indeholder oplysninger om påmindelser og forklarer, hvordan du opretter en påmindelsesregel, så du får besked om hændelser, f.eks. en dato, der nærmer sig, eller en bestemt ændring, der opstår."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 03/23/2018
 # <a name="create-alerts"></a>Oprette påmindelser
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a>Kom godt i gang
 Før du opretter en påmindelsesregel, skal du beslutte, hvornår og i hvilke situationer du vil modtage påmindelser. Når du ved, hvilke hændelser du vil have besked om, skal du i Microsoft Dynamics 365 for Finance and Operations finde den side, hvor de data vises, der udløser den pågældende hændelse. Hændelsen kan være en dato, der bliver nået, eller en bestemt ændring, der opstår. Derfor skal du finde den side, hvor datoen er angivet, eller hvor det felt, der ændres, eller posten, der oprettes, bliver vist. Når du har disse oplysninger, kan du oprette påmindelsesreglen.
