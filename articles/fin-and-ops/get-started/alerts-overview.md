@@ -3,7 +3,7 @@ title: "Oversigt over påmindelser"
 description: "Dette emne indeholder generelle oplysninger om batchbehandling af påmindelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="alerts-overview"></a>Oversigt over påmindelser
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Om påmindelser
 Påmindelser udgør et beskedsystem for kritiske hændelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen. Du kan nemt oprette dit eget sæt påmindelsesregler, så du bliver påmindet om forfaldne leveringer, slettede ordrer, ændrede priser eller andre hændelser, du skal reagere på.
