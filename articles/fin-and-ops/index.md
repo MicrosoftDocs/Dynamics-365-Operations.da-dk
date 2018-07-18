@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d1307729945494ee78c0ca6089b384d666fe5f20
+ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
+ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 07/10/2018
 
 ---
 
@@ -57,7 +57,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../financials/budgeting/budgeting-overview.md">Budgettering</a></p>
 <p><a href="../financials/cash-bank-management/cash-bank-management.md">Kontant- og bankstyring</a></p>
 <p><a href="../financials/general-ledger/audit-policy-rules.md">Overholdelse</a></p>
-<p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Driftsregnskab</a></p>
+<p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Omkostningsregnskab</a></p>
 <p><a href="../financials/fixed-assets/fixed-assets.md">Anlægsaktiver</a></p>
 <p><a href="../financials/general-ledger/general-ledger.md">Finans</a></p>
 <p><a href="../financials/project-management/overview-project-management-accounting.md">Projektstyring</a></p>
@@ -114,16 +114,16 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 </td>
 <td>
 <h3>Relaterede produkter</h3>
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Frynsegoder</a></p>
-<p><a href="../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
-<p><a href="../talent/questionnaires.md">Spørgeskema</a></p>
-
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Konfiguration og styring af kanal</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS og Cloud POS</p>
 <p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail-udvikling og -administration</p>
+
+<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
+<p><a href="../talent/manage-benefit-program.md">Frynsegoder</a></p>
+<p><a href="../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
+<p><a href="../talent/questionnaires.md">Spørgeskema</a></p>
 
 </td>
 </tr>
