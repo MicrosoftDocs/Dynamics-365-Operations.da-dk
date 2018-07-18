@@ -848,7 +848,7 @@
           href: financial/read-only-entity-financial.md
     - name: Bruge din egen database
       href: analytics/export-entities-to-your-own-database.md
-    - name: Automatisering af dataopgaver
+    - name: Automatisering af dataopgave
       href: data-entities/data-task-automation.md
     - name: Ressourcer til besvarelse af en anmodning om GDPR-data
       href: gdpr/gdpr-home-page.md
@@ -952,7 +952,7 @@
       href: financial/add-dimensions-excel-templates.md
     - name: Oprette valutakursudbydere
       href: financial/create-exchange-rate-providers.md
-    - name: Oprette valutakursudbydere i Microsoft Dynamics økonomi og operationer version 8.0
+    - name: Oprette valutakursudbydere i Microsoft Dynamics Finance and Operations version 8.0
       href: financial/create-exchange-rate-8.md
 - name: Udvikling af forsyningskæde
   items:
@@ -1014,7 +1014,9 @@
           href: deployment/apply-deployable-package-system.md
         - name: Installere en installerbar pakke
           href: deployment/install-deployable-package.md
-        - name: Fejlfinding af problemer med pakkeprogrammer
+        - name: Fjerne en pakke
+          href: deployment/uninstall-deployable-package.md
+        - name: Fejlfinde problemer med pakkeprogrammer
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Opgraderinger, opdateringer og hotfixes'
   href: migration-upgrade/upgrade-home-page.md
