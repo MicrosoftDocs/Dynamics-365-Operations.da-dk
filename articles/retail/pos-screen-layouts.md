@@ -1,6 +1,6 @@
 ---
-title: "Konfigurer skærmlayouts til POS"
-description: "Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser."
+title: "Konfigurere skærmlayout til POS"
+description: "Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelserne."
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
+ms.sourcegitcommit: e6d5cb4c5744f843ea2b877103f55f327d371eee
+ms.openlocfilehash: e8606c149db4e821bed02d28c607546ec6ce6956
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/23/2018
 
 ---
 
@@ -31,71 +31,161 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelser.
+Dette emne indeholder oplysninger om skærmlayouts til Microsoft Dynamics 365 for Retail POS-oplevelserne.
 
-Brugergrænsefladen i Microsoft Dynamics 365 for Retail POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og/eller brugere.
+Brugergrænsefladen i Retail POS kan konfigureres ved hjælp af en kombination af visuelle profiler og skærmlayouts, der er tildelt til butikker, kasseapparater og/eller brugere.
+
+I følgende illustration vises forholdet mellem de forskellige enheder, der udgør de konfigurerbare elementer i POS-brugergrænsefladen.
+
+![Enheder i POS-skærmlayout](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuel profil
-Visuelle profiler tildeles til kasseapparater og bruges til at angive de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema, farver og billeder. 
+Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema og de samme farver og billeder.
 
-**Profilnummer** - Profilnummeret er den entydige identifikator for den visuelle profil. 
+![POS-velkomstskærm med lystema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
 
-**Beskrivelse** - Beskrivelsen giver dig mulighed for at angive et beskrivende navn, der hjælper med til at identificere den korrekte profil for din situation.
+![POS-transaktionsskærm med mørkt tema](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
 
-**Tema** - Brugerne kan vælge mellem de lyse eller mørke programtemaer. Disse indstillinger påvirker skrifttypefarven og baggrundsfarverne i hele programmet.
-
-**Markeringsfarve** – Markeringsfarven bruges overalt på POS-enheden til at adskille eller fremhæve visse visuelle elementer, f.eks.felter, kommandoknapper eller hyperlinks. Disse elementer kræver typisk handling.
-
-**Overskriftsfarve** – Overskriftsfarven gør det muligt for brugeren at konfigurere farven i sidehovedet til at imødekomme detailhandlerens behov for branding. Denne funktion er kun tilgængelig i Dynamics 365 for Retail version 1611.
-
-**Logonbaggrunde** – Brugere kan angive et baggrundsbillede til logonskærmen. Filstørrelsen for baggrundsbilleder bør være så lille som muligt, da lagring og indlæsning af store filer kan have indflydelse på programmets funktionsmåde og ydeevne.
-
-**Programbaggrund** – POS-enheden kan også bruge et billede som baggrund i hele programmet i stedet for den dækkende temafarve. Som det er tilfældet med logonbaggrunde, anbefales det at holde filstørrelsen så minimal som muligt.
+- **Profilnummer** - Profilnummeret er den entydige identifikator for den visuelle profil.
+- **Beskrivelse** - Du kan angive et beskrivende navn, der hjælper med til at identificere den korrekte profil til din situation.
+- **Tema** - Du kan vælge mellem de lyse eller mørke programtemaer. Temaet påvirker skrifttypen og baggrundsfarverne i hele programmet.
+- **Markeringsfarve** – Markeringsfarven bruges overalt på POS-enheden til at adskille eller fremhæve specifikke visuelle elementer, f.eks.felter, kommandoknapper eller hyperlinks. Disse elementer kræver typisk handling.
+- **Overskriftsfarve** – Du kan konfigurere farven på sidehovedet for at opfylde forhandlerens krav til branding. Denne funktion er kun tilgængelig i Microsoft Dynamics 365 for Retail version 1611.
+- **Logonbaggrunde** – Du kan angive et baggrundsbillede til logonskærmen. Filstørrelsen for baggrundsbilleder bør være så lille som muligt, da lagring og indlæsning af store filer kan påvirke programmets funktionsmåde og ydeevne.
+- **Programbaggrund** – Du kan angive et baggrundsbillede, der bruges i hele programmet i stedet for den dækkende temafarve. Hvad angår logonbaggrunde, bør filstørrelsen holdes så lav som muligt.
 
 ## <a name="screen-layouts"></a>Skærmlayout
-Konfigurationen af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på velkomstskærmen og transaktionsskærmen på POS-enheden. 
+Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på velkomstskærmen og **transaktionsskærmen** på POS-enheden.
 
-**Velkomstskærmen** – I de fleste tilfælde er velkomstskærmen den side, som brugere får vist, når de logger på POS-enheden første gang. Velkomstskærmen kan bestå af et brandingbillede og knapmatricer, der giver adgang til POS-handlinger. Typisk er operationer, der ikke er specifikke for den aktuelle transaktion, placeret her. 
+![Visning af POS-skærmlayout](../retail/media/POS-Screen-Layout-View.png)
 
-**Transaktionsskærm** – Transaktionsskærmen er hovedskærmbilledet på POS-enheden behandling af salgstransaktioner og ordrer. Transaktionsskærmen kan konfigureres ved hjælp af skærmlayoutdesigneren. 
+- **Velkomstskærm** – I de fleste tilfælde er velkomstskærmen den side, som brugere får vist, når de logger på POS-enheden første gang. Velkomstskærmen kan bestå af et brandingbillede og knapmatricer, der giver adgang til POS-handlinger. Typisk er operationer, der ikke er specifikke for den aktuelle transaktion, placeret på denne skærm.
 
-**Standardstartskærmbillede** – Nogle detailhandlere foretrækker, at kassereren navigere direkte til transaktionsskærmen, når de logger på. Indstillingen Standardstartskærmbillede giver brugerne mulighed for at angive dette for hvert skærmlayout.
+    ![POS-velkomstskærm](../retail/media/POS-Welcome-Screen.png)
+
+- **Transaktionsskærm** – **Transaktionsskærmen** er hovedskærmbilledet på POS-enheden til behandling af salgstransaktioner og ordrer. Indholdet og layoutet er konfigureret ved hjælp af skærmlayoutdesigneren.
+
+    ![POS-transaktionsskærm](../retail/media/POS-Transaction-Screen.png)
+
+- **Standardstartskærmbillede** – Nogle detailhandlere foretrækker, at kasserere går direkte til skærmen **Transaktion**, når de logger på. Indstillingen **Standardstartskærmbillede** giver dig mulighed for at angive det standardskærmbillede, der vises efter logon for hvert skærmlayout.
 
 ### <a name="assignment"></a>Tilknytning
 
-Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparat og butikstildelingen, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butikken. I tilfælde, hvor visse kasseapparater eller brugere kræver specialiserede layouts, kan disse tildeles på tilsvarende måde.
+Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 
-Denne funktion gælder kun for Dynamics 365 for Retail version 1611. Da skærmlayouts i mange tilfælde kan bruges på tværs af flere skærmstørrelser og -opløsninger, kan brugere konfigurere deres layout og indhold til hver. POS-programmet vælger automatisk den nærmeste layoutstørrelse til enheden på starttidspunktet. Et skærmlayout kan også indeholde konfigurationer for både fuldstændige og kompakte enheder. Denne konfiguration giver en bruger mulighed for at blive knyttet til et enkelt skærmlayout, der fungerer på tværs af forskellige størrelser og formfaktorer i butikken. 
+De fleste aspekter af POS-brugergrænsefladen kan tilpasses, og layoutet tilpasses og justeres automatisk afhængigt af skærmens størrelse og retning. Dog skal POS-skærmbilledet **Transaktion** konfigureres til alle skærmopløsninger, der forventes.
 
-**Moderne POS – Fuld** – Fulde layouts er typisk bedst til større skærme som pc-skærme eller tablets. Brugerne kan vælge, hvilke elementer i brugergrænsefladen der skal medtages, bestemme deres størrelse og placering, og konfigurere deres detaljerede egenskaber. Fulde layouts understøtter både stående og liggende konfigurationer. 
+Ved start vælger POS-programmet automatisk den nærmeste layoutstørrelse, der er konfigureret til enheden. Et skærmlayout kan også indeholde konfigurationer til både stående og liggende retning og til enheder i både i fuld størrelse og kompakte. Derfor kan brugere blive knyttet til et enkelt skærmlayout, der fungerer på tværs af forskellige størrelser og formfaktorer, der bruges i butikken.
 
-**Moderne POS - Kompakt** – Kompakte layouts er typisk bedst til telefoner eller små tablets. Designmulighederne er begrænsede på kompakte enheder. Brugerne kan konfigurere kolonnerne og felterne til kvitteringen og ruder med totaler.
+![POS-layoutstørrelser](../retail/media/POS-Screen-Layout-Sizes.png)
+
+- **Navn** – Du kan angive et beskrivende navn til identifikation af skærmens størrelse.
+- **Layouttype** – POS-programmet kan vise brugergrænsefladen i forskellige tilstande for at give den bedste brugeroplevelse på en given enhed.
+
+    - **Modern POS – Fuld** – Fulde layouts er typisk bedst til større skærme som pc-skærme og tablets. Du kan vælge de elementer på brugergrænsefladen, der skal medtages, angive størrelsen på og placeringen af disse elementer og konfigurere deres detaljerede egenskaber. Fulde layouts understøtter både stående og liggende konfigurationer.
+    - **Modern POS - Kompakt** – Kompakte layouts er typisk bedst til telefoner og små tablets. Designmulighederne er begrænsede på kompakte enheder. Du kan konfigurere kolonnerne og felterne til kvitteringen og paneler med totaler.
+
+- **Bredde/højde** – Disse værdier repræsenterer den effektive skærmstørrelse i pixel, der forventes i layoutet. Husk, at nogle operativsystemer bruger skalering til skærme i høj opløsning.
+
+> [!TIP]
+> Du kan se hvilken størrelse layout, der kræves til POS-skærmen, ved at kigge på opløsningen i programmet. Start POS, og gå til **Indstillinger \> Sessionsoplysninger**. POS viser det skærmlayout, som er indlæst i øjeblikket, layoutstørrelsen og opløsningen i appvinduet.
+
+![POS-layoutstørrelser](../retail/media/POS-Session-Information.png)
+
+### <a name="button-grids"></a>Knapmatricer
+For hver layoutstørrelse i et skærmlayout kan du konfigurere og tildele knapmatricer for POS-velkomstskærmbilledet og skærmbilledet **Transaktion**. Knapmatricer til velkomstskærmbilledet placeres automatisk fra venstre mod højre, fra det laveste nummer (velkomstskærmbillede 1) til det højeste nummer.
+
+I fulde POS-layouts er placeringen af knapmatricer angivet i skærmens layoutdesigner.
+
+I kompakte POS-layouts placeres knapmatricerne automatisk fra top mod bund, fra det laveste nummer (transaktionsskærmbillede 1) til det højeste nummer. De kan benyttes via menuen **Handlinger**.
+
+![Knapmatricer til kompakt layout](../retail/media/Compact-View-Button-Grids.png)
+
+### <a name="images"></a>Billeder
+Du kan angive billeder, der skal medtages i POS-brugergrænsefladen for de enkelte layoutstørrelser i et skærmlayout. Til fulde POS-layouts kan der angives et enkelt billede for velkomstskærmbilledet. Dette billede vises som det første element til venstre i brugergrænsefladen. På skærmbilledet **Transaktion** kan billeder bruges som fanebilleder eller et logo. Kompakte POS-layouts bruger ikke disse billeder.
 
 ### <a name="screen-layout-designer"></a>Designer for skærmlayout
 
-Hver layoutstørrelse inden for et skærmlayout skal konfigureres ved hjælp af skærmlayoutdesigneren. Designeren giver brugerne mulighed for at angive og konfigurere elementer i brugergrænsefladen på transaktionsskærmbilledet. Skærmlayoutdesigneren bruger ClickOnce til at hente, installere og starte den nyeste version af programmet, hver gang brugeren åbner den. Sørg for at kontrollere browserkravene ved brug af ClickOnce, til nogle browsere, f.eks. Chrome, kræves udvidelser. 
+Skærmlayoutdesigneren giver dig mulighed for at konfigurere forskellige aspekter af POS-skærmbilledet **Transaktion** billede for hver layoutstørrelse i både stående og liggende tilstand og til både fulde og kompakte layouts. Skærmlayoutdesigneren bruger ClickOnce-installationsteknologien til at hente, installere og starte den nyeste version af programmet, hver gang brugeren åbner det. Du skal kontrollere browserkravene til ClickOnce. Nogle browsere, f.eks. Google Chrome, kræver udvidelser.
 
-**Numerisk tastatur** – Det numeriske tastatur er det vigtigste brugerinput i transaktionsskærmbilledet på POS-enheden. Det kan konfigureres til at vise hele tastaturet på skærmen, hvilket er ideelt til touchskærme, eller kun inputfeltet, som kan bruges sammen med et fysisk tastatur. Indstillingerne for numerisk tastatur er kun tilgængelige i det fulde layout. I Dynamics 365 for Retail version 1611 har kompakte layouts altid det fulde numeriske tastatur tilgængeligt fra transaktionsskærmbilledet.
+> [!IMPORTANT]
+> Du skal konfigurere et skærmlayout for hvert layout størrelse, der er defineret, og som bruges af POS.
 
-**Panelet Totaler** – Panelet totaler kan konfigureres med én eller to kolonner til at vise felter, f.eks. linjeantal, rabatbeløb, gebyrer, subtotal og moms. I Dynamics 365 for Retail version 1611 understøtter kompakte layouts kun en enkelt totalkolonne. 
+### <a name="full-layout-designer"></a>Fuld layoutdesigner
 
-**Kvittering** – Kvitteringspanelet indeholder salgslinjerne, betalingslinjerne og leveringsoplysningerne for de produkter og tjenester, der er behandlet i POS-enheden. Brugerne kan angive kolonner, bredder og placering. I kompakte layouts i Dynamics 365 for Retail version 1611 kan du også konfigurere yderligere oplysninger, der vises i rækken under hovedlinjen. 
+Den fulde layoutdesigner giver brugerne adgang til trække kontrolelementer i brugergrænsefladen til POS-skærmbilledet **Transaktion** og konfigurere indstillingerne for disse kontrolelementer.
 
-**Kundekort** – Kundekortet viser oplysninger om den kunde, der i øjeblikket er knyttet til transaktionen. Kundekortet kan konfigureres til at skjule eller få vist yderligere oplysninger. 
+![Fuld layoutdesigner til POS (liggende tilstand)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
 
-**Fanekontrolelement** – Fanekontrolelementet kan placeres på skærmlayoutet og andre kontrolelementer, f.eks. det numeriske tastatur, kundekortet eller knapmatricer kan placeres inde i fanen. Fanekontrolelementet er en beholder, der hjælper brugerne med at få plads til mere indhold på skærmen. Fanekontrolelementet er kun tilgængeligt for fulde layouts. 
+- **Importere layout/eksportere layout** – Du kan eksportere og importere POS-skærmlayoutdesign som XML-filer, så du nemt kan genbruge og dele dem på tværs af miljøer. Det er vigtigt, at du importerer layoutdesign til de korrekte layoutstørrelser. Ellers placeres brugergrænsefladeelementerne muligvis ikke korrekt på skærmen.
+- **Liggende/stående** – Hvis POS-enheden, giver brugerne mulighed for at skifte mellem stående og liggende retning, skal du definere et skærmlayout for hver tilstand. POS-enheden registrerer automatisk skærmrotation og viser det korrekte layout.
+- **Layoutgitteret** – POS-layoutdesigneren bruger et gitter med 4 pixel. Brugergrænsefladen "fastgøres til" gitteret for at hjælpe dig med at justere indholdet korrekt.
+- **Designerzoom** – du kan zoome designvisningen ind og ud for bedre at kunne se indholdet på POS-skærmen. Denne funktion er nyttig, når skærmopløsningen på POS-enheden afviger betydeligt fra opløsningen på den skærm, der bruges i designeren.
+- **Vis/Skjul navigationslinjen** – Til fulde POS-layouts kan du vælge, om den venstre navigationslinje skal være synlig på skærmbilledet **Transaktion**. Denne funktion er nyttig til visninger med en lavere opløsning. Du kan angive synligheden ved at højreklikke på navigationslinjen i designeren og markere eller fjerne markeringen af afkrydsningsfeltet **Altid synlig**. Hvis navigationslinjen er skjult, har POS-brugere stadig adgang til den ved hjælp af menuen øverst til venstre.
 
-**Billede** – Billedkontrolelementet kan bruges til at vise butikslogoet eller et andet branding-billede på transaktionsskærmbilledet. Billedkontrolelementet er kun tilgængeligt for fulde layouts. 
+    ![Vis/skjul navigationslinje](../retail/media/Navigation-Bar.PNG)
 
-**Anbefalede produkter** – Hvis det er konfigureret for miljøet, viser kontrolelementet for anbefalede produkter produktforslag baseret på maskinel indlæring. Kontrolelementet for anbefalede produkter er kun tilgængeligt for fulde layouts i Dynamics 365 for Retail version 1611. **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, der giver brugerne mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
+- **POS-kontrolelementer** – POS-layoutdesigneren understøtter følgende kontrolelementer. Du kan konfigurere mange kontrolelementer ved at højreklikke og bruge genvejsmenuen.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+    ![POS-brugergrænsefladekontrolelementer](../retail/media/POS-UI-Controls.png)
+
+    - **Numerisk tastatur** – Det numeriske tastatur er den vigtigste enhed til brugerinput i POS-skærmbilledet **Transaktion**. Du kan konfigurere kontrolelementet, så hele det numeriske tastatur vises. Denne indstilling er velegnet til enheder med berøringsskærm. Du kan også konfigurere den, så kun inputfeltet vises. I så fald bruges et fysisk tastatur til input. Indstillingerne for numerisk tastatur er kun tilgængelige i fulde layouts. For kompakte layouts vises det fulde numeriske tastatur altid på skærmbilledet **Transaktion**.
+    - **Panelet Totaler** – Du kan konfigurere panelet totaler med enten én eller to kolonner til at vise værdier, f.eks. linjeantal, rabatbeløb, gebyrer, subtotal og moms. Kompakte layouts understøtter kun en enkelt kolonne.
+    - **Kvitteringspanel** – Kvitteringspanelet indeholder salgslinjerne, betalingslinjerne og leveringsoplysningerne for de produkter og tjenester, der behandles i POS-enheden. Du kan angive kolonner, bredder og placering. I kompakte layouts kan du også konfigurere yderligere oplysninger, der vises i rækken under hovedlinjen.
+    - **Kundekort** – Kundekortet viser oplysninger om den kunde, der er knyttet til den aktuelle transaktion. Du kan konfigurere kundekortet til at skjule eller få vist yderligere oplysninger.
+    - **Fanekontrolelement** – Du kan tilføje fanekontrolelementet til et skærmlayout og derefter anbringe andre kontrolelementer, f.eks. det numeriske tastatur, kundekortet eller knapmatricer i det. Fanekontrolelementet er en beholder, der hjælper dig med at få plads til mere indhold på skærmen. Fanekontrolelementet er kun tilgængeligt for fulde layouts.
+    - **Billede** – Du kan bruge billedkontrolelementet til at vise butikslogoet eller et andet brandingbillede på skærmbilledet **Transaktion**. Billedkontrolelementet er kun tilgængeligt for fulde layouts.
+    - **Anbefalede produkter** – Hvis kontrolelementet anbefalede produkter er konfigureret for miljøet, viser det produktforslag baseret på maskinel indlæring.
+    - **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, og giver dig mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
+
+### <a name="compact-layout-designer"></a>Designer til kompakt layout
+Som designeren til fuld layout giver designeren til kompakt layout dig mulighed for at konfigurere POS-skærmlayoutet for telefoner og små tablets. Men i dette tilfælde er selve layoutet dog fast. Du kan konfigurere kontrolelementerne i layoutet ved at højreklikke og bruge genvejsmenuen. Du kan dog ikke bruge træk og slip-handlinger til yderligere indhold.
+
+![Designer til kompakt layout](../retail/media/Compact-Layout-Designer.png)
+
+### <a name="button-grid-designer"></a>Designer til knapmatrix
+Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, der kan bruges på POS-velkomstskærmbilledet og skærmbilledet **Transaktion** til både fulde og kompakte layouts. Den samme knapmatrix kan bruges på tværs af layouts og layouttyper. Ligesom skærmlayoutdesigneren bruger designeren til knapmatrix ClickOnce-installationsteknologien til at hente, installere og starte den nyeste version af programmet, hver gang brugeren åbner det. Du skal kontrollere browserkravene til ClickOnce. Nogle browsere, f.eks. Google Chrome, kræver udvidelser.
+
+![Designer til knapmatrix](../retail/media/Button-Grid-Designer.png)
+
+- **Knappen Ny** – Klik for at tilføje en ny knap til knapmatrixen. Nye knapper vises som standard i øverste venstre hjørne af gitteret. Men du kan arrangere knapper ved at trække dem i layoutet.
+
+    > [!IMPORTANT]
+    > Indholdet i knapmatricen kan overlappe hinanden. Når du arrangerer knapper, skal du sikre dig, at de ikke skjuler andre knapper.
+
+- **Nyt design** – Klik for at konfigurere et layout til knapmatricen automatisk ved at angive antallet af knapper pr. række og kolonne.
+- **Knapegenskaber** – Du kan konfigurere knapegenskaber ved at højreklikke på knappen og bruge genvejsmenuen.
+
+    > [!IMPORTANT]
+    > Nogle indstillinger af knapmatrix gælder kun for Enterprise POS, ikke for Retail Modern POS eller Cloud POS.
+
+    ![Knapegenskaber for knapmatrix](../retail/media/Button-grid-button-properties.png)
+
+    - **Handling** – På listen over relevante POS-handlinger skal du vælge den handling, der startes, når der klikkes på knappen i POS.
+
+        Du kan se listen over understøttede POS-handlinger under [POS-handlinger, online og offline](pos-operations.md).
+
+    - **Handlingsparametre** – Nogle POS-handlinger bruger flere parametre, når de aktiveres. For handlingen Tilføj produkt kan brugerne f.eks. angive det produkt, der skal tilføjes.
+    - **Knaptekst** – Angiv den tekst, der vises på knappen i POS.
+    - **Skjul tekst til knap** – Brug dette afkrydsningsfelt for at skjule eller vise teksten til knappen. Teksten til knappen er ofte skjult på små knapper, der kun viser et ikon.
+    - **Værktøjstip** – Angiv yderligere hjælpetekst, der vises, når brugerne flytter musen over knappen.
+    - **Størrelse på kolonner/størrelse på rækker** – Du kan angive højden og bredden på knappen.
+
+        ![POS-knapstørrelser i rækker og kolonner](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+
+    - **Brugerdefineret skrifttype** – Når du markerer afkrydsningsfeltet **Aktivér brugerdefineret skrifttype til POS**, kan du angive en anden skrifttype end standardsystemskrifttypen for POS.
+    - **Brugerdefineret tema** – Som standard bruger POS-knapper markeringsfarven fra den visuelle profil. Når du markerer afkrydsningsfeltet **Brug brugerdefineret tema**, kan du angive flere farver.
+
+        > [!NOTE]
+        > Retail Modern POS og Cloud POS bruger kun værdierne **Baggrundsfarve** og **Skriftfarve**.
+
+    - **Knapbillede** – Knapper kan indeholde billeder eller ikoner. Vælg mellem de tilgængelige billeder, der er angivet på **Retail \> Konfiguration af kanal \> POS-opsætning \> POS \> Billeder**.
+
+![Eksempel knapmatrix i POS](../retail/media/Example-Button-Grid-In-POS.png)
+
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Installere layoutdesigneren til Retail POS](install-pos-layout-designer.md)
-
-
-
 

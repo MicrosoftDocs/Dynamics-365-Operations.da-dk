@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -54,9 +54,13 @@ Reglerne skal desuden opdateres regelmæssigt, når skattemyndighederne ændrer 
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
+### <a name="whats-new"></a>Nyheder
 
-Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
+Gå til [frigivelsesnoterne](https://docs.microsoft.com/en-us/business-applications-release-notes/) for at se, hvilke nye funktioner der er udgivet. 
+
+### <a name="videos"></a>Videoer
+
+Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Blogs
 
@@ -66,11 +70,8 @@ Der er mange opslag om Finans i [Microsoft Dynamics AX-produktteambloggen](https
 
 [Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
 
-### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+#### <a name="community-blogs"></a>Fællesskabsblogge
 
-### <a name="videos"></a>Videoer
-
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+- [Værd at vide om finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 
