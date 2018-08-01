@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 49d6cab206725bb994d367bb8401481e7591d5fa
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 9fcf106b03cd1abdd135681ceefbb7877f07c773
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -41,31 +41,20 @@ Du kan oprette debitorfakturaer baseret på salgsordrer eller følgesedler. Du k
 
 ## <a name="set-up-accounts-receivable"></a>Konfigurere Debitorer
 
-Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer. Du kan definere debitorgrupper, debitorer, posteringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer tillæg, leveringer og destinationer, veksler og andre typer debitoroplysninger. 
+Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modtager fra debitorer. Du kan definere debitorgrupper, debitorer, posteringsprofiler, rentenotaer, rykkere, provisioner og parametre for debitorer, gebyrer, leveringer og destinationer, veksler og andre typer debitoroplysninger. 
 
-[Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row::: :::column::: - [Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Debitorposteringsprofiler](customer-posting-profiles.md)
+        - [Opsætning, godkendelse og registrering af kreditkort](credit-card-authorizations.md)
+        - [Oprette en debitorfaktura](configure-customer-invoices.md)
+        - [Oprette og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
+        - [Korrigere en fritekstfaktura](correct-free-text-invoice.md) :::column-end::: :::column::: - [Oprette veksler](set-up-bills-exchange.md)
+        - [Angive rentesatser for en rentekode](set-up-interest-rates-interest-code.md)
+        - [Frafalde, genindføre eller tilbageføre renter](waive-reinstate-reverse-interest-fees.md)
+        - [Oversigt over SEPA Direct Debit](sepa-direct-debit-overview.md)
+        - [Oprette bemyndigelse til SEPA Direct Debit](sepa-direct-debit-mandate.md)
+        - [Lukke Debitor](close-accounts-receivable.md) :::column-end::: :::row-end:::
 
-[Debitorposteringsprofiler](customer-posting-profiles.md)
-
-[Opsætning, godkendelse og registrering af kreditkort](credit-card-authorizations.md)
-
-[Oprette en debitorfaktura](configure-customer-invoices.md)
-
-[Oprette og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
-
-[Korrigere en fritekstfaktura](correct-free-text-invoice.md)
-
-[Oprette veksler](set-up-bills-exchange.md)
-
-[Angive rentesatser for en rentekode](set-up-interest-rates-interest-code.md)
-
-[Frafalde, genindføre eller tilbageføre renter](waive-reinstate-reverse-interest-fees.md)
-
-[Oversigt over SEPA Direct Debit](sepa-direct-debit-overview.md)
-
-[Oprette bemyndigelse til SEPA Direct Debit](sepa-direct-debit-mandate.md)
-
-[Lukke Debitorer](close-accounts-receivable.md)
 
 ## <a name="set-up-credit-and-collections"></a>Konfigurere kredit og rykkere
 
@@ -75,27 +64,20 @@ Oplysninger om rykkere for debitorer administreres i en central visning, siden R
 
 [Konfigurere Debitorer og Kredit](accounts-receivables-set-up-overview.md)
 
-[Konfigurere Kredit](set-up-collections.md)
+[Konfigurere kredit og rykkere](set-up-collections.md)
 
 ## <a name="set-up-payments-and-settlements"></a>Konfigurere betalinger og udligninger
 
 Acceptere forskellige betalingsmåder fra debitorer som f.eks. veksler, kontanter, checks, kreditkort og elektroniske betalinger. 
 
-[Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row::: :::column::: - [Bruge en debitorbetaling til at udligne flere fakturaer, der spænder over flere rabatperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [Centraliserede debitorbetalinger](centralized-payments-accounts-receivable.md)
+        - [Udligne en delvis debitorbetaling og udligne den endelige betaling fuldt ud før rabatdatoen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Udligne en delvis debitorbetaling med rabatter på kreditnotaer](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Udligne en delvis debitorbetaling, der omfatter flere rabatperioder](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [Refundere debitorer](reimburse-customers.md)
+        - [Debitorbetalinger af et delvist beløb](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
 
-[Centraliserede debitorbetalinger](centralized-payments-accounts-receivable.md)
-
-[Udligne en delvis debitorbetaling og udligne den endelige betaling fuldt ud før rabatdatoen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-
-[Udligne en delvis debitorbetaling før rabatdatoen med en endelig betaling efter rabatdatoen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-
-[Udligne en delvis debitorbetaling med rabatter på kreditnotaer](settle-partial-customer-payment-discounts-credit-notes.md)
-
-[Udligne en delvis debitorbetaling, der omfatter flere rabatperioder](settle-partial-customer-payment-multiple-discount-periods.md)
-
-[Refundere debitorer](reimburse-customers.md)
-
-[Debitorbetalinger af et delvist beløb](customer-payments-partial-amount.md)
 
 ### <a name="additional-resources"></a>Yderligere ressourcer
 

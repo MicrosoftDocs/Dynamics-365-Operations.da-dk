@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Du kan bruge prognosebaseret budgettering, hvis organisationen har et operatione
 ### <a name="create-projects"></a>Opret projekter
 
 Du kan oprette seks typer projekter i Microsoft Finance and Operations. Hver enkelt projekttype er angivet forskelligt med hensyn til omkostninger og indtægtsføring. Den projekttype, du vælger, afhænger af formålet med projektet. I følgende tabel beskrives den typiske brug af de enkelte projekttyper.
-
-                                                                                                                                                                         |
-
-| Projekttype      | Beskrivelse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tid og materialer | I tids- og materialeprojekter faktureres kunden for alle omkostninger, der påløber et projekt. Dette omkostninger omfatter omkostninger for timer, udgifter, varer og gebyrer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Fastpris       | Fakturaerne i fastprisprojekter består af acontotransaktioner. Et fastprisprojekt faktureres i henhold til en faktureringsplan, der er baseret på en projektkontrakt. Indtægter for et fastprisprojekt kan beregnes og bogføres i løbet af projektet ved hjælp af metoden afsluttet procentdel. Omsætning kan også beregnes og bogføres, når projektet er fuldført, ved hjælp af metoden afsluttet kontrakt. Virksomheder kan ofte have fordel af at bruge værdien af igangværende arbejde (IGVA) til at beregne færdiggørelsesgraden af et projekt eller en gruppe projekter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investering        | Investeringsprojekter er projekter, der ikke umiddelbart giver indtjening. De bruges typisk til langfristede interne projekter, hvor omkostningerne skal kapitaliseres. I et investeringsprojekt kan der kun registreres omkostninger til varer, timer og udgifter. Omkostningerne i et investeringsprojekt spores og kontrolleres ved hjælp af estimatfunktionaliteten. Investeringsprojekter kan konfigureres med en valgfri maksimal kapitalisering. Som investeringsprojektet skrider frem, bogfører du dets omkostninger på IGVA-konti, hvor omkostningerne placeres, indtil projektet er afsluttet. Når projektet elimineres, overføres du IGVA-værdien til et anlægsaktiv, en finanskonto eller et nyt projekt. Bemærk! Posteringer på investeringsprojekter vises ikke på siderne **Bogfør omkostninger**, **Periodiser omsætning** eller **Opret fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Omkostningsprojekt      | Ligesom investeringsprojekter bruges omkostningsprojekter typisk til at holde styr på interne projekter, og der kan kun registreres timer, udgifter, og varer for dem. Omkostningsprojekter er imidlertid normalt af kortere varighed end investeringsprojekter. I modsætning til investeringsprojekter kan omkostningsprojekter desuden ikke kapitaliseres på statuskonti. I stedet bogføres projektposteringerne kun på driftskonti. **BEMÆRK** Posteringer på omkostningsprojekter afspejles ikke på siderne **Bogfør omkostninger**, **Periodiser omsætning** eller **Opret fakturaforslag**. Da omkostningsprojekter typisk bruges til at holde styr på interne projekter, behøver de normalt ikke at være knyttet til en debitorkonto. Hvis din installation kræver, at der oprettes varebehov for indkøbsordrer, skal du dog knytte omkostningsprojekt til en debitor. Denne tilknytning kræves, fordi varebehov administreres som salgsordrelinjer, og systemet kræver, at der angives en debitor. Denne opsætning resulterer imidlertid ikke i, at varebehov automatisk oprettes ud fra en indkøbsordre. For omkostningsprojekter ignoreres indstillingen **Opret varebehov**. Hvis du skal bruge et varebehov i et omkostningsprojekt, kan du oprette det manuelt, når blot en debitor er knyttet til projektet. |
-| Intern          | Interne projekter bruges til at følge op på omkostninger for et projekt, der er internt i organisationen. Interne projekter kan levere et planlægningsværktøj til at styre ressourceforbruget. **Bemærk!** Posteringer på interne projekter afspejles ikke på siderne **Periodiser omsætning** eller **Opret fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Klokkeslæt              | Tidsprojekter bruges til at registrere tid, der er tilknyttet ikke-fakturerbare og ikke-produktive aktiviteter, f.eks. et projekt, der sporer sygedage for arbejdere. Posteringer på tidsprojekter bogføres ikke i finans. De medtages i stedet i rapporterne over brugen af arbejdere. Der kan kun registreres timetransaktioner i tidsprojekter. Du bruger en timekladde eller timeseddel til at registrere disse timer til projektet. Når timerne er registreret, vises de som projektposteringer, men de har ikke tilsvarende bilagsposteringer. **Bemærk!** Posteringer på tidsprojekter afspejles ikke på siderne **Bogfør omkostninger**, **Periodiser omsætning** eller **Opret fakturaforslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Projekttype</th>
+    <td>Beskrivelse</th>
+  </tr>
+  <tr>
+    <td>Tid og materialer</td>
+    <td>I tids- og materialeprojekter faktureres kunden for alle omkostninger, der påløber et projekt. Dette omkostninger omfatter omkostninger for timer, udgifter, varer og gebyrer.</td>
+  </tr>
+  <tr>
+    <td>Fastpris</td>
+    <td>Fakturaerne i fastprisprojekter består af acontotransaktioner. Et fastprisprojekt faktureres i henhold til en faktureringsplan, der er baseret på en projektkontrakt. Indtægter for et fastprisprojekt kan beregnes og bogføres i løbet af projektet ved hjælp af metoden afsluttet procentdel. Omsætning kan også beregnes og bogføres, når projektet er fuldført, ved hjælp af metoden afsluttet kontrakt. Virksomheder kan ofte have fordel af at bruge værdien af igangværende arbejde (IGVA) til at beregne færdiggørelsesgraden af et projekt eller en gruppe projekter.</td>
+  </tr>
+  <tr>
+    <td>Investering</td>
+    <td>Investeringsprojekter er projekter, der ikke umiddelbart giver indtjening. De bruges typisk til langfristede interne projekter, hvor omkostningerne skal kapitaliseres. I et investeringsprojekt kan der kun registreres omkostninger til varer, timer og udgifter. Omkostningerne i et investeringsprojekt spores og kontrolleres ved hjælp af estimatfunktionaliteten. Investeringsprojekter kan konfigureres med en valgfri maksimal kapitalisering. Som investeringsprojektet skrider frem, bogfører du dets omkostninger på IGVA-konti, hvor omkostningerne placeres, indtil projektet er afsluttet. Når projektet elimineres, overføres du IGVA-værdien til et anlægsaktiv, en finanskonto eller et nyt projekt. <br></br> <strong>BEMÆRK!</strong> Posteringer på investeringsprojekter vises ikke på siderne <strong>Bogfør omkostninger<strong>, <strong>Periodiser omsætning</strong> eller <strong>Opret fakturaforslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Omkostningsprojekt</td>
+    <td>Ligesom investeringsprojekter bruges omkostningsprojekter typisk til at holde styr på interne projekter, og der kan kun registreres timer, udgifter, og varer for dem. Omkostningsprojekter er imidlertid normalt af kortere varighed end investeringsprojekter. I modsætning til investeringsprojekter kan omkostningsprojekter desuden ikke kapitaliseres på statuskonti. I stedet bogføres projektposteringerne kun på driftskonti. <br></br> <strong>BEMÆRK!</strong> Posteringer på omkostningsprojekter afspejles ikke på siderne <strong>Bogfør omkostninger</strong>, <strong>Periodiser omsætning</strong> eller <strong>Opret fakturaforslag</strong>. Da omkostningsprojekter typisk bruges til at holde styr på interne projekter, behøver de normalt ikke at være knyttet til en debitorkonto. Hvis din installation kræver, at der oprettes varebehov for indkøbsordrer, skal du dog knytte omkostningsprojekt til en debitor. Denne tilknytning kræves, fordi varebehov administreres som salgsordrelinjer, og systemet kræver, at der angives en debitor. Denne opsætning resulterer imidlertid ikke i, at varebehov automatisk oprettes ud fra en indkøbsordre. For omkostningsprojekter ignoreres indstillingen <strong>Opret varebehov</strong>. Hvis du skal bruge et varebehov i et omkostningsprojekt, kan du oprette det manuelt, når blot en debitor er knyttet til projektet.</td>
+  </tr>
+  <tr>
+    <td>Intern</td>
+    <td>Interne projekter bruges til at følge op på omkostninger for et projekt, der er internt i organisationen. Interne projekter kan levere et planlægningsværktøj til at styre ressourceforbruget. <br></br><strong>BEMÆRK!<strong> Posteringer på interne projekter afspejles ikke på siderne <strong>Periodiser omsætning</strong> eller <strong>Opret fakturaforslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Klokkeslæt</td>
+    <td>Tidsprojekter bruges til at registrere tid, der er tilknyttet ikke-fakturerbare og ikke-produktive aktiviteter, f.eks. et projekt, der sporer sygedage for arbejdere. Posteringer på tidsprojekter bogføres ikke i finans. De medtages i stedet i rapporterne over brugen af arbejdere. Der kan kun registreres timetransaktioner i tidsprojekter. Du bruger en timekladde eller timeseddel til at registrere disse timer til projektet. Når timerne er registreret, vises de som projektposteringer, men de har ikke tilsvarende bilagsposteringer. <br></br><strong>BEMÆRK!</strong> Posteringer på tidsprojekter afspejles ikke på siderne <strong>Bogfør omkostninger</strong>, <strong>Periodiser omsætning</strong> eller <strong>Opret fakturaforslag</strong>.</td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Tildel arbejdere, kategorier og ressourcer
@@ -239,11 +259,12 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <li>Sammenlign budgetposteringer med de faktiske posteringer.</li>
 <li>Vedligehold, mindsk eller øg overslagene for den næste periode.</li>
 </ol>
-Finance and Operations reducerer ikke automatisk de budgetterede estimater. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at etablere et grundlag for sammenligning, når projektet er fuldført. &gt; [!NOTE] &gt; Når du vælger denne metode, skal du bruge mindst to budgetmodeller. Én model bør indeholde det oprindelige budget. For den anden model skal du kopiere budgetposteringerne fra en anden model. Denne metode er kun gyldig for fastpris- og investeringsprojekter.</td>
+Finance and Operations reducerer ikke automatisk de budgetterede skøn. Der er derfor en god ide at bevare en oprindelig budgetmodel for fastprisprojektet for at oprette stamdata til sammenligning, når projektet er fuldført. 
+<br></br> <strong>BEMÆRK!</strong> Når du vælger denne metode, skal du bruge mindst to budgetmodeller. Én model bør indeholde det oprindelige budget. For den anden model skal du kopiere budgetposteringerne fra en anden model. Denne metode er kun gyldig for fastpris- og investeringsprojekter.</td>
 </tr>
 <tr class="odd">
 <td>Resterende budget</td>
-<td>Denne metode bruger en resterende budgetmodel til at beregne færdiggørelsesomkostningerne for projektet. Når du bruger denne metode, lægges de faktiske omkostninger og de budgetterede beløb i den resterende budgetmodel sammen. Resultatet er de samlede omkostninger. Før du bruger denne metode, skal du oprette en resterende budgetmodel for at fratrække posteringer, der er baseret på de faktiske posteringer, som er registreret i systemet. På siden <strong>Budgetmodeller</strong> skal du kontrollere, at felterne er markeret i gruppen <strong>Automatisk prognosereduktion</strong>. Typisk kopieres et resterende budget fra et oprindeligt budget. Når posteringerne indtastes, reduceres posteringerne i det resterende budget. Som projektet skrider frem, kan du trække budgetposteringer på det resterende budget, hvis du finder ud af, at det resterende budget skal justeres. <strong>Bemærk!</strong> Denne metode kan kun anvendes, hvis der er knyttet en budgetmodel til estimatet.</td>
+<td>Denne metode bruger en resterende budgetmodel til at beregne færdiggørelsesomkostningerne for projektet. Når du bruger denne metode, lægges de faktiske omkostninger og de budgetterede beløb i den resterende budgetmodel sammen. Resultatet er de samlede omkostninger. Før du bruger denne metode, skal du oprette en resterende budgetmodel for at fratrække posteringer, der er baseret på de faktiske posteringer, som er registreret i systemet. På siden <strong>Budgetmodeller</strong> skal du kontrollere, at felterne er markeret i gruppen <strong>Automatisk prognosereduktion</strong>. Typisk kopieres et resterende budget fra et oprindeligt budget. Når posteringerne indtastes, reduceres posteringerne i det resterende budget. Som projektet skrider frem, kan du trække budgetposteringer på det resterende budget, hvis du finder ud af, at det resterende budget skal justeres. <br></br> <strong>BEMÆRK!</strong> Denne metode kan kun anvendes, hvis der er knyttet en budgetmodel til estimatet.</td>
 </tr>
 <tr class="even">
 <td>Som forrige estimat</td>
@@ -318,11 +339,19 @@ Kostbetalingsdatoen beregnes ikke på basis af bufferdage. Når et projekt er af
 
 Når alle salgs- og leverandørfakturaer er fuldført, kan du få vist relationen mellem felter på siden **Pengestrøm** og felter på siden **Projektopgørelser**.
 
-| Pengestrømsside | Siden projektopgørelse. |
-|----------------|-------------------------|
-| Indgående pengestrømme   | Omsætning                 |
-| Udgående pengestrømme  | Samlede omkostninger              |
-| Nettopengestrømme | Bruttoavance            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Gennemgå omkostninger
 
@@ -409,8 +438,4 @@ Når sætningen er beregnet, kan du få vist følgende oplysninger under de fors
 -   **Forbrug**– Oplysninger om forbrug af timer, varer, udgifter og lønposter.
 -   **Faktura**– Oplysninger om fakturaer og acontofakturering.
 -   **Timesats** – Timesatser for timer, der er bogført til driftskonti.
-
-
-
-
 

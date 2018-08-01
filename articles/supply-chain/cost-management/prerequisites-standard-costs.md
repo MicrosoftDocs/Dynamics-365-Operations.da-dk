@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Før du definerer reglerne for varekontering, skal du bruge siden **Transaktions
 
 **4. Definer lagerparametre, der er knyttet til standardomkostninger.** 
 
--  Brug fanen **Stykliste** på siden **Lagerparametre** til at definere to parametre for omkostningsstyring, der er knyttet til standardomkostninger. 
+-  Brug fanen **Lagerregnskab** på siden **Konfiguration af regnskabspolitik for lager > Parametre** til at definere to parametre for omkostningsstyring, der er knyttet til standardomkostninger.
 
     -  I feltet **Kostprisopdeling** skal du vælge **Ingen** eller **Underfinanskonto**. Hvis du vælger **Underfinanskonto**, er kostprisopdelingen en *aktiv* kostprisopdeling. En aktiv kostprisopdeling er vigtig for beregning, bevarelse og visning af segmentering af omkostningsgrupper på tværs af en produktstruktur med flere niveauer for standardomkostningsvarer. Når kostprisopdelingen er aktiv, kan du rapportere og analysere lager, IGVA (igangværende arbejde) og vareforbrug for de enkelte omkostningsgrupper på et enkelt niveau, flere niveauer eller i det samlede format. Når kostprisopdelingen er aktiv, og du aktiverer omkostninger for en produceret vare, lagres segmenteringen af omkostningsgruppen i varens kostprispost. 
 

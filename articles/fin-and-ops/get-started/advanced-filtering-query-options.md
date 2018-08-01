@@ -1,6 +1,6 @@
 ---
 title: "Syntaks for avanceret filtrering og forespørgsler"
-description: "I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren \"matches\" i dialogboksen Avanceret filtrering/sortering."
+description: "I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering eller operatoren **matches** i ruden Filter eller i filtre til gitterets kolonneoverskrifter."
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
+ms.sourcegitcommit: edff2fba7e231ae52abf7828d55c1fe4841ccd7f
+ms.openlocfilehash: 3e7127a9412dcf9324872c06fbf6cc3cf61bf063
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 07/06/2018
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Syntaks for avanceret filtrering og forespørgsler
+# <a name="advanced-filtering-and-query-syntax"></a>Avanceret filtrering og forespørgselssyntaks
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives de indstillinger for filtrering og forespørgsler, der er tilgængelige, når du bruger operatoren "matches" i dialogboksen Avanceret filtrering/sortering.
+I denne artikel beskrives indstillingerne for filtrering og forespørgsler, der er tilgængelige, når du bruger dialogboksen Avanceret filtrering/sortering eller operatoren **matches** i ruden Filter eller i filtre til gitterets kolonneoverskrifter. 
 
 <a name="advanced-query-syntax"></a>Avanceret forespørgselssyntaks
 ---------------------

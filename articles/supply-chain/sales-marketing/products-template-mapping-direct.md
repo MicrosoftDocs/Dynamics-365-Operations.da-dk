@@ -3,7 +3,7 @@ title: Synkronisere produkter direkte fra Finance and Operations med produkter i
 description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations med Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Feltet **Vedligeholdes eksternt** bruges til at sikre, at det kun er tilbud og s
 Eksternt vedligeholdte produkter føjes automatisk til den første gyldige prisliste, der har den samme valuta. Prislister organiseres alfabetisk efter navn. Produktets salgspris fra Finance and Operations bruges som prisen på prislisten. Derfor skal der være en prisliste i Sales for hver produktsalgsvaluta i Finance and Operations. Valutaen for de frigivne salgbare produkter indstilles til regnskabsvalutaen i den juridiske enhed, som produktet eksporteres fra.
 
 > [!NOTE]
-> Produktsynkronisering lykkes ikke, medmindre der er en prisliste, der har en tilsvarende valuta.
+> - Produktsynkronisering lykkes ikke, medmindre der er en prisliste, der har en tilsvarende valuta.
+> - Du kan styre den anvendte prisliste til integrationen ved at tilknytte pricelevelid.name [standardprisliste (navn)] i dataintegrationsprojektet. Inputtet skal skrives med små bogstaver. For eksempel vil standarden for en prisliste i Sales, der hedder 'Standard', være: Destinationsfelt: pricelevelid.name [standardprisliste (navn)] og tilknytningstype: [ { "transformType": "Standard", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Betingelserne og tilknytningsopsætning
 

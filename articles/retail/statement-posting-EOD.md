@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 - **Deaktivering af optælling er påkrævet** – Når denne indstilling er sat til **Ja**, fortsætter bogføringsprocessen for en opgørelse, selvom forskellen mellem det optalte beløb og posteringsbeløbet i opgørelsen er uden for grænsen, der er defineret i oversigtspanelet **Opgørelse** for detailbutikker.
 
 Desuden er feltet **Det maksimale antal parallelle opgørelsesbogføringer** indført i oversigtspanelet **Batchafvikling**. Dette felt definerer antallet af batchopgaver, der skal køres ad gangen. I øjeblikket skal du angive værdien i dette felt manuelt.
+
+Desuden er det med den nye bogføringsproces påkrævet, at du definerer et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Dette gælder, selvom organisationen ikke bruger nogen gavekort. 
 
 Bemærk, at alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i Detailbutikker og på siden **Detailparametre**, gælder for funktionen til forbedret bogføring af opgørelser.
 

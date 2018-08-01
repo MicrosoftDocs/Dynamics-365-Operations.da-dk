@@ -1,6 +1,6 @@
 ---
 title: Formalisere forretningsprocesser
-description: "Funktionen til forretningsprocesser giver dig mulighed for at oprette en skabelon til forretningsproces til processer, der skal fuldføres inden for organisationen."
+description: "I dette emne forklares det, hvordan du kan bruge funktionen til forretningsprocesser til at oprette en skabelon til forretningsproces til processer, der skal fuldføres inden for organisationen."
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,47 +19,60 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
+ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
+ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprocesser
-Funktionen til forretningsprocesser giver dig mulighed for at oprette en skabelon til forretningsproces til processer, der skal fuldføres inden for organisationen. Dit firma udfører f.eks. en HR revision hvert år. Der kan oprettes en skabelon til at spore alle de opgaver, som revisionen består af, for at sikre at alle opgaver er udført, hver gang processen er fuldført, og om nødvendigt for at sikre, at opgaver udføres i den rigtige rækkefølge. Skabeloner kan bruges igen til gentagne processer eller kopieres for at blive brugt som udgangspunkt ved oprettelsen af nye.
 
-Når der oprettes en skabelon, kan en proces startes og spores i arbejdsområdet Forretningsproces.  Når der startes en forretningsproces, tildeles der opgaver til de relevante personer opgaverne, og der angives en forfaldsdato. Vi dækker disse komponenter detaljeret nedenfor.
+[!include[banner](includes/banner.md)]
 
-## <a name="business-process-template"></a>Forretningsprocesskabelon
-En forretningsprocesskabelon indeholder en gruppe opgaver, der udgør en forretningsproces. Personalechefer og -assistenter kan som standard oprette forretningsprocesser.  Dette kan dog ændres i sikkerhedskonfigurationen ved at redigere pligten Vedligehold generiske forretningsprocesser.
+Funktionen til forretningsprocesser giver dig mulighed for at oprette en skabelon til forretningsproces til processer, der skal fuldføres i organisationen. Virksomheden udfører f.eks. en revision af personale (HR) hvert år. I så fald kan du oprette en skabelon, der sporer alle de opgaver, revisionsprocessen består af. Denne skabelon kan hjælpe med til at sikre, at alle opgaver er udført, hver gang revisionen udføres. Hvis opgaverne skal fuldføres i en bestemt rækkefølge, kan skabelonen desuden hjælpe med til at sikre, at de udføres i den rigtige rækkefølge.
 
-Der kan defineres en procesejer for hver proces. Procesejeren har overblik over alle opgaver for processen og kan tildele opgaver igen eller ændre forfaldsdatoer.  Personaledirektøren kan f.eks. oprette en forretningsprocesskabelon for en gennemgang af frynsegoder.  Chef for kompensation og frynsegoder kan angives som ejeren af processen, så vedkommende kan få indsigt i de opgaver, der skal fuldføres som en del af gennemgangen.  En procesejer kan ikke oprette eller slette aktive forretningsprocesser eller forretningsprocesskabeloner.
+Skabeloner kan genbruges til gentagne processer. De kan også kopieres og bruges som udgangspunkt til at oprette nye skabeloner.
 
-## <a name="task"></a>Opgave
-En forretningsproces består ofte af flere opgaver. Nogle opgaver kan udføres inden for Dynamics 365 for Talent, f.eks. gennemgang af interne kursustilbud. I dette tilfælde vælges der et menupunkt i feltet Opgavelink. Andre opgaver kan omfatte gennemgang eller udfyldelse af formularer på et websted. Hvis du vælger URL-adresse i feltet Opgavelink kan webadressen angives. Du kan angive URL-adresser for både eksterne og interne websteder i dette felt. Du kan også oprette opgaver for aktiviteter, der udføres manuelt, f.eks. gennemsyn af adgangen til alle strukturer. I dette tilfælde er en opgavekæde ikke påkrævet. Denne fleksibilitet gør det muligt at spore flere typer opgaver i en omfattende proces.
+Når der oprettes en forretningsprocesskabelon, kan en forretningsproces startes og spores i arbejdsområdet **Forretningsproces**. Når der startes en forretningsproces, tildeles der opgaver til de relevante personer, og opgaverne indeholder en forfaldsdato.
 
-Opgaver kan tildeles til en bestemt arbejder eller til en stilling. For eksempel vil chefen for kompensation og frynsegoder altid være den person, der udfører en gennemgang af forsikringspræmier.   Når du opretter denne opgave, skal du vælge Stilling som Tildelingstypen og derefter vælge chefen for kompensation og frynsegoder på listen Stilling. Når processen begynder, tildeles opgaven til den medarbejder, der har stillingen chef for kompensation og frynsegoder. Du kan også tildele en opgave til en bestemt arbejder ved at vælge arbejderen i feltet Tildelingstype og derefter vælge den relevante person.
+## <a name="business-process-templates"></a>Forretningsprocesskabeloner
+En forretningsprocesskabelon indeholder en gruppe opgaver, der udgør en forretningsproces. Personalechefer og -assistenter kan som standard oprette forretningsprocesser. Du kan dog ændre de roller, der kan oprette forretningsprocesser ved at ændre pligten **Vedligehold generiske forretningsprocesser** i sikkerhedskonfigurationen.
 
-Forfaldsdatoer for opgaven er afhængig af den måldato, der er angivet i starten af processen. Nogle opgaver skal fuldføres før måldatoen, og nogle kan muligvis udføres efter måldatoen.  Når du definerer en opgave, angiver du en relativ forfaldsdato i forhold til måldatoen i feltet Forskydning af forfaldsdato fra måldato. Antag for eksempel, at chefen for kompensation og frynsegoder skal foretage en gennemgang af forsikringspræmier, 10 dage før HR-revisionen er fuldført. Den oprettede opgave har en forfaldsdato i forhold til måldatoen på -10. Hvis processen derfor er startet den 13. maj, er opgaven forfalden den 3. maj. Bemærk: Forfaldsdatoer kan også justeres, når processen er startet.
+For hver forretningsproces kan du definere en procesejer. Procesejeren har overblik over alle opgaver for processen og kan tildele opgaver igen eller ændre forfaldsdatoer. Personaledirektøren opretter f.eks. forretningsprocesskabelon til gennemgang af frynsegoder og angiver chefen for kompensation og frynsegoder som procesejeren. Chefen for kompensation og frynsegoder har derefter indsigt i de opgaver, der skal udføres som en del af gennemgangen.
 
-Komplekse opgaver kan kræve flere trin, eller der er behov for, at den person, der udfører opgaver, skal angive yderligere oplysninger. Du kan føje instruktioner til opgaven og desuden foretage RTF-formatering af instruktionerne. Instruktionerne kan give yderligere oplysninger om, hvordan opgaven skal fuldføres, til den person, der er tildelt til at gennemføre den.
+En procesejer kan ikke oprette nye forretningsprocesser eller forretningsprocesskabeloner eller slette aktive forretningsprocesser eller forretningsprocesskabeloner.
 
-## <a name="starting-a-process"></a>Starte en proces
-En proces kan startes fra en forretningsprocesskabelon ved at vælge Start proces.  Når en proces er startet, oprettes opgaver for de valgte arbejdere og/eller stillinger, der er defineret i de opgaver, der er inkluderet i forretningsprocesskabelonen. En forfaldsdato tildeles også til hver opgave ved at tilføje eller fratrække forskydningsdagene fra måldatoen (se oplysningerne om forskydningsdage i afsnittet Opgave). De aktive forretningsprocesser kan ses i arbejdsområdet Forretningsprocesser. 
+## <a name="tasks"></a>Opgaver
+En forretningsproces består ofte af flere opgaver. Nogle opgaver, f.eks. gennemgang af interne kursustilbud, kan udføres i Microsoft Dynamics 365 for Talent[?]. I så fald vælges en indstilling i feltet **Opgavelink**. Andre opgaver kan omfatte gennemgang eller udfyldelse af sider på et websted. I dette tilfælde er **URL-adressen** valgt i feltet **Opgavelink**, og webadressen kan derefter angives. Du kan angive URL-adresser for både eksterne og interne websteder. Du kan også oprette opgaver for aktiviteter, der udføres manuelt, f.eks. et gennemsyn af adgangen til alle strukturer. I dette tilfælde er et opgavelink ikke påkrævet. Denne fleksibilitet gør det muligt at spore flere typer opgaver i en omfattende proces.
+
+Opgaver kan enten tildeles til en bestemt arbejder eller til en stilling. For eksempel vil chefen for kompensation og frynsegoder altid være den person, der udfører en gennemgang af forsikringspræmier. Når du opretter denne opgave, skal du derfor vælge **Stilling** i feltet **Tildelingstype** og derefter vælge **Chef for kompensation og frynsegoder** på listen **Stilling**. Når forretningsprocessen startes, tildeles opgaven til den medarbejder, der har stillingen **Chef for kompensation og frynsegoder**. Hvis du vil tildele en opgave til en bestemt arbejder, skal du vælge **Arbejder** i feltet **Tildelingstype** og derefter vælge den relevante person.
+
+Forfaldsdatoer for opgaver afhænger af den måldato, der er angivet ved starten af forretningsprocessen. Nogle opgaver skal fuldføres før måldatoen, og andre opgaver kan muligvis fuldføres efter måldatoen. Når du definerer en opgave, skal du angive en relativ forfaldsdato i forhold til måldatoen i feltet **Forskydning af forfaldsdato fra måldato**. F.eks. skal chefen for kompensation og frynsegoder foretage en gennemgang af forsikringspræmier, 10 dage før HR-revisionen er fuldført. I dette tilfælde har den opgave, der oprettes til en gennemgang, en værdi i feltet **Forskydning af forfaldsdato fra måldato** på **-10**. Hvis forretningsprocessen derfor er startet den 13. maj, er opgaven forfalden den 3. maj.
+
+> [!NOTE]
+> Forfaldsdatoer kan også justeres, når forretningsprocessen er startet.
+
+Komplekse opgaver kan kræve flere trin, eller de personer, der udfører opgaverne, skal måske angive yderligere oplysninger. Du kan tilføje instruktioner til en opgave for disse scenarier. Instruktionerne kan give den person, der er tildelt til at fuldføre opgaven, yderligere oplysninger om, hvordan opgaven skal fuldføres. Du kan også medtage RTF-formatering i instruktionerne.
+
+## <a name="starting-a-business-process"></a>Starte en forretningsproces
+En forretningsprocesskabelon kan du starte en forretningsproces ved at vælge **Start proces**. Når en proces er startet, oprettes opgaver for de valgte arbejdere og/eller stillinger, der er defineret i de opgaver, der er inkluderet i skabelonen. En forfaldsdato tildeles også til hver opgave ved at tilføje eller fratrække antallet af forskydningsdage fra måldatoen, som forklaret i afsnittet "Opgave". Du kan få vist aktive forretningsprocesser i arbejdsområdet **Forretningsprocesser**.
 
 ## <a name="employee-self-service"></a>Medarbejderselvbetjening
-Når en opgave er tildelt til en medarbejder, kan vedkommendes tildelte opgaver ses på siden Medarbejderselvbetjening. Medarbejdere, der har en forretningsprocesopgave knyttet til sig, kan se opgaven, dens beskrivelse, instruktioner til at fuldførelse og navnet på en kontaktperson, og de kan åbne den tilknyttede Dynamics365-side eller -webside fra deres side Medarbejderselvbetjening. Opgaver kan markeres som igangværende, annullerede eller fuldførte.
+Når en opgave er tildelt til en medarbejder, kan medarbejderen få vist den og alle hans eller hendes andre tildelte opgaver på siden **Medarbejderselvbetjening**. For hver forretningsprocesopgave, der er tildelt ham eller hende, kan medarbejderen se navn og beskrivelse af opgaven, instruktioner til at fuldførelse af opgaven og navnet på en kontaktperson. Fra siden **Medarbejderselvbetjening** kan medarbejderen også åbne den tilknyttede side i Microsoft Dynamics 365 eller den tilknyttede webside og kan markere opgaver som igangværende, annullerede eller fuldførte.
 
 ## <a name="business-process-workspace"></a>Arbejdsområdet Forretningsproces
-Personalemedarbejdere kan se de aktive forretningsprocesser i arbejdsområdet Forretningsproces. Arbejdsområdet viser alle aktive processer og de opgaver, der er tilknyttet hver enkelt. Den omfattende opgaveliste kan filtreres efter forfaldsdato. Siden viser også forfaldne opgaver og opgaver, der specifikt er tildelt til personalemedarbejderen. De kan også opdatere status for alle opgaver og kan om nødvendigt tildele opgaver til andre for at sørge for at den overordnede forretningsproces bevæger sig fremad.
+Personalemedarbejdere kan se de aktive forretningsprocesser i arbejdsområdet **Forretningsproces**. Dette arbejdsområde viser alle aktive processer og de opgaver, der er tilknyttet hver enkelt. Den omfattende opgaveliste kan filtreres efter forfaldsdato. Arbejdsområdet viser også forfaldne opgaver og opgaver, der specifikt er tildelt til personalemedarbejderen. Personalemedarbejderen kan også opdatere status for alle opgaver og kan om nødvendigt tildele opgaver til andre for at sørge for, at den overordnede forretningsproces bevæger sig fremad.
 
 ## <a name="my-business-processes-workspace"></a>Arbejdsområdet Mine forretningsprocesser
-Procesejere kan få vist de aktive forretningsprocesser, der er tildelt dem, fra arbejdsområdet Mine forretningsprocesser. Arbejdsområdet viser alle aktive processer og de tilknyttede opgaver, som den pågældende bruger ejer.  Den omfattende opgaveliste kan filtreres efter forfaldsdato. Siden viser også de opgaver, der specifikt er tildelt procesejer. Procesejeren kan også opdatere status for alle opgaver, samt omfordele alle opgaver.
+Procesejere kan få vist de aktive forretningsprocesser, der er tildelt dem, i arbejdsområdet **Mine forretningsprocesser**. Dette arbejdsområde viser alle aktive processer og de tilknyttede opgaver, som den pågældende bruger ejer. Den omfattende opgaveliste kan filtreres efter forfaldsdato. Arbejdsområdet viser også forfaldne opgaver og opgaver, der specifikt er tildelt til procesejeren. Procesejeren kan også opdatere status for alle opgaver og omfordele alle opgaver.
 
 ## <a name="navigating-business-processes"></a>Navigere i forretningsprocesser
-1. Hvis du vil tilføje en forretningsprocesskabelon, skal du gå til Forretningsprocesser – Links – Administration af forretningsprocesser.
-   - a.   Ny opretter en ny skabelon.
-   - b.   Kopier fra skabelon kopierer den valgte skabelon til en ny.
-   - c.   Start proces starter den valgte forretningsproces, tildelet opgaver og beregner forfaldsdatoer.  
-2. For at få vist aktive processer og tilknyttede opgaver skal du gå til arbejdsområdet Forretningsprocesser.
+Hvis du vil oprette eller kopiere en forretningsprocesskabelon eller starte en forretningsproces, skal du gå til Forretningsprocesser - Links – Administration af forretningsprocesser. Du kan derefter udføre følgende opgaver:
+
+- Vælg **Ny** for at oprette en ny forretningsprocesskabelon.
+- Vælg **Kopier fra skabelon** for at kopiere den valgte skabelon til en ny skabelon.
+- Vælg **Start proces** for at starte den valgte forretningsproces, tildele opgaver og beregne forfaldsdatoer.
+
+For at få vist aktive processer og tilknyttede opgaver skal du åbne arbejdsområdet **Forretningsprocesser**.
+
 
