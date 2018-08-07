@@ -1,7 +1,7 @@
 ---
 title: Oprette et budget ud fra posteringskonti og totalkonti
 description: "Denne artikel indeholder en oversigt over processen til at oprette budgetter baseret på totalkonti. Der beskrives også, hvordan du aktiverer budgetstyring for totalkonti, hvis budgetstyring er påkrævet."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetControlConfiguration, BudgetPlanGenerate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 13051
 ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e

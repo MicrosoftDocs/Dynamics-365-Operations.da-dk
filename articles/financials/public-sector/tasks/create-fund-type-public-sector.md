@@ -1,7 +1,7 @@
 --- 
 title: Oprette en finansieringskildetype i den offentlige sektor
 description: Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/12/2016
 ms.topic: business-process
@@ -9,11 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

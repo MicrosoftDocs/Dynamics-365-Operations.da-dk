@@ -1,7 +1,7 @@
 ---
 title: Opgraderingsoversigt for afskrivningsmodel
 description: "I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog. Dette emne indeholder nogle overvejelser for opgraderingen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39

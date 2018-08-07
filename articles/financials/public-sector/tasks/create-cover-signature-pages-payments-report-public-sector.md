@@ -1,7 +1,7 @@
 --- 
 title: Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 description: "Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,11 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

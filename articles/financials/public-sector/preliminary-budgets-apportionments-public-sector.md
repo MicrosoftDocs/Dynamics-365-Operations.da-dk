@@ -1,7 +1,7 @@
 ---
 title: "Foreløbige budgetter og fordelinger i den offentlige sektor"
 description: "I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19701
 ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd

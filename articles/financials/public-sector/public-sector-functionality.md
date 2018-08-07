@@ -1,7 +1,7 @@
 ---
 title: Startside for offentlig sektor
 description: "Microsoft Dynamics 365 for Finance and Operations har forretningsprocesser, som er fælles for både den offentlige og den private sektor, f.eks. budgettering, indkøb, opgaver i forbindelse med kreditor og debitor."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

@@ -1,7 +1,7 @@
 ---
 title: "Planlæg funktioner til den offentlige sektor"
 description: "I denne artikel foreslås de første trin i opsætningen af funktioner til den offentlige sektor i Microsoft Dynamics 365 for Finance and Operations."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19851
 ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35

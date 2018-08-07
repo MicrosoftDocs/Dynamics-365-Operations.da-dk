@@ -1,7 +1,7 @@
 ---
 title: Midler i den offentlige sektor
 description: "Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19571
 ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6

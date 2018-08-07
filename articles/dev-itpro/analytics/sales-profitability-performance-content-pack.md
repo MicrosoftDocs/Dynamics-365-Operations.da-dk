@@ -1,7 +1,7 @@
 ---
 title: Salgs- og rentabilitetsperformance i Power BI-indhold
 description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til Salgs og rentabilitetsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article

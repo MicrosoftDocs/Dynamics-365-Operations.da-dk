@@ -1,7 +1,7 @@
 ---
 title: "Indkøb og forsyning i den offentlige sektor"
 description: "Denne oversigt introducerer dig til den offentlige sektors funktion Indkøb og forsyning. Dette omfatter indkøbsordrekoder, certificering kreditortyper, funktion til klassificering af købsaftaler og indkøbsordrelinjebeløb."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
