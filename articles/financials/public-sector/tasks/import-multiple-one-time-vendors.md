@@ -1,7 +1,7 @@
 --- 
 title: Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor
 description: "Når der ikke kræves godkendelse eller en aftale i form af en indkøbsordre, kan du oprette en faktura for en ny kreditor, som du ikke har nogen regelmæssige relationer med, samtidig med at du opretter en post for kreditoren."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9008a63ee255b11ccb18bb2346438e5efa058929
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: a5cbb434ad424dc67a361aeb0273de8cf2ce7d60
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="import-and-create-multiple-one-time-vendors-and-invoices-in-the-public-sector"></a><span data-ttu-id="1a193-103">Importere og oprette engangskreditorer og -fakturaer i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="1a193-103">Import and create multiple one-time vendors and invoices in the public sector</span></span>

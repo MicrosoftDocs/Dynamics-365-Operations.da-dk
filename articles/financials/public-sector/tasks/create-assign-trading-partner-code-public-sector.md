@@ -1,7 +1,7 @@
 --- 
 title: Oprette og tildele en handelspartnerkode i den offentlige sektor
 description: Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f3d372859fbb3afc8dc396dae71280377675ed57
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 45672f476cc68525350982852a3437f0699870af
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-and-assign-a-trading-partner-code-in-the-public-sector"></a><span data-ttu-id="7372c-103">Oprette og tildele en handelspartnerkode i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="7372c-103">Create and assign a trading partner code in the public sector</span></span>

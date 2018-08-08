@@ -1,7 +1,7 @@
 --- 
 title: "Oprette et halvfærdigt produkt (kun februar 2016)"
 description: Denne opgave drejer sig om oprettelse af et halvfabrikataprodukt.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 0fc8dfe976f3a9aee29c53ceb8d77cbe7242e053
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 76fcba3732879f85c9bf0faa6d2481b9c5313a17
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-semi-finished-product-february-2016-only"></a><span data-ttu-id="4312a-103">Oprette et halvfærdigt produkt (kun februar 2016)</span><span class="sxs-lookup"><span data-stu-id="4312a-103">Create a semi-finished product (February 2016 only)</span></span>

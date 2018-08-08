@@ -1,7 +1,7 @@
 --- 
 title: "Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet"
 description: "Denne fremgangsmåde viser, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3f08049ad8d670be808c3a51bb8735ac489eda94
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="b1e68-103">Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet</span><span class="sxs-lookup"><span data-stu-id="b1e68-103">Plan loads and shipments using the Load planning workbench</span></span>

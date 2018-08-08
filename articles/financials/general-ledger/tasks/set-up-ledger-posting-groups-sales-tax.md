@@ -1,7 +1,7 @@
 --- 
 title: Oprette finanskonteringsgrupper til moms
 description: "Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgrupperne."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b2587af5e004bb6ccebe01487a7b3b92ee965f38
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 97e3ec21bd665a2c5f4afbaf1ff83d468c2cc841
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a><span data-ttu-id="4709a-103">Oprette finanskonteringsgrupper til moms</span><span class="sxs-lookup"><span data-stu-id="4709a-103">Set up ledger posting groups for sales tax</span></span>

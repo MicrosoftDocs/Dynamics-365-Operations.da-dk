@@ -1,7 +1,7 @@
 ---
 title: Kreditorbetalinger i den offentlige sektor
 description: "I denne artikel introduceres du til den offentlige sektors funktioner for Kreditor, som er integreret i Microsoft Dynamics 365 for Finance and Operations. Disse funktioner omfatter IO-koder, bogføringsdefinitioner, engangskreditorfakturering, 1099-skatteformularer, kasserabatter, kreditorcertificeringstyper, aktivitetsoversigt for Projektregnskab, elektroniske betalinger, forsider og signatursider til rapporter, IO-linjebeløb og kladdesider i kreditorfakturaer."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEntity, PurchAgreementListPage, PurchTableListPage, SrmParameters, VendCertificationType, VendCoverPageLayout, VendOpenInvoicesListPage, VendParametersVendParameters, VendTableListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19661
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
@@ -20,10 +20,10 @@ ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4536e3df80c00347962e6cfad64382089e2fea7f
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: bc5fd2698f8a8d10e06dcf742995c653e87a817f
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

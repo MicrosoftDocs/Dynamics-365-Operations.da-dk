@@ -1,7 +1,7 @@
 --- 
 title: Konfigurere momsgrupper og varemomsgrupper
 description: "Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsgrupper."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2015
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1214d86be5f8f5a5d1c65e25dfc0d4c046ff6e62
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 4488f271d55b849641dfd84a5a9c0691efb5dbad
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="8a3a0-103">Konfigurere momsgrupper og varemomsgrupper</span><span class="sxs-lookup"><span data-stu-id="8a3a0-103">Set up sales tax groups and item sales tax groups</span></span>

@@ -1,7 +1,7 @@
 --- 
 title: "Oprette en indkøbsordre, der er underlagt budgettet"
 description: "Brug denne procedure, når du vil oprette en indkøbsordre, der skal kontrolleres for disponibelt budget."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c0c7b058885ca7299b858a62b279985ba66e7c6
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: e82e40d67547f5932a4805f2580e8c9f58def284
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="2240a-103">Oprette en indkøbsordre, der er underlagt budgettet</span><span class="sxs-lookup"><span data-stu-id="2240a-103">Create a purchase order governed by budget</span></span>

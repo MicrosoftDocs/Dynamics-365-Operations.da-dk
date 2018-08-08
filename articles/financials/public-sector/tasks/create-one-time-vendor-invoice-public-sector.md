@@ -1,7 +1,7 @@
 --- 
 title: Oprette en engangskreditor og -faktura i den offentlige sektor
 description: "Kreditorpost bruger værdier fra standardengangskreditorkontoen."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6926f2716dcae3b1af28dd0cea315bfbd88c6724
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 7b5897fb3246f4bb046264a3629f83a0a4369aed
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-one-time-vendor-and-invoice-in-the-public-sector"></a><span data-ttu-id="39c39-103">Oprette en engangskreditor og -faktura i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="39c39-103">Create a one-time vendor and invoice in the public sector</span></span>
