@@ -1,7 +1,7 @@
 ---
 title: Regnskabsfordelinger
 description: "Denne artikel indeholder oplysninger om regnskabsfordelinger og beskriver de indstillinger, der er tilgængelige ved behandling af dem. Regnskabsfordelinger bruges til at allokere pengebeløb til et kildedokument til bestemte finanskonti."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingDistribution
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c

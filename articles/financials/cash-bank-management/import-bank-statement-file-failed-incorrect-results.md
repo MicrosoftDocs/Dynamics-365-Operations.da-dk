@@ -1,7 +1,7 @@
 ---
 title: Fejlfinding af filimport af bankkontoudtog
 description: "Det er vigtigt, at bankkontoudtogsfilen fra banken svarer til det layout, som Microsoft Dynamics 365 for Finance and Operations understøtter. På grund af strenge standarder for bankkontoudtog fungerer de fleste integrationer korrekt. Men nogle gange kan udtogsfilen ikke importeres eller giver forkerte resultater. Normalt skyldes disse problemer små forskelle i bankkontoudtogsfilen. Denne artikel forklarer, hvordan du løser disse forskelle og løser problemerne."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankStatementFormat
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3

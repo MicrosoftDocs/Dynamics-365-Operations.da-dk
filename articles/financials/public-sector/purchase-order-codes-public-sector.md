@@ -1,7 +1,7 @@
 ---
 title: "Indkøbsordrekoder i den offentlige sektor"
 description: "Denne artikel indeholder oplysninger om koder og særlige meddelelser, der kan bruges til bekræftelse af indkøbsordrer. En bekræftende indkøbsordre omgår den typiske indkøbsproces."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConfirmingPOCodes, PurchTableListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 27291
 ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df

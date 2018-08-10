@@ -1,7 +1,7 @@
 ---
 title: "Anskaffe aktiver via indkøb"
 description: "I dette emne beskrives det, hvordan du kan konfigurere integration mellem Anlægsaktiver og Kreditor, så der automatisk oprettes anlægsaktiver ud fra indkøbsordrer eller kreditorfakturaer, eller så der automatisk bogføres posteringer med anskaffelser eller anskaffelsesreguleringer for anlægsaktiver."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec

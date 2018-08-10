@@ -1,7 +1,7 @@
 ---
 title: Foretag fordelinger
 description: "Denne artikel indeholder oplysninger om allokeringer, indstillinger for behandling af dem i Microsoft Dynamics 365 for Finance and Operations, og hvordan de kan bruges i budgetplanlægning. Tildelinger bruges til at distribuere beløb på tværs af flere finanskontokombinationer. De hjælper med at sikre, at udgifter eller indtægter debiteres for det rigtige objekt i regnskabet."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 17361
 ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023

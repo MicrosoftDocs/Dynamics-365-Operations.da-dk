@@ -1,7 +1,7 @@
 ---
 title: Sikkerhedsroller i den offentlige sektor
 description: "I denne artikel beskrives funktionen for sikkerhedsroller i den offentlige sektor. Disse funktioner omfatter rollerne Projektleder og Indkøber for den offentlige sektor."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: UserRequestListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19721
 ms.assetid: e26a6d93-851e-46be-8543-de2798909350

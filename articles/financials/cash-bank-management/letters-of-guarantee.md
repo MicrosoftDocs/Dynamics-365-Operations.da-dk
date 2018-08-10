@@ -1,7 +1,7 @@
 ---
 title: Garantier
 description: "Denne artikel indeholder oplysninger om garantier. I en garanti accepterer en bank at betale et bestemt pengebeløb til en person, hvis en af bankens kunder misligholder en betaling eller en forpligtelse til den pågældende person."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BankLGGuarantee
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 18291
 ms.assetid: 5c0b5e37-d51d-4a01-bb37-1882173abb9f

@@ -1,7 +1,7 @@
 --- 
 title: Konfigurere vareomfordeling for kort plukning
 description: "Denne fremgangsmåde viser, hvordan du giver lagermedarbejderne mulighed for hurtigt at finde alternative lokaliteter, hvis der ikke er tilstrækkeligt lager på den lokalitet, der er blevet henvist til."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution

@@ -1,7 +1,7 @@
 ---
 title: Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 description: Offentlige organisationer kan bruge faktureringsklassificeringer og faktureringskoder til at administrere fritekstfakturaer.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19491
 ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3

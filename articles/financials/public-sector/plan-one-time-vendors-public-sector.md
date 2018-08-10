@@ -1,7 +1,7 @@
 ---
 title: "Planlægning af engangsleverandører i den offentlige sektor"
 description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 27251
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c

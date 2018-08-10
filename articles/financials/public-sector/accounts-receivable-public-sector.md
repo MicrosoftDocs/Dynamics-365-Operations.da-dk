@@ -1,7 +1,7 @@
 ---
 title: Debitorer i den offentlige sektor
 description: "I dette emne beskrives de funktioner for Debitorer, som er tilgængelige for den offentlige sektor."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 26281
 ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e

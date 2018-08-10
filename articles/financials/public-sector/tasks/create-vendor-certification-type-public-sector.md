@@ -1,7 +1,7 @@
 --- 
 title: Oprette en kreditorcertificeringstype i den offentlige sektor
 description: "Du kan oprette enhver form for certificering, som kreditorerne har, og tildele dem til leverandørorganisationer som f.eks. professionelle legitimationsoplysninger, ansvarsforsikring, mindretalsstatus eller overholdelse af forskellige miljømæssige eller forbrugerrelaterede sikkerhedsstandarder."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,11 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

@@ -1,7 +1,7 @@
 ---
 title: Budgetanalyse i den offentlig sektor
 description: "Dette emne beskriver, hvordan du bruger siden Budgetanalyse til at få vist indtægter og udgifter efter økonomisk dimension, og det besvarer ofte stillede spørgsmål, herunder forskellene på siden Budgetanalyse og statistiksiden Budgetstyring."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 02/07/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19641
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8

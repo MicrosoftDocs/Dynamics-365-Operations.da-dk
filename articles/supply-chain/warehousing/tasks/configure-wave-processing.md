@@ -1,7 +1,7 @@
 --- 
 title: "Konfigurere behandling af bølge"
 description: "Denne vejledning beskriver, hvordan du konfigurerer de kriterier, der bestemmer, hviket arbejde der genereres for et lagersted, når en bølge behandles, og om bølger behandles manuelt eller automatisk."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution

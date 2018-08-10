@@ -1,7 +1,7 @@
 --- 
 title: "Beregne og justere moms på en kreditorfaktura"
 description: "Hvis det oprindelige kildedokument viser forskellige momsbeløb som beregnet, kan du justere beløbene, før der bogføres."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman

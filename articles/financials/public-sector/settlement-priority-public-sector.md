@@ -1,7 +1,7 @@
 ---
 title: Udligningsprioritet i den offentlige sektor
 description: "I Microsoft Dynamics 365 for Finance and Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 19551
 ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7

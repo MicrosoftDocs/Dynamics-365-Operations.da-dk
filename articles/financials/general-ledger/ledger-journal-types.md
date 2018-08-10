@@ -1,7 +1,7 @@
 ---
 title: Finanskladdetyper
 description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
