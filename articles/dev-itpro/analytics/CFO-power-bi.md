@@ -29,7 +29,6 @@ ms.lasthandoff: 02/23/2018
 
 Dette emne beskriver Microsoft Power BI-indhold for **Regnskabsdirektørens oversigt**. Dette Power BI-indhold gælder for dem, der bruger Microsoft Dynamics 365 for Finance and Operations version 7.2. Hvis du bruger version 7.3 eller en nyere version, skal du se under [Økonomisk indsigt](financial-insights.md).
 
-
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
 Rapporter fra Power BI-indholdet **Regnskabsdirektørens oversigt** vises i arbejdsområdet **Regnskabsdirektørens oversigt**.
@@ -39,13 +38,11 @@ Power BI-indhold for **Regnskabsdirektørens oversigt** er sammensat af rapporte
 
 I følgende tabel vises det Power BI-indhold, som rapporterne kopieres fra, og de rapporter, der findes i arbejdsområdet **Regnskabsdirektørens oversigt**. Der findes links til dokumentationen for forskelligt Power BI-indhold.
 
-| Power BI-indhold, som er inkluderet     | Rapporter |
-|---------------------------------------|---------|
+| Power BI-indhold, som er inkluderet | Rapporter |
+|-----------------------------------|---------|
 | [Økonomisk performance](financial-performance-power-bi-content-pack.md) | <ul><li>Indtægter</li><li>Udgifter</li><li>Nettoresultat</li><li>Bruttoavance</li><li>Aktuel dækningsgrad</li><li>Sum af kreditorer</li><li>Sum af debitorer</li><li>Udgifter efter kontokategori</li><li>Udgifter - Faktisk vs. budget</li><li>Indtægt - Faktisk vs. budget</li></ul> |
 | [Oversigt over kontanter](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md) | <ul><li>Likviditetsbudget</li><li>Saldo for bankkonto</li><li>Saldo pr. valuta</li></ul> |
 | [Salgs og rentabilitet](sales-profitability-performance-content-pack.md) | <ul><li>Indtægt pr. område</li><li>Top 10-kunder efter omsætning</li><li>Top 10-produkter efter omsætning</li></ul> |
 | [Styring af kredit og inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Forfalden debitor</li><li>Kunders over kreditmaksimum</li><li>Aldersfordelte saldi</li></ul> |
 | [Købsforbrugsanalyse](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Køb efter måned/dag</li><li>10 bedste leverandører efter indkøb</li><li>10 bedste leverandører efter indkøb</li></ul> |
-
-
 

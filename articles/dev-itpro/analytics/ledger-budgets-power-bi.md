@@ -28,11 +28,11 @@ ms.lasthandoff: 12/18/2017
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives Microsoft Power BI-indhold til **Faktisk vs. budget**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken. 
+I dette emne beskrives Microsoft Power BI-indhold til **Faktisk vs. budget**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
-Power BI-indholdet til **Faktisk vs. budget** er beregnet til personer, der er ansvarlige for at overvåge performance for faktisk vs. budget i deres organisation. Power BI-indholdet til **Faktisk vs. budget** skaber synlighed i dine budgetafvigelser. Du kan analysere budgettet for det indeværende år efter kontokategori, budgetkode, hovedkonto, beskrivelser af hovedkonto eller regnskabsperiode for at få en bedre forståelse af årsagen til eventuelle afvigelser. 
+Power BI-indholdet til **Faktisk vs. budget** er beregnet til personer, der er ansvarlige for at overvåge performance for faktisk vs. budget i deres organisation. Power BI-indholdet til **Faktisk vs. budget** skaber synlighed i dine budgetafvigelser. Du kan analysere budgettet for det indeværende år efter kontokategori, budgetkode, hovedkonto, beskrivelser af hovedkonto eller regnskabsperiode for at få en bedre forståelse af årsagen til eventuelle afvigelser.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 Rapporter fra Power BI-indholdet **Faktisk vs. budget** vises i arbejdsområderne **Finansbudgetter og budgetter** og **Regnskabsdirektør** .
@@ -40,25 +40,23 @@ Rapporter fra Power BI-indholdet **Faktisk vs. budget** vises i arbejdsområdern
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet til **Faktisk vs. budget**.
 
-
-|           Rapport            |                                       Metrik                                        |
-|-----------------------------|--------------------------------------------------------------------------------------|
-| Udgifter - Faktisk vs. budget |  <ul><li>Samlede udgifter i år</li><li>Budgetterede samlede udgifter i år</li></ul>  |
-| Indtægt - Faktisk vs. budget  |   <ul><li>Samlet omsætning i år</li><li>Samlet budgetteret omsætning i år</li><ul>    |
-|           Udgift           | <ul><li>Samlede udgifter i år</li><li>Mål for udgifter baseret på budget </li><ul> |
-|           Indtægter           |  <ul><li>Samlet omsætning i år</li><li>Mål for indtægter baseret på budget </li><ul>  |
-|         Nettoresultat          |  <ul><li>Nettoresultat i år</li><li>Mål for nettoindkomst baseret på budget </li><ul>  |
+| Rapport                      | Metrik                                                                             |
+|-----------------------------|-------------------------------------------------------------------------------------|
+| Udgifter - Faktisk vs. budget | <ul><li>Samlede udgifter i år</li><li>Budgetterede samlede udgifter i år</li></ul>  |
+| Indtægt - Faktisk vs. budget  | <ul><li>Samlet omsætning i år</li><li>Samlet budgetteret omsætning i år</li><ul>     |
+| Udgift                     | <ul><li>Samlede udgifter i år</li><li>Mål for udgifter baseret på budget</li><ul> |
+| Indtægter                     | <ul><li>Samlet omsætning i år</li><li>Mål for indtægter baseret på budget</li><ul>   |
+| Nettoresultat                  | <ul><li>Nettoresultat i år</li><li>Mål for nettoindkomst baseret på budget</li><ul>   |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
-|          Enhed           |                                     Indhold                                     |
+| Enhed                    | Indhold                                                                         |
 |---------------------------|----------------------------------------------------------------------------------|
-| Finansaktiviteter |                    Transaktionsbeløb for Finans                    |
-|     Budgetaktiviteter     |                   Transaktionsbeløb for budgetregisteret                    |
-|       Hovedkonti       |                        Hovedkonti til at filtrere rapporter efter                        |
-|     Regnskabskalendere      |                      Regnskabskalendere til at filtrere rapporter efter                       |
-|          Finans          |       Finanskonti, der kan bruges til at filtrere rapporten til det aktuelle finansmodul        |
-|       Budgetkoder        |                        Budgetkoder, som rapporter kan filtreres efter                         |
-|      Juridiske enheder       | Juridiske enheder, der kan bruges til at filtrere rapporten til den aktuelle juridisk enhed |
-
+| Finansaktiviteter | Transaktionsbeløb for Finans                                       |
+| Budgetaktiviteter         | Transaktionsbeløb for budgetregisteret                                      |
+| Hovedkonti             | Hovedkonti til at filtrere rapporter efter                                               |
+| Regnskabskalendere          | Regnskabskalendere til at filtrere rapporter efter                                            |
+| Finans                   | Finanskonti, der kan bruges til at filtrere rapporten til det aktuelle finansmodul              |
+| Budgetkoder              | Budgetkoder, som rapporter kan filtreres efter                                                |
+| Juridiske enheder            | Juridiske enheder, der kan bruges til at filtrere rapporten til den aktuelle juridisk enhed |
 
