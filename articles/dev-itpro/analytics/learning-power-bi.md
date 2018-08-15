@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6a0c1459da8770a8cc880a48483102494feb38bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -64,6 +64,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="09345-162">Stilling</span><span class="sxs-lookup"><span data-stu-id="09345-162">Position</span></span>         | <span data-ttu-id="09345-163">Stilling, titel og tilsvarende fuld tid (fuldtidsansat)</span><span class="sxs-lookup"><span data-stu-id="09345-163">Position, title, and full-time equivalent (FTE)</span></span>                  | <span data-ttu-id="09345-164">Kursusagenda, kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="09345-164">Course Agenda, Course Attendees</span></span> |
 | <span data-ttu-id="09345-165">Medarbejdernavn</span><span class="sxs-lookup"><span data-stu-id="09345-165">Employee Name</span></span>    | <span data-ttu-id="09345-166">Fornavn, efternavn og fulde navn</span><span class="sxs-lookup"><span data-stu-id="09345-166">First name, last name, and full name</span></span>                             | <span data-ttu-id="09345-167">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="09345-167">Course Attendees</span></span> |
 | <span data-ttu-id="09345-168">Medarbejdertitel</span><span class="sxs-lookup"><span data-stu-id="09345-168">Employee Title</span></span>   | <span data-ttu-id="09345-169">Titel og anciennitetsdato</span><span class="sxs-lookup"><span data-stu-id="09345-169">Title and seniority date</span></span>                                         | <span data-ttu-id="09345-170">Kursusdeltagere</span><span class="sxs-lookup"><span data-stu-id="09345-170">Course Attendees</span></span> |
-
-
 

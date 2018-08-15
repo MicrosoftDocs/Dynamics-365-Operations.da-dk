@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 63432fe5fe98b2c20ddbf9ebec6ac14b981f0106
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="013e0-105">I dette emne beskrives Microsoft Power BI-indholdet til **Rekruttering**.</span><span class="sxs-lookup"><span data-stu-id="013e0-105">This topic describes the **Recruiting** Microsoft Power BI content.</span></span> <span data-ttu-id="013e0-106">Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.</span><span class="sxs-lookup"><span data-stu-id="013e0-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 
 ## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="013e0-107">Adgang til Power BI-indhold</span><span class="sxs-lookup"><span data-stu-id="013e0-107">Accessing the Power BI content</span></span>
-<span data-ttu-id="013e0-108">Power BI-indholdet **Rekruttering** vises i arbejdsområdet **Administration af rekruttering**.</span><span class="sxs-lookup"><span data-stu-id="013e0-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span> 
+<span data-ttu-id="013e0-108">Power BI-indholdet **Rekruttering** vises i arbejdsområdet **Administration af rekruttering**.</span><span class="sxs-lookup"><span data-stu-id="013e0-108">The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.</span></span>
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a><span data-ttu-id="013e0-109">Rapporter og grafik i arbejdsområdet Administration af rekruttering</span><span class="sxs-lookup"><span data-stu-id="013e0-109">Reports and visuals in the Recruitment management workspace</span></span>
 <span data-ttu-id="013e0-110">Arbejdsområdet **Administration af rekruttering** indeholder fanen **Analyser**. Denne fane indeholder integreret Power BI-indhold til rekruttering.</span><span class="sxs-lookup"><span data-stu-id="013e0-110">The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting.</span></span> <span data-ttu-id="013e0-111">Indholdet består af en fane med en oversigt og yderligere faner, der indeholder detaljer.</span><span class="sxs-lookup"><span data-stu-id="013e0-111">The content consists of an overview tab and additional tabs that contain details.</span></span> <span data-ttu-id="013e0-112">Rapporterne er beskrevet under hver fane i følgende tabel.</span><span class="sxs-lookup"><span data-stu-id="013e0-112">The following table describes the reports on each tab.</span></span>
@@ -66,6 +66,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="013e0-163">Ydeevne</span><span class="sxs-lookup"><span data-stu-id="013e0-163">Performance</span></span>          | <span data-ttu-id="013e0-164">Klassifikation, beskrivelse og klassifikationsmodel</span><span class="sxs-lookup"><span data-stu-id="013e0-164">Rating, description, and rating model</span></span>                            | <span data-ttu-id="013e0-165">Ansøger, ansøgeren blev ansat, afsluttet ansøger</span><span class="sxs-lookup"><span data-stu-id="013e0-165">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="013e0-166">Rekrutteringsprojekt</span><span class="sxs-lookup"><span data-stu-id="013e0-166">Recruitment Project</span></span>  | <span data-ttu-id="013e0-167">Projektbeskrivelse, projektstatus og åbninger</span><span class="sxs-lookup"><span data-stu-id="013e0-167">Project description, project status, and openings</span></span>                | <span data-ttu-id="013e0-168">Ansøger, ansøgeren blev ansat, afsluttet ansøger</span><span class="sxs-lookup"><span data-stu-id="013e0-168">Applicant, Employed Applicant, Terminated Applicant</span></span> |
 | <span data-ttu-id="013e0-169">Afsluttet ansøger</span><span class="sxs-lookup"><span data-stu-id="013e0-169">Terminated Applicant</span></span> | <span data-ttu-id="013e0-170">Afsluttede ansøgere, årsag, performance og fratrædelsesdato</span><span class="sxs-lookup"><span data-stu-id="013e0-170">Terminated applicants, reason, performance, and termination date</span></span> | <span data-ttu-id="013e0-171">Firma, kalenderforskydning, dato, geografisk placering, performance, demografi, ansættelse, medier, rekrutteringsprojekt, ansøgers navn</span><span class="sxs-lookup"><span data-stu-id="013e0-171">Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name</span></span> |
-
-
 
