@@ -1,5 +1,5 @@
 ---
-title: Konfigurere en parallel aktivitet i en arbejdsgang
+title: Konfigurere parallelle aktiviteter i en arbejdsgang
 description: "Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel aktivitet."
 author: sericks007
 manager: AnnBe
@@ -18,39 +18,39 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3e0cf27c7932415c822843b3376894ba172578b9
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a><span data-ttu-id="5c76c-103">Konfigurere en parallel aktivitet i en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="5c76c-103">Configure a parallel activity in a workflow</span></span>
+# <a name="configure-parallel-activities-in-a-workflow"></a><span data-ttu-id="c65a1-103">Konfigurere parallelle aktiviteter i en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="c65a1-103">Configure parallel activities in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5c76c-104">Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel aktivitet.</span><span class="sxs-lookup"><span data-stu-id="5c76c-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="c65a1-104">Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en parallel aktivitet.</span><span class="sxs-lookup"><span data-stu-id="c65a1-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="5c76c-105">En parallel aktivitet består af grene i en arbejdsgang, der kører samtidigt.</span><span class="sxs-lookup"><span data-stu-id="5c76c-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
+<span data-ttu-id="c65a1-105">En parallel aktivitet består af grene i en arbejdsgang, der kører samtidigt.</span><span class="sxs-lookup"><span data-stu-id="c65a1-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
 
-## <a name="name-a-parallel-activity"></a><span data-ttu-id="5c76c-106">Navnet på en parallel aktivitet</span><span class="sxs-lookup"><span data-stu-id="5c76c-106">Name a parallel activity</span></span>
-<span data-ttu-id="5c76c-107">Udfør følgende trin for at angive et navn på den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="5c76c-107">Follow these steps to enter a name for a parallel activity.</span></span>
-1.  <span data-ttu-id="5c76c-108">Højreklik på den parallelle aktivitet, og klik derefter på **Egenskaber** for at åbne formen **Egenskaber**.</span><span class="sxs-lookup"><span data-stu-id="5c76c-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
-2.  <span data-ttu-id="5c76c-109">Klik på **Grundlæggende indstillinger** i venstre rude.</span><span class="sxs-lookup"><span data-stu-id="5c76c-109">In the left pane, click **Basic Settings**.</span></span>
-3.  <span data-ttu-id="5c76c-110">Angiv et entydigt navn på den parallelle aktivitet i feltet **Nanv**.</span><span class="sxs-lookup"><span data-stu-id="5c76c-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
-4.  <span data-ttu-id="5c76c-111">Klik på **Luk**.</span><span class="sxs-lookup"><span data-stu-id="5c76c-111">Click **Close**.</span></span>
+## <a name="name-a-parallel-activity"></a><span data-ttu-id="c65a1-106">Navnet på en parallel aktivitet</span><span class="sxs-lookup"><span data-stu-id="c65a1-106">Name a parallel activity</span></span>
+<span data-ttu-id="c65a1-107">Udfør følgende trin for at angive et navn på den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="c65a1-107">Follow these steps to enter a name for a parallel activity.</span></span>
+1.  <span data-ttu-id="c65a1-108">Højreklik på den parallelle aktivitet, og klik derefter på **Egenskaber** for at åbne formen **Egenskaber**.</span><span class="sxs-lookup"><span data-stu-id="c65a1-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
+2.  <span data-ttu-id="c65a1-109">Klik på **Grundlæggende indstillinger** i venstre rude.</span><span class="sxs-lookup"><span data-stu-id="c65a1-109">In the left pane, click **Basic Settings**.</span></span>
+3.  <span data-ttu-id="c65a1-110">Angiv et entydigt navn på den parallelle aktivitet i feltet **Nanv**.</span><span class="sxs-lookup"><span data-stu-id="c65a1-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
+4.  <span data-ttu-id="c65a1-111">Klik på **Luk**.</span><span class="sxs-lookup"><span data-stu-id="c65a1-111">Click **Close**.</span></span>
 
-## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="5c76c-112">Konfigurere grenene i den parallelle aktivitet</span><span class="sxs-lookup"><span data-stu-id="5c76c-112">Configure the branches of a parallel activity</span></span>
-<span data-ttu-id="5c76c-113">Udfør følgende trin for at tilføje og konfigurere grenene i den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="5c76c-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
-1. <span data-ttu-id="5c76c-114">Dobbeltklik på den parallelle aktivitet for at få vist grenene i den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="5c76c-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
-2. <span data-ttu-id="5c76c-115">Du kan tilføje en gren ved at trække elementet **Gren** fra området **Arbejdsgangselementer** til et indsættelsespunkt på lærredet.</span><span class="sxs-lookup"><span data-stu-id="5c76c-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="5c76c-116">I følgende illustration vises et indsættelsespunkt.![Indsættelsespunkt](./media/workflow_insertionpoint.gif)</span><span class="sxs-lookup"><span data-stu-id="5c76c-116">The following figure shows an insertion point.![Insertion point](./media/workflow_insertionpoint.gif)</span></span>
+## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="c65a1-112">Konfigurere grenene i den parallelle aktivitet</span><span class="sxs-lookup"><span data-stu-id="c65a1-112">Configure the branches of a parallel activity</span></span>
+<span data-ttu-id="c65a1-113">Udfør følgende trin for at tilføje og konfigurere grenene i den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="c65a1-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
+1. <span data-ttu-id="c65a1-114">Dobbeltklik på den parallelle aktivitet for at få vist grenene i den parallelle aktivitet.</span><span class="sxs-lookup"><span data-stu-id="c65a1-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
+2. <span data-ttu-id="c65a1-115">Du kan tilføje en gren ved at trække elementet **Gren** fra området **Arbejdsgangselementer** til et indsættelsespunkt på lærredet.</span><span class="sxs-lookup"><span data-stu-id="c65a1-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="c65a1-116">I følgende illustration vises et indsættelsespunkt.![Indsættelsespunkt](./media/workflow_insertionpoint.gif)</span><span class="sxs-lookup"><span data-stu-id="c65a1-116">The following figure shows an insertion point.![Insertion point](./media/workflow_insertionpoint.gif)</span></span>
 
-   |                                              <span data-ttu-id="5c76c-117"><strong>Bemærk!</strong></span><span class="sxs-lookup"><span data-stu-id="5c76c-117"><strong>Note</strong></span></span>                                               |
+   |                                              <span data-ttu-id="c65a1-117"><strong>Bemærk!</strong></span><span class="sxs-lookup"><span data-stu-id="c65a1-117"><strong>Note</strong></span></span>                                               |
    |------------------------------------------------------------------------------------------------------------------|
-   | <span data-ttu-id="5c76c-118">Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt.</span><span class="sxs-lookup"><span data-stu-id="5c76c-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span> |
+   | <span data-ttu-id="c65a1-118">Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt.</span><span class="sxs-lookup"><span data-stu-id="c65a1-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span> |
 
 
-3. <span data-ttu-id="5c76c-119">Hvis du vil konfigurere hver gren, skal du se [Konfigurere en parallel gren](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="5c76c-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
+3. <span data-ttu-id="c65a1-119">Hvis du vil konfigurere hver gren, skal du se [Konfigurere en parallel gren](configure-parallel-branch-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="c65a1-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
 
 
 
