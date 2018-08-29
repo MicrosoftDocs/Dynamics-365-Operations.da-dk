@@ -1,5 +1,5 @@
 ---
-title: Mobilapp-startside
+title: Startside for Dynamics 365 for Unified Operations Mobile-app
 description: "I dette emne beskrives Microsoft Dynamics 365 for Unified Operations-mobilappen. Emnet indeholder links til ressourcer, der kan hjælpe dig med implementere appen i din organisation."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4736a7041c746350fa073bd58929c840f7689bf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b9cdb2b2c2b5aaf7743cd2cd0dbfee6c602a5a46
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="mobile-app-home-page"></a>Mobilapp-startside
+# <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Startside for Dynamics 365 for Unified Operations Mobile-app
 
 [!include [banner](../includes/banner.md)]
 

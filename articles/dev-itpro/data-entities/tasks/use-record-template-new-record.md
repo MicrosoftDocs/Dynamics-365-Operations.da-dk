@@ -1,5 +1,5 @@
 --- 
-title: Bruge en postskabelon til at oprette en ny post
+title: Oprette poster ved brug af postskabeloner
 description: Denne procedure viser, hvordan du bruger en foruddefineret skabelon til at oprette en ny post.
 author: sericks007
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 8f8b63302dfd82910d7579d2890de8194989bb8e
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 4d2a5aa8be3d9ddebfe842ba4029933eff4c337d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="use-a-record-template-to-create-a-new-record"></a>Bruge en postskabelon til at oprette en ny post
+# <a name="create-records-by-using-record-templates"></a>Oprette poster ved brug af postskabeloner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

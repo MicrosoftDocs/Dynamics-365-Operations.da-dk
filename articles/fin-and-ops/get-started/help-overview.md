@@ -1,9 +1,9 @@
 ---
-title: "Oversigt over Hjælp"
+title: "Hjælp-system til Finance and Operations"
 description: "Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="help-system-overview"></a>Oversigt over Hjælp-system
+# <a name="finance-and-operations-help-system"></a>Hjælp-system til Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Hvis du vil abonnere på et RSS-feed for alle opdateringer til Unified Operation
 [RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Give feedback 
-Vi er meget glade for kundefeedback. Du kan enten kommentere eller foreslå ændringer til indholdet via GitHub.
+Vi er meget glade for kundefeedback. Du kan enten kommentere eller foreslå ændringer til indholdet via GitHub. Du kan finde flere oplysninger om vores feedbacksystem, i [denne blogmeddelelse](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Sende en kommentar til os 
+##### <a name="leave-us-feedback"></a>Give os feedback 
 Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til os i bunden af siden.  
 
-1 Klik på **Kommentarer** for at komme til kommentarerne i bunden af siden.
+1. Klik på **Feedback** for at få adgang til kommentarerne i bunden af siden, og klik derefter enten på **Produktfeedback** eller **Log på for at give feedback på dokumentation**.
 
-![Bemærkninger](./media/comments.png)
+![Tilbagemelding](./media/comments.png)
 
-2 Begynd at skrive dine kommentarer, og klik derefter på **Send kommentar**.
+2. Begynd at skrive dine kommentarer, og klik derefter på **Send feedback**.
 
-![Send kommentar](./media/before-signin.png)
+![Send kommentar](./media/feedback.png)
 
-3 Vælg den type konto, du vil logge på med:  
-Klik på et af ikonerne til venstre for at knytte dette websted til en eksisterende konto, f.eks. en Twitter-, Facebook- eller Microsoft-konto. 
-
-Eller 
-
-Angiv en mailadresse og en ny adgangskode til at oprette en ny konto til webstedet til højre. 
-
-![Indstillinger for logon](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en ændring eller bidrage med indhold via GitHub
@@ -115,7 +107,6 @@ Yderligere oplysninger finder du i vores vejledning til bidragydere: https://git
 
 > [!NOTE]
 > Vi vil kun accepterer oprettelse af bidrag på vores engelske lagre på nuværende tidspunkt.  
-> Vi accepterer ikke, at problemer indberettes via GitHub – sørg for at bruge en pull-anmodning til forslag om indhold. Produkt- og funktionsfeedback håndteres bedst via portalen Dynamics 365-ideer: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Opgaveguider

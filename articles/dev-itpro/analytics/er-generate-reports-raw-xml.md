@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>Generere ER-rapporter ved at tilføje indhold som ubehandlede XML-filer
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
 
 [!include[banner](../includes/banner.md)]
 
 Du kan bruge det nye **RAW XML**-formatelement til at designe ER-formater, der genererer udgående dokumenter i XML-format. I nogle tilfælde kan du vælge at føje ubehandlede XML-data til disse rapporter af en eller flere af følgende årsager:
 
-- Det er nemmere at bruge ubehandlede XML-filer til det oprindelige design og løbende vedligeholdelse af en rapport, fordi XML-strukturen automatisk kan genereres ved at udføre et kørselsudtryk. Derfor er det ikke nødvendigt at definere flere bindinger for flere formatelementer på designtidspunktet. Det er muligt, når de datakilder, du bruger, indeholder oplysninger, der kan bruges til at oprette XML-elementer, mens rapporten genereres. 
+- Det er nemmere at bruge ubehandlede XML-filer til det oprindelige design og løbende vedligeholdelse af en rapport, fordi XML-strukturen automatisk kan genereres ved at udføre et kørselsudtryk. Derfor er det ikke nødvendigt at definere flere bindinger for flere formatelementer på designtidspunktet. Det er muligt, når de datakilder, du bruger, indeholder oplysninger, der kan bruges til at oprette XML-elementer, mens rapporten genereres.
 - Ingen anden metode kan bruges til at udfylde rapporten med XML-indhold, der er modtaget tidligere og gemt i systemet. F.eks. kan det XML-svar, der genereres, muligvis indeholde indholdet af en XML-anmodning, der er sendt tidligere.
 - Ingen anden metode kan bruges til at indsætte tegn i det genererede dokument baseret på deres numeriske koder. For nogle sprog og tegn findes der ikke kode af denne type. Eksempler omfatter det græske bogstav rho (ρ) og HTML-enhedskoder som \&eacute; for et *e*, der har en aigu (é).
 

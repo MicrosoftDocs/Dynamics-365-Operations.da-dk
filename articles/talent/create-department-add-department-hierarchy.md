@@ -1,5 +1,5 @@
 ---
-title: Oprette en afdeling og knytte den til afdelingshierarkiet
+title: Oprette afdelinger og knytte dem til afdelingshierarkiet
 description: "En afdeling er en driftsenhed, der repræsenterer en kategori eller et funktionsområde i en organisation. En afdeling er ansvarlig for et bestemt område i organisationen, såsom salg, regnskab eller personale. Du kan bruge afdelinger til at rapportere om funktionsområder. Afdelinger kan have ansvar for driftsregnskabet."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
-ms.openlocfilehash: 3fc30669bf7a16616484bf7115cb121ce463840f
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 14e0acb2ea16641eecb81bcf23c8b7d778b2b208
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Oprette en afdeling og knytte den til afdelingshierarkiet
+# <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Oprette afdelinger og knytte dem til afdelingshierarkiet
 
 [!include [banner](includes/banner.md)]
 

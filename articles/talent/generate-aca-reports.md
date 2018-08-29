@@ -1,5 +1,5 @@
 ---
-title: Generere Affordable Care Act-indberetninger
+title: Generere Affordable Care Act (ACA)-indberetninger
 description: "Funktionen kan hjælpe arbejdsgivere med at spore de oplysninger, der indberettes i blanketterne 1095-B og C 1095, som et led i Employer Mandate-delen af Affordable Care Act. Bemærk, at denne funktion er kun aktiveret for juridiske enheder i USA."
 author: kherr75
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1994edc5d6c932be3a285f9bb328a05504c90f07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="generate-affordable-care-act-reports"></a>Generere Affordable Care Act-indberetninger
+# <a name="generate-affordable-care-act-aca-reports"></a>Generere Affordable Care Act (ACA)-indberetninger
 
 [!include [banner](includes/banner.md)]
 

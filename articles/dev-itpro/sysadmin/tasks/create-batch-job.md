@@ -1,5 +1,5 @@
 --- 
-title: Oprette et batchjob
+title: Opret batchjob
 description: Et batchjob er en gruppe opgaver, der sendes til en AOS-forekomst (applikationsobjektserver) til automatisk behandling.
 author: maertenm
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 31c8e2ba87ef8c17a3147e1159104585258d4164
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b32c16a0c0045e22128746f81c6e9fd03370ac1f
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-a-batch-job"></a>Oprette et batchjob
+# <a name="create-batch-jobs"></a>Opret batchjob
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

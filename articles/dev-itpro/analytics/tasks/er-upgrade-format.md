@@ -1,5 +1,5 @@
 --- 
-title: Opgradere dit format ved at bruge en ny basisversion af formatet til elektronisk rapportering (ER)
+title: Opgradere formater ved at bruge nye basisversioner
 description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7a14299c3bdcc33a4441d1cc096b198af4d4ae4c
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Opgradere dit format ved at bruge en ny basisversion af formatet til elektronisk rapportering (ER)
+# <a name="upgrade-formats-by-adopting-new-base-versions"></a>Opgradere formater ved at bruge nye basisversioner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

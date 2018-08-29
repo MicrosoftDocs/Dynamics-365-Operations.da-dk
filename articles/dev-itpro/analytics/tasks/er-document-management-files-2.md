@@ -1,5 +1,5 @@
 --- 
-title: Udvide datamodel for at bruge dokumentstyringsfiler i formatoutput
+title: Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
 description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bde8c612af22ba6bf4561732399fcf2cb1b5c9b3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs"></a>Udvide datamodel for at bruge dokumentstyringsfiler i formatoutput
+# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

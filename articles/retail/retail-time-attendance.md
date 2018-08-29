@@ -1,5 +1,5 @@
 ---
-title: "Detailtid og fremmøde"
+title: "Tids- og fremmødestyring i Retail"
 description: "Dette emne beskriver de scenarier, der understøttes for styring af tids- og fremmødestyring i Microsoft Dynamics 365 for Retail."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Detailtid og fremmøde
+# <a name="time-and-attendance-management-in-retail"></a>Tids- og fremmødestyring i Retail
 
 [!include [banner](includes/banner.md)]
 
@@ -43,9 +43,9 @@ Dette emne beskriver de scenarier, der understøttes for styring af tids- og fre
 
 ### <a name="plan-worker-schedules"></a>Planlæg tidsplaner for arbejdere
 
--   Anvende profiler ved hjælp af arbejdsplanlægningen. Få flere oplysninger under <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
+-   Anvende profiler ved hjælp af arbejdsplanlægningen. Yderligere oplysninger finder du i <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-Få oplysninger om konfigurationstrinnene under <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Yderligere oplysninger om konfigurationstrinnene finder du under <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Detailspecifik konfiguration
 
@@ -135,7 +135,7 @@ En Dynamics 365 for Retail-bruger følger arbejdsgangen for at beregne, godkende
 -   Flere udklokninger
 -   Registrere fravær
 
-Få flere oplysninger om, hvordan du behandler tids- og fremmøderegistreringer, under <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Yderligere oplysninger om, hvordan du behandler tids- og fremmøderegistreringer, finder du under <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

@@ -18,14 +18,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
-ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
 ms.contentlocale: da-dk
-ms.lasthandoff: 07/10/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Introduktion til Microsoft Dynamics 365 for Finance and Operations
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 [!include [banner](includes/banner.md)]
 
 Lær at lade Microsoft Dynamics 365 for Finance and Operations arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
@@ -49,7 +49,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementeringslivscyklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding af et projekt</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Forbereder udgivelse</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Forberedelse af udgivelse</a></p>
   
 <h3><a href="../financials/index.md">Økonomistyring</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditor</a></p>
@@ -69,9 +69,9 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
 <p><a href="../talent/questionnaires.md">Spørgeskema</a></p>
 <p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">Amerikanske lønopgaver</a></p>
+<p><a href="hr/localizations/noam-usa-payroll.md">Løn i USA</a></p>
 
-<h3><a href="../supply-chain/index.md">Supply Chain Management</a></h3>
+<h3><a href="../supply-chain/index.md">Styring af forsyningskæde</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Varedisponering</a></p>

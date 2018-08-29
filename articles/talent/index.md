@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Talent
+title: Velkommen til Dynamics 365 for Talent
 description: "Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
 author: josaw
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: da-dk
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Velkommen til Microsoft Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Velkommen til Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -70,11 +70,11 @@ Dynamics 365 for Talent omfatter Attract-appen, som kan hjælpe dig med at ident
 
 ## <a name="retain-and-motivate-employees"></a>Fastholde og motivere medarbejdere
 
-Du kan oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsordninger samt definere regler, der gælder kompensationsordningen og opfylder kriterierne for denne ordning.
+Du kan oprette planer for effektivt og retfærdigt at administrere kompensation samt administrere elementer, f.eks. computere eller telefoner, som organisationen udlåner til sine medarbejdere. Du kan oprette faste og variable kompensationsplaner samt definere regler, der gælder kompensationsplanen og opfylder kriterierne for denne ordning.
 
--   [Kompensationsordninger](compensation-plans.md)
--   [Proceskompensation](process-compensation.md)
--   [Oprette faste kompensationsordninger](create-fixed-compensation-plans.md)
+-   [Kompensationsplaner](compensation-plans.md)
+-   [Behandle kompensation](process-compensation.md)
+-   [Oprette faste kompensationsplaner](create-fixed-compensation-plans.md)
 -   [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
 -   [Sådan administrerer du kompensation i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
@@ -93,14 +93,14 @@ Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvi
 
 -   [Administrere et frynsegodeprogram](manage-benefit-program.md)
 -   [Politikker for berettigelse til frynsegoder](benefit-eligibility-policies.md)
--   [Administrere udstyr, der er udlånt til arbejdere](loan-items.md)
+-   [Administrere udstyr, der udlånes til arbejdere](loan-items.md)
 -   [Sådan administrerer du frynsegoder til medarbejdere i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
 Talent kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe din organisation med at optimere færdighederne hos sit personale.
 
--   [Formen I-9-ansættelsesbekræftelse](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [Bekræftelse af I-9-ansættelsesformular](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
 -   [Overholde den amerikanske lov om handicap](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Indsamle oplysninger ved hjælp af spørgeskemaer
