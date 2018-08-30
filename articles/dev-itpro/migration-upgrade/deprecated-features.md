@@ -1,9 +1,9 @@
 ---
-title: "Frarådede funktioner"
+title: "Fjernede eller frarådede funktioner"
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -38,6 +38,9 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!Note]
 > Fra og med Dynamics 365 for Finance and Operations-versionen fra juli 2017 med platformsopdatering 8 er installationstyperne angivet for hver fjernet eller forældet funktion. Alle de tidligere versioner, der er nævnt i dette emne, understøtter kun installationer i skyen.
+
+> [!Note]
+> Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platformsopdatering 15 er kumulativ og indeholder nye eller ændrede funktioner fra platformsopdatering 13, platformsopdatering 14 og platformsopdatering 15.

@@ -1,5 +1,5 @@
 ---
-title: "Oversigt over Optimeringsrådgiver"
+title: "Optimeringsrådgiver"
 description: "Dette emne beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Microsoft Dynamics 365 Finance and Operations."
 author: roxanadiaconu
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
@@ -20,14 +20,14 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
+ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="optimization-advisor-overview"></a>Oversigt over Optimeringsrådgiver
+# <a name="optimization-advisor"></a>Optimeringsrådgiver
 
 [!include [banner](../includes/banner.md)]
 

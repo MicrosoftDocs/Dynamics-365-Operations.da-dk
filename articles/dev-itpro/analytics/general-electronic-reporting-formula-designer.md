@@ -1,5 +1,5 @@
 ---
-title: Formeldesigner i elektronisk rapportering
+title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i Elektronisk rapportering
+# <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ På kørselstidspunktet returnerer felterne <strong>Label</strong> og <strong>Be
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>I følgende illustration vises resultatet, når det designede format køres.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Baseret på sprogindstillingerne til de overordnede FILE- og FOLDER-formatelementer, udfyldes oversat tekst til etiketter og beskrivelser i outputtet til ER-formatet.</blockquote>
+<blockquote>[!NOTE] Baseret på sprogindstillingerne til de overordnede FILE- og FOLDER-formatelementer, udfyldes oversat tekst til etiketter og beskrivelser i outputtet til ER-formatet.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>I følgende illustration vises resultatet, når det justerede format køres.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Grænsen anvendes ikke på den sidste vare på den oprindelige liste, da værdien (11) af grænsekilden (vægt) overskrider den angivne grænse (9). Brug om nødvendigt enten funktionen <strong>WHERE</strong> eller udtrykket <strong>Aktiveret</strong> for det tilsvarende formatelement for at ignorere (springe over) underordnede lister under oprettelse af rapporten.</blockquote>
+<blockquote>[!NOTE] Grænsen anvendes ikke på den sidste vare på den oprindelige liste, da værdien (11) af grænsekilden (vægt) overskrider den angivne grænse (9). Brug om nødvendigt enten funktionen <strong>WHERE</strong> eller udtrykket <strong>Aktiveret</strong> for det tilsvarende formatelement for at ignorere (springe over) underordnede lister under oprettelse af rapporten.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 | NUMBERVALUE (streng, decimalseparator, ciffergrupperingsseparator) | Konverter den angivne streng til et tal. Den angivne decimalseparator bruges mellem heltallet og brøkdele af et decimaltal. Den angivne ciffergrupperingsseparator bruges som tusindseparator. | **NUMBERVALUE("1 234,56", ", " "")** returnerer værdien **1234.56**. |
 | VALUE (streng) | Konverter den angivne streng til et tal. Komma og punktum (.) betragtes som decimalseparator og en indledende bindestreg (-) bruges som et negativt fortegn. Udløs en undtagelse, hvis den angivne streng indeholder andre ikke-numeriske tegn. | **VALUE ("1 234,56")** medfører en undtagelse. |
 | ROUND (tal, decimaler) | Returner det angivne tal, når det er afrundet til det angivne antal decimaler:<ul><li>Hvis værdien for parameteren **decimaler** er større end 0 (nul), afrundes det angivne tal til det angivne antal decimaler.</li><li>Hvis værdien for parameteren **decimaler** er **0** (nul), afrundes det angivne tal til det nærmeste heltal.</li><li>Hvis værdien af parameteren **decimaler** er mindre end 0 (nul), afrundes det angivne tal mod venstre til decimalpunktet.</li></ul> | **ROUND (1200.767. 2)** afrunder til to decimaler og returnerer **1200.77**. **ROUND (1200.767, -3)** afrunder til det nærmeste multiplum af 1.000 og returnerer **1000**. |
-| ROUNDDOWN (tal, decimaler) | Returner det angivne tal, når det er nedrundet til det angivne antal decimaler.<blockquote>[!NOTE]<br>Denne funktion fungerer ligesom **ROUND**, men den runder altid det angivne tal ned (mod nul).</blockquote> | **ROUNDDOWN (1200.767. 2)** afrunder ned til to decimaler og returnerer **1200.76**. **ROUNDDOWN (1700.767, -3)** afrunder ned til det nærmeste multiplum af 1.000 og returnerer **1000**. |
-| ROUNDUP (tal, decimaler) | Returner det angivne tal, når det er rundet op til det angivne antal decimaler.<blockquote>[!NOTE]<br>Denne funktion fungerer ligesom **ROUND**, men den runder altid det angivne tal op (væk fra nul).</blockquote> | **ROUNDUP (1200.763. 2)** afrunder op til to decimaler og returnerer **1200.77**. **ROUNDUP (1200.767, -3)** afrunder op til det nærmeste multiplum af 1.000 og returnerer **2000**. |
+| ROUNDDOWN (tal, decimaler) | Returner det angivne tal, når det er nedrundet til det angivne antal decimaler.<blockquote>[!NOTE] Denne funktion fungerer ligesom **ROUND**, men den runder altid det angivne tal ned (mod nul).</blockquote> | **ROUNDDOWN (1200.767. 2)** afrunder ned til to decimaler og returnerer **1200.76**. **ROUNDDOWN (1700.767, -3)** afrunder ned til det nærmeste multiplum af 1.000 og returnerer **1000**. |
+| ROUNDUP (tal, decimaler) | Returner det angivne tal, når det er rundet op til det angivne antal decimaler.<blockquote>[!NOTE] Denne funktion fungerer ligesom **ROUND**, men den runder altid det angivne tal op (væk fra nul).</blockquote> | **ROUNDUP (1200.763. 2)** afrunder op til to decimaler og returnerer **1200.77**. **ROUNDUP (1200.767, -3)** afrunder op til det nærmeste multiplum af 1.000 og returnerer **2000**. |
 
 ### <a name="data-conversion-functions"></a>Datakonverteringsfunktioner
 
@@ -474,8 +474,8 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 
 | Funktion | Betegnelse | Eksempel |
 |----------|-------------|---------|
-| NULLCONTAINER (liste) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post.<blockquote>[!NOTE]<br>Denne funktion er forældet. Brug **EMPTYRECORD** i stedet.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
-| EMPTYRECORD (post) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post.<blockquote>[!NOTE]<br>En **null**-post er en post, hvor alle felter har en tom værdi. En tom værdi er **0** (nul) for tal, en tom streng for strenge, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
+| NULLCONTAINER (liste) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post.<blockquote>[!NOTE] Denne funktion er forældet. Brug **EMPTYRECORD** i stedet.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
+| EMPTYRECORD (post) | Returner en **null**-post, der har samme struktur som den angivne postliste eller post.<blockquote>[!NOTE] En **null**-post er en post, hvor alle felter har en tom værdi. En tom værdi er **0** (nul) for tal, en tom streng for strenge, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerer en ny tom post, der har samme struktur som den liste, der er returneret af **SPLIT**-funktionen. |
 
 ### <a name="text-functions"></a>Tekstfunktioner
 
@@ -522,14 +522,14 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <td>CHAR (tal)</td>
 <td>Returner den streng af tegn, der refereres til af det angivne Unicode-tal.</td>
 <td><strong>CHAR (255)</strong> returnerer <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Den streng, som denne funktion returnerer, afhænger af den kodning, der er valgt i det overordnede FILE-formatelement. Du kan finde listen over understøttede kodninger under <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kodningsklasse</a>.</blockquote>
+<blockquote>[!NOTE] Den streng, som denne funktion returnerer, afhænger af den kodning, der er valgt i det overordnede FILE-formatelement. Du kan finde listen over understøttede kodninger under <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Kodningsklasse</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (streng 1 [, streng 2, ...])</td>
 <td>Returner alle angivne tekststrenge, efter at de er sat ind i én streng.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returnerer <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Udtrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer også <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Udtrykket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerer også <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapport behandles den 17. december 2015 for kunden <strong>Litware Retail</strong> med dansk kultur <strong>DA</strong> og sproget <strong>DA</strong>, returnerer formlen følgende tekst, der bruger et andet datoformat:</p>
 <p>&quot;Intet at udskrive. Debitor 'Litware Retail' er spærret for 17.12.2015.&quot;</p>
-<blockquote>[!NOTE]<br>Følgende syntaks er anvendt i ER-formler for etiketter:
+<blockquote>[!NOTE] Følgende syntaks er anvendt i ER-formler for etiketter:
 <ul>
 <li><strong>For etiketter fra Finance and Operations-ressourcer:</strong> <strong>@&quot;X&quot;</strong>, hvor X er etiket-id'et i applikationsobjekttræet (AOT)</li>
 <li><strong>For etiketter, der er placeret i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, hvor X er etiket-id i ER-konfigurationen</li>
@@ -587,7 +587,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <tr>
 <td>NUMERALSTOTEXT (tal, sprog, valuta, udskriv valutanavn, decimaltegn)</td>
 <td>Returner det angivne nummer, når den er blevet skrevet helt ud (konverteret til tekststrenge) i det angivne sprog. Sprogkoden er valgfri. Når den er defineret som en tom streng, bruges sprogkoden for kørselskonteksten. (Sprogkoden for kørselskonteksten er defineret for en genererende mappe eller fil). Valutakoden er også valgfrie. Når den er defineret som en tom streng, bruges firmavalutaen.
-<blockquote>[!NOTE]<br>Flaget for parametrene <strong>udskriv valutanavn</strong> og <strong>decimaltegn</strong> analyseres kun for følgende sprogkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. Desuden analyseres <strong>udskriv valutanavn</strong>-parameteren kun for Finance and Operations-virksomheder, hvor landets eller områdets kontekst understøtter afvigelse af valutanavne.</blockquote>
+<blockquote>[!NOTE] Flaget for parametrene <strong>udskriv valutanavn</strong> og <strong>decimaltegn</strong> analyseres kun for følgende sprogkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> og <strong>RU</strong>. Desuden analyseres <strong>udskriv valutanavn</strong>-parameteren kun for Finance and Operations-virksomheder, hvor landets eller områdets kontekst understøtter afvigelse af valutanavne.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerer <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerer <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerer <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 | Funktion | Betegnelse | Eksempel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (beløb, kildevaluta, målvaluta, dato, firma) | Konverter det angivne pengebeløb fra den angivne kildevaluta til den angivne målvaluta ved hjælp af indstillingerne for det angivne Finance and Operations-firma på den angivne dato. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returnerer, hvad der svarer til én euro i amerikanske dollar på den aktuelle sessionsdato, baseret på indstillingerne for DEMF-firmaet. |
-| ROUNDAMOUNT (tal, decimaler, afrundingsregel) | Afrund det angivne beløb i henhold til det angivne antal decimaler og den angivne afrundingsregel.<blockquote>[!NOTE]<br>Afrundingsreglen skal angives som en værdi af Finance and Operations **RoundOffType**-fasttekst.</blockquote> | Hvis **model.RoundOff**-parameter er indstillet til **Downward**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.78**. Hvis **model.RoundOff**-parameter er indstillet til enten **Normal** eller **Oprunding**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.79**. |
+| ROUNDAMOUNT (tal, decimaler, afrundingsregel) | Afrund det angivne beløb i henhold til det angivne antal decimaler og den angivne afrundingsregel.<blockquote>[!NOTE] Afrundingsreglen skal angives som en værdi af Finance and Operations **RoundOffType**-fasttekst.</blockquote> | Hvis **model.RoundOff**-parameter er indstillet til **Downward**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.78**. Hvis **model.RoundOff**-parameter er indstillet til enten **Normal** eller **Oprunding**, vil **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returnere værdien **1000.79**. |
 | CURCredRef (cifre) | Returner en kreditors reference, baseret på cifrene i det angivne fakturanummer. | **CURCredRef ("VEND-200002")** returnerer **"2200002"**. |
 | MOD\_97 (cifre) | Returner en kreditors reference som et MOD97-udtryk, baseret på cifrene i det angivne fakturanummer. | **MOD\_97 ("VEND-200002")** returnerer **"20000285"**. |
-| ISOCredRef (cifre) | Returner en ISO-kreditorreference, baseret på cifrene og bogstaverne i det angivne fakturanummer.<blockquote>[!NOTE]<br>For at eliminere symboler fra alfabeter, der ikke er ISO-kompatible, skal inputparameteren oversættes, før den videresendes til denne funktion.</blockquote> | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**. |
+| ISOCredRef (cifre) | Returner en ISO-kreditorreference, baseret på cifrene og bogstaverne i det angivne fakturanummer.<blockquote>[!NOTE] For at eliminere symboler fra alfabeter, der ikke er ISO-kompatible, skal inputparameteren oversættes, før den videresendes til denne funktion.</blockquote> | **ISOCredRef ("VEND-200002")** returnerer **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (streng, tal) | Hent yderligere det angivne økonomisk dimensions-id. I parameteren **streng** er dimensioner repræsenteret i denne streng som id'er, der er adskilt af kommaer. Parameteren **nummer** definerer nummerseriekoden for den ønskede dimension i strengen. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerer **"CC"**. |
 | GetCurrentCompany () | Returnerer en tekstrepræsentation af koden for en juridisk enhed (firma), som en bruger i øjeblikket er logget på. | **GETCURRENTCOMPANY ()** returnerer **USMF** for en bruger, der er logget på Finance and Operations-firmaet **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (cifre) | Returner en kreditors reference som et MOD10-udtryk, baseret på cifrene i det angivne fakturanummer. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returnerer **3**. |

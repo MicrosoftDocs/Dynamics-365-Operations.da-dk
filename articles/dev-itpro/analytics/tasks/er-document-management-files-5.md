@@ -1,5 +1,5 @@
 --- 
-title: "Ændre og køre format for at bruge dokumentstyringsfiler i formatoutput"
+title: "Ændre og køre formater til at bruge dokumentstyringsfiler i ER-output"
 description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b38f69fc169367aa56468b2c8f06b65fd1291c79
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5effbecf98e633d07f9e5eb22d3df1a12967c1e4
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs"></a>Ændre og køre format for at bruge dokumentstyringsfiler i formatoutput
+# <a name="modify-and-run-formats-to-use-document-management-files-in-er-output"></a>Ændre og køre formater til at bruge dokumentstyringsfiler i ER-output
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

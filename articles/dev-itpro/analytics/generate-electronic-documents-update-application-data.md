@@ -1,5 +1,5 @@
 ---
-title: "Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering"
+title: Generere elektroniske dokumenter og opdatere programdata ved brug af ER
 description: "Du kan designe elektroniske rapporteringsformater (ER), der kan bruges i programmet Finans and Operations til at generere udgående elektroniske dokumenter. Du kan også designe ER-formater, der fortolker indgående elektroniske dokumenter, og bruge indholdet i disse dokumenter til at opdatere programdata."
 author: NickSelin
 manager: AnnBe
@@ -19,18 +19,18 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: e2447274016f517db3ec0eb8f55c6b3163822f50
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6bb2b2480b619a8aee72c2d65052ed419c9a7c7d
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a>Generere elektroniske dokumenter og opdatere programdata ved hjælp af værktøjet Elektronisk rapportering
+# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Generere elektroniske dokumenter og opdatere programdata ved brug af ER
 
 [!include [banner](../includes/banner.md)]
 
-Du kan designe elektroniske rapporteringsformater (ER), der kan bruges i programmet Finans and Operations til at generere udgående elektroniske dokumenter. Du kan også designe ER-formater, der fortolker indgående elektroniske dokumenter, og bruge indholdet i disse dokumenter til at opdatere programdata. 
+Du kan designe elektroniske rapporteringsformater (ER), der kan bruges i programmet Finans and Operations til at generere udgående elektroniske dokumenter. Du kan også designe ER-formater, der fortolker indgående elektroniske dokumenter, og bruge indholdet i disse dokumenter til at opdatere programdata.
 
 På denne måde kan et enkelt ER-format bruges til at generere udgående elektroniske dokumenter og derefter opdatere programdataene. Denne funktion kan også anvendes i følgende situationer:
 

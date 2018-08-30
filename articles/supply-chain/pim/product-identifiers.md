@@ -1,7 +1,7 @@
 ---
 title: Produktidentifikatorer
 description: "Dette emne indeholder oplysninger om de forskellige typer produkt-id'er og forklarer, hvordan du kan føje produkt-id'er til produktdataene."
-auhor: cvocph
+author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article

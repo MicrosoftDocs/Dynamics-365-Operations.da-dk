@@ -1,5 +1,5 @@
 ---
-title: Arbejdsgangshandlinger
+title: Handlinger i godkendelsesprocesser i arbejdsgang
 description: I denne artikel beskrives de handlinger, som hver deltager i godkendelsen af en arbejdsproces kan foretage.
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2a4717accfa7e5879ee757820c39f000fa7d3e95
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 07f1ca7db8580041c412361a710d4ec97b3d0fd8
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="workflow-actions"></a>Arbejdsgangshandlinger
+# <a name="actions-in-workflow-approval-processes"></a>Handlinger i godkendelsesprocesser i arbejdsgang
 
 [!include [banner](../includes/banner.md)]
 

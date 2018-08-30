@@ -1,5 +1,5 @@
 --- 
-title: "Definere modeltilknytning og vælge datakilder til elektronisk rapportering (ER)"
+title: "Definere ER-modeltilknytninger og vælge datakilder til dem"
 description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan vælge datakilder til en datamodel for elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 512e24b5d0e20f00890e2a9abfe45b660a913913
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 2beda3555274fee3f17ad13c54c6823307216385
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="define-model-mapping-and-select-data-sources-for-electronic-reporting-er"></a>Definere modeltilknytning og vælge datakilder til elektronisk rapportering (ER)
+# <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definere ER-modeltilknytninger og vælge datakilder til dem
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Power BI-indhold for regnskabsdirektørens oversigt](CFO-power-bi.md)
 - [Power BI-indhold for kompensation](compensation-power-bi.md)
 - [Power BI-indhold til analyse af omkostningsregnskab](cost-accounting-analysis-content-pack.md) 
-- [Power BI-indhold til omkostningsstyring](cost-management-content-pack.md)    
+- [Power BI-indhold til omkostningsstyring](cost-management-content-pack.md)
 - [Power BI-indhold til styring af kredit og inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Power BI-indhold til medarbejderudvikling](employee-development-PBI.md) 
 - [Power BI-indhold til økonomisk indsigt](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Salgs- og rentabilitetsperformance i Power BI-indhold](sales-profitability-performance-content-pack.md)
 - [Power BI-indhold til Kreditorbetalinger](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-indhold til lagerstedsperformance](warehouse-power-bi-content.md)
-- [Power BI-indhold til arbejdskraftmetrikker](workforce-analysis-power-bi-content-pack.md)  
+- [Power BI-indhold til arbejdskraftmetrikker](workforce-analysis-power-bi-content-pack.md)
 

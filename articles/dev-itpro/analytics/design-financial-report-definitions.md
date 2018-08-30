@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -34,44 +34,40 @@ Denne artikel indeholder oplysninger om rapportdefinitioner. En rapportdefinitio
 
 En rapportdefinition er en rapportkomponent (eller dokumentkomponent), der anvender en rækkedefinition, kolonnedefinition og valgfri rapporteringstrædefinition til at oprette en rapport. En rapportdefinition indeholder også yderligere indstillinger, som du kan anvende til tilpasning af en rapport. Når du har defineret rækkedefinitioner og kolonnedefinitioner, skal du kombinere dem i en rapportdefinition. På dette tidspunkt definerer du også andre aspekter af definitionerne, som detaljeniveauet og rapportdatoen. Du kan derefter gemme og generere en rapport. Økonomirapportering har følgende detaljeniveauer:
 
--   Finansiel
--   Finans og Konto
--   Finans, Konto og Transaktion
+- Finansiel
+- Finans og Konto
+- Finans, Konto og Transaktion
 
 Afhængigt af hvordan data gemmes i Microsoft Dynamics ERP-systemet, er transaktionsdetaljer muligvis ikke tilgængelige i rapporter.
 
 ## <a name="create-a-report-definition"></a>Oprette en rapportdefinition
-1.  I Report Designer skal du klikke på **Ny** i menuen **Filer**, og derefter skal du vælge **Rapportdefinition**.
-2.  Angiv de relevante oplysninger på fanerne **Rapport**, **Output og fordeling**, **Sidehoveder og sidefødder** og **Indstillinger**.
+1. I Report Designer skal du klikke på **Ny** i menuen **Filer**, og derefter skal du vælge **Rapportdefinition**.
+2. Angiv de relevante oplysninger på fanerne **Rapport**, **Output og fordeling**, **Sidehoveder og sidefødder** og **Indstillinger**.
 
 ## <a name="contents-of-a-report-definition"></a>Indholdet af en rapportdefinition
 Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysningerne bruges.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Fane</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Rapport</td>
 <td>Opret en rapport, konfigurer en rapport eller rediger en eksisterende rapport.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Output og distribution</td>
 <td>Rediger rapportens outputtype og destination.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Sidehoveder og sidefødder</td>
 <td>Definer og formater sidehovederne og sidefødderne til rapporten. Du kan for eksempel tilføje tekst eller billeder til sidehovedet eller sidefoden. Økonomirapportering understøtter .bmp-, .jpg- og .png-billedfiler. Du kan også tilføje autotekstkoder for at indsætte andre oplysninger, f.eks et firmanavn, rapportnavn eller sidetal.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Indstillinger</td>
 <td>Angiv rapportdefinitionsindstillinger, f.eks. følgende indstillinger:
 <ul>
@@ -81,18 +77,13 @@ Nedenstående tabel beskriver fanerne i en rapportdefinition, og hvordan oplysni
 <li>Generér en undtagelsesrapport</li>
 <li>Angiv valutaomregning</li>
 <li>Oplysninger og filtrer kontodetaljer</li>
-</ul></td>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-
 

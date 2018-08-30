@@ -1,5 +1,5 @@
 ---
-title: Konfigurere en betinget beslutning i en arbejdsgang
+title: Konfigurere betingede beslutninger i en arbejdsgang
 description: "Brug følgende procedure for at konfigurere egenskaberne for den betingede beslutning."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 597a6a254dcd623f9e7c59a0309eeedee1b5adee
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 64e8b2ed5c538cb982f9f03c1db24e38472be868
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurere en betinget beslutning i en arbejdsgang
+# <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurere betingede beslutninger i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Benyt denne fremgangsmåde til at angive et navn på den betingede beslutning.
 1.  Klik på **Grundlæggende indstillinger** i venstre rude.
 2.  Angiv et entydigt navn på den betingede beslutning i feltet **Navn**.
 
-## <a name="set-conditions"></a> Angive betingelser
+## <a name="set-conditions"></a>Angive betingelser
 Systemet bestemmer, hvilken forgrening der skal bruges, ved at evaluere det sendte dokument for at afgøre, om det opfylder bestemte betingelser.
 1.  Klik på **Grundlæggende indstillinger** i venstre rude.
 2.  Klik på **Tilføj betingelse**.

@@ -65,5 +65,3 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indholdet til **Lær
 | Medarbejdernavn    | Fornavn, efternavn og fulde navn                             | Kursusdeltagere |
 | Medarbejdertitel   | Titel og anciennitetsdato                                         | Kursusdeltagere |
 
-
-

@@ -1,5 +1,5 @@
 --- 
-title: "Oprette format for optælling og sammenlægning"
+title: "Oprette formater i elektronisk rapportering til optælling og opsummering"
 description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7613b78d4a9ab63f5be9773a8699fe3ed94636eb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7261a2324b61cacfca8d69ad52762aa545b70220
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-format-for-counting-and-summing"></a>Oprette format for optælling og sammenlægning 
+# <a name="create-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Oprette formater i elektronisk rapportering (ER) til optælling og opsummering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

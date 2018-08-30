@@ -1,5 +1,5 @@
 ---
-title: Oprette kuponer for detailsalg
+title: Konfigurere kuponer til detailsalg
 description: Dette emne indeholder en oversigt over detailkuponer og en beskrivelse af, hvordan de konfigureres.
 author: scott-tucker
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="create-coupons-for-retail-sales"></a>Oprette kuponer for detailsalg
+# <a name="set-up-coupons-for-retail-sales"></a>Konfigurere kuponer til detailsalg
 
 [!include [banner](includes/banner.md)]
 

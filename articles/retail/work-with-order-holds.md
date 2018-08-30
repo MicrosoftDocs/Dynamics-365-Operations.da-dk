@@ -1,5 +1,5 @@
 ---
-title: "Ordrer på hold"
+title: "Konfigurere og arbejde med callcenterordrer på hold"
 description: "I dette emne beskrives, hvordan du kan arbejde med ordrer på hold ved hjælp af Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
-ms.openlocfilehash: 674a994326342da3fba4be4e80ccd1fc3de5514c
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 8dcba52526dd9dad1bd8b9753224f6386923f5a1
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="work-with-call-center-order-holds"></a>Arbejde med callcenterordrer på hold
+# <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbejde med callcenterordrer på hold
 
 [!include [banner](includes/banner.md)]
 

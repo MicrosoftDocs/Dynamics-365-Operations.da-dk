@@ -1,5 +1,5 @@
 ---
-title: "Konfigurer parametre for personale på tværs af juridiske enheder"
+title: "Angive personaleparametre (HR) på tværs af juridiske enheder"
 description: "Du skal konfigurere delte parametre for poster, der deles på tværs af virksomheder, herunder stillingsposter. I denne artikel beskrives det, hvordan du kan bruge personaleparametre på tværs af juridiske enheder."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1241d8da101af094ac510819376908727f9bcf07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: cc5acf7ba1b350ee2c91923c7de3b4780385f3ef
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-hr-parameters-across-legal-entities"></a>Konfigurer parametre for personale på tværs af juridiske enheder
+# <a name="set-up-human-resources-hr-parameters-across-legal-entities"></a>Angive personaleparametre (HR) på tværs af juridiske enheder
 
 [!include [banner](includes/banner.md)]
 

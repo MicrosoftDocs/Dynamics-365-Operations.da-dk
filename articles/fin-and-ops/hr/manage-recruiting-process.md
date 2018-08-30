@@ -1,5 +1,5 @@
 ---
-title: Administrere en rekrutteringsproces
+title: Administrere rekrutteringsprocesser
 description: "I denne artikel beskrives et koncept, som rekrutteringsmedarbejdere kan bruge til at spore trinnene i en rekrutteringsproces, herunder arbejdet med at annoncere ledige stillinger og rekruttere ansøgere, spore oplysninger om ansøgeren og ansøgningen, interviewe ansøgere og vælge en eller flere kandidater til at udfylde de ledige stillinger i organisationen."
 author: rschloma
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a7dba99c08d4dfc6afd1047130cea51b6bdab1d
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 80072aebe99b0a7f244c9475dc9ba586bc697893
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="manage-a-recruiting-process"></a>Administrere en rekrutteringsproces
+# <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprocesser
 
 [!include [banner](../includes/banner.md)]
 

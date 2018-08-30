@@ -1,5 +1,5 @@
 --- 
-title: Administrere modeltilknytningskonfigurationer til elektronisk rapportering (ER)
+title: Administrere ER-modeltilknytning i separate ER-konfigurationer
 description: "Følgende trin forklarer, hvordan en bruger, der er tildelt rollen som Systemadministrator eller Udvikler til elektronisk rapportering, kan administrere ER-modeltilknytninger i separate ER-konfigurationer."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35fdc1e98897d449ce18fe38cc6b7896ca5c5278
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Administrere modeltilknytningskonfigurationer til elektronisk rapportering (ER)
+# <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Administrere ER-modeltilknytning i separate ER-konfigurationer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Følgende trin forklarer, hvordan en bruger, der er tildelt rollen som Systemadministrator eller Udvikler til elektronisk rapportering, kan administrere ER-modeltilknytninger i separate ER-konfigurationer. I denne opgaveguide skal du oprette de nødvendige ER konfigurationer for eksempelfirmaet Litware, Inc. For at fuldføre denne opgaveguide skal du først fuldføre trinnene i opgaveguiden "ER Oprette en konfigurationsudbyder" og markere den som aktiv. 
 
-Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved hjælp af et virksomhedsdatasæt efter eget valg. Funktionerne til denne opgaveguide er tilgængelige, hvis du har installeret et af følgende hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 til Dynamics AX 7.0-versionen eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 til Dynamics 365 for Operations-versionen.
+Da ER-konfigurationer deles af firmaer, kan du fuldføre denne opgaveguide ved hjælp af et virksomhedsdatasæt efter eget valg. Funktionerne i denne opgaveguide er tilgængelig, hvis du har installeret et af følgende hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 til versionen Dynamics AX 7.0 eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 til versionen Dynamics 365 for Operations.
 
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
     * Kontrollér, at konfigurationsudbyderen for eksempelfirmaet Litware Inc. er tilgængelig og markeret som aktiv. Hvis du ikke kan se denne konfigurationsudbyder, skal du først fuldføre trinnene i opgaveguiden Opret en konfigurationsudbyder, og markér den som aktiv.   

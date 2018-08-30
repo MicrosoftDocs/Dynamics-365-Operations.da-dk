@@ -1,5 +1,5 @@
 --- 
-title: "Definere afhængigheden af konfigurationer fra andre komponenter"
+title: "Definere afhængigheden af ER-konfigurationer i andre komponenter"
 description: "For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden ER Administrere konfigurationer for modeltilknytning, og du skal have adgang til Microsoft Dynamics Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components"></a>Definere afhængigheden af konfigurationer fra andre komponenter 
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere afhængigheden af ER-konfigurationer i andre komponenter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -62,7 +62,7 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 18. Vælg Microsoft Dynamics AX 7.0 RTW.
 19. Skriv '[7.0.1265.3015,7.1)' i feltet Version.
     * [7.0.1265.3015,7.1)  
-    * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, version 7.1.1541.3036 eller nyere, men ikke nyere end den mindre version 1.   
+    * Afhængigheder evalueres, når konfigurationen hentes fra et ER-lager. Denne konfigurationsversion hentes fra ER-lageret, når version 1 af konfigurationen 'Eksempeldatamodel' enten allerede er på plads eller er hentet på forhånd. Hvis den er hentet på forhånd, skal den være fuldført i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, version 7.0.1265.3015 eller nyere, men ikke nyere end den mindre version 1.   
 20. Klik på Gem.
 21. Luk siden.
 22. Klik på Skift status.

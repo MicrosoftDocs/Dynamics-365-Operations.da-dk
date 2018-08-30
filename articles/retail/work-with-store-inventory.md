@@ -1,5 +1,5 @@
 ---
-title: Administer butikslager
+title: Butikslagerstyring
 description: Denne artikel beskriver de typer af dokumenter, du kan bruge til at administrere lager.
 author: rubencdelgado
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6245d37ace9f46ecce83a0cf80a014d5de898bbc
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 72f6f5e2645240ee3ddd31657176f27cb7db404f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="manage-store-inventory"></a>Administer butikslager
+# <a name="store-inventory-management"></a>Butikslagerstyring
 
 [!include [banner](includes/banner.md)]
 

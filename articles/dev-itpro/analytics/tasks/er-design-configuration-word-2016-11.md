@@ -1,5 +1,5 @@
 --- 
-title: Designe en konfiguration til generering af rapporter i Microsoft Word-format til elektronisk rapportering (ER)
+title: Designe ER-konfigurationer til at generere rapporter i Word-format
 description: "Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan konfigurere en model for elektronisk rapporteringsformat (ER) til at generere rapporter som Microsoft Word-filer."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Designe en konfiguration til generering af rapporter i Microsoft Word-format til elektronisk rapportering (ER)
+# <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Designe ER-konfigurationer til at generere rapporter i Word-format
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -63,7 +63,7 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Microsoft Dynamics
     * I tillæg til at lagre konfigurationsændringer opdaterer handlingen Gem også den vedhæftede Word-skabelon. Strukturen på det designede format overføres til det vedhæftede Word-dokument som en ny brugerdefineret XML-del med navnet "Rapport". Bemærk, at den vedhæftede Word-skabelon ikke kun indeholder layoutet på det dokument, vi vil generere som ER-output, den indeholder også strukturen af data, som ER udfylder i denne skabelon på kørselstidspunktet.  
 2. Klik på Vedhæftede filer.
     * Nu skal du binde elementerne i den brugerdefinerede XML-del "Rapport" til Word-dokumentdelene.  
-    * Hvis du har kendskab til Word-dokumenter, der kan designes som formularer, der indeholder indholdskontrolelementer, der er bundet til elementer i brugerdefinerede XML-dele – kan du afspille alle trin i den næste underopgave for at oprette et sådant dokument. Hvis du ønsker yderligere oplysninger, kan du se dette link https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Ellers skal du springe alle trin i den næste underopgave over.  
+    * Hvis du har kendskab til Word-dokumenter, der kan designes som formularer, der indeholder indholdskontrolelementer, der er bundet til elementer i brugerdefinerede XML-dele – kan du afspille alle trin i den næste underopgave for at oprette et sådant dokument. Se dette link for at få flere oplysninger https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Ellers skal du springe alle trin i den næste underopgave over.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Få Word med brugerdefineret XML-del til at udføre databindinger
     * Åbn dette dokument i Word og gør følgende: - Åbn fanen Developer i Word (tilpas båndet, hvis den endnu ikke er aktiveret).  - Vælg XML-tilknytningsrude.  - Vælg den brugerdefinerede del "Rapport" i opslaget.  - Udfør tilknytningen af elementerne i den markerede brugerdefinerede XML-del og indholdskontrolelementerne i Word-dokumentet.  - Gem det opdaterede Word-dokument på et lokalt drev.  

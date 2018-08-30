@@ -1,5 +1,5 @@
 --- 
-title: Oprette og tilknytte en enhed
+title: Oprette enheder og knytte dem til kasseapparater
 description: Denne procedure viser, hvordan du opretter en ny enhed og knytter den til et kasseapparat.
 author: jashanno
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 19be7c38e9612b54fe56ef6e0fd942587dd64a69
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 7df1111a00fc8ad7f684075fb772b1e33916b687
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="create-and-associate-a-device"></a>Oprette og tilknytte en enhed
+# <a name="create-devices-and-associate-them-with-registers"></a>Oprette enheder og knytte dem til kasseapparater
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

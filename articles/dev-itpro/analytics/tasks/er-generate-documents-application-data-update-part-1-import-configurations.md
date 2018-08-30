@@ -1,5 +1,5 @@
 --- 
-title: Importere konfigurationer for at generere dokumenter med programdata
+title: Importere konfigurationer til at generere dokumenter, der har programdata
 description: "For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren \"ER Oprette en konfigurationsudbyder og markere den som aktiv\"."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data"></a>Importere konfigurationer for at generere dokumenter med programdata
+# <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importere konfigurationer til at generere dokumenter, der har programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

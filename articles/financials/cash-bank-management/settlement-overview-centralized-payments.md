@@ -1,16 +1,16 @@
 ---
 title: Oversigt over udligning for centraliserede betalinger
-description: "Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en juridisk enhed, der håndterer alle betalinger. Derved fjernes behovet for at angive den samme postering i flere juridiske enheder, og der spares tid, idet processen til betalingsforslag, udligningsprocessen, redigering af åbne posteringer og redigering af lukkede posteringer strømlines for centraliserede betalinger."
+description: Dette emne indeholder beskrivelser af udligning af centraliserede betalinger til Microsoft Dynamics 365 for Finance and Operations.
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -35,8 +35,8 @@ Organisationer, der omfatter flere juridiske enheder, kan oprette og administrer
 Når en debitor- eller kreditorbetaling angives i en juridisk enhed og udlignes med en faktura, der blev angivet i en andet juridisk enhed, genereres de relevante udligningsposteringer, forfalden til og forfalden fra, automatisk for hver juridisk enhed. Der oprettes en udligningspost for hver kombination af faktura og betaling i posteringen. Her enkelt udligningspost tildeles et nyt bilagsnummer, som er baseret på løbenummerserien, der angives på siden **Debitorparametre** for debitorer og siden **Kreditorparametre** for kreditorer. 
 
 Hvis der genereres yderligere udligningsposter for kasserabatter, værdireguleringer af udenlandsk valuta, øredifferencer, overbetalinger eller underbetalinger, tildeles de den senere dato for betalings- eller fakturaposteringen. Hvis udligningen sker, efter at betalingen er bogført, bruger udligningsposterne den bogføringsdato for udligningen, der er angivet på siden **Udlign åbne posteringer**.
-Bogføringstyper, posteringstyper og standardbeskrivelser
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Bogføringstyper, posteringstyper og standardbeskrivelser
 
 Bilagsposteringer for intern udligning bruges til den interne udlignings posteringstype, interne kundeudligning og interne kreditorudlignings posteringstyper. Du kan konfigurere oplysninger for posteringstypen på siden **Standardbeskrivelser**. 
 
@@ -50,8 +50,7 @@ Følgende posteringstyper kan bruges i udligninger i enkelte firmaer og i udlign
 
 Du kan også definere standardbeskrivelser af interne udligningsbilag.
 
-<a name="currency-exchange-gains-or-losses"></a>Valutakursvinding eller -tab
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Valutakursvinding eller -tab
 
 Den valutakurs, der bruges til debitor- og kreditorposteringer, lagres sammen med posteringen. Realiseret gevinst eller tab på valutakurser bogføres enten til den juridiske enhed for fakturaen eller til den juridiske enhed for betalingen, afhængig af hvilken indstilling der er valgt til feltet **Bogfør valutakurstab eller -vinding** på siden **Mellemregning** til den juridiske enhed for betalingen. Disse valutaer bruges i følgende eksempler:
 -   Regnskabsvaluta for betaling: EUR
@@ -59,7 +58,7 @@ Den valutakurs, der bruges til debitor- og kreditorposteringer, lagres sammen me
 -   Transaktionsvaluta for betaling: DKK
 -   Transaktionsvaluta for faktura: CAD
 
-#### <a name="currency-calculations"></a>Valutaberegninger
+### <a name="currency-calculations"></a>Valutaberegninger
 
 Når du udligner en faktura, der er angivet i én juridisk enhed, med en betaling, der er angivet i en anden juridisk enhed, omregnes transaktionsvalutaen for betalingen (DKK) i tre trin:
 1.  Omregnes til regnskabsvalutaen for betalingen (EUR) ved brug af valutakurserne fra den juridiske enhed for betalingen.
@@ -75,17 +74,15 @@ Når siden **Udlign åbne posteringer** åbnes i en betalingskladde, hvor betali
 
 Det beregnede betalingsbeløb overføres til betalingskladdelinjen, når du lukker siden **Udlign åbne posteringer**.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Bogføring af vinding eller tab på grund af forskellige regnskabsvalutaer
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Bogføring af vinding eller tab på grund af forskellige regnskabsvalutaer
 
 Hvis der er valutakursvinding eller -tab, bogføres vindingen eller tabet til den juridiske enhed, der er angivet for feltet **Bogfør valutakurstab eller -vinding** på siden **Mellemregning** for den juridiske enhed for betalingen. Beløbet for vinding eller tab omregnes til regnskabsvalutaen for den juridiske enhed, hvor beløbet for vinding eller tab er bogført, ved hjælp af den valutakurs, der er angivet for den pågældende juridiske enhed.
 
-<a name="cash-discounts"></a>Kasserabatter
---------------
+## <a name="cash-discounts"></a>Kasserabatter
 
 Kasserabatter, som genereres i forbindelse med udligninger på tværs af firmaer, bogføres enten til den juridiske enhed for fakturaen eller den juridiske enhed for betalingen afhængigt af, hvilken indstilling der er valgt for feltet **Bogfør kasserabat** på siden **Mellemregning** for den juridiske enhed for betalingen. Der genereres en tilsvarende udligningspostering i den juridiske enhed for fakturaen.
 
-<a name="overpayments-and-underpayments"></a>Overbetalinger og underbetalinger
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Overbetalinger og underbetalinger
 
 Tolerancer for overbetalinger, underbetalinger og øredifferencer bestemmes på basis af den juridiske enhed for overbetalinger og på basis af den juridiske enhed for fakturaen for underbetalinger. Bogføringskontoen, der bruges, afhænger af indstillingen i feltet **Håndtering af kasserabat** på siden **Debitorparametre** for debitorer og feltet **Håndtering af kasserabat** på siden **Kreditorparametre** for kreditorer.
 
@@ -112,9 +109,4 @@ For kreditorbetalinger bruger posteringerne for forfalden til og forfalden fra i
 
 ## <a name="withholding-tax"></a>A-skat
 Den kreditorkonto, der er tilknyttet fakturaen, bruges til at bestemme, om der skal beregnes A-skat. Hvis der beregnes A-skat, beregnes den i den juridiske enhed, der er tilknyttet fakturaen. Hvis der anvendes forskellige valutaer i de juridiske enheder, bruges valutakursen fra den juridiske enhed, der er tilknyttet fakturaen.
-
-
-
-
-
 

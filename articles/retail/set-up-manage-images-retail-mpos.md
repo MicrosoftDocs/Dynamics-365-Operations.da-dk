@@ -1,5 +1,5 @@
 ---
-title: "Konfigurer og håndter billeder for Retail Modern POS"
+title: "Konfigurere og håndtere billeder til Retail Modern POS (MPOS)"
 description: "I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS)."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurer og håndter billeder for Retail Modern POS
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og håndtere billeder til Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
@@ -48,11 +48,11 @@ De billeder, der vises i Retail Modern POS (MPOS), skal være lagret eksternt, u
 
 1.  Klik på **Detail** &gt; **Administration af kataloger** &gt; **Katalogbilleder**.
 2.  Klik på **Definer medieskabelon** på siden **Katalogbilleder** i handlingsruden. I dialogboksen **Definer medieskabelon** skal du i feltet **Enhed** vælge **Katalog** som standard.
-3.  Angiv den resterende sti for billedplaceringen i oversigtspanelet **Mediesti**. Mediestien understøtter **LanguageID** som en variabel. For demodataene kan du for eksempel oprette en **Kataloger**-mappe for alle katalogbilleder under URL-adresse til mediebase til din medieserver (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Du kan have en mappe til hvert sprog, f.eks. da-DK eller fr-FR, og kopiere de relevante billeder i hver mappe. Hvis du ikke har forskellige billeder til de forskellige sprog, kan du udelade variablen **LanguageID** fra din mappestruktur og pege direkte på mappen Kataloger, der indeholder katalogbillederne. **Bemærk:** Den aktuelle version af Dynamics 365 for Retail understøtter **{LanguageId}**-token for enhederne Katalog, Produkt og Kategori. (**{LanguageID}**-tokenen understøttes ikke for enhederne Debitor og Arbejder i henhold til den eksisterende standard, der har været gældende siden Microsoft Dynamics AX 6.x.)
+3.  Angiv den resterende sti for billedplaceringen i oversigtspanelet **Mediesti**. Mediestien understøtter **LanguageID** som en variabel. For demodataene kan du for eksempel oprette en mappe **Kataloger** til alle katalogbilleder under URL-adressen til mediebasen til din medieserver (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer)). Du kan have en mappe til hvert sprog, f.eks. da-DK eller fr-FR, og kopiere de relevante billeder i hver mappe. Hvis du ikke har forskellige billeder til de forskellige sprog, kan du udelade variablen **LanguageID** fra din mappestruktur og pege direkte på mappen Kataloger, der indeholder katalogbillederne. **Bemærk:** Den aktuelle version af Dynamics 365 for Retail understøtter **{LanguageId}**-token for enhederne Katalog, Produkt og Kategori. (**{LanguageID}**-tokenen understøttes ikke for enhederne Debitor og Arbejder i henhold til den eksisterende standard, der har været gældende siden Microsoft Dynamics AX 6.x.)
 4.  For billeder gælder det, at filnavnformatet er hard-coded til katalognavnet og ikke kan ændres. Omdøb derfor dine billeder, så de har det relevante katalognavn, så du kan sikre, at MPOS håndterer dem korrekt.
 5.  I feltet **Filtypenavn** skal du vælge det forventede filtypenavn, afhængigt af hvilken type billeder du har. For demodataene er katalogbillederne for eksempel indstillet til .jpg-filtypenavnet. (Billedfilerne omdøbes også, så de får katalognavne).
 6.  Klik på **OK**.
-7.  For at kontrollere, at medieskabelon til billeder er blevet gemt korrekt, skal du klikke på  **Definer medieskabelon** på siden **Katalogbilleder**. For at validere skabelonen uden at lukke dialogboksen **Definer medieskabelon** skal du bruge oversigtspanelet **Generér billed-URL-adresser til Excel**. Kontrollere udseendet af billed-URL-adressen, og kontrollér, at URL-adressen er i overensstemmelse med standardskabelonen, der blev nævnt tidligere. Dialogboksen **Definer medieskabelon** har implicit angivet billedstien for alle katalogbilleder, der bruger denne fælles URL-adressesti. Denne URL-sti gælder for alle katalogbilleder, medmindre de overskrives. Den første del af billedstien er taget fra den URL-adresse til mediebase, du har angivet i kanalprofilen. Den resterende del af stien er taget fra den sti, du har defineret i medieskabelonen. De to dele er sammenføjet for at give den fulde URL-adressen til billedets placering. Et katalog i demodataene hedder f.eks. Fabrikam Base Catalog. Procesnavnet skal derfor være Fabrikam Base Catalog.jpg, så den bruger det katalognavn og .jpg-filtypenavn, der er konfigureret i skabelonen. I så fald vil bliver URL-adressen efter sammenføjning være https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  For at kontrollere, at medieskabelon til billeder er blevet gemt korrekt, skal du klikke på **Definer medieskabelon** på siden **Katalogbilleder**. For at validere skabelonen uden at lukke dialogboksen **Definer medieskabelon** skal du bruge oversigtspanelet **Generér billed-URL-adresser til Excel**. Kontrollere udseendet af billed-URL-adressen, og kontrollér, at URL-adressen er i overensstemmelse med standardskabelonen, der blev nævnt tidligere. Dialogboksen **Definer medieskabelon** har implicit angivet billedstien for alle katalogbilleder, der bruger denne fælles URL-adressesti. Denne URL-sti gælder for alle katalogbilleder, medmindre de overskrives. Den første del af billedstien er taget fra den URL-adresse til mediebase, du har angivet i kanalprofilen. Den resterende del af stien er taget fra den sti, du har defineret i medieskabelonen. De to dele er sammenføjet for at give den fulde URL-adressen til billedets placering. Et katalog i demodataene hedder f.eks. Fabrikam Base Catalog. Procesnavnet skal derfor være Fabrikam Base Catalog.jpg, så den bruger det katalognavn og .jpg-filtypenavn, der er konfigureret i skabelonen. I dette tilfælde vil URL-adressen efter sammenkædning https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
 8.  Kør synkroniseringsjobbene for at skubbe den nye skabelon til kanaldatabasen, så MPOS kan bruge skabelonen til at få adgang til billederne.
 9.  Hvis du vil opdatere medieskabelonen for katalogbilleder på kanalsiden, skal du sørge for at køre **Katalogjob 1150** fra **Retail-IT** &gt; **Distributionsplan**.[![katalog1](./media/catalog1.png)](./media/catalog1.png)
 
@@ -111,7 +111,7 @@ For alle enheder med undtagelse af produkter gælder det, at du kan overskrive b
 4.  Klik på **OK**. Billedets URL-adresse er opdateret for dette katalogbillede, og der vises et eksempel. [![forhåndsvisning3](./media/preview3.png)](./media/preview3.png)
 5.  Du kan også se billedeksemplet for alle overskrevne billed-URL-adresser på gallerisiden **Katalogbilleder**.
 
-**[![forhåndsvisning4](./media/preview-4.png)](./media/preview-4.png) Bemærk!** Galleriet viser i øjeblikket ikke billedeksempler for billed-URL-adresser til medieskabeloner. For enhederne Katalog, Arbejder, Debitor og Kategori og gælder det, at hvis brugeren eksplicit angiver en URL-adresse via denne side, anbefaler vi, at du angiver, hvilket billede der er standardbilledet, da Retail Server-klienter kun ét billede pr. katalog, debitor, arbejder og kategori. Hvis brugeren ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender den til detailtjenestekaldefunktionen (MPOS eller Ecommerce).
+**[![forhåndsvisning4](./media/preview-4.png)](./media/preview-4.png)Bemærk!** Galleriet viser i øjeblikket ikke billedeksempler for billed-URL-adresser til medieskabeloner. For enhederne Katalog, Arbejder, Debitor og Kategori og gælder det, at hvis brugeren eksplicit angiver en URL-adresse via denne side, anbefaler vi, at du angiver, hvilket billede der er standardbilledet, da Retail Server-klienter kun ét billede pr. katalog, debitor, arbejder og kategori. Hvis brugeren ikke angiver et standardbillede, bestemmer systemet standardbilledet og sender den til detailtjenestekaldefunktionen (MPOS eller Ecommerce).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Overskrive billedets URL-adresse for katalogbilleder fra eksempelsiden
 
@@ -123,7 +123,7 @@ Hvis du vil overskrive URL-adresse for katalogproduktbilleder, skal du bruge sid
 4.  Klik på **Tilføj**, og Overskriv billedets URL-adresse med en ny URL-adresse.
 5.  Klik på **OK**. Du kan nu se eksemplet på det nye billede og kan angive det som standardbilledet.
 
-**[![kat3](./media/cat3.png)](./media/cat3.png) Bemærk!** Når kategoribilledet er blevet tilknyttet, skal du udgive kanalen og køre kanaljobbet for at sikre, at ændringerne udgives i kanaldatabasen.
+**[![kat3](./media/cat3.png)](./media/cat3.png)Bemærk!** Når kategoribilledet er blevet tilknyttet, skal du udgive kanalen og køre kanaljobbet for at sikre, at ændringerne udgives i kanaldatabasen.
 
 ## <a name="setting-up-images-to-appear-in-offline-mode-for-mpos"></a>Konfigurere billeder, der skal vises i offlinetilstand for MPOS
 MPOS kan køre i onlinetilstand (når MPOS har oprettet forbindelse til Retail Server) eller i offlinetilstand (når der er ingen Retail Server eller netværksforbindelse, og transaktioner er gemt i en lokal offlinedatabase). Når MPOS kører i offlinetilstand, kan den ikke hente billeder fra den eksterne billedserveren for at vise Retail-Server, fordi Retail Server-forbindelsen blev afbrudt. Du kan imidlertid stadig oprette billeder, så de vises, når MPOS køres i offlinetilstand.

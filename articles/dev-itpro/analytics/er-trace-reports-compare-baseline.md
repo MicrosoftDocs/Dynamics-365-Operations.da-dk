@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Du kan spore resultaterne af ER-formater, der genererer udgående elektroniske dokumenter. Når sporingsgenerering er aktiveret (ER-brugerparameteren **Kør i fejlfindingstilstand**), genereres en ny sporingspost i ER-formatudførelsesloggen, hver gang denne ER-rapport køres. Følgende oplysninger gemmes i de enkelte spor, der genereres:
 
 - Alle advarsler, der er oprettet af valideringsregler
-- Alle fejl, der er oprettet af valideringsregler 
+- Alle fejl, der er oprettet af valideringsregler
 - Alle genererede filer, der er gemt som vedhæftede filer, af sporingsposten
 
 Du kan gemme individuelle basisprogramfiler til ethvert ER-format. Filer betragtes som basisfiler, når de beskriver de forventede resultater af rapporter, der køres. Hvis en basisfil er tilgængelig for et ER-format, som blev kørt, mens sporingsgenereringen var aktiveret, gemmer sporingen ud over de oplysninger, der blev nævnt tidligere, resultatet af sammenligningen af det genererede elektroniske dokument i basisfilen. Med et enkelt klik kan du også få det genererede elektroniske dokument og dets basisfil i en enkelt zip-fil. Derefter kan du foretage detaljeret sammenligning ved hjælp af et eksternt værktøj, f.eks. Windiff.

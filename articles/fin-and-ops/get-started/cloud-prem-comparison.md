@@ -1,5 +1,5 @@
 ---
-title: "Sammenligning af funktioner i skyen og på arbejdsstedet"
+title: "Sammenligning af funktioner i skyen og i det lokale miljø"
 description: "Emnet viser, hvilke funktioner der understøttes i skyen og lokalt."
 author: robinarh
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
-# <a name="cloud-and-on-premises-feature-comparison"></a>Sammenligning af funktioner i skyen og på arbejdsstedet
+# <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
 [!include [banner](../includes/banner.md)]
 

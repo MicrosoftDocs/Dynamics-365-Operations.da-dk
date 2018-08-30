@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/08/2018
 
 ---
 
@@ -33,18 +33,18 @@ I dette emne beskrives, hvad der indgår i Microsoft Power BI-indholdet til **Om
 
 ## <a name="overview"></a>Overblik
 
-Power BI-indholdet til **Omkostningsregnskabsanalyse** er beregnet til omkostningscontrollere eller andre, der er ansvarlige for udførelse af en organisations omkostningsstyring. Det indeholder oversigt over målepunkter som omkostning, størrelsesorden og omkostningssats ved faktisk omkostning, budgetomkostninger og fleksible budgetomkostninger. Det bruger transaktionsdata fra modulet **Omkostningsregnskab** og giver en samlet oversigt over omkostninger for hele organisationen i én rapporteringsvaluta. Ledere kan filtrere dataene efter omkostningsobjekter for at udføre omkostningsstyring af deres organisatoriske enheder, selv om organisationen kan have flere juridiske enheder. 
+Power BI-indholdet til **Omkostningsregnskabsanalyse** er beregnet til omkostningscontrollere eller andre, der er ansvarlige for udførelse af en organisations omkostningsstyring. Det indeholder oversigt over målepunkter som omkostning, størrelsesorden og omkostningssats ved faktisk omkostning, budgetomkostninger og fleksible budgetomkostninger. Det bruger transaktionsdata fra modulet **Omkostningsregnskab** og giver en samlet oversigt over omkostninger for hele organisationen i én rapporteringsvaluta. Ledere kan filtrere dataene efter omkostningsobjekter for at udføre omkostningsstyring af deres organisatoriske enheder, selv om organisationen kan have flere juridiske enheder.
 
-Da indholdet til **Omkostningsregnskabsanalyse** fremhæver afvigelser mellem de faktiske omkostninger og budgetterede omkostninger, kan ledere blive informeret om positive og negative tendenser for deres driftsenheder. Ledere kan dykke ned i omkostningselementhierarkierne eller individuelle omkostningselementer. På denne måde kan ledere få detaljeret indsigt i, hvordan omkostningsafvigelser er opstået, og kan derefter handle effektivt. 
+Da indholdet til **Omkostningsregnskabsanalyse** fremhæver afvigelser mellem de faktiske omkostninger og budgetterede omkostninger, kan ledere blive informeret om positive og negative tendenser for deres driftsenheder. Ledere kan dykke ned i omkostningselementhierarkierne eller individuelle omkostningselementer. På denne måde kan ledere få detaljeret indsigt i, hvordan omkostningsafvigelser er opstået, og kan derefter handle effektivt.
 
-Med indholdet til **Omkostningsregnskabsanalyse** kan bogholdere analysere, hvordan omkostninger flyder gennem omkostningsobjekter i hele organisationen. 
+Med indholdet til **Omkostningsregnskabsanalyse** kan bogholdere analysere, hvordan omkostninger flyder gennem omkostningsobjekter i hele organisationen.
 
-Du kan finde flere oplysninger om omkostningsregnskabet i [Startside for omkostningsregnskab](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Du kan finde flere oplysninger om omkostningsregnskabet i [Startside for omkostningsregnskab](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Ved at definere sikkerhed på brugerniveau i omkostningsregnskabet og kombinere det med sikkerhed på rækkeniveau i Power BI kan du tildele alle omkostningsobjektejere adgang til Power BI-indholdet til **Omkostningsregnskabsanalyse**. Alle data i visualiseringerne filtreres derefter baseret på det adgangsniveau, der styres i omkostningsregnskabet. Hvis du vil vide mere om sikkerhed på henholdsvis adgangsniveau og rækkeniveau, kan du se under [Konfigurere sikkerhed for indhold i omkostningsregnskab til Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Du kan finde Power Bi-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Du kan finde Power Bi-indholdet til **Omkostningsregnskabsanalyse** i biblioteket Delte aktiver i Microsoft Dynamics Lifecycle Services (LCS). Du kan finde flere oplysninger om, hvordan du downloader indhold og implementerer det i din organisation, under [Power BI-indhold i LCS fra Microsoft og dine partnere](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Indholdet omfatter et sæt rapportsider. Hver side består af en række mål, so
 |                                  | Faktisk omkostning efter navn på dimensionsmedlem for omkostningsobjekt                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Omkostningsregnskabsanalyse**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). 
+Følgende data bruges til at udfylde rapportsiderne i Power BI-indholdet til **Omkostningsregnskabsanalyse**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
 Følgende samlede nøglemålinger bruges som grundlag for indholdet.
 
@@ -113,20 +113,18 @@ Følgende tabel viser, hvor de samlede nøglemålinger bruges til at oprette fle
 
 Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger for at opnå større granularitet og give dybere analytisk indsigt.
 
-
-|               Enhed               |                                                Eksempler på attributter                                                |
+| Enhed                             | Eksempler på attributter                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Finansposter for omkostningsregnskab       |                                                Finanspost for omkostningsregnskab                                                |
-|         Omkostningskontrolenheder         |                                                Navn på omkostningskontrolenhed                                                |
-|      Dimensioner for omkostningselement       |     Navn på dimension for omkostningselementer, navn på dimensionsmedlem af omkostningselement, beskrivelse af dimensionsmedlem af omkostningselement      |
-|       Dimensioner for omkostningsobjekt       |       Navn på dimension for omkostningsobjekt, navn på dimensionsmedlem af omkostningsobjekt, beskrivelse af dimensionsmedlem af omkostningsobjekt        |
-|       Statistiske dimensioner       |       Navn på statistisk dimension, navn på statistisk dimensionsmedlem, beskrivelse af statistisk dimensionsmedlem        |
-| Dimensionshierarkier for omkostningsobjekt  |  Navn på dimensionshierarki for omkostningsobjekt, niveau i dimensionshierarki for omkostningsobjekt, dimensionshierarkitræ for omkostningsobjekt   |
+| Finansposter for omkostningsregnskab            | Finanspost for omkostningsregnskab                                                                                               |
+| Omkostningskontrolenheder                 | Navn på omkostningskontrolenhed                                                                                               |
+| Dimensioner for omkostningselement            | Navn på dimension for omkostningselementer, navn på dimensionsmedlem af omkostningselement, beskrivelse af dimensionsmedlem af omkostningselement          |
+| Dimensioner for omkostningsobjekt             | Navn på dimension for omkostningsobjekt, navn på dimensionsmedlem af omkostningsobjekt, beskrivelse af dimensionsmedlem af omkostningsobjekt              |
+| Statistiske dimensioner             | Navn på statistisk dimension, navn på statistisk dimensionsmedlem, beskrivelse af statistisk dimensionsmedlem              |
+| Dimensionshierarkier for omkostningsobjekt  | Navn på dimensionshierarki for omkostningsobjekt, niveau i dimensionshierarki for omkostningsobjekt, dimensionshierarkitræ for omkostningsobjekt    |
 | Dimensionshierarkier for omkostningselement | Navn på dimensionshierarki for omkostningselement, niveau i dimensionshierarki for omkostningselement, dimensionshierarkitræ for omkostningselement |
-| Statistiske dimensionshierarkier  |  Navn på statistisk dimensionshierarki, niveau i statistisk dimensionshierarki, statistisk dimensionshierarkitræ   |
-|        Versioner af transaktion        |                                                     Versionsnavn                                                     |
-|          Regnskabskalendere          |                                            Kalender, beskrivelse af kalender                                            |
-|            Regnskabsår            |                                                    Kalenderår                                                     |
-|           Regnskabsperioder           |                                                 Kalenderårperiode                                                 |
-
+| Statistiske dimensionshierarkier  | Navn på statistisk dimensionshierarki, niveau i statistisk dimensionshierarki, statistisk dimensionshierarkitræ    |
+| Versioner af transaktion               | Versionsnavn                                                                                                         |
+| Regnskabskalendere                   | Kalender, beskrivelse af kalender                                                                                       |
+| Regnskabsår                       | Kalenderår                                                                                                        |
+| Regnskabsperioder                     | Kalenderårperiode                                                                                                 |
 

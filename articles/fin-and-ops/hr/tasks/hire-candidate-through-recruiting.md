@@ -1,5 +1,5 @@
 --- 
-title: Skjule en kandidat gennem rekruttering
+title: "Ansætte kandidater gennem rekruttering"
 description: "Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt."
 author: kherr75
 manager: AnnBe
@@ -16,17 +16,17 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: a38592bc309b85052dd3d04c036da8f409fcd96d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/08/2018
 
 ---
-# <a name="hire-a-candidate-through-recruiting"></a>Skjule en kandidat gennem rekruttering
+# <a name="hire-candidates-through-recruitment"></a>Ansætte kandidater gennem rekruttering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger  
+Denne fremgangsmåde giver en rekrutteringsmedarbejder mulighed for at ansætte en ansøger, der har indsendt en ansøgning gennem et bestemt rekrutteringsprojekt. Når du ansætter en ansøger via et rekrutteringsprojekt, oprettes der en ny arbejderpost, og ansøgerens post får status som Ansat. Det demodatafirma, der bruges til at oprette denne procedure, er USMF. Du færdiggør denne procedure ved at gå til Personale > Rekruttering > Ansøgninger > Ansøgninger 
 
 1. Vælg en ansøgning for en ekstern ansøger
 2. Klik op linket i den valgte række på listen.
