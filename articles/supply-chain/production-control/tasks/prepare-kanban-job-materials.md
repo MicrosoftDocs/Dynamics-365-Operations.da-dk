@@ -1,21 +1,22 @@
----
+--- 
 title: "Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen"
 description: "Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materialerne ikke er tilgængelige for arbejdscellen."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
 ms.openlocfilehash: fdedab1bfccafb4f8592aea8ec421e3ba311a94a
@@ -40,4 +41,5 @@ Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materiale
     * Hvis flere job er markeret, viser pluklisten summen af alle varer, der er nødvendige for de valgte job.  
 6. Klik på Klargør.
     * Klargøringsprocessen er nu fuldført. Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.  
+
 

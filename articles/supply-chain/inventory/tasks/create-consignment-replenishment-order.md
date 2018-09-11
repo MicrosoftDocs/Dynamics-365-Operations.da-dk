@@ -1,21 +1,22 @@
----
+--- 
 title: Opret en genopfyldningsordre til konsignation
 description: "Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsignation, hvor du kan spore den forventede levering fra en leverandør til dit konsignationslager."
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
 ms.openlocfilehash: f7f8005ec9e723c94d53e6ab81f04ee388c83faa
@@ -60,7 +61,7 @@ Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsign
 ## <a name="receive-items"></a>Modtag varer
 1. Klik på Produktkvittering.
 2. Skriv en værdi i feltet Ekstern produktkvittering.
-3. Skriv et tal i feltet Antal, der er lavere end det tal, der vises.
+3. Skriv et tal i feltet Antal, der er lavere end det tal, der vises. 
 4. Klik på OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontroller lagerbeholdningen
@@ -70,4 +71,5 @@ Denne procedure viser, hvordan du kan oprette en genopfyldningsordre til konsign
     * De varer, der er modtaget som konsignationslager, der ejes af leverandøren, er disponible. Det resterende antal på genopfyldningsordren til konsignation vises i feltet Bestilt i alt.  
 4. Luk siden.
 5. Klik på Luk.
+
 

@@ -3,23 +3,24 @@ title: Oprette en baselineprognose
 description: "En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognosemodeller med tidsserier eller ved at kopiere den historiske efterspørgsel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 111/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: 6a712077fed4a94ae6ae6ce7ea2cfba8848e5fa5
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e6363ee48c0d13c79a6c623205dfa10f50d6070f
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-a-baseline-forecast"></a>Oprette en baselineprognose
@@ -42,7 +43,7 @@ En produktionsplanlægger kan oprette et prognosegrundlag ved hjælp af prognose
 7. Luk siden.
 8. Luk siden.
 
-## <a name="set-up-the-demand-forecasting-parameters"></a>Konfigurer parametre til behovsprognoserne
+## <a name="set-up-the-demand-forecasting-paramters"></a>Konfigurer parametre til behovsprognoserne
 1. Gå til Overordnet planlægning > Opsætning > Behovsprognose > Parametre til behovsprognoser.
 2. Udvid sektionen Parametre til prognosealgoritme.
 3. Vælg "Kopiér over historisk efterspørgsel" i feltet Strategi for generering af prognose.
