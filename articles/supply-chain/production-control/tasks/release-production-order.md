@@ -1,25 +1,26 @@
----
+--- 
 title: Frigive en produktionsordre
 description: Denne procedure viser, hvordan du frigiver en produktionsordre.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProdTableListPage, ProdParmRelease, SrsReportViewerForm
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8c28631adc7a7756b5b9f9a0cd0c43ebe1ce4f48
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 8086098d9ccccfc64c17cbabf709e389f5ac1907
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="release-a-production-order"></a><span data-ttu-id="1bfab-103">Frigive en produktionsordre</span><span class="sxs-lookup"><span data-stu-id="1bfab-103">Release a production order</span></span>
@@ -39,4 +40,5 @@ ms.lasthandoff: 08/07/2018
 5. <span data-ttu-id="1bfab-123">Markér afkrydsningsfeltet Udskriv rutekort.</span><span class="sxs-lookup"><span data-stu-id="1bfab-123">Click the Print route card checkbox.</span></span>
 6. <span data-ttu-id="1bfab-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="1bfab-124">Click OK.</span></span>
 7. <span data-ttu-id="1bfab-125">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="1bfab-125">Close the page.</span></span>
+
 

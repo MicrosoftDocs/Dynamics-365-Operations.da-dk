@@ -1,26 +1,27 @@
----
+--- 
 title: Rette oplysninger om lagersproing
 description: "Denne procedure fører dig gennem processen med at oprette og bogføre en lageroverførselskladde for at korrigere lagersporingsoplysninger."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 8647ae47000d2f035c84cb3f9447e090a8be0360
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: c78743239b5d98f4c5d1b1ed00617b11196983f5
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="correct-inventory-tracking-information"></a><span data-ttu-id="73337-103">Rette oplysninger om lagersproing</span><span class="sxs-lookup"><span data-stu-id="73337-103">Correct inventory tracking information</span></span>
@@ -62,4 +63,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="73337-136">Klik på lager.</span><span class="sxs-lookup"><span data-stu-id="73337-136">Click Inventory.</span></span>
 2. <span data-ttu-id="73337-137">Klik på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="73337-137">Click Transactions.</span></span>
     * <span data-ttu-id="73337-138">Her kan du se de posteringer, der blev oprettet, da du bogførte kladden.</span><span class="sxs-lookup"><span data-stu-id="73337-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
+
 

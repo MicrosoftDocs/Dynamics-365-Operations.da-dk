@@ -3,23 +3,24 @@ title: Konfigurere indbetalingskortformat for projektfakturaer
 description: "Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 02/16/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 197516e2dbc1ecc0f33681743fa3a45568441b1f
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 396c66a235024b569e5976175bb3a51555090643
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a><span data-ttu-id="e8686-103">Konfigurere indbetalingskortformat for projektfakturaer</span><span class="sxs-lookup"><span data-stu-id="e8686-103">Set up payment slip format for project invoices</span></span>

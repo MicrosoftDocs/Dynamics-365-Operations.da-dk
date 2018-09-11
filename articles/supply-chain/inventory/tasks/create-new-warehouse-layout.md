@@ -1,26 +1,27 @@
----
+--- 
 title: Oprette en ny lageropbygning
 description: "Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 11ad27e68e8eb499b2cf8e477d3dbf51d930b736
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 7db15eb5d80291641f0d0398d236b5e883cafcaf
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="aa36c-103">Oprette en ny lageropbygning</span><span class="sxs-lookup"><span data-stu-id="aa36c-103">Create a new warehouse layout</span></span>
@@ -49,7 +50,7 @@ ms.lasthandoff: 08/07/2018
 7. <span data-ttu-id="aa36c-122">Slå udvidelsen af sektionen Lokationsnavne til/fra.</span><span class="sxs-lookup"><span data-stu-id="aa36c-122">Toggle the expansion of the Location names section.</span></span>
     * <span data-ttu-id="aa36c-123">Indstillingerne i denne sektion definerer standardformatet for navne på lokaliteter.</span><span class="sxs-lookup"><span data-stu-id="aa36c-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="aa36c-124">I vores eksempel medtager vi gangnummer, reolnummer og hyldenummer.</span><span class="sxs-lookup"><span data-stu-id="aa36c-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
 8. <span data-ttu-id="aa36c-125">Du kan angive indstillingen Medtag gang til Ja.</span><span class="sxs-lookup"><span data-stu-id="aa36c-125">Set the Include aisle option to Yes.</span></span>
-9. <span data-ttu-id="aa36c-126">Du kan angive indstillingen Medtag reol til Ja.</span><span class="sxs-lookup"><span data-stu-id="aa36c-126">Set the Include rack option to Yes.</span></span>
+9. <span data-ttu-id="aa36c-126">Du kan angive indstillingen Medtag reol til Ja.</span><span class="sxs-lookup"><span data-stu-id="aa36c-126">Set the Include rack option to Yes.</span></span> 
 10. <span data-ttu-id="aa36c-127">Angiv en værdi for reolen i feltet Format.</span><span class="sxs-lookup"><span data-stu-id="aa36c-127">In the Format field, for the rack, type a value.</span></span>
     * <span data-ttu-id="aa36c-128">For eksempel: -##</span><span class="sxs-lookup"><span data-stu-id="aa36c-128">For example: -##</span></span>  
 11. <span data-ttu-id="aa36c-129">Du kan angive indstillingen Medtag hylde til Ja.</span><span class="sxs-lookup"><span data-stu-id="aa36c-129">Set the Include shelf option to Yes.</span></span>
@@ -74,4 +75,5 @@ ms.lasthandoff: 08/07/2018
 14. <span data-ttu-id="aa36c-147">Klik på Finish.</span><span class="sxs-lookup"><span data-stu-id="aa36c-147">Click Finish.</span></span>
 15. <span data-ttu-id="aa36c-148">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="aa36c-148">Close the page.</span></span>
 16. <span data-ttu-id="aa36c-149">Opdater siden.</span><span class="sxs-lookup"><span data-stu-id="aa36c-149">Refresh the page.</span></span>
+
 

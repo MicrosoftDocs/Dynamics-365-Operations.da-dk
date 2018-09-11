@@ -1,26 +1,27 @@
----
+--- 
 title: "Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen"
 description: "Denne opgave fokuserer på at klargøre et kanban-procesjob, når alle materialerne ikke er tilgængelige for arbejdscellen."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: b774179d3c29a6009c37dea491e07f629740027e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 34665fe0fe7e1f7989433b31aafcc4fe203141c2
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a><span data-ttu-id="c3ad5-103">Forberede et kanban-procesjob, når materialer er tilgængelige for arbejdscellen</span><span class="sxs-lookup"><span data-stu-id="c3ad5-103">Prepare a process kanban job when materials are available for the work cell</span></span>
@@ -40,4 +41,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="c3ad5-115">Hvis flere job er markeret, viser pluklisten summen af alle varer, der er nødvendige for de valgte job.</span><span class="sxs-lookup"><span data-stu-id="c3ad5-115">If multiple jobs are selected, the picking list will show the sum of all items needed for the selected jobs.</span></span>  
 6. <span data-ttu-id="c3ad5-116">Klik på Klargør.</span><span class="sxs-lookup"><span data-stu-id="c3ad5-116">Click Prepare.</span></span>
     * <span data-ttu-id="c3ad5-117">Klargøringsprocessen er nu fuldført.</span><span class="sxs-lookup"><span data-stu-id="c3ad5-117">The preparation process is now completed.</span></span> <span data-ttu-id="c3ad5-118">Det markerede afkrydsningsfelt for alle rækker på pluklisten angiver, at forsyningsstatus er plukket.</span><span class="sxs-lookup"><span data-stu-id="c3ad5-118">The selected check box for all rows in the picking list indicates that the supply status is picked.</span></span>  
+
 

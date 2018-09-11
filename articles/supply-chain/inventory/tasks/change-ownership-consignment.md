@@ -1,26 +1,27 @@
----
+--- 
 title: "Ændre ejerskabet til konsignationslager ud fra produktionsbehov"
 description: "Denne fremgangsmåde viser, hvordan du ændrer ejeren af konsignationslageret fra leverandøren til din juridiske enhed, når der er behov for lageret i produktionen."
 author: perlynne
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: a665387244c571907afab24a54bc88580eca093e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5dd00e6f53d13305949d225e73223ab54947c804
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a><span data-ttu-id="210c5-103">Ændre ejerskabet til konsignationslager ud fra produktionsbehov</span><span class="sxs-lookup"><span data-stu-id="210c5-103">Change the ownership of consignment inventory based on production demand</span></span>
@@ -51,4 +52,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="210c5-131">Når kladden er bogført, frigives det lager, der ejes af leverandøren, ved hjælp af henvisningen "Ændring af ejerskab".</span><span class="sxs-lookup"><span data-stu-id="210c5-131">When the journal is posted, the vendor-owned inventory is released by using an "Ownership change" reference.</span></span> <span data-ttu-id="210c5-132">Lagerbeholdningen modtages derefter som disponibel ved hjælp af den lagertransaktion, der opdateres på produktkvitteringen for indkøbsordre.</span><span class="sxs-lookup"><span data-stu-id="210c5-132">The inventory is then received as on-hand by using an inventory transaction that is updated with a purchase order product receipt.</span></span> <span data-ttu-id="210c5-133">Bemærk, at det kun er transaktioner, der vedrører den bogførte kladde, der oprettes.</span><span class="sxs-lookup"><span data-stu-id="210c5-133">Note that only transactions that are related to the posted journal are created.</span></span> <span data-ttu-id="210c5-134">Der oprettes ingen forventede lagertransaktioner.</span><span class="sxs-lookup"><span data-stu-id="210c5-134">No expected inventory transactions are created.</span></span>  
 2. <span data-ttu-id="210c5-135">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="210c5-135">Click OK.</span></span>
 3. <span data-ttu-id="210c5-136">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="210c5-136">Close the page.</span></span>
+
 
