@@ -3,7 +3,7 @@ title: Oprette en juridisk enhed
 description: "En juridisk enhed er en organisation, der er identificeret ved at være registreret hos en juridisk myndighed."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

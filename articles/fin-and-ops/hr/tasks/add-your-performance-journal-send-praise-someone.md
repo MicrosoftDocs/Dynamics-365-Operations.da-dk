@@ -3,7 +3,7 @@ title: "Tilføje til performancekladde og sende ros til en person"
 description: "Performancekladden indeholder oplysninger, der vedrører, hvordan du har opfyldt dine mål, eller hvordan du har performet i en periode."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

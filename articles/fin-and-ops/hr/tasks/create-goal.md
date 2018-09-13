@@ -3,7 +3,7 @@ title: "Oprette et mål"
 description: "Du kan oprette mål, føje aktiviteter til mål, spore målinger og knytte mål til en evaluering."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
