@@ -3,7 +3,7 @@ title: "Angive en tilføjelse til et anlægsaktiv"
 description: "Denne procedure viser, hvordan du føjer en tilføjelse til et eksisterende anlægsaktiv."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

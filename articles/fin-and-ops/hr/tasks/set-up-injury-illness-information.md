@@ -3,7 +3,7 @@ title: Konfigurer oplysninger om skade og sygdom
 description: "Arbejdsgivere skal vide, når deres medarbejdere kommer til skade eller bliver syge som følge af farlige forhold på arbejdspladsen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

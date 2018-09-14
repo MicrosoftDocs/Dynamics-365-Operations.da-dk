@@ -3,7 +3,7 @@ title: Oprette et produkt
 description: "Denne procedure gennemgår oprettelse af et nyt produkt i detailprodukthierarkiet."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

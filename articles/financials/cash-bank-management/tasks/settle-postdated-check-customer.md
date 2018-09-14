@@ -3,7 +3,7 @@ title: Udligne en fremdateret check fra en debitor
 description: Du kan udligne en fremdateret check, efter at checken er clearet af banken.
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

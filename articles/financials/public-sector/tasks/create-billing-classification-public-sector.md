@@ -3,7 +3,7 @@ title: Oprette en faktureringsklassifikation i den offentlige sektor
 description: Offentlige institutioner kan bruge faktureringsklassifikationer til at administrere fritekstfakturaer.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

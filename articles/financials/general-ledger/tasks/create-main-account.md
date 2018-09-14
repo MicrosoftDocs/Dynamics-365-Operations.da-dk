@@ -3,7 +3,7 @@ title: Oprette en hovedkonto
 description: "Denne opgaveguide gennemgår tilføjelse af en hovedkonto til en eksisterende kontoplan."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

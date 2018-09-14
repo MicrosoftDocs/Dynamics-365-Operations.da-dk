@@ -3,7 +3,7 @@ title: "Fastlægge betingelser for debitorbetaling"
 description: "Denne procedure definerer opsætning af en kasserabat og forfaldsdato."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

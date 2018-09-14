@@ -3,7 +3,7 @@ title: " Designe relationerne mellem organisationsenheder"
 description: "Denne procedure fører gennem udformning af relationen mellem organisationsenheder."
 author: mugunthanm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Konfigurer opdeling af opgaver
 description: "Du kan oprette regler for at adskille opgaver, der skal udføres af forskellige brugere."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

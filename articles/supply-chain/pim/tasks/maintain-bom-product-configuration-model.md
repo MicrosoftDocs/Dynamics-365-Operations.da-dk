@@ -3,7 +3,7 @@ title: Vedligeholde styklisten for en produktkonfigurationsmodel
 description: "Kørsel af denne procedure kræver en eksisterende model til produktkonfiguration."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

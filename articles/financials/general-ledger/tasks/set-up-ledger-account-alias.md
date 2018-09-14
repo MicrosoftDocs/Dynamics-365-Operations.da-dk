@@ -3,7 +3,7 @@ title: Konfigurere et finanskontoalias
 description: I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer.
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

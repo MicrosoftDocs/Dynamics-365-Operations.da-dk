@@ -3,7 +3,7 @@ title: "Tilføje en foregående aktivitet til en produktionsflowversion"
 description: "Alle aktiviteter skal angives i rækkefølge i en produktionsflowversion."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

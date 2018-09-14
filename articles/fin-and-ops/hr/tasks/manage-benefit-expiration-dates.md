@@ -3,7 +3,7 @@ title: "Administrere frynsegoders udløbsdatoer"
 description: "Denne fremgangsmåde viser, hvordan du kan angive et frynsegode som udløbet eller forlænget og administrere tilmeldingsdatoerne for arbejdere, der er tilmeldt frynsegodet."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Registrere modtagelsen af varer for indkøbsordren"
 description: "Denne fremgangsmåde viser, hvordan du registrerer modtagelsen af varer direkte på en indkøbsordre."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurere klassifikationer for købsaftaler i den offentlige sektor"
 description: "Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

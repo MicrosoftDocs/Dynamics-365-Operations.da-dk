@@ -3,7 +3,7 @@ title: "Godkende poster i indbakke for ansøgninger"
 description: "Denne fremgangsmåde viser, hvordan du gennemser ansøgninger, der modtages via Employee Self-Service."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

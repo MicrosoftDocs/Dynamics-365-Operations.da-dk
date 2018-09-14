@@ -3,7 +3,7 @@ title: Vise omkostningsposter for et omkostningsobjekt
 description: "Denne procedure viser, hvordan du kan få vist omkostningsposter for et omkostningsobjekt."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

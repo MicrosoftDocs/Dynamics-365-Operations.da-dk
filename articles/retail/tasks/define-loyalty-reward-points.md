@@ -3,7 +3,7 @@ title: " Definere bonuspoint for fordelskunde"
 description: "Denne procedure gennemgår definition af fordelskundebelønningspoint."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

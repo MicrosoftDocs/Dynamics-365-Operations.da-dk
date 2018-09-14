@@ -3,7 +3,7 @@ title: Oprette posteringer til periodisering af finans
 description: "Denne opgaveguide gennemgår oprettelse af posteringer til periodisering af finans, som er baseret på periodiseringsskemaer."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

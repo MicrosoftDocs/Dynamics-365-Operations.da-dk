@@ -3,7 +3,7 @@ title: "Overføre data for produktmodeller"
 description: "Eksport af data til en produktkonfigurationsmodel kræver, at du har mindst én produktmodel tilgængelig."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

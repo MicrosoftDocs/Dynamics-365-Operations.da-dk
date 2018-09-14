@@ -3,7 +3,7 @@ title: "Oprette et rykkerforløb"
 description: "Brug denne opgaveguide til at oprette et rykkerforløb."
 author: mikefalkner
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Oprette en gentagen indkøbsordre"
 description: "Denne fremgangsmåde viser, hvordan du opretter en ny indkøbsordre (IO) ved at kopiere linjer fra et tidligere indkøbsordredokument til en ny indkøbsordre eller en eksisterende indkøbsordre."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

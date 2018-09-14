@@ -3,7 +3,7 @@ title: Oprette en rentekode med et interval
 description: "Rentekoder kan konfigureres til at beregne forskellige rentebeløb baseret på et interval af værdier."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

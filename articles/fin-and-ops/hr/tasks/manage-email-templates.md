@@ -3,7 +3,7 @@ title: Administrere mailskabeloner
 description: "Du kan overføre oplysninger fra din organisations database til bogmærkerne i et nyt dokument og bruge dem i skabeloner, der kan hjælper dig med at kommunikere effektivt med ansøgere og kandidater."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

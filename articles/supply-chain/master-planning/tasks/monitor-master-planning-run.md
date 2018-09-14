@@ -3,7 +3,7 @@ title: "Overvåge kørsel af en varedisponering"
 description: "Produktionsplanlæggeren ønsker at se, om en varedisponeringskørsel er i gang."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

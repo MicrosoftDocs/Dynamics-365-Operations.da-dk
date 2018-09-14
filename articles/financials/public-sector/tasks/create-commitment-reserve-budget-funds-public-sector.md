@@ -3,7 +3,7 @@ title: Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor
 description: Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

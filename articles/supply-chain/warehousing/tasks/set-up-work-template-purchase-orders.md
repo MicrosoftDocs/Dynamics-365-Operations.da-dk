@@ -3,7 +3,7 @@ title: "Konfigurere en arbejdsskabelon for indkøbsordrer"
 description: "Denne procedure fokuserer på konfiguration af en simpel arbejdsskabelon, der skal bruges, når varer, du har modtaget, lægges på lager."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

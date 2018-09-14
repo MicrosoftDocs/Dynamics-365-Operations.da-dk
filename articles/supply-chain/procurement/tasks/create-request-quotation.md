@@ -3,7 +3,7 @@ title: Oprette en tilbudsanmodning
 description: Denne procedure viser dig, hvordan du skal oprette en tilbudsanmodning.
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

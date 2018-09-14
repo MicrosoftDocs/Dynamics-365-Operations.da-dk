@@ -3,7 +3,7 @@ title: Oprette og tildele en handelspartnerkode i den offentlige sektor
 description: Opret en handelspartnerkode, og tildel den til en offentlig myndighed, som din organisation handler med.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

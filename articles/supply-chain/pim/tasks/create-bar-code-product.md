@@ -3,7 +3,7 @@ title: Oprette en stregkode for et produkt
 description: "Denne fremgangsmåde viser, hvordan du manuelt opretter en stregkode med varenummer M0001 som eksempel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

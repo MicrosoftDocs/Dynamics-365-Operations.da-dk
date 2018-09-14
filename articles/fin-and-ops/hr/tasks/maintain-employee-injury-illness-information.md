@@ -3,7 +3,7 @@ title: Vedligeholde oplysninger om skade og sygdom for medarbejder
 description: "Det anbefales at fuldføre opgaveguiden \"Konfiguration af skade og sygdom\" først, fordi nogle af konfigurationsoplysningerne bruges her."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

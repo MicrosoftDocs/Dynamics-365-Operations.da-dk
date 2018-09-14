@@ -3,7 +3,7 @@ title: "Aktivere lønproces for tid og fremmøde"
 description: "Denne procedure viser, hvordan lønprocessen for tid og fremmøde aktiveres."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

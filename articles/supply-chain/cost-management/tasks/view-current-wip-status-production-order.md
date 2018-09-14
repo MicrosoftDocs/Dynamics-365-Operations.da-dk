@@ -3,7 +3,7 @@ title: "Vise aktuelle IGVF-status på en produktionsordre"
 description: "Denne procedure viser, hvordan du kan få vist IGVA-opgørelse på en produktionsordre."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Oprette en momsbetaling
 description: "Jobbet Afregn og bogfør moms afregner momssaldi i momskonti og udligner dem til momsafregningskontoen for en given periode."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

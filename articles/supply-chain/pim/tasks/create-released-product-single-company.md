@@ -3,7 +3,7 @@ title: Oprette et frigivet produkt for et enkelt firma
 description: "Denne fremgangsmåde beskriver, hvordan du opretter et enkelt frigivet produkt inden for rammerne af en enkelt juridisk enhed."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

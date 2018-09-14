@@ -3,7 +3,7 @@ title: Konfigurere en aftale for en last
 description: "Denne procedure viser, hvordan du opretter og planlægger området for læsning."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

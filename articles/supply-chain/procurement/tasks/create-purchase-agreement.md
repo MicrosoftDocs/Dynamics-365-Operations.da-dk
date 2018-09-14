@@ -3,7 +3,7 @@ title: "Oprette en købsaftale"
 description: "Denne procedure føres du gennem oprettelsen af en købsaftale."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Angive arbejderoplysninger
 description: "Når en rekrutteringsmedarbejder har oprettet et masseansættelsesprojekt og genereret stillingerne, er næste trin at angive arbejderoplysninger for de personer, der ansættes."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

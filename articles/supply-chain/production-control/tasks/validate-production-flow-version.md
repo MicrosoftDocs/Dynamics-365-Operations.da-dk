@@ -3,7 +3,7 @@ title: Validere et produktionsflow og en version
 description: "Denne procedure viser, hvordan du opretter et nyt produktionsflow og en første version af lean manufacturing."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

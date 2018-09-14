@@ -3,7 +3,7 @@ title: " Behandle reguleringer for kundefordelsbonuspoint"
 description: "Denne procedure viser, hvordan du søger efter oplysninger om fordelskundekort og regulerer fordelskundebelønningspoint."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

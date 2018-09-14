@@ -3,7 +3,7 @@ title: Oprette en bankfacilitetsaftale for en remburs
 description: "Denne opgave fører dig gennem oprettelse af en bankfacilitetsaftale til behandling af en remburs."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

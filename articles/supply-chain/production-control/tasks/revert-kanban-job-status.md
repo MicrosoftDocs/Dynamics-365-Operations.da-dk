@@ -3,7 +3,7 @@ title: Gendan status for kanban-job
 description: "Denne procedure fokuserer på at vende tilbage til en forkert kanban-jobstatus."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

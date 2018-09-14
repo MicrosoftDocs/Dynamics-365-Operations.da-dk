@@ -3,7 +3,7 @@ title: "Opsætning af elektroniske signaturer"
 description: Brug denne procedure til at konfigurere elektroniske signaturer.
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

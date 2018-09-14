@@ -3,7 +3,7 @@ title: Aktivere en produktionsflowversion
 description: "Før der kan oprettes kanban-job, og aktiviteter kan blive behandlet for en produktionsflowversion, skal du aktivere versionen."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

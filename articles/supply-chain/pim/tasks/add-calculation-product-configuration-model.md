@@ -3,7 +3,7 @@ title: "Tilføje en beregning til en produktkonfigurationsmodel"
 description: "Denne procedure viser, hvordan du kan føje en ny beregning til en produktkonfigurationsmodel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurere politikker for indkøbskategorihierarkier"
 description: "Brug denne fremgangsmåde til at oprette regler for bestilling af produkter i en kategori."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

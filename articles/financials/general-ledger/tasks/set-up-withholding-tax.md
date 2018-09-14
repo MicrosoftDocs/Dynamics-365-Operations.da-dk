@@ -3,7 +3,7 @@ title: Konfigurere indeholdt skat
 description: "A-skat er en skat på leverandører, der ikke opretter momstransaktioner."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

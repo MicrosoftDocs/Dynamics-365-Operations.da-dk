@@ -3,7 +3,7 @@ title: "Vis bogførte momstransaktioner"
 description: "Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

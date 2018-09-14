@@ -3,7 +3,7 @@ title: "Konfigurere attributbaseret prissætning for konfigurerbare produkter"
 description: Denne procedure viser, hvordan du opretter attributbaserede priser.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

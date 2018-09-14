@@ -3,7 +3,7 @@ title: Oprette en ny kanban-regel ved at duplikere en eksisterende kanban-regel
 description: "Denne procedure fokuserer på oprettelse en dublet af en eksisterende kanban-regel."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

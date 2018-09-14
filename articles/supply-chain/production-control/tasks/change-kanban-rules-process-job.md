@@ -3,7 +3,7 @@ title: "Ændre kanban-regler for et procesjob"
 description: "Denne procedure drejer sig om ændring af den brugte kanban-regel for en bestemt kanban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

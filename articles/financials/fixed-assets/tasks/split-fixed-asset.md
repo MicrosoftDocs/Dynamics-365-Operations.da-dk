@@ -3,7 +3,7 @@ title: "Opdele et anlægsaktiv"
 description: "Denne opgaveguide opdeler en procentdel af et anlægskartotek til et nyt anlægskartotek."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

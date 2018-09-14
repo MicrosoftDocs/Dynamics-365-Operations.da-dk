@@ -3,7 +3,7 @@ title: "Registrere chaufførs ind- og udtjekning for en aftale"
 description: "Denne procedure viser, hvordan du registrerer chaufførens check-in og chaufførens check-ud."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

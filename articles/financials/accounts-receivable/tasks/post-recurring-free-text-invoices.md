@@ -3,7 +3,7 @@ title: "Generere og bogføre tilbagevendende fritekstfakturaer"
 description: "Tilbagevendende fakturaer bruges til jævnlig fakturering af kunder for samme beløb."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

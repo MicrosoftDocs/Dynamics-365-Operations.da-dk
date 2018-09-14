@@ -3,7 +3,7 @@ title: Oprette en dimensionsbaseret produktmaster
 description: "Denne fremgangsmåde viser, hvordan du opretter en ny produktmaster med teknologi for dimensionsbaseret konfiguration."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

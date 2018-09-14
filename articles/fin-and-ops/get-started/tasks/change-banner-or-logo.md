@@ -3,7 +3,7 @@ title: Skifte banner eller logo
 description: "Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

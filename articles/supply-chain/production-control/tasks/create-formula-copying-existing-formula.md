@@ -3,7 +3,7 @@ title: Oprette en blanket ved at kopiere fra en eksisterende formel
 description: Denne procedure viser, hvordan du hurtigt kan oprette en ny formel ved at kopiere fra en eksisterende formel.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

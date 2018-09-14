@@ -3,7 +3,7 @@ title: "Definere dækningsregler for varer"
 description: Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

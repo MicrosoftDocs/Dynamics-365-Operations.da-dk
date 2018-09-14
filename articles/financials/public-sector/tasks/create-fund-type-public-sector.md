@@ -3,7 +3,7 @@ title: Oprette en finansieringskildetype i den offentlige sektor
 description: Middeltyper er kategorier, du kan bruge til gruppere midler til detaljeret sporing og rapportering i regnskabet.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

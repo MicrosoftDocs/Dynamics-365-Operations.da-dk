@@ -3,7 +3,7 @@ title: Definere variantgrupper
 description: "Denne fremgangsmåde viser, hvordan du definerer konfigurationen af produktgrupper ved at oprette to grupper i demodatafirmaet USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Gennemse oplysninger om rykkere
 description: "Denne procedure fører dig gennem, hvordan du gennemgår rykkeroplysninger samt forskellige konfigurationsindstillinger og rykkerposteringer."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Frigive et produkt/en produktmaster til juridiske enheder
 description: "Denne procedure gennemgår frigivelse af et produkt eller en produktmaster til en eller flere juridiske enheder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

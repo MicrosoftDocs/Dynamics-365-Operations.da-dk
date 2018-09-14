@@ -3,7 +3,7 @@ title: "Oprette projektindkøbsordre"
 description: "Denne procedure viser, hvordan du opretter en projektindkøbsordre."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

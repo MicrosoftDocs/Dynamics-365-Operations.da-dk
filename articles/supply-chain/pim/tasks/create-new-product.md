@@ -3,7 +3,7 @@ title: Opret et nyt produkt
 description: Denne opgave viser, hvordan du opretter et nyt delt produkt.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

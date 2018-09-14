@@ -3,7 +3,7 @@ title: "Planlægge en produktionsordre med grov- og finplanlægning"
 description: "Denne procedure drejer sig om planlægning af en produktionsordre med grovplanlægning og finplanlægning."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

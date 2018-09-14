@@ -3,7 +3,7 @@ title: Oprette og tilknytte en hardwarestation
 description: "Denne procedure gennemgår oprettelse af en ny hardwarestation."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

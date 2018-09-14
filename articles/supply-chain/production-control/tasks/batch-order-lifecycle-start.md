@@ -3,7 +3,7 @@ title: Livscyklus for batchordre fra oprettelse til start
 description: "Denne procedure fører dig gennem den første del af livscyklussen for en batchordre."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

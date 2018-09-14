@@ -3,7 +3,7 @@ title: Oprette bagside- og signatursider for en betalingsrapport for den offentl
 description: "Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

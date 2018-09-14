@@ -3,7 +3,7 @@ title: Konfigurere en oversigtsprofil for varemodtagelse
 description: "Denne opgave fokuserer på oprettelse af en profil for modtagelsesoversigt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

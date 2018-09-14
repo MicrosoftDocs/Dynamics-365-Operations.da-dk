@@ -3,7 +3,7 @@ title: Konfigurere momsgrupper og varemomsgrupper
 description: "Denne opgaveregistrering fører dig gennem konfigurationen af moms- og varemomsgrupper."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

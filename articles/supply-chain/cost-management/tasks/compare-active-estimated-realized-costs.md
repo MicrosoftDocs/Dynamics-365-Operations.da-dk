@@ -3,7 +3,7 @@ title: Sammenligne aktive, estimerede og realiserede omkostninger for en produkt
 description: "Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsomkostningsafvigelse for en produktionsordre."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

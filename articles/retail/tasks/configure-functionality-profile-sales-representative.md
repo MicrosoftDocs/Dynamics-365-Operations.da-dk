@@ -3,7 +3,7 @@ title: "Konfigurere funktionalitetsprofilen for en sælger"
 description: "Denne fremgangsmåde viser, hvordan du konfigurerer de indstillinger for en butiks funktionalitetsprofil, der gælder for sælgere."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

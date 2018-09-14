@@ -3,7 +3,7 @@ title: Konfigurere et menupunkt for mobilenheden til registrering af modtagne va
 description: "Denne opgave fokuserer på opsætningen af et menupunkt på mobilenheden."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

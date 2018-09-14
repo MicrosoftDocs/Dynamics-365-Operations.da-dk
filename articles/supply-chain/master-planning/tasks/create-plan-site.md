@@ -3,7 +3,7 @@ title: Oprette en plan for et sted
 description: "Produktionsplanlæggeren beregner materiale- og kapacitetskravene for produktionen af en bestemt vare."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

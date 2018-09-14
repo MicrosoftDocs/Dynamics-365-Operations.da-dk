@@ -3,7 +3,7 @@ title: "Identificere og installere kandidatudvælgelsesværktøjer"
 description: "Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

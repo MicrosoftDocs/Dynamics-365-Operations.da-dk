@@ -3,7 +3,7 @@ title: "Tilføje et billede til et produkt"
 description: "Denne fremgangsmåde viser, hvordan du føjer et billede til et produkt. Det demodatafirma, der er brugt til at oprette denne opgave, er USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

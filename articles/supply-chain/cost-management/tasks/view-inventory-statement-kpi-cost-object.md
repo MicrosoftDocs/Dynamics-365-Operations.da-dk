@@ -3,7 +3,7 @@ title: "Vise lageropgørelse og KPI efter omkostningsobjekt"
 description: Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

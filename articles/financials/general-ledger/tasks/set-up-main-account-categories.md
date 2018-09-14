@@ -3,7 +3,7 @@ title: Konfigurere hovedkontokategorier
 description: "Hovedkontokategorier bruges til standardrapporter i økonomisk rapportering og Power BI."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

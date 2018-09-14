@@ -3,7 +3,7 @@ title: Deaktivere en produktionsflowversion
 description: "Når en aktiv produktionsflowversion ikke længere er nødvendig, kan den være deaktiveret."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

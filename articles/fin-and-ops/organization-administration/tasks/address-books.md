@@ -3,7 +3,7 @@ title: Konfigurere adressekartoteker
 description: "Brug denne procedure og de beslutninger, du har taget i emnet for planlægning af konfigurationen af det globale adressekartotek og yderligere adressekartoteker, for at oprette yderligere adressekartoteker for organisationen."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

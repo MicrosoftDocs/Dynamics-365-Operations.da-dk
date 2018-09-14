@@ -3,7 +3,7 @@ title: Oprette koncerngrupper og supplerende koncernkonti
 description: "Denne procedure viser, hvordan du opretter en koncernkontogruppe og derefter føjer konti til gruppen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

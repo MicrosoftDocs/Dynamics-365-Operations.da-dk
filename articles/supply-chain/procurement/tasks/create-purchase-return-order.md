@@ -3,7 +3,7 @@ title: "Oprette en købsreturordre"
 description: "Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hjælp af handlingen Kreditnota for at kopiere linjer fra et kreditorfakturadokument til en ny indkøbsordre."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

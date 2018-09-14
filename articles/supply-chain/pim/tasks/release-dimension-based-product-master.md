@@ -3,7 +3,7 @@ title: Frigive en dimensionsbaseret produktmaster
 description: "Denne fremgangsmåde viser, hvordan du frigiver en produktmaster, der skal bruges til dimensionsbaserede konfigurationer."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

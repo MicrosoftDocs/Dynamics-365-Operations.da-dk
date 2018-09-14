@@ -3,7 +3,7 @@ title: "Oprette en indkøbsordre fra en salgsordre"
 description: "Denne procedure viser, hvordan du kan oprette en indkøbsordre, der er baseret på en salgsordre."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

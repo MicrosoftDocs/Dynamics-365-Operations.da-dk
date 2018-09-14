@@ -3,7 +3,7 @@ title: "Oprette planlægningsegenskaber for arbejdstid"
 description: "Egenskaber for planlægning af arbejdstid bruges til at kategorisere tidsintervaller i arbejdstiden og definere de indstillinger, som operatorer skal tage højde for."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

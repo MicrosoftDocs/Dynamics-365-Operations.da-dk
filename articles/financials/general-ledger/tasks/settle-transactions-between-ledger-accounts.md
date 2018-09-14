@@ -3,7 +3,7 @@ title: Udligne posteringer mellem finanskonti
 description: Denne procedure viser, hvordan du udligner posteringer mellem finanskonti og annullerer en finansudligning.
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

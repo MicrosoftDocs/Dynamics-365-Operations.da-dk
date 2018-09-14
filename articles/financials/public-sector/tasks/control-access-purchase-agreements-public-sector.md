@@ -3,7 +3,7 @@ title: "Kontrollere adgang til købsaftaler i den offentlige sektor"
 description: "Du kan sikre dig, at kun godkendte afdelinger kan få adgang til en købsaftale."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

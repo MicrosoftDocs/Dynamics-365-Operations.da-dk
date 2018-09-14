@@ -3,7 +3,7 @@ title: Oprette omkostningsobjekter
 description: "Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere den økonomiske Dynamics 365 for Finance and Operations, Enterprise edition-dimension af typen Bærer til omkostningsregnskabet via en dataconnector."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

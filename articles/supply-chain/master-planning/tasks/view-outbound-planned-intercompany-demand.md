@@ -3,7 +3,7 @@ title: "Vise udgående planlagt intern efterspørgsel"
 description: "Denne fremgangsmåde viser, hvordan du får vist alle forslag, der opfyldes af en intern kreditor."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

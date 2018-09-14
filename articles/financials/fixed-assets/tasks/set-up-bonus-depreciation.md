@@ -3,7 +3,7 @@ title: Oprette straksafskrivning
 description: "Denne procedure viser, hvordan du opretter en særlig afskrivning og knytter den til et anlægskartotek."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

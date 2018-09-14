@@ -3,7 +3,7 @@ title: "Lukke regnskabsåret"
 description: "Denne procedure gennemgår processen for årsafslutning, som overfører saldi til et nyt regnskabsår."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
