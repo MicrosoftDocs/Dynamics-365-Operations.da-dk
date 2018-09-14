@@ -99,8 +99,6 @@
       href: call-center-functionality.md
     - name: Callcenter-kataloger
       href: call-center-catalogs.md
-    - name: Oprette et callcenter-katalog
-      href: create-call-center-catalogs.md
     - name: Konfigurere leveringsmetoder og gebyrer
       href: configure-call-center-delivery.md
     - name: Konfigurere og arbejde med advarsler om svindel
@@ -133,6 +131,8 @@
       href: MPOS-or-CPOS.md
     - name: Online og offline POS-handlinger
       href: pos-operations.md
+    - name: Enhedsaktivering af et tilpasset Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
     - name: Skærmlayouts til demodata i MPOS og Cloud POS
       href: demo-data.md
     - name: Produkt- og kundeservicesøgning i POS
