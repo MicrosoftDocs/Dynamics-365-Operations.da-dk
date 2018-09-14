@@ -3,7 +3,7 @@ title: Udligne en fremdateret check fra en debitor
 description: Du kan udligne en fremdateret check, efter at checken er clearet af banken.
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: aaaee86d966e7144911f36a8d1419d991ace10d8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 86cefaac99a1ce5aa777f4f62456c3248045cc27
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a><span data-ttu-id="14ba0-103">Udligne en fremdateret check fra en debitor</span><span class="sxs-lookup"><span data-stu-id="14ba0-103">Settle a postdated check from a customer</span></span>

@@ -3,7 +3,7 @@ title: "Konfigurere klassifikationer for købsaftaler i den offentlige sektor"
 description: "Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 380b71726cefa69ff7cbe8b8d765013cf07c11c0
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8c7c36f348df39e9b91ddbc02237b3072c20e8ed
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a><span data-ttu-id="2459c-103">Konfigurere klassifikationer for købsaftaler i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="2459c-103">Set up purchase agreement classifications in the public sector</span></span>

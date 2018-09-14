@@ -3,7 +3,7 @@ title: Oprette bagside- og signatursider for en betalingsrapport for den offentl
 description: "Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: fe28f68a842ca57fb90c90355aed6aa602bbe36f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 70a3dc9b47c37b6b727c783d7a8ca53496a7d664
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a><span data-ttu-id="5ca47-103">Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="5ca47-103">Create cover and signature pages for a payments report for the public sector</span></span>

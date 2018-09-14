@@ -3,7 +3,7 @@ title: "Tilføje en certificeringstype til en kreditor i den offentlige sektor"
 description: Du kan oprette og tildele enhver type certificering, som kreditorer kan have, til kreditorerne.
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: dc89fae37c277979d092cbda1b666ebb606e6218
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f79c02ab98e89a24c6b7a4933c5119a8ae175a22
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="add-a-certification-type-to-a-vendor-in-the-public-sector"></a><span data-ttu-id="03649-103">Tilføje en certificeringstype til en kreditor i den offentlige sektor</span><span class="sxs-lookup"><span data-stu-id="03649-103">Add a certification type to a vendor in the public sector</span></span>

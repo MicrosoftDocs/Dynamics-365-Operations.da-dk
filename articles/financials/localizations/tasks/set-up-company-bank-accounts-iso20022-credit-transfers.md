@@ -3,7 +3,7 @@ title: "Konfigurere firmas bankkonti for ISO20022-kreditoverførsler"
 description: "Denne procedure viser, hvordan du konfigurerer de firmaspecifikke bankkontooplysninger, der kræves til generering af SEPA-betalingsfilen."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 83fdc82aca43b1252b6c4da4529fb69406c3a2aa
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="53447-103">Konfigurere firmas bankkonti for ISO20022-kreditoverførsler</span><span class="sxs-lookup"><span data-stu-id="53447-103">Set up company bank accounts for ISO20022 credit transfers</span></span>

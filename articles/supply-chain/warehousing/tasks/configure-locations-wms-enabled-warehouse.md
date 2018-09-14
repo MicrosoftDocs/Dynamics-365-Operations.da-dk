@@ -3,7 +3,7 @@ title: "Konfigurere lokationer på et WMS-aktiveret lagersted"
 description: "Denne vejledning viser, hvordan du konfigurerer lokationsopsætningen for et nyt WMS-aktiveret lagersted (et lagersted, der bruger avancerede lagerstedsstyringsprocesser)."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: fdfc87871b28238108f056bb762116d6ff7938a8
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2be3c7cb33225041872e8b747ba28063f897dae9
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a><span data-ttu-id="66f57-103">Konfigurere lokationer på et WMS-aktiveret lagersted</span><span class="sxs-lookup"><span data-stu-id="66f57-103">Configure locations in a WMS-enabled warehouse</span></span>

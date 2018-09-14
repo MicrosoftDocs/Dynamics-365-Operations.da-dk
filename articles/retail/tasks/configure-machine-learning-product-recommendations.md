@@ -3,7 +3,7 @@ title: "Konfigurere produktanbefalinger, der er baseret på maskinel indlæring"
 description: "Denne procedure opdaterer de data i enheden, der bruges af systemet til maskinel ind læring, som er baseret på produktanbefalingerne, og derefter aktiveres produktanbefalinger på POS-klienter."
 author: ashishmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 6c3f838372cc17414741ccc3165e129c46d19a6a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 700af913f18e23c66db53a92033def06818af1ec
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="configure-machine-learning-powered-product-recommendations"></a><span data-ttu-id="e39b4-103">Konfigurere produktanbefalinger, der er baseret på maskinel indlæring</span><span class="sxs-lookup"><span data-stu-id="e39b4-103">Configure machine learning-powered product recommendations</span></span>
