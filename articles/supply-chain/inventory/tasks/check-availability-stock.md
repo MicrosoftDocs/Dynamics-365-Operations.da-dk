@@ -1,7 +1,7 @@
 --- 
 title: "Kontrollere tilgængelighed af lagerbeholdning"
 description: "Denne fremgangsmåde viser, hvordan du kontrollerer disponible og fysisk disponibel lagerbeholdning for et bestemt varenummer."
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
