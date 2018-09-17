@@ -25,6 +25,8 @@ ms.lasthandoff: 08/08/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Nye eller opdaterede opgaveguider (december 2017)
 
+[!include [banner](../includes/banner.md)]
+
 I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (december 2016 - alle sprog) til Microsoft Dynamics 365 for Operations.
 
 

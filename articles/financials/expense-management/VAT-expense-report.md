@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Inddrivelse af moms i Udgiftsstyring
 
+[!include [banner](../includes/banner.md)]
+
 For at få beløb refunderet fra berettigede momstransaktioner skal en virksomhed eller organisation identificere, indsamle, kontrollere og indsende nøjagtige oplysninger. Denne proces omfatter flere forskellige opgaver, og afhængigt af virksomhedens størrelse, kan den omfatte flere medarbejdere eller roller.
 
 For at få moms retur vha. Udgiftsstyring skal følgende opgaver fuldføres:
