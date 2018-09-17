@@ -44,11 +44,13 @@ Hvis du vil bruge kreditkort, skal du konfigurere og aktivere en betalingstjenes
 
 ## <a name="adding-a-new-credit-card"></a>Tilføje et nyt kreditkort
 Du kan oprette nye kreditkortposter på siden Debitorer ved hjælp af Debitor, Opsætning, Kreditkort. Du kan også oprette kreditkortposter, når du angiver salgsordrer på siden Salgsordre ved hjælp af Administrer, Debitor, Kreditkort, Registrer.
-Føje et kreditkort til en salgsordre
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Føje et kreditkort til en salgsordre
 -------------------------------------
 
 Du kan føje et kreditkort til en salgsordre ved at vælge et kreditkort i kreditkortopslaget på oversigtspanelet Prisen og rabatter på siden Salgsordre. Start godkendelsesprocessen ved at vælge Kreditkort og Godkend i handlingsruden på fanen Administrer.
-Godkende et kreditkort
+
+<a name="authorizing-a-credit-card"></a>Godkende et kreditkort
 -------------------------
 
 Når et kreditkort godkendes, kontrolleres kortnummeret og kortholders navn, og den disponible saldo bekræftes. Kreditkortets kontrolnummer og kortindehaverens adresse kan eventuelt verificeres. Debitors disponible kreditsaldo reduceres derefter med fakturabeløbet. Betalingstjenesten sender oplysninger om, hvorvidt kreditkortet er godkendt eller afvist. Når salgsordren faktureres, trækkes (opsamles) fakturabeløbet på kreditkortet.

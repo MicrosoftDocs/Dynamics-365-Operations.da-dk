@@ -1,21 +1,22 @@
----
+--- 
 title: Oprette en ny lageropbygning
 description: "Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et 
 7. Slå udvidelsen af sektionen Lokationsnavne til/fra.
     * Indstillingerne i denne sektion definerer standardformatet for navne på lokaliteter. I vores eksempel medtager vi gangnummer, reolnummer og hyldenummer.  
 8. Du kan angive indstillingen Medtag gang til Ja.
-9. Du kan angive indstillingen Medtag reol til Ja.
+9. Du kan angive indstillingen Medtag reol til Ja. 
 10. Angiv en værdi for reolen i feltet Format.
     * For eksempel: -##  
 11. Du kan angive indstillingen Medtag hylde til Ja.
@@ -74,4 +75,5 @@ Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et 
 14. Klik på Finish.
 15. Luk siden.
 16. Opdater siden.
+
 

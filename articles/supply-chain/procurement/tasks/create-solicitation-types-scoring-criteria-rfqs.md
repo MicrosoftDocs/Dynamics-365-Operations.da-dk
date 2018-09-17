@@ -3,18 +3,19 @@ title: Oprette anmodningstyper og scorekriterier for tilbudsanmodninger
 description: Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det til en scoremetode.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ Denne vejledning viser dig, hvordan du opretter en anmodningstype og knytter det
 1. Gå til Indkøb og forsyning > Tilbudsanmodninger > Alle tilbudsanmodninger.
 2. Klik på Ny.
 3. I feltet Anmodningstype skal du vælge den anmodningstype, som du lige har oprettet. 
+    *   
 4. Klik på OK.
 5. Klik på Scorekriterier.
     * De scorekriterier, der vises, er dem fra scoremetoden, som du har knyttet til anmodningstypen. Du kan vælge at tilføje eller slette kriterierne på denne side. Det er også muligt at tilføje nye kriterier ved at kopiere dem fra andre scoremetoder.  

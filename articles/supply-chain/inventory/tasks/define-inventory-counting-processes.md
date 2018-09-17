@@ -1,21 +1,22 @@
----
+--- 
 title: "Definere lageroptællingsprocesser"
 description: "Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptællingsprocesser ved at oprette en optællingsgruppe og en optællingskladde."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: c14c846c55a3d821945160835817cd4f467deda9
@@ -84,4 +85,5 @@ Denne procedure fører dig gennem konfigurationen af grundlæggende lageroptæll
 7. Vælg en optællingsgruppe på listen.
     * Her kan du vælge en bestemt optællingsgruppe, der skal gælde for varen på den bestemte lagersted, du har valgt. Når optællingen udføres på det pågældende lagersted, tilsidesætter denne optællingspolitik den generelle optællingspolitik for varen.  
 8. Klik på Gem.
+
 

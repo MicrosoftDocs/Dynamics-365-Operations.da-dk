@@ -3,24 +3,25 @@ title: Definere arbejdsceller for lean manufacturing
 description: En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesaktiviteter for lean manufacturing.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f060f084baab055a51e390f488ca2553bd997b92
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1d2381c045f9f0f98b35912fa732f3627b038785
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definere arbejdsceller for lean manufacturing
@@ -75,7 +76,7 @@ En arbejdscelle er en bestemt form for ressourcegruppe, der kan bruges i procesa
 30. Klik på Tilføj.
 31. Klik på rullelisten i feltet Produktionsflowmodel for at åbne opslaget.
 32. Find og vælg den ønskede post på listen.
-    * Denne procedure kræver produktionsflowmodeltypen Gennemløb, som viser definitionen af gennemløbskapaciteten.  
+    * Denne procedurer kræver produktionsflowmodeltypen Gennemløb, som viser definitionen af gennemløbskapaciteten.  
 33. Klik op linket i den valgte række på listen.
 34. Vælg en indstilling i feltet Kapacitetsperiode.
     * Indstillingerne omfatter: Standardarbejdsdag – Kapaciteten udtrykkes ved længden af den almindelige arbejdsdag i arbejdstidskalenderen for arbejdscellen. Den faktiske arbejdstid bestemmes ud fra kalenderen, og effektive disponible kapacitet beregnes ud fra der for hver dag.   Uge – Giver en ugentlig kapacitet. Der foretages ingen regulering efter den faktiske arbejdstid.   Måned – Giver en månedlig kapacitet. Der foretages ingen regulering efter den faktiske kapacitet.   Normalt bruges standardarbejdsdagen til daglig perioder, og den ugentlige kapacitet bruges til ugentlige kapacitetsperioder.  

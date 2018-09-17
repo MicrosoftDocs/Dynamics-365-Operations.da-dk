@@ -1,26 +1,27 @@
 --- 
 title: "Konfigurere klassifikationer for købsaftaler i den offentlige sektor"
 description: "Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler."
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: AgreementClassification
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: shylaw
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e57db8f4b692aa9c27916625897e268f63031782
-ms.openlocfilehash: 1cbcbb267d10120e7fbe05dc56b36eeab9842b62
+ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
+ms.openlocfilehash: 1827f885d188ae04d35748c83698db7801b8eee1
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a>Konfigurere klassifikationer for købsaftaler i den offentlige sektor
@@ -31,7 +32,7 @@ Købsaftaleklassifikationen gør det muligt at styre de administrative oplysning
 
 Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-demofirmaet i den offentlige sektor partition.
 
-1. Gå til Indkøb og forsyning > Opsætning > Købsaftaleklassifikation.
+1. Gå til Indkøb og forsyning > Opsætning > .. > Købsaftaleklassifikation.
 2. Klik på Ny.
 3. Skriv en værdi i feltet Navn.
 4. Skriv en værdi i feltet Beskrivelse.
