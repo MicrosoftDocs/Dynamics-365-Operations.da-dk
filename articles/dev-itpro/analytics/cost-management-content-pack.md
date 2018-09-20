@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 Microsoft Power BI-indholdet for **Omkostningsstyring** er beregnet til lagerbogholdere eller enkeltpersoner i organisationen, som er ansvarlige for eller interesserede i status for lageret eller det igangværende arbejde (IGVA), eller som er ansvarlig for eller interesseret i at analysere afvigelser i standardomkostningerne.
 
-> [!Note]
+> [!NOTE]
 > Power BI-indholdet for **Omkostningsstyring**, som er beskrevet i dette emne, gælder for Dynamics 365 for Finance and Operations 8.0.
 > 
 > Power BI-indholdspakken for **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, bliver udfaset. Du kan finde flere oplysninger om denne afskrivning i [Power BI-indholdspakkerne, der er tilgængelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-ind
 |                                         | 10 vigtigste ressourcer pr. negativ produktionsafvigelse  |
 |                                         | 10 vigtigste ressourcer pr. positiv produktionsafvigelse    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
+## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
 Data fra Microsoft Dynamics 365 for Finance and Operations bruges til at udfylde rapportsiderne i Power BI-indholdet for **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der placeres midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Tabellen nedenfor viser de beregnede målinger i Power BI-indholdet.
 
 | Målepunkt                            | Kalkulation |
 |------------------------------------|-------------|
-| Startsaldo                  | Startsaldo = [Slutsaldo]-[Nettoændring] |
-| Antal for startsaldo             | Antal for startsaldo = [Antal for slutsaldo]-[Antal for nettoændring] |
-| Slutsaldo                     | Slutsaldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Antal for slutsaldo                | Antal for slutsaldo = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Netto ændring                         | Nettoændring = SUM([AMOUNT]) |
-| Antal for nettoændring                    | Antal for nettoændring = SUM([QTY]) |
-| Lageromsætningshastighed pr. beløb | Lageromsætningshastighed pr. beløb = if(OR([Gennemsnitlig saldo for lager] \<= 0, [Lagerafgange, salg eller forbrug] \>= 0), 0, ABS([Lagerafgange, salg eller forbrug])/[Gennemsnitlig saldo for lager]) |
-| Gennemsnitlig saldo for lager          | Gennemsnitlig saldo for lager = (([Slutsaldo] + [Startsaldo]) / 2) |
-| Dage for disponibel beholdning             | Dage for disponibel beholdning = 365 / CostObjectStatementEntries [Lageromsætningshastighed pr. beløb] |
-| Lagernøjagtighed                 | Lagernøjagtighed pr. beløb = IF([Slutsaldo] \<= 0, IF(OR([Lager, optalt beløb] \<\> 0, [Slutsaldo] \< 0), 0, 1), MAX(0, ([Slutsaldo] - ABS([Lager, optalt beløb]))/[Slutsaldo])) |
+| Startsaldo                  | Startsaldo = \[Slutsaldo\]-\[Nettoændring\] |
+| Antal for startsaldo             | Antal for startsaldo = \[Antal for slutsaldo\]-\[Antal for nettoændring\] |
+| Slutsaldo                     | Slutsaldo = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Antal for slutsaldo                | Antal for slutsaldo = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Netto ændring                         | Nettoændring = SUM(\[AMOUNT\]) |
+| Antal for nettoændring                    | Antal for nettoændring = SUM(\[QTY\]) |
+| Lageromsætningshastighed pr. beløb | Lageromsætningshastighed pr. beløb = if(OR(\[Gennemsnitlig saldo for lager\] \<= 0, \[Lagerafgange, salg eller forbrug\] \>= 0), 0, ABS(\[Lagerafgange, salg eller forbrug\])/\[Gennemsnitlig saldo for lager\]) |
+| Gennemsnitlig saldo for lager          | Gennemsnitlig saldo for lager = ((\[Slutsaldo\] + \[Startsaldo\]) / 2) |
+| Dage for disponibel beholdning             | Dage for disponibel beholdning = 365 / CostObjectStatementEntries\[Lageromsætningshastighed pr. beløb\] |
+| Lagernøjagtighed                 | Lagernøjagtighed pr. beløb = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Lager, optalt beløb\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS\[Lager, optalt beløb\]))/\[Slutsaldo\])) |
 
 Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede målinger, så du kan få større granularitet og dybere analytisk indsigt.
 
 
-|                         Enhed                          |             Eksempler på attributter              |
+| Enhed                                                  | Eksempler på attributter                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Produkter                         | Produktnummer, Produktnavn, Enhed, Varegrupper |
-| Kategorihierarkier (tildelt rollen Omkostningsstyring) |       Kategorihierarki, Kategoriniveau        |
-|                     Juridiske enheder                      |               Navne på juridisk enhed                |
-|                    Regnskabskalendere                     |  Regnskabskalender, År, Kvartal, Periode, Måned  |
-|                          Sted                           |        Id, Navn, Adresse, Stat, Land        |
-
+| Produkter                                                | Produktnummer, Produktnavn, Enhed, Varegrupper |
+| Kategorihierarkier (tildelt rollen Omkostningsstyring) | Kategorihierarki, Kategoriniveau              |
+| Juridiske enheder                                          | Navne på juridisk enhed                              |
+| Regnskabskalendere                                        | Regnskabskalender, År, Kvartal, Periode, Måned   |
+| Sted                                                    | Id, Navn, Adresse, Stat, Land               |
 

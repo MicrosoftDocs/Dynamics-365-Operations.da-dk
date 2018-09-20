@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,31 @@ Med Økonomirapportering til Finance and Operations kan økonomiske og forretnin
 Økonomirapportering omfatter understøttelse af dimension. Derfor er kontosegmenter eller dimensioner umiddelbart tilgængelige. Der kræves ingen yderligere værktøjer eller konfigurationstrin.
 
 ## <a name="financial-reporting-setup"></a>Konfiguration af økonomirapportering
-På siden **Konfiguration af økonomirapportering** findes en liste over alle økonomiske dimensioner i systemet. **Finans** > **Opsætning Finans** > **Konfiguration af økonomirapportering**. 
+På siden **Konfiguration af økonomirapportering** findes en liste over alle økonomiske dimensioner i systemet. **Finans** \> **Opsætning Finans** \> **Konfiguration af økonomirapportering**.
 
 Siden **Konfiguration af økonomirapportering** består af to sektioner, der bestemmer, hvilke data du rapportere om i Økonomirapportering:
 
-• **Fanen Dimensioner** - Forskellige firmaer bruger forskellige dimensioner og kontostrukturer, og det er derfor ikke muligt at bestemme den rækkefølge, brugerne vil se alle økonomiske dimensioner i rapporter. På denne side kan du angive den rækkefølge, du vil have, at økonomiske dimensioner skal vises i, når du opretter og får vist en rapport i Økonomirapportering.
-
-• **Fanen Attributter** er der, hvor du kan vælge, om du vil kunne bruge **Kreditorer** og **Debitorer** som attributter til filtrering og rapportdesign. Rapportering om kreditorer og debitorer er kun praktisk, hvis du ikke angiver flere kreditorer eller debitorer i et enkelt bilag ved bogføring af transaktioner. Valg af kreditorer og/eller debitorer betyder ekstra integrationstid.
-
-
+- **Fanen Dimensioner** - Forskellige firmaer bruger forskellige dimensioner og kontostrukturer, og det er derfor ikke muligt at bestemme den rækkefølge, brugerne vil se alle økonomiske dimensioner i rapporter. På denne side kan du angive den rækkefølge, du vil have, at økonomiske dimensioner skal vises i, når du opretter og får vist en rapport i Økonomirapportering.
+- **Fanen Attributter** er der, hvor du kan vælge, om du vil kunne bruge **Kreditorer** og **Debitorer** som attributter til filtrering og rapportdesign. Rapportering om kreditorer og debitorer er kun praktisk, hvis du ikke angiver flere kreditorer eller debitorer i et enkelt bilag ved bogføring af transaktioner. Valg af kreditorer og/eller debitorer betyder ekstra integrationstid.
 
 ## <a name="financial-reporting-components"></a>Komponenter i økonomirapportering
 Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og planlægge rapporter.
 
-| Komponent        | Funktioner                                                                                                                                                                                                                                                                           | Flere oplysninger                                                                          |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Report Designer  | Opret rapportkomponenter, som kan kombineres for at definere og oprette en rapport. Rapportguiden hjælper mindre erfarne brugere gennem designprocessen. Erfarne brugere kan oprette nye rapportkomponenter eller ændre eksisterende komponenter, der opfylder deres krav. |                                                                                                 |
-| Rapportplaner | Planlæg en enkelt rapport eller en gruppe af rapporter, så den oprettes med jævne mellemrum.                                                                                                                                                                                          | [Generere en økonomisk rapport](generate-financial-report.md) |
+| Komponent        | Funktioner | Flere oplysninger |
+|------------------|-----------|------------------------|
+| Report Designer  | Opret rapportkomponenter, som kan kombineres for at definere og oprette en rapport. Rapportguiden hjælper mindre erfarne brugere gennem designprocessen. Erfarne brugere kan oprette nye rapportkomponenter eller ændre eksisterende komponenter, der opfylder deres krav. | |
+| Rapportplaner | Planlæg en enkelt rapport eller en gruppe af rapporter, så den oprettes med jævne mellemrum. | [Generere en økonomisk rapport](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktioner
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Funktion</th>
 <th>Betegnelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Fleksibelt rapportdesign</td>
 <td>Report Designer indeholder følgende indstillinger for rapportering, når du opretter en rapport:
 <ul>
@@ -70,9 +67,10 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 <li>Styr, hvordan dimensionsbeskrivelser er formateret og vises.</li>
 <li>Identificer konti eller dimensioner, der er udeladt fra rapportbyggesten.</li>
 <li>Formater overskrifter for rullende prognoser.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Samarbejde om økonomisk rapport</td>
 <td>Følgende funktioner hjælper dig med at administrere oprettelse og distribution af rapporter:
 <ul>
@@ -80,9 +78,10 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 <li>Eksporter til skrivebeskyttet XPS-format, som giver bedre dokumentsikkerhed via digitale signaturer.</li>
 <li>Eksportér til et Microsoft Excel-regneark.</li>
 <li>Hvis du vil dele rapporter, kan du oprette e-mails, der indeholder links til rapporterne.</li>
-</ul></td>
+</ul>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Interaktiv rapportvisning</td>
 <td>Med interaktive funktioner kan du udføre følgende opgaver:
 <ul>
@@ -99,8 +98,4 @@ Følgende økonomirapporteringskomponenter gør det nemt at oprette, få vist og
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Generere en økonomirapport](generate-financial-report.md)
-
-
-
-
 

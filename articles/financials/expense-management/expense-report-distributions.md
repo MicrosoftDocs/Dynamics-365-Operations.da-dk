@@ -1,7 +1,7 @@
 ---
 title: Fordelinger i en udgiftsrapport
 description: "Når du angiver udgifter i en udgiftsrapport, kan du distribuere udgiften på tværs af flere projekter, juridiske enheder eller konti i organisationen."
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/19/2017
 ms.topic: article
@@ -12,16 +12,14 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0f3f50061fc5b9b4cfc00000492840061fc3b386
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 00d051a8f644a6a0bedb0acc3eaac9a3dd1109e7
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
@@ -36,10 +34,10 @@ Nina, som er sælger hos Fabrikam, er f.eks. rejst fra København til Frankfurt.
 Da Nina har arbejdet på to separate projekter, når hun var i Frankfurt, distribuerer hun sine udgifter, som det er relevant for hvert projekt. Følgende tabel viser, hvordan Nina fordelte sine udgifter.
 
 
-| <strong>Udgiftstype</strong> | <strong>Samlet udgiftsbeløb</strong> | <strong>Beløb fordelt til projekt A</strong> | <strong>Beløb fordelt til projekt B</strong> |
-|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
-|          Togbilletter           |                DKK 578                |                     DKK 405                      |                     DKK 173                      |
-|             Hotel             |                EUR 725                |                     EUR 557                      |                     EUR 168                      |
-|             Måltider             |                EUR 346                |                     EUR 284                      |                      EUR 62                      |
+| Udgiftstype | Samlet udgiftsbeløb|Beløb fordelt til projekt A| Beløb fordelt til projekt B |
+|--------------|---------------------|-------------------------------|---------------------------------|
+|Togbilletter   |DKK 578              |DKK 405                        |DKK 173                          |
+|Hotel         |EUR 725              |EUR 557                        |EUR 168                          |
+|Måltider         |EUR 346              |EUR 284                        |EUR 62                           |
 
 

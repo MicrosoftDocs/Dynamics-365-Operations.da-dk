@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > Denne PowerBI.com-løsning er blevet udfaset, som beskrevet i [Power BI-indholdspakker, der er tilgængelige på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 I dette emne beskrives PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
@@ -58,7 +58,7 @@ Hvert felt er understøttet af en supplerende rapport. Disse rapporter indeholde
 
 | Rapport                      | Rapportens oplysninger omfatter: |
 |-----------------------------|--------------------------------------|
-| Pengestrømsanalyse               | Kontanter efter juridisk enhed, kontanter pr. kvartal, samlede kontanter og kontanter efter konto<br><br>**Bemærk:** Oplysningerne om kontanter pr. kvartal omfatter ikke primosaldi i det samlede beløb for første kvartal. Det viser det samlede nye posteringer, der bogføres i hvert kvartal.|
+| Pengestrømsanalyse               | Kontanter efter juridisk enhed, kontanter pr. kvartal, samlede kontanter og kontanter efter konto<blockquote>[!NOTE] Oplysningerne om kontanter pr. kvartal omfatter ikke primosaldi i det samlede beløb for første kvartal. Det viser det samlede nye posteringer, der bogføres i hvert kvartal.</blockquote> |
 | Analyse af aktuel dækningsgrad      | Aktuel dækningsgrad efter juridisk enhed, aktuel dækningsgrad pr. kvartal og saldi for omsætningsaktiver og kortfristet gæld |
 | Analyse af likviditetsgrad på kort sigt        | Likviditetsgrad på kort sigt efter juridisk enhed, likviditetsgrad på kort sigt pr. kvartal og saldi for kontanter, tilgodehavender og kortfristet gæld |
 | Analyse af vareforbrug | Vareforbrug (COGS) efter juridisk enhed, vareforbrug i år og sidste år pr. kvartal, vareforbrug i forhold til salg efter juridisk enhed, samlet vareforbrug og vareforbrug i forhold til salg i procent |
@@ -69,7 +69,7 @@ Hvert felt er understøttet af en supplerende rapport. Disse rapporter indeholde
 | Analyse af indtjening           | Faktisk og budgetteret overskud før renter og skat (EBIT) efter juridisk enhed, EBIT i år og sidste år, udgifter i forhold til omsætning i procent og faktiske og budgetterede udgifter i forhold til indtægter |
 | Analyse af omsætning            | Samlet omsætning, samlede faktiske og budgetterede omsætning efter juridisk enhed, samledt omsætning i år og sidste år, afvigelse i omsætningsbudget efter juridisk enhed og samlet af omsætning i indeværende og sidste periode |
 | Udgiftsanalyse            | Samlede udgifter, faktiske i forhold til budgetterede samlede udgifter efter juridisk enhed, samlede faktiske og budgetterede samlede udgifter pr. kvartal, samlede udgifter efter kontokategori og driftsudgiftsgrad |
-| Analyse af faktureret omsætning     | Samlede tilgodehavender, samlede tilgodehavender efter juridisk enhed, samlede tilgodehavender pr. kvartal, og saldi for konti med tilgodehavender<br><br>**Bemærk:** Oplysningerne omfatter ikke primosaldi for debitorfinanskonti. De viser totalen for nye transaktioner, der er bogført til Debitorer. |
+| Analyse af faktureret omsætning     | Samlede tilgodehavender, samlede tilgodehavender efter juridisk enhed, samlede tilgodehavender pr. kvartal, og saldi for konti med tilgodehavender<blockquote>[!NOTE] Oplysningerne omfatter ikke primosaldi for debitorfinanskonti. De viser totalen for nye transaktioner, der er bogført til Debitorer.</blockquote> |
 
 Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Hvis du vil finde flere oplysninger om filtrering og fastgørelse i Power BI, skal du se [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -89,5 +89,5 @@ Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Drift
 - Finans
 - ChartofAccounts
 
-Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet. 
+Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet.
 

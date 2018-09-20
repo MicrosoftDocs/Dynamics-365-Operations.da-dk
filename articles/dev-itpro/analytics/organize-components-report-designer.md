@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 7207febc58dbab1df5551ae0f74ad74d9ced8e56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,73 +35,72 @@ Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt a
 Du kan omdøbe mapper, rapporter, dokumentkomponenter og andre objekter i Report Designer for at organisere dine filer. Afhængigt af hvilken type objekt, du omdøber, skal du muligvis opdatere tilknytninger til det pågældende objekt.
 
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
-Du kan omdøbe mapper, rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner og rapporteringstrædefinitioner i Report Designer. **Bemærk:** Når du omdøber en dokumentkomponent, skal du opdatere alle rapportdefinitioner, der bruger dokumentkomponenten. Ellers kan der ikke oprettes en ny rapport.
+I Rapportdesigner kan du omdøbe mapper, rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner og trædiagramdefinitioner.
+
+> [!NOTE]
+> Når du omdøber en dokumentkomponent, skal du opdatere alle rapportdefinitioner, der bruger dokumentkomponenten. Ellers kan der ikke oprettes en ny rapport.
 
 ### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
 
-1.  I Report Designer kan du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
-2.  Højreklik på mappen eller objektet, og klik derefter på **Omdøb**. Feltet **Navn** i navigationsruden bliver tilgængeligt.
-3.  Skriv et nyt navn, og tryk derefter på Enter.
-4.  Hvis dokumentkomponenten er en rækkedefinition, kolonnedefinition eller rapporteringstrædefinition, skal du opdatere andre komponenter, der er knyttet til den. Højreklik på den dokumentkomponent, du omdøbte i trin 3, vælg **Tilknytninger**, og vælg derefter et element på listen for at opdatere det.
-5.  Gentag trin 4, indtil alle tilknyttede elementer er opdateret.
+1. I Report Designer kan du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
+2. Højreklik på mappen eller objektet, og klik derefter på **Omdøb**. Feltet **Navn** i navigationsruden bliver tilgængeligt.
+3. Skriv et nyt navn, og tryk derefter på Enter.
+4. Hvis dokumentkomponenten er en rækkedefinition, kolonnedefinition eller rapporteringstrædefinition, skal du opdatere andre komponenter, der er knyttet til den. Højreklik på den dokumentkomponent, du omdøbte i trin 3, vælg **Tilknytninger**, og vælg derefter et element på listen for at opdatere det.
+5. Gentag trin 4, indtil alle tilknyttede elementer er opdateret.
 
 ## <a name="create-and-manage-report-groups"></a>Oprette og administrere rapportgrupper
 Du kan gruppere rapportdefinitioner for at generere flere rapporter på samme tid. Du skal have designer- eller administratorrollen for at oprette, redigere, slette og oprette rapportgrupper. Brugere, der har generatorrollen, kan generere rapportgrupper og kan også ændre brugerindstillingen for rapportdefinitioner for rapportgrupper.
 
 ### <a name="create-a-report-group"></a>Oprette en rapportgruppe
 
-1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2.  I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på værktøjslinjen.
-3.  Klik på fanen **Rapportgruppe**. Hvis du vil tilsidesætte oplysningerne om de enkelte rapportdefinitioner til generering af denne rapport, skal du markere afkrydsningsfeltet **Tilsidesæt regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner**. Firmanavnet, detaljeringsniveauet, foreløbig-indstillingen og datooplysninger angives automatisk, men du kan stadig foretage opdateringer.
-4.  Hvis du vil have genereret flere rapporter, der viser rapporteringsvalutaerne, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer**. Derefter kan du åbne flere visninger ved at klikke på knappen **Valuta** i webfremviseren, når du får vist rapporten.
-5.  I feltet **Rapporter i gruppe** skal du klikke på **Tilføj** for at vælge de rapporter, der skal medtages i rapportgruppen. Hvis du vil vælge flere rapporter i dialogboksen **Tilføj**, skal du holde tasten Ctrl nede, mens du markerer rapporter. Når du er færdig med at vælge rapporter, skal du klikke på **OK**.
-6.  Klik på **Filer** &gt; **Gem** for at gemme den nye rapportgruppe.
+1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
+2. I menuen **Filer** skal du klikke på **Ny** &gt; **Rapportgruppedefinition** for at åbne en ny rapportgruppe i fremviservinduet. Du kan også klikke på knappen **Rapportgruppe** ![Rapportgruppe](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgruppe") på værktøjslinjen.
+3. Klik på fanen **Rapportgruppe**. Hvis du vil tilsidesætte oplysningerne om de enkelte rapportdefinitioner til generering af denne rapport, skal du markere afkrydsningsfeltet **Tilsidesæt regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner**. Firmanavnet, detaljeringsniveauet, foreløbig-indstillingen og datooplysninger angives automatisk, men du kan stadig foretage opdateringer.
+4. Hvis du vil have genereret flere rapporter, der viser rapporteringsvalutaerne, skal du markere afkrydsningsfeltet **Medtag alle rapporteringsvalutaer**. Derefter kan du åbne flere visninger ved at klikke på knappen **Valuta** i webfremviseren, når du får vist rapporten.
+5. I feltet **Rapporter i gruppe** skal du klikke på **Tilføj** for at vælge de rapporter, der skal medtages i rapportgruppen. Hvis du vil vælge flere rapporter i dialogboksen **Tilføj**, skal du holde tasten Ctrl nede, mens du markerer rapporter. Når du er færdig med at vælge rapporter, skal du klikke på **OK**.
+6. Klik på **Filer** &gt; **Gem** for at gemme den nye rapportgruppe.
 
 ### <a name="modify-a-report-group"></a>Redigere en rapportgruppe
 
-1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2.  Dobbeltklik på den rapportgruppe, der skal redigeres.
-3.  Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
-4.  I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Gem") på værktøjslinjen.
+1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
+2. Dobbeltklik på den rapportgruppe, der skal redigeres.
+3. Under fanen **Rapportgruppe** kan du foretage de ønskede ændringer.
+4. I menuen **Filer** skal du klikke på **Gem** for at gemme den ændrede rapportgruppe, eller du kan klikke på knappen **Gem** ![Gem](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Gem") på værktøjslinjen.
 
-**Bemærk:** Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
+> Hvis du har planlagt, at rapporter skal genereres med faste intervaller, kan du tilsidesætte disse indstillinger og generere en rapport med det samme.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapportgrupperapport
 
-1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2.  Åbn den rapportgruppe, der skal genereres.
-3.  Klik på knappen **Opret rapport** ![Opret rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Opret rapport") for at oprette rapporter.
+1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
+2. Åbn den rapportgruppe, der skal genereres.
+3. Klik på knappen **Opret rapport** ![Opret rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Opret rapport") for at oprette rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
-1.  Klik på **Rapportgrupper** i navigationsruden i Report Designer.
-2.  Højreklik på rapportgruppen, og vælg derefter **Slet**.
-3.  Klik på **Ja**, når der vises en bekræftelsesmeddelelse.
+1. Klik på **Rapportgrupper** i navigationsruden i Report Designer.
+2. Højreklik på rapportgruppen, og vælg derefter **Slet**.
+3. Klik på **Ja**, når der vises en bekræftelsesmeddelelse.
 
 ## <a name="report-group-tab-controls"></a>Fanebladskontrolelementer til Rapportgruppe
 Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapportgruppe**.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Styring</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Tilsidesætte regnskab, detaljer og datoindstillinger fra individuelle rapportdefinitioner</td>
 <td>Markér dette afkrydsningsfelt for at tilsidesætte individuelle rapportdefinitioner af rapporterne i denne rapportgruppe udelukkende i forbindelse med oprettelse af disse rapporter.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Firmanavn</td>
 <td>Vælg det regnskab, der skal bruges til rapporterne.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Detaljeringsniveau</td>
 <td>Angiv det detaljeringsniveau, som rapporterne indeholder.
 <ul>
@@ -110,7 +109,7 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <li><strong>Finans, Konto og Transaktion</strong> – en rapport, der indeholder en oversigt på højt niveau og transaktionsoplysninger.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Midlertidig</td>
 <td>Angiv de aktivitetstyper, som rapporterne indeholder.
 <ul>
@@ -119,11 +118,11 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <li><strong>Kun ikke-bogført aktivitet</strong> − Medtag kun de transaktioner i de økonomiske data, der er indtastet, men som endnu ikke er bogført.</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Medtag alle rapporteringsvalutaer</td>
 <td>Hvis der konfigureres yderligere rapporteringsvalutaer i Microsoft Dynamics ERP-systemet, vises de her. Markér dette afkrydsningsfelt for at få genereret flere rapporter i de angivne valutaer. Du kan se disse rapporter i webfremviseren ved at klikke på knappen <strong>Valuta</strong> og derefter vælge en valuta.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Datooplysninger gemmes ikke sammen med rapportdefinitionen</td>
 <td><ul>
 <li>Basisperiode</li>
@@ -132,14 +131,14 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 </ul>
 Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Datooplysninger, der er gemt sammen med rapportdefinitionen</td>
 <td><ul>
 <li>Rapportdato</li>
 <li>Standardbasisperiode</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Rapporter i gruppe</td>
 <td>Tilføje, fjerne og ændre rækkefølgen af rapporter i rapportgruppen.
 <ul>
@@ -151,13 +150,7 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-
 

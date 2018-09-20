@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ I dette emne beskrives, hvad der skal medtages i Microsoft Power BI-indholdet ti
 
 Power BI-indholdet til **Købsforbrugsanalyse** er udviklet til at hjælpe indkøbschefer og ledere, der er ansvarlige for budgetter, med at holde øje med udgifter til køb. Chefer kan analysere indkøbsudgifter på følgende måder:
 
--   Køb år til dato (efter kreditorgruppe og individuelle kreditorer, indkøbskategori og individuelle produkter og leverandørlokalitet)
--   Ændring af køb år for-år (efter leverandørgruppe og indkøbskategori)
+- Køb år til dato (efter kreditorgruppe og individuelle kreditorer, indkøbskategori og individuelle produkter og leverandørlokalitet)
+- Ændring af køb år for-år (efter leverandørgruppe og indkøbskategori)
 
 Indholdet bruger købstransaktionsdata og indeholder både en samlet oversigt over alle firmaets købstal og en opdeling af købsforbrug pr. leverandør og vare. Rapporter fremhæve ændringer i købsforbruget over tid. Derfor kan rapporterne bruges til at give ledere besked om positive og negative forbrugstendenser for individuelle leverandører og produkter. Desuden viser diagrammer købsforbruget til forskellige indkøbskategorier og kreditorgrupper. Derfor kan kategori- og områdeledere bruge diagrammerne til at identificere ændringer i forbrugsmønsteret.
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Power BI-indholdet **Købsforbrugsanalyse** vises på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** > **Forespørgsler og rapporter** > **Performanceanalyse for indkøb** > **Købs- og forbrugsanalyse**). 
+Power BI-indholdet **Købsforbrugsanalyse** vises på siden **Købs- og forbrugsanalyse** (**Indkøb og forsyning** \> **Forespørgsler og rapporter** \> **Performanceanalyse for indkøb** \> **Købs- og forbrugsanalyse**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der består af et sæt metrikker. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Rapportside</th>
 <th>Diagrammer</th>
 <th>Felter</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Indkøb efter leverandør</td>
 <td><ul>
 <li>Top 10 leverandører efter indkøb (stablet liggende søjlediagram)</li>
@@ -76,7 +71,7 @@ Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der 
 <li>Antal aktive leverandører i alt</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Køb pr. produkt</td>
 <td><ul>
 <li>Køb efter indkøbskategori/produktnavn (søjlediagram)</li>
@@ -89,7 +84,7 @@ Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der 
 <li>Antal produkter, der udgør for 80 % af indkøbet</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Indkøb efter periode*</td>
 <td><ul>
 <li>Indkøb pr. måned/dag (søjlediagram)</li>
@@ -102,7 +97,7 @@ Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der 
 <li>Indkøbsvækst år for år i %</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Indkøb efter leverandørlokalitet</td>
 <td><ul>
 <li>Indkøb efter by</li>
@@ -111,7 +106,7 @@ Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der 
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Købsforbrugsanalyse efter tidspunkt</td>
 <td><ul>
 <li>Indkøb indeværende år efter måned/dag (kurvediagram)</li>
@@ -119,7 +114,7 @@ Power BI-indholdspakken til **Købsforbrugsanalyse** indeholder en rapport, der 
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Købsforbrugsanalyse efter leverandør</td>
 <td><ul>
 <li>Indkøb hos top 10 kreditorer i % af indkøb (tragtformet)</li>

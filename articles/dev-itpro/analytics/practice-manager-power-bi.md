@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Alle beløb i indholdet vises i systemvalutaen. Du kan angive systemvalutaen på
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
 
 Power BI-indholdet **Praksischef** vises i arbejdsområdet **Projektstyring**.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 
@@ -85,8 +84,7 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 
 | Samlede nøglemålinger | Felt                                             | Betegnelse |
 |---------------------------|---------------------------------------------------|-------------|
-| Antal projekter        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Antal tilgængelige projekter. |
-
+| Antal projekter        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Antal tilgængelige projekter. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Enhed: ProjectAccountingCube\_Forecasts
 **Datakilde:** ProjTransBudget
@@ -109,18 +107,16 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 
 | Samlede nøglemålinger    | Felt | Betegnelse |
 |------------------------------|-------|-------------|
-| Omkostningsperformanceindeks       | ProjectAccountingCube\_Projects[Optjent værdi] ÷ ProjectAccountingCube\_Projects[Samlede faktiske omkostninger for fuldførte opgaver] | Beregningen af den samlede optjente værdi divideret med de samlede faktiske omkostninger. |
-| Tidsplansperformanceindeks   | ProjectAccountingCube\_Projects[Optjent værdi] ÷ ProjectAccountingCube\_Projects[Samlede, planlagte omkostninger for fuldførte opgaver] | Beregningen af den samlede optjente værdi divideret med de samlede planlagte omkostninger. |
-| Procentdel af fuldført arbejde | Procentdelen af udført arbejde = ProjectAccountingCube\_Projects[samlede faktiske kostbeløb for de fuldførte opgaver] ÷ (ProjectAccountingCube\_Projects[samlede faktiske omkostninger for fuldførte opgaver] + ProjectAccountingCube\_Projects[Samlede, planlagte omkostninger for projekt] – ProjectAccountingCube\_Projects[Samlede, planlagte omkostninger for fuldførte opgaver]) | Den totale procentdel af fuldført arbejde baseret på de samlede faktiske omkostninger for fuldførte opgaver og de planlagte omkostninger for projektet. |
-| Faktisk udnyttelsesgrad af fakturerbare timer  | ProjectAccountingCube\_Projects[projektets samlede faktiske fakturerbare udnyttede timer] ÷ (ProjectAccountingCube\_Projects[projektets samlede faktiske fakturerbare udnyttede timer] + ProjectAccountingCube\_Projects[projektets samlede faktiske fakturerbare byrdetimer]) | Det samlede antal faktiske fakturerbare timer baseret på de udnyttede timer og byrdetimerne. |
-| Optjent værdi                 | ProjectAccountingCube\_Projects[projektets totale planlagte omkostning] × ProjectAccountingCube\_Projects[procentdelen af fuldført arbejde] | De samlede planlagte omkostninger ganget med procentdelen af fuldført arbejde. |
+| Omkostningsperformanceindeks       | ProjectAccountingCube\_Projects\[Optjent værdi\] ÷ ProjectAccountingCube\_Projects\[Samlede faktiske omkostninger for fuldførte opgaver\] | Beregningen af den samlede optjente værdi divideret med de samlede faktiske omkostninger. |
+| Tidsplansperformanceindeks   | ProjectAccountingCube\_Projects\[Optjent værdi\] ÷ ProjectAccountingCube\_Projects\[Samlede, planlagte omkostninger for fuldførte opgaver\] | Beregningen af den samlede optjente værdi divideret med de samlede planlagte omkostninger. |
+| Procentdel af fuldført arbejde | Procentdelen af udført arbejde = ProjectAccountingCube\_Projects\[samlede faktiske kostbeløb for de fuldførte opgaver\] ÷ (ProjectAccountingCube\_Projects\[samlede faktiske omkostninger for fuldførte opgaver\] + ProjectAccountingCube\_Projects\[Samlede, planlagte omkostninger for projekt\] – ProjectAccountingCube\_Projects\[Samlede, planlagte omkostninger for fuldførte opgaver\]) | Den totale procentdel af fuldført arbejde baseret på de samlede faktiske omkostninger for fuldførte opgaver og de planlagte omkostninger for projektet. |
+| Faktisk udnyttelsesgrad af fakturerbare timer  | ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare udnyttede timer\] ÷ (ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare udnyttede timer\] + ProjectAccountingCube\_Projects\[projektets samlede faktiske fakturerbare byrdetimer\]) | Det samlede antal faktiske fakturerbare timer baseret på de udnyttede timer og byrdetimerne. |
+| Optjent værdi                 | ProjectAccountingCube\_Projects\[projektets totale planlagte omkostning\] × ProjectAccountingCube\_Projects\[procentdelen af fuldført arbejde\] | De samlede planlagte omkostninger ganget med procentdelen af fuldført arbejde. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhed: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakilde:** ProjTable
 
-
-|    Samlede nøglemålinger    |        Felt        |                                          Betegnelse                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Samlede nøglemålinger       | Felt               | Betegnelse |
+|---------------------------------|---------------------|-------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
-
 

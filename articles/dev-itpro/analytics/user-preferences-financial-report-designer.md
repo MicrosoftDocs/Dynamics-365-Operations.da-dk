@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel forklares, hvordan du angiver brugerindstillinger for at tilpasse din brugerindgriben i Designer til økonomirapporter og styrer den indledende logonoplevelse. Du kan også styre, hvordan individuelle rapporter, rapportbiblioteket og standardfilplaceringen vises. 
+I denne artikel forklares, hvordan du angiver brugerindstillinger for at tilpasse din brugerindgriben i Designer til økonomirapporter og styrer den indledende logonoplevelse. Du kan også styre, hvordan individuelle rapporter, rapportbiblioteket og standardfilplaceringen vises.
 
-<a name="set-user-preferences"></a>Angive brugerindstillinger
---------------------
+## <a name="set-user-preferences"></a>Angive brugerindstillinger
 
-1.  Klik på **Indstillinger** i menuen **Værktøjer** i Report Designer.
-2.  I dialogboksen **Indstillinger** skal du vælge dine indstillinger.
-3.  Klik på **OK**.
+1. Klik på **Indstillinger** i menuen **Værktøjer** i Report Designer.
+2. I dialogboksen **Indstillinger** skal du vælge dine indstillinger.
+3. Klik på **OK**.
 
 ## <a name="options-dialog-box-options"></a>Indstillinger i dialogboksen Indstillinger
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Brugerindstilling</th>
 <th>Betegnelse</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Ved start</td>
 <td>Vælg, hvad du vil se, når Report Designer starter. Vælg en af følgende indstillinger:
 <ul>
@@ -57,28 +56,22 @@ I denne artikel forklares, hvordan du angiver brugerindstillinger for at tilpass
 <li><strong>Vis tomt miljø</strong> – Åbn et tomt designervindue.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Vis bekræftelse, før du afslutter Report Designer</td>
 <td>Vælg, om du vil modtage en advarsel, når du afslutter programmet. Denne meddelelse er med til at sikre, at du ikke afslutter programmet ved et uheld.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Anvend automatisk celleunderstregning i kolonneoverskrifter</td>
 <td>Vælg, om der skal indsættes en understregning i cellen i en ny kolonneoverskrift.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Placering af filer i Management Reporter</td>
 <td>Angiv filers standardplacering. Programmet bruger standardplaceringen, når du eksporterer dokumentkomponentgrupper.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-
-
-
 

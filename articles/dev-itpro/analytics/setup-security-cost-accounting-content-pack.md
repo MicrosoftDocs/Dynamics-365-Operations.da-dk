@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 15d25274b02b0e9423fd4670b82c2e398316a1fa
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -31,26 +31,31 @@ ms.lasthandoff: 08/08/2018
 
 I dette emne forklares, hvordan du kan overføre sikkerheden på adgangsniveau i omkostningsregnskabet til sikkerhed på rækkeniveau i Microsoft Power BI. Denne funktionalitet hjælper med til at sikre, at brugerne kun får vist de Power BI-data, de er tildelt adgang til.
 
-<a name="overview"></a>Overblik
---------
+## <a name="overview"></a>Overblik
 
 Til **omkostningsregnskabsanalysen** af Microsoft Power BI-indhold bruges sikkerhed på Power BI-rækkeniveau til at begrænse en brugers adgang. Sikkerheden er baseret på det organisationshierarki for adgangsniveau, der er angivet i parametrene for omkostningsregnskab. Du kan finde yderligere oplysninger om **omkostningsregnskabsanalysen** af Power BI-indhold i [Omkostningsregnskabsanalyse af Power BI-indhold](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Konfiguration
-Hvis du vil overføre sikkerhed på adgangsniveau til Power BI, skal ejeren af Power BI-indholdet følge disse trin. **Bemærk!** Den bruger, der udgiver **omkostningsregnskabsanalysen** af Power BI-indhold, bliver automatisk ejer. Kun en ejer kan konfigurere sikkerhed i Power BI. Indtil en ejer tilføjer andre brugere på PowerBI.com, kan ingen undtagen ejeren desuden se nogen data i **omkostningsregnskabsanalysen** af Power BI-indhold.
+Hvis du vil overføre sikkerhed på adgangsniveau til Power BI, skal ejeren af Power BI-indholdet følge disse trin.
 
-1.  Udgiv definitionsfilen til Power BI.
-2.  Log på PowerBI.com.
-3.  Find datasættet til **omkostningsregnskabsanalysen** af Power BI-indhold.
-4.  Åbn sikkerhedssiden. 
+> [!NOTE]
+> Den bruger, der udgiver **Omkostningsregnskabsanalyse** af Power BI-indhold, bliver automatisk ejer. Kun en ejer kan konfigurere sikkerhed i Power BI. Indtil en ejer tilføjer andre brugere på PowerBI.com, kan ingen undtagen ejeren desuden se nogen data i **omkostningsregnskabsanalysen** af Power BI-indhold.
+
+1. Udgiv definitionsfilen til Power BI.
+2. Log på PowerBI.com.
+3. Find datasættet til **omkostningsregnskabsanalysen** af Power BI-indhold.
+4. Åbn sikkerhedssiden.
 
     ![Åbning af sikkerhedssiden](./media/CA-picture-1.png)
 
-5.  Rollen **Controller til omkostningsobjekt** er allerede oprettet. Tilføj andre medlemmer, der er en del af organisationshierarkiet for adgangsniveau for omkostningsregnskabet. 
+5. Rollen **Controller til omkostningsobjekt** er allerede oprettet. Tilføj andre medlemmer, der er en del af organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
 
     ![Tilføjelse af medlemmer](./media/CA-picture-2.png)
 
-Brugere, der føjes til rollen **Controller til omkostningsobjekt** ser kun de data, de har tilladelse til at se ifølge definitionen i organisationshierarkiet for adgangsniveau for omkostningsregnskabet. **Bemærk:** Sikkerhed på rækkeniveau gælder for felter og rapporter i Microsoft Dynamics 365 for Finance and Operations, der er integreret fra Power BI.
+Brugere, der føjes til rollen **Controller til omkostningsobjekt** ser kun de data, de har tilladelse til at se ifølge definitionen i organisationshierarkiet for adgangsniveau for omkostningsregnskabet.
+
+> [!NOTE]
+> Sikkerhed på rækkeniveau gælder for felter og rapporter i Microsoft Dynamics 365 for Finance and Operations, der er integreret fra Power BI.
 
 ## <a name="updating-security"></a>Opdatering af sikkerhed
 Hvis der foretages opdateringer af sikkerheden på adgangsniveau i omkostningsregnskab, og du ønsker, at Power BI skal afspejle disse opdateringer, skal du opdatere enhedslageret for **omkostningsregnskabsanalysen** af Power BI-indhold. Når du har afsluttet opdateringen af enhedslageret fra Finance and Operations, skal du opdatere artefakterne på PowerBI.com. Du kan finde flere oplysninger om, hvordan du foretager en opdatering af enhedslager, i [Opdatering af enhedslager](power-bi-integration-entity-store.md#update-entity-store). Ejeren af **omkostningsregnskabsanalysen** af Power BI-indhold skal også foretage en opdatering af enhedslager, hvis nye brugere får adgang til det organisatoriske hierarki. Ejeren skal desuden føje nye brugere til rollen **Controller til omkostningsobjekt** på PowerBI.com, så sikkerhed på rækkeniveau gælder for dem.
@@ -60,7 +65,4 @@ Vi antager, at din organisation ønsker at begrænse adgang til data. Hvis sikke
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 Du kan få mere at vide om sikkerhed på rækkeniveau i Power BI i [Administrer sikkerhed på din model i Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-
 

@@ -3,7 +3,7 @@ title: "Få support til Finance and Operations eller Lifecycle Services (LCS)"
 description: "I denne artikel beskrives, hvordan du kan få hjælp til Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 716c747957471ce2c4c919196b4fc2f9061ce6b6
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -54,7 +54,7 @@ Du kan få support til Finance and Operations eller LCS ved at bruge ressourcern
 <tbody>
 <tr class="odd">
 <td>Spørg fællesskabet.</td>
-<td>Gå til siden <a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">Spørg fællesskabet</span></a> for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
+<td>Gå til siden <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations Community</span></a> for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
 </tr>
 <tr class="even">
 <td>Brug problemsøgningsværktøjet.</td>

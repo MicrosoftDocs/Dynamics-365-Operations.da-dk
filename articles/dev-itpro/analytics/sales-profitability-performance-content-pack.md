@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til *
 
 Power BI-indhold til **Salgs- og rentabilitetsperformance** blev oprettet, så salgschefer kan overvåge salgsmetrikker for indtægt, bruttooverskud og overskudsgrad. Det bruger salgstransaktionsdata og indeholder både en samlet oversigt over alle firmaets salgstal og en opdeling af salgsperformance for kunder og produkter.
 
-Rapporter fremhæver ændringer i indtægter og overskudsvækst over tid. Derfor kan de bruges til at give ledere besked om positive og negative tendenser for individuelle kunder og produkter. Derudover sammenligner diagrammer indtægter og rentabilitet over forskellige produktkategorier og kundegrupper med hinanden. Derfor kan kategorier og regionale ledere identificere tabere og vindere. Endelig afbilder en omfattende rapport en individuel kundes indtægt i forhold til overskudsgrad. Derfor har kontoadministratorer et databaseret fundament, hvor de kan tilpasse deres salgs- og marketingbestræbelser efter hver kundes profil. 
+Rapporter fremhæver ændringer i indtægter og overskudsvækst over tid. Derfor kan de bruges til at give ledere besked om positive og negative tendenser for individuelle kunder og produkter. Derudover sammenligner diagrammer indtægter og rentabilitet over forskellige produktkategorier og kundegrupper med hinanden. Derfor kan kategorier og regionale ledere identificere tabere og vindere. Endelig afbilder en omfattende rapport en individuel kundes indtægt i forhold til overskudsgrad. Derfor har kontoadministratorer et databaseret fundament, hvor de kan tilpasse deres salgs- og marketingbestræbelser efter hver kundes profil.
 
 Med indholdet af **Salgs- og rentabilitetsperformance** har salgschefer mulighed for at analysere performance på følgende måder:
 
--   Omsætning, år til dato (efter kundegruppe og individuelle kunder, salgskategorier og individuelle produkter og geografiske områder)
--   Omsætningsændring, år for år (efter kunderegioner og salgskategorier)
+- Omsætning, år til dato (efter kundegruppe og individuelle kunder, salgskategorier og individuelle produkter og geografiske områder)
+- Omsætningsændring, år for år (efter kunderegioner og salgskategorier)
 
 Rentabiliteten kan analyseres på disse måder:
 
--   Bruttoavance og overskudsgrad (efter kundegrupper og produktsalgskategorier)
--   Bruttoavanceændring, år for år
--   Kunderentabilitet (efter omsætning i forhold til bruttoavance)
+- Bruttoavance og overskudsgrad (efter kundegrupper og produktsalgskategorier)
+- Bruttoavanceændring, år for år
+- Kunderentabilitet (efter omsætning i forhold til bruttoavance)
 
 ## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
-Power BI-indholdet **Salgs og rentabilitetsperformance** vises på siden **Salgs og rentabilitetsperformance** (**Salg og marketing** > **Forespørgsler og rapporter** > **Performanceanalyse for salg** > **Salgs og rentabilitetsperformance**). 
+Power BI-indholdet **Salgs og rentabilitetsperformance** vises på siden **Salgs og rentabilitetsperformance** (**Salg og marketing** \> **Forespørgsler og rapporter** \> **Performanceanalyse for salg** \> **Salgs og rentabilitetsperformance**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
 Power BI-indholdet til **Salgs- og rentabilitetsperformance** omfatter en rapport, der består af et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdet.
@@ -77,19 +77,18 @@ Power BI-indholdet til **Salgs- og rentabilitetsperformance** omfatter en rappor
 
 \* Omsætning dette og sidste år, og vækst efter salgskategori.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Følgende data bruges til at udfylde rapporten i Power BI-indholdet til **Salgs og rentabilitetsperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md). 
+Følgende data bruges til at udfylde rapporten i Power BI-indholdet til **Salgs og rentabilitetsperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
-De samlede målinger i denne indholdspakke er et undersæt af de samlede målinger, der var tilgængelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+De samlede målinger i denne indholdspakke er et undersæt af de samlede målinger, der var tilgængelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Følgende samlede nøglemålinger for enheden Fakturalinjer bruges som grundlag for indholdet.
 
-| Enhed        | Samlede nøglemålinger                   | Datakilden til Dynamics 365                    | Felt                                        | Betegnelse                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Fakturalinjer | Indtægter                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Beløbet i regnskabsvalutaen.            |
-|               | Vareforbrug                           | InventTrans                                     | SUM (CostAmountPosted + CostAmountAdjustment) | Summen af kostbeløbet og reguleringen.    |
-|               | Provisionslinjebeløb – regnskabsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsbeløbet i regnskabsvalutaen. |
+| Enhed        | Samlede nøglemålinger                   | Datakilden til Dynamics 365 | Felt                                        | Betegnelse                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Fakturalinjer | Indtægter                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | Beløbet i regnskabsvalutaen.            |
+|               | Vareforbrug                           | InventTrans                  | SUM (CostAmountPosted + CostAmountAdjustment) | Summen af kostbeløbet og reguleringen.    |
+|               | Provisionslinjebeløb – regnskabsvaluta | CustInvoiceTrans             | SUM(CommissAmountMST)                        | Provisionsbeløbet i regnskabsvalutaen. |
 
 Nedenstående tabel viser de samlede nøglemålinger af enheden Fakturalinjer, der bruges til at oprette flere beregnede målepunkter i indholdspakkens datasæt.
 
