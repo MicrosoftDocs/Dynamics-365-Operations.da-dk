@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Du kan også finde indholdet med en søgemaskine. For at få de bedste resultate
 Finance and Operations, Retail og Talent deler alle en enkelt indholdsfortegnelse på webstedet Docs, så kunderne kan se, hvilken sammenhæng det pågældende emne indgår i. Det gør det også muligt at bruge Filter-kontrolelementet over indholdsfortegnelsen til at søge efter emner.
 
 ### <a name="follow-a-topic"></a>Følge et emne
-Hvis du vil følge et emne, skal du klikke på knappen +Følge under kommentarboksen. Du skal logge på for at følge emnet. Se [Send en kommentar til os](#leave-us-a-comment) for få flere oplysninger.  
+Hvis du vil følge et emne, skal du klikke på knappen +Følge under kommentarboksen. Du skal logge på for at følge emnet. Se [Giv os feedback](#leave-us-feedback) for få flere oplysninger.  
 
 ### <a name="use-an-rss-feed"></a>Bruge et RSS-feed
 Hvis du vil abonnere på et RSS-feed for alle opdateringer til Unified Operations-indhold, skal du bruge følgende link fra en browser, der understøtter RSS-feeds, f.eks. Internet Explorer eller et RSS-feed-program: 

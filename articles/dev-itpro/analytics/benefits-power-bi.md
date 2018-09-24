@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Power BI-indholdet for **Frynsegoder** vises i arbejdsområdet **Frynsegodeadmin
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 De rapporter, der er inkluderet i Power BI-indhold for **Frynsegoder**, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
 
-| Rapport                       | Indhold                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Oversigt over tilmelding til frynsegoder  | De fleste og færreste tilmeldte planer, tilmelding efter medarbejdergruppe og bestemte frynsegodeplanindstillinger |
-| Medarbejderfrynsegoder            | Medarbejdertilmeldning efter valgt frynsegode                                                        |
-                                                                                             
-Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Rapport                      | Indhold                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Oversigt over tilmelding til frynsegoder | De fleste og færreste tilmeldte planer, tilmelding efter medarbejdergruppe og bestemte frynsegodeplanindstillinger |
+| Medarbejderfrynsegoder           | Medarbejdertilmeldning efter valgt frynsegode                                                        |
 
+Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende data bruges til at udfylde rapporterne i Power BI-indhold for **Frynsegoder**. Denne tabel viser de enheder, som indholdet er baseret på.
@@ -72,6 +71,4 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold for **Frynse
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, kompensation, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, job, ansættelse, job, frynsegoder |
-
-
 

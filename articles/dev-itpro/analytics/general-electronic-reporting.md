@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ En forretningsenhed af en datamodel er repræsenteret som en beholder (post). Eg
 
 En enkelt modelkomponent kan indeholde flere hierarkier af domænespecifikke forretningsobjekter. Den kan også indeholde modeltilknytninger, der understøtter et rapportspecifikt dataflow på kørselstidspunktet. Hierarkierne afpasses efter en enkelt post, der er valgt som en rod for modeltilknytningen. Datamodellen for betalingsdomæneområdet kan f.eks. understøtte følgende tilknytninger:
 
-- Virksomhed > Kreditor > Betalingstransaktioner for AP-domænet
-- Debitor > Virksomhed > Betalingstransaktioner for AR-domænet
+- Virksomhed \> Kreditor \> Betalingstransaktioner for AP-domænet
+- Debitor \> Virksomhed \> Betalingstransaktioner for AR-domænet
 
 Bemærk forretningsenheder som f.eks firma- og betalingsposteringer angives én gang. Forskellige tilknytninger genbruger dem.
 
@@ -74,7 +74,7 @@ En modeltilknytning, der understøtter udgående elektroniske dokumenter, har f�
 - Den understøtter brugerinputparametre, der kan defineres som datakilder for en datamodel, når data skal angives på kørselstidspunktet.
 - Den understøtter transformationen af Dynamics 365 for Finance and Operations-data til de grupper, der kræves. Den gør det også muligt at filtrere, sortere og summere data og tilføje logisk beregnede felter, der er designet via formler, der ligner Microsoft Excel-formler, som vist i følgende illustration. Du kan finde flere oplysninger under [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md).
 
-[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 En modeltilknytning, der understøtter indgående elektroniske dokumenter, har følgende muligheder:
 
@@ -175,7 +175,7 @@ Påkrævede **LCS-projektlagre** kan registreres individuelt for hver konfigurat
 ## <a name="supported-scenarios"></a>Understøttede scenarier
 ### <a name="building-a-data-model"></a>Opbygning af en datamodel
 
-ER leverer en modeldesigner, som du kan bruge til at bygge en datamodel for et bestemt virksomhedsdomæne. Alle domænespecifikke forretningsenheder og relationerne mellem dem kan præsenteres i en datamodel som en hierarkisk struktur. I følgende illustration vises et eksempel på denne type datamodel (betalingsdomæne-datamodellen). 
+ER leverer en modeldesigner, som du kan bruge til at bygge en datamodel for et bestemt virksomhedsdomæne. Alle domænespecifikke forretningsenheder og relationerne mellem dem kan præsenteres i en datamodel som en hierarkisk struktur. I følgende illustration vises et eksempel på denne type datamodel (betalingsdomæne-datamodellen).
 
 [![Datamodel for betalingsdomæne](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavegu
 
 Datamodelindhold (etiketter og beskrivelser) kan oversættes til andre sprog, som Dynamics 365 for Finance and Operations understøtter. Du kan oversætte datamodelindhold af følgende årsager:
 
--   På designtidspunktet for at gøre indholdet mere forståeligt for formatdesignere, der taler andre sprog og som bruger datamodellen til datatilknytning af formatkomponenter.
--   På kørselstidspunktet for at gøre indholdet mere brugervenligt ved at vise beskeder og hjælp til kørselsparametre samt konfigurerede valideringsmeddelelser (fejl og advarsler) på det sprog, som er det foretrukne for den bruger, der aktuelt er logget på.
+- På designtidspunktet for at gøre indholdet mere forståeligt for formatdesignere, der taler andre sprog og som bruger datamodellen til datatilknytning af formatkomponenter.
+- På kørselstidspunktet for at gøre indholdet mere brugervenligt ved at vise beskeder og hjælp til kørselsparametre samt konfigurerede valideringsmeddelelser (fejl og advarsler) på det sprog, som er det foretrukne for den bruger, der aktuelt er logget på.
 
-I følgende illustration vises et eksempel på, hvor datamodelindhold oversættes fra engelsk til japansk. 
+I følgende illustration vises et eksempel på, hvor datamodelindhold oversættes fra engelsk til japansk.
 
 [![Datamodelindhold på engelsk](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Datamodelindhold oversat til japansk](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfiguration af datamodeltilknytninger for udgående dokumenter
 
-ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte datakilder i Dynamics 365 for Finance and Operations. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. I følgende illustration vises et eksempel på denne type datamodeltilknytning vises i nedenstående billede (**SEPA-overførsel**-modeltilknytningen i datamodellen for betalingsdomæne). 
+ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller, de har designet, til bestemte datakilder i Dynamics 365 for Finance and Operations. På baggrund af tilknytningen importeres dataene på kørselstidspunktet fra valgte datakilder til datamodellen. Datamodellen bruges derefter som en abstrakt datakilde til ER-formater, der genererer udgående elektroniske dokumenter. I følgende illustration vises et eksempel på denne type datamodeltilknytning vises i nedenstående billede (**SEPA-overførsel**-modeltilknytningen i datamodellen for betalingsdomæne).
 
 [![Eksempel på en datamodeltilknytning](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ ER indeholder en modeltilknytningsdesigner, så brugerne kan knytte datamodeller
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Lagring af en designet modelkomponent som en modelkonfiguration
 
-ER kan gemme en designet datamodel med sammen tilknyttede datatilknytninger som en modelkonfiguration for den aktuelle forekomst af Finance and Operations. I følgende illustration vises et eksempel på denne type datamodelkonfiguration (betalingsdomæne-datakonfigurationen). 
+ER kan gemme en designet datamodel med sammen tilknyttede datatilknytninger som en modelkonfiguration for den aktuelle forekomst af Finance and Operations. I følgende illustration vises et eksempel på denne type datamodelkonfiguration (betalingsdomæne-datakonfigurationen).
 
 For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgaveguiden **Tilknyt ER-datamodel til markerede datakilder** (som er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde IT-tjeneste/løsningskomponenter (10677)**).
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Opbygning af et format, der bruger en datamodel som udgangspunkt
 
-ER understøtter en formatdesigner, som du kan bruge til at bygge formatet for et elektronisk dokument for et valgt forretningsdomæne ved at vælge modelkomponenten som udgangspunkt. Med samme ER-formatdesigner kan du knytte et format, som du opretter, til et markeret domænes datamodeltilknytning som en datakilde. I følgende illustration vises et eksempel på denne type format (den formatkonfiguration, der understøtter **BACS**-betalingsformatet for Storbritannien). 
+ER understøtter en formatdesigner, som du kan bruge til at bygge formatet for et elektronisk dokument for et valgt forretningsdomæne ved at vælge modelkomponenten som udgangspunkt. Med samme ER-formatdesigner kan du knytte et format, som du opretter, til et markeret domænes datamodeltilknytning som en datakilde. I følgende illustration vises et eksempel på denne type format (den formatkonfiguration, der understøtter **BACS**-betalingsformatet for Storbritannien).
 
 [![Eksempel på et format, der har en datamodel som udgangspunkt](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ For at blive fortrolig med detaljerne i dette scenarie skal du afspille opgavegu
 - [Skabelon for betalingsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Bundet skabelon for betalingsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Oprettelse af en konfiguration til import af data fra indgående elektroniske dokumenter  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Oprettelse af en konfiguration til import af data fra indgående elektroniske dokumenter
 ER-formatdesigneren kan bruges til at beskrive et elektronisk dokument, der er planlagt til import af data i enten XML- eller tekstformat. Designerformatet bruges til at fortolke et indgående dokument. ER-designeren for formattilknytning kan bruges til at definere bindingen af elementerne i det designede format til datamodellen. I følgende illustration vises et eksempel på denne type format og formattilknytning. I dette eksempel importeres NETS-bankkontoudtog, som indeholder oplysninger om kreditorbetalinger i tekstformat.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ ER kan gemme en designet format sammen med de konfigurerede datatilknytninger so
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfiguration af Finance and Operations for at begynde at bruge et oprettet format internt
 
-Finance and Operations kan konfigureres til at begynde at bruge et oprettet format til generering af elektroniske rapporter. Referencen til den oprettede formatkonfigurationen bør fastlægges i indstillingerne for et bestemt domæne. For eksempel for at begynde at bruge en ER-formatkonfiguration for elektroniske kreditorbetalinger i BACS format, skal der refereres til formatkonfigurationen i bestemte betalingsmåder, som vist i følgende illustrationer: 
+Finance and Operations kan konfigureres til at begynde at bruge et oprettet format til generering af elektroniske rapporter. Referencen til den oprettede formatkonfigurationen bør fastlægges i indstillingerne for et bestemt domæne. For eksempel for at begynde at bruge en ER-formatkonfiguration for elektroniske kreditorbetalinger i BACS format, skal der refereres til formatkonfigurationen i bestemte betalingsmåder, som vist i følgende illustrationer:
 
 [![BACS (UK) formatkonfiguration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 |                                                  |                       | Kreditorfakturadeklaration (IS)                   | Opgørelse for kreditorfaktura, format for Island                      |
 |                                                  |                       | Kreditorfakturadeklaration, rapport (IS)            | Opgørelse for kreditorfaktura, rapport for Island                      |
 
-
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Lokaliseringskrav – oprette en elektronisk rapporteringskonfiguration](electronic-reporting-configuration.md)
 
 [Administrere livscyklus for elektroniske indberetningskonfigurationer](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

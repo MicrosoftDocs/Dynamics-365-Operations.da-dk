@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,7 +39,7 @@ De rapporter, der er inkluderet i Power BI-indholdet for **Medarbejderudvikling*
 | Analyse af medarbejderkompetenceniveauer | Medarbejderkompetenceniveauer efter afdeling, medarbejdere efter færdighedsniveau og færdighedstype og laveste og højeste niveauer pr. færdighed |
 | Færdighedsprofil                 | Færdighedsprofil for den valgte medarbejder |
 | Kompetenceanalyse                | Færdigheder efter type og klassifikation |
-| Analyse af performanceanalyse   | Medarbejdere efter laveste og højeste klassifikation pr. job, medarbejderklassifikation efter afdeling, medarbejdere efter klassifikation og stillingstype og højeste og laveste klassifikationer efter stilling  |
+| Analyse af performanceanalyse   | Medarbejdere efter laveste og højeste klassifikation pr. job, medarbejderklassifikation efter afdeling, medarbejdere efter klassifikation og stillingstype og højeste og laveste klassifikationer efter stilling |
 | Analyse af medarbejderperformance | Medarbejderklassifikationer for den valgte klassifikation pr. leder |
 
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
@@ -48,7 +48,7 @@ Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til
 
 | Enhed                   | Indhold                                                                                                   | Relationer med andre enheder |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Kalenderforskydning          | Kalenderforskydninger for at opdele rapporter                                                                          | Tidligere stillingstildeling, stillingstendens, medarbejdertendens, fratrådt medarbejder 
+| Kalenderforskydning          | Kalenderforskydninger for at opdele rapporter                                                                          | Tidligere stillingstildeling, stillingstendens, medarbejdertendens, fratrådt medarbejder |
 | Regnskab                  | Virksomheder, som rapporter kan filtreres efter                                                                             | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Nuværende stilling         | Stillinger pr. dags dato, tilsvarende fuldtidsstilling (fuldtidsansatte), ledige stillinger og ledige-til-bestatte stillinger | Job, stilling |
 | Aktuel medarbejder         | Arbejdere pr. den aktuelle dato, alder og antallet af beskæftigede                                                         | Firma, geografisk placering, medarbejdernavn, rapporterer til, medarbejdertitel, demografi, job, ansættelse, stilling |
@@ -65,10 +65,9 @@ Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel arbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, ansættelse, job |
-| Stilling                      | Funktion, type og titel                                                                                      | Aktuel medarbejder, aktuel stilling, medarbejdertendens, job foretrukne færdighed, tidligere stillingstildeling, stillingstendens, fratrådt medarbejder |
+| Stilling                      | Funktion, type og titel                                                                                  | Aktuel medarbejder, aktuel stilling, medarbejdertendens, job foretrukne færdighed, tidligere stillingstildeling, stillingstendens, fratrådt medarbejder |
 | Jobbet foretrukne færdighed      | Prioritet, klassifikation, kompetence og færdighedsniveau                                                                 | Stilling |
-| Analyse af medarbejderkompetencer  | Certificeret, niveau, niveaudato og færdighed                                                                    | Medarbejdernavn, færdighed |  
+| Analyse af medarbejderkompetencer  | Certificeret, niveau, niveaudato og færdighed                                                                    | Medarbejdernavn, færdighed |
 | Ydeevne              | Klassifikation, beskrivelse og klassifikationsmodel                                                                      | Aktuel medarbejder, aktuel stilling, medarbejdertendens, job foretrukne færdighed, tidligere stillingstildeling, stillingstendens, fratrådt medarbejder |
-|  Færdighed                   | Færdighed, færdighedstype og klassifikation                                                                              | Analyse af medarbejderkompetencer, Job foretrukne færdighed |                                                                                                                        
-
+| Færdighed                    | Færdighed, færdighedstype og klassifikation                                                                              | Analyse af medarbejderkompetencer, Job foretrukne færdighed |
 

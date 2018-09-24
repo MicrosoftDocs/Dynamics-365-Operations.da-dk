@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Bemærk: De operationer, der er angivet nedenfor, gælder for den nyeste version
 | 707 | Aktivér enhed | Aktivér den aktuelle enhed ved at lade en godkendt bruger til at angive forbindelsesoplysninger og tildele en enhed og registrere id. | Nr. | Nr. | Nr. | Nr. | Nr. |
 | 134 | Tilføj tilhørsforhold | Føj en forudvalgt tilknytning til en transaktion. Vælg tilknytningen på siden **Egenskaber for knap**. | Ja | Ja | Nr. | Ja | Nr. |
 | 135 | Tilføj tilhørsforhold fra liste | Føj en tilknytning til en transaktion ved at vælge den på en liste. | Ja | Ja | Ja | Ja | Nr. |
+| 137 | Føje tilknytning til en kunde | Tilføj en tilknytning til en kunde på siden **Kundeoplysninger**. | Nr. | Nr. | Nr. | Ja | Nr. |
+| 138 | Fjern tilknytning fra kunde | Fjern en tilknytning på siden **Kundeoplysninger**. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 643 | Tilføj kuponkode | Tilføj en kupon ved at indtaste dens kode på POS. | Ja | Ja | Nr. | Ja | Nr. |
 | 117 | Tilføj fordelskundekort | Bed brugeren om at indtaste et fordelskundekortnummer, der skal føjes til den aktuelle transaktion. | Ja | Ja | Nr. | Ja | Nr. |
 | 136 | Tilføj serienummer | Med denne handling kan brugeren angive et serienummer for det aktuelt valgte produkt. | Ja | Ja | Nr. | Ja | Nr. |

@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Før du begynder, skal du oprette eller anskaffe den Power BI-rapport, du vil in
 Følg disse trin for at tilføje en .pbix-fil som en Visual Studio-projektgenstand.
 
 1. Opret et nyt projekt i den relevante model.
-2. Vælg projektet i Solution Explorer, højreklik og vælg derefter **Tilføj** > **Nyt element**.
+2. Vælg projektet i Solution Explorer, højreklik og vælg derefter **Tilføj** \> **Nyt element**.
 3. I dialogboksen **Tilføj nyt element** under **Operationsgenstande** skal du vælge skabelonen **Ressource**.
 4. Angiv et navn, der skal bruges til at referere til rapporten i X ++-metadata, og klik derefter på **Tilføj**.
 
@@ -77,7 +77,7 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 
 1. Åbn formulardesigneren for at udvide designdefinitionen.
 2. Vælg det øverste element **Design | Pattern: Workspace Operational** i designdefinitionen.
-3. Højreklik, og vælg derefter **New** > **Tab** for at tilføje et nyt kontrolelement med navnet **FormTabControl1**.
+3. Højreklik, og vælg derefter **Ny** \> **Fane** for at tilføje et nyt kontrolelement med navnet **FormTabControl1**.
 4. Vælg **FormTabControl1** i formulardesigneren.
 5. Højreklik, og vælg derefter **New Tab Page** for at tilføje en ny fane.
 6. Giv fanesiden et nyt, sigende navn, f.eks. **Arbejdsområde**.
@@ -86,12 +86,12 @@ Følg disse trin for at udvide formulardefinitionen for arbejdsområdet **Reserv
 9. Giv fanesiden til et nyt, sigende navn, f.eks. **Analyse**.
 10. Vælg **Analytics (Tab Page)** i formulardesigneren.
 11. Indstil egenskaben **Caption** til **Analytics**.
-12. Højreklik på kontrolelementet, og vælg derefter **New** > **Group** for at tilføje et nyt formulargruppekontrolelement.
+12. Højreklik på kontrolelementet, og vælg derefter **Ny** \> **Gruppe** for at tilføje et nyt formulargruppekontrolelement.
 13. Giv formulargruppen et nyt, sigende navn, f.eks. **powerBIRapportGruppe**.
 14. I formulardesigneren skal du vælge **PanoramaBody (Tab)** og derefter trække kontrolelementet til fanen **Workspace**.
 15. Vælg det øverste element **Design | Pattern: Workspace Operational** i designdefinitionen.
 16. Højreklik, og vælg derefter **Remove pattern**.
-17. Højreklik igen, og vælg derefter **Add pattern** > **Workspace Tabbed**.
+17. Højreklik igen, og vælg derefter **Tilføj mønster** \> **Faneopdelt arbejdsområde**.
 18. Opret et build for at bekræfte ændringerne.
 
 I følgende illustration vises designet, når disse ændringer er anvendt.
@@ -116,7 +116,7 @@ Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrol
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Følg disse trin for at tilføje forretningslogik, der initialiserer det kontrol
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Dette afsnit indeholder oplysninger om den hjælpeklasse, der bruges til at inte
 #### <a name="syntax"></a>Syntaks
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametre
 
-|       Navn       |                                                              Betegnelse                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Navnet på .pbix ressourcen.                                                     |
-| formGroupControl |                                    Kontrolelementet til formulargruppen, som Power BI-rapportkontrolelementet skal anvendes på.                                     |
-| defaultPageName  |                                                         Standardsidenavnet.                                                         |
-|  showFilterPane  |   En boolesk værdi, der angiver, om filterruden skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>).   |
-|   showNavPane    | En boolesk værdi, der angiver, om navigationsruden skal vises (<strong>true</strong>) eller skjules (<strong>false</strong>). |
-|  defaultFilters  |                                              Standardfiltrene for Power BI-rapporten.                                              |
-
+| Navn             | Betegnelse                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Navnet på .pbix ressourcen.                                                                              |
+| formGroupControl | Kontrolelementet til formulargruppen, som Power BI-rapportkontrolelementet skal anvendes på.                                              |
+| defaultPageName  | Standardsidenavnet.                                                                                       |
+| showFilterPane   | En boolesk værdi, der angiver, om filterruden skal vises (**true**) eller skjules (**false**).     |
+| showNavPane      | En boolesk værdi, der angiver, om navigationsruden skal vises (**true**) eller skjules (**false**). |
+| defaultFilters   | Standardfiltrene for Power BI-rapporten.                                                                 |
 

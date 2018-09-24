@@ -26,6 +26,8 @@ ms.lasthandoff: 08/08/2018
 ---
 # <a name="remove-talent-environments"></a>Fjerne Talent-miljøer
 
+[!include [banner](includes/banner.md)]
+
 Dette emne fører dig gennem processen med at fjerne et testdrev eller et produktionsmiljø til Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Fjerne et testdrevmiljø

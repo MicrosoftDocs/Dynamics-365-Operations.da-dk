@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 201d0f1e3fddd662748008c7304d67ef6003ef02
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3ff94c49eed378d92e995782e73d76d669b44292
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/08/2018
 
 Du kan designe ER-formater for at oprette udgående dokumenter i forskellige formater. Når et dokument er oprettet, kalder et ER-format datakilder, der er konfigureret i en tilsvarende ER-modeltilknytning. Hvis du vil konfigurere adgang til tabeller i programmet for at hente poster, kan du bruge ER-datakilder af typen **Tabelposter**. Når adgangstabellen er en delt tabel (dvs. en tabel, hvor data gemmes uden et firma-id), returnerer datakilden alle poster. Når adgangstabellen er en firmaafhængig tabel (dvs. en tabel, hvor data gemmes pr. firma), returnerer denne datakilde kun de poster, der er gemt for det aktuelle firma (dvs. den firmakontekst, som ER-formatet kører under).
 
-Hver datakilde af typen **Tabelposter** i en modeltilknytning kan nu markeres som en datakilde på tværs af firmaer. Derfor kan du bruge datakilder af typen **Tabelposter** til at få adgang til data på tværs af firmaer i programtabeller. 
+Hver datakilde af typen **Tabelposter** i en modeltilknytning kan nu markeres som en datakilde på tværs af firmaer. Derfor kan du bruge datakilder af typen **Tabelposter** til at få adgang til data på tværs af firmaer i programtabeller.
 
 Hvis du markerer en datakilde som værende på tværs af firmaer, bruges følgende funktionsmåde:
 
@@ -44,30 +44,32 @@ I dialogboksen til systemforespørgsel, når indstillingen **Spørg efter foresp
 > [!IMPORTANT]
 > Ligesom andre filtre bevares firmafilteret som den sidste anvendte værdi for forespørgsler, når du kører et ER-format. Filteret ændres ikke automatisk, hvis du ændrer værdien på tværs af firmaer for en datakilde. Hvis du vil bruge en anden på tværs af firmaer-værdi til en anden datakilde, skal du slette den tilsvarende brugerspecifikke markering.
 
-For hver datakilde, der er markeret som værende på tværs af firmaer, kan du vælge de poster, du vil, ved hjælp af **FILTER**- og **WHERE**-funktionerne i ER-udtryk. Feltet **dataAreaID** kan også bruges som firma-id. I øjeblikket er feltet **dataAreaID** begrænset til følgende typer betingelser, når **FILTER**-funktionen anvendes: 
+For hver datakilde, der er markeret som værende på tværs af firmaer, kan du vælge de poster, du vil, ved hjælp af **FILTER**- og **WHERE**-funktionerne i ER-udtryk. Feltet **dataAreaID** kan også bruges som firma-id. I øjeblikket er feltet **dataAreaID** begrænset til følgende typer betingelser, når **FILTER**-funktionen anvendes:
 
 - Kun de betingelser, der har en enkelt **dataAreaID**-feltsammenligning, understøttes.
 - Der tillades kun sammenligninger med udtryk, der ikke afhænger af listeelementer i poster.
 
 Derfor er følgende udtryk gyldigt.
 
-    FILTER (MyTable, MyTable.dataAreaID = $StringUserInputParameter)
-    While shown below expressions will not pass the validation:
-    FILTER (MyTable, MyTable.dataAreaID = MyTable2RecordsList.MyField)
-    FILTER (MyTable, 
-        OR(
-            MyTable.dataAreaID = $StringUserInputParameter1,
-            MyTable.dataAreaID = $StringUserInputParameter2
-        )
+```
+FILTER (MyTable, MyTable.dataAreaID = $StringUserInputParameter)
+While shown below expressions will not pass the validation:
+FILTER (MyTable, MyTable.dataAreaID = MyTable2RecordsList.MyField)
+FILTER (MyTable, 
+    OR(
+        MyTable.dataAreaID = $StringUserInputParameter1,
+        MyTable.dataAreaID = $StringUserInputParameter2
     )
+)
+```
 
-Området indeholder som standard alle firmaer i det aktuelle program. Det kan dog være begrænset. Du kan begrænse omfanget af dataadgang på tværs af firmaer for et enkelt ER-format ved at tildele et bestemt organisationshierarki til formatet. Når et hierarki er defineret for et ER-format, returneres kun poster for juridiske enheder, der vises i det tildelte hierarki, selvom formatet kalder datakilder på tværs af firmaer. Når en reference til et hierarki, der ikke længere findes, er defineret for et ER-format, anvendes standardområdet, og formatet kalder datakilder på tværs af firmaer. I denne situation returneres poster for alle firmaer i programmet. 
+Området indeholder som standard alle firmaer i det aktuelle program. Det kan dog være begrænset. Du kan begrænse omfanget af dataadgang på tværs af firmaer for et enkelt ER-format ved at tildele et bestemt organisationshierarki til formatet. Når et hierarki er defineret for et ER-format, returneres kun poster for juridiske enheder, der vises i det tildelte hierarki, selvom formatet kalder datakilder på tværs af firmaer. Når en reference til et hierarki, der ikke længere findes, er defineret for et ER-format, anvendes standardområdet, og formatet kalder datakilder på tværs af firmaer. I denne situation returneres poster for alle firmaer i programmet.
 
 Bemærk, at når indstillingen **Brug kladde** er aktiveret for den tildelte til et enkelt organisationshierarki for ER-formatet, bruges de juridiske enheder fra kladdeversionen af dette hierarki, til at identificere området for datakilder på tværs af firmaer. Hvis kladdeversionen ikke findes, bruges de juridiske enheder fra den senest udgivne version af dette organisationshierarki, til denne.
 
 Bemærk, at når indstillingen **Brug kladde** er deaktiveret for den tildelte til et enkelt organisationshierarki for ER-formatet, bruges de juridiske enheder fra den senest udgivne version af dette organisationshierarki, til at identificere området for datakilder på tværs af firmaer. Ikrafttrædelsesdatoer for organisationshierarkier understøttes endnu ikke i ER-strukturen.
 
-Hierarkiet kan tildeles til et format på en bestemt side, der kan åbnes fra ER-arbejdsområdet eller ved hjælp af menupunktet **Virksomhedsadministration -> Elektronisk rapportering -> Filter med juridisk enhed for formater**. For at få adgang til siden skal rettigheden **Vedligehold filtre med juridisk enhed for formater** (ERMaintainFormatMappingLegalEntityFilters) være tildelt til en bruger. Områdebegrænsningen for hierarkibaserede juridiske enheder for formatet anvendes sammen med den begrænsning, som brugeren manuelt kan angive i dialogboksen til systemforespørgsler. Skæringspunktet mellem disse begrænsninger bruges, når formatet køres.
+Hierarkiet kan tildeles til et format på en bestemt side, der kan åbnes fra ER-arbejdsområdet eller ved hjælp af menupunktet **Virksomhedsadministration \> \> Elektronisk rapportering** Filter med juridisk enhed for formater. For at få adgang til siden skal rettigheden **Vedligehold filtre med juridisk enhed for formater** (ERMaintainFormatMappingLegalEntityFilters) være tildelt til en bruger. Områdebegrænsningen for hierarkibaserede juridiske enheder for formatet anvendes sammen med den begrænsning, som brugeren manuelt kan angive i dialogboksen til systemforespørgsler. Skæringspunktet mellem disse begrænsninger bruges, når formatet køres.
 
 Hvis du vil vide mere om denne funktion, kan du afspille opgaveguiden **ER Åbne poster for firmaafhængige tabeller i en tilstand på tværs af firmaer**, som er en del af forretningsprocessen 7.5.4.3 Anskaffe/udarbejde komponenter til it-servicer og -løsninger (10677), og som kan hentes fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Denne opgaveguide fører dig gennem processen med at konfigurere en ER-modeltilknytning og et ER-format for at få adgang til programtabeller i på tværs af firmaer-tilstand.
 

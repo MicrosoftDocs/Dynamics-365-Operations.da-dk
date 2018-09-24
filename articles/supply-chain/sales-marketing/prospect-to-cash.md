@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
-ms.openlocfilehash: 9d20a0ba92010be17029b1b0fc826eee1cded279
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/31/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -33,8 +33,7 @@ ms.lasthandoff: 05/31/2018
 
 Kundeemne til kontanter-løsningen giver direkte synkronisering på tværs af Dynamics 365 for Finance and Operations og Dynamics 365 for Sales. Kundeemne til kontanter-skabelonerne, der er tilgængelige i funktionen Dataintegration, muliggør strømme af data til firmaer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellem Finance and Operations og Sales. Når data flyder mellem Finance and Operations og Sales, kan du udføre salgs- og marketingaktiviteter i Sales, og du kan håndtere ordreopfyldelsen ved at bruge lagerstyring i Finance and Operations. 
 
-Du kan finde yderligere oplysninger om kundeemne til kontant-integration i denne korte YouTube-video: [![](https://img.youtube.com/vi/AVV9x5x-XCg/0.jpg)](https://www.youtube.com/watch?v=AVV9x5x-XCg)
-
+Du kan finde yderligere oplysninger om kundeemne til kontant-integration i denne korte YouTube-video [Kundeemne til kontant-integration](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 I den aktuelle version indeholder Kundeemne til kontanter-løsning følgende typer direkte synkronisering:
 
