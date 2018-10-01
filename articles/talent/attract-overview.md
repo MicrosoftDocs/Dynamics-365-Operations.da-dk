@@ -32,18 +32,18 @@ Attract indeholder funktioner til at administrere processen til ansættelse af n
 
 Attract indeholder følgende funktioner.
 
-### <a name="attract-dashboard"></a>Attract-dashboard
+## <a name="attract-dashboard"></a>Attract-dashboard
 Det er her, hvor medlemmerne af ansættelsesteamet kan se detaljerne for de job, de deltager i. Det er også her, hvor en ansættelseschef eller rekrutteringsmedarbejder kan føje et nyt job til Attract, enten ved at oprette et individuelt eller importere et antal på én gang fra et Excel-regneark.
 
-### <a name="jobs"></a>Job
+## <a name="jobs"></a>Job
 På siden **Job** kan detaljer som jobbeskrivelse og jobplacering ses og redigeres. Siden **Job** er det sted, hvor ansættelsesteamet sættes sammen, og hvor du kan tilføje eller ændre jobagenter og interviewere i teamet. Du kan også tilføje nye kandidater på siden **Job**.
 
-### <a name="candidates"></a>Kandidater
+## <a name="candidates"></a>Kandidater
 Kandidater kan føjes til et job enkeltvist eller overføres i større antal fra et Excel-regneark. Alle kandidater føjes automatisk til den første fase , Ansøgningsfasen, i ansættelsesprocessen for ethvert job. Alle oplysninger om kandidatens ansøgning kan vises og administreres her. Supplerende dokumenter kan overføres og vises, sammen med kontaktoplysninger, f.eks. mailadresser, telefonnumre og links til deres konti på sociale medier. Hvis kandidaten har angiv et link til deres LinkedIn-profil, og LinkedIn-integrationen (der kræver en licens til LinkedIn-rekrutteringsmedarbejder) er konfigureret, vises kandidatens profil.
 
-### <a name="stages"></a>Stadier
+## <a name="stages"></a>Stadier
 Attract indeholder en foruddefineret ansættelsesproces, der indeholder fire grundlæggende faser: Ansøgning, Screening, Samtale og Tilbud. Nye kandidater starter i ansøgningsfasen, hvor deres CV, følgebrev, portefølje og andre ansøgningsdokumenter gennemses. Derfra kan en kandidat gå videre til screeningsfasen, hvor de inviteres til at deltage i et screeningstelefonopkald eller en Skype-videosamtale. Ansættelseschefen og rekrutteringsmedarbejderen kan give feedback om kandidaten, og overføre dem til næste fase. Fysisk samtaler planlægges derefter med tilgængelige medlemmer af ansættelsesteamet, og de kan tilpasses til at være en til en-samtaler eller panelsamtaler af forskellige længder. Efter samtalerne hentes og gennemgås feedback fra samtaleteamet. Udvalgte kandidater overføres til den sidste fase, hvor der udarbejdes et tilbud til deres gennemsyn og godkendelse. 
 
-### <a name="candidate-app"></a>Kandidatapp
+## <a name="candidate-app"></a>Kandidatapp
 Kandidater modtager en e-mail, så snart de er føjet til et job med et link, hvor de kan hente appen. Denne webapp giver kandidaterne oplysninger om jobbet og er det værktøj, de bruger til at kommunikere med ansættelsesteamet. Kandidaterne kan også oplysninger om, hvornår de er til rådighed til samtaler.
 
