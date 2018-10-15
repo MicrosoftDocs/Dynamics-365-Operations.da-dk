@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 85318332b802aace7d705289e6a298b49799b847
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -47,7 +47,7 @@ Gå til producentens websted for at finde den nyeste version af hver webbrowser.
 > * Arbejdsgangseditoren startes som et ClickOnce-program. Kun Microsoft Edge og Internet Explorer (på en understøttet version af Microsoft Windows) understøtter ClickOnce-programmer. ClickOnce-programmet til arbejdsgangseditoren kræver et kompatibelt 64-bit-operativsystem.
 > * Hvis du vil se PDF-filer, anbefaler vi, at du bruger moderne browsere, som Microsoft Edge (seneste offentligt tilgængelige version) i Windows 10 eller Google Chrome (seneste offentligt tilgængelige version) i Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-tabletten.
 >   Netværkskrav
-> * Dynamics 365 for Talent er designet til netværk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Talent. Vi anbefaler, at du tester netværksventetiden på [www.azurespeed.com](http://www.azurespeed.com "Test af ventetid i Azure").
+> * Dynamics 365 for Talent er designet til netværk med ventetid på 250-300 millisekunder (ms) eller mindre. Dette er ventetiden fra en browserklient til Microsoft Azure datacenteret, der er vært for Dynamics 365 for Talent. Vi anbefaler, at du tester netværksventetiden på [www.azurespeed.com](https://www.azurespeed.com "Test af ventetid i Azure").
 > * Kravene til båndbredde for Dynamics 365 for Talent afhænger af dit scenarie. De fleste typiske scenarier kræver en båndbredde på mere end 50 kilobyte pr. sekund (KBps).
 > 
 > [!WARNING]

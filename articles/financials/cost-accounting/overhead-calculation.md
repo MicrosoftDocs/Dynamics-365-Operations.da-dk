@@ -3,7 +3,7 @@ title: Beregning af fast omkostning
 description: I dette emne beskrives de typiske processer til beregning og tildeling af faste omkostninger.
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ I nogle tilfælde er en del af omkostningen et fast gebyr, og de resterende omko
 </tbody>
 </table>
 
-Du kan finde detaljerede oplysninger om funktionalitet af omkostninger under Politik for funktionalitet af omkostning. (Bemærk, at dette emne endnu ikke er færdigt, men det kommer snart).
-
+Du kan få flere oplysninger under [Oprette og tildele en politik for omkostningsfunktionalitet til en omkostningskontrolenhed](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Trin 2: Behandle beregningen af omkostningsfordelingen
 
 Omkostningsfordeling bruges til at omfordele omkostninger fra ét omkostningsobjekt til et eller flere andre omkostningsobjekter ved at anvende en relevant fordelingsgrundlag. Omkostningsfordeling og omkostningstildeling adskiller sig fra hinanden ved, at omkostningsfordeling altid sker på niveauet for det primære omkostningselement i den oprindelige omkostning.
@@ -430,7 +429,7 @@ De faste omkostninger skal fordeles jævnt til de enkelte omkostningsobjekter, d
 </tbody>
 </table>
 
-Du kan finde detaljerede oplysninger om omkostningsfordeling og fordelingsgrundlag under Politik for omkostningsfordeling og Fordelingsgrundlag. (Bemærk, at dette emne endnu ikke er færdigt, men det kommer snart).
+Du kan få flere oplysninger under [Oprette og tildele en omkostningsfordelingspolitik til en omkostningskontrolenhed](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Trin 3: Behandle beregning af faste omkostninger
 
@@ -612,13 +611,13 @@ Tabellen nedenfor viser resultatet, når personaleprojekterne anvendes som forde
 <td>10001</td>
 <td>Elektricitet</td>
 <td>Variabel omkostning</td>
-<td>10,00</td>
+<td>10.00</td>
 <td>31. januar 2017</td>
 </tr>
 </tbody>
 </table>
 
-Detaljerede oplysninger om politik for satser for faste omkostninger finder du i Politik for sats for faste omkostninger og Fordelingsgrundlag. (Bemærk, at dette emne endnu ikke er færdigt, men det kommer snart).
+Du kan få flere oplysninger under [Udfør beregning af fast omkostning](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Trin 4: Behandle beregningen af omkostningstildelingen
 
@@ -720,12 +719,13 @@ Omkostningsobjektet CC004 Emballage bidrager til flere omkostningsobjekter. Et s
 <tr>
 <td>Prod 2</td>
 <td>Produkt 2</td>
-<td>15</td>
+<td>september</td>
 </tr>
 </tbody>
 </table>
 
-**Bemærk!** I Finance and Operations kan statistiske foranstaltninger som f.eks. de produktionstimer, som et produkt forbruger, udledes af kildedataene. Du kan finde mere detaljerede oplysninger om providere af statistiske målinger under Skabeloner til providere af statistiske målinger. (Bemærk, at dette emne ikke er færdigt endnu, men kommer snart). Tabellen nedenfor viser resultatet, når HR tjenester anvendes som tildelingsgrundlag for samlede omkostninger (faste omkostninger og variable omkostninger).
+> [!NOTE]
+> I Finance and Operations kan statistiske foranstaltninger som f.eks. de produktionstimer, som et produkt forbruger, udledes af kildedataene. Du kan finde flere oplysninger under [Skabelon til providere af statistiske målinger](statistical-measure-provider-template.md#statistical-measure-provider-template). Tabellen nedenfor viser resultatet, når personaletjenester anvendes som fordelingsgrundlag for samlede omkostninger (faste omkostninger og variable omkostninger).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ I Finansregnskab bogføres en omkostning på 10.000,00 for elektricitet til et d
 </table>
 
 > [!NOTE]
-> Dette emne viser, hvordan et primært omkostningselement, 10001 Elektricitet, flyder gennem omkostningsobjekter. Derfor tildeles disse faste omkostninger til det laveste niveau i organisationen. Det vil sige, at omkostningsobjekter på laveste niveau bærer omkostningen. Hvis du har brug for en visuel tilførsel af omkostningen mellem omkostningsobjekter, kan du bruge politikreglerne for omkostningsakkumuleringen til at visualisere strømmen af omkostningerne. Du kan finde flere oplysninger under Politik for omkostningstotaler. (Bemærk, at dette emne endnu ikke er færdigt, men det kommer snart).
+> Dette emne viser, hvordan et primært omkostningselement, 10001 Elektricitet, flyder gennem omkostningsobjekter. Derfor tildeles disse faste omkostninger til det laveste niveau i organisationen. Det vil sige, at omkostningsobjekter på laveste niveau bærer omkostningen. Hvis du har brug for en visuel tilførsel af omkostningen mellem omkostningsobjekter, kan du bruge politikreglerne for omkostningsakkumuleringen til at visualisere strømmen af omkostningerne. Du kan få flere oplysninger under [Omkostningstotaler](cost-rollup.md).
 
 
 

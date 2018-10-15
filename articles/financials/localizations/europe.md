@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig med at konfigurere Dynamics 365 for Finance and Operations for juridiske enheder med en primær adresse i Brasilien. 
+Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig med at konfigurere Dynamics 365 for Finance and Operations for juridiske enheder med en primær adresse i Europa. 
 
 - [Forskudshavere](emea-advance-holders.md)
  - [Forskudshaverposteringer](emea-advance-holders-transactions.md)
@@ -44,9 +44,7 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 - [Filformater for betalingsmåder](emea-select-file-formats-for-the-method-of-payments.md)
 - [Integration af regnskabsservice (ESR)](emea-fiscal-service-integration.md)
 - [Kassation af anlægsaktiver for Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Værdiregulering af udenlandsk valuta](emea-foreign-currency-revaluation.md)
 - [Generere et overførselsdokument for en intern lageroverførsel](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generere en EU Intrastat-opgørelse](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Generere en EU-listesystemrapport](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importere ISO20022-filer](emea-ISO20022-file-formats.md)
@@ -61,6 +59,8 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
   - [Oprette og eksportere kreditorbetalinger ved hjælp af ISO20022-betalingsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Overføre transaktioner til Intrastat](tasks/transfer-transactions-intrastat.md)
+  - [Angive en fragtadresse for en fællesskabspostering](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Generere en EU Intrastat-opgørelse](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagerkladderapporter](emea-set-up-report-inventory-journal-names.md)
 - [Deadlines for fakturaudstedelse](emea-invoice-issue-deadline.md)
 - [Fakturabehandling](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Dette emne indeholder oplysninger og links til ressourcer, der kan hjælpe dig m
 - [Konfigurere rapportering for EU-listesystemet](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Konfigurere indbetalingskortformat for projektfakturaer](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Konfigurere underskrivere til trykte formularer](emea-set-up-signers-for-printing-forms.md)
-- [Konfigurere overførselsdokumenter for varebevægelser inden for et firma](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Angive en fragtadresse for en fællesskabspostering](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno-regnskab](emea-storno.md)
 - [Momsvejledninger](emea-tax-directives.md)
 - [Opdatere, hvordan beløb vises på rapporter og dokumenter](emea-amount-printing-forms.md)

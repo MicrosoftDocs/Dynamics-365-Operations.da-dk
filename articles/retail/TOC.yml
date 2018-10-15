@@ -12,6 +12,8 @@
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Installationsindstillinger
       href: dev-itpro/choose-deployment.md
+    - name: Få support til Retail
+      href: retail-support.md
 - name: Forstå implementeringens livscyklus
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -37,7 +39,7 @@
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
     - name: Implementere projekter i Finance and Operations Retail
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Oprette nye miljøer, VSTS og forgreninger for Retail-projekter'
+    - name: 'Oprette nye miljøer, Azure DevOps og forgreninger for Retail-projekter'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Opdatere kode og miljøer for Retail-projekter
       href: dev-itpro/updating-environments.md
@@ -301,10 +303,18 @@
   items:
     - name: 'Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger'
       href: ../talent/departments-jobs-positions.md
-    - name: Konfiguration af komponenter i et job
+    - name: Konfigurere komponenter i et job
       href: ../talent/create-job.md
 - name: Lokalisering og lovpligtige funktioner
   items:
+    - name: Østeuropa
+      items:
+        - name: Fakturaer for forskudsbetaling til Retail til Østeuropa
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Administration af kontantbeholdning til Retail til Østeuropa
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Retail-debitorfakturaer og -retursalgsordrer i østeuropæiske lande
+          href: localizations/emea-eeu-retail-invoices.md
     - name: Frankrig
       items:
         - name: Kasseapparatfunktionalitet
@@ -317,6 +327,8 @@
           href: localizations/apac-ind-cash-registers.md
         - name: Retningslinjer for installation af kasseapparater
           href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: Understøttelse af opgradering og N-1 til Indien
+          href: localizations/apac-ind-n-1-for-india.md
     - name: Norge
       items:
         - name: Kasseapparatfunktionalitet

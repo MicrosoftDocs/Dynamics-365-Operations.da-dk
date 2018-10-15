@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 8021e54fdd5c4c71c016e52801d3f2f627de761b
+ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
+ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -47,7 +47,7 @@ Videoerne er angivet efter funktion, så rul ned for at se hele listen med video
 - [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurere en udviklingsgren og et build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Opsætning af en computer til udvikling](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Visual Studio Team Services-integration med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Azure DevOps-integration med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Undersøge brugergrænsefladen
 - [Tilføje brugerdefinerede felter](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
@@ -159,7 +159,7 @@ Videoerne er angivet efter funktion, så rul ned for at se hele listen med video
 - [AX 2009-overførselsværktøjer (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2012 til Dynamics 365 for Operations-opgradering (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Sådan opgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (version 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Konfiguration af Visual Studio Team Services (VSTS) (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Opsætning af Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="warehouse-management"></a>Lokationsstyring
 - [Tilføjelser til modtagelse af blandede id'er (DYN331PAL)](https://infopedia.eventbuilder.com/event?eventid=e0u6t2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)

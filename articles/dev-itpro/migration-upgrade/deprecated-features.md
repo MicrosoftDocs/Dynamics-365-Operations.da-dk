@@ -3,7 +3,7 @@ title: "Fjernede eller frarådede funktioner"
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Denne liste er beregnet til at hjælpe dig med at overveje disse fjernelser og f
 
 > [!Note]
 > Du kan finde detaljerede oplysninger om objekter i Finance and Operations i [Technical Reference-rapporterne](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de forskellige versioner af disse rapporter for at få mere at vide om objekter, der er ændret eller fjernet i hver version af Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Regler for batchoverførsel for kontoposter for reskontrokladde
+Synkron overførselstilstand frarådes i finansparametrene.  Denne tilstand erstattes af asynkron og planlagt batch, der allerede findes som indstillinger for overførsel. 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Vi fjerner indstillingen for synkron på grund af indflydelse på ydeevnen i systemet. |
+| **Erstattet af en anden funktion?**   | Asynkron og planlagt batch er indstillinger, der skal bruges i stedet for synkron.   |
+| **Produktområder, der er berørt**         | Finans, kreditor, debitor, indkøb, udgift    |
+| **Installationsindstilling**              | Alt  |
+| **Status**                         | Forældet: Måltidsrammen for funktioner, der skal fjernes, er version 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Elektronisk rapportering for Rusland
+Funktion til at konfigurere filformaterne .txt- og .xml for erklæringer. 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet med elektronisk rapportering. |
+| **Erstattet af en anden funktion?**   | Ja. |
+| **Produktområder, der er berørt**         | Finans |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Generator til økonomiske rapporter for Rusland
+Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapporter og eksportere data til XLS- og DOC-rapportskabeloner. Funktionelle dele: eksportere data til XLS- og DOC-rapportskabeloner, forespørgsler, faste forudsætninger fjernes. 
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Fjernede dele erstattes med elektronisk indberetning. |
+| **Erstattet af en anden funktion?**   | Ja. Økonomirapporters brugergrænseflade for opsætning skal bruges til at opstille dataindsamlingsregler efter GL-konti eller momsregistre. Eksportere data til forskellige filtyper, faste forudsætninger og regler for forespørgselslignende indsamling bør være konfigureret i elektronisk rapportering. |
+| **Produktområder, der er berørt**         | Finans. |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med eksterne udbydere for at sende elektronisk rapportering via kommunikationskanaler for Rusland
+Funktion til eksport af genererede elektroniske filer med erklæringer til mappe for at sende dem til officielle udbydere af elektronisk rapportering samt tilbageimport af tilstand.
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Erstattet af elektroniske meddelelser, der kan konfigureres. |
+| **Erstattet af en anden funktion?**   | Ja.  |
+| **Produktområder, der er berørt**         | Finans, moms |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platformsopdatering 15 er kumulativ og indeholder nye eller ændrede funktioner fra platformsopdatering 13, platformsopdatering 14 og platformsopdatering 15.

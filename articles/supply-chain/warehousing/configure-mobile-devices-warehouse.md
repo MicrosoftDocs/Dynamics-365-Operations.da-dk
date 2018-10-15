@@ -1,9 +1,9 @@
 ---
 title: Konfigurere mobilenheder til lagerstedsarbejde
-description: "Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed."
+description: "Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 05/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
+Dette emne beskriver, hvordan du konfigurerer de menupunkter, som lagerarbejdere kan bruge til at udføre arbejde på en mobilenhed.
 
-**Bemærk!** Denne artikel gælder for funktioner i Lagerstedsstyring. Den gælder ikke for funktioner i Lagerstyring. De menupunkter, der vises i menuerne på en mobilenhed for lagersted, er konfigureret på siden **Menupunkter i mobilenhed**. Da menupunkterne kan anbringes i forskellige menuer, er det nemt at konfigurere menustrukturer, så kun bestemte typer arbejde vises for bestemte brugere. Du kan konfigurere menupunkter til at gøre følgende opgaver:
+**Bemærk!** Denne emne gælder for funktioner i Lagerstedsstyring. Den gælder ikke for funktioner i Lagerstyring. De menupunkter, der vises i menuerne på en mobilenhed for lagersted, er konfigureret på siden **Menupunkter i mobilenhed**. Da menupunkterne kan anbringes i forskellige menuer, er det nemt at konfigurere menustrukturer, så kun bestemte typer arbejde vises for bestemte brugere. Du kan konfigurere menupunkter til at gøre følgende opgaver:
 
 -   Behandle en forespørgsel eller udføre en aktivitet, f.eks. udskrive en etiket, generere id-numre, starte en produktionsordre eller hurtigt søge efter oplysninger om varer på en lokalitet.
 -   Oprette arbejde, der udføres via en anden proces. Hvis der f.eks. modtages en vare for en indkøbsordre, kan det oprette læg på lager-arbejde for en anden arbejder.
@@ -193,7 +193,7 @@ Du kan konfigurere et menupunkt, der opretter arbejde for en anden arbejder, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurer menupunkter til behandling af eksisterende arbejde
-Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde**, og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige under fanen **Generelt**. Du kan styre adgangen til menupunktet ved at tildele en eller flere arbejdsklasser i oversigtspanelet **Arbejdsklasse**. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige.
+Udover at oprette menupunkter til oprettelse af lagerstedsarbejde kan du angive menupunkter til behandling af arbejde, der allerede er oprettet. Angiv feltet **Tilstand** til **Arbejde**, og vælg indstillingen **Brug eksisterende arbejde**. Nogle yderligere indstillinger bliver derefter tilgængelige under fanen **Generelt**. Du kan styre adgangen til menupunktet ved at tildele en eller flere arbejdsklasser i oversigtspanelet **Arbejdsklasse**. Arbejdsklasserne definerer det arbejde, som menupunktet kan behandle. Arbejdsklassen kan også bruges til at give adgang til bestemte brugerroller eller til at adskille behandling for forskellige typer operationer. I følgende tabel forklares de indstillinger, der er tilgængelige. Indstillingen kan vælges under feltet **Ledet af** på siden **Menupunkter i mobilenhed**. 
 
 <table>
 
@@ -247,6 +247,10 @@ Denne indstilling er f.eks. nyttig, når flere paller er klargjort for en last. 
 <tr class="even">
 <td>Gruppering af cyklusoptælling</td>
 <td>Arbejderen vælger en zone, et arbejdsområde eller en lokation, og Microsoft Dynamics 365 for Finance and Operations tildeler arbejde baseret på valget. Hvis du vælger denne indstilling, kan du også klikke på <strong>Cyklusoptælling</strong> i handlingsruden for at angive yderligere oplysninger, der skal vises, og du kan også angive det antal gange, arbejderen skal gentage optællingen, hvis der konstateres en forskel.</td>
+</tr>
+ <tr class="odd">
+<td>Lastning af transport</td>
+<td>Denne funktion tillader flere lagermedarbejdere at laste lageret fra de samme eller forskellige laster på den samme lastbil med laster, der er helt eller delvist leveret.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ Indstillingerne er beskrevet i følgende tabel.
 <td>Vælg denne indstilling for at give arbejdere mulighed for at kombinere arbejde for en salgsordre eller en last i en enkelt arbejdsenhed. En arbejder kan kun udføre arbejde for salgsordren eller lasten. Denne indstilling er f.eks. nyttigt, når du skal øge et antal for en salgsordre, efter at last, levering og arbejde er oprettet for salgsordren. Denne indstilling er tilgængelig, når menupunktet bruger eksisterende arbejde, og arbejdet er videreført af brugeren eller systemet.</td>
 </tr>
 <tr class="even">
-<td>Ingen</td>
+<td>Pluk den ældste batch</td>
 <td>Angiv, om arbejderen skal plukke den ældste batch på en lokalitet først. Følgende valgmuligheder er tilgængelige:
 <ul>
 <li><strong>Ingen</strong> – Arbejderen kan plukke en hvilken som helst batch på lokaliteten. Arbejderen får ingen meddelelse.</li>

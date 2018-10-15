@@ -1,25 +1,26 @@
 --- 
 title: Designe ER-konfigurationer til at generere rapporter i Word-format
-description: "Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan konfigurere en model for elektronisk rapporteringsformat (ER) til at generere rapporter som Microsoft Word-filer."
+description: "Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan konfigurere en model for elektronisk rapporteringsformat til at generere rapporter som Microsoft Word-filer."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Designe ER-konfigurationer til at generere rapporter i Word-format
@@ -30,9 +31,9 @@ Følgende trin beskriver, hvordan en bruger med rollen Systemadministrator eller
 
 For at fuldføre disse trin skal du først fuldføre trinnene i opgaveguiden "Oprette en ER-konfiguration til generering af rapporter i OPENXML-format". På forhånd skal du også hente og gemme følgende skabeloner lokalt for eksempelrapporten:
 
-[Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Bundet skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Bundet skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Denne fremgangsmåde er til en funktion, der blev tilføjet i Microsoft Dynamics 365 for Operations version 1611.
 
@@ -49,7 +50,7 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Microsoft Dynamics
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Erstat Excel-skabelonen med Word-skabelonen
     * Aktuelt bruges Excel-dokumentet som en skabelon til at generere outputtet i OPENXML-format. Vi importerer rapportens skabelon i Word-format.  
 1. Klik på Vedhæftede filer.
-    * Erstat den eksisterende Excel-skabelon med Word-skabelonen, som du downloadede tidligere, Skabelon for betalingsrapport. Bemærk, at denne skabelon kun indeholder layoutet på det dokument, vi vil generere som ER-output.  
+    * Erstat den eksisterende Excel-skabelon med Word-skabelonen, som du downloadede tidligere, SampleVendPaymDocReport.docx. Bemærk, at denne skabelon kun indeholder layoutet på det dokument, vi vil generere som ER-output.  
 2. Klik på Slet.
 3. Klik på Ja.
 4. Klik på Ny.

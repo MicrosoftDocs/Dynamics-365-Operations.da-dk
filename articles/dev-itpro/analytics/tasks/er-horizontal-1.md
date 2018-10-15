@@ -1,28 +1,29 @@
 --- 
-title: "Designe formater til dynamisk at tilføje kolonnerne i Excel-rapporter som vandret udvidelige områder"
+title: "ER Bruge vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 1: Designformat)"
 description: "Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 80cd2603ba5ee47f861077d75a955037ffbde96e
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7f0481a09e2ff4ae06fc53011067050c3373d6bc
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-formats-to-dynamically-add-columns-to-excel-reports-as-horizontally-expandable-ranges"></a>Designe formater til dynamisk at tilføje kolonnerne i Excel-rapporter som vandret udvidelige områder
+# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format"></a>ER Brug vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 1: Designformat)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -36,8 +37,7 @@ Du skal først udføre disse tre opgaveguider for at fuldføre disse trin:
 
 "ER Bruge økonomiske dimensioner som en datakilde (del 2: Modeltilknytning)"
 
-Du skal hente og gemme en lokal kopi af skabelonen med et eksempel på en rapport findes her, [https://go.microsoft.com/fwlink/?linkid=862266](https://go.microsoft.com/fwlink/?linkid=862266). 
-
+Du skal også hente og gemme en lokal kopi af skabelonen med et rapporteksempel, du finder her: [Eksempel på økonomisk dimensions webtjenesterapport](https://go.microsoft.com/fwlink/?linkid=862266).
 
 Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 

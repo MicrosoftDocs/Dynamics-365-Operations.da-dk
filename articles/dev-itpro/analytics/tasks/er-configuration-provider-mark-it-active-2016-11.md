@@ -3,23 +3,24 @@ title: Oprette konfigurationsudbydere og markere dem som aktive
 description: "Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Oprette konfigurationsudbydere og markere dem som aktive
@@ -33,10 +34,11 @@ Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator ell
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.
 2. Klik på Konfigurationsudbydere.
 3. Klik på Ny.
-    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (`http://www.litware.com`).  
+    * En udbyderpost har et entydigt ved navn og URL-adresse. Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (http://www.litware.com).  
 4. Skriv "Litware, Inc." i feltet Navn.
     * Litware, Inc.  
-5. Indtast `http://www.litware.com` i feltet Internetadresse.
+5. Indtast 'http://www.litware.com' i feltet Internetadresse.
+    * http://www.litware.com  
 6. Klik på Gem.
 7. Luk siden.
 

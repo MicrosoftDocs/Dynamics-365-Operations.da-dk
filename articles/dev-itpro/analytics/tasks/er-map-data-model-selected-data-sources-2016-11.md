@@ -1,32 +1,33 @@
 --- 
-title: Tilknytte datamodeller til elektronisk rapportering (ER) til udvalgte datakilder
-description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan tilknytte en datamodel for elektronisk rapportering (ER) til valgte datakilder i Dynamics 365 for Finance and Operations, Enterprise edition (november 2016)."
+title: Tilknyt ER-datamodel til markerede datakilder
+description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan tilknytte en datamodel for elektronisk rapportering (ER) til valgte Dynamics 365 for Finance and Operations, Enterprise edition-datakilder."
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: f347c19d940330c830509be4d11127f9e3324deb
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 249bf3f3806ed43eccf39086bdf9697a3e879c27
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="map-electronic-reporting-er-data-models-to-selected-data-sources"></a>Tilknytte datamodeller til elektronisk rapportering (ER) til udvalgte datakilder
+# <a name="er-map-data-model-to-selected-data-sources"></a>Tilknyt ER-datamodel til markerede datakilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan tilknytte en datamodel for elektronisk rapportering (ER) til valgte Dynamics 365 for Finance and Operations-datakilder. Denne modeltilknytning bruges senere som datakilde i en formatkonfiguration, der skal bruges til at administrere elektroniske betalingsdokumenter. I dette eksempel skal du tilknytte en datamodel for eksempelfirmaet Litware, Inc. til datakilder. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren "Vælg datakilder til modeltilknytning".
+Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan tilknytte en datamodel for elektronisk rapportering (ER) til valgte Dynamics 365 for Finance and Operations, Enterprise edition-datakilder. Denne modeltilknytning bruges senere som datakilde i en formatkonfiguration, der skal bruges til at administrere elektroniske betalingsdokumenter. I dette eksempel skal du tilknytte en datamodel for eksempelfirmaet Litware, Inc. til datakilder. For at fuldføre disse trin skal du først fuldføre trinnene i proceduren "Vælg datakilder til modeltilknytning".
 
 
 ## <a name="open-er-configurations-tree"></a>Åbn ER-konfigurationstræ

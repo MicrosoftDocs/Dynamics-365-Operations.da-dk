@@ -1,28 +1,29 @@
 --- 
-title: "Bogføre en projektfaktura med et indbetalingskort (Danmark)"
+title: "Bogføre en projektfaktura med et indbetalingskort"
 description: "Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 05/09/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustTable, ProjProjectContractsListPage, ProjInvoiceTableCreate, ProjInvoiceTable, ProjProjectsListPage, ProjTableCreate, ProjGroupLookUp, ProjTable,  ProjTransOnAcc, ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 018d4b0d9c96b8a0de9334e837be4367fbcc5ddd
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 641aa65e2d2b8bbb8e94cb25868a8dfa6e811bab
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="post-a-project-invoice-with-a-payment-slip-denmark"></a>Bogføre en projektfaktura med et indbetalingskort (Danmark)
+# <a name="post-a-project-invoice-with-a-payment-slip"></a>Bogføre en projektfaktura med et indbetalingskort
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,28 +1,29 @@
 --- 
-title: Importere en remburs
+title: "Importér remburs"
 description: "Denne procedure fører dig gennem processen med at importere en remburs."
 author: kweekley
 manager: AnnBe
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 02be2627186a149a05eaccfa3e5906a9fe1d74dd
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="import-a-letter-of-credit"></a>Importere en remburs
+# <a name="import-letter-of-credit"></a>Importér remburs
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -110,7 +111,8 @@ Denne procedure bruger demofirmaet USMF.
 1. Gå til Likviditets- og bankstyring > Remburser > Importremburs og importinkasso.
 2. Find og vælg den ønskede post på listen.
 3. Klik op linket i den valgte række på listen.
-    * Bekræft status for importrembursen.  
+    * Bekræft status for importrembursen.    
+    *   
 4. Luk siden.
 5. Luk siden.
 

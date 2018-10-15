@@ -38,12 +38,18 @@
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Livscykluspolitik for software og lokale versioner
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
-            - name: Fjernede eller frarådede funktioner
+            - name: Afslutning af generel support til Microsoft Dynamics AX 2009 og 2012
+              href: get-started/mainstream-support-ax-2009-2012.md
+            - name: Fjernede eller udfasede funktioner
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: 'AX 2012-funktioner, der er udsat'
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations version 8.1 (oktober 2018)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (september 2018)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations version 8.0 (april 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (marts 2018)
@@ -456,6 +462,10 @@
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturasammenholdelse og interne indkøbsordrer
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Konfigurere politikker for kreditorfakturaer
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Registrere kreditorfaktura og sammenligne med modtaget antal
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Oversigt over positive betalinger
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Konfigurere og generere filer til positive betalinger
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Behandle rente
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Konfigurere politikker for kreditorfakturaer
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: Registrere kreditorfaktura og sammenligne med modtaget antal
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Oprette en debitorfaktura
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: Deponere debitorbetalinger
@@ -596,7 +602,9 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Opsætte og generere aldersfordelte oplysninger om debitorer
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Arbejdsgang for kunde
+            - name: Kopiere debitorer ved hjælp af delte nummerserier
+              href: ../financials/accounts-receivable/copy-customer.md
+            - name: Arbejdsgang for debitor
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Betalinger og udligninger
               items:
@@ -1543,8 +1551,6 @@
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Kassation af anlægsaktiver for Estland og Litauen
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Værdiregulering af udenlandsk valuta
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Generere et overførselsdokument for en intern lageroverførsel
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Generere en EU-listesystemrapport
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Udvidelse af kassationsfunktionalitet for anlægsaktiv
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Værdiregulering af udenlandsk valuta
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: 'Emballage, der kan returneres'
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Momsrapportér
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Omsætningssaldoopgørelse
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Rusland
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Forskudshavere
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Oprette en forskudshaver
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Daglige handlinger for forskudshavere
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Anlægsaktiver
+              items:
+                - name: Anskaffe anlægsaktiver og igangsætte dem
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Oprette og bogføre budgetkladder for anskaffelser af anlægsaktiver
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Optælling af anlægsaktiver
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Værdiregulering af valuta for anlægsaktiver
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Delvis adskillelse af anlægsaktiv (afvikling)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Oprette og behandle betalingsordrer
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Angive valutakurser for valutatransaktioner
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Forhåndsvisning af finanstransaktioner
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Konfigurere funktionærer
+              href: ../financials/localizations/rus-officials.md
+            - name: Konfigurere bankkonti
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Moms for momsmedarbejdere
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Konfigurere dimensionsstyring for udligninger
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Vekselindstillinger
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Beregne forfaldsdatoer og rapporten over den gennemsnitlige betalingsperiode
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Betinget moms
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Fakturakreditering
@@ -2197,7 +2243,7 @@
               href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
             - name: Konfigurere momsgrupper til modtagermoms
               href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-        - name: Amerikas Forenede Stater
+        - name: USA
           href: ../financials/localizations/united-states.md
           items:
             - name: Årsafslutnings 1099-rapportering i USA

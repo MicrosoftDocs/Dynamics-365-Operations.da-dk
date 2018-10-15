@@ -1,28 +1,29 @@
 --- 
-title: Konfigurere indbetalingskortformat (Danmark)
+title: Konfigurere indbetalingskortformat
 description: "Virksomheder vedhæfter normalt udskrevne indbetalingskort til fakturaer for at hjælpe kunderne og angive en betalingsreference til brug ved bogføring og betaling."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f7007874352aff39c3d4003f3bd983b4330b15ec
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: d548fbb1cb1c52d657e055d972a673c78f5a89f0
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-payment-slip-format-denmark"></a>Konfigurere indbetalingskortformat (Danmark)
+# <a name="set-up-payment-slip-format"></a>Konfigurere indbetalingskortformat
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
