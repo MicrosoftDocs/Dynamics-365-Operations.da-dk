@@ -3,44 +3,45 @@ title: "Konfigurere transportbegrænsninger for en vare"
 description: "Denne procedure skal oprette en transportbegrænsning for at forhindre, at en valgt vare transporteres gennem en valgt hub."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: c7a160ca2ba3de16fe2aefc736f6f1e0bbbd5af0
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 900ea1476c95d295a151125afe46aebd9642630e
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="0daff-103">Konfigurere transportbegrænsninger for en vare</span><span class="sxs-lookup"><span data-stu-id="0daff-103">Set up transportation constraints for an item</span></span>
+# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="f5b01-103">Konfigurere transportbegrænsninger for en vare</span><span class="sxs-lookup"><span data-stu-id="f5b01-103">Set up transportation constraints for an item</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="0daff-104">Denne procedure skal oprette en transportbegrænsning for at forhindre, at en valgt vare transporteres gennem en valgt hub.</span><span class="sxs-lookup"><span data-stu-id="0daff-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="0daff-105">Denne opgave vil typisk blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="0daff-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="0daff-106">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="0daff-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
+<span data-ttu-id="f5b01-104">Denne procedure skal oprette en transportbegrænsning for at forhindre, at en valgt vare transporteres gennem en valgt hub.</span><span class="sxs-lookup"><span data-stu-id="f5b01-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="f5b01-105">Denne opgave vil typisk blive udført af en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="f5b01-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="f5b01-106">Du kan bruge denne procedure på USMF-demodatafirmaet eller dine egne data.</span><span class="sxs-lookup"><span data-stu-id="f5b01-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
 
 
-## <a name="create-an-item-constraint"></a><span data-ttu-id="0daff-107">Oprette en varebegrænsning</span><span class="sxs-lookup"><span data-stu-id="0daff-107">Create an item constraint</span></span>
-1. <span data-ttu-id="0daff-108">Gå til Begrænsninger.</span><span class="sxs-lookup"><span data-stu-id="0daff-108">Go to Constraints.</span></span>
-2. <span data-ttu-id="0daff-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="0daff-109">Click New.</span></span>
-3. <span data-ttu-id="0daff-110">Indtast en værdi i feltet Varebegrænsning.</span><span class="sxs-lookup"><span data-stu-id="0daff-110">In the Item constraint field, type a value.</span></span>
-4. <span data-ttu-id="0daff-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="0daff-111">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="0daff-112">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="0daff-112">In the Site field, enter or select a value.</span></span>
-6. <span data-ttu-id="0daff-113">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="0daff-113">In the Warehouse field, enter or select a value.</span></span>
-7. <span data-ttu-id="0daff-114">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="0daff-114">In the Item number field, enter or select a value.</span></span>
-8. <span data-ttu-id="0daff-115">Indtast eller vælg en værdi i feltet Hub.</span><span class="sxs-lookup"><span data-stu-id="0daff-115">In the Hub field, enter or select a value.</span></span>
-9. <span data-ttu-id="0daff-116">Vælg en indstilling i feltet Begrænsningshandling.</span><span class="sxs-lookup"><span data-stu-id="0daff-116">In the Constraint action field, select an option.</span></span>
-10. <span data-ttu-id="0daff-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="0daff-117">Click Save.</span></span>
-11. <span data-ttu-id="0daff-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="0daff-118">Close the page.</span></span>
+## <a name="create-an-item-constaint"></a><span data-ttu-id="f5b01-107">Oprette en varebegrænsning</span><span class="sxs-lookup"><span data-stu-id="f5b01-107">Create an item constaint</span></span>
+1. <span data-ttu-id="f5b01-108">Gå til Begrænsninger.</span><span class="sxs-lookup"><span data-stu-id="f5b01-108">Go to Constraints.</span></span>
+2. <span data-ttu-id="f5b01-109">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="f5b01-109">Click New.</span></span>
+3. <span data-ttu-id="f5b01-110">Indtast en værdi i feltet Varebegrænsning.</span><span class="sxs-lookup"><span data-stu-id="f5b01-110">In the Item constraint field, type a value.</span></span>
+4. <span data-ttu-id="f5b01-111">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="f5b01-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="f5b01-112">Indtast eller vælg en værdi i feltet Lokation.</span><span class="sxs-lookup"><span data-stu-id="f5b01-112">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="f5b01-113">Indtast eller vælg en værdi i feltet Lagersted.</span><span class="sxs-lookup"><span data-stu-id="f5b01-113">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="f5b01-114">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="f5b01-114">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="f5b01-115">Indtast eller vælg en værdi i feltet Hub.</span><span class="sxs-lookup"><span data-stu-id="f5b01-115">In the Hub field, enter or select a value.</span></span>
+9. <span data-ttu-id="f5b01-116">Vælg en indstilling i feltet Begrænsningshandling.</span><span class="sxs-lookup"><span data-stu-id="f5b01-116">In the Constraint action field, select an option.</span></span>
+10. <span data-ttu-id="f5b01-117">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="f5b01-117">Click Save.</span></span>
+11. <span data-ttu-id="f5b01-118">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="f5b01-118">Close the page.</span></span>
 
 

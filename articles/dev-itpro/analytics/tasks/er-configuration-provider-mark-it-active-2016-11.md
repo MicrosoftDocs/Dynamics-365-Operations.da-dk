@@ -3,45 +3,47 @@ title: Oprette konfigurationsudbydere og markere dem som aktive
 description: "Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 37957f224cb57fd9f6c5014740bcea124a99a03a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-configuration-providers-and-mark-them-as-active"></a><span data-ttu-id="b2281-103">Oprette konfigurationsudbydere og markere dem som aktive</span><span class="sxs-lookup"><span data-stu-id="b2281-103">Create configuration providers and mark them as active</span></span>
+# <a name="create-configuration-providers-and-mark-them-as-active"></a><span data-ttu-id="3d37a-103">Oprette konfigurationsudbydere og markere dem som aktive</span><span class="sxs-lookup"><span data-stu-id="3d37a-103">Create configuration providers and mark them as active</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b2281-104">Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="b2281-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER).</span></span> <span data-ttu-id="b2281-105">Hver ER-konfiguration refererer til udbyderen som konfigurations forfatter.</span><span class="sxs-lookup"><span data-stu-id="b2281-105">Each ER configuration will refer to the provider as the author of the configuration.</span></span> <span data-ttu-id="b2281-106">I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i alle virksomheder, da ER-konfigurationsudbydere deles af alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="b2281-106">In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.</span></span>
+<span data-ttu-id="3d37a-104">Følgende trin forklarer, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en konfigurationsudbyder til elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="3d37a-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER).</span></span> <span data-ttu-id="3d37a-105">Hver ER-konfiguration refererer til udbyderen som konfigurations forfatter.</span><span class="sxs-lookup"><span data-stu-id="3d37a-105">Each ER configuration will refer to the provider as the author of the configuration.</span></span> <span data-ttu-id="3d37a-106">I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirmaet Litware, Inc. Denne fremgangsmåde kan udføres i alle virksomheder, da ER-konfigurationsudbydere deles af alle firmaer.</span><span class="sxs-lookup"><span data-stu-id="3d37a-106">In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.</span></span>
 
 
-## <a name="create-a-provider"></a><span data-ttu-id="b2281-107">Opret en udbyder</span><span class="sxs-lookup"><span data-stu-id="b2281-107">Create a provider</span></span>
-1. <span data-ttu-id="b2281-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="b2281-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="b2281-109">Klik på Konfigurationsudbydere.</span><span class="sxs-lookup"><span data-stu-id="b2281-109">Click Configuration providers.</span></span>
-3. <span data-ttu-id="b2281-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="b2281-110">Click New.</span></span>
-    * <span data-ttu-id="b2281-111">En udbyderpost har et entydigt ved navn og URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="b2281-111">A provider record has a unique name and URL.</span></span> <span data-ttu-id="b2281-112">Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (`http://www.litware.com`).</span><span class="sxs-lookup"><span data-stu-id="b2281-112">Review the content of this page and skip this procedure if a record for Litware, Inc. (`http://www.litware.com`) already exists.</span></span>  
-4. <span data-ttu-id="b2281-113">Skriv "Litware, Inc." i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="b2281-113">In the Name field, type 'Litware, Inc.'.</span></span>
-    * <span data-ttu-id="b2281-114">Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="b2281-114">Litware, Inc.</span></span>  
-5. <span data-ttu-id="b2281-115">Indtast `http://www.litware.com` i feltet Internetadresse.</span><span class="sxs-lookup"><span data-stu-id="b2281-115">In the Internet address field, type `http://www.litware.com`.</span></span>
-6. <span data-ttu-id="b2281-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b2281-116">Click Save.</span></span>
-7. <span data-ttu-id="b2281-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="b2281-117">Close the page.</span></span>
+## <a name="create-a-provider"></a><span data-ttu-id="3d37a-107">Opret en udbyder</span><span class="sxs-lookup"><span data-stu-id="3d37a-107">Create a provider</span></span>
+1. <span data-ttu-id="3d37a-108">Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="3d37a-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="3d37a-109">Klik på Konfigurationsudbydere.</span><span class="sxs-lookup"><span data-stu-id="3d37a-109">Click Configuration providers.</span></span>
+3. <span data-ttu-id="3d37a-110">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="3d37a-110">Click New.</span></span>
+    * <span data-ttu-id="3d37a-111">En udbyderpost har et entydigt ved navn og URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="3d37a-111">A provider record has a unique name and URL.</span></span> <span data-ttu-id="3d37a-112">Gennemse indholdet af denne side, og spring denne procedure over, hvis der allerede findes en post for Litware, Inc. (http://www.litware.com).</span><span class="sxs-lookup"><span data-stu-id="3d37a-112">Review the content of this page and skip this procedure if a record for Litware, Inc. (http://www.litware.com) already exists.</span></span>  
+4. <span data-ttu-id="3d37a-113">Skriv "Litware, Inc." i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="3d37a-113">In the Name field, type 'Litware, Inc.'.</span></span>
+    * <span data-ttu-id="3d37a-114">Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="3d37a-114">Litware, Inc.</span></span>  
+5. <span data-ttu-id="3d37a-115">Indtast 'http://www.litware.com' i feltet Internetadresse.</span><span class="sxs-lookup"><span data-stu-id="3d37a-115">In the Internet address field, type 'http://www.litware.com'.</span></span>
+    * http://www.litware.com  
+6. <span data-ttu-id="3d37a-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="3d37a-116">Click Save.</span></span>
+7. <span data-ttu-id="3d37a-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="3d37a-117">Close the page.</span></span>
 
-## <a name="select-as-an-active-provider"></a><span data-ttu-id="b2281-118">Vælg en aktiv udbyder</span><span class="sxs-lookup"><span data-stu-id="b2281-118">Select as an active provider</span></span>
-1. <span data-ttu-id="b2281-119">Vælg udbyderen Litware, Inc., .</span><span class="sxs-lookup"><span data-stu-id="b2281-119">Select the Litware, Inc. provider.</span></span>
-2. <span data-ttu-id="b2281-120">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="b2281-120">Click Set active.</span></span>
+## <a name="select-as-an-active-provider"></a><span data-ttu-id="3d37a-118">Vælg en aktiv udbyder</span><span class="sxs-lookup"><span data-stu-id="3d37a-118">Select as an active provider</span></span>
+1. <span data-ttu-id="3d37a-119">Vælg udbyderen Litware, Inc., .</span><span class="sxs-lookup"><span data-stu-id="3d37a-119">Select the Litware, Inc. provider.</span></span>
+2. <span data-ttu-id="3d37a-120">Klik på Angiv som aktiv.</span><span class="sxs-lookup"><span data-stu-id="3d37a-120">Click Set active.</span></span>
 
 

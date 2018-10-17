@@ -6,6 +6,14 @@
       items:
         - name: Nyheder eller ændringer
           items:
+            - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (1. oktober 2018)
+              href: whats-new-talent-october-01.md
+            - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (24. september 2018)
+              href: whats-new-talent-september-24.md
+            - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (17. september 2018)
+              href: whats-new-talent-september-17-2018.md
+            - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (10. september 2018)
+              href: whats-new-talent-september-10.md
             - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (august 2018)
               href: whats-new-talent-august2018.md
             - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (juli 2018)
@@ -20,10 +28,14 @@
           href: modular-app-tech-faq.md
         - name: Integrere PowerApps-apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Core HR og Common Data Service for Apps
+          href: CoreHREntities.md
         - name: Åbne eksempelfunktioner
           href: access-preview-feature.md
         - name: Konfigurere lønintegrationen mellem Talent og Dayforce
           href: configure-payroll-integration.md
+        - name: Få support til Talent
+          href: talent-support.md
     - name: 'Organisere dit personale ud fra afdelinger, job og stillinger'
       href: departments-jobs-positions.md
       items:
@@ -41,11 +53,16 @@
           href: formalize-business-processes.md
         - name: Bruge arbejdsgange til at administrere medarbejderoplysninger
           href: workflow-manage-employee-information.md
-        - name: Administration af orlov og fravær
-          href: leave-absence-overview.md
+    - name: Administrere orlov og fravær
+      href: leave-absence-overview.md
+      items:
+        - name: Periodisere fravær baseret på antal arbejdstimer
+          href: leave-accrue-hours-worked.md
+        - name: Arbejdstidskalendere
+          href: working-time-calendars.md
     - name: Bemande din organisation
       items:
-        - name: Tiltrække funktioner og egenskaber
+        - name: Attract-funktioner og -egenskaber
           href: attract-overview.md
         - name: Skabe en spændende onboardingoplevelse
           href: create-onboarding-experience.md
@@ -59,11 +76,13 @@
           href: create-variable-compensation-plans.md
         - name: Behandle kompensation
           href: process-compensation.md
+        - name: Konfigurere komponenterne i et job
+          href: create-job.md
     - name: Udvikle og undervise medarbejdere
       items:
         - name: Performancestyring
           href: performance-management-overview.md
-        - name: Justere arbejdsstyrkens færdigheder efter forretningsbehov
+        - name: Justere arbejdsstyrkens færdigheder med forretningsbehov
           href: skills.md
         - name: Konfigurere kurser
           href: courses.md
