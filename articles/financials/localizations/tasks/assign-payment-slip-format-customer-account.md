@@ -1,28 +1,29 @@
 --- 
-title: Tildele et indbetalingskortformat til en debitorkonto (Danmark)
+title: Tildele et indbetalingskortformat til en debitorkonto
 description: "Denne procedure fører dig gennem oprettelse af formatet for vedhæftningen af indbetalingskortet for en udvalgt debitor."
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 02/16/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 11c522b69bc9c27ef8d8586f91a1fc5cf937a626
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4cb2ee23b9fa8ef94e00020120ee9a93208cbc7e
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="assign-a-payment-slip-format-to-a-customer-account-denmark"></a>Tildele et indbetalingskortformat til en debitorkonto (Danmark)
+# <a name="assign-a-payment-slip-format-to-a-customer-account"></a>Tildele et indbetalingskortformat til en debitorkonto
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

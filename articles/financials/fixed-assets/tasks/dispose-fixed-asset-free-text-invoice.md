@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/24/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Fjerne et anlægsaktiv ved hjælp af en fritekstfaktura
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du henter et anlægsaktiv ved hjælp af anskaffelsesforslaget i anlægsaktivkladden. Den bruger rollen Revisor og demodata for den juridiske enhed USMF.
+Denne fremgangsmåde viser, hvordan du kasserer et anlægsaktiv ved hjælp af fritekstfakturaen.
 
-1. Gå til Anlægsaktiver > Kladdepostering > Anlægsaktivkladde.
+1. Gå til Debitor > Fakturaer > Alle fritekstfakturaer.
 2. Klik på Ny.
-3. Indtast eller vælg en værdi i feltet Navn.
-4. Klik på Linjer.
-5. Klik på Forslag.
-6. Klik på Anskaffelsesforslag.
-7. Klik på Filtrér.
-8. Klik på Nulstil for at rydde tidligere værdier.
-9. Vælg rækken med anlægsaktivnummeret.
-10. Indtast eller vælg en værdi i feltet Kriterier.
-    * Angiv de resterende kriterier for anlægsaktiverne, du vil hente med dette forslag.  
-11. Klik på OK.
-12. Klik på OK.
-    * Bekræft de oprettede transaktionslinjer.  
-    * Kun anlægsaktiver med anskaffelsesdatoen og anskaffelsesprisen angivet i bogen medtages i anskaffelsesforslaget.  
-13. Klik på fanen Bøger.
-14. Klik på Bogfør.
+3. Indtast eller vælg en værdi i feltet Kundekonto.
+4. Kontrollér standardfakturadatoen, og rediger den evt.
+5. Kontrollér resterende standardoverskriftsfelter som f.eks. Valuta, og rediger evt.
+6. Indtast en beskrivelse på fakturalinjen.
+7. Indtast eller vælg hovedkontoen til fakturalinjen.
+8. Kontrollér standardmomsgruppen og varemomsgruppen.
+9. Angiv enhedsprisen eller beløbet for salg af anlægsaktivet.
+10. Klik på Linjedetaljer.  
+11. Vælg anlægsaktivnummeret, der skal sælges.
+12. Klik på Bogfør.
 
 

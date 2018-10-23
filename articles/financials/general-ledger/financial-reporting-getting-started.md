@@ -3,7 +3,7 @@ title: "Økonomirapportering"
 description: "I dette emne beskrives, hvor du kan få adgang til økonomirapportering i Microsoft Dynamics 365 for Finance and Operations, og hvordan du bruger funktionerne til økonomirapportering. Den indeholder en beskrivelse af de økonomirapporter, der findes."
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -115,11 +115,13 @@ Når en bruger er tilføjet, eller en rolle er ændret, bør brugeren kunne få 
 Når du klikker på menuen **Økonomirapportering**, vises listen over økonomiske standardrapporter for firmaet. Du kan derefter åbne eller redigere en rapport. Vælg navnet på rapporten for at åbne en af standardrapporterne. Første gang en rapport åbnes, genereres den automatisk for den foregående måned. For eksempel, hvis du åbner en rapport for første gang i august 2016, oprettes rapporten for 31. juli 2016. Når en rapport er åben, kan du begynde at udforske den ved at foretage detailudledning for bestemte data og ændre rapportindstillinger.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Oprettelse og redigering af økonomiske rapporter
-Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at klikke på **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du har brugt i Finance and Operations. Du kan finde flere oplysninger om processen til oprettelse og redigering af økonomirapporter i Finance and Operations i disse [blogindlæg](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) fra bloggen Dynamics Financial Reporting. **Bemærk!** Den computer, du henter rapportdesignerklienten ned på, skal have version 4.6.2 af Microsoft.NET Framework installeret. Denne version af Microsoft .NET Framework kan hentes og installeres [her](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan også redigere en rapport, der vises på listen over økonomiske rapporter. Når området omkring rapportnavnet er markeret, skal du klikke på **Rediger** i handlingsruden. Rapportdesignerprogrammet starter.
+Du kan oprette en ny rapport eller ændre en eksisterende rapport på listen over økonomiske rapporter. Hvis du har de nødvendige tilladelser, kan du oprette en ny økonomirapport ved at klikke på **Ny** i handlingsruden. Et rapportdesignerprogram overføres til din enhed. Du kan oprette den nye rapport, når rapportdesigneren er startet. Når du har gemt den nye rapport, vises den på listen over økonomiske rapporter. Listen viser kun rapporter, der er oprettet for det firma, du har brugt i Finance and Operations. 
+
+> [!NOTE] 
+> Den computer, du henter rapportdesignerklienten ned på, skal have version 4.6.2 af Microsoft .NET Framework installeret. Denne version af Microsoft .NET Framework kan hentes og installeres fra [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Hvis du bruger Chrome, skal du installere en ClickOnce-udvidelse for at hente rapportdesigner-klienten. Hvis du kører i incognito-tilstand, skal du kontrollere, at ClickOnce-udvidelsen er aktiveret til incognito-tilstand. Du kan også redigere en rapport, der vises på listen over økonomiske rapporter. Når området omkring rapportnavnet er markeret, skal du klikke på **Rediger** i handlingsruden. Rapportdesignerprogrammet starter.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 - [Se økonomiske rapporter](view-financial-reports.md)
-- [Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

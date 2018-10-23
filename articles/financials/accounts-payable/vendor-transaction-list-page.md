@@ -1,6 +1,6 @@
 ---
-title: Listesiden Kreditortransaktion
-description: Dette emne indeholder oplysninger om listesiden Kreditortransaktion til Microsoft Dynamics 365 for Finance and Operations.
+title: "Listeside med leverandørtransaktioner"
+description: Dette emne indeholder oplysninger om listesiden Kreditorposteringer til Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
@@ -14,36 +14,88 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
-ms.search.validFrom: 2018-08-30
-ms.dyn365.ops.version: 8.0.4
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
-ms.openlocfilehash: 1ef7d97f059801f2fb2c0d451546b57055208f81
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 53740f6ed0d463de5ba962f1ba15b208634a0739
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/31/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
-# <a name="vendor-transaction-list-page"></a>Listesiden Kreditortransaktion
+# <a name="vendor-transactions-list-page"></a>Listeside med leverandørtransaktioner
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="view-settlements"></a>Vis udligninger
 
-Fanen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningshistorikken og yderligere oplysninger om hele udligningsposteringen. Du kan også vise ekstra posteringer, der vedrører den valgte postering, enten fordi de var en del af samme udligning, eller fordi de er betalinger, der er oprettet i samme betalingskladde.
+Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningshistorikken og yderligere oplysninger om hele udligningsposteringen. Du kan også vise ekstra posteringer, der vedrører den valgte postering, enten fordi de var en del af samme udligning, eller fordi de er betalinger, der er oprettet i samme betalingskladde.
 
 1. Vælg **Kreditor \> Alle kreditorer**.
-2. Vælg en kreditor med posteringer, og vælg derefter **Kreditor \> Transaktioner**.
-3. Vælg en postering, der skal undersøges.
-4. Vælg fanen **Vis udligninger** i handlingsruden.
+2. Vælg en kreditor med posteringer, og brug derefter handlingsruden under fanen **Kreditor** til at vælge **Posteringer**.
+3. Vælg en postering til undersøgelse, og vælg derefter **Vis udligninger** i handlingsruden.
 
-    Dialogboksen **Vis udligninger** åbnes og viser den valgte postering og alle dokumenter, der er udlignet mod den. Denne dialogboks ligner udligningshistorikvisningen, men den omfatter alle relaterede dokumenter.
+    Dialogboksen **Vis udligninger** viser den valgte postering og alle dokumenter, der er udlignet mod den. Denne dialogboks ligner udligningshistorikvisningen, men den omfatter alle relaterede dokumenter.
 
-5. Du kan udføre forskellige opgaver i denne dialogboks. Vælg en eller flere bilag, og vælg derefter en af følgende menuer:
+4. Du kan udføre forskellige opgaver i dialogboksen. Vælg et eller flere bilag, og vælg derefter en af følgende knapper:
 
-   - **Vis regnskab** – Alle bilag, der har relation til de valgte dokumenter, vises. Vælg **Luk** for at lukke dialogboksen.
-   - **Eksporter** – Eksporter de valgte bilag til Microsoft Excel.
-   - **Vis relaterede betalinger** – Alle betalingskladdeposterne, der er oprettet i den betalingskladde, som er relateret til det valgte dokument, vises. Derudover vises alle de udligninger, der er knyttet til disse betalinger. Navnet på denne menu ændres også til **Vis udligninger**. Vælg **Vis udligninger** for kun at vise de posteringer, der blev vist, da du oprettede dialogboksen **Vis udligninger**.
-    - **Udlign posteringer** – Denne menu vises, hvis det oprindelige dokument, der blev valgt, ikke blev fuldt udlignet. Når du vælger det, vises dialogboksen **Udlign posteringer**, hvor du kan vælge transaktioner til udligning.
-    - **Fortryd udligning** – Denne menu vises, hvis det oprindelige dokument, der blev valgt, blev fuldt udlignet. Når du vælger det, vises dialogboksen **Fortryd udligning**, hvor du kan fortryde udligninger, der blev udført for det pågældende dokument.
+    - **Vis relateret** – Vis alle betalingskladdeposteringer, der er oprettet i den betalingskladde, som er relateret til det valgte dokument. Derudover vises alle de udligninger, der er knyttet til disse betalinger. Mens du får vist relaterede betalinger, ændres navnet på denne knap til **Vis udligninger**. Vælg **Vis udligninger** for kun at se de posteringer, der blev vist, da du åbnede dialogboksen **Vis udligninger**.
+    - **Vis historik** – Få vist udligningshistorik for bilagene. Vælg **Luk** for at lukke dialogboksen.
+    - **Vis regnskab** – Vis alle bilag, der har relation til de valgte dokumenter. Vælg **Luk** for at lukke dialogboksen.
+    - **Eksporter** – Eksporter de valgte bilag til Microsoft Excel.
+    - **Udlign posteringer** – Denne knap vises kun, hvis det oprindelige dokument, der blev valgt, ikke blev fuldt udlignet. Når du vælger denne knap, vises dialogboksen **Udlign posteringer**, hvor du kan vælge posteringer til udligning.
+    - **Fortryd udligning** – Denne knap vises kun, hvis det oprindelige dokument, der blev valgt, blev fuldt udlignet. Når du vælger denne knap, vises dialogboksen **Fortryd udligning**, hvor du kan fortryde udligninger, der blev udført for det pågældende dokument.
+
+## <a name="global-transactions"></a>Globale transaktioner
+
+Knappen **Globale transaktioner**er føjet til leverandøren. Med denne knap kan du få vist alle posteringer for en juridisk enhed på tværs af alle juridiske enheder. **Kreditorposteringer**-listesiden viser kun transaktioner for de juridiske enheder, som brugeren har adgang til, på basis af vedkommendes sikkerhedsindstillinger.
+
+Listesiden viser alle transaktioner for leverandører, der har samme part-id som den leverandør, du startede med. Hvis leverandøren US-001 i én juridisk enhed har samme part-id som leverandøren DE-001 i en anden juridisk enhed, vises alle transaktioner for begge leverandør-id'er.
+
+Menuerne på **Kreditorposteringer**-listesiden varierer, afhængigt af den juridiske enhed for posteringen. Hvis en funktion f.eks. kun er tilgængelig for danske juridiske enheder, vises menuindstillinger for denne funktion kun, når en dansk postering er valgt.
+
+Følg disse trin for at få adgang til funktionen.
+
+1. Vælg **Kreditor** \> **Alle kreditorer**.
+2. Vælg en kreditor, og brug derefter handlingsruden under fanen **Kreditor** i gruppen **Transaktioner** til at vælge **Globale transaktioner**.
+
+## <a name="more-transaction-filters"></a>Flere transaktionsfiltre
+
+Filteret til at vise åbne transaktioner er blevet erstattet med et nyt filter, så du kan få vist flere kombinationer af transaktioner. Du kan vælge mellem følgende indstillinger i feltet **Vis**:
+
+- **Alle** – Vis alle transaktioner for de valgte kreditorer (åbne og lukkede).
+- **Lukkede** – Vis kun de transaktioner, der er fuldt udlignet og lukket.
+- **Åbne** – Vis kun de transaktioner, der ikke er fuldt udlignet.
+- **Åben pr. dato** – Vis kun de transaktioner, der ikke er udlignet fuldt ud fra en dato, du angiver. Når du vælger denne indstilling, kan du ændre den dato, der vises ud for filteret. Transaktioner, der har værdien **Sidste udligningsdato** efter den dato, du angiver, vises på listen, selvom disse transaktioner er fuldt udlignet pr. dags dato. Saldoen viser dog saldi pr. dags dato, ikke fra den valgte dato.
+
+Et filter er også tilføjet, så du kan skjule transaktioner for valutaomregning. Markér afkrydsningsfeltet **Skjul værdireguleringer af valuta**.
+
+## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Lettere at redigere forfaldsdatoer og rabatdatoer
+
+Du kan opdatere forfaldsdatoer og rabatdatoer for åbne debitorposteringer. I version 8.1 er funktionen forbedret. Du kan nu tilføje forfaldsdatoer på listesiden **Kreditorposteringer**. Ved at klikke på forfaldsdatoen på **Kreditorposteringer**-listesiden kan du også ændre forfaldsdatoer, rabatdatoer, betalingsbetingelser og kasserabatvilkår i dialogboksen **Opdater forfaldsdato og kasserabatdatoer**.
+
+### <a name="activate-the-feature"></a>Aktivér funktionen
+
+Hvis du vil tilføje forfaldsdatoer på **Kreditorposteringer**-listesiden og ændre betalingsindstillingerne for en transaktion i dialogboksen **Opdater forfaldsdato og kasserabatdatoer**, skal du følge disse trin.
+
+1. Vælg **Kreditor \> Opsætning \> Kreditorparametre**.
+2. På fanen **Udligninger** skal du angive indstillingen **Vis forfaldsdato, og tillad redigering** til **Ja**.
+3. For at aktivere denne funktion er der tilføjet nye felter i kreditorposteringer. Disse felter skal udfyldes, når en ny postering fuldføres. De vil også blive udfyldt, når du åbner dialogboksen **Opdater forfaldsdato og kasserabatdatoer**. Når du angiver indstillingen **Vis forfaldsdato, og tillad redigering** til **Ja**, kan du se dialogboksen **Opdater betalingsoplysninger**.  Hvis du vil opdatere eksisterende posteringer med det samme, skal du vælge **Opdater alle eksisterende posteringer**. Alternativt kan du vælge kun at udfylde felterne for nye posteringer ved at vælge **Fortsæt uden opdatering**.
+
+Forfaldsdatoen er nu føjet til **Kreditorposteringer**-listesiden, og du kan nemmere ændre forfaldsdatoen og kasserabatdatoer for posteringer.
+
+### <a name="modify-the-payment-settings"></a>Rediger betalingsindstillingerne
+
+**Kreditorposteringer**-listesiden indeholder alle posteringer for en kreditor. Når du vælger forfaldsdatoen for en postering, vises en dialogboks. Denne dialogboks viser stamdata for forfaldsdato og rabatberegninger, forfaldsdatoen, betalingsbetingelserne, kasserabatbetingelserne og kasserabatdatoerne.
+
+Hvert felt har en særskilt virkning på posteringen, når du redigerer den:
+
+- **Rediger basisdato:** Forfaldsdatoen og rabatdatoerne ændres, hvis basisdatoen er dokumentdatoen.
+- **Rediger forfaldsdatoen:** Kun forfaldsdatoen ændres
+- **Rediger rabatdatoerne :** Kun rabatdatoerne ændres.
+- **Rediger betalingsbetingelserne:** Forfaldsdatoen ændres på basis af basisdatoen og betalingsbetingelserne.
+- **Rediger kasserabatbetingelserne:** Kasserabatterne ændres på basis af basisdatoen og kasserabatbetingelserne.
+
+Når du er færdig med at redigere betalingsindstillingerne, skal du vælge **Luk** for at gemme ændringerne.
 

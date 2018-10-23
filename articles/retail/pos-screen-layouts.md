@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
+ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
+ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
@@ -71,7 +71,7 @@ Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placering
 
 ### <a name="assignment"></a>Tilknytning
 
-Skærmlayouts kan tildeles på butiks-, kasseapparats- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
+Skærmlayouts kan tildeles på butiks- eller brugerniveau. Brugertildelingen tilsidesætter kasseapparats- og butikstildelingerne, og kasseapparattildelingen tilsidesætter butikstildelingen. I et enkelt scenarie, hvor alle brugere skal bruge det samme layout uanset kasseapparat eller rolle, kan skærmlayoutet kun angives i butiksniveau. I tilfælde, hvor specifikke kasseapparater eller brugere kræver specialiserede layouts, kan disse layouts tildeles.
 
 ### <a name="layout-sizes"></a>Layoutstørrelser
 

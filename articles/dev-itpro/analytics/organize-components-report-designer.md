@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Du kan omdøbe mapper, rapporter, dokumentkomponenter og andre objekter i Report
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
 I Rapportdesigner kan du omdøbe mapper, rapportdefinitioner, rækkedefinitioner, kolonnedefinitioner og trædiagramdefinitioner.
 
-> [!NOTE]
-> Når du omdøber en dokumentkomponent, skal du opdatere alle rapportdefinitioner, der bruger dokumentkomponenten. Ellers kan der ikke oprettes en ny rapport.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en rapportkomponent i Rapportdesigner
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Omdøbe en mappe eller en dokumentkomponent i Report Designer
-
-1. I Report Designer kan du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
+1. I Rapportdesigner skal du bruge navigationsruden til at finde den mappe eller det objekt, der skal omdøbes.
 2. Højreklik på mappen eller objektet, og klik derefter på **Omdøb**. Feltet **Navn** i navigationsruden bliver tilgængeligt.
 3. Skriv et nyt navn, og tryk derefter på Enter.
 4. Hvis dokumentkomponenten er en rækkedefinition, kolonnedefinition eller rapporteringstrædefinition, skal du opdatere andre komponenter, der er knyttet til den. Højreklik på den dokumentkomponent, du omdøbte i trin 3, vælg **Tilknytninger**, og vælg derefter et element på listen for at opdatere det.

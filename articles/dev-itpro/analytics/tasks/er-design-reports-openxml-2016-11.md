@@ -1,28 +1,29 @@
 --- 
-title: Designe ER-konfigurationer til at generere rapporter i OpenXML-format
+title: Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)
 description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny konfiguration til elektronisk rapportering (ER), der indeholder en skabelon til oprettelse af elektroniske dokumenter i OPENXML-format."
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b42cfe36c57a9526e585bbad0fcd31ff60b90397
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 3e6b6b16f202af051ccff02051eb438ea49ff6da
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-er-configurations-to-generate-reports-in-openxml-format"></a>Designe ER-konfigurationer til at generere rapporter i OpenXML-format
+# <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>Designe en ER-konfiguration til generering af rapporter i OPENXML-format (november 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -34,7 +35,8 @@ I dette eksempel skal du oprette en konfiguration af en udbyder for eksempelfirm
 
 
 
-Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også hente og gemme Microsoft Excel-filen, [Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266). 
+Du skal fuldføre trinnene i proceduren "Opret en konfigurationsudbyder, og markér den som aktiv" for at fuldføre disse trin. Du skal også have en Excel-fil, der vil blive importeret, når du opretter skabelonen. Denne fil kan åbnes fra [Skabelon for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266).
+
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Overføre konfiguration for betalingsdatamodel
 1. Gå til Virksomhedsadministration > Arbejdsområder > Elektronisk rapportering.

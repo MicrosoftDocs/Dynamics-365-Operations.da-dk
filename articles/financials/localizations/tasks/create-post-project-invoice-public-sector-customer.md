@@ -1,29 +1,29 @@
 --- 
-title: "Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor (Danmark)"
+title: "Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor"
 description: "Denne opgave hjælper dig med at oprette og bogføre en projektfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering."
 author: mrolecki
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjFundingSourceDetail, ContactPersonLookup, ProjSalesItemReq, ProjTableLookup, InventItemIdLookupSimple, SalesEditLines,  ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines, ProjInvoiceListPage, ERFormatMappingRunJobTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
-ms.search.industry: Public Sector
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 34dfd679d2f16367f59c5d688bb234eca0c56870
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: f894c3bc94ddeac1a92f72949b841bacfbe67c2d
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-and-post-a-project-invoice-for-a-public-sector-customer-denmark"></a>Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor (Danmark)
+# <a name="create-and-post-a-project-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en projektfaktura for en debitor i den offentlige sektor
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

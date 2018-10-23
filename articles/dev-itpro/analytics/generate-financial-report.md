@@ -3,7 +3,7 @@ title: "Generere økonomiske rapporter"
 description: "Dette emne indeholder oplysninger om generering af en økonomisk rapport."
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -32,19 +32,16 @@ ms.lasthandoff: 08/13/2018
 
 Dette emne indeholder oplysninger om generering af en økonomisk rapport.
 
-Åbn den ønskede rapportdefinition for at generere en rapport, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i webfremviseren.
-
-> [!NOTE]
-> Du kan kun generere rapporter til mapper og placeringer, som du har tilladelse til at åbne.
+Åbn den ønskede rapportdefinition for at generere en rapport, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
 
 Følgende indstillinger er tilgængelige for generering af rapporter:
 
 - Angive en tidsplan for automatisk at generere en rapport eller en gruppe af rapporter
 - Søge efter manglende konti eller data i en rapport og validere nøjagtigheden af en rapport
 
-Når du genererer en rapport, bruges de indstillinger, du har angivet under fanen Rapportdefinition . Under fanen Output og distribution kan du angive en placering for et rapportbibliotek, så du nemt kan dele rapporten.
+Når du genererer en rapport, bruges de indstillinger, du har angivet under fanen Rapportdefinition .
 
-## <a name="generate-a-financial-report"></a>Generér en økonomisk rapport
+## <a name="generate-a-financial-report"></a>Generere en økonomisk rapport
 
 Du kan generere en økonomirapport i Microsoft Dynamics 365 for Finance and Operations ved at gå til **Finans** \> **Forespørgsler og rapporter** \> **Økonomirapporter**.
 
@@ -55,10 +52,7 @@ Når rapporten er genereret, kan den ses i sektionen **Rapporter**.
 
 Du kan vælge **Vis** eller **Slet** for rapporten.
 
-Åbn den ønskede rapportdefinition for at generere en rapport ved hjælp af **Rapportdesigner**, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i webfremviseren.
-
-> [!NOTE]
-> Du kan kun generere rapporter til mapper og placeringer, som du har tilladelse til at åbne.
+Åbn den ønskede rapportdefinition for at generere en rapport ved hjælp af **Rapportdesigner**, og klik derefter på knappen Generer på værktøjslinjen. Vinduet Status for rapportkø åbnes og angiver placeringen af rapporten i køen. Den genererede rapport åbnes som standard i Web Viewer.
 
 ## <a name="schedule-report-generation"></a>Planlægge rapportgenerering
 Mange firmaer har en grundlæggende række rapporter, der køres på planlagte intervaller for at passe ind i deres forretningsprocesser. Du kan planlægge en rapport, der skal genereres regelmæssigt, f.eks. dagligt, ugentligt, månedligt eller årligt. Dette kan være en enkelt rapport eller en gruppe af rapporter, der indeholder flere virksomheder. Du skal indtaste dine legitimationsoplysninger for hvert firma, der er angivet, som f.eks. dem, der er i en trædiagramdefinition. Hvis legitimationsoplysningerne ikke er gyldige, viser rapporten kun de oplysninger, du har adgang til, f.eks. den virksomhed, som du er logget på, på tidspunktet. Outputoplysninger læses først fra rapportgruppen og derefter fra de enkelte rapporter.

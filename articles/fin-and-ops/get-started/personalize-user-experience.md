@@ -3,7 +3,7 @@ title: Tilpasse brugeroplevelsen
 description: I dette emne forklares det, hvordan du kan tilpasse Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Forskellige personer og virksomheder har forskellige perspektiver på de data, d
 ### <a name="shortcut-menu-options"></a>Menupunkter i genvejsmenuer
 Genvejsmenuer indeholder måder at ændre en side, så den passer bedre til dine behov eller dit firmas behov. (En genvejsmenu kaldes også en *højrekliksmenu* eller *kontekstmenu*).
 
-Nogle af de mest almindelige og vigtigste ændringer, der kan udføres på en side, er direkte tilgængelige som indstillinger i en genvejsmenu. Hvis du f.eks. vil tilføje eller skjule kolonner i et gitter, skal du blot højreklikke på en kolonneoverskrift i gitteret og derefter vælge **Tilføj kolonner** eller **Skjul denne kolonne**.
+Nogle af de mest almindelige og vigtigste ændringer, der kan udføres på en side, er direkte tilgængelige som indstillinger i en genvejsmenu. Hvis du f.eks. fra og med platformsopdatering 17 vil tilføje eller skjule kolonner i et gitter, skal du blot højreklikke på en kolonneoverskrift i gitteret og derefter vælge **Tilføj kolonner** eller **Skjul denne kolonne**.
 
 De mest grundlæggende typer eksplicitte tilpasninger er desuden tilgængelige, hvis du højreklikker på et element og derefter vælger **Tilpas**. (Bemærk, at ikke alle elementer på din side kan tilpasses). Når du bruger denne metode for tilpasning, vises elementets egenskabsvindue.
 
@@ -81,27 +81,38 @@ Du kan bruge egenskabsvinduet til at tilpasse et element på følgende måder:
 Egenskabsvinduet kan omfatte andre tilpasningsmuligheder, afhængigt af elementet. I egenskabsvinduet for et felt kan du f.eks. opgradere feltet til et dashboard, og i egenskabsvinduet for et dashboard kan du evt. oprette et nyt arbejdsområde i dette dashboard.
 
 ### <a name="the-personalization-toolbar"></a>Værktøjslinjen Tilpasning
-Når du vil flytte eller skjule elementer eller foretage flere ændringer af en side, kan du bruge værktøjslinjen **Brugertilpasning**. For at åbne værktøjslinjen **Brugertilpasning** skal du vælge **Personaliser denne formular** i egenskabsvinduet for et element. Du kan også vælge **Personaliser denne formular** i gruppen **Personaliser** under fanen **Indstillinger** i handlingsruden for hver side.
+Hvis du vil foretage flere ændringer på en side eller foretager ændringer, der ikke er tilgængelige via andre mekanismer (f.eks. genbestillingselementer), kan du bruge **Brugertilpasning**-værktøjslinjen. For at åbne værktøjslinjen **Brugertilpasning** skal du vælge **Personaliser denne formular** i egenskabsvinduet for et element. Du kan også vælge **Personaliser denne formular** i gruppen **Personaliser** under fanen **Indstillinger** i handlingsruden for hver side.
 
 [![Værktøjslinjen Tilpasning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Når værktøjslinjen **Brugertilpasning** er åben, er siden ikke-interaktiv. Derfor kan du ikke indtaste data eller udvide eller skjule sektioner. Du kan kun ændre de elementer, der udgør siden.
+#### <a name="navigating-the-page"></a>Navigering på siden 
+Muligheden for at navigere på siden, mens **Brugertilpasning-værktøjslinjen** er åben, afhænger af platformsversionen, du kører. 
 
+- Før platformsopdatering 19 er siden skrivebeskyttet, mens **Brugertilpasning**-værktøjslinjen er åben (du kan ikke angive noget) og ikke-interaktiv (du kan kun foretage ændringer af de synlige elementer på siden). Hvis du vil foretage ændringer af elementer i en skjult sektion eller på en anden fane, skal du lukke **Brugertilpasning**-værktøjslinjen, udvide en sektion eller skifte til den ønskede fane og derefter genåbne den **Brugertilpasning**-værktøjslinjen.  
+
+- Fra og med platformsopdatering 19 er siden stadig skrivebeskyttet, hvis **Brugertilpasning**-værktøjslinjen er åben, men den er meget mere interaktiv. Du kan udvide eller skjule ruden med faktaboksen, skifte faner og udvide eller skjule sektioner, mens **Brugertilpasning**-værktøjslinjen er åben, på samme måde, som du normalt ville på siden. For at anvende en ændring af tilpasning på en sektion eller fane, der kan skjules (f.eks. for at skjule et oversigtspanel), skal du udløse knappen, der vises ud for den sektion eller fane, der kan skjules, når den opnår tastaturfokus, eller når du peger på den.  
+
+#### <a name="personalization-tools"></a>Tilpasningsværktøjer
 Følgende værktøjer er tilgængelige på værktøjslinjen **Brugertilpasning**:
 
 - Brug værktøjet **Vælg** til at vælge og ændre et elements egenskaber. Vælg værktøjet **Vælg**, og vælg derefter det element, hvis egenskaber skal ændres. Når du vælger et element, åbnes elementets egenskabsvindue, og du kan redigere egenskaberne for det element. Du kan gentage processen for andre elementer, der kan tilpasses på denne side. Men på grund af den måde, nogle elementer bruges på, kan du ikke ændre alle deres egenskaber i Finance and Operations. Derfor når du vælger et element, du kan muligvis se, at nogle af dets egenskaber ikke kan ændres. Du kan f.eks. ikke skjule et felt, der er obligatorisk.
-- Brug værktøjet **Flyt** til at flytte et element til et andet sted inden for den aktuelle gruppe elementer. (Du kan ikke flytte et element uden for dets overordnede gruppe). Vælg værktøjet **Flyt**, og vælg derefter elementet, der skal flyttes. Når du markerer et element, scanner Finance and Operations siden for at finde ud af, hvor elementet kan flyttes hen. Derefter oprettes en række "slipzoner". Når du trækker elementet omkring i den aktuelle gruppe, vises hver "slipzone" som en farvet, fed linje ud for det område, hvor elementet kan slippes.
-- Brug værktøjet **Skjul** til at skjule et element på siden. Vælg værktøjet **Skjul**, og markér derefter elementet, der skal skjules. Når du vælger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige og vises i en nedtonet container. Du kan derefter vise dem igen. Ved at vælge **markeringsværktøjet** kan du se, hvordan siden vil se ud, når de markerede elementer er skjult.
-- Brug værktøjet **Oversigt**, når du vil have, at et elementvises i oversigtspanelets oversigtssektion. Værktøjet Oversigt kan kun bruges til felter, der er i en oversigtspanelsektion. Når du vælger værktøjet **Oversigt**, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra oversigtspanelets oversigt ved at markere felterne.
-- Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger værktøjet **Spring over**, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan derefter gøre dem til en del af tabuleringsrækkefølgen igen.
-- Brug værktøjet **Rediger** til at markere et element som redigerbart eller ikke redigerbart. Når du vælger værktøjet **Rediger**, vises alle elementer, der i øjeblikket er ikke-redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske, og at de ikke kan gøres redigerbare. Der vises en hængelås ud for de pågældende felter.
-- Brug knappen **Indsæt** for at se en liste over elementer, der kan indsættes på en side.
 
+- Brug værktøjet **Flyt** til at flytte et element til et andet sted inden for den aktuelle gruppe elementer. (Du kan ikke flytte et element uden for dets overordnede gruppe). Vælg værktøjet **Flyt**, og vælg derefter elementet, der skal flyttes. Når du markerer et element, scanner Finance and Operations siden for at finde ud af, hvor elementet kan flyttes hen. Derefter oprettes en række "slipzoner". Når du trækker elementet omkring i den aktuelle gruppe, vises hver "slipzone" som en farvet, fed linje ud for det område, hvor elementet kan slippes.
+
+- Brug værktøjet **Skjul** til at skjule et element på siden. Vælg værktøjet **Skjul**, og markér derefter elementet, der skal skjules. Når du vælger værktøjet **Skjul**, gøres alle elementer, der i øjeblikket er skjult, synlige og vises i en nedtonet container. Du kan derefter vise dem igen. Ved at vælge **markeringsværktøjet** kan du se, hvordan siden vil se ud, når de markerede elementer er skjult.
+    - Fra og med platformsopdatering 18 kan du skjule obligatoriske felter og sektioner, der indeholder obligatoriske felter. Så kan du oprette en forenklet funktionsmåde, hvor obligatoriske felter, der er standard i forretningslogik, ikke vises. Skjulte obligatoriske felter er også midlertidigt synlige, hvis de er tomme, når lagring forsøges. 
+
+- Brug værktøjet **Oversigt**, når du vil have, at et elementvises i oversigtspanelets oversigtssektion. Værktøjet Oversigt kan kun bruges til felter, der er i en oversigtspanelsektion. Når du vælger værktøjet **Oversigt**, vises alle felter, der er valgt som oversigtsfelter, i en nedtonet container. Du kan interaktivt føje felter til oversigtspanelets oversigt og fjerne felter fra oversigtspanelets oversigt ved at markere felterne.
+
+- Brug værktøjet **Spring over** for at fjerne et element fra sidens tastaturtabuleringsrækkefølge. Når du vælger værktøjet **Spring over**, vises alle elementer, der i øjeblikket er sprunget over, i en nedtonet container. Du kan derefter gøre dem til en del af tabuleringsrækkefølgen igen.
+
+- Brug værktøjet **Rediger** til at markere et element som redigerbart eller ikke redigerbart. Når du vælger værktøjet **Rediger**, vises alle elementer, der i øjeblikket er ikke-redigerbare, i en nedtonet container. Du kan derefter gøre dem redigerbare igen. Bemærk, at nogle af felterne er obligatoriske, og at de ikke kan gøres redigerbare. Der vises en hængelås ud for de pågældende felter.
+
+- Brug knappen **Indsæt** for at se en liste over elementer, der kan indsættes på en side.
     - Vælg værktøjet **Felt** under **Indsæt** for at tilføje et felt på siden. Når du bruger værktøjet **Felt**, kan du kun tilføje felter, som indgår i definitionen af siden, men som ikke i øjeblikket vises på siden. Du kan finde oplysninger om, hvordan du opretter nye felter, der ikke er en del af den aktuelle sidedefinition, under [Brugerdefinerede felter](user-defined-fields.md). Når du har valgt værktøjet **Felt**, skal du først markere den gruppe eller det område, hvor du vil tilføje et felt. Der åbnes en dialogboks med listen over felter, der er relateret til den valgte gruppe eller det markerede område. Vælg ét eller flere felter, som du vil tilføje, i dialogboksen, og vælg derefter **Indsæt**. Gentag processen for at fjerne et felt, du tidligere har tilføjet, men fjern markeringen af feltet i dialogboksen.
     - Vælg værktøjet **PowerApp** under **Indsæt** for at integrere en app, der er oprettet ved hjælp af Microsoft PowerApps, på siden. Du kan finde detaljerede oplysninger om, hvordan du integrerer en PowerApps-app på en side, under [Integrere PowerApps](embed-power-apps.md).
 
 - Vælg knappen **Administrer** for at se en liste over administrationsindstillinger, der er relateret til alle tilpasninger for den aktuelle side.
-
     - Vælg **Ryd** for at nulstille siden til dens installerede standardtilstand. Alle tilpasninger på den aktuelle side slettes. Der er ingen fortrydelseshandling. Derfor skal du kun bruge denne indstilling, hvis du er sikker på, at du vil nulstille siden.
     - Vælg **Importer** for at indlæse en personlig tilpasning fra en fil, som du eller en anden tidligere har oprettet for siden. Alle dine aktuelle tilpasninger for siden erstattes med tilpasninger fra den valgte fil.
     - Vælg **Eksporter** for at gemme dine personlige indstillinger for siden i en fil. Du kan dele dine tilpasninger med andre brugere. Disse brugere skal kun importere filen, der indeholder dine personlige indstillinger for siden.
@@ -149,5 +160,5 @@ Når du tilpasser opsætningen af lagerdimensioner på en side, skal du overveje
 
 Indstillingerne i **Dimensionsvisning** gælder på tværs af alle sider og tilsidesætter den tilpassede opsætning af lagerdimensionsfelter på individuelle sider.
 
-Derfor hvis du i det foregående eksempel ikke ønsker, at kolonnen for batchnummer-lagerdimensionen skal vises, skal du rydde dimensionen som en del af indstillingen **Vis dimensioner** for tabellen. Denne ændring vil desuden gælde ikke kun for en bestemt side, men på tværs af alle sider.
+Hvis du derfor i det foregående eksempel ikke ønsker, at kolonnen for batchnummer-lagerdimensionen skal vises, skal du rydde dimensionen som en del af indstillingen **Vis dimensioner** for tabellen. Denne ændring vil desuden gælde ikke kun for en bestemt side, men på tværs af alle sider.
 

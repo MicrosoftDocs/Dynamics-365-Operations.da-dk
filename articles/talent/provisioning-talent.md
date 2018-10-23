@@ -3,13 +3,13 @@ title: "Klargøre Talent"
 description: "Dette emne fører dig gennem processen med at klargøre et nyt miljø til Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 # <a name="provision-talent"></a>Klargøre Talent
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/08/2018
 
 Dette emne fører dig gennem processen med at klargøre et nyt produktionsmiljø til Microsoft Dynamics 365 for Talent. Det antages i emnet, at du har købt Talent via en Cloud Solution Provider (CSP) eller EA-aftale (Enterprise Architecture). Hvis du har en eksisterende Microsoft Dynamics 365-licens, der allerede indeholder Talent-serviceplanen, og du ikke kan udføre trinnene i dette emne, kan du kontakte Support.
 
-For at komme i gang skal den globale administrator logge på [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) og oprette et nyt Talent-projekt. Medmindre et problem med licensering forhindrer klargøring af Talent, skulle der ikke være brug for hjælp fra Support- eller DSE-medarbejdere (Dynamics Service Engineering).
+For at komme i gang skal den globale administrator logge på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og oprette et nyt Talent-projekt. Medmindre et problem med licensering forhindrer klargøring af Talent, skulle der ikke være brug for hjælp fra Support- eller DSE-medarbejdere (Dynamics Service Engineering).
 
 ## <a name="create-an-lcs-project"></a>Oprette et LCS-projekt
 Når du vil bruge LCS til at administrere dine Talent-miljøer, skal du først oprette et LCS-projekt.
@@ -48,7 +48,6 @@ Når du har oprettet et LCS-projekt, kan du klargøre Talent i et miljø.
 
 1. I LCS-projektet skal du vælge feltet **Administration af Talent-app**.
 2. Talent klargøres altid i et Microsoft PowerApps-miljø for at aktivere PowerApps-integration og -udvidelse. Læs afsnittet "Valg af et PowerApps miljø" i dette emne, før du fortsætter. 
-3. Hvis du ikke allerede har et PowerApps-miljø, skal du følge trinnene i afsnittet "Oprette et nyt PowerApps-miljø (hvis nødvendigt)" i dette emne, før du fortsætter.
 
     > [!NOTE]
     > For at få vist eksisterende miljøer eller oprette nye miljøer skal den lejeradministrator, der klargør Talent, være tildelt til PowerApps P2-licensen. Hvis organisationen ikke har en PowerApps P2-licens, kan du få en fra din Cloud Solution Provider eller fra [PowerApps-prissætningssiden](https://powerapps.microsoft.com/en-us/pricing/).
@@ -78,11 +77,6 @@ Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø til
 4. Dataintegration og teststrategier bør tages i betragtning, f.eks. sandkasse, UAT, produktion. Derfor anbefaler vi, at du overvejer, hvilke forskellige konsekvenser det har for din installation, fordi det ikke er let at ændre tilknytningen af Talent-miljøer til et PowerApps-miljø senere.
 5. Følgende PowerApps-miljøer kan ikke bruges til Talent og filtreres fra valglisten i LCS:
  
-    **CDS 2.0-miljøer** CDS 2.0 bliver offentligt tilgængelige den 21. marts 2018, men Talent understøtter endnu ikke CDS 2.0. Selvom du kan få vist og oprette CDS 2.0-databaser i PowerApps Administration, kan de ikke bruges i Talent. Muligheden for at bruge CDS 2.0-miljøer i Talent-installationer bliver tilgængelig på et senere tidspunkt.
-   
-   > [!Note]
-   > Hvis du vil skelne mellem CDS 1.0 og 2.0-miljøer på administrationsportalen, skal du vælge et miljø, og se på **Oplysninger**. CDS 2.0-miljøer refererer alle til det forhold, at "Du kan styre disse indstillinger i Dynamics 365 Administration", du kan pege på en forekomst, og der er fane med navnet Database. 
- 
    **Power Apps-standardmiljøer** Selvom hver lejer automatisk klargøres med et PowerApps-standardmiljø, anbefales det ikke at bruge dem sammen med Talent, da alle lejerbrugere har adgang til PowerApps-miljøet og derfor utilsigtet kan beskadige produktionsdata i forbindelse med test og gennemsyn af PowerApps- eller Flow-integrationer.
    
    <strong>Miljøer til testkørsel</strong> Miljøer med et navn, som f.eks. 'TestDrive – alias@domain' oprettes med en 60-dages udløbsperiode og udløber efter dette tidspunkt, og det medfører, at dit miljø fjernes automatisk.
@@ -91,42 +85,6 @@ Brug følgende retningslinjer til fastsættelse af, hvilket PowerApps-miljø til
   
 6. Der er ingen specifikke handling, der skal udføres, når du har valgt det korrekte miljø, der skal bruges. Fortsæt klargøringsprocessen. 
  
-## <a name="create-a-new-powerapps-environment-if-required"></a>Oprette et nyt PowerApps-miljø (hvis nødvendigt)
-
-Køre et PowerShell-script for at oprette et nyt PowerApps-miljø til Talent i forbindelse med den lejeradministrator, der har PowerApps Plan 2-licensen. Scriptet automatiserer følgende trin:
-
-
- + Oprettelse af et PowerApps-miljø
- + Oprettelse af en CDS 1.0-database
- + Fjernelse af alle eksempeldata i CDS 1.0-databasen
-
-
-Udfør følgende instruktioner for at køre scriptet:
-
-1. Hent filen ProvisionCDSEnvironment.zip fra følgende placering: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
-
-2. I din overførselsmappe skal du højreklikke på filen ProvisionCDSEnvironment.zip, som du netop har hentet, og vælge **Egenskaber**.  Hvis der er en sikkerhedsbemærkning nederst i dialogboksen om, at "Denne fil kommer fra en anden computer og bliver muligvis blokeret for at beskytte denne computer", skal du markere afkrydsningsfeltet **Ophæv blokering** og klikke på **Anvend** og derefter på **OK**.
-
-3. Udpak hele indholdet af filen ProvisionCDSEnviroinment.zip til en anden mappe end rodmappen.
-
-4. Kør Windows PowerShell- eller Windows PowerShell ISE-programmet som administrator.
-
-   Besøg emnet [Angiv udførelsespolitik](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) for at lære mere om at angive udførelsespolitikken, så scripts kan køres. Vi anbefaler at bruge følgende "Set-ExecutionPolicy - ExecutionPolicy Ubegrænset - Definer omfang af processer", men du skal huske at følge sikkerhedspolitikkerne for dit firma. Luk PowerShell-vinduet, når du er færdig. 
-  
-5. I PowerShell skal du navigere til den mappe, hvor du udpakkede filen, og køre følgende kommando, idet du erstatter værdier, som angivet nedenfor:
- 
-   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
-
-    
-   **MyNewEnvironment** skal erstattes med navnet på dit miljø. Dette navn vises i LCS og kan ses, når brugere vælge, hvilket Talent-miljø der skal bruges. 
-
-   **YourLocation** skal erstattes med et af de områder, hvor Talent understøttes: unitedstates, europe, australia. 
-
-   **-Verbose** er valgfrit og giver detaljerede oplysninger, der kan sendes til support, hvis der opstår problemer.
-
-6. Fortsæt klargøringsprocessen.
- 
-
 ## <a name="grant-access-to-the-environment"></a>Give adgang til miljøet
 Som standard har den globale administrator, der oprettede miljøet, adgang til det. Men andre programbrugere skal eksplicit tildeles adgang. Når du vil give adgang, skal du [tilføje brugere](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [tildele de relevante roller til dem](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i det centrale HR-miljø. Den globale administrator, der installerede Talent, skal også starte både Attract og Onboard-programmerne for at fuldføre initialiseringen og aktivere adgang for andre lejerbrugere.  Før dette er gjort, kan andre brugere ikke få adgang til Attract- og Onboard-programmer, men får adgangsfejl.
 

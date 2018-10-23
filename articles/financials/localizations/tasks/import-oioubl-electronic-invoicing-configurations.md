@@ -1,28 +1,29 @@
 --- 
-title: Importere konfigurationer for elektronisk OIOUBL-fakturering (Danmark)
+title: Importere konfigurationer for elektronisk OIOUBL-fakturering
 description: Denne procedure viser, hvordan du importerer elektroniske OIOUBL-fakturakonfigurationer.
 author: mrolecki
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 17f0a687df6df73515c96bb026e5273c7911bc43
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 15e0b2db7c5c014910890ff9b466bf674695c5ad
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="import-oioubl-electronic-invoicing-configurations-denmark"></a>Importere konfigurationer for elektronisk OIOUBL-fakturering (Danmark)
+# <a name="import-oioubl-electronic-invoicing-configurations"></a>Importere konfigurationer for elektronisk OIOUBL-fakturering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

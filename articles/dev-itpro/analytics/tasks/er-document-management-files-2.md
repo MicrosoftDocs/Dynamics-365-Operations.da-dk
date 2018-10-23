@@ -1,28 +1,29 @@
 --- 
-title: Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
+title: 'ER Brug dokumentstyringsfiler i formatoutput (del 2: Udvidet datamodel)'
 description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Udvide datamodeller til at bruge dokumentstyringsfiler i ER-output
+# <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Brug dokumentstyringsfiler i formatoutput (del 2: Udvide datamodel)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,7 +58,7 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for O
 17. Vælg "Streng" i feltet Varetype.
 18. Klik på Tilføj.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>Knytte nye datamodelelementer til Dynamics 365 for Finance and Operations-datakilder
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Knytte nye datamodelelementer til Dynamics 365 for Finance and Operations, Enterprise edition-datakilder
 1. Klik på Tilknyt model til datakilde.
 2. Brug Quick Filter til at filtrere på feltet Definition med værdien 'InvoiceCustomer'.
     * InvoiceCustomer  

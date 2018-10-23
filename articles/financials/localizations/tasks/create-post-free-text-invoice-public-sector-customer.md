@@ -1,29 +1,29 @@
 --- 
-title: "Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor (Danmark)"
+title: "Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor"
 description: "Denne procedure hjælper dig med at oprette og bogføre en fritekstfaktura for en debitor ved hjælp af elektronisk OIOUBL-fakturering."
 author: mrolecki
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustFreeInvoice, CustTableLookup, ContactPersonLookup, CustPostInvoiceJob
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Denmark
-ms.search.industry: Public Sector
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 6844eae78dbda543964e7f53d6ecfb301d0d8813
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 6c782adac5274db8455f4474e998857ca70a3b13
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-and-post-a-free-text-invoice-for-a-public-sector-customer-denmark"></a>Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor (Danmark)
+# <a name="create-and-post-a-free-text-invoice-for-a-public-sector-customer"></a>Oprette og bogføre en fritekstfaktura for en debitor i den offentlige sektor
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
