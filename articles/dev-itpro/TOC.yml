@@ -257,6 +257,10 @@
               href: extensibility/extensibility-changes-804.md
             - name: Ændringer af udvidelsesmuligheder version 8.1
               href: extensibility/extensibility-changes-81.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.2
+              href: extensibility/extensibility-changes-812.md
         - name: Grundlæggende
           items:
             - name: Intrusive tilpasninger
@@ -303,8 +307,6 @@
               href: extensibility/change-caption-form.md
             - name: Ændre egenskaber for formularkontrol
               href: extensibility/modify-control-properties.md
-            - name: Ændre etiketter ved hjælp af etiketfilers filtypenavn
-              href: extensibility/change-label.md
             - name: Udvide omfanget af nummerserier
               href: extensibility/extend-number-sequence-scope.md
             - name: Tilføje nye lagerdimensioner
@@ -317,6 +319,8 @@
               href: extensibility/maps-as-interfaces.md
             - name: 'Udvide tabeloversigter, der bruges til versionsstyring'
               href: extensibility/maps-with-versioning.md
+            - name: Udvide decimaltegnet præcision for de valgte datatyper
+              href: extensibility/decimal-point-precision.md
         - name: 'Oprettelse af løsninger, der kan udvides'
           items:
             - name: 'Skrive kode, der kan udvides'
@@ -532,9 +536,9 @@
           href: user-interface/toolbar-list-subpattern.md
         - name: Undermønster for filtergruppe for arbejdsområdeside
           href: user-interface/workspace-filter-group-subpattern.md
-    - name: Udvidelse af kontrolelementer
+    - name: Udvidelse af kontrolelement
       items:
-        - name: Oprette aextensible-kontrolelementer
+        - name: Opret kontrolelementer med mulighed for udvidelse
           href: user-interface/build-extensible-control.md
         - name: 'Tastaturgenveje til kontrolelementer, der kan udvides'
           href: user-interface/keyboard-shortcuts-controls.md
@@ -764,148 +768,12 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: Typen ValueMetadata
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Dataintegration
+- name: Regulativ om generel databeskyttelse (GDPR)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Vælg en strategi for dataintegration (import/eksport)
-      href: data-entities/integration-overview.md
-    - name: API'er for dataintegration
-      items:
-        - name: REST API for datastyringspakke
-          href: data-entities/data-management-api.md
-        - name: Tjenesteslutpunkter
-          href: data-entities/services-home-page.md
-          items:
-            - name: Fejlfinding af servicegodkendelse
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Udvikling af brugerdefinerede tjenester
-          href: data-entities/custom-services.md
-        - name: Tilbagevendende integrationer
-          href: data-entities/recurring-integrations.md
-        - name: 'Testtjenester, der bruger værktøjer fra tredjepartstjenester'
-          href: data-entities/third-party-service-test.md
-    - name: Udvikling med henblik på integration
-      items:
-        - name: Datastyring og -integration med dataenheder
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Udvikle enheder til dataoverflytning
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Udvikle sammensatte dataenheder
-              href: data-entities/develop-composite-data-entities.md
-            - name: Konfigurere økonomisk datadeling på tværs af firmaer
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Oprette postskabeloner for at lette dataindtastning
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Oprette poster ved hjælp af postskabeloner
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Dataintegration med Common Data Service
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Konfigurere et kundeemne til kontantscenarie
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: Synkronisere konti fra Sales direkte med debitorer i Finance and Operations
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: Synkronisere kontakter fra Sales direkte med kontakter eller debitorer i Finance and Operations
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Synkronisere salgstilbudshoveder og -linjer direkte fra Sales til Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Synkronisering af salgsordrer direkte mellem Sales og Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Synkronisere salgsfakturahoveder og linjer fra Finance and Operations direkte med Sales
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Konfigurere integration med Field Service
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: Synkronisere produkter fra Finance and Operations med produkter i Field Service
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: Synkronisere arbejdsordrer i Field Service med salgsordrer i Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konfigurere integration af Project Service Automation
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Integrationsparametre for Project Service Automation
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Synkronisere projektkontrakter og projekter
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisere projektopgaver
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Synkronisere udgiftskategorier for projekt
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisere projektestimater til projektprognoser
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisere faktiske oplysninger om projekter til projektintegrationskladden
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Forbrug af eksterne webtjenester
-          href: data-entities/consume-external-web-service.md
-- name: Datastyring
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Dataenheder
-      href: data-entities/data-entities.md
-      items:
-        - name: Konfigurationsdataprojekter
-          href: data-entities/configuration-data-projects.md
-        - name: Konfigurationsdatapakker
-          href: data-entities/configuration-data-packages.md
-        - name: Kopiere konfigurationsdata mellem firmaer
-          href: data-entities/copy-configuration.md
-        - name: Konfigurationsdataskabeloner
-          href: data-entities/configuration-data-templates.md
-        - name: Dataskabeloner med flere regneark
-          href: data-entities/excel-template-multiple.md
-        - name: Aktivere ændringssporing for enheder
-          href: data-entities/entity-change-track.md
-        - name: Konfigurationsnøgler og dataenheder
-          href: data-entities/config-key-entities.md
-        - name: Finde oplysninger om standarddataenheder
-          href: data-entities/data-entities-report.md
-    - name: Dataimport- og -eksportjob
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Udvikling for dataenheder
-      items:
-        - name: Principper for design og bedste praksis for dataenheder
-          href: dev-tools/design-best-practices.md
-        - name: Oprette nye dataenheder
-          href: data-entities/build-consuming-data-entities.md
-        - name: Adfærdsegenskaber for dataenhed
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Oprette beregnede kolonner og virtuelle felter
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Adfærd på tværs af virksomhed
-          href: data-entities/cross-company-behavior.md
-        - name: Lande-/områdekoder og konfigurationsnøgler
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Nedarvningsmønstre
-          href: data-entities/support-super-type-sub-type.md
-        - name: Regler for dataenhedsguide
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Metadata-egenskaber
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Valideringer, standardværdier og ikke-tilknyttede felter'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Sikkerhed og dataenheder
-          href: data-entities/security-data-entities.md
-        - name: 'Oprette skrivebeskyttede enheder, der viser økonomiske dimensioner'
-          href: financial/read-only-entity-financial.md
-    - name: Bruge din egen database
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Automatisering af dataopgave
-      href: data-entities/data-task-automation.md
     - name: Ressourcer til besvarelse af anmodninger om GDPR-data
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Vejledning til GDPR for Finance and Operations
-          href: gdpr/gdpr-guide.md
         - name: Klassifikationer af aktiver
           href: gdpr/gdpr-asset-classification-values.md
         - name: Rapport over personsøgning
@@ -920,10 +788,6 @@
           href: gdpr/gdpr-ax2012.md
         - name: Anmodninger om GDPR-data for LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbejdsområdet Kontrolliste for datavalidering
-      href: user-interface/data-validation-workspace.md
-    - name: Fejlbeskrivelser til datastyring
-      href: data-entities/dm-error-descriptions.md
 - name: Fortløbende levering
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1039,11 +903,13 @@
         - name: Konfigurere og installere lokale miljøer
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Installere lokale miljøer på Platform update 12
+            - name: Installere on-premises-miljøer (Platform update 12 og senere)
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Installere lokale miljøer på Platform update 8 og 11
+            - name: Installere on-premises-miljøer (Platform update 8 og 11)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
-        - name: Udvikle og installere brugerdefinerede modeller i lokale miljøer
+            - name: Installationstrin for Detail-kanalkomponenter i et on-premises-miljø.
+              href: deployment/deploy-retail-onprem.md
+        - name: Udvikle og installere brugerdefinerede modeller i on-premises-miljøer
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Konfigurere omvendte proxyer til dine lokale miljøer
           href: deployment/onprem-reverseproxy.md
@@ -1161,9 +1027,11 @@
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Opdatere udviklingsværktøjer
           href: dev-tools/update-development-tools.md
+        - name: Planlægge og forberede kompilering af koden i forhold til den seneste opdatering
+          href: migration-upgrade/compile-considerations.md
     - name: Opgradere til en aktuel opdatering (i det lokale miljø)
       items:
-        - name: Anvende opdateringer til lokale installationer
+        - name: Anvende opdateringer til on-premises-installationer
           href: deployment/apply-updates-on-premises.md
         - name: Geninstallere en lokal installation
           href: deployment/redeploy-on-prem.md
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Oprette batchjob
           href: sysadmin/tasks/create-batch-job.md
+        - name: Kopiér et batchjob
+          href: sysadmin/copy-batch-job.md
+        - name: Aktive batchperioder
+          href: sysadmin/activeperiod.md
+        - name: Sikkerhedsrolle for batchstyring
+          href: sysadmin/runby.md
     - name: Optimeringsrådgiver
       href: sysadmin/optimization-advisor-overview.md
       items:
