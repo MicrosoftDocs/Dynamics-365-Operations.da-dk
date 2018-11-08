@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 4c27e0f75a45a2e4290ec4b6f72ee67d792449a0
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -38,9 +38,9 @@ Du kan også angive kreditornummerserier for hver enkelt kreditorgruppe. Disse n
 
 Du kan også kopiere kreditorer mellem juridiske enheder, hvis du bruger manuelle kreditor-id'er. Men hvis du forsøger at kopiere en kreditor til en juridisk enhed, hvor kreditor-id'et allerede findes, startes kopieringsprocessen ikke.
 
-## <a name="copy-a-vendor"></a>Kopiere en kreditor
+## <a name="copy-a-vendor"></a>Kopiere en leverandør
 
-Hvis du vil kopiere en kreditor, skal du vælge **Ny** på listesiden **Alle kreditorer** for at åbne siden **Alle kreditorer, ny post**. Bemærk, at det nye kreditor-id ikke tildeles med det samme. Denne funktionsmåde adskiller sig fra funktionsmåden i tidligere versioner af Microsoft Dynamics 365 for Finance and Operations. Fordi du endnu ikke har valgt kreditorgruppen, kan systemet ikke bestemme den korrekte nummerserie, der skal bruges. Desuden kan det ikke bestemme, om du forsøger at oprette en ny kreditor eller kopiere en kreditor. Derfor tildeles kreditor-id'et først, når du vælger **Gem** nederst på siden.
+Hvis du vil kopiere en leverandør, skal du vælge **Ny** på listesiden **Alle leverandører** for at åbne siden **Alle leverandører, ny post**. Bemærk, at det nye leverandør-id ikke tildeles med det samme. Denne funktionsmåde adskiller sig fra funktionsmåden i tidligere versioner af Microsoft Dynamics 365 for Finance and Operations. Fordi du endnu ikke har valgt kreditorgruppen, kan systemet ikke bestemme den korrekte nummerserie, der skal bruges. Desuden kan det ikke bestemme, om du forsøger at oprette en ny kreditor eller kopiere en kreditor. Derfor tildeles kreditor-id'et først, når du vælger **Gem** nederst på siden.
 
 Hvis du vil oprette en ny kreditor, kan du fortsætte med at udfylde alle felterne, som du plejer. Når du er færdig, og du vælger **Gem**, kan du se, at kreditor-id'et tildeles automatisk. Hvis du bruger manuelle nummerserier, kan du se, at dit manuelle kreditor-id bruges.
 
