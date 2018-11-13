@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 06ab745d9df9b095b861cf7bc79aba6d1361eeb0
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -50,11 +50,12 @@ ms.lasthandoff: 08/07/2018
 | <span data-ttu-id="a81b5-128">Arbejdsgang for ansøgning om tilføjelse af kreditor</span><span class="sxs-lookup"><span data-stu-id="a81b5-128">Vendor add application workflow</span></span>  | <span data-ttu-id="a81b5-129">Oprette arbejdsgange for gennemsyn og godkendelse for at tilføje nye kreditorer via kreditoranmodninger.</span><span class="sxs-lookup"><span data-stu-id="a81b5-129">Create review and approval workflows for adding new vendors via vendor requests.</span></span> |
 
 ## <a name="creating-a-workflow"></a><span data-ttu-id="a81b5-130">Oprettelse af en arbejdsgang</span><span class="sxs-lookup"><span data-stu-id="a81b5-130">Creating a workflow</span></span>
+
 <span data-ttu-id="a81b5-131">Hvis du vil oprette en arbejdsgang, skal du gå til Indkøb og forsyning &gt; Opsætning &gt; Indkøbs- og forsyningsarbejdsgange og oprette en ny arbejdsgang ved at vælge den type arbejdsgang, du vil oprette.</span><span class="sxs-lookup"><span data-stu-id="a81b5-131">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
 <span data-ttu-id="a81b5-132">På lærredet for arbejdsgangen kan du trække arbejdsgangselementer til designeren og sammenkæde elementerne til en arbejdsgang.</span><span class="sxs-lookup"><span data-stu-id="a81b5-132">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="a81b5-133">Arbejdsgangselementerne bør være konfigureret.</span><span class="sxs-lookup"><span data-stu-id="a81b5-133">The workflow elements should be configured.</span></span> <span data-ttu-id="a81b5-134">Du kan konfigurere, hvilken deltager der bør træffe foranstaltninger, i forbindelse med arbejdsgangselementer af typerne godkendelse og opgave.</span><span class="sxs-lookup"><span data-stu-id="a81b5-134">For approval and task workflow elements you can configure which participant should take action.</span></span>
-<span data-ttu-id="a81b5-135">Deltagertyper</span><span class="sxs-lookup"><span data-stu-id="a81b5-135">Types of participants</span></span>
-----------------------
+
+## <a name="types-of-participants"></a><span data-ttu-id="a81b5-135">Deltagertyper</span><span class="sxs-lookup"><span data-stu-id="a81b5-135">Types of participants</span></span>
 
 <span data-ttu-id="a81b5-136">Du kan knytte et godkendelsestrin til følgende deltagergrupper.</span><span class="sxs-lookup"><span data-stu-id="a81b5-136">You can assign an approval step to the following groups of participants.</span></span>
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 08/07/2018
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="a81b5-149">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a81b5-149">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="a81b5-149">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="a81b5-149">Additional resources</span></span>
 
-[<span data-ttu-id="a81b5-150">Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner</span><span class="sxs-lookup"><span data-stu-id="a81b5-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [<span data-ttu-id="a81b5-150">Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner</span><span class="sxs-lookup"><span data-stu-id="a81b5-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[<span data-ttu-id="a81b5-151">Arbejdsgang for indkøbsrekvisitioner</span><span class="sxs-lookup"><span data-stu-id="a81b5-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+- [<span data-ttu-id="a81b5-151">Arbejdsgang for indkøbsrekvisitioner</span><span class="sxs-lookup"><span data-stu-id="a81b5-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
-[<span data-ttu-id="a81b5-152">Onboarding af kreditorer</span><span class="sxs-lookup"><span data-stu-id="a81b5-152">Onboarding vendors</span></span>](vendor-onboarding.md)
+- [<span data-ttu-id="a81b5-152">Onboarding af kreditorer</span><span class="sxs-lookup"><span data-stu-id="a81b5-152">Onboarding vendors</span></span>](vendor-onboarding.md)
 
 
