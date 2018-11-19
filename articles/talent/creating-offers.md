@@ -1,0 +1,147 @@
+---
+title: Oprettelse, godkendelse og signering af tilbud
+description: "Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 for Talent."
+author: josaw
+manager: AnnBe
+ms.date: 10/19/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+ms.search.form: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-10-19
+ms.dyn365.ops.version: Talent October 2018 update
+ms.translationtype: HT
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: f6b17dca13431a9d674920833b4a44141fac0bd8
+ms.contentlocale: da-dk
+ms.lasthandoff: 10/22/2018
+
+---
+
+# <a name="creating-approving-and-signing-offers"></a><span data-ttu-id="dba34-103">Oprettelse, godkendelse og signering af tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-103">Creating, approving, and signing offers</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="dba34-104">I mange tilfælde skal forberedelse af en tilbudspakke til en kandidat være en meget hurtig proces.</span><span class="sxs-lookup"><span data-stu-id="dba34-104">In many cases, preparing an offer package for a candidate needs to be a very quick process.</span></span>
+<span data-ttu-id="dba34-105">Ved at bruge de skabeloner, der oprettes af Attract-administratoren, kan den, der udarbejder tilbuddet, spare tid på at forberede og sende tilbud til en kandidat.</span><span class="sxs-lookup"><span data-stu-id="dba34-105">Using the templates set up by the Attract administrator will cut down the time and effort for the offer creators to prepare and send offers to a candidate.</span></span>
+
+## <a name="create-an-offer"></a><span data-ttu-id="dba34-106">Oprette et tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-106">Create an offer</span></span>
+
+<span data-ttu-id="dba34-107">Når appen Tilbudsstyring er aktiveret, kan alle brugere med rollen som ansættelsesansvarlig eller rekrutteringsmedarbejder forberede en tilbudspakke til kandidaten.</span><span class="sxs-lookup"><span data-stu-id="dba34-107">When the Offer management app is turned on, any user with the role of hiring manager or recruiter can prepare an offer package for the candidate.</span></span> <span data-ttu-id="dba34-108">Gør følgende for at klargøre tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-108">To prepare the offer, do the following.</span></span>
+
+1.  <span data-ttu-id="dba34-109">Gå til jobbet og den kandidatansøgning, du opretter et tilbud for.</span><span class="sxs-lookup"><span data-stu-id="dba34-109">Navigate to the job and the candidate application that you are creating the offer for.</span></span>
+
+1.  <span data-ttu-id="dba34-110">Gå til **Tilbudsstadie**, og klik på **Forbered tilbud**.</span><span class="sxs-lookup"><span data-stu-id="dba34-110">Go to **Offer stage** and click **Prepare offer**.</span></span>
+
+    <span data-ttu-id="dba34-111">Du bliver omdirigeret til Tilbud-appen, hvor du kan se kandidaten med status **Ny**.</span><span class="sxs-lookup"><span data-stu-id="dba34-111">You will be redirected to the Offer app where you can see the candidate with the status of **New**.</span></span> <span data-ttu-id="dba34-112">Du kan også se andre tilbud, som du bidrager til, enten som tilbudsopretter eller -godkender.</span><span class="sxs-lookup"><span data-stu-id="dba34-112">You can also see other offers that you are contributing to, either as a creator or an approver.</span></span>
+
+1.  <span data-ttu-id="dba34-113">Klik på **Forbered tilbud**.</span><span class="sxs-lookup"><span data-stu-id="dba34-113">Click **Prepare Offer**.</span></span> 
+    
+    <span data-ttu-id="dba34-114">Du kan se et udvalg af forskellige tilbudspakker, der er gjort tilgængelige af administratoren.</span><span class="sxs-lookup"><span data-stu-id="dba34-114">You will see a choice of different offer packages that have been made available by the administrator.</span></span>
+
+1.  <span data-ttu-id="dba34-115">Vælg en pakke, og klik på **Udført** for at starte udarbejdelsen af tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-115">Select a package and click **Done** to start preparing the offer.</span></span>
+
+    <span data-ttu-id="dba34-116">Skabelonen til tilbudspakken indlæses med de samme job- og kandidatoplysninger som er angivet i tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-116">The offer package template loads with the corresponding job and candidate details populated in the offer.</span></span>
+
+1.  <span data-ttu-id="dba34-117">Alle pladsholdere for tilbudsdata, der indgår i tilbudspakken, kan ses på landingssiden.</span><span class="sxs-lookup"><span data-stu-id="dba34-117">All the offer data placeholders that are part of the offer package are visible in the landing page.</span></span> <span data-ttu-id="dba34-118">Du kan angive alle værdierne på tværs af pakken på denne side.</span><span class="sxs-lookup"><span data-stu-id="dba34-118">You can populate all the values across the package on this page.</span></span>
+
+    <span data-ttu-id="dba34-119">Du kan også se tilbudsdokumentskabeloner, der indgår i pakketilbuddet, på landingssiden.</span><span class="sxs-lookup"><span data-stu-id="dba34-119">On the landing page, you can also see all the offer document templates that are part of the offer package.</span></span>
+
+1.  <span data-ttu-id="dba34-120">Du kan nu muligvis redigere indholdet af tilbuddet, afhængigt af hvordan skabelonen er konfigureret af administratoren.</span><span class="sxs-lookup"><span data-stu-id="dba34-120">You may now be able to edit the content of the offer, depending on how the template was configured by the administrator.</span></span>
+
+1.  <span data-ttu-id="dba34-121">Hvis du vil fjerne dokumenter, der er markeret som ikke-obligatoriske, kan du gøre det.</span><span class="sxs-lookup"><span data-stu-id="dba34-121">If you need to remove documents marked as non-required, you can do so.</span></span>
+
+1. <span data-ttu-id="dba34-122">Når alle tilbudsdatapladsholdere er udfyldt, skal du klikke på **Gem** for at gemme en kladde af tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-122">When all the offer data placeholders are populated, click **Save** to save a draft of the offer.</span></span>
+
+>[!NOTE]
+> <span data-ttu-id="dba34-123">Når du har gemt en kladde, kan du slette kladdeversionen af tilbuddet eller vælge en ny pakkeskabelon, hvis du har brug for det.</span><span class="sxs-lookup"><span data-stu-id="dba34-123">After a draft is saved, you can delete the draft version of the offer or select a new package template, if necessary.</span></span>
+
+
+## <a name="approve-an-offer"></a><span data-ttu-id="dba34-124">Godkende et tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-124">Approve an offer</span></span>
+
+<span data-ttu-id="dba34-125">De fleste tilbud skal gennemgå en godkendelsesproces for at sikre, at tilbuddet opfylder de nødvendige standarder.</span><span class="sxs-lookup"><span data-stu-id="dba34-125">Most offers need to go through an approval process to make sure the offer meets the necessary standards.</span></span> <span data-ttu-id="dba34-126">Hvis tilbuddet ikke opfylder standarderne, for eksempel hvis den, der har oprettet tilbuddet, ikke har fulgt reglerne for tilbudsdata og har tilsidesat værdierne i tilbuddet, vælges godkendelsesprocessen.</span><span class="sxs-lookup"><span data-stu-id="dba34-126">If an offer does not meet standards, for example if the offer creator didn't follow the offer data rules and overrode the values in the offer, the approval process will be mandated.</span></span> <span data-ttu-id="dba34-127">Når du vil sende et tilbud til godkendelse, skal du gøre følgende:</span><span class="sxs-lookup"><span data-stu-id="dba34-127">To send an offer for approval, do the following.</span></span>
+
+1.  <span data-ttu-id="dba34-128">Når tilbuddet er i kladdetilstand, skal du tilføje godkendere i **Godkenderpanel**.</span><span class="sxs-lookup"><span data-stu-id="dba34-128">When the offer is in a draft state, add approvers on the **Approver panel**.</span></span> 
+    >[!NOTE]
+    > <span data-ttu-id="dba34-129">Ansættelsesansvarlige tilføjes som standard som godkender.</span><span class="sxs-lookup"><span data-stu-id="dba34-129">Hiring Managers are added as approver by default.</span></span> <span data-ttu-id="dba34-130">Du kan vælge enhver bruger i din organisation som godkender for tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-130">You can choose any user from your organization as an approver for the offer.</span></span>
+
+1.  <span data-ttu-id="dba34-131">Du kan eventuelt tildele godkendere i en sekventiel godkendelsesmetode eller i en parallel godkendelsesmetode.</span><span class="sxs-lookup"><span data-stu-id="dba34-131">If needed, assign approvers in a sequential approval method or on a parallel approval method.</span></span> <span data-ttu-id="dba34-132">Denne indstilling er kun tilgængelig, hvis den er konfigureret som sådan af administratoren.</span><span class="sxs-lookup"><span data-stu-id="dba34-132">This option will only be available if it was configured as such by the administrator.</span></span>
+    >[!NOTE]
+    > <span data-ttu-id="dba34-133">Hvis godkendelsesprocessen er sekventiel, kan du redigere rækkefølgen af godkendere, hvis det er nødvendigt.</span><span class="sxs-lookup"><span data-stu-id="dba34-133">If the approval process is sequential, you can edit the sequence of approvers if needed.</span></span>
+
+1.  <span data-ttu-id="dba34-134">Når du er færdig med at definere godkendelseskæden, kan du redigere indholdet af godkendelses-e-mailen og derefter sende beskeden til godkenderne.</span><span class="sxs-lookup"><span data-stu-id="dba34-134">When you are done defining the approval chain, you can edit the content of the approval email and then send the notification to the approvers.</span></span> <span data-ttu-id="dba34-135">Klik på **Send til godkendere**.</span><span class="sxs-lookup"><span data-stu-id="dba34-135">Click **Send to approvers**.</span></span>
+    >[!NOTE]
+    > <span data-ttu-id="dba34-136">Hvis tilbuddet ikke er standard, skal du angive en begrundelse.</span><span class="sxs-lookup"><span data-stu-id="dba34-136">If the offer was non-standard, you are required to provide a justification.</span></span>
+
+1.  <span data-ttu-id="dba34-137">Hvis den, der opretter tilbuddet, fravælger en godkender, kan han eller hun skrive en note og gå til den næste godkender.</span><span class="sxs-lookup"><span data-stu-id="dba34-137">If the offer creator chooses to skip an approver, they can enter a note and skip to the next approver.</span></span>
+
+<span data-ttu-id="dba34-138">Godkendere modtager en e-mail, hvor de bliver bedt om at godkende tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-138">Approvers will receive an email asking them to approve the offer.</span></span> <span data-ttu-id="dba34-139">De kan klikke på linket i e-mailen for at åbne tilbuddet, gennemse hele tilbudspakken og enten godkende den eller sende den tilbage til tilbudsopretteren.</span><span class="sxs-lookup"><span data-stu-id="dba34-139">They can click the link in the email to open the offer, review the entire offer package, and either approve it or send it back to the offer creator.</span></span> <span data-ttu-id="dba34-140">Tilbudsgodkendere skal tilføje endnu en note, hvis de afviser tilbudspakken, fordi den kræver yderligere redigering.</span><span class="sxs-lookup"><span data-stu-id="dba34-140">Offer approvers will need to add an additional note if they are rejecting the offer package for further edits.</span></span> 
+
+<span data-ttu-id="dba34-141">I tilfælde hvor der er en ny version af tilbuddet, som er oprettet, før godkenderen handler, kan godkenderen ikke godkende eller afvise tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-141">In cases where there is a new version of the offer created before the approver acts, the approver won’t be able to approve or reject the offer.</span></span>
+
+## <a name="offer-versioning"></a><span data-ttu-id="dba34-142">Versioner af tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-142">Offer versioning</span></span> 
+
+<span data-ttu-id="dba34-143">Når tilbuddet er godkendt eller sendt tilbage til yderligere redigeringer, kan du vælge indstillingen **Aktivér redigering** for at oprette en ny version af tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-143">When the offer has been approved or sent back for further edits, you can choose the **Enable editing** option to create a new version of the offer.</span></span> <span data-ttu-id="dba34-144">Den nye version af tilbuddet indeholder alle tilbudsdataværdierne og listen over godkendere, der er overført fra den seneste version.</span><span class="sxs-lookup"><span data-stu-id="dba34-144">The new version of the offer version has all the offer data values and the list of approvers carried over from the last version.</span></span> 
+
+<span data-ttu-id="dba34-145">Godkenderne kan skifte mellem forskellige tilbudsversioner, hvis versionerne er delt med dem med henblik på godkendelse.</span><span class="sxs-lookup"><span data-stu-id="dba34-145">Approvers can switch between different offer versions if the versions were shared with them for approval.</span></span> <span data-ttu-id="dba34-146">En godkender eller tilbudsopretter kan også vælge at slette en bestemt version af en tilbudskladde for at vende tilbage til det tidligere stadie.</span><span class="sxs-lookup"><span data-stu-id="dba34-146">Also, an approver or offer creator can choose to delete a specific draft offer version to go back to the previous state.</span></span>
+
+
+## <a name="send-an-offer-to-a-candidate"></a><span data-ttu-id="dba34-147">Sende et tilbud til en kandidat</span><span class="sxs-lookup"><span data-stu-id="dba34-147">Send an offer to a candidate</span></span> 
+
+<span data-ttu-id="dba34-148">Når tilbuddet er gemt, godkendt og klar til at blive sendt til kandidaten, skal du klikke på **Send til kandidat**.</span><span class="sxs-lookup"><span data-stu-id="dba34-148">When the offer is saved, approved, and ready to be sent to the candidate, click **Send to candidate**.</span></span>
+
+<span data-ttu-id="dba34-149">Der er flere handlinger, som du kan udføre, før du sender tilbuddet til kandidaten.</span><span class="sxs-lookup"><span data-stu-id="dba34-149">There are several actions you can take before sending the offer to the candidate.</span></span>
+-  <span data-ttu-id="dba34-150">Du kan få vist oversigten over dokumenter, der indgår i tilbudspakken, som skal sendes til kandidaten.</span><span class="sxs-lookup"><span data-stu-id="dba34-150">You can view the list of documents that are part of the offer package that will be sent to the candidate.</span></span>
+
+-  <span data-ttu-id="dba34-151">Du kan angive en udløbsdato for tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-151">You can specify an offer expiration date.</span></span> <span data-ttu-id="dba34-152">Kandidater forventes at acceptere eller afvise tilbuddet før udløbsdatoen.</span><span class="sxs-lookup"><span data-stu-id="dba34-152">Candidates are expected to accept or decline the offer before the expiration date.</span></span>  <span data-ttu-id="dba34-153">Kandidaten går tilsendt en påmindelse, 48 timer før tilbuddet udløber.</span><span class="sxs-lookup"><span data-stu-id="dba34-153">The candidate will be sent a reminder 48 hours before the offer expires.</span></span>
+
+-  <span data-ttu-id="dba34-154">Der kan være flere dokumenter, du vil medtage i processen til accept af tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-154">There may be additional documents that you want to include in the offer acceptance process.</span></span> <span data-ttu-id="dba34-155">Du har mulighed for at angive den dokumenttype, der kræves.</span><span class="sxs-lookup"><span data-stu-id="dba34-155">You will have the option to list the document type required.</span></span>
+
+-  <span data-ttu-id="dba34-156">Du kan få vist og rediger e-mailskabelonen efter behov.</span><span class="sxs-lookup"><span data-stu-id="dba34-156">You can view and edit the email template as needed.</span></span>
+
+<span data-ttu-id="dba34-157">Når tilbuddet er klar, og du klikker på **Send til kandidat**, modtager kandidaten en e-mail om, at et tilbud afventer gennemsyn.</span><span class="sxs-lookup"><span data-stu-id="dba34-157">When the offer is ready and you click **Send to candidate**, the candidate will receive an email that an offer is waiting for review.</span></span>
+
+
+## <a name="candidates-actions-after-receiving-an-offer"></a><span data-ttu-id="dba34-158">Kandidatens handlinger efter modtagelse af et tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-158">Candidate’s actions after receiving an offer</span></span>
+
+<span data-ttu-id="dba34-159">Når kandidaten har fået besked om, at der er et delt tilbud, kan han eller hun klikke på linket i sin e-mail for at gå til ansøgningsdashboardet og se tilbuddet.</span><span class="sxs-lookup"><span data-stu-id="dba34-159">After the candidate has been notified that an offer has been shared with them, they can click the link in their email to go to the application dashboard and view the offer.</span></span> <span data-ttu-id="dba34-160">I dashboardet kan kandidaten se de aktiviteter, han eller hun stadig skal udføre.</span><span class="sxs-lookup"><span data-stu-id="dba34-160">The dashboard will show the candidate any activities that they still need to complete.</span></span>
+
+1.  <span data-ttu-id="dba34-161">For at få vist tilbuddet og alle relaterede dokumenter skal kandidaten klikke på **Vis tilbud**.</span><span class="sxs-lookup"><span data-stu-id="dba34-161">To view the offer and all related documents, the candidate must click **View offer**.</span></span>
+
+    <span data-ttu-id="dba34-162">Kandidaterne kan også downloade tilbudspakken i .zip-format.</span><span class="sxs-lookup"><span data-stu-id="dba34-162">Candidates can also download the offer package in a .zip format.</span></span>
+
+1.  <span data-ttu-id="dba34-163">For at acceptere tilbuddet skal kandidaterne klikke på **Gå til underskrift** for hvert dokument, der indgår i tilbudspakken.</span><span class="sxs-lookup"><span data-stu-id="dba34-163">To accept the offer, the candidates must click **Jump to signature** for each document that’s part of the offer package.</span></span>
+
+1.  <span data-ttu-id="dba34-164">Når dokumenterne hver især er underskrevet og accepteret, skal kandidaten vælge at afslutte acceptprocessen ved at klikke på **Acceptér tilbud** øverst på siden.</span><span class="sxs-lookup"><span data-stu-id="dba34-164">When all of the documents have been individually signed and accepted, the candidate must choose to finish the acceptance process by clicking **Accept Offer** at the top of the page.</span></span>
+
+1.  <span data-ttu-id="dba34-165">Hvis kandidaten til afslå tilbuddet, skal han eller hun klikke på **Afvis tilbud** øverst på siden, vælge den relevante årsag, tilføje en kommentar efter behov og derefter klikke på **Afvis**.</span><span class="sxs-lookup"><span data-stu-id="dba34-165">To decline the offer, the candidate must click **Decline the offer** on the top of the page, select an appropriate reason, add a comment as necessary, and then click **Decline**.</span></span>
+
+1.  <span data-ttu-id="dba34-166">Når kandidaten har accepteret eller afvist tilbuddet, kan vedkommende fortsat forblive i tilbudsvisningen eller gå tilbage til ansøgningsdashboardet.</span><span class="sxs-lookup"><span data-stu-id="dba34-166">After they have accepted or declined the offer, the candidate can continue to stay in the offer view or go back to the application dashboard.</span></span>
+
+1.  <span data-ttu-id="dba34-167">Hvis der blev anmodet om andre dokumenter som et led i processen til accept af tilbuddet, skal kandidaten vælge at overføre de krævede dokumenter og mærke dem til den dokumenttype, der blev anmodet om.</span><span class="sxs-lookup"><span data-stu-id="dba34-167">If there were other documents requested as part of the offer acceptance process, the candidate should choose to upload the documents as necessary and tag them to the document type requested.</span></span>
+
+1.  <span data-ttu-id="dba34-168">Tilbudsopretteren får besked, når alle dokumenter er overført, og tilbudspakken er underskrevet.</span><span class="sxs-lookup"><span data-stu-id="dba34-168">The offer creator will be notified when all the documents have been uploaded and the offer package has been signed.</span></span>
+
+
+## <a name="withdrawing-an-offer"></a><span data-ttu-id="dba34-169">Trække et tilbud tilbage</span><span class="sxs-lookup"><span data-stu-id="dba34-169">Withdrawing an offer</span></span>
+
+<span data-ttu-id="dba34-170">Et tilbud kan trækkes tilbage fra en kandidat når som helst og af forskellige årsager.</span><span class="sxs-lookup"><span data-stu-id="dba34-170">An offer can be withdrawn from a candidate at any point in time for various reasons.</span></span> 
+1.  <span data-ttu-id="dba34-171">Træk tilbuddet tilbage ved at klikke på ellipseknappen (**...**) og derefter klikke på **Træk dette tilbud tilbage**.</span><span class="sxs-lookup"><span data-stu-id="dba34-171">Withdraw the offer by clicking the ellipsis button (**…**), and then click **Withdraw the offer**.</span></span> 
+
+2. <span data-ttu-id="dba34-172">Der vises en meddelelse, hvor du bliver spurgt, om kandidaten er blevet kontaktet om ændringen af status.</span><span class="sxs-lookup"><span data-stu-id="dba34-172">A message will appear asking whether the candidate has been contacted about the change in status.</span></span> <span data-ttu-id="dba34-173">Hvis kandidaten ikke er blevet kontaktet, har du mulighed for at sende en e-mail til kandidaten med oplysninger om yderligere handlinger.</span><span class="sxs-lookup"><span data-stu-id="dba34-173">If the candidate hasn't been contacted yet, you will have the option to send an email to the candidate informing them of further actions.</span></span> 
+
+   <span data-ttu-id="dba34-174">Tilbuddet vil ikke længere være tilgængeligt for kandidaten.</span><span class="sxs-lookup"><span data-stu-id="dba34-174">The offer will no longer accessible by the candidate.</span></span>
+
+
+## <a name="closing-an-offer"></a><span data-ttu-id="dba34-175">Lukning af et tilbud</span><span class="sxs-lookup"><span data-stu-id="dba34-175">Closing an offer</span></span> 
+
+<span data-ttu-id="dba34-176">Når et tilbud er blevet accepteret, afvist eller trukket tilbage, uden at der kræves yderligere handlinger, kan du lukke tilbuddet, så der ikke kan foretages yderligere redigeringer af denne tilbudspakke.</span><span class="sxs-lookup"><span data-stu-id="dba34-176">When an offer has been accepted, declined, or withdrawn with no further actions needed, you can close the offer so that no further edits can be made to this offer package.</span></span>
+
