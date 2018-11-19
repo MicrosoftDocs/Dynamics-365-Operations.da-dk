@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Finansudligninger
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Med Finansudligninger kan du sammenholde debet- og kreditposteringer i finansmodulet og markere dem som udlignet. På denne måde kan du sikre dig, at relaterede posteringer er blevet afstemt. Du kan også tilbageføre udligninger, hvis de er foretaget ved en fejltagelse.
 
