@@ -3,7 +3,7 @@ title: Konfigurer momsafregningsperioder
 description: Momsafregningsperioder indeholder oplysninger om de periodeintervaller, der skal indrapporteres og betales moms for.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Konfigurer momsafregningsperioder
@@ -50,13 +50,15 @@ Denne opgave bruger demofirmaet USMF.
 12. Angiv antallet af enheder i periodeintervallet pr. periode. For eksempel har en kvart 3 måneder.
 13. Markér eller fjern markeringen af afkrydsningsfeltet Brug batchbehandling til afregning af moms.
     * Udligningsprocessen for afregningsperioden kan behandles som batchjob i baggrunden. Dette anbefales ved et stort antal momstransaktioner inden for et periodeinterval.  
-14. Udvid fanen Periodeintervaller.
-15. Klik på Tilføj.
-16. Markér den valgte række på listen.
-17. Indtast en dato i feltet Fra dato.
-18. Indtast en dato i feltet Til dato.
-19. Klik på Nyt periodeinterval.
+14. Marker eller fjern markeringen i afkrydsningsfeltet Undgå at generere modregning af momsposteringer.
+    * Som standard genererer systemet modregning af momsposteringer under udligningsprocessen, hvilket kan give problemer med ydeevnen, hvis der er et stort antal momsposteringer inden for et periodeinterval. Marker dette afkrydsningsfeltet for at undgå, at der genereres modregning af momsposteringer.
+15. Udvid fanen Periodeintervaller.
+16. Klik på Tilføj.
+17. Markér den valgte række på listen.
+18. Indtast en dato i feltet Fra dato.
+19. Indtast en dato i feltet Til dato.
+20. Klik på Nyt periodeinterval.
     * Når du har angivet det første periodeinterval, kan der automatisk oprettes nye perioder. Du kan vende tilbage og tilføje nye periodeintervaller efter behov.  
-20. Luk siden.
+21. Luk siden.
 
 

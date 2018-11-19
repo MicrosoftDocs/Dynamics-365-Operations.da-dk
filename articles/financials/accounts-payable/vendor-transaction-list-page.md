@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 53740f6ed0d463de5ba962f1ba15b208634a0739
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Vis udligninger
 
-Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningshistorikken og yderligere oplysninger om hele udligningsposteringen. Du kan også vise ekstra posteringer, der vedrører den valgte postering, enten fordi de var en del af samme udligning, eller fordi de er betalinger, der er oprettet i samme betalingskladde.
+Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningshistorikken og detaljerede oplysninger om udligningsposteringen. Du kan også vise ekstra posteringer, der vedrører den valgte postering, enten fordi de var en del af samme udligning, eller fordi de er betalinger, der er oprettet i samme betalingskladde.
 
 1. Vælg **Kreditor \> Alle kreditorer**.
 2. Vælg en kreditor med posteringer, og brug derefter handlingsruden under fanen **Kreditor** til at vælge **Posteringer**.
@@ -49,7 +49,7 @@ Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningsh
 
 ## <a name="global-transactions"></a>Globale transaktioner
 
-Knappen **Globale transaktioner**er føjet til leverandøren. Med denne knap kan du få vist alle posteringer for en juridisk enhed på tværs af alle juridiske enheder. **Kreditorposteringer**-listesiden viser kun transaktioner for de juridiske enheder, som brugeren har adgang til, på basis af vedkommendes sikkerhedsindstillinger.
+Knappen **Globale transaktioner** vises også på listesiden **Kreditorposteringer**. Med denne knap kan du få vist alle posteringer for en juridisk enhed på tværs af alle juridiske enheder. **Kreditorposteringer**-listesiden viser kun transaktioner for de juridiske enheder, som brugeren har adgang til, på basis af vedkommendes sikkerhedsindstillinger.
 
 Listesiden viser alle transaktioner for leverandører, der har samme part-id som den leverandør, du startede med. Hvis leverandøren US-001 i én juridisk enhed har samme part-id som leverandøren DE-001 i en anden juridisk enhed, vises alle transaktioner for begge leverandør-id'er.
 
@@ -67,13 +67,13 @@ Filteret til at vise åbne transaktioner er blevet erstattet med et nyt filter, 
 - **Alle** – Vis alle transaktioner for de valgte kreditorer (åbne og lukkede).
 - **Lukkede** – Vis kun de transaktioner, der er fuldt udlignet og lukket.
 - **Åbne** – Vis kun de transaktioner, der ikke er fuldt udlignet.
-- **Åben pr. dato** – Vis kun de transaktioner, der ikke er udlignet fuldt ud fra en dato, du angiver. Når du vælger denne indstilling, kan du ændre den dato, der vises ud for filteret. Transaktioner, der har værdien **Sidste udligningsdato** efter den dato, du angiver, vises på listen, selvom disse transaktioner er fuldt udlignet pr. dags dato. Saldoen viser dog saldi pr. dags dato, ikke fra den valgte dato.
+- **Åbne, herunder lukkede på eller efter datoen** – Vis kun transaktioner, der ikke er fuldt udlignet på eller efter en dato, du angiver. Når du vælger denne indstilling, kan du ændre den dato, der vises ud for filteret. Transaktioner, der har værdien **Sidste udligningsdato** på eller efter den dato, du angiver, vises på listen, selvom disse transaktioner er fuldt udlignet pr. dags dato. Saldoen viser dog saldi pr. dags dato, ikke fra den valgte dato.
 
-Et filter er også tilføjet, så du kan skjule transaktioner for valutaomregning. Markér afkrydsningsfeltet **Skjul værdireguleringer af valuta**.
+Markér afkrydsningsfeltet **Skjul værdireguleringer af valuta** for at skjule valutaomregningstransaktioner.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Lettere at redigere forfaldsdatoer og rabatdatoer
+## <a name="modify-due-dates-and-discount-dates"></a>Redigere forfaldsdatoer og rabatdatoer
 
-Du kan opdatere forfaldsdatoer og rabatdatoer for åbne debitorposteringer. I version 8.1 er funktionen forbedret. Du kan nu tilføje forfaldsdatoer på listesiden **Kreditorposteringer**. Ved at klikke på forfaldsdatoen på **Kreditorposteringer**-listesiden kan du også ændre forfaldsdatoer, rabatdatoer, betalingsbetingelser og kasserabatvilkår i dialogboksen **Opdater forfaldsdato og kasserabatdatoer**.
+Du kan opdatere forfaldsdatoer og rabatdatoer for åbne debitorposteringer. I version 8.1 kan du nu tilføje forfaldsdatoer på listesiden **Kreditorposteringer**. Ved at klikke på forfaldsdatoen på **Kreditorposteringer**-listesiden kan du også ændre forfaldsdatoer, rabatdatoer, betalingsbetingelser og kasserabatvilkår i dialogboksen **Opdater forfaldsdato og kasserabatdatoer**.
 
 ### <a name="activate-the-feature"></a>Aktivér funktionen
 
@@ -83,19 +83,19 @@ Hvis du vil tilføje forfaldsdatoer på **Kreditorposteringer**-listesiden og æ
 2. På fanen **Udligninger** skal du angive indstillingen **Vis forfaldsdato, og tillad redigering** til **Ja**.
 3. For at aktivere denne funktion er der tilføjet nye felter i kreditorposteringer. Disse felter skal udfyldes, når en ny postering fuldføres. De vil også blive udfyldt, når du åbner dialogboksen **Opdater forfaldsdato og kasserabatdatoer**. Når du angiver indstillingen **Vis forfaldsdato, og tillad redigering** til **Ja**, kan du se dialogboksen **Opdater betalingsoplysninger**.  Hvis du vil opdatere eksisterende posteringer med det samme, skal du vælge **Opdater alle eksisterende posteringer**. Alternativt kan du vælge kun at udfylde felterne for nye posteringer ved at vælge **Fortsæt uden opdatering**.
 
-Forfaldsdatoen er nu føjet til **Kreditorposteringer**-listesiden, og du kan nemmere ændre forfaldsdatoen og kasserabatdatoer for posteringer.
+Forfaldsdatoen er nu føjet til **Kreditorposteringer**-listesiden, så du nemt kan ændre forfaldsdatoen og kasserabatdatoer for posteringer.
 
 ### <a name="modify-the-payment-settings"></a>Rediger betalingsindstillingerne
 
-**Kreditorposteringer**-listesiden indeholder alle posteringer for en kreditor. Når du vælger forfaldsdatoen for en postering, vises en dialogboks. Denne dialogboks viser stamdata for forfaldsdato og rabatberegninger, forfaldsdatoen, betalingsbetingelserne, kasserabatbetingelserne og kasserabatdatoerne.
+**Kreditorposteringer**-listesiden indeholder alle posteringer for en kreditor. Når du vælger forfaldsdatoen for en postering, vises en dialogboks. Denne dialogboks viser stamdata for forfaldsdato og rabatberegninger, forfaldsdato, betalingsbetingelser, kasserabatbetingelser og kasserabatdatoer.
 
 Hvert felt har en særskilt virkning på posteringen, når du redigerer den:
 
-- **Rediger basisdato:** Forfaldsdatoen og rabatdatoerne ændres, hvis basisdatoen er dokumentdatoen.
-- **Rediger forfaldsdatoen:** Kun forfaldsdatoen ændres
-- **Rediger rabatdatoerne :** Kun rabatdatoerne ændres.
-- **Rediger betalingsbetingelserne:** Forfaldsdatoen ændres på basis af basisdatoen og betalingsbetingelserne.
-- **Rediger kasserabatbetingelserne:** Kasserabatterne ændres på basis af basisdatoen og kasserabatbetingelserne.
+- **Rediger basisdato:** - Forfaldsdatoen og rabatdatoerne ændres, hvis basisdatoen er dokumentdatoen.
+- **Rediger forfaldsdatoen:** - Kun forfaldsdatoen ændres
+- **Rediger rabatdatoerne :** - Kun rabatdatoerne ændres.
+- **Rediger betalingsbetingelserne:** - Forfaldsdatoen ændres på basis af basisdatoen og betalingsbetingelserne.
+- **Rediger kasserabatbetingelserne:** - Kasserabatterne ændres på basis af basisdatoen og kasserabatbetingelserne.
 
 Når du er færdig med at redigere betalingsindstillingerne, skal du vælge **Luk** for at gemme ændringerne.
 

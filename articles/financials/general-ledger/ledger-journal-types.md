@@ -1,9 +1,9 @@
 ---
 title: Finanskladdetyper
-description: "I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations."
+description: "Dette emne beskriver de kladdetyper, du har angivet for økonomikladder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations.
+Dette emne beskriver de kladdetyper, du har angivet for økonomikladder. Brug siden **Kladdenavne** til at konfigurere kladder, som du kan bruge i hele Microsoft Dynamics 365 for Finance and Operations.
 
 | Kladdetype                      | Formål                       | Angive posteringer på denne side                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ I denne artikel beskriver de kladdetyper, du har angivet for økonomikladder. Br
 | Lønudbetaling              | Udsted betalinger, der er baseret på lønafdelingens lønsedler. Du kan ikke angive transaktioner manuelt i denne kladde. Du skal generere lønsedler og derefter sende disse lønsedler til betaling.                                                                                                                                                              |                                                                |
 | Periodisk                          | Opret posteringer i den periodiske kladde.                                                                                                                                                                                                                                                                                                      | Periodiske kladder                                              |
 | Bogføring af anlægsaktiver                 | Bogfør anlægsaktivposter.                                                                                                                                                                                                                                                                                                                              | Anlægsaktiver                                                   |
-| Projekt - udgifter                | Opret projektets udgiftsposter.                                                                                                                                                                                                                                                                                                                        | Udgift                                                        |
+| Projekt - udgifter                | Opret projektets udgiftsposter.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Regulering af rapporteringsvaluta     | Opret reguleringer i rapporteringsvalutaen saldi på finanskonti.               | Reguleringskladder for rapporteringsvaluta                         |
 | Statistikposter            | Opret statistikposter.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Kreditorbankremittering            | Opret en egenvekselremitteringsfil, der kan sendes til virksomhedens bank.                                                                                                                                                                                                                                                                      | Remitteringskladde                                             |
 | Kreditorbetaling               | Opret kreditorbetalingsposter.                                                                                                                                                                                                                                                                                                                    | Betalingskladde                                                |
