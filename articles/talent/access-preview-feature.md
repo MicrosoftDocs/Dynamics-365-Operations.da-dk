@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Du kan bruge indstillingen **Prøveversioner** i Microsoft Dynamics 365 for Tale
 1. Log på Microsoft Dynamics 365 for Talent: Attract.
 2. I menuen **Opsætning** (tandhjulsymbolet) i øverste højre hjørne skal du vælge **Administratorindstillinger**.
 3. Under fanen **Administration af funktioner** skal du vælge indstillingen ud for **Funktioner i prøveversioner**, så den bliver blå.
-4. Opdater browseren for at begynde at se de nye funktioner. (Alle brugere, der allerede er logget på, kan se funktionerne, næste gang de logger på, eller de kan opdatere deres webbrowser for at få vist funktionerne med det samme).
+4. Du kan vælge at styre individuelle funktioner ved at aktivere/deaktivere bestemte funktioner på denne side.
+5. Opdater browseren for at begynde at se de nye funktioner. (Alle brugere, der allerede er logget på, kan se funktionerne, næste gang de logger på, eller de kan opdatere deres webbrowser for at få vist funktionerne med det samme).
 
 #### <a name="core-hr"></a>Grundlæggende personalefunktioner
 
@@ -61,18 +62,17 @@ Du kan bruge indstillingen **Prøveversioner** i Microsoft Dynamics 365 for Tale
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktioner, der i øjeblikket findes som eksempelfunktioner
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Tiltræk
 
-- **Job-skabeloner** – Du kan nu oprette skabeloner til ansættelsesprocessen. Brugerne kan allerede tilpasse ansættelsesprocessen for et bestemt job. Men de kan nu også oprette skabeloner til processen og derefter vælge den relevante skabelon, når der oprettes et bestemt job. Derfor hjælper denne funktion med at strømline joboprettelsesprocessen.
-- **Karrierewebsted** – Den aktuelle version af karrierewebstedet viser kun en liste over alle åbne sager. Der vil dog blive tilføjet flere egenskaber til webstedet på et senere tidspunkt. Job kan markeres som enten interne eller eksterne. Interne brugere, der logger på webstedet, ser både interne job og eksterne job. Men ikke-interne brugere og brugere, der ikke er logget på, kan kun se eksterne job.
-- **Jobopslag** – Du kan nu opslå job på karrierewebstedet.
-- **LinkedIn-jobopslag** – Du kan nu opslå job på LinkedIn.
+- **Relevante kandidater i et Job** – Rekrutteringsmedarbejdere og ansættelsesansvarlige kan nemt se, hvilke ansøgere der kan være de mest relevante til jobbet på tværs af alle ansøgere. De 5 højst prioriterede ansøgere vises ud fra relevansen af deres CV/profil i forhold til jobbeskrivelsen.
+- **Relevante job** – Kandidaterne kan nu se en liste over andre job, der er relevante for dem, baseret på deres CV/profil og jobbeskrivelserne.  I øjeblikket vises dette til kandidaterne, når de ansøger, som forslag til andre muligheder.
+- **Understøttelse af EEO/OFCCP** – Nye aktivitetstyper muliggør brugen af en foruddefineret formular til indsamling af data for lige ansættelsesmuligheder (EEO) og OFCCP-data (Office of Federal Contract Compliance Program) fra kandidaten.  Dette er en foruddefineret formular, som ikke kan redigeres.
 
     > [!NOTE]
     > Job, der er slået op, kan kun ses af kunder, der abonnerer på en eller flere LinkedIn-joboversigtsprodukter. Ellers kan kunderne kun se et job, hvis de eksplicit søger efter det. Der er en forsinkelse, når job slås op på LinkedIn. Det kan tage et par timer, før et job vises, når det er opslået fra Attract.
 
 - **Kandidatansøgning** – Både interne og eksterne kandidater kan nu ansøge direkte fra jobsiden på karrierewebstedet.
-- **Offer Management** – Brugerne kan nu oprette tilbudsbreve fra skabeloner, der indeholder pladsholdere. Efterhånden som kandidaterne avancerer til jobtilbudsstadiet, kan rekrutteringsmedarbejder eller ansættelseschefer bruge tilbudsværktøjet til at forberede en ansøgers formelle tilbud via skabeloner, sende tilbuddet til intern godkendelse og endelig sende tilbuddet til kandidaten til underskrivning. Der vil blive tilføjet mange nye funktioner til tilbudsværktøjet med tiden, og eksempelversionen vil blive opdateret med disse funktioner, når vi er klar til at frigive dem som eksempelfunktioner.
+- **Offer Management** – Brugerne kan nu oprette tilbudsbreve fra skabeloner, der indeholder pladsholdere. Efterhånden som kandidaterne avancerer til jobtilbudsstadiet, kan rekrutteringsmedarbejder eller ansættelsesansvarlige bruge tilbudsværktøjet til at forberede en ansøgers formelle tilbud via skabeloner, sende tilbuddet til intern godkendelse og endelig sende tilbuddet til kandidaten til underskrivning. Der vil blive tilføjet mange nye funktioner til tilbudsværktøjet med tiden, og eksempelversionen vil blive opdateret med disse funktioner, når vi er klar til at frigive dem som eksempelfunktioner.
 
 ### <a name="core-hr"></a>Grundlæggende personalefunktioner
 

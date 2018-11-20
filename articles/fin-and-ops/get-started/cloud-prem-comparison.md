@@ -3,7 +3,7 @@ title: "Sammenligning af funktioner i skyen og i det lokale miljø"
 description: "Emnet viser, hvilke funktioner der understøttes i skyen og lokalt."
 author: robinarh
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 4354b9d55cc84f7c74020d95617c406dc5fb225c
+ms.sourcegitcommit: 53c0da5e9697deaf946ccd4fbcd2102faa62b195
+ms.openlocfilehash: bc2b8aafa28d3998e223891fa95e3fe8175349e6
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 
@@ -41,33 +41,33 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Areal | Funktion | Sky | I det lokale miljø|
 |---|---|---|---|
 | Overholdelse og certificeringer | | Ja | Ja |
-| | SOC 1 Type 1-certificering| Ja | Nr. |
+| | SOC 1 Type 1-certificering| Ja | Nej |
 | Driftsregnskab | | Ja | Ja |
-| | Indholdspakke om driftsregnskab til Power BI| Ja | Nr. |
-| | Appen Driftsregnskabsarbejdsområde til mobil| Ja | Nr. |
+| | Indholdspakke om driftsregnskab til Power BI| Ja | Nej |
+| | Appen Driftsregnskabsarbejdsområde til mobil| Ja | Nej |
 | Omkostningsstyring| | Ja | Ja |
-| | Indholdspakke om omkostningsstyring til Power BI | Ja | Nr. |
+| | Indholdspakke om omkostningsstyring til Power BI | Ja | Nej |
 | Datastyring og -integration| | Ja | Ja |
-| | Konfigurationsdrevet udvidelse| Ja | Nr. |
+| | Konfigurationsdrevet udvidelse| Ja | Nej |
 | | Eksportere data til dit eget datalager| Ja | Ja |
-| | Aktiver eksport af trinvise opdateringer til en dataenhed | Ja | Nr. |
+| | Aktiver eksport af trinvise opdateringer til en dataenhed | Ja | Nej |
 | | Dataintegrationer                 |Ja | Ja|
 | Dokumentstyring| | Ja| Ja |
 | Økonomistyring|  | Ja | Ja |
-| Hjælp| | Ja | Nr. |
+| Hjælp| | Ja | Nej |
 | Personale | | Ja | Ja |
 | Intelligence| | Ja | Ja |
-| | Elektronisk rapportering (ER) - Integration med LCS | Ja | Nr.|
-| | Elektronisk rapportering (ER) - Integration med SharePoint | Ja | Nr.|
-| | Integration med PowerBI.com| Ja | Nr. |
-| | Analytiske arbejdsområder | Ja | Nr. |
-| | Intelligent forretningsproces: anbefalinger| Ja | Nr. |
-| | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery | Ja | Nr. |
-| | SQL Server Reporting Services (SSRS) understøtter udskalering  | Ja | Nr. |
-| | Telemetri overføres til skyen | Ja | Nr. |
+| | Elektronisk rapportering (ER) - Integration med LCS | Ja | Nej|
+| | Elektronisk rapportering (ER) - Integration med SharePoint | Ja | Nej|
+| | Integration med PowerBI.com| Ja | Nej |
+| | Analytiske arbejdsområder | Ja | Nej |
+| | Intelligent forretningsproces: anbefalinger| Ja | Nej |
+| | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery | Ja | Nej |
+| | SQL Server Reporting Services (SSRS) understøtter udskalering  | Ja | Nej |
+| | Telemetri overføres til skyen | Ja | Nej |
 | Lagerstyring| | Ja | Ja |
 | Lifecycle Services| | Ja | Ja |
-| | Forretningsprocesser, der kan konfigureres | Ja | Nr. |
+| | Forretningsprocesser, der kan konfigureres | Ja | Nej |
 | Lokaliseringer| | Ja | Ja |
 | Produktion| | Ja | Ja |
 | Varedisponering og prognose| | Ja | Ja |
@@ -75,17 +75,17 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Office-integration| | Ja | Ja |
 | Organisationsadministration | | Ja | Ja |
 | Payroll|  | Ja | Ja |
-| | Direkte indbetaling| Ja | Nr. |
+| | Direkte indbetaling| Ja | Nej |
 | Indkøb og forsyning| | Ja | Ja |
-| | Kobling til eksternt katalog for indkøbsrekvisitioner| Ja | Nr. |
-| | Power BI-rapporter til købsforbrugsanalyse| Ja | Nr. |
+| | Kobling til eksternt katalog for indkøbsrekvisitioner| Ja | Nej |
+| | Power BI-rapporter til købsforbrugsanalyse| Ja | Nej |
 | Administration af produktoplysninger | | Ja | Ja |
 | Produktmasterdata| | Ja | Ja|
 | Produktion | | Ja | Ja |
-| | Power BI-rapporter til produktionsperformance| Ja | Nr. |
+| | Power BI-rapporter til produktionsperformance| Ja | Nej |
 | Projektstyring og regnskab|  | Ja | Ja |
 | Salg| | Ja | Ja |
-| | Salgs- og rentabilitetsperformance i Power BI-rapporter| Ja | Nr. |
+| | Salgs- og rentabilitetsperformance i Power BI-rapporter| Ja | Nej |
 | Sikkerhed | | Ja | Ja |
 | Servicestyring| | Ja | Ja |
 | Supply Chain Management| | Ja | Ja |
@@ -93,11 +93,11 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Kreditorsamarbejde| | Ja | Ja|
 | Lokationsstyring| | Ja | Ja |
 | | Lagerstedsapp til mobil| Ja | Ja |
-| | Power BI-rapporter om lagersted| Ja | Nr. |
+| | Power BI-rapporter om lagersted| Ja | Nej |
 | Webklient | | Ja | Ja |
-| | Arbejdsrutineoptager - gemme eller indlæse opgaveregistreringer fra BPM-biblioteket| Ja | Nr. |
+| | Arbejdsrutineoptager - gemme eller indlæse opgaveregistreringer fra BPM-biblioteket| Ja | Nej |
 | Support | | Ja | Ja |
-| | Adgang til support via menuen Hjælp og Support| Ja | Nr. |
+| | Adgang til support via menuen Hjælp og Support| Ja | Nej |
 
 ### <a name="development-and-administration"></a>Udvikling og administration
 
@@ -108,25 +108,22 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Overvågning og telemetri  || Ja | Ja |
 | Platformkompatibilitet  || Ja | Ja |
 | Servicering | | Ja | Ja |
-| | Service af miljøer | Ja | Nr. |
-| Trace Parser og PerfTimer | | Ja | Nr. |
+| | Service af miljøer | Ja | Nej |
+| Trace Parser og PerfTimer | | Ja | Nej |
 | Opgrader | | Ja | Ja |
-| | Opgrader | Ja | Nr. |
-| | Opgradering og understøttelse af tidligere versioner | Ja | Nr. |
+| | Opgrader | Ja | Nej |
+| | Opgradering og understøttelse af tidligere versioner | Ja | Nej |
 | Visual Studio-udvikling |  | Ja | Ja |
 
 
-## <a name="dynamics-365-for-retail"></a>Dynamics 365 for Retail 
-
-| Areal | Funktion | Sky | I det lokale miljø|
-|---|---|---|---|
-| Alle Retail-områder | Alle Retail-funktioner | Ja | Nr. |
+### <a name="retail"></a>Retail 
+Du kan se en liste over detailfunktioner, der er tilgængelige i lokale installationer, i [Detailegenskaber, der er tilgængelige i lokale installationer](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
 | Areal | Funktion | Sky | I det lokale miljø|
 |---|---|---|---|
-| Alle Talent-områder | Alle Talent-funktioner | Ja | Nr. |
+| Alle Talent-områder | Alle Talent-funktioner | Ja | Nej |
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

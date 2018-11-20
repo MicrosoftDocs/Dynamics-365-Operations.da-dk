@@ -3,7 +3,7 @@ title: Konfigurere automatisk fragtafstemning
 description: Denne procedure viser, hvordan du konfigurerer data til automatisk fragtafstemning.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Konfigurere automatisk fragtafstemning
@@ -36,9 +36,9 @@ Denne procedure viser, hvordan du konfigurerer data til automatisk fragtafstemni
     * Typen af fragtbrev definerer, hvordan fragtbreve og fragtfakturaer skal sammenholdes.  
 2. Klik på Ny.
 3. Skriv en værdi i feltet Fragtbrevstype.
-4. I programassembly'en skal du skrive 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.
+4. I feltet Programassembly skal du skrive 'Microsoft.Dynamics.Ax.Tms.dll'.
     * Dette er kodebiblioteket for programmet til sammenligning af transportstyring.  
-5. I programklassen skal du skrive 'Microsoft.Dynamics.Ax.Tms.dll'.
+5. I feltet Programklasse skal du skrive 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.
     * Dette er klassen for programmet til sammenligning af transportstyring.  
 6. Klik på Ny.
 7. Vælg den værdi, der skal svare til fragtbrevet og fragtfakturaen, i feltet Beskrivelse.  

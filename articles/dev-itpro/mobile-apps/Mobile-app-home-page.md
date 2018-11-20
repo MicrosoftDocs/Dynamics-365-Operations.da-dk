@@ -3,7 +3,7 @@ title: Startside for Dynamics 365 for Unified Operations Mobile-app
 description: "I dette emne beskrives Microsoft Dynamics 365 for Unified Operations-mobilappen. Emnet indeholder links til ressourcer, der kan hjælpe dig med implementere appen i din organisation."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: d6d26da330974305fa3725fe7c2506d198b17e2c
+ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
+ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
@@ -61,7 +61,7 @@ Navigation i mobilappen består af fire grundbegreber: dashboardet, arbejdsområ
 ## <a name="implementation-process"></a>Implementeringsproces
 I følgende illustration vises processen til implementering af både arbejdsområder til mobilenheder, der leveres af Microsoft, og brugerdefinerede arbejdsområder til mobilenheder. 
 
-![Implementeringsproces for mobilapps](./media/Mobile-implementation-process-5.png)
+[![Implementeringsproces for mobilapps](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Tabellen nedenfor indeholder links til ressourcer, der kan hjælpe dig med at implementere både arbejdsområder til mobilenheder, der leveres af Microsoft, og brugerdefinerede arbejdsområder til mobilenheder. Tallene i den første kolonne svarer til de nummererede trin i ovenstående illustration.
 

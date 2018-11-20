@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -99,7 +99,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner.  |
-| **Erstattet af en anden funktion?**   | Nr. Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
+| **Erstattet af en anden funktion?**   | Nej Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
 | **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
 | **Installationsindstilling**              | Alt                                                                                      |
 | **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Operations 1611 og nyere versioner.  |
@@ -167,7 +167,7 @@ Disse afgifter omfattes nu af indisk GST.
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsagen til fjernelsen/forældelsen**       | Mangel på forbrug                                                  |
-| **Erstattet af en anden funktion?**            | Nr.                                                                      |
+| **Erstattet af en anden funktion?**            | Nej                                                                      |
 | **Produktområder, der er berørt**                  | Indisk A-skat                                                  |
 | **Installationsindstilling**                       | Alle moduler                                                                    |
 | **Status**                                  | Forældet: En dato for fjernelse er ikke angivet for denne funktion.   |        
@@ -179,7 +179,7 @@ Brugere kan hente denne formular på portalen for myndigheder.
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsagen til fjernelsen/forældelsen**       | Mangel på forbrug                                                  |
-| **Erstattet af en anden funktion?**            | Nr.                                                                      |
+| **Erstattet af en anden funktion?**            | Nej                                                                      |
 | **Produktområder, der er berørt**                  | Indisk A-skat                                                  |
 | **Installationsindstilling**                       | Alle moduler                                                                   |
 | **Status**                                  | Forældet: En dato for fjernelse er ikke angivet for denne funktion.     |    
@@ -190,7 +190,7 @@ Brugere kan hente denne formular på portalen for myndigheder.
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsagen til fjernelsen/forældelsen**       | Mangel på forbrug                                                  |
-| **Erstattet af en anden funktion?**            | Nr.                                                                      |
+| **Erstattet af en anden funktion?**            | Nej                                                                      |
 | **Produktområder, der er berørt**                  | Import og eksport                                                       |
 | **Installationsindstilling**                       | Alle moduler                                                                    |
 | **Status**                                  | Forældet: En dato for fjernelse er ikke angivet for denne funktion.  |    
@@ -204,7 +204,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner.  |
-| **Erstattet af en anden funktion?**   | Nr. Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
+| **Erstattet af en anden funktion?**   | Nej Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
 | **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
 | **Installationsindstilling**              | Alt                                                                                      |
 | **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere versioner. |
@@ -234,7 +234,7 @@ Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er be
 | **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger under [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lagersted](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Produktområder, der er berørt**         | Lokationsstyring, transportstyring     |
 | **Installationsindstilling**              | Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er beregnet til selvstændig installation i det lokale miljø.               |
-| **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.   |
+| **Status**                         | Forældet: Måltidsrammen for funktioner, der skal fjernes, er 4. kvartal 2019.   |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Avanceret sammenholdningsregel for bankafstemning til manuel sammenholdning
 
@@ -243,7 +243,7 @@ Den sammenholdningsregel, der blev brugt til at vælge og markere et bankdokumen
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Begrænset brug.                                                                         |
-| **Erstattet af en anden funktion?**   | Nr. Kolonnefiltreringsfunktioner skal bruges til at finde dokumenter til afstemning. |
+| **Erstattet af en anden funktion?**   | Nej Kolonnefiltreringsfunktioner skal bruges til at finde dokumenter til afstemning. |
 | **Produktområder, der er berørt**         | Kontant- og bankstyring                                                               |
 | **Installationsindstilling**              | Alt                                                                                    |
 | **Status**                         | Fjernet fra og med juli 2017.                                                               |
@@ -290,7 +290,7 @@ Dette værktøj bruges, når en kontoplan i Spanien kræver omfattende ændringe
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Begrænset brug                                                  |
-| **Erstattet af en anden funktion?**   | Nr.                                                             |
+| **Erstattet af en anden funktion?**   | Nej                                                             |
 | **Produktområder, der er berørt**         | Finans                                                 |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
@@ -334,7 +334,7 @@ EDIVAT er en forældet belgisk standard for elektronisk indberetning via sikker 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Funktionaliteten bruges ikke længere.                           |
-| **Erstattet af en anden funktion?**   | Nr.                                                             |
+| **Erstattet af en anden funktion?**   | Nej                                                             |
 | **Produktområder, der er berørt**         | Finans                                                 |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
@@ -345,7 +345,7 @@ eGiro er baseret på den internationale FN standard EDIFACT CREMUL, (Multiple Cr
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nr. Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -367,7 +367,7 @@ Et værktøj bruges til at konfigurere indsamling af data til regnskabs- og moms
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Begrænset brug                                                                            |
-| **Erstattet af en anden funktion?**   | Nr. Værktøjet erstattes af elektroniske indberetningskonfigurationer i fremtidige udgivelser. |
+| **Erstattet af en anden funktion?**   | Nej Værktøjet erstattes af elektroniske indberetningskonfigurationer i fremtidige udgivelser. |
 | **Produktområder, der er berørt**         | Finans                                                                           |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                           |
 
@@ -378,7 +378,7 @@ Du kan vælge et importformat til finske betalinger, der importerer debitorbetal
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nr. Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -389,7 +389,7 @@ Et format, der er specifikt for Finland, bruges til import af regnskabstransakti
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformatet bruges ikke længere.                                                     |
-| **Erstattet af en anden funktion?**   | Nr. Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Nej Formatet erstattes med ISO 20022-importformater i fremtidige versioner. |
 | **Produktområder, der er berørt**         | Debitor                                                                       |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                            |
 
@@ -400,7 +400,7 @@ Isabel er rammen for elektroniske betalinger i Europa og er en de facto standard
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Integration med Isabel-klient er blevet afbrudt.   |
-| **Erstattet af en anden funktion?**   | Nr. Betalingsformater, der ikke længere bruges, erstattes af ISO20022-kreditoverførselsbetalingsformat for Belgien. |
+| **Erstattet af en anden funktion?**   | Nej Betalingsformater, der ikke længere bruges, erstattes af ISO20022-kreditoverførselsbetalingsformat for Belgien. |
 | **Produktområder, der er berørt**         | Kreditor     |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.    |
 
@@ -411,7 +411,7 @@ Denne funktion bruges til ændringer i kontoplanen og regnskabsregler i Spanien.
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Begrænset brug                                                  |
-| **Erstattet af en anden funktion?**   | Nr.                                                             |
+| **Erstattet af en anden funktion?**   | Nej                                                             |
 | **Produktområder, der er berørt**         | Finans                                                 |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
@@ -455,7 +455,7 @@ Telehansa- og TeleTeenus-formater bruges til import af bankens betaling.
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Betalingsformaterne bruges ikke længere.                                                    |
-| **Erstattet af en anden funktion?**   | Nr. Formaterne erstattes med ISO 20022-importformater i fremtidige versioner. |
+| **Erstattet af en anden funktion?**   | Nej Formaterne erstattes med ISO 20022-importformater i fremtidige versioner. |
 | **Produktområder, der er berørt**         | Debitor                                                                        |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.                             |
 
@@ -477,7 +477,7 @@ Performancestyring omfatter målstyring og integration med performanceevaluering
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Performancestyring er blevet ændret, og antallet af målsider blev reduceret for at forenkle processen.                 |
-| **Erstattet af en anden funktion?**   | Nr. Mål kan ses af ledere gennem Chefselvbetjening-portalen, og kan ændres og ses af chefen. |
+| **Erstattet af en anden funktion?**   | Nej Mål kan ses af ledere gennem Chefselvbetjening-portalen, og kan ændres og ses af chefen. |
 | **Produktområder, der er berørt**         | Styring af menneskelig kapital       |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations version 1611.    |
 
@@ -499,7 +499,7 @@ RFID (Radio Frequency Identification) er en teknologi til indsamling af data, hv
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Lavt forbrug og begrænset funktionssæt.   |
-| **Erstattet af en anden funktion?**   | Nr.                                              |
+| **Erstattet af en anden funktion?**   | Nej                                              |
 | **Produktområder, der er berørt**         | Lagerstyring                            |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations 1611. |
 
@@ -510,7 +510,7 @@ Lettisk lovgivning indeholder særlige regler om, hvordan salgsfakturaer skal nu
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Statsfakturanummerering skal ikke længere opretholdes. Rapporten om anvendte fakturanumre er ikke længere påkrævet. |
-| **Erstattet af en anden funktion?**   | Nr.       |
+| **Erstattet af en anden funktion?**   | Nej       |
 | **Produktområder, der er berørt**         | Debitor    |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.  |
 
@@ -572,7 +572,7 @@ Lønoplysninger personale
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Lav belastning                                                           |
-| **Erstattet af en anden funktion?**   | Nr.                                                                  |
+| **Erstattet af en anden funktion?**   | Nej                                                                  |
 | **Produktområder, der er berørt**         | Personale                                                     |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations version 1611 |
 
@@ -595,7 +595,7 @@ En arbejdsgang til styring af oprettelse af medarbejdermål er et af flere arbej
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Performanceforbedring        |
-| **Erstattet af en anden funktion?**   | Nr.                             |
+| **Erstattet af en anden funktion?**   | Nej                             |
 | **Produktområder, der er berørt**         | Kreditor               |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -617,7 +617,7 @@ Når **Styklisteversioner**-konfigurationsnøglen var deaktiveret, blev styklist
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Når du bruger en konfigurationsnøgle til styring, skaleres styklisteversioner ikke i et skymiljø. |
-| **Erstattet af en anden funktion?**   | Nr.                                                                                      |
+| **Erstattet af en anden funktion?**   | Nej                                                                                      |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Lagerstyring                                    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                          |
 
@@ -628,7 +628,7 @@ Specifik betalingsmåde for brasilianske virksomheder
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Understøttelse af brasiliansk Bordero-betalingsmåde er blevet afbrudt fra brasiliansk lokalisering |
-| **Erstattet af en anden funktion?**   | Nr.   |
+| **Erstattet af en anden funktion?**   | Nej   |
 | **Produktområder, der er berørt**         | Kreditor   |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
@@ -639,7 +639,7 @@ Momsangivelse for ICMS-moms
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne opgørelse er ikke længere gældende i visse brasilianske stater. |
-| **Erstattet af en anden funktion?**   | Nr. Brugere kan bruge generisk elektronisk rapporteringsværktøj for at konfigurere opgørelsen, hvis det er påkrævet under bestemte situationer. |
+| **Erstattet af en anden funktion?**   | Nej Brugere kan bruge generisk elektronisk rapporteringsværktøj for at konfigurere opgørelsen, hvis det er påkrævet under bestemte situationer. |
 | **Produktområder, der er berørt**         | Regnskabsbøger    |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.   |
 
@@ -650,7 +650,7 @@ Momsangivelse for ICMS-moms
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne beredskabsmetode er ikke længere gældende i alle brasilianske stater |
-| **Erstattet af en anden funktion?**   | Nr.                                                                          |
+| **Erstattet af en anden funktion?**   | Nej                                                                          |
 | **Produktområder, der er berørt**         | Debitor                                                         |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.              |
 
@@ -701,7 +701,7 @@ Overholdelsescenter var et Enterprise Portal-websted til administration af dokum
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Mangel på forbrug. Microsoft SharePoint indeholder samme egenskab, der var tilgængelig i Overholdelsescenter. |
-| **Erstattet af en anden funktion?**   | Nr.   |
+| **Erstattet af en anden funktion?**   | Nej   |
 | **Produktområder, der er berørt**         | Overholdelse og interne kontroller  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
 
@@ -730,7 +730,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Køgrupper blev brugt til at vise en eller flere køer i faktaboksområdet. Der var begrænset optagelse, og der var også problemer med ydeevnen, fordi en ændring af en post i en overordnet formular forårsagede en forespørgsel pr. kø i gruppen Kø. |
-| **Erstattet af en anden funktion?**   | Nr.      |
+| **Erstattet af en anden funktion?**   | Nej      |
 | **Produktområder, der er berørt**         | Alle moduler    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
 
@@ -748,7 +748,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Det danske checklayout format understøttes ikke længere, og rapporten er blevet fjernet fra lokaliseringen til dansk. |
-| **Erstattet af en anden funktion?**   | Nr.    |
+| **Erstattet af en anden funktion?**   | Nej    |
 | **Produktområder, der er berørt**         | Alle moduler    |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.  |
 
@@ -780,7 +780,7 @@ Microsoft Dynamics AX 2012 tillader lagring af vedhæftede filer i databasen og 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Ingen brug af funktionen blev ikke fundet. |
-| **Erstattet af en anden funktion?**   | Nr.                                     |
+| **Erstattet af en anden funktion?**   | Nej                                     |
 | **Produktområder, der er berørt**         | Tid og Fremmøde                    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
 
@@ -800,7 +800,7 @@ I Dynamics AX 2012 R3 kunne Retail Modern POS forbindes direkte med kanaldatabas
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Finance and Operations medfører denne funktion nu flere problemer, end den løser. |
-| **Erstattet af en anden funktion?**   | Nr. Kun standard Retail Server-kommunikation understøttes nu.  |
+| **Erstattet af en anden funktion?**   | Nej Kun standard Retail Server-kommunikation understøttes nu.  |
 | **Produktområder, der er berørt**         | Kanaldatabase/Retail Modern POS   |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
 
@@ -838,7 +838,7 @@ Denne funktionalitet leverede XBRL-output (eXtensible Business Reporting Languag
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Lavt forbrug og begrænset funktionssæt  |
-| **Erstattet af en anden funktion?**   | Nr.              |
+| **Erstattet af en anden funktion?**   | Nej              |
 | **Produktområder, der er berørt**         | Overholdelse og interne kontroller, Kreditor  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -894,7 +894,7 @@ Oprettelsen af adviseringer kan ikke udføres ved hjælp af et batch, men kan st
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | XML-format til rapportering af tysk EU-listesystem understøttes ikke længere. Kun ELMA5-tekstfilformatet kan bruges til at sende rapporten for EU-listesystemet til de tyske skattemyndigheder. |
-| **Erstattet af en anden funktion?**   | Nr.         |
+| **Erstattet af en anden funktion?**   | Nej         |
 | **Produktområder, der er berørt**         | Skat        |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion.   |
 
@@ -947,7 +947,7 @@ Denne funktion muliggjorde oprettelse af mexicanske elektroniske fakturaer ved h
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne metode anvendes ikke længere. Generering af elektroniske fakturaer ved at bruge CFD-metoden er blevet udfaset af skattemyndighederne og erstattet af CFDI-metoden (Comprobante Fiscal Digital a través de Internet ), hvor undertegnelse er uddelegeret til tredjepartsudbyderen (PAC). Den månedlige rapport er blevet fjernet, og brugerne kan bruge en forespørgselsindstilling til at forhøre sig om historiske transaktioner. |
-| **Erstattet af en anden funktion?**   | Nr.    |
+| **Erstattet af en anden funktion?**   | Nej    |
 | **Produktområder, der er berørt**         | Debitor, Projekt   |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
@@ -979,7 +979,7 @@ Lager- og lokalitetsstyringskladderne understøtte ikke længere muligheden for 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Ingen brug af funktionen blev ikke fundet. |
-| **Erstattet af en anden funktion?**   | Nr.                                     |
+| **Erstattet af en anden funktion?**   | Nej                                     |
 | **Produktområder, der er berørt**         | Lagerstyring                   |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
 
@@ -1001,7 +1001,7 @@ Med denne funktion kan du ændre navnet på en af de tre standardproduktdimensio
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Den aktuelle version af Dynamics AX understøtter ikke ændringer af etiketter på kørselstidspunktet. |
-| **Erstattet af en anden funktion?**   | Nr.                                                                            |
+| **Erstattet af en anden funktion?**   | Nej                                                                            |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger                                                |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                |
 
@@ -1012,7 +1012,7 @@ I Dynamics AX 2012 R3 kunne Retail Server fungere ved hjælp af HTTP-kommunikati
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | På grund af nye sikkerhedskrav understøttes nu kun sikret kommunikation ved hjælp af TLS 1.2 (eller nyere, afhængigt af tilgængelighed). Det selvbetjente installationsprogram konfigurerer automatisk computeren til denne kommunikation. |
-| **Erstattet af en anden funktion?**   | Nr. Kun standard HTTPS-kommunikation understøttes nu. |
+| **Erstattet af en anden funktion?**   | Nej Kun standard HTTPS-kommunikation understøttes nu. |
 | **Produktområder, der er berørt**         | Retail Server  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -1030,7 +1030,7 @@ I Dynamics AX 2012 R3 kunne Retail Server fungere ved hjælp af HTTP-kommunikati
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Lavt forbrug og begrænset funktionssæt |
-| **Erstattet af en anden funktion?**   | Nr.                                           |
+| **Erstattet af en anden funktion?**   | Nej                                           |
 | **Produktområder, der er berørt**         | Amerikansk moms                                 |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.               |
 
@@ -1041,7 +1041,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Microsoft Azure-infrastrukturen, der bruges af Dynamics AX, indeholder nye funktioner, der kan bruges i stedet (f.eks Azure websteder). |
-| **Erstattet af en anden funktion?**   | Nr.   |
+| **Erstattet af en anden funktion?**   | Nej   |
 | **Produktområder, der er berørt**         | Rekruttering af personale, sagsstyring, anmodningen om tilbud, registrering af kreditorer, arbejdsområder til samarbejde for salgsmuligheder og kampagner  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
 
@@ -1082,7 +1082,7 @@ Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godke
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Finance and Operations er kompatibel med tablets. Der er ikke længere brug for tabletappen.    |
-| **Erstattet af en anden funktion?**   | Nr.          |
+| **Erstattet af en anden funktion?**   | Nej          |
 | **Produktområder, der er berørt**         | Udgiftsstyring   |
 | **Status**                         | Fjernet: Denne funktion er kun tilgængelig for Dynamics AX 2012 R3. |
 

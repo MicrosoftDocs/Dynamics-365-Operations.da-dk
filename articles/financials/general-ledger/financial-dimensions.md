@@ -3,7 +3,7 @@ title: "Økonomiske dimensioner"
 description: "I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Her er nogle begrænsninger:
 
 ## <a name="custom-dimensions"></a>Brugerdefinerede dimensioner
 
-For at oprette en brugerdefineret økonomisk dimension skal du i feltet **Brug værdier fra** vælge **&lt;&nbsp;Brugerdefineret dimension&nbsp;&gt;**.
+For at oprette en brugerdefineret økonomisk dimension skal du i feltet **Brug værdier fra** vælge **Brugerdefineret dimension**.
 
-Du kan også angive en kontomaske for at begrænse mængden og typen af oplysninger, som kan angives for dimensionsværdier. Du kan skrive tegn, der forbliver ens for hver dimensionsværdi, f.eks. bogstaver eller en bindestreg (-). Du kan også angive nummertegn (\#) og &-tegn (&) som pladsholdere for tegn, som ændres, hver gang der oprettes en dimensionsværdi. Brug et nummertegn (\#) som pladsholder for et tal, og tegnet (&) som pladsholder for et bogstav. Feltet til formatmasken er kun tilgængeligt, hvis du har valgt **&lt;&nbsp;Brugerdefineret dimension&nbsp;&gt;** i feltet **Brug værdier fra**.
+Du kan også angive en kontomaske for at begrænse mængden og typen af oplysninger, som kan angives for dimensionsværdier. Du kan skrive tegn, der forbliver ens for hver dimensionsværdi, f.eks. bogstaver eller en bindestreg (-). Du kan også angive nummertegn (\#) og &-tegn (&) som pladsholdere for tegn, som ændres, hver gang der oprettes en dimensionsværdi. Brug et nummertegn (\#) som pladsholder for et tal, og tegnet (&) som pladsholder for et bogstav. Feltet til formatmasken er kun tilgængeligt, hvis du har valgt **Brugerdefineret dimension** i feltet **Brug værdier fra**.
 
 **Eksempel**
 
@@ -108,14 +108,30 @@ Du kan oprette afledte værdier på dimensionssiden.
 
 Angiv kombinationer af dimensioner, der skal afledes af dimensionen i den første kolonne. Hvis du f.eks. vil bruge bærer,som den dimension, som afdelingen og sted afledes fra, skal du angive bærer 10, afdeling 20 og sted 30. Når du derefter angiver bærer 10 i en masterpost eller på en transaktionsside, bliver afdeling 20 og sted 30 angivet som standard.
 
-Den afledte dimensionsproces overskriver ikke eksisterende værdier for afledte dimensioner. Hvis du f.eks. angiver bærer 10, og ingen anden dimension er angivet, angives afdeling 20 og sted 30 som standard. Men hvis du ændrer bæreren, ændres de værdier, der allerede er fastlagt, ikke. Derfor kan du oprette standarddimensioner for masterposter, og disse dimensioner ændres ikke af afledte dimensioner.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Tilsidesættelse af eksisterende værdier med afledte dimensioner
+ 
+Den afledte dimensionsproces tilsidesætter som standard ikke eksisterende værdier for afledte dimensioner. Hvis du f.eks. angiver bærer 10, og ingen anden dimension er angivet, angives afdeling 20 og sted 30 som standard. Men hvis du ændrer bæreren, ændres de værdier, der allerede er fastlagt, ikke. Derfor kan du oprette standarddimensioner for masterposter, og disse dimensioner ændres ikke af afledte dimensioner.
+
+Du kan ændre funktionaliteten af afledte dimensioner for at tilsidesætte eksisterende værdier ved at markere afkrydsningsfeltet **Erstat eksisterende dimensionsværdier med afledte værdier** på siden **Afledte dimensioner**. Hvis dette felt er markeret, kan du angive en dimension med afledte dimensionsværdier, og de afledte dimensionsværdier tilsidesætter derefter de værdier, der allerede findes. Hvis du i det foregående eksempel angiver bærer 10, og ingen anden dimension er angivet, angives afdeling 20 og sted 30 som standard. Hvis værdierne allerede var afdeling 50 og sted 60, bliver værdierne dog nu ændret til afdeling 20 og sted 30.
+ 
+Afledte dimensioner med denne indstilling erstatter ikke automatisk de eksisterende standardværdier for dimensioner, når standarddimensionsværdier anvendes. Dimensionsværdier bliver kun tilsidesat, når du indtaster en ny dimensionsværdi på en side, og der findes afledte værdier for den pågældende dimension på siden.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Forhindre ændringer med afledte dimensioner
+ 
+Når du bruger **Tilføj segment "** på siden **Afledte dimensioner** til at tilføje et segment som en afledt dimension, er der angivet en indstilling nederst på siden **Tilføj segment**, som du kan bruge til at undgå ændringer af dimensionen, når den er afledt på en side. Standardindstillingen er deaktiveret, så den forhindrer ikke, at de afledte dimensionsværdier bliver ændret. Vælg indstillingen **Ja**, hvis du vil forhindre, at dimensionen ændres, når den er afledt. F.eks. hvis værdien for dimensionen Afdeling er afledt fra værdien for dimensionen Bærer, kan værdien Afdeling ikke ændres, hvis indstillingen **Forhindre ændringer** er **Ja**. 
+ 
+Indstillingen forhindrer ikke ændringer, hvis dimensionsværdien er gyldig, men ikke findes på listen over afledte dimensioner. F.eks. hvis Afdeling 20 er afledt af Bærer 10, og du angiver Bærer 10, kan du ikke redigere Afdeling 20. Men hvis du angiver Bærer 20, og det ikke er på listen over afledte dimensioner for Bærer, kan du redigere værdien for Afdeling. 
+ 
+I alle tilfælde valideres kontoværdien og alle dimensionsværdier stadig mod kontostrukturerne, når de afledte dimensionsværdier er anvendt. Hvis du bruger afledte dimensioner, og de ikke valideres, når de bruges på en side, skal du ændre de afledte dimensionsværdier på siden med afledte dimensioner, før du kan bruge dem i transaktioner. 
+ 
+Når du ændrer dimensioner i oversigtspanelet **Regnskabsdimensioner**, kan den dimension, der er markeret for at forhindre ændringer, ikke redigeres. Hvis du angiver en konto og dimensioner i det segmenteret postkontrolelement på en side, kan dimensionerne redigeres. Men når du flytter fremhævningen fra det segmenterede postkontrolelement og flytter til et andet felt eller foretager handlinger, valideres kontoen og dimensionerne mod listen over afledte dimensioner og kontostrukturerne for at sikre, at du har angivet de relevante værdier. 
 
 ### <a name="derived-dimensions-and-entities"></a>Afledte dimensioner og enheder
 
 Du kan oprette de afledte dimensionssegmenter og -værdier ved hjælp af enheder.
 
 - Enheden Afledte dimensioner opretter de styrende dimensioner og segmenter, der bruges til disse dimensioner.
-- Med enheden DerivedDimensionValue kan du importere de værdier, der skal afledes for hver styrende dimension.
+- Med den afledte dimensionsværdienhed kan du importere de værdier, der skal afledes for hver styrende dimension.
 
 Når du bruger en enhed til at importere data, og den pågældende enhed importerer dimensioner, anvendes de afledte dimensionsregler under importen, medmindre enheden specifikt tilsidesætter disse dimensioner.
 

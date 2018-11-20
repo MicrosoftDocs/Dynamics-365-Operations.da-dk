@@ -3,14 +3,14 @@ title: Formeldesigner i elektronisk rapportering (ER)
 description: Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -192,7 +192,7 @@ Når datakilden **System** føjes til en ER-tilknytning, der henviser til progra
 Du kan begrænse den måde, værdier sendes til parametrene på for denne type metode:
 
 - Kun konstanter kan overføres til metoder af denne type. Værdierne af konstanter, der er defineret i designfasen.
-- Kun primitive datatyper (basis) understøttes til parametrene for denne type. (De primitive datatyper er heltal, real, boolesk, streng, og så videre).
+- Kun primitive datatyper (basis) understøttes til parametrene for denne type. (De primitive datatyper er heltal, reelt tal, boolesk, streng og så videre).
 
 #### <a name="paths"></a>Stier
 
@@ -250,6 +250,12 @@ I følgende tabel beskrives de datamanipulationsfunktioner, du kan bruge til at 
 <td>SPLIT (input, længde)</td>
 <td>Opdeler den angivne inputstreng i understrenge, som hver især har den angivne længde. Returner resultatet som en ny liste.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returnerer en ny liste, der består af to poster, der har et <strong>STRING</strong>-felt. Feltet i den første post indeholder teksten <strong>&quot;abc&quot;</strong>, og feltet i den anden post indeholder teksten <strong>&quot;d&quot;</strong>.</td>
+</tr>
+<tr>
+<td>SPLIT (input, afgrænser)</td>
+<td>Opdeler den angivne inputstreng i understrenge baseret på den angivne afgrænser.</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returnerer en ny liste, der består af tre poster, der har et <strong>STRING</strong>-felt. Feltet i den første post indeholder teksten <strong>&quot;X&quot;</strong>, feltet i den anden post indeholder teksten, &quot;&nbsp;&quot;, og feltet i den tredje post indeholder teksten <strong>&quot;y&quot;</strong>. Hvis afgrænsningstegnet er tomt, returneres en ny liste, der består af én post, der har et <strong>STRING</strong>-felt, der indeholder inputteksten. Hvis inputtet er tomt, returneres en ny tom liste.
+Hvis hverken inputtet eller afgrænsningstegnet er angivet (null), opstår der en programundtagelse.</td>
 </tr>
 <tr>
 <td>SPLITLIST (liste, antal)</td>
@@ -323,12 +329,12 @@ VÆLG ... FRA CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTI
 <tr>
 <td>ORDERBY (liste [udtryk 1, udtryk, 2, ...])</td>
 <td>Returnere den angivne liste, når den er sorteret i henhold til de angivne argumenter. Disse argumenter kan defineres som udtryk.</td>
-<td>Hvis <strong>Kreditor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
+<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returnere en liste over kreditorer, der er sorteret efter navn i stigende rækkefølge.</td>
 </tr>
 <tr>
 <td>REVERSE (liste)</td>
 <td>Returner den angivne liste i omvendt rækkefølge.</td>
-<td>Hvis <strong>Kreditor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;) )</strong> returnere en liste over leverandører, der er sorteret efter navn i faldende rækkefølge.</td>
+<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()'))</strong> returnere en liste over leverandører, der er sorteret efter navn i faldende rækkefølge.</td>
 </tr>
 <tr>
 <td>WHERE (liste, betingelse)</td>
@@ -399,12 +405,13 @@ På kørselstidspunktet returnerer felterne <strong>Label</strong> og <strong>Be
 </ul>
 På kørselstidspunktet returnerer felterne <strong>Label</strong> og <strong>Beskrivelse</strong> værdier, der er baseret på formatets sprogindstillinger og det angivne sprog. Feltet <strong>Er oversat</strong> angiver, at feltet <strong>Etiket</strong> er oversat til det angivne sprog.
 </td>
-<td>Du bruger f.eks. datakildetypen <strong>Beregnet felt</strong> til at konfigurere datakilderne <strong>enumType_de</strong> og <strong>enumType_deCH</strong> for datamodeloptællingen <strong>enumType</strong>:
+<td>Du bruger f.eks. datakildetypen <strong>Beregnet felt</strong> til at konfigurere datakilderne <strong>enumType_de</strong> og <strong>enumType_deCH</strong> for datamodeloptællingen <strong>enumType</strong>.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til tællerværdien på tysk (Schweiz), hvis denne oversættelse er tilgængelig. Hvis oversættelsen til tysk (Schweiz) ikke er tilgængelig, vil etiketten være på tysk: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til tællerværdien på tysk (Schweiz), hvis denne oversættelse er tilgængelig. Hvis oversættelsen til tysk (Schweiz) ikke er tilgængelig, er etiketten på tysk.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <tr>
 <td>FILTER (liste, betingelse)</td>
 <td>Returner den angivne liste, når forespørgslen er blevet ændret til at filtrere i henhold til den angivne tilstand. Denne funktion adskiller sig fra funktionen <strong>WHERE</strong>, fordi den angivne betingelse anvendes på enhver ER-datakilde af typen <strong>Tabelposter</strong> på databaseniveau. Listen og betingelse kan defineres ved hjælp af tabeller og relationer.</td>
-<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returnere en liste over blot de kreditorer, der tilhører kreditorgruppe 40. Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til <strong>VendTable</strong>-tabellen, og hvis <strong>parmVendorBankGroup</strong> er konfigureret som en ER-datakilde, der returnerer en værdi af datatypen <strong>Streng</strong>, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over kun de kreditorkonti, der tilhører en bestemt bankgruppe.</td>
+<td>Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til tabellen VendTable, vil <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returnere en liste over blot de kreditorer, der tilhører kreditorgruppe 40. Hvis <strong>Vendor</strong> er konfigureret som en ER-datakilde, der henviser til VendTable-tabellen, og hvis <strong>parmVendorBankGroup</strong> er konfigureret som en ER-datakilde, der returnerer en værdi af datatypen <strong>Streng</strong>, returnerer <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en liste over kun de kreditorkonti, der tilhører en bestemt bankgruppe.</td>
 </tr>
 </tbody>
 </table>
@@ -446,10 +453,67 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 | NOT (betingelse) | Returner den omvendte logiske værdi af den angivne betingelse. | **NOT (TRUE)** returnerer **FALSE**. |
 | AND (betingelse 1\[, betingelse 2, ...\]) | Returnerer **TRUE**, hvis *alle* angivne betingelser er sande. Ellers returneres **FALSE**. | **AND (1=1, "a"="a")** returnerer **TRUE**. **AND (1=2, "a"="a")** returnerer **FALSE**. |
 | OR (betingelse 1\[, betingelse 2, ...\]) | Returnerer **FALSE**, hvis *alle* angivne betingelser er falske. Returnerer **TRUE**, hvis *en af* de angivne betingelser er sande. | **OR (1=2, "a"="a")** returnerer **TRUE**. |
+| VALUEIN (input, liste, listeelementudtryk) | Bestem, om det angivne input svarer til en værdi for et element på den angivne liste. Returnerer **TRUE**, hvis det angivne input svarer til resultatet af at køre det angivne udtryk for mindst én post. Ellers returneres **FALSE**. Parameteren **input** repræsenterer stien til et datakildeelement. Værdien af dette element bliver sammenlignet. Parameteren **liste** repræsenterer stien til et datakildeelement af postlistetypen som en liste over poster, der indeholder et udtryk. Værdien af dette element bliver sammenlignet med det angivne input. Argumentet **listeelementudtryk** repræsenterer et udtryk, der peger på eller indeholder et enkelt felt fra den angivne liste, som skal bruges til sammenligningen. | Du kan se eksempler i afsnittet [Eksempler: VALUEIN (input, liste, listeelementudtryk)](#examples-valuein-input-list-list-item-expression) nedenfor. |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Eksempler: VALUEIN (input, liste, listeelementudtryk)
+Generelt oversættes funktionen **VALUEIN** oversættes til et sæt **OR**-betingelser:
+
+(input = list.item1.value) OR (input = list.item2.value) OR …
+
+##### <a name="example-1"></a>Eksempel 1
+Du kan definere følgende datakilde i din modeltilknytning: **Liste** (typen **Beregnet felt**). Denne datakilde indeholder udtrykket **SPLIT ("a,b,c",",")**.
+
+Når en datakilde, der er konfigureret som udtrykket **VALUEIN ("B", List, List.Value)**, kaldes, returneres **TRUE**. I dette tilfælde oversættes funktionen **VALUEIN** til følgende sæt betingelser:
+
+**(("B" = "a") eller ("B" = "b") eller ("B" = "c"))**, hvor **("B" = "b")** er lig med **TRUE**
+
+Når en datakilde, der er konfigureret som udtrykket **VALUEIN ("B", List, LEFT(List.Value, 0))**, kaldes, returneres **FALSE**. I dette tilfælde oversættes funktionen **VALUEIN** til følgende betingelse:
+
+**("B" = "")**, som ikke er lig med **TRUE**
+
+Bemærk, at den øvre grænse for antallet af tegn i teksten i en sådan betingelse er 32.768 tegn. Du skal derfor ikke oprette datakilder, der kan overskride denne grænse på kørselstidspunktet. Hvis grænsen overskrides, stopper programmet med at køre, og der opstår en undtagelse. For eksempel kan denne situation opstå, hvis datakilden er konfigureret som **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, og **List1** og **List2** listerne indeholder en stor mængde poster.
+
+I nogle tilfælde kan funktionen **VALUEIN** oversættes til en databasesætning ved hjælp af operatoren **EXISTS JOIN**. Dette problem opstår, når funktionen **FILTER** anvendes, og følgende betingelser er opfyldt:
+
+- Indstillingen **Spørg efter forespørgsel** er deaktiveret for datakilden til den **VALUEIN**-funktion, der refererer til listen over poster. (Der bliver ikke anvendt yderligere betingelser på denne datakilde på kørselstidspunktet).
+- Ingen indlejrede udtryk konfigureres for datakilden til den **VALUEIN**-funktion, der refererer til listen over poster.
+- Et listeelement i **VALUEIN**-funktionen refererer til et felt (ikke et udtryk eller en metode) i den angivne datakilde.
+
+Overvej at bruge denne indstilling i stedet for funktionen **WHERE** som beskrevet tidligere i dette eksempel.
+
+##### <a name="example-2"></a>Eksempel 2
+
+Du definerer følgende datakilder i din modeltilknytning:
+
+- **In** (typen **Tabelposter**), som refererer til tabellen Intrastat
+- **Port** (typen **Tabelposter**), som refererer til tabellen IntrastatPort
+
+Når en datakilde, der konfigureret som udtrykket **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)**, kaldes, genereres følgende SQL-sætning for at returnere filtrerede poster fra tabellen Intrastat:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+For **dataAreaId** felter genereres den endelige SQL-sætning ved hjælp af **IN**-operatoren.
+
+##### <a name="example-3"></a>Eksempel 3
+
+Du definerer følgende datakilder i din modeltilknytning:
+
+- **Le** (typen **Beregnet felt**), som indeholder udtrykket **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (typen **Tabelposter**), som refererer til Intrastat-tabellen, og som indstillingen **Intern** er aktiveret for
+
+Når en datakilde, der er konfigureret som udtrykket **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)**, kaldes, indeholder den endelige SQL-sætning følgende betingelse:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Matematiske funktioner
 
-| Funktion | Beskrivelse | Eksempel |
+| Funktion | Betegnelse | Eksempel |
 |----------|-------------|---------|
 | ABS (tal) | Returner den absolutte værdi af det angivne tal. (Returnerer med andre ord tallet uden dets fortegn). | **ABS (-1)** returnerer **1**. |
 | POWER (tal, potens) | Returnerer resultatet af at opløfte det angivne positive tal i den angivne potens. | **POWER (10, 2)** returnerer **100**. |
@@ -539,7 +603,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 </tr>
 <tr>
 <td>REPLACE (streng, mønster, erstatning, almindeligt udtryksflag)</td>
-<td>Når det angivne udtryksflag er <strong>sand</strong>, returneres den angivne streng, når den er blevet ændret ved at anvende det almindelige udtryk, der er angivet som et mønsterargument for denne funktion. Dette udtryk bruges til at søge efter tegn, der skal erstattes. Tegn i det angivne erstatningsargument bruges til at erstatte tegn, der findes. Når det angivne udtryksflag er <strong>false</strong>, fungerer denne funktion ligesom <strong>TRANSLATE</strong>.</td>
+<td>Når det angivne parameter for det <strong>almindelige udtryksflag</strong> er <strong>true</strong>, returneres den angivne streng, når den er blevet ændret ved at anvende det almindelige udtryk, der er angivet som <strong>mønsterargumentet</strong> for denne funktion. Dette udtryk bruges til at søge efter tegn, der skal erstattes. Tegn i det angivne <strong>erstatningsargument</strong> bruges til at erstatte tegn, der findes. Når den angivne parameter for det <strong>almindelige udtryksflag</strong> er <strong>false</strong>, fungerer denne funktion ligesom <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^ 0-9]&quot;, &quot;&quot;, true)</strong> anvender et almindeligt udtryk, der fjerner alle ikke-numeriske symboler og returnerer <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> erstatter mønsteret <strong>&quot;cd&quot;</strong> med strengen <strong>&quot;GH&quot;</strong> og returnerer <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -562,19 +626,19 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 <li>Finance and Operations-label SYS18389, som har følgende tekst:
 <ul>
 <li><strong>For det amerikanske sprog:</strong> &quot;Customer %1 is stopped for %2&quot;.</li>
-<li><strong>For det danske sprog:</strong> &quot;Debitor &#39;%1&#39; er spærret for %2.&quot;</li>
+<li><strong>For det danske sprog:</strong> &quot;Debitor '%1' er spærret for %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Her er den formel, der kan udvikles:</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>Hvis en rapport er behandlet for debitoren <strong>Litware Retail</strong> den 17. december 2015 i den amerikanske kultur <strong>EN-US</strong> og på det amerikanske sprog <strong>EN-US</strong>, vil denne formel returnere følgende tekst, som kan præsenteres som en meddelelse til slutbrugeren:</p>
+<p>Hvis en rapport behandles for debitoren <strong>Litware Retail</strong> den 17. december 2015 i den amerikanske kultur, <strong>EN-US</strong>, og på det amerikanske sprog, <strong>EN-US</strong>, returnerer denne formel følgende tekst, som kan præsenteres for slutbrugeren som en undtagelsesmeddelelse:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Hvis den samme rapport behandles den 17. december 2015 for kunden <strong>Litware Retail</strong> med dansk kultur <strong>DA</strong> og sproget <strong>DA</strong>, returnerer formlen følgende tekst, der bruger et andet datoformat:</p>
 <p>&quot;Intet at udskrive. Debitor 'Litware Retail' er spærret for 17.12.2015.&quot;</p>
 <blockquote>[!NOTE] Følgende syntaks er anvendt i ER-formler for etiketter:
 <ul>
-<li><strong>For etiketter fra Finance and Operations-ressourcer:</strong> <strong>@&quot;X&quot;</strong>, hvor X er etiket-id'et i applikationsobjekttræet (AOT)</li>
-<li><strong>For etiketter, der er placeret i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, hvor X er etiket-id i ER-konfigurationen</li>
+<li><strong>For etiketter fra Finance and Operations-ressourcer:</strong> <strong>@&quot;X&quot;</strong>, hvor <strong>X</strong> er etiket-id'et i applikationsobjekttræet (AOT)</li>
+<li><strong>For etiketter, der er placeret i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, hvor <strong>X</strong> er etiket-id i ER-konfigurationen</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ I dette tilfælde skal kan du bruge følgende udtryk til at få etiketten til t�
 </tr>
 <tr>
 <td>GUIDVALUE (input)</td>
-<td>Konverter det angivne input fra datatypen <strong>Streng</strong> til et dataelement i datatypen <strong>GUID</strong>.</td>
+<td>Konverter det angivne input fra datatypen <strong>Streng</strong> til et dataelement i datatypen <strong>GUID</strong>.<blockquote>[!NOTE] Til en omregning i modsat retning (dvs. konvertere angivet input fra datatypen <strong>GUID</strong> til et dataelement i datatypen <strong>Streng</strong>) kan du bruge funktionen <strong>TEXT()</strong>.</blockquote></td>
 <td>Du definerer følgende datakilder i din modeltilknytning:
 <ul>
 <li><strong>myID</strong> (typen <strong>Beregnet felt</strong>), som indeholder udtrykket <strong>GUIDVALUE (&quot;AF5CCDAC F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
@@ -637,7 +701,7 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 
 | Funktion | Betegnelse | Eksempel |
 |----------|-------------|---------|
-| TEXT (input) | Returner det angivne input, når det er blevet konverteret til en tekststreng, der er formateret i henhold til indstillingerne for serverens landestandard til den aktuelle forekomst af Finance and Operations. For værdier af den **reelle** type er strengkonverteringen begrænset til to decimaler. | Hvis serverens landestandard for Finance and Operations-forekomsten er defineret som **EN-US**, returnerer **TEXT (NOW ())** den aktuelle Finance and Operations-sessionsdato, December 17, 2015 som **tekststrengen 12/17/2015 07:59:23 AM**. **TEXT (1/3)** returnerer **"0.33"**. |
+| TEXT (input) | Returner det angivne input, når det er blevet konverteret til en tekststreng, der er formateret i henhold til indstillingerne for serverens landestandard til den aktuelle forekomst af Finance and Operations. For værdier af den **reelle** type er strengkonverteringen begrænset til to decimaler. | Hvis serverens landestandard for Finance and Operations-forekomsten er defineret som **EN-US**, returnerer **TEXT (NOW ())** den aktuelle Finance and Operations-sessionsdato, December 17, 2015 som tekststrengen **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returnerer **"0.33"**. |
 | QRCODE (streng) | Returnerer et QR-kodebillede (Quick Response-kode) i det binære base64-format for den angivne streng. | **QRCODE ("teksteksempel")** returnerer **U2FtcGxlIHRleHQ=**. |
 
 ### <a name="data-collection-functions"></a>Dataindsamlingsfunktioner
@@ -645,11 +709,11 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 | Funktion | Betegnelse | Eksempel |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Returnerer navnet på det aktuelle formats element. Returnerer en tom streng, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | Du kan få mere at vide om brugen af denne funktion i opgaveguiden **Bruge ER-data af formatoutput til optælling og sammenlægning** en del af forretningsprocessen **Anskaffe/udarbejde komponenter til it-servicer og -løsninger** til at lære mere om brugen af disse funktioner. |
-| SUMIFS (nøglestreng for sammenlægning, kriterieinterval 1-streng, kriterieværdi 1-streng \[,kriterieinterval 2-streng, kriterieværdi 2-streng, …\]) | Returnerer summen af værdierne af XML-noder (med navn, der er defineret som en nøgle), som er blevet indsamlet under kørsel af formatet, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
-| SUMIF (nøglestreng for sammenlægning, kriterieintervalstreng, kriterieværdistreng) | Returnerer summen af værdierne af XML-noder (med navn, der er defineret som en nøgle), som er blevet indsamlet under kørsel af formatet, og som opfylder den angivne betingelse (interval og værdi). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
-| COUNTIFS (kriterieinterval 1-streng, kriterieværdi 1-streng \[, kriterieinterval 2-streng, kriterieværdi 2-streng, ...\]]) | Returnerer antal XML-noder, som er blevet indsamlet under kørsel af formatet, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
-| COUNTIF (kriterieintervalstreng, kriterieværdistreng) | Returnerer antal XML-noder, som er blevet indsamlet under denne kørsel af format, og som opfylder den angivne betingelse (interval og værdi). Returnerer en **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
-| COLLECTEDLIST (kriterieinterval 1-streng, kriterieværdi 1-streng \[, kriterieinterval 2-streng, kriterieværdi 2-streng, ...\]) | Returnerer listen over værdier i XML-noder, som er blevet indsamlet under kørsel af formatet, og som opfylder de angivne betingelser (interval og værdi). Returnerer en tom liste, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
+| SUMIFS (nøglestreng for sammenlægning, kriterieinterval 1-streng, kriterieværdi 1-streng \[,kriterieinterval 2-streng, kriterieværdi 2-streng, …\]) | Returnerer summen af værdierne, der blev indsamlet til XML-noder (med navn, der er defineret som en nøgle) under kørslen af formatet, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
+| SUMIF (nøglestreng for sammenlægning, kriterieintervalstreng, kriterieværdistreng) | Returnerer summen af værdierne, der blev indsamlet til XML-noder (med navn, der er defineret som en nøgle) under kørslen af formatet, og som opfylder den angivne betingelse (et interval og en værdi). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
+| COUNTIFS (kriterieinterval 1-streng, kriterieværdi 1-streng \[, kriterieinterval 2-streng, kriterieværdi 2-streng, ...\]]) | Returnerer antal XML-noder, som blev indsamlet under kørslen af formatet, og som opfylder de angivne betingelser (interval- og værdipar). Returnerer **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
+| COUNTIF (kriterieintervalstreng, kriterieværdistreng) | Returnerer antal XML-noder, som blev indsamlet under kørslen af formatet, og som opfylder den angivne betingelse (et interval og en værdi). Returnerer en **0** (nul) værdi, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
+| COLLECTEDLIST (kriterieinterval 1-streng, kriterieværdi 1-streng \[, kriterieinterval 2-streng, kriterieværdi 2-streng, ...\]) | Returnerer den liste over værdier, som blev indsamlet for XML-noder under kørslen af formatet, og som opfylder de angivne betingelser (et interval og en værdi). Returnerer en tom liste, når flaget **Detaljer om indsamlingsoutput** for de aktuelle filer er slået fra. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Andre (forretningsdomænespecifikke) funktioner
 
@@ -667,6 +731,9 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 | FA\_BALANCE (anlægsaktivkode, værdimodelkode, rapporteringsår, rapporteringsdato) | Returnerer den klargjorte datacontainer med saldoen for anlægsaktiv. Rapporteringsår skal angives som en værdi af Finance and Operations-fastteksten **AssetYear**. | **FA\_SUM ("COMP-000001", "Aktuel", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerer den forberedte datacontainer med saldi for anlægsaktivet **"COMP-000001"**, der har værdimodellen **"Aktuel"** for den aktuelle Finance and Operations-sessionsdato. |
 | TABLENAME2ID (streng) | Returnerer en heltalsrepræsentation af et tabel-Id for det angivne tabelnavn. | **TABLENAME2ID ("Intrastat")** returnerer **1510**. |
 | ISVALIDCHARACTERISO7064 (streng) | Returnerer den booleske værdi **TRUE**, når den angivne streng repræsenterer et gyldigt internationalt bankkontonummer (IBAN). I modsat fald returneres den booleske værdi **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerer **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerer **FALSE**. |
+| NUMSEQVALUE (nummerseriekode, område, område-id) | Returnerer den nye genererede værdi for en nummerserie baseret på den angivne nummerseriekode, område og område-id. Området skal angives som en værdi af optællingen **ERExpressionNumberSequenceScopeType** (**Delt**, **Juridisk enhed** eller **Firma**). For området **Delt** skal du angive en tom streng som område-id'et. For områderne **Firma** og **Juridisk enhed** skal du angive firmakoden som område-id. For områderne **Firma** og **Juridisk enhed**, hvis du angiver en tom streng som område-id, bruges den aktuelle firmakode. | Du definerer følgende datakilder i din modeltilknytning:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-optælling**), som refererer til optællingen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **Beregnet felt**), som indeholder udtrykket **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den **Gene\_1**-nummerserie, der er konfigureret for det firma, der leverer den kontekst, som ER-formatet køres under. |
+| NUMSEQVALUE (nummerseriekode) | Returnerer den nye genererede værdi for en nummerserie baseret på den angivne nummerserie, området **Firma** og koden for det firma (som område-id), der leverer den kontekst, ER-formatet køres under. | Du kan definere følgende datakilde i din modeltilknytning: **NumSeq** (typen **Beregnet felt**). Denne datakilde indeholder udtrykket **NUMSEQVALUE ("Gene\_1")**. Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den **Gene\_1**-nummerserie, der er konfigureret for det firma, der leverer den kontekst, som ER-formatet køres under. |
+| NUMSEQVALUE (nummerseriepost-id) | Returnerer den nye genererede værdi for en nummerserie baseret på post-id'et for den angivne nummerserie. | Du definerer følgende datakilder i din modeltilknytning:<ul><li>**LedgerParms** (typen **Tabel**), som refererer til tabellen LedgerParameters</li><li>**NumSeq** (typen **Beregnet felt**), som indeholder udtrykket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den nummerserie, der er konfigureret i Finans-parametrene for det firma, der leverer den kontekst, som ER-formatet køres under. Denne nummerserie identificerer entydigt kladder og fungerer som et batchnummer, der knytter posteringerne sammen. |
 
 ### <a name="functions-list-extension"></a>Funktionslistens udvidelse
 
@@ -674,7 +741,6 @@ ER understøtter muligheden for at udvide listen over funktioner, der bruges i E
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Oversigt over elektronisk rapportering](general-electronic-reporting.md)
-
-[Udvide listen over elektroniske rapporteringsfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md)
+- [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
+- [Udvide listen over elektroniske rapporteringsfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md)
 

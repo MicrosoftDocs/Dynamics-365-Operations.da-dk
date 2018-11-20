@@ -50,11 +50,12 @@ Der er følgende tilgængelige arbejdsgangstyper for Indkøb og forsyning.
 | Arbejdsgang for ansøgning om tilføjelse af kreditor  | Oprette arbejdsgange for gennemsyn og godkendelse for at tilføje nye kreditorer via kreditoranmodninger. |
 
 ## <a name="creating-a-workflow"></a>Oprettelse af en arbejdsgang
+
 Hvis du vil oprette en arbejdsgang, skal du gå til Indkøb og forsyning &gt; Opsætning &gt; Indkøbs- og forsyningsarbejdsgange og oprette en ny arbejdsgang ved at vælge den type arbejdsgang, du vil oprette.  
 
 På lærredet for arbejdsgangen kan du trække arbejdsgangselementer til designeren og sammenkæde elementerne til en arbejdsgang. Arbejdsgangselementerne bør være konfigureret. Du kan konfigurere, hvilken deltager der bør træffe foranstaltninger, i forbindelse med arbejdsgangselementer af typerne godkendelse og opgave.
-Deltagertyper
-----------------------
+
+## <a name="types-of-participants"></a>Deltagertyper
 
 Du kan knytte et godkendelsestrin til følgende deltagergrupper.
 
@@ -68,13 +69,12 @@ Du kan knytte et godkendelsestrin til følgende deltagergrupper.
 
 
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definition af forretningsprocesarbejdsgange for indkøbsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
+- [Arbejdsgang for indkøbsrekvisitioner](purchase-requisitions-workflow.md)
 
-[Onboarding af kreditorer](vendor-onboarding.md)
+- [Onboarding af kreditorer](vendor-onboarding.md)
 
 
