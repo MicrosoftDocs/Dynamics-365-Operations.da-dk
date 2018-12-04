@@ -1,0 +1,51 @@
+--- 
+title: Levere produkter direkte fra modtagende lagersteder til butikker
+description: "Denne procedure gennemgår trin til oprettelse og behandling af en cross-dock med henblik på distribution af produkter fra modtagelokationen af en købsordre til en eller flere butikker."
+author: ShylaThompson
+manager: AnnBe
+ms.date: 02/17/2016
+ms.topic: business-process
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Operations
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: shylaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: daa42bb83d6b988e8fd18db6ad8386c67fd3e6e5
+ms.contentlocale: da-dk
+ms.lasthandoff: 09/29/2017
+
+---
+# <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Levere produkter direkte fra modtagende lagersteder til butikker
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+Denne procedure gennemgår trin til oprettelse og behandling af en cross-dock med henblik på distribution af produkter fra modtagelokationen af en købsordre til en eller flere butikker. Brugeren kan definere flere konfigurationer og få systemet til at foreslå, hvordan produkter skal distribueres, eller manuelt angive, hvor produkterne skal distribueres til, og hvor meget der bliver distribueret til de enkelte butikker. Proceduren omfatter ikke opsætning af data, der kan bruges i cross-dock'en som f.eks. genopfyldningsregler, organisationshierarkier og vægten af butikken. Proceduren bruger demofirmaet USRT.
+
+1. Gå til Alle indkøbsordrer.
+2. Vælg en indkøbsordre på listen, og klik på linket for at åbne ordren.
+3. Klik på Detail i handlingsruden.
+4. Klik på Cross docking.
+5. Klik på Rediger.
+    * Kategorien, der kan bruges til at filtrere varerne i sektionen Linjer.  
+6. Find og vælg den ønskede post på listen.
+7. Skriv en værdi i feltet Antal til direkte levering for at angive, hvor meget af den mængde, der købes af det valgte produkt, der skal fordeles.
+8. I feltet Yderligere antal til direkte levering skal du angive en værdi for at angive mængderne, der skal fordeles for de tilgængelige produkter, der købes
+9. Angiv "Lokationsvægt" i feltet Distribution.
+    * Du kan vælge andre typer for at bruge forskellige regler for fordelingen.  
+10. Vælg en værdi i feltet Opfyldningshierarki.
+11. Vælg Ja i feltet Respektér udvalg.
+12. Klik på Beregn antal.
+13. Klik på Opret ordre.
+14. Klik på Ja.
+15. På listen skal du finde og vælge et lagersted, der har modtaget produkter.
+16. Klik på Bestil for at få vist de ordrer, der blev oprettet for det valgte lagersted
+
+
