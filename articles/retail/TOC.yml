@@ -47,6 +47,8 @@
       href: dev-itpro/updating-environments.md
     - name: Problemer med test og ydeevne
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Fordelt ordrestyring (DOM)
+  href: dom.md
 - name: Betalinger
   items:
     - name: Betalingsmetoder
@@ -55,13 +57,15 @@
       href: ../financials/accounts-receivable/credit-card-authorizations.md
     - name: Konfigurere kontantbeløbsangivelser for POS
       href: cash-denominations.md
+    - name: Konfigurer betalingsfakturascenarier
+      href: payinvoice.md
     - name: Ofte stillede spørgsmål om betalinger
       href: dev-itpro/payments-retail.md
 - name: Indkøbsordrer
   items:
     - name: Oversigt over indkøbsordrer
       href: ../supply-chain/procurement/purchase-order-overview.md
-    - name: Oprette indkøbsordrer
+    - name: Opret indkøbsordrer
       href: ../supply-chain/procurement/purchase-order-creation.md
     - name: Produktkvittering sammenlignet med indkøbsordrer
       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
@@ -213,6 +217,8 @@
       href: Order-fulfillment-POS-setup.md
     - name: Vise ordrebeskeder i POS
       href: Notifications-POS.md
+- name: Konfigurere og behandle en udveksling på en returordre
+  href: orderexchanges.md
 - name: Overvågning og analyse
   items:
     - name: Overvåge salgs- og avanceudvikling
@@ -235,6 +241,8 @@
       href: price-management.md
     - name: Prisjusteringer og rabatter
       href: price-adjustments-discounts.md
+    - name: Anvende flere detailrabatter for et produkt
+      href: Apply-multiple-retail-discounts.md
     - name: Bestemme den optimale kombination af overlappende rabatter
       href: optimal-combination-overlapping-discounts.md
     - name: Definere kanalspecifikke rabatter
@@ -488,6 +496,8 @@
       items:
         - name: Skærmlayout for Retail POS
           href: pos-screen-layouts.md
+        - name: Åbn URL-adresse i POS
+          href: Open-URL-in-POS.md
         - name: Installere layoutdesigneren til POS
           href: install-pos-layout-designer.md
         - name: Retail Modern POS i offlinetilstand
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Oprette og anvende branding til Retail Experience-appen
           href: dev-itpro/create-retail-experience-app.md
+        - name: Konfigurere POS Hybrid-appen på Android og iOS
+          href: dev-itpro/hybridApp.md
+        - name: Tilsidesætte POS-anmodningshandler
+          href: dev-itpro/pos-handler.md
     - name: Hardwarestation og udvidelse
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Server-udvidelse
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Oprette Windows-installationsprogrammer for betalingsconnectorer
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Brug af betalingsdata
+          href: payment-connector-data-fields.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Kommende ændringer i Retail SDK
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Flette build-systemer for Retail og Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Eksempler på udvidelsesmuligheder for Retail SDK
