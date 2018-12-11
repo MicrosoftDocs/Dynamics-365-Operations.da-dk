@@ -48,6 +48,10 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Funktioner, der endnu ikke er implementeret i lokale installationer'
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations version 8.1.3 (december 2018)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (december 2018)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (november 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations version 8.1.2 (november 2018)
@@ -152,6 +156,8 @@
               href: get-started/help-overview.md
             - name: Oprette forbindelse til Hjælp-systemet
               href: get-started/help-connect.md
+            - name: Oprette forbindelse til et brugerdefineret Hjælp-websted
+              href: get-started/help-custom.md
             - name: Se og eksportere feltbeskrivelser
               href: get-started/view-export-field-descriptions.md
             - name: Opgaveguider og arbejdsrutineoptager
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Nulstille datacenter for økonomirapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Elektroniske meddelelser
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Lokalisering og lovpligtige funktioner
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Fakturaer til betaling
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Økonomirapportering
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Opret en indkøbsbog
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Saudi-Arabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Importere konfigurationer fra Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Importere konfigurationer af elektronisk rapportering (ER) fra Regulatory Configuration Services (RCS)
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Hente konfigurationer fra Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Importere konfigurationer
@@ -4149,6 +4163,8 @@
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Plukke den ældste batch på en mobilenhed
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: Procesvejledningsstruktur
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: Opgradering og overflytning
           items:
             - name: Opgradere lagerstyringsprocesser fra Microsoft Dynamics AX 2012 til Finance and Operations
