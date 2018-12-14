@@ -3,7 +3,7 @@ title: "Fjernede eller frarådede funktioner"
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Funktion til eksport af genererede elektroniske filer med erklæringer til mappe
 | **Produktområder, der er berørt**         | Finans, moms |
 | **Installationsindstilling**              | Alt |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Guiden Registre over skat af overskud
+Funktion til oprettelse af skabeloner for nye registre over skat af overskud. Denne funktion opretter X ++-objekter for nye registre, der derefter oprettes som skabeloner med den relevante beregningslogik tilføjet.
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Funktionen er ikke kompatibel med Dynamics 365 for Finance and Operations-udvidelsesmodellen. |
+| **Erstattet af en anden funktion?**   | Nr. |
+| **Produktområder, der er berørt**         | Skat |
+| **Installationsindstilling**              | Alt |
+| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platformsopdatering 15 er kumulativ og indeholder nye eller ændrede funktioner fra platformsopdatering 13, platformsopdatering 14 og platformsopdatering 15.
@@ -993,6 +1006,17 @@ Product Builder blev brugt til at konfigurere varer dynamisk fra en salgsordre, 
 | **Erstattet af en anden funktion?**   | Ja. Begrænsningsbaseret konfiguration blev introduceret i Dynamics AX 2012, hvor afskrivningen af Product Builder i fremtidige versioner allerede blev offentliggjort. Den begrænsningsbaserede konfigurationsteknologi vælges på produktmasterne for at aktivere konfigurationen. Du kan finde flere oplysninger under [Bygge en produktkonfigurationsmodel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Salg og marketing  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Appen Production Floor
+Dette er appen til tabletenheder, der kører Windows 8.1 RT og Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Årsagen til forældelsen/fjernelsen** | Med ændringen af en webbaseret klient er det muligt at levere lignende funktionalitet via den oprindelige Dynamics AX 7.0-klient. Jobkortenheden indeholder en brugergrænseflade til produktionsanlægget, der er optimeret til touch- og tabletformfaktorer. |
+| **Erstattet af en anden funktion?**   | Ja. Jobkortenheden, der er en oprindelig del af Dynamics AX 7.0.                                                                           |
+| **Produktområder, der er berørt**         | Produktionsstyring                                                |
+| **Status**                         | Forældet: Der er endnu ikke er fastsat en dato for fjernelse af denne funktion fra Microsoft Store.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Omdøb produktdimension
 

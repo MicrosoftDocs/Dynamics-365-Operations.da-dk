@@ -1,9 +1,9 @@
 ---
 title: "Hjælp-system til Finance and Operations"
-description: "Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation."
+description: "Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. Den forklarer også, hvordan du kan angive tilpasset brugerdokumentation og kurser til din organisation. 
+Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet. 
 
 > [!NOTE] 
 > Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finance and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
@@ -48,8 +48,6 @@ Finance and Operations indeholder et hjælpesystem, der er baseret på to hovedk
 Du kan få hjælp fra ruden Hjælp i det produkt, du bruger. Følgende skærmbillede viser Finance and Operations.
 
 ![Hjælp-rude](./media/help-pane-ops-task-guides.png)
-
-I dette emne beskrives hjælpesystemet, og hvordan du kan oprette brugerdefineret dokumentation og undervisningsressourcer til din virksomhed.
 
 > [!IMPORTANT]
 > **Opgaveguider** er ikke tilgængelige i øjeblikket til Retail eller i ruden Hjælp for Talent (nogle opgaveguider er tilgængelige i ruden Introduktion til Talent). Automatiseret hjælp er tilgængelig på webstedet docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) til både Retail og Talent.
@@ -83,7 +81,7 @@ Hvis du vil abonnere på et RSS-feed for alle opdateringer til Unified Operation
 ### <a name="give-feedback"></a>Give feedback 
 Vi er meget glade for kundefeedback. Du kan enten kommentere eller foreslå ændringer til indholdet via GitHub. Du kan finde flere oplysninger om vores feedbacksystem, i [denne blogmeddelelse](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Give os feedback 
+#### <a name="leave-us-feedback"></a>Give os feedback 
 Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til os i bunden af siden.  
 
 1. Klik på **Feedback** for at få adgang til kommentarerne i bunden af siden, og klik derefter enten på **Produktfeedback** eller **Log på for at give feedback på dokumentation**.
@@ -93,8 +91,6 @@ Hvis du har feedback eller spørgsmål om et emne, kan du sende en kommentar til
 2. Begynd at skrive dine kommentarer, og klik derefter på **Send feedback**.
 
 ![Send kommentar](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Foreslå en ændring eller bidrage med indhold via GitHub
 Hvis du vil foreslå en ændring, skal du have en GitHub-konto og underskrive en logge en licensaftale for bidragyder.  Når du sender en pull-anmodning, gennemgår vi dine foreslåede ændringer. Hvis det er nødvendigt, diskuterer vi dem internt og vender derefter tilbage til dig.  
@@ -122,22 +118,7 @@ For at starte den automatiserede, interaktive oplevelse skal du klikke på **Sta
 > [!IMPORTANT] 
 > Vigtigt: De data, du indtaster, når du afspiller en opgaveguide, er faktiske. Hvis du er i et produktionsmiljø, indsættes dataene i det firma, du aktuelt bruger.
 
-### <a name="it-all-begins-with-task-recorder"></a>Det hele begynder med Arbejdsrutineoptager
-
-Opgaveguider oprettes ved hjælp af Arbejdsrutineoptager. Når du bruger Arbejdsrutineoptager, registreres alle dine handlinger i Finance and Operations-brugergrænsefladen (f.eks. at klikke på menuer, ændre indstillinger og indtaste data). De trin, du optager, bliver samlet kaldes en opgaveregistrering. Som vi har forklaret i forrige afsnit, kan opgaveregistreringer vises i ruden Hjælp og afspilles som opgaveguider. Der er og andre måder, du kan bruge opgaveregistreringer på:
-
--   **Gemme opgaveregistreringer til BPM** – du kan gemme en registrering til en linje i et hierarki i et BPM-bibliotek i LCS. Når du gemmer en opgaveregistrering til BPM, oprettes der et rutediagram, der vises sammen med trin af registreringen. 
-
-    > [!Note]
-    > Hvis du vil have vist en opgaveregistrering i ruden Hjælp i Finance and Operations og afspille den som en opgaveguide, skal du gemme registreringen i et BPM-bibliotek.
-    
--   **Gemme opgaveregistreringer som Word-dokumenter** – ved at gemme en opgaveregistrering som et Microsoft Word-dokument kan du nemt oprette kursusguider, der kan udskrives for organisationen.
-
-Du kan finde flere oplysninger om Arbejdsrutineoptager i [Arbejdsrutineoptager i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Oprette brugerdefinerede opgaveregistreringer
-
-Du kan oprette dine egne opgaveregistreringer, eller du kan hente og tilpasse opgaveregistreringer, som Microsoft leverer. Du kan derfor oprette en tilpasset Hjælp for din organisation, der afspejler din implementering af Finance and Operations. Bemærk! Hvis du vil have vist en opgaveregistrering i ruden Hjælp i Finance and Operations og afspille den som en Opgaveguide, skal du gemme registreringen i LCS. Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan finde flere oplysninger under [Brug af opgaveregistreringer til at oprette dokumentation eller uddannelse](../../dev-itpro/user-interface/task-recorder.md).
+Du kan bruge Arbejdsrutineoptager til at oprette dine egne brugerdefinerede opgaveguider. Du kan finde flere oplysninger under [Oprette dokumentation eller kursus ved hjælp af opgaveregistreringer](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Hjælp i produkterne
 For at få adgang til indhold i Hjælp i Finance and Operations skal du enten klikke på ikonet **Hjælp** (**?**) og derefter vælge Hjælp eller trykke på Ctrl + Skift +?. I begge tilfælde åbnes ruden Hjælp. Fra ruden Hjælp kan du få adgang til artikler eller opgaveguider. 
@@ -184,6 +165,11 @@ Når en systemadministrator har fuldført disse trin, kan du åbne ruden Hjælp 
 Oversatte opgaveguider udgives i biblioteker med "Alle sprog" i titlen. Når du vil se den lokaliserede hjælp til opgaveguider i Finance and Operations, skal du sørge for, at der er forbindelse til et relevant bibliotek. Det sprog, en opgaveguide vises på, styres for hver bruger af sprogindstillingerne under **Indstillinger** &gt; **Indstillinger**. 
 -   Hvis en opgaveguide er blevet oversat, vises teksten i opgaveguiden på det valgte sprog, når du åbner denne opgaveguide.
 -   Hvis en opgaveguide ikke er blevet oversat, er det kun noget af teksten (tekst i kontrolelementerne), der vises på det valgte sprog, når du åbner guiden.
+
+## <a name="creating-custom-help"></a>Oprettelse af tilpasset hjælp
+Du kan oprette Hjælp for brugerne ved at oprette brugerdefinerede opgaveguider eller forbinde dit eget websted til Hjælp-ruden. Der er flere oplysninger i: 
+- [Sådan opretter du en opgaveregistrering, der kan bruges som dokumentation eller kursus](../../dev-itpro/user-interface/task-recorder.md).
+- [Oprette brugerdefineret Hjælp til Finance and Operations (hvidbog)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

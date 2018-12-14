@@ -3,7 +3,7 @@ title: Installere og konfigurere Microsoft Dynamics 365 for Finance and Operatio
 description: "I dette emne beskrives, hvordan du installerer og konfigurerer Microsoft Dynamics 365 for Finance and Operations – Lagersted."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
-ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
+ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
+ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
 ms.contentlocale: da-dk
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -74,13 +74,12 @@ For at aktivere appen til at kommunikere med en bestemt Finance and Operations-s
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Oprette og konfigurere en brugerkonto i Finance and Operations
 For at aktivere Finance and Operations til at bruge din AD Azure-applikation, skal du fuldføre følgende konfiguration:
 
-1.  Opret en ny brugerkonto i Azure Active Directory til Finance and Operations-lejeren. Formålet med denne brugerkonto er at få adgang til bestemte brugerdefinerede tjenester i lagerstedsappen, som vises i Finance and Operations-serveren. Når du har fuldført dette trin, har du WMDP-brugerlegitimationsoplysninger, som består af en WMDP e-mailadresse og en WMDP-adgangskode. Du kan finde oplysninger om de grundlæggende trin til at føje brugere til Azure AD og Finance and Operations i dette selvstudium: [Tilmelding til et Finance and Operations-abonnement](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
-2.  Opret en Finance and Operations-bruger, der svarer til lagerstedsappens brugerlegitimationsoplysninger.
+1.  Opret en Finance and Operations-bruger, der svarer til lagerstedsappens brugerlegitimationsoplysninger.
     1.  I Finance and Operations skal du gå til **Systemadministration** &gt; **Generelt** &gt; **Brugere**.
     2.  Opret en ny bruger.
     3.  Tildel Mobilenhedsbruger for lagersted, som vist på følgende skærmbillede. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  Knyt din Azure Active Directory-applikation til brugeren af lagerstedsappen.
+2.  Knyt din Azure Active Directory-applikation til brugeren af lagerstedsappen.
     1.  I Finance and Operations skal du gå til **Systemadministration** &gt; **Opsætning** &gt; **Azure Active Directory-applikationer**.
     2.  Opet en ny linje.
     3.  Angiv **Klient-ID** (fra det sidste afsnit), giv det et navn, og vælg den bruger, der er oprettet tidligere. Vi anbefaler, at du mærker alle dine enheder, så du nemt kan fjerne deres adgang til Finance and Operations fra denne side i tilfælde af, at de går tabt. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)

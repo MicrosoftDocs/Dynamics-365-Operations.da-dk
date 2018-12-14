@@ -3,7 +3,7 @@ title: "Forbind hjælpesystemet"
 description: "I dette emne beskrives komponenterne i hjælpesystemet til Microsoft Dynamics 365 for Finance and Operations, og du får et overblik over, hvordan du tilslutter dem, og hvordan du opretter en brugerdefineret Hjælp."
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1449d44149f328f780f02e798c5200595557474
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: a2ca5f5302751ad2c4ddc3c6921a8a9b6c2d57df
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -68,9 +68,19 @@ Oversatte opgaveguider blev introduceret i APQC Unified-biblioteket maj 2016, og
 > -   Hvis en opgaveguide ikke er blevet oversat, er det kun noget af teksten (tekst i kontrolelementerne), der vises på det valgte sprog, når du åbner guiden.
 
 ## <a name="creating-custom-help"></a>Oprettelse af tilpasset hjælp
+Du kan bruge opgaveguider til at oprette brugerdefineret hjælp eller oprette forbindelse til Hjælp-ruden på et websted. 
+
+### <a name="create-custom-help-with-task-guides"></a>Oprette tilpasset hjælp til opgaveguider
 Du kan oprette en brugerdefineret hjælp til Finance and Operations og til Retail ved at oprette opgaveregistreringer, der afspejler din implementering, og gemme dem på et bibliotek i LCS Business Proces. Du kan ikke oprette brugerdefinerede opgaveguider til Talent. 
 
 Hvis du som partner fremmer et bibliotek til at være virksomhedens bibliotek og medtager det i en løsning, bliver det tilgængeligt for dine kunder. Du kan også oprette en kopi af det globale APQC Unified-bibliotek og derefter åbne kopien, åbne opgaveregistreringer fra det, redigere dem og gemme registreringerne med dine ændringer. Du kan finde flere oplysninger under [Sådan opretter du en opgaveregistrering, der skal bruges som dokumentation eller uddannelse](../../dev-itpro/user-interface/task-recorder.md).
+
+### <a name="connect-a-custom-site"></a>Oprette forbindelse til et brugerdefineret websted
+Microsoft har udgivet en hvidbog og eksempelkode, der beskriver, hvordan du opretter og tilknytte et brugerdefineret Hjælp-websted til Hjælp-ruden. Du kan finde flere oplysninger i: 
+- [Oprette brugerdefineret Hjælp til Finance and Operations (hvidbog)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Brugerdefineret GitHub-hjælpelager](https://github.com/microsoft/dynamics356f-o-custom-help)
+
+
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------

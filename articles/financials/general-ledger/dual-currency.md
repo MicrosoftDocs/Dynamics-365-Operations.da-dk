@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Dobbelt valuta
+
+[!include [banner](../includes/banner.md)]
 
 Funktioner, der blev introduceret i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) giver mulighed for at bruge rapporteringsvalutaen til andre formål og som endnu en regnskabsvaluta. Denne funktion kaldes *dobbelt valuta*. Ændringerne i forbindelse med den dobbelte valuta kan ikke deaktiveres via en konfigurationsnøgle eller parameter. Da rapporteringsvalutaen bruges som en ekstra regnskabsvaluta, er den måde, som rapporteringsvalutaen beregnes i bogføringslogikken, blevet ændret.
 
@@ -67,8 +69,8 @@ Følgende moduler bruger rapporteringsvalutaen som en ekstra regnskabsvaluta:
 
 - [Finans](#general-ledger)
 - [Økonomirapportering](#financial-reporting)
-- [Kreditorer](#accounts-payable/accounts-receivable)
-- [Debitorer](#accounts-payable/accounts-receivable)
+- [Kreditorer](#accounts-payable-and-accounts-receivable)
+- [Debitorer](#accounts-payable-and-accounts-receivable)
 - [Kontant- og bankstyring](#cash-and-bank-management)
 - [Anlægsaktiver](#fixed-assets)
 
@@ -90,7 +92,7 @@ Med en udvidelse til modulet **Regnskabsaflæggelse** kan du medtage rapporterin
 
 Denne ændring er tilgængelig via indstillingen **Valutavisning** i kolonnedefinitionen. Hvis du vælger **Rapporteringsvaluta fra Finans**, oversættes beløbene i kolonnen ikke. I stedet rapporteres de direkte fra finans. Hvis kolonnen skal vise oversatte beløb, skal du vælge indstillingen **Oversæt til XXXX**, hvor *XXXX* er den rapporteringsvaluta, som kolonnen skal vise. I dette tilfælde oversættes regnskabsvalutabeløb til den valgte valuta ved hjælp af den eksisterende oversættelsesfunktionalitet.
 
-### <a name="accounts-payableaccounts-receivable"></a>Debitor/kreditor
+### <a name="accounts-payable-and-accounts-receivable"></a>Debitor og kreditor
 
 Modulerne **Kreditor** og **Debitor** kunne i forvejen registrere rapporteringsvalutabeløb. Beløbene bliver dog ikke vist eller brugt til forskellige processer. Der er foretaget følgende ændringer:
 

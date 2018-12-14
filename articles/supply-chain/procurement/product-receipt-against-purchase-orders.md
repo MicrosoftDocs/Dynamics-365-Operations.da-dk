@@ -1,9 +1,9 @@
 ---
 title: "Produktkvittering sammenlignet med indkøbsordrer"
-description: I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
+description: I dette emne beskrives de forskellige indstillinger for registrering af produkter som modtaget.
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [retail name](../includes/retail-name.md)]
 
-I denne artikel beskrives de forskellige indstillinger for registrering af produkter som modtaget.
+I dette emne beskrives de forskellige indstillinger for registrering af produkter som modtaget.
 
 Produktkvittering er registreringen af, at der er modtaget bestilte produkter, så indkøbsordrelinjerne (IO) derefter kan behandles med henblik på fakturering. I nogle tilfælde gennemgår produkter forudregistrering, hvor yderligere oplysninger fra leverandøren registreres, før produkterne modtages. Når produkterne ankommer, skal de først er markeret som **Registreret**. Produkterne skal derefter muligvis igennem flere processer, som kvalitetsstyring, før de endelig markeres som **Modtaget**.
 
@@ -46,8 +46,6 @@ Produkter, der modtages på et lagersted, kan passere gennem kvalitetskontrol, f
 
 ## <a name="product-receipt"></a>Produktkvittering
 Oftest bruges handlingen **Produktkvittering** på siden **Indkøbsordrer** til at markere produkter som **Modtaget** på indkøbsordren. Siden **Konterer produktkvittering** har forskellige indstillinger for det antal, der er bogført som modtaget. For eksempel kan du indstille feltet **Antal** til **Bestilt antal** eller **Antal til modtagelse nu**. Alternativt, hvis der er brugt en lagersteds-modtagelsesproces, skal du ofte indstille feltet til **Registreret antal**. Du kan ændre antallet på hver ordrelinje, der skal markeres som **Modtaget**, for at tage højde for eventuelle uoverensstemmelser, som f.eks. underlevering og overlevering. Under produktmodtagelsen skal du angive et produktmodtagelses-id, som typisk er en reference til følgesedlen fra leverandøren. Dette id er påkrævet ved regnskabsføring, fordi det giver mulighed for kontrol eller revision af leverandørens følgesedler i forhold til, hvad der er modtaget, og de tilskrevne lager eller udgifter.  
-
-Hvis en medarbejder har bestilt varer ved hjælp af en indkøbsrekvisition, kan medarbejderen blive anmodet om at bekræfte modtagelsen af produktet selv. Du kan konfigurere denne funktionsmåde ved hjælp af en arbejdsgang. Du kan konfigurere betingelser for arbejdsgange, så de stemmer overens med din forretningsproces.  
 
 IO'er kan oprettes for produkter, der ikke er beregnet som lager, men betragtes som en udgift. Denne kategori omfatter ordrelinjer, hvor produkterne er markeret som **Ikke på lager** af deres lagermodelgruppe, og også linjer, der bruger indkøbskategorier. Varerne kan i så fald ikke passere gennem registrering ved ankomst og modtagelse på lagerstedet. I stedet for bruges handlingen **Produktkvittering** til at registrere modtagelsen direkte på indkøbsordren, og modtagelsen baseres på det bestilte antal og ikke et registreret antal.  
 

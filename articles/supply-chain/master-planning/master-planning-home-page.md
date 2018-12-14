@@ -3,7 +3,7 @@ title: Startside for varedisponering
 description: "Med Varedisponering kan virksomheder bestemme og afbalancere deres fremtidige behov for råmaterialer og evne til at opfylde virksomhedens mål."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: da-dk
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 
 ## <a name="quick-links"></a>Hurtige links
 
-|      |   |
-|------|---|
-|        [Behovsplaner](master-plans.md)       |     [Generere en begrænset plan](./tasks/constrained-plan.md)  |
-| [Oprette en materialeplan for samprodukter](./tasks/create-material-plan-co-products.md)   |  [Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)  |
-| [Oprette en intern plan](./tasks/create-intercompany-plan.md) | [Oversigt over behovsprognose](introduction-demand-forecasting.md)  | 
-|[Reduktionsnøgler](reduction-keys.md)| [Grundlæggende oplysninger om varedisponering](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (kræver CustomerSource-konto)     |
-|  [Varedisponering for procesproduktion](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (kræver CustomerSource-konto) | [Intern varedisponering](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (kræver CustomerSource-konto)|
+- [Behovsplaner](master-plans.md)  
+- [Generere en begrænset plan](./tasks/constrained-plan.md)
+- [Oprette en materialeplan for samprodukter](./tasks/create-material-plan-co-products.md)
+- [Varedisponering og funktionen til flere lokationer](master-plan-multisite-functionality.md)
+- [Oprette en intern plan](./tasks/create-intercompany-plan.md)
+- [Oversigt over behovsprognose](introduction-demand-forecasting.md)
+- [Reduktionsnøgler](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Yderligere ressourcer
 

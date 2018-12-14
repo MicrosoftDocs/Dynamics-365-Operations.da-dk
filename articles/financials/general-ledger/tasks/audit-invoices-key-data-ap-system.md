@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 70a7a1f7d7a8221a72addfbee1d21f813df4eb46
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>Revider fakturaer og nøgledata i kreditorsystem
@@ -35,34 +35,31 @@ Denne procedure bruger demofirmaet USMF. Rollen kreditorchef eller rollen regnsk
 
 
 ## <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
-1. Gå til Alle indkøbsordrer.
-2. Klik på Ny.
-3. Klik på rullelisten i feltet Kreditorkonto for at åbne opslaget.
-4. Skriv en værdi i feltet Kreditorkonto.
-5. Klik på OK.
-6. Klik på Tilføj linje.
-7. Indtast en værdi i feltet Varenummer.
-8. Klik på Køb i handlingsruden.
-9. Klik på Bekræft.
+1. Gå til **Alle indkøbsordrer**.
+2. Klik på **Ny**.
+3. Skriv en værdi i feltet **Kreditorkonto**.
+4. Klik på **OK**.
+5. Klik på **Tilføj linje**.
+6. Indtast en værdi i feltet **Varenummer**.
+7. Klik på **Køb** i handlingsruden.
+8. Klik på **Bekræft**.
 
 ## <a name="post-a-product-receipt"></a>Bogfør en produktkvittering
-1. Klik på Modtag i handlingsruden.
-2. Klik på Produktkvittering.
-3. Markér den valgte række på listen.
-4. Skriv en værdi i feltet Produktkvittering.
-5. Klik på OK.
+1. Klik på **Modtag** i handlingsruden.
+2. Klik på **Produktkvittering**.
+3. Skriv en værdi i feltet **Produktkvittering**.
+4. Klik på **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Registrere og sammenholde en kreditorfaktura med en produktkvittering
-1. Klik på Faktura i handlingsruden.
-2. Klik på Faktura.
-3. Skriv en værdi i feltet Nummer.
-4. Klik på Modtag fra: Bestilt antal for at åbne dialogboksen Fjern.
-5. Vælg en indstilling i feltet Standardmængde for linjer.
-6. Klik på OK.
-7. Klik på Ja.
-8. Klik på Sammenhold produktkvitteringer.
-9. Klik på OK.
-10. Klik på Gennemse i handlingsruden.
-11. Klik på Detaljer om sammenholdelse.
+1. Klik på **Faktura > Faktura** i handlingsruden.
+2. Skriv en værdi i feltet **Nummer**.
+3. Klik på **Modtag fra: Bestilt antal** for at åbne dialogboksen Fjern.
+4. Vælg en indstilling i feltet **Standardmængde for linjer**.
+5. Klik på **OK**.
+6. Klik på **Ja**.
+7. Klik på **Sammenhold produktkvitteringer**.
+8. Klik på **OK**.
+9. Klik på **Gennemse** i handlingsruden.
+10. Klik på **Detaljer om sammenholdelse**.
 
 
