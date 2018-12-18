@@ -31,28 +31,29 @@ ms.lasthandoff: 08/08/2018
 
 I dette emne beskrives arbejdsgangsystemet i Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="what-is-workflow"></a>Hvad er en arbejdsgang?
------------------
+## <a name="what-is-workflow"></a>Hvad er en arbejdsgang?
 
 Udtrykket *arbejdsgang* kan defineres på to måder: som et system og som en forretningsproces.
+
 ### <a name="workflow-is-a-system"></a>Arbejdsgang er et system
 
 Arbejdsgang er et system, som installeres med Finance and Operations, og som kører i AOS (applikationsobjektserveren). Arbejdsgangssystemet indeholder funktioner, som du kan bruge til oprette individuelle arbejdsgange eller forretningsprocesser.
 
 ### <a name="workflow-is-a-business-process"></a>Arbejdsgang er en forretningsproces
 
-En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et dokument "flyder" eller bevæger sig gennem systemet, ved at vise, hvem der skal udføre en opgave, træffe en beslutning eller godkende et dokument. I nedenstående illustration vises f.eks. en arbejdsgang for udgiftsrapporter. 
+En arbejdsgang repræsenterer en forretningsproces. Den definerer, hvordan et dokument "flyder" eller bevæger sig gennem systemet, ved at vise, hvem der skal udføre en opgave, træffe en beslutning eller godkende et dokument. I nedenstående illustration vises f.eks. en arbejdsgang for udgiftsrapporter.
 
-![Arbejdsgang med elementer, der er tilknyttet brugere](./media/workflow_user.gif) 
+![Arbejdsgang med elementer, der er tilknyttet brugere](./media/workflow_user.gif)
 
 Hvis du bedre vil kunne forstå denne arbejdsgang, kan du antage, at Søren sender en udgiftsrapport for kr. 7.000. I dette scenario skal Ivan gennemse de kvitteringer, som Søren har sendt til ham. Henrik og Mette skal derefter godkende udgiftsrapporten. Antag nu, at Søren sender en udgiftsrapport for kr. 11.000. I dette scenario skal Ivan gennemse kvitteringerne, og Henrik, Mette og Dorthe skal godkende udgiftsrapporten.
 
 ## <a name="benefits-of-using-the-workflow-system"></a>Fordele ved at bruge arbejdsgangssystemet
 
 Der er flere fordele ved at bruge arbejdsgangssystemet i organisationen:
--   **Ensartede processer** – Du kan definere, hvordan bestemte dokumenter, f.eks. indkøbsrekvisitioner og udgiftsrapporter, behandles. Ved at bruge arbejdsgangssystemet kan du sikre, at dokumenter behandles og godkendes på en ensartet og effektiv måde.
--   **Synliggørelse af processer** – Du kan spore status, historik og performanceværdier for arbejdsgangsforekomster. Dette hjælper dig med at bestemme, om der skal foretages ændringer i arbejdsgangen for at forbedre effektiviteten.
--   **Centraliseret arbejdsliste** – Brugerne kan få vist en centraliseret arbejdsliste, der viser opgaverne i arbejdsgangen og de godkendelser, der er knyttet til dem.
+
+- **Ensartede processer** – Du kan definere, hvordan bestemte dokumenter, f.eks. indkøbsrekvisitioner og udgiftsrapporter, behandles. Ved at bruge arbejdsgangssystemet kan du sikre, at dokumenter behandles og godkendes på en ensartet og effektiv måde.
+- **Synliggørelse af processer** – Du kan spore status, historik og performanceværdier for arbejdsgangsforekomster. Dette hjælper dig med at bestemme, om der skal foretages ændringer i arbejdsgangen for at forbedre effektiviteten.
+- **Centraliseret arbejdsliste** – Brugerne kan få vist en centraliseret arbejdsliste, der viser opgaverne i arbejdsgangen og de godkendelser, der er knyttet til dem.
 
 
 ## <a name="workflow-content"></a>Indhold af arbejdsgang
