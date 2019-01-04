@@ -31,20 +31,18 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail. 
+Du kan undersøge rentabilitet for de 10 bedste produkter ved hjælp af Microsoft Dynamics 365 for Retail.
 
 Som en del af Dynamics 365 for Retail kan brugerne også undersøge rentabilitet for de bedste produkter (10 til 100) på tværs af forskellige niveauer i organisationshierarkiet, baseret på et af følgende kriterier:
 
--   Salgsbeløb
--   Antal
--   Overskudsgrad, brutto
--   DB-procent
+- Salgsbeløb
+- Antal
+- Overskudsgrad, brutto
+- DB-procent
 
 Til denne vurdering kan du bruge den færdiglavede rapport **Vigtigste produkter**, som du kan åbne fra et af følgende steder:
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
--   **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over topprodukter**
-
-
+- Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
+- **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over topprodukter**
+- Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over topprodukter**
 

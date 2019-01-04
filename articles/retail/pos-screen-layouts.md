@@ -40,6 +40,7 @@ I følgende illustration vises forholdet mellem de forskellige enheder, der udg�
 ![Enheder i POS-skærmlayout](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuel profil
+
 Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle elementer, der er kasseapparatspecifikke og delt på tværs af brugere. Alle brugere, der logger på kasseapparatet, får vist det samme tema og de samme farver og billeder.
 
 ![POS-velkomstskærm med lystema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Visuelle profiler tildeles til kasseapparater, og de angiver de visuelle element
 - **Programbaggrund** – Du kan angive et baggrundsbillede, der bruges i hele programmet i stedet for den dækkende temafarve. Hvad angår logonbaggrunde, bør filstørrelsen holdes så lav som muligt.
 
 ## <a name="screen-layouts"></a>Skærmlayout
+
 Konfigurationer af skærmlayoutet bestemmer handlingerne, indholdet og placeringen af UI-kontrolelementer på velkomstskærmen og **transaktionsskærmen** på POS-enheden.
 
 ![Visning af POS-skærmlayout](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Ved start vælger POS-programmet automatisk den nærmeste layoutstørrelse, der 
 ![POS-layoutstørrelser](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Knapmatricer
+
 For hver layoutstørrelse i et skærmlayout kan du konfigurere og tildele knapmatricer for POS-velkomstskærmbilledet og skærmbilledet **Transaktion**. Knapmatricer til velkomstskærmbilledet placeres automatisk fra venstre mod højre, fra det laveste nummer (velkomstskærmbillede 1) til det højeste nummer.
 
 I fulde POS-layouts er placeringen af knapmatricer angivet i skærmens layoutdesigner.
@@ -104,6 +107,7 @@ I kompakte POS-layouts placeres knapmatricerne automatisk fra top mod bund, fra 
 ![Knapmatricer til kompakt layout](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Billeder
+
 Du kan angive billeder, der skal medtages i POS-brugergrænsefladen for de enkelte layoutstørrelser i et skærmlayout. Til fulde POS-layouts kan der angives et enkelt billede for velkomstskærmbilledet. Dette billede vises som det første element til venstre i brugergrænsefladen. På skærmbilledet **Transaktion** kan billeder bruges som fanebilleder eller et logo. Kompakte POS-layouts bruger ikke disse billeder.
 
 ### <a name="screen-layout-designer"></a>Designer for skærmlayout
@@ -141,11 +145,13 @@ Den fulde layoutdesigner giver brugerne adgang til trække kontrolelementer i br
     - **Brugerdefineret kontrolelement** – Det brugerdefinerede kontrolelement fungerer som en pladsholder i skærmlayoutet, og giver dig mulighed at reservere plads til brugerdefineret indhold. Det brugerdefinerede kontrolelement er kun tilgængeligt for fulde layouts.
 
 ### <a name="compact-layout-designer"></a>Designer til kompakt layout
+
 Som designeren til fuld layout giver designeren til kompakt layout dig mulighed for at konfigurere POS-skærmlayoutet for telefoner og små tablets. Men i dette tilfælde er selve layoutet dog fast. Du kan konfigurere kontrolelementerne i layoutet ved at højreklikke og bruge genvejsmenuen. Du kan dog ikke bruge træk og slip-handlinger til yderligere indhold.
 
 ![Designer til kompakt layout](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Designer til knapmatrix
+
 Designeren til knapmatrix giver dig mulighed for at konfigurere knapmatricer, der kan bruges på POS-velkomstskærmbilledet og skærmbilledet **Transaktion** til både fulde og kompakte layouts. Den samme knapmatrix kan bruges på tværs af layouts og layouttyper. Ligesom skærmlayoutdesigneren bruger designeren til knapmatrix ClickOnce-installationsteknologien til at hente, installere og starte den nyeste version af programmet, hver gang brugeren åbner det. Du skal kontrollere browserkravene til ClickOnce. Nogle browsere, f.eks. Google Chrome, kræver udvidelser.
 
 ![Designer til knapmatrix](../retail/media/Button-Grid-Designer.png)

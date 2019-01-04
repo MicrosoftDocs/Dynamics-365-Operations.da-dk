@@ -42,25 +42,30 @@ Ud over at understøtte ordreoprettelsen indeholder callcentermodulet også et b
 Denne side indeholder links til relevant dokumentation, der er relateret til installation, konfiguration og den funktionelle brug af funktionerne i callcenteret i Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Konfigurere callcenteret
+
 [Konfigurere indstillinger for ordrebehandling](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurere ordrebehandling
+
 [Konfigurere advarsler om svindel](set-up-fraud-alerts.md)
 
 [Manuelle ordrer på hold](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurere betalingsbehandling
+
 [Betalingsmetoder i et callcenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurere leveringsmetoder
+
 [Konfigurere callcenterets leveringsmåder og -gebyrer](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurere direkte marketing
+
 [Callcenter-kataloger](call-center-catalogs.md)
 
 [Konfigurere RFM-analyse](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
-[Oprette et kontinuitetsprogram for et callcenter](set-up-continuity-program.md)
 
+[Oprette et kontinuitetsprogram for et callcenter](set-up-continuity-program.md)
 

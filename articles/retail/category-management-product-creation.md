@@ -59,4 +59,3 @@ Du kan bruge den nye forbedrede struktur for produktegenskaber til at vælge, hv
 
 ![Dialogboksen Opdater produkter](media/NewUpdateProductsEnhancedView.PNG)
 
-

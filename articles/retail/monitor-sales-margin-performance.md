@@ -35,21 +35,19 @@ Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dyn
 
 I Dynamics 365 for Retail, kan brugerne overvåge salgs- og avanceudvikling i realtid på tværs af forskellige niveauer i organisationshierarkiet for følgende dimensioner:
 
--   Produkter
--   Kategorier
--   Rabatter
--   År som periode
--   Registre/terminaler
--   Personale/medarbejdere
--   Debitorer
--   Driftsenheder
+- Produkter
+- Kategorier
+- Rabatter
+- År som periode
+- Registre/terminaler
+- Personale/medarbejdere
+- Debitorer
+- Driftsenheder
 
 Desuden kan brugerne med to entydige rapporter, der udnytter strukturering af hierarkiske gitre, overvåge salgs- og avanceudvikling ved at udføre detailudledning fra den øverste kategorinode til individuelle bladnoder i kategorien i kategorihierarkiet for standarddetailproduktet. Brugere kan også udføre detailudledning fra den øverste driftsenhed til en enkelt kanal i organisationshierarkiet, der er defineret som standardorganisationshierarkiet i forbindelse med detailrapporteringshierarkiet. Du kan åbne rapporterne fra en af følgende lokaliteter:
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter**
--   **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Produkt og kategorier** &gt; **Detailbutiksstyring** &gt; **Rapporter**
--   **Styring af prissætning og rabatter**-arbejdsområdet &gt; **Detail** &gt; **Priser og rabatter** &gt; **Detailbutiksstyring** &gt; **Rapporter**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
-
-
+- Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+- **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Produkt og kategorier** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+- **Styring af prissætning og rabatter**-arbejdsområdet &gt; **Detail** &gt; **Priser og rabatter** &gt; **Detailbutiksstyring** &gt; **Rapporter**
+- Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
 

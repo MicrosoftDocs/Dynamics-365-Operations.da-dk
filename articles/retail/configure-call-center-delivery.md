@@ -36,6 +36,7 @@ Når du opretter en salgsordre, kan du vælge en leveringsmåde i salgsordrehove
 Retail har funktioner, som brugerne kan bruge til at begrænse de leveringsmåder, der kan bruges af en kanal, de leveringsmåder, der kan bruges til et produkt, og de leveringsmåder, der gælder for bestemte forsendelsesdestinationer. Der kan også defineres gebyrer, så yderligere gebyrer kan føjes til en kundes ordre, afhængigt af hvilke leveringsmåder der er valgt for salgsordren, og ordrens samlede værdi.
 
 ## <a name="define-delivery-modes"></a>Definere leveringsmåder
+
 Før du angiver, hvilke leveringsmåder der kan bruges til callcenterordrer, og definerer de tilknyttede regler og gebyrer, skal du definere leveringsmåderne. Gå til **Salg og marketing \> Konfiguration \> Distribution \> Leveringsmåder**. Vælg **Ny** for at oprette en ny leveringsmåde. Du kan også vælge en eksisterende leveringsmåde på listen og derefter vælge **Rediger** for at foretage ændringer.
 
 I feltet **Leveringsmåde** kan du angive en kombination af alfanumeriske tegn baseret på dine forretningsbehov. Du kan derefter bruge feltet **Beskrivelse** til at levere yderligere kontekst. Felterne **Gebyrgruppe** og **Fremskynd** er valgfri og beskrives mere detaljeret senere i dette emne.
@@ -47,11 +48,13 @@ I oversigtspanelet **Produkter** kan du angive, hvilke produkter og/eller produk
 I oversigtspanelet **Adresser** kan du angive, hvilke lande eller områder leveringsmåden kan bruges til, og hvilke den ikke kan bruges til. For eksempel kan ordrer, der leveres til Hawaii eller Alaska, ikke leveres med vognmand. Disse stater skal derfor udelukkes fra leveringsmåder, der er knyttet til en vognmandstjeneste, men kan medtages i leveringsmåder, der er knyttet til flyleveringstjenester.
 
 ## <a name="validate-delivery-modes-for-a-call-center-order"></a>Validere leveringsmåder for en callcenterordre
+
 Når leveringsmåderne er defineret, skal du køre batchjobbet **Behandling af leveringsmåder**. Dette job gør leveringsmåderne tilgængelige, så de kan bruges i salgsordreprocesser for detailkanaler. Du kan køre jobbet **Behandling af leveringsmåder** ved at gå til **Detail \> Detail-it \> Behandling af leveringsmåder**. Dette job skal køres, hver gang der føjes nye leveringsmåder til en detailkanal, eller der foretages ændringer af eksisterende relationer for leveringsmåde/kanal.
 
 Når du har kørt batchjobbet **Behandling af leveringsmåder**, kan du gå til **Detail \> Kanaler \> Call centre \> Alle call centre**. På siden **Alle call centre** skal du i handlingsruden under fanen **Konfigurer** vælge **Leveringsmåder**. På siden **Leveringsmåder** kan du se alle gyldige leveringsmåder for den valgte callcenterkanal. For at redigere eksisterende leveringsmåder eller tilføje nye leveringsmåder skal du vælge **Administrer leveringsmåder**. Bemærk, at jobbet **Behandling af leveringsmåder** skal køres, hver gang der foretages ændringer.
 
 ## <a name="define-charges-for-delivery-services"></a>Definere gebyrer for leveringen af varerne
+
 Når der oprettes salgsordrer for kunder, kan et firma tilføje gebyrer, der beregnes automatisk baseret på de leveringsmåder, der er valgt for ordren. Disse gebyrer kan konfigureres, så de er ens for alle kunder og leveringsmåder. Gebyrerne kan også variere, afhængigt af kunden og/eller de leveringsmåder, der er valgt for salgsordren.
 
 Du kan definere gebyrerne ved at gå til **Detail \> Konfiguration af kanal \> Gebyrer \> Automatiske gebyrer**. Vælg **Ny** for at tilføje nye gebyrer. Du kan også vælge en eksisterende post og derefter vælge **Rediger**.
@@ -73,6 +76,7 @@ Du kan bruge en blanding af kategorier for gebyrer, afhængigt af virksomhedens 
 ![Eksempel på blandede lagdelte gebyrer](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Anvende leveringsmåder under ordreindtastning i et callcenter
+
 Når der oprettes en ny salgsordre, skal der angives en værdi i feltet **Leveringsmåde** i oversigtspanelet **Levering** i salgsordrehovedet. Dette felt kan blive udfyldt automatisk baseret på standardværdier i kundeposten.
 
 Den leveringsmåde, der er defineret i ordrehovedet, kopieres automatisk til salgsordrelinjerne, efterhånden som de oprettes. Du kan dog ændre opsætningen af leveringsmåden for et bestemt linjeelement under fanen **Levering** i sektionen **Linjedetaljer** på siden for salgsordreindtastningen.
@@ -80,11 +84,13 @@ Den leveringsmåde, der er defineret i ordrehovedet, kopieres automatisk til sal
 Hvis den valgte leveringsmåde ikke er gyldig for produktet eller den leveringsadresse, der er defineret for ordren eller ordrelinjen, vises der en fejlmeddelelse. Derefter skal du vælge en leveringsmåde, der er defineret til at understøtte den pågældende produkt- eller adressekonfiguration.
 
 ## <a name="calculation-of-delivery-charges-during-entry-of-order"></a>Beregning af leveringsgebyrer under ordreindtastning
+
 Hvis indstillingen **Aktivér ordrefuldførelse** er slået til for din callcenterkanal, beregnes forsendelsesgebyrer automatisk for salgsordrer, når brugerne vælger **Fuldført**. Følgende meddelelse vises øverst på siden **Salgsordreoversigt**: "Lagdelte gebyrer er beregnet". De gebyrer, der er beregnet, føjes til værdien i feltet **Salg i alt**. I oversigtspanelet **Beløb** i feltet **Gebyrer** vises det samlede beløb for alle de gebyrer, der er beregnet for ordren og linjerne. Du kan se en mere detaljeret opdeling af gebyrerne ved at vælge **Ordre** på siden **Salgsordreoversigt** og derefter vælge indstillingen **Gebyrer** for at få vist, tilføje eller rediger gebyrerne. Bemærk, at beregningen af leveringsgebyrer i ordrehovedet er baseret på den leveringsmåde, der er knyttet til hovedet. Leveringsgebyrer på linjeniveau beregnes ud fra den leveringsmåde, der er konfigureret for salgslinjen. Hvis der bruges flere leveringsmåder på forskellige linjer, bliver der muligvis anvendt flere gebyrer, som lægges sammen. Derefter vises det samlede beløb i feltet **Gebyrer** på siden **Salgsordreoversigt**.
 
 Hvis indstillingen **Aktivér ordrefuldførelse** er slået fra, skal brugerne manuelt udløse beregningen af gebyrer. På siden **Salgsordre** i handlingsruden skal du vælge **Lagdelte gebyrer** under fanen **Sælg** i gruppen **Beregn**. Meddelelsen "Lagdelte gebyrer er beregnet" vises. Du kan derefter vælge indstillingen **Gebyrer** under fanen **Sælg** for at få vist, redigere eller slette de beregnede gebyrer.
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Bruge fremskyndede leveringsmåder til callcenterordrer
+
 Du kan også knytte en fremskyndelseskode til en leveringsmåde, som du konfigurerer. Denne kode bruges som et sorterings- og rapporteringværktøj ved prioritering. Det udløser i øjeblikket ikke yderligere gebyrer, der skal anvendes på ordren. Hvis du vil angive fremskyndelseskoder, skal du gå til **Salgs- og marketing \> Opsætning \> Distribution \> Fremskynd koder**.
 
 Ved der for eksempel skal leveres med fly næste arbejdsdag, skal pluk udføres på lagerstedet inden kl. 13 hver dag. I så fald kan der oprettes en fremskyndelseskode, som kan knyttes til enhver leveringsmåde for næste arbejdsdag, der er konfigureret i systemet. Når lagerstedet opretter sin plukbølge, kan den relevante fremskyndelseskode i feltet **Fremskynd** bruges som et filter, så pluk kun køres for ordrer, der har de leveringsmåder, der er knyttet til koden.
