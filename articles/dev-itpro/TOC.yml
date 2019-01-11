@@ -261,9 +261,11 @@
               href: extensibility/extensibility-changes-811.md
             - name: Ændringer af udvidelsesmuligheder version 8.1.2
               href: extensibility/extensibility-changes-812.md
+            - name: Ændringer af udvidelsesmuligheder version 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Grundlæggende
           items:
-            - name: Intrusive tilpasninger
+            - name: Forstyrrende tilpasninger
               href: extensibility/intrusive-customizations.md
             - name: Klasseudvidelsesmodel
               href: extensibility/class-extensions.md
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Skyinstallation
       items:
+        - name: Selvbetjeningsinstallation
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Installere et nyt miljø
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Ofte stillede spørgsmål om installation
+              href: deployment/deploymentFAQ.md
+            - name: Kendte problemer med selvbetjeningsinstallation
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Vedligeholdelsesoperationer for installationer
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Opdatere et miljø
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: 'Fejlfinding i miljøer, der er installeret via selvbetjeningsinstallation'
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Komplet onboarding af Azure Resource Manager
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute og Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations-arkitektur
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Anvende opdateringer i skybaserede miljøer
+          href: deployment/apply-deployable-package-system.md
+        - name: Anvende opdateringer og udvidelser på skybaserede Retail-kanalkomponenter
+          href: deployment/Update-retail-channel.md
+        - name: Initialisere skybaserede Retail-kanalkomponenter
+          href: deployment/Initialize-Retail-Channels.md
     - name: Lokal installation
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Oprette installerbare modelpakker
           href: deployment/create-apply-deployable-package.md
-        - name: Anvende opdateringer i skybaserede miljøer
-          href: deployment/apply-deployable-package-system.md
         - name: Installere installerbare pakker fra kommandolinjen
           href: deployment/install-deployable-package.md
         - name: Fjerne installation af en pakke
@@ -1021,8 +1042,6 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Opgradere Dynamics AX-platformen til august 2016-udgivelsen
           href: migration-upgrade/update-platform-each-release.md
-        - name: Opgradere sandkassemiljøer
-          href: migration-upgrade/upgrade-sandbox-environment.md
         - name: 'Opgradere data i udviklings-, demo- eller sandkassemiljøer'
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Opdatere udviklingsværktøjer
