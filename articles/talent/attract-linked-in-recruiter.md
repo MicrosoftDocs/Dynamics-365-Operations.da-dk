@@ -3,7 +3,7 @@ title: Forsyning med LinkedIn Recruiter
 description: "Dette emne indeholder oplysninger om brug af maskinel indlæring til at få anbefalinger om job og jobkandidater."
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ Når LinkedIn Recruiter-funktionerne er aktiveret af Attract-administratoren, er
 
 Du kan få vist kandidatens LinkedIn-profil i Attract. LinkedIn-widgetten viser kandidatprofilen, når ATS-oplysningerne svarer til brugernes LinkedIn-oplysninger.
 
-Hvis du vil se en profil, skal du gå til kandidatprofilen, enten fra et job eller en talentpulje. I kandidatprofilen skal du vælge fanen **LinkedIn**, så profilwidgetten indlæses. Med profilwidgetten skal du angive, om det er det korrekte match. Hvis ikke, skal du finde den rigtige person. Du kan også gemme kandidaten i dine LinkedIn Recruiter-projekter fra denne side.
+Hvis du vil se en profil, skal du gå til kandidatprofilen, enten fra et job eller en talentpulje. I kandidatprofilen skal du vælge fanen **LinkedIn**, så profilwidgetten indlæses. Du kan også gemme kandidaten i dine LinkedIn Recruiter-projekter fra denne side.
+1. Hvis LinkedIn har fundet dette match ud fra e-mail og LinkedIn-medlemmets id (nøjagtigt match), vises kandidatens profil. Brugeren har stadig mulighed for at sammenkæde/fjerne sammenkædningen af profilen.
+
+2. Hvis LinkedIn ikke kan finde kandidaten baseret på vedkommendes e-mail- eller medlems-id, vises en liste over mulige kandidater baseret på kandidatens navn, og brugeren kan vælge en af dem og sammenkæde profilen.  
+
+3. Hvis LinkedIn ikke kan finde nogen kandidater baseret på navnet, returneres, at der ikke blev fundet et match.
 
 ### <a name="1-click-export"></a>Eksport med 1 klik 
 
@@ -117,11 +122,14 @@ Når du bruger LinkedIn Recruiter, kan du spore, om en kandidat har ansøgt om a
 
 6.  Vælg fanen **Notes** for at få vist noter, der er hentet for denne ansøger i Attract.
 
+> [!NOTE]
+> Kandidat- og programdata synkroniseres ikke med LinkedIn Recruiter, hvis kandidaten ikke har passeret kandidatstadiet.
+
 ### <a name="inmail-history"></a>InMail-historik
 
 LinkedIn InMail-historikken er tilgængelig på kontraktniveau i LinkedIn Recruiter. Når den er aktiveret, kan du få vist hele InMail-historikken for kandidaten. Du kan også se, hvem fra din organisation der har udvekslet InMail med kandidaten, men du ikke kan få vist meddelelserne mellem dem.
 
-Hvis du vil se InMail-historik, skal du gå til en kandidats profil, gå til fanen **LinkedIn** og rulle til bunden af siden for at få vist historikken. Du kan kun få vist InMail-historikken, hvis kandidaten har svaret på din anmodning og valgt at dele deres profil med dig på LinkedIn. Meddelelserne fra InMail synkroniseres med Attract med få timers mellemrum.
+Hvis du vil se InMail-historik, skal du gå til en kandidats profil, gå til fanen **LinkedIn** og rulle til bunden af siden for at få vist historikken. Du kan få vist historik for InMail, hvis du har haft en diskussion med kandidaten. Meddelelserne fra InMail synkroniseres med Attract med få timers mellemrum.
 
 ### <a name="notes-history"></a>Oversigt over noter 
 
@@ -131,7 +139,7 @@ Hvis du vil se Notes-historikken, skal du gå til en kandidats profil, gå til f
 
 ### <a name="inmail-stub-profile"></a>InMail-stubprofil
 
-LinkedIn InMail-stubprofilen er tilgængelig på kontraktniveau i LinkedIn Recruiter. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat.
+LinkedIn InMail-stubprofilen er tilgængelig på kontraktniveau i LinkedIn Recruiter. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat. Du kan få vist kandidatens e-mailadresse, hvis kandidaten allerede findes i systemet med en e-mailadresse eller har valgt at dele sin adresse med rekrutteringsmedarbejderen.
 
 For at få vist listen over kandidater skal du gå til **Talentpuljer** for at få vist en systemoprettet LinkedIn-talentpulje. Denne talentpulje indeholder listen over kandidater og deres stubprofiler som modtaget fra LinkedIn med kandidatens fornavn og efternavn. Kandidatens e-mail-id vises, hvis kandidaten har valgt at dele sin e-mailadresse.
 

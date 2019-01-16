@@ -3,7 +3,7 @@ title: Generere Affordable Care Act (ACA)-indberetninger
 description: "Funktionen kan hjælpe arbejdsgivere med at spore de oplysninger, der indberettes i blanketterne 1095-B og C 1095, som et led i Employer Mandate-delen af Affordable Care Act. Bemærk, at denne funktion er kun aktiveret for juridiske enheder i USA."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generere Affordable Care Act (ACA)-indberetninger
@@ -54,7 +54,7 @@ På siden **Håndtering af dækningsdato for den afhængige** kan du angive de d
 ## <a name="generate-1095b-and-1095c-forms"></a>Generere 1095B- og 1095C-blanketter
 Du kan også generere 109-B- og 1095-C-blanketter fra produktet og distribuere dem til hver af dine medarbejdere. Elektronisk generering af 1095 C, og de tilsvarende 1094 C-filer, der kan bruges til at sende til det amerikanske skattevæsen (IRS), kan også genereres fra systemet.  
 
-Når du genererer 1095-C-blanketten, skal du angive den relevante kalender- eller skatteåret også, hvis du vil udskrive blanketten med to eller tre sider. Den tresidede blanket er kun nødvendigt, hvis arbejdsgiverens sygesikringsordning med egendækning og en medarbejder har mere end seks dækkede afhængige, herunder sig selv. Når systemet genererer den tosidede blanket, registrerer det automatisk, hvis en medarbejder har mere end 6 dækkede afhængige, og vedkommende medtages ikke, når blanketten genereres. Når systemet genererer den tresidede blanket, medtager det desuden kun de medarbejdere, der har mere end seks dækkede afhængige.
+Når du opretter formularen 1095-C, skal du angive det relevante skatteår og angive, om social security-numre skal skjules. Hvis du udskriver 1095-C-formularer for mere end 500 medarbejdere, modtager du mere end én PDF-fil. Det anbefales, at du øger **Maksimal filstørrelse** i vinduet **Dokumentstyringsparametre** til 150 MB.
 
 ## <a name="viewing-information"></a>Visning af oplysninger
 Du kan bruge siden **Arbejderens dækning under Affordable Care** til at se, hvilke medarbejdere der er tildelt til hver dækningsgruppe, hvilke medarbejderne der ikke skal medtages i en rapport, og hvilke medarbejdere der ikke er tildelt.

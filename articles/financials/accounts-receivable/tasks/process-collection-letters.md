@@ -3,69 +3,82 @@ title: Behandle rykkere
 description: "Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rykkere."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 12/04/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CustPosting, SysQueryForm, CustCollectionLetterNote
+ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.search.validFrom: 2018-12-01
+ms.dyn365.ops.version: 8.1.3
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: dc837ea6513992a5f94e48baa366e279df297866
+ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
+ms.openlocfilehash: 33d9fd62a780ab109474eefa9e322a9c529f9e72
 ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 12/06/2018
 
 ---
 # <a name="process-collection-letters"></a>Behandle rykkere
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
 
 Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rykkere. Denne opgave bruger demofirmaet USMF.
 
-
 ## <a name="set-up-a-collection-letter-sequence-on-the-posting-profile"></a>Konfigurere et rykkerforløb i en posteringsprofil
-1. Gå til Kredit og inkasso > Opsætning > Debitorposteringsprofiler.
-2. Klik på Rediger.
-    * Vælg et rykkerforløb på rullelisten. Hvis du ikke vil oprette rykkere for transaktioner med denne posteringsprofil, skal du lade feltet være tomt.  
-    * Under fanen Tabelbegrænsninger kan du ændre den måde, som rykkere behandles på. Hvis dette felt er indstillet til Ja, oprettes rykkerne for denne posteringsprofil.  
-3. Luk siden.
+1. Gå til **Kredit og inkasso > Opsætning > Debitorposteringsprofiler**.
+2. Klik på **Rediger**.
+3. Vælg et rykkerforløb på rullelisten. Hvis du ikke vil oprette rykkere for transaktioner med denne posteringsprofil, skal du lade feltet være tomt.  
+4. Udvid fanen Tabelbegrænsninger for at ændre den måde, som rykkere behandles på. Hvis dette felt er indstillet til **Ja**, oprettes rykkerne for denne posteringsprofil.  
 
 ## <a name="create-collection-letters"></a>Opret rykkere
-1. Gå til Kredit og inkasso > Rykker > Opret rykkere.
-    * Du skal vælge de posteringstyper, du vil rykke for. Alle åbne transaktioner for disse typer medtages i beregningen.  
-2. Vælg en indstilling i feltet Rykker.
+1. Gå til **Kredit og inkasso > Rykker > Opret rykkere**.
+2. Vælg de transaktionstyper, du vil rykke for. Alle åbne transaktioner for disse typer medtages i beregningen.  
+2. Vælg en indstilling i feltet **Rykker**.
 3. Angiv datoen for rykkeren.
-    * Der findes to posteringsprofilindstillinger: Konto – Brug den posteringsprofil, der er tildelt kundekontoen for hver rentenota.   Vælg – Brug den posteringsprofil, som du vælger i feltet Posteringsprofil.  
-    * Vælg en posteringsprofil, hvis du har ændret "Anvend posteringsprofil fra" til Vælg.  
-4. Udvid posterne for at inkludere sektion.
-5. Klik på Filtrér.
-6. Angiv Kunde-id i feltet Kriterier. Indtast for eksempel "US-001".
-7. Klik på OK.
-8. Klik på OK.
+4. Vælg en posteringsprofil, hvis du har ændret **Anvend posteringsprofil fra** til **Vælg**. Der er to indstillinger for posteringsprofiler:   
+   - **Konto** – Brug den posteringsprofil, der er tildelt debitorens konto for hver rentenota.   
+   - **Vælg** – Brug den posteringsprofil, som du vælger i feltet **Posteringsprofil**.  
+5. Udvid sektionen **Poster, der skal indgå**.
+6. Klik på **Filtrér**.
+7. Angiv et debitor-id i feltet **Kriterier**. Indtast for eksempel "US-001".
+8. Klik på **OK**.
+9. Klik på **OK**.
 
 ## <a name="print-collection-letters"></a>Udskrive rykkere
-1. Gå til Kredit og inkasso > Rykker > Gennemse og behandl alle rykkere.
-2. Vælg "Oprettet" i feltet Status.
-3. Vælg "Ikke udskrevet" i feltet Udskrevet.
-4. Klik på Udskriv.
-5. Klik på Rykkernota.
-6. Udvid posterne for at inkludere sektion.
-7. Angiv skæringsdatoen for bogføringer
-8. Klik på OK for at udskrive rykkeren.
+1. Gå til **Kredit og inkasso > Rykker > Gennemse og behandl alle rykkere**.
+2. Vælg **Oprettet** i feltet **Status**.
+3. Vælg **Ikke udskrevet** i feltet **Udskrevet**.
+4. Klik på **Udskriv**.
+5. Klik på **Rykkernota**.
+6. Udvid sektionen **Poster, der skal indgå**.
+7. Angiv skæringsdatoen for bogføringer.
+8. Klik på **OK** for at udskrive rykkeren.
+9. Bogfør rykkeren.
+   1. Klik på **Bogfør**.
+   2. Angiv rykkerens bogføringsdato.
+   3. Udvid sektionen **Poster, der skal indgå**.
+   4. Klik på **OK**.
+   5. Vælg **Bogført** i feltet **Status**.
+   6. Vælg en indstilling i feltet **Udskrevet**.
 
-## <a name="post-the-collection-letter"></a>Bogføre rykkeren
-1. Klik på Bogfør.
-2. Angiv rykkerens bogføringsdato.
-3. Udvid posterne for at inkludere sektion.
-4. Klik på OK.
-5. Vælg "Bogført" i feltet Status.
-6. Vælg en indstilling i feltet Udskrevet.
+## <a name="control-collection-letters-at-the-customer-level"></a>Styre rykkere på debitorniveau
+Du kan også konfigurere rykkere på debitorniveau, så rykkerkoden for hver postering spores, mens rykkerbehandlingen baseres på niveauet for den enkelte rykker, der er gemt for debitoren. Enkeltrykkeren indeholder alle posteringer, der er forfaldne for debitoren. Da respitdagene nu spores på debitorniveau, bliver den næste rykker ikke sendt, før antallet af respitdage er overskredet for den næste rykker i rækkefølgen, selvom posteringer er forfaldne, efter at den sidste rykker blev sendt. Denne indstilling reducerer det antal rykkere, du skal sende pr. debitor. 
 
+### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Konfigurere debitor for at styre rykkere på debitorniveau
+1.  Gå til **Kredit > Opsætning > Debitorparametre**, og klik på fanen **Rykkere**. 
+2.  Rediger værdien i **Opret rykker pr.** til **Debitor**. 
+3.  Gå til **Kredit og inkasso > Rykker > Gennemse og behandl alle rykkere**. Der genereres kun én rykker for en debitors samlede forfaldne posteringer.
+
+## <a name="ignore-payments-and-credit-memos-when-calculating-the-collection-letter-code"></a>Ignorere betalinger og kreditnotaer ved beregning af rykkerkoden
+Hvis du medtager betalinger og kreditnotaer i de posteringer, der skal medtages i rykkerne, har du muligvis betalinger eller kreditnotaer, der udløser en rykker. Du kan styre, hvordan betalinger og kreditnotaer styrer rykkerkoden ved at ændre værdien af parameteren **Ignorere betalinger og kreditnotaer ved beregning af rykkerkoden**. 
+
+Gør følgende for at ignorere betalinger og kreditnotaer ved beregning af rykkerkoden.
+1. Gå til **Kredit > Opsætning > Debitorparametre**, og klik på fanen **Rykkere**. 
+2. Vælg **Ja** for **Ignorere betalinger og kreditnotaer ved beregning af rykkerkoden**.
 

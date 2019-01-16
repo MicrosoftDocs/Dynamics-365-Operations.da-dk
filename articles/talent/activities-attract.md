@@ -3,7 +3,7 @@ title: Aktiviteter i processerne
 description: "Dette emne indeholder oplysninger om de forskellige typer aktiviteter, der kan bruges i ansættelsesprocessen."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Aktiviteten Samtale er valgfri. Denne aktivitet består af tre komponenter: Kand
 - Hvis du vil sende e-mails til kandidater for at anmode om deres tilgængelighed, skal du indstille **Anmod om kandidatens tilgængelighed** til **Til**. Hvis du vælger **Fra** i indstillingen, vises dette trin ikke i ansættelsesprocessen for jobbet.
 - For at streame live eller have et telefonmøde via Skype for Business skal du indstille feltet **Onlinemøde** til **Skype for Business**. Det korrekte **Deltag i Skype-møde**-link tilføjes derefter i samtalemødeindkaldelsen.
 - Hvis du vil sende e-mails til kandidater for at færdiggøre tidsplanen, skal du indstille **Send mail til kandidat** til **Til**. Hvis du vælger **Fra** i indstillingen, modtager kandidaterne først samtaletidsplanen, når de logger på kandidatportalen.
+
+>[!NOTE]
+> - For alle 1:1-samtaler sendes påmindelser til interviewerne hvert døgn, hvis intervieweren ikke har svaret på (accepteret eller afvist) samtaleanmodningen.
+> - For panelsamtaler er der ingen automatiske påmindelser om at svare på samtaleanmodninger. For at udløse en påmindelse manuelt kan du redigere samtalen og bruge indstillingen **Opdater og send** til at sende anmodningen til interviewerne.
 
 I komponenten Tilbagemelding kan personer angive anbefalinger for en ansøger. De kan også angive eventuelle feedbackkommentarer, de har. Hvis du aktiverer indstillingen **Overtag tilbagemeldingsdeltagere fra ansættelsesteam**, angives rekrutteringsmedarbejder, den ansættelsesansvarlige og interviewerne automatisk i komponenten Tilbagemelding. Organisationer kan tillade, at interviewere får vist tilbagemeldinger fra andre, før de sender deres egen feedback. Organisationer kan også tillade, at interviewere redigerer deres tilbagemeldinger, når de sender dem.
 

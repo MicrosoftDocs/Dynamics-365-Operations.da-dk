@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 80fa443fc235496a111a8a866d2e703202721268
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,35 +33,41 @@ ms.lasthandoff: 08/08/2018
 
 I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Microsoft Dynamics 365 for Retail.
 
-Når detailløsningen er blevet installeret via Microsoft Dynamics livscyklus Services (LCS), skal du initialisere detailkonfigurationen for at oprette de grundlæggende konfigurationsdata. **Vigtigt::** Før du initialiserer detailkonfiguration, skal du kontrollere, at du har angivet et sprog og en postadresse for hver juridisk enhed, hvor du vil konfigurere detailbutikker. Dette trin skal udføres for hver juridisk enhed, du bruger til detailsalg. Hvis du vil initialisere detailkonfigurationen, skal du følge disse trin.
+Når detailløsningen er blevet installeret via Microsoft Dynamics livscyklus Services (LCS), skal du initialisere detailkonfigurationen for at oprette de grundlæggende konfigurationsdata.
 
-1.  Start Dynamics 365 for Retail-klienten.
-2.  Klik på **Detail** &gt; **Konfiguration af hovedkontor** &gt; **Parametre** &gt; **Detailparametre**.
-3.  Klik på **Initialiser**.
+> [!IMPORTANT]
+> Før du initialiserer detailkonfiguration, skal du kontrollere, at du har angivet et sprog og en postadresse for hver juridisk enhed, hvor du vil konfigurere detailbutikker. Dette trin skal udføres for hver juridisk enhed, du bruger til detailsalg.
+
+Hvis du vil initialisere detailkonfigurationen, skal du følge disse trin.
+
+1. Start Dynamics 365 for Retail-klienten.
+2. Klik på **Detail** &gt; **Konfiguration af hovedkontor** &gt; **Parametre** &gt; **Detailparametre**.
+3. Klik på **Initialiser**.
 
 Initialiseringen opretter følgende standardkonfigurationsdata:
 
--   Retail planlægger-job og -underjob
--   Detailkanalskema
--   Distributionstidsplaner for detail
--   Standardskærmlayout, der indeholder knapmatrixer, billeder og temaer
--   Oplysninger om tidszone
--   POS-handlinger:
--   POS-rettigheder
--   Kanalrapporter
--   Attributmetadata
--   Skabeloner til validering af enheder
--   Batchjob for at slette Commerce Data Exchange-sessionsoversigt
+- Retail planlægger-job og -underjob
+- Detailkanalskema
+- Distributionstidsplaner for detail
+- Standardskærmlayout, der indeholder knapmatrixer, billeder og temaer
+- Oplysninger om tidszone
+- POS-handlinger:
+- POS-rettigheder
+- Kanalrapporter
+- Attributmetadata
+- Skabeloner til validering af enheder
+- Batchjob for at slette Commerce Data Exchange-sessionsoversigt
 
-Derudover er logføring, der er relateret til betalingskortindustrien (PCI), aktiveret for Dynamics 365 for Retail-databasen. **Bemærk!** Der er en indstilling til at konfigurere Retail planlægger separat. Denne indstilling gør det muligt at nulstille Retail planlægger-konfigurationen til dens standardindstillinger. Når initialiseringen er fuldført, skal du konfigurere yderligere detaildata. Her er nogle eksempler:
+Derudover er logføring, der er relateret til betalingskortindustrien (PCI), aktiveret for Dynamics 365 for Retail-databasen.
 
--   Detailparametre
--   Parametre for Retail planlægger
--   Detailkanaler
--   Kasseapparater og enheder
--   Udvalg
+> [!NOTE]
+> Der er en indstilling til at konfigurere Retail planlægger separat. Denne indstilling gør det muligt at nulstille Retail planlægger-konfigurationen til dens standardindstillinger.
 
+Når initialiseringen er fuldført, skal du konfigurere yderligere detaildata. Her er nogle eksempler:
 
-
-
+- Detailparametre
+- Parametre for Retail planlægger
+- Detailkanaler
+- Kasseapparater og enheder
+- Udvalg
 

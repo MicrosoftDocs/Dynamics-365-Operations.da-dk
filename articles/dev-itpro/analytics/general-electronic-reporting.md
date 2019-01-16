@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes 
 - skybaserede miljøer, der er installeret til udviklingsformål (og som indeholder testmodeller af lukkede pakker)
 - installerede lokale miljøer (installation i det lokale miljø eller lokale forretningsdata (LBD))
 
-Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER)](/electronic-reporting-import-ger-configurations.md) for at få yderligere oplysninger om dette.
+Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER)](./electronic-reporting-import-ger-configurations.md) for at få yderligere oplysninger om dette.
 
 Et **RCS-forekomst** giver adgang til listen over konfigurationer af en bestemt RCS-forekomst, der blev valgt på stadiet for lagerregistrering. Med ER kan du importere fuldførte eller delte konfigurationer fra den valgte RC-forekomst til den aktuelle forekomst af Finance and Operations og bruge den til elektronisk indberetning.
 
-Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER) fra Regulatory Configuration Services (RCS)](/rcs-download-configurations.md) for at få yderligere oplysninger om dette.
+Besøg siden [Importere elektroniske rapporteringskonfigurationer (ER) fra Regulatory Configuration Services (RCS)](./rcs-download-configurations.md) for at få yderligere oplysninger om dette.
 
 Påkrævede **LCS-projekt**-, **Filsystem**- og **Regulatory Configuration Services (RCS)**-lagre kan registreres individuelt for hver konfigurationsudbyder for den aktuelle forekomst af Finance and Operations. Hvert lager kan dedikeres til en bestemt konfigurationsudbyder.
 

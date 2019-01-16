@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -28,8 +28,9 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a>Overblik 
-Baseret på indstillingerne i Retail Headquarters kan produkter klassificeres som enten serialiserede eller ikke-serialiserede. Når produkter er serialiserede, kan tildeles hver vare et entydigt nummer, der hjælper med at spore garantier, spore varer og bekræfte ejerskab. Selvom muligheden for at angive serienumre for serialiserede produkter fandtes i vores Modern/Cloud Point of Sale (POS), er der tilføjet nogle forbedringer, så kassererne kan spare tid og blive mere produktive.  
+## <a name="overview"></a>Overblik
+
+Baseret på indstillingerne i Retail Headquarters kan produkter klassificeres som enten serialiserede eller ikke-serialiserede. Når produkter er serialiserede, kan tildeles hver vare et entydigt nummer, der hjælper med at spore garantier, spore varer og bekræfte ejerskab. Selvom muligheden for at angive serienumre for serialiserede produkter fandtes i vores Modern/Cloud Point of Sale (POS), er der tilføjet nogle forbedringer, så kassererne kan spare tid og blive mere produktive.
 
 ## <a name="pos-improvements"></a>POS-forbedringer
 
@@ -37,9 +38,9 @@ Baseret på indstillingerne i Retail Headquarters kan produkter klassificeres so
 
     For hver serialiseret vare, hvor serienummeret blev sprunget over, vises der en kommentar under transaktionslinjen. Denne kommentar angiver, at serienummeret ikke er blevet angivet for varen. Kassereren kan derfor hurtigt finde varer, der mangler et serienummer.
 
-    En ny handling **Tilføj serienummer** angiver også serienummeret for varer, der mangler et serienummer. Når serienummeret er angivet, kan det ikke redigeres. Kassereren skal annullere linjen og tilføje produktet igen. 
+    En ny handling **Tilføj serienummer** angiver også serienummeret for varer, der mangler et serienummer. Når serienummeret er angivet, kan det ikke redigeres. Kassereren skal annullere linjen og tilføje produktet igen.
     
-- **Serienumre er ikke påkrævet ved afgivelse af kundeordrer** – Kundeordrer kan afgives i én butik og gennemføres fra en anden. En kasserer, der afgiver en kundeordre, behøver ikke at angive serienummeret. Serienummeret angives under trinnet med plukning eller afhentning. Der skal dog angives et serienummer for alle linjeelementer, hvor leveringstypen **Udfør** er markeret. Ellers kan transaktionen ikke fuldføres.    
+- **Serienumre er ikke påkrævet ved afgivelse af kundeordrer** – Kundeordrer kan afgives i én butik og gennemføres fra en anden. En kasserer, der afgiver en kundeordre, behøver ikke at angive serienummeret. Serienummeret angives under trinnet med plukning eller afhentning. Der skal dog angives et serienummer for alle linjeelementer, hvor leveringstypen **Udfør** er markeret. Ellers kan transaktionen ikke fuldføres.
 - **Serialiserede produkter er ikke samlet på transaktionsskærmbilledet** – Indstillingen **Samling af produkter** i feltgruppen **Terminal** på siden **Funktionalitetsprofil** giver dig mulighed for at samle de samme ikke-serialiserede produkter på transaktionsskærmbilledet. Når de pågældende produkter samles, er de nemmere at se i transaktionsgitteret. Men da serienumre normalt er entydige, og salgsmedarbejderne ikke behøver at angive serienumre før ved betalingen ved kassen, gælder indstillingen **Samling af produkter** ikke for serialiserede produkter. Derfor samles serialiserede produkter ikke på transaktionsskærmbilledet., hvis indstillingen **Samling af produkter** er valgt.
-- **Muligheden for at søge efter serienummer i kladderne** - Der kan nu også søges efter serienumre i kladderne. Det gør du ved at åbne handlingen "Kladder" og trykke på knappen "Avanceret søgning" på applinjen. Ved hjælp af knappen "Tilføj filter" kan et filter anvendes til at søge efter serienumrene også.
+- **Muligheden for at søge efter serienummer i kladderne** – Der kan nu også søges efter serienumre i kladderne. Det gør du ved at åbne handlingen "Kladder" og trykke på knappen "Avanceret søgning" på applinjen. Ved hjælp af knappen "Tilføj filter" kan et filter anvendes til at søge efter serienumrene også.
 

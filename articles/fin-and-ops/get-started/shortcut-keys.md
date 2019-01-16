@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations. 
+Følgende tastaturgenveje kan anvendes overalt i Dynamics 365 for Finance and Operations.
 
-**Bemærk!** De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
+> [!NOTE]
+> De tastaturgenveje, der beskrives her, henviser til et amerikansk tastaturlayout. Det er ikke sikkert, at du kan bruge helt de samme taster på f.eks. et dansk tastatur.
 
 ## <a name="finding-a-shortcut"></a>Søge efter en genvej
-Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden. 
 
+Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgængelige i øjeblikket, direkte fra brugergrænsefladen. Du skal blot højreklikke på et kontrolelement og vælge **Vis genveje**. Der åbnes en dialogboks med de genveje, du kan bruge, afhængigt af hvor du befinder dig på siden.
 
 ## <a name="action-shortcuts"></a>Handlingsgenveje
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Hvis du vil gøre dette**                                    | **Tryk på**                        |
-| Åbne handlingssøgning                                | Ctrl+’ eller Alt+Q                  |
-| Flytte til standardhandlingsruden                  | Alt+M, A eller Ctrl+F6               |
-| Åbne en fane i handlingsruden eller en menu           | Enter eller mellemrum eller Alt+pil ned |
-| Flytte til næste/forrige punkt i en menu            | Pil op/pil ned            |
-| Lukke en fane i handlingsruden eller en menu          | Esc                              |
-| Simulere højreklik                            | Skift+F10                        |
-| Åbne Finance and Operations-genvejsmenuen      | Ctrl+F10                         |
-| Udføre standardknappen i en formular/dialogboks   | Alt+Enter                        |
-| Klikke på en knap eller et felt                            | Enter eller mellemrum                   |
-| Vise opdaterede oplysninger for et antalsfelt         | Alt+pil op                     |
-| Vis genveje, der er tilgængelige i øjeblikket                | Alt+Skift+K                      |                              
+| Hvis du vil gøre dette                                      | Tryk på                            |
+|-------------------------------------------------|----------------------------------|
+| Åbne handlingssøgning                              | Ctrl+' eller Alt+Q                  |
+| Flytte til standardhandlingsruden                | Alt+M, A eller Ctrl+F6               |
+| Åbne en fane i handlingsruden eller en menu         | Enter eller mellemrum eller Alt+pil ned |
+| Flytte til næste/forrige punkt i en menu          | Pil op/pil ned            |
+| Lukke en fane i handlingsruden eller en menu        | Esc                              |
+| Simulere højreklik                          | Skift+F10                        |
+| Åbne Finance and Operations-genvejsmenuen    | Ctrl+F10                         |
+| Udføre standardknappen i en formular/dialogboks | Alt+Enter                        |
+| Klikke på en knap eller et felt                          | Enter eller mellemrum                   |
+| Vise opdaterede oplysninger for et antalsfelt       | Alt+pil op                     |
+| Vis genveje, der er tilgængelige i øjeblikket              | Alt+Skift+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Genveje for datovælger
 
-|                                       |                                           |
+| Hvis du vil gøre dette                            | Tryk på                                     |
 |---------------------------------------|-------------------------------------------|
-| **Hvis du vil gøre dette**                        | **Tryk på**                                 |
 | Åbne datovælgeren                  | Alt+pil ned                            |
 | Flytte mellem datoerne i datovælgeren | CTRL+piletast                           |
 | Flytte til næste/forrige måned       | Page down/Page up                       |
@@ -70,9 +69,8 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="factbox-shortcuts"></a>Genveje i faktaboks
 
-|                                                                                 |                                           |
+| Hvis du vil gøre dette                                                                      | Tryk på                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Hvis du vil gøre dette**                                                                  | **Tryk på**                                 |
 | Åbne faktaboksruden (eller flytte fokus til faktaboksruden, hvis den allerede er åben) | Alt+M, B eller Ctrl+F2                        |
 | Lukke faktaboksruden (med fokus i faktaboksruden)                         | Esc                                       |
 | Flytte til næste/forrige faktaboks (med fokus i faktaboksruden)              | Alt+Skift+pil ned/Alt+Skift+pil op |
@@ -82,42 +80,39 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="filtering-shortcuts"></a>Filtreringsgenveje
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **For at gøre det**                     | **Tryk på**                |
-| Åbne gitterfiltrering for den aktuelle kolonne                        | Ctrl+G                   |
-| Lukke gitterfiltrering for den aktuelle kolonne                       | Esc                      |
+| For at gøre det                                                                                                          | Tryk på                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Åbne gitterfiltrering for den aktuelle kolonne                                                                          | Ctrl+G                   |
+| Lukke gitterfiltrering for den aktuelle kolonne                                                                         | Esc                      |
 | Åbne filterruden (eller skifte fokus mellem filterruden og hovedformularen, hvis filterruden allerede er åben) | Alt+M, F eller Ctrl+F3       |
-| Lukke filterruden (med fokus i filterruden)             | Esc                      |
-| Åbne avanceret filtrering/sortering                                      | Ctrl+Skift+F3            | 
+| Lukke filterruden (med fokus i filterruden)                                                               | Esc                      |
+| Åbne avanceret filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
 
 ## <a name="form-shortcuts"></a>Formulargenveje
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **For at gøre det**                                      | **Tryk på**         |
-| Opret en ny post                                 | Alt+N             |
-| Slette en post                                     | Alt+Del eller Alt+F9 |
-| Gemme posten                                         | Alt+S eller Ctrl+S   |
-| Gendindlæse (gendanne)                                    | Ctrl+Skift+F5     |
-| Opdatere data                                        | Skift+F5          |
-| Flytte til det første felt, der vises i formularen         | Alt+Skift+F       |
-| Slå redigeringstilstand til/fra                                    | F2                |
-| Vedhæfte et dokument                                   | Ctrl+Skift+A      |
-| Eksportér til Excel                                     | Ctrl+Skift+E      |
-| Flytte til den forrige post (uden for et gitter)        | Ctrl+pil op     |
-| Flytte til den næste post (uden for et gitter)            | Ctrl+pil ned   |
-| Flytte til den første post (uden for et gitter)           | Ctrl+Home         |
-| Flytte til den sidste post (uden for et gitter)            | Ctrl+End          |
-| Lukke formularen (klikke på Tilbage)                         | Esc               |
-| Lukke formen og gemme den eksplicit                   | Skift+Esc         |
-| Lukke formen, uanset om der er ugemte ændringer       | Alt+Skift+Q       |
+| For at gøre det                                    | Tryk på             |
+|-----------------------------------------------|-------------------|
+| Opret en ny post                           | Alt+N             |
+| Slette en post                               | Alt+Del eller Alt+F9 |
+| Gemme posten                                   | Alt+S eller Ctrl+S   |
+| Gendindlæse (gendanne)                              | Ctrl+Skift+F5     |
+| Opdatere data                                  | Skift+F5          |
+| Flytte til det første felt, der vises i formularen   | Alt+Skift+F       |
+| Slå redigeringstilstand til/fra                              | F2                |
+| Vedhæfte et dokument                             | Ctrl+Skift+A      |
+| Eksportér til Excel                               | Ctrl+Skift+E      |
+| Flytte til den forrige post (uden for et gitter)  | Ctrl+pil op     |
+| Flytte til den næste post (uden for et gitter)      | Ctrl+pil ned   |
+| Flytte til den første post (uden for et gitter)     | Ctrl+Home         |
+| Flytte til den sidste post (uden for et gitter)      | Ctrl+End          |
+| Lukke formularen (klikke på Tilbage)                   | Esc               |
+| Lukke formen og gemme den eksplicit             | Skift+Esc         |
+| Lukke formen, uanset om der er ugemte ændringer | Alt+Skift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Navigationsgenveje i formular
 
-|                                                     |                                              |
+| Hvis du vil gøre dette                                          | Tryk på                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Hvis du vil gøre dette**                                      | **Tryk på**                                    |
 | Flytte til næste/forrige felt                     | Tabulator/Skift+tabulator                              |
 | Flytte til næste/forrige tabulator                       | Alt+Skift+højre pil/Alt+Skift+venstre pil |
 | Flyt til &lt;n&gt;. fane                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
@@ -134,30 +129,28 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="grid-shortcuts"></a>Genvejstaster til gitteret
 
-|                                                                                                                        |                                 |
+| Hvis du vil gøre dette                                                                                                             | Tryk på                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Hvis du vil gøre dette**                                                                                                         | **Tryk på**                       |
 | Flytte til næste/forrige kolonne                                                                                       | Tabulator/Skift+tabulator                 |
 | Flytte til næste/forrige række                                                                                          | Pil op/pil ned           |
-| Flyt til den næste/forrige række uden at vælge<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg. | Ctrl+pil op/Ctrl+pil ned |
-| Vælg/ryd den aktuelle række<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.                    | Ctrl+mellemrum/Ctrl+klik         |
-| Føj den næste/forrige række til det valgte sæt<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.   | Shift+Space                     |
-| Tilføje et interval af rækker til det valgte sæt<br><br>**Bemærk:** Denne genvej vedrører kun scenarier med flere valg.         | Skift+klik                     |
+| Flyt til den næste/forrige række uden at vælge<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote> | Ctrl+pil op/Ctrl+pil ned |
+| Vælg/ryd den aktuelle række<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>                    | Ctrl+mellemrum/Ctrl+klik         |
+| Føj den næste/forrige række til det valgte sæt<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>   | Shift+Space                     |
+| Tilføje et interval af rækker til det valgte sæt<blockquote>[!NOTE] Denne genvej vedrører kun scenarier med flere valg.</blockquote>         | Skift+klik                     |
 | Gå til næste/forrige side med data                                                                                   | Page up/Page down             |
 | Opret en ny række nederst i gitteret                                                                             | Pil ned (fra den sidste række)  |
 | Markér eller fjern alle rækker                                                                                               | Ctrl+Skift+M                    |
 | Flyt til den første post                                                                                               | Ctrl+Home                       |
 | Flyt til den sidste post                                                                                                | Ctrl+End                        |
-| Udføre standardhandlingen i et gitter<br><br>**Bemærk:** Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.                 | Enter                           |
+| Udføre standardhandlingen i et gitter<blockquote>[!NOTE] Denne genvej er aktiveret, når fokus er på en celle, der indeholder et hyperlink og alle celler i den pågældende kolonne har links.</blockquote> | Enter                           |
 | Skifte fokus mellem den markerede række og rækken med kolonneoverskrifter                                                               | Alt+Skift+H                     |
 | Gør den aktuelle kolonne større/mindre (med fokus i kolonneoverskriftsrækken)                                                  | Højre pil eller venstre pil        |
 | Åbn gitterfiltrering for den aktuelle kolonne (med fokus i kolonneoverskriftsrækken)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Genveje for inputstyring
 
-|                                                                              |                               |
+| Hvis du vil gøre dette                                                                   | Tryk på                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Hvis du vil gøre dette**                                                               | **Tryk på**                     |
 | Åbn linket                                                           | Ctrl+Enter                    |
 | Angive sessionsdatoen i et datofelt                                       | D+Tab                         |
 | Indtaste den aktuelle dato i et datofelt                                       | T+Tabulator                         |
@@ -171,17 +164,15 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="messaging-shortcuts"></a>Beskedgenveje
 
-|                          |               |
+| Hvis du vil gøre dette               | Tryk på         |
 |--------------------------|---------------|
-| **Hvis du vil gøre dette**           | **Tryk på**     |
 | Gå til meddelelsescenter | Ctrl+Skift+F7 |
 | Gå til meddelelseslinjen    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigationsgenveje
 
-|                                                                               |                            |
+| Hvis du vil gøre dette                                                                    | Tryk på                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Hvis du vil gøre dette**                                                                | **Tryk på**                  |
 | Gå til dashboardet                                                           | Alt+Skift+Home             |
 | Flyt til navigationslinjen                                                    | Alt+M, N eller Alt+Skift+F1    |
 | Flyt til firmavælger                                                    | Ctrl+Skift+O               |
@@ -201,9 +192,8 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="personalization-shortcuts"></a>Tilpasning af genveje
 
-|                                                                                                                        |                                     |
+| Hvis du vil gøre dette                                                                                                             | Tryk på                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Hvis du vil gøre dette**                                                                                                         | **Tryk på**                           |
 | Flyt siden til tilpasningstilstand                                                                          | Ctrl+Shift+P                        |
 | Brug værktøjet Marker (i tilpasningstilstand)                                                                     | V                                   |
 | Åbn det valgte kontrolelements dialogboks til hurtig tilpasning (når værktøjet Marker bruges)                              | Mellemrum eller Enter                      |
@@ -230,9 +220,8 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 
 ## <a name="segmented-entry-shortcuts"></a>Genveje til segmenterede poster
 
-|                                                                                                                         |                                  |
+| Hvis du vil gøre dette                                                                                                              | Tryk på                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Hvis du vil gøre dette**                                                                                                          | **Tryk på**                        |
 | Åbne rullelisten (når rullelisten er lukket)                                                             | Alt+pil ned                   |
 | Flytte fokus til inputfeltet for det aktuelle segment på rullelisten (når rullelisten allerede er åben) | Alt+pil ned                   |
 | Lukke på rullelisten                                                                                                | Alt+pil op                     |
@@ -244,5 +233,4 @@ Fra og med Platformsopdatering 11 kan brugerne finde de genveje, der er tilgæng
 | Flytte en række op/ned i opslaget                                                                                        | Pil op/pil ned            |
 | Flytte en side op/ned i opslaget                                                                                       | Page up/Page down              |
 | Flytte til toppen/bunden af opslaget                                                                                    | Home/End                       |
-
 

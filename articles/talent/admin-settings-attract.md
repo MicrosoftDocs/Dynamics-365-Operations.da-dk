@@ -3,7 +3,7 @@ title: Administratorindstillinger i Attract
 description: I dette emne beskrives, hvordan du aktiverer vigtige funktioner for organisationer og brugere i Attract.
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 52b48d5daab985c43d59f29ad7b80dda99a7fcef
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -37,7 +37,7 @@ Angiv et visningsnavn til firmaet, og tilføj et firmalogo. Det viste navn og lo
 
 ## <a name="linkedin-integration"></a>Integration af LinkedIn
 
-Konfigurere integration med LinkedIn Recruiter System Connect (RSC). Når du har oprette forbindelse til LinkedIn ved hjælp af dine LinkedIn-legitimationsoplysninger, kan du synkronisere en kandidats LinkedIn-profil, ansøgninger, samtalefeedback og ansættelsesteamnoter. Der kræves en fuld LinkedIn-rekrutteringsmedarbejderlicens. Du kan finde flere oplysninger om RSC i [Recruiter System Connect (RSC) – Ofte stillede spørgsmål](https://www.linkedin.com/help/recruiter/answer/90483).
+Konfigurere integration med LinkedIn Recruiter System Connect (RSC). Når du har oprette forbindelse til LinkedIn ved hjælp af dine LinkedIn-legitimationsoplysninger, kan du synkronisere en kandidats LinkedIn-profil, ansøgninger, samtalefeedback og ansættelsesteamnoter. Der kræves en fuld LinkedIn Recruiter-medarbejderlicens. Du kan finde flere oplysninger om LinkedIn Recruiter i [Recruiter System Connect (RSC) – Ofte stillede spørgsmål](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Brugerrettigheder
 

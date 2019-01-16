@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Som en del af forbedringerne af funktionen til bogføring af opgørelser er der 
 
 Desuden er feltet **Det maksimale antal parallelle opgørelsesbogføringer** indført i oversigtspanelet **Batchafvikling**. Dette felt definerer antallet af batchopgaver, der skal køres ad gangen. I øjeblikket skal du angive værdien i dette felt manuelt.
 
-Desuden er det med den nye bogføringsproces påkrævet, at du definerer et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Dette gælder, selvom organisationen ikke bruger nogen gavekort. 
+Desuden er det med den nye bogføringsproces påkrævet, at du definerer et **gavekortprodukt** på oversigtspanelet **Gavekort** under fanen **Bogføring** på siden **Detailparametre**. Dette gælder, selvom organisationen ikke bruger nogen gavekort.
 
 Bemærk, at alle indstillinger og parametre, der er relateret til bogføring af opgørelsen, og som er defineret i Detailbutikker og på siden **Detailparametre**, gælder for funktionen til forbedret bogføring af opgørelser.
 
 ## <a name="processing"></a>Afvikling
+
 Opgørelser kan beregnes og bogføres i batches ved hjælp af menupunkterne i **Beregn opgørelser i batch** og **Bogfør opgørelser i batch**. Alternativt kan opgørelser beregnes og bogføres manuelt ved hjælp af menupunktet **Detailopgørelser**, som funktionen til forbedret opgørelsesbogføring indeholder.
 
 Processen og fremgangsmåden til beregning og bogføring af opgørelser i et batch er den samme, som de var i den ældre bogføringsfunktion. Dog er der sket betydelige forbedringer i kerne-backend-behandlingen af opgørelser. Disse forbedringer gør det mere fleksibel og giver bedre indsigt i tilstands- og fejloplysninger. Brugerne kan derfor fokusere på hovedårsagen til fejl og derefter fortsætte bogføringsprocessen uden at forårsage beskadigelse af data og uden, at det kræver datarettelser.
@@ -71,6 +72,7 @@ Processen og fremgangsmåden til beregning og bogføring af opgørelser i et bat
 I følgende afsnit beskrives nogle af de vigtigste forbedringer af opgørelsesbogføringsfunktionen, som findes i brugergrænsefladen for detailopgørelser og bogførte opgørelser.
 
 ### <a name="status-details"></a>Statusoplysninger
+
 Der er indført en ny tilstandsmodel i opgørelsesbogføringsrutinen på tværs af beregning og bogføring.
 
 I følgende tabel beskrives de forskellige tilstande og deres rækkefølge under beregningsprocessen.
@@ -109,9 +111,11 @@ Hver tilstand i de foregående tabeller er af natur uafhængig, og der opbygges 
 Hovedet i den anden og tredje sektion viser derudover den samlede status for den relevante proces.
 
 ### <a name="event-logs"></a>Hændelseslogge
+
 En opgørelse, gennemgår forskellige handlinger (for eksempel Opret, Beregn, Fjern og Bogfør), og flere forekomster af den samme handling kan kaldes under opgørelsens livscyklus. F.eks. efter en opgørelse er oprettet og beregnet, kan en bruger fjerne opgørelsen og beregne den igen. Knappen **Hændelseslogge** i gruppen **Detaljer om udførelse** i opgørelsen indeholder et fuldstændigt revisionsspor for de forskellige handlinger, der blev kaldt i en opgørelse, sammen med oplysninger om, hvornår disse handlinger blev kaldt.
 
 ### <a name="aggregated-transactions"></a>Aggregerede transaktioner
+
 Under bogføringsprocessen aggregeres salgsposteringerne baseret på konfigurationen. Disse aggregerede transaktioner gemmes i systemet og bruges til at oprette salgsordrer. Hver aggregerede transaktion opretter én tilsvarende salgsordre i systemet. Du kan se de aggregerede tilstande ved hjælp af knappen **Aggregerede transaktioner** i gruppen **Detaljer om udførelse** i opgørelsen.
 
 Fanen **Oplysninger om salgsordre** i en aggregeret transaktion indeholder følgende oplysninger:
@@ -136,11 +140,13 @@ Den aggregerede transaktionsvisning giver følgende fordele:
 - Den aggregerede XML-fil gør det nemmere at identificere problemer under oprettelse af salgsordrer og fakturering.
 
 ### <a name="journal-vouchers"></a>Kladdebilag
+
 Knappen **Kladdebilag** i gruppen **Detaljer om udførelse** i opgørelsen viser alle de forskellige bilagsposteringer, der er oprettet for en opgørelse, og som vedrører rabatter, indtægts- eller udgiftskonti, gavekort osv.
 
 I øjeblikket vises disse data kun for bogførte opgørelser.
 
 ### <a name="payment-journals"></a>Betalingskladder
+
 Knappen **Betalingskladder** i gruppen **Detaljer om udførelse** i opgørelsen viser alle de forskellige betalingskladder, der er oprettet for en opgørelse.
 
 I øjeblikket vises disse data kun for bogførte opgørelser.

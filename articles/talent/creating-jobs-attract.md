@@ -3,7 +3,7 @@ title: "Oprette, godkende og bogføre job i Attract"
 description: "I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Du kan finde flere oplysninger om aktiviteter, der kan føjes til ansættelsespr
 
 ## <a name="postings"></a>Opdateringer
 
-Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Microsoft Dynamics 365 for Talent-karrierewebsted) eller LinkedIn. Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Derfor udvides denne liste over tid.
+Når et job er aktiveret, kan det slås op. Kun rekrutteringsmedarbejdere og administratorer kan oprette jobopslag. Jobbet kan opslås på enten Talent Careers (et Microsoft Dynamics 365 for Talent-karrierewebsted) eller LinkedIn. 
+
+> [!NOTE]
+> Der er tre ting, der er vigtige at bemærke om, hvordan job opslås på LinkedIn.
+> 1. Job, der opslås på LinkedIn, opslås som "Begrænsede lister"-job. Begrænsede listejob kan ikke opgraderes på tværs af LinkedIn-webstedet. Hvis du vil opgradere begrænsede listejob, der er slået op på LinkedIn, fra Attract, skal du arbejde med LinkedIn for at aktivere "Job-wrapping". Se nedenstående links, og kontakt LinkedIn support for at få yderligere oplysninger.
+>
+>    [Begrænsede lister kontra Premium-jobmuligheder til job-wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Ofte stillede spørgsmål om job-wrapping](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Når du slår job op på LinkedIn, overfører Attract Microsoft 365 organisationens navn til jobbet. LinkedIn sammenkæder jobbene med en virksomhed på LinkedIn-siden baseret på navnet på den organisation, der overføres. Hvis jobbet står ved den forkerte virksomhed på LinkedIn, kan du kontrollere, at Microsoft 365-organisationens navn svarer til virksomhedsnavnet på LinkedIn.  
+>
+>    [Rediger adresse, kontakt og meget mere](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Hvis du har problemer efter dette trin, skal du kontakte LinkedIn support. 
+> 
+> 1. Det kan tage op til 24 timer, før job, der er slået op på LinkedIn, bliver synlige for ansøgerne på LinkedIn, på grund af LinkedIns aktuelle proces for jobopslag.
+
+Attract-teamet skaber løbende partnerskaber med jobsamlingswebsteder. Denne liste udvides over tid.
 
 Du kan finde flere oplysninger om jobopslag i [Funktioner for karrierewebsteder i Attract](./career-site.md).
 

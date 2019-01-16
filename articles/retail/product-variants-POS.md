@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Antal, der er **Reserveret** og **Bestilt**, vises også for hver lokation.
 
 Listen over lokationer indeholder to typer enheder:
 
-- **Detailbutikker** – Listen viser butikker, der er konfigureret ved hjælp af butikssøgergruppen for den aktuelle butik i Retail Headquarters. 
-- **Distributionscentre** – Forskellige typer distributionscentre (f.eks. lagersteder) kan konfigureres i Microsoft Dynamics 365 for Retail. Listen viser dog kun oplysninger om disponibel lagerbeholdning for distributionscentre af typen **Standard**. 
+- **Detailbutikker** – Listen viser butikker, der er konfigureret ved hjælp af butikssøgergruppen for den aktuelle butik i Retail Headquarters.
+- **Distributionscentre** – Forskellige typer distributionscentre (f.eks. lagersteder) kan konfigureres i Microsoft Dynamics 365 for Retail. Listen viser dog kun oplysninger om disponibel lagerbeholdning for distributionscentre af typen **Standard**.
 
     > [!NOTE]
     > Oplysninger om disponibel lagerbeholdning vises ikke for lagersteder af typerne **Transit**, **Karantæne** og **Varer undervejs** for POS.
@@ -86,7 +86,7 @@ I visningen **Dimensionsbaseret matrix** omfatter cellerne for produktvarianter 
 | **0** (nul)                             | En variant er blevet frigivet til den valgte lokation, men varen er ikke tilgængelig i den valgte lokation. Du kan dog udføre yderligere handlinger i cellen. (Disse handlinger er beskrevet nærmere senere i dette emne.) |
 | **i/t** eller en inaktiv celle              | En variant er blevet frigivet til den valgte lokation, og du kan ikke udføre yderligere handlinger i cellen. |
 
-Du kan også ændre pivot for dimensioner ved at vælge den nye dimension, der skal bruges. 
+Du kan også ændre pivot for dimensioner ved at vælge den nye dimension, der skal bruges.
 
 ![Ændring af pivot](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ I visningen **Dimensionsbaseret matrix** kan der udføres flere handlinger for a
 
 Følgende tabel indeholder flere oplysninger om yderligere handlinger, der er tilgængelige.
 
-
-|        Handling        |                                                                                                                    Betegnelse                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Sælg nu       |                               Føj den valgte varevariant til transaktionen, og omdiriger brugeren til skærmbilledet for transaktionen. (Denne handling er ikke tilgængelig, når den valgte lokation er et distributionscenter).                               |
-|   Afhent i butik   |      Opret en debitorordre for den produktvariant, som vil blive plukket fra den valgte lokation, og omdiriger brugeren til skærmbilledet for transaktionen. (Denne handling er ikke tilgængelig, når den valgte lokation er et distributionscenter).       |
-|     Afsend produkt     |                                                 Opret en debitorordre for den produktvariant, som vil blive afsendt fra den valgte lokation, og omdiriger brugeren til skærmbilledet for transaktionen.                                                 |
-|     Tilgængelighed     |                                                                             Vis DTT-oplysninger for den valgte variantkombination for den valgte lokation.                                                                              |
-|  Vis alle lokationer  | Skift til standardvisningen for lagersøgning, og fremhæv oplysninger om lagertilgængeligheden for varevarianten på tværs af alle butikker i butikssøgergruppen, og i distributionscentre af tyden <strong>Standard</strong>. |
-| Få vist produktdetaljer |                                                                         Omdiriger brugeren til siden <strong>Produktdetaljer</strong> for den tilknyttede produktmaster.                                                                          |
-
+| Handling               | Betegnelse |
+|----------------------|-------------|
+| Sælg nu             | Føj den valgte varevariant til transaktionen, og omdiriger brugeren til skærmbilledet for transaktionen. (Denne handling er ikke tilgængelig, når den valgte lokation er et distributionscenter). |
+| Afhent i butik     | Opret en debitorordre for den produktvariant, som vil blive plukket fra den valgte lokation, og omdiriger brugeren til skærmbilledet for transaktionen. (Denne handling er ikke tilgængelig, når den valgte lokation er et distributionscenter). |
+| Afsend produkt         | Opret en debitorordre for den produktvariant, som vil blive afsendt fra den valgte lokation, og omdiriger brugeren til skærmbilledet for transaktionen. |
+| Tilgængelighed         | Vis DTT-oplysninger for den valgte variantkombination for den valgte lokation. |
+| Vis alle lokationer   | Skift til standardvisningen for lagersøgning, og fremhæv oplysninger om lagertilgængeligheden for varevarianten på tværs af alle butikker i butikssøgergruppen, og i distributionscentre af tyden **Standard**. |
+| Få vist produktdetaljer | Omdiriger brugeren til siden **Produktdetaljer** for den tilknyttede produktmaster. |
 

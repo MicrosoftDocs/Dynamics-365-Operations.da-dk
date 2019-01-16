@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a0359f8312e5e3fe1349dbc89831c98c46cd61ff
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,24 +34,22 @@ Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en p
 En parallel gren er egentlig en arbejdsgang, der kører i forbindelse med en overordnet arbejdsgang.
 
 ## <a name="name-a-branch"></a>Navngive en gren
+
 Udfør disse trin for at angive et navn på en parallel gren.
-1.  Højreklik på den parallelle gren, og klik derefter på **Egenskaber**. Formen **Egenskaber** vises.
-2.  Klik på **Grundlæggende indstillinger** i venstre rude.
-3.  Angiv et entydigt navn på den parallelle gren i feltet **Navn**.
-4.  Klik på **Luk**.
+
+1. Højreklik på den parallelle gren, og klik derefter på **Egenskaber**. Formen **Egenskaber** vises.
+2. Klik på **Grundlæggende indstillinger** i venstre rude.
+3. Angiv et entydigt navn på den parallelle gren i feltet **Navn**.
+4. Klik på **Luk**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Designe og konfigurere grenens elementer
+
 Udfør følgende trin for at designe og konfigurere elementerne i en parallel gren.
-1.  Dobbeltklik på den parallelle gren.
-2.  Arbejdsgangselementer – dette område indeholder arbejdsgangselementer, som du kan føje til den arbejdsgang, du er ved at oprette. Du kan finde flere oplysninger i Oprette en arbejdsgang.
 
+1. Dobbeltklik på den parallelle gren.
+2. Arbejdsgangselementer – dette område indeholder arbejdsgangselementer, som du kan føje til den arbejdsgang, du er ved at oprette. Du kan finde flere oplysninger i [Oprette en arbejdsgang](create-workflow.md).
 
-
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Opret en arbejdsgang](create-workflow.md)
-
-
-
 
