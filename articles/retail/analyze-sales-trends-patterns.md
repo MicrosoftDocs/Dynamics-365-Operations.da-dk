@@ -35,15 +35,13 @@ Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 
 
 Som en del af Dynamics 365 for Retail kan brugere undersøge salgstendenser og -mønstre i realtid på tværs af forskellige niveauer i organisationshierarkiet over en periode på år ved at åbne den færdiglavede **Rapport over kanalsalg pr. år**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
--   Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. år**
+- Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
+- Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
+- Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. år**
 
 Brugere kan også undersøge salgstendenser og -mønstre efter time på tværs af forskellige niveauer i organisationshierarkiet over en valgt periode ved at åbne den færdiglavede rapport **Rapport over kanalsalg pr. time**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
--   Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. time**
-
-
+- Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
+- Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
+- Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. time**
 

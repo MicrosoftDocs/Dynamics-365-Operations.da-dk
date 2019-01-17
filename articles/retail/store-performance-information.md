@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Microsoft Dynamics 365 for Retail-data. 
+Denne artikel forklarer, hvordan du kan bruge analysen i hukommelsen og i realtid til at få adgang til, udforske og få indsigt i butiksperformance baseret på Microsoft Dynamics 365 for Retail-data.
 
 Som en del af Dynamics 365 for Retail kan brugere undersøge butiksperformance i realtid på tværs af forskellige niveauer i organisationshierarkiet over en valgt periode ved at åbne den færdiglavede rapport **Kanaloversigt** fra en af følgende placeringer:
 
--   Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**
--   Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**
--   Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Kanaloversigtsrapport**
+- Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**
+- Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Kanaloversigtsrapport**
+- Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Kanaloversigtsrapport**
 
 Denne rapport giver et øjebliksbillede af følgende oversigter som en del af butikkens performance:
 
--   Bruttosalgsoversigt
--   Betalingstypeoversigt
--   Momsoversigt
--   Pris tilsidesætter oversigt
--   Rabatoversigt
-
-
+- Bruttosalgsoversigt
+- Betalingstypeoversigt
+- Momsoversigt
+- Pris tilsidesætter oversigt
+- Rabatoversigt
 

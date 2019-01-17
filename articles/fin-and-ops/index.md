@@ -51,7 +51,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding af et projekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Forberedelse af udgivelse</a></p>
-  
+
 <h3><a href="../financials/index.md">Økonomistyring</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditor</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitor</a></p>
@@ -65,7 +65,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale lovpligtige funktioner</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Personale</a></h3>
+<h3><a href="hr/hr-landing-page.md">Personale</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Frynsegoder</a></p>
 <p><a href="../talent/performance-management-overview.md">Medarbejderudvikling og -uddannelse</a></p>
 <p><a href="../talent/questionnaires.md">Spørgeskema</a></p>

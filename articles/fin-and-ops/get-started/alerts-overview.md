@@ -34,11 +34,13 @@ Påmindelser udgør et beskedsystem for kritiske hændelser i Microsoft Dynamics
 I ressourceplanlægning (ERP) er der flere typiske scenarier, hvor påmindelsesfunktionen i Finance and Operations kan bruges. Her er nogle eksempler.
 
 ### <a name="scenario-1-create-an-alert-rule-for-new-sales-orders"></a>Scenarie 1: Opret en påmindelsesregel for nye salgsordrer
+
 1. Åbn siden **Alle salgsordrer**.
 2. I handlingsruden under fanen **Indstillinger** i gruppen **Del** skal du vælge **Opret en brugerdefineret påmindelse**.
 3. I dialogboksen **Opret påmindelsesregel** under oversigtspanelet **Vis påmindelse, når** i feltet **Hændelse** skal du vælge **Posten er oprettet**.
 
 ### <a name="scenario-2-create-an-alert-rule-for-postponement-of-a-delivery-date"></a>Scenarie 2: Opret en påmindelsesregel for udskydning af en leveringsdato
+
 1. Åbn siden **Alle indkøbsordrer**.
 2. Vælg en indkøbsordre-id for at få adgang til oplysningerne i indkøbsordren.
 3. Udvid oversigtspanelet **Indkøbsordrehoved**.
@@ -49,6 +51,7 @@ I ressourceplanlægning (ERP) er der flere typiske scenarier, hvor påmindelsesf
 Når du lukker dialogboksen **Opret påmindelsesregel**, vises reglen på siden **Administrer regler for påmindelser**. Du kan bruge siden **Administrer regler for påmindelser** til at opdatere de eksisterende påmindelsesregler. Du kan f.eks. ændre hændelsesudløsere, opdatere hændelsesmeddelelser og opdatere udløbsdatoer. Hvis du vil åbne siden **Administrer regler for påmindelser**, skal du bruge knappen **Påmind mig** under fanen **Indstillinger** i handlingsruden.
 
 ## <a name="what-occurs-when-an-alert-rule-is-created"></a>Hvad sker der, når der oprettes en påmindelse?
+
 Når du opretter påmindelsesregler, kan du knytte en foruddefineret hændelse til et bestemt felt. For eksempel, når den dato, der er angivet i feltet bliver nået, eller når indholdet af feltet ændres. Du kan også knytte en hændelse til poster på en bestemt side. For eksempel, når en post oprettes, eller når en post slettes.
 
 Når den valgte hændelse indtræffer for feltet eller en post på siden, får du tilsendt en påmindelse. Du opretter f.eks. en regel, hvor du knytter feltet **Leveringsdato** til en bestemt indkøbsordrelinje med hændelsen **forfald for så længe siden, som angivet her**. Du kan angive tidsintervallet til fem dage. I dette eksempel sendes en påmindelse fem dage efter leveringsdatoen for den pågældende indkøbsordrelinje.
@@ -56,9 +59,11 @@ Når den valgte hændelse indtræffer for feltet eller en post på siden, får d
 Du kan desuden forfine påmindelsesregler ved at angive betingelser. Du kan for eksempel blive påmindet om nye indkøbsordrer, der oprettes for bestemt kreditorkonti.
 
 ## <a name="preparing-for-an-alert"></a>Forberede til en påmindelse
+
 Før du opretter en påmindelsesregel, skal du beslutte, hvornår og i hvilke situationer du vil modtage påmindelser. Når du ved, hvilke hændelser du vil have besked om, skal du i Finance and Operations finde den side, hvor de data vises, der udløser den pågældende hændelse. Hændelsen kan være en dato, der bliver nået, eller en bestemt ændring, der opstår. Derfor skal du finde den side, hvor datoen er angivet, eller hvor det felt, der ændres, eller posten, der oprettes, bliver vist. Når du har disse oplysninger, kan du oprette påmindelsesreglen.
 
 ## <a name="components-of-an-alert-rule"></a>Komponenter i en påmindelsesregel
+
 En påmindelsesregel har fem komponenter
 
 - **Hændelse** – Den hændelse, der udløser en påmindelsesregel, kan være en dato eller en bestemt ændring, der opstår. Du kan definere hændelser i oversigtspanelet **Send e-mail-påmindelser, når jobstatus ændres** i dialogboksen **Opret påmindelsesregel**.
@@ -71,5 +76,6 @@ En påmindelsesregel har fem komponenter
     > Denne indstilling er begrænset til administratorer i organisationen.
 
 ## <a name="email-notifications-from-alerts"></a>E-mail-beskeder fra påmindelser
+
 E-mail-beskeder fra påmindelser er ikke aktiveret endnu. Dette vil blive aktiveret i en senere opdatering.
 

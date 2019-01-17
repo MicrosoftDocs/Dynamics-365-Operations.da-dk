@@ -66,7 +66,7 @@ Oplevelsen af lokale produktsøgninger er nu blevet mere brugervenlig. Der er bl
 - Detailhandlere kan nu konfigurere produktsøgning til at vise søgeforslag, mens brugerne skriver produktnavne. En ny indstilling for denne funktion findes i POS-funktionalitetsprofilen i en ny gruppe med navnet **Produktsøgning**. Indstillingen hedder **Vis søgeforslag, mens du skriver**. Denne funktion kan hjælpe medarbejderne med hurtigt at finde det produkt, de søger efter, da de ikke behøver at skrive hele navnet manuelt.
 - Produktsøgningsalgoritmen søger nu også efter de søgte udtryk i egenskaben **Søgenavn** for produktet.
 
-![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+    ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøgning
 

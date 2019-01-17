@@ -3,7 +3,7 @@ title: Konfigurere tilbudsstyring
 description: I dette emne beskrives, hvordan du kan konfigurere tilbud i Talent.
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Konfigurere tilbudsstyring 
@@ -105,7 +105,7 @@ Når du vil overføre filen med tilbudsdatareglerne, skal du gøre følgende.
 
 1.  Du kan slette et eksisterende overført regelsæt, hvis den pladsholder, der defineres, ikke bruges i en anden dokumentskabelon.
 
->[!NOTER]
+>[!NOTE]
 > - Hver enkelt pladsholder kan kun have ét entydigt sæt kolonner, som den er afhængig af. F.eks. hvis **Årsløn** er afhængig af **Placering af stilling** og **Niveau**, du kan ikke overføre et andet regelsæt, hvor **Årsløn** er afhængig af et andet sæt af kolonner.
 
 > - Du kan hente eksempelregelsæt med tilbudsdata under fanen **Eksempler** på siden **Regler for tilbudsdata**.
@@ -136,7 +136,7 @@ Gør følgende for at oprette en tilbudsdokumentskabelon.
 
     - Indsætte hashtag for tilbudsdatapladsholderen direkte på den ønskede placering. Skriv **\#**, og begynd at skrive navnet på tilbudsdatapladsholderen. Der vises indstillinger på rullelisten. Klik eller tryk på **Enter** for at indsætte tilbudsdatapladsholderen.
 
-    >[!NOTER]
+    >[!NOTE]
     > - Hvis du vil knytte en pladsholder til tilbudsdokumentskabelonen, uden at kandidaten kan se pladsholderværdien, skal du pege på tilbudsdatapladsholderen og klikke på ikonet **Fastgør**. Dette overfører pladsholderen til sektionen **Fastgjorte tilbudsdata** i tilbudsdokumentskabelonen. Du kan fjerne fastgørelsen ved at følge samme fremgangsmåde, men klikke på **Frigør** på listen over tilbudsdatapladsholdere.
 
     > - For at få vist listen over aktive tilbudsdatapladsholdere skal du skifte til fanen **Aktiv** i den højre rude.
@@ -175,7 +175,7 @@ Tilbudspakker er de tilbudselementer, der deles med kandidaten. De består af en
 
 1.  Klik på **Tilføj skabelon**.
 
-    >[!NOTER]
+    >[!NOTE]
     > - Du kan vælge at oprette en ny skabelon eller vælge fra en eksisterende.
 
     > - Hvis du vil tilføje en eksisterende skabelon, skal du kontrollere, at tilbudsdokumentskabelonen er gemt, færdiggjort og markeret som aktiv.
@@ -198,8 +198,10 @@ Der er flere dele af tilbudsoprettelsesprocessen, som kan konfigureres af en Att
 
 - **Kandidatens tilbudsoplevelse** - Som administrator kan du vælge at angive, om alle tilbud skal have en udløbsdato, og i så fald hvad udløbsdatoens forskydning skal være som standard. Du kan også konfigurere, om kandidater kan vælge at afvise et tilbud.
 
-- **e-signaturer** - Den eneste indstilling med elektronisk signatur, der er tilgængelig for kandidater i øjeblikket, er at skrive deres navn i tilbudspakken, når de accepter tilbuddet. Vi introducerer partnerintegration med andre udbydere af elektroniske signaturer i fremtiden.
+- **e-signaturer** - Som administrator kan du også vælge den metode, som ansøgerne kan bruge til at signere tilbud.
+    - Adobe Sign - Alle tilbudspakker sendes og signeres via Adobe Sign. For den, der opretter tilbuddet, skal have Adobe Sign-licensen være tilknyttet Attract. 
 
+    - ESign - Dette er standardindstillingen, der leveres som standard, hvor brugeren kan signere et tilbud ved at skrive sit navn og sine initialer.
 
 Hvis du vil vide mere om oprettelsen af tilbuddet, kan du se under [Oprettelse, godkendelse og signering af tilbud](./creating-offers.md).
 

@@ -3,7 +3,7 @@ title: "Økonomiske dimensioner"
 description: "I dette emne beskrives de forskellige typer økonomiske dimensioner, og hvordan de er oprettet."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Du kan bruge værdier fra masterposter, f.eks. debitor og kreditor, som standard
 Denne funktion styres af en indstilling i dimensionen. Denne indstilling hedder **Kopiér værdier til denne dimension i hvert nyt DimensionName, der oprettes**, hvor **DimensionName** er navnet på dimensionen. Funktionen er som standard slået fra. Men den kan aktiveres til enhver tid.
 
 Hvis der allerede findes poster for dimensionen, opdateres masterposter, når du aktiverer funktionen. Men eksisterende dokumenter og transaktioner opdateres ikke.
+
+Hvis du bruger en skabelon til at oprette en masterpost, skal du kontrollere, at skabelonværdien for masterdimensionen er tom. F.eks. hvis du vil opretter debitorer fra en skabelon, skal du sikre, at debitordimensionen i skabelonen er tom. Standardværdien for debitordimensionen fra det nye debitornummer bruges, når du opretter den nye debitor.  
 
 ## <a name="derived-dimensions"></a>Afledte dimensioner
 

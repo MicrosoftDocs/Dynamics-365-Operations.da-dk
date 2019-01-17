@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Ved hjælp af mailskabelonbiblioteket kan administratorer kan oprette et ensartet tema og branding til alle mails, der sendes via Microsoft Dynamics 365 for Talent: Attract. Administratorer kan også organisere en samling mailskabeloner, som andre brugere kan bruge. Ansættelsesteamet kan bruge disse skabeloner i deres arbejdsproces til at sende mails mere effektivt. Nogle mails i Attract er konfigureret til at blive sendt automatisk, og administratoren kan bruge biblioteket med mailskabeloner til at tilpasse indholdet for disse mails.
+
+> [!NOTE]
+> Hvis du vil bruge e-mailskabeloner, skal din organisation have tilføjelsesprogrammet til omfattende ansættelser.
 
 ## <a name="global-template-configurations"></a>Globale skabelonkonfigurationer
 

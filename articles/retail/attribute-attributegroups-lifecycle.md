@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 [!include [banner](includes/banner.md)]
 
 *Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter kan være tilknyttet forskellige Retail-enheder, såsom produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
- 
+
 Et typisk tv-produkt kan f.eks. have følgende attributter.
 
 | Kategori   | Egenskab                | Tilladte værdier          | Standardværdi |
@@ -50,7 +50,7 @@ Et typisk tv-produkt kan f.eks. have følgende attributter.
 | Plasma     | Driftstemperatur fra      | 32-110 grader              | 32            |
 |            | Driftstemperatur til        | 32-110 grader              | 100           |
 | Projection | Garanti på projektionsrør | 6, 12 eller 18 måneder         | 12            |
-|            | Nummer på projektionsrør    | 1-5                         | 3             |
+|            | \# på projektionsrør   | 1-5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Attributter og attributtyper
 
@@ -90,7 +90,7 @@ I *Attributmetadata* kan du vælge indstillinger for at angive, hvordan attribut
 
 For detailprodukter kan metadataattributindstillingerne tilsidesættes på kanalniveau. Denne egenskab beskrives senere i dette emne.
 
-Som du har muligvis bemærket, indeholder siden **Attributter** indstillinger, der vedrører attributmetadata. Under **Attributmetadata for POS** påvirker indstillingen **"Kan redigeres"** attributværdiernes funktionsmåde i POS eller den måde, som systemet håndterer disse attributværdier på. Kun attributter, hvor du kan indstille **"Kan redigeres"** til **"Ja"**, kan bruges til forbedring eller filtrering af produkter i detail POS.
+Som du har muligvis bemærket, indeholder siden **Attributter** indstillinger, der vedrører attributmetadata. Under **Attributmetadata for POS** påvirker indstillingen **Kan redigeres** attributværdiernes funktionsmåde i POS eller den måde, som systemet håndterer disse attributværdier på. Kun attributter, hvor du kan indstille **Kan redigeres** til **Ja**, kan bruges til forbedring eller filtrering af produkter i Retail POS.
 
 Her er de resterende indstillinger for attributmetadata på siden **Attributter**:
 
@@ -104,11 +104,11 @@ Her er de resterende indstillinger for attributmetadata på siden **Attributter*
 
 Disse indstillinger var oprindeligt beregnet til at forbedre online storefrontens søgefunktion. Selvom Finance and Operations ikke som standard indeholder online storefronten, indeholder det SDK'et (Software Development Kit) til eCommerce-publicering. Kunder kan bruge dette SDK til at placere produkter i et søgeindeks efter eget valg. Selvom produktdataene er importeret, skal kunder stadig kunne skelne søgbare data, data, der kan forespørges på, osv. På denne måde kan de opbygge et optimalt indeks for at sikre, at de kun indekserer attributter, der *efter deres opfattelse* der skal indekseres.
 
-Du kan finde oplysninger om formålet med disse resterende indstillinger under [Oversigt over søgeskemaet i SharePoint Server 2013](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Du kan finde oplysninger om formålet med disse resterende indstillinger under [Oversigt over søgeskemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterindstillinger for attributter
 
-Med filterindstillinger for attributter kan du definere, hvordan filtrene for attributter vises i detail POS. Du kan få adgang til filterindstillingerne for en attribut ved på siden **Attributter** i Finance and Operations at vælge attributten og derefter i handlingsruden vælge **Filterindstillinger**.
+Med filterindstillinger for attributter kan du definere, hvordan filtrene for attributter vises i Retail POS. Du kan få adgang til filterindstillingerne for en attribut ved på siden **Attributter** i Finance and Operations at vælge attributten og derefter i handlingsruden vælge **Filterindstillinger**.
 
 Siden **Visningsindstillinger for filter** indeholder følgende felter:
 
@@ -121,13 +121,13 @@ Siden **Visningsindstillinger for filter** indeholder følgende felter:
 - **Vis kontrolelement** – Der er følgende tilgængelige indstillinger:
 
     - **Liste** – Denne indstilling er tilgængelig for alle attributtyper.
-    - **Afgrænsning** – Denne indstilling er tilgængelig for følgende attributtyper: **Valuta**, **Decimal** og **Heltal**. 
+    - **Afgrænsning** – Denne indstilling er tilgængelig for følgende attributtyper: **Valuta**, **Decimal** og **Heltal**.
     - **Skyder** – Denne indstilling er tilgængelig for følgende attributtyper: **Valuta**, **Decimal** og **Heltal**.
     - **Skyder med søjler** – Denne indstilling er tilgængelig for følgende attributtyper: **Valuta**, **Decimal** og **Heltal**.
 
 - **Grænseværdi** – Denne indstilling er nødvendig, hvis du valgte **Interval** som visningskontrolelementtype. Du kan angive værdier ved hjælp af et semikolon (;) som afgrænser.
 
-    F.eks. for filteret **Rumfang af pose** kan en tærskelværdi være **10; 20; 50; 100; 200; 500; 1000; 5000**. I dette tilfælde indeholder detail POS følgende intervaller. Intervaller, der ikke har nogen produkter i resultatet, vises nedtonet.
+    F.eks. for filteret **Rumfang af pose** kan en tærskelværdi være **10; 20; 50; 100; 200; 500; 1000; 5000**. I dette tilfælde indeholder Retail POS følgende intervaller. Intervaller, der ikke har nogen produkter i resultatet, vises nedtonet.
 
     - Mindre end 10
     - 10 – 20
@@ -228,13 +228,13 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 5. I oversigtspanelet **Produkter** skal du vælge det krævede produkt og derefter vælge **Attributter** over produktgitteret.
 6. Opdater værdierne for de påkrævede attributter i følgende oversigtspaneler:
 
-   - Delte produktmedier
-   - Delte produktattributter
-   - Kanalmedier
-   - Kanalproduktattributter
+    - Delte produktmedier
+    - Delte produktattributter
+    - Kanalmedier
+    - Kanalproduktattributter
 
-     > [!NOTE]
-     > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+    > [!NOTE]
+    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
 
 ![Attributgrupper for katalogprodukt](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 
 5. Opdater værdierne for de påkrævede attributter i følgende oversigtspaneler:
 
-   - Delte produktmedier
-   - Delte produktattributter
-   - Kanalmedier
-   - Kanalproduktattributter
+    - Delte produktmedier
+    - Delte produktattributter
+    - Kanalmedier
+    - Kanalproduktattributter
 
-     > [!NOTE]
-     > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
+    > [!NOTE]
+    > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
 

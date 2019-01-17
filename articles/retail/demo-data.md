@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ De eksempelskærmlayouts, der følger med Retail-demodata, leverer indhold, der 
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Anatomi af et skærmlayout-id
 
-For at finde skærmlayouts i Retail, skal du gå til **Retail** > **Konfiguration af kanal** > **POS-opsætning** > **POS** > **Skærmlayout**.
+For at finde skærmlayouts i Retail skal du gå til **Retail** \> **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
 
 ![Side til skærmlayouts i Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Følgende tabel viser de layoutstørrelser, som findes til typiske skærmopløsn
 
 \* Disse yderligere layoutstørrelser er kun tilgængelige i Adventure Works- og Fabrikam-layouts.
 
-
->[!TIP]
-> POS vælger automatisk layoutstørrelser, baseret på den nærmeste størrelse, der er tilgængelig for skærmopløsningen i det aktuelle appvindue. Hvis du vil finde det skærmlayout-id og den layoutopløsning, der aktuelt bruges i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), skal du åbne siden **Indstillinger** siden, og se i afsnittet **Sessionsoplysninger**. Du kan også se den faktiske vinduesopløsning for dit aktuelle program eller browserramme. Når du har disse oplysninger, du kan finde kilden til indholdet i layoutet i Retail ved at gå til **Konfiguration af kanal** > **POS-opsætning** > **POS** > **Skærmlayout**.
-
+> [!TIP]
+> POS vælger automatisk layoutstørrelser, baseret på den nærmeste størrelse, der er tilgængelig for skærmopløsningen i det aktuelle appvindue. Hvis du vil finde det skærmlayout-id og den layoutopløsning, der aktuelt bruges i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), skal du åbne siden **Indstillinger** siden, og se i afsnittet **Sessionsoplysninger**. Du kan også se den faktiske vinduesopløsning for dit aktuelle program eller browserramme. Når du har disse oplysninger, du kan finde kilden til indholdet i layoutet i Retail ved at gå til **Konfiguration af kanal** \> **POS-opsætning** \> **POS** \> **Skærmlayout**.
 
 ![Skærmlayouts og layoutopløsninger/-størrelser i Retail og POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Hvert fiktivt firma henvender sig til en andet detailsegment og omfatter produkt
 | Fabrikam        | Houston  | Mode        | Grøn  | Lys |
 | Contoso         | Boston   | Elektronik    | Rød    | Mørk  |
 
-
->[!NOTE]
+> [!NOTE]
 > Adventure Works og Fabrikam er de to største brands. Contoso er tilgængelig, men ikke alle layouts medfølger.
-
 
 Nedenstående illustrationer viser eksempler på velkomstsiden og transaktionssiden for de tre fiktive firmaer.
 
@@ -153,28 +149,26 @@ Nedenstående illustrationer viser eksempler på velkomstsiden og transaktionssi
 
 Der er angivet brugere til de forskellige skærmlayouts. Ved hjælp af tabellen nedenfor, skal du være i stand til at få adgang til alle skærmbillederne. Du skal blot logge på ved brug af et passende operatør-id.
 
-| Regnskab         | Skærmlayout-id | Karakter          | Operatør-id'er           |
-|-----------------|------------------|---------------   |------------------------|
-| Adventure Works | A3MGR            | Butikschef    | 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Kasseassistent          | 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Lagermedarbejder      | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Butikschef    | 000160, 000168, 000163 |
-| Fabrikam        | F3CSH            | Kasseassistent          | 000161, 000113, 000114 |
-| Fabrikam        | F3STK            | Lagermedarbejder      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Butikschef    | 000100, 000111         |
-| Contoso         | C3CSH            | Kasseassistent          | 000110, 000120         |
-| Contoso         | Ikke tilgængelig   | Lagermedarbejder      | Ikke tilgængelig         |
+| Regnskab         | Skærmlayout-id | Karakter       | Operatør-id'er           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Butikschef | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Kasseassistent       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Lagermedarbejder   | 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Butikschef | 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Kasseassistent       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Lagermedarbejder   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Butikschef | 000100, 000111         |
+| Contoso         | C3CSH            | Kasseassistent       | 000110, 000120         |
+| Contoso         | Ikke tilgængelig   | Lagermedarbejder   | Ikke tilgængelig         |
 
-
->[!TIP]
+> [!TIP]
 > For at få de bedste resultater skal du aktivere et register i den tilsvarende butikslokalitet og angive firmaet til firmaet for den karakter, som du vil bruge, når du logger på. På denne måde kan du hjælpe med til at garantere, at den visuelle profil og brandingbillederne justeres på tværs af oplevelsen. Hvis du f.eks. er interesseret i at se et layout til Fabrikam for en kasserer, skal du aktivere et register i butikken i Houston.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

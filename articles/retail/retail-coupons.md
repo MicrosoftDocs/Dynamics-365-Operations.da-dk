@@ -19,10 +19,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 08/08/2018
 
 ## <a name="overview-of-coupons"></a>Oversigt over kuponer
 
-Kuponer er koder og stregkoder, der bruges til at føje detailrabatter til posteringer. Hver kupon kan have flere koder, og hver kode kan have sine egne ikrafttrædelsesdatoer. 
+Kuponer er koder og stregkoder, der bruges til at føje detailrabatter til posteringer. Hver kupon kan have flere koder, og hver kode kan have sine egne ikrafttrædelsesdatoer.
 
-Hver kupon er knyttet til én detailrabat. De prisgrupper, der er tilknyttet rabatten, definerer de kunder, der kan bruge en kupon, eller de kanaler, hvor en kupon er gyldig. 
+Hver kupon er knyttet til én detailrabat. De prisgrupper, der er tilknyttet rabatten, definerer de kunder, der kan bruge en kupon, eller de kanaler, hvor en kupon er gyldig.
 
 I praksis er kuponer ekstra validering ud over detailrabatter. Kuponen indeholder de kuponkoder og stregkoder, der skal bruges, sammen med datointervaller til koderne. Kuponen indeholder desuden valgfrie brugerbegrænsninger og Debitor påkrævet-egenskaber. Rabatten angiver det sæt af produkter, som kuponen gælder for. Prisgrupperne for rabatten angiver det sæt af kunder, kanaler eller kataloger, kuponen gælder for.
 
-Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Derefter kan du tilknytte dem ved at vælge rabatten på kuponsiden i Microsoft Dynamics 365 for Retail. 
+Hvis du vil oprette en kupon, skal du oprette rabatten og kuponen særskilt. Derefter kan du tilknytte dem ved at vælge rabatten på kuponsiden i Microsoft Dynamics 365 for Retail.
 
 > [!NOTE]
 > Når en kupon er tilknyttet en rabat, bliver flere af felterne på rabatsiden i Microsoft Dynamics 365 for Retail skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
@@ -54,25 +54,25 @@ Grænsen gennemtvinges pr. kuponkode på en kupon. F.eks. kan en engangskupon, d
 
 ## <a name="managing-coupons"></a>Administration af kuponer
 
-Du skal oprette rabatten og kuponen særskilt. Derefter tilknytter du dem ved at vælge rabatten på kuponsiden. Når du har knyttet en kupon til en rabat, bliver flere af felterne for rabatten skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.  
+Du skal oprette rabatten og kuponen særskilt. Derefter tilknytter du dem ved at vælge rabatten på kuponsiden. Når du har knyttet en kupon til en rabat, bliver flere af felterne for rabatten skrivebeskyttet, fordi de styres af indstillingerne for kuponen. Disse felter omfatter felterne for status og standarddatointervaller.
 
 I praksis er kuponer nu ekstra validering ud over detailrabatter. Kuponen indeholder de kuponkoder og stregkoder sammen med datointervaller, som anvendelsen begrænser, og egenskaben Debitor påkrævet. Rabatten angiver det sæt af produkter, som kuponen gælder for. Prisgrupperne for rabatten angiver det sæt af kunder, kanaler eller kataloger, kuponen gælder for.
 
-## <a name="system-setup-for-coupons"></a>Systemopsætning for kuponer 
+## <a name="system-setup-for-coupons"></a>Systemopsætning for kuponer
 
-Når du vil konfigurere en kupon, skal du først angive kuponens stregkode og to kuponnummerserier. 
+Når du vil konfigurere en kupon, skal du først angive kuponens stregkode og to kuponnummerserier.
 
-1.  På siden **Masketegn** skal du oprette et nyt masketegn for kuponkoden. Du kan vælge alle ikke-anvendte tegn.
-2.  På siden **Opsætning af stregkodemaske** skal du oprette en ny stregkodemaske. Indstil feltet **Type** til **Kupon**.
-3.  På siden **Stregkodeopsætning** skal du oprette en ny stregkode, der bruger den stregkodemaske, du lige har oprettet.
-4.  På siden **Nummerserier** skal du oprette to nye nummerserier. Én serie er til kuponkode-id'et, og den anden serie er til kuponnummeret. Kuponkode-id'et er det entydige id for hver kuponkode for en kupon. Kuponnummeret er et entydigt id for en kupon. Hver kupon kan have flere koder og stregkoder, der udløser kuponen.
+1. På siden **Masketegn** skal du oprette et nyt masketegn for kuponkoden. Du kan vælge alle ikke-anvendte tegn.
+2. På siden **Opsætning af stregkodemaske** skal du oprette en ny stregkodemaske. Indstil feltet **Type** til **Kupon**.
+3. På siden **Stregkodeopsætning** skal du oprette en ny stregkode, der bruger den stregkodemaske, du lige har oprettet.
+4. På siden **Nummerserier** skal du oprette to nye nummerserier. Én serie er til kuponkode-id'et, og den anden serie er til kuponnummeret. Kuponkode-id'et er det entydige id for hver kuponkode for en kupon. Kuponnummeret er et entydigt id for en kupon. Hver kupon kan have flere koder og stregkoder, der udløser kuponen.
 
     > [!NOTE]
     > For begge nummerserier skal du indstille feltet **Interval** til **Firma**. I de fleste tilfælde bør du generere begge serienumre automatisk.
 
-5.  På siden **Detailparametre** under fanen **Stregkoder** skal du vælge den stregkode, du oprettede tidligere.
-6.  På siden **Delte parametre for detail** under fanen **Nummerserier** skal du vælge de nummerserier, du oprettede for kuponnummeret og kuponkode-id'et.
-7.  Du kan nu åbne siden **Kuponer** og oprette nye rabatkuponer.
+5. På siden **Detailparametre** under fanen **Stregkoder** skal du vælge den stregkode, du oprettede tidligere.
+6. På siden **Delte parametre for detail** under fanen **Nummerserier** skal du vælge de nummerserier, du oprettede for kuponnummeret og kuponkode-id'et.
+7. Du kan nu åbne siden **Kuponer** og oprette nye rabatkuponer.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Virkningen af delvise opdateringer på kuponer
 

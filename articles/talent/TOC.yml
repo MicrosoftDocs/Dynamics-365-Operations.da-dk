@@ -7,7 +7,11 @@
         - name: Nyheder eller ændringer
           href: whats-new.md
           items:
-            - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (27. november 2018)
+            - name: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (14. december 2018)
+              href: whats-new-talent-december-14.md
+            - name: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (6. december 2018)
+              href: whats-new-talent-december-6.md
+            - name: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (27. november 2018)
               href: whats-new-talent-november-27.md
             - name: Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (15. november 2018)
               href: whats-new-talent-november-15.md
@@ -71,6 +75,8 @@
     - name: Administrere orlov og fravær
       href: leave-absence-overview.md
       items:
+        - name: Orlovs- og fraværskoncepter
+          href: leave-absence-concepts.md
         - name: Periodisere fravær baseret på antal arbejdstimer
           href: leave-accrue-hours-worked.md
         - name: Arbejdstidskalendere
@@ -128,10 +134,13 @@
         - name: Konfigurere kurser
           href: courses.md
     - name: Definere og administrere et frynsegodeprogram
-      href: manage-benefit-program.md
-    - name: Politikker for berettigelse til frynsegoder
-      href: benefit-eligibility-policies.md
       items:
+        - name: Administrere et frynsegodeprogram
+          href: manage-benefit-program.md
+        - name: Politikker for berettigelse til frynsegoder
+          href: benefit-eligibility-policies.md
+        - name: Generere Affordable Care Act (ACA)-indberetninger
+          href: generate-aca-reports.md
         - name: 'Administrere udstyr, der udlånes til arbejdere'
           href: loan-items.md
     - name: Indsamle oplysninger ved hjælp af spørgeskemaer
@@ -272,12 +281,10 @@
       items:
         - name: Analytiske rapporter opdateres ikke.
           href: analytic-reports-not-updated.md
-        - name: Kan ikke oprette et miljø i PowerApps Admin-centeret
+        - name: Kan ikke oprette et miljø i PowerApps Administration
           href: create-envi-powerapps-admin-ctr.md
         - name: Talent-klient afbryder forbindelsen
           href: client-disconnects.md
-        - name: Sådan håndteres databasesikkerhedskopier
-          href: database-backups.md
         - name: 'Undgå tekstafkortning i stillingshierarkiet, og eksportér til Visio'
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Kør kompensationsprocessen

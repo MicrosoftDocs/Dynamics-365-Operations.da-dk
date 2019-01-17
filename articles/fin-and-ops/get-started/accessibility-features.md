@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
-ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
 ms.contentlocale: da-dk
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -41,7 +41,7 @@ For de fleste brugere omfatter den daglige systembrug mange dataindtastninger og
 
 Alle sider, der åbnes ved hjælp af menuen i navigationsruden, ruden længst til venstre, er også tilgængelige i feltet **Søg**. Tryk på Alt + G for at flytte fokus til feltet **Søg** og derefter skrive navnet på eller beskrivelsen af siden.
 
-!["Bankkonti", der er angivet i søgefeltet](media/6d08b0be32808221023e2aa92d69fd70.png  "\"Bankkonti\", der er angivet i søgefeltet")
+!["Bankkonti", der er angivet i søgefeltet](media/6d08b0be32808221023e2aa92d69fd70.png "\"Bankkonti\", der er angivet i søgefeltet")
 
 Du kan finde flere oplysninger i [Navigationssøgning](navigation-search.md).
 
@@ -56,17 +56,17 @@ Der er adgang til alle handlinger, der kan udføres på en side, fra et tastatur
 
 Du vil udføre handlingen **Log for e-mail-besked**, der vises i gruppen **E-mail-besked** under fanen **Salgsordre** i handlingsruden.
 
-![Loghandling for e-mailbesked i handlingsruden](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "'Loghandling for e-mailbesked i handlingsruden")
+![Loghandling for e-mailbesked i handlingsruden](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Loghandling for e-mailbesked i handlingsruden")
 
 Én mulighed er at bruge tastaturet. Tryk på Ctrl + F6 for at flytte fokus til handlingsruden, og tryk derefter på Tab flere gange for at flytte gennem alle faner og handlinger, indtil handlingen **Log for e-mail-besked** er i fokus.
 
 Men du kan også køre handlingen mere direkte. Fra et vilkårligt sted på siden skal du trykke på Ctrl + apostrof (') for at få vist søgefeltet for handlinger.
 
-![Søgefelt for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Søgefelt for handlinger")
+![Søgefelt for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søgefelt for handlinger")
 
 Skriv ord, der beskriver handlingen, i søgefeltet. Handlingen gøres tilgængelig for dig, og du kan køre den direkte. For eksempel ved at skrive **e-mail**, **besk** (et delvist ord) eller **log** kan du "springe" til Log for e-mail-besked-funktionen.
 
-!["E-mail", der er angivet i søgefeltet](media/image4.png "\"E-mail\", der er angivet i søgefeltet") 
+!["E-mail", der er angivet i søgefeltet](media/image4.png "\"E-mail\", der er angivet i søgefeltet")
 
 !["Besked" skrevet i søgefeltet](media/image5.png "\"Besked\" skrevet i søgefeltet")
 
@@ -82,7 +82,7 @@ Ikke alle felter er nødvendige for at udføre almindelige opgaver i den daglige
 
 Dog kan nogle af de felter, du ofte bruger til at udføre opgaver, være udeladt i standardtabulatornavigationen. Hvis det er tilfældet, og du bruger Windows Oplæser, kan du bruge Windows Oplæser-tastaturhandlinger til få adgang til disse felter og kontrollere deres indhold. Alternativt kan du slå indstillingen **Udvidet tabulatornavigation** til på siden **Indstillinger**. Denne indstilling gør alle felter, der kan redigeres, og skrivebeskyttede felter til en del af tabulatornavigationen. Du kan derefter bruge tilpasningssiden til at oprette en brugerdefineret tabulatornavigation og udelade felter, der ikke behøver at indgå i tabulatornavigationen. Du kan finde flere oplysninger om brugertilpasning i [Tilpasse brugeroplevelsen](personalize-user-experience.md).
 
-![Indstillingen "Udvidet tabulatornavigation"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Indstillingen \"Udvidet tabulatornavigation\"")
+![Indstillingen "Udvidet tabulatornavigation"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Indstillingen \"Udvidet tabulatornavigation\"")
 
 ## <a name="form-patterns"></a>Formularmønstre
 

@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ Udfør følgende procedurer i arbejdsgangseditoren, hvis du vil konfigurere en p
 En parallel aktivitet består af grene i en arbejdsgang, der kører samtidigt.
 
 ## <a name="name-a-parallel-activity"></a>Navnet på en parallel aktivitet
+
 Udfør følgende trin for at angive et navn på den parallelle aktivitet.
-1.  Højreklik på den parallelle aktivitet, og klik derefter på **Egenskaber** for at åbne formen **Egenskaber**.
-2.  Klik på **Grundlæggende indstillinger** i venstre rude.
-3.  Angiv et entydigt navn på den parallelle aktivitet i feltet **Nanv**.
-4.  Klik på **Luk**.
+
+1. Højreklik på den parallelle aktivitet, og klik derefter på **Egenskaber** for at åbne formen **Egenskaber**.
+2. Klik på **Grundlæggende indstillinger** i venstre rude.
+3. Angiv et entydigt navn på den parallelle aktivitet i feltet **Nanv**.
+4. Klik på **Luk**.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurere grenene i den parallelle aktivitet
+
 Udfør følgende trin for at tilføje og konfigurere grenene i den parallelle aktivitet.
+
 1. Dobbeltklik på den parallelle aktivitet for at få vist grenene i den parallelle aktivitet.
-2. Du kan tilføje en gren ved at trække elementet **Gren** fra området **Arbejdsgangselementer** til et indsættelsespunkt på lærredet. I følgende illustration vises et indsættelsespunkt.![Indsættelsespunkt](./media/workflow_insertionpoint.gif)
+2. Du kan tilføje en gren ved at trække elementet **Gren** fra området **Arbejdsgangselementer** til et indsættelsespunkt på lærredet. I følgende illustration vises et indsættelsespunkt.
 
-   |                                              <strong>Bemærk!</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt. |
+    ![Indsættelsespunkt](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Grenenes rækkefølge betyder ikke noget, fordi alle grenene i en parallel aktivitet kører samtidigt.
 
 3. Hvis du vil konfigurere hver gren, skal du se [Konfigurere en parallel gren](configure-parallel-branch-workflow.md).
-
-
-
-
-
 

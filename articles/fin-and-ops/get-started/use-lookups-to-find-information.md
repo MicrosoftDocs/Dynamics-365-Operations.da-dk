@@ -29,35 +29,38 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](../includes/banner.md)]
 
-I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.  
+I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.
 
-<a name="responsive-lookups"></a>Responsive opslag
-------------------
+## <a name="responsive-lookups"></a>Responsive opslag
 
 I tidligere versioner af Finance and Operations skulle en bruger foretage en eksplicit handling for at åbne rullemenuen, når der blev kommunikeret med et opslagskontrolelement. Dette skete måske ved at skrive en stjerne (\*) i kontrolelementet for at filtrere opslaget baseret på den aktuelle værdi af kontrolelementet, ved at klikke på rullelisten eller ved hjælp af genvejstasten **Alt**+**pil ned**. Opslagskontrolelementer er blevet ændret på følgende måder for bedre at passe med webpraksis:
 
--   Opslagsrullemenuer åbnes nu automatisk efter en lille pause i indtastningen, og rullelisteindholdet filtreres på basis af værdien af opslagskontrolelementet.
-    -   Bemærk, at den gamle funktionsmåde med automatisk åbning af rullemenuen, når du har skrevet en stjerne (\*), er blevet frarådet.
--   Når opslagsrullemenuen er åbnet, sker følgende:
-    -   Markøren forbliver i opslagskontrolelementet (i stedet for at fokus flytter ind i rullemenuen), så du kan fortsætte med at foretage ændringer i værdien af kontrolelementet. Brugeren kan dog stadig bruge **pil op** og **pil ned** til at ændre rækker i rullemenuen, og Enter til at markere den aktuelle række i rullemenuen.
-    -   Indholdet i rullemenuen justeres, når der foretages ændringer i opslagskontrolelementets værdi.
+- Opslagsrullemenuer åbnes nu automatisk efter en lille pause i indtastningen, og rullelisteindholdet filtreres på basis af værdien af opslagskontrolelementet.
 
-Se f.eks. på et opslagsfelt kaldet **By**. 
+    Bemærk, at den gamle funktionsmåde med automatisk åbning af rullemenuen, når du har skrevet en stjerne (\*), er blevet frarådet.
 
-Når fokus er på feltet **By**, kan du starte med at søge efter den ønskede by ved at skrive et par bogstaver, f.eks. "kol."  Når du holder op med at skrive, åbnes opslaget automatisk og er filtreret efter de byer, der begynder med "kol". 
+- Når opslagsrullemenuen er åbnet, sker følgende:
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
+    - Markøren forbliver i opslagskontrolelementet (i stedet for at fokus flytter ind i rullemenuen), så du kan fortsætte med at foretage ændringer i værdien af kontrolelementet. Brugeren kan dog stadig bruge **pil op** og **pil ned** til at ændre rækker i rullemenuen, og Enter til at markere den aktuelle række i rullemenuen.
+    - Indholdet i rullemenuen justeres, når der foretages ændringer i opslagskontrolelementets værdi.
 
-På dette tidspunkt er markøren stadig placeret i opslagsfeltet. Hvis du fortsætter med at skrive, så værdien er "kolonne", justeres opslag indholdet automatisk for at afspejle den seneste værdi i kontrolelementet. 
+Se f.eks. på et opslagsfelt kaldet **By**.
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
+Når fokus er på feltet **By**, kan du starte med at søge efter den ønskede by ved at skrive et par bogstaver, f.eks. "kol." Når du holder op med at skrive, åbnes opslaget automatisk og er filtreret efter de byer, der begynder med "kol".
 
-Selvom fokus er stadig i opslagskontrolelementet, kan du også bruge tasterne **pil op** eller **pil ned** til at markere den række, du vil vælge. Hvis du trykker på **Enter**, vælges den fremhævede række fra opslaget, og kontrolelementets værdi vil blive opdateret. 
+[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+
+På dette tidspunkt er markøren stadig placeret i opslagsfeltet. Hvis du fortsætter med at skrive, så værdien er "kolonne", justeres opslag indholdet automatisk for at afspejle den seneste værdi i kontrolelementet.
+
+![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+
+Selvom fokus er stadig i opslagskontrolelementet, kan du også bruge tasterne **pil op** eller **pil ned** til at markere den række, du vil vælge. Hvis du trykker på **Enter**, vælges den fremhævede række fra opslaget, og kontrolelementets værdi vil blive opdateret.
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Indtastning af mere end id'er
-Når de indtaster data, er det naturligt for brugerne at forsøge at identificere et objekt, som en debitor eller kreditor, ved hjælp navnet i stedet for en identifikator, der repræsenterer objektet. I den aktuelle version af Finance and Operations tillader mange (men ikke alle) opslag nu kontekstafhængig dataindtastning. Denne effektive funktion tillader brugeren at skrive id'et eller det tilsvarende navn i opslagskontrolelementet. 
+
+Når de indtaster data, er det naturligt for brugerne at forsøge at identificere et objekt, som en debitor eller kreditor, ved hjælp navnet i stedet for en identifikator, der repræsenterer objektet. I den aktuelle version af Finance and Operations tillader mange (men ikke alle) opslag nu kontekstafhængig dataindtastning. Denne effektive funktion tillader brugeren at skrive id'et eller det tilsvarende navn i opslagskontrolelementet.
 
 Tænk f.eks. på feltet **Debitorkonto**, når du opretter en salgsordre. Dette felt viser **konto-id'et** for kunden, men brugerne foretrækker normalt at angive et **kontonavn** i stedet for et **konto-id** for dette felt, når de opretter en salgsordre, f.eks. "Forest Wholesales" i stedet for "US-003".
 
@@ -70,18 +73,16 @@ Brugeren kan dog også nu angive begyndelsen af et **kontonavn**. Hvis det regis
 [![Kontekstafhængigt opslag, når der angives et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Brug af gitterets kolonneoverskrifter til mere avanceret filtrering og sortering
-De opslagsforbedringer, der er beskrevet i de foregående to afsnit giver en væsentligt forbedring af en brugers mulighed for at navigere mellem rækkerne i et opslag, der er baseret på en "starter med"-søgning i felterne **Id** eller **Navn** i opslaget. Der er dog situationer, hvor der er behov for mere avanceret filtrering (eller sortering) for at finde den rigtige række. I disse situationer skal brugeren bruge indstillinger for filtrering og sortering i gitterets kolonneoverskrifter i opslaget. F.eks. angiver en medarbejder en salgsordrelinje og har behov for at finde det rigtige "kabel". Det hjælper ikke at skrive "kabel" i kontrolelementet **Varenummer**, da der ikke er nogen produktnavne, der begynder med "kabel". 
 
-![emptyitemlookup](./media/emptyitemlookup.png) 
+De opslagsforbedringer, der er beskrevet i de foregående to afsnit giver en væsentligt forbedring af en brugers mulighed for at navigere mellem rækkerne i et opslag, der er baseret på en "starter med"-søgning i felterne **Id** eller **Navn** i opslaget. Der er dog situationer, hvor der er behov for mere avanceret filtrering (eller sortering) for at finde den rigtige række. I disse situationer skal brugeren bruge indstillinger for filtrering og sortering i gitterets kolonneoverskrifter i opslaget. F.eks. angiver en medarbejder en salgsordrelinje og har behov for at finde det rigtige "kabel". Det hjælper ikke at skrive "kabel" i kontrolelementet **Varenummer**, da der ikke er nogen produktnavne, der begynder med "kabel".
 
-Brugeren skal i stedet at rydde værdien i opslagskontrolelementet, åbne opslagsrullemenuen og filtrere rullemenuen ved hjælp af gitterets kolonneoverskrift, som vist nedenfor. En bruger, der anvender mus (eller tryk), kan blot klikke (eller trykke) på en kolonneoverskrift for at få adgang til filtrerings- og sorteringsindstillingerne for den pågældende kolonne. Når der bruges tastatur, skal brugeren blot at trykke på **Alt**+**Pil** **ned** endnu en gang for at flytte fokus ind i rullemenuen, hvorefter brugeren kan tabulere til den korrekte kolonne og derefter trykke på **Ctrl**+**G** for at åbne rullemenuen for gitterets kolonnehoved. 
+![emptyitemlookup](./media/emptyitemlookup.png)
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
+Brugeren skal i stedet at rydde værdien i opslagskontrolelementet, åbne opslagsrullemenuen og filtrere rullemenuen ved hjælp af gitterets kolonneoverskrift, som vist nedenfor. En bruger, der anvender mus (eller tryk), kan blot klikke (eller trykke) på en kolonneoverskrift for at få adgang til filtrerings- og sorteringsindstillingerne for den pågældende kolonne. Når der bruges tastatur, skal brugeren blot at trykke på **Alt**+**Pil** **ned** endnu en gang for at flytte fokus ind i rullemenuen, hvorefter brugeren kan tabulere til den korrekte kolonne og derefter trykke på **Ctrl**+**G** for at åbne rullemenuen for gitterets kolonnehoved.
 
-Når filteret er anvendt (se billedet nedenfor), kan brugeren som normalt finde og markere rækken. 
+[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+
+Når filteret er anvendt (se billedet nedenfor), kan brugeren som normalt finde og markere rækken.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
-
-
-
 

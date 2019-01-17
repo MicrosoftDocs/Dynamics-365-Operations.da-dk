@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: eaee79e2a20ab443cf3779e8499bf29d63ad3dfc
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: c9d3e7af95dffddfddc34059d93a2a5a350d08e5
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 01/16/2019
 
 ---
 
@@ -35,11 +35,11 @@ Der er forskellige grunde til, at detailhandlere ønsker at forhindre, at der ka
 
 Følgende indstillinger, som findes under fanen **Retail** for frigivne produkter, tillader, at produktet konfigureres til at forhindre alle eller manuelle rabatter. Indstillingerne kan også angives på kategoriniveau fra detailkategorihierarkiet.
 
-**Forhindre alle rabatter**: Vælg denne indstilling for at forhindre, at alle typer rabatter kan anvendes på dette produkt. Dette omfatter kampagner, f.eks. mix og match, mængde- og tærskelrabatter samt manuelle linje- og transaktionsrabatter, der anvendes under et salg af en POS-bruger.
+- **Forhindre alle rabatter** – Vælg denne indstilling for at forhindre, at alle typer rabatter kan anvendes på dette produkt. Dette omfatter kampagner, f.eks. mix og match, mængde- og tærskelrabatter samt manuelle linje- og transaktionsrabatter, der anvendes under et salg af en POS-bruger.
+- **Forhindre manuelle rabatter** – Vælg denne indstilling for kun at forhindre de manuelle linje- eller transaktionsrabatter, der anvendes under et salg af en POS-bruger. Produkter, hvor denne indstilling er valgt, er stadig berettiget til kampagner, f.eks. mix og match, og mængde- og tærskelrabatter.
 
-**Forhindre manuelle rabatter**: Vælg denne indstilling for kun at forhindre de manuelle linje- eller transaktionsrabatter, der anvendes under et salg af en POS-bruger. Produkter, hvor denne indstilling er valgt, er stadig berettiget til kampagner, f.eks. mix og match, og mængde- og tærskelrabatter.
+> [!NOTE]
+> Disse indstillinger begrænser ikke pristilsidesættelsen, fordi dette indstiller basisprisen og bliver ikke behandlet som en rabat.
 
-**Bemærk**: Disse indstillinger begrænser ikke pristilsidesættelsen, fordi dette indstiller basisprisen og bliver ikke behandlet som en rabat.  
-
-[![feltet forhindre rabatter](./media/prevent discounts.png)](./media/prevent discounts.png)
+[![feltet forhindre rabatter](./media/prevent-discounts.png)](./media/prevent-discounts.png)
 

@@ -20,10 +20,10 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8025df4f8498efa867f71892b253f71631b731c7
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
 ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -35,71 +35,71 @@ Dette emne indeholder oplysninger om kundeordrer i Retail Modern POS (MPOS). Kun
 
 Med et hav af tilgængelige kanaler i detailverdenen giver mange detailhandlere mulighed for kundeordrer eller specialordrer for at opfylde forskellige produkt- og opfyldelseskrav. Her er nogle typiske scenarier:
 
--   En kunde ønsker, at produkter skal leveres til en bestemt adresse på en bestemt dato.
--   En kunde ønsker at afhente varer fra en butik eller et sted, der er forskelligt fra butikken eller det sted, hvor kunden købte varerne.
--   En kunde ønsker, at en anden afhenter de produkter, kunden har købt.
+- En kunde ønsker, at produkter skal leveres til en bestemt adresse på en bestemt dato.
+- En kunde ønsker at afhente varer fra en butik eller et sted, der er forskelligt fra butikken eller det sted, hvor kunden købte varerne.
+- En kunde ønsker, at en anden afhenter de produkter, kunden har købt.
 
 Detailhandlere kan også bruge kundeordrer til at minimere manglende salg, som ellers kan skyldes, at en vare midlertidigt ikke kan leveres, da varerne kan leveres eller afhentes på et andet tidspunkt eller sted.
 
 ## <a name="set-up-customer-orders"></a>Konfigurere kundeordrer
+
 Her er nogle af de parametre, der kan indstilles på siden **Detailparametre**, for at definere, hvordan kundeordrer opfyldes:
 
--   **Standard indbetalingsprocent** – Angiv det beløb, som kunden skal betale som et depositum, før en ordre kan bekræftes. Standardindbetalingsbeløbet beregnes som en procentdel af ordreværdien. Afhængigt af rettigheder kan en tilknyttet butik muligvis overstyre beløbet ved hjælp af **Tilsidesæt depositum**.
--   **Annulleringsgebyrprocent** – Hvis et gebyr vil blive anvendt, når en kundeordre annulleres, skal du angive beløbet på dette gebyr.
--   **Kode for annulleringsgebyr** – Hvis et gebyr vil blive anvendt ved annullering af en kundeordre, afspejles dette gebyr under en gebyrkode på salgsordren. Brug denne parameter til at definere annulleringen af gebyrkoden.
--   **Kode for leveringsgebyr** – Detailhandlere kan opkræve et ekstra gebyr for levering af varer til en kunde. Beløbet for dette leveringsgebyr afspejles under en gebyrkode på salgsordren. Brug denne parameter til at knytte leveringsgebyrkoden til forsendelsesgebyrer på kundeordren.
--   **Refunder forsendelsesgebyrer** – Angiv, om forsendelsesgebyrer, der er tilknyttet en kundeordre, kan refunderes.
--   **Maksimalt beløb uden godkendelse** – Hvis forsendelsesgebyrer kan tilbagebetales, skal du angive det maksimale forsendelsesgebyrbeløb, der kan tilbagebetales på tværs af returordrer. Hvis dette beløb overskrides, kræves ledertilsidesættelse for at fortsætte med refusionen. For at tage højde for følgende scenarier kan en tilbagebetaling af forsendelsesgebyrer overstige det beløb, der oprindeligt blev betalt:
-    -   Gebyrer anvendes på niveauet for salgsordrehovedet, og når et antal af en produktlinje returneres, kan den maksimale refusion af forsendelsesgebyrer, der er tilladt for produkterne og antallet, ikke bestemmes på måde, der fungerer for alle detailkunder.
-    -   Forsendelsesgebyrer påløber for hver leveringsforekomst. Hvis en kunde returnerer varer flere gange, og forhandlerens politik angiver, at forhandleren skal bære omkostningerne ved returforsendelsesgebyrer, bliver returforsendelsesgebyrerne højere end de faktiske forsendelsesgebyrer.
+- **Standard indbetalingsprocent** – Angiv det beløb, som kunden skal betale som et depositum, før en ordre kan bekræftes. Standardindbetalingsbeløbet beregnes som en procentdel af ordreværdien. Afhængigt af rettigheder kan en tilknyttet butik muligvis overstyre beløbet ved hjælp af **Tilsidesæt depositum**.
+- **Annulleringsgebyrprocent** – Hvis et gebyr vil blive anvendt, når en kundeordre annulleres, skal du angive beløbet på dette gebyr.
+- **Kode for annulleringsgebyr** – Hvis et gebyr vil blive anvendt ved annullering af en kundeordre, afspejles dette gebyr under en gebyrkode på salgsordren. Brug denne parameter til at definere annulleringen af gebyrkoden.
+- **Kode for leveringsgebyr** – Detailhandlere kan opkræve et ekstra gebyr for levering af varer til en kunde. Beløbet for dette leveringsgebyr afspejles under en gebyrkode på salgsordren. Brug denne parameter til at knytte leveringsgebyrkoden til forsendelsesgebyrer på kundeordren.
+- **Refunder forsendelsesgebyrer** – Angiv, om forsendelsesgebyrer, der er tilknyttet en kundeordre, kan refunderes.
+- **Maksimalt beløb uden godkendelse** – Hvis forsendelsesgebyrer kan tilbagebetales, skal du angive det maksimale forsendelsesgebyrbeløb, der kan tilbagebetales på tværs af returordrer. Hvis dette beløb overskrides, kræves ledertilsidesættelse for at fortsætte med refusionen. For at tage højde for følgende scenarier kan en tilbagebetaling af forsendelsesgebyrer overstige det beløb, der oprindeligt blev betalt:
+
+    - Gebyrer anvendes på niveauet for salgsordrehovedet, og når et antal af en produktlinje returneres, kan den maksimale refusion af forsendelsesgebyrer, der er tilladt for produkterne og antallet, ikke bestemmes på måde, der fungerer for alle detailkunder.
+    - Forsendelsesgebyrer påløber for hver leveringsforekomst. Hvis en kunde returnerer varer flere gange, og forhandlerens politik angiver, at forhandleren skal bære omkostningerne ved returforsendelsesgebyrer, bliver returforsendelsesgebyrerne højere end de faktiske forsendelsesgebyrer.
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflow for kundeordrer
+
 ### <a name="create-a-customer-order-in-retail-modern-pos"></a>Oprette en kundeordre i Retail Modern POS
 
-1.  Føj en kunde til transaktionen.
-2.  Føj produkter til indkøbsvognen.
-3.  Klik på **Opret kundeordre**, og vælg derefter ordretypen. Ordretypen kan enten være **Kundeordre** eller **Tilbud**.
-4.  Klik på **Afsendelse valgt** eller **Send alle** for at levere produkterne til en adresse på debitorkontoen, angive den ønskede afsendelsesdato og forsendelsesgebyrer.
-5.  Klik på **Afhent valgte** eller **Afhent alle** for at vælge produkter, der vil blive afhentet fra det aktuelle lager eller et andet lager på en bestemt dato.
-6.  Opkræv indbetalingsbeløbet, hvis der kræves et depositum.
+1. Føj en kunde til transaktionen.
+2. Føj produkter til indkøbsvognen.
+3. Klik på **Opret kundeordre**, og vælg derefter ordretypen. Ordretypen kan enten være **Kundeordre** eller **Tilbud**.
+4. Klik på **Afsendelse valgt** eller **Send alle** for at levere produkterne til en adresse på debitorkontoen, angive den ønskede afsendelsesdato og forsendelsesgebyrer.
+5. Klik på **Afhent valgte** eller **Afhent alle** for at vælge produkter, der vil blive afhentet fra det aktuelle lager eller et andet lager på en bestemt dato.
+6. Opkræv indbetalingsbeløbet, hvis der kræves et depositum.
 
 ### <a name="edit-an-existing-customer-order"></a>Rediger en eksisterende kundeordre
 
-1.  Klik på **Find en ordre** på startsiden.
-2.  Find og vælg den ordre, der skal redigeres. Klik på **Rediger** nederst på siden.
+1. Klik på **Find en ordre** på startsiden.
+2. Find og vælg den ordre, der skal redigeres. Klik på **Rediger** nederst på siden.
 
 ### <a name="pick-up-an-order"></a>Afhente en ordre
 
-1.  Klik på **Find en ordre** på startsiden.
-2.  Vælg den ordre, der skal afhentes. Klik på **Pluk og pakning** nederst på siden.
-3.  Klik på **Afhent**.
+1. Klik på **Find en ordre** på startsiden.
+2. Vælg den ordre, der skal afhentes. Klik på **Pluk og pakning** nederst på siden.
+3. Klik på **Afhent**.
 
 ### <a name="cancel-an-order"></a>Annullere en ordre
 
-1.  Klik på **Find en ordre** på startsiden.
-2.  Vælg den ordre, der skal annulleres. Klik på **Annuller** nederst på siden.
+1. Klik på **Find en ordre** på startsiden.
+2. Vælg den ordre, der skal annulleres. Klik på **Annuller** nederst på siden.
 
-#### <a name="create-a-return-order"></a>Oprette en returordre
+### <a name="create-a-return-order"></a>Oprette en returordre
 
-1.  Klik på **Find en ordre** på startsiden.
-2.  Vælg den ordre, der skal returneres, vælg fakturaen for ordren, og vælg derefter produktlinjen for den vare, der skal returneres.
-3.  Klik på **Returordre** nederst på siden.
+1. Klik på **Find en ordre** på startsiden.
+2. Vælg den ordre, der skal returneres, vælg fakturaen for ordren, og vælg derefter produktlinjen for den vare, der skal returneres.
+3. Klik på **Returordre** nederst på siden.
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkront transaktionsflow for kundeordrer
+
 Kundeordrer kan oprettes fra POS-klienten i enten synkron eller asynkron tilstand.
 
 ### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Aktivere kundeordrer, der skal oprettes i asynkron tilstand
 
-1.  Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Funktionalitetsprofiler**.
-2.  I oversigtspanelet **Generelt** skal du vælge **Ja** for **Opret kundeordre i asynkron tilstand**.
+1. Klik på **Detail** &gt; **Konfiguration af kanal** &gt; **POS-opsætning** &gt; **POS-profiler** &gt; **Funktionalitetsprofiler**.
+2. I oversigtspanelet **Generelt** skal du vælge **Ja** for **Opret kundeordre i asynkron tilstand**.
 
 Når indstillingen **Opret kundeordre i asynkron tilstand** er indstillet til **Ja**, oprettes kundeordrer altid i asynkron tilstand, også selvom Retail Transaction Service (RTS) er tilgængelig. Hvis du vælger **Nej** for denne indstilling, oprettes kundeordrer altid i synkron tilstand ved hjælp af RTS. Når kundeordrer oprettes i asynkron tilstand, hentes de og indsættes i Retail af Pull-job (P). De tilsvarende salgsordrer oprettes i Retail, når **Synkroniser ordrer** køres enten manuelt eller via en batchproces.
 
-<a name="additional-resources"></a>Yderligere ressourcer
---------
+## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
-
-
-
 
