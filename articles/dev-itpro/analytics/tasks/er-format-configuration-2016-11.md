@@ -35,8 +35,10 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 2. Klik på **Rapporteringskonfigurationer**.
 3. Vælg **Betalinger (forenklet mode)** i træet.
 4. Klik på **Opret konfiguration** for at åbne dialogboksen.
+
  > [!NOTE]
  > Hvis du ikke kan se **Opret konfiguration**, skal du aktivere designtilstand på siden **Parametre til elektronisk rapportering**. 
+ 
 5. Skriv **Format baseret på datamodel PaymentModel** i feltet **Ny**.
 6. Skriv **BACS (UK-fiktiv)** i feltet **Navn**.
 7. Skriv **BACS kreditorbetalingsformat (UK-fiktiv)** i feltet **Beskrivelse**.
@@ -44,6 +46,7 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
     * Du kan definere et bestemt format for det elektroniske dokument. Lad feltet være tomt, hvis du vil vælge et format på kørselstidspunktet.  
 8. Indtast eller vælg en værdi i feltet **Definition af datamodel**.
 9. Klik på **Opret konfiguration**. En ny konfiguration er oprettet. Kladdeversionen kan bruges til at gemme designformatet til håndtering af elektroniske dokumenter.  
+
  > [!NOTE]
  > Hvis du ikke kan se **Opret konfiguration**, skal du aktivere designtilstand på siden **Parametre til elektronisk rapportering**.
 
