@@ -30,7 +30,6 @@ ms.lasthandoff: 08/08/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 I dette emne beskrives de grundlæggende elementer, som en sag kan indeholde, og der gives eksempler på, hvordan du kan bruge disse elementer i din organisation. 
 
