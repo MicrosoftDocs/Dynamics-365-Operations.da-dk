@@ -1,13 +1,13 @@
 ---
-title: "Kopiere kreditorer ved hjælp af delte nummerserier"
+title: Kopiere kreditorer ved hjælp af delte nummerserier
 description: Dette emne forklarer, hvordan du kan bruge delte nummerserier til at kopiere en kreditor til en anden juridisk enhed, men bevare det samme kreditor-id.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302087"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiere kreditorer ved hjælp af delte nummerserier
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ Du kan også kopiere kreditorer ved hjælp af søgefunktionen til SE-nummer, der
 
 1. Indstillingen **Kopiér kreditor** vises. Denne indstilling er som standard angivet til **Nej**. Hvis du vil kopiere kreditoren til den aktuelle juridiske enhed, skal du angive indstillingen til **Ja**.
 2. Vælg **Vælg**. Den nye kreditor oprettes.
-

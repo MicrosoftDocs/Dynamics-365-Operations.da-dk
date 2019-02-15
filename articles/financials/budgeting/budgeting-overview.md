@@ -1,13 +1,13 @@
 ---
 title: Startside for budgettering
-description: "Dette emne indeholder en oversigt over budgetteringsfunktionens komponenter, budgetteringsværktøjer og rapporteringsfunktioner i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emne indeholder en oversigt over budgetteringsfunktionens komponenter, budgetteringsværktøjer og funktioner i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302077"
 ---
-
 # <a name="budgeting-home-page"></a>Startside for budgettering
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Endelig kan meget modne organisationer etablere en organisatorisk kultur, hvor m
 -   [Budgetplanlægning: Oversigt og konfiguration](budget-planning-overview-configuration.md)
 -   [Budgetteret stilling](position-forecasting.md)
 -   [Berettigelsesdokumenter for budgetplanlægning](budget-planning-justification-docs.md)
--   [Microsoft Excel-skabeloner til budgetplanlægning](budget-planning-excel-templates.md)
+-   [Microsoft Excel skabeloner til budgetplanlægning](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-finance-and-operations"></a>Budgetteringsværktøjer i Finance and Operations
 [![Budgetteringsværktøjer](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
@@ -66,7 +65,6 @@ Oplysninger om, hvordan du bringer planlægningsdata fra andre moduler til budge
 I Finance and Operations kan brugere oprette budgetplaner enten direkte i Finance and Operations-klienten (ved hjælp af en konfigurerbar budgetplandokumentside) eller via Excel. Excel indeholder flere ekstra funktioner. Du kan for eksempel bruge eksterne data som en kilde til en budgetplan, udføre brugerdefinerede beregninger og bruge Microsoft-pivottabeller og -diagrammer. De fleste af variablerne i budgetplanlægningsprocessen kan konfigureres. 
 
 Du kan f.eks. definere, hvem der udfører budgettering, hvad der er budgetteret, og hvordan processen ser ud. Selvom du kan bruge Excel til budgetplanlægning, gemmes Finance and Operations som en enkelt faktakilde og er med til at forhindre problemer med budgetstyring. Periodiske processer kan bruges til at overføre startdata for budgettering til budgetplanen. Til rapportering tilbyder Finance and Operations et sæt standardundersøgelsessider, så du kan se og analysere data for budgettering. Budgetplandata kan åbnes via Management Reporter, og separate budgetplanscenarier kan vises som kolonner i rapporten Management Reporter.
-
 
 
 

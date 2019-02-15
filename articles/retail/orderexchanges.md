@@ -1,35 +1,35 @@
 ---
-title: "Konfigurere og behandle en udveksling på en returordre"
-description: "Dette emne forklarer, hvordan du konfigurerer en udveksling på en returnering i Microsoft Dynamics 365 for Retail."
+title: Konfigurere og behandle en udveksling på en returordre
+description: Dette emne forklarer, hvordan du konfigurerer en udveksling på en returnering i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302059"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en udveksling på en returordre
 
 [!include [banner](includes/banner.md)]
 
-I tidligere versioner af Microsoft Dynamics 365 for Retail, blev returnerer ud fra kundeordrer behandlet ved hjælp af returordredokumentet i Retail Headquarters. Returordredokumentet kan dog kun bruges til at behandle produkter, der returneres. De returnerede produkter er angivet med et negativt antal på returordrelinjer. Salg er derimod angivet med et positivt antal. Returordredokumentet understøtter dog ikke positive antal. På grund af denne begrænsning understøttede tidligere versioner af Retail ikke scenarier, hvor produktudvekslinger udføres ved hjælp af returordredokumentet.
+I tidligere versioner af Microsoft Dynamics 365 for Retail, blev returneringer ud fra kundeordrer behandlet ved hjælp af returordredokumentet i Retail Headquarters. Returordredokumentet kan dog kun bruges til at behandle produkter, der returneres. De returnerede produkter er angivet med et negativt antal på returordrelinjer. Salg er derimod angivet med et positivt antal. Returordredokumentet understøtter dog ikke positive antal. På grund af denne begrænsning understøttede tidligere versioner af Retail ikke scenarier, hvor produktudvekslinger udføres ved hjælp af returordredokumentet.
 
 Der er imidlertid blevet tilføjet funktionalitet til understøttelse af scenarier, hvor udveksling udføres på returordrer. Retail anvender nu salgsordredokumentet i stedet for returordredokumentet til behandling af disse typer transaktioner.
 
@@ -51,4 +51,3 @@ For at give bedre indsigt i de forskellige beløb for indkøbsvognen er der blev
 - **Anvendt depositum** – Det indbetalingsbeløb, der anvendes på en transaktion, når brugeren udfører en kundeordreafhentning. Hvis der ikke er nogen tilsidesættelse af indbetalt beløb, og et depositum på 10 procent er konfigureret, er beløbet i dette felt 90 procent af det samlede beløb for kundeordren.
 - **Udførelsesbeløb** – Det samlede beløb for linjer, hvor leveringsmåden blev angivet til **Udfør**, da ordren blev oprettet eller redigeret, eller under en kundeordreudveksling. Beløbet i dette felt omfatter moms og gebyrer.
 - **Returbeløb** – Det samlede beløb for linjer med negative antal under kundeordreudvekslingen. Beløbet i dette felt omfatter moms og gebyrer.
-

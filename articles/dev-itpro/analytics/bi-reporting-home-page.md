@@ -1,13 +1,13 @@
 ---
 title: Startside for Business Intelligence (BI) og rapportering
-description: "Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emne henviser til ressourcer, som du kan bruge til at få mere at vide om business intelligence og de rapporteringsværktøjer, der er tilgængelige i Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302051"
 ---
-
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Startside for Business Intelligence (BI) og rapportering
 
 [!include [banner](../includes/banner.md)]
@@ -47,8 +46,8 @@ Hvis du vil lære mere, skal du se følgende emner:
 
 - [Integreret Power BI i arbejdsområder](embed-power-bi-workspaces.md)
 - [Power BI Embedded-integration](power-bi-embedded-integration.md)
-- [Føje analyser til arbejdsområder ved hjælp af Power BI Embedded](add-analytics-tab-workspaces.md)
-- [Hjælpe til med at sikre analytiske arbejdsområder og rapporter ved hjælp af Power BI Embedded](secure-analytical-workspaces.md)
+- [Tilføje analyser til arbejdsområder ved hjælp af Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Hjælpe med til at sikre analysearbejdsområder og -rapporter ved hjælp af Power BI Embedded](secure-analytical-workspaces.md)
 - [Power BI-indhold til Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Forretningsdokumenter og udskrivning
@@ -88,7 +87,6 @@ Hvis du vil lære mere, skal du se følgende emner:
 Følgende rapporter indeholder referenceoplysninger om objekterne i Finance and Operations:
 
 - [Rapport for dataenheder](../data-entities/data-entities-report.md)
-- [Rapport for licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
+- [Rapport over licenskoder og konfigurationsnøgler](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services-rapporter](SSRS-report.md)
 - [Rapport for arbejdsgangstyper](../../fin-and-ops/organization-administration/workflow-types-report.md)
-

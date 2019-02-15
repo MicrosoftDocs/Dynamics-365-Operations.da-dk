@@ -1,13 +1,13 @@
 ---
 title: Velkommen til Dynamics 365 for Talent
-description: "Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
+description: Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302049"
 ---
-
 # <a name="welcome-to-dynamics-365-for-talent"></a>Velkommen til Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til medarbejderforhold i din organisation. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
+Microsoft Dynamics 365 for Talent strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Disse processer omfatter fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet.
 
 Du kan udføre disse opgaver vha. Talent:
 
@@ -42,7 +41,7 @@ Du kan udføre disse opgaver vha. Talent:
 + Gennemgå performance og implementere arbejdermål.
 + Oprette, afholde og analysere undervisningskurser, herunder agendaer, sessioner og spor.
 
-Udforske Dynamics 365 for Talent ved at se videoen [Sådan kommer du i gang med Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+Udforsk Dynamics 365 for Talent ved at se videoen [Sådan kommer du i gang med Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
 
 
 > [!NOTE] 
@@ -53,13 +52,13 @@ Udforske Dynamics 365 for Talent ved at se videoen [Sådan kommer du i gang med 
 
 Når du arbejder med Talent, skal du beslutte, hvordan du vil strukturere organisationen, ved hjælp af elementer som afdelinger, job og stillinger. Disse er blandt de grundlæggende elementer, at du skal konfigurer. De enkelte medarbejdere er knyttet til stillinger, der er knyttet til job.
 
--   [Organisere arbejdsstyrken ved hjælp af afdelinger, job og stillinger](departments-jobs-positions.md)
+-   [Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger](departments-jobs-positions.md)
 -   [Oprette firmaspecifikke personaleparametre](set-up-company-specific-hr-parameters.md)
 -   [Angive personaleparametre på tværs af juridiske enheder](set-up-hr-parameters-across-legal-entities.md) 
 -   [Ofte stillede spørgsmål om personalehandlinger](personnel-actions-faq.md)
 -   [Oversigt over orlov og fravær](leave-absence-overview.md)
--   [Sådan bruger du Dynamics 365 for Talent: Orlov og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
--   [Sådan administrerer du personale i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
+-   [Sådan bruges Dynamics 365 for Talent: orlov og fravær (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Sådan administreres personale i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Bemanding af din organisation
 
@@ -74,9 +73,9 @@ Du kan oprette planer for effektivt og retfærdigt at administrere kompensation 
 
 -   [Kompensationsplaner](compensation-plans.md)
 -   [Behandle kompensation](process-compensation.md)
--   [Oprette faste kompensationsplaner](create-fixed-compensation-plans.md)
+-   [Oprette planer for fast løn](create-fixed-compensation-plans.md)
 -   [Oprette planer for variabel kompensation](create-variable-compensation-plans.md)
--   [Sådan administrerer du kompensation i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
+-   [Sådan administreres kompensation i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Udvikle og undervise medarbejdere
 
@@ -85,7 +84,7 @@ For at hjælpe medarbejderne med at nå deres karrieremål og samtidig opfylde v
 -   [Performancestyring](performance-management-overview.md)
 -   [Justere arbejdsstyrkens færdigheder og forretningsbehov](skills.md)
 -   [Administrere uddannelse gennem kurser](courses.md)
--   [Sådan administrerer du medarbejderudvikling i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
+-   [Sådan administreres medarbejderudvikling i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Oprette og vedligeholde frynsegoder
 
@@ -94,13 +93,13 @@ Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvi
 -   [Administrere et frynsegodeprogram](manage-benefit-program.md)
 -   [Politikker for berettigelse til frynsegoder](benefit-eligibility-policies.md)
 -   [Administrere udstyr, der udlånes til arbejdere](loan-items.md)
--   [Sådan administrerer du frynsegoder til medarbejdere i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
+-   [Sådan administreres medarbejderfrynsegoder i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
 Talent kan hjælpe dig med at vedligeholde et sikkert arbejdsmiljø, der overholder gældende lovgivning, herunder den amerikanske ADA-lovgivning om handicappede (Americans with Disabilities Act) og Naturalization-lovgivning. For eksempel kan du administrere de fysiske krav til bestemte job samt styre anmodninger om tilpasninger, der kan hjælpe din organisation med at optimere færdighederne hos sit personale.
 
--   [Bekræftelse af I-9-ansættelsesformular](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [I-9-formular til ansættelsesbekræftelse](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
 -   [Overholde den amerikanske lov om handicap](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Indsamle oplysninger ved hjælp af spørgeskemaer
@@ -111,4 +110,3 @@ Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der b
 -   [Designe et spørgeskema](design-questionnaires.md)
 -   [Distribuere og udfylde et spørgeskema](distribute-questionnaires.md)
 -   [Se og evaluere resultaterne af et spørgeskema](evaluate-questionnaire-results.md)
-

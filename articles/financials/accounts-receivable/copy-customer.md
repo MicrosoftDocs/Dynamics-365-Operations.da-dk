@@ -1,13 +1,13 @@
 ---
-title: "Kopiere debitorer ved hjælp af delte nummerserier"
+title: Kopiere debitorer ved hjælp af delte nummerserier
 description: Dette emne forklarer, hvordan du kan bruge delte nummerserier til at kopiere en debitor til en anden juridisk enhed, men bevare det samme debitor-id.
 author: mikefalkner
 manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302043"
 ---
-
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopiere debitorer ved hjælp af delte nummerserier
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ Du kan også kopiere debitorer ved hjælp af søgefunktionen til SE-nummer, der 
 
 1. Indstillingen **Kopiér debitor** vises. Denne indstilling er som standard angivet til **Nej**. Hvis du vil kopiere debitoren til den aktuelle juridiske enhed, skal du angive indstillingen til **Ja**. 
 2. Vælg **Vælg**. Den nye debitor oprettes.
-

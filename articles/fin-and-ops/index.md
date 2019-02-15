@@ -5,9 +5,9 @@ author: margoc
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302053"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
-Lær at lade Microsoft Dynamics 365 for Finance and Operations arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold for slutbrugere, udviklere og it-medarbejdere. 
+Lær, hvordan du lader Microsoft Dynamics 365 for Finance and Operations arbejde for din virksomhed ved at udnytte nedenstående ressourcer til at finde egnet indhold til slutbrugere, udviklere og it-medarbejdere. 
 
 Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dynamics 365 for Retail og Microsoft Dynamics 365 for Talent. 
 
@@ -131,4 +130,3 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 
 </tbody>
 </table>
-

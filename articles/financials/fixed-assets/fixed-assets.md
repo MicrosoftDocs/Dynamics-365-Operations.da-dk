@@ -1,13 +1,13 @@
 ---
-title: "Startside for anlægsaktiver"
-description: "Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation."
+title: Startside for anlægsaktiver
+description: Anlægsaktiver er aktiver, som har en værdi, f.eks. bygninger, køretøjer, jord og udstyr, som ejes af en person eller organisation.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3c49ff15a6ac5dddd64ded4a6e9c755504393346
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302055"
 ---
-
 # <a name="fixed-assets-home-page"></a>Startside for anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
@@ -50,15 +49,14 @@ Du kan finde meninger, nyheder og andre oplysninger om Anlægsaktiver og andre l
 
 Der er mange opslag om Anlægsaktiver i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Kreditorer, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
 
-[Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.
 
 #### <a name="task-guides"></a>Opgaveguider
 Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
 #### <a name="videos"></a>Videoer
 
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 
