@@ -1,29 +1,28 @@
 ---
 title: Danmark
-description: Dette emne indeholder hyperlinks til Microsoft Dynamics 365 for Finance and Operations-dokumentationsressourcer for Danmark.
+description: Dette emne indeholder links til Microsoft Dynamics 365 for Finance and Operations-dokumentationsressourcer for Danmark.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Denmark
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
 ms.openlocfilehash: 0e5df11c36e3ada247eb214c3fc75d8f6b6640c5
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370200"
 ---
-
 # <a name="denmark"></a>Danmark 
 
 [!include [banner](../includes/banner.md)]
@@ -41,4 +40,3 @@ Dette emne indeholder links til dokumentationsressourcer for Danmark.
 - [Konfigurere debitorkonti til elektronisk OIOUBL-fakturering](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Konfigurere elektronisk OIOUBL-fakturering](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Konfigurere indbetalingskortformat](tasks/set-up-payment-slip-format.md)
-

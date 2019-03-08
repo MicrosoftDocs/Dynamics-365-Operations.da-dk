@@ -1,32 +1,31 @@
 ---
 title: Oversigt over produktoplysninger
-description: "Dette emne indeholder oplysninger om administration af produktoplysninger. Administration af produktoplysninger fungerer sammen med en fælles produktdefinition, kategorisering og identifikatorer på tværs af alle juridiske enheder, og også med bestemte konfigurationer af et produkt, så det passer til forretningsprocesserne."
+description: Dette emne indeholder oplysninger om administration af produktoplysninger. Administration af produktoplysninger fungerer sammen med en fælles produktdefinition, kategorisering og identifikatorer på tværs af alle juridiske enheder, og også med bestemte konfigurationer af et produkt, så det passer til forretningsprocesserne.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363010"
 ---
-
 # <a name="product-information-overview"></a>Oversigt over produktoplysninger
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,7 @@ Bemærk, at i dynamiske og fleksible organisationer ændres produktoplysningsdat
 
 ## <a name="product-masters-and-product-variants"></a>Produktmastere og produktvarianter
 
-I en fleksibel verden, hvor produkter hurtigt skal kunne tilpasses kundebehov, angiver produktdefinitioner et sæt produkter i stedet for specifikke produkter. I Microsoft Dynamics 365 for Finans and Operations kaldes disse generiske produkter for *produktmastere*. Produktmastere indeholder definitioner og regler, der angiver, hvordan specifikke produkter beskrives og fungerer i forretningsprocesser. Baseret på disse definitioner, kan der genereres specifikke produkter. Disse specifikke produkter kaldes for *produktvarianter*.
+I en fleksibel verden, hvor produkter hurtigt skal kunne tilpasses kundebehov, angiver produktdefinitioner et sæt produkter i stedet for specifikke produkter. I Microsoft Dynamics 365 for Finance and Operations er disse generiske produkter kendt som *produktmastere*. Produktmastere indeholder definitioner og regler, der angiver, hvordan specifikke produkter beskrives og fungerer i forretningsprocesser. Baseret på disse definitioner, kan der genereres specifikke produkter. Disse specifikke produkter kaldes for *produktvarianter*.
 
 I Finance and Operations er en produktmaster knyttet til en produktdimensionsgruppe og en konfigurationsteknologi for at angive forretningsreglerne. Produktdimensionerne (farve, størrelse, type og konfiguration) er et bestemt sæt attributter, der kan bruges i hele programmet til at definere og spore specifikke funktionsmåder for relaterede produkter. Disse dimensioner kan også hjælpe brugerne med at søge efter og identificere produkterne.
 
@@ -97,4 +96,3 @@ Arbejdsområdet består af en oversigt over felter og to lister. Listen **Åbne 
 ### <a name="manually-creating-a-new-released-product"></a>Manuel oprettelse af et nyt frigivet produkt
 
 Du kan manuelt oprette et frigivet produkt i en enkelt kørsel afhængigt af organisationens forretningsprocesser og eventuelle regler om, hvorvidt denne funktion skal bruges. Denne funktion opretter et nyt produkt, og frigør det automatisk til den aktuelle juridiske enhed. Hvis du vil oprette et nyt produkt, skal du klikke på listesiden **Frigivne produkter** i arbejdsområdet **Vedligeholdelse af frigivet produkt** eller på listesiden **Frigivet produkt**.
-

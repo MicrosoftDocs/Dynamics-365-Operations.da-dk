@@ -1,13 +1,13 @@
 ---
-title: "Regnskabsrapport over resultatopgørelse"
-description: "I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport."
+title: Regnskabsrapport over resultatopgørelse
+description: I denne artikel beskrives standardrapporten til resultatopgørelser. Her beskrives også de komponenter, der er knyttet til denne rapport.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9105e1de86ed2834b04f75c7d08c4021402bcfda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9310508082ff710cd040b74519044f5a90c23988
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363999"
 ---
-
 # <a name="income-statement-financial-report"></a>Regnskabsrapport over resultatopgørelse
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,6 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 [Se økonomiske rapporter](view-financial-reports.md)
 
 [Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

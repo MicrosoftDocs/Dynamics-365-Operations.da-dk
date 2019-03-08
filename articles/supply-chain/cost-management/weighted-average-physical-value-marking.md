@@ -1,13 +1,13 @@
 ---
-title: "Vægtet gennemsnit med fysisk værdi og afmærkning"
-description: "Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode."
+title: Vægtet gennemsnit med fysisk værdi og afmærkning
+description: Vægtet gennemsnit er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor afgange fra lager værdisættes til gennemsnitsværdien for varer, der er modtaget på lager i lagerlukningsperioden, samt en eventuel disponibel lagerbeholdning fra forrige periode.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355673"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Vægtet gennemsnit med fysisk værdi og afmærkning
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
 - En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
@@ -111,7 +110,7 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
 - En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
@@ -140,7 +139,7 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
 - En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
@@ -173,7 +172,7 @@ I følgende diagram illustreres denne række posteringer med effekterne ved at v
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
 - En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
@@ -221,14 +220,13 @@ I følgende diagram illustreres denne serie posteringer med virkningerne af at v
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@"Unitprice".
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@"stykpris".
 - En lagertransaktionsværdi, der er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres fysisk på lageret.
 - En lagertransaktionsværdi, der ikke er omgivet af kantede parenteser, angiver, at lagertransaktionen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangstransaktion er markeret med en ny etiket.
 - Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
 - Lagerlukninger angives med en rød stiplet linje og etiketten Lagerlukning.
 - Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
-
 
 
 

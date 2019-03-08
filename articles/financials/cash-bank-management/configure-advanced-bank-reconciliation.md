@@ -1,13 +1,13 @@
 ---
 title: Konfigurationsproces for avanceret bankafstemning
-description: "Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  I denne artikel forklares opsætningsprocesserne ved afstemning."
+description: Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  I denne artikel forklares opsætningsprocesserne ved afstemning.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357329"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Konfigurationsproces for avanceret bankafstemning
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Funktionen **Brug bankkontoudtog som bekræftelse på elektroniske betalinger** 
 Feltet **Bankkontonavn i kontoudtog** er det navn, der anvendes til bankkontoen på dine elektroniske bankkontoudtog.  Dette navn bruges, når det skal bestemmes, hvilke posteringer der skal importeres til en bankkonto fra et kontoudtog, der kan indeholde oplysninger om flere bankkonti. 
 
 Indstillingen **Afstem efter import** validerer automatisk bankkontoudtoget, opretter en ny bankafstemning og regneark og kører Standard for sammenholdningsregelsæt.  Denne funktion automatiserer processen indtil det punkt, hvor der er posteringer, som skal afstemmes manuelt.  Standardindstillingen på bankkontoen anvendes ved import.
-
 
 
 

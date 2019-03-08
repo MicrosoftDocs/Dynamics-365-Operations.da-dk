@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere et eksternt katalog til PunchOut e-indkøb"
-description: "Dette emne beskriver brugen af et eksternt katalog eller punchout-katalog til at indsamle oplysninger tilbud fra en leverandør og føje dem til en rekvisition."
+title: Konfigurere et eksternt katalog til PunchOut e-indkøb
+description: Dette emne beskriver brugen af et eksternt katalog eller punchout-katalog til at indsamle oplysninger tilbud fra en leverandør og føje dem til en rekvisition.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368162"
 ---
-
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurere et eksternt katalog til PunchOut e-indkøb
 
 [!include [banner](../includes/banner.md)]
 
-Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations, juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
+Ved hjælp af det eksterne katalog kan du sikre, at oplysningerne om produkt og pris, som du derefter behandler i Dynamics 365 for Finance and Operations juli 2017, er nøjagtige og ajourførte. Rekvisitionen kan derefter godkendes og konverteres til en indkøbsordre, og en ordre kan afgives hos leverandøren.
 
 Når det eksterne katalog er konfigureret, og medarbejderen forbereder en rekvisition, er der mulighed for at omdirigere til et eksternt websted, det eksterne katalog, og returnere indkøbskurven, der er oprettet på det eksterne websted. Denne meddelelse er baseret på cXML-protokollen og skal være konfigureret mellem systemerne for den købende og den sælgende organisation.
 
@@ -55,16 +54,17 @@ Det eksterne katalog skal gøre det muligt for en medarbejder, der angiver en in
 Dette afsnit indeholder flere detaljer om opgave 4 i forrige afsnit.
 
 1. Angiv et navn og en beskrivelse for leverandørens eksterne katalog. Det navn, du angiver, vises i indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Medarbejderne kan klikke på indkøbsvognen for at åbne kataloget på leverandørens eksterne katalogwebsted.
-2. Tilføj et billede ved hjælp af handlingen **Eksternt katalogbillede**. Billedet vises på indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Bemærk, at billedets bredde og højde skal være ens. Ellers vises billedet ikke korrekt.
+2. Tilføj et billede ved hjælp af handlingen **Eksternt katalogbillede**. Billedet vises på indkøbsvognen, der repræsenterer det eksterne katalog, der vises for medarbejdere, som opretter en rekvisition. Bemærk, at billedets bredde og højde skal være ens. Ellers vises billedet ikke korrekt.
 3. Vælg, om leverandørens eksterne katalogwebsted skal vises i det samme browservindue, hvor medarbejderen har oprettet rekvisitionen, eller om det åbnes i et nyt vindue.
 4. Vælg leverandøren for kataloget. På listen **Juridiske enheder** er der en række for hver juridiske enhed, hvor leverandøren er oprettet. Hvis brugere skal kunne anmode om produkter direkte fra leverandørkataloget i visse juridiske enheder, men ikke andre, kan du bruge knappen **Udeluk adgang** eller **Tillad adgang** for hver juridiske enhed, hvor kataloget skal være eller ikke være tilgængeligt.
 5. I feltet **Standardudløb (dage)** skal du angive antallet af dage, hvor tilbuddet fra det eksterne katalog er gyldigt og kan bruges til køb hos den eksterne leverandør. Når et tilbud er oprettet og hentet fra leverandørens eksterne katalogwebsted, er tilbuddet gyldigt med virkning fra den aktuelle systemdato og forbliver gyldigt i det antal dage, du angiver i dette felt.
-6. Klik på knappen **Tilføj** for at starte tilknytning af indkøbskategorier til det eksterne katalog. Vælg derefter en kategori på listen Kategorinavn. Listen over kategorier er et undersæt af indkøbskategorier, som leverandøren er knyttet til i de juridiske enheder, der er konfigureret for leverandøren.
+6. Klik på knappen **Tilføj** for at starte tilknytning af indkøbskategorier til det eksterne katalog.Vælg derefter en kategori på listen Kategorinavn. Listen over kategorier er et undersæt af indkøbskategorier, som leverandøren er knyttet til i de juridiske enheder, der er konfigureret for leverandøren.
 [!NOTE]
-Indkøbspolitikker bruges til at tillade eller begrænse adgang til kategorier for den juridiske indkøbsenhed eller modtagende driftsenhed. Punchout til et eksternt katalog kræver, at der er tilladt adgang til mindst en af de indkøbskategorier, som er knyttet til kataloget.
+Indkøbspolitikker bruges til at tillade eller begrænse adgang til kategorier for den juridiske indkøbsenhed eller modtagende driftsenhed.Punchout til et eksternt katalog kræver, at der er tilladt adgang til mindst en af de indkøbskategorier, som er knyttet til kataloget.
 7. Konfigurer cXML-meddelelsen om opsætningsanmodning, der skal sendes til leverandøren. Det automatisk genererede meddelelsesformat er den minimale skabelonen, der kræves for at starte en session. Udfyld værdier for koderne.
 
-Du kan til enhver tid genindlæse den systemgenererede meddelelsesskabelon ved at klikke på **Gendan meddelelsesformat**. Bemærk, at hvis du gendanner meddelelsesformatet, bliver den aktuelle meddelelse erstattet af det automatisk genererede meddelelsesformat, som har tomme koder.
+Du kan til enhver tid genindlæse den systemgenererede meddelelsesskabelon ved at klikke på **Gendan meddelelsesformat**. 
+Bemærk, at hvis du gendanner meddelelsesformatet, bliver den aktuelle meddelelse erstattet af det automatisk genererede meddelelsesformat, som har tomme koder.
 
 ### <a name="cxml-setup-message"></a>cXML-konfigurationsmeddelelse
 Nedenfor kan du se en beskrivelse af de koder, der er inkluderet i skabelonen:
@@ -88,7 +88,7 @@ Leverandøren kan have et behov for at modtage et ydre element i opsætning af a
 Yderligere oplysninger om cXML-protokollen finder du i http://cxml.org/.
 
 ## <a name="post-back-message"></a>Tilbagesendelsesmeddelelse
-Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Finance and Operations. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen. Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje:
+Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, når brugeren tjekker ud fra det eksterne websted og vender tilbage til Finance and Operations. Tilbagesendelsesmeddelelser kan ikke konfigureres. Meddelelserne er baseret på definitionen af cXML-protokollen.Her er de oplysninger, der kan være en del af tilbagesendelsesmeddelelsen, der modtages på en rekvisitionslinje:
 
 | Meddelelse modtaget fra leverandør | Kopieret til rekvisitionslinje i Finance and Operations|
 |------------------------------|----------------------------------------------------------|
@@ -106,5 +106,4 @@ Tilbagesendelsesmeddelelsen er den meddelelse, der modtages fra leverandøren, n
 Slet et eksternt katalog med handlingen Slet på siden.
 
 Hvis der er anmodet om et produkt fra det eksterne kreditorkatalog, kan det eksterne kreditorkatalog ikke slettes. I stedet er status for det eksterne leverandørkatalog sat til inaktiv. Hvis du vil fjerne adgangen til webstedet for det eksterne leverandørkatalog uden at slette det, kan du ændre status for det eksterne katalog til Inaktiv.
-
 

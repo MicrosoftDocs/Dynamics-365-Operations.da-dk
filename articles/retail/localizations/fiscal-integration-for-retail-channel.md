@@ -1,13 +1,13 @@
 ---
-title: Regnskabsintegration for detailkanal
-description: Dette emne indeholder en oversigt over regnskabsintegrationen for Retail POS.
+title: Oversigt over regnskabsintegration for detailkanaler
+description: Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -15,122 +15,104 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c852d095505abecbd44d29e9e7b53875e9069def
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377129"
 ---
-# <a name="fiscal-integration-for-retail-channel"></a>Regnskabsintegration for detailkanal
+# <a name="overview-of-fiscal-integration-for-retail-channels"></a>Oversigt over regnskabsintegration for detailkanaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder en oversigt over funktionen til regnskabsintegration, der er tilgængelig i Microsoft Dynamics 365 for Retail. Regnskabsintegrationsfunktionen er en struktur, der er udviklet til at understøtte lokal regnskabslovgivning, som har til formål at hindre svindel i detailbranchen. Typiske scenarier, som regnskabsintegrationen kan omfatte:
+## <a name="introduction"></a>Introduktion
 
-- Udskrivning af en regnskabskvittering, som gives til kunden.
-- Sikring af indsendelse af de oplysninger, der vedrører salg og returneringer i POS til en ekstern tjeneste, der leveres af myndigheden.
-- Brug af databeskyttelse med en digital signatur, der er godkendt af myndigheden.
+Dette emne indeholder en oversigt over de regnskabsintegrationsfunktioner, der findes i Microsoft Dynamics 365 for Retail. Regnskabsintegration omfatter integration med forskellige regnskabsenheder og -tjenester, der muliggør regnskabsregistrering af detailsalg i overensstemmelse med lokal regnskabslovgivning, som har til formål at forhindre momssvindel i detailbranchen. Her er nogle typiske scenarier, som kan adresseres ved hjælp af regnskabsintegrationen: 
 
-Dette emne indeholder retningslinjer for konfiguration af regnskabsintegration, så brugerne kan udføre følgende opgaver. 
+- Registrere et detailsalg på en regnskabsenhed, der er knyttet til Retail POS, f.eks. en bonprinter, og udskrive en regnskabskvittering til kunden.
+- Sende oplysninger, der er relateret til salg og returvarer, som er behandlet i Retail POS, sikkert til en ekstern webtjeneste, der styres af skattemyndighederne.
+- Hjælpe med at sikre, at salgstransaktionsdata ikke kan ændres, ved hjælp af digitale signaturer.
 
-- Konfigurere regnskabsforbindelser, som er regnskabsenheder eller -tjenester, der bruges til regnskabsmæssig registrering som lagring, digitale signaturer og beskyttet indsendelse af regnskabsdata.
-- Konfigurere den dokumentudbyder, der definerer en outputmetode og en algoritme til generering af regnskabsdokumenter.
-- Konfigurere den regnskabsmæssige registreringsproces, som definerer en række trin og en gruppe af forbindelser, der bruges på hvert trin.
-- Tildele regnskabsregistreringsprocesser til POS-funktionalitetsprofiler.
-- Tildele tekniske connectorprofiler, enten til hardwareprofiler (til de lokale regnskabsforbindelser) eller til POS-funktionalitetsprofiler (til andre regnskabsconnectortyper).
+Regnskabsintegrationsfunktionen i Retail er en struktur, der indeholder en almindelig løsning til yderligere udvikling og tilpasning af integrationen mellem Retail POS og regnskabsenheder og -tjenester. Funktionen indeholder også eksempler på regnskabsintegration, der understøtter grundlæggende detailscenarier for bestemte lande eller områder, og som kan bruges sammen med bestemte regnskabsenheder eller -tjenester. Et eksempel på regnskabsintegration består af flere udvidelser af Retail-komponenter og medtages i Retail SDK'et (Software Development Kit). Du kan finde flere oplysninger om de eksempler på regnskabsintegration, der er tilgængelige i Retail SDK'et, i [Eksempler på regnskabsintegration i Retail SDK'et](#fiscal-integration-samples-in-the-retail-sdk). Du kan finde oplysninger om, hvordan du installerer og bruger Retail SDK'et, i [Oversigt over Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## <a name="fiscal-integration-execution-flow"></a>Kørselsproces for regnskabsintegration
-Følgende eksempel viser den almindelige kørselsproces for regnskabsintegration.
+For at understøtte andre scenarier, der ikke understøttes af et regnskabsintegrationseksempel, for at integrere Retail POS med andre regnskabsenheder eller -tjenester eller for at opfylde kravene i andre lande eller områder, skal du enten udvide et eksisterende regnskabsintegrationseksempel eller oprette et nyt eksempel ved hjælp af et eksisterende eksempel.
 
-1. Initialisering af regnskabsregistreringprocessen.
-  
-   Når du har udført nogle handlinger, hvor regnskabsregistrering er nødvendig, f.eks. når en detailtransaktion er fuldført, knyttes regnskabsregistreringsprocessen til den aktuelle POS-funktionalitetsprofil.
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Regnskabsregistreringsprocessen og eksempler på regnskabsintegration for regnskabsenheder
 
-1. Søg efter en regnskabsconnector.
-   
-   For hvert trin i regnskabsregistreringen, der indgår i regnskabsregistreringsprocessen, sammenligner systemet listen over regnskabsconnectorer. Disse connectorer har en funktionel profil, der indgår i angivne connectorgruppe, med en liste over connectorer, der har en teknisk profil knyttet til den aktuelle hardwareprofil (kun for en connectortype, der er lig med **Lokal**) eller til den aktuelle POS-funktionalitetsprofil (for andre typer af connectorer).
-   
-1. Udfør regnskabsintegrationen.
+En regnskabsregistreringsproces i Retail POS kan bestå af et eller flere trin. Hvert trin omfatter regnskabsregistrering af bestemte detailtransaktioner eller -hændelser i én regnskabsenhed eller -tjeneste. Følgende løsningskomponenter deltager i regnskabsregistreringen i en regnskabsenhed, der er forbundet med en hardwarestation:
 
-   Systemet udfører alle nødvendige handlinger, der er defineret af en assembly, der er knyttet til den fundne connector. Dette gøres i overensstemmelse med indstillingerne for den funktionelle profil og den tekniske profil, der blev fundet i det forrige trin for denne connector.
+- **Udvidelse for CRT (Commerce runtime)** – Denne komponent serialiserer detailtransaktions-/hændelsesdata i det format, der også bruges til interaktion med regnskabsenheden, analyserer svar fra regnskabsenheden og lagrer svarene i kanaldatabasen. Filtypenavnet definerer også bestemte transaktioner og hændelser, der skal registreres. Denne komponent omtales ofte som en *regnskabsdokumentudbyder*.
+- **Udvidelse til hardwarestation** – Denne komponent initialiserer kommunikationen med regnskabsenheden, sender anmodninger og direkte kommandoer til regnskabsenheden ud fra detailtransaktions-/hændelsesdata, der er hentet fra regnskabsdokument, og modtager svar fra regnskabsenheden. Denne komponent omtales ofte som en *regnskabsconnector*.
 
-## <a name="setup-needed-before-using-fiscal-integration"></a>Nødvendig konfiguration før brug af regnskabsintegration
-Før du bruger funktionen til regnskabsintegration, skal du definere følgende indstillinger:
+Et eksempel på regnskabsintegration for en regnskabsenhed indeholder CRT-udvidelsen eller hardwarestationsudvidelsen til henholdsvis en udbyder af regnskabsdokumenter og en regnskabsconnector. Det indeholder også følgende komponentkonfigurationer:
 
-- Definer nummerserien på siden **Detailparametre** for regnskabsfunktionens profilnummer.
-  
-- Definer nummerserierne på siden **Delte parametre for detail** for følgende referencer:
-  
-  - Regnskabsteknisk profilnummer
-  - Regnskabsconnectorgruppenummer
-  - Registreringsprocesnummer
+- **Konfiguration af udbydere af regnskabsdokumenter** – Denne konfiguration definerer en outputmetode til og et format for regnskabsdokumenter. Den indeholder også en datatilknytning til moms og betalingsmetoder for at gøre data fra Retail POS kompatible med de værdier, der er foruddefineret i regnskabsenhedens firmware.
+- **Konfiguration af regnskabsconnectoren** – Denne konfiguration definerer den fysiske kommunikation med den ønskede regnskabsenhed.
 
-- Opret en **Regnskabsconnector** i **Retail > Konfiguration af kanal > Regnskabsintegration > Regnskabsconnectorer** for hver enhed eller tjeneste, du planlægger at bruge med henblik på regnskabsintegration.
+En regnskabsregistreringsproces for et bestemt POS-kasseapparat er defineret af en tilsvarende indstilling i POS-funktionalitetsprofilen. Du kan finde flere oplysninger om, hvordan du kan konfigurere en regnskabsregistreringsproces, overføre konfigurationer for regnskabsdokumentudbyderen og regnskabsconnectoren og ændre deres parametre, under [Konfigurere en regnskabsregistreringsproces](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Opret en **Udbyder af regnskabsdokumenter** i **Retail > Konfiguration af kanal > Regnskabsintegration > Udbydere af regnskabsdokumenter** for alle regnskabsconnectorer. Datatilknytning betragtes som en del af regnskabsdokumentudbyderen. Hvis du vil oprette andre datatilknytninger for samme connector (som f.eks. specifik lovgivning), skal du oprette forskellige regnskabsdokumentudbydere.
+Følgende eksempel viser en typisk regnskabsregistreringskørsel af processen for en regnskabsenhed. Processen starter med en hændelse i POS (f.eks. afslutning af en salgstransaktion) og implementerer følgende sekvens af trin:
 
-- Opret en **Funktionel profil for connector** i **Retail > Konfiguration af kanal > Regnskabsintegration > Funktionelle profiler for connector** for hver regnskabsdokumentudbyder.
-  - Vælg et connectornavn.
-  - Vælg en dokumentudbyder.
-  - Angiv indstillinger for momssatser under fanen **Konfiguration af tjeneste**.
-  - Angiv tilknytning af momskoder og betalingsmiddeltype under fanen **Tilknytning af data**.
+1. POS anmoder om et regnskabsdokument fra CRT.
+2. CRT bestemmer, om den aktuelle hændelse kræver regnskabsregistrering.
+3. CRT identificerer baseret på indstillingerne for regnskabsregistreringsprocessen en regnskabsconnector og tilsvarende regnskabsdokumentudbyder, der skal bruges til regnskabsregistreringen.
+4. CRT kører regnskabsdokumentudbyderen, der genererer et regnskabsdokument (f.eks. et XML-dokument), der repræsenterer detailtransaktionen eller -hændelsen.
+5. POS sender regnskabsdokumentet, som CRT forbereder til en hardwarestation.
+6. Hardwarestationen kører regnskabsconnectoren, der behandler regnskabsdokumentet og oplyser regnskabsenheden eller -tjenesten om det.
+7. POS analyserer svaret fra regnskabsenheden eller -tjenesten for at afgøre, om regnskabsregistreringen blev udført korrekt.
+8. CRT gemmer svaret i kanaldatabasen.
 
-  #### <a name="examples"></a>Eksempler 
+![Løsningsskema](media/emea-fiscal-integration-solution.png "Løsningsskema")
 
-  |  | Format | Eksempel | 
-  |--------|--------|--------|
-  | Indstillinger for momssats | værdi : VATrate | 1 : 2000, 2 : 1800 |
-  | Tilknytning af momskoder | VATcode : værdi | vat20 : 1, vat18 : 2 |
-  | Tilknytning af betalingsmiddeltyper | TenderTyp : værdi | Kontant : 1, Kort : 2 |
+## <a name="error-handling"></a>Fejlhåndtering
 
-- Opret **Regnskabsconnectorgrupper** i **Retail > Konfiguration af kanal > Regnskabsintegration > Regnskabsconnectorgruppe**. En connectorgruppe er et undersæt af funktionelle profiler, der er knyttet til regnskabsconncetorer, der udfører samme funktioner og bruges på samme stadie i en regnskabsregistreringsproces.
+Regnskabsintegrationen struktur indeholder følgende indstillinger til håndtering af fejl under regnskabsregistreringen:
 
-   - Tilføj funktionelle profiler til connectorgruppen. Klik på **Tilføj** på siden **Funktionelle profiler**, og vælg et profilnummer.
-   - Hvis du vil afbryde brugen af den funktionelle profil, kan du indstille **Deaktiver** til **Ja**. 
-   
-     Denne ændring påvirker kun den aktuelle connectorgruppe. Du kan fortsætte med at bruge den samme funktionelle profil i andre connectorgrupper.
+- **Prøv igen** – Operatører kan bruge denne indstilling, så fejlen kan rettes hurtigt og regnskabsregistreringen kan køre igen. Denne indstilling kan f.eks. bruges, når regnskabsenheden ikke er tilsluttet, bonprinteren mangler papir, eller der er papirstop i bonprinteren.
+- **Annuller** – Med denne indstilling kan operatører udskyde regnskabsregistreringen af den aktuelle transaktion eller hændelse, hvis noget mislykkes. Når registreringen udsættes, kan operatøren fortsat arbejde på POS og kan udføre alle handlinger, som regnskabsregistreringen ikke indgår i. Når en hændelse, der kræver brug af regnskabsregistreringen, indtræffer i POS (f.eks. når en ny transaktion åbnes), åbnes dialogboksen til håndtering af fejlen automatisk med besked til operatøren om, at den tidligere transaktion ikke blev registreret korrekt, og at fejlhåndteringsindstillingerne skal angives.
+- **Spring over** – Operatører kan bruge denne indstilling, når regnskabsregistreringen kan udelades under bestemte betingelser og normal drift kan fortsættes på POS. F.eks. kan denne indstilling bruges, når en salgstransaktion, som regnskabsregistreringen mislykkedes for, kan registreres i en særlig papirkladde.
+- **Markér som registreret** – Operatører kan bruge denne indstilling, når transaktionen er blevet registreret i regnskabsenheden (f.eks. når en regnskabskvittering et blevet udskrevet), men der opstod en fejl, da regnskabssvaret blev gemt i kanaldatabasen.
 
-     >[!NOTE]
-     > I en connectorgruppe kan hver regnskabsconnector kun have én funktionel profil.
+> [!NOTE]
+> Indstillingerne **Spring over** og **Markér som registreret** skal aktiveres i regnskabsregistreringsprocessen, før de bruges. Desuden skal operatørerne have tildelt tilsvarende rettigheder.
 
-- Opret en **Teknisk profil for connector** i **Retail > Konfiguration af kanal > Regnskabsintegration > Tekniske profiler for connector** for hver regnskabsconnector.
-  - Vælg et connectornavn.
-  - Vælg en connectortype: 
-      - **Lokal** - Indstil denne type til fysiske enheder eller programmer, der er installeret på en lokal computer.
-      - **Intern** - Indstil denne type til regnskabsenheder og -tjenester, der er tilknyttet Retail Server.
-      - **Ekstern** - Til eksterne regnskabstjenester som f.eks. en webportal, der er leveret af en skattemyndighed.
-    
-  - Angiv indstillinger under fanen **Forbindelse**.
+Indstillingerne **Spring over** og **Markér som registreret** gør det muligt for infokoder at hente nogle specifikke oplysninger om fejlen, f.eks. årsagen til fejlen eller en begrundelse for at springe regnskabsregistreringen over eller markere transaktionen som registreret. Du kan finde flere oplysninger om, hvordan du konfigurerer fejlhåndteringsparametre, i [Angive indstillinger for fejlhåndtering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > En opdateret version af en konfiguration, der blev indlæst tidligere, indlæses for både funktionelle og tekniske profiler. Hvis en passende connector eller dokumentudbyder allerede er i brug, får du besked. Som standard gemmes alle ændringer, der er oprettet manuelt i funktionelle og tekniske profiler. For at tilsidesætte disse profiler med standardsættet af parametre fra en konfiguration, skal du klikke på **Opdater** på siden **Funktionelle profiler for connector** og siden **Tekniske profiler for connector**.
- 
-- Opret en **Proces for regnskabsregistrering** i **Retail > Konfiguration af kanal > Regnskabsintegration > Processer for regnskabsregistrering** for hver entydige proces til en regnskabsintegration. En registreringsproces defineres af rækkefølgen af trinnene i registreringen og den connectorgruppe, der er brugt i hvert trin. 
-  
-  - Føj registreringstrin til processen:
-      - Klik på **Tilføj**.
-      - Vælg en connectortype.
-      
-      >[!NOTE]
-      > Dette felt definerer, hvor systemet søger i en teknisk profil for connectoren, enten i hardwareprofiler for connectortypen at skrive **Lokal** eller i POS-funktionalitetsprofiler for andre regnskabsconnectortyper.
-      
-   - Vælg en connectorgruppe.
-   
-     >[!NOTE]
-     > Klik på **Valider** for at kontrollere integriteten af registreringsprocesstrukturen. Det anbefales, at der foretages valideringer i følgende tilfælde:
-       >- Ved en ny registreringsproces, når alle indstillinger er fuldført, herunder binding til POS-funktionalitetsprofiler og hardwareprofiler.
-       >- Når du har foretaget opdateringer af en eksisterende registreringsproces.
+## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagring af regnskabssvar i regnskabstransaktion
 
--  Bind regnskabsregistreringsprocesser til POS-funktionalitetsprofiler i **Retail > Konfiguration af kanal > POS-opsætning > POS-profiler > Funktionalitetsprofiler**.
-   - Klik på **Rediger**, og vælg et **Procesnummer** under fanen **Regnskabsregistreringsproces**.
-- Bind tekniske connectorprofiler til hardwareprofiler i **Retail > Konfiguration af kanal > POS-opsætning > POS-profiler > Hardwareprofiler**.
-   - Klik på **Rediger**, og klik derefter på **Ny** under fanen **Regnskabsteknisk profil**.
-   - Vælg en teknisk connectorprofil i feltet **Profilnummer**.
-   
-     >[!NOTE]
-     > Du kan tilføje flere tekniske profiler til en hardwareprofil. Men dette understøttes ikke, hvis en hardwareprofil har mere end ét skæringspunkt med en connectorgruppe. Hvis du vil undgå forkerte indstillinger, anbefales det, at du validerer registreringsprocessen, når du har opdateret alle hardwareprofiler.
+Når regnskabsregistrering af en transaktion eller en hændelse er foretaget, oprettes en regnskabstransaktion i kanaldatabasen og knyttes til den oprindelige transaktion eller hændelse. På samme måde, hvis indstillingen **Spring over** eller **Markér som registreret** er valgt for en mislykket regnskabsregistrering, gemmes disse oplysninger i en regnskabstransaktion. En regnskabstransaktion indeholder regnskabssvaret fra regnskabsenheden eller -tjenesten. Hvis regnskabsregistreringsprocessen består af flere trin, oprettes der en regnskabstransaktion for hvert trin i processen, der resulterede i en fuldført eller mislykket regnskabsregistrering.
 
+Regnskabstransaktionerne overføres til Retail Headquarters efter *P-job* sammen med detailtransaktioner. I oversigtspanelet **Regnskabstransaktioner** på siden **Transaktioner i detailbutik** kan du se de regnskabstransaktioner, der er knyttet til detailtransaktioner.
+
+En regnskabstransaktion indeholder følgende oplysninger:
+
+- Detaljer om regnskabsregistreringsprocessen (proces, connectorgruppe, connector osv.). Serienummeret for regnskabsenheden gemmes også i feltet **Kassenummer**, hvis disse oplysninger er inkluderet i regnskabssvaret.
+- Status for regnskabsregistreringen: **Fuldført** for fuldført registrering, **Sprunget over**, hvis operatøren har valgt indstillingen **Spring over** for en mislykket registrering eller **Markeret som registreret**, hvis operatøren har valgt indstillingen **Markér som registreret**.
+- Infokodetransaktioner, der er relateret til en valgt regnskabstransaktion. Hvis du vil se infokodetransaktioner, skal du i oversigtspanelet **Regnskabstransaktioner** vælge en regnskabstransaktion, der har statussen **Sprunget over** eller **Markeret som registreret**, og derefter vælge **Infokodetransaktioner**.
+
+## <a name="fiscal-texts-for-discounts"></a>Regnskabstekster for rabatter
+
+Nogle lande eller områder har særlige krav om yderligere tekster, der skal udskrives på regnskabskvitteringer, når der anvendes forskellige rabatter. Med regnskabsintegrationsfunktionen kan du oprette en særlig tekst for en rabat, der udskrives efter en rabatlinje på en regnskabskvittering. For manuelle rabatter kan du konfigurere en regnskabstekst for den infokode, der er angivet som **Produktrabat**-infokoden i POS-funktionalitetsprofilen. Du kan finde flere oplysninger om, hvordan du opretter regnskabstekster for rabatter, i [Oprette regnskabstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Udskrivning af X- og Z-regnskabsrapporter
+
+Funktionen til regnskabsintegration understøtter generering af kasseoptællingsopgørelser, der er specifikke for den integrerede regnskabsenhed eller -tjeneste:
+
+- Nye knapper, der kører tilsvarende operationer, skal føjes til POS-skærmlayoutet. Du kan finde flere oplysninger i [Konfigurere X/Z-regnskabsrapporter fra POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- I regnskabsintegrationseksemplet skal disse operationer sammenholdes med de tilsvarende handlinger for regnskabsenheden.
+
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskabsintegration i Retail SDK
+
+Følgende regnskabsintegrationseksempler er aktuelt tilgængelige i det Retail SDK, der er udgivet med Retail:
+
+- [Eksempel på integration af bonprinter for Italien](emea-ita-fpi-sample.md)
+- [Eksempel på integration af bonprinter for Polen](emea-pol-fpi-sample.md)
+
+Følgende regnskabsintegrationsfunktioner er også tilgængelige i Retail SDK, men kan i øjeblikket ikke udnytte regnskabsintegrationsstrukturen. Overførsel af denne funktion til regnskabsintegrationsstrukturen er planlagt til senere opdateringer.
+
+- [Digital signatur for Frankrig](emea-fra-cash-registers.md)
+- [Digital signatur for Norge](emea-nor-cash-registers.md)
+- [Eksempel på integration med kontrolenhed for Sverige](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

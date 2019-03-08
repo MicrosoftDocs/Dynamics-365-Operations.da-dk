@@ -1,14 +1,14 @@
 ---
-title: "Økonomiske konsolideringer og valutaomregning"
-description: "I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans."
+title: Økonomiske konsolideringer og valutaomregning
+description: I dette emne beskrives økonomisk konsolideringer og valutaomregning i Finans.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353994"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>Økonomiske konsolideringer og valutaomregning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne fører dig gennem den fremgangsmåde, som både Microsoft Dynamics 365 for Finance and Operations og Økonomirapportering bruger til konsolideringer. Emnet indeholder scenarier, der vedrører rapportering i flere regnskaber, aggregering, eliminering og minoritetsinteresse. Det forklarer også, hvordan du håndterer særlige situationer, f.eks. scenarier, hvor juridiske enheder har forskellige regnskabsperioder eller forskellige kontoplaner.
+Dette emne gennemgår den fremgangsmåde, som både Microsoft Dynamics 365 for Finance and Operations og Økonomirapportering bruger til konsolideringer. Emnet indeholder scenarier, der vedrører rapportering i flere regnskaber, aggregering, eliminering og minoritetsinteresse. Det forklarer også, hvordan du håndterer særlige situationer, f.eks. scenarier, hvor juridiske enheder har forskellige regnskabsperioder eller forskellige kontoplaner.
 
 Dette emne er skrevet for brugere og funktionelle konsulenter, og det antages, at læserne har et generelt kendskab til Finance and Operations og Økonomirapportering. Grundlæggende opsætning er ikke omfattet.
 
@@ -181,4 +180,3 @@ Her er nogle af de konsolideringsscenarier, som Økonomirapportering understøtt
 
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 Oplysninger om scenarier, hvor du kan generere konsoliderede regnskaber, finder du i [Generere konsoliderede regnskaber](./generating-consolidated-financial-statements.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Startside for Finans og Økonomirapportering"
+title: Startside for Finans og Økonomirapportering
 description: Brug finansregnskabet til at definere og administrere finansposter for den juridiske enhed.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: da-dk
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363355"
 ---
-
 # <a name="general-ledger"></a>Finans 
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,7 @@ Gå til [frigivelsesnoterne](https://docs.microsoft.com/en-us/business-applicati
 
 ### <a name="videos"></a>Videoer
 
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Blogs
 
@@ -68,10 +67,9 @@ Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsn
 
 Der er mange opslag om Finans i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Finans, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
 
-[Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.
 
 #### <a name="community-blogs"></a>Fællesskabsblogge
 
-- [Værd at vide om finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
+- [Værd at vide om Finans i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 

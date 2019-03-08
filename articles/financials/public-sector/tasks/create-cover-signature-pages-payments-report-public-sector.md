@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
-description: "Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises."
+description: Når du opretter for- og signatursider til en betalingsrapport, kan du angive, hvilke oplysninger der skal vises.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendCoverPageLayout
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 70a3dc9b47c37b6b727c783d7a8ca53496a7d664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ea2ff4416736993f63863f3059e244998026d1cd
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370265"
 ---
 # <a name="create-cover-and-signature-pages-for-a-payments-report-for-the-public-sector"></a>Oprette bagside- og signatursider for en betalingsrapport for den offentlige sektor
 
@@ -39,5 +39,4 @@ Når du opretter for- og signatursider til en betalingsrapport, kan du angive, h
 7. Valgfrit: Markér afkrydsningsfeltet Udskriv titel for at udskrive titlen på rapporten.
     * Tilføj eventuelt flere navne, og vælg de ønskede indstillinger.  
 8. Klik på Gem.
-
 

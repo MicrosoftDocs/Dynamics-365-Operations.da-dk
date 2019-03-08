@@ -1,13 +1,13 @@
 ---
-title: "Indkøb og forsyning i den offentlige sektor i Frankrig"
-description: "I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics."
+title: Indkøb og forsyning i den offentlige sektor i Frankrig
+description: I denne artikel forklares, hvordan de standardfunktioner, der vedrører indkøb og forsyning, suppleres for franske enheder i den offentlige sektor. Disse funktioner bruges til at opfylde kravene i Code des Marchés Publics.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7cf70c9dace0a1e8239ae9964eed853244c7c38e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 275e7926eb5ade1b7b03bd997a6fdc86d9f0bb20
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370170"
 ---
-
 # <a name="procurement-and-sourcing-in-the-public-sector-in-france"></a>Indkøb og forsyning i den offentlige sektor i Frankrig
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,6 @@ Du kan oprette købsaftaleklassifikationer, der føjer administrative felter til
 -   Hvis du vil føje oplysninger om underleverandører til købsaftaler, skal du vælge indstillingen **Underleverandører** i købsaftaleklassifikationen.  Købsaftaler kan have en primær kontrahent, medkontrahenter og underleverandører. Den primære kontrahent kan tildeles til den overordnede købsaftale og en medkontrahent eller underleverandør kan tildeles til specifikke underordnede aftaler.
 -   Hvis du vil føje oplysninger om certificeringer for leverandører til købsaftaler, skal du vælge indstillingen **Certificeringer** i købsaftaleklassifikationen. Certificeringsoplysninger kan bruges til at oprette en rapport, som du kan bruge til at overvåge kreditorens overholdelse af bestemte krav.
 -   Hvis du vil føje oplysninger om milepæle og opgaver til købsaftaler, skal du vælge indstillingen **Aktiviteter** i købsaftaleklassifikationen.
-
 
 
 

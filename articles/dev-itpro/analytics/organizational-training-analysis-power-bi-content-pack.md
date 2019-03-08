@@ -1,13 +1,13 @@
 ---
-title: Power BI-indhold til organisatorisk uddannelse
-description: Dette emne beskriver Finance and Operations - Power BI-indhold til organisatorisk uddannelse.
+title: Power BI-indhold til organisationsuddannelse
+description: Dette emne beskriver Finance and Operations - Power BI-indhold til organisationsuddannelse.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367518"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Power BI-indhold til organisatorisk uddannelse
+# <a name="organizational-training-power-bi-content"></a>Power BI-indhold til organisationsuddannelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver Finance and Operations - Power BI-indhold til organisatorisk uddannelse.
+Dette emne beskriver Finance and Operations - Power BI-indhold til organisationsuddannelse.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter, der er inkluderet i indholdspakken
 Når du har knyttet indholdspakken til dine data i Finance and Operations, viser rapporterne din organisations data. Hvis du aldrig har brugt Microsoft Power BI før, kan du finde oplysninger om det under [Guidet indføring i Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). De rapporter, der er inkluderet i indholdspakken, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
@@ -59,4 +58,3 @@ Finance and Operations-data bruges til at udfylde rapporterne i indholdspakken t
 | Training\_Position        | Stilling, titel og tilsvarende fuld tid (fuldtidsansat)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Fornavn, efternavn og fulde navn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel og anciennitetsdato                                         | Training\_CourseAttendees |
-

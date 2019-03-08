@@ -1,13 +1,13 @@
 ---
 title: Gennemsnitskostdato
-description: "Gennemsnitskostdato er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor lagerafgange værdisættes til den gennemsnitlige værdi af de varer, der modtages på lageret, for hver enkelt dag i lagerlukningsperioden."
+description: Gennemsnitskostdato er en lagermodel, der er baseret på princippet for vægtet gennemsnit, hvor lagerafgange værdisættes til den gennemsnitlige værdi af de varer, der modtages på lageret, for hver enkelt dag i lagerlukningsperioden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355397"
 ---
-
 # <a name="weighted-average-date"></a>Gennemsnitskostdato
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ Lagerposteringer, der forlader lageret, f.eks. salgsordrer, lagerkladder og prod
 
 Udligninger er lagerlukningsbogføringer, der bruges til at justere afgangene til det korrekte vægtede gennemsnit fra og med lukningsdatoen. 
 
-**Bemærk:** Se artikel om lagerlukning for yderligere oplysninger om udligninger. I følgende eksempler illustreres virkningen af at bruge vægtet gennemsnit i fem konfigurationer:
+**Bemærk:** Se artikel om lagerlukning for yderligere oplysninger om udligninger. I følgende eksempler illustreres virkningen af at bruge vægtet gennemsnit i fem konfigurationer:
 
 -   Direkte udligning for gennemsnitskostdato, når indstillingen **Medtag fysisk værdi** ikke bruges
 -   Opsummeret udligning for gennemsnitskostdato, når indstillingen **Medtag fysisk værdi** ikke bruges
@@ -195,7 +194,6 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 -   Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Id'erne angiver rækkefølgen af lagertransaktionsbogføringer på tidslinjen.
 -   Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
 -   Udligninger, der foretages ved lagerlukningen, angives med stiplede røde pile, der går diagonalt fra en tilgang til en afgang.
-
 
 
 

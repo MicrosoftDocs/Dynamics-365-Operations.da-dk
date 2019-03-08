@@ -1,13 +1,13 @@
 ---
 title: Inddrivelse af moms i Udgiftsstyring
-description: "Dette emne forklarer, hvordan du kan få refunderet beløb fra berettigede momstransaktioner."
+description: Dette emne forklarer, hvordan du kan få refunderet beløb fra berettigede momstransaktioner.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359560"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Inddrivelse af moms i Udgiftsstyring
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Da Arnie er klar til at sende udgiftsrapportdataene til den tredjepartsleverand�
 Arnie skal kontrollere, at udgiftsrapportposteringerne er berettigede for inddrivelse af moms, og at de digitale kvitteringer er vedhæftet rapporterne. For at starte behandlingen af berettigede udgifter til indenlandsk inddrivelse åbner Arnie siden **Udgift med momsopkrævning** og vælger den udgiftsrapport, der kræver godkendelse. Han bekræfter, at kvitteringerne lyder på virksomhedens navn frem for medarbejderens. Ved momsopkrævning skal kvitteringer være udstedt i virksomhedens navn. Arnie kontrollerer derefter, at den korrekte momsgruppe og varemomsgruppe er angivet.
 
 Da Arnie modtager papirkvitteringerne, ændrer han status for udgiftsrapporten til **Klar til opkrævning**. Han kan derefter indsende anmodningen om refusion til den relevante skattemyndighed. I dette tilfælde er skattemyndighederne det amerikanske skattevæsen (IRS - Internal Revenue Service).
-

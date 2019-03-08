@@ -1,14 +1,14 @@
 ---
 title: Styring af detailsalgspriser
-description: Dette emne beskriver begreberne for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail.
+description: I dette emne beskrives begreberne for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362136"
 ---
-
-# <a name="retail-sales-price-management"></a>Styring af detailsalgspriser
+# <a name="retail-sales-price-management"></a>Retail-salgsprisestyring
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder oplysninger om processen for oprettelse og styring af salgspriser i Microsoft Dynamics 365 for Retail. Der fokuseres på de begreber, der er involveret i processen, og om virkningerne af de forskellige konfigurationsindstillinger for salgspriser.
+Dette emne indeholder oplysninger om processen for oprettelse og styring af salgspriserne i Microsoft Dynamics 365 for Retail. Der fokuseres på de begreber, der er involveret i processen, og om virkningerne af de forskellige konfigurationsindstillinger for salgspriser.
 
 ## <a name="terminology"></a>Terminologi
 
@@ -127,7 +126,7 @@ T-shirten sælges for den samme pris (dvs. $15) i både Boston- og Manhattan-but
 
 ## <a name="types-of-prices"></a>Pristyper
 
-I Microsoft Dynamics 365, kan du angive prisen på et produkt tre steder:
+I Microsoft Dynamics 365 kan du angive prisen på et produkt tre steder:
 
 - Direkte for produktet (basisprisen)
 - I en samhandelsaftale for salgspriser
@@ -232,4 +231,3 @@ Programmet til prissætning i detailhandel understøtter desuden **kun** følgen
 
 - Prisen baseres på produktdimensioner i rækkefølge fra den mest specifikke variantpris til den mindst specifikke variantpris til produktmasterprisen. En pris, der er angivet ved hjælp af to produktdimensioner (f.eks. Farve og Størrelse), bruges før en pris, der er angivet kun ved hjælp af en produktdimension (f.eks. Størrelse).
 - Den samme prisgruppe kan bruges til at styre priser og rabatter.
-

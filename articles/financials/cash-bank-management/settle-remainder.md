@@ -1,13 +1,13 @@
 ---
 title: Udlign rest
-description: "Du kan udligne restbeløbet fra udligningsaktivitet ved at anvende dette beløb på en finanskonto."
+description: Du kan udligne restbeløbet fra udligningsaktivitet ved at anvende dette beløb på en finanskonto.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367196"
 ---
-
 # <a name="settle-remainder"></a>Udlign rest
 
 [!include [banner](../includes/banner.md)]
@@ -71,4 +70,3 @@ For at udligne restbeløbet skal du udføre følgende trin:
 7)  Du kan også vælge at oprette en betalingskladde med udligningsrestbeløbet eller blot bogføre det uden en kladde. Vælg **Ja** for **Rediger i kladde** for at oprette en betalingskladde. Du kan redigere den betalingskladde, som du opretter.
 8)  Klik på **Udlign rest**. Hvis du vælger at oprette en kladde, ændres knappen til **Opret kladde**. Klik på **Opret kladde** i stedet.
 9)  Hvis du har oprettet en betalingskladde, åbnes kladdesiden, når du klikker på **Udlign rest**. Der føjes en linje til kladden med restudligningsbeløbet som beløbet og kontoen for udligningsrestbeløbet som modkonto. Hvis du har tilføjet en debitor eller kreditor, så du kan flytte udligningsbeløbet til en anden debitor eller kreditor, føjes der en ekstra linje til kladden, så udligningsbeløbet kan flyttes til den pågældende debitor eller kreditor.
-

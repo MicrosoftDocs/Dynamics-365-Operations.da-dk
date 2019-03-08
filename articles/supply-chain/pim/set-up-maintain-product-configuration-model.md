@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360664"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Konfigurer en produktkonfigurationsmodel
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ I denne artikel beskrives trinnene til oprettelse og oprettelse af en produktkon
 | Test en produktkonfigurationsmodel.                         | Test produktkonfigurationsmodellen enten fra siden **Detaljer om begrænsningsbaseret model til produktkonfiguration** eller fra siden **Liste over produktkonfigurationsmodeller**. Test af produktkonfigurationsmodeller simulerer produktmodelkonfigurationsprocessen, der finder sted under håndteringen af ordren.                                                                                                |
 | Opret en skabelon til produktkonfigurationsmodeller.                | Opret en skabelon til produktkonfigurationsmodeller på siden **Konfigurationsskabeloner**. En konfigurationsskabelon indeholder værdier til attributter i produktkonfigurationsmodellen. Vælg attributværdier på siden **Konfigurer linje**. Du kan vælge at indlæse en skabelon til produktkonfigurationsmodeller under konfiguration af produktmodellen.                                                   |
 | Konfigurer et element.                                          | Produktkonfigurationsmodeller kan konfigureres fra en salgsordre, et salgstilbud, en produktionsordre eller en indkøbsordre.                                                                                                                                                                                                                                                                           |
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Operations-ressourcer
-description: "Operationsressourcer udfører aktiviteterne i et projekt eller en produktionsproces. De kan være af forskellige typer og kan have forskellige egenskaber."
+description: Operationsressourcer udfører aktiviteterne i et projekt eller en produktionsproces. De kan være af forskellige typer og kan have forskellige egenskaber.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366598"
 ---
-
 # <a name="operations-resources"></a>Operations-ressourcer
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Når en ressourcegruppe bruges som en lean arbejdscelle, er kapaciteten for arbe
 
 ## <a name="costing-resources"></a>Efterkalkulerede ressourcer
 Når du definerer en aktivitet som en ruteoperation eller timebudget for et projekt, kan du angive kravene til en bestemt operationsressource eller ressourcegruppe. Men du kan også angive krav til en operationsressource af en bestemt type eller en operationsressource, der har en bestemt funktion eller kompetence. Derfor sker den faktiske ressourcetildeling først, når aktiviteten planlægges, og kapaciteten reserveres. På en ruteoperation kan du derfor angive, at forkalkulation og styklisteberegning skal baseres på en bestemt operationsressource. Denne operationsressource omtales som efterkalkuleret ressource. Du kan også overføre omkostningsarter og operationstider fra den efterkalkulerede ressource til aktiviteten. Når operationen planlægges, bruges forkalkulation og styklisteberegning ved hjælp af den operationsressource, der faktisk er blevet planlagt.
-
 
 
 

@@ -5,9 +5,9 @@ author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361124"
 ---
-
 # <a name="transportation-management-engines"></a>Transportstyringsprogrammer
 
 [!include [banner](../includes/banner.md)]
@@ -79,7 +78,7 @@ Nej, transportstyringsprogrammer, der bruges til at hente de data, som skal brug
 
 | **Bemærk!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transportstyringsprogrammer, der leveres med Finance and Operations, er baseret på data, der hentes fra programmet. Programmer, der opretter forbindelse til eksterne systemer, leveres ikke sammen med Operations. Med det programbaserede udvidelsesmodel kan du dog bygge udvidelser med Visual Studio-værktøjer til Microsoft Dynamics 365 for Finance and Operations. |
+| Transportstyringsprogrammer, der leveres med Finance and Operations, er baseret på data, der hentes fra programmet. Programmer, der opretter forbindelse til eksterne systemer, leveres ikke sammen med Operations. Med den programbaserede udvidelsesmodel kan du dog bygge udvidelser med Microsoft Dynamics 365 for Finance and Operations-værktøjer til Visual Studio. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hvordan kan jeg konfigurere metadata til et transportstyringsprogram?
 Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskellige programtyper.
@@ -90,7 +89,7 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | **Zoneprogram**                                | Kræver, at metadata konfigureres direkte i zonemasteren.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Program til transittid** og **Program til kørte kilometer** | Henter metadataene direkte fra formularen til konfiguration af kørselsprogrammet.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Eksempel på metadata for et satsprogram** Transportstyringsprogrammet kræver identifikation af oprindelsesadressen, stat og land/område for destinationen og start- og slutpunkt for forsendelsen. Når du bruger disse krav, vil metadataene se ud som dataene i tabellen nedenfor. Tabellen indeholder også oplysninger om, hvilken type inputdata er påkrævet.
+  **Eksempel på metadata for et satsprogram** Transportstyringsprogrammet kræver identifikation af oprindelsesadressen, stat og land/område for destinationen og start- og slutpunkt for forsendelsen. Når du bruger disse krav, vil metadataene se ud som dataene i tabellen nedenfor. Tabellen indeholder også oplysninger om, hvilken type inputdata er påkrævet.
 -   Definer disse oplysninger i **Transportstyring** &gt; **Konfiguration** på siden **Satsbasistype**.
 
 | Forløb | Navn                          | Felttype | Datatype | Opslagstype    | Tvungen |
@@ -100,7 +99,6 @@ Metadata til transportstyringsprogrammer konfigureres forskelligt for de forskel
 | 3        | Destination – startpostnummer | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 4        | Destination – slutpostnummer   | Tilknytning | Streng    | Postnummer    | Markeret  |
 | 5        | Destinationsland           | Tilknytning | Streng    | Land/område |           |
-
 
 
 

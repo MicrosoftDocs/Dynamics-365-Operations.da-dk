@@ -1,13 +1,13 @@
 ---
-title: "Forudsætninger for en standardomkostningskonvertering"
-description: "Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering."
+title: Forudsætninger for en standardomkostningskonvertering
+description: Dette emne indeholder en beskrivelse af de opgaver, der skal udføres før kørsel af en standardomkostningskonvertering.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351924"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forudsætninger for en standardomkostningskonvertering
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Udfør følgende trin, før du kører en standardomkostningskonvertering:
 
         En aktiv kostprisopdeling betyder, at aktivering af omkostninger for en produceret vare medfører, at segmenteringen af omkostningsgruppen lagres i varens kostprispost. Hvis du ikke angiver en værdi i feltet **Kostprisopdeling**, vedligeholdes kostgruppesegmenteringen ikke for varer med standardkostpriser. Det vil sige, at standardomkostningerne for en produceret vare beregnes og vedligeholdes som et enkelt beløb uden segmentering af omkostningsgruppen, og kostbidraget for producerede komponenter samles i et enkelt beløb.
     -   Brug feltet **Afvigelser fra standard** til at vælge opsummerede eller omkostningsopdelte grupper. Hvis du vælger den omkostningsopdelte gruppe, kan du identificere afvigelser i indkøbsprisen og produktionsafvigelser pr. omkostningsgruppe. Du kan også identificere de fire typer produktionsafvigelser (afvigelse i lotstørrelse, antal, pris og erstatning). Hvis du vælger den opsummerede gruppe, kan du ikke identificere afgivelser for de enkelte omkostningsgrupper, og du kan ikke identificere de fire typer produktionsafvigelser. Du kan kun se en opsummeret produktionsafvigelse. Politikken for afvigelser fra standarden fungerer uafhængigt af politikken for kostprisopdeling. Det vil sige, at du kan vælge en regel for kostprisopdeling og vælge afvigelser for de enkelte omkostningsgrupper, så du stadig kan registrere produktionsafvigelser for de enkelte omkostningsgrupper.
-
 
 
 

@@ -1,32 +1,31 @@
 ---
-title: "Arbejdsområde for omkostningsstyring"
-description: "Dette emne indeholder oplysninger om arbejdsområdet Omkostningsstyring. Dette arbejdsområde er et centralt punkt, hvor ledere, der er ansvarlige for styring af et omkostningsobjekt eller en række omkostningsobjekter inden for en dimension eller på tværs af dimensioner, har adgang til rapporter."
+title: Arbejdsområde for omkostningsstyring
+description: Dette emne indeholder oplysninger om arbejdsområdet Omkostningsstyring. Dette arbejdsområde er et centralt punkt, hvor ledere, der er ansvarlige for styring af et omkostningsobjekt eller en række omkostningsobjekter inden for en dimension eller på tværs af dimensioner, har adgang til rapporter.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c6a196c677ed27666efec8a180f1d3b7e7ee931c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363746"
 ---
-
 # <a name="cost-control-overview"></a>Oversigt over omkostningsstyring 
 
 [!include [banner](../includes/banner.md)]
@@ -157,6 +156,5 @@ I følgende eksempel er fordelingsgrundlaget af typen **Fordelingsbasis for form
 Yderligere ressourcer 
 
 [Angive adgangsrettigheder for controllere til omkostningsobjekt](access-rights-cost-object-controller.md)
-
 
 

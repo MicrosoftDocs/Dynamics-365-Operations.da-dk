@@ -1,13 +1,13 @@
 ---
 title: Dataimport- og -eksportjob
-description: "Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job."
+description: Bruge arbejdsområdet Datastyring til at oprette og administrere import af data og eksportere job.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360204"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Dataimport- og -eksportjob
 
 [!include [banner](../includes/banner.md)]
 
-Til at oprette og administrere job til import og eksport af data i Microsoft Dynamics 365 for Finance and Operations, kan du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
+Når du vil oprette og administrere dataimport- og -eksportjob i Microsoft Dynamics 365 for Finance and Operations, skal du bruge arbejdsområdet **Datastyring**. Som standard opretter processen til import og eksport af data en midlertidig tabel for hver enhed i måldatabasen. Midlertidige tabeller giver dig mulighed for at kontrollere, rense eller konvertere data, før du flytter dem.
 
 > [!NOTE]
 > I dette emne antages det, at du er fortrolig med [dataenheder](data-entities.md).
@@ -158,4 +157,3 @@ Du kan rydde op i midlertidige tabeller ved hjælp af funktionen **Oprydning i m
 - **Dataprojekter** – Hvis der kun er markeret et dataprojekt, slettes alle poster for alle enheder og på tværs af alle job for det valgte dataprojekt.
 
 Du kan også kombinere indstillingerne for yderligere at begrænse det postsæt, der slettes.
-

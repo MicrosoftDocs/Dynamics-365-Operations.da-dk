@@ -1,13 +1,13 @@
 ---
 title: Konfigurere klyngepluk
-description: "Dette emne beskriver, hvordan du konfigurerer klyngepluk og anvender varebekræftelse sammen med klyngepluk."
+description: Dette emne beskriver, hvordan du konfigurerer klyngepluk og anvender varebekræftelse sammen med klyngepluk.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2ec0890963b2b01407acac8003453faf370894b4
-ms.openlocfilehash: 1c23421ddfda8c5f6fa27a31831a00ead6094db9
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/11/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364091"
 ---
-
 [!include[banner](../includes/banner.md)]
 
 # <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
@@ -35,7 +34,7 @@ Dette emne beskriver, hvordan arbejderne skal kunne bruge deres mobilenheder til
 
 Når arbejdsordrer er frigivet til lagerstedet, kan arbejderen bruge en mobilenhed til at tildele ordrer til en klynge. Klyngen organiserer plukkearbejdet for arbejderen. Når en arbejdsordre er tildelt til en klynge, skal arbejderen bruge klyngepluk til at udføre plukkearbejdet for ordren. Arbejderen kan ikke bruge andre plukkemetoder. Hvis en arbejdsordre er tildelt til en klynge ved en fejl, skal arbejderen bryde klyngen op og derefter oprette den igen.
 
-Hvis det er nødvendigt, kan en arbejder sende en klynge til en anden arbejder. Dette ændrer statussen på klyngen til Bestået. Når arbejderen bruger en mobilenhed til at angive, at plukningen og lageropfyldningsarbejdet er fuldført, skal forsendelsen eller lasten bekræftes i klienten for Dynamics 365 for Finance and Operations.
+Hvis det er nødvendigt, kan en arbejder sende en klynge til en anden arbejder. Dette ændrer statussen på klyngen til Bestået. Når arbejderen bruger en mobilenhed til at angive, at plukning og læg på lager-arbejde er fuldført, skal forsendelsen eller lasten skal bekræftes i Dynamics 365 for Finance and Operations-klienten.
 
 ## <a name="set-up-cluster-picking"></a>Konfigurere klyngepluk
 
@@ -81,4 +80,3 @@ Når der anvendes en klyngepluk, er varebekræftelse afgørende for kontrol af d
 1.  I et menupunkt på en mobilenhed skal du åbne opsætningsformularen for arbejdsbekræftelse: **Lokationsstyring** \> **Lokationsstyring** \> **Opsætning** \> **Mobilenhed** \> **Menupunkter i mobilenhed**.
 
 2.  Åbn **Konfiguration af arbejdsbekræftelse** fra menupunktet på mobilenheden. Indstillingen **Bekræftelse af produkt** gør det muligt at kontrollere hver enkelt vare på lageret fra mobilenheden, når den scannes.
-

@@ -1,13 +1,13 @@
 ---
 title: Opgraderingsoversigt for afskrivningsmodel
-description: "I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog. Dette emne indeholder nogle overvejelser for opgraderingen."
+description: I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt bogkoncept. Dette emne indeholder nogle overvejelser for opgraderingen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359307"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Opgraderingsoversigt for afskrivningsmodel
 
 [!include [banner](../includes/banner.md)]
 
-I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) opdager er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt koncept, der er kendt som en bog. Dette emne indeholder nogle overvejelser for opgraderingen. 
+I tidligere versioner var der to værdiansættelseskoncepter for anlægsaktiver – værdimodeller og afskrivningsmodeller. I Microsoft Dynamics 365 for Operations (1611) er funktionaliteten af værdimodellen og afskrivningsmodellen blevet flettet ind i et enkelt bogkoncept. Dette emne indeholder nogle overvejelser for opgraderingen. 
 
 Opgraderingsprocessen flytter din eksisterende installation og alle eksisterende transaktioner til den nye modelstruktur. Værdimodeller forbliver, som de er i øjeblikket, som en model, der bogføres i finans. Afskrivningsmodeller flyttes til en model, der har **Bogfør i finans**-indstillingen angivet til **Ingen**. Navne på afskrivningskladder flyttes til et finanskladdenavn med posteringslag angivet til **Ingen**. Posteringer i afskrivningsmodellen skal flyttes til anlægsaktivposter. 
 
@@ -81,7 +80,6 @@ Når du bruger den systemgenereret nummerserie (mulighed 1), bruger opgraderinge
 Når du bruger den brugerdefinerede eksisterende nummerserie (mulighed 2), kontrollerer dataopgraderingen, om nummerserien med det angivne omfang findes i databasen for hver partition og virksomhed med afskrivningstransaktioner. Hvis den findes, bruger opgraderingen række for række-behandling ved tildeling af bilagsnumre som angivet af den nummerserie, der bruger strukturen for nummerserier. Hvis nummerserien ikke findes med det angivne omfang, bruger opgraderingen den systemdefinerede standardnummerserie til at fordele bilagsnumrene og opretter en ny nummerserie med angivne standardparametre efter fordelingen.
 
 Scriptet til dataopgradering bruger også nummerserien for begge metoder til feltet **Bilagsserie** på de nye finanskladdenavne, der er oprettet til de tidligere navne på afskrivningskladder.
-
 
 
 

@@ -1,51 +1,50 @@
 ---
 title: Power BI-indhold for praksischef
-description: "I dette emne beskrives, hvad der er medtaget i Power BI-indhold til praksischef. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet."
+description: I dette emne beskrives, hvad der er medtaget i Power BI-indhold for praksischef. Det beskrives, hvordan du får adgang til rapporter, der er inkluderet i indholdet, og indeholder oplysninger om den datamodel og de enheder, der bliver brugt til at oprette indholdet.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367794"
 ---
-
 # <a name="practice-manager-power-bi-content"></a>Power BI-indhold for praksischef
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er medtaget i Microsoft Power BI-indholdet til **praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der er medtaget i Power BI-indhold for **Praksischef**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
-Power BI-indholdet til **praksischef** blev oprettet til praksischefer og projektledere. Det indeholder vigtige nøgleværdier, der er relateret til de projekter, som organisationen arbejder på. Dashboardet giver et overblik over projekterne og de relaterede kunder. Et rapportniveaufilter kan bruges til at rapportere for bestemte juridiske enheder. Dette Power BI-indhold trækker data fra projektregnskabets samlede målinger.
+Power BI-indholdet for **Praksischef** er beregnet til praksischefer og projektledere. Det indeholder vigtige nøgleværdier, der er relateret til de projekter, som organisationen arbejder på. Dashboardet giver et overblik over projekterne og de relaterede kunder. Et rapportniveaufilter kan bruges til at rapportere for bestemte juridiske enheder. Dette Power BI-indhold trækker data fra projektregnskabets samlede målinger.
 
-Power BI-indholdet til **Praksischef** indeholder fem rapportsider: en oversigtsside og fire sider, der giver oplysninger om projektomkostninger, omsætning, administration af optjent værdi og timenøgletal, der er opdelt på tværs af forskellige dimensioner.
+Power BI-indholdet for **Praksischef** indeholder fem rapportsider: en oversigtsside og fire sider, der giver oplysninger om projektomkostninger, omsætning, administration af optjent værdi og timenøgletal, der er opdelt på tværs af forskellige dimensioner.
 
 Alle beløb i indholdet vises i systemvalutaen. Du kan angive systemvalutaen på siden **Systemparametre**.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 
-Power BI-indholdet **Praksischef** vises i arbejdsområdet **Projektstyring**.
+Power BI-indholdet for **Praksischef** vises i arbejdsområdet **Projektstyring**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
 
-Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet til **praksischef**.
+Følgende tabel indeholder oplysninger om de nøgletal, der findes på de enkelte rapportsider i Power BI-indholdet for **Praksischef**.
 
 | Rapportside       | Metrik |
 |-------------------|---------|
@@ -119,4 +118,3 @@ I de følgende afsnit beskrives de samlede målinger, der bruges i de enkelte en
 | Samlede nøglemålinger       | Felt               | Betegnelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt omkostning for fuldført aktivitet | Sum(TotalCostPrice) | Summen af kostpris i estimater for alle projektposteringstyper, der har fuldførte opgaver. |
-

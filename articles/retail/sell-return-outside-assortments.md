@@ -1,31 +1,30 @@
 ---
-title: "Sælge og returnere produkter, der ikke er en del af en butiks sortiment"
-description: "Med Dynamics 365 for Retail kan du sælge og returnere produkter uden for sortimenter."
+title: Sælge og returnere produkter, der ikke er en del af en butiks sortiment
+description: Med Dynamics 365 for Retail kan du sælge og returnere produkter uden for sortimenter.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352292"
 ---
-
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Sælge og returnere produkter, der ikke er en del af en butiks sortiment
 
 [!include [banner](includes/banner.md)]
@@ -47,4 +46,3 @@ De almindelige scenarier er tilgængelige for detailhandlere ved hjælp af Dynam
 + Hente produkter i den aktuelle butik eller en anden butik.
 + Annullere en ordre i den aktuelle butik eller en anden butik.
 + Returnere en ordre med eller uden kvitteringen i den aktuelle butik eller en anden butik.
-

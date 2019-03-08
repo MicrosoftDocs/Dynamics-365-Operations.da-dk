@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en engangskreditor og -faktura i den offentlige sektor
-description: "Kreditorpost bruger værdier fra standardengangskreditorkontoen."
+description: Kreditorpost bruger værdier fra standardengangskreditorkontoen.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendOpenInvoicesListPage, VendOneTimeVendInvoice_PSN
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e3ad4dd612293816899b6e70400b19eb0465338a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b2286efd7cf10fdf6c77ff081a0405413610271f
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370174"
 ---
 # <a name="create-a-one-time-vendor-and-invoice-in-the-public-sector"></a>Oprette en engangskreditor og -faktura i den offentlige sektor
 
@@ -37,5 +37,4 @@ Kreditorpost bruger værdier fra standardengangskreditorkontoen. Du kan få vist
     * Udfyld de andre felter som nødvendigt.  
 5. Klik på Opret.
     * Siden Kreditorfaktura åbnes og viser oplysninger om kreditoren.  
-
 

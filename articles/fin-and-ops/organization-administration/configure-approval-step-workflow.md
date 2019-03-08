@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f52b6ffed7c1edb97c7a673cefbc8bf486ba831
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 813866d63f38f5865666bad96f6f3590716a93ad
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368047"
 ---
-
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkendelsestrin i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
@@ -135,7 +134,7 @@ Udfør følgende trin for at angive, hvem godkendelsestrinnet skal tildeles.
     </tr>
     <tr>
     <td>Bruger</td>
-    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brugere</td>
+    <td>Specifikke Microsoft Dynamics 365 for Finance and Operations-brugere</td>
     <td>
     <ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
@@ -278,4 +277,3 @@ Hvis en bruger ikke håndterer et dokument inden for den tildelte tid, er dokume
 
 5. Gentag trin 3 til 4 for hvert bruger, der skal føjes til eskaleringsstien. Du kan ændre brugernes rækkefølge.
 6. Hvis brugerne i eskaleringsstien ikke reagerer inden for den tildelte tid, håndteres dokumentet automatisk af systemet. Hvis du vil angive den handling, som systemet skal udføre, skal du vælge rækken **Handling** og derefter vælge en handling på fanen **Sluthandling**.
-

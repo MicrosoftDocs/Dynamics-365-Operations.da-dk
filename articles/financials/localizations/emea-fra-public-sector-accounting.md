@@ -5,9 +5,9 @@ author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 44e7039dc7712e6dc0fda19166080ad68c24af1d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c999055a4e849332a104276ef8d3ea3ce781e2e3
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370190"
 ---
-
 # <a name="public-sector-accounting-in-france"></a>Regnskab i den offentlige sektor i Frankrig
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Yderligere konfigurationstrin for bestemte funktioner er omfattet af artiklen fo
 -   [Indkøb og forsyning](emea-fra-procurement-sourcing-public-sector.md)
     -   De standardfunktioner, der vedrører købsaftaler, suppleres for franske enheder i den offentlige sektor.  For eksempel kan du oprette trancher og partier, styre adgangen til afdelinger, administrere kreditorcertificeringer og konfigurere de største kontrahenter, medkontrahenter og underleverandører. Disse funktioner gør det nemmere at opfylde kravene i Code des Marchés Publics.
     -   For at opfylde offentlige lovgivningsmæssige krav i Frankrig skal du muligvis angive forbrugsgrænser for køb i de indkøbskategorier, som er defineret af Clé de Contrôle Marché. Med en **Forbrugsgrænser efter kategori**-politikregel, der bruges sammen med indkøbspolitikregler, kan du bruge attributter for ikrafttrædelsesdato, estimerede udgiftsbeløb og tærskelbeløb til at understøtte krævede indkøbspraksis og til at sikre effektiv brug af offentlige midler.
-
 
 
 

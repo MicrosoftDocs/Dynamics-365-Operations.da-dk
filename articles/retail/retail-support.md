@@ -1,35 +1,34 @@
 ---
-title: "Få support til Dynamics 365 for Retail"
-description: "Denne artikel forklarer, hvordan du kan få hjælp til Microsoft Dynamics 365 for Retail."
+title: Få support til Dynamics 365 for Retail
+description: I denne artikel beskrives, hvordan du kan få hjælp til Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364045"
 ---
-
 # <a name="get-support-for-dynamics-365-for-retail"></a>Få support til Dynamics 365 for Retail
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel forklarer, hvordan du kan få hjælp til Dynamics 365 for Retail.
+I denne artikel beskrives, hvordan du kan få hjælp til Dynamics 365 for Retail.
 
 ## <a name="contact-support"></a>Kontakt support
 
@@ -49,7 +48,7 @@ Du kan få support på Retail ved at bruge ressourcerne i følgende tabel. Disse
 <tbody>
 <tr>
 <td>Spørg fællesskabet.</td>
-<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
+<td>Gå til siden <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>-community for at få hjælp til dine spørgsmål fra Dynamics Community.</td>
 </tr>
 <tr>
 <td>Brug problemsøgningsværktøjet.</td>
@@ -67,7 +66,7 @@ Du kan få support på Retail ved at bruge ressourcerne i følgende tabel. Disse
 </tr>
 <tr>
 <td>Åbn en supportanmodning hos supportteamet.</td>
-<td>Hvis du har problemer, når du forsøger at sende en anmodning til Microsoft fra feltet <strong>Support</strong> i LCS, kan du se under <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Kontakt Microsoft Business Solutions Support</a> for at få oplysninger om, hvordan du kontakter Microsoft Dynamics' lokale driftskontor. Supportteamet kan hjælpe dig med at løse følgende tekniske problemtyper:
+<td>Hvis du har problemer, når du forsøger at sende en anmodning til Microsoft fra feltet <strong>Support</strong> i LCS, kan du se under <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Kontakt Microsoft Business Solutions Support</a> for at få oplysninger om, hvordan du kontakter et lokalt Microsoft Dynamics driftskontor. Supportteamet kan hjælpe dig med at løse følgende tekniske problemtyper:
 <ul>
 <li>Fejl, der opstår, når du bruger LCS, eller problemer, når du forsøger at få adgang til LCS.</li>
 <li>Fejl, der opstår, når du bruger Retail.</li>
@@ -85,5 +84,4 @@ Ved tekniske spørgsmål, der er relateret til at logge på og få adgang til Cu
 </tbody>
 </table>
 
-Yderligere oplysninger om Microsoft Dynamics supporttilbud finder du under [Microsoft Dynamics Online-support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Yderligere oplysninger om Microsoft Dynamics-supporttilbud finder du i [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/en-us/support/).

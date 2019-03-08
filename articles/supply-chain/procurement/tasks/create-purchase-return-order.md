@@ -1,13 +1,13 @@
---- 
-title: "Oprette en købsreturordre"
-description: "Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hjælp af handlingen Kreditnota for at kopiere linjer fra et kreditorfakturadokument til en ny indkøbsordre."
+---
+title: Oprette en købsreturordre
+description: Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hjælp af handlingen Kreditnota for at kopiere linjer fra et kreditorfakturadokument til en ny indkøbsordre.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e080252006d889e2f27db2bccb7b541f3ee4cf9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9124100f84afb13acc2ac9dda7b9483afb01754
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354132"
 ---
 # <a name="create-a-purchase-return-order"></a>Oprette en købsreturordre
 
@@ -77,5 +77,4 @@ Denne fremgangsmåde viser, hvordan du kan oprette en indkøbsreturordre ved hj�
     * Dette felt bruges til at angive en reference, der skal bruges som bilag for produktkvitteringskladden.  
 5. Klik på OK.
     * Varerne er nu registreret som leveret på indkøbsreturordren, og der er oprettet en produktkvitteringskladde. Du kan bruge handlingen Produktkvittering til at gennemse de kladder, der er oprettet med indkøbsordren, og til at se, hvad der er modtaget eller returneret, og hvornår.  
-
 

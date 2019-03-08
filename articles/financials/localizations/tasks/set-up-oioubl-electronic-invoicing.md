@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurere elektronisk OIOUBL-fakturering
-description: "Denne procedure gennemgår, hvordan du konfigurerer elektronisk OIOUBL fakturering."
+description: Denne procedure gennemgår, hvordan du konfigurerer elektronisk OIOUBL fakturering.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, OMLegalEntity, UnitOfMeasure, ExtCodeTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Denmark
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 2ada5849df214704473fb8a3a0295316d0ea1216
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370258"
 ---
 # <a name="set-up-oioubl-electronic-invoicing"></a>Konfigurere elektronisk OIOUBL-fakturering
 
@@ -77,5 +77,4 @@ Før du kan udføre denne opgave, skal du importere elektroniske rapporteringsko
 9. Skriv en værdi i feltet Værdi.
     * Skriv f.eks. EA.  
 10. Klik på Gem.
-
 

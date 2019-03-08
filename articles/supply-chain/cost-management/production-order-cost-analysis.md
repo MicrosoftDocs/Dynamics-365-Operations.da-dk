@@ -1,13 +1,13 @@
 ---
 title: Omkostningsanalyse for produktionsordre
-description: "Denne artikel indeholder oplysninger om den omkostningsanalyse, du kan udføre for afsluttede og aktuelle produktionsordrer. Du kan analysere de forkalkulerede omkostninger og faktiske omkostninger ved hjælp af siden Prisberegning og efterkalkulationsrapporten. Du kan se oplysninger om de forventede og faktiske omkostninger (og antal) for de enkelte indgående varer, ruteoperationer og indirekte omkostninger."
+description: Denne artikel indeholder oplysninger om den omkostningsanalyse, du kan udføre for afsluttede og aktuelle produktionsordrer. Du kan analysere de forkalkulerede omkostninger og faktiske omkostninger ved hjælp af siden Prisberegning og efterkalkulationsrapporten. Du kan se oplysninger om de forventede og faktiske omkostninger (og antal) for de enkelte indgående varer, ruteoperationer og indirekte omkostninger.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f027d6521d5f57a7e2d2cac1bed8dc08ae9f20f1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353557"
 ---
-
 # <a name="production-order-cost-analysis"></a>Omkostningsanalyse for produktionsordre
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Særskilte rapporter indeholder oplysninger om de enkelte typer af posteringer. 
 --------
 
 [Almindelige kilder til produktionsafvigelser](common-sources-of-production-variances.md)
-
 
 
 

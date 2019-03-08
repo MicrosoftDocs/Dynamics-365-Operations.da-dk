@@ -1,13 +1,13 @@
 ---
-title: "Analysér salgstendenser og -mønstre"
-description: "Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 for Retail."
+title: Analysere salgstendenser og -mønstre
+description: Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelReport, SysReportViewerForm, RetailStoreManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b2a23b6013fd9096457647142a40a6710da6ca88
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357996"
 ---
-
 # <a name="analyze-sales-trends-and-patterns"></a>Analysere salgstendenser og -mønstre
 
 [!include [banner](includes/banner.md)]
 
 Du kan overvåge salgstendenser og -mønstre i realtid i Microsoft Dynamics 365 for Retail.
 
-Som en del af Dynamics 365 for Retail kan brugere undersøge salgstendenser og -mønstre i realtid på tværs af forskellige niveauer i organisationshierarkiet over en periode på år ved at åbne den færdiglavede **Rapport over kanalsalg pr. år**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
+Som en del af Dynamics 365 for Retail kan brugere undersøge salgstendenser og -mønstre i realtid på tværs af forskellige niveauer i organisationshierarkiet over en periode på år ved at åbne den færdiglavede rapport **Rapport over kanalsalg pr. år**. Du kan åbne denne rapporter fra en af følgende lokaliteter:
 
 - Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
 - Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. år**
@@ -44,4 +43,3 @@ Brugere kan også undersøge salgstendenser og -mønstre efter time på tværs a
 - Arbejdsområdet **Detailbutiksstyring** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksstyring** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
 - Arbejdsområdet **Detailbutiksregnskab** &gt; **Detail** &gt; **Kanaler** &gt; **Detailbutiksregnskab** &gt; **Rapporter** &gt; **Rapport over kanalsalg pr. time**
 - Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport over kanalsalg pr. time**
-

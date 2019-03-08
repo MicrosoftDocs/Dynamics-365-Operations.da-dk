@@ -1,13 +1,13 @@
 ---
-title: "Indkøbskataloger"
-description: "I denne artikel beskrives på et højt niveau, hvor indkøbsmedarbejderne kan konfigurere og vedligeholde indkøbskataloger. Indkøbskataloger definerer de varer og tjenesteydelser, som virksomhedens medarbejdere kan bestille til intern brug."
+title: Indkøbskataloger
+description: I denne artikel beskrives på et højt niveau, hvor indkøbsmedarbejderne kan konfigurere og vedligeholde indkøbskataloger. Indkøbskataloger definerer de varer og tjenesteydelser, som virksomhedens medarbejdere kan bestille til intern brug.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9f49c25e8d653219c9a2e5bead0c25f09898e27b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d667f2abbc7bd00d46f40178b9f6e9d21c6f79f3
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358410"
 ---
-
 # <a name="procurement-catalogs"></a>Indkøbskataloger
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Opdateringer publiceres enten automatisk eller manuelt, afhængigt af de indstil
 --------
 
 [Konfigurer et indkøbskategorihierarki (opgaveguide)](tasks/set-up-procurement-category-hierarchy.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Finans i den offentlige sektor
-description: "I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor."
+description: I dette emne beskrives de finansfunktioner, som er tilgængelige for den offentlige sektor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dc56ddac1b7790bab1a489aae523804cf2a72fb2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d6927eced6b7c36f89a958800b6e1e6aed1d178f
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370273"
 ---
-
 # <a name="general-ledger-in-the-public-sector"></a>Finans i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Du kan bruge afledte finansielle hierarkier til at indsamle og analysere data fo
 --------
 
 [Finans](../general-ledger/general-ledger.md)
-
 
 
 

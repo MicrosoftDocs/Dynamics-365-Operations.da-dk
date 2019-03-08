@@ -1,13 +1,13 @@
 ---
 title: Power BI-indhold til produktionsperformance
-description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
+description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til produktionsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365954"
 ---
-
 # <a name="production-performance-power-bi-content"></a>Power BI-indhold til produktionsperformance
 
 [!include [banner](../includes/banner.md)]
@@ -42,10 +41,10 @@ Med dette Power BI-indhold kan du også analysere afvigelser i produktionen. Pro
 
 Power BI-indholdet til **Produktionsperformance** omfatter data, der stammer fra produktionsordrer og batchordrer. Rapporterne omfatter ikke data, der er relateret til kanban-produktioner.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet **Produktionsperformance** vises på siden **Produktionsperformance** (**Produktionsstyring** \> **Forespørgsler og rapporter** \> **Performanceanalyse for produktion** \> **Produktionsperformance**). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
 
 Power BI-indholdet til **Produktionsperformance** omfatter et sæt rapportsider. Hver side består af en række mål, som er visualiseret som diagrammer, felter og tabeller.
 
@@ -130,4 +129,3 @@ Følgende tabel viser de nøgledimensioner, der bruges som filtre til at skabe u
 | Enheder                  | Id og navn                                                   |
 | Ressourcer                 | Ressource-id, ressourcenavn, ressourcetype og ressourcegruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-id og varegruppe         |
-

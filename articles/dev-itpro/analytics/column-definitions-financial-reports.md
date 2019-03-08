@@ -1,13 +1,13 @@
 ---
-title: "Kolonnedefinitioner i økonomirapporter"
-description: "Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter."
+title: Kolonnedefinitioner i økonomirapporter
+description: Denne artikel indeholder oplysninger om kolonnedefinitioner. En kolonnedefinition er en rapportkomponent eller byggesten, der definerer indholdet af kolonnerne i en rapport. Ligesom rækkedefinitioner kan grundlæggende kolonnedefinitioner bruges til flere rapporter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356340"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinitioner i økonomirapporter
 
 [!include [banner](../includes/banner.md)]
@@ -121,11 +120,11 @@ I nedenstående tabel beskrives koderne for kolonnebegrænsning.
 | ADJ                     | Begræns beløbene i kolonnen til periodens reguleringsbeløb, hvis disse beløb er tilgængelige. |
 | XAD                     | Begræns beløbene i kolonnen, så periodens reguleringsbeløb udelades. |
 | PT                      | Begræns beløbene i kolonnen, så kun bogførte transaktioner medtages, hvis disse transaktioner er tilgængelige. |
-| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<blockquote>[!NOTE] Ikke alle dataprovidere understøtter ikke-bogførte transaktioner. Yderligere oplysninger finder du i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>vejledningen i dataintegration</a> til Microsoft Dynamics ERP-systemet.</blockquote> |
+| UPT                     | Begræns beløbene i kolonnen, så kun transaktioner, der ikke er bogført, medtages, hvis disse transaktioner er tilgængelige.<blockquote>[!NOTE] Ikke alle dataprovidere understøtter ikke-bogførte transaktioner. Du kan finde flere oplysninger i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsvejledningen</a> til dit Microsoft Dynamics ERP-system.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begrænse en kolonne til en rapporteringsenhed
 
-1. Åbn den kolonnedefinition, der skal ændres, i Report Designer.
+1. Åbn den kolonnedefinition, der skal redigeres, i Rapportdesigner.
 2. Dobbeltklik på cellen **Rapporteringsenhed** for den kolonne, der skal begrænses.
 3. I dialogboksen **Valg af rapporteringsenhed** på listen **Rapporteringstræ** skal du vælge et træ.
 4. Udvid eller skjul listen over enheder, vælg en rapporteringsenhed og klik derefter på **OK**.
@@ -171,24 +170,24 @@ Du kan bruge dialogboksen **Kolonneoverskrift** til at tilføje, redigere og sle
 
 ### <a name="create-an-automatically-generated-header"></a>Opret en automatisk genereret overskrift
 
-Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC**, **FD** og **WKS**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår oversætter **@CalMonthLong** for eksempel måned **7** til **juli**. Hvis navnet på måneden skal skrives med store bogstaver (for eksempel **JULI**), skal autotekstkoden skrives med store bogstaver i feltet **Kolonneoverskriftstekst**. Du kan f.eks. skrive **@CALMONTHLONG**. Du kan blande koder og tekst. Du skriver for eksempel følgende sidehovedtekst: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**.
+Rapportdesigner kan generere kolonnehoveder automatisk ud fra autotekstkoder. Autotekstkoder er variabler, der opdateres, hver gang der genereres en rapport. Alle kolonneoverskrifter kan indeholde disse koder for at angive rapportoplysninger, som kan variere, f.eks datoer eller perioder tal. Du kan derfor bruge en kolonnedefinitionen til flere rapportdefinitioner, tidsperioder og rapporteringstræer. Da autotekstkoder afhænger af kalenderoplysningerne fra detaljerækkerne i kolonnedefinitionen, understøttes de kun for kolonnerne **CALC**, **FD** og **WKS**. Den måde, en autotekstkode vises på i kolonneoverskriftscellen, påvirker, hvordan oplysningerne vises i rapporten. I dialogboksen **kolonneoverskrift** vises autotekstkoder i forskellige situationer. Derfor vises teksten i forskellige situationer i rapporten. I et standardkalenderår oversætter **@CalMonthLong** for eksempel måned **7** til **juli**. Hvis navnet på måneden skal vises med store bogstaver (f.eks. **JULI**), skal du angive autotekstkoden med store bogstaver i feltet **Tekst til kolonneoverskrift**. Du kan f.eks. skrive **@CALMONTHLONG**. Du kan blande koder og tekst. Du kan for eksempel indtaste følgende overskriftstekst: **Periode @FiscalPeriod-@FiscalYear fra @StartDate til @EndDate**. Den rapportoverskrift, der genereres, ligner følgende tekst: **Periode 1-02 fra 01-01-02 til 01-31-02**.
 
 > [!NOTE]
 > Formatet for noget af teksten, f.eks. den lange dato, afhænger af dine internationale indstillinger på Finance and Operations-serveren. Hvis du vil ændre disse indstillinger, skal du klikke på knappen **Start**, klikke på **Kontrolpanel** og derefter klikke på **Område og sprog**. I følgende tabel vises de tilgængelige indstillinger for autotekst til kolonneoverskrifter.
 
 
-| Indstilling og kode for autotekst                | Betegnelse |
+| Indstilling og kode for autotekst                | Beskrivelse |
 |-----------------------------------------|-------------|
-| Navn på måned (@CalMonthLong)              | Udskriv navnet på den aktuelle måned i kolonneoverskriften. Hvis du beslutter dig for at afrunde beløbene i rapporten til tusinder, millioner eller milliarder, eller hvis du angiver kolonnebredden i rapporten til færre end ni tegn, forkortes månedens navn til de første tre tegn. |
+| Månedens navn (@CalMonthLong)              | Udskriv navnet på den aktuelle måned i kolonneoverskriften. Hvis du beslutter dig for at afrunde beløbene i rapporten til tusinder, millioner eller milliarder, eller hvis du angiver kolonnebredden i rapporten til færre end ni tegn, forkortes månedens navn til de første tre tegn. |
 | Forkortet månedsnavn (@CalMonthShort) | Udskriv det forkortede navn for måneden for den valgte regnskabsperiode. |
 | Periodenummer (@FiscalPeriod)           | Udskriv det numeriske format for den regnskabsperiode, der er angivet for den pågældende kolonne. Hvis kolonnen strækker sig over flere perioder, udskrives den sidste periode i intervallet. |
-| Beskrivelse af perioden (@FiscalPeriodName)  | Udskriv den beskrivelse af regnskabsperioden, der er angivet i de økonomiske data. |
+| Beskrivelse af periode (@FiscalPeriodName)  | Udskriv den beskrivelse af regnskabsperioden, der er angivet i de økonomiske data. |
 | Regnskabsår (@FiscalYear)               | Udskriv regnskabsåret for kolonnen i numerisk format. |
 | Kalenderår (@CalYear)                | Udskriv kalenderåret for kolonnen i numerisk format. |
 | Startdato (@StartDate)                 | Udskriv startdatoen for kolonnen. |
 | Slutdato (@EndDate)                     | Udskriv slutdatoen for kolonnen. |
 | Enhedsnavn fra træ (@UnitName)         | Hvis du begrænser en kolonne til en bestemt enhed af rapporteringstræet, kan du udskrive enhedsnavnet i kolonneoverskriften. |
-| Enhedsbeskrivelse (@UnitDesc)            | Hvis du begrænser en kolonne til en bestemt enhed af rapporteringstræet, kan du udskrive beskrivelsen af enheden i kolonneoverskriften. |
+| Beskrivelse af enhed (@UnitDesc)            | Hvis du begrænser en kolonne til en bestemt enhed af rapporteringstræet, kan du udskrive beskrivelsen af enheden i kolonneoverskriften. |
 | Bogkode (@BookCode)                   | Udskriv den bogkode, der er angivet i kolonnen. |
 | Tom linje (@Blank)                     | Indsæt en tom linje i kolonneoverskriften. |
 
@@ -216,9 +215,9 @@ Betingede udbredelseshovedet spænder over flere kolonner, der er baseret på da
 Karina opretter en rapport til et dynamisk halvårligt budget. Hun vil have ordet "Faktisk" udskrevet over de kolonner, der indeholder faktiske data, og ordet "Budget" udskrevet over de kolonner, der indeholder budgetprognoser. Hver måned, hvor rapporten køres, er der én mere faktisk kolonne og én mindre budgetkolonne. Selvom Karina kan ændre kolonnedefinitionen manuelt, hver gang rapporten genereres, for at justere overskrifterne, beslutter hun for at spare tid og kræfter at oprette betingede udbredelseshoveder, der automatisk opretter overskrifter over de relevante kolonner, hver gang rapporten køres. Karina åbner Report Designer, klikker på **Kolonnedefinition** i navigationsruden og åbner kolonnedefinitionen for rapporten. Derefter indtaster hun følgende oplysninger. Basisperioden i rapportdefinitionen er 4.
 
 
-|                     |  A   | B             | K             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
+|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Overskrift 1            |      | Realiseret        | Budget        |               |               |               |               |               |               |               |               |               |               |
+| Overskrift 1            |      | Faktisk        | Budget        |               |               |               |               |               |               |               |               |               |               |
 | Overskrift 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Overskrift 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Kolonnetype         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
@@ -612,4 +611,3 @@ Du kan dividere beløbet i en kolonne med et angivet antal perioder. Formlen **B
 [Rækkedefinitioner i økonomirapportering](row-definitions-financial-reporting.md)
 
 [Avancerede formateringsindstillinger i økonomirapportering](advanced-formatting-options-financial-reporting.md)
-

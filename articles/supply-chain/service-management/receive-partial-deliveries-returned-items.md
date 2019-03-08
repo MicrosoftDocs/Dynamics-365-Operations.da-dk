@@ -1,31 +1,30 @@
 ---
 title: Modtage delleveringer af returvarer
-description: "Delleverancer defineres ved hjælp af returordrelinjer, ikke returordreforsendelser."
+description: Delleverancer defineres ved hjælp af returordrelinjer, ikke returordreforsendelser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2b7bfad1e0d80675848353d4118960d44f2dc01
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f9f596d31f2438a353b02bf939786b284937db86
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363907"
 ---
-
 # <a name="receive-partial-deliveries-of-returned-items"></a>Modtage delleveringer af returvarer    
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Hvis en returforsendelse indeholder mindre end det samlede antal for en returord
 4.  Angiv mængden af det samlede antal varer, der er modtaget, i feltet **Splitantal**, og klik derefter på **OK**.
 
 5.  Vælg linjen for det antal varer, der er modtaget, i formularen **Kladdelinjer, lokationer**, og klik derefter på **Bogfør**. Du kan bogføre linjen for det yderligere antal, når varerne er modtaget.
-
 
 
 

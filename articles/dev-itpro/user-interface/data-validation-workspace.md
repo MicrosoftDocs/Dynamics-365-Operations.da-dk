@@ -1,28 +1,27 @@
 ---
-title: "Arbejdsområdet Kontrolliste for datavalidering"
-description: "I arbejdsområdet Kontrolliste for datavalidering kan du spore processer til validering af data på tværs af firmaer, områder og personer. Kontrollisten kan bruges under en ny implementering efter en opgradering eller efter en overførsel."
+title: Arbejdsområdet Kontrolliste for datavalidering
+description: I arbejdsområdet Kontrolliste for datavalidering kan du spore processer til validering af data på tværs af firmaer, områder og personer. Kontrollisten kan bruges under en ny implementering efter en opgradering eller efter en overførsel.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: dd758ac5698d84532c0b724485cc6f0da83bc8e0
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364183"
 ---
-
 # <a name="data-validation-checklist-workspace"></a>Arbejdsområdet Kontrolliste for datavalidering
 
 [!include [banner](../includes/banner.md)]
@@ -59,4 +58,3 @@ Før du kan bruge arbejdsområdet **Kontrolliste for datavalidering**, skal du k
 Du bruger opgaveområder til at gruppere datavalideringsopgaver i logiske ejerskabsområder i organisationen. Kreditor, Debitor eller Finans kan eksempelvis bruges som opgaveområder.
 
 **Menupunktnavn** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. F.eks. kan en datavalideringsopgave, der skal køre rapporten **Kreditor aldersfordelt** for Kreditor, knyttes til siden **Rapport over Kreditor aldersfordelt**.
-

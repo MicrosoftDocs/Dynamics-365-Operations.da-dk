@@ -1,13 +1,13 @@
 ---
 title: Rydningsprincipper
-description: "I dette emne beskrives de fire rydningsprincipper, der bruges ved forbrug af råmaterialer."
+description: I dette emne beskrives de fire rydningsprincipper, der bruges ved forbrug af råmaterialer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e4b9cd918bec9a094744b208821285c57f01798a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358295"
 ---
-
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Styre forbrug af råmaterialer ved hjælp af rydningsprincipper
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Rydningsprincippet Afslut angiver, at materialer automatisk forbruges, når prod
 
 ### <a name="available-at-location"></a>Disponibel på lokation
 Rydningsprincippet Disponibel på lokation angiver, at materialet forbruges automatisk, når det er registreret som plukket til produktion. Materialet registreres som plukket fra lokation, når arbejdet for råvareplukningen er fuldført, eller når materialet er tilgængeligt på produktionens indlagringslokation, og materialelinjen er frigivet til lageret. Pluklisten, der oprettes under processen, bogføres i et batchjob. Dette princip er relevant, hvis du f.eks. har mange plukaktiviteter for én produktionsordre. Hvis det er tilfældet, behøver du ikke at foretage en manuel opdatering af pluklisten, og du kan få en aktuel visning af IGVA-saldoen.
-

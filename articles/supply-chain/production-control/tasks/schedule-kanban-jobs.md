@@ -1,13 +1,13 @@
---- 
-title: "Planlægge kanban-job"
-description: "Denne fremgangsmåde fokuserer på planlægning af kanban-procesjob for en bestemt arbejdscelle."
+---
+title: Planlægge kanban-job
+description: Denne fremgangsmåde fokuserer på planlægning af kanban-procesjob for en bestemt arbejdscelle.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5170fecf0190591d74f45d35fecc4472e7f5e900
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f36544993a9280ae10489a19252bc105abd40ac9
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359537"
 ---
 # <a name="schedule-kanban-jobs"></a>Planlægge kanban-job
 
@@ -61,5 +61,4 @@ Denne fremgangsmåde fokuserer på planlægning af kanban-procesjob for en beste
 6. Klik på Planlæg.
     * Bemærk, at begge job er føjet til den ønskede periode.  
     * Du kan se belastningen for hver periode i sektionen Periodekapacitet. Feltet Forbrug viser det planlagte forbrug i denne periode. Hvis det planlagte forbrug er højere end den tilgængelige kapacitet i denne periode, vælges det overbelastede forbrug.  
-
 

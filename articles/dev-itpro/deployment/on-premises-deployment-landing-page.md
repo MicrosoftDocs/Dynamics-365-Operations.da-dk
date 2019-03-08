@@ -3,32 +3,32 @@ title: Startside for lokale installationer
 description: Dette emne indeholder oplysninger og links til indhold om lokale installationer.
 author: kfend
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: c51cce929384b7e822213dcb9df9007edfe3700c
+ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
 ms.translationtype: HT
-ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
-ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/02/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "373271"
 ---
 # <a name="on-premises-deployments-home-page"></a>Startside for lokale installationer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokalt). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.
+Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokal). Når du vælger en lokal installationstype, er systemkrav, tilpasning af hardwarestørrelse og funktionalitet forskellig fra en skybaseeret installation. Dette emne indeholder links til indhold med specifikke oplysninger om lokale installationer.
 
 ## <a name="get-started"></a>Introduktion
 - [Mulighed for lokal installation](on-premises-overview.md)
@@ -62,7 +62,8 @@ Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokalt). N�
 - [Konfigurere, installere og aktivere Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
 - [Konfigurere og installere Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-
+## <a name="upgrade"></a>Opgrader
+- [Lokal opgraderingsproces til lokale miljøer](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Andre ressourcer
 - [Fejlfinding af lokale installationer](troubleshoot-on-prem.md)
@@ -71,4 +72,3 @@ Du kan installere Microsoft Dynamics 365 for Finance and Operations (lokalt). N�
 - [Fjernede eller frarådede funktioner](../migration-upgrade/deprecated-features.md)
 - [Livscykluspolitik for software og lokale versioner](../migration-upgrade/on-prem-version-update-policy.md)
  
-

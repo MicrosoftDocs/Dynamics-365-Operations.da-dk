@@ -1,13 +1,13 @@
 ---
-title: "Engangsleverandører i den offentlige sektor"
+title: Engangsleverandører i den offentlige sektor
 description: Denne artikel indeholder oplysninger om, hvordan du opretter en engangskreditor og -faktura, og hvordan du importerer og opretter flere engangskreditorer og -fakturaer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 54d283ce6b1c7722265d87ef3acd61c13b6aaa86
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f4ab83517c91fa3d31c8af572ac9acc583c52b9f
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370222"
 ---
-
 # <a name="one-time-vendors-in-the-public-sector"></a>Engangsleverandører i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,6 @@ Kreditorposten bruger værdier fra standardengangskreditorkontoen, medmindre der
 
 ## <a name="how-do-i-import-and-create-multiple-onetime-vendors-and-invoices"></a>Hvordan importerer og opretter jeg flere engangskreditorer og fakturaer?
 Hvis du vil oprette flere engangskreditorer og fakturaer, skal du først oprette en fil, der indeholder oplysninger om kreditoren og fakturaen, og derefter importere filen til en midlertidig tabel i Finance and Operations. Derefter skal du behandle den importerede fil og generere fakturaerne. Du kan se flere oplysninger om, hvordan du opretter filen i [Planlægning for engangsleverandører i den offentlige sektor](plan-one-time-vendors-public-sector.md).  
-
 
 
 

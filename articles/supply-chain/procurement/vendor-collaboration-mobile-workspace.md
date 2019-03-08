@@ -1,13 +1,13 @@
 ---
-title: "Mobilarbejdsområde for kreditorsamarbejde"
-description: "Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner."
+title: Mobilarbejdsområde for kreditorsamarbejde
+description: Dette emne indeholder oplysninger om arbejdsområdet Kreditorsamarbejde på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358640"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilarbejdsområde for kreditorsamarbejde
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Kreditorsamarbejde** på mobilenheder. I dette arbejdsområde kan dine kreditorer holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner.
 
-Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations-mobilappen.
+Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
 
 ## <a name="overview"></a>Overblik 
-Arbejdsområdet **Kreditorsamarbejde** på mobilenheder holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og reagere på dem i webklienten til Microsoft Dynamics 365 for Finance and Operations. 
+Arbejdsområdet til **Kreditorsamarbejde** på mobilenheder holder kreditorerne underrettet om nye indkøbsordrer, så de kan se indkøbsordrer og derefter reagere på dem i Microsoft Dynamics 365 for Finance and Operations-webklienten. 
 
 >[!NOTE]
 > Det mobile arbejdsområde bør anvendes som et supplement til webgrænsefladen til kreditorsamarbejde, men ikke som en erstatning. 
@@ -58,13 +57,13 @@ Arbejdsområdet **Kreditorsamarbejde** til mobilenheder giver en leverandør mul
 -   Få vist oplysninger om en brugeranmodning, der er afsendt af kreditoren, og følge status for anmodningen. (Denne opgave kræver en ekstra sikkerhedsrolle).
 
 ## <a name="prerequisites"></a>Forudsætninger
-Forudsætningerne varierer alt efter, hvilken version af Microsoft Dynamics 365 der er installeret i din organisation.
+Forudsætningerne varierer, afhængigt af hvilken version af Microsoft Dynamics 365 der er installeret i organisationen.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations 
 Hvis Microsoft Dynamics 365 for Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Kreditorsamarbejde** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
-Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
+Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 <td>Systemadministrator</td>
 <td>KB 3216943 er en binær opdatering, der skal bruges, hvis du bruger platformsopdatering 3. For at implementere denne KB skal systemadministratoren gøre følgende.
 <ol>
-<li>Hent KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Hente KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Installer den binære opdatering, der leveres som en pakke, der kan installeres. Du kan finde oplysninger om, hvordan du anvender en pakke, der kan installeres, i <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvende en installerbar pakke</a>.</li>
 </ol></td>
 </tr>
@@ -120,7 +119,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Log på mobilappen
 1.  Start appen på din mobilenhed.
-2.  Angiv URL-adressen til din Microsoft Dynamics 365.
+2.  Angiv din Microsoft Dynamics 365 URL-adresse.
 4.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 5.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
@@ -171,4 +170,3 @@ Eventuelle ændringer, der er foretaget i svaret til ordrelinjen, vises. Dog vis
 
 ### <a name="open-confirmed-orders"></a>Åbn bekræftede ordrer
 Når indkøbsordren er bekræftet af kunden (hvilket betyder, at status for købsordren er ændret til **Bekræftet**), vises den i den åbne bekræftede ordre. Den forbliver på listen, indtil den registreres som modtaget af kunden.
-

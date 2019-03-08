@@ -1,13 +1,13 @@
 ---
-title: "Navigationssøgning"
-description: "I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Finance and Operations."
+title: Navigationssøgning
+description: I dette emne forklares, hvordan du kan bruge søgefunktionen til at navigere til sider i Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353005"
 ---
-
 # <a name="navigation-search"></a>Navigationssøgning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan bruge søgefunktionen til at navigere til siderne i Microsoft Dynamics 365 for Finance and Operations.
+I dette emne forklares, hvordan du kan bruge søgefunktionen til at navigere til sider i Microsoft Dynamics 365 for Finance and Operations.
 
 Finance and Operations giver funktionalitet til en lang række brancher og vertikaler. Programmet indeholder en række områder og sider, der kan hjælpe dig med at udføre forskellige opgaver. Du kan hurtigt finde de sider, som du skal bruge til at udføre opgaverne, med brug af funktionen til navigationssøgning.
 
@@ -64,4 +63,3 @@ Listen over søgeresultater er begrænset til 10 elementer. Hvis du ikke kan fin
 ## <a name="development"></a>Udvikling
 
 Fra et udviklingsperspektiv er funktionen til navigationssøgning meget nem at udnytte, fordi der praktisk talt ikke er nogen forsinkelse mellem implementering af menupunkter og deres evne til at blive vist i søgeresultater. Så længe menupunkterne er tilknyttet fra navigationsruden eller dashboardet, bliver det automatisk muligt at søge i dem.
-

@@ -1,13 +1,13 @@
 ---
 title: Administrere brugere af kreditorsamarbejde
-description: "Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde."
+description: Dette emne beskriver, hvordan du kan anmode om klargøring af nye brugere af kreditorsamarbejde, og hvordan du tilføjer nye kontakter for kreditorsamarbejde.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
-ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356685"
 ---
-
 # <a name="manage-vendor-collaboration-users"></a>Administrere brugere af kreditorsamarbejde
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Når en anmodning sendes, føjes den til listen **Brugeranmodninger om kreditors
 Før du kan anmode om, at der er klargjort en ny bruger, skal vedkommende sættes op som kontaktperson for en eller flere kreditorkonti. Sådan opretter du en anmodning om en ny bruger af kreditorsamarbejde:
 
 1. På siden **Alle kontaktpersoner** skal du klikke på **Klargør kreditorbruger**.
-2. Angiv en mailadresse på brugeren. Denne adresse bruges til at logge på Finance and Operations af brugeren. Hvis mailadressen hører til et domæne, der er registreret som lejer hos Microsoft Azure, skal mailadressen være en eksisterende Azure Active Directory-konto (AAD), for at klargøringsprocessen kan fuldføres. Hvis mailadressen ikke tilhører et domæne, der er registreret hos Microsoft Azure, vil en ADD-konto blive oprettet som en del af klargøringsprocessen, og den nye bruger modtager en invitationsmail. Forbrugeres mailadresser med domæner som @hotmail.com, @gmail.com eller @comcast.net kan ikke bruges til at registrere en Finance and Operations-bruger.
+2. Angiv en mailadresse på brugeren. Denne adresse bruges til at logge på Finance and Operations af brugeren. Hvis mailadressen hører til et domæne, der er registreret som lejer hos Microsoft Azure, skal mailadressen være en eksisterende Azure Active Directory-konto (AAD), for at klargøringsprocessen kan fuldføres. Hvis mailadressen ikke tilhører et domæne, der er registreret hos Microsoft Azure, vil en AAD-konto blive oprettet som en del af klargøringsprocessen, og den nye bruger modtager en invitationsmail. Forbrugeres mailadresser med domæner som @hotmail.com, @gmail.com eller @comcast.net kan ikke bruges til at registrere en Finance and Operations-bruger.
 3. Angiv indstillingen **Adgang til kreditorsamarbejde tilladt** til **Ja** for alle de juridiske enheder, som brugeren skal have adgang til.
 4. I sektionen **Tildel brugerroller** skal du markere **Tildel**-afkrydsningsfeltet for de sikkerhedsroller, som den nye bruger skal have.
 5. Klik på **Send**.
@@ -91,7 +90,6 @@ Sådan anmoder du om, at sikkerhedsrollerne ændres for en bruger:
 2.  Skriv en kommentar i feltet **Forretningsberettigelse**.
 3.  I sektionen **Vedligehold brugerroller** skal du vælge de sikkerhedsroller, som du vil tildele, eller fjerne markeringen af dem, som du vil fjerne.
 4.  Klik på **Send**.
-
 
 
 

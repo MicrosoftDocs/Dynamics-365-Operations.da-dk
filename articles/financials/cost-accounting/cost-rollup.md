@@ -1,32 +1,31 @@
 ---
 title: Politik for omkostningstotaler og beregning af fast omkostning
-description: "Dette emne indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing."
+description: Dette emne indeholder oplysninger om, hvordan du bestemmer det korrekte niveau af sekundære omkostningselementer og opretter regler for omkostningstotaler, der passer til organisationsrapportering og omkostningssporing.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356133"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Politik for omkostningstotaler og beregning af fast omkostning 
 
 [!include [banner](../includes/banner.md)]
@@ -302,4 +301,3 @@ Den klare adskillelse mellem **Omkostningstildeling** og **Politikker for omkost
 -  [Dimensioner for omkostningselement](cost-elements.md)
 -  [Dimensionshierarkier](dimension-hierarchy.md)
 -  [Beregning af fast omkostning](overhead-calculation.md)
-

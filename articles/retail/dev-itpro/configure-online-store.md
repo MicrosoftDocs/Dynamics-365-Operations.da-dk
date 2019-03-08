@@ -1,13 +1,13 @@
 ---
 title: Konfigurer onlinebutikker
-description: "Denne artikel indeholder links til emner, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt."
+description: Denne artikel indeholder links til emner, der kan hjælpe dig med at konfigurere og administrere en onlinebutik centralt.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: d353baf67540b64168f29be3506d73e721e73523
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354362"
 ---
-
 # <a name="configure-online-stores"></a>Konfigurer onlinebutikker
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Retail-komponenter 
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Føj udvalg til onlinebutikken. | Tilføj de sortimenter, der omfatter de produkter, du har tilbudt i en onlinebutik.                                                                  | [Konfigurere en onlinebutik](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-indhold til AX 2012)                                                                                                                                              |
 | Administrer kataloger.                     | Brug produktkataloger til at identificere de produkter, du vil tilbyde i dine butikker.                                                              | [Hovedopgaver: Oprette detailproduktkataloger](https://technet.microsoft.com/en-us/library/jj728712.aspx) (TechNet-indhold til AX 2012)                                                                                                                           |
-| Administrer priser.                       | Opret og brug prisgrupper, der er det centrale bindeled mellem priser og rabatter, og kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer. | [Konfigurere priser ved hjælp af prisgrupper](https://technet.microsoft.com/en-us/library/hh597169.aspx) (TechNet-indhold til AX 2012) [konfiguration af moms](https://technet.microsoft.com/en-us/library/hh580571.aspx) (TechNet-indhold til AX 2012) |
+| Administrer priser.                       | Opret og brug prisgrupper, der er det centrale bindeled mellem priser og rabatter, og kanaler, kataloger, tilhørsforhold og loyalitetsprogrammer. | [Konfigurere priser ved hjælp af prisgrupper](https://technet.microsoft.com/en-us/library/hh597169.aspx) (TechNet-indhold til AX 2012) [Konfiguration af moms](https://technet.microsoft.com/en-us/library/hh580571.aspx) (TechNet-indhold til AX 2012) |
 | Administrer rabatter.                    | Konfigurer og administrer prisjusteringer og fire slags rabatter.                                                                                  | [Konfigurere prisjusteringer og rabatter](https://technet.microsoft.com/en-us/library/hh597114.aspx) (TechNet-indhold til AX 2012)                                                                                                                          |
 | Administrer forsendelsesgebyrer.             | Konfigurer og administrer de forsendelsesgebyrer, der er specifikke for onlinebutikken.                                                                     | [Konfigurere forsendelsesgebyrer for onlinebutikker](https://technet.microsoft.com/en-us/library/jj728714.aspx) (TechNet-indhold til AX 2012)                                                                                                                           |
 | Administrer leveringsmåder.            | Administrer de leveringsmåder, der tilbydes i onlinebutikken.                                                                                        | [Konfigurere leveringsmåder](https://technet.microsoft.com/en-us/library/jj728719.aspx) (TechNet-indhold til AX 2012)                                                                                                                                            |
@@ -59,7 +58,6 @@ Emnerne i følgende tabel kan hjælpe dig med at konfigurere Retail-komponenter 
 | Opgave                                 | Oplysninger                                                                                                                               | emner                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opret profiler for kanalintegration. | Profiler gør det muligt for komponenterne i Retail at kommunikere med hinanden. Opret profiler, før du konfigurerer indstillinger for udveksling af data. | [Konfigurere realtidstjenesteprofil](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet-indhold til AX 2012) [Konfigurere en kanalprofil](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet-indhold til AX 2012) |
-
 
 
 

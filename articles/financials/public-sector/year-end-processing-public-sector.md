@@ -1,13 +1,13 @@
 ---
-title: "Årsafslutningen i den offentlige sektor"
-description: "Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor."
+title: Årsafslutningen i den offentlige sektor
+description: Denne artikel indeholder oplysninger om årsafslutningen for organisationer i den offentlige sektor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchYearEndClose
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b9a89bd38feac2e580c3d1511d3bee8eca04115d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 743841195844dd5a4e1cb692cf332a4e35c1f719
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370236"
 ---
-
 # <a name="year-end-processing-in-the-public-sector"></a>Årsafslutningen i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,6 @@ Du skal vælge en lukketype for hver konto i din kontoplan. Lukketypen bestemmer
 -   **Ikke relevant** – Kontoen medtages ikke i årsafslutningsprocessen.
 
 Bogføringsdefinitioner styrer de regnskaber, der forekommer på ultimoposterne, og de hjælper også oprette primoposterne for det nye år. Hvis du vil vide mere, kan du se under [Bogføringsdefinitioner i den offentlige sektor](posting-definitions-public-sector.md).
-
 
 
 

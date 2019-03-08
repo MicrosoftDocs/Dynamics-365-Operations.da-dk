@@ -1,13 +1,13 @@
 ---
 title: Refusioner i den offentlige sektor
-description: "I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor."
+description: I dette emne besvares almindelige spørgsmål i forbindelse med refusioner i den offentlige sektor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillingClassification
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b08e821cae0a2ac6c133f63d71c068c3d950a6fa
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f2c05473ef3d5861049c2481387df518d8ec9fd8
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370191"
 ---
-
 # <a name="reimbursements-in-the-public-sector"></a>Refusioner i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Nr. Refusioner behandles ikke for en kunde, der har ventende udligninger, der ik
 
 ## <a name="can-i-reverse-reimbursement-settlements"></a>Kan jeg fortryde refusionsudligninger?
 Nej, ikke direkte. Du kan dog bruge finanskladdeposter til at oprette posteringer, der ville medføre tilbageførsel af finansposterne.
-
 
 
 

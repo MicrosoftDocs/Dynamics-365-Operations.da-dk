@@ -1,32 +1,30 @@
 ---
 title: Arbejde med kundeservice
-description: "Kundeservice understøtter professionelle, servicebaserede virksomheder og organisationer, der tilbyder produktionsservice."
+description: Kundeservice understøtter professionelle, servicebaserede virksomheder og organisationer, der tilbyder produktionsservice.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f51b749cc9527cb3e86352b0373babd6c524dbe7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f9713dba63be5ff7969a513d96575f79ebc63986
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364689"
 ---
-
-
 # <a name="work-with-customer-service"></a>Arbejde med kundeservice 
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +45,6 @@ Kundeservice inkluderer følgende funktioner.
   - Serviceniveauaftaler, der understøtter et differentieret kundeunderlag
 
 Emnerne i dette afsnit indeholder en oversigt over forretningsprocesserne for kundeservice og de enkelte komponenter i forretningsprocessen. De viser også de forms, der er knyttet til de enkelte forretningsproceskomponenter, og de beskriver de opgaver, der er knyttet til de enkelte forretningsproceskomponenter.
-
 
 
 

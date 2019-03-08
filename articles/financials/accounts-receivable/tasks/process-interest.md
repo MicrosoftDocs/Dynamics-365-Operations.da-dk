@@ -1,13 +1,13 @@
---- 
+---
 title: Behandle rente
-description: "Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer."
+description: Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c5652a38684061914f895d7f8b82999c9840fd63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 543ac29ac1b1cbad52f1c155ac90b04d0c122a1f
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359146"
 ---
 # <a name="process-interest"></a>Behandle rente
 
@@ -67,5 +67,4 @@ Denne procedure viser, hvordan du kan oprette, udskrive og bogføre rentenotaer.
 4. Udvis eller skjul sektionen Poster, der skal indgå.
 5. Klik på OK.
 6. Vælg "Bogført" i feltet Status.
-
 

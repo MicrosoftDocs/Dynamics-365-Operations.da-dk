@@ -1,13 +1,13 @@
 ---
 title: Fritekstfakturaer i den offentlige sektor
-description: "I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer."
+description: I dette emne beskrives funktionen til fritekstfakturaer, som er tilgængelig for den offentlige sektor, samt besvares almindelige spørgsmål om brugen af faktureringsklassifikationer og faktureringskoder til fritekstfakturaer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 98030d14d85770c427aa2ef6e3f0c5560fc6bc99
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 29ccac10cda612f3b8d393727ed157516e99835d
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370292"
 ---
-
 # <a name="free-text-invoices-in-the-public-sector"></a>Fritekstfakturaer i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,6 @@ Du kan få flere oplysninger om faktureringskoder i [Faktureringsklassifikatione
 
 ## <a name="where-does-the-interest-code-on-a-free-text-invoice-come-from"></a>Hvor kommer rentekoden på en fritekstfaktura fra?
 Rentekoden kan indstilles på faktureringskoden, faktureringsklassifikationen eller posteringsprofilen.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger"
-description: "Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer."
+title: Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger
+description: Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374391"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere dine medarbejdere ved hjælp af afdelinger, jobs og stillinger
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Afdelinger, job og stillinger er organisatoriske elementer, der vedligeholdes i Personale. Dette emne beskriver begrebsmæssige oplysninger om disse elementer. 
 
@@ -165,7 +163,6 @@ For nogle poster kan du angive fremtidige ændringer i posten. Følgende oplysni
 </table>
 
 Du kan ændre de oplysninger, der er nævnt i den foregående tabel for en stilling eller et job og angive en dato, hvor ændringer til stillingen eller jobbet skal træde i kraft. For eksempel kan en stilling kun tildeles én arbejder, men Sanjay Patel, der er tildelt stillingen Bogholder-A, forlader jobbet om to uger. Joe Healy erstatter Sanjay Patel, når han rejser. Selvom Sanjay stadig er knyttet til hans stilling, kan du tildele Joe Healy til samme stilling, så tildelingen træder i kraft efter Sanjays sidste dag på jobbet.
-
 
 
 

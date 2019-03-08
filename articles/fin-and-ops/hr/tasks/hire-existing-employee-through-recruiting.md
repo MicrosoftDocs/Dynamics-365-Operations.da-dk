@@ -1,13 +1,13 @@
---- 
-title: "Ansætte eksisterende medarbejdere gennem rekruttering"
-description: "Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen."
+---
+title: Ansætte eksisterende medarbejdere gennem rekruttering
+description: Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbejdere i organisationen.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365379"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansætte eksisterende medarbejdere gennem rekruttering
 
@@ -40,5 +40,4 @@ Nogle gange kan ledige stillinger udfyldes af ansøgere, der allerede er medarbe
 8. Du kan eventuelt også vælge en årsagskode. Eksempel: Omorganisering
 9. Klik på Skift Stilling.
     * Du kan også ændre kompensationen på nuværende tidspunkt. Hvis du ikke tildeler kompensation på dette tidspunkt, kan du ændre den ved at gå til arbejderformen, vælge fanen Kompensation og vælge "Fast Plan". Når du vælger "Skift stilling", opdateres statussen på ansøgning til "Ansat".  
-
 

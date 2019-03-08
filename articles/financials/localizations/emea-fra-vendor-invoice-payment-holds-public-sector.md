@@ -1,13 +1,13 @@
 ---
-title: "Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig"
-description: "De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig."
+title: Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
+description: De almindelige processer, der vedrører betalingsspærring af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymTerm
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cea944d84f90bf96dc5c8630224c07a770bd0c81
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8ed76dd2b8b46056807ebc3e015cf413d357a035
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370192"
 ---
-
 # <a name="vendor-invoice-payment-holds-in-the-public-sector-in-france"></a>Betalingsspærring af kreditorfakturaer i den offentlige sektor i Frankrig
 
 [!include [banner](../includes/banner.md)]
 
-De almindelige processer, der vedrører betalingsspærringer af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
+De almindelige processer, der vedrører betalingsspærring af kreditorfakturaer i Microsoft Dynamics 365 for Finance and Operations, er suppleret for franske enheder i den offentlige sektor. I dette emne beskrives de funktioner til betalingsspærring af kreditorfakturaer, der bruges af den offentlige sektor i Frankrig.
 
 <a name="set-up-rules-for-vendor-invoice-payment-holds"></a>Konfigurere regler for betalingsspærring af kreditorfakturaer
 ---------------------------------------------
@@ -70,7 +69,6 @@ Angiv eller frigiv en betalingsspærring for alle kreditorfakturaer, der er tilk
 
 ## <a name="can-i-settle-an-invoice-that-is-on-hold"></a>Kan jeg udligne en faktura, der er spærret?
 Hvis du er tildelt til den samme brugerrolle som den bruger, der angav spærringen, kan du fjerne spærringen fra siden **Udlign posteringer** og udligne kreditorfakturaen. Når du angiver en betalingsspærring, vælges indstillingen **Fakturabetaling på hold** automatisk under fanen **Betaling** på siden **Udlign posteringer**. Dette forhindrer, at en kreditorfaktura kan udlignes, før spærringen er frigivet.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Sortimentsstyring
-description: "I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Microsoft Dynamics 365 for Retail og overvejelser i forbindelse med implementering af projekter."
+description: I dette emne beskrives de grundlæggende begreber for sortimentsstyring i Microsoft Dynamics 365 for Retail og overvejelser i forbindelse med implementering af projekter.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365034"
 ---
-
 # <a name="assortment-management"></a>Sortimentsstyring
 
 [!include [banner](../includes/banner.md)]
@@ -108,4 +107,3 @@ Overvej følgende implementeringskrav, når du planlægger og administrerer sort
 - **Salg og returneringer uden for et sortiment** – Denne funktion hjælper detailhandlere med effektivt at styre deres sortimenter ved at lade dem med at begrænse antallet af tilgængelige produkter til produkter, der hører til den centrale produktsammensætning for butikken. Denne funktion hjælper også detailhandlere med at håndtere situationer, hvor et produkt ved en fejltagelse er udeladt fra et sortiment, eller hvor der blev returneret et produkt uden for ikrafttrædelsesdatoerne for sortimentet.
 
 Hvis produktdataene ikke findes i kanaldatabasen, foretager POS kald i realtid til hovedkontoret for at få de nødvendige oplysninger, så produktet kan blive solgt, returneret eller sættes på en debitorordre. Produktoplysninger, der hentes på denne måde, er kun tilgængelige for den pågældende transaktion. Produktet føjes ikke til sortimentsdefinitionen. Derfor vil efterfølgende kald i realtids blive foretaget efter behov.
-

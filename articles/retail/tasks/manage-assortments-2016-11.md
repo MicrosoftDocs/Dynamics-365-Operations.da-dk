@@ -1,13 +1,13 @@
---- 
+---
 title: Administrere udvalg (november 2016)
-description: "Denne fremgangsmåde viser, hvordan du kan oprette og udgive et nyt produktudvalg og bruge demodatafirmaet USRT."
+description: Denne fremgangsmåde viser, hvordan du kan oprette og udgive et nyt produktudvalg og bruge demodatafirmaet USRT.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363654"
 ---
 # <a name="manage-assortments-november-2016"></a>Administrere udvalg (november 2016)
 
@@ -53,5 +53,4 @@ Denne fremgangsmåde viser, hvordan du kan oprette og udgive et nyt produktudval
 ## <a name="publish-an-assortment"></a>Udgiv et udvalg
 1. Klik på Publicer.
 2. Klik på Ja.
-
 

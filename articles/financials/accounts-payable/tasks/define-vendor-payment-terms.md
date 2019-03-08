@@ -1,13 +1,13 @@
---- 
+---
 title: Definere kreditorbetalingsbetalinger
 description: Konfigurer betalingsbetingelserne kreditorfakturaer.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 68c69d5be5ccbdfb17fea7c61121cbf26fee48d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a00ca73b1bc301960132a86846749d12c39ed3f7
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358548"
 ---
 # <a name="define-vendor-payment-terms"></a>Definere kreditorbetalingsbetalinger
 
@@ -51,5 +51,4 @@ Konfigurer betalingsbetingelserne kreditorfakturaer. Denne opgave bruger demofir
 17. Angiv den hovedkonto, som kasserabatten bogføres til for kreditorfakturaer.
     * Hvis "Rabatmodkonti" er indstillet til Brug hovedkonto til kreditorrabatter, bruges hovedkontoen.  Hvis indstillingen er angivet til Konti på fakturalinjerne, bogføres kasserabatten til aktiv/udgiftskonti på fakturalinjerne.  
 18. Klik på Gem.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Komponenter i økonomisk rapport"
-description: "I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I artiklen forklares, hvordan du organiserer og låser komponenter, og hvordan du arbejder med dokumentkomponentgrupper."
+title: Komponenter i økonomisk rapport
+description: I denne artikel beskrives, hvordan komponenter, eller dokumentkomponenter, i rapportdefinitioner bruges til økonomirapportering. Disse komponenter omfatter rækkedefinitioner, kolonnedefinitioner og rapporteringstræ-definitioner. I artiklen forklares, hvordan du organiserer og låser komponenter, og hvordan du arbejder med dokumentkomponentgrupper.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368139"
 ---
-
 # <a name="financial-report-components"></a>Komponenter i økonomisk rapport
 
 [!include [banner](../includes/banner.md)]
@@ -46,11 +45,11 @@ Designfilosofien bag designeren til økonomirapporter er at opdele oplysninger i
 Hvis du ikke er vant til at designe rapporter, vil du sikker finde det fordelagtigt at benytte rapportguiden til hurtigt at oprette en rapportdefinition, der kan tilpasses senere. Hvis du har erfaring med at designe rapporter og ønsker mere fleksibilitet for rapportdesign, kan du kombinere nye eller eksisterende komponenter for at oprette en ny rapportdefinition. Du behøver ikke fuldt ud at forstå alle tilgængelige rapportdefinitionsindstillinger til fremstilling af kvalitetsrapporter. Efterhånden som du bliver fortrolig med at designe rapporter, kan du udvide dine rapportdefinitioner for at drage fordel af mere avancerede funktioner. Når du har oprettet en grundlæggende rapport, kan du tilpasse rapportdefinitionen og komponenterne i rapportdefinitionen.
 
 ## <a name="organize-the-building-blocks"></a>Organisere komponenterne
-Du kan bruge mapper til at organisere dine komponenter i Report Designer. Alle mapper er specifikke for den komponenttype, de indeholder. Alle mapper, der indeholder rækkedefinitioner, er for eksempel placeret i ruden **Rækkedefinitioner** i Report Designer.
+Du kan bruge mapper til at organisere dine komponenter i Rapportdesigner. Alle mapper er specifikke for den komponenttype, de indeholder. Alle mapper, der indeholder rækkedefinitioner, er for eksempel placeret i ruden **Rækkedefinitioner** i Rapportdesigner.
 
 ### <a name="create-a-folder"></a>Oprette en mappe
 
-1. Vælg i Report Designer den type komponent, du vil organisere i navigationsruden. Hvis du for eksempel vil sortere en rækkedefinition, skal du klikke på **Rækkedefinitioner**.
+1. Vælg i Rapportdesigner den type komponent, du vil organisere i navigationsruden. Hvis du for eksempel vil sortere en rækkedefinition, skal du klikke på **Rækkedefinitioner**.
 2. I navigationsruden skal du vælge den eksisterende mappe, som den nye mappe skal oprettes under, og derefter udføre et af disse trin:
 
     - Højreklik på den overordnede mappe, og klik derefter på **Ny mappe**.
@@ -61,7 +60,7 @@ Du kan bruge mapper til at organisere dine komponenter i Report Designer. Alle m
 ## <a name="lock-a-building-block"></a>Låse en komponent
 Du kan oprette en adgangskode for at låse og hjælpe med at beskytte en dokumentkomponent. På denne måde kan du føje en grad af sikkerhed til en rapportkomponent, uden at hele systemet beskyttes. En adgangskode kan medvirke til at beskytte komponentoplysninger, der er vigtige for rapporteringsprocessen i forbindelse med månedsafslutningen. En bruger med en rolle kan låse en dokumentkomponent. Andre brugere har dog altid skrivebeskyttet adgang til en låst komponent. Brugere kan åbne, redigere og gemme den låste komponent under et nyt navn. En bruger med rollen administrator kan altid få adgang til og ændre en låst komponent.
 
-1. Åbn den rapportkomponent, der skal låses, i Report Designer, for eksempel en rækkedefinition, kolonnedefinition, rapportdefinition eller rapporteringstrædefinition.
+1. Åbn den rapportkomponent, der skal låses, i Rapportdesigner, for eksempel en rækkedefinition, kolonnedefinition, rapportdefinition eller rapporteringstrædefinition.
 2. Klik på **Beskyt/Fjern beskyttelse** i menuen **Værktøjer**. Du kan også klikke på **Beskyt/Fjern beskyttelse** (låseikonet) på værktøjslinjen.
 3. I dialogboksen **Beskyt** skal du indtaste og bekræfte en adgangskode og derefter klikke på **OK**. Låseikonet på værktøjslinjen er markeret, når en åben komponent er låst.
 
@@ -82,9 +81,9 @@ Du kan få vist alle de rapportkomponenter, der er knyttet til en rapportkompone
 
 ### <a name="export-a-building-block-group"></a>Eksportere en rapportkomponentgruppe
 
-Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe. Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer af Finance and Operations. Report Designer omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
+Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i en rapportkomponentgruppe.Du kan bruge den eksporterede rapportkomponentgruppe som en sikkerhedskopi. Du kan også kopiere de eksporterede data mellem installationer af Finance and Operations.Rapportdesigner omfatter de refererede typografier og dimensionsopsætninger sammen med komponentgruppen.
 
-1. Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
+1. Klik på **Komponentgrupper** i menuen **Regnskab** i Rapportdesigner.
 2. Markér den rapportkomponentgruppe, du vil eksportere, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Eksportér**.
 3. I dialogboksen **Eksportér** skal du vælge de rapportdefinitioner, der skal eksporteres:
 
@@ -96,14 +95,14 @@ Du kan eksportere en rapportkomponentgruppe eller bestemte rapportkomponenter i 
 
 4. Når du er færdig med at markere elementer til eksport, skal du klikke på **Eksportér**.
 5. I dialogboksen **Gem som** skal du vælge den placering, som komponentgruppen skal eksporteres til.
-6. Angiv et navn til filen i feltet **Filnavn**. Report Designer tilføjer automatisk filtypenavnet .tdbx.
+6. Angiv et navn til filen i feltet **Filnavn**. Rapportdesigner tilføjer automatisk filtypenavnet .tdbx.
 7. Klik på **Gem**. Komponentgruppen gemmes på den placering, du har angivet.
 
 ### <a name="import-a-building-block-group"></a>Importere en komponentgruppe
 
 Du kan importere en rapportkomponentgruppe til en eksisterende rapportkomponentgruppe. Alle importerede dokumentkomponentgrupper bevarer deres oprindelige typografier og firmareferencer og omfatter de relevante dimensionssæt.
 
-1. Klik på **Komponentgrupper** i menuen **Regnskab** i Report Designer.
+1. Klik på **Komponentgrupper** i menuen **Regnskab** i Rapportdesigner.
 2. Markér den rapportkomponent, du vil importere en rapportkomponentgruppe til, i dialogboksen **Rapportkomponentgrupper**, og klik derefter på **Importér**.
 3. Markér den rapportkomponentgruppe, der skal importeres, i dialogboksen **Åbn**, og klik derefter på **Åbn**.
 4. I dialogboksen **Importér** skal du vælge de rapportdefinitioner, der skal importeres:
@@ -120,7 +119,7 @@ Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgan
 > [!NOTE]
 > Du skal have rollen som administrator for at tjekke rapportkomponenter ind ved hjælp af dialogboksen **Elementer, der er tjekket ud**.
 
-1. I Report Designer skal du klikke på **Udtjekkede elementer** i menuen **Funktioner**.
+1. I Rapportdesigner skal du klikke på **Udtjekkede elementer** i menuen **Funktioner**.
 2. Vælg **Vis elementer fra alle brugere** i dialogboksen **Elementer, der er tjekket ud**. Listen opdateres, så den viser alle de rapportkomponenter, der er tjekket ud, og de brugere, der har tjekket dem ud.
 3. Markér en rapportkomponent, og klik derefter på **Fortryd udtjekning**.
 4. Klik på **Ja** for tjekke rapportkomponenten ind.
@@ -128,4 +127,3 @@ Når du åbner en dokumentkomponent, kan andre brugere få skrivebeskyttet adgan
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-

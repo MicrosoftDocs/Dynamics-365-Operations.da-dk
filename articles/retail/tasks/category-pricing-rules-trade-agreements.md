@@ -1,13 +1,13 @@
---- 
+---
 title: " Regler for kategoriprissætning til oprettelse af samhandelsaftaler"
-description: "Denne procedure viser, hvordan du opretter salgsprissamhandelsaftaler ved hjælp af en kategoriprissætningsregel."
+description: Denne procedure viser, hvordan du opretter salgsprissamhandelsaftaler ved hjælp af en kategoriprissætningsregel.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8d252982cf1e4fa2f06646d0909e6f82d16f4cfc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355512"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Regler for kategoriprissætning til oprettelse af samhandelsaftaler
 
@@ -58,5 +58,4 @@ Denne procedure viser, hvordan du opretter salgsprissamhandelsaftaler ved hjælp
 23. Luk siden.
 24. Klik på fanen Regler for kategoripriser.
     * Kanalbestemte Kategoriprissætningsregler bliver vist i denne liste.  
-
 

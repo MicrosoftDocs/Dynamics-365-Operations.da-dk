@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en lokalitetsprofil.
-description: "Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer."
+description: Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der beskriver egenskaberne for lokaliteten, for eksempel om lokaliteten tillader blandede varer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8bc7705b7db46af8fbe8bf9e78a878a53249b452
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a4a159b0e849a73efb362ccadb841bd25c323290
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361377"
 ---
 # <a name="create-a-location-profile"></a>Oprette en lokalitetsprofil.
 
@@ -41,5 +41,4 @@ Hver lokalitet på lagerstedet skal have tilknyttet en lokalitetsprofil, der bes
 9. Vælg Ja i feltet Tillad cyklusoptælling.
 10. Klik på Gem.
 11. Gå til Lagerstedsstyring > Konfiguration > Lagersted > Lokationsprofiler.
-
 

@@ -1,13 +1,13 @@
 ---
-title: Salgs- og rentabilitetsperformance i Power BI-indhold
-description: "I dette emne beskrives, hvad der er omfattet af Power BI-indhold til Salgs og rentabilitetsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken."
+title: Power BI-indhold til Salgs og rentabilitetsperformance
+description: I dette emne beskrives, hvad der er omfattet af Power BI-indhold til Salgs og rentabilitetsperformance. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360411"
 ---
-
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Salgs- og rentabilitetsperformance i Power BI-indhold
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Power BI-indhold til Salgs og rentabilitetsperformance
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Salgs og rentabilitetsperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der er brugt til at oprette indholdspakken.
+I dette emne beskrives, hvad der er omfattet af Microsoft Power BI-indhold til **Salgs og rentabilitetsperformance**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der bruges til at oprette indholdspakken.
 
 ## <a name="overview"></a>Overblik
 
@@ -49,10 +48,10 @@ Rentabiliteten kan analyseres på disse måder:
 - Bruttoavanceændring, år for år
 - Kunderentabilitet (efter omsætning i forhold til bruttoavance)
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet **Salgs og rentabilitetsperformance** vises på siden **Salgs og rentabilitetsperformance** (**Salg og marketing** \> **Forespørgsler og rapporter** \> **Performanceanalyse for salg** \> **Salgs og rentabilitetsperformance**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
 Power BI-indholdet til **Salgs- og rentabilitetsperformance** omfatter en rapport, der består af et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. I nedenstående tabel vises en oversigt over visualiseringerne i indholdet.
 
 | Rapportside            | Diagrammer                                     | Felter                                                   |
@@ -80,7 +79,7 @@ Power BI-indholdet til **Salgs- og rentabilitetsperformance** omfatter en rappor
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende data bruges til at udfylde rapporten i Power BI-indholdet til **Salgs og rentabilitetsperformance**. Disse data repræsenteres som samlede målinger, der er klargjort i enhedslageret. Enhedslageret er en Microsoft SQL Server-database, der er optimeret til analyser. Du kan finde flere oplysninger under [Oversigt over Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
-De samlede målinger i denne indholdspakke er et undersæt af de samlede målinger, der var tilgængelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+De samlede målinger i dette indhold er et undersæt af de samlede målinger, der var tilgængelige i salgskuben i Microsoft Dynamics AX 2012 og Microsoft Dynamics AX 2012 R3. For at forberede kubens samlede målinger i enhedslageret skal du gøre dem installerbare. Du kan finde flere oplysninger i fremgangsmåden for forberedelse af samlede målinger i enhedslager i blogindlægget [Power BI-integration med enhedslager i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Følgende samlede nøglemålinger for enheden Fakturalinjer bruges som grundlag for indholdet.
 
@@ -109,4 +108,3 @@ Følgende nøgledimensioner i salgskuben bruges som filtre til at skabe udsnit a
 | Datoer            | Datoer                                                |
 
 Som standard viser indholdet data for det indeværende kalenderår. Du kan dog ændre datofilteret i rapportens filterafsnit. Du kan også ændre firmafilteret.
-

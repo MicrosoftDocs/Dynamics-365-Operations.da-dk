@@ -1,32 +1,31 @@
 ---
-title: "Forudsætninger for standardomkostninger"
-description: "I dette emne beskrives de grundlæggende trin til brug af standardomkostninger."
+title: Forudsætninger for standardomkostninger
+description: I dette emne beskrives de grundlæggende trin til brug af standardomkostninger.
 author: AndersGirke
 manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: d5a4a4e49ef1cee923011ddab24497c65f85c1e3
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359077"
 ---
-
 # <a name="prerequisites-for-standard-costs"></a>Forudsætninger for standardomkostninger
 
 [!include [banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Kunder, der vil ændre deres eksisterende varer til en lagermodel med standardom
 
 - [Sådan opsættes standardomkostninger for direkte materialer i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Direkte standardlønomkostninger i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-

@@ -1,13 +1,13 @@
---- 
-title: "Oprette råvarer (februar 2016)"
-description: "Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprodukter."
+---
+title: Oprette råvarer (februar 2016)
+description: Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprodukter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, InventItemPrice
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 091b6edaf43e86e6e3665bf79871648473e284c7
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351050"
 ---
 # <a name="create-raw-materials-february-2016"></a>Oprette råvarer (februar 2016)
 
@@ -156,5 +156,4 @@ Denne opgave drejer sig om oprettelse af færdige produkter og halvfabrikataprod
 25. Klik på Aktivér afventende pris(er).
 26. Luk siden.
 27. Luk siden.
-
 

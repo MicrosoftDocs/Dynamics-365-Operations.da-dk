@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en faktureringskode for den offentlige sektor
-description: "Brugerdefinerede felter til faktureringskoder gør det muligt at indsamle værdier for faktureringskodefelter, når der oprettes fritekstfakturaer."
+description: Brugerdefinerede felter til faktureringskoder gør det muligt at indsamle værdier for faktureringskodefelter, når der oprettes fritekstfakturaer.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCustomField
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3a93cd1d7145353e2a83c87fe87d1f4d6b85f12c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: da9b072e9eeb1c581e900882648daa8b87d3bf1d
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370226"
 ---
 # <a name="create-a-billing-code-for-the-public-sector"></a>Oprette en faktureringskode for den offentlige sektor
 
@@ -40,5 +40,4 @@ Brugerdefinerede felter til faktureringskoder gør det muligt at indsamle værdi
 6. Valgfrit: I feltet Beskrivelse af forbrug kan du beskrive, hvordan det brugerdefinerede felt skal bruges. Oplysningerne anvendes kun internt. De er ikke synlige for brugeren.
 7. Åbn referencesektionen Faktureringskode. Når du tildeler dette brugerdefinerede felt til en faktureringskode, vises den faktureringskoden her.
 8. Klik på Gem.
-
 
