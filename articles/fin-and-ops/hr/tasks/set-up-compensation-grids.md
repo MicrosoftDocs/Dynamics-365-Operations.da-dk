@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurere kompensationsgitre
-description: "Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer."
+description: Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for fast løn-planer.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 139c4e2adbf5029f8084c7c934a05def04cd31ca
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340401"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurere kompensationsgitre
 
@@ -93,5 +93,4 @@ Kompensationsgitre bruges til at definere og vedligeholde lønstrukturerne for f
 28. Indtast eller vælg en værdi i feltet Referencepunkt.
 29. Markér eller fjern markeringen af alle rækker på listen.
 30. Klik på Anvend på gitter.
-
 

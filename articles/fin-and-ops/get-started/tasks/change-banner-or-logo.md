@@ -1,13 +1,13 @@
---- 
+---
 title: Skifte banner eller logo
-description: "Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed."
+description: Følgende procedure viser de trin, som systemadministratorer kan bruge til at opdatere banneret eller logo-billedet, der vises for en juridisk enhed.
 author: aneesmsft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ed0a4e31e840f771f1620b42518ed0e03dbad151
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d2dac4d1799a958b6eff4c7aa134fe0b136089ca
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332949"
 ---
 # <a name="change-the-banner-or-logo"></a>Skifte banner eller logo
 
@@ -41,5 +41,4 @@ Følgende procedure viser de trin, som systemadministratorer kan bruge til at op
 8. Gå til Fælles > Fælles > Standarddashboard.
     * Du kan se det nye bannerbillede eller logobillede på dashboardet.  
     * Du skal muligvis ændre dit firma ved hjælp af firmavælgeren til det firma, du har overført banneret til.  
-
 

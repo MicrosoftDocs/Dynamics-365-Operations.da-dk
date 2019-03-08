@@ -1,13 +1,13 @@
 ---
 title: Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
-description: "Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål."
+description: Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapportering. Denne artikel indeholder oplysninger om de omkostningsarter, du skal definere for disse typer produktionsarbejde til produktions- og projektformål.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326026"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Omkostningsarter, der bruges i Produktionsstyring og Projektstyring og regnskab
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Nogle typer produktionsarbejde kan gælde for projekttidsestimater og rapporteri
 -   De finanskonti, der vedrører omkostninger og salg, defineres normalt for den kategorigruppe, der er knyttet til omkostningsarten. Der kan dog angives bestemte konti for en individuel omkostningsart.
 
 De ekstra knapper på siden **Omkostningsart** giver adgang til projektrelaterede oplysninger om en markeret omkostningsart. Du kan f.eks. få vist projektrelaterede posteringer, definere medarbejdere eller projekter, definere timemæssige omkostninger og salgspriser samt få vist rapporter.
-
 
 
 

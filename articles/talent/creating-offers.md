@@ -1,31 +1,30 @@
 ---
 title: Oprettelse, godkendelse og signering af tilbud
-description: "Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 for Talent."
+description: Dette emne indeholder oplysninger om, hvordan du kan oprette, godkende og underskrive et kandidattilbud ved hjælp af Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303781"
 ---
-
 # <a name="creating-approving-and-signing-offers"></a>Oprettelse, godkendelse og signering af tilbud
 
 [!include[banner](../includes/banner.md)]
@@ -149,4 +148,3 @@ Et tilbud kan trækkes tilbage fra en kandidat når som helst og af forskellige 
 ## <a name="closing-an-offer"></a>Lukning af et tilbud 
 
 Når et tilbud er blevet accepteret, afvist eller trukket tilbage, uden at der kræves yderligere handlinger, kan du lukke tilbuddet, så der ikke kan foretages yderligere redigeringer af denne tilbudspakke.
-

@@ -1,13 +1,13 @@
 ---
 title: Momsberegningsmetoderne i feltet Grundlag
-description: "I denne artikel beskrives indstillingerne i feltet Grundlag på siden Momskoder, og hvordan momsen beregnes ud fra den valgte indstilling for en momskode."
+description: I denne artikel beskrives indstillingerne i feltet Grundlag på siden Momskoder, og hvordan momsen beregnes ud fra den valgte indstilling for en momskode.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 1473eeb2950296f5ae6250d7a53794af3d9cba81
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330672"
 ---
-
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Momsberegningsmetoderne i feltet Grundlag
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,6 @@ Dokument/kladde er angivet til Beløb inkl. moms = Nej Beløb på transaktionsli
 [Bestemmelse af momssatser baseret på beregningsgrundlaget og felter for beregningsmåde](marginal-base-field.md)
 
 [Indstillinger for beregning af hele beløbet og intervaller for momskoder](whole-amount-interval-options-sales-tax-codes.md)
-
 
 
 

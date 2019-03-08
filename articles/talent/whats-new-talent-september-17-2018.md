@@ -1,32 +1,31 @@
 ---
-title: "Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (17. september 2018)"
-description: "Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR."
+title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (17. september 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 6586761fc62c13c701e8a8f61e15eedc66e2f751
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303753"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (17. september 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (17. september 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -57,4 +56,3 @@ Platformsopdatering 18 er nu en del af Talent-udgivelsen.
 ## <a name="bug-fixes"></a>Fejlrettelser
 
 Denne version omfatter flere ekstra fejlrettelser, herunder at referencer til ACA, ADA og I9 nu kun er aktiveret i amerikanske firmaer.
-

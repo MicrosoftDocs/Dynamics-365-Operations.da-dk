@@ -1,13 +1,13 @@
 ---
-title: "Ofte stillede spørgsmål til Finance and Operations-klient"
-description: "Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Finance and Operations-klienten."
+title: Ofte stillede spørgsmål til Finance and Operations-klient
+description: Denne artikel indeholder svar på ofte stillede spørgsmål om Microsoft Dynamics 365 for Finance and Operations-klienten.
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316711"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Ofte stillede spørgsmål til Finance and Operations-klient
 
 [!include [banner](../includes/banner.md)]
@@ -56,4 +55,3 @@ Indstillingen **Vis detaljer** er tilgængelig på flere måder:
 
 - Hvis et kontrolelement har funktionaliteten **Vis detaljer**, og hvis kontrolelementet har en værdi, vises denne værdi som et hyperlink. Du kan klikke på hyperlinket for at åbne en side, der indeholder yderligere oplysninger.
 - **Vis detaljer** er også en indstilling i genvejsmenuer i Finance and Operations. Du kan finde flere oplysninger om, hvornår genvejsmenuer i Finance and Operations vises, når du højreklikker, i det forrige afsnit.
-

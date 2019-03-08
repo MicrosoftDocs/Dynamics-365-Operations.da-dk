@@ -1,13 +1,13 @@
 ---
-title: "Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel"
-description: "Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel."
+title: Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel
+description: Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340631"
 ---
-
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Åbne enhedsdata i Excel og opdatere dem ved hjælp af tilføjelsesprogrammet til Excel
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. For at åbne enhedsdataene kan du enten starte fra Microsoft Excel eller Microsoft Dynamics 365 for Finance and Operations.
+Dette emne forklarer, hvordan du åbner enhedsdata i Microsoft Excel, og derefter får vist, opdaterer og redigerer dataene ved hjælp af Microsoft Dynamics Office-tilføjelsesprogrammet til Excel. Når du vil åbne dataene i enheden, kan du starte fra enten Excel eller Microsoft Dynamics 365 for Finance and Operations.
 
 Ved at åbne enhedsdata i Excel, kan du hurtigt og let få vist og redigere dataene ved hjælp af tilføjelsesprogrammet til Excel. Dette tilføjelsesprogram kræver Microsoft Excel 2016.
 
 > [!NOTE]
-> Bemærk! Hvis din Microsoft Azure Active Directory (Azure AD)-lejer er konfigureret til at bruge Active Directory Federation Services (AD FS), skal du kontrollere, at opdateringen fra maj 2016 til Office er anvendt, så Excel-tilføjelsesprogrammet kan logge dig korrekt på.
+> Hvis din Microsoft Azure Active Directory (Azure AD)-lejer er konfigureret til at bruge Active Directory Federation Services (AD FS), skal du kontrollere, at opdateringen fra maj 2016 til Office er anvendt, så Excel-tilføjelsesprogrammet kan logge dig korrekt på.
 
 Hvis du vil vide mere om brug af tilføjelsesprogrammet til Excel, kan du se den korte video [Opret en Excel-skabelon for hoved- og linjemønstre i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
@@ -125,4 +124,3 @@ Der er nogle få problemer, der kan løses gennem nogle nemme trin.
 - **Knappen Indlæs applets vises** – Hvis Excel-tilføjelsesprogrammet har en knap med teksten **Indlæs applets**, når du er logget på, er du sandsynligvis ikke er logget på som den korrekte bruger. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
 - **Du får vist meddelelsen "Forbudt"** – Hvis du får vist meddelelsen "Forbudt", mens Excel-tilføjelsesprogrammet indlæser metadata, har den konto, der er logget på Excel-tilføjelsesprogrammet ikke tilladelse til at bruge den målsatte tjeneste, forekomst eller database. Du kan løse dette problem ved at kontrollere, at det rigtige brugernavn vises i øverste højre hjørne af Excel-tilføjelsesprogrammet. Hvis der vises et forkert brugernavn, skal du vælge det, logge af og derefter logge på igen.
 - **En tom webside vises i Excel** – Hvis der åbnes en tom webside under logon-processen, kræver kontoen AD FS, men den version af Excel, der kører tilføjelsesprogrammet, er ikke ny nok til at indlæse logon-dialogboksen. Du kan løse dette problem ved at opdatere den version af Excel, du bruger. For at opdatere versionen af Excel, når du er i en virksomhed, der er på den udskudte kanal, kan du bruge [Office Udrulningsværktøj](https://technet.microsoft.com/library/jj219422.aspx) til [at flytte fra den udskudte kanal til den aktuelle kanal](https://technet.microsoft.com/library/mt455210.aspx).
-

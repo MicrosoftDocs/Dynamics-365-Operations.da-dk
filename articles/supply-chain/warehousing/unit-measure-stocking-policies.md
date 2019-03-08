@@ -1,13 +1,13 @@
 ---
-title: "Måleenhed og lagerføringspolitikker"
+title: Måleenhed og lagerføringspolitikker
 description: I denne artikel beskrives det, hvordan standardenheder, enhedssekvenser og enhedsomregninger bruges i lagerprocesser.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c484f814d9f1e726fd326e1cd0ea8fe694f797b9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e0a22e07f5a0e5bc30c8ad9dc87c5a506d62847d
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318091"
 ---
-
 # <a name="unit-of-measure-and-stocking-policies"></a>Måleenhed og lagerføringspolitikker
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Hvis du vil angive standardenheder, der skal bruges til at modtageprocesser på 
 
 ## <a name="default-order-settings"></a>Standardindstillinger for ordre
 Som en del af oprettelsen af frigivne produkter skal du vælge standardenhederne for køb, salg og lager for at behandle de forskellige ordrer. Du kan angive standardenheder og mængder for de forskellige kildedokumenter ved hjælp af siderne **Standardindstillinger for ordre** og **Stedspecifikke ordreindstillinger**. Du kan få adgang til disse sider fra siden **Frigivne produkter**.
-
 
 
 

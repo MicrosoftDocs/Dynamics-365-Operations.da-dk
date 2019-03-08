@@ -1,13 +1,13 @@
---- 
+---
 title: Generere og behandle debitorrabatter
-description: "Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kravet til punktet, hvor de godkendes som periodiseringer til debitor."
+description: Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kravet til punktet, hvor de godkendes som periodiseringer til debitor.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336445"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle debitorrabatter
 
@@ -83,5 +83,4 @@ Denne fremgangsmåde viser, hvordan kunderabatter behandles fra generering af kr
 9. Indtast eller vælg en værdi i feltet Kunde.
 10. Klik på OK.
     * Der vises en meddelelse, at rabatten blev behandlet, og status for kravene er blevet ændret til Markér. Det betyder, at som følge af en rabatperiodiseringskladde bogføres: a) kravene er nu overført til den midlertidige debitorsaldo som fradrag, b) periodiseringskonto for rabat er krediteret for at repræsentere de fremtidige betalingsforpligtelse mod kunden og c) rabatudgiftskontoen er debiteret i anerkendelse af omkostningen i forbindelse med salg.   
-
 

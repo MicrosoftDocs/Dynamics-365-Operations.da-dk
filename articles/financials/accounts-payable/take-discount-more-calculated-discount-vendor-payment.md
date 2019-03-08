@@ -1,13 +1,13 @@
 ---
-title: "Brug en rabat, der er større end den beregnede rabat, til en kreditorbetaling"
-description: "Denne artikel fører dig gennem en situation, hvor en kasserabat anvendes for et beløb, der er større end den rabat, der oprindeligt blev brugt på fakturaen. Denne situation kan opstå, hvis en organisation har en aftale med leverandøren om at betale et mindre beløb på fakturaen."
+title: Brug en rabat, der er større end den beregnede rabat, til en kreditorbetaling
+description: Denne artikel fører dig gennem en situation, hvor en kasserabat anvendes for et beløb, der er større end den rabat, der oprindeligt blev brugt på fakturaen. Denne situation kan opstå, hvis en organisation har en aftale med leverandøren om at betale et mindre beløb på fakturaen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 66296bc22cb3b940ed914b77b8c3a7c054d4aa71
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0c9e4bccb6e38e2e6d50256bc609b1552d9b21c5
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326831"
 ---
-
 # <a name="take-a-discount-that-is-more-than-the-calculated-discount-for-a-vendor-payment"></a>Brug en rabat, der er større end den beregnede rabat, til en kreditorbetaling
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Rabatoplysninger vises nederst på siden **Udlign transaktioner**.
 | Kasserabatbeløb, der skal medtages | 60,00     |
 
 Derefter bogfører April betalingskladden. Fakturaen udlignes fuldt ud med en betaling på 940,00 og en rabat på 60,00.
-
 
 
 

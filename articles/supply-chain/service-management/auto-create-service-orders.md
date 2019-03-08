@@ -5,27 +5,26 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0189a9f99ffbb6ed2387211ba9e3b9f3bcdb3b52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2d942d4448e0f792945603d3f5960fb82095be30
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331178"
 ---
-
 # <a name="automatically-create-service-orders"></a>Oprette serviceordrer automatisk 
 
 [!include [banner](../includes/banner.md)]
@@ -58,6 +57,5 @@ Serviceaftalen gælder fra 1. januar 2012 til 31. december 2012. Hvis den servic
 Serviceaftalen gælder fra 1. januar 2012 til 31. december 2012. Der knyttes to serviceaftalelinjer til serviceaftalen. Den første serviceaftalelinje har startdato den 2. januar 2012 og slutdato den 1. marts 2012. Den anden serviceaftalelinje har startdato den 1. april 2012 og slutdato den 31. december 2012. Du angiver en periode i formularen **Opret serviceordrer**, der går fra 1. oktober 2012 til 31. december 2012. Derfor genereres der kun serviceordrer for den anden aftalelinje, da startdatoen og slutdatoen for den første aftalelinje ligger før den periode, du har angivet for serviceordren.
 
   
-
 
 

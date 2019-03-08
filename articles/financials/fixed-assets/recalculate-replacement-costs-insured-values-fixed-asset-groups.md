@@ -1,13 +1,13 @@
 ---
-title: "Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper"
-description: "Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver."
+title: Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
+description: Denne artikel beskriver processen til opdatering af genanskaffelsespriser og forsikrede værdier for anlægsaktiver.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324370"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Efterberegn genanskaffelsespriser og forsikrede værdier for anlægsaktivgrupper
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Næste dag får du besked fra chefen om, at værdien på computere er formindske
 
 > [!NOTE]  
 > Du kan ikke tilbageføre faktoren -10 ved at angive en positiv faktor på 10 (eller en faktor på 2, som er differencen mellem -10 og -8), da beløbene ikke beregnes som forventet. 
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Generere et overførselsdokument for en intern lageroverførsel"
-description: "Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed."
+---
+title: Generere et overførselsdokument for en intern lageroverførsel
+description: Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4b9ef0026129d958b4214bb6e235c288de023d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 30e5f6ad184720d0e119f86fb703ed7211b27fab
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321357"
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Generere et overførselsdokument for en intern lageroverførsel
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed. Denne procedure er kun tilgængelig for juridiske enheder med en primær adresse i Litauen. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Litauen. Før du kan udføre denne procedure, skal du fuldføre proceduren "Konfiguration af overførselsdokumenter for transport af varer inden for virksomheden". Denne procedure er kun beregnet til lagerregnskabsmedarbejdere. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer i en virksomhed. Denne procedure er kun tilgængelig for juridiske enheder med en primær adresse i Litauen. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Litauen. Før du kan udføre denne procedure, skal du fuldføre proceduren "Konfiguration af overførselsdokumenter for transport af varer inden for virksomheden". Denne procedure er kun beregnet til lagerregnskabsmedarbejdere. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="create-a-transfer-order"></a>Oprette en flytteordre
@@ -73,5 +73,4 @@ Denne fremgangsmåde viser, hvordan du opretter dokumenter til flytning af varer
 9. Klik på Send i handlingsruden.
 10. Klik på følgeseddel.
 11. Klik på OK.
-
 

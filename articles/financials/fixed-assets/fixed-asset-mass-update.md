@@ -1,13 +1,13 @@
 ---
-title: "Masseopdatere anlægsaktiver"
-description: "Hvis du bruger modeller, kan du ændre afskrivningsprincipperne for grupper af aktiver, der indgår i samme model."
+title: Masseopdatere anlægsaktiver
+description: Hvis du bruger modeller, kan du ændre afskrivningsprincipperne for grupper af aktiver, der indgår i samme model.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3fb55f1a51652299db8a31274b07f239fbaf28f
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348796"
 ---
-
 # <a name="fixed-asset-mass-update"></a>Masseopdatere anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Når du opdaterer afskrivningsprincippet for aktiverne, sletter du alle eksister
 Hvis du vil opdatere afskrivningsprincippet for aktiver, der allerede er afhændet, skal du først slette eksisterende kassationsposteringer. Du skal også slette alle de posteringer, der blev oprettet på grund af kassationsprocessen. 
 
 Når du har opdateret afskrivningsprincippet for aktiverne, kan du behandle afskrivning og ekstraordinær afskrivning for hvert enkelt anlægsaktiv. Du kan også udføre manuelle afskrivningsreguleringer, hvis det er nødvendigt.
-
 
 
 

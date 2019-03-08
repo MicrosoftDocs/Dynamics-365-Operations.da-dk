@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en ny model for produktkonfiguration
-description: "Denne procedure viser, hvordan du opretter en produktkonfigurationsmodel og indsætter stamoplysninger som f.eks. attributter og underkomponenter."
+description: Denne procedure viser, hvordan du opretter en produktkonfigurationsmodel og indsætter stamoplysninger som f.eks. attributter og underkomponenter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCCreateProductConfigurationModel, PCProductConfigurationModelDetails, PCBOMLineDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a5b3d19c680e14fe4074314a95937d30d4ad2c7a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
-ms.openlocfilehash: d494a20ba6f1f9c33a3935779b4bd3a8eefce26a
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/14/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315860"
 ---
 # <a name="create-a-product-configuration-model"></a>Oprette en ny model for produktkonfiguration
 
@@ -82,5 +82,4 @@ Denne procedure viser, hvordan du opretter en produktkonfigurationsmodel og inds
 16. Marker afkrydsningsfeltet Indstil.
 17. Angiv et nummer i feltet Pr. serie.
 18. Klik på OK.
-
 

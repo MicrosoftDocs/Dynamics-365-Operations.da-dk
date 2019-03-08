@@ -1,13 +1,13 @@
 ---
 title: Importere og vedligeholde kreditkorttransaktioner
-description: "Dette emne forklarer, hvordan du importerer og vedligeholder udgiftsrelaterede kreditkorttransaktioner. Disse transaktioner kan konfigureres, så de automatisk importeres efter en gentaget plan, eller du kan importere transaktionerne manuelt efter behov."
+description: Dette emne forklarer, hvordan du importerer og vedligeholder udgiftsrelaterede kreditkorttransaktioner. Disse transaktioner kan konfigureres, så de automatisk importeres efter en gentaget plan, eller du kan importere transaktionerne manuelt efter behov.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPbsMainDataLines
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 9674cf495b7fdd40d8672580b9d10e9ebe626bb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e640c9e44add5599be4a2e381b4ffd81f212889c
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322645"
 ---
-
 # <a name="import-and-maintain-credit-card-transactions"></a>Importere og vedligeholde kreditkorttransaktioner
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ Du kan finde flere oplysninger om dataenheder under [Dataenheder](../../dev-itpr
 Når en medarbejderpost er afsluttet, deaktiveres medarbejderens Active Directory-domænetjenester (AD DS)-konto. Der kan dog være aktive kreditkorttransaktioner, der stadig skal udgiftsføres og godtgøres. Fra siden **Kreditkorttransaktioner** kan du igen tildele medarbejderen enhver kreditkorttransaktion, hvor den tilknyttede medarbejder er fratrådt.
 
 Vælg en eller flere kreditkorttransaktioner, og vælg derefter **Omfordel transaktioner**. Du kan derefter vælge en anden medarbejder, som kreditkorttransaktionerne skal tildeles til. Når kreditkorttransaktionerne er blevet tildelt igen, kan de vælges til en udgiftsrapport og betales gennem den normale proces for refusion af udgiftsrapport.
-

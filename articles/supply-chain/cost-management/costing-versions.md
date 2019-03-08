@@ -1,13 +1,13 @@
 ---
 title: Efterkalkulationsversioner
-description: "Denne artikel indeholder oplysninger om efterkalkulationsversioner, hvordan du vedligeholder dem, og de typer data, som du kan medtage i dem. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger."
+description: Denne artikel indeholder oplysninger om efterkalkulationsversioner, hvordan du vedligeholder dem, og de typer data, som du kan medtage i dem. Det primære formål med en efterkalkulationsversion er at opbevare omkostningsposter om varer, omkostningskategorier og formler til beregning af indirekte omkostninger.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330143"
 ---
-
 # <a name="costing-versions"></a>Efterkalkulationsversioner
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Hovedårsagen til aktivering af købsprisdata er at definere købsprisposter for
 For at aktivere indhold om købspris skal du først definere en styklistekalkulationsgruppe, der indeholder en kostprismodel for varens købspris, og derefter knytte en styklistekalkulationsgruppe til købte varer. Du skal derefter bruge en kostprismodel for styklistekalkulationsgruppen, når du udfører styklistekalkulationer, der bruger planlagte omkostninger, for at beregne salgsprisen for producerede varer. 
 
 Købsprisposterne for varer bruges også kun som referenceoplysninger. Ved at ændre status for en vares købsprispost fra **Venter** til **Aktiv** kan du opdatere varens basiskøbspris. Basiskøbsprisen er dog ikke lokationsspecifik, og den kan tilsidesættes manuelt. Varens basiskøbspris bruges som standardkøbspris på indkøbsordrer.
-
 
 
 

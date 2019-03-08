@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurere dispositionskoder
-description: "Denne fremgangsmåde fokuserer på oprettelsen af en dispositionskode, der kan bruges på en mobil enhed for returordren modtager proces."
+description: Denne fremgangsmåde fokuserer på oprettelsen af en dispositionskode, der kan bruges på en mobil enhed for returordren modtager proces.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85402e05d55367da5fe89b242ad8eafc727b441e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c004543188656dfd53d7539717cd6e93d0b9f47a
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324117"
 ---
 # <a name="set-up-dispositions-codes"></a>Konfigurere dispositionskoder
 
@@ -39,5 +39,4 @@ Denne fremgangsmåde fokuserer på oprettelsen af en dispositionskode, der kan b
     * Valgfrit: Vælg en skabelonkode, der er tilknyttet en returordre. Hvis ingen værdi er angivet, kan skabelonen arbejde vil blive løst ved hjælp af standardregler, der er konfigureret i systemet. At vælge en skabelon til arbejde vil begrænse denne dispositionskode kan bruges sammen med processerne. For eksempel, hvis en dispositionskode har en arbejde-skabelon med en arbejdsordre af typen indkøbsordre, kan den ikke bruges til at registrere varer, der returneres af kunder.  
 6. Indtast en værdi i feltet Returdispositionskode.
     * Returdispositionskoden bestemmer resten af returordreprocessen for de varer, der er registreret. I dette eksempel bør debitoren modtage en kreditnota. Tilføj en returdispositionskode, der indeholder handlingen Kredit.  
-
 

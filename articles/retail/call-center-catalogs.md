@@ -1,13 +1,13 @@
 ---
 title: Callcenter-kataloger
-description: I dette emne beskrives callcenterspecifikke funktioner for kataloger i Microsoft Dynamics 365 for Retail.
+description: I dette emne beskrives call center-specifikke funktioner for kataloger i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322737"
 ---
-
 # <a name="call-center-catalogs"></a>Callcenter-kataloger
 
 [!include [banner](includes/banner.md)]
@@ -102,4 +101,3 @@ Under fanen **Kataloger** findes også indstillinger til konfiguration af en **B
 ## <a name="additional-notes"></a>Yderligere bemærkninger
 
 Når et kildekode-id i øjeblikket anvendes på en salgsordre i callcenteret, bruges det til at vise priser, kampagner, scripts og mersalg eller tillægssalg, der gælder for et bestemt katalog. Systemet kan ikke forbyde eller forhindre, at et produkt, ikke der findes i kataloget, kan bestilles på salgsordren. Hvis en vare, der ikke indgår i kataloget, bestilles, bruger systemet først den **Prisgruppe**, der er defineret i callcenterkanalen (**Detail** \> **Kanaler** \> **Call centers** \> **Alle call centers**) til varepris eller kampagner. Hvis der ikke findes en bestemt kanalpris, bruges basissalgsprisen for varen.
-

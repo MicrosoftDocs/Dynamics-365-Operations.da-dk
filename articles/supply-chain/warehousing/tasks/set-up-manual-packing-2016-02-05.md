@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurer manuel pakning (februar 2016 og maj 2016)
-description: "Pakningsprocessen gør det muligt at validere og pakke af produkter i containere."
+description: Pakningsprocessen gør det muligt at validere og pakke af produkter i containere.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347715"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Konfigurer manuel pakning (februar 2016 og maj 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Pakningsprocessen gør det muligt at validere og pakke af produkter i containere. I denne proces plukker lagermedarbejdere produkter fra lagerplaceringerne og flytter dem til en pakkestation, hvor de kan kontrollere vareantal og -typer og tildele dem til passende containere. Når en container er helt pakket, kan de lukke den og flytte den til forsendelsesområderne, og produkterne er klar til afsendelse. Denne procedure bruger demofirmaet USMF. Denne procedure er kun for februar 2016- og maj 2016-versionerne af Dynamics 365 for Operations.
+Pakningsprocessen gør det muligt at validere og pakke af produkter i containere. I denne proces plukker lagermedarbejdere produkter fra lagerplaceringerne og flytter dem til en pakkestation, hvor de kan kontrollere vareantal og -typer og tildele dem til passende containere. Når en container er helt pakket, kan de lukke den og flytte den til forsendelsesområderne, og produkterne er klar til afsendelse. Denne procedure bruger demofirmaet USMF. Denne procedure gælder kun for februar 2016- og maj 2016-versionerne af Dynamics 365 for Operations.
 
 
 ## <a name="set-up-location-profiles"></a>Konfigurer lokationsprofiler
@@ -94,5 +94,4 @@ Pakningsprocessen gør det muligt at validere og pakke af produkter i containere
     * Dette er den lokation, som produkter skal flyttes til, når containerne er lukkede. Denne lokation skal have en lokationsprofil, der er defineret i Lagerstedsparametre.  
 8. Indtast eller vælg en værdi i feltet Vægtenhed.
 9. Klik på Gem.
-
 

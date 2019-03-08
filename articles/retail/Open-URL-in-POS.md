@@ -1,36 +1,35 @@
 ---
-title: "Åbne URL-adresse i POS"
-description: "Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail."
+title: Åbne URL-adresse i POS
+description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 11/14/2018
+ms.date: 01/28/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b07406b4e218b45bdde87c4a579814fe0edbc286
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327084"
 ---
-
-# <a name="open-url-in-pos"></a>Åbne URL-adresse i POS
+# <a name="open-url-in-pos"></a>Åbn URL-adresse i POS
 
 [!include [banner](includes/banner.md)]
 
-I dette emne beskrives, hvordan du kan konfigurere en knap i Retail POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler.
+I dette emne beskrives, hvordan du kan konfigurere en knap i Retail POS til at åbne en URL-adresse. Denne funktion kræver ikke tilpasning af kode og kan konfigureres af en person, der ikke har rollen som udvikler. Denne funktion er tilgængelig som en del af Dynamics 365 for Finance and Operations 8.1.3-versionen (build 8.1.227.10014) og nyere. 
 
 Denne funktion gør det muligt ved hjælp af knapmatrixdesigneren at konfigurere en knap i POS til at åbne en URL-adresse. Dette understøttes i øjeblikket i følgende konfigurationer:
 
@@ -67,7 +66,7 @@ I Windows, iOS og Android er det også muligt at åbne apps mere problemfrit ved
 | Modern POS i Windows | ✓\*                | ✓               | ✓              | \* Åbner i et nyt Modern POS-vindue |
 | Cloud POS             | ✓\*                | ✓               | X              | \* Åbner under en ny fane i browseren        |
 | Moderne POS i iOS     | ✓\*                | ✓               | X              | \* Åbner under en ny fane i browseren        |
-| Modern POS i Android | ✓\*                | ✓               | X              | \* Åbner under en ny fane i browseren        |
+| Modern POS på Android | ✓\*                | ✓               | X              | \* Åbner under en ny fane i browseren        |
 
 ## <a name="before-you-begin"></a>Før du begynder
 
@@ -84,4 +83,3 @@ Hvis du vil konfigurere en URL-adresse, så den kan åbnes i POS, skal du udfør
 5. Vælg **Åbn URL** som handling.
 6. Angiv den URL-adresse, du vil bruge.
 7. Angiv, om URL-adressen skal åbnes i et nyt vindue.
-

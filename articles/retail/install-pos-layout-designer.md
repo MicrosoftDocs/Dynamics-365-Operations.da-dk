@@ -1,13 +1,13 @@
 ---
 title: Installere layoutdesigneren til Retail POS
-description: "Du kan bruge ét-klik-designer til at designe forskellige Retail Modern POS (MPOS) og Cloud POS-layout, i enten liggende eller stående tilstand, til butikker, kasseapparater, kasserer og ledere."
+description: Du kan bruge ét-klik-designer til at designe forskellige Retail Modern POS (MPOS) og Cloud POS-layout, i enten liggende eller stående tilstand, til butikker, kasseapparater, kasserer og ledere.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327636"
 ---
-
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Installere layoutdesigneren til Retail POS
 
 [!include [banner](includes/banner.md)]
@@ -41,7 +40,7 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
 2. Vælg et layout, der har programtypen **Modern POS til Windows** eller **Cloud POS**, og klik derefter på **Layoutdesigner**.
 3. Klik på **Åbn** på meddelelseslinjen nederst i vinduet Internet Explorer for at starte ét klik-designeren. (Meddelelseslinjen vises muligvis et andet sted i andre browsere).
 4. I **Programkørsel - Sikkerhedsadvarsel**-meddelelsen, der vises, skal du klikke på **Kør** for at installere Retail designerværten. Statusindikatoren viser forløbet af installationen.
-5. Når installationen er fuldført, skal du angive dit brugernavn og din adgangskode til Microsoft Dynamics 365 for Retail på siden **Log på** og derefter klikke på **Log på** for at starte designeren.
+5. Når installationen er fuldført, skal du på siden **Log på** angive dit brugernavn og din adgangskode til Microsoft Dynamics 365 for Retail og derefter klikke på **Log på** for at starte designeren.
 6. Når dine legitimationsoplysninger er valideret, og designeren starter, kan du designe dit eget layout eller redigere det eksisterende layout.
 
     [![Layout i ét klik-designeren](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -53,15 +52,14 @@ Det grafiske design af brugergrænsefladen for MPOS og Cloud POS styres af penge
     **Løsninger:**
 
     - Sørg for, at blokering af pop-up-vinduer er deaktiveret for dette websted i Internet Explorer. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Beskyttelse af personlige oplysninger** &gt; **Blokering af pop op-vinduer**, og skift indstillingen, hvis der kræves en ændring.
-    - Tilføj Dynamics-365 for Retail-URL-adresse på listen over websteder, du har tillid til, i Internet Explorer. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
+    - I Internet Explorer skal du føje Dynamics 365 for Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
 
 - Programmet starter ikke, og du bliver bedt om at kontakte leverandøren.
 
-    **Løsning:** Tilføj Dynamics-365 for Retail-URL-adresse på listen over websteder, du har tillid til, i Internet Explorer. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
+    **Løsning:** I Internet Explorer skal du føje Dynamics 365 for Retail URL-adressen til listen over websteder, der er tillid til. Klik på **Indstillinger** &gt; **Indstillinger** &gt; **Sikkerhed** &gt; **Websteder, du har tillid til** &gt; **Websteder** &gt; **Tilføj**.
 
 **Kendt problem:** Designeren virker ikke korrekt i Google Chrome- og Mozilla Firefox-browsere. Vi arbejder på at løse dette problem.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-[Konfigurere, downloade, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md)
-
+[Konfigurere, hente, installere og aktivere Retail Modern POS](retail-modern-pos-device-activation.md)

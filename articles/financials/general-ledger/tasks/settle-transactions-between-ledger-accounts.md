@@ -1,13 +1,13 @@
---- 
+---
 title: Udligne posteringer mellem finanskonti
 description: Denne procedure viser, hvordan du udligner posteringer mellem finanskonti og annullerer en finansudligning.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: 4aff64fa1c017f295752e913de7fb320f0662ef8
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325819"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Udligne posteringer mellem finanskonti
 
@@ -48,5 +48,4 @@ Denne procedure viser, hvordan du udligner posteringer mellem finanskonti og ann
 6. Brug et filter til nemt at finde posteringen på listen.
 7. Klik på Finansudligninger.
 8. Markér den valgte række på listen.
-
 

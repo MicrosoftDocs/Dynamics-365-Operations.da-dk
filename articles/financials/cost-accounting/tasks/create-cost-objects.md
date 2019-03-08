@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette omkostningsobjekter
-description: "Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere den økonomiske Dynamics 365 for Finance and Operations, Enterprise edition-dimension af typen Bærer til omkostningsregnskabet via en dataconnector."
+description: Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere den økonomiske Dynamics 365 for Finance and Operations Enterprise edition-dimension af typen Bærer til omkostningsregnskabet via en dataconnector.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1e12de1d51658092fb19f652cef7c1cc78b255b5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d43274aed2edbb91fd4e399cb8d45e91646b055
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322668"
 ---
 # <a name="create-cost-objects"></a>Oprette omkostningsobjekter 
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere den økonomiske Dynamics 365 for Finance and Operations, Enterprise edition-dimension af typen Bærer til omkostningsregnskabet via en dataconnector. Demofirmaet USMF bruges til at oprette denne procedure. Denne fremgangsmåde er til en Omkostningsregnskab-funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere den økonomiske Dynamics 365 for Finance and Operations Enterprise edition-dimension af typen Bærer til omkostningsregnskabet via en dataconnector. Demofirmaet USMF bruges til at oprette denne procedure. Denne fremgangsmåde er til en funktion for omkostningsregnskab, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="create-new-cost-objects"></a>Opret nye omkostningsobjekter
@@ -50,5 +50,4 @@ Denne procedure viser, hvordan du opretter omkostningsobjekter ved at importere 
 
 ## <a name="view-the-imported-cost-centers"></a>Få vist de importerede bærere
 1. Klik på Vis dimensionsmedlemmer.
-
 

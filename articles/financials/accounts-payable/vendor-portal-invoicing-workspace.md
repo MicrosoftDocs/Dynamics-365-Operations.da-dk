@@ -1,13 +1,13 @@
 ---
-title: "Arbejdsområde for kreditorsamarbejdsfakturering"
-description: "Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer."
+title: Arbejdsområde for kreditorsamarbejdsfakturering
+description: Dette emne forklarer, hvordan du kan få vist kreditorfakturaer og sende fakturaer fra arbejdsområdet for kreditorsamarbejdsfakturaer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2368fae3913f67d9d2ce0bbe6b2e0bee7968bb15
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340516"
 ---
-
 # <a name="vendor-collaboration-invoicing-workspace"></a>Arbejdsområde for kreditorsamarbejdsfakturering
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Oprettelse af en ny faktura ud fra en indkøbsordre
 Du kan oprette en ny kreditorfaktura ved at vælge handlingen **Ny** i **Kreditorsamarbejdsfakturaer**-arbejdsområdet. Indkøbsordrenummer og fakturanummer skal oplyses af kreditoren. Som standard vises alle linjerne fra kreditorens indkøbsordre på den nye faktura. Oplysninger om antal og omkostninger kan redigeres, inden du sender kreditorfakturaen til arbejdsgangen. Du kan vedhæfte filer, noter, billeder og URL-adresser til en faktura, inden du sender den.
 
 Du kan finde flere oplysninger i [Kreditorsamarbejde med eksterne kreditorer](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Projektprognoser og -budgetter
-description: Microsoft Dynamics 365 for Finance and Operations indeholder projektprognoser og projektbudgetter til at administrere og styre dine projekter.
+description: Microsoft Dynamics 365 for Finance and Operations indeholder projektprognoser og projektbudgetter til administration og styring af dine projekter.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310386"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Projektprognoser og -budgetter
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations indeholder to måder til at administrere og styre dine projekter på: projektprognoser og projektbudgetter. 
+Microsoft Dynamics 365 for Finance and Operations indeholder to måder at administrere og styre projekter på: projektprognoser og projektbudgetter. 
 
 Brug projektprognoser, hvis organisationen har et operationelt perspektiv, og hvis den fokuserer på indtægter og omkostninger, der er udledt af specifikke transaktioner. Brug projektbudgettering, hvis organisationen fokuserer mere på økonomiske beløb. 
 
@@ -80,7 +79,6 @@ Projektbudgetter knyttes automatisk til to prognosemodeller, én for det oprinde
 Prognosemodeller har et hierarki af enkelt lag. Det betyder, at der skal tilknyttes én projektprognose med én prognosemodel.
 
 Hvis du bruger projektprognosticering, kan du identificere modeller som undermodeller. Du kan oprette prognoser afdeling, tidsperiode eller region. Du kan f.eks. oprette en prognosemodel for et år og derefter oprette undermodeller for regionsprognoser for Nordøst, Sydøst, Nordvest og Sydvest, som indsendes af regionale ledere. Når der vælges forskellige indstillinger i de tilgængelige rapporter, kan du få vist oplysninger efter samlet prognose eller efter undermodel.
-
 
 
 

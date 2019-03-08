@@ -5,9 +5,9 @@ author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313008"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Styring af skift og kasseapparater
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +69,7 @@ Hvis delte skift skal bruges i en butik, skal pengeskuffen konfigureres som en "
 
 ## <a name="shift-and-drawer-operations"></a>Skift- og skuffehandlinger
 
-Der kan foretages forskellige handlinger for at ændre tilstanden for et skift eller for at forøge eller formindske det pengebeløb, der i pengeskuffen. Afsnittet nedenfor beskriver disse operationer for skift til Microsoft Dynamics 365 for Retail Modern POS og Cloud POS.
+Der kan foretages forskellige handlinger for at ændre tilstanden for et skift eller for at forøge eller formindske det pengebeløb, der i pengeskuffen. I dette afsnit beskrives disse Skift-operationer for Microsoft Dynamics 365 for Retail Modern POS og Cloud POS.
 
 ### <a name="open-shift"></a>Åbne skift
 
@@ -159,4 +158,3 @@ Gå til **Detail \> Kanaler \> Detailbutikker \> Alle detailbutikker \> Opgørel
 Denne opsætning hjælper med til at sikre, at back office-opgørelser medtager de samme posteringer som skift på POS-enehden, og at dataene opsummeres efter dette skift.
 
 Yderligere oplysninger om opgørelse og lukkemetoder finder du i [Gemme konfigurationer for detailopgørelser](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

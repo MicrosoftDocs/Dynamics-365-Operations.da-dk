@@ -1,13 +1,13 @@
 ---
 title: Prissimulering
-description: "Denne artikel indeholder oplysninger om prissimuleringen for tilbud. Prissimuleringen hjælper dig med at vurdere effekten af fradrag på den fremtidige salgspris under tilbudsprocessen, før du giver tilsagn om en bestemt pris."
+description: Denne artikel indeholder oplysninger om prissimuleringen for tilbud. Prissimuleringen hjælper dig med at vurdere effekten af fradrag på den fremtidige salgspris under tilbudsprocessen, før du giver tilsagn om en bestemt pris.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316527"
 ---
-
 # <a name="price-simulation"></a>Prissimulering
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Det er vigtigt at være omhyggelig, når du kører prissimuleringer på tilbud m
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer af rabatter i samhandelsaftaler
 
-Samhandelsaftaler i Microsoft Dynamics 365 for Finance and Operations kan have fire typer prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
+Samhandelsaftaler i Microsoft Dynamics 365 for Finance and Operations kan have fire typer af prisrabatter. Disse rabatter kan oprettes til forskellige varer, kunder eller prisgrupper, og de kan begrænses med angivelse af en dato. Du skal tage højde for samhandelsaftaler ved kørsel af prissimuleringer for at undgå forkerte beregninger. Her er fire rabattyper, der kan anvendes i samhandelsaftaler:
 
 -   **Salgspris** – Der kan angives separate varesalgspriser. Når tilbudslinjerne oprettes, søger programmet efter den rigtige salgspris for en vare og overføre den til tilbudslinjerne. En samhandelsaftale, der har denne slags rabat, påvirker derfor ikke prissimuleringen. Den salgspris, der bruges i tilbudslinjen, afspejler samhandelsaftalen.
 -   **Linjerabat** – Der angives særlige rabatter for varer, afhængigt af ordreantallet. Linjebeløb reduceres typisk med linjerabatten, før der køres en prissimulering. En samhandelsaftale, der har denne slags rabat, påvirker derfor prissimuleringen.
@@ -143,7 +142,6 @@ Du kører en prissimulering og yder en samlet rabat på 10 procent på BR-12-enh
 | Ny samlet dækningsgrad                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93 %   |
 
 Prissimuleringen påvirker kun den linje, den anvendes på, og reducerer det samlede beløb for den linje.
-
 
 
 

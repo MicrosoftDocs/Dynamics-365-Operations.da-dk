@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette omkostningselementer .
-description: "Du kan oprette omkostningselementer i omkostningsregnskab på flere måder."
+description: Du kan oprette omkostningselementer i omkostningsregnskab på flere måder.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bbaf4f7533d51d554d838e8e9e2aa05ca451298a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e665fc53455e457a2488f4ec28ebb5b715d90eb
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321702"
 ---
 # <a name="create-cost-elements"></a>Oprette omkostningselementer . 
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan oprette omkostningselementer i omkostningsregnskab på flere måder. Denne procedure viser, hvordan du opretter omkostningselementer ved at importere hovedkonti via en dataconnector. Demofirmaet USMF bruges til at oprette denne procedure. Denne fremgangsmåde er til en Omkostningsregnskab-funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Du kan oprette omkostningselementer i omkostningsregnskab på flere måder. Denne procedure viser, hvordan du opretter omkostningselementer ved at importere hovedkonti via en dataconnector. Demofirmaet USMF bruges til at oprette denne procedure. Denne fremgangsmåde er til en funktion for omkostningsregnskab, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="create-new-cost-elements"></a>Opret nye omkostningselementer
@@ -57,5 +57,4 @@ Du kan oprette omkostningselementer i omkostningsregnskab på flere måder. Denn
 ## <a name="view-the-imported-accounts-as-cost-elements"></a>Se importerede konti som omkostningselementer
 1. Klik på Vis dimensionsmedlemmer.
     * Se de importerede finanskonti som omkostningselementer i din virksomhed, som omkostninger kan flyde til.  
-
 

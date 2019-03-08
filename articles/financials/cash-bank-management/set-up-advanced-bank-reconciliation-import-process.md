@@ -1,13 +1,13 @@
 ---
 title: Konfigurere importprocessen for avanceret bankafstemning
-description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken.
+description: Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a04517de6e7695cd27bbc6e6a825e1ccaac7306
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334559"
 ---
-
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurere importprocessen for avanceret bankafstemning
 
 [!include [banner](../includes/banner.md)]
 
-Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
+Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I denne artikel beskrives, hvordan du konfigurerer importfunktionen for dine kontoudtog fra banken. 
 
 Konfigurationen for import af bankkontoudtog varierer afhængigt af formatet på dit elektroniske bankkontoudtog. Finance and Operations understøtter tre standardformater for bankkontoudtog: ISO20022, MT940 og BAI2.
 
@@ -176,7 +175,6 @@ Det sidste trin er at kontrollere, at du kan importere dine kontoudtog.
 8.  Klik på **OK**.
 
 Hvis importen gennemføres, modtager du en meddelelse om, at kontoudtoget blev importeret. Hvis importen ikke lykkes, skal du finde jobbet i arbejdsområdet **Datastyring** i **Jobhistorik**. Klik på **Detaljer om udførelse** for jobbet for at åbne siden **Udførelsesoversigt**, og klik derefter på **Vis udførelseslog** for at få vist importfejl.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
-description: "Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne."
+description: Følgende procedure viser, hvordan en bruger med rollen Systemadministrator eller Udvikler til elektronisk rapportering kan knytte datamodelelementer til komponenter i den oprettede ER-konfiguration (elektroniske rapportering), der definerer et elektronisk dokumentformat for betalingsvirksomhedens domæne.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a24ef0e091379f14a163a6385be988143a1ec608
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323542"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>Tilknyt ER-komponenter i det oprettede format til datamodelelementer (november 2016)
 
@@ -113,5 +113,4 @@ Følgende procedure viser, hvordan en bruger med rollen Systemadministrator elle
 ## <a name="restrict-access-to-created-format-from-companies"></a>Begræns adgang til oprettet format fra firmaer
 1. Udvid sektionen ISO-land/områdekoder.
     * Hver formatadgang kan begrænses ved at identificere bestemte lande/områder, hvori et format er gældende. Hvis listen over lande/områder for det pågældende format er tom, kan dette format bruges i ethvert firma. Når der indsættes nogle ISO-lande/-områdekoder på denne liste over lande/områder, kan dette format kun bruges i firmaer, hvis den primære adresse er i landet/området.  
-
 

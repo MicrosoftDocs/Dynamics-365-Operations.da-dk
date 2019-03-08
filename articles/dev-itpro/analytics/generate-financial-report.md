@@ -1,13 +1,13 @@
 ---
-title: "Generere økonomiske rapporter"
-description: "Dette emne indeholder oplysninger om generering af en økonomisk rapport."
+title: Generere økonomiske rapporter
+description: Dette emne indeholder oplysninger om generering af en økonomisk rapport.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340884"
 ---
-
 # <a name="generate-financial-reports"></a>Generere økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ Følgende indstillinger er tilgængelige for generering af rapporter:
 
 Når du genererer en rapport, bruges de indstillinger, du har angivet under fanen Rapportdefinition .
 
-## <a name="generate-a-financial-report"></a>Generere en økonomisk rapport
+## <a name="generate-a-financial-report"></a>Generér en økonomisk rapport
 
-Du kan generere en økonomirapport i Microsoft Dynamics 365 for Finance and Operations ved at gå til **Finans** \> **Forespørgsler og rapporter** \> **Økonomirapporter**.
+For at oprette en økonomirapport med Microsoft Dynamics 365 for Finance and Operations skal du gå til **Finans** \> **Forespørgsler og rapporter** \> **Økonomirapporter**.
 
 - Vælg en rapport, du vil generere, og klik på **Generer**.
 - Udfyld feltet **Rapportdato**, og klik på **OK**.
@@ -115,7 +114,7 @@ Manglende konti bestemmes ved hjælp af de laveste og højeste værdier fra ræk
 > [!TIP]
 > Af hensyn til valideringen skal denne proces køres, før du genererer månedlige rapporter, og når du opretter nye rapportkomponenter.
 
-Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglende konti. Når det er muligt, kan du bruge intervaller i dokumentkomponenten med nye konti, når de oprettes. Hvis en rapportdefinition er angivet til @ANY-virksomhed, kan du logge på en bestemt virksomhed og køre en manglende kontoanalyse for virksomheden.
+Rapporter, der har værdiintervaller, er mindre tilbøjelige til at have manglende konti. Når det er muligt, kan du bruge intervaller i dokumentkomponenten med nye konti, når de oprettes. Hvis en rapportdefinition er angivet til @ANY firma, kan du logge på et bestemt firma og køre en analyse for manglende konti for det pågældende firma.
 
 > [!NOTE]
 > Hvis der er tilføjet en ny virksomhed, skal du føje den nye virksomhed til rapporteringstræer i eventuelle eksisterende rapporter, ellers medtages virksomheden ikke i manglende kontoanalysen.
@@ -158,4 +157,3 @@ Når du kører en manglende kontoanalyse, er følgende tastaturgenveje tilgænge
 [Økonomirapportering](financial-reporting-intro.md)
 
 [Brugergrænseflade i Rapportdesigner](report-designer-interface.md)
-

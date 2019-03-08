@@ -1,13 +1,13 @@
 ---
-title: "Startside for PowerBI.com-løsninger"
-description: "Dette emne beskriver de PowerBI.com-løsninger, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om løsningerne."
+title: Startside for PowerBI.com-løsninger
+description: Dette emne beskriver de PowerBI.com-løsninger, der er tilgængeligt, og henviser til ressourcer, hvor du kan få flere oplysninger om løsningerne.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316688"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>Startside for PowerBI.com-løsninger
 
 [!include [banner](../includes/banner.md)]
 
-Følgende PowerBI.com-løsninger er tilgængelige til Dynamics 365 for Finance and Operations-miljøer.
+Følgende PowerBI.com-løsninger er tilgængelige for Dynamics 365 for Finance and Operations-miljøer.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com-løsninger, der er tilgængelige fra Lifecycle Services (LCS)
 
@@ -66,5 +65,4 @@ Følgende PowerBI.com-løsninger er tilgængelige fra [Microsoft AppSource](http
 
 - Omkostningsstyring
 - [Driftsregnskab](financial-performance-power-bi-content-pack.md)
-- [Detailkanalperformance](retail-channel-performance-dashboard-power-bi-data.md)
-
+- [Detailkanalperformance ](retail-channel-performance-dashboard-power-bi-data.md)

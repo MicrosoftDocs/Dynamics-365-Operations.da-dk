@@ -1,13 +1,13 @@
---- 
-title: "Tilføje variantprodukter til indkøbsordrer ved hjælp af varianters vægt"
-description: "Denne procedure gennemgår trinnene for brug af variantvægte til automatisk udfyldning af indkøbsordrelinjer for hver variant af et produkt."
+---
+title: Tilføje variantprodukter til indkøbsordrer ved hjælp af varianters vægt
+description: Denne procedure gennemgår trinnene for brug af variantvægte til automatisk udfyldning af indkøbsordrelinjer for hver variant af et produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 446260a09bd5177877637ac8a288ad584dfa2b2b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3db13646c82ea6dc6949aaa714a5769f9c5ad2a9
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345484"
 ---
 # <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a>Tilføje variantprodukter til indkøbsordrer ved hjælp af varianters vægt
 
@@ -46,5 +46,4 @@ Denne procedure gennemgår trinnene for brug af variantvægte til automatisk udf
 16. I feltet Varenummer skal du skrive "0140".
 17. Angiv antallet til '1000'.
 18. Klik på Gem.
-
 

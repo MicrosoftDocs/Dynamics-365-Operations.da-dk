@@ -1,13 +1,13 @@
 ---
-title: "Budgetplanlægningsoversigt"
-description: "I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og konfigurere budgetplanlægningsprocesser."
+title: Budgetplanlægningsoversigt
+description: I denne artikel introduceres budgetplanlægning, og du får oplysninger, der kan hjælpe dig med at konfigurere budgetplanlægning og konfigurere budgetplanlægningsprocesser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329913"
 ---
-
 # <a name="budget-planning-overview"></a>Budgetplanlægningsoversigt
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Du kan bruge budgetplanlægning til at udføre følgende opgaver:
 -   Send automatisk budgetplanerne sammen med regneark, berettigelsesdokumenter og andre vedhæftede filer til gennemsyn og godkendelse.
 -   Konsolider flere budgetplaner fra et lavere niveau af organisationen i én overordnet budgetplan på et højere niveau i organisationen. Du kan også udarbejde én budgetplan på et højere niveau i organisationen, og allokere budgetestimaterne til lavere niveauer i organisationen.
 
-Budgetplanlægning er integreret med andre moduler i Microsoft Dynamics 365 for Finance and Operations. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Da budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
+Budgetplanlægning er integreret med andre Microsoft Dynamics 365 for Finance and Operations-moduler. Derfor kan du hente oplysninger fra tidligere budgetter, faktiske udgifter, anlægsaktiver og personale. Eftersom budgetplanlægning også er integreret med Microsoft Excel og Microsoft Word, kan du bruge disse programmer til at arbejde med budgetplanlægningsdata. En budgetadministrator kan f.eks. eksportere en afdelings budgetanmodning fra et budgetplanscenarie til et Excel-regneark. Dataene kan analyseres, opdateres og opstilles i diagrammer i regnearket og derefter udgives tilbage til budgetplanlinjerne.
 
 ## <a name="configuring-budget-planning"></a>Konfigurere budgetplanlægning
 Siden **Budgetplanlægningskonfiguration** indeholder de fleste af de indstillinger, du har brug for at konfigurere budgetplanlægning. I følgende afsnit beskrives nogle vigtige faktorer, der skal overvejes, når du konfigurerer budgetplanlægning. Når du har fuldført konfigurationen, skal du konfigurere budgetplanlægningsprocesser.
@@ -188,7 +187,6 @@ I menuen **Handlinger** kan du også oprette en ny proces ved at kopiere en eksi
 En anden nyttig kommando i menuen **Handlinger** er **Vis budgetprocesstatus**. Denne kommando viser grafisk budgetplanerne i en proces sammen med relevante data, f.eks. planernes arbejdsgangsstatus, oversigt efter beløb og efter enhed og navigation med et enkelt klik til selve budgetplanerne.
 
 [![Status for budgetplanlægningsproces](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

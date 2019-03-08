@@ -5,9 +5,9 @@ author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331270"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Dette emne beskriver, hvordan du bruger formeldesigneren i elektronisk rapporter
 
 Elektronisk rapportering (ER) understøtter formeldesigneren. Derfor kan du på designtidspunktet konfigurere udtryk, der kan bruges til følgende opgaver under kørsel:
 
-- Transformere data, der er modtaget fra en Microsoft Dynamics 365 for Finance and Operations-database, der skal indføres i ER-datamodel, der er designet til at være datakilde til ER-formater. (F.eks. kan disse transformeringer kan omfatte filtrering, gruppering og datatypekonvertering).
+- Konverter data, der modtages fra en Microsoft Dynamics 365 for Finance and Operations database, og som skal angives i en ER-datamodel, der er designet til at være datakilde for ER-formater. (F.eks. kan disse transformeringer kan omfatte filtrering, gruppering og datatypekonvertering).
 - Formatere de data, der skal sendes til et genereret elektroniske dokument i overensstemmelse med det layout og betingelserne for et bestemt ER-format. (Formatering kan f.eks. udføres i overensstemmelse med det ønskede sprog eller kultur eller kodning).
 - Styre processen til oprettelse af elektroniske dokumenter. (F.eks. kan udtrykkene aktivere eller deaktivere outputtet af bestemte elementer i formatet, afhængigt af behandlingen af data. De kan også afbryde processen med oprettelse af dokumentet eller udløse meddelelser til brugere).
 
@@ -625,8 +624,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </ul></li>
 <li>Finance and Operations-label SYS18389, som har følgende tekst:
 <ul>
-<li><strong>For det amerikanske sprog:</strong> &quot;Customer %1 is stopped for %2&quot;.</li>
-<li><strong>For det danske sprog:</strong> &quot;Debitor '%1' er spærret for %2.&quot;</li>
+<li><strong>For det amerikanske sprog:</strong> &quot;Debitor %1 er spærret for %2.&quot;</li>
+<li><strong>For det tyske sprog: </strong> &quot;Debitor '%1' er spærret for %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Her er den formel, der kan udvikles:</p>
@@ -731,7 +730,7 @@ Når disse datakilder er defineret, kan du bruge et udtryk som <strong>FILTER (U
 | FA\_BALANCE (anlægsaktivkode, værdimodelkode, rapporteringsår, rapporteringsdato) | Returnerer den klargjorte datacontainer med saldoen for anlægsaktiv. Rapporteringsår skal angives som en værdi af Finance and Operations-fastteksten **AssetYear**. | **FA\_SUM ("COMP-000001", "Aktuel", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerer den forberedte datacontainer med saldi for anlægsaktivet **"COMP-000001"**, der har værdimodellen **"Aktuel"** for den aktuelle Finance and Operations-sessionsdato. |
 | TABLENAME2ID (streng) | Returnerer en heltalsrepræsentation af et tabel-Id for det angivne tabelnavn. | **TABLENAME2ID ("Intrastat")** returnerer **1510**. |
 | ISVALIDCHARACTERISO7064 (streng) | Returnerer den booleske værdi **TRUE**, når den angivne streng repræsenterer et gyldigt internationalt bankkontonummer (IBAN). I modsat fald returneres den booleske værdi **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerer **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerer **FALSE**. |
-| NUMSEQVALUE (nummerseriekode, område, område-id) | Returnerer den nye genererede værdi for en nummerserie baseret på den angivne nummerseriekode, område og område-id. Området skal angives som en værdi af optællingen **ERExpressionNumberSequenceScopeType** (**Delt**, **Juridisk enhed** eller **Firma**). For området **Delt** skal du angive en tom streng som område-id'et. For områderne **Firma** og **Juridisk enhed** skal du angive firmakoden som område-id. For områderne **Firma** og **Juridisk enhed**, hvis du angiver en tom streng som område-id, bruges den aktuelle firmakode. | Du definerer følgende datakilder i din modeltilknytning:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-optælling**), som refererer til optællingen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **Beregnet felt**), som indeholder udtrykket **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den **Gene\_1**-nummerserie, der er konfigureret for det firma, der leverer den kontekst, som ER-formatet køres under. |
+| NUMSEQVALUE (nummerseriekode, område, område-id) | Returnerer den nye genererede værdi for en nummerserie baseret på den angivne nummerseriekode, område og område-id. Området skal angives som en værdi af optællingen **ERExpressionNumberSequenceScopeType** (**Delt**, **Juridisk enhed** eller **Firma**). For området **Delt** skal du angive en tom streng som område-id'et. For områderne **Firma** og **Juridisk enhed** skal du angive firmakoden som område-id. For områderne **Firma** og **Juridisk enhed**, hvis du angiver en tom streng som område-id, bruges den aktuelle firmakode. | Du definerer følgende datakilder i din modeltilknytning:<ul><li>**enumScope** (**Dynamics 365 for Operations-optælling** type), som refererer til optællingen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **Beregnet felt**), som indeholder udtrykket **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den **Gene\_1**-nummerserie, der er konfigureret for det firma, der leverer den kontekst, som ER-formatet køres under. |
 | NUMSEQVALUE (nummerseriekode) | Returnerer den nye genererede værdi for en nummerserie baseret på den angivne nummerserie, området **Firma** og koden for det firma (som område-id), der leverer den kontekst, ER-formatet køres under. | Du kan definere følgende datakilde i din modeltilknytning: **NumSeq** (typen **Beregnet felt**). Denne datakilde indeholder udtrykket **NUMSEQVALUE ("Gene\_1")**. Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den **Gene\_1**-nummerserie, der er konfigureret for det firma, der leverer den kontekst, som ER-formatet køres under. |
 | NUMSEQVALUE (nummerseriepost-id) | Returnerer den nye genererede værdi for en nummerserie baseret på post-id'et for den angivne nummerserie. | Du definerer følgende datakilder i din modeltilknytning:<ul><li>**LedgerParms** (typen **Tabel**), som refererer til tabellen LedgerParameters</li><li>**NumSeq** (typen **Beregnet felt**), som indeholder udtrykket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Når datakilden **NumSeq** kaldes, returneres den nye genererede værdi af den nummerserie, der er konfigureret i Finans-parametrene for det firma, der leverer den kontekst, som ER-formatet køres under. Denne nummerserie identificerer entydigt kladder og fungerer som et batchnummer, der knytter posteringerne sammen. |
 
@@ -743,4 +742,3 @@ ER understøtter muligheden for at udvide listen over funktioner, der bruges i E
 
 - [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
 - [Udvide listen over elektroniske rapporteringsfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md)
-

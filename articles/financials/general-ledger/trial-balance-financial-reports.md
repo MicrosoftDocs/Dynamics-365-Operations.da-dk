@@ -1,13 +1,13 @@
 ---
-title: "Råbalance - økonomiske rapporter"
-description: "I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov."
+title: Råbalance - økonomiske rapporter
+description: I denne artikel beskrives standardrapporterne til råbalancer. Her beskrives også de komponenter, der er knyttet til disse rapporter, og hvordan du kan redigere rapporterne, så de passer til virksomhedens behov.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c9e8c16724364df4dd62150056299e818470aa63
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a61369033202bdb99fe4b36b24051c64cb9ca4b1
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309098"
 ---
-
 # <a name="trial-balance-financial-reports"></a>Råbalance - økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -108,7 +107,6 @@ Hver råbalancerapport bruger en anden kolonnedefinition. Disse kolonnedefinitio
 [Se økonomiske rapporter](view-financial-reports.md)
 
 [Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

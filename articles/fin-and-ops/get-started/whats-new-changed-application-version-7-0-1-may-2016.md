@@ -1,13 +1,13 @@
 ---
-title: "Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)"
-description: "Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics-programversion AX 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014."
+title: Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics AX-programversion 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314503"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheder eller ændringer i Dynamics AX-programversion 7.0.1 (maj 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics-programversion AX 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014.
+I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics AX-programversion 7.0.1. Denne version blev udgivet i maj 2016 og har build-nummer 7.0.1265.23014.
 
 ## <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
@@ -107,4 +106,3 @@ Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynami
 [Nyheder eller ændringer](whats-new-changed.md)
 
 [Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
-

@@ -1,13 +1,13 @@
---- 
-title: "Konfigurer et indkøbskategorihierarki"
-description: "Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorihierarki, og hvordan du konfigurerer en indkøbskategori, der skal bruges i en indkøbsproces."
+---
+title: Konfigurer et indkøbskategorihierarki
+description: Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorihierarki, og hvordan du konfigurerer en indkøbskategori, der skal bruges i en indkøbsproces.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/06/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01809a8a3256342682d8a9cfb296a355310fe4ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
-ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/06/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334513"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Konfigurer et indkøbskategorihierarki
 
@@ -74,5 +74,4 @@ Denne fremgangsmåde viser, hvordan du opretter nye noder i et indkøbskategorih
 6. Slå udvidelsen af afsnittet Kategoriside til/fra.
     * Kategorisider oprettes på siden Kategorihierarki. De indeholder oplysninger om indkøbskategorien, f.eks. oplysninger om typen af produkter i en kategori, billeder af produkter i en kategori eller meddelelser, f.eks. rabatter i en kategori. Oplysningerne på en kategoriside vises på indkøbsrekvisitioner.  
 7. Luk siden.
-
 

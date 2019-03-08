@@ -1,13 +1,13 @@
 ---
-title: "Forbind hjælpesystemet"
-description: "I dette emne beskrives komponenterne i hjælpesystemet til Microsoft Dynamics 365 for Finance and Operations, og du får et overblik over, hvordan du tilslutter dem, og hvordan du opretter en brugerdefineret Hjælp."
+title: Oprette forbindelse til Hjælp-systemet
+description: I dette emne beskrives komponenterne i hjælpesystemet til Microsoft Dynamics 365 for Finance and Operations, og du får et overblik over, hvordan du tilslutter dem, og hvordan du opretter en brugerdefineret Hjælp.
 author: margoc
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317723"
 ---
-
-# <a name="connect-the-help-system"></a>Forbind hjælpesystemet
+# <a name="connect-the-help-system"></a>Oprette forbindelse til Hjælp-systemet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder beskrivelser af komponenter i Hjælp-systemet til Microsoft Dynamics 365 for Finance and Operations. Det giver et overblik over, hvordan du forbinder disse komponenter, og en oversigt over, hvordan du opretter brugerdefinerede Hjælp.
+I dette emne beskrives komponenterne i hjælpesystemet til Microsoft Dynamics 365 for Finance and Operations. Det giver et overblik over, hvordan du forbinder disse komponenter, og en oversigt over, hvordan du opretter brugerdefinerede Hjælp.
 
 ## <a name="help-architecture"></a>Hjælp-arkitektur
 
@@ -102,4 +101,3 @@ Microsoft har udgivet en hvidbog og eksempelkode, der beskriver, hvordan du opre
 [Oversigt over Arbejdsrutineoptager](../../dev-itpro/user-interface/task-recorder.md)
 
 [Sådan opretter du en opgaveregistrering, der kan bruges til dokumentation eller undervisning](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-

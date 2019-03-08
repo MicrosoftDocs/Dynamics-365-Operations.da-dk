@@ -1,13 +1,13 @@
---- 
+---
 title: Definere nye job
-description: "Opgaven fokuserer på oprettelsen af et nyt job."
+description: Opgaven fokuserer på oprettelsen af et nyt job.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abb85b1e8d9bc7386bf2d2f059b78faff9933f5c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347922"
 ---
 # <a name="define-new-jobs"></a>Definere nye job
 
@@ -57,7 +57,7 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 21. Find og vælg den ønskede post på listen.
 22. Klik op linket i den valgte række på listen.
 23. Slå udvidelsen af sektionen Færdigheder til/fra.
-    * Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.   
+    * Bemærk, at felterne i oversigtspanelerne Færdigheder, Uddannelse og Certifikater er tomme. Når du har kopieret oplysninger fra en jobskabelon, angives oplysningerne i disse felter i et enkelt trin.   
 24. Klik på Gem.
 25. Klik på Kopiér fra.
 26. Klik på Kopiér fra skabelon.
@@ -70,5 +70,4 @@ Opgaven fokuserer på oprettelsen af et nyt job. Den vil blive fuldført ved hj�
 32. Slå udvidelsen af sektionen Certifikater til/fra.
 33. Slå udvidelsen af sektionen Uddannelse til/fra.
 34. Klik på Gem.
-
 

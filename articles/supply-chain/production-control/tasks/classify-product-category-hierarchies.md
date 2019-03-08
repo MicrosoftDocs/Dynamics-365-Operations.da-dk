@@ -1,13 +1,13 @@
---- 
-title: "Klassificere et produkt ved hjælp af kategorihierarkier"
-description: "Du kan bruge kategorihierarkier til at klassificere produkter til eksport, indkøb, salg eller andre formål."
+---
+title: Klassificere et produkt ved hjælp af kategorihierarkier
+description: Du kan bruge kategorihierarkier til at klassificere produkter til eksport, indkøb, salg eller andre formål.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResProductCategory, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 3a523d7d03a47487e37124b6afc78bfad59e1ae6
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338929"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassificere et produkt ved hjælp af kategorihierarkier
 
@@ -42,5 +42,4 @@ Du kan bruge kategorihierarkier til at klassificere produkter til eksport, indk�
 10. Indtast eller vælg en værdi i feltet Kategorihierarki.
 11. Indtast eller vælg en værdi i feltet Kategori.
 12. Luk siden.
-
 

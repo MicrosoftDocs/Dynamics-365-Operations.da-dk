@@ -1,13 +1,13 @@
 ---
-title: "Principper for afskrivning af anlægsaktiver"
-description: "Dette emne indeholder en oversigt over principperne for afskrivning af anlægsaktiver."
+title: Principper for afskrivning af anlægsaktiver
+description: Dette emne indeholder en oversigt over principperne for afskrivning af anlægsaktiver.
 author: saraschi2
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff8575749a33321450ea61fe1f01105c005e9092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337434"
 ---
-
 # <a name="fixed-asset-depreciation-conventions"></a>Principper for afskrivning af anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ Afskrivningsprincipper kan tildeles opsætningen af en bog for anlægsaktivgrupp
 | Midt i måned (d. 15. i måneden) |                                                                                                                                                        For at beregne afskrivningsfradraget for det år, hvor du tager ejendommen i brug, skal du gange afskrivningen for et helt år med en brøk. Tælleren (øverste tal) i denne brøk er antallet hele måneder i det år, hvor ejendommen er taget i brug, plus 1/2 eller (0,5). Nævneren (nederste tal) er 12. Hvis du sælger/kasserer ejendommen inden udgangen af afskrivningsperioden, kan du bruge samme metode til at beregne afskrivningsfradraget for året for salget/kassationen.                                                                                                                                                        |
 | Halvår (årsstart) |                                                                                                                                                                                                                                                          Aktiver, der har en <strong>Ibrugtagningsdato</strong> i første halvdel af året, afskrives på den første dag i året (hele året). Aktiver, der har en <strong>Ibrugtagningsdato</strong> i anden halvdel af året, afskrives midt på året.                                                                                                                                                                                                                                                          |
 |   Halvår (næste år)   |                                                            Aktiver, der har en <strong>Ibrugtagningsdato</strong> i første halvdel af året, afskrives på den første dag i året (hele året). Aktiver, der har en <strong>Ibrugtagningsdato</strong> i anden halvdel af året, afskrives på den første dag i det efterfølgende år. Aktiver, der er trukket tilbage i den første halvdel af året, betragtes som trukket tilbage i forhold til afskrivningen på den sidste dag i det foregående år. Enhver afskrivning, der bogføres i det indeværende år, skal tilbageføres eller justeres. Aktiver, der er trukket tilbage i den anden halvdel af året, betragtes trukket tilbage i forhold til afskrivningen på den sidste dag i året for tilbagetrækningen.                                                            |
-
 

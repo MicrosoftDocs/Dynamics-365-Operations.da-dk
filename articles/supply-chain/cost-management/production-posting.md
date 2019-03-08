@@ -1,13 +1,13 @@
 ---
-title: "Produktionsbogføring"
+title: Produktionsbogføring
 description: Denne artikel indeholder oplysninger om forskellige typer af posteringer i produktionsprocessen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332397"
 ---
-
 # <a name="production-posting"></a>Produktionsbogføring
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ I **Produktionsstyringsparametre** kan du bruge feltet **Finanskontering** til a
 -   **Produktionsgrupper** – Brug finanskontiene, der er angivet på produktionsgrupper for både materiale- og tidsforbrug. Produktionsgrupper er knyttet til de frigivne produkter og kopieres til produktionsordrerne, når disse ordrer oprettes. Bogføring på produktionsordrer følger derefter de produktionsgrupper, som er knyttet til produktionsordren.
 
 **Bemærk:** Hvis standardmetoden til beregning af omkostningen for færdigvaren er brugt, afspejles dette også i den endelige postering. Hvis der er en difference mellem de faktiske omkostninger og de omkostninger, der er beregnet ved hjælp af standardmetoden, bogføres differencen på kontoen, der viser avance og tab.
-
 
 
 

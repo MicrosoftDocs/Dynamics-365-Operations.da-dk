@@ -1,13 +1,13 @@
---- 
+---
 title: ER Opgradere dit format ved at bruge en ny basisversion af formatet
-description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER)."
+description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan bevare en formatkonfiguration af elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342264"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Opgradere dit format ved at bruge en ny basisversion af formatet
 
@@ -108,7 +108,7 @@ For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedu
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.1.1. Det betyder, at det er version 1 af det brugerdefinerede BACS-format (UK fiktivt brugerdefineret), der er baseret på version 1 af BACS-formatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Teste det tilpassede format for at generere betalingsfiler
-    * Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations, Enterprise edition-session. Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.  
+    * Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise edition-session. Vælg BACS-formatet (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder den netop indførte XML-node, som præsenterer IBAN-kode i henhold til de regionale krav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Opdatere den eksisterende landespecifikke konfiguration
     * Litware, Inc. skal opdatere konfigurationen af BACS (UK fiktivt) og benytte nye lande/områdespecifikke krav til håndtering af formatet på det elektroniske dokument. Senere bliver det inkluderet i en ny version af denne konfiguration, som vil blive tilbudt til serviceabonnenter, herunder Proseware, Inc.  
@@ -198,6 +198,5 @@ For at fuldføre denne fremgangsmåde, skal du først udføre trinnene i procedu
     * Bemærk, at den oprettede konfiguration gemmes som fuldført version 1.2.2: version 2 af BACS-basisformatet (UK fiktivt brugerdefineret), der er baseret på version 2 af BACS-basisformatet (UK fiktivt), der er baseret på version 1 af datamodellen Betalinger (forenklet model).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det tilpassede format for generering af betalingsfiler
-    * Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations, Enterprise edition-session. Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav. Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.  
-
+    * Udfør trinnene i proceduren "Bruge oprettet format for at generere elektroniske dokumenter til betalinger" i en parallel Dynamics 365 for Finance and Operations Enterprise Edition-session. Vælg det oprettede BACS-format (UK fiktivt brugerdefineret) i parametrene for den elektroniske betalingsmåde. Sørg for, at den oprettede betalingsfil indeholder Proseware, Inc.s netop indførte XML-node, som præsenterer IBAN-kontokode i henhold til de regionale krav. Filen skal også indeholde Litware, Inc.s netop indførte XML-node, som præsenterer SWIFT-bankkode i overensstemmelse med kravene i landet.  
 

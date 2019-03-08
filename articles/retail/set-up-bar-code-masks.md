@@ -1,13 +1,13 @@
 ---
-title: "Opsætning af stregkodemasker"
+title: Opsætning af stregkodemasker
 description: Dette emne beskriver, hvordan du konfigurerer stregkodemasketegn, stregkodemasker, og hvordan du kan tildele stregkodemasker til stregkoder.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340608"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Opsætning af stregkodemasker
 
 [!include [banner](includes/banner.md)]
@@ -49,9 +48,9 @@ Stregkodemasker bruges til at oprette stregkoder og til hurtigt at identificere 
 | Pris            | Angiver pris for stregkoder med integreret pris. |
 | Mængde         | Angiver antal i stregkoder med integreret antal/tilfældig vægt. |
 | Medarbejder         | Angiver stregkodesegment for medarbejder id-nummer, der bruges til at logge på med stregkode på POS-enheden. |
-| Debitor          | Angiver kunde-id-segment. |
+| Debitor         | Angiver kunde-id-segment. |
 | Datapost       | *Ikke implementeret endnu.* |
-| Rabatkode    | *Forældet* fra og med Dynamics 365 for Retail 2017-forårsversion. Tidligere. Angiver en rabatkode til en stregkode, der bruges til at føje en rabat til en POS-transaktion. |
+| Rabatkode    | *Forældet* fra og med Dynamics 365 for Retail-versionen fra foråret 2017. Tidligere. Angiver en rabatkode til en stregkode, der bruges til at føje en rabat til en POS-transaktion. |
 | Kuponkode      | Angiver kuponkode for en stregkode, der bruges til at føje rabat til en detailordre. Dette har erstattet rabatkoden. |
 | Gavekort        | Angiver en gavekortnummer, når der udstedes eller betales med gavekort. |
 | Fordelskundekort     | Tilføjer en fordelskunde i transaktionen, og kan bruges ved betaling af loyalitet. |
@@ -79,9 +78,8 @@ Stregkodemasker skal tildeles stregkoder, før de kan bruges. Hvis vi fortsætte
 
 1. Gå til **Virksomhedsadministration** &gt; **Opsætning** &gt; **Stregkoder**. Klik på **Ny** for at oprette en ny stregkode.
 2. Angiv værdier i felterne **Stregkode** **opsætning** og **Opsætning**.
-3. I afsnittet **Generelt** i feltet **Stregkodetype** skal du vælge 'Kode 39'. I feltet **Maske-****id** skal du vælge masken 'Produkt', der er oprettet tidligere.
+3. I afsnittet **Generelt** i feltet **Stregkodetype** skal du vælge 'Kode 39'. I feltet **Maske-id** skal du vælge masken 'Produkt', der er oprettet tidligere.
 4. Under **Størrelse** skal du angive '12'.
 5. Klik på **Gem**.
 
 Stregkodemasken kan nu bruges til at oprette stregkoder for produkter. Ovenstående trin er eksempler på, hvordan du opretter stregkodemasker for produkter, men de illustrerer også, hvordan du opretter stregkodemasker for alle andre typer understøttede stregkoder. Stregkodemasker, typer og længder bør justeres til brug i dit specifikke miljø.
-

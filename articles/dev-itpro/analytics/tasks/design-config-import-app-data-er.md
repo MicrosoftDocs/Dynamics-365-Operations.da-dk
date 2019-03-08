@@ -1,13 +1,13 @@
---- 
-title: "Designe ER- konfigurationer til at fortolke indgående dokumenter"
+---
+title: Designe ER- konfigurationer til at fortolke indgående dokumenter
 description: I denne procedure forklares det, hvordan du designer konfigurationer af elektronisk rapportering (ER) for at analysere et elektronisk dokument.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326095"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Designe ER- konfigurationer til at fortolke indgående dokumenter
 
@@ -110,5 +110,4 @@ Du skal køre den oprettede modeltilknytning til testformål for at se, hvordan 
     * Klik på Gennemse, og vælg filen Response4.xml.  
 16. Klik på OK.
     * Gennemse det genererede output. Bemærk, at svartypen nu er korrekt genkendt som ens med filen Response1.xml.  
-
 

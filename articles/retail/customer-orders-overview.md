@@ -1,13 +1,13 @@
 ---
 title: Kundeordrer i Retail Modern POS (MPOS)
-description: "Dette emne indeholder oplysninger om kundeordrer i Retail Modern POS (MPOS). Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow."
+description: Dette emne indeholder oplysninger om kundeordrer i Retail Modern POS (MPOS). Kundeordrer kaldes også specialordrer. Emnet indeholder en beskrivelse af relaterede parametre og transaktionsflow.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336606"
 ---
-
 # <a name="customer-orders-in-retail-modern-pos-mpos"></a>Kundeordrer i Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
@@ -102,4 +101,3 @@ Når indstillingen **Opret kundeordre i asynkron tilstand** er indstillet til **
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
-

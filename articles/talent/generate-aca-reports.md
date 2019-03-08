@@ -1,13 +1,13 @@
 ---
 title: Generere Affordable Care Act (ACA)-indberetninger
-description: "Funktionen kan hjælpe arbejdsgivere med at spore de oplysninger, der indberettes i blanketterne 1095-B og C 1095, som et led i Employer Mandate-delen af Affordable Care Act. Bemærk, at denne funktion er kun aktiveret for juridiske enheder i USA."
+description: Funktionen kan hjælpe arbejdsgivere med at spore de oplysninger, der indberettes i blanketterne 1095-B og C 1095, som et led i Employer Mandate-delen af Affordable Care Act. Bemærk, at denne funktion er kun aktiveret for juridiske enheder i USA.
 author: kherr75
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
 ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303730"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generere Affordable Care Act (ACA)-indberetninger
 
@@ -70,4 +70,3 @@ Du kan eksportere lister over medarbejdere, som er genereret ved hjælp af filtr
 Hvis du skal rapportere dækkede enkeltpersoner, fordi du som arbejdsgiver tilbyder sygesikring med egendækning, kan du også få vist alle afhængige, der er omfattet af frynsegodeplaner, der er markeret som **Skal indberettes til det amerikanske skattevæsen (ACA)**, ved at vælge handlingen Vis dækning af afhængig part i handlingsrudestriben.
 
 **Bemærk!** Kun frynsegoder, hvis plan er markeret som **Skal indberettes til det amerikanske skattevæsen (ACA)** vises i forespørgselsvinduet.
-

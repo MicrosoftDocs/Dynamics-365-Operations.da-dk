@@ -1,14 +1,14 @@
 ---
 title: Intelligente anbefalinger
-description: "I dette emne beskrives, hvordan maskinel indlæring kan bruges til at give anbefalinger om job og jobkandidater."
+description: I dette emne beskrives, hvordan maskinel indlæring kan bruges til at give anbefalinger om job og jobkandidater.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303743"
 ---
-
 # <a name="intelligent-recommendations"></a>Intelligente anbefalinger
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ For enhver anbefalet kandidat kan du vælge **Vis kandidat** på kandidatkortet 
 ## <a name="job-recommendations"></a>Stillingsanbefalinger 
 
 Når en mulig medarbejder bruger karrierewebstedet til at ansøge om et job, anbefales andre ledige stillinger i organisationen. Disse anbefalinger er baseret på jobkandidatens tidligere ansøgninger og på hans eller hendes CV eller kandidatprofil. Derfor hjælper stillingsanbefalinger jobkandidater med hurtigt at identificere de job, der passer til dem. Stillingsanbefalinger vises for jobkandidater, hvis der er opslået mere end ti job på karrierewebstedet. Jobkandidater kan åbne detaljerne i et jobopslag fra anbefalingskortet. De kan også give tilbagemeldinger om en anbefaling for at forbedre fremtidige anbefalinger.
-

@@ -1,13 +1,13 @@
 ---
 title: Bygge en produktkonfigurationsmodel
-description: "Nødvendigheden af at konfigurere produkter for at opfylde særlige krav er ved at blive reglen frem for undtagelsen i både business-to-business og business-forbruger-relationer."
+description: Nødvendigheden af at konfigurere produkter for at opfylde særlige krav er ved at blive reglen frem for undtagelsen i både business-to-business og business-forbruger-relationer.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327452"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Bygge en produktkonfigurationsmodel
 
 [!include [banner](../includes/banner.md)]
@@ -158,7 +157,6 @@ Formålet med konfigurationen er at oprette en bestemt variant af det produkt, d
 ### <a name="multiple-sites-and-intercompany"></a>Flere steder og internt
 
 Hvis konfigurationen skal udføres på et sted eller endda et firma, der afviger fra det sted eller den virksomhed, hvor produktionen skal foregå, oprettes og placeres styklisten og ruten på stedet for leverandøren i leverandørvirksomheden. Produktvarianten vil blive frigivet i alle virksomheder, der er med i forsyningskæden.
-
 
 
 

@@ -1,30 +1,29 @@
 ---
-title: "Sammenligning af funktioner i skyen og i det lokale miljø"
-description: "Emnet viser, hvilke funktioner der understøttes i skyen og lokalt."
+title: Sammenligning af funktioner i skyen og i det lokale miljø
+description: Emnet viser, hvilke funktioner der understøttes i skyen og lokalt.
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313974"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning af funktioner i skyen og i det lokale miljø
 
 [!include [banner](../includes/banner.md)]
@@ -41,12 +40,12 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Areal | Funktion | Sky | I det lokale miljø |
 |---|---|---|---|
 | Overholdelse og certificeringer | | Ja | Ja |
-| | SOC 1 Type 1-certificering | Ja | Nej |
-| Driftsregnskab | | Ja | Ja |
-| | Indholdspakke om driftsregnskab til Power BI | Ja | Nej |
-| | Appen Driftsregnskabsarbejdsområde til mobil | Ja | Nej |
+| | SOC 1 Type 1-certificering | Ja | Nr. |
+| Omkostningsregnskab | | Ja | Ja |
+| | Indholdspakke om driftsregnskab til Power BI | Ja | Nr. |
+| | Appen Driftsregnskabsarbejdsområde til mobil | Ja | Nr. |
 | Omkostningsstyring | | Ja | Ja |
-| | Indholdspakke om omkostningsstyring til Power BI | Ja | Nej |
+| | Indholdspakke for Power BI til omkostningsstyring | Ja | Nr. |
 | Datastyring og -integration | | Ja | Ja |
 | | Konfigurationsdrevet udvidelse | Ja | Nej |
 | | Eksportere data til dit eget datalager | Ja | Ja |
@@ -57,12 +56,12 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Hjælp | | Ja | Nej |
 | Personale | | Ja | Ja |
 | Intelligence | | Ja | Ja |
-| | Elektronisk rapportering (ER) - Integration med LCS | Ja | Nej |
-| | Elektronisk rapportering (ER) - Integration med SharePoint | Ja | Nej |
-| | Integration med PowerBI.com | Ja | Nej |
+| | Elektronisk rapportering (ER) - Integration med LCS | Ja | Nr. |
+| | Elektronisk rapportering (ER) - Integration med SharePoint | Ja | Nr. |
+| | Integration med PowerBI.com | Ja | Nr. |
 | | Analytiske arbejdsområder | Ja | Nej |
-| | Intelligent forretningsproces: anbefalinger | Ja | Nej |
-| | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery | Ja | Nej |
+| | Intelligent forretningsproces: anbefalinger | Ja | Nr. |
+| | Udarbejde Power BI-rapporter med OData ved hjælp af Power BI Desktop eller funktioner i Excel PowerQuery | Ja | Nr. |
 | | SQL Server Reporting Services (SSRS) understøtter udskalering | Ja | Nej |
 | | Telemetri overføres til skyen | Ja | Nej |
 | Lagerstyring | | Ja | Ja |
@@ -77,23 +76,23 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | Payroll | | Ja | Ja |
 | | Direkte indbetaling | Ja | Nej |
 | Indkøb og forsyning | | Ja | Ja |
-| | Kobling til eksternt katalog for indkøbsrekvisitioner | Ja | Nej |
-| | Power BI-rapporter til købsforbrugsanalyse | Ja | Nej |
+| | Kobling til eksternt katalog for indkøbsrekvisitioner | Ja | Nr. |
+| | Power BI-rapporter for købsforbrugsanalyse | Ja | Nr. |
 | Administration af produktoplysninger | | Ja | Ja |
 | Produktmasterdata | | Ja | Ja |
 | Produktion | | Ja | Ja |
-| | Power BI-rapporter til produktionsperformance | Ja | Nej |
+| | Power BI-rapporter for produktionsperformance | Ja | Nr. |
 | Projektstyring og regnskab | | Ja | Ja |
 | Salg | | Ja | Ja |
-| | Salgs- og rentabilitetsperformance i Power BI-rapporter | Ja | Nej |
+| | Power BI-rapporter for salgs- og rentabilitetsperformance | Ja | Nr. |
 | Sikkerhed | | Ja | Ja |
 | Servicestyring | | Ja | Ja |
 | Supply Chain Management | | Ja | Ja |
 | Transportstyring | | Ja | Ja |
 | Kreditorsamarbejde | | Ja | Nr. |
-| Lokationsstyring | | Ja | Ja |
+| Lagerstedsstyring | | Ja | Ja |
 | | Lagerstedsapp til mobil | Ja | Ja |
-| | Power BI-rapporter om lagersted | Ja | Nej |
+| | Power BI-lagerstedsrapporter | Ja | Nr. |
 | Webklient | | Ja | Ja |
 | | Arbejdsrutineoptager - gemme eller indlæse opgaveregistreringer fra BPM-biblioteket | Ja | Nej |
 | Support | | Ja | Ja |
@@ -111,8 +110,8 @@ I følgende tabel vises produktområderne. Understøttelse af skyen og lokalt er
 | | Service af miljøer | Ja | Nej |
 | Trace Parser og PerfTimer | | Ja | Nej |
 | Opgrader | | Ja | Ja |
-| | Opgrader | Ja | Nej |
-| | Opgradering og understøttelse af tidligere versioner | Ja | Nej |
+| | Opgrader | Ja | Nr. |
+| | Opgradering og understøttelse af tidligere versioner | Ja | Nr. |
 | Visual Studio-udvikling | | Ja | Ja |
 
 ### <a name="retail"></a>Retail 
@@ -127,4 +126,3 @@ Du kan se en liste over detailfunktioner, der er tilgængelige i lokale installa
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 - [Funktioner, der endnu ikke er implementeret i lokale installationer](features-not-implemented-on-prem.md)
-

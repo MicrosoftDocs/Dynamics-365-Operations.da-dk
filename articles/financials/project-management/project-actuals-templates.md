@@ -1,13 +1,13 @@
 ---
-title: "Synkronisere faktiske projektoplysninger direkte fra Project Service Automation med projektintegrationskladden til bogføring i Finance and Operations"
-description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere faktiske projektoplysninger direkte fra Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisere faktiske projektoplysninger direkte fra Project Service Automation med projektintegrationskladden til bogføring i Finance and Operations
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere faktiske projektoplysninger direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343345"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synkronisere faktiske projektoplysninger direkte fra Project Service Automation med projektintegrationskladden til bogføring i Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere faktiske projektoplysninger direkte fra Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere faktiske projektoplysninger direkte fra Microsoft Dynamics 365 for Project Service Automation til Microsoft Dynamics 365 for Finance and Operations.
 
 Skabelonen synkroniserer transaktioner fra Project Service Automation med en midlertidig tabel i Finance and Operations. Når synkroniseringen er fuldført, **skal** du importere dataene fra den midlertidige tabel til integrationskladden.
 
 > [!NOTE]
-> - Integration af faktiske projektoplysninger er tilgængelig i Microsoft Dynamics 365 for Finance and Operations version 8.01 eller nyere.
+> - Integration af faktiske projektoplysninger er tilgængelige i Microsoft Dynamics 365 for Finance and Operations version 8.0.1 eller nyere.
 > - Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, 7.3.0, når du har installeret KB 4132657 og KB 4132660, kan du bruge skabelonerne til at integrere projektopgaver, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og faktiske oplysninger og konfigurere låsning af funktionalitet. Hvis du skal nulstille regnskabsfordelingerne, anbefaler vi, at du også installerer KB 4131710.
 > - Hvis du bruger Finance and Operations 7.3.0, og du bringer gebyrtransaktioner fra Project Service Automation, skal du installere KB 4345320 for at medtage disse gebyrer i projektfakturaen.
 > - Hvis du indtaster momsbeløb på tids- eller udgiftsposteringer i Project Service Automation, skal du installere Project Service Automation opdatering 7. Ellers bliver de faktiske momsoplysninger ikke knyttet til de faktiske tids- eller udgiftsoplysninger, der er tilknyttet, og de bliver ikke synkroniseret med Finance and Operations. Kontakt Support for at få flere oplysninger.
@@ -140,4 +140,3 @@ Følgende illustrationer viser eksempler på skabelonopgavetilknytningerne i dat
 [![Tilknytning af skabelon](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![Tilknytning af skabelon](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

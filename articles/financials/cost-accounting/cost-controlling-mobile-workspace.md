@@ -1,13 +1,13 @@
 ---
-title: "Arbejdsområde til omkostningsstyring på mobilenheder"
-description: "Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst."
+title: Arbejdsområde til omkostningsstyring på mobilenheder
+description: Dette emne indeholder oplysninger om arbejdsområdet til omkostningsstyring på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: b6cdb69f32de2118e685c149605d50b78105c098
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 39578744654215795f43fec8dcc70c264b66fb0b
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317562"
 ---
-
 # <a name="cost-controlling-mobile-workspace"></a>Arbejdsområde til omkostningsstyring på mobilenheder
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Omkostningsstyring** på mobilenheder. I dette arbejdsområde kan ledere af bærere se oplysninger om bærerydeevnen når som helst og hvor som helst.
 
-Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations-mobilappen.
+Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
 
 ## <a name="overview"></a>Overblik
 Arbejdsområdet til **Omkostningsstyring** på mobilenheder giver et øjeblikkeligt overblik over den aktuelle ydeevne af bærere ved at sammenligne faktiske omkostninger med de budgetterede omkostninger. Du kan gå ned på detailniveau og se status for individuelle kostelementer.
@@ -63,7 +62,7 @@ Arbejdsområdet **Omkostningsstyring** til mobilenheder indeholder følgende han
     -   Faktisk vs. budget (år til dato)
     -   Faktisk vs. revideret budget (år til dato)
 
-    På hvert kort vises følgende beløb: faktisk, budget, afvigelse og afvigelse i %.
+    På hvert kort vises følgende beløb: faktisk, budget, afvigelse og afvigelse i %.
 
 -   **Links:**
 
@@ -71,7 +70,7 @@ Arbejdsområdet **Omkostningsstyring** til mobilenheder indeholder følgende han
     -   Detaljer for forrige periode
     -   Detaljer for år til dato
 
-    Når du vælger et link, vises et kort for hvert omkostningselement. Følgende beløb vises på hvert kort: faktisk, budget, budgetafvigelse, budgetafvigelse i %, revideret budget, revideret budgetafvigelse og revideret budgetafvigelse i %.
+    Når du vælger et link, vises et kort for hvert omkostningselement. Følgende beløb vises på hvert kort: faktisk, budget, budgetafvigelse, budgetafvigelse i %, revideret budget, revideret budgetafvigelse og revideret budgetafvigelse i %.
     
     [![Kort til et omkostningselement](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
@@ -81,8 +80,8 @@ Forudsætningerne er forskellige, afhængigt af hvilken version af Microsoft Dyn
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations
 Hvis Microsoft Dynamics 365 for Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Omkostningsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
-Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger.
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
+Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger.
 
 <table>
 <thead>
@@ -99,7 +98,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 
 <td>KB 4013633 er et X ++ opdatering eller metadatahotfix, der indeholder arbejdsområdet <strong>Omkostningsstyring</strong> til mobilenheder. For at implementere KB 4013633 skal systemadministratoren gøre følgende.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Download metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hente metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installere metadatahotfixet</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opret en installerbar pakke</a>, der indeholder <strong>SCMMobile</strong>-modellen, og overfør derefter den installerbare pakke til LCS.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvend den installerbare pakke</a></li>
@@ -144,5 +143,4 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 10. Vælg linket **Detaljer for aktuel periode**.
 11. Se ydeevnen for individuelle omkostningselementer.
 12. Du kan også søge efter bestemte omkostningselementer.
-
 

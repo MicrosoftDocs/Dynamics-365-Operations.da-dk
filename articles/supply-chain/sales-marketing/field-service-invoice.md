@@ -1,37 +1,36 @@
 ---
 title: Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
-description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere aftalefakturaer i Microsoft Dynamics 365 for Field Service til fritekstfakturaer i Microsoft Dynamics 365 for Finance and Operations.
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere aftalefakturaer i Microsoft Dynamics 365 for Field Service med fritekstfakturaer i Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333248"
 ---
-
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Synkronisere aftalefakturaer i Field Service med fritekstfakturaer i Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere aftalefakturaer i Microsoft Dynamics 365 for Field Service til fritekstfakturaer i Microsoft Dynamics 365 for Finance and Operations.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere aftalefakturaer i Microsoft Dynamics 365 for Field Service med fritekstfakturaer i Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="templates-and-tasks"></a>Skabeloner og opgaver
 
@@ -59,7 +58,7 @@ Følgende synkroniseringsopgaver kræves, før aftalefakturaer kan synkroniseres
 
 ## <a name="entity-flow"></a>Enhedsflow
 
-Fakturaer, der er oprettet ud fra en aftale i Field Service, kan synkroniseres til Finance and Operations via et CDS-dataintegrationsprojekt (CDS – Common Data Service). Opdateringer til disse fakturaer synkroniseres til fritekstfakturaer i Finance and Operations, hvis fritekstfakturaers regnskabsstatus er **Igangværende**. Når fritekstfakturaerne er bogført i Finance and Operations, og regnskabsstatussen er opdateret til **Fuldført**, kan du ikke længere synkronisere opdateringer fra Field Service.
+Fakturaer, der er oprettet ud fra en aftale i Field Service, kan synkroniseres til Finance and Operations via et Common Data Service (CDS)-dataintegrationsprojekt. Opdateringer til disse fakturaer synkroniseres til fritekstfakturaer i Finance and Operations, hvis fritekstfakturaers regnskabsstatus er **Igangværende**. Når fritekstfakturaerne er bogført i Finance and Operations, og regnskabsstatussen er opdateret til **Fuldført**, kan du ikke længere synkronisere opdateringer fra Field Service.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning til Field Service
 
@@ -107,4 +106,3 @@ Følgende illustration viser skabelontilknytningen i Dataintegration.
 ### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Aftalefakturaer (Field Service til Fin and Ops): Fakturalinjer
 
 [![Skabelontilknytning i dataintegration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-

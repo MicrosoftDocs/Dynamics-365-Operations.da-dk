@@ -1,13 +1,13 @@
---- 
-title: "Tilføje en eksisterende aktivitet til en produktionsflowversion"
-description: "Når du opretter nye versioner af produktionsflow, kan du vælge at føje aktiviteter, der er oprettet for de ældre versioner, til den nye version."
+---
+title: Tilføje en eksisterende aktivitet til en produktionsflowversion
+description: Når du opretter nye versioner af produktionsflow, kan du vælge at føje aktiviteter, der er oprettet for de ældre versioner, til den nye version.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 032855125ccd14fbdc1e1bdb735c92ce70853fb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a74fb34db71ba4b539c1b6ede361329aaeb94920
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313606"
 ---
 # <a name="add-an-existing-activity-to-a-production-flow-version"></a>Tilføje en eksisterende aktivitet til en produktionsflowversion
 
@@ -55,5 +55,4 @@ Denne opgave kræver et produktionsflow, hvor version og aktiviteter allerede er
     * Find og vælg en eksisterende aktivitet, der skal føjes til den nye produktionsflowversion.  Bemærk, at listen viser alle aktiviteter, der er oprettet for denne produktionsflow for alle tidligere versioner af flowet.  
 3. Indtast eller vælg en værdi i feltet Aktivitet.
 4. Klik på OK.
-
 

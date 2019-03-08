@@ -1,13 +1,13 @@
 ---
 title: Oprette og arbejde med brugerdefinerede felter
-description: "Dette emne viser, hvordan Microsoft Dynamics 365 for Finance and Operations tillader nogle brugere at oprette brugerdefinerede felter for at skræddersy programmet, så det passer til virksomheden."
+description: Dette emne viser, hvordan Microsoft Dynamics 365 for Finance and Operations tillader nogle brugere at oprette brugerdefinerede felter for at skræddersy programmet, så det passer til virksomheden.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348014"
 ---
-
 # <a name="create-and-work-with-custom-fields"></a>Oprette og arbejde med brugerdefinerede felter
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ Selvom Microsoft Dynamics 365 for Finance and Operations indeholder et omfattend
 
 Muligheden for at tilføje brugerdefinerede felter findes i platformsopdatering 13 og nyere.
 
-I denne video vises, hvor let det er at føje et brugerdefineret felt til en side: [Tilføjelse af brugerdefinerede felter i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Denne video viser, hvor let det er at føje et brugerdefineret felt til en side: [Tilføje brugerdefinerede felter i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Oprettelse af brugerdefinerede felter
 
@@ -160,4 +159,3 @@ Af ydelsesmæssige og tekniske årsager tillader kun tabeller, der opfylder føl
 - Tabellen kan ikke udvide en anden tabel.
 - Tabellen kan ikke markeres som en systemtabel.
 - Tabellen må ikke være en midlertidig tabel.
-

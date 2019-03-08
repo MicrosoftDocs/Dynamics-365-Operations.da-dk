@@ -1,32 +1,31 @@
 ---
-title: "Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted"
-description: "I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted."
+title: Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted
+description: I dette emne beskrives, hvordan du konfigurerer et lagersted ved hjælp af en skabelon til konfiguration af lagersted.
 author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338055"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurere et lagersted ved hjælp af en skabelon til konfiguration af lagersted
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ Du kan hente en zip-fil til datapakken. Denne fil indeholder alle data i det val
 
 Loggen **Vis udførelseslog** indeholder detaljerede oplysninger om hver dataenhed, der importeres. Du kan bruge den midlertidige datavisning til hurtigt at komme til måldataene. På denne måde kan du se, hvordan de importerede data ser ud på de relaterede sider i programmet. Når du bruger standarddataskabelonerne, fungerer importrækkefølgen for hver dataenhed på den foruddefinerede måde for at sikre, at alle afhængige data importeres først. Hvis brugerdefinerede dataenheder er del af projektet, skal du sikre dig, at den korrekte rækkefølge er defineret. Du kan finde flere oplysninger i [Konfigurere dataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Du kan få flere oplysninger om, hvordan du kan bruge lagerstedsskabelon til at kopiere konfigurationen af et lagersted fra ét firma til et nyt i den samme forekomst, i denne 3 minutters video på YouTube: [Bruge lagerstedsskabelon til at kopiere konfiguration i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Hvis du vil vide mere om, hvordan du kan bruge lagerstedsskabelon til at kopiere konfigurationen af et lagersted fra ét firma til et nyt firma i den samme forekomst, kan du se denne 3 minutters video på YouTube: [Bruge lagerstedsskabelon til at kopiere konfiguration i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relateret emne
 
 [Konfigurationsdataskabeloner](../../dev-itpro/data-entities/configuration-data-templates.md)
-

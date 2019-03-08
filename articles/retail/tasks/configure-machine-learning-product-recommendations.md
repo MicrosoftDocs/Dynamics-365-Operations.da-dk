@@ -1,13 +1,13 @@
---- 
-title: "Konfigurere produktanbefalinger, der er baseret på maskinel indlæring"
-description: "Denne procedure opdaterer de data i enheden, der bruges af systemet til maskinel ind læring, som er baseret på produktanbefalingerne, og derefter aktiveres produktanbefalinger på POS-klienter."
+---
+title: Konfigurere produktanbefalinger, der er baseret på maskinel indlæring
+description: Denne procedure opdaterer de data i enheden, der bruges af systemet til maskinel ind læring, som er baseret på produktanbefalingerne, og derefter aktiveres produktanbefalinger på POS-klienter.
 author: ashishmsft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BIMeasurementDeployManagementEntityStore, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 700af913f18e23c66db53a92033def06818af1ec
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 277ffb879b80fe57deeaa2b52c1543baaf820274
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348520"
 ---
 # <a name="configure-machine-learning-powered-product-recommendations"></a>Konfigurere produktanbefalinger, der er baseret på maskinel indlæring
 
@@ -41,5 +41,4 @@ Denne procedure opdaterer de data i enheden, der bruges af systemet til maskinel
     * Hvis du modtager meddelelsen "Anbefalingsmodellerne blev ikke hentet", skyldes det, at du har opdateret enhedslageret for nylig, og systemet er måske ikke færdig med at samle de nye data. Vent 2-3 timer, og prøv igen.  
 9. Klik på Gem.
 10. Luk siden.
-
 

@@ -1,39 +1,38 @@
 ---
-title: "Oprette, godkende og bogføre job i Attract"
-description: "I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job."
+title: Oprette, godkende og bogføre job i Attract
+description: I dette emne beskrives elementerne i et job i Attract. Det beskrives også, hvordan du opretter et job.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303759"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Oprette, godkende og bogføre job i Attract
 
 [!include [banner](includes/banner.md)]
 
 I dette emne beskrives elementerne i et job i Microsoft Dynamics 365 for Talent: Attract. Det beskrives også, hvordan du opretter et job.
 
-## <a name="job-creation"></a>Oprettelse af job
+## <a name="job-creation"></a>Joboprettelse
 
 Administratorer, rekrutteringsmedarbejdere og ansættelsesansvarlige kan oprette job. Når du opretter et job, bliver du bedt om at vælge din rolle i processen: ansættelsesansvarlig eller rekrutteringsmedarbejder. Når du har valgt en rolle, du bliver bedt om at vælge en processkabelon. Hvis du vælger **Spring over**, bruges standardskabelonen. Du kan finde flere oplysninger om processkabeloner i [Oprette en processkabelon i Attract](./process-templates-attract.md).
 
@@ -127,7 +126,7 @@ Når et job er gemt, kan det sendes til godkendelse. Følgende tabel indeholder 
 
 Du kan filtrere på jobstatusser på joblisten.
 
-Godkendelser kan sendes til enhver Azure AD-bruger (Microsoft Azure Active Directory) i firmaet. Godkendelserne sendes parallelt til alle personer, der er angivet som godkendere. Når et job er godkendt, kan det aktiveres.
+Godkendelser, der kan sendes til enhver Microsoft Azure Active Directory (Azure AD)-bruger i firmaet. Godkendelserne sendes parallelt til alle personer, der er angivet som godkendere. Når et job er godkendt, kan det aktiveres.
 
 De personer, der er angivet som godkendere, modtager en besked i Attract med oplysning om, at et element skal godkendes. Der vises også en godkendelsesbesked i sektionen **Tildelt til dig** i dashboardet. Når nogen accepterer eller godkender et job, modtager ansættelsesteamet en besked. Endelig modtager teamet en besked, når jobbet er godkendt.
 
@@ -169,4 +168,3 @@ Følg denne fremgangsmåde for at oprette et job.
 
 13. For at aktivere jobbet skal du vælge **Aktivér**.
 14. Du kan slå jobbet op ved at gå til **Opslag** og derefter vælge **Slå op nu** på Talent-karrierewebstedet eller LinkedIn.
-

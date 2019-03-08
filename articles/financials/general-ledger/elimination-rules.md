@@ -5,9 +5,9 @@ author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0736d63c9a582948d197dc267f9941cbbd3e3c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333087"
 ---
-
 # <a name="elimination-rules"></a>Elimineringsregler
 
 [!include [banner](../includes/banner.md)]
@@ -153,7 +152,6 @@ Der er to måder at behandle elimineringsposteringer på: under onlinekonsolider
 Vælg **Elimineringskladde** i modulet Konsolideringer i en virksomhed, der er defineret som et elimineringsregnskab. Når du har valgt navnet på kladden, skal du klikke på **Linjer**. Du kan køre forslaget ved at vælge menuen **Forslag** og derefter vælge **Elimineringsforslag**.
 
 Vælg det regnskab, der er kilden til de konsoliderede data, og vælg derefter den regel, du vil behandle. Angiv en startdato for at starte søgningen efter elimineringsbeløb og en slutdato, hvor søgningen efter elimineringsbeløb skal afsluttes. Feltet **Finansposteringsdato** er den dato, der bruges til bogføring af kladden i finans. Når du klikker på **OK**, kan du gennemse beløbene og bogføre kladden.
-
 
 
 

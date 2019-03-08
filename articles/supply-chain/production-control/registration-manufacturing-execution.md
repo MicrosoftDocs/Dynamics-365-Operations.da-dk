@@ -1,13 +1,13 @@
 ---
-title: "Registrering for produktionsudførelse"
-description: "Dette emne beskriver vigtige begreber og udtryk, som du skal kunne forstå for at konfigurere og bruge produktionsudførelse."
+title: Registrering for produktionsudførelse
+description: Dette emne beskriver vigtige begreber og udtryk, som du skal kunne forstå for at konfigurere og bruge produktionsudførelse.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318160"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Registrering for produktionsudførelse
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Arbejderne kan foretage forskellige former for registreringer i produktionsudfø
 -   **Registrere pauser** (tilgængelig til tid og fremmøde) – I løbet af arbejdsdagen kan arbejdere registrere, at de forlader deres arbejdsstation for at tage en pause. Der kan oprettes flere pausetyper. Når en arbejder vender tilbage og logger på igen, registrerer systemet, at arbejderen er tilbage, og pauseregistreringen ophører.
 -   **Registrere indirekte aktiviteter** (tilgængelig til tid og fremmøde) – Indirekte aktiviteter er ikke-produktive aktiviteter, som arbejdere kan være beskæftiget med i dagens løb. Det kan f.eks. være et afdelingsmøde, et gruppemøde eller et vedligeholdelsesjob i produktionshallen. Arbejderne kan foretage registreringer af indirekte aktiviteter, der er konfigureret.
 -   **Registrere overtid** (tilgængelig til tid og fremmøde) – Arbejdere, der er blevet bedt om at arbejde længere, kan vælge, om de vil registrere de ekstra timer som flekstid eller overtid.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Udsende og planlægge spørgeskemaer."
-description: "I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem."
+title: Udsende og planlægge spørgeskemaer.
+description: I dette emne beskrives, hvordan du distribuerer de spørgeskemaer, som du har designet, så de er tilgængelige for den person eller gruppe af personer, der skal udfylde dem.
 author: kherr75
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303695"
 ---
-
 # <a name="distribute-and-schedule-questionnaires"></a>Udsende og planlægge spørgeskemaer.
 
 [!include [banner](includes/banner.md)]
@@ -132,6 +131,5 @@ Spørgeskemaer kan gøres tilgængelige for bestemte brugere eller brugergrupper
 [Brug af spørgeskemaer](questionnaires.md)
 
 [Visning og evaluering af resultaterne af spørgeskemaer](evaluate-questionnaire-results.md)
-
 
 

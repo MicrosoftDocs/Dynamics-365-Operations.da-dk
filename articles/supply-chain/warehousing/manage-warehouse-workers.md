@@ -1,13 +1,13 @@
 ---
 title: Styre lagerarbejdere
-description: "I denne artikel beskrives, hvordan du kan bruge Dynamics 365 Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder."
+description: I denne artikel beskrives, hvordan du kan bruge Dynamics 365 for Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310984"
 ---
-
 # <a name="manage-warehouse-workers"></a>Styre lagerarbejdere
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics 365 Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
+I denne artikel beskrives, hvordan du kan bruge Microsoft Dynamics 365 for Finance and Operations til at styre og overvåge det arbejde, der udføres af medarbejderne på dine lagersteder.
 
 Hvis du bruger funktionerne i Lagerstedsstyring, henvises alle arbejderhandlinger på lagersted som *arbejde*. Arbejde som f.eks. plukning, flytning og optælling af den disponible lagerbeholdning registreres ved hjælp af mobilenheder. Før en lagermedarbejder kan udføre arbejdet, skal han eller hun skal være tilknyttet en arbejder i Personale. Hver **Arbejder**-konto kan have flere lagerstedsarbejdsbrugere, der er knyttet til den. Disse arbejdsbrugere kan arbejde på forskellige lagersteder og kan have forskellige adgangsniveauer til forskellige mobilenhedsmenuer. Du kan tænke på lagerstedsarbejdsbrugerne som flere logons for den valgte arbejder. De enkelte arbejdsbrugere har et standardlagersted, og bestemte arbejdsgange vises i de menupunkter, der er tilgængelige for den arbejdsbruger. 
 
@@ -54,7 +53,6 @@ Analyse af den tid, der bruges til at behandle arbejdselementer, kan forbedre la
 
 -   **Arbejde efter bruger** – denne rapport viser arbejdernes produktivitet baseret på de faktiske tider mod forventede tider.
 -   **Arbejde efter arbejdstransaktionstype** – du kan bruge denne rapport til at undersøge ineffektivitet i specifikke lagerstedsprocesser. Du bemærker eksempelvis, at pluk til flytteordrer tager længere tid i denne uge end i tidligere uger. Du kan derefter bruge disse oplysninger til yderligere undersøgelse.
-
 
 
 

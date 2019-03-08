@@ -1,13 +1,13 @@
 ---
-title: "Nyheder eller ændringer i Dynamics 365 for Retail"
-description: "Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner i de seneste versioner af Microsoft Dynamics 365 for Retail."
+title: Nyheder eller ændringer i Dynamics 365 for Retail
+description: Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner i de seneste udgivelser af Microsoft Dynamics 365 for Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
@@ -16,25 +16,24 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 3b5c97d6176b541eb7fa0cd6ee6a5f366343a4f7
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319103"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-retail"></a>Nyheder eller ændringer i Dynamics 365 for Retail
 
 [!include [banner](../../includes/banner.md)]
 
-Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner og ændringer i de seneste versioner af Microsoft Dynamics 365 for Retail.
+Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funktioner og ændringer i de seneste udgivelser af Microsoft Dynamics 365 for Retail.
 
 [!include [release notes](../includes/release-notes.md)]
 
 ## <a name="releases-of-dynamics-365-for-retail"></a>Versioner af Dynamics 365 for Retail
 
-|Udlevering | Build-nummer | Tilgængelighed | Få mere at vide |
+|Frigivelse | Build-nummer | Tilgængelighed | Få mere at vide |
 |--------|--------------|--------------|------------|
 |Dynamics 365 for Finance & Operations - Retail - 7.3.5 | 7.3.11971.64930 | 2018. september | [KB 4464337 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5, (binær del)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4464337&bugId=244892&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450), [KB 4463127 Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5. (X++ del)\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4463127&bugId=244893&qc=76dd5cdc0d340f5e68db3efa64d755ee83d747a3d786180a6dc9b99677bcb450) |
 |Dynamics 365 for Finance & Operations - Retail - 7.3.4 | 7.3.11971.64556   | 2018. august | [KB 4467783 Microsoft Dynamics 365 for Retail - Version 7.3.5 - BugFix Package 2\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4467783&bugId=257914&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
@@ -47,4 +46,3 @@ Denne side henviser til ressourcer, hvor du kan få mere at vide om de nye funkt
 | Dynamics 365 for Retail - 7.3.2.5 |   7.3.21971.64091 | 2018. juni | [KB 4342134Microsoft Dynamics 365 for Retail - Version 7.3.2.5 - BugFix Package 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* Linket peger på en Knowledge Base-artikel. Du skal logge på Lifecycle Services (LCS) til at få vist KB-artiklen.
-

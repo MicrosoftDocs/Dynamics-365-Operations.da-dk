@@ -1,13 +1,13 @@
 ---
 title: Mobilfakturagodkendelser
-description: Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder i Dynamics 365 for Finance and Operations via en brugssag om godkendelser af kreditorfakturaer til mobilenheder.
+description: Dette emne er beregnet til at give en praktisk tilgang til design af scenarier i Dynamics 365 for Finance and Operations for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314388"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobilfakturagodkendelser
 
 [!include [banner](../includes/banner.md)]
 
-Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations kan forretningsbruger designe oplevelser til mobilenheder. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
+Forretningsbrugere kan designe mobiloplevelser med mobilfunktioner i Microsoft Dynamics 365 for Finance and Operations. I avancerede scenarier kan udviklere også udvide funktionerne, som de ønsker. Den mest effektive måde at lære nogle af de nye begreber til mobilenheder på er ved at gennemgå processen med at designe et par scenarier. Dette emne er beregnet til at give en praktisk tilgang til design af scenarier for mobilenheder via en brugssag om godkendelser af kreditorfakturaer til mobilenheder. Dette emne kan hjælpe dig med at designe andre variationer af scenarier og kan også anvendes til andre scenarier, der ikke er relateret til kreditorfakturaer.
 
 <a name="prerequisites"></a>Forudsætninger
 -------------
@@ -37,7 +36,7 @@ Med mobilfunktionaliteten i Microsoft Dynamics 365 for Finance and Operations ka
 | Forudsætning                                                                                            | Betegnelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Håndbog til forhåndslæsning om brug af mobilenhed                                                                                |[Mobilplatform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og Microsoft Dynamics for Operations platformsopdatering 3 (november 2016)                   |
+| Dynamics 365 for Finance and Operations                                                                             | Et miljø, der har Microsoft Dynamics 365 for Operations version 1611 og Microsoft Dynamics for Operations-platformsopdatering 3 (november 2016)                   |
 | Installer hotfix-KB 3204341.                                                                              | Arbejdsrutineoptager kan fejlagtigt optage to Luk-kommandoer til rullelistedialogbokse. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering) |
 | Installer hotfix-KB 3207800.                                                                              | Dette hotfix gør det muligt at se vedhæftede filer på mobilklienten. Dette er medtaget i Dynamics 365 for Operations platformsopdatering 3 (november 2016 opdatering).           |
 | Installer hotfix-KB 3208224.                                                                              | Programkode til applikationen til godkendelse af kreditorfakturaer på mobilenheder. Dette er inkluderet i Microsoft Dynamics AX-programversion 7.0.1 (maj 2016).                          |
@@ -488,7 +487,6 @@ Kan du udføre følgende variationer i scenario 1, baseret på kravene til scena
     3.  Ideelt set skal fordelingerne vises i forbindelse med en fakturalinje i dette scenario. Sørg derfor for, at brugeren kan dykke ned i en linje for at se fordelingssiden. Brug sidelinkfunktionen til at oprette detaljeadgang, ligesom du gjorde for hoved- og detaljesiderne i scenario 1.
 
 2.  Da mere end én beløbstype forventes for fordelinger i scenario 2 (moms, gebyrer osv.), vil det være nyttigt at få vist beskrivelsen af beløbstypen. (Vi har udeladt disse oplysninger i scenario 1).
-
 
 
 

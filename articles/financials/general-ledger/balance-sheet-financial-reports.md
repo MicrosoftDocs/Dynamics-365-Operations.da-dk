@@ -1,13 +1,13 @@
 ---
-title: "Balance - økonomiske rapporter"
-description: "I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter."
+title: Balance - økonomiske rapporter
+description: I denne artikel beskrives standardrapporterne til balancer. Her beskrives også de komponenter, der er knyttet til disse rapporter.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ff778af1bb3af3a10132ab3193ad1cd5daa24e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1c92ccb37b62a39e5ab4808454f8c6f84560d917
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342287"
 ---
-
 # <a name="balance-sheet-financial-reports"></a>Balance - økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Kolonnedefinitionerne indeholder forskellige typer kolonner, der giver forskelli
 [Se økonomiske rapporter](view-financial-reports.md)
 
 [Dynamics Financial Reporting-blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
 
 
 

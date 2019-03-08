@@ -1,13 +1,13 @@
---- 
-title: "ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurer beregninger)"
-description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet."
+---
+title: 'ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurer beregninger)'
+description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere en model for elektronisk rapportering (ER) til at udføre optælling og sammenlægning baseret på data i det tekstoutput, der allerede er oprettet.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4ef657b13bc1f7f4a84676821e4175ace32c069a
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338906"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2-configure-computations"></a>ER Konfigurere format for at udføre optælling og sammenlægning (del 2: Konfigurere beregninger)
 
@@ -31,7 +31,7 @@ Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som syste
 
 For at fuldføre disse trin skal du først udføre trinnene i proceduren "Konfigurer ER-format til optælling og sammenlægning (del 1: Oprettelsesformat)".
 
-Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="create-a-format-configuration-to-add-counting-and-summing-details"></a>Opret en formatkonfiguration for at tilføje optællings- og sammenlægningsdetaljer
@@ -139,5 +139,4 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for O
 82. Luk siden.
 83. Klik på Gem.
 84. Luk siden.
-
 

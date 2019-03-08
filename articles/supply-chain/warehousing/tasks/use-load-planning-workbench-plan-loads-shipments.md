@@ -1,13 +1,13 @@
---- 
-title: "Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet"
-description: "Denne fremgangsmåde viser, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre."
+---
+title: Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet
+description: Denne fremgangsmåde viser, hvordan lastplanlægningspanelet bruges til at oprette en belastning for en salgsordre.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f840a4c15305af5f55451ae7f1cec2da25e685a4
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343897"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlægge laster og forsendelser ved hjælp af lastplanlægningspanelet
 
@@ -65,5 +65,4 @@ Denne fremgangsmåde viser, hvordan lastplanlægningspanelet bruges til at opret
 5. Klik på Tildel.
 6. Luk siden.
 7. Luk siden.
-
 

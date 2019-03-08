@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette dimensionsbaserede konfigurationer
 description: Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResDimensionBasedConfiguration, ConfigChooseFromRoute, ConfigChooseFromGroup, ConfigChoiceApprove
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9190d6dfd4b3f6cf0634e86845e7de028631bdd4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d6ea85cedbb96266f82e0a4ec1ad17f3ba829322
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328579"
 ---
 # <a name="create-dimension-based-configurations"></a>Oprette dimensionsbaserede konfigurationer
 
@@ -52,5 +52,4 @@ Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsba
 10. Skriv en værdi i feltet Beskrivelse.
     * Angiv en beskrivelse af konfigurationen for at forklare, hvad den indeholder.  
 11. Klik på OK.
-
 

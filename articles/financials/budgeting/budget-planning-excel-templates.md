@@ -1,13 +1,13 @@
 ---
-title: "Budgetplanlægningsskabeloner til Excel"
-description: I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
+title: Budgetplanlægningsskabeloner til Excel
+description: I dette emne beskrives, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337043"
 ---
-
 # <a name="budget-planning-templates-for-excel"></a>Budgetplanlægningsskabeloner til Excel
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives, hvordan du opretter Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
+I dette emne beskrives, hvordan du kan oprette Microsoft Excel-skabeloner, der kan bruges sammen med budgetplaner.
 
 I dette emne kan du se, hvordan du opretter Excel-skabeloner, der skal bruges med budgetplaner ved hjælp af standarddemodatasæt og logon som administratorbruger. Du kan finde flere oplysninger om budgetplanlægning under [Budgetplanlægningsoversigt.](budget-planning-overview-configuration.md) Du kan også følge selvstudiet [Budgetplanlægning 101](budget-plan.md) for at lære grundlæggende principper for modulkonfiguration og -brug.
 
@@ -136,7 +135,6 @@ Ja, de fleste af de almindelige Excel-funktioner fungerer i budgetplanskabeloner
 Du kan også oprette og bruge pivottabeller og -diagrammer til supplerende grupperinger og visualiseringer af budgetdata. Under fanen **Data** i gruppen **Forbindelser** skal du klikke på **Opdater alle** og derefter klikke på **Forbindelsesegenskaber**. Klik på fanen **Anvendelse**. Under **Opdater** skal du markere afkrydsningsfeltet **Opdater data, når filen åbnes**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

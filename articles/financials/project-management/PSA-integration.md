@@ -1,13 +1,13 @@
 ---
 title: Project Service Automation
-description: "Dette emne indeholder oplysninger om Project Service Automation til integrationsløsningen til Finance and Operations. Denne integrationsløsning bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Project Service Automation via Common Data Service."
+description: Dette emne indeholder oplysninger om Project Service Automation til integrationsløsningen til Finance and Operations. Denne integrationsløsning bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Project Service Automation via Common Data Service.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 4b1d2ae69899a2937d47f6547ee4ba72b2d1ece4
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335686"
 ---
-
 # <a name="project-service-automation"></a>Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-Løsningen integration af Project Service Automation med Finance and Operations bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Project Service Automation via Common Data Service. Integrationsskabelonerne, der er tilgængelige med dataintegrationsfunktionen, muliggør strømmen af projekter, projektkontrakter, projektkontraktlinjer, milepæle i projektkontraktlinjer, projektopgaver, udgiftstransaktionskategorier, timeestimater og udgiftsestimater fra Project Service Automation til Finance and Operations.
+Project Service Automation til Finance and Operations-integrationsløsningen bruger funktionen Dataintegration til at synkronisere data på tværs af forekomster af Microsoft Dynamics 365 for Finance and Operations og Microsoft Dynamics 365 for Project Service Automation via Common Data Service. Integrationsskabelonerne, der er tilgængelige med dataintegrationsfunktionen, muliggør strømmen af projekter, projektkontrakter, projektkontraktlinjer, milepæle i projektkontraktlinjer, projektopgaver, udgiftstransaktionskategorier, timeestimater og udgiftsestimater fra Project Service Automation til Finance and Operations.
 
 > [!NOTE]
 > - Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, 7.3.0, når du har installeret KB 4132657 og KB 4132660, kan du bruge skabelonerne til at integrere projektopgaver, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og faktiske oplysninger og konfigurere låsning af funktionalitet. Hvis du skal nulstille regnskabsfordelingerne, anbefaler vi, at du også installerer KB 4131710.
@@ -69,11 +68,10 @@ Når du vil bruge løsningen til integration af Project Service Automation med F
 
 Når du vil bruge løsningen til integration af Project Service Automation med Finance and Operations, skal du installere følgende komponenter:
 
-- Microsoft Dynamics 365 for Project Service Automation version 9.0.0.0 eller nyere.
-- Løsningen Kundeemne til kontanter til Microsoft Dynamics 365 for Sales, version 1.14.0.0 (v14) eller nyere.
-- Project Service Automation til Finance and Operations-løsningen til Microsoft Dynamics 365 for Project Service Automation version 1.0.0.0 eller nyere.
+- Microsoft Dynamics 365 for Project Service Automation version 9.0.0.0 eller nyere
+- Kundeemne til kontantløsningen til Microsoft Dynamics 365 for Sales version 1.14.0.0 (v14) eller nyere
+- Løsning til integration af Project Service Automation med Finance and Operations til Microsoft Dynamics 365 for Project Service Automation version 1.0.0.0 eller nyere
 
 ## <a name="install-the-project-service-automation-to-finance-and-operations-integration-solution-in-your-project-service-automation-instance"></a>Installer løsningen til integration af Project Service Automation med Finance and Operations i din Project Service Automation-forekomst
 
 Hente Project Service Automation til Finance and Operations-integrationsløsning fra [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57016), og følg vejledningen, der er inkluderet i løsningen.
-

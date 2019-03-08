@@ -1,13 +1,13 @@
---- 
-title: "Vælge datamodeldefinitioner, når du opretter formater"
-description: "For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv."
+---
+title: Vælge datamodeldefinitioner, når du opretter formater
+description: For at fuldføre trinnene i denne procedure skal du først fuldføre proceduren ER Oprette en konfigurationsudbyder og markere den som aktiv.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334490"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Vælge datamodeldefinitioner, når du opretter formater
 
@@ -98,5 +98,4 @@ Denne procedure er beregnet til brugere, der har fået tildelt rollen som system
 4. Indtast eller vælg en værdi i feltet Definition af datamodel.
     * Bemærk, at der nu kun findes ét rodelementet, som kan tilknyttes programdatakilderne. Når der introduceres mindst én modeltilknytning, er det kun modellens rodelementer, som er knyttet til programdatakilder, der kan vælges som modeldefinition, mens ER-formatet er tilføjet.   
 5. Luk siden.
-
 

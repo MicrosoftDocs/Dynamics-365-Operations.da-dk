@@ -1,13 +1,13 @@
 ---
-title: "Økonomiske dimensioner og bogføring"
-description: "Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Dette emne forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen."
+title: Økonomiske dimensioner og bogføring
+description: Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forskellige komponenter kan arbejde sammen, når du bogfører et dokument eller kladde. Disse komponenter omfatter kontostrukturer, avancerede regler og udligningsdimensioner og faste dimensioner. Dette emne forklarer, hvad hver enkelt komponent er, og hvordan komponenterne arbejder sammen.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327935"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>Økonomiske dimensioner og bogføring 
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Når du planlægger at oprette din kontoplan, skal du overveje, hvordan de forsk
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Komponenter i kontoplan og økonomisk dimension
 
-Microsoft Dynamics 365 for Finance and Operations har et omfattende, regelbaseret system til at definere gyldige kombinationer af værdier for hovedkonti og økonomiske dimensioner. Dette afsnit giver en kort oversigt over funktionaliteten af hver komponent og forklarer, hvor du kan finde komponenten.
+Microsoft Dynamics 365 for Finance and Operations har et omfattende, regelbaseret system til definition af gyldige kombinationer af værdier for hovedkonti og økonomiske dimensioner. Dette afsnit giver en kort oversigt over funktionaliteten af hver komponent og forklarer, hvor du kan finde komponenten.
 
 ### <a name="account-structures"></a>Kontostrukturer
 
@@ -128,4 +127,3 @@ Nogle af følgende ressourcer refererer til en tidligere version af Finance and 
 [Dimension, der benyttes som standard i regnskabsfordelinger](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimension, der benyttes som standard i dimensionsstruktur](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

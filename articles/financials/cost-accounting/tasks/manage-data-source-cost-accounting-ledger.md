@@ -1,13 +1,13 @@
---- 
+---
 title: Administrere en datakilde for finanspost for driftsregnskab
 description: Du kan bruge denne procedure til at administrere datakilden i Finans for en finanspost i omkostningsregnskabet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f53101d73bc69199fafb00de0fa1759d59ea4ce8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319310"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Administrere en datakilde for finanspost for driftsregnskab
 
@@ -36,7 +36,7 @@ Du kan bruge denne procedure til at administrere datakilden i Finans for en fina
 6. Klik på Ny.
 7. Skriv en værdi i feltet Navn.
 8. Indtast eller vælg en værdi i feltet Dataprovider.
-    * I dette eksempel skal du vælge Dynamics 365 for Finance and Operations - finansposter.  
+    * I dette eksempel skal du vælge Dynamics 365 for Finance and Operations - Finansposter.  
 9. Indtast eller vælg en værdi i feltet Dimension for omkostningselement.
     * Vælg Omkostningselementer i dette eksempel.  
 10. Klik på Gem.
@@ -46,5 +46,4 @@ Du kan bruge denne procedure til at administrere datakilden i Finans for en fina
 13. Klik på Ny.
 14. Vælg Aktuelt i feltet Posteringslag.
 15. Klik på OK.
-
 

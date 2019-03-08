@@ -1,13 +1,13 @@
 ---
 title: Power BI-indhold til kompensation og frynsegoder
-description: "I dette emne beskrives Finance and Operations – Power BI-indhold til kompensation og frynsegoder."
+description: I dette emne beskrives Finance and Operations – Power BI-indhold til kompensation og frynsegoder.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6834940b16749461066e8f1000cbb7c2d4371109
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327429"
 ---
-
 # <a name="compensation-and-benefits-power-bi-content"></a>Power BI-indhold til kompensation og frynsegoder
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Finance and Operations-data bruges til at udfylde rapporterne i indholdspakken t
 | Workforce\_WorkerName             | Fornavn, efternavn og fulde navn                                                                       | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | Workforce\_WorkerTitle            | Titel og anciennitetsdato                                                                                   | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | Workforce\_WorkerTrend            | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job, Workforce\_WorkerBenefit |
-

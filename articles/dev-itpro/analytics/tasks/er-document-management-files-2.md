@@ -1,13 +1,13 @@
---- 
+---
 title: 'ER Brug dokumentstyringsfiler i formatoutput (del 2: Udvidet datamodel)'
-description: "Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER."
+description: Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som systemadministrator eller udvikler til elektronisk rapportering, kan konfigurere et format til elektronisk rapportering (ER) til at bruge filer fra Dokumentstyring (vedhæftede filer) i ER.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: cb4c58dc86a159a70634c05408a8db471ebcae4c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320943"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-2-extend-data-model"></a>ER Brug dokumentstyringsfiler i formatoutput (del 2: Udvide datamodel)
 
@@ -31,7 +31,7 @@ Følgende trin beskriver, hvordan en bruger, der er tildelt til rollen som syste
 
 For at fuldføre disse trin skal du først udføre trinnene i opgaveguiden "ER Brug filer fra Dokumentstyring i formatoutput (del 1: Forbered datamodel)".
 
-Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a>Udvid datamodellen for at vise filerne fra Dokumentstyring i den
@@ -58,7 +58,7 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for O
 17. Vælg "Streng" i feltet Varetype.
 18. Klik på Tilføj.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Knytte nye datamodelelementer til Dynamics 365 for Finance and Operations, Enterprise edition-datakilder
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Tilknyt nye datamodelelementer til datakilder i Dynamics 365 for Finance and Operations Enterprise edition
 1. Klik på Tilknyt model til datakilde.
 2. Brug Quick Filter til at filtrere på feltet Definition med værdien 'InvoiceCustomer'.
     * InvoiceCustomer  
@@ -91,5 +91,4 @@ Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for O
 25. Klik på Skift status.
 26. Klik på Fuldført.
 27. Klik på OK.
-
 

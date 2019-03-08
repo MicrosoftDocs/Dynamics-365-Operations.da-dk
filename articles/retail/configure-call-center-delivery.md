@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere callcenterets leveringsmåder og -gebyrer"
-description: "I dette emne beskrives, hvordan du konfigurerer leveringsmåder og -gebyrer for et callcenter i Microsoft Dynamics 365 for Retail."
+title: Konfigurere callcenterets leveringsmåder og -gebyrer
+description: I dette emne beskrives, hvordan du konfigurerer leveringsmåder og gebyrer for en callcenterordre i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328418"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere callcenterets leveringsmåder og -gebyrer
 
 [!INCLUDE [banner](includes/banner.md)]
@@ -96,4 +95,3 @@ Du kan også knytte en fremskyndelseskode til en leveringsmåde, som du konfigur
 Ved der for eksempel skal leveres med fly næste arbejdsdag, skal pluk udføres på lagerstedet inden kl. 13 hver dag. I så fald kan der oprettes en fremskyndelseskode, som kan knyttes til enhver leveringsmåde for næste arbejdsdag, der er konfigureret i systemet. Når lagerstedet opretter sin plukbølge, kan den relevante fremskyndelseskode i feltet **Fremskynd** bruges som et filter, så pluk kun køres for ordrer, der har de leveringsmåder, der er knyttet til koden.
 
 Desuden, når der angives en callcenterordre, kan en fremskyndelseskode manuelt anvendes på salgsordrehovedet eller på en enkelt salgsordrelinje. Koden kan igen bruges til sorterings- eller rapporteringsformål. Nogle gange skal en ordre håndteres omhyggeligt på grund af et kundeserviceproblem. I dette tilfælde kan der anvendes en bestemt fremskyndelseskode på ordrehovedet eller -linjerne for at identificere og prioritere ordren under ordreopfyldningsprocessen.
-

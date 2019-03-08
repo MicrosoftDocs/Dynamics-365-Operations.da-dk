@@ -1,13 +1,13 @@
 ---
-title: "Systemgruppering på en åben opgaveliste"
-description: "Dette emne beskriver, hvordan du filtrerer oversigten over åbne opgaver på en mobilenhed."
+title: Systemgruppering på en åben opgaveliste
+description: Dette emne beskriver, hvordan du filtrerer oversigten over åbne opgaver på en mobilenhed.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 73e1da37c354eecf1ef5d44e68d814664fe2be99
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331960"
 ---
-
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering på en åben opgaveliste
 
 [!include [banner](../includes/banner.md)]
@@ -42,5 +41,4 @@ Brug disse trin til at konfigurere systemgruppering på en oversigt over åbent 
 | Tillad systemgruppering |                                                                                                                                                                                                                                                 Aktiverer systemgruppering for et valgt menupunkt på arbejdslisten.                                                                                                                                                                                                                                                  |
 | Systemgrupperingsfelt | Kun tilgængelig, hvis <strong>Tillad systemarbejde</strong> er angivet til <strong>Ja</strong>. Markér det felt, der bestemmer, hvordan plukkearbejde grupperes for arbejdere. Hvis du f.eks. vælger feltet <strong>ShipmentId</strong>, scanner arbejderen forsendelses-id for at gruppere plukkearbejdet. Alt arbejde for forsendelsen knyttes derefter til arbejderen. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Brug feltet <strong>Systemgrupperingslabel</strong> til at informere arbejderen, hvad der skal scannes. |
 | Systemgrupperingslabel |                       Kun tilgængelig, hvis <strong>Tillad systemarbejde</strong> er angivet til <strong>Ja</strong>. Angiv oplysninger arbejderen om, hvad der skal scannes, når plukkearbejde er grupperet. Hvis du f.eks. bruger feltet <strong>ShipmentId</strong> til at gruppere plukkearbejde efter forsendelse, kan du skrive Forsendelses-id i feltet. Dette felt kræver, at du opretter et menupunkt, der bruger eksisterende arbejde, der er grupperet af systemet. Du skal også vælge det felt, der skal grupperes efter, i feltet <strong>Systemgruppering</strong>.                       |
-
 

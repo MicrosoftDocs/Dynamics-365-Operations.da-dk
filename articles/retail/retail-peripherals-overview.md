@@ -3,11 +3,11 @@ title: Eksterne detailenheder
 description: I dette emne forklares begreberne i forbindelse med eksterne detailenheder.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347853"
 ---
-
 # <a name="retail-peripherals"></a>Eksterne detailenheder
 
 [!include [banner](includes/banner.md)]
@@ -75,7 +74,7 @@ Eksterne POS-enheder er typisk opdelt i klasser. Dette afsnit beskriver og giver
 
 ### <a name="printer"></a>Printer
 
-Printere omfatter traditionelle POS-bonprintere og helsidesprintere. Printeren understøttes via Object Linking and Embedding for Retail POS (OPOS) og Microsoft Windows driver-grænseflader. Der kan bruges op til to printere på samme tid. Denne funktion understøtter scenarier, hvor cash-and-carry-kundekvitteringer udskrives på bonprintere, hvorimod kundeordrer, der indeholder yderligere oplysninger, udskrives på en helsidesprinter. Bonprintere kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk via Ethernet eller tilsluttet via Bluetooth.
+Printere omfatter traditionelle POS-bonprintere og helsidesprintere. Printeren understøttes via objektsammenkædning og -integrering (Object Linking and Embedding – OLE) for Retail POS (OPOS) og Microsoft Windows driver-grænseflader. Der kan bruges op til to printere på samme tid. Denne funktion understøtter scenarier, hvor cash-and-carry-kundekvitteringer udskrives på bonprintere, hvorimod kundeordrer, der indeholder yderligere oplysninger, udskrives på en helsidesprinter. Bonprintere kan være tilsluttet direkte til en computer via USB, tilsluttet til et netværk via Ethernet eller tilsluttet via Bluetooth.
 
 ### <a name="scanner"></a>Scanner
 
@@ -119,7 +118,7 @@ Understøttelse af betalingsenheder er implementeret via betalingsconnectoren. B
 
 For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft Dynamics 365 for Retail, er OLE til POS-branchestandarden den primære platform for eksterne detailenheder, der understøttes i Microsoft Dynamics 365 for Retail. OLE til POS-standarden blev produceret af NRF (National Retail Federation), som fastlægger branchestandarden for kommunikationsprotokoller til eksterne detailenheder. OPOS er en alment vedtagen implementering af OLE til POS-standarden. Den blev udviklet i midten af 1990'erne og er blevet opdateret flere gange siden da. OPOS indeholder en enhedsdriverarkitektur, der sikrer nem integration af POS-hardware med Windows-baserede POS-systemer. OPOS-kontrolelementer styrer kommunikation mellem kompatibel hardware og POS-softwaren. Et OPOS-kontrolelement består af to dele:
 
-- **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'erne bruges til at teste POS-komponenten af Microsoft Dynamics 365 for Retail. Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
+- **Kontrolobjekt** – Kontrolobjektet for en enhedsklasse (f.eks. linjevisninger) indeholder grænsefladen til programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) indeholder et standardiseret sæt af OPOS-kontrolobjekter, der er kendt som de fælles kontrolobjekter (CCO'er). CCO'er bruges til at teste POS-komponenten i Microsoft Dynamics 365 for Retail. Derfor hjælper afprøvningen med til at garantere, at hvis Microsoft Dynamics 365 for Retail understøtter en enhedsklasse gennem OPOS, kan mange enhedstyper understøttes, forudsat at producenten leverer et serviceobjekt, der er bygget til OPOS. Du behøver ikke udtrykkeligt at teste hver enhedstype.
 - **Serviceobjekt** – Serviceobjektet kan bruges til kommunikation mellem kontrolobjektet (CCO) og enheden. Typisk leveres serviceobjektet til en enhed af enhedsproducenten. I nogle tilfælde kan det dog være nødvendigt at hente serviceobjektet fra producentens websted. Et nyere serviceobjekt kan f.eks. være tilgængeligt. Se dokumentationen til hardwaren for at finde adressen på producentens websted.
 
 [![Kontrolobjekt og serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ For at sikre, at det største udvalg af enheder kan bruges sammen med Microsoft 
 Understøttelse af OPOS-implementeringen af OLE til POS hjælper med til at sikre, at hvis enhedsproducenterne og POS-udgiverne implementerer standarden korrekt, så kan POS-systemer og understøttede enheder arbejde sammen, selvom de ikke tidligere er testet sammen.
 
 > [!NOTE]
-> OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller -klasse gennem OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
+> OPOS-support garanterer ikke understøttelse af alle enheder, der har OPOS-drivere. Microsoft Dynamics 365 for Retail skal først understøtte den pågældende enhedstype eller klasse via OPOS. Desuden er serviceobjekter muligvis ikke altid opdateret med den nyeste version af CCO'erne. Du skal også være opmærksom på, at kvaliteten af serviceobjekter generelt varierer.
 
 ### <a name="windows"></a>Windows
 
@@ -296,7 +295,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Netværk
-<blockquote>[!NOTE] Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
+<blockquote>Bemærk! Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Netværk
-<blockquote>[!NOTE] Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
+<blockquote>Bemærk! Der kan kun konfigureres én skuffe, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>[!NOTE] Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</blockquote>
+<blockquote>Bemærk! Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</blockquote>
 </li>
 <li>Netværk</li>
 </ul>
@@ -405,7 +404,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Netværk
-<blockquote>[!NOTE] Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
+<blockquote>Bemærk! Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Windows-driver
-<blockquote>[!NOTE] Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</blockquote>
+<blockquote>Bemærk! Til Windows-printere på et netværk skal brugeren af hardwarestationen have rettighed til at få adgang til printeren.</blockquote>
 </li>
 <li>Netværk</li>
 </ul>
@@ -492,7 +491,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 <ul>
 <li>OPOS</li>
 <li>Netværk
-<blockquote>[!NOTE] Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
+<blockquote>Bemærk! Der kan kun konfigureres én skuffe pr. hardwareprofil, hvis <strong>Brug af delt skift</strong> er konfigureret på skuffen.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Netværksenheder understøttes direkte via den hardwarestation, der er indbygget
 Du kan finde flere oplysninger om, hvordan du oprette hardwareprofiler i [Definer og vedligehold kanalklienter, herunder registre og hardwarestationer](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> I Microsoft Dynamics 365 for Retail version 1611 bruges hardwarestationsprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
+> For Microsoft Dynamics 365 for Retail version 1611 bruges stationshardwareprofilen ikke længere. Attributter, som du tidligere har konfigureret i hardwarestationsprofilen, er nu en del af selve hardwarestationen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS til Windows med en IPC-hardwarestation (indbygget)
 
@@ -743,7 +742,6 @@ De følgende enheder blev testet ved hjælp af en dedikeret (ikke delt) IIS-hard
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Brugerdefineret    | Forbundet via netværket     |
-| Star         | TSP100   | OPOS      | Kræver TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | Drevet via USB               |
 
 #### <a name="bar-code-scanner"></a>Stregkodescanner
@@ -818,7 +816,6 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Brugerdefineret    | Forbundet via netværket     |
-| Star         | TSP100   | OPOS      | Kræver TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | Drevet via USB               |
 
 #### <a name="payment-terminal"></a>Betalingsterminal
@@ -894,4 +891,3 @@ De følgende eksterne enheder blev testet ved hjælp af en delt IIS-hardwarestat
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Ekstern Retail-simulatorenhed](dev-itpro/retail-peripheral-simulator.md)
-

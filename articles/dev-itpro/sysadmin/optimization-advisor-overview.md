@@ -1,32 +1,31 @@
 ---
-title: "Optimeringsrådgiver"
-description: "Dette emne beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Microsoft Dynamics 365 Finance and Operations."
+title: Optimeringsrådgiver
+description: Dette emne beskriver, hvordan du kan bruge Optimeringsrådgiver til at sikre optimal konfiguration af Microsoft Dynamics 365 Finance and Operations.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335617"
 ---
-
 # <a name="optimization-advisor"></a>Optimeringsrådgiver
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Forkert konfiguration og opsætning af et modul kan påvirke tilgængeligheden a
 
 Arbejdsområdet **Optimeringsrådgiver** er et værktøj, der giver superbrugere, virksomhedsanalytikere, funktionelle konsulenter og it-supportfunktioner mulighed for at identificere problemer i modulkonfiguration og forretningsdata. Optimeringsrådgiver foreslår bedste fremgangsmåder til konfiguration af modulet og identificerer forretningsdata, der er forældede eller fejlagtige.
 
-Optimeringsrådgiver kører regelmæssigt et sæt regler for bedste fremgangsmåde. Der frigives et standardsæt af regler sammen med Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018). Brugerne kan også oprette regler, der er specifikke for deres tilpasninger, løsninger fra uafhængige softwareleverandører (ISV'er) og forretningsdata. Du kan finde flere oplysninger om, hvordan du opretter regler, under [Oprette nye regler](./create-rules-optimization-advisor.md).
+Optimeringsrådgiver kører regelmæssigt et sæt regler for bedste fremgangsmåde. Et standardregelsæt udgives sammen med Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018). Brugerne kan også oprette regler, der er specifikke for deres tilpasninger, løsninger fra uafhængige softwareleverandører (ISV'er) og forretningsdata. Du kan finde flere oplysninger om, hvordan du opretter regler, under [Oprette nye regler](./create-rules-optimization-advisor.md).
 
 Når der registreres en overtrædelse af en regel, genereres der en optimeringsmulighed, og den vises i arbejdsområdet **Optimeringsrådgiver**. En bruger kan foretage korrigerende handlinger direkte fra arbejdsområdet **Optimeringsrådgiver**.
 
@@ -49,7 +48,7 @@ Der gælder standardsikkerhedspolitikker for optimeringsmuligheder. Optimeringsm
 
 Når du udfører en handling i forbindelse med visse optimeringsmuligheder, beregner systemet virkningen af muligheden med hensyn til reduktionen i kørselstiden for forretningsprocesser. Desværre er denne funktion ikke tilgængelig for alle optimeringsmuligheder.
 
-Hvis du vil vide mere om Optimeringsrådgiver, kan du se den korte video [Optimeringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Hvis du vil vide mere om optimeringsrådgiver, kan du se den korte video om [Optimeringsrådgiver i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Optimeringsregler
 
@@ -96,4 +95,3 @@ Hvis du vil deaktivere evalueringen af bestemte regler, skal du vælge den mulig
 [Oprette nye regler](./create-rules-optimization-advisor.md)
 
 [Optimeringsrådgiver i Dynamics 365 for Finance and Operations (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-

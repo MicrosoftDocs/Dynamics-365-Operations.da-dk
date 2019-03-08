@@ -1,13 +1,13 @@
 ---
 title: Elektronisk rapportering (ER)
-description: "Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen."
+description: Dette emne indeholder en oversigt over værktøjet Elektronisk rapportering (ER). Den indeholder oplysninger om centrale koncepter, de scenarier, som ER understøtter, samt en liste over formater, der er designet og udgivet som del af løsningen.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310800"
 ---
-
 # <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ ER er et værktøj, du kan bruge til at konfigurere formater for både indgåend
 
 ER-programmet henvender sig til virksomhedsbrugere i stedet for udviklere. Da du konfigurerer formater frem for kode, udføres processer til oprettelse og tilpasning af formater for elektroniske dokumenter hurtigere og nemmere.
 
-ER understøtter i øjeblikket regnearksformaterne TEXT, XML, OPENXML og Microsoft Word-dokument. Men der er mulighed for understøttelse af flere formater.
+ER understøtter i øjeblikket TEXT, XML, Microsoft Word-dokument og OPENXML-regnearksformater. Men der er mulighed for understøttelse af flere formater.
 
 ## <a name="capabilities"></a>Egenskaber
 ER-programmet har følgende funktioner:
@@ -100,7 +99,7 @@ En formatkomponent understøtter følgende funktioner:
 En formatkomponent gør det muligt at vedhæfte bestemte filer, der kan bruges i rapporteringsoutputtet:
 
 - Excel-projektmapper, der indeholder et regneark, der kan bruges som skabelon for output i regnearksformat OPENXML:
-- Word-filer, der indeholder et dokument, der kan bruges som skabelon for output i Microsoft Word-dokument-formatet
+- Word-filer, der indeholder et dokument, der kan bruges som skabelon for output i Microsoft Word-dokumentformatet
 - Andre filer kan indgå i formatets output som foruddefinerede filer.
 
 I følgende illustration vises, hvordan dataene flyder for disse formater.
@@ -170,7 +169,7 @@ Et **Operations-ressourcer**-lager giver adgang til listen over de konfiguration
 
 Et **LCS-projektlager** giver adgang til listen over konfigurationer af et LCS-projekt (LCS-projektets aktivbibliotek), der blev valgt på stadiet for lagerregistrering. Med ER kan du overføre delte konfigurationer fra den aktuelle Finance and Operations-forekomst til et bestemt **LCS-projekt**-lager. Du kan også importere konfigurationer fra et **LCS-projekt**-lager til den aktuelle Finance and Operations-forekomst.
 
-Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle Finance and Operations-forekomst. Bemærk, at denn lagertype er tilgængelig i den følgende Dynamics 365 for Finance and Operations-miljøer:
+Et **Filsystem**-lager giver adgang til listen over konfigurationer, der findes som XML-filer i den pågældende mappen på det lokale filsystem på den computer, der er vært for AOS-tjenesten. Den påkrævede mappe vælges på lagerregistreringsstadiet. Du kan importere konfigurationer fra et **Filsystem**-lager til den aktuelle Finance and Operations-forekomst. Bemærk, at denne lagertype er tilgængelig i følgende Dynamics 365 for Finance and Operations-miljøer:
 - skybaserede miljøer, der er installeret til udviklingsformål (og som indeholder testmodeller af lukkede pakker)
 - installerede lokale miljøer (installation i det lokale miljø eller lokale forretningsdata (LBD))
 
@@ -381,4 +380,3 @@ Med ER kan du automatisk implementere ændringer af den nyeste version af basisk
 [Lokaliseringskrav – oprette en elektronisk rapporteringskonfiguration](electronic-reporting-configuration.md)
 
 [Administrere livscyklus for elektroniske indberetningskonfigurationer](general-electronic-reporting-manage-configuration-lifecycle.md)
-

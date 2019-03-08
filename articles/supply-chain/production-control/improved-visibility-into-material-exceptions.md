@@ -1,13 +1,13 @@
 ---
 title: Synlighed i materialeundtagelser
-description: "I dette emne beskrives, hvordan du kan få bedre indsigt i undtagelser for råmaterialer til produktionsordrer og batchordrer."
+description: I dette emne beskrives, hvordan du kan få bedre indsigt i undtagelser for råmaterialer til produktionsordrer og batchordrer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344748"
 ---
 # <a name="visibility-into-material-exceptions"></a>Synlighed i materialeundtagelser
 
@@ -67,4 +67,3 @@ Når feltet er markeret, åbnes siden **Alle produktionsbølger**. Denne side fi
 Feltet **Åbent lagerstedsarbejde, der kræver opmærksomhed** viser det antal stykliste- og formellinjer, der er frigivet til lageret i ubehandlede bølger, og som har ubehandlet arbejde, der er tidligere end eller lig med datoen i arbejdsområdet. Linjerne skal også forbruges af en operationsressource, der gælder for filteret i arbejdsområdet.
 
 Når feltet er markeret, åbnes siden **Alt arbejde**. Denne side filtreres efter antallet af åbne arbejdsoverskrifter, der indeholder arbejdslinjer fra frigivne stykliste- og formellinjer, der opfylder kriterierne for feltet. Fra siden **Alt arbejde** kan du behandle arbejdet manuelt.
-

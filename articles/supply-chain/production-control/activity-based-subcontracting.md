@@ -1,13 +1,13 @@
 ---
-title: "Aktivitetsbaseret underleverandørarbejde"
-description: "I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing."
+title: Aktivitetsbaseret underleverandørarbejde
+description: I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350038"
 ---
-
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaseret underleverandørarbejde
 
 [!include [banner](../includes/banner.md)]
 
 I dette emne beskrives det i detaljer, hvordan du bruger aktiviteter udført af underleverandør i et produktionsflow til lean manufacturing.
 
-I Microsoft Dynamics 365 for Finance and Operations, der er to metoder til underleverandørarbejde: produktionsordrer og lean produktion. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
+I Microsoft Dynamics 365 for Finance and Operations er der to metoder til underleverandørarbejde: produktionsordrer og lean manufacturing. Med lean manufacturing-metoden er underleverandørarbejdet udformet som en tjeneste, der er relateret til en aktivitet i et produktionsflow. En særlig kostprisgruppetype, **Direkte outsourcing**, er blevet indført, og de tjenester, der udføres af underleverandører, er ikke længere en del af en stykliste (BOM). Omkostningsregnskabet for arbejde udført af underleverandør er fuldt integreret i efterkalkulationsløsningen til lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflows, der vedrører underleverandører
 Det grundlæggende princip i et produktionsflow ændres ikke, når aktiviteter gives i underentreprise. Materiale flyder stadig mellem lokaliteter, procesaktiviteter konverterer materiale til produkter og overførselsaktiviteter flytter materiale eller produkter fra ét sted til et andet. Du kan modellere steder og arbejdsceller som kreditoradministreret ved at tildele kreditorkontoen til et lagersted eller en ressource i en ressourcegruppe.  
@@ -75,7 +74,7 @@ Dette krav gennemtvinger brugen af FIFO-lagermodellen (FIFO – First In, First 
 Følg disse trin for at konfigurere en procesaktivitet som en aktivitet udført af underleverandør.
 
 1.  Konfigurer en underleverandørarbejdscelle. Hvis du vil konfigurere en arbejdscelle som udført af underleverandør skal du oprette en ressource af typen **Leverandør** og knytte den til arbejdscellen (ressourcegruppen). En kørselsomkostningsart for kostprisgruppetypen **Direkte outsourcing** skal tildeles til arbejdscellen. Omkostningskategorierne til opsætning og antal er ikke påkrævet.
-2.  Når en procesaktivitet er oprettet og knyttet til en underleverandørarbejdscelle, skal du konfigurere en tjeneste til aktiviteten, før produktionsflowversionen kan aktiveres. Du kan udføre dette trin på siden **Aktivitetsdetaljer**. For aktiviteter, der er knyttet til en underleverandørarbejdscelle, vises oversigtspanelet **Servicebetingelser**. I dette oversigtspanel skal du tilføje en standardservice, som gælder for alle slutvarer. Hvis bestemte slutvarer kræver andre services eller andre parametre for beregning af servicen (eksempelvis en anden servicegrad), kan du tilføje andre services til aktiviteten.
+2.  Når en procesaktivitet er oprettet og knyttet til en underleverandørarbejdscelle, skal du konfigurere en tjeneste til aktiviteten, før produktionsflowversionen kan aktiveres. Du kan udføre dette trin på siden **Aktivitets** **detaljer**. For aktiviteter, der er knyttet til en underleverandørarbejdscelle, vises oversigtspanelet **Servicebetingelser**. I dette oversigtspanel skal du tilføje en standardservice, som gælder for alle slutvarer. Hvis bestemte slutvarer kræver andre services eller andre parametre for beregning af servicen (eksempelvis en anden servicegrad), kan du tilføje andre services til aktiviteten.
 
 ## <a name="subcontracted-transfer-activities"></a>Overførselsaktiviteter udført af underleverandør
 En overførselsaktivitet konfigureres som en underleverandøraktivitet, afhængigt af indstillingen **Fragtet af** for overførselsaktiviteten. Følgende valgmuligheder er tilgængelige:
@@ -84,12 +83,12 @@ En overførselsaktivitet konfigureres som en underleverandøraktivitet, afhængi
 -   **Modtager** – Aktiviteten gives i underentreprise, hvis overførslen til lagerstedet administreres af en leverandør (som defineret af en egenskab for lagerstedet). Alle valgte købsaftaler for tjenester skal have det samme leverandør-ID som lagerstedet.
 -   **Fragtmand** – Aktiviteten gives i underentreprise til den leverandør, der leverer tjenesten. For at være gyldig skal en fragtmand oprettes for lokationsstyring og skal have en tildelt kreditorkonto.
 
-For procesaktiviteter skal du konfigurere en standardtjeneste til overførselsaktiviteter udført af underleverandør i oversigtspanelet **Servicebetingelser** på siden **Aktivitetsdetaljer**.
+For procesaktiviteter skal du konfigurere en standardtjeneste til overførselsaktiviteter udført af underleverandør i oversigtspanelet **Servicebetingelser** på siden **Aktivitets** **detaljer**.
 
 ## <a name="service-quantity-calculation"></a>Beregning af ydelsesmængde
 Hele indkøbsprocessen er baseret på en varereference for en tjeneste. Varereferencen måles i en måleenhed for en tjeneste. Tjenester måles normalt i antal tjenester (enheder) eller i tid. Hvis du vil beregne ydelsesmængden baseret på den registrerede afslutning af kanban-job, kan du bruge følgende metoder:
 
--   **Beregning, der er baseret på antallet af job** – Ét kanban-job er lig med *n* enheder i tjeneste, uanset det produktantal der leveres. Ét job svarer til én materialehåndteringsenhed i lean manufacturing. Denne beregningsmetode gælder for alle tjenester, der har en fast pris pr. håndteringsenhed. Denne metode anvendes derfor normalt til overførselsaktiviteter. Den kan dog ligeledes anvendelse på aktiviteter, der behandler hele materialehåndteringsenheder.
+-   **Beregning, der er baseret på antallet af job** – Ét kanban-job er lig med *n* enheder af tjenesten, uanset det produktantal der leveres. Ét job svarer til én materialehåndteringsenhed i lean manufacturing. Denne beregningsmetode gælder for alle tjenester, der har en fast pris pr. håndteringsenhed. Denne metode anvendes derfor normalt til overførselsaktiviteter. Den kan dog ligeledes anvendelse på aktiviteter, der behandler hele materialehåndteringsenheder.
 -   **Beregning, der er baseret på produktantallet** – Ydelsesmængden beregnes i forhold til det produktantal, der er planlagt/leveret. Ved beregning af det leverede produktantal kan fejlantal enten medtages eller ej. Denne beregningsmetode gælder for alle de tilfælde, hvor serviceprisen pr. enhed af det forarbejdede produkt er aftalt.
 -   **Beregning, der er baseret på aktivitetstiden** – De teoretiske aktivitetstider beregnes baseret på behandlingstiden for aktiviteten, samlet behandlet antal og gennemløbsforhold for det forarbejdede produkt. Denne beregningsmetode gælder for tjenester, der betales pr. time og har en tidsmæssig afvigelse pr. forarbejdet produkt.
 
@@ -104,7 +103,6 @@ Folk betragter ofte transport som ikke-produktivt og mener, at det ikke tilføje
 Med aktivitetsbaseret underleverandørarbejde i lean manufacturing kan du integrere fragtmænd og transportleverandører, der flytter materialer og produkter mellem et produktionsflows lokationer. Ved at modellere en overførselsaktivitet kan du tildele en fragtmand eller en leverandør. Overførselsaktiviteterne/jobbet er baseret på en aftale om service og køb, og du kan oprette indkøbsordrer og modtagelsesadviseringer baseret på de faktiske overførselsjob. Denne funktionalitet er den samme som funktionaliteten for procesaktiviteter udført af underleverandør.  
 
 Derfor understøtter Finance and Operations nu styklisteberegning, der omfatter transportydelser, oprettelse af relaterede indkøbsordrer, integreret registrering af modtagelser og integration af transportomkostninger i efterkalkulation af produktionsflow.
-
 
 
 

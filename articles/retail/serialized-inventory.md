@@ -1,13 +1,13 @@
 ---
 title: POS-forbedringer for serialiserede produkter
-description: "Dette emne viser forbedringer, der er foretaget for serialiserede produkter, som kan hjælpe dig med at spare tid og blive mere produktiv."
+description: Dette emne viser forbedringer, der er foretaget for serialiserede produkter, som kan hjælpe dig med at spare tid og blive mere produktiv.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346197"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>POS-forbedringer for serialiserede produkter
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ Baseret på indstillingerne i Retail Headquarters kan produkter klassificeres so
 - **Serienumre er ikke påkrævet ved afgivelse af kundeordrer** – Kundeordrer kan afgives i én butik og gennemføres fra en anden. En kasserer, der afgiver en kundeordre, behøver ikke at angive serienummeret. Serienummeret angives under trinnet med plukning eller afhentning. Der skal dog angives et serienummer for alle linjeelementer, hvor leveringstypen **Udfør** er markeret. Ellers kan transaktionen ikke fuldføres.
 - **Serialiserede produkter er ikke samlet på transaktionsskærmbilledet** – Indstillingen **Samling af produkter** i feltgruppen **Terminal** på siden **Funktionalitetsprofil** giver dig mulighed for at samle de samme ikke-serialiserede produkter på transaktionsskærmbilledet. Når de pågældende produkter samles, er de nemmere at se i transaktionsgitteret. Men da serienumre normalt er entydige, og salgsmedarbejderne ikke behøver at angive serienumre før ved betalingen ved kassen, gælder indstillingen **Samling af produkter** ikke for serialiserede produkter. Derfor samles serialiserede produkter ikke på transaktionsskærmbilledet., hvis indstillingen **Samling af produkter** er valgt.
 - **Muligheden for at søge efter serienummer i kladderne** – Der kan nu også søges efter serienumre i kladderne. Det gør du ved at åbne handlingen "Kladder" og trykke på knappen "Avanceret søgning" på applinjen. Ved hjælp af knappen "Tilføj filter" kan et filter anvendes til at søge efter serienumrene også.
-

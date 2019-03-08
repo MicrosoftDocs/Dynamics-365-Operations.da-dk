@@ -1,13 +1,13 @@
 ---
 title: Forudbetalingsfakturaer vs. forudbetalinger
-description: "I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling."
+description: I dette emne beskrives og sammenlignes de to metoder, som organisationer kan bruge til betaling af forskud (forudbetalinger). I den ene metode, kan du oprette en forudbetalingsfaktura, der er tilknyttet en indkøbsordre. I den anden metode kan du oprette kladdebilag for forudbetaling ved at oprette kladdeposteringer og markere dem som kladdebilag for forudbetaling.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310133"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Forudbetalingsfakturaer vs. forudbetalinger
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ I mange lande/områder er det regnskabspraksis, at forudbetalinger fra en debito
 3.  Opret en betalingskladde, og opret derefter en ny betaling.
 4.  Du kan markere betalingen som forudbetaling. Hvis en betaling er markeret som en forudbetaling, er betalingen bogført på finanskonti, der er defineret på den posteringsprofil, du har oprettet i trin 1 og 2. Og hvis betalingen er markeret som en forudbetaling, beregnes der moms. Nogle regeringer kræver, at momsen betales, når der registreres en forudbetaling, selvom der ikke er en faktura.
 5.  Bogfør forudbetalingen.
-6.  Valgfrit: Du kan udligne forudbetaling på indkøbsordren eller salgsordren, før du opretter fakturaen. På siden for salgsordren eller indkøbsordren i handlingsruden skal du bruge **Udlign transaktioner**.
+6.  Valgfrit: Du kan udligne forudbetaling på indkøbsordren eller salgsordren, før du opretter fakturaen.På siden for salgsordren eller indkøbsordren i handlingsruden skal du bruge **Udlign transaktioner**.
 7.  Når kreditoren leverer varerne eller tjenesterne, kan du registrere fakturaen. Hvis du har udlignet forudbetaling mod indkøbsordren eller salgsordren i trin 6, udlignes forudbetalingen automatisk mod den faktura, du har oprettet. Hvis du ikke har udlignet forudbetaling mod indkøbsordren eller salgsordren, kan du manuelt udligne den mod fakturaen ved hjælp af **Udlign transaktioner** på debitor- eller kreditorsider. Forudbetalingsbeløbet tilbageføres derefter fra den midlertidige debitor- eller kreditorfinanskonto. Og hvis der blev beregnet moms, ændres de, da fakturaen indeholder de faktiske momsafgifter.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Oversigt over processen for forudbetalingsfakturering
@@ -63,7 +62,6 @@ Forudbetalingsfakturaer er en del af almindelig forretningspraksis. En kreditor 
 3.  Kreditorkoordinatoren registrerer forudbetalingsfakturaen på indkøbsordren, og derefter betales forudbetalingsfakturaen.
 4.  Når kreditoren leverer varerne eller tjenesterne, og de tilhørende kreditorfakturaer er modtaget, anvender kreditorkoordinatoren det forudbetalingsbeløb, der allerede er betalt på fakturaen.
 5.  Kreditorkoordinatoren betaler og udligner det resterende beløb på fakturaen.
-
 
 
 

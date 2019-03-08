@@ -1,13 +1,13 @@
 ---
-title: "Værdiregulering af udenlandsk valuta for kreditor og debitor"
-description: "Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor."
+title: Værdiregulering af udenlandsk valuta for kreditor og debitor
+description: Variationer i valutakurser medfører, at den teoretiske værdi (bogførte værdi) af åbne posteringer i fremmed valuta varierer over tid. Denne artikel indeholder oplysninger om processen til værdiregulering af udenlandsk valuta, som du skal køre for at opdatere værdien af åbne transaktioner i Kreditor og Debitor.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da1aee4c678cb4786d52abc81b787edceaa5aa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341321"
 ---
-
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Værdiregulering af udenlandsk valuta for kreditor og debitor
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Det registreres, hver gang du kører en værdiregulering af udenlandsk valuta. F
     -   **Ingen** – Der bogføres ingen økonomiske dimensioner. Hvis du har en økonomisk dimension, der kræves i din kontostruktur, køres værdireguleringsprocessen stadig, og der oprettes regnskabsposter, der ingen økonomiske dimensioner har. Du modtager en advarsel først, så du kan annullere reguleringen.
     -   **Tabel** – Debitor- eller kreditorkontoens økonomiske dimensioner bogføres på værdireguleringsposteringerne af udenlandsk valuta.
     -   **Bogføring** – De økonomiske dimensioner for den postering, der værdireguleres, bogføres på værdireguleringsposteringerne af udenlandsk valuta. De økonomiske dimensioner fra den oprindelige posterings AR/AP-finanskonto bruges til værdiregulering af posteringens AR/AP-hovedkonto som standard, og de økonomiske dimensioner fra den oprindelige posterings finanskonto for udgift/aktiv/omsætning bruges til værdiregulering af posteringens hovedkonto for ikke-realiseret gevinst/tab.
-
 
 
 

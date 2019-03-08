@@ -1,14 +1,14 @@
 ---
-title: "Ét bilag"
-description: "Ét bilag til økonomikladder (finanskladde, anlægsaktivkladde, kreditorbetalingskladde osv.) giver dig mulighed for at angive flere reskontrotransaktioner i forbindelse med et enkelt bilag."
+title: Ét bilag
+description: Ét bilag til økonomikladder (finanskladde, anlægsaktivkladde, kreditorbetalingskladde osv.) giver dig mulighed for at angive flere reskontrotransaktioner i forbindelse med et enkelt bilag.
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
+ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
-ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308546"
 ---
-
 # <a name="one-voucher"></a>Ét bilag
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ På grund af de problemer, der tidligere blev nævnt, udfases funktionen Ét bil
 - **Versionen foråret 2018** – Som standard deaktiveres funktionen via paramereten **Tillad flere transaktioner i ét bilag** under fanen **Generelt** på siden **Finansparametre**. Men du kan aktivere funktionen, hvis organisationen har et scenario, der falder i et af de funktionsmæssige huller, der er angivet senere i dette emne.
 
     - Hvis en kunde har et forretningsscenarie, der ikke kræver Ét bilag, skal kunden ikke aktivere funktionen. Microsoft retter ikke "fejl" i de områder, der identificeres senere i dette emne, hvis denne funktion bruges, selvom der findes en anden løsning.
-    - Stop med at bruge Ét bilag til integrationer i Microsoft Dynamics 365 for Finance and Operations, medmindre funktionen er påkrævet til et af de funktionsmæssige huller.
+    - Stop med at bruge ét bilag til integrationer i Microsoft Dynamics 365 for Finance and Operations, medmindre funktionen er påkrævet til et af de funktionelle huller.
 
 - **Senere versioner** – Alle funktionsmæssige huller bliver lukket. **Når de funktionsmæssige huller er fjernet, og nye funktioner er leveret, det vil vare mindst ét år før funktionen Ét bilag er permanent deaktiveret**, fordi kunder og uafhængige softwareleverandører (ISV'er) skal have tilstrækkelig tid til at reagere på de nye funktioner. For eksempel skal de muligvis opdatere deres forretningsprocesser, enheder og integrationer.
 

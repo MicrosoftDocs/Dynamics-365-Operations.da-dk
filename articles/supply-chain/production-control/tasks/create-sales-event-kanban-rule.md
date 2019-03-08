@@ -1,13 +1,13 @@
---- 
-title: "Oprette en kanban-regel for salgshændelse"
-description: "Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette en kanban-regel, som udløses under oprettelse af en salgsordre."
+---
+title: Oprette en kanban-regel for salgshændelse
+description: Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette en kanban-regel, som udløses under oprettelse af en salgsordre.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d2bee6e81acd029406c95237f0b4ba4ab2565ea1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f1f66157b2e74ad1b490e10112cbc121ac9826fb
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342011"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Oprette en kanban-regel for salgshændelse
 
@@ -73,5 +73,4 @@ Denne procedure fokuserer på den opsætning, der er nødvendig for at oprette e
 1. Klik på Produkt og forsyning.
 2. Klik på Vis udligningstræ.
     * Bemærk, at der oprettes en kanban med den samme mængde som salgslinjen. Du kan også se de materialeproblemer, der er nødvendige for at producere L0050. Dette er det sidste trin i denne procedure.  
-
 

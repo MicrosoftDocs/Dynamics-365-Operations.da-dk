@@ -1,13 +1,13 @@
 ---
 title: Tilpassede produktanbefalinger
-description: "Dette emne indeholder oplysninger om Dynamics 365 for Retail-produktanbefalingerne, der kan vises på POS-enheden."
+description: Dette emne indeholder oplysninger om Dynamics 365 for Retail-produktanbefalingerne, der kan vises på POS-enheden.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326463"
 ---
-
 # <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > Vi vil fjerne den aktuelle version af produktanbefalingstjenesten, fordi vi ændrer denne funktion og giver den en bedre algoritme og nyere detailrelaterede funktioner. Du kan finde flere oplysninger i [Fjernede eller forældede funktioner](../dev-itpro/migration-upgrade/deprecated-features.md).
 
-I Dynamics 365 for Retail kan produktanbefalinger vises på POS-enheden. Anbefalingerne er varer, som kunden muligvis er interesseret i baseret på deres købshistorik, varer i deres ønskeseddel og varer, som andre kunder har købt online og i fysiske butikker. For detailhandlere med store kataloger hjælper anbefalingerne kunden med opdagelse af produkter. Gennem fremvisning af produkter, der er målrettet mod en kundes interesser og købsvaner, kan produktanbefalinger hjælpe detailhandlere med mersalg og krydssalg, og de kan forbedre fastholdelsen af kunderne. I Dynamics 365 for Retail er produktanbefalinger understøttet af Cognitive Services og Microsoft Azure Machine Learning.
+I Dynamics 365 for Retail kan produktanbefalinger vises på POS-enheden. Anbefalingerne er varer, som kunden muligvis er interesseret i baseret på deres købshistorik, varer i deres ønskeseddel og varer, som andre kunder har købt online og i fysiske butikker. For detailhandlere med store kataloger hjælper anbefalingerne kunden med opdagelse af produkter. Gennem fremvisning af produkter, der er målrettet mod en kundes interesser og købsvaner, kan produktanbefalinger hjælpe detailhandlere med mersalg og krydssalg, og de kan forbedre fastholdelsen af kunderne. I Dynamics 365 for Retail er produktanbefalinger baseret på Cognitive Services og Microsoft Azure Machine Learning.
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -63,7 +62,7 @@ Produktanbefalinger er aktiveret for følgende POS-scenarier. De er tilgængelig
 
     [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurer Dynamics 365 for Retail til at aktivere POS-anbefalinger
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurere Dynamics 365 for Retail til aktivering af POS-anbefalinger
 
 Hvis du vil konfigurere produktanbefalinger, skal du konfigurere følgende.
 
@@ -77,13 +76,13 @@ Hvis du vil konfigurere produktanbefalinger, skal du konfigurere følgende.
 
 Når du opdaterer enheden **Enhedslager**, udføres følgende handlinger.
 
-- Dataene i det format, der kræves af Cognitive Services, udtrækkes fra driftsdatabasen i Dynamics-365 for Retail og sendes til enhedslageret.
+- Dataene i det format, der kræves af Cognitive Services, udtrækkes fra driftsdatabasen i Dynamics 365 for Retail og sendes til enhedslageret.
 - Dataene bruges til at rense dataene ved hjælp af Hive-scripts som en del af ADF-aktiviteterne i Azure Data Factory (ADF). Rengjorte data gemmes i blob-lager.
 - Data fra blob-lager bruges af API'en i Cognitive Services til at træne en anbefalingsmodel.
 
 Når du aktiverer **Aktivér anbefalinger** og kører konfigurationsjobbene, udføres følgende handlinger.
 
-- Legitimationsoplysninger og id for modellen hentes fra API'en og gemmes i driftsdatabasen i Dynamics-365 for Retail i web.config til AOS og også i detailserveren.
+- Legitimationsoplysninger og id for modellen hentes fra API'en og gemmes i driftsdatabasen i Dynamics 365 for Retail i web.config til AOS og også i detailserveren.
 - Legitimationsoplysninger og id for modellen er gjort tilgængelige for CRT, så kald til produktanbefalinger fra Cloud POS og MPOS i onlinetilstand kan opfyldes.
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Foretage fejlfinding af problemer, hvor produktanbefalingerne allerede er aktiveret
@@ -94,4 +93,3 @@ Når du aktiverer **Aktivér anbefalinger** og kører konfigurationsjobbene, udf
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Føj et kontrolelement med anbefalinger til transaktionssiden på en POS-enhed](add-recommendations-control-pos-screen.md)
-

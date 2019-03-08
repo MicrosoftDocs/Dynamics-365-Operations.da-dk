@@ -1,13 +1,13 @@
 ---
 title: Performancestyring
-description: "Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne."
+description: Performancestyringsprocessen giver medarbejdere mulighed for at dokumentere og diskutere deres performance med deres chef. Til gengæld kan cheferne derefter give feedback og vejledning til medarbejderne.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303680"
 ---
-
 # <a name="performance-management"></a>Performancestyring
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Når du får adgang fra **ESS**-arbejdsområdet, giver siden **Performancekladde
 
 Du kan også sammenkæde performancekladden med et eksternt websted ved at gemme URL-adressen for det pågældende websted. Hvis kladden vedrører mål eller performanceevalueringer, kan du også knytte den til en eller flere af disse. Når du får adgang til performancekladden fra siden **MSS**, kan du angive de samme oplysninger, som du kan indtaste i medarbejderkladden. Desuden kan du angive den medarbejder, som kladden oprettes for. Du kan vælge, om lederkladden skal deles med din medarbejder.
 
-### <a name="praise"></a>Ros
+### <a name="send-feedback"></a>Send tilbagemelding
 
-Performancekladden indeholder en ekstra funktion, der hedder Ros. Når du klikker på **Send ros**, kan du vælge en medarbejder og give tilbagemelding til den pågældende medarbejder via mail. Meddelelsen sendes til den medarbejder, der roses, og til den pågældende medarbejders chef, til den medarbejder, der sender rosen og til denne medarbejders chef. Der oprettes en performancekladdepostering for hver person, der modtager meddelelsen om ros.
+Performancekladden indeholder en ekstra funktion, der hedder Tilbagemelding. Når du klikker på **Send tilbagemelding**, kan du vælge en medarbejder og give tilbagemelding til den pågældende medarbejder via mail. Meddelelsen sendes til den medarbejder, der modtager tilbagemeldingen, og til den pågældende medarbejders chef, til den medarbejder, der sender tilbagemeldingen og til denne medarbejders chef. Der oprettes en performancekladdepostering for hver person, der modtager tilbagemeldingsmeddelelsen.
 
 ## <a name="goals"></a>Mål
 Siden **Performancemål** hjælper dig med at spore de mål, du og din leder har sat for dig. Du kan oprette et vilkårligt antal mål, og disse mål kan strække sig over forskellige perioder og performanceevalueringer. Du kan også oprette simple eller komplekse mål, afhængigt af mængden af oplysninger, som du vil angive, om målet. Mål er ikke påkrævet til performanceevalueringer. 
@@ -151,7 +150,6 @@ Performancekladdens kildetyper beskriver, hvor performancekladderne kommer fra. 
 ### <a name="review-types"></a>Evalueringstyper
 
 Performanceevalueringstyper hjælper dig med at styre funktionsmåden for en evaluering. Du kan aktivere eller deaktivere arbejdsgangen for en evaluering. Hvis evalueringen ikke bruger arbejdsgang, kan du definere den standardstatus, der skal bruges, når evalueringen oprettes. Du kan også bestemme, om medarbejderen, chefen eller begge bliver bedt om at godkende evalueringen.
-
 
 
 

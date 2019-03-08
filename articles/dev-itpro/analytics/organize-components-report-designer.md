@@ -1,13 +1,13 @@
 ---
 title: Organisere rapportkomponenter i Report Designer
-description: "Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt at organisere disse objekter, så de er lettere for brugerne at finde. I denne artikel beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Report Designer."
+description: Når du har udviklet komponentdokumenter og oprettet rapporter, er det nyttigt at organisere disse objekter, så de er lettere for brugerne at finde. I denne artikel beskrives, hvordan du organiserer eksisterende rapporter, dokumentkomponenter og objekter i Report Designer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323933"
 ---
-
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i Report Designer
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,7 @@ Følgende tabel indeholder beskrivelser af kontrolelementerne under fanen **Rapp
 <td>Detaljeringsniveau</td>
 <td>Angiv det detaljeringsniveau, som rapporterne indeholder.
 <ul>
-<li><strong>Finansiel</strong>− En detaljeret oversigtsrapport. Du kan kun rulle ned til konti og dimensioner, der er tilføjet via et rapporteringstræ.</li>
+<li><strong>Finansiel</strong>− En detaljeret oversigtsrapport. Du kan ikke rulle ned til konti og dimensioner, med undtagelse af de konti og dimensioner, der er tilføjet via et rapporteringstræ.</li>
 <li><strong>Finans og konto</strong> – en rapport, der indeholder en oversigt på højt niveau og kontooplysninger.</li>
 <li><strong>Finans, Konto og Transaktion</strong> – en rapport, der indeholder en oversigt på højt niveau og transaktionsoplysninger.</li>
 </ul></td>
@@ -150,4 +149,3 @@ Kun indstillinger for standardbasisperiode gemmes sammen med rapportdefinitionen
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-

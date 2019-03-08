@@ -1,13 +1,13 @@
 ---
-title: Power BI-indhold til rekruttering
-description: "I dette emne beskrives Power BI-indholdet til Rekruttering. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
+title: Power BI indhold til Rekruttering
+description: I dette emne beskrives Power BI-indhold til Rekruttering. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmRecruitmentWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 2d8c0e0e52a8dba2a1ea5bf330cdea01e3cfb60d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 0d6bc8584d202810ed14367d36d113d9b109ea7a
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347991"
 ---
-
-# <a name="recruiting-power-bi-content"></a>Power BI-indhold til rekruttering
+# <a name="recruiting-power-bi-content"></a>Power BI indhold til Rekruttering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives Microsoft Power BI-indholdet til **Rekruttering**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Dette emne beskriver Microsoft Power BI-indhold til **Rekruttering**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet **Rekruttering** vises i arbejdsområdet **Administration af rekruttering**.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter og grafik i arbejdsområdet Administration af rekruttering
@@ -48,7 +47,7 @@ Arbejdsområdet **Administration af rekruttering** indeholder fanen **Analyser**
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Følgende tabel viser de enheder, som Power BI-indholdet til **Rekruttering** var baseret på.
+Følgende tabel viser de enheder, som Power BI-indholdspakken **Rekruttering** er baseret på.
 
 | Enhed               | Indhold                                                         | Relationer med andre enheder |
 |----------------------|------------------------------------------------------------------|-----------------------------------|
@@ -66,4 +65,3 @@ Følgende tabel viser de enheder, som Power BI-indholdet til **Rekruttering** va
 | Ydeevne          | Klassifikation, beskrivelse og klassifikationsmodel                            | Ansøger, ansøgeren blev ansat, afsluttet ansøger |
 | Rekrutteringsprojekt  | Projektbeskrivelse, projektstatus og åbninger                | Ansøger, ansøgeren blev ansat, afsluttet ansøger |
 | Afsluttet ansøger | Afsluttede ansøgere, årsag, performance og fratrædelsesdato | Firma, kalenderforskydning, dato, geografisk placering, performance, demografi, ansættelse, medier, rekrutteringsprojekt, ansøgers navn |
-

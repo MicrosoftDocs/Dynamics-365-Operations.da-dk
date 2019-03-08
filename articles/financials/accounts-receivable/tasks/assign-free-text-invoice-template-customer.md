@@ -1,13 +1,13 @@
---- 
+---
 title: Tildel en fritekstfakturaskabelon til en debitor.
 description: Denne opgaver viser, hvordan du tildeler en fritekstfakturaskabelon til en debitor.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318919"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Tildel en fritekstfakturaskabelon til en debitor.
 
@@ -48,5 +48,4 @@ Denne opgaver viser, hvordan du tildeler en fritekstfakturaskabelon til en debit
 10. Vælg gentagelsesmønsteret.
     * Dagligt – Vælg denne indstilling, og indtast antallet af dage i feltet Pr. Hvis du f.eks. indtaster 15, genereres der en faktura til debitoren hver 15. dag.  Ugentligt – Vælg denne indstilling, og indtast antallet af uger i feltet Pr. Hvis du f.eks. indtaster 2, genereres der en faktura til debitoren hver anden uge.  Månedligt – Vælg denne indstilling, og indtast antallet af måneder i feltet Pr. Hvis du f.eks. indtaster 6, genereres der en faktura til denne debitor hver sjette måned.  Årligt – Vælg denne indstilling, og indtast antallet af år i feltet Pr. Hvis du f.eks. indtaster 2, genereres der en faktura til debitoren hvert andet år.  
 11. Angiv et tal i feltet Pr.
-
 

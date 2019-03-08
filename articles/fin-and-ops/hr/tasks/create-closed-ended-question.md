@@ -1,13 +1,13 @@
---- 
-title: "Oprette et lukket spørgsmål"
-description: "Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen kan vælge fra."
+---
+title: Oprette et lukket spørgsmål
+description: Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen kan vælge fra.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6b08988a3872cec39b7592732d23862e959aae79
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332259"
 ---
 # <a name="create-a-closed-ended-question"></a>Oprette et lukket spørgsmål
 
@@ -67,5 +67,4 @@ Lukkede spørgsmål giver dig mulighed at angive muligheder, som svarpersonen ka
 4. Vælg en indstilling i feltet Inputtype.
 5. Indtast eller vælg en værdi i feltet Svarsamling.
 6. Skriv en værdi i feltet Tekst.
-
 

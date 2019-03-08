@@ -1,13 +1,13 @@
---- 
+---
 title: Generere rapporter i Office-format, der har integrerede billeder
-description: "Følgende trin beskriver, hvordan en bruger i rollen som enten \"Systemadministrator\" eller \"Udvikler af elektronisk rapportering\" kan designe konfigurationer til elektronisk rapportering (ER) med henblik på oprettelse af elektroniske dokumenter i MS Office-formater (Excel og Word), der indeholder integrerede billeder."
+description: Følgende trin beskriver, hvordan en bruger i rollen som enten "Systemadministrator" eller "Udvikler af elektronisk rapportering" kan designe konfigurationer til elektronisk rapportering (ER) med henblik på oprettelse af elektroniske dokumenter i MS Office-formater (Excel og Word), der indeholder integrerede billeder.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327176"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generere rapporter i Office-format, der har integrerede billeder
 
@@ -119,5 +119,4 @@ I dette eksempel skal du bruge oprettede ER-konfigurationer for eksempelfirmaet 
 22. Klik på Udskriv prøve.
 23. Klik på OK.
     * Gennemse det oprettede output. Bemærk, at outputtet er oprettet som et Microsoft Word-dokument med integrerede billeder, der viser firmaets logo, en autoriseret persons signatur og den markerede tekst i vandmærket.  
-
 

@@ -5,9 +5,9 @@ author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325589"
 ---
-
 # <a name="warehouse-work-policies"></a>Politikker for lagerstedsarbejde
 
 [!include [banner](../includes/banner.md)]
@@ -126,7 +125,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Vælg ressourcegruppen &#39;5102&#39; på listen.</td>
+<td>Vælg ressourcegruppen '5102' på listen.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,12 +135,12 @@ TRIN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Indtast &#39;51&#39; i feltet Lagersted for udlagring.</td>
+<td>Indtast '51' i feltet Lagersted for udlagring.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Indtast &#39;001&#39; i feltet Udlagringslokation.</td>
+<td>Indtast '001' i feltet Udlagringslokation.</td>
 </tr>
 <tr>
 <td></td>
@@ -169,7 +168,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Indtast &#39;L0101&#39; i feltet Varenummer.</td>
+<td>Indtast 'L0101' i feltet Varenummer.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +203,7 @@ TRIN (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Vælg &#39;Aldrig&#39; i feltet Automatisk styklisteforbrug.</td>
+<td>Vælg 'Aldrig' i feltet Automatisk styklisteforbrug.</td>
 </tr>
 <tr>
 <td></td>
@@ -248,7 +247,6 @@ TRIN (25)
 </tr>
 </tbody>
 </table>
-
 
 
 

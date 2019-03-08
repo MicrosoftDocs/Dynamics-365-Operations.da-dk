@@ -1,13 +1,13 @@
---- 
-title: "Oprette en indkøbsordre"
-description: "Denne procedure viser, hvordan du opretter en indkøbsordre manuelt."
+---
+title: Oprette en indkøbsordre
+description: Denne procedure viser, hvordan du opretter en indkøbsordre manuelt.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 50bf9927626a2a78a5f007b0b73d338585bbf9ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 27ed15e6d9a376c4203e5446d056f221bd3eb730
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330902"
 ---
 # <a name="create-a-purchase-order"></a>Oprette en indkøbsordre
 
@@ -75,5 +75,4 @@ Denne procedure viser, hvordan du opretter en indkøbsordre manuelt. Det er mere
     * Denne dialogboks viser totaler for hele ordren.  
     * Med feltet valg kan du ændre grundlaget for beregningen af totaler. For eksempel kan du vælge Antal produktkvitteringer for at få vist totaler, der relaterer til antallet af produkt(er), der er modtaget, eller Bestilt antal for at få vist det produktantal, der er bestilt.  
 2. Klik på OK.
-
 

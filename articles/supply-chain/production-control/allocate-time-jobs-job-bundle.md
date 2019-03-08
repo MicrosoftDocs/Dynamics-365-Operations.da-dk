@@ -1,13 +1,13 @@
 ---
 title: Fordele tid til job i et jobbundt
-description: "Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste."
+description: Ved udførelse af Produktion kan du bundte job. Derefter kan du starte flere job samtidig på siden Jobliste.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33d6bab9beb28d18e2094d7fb5e670e9425aac39
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a5204288ce3eaabb605f136ea788d235f408f349
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329108"
 ---
-
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fordele tid til job i et jobbundt
 
 [!include [banner](../includes/banner.md)]
@@ -109,7 +108,6 @@ Overvej de tre job, der udføres af en arbejder, der har en timeløn på DKK 12,
 | Job 3 | (3,33 ÷ 5) × DKK 12,00                 | DKK 8,00                | 5 timer        | DKK 40,00         |
 
 Den korrigerede omkostning pr. time og jobtiden posteres i produktionskladden. **Bemærk:** Hvis du vælger indstillingen **Omkostningsart** på fanen **Generelt** på siden **Produktionsordrestandarder**, overføres den faktiske tid for hvert job til en produktionskladde, hvor omkostningerne er anvendt til omkostningsarten for det aktuelle job.
-
 
 
 

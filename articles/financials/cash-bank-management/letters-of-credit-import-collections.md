@@ -1,13 +1,13 @@
 ---
 title: Remburser og importinkassoer
-description: "Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser."
+description: Denne artikel indeholder generelle oplysninger om remburser og importinkassoer. Begge typer bankdokumenter bruges ofte ved køb og salg af varer på tværs af internationale grænser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323036"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>Remburser og importinkassoer
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ En remburs kan enten være **genkaldelig** eller **uigenkaldelig**. Typen af en 
 En importinkasso er en aftale mellem banken og eksportøren (sælger), hvor banken accepterer at levere forsendelsesdokumentationen til den internationale importør (køber). Banken forventes at levere forsendelsesdokumentationen ved modtagelse af betaling for de sendte varer i form af kontanter eller ved modtagelse af en underskrevet veksel til dækning af betalingen. 
 
 En importinkasso er med til at garantere, at sælger betales, når køberen afhenter forsendelsesdokumenterne for at tage imod levering af de importerede varer.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Arbejdsgangselementer
-description: "I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang."
+description: I dette emne beskrives de forskellige elementer, der indgår i en arbejdsgang.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 48fa9613b37fceeda1ea73c5fd5d4f7a7edc74cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
-ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/14/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333800"
 ---
-
 # <a name="workflow-elements"></a>Arbejdsgangselementer
 
 [!include [banner](../includes/banner.md)]
@@ -91,4 +90,3 @@ En *parallel aktivitet* er et arbejdsgangselement, der omfatter to eller flere a
 ### <a name="subworkflow"></a>Underarbejdsgang
 
 En *underarbejdsgang* er en arbejdsgang, der køres inden for rammerne af en anden arbejdsgang.
-

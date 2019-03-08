@@ -1,13 +1,13 @@
 ---
 title: Kreditorrabatter
-description: "Dette emne indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået."
+description: Dette emne indeholder en oversigt over de mest almindelige opgaver, du vil udføre, når du arbejder med kreditorrabatter. Kreditorrabatter hjælpe virksomheder med bedre at styre deres leverandørrabatprogrammer ved at automatisere de opgaver, der kræves for at administrere, spore og gøre krav på rabatter, der er opnået.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: josaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
+ms.openlocfilehash: 90bee2925f135b3d626ba898a0e9995b5b8437ff
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ae5ee60238b951779c7790870e6c6adfba55d7d
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341068"
 ---
-
 # <a name="vendor-rebates"></a>Kreditorrabatter
 [!include [banner](../includes/banner.md)]
 
@@ -159,4 +158,3 @@ Processen til håndtering af kreditorrabatter omfatter flere manuelle sporingsop
 - Generering af præcise rabatkrav
 - Periodisering af det forventede tilgodehavende og den midlertidige gevinst i Finans
 - Opdatering af kreditorsaldoen og resultatopgørelsen med den ydelse, der er forfaldent
-

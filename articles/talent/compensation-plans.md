@@ -1,13 +1,13 @@
 ---
 title: Kompensationsplaner
-description: "Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere."
+description: Ledere for kompensation og frynsegoder kan bruge kompensationsstyring til at vedligeholde og behandle faste og variable lønstrukturer for organisationens medarbejdere.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: e80b3ebc9c374073ff5a2dfc8c2acf1d7f6c6287
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303717"
 ---
-
 # <a name="compensation-plans"></a>Kompensationsplaner
 
 [!include [banner](includes/banner.md)]
@@ -56,7 +55,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 <td>Fast løn-handlinger opfylder to formål:
 <ul>
 <li>Handlinger kan angive den type oplysninger, der skal registreres, når en medarbejders kompensation ændres. For eksempel kan du kræve, at årsagen til en ændring, f.eks en kampagne eller en sænkning, registreres.</li>
-<li>Handlinger kan sikre, at der anvendes en beregning, når faste lønstrukturer behandles.  Handlinger af typen Lighed sammenligner for eksempel medarbejderens løn med minimumreferencepunktet for medarbejderens niveau og sikrer, at medarbejderen mindst modtager minimumlønnen.</li>
+<li>Handlinger kan sikre, at der anvendes en beregning, når faste lønstrukturer behandles.  Handlinger af typen Egenkapital sammenligner for eksempel medarbejderlønnen med minimumreferencepunktet for niveauet af medarbejderens og sikrer, at medarbejderen bliver betalt mindst minimum.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -65,7 +64,7 @@ Følgende tabel viser de komponenter i lønprocessen, der kan være integreret i
 </tr>
 <tr class="odd">
 <td>Rammeudnyttelsesmatrix</td>
-<td>En rammeudnyttelsesmatrix hjælper dig med at overføre medarbejdere til deres jobkontrolpunkt. Du kan også bruge rammeudnyttelse til at styre ligelønnen i virksomheden uden hensyntagen til den enkelte medarbejders præstation eller virksomhedens overordnede præstation. For eksempel får medarbejdere, der få laverer løn i deres lønramme, en større procentvis stigninger end medarbejdere, der får en højere løn i lønrammen. På denne måde kan du systematisk forskyde forskelle. Rammeudnyttelsen beregnes på følgende måde: (Fast lønsats - Rammeminimum) ÷ (Rammemaksimum - Rammeminimum).</td>
+<td>En rammeudnyttelsesmatrix hjælper dig med at overføre medarbejdere til deres jobkontrolpunkt. Du kan også bruge rammeudnyttelse til at styre ligelønnen i virksomheden hensyn til den enkelte medarbejders præstation eller virksomhedens overordnede præstation. For eksempel får medarbejdere, der få laverer løn i deres lønramme, en større procentvis stigninger end medarbejdere, der får en højere løn i lønrammen. På denne måde kan du systematisk forskyde forskelle. Rammeudnyttelsen beregnes på følgende måde: (Fast lønsats - Rammeminimum) ÷ (Rammemaksimum - Rammeminimum).</td>
 </tr>
 <tr class="even">
 <td>Opsætninger af referencepunkter</td>
@@ -132,7 +131,6 @@ Hver gang en proceshændelse afvikles, oprettes der en kompensationshændelse.  
 
 ## <a name="recommendations"></a>Anbefalinger
 Når du har kørt en proceshændelse, kan du anbefale justeringer i en medarbejders meritforøgelse eller bonusbeløb baseret på de beregnede retningslinjer for proceshændelsen. For at angive anbefalinger for medarbejdere skal du aktivere anbefalinger, når du opretter lønstrukturer, eller når du konfigurerer proceshændelsen.
-
 
 
 

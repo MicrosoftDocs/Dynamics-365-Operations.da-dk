@@ -1,13 +1,13 @@
---- 
+---
 title: Konfigurere et finanskontoalias
 description: I denne procedure vises det, hvordan du opretter et kontoalias, som giver en genvej til angivelse af et kontonummer.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1ae075d7678ab15157a500c6ee5bd77e8211254a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 134d7249abe7c97ee0e9604a86de4f1c98c0e9e1
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315009"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Konfigurere et finanskontoalias
 
@@ -40,5 +40,4 @@ I denne procedure vises det, hvordan du opretter et kontoalias, som giver en gen
     * Den kontoen og dimensionerne udfyldes, når du bruger genvejen.  
 9. I feltet Startfokusering skal du vælge den dimension, der har fokus, når aliaset bruges.
     * Når du har indtastet genvejen, og kontoen og dimensionerne er udfyldt, flyttes markøren eller fokus til feltet Startfokusering.  
-
 

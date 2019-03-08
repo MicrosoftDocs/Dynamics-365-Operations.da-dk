@@ -1,13 +1,13 @@
 ---
-title: "Opdatere standardomkostninger i et ikke-produktionsmiljø"
-description: "Denne artikel indeholder vejledning i at opdatere standardomkostninger i et ikke-produktionsmiljø."
+title: Opdatere standardomkostninger i et ikke-produktionsmiljø
+description: Denne artikel indeholder vejledning i at opdatere standardomkostninger i et ikke-produktionsmiljø.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4fa545aa6903bd6f789dda20ab5755ffe9a12b88
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0386ca1e5e7bf6e578ba2abf1b2c9eefe4dd2a02
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323013"
 ---
-
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Opdatere standardomkostninger i et ikke-produktionsmiljø
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Hvis du vil rette, justere eller opdatere standardomkostningerne for nye varer, 
 4.  Brug siden **Vedligeholdelse af efterkalkulationsversion** til at skifte blokeringsflag for at tillade aktivering af ventende omkostningsposter i den anden efterkalkulationsversion.
 5.  Brug siden **Aktivér priser** (som du kan åbne fra siden **Vedligeholdelse af efterkalkulationsversion**) til at aktivere alle ventende vareomkostningsposter, der er omfattet af den anden efterkalkulationsversion. Du kan også aktivere de ventende omkostningsposter for individuelle varer ved at klikke på knappen **Aktivér afventende pris(er)** på siden **Varepris**.
 6.  Du kan undgå yderligere vedligeholdelse af data ved at bruge siden **Opsætning af efterkalkulationsversion** til at skifte blokeringsflag i den anden efterkalkulationsversion. Blokeringspolitikkerne vil forhindre, at der angives nye ventende omkostninger eller aktiveres ventende omkostninger.
-
 
 
 

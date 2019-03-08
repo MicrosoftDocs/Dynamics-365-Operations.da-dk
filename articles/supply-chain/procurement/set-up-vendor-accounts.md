@@ -1,13 +1,13 @@
 ---
 title: Konfigurer kreditorkonti
-description: "I dette emne beskrives, hvilke typer oplysninger du skal angive, når du opretter en ny kreditorkonto."
+description: I dette emne beskrives, hvilke typer oplysninger du skal angive, når du opretter en ny kreditorkonto.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a20fca7420e7bd546e29278b40046d69a81aac6
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329131"
 ---
-
 # <a name="set-up-vendor-accounts"></a>Konfigurer kreditorkonti
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,7 @@ Du kan gemme kontakter for en kreditor. Disse kontakter kan derefter bruges på 
 
 Hvis du vil føje kontakter til en kreditor, skal du åbne siden **Alle kreditorer**, fanen **Kreditor** i gruppen **Opsætning** og klikke på **Kontakter** &gt; **Tilføj kontakter**.  
 
-Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Microsoft Dynamics 365 for Finance and Operations, og redigere oplysningerne, som du har brug for.  
+Du kan oprette kreditorkontakter fra bunden. Du kan også kopiere oplysninger fra en anden person, der allerede er registreret i Microsoft Dynamics 365 for Finance and Operations og redigere oplysningerne, som du har brug for.  
 
 **Bemærk:** Tilføjelse af en kontakt for en kreditor er ikke det samme som at tilføje kontaktoplysninger for den pågældende kreditor. Selvom du kan tilføje generelle kontaktoplysninger for en kreditor, kan du også have flere bestemte personer, der er kontakter i den pågældende virksomhed, og som alle har deres egne kontaktoplysninger.  
 
@@ -116,7 +115,6 @@ Hvis du skal foretage betalinger til en kreditorbankkonto, kan du angive oplysni
 Du kan angive standardkonti, som automatisk vises i fakturakladderne for den angivne kreditor. Denne funktion kan være nyttig, hvis du ofte betaler for den samme slags varer eller tjenester fra samme kreditorer over tid. Når du angiver en standardkonto, kan du hurtigt og nemt angive kladdeposter i fakturakladden. De standardkonti, du angiver, bruges ikke til indkøbsordrer eller til kreditorfakturaer, der er angivet på siden **Kreditorfaktura**.  
 
 Du vælger standardkontiene på siden **Standardkontoopsætning**, som du kan åbne fra fanen **Faktura** i kreditorregistreringen. De konti, du vælger her, vises på den filtrerede liste over konti for kreditorgruppen, når du angiver en kladdepost. Du kan angive en af kontiene som en standardkonto.
-
 
 
 

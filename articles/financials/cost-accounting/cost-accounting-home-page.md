@@ -1,13 +1,13 @@
 ---
 title: Startside for omkostningsregnskab
-description: "Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for omkostningsregnskab."
+description: Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer, der er tilgængelige for omkostningsregnskab.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 707cbb8f4a4a71d147e1aa3c048fb1eb3872f8d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 8f4a371664ceb7df9ac28cececc456bc73d655cb
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346657"
 ---
-
 # <a name="cost-accounting-home-page"></a>Startside for omkostningsregnskab
 
 [!include [banner](../includes/banner.md)]
@@ -52,6 +51,5 @@ Følgende køreplan viser de vigtigste begreber og opgaver, der udgør strukture
 |------------------------|--------------------|-----------------------------|
 | [Introduktion til driftsregnskab](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobilarbejdsområde for omkostningsregnskab](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Bruge Excel til omkostningsregnskab](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 |  |  |                             |
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen"
-description: "I denne artikel beskrives virkningen af afregning af betalinger til fakturaer for debitorer. Scenariet fokuserer på effekterne på reskontroen, ikke på Finans."
+title: Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
+description: I denne artikel beskrives virkningen af afregning af betalinger til fakturaer for debitorer. Scenariet fokuserer på effekterne på reskontroen, ikke på Finans.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 79d252ca04ca9434c10d282722b3e3dec58aab6a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3843935cf17aeb0fd358398dccbca4cf494b132
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336859"
 ---
-
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Udlign en delvis debitorbetaling før rabatdatoen, med en endelig betaling efter rabatdatoen
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ Arnie ændrer værdien i feltet **Anvend kasserabat** tilbage til **Normal**, da
 | ARP-10020  |                  | 01-07-2015  |         |                                      | 297,00                                | 0,00    | USD      |
 | DISC-10020 |                  | 01-07-2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 11-07-2015 |         |                                      | 700,00                                | 0,00    | USD      |
-
 
 
 

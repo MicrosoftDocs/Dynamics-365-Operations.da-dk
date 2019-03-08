@@ -1,32 +1,31 @@
 ---
 title: Startside for varedisponering
-description: "Med Varedisponering kan virksomheder bestemme og afbalancere deres fremtidige behov for råmaterialer og evne til at opfylde virksomhedens mål."
+description: Med Varedisponering kan virksomheder bestemme og afbalancere deres fremtidige behov for råmaterialer og evne til at opfylde virksomhedens mål.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
 ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314779"
 ---
-
 # <a name="master-planning-home-page"></a>Startside for varedisponering
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,6 @@ Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operation
 -  [Udvide behovsprognosefunktionen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Varedisponering - tips og tricks til forbedring af ydeevnen](https://youtu.be/7v8BPmEs9Dg)
 -  [Hjælp! MPS er langsom!](https://youtu.be/RLXybx20B5o)
-
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: "Nyheder eller ændringer i Dynamics 365 for Talent Core HR (27. november 2018)"
-description: "Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR."
+title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (27. november 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-27
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
 ms.openlocfilehash: 6bd049bfe4639136276ab2f14e6310e45d1254f2
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303691"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-november-27-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (27. november 2018)
 
@@ -64,4 +64,3 @@ Med denne opdatering vises fratrådte medarbejdere, der er genansat, kun én gan
 
 - **Problem**: Når du føjer en ny vedhæftet fil til en arbejder, bliver knapperne **Ny** og **Rediger** nedtonet. 
 - **Løsning:** Før du åbner siden Vedhæftet fil, skal du sørge for, at faktaboksene på siden **Arbejder** er lukket. Hvis faktaboksene lukkes, når siden **Arbejder** indlæses, vil knapperne for vedhæftede filer blive aktiveret. (Dette problem vil blive løst i den næste platformsopdatering).
-

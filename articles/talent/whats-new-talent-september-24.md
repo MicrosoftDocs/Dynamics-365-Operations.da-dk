@@ -1,31 +1,31 @@
 ---
-title: "Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (24. september 2018)"
-description: "Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR."
+title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (24. september 2018)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 94950fbe5c1aad3dfbd3de59d1bcb47337ff68ea
 ms.openlocfilehash: aeb75fe4c775b9003c6429de536498f495224098
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303747"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-24-2018"></a>Hvad er nyt eller ændret i Dynamics 365 for Talent Core HR (24. september 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-24-2018"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (24. september 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,3 @@ Denne version indeholder flere supplerende fejlrettelser.
 ## <a name="known-issue"></a>Kendt problem
 
 -   **Problem:** Når du føjer en ny vedhæftet fil til en arbejder, bliver **Ny**- og **Rediger**-knapperne nedtonede. **Løsning:** Før du åbner siden Vedhæftet fil, skal du sørge for, at faktaboksene på siden **Arbejder** er lukkede. Hvis faktaboksene et lukkede, når siden **Arbejder** indlæses, vil Vedhæftede filer-knapperne blive aktiveret. (Dette problem vil blive løst i den næste platformsopdatering).
-

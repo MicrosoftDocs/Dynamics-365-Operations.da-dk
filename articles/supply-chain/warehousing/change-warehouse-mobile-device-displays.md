@@ -1,13 +1,13 @@
 ---
-title: "Skærmindstillinger for lagerstedets mobilenhed"
-description: "I denne artikel beskrives det, hvordan du konfigurerer udseendet på en mobilenheds skærm og knytter tastaturgenvejstaster til kontrolelementer, f.eks. knapper."
+title: Skærmindstillinger for lagerstedets mobilenhed
+description: I denne artikel beskrives det, hvordan du konfigurerer udseendet på en mobilenheds skærm og knytter tastaturgenvejstaster til kontrolelementer, f.eks. knapper.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328027"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Skærmindstillinger for lagerstedets mobilenhed
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,6 @@ Du kan angive mere end ét udtryk i den samme fil. Hvert udtryk skal være på e
 --------
 
 [Konfiguration af mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)
-
 
 
 

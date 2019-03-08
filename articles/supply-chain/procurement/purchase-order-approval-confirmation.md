@@ -1,13 +1,13 @@
 ---
-title: "Godkende og bekræfte indkøbsordrer"
-description: "I dette emne beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO'er."
+title: Godkende og bekræfte indkøbsordrer
+description: I dette emne beskrives de statusser, som en indkøbsordre (IO) gennemgår, når det er blevet oprettet, og effekten af at aktivere ændringsstyring på IO'er.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -15,18 +15,17 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336951"
 ---
-
 # <a name="approve-and-confirm-purchase-orders"></a>Godkende og bekræfte indkøbsordrer
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Når en købsordre (IO) er blevet oprettet, skal den evt. gennemgå en godkendel
 ## <a name="approval-of-purchase-orders"></a>Godkendelse af indkøbsordrer
 IO'er, der ikke bruger ændringsstyring, får status som **Godkendt**, så snart de er oprettet, mens IO'er, der bruger ændringsstyring, får status som **Udkast**, når de oprettes. En indkøbsordre, der er oprettet ved autorisation af et ordreforslag fra varedisponering, får altid status **Godkendt**, uanset indstillingerne for ændringsstyring. En IO opretter kun lagertransaktioner, når den har nået status **Godkendt**. Derfor vises dette lager ikke som tilgængeligt for reservation eller mærkning, før ordren accepteres.  
 
-Du aktiverer ændringsstyring for IO'er ved at angive indstillingen **Aktivér ændringsstyring** på siden **Indkøbs- og forsyningsparametre**. Når ændringsstyring er aktiveret, skal IO'er gennemgå et godkendelsesforløb, når de er færdige. Microsoft Dynamics 365 for Finance and Operations har en editor til arbejdsgangsprocesser, hvor du kan definere en arbejdsgang til at repræsentere godkendelsesprocessen. Denne arbejdsgang kan omfatte regler for automatisk godkendelse, regler, som bestemmer, hvem der bliver tildelt til at godkende bestemte IO'er og regler for eskalering af en arbejdsgang, der har afventet godkendelse i lang tid. Du kan aktivere ændringsstyringsprocessen for alle kreditorer eller for bestemte kreditorer. Du kan også konfigurere processen, så den kan tilsidesættes for enkelte IO'er.  
+Du aktiverer ændringsstyring for IO'er ved at angive indstillingen **Aktivér ændringsstyring** på siden **Indkøbs- og forsyningsparametre**. Når ændringsstyring er aktiveret, skal IO'er gennemgå et godkendelsesforløb, når de er færdige. Microsoft Dynamics 365 for Finance and Operations er en editor til arbejdsgangsprocesser, hvor du kan definere en arbejdsgang til at repræsentere godkendelsesprocessen. Denne arbejdsgang kan omfatte regler for automatisk godkendelse, regler, som bestemmer, hvem der bliver tildelt til at godkende bestemte IO'er og regler for eskalering af en arbejdsgang, der har afventet godkendelse i lang tid. Du kan aktivere ændringsstyringsprocessen for alle kreditorer eller for bestemte kreditorer. Du kan også konfigurere processen, så den kan tilsidesættes for enkelte IO'er.  
 
 Når ændringsstyring er aktiveret, går IO'er gennem seks godkendelsesstatusser, fra **Udkast** til **Færdiggjort**. Når en ordre er blevet godkendt, skal brugere, der vil ændre den, bruge handlingen **Anmod om ændring**.
 
@@ -86,7 +85,6 @@ Når en ordre er bekræftet, kan du ikke længere slette den. Du kan dog annulle
 [Produktkvittering sammenlignet med indkøbsordrer](product-receipt-against-purchase-orders.md)
 
 [Oversigt over kreditorfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

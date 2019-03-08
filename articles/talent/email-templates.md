@@ -5,10 +5,10 @@ author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303779"
 ---
-
-# <a name="email-templates"></a>Mailskabeloner
+# <a name="email-templates"></a>E-mail-skabeloner
 [!include[banner](../includes/banner.md)]
 
 Ved hjælp af mailskabelonbiblioteket kan administratorer kan oprette et ensartet tema og branding til alle mails, der sendes via Microsoft Dynamics 365 for Talent: Attract. Administratorer kan også organisere en samling mailskabeloner, som andre brugere kan bruge. Ansættelsesteamet kan bruge disse skabeloner i deres arbejdsproces til at sende mails mere effektivt. Nogle mails i Attract er konfigureret til at blive sendt automatisk, og administratoren kan bruge biblioteket med mailskabeloner til at tilpasse indholdet for disse mails.
@@ -81,4 +80,3 @@ Når ansættelsesteamet sender en mail, kan den bruge de skabeloner, der er opre
 
 > [!NOTE] 
 > Du kan oprette flere skabeloner til mails, der sendes automatisk. Kun én skabelon kan dog angives som den aktive skabelon. Da denne proces udløses af hændelser, er det kun administratoren, der kan bestemme, hvilken skabelon der skal bruges, på baggrund af kombinationen af **Standard**- og **Sendt automatisk**-kort i skabelonbiblioteket.
-

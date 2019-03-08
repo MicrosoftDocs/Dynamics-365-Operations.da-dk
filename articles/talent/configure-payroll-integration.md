@@ -1,29 +1,28 @@
 ---
-title: "Konfigurere lønintegration mellem Talent og Dayforce"
-description: "Dette emne forklarer, hvordan du kan konfigurere integration mellem Microsoft Dynamics 365 for Talent og Ceridian Dayforce, så du kan behandle en lønkørsel."
+title: Konfigurere lønintegration mellem Talent og Dayforce
+description: Dette emne forklarer, hvordan du kan konfigurere integration mellem Microsoft Dynamics 365 for Talent og Ceridian Dayforce, så du kan behandle en lønkørsel.
 author: jcart1106
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303709"
 ---
-
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønintegration mellem Talent og Dayforce
+# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurere lønintegrationen mellem Talent og Dayforce
 
 [!include [banner](includes/banner.md)]
 
@@ -662,4 +661,3 @@ Medarbejdere kan erklære pasoplysninger. Disse oplysninger er af identifikation
 - Udløbsdato
 
 Medarbejdere kan angive flere identifikationsnumre af **Pas**-identifikationstypen. Men det er kun den aktuelle aktive paspost, der integreres i Dayforce. Hvis alle pasposter er udløbet, integreres det pas, der senest blev udstedt, i Dayforce.
-

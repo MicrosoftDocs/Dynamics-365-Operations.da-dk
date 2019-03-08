@@ -1,13 +1,13 @@
 ---
 title: Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
-description: "I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Microsoft Dynamics 365 for Finance and Operations-løsningen."
+description: I dette emne beskrives, hvordan du administrerer livscyklussen for elektroniske rapporteringskonfigurationer (ER) for Microsoft Dynamics 365 for Finance and Operations-løsningen.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5724ba62bfb2c6e75ae895dc9285966c25f387a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 76ea412a3c10bf33fc06603bab8b94b2eadb9803
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344794"
 ---
-
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livscyklus for konfigurationen af elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -89,4 +88,3 @@ ER-konfigurationer, der designet i udviklingsmiljøet, kan overføres til testmi
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
-

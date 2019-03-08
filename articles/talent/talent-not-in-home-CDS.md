@@ -1,37 +1,36 @@
 ---
 title: Talent vises ikke sammen med Microsoft Dynamics 365-apps (CDS1.0)
-description: "I dette emne beskrives, hvad du skal gøre, hvis kunden ikke kan se Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-apps."
+description: I dette emne beskrives, hvad du skal gøre, hvis kunden ikke kan se Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-apps.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 32ae0ab807e953bd811a557e6878b9bee79d293c
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303769"
 ---
-
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-cds10"></a>Talent vises ikke sammen med Microsoft Dynamics 365-apps (CDS1.0)
 
 [!include [banner](includes/banner.md)]
 
 **Afgang**
 
-Kunden kan ikke se Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-apps.
+Kunden ikke kan finde Microsoft Dynamics 365 for Talent-appen mellem Microsoft Dynamics 365-appsene.
 
 **Løsning**
 
@@ -54,4 +53,3 @@ Brugeren skal føjes til rollen Miljøopretter for miljøet i Microsoft PowerApp
     ![Knappen Synkroniser](media/get-more.png)
 
     Når synkroniseringen er fuldført, vises Talent på startsiden.
-

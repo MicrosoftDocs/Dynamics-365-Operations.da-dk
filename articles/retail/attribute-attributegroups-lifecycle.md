@@ -1,37 +1,36 @@
 ---
 title: Attributter og attributgrupper
-description: "I dette emne beskrives, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter."
+description: I dette emne beskrives, hvordan du kan bruge attributter som et værktøj til at beskrive et produkt og dets egenskaber via brugerdefinerede felter.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326233"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Attributter og attributgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter kan være tilknyttet forskellige Retail-enheder, såsom produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
+*Attributter* er en måde til at beskrive et produkt og dets egenskaber yderligere via brugerdefinerede felter (f.eks. **Hukommelsesstørrelse**, **Harddiskkapacitet**, **Er Energy star-kompatibel** og så videre). I Microsoft Dynamics 365 for Finance and Operations kan attributter være tilknyttet forskellige Retail-enheder, som f.eks. produktkategorier og detailkanaler, og du kan angive standardværdier for dem. Produkter arver derefter attributterne og standardværdierne, når de bliver knyttet til produktkategorierne eller detailkanalerne. Standardværdierne kan tilsidesættes på hvert enkelt produktniveau i detailniveauet eller i et detailkatalog.
 
 Et typisk tv-produkt kan f.eks. have følgende attributter.
 
@@ -257,4 +256,3 @@ Standardværdierne for attributter kan tilsidesættes for individuelle produkter
 
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter er oprettet i Finance and Operations, de gælder for alle detailprodukter.
-

@@ -1,32 +1,31 @@
 ---
 title: Synkronisere produkter direkte fra Finance and Operations med produkter i Sales
-description: Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations med Microsoft Dynamics 365 for Sales.
+description: I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere produkter fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348244"
 ---
-
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synkronisere produkter fra Finance and Operations direkte med produkter i Sales
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 11/01/2018
 > [!NOTE]
 > Før du kan bruge kundeemne til kontant-løsningen, skal du have kendskab til [Integrere data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
-Dette emne omhandler skabeloner og underliggende opgaver, der bruges til at synkronisere produkter direkte fra Microsoft Dynamics 365 for Finance and Operations med Microsoft Dynamics 365 for Sales.
+I dette emne beskrives de skabeloner og underliggende opgaver, der bruges til at synkronisere produkter direkte fra Microsoft Dynamics 365 for Finance and Operations til Microsoft Dynamics 365 for Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflow i kundeemne til kontant
 
@@ -120,7 +119,6 @@ Følgende illustration viser et eksempel på en skabelontilknytning i dataintegr
 [Synkronisere salgsordrehoveder og linjer fra Finance and Operations direkte med Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synkronisere salgsfakturahoveder og -linjer direkte fra Finance and Operations til Sales](sales-invoice-template-mapping-direct.md)
-
 
 
 

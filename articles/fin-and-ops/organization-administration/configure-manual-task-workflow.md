@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309742"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurere manuelle opgave i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Udfør følgende trin for at angive, hvem den manuelle opgave skal tildeles til.
     </tr>
     <tr>
     <td>Bruger</td>
-    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brugere</td>
+    <td>Specifikke Microsoft Dynamics 365 for Finance and Operations-brugere</td>
     <td>
     <ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
@@ -383,4 +382,3 @@ Når den manuelle opgave tildeles en bruger, skal vedkommende håndtere opgaven.
 5. Markér afkrydsningsfeltet **Deleger**, hvis brugeren skal kunne tildele denne opgave til en anden bruger.
 6. Markér afkrydsningsfeltet **Tildel igen**, hvis brugeren skal kunne tildele denne opgave til en anden bruger i workflowopgavekøen.
 7. Markér afkrydsningsfeltet **Frigiv**, hvis brugeren skal kunne tildele denne opgave til workflowopgavekøen. Derefter kan en anden bruger fuldføre opgaven.
-

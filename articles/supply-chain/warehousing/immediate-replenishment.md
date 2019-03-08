@@ -1,13 +1,13 @@
 ---
-title: "Øjeblikkelig genopfyldning"
-description: "Dette emne beskriver, hvordan du kan bruge øjeblikkelig genopfyldning til genopfyldning af lageret, når en lokationsvejledning ikke kan fordele lageret."
+title: Øjeblikkelig genopfyldning
+description: Dette emne beskriver, hvordan du kan bruge øjeblikkelig genopfyldning til genopfyldning af lageret, når en lokationsvejledning ikke kan fordele lageret.
 author: Mirzaab
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: ab1f06951d5daceaf002b2cc23236dd818457985
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348589"
 ---
-
 # <a name="immediate-replenishment"></a>Øjeblikkelig genopfyldning
 
 [!include [banner](../includes/banner.md)]
@@ -58,4 +57,3 @@ Hvis øjeblikkelig genopfyldning er valgt for en lokationsvejledningslinje, men 
 
 - Kontroller, at den skabelon for genopfyldning efter behov, der anvendes, er konfigureret til at bruge de rette lokationsskabeloner og arbejdsskabeloner af typen **Genopfyldning**.
 - Sørg for, at der er tilstrækkelig disponibel lagerbeholdning på de lokationer, hvor skabelonen for genopfyldning efter behov søger efter den disponible lagerbeholdning med henblik på genopfyldning.
-

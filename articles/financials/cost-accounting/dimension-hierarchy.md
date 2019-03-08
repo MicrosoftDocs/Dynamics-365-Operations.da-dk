@@ -1,32 +1,31 @@
 ---
 title: Dimensionshierarki
-description: "Dette emne indeholder oplysninger om dimensionshierarkier. Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab."
+description: Dette emne indeholder oplysninger om dimensionshierarkier. Du kan bruge et dimensionshierarki til at definere rapporteringsstrukturen, omkostningspolitikker og sikkerhedsopsætning i Omkostningsregnskab.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320207"
 ---
-
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
 [!include [banner](../includes/banner.md)]
@@ -328,10 +327,9 @@ Indstillingerne for adgangslistehierarkiet bruges til at styre, hvilke data der 
 
 - Power BI:
 
-    - Data, der vises i Power BI visualiseringer
+    - Data, der vises i Power BI-visualiseringer
     - Data Power BI-visualiseringer, der er integreret i Microsoft Dynamics 365 for Finance and Operations-klienten
 
 > [!NOTE] 
 > - Før adgangslistehierarkiet kan påvirke dataene i Power BI, skal adgangslistehierarki og sikkerhed på rækkeniveau i Power BI kombineres. Du kan finde flere oplysninger i [Konfigurere sikkerhed for indholdspakke til omkostningsregnskab](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Adgangslistehierarkiet bidrager ikke til at beskytte eksport af data til Excel. Derfor skal dette rapporteringsværktøjet kun bruges af bogholdere og ledere, der skal have fuld adgang til at se dataene.
-

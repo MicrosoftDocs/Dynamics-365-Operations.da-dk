@@ -1,13 +1,13 @@
 ---
 title: Kostprisark
-description: "Opsætning af efterkalkulationsarket omfatter to målsætninger. Som den første målsætning skal du definere formatet for visning af omkostninger for solgte varer for en produceret vare eller en produktionsordre. Den formaterede visning kaldes et kostprisark. Som den anden målsætning skal du definere udgangspunktet for beregning af indirekte omkostninger. Opsætningen af efterkalkulationsarket bygger på kostprisgruppens funktion for visning af oplysninger og formlerne til beregning af indirekte omkostninger. De to mål for opsætning af efterkalkulationsark er beskrevet i denne artikel."
+description: Opsætning af efterkalkulationsarket omfatter to målsætninger. Som den første målsætning skal du definere formatet for visning af omkostninger for solgte varer for en produceret vare eller en produktionsordre. Den formaterede visning kaldes et kostprisark. Som den anden målsætning skal du definere udgangspunktet for beregning af indirekte omkostninger. Opsætningen af efterkalkulationsarket bygger på kostprisgruppens funktion for visning af oplysninger og formlerne til beregning af indirekte omkostninger. De to mål for opsætning af efterkalkulationsark er beskrevet i denne artikel.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312755"
 ---
-
 # <a name="costing-sheets"></a>Kostprisark
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ De to blokeringspolitikker for en efterkalkulationsversion bestemmer, om afvente
 Når du har defineret formatet for efterkalkulationsarket og beregninger for indirekte omkostninger, skal du udføre en særskilt handling for at validere og gemme oplysningerne. Efterkalkulationsarket repræsenterer et format for hele virksomheden, så der opnås en ensartet visning af oplysningerne om omkostningerne for solgte varer. 
 
 Efterkalkulationsarket vises som en del af siden **Beregn varens kostpris**. Efterkalkulationsarket kan vises for en produceret vares beregnede omkostningspost på siden **Varepris** eller for en ordrespecifik beregningspost på siden **Resultater af styklistekalkulation**. Det vises også som del af siden **Prisberegning** for en produktionsordre.
-
 
 
 

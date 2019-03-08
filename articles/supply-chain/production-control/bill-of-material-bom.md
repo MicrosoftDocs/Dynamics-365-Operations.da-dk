@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0833143722df5402a17e4f8f456a923792c478a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317102"
 ---
-
 # <a name="bills-of-materials-and-formulas"></a>Styklister og formler
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Vælg linjetypen **Sporet forsyning**, når du vil oprette en underproduktion, e
 Vælg linjetypen **Leverandør**, hvis der i produktionsprocessen gøres brug af en underleverandør, og du ønsker, at en underproduktion eller en indkøbsordre skal oprettes automatisk for underleverandøren.  
 
 **Note til underleverandøroperationer i en stykliste:** Tjeneste eller Arbejde, der udføres af underleverandøren, skal være oprettet som en servicevare, der er registreret på lageret. Du skal knytte servicevaren til den overordnede vare som en styklistelinje. Ruten skal indeholde en operation, der er tildelt underleverandørens operationsressource.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Destinationer for elektronisk rapportering (ER)
-description: "Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser."
+description: Du kan konfigurere en destination til hver formatkonfiguration for elektronisk rapportering (ER) og dens outputkomponent (en mappe eller en fil). Brugere, der er tildelt passende adgangsrettigheder, kan også ændre indstillingerne for destinationen på kørselstidspunktet. I denne artikel forklares ER-destinationsstyring, destinationstyperne, der understøttes, og sikkerhedsmæssige overvejelser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314917"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Destinationer for elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -165,4 +164,3 @@ Forudsætningen er, at formatet skal være tilgængeligt i ER-konfigurationerne.
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over elektronisk rapportering](general-electronic-reporting.md)
-

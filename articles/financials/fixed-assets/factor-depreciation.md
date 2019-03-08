@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa8bc4566def9dd770a97facb459e6b977bfaffb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 44fa540c31e5302ccf0a65b44b3c45a4c1e1fd1f
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338791"
 ---
-
 # <a name="factor-depreciation"></a>Faktorafskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,6 @@ Anskaffelsesprisen er 100.000, faktoren er 20, levetiden er 10 år, og afskrivni
 
 ## <a name="straight-line-depreciation"></a>Lineær afskrivning
 Værdien i feltet **Faktor** er lig med **50**. I dette tilfælde er afskrivningen den samme i hver periode, og derfor skal du overveje konsekvensen af de værdier, du har angivet i andre felter, som beskrevet i [Lineær afskrivning for levetiden](straight-line-service-life-depreciation.md).
-
 
 
 

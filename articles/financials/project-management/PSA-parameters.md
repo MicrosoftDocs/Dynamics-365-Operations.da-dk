@@ -1,13 +1,13 @@
 ---
 title: Project Service Automation-integrationsparametre
-description: "Dette emne forklarer, hvordan du konfigurerer, hvordan standarddata indtastes, når du integrerer Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations."
+description: I dette emne beskrives, hvordan du konfigurerer, hvordan standarddata indtastes, når du integrerer Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 33960a97f69d6bcc70a3035d4d68095ca6993a10
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347048"
 ---
-
-# <a name="project-service-automation-integration-parameters"></a>Project Service Automation-integrationsparametre
+# <a name="project-service-automation-integration-parameters"></a>Integrationsparametre for Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-På siden **Integrationsparametre for Project Service Automation** kan du konfigurere, hvordan standarddata indtastes, når du integrerer Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations. For at projekter kan synkroniseres korrekt fra Project Service Automation til Finance and Operations, skal du konfigurere følgende felter.
+På siden **Integrationsparametre for Project Service Automation** kan du konfigurere, hvordan standarddata skal indtastes, når du integrerer Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 for Finance and Operations. For at projekter kan synkroniseres korrekt fra Project Service Automation til Finance and Operations, skal du konfigurere følgende felter.
 
 > [!NOTE]
-> - Projektopgaveintegration, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og låsning af funktioner er tilgængelige i Microsoft Dynamics 365 for Finance and Operations version 8.0.
-> - Integration af faktiske oplysninger er tilgængelig i Microsoft Dynamics 365 for Finance and Operations version 8.01 eller nyere.
+> - Projektopgaveintegration, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og låsning af funktioner er tilgængelig i Microsoft Dynamics 365 for Finance and Operations version 8.0.
+> - Integration af faktiske oplysninger er tilgængelig i Microsoft Dynamics 365 for Finance and Operations version 8.0.1 eller nyere.
 > - Hvis du bruger Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, 7.3.0, når du har installeret KB 4132657 og KB 4132660, kan du bruge skabelonerne til at integrere projektopgaver, udgiftstransaktionskategorier, timeestimater, udgiftsestimater og faktiske oplysninger og konfigurere låsning af funktionalitet. Hvis du skal nulstille regnskabsfordelingerne, anbefalede vi, at du også installerer KB 4131710.
 
 | Fane                    | Felt                | Betegnelse |
@@ -46,4 +45,3 @@ På siden **Integrationsparametre for Project Service Automation** kan du konfig
 | Faktureringstypestandarder  | Faktureringstype         | Klik på **Ny** for at tilføje en række, hvor du kan vælge den faktureringstype, som standardlinjeegenskaben skal angives for. En bestemt faktureringstype kan kun vælges én gang i konfigurationen. |
 |                        | Linjeegenskab        | Vælg standardlinjeegenskaben for den valgte faktureringstype. Når nye timeestimater, nye udgiftsestimater eller nye faktiske tal synkroniseres fra Project Service Automation, angives feltet **Linjeegenskab** til standardværdien for faktureringstypen. |
 | Låsning af funktonalitet  | Ikke tilgængelig       | Vælg den funktion, der skal deaktiveres i Finance and Operations for projekter og kontrakter, der stammer fra Project Service Automation. Du kan for eksempel deaktivere muligheden for at redigere kontrakter og projekter, oprette arbejdsopgavehierarkier og indtaste timesedler i Finance and Operations. Regnskabsrelaterede felter vil fortsat være aktiverede, selvom de ikke er tilgængelige med parameterindstillingen. Som standard er alle funktioner aktiveret. |
-

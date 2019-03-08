@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en stykliste for en dimensionsbaseret produktmaster
-description: "Til denne procedure skal du har fuldført de foregående 4 vejledninger i denne sekvens på otte optagelser."
+description: Til denne procedure skal du har fuldført de foregående 4 vejledninger i denne sekvens på otte optagelser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 19578f78c11bf0537708e8d516d478f00b13fa95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f9f9473d0872d68571b87409b93e0cf5455364c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349739"
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Oprette en stykliste for en dimensionsbaseret produktmaster
 
@@ -78,5 +78,4 @@ Til denne procedure skal du har fuldført de foregående 4 vejledninger i denne 
 4. Vælg Ja til Vil du også godkende styklisten? .
 5. Klik på OK.
 6. Klik på Aktiver.
-
 

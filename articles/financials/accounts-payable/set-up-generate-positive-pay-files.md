@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346082"
 ---
-
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurere og generere filer til positive betalinger
 
 [!include [banner](../includes/banner.md)]
@@ -160,7 +159,6 @@ Når de checks, der er angivet i en fil til positiv betaling, er betalt, modtage
 
 ## <a name="recall-a-positive-pay-file"></a>Tilbagekald en fil til positive betalinger
 Hvis du vil ændre en fil til positiv betaling, kan du tilbagekalde den. På siden **Filoversigt over positive betalinger** skal du vælge en fil til positive betalinger, der har statussen **Oprettet** og derefter vælge handlingen **Tilbagekald**. For hver check i filen til positiv betaling, nulstilles det felt, der angiver, om checken er inkluderet i en fil til positiv betaling. Derefter kan du oprette en ny fil til positiv betaling, der indeholder den check, der blev tilbagekaldt.
-
 
 
 

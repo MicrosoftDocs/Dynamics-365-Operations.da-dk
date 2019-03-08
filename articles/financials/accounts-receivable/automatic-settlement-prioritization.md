@@ -1,13 +1,13 @@
 ---
 title: Automatisk udligning og prioritering
-description: "I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten."
+description: I dette emne beskrives det, hvordan posteringerne udlignes, hvis du vælger automatisk udligning på siden Debitorparametre. Det forklarer også, hvordan automatisk udligning kan bruges sammen med betalingsprioriteten.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318965"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk udligning og prioritering
 
 [!include [banner](../includes/banner.md)]
@@ -42,11 +41,11 @@ I følgende afsnit beskrives, hvordan posteringerne udlignes for hver metode.
 ## <a name="example-transactions"></a>Eksempeltransaktioner
 Eksemplerne på udligninger senere i denne artikel er baseret på følgende transaktioner. Alle transaktioner er for debitor 2050.
 
-| Postering   | Dato        | Beløb | Kasserabatbetingelser. | Kasserabatdato | Kommentarer                                                                                                                                                                                      |
+| Postering   | Dato        | Beløb | Kasserabatbetingelser. | Kasserabatdato | Bemærkninger                                                                                                                                                                                      |
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Faktura 1     | 15. august   | 100,00 | 2%14, Net 30        | 29. august          |                                                                                                                                                                                               |
-| Faktura 2     | 1. september | 250,00 | 2%14, Net 30        | 15. september       |                                                                                                                                                                                               |
-| Faktura 3     | 15. oktober  | 500,00 | 2% 14/Net 30        | 29. oktober         |                                                                                                                                                                                               |
+| Faktura 1     | 15. august   | 100,00 | 2%14, Netto 30        | 29. august          |                                                                                                                                                                                               |
+| Faktura 2     | 1. september | 250,00 | 2%14, Netto 30        | 15. september       |                                                                                                                                                                                               |
+| Faktura 3     | Oktober 15  | 500,00 | 2% 14/Net 30        | 29. oktober         |                                                                                                                                                                                               |
 | Rentenota | 15. oktober  | 7:00   |                     |                    | Denne rentenota er for faktura 1 og 2. Beløbet beregnes som 2 procent renter på beløb, der er forfaldet for mindst 30 dage siden. F.eks. 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Brugerdefineret udligningsprioritet
@@ -79,7 +78,6 @@ Hvis der ikke er en brugerdefineret udligningsprioritet, markeres posteringer au
 | Faktura 2     | 01-09-2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 15-10-2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Rentenota | 15-10-2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
-
 
 
 

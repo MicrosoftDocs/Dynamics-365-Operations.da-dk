@@ -1,32 +1,31 @@
 ---
 title: Opfyldning af sikkerhedslager for varer
-description: "I dette emne beskrives opfyldning af sikkerhedslageret, og hvordan du kan konfigurere antallet af varer på sikkerhedslageret."
+description: I dette emne beskrives opfyldning af sikkerhedslageret, og hvordan du kan konfigurere antallet af varer på sikkerhedslageret.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341528"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Opfyldning af sikkerhedslager for varer
 
 [!include [banner](../includes/banner.md)]
@@ -91,8 +90,8 @@ Denne opfyldningstilstand opretter planer med mindre forsinkelser og færre ordr
 ### <a name="first-issue"></a>Første afgang 
 Det angivne minimumsantal opfyldes på den dato, hvor den disponible beholdning går under det laveste niveau, som vist i følgende illustration. Selvom den disponible lagerbeholdning er lavere end minimumniveauet på den dato, hvor varedisponering køres, forsøger **Første afgang** ikke at dække den, før næste behov går ind.
 I følgende illustration vises et eksempel på disponeringskoden **Behov**.
-[![Planlægning af en vare med disponeringskoden **Behov** og ordreopfyldningen ** Første afgang**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) I følgende illustration vises et eksempel på disponeringskoden **Periode**.
-[![Planlægning af en vare med disponeringskoden **Periode** og ordreopfyldningen ** Første afgang**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) I følgende illustration vises et eksempel på disponeringskoden **Min./Maks.**.
+[![Planlægning af en vare med disponeringskoden **Behov** og ordreopfyldningen **Første afgang**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) I følgende illustration vises et eksempel på disponeringskoden **Periode**.
+[![Planlægning af en vare med disponeringskoden **Periode** og ordreopfyldningen **Første afgang**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) I følgende illustration vises et eksempel på disponeringskoden **Min./Maks.**.
 [![Planlægning af en vare med **Min/Max**-disponeringskode og **Første afgang**-ordreopfyldning](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) På den dato, hvor varedisponering køres, hvis den disponible lagerbeholdning allerede er under sikkerhedslagergrænsen, udløser **Dags dato** og **Dags dato + fremskaffelsestid** genopfyldningen med det samme. **Første afgang** venter, indtil der er en anden afgangspostering, som f.eks. en salgsordre- og styklistelinjebehov for varen, og derefter udløser den genopfyldningen på datoen for denne postering. Hvis den disponible lagerbeholdning ikke er under sikkerhedslagergrænsen på den dato, hvor varedisponering køres, giver **Dags dato** og **Første afgang** nøjagtigt det samme resultat som vist i illustrationen nedenfor. 
 
 [![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) Hvis den disponible lagerbeholdning ikke er under sikkerhedslagergrænsen på den dato hvor varedisponering køres, giver **Dags dato + fremskaffelsestid** følgende resultat, da det udsætter opfyldningen, indtil den slutningen af leveringstiden for indkøb.
@@ -117,4 +116,3 @@ Transaktionen til opfyldning af sikkerhedslagerbehovet nedprioriteres, hvis syst
 Sikkerhedslageropfyldning er ikke længere nedprioriteret i disponeringsfasen af varedisponeringen. Den disponible lagerbeholdning kan bruges før eventuelle andre efterspørgselsestyper. Under beregningen af forsinkelsen, vil blive føjet nye logik til at gennemgå de forsinkede salgslinjer, behov i styklistelinjer og alle andre behovstyper, for at bestemme, om de kan blive leveret til tiden, forudsat at sikkerhedslageret bruges. Hvis systemet identificerer, at det kan minimere forsinkelser ved hjælp af sikkerhedslageret, erstatter salgslinjerne eller styklistelinjerne deres første disponering med sikkerhedslageret, og systemet udløser genopfyldningen for sikkerhedslageret i stedet.
 
 Hvis planen eller varen ikke er konfigureret til forsinket beregning, har sikkerhedslagerets begrænsning samme prioritet som alle andre efterspørgselstyper. Det betyder, at der er en reserve af disponibel lagerbeholdning og andre disponible beholdninger før andre efterspørgselstyper.
-

@@ -1,13 +1,13 @@
 ---
-title: "Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations – Lagersted"
-description: "I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af kameraet på en mobilenhed."
+title: Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations – Lagersted
+description: I dette emne beskrives, hvordan du konfigurerer Dynamics 365 for Finance and Operations – Lagersted til at scanne stregkoder ved hjælp af kameraet på en mobilenhed.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: josaw
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/09/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319425"
 ---
-
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scanne stregkoder ved hjælp af et kamera i Dynamics 365 for Finance and Operations – Lagersted
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Scanne stregkoder med et kamera i Dynamics 365 for Finance and Operations – Lagersted
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,5 +54,4 @@ Kamerasiden bliver initieret på hver side, hvor inputfeltets foretrukne inputti
 Når du klikker på knappen Kamera på kamerasiden, vises den nedtonet under forsøg på at identificere en stregkode. Hvis der ikke findes en stregkode i løbet af 5 sekunder, afbrydes processen, og kameraknappen bliver tilgængelig igen. Du kan derefter prøve at scanne en stregkode igen.
 
 Når du holder kameraet over en stregkode, får du det bedste resultat, hvis stregkoden er justeret med parenteserne. Når en stregkode er blevet scannet, bliver resultatet behandlet, og du føres til næste trin. Hvis det næste trin indeholder endnu et inputfelt, hvor den foretrukne inputtilstand er indstillet til Scannes, starter kamerasiden igen. Hvis det næste trin ikke er et scanningsfelt, initieres kamerasiden ikke.
-
 

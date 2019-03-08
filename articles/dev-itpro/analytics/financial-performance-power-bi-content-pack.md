@@ -1,13 +1,13 @@
 ---
-title: "PowerBI.com-løsning til driftsregnskab"
-description: "I dette emne beskrives PowerBI.com-løsning til Driftsregnskab."
+title: PowerBI.com-løsning til driftsregnskab
+description: I dette emne beskrives PowerBI.com-løsning til Driftsregnskab.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315101"
 ---
-
 # <a name="financial-performance-powerbicom-solution"></a>PowerBI.com-løsning til driftsregnskab
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ ms.lasthandoff: 08/13/2018
 I dette emne beskrives PowerBI.com-løsning til **Driftsregnskab**. I emnet beskrives dashboardet og de rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdsløsningen.
 
 ## <a name="main-account-setup"></a>Konfiguration af hovedkonto
-Da organisationer ønsker, at passiver og omsætningsbeløb skal vises som positive beløb i rapporter, er konfigurationen af hovedkonti vigtig. For at disse hovedkonti skal kunne vises som positive beløb, skal hovedkontotypen indstilles til **Passiv** eller **Indtægter**. Når disse kontotyper bruges, bruger rapportering via Power BI omvendt fortegn og viser beløbene som positive beløb.
+Da organisationer ønsker, at passiver og omsætningsbeløb skal vises som positive beløb i rapporter, er konfigurationen af hovedkonti vigtig. For at disse hovedkonti skal kunne vises som positive beløb, skal hovedkontotypen indstilles til **Passiv** eller **Indtægter**. Når disse kontotyper bruges, bruger rapportering via Power BI omvendt fortegn og viser beløbene som positive beløb.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Dashboard og rapporter, der er inkluderet i PowerBI.com-løsningen
 Dashboardet indeholder opsummerende datafelter, der er baseret på underliggende rapporter. Hvert felt indeholder opsummerende oplysninger for det indeværende år på tværs af alle virksomheder i en organisation. Her er nogle af felterne:
@@ -71,7 +70,7 @@ Hvert felt er understøttet af en supplerende rapport. Disse rapporter indeholde
 | Udgiftsanalyse            | Samlede udgifter, faktiske i forhold til budgetterede samlede udgifter efter juridisk enhed, samlede faktiske og budgetterede samlede udgifter pr. kvartal, samlede udgifter efter kontokategori og driftsudgiftsgrad |
 | Analyse af faktureret omsætning     | Samlede tilgodehavender, samlede tilgodehavender efter juridisk enhed, samlede tilgodehavender pr. kvartal, og saldi for konti med tilgodehavender<blockquote>[!NOTE] Oplysningerne omfatter ikke primosaldi for debitorfinanskonti. De viser totalen for nye transaktioner, der er bogført til Debitorer.</blockquote> |
 
-Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Hvis du vil finde flere oplysninger om filtrering og fastgørelse i Power BI, skal du se [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammer og felter i alle disse rapporter kan filtreres og fastgøres til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Driftsregnskab**:
@@ -90,4 +89,3 @@ Følgende enheder blev brugt som grundlag for PowerBI.com-løsningen til **Drift
 - ChartofAccounts
 
 Disse enheder blev brugt til at oprette beregnede målinger i datamodellen. De beregnede mål bruges til at beregne nøgletal (KPI'er) og rapporter, der bruges i indholdet. Som standard omfatter indholdet data for de sidste tre år og et år frem. Hvis du vil medtage yderligere beregninger i rapporter og dashboard, kan du redigere [Microsoft Excel-projektmappen](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne projektmappe er den standarddatamodel, der blev brugt til at oprette indholdet.
-

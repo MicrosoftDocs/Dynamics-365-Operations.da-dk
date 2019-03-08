@@ -1,13 +1,13 @@
 ---
 title: Registrerings-id'er
-description: "Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er."
+description: Dette emne indeholder oplysninger om opsætning og brug af registrerings-id'er.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350498"
 ---
-
 # <a name="registration-ids"></a>Registrerings-id'er
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Registreringskategori er landets/områdets registrerings-identifikator, der er g
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i et bestemt land/område.|
 | Begrænset til         | Den type begrænsning, der gælder for momsregistreringstypen: Ingen, Person, Organisation.|
-| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den komplette oversigt over understøttede kategorier i Microsoft Dynamics 365 for Finance and Operations findes nedenfor. |
+| Registreringskategori | Det entydige registrering-id, der er godkendt til brug i landet. Den komplette liste over understøttede i Microsoft Dynamics 365 for Finance and Operations-kategorier findes nedenfor. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angiv registrering-id'er for poster i globalt adressekartotek
 
@@ -101,7 +100,7 @@ Følgende tabel indeholder de understøttede registreringstyper i Finance and Op
 | Officielt identifikationsdokument                              | Spanien             | Officielt identifikationsdokument|
 | Bopælscertifikat                                         | Spanien             | Bopælscertifikat|
 | Andet identifikationsdokument                                 | Spanien             | Andet identifikationsdokument|
-| Ikke anvendt                                                  | Spanien             | Ikke tilgængelig i AX 2012 R3|
+| Ingen census                                                  | Spanien             | Ikke tilgængelig i AX 2012 R3|
 
 
 Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder nødvendige forudsætninger, i følgende opgaveregistreringer for moms-ID i Lifecycle Services (LCS):
@@ -109,7 +108,6 @@ Du kan finde flere oplysninger om behandling af registrerings-id'er, herunder n�
 -   Opsætning af moms-id
 -   Moms-id-registrering for kreditor
 -   Parts søgning ved hjælp af moms-id
-
 
 
 

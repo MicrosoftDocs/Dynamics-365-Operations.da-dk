@@ -1,13 +1,13 @@
 ---
-title: "Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsversion for planlagte omkostninger"
-description: "Denne artikel forklarer, hvordan du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for producerede varer med en separat efterkalkulationsversion for planlagte omkostninger."
+title: Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsversion for planlagte omkostninger
+description: Denne artikel forklarer, hvordan du kan simulere effekterne ved omkostningsændringer af de beregnede omkostninger for producerede varer med en separat efterkalkulationsversion for planlagte omkostninger.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318873"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulere ændringer i omkostningen ved hjælp af en efterkalkulationsversion for planlagte omkostninger
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ I følgende scenarier vises, hvordan den simulerede efterkalkulationsversion bru
 -   Simuler ændringen af kostprisen i en formel til beregning af indirekte omkostninger. Ændringen af omkostningen kan f.eks. afspejle en forventet stigning eller et forventet fald i produktionsomkostningerne. Hvis du vil angive ændringen i en formel til beregning af indirekte omkostninger, skal du bruge siden **Opsætning af efterkalkulationsark** til at angive en ventende omkostningspost i efterkalkulationsversionen til simuleringen og til at validere og gemme ændringen.
 
 Når du har angivet de simulerede omkostningsændringer, skal du beregne omkostningerne for producerede varer, der påvirkes af omkostningsændringerne. Brug siden **Beregning** til den simulerede efterkalkulationsversion, og identificer de valgte producerede varer, der påvirkes af omkostningsændringerne. Beregningen af styklister gælder for alle producerede varer, medmindre du vælger specifikke varer. Du kan også anvende indstillingen til beregning af styklister til opdateringer af indgår-i. Se poster med varens kostpris i den simulerede efterkalkulationsversion for at analysere, hvordan de simulerede ændringer i kostprisen påvirker kostpriserne på de valgte producerede varer. Brug siden **Varepris** og siden **Beregn vareomkostninger** til at se og analysere omkostningerne.
-
 
 
 

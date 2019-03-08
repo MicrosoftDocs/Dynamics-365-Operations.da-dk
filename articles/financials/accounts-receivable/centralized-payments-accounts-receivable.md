@@ -1,13 +1,13 @@
 ---
 title: Centraliserede debitorbetalinger
-description: "Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier."
+description: Organisationer, der omfatter flere juridiske enheder, kan oprette og administrere betalinger via en enkelt juridisk enhed, der håndterer alle betalinger. Derfor skal den samme transaktion ikke angives i flere juridiske enheder. Denne artikel indeholder eksempler på, hvordan bogføring for centraliserede betalinger håndteres i forskellige scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9eb935d32e61b2cf0ec8710f6c2cfb18ecfe034
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7208acc35e656d12b3c4f88a090f36ecfdd4fdfb
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330741"
 ---
-
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserede debitorbetalinger
 
 [!include [banner](../includes/banner.md)]
@@ -297,7 +296,6 @@ Fabrikam modtager en betaling på 75,00 fra debitor 4000, Northwind Traders. Bet
 | Debitor (Fabrikam West)    |              | 75,00         |
 | Forfalden fra Fabrikam East (Fabrikam West) | 25,00        |               |
 | Debitor (Fabrikam West)    |              | 25,00         |
-
 
 
 

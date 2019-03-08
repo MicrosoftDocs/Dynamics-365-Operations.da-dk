@@ -1,31 +1,30 @@
 ---
-title: "Vælge mellem Retail Modern POS (MPOS) og Cloud POS"
-description: "I dette emne beskrives de grundlæggende forskelle mellem Retail Modern POS og Cloud POS. Emnet beskriver også forskellige faktorer, som detailhandlere, der implementerer Microsoft Dynamics 365 for Retail, bør overveje, så de bedre kan foretage det rette valg ud fra deres behov."
+title: Vælge mellem Retail Modern POS (MPOS) og Cloud POS
+description: I dette emne beskrives de grundlæggende forskelle mellem Retail Modern POS og Cloud POS. Emnet beskriver også forskellige faktorer, som detailhandlere, der implementerer Microsoft Dynamics 365 for Retail, bør overveje, så de bedre kan foretage det rette valg ud fra deres behov.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336238"
 ---
-
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Vælge mellem Retail Modern POS (MPOS) og Cloud POS
 
 [!include [banner](includes/banner.md)]
@@ -40,9 +39,9 @@ Retail indeholder en lang række installations- og topologiindstillinger. Detail
 
 Retail understøtter følgende POS-indstillinger:
 
-- Retail Modern POS (MPOS) for Microsoft Windows
-- MPOS for Microsoft Windows Phone
-- MPOS for Apple iPad eller Google Android-tablet
+- Retail Modern POS (MPOS) til Microsoft Windows
+- MPOS til Microsoft Windows Phone
+- MPOS til Apple iPad eller Google Android-tablet
 - Cloud POS (CPOS), som understøtter Microsoft Edge-, Internet Explorer- og Google Chrome-browsere
 
 I alle tilfælde deler POS (MPOS og CPOS) samme kerneprogramkode. Dette er vigtigt af følgende årsager:
@@ -61,7 +60,7 @@ Selvom MPOS og CPOS stort set er ens, er der nogle vigtige forskelle, som du ska
 MPOS på en Windows-, iOS- eller Android-enhed er et program, der pakkes, installeres og serviceres på enheden.
 
 - **Windows** – MPOS for Windows-programmet indeholder al programkode og det integrerede Commerce Runtime (CRT). 
-- **iOS/Android** – På disse platforme fungerer programmet som vært for CPOS-programkoden. Med andre ord hentes programkoden fra CPOS-serveren på Microsoft Azure eller Retail Store Scale Unit (RSSU). Du kan finde flere oplysninger i [Oversigt over Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – På disse platforme fungerer programmet som vært for CPOS-programkoden. Med andre ord kommer programkoden fra CPOS-serveren på Microsoft Azure eller Retail Store Scale Unit (RSSU). Du kan finde flere oplysninger under [Oversigt over Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 
@@ -106,4 +105,3 @@ Når du planlægger POS-implementeringen i dine detailforretninger, skal du over
 - **Hardwareenheder/eksterne enheder/** – Et vigtigt aspekt ved et Retail POS-system er dets evne til at bruge eksterne POS-enheder som printere, pengeskuffer og betalingsterminaler. Selvom alle de tilgængelige POS-muligheder kan bruge eksterne enheder, er det kun MPOS for Windows der understøtter dem direkte. Alle andre programmer kræver en eller flere hardwarestationer. Selvom denne metode giver fleksibilitet, skal yderligere komponenter installeres, konfigureres og serviceres.
 - **Systemkrav** – Systemkravene til POS-programmet varierer. Sørg for at se de seneste oplysninger, før du foretager dit valg. For eksempel kører CPOS i en browser og understøtter derfor flere operativsystemer. Du kan finde flere oplysninger om systemkrav i [Systemkrav til skyinstallationer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Installation og vedligeholdelse** – Kompleksiteten i installations- og vedligeholdelseskrav kan variere, afhængigt af program- og installationsvalg. En skybaseret CPOS-installation kræver f.eks. ikke, at du installerer og opdaterer på hver enhed. Denne metode reducerer derfor kompleksitet og omkostninger meget. Men hvis du installerer MPOS på hvert kasseapparat og aktiverer offlinetilstand og også installerer delte hardwarestationer, øger du antallet af slutpunkter, der skal administreres, meget.
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en produktmaster
 description: Opret en produktmaster for de foruddefinerede varianter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e34f7c630e872468d888938e0f1aa57f3f0d4c4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f944258e7efdd5c9eba7daf9a80c67058a6cc055
-ms.openlocfilehash: 6e5cf92f7736523faf25ac97278a8a273e14ff88
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/25/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326072"
 ---
 # <a name="create-a-product-master"></a>Oprette en produktmaster
 
@@ -66,5 +66,4 @@ Opret en produktmaster for de foruddefinerede varianter. Det demodatafirma, der 
 9. Klik på OK.
 10. Klik på Gem.
 11. Luk siden.
-
 

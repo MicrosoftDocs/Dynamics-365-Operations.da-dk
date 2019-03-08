@@ -1,13 +1,13 @@
 ---
 title: Nye eller opdaterede opgaveguider (august 2016)
-description: I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (august 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek.
+description: I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (august 2016 – alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,23 +17,22 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344633"
 ---
-
 # <a name="new-or-updated-task-guides-august-2016"></a>Nye eller opdaterede opgaveguider (august 2016)
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (august 2016 - alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek.
+I dette emne beskrives de nye eller opdaterede opgaveguider, der blev udgivet til Microsoft APQC Unified-biblioteket (august 2016 – alle sprog) til Microsoft Dynamics AX. Der blev ikke udgivet noget nyt introduktionsbibliotek.
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Opgaveguider i APQC Unified-bibliotek til Microsoft Dynamics AX (august 2016 - alle sprog)
 
-APQC Unified-biblioteket (august 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til platformopdatering 2 til Microsoft Dynamics AX (august 2016), programopdateringen fra maj 2016 til Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse frigivelser i [Nyheder eller ændringer](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
+APQC Unified-biblioteket (august 2016 - alle sprog) indeholder de opgaveguider, der er beregnet til brug i hjælpen til Microsoft Dynamics AX-platformopdatering 2 (august 2016), programopdateringen fra maj 2016 til Dynamics AX og Microsoft Dynamics AX-frigivelsen fra februar 2016. Du kan finde flere oplysninger om disse frigivelser i [Nyheder eller ændringer](whats-new-changed.md). Oversatte versioner af opgaveguider er tilgængelige i dette bibliotek. Du kan finde flere oplysninger om, hvordan du opretter forbindelse til et opgaveguidebibliotek fra Hjælp-systemet, i [Kom i gang med Hjælp](help-overview.md).
 
 ### <a name="data-access"></a>Datarettigheder
 
@@ -101,4 +100,3 @@ APQC Unified-biblioteket (august 2016 - alle sprog) indeholder de opgaveguider, 
 [Nye eller opdaterede opgaveguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nye eller opdaterede opgaveguider (november 2016)](new-task-guides-november-2016.md)
-

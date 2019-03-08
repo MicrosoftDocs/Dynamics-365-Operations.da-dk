@@ -1,13 +1,13 @@
---- 
+---
 title: " Betalingskonfigurationer for detailopgørelser"
-description: "Denne procedure viser konfigurationer for betalingsmetoder for detailbutikker, der påvirker, hvordan detailopgørelser oprettes og bogføres."
+description: Denne procedure viser konfigurationer for betalingsmetoder for detailbutikker, der påvirker, hvordan detailopgørelser oprettes og bogføres.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8f49a3ae05d35b0f0ca6a08007f5b05321c1f5ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 0ffd6dc5fff6d27ec3cfdcd68c53b2299c4100b9
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314457"
 ---
 # <a name="payment-configurations-for-retail-statements"></a> Betalingskonfigurationer for detailopgørelser
 
@@ -52,5 +52,4 @@ Denne registrering anvender demofirmaet USRT.
     * Vælg om deponeringer til pengeskab skal bogføres på finanskontoen eller bankkontoen.  
     * Vælg den konto, som deponeringer til pengeskab skal bogføres på.  
 8. Klik på Gem.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Avancerede formateringsindstillinger i økonomirapportering"
-description: "Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger."
+title: Avancerede formateringsindstillinger i økonomirapportering
+description: Når du opretter en rapport til økonomirapportering, er flere formateringsfunktioner tilgængelige, herunder filtre for dimensioner, begrænsninger for kolonner og rapporteringsenheder, rækker, der ikke udskrives, og IF/ELSE-sætninger i beregninger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335571"
 ---
-
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerede formateringsindstillinger i økonomirapportering
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ I følgende tabel beskrives de avancerede formateringsfunktioner, der er tilgæn
 ## <a name="advanced-cell-placement"></a>Avanceret celleplacering
 Avanceret celleplacering eller *tvang* omfatter placering af bestemte værdier i bestemte celler. Tvang anvendes for eksempel ofte til at flytte den korrekte saldo i en likviditetsopgørelse. Du kan bruge tvang til følgende formål:
 
-- Flytte værdier fra Microsoft Excel til bestemte celler.
+- Flytte værdier fra Microsoft Excel til specifikke celler.
 - Placere specifikke værdier permanent i en rapport.
 - Ændre tegn ved at kopiere en værdi fra en tidligere celle og gange værdien med -1.
 
@@ -209,9 +208,9 @@ I dette eksempel betyder beregningsformlen **@100+@330**, at beløbet i række 1
 
 | Rækkekode | Beskrivelse                 | formateringskode | Relaterede formler/rækker/enhed | Udskriftsstyring | Rækkemodifikator | Link til økonomiske dimensioner |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Likvide midler i starten af perioden |             |                            | NP            | BB           | +Konto = \[1100:1110\]       |
-| 370      | Likvide midler i starten af året   | CAL         | @100+@330                  | NP            |              |                              |
-| 400      | Likvide midler i starten af perioden | TOT         | 340+370                    |               |              |                              |
+| 340      | Likvid beholdning - periodens start |             |                            | NP            | BB           | +Konto = \[1100:1110\]       |
+| 370      | Likvid beholdning, starten af året   | CAL         | @100+@330                  | NP            |              |                              |
+| 400      | Likvid beholdning - periodens start | TOT         | 340+370                    |               |              |                              |
 
 Når rækken i en rækkedefinition har formateringskoden **CAL**, og du indtaster en matematisk beregning i cellen **Relaterede formler/rækker/enheder**, skal du også angive bogstavet for den tilknyttede kolonne og række i rapporten. Angiv f.eks. **A.120** for at repræsentere kolonne A, række 120. Du kan også bruge et (@) tegn til at angive alle kolonnerne. Angiv f.eks. **@120** for at repræsentere alle kolonner i række 120. En matematisk beregning, der ikke har et kolonnebogstav eller et (@) tegn antages at være et reelt tal.
 
@@ -242,7 +241,7 @@ Når du ændrer et tal eller en beregning i en kolonne i en bestemt række men i
 
 ### <a name="calculation-examples"></a>Eksempler på beregninger
 
-| Kalkulation            | Handling, der oprettes                                                                                                   |
+| Udregning            | Handling, der oprettes                                                                                                   |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | @130\*.75              | For hver kolonne ganges værdien i rækken 130 med 0,75. Resultatet anbringes derefter i den aktuelle række for hver kolonne. |
 | B=@130\*.75            | Samme beregning udføres kun på kolonne B.                                                                      |
@@ -272,7 +271,7 @@ Udtrykket **Perioder** i en **IF**-sætning angiver antallet af perioder for rap
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begrænse en beregning til en rapporteringsenhed i en rækkedefinition
 
-For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden **@Unit** i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen. Koden **@Unit** er angivet i kolonne B i rapporteringstræet **Enhedsnavn**. Når du bruger koden **@Unit**, akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet.
+For at begrænse en beregning til en enkelt rapporteringsenhed i et rapporteringstræ, så det beregnede beløb ikke akkumuleres til en enhed på et højere niveau, kan du bruge koden **@Unit** i cellen **Relaterede formler/rækker/enheder** i rækkedefinitionen. Koden **@Unit** er angivet i kolonne B i rapporteringstræet, **Enhedsnavn**. Når du bruger koden **@Unit**, akkumuleres værdierne ikke, men beregningen evalueres på hvert niveau i rapporteringstræet.
 
 > [!NOTE]
 > Hvis du vil bruge denne funktion, skal der knyttes et rapporteringstræ til rækkedefinitionen.
@@ -281,7 +280,7 @@ Beregningsrækken kan henvise til en beregningsrække eller en række med økono
 
 - Indtast et enhedsnavn for at medtage enheder, der matcher. For eksempel aktiverer **IF @Unit(SALES)** beregningen af enhver enhed med navnet SALG, selvom der er flere enheder med navnet SALG i rapporteringstræet.
 - Angiv navnet på virksomheden og enheden for at begrænse beregningen til bestemte enheder i en bestemt virksomhed. Indtast for eksempel **IF @Unit(ACME:SALES**) for at begrænse beregningen til enheder med navnet SALG i firmaet ACME.
-- Skriv hele hierarkikoden fra trædiagrammet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
+- Angiv den fulde hierarkikode fra rapporteringstræet for at begrænse beregningen til en bestemt enhed. Angiv for eksempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
 > For at finde hele hierarkikoden skal du højreklikke i trædiagramdefinitionen og derefter vælge **Kopiér id for enhed i trædiagram (H-kode)**.
@@ -298,4 +297,3 @@ En **IF/THEN/ELSE**-sætning gør det muligt for enhver beregning at afhænge af
 
 > [!NOTE]
 > Du kan ikke placere resultaterne af en beregning i en anden kolonne. Resultaterne skal være i den kolonne, der indeholder formlen.
-

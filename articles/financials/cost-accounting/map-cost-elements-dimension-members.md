@@ -1,13 +1,13 @@
 ---
-title: "Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer"
-description: "Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål."
+title: Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
+description: Ved tilknytning af forskellige dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer for omkostningselement kan du flette data i et fælles format til analyseformål.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e5c9387d74443ec6ca5dc70ad923b67f962181dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6f2384155a07d17004c640160aee90b1e8bdb9f8
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318137"
 ---
-
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Knytte dimensionsmedlemmer for omkostningselement til et fælles sæt dimensionsmedlemmer
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ De forskellige kontoplaner, som du bruger, kan konfigureres til at bruge forskel
 
 ## <a name="update-mappings-at-any-time"></a>Opdatere tilknytninger efter behov
 Du kan opdatere tilknytningsdefinitionerne af en dimension med omkostningselement når som helst. Da tilknytningerne ikke er datorelaterede, anvendes ændringer, næste gang du behandler omkostningsposteringer eller kører omkostningsberegninger.
-
 
 
 

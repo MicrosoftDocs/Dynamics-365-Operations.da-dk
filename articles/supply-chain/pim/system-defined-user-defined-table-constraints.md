@@ -1,13 +1,13 @@
 ---
-title: "Systemdefinerede og brugerdefinerede tabelbegrænsninger"
-description: "I denne artikel forklares de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel – brugerdefineret og systemdefineret. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier."
+title: Systemdefinerede og brugerdefinerede tabelbegrænsninger
+description: I denne artikel forklares de to typer tabelbegrænsninger for komponenter i en produktkonfigurationsmodel – brugerdefineret og systemdefineret. Tabelbegrænsninger repræsenterer matrixer af tilladte attributkombinationer, hvor hver række definerer et sæt mulige attributværdier.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2c29adc87b9ef435b714a46ba1a96ef8226759b6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: cd5fc329877bbb1f8f4ec26191e66914da29d034
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314986"
 ---
-
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerede og brugerdefinerede tabelbegrænsninger
 
 [!include [banner](../includes/banner.md)]
@@ -65,7 +64,6 @@ Før en tabelbegrænsning kan træde i kraft på en model til produktkonfigurati
 --------
 
 [Nøglebegreber i produktkonfigurationsmodeller](product-configuration-models.md)
-
 
 
 

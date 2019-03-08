@@ -1,13 +1,13 @@
---- 
-title: "Oprette en kladdepostering ved hjælp af en skabelon"
-description: "Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladdebilag."
+---
+title: Oprette en kladdepostering ved hjælp af en skabelon
+description: Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladdebilag.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransVoucherTemplate
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4a749740b62e39202d502a112f947679f85ca085
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316803"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Oprette en kladdepostering ved hjælp af en skabelon
 
@@ -63,5 +63,4 @@ Bogførte kladdebilag kan gemmes som bilagsskabeloner og anvendes i et nyt kladd
 29. Angiv beløbet, der skal anvendes til bilaget, i feltet Beløb.
     * Beløbsfeltet vises kun, hvis bilagsskabelon er af typen Procent.  
 30. Klik på OK.
-
 

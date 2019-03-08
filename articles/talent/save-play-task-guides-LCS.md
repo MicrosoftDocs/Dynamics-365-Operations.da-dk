@@ -1,31 +1,30 @@
 ---
-title: Gemme opgaveguider til LCS og afspille dem igen
+title: Gem opgaveguider for LCS, og afspil dem
 description: I dette emne beskrives, hvordan du kan gemme opgaveguider til Microsoft Dynamics Lifecycle Services (LCS) og derefter afspille dem igen.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 40b4c3154a04a557b8a670e1f1ae3722c71122fe
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303754"
 ---
-
-# <a name="save-task-guides-to-lcs-and-replay-them"></a>Gemme opgaveguider til LCS og afspille dem igen
+# <a name="save-task-guides-to-lcs-and-replay-them"></a>Gem opgaveguider for LCS, og afspil dem
 
 [!include [banner](includes/banner.md)]
 
@@ -66,4 +65,3 @@ Følg disse trin for at afspille en opgaveguide fra LCS.
 2. Vælg **Åbn fra LCS**.
 3. Vælg biblioteket og den BPM-node, der har den gemte opgaveguide.
 4. Åbn opgaveguiden.
-

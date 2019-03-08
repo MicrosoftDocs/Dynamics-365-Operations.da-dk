@@ -1,13 +1,13 @@
 ---
-title: "Vis økonomiske rapporter"
-description: "I denne artikel beskrives det, hvordan du kan se og undersøge økonomiske rapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder."
+title: Vis økonomiske rapporter
+description: I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312939"
 ---
-
 # <a name="view-financial-reports"></a>Vis økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel beskrives det, hvordan du kan se og undersøge økonomiske rapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
+I denne artikel beskrives, hvordan du kan få vist og udforske økonomirapporter i Microsoft Dynamics 365 for Finance and Operations. Artiklen indeholder oplysninger om de forskellige indstillinger, du kan anvende på økonomirapporter for at ændre deres udseende og de data, de indeholder.
 
 <a name="financial-reporting-overview"></a>Oversigt over økonomirapportering
 ----------------------------
@@ -88,7 +87,6 @@ Hvis du vil eksportere en økonomisk rapport i handlingsruden, skal du klikke p�
 --------
 
 [Økonomirapportering for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
-
 
 
 

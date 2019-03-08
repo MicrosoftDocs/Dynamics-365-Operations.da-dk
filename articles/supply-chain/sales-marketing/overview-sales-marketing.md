@@ -1,13 +1,13 @@
 ---
 title: Salg og marketing
-description: "Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg."
+description: Du kan bruge Salg og marketing til at finde, gemme og bruge forskellige typer data i salgsprocessen. Disse data omfatter det oprindelige salgsinitiativ, fremtidig opfølgning og yderligere salg.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 4de2ac36ec13f95c7603d097a0800b317014bbd0
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321058"
 ---
-
 # <a name="sales-and-marketing"></a>Salg og marketing
 
 [!include [banner](../includes/banner.md)]
@@ -126,4 +125,3 @@ En proformafaktura er en faktura, der udarbejdes som et estimat over det faktisk
 #### <a name="blogs"></a>Blogs
 
 Du kan finde en oversigt over en salgsproces i indlægget [Sådan fungerer salg i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
-
