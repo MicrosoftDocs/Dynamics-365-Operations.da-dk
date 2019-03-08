@@ -1,13 +1,13 @@
 ---
-title: "Afrund beløb til afskrivningsberegninger"
-description: "I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog."
+title: Afrund beløb til afskrivningsberegninger
+description: I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable, AssetDepBookTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,35 +18,33 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 7721e46a72e0f8133ed67c597a066a97ffd61669
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308408"
 ---
-
-# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="513da-103">Afrund beløb til afskrivningsberegninger</span><span class="sxs-lookup"><span data-stu-id="513da-103">Round-off amount for depreciation calculations</span></span>
+# <a name="round-off-amount-for-depreciation-calculations"></a><span data-ttu-id="bed20-103">Afrund beløb til afskrivningsberegninger</span><span class="sxs-lookup"><span data-stu-id="bed20-103">Round-off amount for depreciation calculations</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="513da-104">I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog.</span><span class="sxs-lookup"><span data-stu-id="513da-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
+<span data-ttu-id="bed20-104">I denne artikel beskrives det Afrund afskrivning-felt, der findes på sider med opsætning af en bog.</span><span class="sxs-lookup"><span data-stu-id="bed20-104">This article discusses the Round-off depreciation field that is found on the Book setup pages.</span></span>
 
-<span data-ttu-id="513da-105">Afrunding af afskrivningsbeløb angives for hver bog.</span><span class="sxs-lookup"><span data-stu-id="513da-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="513da-106">Afrunding af afskrivningsbeløb bruges i anlægsaktivets afskrivningsprofil, der viser den fremtidige afskrivning og værdi af anlægsaktivet samt i afskrivningsforslagene.</span><span class="sxs-lookup"><span data-stu-id="513da-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="513da-107">Angiv laveste afskrivningsbeløb, der er tilladt i denne bog.</span><span class="sxs-lookup"><span data-stu-id="513da-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
+<span data-ttu-id="bed20-105">Afrunding af afskrivningsbeløb angives for hver bog.</span><span class="sxs-lookup"><span data-stu-id="bed20-105">Round-off depreciation amounts are set for each book.</span></span> <span data-ttu-id="bed20-106">Afrunding af afskrivningsbeløb bruges i anlægsaktivets afskrivningsprofil, der viser den fremtidige afskrivning og værdi af anlægsaktivet samt i afskrivningsforslagene.</span><span class="sxs-lookup"><span data-stu-id="bed20-106">Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals.</span></span> <span data-ttu-id="bed20-107">Angiv laveste afskrivningsbeløb, der er tilladt i denne bog.</span><span class="sxs-lookup"><span data-stu-id="bed20-107">Enter the lowest depreciation amount that is allowed for the book.</span></span> 
 
-<span data-ttu-id="513da-108">Afskrivningsbeløbet i den sidste afskrivningsperiode afrundes ikke, uanset den afrunding der er konfigureret.</span><span class="sxs-lookup"><span data-stu-id="513da-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="513da-109">I slutningen af den sidste afskrivningsperiode skal værdien af anlægsaktivet være 0 (nul) eller scrapværdien, hvis der anvendes scrapværdi.</span><span class="sxs-lookup"><span data-stu-id="513da-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
+<span data-ttu-id="bed20-108">Afskrivningsbeløbet i den sidste afskrivningsperiode afrundes ikke, uanset den afrunding der er konfigureret.</span><span class="sxs-lookup"><span data-stu-id="bed20-108">Regardless of the rounding that is set up, the depreciation amount in the last depreciation period isn't rounded.</span></span> <span data-ttu-id="bed20-109">I slutningen af den sidste afskrivningsperiode skal værdien af anlægsaktivet være 0 (nul) eller scrapværdien, hvis der anvendes scrapværdi.</span><span class="sxs-lookup"><span data-stu-id="bed20-109">At the end of the last depreciation period, the value of the fixed asset must be 0 (zero) or the scrap value, if scrap value is used.</span></span>
 
-### <a name="example"></a><span data-ttu-id="513da-110">Eksempel</span><span class="sxs-lookup"><span data-stu-id="513da-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bed20-110">Eksempel</span><span class="sxs-lookup"><span data-stu-id="bed20-110">Example</span></span>
 
-<span data-ttu-id="513da-111">Afskrivning uden afrunding er beregnet til 2.444,44.</span><span class="sxs-lookup"><span data-stu-id="513da-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="513da-112">Som følgende tabel viser afhænger det foreslåede beløb af, hvordan afrundingen konfigureres.</span><span class="sxs-lookup"><span data-stu-id="513da-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
+<span data-ttu-id="bed20-111">Afskrivning uden afrunding er beregnet til 2.444,44.</span><span class="sxs-lookup"><span data-stu-id="bed20-111">Depreciation without rounding is calculated as 2,444.44.</span></span> <span data-ttu-id="bed20-112">Som følgende tabel viser afhænger det foreslåede beløb af, hvordan afrundingen konfigureres.</span><span class="sxs-lookup"><span data-stu-id="bed20-112">As the following table shows, the amounts that are suggested vary, depending on how rounding is set up.</span></span>
 
-| <span data-ttu-id="513da-113">Afrundingsmetode</span><span class="sxs-lookup"><span data-stu-id="513da-113">Rounding method</span></span> | <span data-ttu-id="513da-114">Afskrivningsbeløb</span><span class="sxs-lookup"><span data-stu-id="513da-114">Depreciation amount</span></span> |
+| <span data-ttu-id="bed20-113">Afrundingsmetode</span><span class="sxs-lookup"><span data-stu-id="bed20-113">Rounding method</span></span> | <span data-ttu-id="bed20-114">Afskrivningsbeløb</span><span class="sxs-lookup"><span data-stu-id="bed20-114">Depreciation amount</span></span> |
 |-----------------|---------------------|
-| <span data-ttu-id="513da-115">Afrunding 0,1</span><span class="sxs-lookup"><span data-stu-id="513da-115">Rounding 0.1</span></span>    | <span data-ttu-id="513da-116">2.444,40</span><span class="sxs-lookup"><span data-stu-id="513da-116">2,444.40</span></span>            |
-| <span data-ttu-id="513da-117">Afrunding 1,00</span><span class="sxs-lookup"><span data-stu-id="513da-117">Rounding 1.00</span></span>   | <span data-ttu-id="513da-118">2.444,00</span><span class="sxs-lookup"><span data-stu-id="513da-118">2,444.00</span></span>            |
-| <span data-ttu-id="513da-119">Afrunding 10,00</span><span class="sxs-lookup"><span data-stu-id="513da-119">Rounding 10.00</span></span>  | <span data-ttu-id="513da-120">2.440,00</span><span class="sxs-lookup"><span data-stu-id="513da-120">2,440.00</span></span>            |
-| <span data-ttu-id="513da-121">Afrunding 100,00</span><span class="sxs-lookup"><span data-stu-id="513da-121">Rounding 100.00</span></span> | <span data-ttu-id="513da-122">2.400,00</span><span class="sxs-lookup"><span data-stu-id="513da-122">2,400.00</span></span>            |
-
+| <span data-ttu-id="bed20-115">Afrunding 0,1</span><span class="sxs-lookup"><span data-stu-id="bed20-115">Rounding 0.1</span></span>    | <span data-ttu-id="bed20-116">2.444,40</span><span class="sxs-lookup"><span data-stu-id="bed20-116">2,444.40</span></span>            |
+| <span data-ttu-id="bed20-117">Afrunding 1,00</span><span class="sxs-lookup"><span data-stu-id="bed20-117">Rounding 1.00</span></span>   | <span data-ttu-id="bed20-118">2.444,00</span><span class="sxs-lookup"><span data-stu-id="bed20-118">2,444.00</span></span>            |
+| <span data-ttu-id="bed20-119">Afrunding 10,00</span><span class="sxs-lookup"><span data-stu-id="bed20-119">Rounding 10.00</span></span>  | <span data-ttu-id="bed20-120">2.440,00</span><span class="sxs-lookup"><span data-stu-id="bed20-120">2,440.00</span></span>            |
+| <span data-ttu-id="bed20-121">Afrunding 100,00</span><span class="sxs-lookup"><span data-stu-id="bed20-121">Rounding 100.00</span></span> | <span data-ttu-id="bed20-122">2.400,00</span><span class="sxs-lookup"><span data-stu-id="bed20-122">2,400.00</span></span>            |
 
 
 

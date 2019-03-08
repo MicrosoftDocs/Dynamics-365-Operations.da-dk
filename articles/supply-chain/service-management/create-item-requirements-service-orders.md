@@ -5,72 +5,70 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: a5a730ae945af15c7bd4020c734bac971d8186e2
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312203"
 ---
-
-# <a name="create-item-requirements-for-service-orders"></a><span data-ttu-id="7aefb-103">Oprette varebehov til serviceordrer</span><span class="sxs-lookup"><span data-stu-id="7aefb-103">Create item requirements for service orders</span></span> 
+# <a name="create-item-requirements-for-service-orders"></a><span data-ttu-id="572c2-103">Oprette varebehov til serviceordrer</span><span class="sxs-lookup"><span data-stu-id="572c2-103">Create item requirements for service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="7aefb-104">Du kan oprette en serviceordre for at spore og administrere ydelser, du leverer til dine debitorer.</span><span class="sxs-lookup"><span data-stu-id="7aefb-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="7aefb-105">Hvis du vil reservere bestemte varer til en serviceordre, kan du oprette lager lagervarebehov for den.</span><span class="sxs-lookup"><span data-stu-id="7aefb-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="7aefb-106">Et varebehov kan forbruges straks fra lageret, eller det kan starte en produktionsordre for varen.</span><span class="sxs-lookup"><span data-stu-id="7aefb-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
+<span data-ttu-id="572c2-104">Du kan oprette en serviceordre for at spore og administrere ydelser, du leverer til dine debitorer.</span><span class="sxs-lookup"><span data-stu-id="572c2-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="572c2-105">Hvis du vil reservere bestemte varer til en serviceordre, kan du oprette lager lagervarebehov for den.</span><span class="sxs-lookup"><span data-stu-id="572c2-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="572c2-106">Et varebehov kan forbruges straks fra lageret, eller det kan starte en produktionsordre for varen.</span><span class="sxs-lookup"><span data-stu-id="572c2-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
 
-<span data-ttu-id="7aefb-107">Når du bruger et varebehov i stedet for en varepostering, kan du planlægge leveringen, så den finder sted, umiddelbart før varen faktisk skal bruges. Du kan oprette en indkøbsordre, lade varen indgå i samhandelsaftaler og lade varebehovet indgå i produktionsplanlægningen.</span><span class="sxs-lookup"><span data-stu-id="7aefb-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
+<span data-ttu-id="572c2-107">Når du bruger et varebehov i stedet for en varepostering, kan du planlægge leveringen, så den finder sted, umiddelbart før varen faktisk skal bruges. Du kan oprette en indkøbsordre, lade varen indgå i samhandelsaftaler og lade varebehovet indgå i produktionsplanlægningen.</span><span class="sxs-lookup"><span data-stu-id="572c2-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
 
-<span data-ttu-id="7aefb-108">Varebehov til serviceordrer behandles løbende igennem et projekt.</span><span class="sxs-lookup"><span data-stu-id="7aefb-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="7aefb-109">Hvis du vil oprette et varebehov på en serviceordre, skal serviceordren knyttes til et projekt.</span><span class="sxs-lookup"><span data-stu-id="7aefb-109">To create an item requirement on a service order, the service order must be assigned to a project.</span></span> <span data-ttu-id="7aefb-110">Når du opretter et varebehov for en serviceordre, kan du få vist varebehovet i formularen **Projekter** for det valgte projekt.</span><span class="sxs-lookup"><span data-stu-id="7aefb-110">After you create an item requirement for a service order, you can view the item requirement in the **Projects** form for the selected project.</span></span>
+<span data-ttu-id="572c2-108">Varebehov til serviceordrer behandles løbende igennem et projekt.</span><span class="sxs-lookup"><span data-stu-id="572c2-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="572c2-109">Hvis du vil oprette et varebehov på en serviceordre, skal serviceordren knyttes til et projekt.</span><span class="sxs-lookup"><span data-stu-id="572c2-109">To create an item requirement on a service order, the service order must be assigned to a project.</span></span> <span data-ttu-id="572c2-110">Når du opretter et varebehov for en serviceordre, kan du få vist varebehovet i formularen **Projekter** for det valgte projekt.</span><span class="sxs-lookup"><span data-stu-id="572c2-110">After you create an item requirement for a service order, you can view the item requirement in the **Projects** form for the selected project.</span></span>
 
-## <a name="create-an-item-requirement-for-a-service-order"></a><span data-ttu-id="7aefb-111">Opret et varebehov for en serviceordre</span><span class="sxs-lookup"><span data-stu-id="7aefb-111">Create an item requirement for a service order</span></span>
+## <a name="create-an-item-requirement-for-a-service-order"></a><span data-ttu-id="572c2-111">Opret et varebehov for en serviceordre</span><span class="sxs-lookup"><span data-stu-id="572c2-111">Create an item requirement for a service order</span></span>
 
-1.  <span data-ttu-id="7aefb-112">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="572c2-112">Klik på **Servicestyring** \> **Almindelige** \> **Serviceordrer** \> **Serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="572c2-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="7aefb-113">Vælg den serviceordre, som du vil oprette et varebehov til.</span><span class="sxs-lookup"><span data-stu-id="7aefb-113">Select the service order that you want to create an item requirement for.</span></span>
+2.  <span data-ttu-id="572c2-113">Vælg den serviceordre, som du vil oprette et varebehov til.</span><span class="sxs-lookup"><span data-stu-id="572c2-113">Select the service order that you want to create an item requirement for.</span></span>
 
-3.  <span data-ttu-id="7aefb-114">Klik på **Varebehov** under fanen **Ekspedition** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-114">On the **Action Pane**, on the **Dispatch** tab, click **Item requirement**.</span></span>
+3.  <span data-ttu-id="572c2-114">Klik på **Varebehov** under fanen **Ekspedition** i **handlingsruden**.</span><span class="sxs-lookup"><span data-stu-id="572c2-114">On the **Action Pane**, on the **Dispatch** tab, click **Item requirement**.</span></span>
 
-4.  <span data-ttu-id="7aefb-115">Angiv oplysningerne til den påkrævede vare i formularen **Varebehov**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-115">In the **Item requirements** form, enter information for the required item.</span></span> <span data-ttu-id="7aefb-116">Du kan finde flere oplysninger om de forskellige felter i formularen under [Varebehov (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span><span class="sxs-lookup"><span data-stu-id="7aefb-116">For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span></span>
+4.  <span data-ttu-id="572c2-115">Angiv oplysningerne til den påkrævede vare i formularen **Varebehov**.</span><span class="sxs-lookup"><span data-stu-id="572c2-115">In the **Item requirements** form, enter information for the required item.</span></span> <span data-ttu-id="572c2-116">Du kan finde flere oplysninger om de forskellige felter i formularen under [Varebehov (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span><span class="sxs-lookup"><span data-stu-id="572c2-116">For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).</span></span>
 
-## <a name="create-an-item-requirement-for-a-service-agreement"></a><span data-ttu-id="7aefb-117">Opret et varebehov til en serviceaftale</span><span class="sxs-lookup"><span data-stu-id="7aefb-117">Create an item requirement for a service agreement</span></span>
+## <a name="create-an-item-requirement-for-a-service-agreement"></a><span data-ttu-id="572c2-117">Opret et varebehov til en serviceaftale</span><span class="sxs-lookup"><span data-stu-id="572c2-117">Create an item requirement for a service agreement</span></span>
 
-1.  <span data-ttu-id="7aefb-118">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="572c2-118">Klik på **Servicestyring** \> **Almindelige** \> **Serviceaftaler** \> **Serviceaftaler**.</span><span class="sxs-lookup"><span data-stu-id="572c2-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="7aefb-119">Åbn den serviceaftale, hvortil du vil oprette et varebehov.</span><span class="sxs-lookup"><span data-stu-id="7aefb-119">Open the service agreement for which you want to create an item requirement.</span></span>
+2.  <span data-ttu-id="572c2-119">Åbn den serviceaftale, hvortil du vil oprette et varebehov.</span><span class="sxs-lookup"><span data-stu-id="572c2-119">Open the service agreement for which you want to create an item requirement.</span></span>
 
-3.  <span data-ttu-id="7aefb-120">I oversigtspanelet **Linjer** skal du klikke på **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="7aefb-120">On the **Lines** FastTab, click **Add** to create a new line.</span></span>
+3.  <span data-ttu-id="572c2-120">I oversigtspanelet **Linjer** skal du klikke på **Tilføj** for at oprette en ny linje.</span><span class="sxs-lookup"><span data-stu-id="572c2-120">On the **Lines** FastTab, click **Add** to create a new line.</span></span>
 
-4.  <span data-ttu-id="7aefb-121">Vælg **Care** i feltet **Transaktionstype**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-121">In the **Transaction type** field, select **Item**.</span></span>
+4.  <span data-ttu-id="572c2-121">Vælg **Care** i feltet **Transaktionstype**.</span><span class="sxs-lookup"><span data-stu-id="572c2-121">In the **Transaction type** field, select **Item**.</span></span>
 
-5.  <span data-ttu-id="7aefb-122">I feltet **Vareopsætning** skal du vælge **Varebehov**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-122">In the **Item setup** field, select **Item requirement**.</span></span>
+5.  <span data-ttu-id="572c2-122">I feltet **Vareopsætning** skal du vælge **Varebehov**.</span><span class="sxs-lookup"><span data-stu-id="572c2-122">In the **Item setup** field, select **Item requirement**.</span></span>
 
-6.  <span data-ttu-id="7aefb-123">I feltet **Varenummer** skal du markere den vare, der kræves til serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="7aefb-123">In the **Item number** field, select the item that is required for the service agreement.</span></span>
+6.  <span data-ttu-id="572c2-123">I feltet **Varenummer** skal du markere den vare, der kræves til serviceaftalen.</span><span class="sxs-lookup"><span data-stu-id="572c2-123">In the **Item number** field, select the item that is required for the service agreement.</span></span>
 
-7.  <span data-ttu-id="7aefb-124">I oversigtspanelet **Linjedetaljer** under fanen **Produktdimensioner** skal du i feltet **Sted** vælge lagerstedet for varen.</span><span class="sxs-lookup"><span data-stu-id="7aefb-124">On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.</span></span>
+7.  <span data-ttu-id="572c2-124">I oversigtspanelet **Linjedetaljer** under fanen **Produktdimensioner** skal du i feltet **Sted** vælge lagerstedet for varen.</span><span class="sxs-lookup"><span data-stu-id="572c2-124">On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.</span></span>
 
-8.  <span data-ttu-id="7aefb-125">Hvis du vil oprette en serviceordre i aftalelinjen, skal du i oversigtspanelet **Linjer** klikke på **Opret serviceordrer** og derefter angive de relevante oplysninger i formularen **Opret serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="7aefb-125">To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form.</span></span> 
+8.  <span data-ttu-id="572c2-125">Hvis du vil oprette en serviceordre i aftalelinjen, skal du i oversigtspanelet **Linjer** klikke på **Opret serviceordrer** og derefter angive de relevante oplysninger i formularen **Opret serviceordrer**.</span><span class="sxs-lookup"><span data-stu-id="572c2-125">To create a service order from the agreement line, on the **Lines** FastTab, click **Create service orders**, and then enter the relevant information in the **Create service orders** form.</span></span> 
 
 
-## <a name="see-also"></a><span data-ttu-id="7aefb-126">Se også</span><span class="sxs-lookup"><span data-stu-id="7aefb-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="572c2-126">Se også</span><span class="sxs-lookup"><span data-stu-id="572c2-126">See also</span></span>
 
-<span data-ttu-id="7aefb-127">[Oprette serviceordrer automatisk](create-service-orders-automatically.md).</span><span class="sxs-lookup"><span data-stu-id="7aefb-127">[Create service orders automatically](create-service-orders-automatically.md).</span></span>
+<span data-ttu-id="572c2-127">[Oprette serviceordrer automatisk](create-service-orders-automatically.md).</span><span class="sxs-lookup"><span data-stu-id="572c2-127">[Create service orders automatically](create-service-orders-automatically.md).</span></span>
 
   
-
 
 

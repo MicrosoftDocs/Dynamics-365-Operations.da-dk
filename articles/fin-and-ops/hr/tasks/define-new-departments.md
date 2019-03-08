@@ -1,13 +1,13 @@
---- 
+---
 title: Definere nye afdelinger
-description: "Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab."
+description: Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,40 +16,39 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342839"
 ---
-# <a name="define-new-departments"></a><span data-ttu-id="b3f49-103">Definere nye afdelinger</span><span class="sxs-lookup"><span data-stu-id="b3f49-103">Define new departments</span></span>
+# <a name="define-new-departments"></a><span data-ttu-id="8917d-103">Definere nye afdelinger</span><span class="sxs-lookup"><span data-stu-id="8917d-103">Define new departments</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b3f49-104">Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab.</span><span class="sxs-lookup"><span data-stu-id="b3f49-104">Departments are operating units that represent a functional area of a business, such as sales or accounting.</span></span> <span data-ttu-id="b3f49-105">Mange firmaer har organisationshierarkier, der viser de forskellige afdelinger i en virksomhed.</span><span class="sxs-lookup"><span data-stu-id="b3f49-105">Many companies have organizational hierarchies that display the various departments within a business.</span></span> <span data-ttu-id="b3f49-106">Denne procedure gennemgår processen til oprettelse af afdelinger og tilføjer de pågældende afdelinger i en organisations afdelingshierarki.</span><span class="sxs-lookup"><span data-stu-id="b3f49-106">This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy.</span></span> <span data-ttu-id="b3f49-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="b3f49-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="8917d-104">Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab.</span><span class="sxs-lookup"><span data-stu-id="8917d-104">Departments are operating units that represent a functional area of a business, such as sales or accounting.</span></span> <span data-ttu-id="8917d-105">Mange firmaer har organisationshierarkier, der viser de forskellige afdelinger i en virksomhed.</span><span class="sxs-lookup"><span data-stu-id="8917d-105">Many companies have organizational hierarchies that display the various departments within a business.</span></span> <span data-ttu-id="8917d-106">Denne procedure gennemgår processen til oprettelse af afdelinger og tilføjer de pågældende afdelinger i en organisations afdelingshierarki.</span><span class="sxs-lookup"><span data-stu-id="8917d-106">This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy.</span></span> <span data-ttu-id="8917d-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="8917d-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="b3f49-108">Gå til Personale > Afdelinger > Afdelinger.</span><span class="sxs-lookup"><span data-stu-id="b3f49-108">Go to Human resources > Departments > Departments.</span></span>
-2. <span data-ttu-id="b3f49-109">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="b3f49-109">Click New to open the drop dialog.</span></span>
-3. <span data-ttu-id="b3f49-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="b3f49-110">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="b3f49-111">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="b3f49-111">Example: Project billing</span></span>  
-4. <span data-ttu-id="b3f49-112">Skriv en værdi i feltet Notat.</span><span class="sxs-lookup"><span data-stu-id="b3f49-112">In the Memo field, type a value.</span></span>
-    * <span data-ttu-id="b3f49-113">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="b3f49-113">Example: Project billing</span></span>  
-5. <span data-ttu-id="b3f49-114">Indtast eller vælg en værdi i feltet Leder.</span><span class="sxs-lookup"><span data-stu-id="b3f49-114">In the Manager field, enter or select a value.</span></span>
-    * <span data-ttu-id="b3f49-115">Eksempel: Jodi Christiansen</span><span class="sxs-lookup"><span data-stu-id="b3f49-115">Example: Jodi Christiansen</span></span>  
-6. <span data-ttu-id="b3f49-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="b3f49-116">Click Save.</span></span>
-7. <span data-ttu-id="b3f49-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="b3f49-117">Close the page.</span></span>
-8. <span data-ttu-id="b3f49-118">Gå til Personale > Afdelinger > Afdelingshierarki.</span><span class="sxs-lookup"><span data-stu-id="b3f49-118">Go to Human resources > Departments > Department hierarchy.</span></span>
-9. <span data-ttu-id="b3f49-119">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="b3f49-119">Click Edit.</span></span>
-10. <span data-ttu-id="b3f49-120">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="b3f49-120">Click Insert.</span></span>
-11. <span data-ttu-id="b3f49-121">Klik på Afdeling.</span><span class="sxs-lookup"><span data-stu-id="b3f49-121">Click Department.</span></span>
-12. <span data-ttu-id="b3f49-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="b3f49-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="b3f49-123">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="b3f49-123">Example: Project billing</span></span>  
-13. <span data-ttu-id="b3f49-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="b3f49-124">Click OK.</span></span>
-14. <span data-ttu-id="b3f49-125">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="b3f49-125">Click Publish to open the drop dialog.</span></span>
-15. <span data-ttu-id="b3f49-126">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="b3f49-126">In the Effective date field, enter a date and time.</span></span>
-    * <span data-ttu-id="b3f49-127">Når du publicerer afdelingshierarkiet, kan du vælge, hvornår ændringerne skal træde i kraft.</span><span class="sxs-lookup"><span data-stu-id="b3f49-127">When publishing the department hierarchy, you can select when to make the changes effective.</span></span> <span data-ttu-id="b3f49-128">Ændringer kan være dateret i fremtiden.</span><span class="sxs-lookup"><span data-stu-id="b3f49-128">Changes can be future dated.</span></span> <span data-ttu-id="b3f49-129">Du ved eksempelvis, at du i begyndelsen af regnskabsåret vil tilføje en ekstra afdeling.</span><span class="sxs-lookup"><span data-stu-id="b3f49-129">For example, you may know that at the beginning of your fiscal year you will be adding an additional department.</span></span> <span data-ttu-id="b3f49-130">Du kan indstille ikrafttrædelsesdatoen til begyndelsen af regnskabsåret, så er ændringerne af hierarkiet gældende på denne dato.</span><span class="sxs-lookup"><span data-stu-id="b3f49-130">You can set your effective date to the beginning of the fiscal year, and the changes to the hierarchy will be effective on that date.</span></span>  
-16. <span data-ttu-id="b3f49-131">Indtast en værdi i feltet Beskriv ændringer.</span><span class="sxs-lookup"><span data-stu-id="b3f49-131">In the Describe changes field, type a value.</span></span>
-17. <span data-ttu-id="b3f49-132">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="b3f49-132">Click Publish.</span></span>
-
+1. <span data-ttu-id="8917d-108">Gå til Personale > Afdelinger > Afdelinger.</span><span class="sxs-lookup"><span data-stu-id="8917d-108">Go to Human resources > Departments > Departments.</span></span>
+2. <span data-ttu-id="8917d-109">Klik på Ny for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="8917d-109">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="8917d-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="8917d-110">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="8917d-111">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="8917d-111">Example: Project billing</span></span>  
+4. <span data-ttu-id="8917d-112">Skriv en værdi i feltet Notat.</span><span class="sxs-lookup"><span data-stu-id="8917d-112">In the Memo field, type a value.</span></span>
+    * <span data-ttu-id="8917d-113">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="8917d-113">Example: Project billing</span></span>  
+5. <span data-ttu-id="8917d-114">Indtast eller vælg en værdi i feltet Leder.</span><span class="sxs-lookup"><span data-stu-id="8917d-114">In the Manager field, enter or select a value.</span></span>
+    * <span data-ttu-id="8917d-115">Eksempel: Jodi Christiansen</span><span class="sxs-lookup"><span data-stu-id="8917d-115">Example: Jodi Christiansen</span></span>  
+6. <span data-ttu-id="8917d-116">Klik på Gem.</span><span class="sxs-lookup"><span data-stu-id="8917d-116">Click Save.</span></span>
+7. <span data-ttu-id="8917d-117">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="8917d-117">Close the page.</span></span>
+8. <span data-ttu-id="8917d-118">Gå til Personale > Afdelinger > Afdelingshierarki.</span><span class="sxs-lookup"><span data-stu-id="8917d-118">Go to Human resources > Departments > Department hierarchy.</span></span>
+9. <span data-ttu-id="8917d-119">Klik på Rediger.</span><span class="sxs-lookup"><span data-stu-id="8917d-119">Click Edit.</span></span>
+10. <span data-ttu-id="8917d-120">Klik på Indsæt.</span><span class="sxs-lookup"><span data-stu-id="8917d-120">Click Insert.</span></span>
+11. <span data-ttu-id="8917d-121">Klik på Afdeling.</span><span class="sxs-lookup"><span data-stu-id="8917d-121">Click Department.</span></span>
+12. <span data-ttu-id="8917d-122">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="8917d-122">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="8917d-123">Eksempel: Projektfakturering</span><span class="sxs-lookup"><span data-stu-id="8917d-123">Example: Project billing</span></span>  
+13. <span data-ttu-id="8917d-124">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="8917d-124">Click OK.</span></span>
+14. <span data-ttu-id="8917d-125">Klik på Publicer for at åbne dialogboksen Fjern.</span><span class="sxs-lookup"><span data-stu-id="8917d-125">Click Publish to open the drop dialog.</span></span>
+15. <span data-ttu-id="8917d-126">Angiv en dato og et klokkeslæt i feltet Ikrafttrædelsesdato.</span><span class="sxs-lookup"><span data-stu-id="8917d-126">In the Effective date field, enter a date and time.</span></span>
+    * <span data-ttu-id="8917d-127">Når du publicerer afdelingshierarkiet, kan du vælge, hvornår ændringerne skal træde i kraft.</span><span class="sxs-lookup"><span data-stu-id="8917d-127">When publishing the department hierarchy, you can select when to make the changes effective.</span></span> <span data-ttu-id="8917d-128">Ændringer kan være dateret i fremtiden.</span><span class="sxs-lookup"><span data-stu-id="8917d-128">Changes can be future dated.</span></span> <span data-ttu-id="8917d-129">Du ved eksempelvis, at du i begyndelsen af regnskabsåret vil tilføje en ekstra afdeling.</span><span class="sxs-lookup"><span data-stu-id="8917d-129">For example, you may know that at the beginning of your fiscal year you will be adding an additional department.</span></span> <span data-ttu-id="8917d-130">Du kan indstille ikrafttrædelsesdatoen til begyndelsen af regnskabsåret, så er ændringerne af hierarkiet gældende på denne dato.</span><span class="sxs-lookup"><span data-stu-id="8917d-130">You can set your effective date to the beginning of the fiscal year, and the changes to the hierarchy will be effective on that date.</span></span>  
+16. <span data-ttu-id="8917d-131">Indtast en værdi i feltet Beskriv ændringer.</span><span class="sxs-lookup"><span data-stu-id="8917d-131">In the Describe changes field, type a value.</span></span>
+17. <span data-ttu-id="8917d-132">Klik på Publicer.</span><span class="sxs-lookup"><span data-stu-id="8917d-132">Click Publish.</span></span>
 

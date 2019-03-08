@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en postskabelon for at lette dataindtastning
-description: "Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post."
+description: Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post.
 author: margoc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate
 audience: Application User
 ms.reviewer: margoc
@@ -16,38 +16,37 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 36d14c386322adab0cc0ba9b7b47c874aefbe519
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315975"
 ---
-# <a name="create-a-record-template-to-facilitate-data-entry"></a><span data-ttu-id="9d181-103">Oprette en postskabelon for at lette dataindtastning</span><span class="sxs-lookup"><span data-stu-id="9d181-103">Create a record template to facilitate data entry</span></span>
+# <a name="create-a-record-template-to-facilitate-data-entry"></a><span data-ttu-id="82c85-103">Oprette en postskabelon for at lette dataindtastning</span><span class="sxs-lookup"><span data-stu-id="82c85-103">Create a record template to facilitate data entry</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="9d181-104">Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post.</span><span class="sxs-lookup"><span data-stu-id="9d181-104">This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record.</span></span> <span data-ttu-id="9d181-105">I denne procedure skal oprette en ny post til nye bærbare computere, der skal føjes til dine anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="9d181-105">In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets.</span></span> <span data-ttu-id="9d181-106">Denne procedure bruger eksempelfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="9d181-106">This procedure uses the USMF sample company.</span></span>
+<span data-ttu-id="82c85-104">Denne fremgangsmåde viser, hvordan du opretter en postskabelon, så feltværdier, som bruges ofte, ikke behøver at angives eksplicit for hver ny post.</span><span class="sxs-lookup"><span data-stu-id="82c85-104">This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record.</span></span> <span data-ttu-id="82c85-105">I denne procedure skal oprette en ny post til nye bærbare computere, der skal føjes til dine anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="82c85-105">In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets.</span></span> <span data-ttu-id="82c85-106">Denne procedure bruger eksempelfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="82c85-106">This procedure uses the USMF sample company.</span></span>
 
-1. <span data-ttu-id="9d181-107">Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="9d181-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="9d181-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="9d181-108">Click New.</span></span>
-3. <span data-ttu-id="9d181-109">Skriv eller vælg en værdi i feltet Anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="9d181-109">In the Fixed asset group field, enter or select a value.</span></span>
-4. <span data-ttu-id="9d181-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9d181-110">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="9d181-111">Angiv f.eks. "Bærbar for potentiel kunde".</span><span class="sxs-lookup"><span data-stu-id="9d181-111">For example, enter 'Corporate lead laptop'.</span></span>  
-5. <span data-ttu-id="9d181-112">Angiv en værdi i feltet Søgenavn.</span><span class="sxs-lookup"><span data-stu-id="9d181-112">In the Search name field, type a value.</span></span>
-    * <span data-ttu-id="9d181-113">Du kan f.eks. skrive "bærbar".</span><span class="sxs-lookup"><span data-stu-id="9d181-113">For example, enter 'laptop.'</span></span>  
-6. <span data-ttu-id="9d181-114">Udvid sektionen Tekniske oplysninger.</span><span class="sxs-lookup"><span data-stu-id="9d181-114">Expand the Technical information section.</span></span>
-7. <span data-ttu-id="9d181-115">Skriv en værdi i feltet Mærke.</span><span class="sxs-lookup"><span data-stu-id="9d181-115">In the Make field, type a value.</span></span>
-8. <span data-ttu-id="9d181-116">Skriv en værdi i feltet Model.</span><span class="sxs-lookup"><span data-stu-id="9d181-116">In the Model field, type a value.</span></span>
-9. <span data-ttu-id="9d181-117">Skriv en værdi i feltet Modelår.</span><span class="sxs-lookup"><span data-stu-id="9d181-117">In the Model year field, type a value.</span></span>
-10. <span data-ttu-id="9d181-118">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="9d181-118">On the Action Pane, click Options.</span></span>
-11. <span data-ttu-id="9d181-119">Klik på Postoplysninger.</span><span class="sxs-lookup"><span data-stu-id="9d181-119">Click Record info.</span></span>
-12. <span data-ttu-id="9d181-120">Klik på Brugerskabelon.</span><span class="sxs-lookup"><span data-stu-id="9d181-120">Click User template.</span></span>
-13. <span data-ttu-id="9d181-121">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="9d181-121">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="9d181-122">Du kan f.eks. skrive "Bærbar firmacomputer".</span><span class="sxs-lookup"><span data-stu-id="9d181-122">For example, enter 'Corporate laptop.'</span></span>  
-14. <span data-ttu-id="9d181-123">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="9d181-123">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="9d181-124">Du kan f.eks. skrive "Bærbar firmacomputer".</span><span class="sxs-lookup"><span data-stu-id="9d181-124">For example, enter 'Corporate laptop'.</span></span>  
-15. <span data-ttu-id="9d181-125">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="9d181-125">Click OK.</span></span>
-16. <span data-ttu-id="9d181-126">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="9d181-126">Click Close.</span></span>
-
+1. <span data-ttu-id="82c85-107">Gå til Anlægsaktiver > Anlægsaktiver > Anlægsaktiver.</span><span class="sxs-lookup"><span data-stu-id="82c85-107">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="82c85-108">Klik på Ny.</span><span class="sxs-lookup"><span data-stu-id="82c85-108">Click New.</span></span>
+3. <span data-ttu-id="82c85-109">Skriv eller vælg en værdi i feltet Anlægsaktivgruppe.</span><span class="sxs-lookup"><span data-stu-id="82c85-109">In the Fixed asset group field, enter or select a value.</span></span>
+4. <span data-ttu-id="82c85-110">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="82c85-110">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="82c85-111">Angiv f.eks. "Bærbar for potentiel kunde".</span><span class="sxs-lookup"><span data-stu-id="82c85-111">For example, enter 'Corporate lead laptop'.</span></span>  
+5. <span data-ttu-id="82c85-112">Angiv en værdi i feltet Søgenavn.</span><span class="sxs-lookup"><span data-stu-id="82c85-112">In the Search name field, type a value.</span></span>
+    * <span data-ttu-id="82c85-113">Du kan f.eks. skrive "bærbar".</span><span class="sxs-lookup"><span data-stu-id="82c85-113">For example, enter 'laptop.'</span></span>  
+6. <span data-ttu-id="82c85-114">Udvid sektionen Tekniske oplysninger.</span><span class="sxs-lookup"><span data-stu-id="82c85-114">Expand the Technical information section.</span></span>
+7. <span data-ttu-id="82c85-115">Skriv en værdi i feltet Mærke.</span><span class="sxs-lookup"><span data-stu-id="82c85-115">In the Make field, type a value.</span></span>
+8. <span data-ttu-id="82c85-116">Skriv en værdi i feltet Model.</span><span class="sxs-lookup"><span data-stu-id="82c85-116">In the Model field, type a value.</span></span>
+9. <span data-ttu-id="82c85-117">Skriv en værdi i feltet Modelår.</span><span class="sxs-lookup"><span data-stu-id="82c85-117">In the Model year field, type a value.</span></span>
+10. <span data-ttu-id="82c85-118">Klik på Indstillinger i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="82c85-118">On the Action Pane, click Options.</span></span>
+11. <span data-ttu-id="82c85-119">Klik på Postoplysninger.</span><span class="sxs-lookup"><span data-stu-id="82c85-119">Click Record info.</span></span>
+12. <span data-ttu-id="82c85-120">Klik på Brugerskabelon.</span><span class="sxs-lookup"><span data-stu-id="82c85-120">Click User template.</span></span>
+13. <span data-ttu-id="82c85-121">Skriv en værdi i feltet Navn.</span><span class="sxs-lookup"><span data-stu-id="82c85-121">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="82c85-122">Du kan f.eks. skrive "Bærbar firmacomputer".</span><span class="sxs-lookup"><span data-stu-id="82c85-122">For example, enter 'Corporate laptop.'</span></span>  
+14. <span data-ttu-id="82c85-123">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="82c85-123">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="82c85-124">Du kan f.eks. skrive "Bærbar firmacomputer".</span><span class="sxs-lookup"><span data-stu-id="82c85-124">For example, enter 'Corporate laptop'.</span></span>  
+15. <span data-ttu-id="82c85-125">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="82c85-125">Click OK.</span></span>
+16. <span data-ttu-id="82c85-126">Klik på Luk.</span><span class="sxs-lookup"><span data-stu-id="82c85-126">Click Close.</span></span>
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette dimensionsbaserede konfigurationer
 description: Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResDimensionBasedConfiguration, ConfigChooseFromRoute, ConfigChooseFromGroup, ConfigChoiceApprove
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,40 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9190d6dfd4b3f6cf0634e86845e7de028631bdd4
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328579"
 ---
-# <a name="create-dimension-based-configurations"></a><span data-ttu-id="0b823-103">Oprette dimensionsbaserede konfigurationer</span><span class="sxs-lookup"><span data-stu-id="0b823-103">Create dimension-based configurations</span></span>
+# <a name="create-dimension-based-configurations"></a><span data-ttu-id="a21af-103">Oprette dimensionsbaserede konfigurationer</span><span class="sxs-lookup"><span data-stu-id="a21af-103">Create dimension-based configurations</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="0b823-104">Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt.</span><span class="sxs-lookup"><span data-stu-id="0b823-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="0b823-105">Dette er den sidste procedure i serien, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="0b823-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="0b823-106">Udførelse af denne procedure er afhængig af de data, der er oprettet i de foregående syv optagelser.</span><span class="sxs-lookup"><span data-stu-id="0b823-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="0b823-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="0b823-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="a21af-104">Denne procedure viser, hvordan du definerer en konfiguration for et dimensionsbaseret produkt.</span><span class="sxs-lookup"><span data-stu-id="a21af-104">This procedure shows how to define a configuration for a dimension-based product.</span></span> <span data-ttu-id="a21af-105">Dette er den sidste procedure i serien, som forklarer, hvordan du kan opbygge kombinationer til dimensionsbaseret konfiguration.</span><span class="sxs-lookup"><span data-stu-id="a21af-105">This is the last procedure in the series that explains how to build combinations for dimension-based configuration.</span></span> <span data-ttu-id="a21af-106">Udførelse af denne procedure er afhængig af de data, der er oprettet i de foregående syv optagelser.</span><span class="sxs-lookup"><span data-stu-id="a21af-106">The execution of this procedure is dependent on the data created in the previous seven recordings.</span></span> <span data-ttu-id="a21af-107">Det demodatafirma, der bruges til at oprette denne procedure, er USMF.</span><span class="sxs-lookup"><span data-stu-id="a21af-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="find-the-dimension-based-product-master"></a><span data-ttu-id="0b823-108">Finde den dimensionsbaserede produktmaster</span><span class="sxs-lookup"><span data-stu-id="0b823-108">Find the dimension-based product master</span></span>
-1. <span data-ttu-id="0b823-109">Klik på Vedligeholdelse af frigivet produkt.</span><span class="sxs-lookup"><span data-stu-id="0b823-109">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="0b823-110">Klik på Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="0b823-110">Click Released products.</span></span>
-3. <span data-ttu-id="0b823-111">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0b823-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="0b823-112">Vælg den dimensionsbaserede produktmaster, du oprettede i den første optagelse i denne sekvens på 8 optagelser.</span><span class="sxs-lookup"><span data-stu-id="0b823-112">Select the dimension-based product master that you created in the first recording in this sequence of 8 recordings.</span></span>  
+## <a name="find-the-dimension-based-product-master"></a><span data-ttu-id="a21af-108">Finde den dimensionsbaserede produktmaster</span><span class="sxs-lookup"><span data-stu-id="a21af-108">Find the dimension-based product master</span></span>
+1. <span data-ttu-id="a21af-109">Klik på Vedligeholdelse af frigivet produkt.</span><span class="sxs-lookup"><span data-stu-id="a21af-109">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="a21af-110">Klik på Frigivne produkter.</span><span class="sxs-lookup"><span data-stu-id="a21af-110">Click Released products.</span></span>
+3. <span data-ttu-id="a21af-111">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="a21af-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="a21af-112">Vælg den dimensionsbaserede produktmaster, du oprettede i den første optagelse i denne sekvens på 8 optagelser.</span><span class="sxs-lookup"><span data-stu-id="a21af-112">Select the dimension-based product master that you created in the first recording in this sequence of 8 recordings.</span></span>  
 
-## <a name="create-configurations"></a><span data-ttu-id="0b823-113">Oprette konfigurationer</span><span class="sxs-lookup"><span data-stu-id="0b823-113">Create configurations</span></span>
-1. <span data-ttu-id="0b823-114">Klik på Vedligehold konfigurationer i handlingsruden Teknikere.</span><span class="sxs-lookup"><span data-stu-id="0b823-114">On the Engineering Action Pane, click Maintain configurations.</span></span>
-2. <span data-ttu-id="0b823-115">Klik på Konfigurer.</span><span class="sxs-lookup"><span data-stu-id="0b823-115">Click Configure.</span></span>
-3. <span data-ttu-id="0b823-116">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0b823-116">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="0b823-117">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="0b823-117">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="0b823-118">Vælg en af varerne i den første variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="0b823-118">Select any of the items in the first configuration group.</span></span>  
-5. <span data-ttu-id="0b823-119">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="0b823-119">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="0b823-120">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="0b823-120">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="0b823-121">Vælg en vare fra den anden variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="0b823-121">Select any item from the second configuration group.</span></span>  
-7. <span data-ttu-id="0b823-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="0b823-122">Click OK.</span></span>
-8. <span data-ttu-id="0b823-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="0b823-123">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="0b823-124">Skriv en værdi i feltet Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="0b823-124">In the Configuration field, type a value.</span></span>
-    * <span data-ttu-id="0b823-125">Angiv et konfigurationsnavn, der gør det nemt at identificere konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="0b823-125">Enter a configuration name that will make it easy to identify the configuration.</span></span>  
-10. <span data-ttu-id="0b823-126">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="0b823-126">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="0b823-127">Angiv en beskrivelse af konfigurationen for at forklare, hvad den indeholder.</span><span class="sxs-lookup"><span data-stu-id="0b823-127">Enter a description of the configuration to explain what it contains.</span></span>  
-11. <span data-ttu-id="0b823-128">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="0b823-128">Click OK.</span></span>
-
+## <a name="create-configurations"></a><span data-ttu-id="a21af-113">Oprette konfigurationer</span><span class="sxs-lookup"><span data-stu-id="a21af-113">Create configurations</span></span>
+1. <span data-ttu-id="a21af-114">Klik på Vedligehold konfigurationer i handlingsruden Teknikere.</span><span class="sxs-lookup"><span data-stu-id="a21af-114">On the Engineering Action Pane, click Maintain configurations.</span></span>
+2. <span data-ttu-id="a21af-115">Klik på Konfigurer.</span><span class="sxs-lookup"><span data-stu-id="a21af-115">Click Configure.</span></span>
+3. <span data-ttu-id="a21af-116">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="a21af-116">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="a21af-117">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="a21af-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="a21af-118">Vælg en af varerne i den første variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="a21af-118">Select any of the items in the first configuration group.</span></span>  
+5. <span data-ttu-id="a21af-119">Find og vælg den ønskede post på listen.</span><span class="sxs-lookup"><span data-stu-id="a21af-119">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="a21af-120">Indtast eller vælg en værdi i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="a21af-120">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="a21af-121">Vælg en vare fra den anden variantgruppe.</span><span class="sxs-lookup"><span data-stu-id="a21af-121">Select any item from the second configuration group.</span></span>  
+7. <span data-ttu-id="a21af-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a21af-122">Click OK.</span></span>
+8. <span data-ttu-id="a21af-123">Markér den valgte række på listen.</span><span class="sxs-lookup"><span data-stu-id="a21af-123">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="a21af-124">Skriv en værdi i feltet Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="a21af-124">In the Configuration field, type a value.</span></span>
+    * <span data-ttu-id="a21af-125">Angiv et konfigurationsnavn, der gør det nemt at identificere konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="a21af-125">Enter a configuration name that will make it easy to identify the configuration.</span></span>  
+10. <span data-ttu-id="a21af-126">Skriv en værdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="a21af-126">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="a21af-127">Angiv en beskrivelse af konfigurationen for at forklare, hvad den indeholder.</span><span class="sxs-lookup"><span data-stu-id="a21af-127">Enter a description of the configuration to explain what it contains.</span></span>  
+11. <span data-ttu-id="a21af-128">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="a21af-128">Click OK.</span></span>
 
