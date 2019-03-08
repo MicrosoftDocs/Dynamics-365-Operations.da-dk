@@ -1,13 +1,13 @@
---- 
-title: "ER Bruge vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 2: Kørselsformat)"
-description: "Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret."
+---
+title: 'ER Bruge vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 2: Kørselsformat)'
+description: Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
@@ -16,40 +16,39 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 33c1a3134659bb66a67166fec3d7f53af0aa4c6c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361055"
 ---
-# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format"></a><span data-ttu-id="c6171-103">ER Brug vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 2: Kørselsformat)</span><span class="sxs-lookup"><span data-stu-id="c6171-103">ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)</span></span>
+# <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format"></a><span data-ttu-id="2a3ae-103">ER Brug vandrette områder, der kan udvides, til at tilføje kolonner i Excel-rapporter dynamisk (del 2: Kørselsformat)</span><span class="sxs-lookup"><span data-stu-id="2a3ae-103">ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c6171-104">Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret.</span><span class="sxs-lookup"><span data-stu-id="c6171-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="c6171-105">Disse trin kan udføres i DEMF-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="c6171-105">These steps can be performed in the DEMF company.</span></span>
+<span data-ttu-id="2a3ae-104">Følgende fremgangsmåde beskriver, hvordan en bruger, der er tildelt rollen som systemadministrator eller udvikler af elektronisk rapportering, kan konfigurere et format for elektronisk indberetning (ER) for at generere rapporter som OPENXML-regnearksfiler (Excel), hvor de påkrævede kolonner kan oprettes dynamisk som områder, der kan udvides vandret.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="2a3ae-105">Disse trin kan udføres i DEMF-virksomheden.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-105">These steps can be performed in the DEMF company.</span></span>
 
-<span data-ttu-id="c6171-106">For at fuldføre disse trin skal du først udføre trinnene i proceduren "Brug ER vandret udvidelige områder til dynamisk at tilføje kolonnerne i Excel-rapporter (del 1: Designformat)".</span><span class="sxs-lookup"><span data-stu-id="c6171-106">To complete these steps, you must first complete the steps in the “ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)” procedure.</span></span>
+<span data-ttu-id="2a3ae-106">For at fuldføre disse trin skal du først udføre trinnene i proceduren "Brug ER vandret udvidelige områder til dynamisk at tilføje kolonnerne i Excel-rapporter (del 1: Designformat)".</span><span class="sxs-lookup"><span data-stu-id="2a3ae-106">To complete these steps, you must first complete the steps in the “ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)” procedure.</span></span>
 
-<span data-ttu-id="c6171-107">Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="c6171-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="2a3ae-107">Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="find-created-format"></a><span data-ttu-id="c6171-108">Find oprettet format</span><span class="sxs-lookup"><span data-stu-id="c6171-108">Find created format</span></span>
-1. <span data-ttu-id="c6171-109">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="c6171-109">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="c6171-110">Udvid 'Eksempelmodel til økonomiske dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6171-110">In the tree, expand 'Financial dimensions sample model'.</span></span>
-3. <span data-ttu-id="c6171-111">Vælg 'Eksempelmodel til økonomiske dimensioner\Eksempel på rapport med vandret områder, der kan udvides' i træet.</span><span class="sxs-lookup"><span data-stu-id="c6171-111">In the tree, select 'Financial dimensions sample model\Sample report with horizontally expandable ranges'.</span></span>
+## <a name="find-created-format"></a><span data-ttu-id="2a3ae-108">Find oprettet format</span><span class="sxs-lookup"><span data-stu-id="2a3ae-108">Find created format</span></span>
+1. <span data-ttu-id="2a3ae-109">Gå til Virksomhedsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-109">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="2a3ae-110">Udvid 'Eksempelmodel til økonomiske dimensioner' i træet.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-110">In the tree, expand 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="2a3ae-111">Vælg 'Eksempelmodel til økonomiske dimensioner\Eksempel på rapport med vandret områder, der kan udvides' i træet.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-111">In the tree, select 'Financial dimensions sample model\Sample report with horizontally expandable ranges'.</span></span>
 
-## <a name="execute-format-to-create-excel-output"></a><span data-ttu-id="c6171-112">Udfør format for at oprette Excel-output</span><span class="sxs-lookup"><span data-stu-id="c6171-112">Execute format to create Excel output</span></span>
-1. <span data-ttu-id="c6171-113">Klik på Kør.</span><span class="sxs-lookup"><span data-stu-id="c6171-113">Click Run.</span></span>
-2. <span data-ttu-id="c6171-114">Skriv 'BusinessUnit;CostCenter;Department' i feltet Dimensionens navn.</span><span class="sxs-lookup"><span data-stu-id="c6171-114">In the Dimension name field, type 'BusinessUnit;CostCenter;Department'.</span></span>
-    * <span data-ttu-id="c6171-115">Indtast eller vælg en værdi i feltet Dimensionens navn.</span><span class="sxs-lookup"><span data-stu-id="c6171-115">In the Dimension name field, enter or select a value.</span></span>  <span data-ttu-id="c6171-116">Hvis du vil vælge alle dimensioner for det aktuelle regnskab, skal du angive følgende: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span><span class="sxs-lookup"><span data-stu-id="c6171-116">To select all dimensions for the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
-3. <span data-ttu-id="c6171-117">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="c6171-117">Expand the Records to include section.</span></span>
-4. <span data-ttu-id="c6171-118">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="c6171-118">Click Filter.</span></span>
-5. <span data-ttu-id="c6171-119">Vælg rækken for tabellen Finanskladde og feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="c6171-119">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
-6. <span data-ttu-id="c6171-120">Skriv '00057..00058' i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="c6171-120">In the Criteria field, type '00057..00058'.</span></span>
-    * <span data-ttu-id="c6171-121">00057..00058</span><span class="sxs-lookup"><span data-stu-id="c6171-121">00057..00058</span></span>  
-7. <span data-ttu-id="c6171-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c6171-122">Click OK.</span></span>
-8. <span data-ttu-id="c6171-123">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="c6171-123">Click OK.</span></span>
-    * <span data-ttu-id="c6171-124">Gennemse det genererede output.</span><span class="sxs-lookup"><span data-stu-id="c6171-124">Review the generated output.</span></span> <span data-ttu-id="c6171-125">Bemærk, at den netop oprettede Excel-fil indeholder det samme antal kolonner, der er valgt for økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="c6171-125">Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions.</span></span> <span data-ttu-id="c6171-126">Rapporthovedet i disse kolonner repræsenterer navnene på økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="c6171-126">The report header in those columns represents financial dimensions’ names.</span></span> <span data-ttu-id="c6171-127">Transaktionslinjerne i disse kolonner repræsenterer økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="c6171-127">The transactions’ lines in those columns represent financial dimensions.</span></span> <span data-ttu-id="c6171-128">Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne Dynamics 365 for Finance and Operations, Enterprise edition-forekomst.</span><span class="sxs-lookup"><span data-stu-id="c6171-128">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.</span></span>  
-
+## <a name="execute-format-to-create-excel-output"></a><span data-ttu-id="2a3ae-112">Udfør format for at oprette Excel-output</span><span class="sxs-lookup"><span data-stu-id="2a3ae-112">Execute format to create Excel output</span></span>
+1. <span data-ttu-id="2a3ae-113">Klik på Kør.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-113">Click Run.</span></span>
+2. <span data-ttu-id="2a3ae-114">Skriv 'BusinessUnit;CostCenter;Department' i feltet Dimensionens navn.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-114">In the Dimension name field, type 'BusinessUnit;CostCenter;Department'.</span></span>
+    * <span data-ttu-id="2a3ae-115">Indtast eller vælg en værdi i feltet Dimensionens navn.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-115">In the Dimension name field, enter or select a value.</span></span>  <span data-ttu-id="2a3ae-116">Hvis du vil vælge alle dimensioner for det aktuelle regnskab, skal du angive følgende: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span><span class="sxs-lookup"><span data-stu-id="2a3ae-116">To select all dimensions for the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
+3. <span data-ttu-id="2a3ae-117">Udvid posterne for at inkludere sektion.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-117">Expand the Records to include section.</span></span>
+4. <span data-ttu-id="2a3ae-118">Klik på Filtrér.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-118">Click Filter.</span></span>
+5. <span data-ttu-id="2a3ae-119">Vælg rækken for tabellen Finanskladde og feltet Kladdebatchnummer.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-119">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
+6. <span data-ttu-id="2a3ae-120">Skriv '00057..00058' i feltet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-120">In the Criteria field, type '00057..00058'.</span></span>
+    * <span data-ttu-id="2a3ae-121">00057..00058</span><span class="sxs-lookup"><span data-stu-id="2a3ae-121">00057..00058</span></span>  
+7. <span data-ttu-id="2a3ae-122">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-122">Click OK.</span></span>
+8. <span data-ttu-id="2a3ae-123">Klik på OK.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-123">Click OK.</span></span>
+    * <span data-ttu-id="2a3ae-124">Gennemse det genererede output.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-124">Review the generated output.</span></span> <span data-ttu-id="2a3ae-125">Bemærk, at den netop oprettede Excel-fil indeholder det samme antal kolonner, der er valgt for økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-125">Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions.</span></span> <span data-ttu-id="2a3ae-126">Rapporthovedet i disse kolonner repræsenterer navnene på økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-126">The report header in those columns represents financial dimensions’ names.</span></span> <span data-ttu-id="2a3ae-127">Transaktionslinjerne i disse kolonner repræsenterer økonomiske dimensioner.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-127">The transactions’ lines in those columns represent financial dimensions.</span></span> <span data-ttu-id="2a3ae-128">Kør denne rapport, og vælg forskellige dimensioner for at se, at rapporten ikke er afhængig af antallet af valgte dimensioner eller antallet af dimensioner, der er konfigureret for denne Dynamics 365 for Finance and Operations Enterprise edition-forekomst.</span><span class="sxs-lookup"><span data-stu-id="2a3ae-128">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.</span></span>  
 

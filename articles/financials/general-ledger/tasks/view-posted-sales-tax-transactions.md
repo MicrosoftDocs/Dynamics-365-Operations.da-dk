@@ -1,13 +1,13 @@
---- 
-title: "Vis bogførte momstransaktioner"
-description: "Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist."
+---
+title: Vis bogførte momstransaktioner
+description: Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTrans, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,30 +16,29 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f18f2ab02af571f81149ec3564bbac0f98b1d2c6
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356363"
 ---
-# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="bc864-103">Vis bogførte momstransaktioner</span><span class="sxs-lookup"><span data-stu-id="bc864-103">View posted sales tax transactions</span></span>
+# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="bddbf-103">Vis bogførte momstransaktioner</span><span class="sxs-lookup"><span data-stu-id="bddbf-103">View posted sales tax transactions</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bc864-104">Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist.</span><span class="sxs-lookup"><span data-stu-id="bc864-104">You can view posted sales tax transactions from various page depending on what you need to view.</span></span> <span data-ttu-id="bc864-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="bc864-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="bddbf-104">Du kan få vist bogførte momsposteringer fra forskellige sider, afhængigt af hvad du har brug at få vist.</span><span class="sxs-lookup"><span data-stu-id="bddbf-104">You can view posted sales tax transactions from various page depending on what you need to view.</span></span> <span data-ttu-id="bddbf-105">Denne opgave bruger demofirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="bddbf-105">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="bc864-106">Gå til Moms > Forespørgsler og rapporter > Momsforespørgsler > Bogført moms.</span><span class="sxs-lookup"><span data-stu-id="bc864-106">Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.</span></span>
-2. <span data-ttu-id="bc864-107">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="bc864-107">Click Show filters.</span></span>
-3. <span data-ttu-id="bc864-108">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bc864-108">Close the page.</span></span>
-4. <span data-ttu-id="bc864-109">Gå til Moms > Indirekte skatter > Moms > Momsafregningsperioder.</span><span class="sxs-lookup"><span data-stu-id="bc864-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
-5. <span data-ttu-id="bc864-110">Udvid sektionen Periodeintervaller.</span><span class="sxs-lookup"><span data-stu-id="bc864-110">Expand the Period intervals section.</span></span>
-6. <span data-ttu-id="bc864-111">Vælg det interval du er interesseret i.</span><span class="sxs-lookup"><span data-stu-id="bc864-111">Select the interval you are interested in.</span></span>
-7. <span data-ttu-id="bc864-112">Få vist bogførte momstransaktioner for det valgte afregningsperiodeinterval.</span><span class="sxs-lookup"><span data-stu-id="bc864-112">Display posted sales tax transactions for the selected settlement period interval.</span></span>
-8. <span data-ttu-id="bc864-113">Du kan filtrere listen over bogførte momsposteringer yderligere.</span><span class="sxs-lookup"><span data-stu-id="bc864-113">You can further filter the list of posted sales tax transactions.</span></span>
-9. <span data-ttu-id="bc864-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bc864-114">Close the page.</span></span>
-10. <span data-ttu-id="bc864-115">Gå til Moms > Indirekte skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="bc864-115">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-11. <span data-ttu-id="bc864-116">Klik på Momskode i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="bc864-116">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="bc864-117">Klik på Bogført moms.</span><span class="sxs-lookup"><span data-stu-id="bc864-117">Click Posted sales tax.</span></span>
-
+1. <span data-ttu-id="bddbf-106">Gå til Moms > Forespørgsler og rapporter > Momsforespørgsler > Bogført moms.</span><span class="sxs-lookup"><span data-stu-id="bddbf-106">Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.</span></span>
+2. <span data-ttu-id="bddbf-107">Klik på Vis filtre.</span><span class="sxs-lookup"><span data-stu-id="bddbf-107">Click Show filters.</span></span>
+3. <span data-ttu-id="bddbf-108">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bddbf-108">Close the page.</span></span>
+4. <span data-ttu-id="bddbf-109">Gå til Moms > Indirekte skatter > Moms > Momsafregningsperioder.</span><span class="sxs-lookup"><span data-stu-id="bddbf-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
+5. <span data-ttu-id="bddbf-110">Udvid sektionen Periodeintervaller.</span><span class="sxs-lookup"><span data-stu-id="bddbf-110">Expand the Period intervals section.</span></span>
+6. <span data-ttu-id="bddbf-111">Vælg det interval du er interesseret i.</span><span class="sxs-lookup"><span data-stu-id="bddbf-111">Select the interval you are interested in.</span></span>
+7. <span data-ttu-id="bddbf-112">Få vist bogførte momstransaktioner for det valgte afregningsperiodeinterval.</span><span class="sxs-lookup"><span data-stu-id="bddbf-112">Display posted sales tax transactions for the selected settlement period interval.</span></span>
+8. <span data-ttu-id="bddbf-113">Du kan filtrere listen over bogførte momsposteringer yderligere.</span><span class="sxs-lookup"><span data-stu-id="bddbf-113">You can further filter the list of posted sales tax transactions.</span></span>
+9. <span data-ttu-id="bddbf-114">Luk siden.</span><span class="sxs-lookup"><span data-stu-id="bddbf-114">Close the page.</span></span>
+10. <span data-ttu-id="bddbf-115">Gå til Moms > Indirekte skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="bddbf-115">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+11. <span data-ttu-id="bddbf-116">Klik på Momskode i handlingsruden.</span><span class="sxs-lookup"><span data-stu-id="bddbf-116">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="bddbf-117">Klik på Bogført moms.</span><span class="sxs-lookup"><span data-stu-id="bddbf-117">Click Posted sales tax.</span></span>
 

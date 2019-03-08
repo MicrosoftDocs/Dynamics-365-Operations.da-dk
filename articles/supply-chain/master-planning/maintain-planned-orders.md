@@ -5,9 +5,9 @@ author: roxanadiaconu
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransPo
 audience: Application User
 ms.reviewer: josaw
@@ -19,39 +19,37 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 6db29d422e7dfd7b2481b4fcbc404278e37511d1
 ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360457"
 ---
-
-# <a name="maintain-planned-orders"></a><span data-ttu-id="6884e-104">Vedligehold ordreforslag</span><span class="sxs-lookup"><span data-stu-id="6884e-104">Maintain planned orders</span></span>
+# <a name="maintain-planned-orders"></a><span data-ttu-id="defa6-104">Vedligehold ordreforslag</span><span class="sxs-lookup"><span data-stu-id="defa6-104">Maintain planned orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6884e-105">Dette emne indeholder oplysninger om, hvordan du administrerer planlagte ordrer.</span><span class="sxs-lookup"><span data-stu-id="6884e-105">This topic provides information about how to manage planned orders.</span></span> <span data-ttu-id="6884e-106">Den beskriver, hvordan du kan opdatere status for planlagte ordrer, autorisere dem og filtrere for planlagte ordre, der har samme status som en valgte planlagt ordre.</span><span class="sxs-lookup"><span data-stu-id="6884e-106">It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.</span></span>
+<span data-ttu-id="defa6-105">Dette emne indeholder oplysninger om, hvordan du administrerer planlagte ordrer.</span><span class="sxs-lookup"><span data-stu-id="defa6-105">This topic provides information about how to manage planned orders.</span></span> <span data-ttu-id="defa6-106">Den beskriver, hvordan du kan opdatere status for planlagte ordrer, autorisere dem og filtrere for planlagte ordre, der har samme status som en valgte planlagt ordre.</span><span class="sxs-lookup"><span data-stu-id="defa6-106">It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.</span></span>
 
-<span data-ttu-id="6884e-107">Du kan administrere ordreforslag fra arbejdsområdet **Varedisponering**, listen **Ordreforslag** eller listerne **Produktionsordreforslag**, **Planlagte indkøbsordrer** og **Planlagt overførsel**.</span><span class="sxs-lookup"><span data-stu-id="6884e-107">You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists.</span></span> <span data-ttu-id="6884e-108">Du kan bruge feltet **Status** til at registrere status.</span><span class="sxs-lookup"><span data-stu-id="6884e-108">You can use the **Status** field to help track your progress.</span></span> <span data-ttu-id="6884e-109">Følgende værdier bruges:</span><span class="sxs-lookup"><span data-stu-id="6884e-109">The following values are used:</span></span>
+<span data-ttu-id="defa6-107">Du kan administrere ordreforslag fra arbejdsområdet **Varedisponering**, listen **Ordreforslag** eller listerne **Produktionsordreforslag**, **Planlagte indkøbsordrer** og **Planlagt overførsel**.</span><span class="sxs-lookup"><span data-stu-id="defa6-107">You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists.</span></span> <span data-ttu-id="defa6-108">Du kan bruge feltet **Status** til at registrere status.</span><span class="sxs-lookup"><span data-stu-id="defa6-108">You can use the **Status** field to help track your progress.</span></span> <span data-ttu-id="defa6-109">Følgende værdier bruges:</span><span class="sxs-lookup"><span data-stu-id="defa6-109">The following values are used:</span></span>
 
--   <span data-ttu-id="6884e-110">Når varedisponering opretter ordreforslag, har ordreforslagene statussen **Ubehandlet**.</span><span class="sxs-lookup"><span data-stu-id="6884e-110">When master planning generates planned orders, the planned orders have a status of **Unprocessed**.</span></span>
--   <span data-ttu-id="6884e-111">Hvis du vælger ikke at autorisere et ordreforslag, kan du tildele det statussen **Fuldført**.</span><span class="sxs-lookup"><span data-stu-id="6884e-111">If you decide not to firm a planned order, you can give it a status of **Completed**.</span></span>
--   <span data-ttu-id="6884e-112">Når du vælger ikke at autorisere et ordreforslag, kan du tildele det statussen **Godkendt**.</span><span class="sxs-lookup"><span data-stu-id="6884e-112">When you decide to firm a planned order, you can give it a status of **Approved**.</span></span> <span data-ttu-id="6884e-113">Denne status angiver, at du godkender autorisation af ordreforslaget, men det er ikke autoriseret endnu.</span><span class="sxs-lookup"><span data-stu-id="6884e-113">This status indicates that you approve firming of the planned order, but it isn't firmed yet.</span></span>
+-   <span data-ttu-id="defa6-110">Når varedisponering opretter ordreforslag, har ordreforslagene statussen **Ubehandlet**.</span><span class="sxs-lookup"><span data-stu-id="defa6-110">When master planning generates planned orders, the planned orders have a status of **Unprocessed**.</span></span>
+-   <span data-ttu-id="defa6-111">Hvis du vælger ikke at autorisere et ordreforslag, kan du tildele det statussen **Fuldført**.</span><span class="sxs-lookup"><span data-stu-id="defa6-111">If you decide not to firm a planned order, you can give it a status of **Completed**.</span></span>
+-   <span data-ttu-id="defa6-112">Når du vælger ikke at autorisere et ordreforslag, kan du tildele det statussen **Godkendt**.</span><span class="sxs-lookup"><span data-stu-id="defa6-112">When you decide to firm a planned order, you can give it a status of **Approved**.</span></span> <span data-ttu-id="defa6-113">Denne status angiver, at du godkender autorisation af ordreforslaget, men det er ikke autoriseret endnu.</span><span class="sxs-lookup"><span data-stu-id="defa6-113">This status indicates that you approve firming of the planned order, but it isn't firmed yet.</span></span>
 
-<span data-ttu-id="6884e-114">**Bemærk!** Et godkendt ordreforslag overføres i den aktuelle tilstand til næste beregning af varedisponering.</span><span class="sxs-lookup"><span data-stu-id="6884e-114">**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation.</span></span> <span data-ttu-id="6884e-115">Du kan autorisere ordreforslag ved at klikke på **Autoriser**.</span><span class="sxs-lookup"><span data-stu-id="6884e-115">You can firm planned orders by clicking **Firm**.</span></span> <span data-ttu-id="6884e-116">Du kan autorisere følgende ordreforslag:</span><span class="sxs-lookup"><span data-stu-id="6884e-116">You can firm the following planned orders:</span></span>
+<span data-ttu-id="defa6-114">**Bemærk!** Et godkendt ordreforslag overføres i den aktuelle tilstand til næste beregning af varedisponering.</span><span class="sxs-lookup"><span data-stu-id="defa6-114">**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation.</span></span> <span data-ttu-id="defa6-115">Du kan autorisere ordreforslag ved at klikke på **Autoriser**.</span><span class="sxs-lookup"><span data-stu-id="defa6-115">You can firm planned orders by clicking **Firm**.</span></span> <span data-ttu-id="defa6-116">Du kan autorisere følgende ordreforslag:</span><span class="sxs-lookup"><span data-stu-id="defa6-116">You can firm the following planned orders:</span></span>
 
--   <span data-ttu-id="6884e-117">Det ordreforslag, der er valgt.</span><span class="sxs-lookup"><span data-stu-id="6884e-117">The planned order that is selected.</span></span>
--   <span data-ttu-id="6884e-118">Flere ordreforslag.</span><span class="sxs-lookup"><span data-stu-id="6884e-118">Multiple planned orders.</span></span>
--   <span data-ttu-id="6884e-119">Ordreforslag oprettes via en udfoldning fra siden **Udfoldning**.</span><span class="sxs-lookup"><span data-stu-id="6884e-119">Planned orders that are generated by an explosion from the **Explosion** page.</span></span> <span data-ttu-id="6884e-120">Klik på **Ordreforslag**, vælg ordreforslaget, og klik derefter på **Autoriser**.</span><span class="sxs-lookup"><span data-stu-id="6884e-120">Click **Planned orders**, select the planned order, and then click **Firm**.</span></span>
+-   <span data-ttu-id="defa6-117">Det ordreforslag, der er valgt.</span><span class="sxs-lookup"><span data-stu-id="defa6-117">The planned order that is selected.</span></span>
+-   <span data-ttu-id="defa6-118">Flere ordreforslag.</span><span class="sxs-lookup"><span data-stu-id="defa6-118">Multiple planned orders.</span></span>
+-   <span data-ttu-id="defa6-119">Ordreforslag oprettes via en udfoldning fra siden **Udfoldning**.</span><span class="sxs-lookup"><span data-stu-id="defa6-119">Planned orders that are generated by an explosion from the **Explosion** page.</span></span> <span data-ttu-id="defa6-120">Klik på **Ordreforslag**, vælg ordreforslaget, og klik derefter på **Autoriser**.</span><span class="sxs-lookup"><span data-stu-id="defa6-120">Click **Planned orders**, select the planned order, and then click **Firm**.</span></span>
 
-<span data-ttu-id="6884e-121">Når et ordreforslag er autoriseret, flyttes det til ordresektionen i det relevante modul.</span><span class="sxs-lookup"><span data-stu-id="6884e-121">When a planned order is firmed, it's moved to the orders section of the relevant module.</span></span> 
+<span data-ttu-id="defa6-121">Når et ordreforslag er autoriseret, flyttes det til ordresektionen i det relevante modul.</span><span class="sxs-lookup"><span data-stu-id="defa6-121">When a planned order is firmed, it's moved to the orders section of the relevant module.</span></span> 
 
-<a name="additional-resources"></a><span data-ttu-id="6884e-122">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="6884e-122">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="defa6-122">Yderligere ressourcer</span><span class="sxs-lookup"><span data-stu-id="defa6-122">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="6884e-123">Behovsplaner</span><span class="sxs-lookup"><span data-stu-id="6884e-123">Master plans</span></span>](master-plans.md)
-
+[<span data-ttu-id="defa6-123">Behovsplaner</span><span class="sxs-lookup"><span data-stu-id="defa6-123">Master plans</span></span>](master-plans.md)
 
 
 
