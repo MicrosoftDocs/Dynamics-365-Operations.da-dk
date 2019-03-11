@@ -1,13 +1,13 @@
 ---
-title: "Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller"
-description: "I dette emne beskrives brugen af udtryksbegrænsninger og tabelbegrænsninger. Begrænsninger styrer de attributværdier, som du kan vælge, når du konfigurerer produkter til en salgsordre, et salgstilbud, en indkøbsordre eller en produktionsordre. Du kan bruge udtryksbegrænsninger eller tabelbegrænsninger, afhængigt af hvordan du foretrækker at udforme begrænsninger."
+title: Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
+description: I dette emne beskrives brugen af udtryksbegrænsninger og tabelbegrænsninger. Begrænsninger styrer de attributværdier, som du kan vælge, når du konfigurerer produkter til en salgsordre, et salgstilbud, en indkøbsordre eller en produktionsordre. Du kan bruge udtryksbegrænsninger eller tabelbegrænsninger, afhængigt af hvordan du foretrækker at udforme begrænsninger.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356639"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Udtryksbegrænsninger og tabelbegrænsninger i produktkonfigurationsmodeller
 
 [!include [banner](../includes/banner.md)]
@@ -170,7 +169,7 @@ I følgende tabeller vises de operatorer og den infix-anmærkning, som du kan br
 </tr>
 <tr class="even">
 <td>Strøm</td>
-<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Strøm[a, b, c]</strong> til <strong>Strøm[a, Strøm[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
+<td>Det tager en eksponentiel. Det gælder eksponentiering fra højre mod venstre. (Det er med andre ord en højre-association). Derfor svarer <strong>Power[a, b, c]</strong> til <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> kan kun bruges, hvis eksponenten er en positiv konstant.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -223,7 +222,7 @@ Eksemplerne i næste tabel viser, hvordan du skriver en infix-anmærkning.
 |        (x)        |                           Parentes tilsidesætter standardprioritering.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres mine udtryksbegrænsninger ikke korrekt?
-Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel. Her er en liste over de reserverede nøgleord, som du kan bruge:
+Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter, komponenter og underkomponenter i en produktkonfigurationsmodel.Her er en liste over de reserverede nøgleord, som du kan bruge:
 
 -   Loft
 -   Element
@@ -252,7 +251,6 @@ Du kan ikke bruge et reserveret nøgleord som problemløsernavn til attributter,
 [Oprette en udtryksbegrænsning (Opgaveguide)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Tilføje en beregning til en produktkonfigurationsmodel (Opgaveguide)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

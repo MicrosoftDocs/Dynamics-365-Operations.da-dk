@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en ny lageropbygning
-description: "Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted."
+description: Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et lagersted.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 26314f9015feded41f105814b85069fff0c62964
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360526"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Oprette en ny lageropbygning
 
@@ -75,5 +75,4 @@ Denne procedure viser, hvordan du kan angiver oplysninger om placeringer på et 
 14. Klik på Finish.
 15. Luk siden.
 16. Opdater siden.
-
 

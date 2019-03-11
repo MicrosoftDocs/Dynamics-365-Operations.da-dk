@@ -1,13 +1,13 @@
---- 
-title: "Overføre ER-konfiguration til Lifecycle Services"
-description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny konfiguration af elektronisk rapportering (ER) og overføre den til Microsoft Lifecycle Services (LCS)."
+---
+title: Overføre ER-konfiguration til Lifecycle Services
+description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler af elektronisk rapportering kan oprette en ny konfiguration af elektronisk rapportering (ER) og overføre den til Microsoft Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 19ae8820e5d4a798a5789e9632edb431fe9fede4
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335088"
 ---
 # <a name="er-upload-a-configuration-into-lifecycle-services"></a>Overføre ER-konfiguration til Lifecycle Services
 
@@ -93,6 +93,5 @@ I dette eksempel skal du oprette en konfiguration og overføre den til LCS for e
 10. Klik på Åbn.
     * Vælg LCS-lageret, og åbn det.  
     * Bemærk, at den valgte konfiguration vises som et aktiv for det valgte LCS-projekt.  
-    * Åbne LCS ved hjælp af https://lcs.dynamics.com. Åbn et projekt, der tidligere blev brugt til registrering af lageret, åbn 'Aktivbibliotek' for dette projekt, og udvid indholdet af aktivtypen 'GER-konfiguration' – den overførte ER-konfiguration vil være tilgængelig. Bemærk, at den overførte LCS-konfiguration kan importeres til en anden forekomst af Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, hvis udbyderne har adgang til dette LCS-projekt.  
-
+    * Åbne LCS ved hjælp af https://lcs.dynamics.com. Åbn et projekt, der tidligere blev brugt til registrering af lageret, åbn 'Aktivbibliotek' for dette projekt, og udvid indholdet af aktivtypen 'GER-konfiguration' – den overførte ER-konfiguration vil være tilgængelig. Bemærk, at den overførte LCS-konfiguration kan importeres til en anden forekomst af Microsoft Dynamics 365 for Finance and Operations Enterprise edition, hvis udbyderne har adgang til dette LCS-projekt.  
 

@@ -1,13 +1,13 @@
 ---
-title: "Overvåg salgs- og avanceudvikling"
-description: "Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dynamics 365 for Retail."
+title: Overvåg salgs- og avanceudvikling
+description: Du kan overvåge salgs- og avanceudvikling i realtid ved hjælp af Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e1d4f693fa9712585593b9d3de43c3603588531c
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357260"
 ---
-
 # <a name="monitor-sales-and-margin-performance"></a>Overvåge salgs- og avanceudvikling
 
 [!include [banner](includes/banner.md)]
@@ -50,4 +49,3 @@ Desuden kan brugerne med to entydige rapporter, der udnytter strukturering af hi
 - **Kategori og produktstyring**-arbejdsområdet &gt; **Detail** &gt; **Produkt og kategorier** &gt; **Detailbutiksstyring** &gt; **Rapporter**
 - **Styring af prissætning og rabatter**-arbejdsområdet &gt; **Detail** &gt; **Priser og rabatter** &gt; **Detailbutiksstyring** &gt; **Rapporter**
 - Sektionen **Forespørgsler og rapporter** &gt; **Detail** &gt; **Forespørgsler og rapporter** &gt; **Salgsrapporter**
-

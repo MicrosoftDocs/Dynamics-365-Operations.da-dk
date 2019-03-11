@@ -5,9 +5,9 @@ author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7e50d03718234748d9ad5092500b970216c40284
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318436"
 ---
-
 # <a name="warehouse-configuration"></a>Konfiguration af lagersted
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ I denne artikel beskrives det, hvordan du konfigurerer et lagersted. Det indehol
 **Bemærk!** Denne artikel gælder for funktioner i modulet **Lagerstedsstyring** (avanceret logistik). Det gælder ikke for lagerstedsfunktioner i modulet **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageropbygning
-Lokationsstyringssystemet i Microsoft Dynamics 365 for Finance and Operations giver dig fleksible muligheder for at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagereffektivitet.
+Lagerstyringssystemet i Microsoft Dynamics 365 for Finance and Operations giver dig fleksible muligheder til at definere din lageropbygnings skiftende behov, så du kan opnå en optimal lagereffektivitet.
 
 -   Du kan oprette opbevaringssteder med høj prioritet og lav prioritet til optimal placering af varer.
 -   Du kan opdele lageret i områder, der passer til forskellige opbevaringsbehov, som temperaturkrav eller forskellige omsætningssatser for varer.
@@ -116,7 +115,6 @@ For at gøre det nemmere og hurtigere at definere de handlinger, der er tilknytt
 --------
 
 [Konfigurer lokationer i et WMS-aktiveret lagersted (opgaveguide)](tasks/configure-locations-wms-enabled-warehouse.md)
-
 
 
 

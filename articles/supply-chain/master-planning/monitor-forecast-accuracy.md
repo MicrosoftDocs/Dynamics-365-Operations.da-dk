@@ -1,13 +1,13 @@
 ---
-title: "Overvåge prognosenøjagtighed"
-description: "I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Finance and Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne."
+title: Overvåge prognosenøjagtighed
+description: I denne artikel beskrives de typer af prognosenøjagtighed, som Microsoft Dynamics 365 for Finance and Operations beregner, og forklarer, hvordan du kan få vist nøjagtighedsværdierne.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanForecastDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d7070c15f9ee23cfdba871af68d1fc5954735651
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f54251b6f6937c59293bd44a0fc27272ffd3d55
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356409"
 ---
-
 # <a name="monitor-forecast-accuracy"></a>Overvåge prognosenøjagtighed
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Finance and Operations beregner følgende typer prognosenøjagtighed:
 [Godkende den justerede prognose](authorize-adjusted-forecast.md)
 
 [Fjerne afvigende fra historiktransaktionsdata, når du beregner en efterspørgselsprognose](remove-historical-outliers-calculating-demand-forecast.md)
-
 
 
 

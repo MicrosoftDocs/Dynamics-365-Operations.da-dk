@@ -1,13 +1,13 @@
 ---
-title: "Tilgængelige arbejdsområder til mobile enheder"
-description: "Dette emne viser det arbejdsområde til mobilenheder, der er tilgængeligt til brug."
+title: Tilgængelige arbejdsområder til mobile enheder
+description: Dette emne viser det arbejdsområde til mobilenheder, der er tilgængeligt til brug.
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354960"
 ---
-
 # <a name="available-mobile-workspaces"></a>Tilgængelige arbejdsområder til mobile enheder
 
 [!include [banner](../includes/banner.md)]
@@ -44,5 +43,4 @@ Dette emne indeholder de arbejdsområder til mobilenheder, der er tilgængelige 
 | [Disponibelt lager](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få indblik i reserveret og disponibelt lager.                                                                                                    |   2017. januar       |
 | [Salgsordrer](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde dig opdateret om salgsordrer.                                                                                                                          |  2017. januar                  |
 | [Kreditorsamarbejde](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Kreditorer kan holde sig opdateret om de indkøbsordrer, der er sendt til dem til godkendelse. De kan også få vist oplysninger om nye og opdaterede indkøbsordrer og kontaktpersoner. |2017. januar    |
-
 

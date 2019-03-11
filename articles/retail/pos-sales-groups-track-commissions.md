@@ -1,13 +1,13 @@
 ---
 title: Spore provisioner i POS via salgsgrupper
-description: "Det er almindelig detailpraksis at spore salg efter den salgsmedarbejder, der har arbejdet med kunden – ydet assistance, mersalg, krydssalg og behandlet transaktionen."
+description: Det er almindelig detailpraksis at spore salg efter den salgsmedarbejder, der har arbejdet med kunden – ydet assistance, mersalg, krydssalg og behandlet transaktionen.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ed4f9b3055e164600827b62d57b7a5068edb3b1a
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325106"
 ---
-
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Spore provisioner i POS via salgsgrupper
 
 [!include [banner](includes/banner.md)]
@@ -89,4 +88,3 @@ POS gør det muligt for brugerne at konfigurere knapmatricer, som indgår i skæ
 ## <a name="calculating-commissions"></a>Beregning af provision
 
 Provisionen beregnes for medarbejderne i de angivne salgsgrupper på tidspunktet for bogføring af opgørelsen eller bogføring af salgsordrer.Provisionsbeløbet bestemmes på basis af medarbejderens provisionsandel, som defineret i salgsgruppen og de tilhørende indstillinger for provisionsberegning for kunden og/eller produkter på transaktionen.
-

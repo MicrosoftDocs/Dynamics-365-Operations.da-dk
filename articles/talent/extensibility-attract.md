@@ -1,14 +1,14 @@
 ---
 title: Udvidelsesmuligheder i Attract
-description: "I dette emne beskrives, hvordan du kan udvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjælp af Microsoft Power Platform."
+description: I dette emne beskrives, hvordan du kan udvide programmet Microsoft Dynamics 365 for Talent - Attract ved hjælp af Microsoft Power Platform.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 0af60a0aea0f7a5de793631445aaebb37dbb0d74
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303713"
 ---
-
 # <a name="extensibility-in-attract"></a>Udvidelsesmuligheder i Attract
 
 [!include[banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ For eksempel kan du gøre det nemmere for rekrutteringsmedarbejdere at bruge uni
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan bruge Microsoft Flow til at oprette automatiserede arbejdsgange, der kører oven på Attract-data. Du kan nemt forbinde hundredvis af populære apps og tjenester uden at skulle skrive kode. Ved at oprette processer, der kommunikerer med Attract-job, kandidat og programenheder i Common Data Service for Apps, kan du automatisere forskellige handlinger. F.eks., når en kandidat accepterer et tilbud, kan der sendes en besked til et onboardingteam, eller nyheder kan offentliggøres på Twitter. Du kan finde flere oplysninger om processer i [dokumentationen til Microsoft Flow](https://docs.microsoft.com/en-us/flow/).
+Du kan bruge Microsoft Flow til at oprette automatiserede arbejdsgange, der kører oven på Attract-data. Du kan nemt forbinde hundredvis af populære apps og tjenester uden at skulle skrive kode. Ved at oprette processer, der kommunikerer med Attract-job, kandidat og programenheder i Common Data Service for Apps, kan du automatisere forskellige handlinger. F.eks., når en kandidat accepterer et tilbud, kan der sendes en besked til et onboardingteam, eller nyheder kan offentliggøres på Twitter. Du kan finde flere oplysninger om flows i [Microsoft Flow-dokumentationen](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -67,4 +66,3 @@ Med aktiviteten Webindhold (iframe) kan du integrere en brugerdefineret webløsn
 
 > [!NOTE]
 > Aktiviteten Webindhold er kun tilgængelig i forbindelse med tilføjelsesprogrammet til omfattende ansættelse.
-

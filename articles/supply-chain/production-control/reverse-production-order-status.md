@@ -1,13 +1,13 @@
 ---
-title: "Tilbagefør produktionsordrens status"
-description: "I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer."
+title: Tilbagefør produktionsordrens status
+description: I dette emne beskrives, hvordan du tilbagefører status for produktionsordrer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367311"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Tilbagefør produktionsordrens status
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Når du tilbagefører status for en produktionsordre fra **Frigivet** til **Plan
 
 ## <a name="from-started-to-released"></a>Fra Startet til Frigivet
 Når du tilbagefører status for en produktionsordre fra **Startet** til **Frigivet**, tilbageføres alle varer, der er færdigmeldt. Hvis der er plukket materiale, eller hvis der er foretaget indgående eller udgående leveringer til produktion, tilbageføres disse indstillinger. Feltet **Reststatus** på styklistelinjerne i produktionsordren ændres fra **Afsluttet** til **Materialeforbrug**. Hvis der er registreret tid, eller hvis mængder er færdigmeldt for operationerne i produktionsruten, føres disse indstillinger tilbage. Feltet **Reststatus** på ændres fra **Afsluttet** til **Ruteforbrug** på produktionsruten. Indstillingerne for alle varer, der er bogført som igangværende eller igangværende arbejder, tilbageføres. På siden **Detaljer om produktionsordrer** nulstilles felter, der indeholder et antal, som er startet eller færdigmeldt. Datoerne for disse transaktioner nulstilles også.
-
 
 
 

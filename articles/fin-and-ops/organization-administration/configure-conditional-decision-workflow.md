@@ -1,13 +1,13 @@
 ---
 title: Konfigurere betingede beslutninger i en arbejdsgang
-description: "Brug følgende procedure for at konfigurere egenskaberne for den betingede beslutning."
+description: Brug følgende procedure for at konfigurere egenskaberne for den betingede beslutning.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a01290b3e2810aa1762f2230e8d01d219d6b10bf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64e8b2ed5c538cb982f9f03c1db24e38472be868
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328188"
 ---
-
 # <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurere betingede beslutninger i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
@@ -54,4 +53,3 @@ Systemet bestemmer, hvilken forgrening der skal bruges, ved at evaluere det send
     2. Vælg en post i området **Valider betingelse** i formen.
     3. Klik på **Test**. Systemet evaluerer den valgte post for at afgøre, om den opfylder de betingelser, du har defineret.
     4. Klik på **OK** eller **Annuller** for at vende tilbage til formen **Egenskaber**.
-

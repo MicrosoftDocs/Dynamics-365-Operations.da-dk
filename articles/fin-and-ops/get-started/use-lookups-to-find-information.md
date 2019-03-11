@@ -1,13 +1,13 @@
 ---
-title: Finde oplysninger ved brug af opslag
-description: "I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet."
+title: Finde oplysninger ved hjælp af opslag
+description: I Microsoft Dynamics 365 for Finance and Operations har mange felter opslag, der kan hjælpe dig med nemt at finde den korrekte eller ønskede værdi. Der er føjet flere forbedringer til opslag, der gør disse kontrolelementer mere brugbare og gør brugerne mere produktive. I dette emne får du mere at vide om disse nye opslagsfunktioner og får nogle nyttige tip til at få en optimal udnyttelse af opslag i systemet.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a0722f057c1613fdc03281ca68a90608a701aef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328349"
 ---
-
-# <a name="find-information-by-using-lookups"></a>Finde oplysninger ved brug af opslag
+# <a name="find-information-by-using-lookups"></a>Finde oplysninger ved hjælp af opslag
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,4 +84,3 @@ Brugeren skal i stedet at rydde værdien i opslagskontrolelementet, åbne opslag
 Når filteret er anvendt (se billedet nedenfor), kan brugeren som normalt finde og markere rækken.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
-

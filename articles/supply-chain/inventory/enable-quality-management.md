@@ -1,13 +1,13 @@
 ---
 title: Oversigt over kvalitetsstyring
-description: "I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations til at forbedre produktkvaliteten i forsyningskæden."
+description: I dette emne beskrives det, hvordan du kan bruge kvalitetsstyring i Microsoft Dynamics 365 for Finance and Operations til at forbedre produktkvaliteten i forsyningskæden.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338308"
 ---
-
 # <a name="quality-management-overview"></a>Oversigt over kvalitetsstyring
 
 [!include [banner](../includes/banner.md)]
@@ -260,7 +259,7 @@ Tabellen nedenfor indeholder flere oplysninger om, hvordan kvalitetsordrer kan o
 <tr>
 <td>Karantæneordre</td>
 <td>Før eller efter karantæneordren rapporteres som færdigmeldt eller afsluttet</td>
-<td>Kvalitetsordrer, der kræver destruktive tests kan ikke oprettes. Det antages, at funktionerne i karantæneordren håndterer bortskaffelsen af det materiale, der destrueres.</td>
+<td>Kvalitetsordrer, der kræver destruktive prøvninger kan ikke oprettes. Det antages, at funktionerne i karantæneordren håndterer bortskaffelsen af det materiale, der destrueres.</td>
 <td>Behovet for en kvalitetsordre kan afhænge af en bestemt lokation, vare eller kreditor eller en kombination af disse forhold.</td>
 <td>En manuelt oprettet kvalitetsordre, der refererer til en karantæneordre, kan bruge oplysninger i en kvalitetstilknytningspost, som f.eks. prøveudtagningsplanen.</td>
 </tr>
@@ -362,4 +361,3 @@ Du skal definere en kvalitetstilknytning for hver afvigelse i en forretningsproc
 [Processer for kvalitetsstyring](quality-management-processes.md)
 
 [Aktivering af uoverensstemmelsesstyring](enable-nonconformance-management.md)
-

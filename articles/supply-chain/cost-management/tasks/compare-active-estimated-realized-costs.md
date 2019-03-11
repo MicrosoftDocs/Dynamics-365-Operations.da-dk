@@ -1,13 +1,13 @@
---- 
+---
 title: Sammenligne aktive, estimerede og realiserede omkostninger for en produktionsordre
-description: "Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsomkostningsafvigelse for en produktionsordre."
+description: Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsomkostningsafvigelse for en produktionsordre.
 author: AndersGirke
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, CostSelectPeriodDialogForm, CostCalculationPeriodTopVariancesListFormPart, ProdTable, CostCalculationCompareDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ed9fac210ba19795cd1d7608b582965564decc2e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1429229096e8aa06bab982f07d0281bbbd5f7861
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347002"
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Sammenligne aktive, estimerede og realiserede omkostninger for en produktionsordre
 
@@ -39,5 +39,4 @@ Denne fremgangsmåde viser, hvordan du får vist årsager til høj produktionsom
 5. Klik på Administrer omkostninger i handlingsruden.
 6. Klik på Vis omkostningssammenligning.
 7. Klik på Luk.
-
 

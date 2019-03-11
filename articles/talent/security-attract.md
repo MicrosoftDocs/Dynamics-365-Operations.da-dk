@@ -1,14 +1,14 @@
 ---
 title: Sikkerheds- og rollestyring i Attract
-description: Dette emne indeholder oplysninger om rollebaseret sikkerhed i Microsoft Dynamics 365 for Talent - Attract.
+description: Dette emne indeholder oplysninger om rollesikkerhed i Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374774"
 ---
-
-# <a name="security-and-role-management-in-attract"></a>Sikkerheds- og rollestyring i Attract
+# <a name="security-and-role-management-in-attract"></a>SIkkerheds- og rollestyring i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract bruger rollebaseret sikkerhed. Der gives med andre ord ikke adgang til individuelle brugere, men til de sikkerhedsroller, brugerne er tildelt til. En bruger, der er tildelt en sikkerhedsrolle, har adgang til det sæt rettigheder, der er knyttet til den pågældende rolle.
+Microsoft Dynamics 365 for Talent: Attract-brugerrollebaseret sikkerhed. Der gives med andre ord ikke adgang til individuelle brugere, men til de sikkerhedsroller, brugerne er tildelt til. En bruger, der er tildelt en sikkerhedsrolle, har adgang til det sæt rettigheder, der er knyttet til den pågældende rolle.
 
 Attract indeholder fem grundlæggende brugerroller:
 
@@ -108,7 +107,7 @@ Følgende rettigheder gælder for de jobspecifikke data for ansøgninger og de h
 | Flyt til næste trin           | Kan afvise, hvis brugeren er i ansættelsesteamet | Kan rykke frem, hvis brugeren er i ansættelsesteamet | Ikke tilladt |
 | Starte tilbudsstyring | Kan starte tilbudsstyring | Der er en konfigurationsindstilling for tilbudsaktiviteten. | Ikke tilladt |
 
-\*\* En konfigurationsindstilling i [opsætningen af tilbagemeldingsaktiviteten](./activities-attract.md#feedback-activity) styrer, om interviewere kan se hinandens tilbagemeldinger.
+\*\* En konfigurationsindstilling i [opsætningen af tilbagemeldingsaktiviteten](activities-attract.md#feedback-activity) styrer, om interviewere kan se hinandens tilbagemeldinger.
 
 ## <a name="process-templates"></a>Processkabeloner
 
@@ -146,4 +145,3 @@ Kandidater er personer, der er føjet til en talentpulje, men som ikke er tilkny
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – detaljer om kandidat | Oprette, læse, opdatere og slette | Oprette, læse, opdatere og slette | Ingen adgang   |
 | Dokumenter                   | Oprette, læse, opdatere og slette | Oprette, læse, opdatere og slette | Ingen adgang   |
-

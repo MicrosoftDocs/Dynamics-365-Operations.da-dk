@@ -1,13 +1,13 @@
 ---
-title: Power BI-indhold til arbejdskraftmetrikker
-description: "Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
+title: Power BI-indhold til Nøgletal for arbejdsstyrke
+description: Dette emne beskriver Power BI-indhold til Nøgletal for arbejdsstyrke. Det beskrives, hvordan du får adgang til rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,27 +18,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345783"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til arbejdskraftmetrikker
+# <a name="workforce-metrics-power-bi-content"></a>Power BI-indhold til Nøgletal for arbejdsstyrke
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne beskriver Microsoft Power BI-indhold til **Nøgletal for arbejdsstyrke**. Det beskrives, hvordan du får adgang til Power BI-rapporter, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet til **Nøgletal for arbejdsstyrke** vises i arbejdsområdet **Personalestyring**, hvis du bruger et af disse produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indhold
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrikker, der er inkluderet i Power BI-indholdet
 I følgende tabel vises de metrikker, som vises på hver enkelt rapport.
 
 | Rapport                                           | Metrik |
@@ -59,7 +58,7 @@ I følgende tabel vises de metrikker, som vises på hver enkelt rapport.
 
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Sørg for at downloade det **Nøgletal for arbejdsstyrke** Power BI-indhold, der gælder for den version af Microsoft Dynamics 365, du bruger.
+Sørg for at downloade Power BI-indhold til **Nøgletal for arbejdsstyrke**, der gælder for den version af Microsoft Dynamics 365, du bruger.
 
 > [!NOTE]
 > De .pbix-filer, der er tilgængelige i Lifecycle Services gælder kun for Finance and Operations.
@@ -88,4 +87,3 @@ Følgende tabel viser de enheder, som indholdet er baseret på.
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                 | Firma, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, ansættelse, job |
 | Masseansættelsesprojekt        | Antallet af masseansættelsesprojekter, projektejer og projektstatus                     | Firma, masseansættelseslinje. |
 | Masseansættelseslinje           | Afdeling, medarbejdertype og stilling                                           | Dato, job, masseansættelsesprojekt |
-

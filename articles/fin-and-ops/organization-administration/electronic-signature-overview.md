@@ -5,9 +5,9 @@ author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325658"
 ---
-
 # <a name="electronic-signatures"></a>Elektroniske signaturer
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Elektroniske signaturer er et lovmæssigt krav i adskillige regulerede brancher 
 > [!NOTE]
 > En elektronisk signatur er i sig selv ikke det samme som en digital signatur. En elektronisk signatur er blot en erstatning for en håndskrevet signatur, mens en digital signatur omfatter yderligere sikkerhedsmæssige foranstaltninger. En digital signatur kan bidrage til at identificere, om en anden bruger eller proces har forfalsket dataene. En digital signatur kan også bekræftes, og denne bekræftelse kan ikke gendrives af ejeren af det certifikat, som blev brugt til at signere dataene. Som beskrevet nedenfor har elektroniske signaturer i Microsoft Dynamics 365 for Finance and Operations en indbygget funktion til digital signatur.
 
-## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniske signaturer i Microsoft Dynamics 365 for Finance and Operations
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniske signaturer i Dynamics 365 for Finance and Operations
 
 I Finance and Operations kan du bruge elektroniske signaturer til kritiske forretningsprocesser. Nogle processer har indbyggede funktioner til elektronisk signatur. Du kan også oprette tilpassede signaturkrav for enhver databasetabel og ethvert felt.
 
@@ -111,4 +110,3 @@ Udfør disse trin for at angive godkendere.
 1. På siden **Indstillinger** under fanen **Konti** skal du klikke på **Angiv godkender**.
 2. Vælg id'et for den bruger, som skal signere for en anden brugers ændringer, i feltet **Bruger-id for godkender**.
 3. Vælg id'et for den bruger, hvis ændringer der skal signeres for, i feltet **Signer for bruger-id**.
-

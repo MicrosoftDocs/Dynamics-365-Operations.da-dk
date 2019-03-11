@@ -1,14 +1,14 @@
 ---
 title: Aktiviteter i processerne
-description: "Dette emne indeholder oplysninger om de forskellige typer aktiviteter, der kan bruges i ansættelsesprocessen."
-author: 
+description: Dette emne indeholder oplysninger om de forskellige typer aktiviteter, der kan bruges i ansættelsesprocessen.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374751"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Aktiviteter i ansættelsesprocesserne
 
 [!include[banner](../includes/banner.md)]
@@ -43,31 +42,9 @@ Aktiviteten Jobkandidat styrer, om jobkandidater kan føjes til et job. Som stan
 
 Aktiviteten Ansøgning er påkrævet i ansættelsesprocesskabelonen. Hvis du vil sende e-mails til kandidater, når de indsender deres ansøgning eller bliver føjet til stadiet Ansøgning, skal du indstille **Send mail til kandidat** til **Til**.
 
-## <a name="scheduler-activity"></a>Aktiviteten Planlægger
+## <a name="interview-schedule-and-feedback-activity"></a>Samtaleplanlægning og tilbagemeldingsaktivitet
 
-Aktiviteten Planlægger er valgfri. Denne aktivitet består af to komponenter: Kandidatens tilgængelighed og Tidsplan. I komponenten Kandidatens tilgængelighed kan du bruge e-mail til at anmode om en kandidats tilgængelighed. Komponenten Planlægger giver mulighed for at planlægge samtaler med kandidaten og ansættelsesteamet. Følgende indstillinger kan konfigureres i aktiviteten Planlægger: **Anmod om kandidatens tilgængelighed**, **Onlinemøde** og **Send mail til kandidat**.
-
-- Hvis du vil sende e-mails til kandidater for at anmode om deres tilgængelighed, skal du indstille **Anmod om kandidatens tilgængelighed** til **Til**. Hvis du vælger **Fra** i indstillingen, vises dette trin ikke i ansættelsesprocessen for jobbet.
-- For at streame live eller have et telefonmøde via Skype for Business skal du indstille feltet **Onlinemøde** til **Skype for Business**. Det korrekte **Deltag i Skype-møde**-link tilføjes derefter i samtalemødeindkaldelsen, der sendes til interviewere.
-- Hvis du vil sende e-mails til kandidater for at færdiggøre tidsplanen, skal du indstille **Send mail til kandidat** til **Til**. Hvis du vælger **Fra** i indstillingen, modtager kandidaterne først samtaletidsplanen, når de logger på kandidatportalen.
-
-## <a name="feedback-activity"></a>Aktiviteten Tilbagemelding
-
-Aktiviteten Tilbagemelding er valgfri. Med denne aktivitet kan deltagerne i samtalen angive anbefalinger for en ansøger. De kan også angive eventuelle feedbackkommentarer, de har. Hvis du aktiverer indstillingen **Overtag tilbagemeldingsdeltagere fra ansættelsesteam**, angives rekrutteringsmedarbejder, den ansættelsesansvarlige og interviewerne automatisk i aktiviteten Tilbagemelding. Organisationer kan tillade, at interviewere får vist tilbagemeldinger fra andre, før de sender deres egen feedback. Organisationer kan også tillade, at interviewere redigerer deres tilbagemeldinger, når de sender dem.
-
-## <a name="interview-activity"></a>Aktiviteten Samtale
-
-Aktiviteten Samtale er valgfri. Denne aktivitet består af tre komponenter: Kandidatens tilgængelighed, Tidsplan og Tilbagemelding. I komponenten Kandidatens tilgængelighed kan du bruge e-mail til at anmode om en kandidats tilgængelighed. Komponenten Planlægger giver mulighed for at planlægge samtaler med kandidaten og ansættelsesteamet. Følgende indstillinger kan konfigureres i aktiviteten Planlægger: **Anmod om kandidatens tilgængelighed**, **Onlinemøde** og **Send mail til kandidat**.
-
-- Hvis du vil sende e-mails til kandidater for at anmode om deres tilgængelighed, skal du indstille **Anmod om kandidatens tilgængelighed** til **Til**. Hvis du vælger **Fra** i indstillingen, vises dette trin ikke i ansættelsesprocessen for jobbet.
-- For at streame live eller have et telefonmøde via Skype for Business skal du indstille feltet **Onlinemøde** til **Skype for Business**. Det korrekte **Deltag i Skype-møde**-link tilføjes derefter i samtalemødeindkaldelsen.
-- Hvis du vil sende e-mails til kandidater for at færdiggøre tidsplanen, skal du indstille **Send mail til kandidat** til **Til**. Hvis du vælger **Fra** i indstillingen, modtager kandidaterne først samtaletidsplanen, når de logger på kandidatportalen.
-
->[!NOTE]
-> - For alle 1:1-samtaler sendes påmindelser til interviewerne hvert døgn, hvis intervieweren ikke har svaret på (accepteret eller afvist) samtaleanmodningen.
-> - For panelsamtaler er der ingen automatiske påmindelser om at svare på samtaleanmodninger. For at udløse en påmindelse manuelt kan du redigere samtalen og bruge indstillingen **Opdater og send** til at sende anmodningen til interviewerne.
-
-I komponenten Tilbagemelding kan personer angive anbefalinger for en ansøger. De kan også angive eventuelle feedbackkommentarer, de har. Hvis du aktiverer indstillingen **Overtag tilbagemeldingsdeltagere fra ansættelsesteam**, angives rekrutteringsmedarbejder, den ansættelsesansvarlige og interviewerne automatisk i komponenten Tilbagemelding. Organisationer kan tillade, at interviewere får vist tilbagemeldinger fra andre, før de sender deres egen feedback. Organisationer kan også tillade, at interviewere redigerer deres tilbagemeldinger, når de sender dem.
+Denne aktivitet består af tre komponenter: Anmodning om kandidatens tilgængelighed, Tidsplan og Tilbagemelding. Brug samtaleaktiviteten i jobskabelonen, hvis du vil medtage en anmodning om kandidatens tilgængelighed, tidsplan og tilbagemelding som led i processen i stedet for at bruge dem hver for sig som en del af ansættelsesprocessen. Yderligere oplysninger finder du i [Samtaleplanlægning og tilbagemelding](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>Aktiviteten PowerApps
 
@@ -102,4 +79,3 @@ Forfattere kan ændre deres indstillinger, så brugere uden for deres organisati
 
 > [!NOTE]
 > Aktiviteten Microsoft Forms er kun tilgængelig i forbindelse med tilføjelsesprogrammet til omfattende ansættelse.
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Designe ER-konfigurationer til at importere data fra eksterne CSV-filer
 description: Brug denne procedure til at designe konfigurationer til elektronisk rapportering (ER) for at importere data i Dynamics 365 for Finance and Operations-programmet fra en ekstern fil i CSV-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365218"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Designe ER-konfigurationer til at importere data fra eksterne CSV-filer
 
@@ -119,5 +119,4 @@ Til testformål skal du udføre formattilknytningen ved hjælp af filen 1099entr
     * Gennemgå outputtet i XML-format, som viser de data, der er importeret fra den valgte fil og overført til datamodellen. Bemærk, at alle 7 linjer i den importerede CSV-fil blev behandlet. Linje 1 i de indeholdte felters titel blev sprunget over, 4 transaktioner blev fortolket korrekt, og 2 transaktioner blev genkendt som ikke-gyldige.   
 3. Luk siden.
 4. Luk siden.
-
 

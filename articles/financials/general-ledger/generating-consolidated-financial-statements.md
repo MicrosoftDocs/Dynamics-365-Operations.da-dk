@@ -5,10 +5,10 @@ author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355190"
 ---
-
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderede regnskaber
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ Den mest enkle metode til konsolidering ved hjælp af Økonomirapportering er at
 
 I følgende illustration vises, hvordan du kan bruge en trædiagramdefinition i Økonomirapportering til at identificere hvert regnskab, du vil konsolidere.
 
-![Trædiagramdefinition](./media/reporting-tree-definition.png "Føje enheder i trædiagram til en trædiagramdefinition")
+![Trædiagramdefinition](./media/reporting-tree-definition.png "Trædiagramdefinition")
 
 Som den konsoliderede rapport i følgende illustration viser, kan du se hvert firma separat, når du bruger trædiagrammet sammen med en rapportdefinition. De konsoliderede beløb vises på oversigtsniveau.
 
@@ -172,7 +171,7 @@ På hovedkontoen skal felterne **Valutakurstype for økonomirapportering** og **
 - I feltet **Valutakurstype for økonomirapportering** skal du vælge den valutakurstype, der indeholder de valutaer og valutakurser, der skal gælde for kontoen. Denne tabel over valutaer og valutakurser vil blive anvendt til faktiske data i Økonomirapportering.
 - I feltet **Valutaomregningstype** skal du vælge metoden, der bruges til at beregne valutakursen for kontoen. Denne valutametode bruges til både faktiske og budgetterede data i Økonomirapportering.
 
-![Hovedkonti i Økonomirapportering](./media/Financial-reporting-main-accounts.png "Hovedkonti i i Økonomirapportering")
+![Hovedkonti i Økonomirapportering](./media/Financial-reporting-main-accounts.png "Hovedkonti i Økonomirapportering")
 
 For budget-, budgetstyrings- og budgetplanlægningsdata defineres valutakurstypen på siden **Finans**. Denne tabel skal bruges til at trække valutakurserne, og den valutaomregningstype, der er tildelt til kontoen, bruges.
 
@@ -225,4 +224,3 @@ For at få korrekt omregnede beløb, når valutaer bruges, bruger Økonomirappor
 Du kan finde flere oplysninger om konsolidering og valutaomregning i det overordnede emne til dette emne, [Økonomiske konsolideringer og valutaomregning](./financial-consolidations-currency-translation.md).
 
 Du kan få flere oplysninger om, hvordan du angiver oplysninger om konsolideringer online, under [Konsolidere online](./consolidate-online.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurationsnøgler og dataenheder"
-description: "Dette emne beskriver relationen mellem konfigurationsnøgler og dataenheder i Microsoft Dynamics 365 for Finance and Operations."
+title: Konfigurationsnøgler og dataenheder
+description: I dette emne beskrives relationen mellem konfigurationsnøgler og dataenheder i Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336468"
 ---
-
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnøgler og dataenheder
 
 [!include [banner](../includes/banner.md)]
@@ -96,4 +95,3 @@ Ved hjælp af metadataene for konfigurationsnøglen, der er opbygget under opdat
 Når du opdaterer konfigurationsnøgler på enheds-, tabel-eller feltniveau, skal enhedslisten i datastyringen opdateres. Denne proces sikrer, at systemet henter de nyeste konfigurationsnøgleindstillinger. Indtil enhedslisten opdateres, vises følgende advarsel på enhedens listeside. De opdaterede konfigurationsnøgleændringer træder i kraft, umiddelbart efter, at enhedslisten opdateres. Det anbefales, at du validerer eksisterende dataprojekter og job for at sikre, at de fungerer som forventet, når ændringerne i konfigurationsnøglerne sættes i kraft.
 
 ![Målfelter](./media/Target_fields_3.png)
-

@@ -1,13 +1,13 @@
 ---
 title: Konfigurere udligning
-description: "Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I dette emne beskrives de parametre, der bruges til udligning for både Kreditor og Debitor."
+description: Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I dette emne beskrives de parametre, der bruges til udligning for både Kreditor og Debitor.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319264"
 ---
-
 # <a name="configure-settlement"></a>Konfigurere udligning
 
 [!include [banner](../includes/banner.md)]
 
 Hvordan og hvornår transaktioner udlignes, kan det være indviklede emner, så det er vigtigt, at du forstår og definerer korrekte parametre for at opfylde virksomhedens behov. I dette emne beskrives de parametre, der bruges til udligning for både Kreditor og Debitor. 
 
-Følgende parametre påvirker den måde, udligninger behandles på i Microsoft Dynamics 365 for Finance and Operations. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
+Følgende parametre påvirker den måde, hvorpå udligninger behandles i Microsoft Dynamics 365 for Finance and Operations. Udligning er udligning af en faktura mod en betaling eller en kreditnota. Disse parametre er placeret i området **Udligning** på siderne **Debitorparametre** og **Kreditorparametre**.
 
 - **Automatisk udligning** – Angiv denne indstilling til **Ja**, hvis en transaktion automatisk skal udlignes mod andre åbne poster, når den bogføres. Hvis denne indstilling er angivet til **Nej**, kan brugerne manuelt kan udligne posteringer, når de angiver betalinger eller senere ved hjælp af siden **Udligne transaktioner**.
 - **Håndtering af kasserabat** – Angiv, hvordan et [kasserabat håndteres, når en faktura er overbetalt](cash-discount-handling-overpayments.md). Kasserabatten for en overbetaling kan reduceres, den kan blive behandlet som en forskel, eller den kan forblive på kontoen for debitoren eller kreditoren.
@@ -68,4 +67,3 @@ For at undgå yderligere regnskabsposter, debet og kredit på den samme finansko
 
 -   Organisationer bruger ofte faste dimensioner til at udfylde en økonomisk dimension, der er ikke påkrævet, med nuller. Dette er ofte tilfældet for statuskonti, f.eks.debitor/kreditor. Kontostrukturer kan bruges til at spore økonomiske dimensioner, der typisk udfyldes med nuller.  Du kan fjerne den økonomiske dimension for statuskonti, så du ikke behøver at bruge faste dimensioner.
 -   Hvis organisationen kræver faste dimensioner på debitor-/kreditorhovedkontoen, skal du finde en måde at bruge den faste standarddimension på betalingen, så den faste dimensionsværdi gemmes på kreditorposteringen for betalingen. På denne måde kan systemet rekonstruere debitor-/kreditorhovedkontoen, så de faste dimensionsværdier medtages. Den faste værdi kan defineres som en standardværdi på kreditorer eller kladdenavnet for betalingskladden.
-

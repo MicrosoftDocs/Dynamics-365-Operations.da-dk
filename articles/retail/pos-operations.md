@@ -1,40 +1,39 @@
 ---
 title: POS-handlinger, online og offline
-description: "Dette emne indeholder oplysninger om POS-handlinger i Microsoft Dynamics 365 for Retail. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand."
+description: Dette emne indeholder oplysninger om POS-handlinger i Microsoft Dynamics 365 for Retail. Det angiver, hvor i programmet handlingerne kan startes, og om de er tilgængelige i offlinetilstand.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353810"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>POS-handlinger, online og offline
 
 [!include [banner](includes/banner.md)]
 
-De fleste handlinger, som brugeren udfører på POS, betragtes som handlinger. Operationer konfigureres og administreres i Microsoft Dynamics 365 for Retail-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
+De fleste handlinger, som brugeren udfører på POS, betragtes som handlinger. Handlinger konfigureres og administreres i Microsoft Dynamics 365 for Retail-administration. Mange handlinger kan føjes til knapper i POS-knapmatrixen. Brugere kan derefter vælge knapperne for at aktivere handlingerne og udføre deres funktion. Andre handlinger indgår i POS-hovedprogrammet og kaldes enten fra på knapper på skærmen eller som en del af andre arbejdsgange eller processer.
 
-Følgende tabel indeholder detaljer om de handlinger, der er tilgængelige i Retail Modern POS og Cloud POS til Dynamics 365 for Retail. Tabellen angiver også, hvor i programmet handlingerne kan startes, og om de er tilgængelige, når POS er i offlinetilstand.
+Følgende tabel indeholder oplysninger om de handlinger, der er tilgængelige i Retail Modern POS og Cloud POS til Dynamics 365 for Retail. Tabellen angiver også, hvor i programmet handlingerne kan startes, og om de er tilgængelige, når POS er i offlinetilstand.
 
-Nogle handlinger er ikke tilgængelige i øjeblikket i Retail Modern POS eller Cloud POS til Dynamics 365 for Retail. Nogle af disse handlinger er specifikke for landestandarden og kræver yderligere udvidelser og konfiguration. Andre er funktioner fra Microsoft Dynamics AX 2012, der ikke understøttes i øjeblikket.
+Nogle handlinger er i øjeblikket ikke tilgængelige i Retail Modern POS eller Cloud POS til Dynamics 365 for Retail. Nogle af disse handlinger er specifikke for landestandarden og kræver yderligere udvidelser og konfiguration. Andre er funktioner fra Microsoft Dynamics AX 2012, der ikke understøttes i øjeblikket.
 
 Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 
@@ -43,7 +42,7 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 - **Velkomstskærm** – Handlingen kan startes fra POS-knapmatrixer, der er konfigureret på POS-velkomstskærmen.
 
 > [!NOTE]
-> De operationer, der er angivet nedenfor, gælder for den nyeste version af Dynamics 365 for Retail. Nogle operationer kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
+> De handlinger, der er angivet nedenfor, gælder for den nyeste version af Dynamics 365 for Retail. Nogle handlinger kan være ændret eller er måske ikke tilgængelige i tidligere versioner.
 
 | Id | Handling | Betegnelse | Knapmatrix | Transaktionsskærm | Velkomstskærm | Tilgængelig offline | Specifik for landestandard |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -199,4 +198,3 @@ Følgende kolonner angiver, hvor handlingerne kan aktiveres:
 § Når POS er offline, kan kun transaktioner i den aktuelle offlinedatabase tilbagekaldes til returnering.
 
 \*\* Når POS er offline, vises kun transaktioner i den aktuelle offlinekanaldatabase på kladden.
-

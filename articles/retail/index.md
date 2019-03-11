@@ -1,31 +1,30 @@
 ---
 title: Velkommen til Dynamics 365 for Retail
-description: Startside til Dynamics 365 for Retail
+description: Startside for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302071"
 ---
-
 # <a name="welcome-to-dynamics-365-for-retail"></a>Velkommen til Dynamics 365 for Retail
 
 [!include [banner](includes/banner.md)]
@@ -79,8 +78,8 @@ Du skal konfigurere flere komponenter for at definere relationerne mellem en but
 
 Hvis du er blevet bedt om at tilpasse dit miljø, eller hvis du er ansvarlig for at implementere og vedligeholde systemet, skal du se på det indhold til udvikleren og systemadministratoren, der er specifikt for Retail, samt det mere generelle indhold.
 
-- [Dynamics 365 for Retail til it-medarbejdere og udviklere](dev-itpro/dev-retail-home-page.md)
-- [Udvikling og administration til Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 for Retail til it-medarbejdere og -udviklere](dev-itpro/dev-retail-home-page.md)
+- [Udvikling og administration i Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -92,7 +91,6 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 
 Du kan finde meninger, nyheder og andre oplysninger om Retail og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog).
 
-Der er mange opslag om Retail i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Retail, gælder de samme koncepter stadig. Og procedurerne er også de samme som i den aktuelle version.
+Der er mange opslag om Retail i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Retail, gælder de samme koncepter stadig. og procedurerne er også de samme som i den aktuelle version.
 
-[Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
-
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.

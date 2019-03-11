@@ -1,32 +1,31 @@
 ---
 title: Startside for omkostningsstyring
-description: "Med omkostningsstyring kan du håndtere vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver."
+description: Med omkostningsstyring kan du håndtere vurdering og regnskab for råvarer, halvfabrikata, færdigvarer og igangværende arbejde-aktiver.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333938"
 ---
-
 # <a name="cost-management-home-page"></a>Startside for omkostningsstyring
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Du kan få adgang til lagerregnskab og produktionsregnskab fra arbejdsområderne
 
 Med produktionsregnskab kan du håndtere [Efterkalkulering af jobordre](production-order-cost-analysis.md) i produktionsordrer og batchordrer samt [Efterkalkuleret varetræk](backflush-costing.md) i lean manufacturing.
 
-Power BI-indholdet til [Omkostningsstyring](../../dev-itpro/analytics/cost-management-content-pack.md) giver ledelsesmæssig indsigt i lager og lager for igangværende forarbejdning (IGVF), og hvordan kostprisen flyder gennem dem efter kategori over tid. Oplysningerne kan også bruges som et detaljeret supplement til regnskabet.
+[Power BI-indholdet til Omkostningsstyring](../../dev-itpro/analytics/cost-management-content-pack.md) giver ledelsesmæssig indsigt i lager og lager for igangværende forarbejdning (IGVF), og hvordan kostprisen flyder gennem dem efter kategori over tid. Oplysningerne kan også bruges som et detaljeret supplement til regnskabet.
 
 ### <a name="additional-resources"></a>Yderligere ressourcer
 
@@ -71,5 +70,4 @@ Du kan finde meninger, nyheder og andre oplysninger om omkostningsstyring på [D
 
 #### <a name="task-guides"></a>Opgaveguider
 Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
-
 

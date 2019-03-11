@@ -1,13 +1,13 @@
 ---
 title: Midler i den offentlige sektor
-description: "Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed."
+description: Et middel er et selvafstemmende sæt regnskabsbøger, der bruges til at styre og overvåge den planlagte udnyttelse af ressourcerne, ofte i overensstemmelse med de retlige og administrative krav. Organisationer i den offentlige sektor bruger midler til at demonstrere deres økonomiske ansvarlighed.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerFund, LedgerFundType
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 96f94ac9c201aec5767fd29032126eeee9a04915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6a56254e04ce600a8674c7e82ffa09c7882affd1
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370305"
 ---
-
 # <a name="funds-in-the-public-sector"></a>Midler i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -106,7 +105,6 @@ Du kan finde flere oplysninger under følgende emner:
 [Oprettelse af en middeltype](tasks/create-fund-type-public-sector.md)
 
 [Konfigurere et middel](tasks/set-up-fund-public-sector.md)
-
 
 
 

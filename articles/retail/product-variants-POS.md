@@ -1,32 +1,31 @@
 ---
-title: "Lagersøgning i POS"
-description: "Dette emne beskriver de indstillinger, der er tilgængelige for visning af lageroplysninger i salgsstedet (POS)."
+title: Lagersøgning i POS
+description: Dette emne beskriver de indstillinger, der er tilgængelige for visning af lageroplysninger i salgsstedet (POS).
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314411"
 ---
-
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersøgning i POS
 
 [!include [banner](includes/banner.md)]
@@ -116,4 +115,3 @@ Følgende tabel indeholder flere oplysninger om yderligere handlinger, der er ti
 | Tilgængelighed         | Vis DTT-oplysninger for den valgte variantkombination for den valgte lokation. |
 | Vis alle lokationer   | Skift til standardvisningen for lagersøgning, og fremhæv oplysninger om lagertilgængeligheden for varevarianten på tværs af alle butikker i butikssøgergruppen, og i distributionscentre af tyden **Standard**. |
 | Få vist produktdetaljer | Omdiriger brugeren til siden **Produktdetaljer** for den tilknyttede produktmaster. |
-

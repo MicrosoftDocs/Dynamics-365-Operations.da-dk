@@ -1,13 +1,13 @@
 ---
 title: Budgetteret stilling
-description: "Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgifterne til en organisation. Stillingsprognoser gør det muligt at planlægge disse udgifter og inkludere dem i planlægningen af budgetter."
+description: Udgifter, der er relateret til arbejdere, udgør ofte en stor andel af udgifterne til en organisation. Stillingsprognoser gør det muligt at planlægge disse udgifter og inkludere dem i planlægningen af budgetter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356156"
 ---
-
 # <a name="position-forecasting"></a>Budgetteret stilling
 
 [!include [banner](../includes/banner.md)]
@@ -216,7 +215,6 @@ For både oprettelsesprocessen og udvælgelsesprocessen gælder det, at startdat
 Budgetplanlinjer viser kilden til budgetbeløbene (nummeret på prognosestillingen), men er ikke sammenkædet. Derfor vises ændringer i prognosestillingen ikke på budgetplanlinjen, og ændringer i budgetplanlinjen vises i prognosestillingen. Hvis du ændrer en prognosestilling og ønsker, at de opdateringer skal medtages i en budgetplan, skal du sætte prognosestillingen ind i planen igen. Men husk, at denne proces fjerner alle de linjer, hvor der prognosestillingen er blevet tildelt. Derfor fjernes alle ændringer, du har foretaget i disse linjer. 
 
 Hvis du vil se, hvilke budgetplaner en prognosestilling indgår i, kan du oprette rapporten **Budgetpositioner efter budgetplan**. Ellers kan du åbne faktaboksen **Tilknyttede budgetplaner** på prognosestillingen for at få vist planerne.
-
 
 
 

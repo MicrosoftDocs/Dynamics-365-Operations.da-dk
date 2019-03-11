@@ -5,9 +5,9 @@ author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326417"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere et statistisk budgetgrundlag
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Når prognosestrategien er indstillet til **Kopiér over historisk efterspørgse
 
 For at undgå forvirring i produktionsplanerne kan et bestemt antal prognosefilsæt fryses. Dette antal er angivet i feltet **Låsningstidshorisont**. På siden **Justeret behovsprognose** er cellerne for de frosne filsæt deaktiveret for at give en visuel indikation af, at disse værdier ikke bør ændres. 
 
-Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger tjenesten til behovsprognoser i Microsoft Dynamics 365 for Finance and Operations, er der fire måder, du kan udfylde hullerne på. Du kan vælge den ønskede metode ved at indstille parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametre til behovsprognoser**. 
+Startdatoen for behovsprognosegrundlaget behøver ikke at være den aktuelle dato eller en dato i fremtiden. Hvis du vil angive en anden startdato, skal du bruge feltet **Startdato for prognosegrundlag – Fra-dato**. I juni kan brugere for eksempel oprette en prognose for næste år. Da prognosefilsættet mellem slutningen af det historiske behov og starten på grundlaget mangler, er forudsigelserne muligvis ikke nøjagtige. Hvis du bruger den tjeneste til behovsprognoser i Microsoft Dynamics 365 for Finance and Operations, er der fire måder, hvorpå du kan udfylde hullerne. Du kan vælge den ønskede metode ved at indstille parameteren MISSING\_VALUE\_SUBSTITUTION på siden **Parametre til behovsprognoser**. 
 
 Feltet **Startdato for prognosegrundlag** - **Fra-dato** skal være indstillet til begyndelsen på filsættet, f.eks. i USA, en søndag, hvis prognosefilsættet er ugen. Systemet justerer automatisk feltet **Startdato for prognosegrundlag** - **Fra-dato**, så den matcher begyndelsen på prognosefilsættet. 
 
@@ -72,7 +71,6 @@ Hvis prognosen ikke er oprettet for en lang række varer, men for eksempel for �
 [Foretage manuelle reguleringer af prognosegrundlaget](manual-adjustments-baseline-forecast.md)
 
 [Godkende den justerede prognose](authorize-adjusted-forecast.md)
-
 
 
 

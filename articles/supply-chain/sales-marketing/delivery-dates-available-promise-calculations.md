@@ -1,13 +1,13 @@
 ---
 title: Ordretilsagn
-description: "Denne artikel indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer."
+description: Denne artikel indeholder oplysninger om ordretilsagn. Ordretilsagn hjælper med at love pålidelige leveringsdatoer til dine kunder og giver dig fleksibilitet, så du kan opfylde disse datoer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312341"
 ---
-
 # <a name="order-promising"></a>Ordretilsagn
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Du opretter en salgsordrelinje for produktet og angiver **150** for antallet.
 Da metoden for kontrol af leveringsdato er DTT, beregnes DTT-dataene for at finde den tidligst mulige afsendelsesdato. Baseret på indstillingerne bliver den forsinkede indkøbsordre og salgsordre behandlet, og det resulterende DTT-antal for den aktuelle dato er 0. I morgen, når den forsinkede indkøbsordre forventes at blive modtaget, beregnes DTT-antallet som mere end 0 (i dette tilfælde beregnes det som 125). Men 10 dage fra nu, hvor den ekstra indkøbsordre for 100 styk forventes at blive modtaget, vil DTT-antallet være mere end 150.  
 
 Derfor bliver afsendelsesdatoen indstillet til 10 dage fra nu, baseret på DTT-beregningen. Du fortæller derfor kunden, at det ønskede antal kan leveres om 10 dage.
-
 
 
 

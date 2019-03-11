@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette finanskonteringsgrupper til moms
-description: "Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgrupperne."
+description: Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgrupperne.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308339"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Oprette finanskonteringsgrupper til moms
 
@@ -48,5 +48,4 @@ Momsen beregnes og bogføres på hovedkonti, der er angivet i finanskonteringsgr
 11. Vælg i feltet Debitor, kasserabat den hovedkonto, der skal bogføres kasserabat på for de momskoder, der er tilknyttet denne finanskonteringsgruppe.
     * Det er valgfrit, og hvis der ikke angives, bruges den hovedkonto på kasserabatkoderne. Det kan være nyttigt at bruge forskellige konti pr. finanskonteringsgruppe, hvis bruger reverse momsen på indstilling af kasserabat på momsgrupper.  
 12. Klik på Gem.
-
 

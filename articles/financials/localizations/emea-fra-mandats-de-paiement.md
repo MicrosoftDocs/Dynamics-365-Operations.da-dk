@@ -1,13 +1,13 @@
 ---
 title: Mandats de paiement i den offentlige sektor i Frankrig
-description: "Mandat de paiement bruges af direktøren for at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet. Mandatet opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle."
+description: Mandat de paiement bruges af direktøren for at underrette bogholderen om, at organisationen er forpligtet til at betale et bestemt beløb til en anden enhed, og til at godkende, at bogholderen betaler beløbet. Mandatet opretholder en nødvendig stram adskillelse mellem direktørens operationelle rolle og bogholderens regnskabsrolle.
 author: rschloma
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 57f6285b403ba68fd9795836dceef1fae2067974
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 930a18ec4f2ad8db1295466f83e2b9723478a5a8
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370196"
 ---
-
 # <a name="mandats-de-paiement-in-the-public-sector-in-france"></a>Mandats de paiement i den offentlige sektor i Frankrig
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Hvis du vil sende mandater til bogholderen til betaling, indsamler direktøren d
 Fra siden **Vedligehold mandats de paiement** eller fra fanen **Mandat de paiement** på siden for ventende kreditorfakturaer eller åbne kreditorfakturaer kan bogholderen acceptere eller afvise mandats eller sætte dem på hold. Når et mandat er blevet afvist, ændres direktørstatus til **Ikke gennemset**, og mandat- og bordereau de mandat-numre fjernes.
 
 ## <a name="using-the-database-inquiry-page"></a>Brug af databaseforespørgselssiden
-For at åbne databaseforespørgselssiden skal du på siden **Vedligehold mandats de paiement** angive, om du vil arbejde med ventende eller bogførte fakturaer og hvilke datoer, du vil vælge fakturaer fra. Klik derefter på **Hent linjer**. Dette åbner siden **Database****forespørgsel**, hvor du kan angive kriterierne for de fakturalinjer, du vil hente. Når du lukker formularen, hentes alle fakturalinjer, der opfylder de kriterier, der er valgt, til gitteret. Linjer fra fakturaer, der er ved at blive redigeret, kan ikke hentes. **Tip**! Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
+For at åbne databaseforespørgselssiden skal du på siden **Vedligehold mandats de paiement** angive, om du vil arbejde med ventende eller bogførte fakturaer og hvilke datoer, du vil vælge fakturaer fra. Klik derefter på **Hent linjer**. Dette åbner siden **Database** **forespørgsel**, hvor du kan angive kriterierne for de fakturalinjer, du vil hente. Når du lukker formularen, hentes alle fakturalinjer, der opfylder de kriterier, der er valgt, til gitteret. Linjer fra fakturaer, der er ved at blive redigeret, kan ikke hentes. **Tip**! Brug følgende kriterier på databaseforespørgselssiden for at hente linjerne.
 
 - Fakturalinjer, der ikke er gennemset af direktøren.
 
@@ -72,7 +71,6 @@ For at åbne databaseforespørgselssiden skal du på siden **Vedligehold mandats
   | Tabellen  | Afledt tabel | Felt                        | Afgrænsning   |
   |--------|---------------|------------------------------|------------|
   | Mandat | Mandat        | Bogholders acceptstatus | "Afvist" |
-
 
 
 

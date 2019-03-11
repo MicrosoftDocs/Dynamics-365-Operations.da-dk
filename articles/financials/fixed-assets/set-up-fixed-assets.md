@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere anlægsaktiver"
-description: "Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver."
+title: Konfigurere anlægsaktiver
+description: Dette emne indeholder en oversigt over opsætning af modulet Anlægsaktiver.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 126d011301fbc6e228a9824929e559984e0e56cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 8810c131adf35ecc58f74c1d232a028f82ad3ccc
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/17/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311881"
 ---
-
 # <a name="set-up-fixed-assets"></a>Konfigurere anlægsaktiver
 
 [!include [banner](../includes/banner.md)]
@@ -85,4 +84,3 @@ Du kan konfigurere årsagskoder, så de er nødvendige for ændringer af et anl�
 Endelig kan du under fanen **Nummerserier** definere nummerserier for anlægsaktiver. Nummerserien for **anlægsaktiver** kan tilsidesættes af nummerserien for **anlægsaktivgruppen**, hvis den er angivet.
 
 Du kan finde flere oplysninger under [Oprette et anlægsaktiv](tasks/create-fixed-asset.md).
-

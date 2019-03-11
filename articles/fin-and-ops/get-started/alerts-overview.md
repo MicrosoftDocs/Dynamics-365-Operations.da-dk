@@ -1,13 +1,13 @@
 ---
-title: "Påmindelser"
-description: "Dette emne indeholder generelle oplysninger om batchbehandling af påmindelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen."
+title: Påmindelser
+description: Dette emne indeholder en generel beskrivelse af påmindelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367449"
 ---
-
 # <a name="alerts"></a>Påmindelser
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>Om påmindelser
-Påmindelser udgør et beskedsystem for kritiske hændelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen. Du kan nemt oprette dit eget sæt påmindelsesregler, så du bliver påmindet om forfaldne leveringer, slettede ordrer, ændrede priser eller andre hændelser, du skal reagere på.
+Påmindelser udgør et notifikationssystem for kritiske hændelser i Microsoft Dynamics 365 for Finance and Operations. Du kan bruge påmindelser til at holde dig orienteret om de hændelser, du vil holde styr på i løbet af arbejdsdagen. Du kan nemt oprette dit eget sæt påmindelsesregler, så du bliver påmindet om forfaldne leveringer, slettede ordrer, ændrede priser eller andre hændelser, du skal reagere på.
 
 I ressourceplanlægning (ERP) er der flere typiske scenarier, hvor påmindelsesfunktionen i Finance and Operations kan bruges. Her er nogle eksempler.
 
@@ -78,4 +77,3 @@ En påmindelsesregel har fem komponenter
 ## <a name="email-notifications-from-alerts"></a>E-mail-beskeder fra påmindelser
 
 E-mail-beskeder fra påmindelser er ikke aktiveret endnu. Dette vil blive aktiveret i en senere opdatering.
-

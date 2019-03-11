@@ -1,13 +1,13 @@
 ---
-title: "Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)"
-description: "Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016."
+title: Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
+description: I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334881"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheder eller ændringer i Dynamics AX 7.0 (februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikel beskriver funktioner, der er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016.
+I denne artikel beskrives funktioner, der enten er nye eller ændrede i Microsoft Dynamics AX 7.0. Denne version indeholder både platformen og programfunktioner og blev udgivet i februar 2016.
 
 ## <a name="cost-management"></a>Omkostningsstyring
 
@@ -213,14 +212,14 @@ Denne funktion fungerer uafhængigt af andre efterkalkulationsmetoder, der er kn
 <td>Du kan nu få vist finansrapporter uden at skulle åbne en anden klient/et andet program.</td>
 </tr>
 <tr>
-<td>Udskrive finansrapporter (Management Reporter) fra Microsoft Dynamics AX-klienten.</td>
+<td>Udskrive økonomirapporter (Management Reporter) fra Microsoft Dynamics AX-klienten.</td>
 <td>Ved udskrivning af en rapport bruges browserens udskriftsindstillinger, og kun det, brugeren kan se på skærmen, udskrives.</td>
 <td>Brugeren kan vælge detaljeniveau og sideopsætning for en rapport ved hjælp af indstillingen Udskriv i den finansielle rapport i Dynamics AX-klienten.</td>
 <td>Rapporter udskrives på den måde, brugerne forventer, i stedet for at udskrive en webside.</td>
 </tr><tr>
 <td>Analyser økonomiske data ved hjælp af Power BI-indholdet "Overvågning af økonomisk performance".</td>
 <td>Ikke ledig</td>
-<td>Vælg på PowerBI.com <strong>Hent data</strong>, og vælg derefter indholdspakken <strong>Dynamics AX – økonomisk performance</strong>. Angiv URL-adressen til dit Dynamics AX slutpunkt for at se dine data afspejlet i dashboardet.</td>
+<td>Vælg <strong>Hent data</strong> på PowerBI.com, og vælg derefter indholdspakken <strong>Dynamics AX – Økonomisk performance</strong>. Angiv URL-adressen til dit Dynamics AX slutpunkt for at se dine data afspejlet i dashboardet.</td>
 <td>Med tre eller fire klik kan organisationer installere et Power BI-dashboard, som indeholder vigtige finansielle data. Indholdet kan tilpasses af organisationen.</td>
 </tr>
 <tr>
@@ -322,7 +321,7 @@ Denne funktion fungerer uafhængigt af andre efterkalkulationsmetoder, der er kn
 <tr>
 <td>Få adgang til automatiseret hjælp (opgaveguider) og emner ved at klikke på <strong>Hjælp</strong>.</td>
 <td>Hjælpesystemet i AX 2012 leder til HTML-emner, der er gemt på en lokal webserver. Kunder og partnere kan oprette deres egen Hjælp.</td>
-<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). Hjælp-systemet viser også emner fra webstedet Microsoft Docs. Yderligere oplysninger finder du i afsnittet <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Hjælp - Introduktion</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nye opgaveguider er tilgængelige (februar 2016)</a>.</td>
+<td>Hjælp-systemet i den aktuelle version af Dynamics AX viser opgaveguider, der er gemt i BPM til Microsoft Dynamics Lifecycle Services (LCS). Hjælp-systemet viser også emner fra webstedet Microsoft Docs. Du kan finde flere oplysninger i afsnittet <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Hjælp - Introduktion</a> og <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Nye opgaveguider er tilgængelige (februar 2016)</a>.</td>
 <td>Opgaveguider indeholder en automatiseret, interaktive oplevelse, der fører dig gennem trinene i en opgave eller forretningsproces. Du kan downloade og tilpasse opgavehjælpelinjer, som Microsoft leverer. Emnet giver en hurtigere og mere fleksibel måde at oprette, levere og opdatere produktdokumentationen. Derfor hjælper den med at sikre, at du har adgang til de seneste tekniske oplysninger.</td>
 </tr>
 </tbody>
@@ -550,7 +549,7 @@ Der er ikke blevet tilføjet nye funktioner.
 | Advare brugeren, hvis en salgsordre eller produktionsordre ikke klar til levering på den planlagte dato. | Advarsler, der oprettes ved varedisponering, kaldes *terminssætninger*. *Termin* er en kontrakt mellem to parter om køb eller salg af et aktiv til en pris, der er aftalt i dag (*terminsprisen*), selvom levering og betaling foregår på et fremtidigt tidspunkt (*leveringsdatoen*). | *Terminssætninger* og *terminsdatoer* er blevet omdøbt til henholdsvis *beregnede forsinkelser* og *forsinkelsesdatoer*. | Den terminologi, der blev brugt i AX 2012, var unøjagtig og har ført til forkerte oversættelser. |
 | Få hurtig indsigt i status for en varedisponeringskørsel, hastende planlagte ordrer og ordreforslag, der medfører forsinkelser. | Oplysningerne er tilgængelige, men de er spredt over flere formularer. | Arbejdsområdet **Varedisponering** byder på hurtige oplysninger om, hvor den sidste varedisponeringskørsel blev fuldført, om der opstod fejl, hvad de vigtigste ordreforslag er og hvilke ordreforslag medføre forsinkelser. | Du får fordelen af den oversigt, arbejdsområdet viser. Relevante oplysninger er sammensat i en vejledning for varedisponering, som forbedrer produktiviteten. |
 | Bruge Excel til at opdatere behovsprognoser. | Ikke ledig | Du kan drage fordel af problemfri integration med Microsoft Excel, når du skriver behovsprognoser, opdatere og slette behovsprognoser. | Det hjælper med at øge effektiviteten og produktiviteten. |
-| Beregne fremtidigt behov og oprette behovsprognoser baseret på historiske transaktionsdata. | I Microsoft Dynamics AX 2012 R3 bruges behovsmodeller i Microsoft SQL Server Analysis Service til at oprette behovsprognoseforudsigelser. | Vurdere fremtidige behov ved hjælp af funktionerne og udvidelsesmulighederne i en Microsoft Azure Machine Learning skytjeneste. Det er let at bruge og udvide prognosemodellerne i Machine Learning til at opfylde kundekrav. Tjenesten udfører valg på grundlag af bedste match-modellen og tilbyder nøgletal (KPI'er), der kan bruges til at beregne prognosenøjagtigheden. | Genererer mere nøjagtige prognoser ved hjælp af Machine Learning-teknikker. |
+| Beregne fremtidigt behov og oprette behovsprognoser baseret på historiske transaktionsdata. | I Microsoft DynamicsAX 2012 R3 bruges budgetmodeller i Microsoft SQL Server Analysis Service til at oprette behov behovsprognoser. | Vurdere fremtidige behov ved hjælp af funktionerne og udvidelsesmulighederne i en Microsoft Azure Machine Learning skytjeneste. Det er let at bruge og udvide prognosemodellerne i Machine Learning til at opfylde kundekrav. Tjenesten udfører valg på grundlag af bedste match-modellen og tilbyder nøgletal (KPI'er), der kan bruges til at beregne prognosenøjagtigheden. | Genererer mere nøjagtige prognoser ved hjælp af Machine Learning-teknikker. |
 | Optimere ordredato og antal baseret på en visuel oversigt over relaterede handlinger fra kørsel af behovsplanlægning. | Diagrammet med oversigt over handlinger er tilgængeligt, men viser alle relaterede handlinger. Når der anvendes handlinger, forsvinder de straks fra visningen. | Handlingsdiagrammet giver et bedre overblik. Det omfatter indstillinger, der gør det muligt kun at vise anvendte handlinger og direkte relaterede handlinger. Når handlinger udføres, vises de nedtonet, men vises stadig. Derfor bevares oversigten. Yderligere oplysninger er føjet til handlingsdiagrammet for at vise dataene på én side. | Du kan drage fordel af forbedringen af produktiviteten, fordi du kun fokuserer på de relevante handlinger. |
 
 ## <a name="procurement-and-sourcing"></a>Indkøb og forsyning
@@ -559,7 +558,7 @@ Der er ikke blevet tilføjet nye funktioner.
 |------------------|------------------|-----------------|------------------------|
 | Bruge arbejdsområdet **Klargøring af indkøbsordrer** til at få hurtig indsigt i status for indkøbsordrer, der er ved at blive forberedt. | Understøttes ikke | Arbejdsområdet **Klargøring af indkøbsordrer** viser en oversigt over ordrer fra det tidspunkt, hvor de blev oprettet som kladde og sporet via arbejdsgang for godkendelsestilstande og fremad mod bekræftelse. | Din indkøbsafdeling behøver ikke længere at søge oplysninger fra flere sider, men nu er omfattet af den oversigt, arbejdsområdet viser. |
 | Bruge arbejdsområdet **Indkøbsordre, modtagelse og opfølgning** for at få hurtig indsigt i indkøbsordrer, der afventer tilgang, for at hjælpe med opfølgning. | Understøttes ikke | Arbejdsområdet **Indkøbsordre, modtagelse og opfølgning** viser en oversigt over bekræftede indkøbsordrer, der har ventende modtagelser eller leverancer. Arbejdsområdet indeholder lister over forfaldne modtagelser og afventende tilgange for at hjælpe med proaktiv gennemgang og opfølgning fra leverandøren. Arbejdsområdet viser også indkøbsordrer, hvor modtagelsesregistrering er sket på lageret, for at sikre, at modtagelsen bogføres. Returvarer fra indkøbsordrer, som endnu ikke er leveret, er også tilgængelige til gennemsyn. | Din indkøbsafdeling får fordelen af den oversigt, arbejdsområdet viser. Relevante oplysninger er sammensat i en vejledning for opfølgning, som forbedrer produktiviteten. |
-| Sende indkøbsordrer til bekræftelse til en kreditorportal, som Dynamics AX-klienten er vært for. Lad kreditoren bekræfte eller afvise. | Understøttes ikke | Grænsefladen i kreditorportalen gør det muligt for kreditorer at modtage indkøbsordrer, der skal bekræftes eller afvises. Den gør det også muligt for kreditoren at få et overblik over alle bekræftede indkøbsordrer på en konto. Indkøberen kan sende en indkøbsordre og anmode om en bekræftelse fra kreditoren. Kreditoren skal være en registreret Microsoft Azure Active Directory-bruger (Azure AD) i Dynamics AX, en kontakt hos kreditoren og har en dedikeret sikkerhedsrolle. | Din indkøbsafdeling får fordelen af reduceret papirarbejde og manuel styring af svar på indkøbsordrer, når de strømmer direkte ud i systemet. Én kilde til sandheden reducerer misforståelser mellem kunde og leverandør. |
+| Sende indkøbsordrer til bekræftelse til en kreditorportal, som Dynamics AX-klienten er vært for. Lad kreditoren bekræfte eller afvise. | Understøttes ikke | Grænsefladen i kreditorportalen gør det muligt for kreditorer at modtage indkøbsordrer, der skal bekræftes eller afvises. Den gør det også muligt for kreditoren at få et overblik over alle bekræftede indkøbsordrer på en konto. Indkøberen kan sende en indkøbsordre og anmode om en bekræftelse fra kreditoren. Kreditoren skal være en registreret Microsoft Azure Active Directory (Azure AD)-bruger i Dynamics AX, en kontakt hos kreditoren og har en dedikeret sikkerhedsrolle. | Din indkøbsafdeling får fordelen af reduceret papirarbejde og manuel styring af svar på indkøbsordrer, når de strømmer direkte ud i systemet. Én kilde til sandheden reducerer misforståelser mellem kunde og leverandør. |
 
 ## <a name="projects"></a>Projekter
 
@@ -624,7 +623,7 @@ Arbejdsområdet <strong>Administration af kataloger</strong> giver følgende fun
 <ul>
 <li>Oprette og konfigurere nye kanaler og relaterede objekter.</li>
 <li>Administrere daglige aktiviteter i butikken.</li>
-<li>Behandle detailtransaktioner i Microsoft Dynamics AX, generere detailopgørelser og opdatere Microsoft Dynamics AX-lager og regnskaber.</li>
+<li>Behandle detailtransaktioner i Microsoft Dynamics AX, generere detailopgørelse og opdatere Microsoft Dynamics AX-lager og regnskaber.</li>
 </ul>
 </td>
 <td>Med arbejdsområdet <strong>Installation af kanal</strong> kan du udføre følgende opgaver:
@@ -632,7 +631,7 @@ Arbejdsområdet <strong>Administration af kataloger</strong> giver følgende fun
 <li>Oprette nye kanaler og relaterede objekter.</li>
 <li>Spore status for konfiguration af detailbutik.</li>
 <li>Tage de nødvendige trin for at fuldføre en opgave eller angive oplysninger til fuldførelse af opgaven.</li>
-<li>Spore status for enheder og direkte kontrollere og hente MPOS-programinstallationen (Retail moderne POS) i butikker.</li>
+<li>Spore status for enheder og direkte kontrollere og hente Retail Modern POS (MPOS)-programinstallationen i butikker.</li>
 <li>Få adgang til alle relaterede sider.</li>
 </ul>Med arbejdsområdet 
 <strong>Detailbutiksstyring</strong> kan du udføre følgende opgaver:
@@ -671,7 +670,7 @@ Arbejdsområdet <strong>Administration af kataloger</strong> giver følgende fun
 <td>Dataenheder giver kunder mulighed for at foretage metadatabaseret import og eksport af data. Med OData-enheder kan kunder også integrere Dynamics AX med tredjepartsprogrammer.</td>
 </tr>
 <tr>
-<td>Udføre intelligent analyse ved hjælp af BI-rapporter fra Dynamics AX Microsoft og POS-klienten.</td>
+<td>Udføre intelligent analyse ved hjælp af BI-rapporter fra Microsoft Dynamics AX og POS-klienten.</td>
 <td>Mere end 25 administrationsrapporter og fem rapporter på kanalsiden er tilgængelige.</td>
 <td>Mere end 30 administrationsrapporter og 10 rapporter på kanalsiden er tilgængelige.</td>
 <td>Med disse rapporter giver kunder mere BI til at forudsige tendenser, afdække indsigt og løbende få optimal drift.</td>
@@ -679,7 +678,7 @@ Arbejdsområdet <strong>Administration af kataloger</strong> giver følgende fun
 <tr>
 <td>Analyser detailkanalsalgsdata ved hjælp af Power BI-indholdet "Monitor Retail Channel Performance".</td>
 <td>Ikke ledig</td>
-<td>Vælg på PowerBI.com, <strong>Hent data</strong>, og vælg derefter indholdspakken <strong>Dynamics AX – detailkanalydelse</strong>. Angiv URL-adressen til dit Dynamics AX slutpunkt for at se dine data afspejlet i dashboardet.</td>
+<td>Vælg <strong>Hent data</strong> på PowerBI.com, og vælg derefter indholdspakken <strong>Dynamics AX – Retail Channel Performance</strong>. Angiv URL-adressen til dit Dynamics AX slutpunkt for at se dine data afspejlet i dashboardet.</td>
 <td>Med tre eller fire klik kan organisationer installere et Power BI-dashboard, som indeholder vigtige finansielle data. Indholdet kan tilpasses af organisationen. Desuden kan brugere integrere Power BI-dashboardfelter i deres personlige arbejdsområder i Dynamics AX, så de kan få et overblik over analyseoplysninger.</td>
 </tr>
 <tr>
@@ -734,13 +733,13 @@ Retail Server og administration af data gør det muligt for forbrugere og virkso
 <td>Den indeholder hosted og skalerbar e-handelstjenester, der kan bruges med tredjeparts onlinebutikker.</td>
 </tr>
 <tr>
-<td>Flyt data mellem Microsoft Dynamics AX-administration og kanaler ved hjælp af Commerce Data Exchange.</td>
-<td>Commerce Data Exchange er et system, der overfører data mellem Microsoft Dynamics AX og detailkanaler, som f.eks. onlinebutikker eller fysiske butikker. Du kan finde flere oplysninger under <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Flytte data mellem Microsoft Dynamics AX-administration og kanaler ved hjælp af Commerce Data Exchange.</td>
+<td>Commerce Data Exchange er et system, som overfører data mellem Microsoft Dynamics AX og detailkanaler, som f.eks. onlinebutikker eller fysiske butikker. Du kan finde flere oplysninger i <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Der er funktionel paritet med Microsoft Dynamics AX 2012 CU8. Men bemærk følgende oplysninger:
 <ul>
 <li>Commerce Data Exchange er blevet omarbejdet til skyen.</li>
 <li>Asynkron tjeneste bruger direkte databaseadgang til kanaldatabasen.</li>
-<li>Commerce Data Exchange: Real-time Service er placeret som en brugerdefineret Microsoft Dynamics AX-tjeneste.</li>
+<li>Commerce Data Exchange: Real-time Service bruger en Microsoft Dynamics AX-kundeservice som vært.</li>
 <li>MPOS håndterer synkronisering mellem offlinedatabaser og Retail Server.</li>
 </ul></td>
 <td>Commerce Data Exchange er blevet omarbejdet til skyplatformen. Det styrer fortsat data mellem Microsoft Dynamics AX og detailkanaler, som f.eks. onlinebutikker eller fysiske butikker.</td>
@@ -762,7 +761,7 @@ Retail Server og administration af data gør det muligt for forbrugere og virkso
 <td>Ikke ledig</td>
 <td>Følgende funktionalitet leveres:
 <ul>
-<li>Forbedret sikkerhed ved Azure AD-baseret aktivering til skyen.</li>
+<li>Forbedret sikkerhed gennem Azure AD-baseret aktivering til skyen.</li>
 <li>Forbedret sikkerhed til administration af token.</li>
 <li>Forbedret pålidelighed, fejlfinding og fejlmeddelelser under aktivering</li>
 <li>Forenklede it-administrationsopgaver, der vedrører aktivering.</li>
@@ -823,7 +822,7 @@ Retail tilbyder fængslende mobiloplevelser hvor som helst, når som helst og p�
 <li>Plukke og modtage ordrer og udføre statusoptællinger.</li>
 <li>Få vist butiksrapporter.</li>
 </ul></td>
-<td>Funktionel paritet med AX 2012 MPOS leveres. Dette inkluderer følgende funktioner:
+<td>Der er funktionel paritet med AX 2012 MPOS. Dette inkluderer følgende funktioner:
 <ul>
 <li>Kundeopslag på tværs af butikker/kanaler.</li>
 <li>Muligheden for at oprette kundeordrer uden adgang til Real-time Service.</li>
@@ -966,7 +965,7 @@ Der er en forbedret "low-touch"-klientkomponentinstallation via selvbetjeningsin
 <td>Skyinstallationstjenester giver følgende fordele:
 <ul>
 <li>Væsentligt reduceret implementeringsindsats og -kompleksitet for Retail HQ-komponenter.</li>
-<li>Oprindelig installation til Microsoft Azure offentlig sky.</li>
+<li>Oprindelig installation til den offentlige sky i Microsoft Azure.</li>
 <li>Forbedret selvbetjeningsinstallationen af komponenter i butikken for at gøre konfiguration lettere og mere intuitiv</li>
 </ul></td>
 </tr>
@@ -1034,4 +1033,3 @@ Der er ikke blevet tilføjet nye funktioner.
 [Nyheder eller ændringer](whats-new-changed.md)
 
 [Nye opgaveguider er tilgængelige (februar 2016)](new-task-guides-available-february-2016.md)
-

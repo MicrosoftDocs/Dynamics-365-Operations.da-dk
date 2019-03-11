@@ -1,13 +1,13 @@
 ---
-title: "Tilbageføre en kreditorbetaling"
-description: "I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor."
+title: Tilbageføre en kreditorbetaling
+description: I denne artikel beskrives forskellene mellem tilbageførsel, sletning, annullering og afvisning af en betaling. Derudover forklarer den de to metoder til at tilbageføre en check til kreditor.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankChequeTable, LedgerJournalTransBankChequeReversal, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 019b765cd1e9fa00078018354f0d0792b97faba6
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329614"
 ---
-
 # <a name="reverse-a-vendor-payment"></a>Tilbageføre en kreditorbetaling
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Hvis den tilbageførte check blev udstedt til en debitorrefusion, vil følgende 
 
 -   Der bogføres en postering for betalingstilbageførslen mod debitorkontoen, og udligningen mellem den oprindelige betaling og det dokument, som betalingen oprindeligt blev udlignet mod, tilbageføres (der oprettes en negativ betaling).
 -   Der knyttes en betalingstilbageførsel til den oprindelige betaling. Feltet **Sidste udligningsbilag** på siden **Kundetransaktioner** for den oprindelige debitorbetaling opdateres, så det afspejler bilagsnummeret for den tilbageførte postering.
-
 
 
 

@@ -1,31 +1,30 @@
 ---
-title: "Produkt- og kundesøgning i POS"
-description: "Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail."
+title: Produkt- og kundesøgning i POS
+description: Dette emne indeholder en oversigt over de forbedringer, der er foretaget i produkt- og kundesøgefunktionen i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
+ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 50b0cec27e343b3b6aba464a04c9883160ab263a
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313583"
 ---
-
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøgning i POS
 
 [!include [banner](includes/banner.md)]
@@ -91,7 +90,7 @@ Den traditionelle kundesøgning kan være tidskrævende, da den søger på tvær
 
 ![Kundesøgningsgenveje](./media/SearchShortcutsPOS.png "Kundesøgningsgenveje")
 
-For at angive søgekriterier som genveje, skal administratoren åbne siden **Detailparametre** i Microsoft Dynamics 365 for Finance and Operations og derefter under fanen **POS-søgekriterie** vælge alle de kriterier, der skal vises som genveje.
+For at angive søgekriterier som genveje, skal administratoren åbne siden **Detailparametre** i Microsoft Dynamics 365 for Finance and Operations og derefter under fanen **POS-søgekriterier** vælge alle de kriterier, der skal vises som genveje.
 
 ![Konfigurere søgningsgenveje](./media/ConfigureShortcutsAX.png "Konfigurere søgningsgenveje")
 
@@ -102,4 +101,3 @@ Feltet **Visningsrækkefølge** bestemmer den rækkefølge, hvori genveje vises 
 
 > [!NOTE]
 > En brugerdefineret egenskab, der er føjet til fastteksten, påvirker ikke standardalgoritmen til kundesøgning. Med andre ord søger kundesøgningsalgoritmen ikke i den brugerdefinerede egenskab. Brugere kan kun bruge en brugerdefineret egenskab til søgninger, hvis den brugerdefinerede egenskab tilføjes som en genvej, eller hvis standardalgoritmen til søgning tilsidesættes.
-

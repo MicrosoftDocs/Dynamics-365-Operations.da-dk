@@ -1,13 +1,13 @@
---- 
-title: "Udarbejd løn-/kompensationsstruktur og -plan"
-description: "Denne opgaveguide fører dig gennem processen med at oprette en fast lønstruktur og sætte medarbejdere i stand til at blive tilmeldt strukturen via berettigelsesregler."
+---
+title: Udarbejd løn-/kompensationsstruktur og -plan
+description: Denne opgaveguide fører dig gennem processen med at oprette en fast lønstruktur og sætte medarbejdere i stand til at blive tilmeldt strukturen via berettigelsesregler.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332765"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Udarbejd løn-/kompensationsstruktur og -plan
 
@@ -74,5 +74,4 @@ Denne opgaveguide fører dig gennem processen med at oprette en fast lønstruktu
     * Vælg de kriterier, en medarbejder skal opfylde for at være berettiget til lønstrukturen. Kriterier kan omfatte en afdeling, fagforening, lokalitet (kompensationsområde), job, funktion, jobtype eller kompensationsniveau. Medarbejderen skal opfylde alle angivne kriterier for at være berettiget til lønstrukturen. Er der ikke angivet nogen kriterier, er alle medarbejdere berettiget til lønstrukturen. Hvis en medarbejder ikke opfylder de kriterier, der er angivet i berettigelsesreglen, eller er der ikke angivet en berettigelsesregel for en lønstruktur, vises lønstrukturen ikke i opslaget, når der oprettes en post for fast løn for en medarbejder.  
 7. Luk siden.
 8. Luk siden.
-
 

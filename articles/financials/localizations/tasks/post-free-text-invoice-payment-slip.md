@@ -1,13 +1,13 @@
---- 
-title: "Bogføre en fritekstfaktura med et indbetalingskort"
-description: "Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format."
+---
+title: Bogføre en fritekstfaktura med et indbetalingskort
+description: Du kan bogføre en fritekstfaktura med et vedhæftet indbetalingskort i det angivne format.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Denmark
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b693dd297ff644d39991c809ebaa0ac2903c5180
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370297"
 ---
 # <a name="post-a-free-text-invoice-with-a-payment-slip"></a>Bogføre en fritekstfaktura med et indbetalingskort
 
@@ -60,5 +60,4 @@ Denne funktionalitet er kun tilgængelig for juridiske enheder, hvis primære ad
 14. Klik på Bogfør.
 15. Klik på OK.
 16. Klik på OK.
-
 

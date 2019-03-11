@@ -1,13 +1,13 @@
 ---
-title: "Mobilarbejdsområdet Firmaadressekartotek"
-description: "Dette emne indeholder oplysninger om mobilarbejdsområdet Firmaadressekartotek, hvor brugerne kan se og kontakte andre medarbejdere i organisationen."
+title: Mobilarbejdsområdet Firmaadressekartotek
+description: Dette emne indeholder oplysninger om mobilarbejdsområdet Firmaadressekartotek, hvor brugerne kan se og kontakte andre medarbejdere i organisationen.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308615"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Mobilarbejdsområdet Firmaadressekartotek
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Firmaadressekartotek** på mobilenheder. I dette arbejdsområde kan brugerne se og kontakte andre medarbejdere i organisationen.
 
-Dette mobilarbejdsområde kan bruges med Microsoft Dynamics 365 for Unified Operations-mobilappen.
+Dette arbejdsområdet til mobilenheder kan bruges med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
 
 ## <a name="overview"></a>Overblik
 I mobilarbejdsområdet **Firmaadressekartotek** kan brugerne udføre disse opgaver:
@@ -77,7 +76,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Log på mobilappen
 1.  Start appen på din mobilenhed.
-2.  Angiv URL-adressen til din Microsoft Dynamics 365.
+2.  Angiv din Microsoft Dynamics 365 URL-adresse.
 3.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 4.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
@@ -91,4 +90,3 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 1.  I mobilappen skal du vælge mobilarbejdsområdet **Firmaadressekartotek**.
 2.  I feltet **Søg** skal du angive medarbejderens fornavn, efternavn, titel eller afdeling for at starte søgningen.
 3.  Vælg medarbejderen. Siden **Medarbejderprofil** vises. Oplysningerne på denne side omfatter medarbejderens fornavn, efternavn, titel og afdeling.
-

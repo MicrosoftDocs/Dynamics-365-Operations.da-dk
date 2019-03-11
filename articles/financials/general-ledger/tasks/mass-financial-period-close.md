@@ -1,13 +1,13 @@
---- 
+---
 title: Masseafslutning af regnskabsperiode
-description: "Denne procedure viser, hvordan du kan sætte en periode på hold eller permanent lukke en periode eller mere end én juridisk enhed ad gangen."
+description: Denne procedure viser, hvordan du kan sætte en periode på hold eller permanent lukke en periode eller mere end én juridisk enhed ad gangen.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a2988b7ab0837cc9a3e4f1c4eaf3fe6e219fa721
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8d7151cbcd02f9312ca6b0de5e27231a0b0dc9d6
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311375"
 ---
 # <a name="mass-financial-period-close"></a>Masseafslutning af regnskabsperiode
 
@@ -46,5 +46,4 @@ Denne procedure viser, hvordan du kan sætte en periode på hold eller permanent
 11. Vælg Opdater periodestatus, og angiv status til På hold, Åben eller Permanent lukket.
     * Åben angiver, at der kan bogføres til perioden, hvis brugeren har adgang. På hold betyder, at der ikke kan bogføres på perioden, men perioden kan genåbnes. Permanent lukket betyder, at perioden er lukket og ikke kan åbnes. Reguleringer kan ikke bogføres. Det anbefales ikke at indstille en periode til Permanent lukket, før alle reguleringer og revisioner er afsluttet.  
 12. Klik på Opdater.
-
 

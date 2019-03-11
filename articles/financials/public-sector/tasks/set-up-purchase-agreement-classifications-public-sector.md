@@ -1,13 +1,13 @@
---- 
-title: "Konfigurere klassifikationer for købsaftaler i den offentlige sektor"
-description: "Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler."
+---
+title: Konfigurere klassifikationer for købsaftaler i den offentlige sektor
+description: Købsaftaleklassifikationen gør det muligt at styre de administrative oplysninger, der findes i købsaftaler.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AgreementClassification
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8c7c36f348df39e9b91ddbc02237b3072c20e8ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 1827f885d188ae04d35748c83698db7801b8eee1
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370234"
 ---
 # <a name="set-up-purchase-agreement-classifications-in-the-public-sector"></a>Konfigurere klassifikationer for købsaftaler i den offentlige sektor
 
@@ -43,5 +43,4 @@ Denne procedure er oprettet for den franske offentlige sektor med data fra PSUS-
 7. Valgfrit: Vælg indstillingen Kræv direkte fakturering for at forhindre brug af aftræksordrer.
 8. Valgfrit: Vælg indstillingen Aktiviteter for at medtage oplysninger om opgaver og milepæle.
 9. Klik på Gem.
-
 

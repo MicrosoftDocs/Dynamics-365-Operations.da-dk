@@ -1,13 +1,13 @@
---- 
+---
 title: Definere kreditorbetalingsgebyrer
 description: Konfigurer kreditorbetalingsgebyrer.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399291a98ddc6b01fb08f7a5c629ec7a6f8acfbf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f62d07ffa1ee4a525f0f266922bc88e5ac8d5ada
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363194"
 ---
 # <a name="define-vendor-payment-fees"></a>Definere kreditorbetalingsgebyrer
 
@@ -58,5 +58,4 @@ Konfigurer kreditorbetalingsgebyrer. Denne opgave bruger demofirmaet USMF.
 17. I feltet Valuta for gebyr skal du vælge den valuta, som gebyret pålignes i.
     * Denne valuta er til gebyret. Betalingsvalutaen bruges til at definere, hvornår gebyrreglen bør pålignes vurderet ud fra betalingens valuta. Din bank kan for eksempel opkræve et gebyr, når der foretages en betaling i EUR, men alle andre betalinger pålignes ikke et gebyr.  
 18. Klik på Gem.
-
 

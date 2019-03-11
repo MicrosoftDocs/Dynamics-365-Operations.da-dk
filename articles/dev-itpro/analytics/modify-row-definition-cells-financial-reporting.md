@@ -1,13 +1,13 @@
 ---
-title: "Ændre rækkedefinitionsceller"
-description: "Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger."
+title: Ændre rækkedefinitionsceller
+description: Denne artikel beskriver de oplysninger, der kræves for hver celle i en rækkedefinition i en økonomirapport, og forklarer, hvordan du angiver disse oplysninger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323634"
 ---
-
 # <a name="modify-row-definition-cells"></a>Ændre rækkedefinitionsceller
 
 [!include [banner](../includes/banner.md)]
@@ -387,7 +386,7 @@ Du kan begrænse en række til en eksisterende kode. Kolonnedefinitionen skal in
 Nogle regnskabssystemer understøtter kontoattributter og transaktionsattributter i regnskaberne. Disse attributter fungerer som virtuelle kontosegmenter og kan indeholde yderligere oplysninger om kontoen eller transaktionen. Disse ekstra oplysninger kan være konto-id'er, batch-id'er, postnumre eller andre attributter. Hvis regnskabssystemet understøtter attributter, kan du bruge kontoattributter eller transaktionsattributter som rækkemodifikatorer i rækkedefinitionen. Du kan finde oplysninger om, hvordan du tilsidesætter rækkeoplysninger, i afsnittet "Tilsidesætte en kolonnedefinition" tidligere i denne artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angive et hyperlink til cellen Økonomiske dimensioner
-Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier, men du kan angive celler i et regneark i Microsoft Excel i stedet for eller sammen med segmentværdier eller dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**.
+Cellen **Link til økonomiske dimensioner** indeholder links til de økonomiske data, der skal medtages i hver række i en rapport. Denne celle indeholder dimensionsværdier, men du kan angive celler i et Microsoft Excel-regneark i stedet eller som tillæg til segmentværdier eller dimensionsværdier. Dialogboksen **Dimensioner** åbnes ved at dobbeltklikke på cellen **Link til økonomiske dimensioner**.
 
 > [!NOTE]
 > Report Designer kan ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }. Hvis du vil angive oplysninger for en række, der allerede findes i rækkedefinitionen, skal du tilføje oplysningerne i cellen **Link til økonomiske dimensioner**. Hvis du vil tilføje nye rækker, der indeholder hyperlinks til de økonomiske data, skal du bruge dialogboksen **Indsæt rækker fra** for at oprette nye rækker i rapportdefinitionen. Kolonnens titel ændres, afhængigt af hvordan kolonnen er konfigureret, som vist i følgende tabel.
@@ -456,10 +455,10 @@ Hvis du vil tilføje eller fratrække pengebeløbene på en konto fra pengebelø
 | Træk et interval af segmentværdier fra.                                                     | -Konto = \[1200:1205\]                                                                                       |
 | Træk et interval af segmentværdier, der indeholder jokertegn, fra.                    | -Konto = \[120?:130?\]                                                                                       |
 
-Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimensioner** til at anvende den korrekte formatering på dine hyperlinks til økonomiske data. Alle værdierne kan indeholde jokertegn (? eller \*). Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], {, eller }.
+Selvom du kan redigere kontiene direkte, kan du også bruge dialogboksen **Dimensioner** til at anvende den korrekte formatering på dine hyperlinks til økonomiske data. Alle værdierne kan indeholde jokertegn (? eller \*). Report Designer kan dog ikke vælge konti, dimensioner eller felter fra Microsoft Dynamics ERP-systemet, der indeholder et af følgende reserverede tegn: &, \*, \[, \], { eller }.
 
 > [!NOTE]
-> For at trække værdier fra, skal du sætte parenteser omkring værdierne. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer rapportdesigneren i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
+> Hvis du vil subtrahere værdier, skal du angive værdierne i parenteser. Hvis du for eksempel angiver **450?-(4509)**, vises det som **+ konto = \[4509\] - konto = \[450?\]**, og du instruerer rapportdesigneren i at trække beløbet for kontosegment 4509 fra beløbet for et kontosegment. der starter med 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Lægge konti til eller trække konti fra andre konti
 
@@ -533,4 +532,3 @@ Et dimensionsværdisæt er en navngivet gruppe af dimensionsværdier. Et dimensi
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-

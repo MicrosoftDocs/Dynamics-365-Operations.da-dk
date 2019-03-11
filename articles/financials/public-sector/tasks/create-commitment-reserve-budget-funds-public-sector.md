@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor
 description: Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sektor i Frankrig.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchCommitment_PSN
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Public sector
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 86d1da5329b4f9a977c67ae4d5534f1028f15d03
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e657c2093a56781a4ddc7527fb179e5e21095389
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370248"
 ---
 # <a name="create-a-commitment-to-reserve-budget-funds-for-the-public-sector"></a>Oprette et tilsagn om at reservere budgetmidler for den offentlige sektor
 
@@ -46,5 +46,4 @@ Tilsagn er kildedokumenter til budgetstyring, som bruges af den offentlige sekto
 13. Klik på Skift visning.
 14. Klik på Linjevisning.
 15. Klik på Gem.
-
 

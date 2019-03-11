@@ -1,13 +1,13 @@
---- 
+---
 title: Definere nye afdelinger
-description: "Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab."
+description: Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksomhed, f.eks. salg eller regnskab.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342839"
 ---
 # <a name="define-new-departments"></a>Definere nye afdelinger
 
@@ -51,5 +51,4 @@ Afdelinger er driftsenheder, der repræsenterer et funktionsområde i en virksom
     * Når du publicerer afdelingshierarkiet, kan du vælge, hvornår ændringerne skal træde i kraft. Ændringer kan være dateret i fremtiden. Du ved eksempelvis, at du i begyndelsen af regnskabsåret vil tilføje en ekstra afdeling. Du kan indstille ikrafttrædelsesdatoen til begyndelsen af regnskabsåret, så er ændringerne af hierarkiet gældende på denne dato.  
 16. Indtast en værdi i feltet Beskriv ændringer.
 17. Klik på Publicer.
-
 

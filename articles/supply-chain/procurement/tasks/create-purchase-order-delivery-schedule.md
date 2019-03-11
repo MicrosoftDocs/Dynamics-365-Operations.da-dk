@@ -1,13 +1,13 @@
---- 
-title: "Oprette en indkøbsordre med en leveranceplan"
-description: "Denne procedure viser, hvordan du opretter en leveranceplan til en indkøbsordre."
+---
+title: Oprette en indkøbsordre med en leveranceplan
+description: Denne procedure viser, hvordan du opretter en leveranceplan til en indkøbsordre.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0a9b7b233339d41605e1b115bd14a18b706ef226
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333823"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Oprette en indkøbsordre med en leveranceplan
 
@@ -75,5 +75,4 @@ Denne procedure viser, hvordan du opretter en leveranceplan til en indkøbsordre
     * Bemærk, hvordan produktkvitteringen oprettes for de to leverancelinjer og ikke den oprindelige ordrelinje. Hvis modtagelsen var blevet registreret på lagerstedet, ville det også blive registreret på linjerne i leveranceplanen.  
 7. Skjul sektionen Linjer.
 8. Klik på OK for at bogføre kvitteringen.
-
 

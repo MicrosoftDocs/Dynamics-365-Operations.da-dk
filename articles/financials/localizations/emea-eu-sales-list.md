@@ -5,9 +5,9 @@ author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370260"
 ---
-
 # <a name="eu-sales-list-reporting"></a>Rapportering til EU-listesystemet
 
 [!include [banner](../includes/banner.md)]
@@ -122,7 +121,7 @@ Følgende tabel viser de forudsætninger, der skal være på plads, før du star
 <li>Fanen <strong>Lande/områdeparametre</strong>: Identificer EU-medlemsstater. Opret en post på siden for hver EU-medlemsstat, og angiv følgende oplysninger:
 <ul>
 <li><strong>Land/område</strong> – Vælg et land/område.</li>
-<li><strong>Lande-/regionstype</strong> – Hvis værdien <strong>Land/område</strong> er det land/område, firmaet er registreret i, skal du vælge <strong>Indland</strong>. Hvis værdien <strong>Land/område</strong> er en anden EU-medlemsstat end det land/område, firmaet er registreret i, skal du vælge <strong>EU</strong>. Hvis værdien <strong>Land/område</strong> ikke er en EU-medlemsstat, skal du vælge <strong>Tredjeland/-område</strong>.</li>
+<li><strong>Lande-/regionstype</strong> – Hvis værdien <strong>Land/område</strong> er det land/område, firmaet er registreret i, skal du vælge <strong>Indland</strong>. Hvis værdien <strong>Land/område</strong> er en anden EU-medlemsstat end det land/område, firmaet er registreret i, skal du vælge <strong>EU</strong>. Hvis værdien <strong>Land/område</strong> er ikke en EU-medlemsstat, skal du vælge <strong>Tredjeland/-region</strong>.</li>
 </ul></li>
 <li>Fanen <strong>Nummerserier</strong>: På linjen, hvor værdien <strong>Reference</strong> er <strong>EU-listesystemet</strong>, skal du vælge en nummerseriekode.</li>
 </ul></td>
@@ -158,7 +157,6 @@ Du kan generere en **EU-listesystemet**-rapport ved hjælp af funktionen **Rappo
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Lukke EU-listesystemets rapporteringsperiode
 
 Når du har fuldført rapporteringsprocessen for en bestemt periode (f.eks. når skattemyndighederne har accepteret **EU-listesystemet** -rapporten), kan du markere ESL-poster, der er medtaget i rapporten for perioden, ved at angive **Rapporteringsstatus**-værdien til **Lukket**. Du kan angive denne status ved at bruge funktionen **Marker som lukket** på siden **EU-listesystemet**. Hvis du tilbagefører lukningen af perioden, kan du markere ESL-poster ved at angive **Rapporteringsstatus**-værdien til **Medtaget**. Disse poster kan derefter medtages i en **EU-listesystemet**-rapport igen. Du kan angive denne status ved at bruge funktionen **Marker som** **medtages** på siden **EU-listesystemet**.
-
 
 
 

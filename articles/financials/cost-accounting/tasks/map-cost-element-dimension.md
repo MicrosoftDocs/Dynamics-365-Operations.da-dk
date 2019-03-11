@@ -1,13 +1,13 @@
---- 
+---
 title: Tilknytte en dimension for omkostningselement
 description: En omkostningscontroller kan bruge denne procedure til at knytte en dimension for et omkostningselement til en dimension for et omkostningselement i den juridiske enhed for MXMF.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 52b9f6a5b71349d404fe9621b58f58aab843a71f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3ff31db3dbb6da9570bb85bbcaa3b444852d91d7
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308500"
 ---
 # <a name="map-a-cost-element-dimension"></a>Tilknytte en dimension for omkostningselement
 
@@ -43,5 +43,4 @@ En omkostningscontroller kan bruge denne procedure til at knytte en dimension fo
 10. Indtast eller vælg en værdi i feltet Til dimensionsmedlem.
     * I dette eksempel skal du vælge dimensionsmedlem 6001004 Telefono.  
 11. Klik på Gem.
-
 

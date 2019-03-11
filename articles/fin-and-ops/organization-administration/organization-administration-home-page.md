@@ -1,13 +1,13 @@
 ---
 title: Startside for organisationsadministration
-description: "Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Finance and Operations i din organisation."
+description: Dette emne peger på ressourcer, der kan hjælpe dig med at bruge Microsoft Dynamics 365 for Finance and Operations i din organisation.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332811"
 ---
-
 # <a name="organization-administration-home-page"></a>Startside for organisationsadministration
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne peger på indhold, der kan hjælpe avancerede brugere og administratorer med at konfigurere Microsoft Dynamics 365 for Finance and Operations. Dette indhold kan hjælpe dem med at konfigurere systemet til at arbejde uden problemer og effektivt i din organisation og virksomhed.
+Dette emne henviser til indhold, der kan hjælpe superbrugere og administratorer med at konfigurere Microsoft Dynamics 365 for Finance and Operations. Dette indhold kan hjælpe dem med at konfigurere systemet til at arbejde uden problemer og effektivt i din organisation og virksomhed.
 
 Meget af indholdet, der vises her, gælder for funktioner i modulet **Virksomhedsadministration**. Der findes dog nogle opgaver, f.eks. oprettelse og brug af en postskabelon, der kan udføres i alle moduler for at hjælpe organisationen med at køre mere effektivt.
 
@@ -103,4 +102,3 @@ Med postskabeloner kan du hurtigere oprette poster. Du kan oprette en postskabel
 - [Konfigurere dokumentstyring](configure-document-management.md)
 - [Konfigurere og sende mail](configure-email.md)
 - [Data om dato/klokkeslæt og tidszoner](date-time-zones.md)
-

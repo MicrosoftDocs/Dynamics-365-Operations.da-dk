@@ -1,13 +1,13 @@
 ---
 title: Formalisere forretningsprocesser
-description: "I dette emne forklares det, hvordan du kan bruge funktionen til forretningsprocesser til at oprette en skabelon til forretningsproces til processer, der skal fuldføres inden for organisationen."
+description: I dette emne forklares det, hvordan du kan bruge funktionen til forretningsprocesser til at oprette en skabelon til forretningsproces til processer, der skal fuldføres inden for organisationen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303795"
 ---
 # <a name="formalize-business-processes"></a>Formalisere forretningsprocesser
 
@@ -74,5 +74,4 @@ Hvis du vil oprette eller kopiere en forretningsprocesskabelon eller starte en f
 - Vælg **Start proces** for at starte den valgte forretningsproces, tildele opgaver og beregne forfaldsdatoer.
 
 For at få vist aktive processer og tilknyttede opgaver skal du åbne arbejdsområdet **Forretningsprocesser**.
-
 

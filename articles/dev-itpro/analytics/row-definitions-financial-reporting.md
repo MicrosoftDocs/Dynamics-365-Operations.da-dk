@@ -1,13 +1,13 @@
 ---
-title: "Rækkedefinitioner i Designer til økonomirapporter"
-description: "En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport. En rækkedefinition kan kombineres med kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer."
+title: Rækkedefinitioner i Designer til økonomirapporter
+description: En rækkedefinition er en rapportkomponent, eller dokumentkomponent, der angiver indholdet af hver række i en økonomirapport. En rækkedefinition kan kombineres med kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, så de danner en komponentgruppe, der kan bruges af flere firmaer.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350429"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Rækkedefinitioner i Designer til økonomirapporter
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Du kan oprette og ændre typografier for rapporten. Du kan derefter anvende diss
 
 ### <a name="format-row-text"></a>Formatere rækketekst
 
-Den formatering, der er angivet i rækkedefinitionen, tilsidesætter den formatering, der er angivet i kolonnedefinitionen og rapportdefinitionen. Du kan ændre tekstformatet ved hjælp af kontrolelementerne på formateringsværktøjslinjen. Disse kontrolelementer er standardkontrolelementer til Microsoft Windows.
+Den formatering, der er angivet i rækkedefinitionen, tilsidesætter den formatering, der er angivet i kolonnedefinitionen og rapportdefinitionen. Du kan ændre tekstformatet ved hjælp af kontrolelementerne på formateringsværktøjslinjen. Disse kontrolelementer er Microsoft Windows-standardkontrolelementer.
 
-1. Åbn den rækkedefinition, der skal ændres, i Report Designer.
+1. Åbn den rækkedefinition, der skal redigeres, i Rapportdesigner.
 2. Marker de celler, der skal formateres. Du kan markere flere celler ved at holde Ctrl-tasten nede, mens du markerer cellen.
 3. Klik på værktøjslinjeknappen for det format, du vil anvende. Hvis du for eksempel vil indrykke en række, skal du markere rækken og derefter klikke på **Forøg indrykning** ![Forøg indrykning](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Forøg indrykning") på værktøjslinjen.
 
@@ -189,4 +188,3 @@ For at gøre det lettere at få vist de kolonner, du arbejder på i rækkedefini
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-

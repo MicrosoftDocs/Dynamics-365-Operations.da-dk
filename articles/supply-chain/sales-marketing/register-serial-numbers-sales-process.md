@@ -1,13 +1,13 @@
 ---
 title: Registrere serienumre i salgsprocessen
-description: "Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang."
+description: Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler eller fakturaer under salgsprocessen. Denne funktionalitet er nyttig, hvis en virksomhed vil indsamle serienumre til service- og garantiformål men ikke behøver at gemme serienumre på lageret fra tilgang til afgang.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350406"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrere serienumre i salgsprocessen
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Dette emne forklarer, hvordan du kan registrere serienumre på følgesedler elle
 
 Mange virksomheder vil blot indsamle serienumre for service- og garantiformål og behøver ikke at gemme serienumre på lageret fra tilgang til afgang. I disse scenarier kan Microsoft Dynamics 365 for Finance and Operations lade dig registrere serienumre på følgesedler eller fakturaer, når produkterne sælges. Hvis produkterne på et senere tidspunkt returneres, kan du spore et produkt til en faktura for at finde ud af, om du har solgt produktet, og om servicen eller garantiforpligtelser er gældende.
 
-Du skal aktivere serienumre for salgsprocessen ved at vælge indstillingen **Aktiv i salgsproces** på siden **Sporingsdimensionsgrupper**. Derefter sker følgende i Microsoft Dynamics 365 for Finance and Operations:
+Du skal aktivere serienumre for salgsprocessen ved at vælge indstillingen **Aktiv i salgsproces** på siden **Sporingsdimensionsgrupper**. Følgende hændelser forekommer derefter i Microsoft Dynamics 365 for Finance and Operations:
 -   I oversigtspanelet **Serienumre** er indstillingen **Serienummerkontrol** valgt. Hvis denne indstilling er markeret, skal du registrere et serienummer for hver vare på følgesedlen eller fakturaen.
 -   Alle markeringer i sporingsdimensionsgruppen for serienumre fjernes, undtagen indstillingen **Blank afgang tilladt**. Du kan markere indstillingen **Blank afgang tilladt** for at tilsidesætte kontrollen af serienumre og tillade, at produkterne emballeres og faktureres uden registrering af serienumre.
 
@@ -58,8 +57,8 @@ Hvis et serienummer ikke kan læse eller scannes, kan du oprette en tom linje fo
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jeg rette eller ændre de serienumre, jeg har registreret for en salgsordre?
 Ja, du kan rette serienumre, hvis følgende betingelser er opfyldt:
--   **Fakturaer** – Du kan ændre serienumrene for de varer, du ikke har endnu faktureret. Følgesedlen opdateres derefter også. Hvis en salgsordrelinje imidlertid blev rettet ved at registrere et negativt antal, kan du ikke ændre serienumre for salgsordrelinjen.
--   **Følgesedler** – Du kan ikke delvist rette en følgeseddellinje, der indeholder serienummererede varer. Du skal tilbageføre den fulde mængde for linjen. Hvis en følgeseddel er blevet annulleret eller rettet, behøver du ikke registrere de tilbageførte serienumrene igen, når du opretter en ny følgeseddel for de samme serienummererede varer. De tal, der blev registreret, vil blive brugt.
+-   **Fakturaer** – Du kan ændre serienumrene for de varer, du ikke har endnu faktureret. Følgesedlen opdateres derefter også. Hvis en salgsordrelinje imidlertid blev rettet ved at registrere et negativt antal, kan du ikke ændre serienumre for salgsordrelinjen.
+-   **Følgesedler** – Du kan ikke delvist rette en følgeseddellinje, der indeholder serienummererede varer. Du skal tilbageføre den fulde mængde for linjen. Hvis en følgeseddel er blevet annulleret eller rettet, behøver du ikke registrere de tilbageførte serienumrene igen, når du opretter en ny følgeseddel for de samme serienummererede varer. De tal, der blev registreret, vil blive brugt.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Kan jeg få vist de serienumre, der blev leveret sammen med en bestemt følgeseddel eller blev medtaget i en faktura?
 Ja, du kan køre en forespørgsel på følgeseddelkladdelinjen eller fakturakladdelinjen for at få vist en liste over alle de serienumre, der blev medtaget i dokumentet.
@@ -78,7 +77,6 @@ Ja, retail POS beder brugeren om at indtaste et serienummer, når brugeren sælg
 Denne funktion er tilgængelig for alle de roller, der kan vedligeholde salgsfølgesedler og salgsfakturaer. Følgende pligter giver arbejderne mulighed for at rette serienumre og registrere tomme poster for serienumre, der ikke kan læses eller scannes:
 -   Vedligehold korrektion af serienumre
 -   Vedligehold registrering af ulæselige serienumre
-
 
 
 

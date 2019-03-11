@@ -5,9 +5,9 @@ author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f118ef38e88171ad1eac463078acf37ba4390e57
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319816"
 ---
-
 # <a name="merge-inventory-batches"></a>Flet lagerbatches
 
 [!include [banner](../includes/banner.md)]
@@ -62,11 +61,11 @@ Ja, der er nogle ting, du skal konfigurere, før du kan bruge batchfletningsvær
 <td>Her er de anbefalede indstillinger for varen:
 <ul>
 <li>Du kan generere batchnumrene for flettede batches automatisk ved at tildele det frigivne produkt til en batchnummergruppe. Du kan også angive et batchnummer manuelt, når du opretter et flettet batch, eller vælge et eksisterende batchnummer. Hvis du vælger et eksisterende batchnummer, skal du sikre dig, at det markerede batch ikke er inkluderet i nogen lagertransaktioner.</li>
-<li>Hvis du bruger hyldelevetid eller sidste holdbarhedsdato for det frigivne produkt, bliver datoerne for et flettet batch beregnet ud fra valget i feltet <strong>Beregning af datoen for batchfletning</strong>. Følgende valgmuligheder er tilgængelige:
+<li>Hvis du bruger hyldelevetid eller sidste holdbarhedsdato for det frigivne produkt, bliver datoerne for et flettet batch beregnet baseret på valget i feltet <strong>Beregning af datoen for batchfletning</strong>. Følgende valgmuligheder er tilgængelige:
 <ul>
 <li><strong>Tidligste</strong> – Beregningen er baseret på den tidligste dato, der er angivet for et kildebatch, der er valgt til batchfletning.</li>
 <li><strong>Seneste</strong> – Beregningen er baseret på den seneste dato, der er angivet for et kildebatch, der er valgt til batchfletning.</li>
-<li><strong>Manuel</strong> – Der foretages ikke nogen beregning. Hvis en dato er den samme på alle kildebatches, foreslås en dato. Du kan ændre denne dato. Hvis en dato ikke er den samme på kildebatchene, kan du angive datoen manuelt.</li>
+<li><strong>Manuel</strong> – Der foretages ikke nogen beregning. Hvis en dato er den samme på alle kildebatches, foreslås en dato. Du kan ændre denne dato. Hvis en dato ikke er den samme på kildebatchene, kan du manuelt angive datoen.</li>
 </ul></li>
 </ul></td>
 </tr>
@@ -141,4 +140,3 @@ Du kan godkende lagerkladden for batchfletningen fra listesiden **Alle batchflet
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se oplysningerne om fastvægtvarer i lagerkladden, når jeg har flettet en fastvægtvare?
 Du kan flette batches af fastvægtvarer ligesom alle andre varer. Fastvægtoplysningerne vises dog ikke i lagerkladden. Vi anbefaler, at du kontrollerer fastvægtoplysningerne, før du overfører batchfletningen til lagerkladden.
-

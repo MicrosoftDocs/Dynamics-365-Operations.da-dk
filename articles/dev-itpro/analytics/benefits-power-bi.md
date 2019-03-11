@@ -1,13 +1,13 @@
 ---
-title: Power BI-indhold for frynsegoder
-description: "Dette emne beskriver Power BI-indhold for frynsegoder. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken."
+title: Power BI-indhold til Frynsegoder
+description: I dette emne beskrives Power BI-indhold til Frynsegoder. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,28 +16,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355236"
 ---
-
-# <a name="benefits-power-bi-content"></a>Power BI-indhold for frynsegoder
+# <a name="benefits-power-bi-content"></a>Power BI-indhold til Frynsegoder
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives Microsoft Power BI-indhold for **Frynsegoder**. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
+Dette emne beskriver Microsoft Power BI-indhold til **Frynsegoder**. Det beskrives, hvordan du får adgang til rapporter, som er inkluderet, og der er oplysninger om den datamodel og de enheder, der blev brugt til at oprette indholdspakken.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 Power BI-indholdet for **Frynsegoder** vises i arbejdsområdet **Frynsegodeadministration**, hvis du bruger et af følgende produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter, der er inkluderet i Power BI-indholdet
-De rapporter, der er inkluderet i Power BI-indhold for **Frynsegoder**, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
+De rapporter, der er inkluderet i Power BI-indholdet til **Frynsegoder**, har både diagrammer og tabeller, der indeholder yderligere oplysninger. Rapporterne er beskrevet i følgende tabel.
 
 | Rapport                      | Indhold                                                                                       |
 |-----------------------------|------------------------------------------------------------------------------------------------|
@@ -47,7 +46,7 @@ De rapporter, der er inkluderet i Power BI-indhold for **Frynsegoder**, har båd
 Du kan filtrere diagrammer og felter i alle disse rapporter og fastgøre dem til dashboardet. Du kan finde flere oplysninger om filtrering og fastgørelse i Power BI under [Oprette og konfigurere et dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
-Følgende data bruges til at udfylde rapporterne i Power BI-indhold for **Frynsegoder**. Denne tabel viser de enheder, som indholdet er baseret på.
+Følgende data bruges til at udfylde rapporterne i Power BI-indhold til **Frynsegoder**. Denne tabel viser de enheder, som indholdet er baseret på.
 
 | Enhed                   | Indhold                                                                                                   | Relationer med andre enheder |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -71,4 +70,3 @@ Følgende data bruges til at udfylde rapporterne i Power BI-indhold for **Frynse
 | Medarbejdernavn            | Fornavn, efternavn og fulde navn                                                                       | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertitel           | Titel og anciennitetsdato                                                                                   | Aktuel medarbejder, fratrådt medarbejder, medarbejdertendens |
 | Medarbejdertendens           | Arbejdere over tid, beskæftigede, virksomhed og stilling                                                        | Firma, kompensation, geografisk placering, medarbejdernavn, rapporterer til, kalenderforskydning, dato, medarbejdertitel, demografi, job, ansættelse, job, frynsegoder |
-

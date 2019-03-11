@@ -1,13 +1,13 @@
 ---
-title: "Foreløbige budgetter og fordelinger i den offentlige sektor"
-description: "I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget."
+title: Foreløbige budgetter og fordelinger i den offentlige sektor
+description: I dette emne beskrives oprettelsen af et foreløbigt budget og konfiguration af budgetlægning og budgetstyring for fordelinger og et foreløbigt budget.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b94f565efca2cec3b7cecfe0b451cf2af89cb248
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31df0fb080ea2ccdb6524bf183afe265dba1ef18
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370282"
 ---
-
 # <a name="preliminary-budgets-and-apportionments-in-the-public-sector"></a>Foreløbige budgetter og fordelinger i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -125,7 +124,6 @@ For at få vist yderligere oplysninger om foreløbige budgetter skal du vælge f
 Når du opretter en oprindelig budgetpost og bruger budgetmodellen og dimensionsværdierne, der indeholder foreløbige budgetbeløb, kan de foreløbige budgetbeløb tilbageføres. Du kan f.eks. angive et foreløbigt budgetbeløb på $2.500 på finanskonto 50000. Hvis du senere angiver en oprindelige budgetbeløb på $10.000 på finanskonto 50000, tilbageføres det foreløbige budgetbeløb på $2.500. Finanskontoen 50000 ville have et budgetbeløb på $ 10.000. 
 
 Du kan få vist budgetregisterposter til det oprindelige budget ved at vælge budgetkontoposten i oversigtspanelet **Budgetkontoposter** på siden **Budgetregisterpost**. Klik på menulinjen på **Relaterede oplysninger**, og klik derefter på **Budgetregisterposter**.
-
 
 
 

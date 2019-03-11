@@ -1,13 +1,13 @@
 ---
-title: Konfigurere import af data fra SharePoint
+title: Konfigurere dataimport fra SharePoint
 description: I dette emne beskrives, hvordan du importerer data fra Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331086"
 ---
-# <a name="configure-data-import-from-sharepoint"></a>Konfigurere import af data fra SharePoint
+# <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
 [!include[banner](../includes/banner.md)]
 
@@ -62,7 +62,7 @@ Afspil opgaveguiderne **ER Import af data fra en Microsoft Excel-fil**, der er e
 > Formatet til import af kreditorposteringer er valgt som standardmodeltilknytningen. Hvis du derfor kører en modeltilknytning af **1099-betalingsmodellen**, og modeltilknytningen er af typen **Til destination**, kører modeltilknytningen dette format ved import af data fra eksterne filer. Derefter bruges disse data til at opdatere programtabeller.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurere adgang til SharePoint for at gemme filer
-Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfigurere adgang til den SharePoint Server-forekomst, der skal bruges af den aktuelle virksomhed. I dette eksempel er firmaet USMF. Yderligere oplysninger finder du i [Konfigurere SharePoint-lager](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Du kan gemme elektroniske rapportfiler på en SharePoint-placering ved at konfigurere adgang til den SharePoint Server-forekomst, der skal bruges af den aktuelle virksomhed. I dette eksempel er firmaet USMF. Du kan finde flere oplysninger i [Konfigurere SharePoint-lager](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
 1. Udfør trinnene i [Konfigurere SharePoint-lager](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Åbn det konfigurerede SharePoint-websted.
@@ -117,7 +117,7 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Importere data fra Excel-filer, der findes i en SharePoint-mappe
 1. I SharePoint skal du overføre Microsoft Excel-filen **1099import-data.xlsx**, der indeholder kreditorposter, til den **Filimportkilde (hoved)** SharePoint-mappe, du oprettede tidligere.
 
-    [![SharePoint content – Microsoft Excel-eksempelfil til import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint-indhold – Microsoft Excel-fil til import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. I Finance and Operations skal du på siden **Filtilstande for kilderne** vælge **Opdater** for at opdatere siden. Bemærk, at den Excel-fil, der blev overført til SharePoint, blev vist på denne side med status **Klar**. Følgende statusser understøttes i øjeblikket:
 
@@ -192,4 +192,3 @@ Du kan også åbne siden **Filtilstande for kilderne** ved at vælge **Virksomhe
 11. I Finance and Operations skal du vælge **Kreditor** \> **Periodiske opgaver** \> **1099-skat** \> **Kreditorudligning for 1099'er**, angive de relevante værdier i **Fra dato** og **Til dato**-felterne og derefter vælge **Manuelle 1099-transaktioner**.
 
     Kun posteringer for bilag V-00001 er tilgængelige. Ingen posteringer for bilag V-00002 er tilgængelige, selvom fejlen for den sidste importerede transaktion blev fundet i Excel-filen.
-

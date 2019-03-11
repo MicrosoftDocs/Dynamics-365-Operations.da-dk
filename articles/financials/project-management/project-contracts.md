@@ -1,13 +1,13 @@
 ---
 title: Projektkontrakter
-description: "I dette emne beskrives og gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emne indeholder eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310363"
 ---
-
 # <a name="project-contracts"></a>Projektkontrakter
 
 [!include [banner](../includes/banner.md)]
 
-I denne artikel gives eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations.
+Denne artikel indeholder eksempler på de projektkontrakter, du kan oprette for forskellige typer projekter og finansieringskilder, og hvordan du kan administrere kontrakter og fakturere projektets debitorer i Microsoft Dynamics 365 for Finance and Operations.
 
 Den type projekt, du opretter til en projektkontrakt, afgør, hvilken metode der bruges til fakturering af projektdebitorere. Du kan ændre en projektkontrakt og det relaterede projekt, men du kan ikke ændre projekttypen. 
 
@@ -342,7 +341,6 @@ Når du konfigurerer projektkontrakten, accepterer du at fakturere kunden hver m
 -   Du opretter en debitorfaktura ved udgangen af hver kalendermåned under projektperioden.
 
 I løbet af den første måned registrerer konsulenterne 800 timer i alt på projektet. Udgifterne for kontorartikler i forbindelse med projektet er 20.000 kr. I slutningen af måneden skal du derfor oprette en faktura på 1.220.000, som beregnes som 800 timer ved 1500 i timen plus 20.000 til kontorartikler.
-
 
 
 

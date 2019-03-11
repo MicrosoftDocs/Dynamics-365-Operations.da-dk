@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341804"
 ---
-
 # <a name="phantom-items"></a>Fantomvarer
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ I denne struktur kan du se, at delene F og G ikke findes, og de materialer, som 
 
 I modsætning til Engineering-styklisten, som havde to driftsark, har styklisten Manufacturing kun ét driftsark. Emballagedriften, der var knyttet til del G, er også blevet forhøjet og er nu en del af driftsarket for produkt H. Montagen af den elektriske enhed er den første driftsoperation. Denne ordre er en god idé, da denne enhed bruges i den næste operation, som er maskinmontagen. Den sidste operation er emballagen, der forbruger to emballagematerialer (C og D).
 
-Overgangen mellem Engineering-styklisten og Manufacturing-styklisten aktiveres i Microsoft Dynamics 365 for Finance and Operations via fantomstyklistens linjetype. Som betegnelsen "fantom" antyder, er delene F og G forsvundet i overgangen mellem de to typer af styklister. I dette eksempel anvendes fantomlinjetypen på styklistelinjerne for delene F og G i Engineering-styklisten. Når der oprettes en produktionsordre eller batchordre, kopieres styklisten Engineering til produktions- eller batchordren. Når ordren forkalkuleres, sker overgangen fra styklisten Engineering til styklisten Manufacturing, som vist i de foregående illustrationer. Fra driftsarket i den anden illustration indtastes emballagematerialerne C og D for operationen. 
+I Microsoft Dynamics 365 for Finance and Operations aktiveres overgangen mellem Engineering-styklisten og Produktions-styklisten via fantomstyklistens linjetype. Som betegnelsen "fantom" antyder, er delene F og G forsvundet i overgangen mellem de to typer af styklister. I dette eksempel anvendes fantomlinjetypen på styklistelinjerne for delene F og G i Engineering-styklisten. Når der oprettes en produktionsordre eller batchordre, kopieres styklisten Engineering til produktions- eller batchordren. Når ordren forkalkuleres, sker overgangen fra styklisten Engineering til styklisten Manufacturing, som vist i de foregående illustrationer. Fra driftsarket i den anden illustration indtastes emballagematerialerne C og D for operationen. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Flere strukturniveauer af fantomstykliste
 Fantomlinjetypen kan bruges i flere niveauer styklisteniveauer, som vist i følgende illustration. I denne illustration er (a) styklisten for produkt G, og (b) er rutearket for del E og F og produkt G. 
@@ -74,4 +73,3 @@ Fantomstyklister kan også bruges til en stykliste, der har et rutenetværk. I e
 I følgende illustration er (a) styklisten for produkt G og del F, og (b) er rutearket for produkt G og del F.
 
 ![Produkt G og del F med ruteark](media/product-G-part-F-with-route-sheet.png)
-

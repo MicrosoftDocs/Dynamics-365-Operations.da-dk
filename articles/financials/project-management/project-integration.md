@@ -1,13 +1,13 @@
 ---
 title: Integration med Microsoft Project-klienten
-description: "Planlægning og vedligeholdelse af en projektplan kan være kompleks, så projektledere skal bruge værktøjer, som kan hjælper dem med at administrere denne opgave. Integration med Microsoft Project-klienten giver understøttelse til at åbne og styre et arbejdsopgavehierarki for projektet."
+description: Planlægning og vedligeholdelse af en projektplan kan være kompleks, så projektledere skal bruge værktøjer, som kan hjælper dem med at administrere denne opgave. Integration med Microsoft Project-klienten giver understøttelse til at åbne og styre et arbejdsopgavehierarki for projektet.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317470"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Integration med Microsoft Project-klienten
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 Planlægning og vedligeholdelse af en projektplan kan være kompleks, så projektledere skal bruge værktøjer, som kan hjælper dem med at administrere denne opgave. Integration med Microsoft Project-klienten giver understøttelse til at åbne og styre et arbejdsopgavehierarki for projektet. Projektlederen kan publicere eventuelle ændringer tilbage til arbejdsopgavehierarki i Finance and Operations-projektet.
 
 > [!NOTE]
-> Hvis du bruger opdateringen til Microsoft Dynamics 365 for Finans and Operations fra juli, skal du installere KB 4054797 og 4055884.
+> Hvis du bruger opdateringen til Microsoft Dynamics 365 for Finance and Operations fra juli, skal du installere KB 4054797 og KB 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurere tilføjelsesprogrammet til Microsoft Project-klient
 Hvis du vil aktivere integrationen med Microsoft Project-klienten, skal et tilføjelsesprogram til Microsoft Dynamics 365 skal installeres i brugerens klientprogram Microsoft Project. Dette gøres ved at åbne **Arbejdsområdet til projektstyring**.
@@ -83,7 +82,7 @@ Du opretter et nyt arbejdsopgavehierarki ved hjælp af Microsoft Project-klient 
 
 1.  Åbn Microsoft Project-klient.
 
-2.  Klik på **Åbn** under fanen **Microsoft Dynamics 365**.
+2.  Under fanen **Microsoft Dynamics 365** skal du klikke på **Åbn**.
 
 3.  Vælg **Juridisk enhed** for projektet.
 
@@ -128,4 +127,3 @@ Hvis du vil oprette en ny arbejdsopgavehierarki ved hjælp af Microsoft Project-
 8.  Vælg den **kalender** der skal bruges til fremskaffelse af ressourcer.
 
 11. Klik på **OK**.
-

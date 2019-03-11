@@ -1,13 +1,13 @@
 ---
-title: "Forbedringer til funktioner til bogføring af opgørelse"
-description: "I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen."
+title: Forbedringer til funktioner til bogføring af opgørelse
+description: I dette emne beskrives de forbedringer, der er foretaget af funktionen til bogføring af opgørelsen.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321426"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer til funktioner til bogføring af opgørelse
 
 [!include[banner](includes/banner.md)]
@@ -171,4 +170,3 @@ Der er foretaget andre backend-forbedringer, som brugerne kan se, af funktionen 
 
     - Gå til **Detail** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Detailparametre**. Vælg derefter **Oversigt** i feltet **Detaljeringsniveau** i oversigtspanelet **Opdatering af lager** under fanen **Bogføring**.
     - Gå til **Detail** \> **Konfiguration af hovedkontor** \> **Parametre** \> **Detailparametre**. Under fanen **Bogføring** i oversigtspanelet **Aggregering** skal du derefter vælge **Ja** i indstillingen **Posteringer på bilag**.
-

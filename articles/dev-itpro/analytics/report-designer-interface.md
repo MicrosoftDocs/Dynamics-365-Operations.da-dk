@@ -1,13 +1,13 @@
 ---
-title: "Grænseflade til Report Designer"
+title: Grænseflade til Report Designer
 description: I denne artikel forklares, hvordan du navigerer gennem Report Designer, og hvordan du bruger de forskellige indstillinger til at opfylde dine specifikke krav.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368024"
 ---
-
 # <a name="report-designer-interface"></a>Grænseflade til Report Designer
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ Menuen **Funktioner** er tilgængelig for alle brugere, men nogle kommandoer har
 |-------------------------------|-------------|
 | Beskyt                       | Anvend en adgangskode til den aktuelle byggesten. Denne kommando er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**. |
 | Status for rapportkø           | Åbn dialogboksen **Status for rapportkø**, hvor du kan se alle de senest oprettede rapporter og detaljer for hver rapport. |
-| Kildesystemoplysninger     | Vis indstillingerne for Microsoft Dynamics ERP-systemet. Denne kommando er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**. |
+| Oplysninger om kildesystem     | Vis indstillingerne for Microsoft Dynamics ERP-systemet. Denne kommando er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**. |
 | Udtjekkede elementer             | Få vist rækkedefinitioner, kolonnedefinitioner, rapporteringstrædefinitioner og rapportdefinitioner, der er åbne. Denne kommando er tilgængelig for brugere, der har rollen **Designer** eller **Administrator**. |
 | Opdater cachelagrede økonomiske data | Opdater dataene i kolonnen med økonomiske dimensioner. |
 | Indstilling                       | Åbn dialogboksen **Indstillinger**, hvor du kan ændre brugerindstillinger for Report Designer. |
@@ -229,4 +228,3 @@ Report Designer-værktøjslinjen giver hurtig adgang til kommandoer til navigeri
 [Økonomirapportering](financial-reporting-intro.md)
 
 [Generere en økonomirapport](generate-financial-report.md)
-

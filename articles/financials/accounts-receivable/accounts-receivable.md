@@ -1,13 +1,13 @@
 ---
 title: Startside for debitor
-description: "Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger."
+description: Du kan bruge Debitor til at spore debitorfakturaer og indgående betalinger.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302081"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Startside for debitor
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modta
     :::column:::
         - [Regnskabsfordelinger og kladdeposteringer for reskontro til fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Debitorposteringsprofiler](customer-posting-profiles.md)
-        - [Konfiguration, godkendelse og verifikation af kreditkort](credit-card-authorizations.md)
+        - [Opsætning, godkendelse og verifikation af kreditkort](credit-card-authorizations.md)
         - [Oprette en debitorfaktura](configure-customer-invoices.md)
         - [Oprette og behandle tilbagevendende fakturaer](set-up-process-recurring-invoices.md)
         - [Korrigere en fritekstfaktura](correct-free-text-invoice.md)
@@ -58,7 +57,7 @@ Du kan bruge Debitorer til at spore debitorfakturaer og betalinger, som du modta
         - [Frafalde, genindføre eller tilbageføre renter](waive-reinstate-reverse-interest-fees.md)
         - [Oversigt over SEPA Direct Debit](sepa-direct-debit-overview.md)
         - [Oprette bemyndigelse til SEPA Direct Debit](sepa-direct-debit-mandate.md)
-        - [Lukke Debitor](close-accounts-receivable.md)
+        - [Lukke Debitorer](close-accounts-receivable.md)
     :::column-end:::
 :::row-end:::
 
@@ -103,17 +102,16 @@ Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for a
 
 Du kan finde meninger, nyheder og andre oplysninger om Debitorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Der er mange opslag om Debitorer i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Debitorer, gælder de samme koncepter stadig. Og procedurerne er også de samme som i den aktuelle version.
+Der er mange opslag om Debitorer i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Debitorer, gælder de samme koncepter stadig. og procedurerne er også de samme som i den aktuelle version.
 
-[Microsoft Dynamics Operations Partner Community-blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nye og populære tendenser i MBS Operations.
+[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.
 
 #### <a name="task-guides"></a>Opgaveguider
 Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
 #### <a name="videos"></a>Videoer
 
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

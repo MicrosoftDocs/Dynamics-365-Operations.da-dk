@@ -1,13 +1,13 @@
 ---
-title: "Hjælp-system til Finance and Operations"
-description: "Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet."
+title: Hjælp-system til Finance and Operations
+description: Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350728"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Hjælp-system til Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 Dette emne indeholder en oversigt over komponenterne i Microsoft Dynamics 365 for Finance and Operations-hjælpesystemet.
 
 > [!NOTE]
-> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finance and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+> Følgende tre produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. Derfor er produktnavnet i emner, der primært vedrører Retail, Dynamics 365 for Retail. I emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent, og i emner, der primært vedrører kerneproduktet, er produktnavnet Dynamics 365 for Finance and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
 Hjælp-systemet er fælles for følgende produkter:
 
@@ -158,7 +157,7 @@ På siden **Systemparametre** skal du følge disse trin:
 2. Vælg det Lifecycle Services-projekt, der skal oprettes forbindelse til.
 3. Vælg BPM-biblioteker (inden for det valgte projekt), hvor der skal hentes opgaveregistreringer fra.
 
-    - For Microsoft-indhold i Finance and Operations skal du vælge QPC Unified-biblioteket til Microsoft Dynamics 365 for Finance and Operations fra februar 2017.
+    - Med hensyn til Microsoft-indhold kan du i Finance and Operations vælge QPC Unified-biblioteket for Microsoft Dynamics 365 for Finance and Operations fra februar 2017.
     - For Retail frigiver vi et bibliotek i juli.
     - Du behøver ikke at vælge et bibliotek til Talent. Der er oprettet forbindelse til det korrekte bibliotek for dig.
 
@@ -200,4 +199,3 @@ Følgende tabel viser vores websteder. Websteder, der har en stjerne (\*) ud for
 | [Dynamics Community](https://community.dynamics.com/)                                          | Er vært for blogs, fora og videoer. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Indeholder oplysninger om evaluering og salg. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Vært for nogle kursusressourcer til Finance and Operations, rapporter og hvidbøger, der kan hentes, og er det primære supportwebsted for serviceplanindehavere. Det kan kræve en serviceplan at få adgang til bestemte ressourcer på webstedet. |
-

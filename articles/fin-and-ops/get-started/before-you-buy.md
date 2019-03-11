@@ -1,13 +1,13 @@
 ---
-title: "Før du køber"
-description: "Trinvis vejledning, der kan bruges, når du overvejer at købe Dynamics 365 for Finance and Operations."
+title: Før du køber
+description: Trinvis vejledning, som du kan bruge, når du overvejer at købe Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,27 +16,26 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345461"
 ---
-
 # <a name="before-you-buy"></a>Før du køber
 
 [!include [banner](../includes/banner.md)]
 
-Er dy nybegynder i Dynamics 365 for Finance and Operations? Vi har sammensat en trinvis vejledning, som du kan bruge, uanset om du stadig vurderer Finance and Operations eller er klar til at foretage et køb.
+Er du ny Dynamics 365 for Finance and Operations-bruger? Vi har sammensat en trinvis vejledning, som du kan bruge, uanset om du stadig vurderer Finance and Operations eller er klar til at foretage et køb.
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trin 1: Afprøv Finance and Operations gratis i 30 dage
 
-Du kan afprøve Dynamics 365 for Finance and Operations i 30 dage via en enkel e-mailtilmelding. Prøveversionen af Finance and Operations indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Du kan få flere oplysninger på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prøve Dynamics 365 for Finance and Operations i 30 dage via en enkel e-mail-tilmelding. Prøveversionen af Finance and Operations indeholder introduktionsopgaveguiderne med trinvise instruktioner, hvor du kan få vist bestemte scenarier i praksis. Du kan bruge produktet til at udforske og udføre scenarier, men det kan ikke tilpasses. Der indgår demodata for at gøre produktet nemmere at anvende og give en mere meningsfuld oplevelse. Der sendes en e-mail med påmindelse 3 dage før udløb af prøveversionen. Du kan få flere oplysninger på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trin 2: Vælg en installationsindstilling
 
-Du kan nu installere Microsoft Dynamics 365 for Finance and Operations i skyen eller i dit lokale miljø. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
+Du kan nu implementere Microsoft Dynamics 365 for Finance and Operations i skyen eller lokalt. Skyinstallationer har en ERP-tjeneste, der fuldt ud administreres af Microsoft, mens installationer i det lokale miljø sker i en kundes datacenter.
 
 Der skal tages følgende overvejelser, når du vælger lokalt som installationsmulighed:
 
@@ -46,7 +45,7 @@ Der skal tages følgende overvejelser, når du vælger lokalt som installationsm
 - [Minimumkrav til infrastruktur](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> Lokale installationer af Microsoft Dynamics 365 for Finance and Operations understøttes ikke på offentlige skyinfrastrukturer, herunder Azure.
+> Lokale installationer af Microsoft Dynamics 365 for Finance and Operations understøttes ikke i nogen infrastruktur til den offentlige sky, herunder Azure.
 
 Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -54,7 +53,7 @@ Du kan finde flere oplysninger under [Installationsindstillinger](../../dev-itpr
 
 Hvis du vil undersøge abonnementsmulighederne, skal du gå til prissætningssiden for [Dynamics 365](https://www.microsoft.com/dynamics365/pricing). Denne side indeholder flere forskellige planer, som du kan vælge ud fra din organisations behov.
 
-Du kan købe et abonnement på Microsoft Dynamics 365 for Finance and Operations på flere måder:
+Der er mange måder at købe et Dynamics 365 for Finance and Operations-abonnement på:
 
 - Køb via en partner, og brug volumenlicensering (installation i skyen eller lokalt)
 - Køb via en Cloud Solution Provider (kun til installation i skyen)
@@ -79,7 +78,7 @@ Du kan samarbejde med en Microsoft Cloud Solution Provider for at forstå behove
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Køb via en Dynamics-partner (lokal installation)
 
-Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger i [Købe Dynamics 365 for Finance and Operations (lokal installation)](purchase-on-premises.md)
+Du skal arbejde med en partner for at købe Finance and Operations On-premises. Du kan finde flere oplysninger under [Købe Dynamics 365 for Finance and Operations (til det lokale miljø)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Vælge supportmulighed
 
@@ -97,4 +96,3 @@ Microsoft FastTrack til Dynamics 365 er vores populære tjeneste, der gør det n
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du opgraderer fra Dynamics AX 2012 eller overfører fra AX 2009
 
 Hvis du som kunde opgraderer fra Microsoft Dynamics AX 2012 eller overfører fra Microsoft Dynamics AX 2009, kan du være berettiget til en længere prøveperiode. Kontakt <daxcf@microsoft.com> for at få flere oplysninger.
-

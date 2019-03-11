@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere og håndtere billeder til Retail Modern POS (MPOS)"
-description: "I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS)."
+title: Konfigurere og administrere billeder til Retail Modern POS (MPOS)
+description: I denne artikel forklares de trin, der er involveret i oprettelse og håndtering af billeder til de forskellige enheder, der vises i Retail Modern POS (MPOS).
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356731"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og håndtere billeder til Retail Modern POS (MPOS)
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurere og administrere billeder til Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
@@ -35,10 +34,10 @@ I denne artikel forklares de trin, der er involveret i oprettelse og håndtering
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Konfigurere URL-adresse til mediebase og definere medieskabeloner for at konfigurere formatet for billed-URL-adresser
 
-De billeder, der vises i Retail Modern POS (MPOS), skal være lagret eksternt, uden for Microsoft Dynamics 365 for Retail. De er typisk placeret i et CRM (content management system), CDN (content delivery network) eller på en medieserver. MPOS henter og viser derefter billeder til de relevante enheder som f.eks. produkter og kataloger ved at få adgang til destinations-URL-adressen. Hvis du vil hente disse billeder, der er placeret et eksternt sted, kræver MPOS, at billederne har det rigtige URL-adresseformat. Du kan konfigurere det påkrævede URL-formatet for billederne ved at oprette en værdi for **URL-adresse til mediebase** i kanalprofilen og bruge funktionen **Definer medieskabelon** for hver enhed. Du kan også overskrive standard-URL-formatet for en delmængde af enheder ved hjælp af funktionen **Rediger i Excel**.
+De billeder, der vises i Retail Modern POS (MPOS) skal være placeret eksternt, uden for Microsoft Dynamics 365 for Retail. De er typisk placeret i et CRM (content management system), CDN (content delivery network) eller på en medieserver. MPOS henter og viser derefter billeder til de relevante enheder som f.eks. produkter og kataloger ved at få adgang til destinations-URL-adressen. Hvis du vil hente disse billeder, der er placeret et eksternt sted, kræver MPOS, at billederne har det rigtige URL-adresseformat. Du kan konfigurere det påkrævede URL-formatet for billederne ved at oprette en værdi for **URL-adresse til mediebase** i kanalprofilen og bruge funktionen **Definer medieskabelon** for hver enhed. Du kan også overskrive standard-URL-formatet for en delmængde af enheder ved hjælp af funktionen **Rediger i Excel**.
 
 > [!IMPORTANT]
-> I den aktuelle version af Dynamics 365 for Retail kan du ikke længere oprette URL-formatet ved hjælp af **Billede**-attribut-XML til MPOS i attributgruppen **Standard** for enheder. Hvis du er fortrolig med Microsoft Dynamics AX 2012 R3 og nu bruger den aktuelle version af Dynamics 365 for Retail, skal du sørge for altid at bruge den nye funktion **Definer medieskabelon** til at konfigurere billeder. Undlad at bruge eller ændre attributten **Billed** i attributgruppen **Standard** for enheder, herunder produkter. Ændringer, du foretager direkte i attributgruppen **Standard** for billeder, afspejles ikke. Denne indstilling deaktiveres i en fremtidig version.
+> I den aktuelle version af Dynamics 365 for Retail kan du ikke længere oprette URL-formatet ved hjælp af **Billede**-attribut-XML til MPOS i attributgruppen **Standard** for enheder. Hvis du er fortrolig med Microsoft Dynamics AX 2012 R3 og nu bruger den aktuelle version af Dynamics 365 for Retail, skal du kontrollere, at du altid bruge den nye funktion **Definer medieskabelon** til at konfigurere billeder. Undlad at bruge eller ændre attributten **Billed** i attributgruppen **Standard** for enheder, herunder produkter. Ændringer, du foretager direkte i attributgruppen **Standard** for billeder, afspejles ikke. Denne indstilling deaktiveres i en fremtidig version.
 
 I følgende procedurer er billeder angivet for enheden Katalog som et eksempel. Disse procedurer garanterer, at den korrekte billeddestinationssti er angivet implicit for alle katalogbilleder, der bruger en fælles sti. Hvis du f.eks. har konfigureret en medieserver eller CDN eksternt, og billederne skal vises i MPOS for et givet lager, hjælper funktionen **Definer medieskabelon** dig med at indstille den sti, hvor MPOS kan søge efter og hente billederne.
 
@@ -122,7 +121,7 @@ Som du har lært i forrige afsnit, understøtter medieskabelonen for en bestemt 
     > De URL-adresser, der er genereret for Excel, bruger stien og konventionerne fra den medieskabelon, der er defineret. Disse konventioner omfatter konventioner for filnavne. Det forventes, at du har konfigureret de fysiske billeder uden for Dynamics 365 for Retail, og billederne kan hentes fra de URL-adresser, der er afledt fra den medieskabelon, du definerede tidligere. Du kan overskrive disse afledte URL-adresser ved hjælp af funktionen Rediger i Excel.
 
 5. Klik på **Rediger i Excel**.
-6. Når Microsoft Excel-regnearket er åbnet, skal du klikke på **Aktivér redigering**, når du bliver bedt om.
+6. Når Microsoft Excel-regnearket er åbnet, skal du klikke på **Aktivér redigering**, når du bliver bedt om det.
 7. Når du bliver bedt om det, skal du klikke på **Har tillid til dette tilføjelsesprogram** i højre rude og vente på, at installationen af tilføjelsesprogrammet er fuldført.
 
     [![Har tillid til dette tilføjelsesprogram](./media/excel4.jpg)](./media/excel4.jpg)
@@ -214,4 +213,3 @@ Katalog-, kategori-, arbejder og debitorbilleder, der skal bruges i offlinetilst
 5. Følg en lignende proces for andre enheder som f.eks. kategori, medarbejder og debitor.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

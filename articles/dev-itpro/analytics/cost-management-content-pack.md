@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,26 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327797"
 ---
-
 # <a name="cost-management-power-bi-content"></a>Power BI-indhold til omkostningsstyring
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Overblik
 
-Microsoft Power BI-indholdet for **Omkostningsstyring** er beregnet til lagerbogholdere eller enkeltpersoner i organisationen, som er ansvarlige for eller interesserede i status for lageret eller det igangværende arbejde (IGVA), eller som er ansvarlig for eller interesseret i at analysere afvigelser i standardomkostningerne.
+Microsoft Power BI-indholdet til **Omkostningsstyring** er beregnet til lagerbogholdere eller enkeltpersoner i organisationen, som er ansvarlige for eller interesserede i status for lageret eller det igangværende arbejde (IGVA), eller som er ansvarlig for eller interesseret i at analysere afvigelser i standardomkostningerne.
 
 > [!NOTE]
-> Power BI-indholdet for **Omkostningsstyring**, som er beskrevet i dette emne, gælder for Dynamics 365 for Finance and Operations 8.0.
+> Det Power BI-indhold til **Omkostningsstyring**, som beskrives i dette emne, gælder for Dynamics 365 for Finance and Operations 8.0.
 > 
-> Power BI-indholdspakken for **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, bliver udfaset. Du kan finde flere oplysninger om denne afskrivning i [Power BI-indholdspakkerne, der er tilgængelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-indholdspakken til **Omkostningsstyring**, som er tilgængelig på AppSource-webstedet, er blevet udfaset. Du kan finde flere oplysninger om denne udfasning i [Power BI-indholdspakkerne, der er tilgængelig på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dette Power BI-indhold giver et kategoriseret format, som gør det lettere at overvåge performance for lagerbeholdninger og visualisere, hvordan omkostninger "flyder" gennem dem. Du kan få ledelsesmæssig indsigt, f.eks. omsætningshastigheden, antallet af dage, hvor varen er på lager, nøjagtighed og "ABC-klassifikation" på dit foretrukne samlede niveau (firma, vare, varegruppe eller sted). De oplysninger, der er gjort tilgængelige, kan også bruges som et detaljeret supplement til regnskabet.
 
@@ -46,9 +45,9 @@ Power BI-indholdet er baseret på den samlede måling for **CostObjectStatementC
 
 Efter hver opdatering af tabellen **CostObjectStatementCache**, skal den samlede måling for **CostObjectStatementCacheMonthly** opdateres, før dataene Power BI-visualiseringerne opdateres.
 
-## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indhold
+## <a name="accessing-the-power-bi-content"></a>Adgang til Power BI-indholdet
 
-Power BI-indholdet for **Omkostningsstyring** vises i arbejdsområderne **Omkostningsstyring** og **Omkostningsanalyse**.
+Power BI-indholdet til **Omkostningsstyring** vises i arbejdsområderne **Omkostningsstyring** og **Omkostningsanalyse**.
 
 Arbejdsområdet **Omkostningsstyring** indeholder følgende faner:
 
@@ -65,9 +64,9 @@ Arbejdsområdet **Omkostningsanalyse** indeholder følgende faner:
 
 ## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Rapportsider, der er inkluderet i Power BI-indholdet
 
-Power BI-indholdet for **Omkostningsstyring** omfatter en række rapportsider, der indeholder et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. 
+Power BI-indholdet til **Omkostningsstyring** omfatter en række rapportsider, der indeholder et sæt nøgletal. Disse metrikker visualiseres som diagrammer, felter og tabeller. 
 
-I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-indholdet for **Omkostningsstyring**.
+I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-indholdet til **Omkostningsstyring**.
 
 ### <a name="inventory-accounting-status"></a>Lagerregnskabsstatus
 
@@ -173,7 +172,7 @@ I nedenstående tabeller vises en oversigt over visualiseringerne i Power BI-ind
 
 ## <a name="understanding-the-data-model-and-entities"></a>Forståelse af datamodellen og enheder
 
-Data fra Microsoft Dynamics 365 for Finance and Operations bruges til at udfylde rapportsiderne i Power BI-indholdet for **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der placeres midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
+Data fra Microsoft Dynamics 365 for Finance and Operations bruges til at udfylde rapportsider i Power BI-indhold til **Omkostningsstyring**. Disse data repræsenteres som samlede målinger, der gemmes midlertidigt i enhedslageret, som er en Microsoft SQL Server-database, der er optimeret til analyse. Du kan finde flere oplysninger under [Power BI-integration med enhedslager](power-bi-integration-entity-store.md).
 
 De vigtigste samlede målinger for følgende objekter bruges som grundlag af Power BI-indholdet.
 
@@ -186,7 +185,7 @@ De vigtigste samlede målinger for følgende objekter bruges som grundlag af Pow
 
 Tabellen nedenfor viser de beregnede målinger i Power BI-indholdet.
 
-| Målepunkt                            | Kalkulation |
+| Målepunkt                            | Udregning |
 |------------------------------------|-------------|
 | Startsaldo                  | Startsaldo = \[Slutsaldo\]-\[Nettoændring\] |
 | Antal for startsaldo             | Antal for startsaldo = \[Antal for slutsaldo\]-\[Antal for nettoændring\] |
@@ -209,4 +208,3 @@ Følgende nøgledimensioner bruges som filtre til at skabe udsnit af de samlede 
 | Juridiske enheder                                          | Navne på juridisk enhed                              |
 | Regnskabskalendere                                        | Regnskabskalender, År, Kvartal, Periode, Måned   |
 | Sted                                                    | Id, Navn, Adresse, Stat, Land               |
-

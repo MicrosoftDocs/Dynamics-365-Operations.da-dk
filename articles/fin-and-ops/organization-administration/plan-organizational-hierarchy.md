@@ -1,13 +1,13 @@
 ---
-title: "Planlægge dit organisationshierarki"
-description: "Før du opretter organisationer og organisationshierarkier, skal du være sikker på, at du forstår, hvordan du bedst udformer en model af din virksomhed."
+title: Planlægge dit organisationshierarki
+description: Før du opretter organisationer og organisationshierarkier, skal du være sikker på, at du forstår, hvordan du bedst udformer en model af din virksomhed.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331983"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Planlægge dit organisationshierarki
 
 [!include [banner](../includes/banner.md)]
@@ -168,7 +167,7 @@ Driftsenheder hører under samme land/område som den overordnede juridiske enhe
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisationen er udformet som en juridisk enhed
 
-For lande/områder, der understøttes i Finance and Operations, kan de fleste lovpligtige rapporter oprettes. Du kan finde oplysninger om, hvilke rapporter der er tilgængelige for hvert land/område i [Microsoft Dynamics-lokaliseringsportalen](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) til Finance and Operations. (Logon til CustomerSource er påkrævet).
+For lande/områder, der understøttes i Finance and Operations, kan de fleste lovpligtige rapporter oprettes. Du kan finde oplysninger om, hvilke rapporter der er tilgængelige for hvert land/område i [Microsoft Dynamics-lokaliseringsportalen](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) til Finance and Operations. (Der kræves et CustomerSource-logon).
 
 > [!NOTE]
 > I Finance and Operations giver et posteringslag i finansmodulet dig mulighed for at angive reguleringsposter i et moderselskab, der bruger en anden regnskabsstandard end det underordnede selskab. I en virksomhed, der bruger almindeligt accepteret regnskabspraksis i Storbritannien (UK GAAP), kan du f.eks. angive reguleringsposter i posteringslaget. Disse poster kan konsolideres til et moderselskab, der bruger almindeligt accepterede regnskabsprincipper (GAAP) i USA. Reguleringsposterne påvirker ikke UK GAAP-rapportering.
@@ -243,4 +242,3 @@ Overvej følgende bedste fremgangsmåder, når du implementerer et organisations
 - Før du modellerer større omstruktureringsscenarier, skal du bruge hierarkiets ikrafttrædelsesdatoer til at udføre en effektanalyse og en valideringstest.
 - Brug kladdetilstand til at ændre et hierarki, før du udgiver en ny version i et produktionsmiljø.
 - Begræns antallet af personer, der har rettigheder til at tilføje eller fjerne organisationer fra et hierarki i et produktionsmiljø. Et lavere antal reducerer risikoen for, at der kan forekomme dyre fejl, der kræver, at der gennemføres rettelser.
-

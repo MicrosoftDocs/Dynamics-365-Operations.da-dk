@@ -1,32 +1,31 @@
 ---
 title: Forsyning med LinkedIn Recruiter
-description: "Dette emne indeholder oplysninger om brug af maskinel indlæring til at få anbefalinger om job og jobkandidater."
+description: Dette emne indeholder oplysninger om brug af maskinel indlæring til at få anbefalinger om job og jobkandidater.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303685"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Forsyning med LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
@@ -139,7 +138,6 @@ Hvis du vil se Notes-historikken, skal du gå til en kandidats profil, gå til f
 
 ### <a name="inmail-stub-profile"></a>InMail-stubprofil
 
-LinkedIn InMail-stubprofilen er tilgængelig på kontraktniveau i LinkedIn Recruiter. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat. Du kan få vist kandidatens e-mailadresse, hvis kandidaten allerede findes i systemet med en e-mailadresse eller har valgt at dele sin adresse med rekrutteringsmedarbejderen.
+InMail-stubprofilen er tilgængelig på kontraktniveau i LinkedIn Recruiter. Hvis kandidaterne accepterer at dele deres LinkedIn-profiler med enhver bruger i din organisation, kan du spore kandidaterne i Attract, og der bliver oprettet en ny kandidatpost for hver kandidat. Du kan få vist kandidatens e-mailadresse, hvis kandidaten allerede findes i systemet med en e-mailadresse eller har valgt at dele sin adresse med rekrutteringsmedarbejderen.
 
 For at få vist listen over kandidater skal du gå til **Talentpuljer** for at få vist en systemoprettet LinkedIn-talentpulje. Denne talentpulje indeholder listen over kandidater og deres stubprofiler som modtaget fra LinkedIn med kandidatens fornavn og efternavn. Kandidatens e-mail-id vises, hvis kandidaten har valgt at dele sin e-mailadresse.
-

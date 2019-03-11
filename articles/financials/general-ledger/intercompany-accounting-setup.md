@@ -1,13 +1,13 @@
 ---
 title: Konfiguration af mellemregning
-description: "I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder."
+description: I dette emne beskrives, hvordan du kan konfigurere mellemregning, så du kan bruge interne kladder til finansfordelinger og økonomikladder, f.eks. kassekladder, kreditorfakturakladder og betalingskladder.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ce07a29d7aa5057d0b61c7fcc6bb87a0a2755fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48e0b00e2a9bd1a1387780747e1976bd386200eb
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363976"
 ---
-
 # <a name="intercompany-accounting-setup"></a>Konfiguration af mellemregning
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Vælg **Debetkonto (forfalden til)** og **Kreditkonto (forfalden fra)** for båd
 Vælg til sidst, hvilken juridisk enhed der modtager regnskabet for supplerende beløb, som kasserabatten eller realiserede gevinster/tab for centraliserede betalinger. 
 
 En gensidig relation kan nemt konfigureres på siden **Mellemregning** ved hjælp af knappen **Opret reciprok relation**, når du har oprettet det første juridiske enhedspar. Når det gensidige par er oprettet, kopieres oplysningerne for modtagervirksomheden til den oprindelige virksomhed og omvendt. Den kladde, der er defineret for modtagervirksomheden, forbliver. De fleste organisationer bruger samme navngivningskonvention til deres kladdenavne, så kladdenavnet er det samme. Hvis kladdenavnet er anderledes, vises en advarsel i feltet om, at kladden ikke findes, og du kan vælge en anden kladde.
-
 
 
 

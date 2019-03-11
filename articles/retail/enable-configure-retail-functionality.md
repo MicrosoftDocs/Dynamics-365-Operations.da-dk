@@ -1,13 +1,13 @@
 ---
-title: "Initialisere oprindelsesdata i nye detailmiljøer"
+title: Initialisere oprindelsesdata i nye detailmiljøer
 description: I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327889"
 ---
-
-# <a name="initialize-seed-data-in-new-retail-environments"></a>Initialisere oprindelsesdata i nye detailmiljøer
+# <a name="initialize-seed-data-in-new-retail-environments"></a>Initialisere oprindelsesdata i nye Retail-miljøer
 
 [!include [banner](includes/banner.md)]
 
 I denne artikel beskrives de data, der er oprettet som en del af initialiseringen for Microsoft Dynamics 365 for Retail.
 
-Når detailløsningen er blevet installeret via Microsoft Dynamics livscyklus Services (LCS), skal du initialisere detailkonfigurationen for at oprette de grundlæggende konfigurationsdata.
+Når detailløsningen er blevet installeret via Microsoft Dynamics Lifecycle Services (LCS), skal du initialisere detailkonfigurationen for at oprette de grundlæggende konfigurationsdata.
 
 > [!IMPORTANT]
 > Før du initialiserer detailkonfiguration, skal du kontrollere, at du har angivet et sprog og en postadresse for hver juridisk enhed, hvor du vil konfigurere detailbutikker. Dette trin skal udføres for hver juridisk enhed, du bruger til detailsalg.
@@ -56,7 +55,7 @@ Initialiseringen opretter følgende standardkonfigurationsdata:
 - Kanalrapporter
 - Attributmetadata
 - Skabeloner til validering af enheder
-- Batchjob for at slette Commerce Data Exchange-sessionsoversigt
+- Batchjob til fjernelse af Commerce Data Exchange-sessionshistorik
 
 Derudover er logføring, der er relateret til betalingskortindustrien (PCI), aktiveret for Dynamics 365 for Retail-databasen.
 
@@ -70,4 +69,3 @@ Når initialiseringen er fuldført, skal du konfigurere yderligere detaildata. H
 - Detailkanaler
 - Kasseapparater og enheder
 - Udvalg
-

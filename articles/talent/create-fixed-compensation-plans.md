@@ -1,13 +1,13 @@
 ---
-title: "Opret faste lønstrukturer"
-description: "Fast løn henviser til en medarbejders normale bruttoløn eller løn. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere."
+title: Opret faste lønstrukturer
+description: Fast løn henviser til en medarbejders normale bruttoløn eller løn. I denne artikel beskrives de komponenter, der skal konfigureres, før du kan oprette en fast lønstruktur og tilmelde medarbejdere.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303813"
 ---
-
 # <a name="create-fixed-compensation-plans"></a>Opret faste lønstrukturer
 
 [!include [banner](includes/banner.md)]
@@ -105,7 +104,6 @@ Systemet kontrollerer, at det kompensationsbeløb, der er angivet for en kompens
 --------
 
 [Kompensationsordninger](compensation-plans.md)
-
 
 
 

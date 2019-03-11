@@ -1,29 +1,28 @@
 ---
 title: Dobbelt valuta
-description: "Dette emne indeholder oplysninger om såkaldt dobbelt valuta, hvor rapporteringsvalutaen bruges som en ekstra regnskabsvaluta i Microsoft Dynamics 365 for Finance and Operations."
+description: Dette emne indeholder oplysninger om såkaldt dobbelt valuta, hvor rapporteringsvalutaen bruges som en ekstra regnskabsvaluta i Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330304"
 ---
-
 # <a name="dual-currency"></a>Dobbelt valuta
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Desuden er der foretaget større ændringer i forbindelse med afskrivningsproces
     - Hvis der angives en afskrivningsposteringstype i anlægsaktivkladden, vises rapporteringsvalutabeløbene i de nye kolonner. Disse beløb kan ændres.
     - Hvis regnskabsvalutaen og rapporteringsvalutaerne i Finans er ens, vil beløbene blive holdt synkroniserede. Hvis du ændrer beløbet i **Kredit**, bliver beløbet i **Kredit i rapporteringsvaluta** automatisk ændret, så det passer til det.
     - Hvis der er angivet en anden posteringstype i anlægsaktivkladden, vises beløbene i **Debet i rapporteringsvaluta** og **Kredit i rapporteringsvaluta** aldrig, hverken før eller efter bogføringen. Regnskabsvaluta- og rapporteringsvalutabeløbene er stadig tilgængelige i det bilag, der bogføres i Finans.
-

@@ -1,13 +1,13 @@
 ---
 title: Intrastat
-description: "Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger."
+description: Dette emne indeholder oplysninger om Intrastat-rapportering for handel med varer og i nogle tilfælde tjenester mellem lande/regioner i EU. Den indeholder en oversigt over rapporteringsprocessen og beskriver de nødvendige indstillinger og forudsætninger.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
 ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370246"
 ---
-
 # <a name="intrastat"></a>Intrastat
 
 [!include [banner](../includes/banner.md)]
@@ -141,7 +140,7 @@ I følgende afsnit beskrives de indstillinger, der skal bruges til Intrastat-rap
 </tr>
 <tr class="even">
 <td>Transaktionskategorier</td>
-<td>Angiv transaktionstypen i henhold til dit lands/områdes krav. For hver transaktionskode, du har angivet, skal du angive regler for beregning af fakturabeløb og statistiske beløb for overførselsordrer og salgs-/købsordrer.
+<td>Angiv arten af transaktionen i henhold til dit lands/områdes krav. For hver transaktionskode, du har angivet, skal du angive regler for beregning af fakturabeløb og statistiske beløb for overførselsordrer og salgs-/købsordrer.
 <ul>
 <li>For overførselsordrer skal du angive en af følgende regler for beregning af fakturabeløb og statistiske beløb:
 <ul>
@@ -208,7 +207,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </ul></li>
 <li><strong>Overfør</strong> – Angiv kriterierne for at overføre transaktioner til Intrastat-kladden. Du kan angive, at transaktioner kun overføres, når varerne opfylder en eller flere af følgende kriterier:
 <ul>
-<li>Varerne er ikke servicevarer.</li>
+<li>Varerne er ikke serviceartikler.</li>
 <li>Varerne har en varekode.</li>
 <li>Varerne har en vægt.</li>
 <li>Varerne har supplerende enheder.</li>
@@ -228,7 +227,7 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tr>
 <tr class="even">
 <td>Kontaktoplysninger for agent</td>
-<td>Angiv agentens navn, adresse, SE-nummer, telefonnummer og faxnummer.</td>
+<td>Angiv agentens navn, adresse, momsundtagelsesnummer, telefonnummer og faxnummer.</td>
 </tr>
 <tr class="odd">
 <td>Egenskaber for land/område</td>
@@ -240,5 +239,4 @@ Brug siden **Udenrigshandelsparametre** til at konfigurere parametre i tabellen 
 </tr>
 </tbody>
 </table>
-
 

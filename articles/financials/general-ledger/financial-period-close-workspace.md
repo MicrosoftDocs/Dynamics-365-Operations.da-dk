@@ -1,13 +1,13 @@
 ---
-title: "Arbejdsområde til afslutning på regnskabsperiode"
-description: "Denne artikel indeholder en oversigt over arbejdsområdet Afslutning på regnskabsperiode og den tilknyttede konfiguration."
+title: Arbejdsområde til afslutning på regnskabsperiode
+description: Denne artikel indeholder en oversigt over arbejdsområdet Afslutning på regnskabsperiode og den tilknyttede konfiguration.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326900"
 ---
-
 # <a name="financial-period-close-workspace"></a>Arbejdsområde til afslutning på regnskabsperiode
 
 [!include [banner](../includes/banner.md)]
@@ -88,7 +87,7 @@ Du kan bruge en skabelon for afslutning af finans til at definere alle opgaver, 
 
 Du kan tildele en opgave i skabelonen til en eller flere virksomheder, hvor opgaven gælder. Hvis en anden person er tildelt til at udføre dette arbejde i hvert enkelt virksomhed, kan det være nyttigt at oprette flere opgaver til den samme arbejdsindsats. Oprette én opgave for hver virksomhed 
 
-Menupunktet **Opgavelink** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. n afsluttende opgave, der kører processen til valutaregulering for Kreditor, kan f.eks. knyttes til den tilhørende side med **Kursregulering** i Microsoft Dynamics 365 for Finance and Operations. Du kan også foretage sammenkædning til en ekstern URL-adresse. 
+Menupunktet **Opgavelink** er knyttet til arbejdsindsatsen for opgaven og kan bruges til at gå direkte til den tilknyttede side fra opgavelinket i arbejdsområdet. En afsluttende opgave, der kører processen til valutaregulering for Kreditor, kan f.eks. knyttes til den tilhørende side med **Kursregulering** i Microsoft Dynamics 365 for Finance and Operations. Du kan også foretage sammenkædning til en ekstern URL-adresse. 
 
 > [!TIP]
 > Hvis du vil sammenkæde en bestemt Management Reporter-rapport med en opgave til afslutning på regnskabsperiode, kan du bruge URL-adressen til rapporten. For at få adgang til URL-adressen til rapporten skal du åbne rapporten i rapportdesigneren og derefter klikke på **Filer** &gt; **Vis rapport** for at åbne rapporten i en webbrowser. Du kan derefter kopiere URL-adressen på browserens adresselinje og indsætte den i **URL-adressen** til feltet **Opgavelink**. 
@@ -106,7 +105,6 @@ Tildel den kalender, der er relevant for ultimotidsplanen, for at angive de arbe
 Du skal også definere de virksomheder, der skal knyttes til ultimotidsplanen. Hvis skabelonopgaver tildeles flere virksomheder, oprettes der separate opgaver for hver virksomhed, der er i ultimotidsplanen, og de tildeles skabelonopgaven. 
 
 Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket** for den. Opgavehistorikken vil fortsat være tilgængelig fra listesiden **Alle opgaver til afslutning på regnskabsperiode**, men ultimotidsplanen fjernes fra arbejdsområdet. Når en ultimotidsplan er fuldført, skal du vælge indstillingen **Lukket**, kan du ikke føje opgaver til den, redigere opgaver eller fjerne opgaver fra den.
-
 
 
 

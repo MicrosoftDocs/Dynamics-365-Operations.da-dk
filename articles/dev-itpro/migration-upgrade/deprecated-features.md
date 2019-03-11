@@ -1,13 +1,13 @@
 ---
-title: "Fjernede eller frarådede funktioner"
+title: Fjernede eller frarådede funktioner
 description: Dette emne beskriver funktioner, der er blevet fjernet eller vil blive fjernet.
 author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329246"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Fjernede eller forældede funktioner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne beskriver funktioner, der er blevet fjernet eller forældet i Dynamics 365 for Finance and Operations.
+I dette emne beskrives funktioner, der er blevet fjernet eller frarådes for Dynamics 365 for Finance and Operations.
 
 - En *fjernet* funktion er ikke længere tilgængelige i produktet.
 - En *forældet* funktion er ikke i aktiv udvikling og fjernes muligvis i en senere opdatering.
@@ -64,7 +63,7 @@ Funktion til at konfigurere filformaterne .txt- og .xml for erklæringer.
 | **Erstattet af en anden funktion?**   | Ja. |
 | **Produktområder, der er berørt**         | Finans |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Generator til økonomiske rapporter for Rusland
 Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapporter og eksportere data til XLS- og DOC-rapportskabeloner. Funktionelle dele: eksportere data til XLS- og DOC-rapportskabeloner, forespørgsler, faste forudsætninger fjernes. 
@@ -75,7 +74,7 @@ Et værktøj til at konfigurere indsamling af data til regnskabs- og momsrapport
 | **Erstattet af en anden funktion?**   | Ja. Økonomirapporters brugergrænseflade for opsætning skal bruges til at opstille dataindsamlingsregler efter GL-konti eller momsregistre. Eksportere data til forskellige filtyper, faste forudsætninger og regler for forespørgselslignende indsamling bør være konfigureret i elektronisk rapportering. |
 | **Produktområder, der er berørt**         | Finans. |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med eksterne udbydere for at sende elektronisk rapportering via kommunikationskanaler for Rusland
 Funktion til eksport af genererede elektroniske filer med erklæringer til mappe for at sende dem til officielle udbydere af elektronisk rapportering samt tilbageimport af tilstand.
@@ -86,7 +85,7 @@ Funktion til eksport af genererede elektroniske filer med erklæringer til mappe
 | **Erstattet af en anden funktion?**   | Ja.  |
 | **Produktområder, der er berørt**         | Finans, moms |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden Registre over skat af overskud
@@ -96,15 +95,15 @@ Funktion til oprettelse af skabeloner for nye registre over skat af overskud. De
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Funktionen er ikke kompatibel med Dynamics 365 for Finance and Operations-udvidelsesmodellen. |
 | **Erstattet af en anden funktion?**   | Nr. |
-| **Produktområder, der er berørt**         | Skat |
+| **Produktområder, der er berørt**         | Moms |
 | **Installationsindstilling**              | Alt |
-| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations 8.1 med platformsopdatering 20. |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations 8.1 platformsopdatering 20. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med platformsopdatering 15
 Funktioner, der ikke er blevet fjernet eller forældet i denne version. Platformsopdatering 15 er kumulativ og indeholder nye eller ændrede funktioner fra platformsopdatering 13, platformsopdatering 14 og platformsopdatering 15.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 med platformsopdatering 12
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 med platformsopdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Tilpassede produktanbefalinger 
 Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise personlige produktanbefalinger på en POS-enhed. Du kan finde flere oplysninger under [Tilpassede produktanbefalinger](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
@@ -115,7 +114,7 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 | **Erstattet af en anden funktion?**   | Nej Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
 | **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
 | **Installationsindstilling**              | Alt                                                                                      |
-| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Operations 1611 og nyere versioner.  |
+| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Operations 1611 og nyere.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Udvidelser af listen over elektroniske rapporteringsfunktioner (ER)
 Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-udtryksgeneratoren (yderligere oplysninger finder du i [Udvide listen over elektroniske rapporteringsfunktioner](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)), understøttes ikke længere. På grund af ændringer af ER-API'er er API'en til kald af indbyggede funktioner fra ER-udtryksgeneratoren blevet intern og kan ikke længere udvides.
@@ -126,7 +125,7 @@ Muligheden for at introducere brugerdefinerede funktioner, der skal bruges i ER-
 | **Erstattet af en anden funktion?**   | Ingen. Hver gang der kræves en ny indbygget funktion, skal en ny anmodning om forlængelse adresseres til ER-strukturteamet.<br><br>Som en midlertidig løsning, mens den anmodede funktion er under udvikling af ER-teamet, kan den logik, der kræves, programmeres som en metode til en brugerdefineret programklasse. Denne metode kan benyttes i ER-udtrykket som en egenskab for den tilføjede ER-datakilde til den **Program\klasse**-type, der refererer til den pågældende brugerdefinerede programklasse.  |
 | **Produktområder, der er berørt**         | Elektronisk rapporteringsstruktur                                                      |
 | **Installationsindstilling**              | Alt                                                                                      |
-| **Status**                         | Fjernet fra og med Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Fjernes fra og med Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Rapporterne Lager pr. varegruppe og Lager aldersfordelt pr. lagerdimension
 
@@ -140,13 +139,13 @@ Disse to rapporter understøttes ikke længere i Finance and Operations. I stede
 | **Installationsindstilling**        | Alt|
 | **Status**                       | Forældet: Menupunkterne for de to rapporter er blevet fjernet i version 7.3. Koden for rapporterne forbliver dog i produktet. Planen er at fjerne koden i en senere version. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-indholdspakker er tilgængelige på AppSource
-Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Detailkanalperformance**, der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), forældes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, er også forældede i Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-indholdspakker, der er tilgængelige på AppSource
+Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [Microsoft AppSource](https://appsource.microsoft.com), frarådes som følge af produktopdateringer i Microsoft Power BI. Systemadministrationsformularer, som bruges til at installere disse indholdspakker på PowerBI.com, er også forældede i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Produktopdateringer i Microsoft Power BI. |
-| **Erstattet af en anden funktion?**   | Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Detailkanalperformance**, der er tilgængelige på webstedet [AppSource](https://appsource.microsoft.com), bliver erstattet af analyseprogrammer, som giver mulighed for integration af løsninger på databaseniveau. Du kan finde flere oplysninger om analyseprogrammer i [Integreret Power BI i arbejdsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Erstattet af en anden funktion?**   | Indholdspakkerne **Omkostningsstyring**, **Økonomisk performance** og **Retail Channel Performance**, der er tilgængelige på webstedet [AppSource](https://appsource.microsoft.com), bliver erstattet af analyseprogrammer, som giver mulighed for integration af løsninger på databaseniveau. Du kan finde flere oplysninger om analyseprogrammer i [Integreret Power BI i arbejdsområder](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområder, der er berørt**         | Omkostningsstyring, Finans og Detail                                                                                               |
 | **Installationsindstilling**              | Kun skyen (Integration med PowerBI.com understøttes ikke i lokale installationer).                                                                                                            |
 | **Status**                         | Forældet: Måltidsrammen for fjernelse af funktioner er 2. kvartal 2018.    |
@@ -220,10 +219,10 @@ Fra og med den 15. februar 2018 vil detailhandlere ikke længere kunne vise pers
 | **Erstattet af en anden funktion?**   | Nej Efter foråret 2018 er det dog planen at genintroducere denne funktion for at anvende en ny anbefalingstjeneste.   |
 | **Produktområder, der er berørt**         | Tilpassede produktanbefalinger i POS.                                                    |
 | **Installationsindstilling**              | Alt                                                                                      |
-| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere versioner. |
+| **Status**                         |Fjernet fra og med den 15. februar 2018. Dette påvirker kunder, der kører Dynamics 365 for Retail 7.2 og nyere. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition fra juli 2017 med platformsopdatering 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med platformsopdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Omregning af valuta for regnskabs- og rapporteringsvalutaer
 
@@ -244,7 +243,7 @@ Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er be
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Identiske funktioner.       |
-| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger under [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – Lagersted](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Erstattet af en anden funktion?**   | Ja. Denne funktion er blevet erstattet af Finance and Operations - Lagersted. Du kan finde flere oplysninger om opsætning og forudsætninger i [Installere og konfigurere Microsoft Dynamics 365 for Finance and Operations – lager](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Produktområder, der er berørt**         | Lokationsstyring, transportstyring     |
 | **Installationsindstilling**              | Warehouse Mobile Devices Portal (WMDP) er en enkeltstående komponent, der er beregnet til selvstændig installation i det lokale miljø.               |
 | **Status**                         | Forældet: Måltidsrammen for funktioner, der skal fjernes, er 4. kvartal 2019.   |
@@ -353,7 +352,7 @@ EDIVAT er en forældet belgisk standard for elektronisk indberetning via sikker 
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL-betalingsimportformat for Norge
 
-eGiro er baseret på den internationale FN standard EDIFACT CREMUL, (Multiple Credit Advice Message), der bruges til automatisk bogføring af betalinger fra kunder. eGiro er implementeret som et format til import af kundebetaling i Microsoft Dynamics AX.
+eGiro er baseret på den internationale FN standard EDIFACT CREMUL, (Multiple Credit Advice Message), der bruges til automatisk bogføring af betalinger fra kunder. I Microsoft Dynamics AX implementeres eGiro som et importformat for debitorbetaling.
 
 |   |  |
 |------------|--------------------|
@@ -573,8 +572,8 @@ Der findes to formater til eksport af betalinger for Finland. LM02 (FI) bruges t
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Lagerstedsstyring II-løsningen (WMS II), der er tilgængelig i modulet **Lagerstyring**, dublerer funktioner i det **Lagerstyring**-modul, der blev udgivet i Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Erstattet af en anden funktion?**   | **Lagerstyring**-modulet, der blev udgivet i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 og Microsoft Dynamics AX 2012 R3 CU9, erstatter funktionerne i Lagerstyring II. Det nye modul har mere avancerede funktioner og mere fleksible processer til styring af lagersted end dem, der blev tilbudt til Lagerstedsstyring II. |
+| **Årsagen til forældelsen/fjernelsen** | Lagerstyring II-løsningen (WMS II), der er tilgængelig i modulet **Lagerstyring**, dublerer funktioner i det **Lagerstyring**-modul, der blev udgivet i Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Erstattet af en anden funktion?**   | **Lagerstyring**-modulet, der blev udgivet i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 og Dynamics AX 2012 R3 CU9, erstatter funktionerne i Lagerstyring II. Det nye modul har mere avancerede funktioner og mere fleksible processer til styring af lagersted end dem, der blev tilbudt til Lagerstedsstyring II. |
 | **Produktområder, der er berørt**         | Lagerstyring, salg og marketing, indkøb og forsyning   |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations version 1611.    |
 
@@ -610,7 +609,7 @@ En arbejdsgang til styring af oprettelse af medarbejdermål er et af flere arbej
 | **Årsagen til forældelsen/fjernelsen** | Performanceforbedring        |
 | **Erstattet af en anden funktion?**   | Nej                             |
 | **Produktområder, der er berørt**         | Kreditor               |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0 |
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF, AxD og AxBC integrationer
 
@@ -621,7 +620,7 @@ I Application Integration Framework (AIF) kan data udveksles med eksterne system
 | **Årsagen til forældelsen/fjernelsen** | Arkitekturen i AIF og AxDs kan ikke skaleres til en skytjeneste. Der var problemer med ydeevnen omkring masseimport.                                        |
 | **Erstattet af en anden funktion?**   | Denne funktion er erstattet af Struktur til dataimport/-eksport, som understøtter tilbagevendende masseimport/eksport. AxBC anbefaler vi, at du bruger tabellerne. |
 | **Produktområder, der er berørt**         | AxDs, AxBCs og AIF   |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0   |
 
 ### <a name="boms-without-bom-versions"></a>Styklister uden styklisteversioner
 
@@ -632,7 +631,7 @@ Når **Styklisteversioner**-konfigurationsnøglen var deaktiveret, blev styklist
 | **Årsagen til forældelsen/fjernelsen** | Når du bruger en konfigurationsnøgle til styring, skaleres styklisteversioner ikke i et skymiljø. |
 | **Erstattet af en anden funktion?**   | Nej                                                                                      |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Lagerstyring                                    |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                          |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                                          |
 
 ### <a name="brazilian-bordero"></a>Brasiliansk Bordero
 
@@ -674,7 +673,7 @@ Med dette mobilprogram kan brugerne gennemse vigtige virksomhedsmål.
 |   |  |
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af en anden funktion.   |
-| **Erstattet af en anden funktion?**   | Indholdspakken Overvågning af økonomisk performance til Microsoft PowerBI omfatter vigtige økonomiske nøgletal, der tidligere var tilgængelige i Business Analyzer. |
+| **Erstattet af en anden funktion?**   | Indholdspakken Overvågning af økonomisk performance til Microsoft Power BI omfatter vigtige økonomiske nøgletal, der tidligere var tilgængelige i Business Analyzer. |
 | **Produktområder, der er berørt**         | Finans      |
 | **Status**                         | Forældet: Brugen af Business Analyzer er forældet.    |
 
@@ -687,7 +686,7 @@ Konfiguration af forespørgsler vedrørende handelsstatistik, som kan bidrage ti
 | **Årsagen til forældelsen/fjernelsen** | Ældre tilgang til business intelligence (BI), lavt forbrug og et begrænset funktionssæt |
 | **Erstattet af en anden funktion?**   | Nye BI-løsninger til den aktuelle version af Dynamics AX                                      |
 | **Produktområder, der er berørt**         | Indkøb og forsyning, Kreditor, Salg og marketing, Debitor.         |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                               |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                                               |
 
 ### <a name="change-document-date-function-in-invoice-approval-journal"></a>Ændre dokumentdatofunktion i fakturagodkendelseskladde
 
@@ -696,7 +695,7 @@ Konfiguration af forespørgsler vedrørende handelsstatistik, som kan bidrage ti
 | **Årsagen til forældelsen/fjernelsen** | Lav belastning                                                               |
 | **Erstattet af en anden funktion?**   | Ja. Bilagsdato på den bogførte kreditorpostering kan ændres. |
 | **Produktområder, der er berørt**         | Kreditor                                                        |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                          |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                          |
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>ClieOp03-betalingsformat for Nederlandene
 
@@ -716,9 +715,9 @@ Overholdelsescenter var et Enterprise Portal-websted til administration af dokum
 | **Årsagen til forældelsen/fjernelsen** | Mangel på forbrug. Microsoft SharePoint indeholder samme egenskab, der var tilgængelig i Overholdelsescenter. |
 | **Erstattet af en anden funktion?**   | Nej   |
 | **Produktområder, der er berørt**         | Overholdelse og interne kontroller  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0    |
 
-### <a name="connector-for-microsoft-dynamics"></a>Forbindelse til Microsoft Dynamics
+### <a name="connector-for-microsoft-dynamics"></a>Connector til Microsoft Dynamics
 
 Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics CRM i Microsoft Dynamics ERP-applikationer.
 
@@ -726,8 +725,8 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af en anden funktion. |
 | **Erstattet af en anden funktion?**   | Common Data Service                                      |
-| **Produktområder, der er berørt**         | Forbindelse til Microsoft Dynamics                         |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                           |
+| **Produktområder, der er berørt**         | Connector til Microsoft Dynamics                         |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                           |
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>Containerenhed og flerdimensionale beholdninger
 
@@ -736,7 +735,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 | **Årsagen til forældelsen/fjernelsen** | Identiske funktioner |
 | **Erstattet af en anden funktion?**   | Ja. Denne funktionalitet er blevet erstattet af konsolideret batchordre-funktionssæt siden AX 2012. Denne funktion omfatter den konsoliderede disponible visning. |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Produktionsstyring, Lagerstyring, Salg og marketing  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0 |
 
 ### <a name="cue-group-metadata"></a>Køgruppemetadata
 
@@ -745,7 +744,7 @@ Dette værktøj blev brugt til at integrere vigtige data fra Microsoft Dynamics 
 | **Årsagen til forældelsen/fjernelsen** | Køgrupper blev brugt til at vise en eller flere køer i faktaboksområdet. Der var begrænset optagelse, og der var også problemer med ydeevnen, fordi en ændring af en post i en overordnet formular forårsagede en forespørgsel pr. kø i gruppen Kø. |
 | **Erstattet af en anden funktion?**   | Nej      |
 | **Produktområder, der er berørt**         | Alle moduler    |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0  |
 
 ### <a name="cue-metadata"></a>Kømetadata
 
@@ -774,7 +773,7 @@ Datapartitioner giver en logisk adskillelse af dataene i Microsoft Dynamics AX-d
 | **Årsagen til forældelsen/fjernelsen** | Datapartitioner blev introduceret i Microsoft Dynamics AX 2012 R2 for at give mulighed for dataisolering. I et almindeligt scenarie har en virksomhed datterselskaber, og data fra ét datterselskab bør ikke være synlige for et andet datterselskab, selvom begge datterselskaber, der administreres af samme it-afdeling. Dog var ekstra scripts og indirekte administrationsomkostninger i hele programmet påkrævet for at oprette nye partitioner og udfylde dem med data og til sikkerhedskopiering af data på partitionen. I skyen, hvor vi har adgang til PaaS-databasetjenester (platform som en tjeneste) (Microsoft Azure, SQL Database), er det langt mere effektivt at bruge en database som isolationscontainer end at udføre isolation i programmet. Uanset om datapartitionering er påkrævet for datterselskaber, for flere lejere eller blot af skaleringsårsager, mener vi, at scenarierne kan håndteres bedre gennem flere Finance and Operations-forekomster. |
 | **Erstattet af en anden funktion?**   | Kunder, der bruger datapartitioner, skal bruge flere forekomster af Finance and Operations, hvis separation på databaseniveau er af vigtighed.    |
 | **Produktområder, der er berørt**         | Alle moduler  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0  |
 
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Database- og filshare-lagring for vedhæftede filer
@@ -783,10 +782,10 @@ Microsoft Dynamics AX 2012 tillader lagring af vedhæftede filer i databasen og 
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Filsharelagring understøttes ikke længere, fordi skybaserede miljøer ikke kan kommunikere med lokale filshares. Databaselagring er forældet og erstattes af Azure Blob-lagring. Azure Blob-lagring svarer til lagring i databasen, fordi der kun er adgang til dokumenter via Dynamics 365 Finance and Operations-klientformularer. Dette giver den ekstra fordel, at pladsen til lagring ikke har en negativ effekt på databasens ydeevne. Blob-lagring er standardlagringsmekanismen til dokumentstyring, og den fungerer med det samme. |
+| **Årsagen til forældelsen/fjernelsen** | Filsharelagring understøttes ikke længere, fordi skybaserede miljøer ikke kan kommunikere med lokale filshares. Databaselagring er forældet og erstattes af Azure Blob-lagring. Azure Blob-lagring svarer til lagring i databasen, fordi der kun er adgang til dokumenter via Dynamics 365 for Finance and Operations-klientformularer. Dette giver den ekstra fordel, at pladsen til lagring ikke har en negativ effekt på databasens ydeevne. Blob-lagring er standardlagringsmekanismen til dokumentstyring, og den fungerer med det samme. |
 | **Erstattet af en anden funktion?**   | Databaselagring er forældet og erstattes af Azure Blob-lagring.   |
 | **Produktområder, der er berørt**         | Alle moduler  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0   |
 
 ### <a name="delimitation"></a>Afgrænsning
 
@@ -795,7 +794,7 @@ Microsoft Dynamics AX 2012 tillader lagring af vedhæftede filer i databasen og 
 | **Årsagen til forældelsen/fjernelsen** | Ingen brug af funktionen blev ikke fundet. |
 | **Erstattet af en anden funktion?**   | Nej                                     |
 | **Produktområder, der er berørt**         | Tid og Fremmøde                    |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0         |
 
 ### <a name="desktop-client"></a>Desktopklient
 
@@ -804,7 +803,7 @@ Microsoft Dynamics AX 2012 tillader lagring af vedhæftede filer i databasen og 
 | **Årsagen til forældelsen/fjernelsen** | Dynamics AX-klientoplevelsen er blevet ændret for at forbedre brugervenligheden på tværs af flere platforme og enheder.                      |
 | **Erstattet af en anden funktion?**   | Den nye webklient er baseret på skrivebordsformularens metadata- og programmeringsmodel, der er blevet ændret for at give plads til en omfattende webplatform. |
 | **Produktområder, der er berørt**         | Alle moduler  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0   |
 
 ### <a name="direct-database-connection"></a>Direkte databaseforbindelse
 
@@ -815,7 +814,7 @@ I Dynamics AX 2012 R3 kunne Retail Modern POS forbindes direkte med kanaldatabas
 | **Årsagen til forældelsen/fjernelsen** | Direkte databaseforbindelse krævede lavere sikkerhedsprotokoller og blev primært brugt til at opnå den bedst mulige ydeevne. På grund af bedre ydeevne og sikkerhedsmæssige forbedringer i Finance and Operations medfører denne funktion nu flere problemer, end den løser. |
 | **Erstattet af en anden funktion?**   | Nej Kun standard Retail Server-kommunikation understøttes nu.  |
 | **Produktområder, der er berørt**         | Kanaldatabase/Retail Modern POS   |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0  |
 
 ### <a name="dutch-swift-mt940"></a>Nederlandsk SWIFT MT940
 
@@ -844,7 +843,7 @@ Denne funktionalitet leverede XBRL-output (eXtensible Business Reporting Languag
 | **Årsagen til forældelsen/fjernelsen** | Har fået tildelt en enkelt klientplatform.  |
 | **Erstattet af en anden funktion?**   | Den nye webklient er baseret på skrivebordsformularens metadata- og programmeringsmodel, der er blevet ændret for at give plads til en omfattende webplatform. |
 | **Produktområder, der er berørt**         | Alle moduler  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0   |
 
 ### <a name="environmental-sustainability"></a>Miljømæssig bæredygtighed
 
@@ -853,7 +852,7 @@ Denne funktionalitet leverede XBRL-output (eXtensible Business Reporting Languag
 | **Årsagen til forældelsen/fjernelsen** | Lavt forbrug og begrænset funktionssæt  |
 | **Erstattet af en anden funktion?**   | Nej              |
 | **Produktområder, der er berørt**         | Overholdelse og interne kontroller, Kreditor  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0 |
 
 ### <a name="form-activex-and-managed-host-controls"></a>Kontrolelementer til ActiveX-formular og administrerede vært
 
@@ -862,7 +861,7 @@ Denne funktionalitet leverede XBRL-output (eXtensible Business Reporting Languag
 | **Årsagen til forældelsen/fjernelsen** | Kontrolelementerne til ActiveX og administreret vært er baseret på den forældede klient til stationære computere. |
 | **Erstattet af en anden funktion?**   | Kontrolstruktur, som kan udvides, understøtter opbygning af nye kontrolelementer, der er baseret på HTML, CSS og JavaScript, og er en førsteklasses kontrol i Microsoft Visual Studio-værktøjsmiljøet. |
 | **Produktområder, der er berørt**         | Alle moduler     |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.       |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0       |
 
 ### <a name="generate-prenotes-by-using-a-batch"></a>Opret adviseringer ved hjælp af en batch
 
@@ -920,7 +919,7 @@ Rapporter, der indeholder følgende menupunkter, er blevet fjernet: **Råbalance
 | **Årsagen til forældelsen/fjernelsen** | Økonomirapporter til Microsoft SQL Server Reporting Services (SSRS) er blevet erstattet af Management Reporter-funktioner og standardrapporter. |
 | **Erstattet af en anden funktion?**   | Management Reporter (med navnet **Økonomirapportering** i den aktuelle version af Dynamics AX)    |
 | **Produktområder, der er berørt**         | Finans   |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.   |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0   |
 
 ### <a name="infopart-and-formpart-metadata"></a>InfoPart og FormPart-metadata
 
@@ -929,7 +928,7 @@ Rapporter, der indeholder følgende menupunkter, er blevet fjernet: **Råbalance
 | **Årsagen til forældelsen/fjernelsen** | InfoPart og FormPart-metadata aktiverede oprettelsen af faktabokse for to forskellige klienter. |
 | **Erstattet af en anden funktion?**   | InfoPart-metadata, som var en definition i forenklet form, er konverteret til en formular ved hjælp af opgraderingsværktøj. FormPart-metadata, som refererede til en formular, er erstattet af en mere direkte reference, der oprettes af opgraderingsværktøj. |
 | **Produktområder, der er berørt**         | Alle moduler    |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.        |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0        |
 
 ### <a name="main-account-list-page"></a>Hovedkonto-listeside
 
@@ -940,7 +939,7 @@ En liste over konti for den juridiske enhed og relaterede saldooplysninger
 | **Årsagen til forældelsen/fjernelsen** | Saldooplysninger er tilgængelige på listesiden **Råbalance** pr. konto og dimension.  |
 | **Erstattet af en anden funktion?**   | **Hovedkonti** indeholder den samme liste over konti, som listesiden **Hovedkonto** indeholdt. Gittervisningen i **Hovedkonti** viser også en endnu mindre, gitterlignende visning. |
 | **Produktområder, der er berørt**         | Finans      |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0    |
 
 ### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Malaysia og Singapore bankpengestrømsrapport
 
@@ -975,15 +974,15 @@ Microsoft Dynamics AX 2012 administrerede ikke-realiseret købsmoms ved hjælp a
 | **Produktområder, der er berørt**         | Skat   |
 | **Status**                         | Forældet: En dato for fjernelse er ikke angivet for denne funktion. |
 
-### <a name="microsoft-outlook-integration"></a>Integration med Microsoft Outlook
+### <a name="microsoft-outlook-integration"></a>Microsoft Outlook-integration
 
 
 |   |  |
 |------------|--------------------|
-| **Årsagen til forældelsen/fjernelsen** | Denne funktionalitet er blevet erstattet af Microsoft Exchange Server-integration. |
+| **Årsagen til forældelsen/fjernelsen** | Denne funktion er blevet erstattet af Microsoft Exchange Server-integration. |
 | **Erstattet af en anden funktion?**   | Ja                                                                            |
-| **Produktområder, der er berørt**         | Salg og marketing                                                            |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                 |
+| **Produktområder, der er berørt**         | Sales and Marketing                                                            |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                                 |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Privat blokering af lager- og lokationsstyringskladder
 
@@ -994,7 +993,7 @@ Lager- og lokalitetsstyringskladderne understøtte ikke længere muligheden for 
 | **Årsagen til forældelsen/fjernelsen** | Ingen brug af funktionen blev ikke fundet. |
 | **Erstattet af en anden funktion?**   | Nej                                     |
 | **Produktområder, der er berørt**         | Lagerstyring                   |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0         |
 
 ### <a name="product-builder"></a>Product Builder
 
@@ -1005,7 +1004,7 @@ Product Builder blev brugt til at konfigurere varer dynamisk fra en salgsordre, 
 | **Årsagen til forældelsen/fjernelsen** | Product Builder viste X ++-kode for slutbrugere. Det understøttes ikke i den aktuelle version af Dynamics AX. Det er blevet fjernet for at undgå dobbelt vedligeholdelsesarbejde på overlappende kodebaser, hvor størrelsen kan tilpasses.  |
 | **Erstattet af en anden funktion?**   | Ja. Begrænsningsbaseret konfiguration blev introduceret i Dynamics AX 2012, hvor afskrivningen af Product Builder i fremtidige versioner allerede blev offentliggjort. Den begrænsningsbaserede konfigurationsteknologi vælges på produktmasterne for at aktivere konfigurationen. Du kan finde flere oplysninger under [Bygge en produktkonfigurationsmodel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger, Salg og marketing  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.      |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0      |
 
 ### <a name="production-floor-app"></a>Appen Production Floor
 Dette er appen til tabletenheder, der kører Windows 8.1 RT og Windows 8.1 Pro.
@@ -1027,7 +1026,7 @@ Med denne funktion kan du ændre navnet på en af de tre standardproduktdimensio
 | **Årsagen til forældelsen/fjernelsen** | Den aktuelle version af Dynamics AX understøtter ikke ændringer af etiketter på kørselstidspunktet. |
 | **Erstattet af en anden funktion?**   | Nej                                                                            |
 | **Produktområder, der er berørt**         | Administration af produktoplysninger                                                |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                                |
 
 ### <a name="retail-server-connectivity-using-http"></a>Retail Server-forbindelse ved hjælp af HTTP
 
@@ -1037,8 +1036,8 @@ I Dynamics AX 2012 R3 kunne Retail Server fungere ved hjælp af HTTP-kommunikati
 |------------|--------------------|
 | **Årsagen til forældelsen/fjernelsen** | På grund af nye sikkerhedskrav understøttes nu kun sikret kommunikation ved hjælp af TLS 1.2 (eller nyere, afhængigt af tilgængelighed). Det selvbetjente installationsprogram konfigurerer automatisk computeren til denne kommunikation. |
 | **Erstattet af en anden funktion?**   | Nej Kun standard HTTPS-kommunikation understøttes nu. |
-| **Produktområder, der er berørt**         | Retail Server  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
+| **Produktområder, der er berørt**         | Detailserver  |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0 |
 
 ### <a name="role-center-pages"></a>Sider for rollebaserede områder
 
@@ -1056,7 +1055,7 @@ I Dynamics AX 2012 R3 kunne Retail Server fungere ved hjælp af HTTP-kommunikati
 | **Årsagen til forældelsen/fjernelsen** | Lavt forbrug og begrænset funktionssæt |
 | **Erstattet af en anden funktion?**   | Nej                                           |
 | **Produktområder, der er berørt**         | Amerikansk moms                                 |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.               |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0               |
 
 ### <a name="sites-services"></a>Webstedstjenester
 
@@ -1067,7 +1066,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 | **Årsagen til forældelsen/fjernelsen** | Microsoft Azure-infrastrukturen, der bruges af Dynamics AX, indeholder nye funktioner, der kan bruges i stedet (f.eks Azure websteder). |
 | **Erstattet af en anden funktion?**   | Nej   |
 | **Produktområder, der er berørt**         | Rekruttering af personale, sagsstyring, anmodningen om tilbud, registrering af kreditorer, arbejdsområder til samarbejde for salgsmuligheder og kampagner  |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0    |
 
 ### <a name="ssas-demand-forecasting-strategy"></a>Strategi for SSAS-behovsprognose
 
@@ -1076,7 +1075,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 | **Årsagen til forældelsen/fjernelsen** | Udformningen af funktionen understøttes ikke i den nye cloud-arkitektur. |
 | **Erstattet af en anden funktion?**   | Strategi for Azure Machine Learning-behovsprognose                           |
 | **Produktområder, der er berørt**         | Varedisponering                                                              |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                               |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0                                               |
 
 ### <a name="vendor-invoice-pool-excluding-posting-details"></a>Kreditorfakturapulje ekskl. bogføringsdetaljer
 
@@ -1085,7 +1084,7 @@ Med webstedstjenester kan du opbygge websteder, der udvider dine forretningsproc
 | **Årsagen til forældelsen/fjernelsen** | Lav belastning. Denne funktionalitet er blevet erstattet af fakturajournalen med arbejdsgangens funktionalitet. |
 | **Erstattet af en anden funktion?**   | Funktioner i arbejdsgang for fakturajournal.     |
 | **Produktområder, der er berørt**         | Kreditor |
-| **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
+| **Status**                         | Fjernet fra og med Dynamics AX 7.0    |
 
 
 ### <a name="virtual-company-accounts"></a>Virtuelle regnskaber
@@ -1097,7 +1096,7 @@ Funktionen til virtuelle regnskaber understøttes ikke længere i Dynamics AX. F
 | **Årsagen til forældelsen/fjernelsen** | - Virtuelle regnskaber skal konfigureres, før data gemmes i tabellerne. Baglæns tilpasning af virtuelle regnskaber til en eksisterende installation er meget vanskeligt.<br><br>- Da der har været meget datanormalisering i den aktuelle version af Microsoft Dynamics AX, er det blevet meget vanskeligt at vide, hvad der skal tilføjes i tabelsamlingen. For eksempel er det svært at vide, hvilke tabeller der skal deles. Alle de tabeller, der refereres til fra tabeller, der er i et virtuelt regnskab, skal også tilføjes. Grundet tabelnormalisering skal selv simple stamdata, der er spredt over flere tabeller, være en del af det virtuelle regnskab. Eventuelle fejl, der er foretaget her, vil medføre funktionelle problemer.<br><br>- Når en tabel er en del af et virtuelt regnskab, mister den oplysninger om oprindelsen af dataene, og kun det virtuelle regnskab registreres.   |
 | **Erstattet af en anden funktion?** | Globale tabeller kan bruges til at gøre tabeller tilgængelige fra alle regnskaber. Der er i øjeblikket ingen erstatning. |   
 | **Produktområder, der er berørt**       | Alle moduler |   
-| **Status**                       | Fjernet fra og med Dynamics AX 7.0.   |   
+| **Status**                       | Fjernet fra og med Dynamics AX 7.0   |   
 
 ### <a name="windows-8-tablet-app"></a>App til Windows 8-tablet
 
@@ -1127,5 +1126,4 @@ Windows 8 tablet-appen leverede funktionalitet til udgiftsregistrering og -godke
 |  <strong>Erstattet af en anden funktion?</strong>  | Management Reporter (med navnet <strong>Økonomirapportering</strong> i den aktuelle version af Dynamics AX) |
 |     <strong>Produktområder, der er berørt</strong>     |                                              Finans                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
-
 

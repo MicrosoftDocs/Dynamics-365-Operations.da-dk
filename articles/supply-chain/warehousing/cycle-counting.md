@@ -1,13 +1,13 @@
 ---
-title: "Cyklusoptælling"
-description: "I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring."
+title: Cyklusoptælling
+description: I denne artikel beskrives, hvordan du kan bruge cyklusoptælling med den lagerstedsløsning, der er tilgængelig i Lagerstedsstyring. Denne artikel gælder ikke for lagerstedsløsninger, der findes i Lagerstyring.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323220"
 ---
-
 # <a name="cycle-counting"></a>Cyklusoptælling
 
 [!include [banner](../includes/banner.md)]
@@ -138,7 +137,6 @@ Du kan justere forskelle i den optalte værdi og derefter acceptere den optælli
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 [Konfigurer mobilenheder til lagerstedsarbejde](configure-mobile-devices-warehouse.md)
-
 
 
 

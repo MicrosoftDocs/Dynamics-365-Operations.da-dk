@@ -1,13 +1,13 @@
 ---
-title: "Indkøbspolitikker"
-description: "Denne artikel indeholder oplysninger om indkøbspolitikker. En indkøbspolitik er en samling af regler, der styrer rekvisitionsprocessen. Indkøbspolitikker er en hjælp for indkøbsadministratorer, der skal implementere indkøbsstrategier, da de udgør en politikstruktur, der tilpasses organisationens strategiske indkøbsbehov."
+title: Indkøbspolitikker
+description: Denne artikel indeholder oplysninger om indkøbspolitikker. En indkøbspolitik er en samling af regler, der styrer rekvisitionsprocessen. Indkøbspolitikker er en hjælp for indkøbsadministratorer, der skal implementere indkøbsstrategier, da de udgør en politikstruktur, der tilpasses organisationens strategiske indkøbsbehov.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358755"
 ---
-
 # <a name="purchasing-policies"></a>Indkøbspolitikker
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Reglen for oprettelse af indkøbsordre og efterspørgselskonsolidering definerer
     -   **Tillad ikke efterspørgselskonsolidering** – Ingen godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. Denne indstilling vælges som standard og gælder kun for de indkøbsrekvisitionslinjer, der kræver manuel behandling til oprettelse af indkøbsordrer.
     -   **Tillad altid efterspørgselskonsolidering** – Alle godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. **Bemærk:** Hvis du vælger indstillingen **Tillad altid efterspørgselskonsolidering** på fanen **Efterspørgselskonsolidering**, men du vælger indstillingen **Opret automatisk indkøbsordrer** på fanen **Manuel oprettelse af indkøbsordre**, holdes alle indkøbsrekvisitioner til manuel behandling.
     -   **Tillad efterspørgselskonsolidering på disse betingelser** – Definer de kriterier, der bestemmer om godkendte indkøbsrekvisitionslinjer er berettiget til efterspørgselskonsolidering. Du kan angive kriterierne efter indkøbskategori og leverandør for hver type indkøbsrekvisitionslinje. Hvis du vælger **Tillad efterspørgselskonsolidering på disse betingelser**, kan du angive kriterierne efter indkøbskategori og kreditor for hver type indkøbsrekvisitionslinje. Når du vælger en indkøbskategori, vælges også evt. underkategorier, der er defineret til den pågældende indkøbskategori. Hvis du vælger indstillingen **Alle** for en bestemt linjetype, er alle indkøbsrekvisitionslinjer for den pågældende linjetype tilgængelige til efterspørgselskonsolidering.
-
 
 
 

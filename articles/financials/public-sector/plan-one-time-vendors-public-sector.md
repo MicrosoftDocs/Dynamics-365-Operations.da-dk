@@ -1,13 +1,13 @@
 ---
-title: "Planlægning af engangsleverandører i den offentlige sektor"
+title: Planlægning af engangsleverandører i den offentlige sektor
 description: Denne artikel beskriver, hvordan du forbereder import og oprettelse af flere engangskreditorer og fakturaer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 29468ab0dc20ff0c9c15ad242cfd5900c321ec0d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 90f409c170da0a2c7bc0b55512a39f2d0ea2513b
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370303"
 ---
-
 # <a name="plan-for-one-time-vendors-in-the-public-sector"></a>Planlægning af engangsleverandører i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -92,7 +91,7 @@ Følgende tabel viser de felter, som den importerede fil skal indeholde. Hver en
 |------------------------------------------------------|------------------------------------------|
 | Antal                                               | Regnskabsfordelingslinjenummer      |
 | Finanskonto                                       |                                          |
-| Procent                                              | Decimalværdier er tilladt.              |
+| Procent                                              | Decimalværdier er tilladt.              |
 
 
 
@@ -106,7 +105,6 @@ Når du har konfigureret forudsætninger, du skal bruge, kan du se [Engangslever
 [Engangsleverandører i den offentlige sektor](one-time-vendors-public-sector.md)
 
 [Kreditor i den offentlige sektor](accounts-payable-public-sector.md)
-
 
 
 

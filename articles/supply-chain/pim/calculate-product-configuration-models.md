@@ -1,13 +1,13 @@
 ---
-title: "Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller"
-description: "I dette emne beskrives beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger."
+title: Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
+description: I dette emne beskrives beregninger for produktkonfigurationsmodeller, og hvordan du bruger beregninger sammen med begrænsninger.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntimeConfigurator
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: daae96502f705f05076cb351aa1baefc37957803
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363378"
 ---
-
 # <a name="calculations-for-product-configuration-models-faq"></a>Ofte stillede spørgsmål om beregninger for produktkonfigurationsmodeller
 
 [!include [banner](../includes/banner.md)]
@@ -102,7 +101,6 @@ Beregninger er ikke inkluderet i valideringen. Du skal teste produktkonfiguratio
 
 1.  Klik på **Administration af produktoplysninger** &gt; **Almindelige** &gt; **Produktkonfigurationsmodeller**.
 2.  Vælg en produktkonfigurationsmodel, og derefter skal du i handlingsruden klikke på **Test** i gruppen **Kør**.
-
 
 
 

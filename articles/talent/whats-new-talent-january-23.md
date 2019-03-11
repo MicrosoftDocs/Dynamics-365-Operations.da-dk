@@ -1,0 +1,57 @@
+---
+title: Nyheder eller ændringer i Dynamics 365 for Talent Core HR (23. januar 2019)
+description: Dette emne beskriver funktioner, der enten er nye eller ændrede i Microsoft Dynamics 365 for Talent Core HR.
+author: Darinkramer
+manager: AnnBe
+ms.date: 01/23/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2019-01-23
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: 135be837a82af8cee22d83c015a78da3b89b7978
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303674"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Nyheder eller ændringer i Dynamics 365 for Talent Core HR (23. januar 2019)
+
+[!include [banner](includes/banner.md)]
+
+**Build 8.1.2121**
+
+Dette emne beskriver funktioner, der enten er nye eller ændrede i Core HR.
+
+## <a name="changes"></a>Ændringer
+
+### <a name="import-of-employee-fixed-compensation-not-working-when-creating-new-fixed-compensation-records"></a>Import af fast løn for medarbejdere fungerer ikke, når du opretter nye poster for fast løn
+Er der foretaget en ændring af den enhed for fast løn til medarbejdere, så kompensationsniveauet hentes ved import. Før denne version blev der vist en meddelelse, som angav, at niveauet var påkrævet.
+
+### <a name="remove-the-minimum-balance-field-from-the-time-off-request-dialog-box"></a>Fjerne feltet med minimumsaldo fra dialogboksen til anmodning om fridag
+Feltet **Mindste saldo** er blevet fjernet fra dialogboksen **Anmodning om fridage**. Denne ændring påvirker alle de områder, hvor der kan anmodes om fridage.
+
+### <a name="data-upgrade-for-compensation-levels-not-updating-in-all-scenarios"></a>Dataopgradering for kompensationsniveauer, der ikke opdateres i alle scenarier
+Er der foretaget en ændring, der opdaterer kompensationsniveauet i planer for fast løn. Denne ændring angiver en værdi for kompensationsniveauet i planer for faste løn for det job, der er tildelt til medarbejderen.
+
+### <a name="payroll-information-in-the-manage-changes-page-is-only-available-when-logged-in-as-system-administrator"></a>Lønoplysninger på siden Administrer ændringer er kun tilgængelige, når brugeren er logget på som systemadministrator.
+Denne ændring giver medarbejdere med rollen Lønadministrator adgang til lønoplysninger på siden **Tidslinje for ændringer > Administrere ændringer** for stillingen.
+
+### <a name="job-fields-default-to-positions"></a>Jobfelter får som standard værdien stillinger
+Når jobbet ændres for en stilling, anvendes stillingsværdien for jobfelter som standard. Der vises en meddelelse med mulighed for at acceptere standardværdierne eller beholde de eksisterende værdier for disse felter.
+
+### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Prøvetiden og kalenderen vises ikke for kommende medarbejdere.
+Med denne ændring er felterne **Prøvetid** og **Kalender** blevet føjet til siden **Administrer ændringer**, så kommende og tidligere medarbejdere kan indtaste data.
+
+### <a name="platform-update-23"></a>Platformsopdatering 23
+Rettelser af mindre programfejl er inkluderet som en del af platformsopdatering 23. Du kan finde flere oplysninger i [Nyheder eller ændringer i Dynamics 365 for Finance and Operations platformsopdatering 23 (januar 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

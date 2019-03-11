@@ -1,32 +1,31 @@
 ---
 title: Produktidentifikatorer
-description: "Dette emne indeholder oplysninger om de forskellige typer produkt-id'er og forklarer, hvordan du kan føje produkt-id'er til produktdataene."
+description: Dette emne indeholder oplysninger om de forskellige typer produkt-id'er og forklarer, hvordan du kan føje produkt-id'er til produktdataene.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335410"
 ---
-
 # <a name="product-identifiers"></a>Produktidentifikatorer 
 
 [!include [banner](../includes/banner.md)]
@@ -37,13 +36,13 @@ Når du arbejder med produkter i produktionen eller på et lagersted i Microsoft
 
 ## <a name="unique-product-numberproduct-id"></a>Entydigt produktnummer/produkt-id
 
-I Microsoft Dynamics 365 for Finance and Operations er det primære id for et produkt produktnummeret (dvs. det entydige produkt-id). Dette nummer kan genereres automatisk fra en nummerserie, eller det kan manuelt knyttes til et produkt. For produktvarianter kan numrene defineres via produktnomenklaturskabelonen.
+I Microsoft Dynamics 365 for Finance and Operations er det primære id for et produkt produktnummeret (dvs. det entydige produkt-ID). Dette nummer kan genereres automatisk fra en nummerserie, eller det kan manuelt knyttes til et produkt. For produktvarianter kan numrene defineres via produktnomenklaturskabelonen.
 
 I mange tilfælde er produktnummeret ikke oprindeligt oprettet i Finance and Operations. I stedet tilknyttes til et produkt i et system til administration af produktlivscyklus (PLM) eller et system til administration af produktoplysninger (PDM). I så fald skal du bruge dataenheder til at importere produkterne og produktvarianterne. Finance and Operations bruger derefter numrene i alle handlinger.
 
 Når du implementerer Finance and Operations, skal du foretage specielle overvejelser med hensyn til din strategi for produktnumre. En godt nummereringssystem forbedrer logistikprocesser og hjælper med til at forhindre fejl. Et godt produkt-id må højst være på 15 tegn. Ideelt set har det mindre end 10 tegn og indeholder mere end fem klassificeringstegn. Du kan også bruge søgenavne til at aktivere hurtig søgning. Et søgenavn er et yderligere navn, der repræsenterer klassificeringer af et produkt.
 
-Når du bruger fælles Common Data Service (CDS), er produktnummeret i Finance and Operations også produktnummeret i CDS. Produktvarianter synkroniseres til CDS som specifikke produkter.
+Når du bruger Common Data Service (CDS), er produktnummeret i Finance and Operations også produktnummeret i CDS. Produktvarianter synkroniseres til CDS som specifikke produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Varenummer og produktdimensioner
 
@@ -186,4 +185,3 @@ Du kan nu bruge **Common Data Service-id-enhed for produktenhed**, **Id-koder fo
 ## <a name="related-topic"></a>Relateret emne
 
 [Søge efter produkter og produktvarianter under ordreindtastning](search-products-product-variants.md)
-

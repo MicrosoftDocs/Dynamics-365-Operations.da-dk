@@ -1,13 +1,13 @@
 ---
 title: Konfigurere centraliserede betalinger
-description: "Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen."
+description: Følg disse trin for at forberede behandlingen af betalinger i én juridisk enhed på vegne af andre juridiske enheder i organisationen.
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb0769d605b831da09046a1e7bf0c2a704dba398
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2e309655bbc1d0fe7a088062b90fab34c642ab29
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361906"
 ---
-
 # <a name="set-up-centralized-payments"></a>Konfigurere centraliserede betalinger
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Når du opretter en betaling i én juridisk enhed, der udligner fakturaer i andr
 
 ## <a name="set-up-default-descriptions"></a>Konfigurere standardbeskrivelser
 Du kan definere standardbeskrivelser af interne udligningsbilag. Standardbeskrivelsen medtages i skyldig til- og skyldig fra-posteringer i løbet af udligningsprocessen på tværs af virksomheder. På siden **Standardbeskrivelser** kan du oprette nye beskrivelser til både **Intern kundeudligning** og **Intern kreditorudligning** ved at vælge et sprog og derefter indtaste teksten.
-
 
 
 

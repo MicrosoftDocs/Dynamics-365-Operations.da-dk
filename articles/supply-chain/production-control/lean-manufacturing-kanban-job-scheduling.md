@@ -1,13 +1,13 @@
 ---
 title: Kanban-job til lean manufacturing
-description: "Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job."
+description: Denne artikel indeholder oplysninger om visuel kontrol med kanban-jobplanlægning og forskellige metoder til at planlægge kanban-job.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 52e69ed130f28701e6e393327f9bd634eacd3b1f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5f1044e6731fd757532e34292109b9d81ca38719
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315929"
 ---
-
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-job til lean manufacturing
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Listesiden **Tidsplanlægning af kanban-job** indeholder en faktaboks, der viser
 
 <a name="additional-resources"></a>Yderligere ressourcer
 --------
-
 
 
 

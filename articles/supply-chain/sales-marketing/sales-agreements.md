@@ -1,13 +1,13 @@
 ---
 title: Salgsaftaler
-description: "Dette emne indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter."
+description: Dette emne indeholder oplysninger om salgsaftaler. En salgsaftale er en kontrakt, der forpligtiger kunden til at købe produkter i et bestemt antal eller for et bestemt beløb over en periode mod at få særlige priser og rabatter.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309512"
 ---
-
 # <a name="sales-agreements"></a>Salgsaftaler
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Hvis du har oprettet (frigivet) en salgsordre i henhold til en salgsaftale, kan 
 | Antal                                                          | Hvis du angiver et antal, der overstiger det antal, der er angivet på salgsaftalelinjen, og afkrydsningsfeltet **Maks. gennemtvinges** er markeret, åbnes der en dialogboks, hvor du bliver bedt om at gemme det ændrede antal. Klik på **Ja** for at fjerne linket til salgsaftalelinjen og genberegne prisen. Klik på **Nej** for at fjerne linket til salgsaftalelinjen uden at genberegne prisen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnere en vare, der er bestilt fra en salgsaftale
-Når en kunde returnerer et produkt, der er bestilt fra en salgsaftale, kan Microsoft Dynamics 365 for Finance and Operations automatisk finde og opdatere den relaterede salgsaftaleforpligtelse for at afspejle ændringen i antal eller beløb. Ved at oprette en returordre, der er baseret på den oprindelige salgsordre, der er knyttet til en salgsaftale, oprettes der en relation mellem en salgsaftaleforpligtelsen, salgsordrelinjen og returordrefakturaen.  
+Når en kunde returnerer et produkt, der blev bestilt fra en salgsaftale, kan Microsoft Dynamics 365 for Finance and Operations automatisk finde og opdatere den relaterede salgsaftaleforpligtelse for at afspejle ændringen i antal eller beløb. Ved at oprette en returordre, der er baseret på den oprindelige salgsordre, der er knyttet til en salgsaftale, oprettes der en relation mellem en salgsaftaleforpligtelsen, salgsordrelinjen og returordrefakturaen.  
 
 Hvis du ikke vil modregne antallet af returnerede varer fra salgsaftaleforpligtelsen, kan du bruge kontrolelementet **Fjern link** på siden **Returner ordre** til at fjerne tilknytningen mellem returvareordren og salgsaftaleforpligtelsen. Hvis du skal genoprette tilknytningen senere, skal du klikke på **Opret link**.  
 
@@ -111,7 +110,6 @@ I nogle situationer, hvor salgsordrer oprettes indirekte, som når du opretter e
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Økonomiske dimensioner for salgsaftaler
 Du kan kopiere økonomiske dimensioner enten til dokumentoverskrifter eller til enkelte linjer i en salgsaftale. Du kan til enhver tid ændre dimensionerne på en aftaleoverskrift eller en aftalelinje. I så fald kopieres dimensionerne automatisk til aftræksoverskriften eller aftrækslinjerne i aftræksordrer.
-
 
 
 

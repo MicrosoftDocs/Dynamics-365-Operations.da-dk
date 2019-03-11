@@ -1,13 +1,13 @@
 ---
 title: Modtage kreditorer
-description: "I dette emne beskrives processen til modtagelse af nye kreditorer. I emnet beskrives de handlinger, der kræves af forskellige roller under denne proces."
+description: I dette emne beskrives processen til modtagelse af nye kreditorer. I emnet beskrives de handlinger, der kræves af forskellige roller under denne proces.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322139"
 ---
-
 # <a name="onboard-vendors"></a>Modtage kreditorer
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ I følgende tabel vises de trin og roller, der er involveret i processen.
 | Administrator            | | | Opret en bruger i Finance and Operations og Microsoft Azure. | | | |
 | Kreditors kontaktperson    | | | Send e-mail til kontaktpersonen. | Registrer oplysninger om kreditoren. | | |
 
-For en hurtig demonstration af processen til onboarding af kreditor kan du se denne korte YouTube-video: [Onboarde en ny kreditor i Dynamics 365 for Finance and Operations] (https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Du kan se en hurtig demonstration af processen til onboarding af kreditor i denne korte YouTube-video: [Onboarde en ny kreditor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Import af anmodning om registrering af mulig kreditor
 
@@ -67,7 +66,7 @@ I følgende tabel vises de oplysninger, som denne enhed indeholder, og som kan i
 | Kontaktpersonens mellemnavn | Mellemnavnet på den person, der inviteres til at registrere kreditoroplysninger. |
 | Kontaktpersonens efternavn   | Efternavnet på den person, der inviteres til at registrere kreditoroplysninger. |
 | Kontaktpersonens e-mail       | Den e-mailadresse, der skal bruges til at oprette en ny bruger i Finance and Operations, og som vil blive registreret i lejerens Azure Active Directory (Azure AD)-konto. |
-| Afsendelsesdato               | Den dato, hvor anmodningen blev oprettet i et eksternt system. |
+| Sendt dato               | Den dato, hvor anmodningen blev oprettet i et eksternt system. |
 | Juridisk enhed                 | Den juridiske enhed, hvor kreditoren anmoder om at blive kreditor. Denne værdi skal være en kode for en juridisk enhed, der er registreret i Finance and Operations. Hvis ingen værdi modtages under importprocessen, anvendes en værdi fra indkøbs- og forsyningsparametrene. |
 | Kreditortype                  | Kreditoren kan enten være en organisation eller en person. Kreditortypen bestemmer, hvordan kreditoren oprettes til slut. |
 
@@ -174,5 +173,4 @@ Ved hjælp af handlingen **Slet** i anmodningen om registrering af mulig kredito
 |  Oprettet kreditoranmodning  |                                                                     Kreditorregistreringsguiden er fuldført.                                                                      | Der oprettes en anmodning om at deaktivere brugeren, og anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.<blockquote>[!NOTE]<br>Du kan ikke bruge handlingen <strong>Slet</strong>, når kreditoranmodningen er i en evalueringsproces i arbejdsgangen.</blockquote> |
 |         Godkendt         |                                                                               Kreditoranmodningen er godkendt.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
 |         Afvist         |                                                                               Kreditoranmodningen slettes.                                                                               |                                                                                                   Anmodningen om registrering af mulig kreditor, de data, der blev angivet i kreditorregistreringsguiden, og kreditoranmodningen slettes.                                                                                                    |
-
 

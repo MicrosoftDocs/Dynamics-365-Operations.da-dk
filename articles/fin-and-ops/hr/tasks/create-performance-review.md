@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en performancegennemgang
-description: "Denne fremgangsmåde viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen."
+description: Denne fremgangsmåde viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338469"
 ---
 # <a name="create-a-performance-review"></a>Oprette en performancegennemgang
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne fremgangsmåde viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen. Denne procedure blev oprettet ved hjælp af demodatafirmaet USMF. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Denne fremgangsmåde viser, hvordan du opretter en performanceevaluering, og beskriver formålet med hvert afsnit i evalueringen. Denne procedure blev oprettet ved hjælp af demodatafirmaet USMF. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 1. Klik på Medarbejderselvbetjening.
 2. Klik på Ny evaluering for at oprette en ny evaluering.
@@ -79,5 +79,4 @@ Denne fremgangsmåde viser, hvordan du opretter en performanceevaluering, og bes
     * Som evalueringen bevæger sig gennem statusserne, kan medarbejderen og lederen tilføje kommentarer for de enkelte mål eller kompetencer.  
 42. Klik på fanen Godkendelser.
     * Arbejderen og lederen kan godkende evalueringen. Når alle nødvendige godkendelser er fuldført, status ændres til Fuldført, og der foretages ingen yderligere ændringer.  
-
 

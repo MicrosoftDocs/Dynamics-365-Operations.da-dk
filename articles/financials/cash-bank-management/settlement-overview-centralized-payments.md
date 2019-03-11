@@ -1,13 +1,13 @@
 ---
 title: Oversigt over udligning for centraliserede betalinger
-description: Dette emne indeholder beskrivelser af udligning af centraliserede betalinger til Microsoft Dynamics 365 for Finance and Operations.
+description: I dette emne beskrives udligning for centraliserede betalinger for Microsoft Dynamics 365 for Finance and Operations.
 author: abruer
 manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
 ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358571"
 ---
-
 # <a name="settlement-overview-for-centralized-payments"></a>Oversigt over udligning for centraliserede betalinger
 
 [!include [banner](../includes/banner.md)]
@@ -109,4 +108,3 @@ For kreditorbetalinger bruger posteringerne for forfalden til og forfalden fra i
 
 ## <a name="withholding-tax"></a>A-skat
 Den kreditorkonto, der er tilknyttet fakturaen, bruges til at bestemme, om der skal beregnes A-skat. Hvis der beregnes A-skat, beregnes den i den juridiske enhed, der er tilknyttet fakturaen. Hvis der anvendes forskellige valutaer i de juridiske enheder, bruges valutakursen fra den juridiske enhed, der er tilknyttet fakturaen.
-

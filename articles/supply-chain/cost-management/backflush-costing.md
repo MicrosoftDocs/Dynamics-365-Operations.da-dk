@@ -1,13 +1,13 @@
 ---
-title: "Efterkalkuleret varetræk"
-description: "I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing."
+title: Efterkalkuleret varetræk
+description: I dette emne introduceres begrebet efterkalkuleret varetræk, der bruges til lean manufacturing.
 author: cvocph
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9fe717752da4c697cf0d896c0d40832330f0d118
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352706"
 ---
-
 # <a name="backflush-costing"></a>Efterkalkuleret varetræk
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ For produkter, der leveres af et produktionsflow, skal styklistekalkulationen ba
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Kalkulation, der er baseret på produktionsflowet
 
-Lean manufacturing til Microsoft Dynamics 365 for Finance and Operations er uafhængig af ruter. Omkostningsberegningen for produkter, der leveres fra et produktionsflow, kan baseres på selve produktionsflowet. Før beregningen kan udføres skal en kanban-regel oprettes, der leverer produktet fra produktionsflowet. Hvis et produkt kan leveres fra flere produktionsflow på det samme sted på beregningsdatoen, kan du vælge produktionsflowet for styklistekalkulationen. På siden **Standardproduktionsflow** kan du konfigurere et produktionsflow for standard for hver vare. Hvis der findes flere kanban-regler for samme produkt i det produktionsflow, der er aktivt på beregningsdatoen, vælges den første kanban-regel, der er aktiv for beregningen.
+lean manufacturing til Microsoft Dynamics 365 for Finance and Operations er uafhængig af ruter. Omkostningsberegningen for produkter, der leveres fra et produktionsflow, kan baseres på selve produktionsflowet. Før beregningen kan udføres skal en kanban-regel oprettes, der leverer produktet fra produktionsflowet. Hvis et produkt kan leveres fra flere produktionsflow på det samme sted på beregningsdatoen, kan du vælge produktionsflowet for styklistekalkulationen. På siden **Standardproduktionsflow** kan du konfigurere et produktionsflow for standard for hver vare. Hvis der findes flere kanban-regler for samme produkt i det produktionsflow, der er aktivt på beregningsdatoen, vælges den første kanban-regel, der er aktiv for beregningen.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Beregning, der er baseret på ruten
 
@@ -122,7 +121,6 @@ Kør efterkalkuleret varetræk for periodisk at vurdere IGVF og producere en ult
     -   Alle indirekte omkostninger, der er beregnet for det anvendte materiale i perioden, beregnes og fratrækkes fra IGVF. De resterende indirekte omkostninger bogføres som en afvigelse.
 
 5.  Beregn afvigelserne i produktionen til standardomkostninger. Afvigelsen beregnes pr. kostgruppe.
-
 
 
 

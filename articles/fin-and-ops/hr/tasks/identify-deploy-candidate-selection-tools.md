@@ -1,13 +1,13 @@
---- 
-title: "Identificere og installere kandidatudvælgelsesværktøjer"
-description: "Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder."
+---
+title: Identificere og installere kandidatudvælgelsesværktøjer
+description: Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besætte ledige stillinger, specielt når en stilling kræver et specielt sæt færdigheder.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: df7956cfdc3c470b5e652b62e659060120cdd770
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332719"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identificere og installere kandidatudvælgelsesværktøjer
 
@@ -57,5 +57,4 @@ Det kan være svært at finde en kvalificeret pulje med ansøgere, der kan besæ
     * Rapporten viser de bedste forekomster øverst i rapporten.  Du kan se, at der er vist et kløftelement.  Det er forskellen mellem det niveau, der blev angivet i kompetencesøgningen, og niveauet for den færdighed, som er tildelt til personen.  
 24. Luk siden.
 25. Klik på Gem.
-
 

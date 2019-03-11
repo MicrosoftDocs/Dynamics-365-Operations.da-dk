@@ -1,13 +1,13 @@
 ---
-title: "Spore genererede rapportresultater og sammenligne dem med basisværdier"
-description: "Dette emne indeholder oplysninger om, hvordan du kan sammenligne resultaterne af oprettede ER-rapporter med basisrapportværdier."
+title: Spore genererede rapportresultater og sammenligne dem med basisværdier
+description: Dette emne indeholder oplysninger om, hvordan du kan sammenligne resultaterne af oprettede ER-rapporter med basisrapportværdier.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 7f7877ccaa0c45ab5f0032d6808280e3c47a43ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317930"
 ---
-
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spore genererede rapportresultater og sammenligne dem med basisværdier
 
 [!include[banner](../includes/banner.md)]
@@ -40,4 +39,3 @@ Du kan gemme individuelle basisprogramfiler til ethvert ER-format. Filer betragt
 Du kan evaluere sporingen for at analysere, om de elektroniske dokumenter, der genereres, medtager det forventede indhold. Du kan foretage denne evaluering i et UAT-testmiljø til brugeraccept, når kodebasen er blevet ændret (f.eks. når du har overflyttet til en ny forekomst af programmet, installeret hotfix-pakker eller implementeret ændringer af koden). På denne måde kan du sikre dig, at vurderingen ikke påvirker udførelsen af ER-rapporter, der er i brug. For mange ER-rapporter kan evalueringen foretages i uovervåget tilstand.
 
 Du kan finde flere oplysninger om denne funktion ved at afspille opgaveguiderne **ER Generere rapporter og sammenligne resultater (del 1)** og **ER Generere rapporter og sammenligne resultater (del 2)**, der er en del af forretningsprocessen **7.5.4.3 Test it-ydelser og -løsninger ( 10679)** og kan hentes fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Disse opgaveguider gennemgår, hvordan ER-strukturen konfigureres til at bruge basisfiler for at evaluere genererede elektroniske dokumenter.
-

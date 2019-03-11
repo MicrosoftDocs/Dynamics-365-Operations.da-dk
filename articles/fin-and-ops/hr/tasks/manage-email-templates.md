@@ -1,13 +1,13 @@
---- 
+---
 title: Administrere mailskabeloner
-description: "Du kan overføre oplysninger fra din organisations database til bogmærkerne i et nyt dokument og bruge dem i skabeloner, der kan hjælper dig med at kommunikere effektivt med ansøgere og kandidater."
+description: Du kan overføre oplysninger fra din organisations database til bogmærkerne i et nyt dokument og bruge dem i skabeloner, der kan hjælper dig med at kommunikere effektivt med ansøgere og kandidater.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8eface8fd47378e25c7baeca9a84fa41097dfbe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309604"
 ---
 # <a name="manage-email-templates"></a>Administrere mailskabeloner
 
@@ -50,5 +50,4 @@ Du kan overføre oplysninger fra din organisations database til bogmærkerne i e
 8. Fortsæt med at skrive din e-mailmeddelelse, og indsæt bogmærkefelter, hvor du skal bruge dem.
     * Fortsæt med at skrive din e-mailmeddelelse, og indsæt bogmærkefelter, hvis du vil.  
 9. Klik på Gem.
-
 

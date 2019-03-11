@@ -1,13 +1,13 @@
 ---
-title: "Finanskladdehåndtering"
-description: "I dette emne beskrives funktionerne i Microsoft Dynamics 365 for Finance and Operations, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet."
+title: Finanskladdehåndtering
+description: I dette emne beskrives funktionerne i Microsoft Dynamics 365 for Finance and Operations, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet og den interne kontrol ikke bliver forringet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358433"
 ---
-
 # <a name="general-journal-processing"></a>Finanskladdehåndtering
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives funktionerne i Microsoft Dynamics 365 for Finance and Operations, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet, og den interne kontrol ikke bliver forringet.  
+I dette emne beskrives funktionerne i Microsoft Dynamics 365 for Finance and Operations, der kan hjælpe med at gøre finanskladdebehandling lettere og være med til at sikre, at de korrekte data bliver hentet og den interne kontrol ikke bliver forringet.  
 
 ## <a name="journal-names"></a>Kladdenavne
 
@@ -97,4 +96,3 @@ Du kan finde flere oplysninger under følgende emner:
 Du kan finde **Simuler bogføring** i menuen **Valider** til de fleste kladder. Når du validerer en kladde ved hjælp af **Valider**-funktionen, tester systemet kladden for bestemte fejlbetingelser. Hvis du bruger **Simuler bogføring**-funktionen, vil systemet køre alle de samme processer, der køres under bogføringen, uden at bogføre kladden. Du kan derefter gennemse bogføringsmeddelelser, der vises, rette eventuelle fejl og derefter klikke på menuen **Bogfør** for at bogføre kladden. 
 
 **Simuler bogføring** findes ikke til batchbehandling. Men der er kode til at simulere bogføringen i batch, og udviklere kan udvide koden, hvis de vil tilføje denne funktionalitet.  
-

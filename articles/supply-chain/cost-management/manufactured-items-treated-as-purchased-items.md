@@ -1,13 +1,13 @@
 ---
-title: "Konfigurere produkter, som kan være produceret eller indkøbt"
-description: "Produkterne kan købes på forskellige måder: De kan produceres (fremstilles) eller fremskaffes (købes). Denne artikel beskriver nogle typiske punkter, du skal overveje, når du konfigurerer produkter til understøttelse af multiforsyning."
+title: Konfigurere produkter, som kan være produceret eller indkøbt
+description: 'Produkterne kan købes på forskellige måder: De kan produceres (fremstilles) eller fremskaffes (købes). Denne artikel beskriver nogle typiske punkter, du skal overveje, når du konfigurerer produkter til understøttelse af multiforsyning.'
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a910b5782c8f15cfdd4cf93ea883bc28a5ce8e1a
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5ed8c93c13746249605ad8742549c23bb1e0e10
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "338446"
 ---
-
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Konfigurere produkter, som kan være produceret eller indkøbt
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Multiforsyning bruges typisk til en købt vare, der fremstilles fra tid til ande
 Når du bruger standardomkostning, kan vareomkostningsposten beregnes for den producerede vare. Men vareomkostningsposten kan måske ikke beregnes for den standardomkostning, du vil bruge ved indkøb. I dette tilfælde skal standardomkostningen angives og aktiveres manuelt for vareomkostningsposten. I forbindelse med omkostningsberegning kan du overveje at bruge en særlig stykliste og rute, der repræsenterer forsyningsblandingen af produktet i løbet af regnskabsperioden, for at minimere afvigelserne over tid. Derudover kan en produceret vare på ét sted overføres til et andet sted. Varens kostpris skal derfor angives manuelt og aktiveres for det sted, som varen overføres til. Når du bruger den producerede varen som en komponent i varer på højere niveau, skal komponentens omkostninger behandles som en købt vare. Disse retningslinjer gælder, uanset om komponentens omkostninger er beregnet eller angivet manuelt. Vareomkostningen i styklisteberegningen skal med andre ord behandles som en indkøbt komponent i stedet for at bruge varens stykliste og ruteoplysninger til at beregne omkostninger. 
 
 Du kan forhindre beregningen i at finde sted ved at angive flaget **Stop udfoldning**, der er indlejret i den styklistekalkulationsgruppe, som er tilknyttet varen. Du kan forhindre, at der udfoldes behov gennem varen ved behovsplanlægningsberegninger, ved at angive udfoldningshorisonten til 0 (nul) dage i varedisponeringen eller i disponeringsgruppen. I behovsplanlægningsberegningen behandles varen derefter som en købt vare, og der udføres ikke yderligere beregninger for varens stykliste- og ruteoplysninger.
-
 
 
 

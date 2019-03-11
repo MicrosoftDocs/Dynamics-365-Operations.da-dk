@@ -1,13 +1,13 @@
---- 
-title: "Indgå salgsaftaler"
-description: "Denne procedure viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter."
+---
+title: Indgå salgsaftaler
+description: Denne procedure viser, hvordan du opretter en salgsaftale, der forpligter en af dine kunder til at købe et produkt for et aftalt beløb over en tidsperiode mod at få særlige rabatter.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 025c9fe2f769f37b63bd79c6c3afedc31a955310
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: a0d49068d2c6a62bf7912c2fd7cccd53308bd196
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346864"
 ---
 # <a name="enter-sales-agreements"></a>Indgå salgsaftaler
 
@@ -66,5 +66,4 @@ Denne procedure viser, hvordan du opretter en salgsaftale, der forpligter en af 
 13. Klik på OK.
 14. Luk siden.
     * Aftalen er nu gældende, og du kan begynde at tilknytte kundens ordrer til aftalen for at modpostere mod tilsagnsmålet.  
-
 

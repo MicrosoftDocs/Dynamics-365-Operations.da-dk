@@ -1,13 +1,13 @@
 ---
-title: "Berettigelsesdokumenter til budgetplanlægning"
-description: "Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, som kan forklare, hvorfor det er nødvendigt med et specifikt budget."
+title: Berettigelsesdokumenter til budgetplanlægning
+description: Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, som kan forklare, hvorfor det er nødvendigt med et specifikt budget.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333570"
 ---
-
 # <a name="budget-planning-justification-documents"></a>Berettigelsesdokumenter til budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Berettigelsesdokumenter giver en fortælling for dem, der anmoder om et budget, 
 
 En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og knyttes til den aktuelle proces i budgetplanlægningen. Ejere af budgettet kan derefter åbne skabelonen og automatisk få udfyldt felter i Word med data baseret på deres budgetanmodning. De kan derefter tilføje yderligere tekst eller data, før deres personlige berettigelsesdokument gemmes og knyttes til deres budgetplan.
 
-##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Konfigurere Microsoft Dynamics Office-tilføjelsesprogrammet til Microsoft Word
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Opsætning af Microsoft Dynamics-tilføjelsesprogram til Microsoft Word
 
 1.  Åbn et nyt Microsoft Word-dokument.
 2.  Klik på **Indsæt** på båndet, og klik på **Gem**.
@@ -60,7 +59,7 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 1.  Gå i Finance and Operations til **Budgettering** &gt; **Opsætning** &gt; **Budgetplanlægning** &gt; **Skabeloner for berettigelsesdokumenter**.
 2.  Klik på **Ny**, og gå til det nyoprettede Microsoft Word-dokument.
 3.  Angiv et visningsnavn og en beskrivelse til skabelonen. Klik på **OK**.
-4.  Gå til **Budgettering** &gt; **Opsætning** &gt; **Budgetplanlægning** &gt; **Budgetplanlægningsproces**.
+4.  Gå til **Budgettering** &gt; **Opsætning** &gt; **Budget** **planlægning** &gt; **Budgetplanlægningsproces**.
 5.  Vælg den proces, hvor berettigelsesskabelonen skal bruges, og klik på **Rediger**.
 6.  Vælg den relevante skabelon i feltet **Skabelon for berettigelsesdokument**, og Gem.
 
@@ -69,7 +68,6 @@ En budgetplansskabelon oprettes af budgetadministratoren i Microsoft Word og kny
 1.  Opret en ny budgetplan i Finance and Operations, eller åbn en eksisterende budgetplan.
 2.  Vælg **Opret ny berettigelse** i rullemenuen **Berettigelse**.
 3.  Når du har angivet detaljerne, skal du vælge at overføre det personligt tilpassede dokument fra **Berettigelse**-rullemenuen.
-
 
 
 

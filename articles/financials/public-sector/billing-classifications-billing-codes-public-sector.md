@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3c6d7655461e12e819a2ddc498000ab0a5fe09f1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e54d0788fdab0c5b103c26e7b5049b1e401d86b0
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370250"
 ---
-
 # <a name="billing-classifications-and-billing-codes-in-the-public-sector"></a>Faktureringsklassifikationer og faktureringskoder i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Når faktureringskoder skal opdateres, skal du ikke oprette nye faktureringskode
 
 ## <a name="can-i-assign-the-same-billing-code-to-more-than-one-billing-classification"></a>Er det muligt at tildele den samme faktureringskode til mere end én faktureringsklassifikation?
 Nej, men der er en måde at få de resultater, du skal bruge, alligevel. Lad os antage, at din organisation bruger en separat faktureringsklassifikation for hver afdeling. Tre af afdelingerne skal have en faktureringskode til licensaftaler. Du kan ikke tildele en enkelt faktureringskode for "Licensaftale" til tre faktureringsklassifikationer, men du kan oprette et sæt af tre identiske faktureringskoder og tildele én til hver afdeling.
-
 
 
 

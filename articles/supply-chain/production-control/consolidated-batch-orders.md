@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOrderListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 49c2df19168855e6e6ab9ff061bcdce698947b20
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d6ee4ea9c8af06c493d906887f5ed6f7874e703e
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358801"
 ---
-
 # <a name="consolidated-batch-orders"></a>Konsoliderede batchordrer
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,6 @@ En konsolideret batchordre kan indeholde enhver kombination af følgende ordrer:
 -   Flere bulkordrer og flere pakkede ordrer
 -   Flere bulkordrer og en enkelt pakket ordre
 -   Kun pakkede ordrer
-
 
 
 

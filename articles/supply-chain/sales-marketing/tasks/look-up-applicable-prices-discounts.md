@@ -1,13 +1,13 @@
---- 
-title: "Slå gældende priser og rabatter op"
-description: "Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt, der er gyldig for en bestemt debitor, uden at oprette en salgsordre."
+---
+title: Slå gældende priser og rabatter op
+description: Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt, der er gyldig for en bestemt debitor, uden at oprette en salgsordre.
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ba95e651898da0e0fbd1221f61436ffac59db09e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359859"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå gældende priser og rabatter op
 
@@ -59,5 +59,4 @@ Denne fremgangsmåde viser, hvordan du finder pris og/eller rabat for et produkt
 3. Klik på Vis linjerabat.
     * Der er to linjerabataftaler for produkt T0012, der angiver en rabat på 5 procents rabat for en ordrelinjemængde fra 1 til 10, og 7 procents rabat på ordremængder over 10. Bemærk, at rabatterne anvendes på en gruppe af produkter, i dette eksempel Gruppekode 01, hvor produkt T0012 er medlem.  
 4. Luk siden.
-
 

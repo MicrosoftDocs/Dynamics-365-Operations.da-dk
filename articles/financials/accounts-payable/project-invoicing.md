@@ -1,13 +1,13 @@
 ---
 title: Projektfakturering
-description: "Denne artikel indeholder en oversigt over projektfakturering for tids- og materialeprojekter og fastprisprojekter. Det omfatter oplysninger om fakturaforslag (foreløbig fakturaer), fakturastyring, acontofakturering, kreditorfakturering og kreditnotaer."
+description: Denne artikel indeholder en oversigt over projektfakturering for tids- og materialeprojekter og fastprisprojekter. Det omfatter oplysninger om fakturaforslag (foreløbig fakturaer), fakturastyring, acontofakturering, kreditorfakturering og kreditnotaer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346312"
 ---
-
 # <a name="project-invoicing"></a>Projektfakturering
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Det samme dokument kan medtage posteringer, der er valgt til kreditering, kredit
 Hvis du vil kreditere et kreditnotabeløb, skal du først vælge det fakturabeløb, der skal krediteres, og derefter oprette en kreditnota. Du opretter en kreditnota ved at følge den samme procedure som ved oprettelse af en debitorfaktura. 
 
 Du kan oprette en faktura, der har et negativt beløb, som bliver en faktura, der klassificeres som en kreditnota. Hvis du vil oprette og udskrive en kreditnota, skal du vælge de transaktioner, der tidligere er bogført for en debitorfaktura, og derefter redigere transaktionerne. Medmindre den primære adresse på en juridisk enhed er i Tyskland, er titlen på fakturaen "Rettelsesfaktura".
-
 
 
 

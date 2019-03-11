@@ -1,13 +1,13 @@
 ---
-title: "Rapportering af trædefinitioner i økonomiske rapporter"
-description: "Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation."
+title: Rapportering af trædefinitioner i økonomiske rapporter
+description: Denne artikel indeholder oplysninger om definitioner af rapporteringstræer. En rapporteringstrædefinition er en rapportkomponent eller en dokumentkomponent, der hjælper med at definere strukturen og hierarkiet i din organisation.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316941"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportering af trædefinitioner i økonomiske rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Du kan oprette et ubegrænset antal rapporteringstræer for at få vist organisa
 ## <a name="create-a-reporting-tree-definition"></a>Oprette en rapporteringstrædefinition
 En rapporteringstrædefinition indeholder de kolonner, der er beskrevet i følgende tabel.
 
-| Kolonne i rapporteringstræ | Betegnelse |
+| Kolonne i rapporteringstræ | Beskrivelse |
 |-----------------------|-------------|
-| Regnskab               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, der normalt kun tildeles på oversigtsniveau, gør det muligt at anvende rapporteringstræet for alle virksomheder. Alle underordnede grene har et firma tilknyttet. |
+| Firma               | Firmanavnet på rapporteringsenheden. Værdien **@ANY**, som normalt kun tildeles summeringsniveauet, gør det muligt at anvende trædiagrammet til alle firmaer. Alle underordnede grene har et firma tilknyttet. |
 | Enhedsbetegnelse             | Den kode, der identificerer denne rapporteringsenhed i det grafiske rapporteringstræ. Sørg for at oprette et entydigt kodesystem, der er konsistent, og som vil være let for brugerne at forstå. |
 | Enhedsbeskrivelse      | Rapporteringsenhedens titel vises i rapportens sidehoved eller sidefod, hvis du angiver **UnitDesc** som kode på fanen **Sidehoveder og sidefødder** i rapportdefinitionen. Titlen vises i rapportrækkebeskrivelsen, hvis du angiver **UnitDesc** i cellen **Beskrivelse** i rækkedefinitionen. |
 | Dimensioner            | En rapporteringsenhed henter oplysninger direkte fra de økonomiske data. Den definerer den logiske placering og længder for kontoen og relaterede segmenter. Hver rapporteringsenhedsrække skal have en dimension i denne kolonne. Du kan også placere en dimension i en oversigtsrække (for eksempel for udgifter, der er direkte relateret til denne enhed). Hvis du angiver en dimension i en oversigtsrække, bør konti, der bruges i overordnede enheder, ikke bruges i underordnede enheder. Ellers kan beløb blive dubleret. |
@@ -166,9 +165,9 @@ Du kan forhindre bestemte brugere og grupper i at få adgang til en rapportering
 3. Marker et navn i dialogboksen **Sikkerhed for enhed**, og klik derefter på **Fjern**.
 4. Klik på **OK**.
 
-### <a name="link-to-reports"></a>Link til rapporter
+### <a name="link-toreports"></a>Link til rapporter
 
-Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
+Når du har oprettet en **rapport**-kolonne i rækkedefinitionen og har angivet den rapport, der skal medtages i rapporten, skal du opdatere rapporteringstræet med den tilknyttede kolonne og oplysningerne om rapporten. Der kan importeres en rapport til enhver enhed i rapporteringstræet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identificer rapporten i et rapporteringstræ
 
@@ -222,4 +221,3 @@ Følgende eksempler viser mulige oplysninger, der bruges i en definition af et r
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Økonomirapportering](financial-reporting-intro.md)
-

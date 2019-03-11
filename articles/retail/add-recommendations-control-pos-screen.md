@@ -1,13 +1,13 @@
 ---
-title: "Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder"
-description: "I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Retail."
+title: Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
+description: I dette emne beskrives, hvordan du tilføjer et kontrolelement med anbefalinger til transaktionsskærmbilledet på en POS-enhed (point of sale) ved hjælp af skærmlayoutdesigneren i Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: da-dk
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320437"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Føje et kontrolelement med anbefalinger til posteringsskærmen på POS-enheder
 
 [!include [banner](includes/banner.md)]
@@ -67,8 +66,8 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
     [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Klik på **X** for at lukke og afslutte layoutdesigneren.
-4. I Dynamics 365 for Retail skal du gå til **Retail** &gt; **Retail it** &gt; **Distributionsplaner**.
-5. Vælg  **1090 kasseapparater** på listen.
+4. I Dynamics 365 for Retail skal du gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplaner**.
+5. Vælg  **1090, kasseapparater** på listen.
 6. Klik på **Kør nu**.
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Tilføj fanen Anbefalinger i gitteret nederst i højre side af skærmen
@@ -88,11 +87,10 @@ Der findes to konfigurationsindstillinger. Vælg den indstilling, der passer bed
 7. Vælg det billede, der skal vises på fanen, i feltet **Billede**.
 8. Klik på **OK**. Den nye fane vises i knapmatricen.
 9. Klik på **X** for at lukke og afslutte layoutdesigneren.
-10. I Dynamics 365 for Retail skal du gå til **Retail** &gt; **Retail it** &gt; **Distributionsplaner**.
+10. I Dynamics 365 for Retail skal du gå til **Detail** &gt; **Detail-it** &gt; **Distributionsplaner**.
 11. Vælg **1090 kasseapparater** på listen.
 12. Klik på **Kør nu**.
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
 [Oversigt over tilpassede produktanbefalinger](personalized-product-recommendations.md)
-

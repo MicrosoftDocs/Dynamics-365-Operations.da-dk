@@ -1,13 +1,13 @@
 ---
-title: "Arbejdsområde til udgiftsstyring på mobilenhed"
-description: "Dette emne indeholder oplysninger om arbejdsområdet Udgiftsstyring på mobilenheder. I dette arbejdsområde kan brugerne hente og sende en kvittering, så de senere kan knytte den til en udgiftsrapport. Brugerne kan også hurtigt oprette en udgiftslinje ved hjælp af en vedhæftet kvittering, og oprette og administrere deres udgiftsrapporter."
+title: Arbejdsområde til udgiftsstyring på mobilenhed
+description: Dette emne indeholder oplysninger om arbejdsområdet Udgiftsstyring på mobilenheder. I dette arbejdsområde kan brugerne hente og sende en kvittering, så de senere kan knytte den til en udgiftsrapport. Brugerne kan også hurtigt oprette en udgiftslinje ved hjælp af en vedhæftet kvittering, og oprette og administrere deres udgiftsrapporter.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344334"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Arbejdsområde til udgiftsstyring på mobilenhed
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Dette emne indeholder oplysninger om arbejdsområdet **Udgiftsstyring** på mobilenheder. I dette arbejdsområde kan brugerne hente og sende en kvittering, så de senere kan knytte den til en udgiftsrapport. Brugerne kan også hurtigt oprette en udgiftslinje ved hjælp af en vedhæftet kvittering, og oprette og administrere deres udgiftsrapporter. Godkendere kan desuden bruge arbejdsområdet **Udgiftsstyring** på mobilenheder til at få vist udgiftsrapporter, der er knyttet til dem, og enten godkende eller afvise udgiftsrapporter.
 
 
-Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations-mobilappen.
+Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
 
 
 ## <a name="overview"></a>Overblik
@@ -42,7 +41,7 @@ Mange organisationer kræver, at der knyttes en kopi af en kvittering til en rej
 
 Med arbejdsområdet **Udgiftsstyring** på mobilenheder kan brugerne udføre disse opgaver:
 
-- Tage et billede af en kvittering, og overføre det til Microsoft Dynamics 365 for Finance and Operations. Du kan derefter knytte billedet til en udgiftsrapport senere.
+- Tag et billede af en kvittering, og overfør det til Microsoft Dynamics 365 for Finance and Operations. Du kan derefter knytte billedet til en udgiftsrapport senere.
 - Overføre en fil som hentet kvittering. Du kan derefter knytte filen til en udgiftsrapport senere.
 - Oprette en ny udgiftslinje ved hjælp af en tilknyttet kvittering. Du kan derefter føje linjeelementet til en udgiftsrapport senere og sende det til godkendelse og refusion.
 
@@ -63,8 +62,8 @@ Forudsætningerne varierer, afhængigt af hvilken version af Microsoft Dynamics 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Finance and Operations 
 Hvis Microsoft Dynamics 365 for Finance and Operations er implementeret for organisationen, skal systemadministratoren publicere arbejdsområdet **Udgiftsstyring** til mobilenheder. Du kan finde flere oplysninger under [Publicere et arbejdsområde til mobilenheder](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere.
-Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, kan systemadministratoren skal opfylde følgende forudsætninger. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forudsætninger, hvis du bruger Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere
+Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 3 eller nyere er implementeret for organisationen, skal systemadministratoren opfylde følgende forudsætninger. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 <td>Systemadministrator</td>
 <td>KB 4019015 er et X ++ opdatering eller metadatahotfix, der indeholder arbejdsområdet <strong>Udgiftsstyring</strong> til mobilenheder. For at implementere KB 4019015 skal systemadministratoren gøre følgende.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Download metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hente metadata-hotfixet fra Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installere metadatahotfixet</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opret en installerbar pakke</a>, der indeholder <strong>ApplicationSuite</strong>- og <strong>ExpenseMobile</strong>-modeller, og overfør derefter den installerbare pakke til LCS.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Anvend den installerbare pakke</a></li>
@@ -94,7 +93,7 @@ Hvis Microsoft Dynamics 365 for Operations version 1611 med platformsopdatering 
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hent og installer Dynamics 365 for Operations-mobilappen
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Download og installer Dynamics 365 for Operations-mobilappen.
 Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 - [Til Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -243,4 +242,3 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 22. Vælg **Send**.
 23. Skriv eventuelle kommentarer til godkenderen.
 24. Vælg **Udført**.
-

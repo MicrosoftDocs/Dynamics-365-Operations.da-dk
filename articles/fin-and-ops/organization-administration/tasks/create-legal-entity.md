@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en juridisk enhed
-description: "En juridisk enhed er en organisation, der er identificeret ved at være registreret hos en juridisk myndighed."
+description: En juridisk enhed er en organisation, der er identificeret ved at være registreret hos en juridisk myndighed.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2b1869afa9ebbfc81ca321c57cc8e01739103d16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 89d3babc4447ca7398521b93634db7ecb6cfb5de
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338538"
 ---
 # <a name="create-a-legal-entity"></a>Oprette en juridisk enhed
 
@@ -57,5 +57,4 @@ En juridisk enhed er en organisation, der er identificeret ved at være registre
 16. Udvid sektionen 1099-skat.
     * Angiv 1099-oplysninger for den juridiske enhed i sektionen 1099-skat.  
 17. Klik på Gem.
-
 

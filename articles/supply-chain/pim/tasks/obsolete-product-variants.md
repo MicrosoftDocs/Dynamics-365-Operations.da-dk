@@ -1,13 +1,13 @@
---- 
-title: "Finde forældede produktvarianter"
-description: "Denne procedure viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter."
+---
+title: Finde forældede produktvarianter
+description: Denne procedure viser, hvordan du finder forældede frigivne produkter eller produktvarianter, og hvordan du knytter en status for produktlivscyklus til de forældede produkter.
 author: cvocph
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 4641d24cfa24722f5411da8943bfe4095a9546a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d445ea2f2362f146a1e3e7bcf747898dc2cc89ba
-ms.openlocfilehash: 3a59f988de5290d1d69d013b762f87d0cce10e39
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360181"
 ---
 # <a name="find-obsolete-product-variants"></a>Finde forældede produktvarianter 
 
@@ -72,5 +72,4 @@ Denne procedure viser, hvordan du finder forældede frigivne produkter eller pro
 > Gennemse de ændrede udgivne produkter og produktvarianter.  
 
 8. Find og vælg den ønskede post på listen.
-
 

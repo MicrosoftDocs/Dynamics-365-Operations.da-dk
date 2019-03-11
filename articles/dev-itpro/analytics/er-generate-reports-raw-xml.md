@@ -1,13 +1,13 @@
 ---
-title: "Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument"
-description: "Du kan designe elektroniske rapporteringsformater (ER) for at oprette udgående dokumenter i XML-format."
+title: Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
+description: Du kan designe elektroniske rapporteringsformater (ER) for at oprette udgående dokumenter i XML-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312180"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generere rapporter ved at tilføje indhold som ubehandlet XML-dokument
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Du kan bruge det nye **RAW XML**-formatelement til at designe ER-formater, der g
 > Vær opmærksom på, at strukturen ikke styrer, om XML-indholdet, der er placeret i det genererede dokument ved hjælp af **RAW XML**-formatelementet, er korrekt.
 
 Du kan finde flere oplysninger om denne funktion ved at afspiller opgaveguiderne **ER Bruge ubehandlede XML-data til at generere XML-rapporter (del 1: Designe datamodellen)** og **ER Bruge ubehandlede XML-data til at generere XML-rapporter (del 2: Designe og køre rapport)**, der er en del af forretningsprocessen **7.5.4.3 Anskaffe/udarbejde komponenter til it-servicer og -løsninger (10677)** og kan hentes fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Disse opgaveguider gennemgår, hvordan du konfigurerer et ER-format for at indsætte ubehandlede XML-data i genererede filer.
-

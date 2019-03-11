@@ -1,13 +1,13 @@
 ---
-title: "Pluk det ældste batch på en mobilenhed"
-description: "I dette emne beskrives, hvordan du kan konfigurere og anvende indstillingerne for at plukke det ældste batch fra en mobilenhed."
+title: Pluk det ældste batch på en mobilenhed
+description: I dette emne beskrives, hvordan du kan konfigurere og anvende indstillingerne for at plukke det ældste batch fra en mobilenhed.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a592425ed28f591783ec45bdfd61574bb889557
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 929c55559f1eac9681e632572ffee71bf83158de
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320598"
 ---
-
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>Pluk det ældste batch på en mobilenhed
 
 [!include [banner](../includes/banner.md)]
@@ -42,4 +41,3 @@ For varer, der er indstillet til at bruge eksisterende arbejde, kan **Pluk den �
 **Advar** og **Gennemtving**: Der vises en liste over batches med den ældste udløbsdato over batchkontrolelementet, når arbejderen vælger et batch. Hvis placeringen er id-kontrolleret, vises en liste over id'er, der har det ældste batch, over id-kontrolelementet. 
 -   **Advar**: Hvis en arbejder vælger et id eller et batch, der ikke findes på listen, er kontrolelement tomt, og der vises en advarsel om, at et ældre batch kan vælges. Hvis arbejderen vil have mulighed for at fortsætte arbejdet, kan vedkommende vælge det samme id eller batch igen.  
 -   **Gennemtving**: Arbejdere kan fortsat modtage meddelelsen om, at et ældre batch skal plukkes.
-

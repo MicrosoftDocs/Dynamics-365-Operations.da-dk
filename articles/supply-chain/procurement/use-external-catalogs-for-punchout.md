@@ -1,13 +1,13 @@
 ---
-title: "Bruge eksterne kataloger til PunchOut e-indkøb"
+title: Bruge eksterne kataloger til PunchOut e-indkøb
 description: Dette emne forklarer, hvordan du kan bruge eksterne kataloger til at oprette og sende rekvisitioner.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 76d0c911bdddbc5a34644dc96ec13dd8fd53a338
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342793"
 ---
-
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Bruge eksterne kataloger til PunchOut e-indkøb
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Hvis der er flere muligheder for indkøbskategorier, kan du vælge den korrekte 
 Når du har føjet linjer til en rekvisition, kan du tilføje flere linjer uden at bruge eksterne kataloger. Alternativt kan du fortsætte med at bruge eksterne kataloger til at tilføje linjer.
 
 Når indkøbsrekvisitionen er klar, kan du bruge handlingen **Arbejdsgang** > **Send** til at sende den til godkendelse.
-

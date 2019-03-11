@@ -1,13 +1,13 @@
 ---
-title: "Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning"
-description: Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I dette emne beskrives afstemningsprocessen.
+title: Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
+description: Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I dette emne beskrives afstemningsprocessen.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364965"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Afstemme bankkontoudtog ved hjælp af avanceret bankafstemning
 
 [!include [banner](../includes/banner.md)]
 
-Med funktionen Avanceret bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I dette emne beskrives afstemningsprocessen.  
+Med den avancerede bankafstemning kan du importere elektroniske bankkontoudtog og automatisk afstemme dem med banktransaktioner i Microsoft Dynamics 365 for Finance and Operations. I dette emne beskrives afstemningsprocessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoudtog
 -----------------------------------
@@ -94,7 +93,6 @@ Når du har afsluttet afstemningsprocessen, skal du markere bankafstemningsarbej
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Bogføre nye transaktioner, der er knyttet til afstemningen
 Bankkontoudtogstransaktioner, du har markeret som **Ny** på afstemningsarbejdsarket, bogføres på siden **Bankkontoudtog**. På siden **Bankkontoudtog** skal du vælge kontoudtogs-id'et for at få vist oplysninger på kontoudtoget. I menuen **Regnskab** kan du bruge indstillingerne **Få vist fordelinger** og **Vis regnskab** til at få vist detaljerne bag de nye transaktioner, og de tilknyttede poster. Vælg indstillingen **Bogfør** for at bogføre de bankkontoudtogslinjer, der er markeret som **Ny**, i finansmodulet. Det er vigtigt at bemærke, at der kun kan udføres bogføring én gang pr. bankkontoudtog.
-
 
 
 

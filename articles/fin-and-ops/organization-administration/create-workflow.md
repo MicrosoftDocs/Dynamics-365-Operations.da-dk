@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353350"
 ---
-
 # <a name="create-workflows"></a>Oprette arbejdsgange
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Dette emner beskriver, hvordan du opretter en arbejdsgang.
 
 ## <a name="open-the-workflow-editor"></a>Åbne arbejdsgangseditoren
 
-Det Microsoft Dynamics 365 for Finance and Operations-modul, du arbejder i, bestemmer typerne af arbejdsgange, du kan oprette. Udfør følgende trin for at vælge den type arbejdsgang, der skal oprettes, og for at åbne arbejdsgangseditoren.
+De typer arbejdsgange, du kan oprette, afhænger af hvilket Microsoft Dynamics 365 for Finance and Operations-modul, du arbejder i. Udfør følgende trin for at vælge den type arbejdsgang, der skal oprettes, og for at åbne arbejdsgangseditoren.
 
 1. Åbn det modul, som du vil oprette en ny arbejdsgang for. For eksempel hvis du vil oprette en arbejdsgang for indkøbsrekvisitioner, skal du klikke på **Indkøb og forsyning**.
 2. Klik på **Konfigurer** &gt; **\[Arbejdsgange\] for modulnavn**.
@@ -85,4 +84,3 @@ Udfør følgende trin, når du er klar til at gemme og aktivere arbejdsgangen.
 
     - Hvis du vil aktivere denne version af arbejdsgangen, skal du klikke på **Aktivér den nye version**. Når en arbejdsgang er aktiv, kan brugerne sende dokumenter til behandling og godkendelse i arbejdsgangen.
     - Hvis du ikke vil aktivere denne version, skal du klikke på **Aktivér ikke den nye version**. Du kan aktivere arbejdsgangen senere.
-

@@ -1,13 +1,13 @@
---- 
+---
 title: EUR-00015 Registrering af kreditors moms-id
-description: "Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto."
+description: Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d9788a35e768a4a289742e9cd864b3ca185a0407
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370299"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Registrering af kreditors moms-id
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/14/2018
 
 Denne fremgangsmåde viser, hvordan du tilføjer moms-registrerings-id'er og SE-nummer på en kreditorkonto. Denne proces er ens for juridiske enheder og kunder. 
 
-Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne procedure gælder for alle europæiske lande. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland. Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne procedure gælder for alle europæiske lande. Denne procedure blev oprettet ved hjælp af demodatafirmaet DEMF med primær adresse i Tyskland. Denne fremgangsmåde er beregnet til en datastyringsadministrator, en debitorchef eller en kreditorchef. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 1. Gå til Kreditor > Kreditorer > Alle kreditorer.
 2. Find og vælg debitor DE-01001 på listen.
@@ -63,5 +63,4 @@ Før du kan udføre denne procedure, skal du konfigurere moms-id'er. Denne proce
 24. Klik på Rediger.
 25. Indtast eller vælg en værdi i feltet SE-nummer.
 26. Klik på Gem.
-
 

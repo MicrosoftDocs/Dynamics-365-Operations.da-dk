@@ -1,13 +1,13 @@
 ---
 title: Frigive stykliste- og formellinjer til lagerstedet
-description: "I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet."
+description: I dette emne beskrives processen for frigivelse af råvarer til stykliste- og formellinjer til lagerstedet.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343138"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigive stykliste- og formellinjer til lagerstedet
 
 [!include [banner](../includes/banner.md)]
@@ -99,4 +98,3 @@ Du kan frigive råvarer for en del af færdigvarerne eller i en bestemt enhed.
     De enheder, der er tilgængelige, defineres i enhedens seriegruppe-id for færdigvaren.
 
     F.eks. har en færdigvare følgende enhedsomregningen mellem kilo (kg) og palle (PL) følgende: 1 PL = 100 kg. Hvis du vil oprette en produktionsordre på 10.000 kg af færdigvaren, kan du frigive råvarer til antallet af paller, du planlægger at producere. Vælg **PL** som enhed, og vælg derefter et tilsvarende antal i feltet **Antal**.
-

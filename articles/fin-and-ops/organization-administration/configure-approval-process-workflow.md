@@ -1,13 +1,13 @@
 ---
 title: Konfigurere godkendelsesprocesser i en arbejdsgang
-description: "Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen."
+description: Brug nedenstående procedure til at konfigurere egenskaberne for godkendelsesprocessen.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325635"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurere godkendelsesprocesser i en arbejdsgang
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Du kan sende beskeder til personer, når et dokument er godkendt, afvist, delege
     </tr>
     <tr>
     <td><strong>Brugere</strong></td>
-    <td>Bestemte Microsoft Dynamics 365 for Finance and Operations-brugere</td>
+    <td>Specifikke Microsoft Dynamics 365 for Finance and Operations-brugere</td>
     <td>
     <ol>
     <li>Når du har valgt <strong>Bruger</strong>, skal du klikke på fanen <strong>Bruger</strong>.</li>
-    <li>Listen <strong>Tilgængelige brugere</strong> indeholder alle brugere af Microsoft Dynamics 365 for Finance and Operations. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
+    <li>Listen <strong>Tilgængelige brugere</strong>: indeholder alle Microsoft Dynamics 365 for Finance and Operations-brugere. Vælg de brugere, der skal sendes beskeder til, og flyt derefter disse brugere til listen <strong>Valgte brugere</strong>.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ En godkendelsesproces består af godkendelsestrin. Fuldfør følgende procedure 
 1. Dobbeltklik på godkendelsesprocessen i arbejdsgangseditoren. I arbejdsgangseditoren vises trinene i godkendelsesprocessen.
 2. Du kan tilføje et godkendelsestrin ved at trække trinnet fra området **Arbejdsgangselementer** til lærredet.
 3. Hvis du vil konfigurere et godkendelsestrin, skal du se [Konfigurere et godkendelsestrin](configure-approval-step-workflow.md).
-

@@ -1,13 +1,13 @@
 ---
-title: Administration af handelsrabat
-description: Dette emne indeholder beskrivelser af administration af handelsrabat til Microsoft Dynamics 365 for Finance and Operations.
+title: Administration af handelstilladelse
+description: I dette emne beskrives administration af handelsrabat for Microsoft Dynamics 365 for Finance and Operations.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: c3794535cf9230389d7da3f9dbde010e5c48cf2f
 ms.openlocfilehash: 907d59f850d8d761e2dd4e04bd288a696f00964d
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318804"
 ---
-
-# <a name="trade-allowance-management"></a>Administration af handelsrabat
+# <a name="trade-allowance-management"></a>Administration af handelstilladelse
 
 [!include [banner](../includes/banner.md)]
 
@@ -199,5 +198,4 @@ Fanen **Kreditter for tilbagefakturering** indeholder oplysninger om individuell
 For at få en mere analytisk oversigt over de forskellige performancemålinger for kampagnen kan du bruge analysevisningen. Du kan gå til analysevisningen ved at klikke på **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**. Klik på fanen **Analyse** i handlingsruden.  
 
 For at få en mere analytisk oversigt over de forskellige performancemålinger for kampagnen kan du bruge analysevisningen. Du kan gå til analysevisningen ved at klikke på **Salg og marketing** \> **Handelsrabatter** \> **Aftaler om handelsrabat**. Klik på fanen **Analyse** i handlingsruden. 
-
 

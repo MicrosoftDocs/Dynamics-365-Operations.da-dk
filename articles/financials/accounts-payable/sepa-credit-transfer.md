@@ -1,13 +1,13 @@
 ---
-title: "Oversigt over SEPA-pengeoverførsel"
-description: "Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel."
+title: Oversigt over SEPA-pengeoverførsel
+description: Denne artikel indeholder generelle oplysninger om ISO 20022-kreditoverførsler, som omfatter SEPA-kreditoverførsler (Single Euro Payments Area) og andre elektroniske betalinger til kreditorer. En SEPA-kreditoverførsel er en specifik type betaling i euro fra én virksomhed eller enkeltperson til en anden virksomhed eller enkeltperson. Denne artikel beskriver også, hvordan du kan oprette og sende en betalingsfil til kreditoverførsel.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363769"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>Oversigt over SEPA-pengeoverførsel
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ IBAN-numre og BIC-koder bruges til at identificere alle konti i mange lande/omr�
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hvordan kan jeg sende en betalingsfil til banken?
 Når du genererer betalinger, bliver betalingsfilen genereret, og du bliver bedt om at gemme den på en tilgængelig placering fra din webbrowser. Næste trin er at sende XML-filen til din bank. Denne proces varierer fra bank til bank. Følg vejledningen fra din bank til at sende filer til banken til behandling.
-
 
 
 

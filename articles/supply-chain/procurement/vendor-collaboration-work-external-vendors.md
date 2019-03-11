@@ -1,13 +1,13 @@
 ---
 title: Kreditorsamarbejde med eksterne kreditorer
-description: "I dette emne forklares, hvordan indkøbere bruger kreditorportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager."
+description: I dette emne forklares, hvordan indkøbere bruger kreditorportalen til at samarbejde med eksterne kreditorer for at udveksle data om indkøbsordrer og konsignationslager.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350015"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorsamarbejde med eksterne kreditorer
 
 [!include [banner](../includes/banner.md)]
@@ -99,14 +98,14 @@ I nedenstående tabel viser den typiske udveksling af oplysninger, afhængigt af
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Bekræftet</strong>-status. Når indkøbsordren er bekræftet, vises den i brugergrænsefladen for kreditorens samarbejde.</td>
 </tr>
 <tr class="odd">
-<td>Kreditoren <strong>accepterer</strong> ordren, men Finance and Operations er ikke konfigureret til automatisk at bekræfte indkøbsordrer, som kreditoren accepterer.</td>
+<td>Kreditoren <strong>accepterer</strong> ordren, men Finance and Operations er ikke konfigureret til automatisk at bekræfte IO'er, som kreditoren accepterer.</td>
 <td>Kreditorens svar registreres som <strong>Accepteret</strong>, men indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>.
 
 Den indkøbsordre, der er sendt til kreditoren og har status <strong>Til eksternt gennemsyn</strong>, opdateres med bekræftede leveringsdatoer på linjerne. Denne opdatering starter en ny version, der automatisk indstilles til <strong>Til eksternt gennemsyn</strong>-status. Derefter kan du manuelt bekræfte indkøbsordren.</td>
 </tr>
 <tr class="even">
 <td>Kreditoren <strong>afviser</strong> ordren.</td>
-<td>Kreditorens svar registreres som <strong>Afvist</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Afvisningen modtages sammen med kreditorens note.</td>
+<td>Kreditorens svar registreres som <strong>Afvist</strong>, og indkøbsordrens status forbliver <strong>Til eksternt gennemsyn</strong>. Afvisningen modtages sammen med kreditornoten.</td>
 </tr>
 <tr class="odd">
 <td>Kreditoren <strong>accepterer</strong> ordren <strong>med ændringer</strong>. Der foreslås ændringer på linjeniveau. Kreditoren kan acceptere eller afvise individuelle linjer. Her er nogle andre ændringer, kreditoren kan foreslå:
@@ -260,4 +259,3 @@ Den bruger, der konfigurerer parametre for tilbudsanmodningsprocessen, kan opret
 - %createddate%
 
 Hvis der kræves en ændring, og den sendes, når tilbudsanmodningen er sendt, vil tilbudsanmodningen blive sendt igen for alle kreditorer, der inviteret. Det publicerede dokument opdateres også på siden **Åbne publicerede tilbudsanmodninger**.
-

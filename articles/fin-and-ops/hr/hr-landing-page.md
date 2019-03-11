@@ -1,13 +1,13 @@
 ---
 title: Personale
-description: "Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring."
+description: Personale strømliner mange almindelige registreringsopgaver og automatiserer en række processer, der er relateret til bemanding af organisationen. Det danner også en ramme, som personalemedarbejdere kan bruge til at administrere områder af tilsynet. Disse områder omfatter ansættelse og fastholdelse af medarbejdere, administration af frynsegoder, uddannelse, evalueringer af performance og ændringsstyring.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341758"
 ---
-
 # <a name="human-resources"></a>Personale
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Ud over at kompensere medarbejderne med lønninger og bonusordninger kan du udvi
 
 - [Administrere et frynsegodeprogram](../../talent/manage-benefit-program.md)
 - [Politikker for frynsegodeberettigelse](../../talent/benefit-eligibility-policies.md)
-- [Administrere udstyr, der er udlånt til arbejdere](../../talent/loan-items.md)
+- [Administrere udstyr, der udlånes til arbejdere](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Vedligeholde sikkerheden på arbejdspladsen og overholdelse
 
@@ -95,4 +94,3 @@ Du kan designe og administrere spørgeskemaer for at indsamle oplysninger, der b
 - [Designe et spørgeskema](../../talent/design-questionnaires.md)
 - [Distribuere og udfylde et spørgeskema](../../talent/distribute-questionnaires.md)
 - [Se og evaluere resultaterne af et spørgeskema](../../talent/evaluate-questionnaire-results.md)
-

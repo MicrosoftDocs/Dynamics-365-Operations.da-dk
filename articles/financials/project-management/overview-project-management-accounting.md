@@ -1,13 +1,13 @@
 ---
 title: Projektstyring og regnskab
-description: "Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat."
+description: Projektstyrings- og regnskabsfunktioner kan bruges i flere brancher til at yde en service, fremstille et produkt eller opnå et resultat.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311329"
 ---
-
 # <a name="project-management-and-accounting"></a>Projektstyring og regnskab
 
 [!include [banner](../includes/banner.md)]
@@ -206,7 +205,7 @@ Du kan bestille varer fra firmaets lager til forbrug på et projekt. Eller du ka
 
 Den måde, du bestiller varer på, afhænger af, hvor du bestiller dem fra:
 
--   Hvis du vil bestille varer fra firmaets lager, skal du oprette ordren som et varebehov. Hvis du bruger siden **Varebehov**, kan du konfigurere behovet, så du modtager varer som delleverancer. Derfor kan du udskyde forbruget af et antal varer, indtil du skal bruge varerne.
+-   Hvis du vil bestille varer fra firmaets lager, skal du oprette ordren som et varebehov. Hvis du bruger siden **Varebehov**, kan du konfigurere behovet, så du modtager varer som delleverancer.Derfor kan du udskyde forbruget af et antal varer, indtil du skal bruge varerne.
 -   Hvis du vil bestille varer fra en ekstern leverandør, skal du oprette ordren som en indkøbsordre på siden **Indkøbsordre**.
 
 > [!NOTE] 
@@ -251,7 +250,7 @@ I følgende tabel beskrives metoderne til beregning af kostprisen for at fuldfø
 <tbody>
 <tr class="odd">
 <td>Samlet omkostning – faktisk</td>
-<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne, der er forbundet med færdiggørelsen af projektet. Sporing af status for omkostninger er typisk ikke baseret på, hvor mange hotelovernatninger og måltider der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
+<td>Forkalkulerede omkostninger skal angives manuelt. Efter kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong> på siden <strong>Omkostningsestimat</strong> er færdig, trækkes de faktiske omkostninger fra de totaler, der er angivet af brugeren. Resultatet er omkostningerne, der er forbundet med færdiggørelsen af projektet. Sporing af status for omkostninger er f.eks. typisk ikke baseret på, hvor mange hotelovernatninger og måltider der er registreret i hver periode. I stedet. Sporing er normalt baseret på en sammenligning mod totalbeløbet for estimerede timer. Denne metode kræver ikke en budgetmodel, og de samlede omkostninger eller det samlede antal kan ændres manuelt. Når der angives en værdi i kolonnen <strong>Samlede omkostninger</strong> eller <strong>Samlet antal</strong>, sammenligner Finance and Operations sammenligner denne værdi med de faktiske posteringer, der bogføres i perioden, og reducerer derefter værdien i kolonnen <strong>Antal, der skal fuldføres</strong> eller <strong>Færdiggørelsesomkostninger</strong>.</td>
 </tr>
 <tr class="even">
 <td>Samlet budget – faktisk</td>
@@ -301,7 +300,7 @@ Baseret på din installation kan du budgettere pengestrømme for et valgt projek
 -   **Projektdato:** 5. marts 2012.
 -   **Fakturadato:** 31. marts 2012. Denne dato bestemmes ud fra fakturafrekvens. Til dette eksempel skal du angive fakturafrekvensen til den aktuelle måned. Derfor faktureres alle posteringer, der bogføres i marts måned, på den sidste dag i måneden.
 -   **Forfaldsdato:** 14. April 2012. Denne dato bestemmes på basis af de betalingsbetingelser, der blev angivet for projektet. I dette eksempel har du valgt 14 dage som betalingsbetingelse. Derfor føjes 14 dage til fakturadatoen, så der fås en forfaldsdato, der hedder 14. april 2012.
--   **Forventet dato for salgsbetalingen:** 27. april 2012. Denne dato beregnes ved at lægge antallet af dage i feltet **Generelle bufferdage** på siden **Parametre for projektstyring og regnskab** til antallet af dage i feltet **Individuelle bufferdage** på siden **Projektkontrakter** og derefter føje totalen til antallet af dage i feltet **Forfaldsdato**. I dette eksempel har du angivet **3** i feltet **Generelle bufferdage** og **10** i feltet **Individuelle bufferdage**. Derfor føjes 13 dage til forfaldsdatoen, så der fås en forventet betalingsdato for salg, der hedder 27. april 2012.
+-   **Forventet dato for salgsbetalingen:** 27. april 2012. Denne dato beregnes ved at lægge antallet af dage i feltet **Generelle bufferdage** på siden **Parametre for projektstyring og regnskab** til antallet af dage i feltet **Individuelle bufferdage** på siden **Projektkontrakter** og derefter føje totalen til antallet af dage i feltet **Forfaldsdato**. I dette eksempel har du angivet **3** i feltet **Generelle bufferdage** og **10** i feltet **Individuelle bufferdage**. Derfor føjes 13 dage til forfaldsdatoen, så der fås en forventet betalingsdato for salg, der hedder 27. april 2012.
 
 De generelle bufferdage kan enten erstatte de individuelle bufferdage eller blive føjet til individuelle bufferdage:
 
@@ -441,4 +440,3 @@ Når sætningen er beregnet, kan du få vist følgende oplysninger under de fors
 -   **Forbrug**– Oplysninger om forbrug af timer, varer, udgifter og lønposter.
 -   **Faktura**– Oplysninger om fakturaer og acontofakturering.
 -   **Timesats** – Timesatser for timer, der er bogført til driftskonti.
-

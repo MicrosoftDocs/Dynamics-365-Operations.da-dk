@@ -1,13 +1,13 @@
 ---
 title: Listeside med debitortransaktioner
-description: Dette emne indeholder oplysninger om listesiden Debitorposteringer til Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emne indeholder oplysninger om listesiden Debitorposteringer for Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
+ms.openlocfilehash: b9936a66cc8c8abb24601dae91dcfca77e4f58a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
-ms.contentlocale: da-dk
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341689"
 ---
-
 # <a name="customer-transactions-list-page"></a>Listeside med debitortransaktioner
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Knappen **Vis udligninger** i handlingsruden giver hurtig adgang til udligningsh
 
 4. Du kan udføre forskellige opgaver i dialogboksen. Vælg et eller flere bilag, og vælg derefter en af følgende knapper:
 
-    - **Vis relateret** – Vis alle betalingskladdeposteringer, der er oprettet i den betalingskladde, som er relateret til det valgte dokument. Derudover vises alle de udligninger, der er knyttet til disse betalinger. Mens du får vist relaterede betalinger, ændres navnet på denne knap til **Vis udligninger**. Vælg **Vis udligninger** for kun at se de posteringer, der blev vist, da du åbnede dialogboksen **Vis udligninger**.
+    - **Vis relateret** – Få vist alle posteringer i betalingskladde og posteringer i finanskladde for den debitor, der er oprettet i de kladder, som de dokumenter, der vises på listen, blev oprettet i. Hvis der f.eks. vises en betaling, vises alle betalingerne i betalingskladden, den blev oprettet i. Hvis en faktura eller betaling vises, og den blev oprettet i en finanskladde, vises alle dokumenter i finanskladden, hvor den blev oprettet. Alle de udligninger, der er knyttet til listen over dokumenter, vises også. Mens du får vist relaterede betalinger, ændres navnet på denne knap til **Vis udligninger**. Vælg **Vis udligninger** for kun at se de posteringer, der blev vist, da du åbnede dialogboksen **Vis udligninger**.
     - **Vis historik** – Få vist udligningshistorik for bilagene. Vælg **Luk** for at lukke dialogboksen.
     - **Vis regnskab** – Vis alle bilag, der har relation til de valgte dokumenter. Vælg **Luk** for at lukke dialogboksen.
     - **Eksporter** – Eksporter de valgte bilag til Microsoft Excel.
@@ -98,4 +97,3 @@ Hvert felt har en særskilt virkning på posteringen, når du redigerer den:
 - **Rediger kasserabatbetingelserne:** - Kasserabatterne ændres på basis af basisdatoen og kasserabatbetingelserne.
 
 Når du er færdig med at redigere betalingsindstillingerne, skal du vælge **Luk** for at gemme ændringerne.
-

@@ -1,13 +1,13 @@
 ---
-title: "Budgetplanlægning"
-description: "Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration."
+title: Budgetplanlægning
+description: Formålet med denne øvelse er at give Dynamics-partnere en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations-funktionalitetsopdateringer i området for budgetplanlægningen. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311628"
 ---
-
 # <a name="budget-planning"></a>Budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-Formålet med denne øvelse er at give en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations-funktionalitetsopdateringer i området for budgetplanlægning. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse fokuserer specifikt på følgende forretningsprocesser eller opgaver:
+Formålet med denne øvelse er at give Dynamics-partnere en automatiseret visning af Microsoft Dynamics 365 for Finance and Operations-funktionalitetsopdateringer i området for budgetplanlægningen. Hensigten med denne øvelse er at illustrere en hurtig konfiguration af et eksempel med budgetplanlægningsmodulet, og hvordan budgetplanlægning kan opnås med denne konfiguration.  Denne øvelse fokuserer specifikt på følgende forretningsprocesser eller opgaver:
 - Oprette organisationshierarki for budgetplanlægning og konfigurere brugersikkerhed
 - Definere budgetplanscenarier, budgetplankolonner, layout og Excel-skabeloner
 - Oprette og aktivere budgetplanlægningsprocessen
@@ -260,7 +259,6 @@ B. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetp
 C. Naviger til Budgettering &gt; Opsætning &gt; Budgetplanlægning &gt; Budgetplanlægningskonfiguration. Tilknyt under fanen Arbejdsprocesstadier den arbejdsgang, der er automatisk godkendt i Trin A med stadierne Start og Sendt 
 
 [![Budgettering og budgetplanlægning](./media/screenshot42.png)](./media/screenshot42.png)  
-
 
 
 

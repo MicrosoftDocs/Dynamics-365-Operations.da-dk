@@ -1,13 +1,13 @@
 ---
 title: Ressourceegenskaber
-description: "Denne artikel indeholder oplysninger om ressourceegenskaber. En funktion er en operationsressource evne til at udføre en bestemt aktivitet. I denne artikel beskrives det, hvordan egenskaber og relaterede begreber såsom færdighedsniveau og prioritet bruges til at vælge passende ressourcer til en aktivitet."
+description: Denne artikel indeholder oplysninger om ressourceegenskaber. En funktion er en operationsressource evne til at udføre en bestemt aktivitet. I denne artikel beskrives det, hvordan egenskaber og relaterede begreber såsom færdighedsniveau og prioritet bruges til at vælge passende ressourcer til en aktivitet.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319287"
 ---
-
 # <a name="resource-capabilities"></a>Ressourceegenskaber
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ I dette eksempel kan begge maskiner kan vælges af planlægningsprogrammet, ford
 
 ## <a name="competencies-for-human-resources"></a>Kvalifikationer for personale
 Når du har operationsressourcer af typen **Personale**, der er knyttet til arbejdere i Personale, kan du også drage fordel af kvalifikationer for arbejdere, når du definerer kildeforudsætninger for en produktionsrute. Med andre ord kan du også angive krav til bestemte færdigheder, kurser, certifikater og titler. Planlægningsprogrammet kan derefter vælge ressourcer, der er kædet sammen med arbejdere, og markeringen vil blive baseret på kvalifikationer for disse arbejdstagere. Kvalifikationer er angivet i Personale, ikke på siden **Ressourceegenskaber**. Når du definerer færdigheder, kurser, certifikater og titler som kildeforudsætninger, skal du bruge funktionen Personale og sammenkæde hver ressource af typen **Personale** til en tilsvarende arbejder. Hvis du ikke bruger funktionen Personale, kan du definere funktioner på siden **Ressourceegenskaber**, der ligner eller efterligner kvalifikationer fra personale. Siden **Ressourceegenskaber** indeholder dog ikke den funktionalitet, der kræves for at kunne vedligeholde færdigheder, kurser, certificeringer eller titler.
-
 
 
 

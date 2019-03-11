@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en ER-formatkonfiguration (november 2016)
-description: "Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en formatkonfiguration til elektronisk rapportering (ER)."
+description: Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator eller udvikler til elektronisk rapportering kan oprette en formatkonfiguration til elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377543"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>Oprette en ER-formatkonfiguration (november 2016)
 
@@ -35,8 +35,10 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 2. Klik på **Rapporteringskonfigurationer**.
 3. Vælg **Betalinger (forenklet mode)** i træet.
 4. Klik på **Opret konfiguration** for at åbne dialogboksen.
+
  > [!NOTE]
  > Hvis du ikke kan se **Opret konfiguration**, skal du aktivere designtilstand på siden **Parametre til elektronisk rapportering**. 
+ 
 5. Skriv **Format baseret på datamodel PaymentModel** i feltet **Ny**.
 6. Skriv **BACS (UK-fiktiv)** i feltet **Navn**.
 7. Skriv **BACS kreditorbetalingsformat (UK-fiktiv)** i feltet **Beskrivelse**.
@@ -44,9 +46,6 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
     * Du kan definere et bestemt format for det elektroniske dokument. Lad feltet være tomt, hvis du vil vælge et format på kørselstidspunktet.  
 8. Indtast eller vælg en værdi i feltet **Definition af datamodel**.
 9. Klik på **Opret konfiguration**. En ny konfiguration er oprettet. Kladdeversionen kan bruges til at gemme designformatet til håndtering af elektroniske dokumenter.  
- > [!NOTE]
- > Hvis du ikke kan se **Opret konfiguration**, skal du aktivere designtilstand på siden **Parametre til elektronisk rapportering**.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Designformatet for et elektronisk dokument
 1. Klik på **Designer**.
@@ -159,5 +158,4 @@ Følgende trin beskriver, hvordan en bruger i rollen som systemadministrator ell
 41. Klik på **OK**.
 42. Klik på **Gem**.
 43. Luk siden.
-
 

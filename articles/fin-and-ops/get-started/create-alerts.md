@@ -1,13 +1,13 @@
 ---
-title: "Opret påmindelsesregler"
-description: "Dette emne indeholder oplysninger om påmindelser og forklarer, hvordan du opretter en påmindelsesregel, så du får besked om hændelser, f.eks. en dato, der nærmer sig, eller en bestemt ændring, der opstår."
+title: Opret påmindelsesregler
+description: Dette emne indeholder oplysninger om påmindelser og forklarer, hvordan du opretter en påmindelsesregel, så du får besked om hændelser, f.eks. en dato, der nærmer sig, eller en bestemt ændring, der opstår.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329407"
 ---
-
 # <a name="create-alert-rules"></a>Opret påmindelsesregler
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ I oversigtspanelet **Vis påmindelse med** i dialogboksen **Opret påmindelsesre
 7. I oversigtspanelet **Vis påmindelse med** i feltet **Emne** skal du acceptere standardemneoverskriften til mailen i feltet eller angive et nyt emne. Teksten bruges som emneoverskrift i den e-mail, du modtager, når påmindelsen udløses.
 8. Skriv en meddelelse efter eget valg i feltet **Meddelelse**. Teksten bruges som den meddelelse, du modtager, når påmindelsen udløses.
 9. Vælg **OK** for at gemme indstillingerne og oprette påmindelsesreglen.
-

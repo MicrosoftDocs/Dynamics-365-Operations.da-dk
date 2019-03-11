@@ -1,13 +1,13 @@
 ---
 title: Batchattributter
-description: "Dette emne indeholder oplysninger om batchattributter. Batchattributter er karakteristika for de råvarer og færdigvarer, der udgør lagerbatches. I dette emne forklares også, hvordan du tildeler batchattributter, og hvordan du kan søge efter dem, når du reserverer batchnumre."
+description: Dette emne indeholder oplysninger om batchattributter. Batchattributter er karakteristika for de råvarer og færdigvarer, der udgør lagerbatches. I dette emne forklares også, hvordan du tildeler batchattributter, og hvordan du kan søge efter dem, når du reserverer batchnumre.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 325e647185e3eb4c0eacdfd00c320804e31ddb48
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6c18b007a72686b1ede69b750e930d72e86f0aba
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347623"
 ---
-
 # <a name="batch-attributes"></a>Batchattributter
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Du kan åbne siderne for produkter, du vælger på siden **Frigivne produkter** 
 
 ## <a name="reserve-batches"></a>Reservere batches
 Du kan søge efter batchattributter, når du foretager batchreservationer for en salgsordre for at opfylde en kundeordre, eller når du plukker og reserverer batches til en produktionsordre. Du kan bruge søgningen til at finde en lagerbatch, der indeholder produktet med den ønskede batchattribut. Når du har fundet den eller de ønskede batches, kan du reservere produktet til den oprindelige lagertransaktionslinje.
-
 
 
 

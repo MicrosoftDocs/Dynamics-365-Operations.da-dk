@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette en produktionsflowversion
-description: "Denne procedure fokuserer på oprettelse af en ny produktionsflow-version."
+description: Denne procedure fokuserer på oprettelse af en ny produktionsflow-version.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320667"
 ---
 # <a name="create-a-production-flow-version"></a>Oprette en produktionsflowversion
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denne procedure fokuserer på oprettelse af en ny produktionsflow-version. For denne procedure skal produktionsparametre for lean manufacturing og måleenheder for klassen Tid være defineret. Du skal også definere en værdistrøm og en produktionsgruppe. Du kan finde flere oplysninger om produktionsflows og aktiviteter inden for lean produktion i hvidbøgerne om lean produktion for Microsoft Dynamics AX. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
+Denne procedure fokuserer på oprettelse af en ny produktionsflow-version. For denne procedure skal produktionsparametre for lean manufacturing og måleenheder for klassen Tid være defineret. Du skal også definere en værdistrøm og en produktionsgruppe. Du kan finde flere oplysninger om produktionsflows og aktiviteter inden for lean manufacturing i hvidbøgerne om lean manufacturing til Microsoft Dynamics AX. Det demodatafirma, der bruges til at oprette denne procedure, er USMF.
 
 
 ## <a name="create-a-production-flow"></a>Oprette et produktionsflow
@@ -63,5 +63,4 @@ Denne procedure fokuserer på oprettelse af en ny produktionsflow-version. For d
 12. Angiv et tal i feltet Periode for faktisk procestid (dage).
     * Angiv antallet af dage i Periode for faktisk procestid. Periode for faktisk procestid er det antal dage, hvor jobs aggregeres, fra det faktiske minut bagud for at beregne den faktiske procestid. Værdien kan ændres når som helst og bruges kun til beregning af de faktiske procestider.  
 13. Klik på Gem.
-
 

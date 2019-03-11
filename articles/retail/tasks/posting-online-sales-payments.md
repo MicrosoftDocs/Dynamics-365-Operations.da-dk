@@ -1,13 +1,13 @@
---- 
-title: "Bogføring af onlinesalg og betalinger"
-description: "Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob for at oprette salgsordrer og betalinger for transaktioner i onlinebutik."
+---
+title: Bogføring af onlinesalg og betalinger
+description: Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob for at oprette salgsordrer og betalinger for transaktioner i onlinebutik.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 13839bbe6ca03f3cfc7036fce87477bf7d5af2a7
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353488"
 ---
 # <a name="posting-of-online-sales-and-payments"></a>Bogføring af onlinesalg og betalinger
 
@@ -42,5 +42,4 @@ Denne procedure hjælper med at konfigurere og køre et tilbagevendende batchjob
 8. Angiv et tal i feltet Antal.
 9. Klik på OK.
 10. Klik på OK.
-
 

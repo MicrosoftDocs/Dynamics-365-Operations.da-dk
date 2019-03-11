@@ -1,13 +1,13 @@
 ---
-title: "Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde"
-description: "Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde."
+title: Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
+description: Dette emne indeholder tip om import af data til finanskladden ved hjælp af enheden Finanskladde.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 29cb4b940875b96cabaff540360674da528f8f39
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322507"
 ---
-
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bedste fremgangsmåder for import af bilag ved hjælp af enheden Finanskladde
 
 [!include [banner](../includes/banner.md)]
@@ -67,4 +66,3 @@ De følgende afsnit beskriver virkningen af disse indstillinger og forklarer ogs
 - Hvis feltet **Bilagsnummer** er indstillet til **Auto-genereret**, vil importen ikke lykkes. Indstillingen **Auto-genereret** for feltet **Bilagsnummer** understøttes ikke.
 
 Som standard bruger finanskladdeenheden sætbaseret behandling. Når du har evalueret forretningsbehovet for din organisation, kan du ændre indstillingen **Angivet på basis af-behandling** ved at klikke på **Dataenheder** i arbejdsområdet **Datastyring**. Sætbaseret behandling bruges til at gøre importprocessen hurtigere. Hvis du ikke bruger sætbaseret behandling, bliver import af finanskladdeenheden langsommere.
-

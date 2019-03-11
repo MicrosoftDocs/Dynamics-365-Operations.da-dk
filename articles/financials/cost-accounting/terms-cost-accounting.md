@@ -1,13 +1,13 @@
 ---
 title: Terminologi for omkostningsregnskab
-description: "Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet."
+description: Dette emne definerer nøgleudtryk, der bruges i omkostningsregnskabet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365931"
 ---
-
 # <a name="cost-accounting-terminology"></a>Terminologi for omkostningsregnskab
 
 [!include [banner](../includes/banner.md)]
@@ -119,7 +118,7 @@ Der er to dimensionshierarkier: kategorihierarki og klassifikationshierarki. Kat
 Omkostningsregnskab understøtter integration af data fra andre kildesystemer via en række dataconnectorer. Følgende dataconnectorer er tilgængelige:
 
 -  Importerede transaktioner (konfigureret på forhånd)
--  Dynamics 365 for Finance and Operations (konfigureret på forhånd)
+-  Dynamics 365 for Finance and Operations (forudkonfigureret)
 -  Dynamics AX (konfiguration kræves)
 
 **Bemærk:** Transaktioner importeret via dataconnector er baserede på dataenheder.
@@ -204,6 +203,5 @@ Opgørelser er visninger for de ledere, der er ansvarlige for styring af omkostn
 **Version**
 
 Versioner, der bruges til at simulere, se og sammenligne forskellige udfald. Som standard vises alle faktiske omkostninger i en grundlæggende version, der er kendt som *faktisk*. I budgetter og beregninger kan du arbejde med så mange versioner, som du har brug for. Du kan eksempelvis importere budgetdata i en oprindelig version og derefter ændre budgettet i en revideret version. Du kan oprette flere versioner for beregninger. Du kan derefter oprette beregninger ved hjælp af andre beregningsregler, der skal udlignes for omkostningstildeling i disse forskellige versioner.
-
 
 

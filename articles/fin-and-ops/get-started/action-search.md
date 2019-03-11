@@ -1,13 +1,13 @@
 ---
-title: "Handlingssøgning"
-description: "I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side."
+title: Handlingssøgning
+description: I denne artikel beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 960c715c487fbda5d93630327f07380e6d8fbd3c
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317493"
 ---
-
 # <a name="action-search"></a>Handlingssøgning
 
 [!include [banner](../includes/banner.md)]
 
-I dette emne beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
+I denne artikel beskrives handlingssøgningsfunktionen i Microsoft Dynamics 365 for Finance and Operations. Med handlingssøgning kan du finde og køre handlinger på en side.
 
 ## <a name="introduction"></a>Introduktion
 
-Siderne i Microsoft Dynamics 365 for Finance and Operations viser primært kommandoer i handlingsruder, både standardhandlingsruden, som vises øverst på en side, og værktøjslinjerne, der vises i forskellige afsnit af siden. I tidligere versioner kan du med en nøgletipfunktion hurtigt få adgang til en knap i en handlingsrude ved at trykke på Alt-tasten og derefter en række bogstaver.
+Sider i Microsoft Dynamics 365 for Finance and Operations viser primært kommandoer i handlingsruder, både standardhandlingsruden, som vises øverst på en side, og værktøjslinjerne, der vises i forskellige afsnit af siden. I tidligere versioner kan du med en nøgletipfunktion hurtigt få adgang til en knap i en handlingsrude ved at trykke på Alt-tasten og derefter en række bogstaver.
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 

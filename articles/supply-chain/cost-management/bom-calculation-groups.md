@@ -1,13 +1,13 @@
 ---
 title: Styklisteberegningsgrupper
-description: "Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen."
+description: Denne artikel indeholder oplysninger om beregningsgrupper for styklister, og hvordan du opretter dem. For at køre en styklisteberegning skal du enten konfigurere beregningsgrupper og tildele dem til enkelte varer eller oprette en standardberegningsgruppe. Beregningsindstillingerne fra beregningsgruppen bruges derefter som standardværdier på siden Styklistekalkulation på tidspunktet for styklistekalkulationen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362872"
 ---
-
 # <a name="bom-calculations-groups"></a>Styklisteberegningsgrupper
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ En styklistekalkulation genererer advarsler. Du kan få vist advarslerne om den 
 -   Identificer, hvornår varen på en styklistelinje har en rentabilitetsprocentdel, der er mindre end ønsket.
 
 Du kan definere flere styklisteberegningsgrupper, afhængigt af dine behov for variationer i advarselsmeddelelser. En styklisteberegningsgruppe, der f.eks. har advarselssituationer om en aktiv stykliste, et komponentantal på 0 (nul) og en komponentkostpris på 0 (nul), kan være tilstrækkeligt. Når du starter en styklisteberegning, kan du tilsidesætte de gældende advarselssituationer, der er knyttet til styklisteberegningsgruppen. Du kan også tilføje eller fjerne advarselsbetingelser. Hvis den aktuelle situation ikke omfatter rutedata, kan du f.eks. fjerne den gældende advarselsbetingelse for en aktiv rute. **Bemærk:** Tid og fremmøde omfatter en **Beregningsgrupper**-side, men siden har ingen relation til styklisteberegningsgrupper. Under Tid og fremmøde kan arbejdere tilknyttes beregningsgrupper, der afspejler grupperingen af arbejdere, der er tilknyttet den samme tilsynsførende eller leder. En tilsynsførende eller leder kan automatisk eller manuelt rette beregningen af registreringer til arbejdere.
-
 
 
 

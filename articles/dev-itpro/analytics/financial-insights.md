@@ -1,13 +1,13 @@
 ---
-title: "Økonomisk indsigt"
-description: "Økonomiske indsigt bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber."
+title: Økonomisk indsigt
+description: Økonomisk indsigt bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber.
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308845"
 ---
-
 # <a name="financial-insights"></a>Økonomisk indsigt
 
 [!include [banner](../includes/banner.md)]
 
-**Økonomiske indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i Microsoft Dynamics 365 for Finance and Operations. Fokus for **økonomiske indsigt** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 
+**Økonomisk indsigt** bruger Microsoft Power BI til at samle økonomiske nøgletal (KPI'er), diagrammer og regnskaber. Power BI er integreret i Microsoft Dynamics 365 Finance and Operations. Fokus for **økonomiske indsigt** er en analytisk rapportering. Personer på tværs af en organisation kan få vist, undersøge, forstå og reagere. 
 
 **Økonomiske indsigt** kombinerer data fra finansmodulet og reskontroer til at give et mere komplet billede af en organisations økonomiske tilstand.
 
@@ -87,7 +86,7 @@ På nuværende tidspunkt kan dataene i integrerede Power BI-rapporter ikke begr�
 |-----------------------------------------|-------|------------|
 | Vis arbejdsområde for regnskabsdirektørens oversigt             | Økonomidirektør | Denne pligt giver adgang til arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
 | Vis økonomisk indsigt i aktuelt firma | <ul><li>Bogholder</li><li>Regnskabschef</li><li>Regnskabsansvarlig</li><li>Revisor</li><li>Budgetchef</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Finansinspektør</li></ul> | Denne pligt giver adgang til økonomisk indsigt. Som standard bruges det aktive firma som et filter. Du kan ikke tilføje andre juridiske enheder. |
-| Vis økonomisk indsigt i hele firmaet   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne pligt ikke tildelt som en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
+| Vis økonomisk indsigt i hele firmaet   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 er denne opgave ikke tildelt en rolle. I den næste udgave knyttes denne pligt til rollen Økonomidirektør. | Denne pligt giver adgang til menuelementet for arbejdsområdet Regnskabsdirektørens oversigt. Som standard bruges det aktive firma som et filter. Du kan dog tilføje alle juridiske enheder, uanset om brugeren har adgang til de andre juridiske enheder. |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>Økonomirapportering vs. Økonomisk indsigt
@@ -243,11 +242,10 @@ Hvis det maksimale antal overskrides, vil totaler, der vises på regnskabet, væ
 Power BI giver ikke mulighed for at vise og skjule tomme rækker. Hvis en række ikke har nogen data, vises rækken ikke i det visuelle element.
 
 
-## <a name="additional-resources-for-power-bi"></a>Yderligere ressourcer til Power BI
+## <a name="additional-resources-for-power-bi"></a>Yderligere ressourcer for Power BI
 
 Oplysningerne i følgende ressourcer er ikke påkrævet for at aktivere de integrerede rapporter til arbejdsområdet **Regnskabsdirektørens oversigt** eller **Økonomisk indsigt** i et produktionsmiljø. I stedet er de nyttige til udviklingsfelter, og hvis du vil integrere dine egne Power BI-rapporter i Finance and Operations.
 
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

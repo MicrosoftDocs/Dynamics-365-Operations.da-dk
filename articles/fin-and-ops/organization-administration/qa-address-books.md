@@ -1,13 +1,13 @@
 ---
-title: "Ofte stillede spørgsmål om adressekartoteker"
-description: "Dette emne indeholder svar på ofte stillede spørgsmål, der er relateret til adressekartoteker i Microsoft Dynamics 365 for Finance and Operations."
+title: Ofte stillede spørgsmål om adressekartoteker
+description: Dette emne indeholder svar på ofte stillede spørgsmål, der er relateret til adressekartoteker i Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: bb0239fd9bd80ae15bd2cca08d5a5f5258aef638
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337802"
 ---
-
 # <a name="address-books-faq"></a>Ofte stillede spørgsmål om adressekartoteker
 
 [!include [banner](../includes/banner.md)]
@@ -69,4 +68,3 @@ I det globale adressekartotek eller på den relevante enhedsside kan du angive p
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversætte adresseoplysninger for partposter?
 
 Du kan konfigurere oversættelser af adresseoplysninger, så oplysningerne vises på dit eget sprog (systemsprog) i Microsoft Dynamics 365 for Finance and Operations, men på et andet sprog i dokumenter, f.eks salgsordrer. Du kan angive oversættelser af lande-/områdenavne, adresseformål og navnerækkefølge. Dit systemsprog er f.eks. dansk, og du opretter en salgsordre for en kunde i Frankrig. I dette tilfælde kan du se kundeposten på dansk i programmet, men få vist adresseoplysningerne på fransk i den udskrevne salgsordre. Når du konfigurerer oversættelser, skal du indtaste en oversættelse for hver vare på listen. De varer, du ikke angiver en oversættelse for, vises på systemsproget. Dit systemsprog er f.eks. dansk, og du sender et dokument til en kunde i Spanien. Hvis du ikke har angivet spanske (ESP) oversættelser af adresseoplysningerne, vises disse oplysninger på dansk både i dit program og på det udskrevne materiale.
-

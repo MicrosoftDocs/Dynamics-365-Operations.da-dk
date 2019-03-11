@@ -5,30 +5,30 @@ author: sarvanisathish
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315124"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurere SQL Server Reporting Services for lokal installationer
 
 [!include [banner](../includes/banner.md)]
 
-Brug trinnene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) til din installation af Microsoft Dynamics 365 for Finance and Operations (on-premises).
+Brug trinene i dette emne til at konfigurere SQL Server Reporting Services (SSRS) til din Microsoft Dynamics 365 for Finance and Operations (lokal)-installation.
 
 1. Åbn programmet Konfigurationsstyring til Reporting Services.
 2. Lad standard **Servernavn** stå, som bør være navnet på den aktuelle computer, og **Rapportserverforekomst**, **MSSQLSERVER**.
@@ -94,4 +94,3 @@ Brug trinnene i dette emne til at konfigurere SQL Server Reporting Services (SSR
 13. Klik på **Afslut** for at lukke **Konfigurationsstyring til Reporting Services**.
 
     [![konfigurationsstyring til reporting services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-

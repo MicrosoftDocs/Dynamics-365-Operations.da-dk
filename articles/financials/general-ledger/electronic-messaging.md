@@ -1,33 +1,32 @@
 ---
 title: Elektroniske meddelelser
-description: Dette emne indeholder oversigts- og konfigurationsoplysninger for elektroniske meddelelser i Microsoft Dynamics 365 for Finance and Operations.
+description: Dette emne indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: da-dk
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357927"
 ---
-
 # <a name="electronic-messaging"></a>Elektroniske meddelelser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emne indeholder oversigts- og konfigurationsoplysninger for elektroniske meddelelser i Microsoft Dynamics 365 for Finance and Operations.
+Dette emne indeholder en oversigt og oplysninger om opsætning for elektroniske meddelelser i Microsoft Dynamics 365 for Finance and Operations.
 
 Offentlige myndigheder og lovgivende forsamlinger i forskellige lande og områder i hele verden har for nylig implementeret krav til rapportering for virksomheder, der er registreret i disse lande eller områder. Formålet med kravene er at gøre det muligt at få data fra disse virksomheder i elektronisk format direkte fra de systemer, hvor de er blevet bogført, gemt og behandlet.
 
@@ -39,7 +38,7 @@ Elektroniske meddelelser er baseret på følgende enheder:
 
 - **Elektronisk meddelelse** – En rapport eller erklæring, der skal rapporteres og/eller overføres internt. Et eksempel er en rapport, der sendes til et skattekontor.
 - **Elektroniske meddelelseselementer** – Poster, der skal medtages i den meddelelse, der rapporteres.
-- **Behandling af elektronisk meddelelse** – En kæde af handlinger, enten tilknyttede eller ikke-tilknyttede, der skal køres for at indsamle de nødvendige data, generere rapporter, gemme data i Microsoft Azure Blob-lageret, sende rapporter uden for systemet, modtage svar, der ikke kommer fra systemet, og opdatere databasen ud fra de oplysninger, der er modtaget.
+- **Behandling af elektroniske meddelelser** – En kæde af handlinger, enten tilknyttede eller ikke-tilknyttede, der skal køres for at indsamle de nødvendige data, generere rapporter, gemme data i Microsoft Azure Blob-lageret, sende rapporter uden for systemet, modtage svar, der ikke kommer fra systemet, og opdatere databasen ud fra de oplysninger, der er modtaget.
 
 I følgende illustration vises en række data til elektroniske meddelelser.
 
@@ -452,4 +451,3 @@ Du kan nu enten slette eller opdatere meddelelsesstatus. For at opdatere meddele
 ![Opdatere meddelelsens status](media/update-status.png)
 
 Meddelelsesstatussen opdateres til **Forberedt**, og du kan nu generere rapporten ved at vælge **Generér rapport**. Rapporten oprettes, og meddelelsesstatus og handlingsloggen opdateres. For at få vist den genererede rapport skal du vælge knappen **Vedhæftet fil** i handlingsruden.
-

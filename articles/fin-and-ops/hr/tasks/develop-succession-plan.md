@@ -1,13 +1,13 @@
---- 
-title: "Udarbejd efterfølgerplan"
-description: "Efterhånden som organisationen vokser, og du overveje planlægning af efterfølger, kan du eventuelt søge efter en person med færdigheder, der ligner en anden persons færdigheder."
+---
+title: Udarbejd efterfølgerplan
+description: Efterhånden som organisationen vokser, og du overveje planlægning af efterfølger, kan du eventuelt søge efter en person med færdigheder, der ligner en anden persons færdigheder.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339182"
 ---
 # <a name="develop-succession-plan"></a>Udarbejd efterfølgerplan
 
@@ -59,5 +59,4 @@ Efterhånden som organisationen vokser, og du overveje planlægning af efterføl
 27. Klik på Resultat.
 28. Klik på Rapport.
     * Rapporten viser de bedste forekomster øverst i rapporten.  Du kan se, at der er vist et kløftelement.  Det er forskellen mellem det niveau, der blev angivet i kompetencesøgningen, og niveauet for den færdighed, som er tildelt til personen.  
-
 

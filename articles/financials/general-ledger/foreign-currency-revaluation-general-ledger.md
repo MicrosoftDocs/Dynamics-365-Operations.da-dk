@@ -1,13 +1,13 @@
 ---
-title: "Værdiregulering af udenlandsk valuta for Finans"
-description: "Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt."
+title: Værdiregulering af udenlandsk valuta for Finans
+description: 'Dette emne indeholder en oversigt over følgende proces til værdiregulering af udenlandsk valuta i finans: konfiguration, kørsel af processen beregning for processen, og hvordan du kan tilbageføre posteringerne, hvis det er nødvendigt.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315538"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Værdiregulering af udenlandsk valuta for Finans
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Der oprettes følgende regnskabspost.
 Hvis du vil tilbageføre værdireguleringstransaktionen, skal du vælge knappen **Tilbagefør postering** på siden **Værdiregulering af udenlandsk valuta**. Der oprettes en ny historisk post for værdiregulering af udenlandsk valuta for at bevare det historiske revisionsspor for, hvornår reguleringen opstod eller blev tilbageført. 
 
 Du kan tilbageføre resultaterne af forældet værdiregulering, men du skal muligvis også tilbageføre en mere aktuel værdiregulering for at sikre korrekte saldi for hver hovedkonto, der er reguleret. Tilbageførsler kan opstå forældet, fordi der er ingen måde at styre, hvilke hovedkonti der revalueres og hvor ofte. For eksempel kan en organisation vælge at regulere deres kontanthovedkonti på kvartalsvist grundlag, men alle andre hovedkonti hver måned.
-
 
 
 

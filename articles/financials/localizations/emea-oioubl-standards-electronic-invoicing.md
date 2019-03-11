@@ -1,30 +1,29 @@
 ---
-title: "Understøttede standarder til elektronisk fakturering i Europa"
-description: "I dette emne beskrives det dækningsniveau, der findes for elektronisk fakturering i Microsoft Dynamics 365 for Finance and Operations i det europæiske område."
+title: Understøttede standarder til elektronisk fakturering i Europa
+description: I dette emne beskrives det dækningsniveau, der findes for elektronisk fakturering i Microsoft Dynamics 365 for Finance and Operations i det europæiske område.
 author: mrolecki
 manager: AnnBe
 ms.date: 07/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 366e67415b82c6bbc6b066b4ce44e4654bd93103
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 354b9fd50dbd628b91fd4d77c4cb323ddc36428f
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370188"
 ---
-
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Understøttede standarder til elektronisk fakturering i Europa
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,7 @@ Elektronisk fakturering er baseret på [elektronisk indberetning](../../dev-itpr
 -   Projektfaktura (ES)
 -   Projektfaktura (IT)
 
-De elektroniske fakturaer og kreditnotaer, som du genererer, omfatter nødvendige oplysninger som et europæisk varenummer (EAN) og oplysninger om kontakt, dimensionskontonummer og adresse til kunden. Der anvendes valideringsregler, når der genereres fakturaer, så du kan kontrollere, at de korrekte oplysninger er angivet. Sættet af nødvendige oplysninger kan variere fra land til land. Da både kravene og de understøttede lande og formater kan blive ændret, bør du altid gå til det delte aktivbibliotek i Microsoft Dynamics Lifecycle services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**.
+De elektroniske fakturaer og kreditnotaer, som du genererer, omfatter nødvendige oplysninger som et europæisk varenummer (EAN) og oplysninger om kontakt, dimensionskontonummer og adresse til kunden. Der anvendes valideringsregler, når der genereres fakturaer, så du kan kontrollere, at de korrekte oplysninger er angivet. Sættet af nødvendige oplysninger kan variere fra land til land. Da både kravene og de understøttede lande og formater kan blive ændret, bør du altid gå til det delte aktivbibliotek i Microsoft Dynamics Lifecycle Services (LCS) og få vist den seneste liste over tilgængelige filer, som har aktivtypen **GER-konfiguration**.
 
 ## <a name="additional-information"></a>Yderligere oplysninger
 Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afspille følgende [opgaveguider](../../fin-and-ops/get-started/help-overview.md#task-guides) i ruden Hjælp:
@@ -78,4 +77,3 @@ Du kan få flere oplysninger om opsætning af elektroniske fakturaer ved at afsp
 
 > [!NOTE] 
 > Selvom disse opgaveguider er oprettet specifikt til det danske e-fakturaformat *OIOUBL*, gælder de også for andre understøttede lande, med mindre afvigelser.
-

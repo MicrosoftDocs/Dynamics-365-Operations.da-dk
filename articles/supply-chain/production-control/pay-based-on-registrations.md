@@ -1,13 +1,13 @@
 ---
-title: "Løn på basis af registreringer"
-description: "Dette emne forklarer, hvordan løn beregnes baseret på arbejderregistreringer."
+title: Løn på basis af registreringer
+description: Dette emne forklarer, hvordan løn beregnes baseret på arbejderregistreringer.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: f36c411ce24dfd8cceacda3d4659ec9a98fd5aa9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321104"
 ---
-
 # <a name="pay-based-on-registrations"></a>Løn på basis af registreringer
 
 [!include [banner](../includes/banner.md)]
@@ -600,4 +599,3 @@ Hvis arbejderen ikke møder på arbejde på en arbejdsdag, og der er ikke planla
 - Automatisk indsættelse af fravær
 
 Når de daglige registreringer beregnes for en arbejder, der er aktiveret til flekstimer, bruges den fraværskode, der er angivet i feltet **Automatisk indsættelse af fleks-**, som en standardfraværskode. Hvis arbejderen ikke er aktiveret til flekstimer, bruges den fraværskode, der er angivet i feltet **Automatisk indsættelse af fravær**. Hvis en virksomhed har en kombination af arbejdere, der er aktiveret til flekstimer, og arbejdere, der ikke er aktiveret til flekstid, skal begge parametre konfigureres.
-

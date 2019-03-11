@@ -1,13 +1,13 @@
 ---
-title: "Opgradere budgetplanlægning"
-description: "Der er væsentlige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført."
+title: Opgradere budgetplanlægning
+description: Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a39f516bb6d023ea18492ba3dfe721bd1127c60e
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342954"
 ---
-
 # <a name="upgrade-budget-planning"></a>Opgradere budgetplanlægning
 
 [!include [banner](../includes/banner.md)]
 
-Der er væsentlige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
+Der er betydelige forskelle i budgetplanlægning mellem Microsoft Dynamics AX 2012 og Microsoft Dynamics 365 for Finance and Operations. Nogle funktioner blev ikke opgraderet og kræver derfor omkonfiguration. I dette emne beskrives, hvad der skal konfigureres, og nye funktioner, der skal overvejes, når opgraderingen er fuldført.  
 
-Budgetplanlægning i Microsoft Dynamics 365 for Finance and Operations har mange forbedringer, der ikke var tilgængelige i Microsoft Dynamics AX 2012. I dette emne beskrives de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i dette emne, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
+Budgetplanlægning i Microsoft Dynamics 365 for Finance and Operations har mange forbedringer, der ikke var tilgængelige i Microsoft DynamicsAX 2012. I dette emne beskrives de ændringer, der skal foretages af kunder, der opgraderer. Desuden omtales de nye funktioner, der skal overvejes i opgraderingsprocessen. På grund af omfanget af ændringerne kan eventuelle eksisterende budgetplaner ikke åbnes, før de ændringer, der er beskrevet i dette emne, er foretaget. Rapporter bør dog fortsat fungere og skulle ikke kræve yderligere ændringer.
 
 ## <a name="overview-of-changes"></a>Oversigt over ændringer
 Der er foretaget mange væsentlige ændringer i Budgettering til Finance and Operations. Disse ændringer er beregnet til at gøre budgetplanlægningen nemmere at konfigurere og mere genanvendelig og til at reducere opsætning og vedligeholdelse år for år. Følgende områder i AX 2012 findes ikke længere i Finance and Operations:
@@ -41,7 +40,7 @@ Der er foretaget mange væsentlige ændringer i Budgettering til Finance and Ope
 -   Scenariebegrænsninger (konfiguration af budgetplanlægning)
 -   Skabeloner til regler og skabeloner til budgetplanlægningsstadier (budgetplanlægningsproces).
 -   Matrixfelter til regnearksskabeloner
--   Guiden Microsoft Excel-skabelon til budgetplan
+-   Guide til budgetplanens Microsoft Excel-skabelon
 
 Nogle nye begreber kan ikke opgraderes direkte fra de tidligere funktioner. Derfor skal du omkonfigurere nogle funktioner af hensyn til disse nye begreber. I følgende afsnit beskrives de begreber, der har erstattet elementerne i den foregående liste.
 
@@ -51,7 +50,7 @@ Kolonner er et nyt begreb, der erstatter dele af Excel-skabelonen og også matri
 
 ### <a name="layouts"></a>Layout
 
-Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i Dynamics 365 for Finance and Operations-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når indtaster data i Finance and Operations-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en posteringsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
+Layout er et nyt begreb, der erstatter Excel-skabelonen. Layout indeholder de kolonner, der definerer, hvilke budgetdata eller faktiske oplysninger og perioder der skal vises. Layout deles også mellem klienten og Excel-tilføjelsesprogrammet. Brugeroplevelsen, når du angiver eller får vist data i Finance and Operations-klienten, er derfor bedre end brugeroplevelsen i AX 2012. Når indtaster data i Finance and Operations-klienten, er du ikke længere begrænset til visning og indtastning af et enkelt scenario i en posteringsvisning. I stedet kan du med en sammenlignende visning nemt få vist og angive beløb for flere perioder og konti på samme tid. Layout kan også defineres, så du kan angive og få vist valuta, kommentarer og andre valgfrie data. Med layout kan du definere, hvilke finansdimensioner og beskrivelser for dimensionen der skal vises. Layout omfatter også begrænsninger i scenariet for at definere, hvilke kolonner i en skabelon, der kan redigeres, og hvilke kolonner der skal være tilgængelige i Excel. Når du har defineret et layout, oprettes der en skabelon for det. Denne skabelon opretter den tilsvarende Excel-skabelon. Du kan derefter redigere Excel-skabelonen, hvis du vil medtage flere formler og formatering, og derefter overføre den igen. Layout tildeles derefter til hver stadieregel på siden **Budgetplanlægningsproces**. Derfor erstatter layout skabeloner, som blev tildelt og brugt på samme måde.
 
 ### <a name="budget-planning-processes"></a>Budgetplanlægningsprocesser
 
@@ -160,7 +159,6 @@ Flere dataenheder er tilføjet for at aktivere hurtig implementering af budgetpl
 -   Budgetplansprioriteter
 -   Budgetplankolonner
 -   Layoutelementer til budgetplan
-
 
 
 

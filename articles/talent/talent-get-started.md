@@ -1,13 +1,13 @@
 ---
 title: Kom i gang med Talent
-description: "Dette emne indeholder oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov, samt opretter forbindelse til de Hjælp-ressourcer, der er tilgængelige i produktet og på webstedet docs.microsoft.com."
+description: Dette emne indeholder oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov, samt opretter forbindelse til de Hjælp-ressourcer, der er tilgængelige i produktet og på webstedet docs.microsoft.com.
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "303805"
 ---
 # <a name="get-started-with-talent"></a>Kom i gang med Talent
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/08/2018
 I Microsoft Dynamics 365 for Talent er det nemt at ændre brugergrænsefladen og angive indstillinger, der gør programmet mere intuitiv til dine behov. Dette emne indeholder links til emner med oplysninger om, hvordan du tilpasser brugergrænsefladen til dine behov. Emnet indeholder også links til oplysninger, der kan hjælpe dig med at finde oplysninger i systemet, effektivt og korrekt. 
 
 > [!NOTE] 
-> Følgende produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. I emner, der primært vedrører Retail, er produktets navn Dynamics 365 for Retail. I emner, der vedrører Talent primært, er produktnavnet Dynamics 365 for Talent, og i emner, der vedrører det centrale produkt, er produktnavnet Dynamics 365 for Finans and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
+> Følgende tre produkter er tæt forbundne: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail og Dynamics 365 for Talent. Den samme funktionalitet kan forekomme i alle 3 produkter. Derfor er produktnavnet i emner, der primært vedrører Retail, Dynamics 365 for Retail. I emner, der primært vedrører Talent, er produktnavnet Dynamics 365 for Talent, og i emner, der primært vedrører kerneproduktet, er produktnavnet Dynamics 365 for Finance and Operations. Emner, der er skrevet til et produkt, kan anvendes til den samme funktionalitet i et relateret produkt.
 
 ## <a name="personalizing-talent"></a>Tilpasse Talent 
 I de følgende emner beskrives opsætning af mange funktioner i Dynamics 365 for Talent, der gør det lettere for dig at udføre dit arbejde til tiden. 
@@ -57,13 +57,12 @@ I følgende emner forklares, hvordan du kan bruge opslag og funktionerne til sø
 
 ## <a name="additional-resources"></a>Yderligere ressourcer
 
-### <a name="whats-new-and-in-development"></a>Nyheder og under udvikling
-Gå til [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.
+### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
+Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling.
 
 ### <a name="blogs"></a>Blogs
 Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsninger i [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videoer
-Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Se de Sådan-videoer, der er nu tilgængelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

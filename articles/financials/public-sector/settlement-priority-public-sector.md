@@ -1,13 +1,13 @@
 ---
 title: Udligningsprioritet i den offentlige sektor
-description: "I Microsoft Dynamics 365 for Finance and Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning."
+description: I Microsoft Dynamics 365 for Finance and Operations kan du vælge at udligne transaktionerne manuelt eller bruge funktionen til automatisk udligning. Offentlige organisationer har flere muligheder for at prioritere af udligninger ved hjælp af faktureringsklassifikationer. Disse indstillinger kan bruges sammen med automatisk eller manuel udligning.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, CustSettlementPrioritySetup, LedgerParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -19,14 +19,13 @@ ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37470f4ba4d9863b15a74d4c2e1a8be4b6994184
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 055021b237ae1c14ed974f72a7b0f73964362254
-ms.contentlocale: da-dk
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370180"
 ---
-
 # <a name="settlement-priority-in-the-public-sector"></a>Udligningsprioritet i den offentlige sektor
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Under udligningsprocessen kommer udligningsattributter i betragtning først, der
 -   Når du har føjet faktureringskoder til en faktureringsklassifikation, skal du bruge knapperne **Op** og **Ned** på oversigtspanelet **Faktureringskoder** til at arrangere faktureringskoder i prioriteringsrækkefølge. (Dette er kun nødvendigt, hvis du planlægger at bruge **Faktureringskode** som din fakturalinjeprioritet).
 -   Når du har oprettet alle de faktureringsklassifikationer for organisationen, kan du bruge knapperne **Op** og **Ned** øverst på siden **Faktureringsklassifikationer** til at arrangere faktureringsklassifikationer i prioriteringsrækkefølge.
 -   Når du har aktiveret attributten **Fakturering** på siden **Udligningsprioritet**, skal du bruge knapperne **Op** og **Ned** øverst på siden til at arrangere de aktive udligningsattributter i prioriteringsrækkefølge.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Oprette modeltilknytningskonfigurationer til elektronisk rapportering
 description: Du kan bruge denne procedure til at designe en ny modeltilknytningskonfiguration til elektronisk rapportering og bruge indbyggede ER-funktioner til effektive samlede beregninger.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 614ef06fcf5761f1cf2afb6e7655558d2858d763
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357168"
 ---
 # <a name="create-electronic-reporting-er-model-mapping-configurations"></a>Oprette modeltilknytningskonfigurationer til elektronisk rapportering
 
@@ -65,5 +65,4 @@ Disse trin kan udføres ved hjælp af ethvert datasæt. Du skal fuldføre trinne
 4. Skriv 'Tilknytning af Intrastat-eksempel' i feltet Navn.
     * Tilknytning af Intrastat-eksempel  
 5. Klik på Opret konfiguration.
-
 

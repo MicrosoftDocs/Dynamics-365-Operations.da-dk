@@ -1,13 +1,13 @@
 ---
-title: "FIFO med fysisk værdi og afmærkning"
-description: "FIFO (First in, First out) er en lagermodel, hvor de først anskaffede tilgange afgår først. Økonomisk opdaterede afgange fra lageret udlignes mod de første økonomisk opdaterede tilgange til lageret på baggrund af den økonomiske dato for lagertransaktionen."
+title: FIFO med fysisk værdi og afmærkning
+description: FIFO (First in, First out) er en lagermodel, hvor de først anskaffede tilgange afgår først. Økonomisk opdaterede afgange fra lageret udlignes mod de første økonomisk opdaterede tilgange til lageret på baggrund af den økonomiske dato for lagertransaktionen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d3a6c412e497952c0c7f5b113990bbe693b0f22
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348819"
 ---
-
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk værdi og afmærkning
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk op
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 - En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
@@ -92,7 +91,7 @@ Postering 5b udlignes mod tilgangspostering 1b. Der foretages en regulering på 
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 - En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
@@ -122,14 +121,13 @@ Den nye løbende gennemsnitskostpris afspejler gennemsnittet af de økonomisk og
 - Lagertransaktioner vises som lodrette pile.
 - Lagertilgange vises som lodrette pile over tidslinjen.
 - Lagerafgange vises som lodrette pile under tidslinjen.
-- Over eller under hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Quantity@Unitprice.
+- Over (eller under) hver enkelt lodret pil angives værdien af lagertransaktionen i formatet Antal@stykpris.
 - En lagerposteringsværdi, der er omgivet af parenteser, angiver, at lagerposteringen bogføres fysisk på lageret.
 - En lagerposteringsværdi, der ikke er omgivet af parenteser, angiver, at lagerposteringen bogføres økonomisk på lageret.
 - Hver enkelt ny tilgangs- eller afgangspostering er markeret med en ny etiket.
 - Hver enkelt lodret pil er markeret med et sekvens-id, f.eks. *1a*. Identifikatorerne angiver rækkefølgen af lagerposteringsbogføringer på tidslinjen.
 - Lagerlukninger angives med en rød, lodret stiplet linje og etiketten *Lagerlukning*.
 - Udligninger, der foretages ved lagerlukning, angives med stiplede, røde pile, der går diagonalt fra en tilgang til en afgang.
-
 
 
 

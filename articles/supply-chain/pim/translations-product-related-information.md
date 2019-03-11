@@ -1,13 +1,13 @@
 ---
-title: "Ofte stillede spørgsmål til produktvariantoversættelser"
-description: "Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter."
+title: Ofte stillede spørgsmål til produktvariantoversættelser
+description: Dette emne beskriver, hvordan du administrerer oversættelser for produkter, produktdimensionsværdier og produktattributter.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Product information
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d124e2608f01878487bc8fc9af2e27d143c8ae9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
-ms.contentlocale: da-dk
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342862"
 ---
-
 # <a name="product-related-translations-faq"></a>Ofte stillede spørgsmål til produktvariantoversættelser
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Følg disse trin for at administrere oversættelser af værdier for en dimension
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Hvornår kan oversættelser af produktrelaterede oplysninger administreres?
 Du kan administrere oversættelser af produktrelaterede oplysninger når som helst. Når oversættelser opdateres for en dimensionsværdi, der er knyttet til et produkt, opdateres produktoplysninger, uanset om produktet har transaktioner.
-
 
 
 

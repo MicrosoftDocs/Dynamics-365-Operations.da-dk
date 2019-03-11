@@ -1,13 +1,13 @@
---- 
-title: "Konfigurere nummerserier på individuel basis"
-description: "Nummerserier bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er."
+---
+title: Konfigurere nummerserier på individuel basis
+description: Nummerserier bruges til generering af læselige, entydige id'er for masterdataposter og transaktionsposter, der kræver id'er.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362205"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier på individuel basis
 
@@ -43,5 +43,4 @@ Nummerserier bruges til generering af læselige, entydige id'er for masterdatapo
 8. Udvid sektionen Generelt.
     * Angiv, om nummerserien er manuel, og om den er fortløbende eller ej, i oversigtspanelet Generelt. Angiv dernæst det laveste og det højeste nummer, der kan bruges i nummerserien.     Det anbefales, at man ikke ændrer en ikke-fortløbende nummerserie til en fortløbende nummerserie. Nummerserien vil ikke blive reelt kontinuerlig. Denne ændring kan også medføre fejl med dubletnøgler i databasen. Fortløbende nummerserier har desuden en større effekt på ydeevnen.   
 9. Klik på Gem.
-
 

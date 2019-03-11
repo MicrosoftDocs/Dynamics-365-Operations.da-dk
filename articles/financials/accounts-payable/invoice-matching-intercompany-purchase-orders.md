@@ -1,13 +1,13 @@
 ---
-title: "Fakturasammenholdelse og interne indkøbsordrer"
-description: "Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres."
+title: Fakturasammenholdelse og interne indkøbsordrer
+description: Den juridiske indkøbsenhed, der er involveret i en intern handelstransaktion kan konfigureres til at bruge kreditorfakturasammenholdelse. I dette tilfælde skal behovene for bogføring for både intern handel og kreditorfakturasammenholdelse opfyldes, før de interne kreditorfakturaer kan bogføres.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357559"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturasammenholdelse og interne indkøbsordrer
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Benyt f.eks. følgende fremgangsmåde.
 2.  Udfør en fakturaopdatering af ICSO999 in Fabrikam Sales. Bogføringen er ikke lykkedes, fordi varen ikke er på lager og endnu ikke er blevet modtaget. Derfor kan de finansielle oplysninger ikke opdateres.
 3.  Registrer, at varerne er modtaget, og bogfør en følgeseddel for ICS0999 i Fabrikam Sales. Der bogføres automatisk en produktkvittering for ICPO333 i Fabrikam Purchase. Det modtagne antal for vare B-R14 skifter til 100 i Fabrikam Purchase.
 4.  Udfør en fakturaopdatering af ICSO999 in Fabrikam Sales. Bogføringen er korrekt udført i begge juridiske enheder. Det indkøbte antal af vare B-R14 skifter til 100 i Fabrikam Purchase.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Lager, luk
-description: "Som en del af processen til at udligne afgangsposteringerne med tilgangsposteringer, kan du også vælge at have Finans opdateret for at afspejle de justeringer, der er foretaget."
+description: Som en del af processen til at udligne afgangsposteringerne med tilgangsposteringer, kan du også vælge at have Finans opdateret for at afspejle de justeringer, der er foretaget.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: da-dk
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326486"
 ---
-
 # <a name="inventory-close"></a>Lager, luk
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ I nogle tilfælde kan du muligvis ikke gøre noget ved advarslerne. Hvis der f.e
 Nogle gange kan det være nødvendigt at tilbageføre en afsluttet lagerlukning for at ændre udligninger til den tilstand, de var i, før reguleringerne blev foretaget. Når du tilbagefører en afsluttet lagerlukning, åbnes lageret også igen for at gøre det muligt at bogføre i den periode, lagerlukningen dækker. Relaterede ændringer kan også foretages i Finans. Når du er færdig med at foretage justeringer, kan du køre lagerlukningen igen for den periode, du arbejder med. 
 
 **Bemærk!** Det er kun den sidste lagerperiode, der blev lukket, som kan åbnes igen. Hvis du vil tilbageføre en tidligere lagerlukning, skal du tilbageføre hver efterfølgende lagerlukning for sig, og du skal starte med den seneste lukning.
-
 
 
 

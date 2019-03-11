@@ -1,13 +1,13 @@
 ---
-title: "Oprette kreditorbetalinger ved hjælp af et betalingsforslag"
-description: "Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer."
+title: Oprette kreditorbetalinger ved hjælp af et betalingsforslag
+description: Dette emne indeholder en oversigt over indstillinger til betalingsforslag og indeholder nogle eksempler på, hvordan betalingsforslag fungerer.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327406"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Oprette kreditorbetalinger ved hjælp af et betalingsforslag
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ D. 1 juli betaler April leverandører. Hun bruger et betalingsforslag til at udf
 
 ### <a name="option-1-by-cash-discount"></a>Mulighed 1: Efter kasserabat
 
-April vælger **Kasserabat** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
+April vælger **Kasserabat** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
 
 -   1002, fordi rabatdatoen 4. juli ligger i betalingsdatointervallet.
 -   1004, fordi rabatdatoen 1. juli ligger i betalingsdatointervallet.
@@ -82,7 +81,7 @@ Følgende fakturaer medtages ikke i forslaget:
 
 ### <a name="option-2-by-due-date"></a>Mulighed 2: Efter forfaldsdato
 
-April vælger **Efter forfaldsdato** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
+April vælger **Efter forfaldsdato** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
 
 -   1003, fordi forfaldsdatoen 29. juni ligger i betalingsdatointervallet.
 
@@ -94,7 +93,7 @@ Følgende fakturaer medtages ikke i forslaget:
 
 ### <a name="option-3-by-due-date-and-cash-discount"></a>Mulighed 3: Efter forfaldsdato og kasserabat
 
-April vælger **Forfaldsdato og kasserabat** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
+April vælger **Forfaldsdato og kasserabat** som forslagstype. Hun skriver et datointerval fra 26. juni til 10. juli. Følgende fakturaer medtages i forslaget:
 
 -   1003, fordi forfaldsdatoen 29. juni ligger i betalingsdatointervallet.
 -   1002, fordi rabatdatoen 4. juli ligger i betalingsdatointervallet.
@@ -120,8 +119,7 @@ Dimensionskontrolelementet styrer gruppering af linjer, der er genereret af beta
 
 #### <a name="bank-account-selection"></a>Valg af bankkonto
 
-Du kan definere en standardbetalingskonto for debitering pr. metode til betaling uanset landekontekst. Dette angives i betalingslinjer, der er genereret af et forslag. Med funktionen til bankkonto kan du definere flere debiteringsbankkonti, der administreres af dimension og valuta eller en kombination af disse for at bruge forskellige debiteringsbankkonti, afhængig af hver enkelt kombination. Du kan konfigurere disse kombinationer på siden **Betalingsmåder** ved hjælp af knappen **Bankkonti** for hver betalingsmetode med **Bogføringskontotype** = **Bank**.
-
+Du kan definere en standardbetalingskonto for debitering pr. metode til betaling uanset landekontekst. Dette angives i betalingslinjer, der er genereret af et forslag. Med funktionen til bankkonto kan du definere flere debiteringsbankkonti, der administreres af dimension og valuta eller en kombination af disse for at bruge forskellige debiteringsbankkonti, afhængig af hver enkelt kombination. Du kan konfigurere disse kombinationer på siden **Betalingsmåder** ved hjælp af knappen **Bankkonti** for hver betalingsmetode med **Bogføringskontotype** = **Bank**.
 
 
 

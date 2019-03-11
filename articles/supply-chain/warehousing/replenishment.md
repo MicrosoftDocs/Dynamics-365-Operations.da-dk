@@ -1,13 +1,13 @@
 ---
 title: Opfyldning
-description: "I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring."
+description: I dette emne beskrives de genopfyldningsstrategier, der er tilgængelige for lagersteder, der bruger den funktionalitet, der findes i Lagerstedsstyring.
 author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344518"
 ---
-
 # <a name="replenishment"></a>Opfyldning
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Genopfyldning ved behov understøttes for salgsordrer, flytteordrer, produktions
 ## <a name="minmax-replenishment"></a>Min./maks. genopfyldning
 I Min/Maks genopfyldning genopfyldes lagerbeholdningen, så det ligger mellem den angivne minimum- og maksimumgrænse. Processen udføres typisk én gang hver dag for at sikre, at alle plukpladser er fyldt til det maksimale niveau, før plukningen starter. 
 
-Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer Microsoft Dynamics 365 for Finance and Operations, om der kræves genopfyldning ved brug af den rækkefølge, som linjerne er organiseret i. 
+Minimum- og maksimummængderne indstilles i en genopfyldningsskabelon. Mange af de andre indstillinger i skabelonen minder om indstillingerne i skabeloner, der bruges i Genopfyldning baseret på bølgebehov. Skabelonen skal indeholde én linje for hver vare og lokation. Når du kører genopfyldning ved hjælp af batchjobbet, vurderer Microsoft Dynamics 365 for Finance and Operations, om der kræves genopfyldning ved hjælp af den rækkefølge, som linjerne er organiseret i. 
 
 Bemærk, at Min./maks genopfyldningsstrategien ikke kan genopfylde en tom lokation, medmindre lokationen er angivet som fast lokation for varen. Hvis den lokation, der skal genopfyldes, ikke er en fast lokation, kan systemet ikke fastslå, hvilken vare der skal genopfyldes. En vis minimumbeholdning er derfor påkrævet, før der foretages genopfyldning.
 
@@ -77,5 +76,4 @@ I stedet for at opsummere behov i slutningen af en fordelingsproces og foretage 
 |    Lokationsprofiler    |                                                                                                        Lokationsprofiler er nødvendige for at oprette lokationer.                                                                                                        |
 |   Lokationsvejledninger   |                                                       Lokationsvejledninger er nødvendige for at lede arbejdet til de lokationer, hvor genopfyldning er nødvendig, og til de lokationer, som lageret leveres fra.                                                        |
 |     Arbejdsskabeloner      |                                                   Arbejdsskabeloner af typen <strong>Genopfyldning</strong> kræves for at oprette genopfyldningsarbejde, så lageret kan flyttes til de ønskede lokationer.                                                    |
-
 

@@ -1,13 +1,13 @@
 ---
 title: Arbejdsgang for kreditorer
-description: "Rediger leverandøroplysninger, og brug arbejdsgange til at godkende dem."
+description: Rediger leverandøroplysninger, og brug arbejdsgange til at godkende dem.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: da-dk
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329683"
 ---
-
 # <a name="vendor-workflow"></a>Arbejdsgang for kreditorer
 
 [!include [banner](../includes/banner.md)]
@@ -61,5 +60,4 @@ Når du har mindst én foreslåede ændring, vises der to ekstra faner i handlin
 
     Status på siden ændres til **Ændringer, der afventer godkendelse**.
 
-Arbejdsgangen følger standardarbejdsgangsgangen i Microsoft Dynamics 365 for Finance and Operations. Godkenderen sendes til siden **Kreditor**, hvor han eller hun kan gennemgå ændringerne på siden **Foreslåede ændringer** og derefter vælge **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, som du har foreslået.
-
+Arbejdsgangen følger standardarbejdsgangsprocessen i Microsoft Dynamics 365 for Finance and Operations. Godkenderen sendes til siden **Kreditor**, hvor han eller hun kan gennemgå ændringerne på siden **Foreslåede ændringer** og derefter vælge **Arbejdsgang \> Godkend** for at godkende arbejdsgangen. Når alle godkendelser er fuldført, opdateres felterne med de værdier, du foreslog.

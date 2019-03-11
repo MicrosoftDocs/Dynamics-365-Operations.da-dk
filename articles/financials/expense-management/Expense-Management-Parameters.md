@@ -1,13 +1,13 @@
 ---
 title: Parametre for udgiftsstyring
-description: "Følgende parametre styrer funktionsmåden i Udgiftsstyring."
+description: Følgende parametre styrer funktionsmåden i Udgiftsstyring.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: b6f67d44e0c64c145bb6d477c83d5a245b1682d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355926"
 ---
-
 # <a name="expense-management-parameters"></a>Parametre for udgiftsstyring
 
 [!include [banner](../includes/banner.md)]
@@ -92,5 +91,4 @@ Parametrene styrer den generelle funktionsmåde i Udgiftsstyring.
 |  <strong>Vis antikorruptionsattest</strong>  | Vælg denne indstilling for at få vist antikorruptionsteksten, når du opretter en ny udgiftsrapport. Derefter kan du aktivere specifikke udgiftskategorier, der kræver, at antikorruptionsattesten er valgt i udgiftsrapporten. F.eks. kan en gavekategori, der er relateret til en udgift i forbindelse med en regeringsembedsmænd, kræve, at medarbejderen bekræfter, at udgiften overholder firmaets politik vedrørende regeringsembedsmænd. |
 | <strong>Meddelelse til afsender om antikorruption</strong> |                                                                                             Angiv den tekst, medarbejderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen <strong>Oversættelser</strong> for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.                                                                                             |
 | <strong>Meddelelse til godkender om antikorruption</strong>  |                                                                                             Angiv den tekst, godkenderen ser, når der oprettes en ny udgiftsrapport. Klik på knappen <strong>Oversættelser</strong> for at angive den sprogspecifikke tekst, der skal vises baseret på brugerens sprog.                                                                                             |
-
 

@@ -1,30 +1,29 @@
 ---
 title: Oprette en genanskaffelsesordre for en vare
-description: "Der oprettes normalt en genanskaffelsesordre for en vare, når et produkt er returneret og kontrolleret."
+description: Der oprettes normalt en genanskaffelsesordre for en vare, når et produkt er returneret og kontrolleret.
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 784a2522c27e8131f211ffc52319552b3b928cc3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f0cd629658972f98e2233dfa287940c4444b82a
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355006"
 ---
-
 # <a name="create-an-item-replacement-order"></a>Oprette en genanskaffelsesordre for en vare 
 
 [!include [banner](../includes/banner.md)]
@@ -66,6 +65,5 @@ Der oprettes normalt en genanskaffelsesordre for en vare, når et produkt er ret
     
     Hvis id'et for salgsaftalen vises automatisk i feltet **Salgsaftale-id**, er salgsaftalen blevet knyttet til salgsordrehovedet for vareerstatningsordren. Hvis der er en gældende forpligtelse i salgsaftalen, som endnu ikke er opfyldt, og salgsordren er oprettet, før salgsaftalen udløber, oprettes der et link mellem salgsaftalelinjen og salgsordrelinjen. Derfor kopieres oplysninger fra salgsaftalen som f.eks. varepris, til den nye salgsordrelinje. 
   
-
 
 

@@ -5,9 +5,9 @@ author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350981"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Modellering af en lean organisation
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ I produktionsscenarier baseret på produktionsordrer udstedes materiale til en b
 
 For at reducere leveringstider og overskydende lager mellem ressourcer, der er forårsaget af batchproduktion, introducerer lean manufacturing kanban-opfyldning og supermarkeder i produktion og genopfyldning af lagersted. Dette bringer normalt uorden i produktionen af delvist uafhængige kanban-cyklusser. Genopfyldning af en kanban for et halvfærdigt produkt udløses ikke længere af en ordre til et færdigt produkt. 
 
-Hvis du vil genoprette en produktions- og omkostningskontekst for de forskellige kanban-scenarier, der foreslås i Microsoft Dynamics 365 for Finance and Operations introduceres de aktivitetsbaserede produktionsflows som grundstenen i lean manufacturing. Alle kanban-regler refererer til denne prædefinerede struktur. Den aktivitetsbaserede model understøtter opsætningen af en lang række scenarier. Men denne model tilføjer ikke kompleksitet for medarbejdere i produktionen, fordi alle scenarier bruger den samme aktivitetsbaserede brugergrænseflade.
+Hvis du vil genoprette en produktions- og omkostningskontekst for de forskellige kanban-scenarier, der foreslås i Microsoft Dynamics 365 for Finance and Operations, introduceres de aktivitetsbaserede produktionsflows som grundstenen i lean manufacturing. Alle kanban-regler refererer til denne prædefinerede struktur. Den aktivitetsbaserede model understøtter opsætningen af en lang række scenarier. Men denne model tilføjer ikke kompleksitet for medarbejdere i produktionen, fordi alle scenarier bruger den samme aktivitetsbaserede brugergrænseflade.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikata (ikke-styklisteniveauer)
 Lean Manufacturing integrerer kanban for produkter på lager og halvfabrikata i en enkelt ramme, hvilket derfor sikrer en ensartet brugeroplevelse for alle sager. På grund af denne arkitektur skal flere styklisteniveauer ikke længere indføres for at aktivere kanbans til anvendelse på halvfabrikata. Denne arkitektur er også med til at reducere lagertransaktioner til et minimum.
@@ -65,7 +64,6 @@ For bedre at understøtte løbende forbedring, implementeres produktionsflow i t
 
 ## <a name="simplicity"></a>Enkelhed
 For implementeringen af Lean Manufacturing skal du vælge et produktionsflow og den aktivitetstilgang, der muliggør modellering af enkle og komplekse scenarier i en enkelt skalerbar arkitektur. Et nærmere kig på aktivitetskonceptet afslører en ny enkelhed for de brugere, der har brug for det: produktions- og logistikarbejdere. Ved at rapportere mod aktivitetsbaseret job i stedet for lagerposteringer, overfører en ensartet brugergrænseflade for alle lean manufacturing-varianter forretningskompleksiteten fra brugergrænsefladen til, hvor den hører til: produktionsflowet som grundstenen i lean manufacturing.
-
 
 
 

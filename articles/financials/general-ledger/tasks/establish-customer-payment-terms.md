@@ -1,13 +1,13 @@
---- 
-title: "Fastlægge betingelser for debitorbetaling"
-description: "Denne procedure definerer opsætning af en kasserabat og forfaldsdato."
+---
+title: Fastlægge betingelser for debitorbetaling
+description: Denne procedure definerer opsætning af en kasserabat og forfaldsdato.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 49f4047ab4bff6bdfbe8326a6680f9d8f9762c95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e0e43962bea3ff1c3adafa73da4ce3862963a51
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312479"
 ---
 # <a name="establish-customer-payment-terms"></a>Fastlægge betingelser for debitorbetaling
 
@@ -66,5 +66,4 @@ Denne procedure definerer opsætning af en kasserabat og forfaldsdato. Denne opg
     * Hvis du vælger "Konti på fakturalinjer", bogføres kasserabatten til samme aktiv/udgiftshovedkonto på linjerne i kreditorfakturaen. Kasserabatten"Brug hovedkonto til kreditorfakturaer", bogføres kasserabatten til den hovedkonto, du definerer i "Hovedkonto for kreditorfakturaer". I dette eksempel skal du vælge "Brug hovedkonto til kreditorfakturaer".  
 26. Angiv den hovedkonto, som kasserabatten bogfører til for kreditorfakturaer.
 27. Klik på Gem.
-
 

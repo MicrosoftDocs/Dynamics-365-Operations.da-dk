@@ -1,13 +1,13 @@
 ---
-title: "Arbejdsområdet Mit team til mobilenheder"
-description: "Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale. Brugerne kan også sende ros til enkeltpersoner i deres rapporteringskæde."
+title: Arbejdsområdet Mit team til mobilenheder
+description: Dette emne indeholder oplysninger om arbejdsområdet Mit team til mobilenheder, hvor ledere kan se deres direkte underordnede og udvidede personale. Brugerne kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d049c55a40761d0663e3d558b47b4840e5db9bf1
-ms.contentlocale: da-dk
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346910"
 ---
-
 # <a name="my-team-mobile-workspace"></a>Arbejdsområdet Mit team til mobilenheder
 
 [!include [banner](../includes/banner.md)]
 
 Dette emne indeholder oplysninger om arbejdsområdet **Mit team** til mobilenheder. I dette arbejdsområde kan ledere se deres direkte underordnede og udvidede personale. De kan også sende ros til enkeltpersoner i deres rapporteringskæde.
 
-Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations-mobilappen.
+Dette arbejdsområdet til mobilenheder er beregnet til brug med Microsoft Dynamics 365 for Unified Operations Mobile-appen.
 
 ## <a name="overview"></a>Overblik 
 I arbejdsområdet **Mit team** til mobilenheder kan ledere udføre disse opgaver:
@@ -78,7 +77,7 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Log på mobilappen
 1.  Start appen på din mobilenhed.
-2.  Angiv URL-adressen til din Microsoft Dynamics 365.
+2.  Angiv din Microsoft Dynamics 365 URL-adresse.
 3.  Første gang du logger på, bliver du bedt om at angive brugernavn og adgangskode. Angiv dine legitimationsoplysninger.
 4.  Når du har logget på, vises de arbejdsområder, der er tilgængelige for din virksomhed. Bemærk, at hvis systemadministratoren publicerer et nyt arbejdsområde senere, skal du opdatere listen over arbejdsområder til mobilenheder.
 
@@ -99,4 +98,3 @@ Download og installer Dynamics 365 for Unified Operations-mobilappen:
 1.  Vælg **Send ros**. 
 1. Angiv teksten til den ros, du vil sende. 
 1. Vælg **Udført**.
-

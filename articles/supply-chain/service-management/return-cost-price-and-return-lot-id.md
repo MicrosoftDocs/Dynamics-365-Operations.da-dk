@@ -1,31 +1,30 @@
 ---
 title: Returkostpris og returparti-id
-description: "I visse tilfælde ønsker du muligvis, at kostprisen for de returnerede produkter er lig med kostprisen for produkterne på det tidspunkt, da du solgte produkterne til kunden. Du kan gøre dette ved hjælp af **Returparti-id**."
+description: I visse tilfælde ønsker du muligvis, at kostprisen for de returnerede produkter er lig med kostprisen for produkterne på det tidspunkt, da du solgte produkterne til kunden. Du kan gøre dette ved hjælp af **Returparti-id**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335134"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Returkostpris og returparti-id        
 
 [!include [banner](../includes/banner.md)]
@@ -109,7 +108,6 @@ Når du bruger feltet **Returvare-id** på en returordrelinje til at angive retu
 10. I Lager- og lokalitetsstyring skal du bruge formularen **Lukning og regulering** til at køre proceduren **3. Luk**.
     
     Denne handling justerer kostprisen på den oprindelige salgslinje, som blev efterkalkuleret fra -35,00 (5 stk. \* 7,00) til -30,00 (5 stk. \* 6,00). Dette skyldes, at lagermodelgruppen bruger FIFO (First In, First Out), og 6,00 pr. stk. er FIFO-kostprisen fra den første indkøbsordre. Desuden justerer handlingen kostprisen på retursalgslinjen, så den svarer til kostprisen pr. stk. på den oprindelige salgslinje. Kostprisen på returlinjen justeres derfor fra 35,00 til 30,00.
-
 
 
 

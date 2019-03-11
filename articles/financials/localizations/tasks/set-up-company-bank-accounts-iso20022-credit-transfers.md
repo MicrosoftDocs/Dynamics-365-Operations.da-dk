@@ -1,13 +1,13 @@
---- 
-title: "Konfigurere firmas bankkonti for ISO20022-kreditoverførsler"
-description: "Denne procedure viser, hvordan du konfigurerer de firmaspecifikke bankkontooplysninger, der kræves til generering af SEPA-betalingsfilen."
+---
+title: Konfigurere firmas bankkonti for ISO20022-kreditoverførsler
+description: Denne procedure viser, hvordan du konfigurerer de firmaspecifikke bankkontooplysninger, der kræves til generering af SEPA-betalingsfilen.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1d0eabdfdeb5ed7d0bdb6df87ebdfa0d41e87492
-ms.contentlocale: da-dk
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334927"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Konfigurere firmas bankkonti for ISO20022-kreditoverførsler
 
@@ -31,7 +31,7 @@ Denne procedure viser, hvordan du konfigurerer de firmaspecifikke bankkontooplys
 
 Det demodatafirma, der bruges til at oprette denne procedure, er DEMF.
 
-Det er den anden af fem procedurer, der viser processen til kreditorbetaling ved hjælp af elektroniske rapporteringskonfigurationer. Denne fremgangsmåde er til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
+Det er den anden procedure af fem, der illustrerer kreditors betalingsproces ved hjælp af konfigurationer af elektronisk rapportering. Denne procedure er beregnet til en funktion, der blev tilføjet i Dynamics 365 for Operations version 1611.
 
 
 ## <a name="set-up-iban-and-swift-code"></a>Konfigurer IBAN- og SWIFT-kode
@@ -51,5 +51,4 @@ Det er den anden af fem procedurer, der viser processen til kreditorbetaling ved
 3. Udvid sektionen Bankkontooplysninger.
 4. Indtast eller vælg en værdi i feltet Bankkonto.
 5. Klik på Gem.
-
 

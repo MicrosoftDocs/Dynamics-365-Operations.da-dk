@@ -1,36 +1,35 @@
 ---
-title: Startside for supply chain management
-description: "Denne side indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations."
+title: Startside for styring af forsyningskæder
+description: Denne side indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 02cdf4615e2071f2b7de2e86b6f9e6637c6e5d8d
-ms.openlocfilehash: df35f70d8297aa2a832d143217542e3d558040ea
-ms.contentlocale: da-dk
-ms.lasthandoff: 05/09/2018
-
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302079"
 ---
-
-# <a name="supply-chain-management-home-page"></a>Startside for supply chain management
+# <a name="supply-chain-management-home-page"></a>Startside for styring af forsyningskæder
 
 [!include [banner](includes/banner.md)]
 
-Dette emne indeholder en liste over emner i Hjælp og andre ressourcer til supply chain management-funktioner i Microsoft Dynamics 365 for Finance and Operations. 
+Dette emne indeholder en liste over emnerne i Hjælp og andre ressourcer til funktionerne til styring af forsyningskæder i Microsoft Dynamics 365 for Finance and Operations. 
 
 ## <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 Gå til <a href="https://roadmap.dynamics.com/">Dynamics 365-oversigten</a> for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
@@ -53,17 +52,17 @@ Vælg et funktionsområde, du vil vide mere om.
 
 ## <a name="videos"></a>Videoer
 
-Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, version 8.0 (april 2018).
+Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018).
 
 - [Synkronisere en arbejdsordre mellem Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
+Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017).
 
 -  [Kundeemne til kontant-integration](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimeringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Bruge lagerstedsskabelon til at kopiere konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoer giver dig et indblik i de nye funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
+Disse korte videoer hjælpe dig med at få mere at vide om de nye funktioner, der er i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, (juli 2017).
 
 -  [Introduktion til driftsregnskab](https://youtu.be/1pUDtJQZ8FU)
 -  [Mobilarbejdsområde for omkostningsstyring](https://youtu.be/imsuTg8rUVk)
@@ -81,7 +80,7 @@ Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i de
 
 -  [Udvide behovsprognosefunktionen](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Varedisponering - tips og tricks til forbedring af ydeevnen](https://youtu.be/7v8BPmEs9Dg)
--  [Hjælp! MPS er langsom!](https://youtu.be/RLXybx20B5o)
+-  [Hjælp! MRP er langsom!](https://youtu.be/RLXybx20B5o)
 
 **Administration af produktoplysninger**
 
@@ -93,7 +92,7 @@ Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i de
 -  [Få mest muligt ud af dit lokationsstyringssystem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Avanceret R3-lokationsstyring - indgående behandling og min./maks. genopfyldning](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Avanceret R3-lokationsstyring - en almindelig dag, indgående behandling og min./maks. genopfyldning](https://youtu.be/Og0gLlVp7jA)
--  [Etiketter i den nye lokationsstyring i Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Labels i den nye Microsoft Dynamics AX 2012 R3-lokationsstyring](https://youtu.be/5w1MngVchBA)
 -  [Dynamics AX 2012 R3: Avanceret lokationsstyring - en almindelig dag med procesproduktion](https://www.youtube.com/embed/QUxXUrN-7n4)
 
 **Produktionsstyring**
@@ -102,7 +101,7 @@ Disse optagelser af tekniske konferencer gennemgår produktfunktionaliteten i de
 
 **Transportstyring**
 
--  [Transportstyring (TMS) i det nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
+-  [Transportstyring (TMS) i den nye Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogs
 Der er mange emner om styring af produktionen og forsyningskæden i <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D-teamets blog</a> og <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management i Dynamics AX R&D-teamets blog</a>. De fleste at disse er skrevet til den tidligere version af Finance and Operations, men de samme begreber gælder stadig, og procedurerne ligner dem i den aktuelle version. 
@@ -111,10 +110,9 @@ Der er mange emner om styring af produktionen og forsyningskæden i <a href="htt
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiske øvelser i driftsregnskab</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Leveringsevne og kanban-finplanlægning</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Styklistekalkulation ved hjælp af efterkalkulationsark</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet på lagerstedet via Microsoft Dynamics 365 for Finance and Operations</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilitet i lagerstedet ved hjælp af Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurser
-Oplysninger om kurser i Microsoft Dynamics 365 for Finance and Operations finder du i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics-uddannelsesportalen</a>. (kræver CustomerSource-konto) 
-
+Du kan finde flere oplysninger om Microsoft Dynamics 365 for Finance and Operations-uddannelse i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-uddannelsesportalen</a>. (kræver CustomerSource-konto) 
 
 
