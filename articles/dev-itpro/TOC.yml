@@ -46,6 +46,10 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: Selvstudium til udviklingsværktøjer
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Installere BaseX til AppChecker
+        href: dev-tools/install-basex.md
     - name: Application Explorer
       href: dev-tools/application-explorer.md
     - name: Oprette og foretage fejlfinding af projekter
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: Ændringer af udvidelsesmuligheder version 8.1.3
         href: extensibility/extensibility-changes-813.md
+      - name: Ændringer af udvidelsesmuligheder version 10.0
+        href: extensibility/extensibility-changes-10.md
     - name: Grundlæggende
       items:
       - name: Forstyrrende tilpasninger
@@ -887,6 +893,7 @@ items:
   - name: Installere demomiljøer
     href: deployment/deploy-demo-environment.md
   - name: Skyinstallation
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Selvbetjeningsinstallation
       href: deployment/infrastructure-stack.md
@@ -1073,10 +1080,12 @@ items:
       href: dev-tools/update-development-tools.md
   - name: Afskrivninger
     items:
-    - name: Udfasede API'er
-      href: migration-upgrade/deprecated-apis.md
-    - name: Udfasede funktioner
+    - name: Fjernede eller udfasede funktioner
       href: migration-upgrade/deprecated-features.md
+    - name: Udfasning af metoder og metadataelementer
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Udfasede API'er (juni 2017)
+      href: migration-upgrade/deprecated-apis.md
 - name: Systemadministration
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1116,12 +1125,14 @@ items:
       href: sysadmin/batch-server-overview.md
     - name: Oprette batchjob
       href: sysadmin/tasks/create-batch-job.md
-    - name: Kopiér et batchjob
+    - name: Kopiere et batchjob
       href: sysadmin/copy-batch-job.md
     - name: Aktive batchperioder
       href: sysadmin/activeperiod.md
     - name: Sikkerhedsrolle for batchstyring
       href: sysadmin/runby.md
+    - name: Batchjob til håndtering af defragmentering af SQL-indeks
+      href: sysadmin/batch-job-SQL-defragmentation.md
   - name: Optimeringsrådgiver
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1200,18 +1211,30 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: Filer til oversættelseshukommelse
       href: lifecycle-services/use-translation-service-tm.md
-- name: Databasestyring
+- name: Handlinger til databaseflytning
   items:
-  - name: Kopiere databaser fra Azure SQL Database til SQL Server-miljøer
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Kopiere databaser fra SQL Server til Azure SQL Database-produktionsmiljøer
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Gendanne databaser i ikke-produktionsmiljøer
-    href: database/request-point-in-time-restore.md
-  - name: Eksportere kopier af databaser til senere gendannelse
-    href: database/copy-operations-database.md
-  - name: Anmode om databaseopdateringer for sandkasse
-    href: database/database-refresh.md
+  - name: Overblik
+    href: database/dbmovement-operations.md
+  - name: Hurtige introduktioner
+    items:
+    - name: Opdater database
+      href: database/database-refresh.md
+    - name: Eksportér en database
+      href: database/export-database.md
+    - name: Import af en database
+      href: database/import-database.md
+    - name: Tidsbestemt gendannelse af database
+      href: database/database-point-in-time-restore.md
+  - name: Selvstudier
+    items:
+    - name: Opdatering i uddannelsesøjemed
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Fejlfinding og diagnose
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Gylden konfigurationskampagne
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Destruktiv test
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Support
   items:
   - name: Få support til Finance and Operations og Lifecycle Services
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Administrere supportoplevelser for Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373317"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773796"
