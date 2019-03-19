@@ -3,7 +3,7 @@ title: Startside for kreditor
 description: Dette emne giver en oversigt over kreditor.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302063"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403279"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for kreditor
 
@@ -123,18 +123,20 @@ Under følgende emner finder du oplysninger om udligninger. Udligningsprocessen 
 
 #### <a name="whats-new-and-in-development"></a>Nyheder og funktioner under udvikling
 
-Gå til [Microsoft Dynamics 365-oversigten](https://roadmap.dynamics.com/) for at se, hvilke nye funktioner der er blevet frigivet, og hvilke nye funktioner der er under udvikling. 
+Gå til [Microsoft Dynamics 365-produktbemærkninger](https://go.microsoft.com/fwlink/?linkid=2010158) for at se, hvilke nye funktioner der er planlagt. 
 
 #### <a name="blogs"></a>Blogs
 
-Du kan finde meninger, nyheder og andre oplysninger om Kreditorer og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Der er mange opslag om Kreditorer i [Microsoft Dynamics AX-produktteambloggen](https://blogs.msdn.microsoft.com/dax/). Selvom nogle af disse opslag er skrevet til den tidligere version af Kreditorer, gælder de samme begreber stadig, og procedurerne i den aktuelle version ligner også.
+Du kan finde meninger, nyheder og andre oplysninger om Kreditor og andre løsninger på [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations - Finans-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) giver Microsoft Dynamics-partnere en samlet ressource, hvor de kan finde oplysninger om nyheder og populære tendenser i MBS Operations.
 
+#### <a name="community-blogs"></a>Fællesskabsblogge
+
+[Sådan administreres kreditorer i Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+
 #### <a name="task-guides"></a>Opgaveguider
-Yderligere hjælp er tilgængelig som opgavevejledninger i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
+Yderligere hjælp er tilgængelig som opgaveguider i Finance and Operations. Du kan få adgang til opgaveguider ved at klikke på knapp​en Hjælp på en vilkårlig side.
 
 #### <a name="videos"></a>Videoer
 

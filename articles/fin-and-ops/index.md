@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentation til Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302053"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation til Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -42,7 +38,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du køber</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmelde dig et prøveabonnement</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Tilmeld dig et prøveabonnement</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Vælge en installationsindstilling</a></p>
  <p><a href="get-started/purchase-on-premises.md">Købe Finance and Operations (on-premises)</a></p>
 
@@ -50,6 +46,20 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding af et projekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Forberedelse af udgivelse</a></p>
+
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">One Version-tjenesteopdateringer</a></h3>
+<p><a href="get-started/one-version.md">Ofte stillede spørgsmål om One Version-tjenesteopdateringer</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Livscykluspolitik for software: Sky</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Livscykluspolitik for software: I det lokale miljø</a></p>
+<p><a href="get-started/public-preview-releases.md">Serviceopdateringer til Standard og først version</a></p>
+<p><a href="get-started/whats-new-changed.md">Nyheder eller ændringer</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Opgraderinger, opdateringer og hotfixes</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Anvende opdateringer i skybaserede miljøer</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurere serviceopdateringer</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Afbryde serviceopdateringer midlertidigt</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Få besked om serviceopdateringer</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatisering af dataopgave</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 
 <h3><a href="../financials/index.md">Økonomistyring</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditor</a></p>
@@ -71,6 +81,8 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Løn i USA</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Styring af forsyningskæde</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Omkostningsstyring</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
@@ -82,8 +94,7 @@ Meget af dette indhold gælder også for de relaterede produkter: Microsoft Dyna
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportstyring</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Lokationsstyring</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analyser</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Forretningsdokumenter</a></p>
